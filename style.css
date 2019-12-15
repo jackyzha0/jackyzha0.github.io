@@ -1,5 +1,7 @@
 /* Colour/Font Definitions */
 @import url(https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,700|Open+Sans&display=swap);
+@import url("css/arrow.css");
+@import url("css/bio.css");
 
 :root {
   --light: #fbfffe;
@@ -13,6 +15,51 @@ body {
   width: 100vw;
   height: 100vh;
   color: var(--light);
+}
+
+.flexcontainer {
+  display:flex
+}
+
+.colflex {
+  flex-direction: column
+}
+
+.rowflex {
+  flex-direction: row
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--dark)
+}
+
+.hover {
+  color: var(--dark);
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px 0px 0px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.hover::after {
+  transition: 300ms;
+  height: 35px;
+  content: "";
+  position: absolute;
+  background-color: var(--olive);
+  opacity: 0.6;
+  z-index: -1;
+  width: 0%;
+  left: 10px;
+  bottom: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Landing Page CSS */
@@ -31,12 +78,15 @@ body {
   color: var(--dark);
   left: 20%;
   top: 40%;
+  width: 60%;
+  height: 60%;
 }
 
-#landing-overlay h1 {
+h1 {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 4em;
+  color: var(--dark)
 }
 
 #canvas {
@@ -51,6 +101,15 @@ body {
   opacity: 0.4;
   padding-top: 0.5em;
   font-weight: normal;
+  color: var(--dark)
+}
+
+#intro-text {
+  flex-basis: 60%
+}
+
+#intro-arrow {
+  flex-basis: 40%
 }
 
 /* Rotating Text CSS */
@@ -88,4 +147,34 @@ body {
 }
 .rotating-text h1 .word .letter.behind {
   transform: rotateX(-90deg);
+}
+
+/* Arrow CSS */
+.arrow_part {
+  display: block;
+  position: absolute;
+  margin: 1.5em;
+}
+
+/* Bio CSS */
+#bio {
+  float: left;
+  flex: 0 0 60%;
+  line-height: 1.0;
+}
+
+#bio_img_div {
+  display: flex;
+  align-items: center;
+  float: right;
+  flex: 0 0 40%;
+  line-height: 1.0;
+}
+
+#bio_container:hover > #bio > h2 > .hover {
+  opacity: 1.0;
+}
+
+#bio_container:hover > #bio > h2 > .hover::after {
+  width: 100%;
 }
