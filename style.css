@@ -1,0 +1,28 @@
+/* Colour Definitions */
+:root {
+  --light: #fbfffe;
+  --dark: #141021;
+  --navy: #284b63;
+  --olive: #84a59d;
+  --salmon: #f28482;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: var(--light);
+}
+
+#landing-container {
+  position: relative
+}
+
+#landing-container canvas, #landing-overlay {
+  position: absolute
+}
+
+#canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
