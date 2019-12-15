@@ -1,4 +1,6 @@
-/* Colour Definitions */
+/* Colour/Font Definitions */
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,700|Open+Sans&display=swap);
+
 :root {
   --light: #fbfffe;
   --dark: #141021;
@@ -13,16 +15,77 @@ body {
   color: var(--light);
 }
 
+/* Landing Page CSS */
 #landing-container {
-  position: relative
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 #landing-container canvas, #landing-overlay {
   position: absolute
 }
 
+#landing-overlay {
+  z-index: 9999 !important;
+  color: var(--dark);
+  left: 20%;
+  top: 40%;
+}
+
+#landing-overlay h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 4em;
+}
+
 #canvas {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+#prev-exp {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1em;
+  opacity: 0.4;
+  padding-top: 0.5em;
+  font-weight: normal;
+}
+
+/* Rotating Text CSS */
+
+.col1 { color: var(--dark) }
+.col2 { color: var(--navy) }
+.col3 { color: var(--olive) }
+.col4 { color: var(--salmon) }
+
+.rotating-text {
+  overflow: hidden;
+}
+
+.rotating-text h1 {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+.rotating-text h1 .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+}
+.rotating-text h1 .word .letter {
+  transform-origin: center center 0.8em;
+}
+.rotating-text h1 .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text h1 .word .letter.in {
+  transition: 0.32s ease;
+}
+.rotating-text h1 .word .letter.behind {
+  transform: rotateX(-90deg);
 }

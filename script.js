@@ -15,13 +15,13 @@ class Visual {
     this.particleMaxRadius = 8;
 
     this.handleMouseMoveBind = this.handleMouseMove.bind(this);
-    this.handleClickBind = this.handleClick.bind(this);
     this.handleResizeBind = this.handleResize.bind(this);
 
     this.initialize();
     this.render();
   }
 
+  // Initialize particles
   initialize() {
     this.resizeCanvas();
     for (let i = 0; i < this.particleLength; i++) {
@@ -30,23 +30,20 @@ class Visual {
     this.bind();
   }
 
+  // bind event listeners
   bind() {
     document.body.addEventListener('mousemove', this.handleMouseMoveBind, false);
-    document.body.addEventListener('click', this.handleClickBind, false);
     window.addEventListener('resize', this.handleResizeBind, false);
   }
 
   unbind() {
     document.body.removeEventListener('mousemove', this.handleMouseMoveBind, false);
-    document.body.removeEventListener('click', this.handleClickBind, false);
     window.removeEventListener('resize', this.handleResizeBind, false);
   }
 
   handleMouseMove(e) {
     this.enlargeParticle(e.clientX, e.clientY);
   }
-
-  handleClick(e) { }
 
   handleResize() {
     this.resizeCanvas();
@@ -61,13 +58,17 @@ class Visual {
     this.context.scale(window.devicePixelRatio, window.devicePixelRatio);
   }
 
+  // particle creation
   createParticle(id, isRecreate) {
+    // randomize position and radius
     const radius = random(1, this.particleMaxRadius);
     const x = isRecreate ? -radius - random(0, this.canvasWidth) : random(0, this.canvasWidth);
     let y = random(this.canvasHeight / 2 - 150, this.canvasHeight / 2 + 150);
     y += random(-100, 100);
+
     const alpha = random(0.05, 0.6);
 
+    // pick random colour
     var col
     switch (Math.floor(Math.random() * 3)) {
       case 0:
@@ -119,7 +120,7 @@ class Visual {
       const distance = Math.hypot(particle.x - clientX, particle.y - clientY);
 
       if (distance <= 100) {
-        const scaling = (100 - distance) / 9;
+        const scaling = (100 - distance) / 12;
         TweenMax.to(particle, 0.5, {
           radius: particle.defaultRadius + scaling,
           alpha: 1,
@@ -143,6 +144,7 @@ class Visual {
     this.context.fillRect(0, 0, canvas.width, canvas.height);
     this.drawParticles();
 
+    // kill offscreen particles and re-render
     this.particles.forEach(particle => {
       if (particle.x - particle.radius >= this.canvasWidth) {
         this.particles[particle.id] = this.createParticle(particle.id, true);
@@ -154,3 +156,47 @@ class Visual {
 }
 
 new Visual();
+
+// Rotating Text credit to alphardex
+var words = document.querySelectorAll(".word");
+words.forEach(function(word) {
+  var letters = word.textContent.split("");
+  word.textContent = "";
+  letters.forEach(function(letter) {
+    var span = document.createElement("span");
+    if (letter == " ") {
+      span.textContent = " ";
+      span.className = "letter";
+      word.append(span);
+    } else {
+      span.textContent = letter;
+      span.className = "letter";
+      word.append(span);
+    }
+  });
+});
+var currentWordIndex = 0;
+var maxWordIndex = words.length - 1;
+words[currentWordIndex].style.opacity = "1";
+var rotateText = function() {
+  var currentWord = words[currentWordIndex];
+  var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+  // rotate out letters of current word
+  Array.from(currentWord.children).forEach(function(letter, i) {
+    setTimeout(function() {
+      letter.className = "letter out";
+    }, i * 40);
+  });
+  // reveal and rotate in letters of next word
+  nextWord.style.opacity = "1";
+  Array.from(nextWord.children).forEach(function(letter, i) {
+    letter.className = "letter behind";
+    setTimeout(function() {
+      letter.className = "letter in";
+    }, 500 + i * 20);
+  });
+  currentWordIndex =
+    currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+};
+setTimeout(rotateText, 1000);
+setInterval(rotateText, 3000);
