@@ -7,6 +7,7 @@
 @import url("css/langbars.css");
 @import url("css/video.css");
 @import url("css/proj.css");
+@import url("css/mobile.css");
 
 :root {
   --light: #fbfffe;
@@ -18,8 +19,12 @@
   --lightgray: #eee;
 }
 
+.mobile-only {
+  display: None;
+}
+
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: var(--light);
 }

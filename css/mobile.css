@@ -1,0 +1,66 @@
+@media all and (max-width: 450px) {
+  .mobile-only {
+    display: inline-block !important;
+  }
+
+  #landing-overlay {
+    overflow: hidden;
+    left: 10% !important;
+    width: 80% !important;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 2em !important;
+  }
+  h3 {
+    font-size: 1.3em !important;
+  }
+
+  p {
+    font-size: 1em !important;
+  }
+  .mobile-hide {
+    display: None !important;
+  }
+
+  .rotating-text {
+    height: 2em;
+  }
+
+  #bio_container, #experience, #vid, #projects{
+    padding: 0 5vw 30px 5vw !important;
+  }
+
+  .card_container {
+    padding-left: 0.8em !important;
+    width: calc(100% - 0.8em) !important;
+  }
+
+  .job-info {
+    padding-top: 0.8em !important;
+  }
+
+  .job_title {
+    font-size: 1em !important;
+  }
+
+  .lang_bar {
+    flex: 0 0 0.4em !important;
+  }
+
+  .accordion_thumb {
+    font-size: 1em;
+  }
+
+  .proj_desc a {
+    padding-right: 0.3em !important;
+    font-size: 0.7em;
+    transform: translateY(0.35em);
+  }
+
+  .tooltiptext {
+    display: None
+  }
+}
