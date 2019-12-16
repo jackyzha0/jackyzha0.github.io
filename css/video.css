@@ -13,6 +13,7 @@
 #vid_player_card {
   background-color: var(--lightgray);
   border-radius: 5px;
+  margin-bottom: 2em;
 }
 
 #togglePlayButton {
@@ -45,7 +46,7 @@ video {
   height:20%;
   position:absolute;
   display: none;
-  left:33%;
+  left:0%;
   right:0%;
   top:0%;
   bottom:0%;
@@ -59,7 +60,7 @@ video {
   width:20%;
   height:20%;
   position:absolute;
-  left:33%;
+  left:0%;
   right:0%;
   top:0%;
   bottom:0%;
@@ -74,10 +75,10 @@ video {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  padding-left: 0.75rem;
+  padding-left: 0.5rem;
   line-height: 1.2;
   font-weight: 300;
-  margin-top: 45%;
+  margin-top: 55%;
 }
 
 #volume {
@@ -88,5 +89,5 @@ video {
   padding-left: 0.75rem;
   line-height: 1.2;
   font-weight: 300;
-  margin-top: 60%;
+  margin-top: 70%;
 }

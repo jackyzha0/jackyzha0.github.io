@@ -221,15 +221,32 @@ h1 {
   width: 100%;
 }
 
+#vid:hover > h2 > .hover {
+  opacity: 1.0;
+}
+
+#vid:hover > h2 > .hover::after {
+  width: 100%;
+}
+
+#projects:hover > h2 > .hover {
+  opacity: 1.0;
+}
+
+#projects:hover > h2 > .hover::after {
+  width: 100%;
+}
+
+
 /* Card CSS */
 .card-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  transition: transform 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transform: translate(0, -0.4em)
+  transform: translateY(-0.4em)
 }
 
 .card_container {
