@@ -231,3 +231,103 @@ $("#landing-container").click(function() {
   },
     duration = 1000);
 });
+
+
+// Video Handling JS
+$(".video-container").on('click', function(event) {
+  var v = document.getElementById("makerportfolio");
+  togglePause(v)
+});
+
+$("#togglePlayButton").on('click', function(event) {
+  var v = document.getElementById("makerportfolio");
+  togglePause(v)
+});
+
+var cursorOnDiv = false;
+
+$(document).on({
+  mouseenter: function() {
+    cursorOnDiv = true;
+  },
+  mouseleave: function() {
+    cursorOnDiv = false;
+  },
+},
+  '#vid_player_card'
+);
+
+function fancyTime(time) {
+  // Hours, minutes and seconds
+  var mins = ~~((time % 3600) / 60);
+  var secs = ~~time % 60;
+  var ret = "";
+
+  ret += "" + mins + ":" + (secs < 10 ? "0" : "");
+  ret += "" + secs;
+  return ret;
+}
+
+function togglePause(v) {
+  if (v.paused) {
+    v.style.filter = "grayscale(0%) brightness(100%)";
+    v.play()
+    $(".playpause").fadeOut();
+    $("#togglePlayButton").text("❚❚ Pause")
+  } else {
+    if (v.currentTime != 0) {
+      v.style.filter = "grayscale(60%) brightness(80%)";
+      v.pause()
+      $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
+      $(".playpause").fadeIn();
+      $("#togglePlayButton").text("► Play")
+    }
+  }
+}
+
+$(document).keydown(function(e) {
+  var v = document.querySelector("#makerportfolio");
+  switch (e.which) {
+    case 32: // space
+      if (cursorOnDiv) {
+        togglePause(v)
+      }
+      break;
+
+    case 37: // left
+      if (cursorOnDiv) {
+        v.currentTime = v.currentTime - 5
+        $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
+      }
+      break;
+
+    case 39: // right
+      if (cursorOnDiv) {
+        v.currentTime = v.currentTime + 5
+        $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
+      }
+      break;
+
+    case 38: // up
+      if (cursorOnDiv) {
+        v.volume = v.volume + 0.1
+        $('#volume').text(Math.round(v.volume * 100) + '%')
+        $('#volume').show()
+        $("#volume").delay(1000).fadeOut();
+      }
+      break;
+
+    case 40: // down
+      if (cursorOnDiv) {
+        v.volume = v.volume - 0.1
+        $('#volume').text(Math.round(v.volume * 100) + '%')
+        $('#volume').show()
+        $("#volume").delay(1000).fadeOut();
+      }
+      break;
+
+    default:
+      return; // exit this handler for other keys
+  }
+  e.preventDefault(); // prevent the default action (scroll / move caret)
+});

@@ -5,6 +5,7 @@
 @import url("css/fancyjson.css");
 @import url("css/smaller-screens.css");
 @import url("css/langbars.css");
+@import url("css/video.css");
 
 :root {
   --light: #fbfffe;
@@ -38,6 +39,18 @@ body {
 
 .rowflex {
   flex-direction: row
+}
+
+.button {
+  background-color: var(--navy);
+  color: var(--light);
+  font-family: "Open Sans";
+  width: 7em;
+  padding: 0.8em;
+  padding-bottom: 0.9em;
+  border-radius: 2em;
+  margin-top: 2em;
+  cursor: pointer;
 }
 
 h2 {
@@ -259,4 +272,9 @@ ul.techlist li {
   color: var(--light);
   background-color: var(--olive);
   margin-bottom: 0.4em;
+}
+
+/* Video CSS */
+#vid {
+  margin-top: 1em;
 }

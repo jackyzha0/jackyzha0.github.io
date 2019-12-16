@@ -1,0 +1,92 @@
+#video-context {
+  flex: 0 0 30%;
+  margin-left: 1.5em;
+  justify-content: Center;
+}
+
+#video-context h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-top: 2em;
+}
+
+#vid_player_card {
+  background-color: var(--lightgray);
+  border-radius: 5px;
+}
+
+#togglePlayButton {
+  margin-bottom: 2em;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  filter: grayscale(0%);
+  transition: filter 0.3s linear;
+}
+
+.playpause {
+  background-image: url("../res/pause.png");
+  background-repeat:no-repeat;
+  width:20%;
+  height:20%;
+  position:absolute;
+  display: none;
+  left:33%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+  text-align: center;
+}
+
+.vol-contain {
+  width:20%;
+  height:20%;
+  position:absolute;
+  left:33%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+  text-align: center;
+}
+
+#progress {
+  display: block;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding-left: 0.75rem;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 45%;
+}
+
+#volume {
+  display: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding-left: 0.75rem;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 60%;
+}

@@ -18,6 +18,7 @@
     <meta charset="UTF-8">
     <title>jacky zhao</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="res/logo.png" />
 
     <!-- CSS Stylesheets and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -53,6 +54,7 @@
       <canvas id="canvas"></canvas>
     </div>
 
+    <!-- Personal Bio -->
     <div class="main_container" id="bio_container">
       <div id="bio">
         <h2>
@@ -115,6 +117,7 @@
       </div>
     </div>
 
+    <!-- Work Experience Section -->
     <div class="main_container" id="experience">
       <h2>
         <span class="hover">experience.</span>
@@ -150,6 +153,32 @@
           </div>
           <div id="langbar0" class="lang_bar">
             <span class="tooltiptext">Go, Scala, Bash, Dockerfile<br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="vid" class="main_container">
+      <div id="vid_player_card" class="card-1 flexcontainer">
+        <div id="video-context" class="flexcontainer colflex">
+          <h3>Project Portfolio</h3>
+          <p> Short video I shot and edited explaining three of my favourite projects to date, along with some really short demos.</p>
+          <div id="togglePlayButton" class="button">
+            ►  Play
+          </div>
+        </div>
+        <div id="video-content">
+          <div class=video-container>
+            <video id="makerportfolio" width="960" height="720" poster="res/vid-cover.png">
+              <source src="res/makerportfolio.mp4" type="video/mp4">
+              i feel like you're just trying to break my website at this point :((
+            </video>
+          </div>
+          <div class="playpause">
+            <p id="progress">???</p>
+          </div>
+          <div class="vol-contain">
+            <p id="volume">???</p>
           </div>
         </div>
       </div>
