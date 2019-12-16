@@ -14,13 +14,23 @@
   padding: 1.3em 0 1.3em 1.3em;
 }
 
+.short-desc {
+  width: auto !important;
+  white-space: nowrap;
+}
+
+.spacer {
+  flex: 25%;
+}
+
 /* Thumb */
 .accordion-thumb {
 	margin: 0;
-  width: 100%;
+	white-space: nowrap;
 	cursor: pointer;
   font-weight: 600;
   font-size: 1.3em;
+  padding-right: 0.3em;
 }
 
 /* Arrow */
@@ -59,5 +69,5 @@
 .proj_desc a {
   font-family: "Courier Prime";
   color: var(--navy);
-  padding-right: 1.5em;
+  padding-right: 1em;
 }
