@@ -295,3 +295,21 @@ ul.techlist li {
 #vid {
   margin-top: 1em;
 }
+
+/* Contact Button CSS */
+#contact_buttons {
+  text-align: center;
+  margin: 3em 0 3em 0;
+}
+
+#contact_buttons p {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#contact_buttons a {
+  font-family: "Courier Prime";
+  font-size: 1em;
+  color: var(--navy);
+  padding: 0 0.5em 0 0.5em;
+}
