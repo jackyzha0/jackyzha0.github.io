@@ -1,8 +1,10 @@
 /* Colour/Font Definitions */
-@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Ubuntu|Montserrat:400,700|Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Ubuntu|Montserrat:400,600,700|Open+Sans&display=swap);
 @import url("css/arrow.css");
 @import url("css/bio.css");
 @import url("css/fancyjson.css");
+@import url("css/smaller-screens.css");
+@import url("css/langbars.css");
 
 :root {
   --light: #fbfffe;
@@ -11,6 +13,7 @@
   --olive: #84a59d;
   --salmon: #f28482;
   --gray: #999;
+  --lightgray: #eee;
 }
 
 body {
@@ -21,6 +24,12 @@ body {
 
 .flexcontainer {
   display:flex
+}
+
+.main_container {
+  padding: 0 20vw 30px 20vw;
+  background: var(--light);
+  color: var(--dark);
 }
 
 .colflex {
@@ -54,8 +63,8 @@ h2 {
   height: 35px;
   content: "";
   position: absolute;
-  background-color: var(--olive);
-  opacity: 0.6;
+  background-color: var(--salmon);
+  opacity: 0.25;
   z-index: -1;
   width: 0%;
   left: 10px;
@@ -167,7 +176,7 @@ h1 {
 /* Bio CSS */
 #bio {
   float: left;
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   line-height: 1.0;
 }
 
@@ -177,10 +186,9 @@ h1 {
 }
 
 #bio_img_div {
-  display: flex;
   align-items: center;
   float: right;
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   line-height: 1.0;
 }
 
@@ -190,4 +198,43 @@ h1 {
 
 #bio_container:hover > #bio > h2 > .hover::after {
   width: 100%;
+}
+
+#experience:hover > h2 > .hover {
+  opacity: 1.0;
+}
+
+#experience:hover > h2 > .hover::after {
+  width: 100%;
+}
+
+/* Card CSS */
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translate(0, -0.4em)
+}
+
+.card_container {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background-color: var(--lightgray);
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+#expcards {
+  margin-top: 1em;
+}
+
+a i {
+  display: inline-block;
+  font-size: 30px;
+  color: #141414;
+  transition: 0.3s;
 }

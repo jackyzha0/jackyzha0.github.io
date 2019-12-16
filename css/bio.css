@@ -1,5 +1,5 @@
 .bmain {
-  max-width: calc(60vw * 0.3);
+  max-width: calc(60vw * 0.4);
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 100%;
 }
@@ -9,27 +9,12 @@
   cursor: pointer;
 }
 
-@media all and (max-width: 1300px) {
-  #bio_img_div {
-    width: 0%;
-    flex: 0 0 0;
-    overflow: hidden;
-    display: none
-  }
-
-  #bio {
-    flex: 0 0 100%
-  }
-}
-
 #bio_container {
   display: flex;
-  padding: 0 20vw 30px 20vw;
-  background: var(--light);
-  color: var(--dark);
+  margin-bottom: 2em;
 }
 
-#bio_body {
+p {
   display: block;
   color: var(--gray);
   width: 90%;
@@ -44,14 +29,15 @@
 .bio-blob {
  width: 100%;
  height: 100%;
+ padding-top: 10vh;
 }
 
 #blob-svg {
-  margin-top: 1em;
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	height: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 .blobs {

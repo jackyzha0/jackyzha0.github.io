@@ -1,0 +1,77 @@
+/* Hootsuite */
+#langbar0 {
+  background: linear-gradient(to bottom, #00ADD8 42%, #c22d40 42%, #c22d40 75%, #384d54 75%, #384d54 95%, #474747 95%);
+}
+
+h3 {
+  font-family: "Montserrat";
+  text-align: left;
+  display: inline-block;
+  margin: 0 1rem 0.3rem 0rem;
+}
+
+.lang_bar {
+  flex: 0 0 0.8em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.slider__caption {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 0.2rem;
+}
+
+.slider__txt {
+    color: #999;
+    margin: 1rem 1rem 1rem 1.3rem;
+    text-align: left;
+}
+
+.company-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 3px;
+  margin-right: 1em;
+}
+
+.job-info {
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.lang_bar {
+  position: relative;
+}
+
+/* Tooltip text */
+.lang_bar .tooltiptext {
+  font-family: 'Lato', sans-serif;
+  white-space:nowrap;
+  visibility: hidden;
+  opacity: 0;
+  color: var(--dark);
+  text-align: center;
+  border-radius: 3px;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(-90deg);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.lang_bar:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1.0;
+  margin-left: -2.5em;
+}
+
+.lang_bar .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  right: calc(50% - 2.5px);
+  margin-top: -2em;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}

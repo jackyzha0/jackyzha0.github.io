@@ -1,0 +1,12 @@
+@media screen and (max-width: 1440px) {
+ #bio_img_div {
+   width: 0%;
+   flex: 0 0 0;
+   overflow: hidden;
+   display: none
+ }
+
+ #bio {
+   flex: 0 0 100% !important
+ }
+}

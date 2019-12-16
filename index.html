@@ -17,9 +17,11 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <title>jacky zhao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS Stylesheets and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -51,7 +53,7 @@
       <canvas id="canvas"></canvas>
     </div>
 
-    <div id="bio_container">
+    <div class="main_container" id="bio_container">
       <div id="bio">
         <h2>
           <span class="hover">about.</span>
@@ -59,7 +61,7 @@
         <p id="bio_body">
           I am a passionate software developer trying to build solutions to the world’s problems. Whether that be through creating neural networks or building web applications, all my work is focused on one thing: impact. When I'm not coding, you can find me hitting the climbing gym, grabbing a bubble tea, or exploring beautiful Vancouver! Feel free to <a href="res/2019w-jackyzhao-textresume.pdf">download my resume </a> or contact me for a quick chat at <a href="mailto:j.zhao2k19@gmail.com">j.zhao2k19@gmail.com</a>
         </p>
-        <p id="bio_json">
+        <p class="card-1" id="bio_json">
           <span id=json0>{<br></span>
           <span id=json1>
             <span id=json1_1>"name"</span>
@@ -100,15 +102,55 @@
         		</defs>
         		<mask id="maska">
         			<g class="blobs">
-        				<circle class="blob m" cx="200" cy="175" r="150" transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="340" cy="35" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="325" cy="300" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="150" cy="220" r="105"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-                <circle class="blob s" cx="180" cy="120" r="110"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob m" cx="175" cy="175" r="150" transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="315" cy="35" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="300" cy="300" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="125" cy="220" r="105"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                <circle class="blob s" cx="155" cy="120" r="110"  transform="rotate(0) translate(0, 0) rotate(0)"/>
         			</g>
         		</mask>
-        		<image href="res/me.jpg"  mask="url(#maska)" width="400" height="400">
+        		<image href="res/me.jpg"  mask="url(#maska)" width="400px" height="auto">
         	</svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="main_container" id="experience">
+      <h2>
+        <span class="hover">experience.</span>
+      </h2>
+      <div id="expcards">
+        <div class="card_container card-1">
+          <div class="main_card">
+            <div class="flexcontainer job-info">
+              <img class="company-logo" src="res/hootsuite.png" title="Hootsuite">
+              <div>
+                <h3 class="slider__caption">Hootsuite</h3>
+                <a href="https://medium.com/@j.zhao2k19/jacky-zhao-into-the-workplace-a-story-of-my-first-two-weeks-at-hootsuite-d00113156cd" target="_blank">
+                  <i class="fab fa-medium"></i>
+                </a>
+                <br>
+                <h3 class="job_title">2019 // Software Development Intern</h3>
+              </div>
+            </div>
+            <p class="slider__txt">
+              Fixed bug causing ~3200 unhandled errors affecting around 3000 unique users per week. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
+              core internal services. Involved with breaking down the Social Media Communication monolith service into microservices. Prototyped new service mesh with Istio and Envoy. Refactored and improved logging and error handling in legacy Scala
+              code. Wrote unit and integration tests in Go and Scala.
+            </p>
+            <ul class="techlist">
+              <li>SQL</li>
+              <li>Envoy</li>
+              <li>Istio</li>
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>Sumologic</li>
+              <li>Jira</li>
+            </ul>
+          </div>
+          <div id="langbar0" class="lang_bar">
+            <span class="tooltiptext">Go, Scala, Bash, Dockerfile<br></span>
+          </div>
         </div>
       </div>
     </div>
