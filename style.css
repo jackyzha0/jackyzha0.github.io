@@ -1,7 +1,8 @@
 /* Colour/Font Definitions */
-@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:400,700|Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Ubuntu|Montserrat:400,700|Open+Sans&display=swap);
 @import url("css/arrow.css");
 @import url("css/bio.css");
+@import url("css/fancyjson.css");
 
 :root {
   --light: #fbfffe;
@@ -9,6 +10,7 @@
   --navy: #284b63;
   --olive: #84a59d;
   --salmon: #f28482;
+  --gray: #999;
 }
 
 body {
@@ -60,6 +62,12 @@ h2 {
   bottom: 15px;
   padding: 0;
   margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0d0d0d;
+    transition: all 0.2s ease;
 }
 
 /* Landing Page CSS */
@@ -159,15 +167,20 @@ h1 {
 /* Bio CSS */
 #bio {
   float: left;
-  flex: 0 0 60%;
+  flex: 0 0 70%;
   line-height: 1.0;
+}
+
+#bio_body {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
 }
 
 #bio_img_div {
   display: flex;
   align-items: center;
   float: right;
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   line-height: 1.0;
 }
 

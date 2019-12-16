@@ -1,12 +1,7 @@
-
-.blobcontainer {
-  height: 400px;
-  width: 400px;
-}
-
 .bmain {
+  max-width: calc(60vw * 0.3);
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-radius: 200px;
+  border-radius: 100%;
 }
 
 .blob {
@@ -29,32 +24,18 @@
 
 #bio_container {
   display: flex;
-  padding-top: 15px;
-  padding-left: 20vw;
-  padding-right: 15vw;
-  padding-bottom: 30px;
+  padding: 0 20vw 30px 20vw;
   background: var(--light);
   color: var(--dark);
 }
 
 #bio_body {
   display: block;
-  color: #999;
+  color: var(--gray);
   width: 90%;
   font-family: 'Open Sans', sans-serif;
   padding-left: 3px;
-  font-size: 18px;
+  font-size: 1.1em;
   margin-top: 0;
   line-height: 1.2;
-}
-
-#bio_body_m {
-  display: block;
-  color: #c4c4c4;
-  width: 90%;
-  font-family: 'Open Sans', sans-serif;
-  padding-left: 3px;
-  font-size: 12px;
-  margin-top: 0;
-  line-height: 1;
 }
