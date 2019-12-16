@@ -37,7 +37,7 @@
 .accordion-arrow {
   float:right;
   height: 7px;
-  width: 7px;
+	min-width: 7px;
   margin-right: 1rem;
   margin-left: .5rem;
   vertical-align: middle;
