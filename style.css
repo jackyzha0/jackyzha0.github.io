@@ -238,3 +238,25 @@ a i {
   color: #141414;
   transition: 0.3s;
 }
+
+ul.techlist {
+  font-family: "Open Sans";
+  position: relative;
+  bottom: 0px;
+  margin-bottom: 1em;
+  padding-left: 1.5rem;
+  float: left;
+  list-style: none;
+}
+
+ul.techlist li {
+  display:inline-block;
+  border-style: none;
+  font-size: 1em;
+  margin-right: 3px;
+  padding: 0.4rem;
+  border-radius: 2px;
+  color: var(--light);
+  background-color: var(--olive);
+  margin-bottom: 0.4em;
+}
