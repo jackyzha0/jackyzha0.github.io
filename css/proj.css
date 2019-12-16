@@ -1,0 +1,63 @@
+.accordion {
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.accordion-item {
+  margin-top: 1em;
+  background-color: var(--lightgray);
+}
+
+.proj_left {
+  width: 100%;
+  padding: 1.3em 0 1.3em 1.3em;
+}
+
+/* Thumb */
+.accordion-thumb {
+	margin: 0;
+  width: 100%;
+	cursor: pointer;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+/* Arrow */
+.accordion-arrow {
+  float:right;
+  height: 7px;
+  width: 7px;
+  margin-right: 1rem;
+  margin-left: .5rem;
+  vertical-align: middle;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: var(--dark);
+  transform: rotate(45deg);
+  transition: transform .4s ease-in-out;
+}
+
+/* Panel */
+.accordion-panel {
+	margin: 0;
+	padding-bottom: .8rem;
+  padding-top: .8rem;
+	display: none;
+}
+
+.accordion-panel .techlist {
+  margin-bottom: 0;
+  margin-top: 1.3em;
+}
+
+/* Active */
+.proj_left.is-active .accordion-arrow {
+	transform: rotateX(180deg) rotateZ(45deg);
+}
+
+.proj_desc a {
+  font-family: "Courier Prime";
+  color: var(--navy);
+  padding-right: 1.5em;
+}

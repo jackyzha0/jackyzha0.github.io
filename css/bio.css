@@ -17,9 +17,8 @@
 p {
   display: block;
   color: var(--gray);
-  width: 90%;
+  width: 95%;
   font-family: 'Open Sans', sans-serif;
-  padding-left: 3px;
   font-size: 1.1em;
   margin-top: 0;
   line-height: 1.2;

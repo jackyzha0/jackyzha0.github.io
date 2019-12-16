@@ -3,6 +3,31 @@
   background: linear-gradient(to bottom, #00ADD8 42%, #c22d40 42%, #c22d40 75%, #384d54 75%, #384d54 95%, #474747 95%);
 }
 
+/* Speech2Braille */
+#langbar1 {
+  background: linear-gradient(to bottom, #3572A5 89.9%, #474747 10.1%);
+}
+
+/* PacketBook */
+#langbar2 {
+  background: linear-gradient(to bottom, #f1e05a 80.8%, #3572A5 80.8%);
+}
+
+/* Envoy Front Proxy */
+#langbar3 {
+  background: linear-gradient(to bottom, #00ADD8 92.7%, #384d54 7.3%);
+}
+
+/* Project SID */
+#langbar4 {
+  background: linear-gradient(to bottom, #3572A5 56.9%, #f1e05a 56.9%, #f1e05a 79.5%, #f34b7d 79.5%, #f34b7d 90%, #E15525 90%, #E15525 96%, #563d7c 96%);
+}
+
+/* GroupCalendar */
+#langbar5 {
+  background: linear-gradient(to bottom, #f1e05a 54.0%, #563d7c 54.0%, #563d7c 79.8%, #E15525 79.8%);
+}
+
 h3 {
   font-family: "Montserrat";
   text-align: left;
@@ -24,7 +49,7 @@ h3 {
 
 .slider__txt {
     color: #999;
-    margin: 1rem 1rem 1rem 1.3rem;
+    margin: 1rem 1rem 1rem 0;
     text-align: left;
 }
 
@@ -36,7 +61,7 @@ h3 {
 }
 
 .job-info {
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 0 0 0;
 }
 
 .lang_bar {
@@ -45,33 +70,24 @@ h3 {
 
 /* Tooltip text */
 .lang_bar .tooltiptext {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   white-space:nowrap;
   visibility: hidden;
   opacity: 0;
   color: var(--dark);
   text-align: center;
   border-radius: 3px;
-
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   position: absolute;
-  z-index: 1;
   top: 50%;
-  transform: translateY(-50%) rotateZ(-90deg);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transform: translate(5em, -50%);
+  z-index: 1;
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 }
 
 .lang_bar:hover .tooltiptext {
   visibility: visible;
   opacity: 1.0;
-  margin-left: -2.5em;
-}
-
-.lang_bar .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  right: calc(50% - 2.5px);
-  margin-top: -2em;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
+  margin-left: -3em;
 }

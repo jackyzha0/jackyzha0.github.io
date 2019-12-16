@@ -331,3 +331,12 @@ $(document).keydown(function(e) {
   }
   e.preventDefault(); // prevent the default action (scroll / move caret)
 });
+
+// Project Accordion
+$(function() {
+  $(".accordion > .accordion-item.is-active .proj_left").children(".accordion-panel").slideDown();
+
+  $(".accordion > .accordion-item > .proj_left").click(function() {
+    $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+  });
+});

@@ -6,6 +6,7 @@
 @import url("css/smaller-screens.css");
 @import url("css/langbars.css");
 @import url("css/video.css");
+@import url("css/proj.css");
 
 :root {
   --light: #fbfffe;
@@ -256,17 +257,17 @@ h1 {
   background-color: var(--lightgray);
   border-radius: 5px;
   margin-bottom: 2em;
+  padding-left: 1.5em;
 }
 
 #expcards {
   margin-top: 1em;
 }
 
-a i {
-  display: inline-block;
-  font-size: 30px;
-  color: #141414;
-  transition: 0.3s;
+.ext-ref {
+  display: block;
+  margin-left: 1.5em;
+  font-family: "Courier Prime";
 }
 
 ul.techlist {
@@ -274,7 +275,6 @@ ul.techlist {
   position: relative;
   bottom: 0px;
   margin-bottom: 1em;
-  padding-left: 1.5rem;
   float: left;
   list-style: none;
 }

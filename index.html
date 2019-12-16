@@ -22,7 +22,6 @@
 
     <!-- CSS Stylesheets and Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -129,8 +128,6 @@
               <img class="company-logo" src="res/hootsuite.png" title="Hootsuite">
               <div>
                 <h3 class="slider__caption">Hootsuite</h3>
-                <a href="https://medium.com/@j.zhao2k19/jacky-zhao-into-the-workplace-a-story-of-my-first-two-weeks-at-hootsuite-d00113156cd" target="_blank">
-                  <i class="fab fa-medium"></i>
                 </a>
                 <br>
                 <h3 class="job_title">2019 // Software Development Intern</h3>
@@ -139,7 +136,7 @@
             <p class="slider__txt">
               Fixed bug causing ~3200 unhandled errors affecting around 3000 unique users per week. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
               core internal services. Involved with breaking down the Social Media Communication monolith service into microservices. Prototyped new service mesh with Istio and Envoy. Refactored and improved logging and error handling in legacy Scala
-              code. Wrote unit and integration tests in Go and Scala.
+              code. Wrote unit and integration tests in Go and Scala. Read more about my experience on my <a href="https://medium.com/@j.zhao2k19/life-of-a-high-school-software-developer-at-hootsuite-adc3195f8b5" target="_blank">Medium blog!</a>
             </p>
             <ul class="techlist">
               <li>SQL</li>
@@ -191,6 +188,32 @@
       <h2>
         <span class="hover">projects.</span>
       </h2>
+      <ul class="accordion">
+      	<li class="accordion-item card-1 is-active flexcontainer">
+          <div class="proj_left">
+            <div class="proj_desc flexcontainer">
+        		    <h3 class="accordion-thumb"> Speech2Braille</h3>
+                <a target="_blank" href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5709&year=2018&province=12&keyword=&name=&categoryid=&divisionid=&challengeid=&regionid=90">[cwsf]</a>
+                <a href="res/gvrsf_report.pdf">[paper]</a>
+                <a target="_blank" href="https://github.com/jackyzha0/Speech2Braille">[github]</a>
+                <div class="accordion-arrow"></div>
+            </div>
+        		<div class="accordion-panel">
+              <p>
+          			Speech2Braille was created to help the over 360 million people in the world who have debilitating hearing loss. This project entailed creating an end-to-end speech recognition system using an Deep LSTM and a portable device to display braille. The device is able to recognize audio and transcribe it into Braille through the haptic feedback device via the neural network. The feedback device is a self-made GPIO hat, consisting of 6 solenoids, and allows the Raspberry Pi to control the 6 solenoids via the GPIO outputs. The neural network itself is 2 layered LSTM network with 256 hidden cells in each layer.
+              </p>
+              <ul class="techlist">
+                <li>Tensorflow</li>
+                <li>numpy</li>
+                <li>Raspberry Pi</li>
+              </ul>
+        		</div>
+        </div>
+        <div id="langbar1" class="lang_bar">
+          <span class="tooltiptext">Python, Bash<br></span>
+        </div>
+      	</li>
+      </ul>
     </div>
 
 
