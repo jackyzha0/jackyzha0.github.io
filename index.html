@@ -38,7 +38,7 @@
               <span class="word col4">a tinkerer.</span>
             </h1>
           </div>
-          <p id="prev-exp">previously @hootsuite</p>
+          <p id="prev-exp">ubc // previously @hootsuite</p>
         </div>
         <div id = "intro-arrow">
           <div class="arrow_part">
@@ -89,13 +89,33 @@
       </div>
 
       <div id="bio_img_div">
-        <image class="blob bmain" src="res/me.jpg">
+        <div class="bio-blob">
+        	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="blob-svg">
+        		<defs>
+        			<filter id="goo">
+        				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        				<feBlend in2="goo" in="SourceGraphic" result="mix" />
+        			</filter>
+        		</defs>
+        		<mask id="maska">
+        			<g class="blobs">
+        				<circle class="blob m" cx="200" cy="175" r="150" transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="340" cy="35" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="325" cy="300" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        				<circle class="blob s" cx="150" cy="220" r="105"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+                <circle class="blob s" cx="180" cy="120" r="110"  transform="rotate(0) translate(0, 0) rotate(0)"/>
+        			</g>
+        		</mask>
+        		<image href="res/me.jpg"  mask="url(#maska)" width="400" height="400">
+        	</svg>
+        </div>
       </div>
     </div>
 
   <!-- Load JS stuff -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
-  <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script  src="./script.js"></script>
   </body>
 </html>

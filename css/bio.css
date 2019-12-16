@@ -39,3 +39,25 @@
   margin-top: 0;
   line-height: 1.2;
 }
+
+/* Blob CSS */
+.bio-blob {
+ width: 100%;
+ height: 100%;
+}
+
+#blob-svg {
+  margin-top: 1em;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.blobs {
+ filter: url("#goo");
+}
+
+.blob {
+	fill: white;
+}
