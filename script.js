@@ -201,28 +201,28 @@ var rotateText = function() {
 setTimeout(rotateText, 1000);
 setInterval(rotateText, 3000);
 
-// Animating bio pic
-TweenMax.staggerFromTo('.s', 10, {
-  cycle: {
-    attr: function(i) {
-      var r = i * 43;
-      return {
-        transform: 'rotate(' + r + ') translate(5,0.1) rotate(' + (-r) + ')'
-      }
-    }
-  }
-}, {
-    cycle: {
-      attr: function(i) {
-        var r = i * 43 + 360;
-        return {
-          transform: 'rotate(' + r + ') translate(5,0.1) rotate(' + (-r) + ')'
-        }
-      }
-    },
-    ease: Sine.easeInOut,
-    repeat: -1
-  }, 1.5);
+// // Animating bio pic
+// TweenMax.staggerFromTo('.s', 10, {
+//   cycle: {
+//     attr: function(i) {
+//       var r = i * 43;
+//       return {
+//         transform: 'rotate(' + r + ') translate(5,0.1) rotate(' + (-r) + ')'
+//       }
+//     }
+//   }
+// }, {
+//     cycle: {
+//       attr: function(i) {
+//         var r = i * 43 + 360;
+//         return {
+//           transform: 'rotate(' + r + ') translate(5,0.1) rotate(' + (-r) + ')'
+//         }
+//       }
+//     },
+//     ease: Sine.easeInOut,
+//     repeat: -1
+//   }, 1.5);
 
 // Jump to Bio
 $("#landing-container").click(function() {
