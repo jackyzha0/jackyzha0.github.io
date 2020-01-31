@@ -204,6 +204,20 @@ h1 {
   margin-bottom: 2em;
 }
 
+#bio_container {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+p {
+  display: block;
+  color: var(--gray);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
 #bio_container:hover > #bio > h2 > .hover {
   opacity: 1.0;
 }
