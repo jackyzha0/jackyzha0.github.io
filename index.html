@@ -94,30 +94,6 @@
           <span id=json0>}<br></span>
         </p>
       </div>
-
-      <div id="bio_img_div">
-        <div class="bio-blob">
-        	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="blob-svg">
-        		<defs>
-        			<filter id="goo">
-        				<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        				<feBlend in2="goo" in="SourceGraphic" result="mix" />
-        			</filter>
-        		</defs>
-        		<mask id="maska">
-        			<g class="blobs">
-        				<circle class="blob m" cx="175" cy="175" r="150" transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="315" cy="35" r="20"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="300" cy="300" r="40"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-        				<circle class="blob s" cx="125" cy="220" r="105"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-                <circle class="blob s" cx="155" cy="120" r="110"  transform="rotate(0) translate(0, 0) rotate(0)"/>
-        			</g>
-        		</mask>
-        		<image href="res/me.jpg"  mask="url(#maska)" width="400px" height="auto">
-        	</svg>
-        </div>
-      </div>
     </div>
 
     <!-- Work Experience Section -->
@@ -343,13 +319,13 @@
     <div id="contact_buttons">
       <p>made by jacky zhao, © 2020</p>
       <a href="https://www.linkedin.com/in/jackyzhao2019/" target="_blank">[linkedin]</a>
-      <a href="mailto:j.zhao2k19@gmail.com" target=f"_blank">[email]</a>
+      <a href="mailto:j.zhao2k19@gmail.com" target="_blank">[email]</a>
       <a href="https://github.com/jackyzha0/" target="_blank">[github]</a>
       <a href="https://medium.com/@j.zhao2k19/" target="_blank">[medium]</a>
     </div>
   <!-- Load JS stuff -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script  src="./script.js"></script>
+  <script src="./script.js"></script>
   </body>
 </html>

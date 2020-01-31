@@ -1,14 +1,3 @@
-.bmain {
-  max-width: calc(60vw * 0.4);
-  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border-radius: 100%;
-}
-
-.blob {
-  z-index: 1;
-  cursor: pointer;
-}
-
 #bio_container {
   display: flex;
   margin-bottom: 2em;
@@ -17,32 +6,8 @@
 p {
   display: block;
   color: var(--gray);
-  width: 95%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   margin-top: 0;
   line-height: 1.2;
-}
-
-/* Blob CSS */
-.bio-blob {
- width: 100%;
- height: 100%;
- padding-top: 10vh;
-}
-
-#blob-svg {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-  height: 100%;
-  margin: auto;
-}
-
-.blobs {
- filter: url("#goo");
-}
-
-.blob {
-	fill: white;
 }
