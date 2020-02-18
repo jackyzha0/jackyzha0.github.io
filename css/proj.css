@@ -8,13 +8,9 @@ ul.project_list {
 	list-style: none;
 }
 
-.accordion-item {
-  background-color: var(--lightgray);
-}
-
 .proj_left {
   width: 100%;
-  padding: 1.3em 0 1.3em 1.3em;
+  padding: 1.3em;
 }
 
 .short-desc {

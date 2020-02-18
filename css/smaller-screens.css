@@ -12,7 +12,6 @@
 
  #video-context {
    width: 0%;
-   flex: 0 0 0;
    overflow: hidden;
    display: none
  }
@@ -21,12 +20,15 @@
    flex: 0 0 100% !important;
  }
 
- .video-container {
-   border-top-left-radius: 5px;
-   border-bottom-left-radius: 5px;
+ video {
+   border-radius: 5px !important;
  }
 
  .short-desc {
    display: None;
+ }
+
+ #vid_player_card {
+   padding: 0 !important;
  }
 }

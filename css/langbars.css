@@ -18,16 +18,6 @@
   background: linear-gradient(to bottom, #00ADD8 92.7%, #384d54 7.3%);
 }
 
-/* Project SID */
-#langbar4 {
-  background: linear-gradient(to bottom, #3572A5 56.9%, #f1e05a 56.9%, #f1e05a 79.5%, #f34b7d 79.5%, #f34b7d 90%, #E15525 90%, #E15525 96%, #563d7c 96%);
-}
-
-/* GroupCalendar */
-#langbar5 {
-  background: linear-gradient(to bottom, #f1e05a 54.0%, #563d7c 54.0%, #563d7c 79.8%, #E15525 79.8%);
-}
-
 .lang_bar {
   flex: 0 0 0.8em;
   border-top-right-radius: 5px;
