@@ -1,7 +1,6 @@
 /* Colour/Font Definitions */
 @import url(https://fonts.googleapis.com/css?family=Courier+Prime|Ubuntu|Montserrat:400,600,700|Open+Sans&display=swap);
 @import url("css/arrow.css");
-@import url("css/bio.css");
 @import url("css/fancyjson.css");
 @import url("css/smaller-screens.css");
 @import url("css/langbars.css");
@@ -15,8 +14,14 @@
   --navy: #284b63;
   --olive: #84a59d;
   --salmon: #f28482;
-  --gray: #999;
+  --gray: #777;
   --lightgray: #eee;
+}
+
+.slider__txt {
+    color: var(--gray);
+    margin: 1rem 1rem 1rem 0;
+    text-align: left;
 }
 
 .lt-content-column {
