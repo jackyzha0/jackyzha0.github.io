@@ -1,3 +1,7 @@
+ul.project_list {
+  padding: 0;
+}
+
 .accordion {
 	margin: 1rem 0;
 	padding: 0;
@@ -5,7 +9,6 @@
 }
 
 .accordion-item {
-  margin-top: 1em;
   background-color: var(--lightgray);
 }
 
@@ -17,6 +20,7 @@
 .short-desc {
   width: auto !important;
   white-space: nowrap;
+  margin: 0;
 }
 
 .spacer {
@@ -25,11 +29,9 @@
 
 /* Thumb */
 .accordion-thumb {
-	margin: 0;
 	white-space: nowrap;
 	cursor: pointer;
   font-weight: 600;
-  font-size: 1.3em;
   padding-right: 0.3em;
 }
 
@@ -48,22 +50,19 @@
   transition: transform .4s ease-in-out;
 }
 
+.accordion-panel ul.lt-hl {
+  margin: 0;
+}
+
 /* Panel */
 .accordion-panel {
-	margin: 0;
-	padding-bottom: .8rem;
   padding-top: .8rem;
 	display: none;
 }
 
-.accordion-panel .techlist {
-  margin-bottom: 0;
-  margin-top: 1.3em;
-}
-
 /* Active */
 .proj_left.is-active .accordion-arrow {
-	transform: rotateX(180deg) rotateZ(45deg);
+	transform: rotateX(180deg) rotateZ(45deg) translateY(-4px) translateX(-4px);
 }
 
 .proj_desc a {

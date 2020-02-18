@@ -28,22 +28,16 @@
   background: linear-gradient(to bottom, #f1e05a 54.0%, #563d7c 54.0%, #563d7c 79.8%, #E15525 79.8%);
 }
 
-h3 {
-  font-family: "Montserrat";
-  text-align: left;
-  display: inline-block;
-  margin: 0 1rem 0.3rem 0rem;
-}
-
 .lang_bar {
   flex: 0 0 0.8em;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  float: right;
 }
 
-.slider__caption {
+.job_name {
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 0.2rem;
 }
 

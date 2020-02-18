@@ -19,58 +19,49 @@
   --lightgray: #eee;
 }
 
+.lt-content-column {
+  background-color: var(--light);
+}
+
 .mobile-only {
   display: None;
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  color: var(--light);
+  overflow-x: hidden;
+  color: var(--light) !important;
 }
 
-.flexcontainer {
-  display:flex
-}
-
-.main_container {
-  padding: 0 20vw 30px 20vw;
-  background: var(--light);
+h1 {
+  font-family: 'Montserrat';
+  font-size: 4em;
   color: var(--dark);
-}
-
-.colflex {
-  flex-direction: column
-}
-
-.rowflex {
-  flex-direction: row
-}
-
-.button {
-  background-color: var(--navy);
-  color: var(--light);
-  font-family: "Open Sans";
-  width: 7em;
-  padding: 0.8em;
-  padding-bottom: 0.9em;
-  border-radius: 2em;
-  margin-top: 2em;
-  cursor: pointer;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: 'Montserrat';
-  font-weight: 700;
   font-size: 3em;
   color: var(--dark)
+}
+
+h3 {
+  font-family: "Montserrat";
+  margin: 0;
+  font-size: 1em;
+  color: var(--dark)
+}
+
+.lt-card {
+  margin: 0 !important;
+  padding: 0 0 0 1em !important;
 }
 
 .hover {
   color: var(--dark);
   text-decoration: none;
-  padding: 20px 0px;
-  margin: 0px 20px 0px 0px;
   display: inline-block;
   position: relative;
   opacity: 0.6;
@@ -79,7 +70,7 @@ h2 {
 
 .hover::after {
   transition: 300ms;
-  height: 35px;
+  height: 25px;
   content: "";
   position: absolute;
   background-color: var(--salmon);
@@ -87,15 +78,13 @@ h2 {
   z-index: -1;
   width: 0%;
   left: 10px;
-  bottom: 15px;
-  padding: 0;
-  margin: 0;
+  bottom: 0px;
 }
 
 a {
-    text-decoration: none;
-    color: #0d0d0d;
-    transition: all 0.2s ease;
+  text-decoration: none;
+  color: #0d0d0d;
+  transition: all 0.2s ease;
 }
 
 /* Landing Page CSS */
@@ -111,24 +100,14 @@ a {
 
 #landing-overlay {
   z-index: 9999 !important;
-  color: var(--dark);
-  left: 20%;
-  top: 40%;
-  width: 60%;
+  background-color: #00000000 !important;
+  top: 30%;
   height: 60%;
 }
 
-h1 {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 4em;
-  color: var(--dark)
-}
-
 #canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 #prev-exp {
@@ -138,14 +117,6 @@ h1 {
   padding-top: 0.5em;
   font-weight: normal;
   color: var(--dark)
-}
-
-#intro-text {
-  flex-basis: 60%
-}
-
-#intro-arrow {
-  flex-basis: 40%
 }
 
 /* Rotating Text CSS */
@@ -193,21 +164,6 @@ h1 {
 }
 
 /* Bio CSS */
-#bio {
-  float: left;
-  flex: 0 0 100%;
-  line-height: 1.0;
-}
-
-#bio_body {
-  margin-top: 0.5em;
-  margin-bottom: 2em;
-}
-
-#bio_container {
-  display: flex;
-  margin-bottom: 2em;
-}
 
 p {
   display: block;
@@ -252,30 +208,6 @@ p {
 
 
 /* Card CSS */
-.card-1 {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-  border-radius: 5px;
-}
-
-.card-1:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.18), 0 10px 10px rgba(0,0,0,0.16);
-  transform: translateY(-0.1em)
-}
-
-.card_container {
-  width: 100%;
-  display: flex;
-  height: 100%;
-  background-color: var(--lightgray);
-  border-radius: 5px;
-  margin-bottom: 2em;
-  padding-left: 1.5em;
-}
-
-#expcards {
-  margin-top: 1em;
-}
 
 .ext-ref {
   display: block;
@@ -283,40 +215,8 @@ p {
   font-family: "Courier Prime";
 }
 
-ul.techlist {
+ul.lt-hl {
   font-family: "Open Sans";
-  position: relative;
-  bottom: 0px;
-  margin-bottom: 1em;
-  float: left;
-  list-style: none;
-}
-
-ul.techlist li {
-  display:inline-block;
-  border-style: none;
-  font-size: 1em;
-  margin-right: 3px;
-  padding: 0.4rem;
-  border-radius: 2px;
-  color: var(--light);
-  background-color: var(--olive);
-  margin-bottom: 0.4em;
-}
-
-/* Video CSS */
-#vid {
-  margin-top: 1em;
-}
-
-/* Contact Button CSS */
-#contact_buttons {
-  text-align: center;
-  margin: 3em 0 3em 0;
-}
-
-#contact_buttons p {
-  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -324,5 +224,5 @@ ul.techlist li {
   font-family: "Courier Prime";
   font-size: 1em;
   color: var(--navy);
-  padding: 0 0.5em 0 0.5em;
+  padding: 0 0.5em 3em 0.5em;
 }

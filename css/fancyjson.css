@@ -3,7 +3,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-size: 1em;
   line-height: 1.2;
-  padding: 25px 0px 15px 3em;
+  padding: 25px 0px 15px 3em !important;
   background-color: var(--dark);
   border-radius: 4px;
 }

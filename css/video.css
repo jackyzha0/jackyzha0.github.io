@@ -4,25 +4,14 @@
   justify-content: Center;
 }
 
-#video-context h3 {
-  font-size: 1.8em;
-  font-weight: 600;
-  padding-top: 2em;
-}
-
-#vid_player_card {
-  background-color: var(--lightgray);
-  border-radius: 5px;
-  margin-bottom: 2em;
-}
-
 #togglePlayButton {
-  margin-bottom: 2em;
+  margin: 2em 0;
+  font-family: Open Sans;
+  width: 5em;
 }
 
 .video-container {
   position: relative;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -60,6 +49,7 @@ video {
   width:20%;
   height:20%;
   position:absolute;
+  display: none;
   left:0%;
   right:0%;
   top:0%;
@@ -70,24 +60,17 @@ video {
   text-align: center;
 }
 
+
 #progress {
-  display: block;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
   padding-left: 0.5rem;
-  line-height: 1.2;
-  font-weight: 300;
   margin-top: 55%;
 }
 
 #volume {
-  display: none;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
   padding-left: 0.75rem;
-  line-height: 1.2;
-  font-weight: 300;
   margin-top: 70%;
 }

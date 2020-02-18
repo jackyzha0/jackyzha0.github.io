@@ -14,9 +14,6 @@
       gtag('config', 'UA-148413215-1');
     </script>
 
-    <!-- Instant Page Tag -->
-    <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <title>jacky zhao</title>
@@ -24,15 +21,15 @@
     <link rel="shortcut icon" type="image/png" href="res/logo.png" />
 
     <!-- CSS Stylesheets and Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css"/>
   </head>
 
   <body>
     <!-- Begin actual content -->
     <div id = "landing-container">
-      <div id = "landing-overlay" class="flexcontainer colflex">
-        <div id = "intro-text">
+      <div id = "landing-overlay" class="lt-flex-col lt-content-column">
+        <div class="lt-flex-66">
           <h1 class="mobile-hide">hi!</h1>
           <h1 class="mobile-only">hi! i'm</h1>
           <div class = "rotating-text">
@@ -46,7 +43,7 @@
           </div>
           <p id="prev-exp">ubc // previously @hootsuite</p>
         </div>
-        <div id = "intro-arrow">
+        <div id="intro-arrow" class="lt-flex-33">
           <div class="arrow_part">
             <span></span>
             <span></span>
@@ -58,15 +55,15 @@
     </div>
 
     <!-- Personal Bio -->
-    <div class="main_container" id="bio_container">
+    <div class="lt-content-column" id="bio_container">
       <div id="bio">
         <h2>
           <span class="hover">about.</span>
         </h2>
-        <p id="bio_body">
+        <p>
           I am a passionate software developer trying to build solutions to the world’s problems. Whether that be through creating neural networks or building web applications, all my work is focused on one thing: impact. When I'm not coding, you can find me hitting the climbing gym, grabbing a bubble tea, or exploring beautiful Vancouver! Feel free to <a href="res/2020s-jackyzhao-textresume.pdf">download my resume </a> or contact me for a quick chat at <a href="mailto:j.zhao2k19@gmail.com">j.zhao2k19@gmail.com</a>
         </p>
-        <p class="card-1" id="bio_json">
+        <p class="lt-card lt-hover lt-shadow" id="bio_json">
           <span id=json0>{<br></span>
           <span id=json1>
             <span id=json1_1>"name"</span>
@@ -97,28 +94,26 @@
     </div>
 
     <!-- Work Experience Section -->
-    <div class="main_container" id="experience">
+    <div class="lt-content-column" id="experience">
       <h2>
         <span class="hover">experience.</span>
       </h2>
       <div id="expcards">
-        <div class="card_container card-1">
-          <div class="main_card">
-            <div class="flexcontainer job-info">
+        <div class="main_card lt-hover lt-shadow lt-card lt-flex-row">
+          <div>
+            <div class="lt-flex-row job-info">
               <img class="company-logo" src="res/hootsuite.png" title="Hootsuite">
               <div>
-                <h3 class="slider__caption">Hootsuite</h3>
-                </a>
-                <br>
+                <h3 class="job_name">Hootsuite</h3>
                 <h3 class="job_title">2019 // Software Development Intern</h3>
               </div>
             </div>
             <p class="slider__txt">
-              Fixed bug causing ~3200 unhandled errors affecting around 3000 unique users per week. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
-              core internal services. Involved with breaking down the Social Media Communication monolith service into microservices. Prototyped new service mesh with Istio and Envoy. Refactored and improved logging and error handling in legacy Scala
-              code. Wrote unit and integration tests in Go and Scala. Read more about my experience on my <a href="https://medium.com/@j.zhao2k19/life-of-a-high-school-software-developer-at-hootsuite-adc3195f8b5" target="_blank">Medium blog!</a>
+              Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala
+              code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
+              core internal services.  Wrote unit and integration tests in Go and Scala. Read more about my experience on my <a href="https://medium.com/@j.zhao2k19/life-of-a-high-school-software-developer-at-hootsuite-adc3195f8b5" target="_blank">Medium blog!</a>
             </p>
-            <ul class="techlist">
+            <ul class="lt-hl">
               <li>SQL</li>
               <li>Envoy</li>
               <li>Istio</li>
@@ -134,18 +129,17 @@
         </div>
       </div>
     </div>
+
     <!-- Video Section -->
-    <div id="vid" class="main_container">
+    <div id="vid" class="lt-content-column">
       <h2>
         <span class="hover">video.</span>
       </h2>
-      <div id="vid_player_card" class="card-1 flexcontainer">
-        <div id="video-context" class="flexcontainer colflex">
-          <h3>Project Portfolio</h3>
+      <div id="vid_player_card" class="lt-card lt-hover lt-shadow lt-flex-row">
+        <div id="video-context" class="lt-flex-col">
+          <h3 class="job_name">Project Portfolio</h3>
           <p> Short video I shot and edited explaining three of my favourite projects to date, along with some really short demos.</p>
-          <div id="togglePlayButton" class="button">
-            ►  Play
-          </div>
+          <div id="togglePlayButton" class="lt-button">►  Play</div>
         </div>
         <div id="video-content">
           <div class=video-container>
@@ -164,15 +158,15 @@
       </div>
     </div>
     <!-- Project Section -->
-    <div id="projects" class="main_container">
+    <div id="projects" class="lt-content-column">
       <h2>
         <span class="hover">projects.</span>
       </h2>
       <ul class="project_list">
         <div class="accordion">
-        	<div class="accordion-item card-1 is-active flexcontainer">
+        	<div class="accordion-item lt-card is-active lt-flex-row">
             <div class="proj_left">
-              <div class="proj_desc flexcontainer">
+              <div class="proj_desc lt-flex-row">
           		    <h3 class="accordion-thumb"> Speech2Braille</h3>
                   <p class="short-desc">— a wearable device to transcribe speech</p>
                   <div class="spacer"></div>
@@ -184,7 +178,7 @@
                 <p>
             			Speech2Braille was created to help the over 360 million people in the world who have debilitating hearing loss. This project entailed creating an end-to-end speech recognition system using an Deep LSTM and a portable device to display braille. The device is able to recognize audio and transcribe it into Braille through the haptic feedback device via the neural network. The feedback device is a self-made GPIO hat, consisting of 6 solenoids, and allows the Raspberry Pi to control the 6 solenoids via the GPIO outputs. The neural network itself is 2 layered LSTM network with 256 hidden cells in each layer. Won <a target="_blank" href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5709&year=2018&province=12&keyword=&name=&categoryid=&divisionid=&challengeid=&regionid=90">Silver and 10k in awards</a> at the Canada Wide Science Fair.
                 </p>
-                <ul class="techlist">
+                <ul class="lt-hl">
                   <li>Tensorflow</li>
                   <li>numpy</li>
                   <li>Raspberry Pi</li>
@@ -197,9 +191,9 @@
           </div>
         </div>
         <div class="accordion">
-        	<div class="accordion-item card-1 flexcontainer">
+        	<div class="accordion-item lt-card lt-flex-row">
             <div class="proj_left">
-              <div class="proj_desc flexcontainer">
+              <div class="proj_desc lt-flex-row">
           		    <h3 class="accordion-thumb">PacketBook</h3>
                   <p class="short-desc">— blockchain banking without internet</p>
                   <div class="spacer"></div>
@@ -211,7 +205,7 @@
                 <p>
                   PacketBook is a financial accessibility chatbot, fully accessible through the SMS (text messaging) protocol. Users are able to issue simple commands to register, check their balance, deposit, withdraw, and send money. These commands are secured with two-factor authentication through a Flask server on Heroku with Twilio. The backend that handles transaction is written with Node and Express and deployed on stdlib. PacketBook is unique in that it leverages the Stellar blockchain and tokens (XLM) for its transactions which greatly reduces operating overhead with its minimal transaction costs (around 1/100 of a cent per transaction).
                 </p>
-                <ul class="techlist">
+                <ul class="lt-hl">
                   <li>MongoDB</li>
                   <li>node.js</li>
                   <li>Express.js</li>
@@ -228,9 +222,9 @@
           </div>
         </div>
         <div class="accordion">
-          <div class="accordion-item card-1 flexcontainer">
+          <div class="accordion-item lt-card lt-flex-row">
             <div class="proj_left">
-              <div class="proj_desc flexcontainer">
+              <div class="proj_desc lt-flex-row">
                   <h3 class="accordion-thumb">Envoy Front Proxy</h3>
                   <p class="short-desc">— go service mesh skeleton</p>
                   <div class="spacer"></div>
@@ -239,10 +233,9 @@
               </div>
               <div class="accordion-panel">
                 <p>
-                  This project is an Envoy service mesh skeleton with External Authorization and Custom Header Injection. This proof of concept shows that Envoy can be used in conjunction with external auth (ext-authz) to manage routing, headers, and
-                  auth. As an added bonus, Envoy allows easy built-in load balancing. Intended to be used as a skeleton project to reduce boilerplate in future Go service mesh projects.
+                  This project is an Envoy service mesh skeleton with External Authorization and Custom Header Injection. This proof of concept shows that Envoy can be used in conjunction with external auth (ext-authz) to manage routing, headers, and auth. As an added bonus, Envoy allows easy built-in load balancing. Intended to be used as a skeleton project to reduce boilerplate in future Go service mesh projects.
                 </p>
-                <ul class="techlist">
+                <ul class="lt-hl">
                   <li>Envoy</li>
                   <li>Delve</li>
                   <li>Docker</li>
@@ -255,68 +248,10 @@
             </div>
           </div>
         </div>
-        <div class="accordion">
-          <div class="accordion-item card-1 flexcontainer">
-            <div class="proj_left">
-              <div class="proj_desc flexcontainer">
-                  <h3 class="accordion-thumb">Project SID</h3>
-                  <p class="short-desc">— large scale detection with drone swarms</p>
-                  <div class="spacer"></div>
-                  <a target="_blank" href="https://devpost.com/software/pennappsxx">[devpost]</a>
-                  <a target="_blank" href="https://github.com/jackyzha0/pennappsxx">[github]</a>
-                  <div class="accordion-arrow"></div>
-              </div>
-              <div class="accordion-panel">
-                <p>
-                  Project SID or Swarm Intelligent Drones, is an autonomous drone swarm that is capable of efficient and large scale detection. In this project, we've decided to apply it to tracking debris and trash. The drones carry out individual
-                  missions and provide data for us to generate reports mapping out hotspots and documenting the spread of debris. The project allows users to schedule different flight paths for a swarm of drones to search for debris. The drones are able
-                  to stream images to the web application and see detections of debris or trash.
-                </p>
-                <ul class="techlist">
-                  <li>Tello SDK</li>
-                  <li>Google Cloud</li>
-                  <li>Keras</li>
-                  <li>Flask</li>
-                </ul>
-              </div>
-            </div>
-            <div id="langbar4" class="lang_bar">
-              <span class="tooltiptext">Python, JavaScript, C++, HTML</span>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion-item card-1 flexcontainer">
-            <div class="proj_left">
-              <div class="proj_desc flexcontainer">
-                  <h3 class="accordion-thumb">GroupCalendar</h3>
-                  <p class="short-desc">— calendar and schedule sharing</p>
-                  <div class="spacer"></div>
-                  <a target="_blank" href="https://github.com/jackyzha0/groupCalendar">[github]</a>
-                  <div class="accordion-arrow"></div>
-              </div>
-              <div class="accordion-panel">
-                <p>
-                  GroupCalendar was created as an exercise in reactive web development. It helps by allowing users to easily schedule calendars and events through Google Accounts while avoiding conflicts. The database was hosted
-                  locally through MongoDB. Front-end was done through Meteor.js with styling done in Handlebars.js. Account management
-                  was done through accounts-ui Meteor.js package.
-                </p>
-                <ul class="techlist">
-                  <li>Meteor.js</li>
-                  <li>Handlebars.js</li>
-                  <li>MongoDB</li>
-                </ul>
-              </div>
-            </div>
-            <div id="langbar5" class="lang_bar">
-              <span class="tooltiptext">JavaScript, HTML, CSS</span>
-            </div>
-          </div>
-        </div>
       </ul>
     </div>
     <!-- Contact Info -->
-    <div id="contact_buttons">
+    <div id="contact_buttons" class="lt-centre">
       <p>made by jacky zhao, © 2020</p>
       <a href="https://www.linkedin.com/in/jackyzhao2019/" target="_blank">[linkedin]</a>
       <a href="mailto:j.zhao2k19@gmail.com" target="_blank">[email]</a>
