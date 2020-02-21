@@ -5,10 +5,11 @@
 
   #landing-overlay {
     overflow: hidden;
-    left: 10% !important;
-    width: 80% !important;
-    padding-left: 0;
+    left: 10vw !important;
+    width: 80vw !important;
+    padding: 0 0;
   }
+
   h1 {
     font-size: 2em !important;
   }
