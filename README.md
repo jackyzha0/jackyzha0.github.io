@@ -10,3 +10,6 @@ I got tired of adding `div`s and other stuff manually everytime I wanted to upda
 
 ### Where is everything
 You can find the 'main' `index.html` under `layouts/index.html`. Shortened from 284 lines to just 65! It now just references a bunch of `partial` blocks which you can find all over `layouts/partials`. These are all reused components from the old static site, except all the details are now filled in using data files found in `data`. So now, I can just edit stuff in `data` and generate new stuff for my site!
+
+### Getting it to work
+Run `hugo server` to start up a local version of the site at `localhost:1313`. To rebuild, run `hugo`. If pushing, run `./deploy.sh`
