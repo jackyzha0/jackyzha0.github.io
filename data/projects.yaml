@@ -1,5 +1,68 @@
-- name: Speech2Braille
+- name: reflect
   expand: true
+  short_desc: a mindful website blocker for the productive
+  links:
+    - link_name: github
+      link: https://github.com/jackyzha0/reflect-nlp
+  desc:
+    reflect is a browser extension focused around asking users to reflect before visiting distracting sites, helping to
+    reduce mindless scrolling while still being able to get work done. A basic LSTM network was trained on survey data that
+    we collected to do intent classification. An ingress proxy was also created to perform statistics aggregation and rate limiting. 
+    Both were containerized and networked with Kubernetes. A CI/CD pipeline was created through CircleCI which deploys changes to Google Kubernetes
+    Engine. The actual extension is a simple Chrome extension written in TypeScript that interfaces with our backend.
+  techlist:
+    - Kubernetes
+    - Docker
+    - GKE
+    - MySQL
+    - Keras
+    - Flask
+    - Chrome Extension
+  lang_ratios:
+    - name: TypeScript
+      percent: 32
+    - name: Go
+      percent: 22.74
+    - name: Python
+      percent: 34.2
+    - name: Dockerfile
+      percent: 5
+    - name: CSS
+      percent: 4.4
+    - name: HTML
+      percent: 3
+
+- name: readAR
+  expand: false
+  short_desc: an AR app to help those with learning disabilities
+  links:
+    - link_name: devpost
+      link: https://devpost.com/software/readar-twh41m
+    - link_name: github
+      link: https://github.com/jackyzha0/treehacks2020-backend
+  desc:
+    readAR is a mobile AR app re-renders text to be more dyslexic-friendly, and 
+    adds context-dependent word definitions and images. A custom BERT model was created and trained
+    for word sense disambiguation (WSD), achieving a 76.6% F1% score on the test dataset which is only ~5% away from
+    state-of-the-art. This model is served through Flask on an Oracle VM Instance. The API is also responsible for 
+    our image processing pipeline, which is a conglomerate of different Azure APIs (OCR, Text Analytics, Bing Search).
+    Built at TreeHacks 2020, winning the Microsoft Azure Champ Prize - Hack for Good.
+  techlist:
+    - PyTorch
+    - Flask
+    - Dockerfile
+    - Azure
+    - Oracle Cloud
+  lang_ratios:
+    - name: Python
+      percent: 97.2
+    - name: Dockerfile
+      percent: 2.2
+    - name: Bash
+      percent: 0.6
+
+- name: Speech2Braille
+  expand: false
   short_desc: a wearable device to transcribe speech
   links:
     - link_name: paper
@@ -11,10 +74,10 @@
     world who have debilitating hearing loss. This project entailed creating 
     an end-to-end speech recognition system using an Deep LSTM and a portable 
     device to display braille. The device is able to recognize audio and transcribe 
-    it into Braille through the haptic feedback device via the neural network. The 
-    feedback device is a self-made GPIO hat, consisting of 6 solenoids, and allows the Raspberry 
-    Pi to control the 6 solenoids via the GPIO outputs. The neural network itself is 2 layered LSTM 
-    network with 256 hidden cells in each layer. Won Silver and 10k in awards at the Canada Wide Science Fair.
+    it into Braille through the haptic feedback device via a novel neural network architecture. The 
+    feedback device is a self-made GPIO hat, consisting of 6 solenoids. The neural network itself is 2 layered LSTM-CTC 
+    network with 256 hidden cells in each layer, achieving 92% state-of-the-art word error rate on the TIMIT dataset. 
+    Won Silver and 10k in awards at the Canada Wide Science Fair.
   techlist:
     - Tensorflow
     - numpy
