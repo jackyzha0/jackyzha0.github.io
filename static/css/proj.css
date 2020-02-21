@@ -1,0 +1,68 @@
+ul.project_list {
+  padding: 0;
+}
+
+.accordion {
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.proj_left {
+  width: 100%;
+  padding: 1.3em;
+}
+
+.short-desc {
+  width: auto !important;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.spacer {
+  flex: 25%;
+}
+
+/* Thumb */
+.accordion-thumb {
+	white-space: nowrap;
+	cursor: pointer;
+  font-weight: 600;
+  padding-right: 0.3em;
+}
+
+/* Arrow */
+.accordion-arrow {
+  float:right;
+  height: 7px;
+	min-width: 7px;
+  margin-right: 1rem;
+  margin-left: .5rem;
+  vertical-align: middle;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  border-color: var(--dark);
+  transform: rotate(45deg);
+  transition: transform .4s ease-in-out;
+}
+
+.accordion-panel ul.lt-hl {
+  margin: 0;
+}
+
+/* Panel */
+.accordion-panel {
+  padding-top: .8rem;
+	display: none;
+}
+
+/* Active */
+.proj_left.is-active .accordion-arrow {
+	transform: rotateX(180deg) rotateZ(45deg) translateY(-4px) translateX(-4px);
+}
+
+.proj_desc a {
+  font-family: "Courier Prime";
+  color: var(--navy);
+  padding-right: 1em;
+}

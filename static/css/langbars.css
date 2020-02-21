@@ -1,0 +1,71 @@
+/* Hootsuite */
+#langbar0 {
+  background: linear-gradient(to bottom, #00ADD8 42%, #c22d40 42%, #c22d40 75%, #384d54 75%, #384d54 95%, #474747 95%);
+}
+
+/* Speech2Braille */
+#langbar1 {
+  background: linear-gradient(to bottom, #3572A5 89.9%, #474747 10.1%);
+}
+
+/* PacketBook */
+#langbar2 {
+  background: linear-gradient(to bottom, #f1e05a 80.8%, #3572A5 80.8%);
+}
+
+/* Envoy Front Proxy */
+#langbar3 {
+  background: linear-gradient(to bottom, #00ADD8 92.7%, #384d54 7.3%);
+}
+
+.lang_bar {
+  flex: 0 0 0.8em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  float: right;
+}
+
+.job_name {
+  font-weight: 600;
+  font-size: 1.6em;
+  margin-bottom: 0.2rem;
+}
+
+.company-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 3px;
+  margin-right: 1em;
+}
+
+.job-info {
+  padding: 1.5rem 0 0 0;
+}
+
+.lang_bar {
+  position: relative;
+}
+
+/* Tooltip text */
+.lang_bar .tooltiptext {
+  font-family: 'Open Sans', sans-serif;
+  white-space:nowrap;
+  visibility: hidden;
+  opacity: 0;
+  color: var(--dark);
+  text-align: center;
+  border-radius: 3px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  top: 50%;
+  transform: translate(5em, -50%);
+  z-index: 1;
+  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+}
+
+.lang_bar:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1.0;
+  margin-left: -3em;
+}
