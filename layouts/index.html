@@ -33,34 +33,7 @@
         <span class="hover">experience.</span>
       </h2>
       <div id="expcards">
-        <div class="main_card lt-hover lt-shadow lt-card lt-flex-row">
-          <div>
-            <div class="lt-flex-row job-info">
-              <img class="company-logo" src="res/hootsuite.png" title="Hootsuite">
-              <div>
-                <h3 class="job_name">Hootsuite</h3>
-                <h3 class="job_title">2019 // Software Development Intern</h3>
-              </div>
-            </div>
-            <p class="slider__txt">
-              Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala
-              code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
-              core internal services.  Wrote unit and integration tests in Go and Scala. Read more about my experience on my <a href="https://medium.com/@j.zhao2k19/life-of-a-high-school-software-developer-at-hootsuite-adc3195f8b5" target="_blank">Medium blog!</a>
-            </p>
-            <ul class="lt-hl">
-              <li>SQL</li>
-              <li>Envoy</li>
-              <li>Istio</li>
-              <li>Kubernetes</li>
-              <li>Docker</li>
-              <li>Sumologic</li>
-              <li>Jira</li>
-            </ul>
-          </div>
-          <div id="langbar0" class="lang_bar">
-            <span class="tooltiptext">Go, Scala, Bash, Dockerfile<br></span>
-          </div>
-        </div>
+        {{partial "jobs/jobs.html" .}}
       </div>
     </div>
 

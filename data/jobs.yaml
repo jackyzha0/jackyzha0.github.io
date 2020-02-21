@@ -1,0 +1,25 @@
+- name: Hootsuite
+  title: Software Development Intern
+  img: hootsuite.png
+  year: 2019
+  things:
+    Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala
+    code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
+    core internal services.  Wrote unit and integration tests in Go and Scala.
+  techlist:
+    - SQL
+    - Envoy
+    - Istio
+    - Kubernetes
+    - Docker
+    - Sumologic
+    - Jira
+  lang_ratios:
+    - name: Go
+      percent: 42
+    - name: Scala
+      percent: 33
+    - name: Dockerfile
+      percent: 20
+    - name: Bash
+      percent: 6

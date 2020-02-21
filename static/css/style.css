@@ -34,6 +34,10 @@
   --lightgray: #302d3b !important;
 }
 
+.main_card {
+  margin-bottom: 2em !important;
+}
+
 .slider__txt {
   color: var(--gray);
   margin: 1rem 1rem 1rem 0;
