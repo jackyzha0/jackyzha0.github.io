@@ -39,124 +39,17 @@
 
     <!-- Video Section -->
     <div id="vid" class="lt-content-column">
-      <h2>
-        <span class="hover">video.</span>
-      </h2>
-      <div id="vid_player_card" class="lt-card lt-hover lt-shadow lt-flex-row">
-        <div id="video-context" class="lt-flex-col">
-          <h3 class="job_name">Project Portfolio</h3>
-          <p> Short video I shot and edited explaining three of my favourite projects to date, along with some really short demos.</p>
-          <div id="togglePlayButton" class="lt-button">►  Play</div>
-        </div>
-        <div id="video-content">
-          <div class=video-container>
-            <video id="makerportfolio" poster="res/vid-cover.png" width="960" height="720" preload="none">
-              <source src="res/makerportfolio.mp4" type="video/mp4">
-              i feel like you're just trying to break my website at this point :((
-            </video>
-            <div class="playpause">
-              <p id="progress">???</p>
-            </div>
-            <div class="vol-contain">
-              <p id="volume">???</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{partial "video/video.html" .}}
     </div>
+
     <!-- Project Section -->
     <div id="projects" class="lt-content-column">
       <h2>
         <span class="hover">projects.</span>
       </h2>
-      <div class="project_list">
-        <div class="accordion">
-          <div class="accordion-item lt-shadow lt-card is-active lt-flex-row">
-            <div class="proj_left">
-              <div class="proj_desc lt-flex-row">
-                  <h3 class="accordion-thumb"> Speech2Braille</h3>
-                  <p class="short-desc">— a wearable device to transcribe speech</p>
-                  <div class="spacer"></div>
-                  <a target="_blank "href="res/gvrsf_report.pdf">[paper]</a>
-                  <a target="_blank" href="https://github.com/jackyzha0/Speech2Braille">[github]</a>
-                  <div class="accordion-arrow"></div>
-              </div>
-              <div class="accordion-panel">
-                <p>
-                  Speech2Braille was created to help the over 360 million people in the world who have debilitating hearing loss. This project entailed creating an end-to-end speech recognition system using an Deep LSTM and a portable device to display braille. The device is able to recognize audio and transcribe it into Braille through the haptic feedback device via the neural network. The feedback device is a self-made GPIO hat, consisting of 6 solenoids, and allows the Raspberry Pi to control the 6 solenoids via the GPIO outputs. The neural network itself is 2 layered LSTM network with 256 hidden cells in each layer. Won <a target="_blank" href="https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5709&year=2018&province=12&keyword=&name=&categoryid=&divisionid=&challengeid=&regionid=90">Silver and 10k in awards</a> at the Canada Wide Science Fair.
-                </p>
-                <ul class="lt-hl">
-                  <li>Tensorflow</li>
-                  <li>numpy</li>
-                  <li>Raspberry Pi</li>
-                </ul>
-              </div>
-            </div>
-            <div id="langbar1" class="lang_bar">
-              <span class="tooltiptext">Python, Bash<br></span>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion-item lt-card lt-shadow lt-flex-row">
-            <div class="proj_left">
-              <div class="proj_desc lt-flex-row">
-                  <h3 class="accordion-thumb">PacketBook</h3>
-                  <p class="short-desc">— blockchain banking without internet</p>
-                  <div class="spacer"></div>
-                  <a target="_blank" href="https://devpost.com/software/packetbook">[devpost]</a>
-                  <a target="_blank" href="https://github.com/jackyzha0/PacketBook">[github]</a>
-                  <div class="accordion-arrow"></div>
-              </div>
-              <div class="accordion-panel">
-                <p>
-                  PacketBook is a financial accessibility chatbot, fully accessible through the SMS (text messaging) protocol. Users are able to issue simple commands to register, check their balance, deposit, withdraw, and send money. These commands are secured with two-factor authentication through a Flask server on Heroku with Twilio. The backend that handles transaction is written with Node and Express and deployed on stdlib. PacketBook is unique in that it leverages the Stellar blockchain and tokens (XLM) for its transactions which greatly reduces operating overhead with its minimal transaction costs (around 1/100 of a cent per transaction).
-                </p>
-                <ul class="lt-hl">
-                  <li>MongoDB</li>
-                  <li>node.js</li>
-                  <li>Express.js</li>
-                  <li>Flask</li>
-                  <li>Stellar</li>
-                  <li>stdlib</li>
-                  <li>Heroku</li>
-                </ul>
-              </div>
-            </div>
-            <div id="langbar2" class="lang_bar">
-              <span class="tooltiptext">JavaScript, Python<br></span>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div class="accordion-item lt-card lt-shadow lt-flex-row">
-            <div class="proj_left">
-              <div class="proj_desc lt-flex-row">
-                  <h3 class="accordion-thumb">Envoy Front Proxy</h3>
-                  <p class="short-desc">— go service mesh skeleton</p>
-                  <div class="spacer"></div>
-                  <a target="_blank" href="https://github.com/jackyzha0/front-proxy-PoC">[github]</a>
-                  <div class="accordion-arrow"></div>
-              </div>
-              <div class="accordion-panel">
-                <p>
-                  This project is an Envoy service mesh skeleton with External Authorization and Custom Header Injection. This proof of concept shows that Envoy can be used in conjunction with external auth (ext-authz) to manage routing, headers, and auth. As an added bonus, Envoy allows easy built-in load balancing. Intended to be used as a skeleton project to reduce boilerplate in future Go service mesh projects.
-                </p>
-                <ul class="lt-hl">
-                  <li>Envoy</li>
-                  <li>Delve</li>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-                </ul>
-              </div>
-            </div>
-            <div id="langbar3" class="lang_bar">
-              <span class="tooltiptext">Go, Dockerfile<br></span>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{partial "projects/projects.html" .}}
     </div>
+    
     <!-- Contact Info -->
     <div id="contact_buttons" class="lt-centre">
       <p>made by jacky zhao, © 2020</p>

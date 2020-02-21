@@ -1,18 +1,3 @@
-/* Speech2Braille */
-#langbar1 {
-  background: linear-gradient(to bottom, #3572A5 89.9%, #474747 10.1%);
-}
-
-/* PacketBook */
-#langbar2 {
-  background: linear-gradient(to bottom, #f1e05a 80.8%, #3572A5 80.8%);
-}
-
-/* Envoy Front Proxy */
-#langbar3 {
-  background: linear-gradient(to bottom, #00ADD8 92.7%, #384d54 7.3%);
-}
-
 .lang_bar {
   flex: 0 0 0.8em;
   border-top-right-radius: 5px;
