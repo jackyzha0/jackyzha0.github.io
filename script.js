@@ -1,3 +1,29 @@
+// Darkmode toggle
+const toggleSwitch = document.querySelector('#darkmode-toggle');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+  document.documentElement.setAttribute('saved-theme', currentTheme);
+  if (currentTheme === 'dark') {
+    toggleSwitch.checked = true;
+  }
+}
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute('saved-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+  else {
+    document.documentElement.setAttribute('saved-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }    
+}
+
+// listen for toggle
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+
 // Particle credit to Y Endo
 
 function random(low, high) {
@@ -140,7 +166,8 @@ class Visual {
 
   render() {
     this.context.clearRect(0, 0, this.canvasWidth + this.particleMaxRadius * 2, this.canvasHeight);
-    this.context.fillStyle = "#fbfffe";
+    var style = getComputedStyle(document.body);
+    this.context.fillStyle = style.getPropertyValue('--light');
     this.context.fillRect(0, 0, canvas.width, canvas.height);
     this.drawParticles();
 
@@ -202,7 +229,7 @@ setTimeout(rotateText, 1000);
 setInterval(rotateText, 3000);
 
 // Jump to Bio
-$("#landing-container").click(function() {
+$("#canvas").click(function() {
   $('html,body').animate({
     scrollTop: $("#bio_container").offset().top
   },

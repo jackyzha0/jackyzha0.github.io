@@ -7,6 +7,7 @@
 @import url("css/video.css");
 @import url("css/proj.css");
 @import url("css/mobile.css");
+@import url("css/darkmode.css");
 
 :root {
   --light: #fbfffe;
@@ -16,12 +17,27 @@
   --salmon: #f28482;
   --gray: #777;
   --lightgray: #eee;
+
+  --lt-colours-light: var(--light) !important;
+  --lt-colours-lightgray: var(--lightgray) !important;
+  --lt-colours-dark: var(--navy) !important;
+  --lt-colours-secondary: var(--olive) !important;
+}
+
+[saved-theme="dark"] {
+  --light: #141021 !important;
+  --dark: #fbfffe !important;
+  --navy: #75a1bf !important;
+  --olive: #84a59d !important;
+  --salmon: #f58382 !important;
+  --gray: #aaa !important;
+  --lightgray: #302d3b !important;
 }
 
 .slider__txt {
-    color: var(--gray);
-    margin: 1rem 1rem 1rem 0;
-    text-align: left;
+  color: var(--gray);
+  margin: 1rem 1rem 1rem 0;
+  text-align: left;
 }
 
 .lt-content-column {
@@ -32,11 +48,15 @@
   display: None;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  margin: 0;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
-  color: var(--light) !important;
+  background-color: var(--light);
 }
 
 h1 {
@@ -88,7 +108,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #0d0d0d;
+  color: var(--dark);
   transition: all 0.2s ease;
 }
 
