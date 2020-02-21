@@ -1,9 +1,13 @@
 .lang_bar {
   flex: 0 0 0.8em;
+  float: right;
+}
+
+.bar_container {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  float: right;
   overflow: hidden;
+  height: 100%;
 }
 
 .job_name {
@@ -48,5 +52,5 @@
 .lang_bar:hover .tooltiptext {
   visibility: visible;
   opacity: 1.0;
-  margin-left: -3em;
+  margin-left: -2em;
 }

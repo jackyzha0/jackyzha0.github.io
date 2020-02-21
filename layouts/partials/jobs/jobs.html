@@ -16,16 +16,17 @@
         {{end}}
       </ul>
     </div>
-    <div class="lang_bar lt-flex-col">
+    <div class="lang_bar">
+      <span class="tooltiptext">
+        {{range $i, $e := .lang_ratios}}
+        {{if $i}}, {{end}}{{$e.name}}
+        {{end}}
+      </span>
+      <div class="bar_container lt-flex-col">
       {{range .lang_ratios}}
         <div style="background-color: {{index $.Site.Data.colors .name}}; flex: 0 0 {{.percent}}%"></div>
       {{end}}
-      <span class="tooltiptext">
-        {{range $i, $e := .lang_ratios}}
-        {{if $i}}, {{end}}
-        {{$e.name}}
-        {{end}}<br>
-      </span>
+      </div>
     </div>
   </div>
 </div>
