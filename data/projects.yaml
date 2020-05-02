@@ -2,35 +2,58 @@
   expand: true
   short_desc: a mindful website blocker for the productive
   links:
+    - link_name: site
+      link: https://getreflect.app/
+    - link_name: extension
+      link: https://chrome.google.com/webstore/detail/reflect-a-mindful-website/bicebchdpeichdlmoaflplakefkjkade
     - link_name: github
-      link: https://github.com/jackyzha0/reflect-nlp
+      link: https://github.com/jackyzha0/reflect-chrome
   desc:
     reflect is a browser extension focused around asking users to reflect before visiting distracting sites, helping to
-    reduce mindless scrolling while still being able to get work done. A basic LSTM network was trained on survey data that
-    we collected to do intent classification. An ingress proxy was also created to perform statistics aggregation and rate limiting. 
-    Both were containerized and networked with Kubernetes. A CI/CD pipeline was created through CircleCI which deploys changes to Google Kubernetes
-    Engine. The actual extension is a simple Chrome extension written in TypeScript that interfaces with our backend.
+    reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged 
+    user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network 
+    in Keras on the closed-beta data and augmented it using NLP data augmentation techniques, reaching ~86% classification accuracy.
+    Finally, the model was ported to Tensorflow.js where it runs in-browser within the extension which is written in Typescript.
   techlist:
     - Kubernetes
     - Docker
     - GKE
-    - MySQL
+    - Cloud SQL
     - Keras
+    - Tensorflow.js
     - Flask
-    - Chrome Extension
+    - CircleCI
   lang_ratios:
     - name: TypeScript
-      percent: 32
-    - name: Go
-      percent: 22.74
+      percent: 52
     - name: Python
-      percent: 34.2
+      percent: 28
+    - name: Go
+      percent: 18
     - name: Dockerfile
       percent: 5
     - name: CSS
-      percent: 4.4
+      percent: 4
     - name: HTML
       percent: 3
+
+- name: nanoDB
+  expand: false
+  short_desc: a simple, easy, and debuggable document database
+  links:
+    - link_name: godoc
+      link: https://godoc.org/github.com/jackyzha0/nanoDB
+    - link_name: github
+      link: https://github.com/jackyzha0/nanodb
+  desc:
+    nanoDB arose out of many frustrations I've personally come across while prototyping, namely 1) difficulty of debugging data 2) faffing around with language specific drivers and 3) reference resolution. As a result, nanoDB stores everything on disk as a JSON document, has built-in reference resolution, and can be used fully through a REST API. Think of it like Redis but with MongoDB style documents — all of which is on-disk, human-readable, and through a REST API. The project is fully written in Go and is thoroughly unit-tested. It features a standalone server binary which creates a nanoDB server, as well as a shell which allows you to do some basic document inspection.
+  techlist:
+    - Docker
+  lang_ratios:
+    - name: Go
+      percent: 95
+    - name: Dockerfile
+      percent: 5
 
 - name: readAR
   expand: false
@@ -141,3 +164,22 @@
       percent: 92.7
     - name: Dockerfile
       percent: 7.3
+
+- name: Personal Website
+  expand: false
+  short_desc: the thing you're on right now
+  links:
+    - link_name: github
+      link: https://github.com/jackyzha0/website-v2
+  desc:
+    You'll notice that this site is almost identical to my previous one, but under the hood a lot has changed! I got tired of adding divs and text manually everytime I wanted to update a project/add new stuff, so I decided to something more powerful that supports templating to do it for me automatically. It takes advantage of Go templates in order to generate the site from just a few config files! Now, updating the site is as simple as editing a YAML file.
+  techlist:
+    - Hugo
+    - lite.css
+  lang_ratios:
+    - name: JavaScript
+      percent: 35
+    - name: HTML
+      percent: 35
+    - name: CSS
+      percent: 30
