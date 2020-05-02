@@ -17,11 +17,13 @@
   --salmon: #f28482;
   --gray: #777;
   --lightgray: #eee;
+  --outlinegray: #dddddd;
 
   --lt-colours-light: var(--light) !important;
   --lt-colours-lightgray: var(--lightgray) !important;
   --lt-colours-dark: var(--navy) !important;
   --lt-colours-secondary: var(--olive) !important;
+  --lt-colours-gray: var(--outlinegray) !important;
 }
 
 [saved-theme="dark"] {
@@ -32,6 +34,7 @@
   --salmon: #f58382 !important;
   --gray: #aaa !important;
   --lightgray: #302d3b !important;
+  --outlinegray: #343434 !important;
 }
 
 .main_card {

@@ -25,7 +25,6 @@ toggleSwitch.addEventListener('change', switchTheme, false);
 
 
 // Particle credit to Y Endo
-
 function random(low, high) {
   return Math.random() * (high - low) + low;
 }
@@ -40,7 +39,6 @@ class Visual {
     this.particles = [];
     this.particleMaxRadius = 8;
 
-    this.handleMouseMoveBind = this.handleMouseMove.bind(this);
     this.handleResizeBind = this.handleResize.bind(this);
 
     this.initialize();
@@ -58,17 +56,11 @@ class Visual {
 
   // bind event listeners
   bind() {
-    document.body.addEventListener('mousemove', this.handleMouseMoveBind, false);
     window.addEventListener('resize', this.handleResizeBind, false);
   }
 
   unbind() {
-    document.body.removeEventListener('mousemove', this.handleMouseMoveBind, false);
     window.removeEventListener('resize', this.handleResizeBind, false);
-  }
-
-  handleMouseMove(e) {
-    this.enlargeParticle(e.clientX, e.clientY);
   }
 
   handleResize() {
@@ -138,30 +130,6 @@ class Visual {
   moveParticle(particle) {
     particle.x += particle.speed;
     particle.y = particle.startY + particle.amplitude * Math.sin(((particle.x / 6) * Math.PI) / 180);
-  }
-
-  enlargeParticle(clientX, clientY) {
-    this.particles.forEach(particle => {
-
-      const distance = Math.hypot(particle.x - clientX, particle.y - clientY);
-
-      if (distance <= 100) {
-        const scaling = (100 - distance) / 12;
-        TweenMax.to(particle, 0.5, {
-          radius: particle.defaultRadius + scaling,
-          alpha: 1,
-          ease: Power2.easeOut,
-          speed: 1
-        });
-      } else {
-        TweenMax.to(particle, 0.5, {
-          radius: particle.defaultRadius,
-          ease: Power2.easeOut,
-          alpha: particle.ref_alpha,
-          speed: particle.ref_alpha
-        });
-      }
-    });
   }
 
   render() {
@@ -276,14 +244,14 @@ function togglePause(v) {
     v.style.filter = "grayscale(0%) brightness(100%)";
     v.play()
     $(".playpause").fadeOut();
-    $("#togglePlayButton").text("❚❚ Pause")
+    $("#togglePlayButton").text("❚❚ pause.")
   } else {
     if (v.currentTime != 0) {
       v.style.filter = "grayscale(60%) brightness(80%)";
       v.pause()
       $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
       $(".playpause").fadeIn();
-      $("#togglePlayButton").text("► Play")
+      $("#togglePlayButton").text("► play.")
     }
   }
 }
@@ -336,7 +304,7 @@ $(document).keydown(function(e) {
 });
 
 // Project Accordion
-$(".accordion > .accordion-item.is-active .proj_left").children(".accordion-panel").slideDown();
+$(".accordion > .accordion-item .proj_left.is-active").children(".accordion-panel").slideDown();
 
 $(".accordion > .accordion-item > .proj_left").click(function() {
   $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing");

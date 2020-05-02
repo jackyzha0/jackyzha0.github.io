@@ -1,13 +1,13 @@
 #video-context {
-  flex: 0 0 30%;
-  margin-left: 1.5em;
+  flex: 0 0 20%;
+  margin: 0 1.5em;
   justify-content: Center;
 }
 
 #togglePlayButton {
-  margin: 2em 0;
+  margin: 1.5em 0;
   font-family: Open Sans;
-  width: 5em;
+  width: 4em;
 }
 
 .video-container {
@@ -60,6 +60,9 @@ video {
   text-align: center;
 }
 
+#vid_player_card {
+  margin: 6em 0 !important;
+}
 
 #progress {
   color: #fff;
