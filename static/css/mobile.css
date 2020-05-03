@@ -70,3 +70,13 @@
     display: None
   }
 }
+
+@media all and (max-width: 1200px) {
+  #bio .lt-flex-row {
+    flex-direction: column !important;
+  }
+
+  #bio_json {
+    margin-left: 0 !important;
+  }
+}

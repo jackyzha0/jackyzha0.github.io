@@ -29,13 +29,9 @@
     - name: Python
       percent: 28
     - name: Go
-      percent: 18
+      percent: 15
     - name: Dockerfile
       percent: 5
-    - name: CSS
-      percent: 4
-    - name: HTML
-      percent: 3
 
 - name: nanoDB
   expand: false
