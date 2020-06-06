@@ -1,11 +1,40 @@
-- name: reflect
+- name: ctrl-v
   expand: true
+  short_desc: a modern, open-source pastebin
+  links:
+    - link_name: site
+      link: https://ctrl-v.app/
+    - link_name: github
+      link: https://github.com/jackyzha0/ctrl-v
+  desc:
+    ctrl-v is a modern, open-source pastebin with LaTeX and Markdown rendering support. Any user can create a paste without an account, with the ability to protect it with a password and set an expiry date. Additionally, ctrl-v does code highlighting as well as LaTeX and Markdown rendering. Pastes are stored in a MongoDB Atlas instance. Backend is a containerized Go service deployed on Google Cloud Run. Frontend is a React app deployed via Firebase Hosting.
+  techlist:
+    - React
+    - Firebase
+    - styled-components
+    - MongoDB
+    - Cloud Run
+    - GCR
+  lang_ratios:
+    - name: JavaScript
+      percent: 70
+    - name: Go
+      percent: 21
+    - name: CSS
+      percent: 5
+    - name: HTML
+      percent: 2
+    - name: Makefile
+      percent: 1
+    - name: Dockerfile
+      percent: 1
+
+- name: reflect
+  expand: false
   short_desc: a mindful website blocker for the productive
   links:
     - link_name: site
       link: https://getreflect.app/
-    - link_name: extension
-      link: https://chrome.google.com/webstore/detail/reflect-a-mindful-website/bicebchdpeichdlmoaflplakefkjkade
     - link_name: github
       link: https://github.com/jackyzha0/reflect-chrome
   desc:
