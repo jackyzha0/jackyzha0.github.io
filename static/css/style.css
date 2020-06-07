@@ -232,3 +232,7 @@ ul.lt-hl {
   color: var(--navy);
   padding: 0 0.5em 3em 0.5em;
 }
+
+.accordion-thumb {
+  transform: translateY(0.1em);
+}
