@@ -19,15 +19,11 @@
     - name: JavaScript
       percent: 70
     - name: Go
-      percent: 21
-    - name: CSS
+      percent: 20
+    - name: Dockerfile
       percent: 5
     - name: HTML
-      percent: 2
-    - name: Makefile
-      percent: 1
-    - name: Dockerfile
-      percent: 1
+      percent: 5
 
 - name: reflect
   expand: false
