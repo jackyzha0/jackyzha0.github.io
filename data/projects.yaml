@@ -1,10 +1,112 @@
-# /* Envoy Front Proxy */
-# #langbar3 {
-#   background: linear-gradient(to bottom, #00ADD8 92.7%, #384d54 7.3%);
-# }
+- name: ctrl-v
+  expand: true
+  short_desc: a modern, open-source pastebin
+  links:
+    - link_name: site
+      link: https://ctrl-v.app/
+    - link_name: github
+      link: https://github.com/jackyzha0/ctrl-v
+  desc:
+    ctrl-v is a modern, open-source pastebin with LaTeX and Markdown rendering support. Any user can create a paste without an account, with the ability to protect it with a password and set an expiry date. Additionally, ctrl-v does code highlighting as well as LaTeX and Markdown rendering. Pastes are stored in a MongoDB Atlas instance. Backend is a containerized Go service deployed on Google Cloud Run. Frontend is a React app deployed via Firebase Hosting.
+  techlist:
+    - React
+    - Firebase
+    - styled-components
+    - MongoDB
+    - Cloud Run
+    - GCR
+  lang_ratios:
+    - name: JavaScript
+      percent: 70
+    - name: Go
+      percent: 20
+    - name: Dockerfile
+      percent: 5
+    - name: HTML
+      percent: 5
+
+- name: reflect
+  expand: false
+  short_desc: a mindful website blocker for the productive
+  links:
+    - link_name: site
+      link: https://getreflect.app/
+    - link_name: github
+      link: https://github.com/jackyzha0/reflect-chrome
+  desc:
+    reflect is a browser extension focused around asking users to reflect before visiting distracting sites, helping to
+    reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged 
+    user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network 
+    in Keras on the closed-beta data and augmented it using NLP data augmentation techniques, reaching ~86% classification accuracy.
+    Finally, the model was ported to Tensorflow.js where it runs in-browser within the extension which is written in Typescript.
+  techlist:
+    - Kubernetes
+    - Docker
+    - GKE
+    - Cloud SQL
+    - Keras
+    - Tensorflow.js
+    - Flask
+    - CircleCI
+  lang_ratios:
+    - name: TypeScript
+      percent: 52
+    - name: Python
+      percent: 28
+    - name: Go
+      percent: 15
+    - name: Dockerfile
+      percent: 5
+
+- name: nanoDB
+  expand: false
+  short_desc: a simple, easy, and debuggable document database
+  links:
+    - link_name: godoc
+      link: https://godoc.org/github.com/jackyzha0/nanoDB
+    - link_name: github
+      link: https://github.com/jackyzha0/nanodb
+  desc:
+    nanoDB arose out of many frustrations I've personally come across while prototyping, namely 1) difficulty of debugging data 2) faffing around with language specific drivers and 3) reference resolution. As a result, nanoDB stores everything on disk as a JSON document, has built-in reference resolution, and can be used fully through a REST API. Think of it like Redis but with MongoDB style documents — all of which is on-disk, human-readable, and through a REST API. The project is fully written in Go and is thoroughly unit-tested. It features a standalone server binary which creates a nanoDB server, as well as a shell which allows you to do some basic document inspection.
+  techlist:
+    - Docker
+  lang_ratios:
+    - name: Go
+      percent: 95
+    - name: Dockerfile
+      percent: 5
+
+- name: readAR
+  expand: false
+  short_desc: an AR app to help those with learning disabilities
+  links:
+    - link_name: devpost
+      link: https://devpost.com/software/readar-twh41m
+    - link_name: github
+      link: https://github.com/jackyzha0/treehacks2020-backend
+  desc:
+    readAR is a mobile AR app re-renders text to be more dyslexic-friendly, and 
+    adds context-dependent word definitions and images. A custom BERT model was created and trained
+    for word sense disambiguation (WSD), achieving a 76.6% F1% score on the test dataset which is only ~5% away from
+    state-of-the-art. This model is served through Flask on an Oracle VM Instance. The API is also responsible for 
+    our image processing pipeline, which is a conglomerate of different Azure APIs (OCR, Text Analytics, Bing Search).
+    Built at TreeHacks 2020, winning the Microsoft Azure Champ Prize - Hack for Good.
+  techlist:
+    - PyTorch
+    - Flask
+    - Dockerfile
+    - Azure
+    - Oracle Cloud
+  lang_ratios:
+    - name: Python
+      percent: 97.2
+    - name: Dockerfile
+      percent: 2.2
+    - name: Bash
+      percent: 0.6
 
 - name: Speech2Braille
-  expand: true
+  expand: false
   short_desc: a wearable device to transcribe speech
   links:
     - link_name: paper
@@ -16,10 +118,10 @@
     world who have debilitating hearing loss. This project entailed creating 
     an end-to-end speech recognition system using an Deep LSTM and a portable 
     device to display braille. The device is able to recognize audio and transcribe 
-    it into Braille through the haptic feedback device via the neural network. The 
-    feedback device is a self-made GPIO hat, consisting of 6 solenoids, and allows the Raspberry 
-    Pi to control the 6 solenoids via the GPIO outputs. The neural network itself is 2 layered LSTM 
-    network with 256 hidden cells in each layer. Won Silver and 10k in awards at the Canada Wide Science Fair.
+    it into Braille through the haptic feedback device via a novel neural network architecture. The 
+    feedback device is a self-made GPIO hat, consisting of 6 solenoids. The neural network itself is 2 layered LSTM-CTC 
+    network with 256 hidden cells in each layer, achieving 92% state-of-the-art word error rate on the TIMIT dataset. 
+    Won Silver and 10k in awards at the Canada Wide Science Fair.
   techlist:
     - Tensorflow
     - numpy
@@ -83,3 +185,22 @@
       percent: 92.7
     - name: Dockerfile
       percent: 7.3
+
+- name: Personal Website
+  expand: false
+  short_desc: the thing you're on right now
+  links:
+    - link_name: github
+      link: https://github.com/jackyzha0/website-v2
+  desc:
+    You'll notice that this site is almost identical to my previous one, but under the hood a lot has changed! I got tired of adding divs and text manually everytime I wanted to update a project/add new stuff, so I decided to something more powerful that supports templating to do it for me automatically. It takes advantage of Go templates in order to generate the site from just a few config files! Now, updating the site is as simple as editing a YAML file.
+  techlist:
+    - Hugo
+    - lite.css
+  lang_ratios:
+    - name: JavaScript
+      percent: 35
+    - name: HTML
+      percent: 35
+    - name: CSS
+      percent: 30

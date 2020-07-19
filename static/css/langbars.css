@@ -1,9 +1,14 @@
 .lang_bar {
   flex: 0 0 0.8em;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   float: right;
+}
+
+.bar_container {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   overflow: hidden;
+  height: 100%;
+  z-index: 10;
 }
 
 .job_name {
@@ -42,11 +47,11 @@
   top: 50%;
   transform: translate(5em, -50%);
   z-index: 1;
-  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  transition: all 0.2s ease;
 }
 
 .lang_bar:hover .tooltiptext {
   visibility: visible;
   opacity: 1.0;
-  margin-left: -3em;
+  margin-left: -2em;
 }

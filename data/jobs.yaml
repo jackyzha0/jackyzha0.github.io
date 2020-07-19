@@ -1,5 +1,42 @@
+- name: MLH Fellowship
+  title: Fellows Class 0
+  img: mlh.png
+  year: 2020
+  things:
+    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Built Debian-slim based Docker images for containerizing model server, reducing base image size to just ~40% of its original. Improved logging in AWS Lambda Deployment operator.
+  techlist:
+    - Pytest
+    - Docker
+    - AWS Lambda
+  lang_ratios:
+    - name: Python
+      percent: 80
+    - name: Dockerfile
+      percent: 20
 - name: Hootsuite
-  title: Software Development Intern
+  title: software developer intern.
+  img: hootsuite.png
+  year: 2020
+  things:
+    Added alerting and monitoring for key SLOs on the paid signup flow with Grafana and Prometheus. Added monitoring dashboard and alarms for website cache with AWS CloudWatch. Increased accessibility on paid signup flow and added various end-to-end frontend tests. Implemented various A/B tests.
+  techlist:
+    - Twig
+    - React
+    - Jest
+    - Cypress
+    - Terraform
+    - Ansible
+    - Grafana
+    - Prometheus
+  lang_ratios:
+    - name: JavaScript
+      percent: 60
+    - name: PHP
+      percent: 15
+    - name: HCL
+      percent: 25
+- name: Hootsuite
+  title: software developer intern.
   img: hootsuite.png
   year: 2019
   things:
@@ -13,7 +50,6 @@
     - Kubernetes
     - Docker
     - Sumologic
-    - Jira
   lang_ratios:
     - name: Go
       percent: 42

@@ -1,15 +1,15 @@
 name: Jacky Zhao
-jobSearching: false
+jobSearching: true
 student: true
-goal: "building solutions to the world's problems"
+goal: building solutions to the world's problems
 descriptors:
   - jacky.
   - a student.
   - a software dev.
-  - a tinkerer.
+  - a builder.
 at: 
   school: ubc
-  job: previously @hootsuite
+  job: currently @hootsuite && @mlh
 resume:
   res/2020s-jackyzhao-textresume.pdf
 email:

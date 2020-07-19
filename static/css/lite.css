@@ -1,0 +1,141 @@
+:root {
+  --lt-colours-light: #fbfffe;
+  --lt-colours-lightgray: #f0f0f0;
+  --lt-colours-gray: #dddddd;
+
+  --lt-colours-dark: #284b63;
+  --lt-colours-secondary: #84a59d;
+}
+
+/* Card Styling */
+.lt-card {
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  border-radius: 5px;
+  background-color: var(--lt-colours-light);
+  border: 1px solid var(--lt-colours-gray);
+}
+
+.lt-clear {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Hover Effects */
+.lt-hover {
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.lt-hover:hover {
+  box-shadow: 0 14px 28px rgba(27, 33, 48,0.18), 0 10px 10px rgba(27, 33, 48,0.16) !important;
+}
+
+/* Shadow Styling */
+.lt-shadow {
+  box-shadow: 0 14px 28px rgba(27, 33, 48,0.06), 0 10px 10px rgba(27, 33, 48,0.02);
+}
+
+/* Horizontal List styling */
+ul.lt-hl {
+  list-style: none;
+  padding: 0;
+}
+
+ul.lt-hl li {
+  display:inline-block;
+  border-style: none;
+  font-size: 0.9em;
+  margin-right: 3px;
+  padding: 0.3rem;
+  border-radius: 2px;
+  color: var(--lt-colours-light);
+  background-color: var(--lt-colours-secondary);
+  margin-bottom: 0.2em;
+}
+
+/* Button/Input Styles */
+.lt-button {
+  background-color: var(--lt-colours-dark);
+  color: var(--lt-colours-light);
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8em;
+}
+
+.lt-round {
+  border-radius: 2em !important;
+}
+
+/* Text box input styling */
+
+/* Link/Text/Header Styling */
+
+code, pre {
+    font-family: monospace;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    line-height: 1.4;
+    background: rgba(0, 0, 0, .15);
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* Style Links */
+
+a.lt-a {
+  font-size: 1em;
+  color: var(--lt-colours-dark);
+  padding: 0 0.2em 0 0.2em;
+}
+
+/* Layout Styling */
+
+.lt-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.lt-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.lt-content-column {
+  padding: 0 20vw 30px 20vw;
+}
+
+/* Centre Div Horizontal */
+.lt-centre {
+  text-align: center;
+}
+
+/* Default Flex Child Sizes */
+.lt-flex-50 {
+  flex: 0 0 50%;
+}
+
+.lt-flex-25 {
+  flex: 0 0 25%;
+}
+
+.lt-flex-33 {
+  flex: 0 0 33%;
+}
+
+.lt-flex-66 {
+  flex: 0 0 66%;
+}
+
+.lt-flex-centre {
+  justify-content: center;
+}

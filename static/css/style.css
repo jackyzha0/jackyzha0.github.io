@@ -17,11 +17,13 @@
   --salmon: #f28482;
   --gray: #777;
   --lightgray: #eee;
+  --outlinegray: #dddddd;
 
   --lt-colours-light: var(--light) !important;
   --lt-colours-lightgray: var(--lightgray) !important;
   --lt-colours-dark: var(--navy) !important;
   --lt-colours-secondary: var(--olive) !important;
+  --lt-colours-gray: var(--outlinegray) !important;
 }
 
 [saved-theme="dark"] {
@@ -32,6 +34,7 @@
   --salmon: #f58382 !important;
   --gray: #aaa !important;
   --lightgray: #302d3b !important;
+  --outlinegray: #343434 !important;
 }
 
 .main_card {
@@ -104,7 +107,7 @@ h3 {
   content: "";
   position: absolute;
   background-color: var(--salmon);
-  opacity: 0.25;
+  opacity: 0.5;
   z-index: -1;
   width: 0%;
   left: 10px;
@@ -186,10 +189,8 @@ a {
   transform: rotateX(-90deg);
 }
 
-/* Arrow CSS */
+/*/* Arrow CSS */
 .arrow_part {
-  display: block;
-  position: absolute;
   margin: 1.5em;
 }
 
@@ -204,38 +205,13 @@ p {
   line-height: 1.2;
 }
 
-#bio_container:hover > #bio > h2 > .hover {
+.lt-content-column:hover h2 .hover {
   opacity: 1.0;
 }
 
-#bio_container:hover > #bio > h2 > .hover::after {
+.lt-content-column:hover h2 .hover::after {
   width: 100%;
 }
-
-#experience:hover > h2 > .hover {
-  opacity: 1.0;
-}
-
-#experience:hover > h2 > .hover::after {
-  width: 100%;
-}
-
-#vid:hover > h2 > .hover {
-  opacity: 1.0;
-}
-
-#vid:hover > h2 > .hover::after {
-  width: 100%;
-}
-
-#projects:hover > h2 > .hover {
-  opacity: 1.0;
-}
-
-#projects:hover > h2 > .hover::after {
-  width: 100%;
-}
-
 
 /* Card CSS */
 
@@ -255,4 +231,8 @@ ul.lt-hl {
   font-size: 1em;
   color: var(--navy);
   padding: 0 0.5em 3em 0.5em;
+}
+
+.accordion-thumb {
+  transform: translateY(0.1em);
 }

@@ -1,8 +1,8 @@
 <div class="project_list">
   {{range $.Site.Data.projects}}
   <div class="accordion">
-    <div class="accordion-item lt-shadow lt-card {{if .expand}}is-active{{end}} lt-flex-row">
-      <div class="proj_left">
+    <div class="accordion-item lt-shadow lt-card lt-flex-row">
+      <div class="proj_left {{if .expand}}is-active{{end}}">
         <div class="proj_desc lt-flex-row">
             <h3 class="accordion-thumb">{{.name}}</h3>
             <p class="short-desc">— {{.short_desc}}</p>
@@ -21,16 +21,17 @@
           </ul>
         </div>
       </div>
-      <div class="lang_bar lt-flex-col">
+      <div class="lang_bar">
+        <span class="tooltiptext">
+          {{range $i, $e := .lang_ratios}}
+          {{if $i}}, {{end}}{{$e.name}}
+          {{end}}
+        </span>
+        <div class="bar_container lt-flex-col">
         {{range .lang_ratios}}
           <div style="background-color: {{index $.Site.Data.colors .name}}; flex: 0 0 {{.percent}}%"></div>
         {{end}}
-        <span class="tooltiptext">
-          {{range $i, $e := .lang_ratios}}
-          {{if $i}}, {{end}}
-          {{$e.name}}
-          {{end}}<br>
-        </span>
+        </div>
       </div>
     </div>
   </div>
