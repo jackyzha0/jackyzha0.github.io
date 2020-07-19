@@ -22,6 +22,12 @@
   <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
   <!-- CSS Stylesheets and Fonts -->
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/lite.css"/>
+  {{ $css := slice "style.css" "lite.css" "arrow.css" "fancyjson.css" "smaller-screens.css" "langbars.css" "video.css" "proj.css" "mobile.css" "darkmode.css"}}
+  {{range $css}}
+    {{with resources.Get . | minify}}
+    <style>
+      {{.Content | safeCSS}}
+    </style>
+    {{end}}
+  {{end}}
 </head>
