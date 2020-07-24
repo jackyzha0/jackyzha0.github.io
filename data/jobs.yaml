@@ -31,10 +31,12 @@
   lang_ratios:
     - name: JavaScript
       percent: 60
-    - name: PHP
-      percent: 15
     - name: HCL
       percent: 25
+    - name: PHP
+      percent: 7.5
+    - name: Scala
+      percent: 7.5
 - name: Hootsuite
   title: software developer intern.
   img: hootsuite.png

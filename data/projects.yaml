@@ -162,30 +162,6 @@
     - name: Python
       percent: 19.2
 
-- name: Envoy Front Proxy
-  expand: false
-  short_desc: go service mesh skeleton
-  links:
-    - link_name: github
-      link: https://github.com/jackyzha0/front-proxy-PoC
-  desc:
-    This project is an Envoy service mesh skeleton with External Authorization and Custom 
-    Header Injection. This proof of concept shows that Envoy can be used in conjunction 
-    with external auth (ext-authz) to manage routing, headers, and auth. As an added bonus, 
-    Envoy allows easy built-in load balancing. Intended to be used as a skeleton project 
-    to reduce boilerplate in future Go service mesh projects.
-  techlist:
-    - Envoy
-    - Delve
-    - Istio
-    - Docker
-    - Kubernetes
-  lang_ratios:
-    - name: Go
-      percent: 92.7
-    - name: Dockerfile
-      percent: 7.3
-
 - name: Personal Website
   expand: false
   short_desc: the thing you're on right now
@@ -193,10 +169,11 @@
     - link_name: github
       link: https://github.com/jackyzha0/website-v2
   desc:
-    You'll notice that this site is almost identical to my previous one, but under the hood a lot has changed! I got tired of adding divs and text manually everytime I wanted to update a project/add new stuff, so I decided to something more powerful that supports templating to do it for me automatically. It takes advantage of Go templates in order to generate the site from just a few config files! Now, updating the site is as simple as editing a YAML file.
+    I got tired of adding divs and text manually everytime I wanted to update a project/add new stuff, so I decided to something more powerful that supports templating to do it for me automatically. It takes advantage of Go templates in order to generate the site from just a few config files! Now, updating the site is as simple as editing a YAML file. Continous integration and deployment done through Github Actions.
   techlist:
     - Hugo
     - lite.css
+    - Github Actions
   lang_ratios:
     - name: JavaScript
       percent: 35
