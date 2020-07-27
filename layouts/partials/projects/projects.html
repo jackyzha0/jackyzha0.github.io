@@ -1,5 +1,5 @@
 <div class="project_list">
-  {{range $.Site.Data.projects}}
+  {{- range $.Site.Data.projects -}}
   <div class="accordion">
     <div class="accordion-item lt-shadow lt-card lt-flex-row">
       <div class="proj_left {{if .expand}}is-active{{end}}">
@@ -7,33 +7,33 @@
             <h3 class="accordion-thumb">{{.name}}</h3>
             <p class="short-desc">— {{.short_desc}}</p>
             <div class="spacer"></div>
-            {{range .links}}
+            {{- range .links -}}
             <a target="_blank "href="{{.link}}">[{{.link_name}}]</a>
-            {{end}}
+            {{- end -}}
             <div class="accordion-arrow"></div>
         </div>
         <div class="accordion-panel">
           <p>{{.desc}}</p>
           <ul class="lt-hl">
-            {{range .techlist}}
+            {{- range .techlist -}}
             <li>{{.}}</li>
-            {{end}}
+            {{- end -}}
           </ul>
         </div>
       </div>
       <div class="lang_bar">
         <span class="tooltiptext">
-          {{range $i, $e := .lang_ratios}}
+          {{- range $i, $e := .lang_ratios -}}
           {{if $i}}, {{end}}{{$e.name}}
-          {{end}}
+          {{- end -}}
         </span>
         <div class="bar_container lt-flex-col">
-        {{range .lang_ratios}}
+        {{- range .lang_ratios -}}
           <div style="background-color: {{index $.Site.Data.colors .name}}; flex: 0 0 {{.percent}}%"></div>
-        {{end}}
+        {{- end -}}
         </div>
       </div>
     </div>
   </div>
-  {{end}}
+  {{- end -}}
 </div>

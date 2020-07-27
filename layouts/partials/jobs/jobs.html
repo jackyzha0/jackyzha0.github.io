@@ -1,4 +1,4 @@
-{{range $.Site.Data.jobs}}
+{{- range $.Site.Data.jobs -}}
 <div class="main_card">
   <div class="lt-hover lt-shadow lt-card lt-flex-row">
     <div>
@@ -11,23 +11,23 @@
       </div>
       <p class="slider__txt">{{.things}}</p>
       <ul class="lt-hl">
-        {{range .techlist}}
+        {{- range .techlist -}}
         <li>{{.}}</li>
-        {{end}}
+        {{- end -}}
       </ul>
     </div>
     <div class="lang_bar">
       <span class="tooltiptext">
-        {{range $i, $e := .lang_ratios}}
+        {{- range $i, $e := .lang_ratios -}}
         {{if $i}}, {{end}}{{$e.name}}
-        {{end}}
+        {{- end -}}
       </span>
       <div class="bar_container lt-flex-col">
-      {{range .lang_ratios}}
+      {{- range .lang_ratios -}}
         <div style="background-color: {{index $.Site.Data.colors .name}}; flex: 0 0 {{.percent}}%"></div>
-      {{end}}
+      {{- end -}}
       </div>
     </div>
   </div>
 </div>
-{{end}}
+{{- end -}}
