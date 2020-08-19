@@ -3,11 +3,13 @@
   img: mlh.png
   year: 2020
   things:
-    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Built Debian-slim based Docker images for containerizing model server, reducing base image size to just ~40% of its original. Improved logging in AWS Lambda Deployment operator.
+    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Built Debian-slim based Docker images for containerizing model server, reducing base image size to just ~40% of its original. Improved logging in AWS Lambda Deployment operator. Created Helm chart to deploy model registry backed with a PostgresDB to a Kubernetes cluster with DevOps best practices baked in.
   techlist:
     - Pytest
     - Docker
     - AWS Lambda
+    - Helm
+    - Kubernetes
   lang_ratios:
     - name: Python
       percent: 80
@@ -18,7 +20,7 @@
   img: hootsuite.png
   year: 2020
   things:
-    Added alerting and monitoring for key SLOs on the paid signup flow with Grafana and Prometheus. Added monitoring dashboard and alarms for website cache with AWS CloudWatch. Increased accessibility on paid signup flow and added various end-to-end frontend tests. Implemented various A/B tests.
+    Added alerting and monitoring for key SLOs with Grafana and Prometheus. Added monitoring dashboard and alarms for website cache with AWS CloudWatch. Increased accessibility on paid signup flow and added various end-to-end frontend tests. Implemented various A/B tests. Updated internal metrics collection tools to work with NGINX.
   techlist:
     - Twig
     - React
@@ -42,8 +44,7 @@
   img: hootsuite.png
   year: 2019
   things:
-    Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala
-    code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
+    Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
     core internal services.  Wrote unit and integration tests in Go and Scala.
   techlist:
     - SQL

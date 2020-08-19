@@ -129,7 +129,7 @@ class Visual {
 
   moveParticle(particle) {
     particle.x += particle.speed;
-    particle.y = particle.startY + particle.amplitude * Math.sin(((particle.x / 6) * Math.PI) / 180);
+    particle.y = particle.startY + particle.amplitude * Math.sin((particle.x * Math.PI) / (360 * 2));
   }
 
   render() {

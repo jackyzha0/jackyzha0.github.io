@@ -42,8 +42,9 @@ ul.project_list {
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-color: var(--dark);
-  transform: rotate(45deg);
-  transition: transform .4s ease-in-out;
+  transform: rotate(45deg) translateY(0.25em);
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
 }
 
 .accordion-panel ul.lt-hl {
@@ -52,17 +53,17 @@ ul.project_list {
 
 /* Panel */
 .accordion-panel {
-  padding-top: .8rem;
 	display: none;
 }
 
 /* Active */
 .proj_left.is-active .accordion-arrow {
-	transform: rotateX(180deg) rotateZ(45deg) translateY(-4px) translateX(-4px);
+	transform: rotateX(180deg) rotateZ(45deg) translateY(-3.5px) translateX(-7px);
 }
 
 .proj_desc a {
   font-family: "Courier Prime";
   color: var(--navy);
   padding-right: 1em;
+  margin-bottom: -0.25em;
 }
