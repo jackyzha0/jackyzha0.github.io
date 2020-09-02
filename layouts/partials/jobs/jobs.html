@@ -1,20 +1,23 @@
 {{- range $.Site.Data.jobs -}}
-<div class="main_card">
-  <div class="lt-hover lt-shadow lt-card lt-flex-row">
-    <div>
+<div class="main_card accordion">
+  <div class="lt-hover lt-shadow lt-card lt-flex-row accordion-item">
+    <div class="accordion_body {{if .expand}}is-active{{end}}">
       <div class="lt-flex-row job-info">
         <img class="company-logo" src="res/{{.img}}" title="{{.name}}">
         <div>
           <h3 class="job_name">{{.name}}</h3>
           <h3 class="job_title">{{.year}} // {{.title}}</h3>
         </div>
+        <div class="accordion-arrow"></div>
       </div>
-      <p class="slider__txt">{{.things}}</p>
-      <ul class="lt-hl">
-        {{- range .techlist -}}
-        <li>{{.}}</li>
-        {{- end -}}
-      </ul>
+      <div class="accordion-panel">
+        <p class="slider__txt">{{.things}}</p>
+        <ul class="lt-hl">
+          {{- range .techlist -}}
+          <li>{{.}}</li>
+          {{- end -}}
+        </ul>
+      </div>
     </div>
     <div class="lang_bar">
       <span class="tooltiptext">

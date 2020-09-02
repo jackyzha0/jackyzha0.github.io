@@ -1,4 +1,5 @@
 - name: MLH Fellowship
+  expand: true
   title: Fellows Class 0
   img: mlh.png
   year: 2020
@@ -15,7 +16,9 @@
       percent: 80
     - name: Dockerfile
       percent: 20
+
 - name: Hootsuite
+  expand: true
   title: software developer intern.
   img: hootsuite.png
   year: 2020
@@ -39,7 +42,9 @@
       percent: 7.5
     - name: Scala
       percent: 7.5
+
 - name: Hootsuite
+  expand: false
   title: software developer intern.
   img: hootsuite.png
   year: 2019

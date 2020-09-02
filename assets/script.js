@@ -197,8 +197,8 @@ setTimeout(rotateText, 1000);
 setInterval(rotateText, 3000);
 
 // Project Accordion
-$(".accordion > .accordion-item .proj_left.is-active").children(".accordion-panel").slideDown();
+$(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown();
 
-$(".accordion > .accordion-item > .proj_left").click(function() {
+$(".accordion > .accordion-item > .accordion_body").click(function() {
   $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing");
 });

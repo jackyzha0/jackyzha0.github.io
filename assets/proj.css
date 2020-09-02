@@ -8,7 +8,7 @@ ul.project_list {
 	list-style: none;
 }
 
-.proj_left {
+.accordion_body {
   width: 100%;
   padding: 1.3em;
 }
@@ -37,14 +37,13 @@ ul.project_list {
   height: 7px;
 	min-width: 7px;
   margin-right: 1rem;
-  margin-left: .5rem;
+  margin-left: auto;
   vertical-align: middle;
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-color: var(--dark);
   transform: rotate(45deg) translateY(0.25em);
   transition: transform .2s ease-in-out;
-  cursor: pointer;
 }
 
 .accordion-panel ul.lt-hl {
@@ -57,7 +56,7 @@ ul.project_list {
 }
 
 /* Active */
-.proj_left.is-active .accordion-arrow {
+.accordion_body.is-active .accordion-arrow {
 	transform: rotateX(180deg) rotateZ(45deg) translateY(-3.5px) translateX(-7px);
 }
 
