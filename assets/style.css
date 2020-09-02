@@ -91,6 +91,7 @@ h3 {
   position: relative;
   opacity: 0.6;
   z-index: 1;
+  transition: 300ms;
 }
 
 .hover::after {
@@ -228,11 +229,13 @@ ul.lt-hl {
 .img-container {
   text-align: center;
   position: relative;
+  margin-top: 2em;
 }
 
 .img-container > .me {
   filter: grayscale(20%);
-  height: 256px;
+  max-height: 256px;
+  max-width: 100%;
   border-radius: 5px;
 }
 
