@@ -23,7 +23,6 @@ function switchTheme(e) {
 // listen for toggle
 toggleSwitch.addEventListener('change', switchTheme, false);
 
-
 // Particle credit to Y Endo
 function random(low, high) {
   return Math.random() * (high - low) + low;
@@ -79,7 +78,7 @@ class Visual {
   // particle creation
   createParticle(id, isRecreate) {
     // randomize position and radius
-    const radius = random(1, this.particleMaxRadius);
+    const radius = random(2, this.particleMaxRadius);
     const x = isRecreate ? -radius - random(0, this.canvasWidth) : random(0, this.canvasWidth);
     let y = random(this.canvasHeight / 2 - 150, this.canvasHeight / 2 + 150);
     y += random(-100, 100);

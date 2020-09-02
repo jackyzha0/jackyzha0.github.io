@@ -1,34 +1,6 @@
 @media screen and (max-width: 1440px) {
- #bio_img_div {
-   width: 0%;
-   flex: 0 0 0;
-   overflow: hidden;
-   display: none
- }
-
- #bio {
-   flex: 0 0 100% !important
- }
-
- #video-context {
-   width: 0%;
-   overflow: hidden;
-   display: none
- }
-
- #video-content {
-   flex: 0 0 100% !important;
- }
-
- video {
-   border-radius: 5px !important;
- }
 
  .short-desc {
    display: None;
- }
-
- #vid_player_card {
-   padding: 0 !important;
  }
 }

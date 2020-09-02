@@ -146,7 +146,6 @@ a {
 }
 
 /* Rotating Text CSS */
-
 .col1 { color: var(--dark) }
 .col2 { color: var(--navy) }
 .col3 { color: var(--olive) }
@@ -230,6 +229,7 @@ ul.lt-hl {
   text-align: center;
   position: relative;
   margin-top: 2em;
+  margin-left: 2em;
 }
 
 .img-container > .me {

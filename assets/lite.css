@@ -53,33 +53,8 @@ ul.lt-hl li {
   margin-bottom: 0.2em;
 }
 
-/* Button/Input Styles */
-.lt-button {
-  background-color: var(--lt-colours-dark);
-  color: var(--lt-colours-light);
-  padding: 0.5em 2em;
-  border-radius: 5px;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  cursor: pointer;
-  border: none;
-  font-size: 0.8em;
-}
-
 .lt-round {
   border-radius: 2em !important;
-}
-
-/* Text box input styling */
-
-/* Link/Text/Header Styling */
-
-code, pre {
-    font-family: monospace;
-    border-radius: 4px;
-    padding: 2px 4px 2px 4px;
-    line-height: 1.4;
-    background: rgba(0, 0, 0, .15);
 }
 
 h1, h2 {
