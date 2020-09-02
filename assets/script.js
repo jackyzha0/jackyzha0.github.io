@@ -184,7 +184,7 @@ var rotateText = function() {
   });
   // reveal and rotate in letters of next word
   nextWord.style.opacity = "1";
-  Array.from(nextWord.children).forEach(function(letter, i) {
+  Array.from(nextWord.children).forEach((letter, i) => {
     letter.className = "letter behind";
     setTimeout(function() {
       letter.className = "letter in";
@@ -195,113 +195,6 @@ var rotateText = function() {
 };
 setTimeout(rotateText, 1000);
 setInterval(rotateText, 3000);
-
-// Jump to Bio
-$("#canvas").click(function() {
-  $('html,body').animate({
-    scrollTop: $("#bio_container").offset().top
-  },
-    duration = 1000);
-});
-
-// Video Handling JS
-$(".video-container").on('click', function(event) {
-  var v = document.getElementById("makerportfolio");
-  togglePause(v)
-});
-
-$("#togglePlayButton").on('click', function(event) {
-  var v = document.getElementById("makerportfolio");
-  togglePause(v)
-});
-
-var cursorOnDiv = false;
-
-$(document).on({
-  mouseenter: function() {
-    cursorOnDiv = true;
-  },
-  mouseleave: function() {
-    cursorOnDiv = false;
-  },
-},
-  '#vid_player_card'
-);
-
-function fancyTime(time) {
-  // Hours, minutes and seconds
-  var mins = ~~((time % 3600) / 60);
-  var secs = ~~time % 60;
-  var ret = "";
-
-  ret += "" + mins + ":" + (secs < 10 ? "0" : "");
-  ret += "" + secs;
-  return ret;
-}
-
-function togglePause(v) {
-  if (v.paused) {
-    v.style.filter = "grayscale(0%) brightness(100%)";
-    v.play()
-    $(".playpause").fadeOut();
-    $("#togglePlayButton").text("❚❚ pause.")
-  } else {
-    if (v.currentTime != 0) {
-      v.style.filter = "grayscale(60%) brightness(80%)";
-      v.pause()
-      $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
-      $(".playpause").fadeIn();
-      $("#togglePlayButton").text("► play.")
-    }
-  }
-}
-
-$(document).keydown(function(e) {
-  var v = document.querySelector("#makerportfolio");
-  switch (e.which) {
-    case 32: // space
-      if (cursorOnDiv) {
-        togglePause(v)
-      }
-      break;
-
-    case 37: // left
-      if (cursorOnDiv) {
-        v.currentTime = v.currentTime - 5
-        $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
-      }
-      break;
-
-    case 39: // right
-      if (cursorOnDiv) {
-        v.currentTime = v.currentTime + 5
-        $('#progress').text(fancyTime(v.currentTime) + ' / ' + fancyTime(v.duration))
-      }
-      break;
-
-    case 38: // up
-      if (cursorOnDiv) {
-        v.volume = v.volume + 0.1
-        $('#volume').text(Math.round(v.volume * 100) + '%')
-        $('#volume').show()
-        $("#volume").delay(1000).fadeOut();
-      }
-      break;
-
-    case 40: // down
-      if (cursorOnDiv) {
-        v.volume = v.volume - 0.1
-        $('#volume').text(Math.round(v.volume * 100) + '%')
-        $('#volume').show()
-        $("#volume").delay(1000).fadeOut();
-      }
-      break;
-
-    default:
-      return; // exit this handler for other keys
-  }
-  e.preventDefault(); // prevent the default action (scroll / move caret)
-});
 
 // Project Accordion
 $(".accordion > .accordion-item .proj_left.is-active").children(".accordion-panel").slideDown();

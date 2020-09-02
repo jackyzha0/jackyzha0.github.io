@@ -56,7 +56,7 @@
     </div>
   <!-- Load JS stuff -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   {{- with resources.Get "script.js" | minify -}}
   <script>
     {{.Content | safeJS}}
