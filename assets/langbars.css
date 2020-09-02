@@ -29,7 +29,7 @@
 
 /* Tooltip text */
 .lang_bar .tooltiptext {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   white-space:nowrap;
   visibility: hidden;
   opacity: 0;
