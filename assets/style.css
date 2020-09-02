@@ -1,5 +1,5 @@
 /* Colour/Font Definitions */
-@import url(https://fonts.googleapis.com/css?family=Courier+Prime|Ubuntu|Montserrat:400,600,700|Open+Sans&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
   --light: #fbfffe;
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat";
+  font-family: "Roboto Mono";
   margin: 0;
   font-size: 1em;
   color: var(--dark)
@@ -136,9 +136,9 @@ a {
 }
 
 #prev-exp {
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1em;
-  opacity: 0.4;
+  opacity: 0.5;
   padding-top: 0.5em;
   font-weight: normal;
   color: var(--dark)
@@ -191,7 +191,7 @@ a {
 p {
   display: block;
   color: var(--gray);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.1em;
   line-height: 1.2;
 }
@@ -209,21 +209,19 @@ p {
 .ext-ref {
   display: block;
   margin-left: 1.5em;
-  font-family: "Courier Prime";
+  font-weight: 700;
+  font-family: "Roboto Mono";
 }
 
 ul.lt-hl {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   margin-bottom: 1em;
 }
 
 #contact_buttons a {
-  font-family: "Courier Prime";
+  font-family: "Roboto Mono";
+  font-weight: 700;
   font-size: 1em;
   color: var(--navy);
   padding: 0 0.5em 3em 0.5em;
-}
-
-.accordion-thumb {
-  transform: translateY(0.1em);
 }

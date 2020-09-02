@@ -46,6 +46,10 @@ ul.project_list {
   transition: transform .2s ease-in-out;
 }
 
+.job-info > .accordion-arrow {
+  margin-top: 1em;
+}
+
 .accordion-panel ul.lt-hl {
   margin: 0;
 }
@@ -61,7 +65,9 @@ ul.project_list {
 }
 
 .proj_desc a {
-  font-family: "Courier Prime";
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  font-size: 0.9em;
   color: var(--navy);
   padding-right: 1em;
   margin-bottom: -0.25em;
