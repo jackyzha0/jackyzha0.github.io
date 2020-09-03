@@ -19,7 +19,7 @@
 
 - name: Hootsuite
   expand: true
-  title: software developer intern.
+  title: SWE Intern
   img: hootsuite.png
   year: 2020
   things:
@@ -45,7 +45,7 @@
 
 - name: Hootsuite
   expand: false
-  title: software developer intern.
+  title: SWE Intern
   img: hootsuite.png
   year: 2019
   things:

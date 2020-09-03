@@ -46,6 +46,11 @@ ul.project_list {
   transition: transform .2s ease-in-out;
 }
 
+.proj_desc > .accordion-arrow {
+  margin-left: 0.5em;
+}
+
+
 .job-info > .accordion-arrow {
   margin-top: 1em;
 }

@@ -226,13 +226,13 @@ ul.lt-hl {
 }
 
 .img-container {
-  text-align: center;
   position: relative;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 3em;
+  min-height: 256px;
 }
 
-.img-container > .me {
+.img-container .me {
   filter: grayscale(20%);
   max-height: 256px;
   max-width: 100%;
@@ -247,7 +247,13 @@ ul.lt-hl {
 .deco {
   position: absolute;
   transition: all 2s cubic-bezier(.25,.8,.25,1);
-  right: 20px;
-  bottom: -30px;
   z-index: 3;
+  top: 100px;
+  left: 35%;
+}
+
+.me {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
