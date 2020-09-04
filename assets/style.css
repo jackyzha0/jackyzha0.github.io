@@ -1,15 +1,12 @@
-/* Colour/Font Definitions */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap');
-
 :root {
-  --light: #fbfffe;
+  --light: #faf8f8;
   --dark: #141021;
   --navy: #284b63;
   --olive: #84a59d;
   --salmon: #f28482;
-  --gray: #777;
-  --lightgray: #eee;
-  --outlinegray: #dddddd;
+  --gray: #4e4e4e;
+  --lightgray: #747474;
+  --outlinegray: #dadada;
 
   --lt-colours-light: var(--light) !important;
   --lt-colours-lightgray: var(--lightgray) !important;
@@ -24,8 +21,8 @@
   --navy: #75a1bf !important;
   --olive: #84a59d !important;
   --salmon: #f58382 !important;
-  --gray: #aaa !important;
-  --lightgray: #302d3b !important;
+  --gray: #c4c4c4 !important;
+  --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
 }
 
@@ -108,8 +105,7 @@ h3 {
 }
 
 a {
-  text-decoration: none;
-  color: var(--dark);
+  color: var(--olive);
   transition: all 0.2s ease;
 }
 
