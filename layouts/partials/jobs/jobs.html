@@ -1,5 +1,5 @@
 {{- range $.Site.Data.jobs -}}
-<div class="main_card accordion">
+<div class="main_card accordion" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   <div class="lt-hover lt-shadow lt-card lt-flex-row accordion-item">
     <div class="accordion_body {{if .expand}}is-active{{end}}">
       <div class="lt-flex-row job-info">

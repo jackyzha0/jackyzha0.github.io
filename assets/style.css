@@ -7,7 +7,6 @@
   --gray: #4e4e4e;
   --lightgray: #747474;
   --outlinegray: #dadada;
-
   --lt-colours-light: var(--light) !important;
   --lt-colours-lightgray: var(--lightgray) !important;
   --lt-colours-dark: var(--navy) !important;
@@ -110,6 +109,7 @@ a {
 }
 
 /* Landing Page CSS */
+
 #landing-container {
   position: relative;
   width: 100vw;
@@ -142,10 +142,22 @@ a {
 }
 
 /* Rotating Text CSS */
-.col1 { color: var(--dark) }
-.col2 { color: var(--navy) }
-.col3 { color: var(--olive) }
-.col4 { color: var(--salmon) }
+
+.col1 {
+  color: var(--dark)
+}
+
+.col2 {
+  color: var(--navy)
+}
+
+.col3 {
+  color: var(--olive)
+}
+
+.col4 {
+  color: var(--salmon)
+}
 
 .rotating-text {
   overflow: hidden;
@@ -156,6 +168,7 @@ a {
   margin: 0;
   vertical-align: top;
 }
+
 .rotating-text h1 .word {
   position: absolute;
   display: flex;
@@ -163,21 +176,26 @@ a {
   overflow: hidden;
   padding-bottom: 0.12em;
 }
+
 .rotating-text h1 .word .letter {
   transform-origin: center center 0.8em;
 }
+
 .rotating-text h1 .word .letter.out {
   transform: rotateX(90deg);
   transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
+
 .rotating-text h1 .word .letter.in {
   transition: 0.32s ease;
 }
+
 .rotating-text h1 .word .letter.behind {
   transform: rotateX(-90deg);
 }
 
 /*/* Arrow CSS */
+
 .arrow_part {
   margin: 1.5em;
 }
@@ -201,6 +219,7 @@ p {
 }
 
 /* Card CSS */
+
 .ext-ref {
   display: block;
   margin-left: 1.5em;
@@ -242,7 +261,7 @@ ul.lt-hl {
 
 .deco {
   position: absolute;
-  transition: all 2s cubic-bezier(.25,.8,.25,1);
+  transition: all 2s cubic-bezier(.25, .8, .25, 1);
   z-index: 3;
   top: 100px;
   left: 35%;
@@ -252,4 +271,10 @@ ul.lt-hl {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+[data-aos] {
+  body[data-aos-easing="custom"] &, &[data-aos][data-aos-easing="custom"] {
+    transition-timing-function: cubic-bezier(.25, .8, .25, 1);
+  }
 }

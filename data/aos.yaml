@@ -1,0 +1,6 @@
+enabled: true
+settings:
+  - data-aos="fade-up"
+  - data-aos-duration="750"
+  - data-aos-easing="custom"
+  - data-aos-offset="200"

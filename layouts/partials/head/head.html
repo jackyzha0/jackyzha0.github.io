@@ -22,6 +22,10 @@
   <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
   <!-- CSS Stylesheets and Fonts -->
+  {{if $.Site.Data.aos.enabled -}}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  {{- end}}
+  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   {{ $css := slice "style.css" "lite.css" "arrow.css" "smaller-screens.css" "langbars.css" "proj.css" "mobile.css" "darkmode.css"}}
   {{range $css}}

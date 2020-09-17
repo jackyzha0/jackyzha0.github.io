@@ -1,4 +1,4 @@
-<div class="lt-flex-50">
+<div class="lt-flex-50" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   <p>
     Welcome to my little corner of the internet! I'm a curious software developer interested in building developer tools that empower all types of people to get into the field of computer science. Currently, I'm based in Vancouver, BC and studying Computer Science @ubc. 
   </p>

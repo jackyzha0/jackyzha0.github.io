@@ -18,8 +18,8 @@
     </div>
 
     <!-- Personal Bio -->
-    <div class="lt-content-column" id="bio_container">
-      <div id="bio">
+    <div class="lt-content-column" id="bio_container" >
+      <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
         <h2>
           <span class="hover">about.</span>
         </h2>
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Work Experience Section -->
-    <div class="lt-content-column" id="experience">
+    <div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
       <h2>
         <span class="hover">experience.</span>
       </h2>
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Project Section -->
-    <div id="projects" class="lt-content-column">
+    <div id="projects" class="lt-content-column" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
       <h2>
         <span class="hover">projects.</span>
       </h2>
@@ -62,5 +62,12 @@
     {{.Content | safeJS}}
   </script>
   {{- end -}}
+
+  {{if $.Site.Data.aos.enabled -}}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  {{- end}}
   </body>
 </html>
