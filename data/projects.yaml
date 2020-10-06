@@ -167,7 +167,7 @@
   short_desc: the thing you're on right now
   links:
     - link_name: github
-      link: https://github.com/jackyzha0/website-v2
+      link: https://github.com/jackyzha0/jackyzha0.github.io
   desc:
     I got tired of adding divs and text manually everytime I wanted to update a project/add new stuff, so I decided to something more powerful that supports templating to do it for me automatically. It takes advantage of Go templates in order to generate the site from just a few config files! Now, updating the site is as simple as editing a YAML file. Continous integration and deployment done through Github Actions.
   techlist:

@@ -48,11 +48,8 @@
     </div>
 
     <!-- Contact Info -->
-    <div id="contact_buttons" class="lt-centre">
-      <p>made by jacky zhao, © 2020</p>
-      {{- range $.Site.Data.links -}}
-        <a target="_blank "href="{{.link}}">[{{.link_name}}]</a>
-      {{- end -}}
+    <div id="contact_buttons" class="lt-centre" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+      {{partial "footer/footer.html" .}}
     </div>
   <!-- Load JS stuff -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>

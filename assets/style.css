@@ -248,7 +248,7 @@ ul.lt-hl {
 }
 
 .img-container .me {
-  filter: grayscale(80%);
+  filter: grayscale(40%);
   max-height: 256px;
   max-width: 100%;
   border-radius: 5px;
