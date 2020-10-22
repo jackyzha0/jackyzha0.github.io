@@ -58,6 +58,27 @@
     - name: Dockerfile
       percent: 5
 
+- name: nwPlus Livesite
+  expand: false
+  short_desc: centralized information hub for hackathons
+  links:
+    - link_name: github
+      link: https://github.com/nwplus/livesite
+  techlist:
+    - Firebase
+    - Firestore
+    - React
+    - Github Actions
+  lang_ratios:
+    - name: JavaScript
+      percent: 92
+    - name: HTML
+      percent: 4
+    - name: CSS
+      percent: 4
+  desc:
+    The nwPlus livesite aims to be a central information hub for hackers which will contain important information about an ongoing hackathon. The core features of the site are that it has a calendar display, live announcements and notifcations, and embedded Twitch stream. Built from scratch in React, and reads information from a Firestore database.
+
 - name: nanoDB
   expand: false
   short_desc: a simple, easy, and debuggable document database
