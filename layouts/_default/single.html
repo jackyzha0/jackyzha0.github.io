@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head/head.html" . }}
+
+<body>
+    <!-- Begin actual content -->
+    <div id="landing-container">
+        {{partial "landing/darkmode.html" .}}
+        <div class="lt-content-column">
+            <h2>Not work</h2>
+            {{- .Content -}}
+            <ul id="sub-nav">
+                <li><a href="/">↳ (country roads) take me home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div id="contact_buttons" class="lt-centre">
+        {{partial "footer/footer.html" .}}
+    </div>
+
+    {{- with resources.Get "script.js" | minify -}}
+    <script>
+        {{.Content | safeJS }}
+    </script>
+    {{- end -}}
+
+</body>
+
+</html>
