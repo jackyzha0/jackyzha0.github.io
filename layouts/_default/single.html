@@ -4,15 +4,13 @@
 
 <body>
     <!-- Begin actual content -->
-    <div id="landing-container">
-        {{partial "landing/darkmode.html" .}}
-        <div class="lt-content-column">
-            <h2>Not work</h2>
-            {{- .Content -}}
-            <ul id="sub-nav">
-                <li><a href="/">↳ (country roads) take me home</a></li>
-            </ul>
-        </div>
+    {{partial "landing/darkmode.html" .}}
+    <div class="lt-content-column">
+        <h2>Not work</h2>
+        {{- .Content -}}
+        <ul id="sub-nav">
+            <li><a href="/">↳ (country roads) take me home</a></li>
+        </ul>
     </div>
 
     <!-- Contact Info -->
@@ -20,7 +18,7 @@
         {{partial "footer/footer.html" .}}
     </div>
 
-    {{- with resources.Get "script.js" | minify -}}
+    {{- with resources.Get "darkmode.js" | minify -}}
     <script>
         {{.Content | safeJS }}
     </script>
