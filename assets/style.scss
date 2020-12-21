@@ -25,45 +25,24 @@
   --outlinegray: #343434 !important;
 }
 
-.main_card {
-  margin-bottom: 2em !important;
-}
-
-.slider__txt {
-  color: var(--gray);
-  margin: 1rem 1rem 1rem 0;
-  text-align: left;
-}
-
-.lt-content-column {
-  background-color: var(--light);
-}
-
-.mobile-only {
-  display: None;
-}
-
-html {
-  overflow-x: hidden;
-  max-width: 100%;
-}
 
 body {
   margin: 0;
-  width: 100vw;
   height: 100vh;
   background-color: var(--light);
 }
 
+
+// typography
 h1 {
-  font-family: 'Montserrat';
+  font-family: 'Source Sans Pro';
   font-size: 4em;
   color: var(--dark);
   margin-bottom: 0;
 }
 
 h2 {
-  font-family: 'Montserrat';
+  font-family: 'Source Sans Pro';
   font-size: 3em;
   color: var(--dark)
 }
@@ -73,6 +52,11 @@ h3 {
   margin: 0;
   font-size: 1em;
   color: var(--dark)
+}
+
+a {
+  color: var(--olive);
+  transition: all 0.2s ease;
 }
 
 .lt-card {
@@ -88,28 +72,22 @@ h3 {
   opacity: 0.6;
   z-index: 1;
   transition: 300ms;
-}
 
-.hover::after {
-  transition: 300ms;
-  height: 25px;
-  content: "";
-  position: absolute;
-  background-color: var(--salmon);
-  opacity: 0.5;
-  z-index: -1;
-  width: 0%;
-  left: 10px;
-  bottom: 0px;
-}
-
-a {
-  color: var(--olive);
-  transition: all 0.2s ease;
+  &::after {
+    transition: 300ms;
+    height: 18px;
+    content: "";
+    position: absolute;
+    background-color: var(--olive);
+    opacity: 0.5;
+    z-index: -1;
+    width: 0%;
+    left: 10px;
+    bottom: 5px;
+  }
 }
 
 /* Landing Page CSS */
-
 #landing-container {
   position: relative;
   width: 100vw;
@@ -151,7 +129,6 @@ a {
 }
 
 /* Rotating Text CSS */
-
 .col1 {
   color: var(--dark)
 }

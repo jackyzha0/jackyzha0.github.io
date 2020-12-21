@@ -1,103 +1,107 @@
 // Darkmode toggle
-const toggleSwitch = document.querySelector('#darkmode-toggle');
-const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const toggleSwitch = document.querySelector('#darkmode-toggle')
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null
 
 if (currentTheme) {
   document.documentElement.setAttribute('saved-theme', currentTheme);
   if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
+    toggleSwitch.checked = true
   }
 }
 
-function switchTheme(e) {
+const switchTheme = (e) => {
   if (e.target.checked) {
-    document.documentElement.setAttribute('saved-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
+    document.documentElement.setAttribute('saved-theme', 'dark')
+    localStorage.setItem('theme', 'dark')
   }
   else {
-    document.documentElement.setAttribute('saved-theme', 'light');
-    localStorage.setItem('theme', 'light');
+    document.documentElement.setAttribute('saved-theme', 'light')
+    localStorage.setItem('theme', 'light')
   }    
 }
 
 // listen for toggle
-toggleSwitch.addEventListener('change', switchTheme, false);
+toggleSwitch.addEventListener('change', switchTheme, false)
 
-// Particle credit to Y Endo
+// Partices
 function random(low, high) {
-  return Math.random() * (high - low) + low;
+  return Math.random() * (high - low) + low
 }
 
 class Visual {
-  constructor() {
-    this.canvas = document.querySelector('#canvas');
-    this.context = this.canvas.getContext('2d');
-    this.canvasWidth = 0;
-    this.canvasHeight = 0;
-    this.particleLength = 150;
-    this.particles = [];
-    this.particleMaxRadius = 8;
-
-    this.handleResizeBind = this.handleResize.bind(this);
-
-    this.initialize();
-    this.render();
+  constructor(particles, yVariance, maxParticleRadius) {
+    this.canvas = document.querySelector('#canvas')
+    this.context = this.canvas.getContext('2d')
+    this.canvasWidth = 0
+    this.canvasHeight = 0
+    this.particleLength = particles
+    this.yVariance = yVariance
+    this.particles = []
+    this.particleMaxRadius = maxParticleRadius
+    this.handleResizeBind = this.resize.bind(this)
+    this.initialize()
+    this.render()
   }
 
   // Initialize particles
   initialize() {
-    this.resizeCanvas();
+    this.resizeCanvas()
     for (let i = 0; i < this.particleLength; i++) {
-      this.particles.push(this.createParticle(i));
+      this.particles.push(this.createParticle(i))
     }
-    this.bind();
+    this.bind()
   }
 
   // bind event listeners
   bind() {
-    window.addEventListener('resize', this.handleResizeBind, false);
+    window.addEventListener('resize', this.handleResizeBind, false)
   }
 
   unbind() {
-    window.removeEventListener('resize', this.handleResizeBind, false);
+    window.removeEventListener('resize', this.handleResizeBind, false)
   }
 
-  handleResize() {
-    this.resizeCanvas();
+  resize() {
+    this.particles = []
+    this.unbind()
+    this.initialize()
   }
 
   resizeCanvas() {
-    this.canvasWidth = document.body.offsetWidth;
-    this.canvasHeight = document.body.offsetHeight;
-    this.canvas.width = this.canvasWidth * window.devicePixelRatio;
-    this.canvas.height = this.canvasHeight * window.devicePixelRatio;
-    this.context = this.canvas.getContext('2d');
-    this.context.scale(window.devicePixelRatio, window.devicePixelRatio);
+    this.canvasWidth = document.body.offsetWidth
+    this.canvasHeight = document.body.offsetHeight
+    this.canvas.width = this.canvasWidth * window.devicePixelRatio
+    this.canvas.height = this.canvasHeight * window.devicePixelRatio
+    this.context = this.canvas.getContext('2d')
+    this.context.scale(window.devicePixelRatio, window.devicePixelRatio)
   }
+
+  randomColour() {
+    switch (Math.floor(Math.random() * 3)) {
+      case 0:
+        return [40, 75, 99]
+      case 1:
+        return [132, 165, 157]
+      case 2:
+        return [242, 132, 130]
+    }
+  }
+  
 
   // particle creation
   createParticle(id, isRecreate) {
     // randomize position and radius
-    const radius = random(2, this.particleMaxRadius);
-    const x = isRecreate ? -radius - random(0, this.canvasWidth) : random(0, this.canvasWidth);
-    let y = random(this.canvasHeight / 2 - 150, this.canvasHeight / 2 + 150);
-    y += random(-100, 100);
+    const radius = random(2, this.particleMaxRadius)
+    const x = isRecreate ? -radius : random(0, this.canvasWidth)
 
-    const alpha = random(0.05, 0.6);
+    // pseudo-normal distribution
+    let y = random(this.canvasHeight / 2 - this.yVariance, this.canvasHeight / 2 + this.yVariance)
+    y += random(-this.yVariance / 2, this.yVariance/2)
+
+    const alpha = random(0.05, 0.5)
 
     // pick random colour
-    var col
-    switch (Math.floor(Math.random() * 3)) {
-      case 0:
-        col = [40, 75, 99];
-        break;
-      case 1:
-        col = [132, 165, 157];
-        break;
-      case 2:
-        col = [242, 132, 130];
-        break;
-    }
+    const col = this.randomColour()
 
     return {
       id: id,
@@ -105,55 +109,53 @@ class Visual {
       y: y,
       startY: y,
       radius: radius,
-      defaultRadius: radius,
       startAngle: 0,
       endAngle: Math.PI * 2,
       alpha: alpha,
-      ref_alpha: alpha,
       color: { r: col[0], g: col[1], b: col[2] },
       speed: alpha,
-      amplitude: random(50, 200)
-    };
+      amplitude: random(50, 250)
+    }
   }
 
   drawParticles() {
     this.particles.forEach(particle => {
-      this.moveParticle(particle);
-      this.context.beginPath();
-      this.context.fillStyle = `rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`;
-      this.context.arc(particle.x, particle.y, particle.radius, particle.startAngle, particle.endAngle);
-      this.context.fill();
+      this.moveParticle(particle)
+      this.context.beginPath()
+      this.context.fillStyle = `rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`
+      this.context.arc(particle.x, particle.y, particle.radius, particle.startAngle, particle.endAngle)
+      this.context.fill()
     });
   }
 
   moveParticle(particle) {
-    particle.x += particle.speed;
-    particle.y = particle.startY + particle.amplitude * Math.sin((particle.x * Math.PI) / (360 * 2));
+    particle.x += particle.speed
+    particle.y = particle.startY + particle.amplitude * Math.sin((particle.x * Math.PI) / (360 * 2))
   }
 
   render() {
-    this.context.clearRect(0, 0, this.canvasWidth + this.particleMaxRadius * 2, this.canvasHeight);
-    var style = getComputedStyle(document.body);
-    this.context.fillStyle = style.getPropertyValue('--light');
-    this.context.fillRect(0, 0, canvas.width, canvas.height);
-    this.drawParticles();
+    this.context.clearRect(0, 0, this.canvasWidth + this.particleMaxRadius * 2, this.canvasHeight)
+    var style = getComputedStyle(document.body)
+    this.context.fillStyle = style.getPropertyValue('--light')
+    this.context.fillRect(0, 0, canvas.width, canvas.height)
+    this.drawParticles()
 
     // kill offscreen particles and re-render
     this.particles.forEach(particle => {
       if (particle.x - particle.radius >= this.canvasWidth) {
-        this.particles[particle.id] = this.createParticle(particle.id, true);
+        this.particles[particle.id] = this.createParticle(particle.id, true)
       }
-    });
+    })
 
-    requestAnimationFrame(this.render.bind(this));
+    requestAnimationFrame(this.render.bind(this))
   }
 }
 
-new Visual();
+new Visual(150, 150, 8);
 
-// Rotating Text credit to alphardex
+// Rotating Text
 var words = document.querySelectorAll(".word");
-words.forEach(function(word) {
+words.forEach((word) => {
   var letters = word.textContent.split("");
   word.textContent = "";
   letters.forEach(function(letter) {
@@ -172,14 +174,14 @@ words.forEach(function(word) {
 var currentWordIndex = 0;
 var maxWordIndex = words.length - 1;
 words[currentWordIndex].style.opacity = "1";
-var rotateText = function() {
+var rotateText = () => {
   var currentWord = words[currentWordIndex];
   var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
   // rotate out letters of current word
-  Array.from(currentWord.children).forEach(function(letter, i) {
+  Array.from(currentWord.children).forEach((letter, i) => {
     setTimeout(function() {
       letter.className = "letter out";
-    }, i * 40);
+    }, i * 20);
   });
   // reveal and rotate in letters of next word
   nextWord.style.opacity = "1";
@@ -192,8 +194,13 @@ var rotateText = function() {
   currentWordIndex =
     currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 };
-setTimeout(rotateText, 1000);
-setInterval(rotateText, 3000);
+
+const init = () => {
+  rotateText()
+  setInterval(rotateText, 3000);
+}
+setTimeout(init, 2000);
+
 
 // Project Accordion
 $(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown();

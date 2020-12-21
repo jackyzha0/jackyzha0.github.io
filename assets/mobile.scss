@@ -1,3 +1,7 @@
+.mobile-only {
+  display: None;
+}
+
 @media all and (max-width: 450px) {
   .mobile-only {
     display: inline-block !important;

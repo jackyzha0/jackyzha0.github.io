@@ -1,5 +1,5 @@
 {{- range $.Site.Data.jobs -}}
-<div class="main_card accordion" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+<div class="accordion" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   <div class="lt-hover lt-shadow lt-card lt-flex-row accordion-item">
     <div class="accordion_body {{if .expand}}is-active{{end}}">
       <div class="lt-flex-row job-info">
@@ -11,7 +11,7 @@
         <div class="accordion-arrow"></div>
       </div>
       <div class="accordion-panel">
-        <p class="slider__txt">{{.things}}</p>
+        <p>{{.things}}</p>
         <ul class="lt-hl">
           {{- range .techlist -}}
           <li>{{.}}</li>

@@ -21,7 +21,7 @@
     <div class="lt-content-column" id="bio_container" >
       <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
         <h2>
-          <span class="hover">about.</span>
+          <span class="hover">About</span>
         </h2>
         <div class="lt-flex-row">
           {{partial "bio/bio.html" .}}
@@ -32,7 +32,7 @@
     <!-- Work Experience Section -->
     <div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
       <h2>
-        <span class="hover">experience.</span>
+        <span class="hover">Experience</span>
       </h2>
       <div id="expcards">
         {{partial "jobs/jobs.html" .}}

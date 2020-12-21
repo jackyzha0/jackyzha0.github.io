@@ -26,8 +26,8 @@
   {{if $.Site.Data.aos.enabled -}}
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   {{- end}}
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   {{ $css := slice "style.scss" "lite.scss" "arrow.scss" "smaller-screens.scss" "langbars.scss" "proj.scss" "mobile.scss" "darkmode.scss"}}
   {{range $css}}
     {{$sass := resources.Get . | resources.ToCSS }}
