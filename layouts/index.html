@@ -6,12 +6,9 @@
     <!-- Begin actual content -->
     <div id = "landing-container">
       {{partial "landing/darkmode.html" .}}
-      <div id = "landing-overlay" class="lt-flex-col lt-content-column">
-        <div class="lt-flex-66">
-          {{partial "landing/spin-text.html" .}}
-        </div>
-        <div id="intro-arrow" class="lt-flex-33">
-          {{partial "landing/arrow.html" .}}
+      <div id = "landing-overlay" class="lt-content-column">
+        <div>
+          {{partial "landing/landing.html" .}}
         </div>
       </div>
       <canvas id="canvas"></canvas>

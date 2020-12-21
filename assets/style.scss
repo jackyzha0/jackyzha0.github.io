@@ -103,22 +103,20 @@ p {
   position: relative;
   width: 100vw;
   height: 100vh;
-}
 
-#landing-container canvas, #landing-overlay {
-  position: absolute
-}
+  & > #landing-overlay {
+    position: absolute;
+    z-index: 9999 !important;
+    background-color: #00000000 !important;
+    top: 30%;
+    height: 60%;
+  }
 
-#landing-overlay {
-  z-index: 9999 !important;
-  background-color: #00000000 !important;
-  top: 30%;
-  height: 60%;
-}
-
-#canvas {
-  width: 100vw;
-  height: 100vh;
+  & > canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 #sub-nav {
