@@ -58,27 +58,6 @@
     - name: Dockerfile
       percent: 5
 
-- name: nwPlus Livesite
-  expand: false
-  short_desc: centralized information hub for hackathons
-  links:
-    - link_name: github
-      link: https://github.com/nwplus/livesite
-  techlist:
-    - Firebase
-    - Firestore
-    - React
-    - Github Actions
-  lang_ratios:
-    - name: JavaScript
-      percent: 92
-    - name: HTML
-      percent: 4
-    - name: CSS
-      percent: 4
-  desc:
-    The nwPlus livesite aims to be a central information hub for hackers which will contain important information about an ongoing hackathon. The core features of the site are that it has a calendar display, live announcements and notifcations, and embedded Twitch stream. Built from scratch in React, and reads information from a Firestore database.
-
 - name: nanoDB
   expand: false
   short_desc: a simple, easy, and debuggable document database
@@ -126,6 +105,25 @@
     - name: Bash
       percent: 0.6
 
+- name: Impostor
+  expand: false
+  short_desc: group pomodoro timer with a twist
+  links:
+    - link_name: devpost
+      link: https://devpost.com/software/impostor
+    - link_name: github
+      link: https://github.com/h4ckh0use
+  desc:
+    Imposter is a productivity timer designed to keep friends on task together even when working remotely. The Chrome extension monitors your browser tabs, checking against a blocklist of unproductive sites. If one of those websites is visited, the backend will be notified via Firebase and will notify all users in the room through a WebSocket connection. Chat and character customization is also supported. Won track finalist and 2nd place for Disney prize.
+  techlist:
+    - Firestore
+    - WebSockets
+    - Node.js
+    - Heroku
+  lang_ratios:
+    - name: JavaScript
+      percent: 100
+
 - name: Speech2Braille
   expand: false
   short_desc: a wearable device to transcribe speech
@@ -169,7 +167,7 @@
     with Twilio. The backend that handles transaction is written with Node and Express 
     and deployed on stdlib. PacketBook is unique in that it leverages the Stellar 
     blockchain and tokens (XLM) for its transactions which greatly reduces operating 
-    overhead with its minimal transaction costs (around 1/100 of a cent per transaction).
+    overhead with its minimal transaction costs (around 1/100 of a cent per transaction). Won top 30 and the SAP prize at nwHacks 2018.
   techlist:
     - MongoDB
     - Node.js

@@ -4,7 +4,7 @@
   img: mlh.png
   year: 2020
   things:
-    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Built Debian-slim based Docker images for containerizing model server, reducing base image size to just ~40% of its original. Improved logging in AWS Lambda Deployment operator. Created Helm chart to deploy model registry backed with a PostgresDB to a Kubernetes cluster with DevOps best practices baked in.
+    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Reduced docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.
   techlist:
     - Pytest
     - Docker
@@ -17,13 +17,29 @@
     - name: Dockerfile
       percent: 20
 
+- name: nwPlus
+  expand: false
+  title: HackCamp Logistics Director
+  img: nwplus.png
+  year: 2020
+  things:
+    Lead a team of 4 in hosting HackCamp, a beginner-focused virtual hackathon, attracting over 900+ registrations, 500+ attendees, 3.2k+ livestream viewers, and $1200 in donations to charities. Co-lead the creation of a publicly available self-learning resources guidebook for tech beginners. Co-lead the development of our hackathon portal which aims to be a central information hub for hackers to do judging, relay announcements, and view the schedule Handled 200k+ interactions on the site during HackCamp.
+  techlist:
+    - Gitbook
+    - Firebase
+    - React
+    - Github Actions
+  lang_ratios:
+    - name: JavaScript
+      percent: 100
+
 - name: Hootsuite
   expand: false
   title: SWE Intern
   img: hootsuite.png
   year: 2020
   things:
-    Added alerting and monitoring for key SLOs with Grafana and Prometheus. Added monitoring dashboard and alarms for website cache with AWS CloudWatch. Increased accessibility on paid signup flow and added various end-to-end frontend tests. Implemented various A/B tests. Updated internal metrics collection tools to work with NGINX.
+    Reduced mean time-to-acknowledge for alerts from hours to minutes by adding alerting and monitoring for key SLOs for several tier one services. Added monitoring dashboard and alarms for website cache with AWS CloudWatch. Increased accessibility on paid signup flow and added various end-to-end frontend tests. Implemented various A/B tests. Updated internal metrics collection tools to work with NGINX.
   techlist:
     - Twig
     - React
@@ -49,8 +65,8 @@
   img: hootsuite.png
   year: 2019
   things:
-    Prototyped new service mesh with Istio and Envoy. Involved with breaking down the Social Media Communication monolith service into microservices. Refactored and improved logging and error handling in legacy Scala code. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
-    core internal services.  Wrote unit and integration tests in Go and Scala.
+    Implemented a proof of concept service mesh to break Scala monolith service into microservices. Proposal was added to the company technical roadmap for 2023. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's
+    core internal services.
   techlist:
     - SQL
     - Envoy
