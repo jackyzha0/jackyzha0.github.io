@@ -5,75 +5,92 @@ ul.project_list {
 .accordion {
 	margin: 1rem 0;
 	padding: 0;
-	list-style: none;
-}
+  list-style: none;
 
-.accordion_body {
-  width: 100%;
-  padding: 1.3em;
-}
+  & .accordion-arrow {
+    float:right;
+    height: 7px;
+    min-width: 7px;
+    margin-right: 1rem;
+    margin-left: auto;
+    vertical-align: middle;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--dark);
+    transform: rotate(45deg) translateY(0.25em);
+    transition: transform .2s ease-in-out;
+  }
 
-.short-desc {
-  width: auto !important;
-  white-space: nowrap;
-  margin: 0;
-}
+  & .accordion_body.is-active .accordion-arrow {
+    transform: rotateX(180deg) rotateZ(45deg) translateY(-3.5px) translateX(-7px);
+  }
+  
+  & .accordion_body {
+    width: 100%;
+    padding: 1.3em 0.5em;
 
-.spacer {
-  flex: 25%;
-}
+    & > .accordion-panel {
+      display: none;
 
-/* Thumb */
-.accordion-thumb {
-	white-space: nowrap;
-	cursor: pointer;
-  font-weight: 600;
-  padding-right: 0.3em;
-}
+      & ul.lt-hl {
+        margin: 0;
+      }
+    }
 
-/* Arrow */
-.accordion-arrow {
-  float:right;
-  height: 7px;
-	min-width: 7px;
-  margin-right: 1rem;
-  margin-left: auto;
-  vertical-align: middle;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  border-color: var(--dark);
-  transform: rotate(45deg) translateY(0.25em);
-  transition: transform .2s ease-in-out;
-}
+    // project related 
+    & > .proj_desc{
 
-.proj_desc > .accordion-arrow {
-  margin-left: 0.5em;
-}
+      // pad arrow left
+      & > .accordion-arrow {
+        margin-left: 0.5em;
+      }
 
+      & > a {
+        font-family: "Roboto Mono";
+        font-weight: 700;
+        font-size: 0.9em;
+        color: var(--navy);
+        padding-right: 1em;
+        margin-bottom: -0.25em;
+      }
 
-.job-info > .accordion-arrow {
-  margin-top: 1em;
-}
+      & > .project-title {
+        white-space: nowrap;
+        font-weight: 600;
+        padding-right: 0.3em;
+      }
 
-.accordion-panel ul.lt-hl {
-  margin: 0;
-}
+      & > .short-desc {
+        width: auto !important;
+        white-space: nowrap;
+        margin: 0;
+      }
 
-/* Panel */
-.accordion-panel {
-	display: none;
-}
+      & > .spacer {
+        flex: 25%;
+      }
+    }
 
-/* Active */
-.accordion_body.is-active .accordion-arrow {
-	transform: rotateX(180deg) rotateZ(45deg) translateY(-3.5px) translateX(-7px);
-}
+    // job related
+    & > .job-info {
+      & > .accordion-arrow {
+        margin-top: 1em;
+      }
 
-.proj_desc a {
-  font-family: "Roboto Mono";
-  font-weight: 700;
-  font-size: 0.9em;
-  color: var(--navy);
-  padding-right: 1em;
-  margin-bottom: -0.25em;
+      & h2 {
+        font-weight: 600;
+        font-size: 1.4em;
+        font-family: "Source Sans Pro";
+        margin: 0;
+      }
+
+      & p {
+        font-weight: 400;
+        color: var(--gray);
+        font-size: 0.9;
+        font-family: "Roboto Mono";
+        margin: 0;
+      }
+    }
+  }
 }

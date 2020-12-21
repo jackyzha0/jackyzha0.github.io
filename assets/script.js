@@ -125,7 +125,7 @@ class Visual {
       this.context.fillStyle = `rgba(${particle.color.r}, ${particle.color.g}, ${particle.color.b}, ${particle.alpha})`
       this.context.arc(particle.x, particle.y, particle.radius, particle.startAngle, particle.endAngle)
       this.context.fill()
-    });
+    })
   }
 
   moveParticle(particle) {
@@ -151,60 +151,61 @@ class Visual {
   }
 }
 
-new Visual(150, 150, 8);
+new Visual(150, 150, 8)
 
 // Rotating Text
-var words = document.querySelectorAll(".word");
-words.forEach((word) => {
-  var letters = word.textContent.split("");
-  word.textContent = "";
-  letters.forEach(function(letter) {
-    var span = document.createElement("span");
+const words = document.querySelectorAll(".word")
+words.forEach(word => {
+  const letters = word.textContent.split("")
+  word.textContent = ""
+  letters.forEach(letter => {
+    const span = document.createElement("span")
     if (letter == " ") {
-      span.textContent = " ";
-      span.className = "letter";
-      word.append(span);
+      span.textContent = " "
     } else {
-      span.textContent = letter;
-      span.className = "letter";
-      word.append(span);
+      span.textContent = letter
     }
-  });
-});
-var currentWordIndex = 0;
-var maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
+    span.className = "letter"
+    word.append(span)
+  })
+})
+
+
+var currentWordIndex = 0
+var maxWordIndex = words.length
+words[currentWordIndex].style.opacity = "1"
 var rotateText = () => {
-  var currentWord = words[currentWordIndex];
-  var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+  const currentWord = words[currentWordIndex]
+  const nextWord = words[(currentWordIndex + 1) % maxWordIndex]
+
   // rotate out letters of current word
   Array.from(currentWord.children).forEach((letter, i) => {
-    setTimeout(function() {
-      letter.className = "letter out";
-    }, i * 20);
-  });
+    setTimeout(() => {
+      letter.className = "letter out"
+    }, i * 40)
+  })
+
   // reveal and rotate in letters of next word
   nextWord.style.opacity = "1";
   Array.from(nextWord.children).forEach((letter, i) => {
     letter.className = "letter behind";
-    setTimeout(function() {
+    setTimeout(() => {
       letter.className = "letter in";
     }, 500 + i * 20);
-  });
-  currentWordIndex =
-    currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-};
+  })
+  currentWordIndex = (currentWordIndex + 1) % maxWordIndex
+}
 
 const init = () => {
   rotateText()
-  setInterval(rotateText, 3000);
+  setInterval(rotateText, 3000)
 }
-setTimeout(init, 2000);
+setTimeout(init, 2000)
 
 
 // Project Accordion
-$(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown();
+$(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown()
 
 $(".accordion > .accordion-item > .accordion_body").click(function() {
-  $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing");
-});
+  $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")
+})

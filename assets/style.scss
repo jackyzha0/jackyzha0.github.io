@@ -59,6 +59,14 @@ a {
   transition: all 0.2s ease;
 }
 
+p {
+  display: block;
+  color: var(--gray);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
 .lt-card {
   margin: 0 !important;
   padding: 0 0 0 1em !important;
@@ -147,55 +155,41 @@ a {
 
 .rotating-text {
   overflow: hidden;
+
+  & > h1 {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+
+    & > .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+      overflow: hidden;
+      padding-bottom: 0.12em;
+
+      & > .letter {
+        transform-origin: center center 0.8em;
+      }
+
+      & > .letter.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+      }
+
+      & > .letter.in {
+        transition: 0.32s ease;
+      }
+
+      & > .letter.behind {
+        transform: rotateX(-90deg);
+      }
+    }
+  }
 }
 
-.rotating-text h1 {
-  display: inline-flex;
-  margin: 0;
-  vertical-align: top;
-}
-
-.rotating-text h1 .word {
-  position: absolute;
-  display: flex;
-  opacity: 0;
-  overflow: hidden;
-  padding-bottom: 0.12em;
-}
-
-.rotating-text h1 .word .letter {
-  transform-origin: center center 0.8em;
-}
-
-.rotating-text h1 .word .letter.out {
-  transform: rotateX(90deg);
-  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
-}
-
-.rotating-text h1 .word .letter.in {
-  transition: 0.32s ease;
-}
-
-.rotating-text h1 .word .letter.behind {
-  transform: rotateX(-90deg);
-}
-
-/*/* Arrow CSS */
-
-.arrow_part {
-  margin: 1.5em;
-}
 
 /* Bio CSS */
-
-p {
-  display: block;
-  color: var(--gray);
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
-  line-height: 1.2;
-}
-
 .lt-content-column:hover h2 .hover {
   opacity: 1.0;
 }
@@ -205,7 +199,6 @@ p {
 }
 
 /* Card CSS */
-
 .ext-ref {
   display: block;
   margin-left: 1.5em;
@@ -214,7 +207,7 @@ p {
 }
 
 ul.lt-hl {
-  font-family: "Roboto";
+  font-family: "Source Sans Pro";
   margin-bottom: 1em;
 }
 

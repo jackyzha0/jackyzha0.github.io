@@ -4,7 +4,7 @@
     <div class="accordion-item lt-shadow lt-card lt-flex-row" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
       <div class="accordion_body {{if .expand}}is-active{{end}}">
         <div class="proj_desc lt-flex-row">
-            <h3 class="accordion-thumb">{{.name}}</h3>
+            <h3 class="project-title">{{.name}}</h3>
             <p class="short-desc"> &mdash; {{.short_desc}}</p>
             <div class="spacer"></div>
             {{- range .links -}}
