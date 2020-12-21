@@ -86,14 +86,14 @@ p {
 
   &::after {
     transition: 300ms;
-    height: 18px;
+    width: 18px;
     content: "";
     position: absolute;
     background-color: var(--olive);
     opacity: 0.5;
     z-index: -1;
-    width: 0%;
-    left: 10px;
+    height: 0%;
+    left: 5px;
     bottom: 5px;
   }
 }
@@ -220,16 +220,6 @@ p {
       }
     }
   }
-}
-
-
-/* Bio CSS */
-.lt-content-column:hover h2 .hover {
-  opacity: 1.0;
-}
-
-.lt-content-column:hover h2 .hover::after {
-  width: 100%;
 }
 
 /* Card CSS */

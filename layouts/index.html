@@ -17,8 +17,8 @@
     <!-- Personal Bio -->
     <div class="lt-content-column" id="about">
       <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-        <h2>
-          <span class="hover">About</span>
+        <h2 class="side-header-container">
+          <span class="hover side-header">About</span>
         </h2>
         <div class="lt-flex-row">
           {{partial "bio/bio.html" .}}
