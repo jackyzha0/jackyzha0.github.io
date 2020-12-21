@@ -119,6 +119,38 @@ p {
   }
 }
 
+// cascade fade in
+#main-landing {
+  & > h1 {
+    animation: fadeIn ease 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+  }
+
+  & > .rotating-text {
+    animation: fadeIn ease 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+  }
+
+
+  @for $i from 1 through 4 {
+    & > ul > li:nth-child(#{$i}) {
+      animation: fadeIn ease 0.6s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-delay: #{$i * .1 + 1.2}s;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+}
+
 #sub-nav {
   list-style: none;
   padding-left: 0;
