@@ -26,7 +26,7 @@
   --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
 
-  --invert-filter: invert(98%) hue-rotate(190deg) grayscale(0.3) !important;
+  --invert-filter: invert(97%) hue-rotate(195deg) grayscale(0.4) !important;
 }
 
 html {
@@ -90,22 +90,20 @@ p, ul {
 .hover {
   color: var(--dark);
   text-decoration: none;
-  display: inline-block;
-  position: relative;
   opacity: 0.6;
   z-index: 1;
   transition: 300ms;
 
   &::after {
     transition: 300ms;
-    width: 18px;
+    height: 18px;
     content: "";
     position: absolute;
     background-color: var(--olive);
     opacity: 0.5;
     z-index: -1;
-    height: 0%;
-    left: 5px;
+    width: 0%;
+    right: 5px;
     bottom: 5px;
   }
 }
