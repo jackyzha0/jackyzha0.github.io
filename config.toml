@@ -1,3 +1,17 @@
 baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
 title = "jacky zhao | personal website"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = false
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4

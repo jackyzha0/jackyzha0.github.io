@@ -1,6 +1,7 @@
 <div class="lt-flex-50" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+  {{ $gh := getJSON $.Site.Data.me.api_url }}
   <p>
-    {{$.Site.Data.me.description}} Currently, I'm based in Vancouver, BC and studying Computer Science @ubc.
+    {{$.Site.Data.me.description}} Currently, I'm based in {{$gh.location}} and studying Computer Science @ubc.
   </p>
   <p>
     In my spare time, you can find me faffing around on the climbing wall, dabbling with watercolour, or reading in a park somewhere! I also help to organize <a target="_blank" rel="noreferrer" href="https://hackcamp.nwplus.io/">HackCamp</a> as a part of <a target="_blank" rel="noreferrer" href="https://www.nwplus.io/">@nwplus</a> and write code for <a target="_blank" rel="noreferrer" href="https://github.com/bentoml/BentoML">@bentoml</a>. Recently, I've started <a target="_blank" rel="noreferrer" href="https://blog.jzhao.xyz/">a blog</a> on which I plan to write more about some of my thoughts on tech, personal projects, and general musings about the world.
@@ -11,8 +12,13 @@
     contact me for a chat at <a target="_blank" rel="noreferrer"
       href="mailto:j.zhao2k19@gmail.com">j.zhao2k19@gmail.com</a>. I'm always happy to meet new people!
   </p>
+  <img class="gh-chart" src="https://ghchart.rshah.org/jackyzha0" alt="jackyzha0's Github chart" />
 </div>
 <div class="lt-flex-50 img-container">
   <div class="deco" loading=lazy></div>
-  <img class="lt-shadow lt-hover me" src="res/me.jpg" alt="Jacky Zhao" loading=lazy />
+  <img class="lt-shadow me" src="res/me.jpg" alt="Jacky Zhao" loading=lazy />
+  {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location "bio" $gh.bio) | jsonify (dict "prefix" " " "indent" " ") }}
+  <div class="lt-shadow highlight-container">
+    {{highlight $jsonContent "json" ""}}
+  </div>
 </div>
