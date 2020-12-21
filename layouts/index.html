@@ -28,8 +28,8 @@
 
     <!-- Work Experience Section -->
     <div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2>
-        <span class="hover">Experience</span>
+      <h2 class="side-header-container">
+        <span class="hover side-header">Prev</span>
       </h2>
       <div id="expcards">
         {{partial "jobs/jobs.html" .}}
@@ -38,8 +38,8 @@
 
     <!-- Project Section -->
     <div id="projects" class="lt-content-column" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2>
-        <span class="hover">Projects</span>
+      <h2 class="side-header-container">
+        <span class="hover side-header">Projects</span>
       </h2>
       {{partial "projects/projects.html" .}}
     </div>
