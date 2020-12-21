@@ -9,9 +9,7 @@
   </h1>
 </div>
 <ul id="sub-nav">
-  <li><p>goto::</p></li>
-  <li><a href="#">about</a></li>
-  <li><a href="#">about</a></li>
-  <li><a href="#">about</a></li>
-  <li><a href="#">about</a></li>
+  {{- range $index, $desc := $.Site.Data.links.intro -}}
+  <li><a href="{{.link}}">/{{.link_name}}</a></li>
+  {{- end -}}
 </ul>

@@ -25,6 +25,9 @@
   --outlinegray: #343434 !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -121,19 +124,20 @@ p {
 #sub-nav {
   list-style: none;
   padding-left: 0;
-}
+  margin: 0;
 
-#sub-nav li {
-  display: inline-block;
-}
+  & > li {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    padding-top: 0.5em;
+    font-weight: normal;
+    color: var(--dark);
 
-#sub-nav li a {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1em;
-  opacity: 0.5;
-  padding-top: 0.5em;
-  font-weight: normal;
-  color: var(--dark);
+    & > a {
+      padding-right: 0.5em;
+    }
+  }
 }
 
 /* Rotating Text CSS */
@@ -233,7 +237,7 @@ ul.lt-hl {
   border-radius: 5px;
 }
 
-#bio_container:hover img {
+#about:hover img {
   filter: grayscale(0%);
   transform: translate(-0.3em, -0.3em);
 }
