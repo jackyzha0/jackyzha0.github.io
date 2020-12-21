@@ -4,7 +4,7 @@
 
   <body>
     <!-- Begin actual content -->
-    <div id = "landing-container">
+    <div id="landing-container">
       {{partial "landing/darkmode.html" .}}
       <div id = "landing-overlay" class="lt-content-column">
         <div>
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Personal Bio -->
-    <div class="lt-content-column" id="about" >
+    <div class="lt-content-column" id="about">
       <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
         <h2>
           <span class="hover">About</span>

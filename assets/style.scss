@@ -267,16 +267,23 @@ ul.lt-hl {
   border-radius: 5px;
 }
 
-#about:hover img {
-  filter: grayscale(0%);
-  transform: translate(-0.3em, -0.3em);
+#about:hover {
+  & img, & .deco {
+    filter: grayscale(0%);
+    transform: translate(-0.3em, -0.3em);
+  }
 }
 
 .deco {
+  background-color: var(--olive);
+  -webkit-mask: url(res/deco.svg) no-repeat center;
+  mask: url(res/deco.svg) no-repeat center;
   position: absolute;
   transition: all 2s cubic-bezier(.25, .8, .25, 1);
   z-index: 3;
-  top: 100px;
+  width: 300px;
+  height: 200px;
+  top: 120px;
   left: 35%;
 }
 
