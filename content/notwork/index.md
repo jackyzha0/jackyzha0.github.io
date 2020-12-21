@@ -1,4 +1,4 @@
-Contrary to popular belief, I actually things outside of writing questionable code and school. Here are some things that I'm up to nowadays:
+Contrary to popular belief, I actually have other things I do outside of writing questionable code and school! Here are some things that I'm up to nowadays:
 ### Reading
 There's nothing like cozying up with a cup of hot barley tea on a rainy day with a great book. I've recently rediscovered the joy of reading thanks to someone very close to me.
 
