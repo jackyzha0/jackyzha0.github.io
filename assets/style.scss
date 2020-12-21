@@ -287,12 +287,13 @@ ul.lt-hl {
     -webkit-mask: url(res/deco.svg) no-repeat center;
     mask: url(res/deco.svg) no-repeat center;
     -webkit-mask-size: contain;
+    mask-size: contain;
     position: absolute;
     z-index: 3;
     width: 300px;
     height: 200px;
     top: -50px;
-    right: 100px;
+    left: 180px;
 
     @media all and (max-width: 450px) {
       width: 210px;
@@ -310,6 +311,7 @@ ul.lt-hl {
     @media all and (max-width: 450px) {
       left: 0px;
       width: 100%;
+      top: 220px;
 
       & code {
         font-size: 0.6em !important;
