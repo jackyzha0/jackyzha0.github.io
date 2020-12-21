@@ -1,5 +1,5 @@
 - name: MLH Fellowship
-  expand: true
+  expand: false
   title: Fellows Class 0
   img: mlh.png
   year: 2020
@@ -18,7 +18,7 @@
       percent: 20
 
 - name: Hootsuite
-  expand: true
+  expand: false
   title: SWE Intern
   img: hootsuite.png
   year: 2020

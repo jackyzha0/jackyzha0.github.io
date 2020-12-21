@@ -3,8 +3,8 @@ ul.project_list {
 }
 
 .accordion {
-	margin: 1rem 0;
-	padding: 0;
+  margin: 1rem 0;
+  padding: 0;
   list-style: none;
 
   & .accordion-arrow {
@@ -56,6 +56,7 @@ ul.project_list {
 
       & > .project-title {
         white-space: nowrap;
+        font-family: "Source Sans Pro";
         font-weight: 600;
         padding-right: 0.3em;
       }
@@ -73,13 +74,20 @@ ul.project_list {
 
     // job related
     & > .job-info {
+      & > .company-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        margin-right: 1em;
+      }
+
       & > .accordion-arrow {
         margin-top: 1em;
       }
 
       & h2 {
         font-weight: 600;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-family: "Source Sans Pro";
         margin: 0;
       }
@@ -87,7 +95,7 @@ ul.project_list {
       & p {
         font-weight: 400;
         color: var(--gray);
-        font-size: 0.9;
+        font-size: 0.9em;
         font-family: "Roboto Mono";
         margin: 0;
       }

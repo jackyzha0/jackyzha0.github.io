@@ -1,5 +1,5 @@
 - name: ctrl-v
-  expand: true
+  expand: false
   short_desc: a modern, open-source pastebin
   links:
     - link_name: site
