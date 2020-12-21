@@ -132,13 +132,22 @@ a {
   height: 100vh;
 }
 
-#prev-exp {
+#sub-nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+#sub-nav li {
+  display: inline-block;
+}
+
+#sub-nav li a {
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
   opacity: 0.5;
   padding-top: 0.5em;
   font-weight: normal;
-  color: var(--dark)
+  color: var(--dark);
 }
 
 /* Rotating Text CSS */
