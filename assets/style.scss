@@ -36,6 +36,8 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   background-color: var(--light);
 }
 
@@ -114,6 +116,12 @@ p {
     background-color: #00000000 !important;
     top: 30%;
     height: 60%;
+
+    @media all and (max-width: 450px) {
+      overflow: hidden;
+      left: 10vw !important;
+      padding: 0 0;
+    }
   }
 
   & > canvas {
@@ -126,20 +134,16 @@ p {
 // cascade fade in
 #main-landing {
   & > h1 {
-    &:first-child {
-      margin-top: 0;
-    }
     animation: fadeIn ease 0.6s;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-delay: 0.4s;
-  }
 
-  & > .rotating-text {
-    animation: fadeIn ease 0.6s;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-delay: 0.8s;
+    @media all and (max-width: 450px) {
+      &:nth-child(2) {
+        margin-top: 15vh;
+      }
+    }
   }
 
 
@@ -196,6 +200,14 @@ p {
 
 .rotating-text {
   overflow: hidden;
+  animation: fadeIn ease 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+
+  @media all and (max-width: 450px) {
+    height: 2em;
+  }
 
   & > h1 {
     display: inline-flex;
@@ -256,6 +268,10 @@ ul.lt-hl {
   margin-left: 3em;
   min-height: 256px;
 
+  @media all and (max-width: 450px) {
+    margin-left: 0;
+  }
+
   & > .me {
     filter: grayscale(40%);
     max-height: 256px;
@@ -270,13 +286,19 @@ ul.lt-hl {
     background-color: var(--olive);
     -webkit-mask: url(res/deco.svg) no-repeat center;
     mask: url(res/deco.svg) no-repeat center;
+    -webkit-mask-size: contain;
     position: absolute;
-    transition: all 2s cubic-bezier(.25, .8, .25, 1);
     z-index: 3;
     width: 300px;
     height: 200px;
     top: -50px;
     right: 100px;
+
+    @media all and (max-width: 450px) {
+      width: 210px;
+      height: 150px;
+      left: 140px;
+    }
   }
 
   & > div > .highlight {
@@ -284,6 +306,15 @@ ul.lt-hl {
     position: absolute;
     top: 210px;
     left: 50px;
+
+    @media all and (max-width: 450px) {
+      left: 0px;
+      width: 100%;
+
+      & code {
+        font-size: 0.6em !important;
+      }
+    }
     
     & > div {
       padding: 0.2em 1em;
@@ -316,4 +347,5 @@ ul.lt-hl {
 .gh-chart {
   filter: var(--invert-filter);
   width: 100%;
+  margin-bottom: 2em;
 }

@@ -29,6 +29,10 @@ ul.project_list {
     width: 100%;
     padding: 1.3em 0.5em;
 
+    @media all and (max-width: 450px) {
+      padding: 0.8em !important;
+    }
+
     & > .accordion-panel {
       display: none;
 
@@ -51,7 +55,13 @@ ul.project_list {
         font-size: 0.9em;
         color: var(--navy);
         padding-right: 1em;
-        margin-bottom: -0.25em;
+
+        @media all and (max-width: 450px) {
+          padding-right: 0.5em !important;
+          font-size: 0.7em !important;
+
+          transform: translateY(0.15em);
+        }
       }
 
       & > .project-title {
@@ -74,15 +84,25 @@ ul.project_list {
 
     // job related
     & > .job-info {
+
       & > .company-logo {
         width: 40px;
         height: 40px;
         border-radius: 3px;
         margin-right: 1em;
+
+        @media all and (max-width: 450px) {
+          width: 30px !important;
+          height: 30px !important;
+        }
       }
 
       & > .accordion-arrow {
         margin-top: 1em;
+
+        @media all and (max-width: 450px) {
+          margin-top: 0.5em;
+        }
       }
 
       & h2 {
@@ -90,6 +110,11 @@ ul.project_list {
         font-size: 1.2em;
         font-family: "Source Sans Pro";
         margin: 0;
+
+        @media all and (max-width: 450px) {
+          font-size: 1em;
+          transform: translateY(0.2em);
+        }
       }
 
       & p {
@@ -98,6 +123,10 @@ ul.project_list {
         font-size: 0.9em;
         font-family: "Roboto Mono";
         margin: 0;
+
+        @media all and (max-width: 450px) {
+          display: none;
+        }
       }
     }
   }
