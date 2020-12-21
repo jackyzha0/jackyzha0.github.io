@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head/head.html" . }}
+
+<body>
+    <!-- Begin actual content -->
+    <div id="landing-container">
+        {{partial "landing/darkmode.html" .}}
+        <div id="landing-overlay" class="lt-content-column">
+            <h1>404.</h1>
+            <h3>Hey! You look a little lost.</h3>
+            <ul id="sub-nav">
+                <li><a href="/">↳ Let's get you home.</a></li>
+            </ul>
+           
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{- with resources.Get "script.js" | minify -}}
+<script>
+    {{.Content | safeJS }}
+</script>
+{{- end -}}
+</body>
+
+</html>

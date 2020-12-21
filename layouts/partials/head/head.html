@@ -1,6 +1,7 @@
 <head>
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link crossorigin rel="preconnect" href="https://www.google-analytics.com">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-1"></script>
   <script>
@@ -16,8 +17,8 @@
 
   <!-- Meta tags -->
   <meta charset="UTF-8">
-  <meta name="description" content="Welcome to my little corner of the internet! I'm Jacky Zhao, a curious software developer interested in infrastructure, ml, cognitive systems, and accessible tech — anything that can make tech work better for everyone. Read more about me and my projects here on my personal site.">
-  <title>jacky zhao | a curious software developer interested in infrastructure, ml, cognitive systems, and accessible tech</title>
+  <meta name="description" content="{{$.Site.Data.me.description}}">
+  <title>{{$.Site.Data.me.page_title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -25,11 +26,12 @@
   {{if $.Site.Data.aos.enabled -}}
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   {{- end}}
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  {{ $css := slice "style.css" "lite.css" "arrow.css" "smaller-screens.css" "langbars.css" "proj.css" "mobile.css" "darkmode.css"}}
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  {{ $css := slice "style.scss" "sidebar.scss" "lite.scss" "smaller-screens.scss" "langbars.scss" "proj.scss" "mobile.scss" "darkmode.scss"}}
   {{range $css}}
-    {{with resources.Get . | minify}}
+    {{$sass := resources.Get . | resources.ToCSS }}
+    {{with $sass | minify}}
     <style>
       {{.Content | safeCSS}}
     </style>

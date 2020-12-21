@@ -1,0 +1,359 @@
+:root {
+  --light: #faf8f8;
+  --dark: #141021;
+  --navy: #284b63;
+  --olive: #84a59d;
+  --salmon: #f28482;
+  --gray: #4e4e4e;
+  --lightgray: #747474;
+  --outlinegray: #dadada;
+  --lt-colours-light: var(--light) !important;
+  --lt-colours-lightgray: var(--lightgray) !important;
+  --lt-colours-dark: var(--navy) !important;
+  --lt-colours-secondary: var(--olive) !important;
+  --lt-colours-gray: var(--outlinegray) !important;
+
+  --invert-filter: invert(0) hue-rotate(0);
+}
+
+[saved-theme="dark"] {
+  --light: #1c1b22 !important;
+  --dark: #fbfffe !important;
+  --navy: #75a1bf !important;
+  --olive: #84a59d !important;
+  --salmon: #f58382 !important;
+  --gray: #c4c4c4 !important;
+  --lightgray: #292633 !important;
+  --outlinegray: #343434 !important;
+
+  --invert-filter: invert(98%) hue-rotate(190deg) grayscale(0.3) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--light);
+}
+
+
+// typography
+h1 {
+  font-family: 'Source Sans Pro';
+  font-size: 4em;
+  color: var(--dark);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Source Sans Pro';
+  font-size: 3em;
+  color: var(--dark)
+}
+
+h3 {
+  font-family: "Roboto Mono";
+  margin: 0;
+  font-size: 1em;
+  color: var(--dark)
+}
+
+a {
+  color: var(--olive);
+  transition: all 0.2s ease;
+}
+
+ul {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0em;
+  padding-left: 1.5em;
+}
+
+p, ul {
+  display: block;
+  color: var(--gray);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+.lt-card {
+  margin: 0 !important;
+  padding: 0 0 0 1em !important;
+}
+
+.hover {
+  color: var(--dark);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  opacity: 0.6;
+  z-index: 1;
+  transition: 300ms;
+
+  &::after {
+    transition: 300ms;
+    width: 18px;
+    content: "";
+    position: absolute;
+    background-color: var(--olive);
+    opacity: 0.5;
+    z-index: -1;
+    height: 0%;
+    left: 5px;
+    bottom: 5px;
+  }
+}
+
+/* Landing Page CSS */
+#landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  & > #landing-overlay {
+    position: absolute;
+    z-index: 9999 !important;
+    background-color: #00000000 !important;
+    top: 30%;
+    height: 60%;
+
+    @media all and (max-width: 450px) {
+      overflow: hidden;
+      left: 10vw !important;
+      padding: 0 0;
+    }
+  }
+
+  & > canvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+// cascade fade in
+#main-landing {
+  & > h1 {
+    animation: fadeIn ease 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+
+    @media all and (max-width: 450px) {
+      &:nth-child(2) {
+        margin-top: 15vh;
+      }
+    }
+  }
+
+
+  @for $i from 1 through 4 {
+    & > ul > li:nth-child(#{$i}) {
+      animation: fadeIn ease 0.6s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-delay: #{$i * .1 + 1.2}s;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+}
+
+#sub-nav {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  & > li {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    padding-top: 0.5em;
+    font-weight: normal;
+    color: var(--dark);
+
+    & > a {
+      padding-right: 0.5em;
+    }
+  }
+}
+
+/* Rotating Text CSS */
+.col1 {
+  color: var(--dark)
+}
+
+.col2 {
+  color: var(--navy)
+}
+
+.col3 {
+  color: var(--olive)
+}
+
+.col4 {
+  color: var(--salmon)
+}
+
+.rotating-text {
+  overflow: hidden;
+  animation: fadeIn ease 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+
+  @media all and (max-width: 450px) {
+    height: 2em;
+  }
+
+  & > h1 {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+
+    & > .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+      overflow: hidden;
+      padding-bottom: 0.12em;
+
+      & > .letter {
+        transform-origin: center center 0.8em;
+      }
+
+      & > .letter.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+      }
+
+      & > .letter.in {
+        transition: 0.32s ease;
+      }
+
+      & > .letter.behind {
+        transform: rotateX(-90deg);
+      }
+    }
+  }
+}
+
+/* Card CSS */
+.ext-ref {
+  display: block;
+  margin-left: 1.5em;
+  font-weight: 700;
+  font-family: "Roboto Mono";
+}
+
+ul.lt-hl {
+  font-family: "Source Sans Pro";
+  margin-bottom: 1em;
+}
+
+#contact_buttons a {
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--navy);
+  padding: 0 0.5em 3em 0.5em;
+}
+
+.img-container {
+  position: relative;
+  margin-top: 2em;
+  margin-left: 3em;
+  min-height: 256px;
+
+  @media all and (max-width: 450px) {
+    margin-left: 0;
+  }
+
+  & > .me {
+    filter: grayscale(40%);
+    max-height: 256px;
+    max-width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  & > .deco {
+    background-color: var(--olive);
+    -webkit-mask: url(res/deco.svg) no-repeat center;
+    mask: url(res/deco.svg) no-repeat center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: 200px;
+    top: -50px;
+    left: 180px;
+
+    @media all and (max-width: 450px) {
+      width: 210px;
+      height: 150px;
+      left: 140px;
+    }
+  }
+
+  & > div > .highlight {
+    z-index: 5;
+    position: absolute;
+    top: 210px;
+    left: 50px;
+
+    @media all and (max-width: 450px) {
+      left: 0px;
+      width: 100%;
+      top: 220px;
+
+      & code {
+        font-size: 0.6em !important;
+      }
+    }
+    
+    & > div {
+      padding: 0.2em 1em;
+      border-radius: 4px;
+    }
+    
+    & code {
+      font-family: Roboto Mono;
+      font-size: 0.8em;
+    }
+  }
+}
+
+#about:hover {
+  & .me, & .deco, & .highlight-container {
+    filter: grayscale(0%);
+  }
+}
+
+#about p:first-of-type {
+  margin-top: 0;
+}
+
+[data-aos] {
+  body[data-aos-easing="custom"] &, &[data-aos][data-aos-easing="custom"] {
+    transition-timing-function: cubic-bezier(.25, .8, .25, 1);
+  }
+}
+
+.gh-chart {
+  filter: var(--invert-filter);
+  width: 100%;
+  margin-bottom: 2em;
+}

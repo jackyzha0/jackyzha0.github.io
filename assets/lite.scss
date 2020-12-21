@@ -1,12 +1,3 @@
-:root {
-  --lt-colours-light: #fbfffe;
-  --lt-colours-lightgray: #f0f0f0;
-  --lt-colours-gray: #dddddd;
-
-  --lt-colours-dark: #284b63;
-  --lt-colours-secondary: #84a59d;
-}
-
 /* Card Styling */
 .lt-card {
   padding: 0.25em 1em;
@@ -14,11 +5,6 @@
   border-radius: 5px;
   background-color: var(--lt-colours-light);
   border: 1px solid var(--lt-colours-gray);
-}
-
-.lt-clear {
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 /* Hover Effects */
@@ -39,42 +25,21 @@
 ul.lt-hl {
   list-style: none;
   padding: 0;
-}
 
-ul.lt-hl li {
-  display:inline-block;
-  border-style: none;
-  font-size: 0.9em;
-  margin-right: 3px;
-  padding: 0.3rem;
-  border-radius: 2px;
-  color: var(--lt-colours-light);
-  background-color: var(--lt-colours-secondary);
-  margin-bottom: 0.2em;
-}
-
-.lt-round {
-  border-radius: 2em !important;
-}
-
-h1, h2 {
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-/* Style Links */
-
-a.lt-a {
-  font-size: 1em;
-  color: var(--lt-colours-dark);
-  padding: 0 0.2em 0 0.2em;
+  & > li {
+    display:inline-block;
+    border-style: none;
+    font-size: 0.9em;
+    margin-right: 3px;
+    padding: 0.3rem;
+    border-radius: 2px;
+    color: var(--lt-colours-light);
+    background-color: var(--lt-colours-secondary);
+    margin-bottom: 0.2em;
+  }
 }
 
 /* Layout Styling */
-
 .lt-flex-col {
   display: flex;
   flex-direction: column;
@@ -86,7 +51,7 @@ a.lt-a {
 }
 
 .lt-content-column {
-  padding: 0 20vw 30px 20vw;
+  padding: 20px 20vw 20px 20vw;
 }
 
 /* Centre Div Horizontal */

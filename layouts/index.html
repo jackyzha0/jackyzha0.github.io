@@ -4,24 +4,21 @@
 
   <body>
     <!-- Begin actual content -->
-    <div id = "landing-container">
+    <div id="landing-container">
       {{partial "landing/darkmode.html" .}}
-      <div id = "landing-overlay" class="lt-flex-col lt-content-column">
-        <div class="lt-flex-66">
-          {{partial "landing/spin-text.html" .}}
-        </div>
-        <div id="intro-arrow" class="lt-flex-33">
-          {{partial "landing/arrow.html" .}}
+      <div id = "landing-overlay" class="lt-content-column">
+        <div>
+          {{partial "landing/landing.html" .}}
         </div>
       </div>
       <canvas id="canvas"></canvas>
     </div>
 
     <!-- Personal Bio -->
-    <div class="lt-content-column" id="bio_container" >
+    <div class="lt-content-column" id="about">
       <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-        <h2>
-          <span class="hover">about.</span>
+        <h2 class="side-header-container">
+          <span class="hover side-header">About</span>
         </h2>
         <div class="lt-flex-row">
           {{partial "bio/bio.html" .}}
@@ -31,8 +28,8 @@
 
     <!-- Work Experience Section -->
     <div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2>
-        <span class="hover">experience.</span>
+      <h2 class="side-header-container">
+        <span class="hover side-header">Prev</span>
       </h2>
       <div id="expcards">
         {{partial "jobs/jobs.html" .}}
@@ -41,8 +38,8 @@
 
     <!-- Project Section -->
     <div id="projects" class="lt-content-column" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2>
-        <span class="hover">projects.</span>
+      <h2 class="side-header-container">
+        <span class="hover side-header">Projects</span>
       </h2>
       {{partial "projects/projects.html" .}}
     </div>
@@ -53,11 +50,14 @@
     </div>
   <!-- Load JS stuff -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  {{- with resources.Get "script.js" | minify -}}
-  <script>
-    {{.Content | safeJS}}
-  </script>
-  {{- end -}}
+  {{ $css := slice "script.js" "darkmode.js"}}
+  {{range $css}}
+    {{- with resources.Get . | minify -}}
+    <script>
+      {{.Content | safeJS }}
+    </script>
+    {{- end -}}
+  {{end}}
 
   {{if $.Site.Data.aos.enabled -}}
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

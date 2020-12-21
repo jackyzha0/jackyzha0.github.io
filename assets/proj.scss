@@ -1,0 +1,133 @@
+ul.project_list {
+  padding: 0;
+}
+
+.accordion {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+
+  & .accordion-arrow {
+    float:right;
+    height: 7px;
+    min-width: 7px;
+    margin-right: 1rem;
+    margin-left: auto;
+    vertical-align: middle;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--dark);
+    transform: rotate(45deg) translateY(0.25em);
+    transition: transform .2s ease-in-out;
+  }
+
+  & .accordion_body.is-active .accordion-arrow {
+    transform: rotateX(180deg) rotateZ(45deg) translateY(-3.5px) translateX(-7px);
+  }
+  
+  & .accordion_body {
+    width: 100%;
+    padding: 1.3em 0.5em;
+
+    @media all and (max-width: 450px) {
+      padding: 0.8em !important;
+    }
+
+    & > .accordion-panel {
+      display: none;
+
+      & ul.lt-hl {
+        margin: 0;
+      }
+    }
+
+    // project related 
+    & > .proj_desc{
+
+      // pad arrow left
+      & > .accordion-arrow {
+        margin-left: 0.5em;
+      }
+
+      & > a {
+        font-family: "Roboto Mono";
+        font-weight: 700;
+        font-size: 0.9em;
+        color: var(--navy);
+        padding-right: 1em;
+
+        @media all and (max-width: 450px) {
+          padding-right: 0.5em !important;
+          font-size: 0.7em !important;
+
+          transform: translateY(0.15em);
+        }
+      }
+
+      & > .project-title {
+        white-space: nowrap;
+        font-family: "Source Sans Pro";
+        font-weight: 600;
+        padding-right: 0.3em;
+      }
+
+      & > .short-desc {
+        width: auto !important;
+        white-space: nowrap;
+        margin: 0;
+      }
+
+      & > .spacer {
+        flex: 25%;
+      }
+    }
+
+    // job related
+    & > .job-info {
+
+      & > .company-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        margin-right: 1em;
+
+        @media all and (max-width: 450px) {
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+
+      & > .accordion-arrow {
+        margin-top: 1em;
+
+        @media all and (max-width: 450px) {
+          margin-top: 0.5em;
+        }
+      }
+
+      & h2 {
+        font-weight: 600;
+        font-size: 1.2em;
+        font-family: "Source Sans Pro";
+        margin: 0;
+
+        @media all and (max-width: 450px) {
+          font-size: 1em;
+          transform: translateY(0.2em);
+        }
+      }
+
+      & p {
+        font-weight: 400;
+        color: var(--gray);
+        font-size: 0.9em;
+        font-family: "Roboto Mono";
+        margin: 0;
+
+        @media all and (max-width: 450px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

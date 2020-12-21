@@ -1,14 +1,13 @@
 name: Jacky Zhao
-jobSearching: true
+description: Welcome to my little corner of the internet! I'm Jacky, a curious software developer interested in infrastructure, ml, cognitive systems, and ethical tech — anything that can make technology work better for everyone.
+page_title: jacky zhao | a curious software developer interested in infrastructure, ml, cognitive systems, and accessible tech
 github: https://github.com/jackyzha0/
+api_url: https://api.github.com/users/jackyzha0
 descriptors:
-  - jacky.
+  - Jacky.
   - a student.
   - a software dev.
   - an avid reader.
-at: 
-  school: ubc cs '23
-  job: logistics @nwplus, prev @hootsuite
 resume:
   res/2020-jackyzhao-resume.pdf
 email:

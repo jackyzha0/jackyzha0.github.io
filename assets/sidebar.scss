@@ -1,0 +1,39 @@
+/* Bio CSS */
+.lt-content-column:hover {
+    & h2 .hover {
+        opacity: 1.0;
+    }
+
+    & h2 .hover::after {
+        height: 100%;
+    }
+
+    & .side-header::before {
+        height: 180px;
+    }
+}
+
+.side-header-container {
+    margin-top: 2em;
+}
+
+.side-header {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotateZ(180deg) translateX(2em);
+    position: absolute;
+    opacity: 0.3;
+    font-size: 0.8em;
+    transition: all 2s cubic-bezier(.25, .8, .25, 1);
+
+    &::before {
+        position: absolute;
+        height: 0px;
+        transform: translateX(-0.7em);
+        border-right: 3px solid var(--gray);
+        transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
+        transition-delay: 0.3s;
+        content: '';
+        bottom: calc(100% + 0.5em);
+    }
+}

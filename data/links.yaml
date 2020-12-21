@@ -1,10 +1,20 @@
+intro:
+- link_name: about
+  link: '#about'
+- link_name: prev
+  link: '#experience'
+- link_name: projects
+  link: '#projects'
+- link_name: blog
+  link: https://blog.jzhao.xyz
+footer:
+- link_name: source
+  link: https://github.com/jackyzha0/jackyzha0.github.io
+- link_name: blog
+  link: https://blog.jzhao.xyz
+- link_name: not-work
+  link: /notwork
 - link_name: twitter
   link: https://twitter.com/_jzhao
 - link_name: email
   link: mailto:j.zhao2k19@gmail.com
-- link_name: github
-  link: https://github.com/jackyzha0/
-- link_name: blog
-  link: https://blog.jzhao.xyz
-- link_name: linkedin
-  link: https://www.linkedin.com/in/jackyzhao2019/

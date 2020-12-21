@@ -1,0 +1,17 @@
+<div id="main-landing">
+  <h1 class="mobile-hide">Hi!</h1>
+  <h1 class="mobile-only">Hi! I’m</h1>
+  <div class="rotating-text">
+    <h1 class="mobile-hide">I’m </h1>
+    <h1>
+      {{- range $index, $desc := $.Site.Data.me.descriptors -}}
+        <span class="word col{{add (mod $index 4) 1}}">{{$desc}}</span>
+      {{- end -}}
+    </h1>
+  </div>
+  <ul id="sub-nav">
+    {{- range $index, $desc := $.Site.Data.links.intro -}}
+    <li><a href="{{.link}}">/{{.link_name}}</a></li>
+    {{- end -}}
+  </ul>
+</div>
