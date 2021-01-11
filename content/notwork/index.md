@@ -1,3 +1,5 @@
+## Not work
+
 Contrary to popular belief, I actually have other things I do outside of writing questionable code and school! Here are some things that I'm up to nowadays:
 ### Reading
 There's nothing like cozying up with a cup of hot barley tea on a rainy day with a great book. I've recently rediscovered the joy of reading thanks to someone very close to me.
@@ -8,11 +10,9 @@ Currently Reading
 Some of my past favourites
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
 * **A Beautifully Foolish Endeavor** by Hank Green
-* **Sapiens** by Yuval Noah Harari
-* **Measure What Matters** by John Doerr
 * **The Uninhabitable Earth** by David Wallace-Wells
 
-I'm always happy to add to my ever-growing list of books to read or to chat about any cool reads you've come across!
+[Full Booklist](/books). I'm always happy to add to my ever-growing list of books to read or to chat about any cool reads you've come across!
 
 ### Writing
 Recently, I've made a conscious effort to start writing more in order to help myself organize my thoughts. You can find a collection of my half-baked thoughts over on [my blog](https://blog.jzhao.xyz/) where I plan to write more about some of my thoughts on tech, personal projects, and general musings about the world.

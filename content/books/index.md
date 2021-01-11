@@ -1,0 +1,14 @@
+## Booklist
+A (mostly) up-to-date archive on some books I've been reading.
+
+## 2021
+* **The Art of Thinking Clearly** by Rolf Dobelli
+* **21 Lessons for the 21st Century** by Yuval Noah Harari
+
+## 2020
+* **Sapiens** by Yuval Noah Harari
+* **Measure What Matters** by John Doerr
+* **A Beautifully Foolish Endeavor** by Hank Green
+* **The Uninhabitable Earth** by David Wallace-Wells
+* **The Subtle Art of Not Giving a F*ck** by Mark Manson
+* **The Death of Ivan Ilyich** by Tolstoy
