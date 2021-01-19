@@ -1,3 +1,33 @@
+- name: Legist
+  expand: false
+  short_desc: a platform to summarize policy for democracy
+  links:
+    - link_name: devpost
+      link: https://devpost.com/software/legist
+    - link_name: github
+      link: https://github.com/htn2020plusplus
+  desc:
+    Legist is a web platform that allows users to digest policies in an efficient and accessible manner. Legist allows users view automagically summarize pieces of policy + legislation while still maintaining the key takeaways, view and filter policies by category, and subscribe to periodic rollups on updates. Frontend was built with React + Typescript + Chakra UI. Text summarization was done using DistilBART, Named-entity recognition with BERT, and zero-shot text categorization using BART. Built at Hack the North 2020++, winning the Founder Institute Fellowship Prize and finalist among over 3000+ participants
+  techlist:
+    - React
+    - Firebase
+    - GraphQL
+    - CockroachDB
+    - Node.js
+    - Flask
+    - Docker
+    - MailGun
+    - HuggingFace
+  lang_ratios:
+    - name: TypeScript
+      percent: 40
+    - name: Python
+      percent: 35
+    - name: JavaScript
+      percent: 20
+    - name: Dockerfile
+      percent: 5
+
 - name: ctrl-v
   expand: false
   short_desc: a modern, open-source pastebin
@@ -34,7 +64,7 @@
     - link_name: github
       link: https://github.com/jackyzha0/reflect-chrome
   desc:
-    reflect is a browser extension focused around asking users to reflect before visiting distracting sites, helping to
+    reflect is a browser extension with 800+ active users focused around asking users to reflect before visiting distracting sites, helping to
     reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged 
     user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network 
     in Keras on the closed-beta data and augmented it using NLP data augmentation techniques, reaching ~86% classification accuracy.

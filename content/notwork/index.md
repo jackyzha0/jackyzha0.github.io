@@ -5,7 +5,7 @@ Contrary to popular belief, I actually have other things I do outside of writing
 There's nothing like cozying up with a cup of hot barley tea on a rainy day with a great book. I've recently rediscovered the joy of reading thanks to someone very close to me.
 
 Currently Reading
-* **The Art of Thinking Clearly** by Rolf Dobelli
+* **Kafka on the Shore** by Haruki Murakami
 
 Some of my past favourites
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
