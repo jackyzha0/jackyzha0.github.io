@@ -1,7 +1,7 @@
 name: Jacky Zhao
 description: Welcome to my little corner of the internet! I'm Jacky, a curious software developer interested in infrastructure, ml, cognitive systems, and ethical tech — anything that can make technology work better for everyone.
 page_title: jacky zhao | a curious software developer interested in infrastructure, ml, cognitive systems, and ethical tech
-github: https://github.com/jackyzha0/
+github: jackyzha0
 api_url: https://api.github.com/users/jackyzha0
 descriptors:
   - Jacky.
@@ -10,5 +10,7 @@ descriptors:
   - an avid reader.
 resume:
   res/2020-jackyzhao-resume.pdf
+failure_resume:
+  https://blog.jzhao.xyz/posts/a-failure-resume/
 email:
   j.zhao2k19@gmail.com

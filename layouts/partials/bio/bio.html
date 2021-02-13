@@ -4,19 +4,19 @@
     {{$.Site.Data.me.description}} Currently, I'm based in {{$gh.location}} and studying Computer Science @ubc. I also help to organize <a href="https://hackcamp.nwplus.io/">HackCamp</a> as a part of <a href="https://www.nwplus.io/">@nwplus</a>.
   </p>
   <p>
-    In my spare time, you can find me faffing around on the climbing wall, dabbling with watercolour, or reading in a park somewhere! Read more about my <a href="/notwork">non-work-endeavours here</a>.
+    In my spare time, you can find me faffing around on the climbing wall, dabbling with watercolour, or reading in a park somewhere! Read more about my <a href="/notwork">non-work-endeavours</a> or my <a href="{{$.Site.Data.me.failure_resume}}">failure resume</a>.
   </p>
   <p>
     Feel free to download my <a target="_blank" rel="noreferrer" href="{{$.Site.Data.me.resume}}">resume</a>, 
-    poke around <a target="_blank" rel="noreferrer" href="https://github.com/jackyzha0">my GitHub</a>, or
+    poke around <a target="_blank" rel="noreferrer" href="https://github.com/{{$.Site.Data.me.github}}">my GitHub</a>, or
     contact me for a chat at <a target="_blank" rel="noreferrer"
-      href="mailto:j.zhao2k19@gmail.com">j.zhao2k19@gmail.com</a>. I'm always happy to meet new people!
+      href="mailto:{{$.Site.Data.me.email}}">{{$.Site.Data.me.email}}</a>. I'm always happy to meet new people!
   </p>
-  <img class="gh-chart" src="https://ghchart.rshah.org/jackyzha0" alt="jackyzha0's Github chart" />
+  <img class="gh-chart" src="https://ghchart.rshah.org/{{$.Site.Data.me.github}}" alt="{{$.Site.Data.me.github}}'s Github chart" />
 </div>
 <div class="lt-flex-50 img-container">
   <div class="deco" loading=lazy></div>
-  <img class="lt-shadow me" src="res/me.jpg" alt="Jacky Zhao" loading=lazy />
+  <img class="lt-shadow me" src="res/me.jpg" alt="{{$.Site.Data.me.name}}" loading=lazy />
   {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location "bio" $gh.bio) | jsonify (dict "prefix" " " "indent" " ") }}
   <div class="lt-shadow highlight-container">
     {{highlight $jsonContent "json" ""}}
