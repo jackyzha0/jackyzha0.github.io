@@ -2,6 +2,8 @@
 A (mostly) up-to-date archive on some books I've been reading.
 
 ## 2021
+* **When Breath Becomes Air** by Paul Kalanithi
+* **Kafka on the Shore** by Haruki Murakami
 * **The Art of Thinking Clearly** by Rolf Dobelli
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
 

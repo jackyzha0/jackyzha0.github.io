@@ -6,6 +6,7 @@ There's nothing like cozying up with a cup of hot barley tea on a rainy day with
 
 Currently Reading
 * **Kafka on the Shore** by Haruki Murakami
+* **When Breath Becomes Air** by Paul Kalanithi
 
 Some of my past favourites
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
