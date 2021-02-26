@@ -7,7 +7,7 @@
     - link_name: github
       link: https://github.com/htn2020plusplus
   desc:
-    Legist is a web platform that allows users to digest policies in an efficient and accessible manner. Legist allows users view automagically summarize pieces of policy + legislation while still maintaining the key takeaways, view and filter policies by category, and subscribe to periodic rollups on updates. Frontend was built with React + Typescript + Chakra UI. Text summarization was done using DistilBART, Named-entity recognition with BERT, and zero-shot text categorization using BART. Built at Hack the North 2020++, winning the Founder Institute Fellowship Prize and finalist among over 3000+ participants
+    Legist is a web platform that allows users to digest policies in an efficient and accessible manner. Legist allows users view automagically summarize pieces of policy + legislation while still maintaining the key takeaways, view and filter policies by category, and subscribe to periodic rollups on updates. Frontend was built with React + Typescript + Chakra UI. Text summarization was done using DistilBART, Named-entity recognition with BERT, and zero-shot text categorization using BART. All models were served with BentoML. Built at Hack the North 2020++, winning the Founder Institute Fellowship Prize and finalist among over 3000+ participants
   techlist:
     - React
     - Firebase
@@ -17,6 +17,7 @@
     - Flask
     - Docker
     - MailGun
+    - BentoML
     - HuggingFace
   lang_ratios:
     - name: TypeScript

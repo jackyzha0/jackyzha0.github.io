@@ -258,12 +258,16 @@ ul.lt-hl {
   margin-bottom: 1em;
 }
 
-#contact_buttons a {
-  font-family: "Roboto Mono";
-  font-weight: 700;
-  font-size: 1em;
-  color: var(--navy);
-  padding: 0 0.5em 3em 0.5em;
+#contact_buttons {
+  margin-top: 4em;
+
+  & > a {
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--navy);
+    padding: 0 0.5em 3em 0.5em;
+  }
 }
 
 .img-container {
