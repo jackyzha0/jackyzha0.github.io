@@ -4,14 +4,11 @@ Contrary to popular belief, I actually have other things I do outside of writing
 ### Reading
 There's nothing like cozying up with a cup of hot barley tea on a rainy day with a great book. I've recently rediscovered the joy of reading thanks to someone very close to me.
 
-Currently Reading
-* **Kafka on the Shore** by Haruki Murakami
-* **When Breath Becomes Air** by Paul Kalanithi
-
 Some of my past favourites
+* **When Breath Becomes Air** by Paul Kalanithi
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
 * **A Beautifully Foolish Endeavor** by Hank Green
-* **The Uninhabitable Earth** by David Wallace-Wells
+* **Working in Public: The Making and Maintenance of Open Source Software** by Nadia Eghbal
 
 [Full Booklist](/books). I'm always happy to add to my ever-growing list of books to read or to chat about any cool reads you've come across!
 

@@ -2,6 +2,9 @@
 A (mostly) up-to-date archive on some books I've been reading.
 
 ## 2021
+* **1984** by George Orwell
+* **On Earth We're Briefly Gorgeous** by Ocean Vuong
+* **Working in Public: The Making and Maintenance of Open Source Software** by Nadia Eghbal
 * **When Breath Becomes Air** by Paul Kalanithi
 * **Kafka on the Shore** by Haruki Murakami
 * **The Art of Thinking Clearly** by Rolf Dobelli
