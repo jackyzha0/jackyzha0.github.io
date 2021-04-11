@@ -38,10 +38,11 @@
     - link_name: github
       link: https://github.com/jackyzha0/ctrl-v
   desc:
-    ctrl-v is a modern, open-source pastebin with LaTeX and Markdown rendering support. Any user can create a paste without an account, with the ability to protect it with a password and set an expiry date. Additionally, ctrl-v does code highlighting as well as LaTeX and Markdown rendering. Pastes are stored in a MongoDB Atlas instance. Backend is a containerized Go service deployed on Google Cloud Run. Frontend is a React app deployed via Firebase Hosting.
+    ctrl-v is a modern, open-source pastebin with LaTeX and Markdown rendering support. Any user can create a paste without an account, with the ability to protect it with a password and set an expiry date. Additionally, ctrl-v does code highlighting as well as LaTeX and Markdown rendering. Pastes are stored in a MongoDB Atlas instance. Backend is a containerized Go service deployed on Google Cloud Run. Frontend is a SSR Next.js app hosted on Vercel.
   techlist:
     - React
-    - Firebase
+    - Next.js
+    - Vercel
     - styled-components
     - MongoDB
     - Cloud Run
