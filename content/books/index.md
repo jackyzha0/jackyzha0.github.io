@@ -1,6 +1,10 @@
 ## Booklist
 A (mostly) up-to-date archive on some books I've been reading.
 
+## Current
+* **Finite and Infinite Games** by James P. Carse
+* **Mindstorms** by Seymour A. Papert
+
 ## 2021
 * **1984** by George Orwell
 * **On Earth We're Briefly Gorgeous** by Ocean Vuong
