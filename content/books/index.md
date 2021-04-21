@@ -1,12 +1,12 @@
 ## Booklist
 A (mostly) up-to-date archive on some books I've been reading.
 
-### Current
+## Current
 * **Design Justice** by Sasha Costanza-Chock
 * **Finite and Infinite Games** by James P. Carse
 * **Mindstorms** by Seymour A. Papert
 
-### 2021
+## 2021
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
 * **1984** by George Orwell
 * **On Earth We're Briefly Gorgeous** by Ocean Vuong
@@ -16,7 +16,7 @@ A (mostly) up-to-date archive on some books I've been reading.
 * **The Art of Thinking Clearly** by Rolf Dobelli
 * **21 Lessons for the 21st Century** by Yuval Noah Harari
 
-### 2020
+## 2020
 * **Sapiens** by Yuval Noah Harari
 * **Measure What Matters** by John Doerr
 * **A Beautifully Foolish Endeavor** by Hank Green
