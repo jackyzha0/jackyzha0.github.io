@@ -1,7 +1,7 @@
 <div class="lt-flex-50" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   {{ $gh := getJSON $.Site.Data.me.api_url }}
   <p>
-    {{$.Site.Data.me.description}} Currently, I'm based in {{$gh.location}} and studying Computer Science @ubc. I also help to organize <a href="https://hackcamp.nwplus.io/">HackCamp</a> as a part of <a href="https://www.nwplus.io/">@nwplus</a>.
+    {{$.Site.Data.me.description}} Currently, I'm based in {{$gh.location}} and studying Computer Science @ubc. I also help organize hackathons as a part of <a href="https://www.nwplus.io/">@nwplus</a>.
   </p>
   <p>
     In my spare time, you can find me faffing around on the climbing wall, dabbling with watercolour, or reading in a park somewhere! Read more about my <a href="/notwork">non-work-endeavours</a> or my <a href="{{$.Site.Data.me.failure_resume}}">failure resume</a>.

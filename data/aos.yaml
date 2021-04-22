@@ -4,3 +4,4 @@ settings:
   - data-aos-duration="800"
   - data-aos-easing="custom"
   - data-aos-offset="200"
+  - data-aos-once="true"

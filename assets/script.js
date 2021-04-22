@@ -1,10 +1,12 @@
-// Partices
+const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+// Particles
 function random(low, high) {
   return Math.random() * (high - low) + low
 }
 
 class Visual {
-  constructor(particles, yVariance, maxParticleRadius) {
+  constructor(particles, yVariance, maxParticleRadius, noMotion) {
     this.canvas = document.querySelector('#canvas')
     this.context = this.canvas.getContext('2d')
     this.canvasWidth = 0
@@ -15,7 +17,10 @@ class Visual {
     this.particleMaxRadius = maxParticleRadius
     this.handleResizeBind = this.resize.bind(this)
     this.initialize()
-    this.render()
+
+    if (!noMotion) {
+      this.render()
+    }
   }
 
   // Initialize particles
@@ -94,6 +99,10 @@ class Visual {
   }
 
   drawParticles() {
+    this.context.clearRect(0, 0, this.canvasWidth + this.particleMaxRadius * 2, this.canvasHeight)
+    var style = getComputedStyle(document.body)
+    this.context.fillStyle = style.getPropertyValue('--light')
+    this.context.fillRect(0, 0, canvas.width, canvas.height)
     this.particles.forEach(particle => {
       this.moveParticle(particle)
       this.context.beginPath()
@@ -109,10 +118,6 @@ class Visual {
   }
 
   render() {
-    this.context.clearRect(0, 0, this.canvasWidth + this.particleMaxRadius * 2, this.canvasHeight)
-    var style = getComputedStyle(document.body)
-    this.context.fillStyle = style.getPropertyValue('--light')
-    this.context.fillRect(0, 0, canvas.width, canvas.height)
     this.drawParticles()
 
     // kill offscreen particles and re-render
@@ -125,8 +130,6 @@ class Visual {
     requestAnimationFrame(this.render.bind(this))
   }
 }
-
-new Visual(150, 150, 8)
 
 // Rotating Text
 const words = document.querySelectorAll(".word")
@@ -144,7 +147,6 @@ words.forEach(word => {
     word.append(span)
   })
 })
-
 
 var currentWordIndex = 0
 var maxWordIndex = words.length
@@ -175,7 +177,12 @@ const init = () => {
   rotateText()
   setInterval(rotateText, 3000)
 }
-setTimeout(init, 2000)
+
+
+if (!isReducedMotion) {
+  new Visual(150, 150, 8, isReducedMotion)
+  setTimeout(init, 2000)
+}
 
 
 // Project Accordion

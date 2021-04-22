@@ -1,15 +1,17 @@
 /* Bio CSS */
 .lt-content-column:hover {
-    & h2 .hover {
-        opacity: 1.0;
-    }
+    @media (prefers-reduced-motion: no-preference) {
+        & h2 .hover {
+            opacity: 1.0;
+        }
 
-    & h2 .hover::after {
-        width: 100%;
-    }
+        & h2 .hover::after {
+            width: 100%;
+        }
 
-    & .side-header::before {
-        width: 180px;
+        & .side-header::before {
+            width: 180px;
+        }
     }
 }
 

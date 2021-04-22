@@ -1,19 +1,7 @@
 <head>
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link crossorigin rel="preconnect" href="https://www.google-analytics.com">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-148413215-1');
-  </script>
+  {{ template "_internal/google_analytics_async.html" . }}
 
   <!-- Meta tags -->
   <meta charset="UTF-8">
@@ -37,6 +25,16 @@
   <meta name="twitter:title" content="{{$.Site.Data.me.page_title}}">
   <meta name="twitter:description" content="{{$.Site.Data.me.description}}" />
   <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+  <!-- Fix AOS for nonJS -->
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   {{ $css := slice "style.scss" "sidebar.scss" "lite.scss" "smaller-screens.scss" "langbars.scss" "proj.scss" "mobile.scss" "darkmode.scss"}}

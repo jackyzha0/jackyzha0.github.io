@@ -1,6 +1,7 @@
 baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
 title = "Jacky Zhao | Personal Website"
+googleAnalytics = "UA-148413215-1"
 
 [markup]
   [markup.highlight]
