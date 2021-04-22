@@ -26,12 +26,20 @@
   <meta name="twitter:description" content="{{$.Site.Data.me.description}}" />
   <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
 
-  <!-- Fix AOS for nonJS -->
+  <!-- nonJS -->
   <noscript>
     <style type="text/css">
       [data-aos] {
         opacity: 1 !important;
         transform: translate(0) scale(1) !important;
+      }
+
+      h1 > span.word.col1 {
+        opacity: 1;
+      }
+
+      .accordion-panel {
+        display: block !important;
       }
     </style>
   </noscript>

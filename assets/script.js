@@ -187,7 +187,11 @@ if (!isReducedMotion) {
 
 // Project Accordion
 $(".accordion > .accordion-item .accordion_body.is-active").children(".accordion-panel").slideDown()
-
 $(".accordion > .accordion-item > .accordion_body").click(function() {
   $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")
+})
+$(".accordion > .accordion-item > .accordion_body").keydown(function(e) {
+  if (e.keyCode === 13) {
+    $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("swing")
+  }
 })

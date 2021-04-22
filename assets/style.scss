@@ -17,12 +17,12 @@
 }
 
 [saved-theme="dark"] {
-  --light: #1c1b22 !important;
+  --light: #1e1e21 !important;
   --dark: #fbfffe !important;
   --navy: #75a1bf !important;
   --olive: #84a59d !important;
   --salmon: #f58382 !important;
-  --gray: #c4c4c4 !important;
+  --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
 
@@ -92,10 +92,10 @@ p, ul {
   text-decoration: none;
   opacity: 0.6;
   z-index: 1;
-  transition: 300ms;
+  transition: 200ms;
 
   &::after {
-    transition: 300ms;
+    transition: 200ms;
     height: 18px;
     content: "";
     position: absolute;

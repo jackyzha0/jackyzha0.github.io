@@ -1,7 +1,7 @@
 {{- range $.Site.Data.jobs -}}
 <div class="accordion" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   <div class="lt-shadow lt-card lt-flex-row accordion-item">
-    <div class="accordion_body {{if .expand}}is-active{{end}}">
+    <div tabindex="0" class="accordion_body {{if .expand}}is-active{{end}}">
       <div class="lt-flex-row job-info">
         <img class="company-logo" src="res/{{.img}}" title="{{.name}}">
         <div>
