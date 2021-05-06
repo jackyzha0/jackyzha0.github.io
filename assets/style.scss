@@ -44,20 +44,20 @@ body {
 
 // typography
 h1 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Inter';
   font-size: 4em;
   color: var(--dark);
   margin-bottom: 0;
 }
 
 h2 {
-  font-family: 'Source Sans Pro';
+  font-family: 'Inter';
   font-size: 3em;
   color: var(--dark)
 }
 
 h3 {
-  font-family: "Roboto Mono";
+  font-family: "Inter";
   margin: 0;
   font-size: 1em;
   color: var(--dark)
@@ -69,7 +69,7 @@ a {
 }
 
 ul {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-top: 0em;
   padding-left: 1.5em;
 }
@@ -173,7 +173,7 @@ p, ul {
 
   & > li {
     display: inline-block;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Inter', monospace;
     font-size: 1em;
     padding-top: 0.5em;
     font-weight: normal;
@@ -250,7 +250,7 @@ p, ul {
   display: block;
   margin-left: 1.5em;
   font-weight: 700;
-  font-family: "Roboto Mono";
+  font-family: "Inter";
 }
 
 ul.lt-hl {
@@ -262,7 +262,7 @@ ul.lt-hl {
   margin-top: 4em;
 
   & > a {
-    font-family: "Roboto Mono";
+    font-family: "Inter";
     font-weight: 700;
     font-size: 1em;
     color: var(--navy);
@@ -300,8 +300,8 @@ ul.lt-hl {
     z-index: 3;
     width: 300px;
     height: 200px;
-    top: -50px;
-    left: 180px;
+    top: -60px;
+    left: 210px;
 
     @media all and (max-width: 450px) {
       width: 210px;
@@ -314,7 +314,7 @@ ul.lt-hl {
     z-index: 5;
     position: absolute;
     top: 210px;
-    left: 50px;
+    left: 30px;
 
     @media all and (max-width: 450px) {
       left: 0px;
@@ -332,7 +332,7 @@ ul.lt-hl {
     }
     
     & code {
-      font-family: Roboto Mono;
+      font-family: Fira Code;
       font-size: 0.8em;
     }
   }

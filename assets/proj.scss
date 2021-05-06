@@ -50,7 +50,7 @@ ul.project_list {
       }
 
       & > a {
-        font-family: "Roboto Mono";
+        font-family: "Inter";
         font-weight: 700;
         font-size: 0.9em;
         color: var(--navy);
@@ -66,13 +66,15 @@ ul.project_list {
 
       & > .project-title {
         white-space: nowrap;
-        font-family: "Source Sans Pro";
+        font-family: "Inter";
         font-weight: 600;
         padding-right: 0.3em;
       }
 
       & > .short-desc {
         width: auto !important;
+        font-family: "Source Sans Pro";
+        font-size: 1em;
         white-space: nowrap;
         margin: 0;
       }
@@ -108,7 +110,7 @@ ul.project_list {
       & h2 {
         font-weight: 600;
         font-size: 1.2em;
-        font-family: "Source Sans Pro";
+        font-family: "Inter";
         margin: 0;
 
         @media all and (max-width: 450px) {
@@ -121,7 +123,7 @@ ul.project_list {
         font-weight: 400;
         color: var(--gray);
         font-size: 0.9em;
-        font-family: "Roboto Mono";
+        font-family: "Inter";
         margin: 0;
 
         @media all and (max-width: 450px) {
