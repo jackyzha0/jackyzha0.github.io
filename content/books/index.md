@@ -3,8 +3,12 @@ A (mostly) up-to-date archive on some books I've been reading.
 
 ## Current
 * **Design Justice** by Sasha Costanza-Chock
-* **Finite and Infinite Games** by James P. Carse
 * **Mindstorms** by Seymour A. Papert
+
+## To Read
+* **Seeing Like A State** by James C. Scott
+* **The Utopia of Rules** by David Graeber
+* **Finite and Infinite Games** by James P. Carse
 
 ## 2021
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
