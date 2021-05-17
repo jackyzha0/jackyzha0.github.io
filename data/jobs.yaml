@@ -1,10 +1,14 @@
-- name: MLH Fellowship
+- name: BentoML
   expand: false
-  title: Fellows Class 0
-  img: mlh.png
-  year: 2020
-  things:
-    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Worked on BentoML, an open-source framework for high-performance ML model serving. Reduced docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.
+  title: Open Source Contributor & MLH Fellows Class 0
+  img: bento.png
+  year: 2020/21
+  things: >
+    Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants.
+    Implemented CLI command to containerize BentoML machine learning models, reducing dependence on external tool workflows.
+    Proposed, implemented, and tested a distributed application-level locking module to allow multiple concurrent operations on models.
+    Reduced docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server.
+    Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.
   techlist:
     - Pytest
     - Docker
@@ -21,7 +25,7 @@
   expand: false
   title: HackCamp Logistics Director
   img: nwplus.png
-  year: 2020
+  year: 2020/21
   things:
     Lead a team of 4 in hosting HackCamp, a beginner-focused virtual hackathon, attracting over 900+ registrations, 500+ attendees, 3.2k+ livestream viewers, and $1200 in donations to charities. Co-lead the creation of a publicly available self-learning resources guidebook for tech beginners. Co-lead the development of our hackathon portal which aims to be a central information hub for hackers to do judging, relay announcements, and view the schedule Handled 200k+ interactions on the site during HackCamp.
   techlist:
