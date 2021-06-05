@@ -1,10 +1,17 @@
 <div class="lt-flex-50" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   {{ $gh := getJSON $.Site.Data.me.api_url }}
-  {{.Content}}
   <div class="lt-shadow highlight-container">
-    {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location "bio" $gh.bio) | jsonify (dict "prefix" " " "indent" " ") }}
+    {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location) | jsonify (dict "prefix" " " "indent" " ") }}
     {{highlight $jsonContent "json" ""}}
   </div>
+  {{.Content}}
+  <h2>Links</h2>
+  <p>
+    Feel free to download my <a target="_blank" rel="noreferrer" href="{{$.Site.Data.me.resume}}">resume</a>,
+    poke around <a target="_blank" rel="noreferrer" href="https://github.com/{{$.Site.Data.me.github}}">my GitHub</a>, or
+    shoot me a DM <a target="_blank" rel="noreferrer"
+                       href="https://twitter.com/{{$.Site.Data.me.twitter}}">on Twitter</a>!
+  </p>
 </div>
 <div class="lt-flex-50 detail-container">
   <h2>Recent writing</h2>

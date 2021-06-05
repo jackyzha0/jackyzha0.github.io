@@ -189,26 +189,26 @@ ul.lt-hl {
   margin-bottom: 1em;
 }
 
+#bio .lt-flex-50 > h2 {
+  font-size: 1.25em;
+  margin: 0;
+}
+
 .highlight-container {
   overflow-x: visible;
 
   & > .highlight {
-    margin: 2em 0;
+    margin-bottom: 2em;
   }
 }
 
 .detail-container {
-  margin-left: 3em;
+  padding-left: 3em;
   flex: 0 0 calc(50% - 3em) !important;
   position: relative;
 
   @media all and (max-width: 1440px) {
     margin-left: 0 !important;
-  }
-
-  & > h2 {
-    font-size: 1.25em;
-    margin: 0;
   }
 
   & > ul {

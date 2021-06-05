@@ -1,5 +1,8 @@
-Hi, I'm Jacky and welcome to my little corner of the internet! I'm interested in infrastructure (both community and software), cognitive systems, and ethical tech. Currently, I'm based in Vancouver, Canada and studying Computer Science @ubc. I also help organize hackathons as a part of @nwplus.
+Hi, I'm Jacky and welcome to my little corner of the internet! Currently, I'm based in Vancouver, Canada and study Computer Science at UBC. Read more about my [non-work endeavours](/notwork) or my [failure resume](/posts/a-failure-resume).
 
-In my spare time, you can find me faffing around on the climbing wall, writing half-baked thoughts on my blog, or reading in a park somewhere! Read more about my non-work-endeavours or my failure resume.
+## Direction
+I'm still trying to figure out what I really want to do with my life but 3 things that are fascinating to me right now are **cognitive systems, ethical tech, and infrastructure**. I spend a lot of time thinking about how to improve hackathon culture as a part of [nwPlus](https://www.nwplus.io/) and how to use technology ethically to make our world better with [Reboot](https://twitter.com/reboot_hq/) and [Interact](https://twitter.com/joininteract).
 
-Feel free to download my resume, poke around my GitHub, or reach out to me on Twitter!
+I'm working towards being a person who is [unabashedly excited about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun) and enables others to be the best versions of themselves.
+
+If anything in here piques your interest, or if you just have a cool thought or link to share, let's find a time to chat! It's a magical world out there, it'd be a shame to explore it alone.
