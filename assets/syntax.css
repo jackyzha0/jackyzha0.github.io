@@ -81,6 +81,10 @@
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w {  }
 
+.lntd:first-of-type > .chroma {
+    padding-right: 0;
+}
+
 .chroma code {
     font-family: 'Fira Code' !important;
     font-size: 0.85em;

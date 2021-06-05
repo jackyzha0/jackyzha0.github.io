@@ -189,70 +189,36 @@ ul.lt-hl {
   margin-bottom: 1em;
 }
 
-.img-container {
-  position: relative;
-  margin-top: 2em;
+.highlight-container {
+  overflow-x: visible;
+
+  & > .highlight {
+    margin: 2em 0;
+  }
+}
+
+.detail-container {
   margin-left: 3em;
-  min-height: 256px;
+  flex: 0 0 calc(50% - 3em) !important;
+  position: relative;
 
-  @media all and (max-width: 450px) {
-    margin-left: 0;
+  @media all and (max-width: 1440px) {
+    margin-left: 0 !important;
   }
 
-  & > .me {
-    filter: grayscale(40%);
-    max-height: 256px;
-    max-width: 100%;
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
+  & > h2 {
+    font-size: 1.25em;
+    margin: 0;
   }
 
-  & > .deco {
-    background-color: var(--olive);
-    -webkit-mask: url(res/deco.svg) no-repeat center;
-    mask: url(res/deco.svg) no-repeat center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    position: absolute;
-    z-index: 3;
-    width: 300px;
-    height: 200px;
-    top: -60px;
-    left: 210px;
-
-    @media all and (max-width: 450px) {
-      width: 210px;
-      height: 150px;
-      left: 140px;
-    }
-  }
-
-  & > div > .highlight {
-    z-index: 5;
-    position: absolute;
-    top: 210px;
-    left: 30px;
-
-    @media all and (max-width: 450px) {
-      left: 0px;
-      width: 100%;
-      top: 220px;
-
-      & code {
-        font-size: 0.6em !important;
-      }
-    }
-    
-    & > div {
-      padding: 0.2em 1em;
-      border-radius: 4px;
-    }
-    
-    & code {
-      font-family: Fira Code;
-      font-size: 0.8em;
+  & > ul {
+    list-style: none;
+    font-size: 1em;
+    & > li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

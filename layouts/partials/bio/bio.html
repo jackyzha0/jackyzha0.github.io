@@ -1,24 +1,26 @@
 <div class="lt-flex-50" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
   {{ $gh := getJSON $.Site.Data.me.api_url }}
-  <p>
-    {{$.Site.Data.me.description}} Currently, I'm based in {{$gh.location}} and studying Computer Science @ubc. I also help organize hackathons as a part of <a href="https://www.nwplus.io/">@nwplus</a>.
-  </p>
-  <p>
-    In my spare time, you can find me faffing around on the climbing wall, writing half-baked thoughts on <a href="https://blog.jzhao.xyz">my blog</a>, or reading in a park somewhere! Read more about my <a href="/notwork">non-work-endeavours</a> or my <a href="{{$.Site.Data.me.failure_resume}}">failure resume</a>.
-  </p>
-  <p>
-    Feel free to download my <a target="_blank" rel="noreferrer" href="{{$.Site.Data.me.resume}}">resume</a>, 
-    poke around <a target="_blank" rel="noreferrer" href="https://github.com/{{$.Site.Data.me.github}}">my GitHub</a>, or
-    reach out to me <a target="_blank" rel="noreferrer"
-      href="https://twitter.com/{{$.Site.Data.me.twitter}}">on Twitter</a>!
-  </p>
-  <img class="gh-chart" src="https://ghchart.rshah.org/{{$.Site.Data.me.github}}" alt="{{$.Site.Data.me.github}}'s Github chart" />
-</div>
-<div class="lt-flex-50 img-container">
-  <div class="deco" loading=lazy></div>
-  <img class="lt-shadow me" src="res/me.jpg" alt="{{$.Site.Data.me.name}}" loading=lazy />
-  {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location "bio" $gh.bio) | jsonify (dict "prefix" " " "indent" " ") }}
+  {{.Content}}
   <div class="lt-shadow highlight-container">
+    {{$jsonContent := (dict "name" $gh.name "currently" $gh.company "location" $gh.location "bio" $gh.bio) | jsonify (dict "prefix" " " "indent" " ") }}
     {{highlight $jsonContent "json" ""}}
   </div>
+</div>
+<div class="lt-flex-50 detail-container">
+  <h2>Recent writing</h2>
+  <p>I've started to make a conscious effort to start writing more in order to help myself organize my thoughts. You can find a collection of my half-baked thoughts on my blog where I plan to write more about some of my personal projects and general musings about the world.</p>
+  <ul>
+    {{ range first 5 (where .Site.RegularPages "Section" "==" "posts") }}
+    <li class="singlePost">
+      <div class="desc">
+        <span class="time">{{ .Date.Format .Site.Params.dateFormat }}</span>
+        <p><a class="postLink" href="{{ .Permalink }}?ref=home">
+          {{- .Title -}}
+        </a></p>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  <h2>Newsletter</h2>
+  {{ partial "newsletter/cta.html" . }}
 </div>

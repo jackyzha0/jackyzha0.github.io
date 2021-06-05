@@ -6,7 +6,7 @@ There's nothing like cozying up with a cup of hot barley tea on a rainy day with
 
 Some of my past favourites
 * **When Breath Becomes Air** by Paul Kalanithi
-* **21 Lessons for the 21st Century** by Yuval Noah Harari
+* **Mindstorms** by Seymour A. Papert
 * **A Beautifully Foolish Endeavor** by Hank Green
 * **Working in Public: The Making and Maintenance of Open Source Software** by Nadia Eghbal
 

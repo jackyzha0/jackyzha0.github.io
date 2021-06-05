@@ -5,7 +5,6 @@ pygmentsUseClasses = true
 
 [params]
   headline = "jzhao.xyz"
-  website = "https://jzhao.xyz"
   dateFormat = "2006-01-02"
 [markup]
   [markup.tableOfContents]

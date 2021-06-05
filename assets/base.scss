@@ -105,3 +105,28 @@ footer {
     padding: 0 0.5em 3em 0.5em;
   }
 }
+
+#newsletter {
+  margin: 2em 0;
+
+  & > input {
+    padding: 0.7em 1em;
+    border-radius: 4px;
+  }
+
+  & > input[type="submit"] {
+    border: none;
+    color: var(--light);
+    background-color: var(--navy);
+    cursor: pointer;
+  }
+
+  & > input[type="email"] {
+    background-color: var(--light);
+    border: 1px solid var(--outlinegray);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}

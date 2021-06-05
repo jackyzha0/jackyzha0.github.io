@@ -2,16 +2,12 @@
   counter-reset: section;
   margin-left: 0em;
   padding-left: 1.5em;
-
   & > li {
     counter-increment: section;
-
     & > ol {
       counter-reset: subsection;
-
       & > li {
         counter-increment: subsection;
-
         &::marker {
           content: counter(section) "." counter(subsection) "  ";
         }
@@ -29,7 +25,30 @@
   }
 }
 
-header, .singlePost, #postTitle {
+.singlePost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  & * {
+    margin: 0.1em auto;
+  }
+
+  & > .desc {
+    flex: 1;
+
+    & > * {
+      display: inline-block;
+    }
+    & > .time {
+      font-family: 'Fira Code';
+      font-weight: 400;
+    }
+  }
+}
+
+header, #postTitle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,14 +61,6 @@ nav > a {
 
 #postTitle h1 {
   margin-right: 2em;
-}
-
-.desc {
-  flex: 1;
-}
-
-.desc * {
-  display: inline-block;
 }
 
 footer {
@@ -106,31 +117,6 @@ p>img+em {
 
 sup {
   line-height: 0
-}
-
-#newsletter {
-  margin: 2em 0;
-
-  & > input {
-    padding: 0.7em 1em;
-    border-radius: 4px;
-  }
-
-  & > input[type="submit"] {
-    border: none;
-    color: var(--light);
-    background-color: var(--navy);
-    cursor: pointer;
-  }
-
-  & > input[type="email"] {
-    background-color: var(--light);
-    border: 1px solid var(--outlinegray);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-  }
 }
 
 .morePosts {
