@@ -5,14 +5,12 @@
 {{define "main"}}
 <div id="contentWrapper">
     {{ partial "blog/header.html" . }}
-    <h1>Posts</h1>
+    <h1>Newsletter Issues</h1>
     <ul id="posts">
         {{- range .Pages -}}
         {{ .Render "li"}}
         {{- end -}}
     </ul>
-    <hr/>
-    {{- partial "blog/newsletter.html" . -}}
 
     <!-- Contact Info -->
     <footer>

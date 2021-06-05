@@ -25,6 +25,17 @@
   }
 }
 
+.postLi {
+  margin-bottom: 1em;
+  & > .time {
+    margin: 0;
+    margin-bottom: -1em !important;
+    font-family: 'Fira Code';
+    font-weight: 400;
+    font-size: 0.5em;
+  }
+}
+
 .singlePost {
   display: flex;
   flex-direction: row;
@@ -40,10 +51,6 @@
 
     & > * {
       display: inline-block;
-    }
-    & > .time {
-      font-family: 'Fira Code';
-      font-weight: 400;
     }
   }
 }

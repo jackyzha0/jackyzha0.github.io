@@ -15,7 +15,8 @@
 </div>
 <div class="lt-flex-50 detail-container">
   <h2>Recent writing</h2>
-  <p>I've started to make a conscious effort to start writing more in order to help myself organize my thoughts. You can find a collection of my half-baked thoughts on my blog where I plan to write more about some of my personal projects and general musings about the world.</p>
+  <p>I've started to make a conscious effort to start writing more in order to help myself organize my thoughts.</p>
+  <p>You can find a collection of my half-baked thoughts on my blog where I plan to write more about some of my personal projects and general musings about the world.</p>
   <ul>
     {{ range first 5 (where .Site.RegularPages "Section" "==" "posts") }}
     <li class="singlePost">
@@ -27,6 +28,11 @@
       </div>
     </li>
     {{ end }}
+    <li class="singlePost">
+      <a class="postLink" href="/posts?ref=home">
+        ...and {{len (where .Site.RegularPages "Section" "==" "posts")}} more posts
+      </a>
+    </li>
   </ul>
   <h2>Newsletter</h2>
   {{ partial "newsletter/cta.html" . }}
