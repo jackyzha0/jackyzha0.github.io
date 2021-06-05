@@ -1,5 +1,5 @@
 <footer>
-    <p>made by Jacky Zhao, © 2021</p>
+    <p>made by Jacky Zhao, © {{ dateFormat "2006" now }}</p>
     {{- range $.Site.Data.links.footer -}}
     <a href="{{.link}}">{{.link_name}}</a>
     {{- end -}}

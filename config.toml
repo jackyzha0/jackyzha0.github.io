@@ -1,7 +1,7 @@
 baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
-title = "Jacky Zhao | Personal Website"
 googleAnalytics = "UA-148413215-1"
+pygmentsUseClasses = true
 
 [params]
   headline = "jzhao.xyz"
@@ -14,8 +14,8 @@ googleAnalytics = "UA-148413215-1"
     startLevel = 2
   [markup.highlight]
     anchorLineNos = false
-    codeFences = false
-    guessSyntax = false
+    codeFences = true
+    guessSyntax = true
     hl_Lines = ""
     lineAnchors = ""
     lineNoStart = 1

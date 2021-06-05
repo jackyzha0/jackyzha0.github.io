@@ -207,8 +207,7 @@ All in all, trading 6 hours for such a huge quality-of-life improvement on a pro
 
 * Smoother user experience (no more annoying 'loading paste...' messages)
 * Cleaner codebase
-* Better link previews (sending links to friends )
-  ![img.png](images/link.png)
+* Better link previews (sending links to friends)
   
 If you haven't had the chance to try Next.js out for yourself and you've made it this far, you owe it to yourself to at least give it a shot. Thanks to the HackClub community (specifically [Rishi](https://rishi.cx/), [Safin](https://safin.dev/), and [Ani](https://anirudhb.github.io/)) for their constant encouragement and criticism of my 'outdated' tech stack.
 
