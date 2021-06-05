@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Source+Sans+Pro:wght@400;600&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Stylesheets and Fonts -->
-    {{ range slice "base.scss" "blog/style.scss" "blog/text.scss" "blog/syntax.scss" "darkmode.scss"}}
+    {{ range slice "base.scss" "blog/style.scss" "blog/text.scss" "syntax.css" "darkmode.scss"}}
         {{$sass := resources.Get . | resources.ToCSS }}
         {{with $sass | minify}}
         <style>
