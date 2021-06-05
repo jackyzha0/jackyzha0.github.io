@@ -2,30 +2,32 @@
   counter-reset: section;
   margin-left: 0em;
   padding-left: 1.5em;
-}
 
-#TableOfContents ol > li {
-  counter-increment: section;
-}
+  & > li {
+    counter-increment: section;
 
-#TableOfContents ol > li::marker, #TableOfContents ol > li > ol > li::marker {
-  font-family: Source Sans Pro;
-  content: counter(section) "  ";
-  font-weight: 700;
-}
+    & > ol {
+      counter-reset: subsection;
 
-#TableOfContents ol > li > ol {
-    counter-reset: subsection;
-}
+      & > li {
+        counter-increment: subsection;
 
-#TableOfContents ol > li > ol > li {
-    counter-increment: subsection;
-}
+        &::marker {
+          content: counter(section) "." counter(subsection) "  ";
+        }
+      }
+    }
+  }
 
-#TableOfContents ol > li > ol > li::marker {
-    content: counter(section) "." counter(subsection) "  ";
-}
+  & > li::marker {
+    content: counter(section) "  ";
+  }
 
+  & > li::marker, & > li > ol > li::marker {
+    font-family: Source Sans Pro;
+    font-weight: 700;
+  }
+}
 
 header, .singlePost, #postTitle {
   display: flex;
@@ -40,19 +42,6 @@ nav > a {
 
 #postTitle h1 {
   margin-right: 2em;
-}
-
-header:hover .hover {
-  opacity: 1.0;
-}
-
-header:hover .hover::after {
-  width: 100%;
-}
-
-body {
-  margin: 0;
-  background-color: var(--light);
 }
 
 .desc {
@@ -84,10 +73,8 @@ hr {
 
 #contentWrapper {
   margin: 25px 30vw;
-}
 
-@media all and (max-width: 1200px) {
-  #contentWrapper {
+  @media all and (max-width: 1200px) {
     margin: 25px 5vw;
   }
 }
@@ -123,27 +110,27 @@ sup {
 
 #newsletter {
   margin: 2em 0;
-}
 
-#newsletter>input {
-  padding: 0.7em 1em;
-  border-radius: 4px;
-}
+  & > input {
+    padding: 0.7em 1em;
+    border-radius: 4px;
+  }
 
-#newsletter>input[type="submit"] {
-  border: none;
-  color: var(--light);
-  background-color: var(--navy);
-  cursor: pointer;
-}
+  & > input[type="submit"] {
+    border: none;
+    color: var(--light);
+    background-color: var(--navy);
+    cursor: pointer;
+  }
 
-#newsletter>input[type="email"] {
-  background-color: var(--light);
-  border: 1px solid var(--outlinegray);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  & > input[type="email"] {
+    background-color: var(--light);
+    border: 1px solid var(--outlinegray);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
 .morePosts {

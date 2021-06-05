@@ -12,14 +12,11 @@ a {
     font-weight: 700;
     text-decoration: none;
     transition: all 0.2s ease;
-}
-
-a {
     color: var(--navy);
-}
 
-a:hover {
-    color: var(--olive) !important;
+    &:hover {
+        color: var(--olive) !important;
+    }
 }
 
 .postLink:visited {
