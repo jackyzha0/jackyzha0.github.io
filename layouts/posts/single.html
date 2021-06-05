@@ -1,0 +1,50 @@
+{{define "head"}}
+{{ partial "blog/head.html" . }}
+{{end}}
+
+{{define "main"}}
+<div id="contentWrapper">
+    {{ partial "blog/header.html" . }}
+    <article>
+        <div id="postTitle" class="desc">
+            <h1>{{ .Title }}</h1>
+            <p>written {{ .Date.Format "January 2, 2006" }} // {{ .ReadingTime }} min read</p>
+        </div>
+        <aside class="mainTOC">
+            <h3>Table of Contents</h3>
+            {{ .TableOfContents }}
+        </aside>
+        <div id="mainText">
+            {{- .Content -}}
+        </div>
+
+        <div>
+            <hr>
+            <div class="morePosts">
+                {{ if .NextPage }}
+                <a class="postLink" href="{{ .NextPage.Permalink }}?ref=footer">← {{ .NextPage.Title }}</a>
+                {{ end }}
+
+                {{ if .PrevPage }}
+                <a class="postLink next" href="{{ .PrevPage.Permalink }}?ref=footer">{{ .PrevPage.Title }} →</a>
+                {{ end }}
+            </div>
+
+            {{- partial "blog/newsletter.html" . -}}
+            <a href="/posts">← (country roads) take me home</a>
+        </div>
+    </article>
+
+    <!-- Contact Info -->
+    <footer>
+        {{partial "footer/footer.html" .}}
+    </footer>
+</div>
+
+{{- with resources.Get "darkmode.js" | minify -}}
+<script>
+  {{.Content | safeJS }}
+</script>
+{{- end -}}
+
+{{end}}

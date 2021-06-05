@@ -1,12 +1,5 @@
 .darkmode {
   text-align: right;
-  padding: 2em;
-
-  // cascade fade in
-  animation: fadeIn ease 0.6s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
 
   & > .toggle {
     display: none;

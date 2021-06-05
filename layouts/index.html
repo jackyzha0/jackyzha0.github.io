@@ -1,71 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  {{ partial "head/head.html" . }}
+{{define "head"}}
+{{ partial "head/head.html" . }}
+{{end}}
 
-  <body>
-    <!-- Begin actual content -->
-    <div id="landing-container">
-      {{partial "landing/darkmode.html" .}}
-      <div id = "landing-overlay" class="lt-content-column">
-        <div>
-          {{partial "landing/landing.html" .}}
-        </div>
-      </div>
-      <canvas id="canvas"></canvas>
+{{define "main"}}
+<!-- Begin actual content -->
+<div id="landing-container">
+  {{partial "landing/darkmode.html" .}}
+  <div id = "landing-overlay" class="lt-content-column">
+    <div>
+      {{partial "landing/landing.html" .}}
     </div>
+  </div>
+  <canvas id="canvas"></canvas>
+</div>
 
-    <!-- Personal Bio -->
-    <div class="lt-content-column" id="about">
-      <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-        <h2 class="side-header-container">
-          <span class="hover side-header">About</span>
-        </h2>
-        <div class="lt-flex-row">
-          {{partial "bio/bio.html" .}}
-        </div>
-      </div>
+<!-- Personal Bio -->
+<div class="lt-content-column" id="about">
+  <div id="bio" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+    <h2 class="side-header-container">
+      <span class="hover side-header">About</span>
+    </h2>
+    <div class="lt-flex-row">
+      {{partial "bio/bio.html" .}}
     </div>
+  </div>
+</div>
 
-    <!-- Work Experience Section -->
-    <div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2 class="side-header-container">
-        <span class="hover side-header">Prev</span>
-      </h2>
-      <div id="expcards">
-        {{partial "jobs/jobs.html" .}}
-      </div>
-    </div>
+<!-- Work Experience Section -->
+<div class="lt-content-column" id="experience" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+  <h2 class="side-header-container">
+    <span class="hover side-header">Prev</span>
+  </h2>
+  <div id="expcards">
+    {{partial "jobs/jobs.html" .}}
+  </div>
+</div>
 
-    <!-- Project Section -->
-    <div id="projects" class="lt-content-column" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
-      <h2 class="side-header-container">
-        <span class="hover side-header">Projects</span>
-      </h2>
-      {{partial "projects/projects.html" .}}
-    </div>
+<!-- Project Section -->
+<div id="projects" class="lt-content-column" {{range $.Site.Data.aos.settings}}{{. | safeHTMLAttr}}{{end}}>
+  <h2 class="side-header-container">
+    <span class="hover side-header">Projects</span>
+  </h2>
+  {{partial "projects/projects.html" .}}
+</div>
 
-    <!-- Contact Info -->
-    <div id="contact_buttons" class="lt-centre">
-      {{partial "footer/footer.html" .}}
-    </div>
-  <!-- Load JS stuff -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  {{ $css := slice "script.js" "darkmode.js"}}
-  {{range $css}}
-    {{- with resources.Get . | minify -}}
-    <script>
-      {{.Content | safeJS }}
-    </script>
-    {{- end -}}
-  {{end}}
+<!-- Contact Info -->
+<div class="lt-centre">
+  {{partial "footer/footer.html" .}}
+</div>
 
-  {{if $.Site.Data.aos.enabled -}}
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      disable: isReducedMotion
-    })
-  </script>
-  {{- end}}
-  </body>
-</html>
+<!-- Load JS stuff -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ $css := slice "script.js" "darkmode.js"}}
+{{range $css}}
+{{- with resources.Get . | minify -}}
+<script>
+  {{.Content | safeJS }}
+</script>
+{{- end -}}
+{{end}}
+
+{{if $.Site.Data.aos.enabled -}}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    disable: isReducedMotion
+  })
+</script>
+{{- end}}
+{{end}}

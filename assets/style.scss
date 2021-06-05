@@ -1,66 +1,26 @@
-:root {
-  --light: #faf8f8;
-  --dark: #141021;
-  --navy: #284b63;
-  --olive: #84a59d;
-  --salmon: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #747474;
-  --outlinegray: #dadada;
-  --lt-colours-light: var(--light) !important;
-  --lt-colours-lightgray: var(--lightgray) !important;
-  --lt-colours-dark: var(--navy) !important;
-  --lt-colours-secondary: var(--olive) !important;
-  --lt-colours-gray: var(--outlinegray) !important;
+.darkmode {
+  padding: 2em;
 
-  --invert-filter: invert(0) hue-rotate(0);
+  // cascade fade in
+  animation: fadeIn ease 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
-
-[saved-theme="dark"] {
-  --light: #1e1e21 !important;
-  --dark: #fbfffe !important;
-  --navy: #75a1bf !important;
-  --olive: #84a59d !important;
-  --salmon: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
-
-  --invert-filter: invert(97%) hue-rotate(190deg) grayscale(0.4) contrast(90%) brightness(1.2) !important;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-  background-color: var(--light);
-}
-
 
 // typography
 h1 {
-  font-family: 'Inter';
   font-size: 4em;
-  color: var(--dark);
   margin-bottom: 0;
 }
 
 h2 {
-  font-family: 'Inter';
   font-size: 3em;
-  color: var(--dark)
 }
 
 h3 {
-  font-family: "Inter";
   margin: 0;
   font-size: 1em;
-  color: var(--dark)
 }
 
 a {
@@ -69,15 +29,12 @@ a {
 }
 
 ul {
-  font-family: 'Inter', sans-serif;
   margin-top: 0em;
   padding-left: 1.5em;
 }
 
 p, ul {
   display: block;
-  color: var(--gray);
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1em;
   line-height: 1.2;
 }
@@ -85,27 +42,6 @@ p, ul {
 .lt-card {
   margin: 0 !important;
   padding: 0 0 0 1em !important;
-}
-
-.hover {
-  color: var(--dark);
-  text-decoration: none;
-  opacity: 0.6;
-  z-index: 1;
-  transition: 200ms;
-
-  &::after {
-    transition: 200ms;
-    height: 18px;
-    content: "";
-    position: absolute;
-    background-color: var(--olive);
-    opacity: 0.5;
-    z-index: -1;
-    width: 0%;
-    right: 5px;
-    bottom: 5px;
-  }
 }
 
 /* Landing Page CSS */
@@ -158,11 +94,6 @@ p, ul {
       animation-fill-mode: forwards;
       animation-delay: #{$i * .1 + 1.2}s;
     }
-  }
-
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
   }
 }
 
@@ -256,18 +187,6 @@ p, ul {
 ul.lt-hl {
   font-family: "Source Sans Pro";
   margin-bottom: 1em;
-}
-
-#contact_buttons {
-  margin-top: 4em;
-
-  & > a {
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 1em;
-    color: var(--navy);
-    padding: 0 0.5em 3em 0.5em;
-  }
 }
 
 .img-container {

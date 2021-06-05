@@ -3,7 +3,15 @@ languageCode = "en-us"
 title = "Jacky Zhao | Personal Website"
 googleAnalytics = "UA-148413215-1"
 
+[params]
+  headline = "jzhao.xyz"
+  website = "https://jzhao.xyz"
+  dateFormat = "2006-01-02"
 [markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2
   [markup.highlight]
     anchorLineNos = false
     codeFences = false

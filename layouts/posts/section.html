@@ -1,0 +1,29 @@
+{{define "head"}}
+{{ partial "blog/head.html" . }}
+{{end}}
+
+{{define "main"}}
+<div id="contentWrapper">
+    {{ partial "blog/header.html" . }}
+    <h1>Posts</h1>
+    <ul id="posts">
+        {{- range site.RegularPages -}}
+        {{ .Render "li"}}
+        {{- end -}}
+    </ul>
+    <hr/>
+    {{- partial "blog/newsletter.html" . -}}
+
+    <!-- Contact Info -->
+    <footer>
+        {{partial "footer/footer.html" .}}
+    </div>
+</div>
+
+{{- with resources.Get "darkmode.js" | minify -}}
+<script>
+  {{.Content | safeJS }}
+</script>
+{{- end -}}
+
+{{end}}

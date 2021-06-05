@@ -1,0 +1,93 @@
+.singlePost * {
+    margin: 0.1em auto;
+}
+
+.time {
+    font-family: 'Fira Code';
+    font-weight: 700;
+}
+
+a {
+    font-family: Inter;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a {
+    color: var(--navy);
+}
+
+a:hover {
+    color: var(--olive) !important;
+}
+
+.postLink:visited {
+    color: var(--visited);
+}
+
+#posts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, tbody, li {
+    font-family: Source Sans Pro;
+    color: var(--gray);
+    line-height: 1.5em;
+}
+
+input {
+    font-family: Source Sans Pro;
+    color: var(--gray);
+}
+
+h2 {
+    opacity: 0.85;
+}
+
+h3 {
+    opacity: 0.75;
+}
+
+blockquote {
+    margin-left: 0em;
+    border-left: 3px solid var(--navy);
+    padding-left: 1em;
+}
+
+pre {
+    font-family: 'Fira Code';
+    padding: 0.75em;
+    border-radius: 3px;
+    overflow-x: scroll;
+}
+
+code {
+    font-family: 'Fira Code';
+    font-size: 0.85em;
+    padding: 0.15em 0.3em;
+    border-radius: 5px;
+    background: var(--lightgray);
+}
+
+table {
+    padding: 1.5em;
+}
+
+td, th {
+    padding: 0.1em 0.5em;
+}
+
+.footnotes p {
+    margin: 0.5em 0;
+}
+
+article a {
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--olive);
+    text-decoration-thickness: .15em;
+}
