@@ -5,7 +5,6 @@
     {{highlight $jsonContent "json" ""}}
   </div>
   {{.Content}}
-  <h2>Links</h2>
   <p>
     Feel free to download my <a target="_blank" rel="noreferrer" href="{{$.Site.Data.me.resume}}">resume</a>,
     poke around <a target="_blank" rel="noreferrer" href="https://github.com/{{$.Site.Data.me.github}}">my GitHub</a>, or
@@ -15,8 +14,6 @@
 </div>
 <div class="lt-flex-50 detail-container">
   <h2>Recent writing</h2>
-  <p>I've started to make a conscious effort to start writing more in order to help myself organize my thoughts.</p>
-  <p>You can find a collection of my half-baked thoughts on my blog where I plan to write more about some of my personal projects and general musings about the world.</p>
   <ul>
     {{ range first 5 (where .Site.RegularPages "Section" "==" "posts") }}
     <li class="singlePost">
