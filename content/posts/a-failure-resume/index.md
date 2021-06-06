@@ -9,13 +9,16 @@ The more I think about it, the more I realize that a failure resume is a great w
 
 I've recently been inspired by both Kate Huang[^2] and Joice Tang's[^3] failure resumes and decided to make my own.
 
-What I wanted to try with this failure resume is, rather than focusing on the individual failures themselves, note what I learned about each of them and how each one was necessary. Hopefully, it'll serve as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from your past mistakes and be less scared of failure in the future.
+What I wanted to try with this failure resume is, rather than focusing on the individual failures themselves, note what I learned from each of them. Hopefully, it'll serve as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.
 
 *A 2021 update:* Keeping a failure resume has let me be so much more ambitious in trying new things and applying for things I would otherwise think I'm unqualified to apply for! I'm really glad I started this.
 
 Now with all that stuff out of the way, here's the juicy list you've been waiting for:
 
 ## 2021
+
+* Had to cut out a bunch of commitments in order to maintain mental sanity
+  * While this isn't a 'failure' in the traditional sense, it was a failure for me in terms of setting good boundaries for myself. I had been spending way too much of my 'free' time working for projects and commitments I wasn't 100% interested in. I missed being able to just dedicate an afternoon to tinkering and exploring an idea so I decided to make the leap and cut down on commitments. If it's not a hell yes, it's a no.
 
 * Rejected from the Delta Fellowship
 
