@@ -12,3 +12,4 @@ operational transform
 http://operational-transformation.github.io/
 
 differential synchronization
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35605.pdf
