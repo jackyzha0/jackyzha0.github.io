@@ -31,3 +31,38 @@ Danger of 'simplicity'
 
 On the split between 'humanities' and 'science'
 "It is self-perpetuating: The more the culture is divided, the more each side builds separation into its new growth"
+
+In retrospect, we know that the road that led from nineteenth-century transportation was quite different. The invention of the automobile and the airplane did not come from a detailed study of how their predecessors, such as horse-drawn carriages, worked or did not work.
+
+The printed page cannot capture either the product or the process: the serendipitous discoveries, the bugs, and the mathematical insights all require movement to be appreciated.
+
+On rejecting the false dichotomy of verbalizable versus nonverbalizable knowledge
+"No knowledge is entirely reducible to words, and no knowledge is entirely ineffable"
+
+Discovery cannot be a setup; invention cannot be scheduled
+
+Newton "understood" the universe by reducing whole planets to points that move according to a fixed set of laws of motion. Is this grasping the essence of the real world or hiding its complexities?
+
+restricted microworlds give students the freedom to explore, without needing to ask for permission or reassurance from teachers
+
+Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children learn language by first learning their own ("baby-talk") dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the "official" physics by allowing them the freedom to invent many that will work in as many invented worlds.
+
+In school, false theories are no longer tolerated. Our educational system rejects the "false theories" of children, thereby rejecting the way children really learn.
+
+People often fear that using computer models for people will lead to mechanical or linear thinking: They worry about people losing respect for their intuitions, sense of values, powers of judgement. They worry about instrumental reason becoming a model for good thinking. I take these fears seriously but do not see them as fears about computers themselves but rather as fears about hwo culture will assimilate the computer presence.
+
+The definition of artificial intelligence can be narrow or broad. In the narrow sense, AI is concerned with extending the capacity of machines to perform functions that would be considered intelligent if performed by people. Its goal is to construct machines, and, in doing so, it can be thought of as a branch of advanced engineering... In order to make a machine capable of learning, we have to probe deeply into the nature of learning. And from this kind of research comes the broader definition of artificial intelligence: that of cognitive science.
+
+On self-correcting systems like bikes
+"Thus learning to ride does not mean learning to balance, it means learning not to unbalance, learning not to interfere"
+
+Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird's wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.
+
+When knowledge can be broken up into "mind-size bites," it is more communicable, more assimilable, more simply constructable.
+
+On brain being compartmentalized
+We put our skills and heuristic strategies into a kind of tool box -- and while their interaction can, in the course of time, give rise to global changes, the act of learning is itself a *local* event.
+
+It is a step toward a situation in which the line between learners and teachers can fade
+
+A stage of unconscious work, which might appear to the mathmatician as temporarily abondoning the task or leaving the problem to incubate, has to intervene... On the contrary, the problem has been turned over to a very active unconscious which relentlessly begins to combine the elements supplied to it by the 
