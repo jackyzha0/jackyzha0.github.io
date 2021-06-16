@@ -1,7 +1,6 @@
 ---
 title: "On GPT-3"
 date: 2020-09-29T13:15:09-07:00
-draft: true
 ---
 
 # what is gpt-3

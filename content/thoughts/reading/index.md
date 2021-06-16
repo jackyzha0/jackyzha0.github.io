@@ -1,7 +1,6 @@
 ---
 title: "Dewey Decimal System"
 date: 2021-02-27T11:59:49-08:00
-draft: true
 ---
 
 

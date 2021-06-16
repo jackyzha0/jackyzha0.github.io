@@ -1,7 +1,6 @@
 ---
 title: "Mindstorms"
 date: 2021-06-07T21:44:15-04:00
-draft: true
 ---
 
 "As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."
@@ -66,3 +65,10 @@ We put our skills and heuristic strategies into a kind of tool box -- and while 
 It is a step toward a situation in which the line between learners and teachers can fade
 
 A stage of unconscious work, which might appear to the mathmatician as temporarily abondoning the task or leaving the problem to incubate, has to intervene... On the contrary, the problem has been turned over to a very active unconscious which relentlessly begins to combine the elements supplied to it by the 
+
+Design Justice
+"No one knows everything, but together we know a lot, if we listen to each other"
+"Instead, design justice pedagogies must support students to actively develop their own critical analysis of design, power, and liberation, in ways that connect with their own lived experience"
+
+On design justice pedagogies
+"Critical pedagogy, where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners"

@@ -1,10 +1,9 @@
-## Booklist
-A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading.
+# Booklist
+A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that's linked!
 
-### To Read
+## To Read
 * **Seeing Like A State** by James C. Scott
 * **The Utopia of Rules** by David Graeber
-* **Finite and Infinite Games** by James P. Carse
 * **Doughnut Economics** by Kate Raworth
 * **The Alignment Problem** by Brian Christian
 * **How to Do Nothing** by Jenny Odell
@@ -15,11 +14,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Blockchain Chicken Farm** by Xiaowei Wang
 * **The Book of Difficult Fruit** by Kate Lebo
 
-### Current
-* **Design Justice** by Sasha Costanza-Chock
+## Current
 * **From Counterculture to Cyberculture** by Fred Turner
+* **Finite and Infinite Games** by James P. Carse
 
+## Past
 ### 2021
+* **Design Justice** by Sasha Costanza-Chock
 * **Mindstorms** by Seymour A. Papert
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
 * **1984** by George Orwell

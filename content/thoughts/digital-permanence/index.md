@@ -1,7 +1,6 @@
 ---
 title: "Digital Permanence"
 date: 2021-05-09T17:39:37-04:00
-draft: true
 ---
 
 Once you share something, you can't unshare it, internet feels intractable
@@ -86,3 +85,13 @@ By attaching our real-world identities to everything we do, these platforms feel
 The paper introduces the comparison between a crutch and a shoe. Whereas a shoe can help you run faster, a crutch is designed to support you when you can’t walk normally, to get you as close as possible. A crutch will never help you run faster; it’s just an imitative substitute when the real thing isn’t available. In this sense, Facebook’s social graph is a crutch that imitates real-world relationships. Platforms which 1) require or encourage using your real identity or 2) rely on existing social graphs (contacts, classmates, mutuals) merely imitate “being there.” By mirroring the real world, platforms like Facebook are ultimately limited by the very physical connections they seek to transcend.
 
 Together, these platforms form digitally native social graphs based on what people choose to emphasize about themselves, rather than on legal identity or physical proximity. These social graphs are difficult to create on identity-based platforms, as well as in real life, and are the result of meaningful connections between people who otherwise would never have met.
+
+https://edwardsnowden.substack.com/p/lifting-the-mask
+One history of the Internet — and I'd argue a rather significant one — is the history of the individual's disempowerment, as governments and businesses both sought to monitor and profit from what had fundamentally been a user-to-user or peer-to-peer relationship. The result was the centralization and consolidation of the Internet — the true y2k tragedy. This tragedy unfolded in stages, a gradual infringement of rights: users had to first be made transparent to their internet service providers, and then they were made transparent to the internet services they used, and finally they were made transparent to one another. The intimate linking of users' online personas with their offline legal identity was an iniquitous squandering of liberty and technology that has resulted in today's atmosphere of accountability for the citizen and impunity for the state. Gone were the days of self-reinvention, imagination, and flexibility, and a new era emerged — a new eternal era — where our pasts were held against us. Forever.
+
+Everything we do now lasts forever... The Internet's synonymizing of digital presence and physical existence ensures fidelity to memory, identitarian consistency, and ideological conformity. Be honest: if one of your opinions provokes the hordes on social media, you're less likely to ditch your account and start a new one than you are to apologize and grovel, or dig in and harden yourself ideologically. Neither of those "solutions" is one that fosters change, or intellectual and emotional growth
+
+The forced identicality of online and offline lives, and the permanency of the Internet's record, augur against forgiveness, and advise against all mercy. Technological omniscence, and the ease of accessibility, promulgate a climate of censorship that in the so-called free world instantiates as self-censorship: people are afraid to speak and so they speak the party's words... or people are afraid to speak and so they speak no words at all...
+
+Even the most ardent practitioners of cancel culture — which I've always read as an imperative: Cancel culture! — must admit that cancellation is a form of surveillance borne of the same technological capacities used to oppress the vulnerable by patriachal, racist, and downright unkind governments the world over. The intents and outcomes might be different — cancelled people are not sent to camps — but the modus is the same: a constant monitoring, and a rush to judgment.
+

@@ -1,7 +1,6 @@
 ---
 title: "Labels and Quantization"
 date: 2021-05-04T22:22:23-04:00
-draft: true
 ---
 
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."

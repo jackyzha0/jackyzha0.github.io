@@ -1,7 +1,6 @@
 ---
 title: "Value Setting"
 date: 2021-03-11T13:31:11-08:00
-draft: true
 ---
 
 Took on a large number of commitments in the past year, not everything was something I enjoyed. Been thinking about what makes work enjoyable and 

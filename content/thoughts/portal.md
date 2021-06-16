@@ -1,7 +1,6 @@
 ---
 title: "Portal"
 date: 2021-06-06T14:06:42-04:00
-draft: true
 ---
 
 https://neil.fraser.name/writing/sync/

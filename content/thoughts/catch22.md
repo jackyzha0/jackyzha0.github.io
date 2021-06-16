@@ -1,7 +1,6 @@
 ---
 title: "Catch-22"
 date: 2021-05-25T11:28:29-04:00
-draft: true
 ---
 
 If a pilot is deemed insane, they don't have to fly.

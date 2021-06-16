@@ -1,7 +1,6 @@
 ---
 title: "Reinventing Hackathons"
 date: 2021-02-27T12:01:16-08:00
-draft: true
 ---
 
 What first comes to your head when you think of the word 'hackathon'? Is it a 24-hour long, no-sleep, caffeine-fueled, build-fest in a big sweaty gym?
@@ -39,6 +38,14 @@ Design Justice
 * such hackathons [more inclusive hackathons] push hackers to reflect on why they are doing the work they do, push for the ideas and welfare of marginalized communities in the tech sphere, and do so on the terms of their wellbeing and safety
 * for example, this means that it is important to consider food, bio beaks, accessible bathrooms that are friendly to all body types and genders, comfortable spaces to nap or relax, and decent lighting
 * hackathon spaces cultivate a culture that marginalizes hackers with specific needs, including but not limited to women, people with disabilities, people with non-traditional backgrounds, and even individuals with specific dietary restrictions
+* "Steer students away from the pitfalls of tech solutionism and technochauvanism"
+* "Make all people good coders, or make all coders good people"
+* "It's true that design justice practitioners have to take care that critique does not become our primary activity; an overemphasis on testing, evaluation, and critique can indeed by ultimately disempowering"
+* "However if resource constraints become an excuse to avoid examining the root of the problem area, then designers will almost always end up, at best, providing Band-Aids for deep wounds and, at worst, actively serving existing power structures"
+* "Frequent critiques of community-controlled design processes include variants of 'design by committee produces mediocrity' or 'we don't want to end up with the lowest-common-denominator design!'"
+* "Design justice doesn't imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a filter that we use to eliminate most design possibilities from consdieration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people."
+* "people do not get ideas, they make them"
+* "people construct new knowledge with particular effectiveness when they are engaged in constructing personally meaningful products"
 
 ### maintenance > creation
 * commons-based peer production -> "decentralized, collaborative, and non-proprietary; based on sharing resources and outputs among widely distributed, loosely connected individuals who cooperate with each other without relying on either market signals or managerial commands"

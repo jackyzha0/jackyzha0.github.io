@@ -1,7 +1,6 @@
 ---
 title: "DreamCoder Boolean Satisfiability Problem"
 date: 2021-04-19T23:32:09-07:00
-draft: true
 ---
 
 https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
