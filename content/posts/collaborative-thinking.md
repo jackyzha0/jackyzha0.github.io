@@ -12,14 +12,14 @@ It is no secret that the key to the rise of *Homo Sapiens* and the anthropocene 
 
 As a society, we consistently rely on the knowledge of others to live our own comfortable lives. I may not know how to grow my very own russet potatoes, but a farmer in Alberta might. Similarly, a plumber in Massachusetts may not know how to build their own website, but I might. Through being able to supplement each other's knowledge of the world, our *collective* knowledge is much greater.
 
-![Left: Collective knowledge of the group. Right: My subset of knowledge](images/knowledge.png)*Left: Collective knowledge of the group. Right: My subset of knowledge*
+![Left: Collective knowledge of the group. Right: My subset of knowledge](/posts/images/collaborative-thinking/knowledge.png)*Left: Collective knowledge of the group. Right: My subset of knowledge*
 
 I like to think about collective knowledge as a big blob. Each individual contributes a unique *subset* of knowledge. We get the entirety of human knowledge by taking the *union of the knowledge* of all the individuals in the group. Of course, as these groups of individuals grow ever larger due to globalization, each individual may choose to specialize in a narrower subset of knowledge as generations go on to reduce redundancy. Why know how to build your own car when you can buy it yourself? The adoption of globally accepted currencies has made this easier than ever.
 
 ## Knowledge illusion
 Humans also have this 'knowledge illusion' where we think we know a lot, even though individually we know very little. We treat the knowledge of the human collective as if it were our own, even subconsciously.
 
-![A crude illustration of a jacket zipper](images/zipper.png)*A crude illustration of a jacket zipper*
+![A crude illustration of a jacket zipper](/posts/images/collaborative-thinking/zipper.png)*A crude illustration of a jacket zipper*
 
 An example Harari used was the sweater zipper. If I were to ask you if you knew how a zipper works, the vast majority of you would exclaim "yes, of course!" Yet, if asked to describe in *detail* every single step, most would fail to do so. Even with something that seems so basic and intuitive seems to elude an explicit explanation. We have begun to stand on the shoulders of giants yet refuse to acknowledge their presence.
 
@@ -32,7 +32,7 @@ Individuals in these clusters experience a sort of echo chamber effect whereby t
 
 > People afraid of losing their truth tend to be more violent than people who are used to looking at the world from several different viewpoints.
 
-![Broadening our base fundamental knowledge. Blue: Previous 'specialized' knowledge. Purple: broad foundational knowledge](images/spikes.png)*Blue: Previous 'specialized' knowledge. Purple: broad foundational knowledge*
+![Broadening our base fundamental knowledge. Blue: Previous 'specialized' knowledge. Purple: broad foundational knowledge](/posts/images/collaborative-thinking/spikes.png)*Blue: Previous 'specialized' knowledge. Purple: broad foundational knowledge*
 
 What we can do to counteract this extreme alignment is to build a broader foundation of knowledge. When you come across an individual with differing views, hopefully you will at least have the base fundamental knowledge to understand their perspective.
 

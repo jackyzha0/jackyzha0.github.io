@@ -3,7 +3,7 @@ title: "Framing and Context Collapse"
 date: 2021-05-08T14:57:51-07:00
 ---
 
-![Abstract illustration of a blob framed by two picture frames](images/title.png)
+![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/title.png)
 
 The content I throw on Twitter is not something I would readily post on LinkedIn. I also wouldn't post LinkedIn-style business content to my Facebook timeline. To an extent, my social presence across these platforms is *incongruent*. The core tenet is that different apps curate different types of communities and thus social contexts. As a result, we try to separate these contexts in the best way we know how to: by acting differently, **and that's ok.** 
 
@@ -21,7 +21,7 @@ An unfortunate side effect of this is that it starts setting expectations for th
 If we're expected to keep growing as people, these thoughts and opinions will obviously change over time. So why does it feel so *weird*, for both the audience and ourselves, to deviate from these set identities that we've become used to portraying in certain scenarios?
 
 ## Context separation
-![Abstract illustration of a blob framed by two picture frames](images/context-separation.png)
+![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/context-separation.png)
 
 In order to answer that question, let us make a brief foray into the realm of psychology. Why do humans tend to act differently in different environments? I think three key aspects of behaviour play a role here:
 
@@ -49,7 +49,7 @@ Our ability to 'frame' ourselves different depending on the social situation lik
 
 
 ## Why context collapse is bad
-![Abstract illustration of a blob framed by two picture frames](images/context-collapse.png)
+![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/context-collapse.png)
 
 
 

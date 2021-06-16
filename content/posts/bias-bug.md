@@ -23,7 +23,7 @@ In fact, let me give you a few examples of decisions that AI make every single d
 ![An AI-based breast cancer detector in action](https://3.bp.blogspot.com/-BCz28oA5THs/W7_1x671dkI/AAAAAAAADXg/h6OcOZnRZl0vN8mw02gNVcwglJTqE87bwCLcBGAs/s1600/image1.png)*Google AI Blog, 2018*
 Would you be comfortable with an AI helping doctors to identify cancerous tumours?
 
-![A game of Survival of the Best Fit](images/hiring.png)*survivalofthebestfit.com*
+![A game of Survival of the Best Fit](/posts/images/bias-bug/hiring.png)*survivalofthebestfit.com*
 How about an AI helping companies decide who to hire based on only your name, age, gender, and resume?
 
 ![Chihuahua or muffin?](https://media4.s-nbcnews.com/j/newscms/2016_10/1008761/chihuahua-muffin-today-160311-tease-02_15277fe1b7a8c911f94700f866189fc2.social_share_1024x512_center.jpg)*@teenybiscuit*

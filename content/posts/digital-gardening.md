@@ -18,7 +18,7 @@ I spent a few hours building out my own Hugo theme, making it as frictionless as
 
 The plot was there; I just didn't have anything to plant in it.
 
-![The Garden Plot](images/plot.png)
+![The Garden Plot](/posts/images/digital-gardening/plot.png)
 
 ## Planting the seeds
 
@@ -30,7 +30,7 @@ I've started to write more about some these ideas (like within this blog post!),
 
 These are the seeds I plant in my garden, but these seeds will stay seeds unless watered.
 
-![Planting the seeds](images/seeds.png)
+![Planting the seeds](/posts/images/digital-gardening/seeds.png)
 
 ## Watering the plants
 
@@ -44,7 +44,7 @@ My process of collecting random scraps of information first sprung up from comin
 
 Now that I have all of these new-found ideas and tidbits of information, what do I do with them? Keep growing them forever? At some point on the [explore-exploit curve](https://towardsdatascience.com/intro-to-reinforcement-learning-the-explore-exploit-dilemma-463ceb004989), this knowledge should be applied to something in order to manifest it into something useful. The problem is, which ideas get priority of my time and effort?
 
-![Watering the plants](images/watering.png)
+![Watering the plants](/posts/images/digital-gardening/watering.png)
 
 ## Pulling weeds
 
@@ -54,7 +54,7 @@ Similarly, no one has unlimited time and energy they can put into projects and l
 
 I'm starting to step back and reflect on my current commitments and deciding to either to step down from things that I'm less passionate about to make more time and room to double down on the things I'm truly passionate about.
 
-![Pulling weeds](images/weeds.png)
+![Pulling weeds](/posts/images/digital-gardening/weeds.png)
 
 ## End
 

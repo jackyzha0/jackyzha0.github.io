@@ -3,8 +3,6 @@ title: "Dewey Decimal System"
 date: 2021-02-27T11:59:49-08:00
 ---
 
-
-
 1. getting back into reading
 2. Books, with some effort, can help you learn to walk, but only people can help you orient where to walk. In other (equally vague yet obvious) words, I can’t know (through books), if I don’t know what to know (through people). (quote from eva)
 3. organizing thoughts

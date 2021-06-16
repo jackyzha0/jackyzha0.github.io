@@ -8,7 +8,7 @@ I’ve recently made my way through *Working in Public: The Making and Maintenan
 
 This blog post is an exploration of processes in open source, the value it provides, and how money fits into the picture.
 
-![Working in Public: The Making and Maintenance of Open Source Software](images/oss_book.jpg)*Working in Public: The Making and Maintenance of Open Source Software*
+![Working in Public: The Making and Maintenance of Open Source Software](/posts/images/paid-oss/oss_book.jpg)*Working in Public: The Making and Maintenance of Open Source Software*
 
 ### How it's made
 > "Open source developers were frequently characterized as 'hobby' developers, because the assumption was that only companies could make 'real' software."[^1]
