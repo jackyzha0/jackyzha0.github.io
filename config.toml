@@ -2,6 +2,7 @@ baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
 googleAnalytics = "UA-148413215-1"
 pygmentsUseClasses = true
+ignoreFiles = ["/content/templates/*"]
 
 [params]
   headline = "jzhao.xyz"
