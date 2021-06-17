@@ -1,6 +1,7 @@
 ---
 title: "reflect: NLP Model Explained"
 date: 2020-05-10T08:51:56-07:00
+tags: ["technical"]
 ---
 
 ![An image of the reflect block page](https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png)*How do we tell that this is a “valid” intent?*

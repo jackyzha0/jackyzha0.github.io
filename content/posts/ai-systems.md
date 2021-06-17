@@ -1,6 +1,7 @@
 ---
 title: "Machines and Intelligence"
 date: 2020-11-02T16:17:37-08:00
+tags: ["ai", "tech"]
 ---
 
 This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC. I hope you enjoy the post and learn as much as I did in writing it!

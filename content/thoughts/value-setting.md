@@ -8,30 +8,31 @@ Took on a large number of commitments in the past year, not everything was somet
 https://thesephist.com/posts/play/
 https://paukowee.wordpress.com/2021/03/06/values-setting/
 
-what type of work I don't like doing
+Maybe a part of the [exploit-explore](thoughts/exploit-explore.md) curve
+
+## What type of work I don't like doing
   * could've spent that time doing other stuff
   * didnt feel intellectual stimulating
   * too much context switching
-  * team was eh
 
-what I love doing
+## What I love doing
   * learn cool new stuff
   * solve problems
   * SHIP STUFF
   * amazing community
   * independence, ability to lead
 
-must haves
+## Must haves
 * intellectually challenging
   * does the work challenge how I think?
   * will i get to deep dive and do focused work on certain topics?
   * am i learning new things?
-* tight feedback loop
+* tight feedback loop: [feedback-loops](thoughts/feedback-loops.md)
   * are there mechanisms to tell me if I'm doing well or not?
   * is feedback immediate, present, and clear?
 * creative freedom
   * do i get freedom to choose (at least in part) what I work on?
-* being able to share my work with others
+* being able to share my work with others: [building-in-public](thoughts/building-in-public.md)
   * fun team to work with
   * can i tell my family and friends what i do without shame
   * are real people going to be using what i build?

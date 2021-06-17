@@ -1,6 +1,6 @@
 ---
 title: "Mindstorms"
-date: 2021-06-07T21:44:15-04:00
+date: 2021-06-16T08:59:11-04:00
 ---
 
 "As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."

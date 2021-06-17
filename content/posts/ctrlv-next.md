@@ -1,6 +1,7 @@
 ---
 title: "Rewriting ctrl-v using Next.js"
 date: 2021-04-11T16:55:12-07:00
+tags: ["technical"]
 ---
 
 ![Rewriting ctrl-v using Next.js](/posts/images/ctrlv-next/title.png)

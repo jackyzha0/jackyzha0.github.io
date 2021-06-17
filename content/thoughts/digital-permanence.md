@@ -6,14 +6,13 @@ date: 2021-05-09T17:39:37-04:00
 Once you share something, you can't unshare it, internet feels intractable
 
 episode #172 - ryan schiller: librex and the free exchange of ideas on college campuses
+* silencing of ideas
+* people go to colleges not to just read textbooks
+* but to talk to professors who've studied it deeply and get their opinions on it
+* but what happens when those professors feel like their can't express their opinions?
+* what happens when a student is offended by that opinion and the professor is at risk of losing their job?
 
-silencing of ideas
-people go to colleges not to just read textbooks
-but to talk to professors who've studied it deeply and get their opinions on it
-but what happens when those professors feel like their can't express their opinions?
-what happens when a student is offended by that opinion and the professor is at risk of losing their job?
-
-## cancel culture and healthy debate
+## Cancel culture and healthy debate
 i think being inclusive and mindful of the opinions is really important
 but there also needs to be a balance between the weight of creating an unsafe place for ideas vs unsafe places for people
 
@@ -28,6 +27,7 @@ yet, there are cases when other contextual information is important
 * e.g., when talking about diversity issues, talking from first-hand exp is often a lot more valid than second-hand or third-hand
 * in these cases, does methodology and original source of speaker count as *part* of the idea?
 
+## "Truth"
 "The word “axiom” means self evident truth. All of mathematics are models based on frameworks of axioms and postulates. We develop proofs and theorems from these. All facts and axioms in mathematics are fundamentally flawed. Take a look at Gödel's incompleteness theorem. It basically states that if math is consistent, it cannot be complete. And if it is not complete, it must not be consistent."
 
 are ideas inherently different from facts?
@@ -35,9 +35,7 @@ what are the universal axioms of the universe?
 descartes
 * solipsism -> we can only know that we exist
 
-
-anonymity
-
+## Anonymity
 "61% of students on Ivy League campuses are afraid to speak their minds because of campus culture"
 
 difference between public and private selves
@@ -55,6 +53,7 @@ i think for me from an engineering perspective like if i'm dishonest with others
   should normalize growth
   if people STILL hold views that are problematic by today's standards, then THAT's problematic
 
+[ephemereal-content](thoughts/ephemereal-content.md)
   move towards realtime media rather than offline media (e.g. streaming > videos)
 
 A theorem is only a fact in the context of the axioms on which it is based. Axioms are treated more like postulates, accepted only tentatively and defining a branch of mathematics.
@@ -65,27 +64,12 @@ It more or less says that you can only explain a system using criteria defined i
 Seeing Like A State
 He lays out how administrative states come up with a sort of "bureaucratic imagination" of how the world works by defining how to measure and count stuff.
 
-Mindstorms
+[Mindstorms](books/mindstorms)
 * why we shouldn't straight up label answers as wrong
 * concept of microworlds as a stepping stone to exploring and getting the right answer
 
-## social media
-https://www.youtube.com/watch?v=xbnDay35L8I
-* constructing social graphs from interests (tiktok)
-* constructing interest graphs from social graphs (traditional networks like fb)
-
-https://www.youtube.com/watch?v=UOEpe17nPhE
-* expression on social media in an 'anonymized' setting
-
-https://qualiaspace.substack.com/p/the-future-of-social-media-is-pseudonymous
-an identity-based social graph is fundamentally limited. Your Facebook identity and social graph are mere digital shadows of their physical counterparts, and little more.
-By attaching our real-world identities to everything we do, these platforms feel suffocating and unsafe.
-"In real life and on Facebook, you’re always signaling information about yourself which may not have anything to do with the context you’re in."
-
-The paper introduces the comparison between a crutch and a shoe. Whereas a shoe can help you run faster, a crutch is designed to support you when you can’t walk normally, to get you as close as possible. A crutch will never help you run faster; it’s just an imitative substitute when the real thing isn’t available. In this sense, Facebook’s social graph is a crutch that imitates real-world relationships. Platforms which 1) require or encourage using your real identity or 2) rely on existing social graphs (contacts, classmates, mutuals) merely imitate “being there.” By mirroring the real world, platforms like Facebook are ultimately limited by the very physical connections they seek to transcend.
-
-Together, these platforms form digitally native social graphs based on what people choose to emphasize about themselves, rather than on legal identity or physical proximity. These social graphs are difficult to create on identity-based platforms, as well as in real life, and are the result of meaningful connections between people who otherwise would never have met.
-
+## Social media
+[social-graphs](thoughts/social-graphs.md)
 https://edwardsnowden.substack.com/p/lifting-the-mask
 One history of the Internet — and I'd argue a rather significant one — is the history of the individual's disempowerment, as governments and businesses both sought to monitor and profit from what had fundamentally been a user-to-user or peer-to-peer relationship. The result was the centralization and consolidation of the Internet — the true y2k tragedy. This tragedy unfolded in stages, a gradual infringement of rights: users had to first be made transparent to their internet service providers, and then they were made transparent to the internet services they used, and finally they were made transparent to one another. The intimate linking of users' online personas with their offline legal identity was an iniquitous squandering of liberty and technology that has resulted in today's atmosphere of accountability for the citizen and impunity for the state. Gone were the days of self-reinvention, imagination, and flexibility, and a new era emerged — a new eternal era — where our pasts were held against us. Forever.
 
