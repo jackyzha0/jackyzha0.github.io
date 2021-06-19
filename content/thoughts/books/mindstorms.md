@@ -57,18 +57,22 @@ On self-correcting systems like bikes
 
 Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird's wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.
 
+"You have no reason to suppose that airplanes and birds work the same way -- birds have no propellors, airplanes have no feathers"
+
 When knowledge can be broken up into "mind-size bites," it is more communicable, more assimilable, more simply constructable.
+
+Logical consistency in systems
+The conflicts are regulated and kept in check rather than "resolved" through the intervention of special agents no less simple-minded than the original ones. Their way of reconciling differences does not involve forcing the system into a logically consistent mold.
 
 On brain being compartmentalized
 We put our skills and heuristic strategies into a kind of tool box -- and while their interaction can, in the course of time, give rise to global changes, the act of learning is itself a *local* event.
 
+Part of the fun is sharing, posting graphics on the walls, modifying and experimenting with each other's work, and bringing the "new" products back to the original inventors.
+
 It is a step toward a situation in which the line between learners and teachers can fade
 
+
+On the role of knowledge distillers
+This problem goes deeper than a mere short supply of such people. The fact that in the past there was no role for such people has been cast into social and institutional concrete; now there is a role but there is no place for them.
+
 A stage of unconscious work, which might appear to the mathmatician as temporarily abondoning the task or leaving the problem to incubate, has to intervene... On the contrary, the problem has been turned over to a very active unconscious which relentlessly begins to combine the elements supplied to it by the 
-
-Design Justice
-"No one knows everything, but together we know a lot, if we listen to each other"
-"Instead, design justice pedagogies must support students to actively develop their own critical analysis of design, power, and liberation, in ways that connect with their own lived experience"
-
-On design justice pedagogies
-"Critical pedagogy, where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners"

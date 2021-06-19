@@ -15,13 +15,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Book of Difficult Fruit** by Kate Lebo
 
 ## Current
-* **From Counterculture to Cyberculture** by Fred Turner
 * **Finite and Infinite Games** by James P. Carse
 
 ## Past
 ### 2021
-* **Design Justice** by Sasha Costanza-Chock
-* **Mindstorms** by Seymour A. Papert
+* [**From Counterculture to Cyberculture**](/thoughts/books/fctc) by Fred Turner
+* [**Design Justice**](/thoughts/books/design-justice) by Sasha Costanza-Chock
+* [**Mindstorms**](/thoughts/books/mindstorms) by Seymour A. Papert
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
 * **1984** by George Orwell
 * **On Earth We're Briefly Gorgeous** by Ocean Vuong

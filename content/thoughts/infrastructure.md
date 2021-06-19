@@ -3,6 +3,9 @@ title: "Infrastructure"
 date: 2021-06-16T13:15:09-07:00
 ---
 
+## What is infrastructure even?
+tbh idk
+
 -   things that use infrastructure or infrastructure
     -   in the beginning not much of a distinction
     -   first tech → language

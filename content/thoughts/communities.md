@@ -20,3 +20,33 @@
         -   publishing list of values
         -   why introductions are hard: [introductions](thoughts/introductions.md)
             -   can never fully/properly frame yourself
+
+## 90/9/1 Rule
+The "90–9–1" version of this rule states that for websites where users can both create and edit content, 1% of people create content, 9% edit or modify that content, and 90% view the content without contributing.
+
+Was called "participation inequality" by researchers at AT&T labs
+
+ the 80/20 rule known as the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle "Pareto principle") states that 20 percent of a group will produce 80 percent of the activity, however the activity is defined.
+ 
+ a type of power law (zipf's law)
+ 
+ Size of the community might matter? e.g.
+ small communities like family group chats -> almost everyone creates content
+ large communities like LinkedIn -> most people consume, vocal minority
+ 
+though size might just be a proxy for sense of belonging in a group. i.e. if you strongly identify with said group (family) you are more likely to participate and contribute
+
+in larger communities then, the approximately normal distribution of people who are engaged in the community may lead to some type of power law
+
+## Moderation
+What is the role of moderation in a community? What does good/bad moderation look like? (posts/comments/membership)
+
+I think a key part of answering this is trying to define what role a community occupies. Is it just a collection of people gathering around a shared identity? Or is it supposed to be a platform for moderated idea discussion/generation? Or something else in between.
+
+Thinking about this at the [infrastructure](thoughts/infrastructure.md) level too, if a community's purpose is to serve as infrastructure so that it enables conversations, should infrastructure be regulated/enforced or something that should just play out naturally?
+
+Broadly defined, I see moderation as having two main categories: moderation of users and moderation of content. Moderation then, is to ensure that the set of values that is being conveyed by the users/content roughly aligns with that of the group/community.
+
+Moderation of users involves regulating the *membership* of individuals within the community whereas moderation of content regulates what can/can't be said in the community.
+
+Moderation gets problematic when it is used to target and discriminate against individuals becuase of personal relations or vendettas. I was thinking about also saying it becomes problematic when it discriminates against characteristics but I'm hesitant on this bit. Is it categorically different to exclude people who are misogynistic vs those of a certain race? Probably yes but I don't have a solid argument for it yet.
