@@ -13,3 +13,13 @@ https://brianlui.dog/2020/05/10/beware-of-tight-feedback-loops/
 - centaur systems
 	- human feedback loops
 	- extended cognition with centaur systems
+
+
+## Imitation
+https://www.briantimar.com/notes/mimetic/mimetic/
+The second was a positive feedback loop that encouraged me to spend ever-increasing amounts of time on my work. Humans inherit convictions [mimetically](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard#Mimetic_desire) from each other — we learn what to value by imitating our peers. Maybe this is why we tend to want to conform to ingroup expectations in [communities](thoughts/communities.md) so much?
+
+Dangers of groupthink as these feedback loops loop into themselves and repeat: 
+[collaborative-thinking](posts/collaborative-thinking.md)
+
+Among experimentalists, it’s not hard to find graduate students who can tell you every detail about how a particular machine operates, and almost nothing about why it should be built.

@@ -3,6 +3,11 @@ title: "Academia"
 date: 2021-06-18T10:13:33-04:00
 ---
 
+## Tunnel Vision
+
+https://www.briantimar.com/notes/mimetic/mimetic/
+Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.
+
 ## MS Research
 Session w/ Jim Pinkelman, Ph.D. Been at MS for 19 years, 11 years in Microsoft Research
 

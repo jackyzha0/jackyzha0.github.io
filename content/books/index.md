@@ -13,6 +13,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **A Tale for the Time Being** by Ruth Ozeki
 * **Blockchain Chicken Farm** by Xiaowei Wang
 * **The Book of Difficult Fruit** by Kate Lebo
+* **Streetfight** by Janette Sadik-Khan
 
 ## Current
 * **Finite and Infinite Games** by James P. Carse

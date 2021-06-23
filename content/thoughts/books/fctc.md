@@ -3,13 +3,13 @@ title: "From Countculture to Cyberculture"
 date: 2021-06-16T08:59:04-04:00
 ---
 
-# Reboot Discussion
-## How did this book start?
+## Reboot Discussion
+### How did this book start?
 
 -   Why and how did computers go from emblems of cold war state to tools of personal liberation?
 -   A bunch of folks like Steward Brand, Kevin Kelly, etc. (inner circle included people from the 60s to the 90s) having a person who he could follow across these generations was extremely helpful
 
-## What is cybernetics?
+### What is cybernetics?
 
 Different between social networking, computer networking, etc.
 
@@ -23,7 +23,7 @@ Another definition: computationalization of human processes
     -   The core idea: Unifying a world with code. Should be a universal system.
 -   War brought different people from different disciplines together and had a shared communication medium of code
 
-## What was the counterculture?
+### What was the counterculture?
 
 -   People in 50s60s protesting because worried about being turned into information
 -   Two distinct movements (both are anti-bureaucracy, anti-big tech, anti-mass culture)
@@ -39,7 +39,7 @@ Another definition: computationalization of human processes
     -   Keep the tech made from the way but throw away the culture of the time
 -   When you take away bureaucracy you don't get freedom but 'rule by cool' → disastrous for a democratic society
 
-## Did the New Left have any effect on Cyberculture?
+### Did the New Left have any effect on Cyberculture?
 
 -   Folks on new left will say they did → Computers fulfilled agreement
 -   Communalists had more contribution in tech world
@@ -50,7 +50,7 @@ Another definition: computationalization of human processes
 -   Steward Brand in 1984 as an Apple Mac, create a society of consciousness
     -   Mac (as a metaphor for tech) is the new LSD → ability to remove the importance of the physical self
 
-## How much of the shift was a result of WEC? How much you see importance of media / social networking vs technical revolution?
+### How much of the shift was a result of WEC? How much you see importance of media / social networking vs technical revolution?
 
 -   WEC was not a marketplace, rather an aggregator of information (a pre-Google search engine)
 -   What tools do you want to bring to a commune (ex: farming commune)
@@ -61,7 +61,7 @@ Another definition: computationalization of human processes
 -   Catalogue provides the infrastructure → leads to conferences which lead to development of more infrastructure
 -   Network Entrepreneur sees several decentralized groups that aren't connected and services as a connector
 
-## Connection between WEC and WELL
+### Connection between WEC and WELL
 
 -   picture yourself as a hippie in the 1980's, communes will save the world and end warmaking America
     -   California is tech driven, everything is failing
@@ -70,7 +70,7 @@ Another definition: computationalization of human processes
 -   Electronic Frontier → empty society/land of consciousness
 -   Larry Bird, most influential people in silicon valley
 
-## Relations between web3 and p2p tech and cybernetic idea of control through communication
+### Relations between web3 and p2p tech and cybernetic idea of control through communication
 
 -   TECHNOCRACY what a good word
     -   control of society/industry by a highly technical group of elites
@@ -79,7 +79,7 @@ Another definition: computationalization of human processes
     -   Construction of system that allows for people to pursue profit under the guise of activism, rewards those that come early
 -   "The ledger will be honest with us in a way the state never has"
 
-## Our current state seems somewhat inevitable, were there any inflexion points along the way that could have changed the direction
+### Our current state seems somewhat inevitable, were there any inflexion points along the way that could have changed the direction
 
 -   Counterculture legitimates a project that is already underway
 -   Different in ways that we don't talk about as much
@@ -93,7 +93,7 @@ Another definition: computationalization of human processes
     -   Government have to intervene, like oil companies mining our social world
         -   Must let go of communalist dream of collective consciousness
 
-## How much was it actually counter culture legitimizing it and Steward Brand's use of counterculture language
+### How much was it actually counter culture legitimizing it and Steward Brand's use of counterculture language
 
 -   Stanford AI Lab + WEC which helped to legitimize it → described computers as super cool, tools for returning back to the land
 -   Created critical convening where they speak each other's language and are able to communicate because of it
@@ -101,7 +101,7 @@ Another definition: computationalization of human processes
     -   But a bastardization of war sentiment
     -   Consumerist, high-tech generation
 
-## Era of connected machines → connected humans
+### Era of connected machines → connected humans
 
 -   Enabled by technological development
 -   Can this be beneficial for everyone rather than just the privileged?
@@ -109,19 +109,19 @@ Another definition: computationalization of human processes
     -   not only corporate sponsored but also partnered with the state
     -   intersection of Big Tech and the state is an uh oh → military industrial complex never really goes away
 
-## Where is todays counterculture
+### Where is todays counterculture
 
 -   Not the left, but actually the right
 -   Concern is not big data and ML but with corporations and states
 -   Place of rebellion is not at the data level but at the institution and union level (in big corporations) + legal level (ex: protection of Uber drivers)
 -   There are bodies and factories and server farms → lets not forget the basis of our abstractions
 
-## Would Steward Brand say his work has been coopted?
+### Would Steward Brand say his work has been coopted?
 
 -   Doesn't like the word 'coopt' → one of his little academic puddles
     -   Cooptation implies an authentic community which is then eaten up by another larger corporati
 
-## What can we learn from the promises/pitfalls of Steward Brand
+### What can we learn from the promises/pitfalls of Steward Brand
 
 -   Performative politics
     -   false belief that finding ourselves in our mid 20s is gonna change the world
