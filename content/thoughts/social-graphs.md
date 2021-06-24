@@ -28,4 +28,4 @@ https://www.youtube.com/watch?v=xbnDay35L8I
 https://www.youtube.com/watch?v=UOEpe17nPhE
 * expression on social media in an 'anonymized' setting
 
-[pseudonymous-web](thoughts/articles/pseudonymous-web.md)
+[pseudonymous-web](/thoughts/articles/pseudonymous-web)

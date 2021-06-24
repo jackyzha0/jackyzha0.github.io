@@ -53,7 +53,7 @@ i think for me from an engineering perspective like if i'm dishonest with others
   should normalize growth
   if people STILL hold views that are problematic by today's standards, then THAT's problematic
 
-[ephemereal-content](thoughts/ephemereal-content.md)
+[ephemereal-content](/thoughts/ephemereal-content)
   move towards realtime media rather than offline media (e.g. streaming > videos)
 
 A theorem is only a fact in the context of the axioms on which it is based. Axioms are treated more like postulates, accepted only tentatively and defining a branch of mathematics.
@@ -69,7 +69,7 @@ He lays out how administrative states come up with a sort of "bureaucratic imagi
 * concept of microworlds as a stepping stone to exploring and getting the right answer
 
 ## Social media
-[social-graphs](thoughts/social-graphs.md)
+[social-graphs](/thoughts/social-graphs)
 https://edwardsnowden.substack.com/p/lifting-the-mask
 One history of the Internet — and I'd argue a rather significant one — is the history of the individual's disempowerment, as governments and businesses both sought to monitor and profit from what had fundamentally been a user-to-user or peer-to-peer relationship. The result was the centralization and consolidation of the Internet — the true y2k tragedy. This tragedy unfolded in stages, a gradual infringement of rights: users had to first be made transparent to their internet service providers, and then they were made transparent to the internet services they used, and finally they were made transparent to one another. The intimate linking of users' online personas with their offline legal identity was an iniquitous squandering of liberty and technology that has resulted in today's atmosphere of accountability for the citizen and impunity for the state. Gone were the days of self-reinvention, imagination, and flexibility, and a new era emerged — a new eternal era — where our pasts were held against us. Forever.
 

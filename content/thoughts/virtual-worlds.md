@@ -18,7 +18,7 @@ http://www.uky.edu/~mwa229/RobertNozickTheExperienceMachine.pdf
     -   devices will just be viewing places
 https://www.mightyapp.com/
 
-No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves. Interface with these virtual worlds through looking at our screens, typing on our keyboards, etc. even with a [pseudonymous-web](thoughts/articles/pseudonymous-web.md) that is not supposedly tied to anything in the physical realm.
+No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves. Interface with these virtual worlds through looking at our screens, typing on our keyboards, etc. even with a [pseudonymous-web](/thoughts/articles/pseudonymous-web) that is not supposedly tied to anything in the physical realm.
 
 ### VR
 Physical bodies perceive the senses that are input from the VR machine. Brain in a vat experiment?

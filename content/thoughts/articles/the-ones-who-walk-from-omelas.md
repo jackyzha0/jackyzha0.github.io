@@ -22,9 +22,9 @@ In a scarce world with infinite wants, no. Our concept of utopia is related to o
 Utopia might only be a useful concept for people in higher resourced countries, it’s very difficult for people who are worried about day-to-day survival to imagine a utopia that is the same as first-world countries. Maslow's hierachy of needs?
 
 ## What does it mean to walk away from Omelas?
-Joining the counterculture rather than feeding into the status quo: [fctc](thoughts/books/fctc.md). Rejecting the capitalist society and 'returning to the land'
+Joining the counterculture rather than feeding into the status quo: [From Counterculture to Cyberculture](/thoughts/books/fctc). Rejecting the capitalist society and 'returning to the land'
 
-Immersion in the [virtual worlds](thoughts/virtual-worlds.md) rather than reality?
+Immersion in the [virtual worlds](/thoughts/virtual-worlds) rather than reality?
 
 ## Quotes
 "The trouble is that we have a bad habit, encouraged by pedants and sophisticates, of considering happiness as something rather stupid. Only pain is intellectual, only evil interesting."

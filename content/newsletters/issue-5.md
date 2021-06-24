@@ -22,8 +22,8 @@ Intro
 
 
 Links:
-[pseudonymous-web](thoughts/articles/pseudonymous-web.md)
-[cities-and-programming](thoughts/articles/cities-and-programming.md)
+[pseudonymous-web](/thoughts/articles/pseudonymous-web)
+[cities-and-programming](/thoughts/articles/cities-and-programming)
 
 https://academicworks.cuny.edu/gc_pubs/490/
 https://direct.mit.edu/artl/article/27/1/44/101872/The-Impossibility-of-Automating-Ambiguity

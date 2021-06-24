@@ -11,7 +11,7 @@ Both the tree and the semilattice are ways of thinking about how a large collect
 > For the human mind, the tree is the easiest vehicle for complex thoughts. But the city is not, cannot and must not be a tree. The city is a receptacle for life. If the receptacle severs the overlap of the strands of life within it, because it is a tree, it will be like a bowl full of razor blades on edge, ready to cut up whatever is entrusted to it. In such a receptacle life will be cut to pieces. If we make cities which are trees, they will cut our life within to pieces.
 
 ## Urban Planning
-[urban-planning](thoughts/urban-planning.md)
+[urban-planning](/thoughts/urban-planning)
 Columbia, Maryland → Neighbourhoods, in clusters of five, form 'villages'. Transportation joins the villages into a new town. The organization is a tree.
 
 Hilberseimer's book The Nature of Cities → He describes the fact that certain Roman towns had their origin as military camps. The symbol is apt, for, of course, the organization of the army was designed precisely in order to create discipline and rigidity.
@@ -32,4 +32,4 @@ Maybe this is where tools like knowledge graphs come in. Allow us to better visu
 Regular note taking like Notion is hierarchical and linear → its a tree
 Graph representations like Roam Research, Obsidian allow us to make non-obvious non-hierarchical connections between concepts
 
-Curious if we can apply graph visualization approaches to [social media](thoughts/social-graphs.md)?
+Curious if we can apply graph visualization approaches to [social media](/thoughts/social-graphs)?

@@ -90,7 +90,7 @@ Secondly, we need to diversify. Diversify not only in the sense of having better
 
 > “How many people have you considered before you make that decision?”
 
-Let's [design for everyone](thoughts/books/design-justice.md). Consider people of different ethnic groups, sexualities, income, just to name a few. By having more representation in these teams, AI can cater to more than just that select group of people who are western, educated, and rich. Instead, by bringing in a fresh perspective on the problems that these teams are trying to tackle, they can create innovation that benefits a whole range of communities. 
+Let's [design for everyone](/thoughts/books/design-justice). Consider people of different ethnic groups, sexualities, income, just to name a few. By having more representation in these teams, AI can cater to more than just that select group of people who are western, educated, and rich. Instead, by bringing in a fresh perspective on the problems that these teams are trying to tackle, they can create innovation that benefits a whole range of communities. 
 
 With increased diversity and representation, the Google Photo misidentification problem never would have happened. Together, we can help to build a future where diversity is no longer an issue in both machine learning models and tech, but society too. Where we don’t just use AI mindlessly but understand it and use it in such a way that it helps to empower humanity. Where we can work towards a future where we can begin to trust the more subjective decisions that an AI can make.
 

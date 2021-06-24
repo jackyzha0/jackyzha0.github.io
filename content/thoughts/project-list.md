@@ -50,7 +50,7 @@ tests:
             -   yarn i
             -   yarn dev
 ##   better graph visualization
-[social-graphs](thoughts/social-graphs.md)
+[social-graphs](/thoughts/social-graphs)
 
 [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
     

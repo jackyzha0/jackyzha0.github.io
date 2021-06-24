@@ -3,14 +3,14 @@
 -   we will choose to identify with whatever in-group will immediately benefit us the most
 -   why soririties + frats are successful → sunk cost falacy
 -   amount of boundaries required → well organized events vs serendipitous interactions
-	-   do serendipitous interactions only come from [ephemereal-content](/thoughts/ephemereal-content.md)?
+	-   do serendipitous interactions only come from [ephemereal-content](/thoughts/ephemereal-content)?
 
 ## Community Governance
 -   bottom-up emergent properties vs top-down governance
 -   homeostasis of communities
     -   mix of internal and external influence
     -   secluded vs public
--   [labels-and-quantization](thoughts/labels-and-quantization.md)
+-   [labels-and-quantization](/thoughts/labels-and-quantization)
     -   conforming to labels
     -   self-fulfilling prophecies
 -   sanctity of natural interactions
@@ -18,7 +18,7 @@
     -   how do we screen for value alignment?
         -   interviews? (two-way vibe check)
         -   publishing list of values
-        -   why introductions are hard: [introductions](thoughts/introductions.md)
+        -   why introductions are hard: [introductions](/thoughts/introductions)
             -   can never fully/properly frame yourself
 
 ## 90/9/1 Rule
@@ -43,7 +43,7 @@ What is the role of moderation in a community? What does good/bad moderation loo
 
 I think a key part of answering this is trying to define what role a community occupies. Is it just a collection of people gathering around a shared identity? Or is it supposed to be a platform for moderated idea discussion/generation? Or something else in between.
 
-Thinking about this at the [infrastructure](thoughts/infrastructure.md) level too, if a community's purpose is to serve as infrastructure so that it enables conversations, should infrastructure be regulated/enforced or something that should just play out naturally?
+Thinking about this at the [infrastructure](/thoughts/infrastructure) level too, if a community's purpose is to serve as infrastructure so that it enables conversations, should infrastructure be regulated/enforced or something that should just play out naturally?
 
 Broadly defined, I see moderation as having two main categories: moderation of users and moderation of content. Moderation then, is to ensure that the set of values that is being conveyed by the users/content roughly aligns with that of the group/community.
 
