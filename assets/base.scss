@@ -140,3 +140,11 @@ hr {
   color: var(--dark);
   background-color: var(--dark);
 }
+
+// internal link
+a[href^="/thoughts"], a[href^="/books"], a[href^="/classes"] {
+  text-decoration: none;
+  background-color: #afbfc955;
+  padding: 0 0.2em;
+  border-radius: 3px;
+}

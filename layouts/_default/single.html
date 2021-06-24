@@ -5,9 +5,17 @@
 <body>
     <!-- Begin actual content -->
     {{partial "landing/darkmode.html" .}}
-    <div class="lt-content-column singlePage">
+    <article class="lt-content-column singlePage">
         {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
         {{- .Content -}}
+    </article>
+    <div class="lt-content-column">
+        <hr/>
+        <p>
+            Welcome weary traveler of the web, it looks like you've stumbled upon part of my web of thoughts and other things!
+            Feel free to poke around but don't expect anything here to be remotely polished, accurate, or well-linked.
+            This is mostly an internal thought dump that I've decided to publish in the hopes that something in here inspires someone or something.
+        </p>
         <ul id="sub-nav">
             <li><a href="/">↳ (country roads) take me home</a></li>
         </ul>

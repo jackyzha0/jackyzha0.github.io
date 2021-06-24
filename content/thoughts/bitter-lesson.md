@@ -14,6 +14,4 @@ the bitter lesson → http://www.incompleteideas.net/IncIdeas/BitterLesson.html
         -   sigmoid → non-linear
         -   what other solution spaces are we missing
 
-
-
 constraining solution space with human heuristics

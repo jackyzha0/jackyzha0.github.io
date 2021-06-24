@@ -3,13 +3,11 @@ title: "A Failure Resume"
 date: 2020-08-21T14:02:48-07:00
 ---
 
-Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago, a list of things that didn't exactly go according to plan, and the lessons learned.
+Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago. It's a list of things that didn't exactly go according to plan, and the lessons learned.
 
-The more I think about it, the more I realize that a failure resume is a great way to document all the spectacular ways you've worked hard towards your own goals and accomplishments, validating them in a sense.
+The more I think about it, the more I realize that a failure resume is a great way to document all the spectacular ways you've worked hard towards your own goals and accomplishments. In some ways, it validates your struggle and your effort.
 
-I've recently been inspired by both Kate Huang[^2] and Joice Tang's[^3] failure resumes and decided to make my own.
-
-What I wanted to try with this failure resume is, rather than focusing on the individual failures themselves, note what I learned from each of them. Hopefully, it'll serve as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.
+I've recently been inspired by both Kate Huang[^2] and Joice Tang's[^3] failure resumes and decided to make my own. What I wanted to try with this failure resume is, rather than focusing on the individual failures themselves, note what I learned from each of them. Hopefully, it'll serve as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.
 
 *A 2021 update:* Keeping a failure resume has let me be so much more ambitious in trying new things and applying for things I would otherwise think I'm unqualified to apply for! I'm really glad I started this.
 

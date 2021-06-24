@@ -42,7 +42,7 @@ My process of collecting random scraps of information first sprung up from comin
 
 > We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. &mdash; Joel Hooks
 
-Now that I have all of these new-found ideas and tidbits of information, what do I do with them? Keep growing them forever? At some point on the [explore-exploit curve](https://towardsdatascience.com/intro-to-reinforcement-learning-the-explore-exploit-dilemma-463ceb004989), this knowledge should be applied to something in order to manifest it into something useful. The problem is, which ideas get priority of my time and effort?
+Now that I have all of these new-found ideas and tidbits of information, what do I do with them? Keep growing them forever? At some point on the [exploit-explore](/thoughts/exploit-explore) tradeoff, this knowledge should be applied to something in order to manifest it into something useful. The problem is, which ideas get priority of my time and effort?
 
 ![Watering the plants](/posts/images/digital-gardening/watering.png)
 

@@ -27,6 +27,7 @@ While there is rapidly growing interest in algorithmic bias audits, especially i
 One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
 
 ### Bias
+Relevant to [bias-bug](posts/bias-bug.md)
 3 groups of study
 1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
 2. Technical Bias: some underlying aspect of the technology reproduces bias

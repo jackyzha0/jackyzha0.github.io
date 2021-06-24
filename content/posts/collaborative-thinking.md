@@ -37,7 +37,7 @@ Individuals in these clusters experience a sort of echo chamber effect whereby t
 What we can do to counteract this extreme alignment is to build a broader foundation of knowledge. When you come across an individual with differing views, hopefully you will at least have the base fundamental knowledge to understand their perspective.
 
 ## Learning communities
-This, at least in part, is why I've recently become more certain of wanting to go to grad school in the future. I used to have tunnel-vision in thinking that all I wanted to do in the future was to just work in industry CS. Recently, I've started to realize that CS not a single discipline, but rather it's a tool that can help solve uniquely human problems, and these human problems are inherently multidisciplinary.
+This, at least in part, is why I've recently become more certain of wanting to go to [academia](thoughts/academia.md) in the future. I used to have tunnel-vision in thinking that all I wanted to do in the future was to just work in industry CS. Recently, I've started to realize that CS not a single discipline, but rather it's a tool that can help solve uniquely human problems, and these human problems are inherently multidisciplinary.
 
 I've started to read and learn more about the world around me outside of my little bubble of CS-related topics and it's been eye-opening to see issues I read about in my philosophy class come up in a linguistics lecture which in turn comes up in a book I'm reading. I've found that the best way for me to cement my learning and understanding is through discussion with people, rather than just sitting and ruminating on my own -- a very different pace than the typical *code-Stackoverflow-copy-repeat* self-learning cycle that most programmers (including myself) are familiar with.
 
@@ -48,7 +48,7 @@ The important part of learning communities like colleges is not necessarily the 
 
 For me, learning is very close to a zero-sum game. I can only expand the area of my knowledge blob so fast. If I want to broaden my foundational knowledge base, I need to reign in the amount of time spent growing purely technical strengths and to stop saying 'yes' to any and every opportunity that comes up.
 
-Slowly but surely, I'm learning to value my own time and to set it aside to just absorb more about the world and to extend the reaches of my knowledge just a little bit further. To dilly-dally among the Wikipedia rabbit holes and faff among the ridiculously long list of side projects I planned to start. I'm experimenting with what I previously thought were deadends and little seeds of insight are starting to grow. Maybe I'll find something interesting to share among the construction of this broader foundation.
+Slowly but surely, I'm learning to value my own time and to set it aside to just absorb more about the world and to extend the reaches of my knowledge just a little bit further. To dilly-dally among the Wikipedia rabbit holes, cultivate [my digital garden](posts/digital-gardening.md), and faff among the ridiculously long list of side projects I planned to start. I'm experimenting with what I previously thought were deadends and little seeds of insight are starting to grow. Maybe I'll find something interesting to share among the construction of this broader foundation.
 
 **Acknowledgements**
 
