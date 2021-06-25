@@ -38,3 +38,7 @@ https://automatter.substack.com/
 http://www.jsadikkhan.com/streetfight-the-book.html
 https://kenliu.name/books/what-is-silkpunk/
 https://honk.me/
+
+https://danluu.com/p95-skill/
+https://psmag.com/news/all-wikipedia-roads-lead-to-philosophy-but-some-of-them-go-through-southeast-europe-first
+https://slim.computer/visual-proofs/proof/

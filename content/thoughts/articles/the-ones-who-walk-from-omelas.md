@@ -3,11 +3,12 @@ title: "the-ones-who-walk-from-omelas"
 date: 2021-06-22T09:14:10-04:00
 ---
 
-Link: http://sites.asiasociety.org/asia21summit/wp-content/uploads/2011/02/3.-Le-Guin-Ursula-The-Ones-Who-Walk-Away-From-Omelas.pdf
+http://sites.asiasociety.org/asia21summit/wp-content/uploads/2011/02/3.-Le-Guin-Ursula-The-Ones-Who-Walk-Away-From-Omelas.pdf
 
 There is no happiness without suffering. The story presents a classic utilitarian problem: is it morally justifiable to inflict suffering on one person in the service of others’ happiness?
 
 Thinking about it in terms of technology as a multiplicative tool. Is it then morally just to develop technology to benefit others knowing that it will exacerbate the suffering of marginalized groups?
+Follow up: is there any way we can use tech as a running shoe instead of a crutch?
 
 Did the agricultural revolution make us generally less happy? "We didn’t domesticate wheat, we domesticated ourselves"
 

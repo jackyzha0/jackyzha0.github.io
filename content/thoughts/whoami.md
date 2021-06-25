@@ -28,6 +28,7 @@ kindness and empathy
 
 
 ## how can we build support systems and communities for the next generation of builders?
+[infrastructure](/thoughts/infrastructure)
 * software infra and tooling
 * lowering barrier of entry
 
@@ -44,6 +45,6 @@ I'm interested in how we study cognitive systems to understand the implications 
 
 I'm interested in how we can use ethical tech as a framework to ensure the systems we build help the people they're intended to help. Machine intelligence will become almost integral to our lives, becoming less visible in the process, and AI’s bias bug will get harder to beat. How do we ensure that AI can cater to more than just that select group of people who are western, educated, and rich?
 
-
 ## being a technologist
 https://nadiaeghbal.com/technical-conversations
+

@@ -3,6 +3,9 @@ title: "Design Justice"
 date: 2021-06-16T08:58:58-04:00
 ---
 
+## Summary
+TODO
+
 ## Quotes
 ### Defining Design Justice
 How larger systems -- including norms, values, and and assumptions -- are encoded in and reproduced through the design of sciotechnical systems. (artifacts have politics)
@@ -27,7 +30,8 @@ While there is rapidly growing interest in algorithmic bias audits, especially i
 One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
 
 ### Bias
-Relevant to [bias-bug](posts/bias-bug.md)
+Relevant to [bias bug](/posts/bias-bug)
+
 3 groups of study
 1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
 2. Technical Bias: some underlying aspect of the technology reproduces bias
@@ -65,6 +69,11 @@ Racial hierarchies can only be dismantled by actively antiracist systems design,
 Far too often, user personas are created out of thin air by members of the design team, based on their own assumption or stereotypes about groups of people. When this happens, user personas are literally objectified assumptions about end users.
 
 ### Maintenance
+Relevant to [maintenance](/thoughts/creation-vs-maintenance)
+
+Creating new vs maintaing old
+Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating someething new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
+
 Support maintenance, not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
 
 "Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenace"
@@ -83,6 +92,8 @@ Neoliberal, technocentric ideas about the city as a machine or as a software sys
 First consider what already works at the community level, and to steer students away from the pitfalls of tech solutionism and technochauvanism
 
 ### Attention Economy
+Relevant to [attention economy](/thoughts/attention-economy)
+
 Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts.
 
 "Design challenges" in which dozens, sometimes hundreds, of people do free labour and submit ideas in hopes that they'll be the lucky one chosen to receive visibility, recognition, and possibly even compensation.
@@ -104,6 +115,8 @@ Many who are active in these design sites feel themselves to be participants in 
 Without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
 
 #### Hackathons: The Bad
+Relevant to [reinventing hackathons](/thoughts/reinventing-hackathons)
+
 Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline. 
 
 "Hackathons, time-bounded events where participants write computer code and build apps, have become a opular means of socializing tech students and workers to produce 'innovation' despite little promise of material reward... [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works' consent in the 'new' economy." (Sharon Zukin and Max Papadantonakis)
@@ -113,9 +126,6 @@ Hackathons provide excellent opportunities for the extraction of free labour.
 The assumption that a "hackathon for good" will be successful if it produces a new app that can help "solve" a social problem runs deep.
 
 Hackathons nearly always focus on problems and rarely build on existing community assets; and people thing hackathons can do things that they usually can't, such as solve big or even little problems, create new products overnight, or 'level the playing field' of innovation through meritocracy. "A one day hack for homelessness takes away from the complexity of social justice issues. ... You can't just come up with an app and solve the world's problems"
-
-Creating new vs maintaing old
-Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating someething new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
 
 "Hackathon spaces cultivate a culture that marginalizes hackers with specific needs, including but not limited to women, people with disabilities, people with non-traditional backgrounds, and even individuals with specific dietary restrictions. By consistently ignoring the health, diet, and care needs of diverse attendees, along with needs based on skill, class, and gender identities, hackathons create an exclusive and hostile environment."
 
@@ -139,7 +149,7 @@ Key elements
 * Teach data science that values not only reason, but ethics and emotions as well
 
 #### Constructionism
-Pedagogical approach that centers context, situated knowledge, and learning by doing.
+Pedagogical approach that centers context, situated knowledge, and learning by doing. Similar to the ideas in [Mindstorms](/thoughts/books/mindstorms)
 
 Papert rejected the banking method of education: educator transmits a piece of information to the learner's brain
 

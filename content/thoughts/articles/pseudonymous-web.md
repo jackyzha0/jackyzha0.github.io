@@ -5,9 +5,11 @@ date: 2021-06-17T00:57:26-04:00
 
 https://qualiaspace.substack.com/p/the-future-of-social-media-is-pseudonymous
 
-an identity-based social graph is fundamentally limited. Your Facebook identity and social graph are mere digital shadows of their physical counterparts, and little more.
-By attaching our real-world identities to everything we do, these platforms feel suffocating and unsafe.
-"In real life and on Facebook, you’re always signaling information about yourself which may not have anything to do with the context you’re in."
+An identity-based [social graph](/thoughts/social-graphs) is fundamentally limited. Your Facebook identity and social graph are mere digital shadows of their physical counterparts, and little more.
+
+By attaching our real-world identities to everything we do, these platforms feel suffocating and unsafe. Is there any way we can construct fully [virtual worlds](thoughts/virtual-worlds) not tethered to reality? I'm not sure we can.
+
+"In real life and on Facebook, you’re always signaling information about yourself which may not have anything to do with the context you’re in." -> [framing](/posts/framing)
 
 The paper introduces the comparison between a crutch and a shoe. Whereas a shoe can help you run faster, a crutch is designed to support you when you can’t walk normally, to get you as close as possible. A crutch will never help you run faster; it’s just an imitative substitute when the real thing isn’t available. In this sense, Facebook’s social graph is a crutch that imitates real-world relationships. Platforms which 1) require or encourage using your real identity or 2) rely on existing social graphs (contacts, classmates, mutuals) merely imitate “being there.” By mirroring the real world, platforms like Facebook are ultimately limited by the very physical connections they seek to transcend.
 

@@ -15,6 +15,8 @@ Postulates that names of participants can have at most 2 of these 3 properties
 -   Secure: The amount of damage a malicious entity can inflict on the system should be as low as possible.
 -   Decentralized: Names correctly resolve to their respective entities without the use of a central authority or service.
 
+Maybe another version of [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)?
+
 ### Sybil Attacks
 https://en.wikipedia.org/wiki/Sybil_attack
 

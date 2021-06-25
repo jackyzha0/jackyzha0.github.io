@@ -60,6 +60,6 @@ I'm starting to step back and reflect on my current commitments and deciding to 
 
 None of what I do is perfect. Looking back at writing from a year ago, reading code from a few months ago even, makes me cringe a little. Like any garden, this one evolves and grows over time; there is no 'end-state' that I'm trying to get the garden to. This little garden is just a little place for me to experiment, to push out things that I'm working on, and to provide snapshots of all the in-progress things going on in my life.
 
-Through tending to this garden in public, I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.
+Through tending to this garden [in public](/thoughts/building-in-public), I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.
 
 Maybe you'll find this as an incentive to start your own.

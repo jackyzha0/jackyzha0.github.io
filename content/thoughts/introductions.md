@@ -4,8 +4,10 @@ date: 2021-06-05T19:47:49-04:00
 ---
 
 idolization
+https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html
 * "You implicitly invalidate any struggles they have, and eschew their private life. Your praise becomes so diluted that it’s meaningless, just another reflex or polite gesture. And, god forbid they ever deviate from this god-like persona that you’ve created for them."
 * feels like there is rarely any space to be vulnerable
+* [impostor-syndrome](/thoughts/impostor-syndrome)
 
 bandwidth of communication mediums
 * 6 word story → baby shoes for sale, never worn

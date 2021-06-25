@@ -37,8 +37,7 @@ In some ways, this is Newton's First Law but applied to behaviour: if you do som
 In 1951, Solomon Asch conducted [an experiment](https://en.wikipedia.org/wiki/Asch_conformity_experiments) to investigate the extent of which social pressures can affect a person's behaviour. In this experiment, he asked, "Which line is the longest out of the three given?". In an individual setting, 99% of people answered correctly. However, when put in a room of actors instructed to answer incorrectly, nearly 75% of all participants gave at least one incorrect answer throughout 12 trials.
 
 People conform for two main reasons:
-
-1. They want to fit in with the group **(normative influence)**
+1. They want to fit in with the [group](/thoughts/communities) **(normative influence)**
 2. They believe the group is better informed than they are **(informational influence)**
 
 Historically, having different behaviours in different contexts may have been evolutionarily beneficial, helping us to better collaborate and form connections with each other without causing undue conflict.
@@ -51,8 +50,6 @@ Our ability to 'frame' ourselves different depending on the social situation lik
 ## Why context collapse is bad
 ![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/context-collapse.png)
 
-
-
 When experiencing context collapse, talking to your audience beyond a surface level becomes very difficult. Smaller groups, by nature, have more commonalities to relate to, whether that be interests, music taste, place of study, or lived experiences. These groups provide the chance for individuals to have intimate conversations and exercise different facets of themselves that they otherwise wouldn't get the chance to. A queer person may be out to a close group of friends but not to their family; a budding writer can have a safe place to explore potential ideas without alienating the rest of their friend group.
 
 When we experience context collapse, these social groups and audiences become massive, and the amount of overlap in interests or values of the collective group is miniscule. How are you supposed to have any sort of meaningful connection when the only thing you share in common on the platform is that you ‘know’ each other?
@@ -62,7 +59,7 @@ I’ve noticed three main strategies individuals, companies, and platforms have 
 
 1. **Lowest Common Denominator**. Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
 
-2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal-content](thoughts/ephemereal-content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
+2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal-content](/thoughts/ephemereal-content), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
 
 3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public internet.
 

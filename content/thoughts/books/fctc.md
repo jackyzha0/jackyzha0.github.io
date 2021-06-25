@@ -129,3 +129,6 @@ Another definition: computationalization of human processes
     -   don't isolate, break out and do politics
 -   don't build communities of consciousness
     -   build places of exchange, places where public decision making and CHANGE happens
+
+## Quotes
+TODO
