@@ -59,7 +59,7 @@ I’ve noticed three main strategies individuals, companies, and platforms have 
 
 1. **Lowest Common Denominator**. Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
 
-2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal-content](/thoughts/ephemereal-content), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
+2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](/thoughts/ephemereal-content), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
 
 3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public internet.
 

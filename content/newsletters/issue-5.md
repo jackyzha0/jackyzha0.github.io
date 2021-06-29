@@ -40,6 +40,7 @@ https://www.briantimar.com/notes/mimetic/mimetic/
 https://en.wikipedia.org/wiki/Zooko%27s_triangle
 https://en.wikipedia.org/wiki/Byzantine_fault
 https://danluu.com/sounds-easy/
+
 http://www.jsadikkhan.com/streetfight-the-book.html
 https://kenliu.name/books/what-is-silkpunk/
 https://honk.me/

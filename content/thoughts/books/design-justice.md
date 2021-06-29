@@ -4,11 +4,19 @@ date: 2021-06-16T08:58:58-04:00
 ---
 
 ## Summary
-TODO
+Design Justice focuses not just on design in the visual and aesthetic sense, but also on the design of systems.
+
+To quote from the book, "Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face." The norms, values, and assumptions that are encoded and reproduced in the *design* of systems can be changed by rethinking our design processes.
+
+In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and technosolutionism -- all through detailed case studies of real-world design practices and social movements.
+
+She guides the reader into how the 'unmarked user' and universal design erases certain groups of people within the matrix of domination (through ableist, eurocentric, and classist assumptions) and refutes the argument that 'design by committee produces mediocrity.'
+
+Design Justice is a book that invites us to "center people who are too often marginalized by design". More importantly, it urges us to work towards an equitable world for everyone: one which treats design justice not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
 
 ## Quotes
 ### Defining Design Justice
-How larger systems -- including norms, values, and and assumptions -- are encoded in and reproduced through the design of sciotechnical systems. (artifacts have politics)
+How larger systems -- including norms, values, and assumptions -- are encoded in and reproduced through the design of sciotechnical systems. (artifacts have politics)
 
 Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face
 
@@ -168,4 +176,4 @@ However, if resource constraints become an excuse to avoid examining the root of
 
 It's true that design justice practitioners have to take care that critique does not become our primary activity; an overemphasis on testing, evaluation, and critique can indeed be ultimately disempowering. At the same time, explicit critique paired with alternative proposals can be very productive.
 
-Design justice doesn't imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a *filter* that we use to eliminate most design possibilities from consideration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnet that we use to limit ourselves to a minimal set of suppoisedly universal design choics, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
+Design justice doesn't imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a *filter* that we use to eliminate most design possibilities from consideration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choics, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
