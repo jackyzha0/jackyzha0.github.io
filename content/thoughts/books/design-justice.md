@@ -14,6 +14,15 @@ She guides the reader into how the 'unmarked user' and universal design erases c
 
 Design Justice is a book that invites us to "center people who are too often marginalized by design". More importantly, it urges us to work towards an equitable world for everyone: one which treats design justice not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
 
+## Reflection
+Design sites are valorized as places of learning, making, and building and the intersection of social movements and the counterculture. Why then, have they become increasingly corporate places of extraction of free labour?
+
+This cooptation of hacker culture, hackathons as design sites in particular, by neoliberalism has been on the back of my mind ever since reading the chapter on design sites in Design Justice. As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time, moving from safe spaces for idea exploration to increasingly corporate, time-bound, events where hackers spin up apps to test company products in exchange for the slim chance of winning prizes and recognition.
+
+Hackathons reshape precarious and unpaid work. Writing code and building apps for free becomes an extraordinary opportunity and a collective imagination for fictional expectations of innovation that benefits all. Do we so necessarily need to tie these rituals of play in building and tinkering to the recruiting and product testing pipeline for large corporations?
+
+As a hackathon organizer, Design Justice has helped me to more actively think about what hackathons are trying to motivate. Having more of the tools to articulate and locate exactly why hackathons have felt increasingly corporate is the first step to reinstate hackathons as third spaces not as places of creation or competition, but as places of play and exploration.
+
 ## Quotes
 ### Defining Design Justice
 How larger systems -- including norms, values, and assumptions -- are encoded in and reproduced through the design of sciotechnical systems. (artifacts have politics)
@@ -111,7 +120,7 @@ Tracing the cooptation of hacker culture by neoliberalism
 
 Invisibility of subaltern communites may also be strategic. Sometimes, they shield their practices and innovations from mainstream visibility to avoid incorporation and appropriation.
 
-"Alternative spaces and forms of living provided interesting ideas could be milked and marketing. So certain structural features of these 'indie' movement outputs were suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories"
+"Alternative spaces and forms of living provided interesting ideas could be milked and marketed. So certain structural features of these 'indie' movement outputs were suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories"
 https://placesjournal.org/article/post-it-note-city/
 
 Hackspaces in the European context, which they describe as originally being "third spaces" outside of the logic of both the communist state and the capitalist market. 
@@ -123,11 +132,11 @@ Many who are active in these design sites feel themselves to be participants in 
 Without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
 
 #### Hackathons: The Bad
-Relevant to [reinventing hackathons](/thoughts/reinventing-hackathons)
+Relevant to [reinventing hackathons](thoughts/hackathons.md)
 
 Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline. 
 
-"Hackathons, time-bounded events where participants write computer code and build apps, have become a opular means of socializing tech students and workers to produce 'innovation' despite little promise of material reward... [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works' consent in the 'new' economy." (Sharon Zukin and Max Papadantonakis)
+"Hackathons, time-bounded events where participants write computer code and build apps, have become a popular means of socializing tech students and workers to produce 'innovation' despite little promise of material reward... [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works' consent in the 'new' economy." (Sharon Zukin and Max Papadantonakis)
 
 Hackathons provide excellent opportunities for the extraction of free labour.
 

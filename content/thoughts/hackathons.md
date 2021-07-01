@@ -1,5 +1,5 @@
 ---
-title: "Reinventing Hackathons"
+title: "Hackathons"
 date: 2021-02-27T12:01:16-08:00
 ---
 
@@ -7,12 +7,13 @@ What first comes to your head when you think of the word 'hackathon'? Is it a 24
 
 As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time. By setting a precedence of requiring hackers to already have insane amounts of pre-requisite knowledge and to stay up the entire event, it discourages new hackers — the very original target audience — from attending.
 
+## Corporatization of Hackathons and Design Spaces
+### Learning-first Hackathons
 This year, I was responsible for leading logistics at our beginner-focused hackathon called HackCamp. To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend, with a focus on learning and workshops on the first day, and building and hacking on the second day. This allows hackers to attend workshops and learn without fear of missing out on precious hacking time, to have actual scheduled sleeping time, and to place emphasis on submitting projects rather than winning. We were able to reach over 500+ attendees, 3.2k+ live stream viewers, and over $1200 in donations to charities, and the feedback we got was absolutely stellar. I'm really excited that I got to help bring this vision for a new hackathon format to life.
 
-In 2021, I hope to open a dialogue with other hackathon organizers from around the world to see how we can help hackathons be what they were designed to be: a friendly environment for radical ideas and rapid learning for all people.
+Help hackathons be what they were designed to be: a friendly environment for radical ideas and rapid learning for all people.
 
-Design Justice
----
+## Design Justice
 * How do we apply design justice principles to create inclusive design sites?
 
 ### hackathons becoming very corporate
@@ -30,7 +31,6 @@ Design Justice
 * "through such initiatives, city administrators signal that the public is invited to participate in decisionmaking on an ongoing basis, not only at the ballot box every few years" -> in response to city government being more transparent, more administrative data being made available to the public, and administrators actively seeking ideas from engaged publics about how to improve government services and city resident's quality of life
 * neoliberal, technocentric ideas about the city as a machine or as a software system waiting to be optimized have become increasingly prominent
     * citizens should not be reduced to users through the lens of neoliberal governmentality
-
 
 ### diversity and inclusivity
 *  broader availability of digital design and fabrication increases the opportunity for community-controlled design processes that include more diverse users and user stories, with more equitable and inclusive distribution of affordances
@@ -59,3 +59,40 @@ Design Justice
 * if well-organized, hackathons can provide an introduction to the use of tech for social justice, as well as pathways to employment
 * many feel that focused pop-ups, hackathons, and hack nights can be valuable if they respond to the real needs of organizations with a lot of domain expertise, instead of focusing on ideas that come from coders
 * "in the old days, people used to form teams and rush in and try to fix things, without really even knowing what was broken... it is no longer just a bunch of programmers in a room. there are now hackathons where actual community members are learning to code and interacting ... community members are also teaching programmers about the things they need to sustain and build for the future. that's a really good thing happening"
+
+## Hackathons as co-optation ritual
+https://academicworks.cuny.edu/gc_pubs/490/
+
+[Hackathons] reshape unpaid and precarious work. Writing code and building apps for free becomes an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all.
+
+Hackathons ask much of their participants but promise little in return. Why, then, have they become so popular?
+
+Many prototypes that are developed during hackathons, even winning projects, are not really usable.
+
+[Hackathons] translate the values of longstanding hacker subculture into new work norms... using rituals of play and pleasure to co-opt a wide range of talent into the service of corporations and the state without offering participants full-time jobs.
+
+Coding at hackathons as self-expolitation and self-investment... Motivation to participate in hackathons relies on complementary forms of social capital and emotional ties, from networking with potential employers and investors to interacting with old friends.
+
+Quasi-Orwellian precepts:
+1. Work is Play
+2. Exhaustion is Effervescent
+3. Precarity is Opportunity
+
+Hacker Subculture -> Work is Play
+Informal meetings and clubs of young amateur hackers were energized by the collaborative (and competitive) tinkering of a DIY ethic relating to 1960s [counter-culture](thoughts/books/fctc.md).
+
+Hackathons are a multi-site mechanism for both "manufacturing" innovation and "manufacturing consent"
+
+The hackathon acts a a multimodal platform for building social capital as well as facilitating and institutionalizing innovation. Yet the hackathon's corporate sponsors are front and center in control of the event.
+
+Sponsors fuel the romance of digital innovation by appealing to hackers' apsiration to be multi-dimensional agents of chance. "Doers, makers & disruptors," one announcement goes
+
+Balance of Recreation and Career
+"[Hackathons] are also perfect for my creative spur. I work as a corporate consultant and sometimes miss the research thing, the building of things. Hackathons allow me to do this."
+
+Sponsors don't really think hackathons are a good recruitment tool. Performance on a hackathon team doesn't give an adequate indication of ability to work on a "real" team.
+
+Hackathons are more important for companies because they need to maintain their 'cool' profile.
+
+
+
