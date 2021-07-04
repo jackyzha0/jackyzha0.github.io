@@ -148,3 +148,11 @@ a[href^="/thoughts"], a[href^="/books"], a[href^="/classes"] {
   padding: 0 0.2em;
   border-radius: 3px;
 }
+
+#contentWrapper, .singlePage {
+  margin: 25px 30vw;
+
+  @media all and (max-width: 1200px) {
+    margin: 25px 5vw;
+  }
+}

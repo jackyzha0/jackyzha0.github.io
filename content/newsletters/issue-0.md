@@ -17,7 +17,7 @@ I’ll try to keep these in a rough 3-2-1 fashion in each issue, with 3 things I
 ## 2 things I’ve been wondering about
 
 1. Why didn’t I start writing earlier? Writing has always been a way to help me organize my own thoughts. Now that I’ve started writing more frequently, I feel like I’m able to better put the jumble of thoughts inside my brain onto paper (or I guess a Markdown file in this case).
-2. Promoting healthier [hacking culture](thoughts/hackathons.md). Conversation inspired by [this tweet](https://twitter.com/sarahbdhsn/status/1347666496718213120). What can we do as hackathon organizers to make events less stressful/hypercompetitive for attendees (especially those who are differently-abled)?
+2. Promoting healthier [hacking culture](/thoughts/hackathons). Conversation inspired by [this tweet](https://twitter.com/sarahbdhsn/status/1347666496718213120). What can we do as hackathon organizers to make events less stressful/hypercompetitive for attendees (especially those who are differently-abled)?
 
 ## 1 thing I’ve done
 

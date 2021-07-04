@@ -18,7 +18,7 @@ date: 2021-07-02T15:05:25-04:00
 	-   russell → logical atoms as the building blocks of reality
 ## Symbolic AI as a degenerating research program
 -   problem of representing significance and relevance → how do you transfer the learnings to the real world
--   [heidegger](thoughts/cognitive-sciences/embedded-ai.md)
+-   [heidegger](/thoughts/cognitive-sciences/embedded-ai)
 	-   values are just meaningless facts (hammer is for hammering), leaves out information defining the relation of hammers to nails and the rest of the environment (readiness-to-hand)
 -   commonsense knowledge problem → how do we represent 'common sense' in a way that is accessible to AI systems that use natural language
 	-   problem isnt curating those facts, it's knowing which facts are relevant in any given situations (the [frame-problem](/thoughts/cognitive-sciences/frame-problem))

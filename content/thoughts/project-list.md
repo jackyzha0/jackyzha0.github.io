@@ -2,7 +2,11 @@
 title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 ---
+# Finished
+* [reflect](/posts/reflect)
+* [ctrl-v](/posts/ctrlv-next)
 
+# Ideas
 ## DreamCoder boolsat
 https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
 

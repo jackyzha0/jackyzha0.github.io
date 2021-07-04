@@ -22,7 +22,7 @@ Help hackathons be what they were designed to be: a friendly environment for rad
 * "For example, consider the transformation of agriculture from Indigenous knowledge of small-scale planting, harvesting, and land-management techniques to modern agribusiness with monocultures, pesticides, fertilizers, and roboticized megafarms"
 * hackerspaces were described as originally being "third spaces" outside of the logic of both the communist state and the capitalist market
 * "at the same time, without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric, because they end up dominated by white cis men and by middle-class people with free time and disposable income"
-    * they [hackathons] are understood by corporate managers as potentially effectives ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline
+    * [hackathons] are understood by corporate managers as potentially effectives ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline
     * hackathons provide excellent opportunities for the extraction of free labour
     * the assumption that a "hackathon for good" will be successful if it produces a new app the can help "solve a social problem runs deep"
     * they nearly always focus on problems and rarely build on existing community assets; and people think hackathons can do things that they usually can't, such as solve big or even little problems, create new products overnight, or 'level the playing field' of innovation through meritocracy
@@ -79,7 +79,7 @@ Quasi-Orwellian precepts:
 3. Precarity is Opportunity
 
 Hacker Subculture -> Work is Play
-Informal meetings and clubs of young amateur hackers were energized by the collaborative (and competitive) tinkering of a DIY ethic relating to 1960s [counter-culture](thoughts/books/fctc.md).
+Informal meetings and clubs of young amateur hackers were energized by the collaborative (and competitive) tinkering of a DIY ethic relating to 1960s [counter-culture](/thoughts/books/fctc).
 
 Hackathons are a multi-site mechanism for both "manufacturing" innovation and "manufacturing consent"
 

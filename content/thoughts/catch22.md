@@ -12,7 +12,6 @@ paradoxical sitauation -> catch-22
 no way to win
 double bind -> a psychological predicament in which a person receives from a single source conflicting messages that allow no appropriate response to be made
 
-
 ## Collingridge dilemma
 efforts to influence or control the further development of technology face a double-bind problem
 An information problem: impacts cannot be easily predicted until the technology is extensively developed and widely used.

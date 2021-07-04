@@ -36,7 +36,7 @@ People often say how elusive good work-life balance is, even to the point of say
 
 This was a big change from high school where a day at school left me completely drained and just ready to crash. Everything was so focused on grinding for results and doing work that it was hard to make time for myself. At Hootsuite, the community made it feel easy and natural to find the balance that worked for me.
 
-I was still working 8 hours a day, but somehow I felt energized and ready for more each day. It motivated me to make time to take on a freelance web development job just for practice (and to pay rent — living in Vancouver is rough) and even to make a simple project for a friend’s birthday ([wholesome-bot.xyz](http://wholesome-bot.xyz))!
+I was still working 8 hours a day, but somehow I felt energized and ready for more each day. It motivated me to make time to take on a freelance web development job just for practice (and to pay rent — living in Vancouver is rough) and even to make a simple project for a friend’s birthday!
 
 I know that this has probably been repeated countless times already, but I cannot stress how important it is to make sure you’re taking enough time off to relax.
 

@@ -79,14 +79,6 @@ footer {
   margin-left: 2em !important;
 }
 
-#contentWrapper {
-  margin: 25px 30vw;
-
-  @media all and (max-width: 1200px) {
-    margin: 25px 5vw;
-  }
-}
-
 @media all and (max-width: 600px) {
   header>nav {
     display: none;

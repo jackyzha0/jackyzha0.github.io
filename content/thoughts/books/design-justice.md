@@ -132,7 +132,7 @@ Many who are active in these design sites feel themselves to be participants in 
 Without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
 
 #### Hackathons: The Bad
-Relevant to [reinventing hackathons](thoughts/hackathons.md)
+Relevant to [reinventing hackathons](/thoughts/hackathons)
 
 Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline. 
 

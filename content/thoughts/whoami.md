@@ -24,7 +24,7 @@ make it possible for others to do x
 endlessly curious
 kindness and empathy
 
-## goals
+# goals
 
 
 ## how can we build support systems and communities for the next generation of builders?
