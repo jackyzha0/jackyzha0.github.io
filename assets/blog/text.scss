@@ -43,6 +43,11 @@ blockquote {
     margin-left: 0em;
     border-left: 3px solid var(--navy);
     padding-left: 1em;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+        border-color: var(--olive);
+    }
 }
 
 table {
@@ -63,4 +68,9 @@ article a {
     text-decoration: underline;
     text-decoration-color: var(--olive);
     text-decoration-thickness: .15em;
+}
+
+sup > a {
+    text-decoration: none;
+    padding: 0 0.1em 0 0.2em;
 }
