@@ -4,7 +4,7 @@ date: 2021-07-01T13:36:58-04:00
 ---
 
 ## The 'Involution' of Hackathons
-![PennApps XX Project](/posts/images/hackathons/drone.png)*PennApps XX Project*
+![A late night breakthrough on our PennApps XX Project](/posts/images/hackathons/drone.png)*A late night breakthrough on our PennApps XX Project*
 
 > "Quick, quick, Caden! Wake up -- the drone is **flying**!"
 
@@ -63,6 +63,9 @@ The problem with this approach is that it becomes incredibly reductionist. Hacks
 Hackathons, as they stand today, seem to optimize for short term excitement, and not so much for long term benefit. But this short-term burst of new products and ideas is exactly what corporations need to fuel their endless hunger for products, testing, and new talent.
 
 ## Corporate Cooptation
+
+![Cupstacking, a commonplace hackathon activity](/posts/images/hackathons/cooptation.jpg)*Cupstacking, a commonplace hackathon activity*
+
 Companies realized that the attendees of these design spaces would *readily* give up their free time to build potentially marketable products. If hackers so readily built things in their own time, why couldn't we co opt these for the company? Hackers provided a source of interesting ideas that could be milked, and, as a result, the creative outputs of these hackerspaces were "suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories."[^5]
 
 The free market has warped the hacker ethos and hackerspaces into something almost unrecognizable from what it was supposed to stand for. This set of values which may have worked well for small startups or individuals just doesn't scale well for an entire industry. Sharon Zukin and Max Papadantonakis in their work *Hackathons as Co-optation Ritual* describe three quasi-Orwellian principles that describe this new hacker culture: Work is Play, Exhaustion is Effervescent, and Precarity is Opportunity.[^1]
@@ -134,7 +137,7 @@ The sudden switch to virtual events due to COVID-19 may actually have been the c
 
 ![After HackCamp 2020](/posts/images/2020/post-hc.png)*After HackCamp 2020*
 
-This year, I was responsible for leading logistics at our beginner-focused hackathon called HackCamp. To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend. Here are a few things we changed:
+This year, I was responsible for leading logistics at our beginner-focused hackathon called [HackCamp](https://hackcamp.nwplus.io/). To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend. Here are a few things we changed:
 
 1. We separated learning and workshops from building and hacking and turned it into a two-day hackathon. This allowed hackers to attend workshops and learn without fear of missing out on precious hacking time and to have scheduled sleeping time between the Learn and Build days.
 2. We replaced our 'top' hackathon project awards with a $25 donation to charity for every project submitted. In the past, we've had feedback from hackers saying how this gave them the confidence to finish a project rather than to fail and give up working on the 'perfect' or 'winning' project.
