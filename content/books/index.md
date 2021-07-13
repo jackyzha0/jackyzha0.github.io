@@ -16,7 +16,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Streetfight** by Janette Sadik-Khan
 
 ## Current
-* **Finite and Infinite Games** by James P. Carse
+* **Never Let Me Go** by Kazuo Ishiguro
 
 ## Past
 ### 2021
