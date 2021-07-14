@@ -1,3 +1,10 @@
+---
+title: "Communities"
+date: 2021-07-14T15:22:10-04:00
+tags: ["communities"]
+---
+
+
 ## Ingroup/outgroup biases
 -   get social status points
 -   we will choose to identify with whatever in-group will immediately benefit us the most

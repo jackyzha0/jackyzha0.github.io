@@ -1,6 +1,7 @@
 ---
 title: "Fault Tolerance"
 date: 2021-06-23T15:14:28-04:00
+tags: ["knowledge","tech-and-society"]
 ---
 
 ## Fault Tolerance

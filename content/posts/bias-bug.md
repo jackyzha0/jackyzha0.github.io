@@ -1,7 +1,7 @@
 ---
 title: On AI’s ‘Bias Bug’
 date: 2020-08-29T16:27:50-07:00
-tags: ["ai", "tech"]
+tags: ["tech-and-society"]
 ---
 
 This blog post was originally intended to be a TED Talk given at TEDxRedmond but I unfortunately was never accepted. However, I did learn a lot in the process of writing it, and I hope you get some value out of it even its presented through just text.

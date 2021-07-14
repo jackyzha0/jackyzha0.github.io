@@ -1,6 +1,7 @@
 ---
 title: "A case for funding Open Source"
 date: 2021-02-27T12:03:33-08:00
+tags: ["tech-and-society"]
 ---
 
 ## Making of Open Source software

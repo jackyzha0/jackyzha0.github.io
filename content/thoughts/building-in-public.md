@@ -1,6 +1,7 @@
 ---
 title: "Building in Public"
 date: 2021-06-16T17:39:37-04:00
+tags: ["knowledge"]
 ---
 
 "He who works with the door open gets all kinds of interruptions, but he also occasionally gets clues as to what the world is and what might be important." — richard hamming

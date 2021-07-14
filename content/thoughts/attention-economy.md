@@ -1,6 +1,7 @@
 ---
 title: "attention-economy"
 date: 2021-06-17T00:27:02-04:00
+tags: ["tech-and-society"]
 ---
 
 attention as a commodity

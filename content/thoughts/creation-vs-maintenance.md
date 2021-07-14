@@ -1,6 +1,7 @@
 ---
 title: "Creation vs Maintenance"
 date: 2021-06-23T15:07:59-04:00
+tags: ["tech-and-society"]
 ---
 
 So much of today's society revolves around *creating new things* rather than *maintaining existing things*

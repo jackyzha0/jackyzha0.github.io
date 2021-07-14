@@ -1,6 +1,7 @@
 ---
 title: "A Failure Resume"
 date: 2020-08-21T14:02:48-07:00
+tags: ["personal"]
 ---
 
 Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago. It's a list of things that didn't exactly go according to plan, and the lessons learned.

@@ -1,6 +1,7 @@
 ---
 title: "software-and-politics"
 date: 2021-07-13T16:41:38-04:00
+tags: ["tech-and-society"]
 ---
 
 https://sbuss.substack.com/p/politics-for-software-engineers-part-2

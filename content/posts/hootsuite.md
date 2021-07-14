@@ -1,7 +1,7 @@
 ---
 title: "Interning at Hootsuite in Highschool"
 date: 2019-08-30T08:51:56-07:00
-tags: ["technical"]
+tags: ["personal"]
 ---
 
 (with insights from Calvin and Hobbes)

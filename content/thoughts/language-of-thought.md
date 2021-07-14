@@ -1,6 +1,7 @@
 ---
 title: "language-of-thought"
 date: 2021-07-02T15:40:00-04:00
+tags: ["cognitive-sciences"]
 ---
 
 # Crane
@@ -15,7 +16,7 @@ date: 2021-07-02T15:40:00-04:00
         -   large number of units which are connected to others (connectionism) and the connections have different strengths (weights)
         -   units are arranged in layers
         -   computation happens in parallel
-    -   like in a classical machine, [representations](/thoughts/cognitive-sciences/representation) are assigned to connectionist networks by the people who build them
+    -   like in a classical machine, [representations](thoughts/representation.md) are assigned to connectionist networks by the people who build them
     -   two types of connectionist representation
         -   localist → each unit is assigned a feature as a whole that represents
         -   distributed → state of the network as a whole represents something

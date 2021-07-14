@@ -1,6 +1,7 @@
 ---
 title: "Acceleration"
 date: 2021-02-27T11:59:22-08:00
+tags: ["knowledge"]
 ---
 
 moving fast but not breaking things
@@ -20,5 +21,5 @@ occasionally shift the pile of sand so it settles in a more stable configuration
 take time to understand the actual tech youre working on and the problems you're trying to solve
 talk it out with people
 
-“The problem is that software engineers don’t understand the problem they’re trying to solve, and don’t care to,” says Leveson, the MIT software-safety expert. -> [software-and-politics](thoughts/software-and-politics.md)
+“The problem is that software engineers don’t understand the problem they’re trying to solve, and don’t care to,” says Leveson, the MIT software-safety expert. -> [software-and-politics](/thoughts/software-and-politics)
 

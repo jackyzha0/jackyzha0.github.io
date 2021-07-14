@@ -1,6 +1,7 @@
 ---
 title: "Ephemereal Content"
 date: 2021-06-16T13:15:09-07:00
+tags: ["tech-and-society"]
 ---
 
 -   moving towards live

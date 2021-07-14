@@ -1,9 +1,11 @@
 ---
 title: "Hackathons"
 date: 2021-02-27T12:01:16-08:00
+tags: ["tech-and-society"]
 ---
 
 Full Post -> [hackathons](posts/hackathons.md)
+
 ## Design Justice
 
 ### hackathons becoming very corporate

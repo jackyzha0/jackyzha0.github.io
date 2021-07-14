@@ -1,6 +1,7 @@
 ---
 title: "Digital Gardening"
 date: 2021-01-30T16:53:01-08:00
+tags: ["knowledge"]
 ---
 
 The first image that comes to my head when I hear the word 'gardening' is of a small plot with some leafy greens sprouting their heads from an earthy bed. A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn't too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.

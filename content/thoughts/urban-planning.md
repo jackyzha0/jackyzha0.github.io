@@ -1,6 +1,7 @@
 ---
 title: "Urban Planning"
 date: 2021-06-16T08:59:23-04:00
+tags: ["communities"]
 ---
 
 ## notes from *A people-centric smart city for racial justice*
