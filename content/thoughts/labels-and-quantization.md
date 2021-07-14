@@ -10,9 +10,9 @@ tags: ["tech-and-society"]
 * dangers of intermediate proxies?
 * what about in machine learning? using certain quantities for metrics which are just *proxies* for more difficult to measure qualitative end goals
 
-Applicable to [feedback-loops](thoughts/feedback-loops.md)
+Applicable to [feedback-loops](/thoughts/feedback-loops)
 "Focusing on tight feedback also leads to getting stuck in local maxima. The short turnaround time leads to the pursuit of incremental improvements. Accurate feedback reduces error, but this means reaching and staying at the local maximum. The more accurate and more rapid the loop, the more quickly you’ll arrive at the top of the hill – and the less chance you have of leaving it to climb the mountains of mastery."
-* [exploit-explore](thoughts/exploit-explore.md) algorithm 
+* [exploit-explore](/thoughts/exploit-explore) algorithm 
 
 "When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems."
 
@@ -27,4 +27,4 @@ No matter how much data we collect, two people who look the same to the algorith
 
 We gave you two definitions of fairness: keep the error rates comparable between groups, and treat people with the same risk scores in the same way. Both of these definitions are totally defensible! But satisfying both at the same time is impossible.
 
-relevant bit on algorithms and algorithmic decision making -> [to-live-in-their-utopia](thoughts/articles/to-live-in-their-utopia.md)
+relevant bit on algorithms and algorithmic decision making -> [to-live-in-their-utopia](/thoughts/articles/to-live-in-their-utopia)

@@ -1,5 +1,5 @@
 ---
-title: "on-idolization"
+title: "On Idolization"
 date: 2021-06-23T23:36:57-04:00
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "pseudonymous-web"
+title: "Pseudonymous Web"
 date: 2021-06-17T00:57:26-04:00
 ---
 

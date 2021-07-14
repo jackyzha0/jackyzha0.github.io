@@ -1,5 +1,5 @@
 ---
-title: "the-ones-who-walk-from-omelas"
+title: "The Ones Who Walk from Omelas"
 date: 2021-06-22T09:14:10-04:00
 ---
 

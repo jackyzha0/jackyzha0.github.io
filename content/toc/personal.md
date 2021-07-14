@@ -1,14 +1,14 @@
 ---
-title: "personal"
+title: "Personal"
 date: 2021-07-14T15:03:54-04:00
 ---
 
 ## Personal
-- [exploit-explore](thoughts/exploit-explore.md)
-- [introductions](thoughts/introductions.md)
-- [reading](thoughts/reading.md)
-- [value-setting](thoughts/value-setting.md)
-- [whoami](thoughts/whoami.md)
-- [2020](posts/2020.md)
-- [a-failure-resume](posts/a-failure-resume.md)
-- [hootsuite](posts/hootsuite.md)
+- [exploit-explore](/thoughts/exploit-explore)
+- [introductions](/thoughts/introductions)
+- [reading](/thoughts/reading)
+- [value-setting](/thoughts/value-setting)
+- [whoami](/thoughts/whoami)
+- [2020](/posts/2020)
+- [a-failure-resume](/posts/a-failure-resume)
+- [hootsuite](/posts/hootsuite)

@@ -1,5 +1,5 @@
 ---
-title: "attention-economy"
+title: "Attention Economy"
 date: 2021-06-17T00:27:02-04:00
 tags: ["tech-and-society"]
 ---

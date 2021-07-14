@@ -28,9 +28,9 @@ tags: ["communities"]
         -   green public psaces
         -   reduce carbon emissions
     -   THEN see how we can apply tech
-    -   **avoid techno-solutionism** -> [maintenance of existing systems](creation-vs-maintenance.md)
+    -   **avoid techno-solutionism** -> [maintenance of existing systems](/thoughts/creation-vs-maintenance)
 -   involves citizen decision making
-    -   [open source](paid-oss.md) tech + tech that preserves privacy
+    -   [open source](/thoughts/paid-oss) tech + tech that preserves privacy
 -   zero carbon cities of the future (energy transition)
     -   electrify our mobility, shift to renewables
     -   creating green spaces
@@ -45,7 +45,7 @@ tags: ["communities"]
     -   data extractivism
         -   surveillance capitalism → you are not the customer or even the product, you are the raw material
         -   black box society → strong need for public engagement
-            -   what are the social, ethical, racial & geopolitical implications of automated decision systems ([software is political](software-and-politics.md))
+            -   what are the social, ethical, racial & geopolitical implications of automated decision systems ([software is political](/thoughts/software-and-politics))
             -   latent costs of externalities related to manipulating data
         -   new deal on data → data as digital public goods
             -   data sovereignty, data portability, data trusts (data commons)

@@ -31,4 +31,4 @@ https://www.youtube.com/watch?v=UOEpe17nPhE
 
 [pseudonymous-web](/thoughts/articles/pseudonymous-web)
 
-if [cities are not top-down hierarchies](city-is-not-a-tree.md), then are social graphs a better way to think about them?
+if [cities are not top-down hierarchies](/thoughts/articles/city-is-not-a-tree), then are social graphs a better way to think about them?

@@ -1,12 +1,12 @@
 ---
-title: "heidegger"
+title: "Embedded AI"
 date: 2021-07-02T15:01:46-04:00
 tags: ["cognitive-sciences"]
 ---
 
 # Dreyfus
 ## Why Heideggerian AI failed and how fixing it would require making it more Heideggerian
--   the [frame](thoughts/frame-problem.md) approach → descriptions of typical situations like going to a birthday party
+-   the [frame](/thoughts/frame-problem) approach → descriptions of typical situations like going to a birthday party
 	-   however, this quickly grows out of hand once again as any AI program using frames to organize millions of meaningless facts so as to retrieve the relevant frames is going to be caught in a cycle of finding frames for recognizing relevant frames for recognizing relvant facts
 -   an emergent heideggerian cognitive science → embodied-embedded thinking is under active investigation and development
 -   john haugeland → cognition is embedded and embodied

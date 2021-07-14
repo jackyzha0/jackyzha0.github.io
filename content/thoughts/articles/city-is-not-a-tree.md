@@ -1,5 +1,5 @@
 ---
-title: "A city is not a tree"
+title: "A City is not a Tree"
 date: 2021-06-16T20:39:15-04:00
 ---
 

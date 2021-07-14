@@ -1,5 +1,5 @@
 ---
-title: "representation"
+title: "Representation"
 date: 2021-07-02T15:33:29-04:00
 tags: ["cognitive-sciences"]
 ---

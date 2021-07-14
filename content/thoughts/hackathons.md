@@ -4,7 +4,7 @@ date: 2021-02-27T12:01:16-08:00
 tags: ["tech-and-society"]
 ---
 
-Full Post -> [hackathons](posts/hackathons.md)
+Full Post -> [hackathons](/posts/hackathons)
 
 ## Design Justice
 
@@ -19,7 +19,7 @@ Full Post -> [hackathons](posts/hackathons.md)
     * the assumption that a "hackathon for good" will be successful if it produces a new app the can help "solve a social problem runs deep"
     * they nearly always focus on problems and rarely build on existing community assets; and people think hackathons can do things that they usually can't, such as solve big or even little problems, create new products overnight, or 'level the playing field' of innovation through meritocracy
 
-### urban design and [urban planning](thoughts/urban-planning.md)
+### urban design and [urban planning](/thoughts/urban-planning)
 * "through such initiatives, city administrators signal that the public is invited to participate in decisionmaking on an ongoing basis, not only at the ballot box every few years" -> in response to city government being more transparent, more administrative data being made available to the public, and administrators actively seeking ideas from engaged publics about how to improve government services and city resident's quality of life
 * neoliberal, technocentric ideas about the city as a machine or as a software system waiting to be optimized have become increasingly prominent
     * citizens should not be reduced to users through the lens of neoliberal governmentality
@@ -40,7 +40,7 @@ Full Post -> [hackathons](posts/hackathons.md)
 * "people construct new knowledge with particular effectiveness when they are engaged in constructing personally meaningful products"
 
 ### maintenance > creation
-Relevant to [creation-vs-maintenance](thoughts/creation-vs-maintenance.md)
+Relevant to [creation-vs-maintenance](/thoughts/creation-vs-maintenance)
 * commons-based peer production -> "decentralized, collaborative, and non-proprietary; based on sharing resources and outputs among widely distributed, loosely connected individuals who cooperate with each other without relying on either market signals or managerial commands"
 * the cult of the new and shiny drowns out the quiet call of the well established, and no one wants to solve the bugs in the old thing that already does the new thing is supposed to do
 * for one, under patriarchy, making something "new" is valued more and is better rewarded than caretaking, maintaining, or supporting something "old." also, starting a new thing is fun; for many, it feels more creative than working on the nuts and bolts of an existing project

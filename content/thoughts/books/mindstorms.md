@@ -51,7 +51,7 @@ The definition of artificial intelligence can be narrow or broad. In the narrow 
 "The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of 'being wrong.'"
 
 ### Multiple Realization
-Related to [multiple-realization](thoughts/multiple-realization.md)
+Related to [multiple-realization](/thoughts/multiple-realization)
 
 Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird's wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.
 

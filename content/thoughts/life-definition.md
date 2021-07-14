@@ -1,5 +1,5 @@
 ---
-title: "life-definition"
+title: "Life Definition"
 date: 2021-07-02T21:38:52-04:00
 tags: ["cognitive-sciences"]
 ---
