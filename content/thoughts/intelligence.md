@@ -19,7 +19,7 @@ tags: ["cognitive-sciences"]
 		-   could be a result to encouraging different polinators
 		-   or discouraging beetles from eating it
 		-   what about laboratory grown? has no reason to change colour other than by design
--   to create an intellgience
+-   to create an intelligence
 	-   it not only needs to behave the same way as an intelligent system, but also for reasons
 	-   this requires a history in which such governance is made possible
 
@@ -122,7 +122,7 @@ Entails that the brain has the right causal powers to produce intentionality
         -   this chapter
     -   is the human mind a computer? more precisely, are any actual mental states and processes computational
 ## What is a computer?
-- device which processes representations in a systematic way
+- device which processes [representations](/thoughts/representation) in a systematic way
 -   algorithm → method for calculating the value of a function
 	-   "effective procedures" → procedures which, if applied correctly, are entirely effective in bringing about their results (always work)
 	-   computable if the algorithm gives the value of a function for any argument

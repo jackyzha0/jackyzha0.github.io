@@ -78,10 +78,10 @@ tags: ["cognitive-sciences"]
 	-   input can be realized as a feature space
 	-   output can be realized as manifolds or regions in the feature space
 	-   training is just then learning the manifolds/regions that create desired categories
--   most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so
+-   most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so -> question of [intelligence](/thoughts/intelligence)
 -   self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
     -   counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)
-## Cognition and Intelligence
+## Cognition and [Intelligence](/thoughts/intelligence)
 -   thinking of cognition as ranging over 4 variables
     -   a → algorithms
     -   r → representational formats
@@ -99,7 +99,7 @@ tags: ["cognitive-sciences"]
             -   many different vantage points of the same object could provide additional training exemplars for cortical learning
             -   offline memory consolidation during sleep and daydreaming can replay the same training session many thousands of times in nonconscious repetitions
     -   the "potemkin village that works well on naturally occurring data, but is exposed as fake when one visits points in space that do not have high probability"
-        -   "A "Potemkin village" signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside."
+        -   "A "Potemkin village" signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside." -> Potemkin Villages in [AI Systems](/posts/ai-systems)
         -   movie village thing
 
 # Churchland

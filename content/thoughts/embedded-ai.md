@@ -38,9 +38,9 @@ tags: ["cognitive-sciences"]
 	1.  the brain receives input from the universe by way of its sense organs
 	2.  out of this stimulus information, the brain abstracts features, which it uses to construct a representation of the world
 -   how are these accomplished in AI systems
-	-   applying rules such as frames/scripts of GOFAI → acknowledged as not solving the frame problem
+	-   applying rules such as frames/scripts of GOFAI → acknowledged as not solving the [frame problem](/thoughts/frame-problem)
 	-   strengthening/weakening weights on connections between neurons in an ANN (connectionist)
-		-   significance is added from outside since the net is not seeking anything
+		-   significance is added from outside since the net is not seeking anything -> [representation](/thoughts/representation)
 -   both approaches treat the computer/brain as a passive receiver of bits of meaningless data, which then have significance added to them
 	-   big problem is, how the brain binds the relevant features together
 	-   neural version of the frame problem → how can the brain keep track of which facts in its representation of the current world are relevant to which other facts

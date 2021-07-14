@@ -83,6 +83,7 @@ tags: ["cognitive-sciences"]
 -   what does matter for representation is some sort of causal link back to the original thing
     -   X caused Y to do Z
 ## Brain in a Vat
+- Related to [virtual-worlds](/thoughts/virtual-worlds)
 -   we all live in a "collective hallucination", i believe you exist and i can tell you thinks and hear things from you
 -   could we say/think/believe that we are brains in a vat?
 -   putnam states that this argument is false as it is self-refuting

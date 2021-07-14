@@ -17,6 +17,6 @@ the bitter lesson → http://www.incompleteideas.net/IncIdeas/BitterLesson.html
         -   feedforward → linear relationships
         -   sigmoid → non-linear
         -   what other solution spaces are we missing
--   do we necessarily need human intelligence for machine intelligence? most likely not: [multiple-realization](/thoughts/multiple-realization)
+-   do we necessarily need human intelligence for machine intelligence?
 
 constraining solution space with human heuristics

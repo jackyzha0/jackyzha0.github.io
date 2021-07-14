@@ -61,7 +61,7 @@ tags: ["cognitive-sciences"]
     -   interpersonal relationships
     -   being slaves — albeit content ones
         -   the matrix is computer-generated dream world, built to keep us under control
--   meaning in the matrix
+-   meaning in the matrix -> [virtual-worlds](/thoughts/virtual-worlds)
     -   do the things in the matrix refer to their "real" counterparts?
     -   "steak" and "air" refer to the actual things inside of the matrix for those who have spent their whole life in the matrix
         -   mean something very different for outsiders who just visit
