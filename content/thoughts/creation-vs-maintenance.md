@@ -1,8 +1,13 @@
 ---
-title: "creation-vs-maintenance"
+title: "Creation vs Maintenance"
 date: 2021-06-23T15:07:59-04:00
 ---
 
+So much of today's society revolves around *creating new things* rather than *maintaining existing things*
+
+Importance of indigenous knowledge and tradition
+
+Do Eastern vs Western cultures have diff takes on this?
 
 https://danluu.com/sounds-easy/
 Not just building out an initial system, but also about how maintainable and scalable the system is for the forseable future.

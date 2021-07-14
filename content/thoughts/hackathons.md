@@ -3,18 +3,8 @@ title: "Hackathons"
 date: 2021-02-27T12:01:16-08:00
 ---
 
-What first comes to your head when you think of the word 'hackathon'? Is it a 24-hour long, no-sleep, caffeine-fueled, build-fest in a big sweaty gym?
-
-As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time. By setting a precedence of requiring hackers to already have insane amounts of pre-requisite knowledge and to stay up the entire event, it discourages new hackers — the very original target audience — from attending.
-
-## Corporatization of Hackathons and Design Spaces
-### Learning-first Hackathons
-This year, I was responsible for leading logistics at our beginner-focused hackathon called HackCamp. To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend, with a focus on learning and workshops on the first day, and building and hacking on the second day. This allows hackers to attend workshops and learn without fear of missing out on precious hacking time, to have actual scheduled sleeping time, and to place emphasis on submitting projects rather than winning. We were able to reach over 500+ attendees, 3.2k+ live stream viewers, and over $1200 in donations to charities, and the feedback we got was absolutely stellar. I'm really excited that I got to help bring this vision for a new hackathon format to life.
-
-Help hackathons be what they were designed to be: a friendly environment for radical ideas and rapid learning for all people.
-
+Full Post -> [hackathons](posts/hackathons.md)
 ## Design Justice
-* How do we apply design justice principles to create inclusive design sites?
 
 ### hackathons becoming very corporate
 * traces the cooptation of hacker culture by neoliberalism
@@ -27,7 +17,7 @@ Help hackathons be what they were designed to be: a friendly environment for rad
     * the assumption that a "hackathon for good" will be successful if it produces a new app the can help "solve a social problem runs deep"
     * they nearly always focus on problems and rarely build on existing community assets; and people think hackathons can do things that they usually can't, such as solve big or even little problems, create new products overnight, or 'level the playing field' of innovation through meritocracy
 
-### urban design
+### urban design and [urban planning](thoughts/urban-planning.md)
 * "through such initiatives, city administrators signal that the public is invited to participate in decisionmaking on an ongoing basis, not only at the ballot box every few years" -> in response to city government being more transparent, more administrative data being made available to the public, and administrators actively seeking ideas from engaged publics about how to improve government services and city resident's quality of life
 * neoliberal, technocentric ideas about the city as a machine or as a software system waiting to be optimized have become increasingly prominent
     * citizens should not be reduced to users through the lens of neoliberal governmentality
@@ -48,6 +38,7 @@ Help hackathons be what they were designed to be: a friendly environment for rad
 * "people construct new knowledge with particular effectiveness when they are engaged in constructing personally meaningful products"
 
 ### maintenance > creation
+Relevant to [creation-vs-maintenance](thoughts/creation-vs-maintenance.md)
 * commons-based peer production -> "decentralized, collaborative, and non-proprietary; based on sharing resources and outputs among widely distributed, loosely connected individuals who cooperate with each other without relying on either market signals or managerial commands"
 * the cult of the new and shiny drowns out the quiet call of the well established, and no one wants to solve the bugs in the old thing that already does the new thing is supposed to do
 * for one, under patriarchy, making something "new" is valued more and is better rewarded than caretaking, maintaining, or supporting something "old." also, starting a new thing is fun; for many, it feels more creative than working on the nuts and bolts of an existing project
@@ -55,7 +46,7 @@ Help hackathons be what they were designed to be: a friendly environment for rad
 
 ### hacking the hackathon
 * "a one day hack for homelessness takes away from the complexity of social justice issues... you can't just come up with an app that solve the world's problems"
-* they [hackathons] are often crucibles of intense and focused learning, making, problem-solving, community building, and play
+* they hackathons are often crucibles of intense and focused learning, making, problem-solving, community building, and play
 * if well-organized, hackathons can provide an introduction to the use of tech for social justice, as well as pathways to employment
 * many feel that focused pop-ups, hackathons, and hack nights can be valuable if they respond to the real needs of organizations with a lot of domain expertise, instead of focusing on ideas that come from coders
 * "in the old days, people used to form teams and rush in and try to fix things, without really even knowing what was broken... it is no longer just a bunch of programmers in a room. there are now hackathons where actual community members are learning to code and interacting ... community members are also teaching programmers about the things they need to sustain and build for the future. that's a really good thing happening"

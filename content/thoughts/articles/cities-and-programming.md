@@ -11,7 +11,7 @@ Mostly about maintenance of cities and parallels with maintaining software.
 Brand argues that many great buildings achieved their greatness by gradual stepwise evolution over time. New buildings need to be designed with the expectation that they will evolve, because they usually outlive their initial use. Even if a building does not change its use (e.g. it remains the same university department), the needs of its users will change and the building will need to adapt. This should be done, for example, by making sure that changing the space layout in the building is possible without changing the structure.
 
 ## XAI systems
-In the last case (organized complexity and non-repetitive digital systems), the complexity of the problem cannot be reduced - we need to consider a large number of interacting processes or components. At the same time, all of them are equally important and play an important role in some aspect of the system. As Jane Jacobs puts it, the large number of interrelated variables form an organic whole. This is the end result of [emergent-behaviour](/thoughts/emergent-behaviour)
+In the last case (organized complexity and non-repetitive digital systems), the complexity of the problem cannot be reduced - we need to consider a large number of interacting processes or components. At the same time, all of them are equally important and play an important role in some aspect of the system. As Jane Jacobs puts it, the large number of interrelated variables form an organic whole. This is the end result of [emergent-behaviour](thoughts/cognitive-sciences/emergent-behaviour.md)
 
 ## Maintainability
 [creation-vs-maintenance](/thoughts/creation-vs-maintenance)

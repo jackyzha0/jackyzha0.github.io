@@ -5,6 +5,7 @@ date: 2021-06-17T00:33:42-04:00
 # Finished
 * [reflect](/posts/reflect)
 * [ctrl-v](/posts/ctrlv-next)
+* portal
 
 # Ideas
 ## DreamCoder boolsat
@@ -44,15 +45,6 @@ tests:
 -   can actually use concurrency lmao
 	-   buffered channel of tests, run x tests in parallel
 
-##  cross-device folder sync
-    
-    -   sync according to gitignore
-    -   [](https://github.com/datproject/dat#usage)[https://github.com/datproject/dat#usage](https://github.com/datproject/dat#usage)
-    -   [](https://github.com/datproject/sdk)[https://github.com/datproject/sdk](https://github.com/datproject/sdk)
-    -   sharing profiles
-        -   web
-            -   yarn i
-            -   yarn dev
 ##   better graph visualization
 [social-graphs](/thoughts/social-graphs)
 

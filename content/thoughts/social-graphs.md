@@ -29,3 +29,5 @@ https://www.youtube.com/watch?v=UOEpe17nPhE
 * expression on social media in an 'anonymized' setting
 
 [pseudonymous-web](/thoughts/articles/pseudonymous-web)
+
+if [cities are not top-down hierarchies](city-is-not-a-tree.md), then are social graphs a better way to think about them?

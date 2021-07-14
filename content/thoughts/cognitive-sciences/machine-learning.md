@@ -102,7 +102,7 @@ date: 2021-07-02T14:03:17-04:00
         -   movie village thing
 
 # Churchland
--   multiple realization argument → cognitive activity could most surely be realized in a considerable variety of quite different physical systems
+-   [multiple realization](thoughts/cognitive-sciences/multiple-realization.md) argument → cognitive activity could most surely be realized in a considerable variety of quite different physical systems
 -   physical details of any such system cannot be essential to understanding the general phenomenon that could be displayed by all cognitive systems
     -   must be sought at a more abstract level than the level of neurons and their interactions
 -   this was used to justified long-standing disinterest in the neurosciences (AI and cognitive psychology)

@@ -25,8 +25,6 @@ endlessly curious
 kindness and empathy
 
 # goals
-
-
 ## how can we build support systems and communities for the next generation of builders?
 [infrastructure](/thoughts/infrastructure)
 * software infra and tooling
