@@ -5,7 +5,7 @@ date: 2021-07-14T12:23:38-04:00
 
 ## Intro
 A somewhat poorly kept digital garden and hub for all my ramblings and thoughts.
-- [Notes on articles and books](/toc/content/reading) 
+- [Notes on articles and books](/toc/readings) 
 - [Cognitive Sciences](/toc/cognitive-sciences)
 - [Education and Epistemology](/toc/education-and-epistemology)
 - [Technical](/toc/technical)
