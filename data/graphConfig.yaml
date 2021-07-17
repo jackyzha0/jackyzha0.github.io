@@ -1,0 +1,14 @@
+enableLegend: false
+enableDrag: true
+enableZoom: false
+base:
+  node: "#284b63"
+  activeNode: "#f28482"
+  inactiveNode: "#a8b3bd"
+  hoverNode: "#afbfc9"
+  link: "#aeb4b8"
+  activeLink: "#5a7282"
+paths:
+  - /toc: "#4388cc"
+  - /newsletters: "#e0b152"
+  - /posts: "#42c988"
