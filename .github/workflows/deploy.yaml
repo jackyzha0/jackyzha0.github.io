@@ -11,6 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build Link Index
+        uses: jackyzha0/hugo-obsidian@v1
+        with:
+          input: content
+          output: data
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

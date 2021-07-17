@@ -6,6 +6,9 @@ tags: ["tech-and-society"]
 
 Once you share something, you can't unshare it, internet feels intractable
 
+https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/: 
+"Of course, there’s a keenly related problem of permanency for much of what’s online. People communicate in ways that feel ephemeral and let their guard down commensurately, only to find that a Facebook comment can stick around forever. The upshot is the worst of both worlds: Some information sticks around when it shouldn’t, while other information vanishes when it should remain."
+
 episode #172 - ryan schiller: librex and the free exchange of ideas on college campuses
 * silencing of ideas
 * people go to colleges not to just read textbooks

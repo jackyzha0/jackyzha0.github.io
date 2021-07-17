@@ -18,7 +18,7 @@ Together, the *Catalog* and the *Supplement* became textual forums within which 
 Much as the dancers at the Trips Festival had imagined that LSD would allow them to escape their bodies and enjoy a new form of communion, scholars and reporters began to describe computer-mediated communication as a form of interaction in which bodies had ceased to matter.
 
 ### Comprehensive Designers
-Contact languages which to exchange ideas and techniques in linguistically distinct tribes (e.g. scientists, technologists, and administrators)
+[Contact Language](/thoughts/contact-language) which to exchange ideas and techniques in linguistically distinct tribes (e.g. scientists, technologists, and administrators)
 
 Contact Language: broadly speaking, this language served to facilitate collaboration across the groups it interconnected.
 

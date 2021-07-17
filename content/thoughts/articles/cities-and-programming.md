@@ -23,6 +23,8 @@ How do we build software so that it gradually and gracefully degrades rather tha
 Just like software systems, any building built using any kind of materials requires some maintenance over time. And just like with software systems, building owners are often bad at performing the necessary maintenance.
 
 The idea of chaos engineering is perhaps a first step in this direction.
-Rebuilding the shrine https://en.wikipedia.org/wiki/Ise_Grand_Shrine
+
+
+Rebuilding the shrine https://en.wikipedia.org/wiki/Ise_Grand_Shrine -> retaining knowledge through constant revision
 
 vernacular design restricts the scope of the problem by limiting architectural ideas to what is typically used in the local context. This reduces the design task and allows the builder to focus on skilful solutions to specific problems rather than at reinventing forms. 

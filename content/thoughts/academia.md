@@ -4,6 +4,12 @@ date: 2021-06-18T10:13:33-04:00
 tags: ["knowledge"]
 ---
 
+## Cool People/Things
+http://jeffclune.com/
+https://www.davidlindlbauer.com/
+https://www.hcii.cmu.edu/summer-research-program
+https://chrisharrison.net/index.php/Research/Welcome
+
 ## Tunnel Vision
 https://www.briantimar.com/notes/mimetic/mimetic/
 Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.

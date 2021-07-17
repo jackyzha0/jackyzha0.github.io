@@ -15,6 +15,8 @@ https://www.mightyapp.com/
 
 No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves. Interface with these virtual worlds through looking at our screens, typing on our keyboards, etc. even with a [pseudonymous-web](/thoughts/articles/pseudonymous-web) that is not supposedly tied to anything in the physical realm.
 
+Related to: [digital-commons](thoughts/digital-commons.md)
+
 ### VR
 Physical bodies perceive the senses that are input from the VR machine. Brain in a vat experiment? question of [representation](/thoughts/representation) and whether we need [embedded systems](/thoughts/embedded-ai)
 
