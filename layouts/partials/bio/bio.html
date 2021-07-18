@@ -15,7 +15,7 @@
 <div class="lt-flex-50 detail-container">
   <h2>Recent writing</h2>
   <ul>
-    {{ range first 5 (where .Site.RegularPages "Section" "==" "posts") }}
+    {{ range first 7 (where .Site.RegularPages "Section" "==" "posts") }}
     <li class="singlePost">
       <div class="desc">
         <span class="time">{{ .Date.Format .Site.Params.dateFormat }}</span>
@@ -25,11 +25,13 @@
       </div>
     </li>
     {{ end }}
+    {{if gt (len (where .Site.RegularPages "Section" "==" "posts")) 6}}
     <li class="singlePost">
       <a class="postLink" href="/posts?ref=home">
-        ...and {{len (where .Site.RegularPages "Section" "==" "posts")}} more posts
+        View {{sub (len (where .Site.RegularPages "Section" "==" "posts")) 6}} other posts
       </a>
     </li>
+    {{ end }}
   </ul>
   <h2>Newsletter</h2>
   {{ partial "newsletter/cta.html" . }}

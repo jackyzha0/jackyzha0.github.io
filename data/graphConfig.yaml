@@ -1,13 +1,6 @@
 enableLegend: false
 enableDrag: true
 enableZoom: false
-base:
-  node: "#284b63"
-  activeNode: "#f28482"
-  inactiveNode: "#a8b3bd"
-  hoverNode: "#afbfc9"
-  link: "#8c8f9199"
-  activeLink: "#5a7282"
 paths:
   - /toc: "#4388cc"
   - /newsletters: "#e0b152"

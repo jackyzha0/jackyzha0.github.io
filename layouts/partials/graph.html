@@ -1,5 +1,14 @@
 <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
 <div id="graph-container"></div>
+<style>
+    :root {
+        --g-node: var(--navy);
+        --g-node-active: var(--salmon);
+        --g-node-inactive: var(--visited);
+        --g-link: var(--outlinegray);
+        --g-link-active: #5a7282;
+    }
+</style>
 <script>
   const index = {{$.Site.Data.linkIndex.index}}
   const links = {{$.Site.Data.linkIndex.links}}
@@ -15,7 +24,7 @@
 
   const color = (d) => {
     if (d.id === curPage) {
-      return "{{.Site.Data.graphConfig.base.activeNode}}"
+      return "var(--g-node-active)"
     }
 
     for (const pathColor of pathColors) {
@@ -26,7 +35,7 @@
       }
     }
 
-    return "{{.Site.Data.graphConfig.base.node}}"
+    return "var(--g-node)"
   }
 
   const drag = simulation => {
@@ -75,8 +84,8 @@
   const enableLegend = {{$.Site.Data.graphConfig.enableLegend}}
   if (enableLegend) {
     const legend = [
-      {"Current": "{{.Site.Data.graphConfig.base.activeNode}}"},
-      {"Note": "{{.Site.Data.graphConfig.base.node}}"},
+      {"Current": "var(--g-node-active)"},
+      {"Note": "var(--g-node)"},
       ...pathColors
     ]
     legend.forEach((legendEntry, i) => {
@@ -93,7 +102,7 @@
     .data(data.links)
     .join("line")
     .attr("class", "link")
-    .attr("stroke", "{{.Site.Data.graphConfig.base.link}}")
+    .attr("stroke", "var(--g-link)")
     .attr("stroke-width", 2)
     .attr("data-source", d => d.source.id)
     .attr("data-target", d => d.target.id)
@@ -122,7 +131,7 @@
       d3.selectAll(".node")
         .transition()
         .duration(100)
-        .attr("fill", "{{$.Site.Data.graphConfig.base.inactiveNode}}")
+        .attr("fill", "var(--g-node-inactive)")
 
       const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
       const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
@@ -139,7 +148,7 @@
       links
         .transition()
         .duration(200)
-        .attr("stroke", "{{$.Site.Data.graphConfig.base.activeLink}}")
+        .attr("stroke", "var(--g-link-active)")
 
       // show text for self
       d3.select(this.parentNode)
@@ -147,7 +156,7 @@
         .raise()
         .transition()
         .duration(200)
-        .style("opacity", 0.8)
+        .style("opacity", 1)
     }).on("mouseleave", function (_,d) {
       d3.selectAll(".node")
         .transition()
@@ -160,7 +169,7 @@
       links
         .transition()
         .duration(200)
-        .attr("stroke", "{{$.Site.Data.graphConfig.base.link}}")
+        .attr("stroke", "var(--g-link)")
 
       d3.select(this.parentNode)
         .select("text")
