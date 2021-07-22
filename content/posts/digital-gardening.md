@@ -8,9 +8,7 @@ The first image that comes to my head when I hear the word 'gardening' is of a s
 
 A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.
 
-When I talk about digital gardening, I don't mean digital gardening in the Stardew Valley or FarmVille sense. I mean gardening as in the tending and growth of my own ideas and projects on my own little plot of the world wide web &mdash; namely through my blog, personal site, and GitHub projects. After reading Joel Hook's blog post on his own [digital garden](https://joelhooks.com/digital-garden), I've been thinking and reflecting on my own processes for managing my garden.
-
-I wanted to use this blog post as a way for me to document said processes and, in a sort of meta-round-a-bout way, grow and refine this process further.
+When I talk about digital gardening, I don't mean digital gardening in the Stardew Valley or FarmVille sense. I mean gardening as in the tending and growth of my own ideas and projects on my own little plot of the world wide web -- namely through my writing, notes, and projects. After reading Joel Hook's blog post on his own [digital garden](https://joelhooks.com/digital-garden), I've been thinking and reflecting on my own processes for managing [my own digital garden](/toc/directory).
 
 ## The garden plot
 According to [GitHub](https://github.com/jackyzha0/blog/commit/74f7460c49a7c56acfadf3f8f1cdd892005ebed4), I first created this blog in late August of 2020. At the time, it was more of a novelty thing. I wanted to get off of Medium and onto my own platform where I had more fine-grained control over how I could present my work and how people discover it.

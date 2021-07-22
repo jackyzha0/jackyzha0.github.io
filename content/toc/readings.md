@@ -19,5 +19,5 @@ Notes on my favourite articles and books.
 - [Pseudonymous Web](/thoughts/articles/pseudonymous-web)
 - [To Live in their Utopia](/thoughts/articles/to-live-in-their-utopia)
 ### Misc.
-- [Knowledge Distillation](/thoughts/articles/knowledge-distillation)
+- [Knowledge Distillation](thoughts/articles/research-debt.md)
 - [On Idolization](/thoughts/articles/on-idolization)
