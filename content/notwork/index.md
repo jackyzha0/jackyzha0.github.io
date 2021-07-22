@@ -13,7 +13,7 @@ Some of my past favourites
 [Full Booklist](/books). I'm always happy to add to my ever-growing list of books to read or to chat about any cool reads you've come across!
 
 ## Writing
-Recently, I've made a conscious effort to start writing more in order to help myself organize my thoughts. You can find a collection of my half-baked thoughts over on [my blog](/posts) where I plan to write more about some of my thoughts on tech, personal projects, and general musings about the world.
+Recently, I've made a conscious effort to start writing more in order to help myself organize my thoughts. You can find a collection of my half-baked thoughts over on [my blog](/posts) where I plan to write more about some of my thoughts on tech, personal projects, and general musings about the world. You can find my more general thoughts in my [second brain and digital garden](/toc/directory).
 
 ## Music + Podcasts
 According to my [Spotify](https://open.spotify.com/user/notecho?si=9bKqHkhLQFenGqlXza2F2Q) wrapped, I spent 109,535 minutes listening to music and podcasts in the past year. Some of my favourite artists include Jeremy Zucker, Rex Orange County, HONNE, Daniel Caesar just to name a few. Ocassionaly, I'll bust out a musical or a movie soundtrack from the likes of Dear Evan Hansen or La La Land. During long transits I can always count on [The Radical AI Podcast](https://www.radicalai.org/), [Philosiphize This!](https://www.philosophizethis.org/), and the [Lex Fridman Podcast](https://lexfridman.com/podcast/) to open the door to something new to learn about.

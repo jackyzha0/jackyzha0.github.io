@@ -5,8 +5,16 @@
 
   <!-- Meta tags -->
   <meta charset="UTF-8">
-  <meta name="description" content="{{$.Site.Data.me.description}}">
-  <title>{{$.Site.Data.me.page_title}}</title>
+  {{ .Scratch.Set "title" $.Site.Data.me.page_title }}
+  {{ .Scratch.Set "description" $.Site.Data.me.description }}
+  {{ if .Title }}
+  {{ .Scratch.Set "title" .Title }}
+  {{ end }}
+  {{ if .Content }}
+  {{ .Scratch.Set "description" (.Content | truncate 150) }}
+  {{ end }}
+  <title>{{ .Scratch.Get "title" }}</title>
+  <meta name="description" content="{{ .Scratch.Get "description" }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -17,13 +25,13 @@
 
   <!-- Social Tags -->
   <meta property="og:url" content="https://jzhao.xyz" />
-  <meta property="og:title" content="{{$.Site.Data.me.page_title}}" />
-  <meta property="og:description" content="{{$.Site.Data.me.description}}" />
+  <meta property="og:title" content="{{ .Scratch.Get "title" }}" />
+  <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
   <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@_jzhao">
-  <meta name="twitter:title" content="{{$.Site.Data.me.page_title}}">
-  <meta name="twitter:description" content="{{$.Site.Data.me.description}}" />
+  <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+  <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
   <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
 
   <!-- nonJS -->

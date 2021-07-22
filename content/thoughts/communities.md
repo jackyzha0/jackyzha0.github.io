@@ -4,20 +4,27 @@ date: 2021-07-14T15:22:10-04:00
 tags: ["communities"]
 ---
 
+## Types of Communities
+1.  Interest-based → same interests/passions
+2.  Location-based → same geographical location, place of work, etc.
+3.  Vibe-based → group energy
+4.  Circumstance-based → external influence, put into the same group
+
+Can we ever have fully [digital commons](thoughts/digital-commons.md)?
 
 ## Ingroup/outgroup biases
 -   get social status points
 -   we will choose to identify with whatever in-group will immediately benefit us the most
 -   why soririties + frats are successful → sunk cost falacy
 -   amount of boundaries required → well organized events vs serendipitous interactions
-	-   do serendipitous interactions only come from [ephemereal-content](/thoughts/ephemereal-content)?
+	-   do serendipitous interactions only come from [ephemereal content](/thoughts/ephemereal-content)?
 
 ## Community Governance
 -   bottom-up emergent properties vs top-down governance
 -   homeostasis of communities
     -   mix of internal and external influence
     -   secluded vs public
--   [labels-and-quantization](/thoughts/labels-and-quantization)
+-   [labels and quantization](/thoughts/labels-and-quantization)
     -   conforming to labels
     -   self-fulfilling prophecies
 -   sanctity of natural interactions

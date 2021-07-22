@@ -1,3 +1,47 @@
+- name: Portal
+  expand: false
+  short_desc: zero-config P2P encrypted folder syncing
+  links:
+    - link_name: product hunt
+      link: https://www.producthunt.com/posts/portal-11
+    - link_name: github
+      link: https://github.com/jackyzha0/portal
+  desc:
+    Portal is a command line tool that syncs folders between multiple devices. Perfect for syncing photos/videos/code between many devices without using a 3P tool like GitHub, Email, or Google Photos. Built on top of the Hypercore protocol with Ink for the CLI.
+  techlist:
+    - Hypercore
+    - React
+    - Ink
+  lang_ratios:
+    - name: TypeScript
+      percent: 100
+
+- name: Quartz
+  expand: false
+  short_desc: create and publish digital gardens for free
+  links:
+    - link_name: site
+      link: https://quartz.jzhao.xyz/
+    - link_name: github
+      link: https://github.com/jackyzha0/quartz
+  desc: >
+    Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy.
+    Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a YAML file
+    to be rendered by some prefined templates with Hugo.
+  techlist:
+    - Hugo
+    - Obsidian
+    - Github Pages
+  lang_ratios:
+    - name: Go
+      percent: 40
+    - name: HTML
+      percent: 30
+    - name: SCSS
+      percent: 25
+    - name: JavaScript
+      percent: 5
+
 - name: Legist
   expand: false
   short_desc: a platform to summarize policy for democracy

@@ -20,6 +20,8 @@ tags: ["communities"]
         -   neuroplasticity of culture and language?
 - do we need to define [infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
 
+> Thus, infrastructure design requires a more subtle approach: **creating the right incentives, environments, and dependencies to encourage well-being while preserving user autonomy**.
+
 Infrastructure can be [emergent](/thoughts/emergent-behaviour)
 
 "I have admiringly called this the "Procrastination Principle," wherein an elegant network design would not be unduly complicated by attempts to solve every possible problem that one could imagine materializing in the future. We see the [principle at work](http://yupnet.org/zittrain/2008/03/01/chapter-6-the-lessons-of-wikipedia/#27) in Wikipedia, where the initial pitch for it would seem preposterous: 'We can generate a consummately thorough and mostly reliable encyclopedia by allowing anyone in the world to create a new page and anyone else in the world to drop by and revise it.'"

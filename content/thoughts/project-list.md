@@ -2,12 +2,10 @@
 title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 ---
-# Finished
-* [reflect](/posts/reflect)
-* [ctrl-v](/posts/ctrlv-next)
-* portal
 
 # Ideas
+## Long Term Archival Storage Service
+
 ## DreamCoder boolsat
 https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
 
@@ -45,14 +43,14 @@ tests:
 -   can actually use concurrency lmao
 	-   buffered channel of tests, run x tests in parallel
 
-##   better graph visualization
+##  better graph visualization
 [social-graphs](/thoughts/social-graphs)
 
 [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
     
 [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
     
-##   better bash using go (clay)
+##  better bash using go (clay)
 workflow
 
 1.  clay build -o program
@@ -128,8 +126,7 @@ resFile = {
 ```
     
 ##  multi-level blogs
-    
-    blogging/reading platform where simplicity level can be adjusted
+blogging/reading platform where simplicity level can be adjusted
     
 ##  better personal analytics
 * small js bundle
@@ -138,11 +135,6 @@ resFile = {
 	* rough location of each user
 	* total users
 	* user visit distribution vs time
-    
-## nw link shortener
--   aims to be SIMPLE TO USE
--   integration with notion???
-[https://github.com/julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
 
 ##  c → fast and free link shortener
 -   dynamodb for storage
@@ -186,15 +178,6 @@ resFile = {
 * [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
     
 ## next.js for TUIs?
-    
-## middle-service (vault for frontend)
-* golang reverse proxy
-* pull creds from firebase
-* people can login via github or google
-* use CORS to set allowed origins
-* Someone should make a "middle" service. You register your "secret API key" and all it does it take a call from your front-end and forward it to the service that needs a secret key.
-
-[https://www.reddit.com/r/indiehackers/comments/ms6y35/hide\_airtable\_api\_key\_from\_frontend/](https://www.reddit.com/r/indiehackers/comments/ms6y35/hide_airtable_api_key_from_frontend/)
     
 ##  simple recording/timelapse tool for artists
 [https://fireship.io/lessons/electron-screen-recorder-project-tutorial/](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/)
