@@ -10,3 +10,5 @@ date: 2021-07-14T15:05:50-04:00
 - [Social Graphs](/thoughts/social-graphs)
 - [Urban Planning](/thoughts/urban-planning)
 - [Collaborative Thinking](/posts/collaborative-thinking)
+- [Group Limits](thoughts/group-limits.md)
+- [Digital Commons](thoughts/digital-commons.md)
