@@ -8,8 +8,6 @@ https://mmm.page/helena.soft_tech
 > "what if you had to commute to websites"
 > https://twitter.com/spencerc99/status/1401320086183366657
 
-Relates to [urban planning](/thoughts/urban-planning)
-
 How might we analogize [urban planning](thoughts/urban-planning.md) to social media and digital spaces? -> https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12
 
 ## Creating Digital Spaces
@@ -30,7 +28,7 @@ Are there ways to be _less_ intentional with digital interactions?
 
 If you want to meet with someone you need to schedule it or visit a link, etc. There is no 'random' interaction. Even algorithmic experiences are like being carried away by the TikTok or Facebook algorithm rather than something out of the blue. Though these experiences may seem random at times, they are explicitly currated with an _end goal_ in mind.
 
-Are there any spaces that don't have ulterior motives and are just places of gathering? The only example that comes to mind where 'coincidental' interaction happen is within currated [interest groups](thoughts/social-graphs.md) like onlike network forums around games or technologies or early communities lead by superconnectors like the [Whole Earth 'Lectronic Link (WELL)](https://en.wikipedia.org/wiki/The_WELL). How can we recreate these public 'watering holes' for people to gather around? 
+Are there any spaces that don't have ulterior motives and are just places of gathering? The only example that comes to mind where 'coincidental' interaction happen is within currated [interest groups](thoughts/social-graphs.md) like onlike network forums around games or technologies or early communities lead by superconnectors like the [Whole Earth 'Lectronic Link (WELL)](thoughts/books/fctc). How can we recreate these public 'watering holes' for people to gather around? 
 
 ### Permanence in Private Spaces
 Permance means that the environment reflects that people have been there. A shared garden to tend to, a bookshelf to work through, a guestbook of all the people who have dropped in and out.
@@ -41,7 +39,7 @@ Is there any way we can create shared *artifacts* that are permanent and can be 
 
 As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital [gardens](https://twitter.com/samihusseni/status/1329499588982575104) to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces.
 
-Maybe this involves having a shared calendar, todo list, books. Or even just a space to co-live and co-exist virtually. Most online RPG games (think Animal Crossing, Minecraft, Stardew valley) give the option for users to have a shared space to exist and build together (and where both people don't necessarily both need to be present for the space to function). Why doesn't this exist outside of the gaming sphere?
+Maybe this involves having a shared calendar, todo list, books. Or even just a space to co-live and co-exist in [virtual worlds](thoughts/virtual-worlds.md). Most online RPG games (think Animal Crossing, Minecraft, Stardew valley) give the option for users to have a shared space to exist and build together (and where both people don't necessarily both need to be present for the space to function). Why doesn't this exist outside of the gaming sphere?
 
 Can we create permanence of artifacts without sacrificing ephemerality in medium?
 

@@ -30,7 +30,7 @@ Most research is one-to-many, where there are a lot more people trying to unders
 
 ![Interpretive Labour Multiplier](https://distill.pub/2017/research-debt/assets/publish-one-many-crop.jpg)
 
-Cost of understanding increases when there are more source to try to understand. This may be why people specialize so that there is less noise.
+Cost of understanding increases when there are more source to try to understand. This may be why people specialize so that there is less noise. Related: [group limits](thoughts/group-limits.md)
 
 ## Distillation
 "Distillation is also hard. It’s tempting to think of explaining an idea as just putting a layer of polish on it, but good explanations often involve transforming the idea. This kind of refinement of an idea can take just as much effort and deep understanding as the initial discovery."

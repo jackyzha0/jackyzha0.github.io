@@ -30,6 +30,13 @@ Reality privilege:
 ### Crypto
 Still needs to be converted to fiat? Can we have a fully crypto economy?
 
+## Physical Touch
+> "One concern, though, is that some social skills may not develop as effectively when so many interactions exist online. We learn how we are and aren’t supposed to act by observing others and then having opportunities to act out our observations ourselves."
+
+"On the internet, you can pull the plug and walk away. There’s no forcing mechanism that makes us have to learn" -> how do we keep people digitally [accountable](thoughts/accountability.md)?
+
+[Dunbar](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships) and his colleagues demonstrated that very light touch triggers a cascade of endorphins that, in turn, are important for creating personal relationships. Can this be replicated virtually?
+
 # Descartes
 ## First Meditation → skeptical doubts
 -   descartes wants to find a foundation of knowledge that will still stand strong even after doubting the most basic facts about the world

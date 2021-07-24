@@ -12,6 +12,8 @@ tags: ["communities"]
 
 Can we ever have fully [digital commons](thoughts/digital-commons.md)?
 
+How large can communities get before they decay? Relevant: [group limits](thoughts/group-limits.md)
+
 ## Ingroup/outgroup biases
 -   get social status points
 -   we will choose to identify with whatever in-group will immediately benefit us the most

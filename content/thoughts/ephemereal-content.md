@@ -9,6 +9,8 @@ tags: ["tech-and-society"]
     -   pandemic accelerated
     -   blending of async and sycn convos
 
+One of the things that keeps face-to-face friendships strong is the [nature of shared experience](http://psycnet.apa.org/psycinfo/2001-00651-001): you laugh together; you dance together; you gape at the hot-dog eaters on Coney Island together.
+
 ### video
 * movies
 * vlogs
