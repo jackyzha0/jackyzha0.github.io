@@ -12,6 +12,7 @@ tags: ["cognitive-sciences"]
 	-   Tin Man used to be living (born a real man) but lost his body over time due to a series of wood chopping 'accidents'
 		-   a modern tale of the ship of Theseus
 		-   does the original entity persist through the gradual replacement of each of its parts, if it doesn't, where does it stop being the same entity?
+			-   same thing with ideas, what separates [original from derivative](thoughts/originality.md)?
 		-   two differences
 			-   replacement pieces are different material from the parts they replace (tin vs flesh) does this matter?
 			-   Tin Man tells his own story from when he used to be a creature of flesh and bones → has a memory

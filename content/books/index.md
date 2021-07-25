@@ -7,7 +7,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Doughnut Economics** by Kate Raworth
 * **The Alignment Problem** by Brian Christian
 * **How to Do Nothing** by Jenny Odell
-* **Mutual Aid** by Dean Spade
 * **Klara and the Sun** by Kazuo Ishiguro
 * **Winners Take All** by Anand Giridharadas
 * **A Tale for the Time Being** by Ruth Ozeki
@@ -16,10 +15,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Streetfight** by Janette Sadik-Khan
 
 ## Current
-* **Never Let Me Go** by Kazuo Ishiguro
+* **Mutual Aid** by Dean Spade
 
 ## Past
 ### 2021
+* **Never Let Me Go** by Kazuo Ishiguro
 * [**From Counterculture to Cyberculture**](/thoughts/books/fctc) by Fred Turner
 * [**Design Justice**](/thoughts/books/design-justice) by Sasha Costanza-Chock
 * [**Mindstorms**](/thoughts/books/mindstorms) by Seymour A. Papert

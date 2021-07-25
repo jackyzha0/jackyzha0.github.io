@@ -14,7 +14,7 @@ tags: ["communities"]
     -   at a certain complexity level, combinatorial explosion of complexity
     -   does it grows as emergent behaviour?
 -   is any infrastructure ever new?
-    -   is everything derivative?
+    -   is [everything derivative?](thoughts/originality.md)
     -   is thought ever new? or is it recombinatorial
         -   feral children???
         -   neuroplasticity of culture and language?

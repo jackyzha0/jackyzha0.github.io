@@ -28,3 +28,5 @@ Because of the increased number of 'social connections' people have today, is [c
 "Yet, when researchers tried to determine whether virtual networks increase our strong ties as well as our weak ones (the ones that Hansen had focussed on), they found that, for now, the essential Dunbar number, a hundred and fifty, has remained constant." Is the Dunbar number a metric for social capacity?
 
 Does social capacity differ across different types of social interactions? e.g. One-to-one vs One-to-many vs Many-to-many (relevant: [digital commons](thoughts/digital-commons.md))
+
+"Modern Loneliness" by Lauv covers a lot of similar topics
