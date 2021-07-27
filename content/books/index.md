@@ -2,20 +2,25 @@
 A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that's linked!
 
 ## To Read
+### Fiction
+* **Klara and the Sun** by Kazuo Ishiguro
+* **The Book of Difficult Fruit** by Kate Lebo
+* **A Tale for the Time Being** by Ruth Ozeki
+
+### Non-fiction
 * **Seeing Like A State** by James C. Scott
+* **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
 * **Doughnut Economics** by Kate Raworth
-* **The Alignment Problem** by Brian Christian
 * **How to Do Nothing** by Jenny Odell
-* **Klara and the Sun** by Kazuo Ishiguro
-* **Winners Take All** by Anand Giridharadas
-* **A Tale for the Time Being** by Ruth Ozeki
 * **Blockchain Chicken Farm** by Xiaowei Wang
-* **The Book of Difficult Fruit** by Kate Lebo
 * **Streetfight** by Janette Sadik-Khan
+* **System Error** by Rob Reich
 
 ## Current
 * **Mutual Aid** by Dean Spade
+* **Ghost Work** by Mary L. Gray and Siddharth Suri
+* **Winners Take All** by Anand Giridharadas
 
 ## Past
 ### 2021

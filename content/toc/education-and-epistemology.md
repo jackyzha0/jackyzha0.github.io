@@ -12,3 +12,5 @@ date: 2021-07-14T15:03:11-04:00
 - [Search or be Found](/thoughts/search-or-be-found)
 - [Digital Gardening](/posts/digital-gardening)
 - [Framing](/posts/framing)
+- [Workflows](thoughts/workflows.md)
+- [Beyond Touch and the Screen](thoughts/beyond-touch.md)

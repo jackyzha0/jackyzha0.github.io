@@ -178,6 +178,18 @@ blogging/reading platform where simplicity level can be adjusted
 * [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
     
 ## next.js for TUIs?
+
+## tabfs but for emails
+[](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
+
+[](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)[https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
+
+-   listen on any email server
+-   cli based for configuring backend
+    -   or just yaml
+-   react/electron frontend
+    -   ability to add plugins
+        -   modular by design, creating [workflows](thoughts/workflows.md)
     
 ##  simple recording/timelapse tool for artists
 [https://fireship.io/lessons/electron-screen-recorder-project-tutorial/](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/)
