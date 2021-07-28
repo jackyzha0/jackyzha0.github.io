@@ -68,7 +68,7 @@ It more or less says that you can only explain a system using criteria defined i
 Seeing Like A State
 He lays out how administrative states come up with a sort of "bureaucratic imagination" of how the world works by defining how to measure and count stuff.
 
-[Mindstorms](books/mindstorms)
+[Mindstorms](thoughts/books/mindstorms)
 * why we shouldn't straight up label answers as wrong
 * concept of microworlds as a stepping stone to exploring and getting the right answer
 
