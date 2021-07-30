@@ -40,7 +40,6 @@
     })
     .linkOpacity(1)
     .linkColor((d) => {
-      console.log(getStyle('outlinegray'))
       return getStyle('outlinegray')
     })
 
@@ -70,4 +69,12 @@
 
   const toggleSwitch = document.querySelector('#darkmode-toggle')
   toggleSwitch.addEventListener('change', update, false)
+
+  const animate = function () {
+    requestAnimationFrame(animate)
+    const scene = Graph.scene()
+    scene.rotation.x += 5e-4
+    scene.rotation.y += 5e-4
+  }
+  animate()
 </script>
