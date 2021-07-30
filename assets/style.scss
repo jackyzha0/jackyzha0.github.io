@@ -63,12 +63,15 @@ p, ul, ol {
       padding: 0 0;
     }
   }
+}
 
-  & > canvas {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-  }
+#splash-graph-container {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  left: 20vw;
+  height: 100vh;
 }
 
 // cascade fade in

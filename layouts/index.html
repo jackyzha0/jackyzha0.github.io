@@ -5,13 +5,13 @@
 {{define "main"}}
 <!-- Begin actual content -->
 <div id="landing-container">
-  {{partial "landing/darkmode.html" .}}
   <div id = "landing-overlay" class="lt-content-column">
     <div>
       {{partial "landing/landing.html" .}}
     </div>
   </div>
-  <canvas id="canvas"></canvas>
+  {{partial "3dgraph.html" .}}
+  {{partial "landing/darkmode.html" .}}
 </div>
 
 <!-- Personal Bio -->

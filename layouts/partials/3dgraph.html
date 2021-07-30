@@ -1,0 +1,73 @@
+<script src="//unpkg.com/3d-force-graph"></script>
+<script src="//unpkg.com/three"></script>
+
+<div id="splash-graph-container"></div>
+
+<script type="module">
+  const index = {{$.Site.Data.linkIndex.index}}
+  const links = {{$.Site.Data.linkIndex.links}}
+  const curPage = {{ strings.TrimRight "/" .Page.RelPermalink }}
+  const pathColors = {{$.Site.Data.graphConfig.paths}}
+  const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
+  const data = {
+    nodes: parseIdsFromLinks(links).map(id => ({id})),
+    links,
+  }
+
+  const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`)
+
+  const Graph = ForceGraph3D({
+    rendererConfig: { antialias: true, alpha: true }
+  })
+  (document.getElementById('splash-graph-container'))
+    .nodeLabel('id')
+    .enableNavigationControls(true)
+    .enableNodeDrag(false)
+    .showNavInfo(false)
+    .nodeOpacity(1)
+    .backgroundColor("rgba(0,0,0,0)")
+    .graphData(data)
+    .nodeColor((d) => {
+      for (const pathColor of pathColors) {
+        const path = Object.keys(pathColor)[0]
+        const colour = pathColor[path]
+        if (d.id.startsWith(path)) {
+          return colour
+        }
+      }
+
+      return getStyle('navy');
+    })
+    .linkOpacity(1)
+    .linkColor((d) => {
+      console.log(getStyle('outlinegray'))
+      return getStyle('outlinegray')
+    })
+
+  const camera = Graph.camera()
+  const renderer = Graph.renderer()
+  const controls = Graph.controls()
+  controls.noZoom = true
+  const tanFOV = Math.tan( ( ( Math.PI / 180 ) * camera.fov / 2 ) );
+  const windowHeight = window.innerHeight;
+  window.addEventListener( 'resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+
+    // adjust the FOV
+    camera.fov = ( 360 / Math.PI ) * Math.atan( tanFOV * ( window.innerHeight / windowHeight ) );
+    camera.updateProjectionMatrix();
+    camera.lookAt( scene.position );
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.render( scene, camera );
+  }, false );
+
+  function update() {
+    Graph
+      .nodeColor(Graph.nodeColor())
+      .linkColor(Graph.linkColor())
+  }
+
+  const toggleSwitch = document.querySelector('#darkmode-toggle')
+  toggleSwitch.addEventListener('change', update, false)
+</script>
