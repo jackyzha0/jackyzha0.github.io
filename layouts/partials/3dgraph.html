@@ -1,9 +1,8 @@
 <script src="//unpkg.com/3d-force-graph"></script>
-<script src="//unpkg.com/three"></script>
-
 <div id="splash-graph-container"></div>
 
 <script type="module">
+  import { UnrealBloomPass } from '//cdn.skypack.dev/three/examples/jsm/postprocessing/UnrealBloomPass.js';
   const index = {{$.Site.Data.linkIndex.index}}
   const links = {{$.Site.Data.linkIndex.links}}
   const curPage = {{ strings.TrimRight "/" .Page.RelPermalink }}
@@ -15,17 +14,19 @@
   }
 
   const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`)
-
+  const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+  let isDarkMode = (localStorage.getItem('theme') ?? userPref) === 'dark'
   const Graph = ForceGraph3D({
     rendererConfig: { antialias: true, alpha: true }
-  })
-  (document.getElementById('splash-graph-container'))
+  })(document.getElementById('splash-graph-container'))
+
+  Graph
     .nodeLabel('id')
     .enableNavigationControls(true)
     .enableNodeDrag(false)
     .showNavInfo(false)
     .nodeOpacity(1)
-    .backgroundColor("rgba(0,0,0,0)")
+    .backgroundColor(isDarkMode ? "#151521" : "rgba(0,0,0,0)")
     .graphData(data)
     .nodeColor((d) => {
       for (const pathColor of pathColors) {
@@ -42,6 +43,14 @@
     .linkColor((d) => {
       return getStyle('outlinegray')
     })
+
+  const bloomPass = new UnrealBloomPass();
+  bloomPass.strength = 3;
+  bloomPass.radius = 1;
+  bloomPass.threshold = 0.1;
+  if (isDarkMode) {
+    Graph.postProcessingComposer().addPass(bloomPass);
+  }
 
   const camera = Graph.camera()
   const renderer = Graph.renderer()
@@ -62,7 +71,15 @@
   }, false );
 
   function update() {
+    isDarkMode = !isDarkMode
+    if (isDarkMode) {
+      Graph.postProcessingComposer().addPass(bloomPass);
+    } else {
+      Graph.postProcessingComposer().removePass(bloomPass)
+    }
+
     Graph
+      .backgroundColor(isDarkMode ? "#151521" : "rgba(0,0,0,0)")
       .nodeColor(Graph.nodeColor())
       .linkColor(Graph.linkColor())
   }
