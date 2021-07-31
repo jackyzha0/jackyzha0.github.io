@@ -44,4 +44,4 @@ Is distillation a form of [maintenance](thoughts/creation-vs-maintenance.md)?
 ### Where are the Distillers?
 The research distiller is an integral role for a healthy research community, yet almost no one is filling it right now.
 
-Is it because people want their work to look hard? Do people not enjoy distillation? While both of these may play a small part, the biggest part is malalignment of incentives (relevant to [incentives in open source maintenance](posts/paid-oss.md)).
+Is it because people want their work to look hard? Do people not enjoy distillation? While both of these may play a small part, the biggest part is malalignment of incentives (relevant to [incentives in open source maintenance](posts/paid-open-source.md)).

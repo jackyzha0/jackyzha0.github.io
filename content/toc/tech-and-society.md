@@ -15,4 +15,4 @@ date: 2021-07-14T15:06:10-04:00
 - [Labels and Quantization](/thoughts/labels-and-quantization)
 - [Software and Politics](/thoughts/software-and-politics)
 - [Bias Bug](/posts/bias-bug)
-- [Paid Open Source](/posts/paid-oss)
+- [Paid Open Source](posts/paid-open-source.md)

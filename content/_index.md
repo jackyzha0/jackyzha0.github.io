@@ -1,4 +1,4 @@
-Hi, I'm Jacky and welcome to my little corner of the internet! Currently, I'm based in Vancouver, Canada and study Computer Science at UBC. Read more about my [non-work endeavours](/notwork) or my [failure resume](/posts/a-failure-resume).
+Hi, I'm Jacky and welcome to my little digital garden! Here, I play with ideas through both code and words. Read more about my [non-work endeavours](/notwork) or my [failure resume](/posts/a-failure-resume).
 
 I'm still trying to figure out what I really want to do with my life but 3 things that are fascinating to me right now are cognitive systems, ethical tech, and infrastructure. You can find more about what I'm thinking about on my [second brain](/toc/directory).
 

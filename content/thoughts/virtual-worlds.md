@@ -28,7 +28,9 @@ Reality privilege:
 -   Is the concept of [utopia](/thoughts/articles/the-ones-who-walk-from-omelas) only a reality for those who can afford to not worry about physiological health? Maslow's hierarchy of needs
 
 ### Crypto
-Still needs to be converted to fiat? Can we have a fully crypto economy?
+Crypto still needs to be converted to fiat? Can we have a fully crypto economy?
+
+Related: [Web3](thoughts/web3.md)
 
 ## Physical Touch
 > "One concern, though, is that some social skills may not develop as effectively when so many interactions exist online. We learn how we are and aren’t supposed to act by observing others and then having opportunities to act out our observations ourselves."

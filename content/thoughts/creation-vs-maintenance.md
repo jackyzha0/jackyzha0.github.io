@@ -47,7 +47,7 @@ Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, exist
 
 'Broken world thinking' -> focus on constant process of entropy and undoing of work and what we can do to slow/halt this process rather than introducing new things. Curious how this relates to [climate tech](thoughts/climate-tech.md) and general escapist vibes of people like Elon wanting to escape to space rather than fixing problems with our current world.
 
-*The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-oss.md), how do we incentivize maintenance?
+*The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
 
 "Feminist theorists have long argued that obsessions with technological novelty obscures all of the labour, including housework, that women, disproportionately, do to keep life on track."
 

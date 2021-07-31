@@ -3,10 +3,24 @@ title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 ---
 
-# Ideas
-## Long Term Archival Storage Service
+## Ideas
+### Tools for Thought
+* block based editors are neat cause i can move stuff around really easily
+	* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
+* card based backlinks/outgoing links
+	* on the left, you can see all the notes that link to the current page
+	* on the right, you can see all outoing links
+	* hovering on each card will reveal another layer which those ones are connected to
+* graph view
+	* i wanted to have the option for 3d graphs too
+* timeline view
+	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
+* good global search
+	* being able to index content fast and effectively
+### Long Term Archival Storage Service
 
-## DreamCoder boolsat
+
+### DreamCoder boolsat
 https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
 
 NeuroSAT Paper:
@@ -16,7 +30,7 @@ DreamCoder Paper:
 https://arxiv.org/pdf/2006.08381.pdf
 https://www.youtube.com/watch?v=qtu0aSTDE2I
 
-## themis — go-based api testing framework
+### themis — go-based api testing framework
 ```yaml
 tests:
 - name: "test 1"
@@ -43,14 +57,14 @@ tests:
 -   can actually use concurrency lmao
 	-   buffered channel of tests, run x tests in parallel
 
-##  better graph visualization
+###  better graph visualization
 [social-graphs](/thoughts/social-graphs)
 
 [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
     
 [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
     
-##  better bash using go (clay)
+###  better bash using go (clay)
 workflow
 
 1.  clay build -o program
@@ -125,10 +139,10 @@ resFile = {
 // exit(0) is implied
 ```
     
-##  multi-level blogs
+###  multi-level blogs
 blogging/reading platform where simplicity level can be adjusted
     
-##  better personal analytics
+###  better personal analytics
 * small js bundle
 * doesn't sell user data!!
 * things to track
@@ -136,7 +150,7 @@ blogging/reading platform where simplicity level can be adjusted
 	* total users
 	* user visit distribution vs time
 
-##  c → fast and free link shortener
+###  c → fast and free link shortener
 -   dynamodb for storage
 	-   tables
 		-   registrations
@@ -173,13 +187,13 @@ blogging/reading platform where simplicity level can be adjusted
 
 [https://stackoverflow.com/questions/1943356/creating-subdomains-programmatically](https://stackoverflow.com/questions/1943356/creating-subdomains-programmatically)
 
-## living room
+### living room
 * recreating [communal living spaces](/thoughts/communities) in digital space
 * [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
     
-## next.js for TUIs?
+### next.js for TUIs?
 
-## tabfs but for emails
+### tabfs but for emails
 [](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
 
 [](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)[https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
@@ -191,8 +205,8 @@ blogging/reading platform where simplicity level can be adjusted
     -   ability to add plugins
         -   modular by design, creating [workflows](thoughts/workflows.md)
     
-##  simple recording/timelapse tool for artists
+### simple recording/timelapse tool for artists
 [https://fireship.io/lessons/electron-screen-recorder-project-tutorial/](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/)
 
-##  aka → bash profiles, makefile style
-##  deep foveal VR rendering
+###  aka → bash profiles, makefile style
+###  deep foveal VR rendering

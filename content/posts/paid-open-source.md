@@ -44,7 +44,7 @@ Code may be nearly free to create and distribute, but maintenance is still expen
 ### Code as an artifact
 There are two main ways we can look at code. The first of which is *static* code. Code that, on its own, does nothing but exists as an archive. Others can copy and download the code without incurring any additional costs to the author. For the maintainers, it should make no difference in regards to cost whether 10 or 10,000 people use it.
 
-This type of code is a pool resource, it is
+This type of code is a pool resource or [public good](thoughts/public-goods.md), it is
 1. **Non-rivalry.** My ability to copy the code doesn’t affect your ability to copy it. (This isn’t exactly true due to some marginal costs but I’ll discuss this later)
 2. **Non-excludable.** If someone has a copy of the code, it is very difficult to prevent them from sharing that code with others.
 
