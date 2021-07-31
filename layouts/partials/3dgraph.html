@@ -16,9 +16,11 @@
   const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`).trim()
   const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
   let isDarkMode = (localStorage.getItem('theme') ?? userPref) === 'dark'
+
+  const canvas = document.getElementById('splash-graph-container')
   const Graph = ForceGraph3D({
     rendererConfig: { antialias: true, alpha: true }
-  })(document.getElementById('splash-graph-container'))
+  })(canvas)
 
   const highlightNodes = new Set()
   const highlightLinks = new Set()
@@ -98,10 +100,8 @@
     // adjust the FOV
     camera.fov = (360 / Math.PI) * Math.atan(tanFOV * (window.innerHeight / windowHeight))
     camera.updateProjectionMatrix()
-    camera.lookAt(scene.position)
-
     renderer.setSize(window.innerWidth, window.innerHeight)
-    renderer.render(scene, camera)
+
   }, false)
 
   function updateDarkMode() {

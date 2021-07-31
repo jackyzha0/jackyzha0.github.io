@@ -69,9 +69,15 @@ p, ul, ol {
   z-index: 0;
   position: absolute;
   top: 0;
-  width: 100vw;
   left: 20vw;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
+
+  @media all and (max-width: 450px) {
+    left: 0 !important;
+    top: 10vh;
+  }
 }
 
 // cascade fade in
@@ -84,7 +90,7 @@ p, ul, ol {
 
     @media all and (max-width: 450px) {
       &:nth-child(2) {
-        margin-top: 15vh;
+        margin-top: 10vh;
       }
     }
   }
