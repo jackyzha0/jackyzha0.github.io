@@ -13,12 +13,16 @@
     links,
   }
 
-  const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`)
+  const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`).trim()
   const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
   let isDarkMode = (localStorage.getItem('theme') ?? userPref) === 'dark'
   const Graph = ForceGraph3D({
     rendererConfig: { antialias: true, alpha: true }
   })(document.getElementById('splash-graph-container'))
+
+  const highlightNodes = new Set();
+  const highlightLinks = new Set();
+  let hoverNode = null;
 
   Graph
     .nodeLabel('id')
@@ -26,9 +30,18 @@
     .enableNodeDrag(false)
     .showNavInfo(false)
     .nodeOpacity(1)
-    .backgroundColor(isDarkMode ? "#151521" : "rgba(0,0,0,0)")
+    .backgroundColor(isDarkMode ? getStyle('light') : "rgba(0,0,0,0)")
     .graphData(data)
     .nodeColor((d) => {
+      if (d.id === hoverNode) {
+        return getStyle('salmon')
+      }
+
+      // something else selected, dim self
+      if (!!hoverNode && !highlightNodes.has(d.id)) {
+        return "#afbfc933"
+      }
+
       for (const pathColor of pathColors) {
         const path = Object.keys(pathColor)[0]
         const colour = pathColor[path]
@@ -40,14 +53,35 @@
       return getStyle('navy');
     })
     .linkOpacity(1)
-    .linkColor((d) => {
-      return getStyle('outlinegray')
+    .linkColor((l) => highlightLinks.has(l.index) ? "#5A7282" : getStyle('outlinegray'))
+    .onNodeHover((d) => {
+      // empty selection
+      if (!d) {
+        highlightNodes.clear();
+        highlightLinks.clear();
+        hoverNode = null;
+        updateHighlight();
+        return
+      }
+
+      // no state change
+      if ((!d && !highlightNodes.size) || (d && hoverNode === d)) return;
+
+      highlightNodes.clear();
+      highlightLinks.clear();
+
+      const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
+      const selfLinks = links.filter(l => l.source.id === d.id || l.target.id === d.id)
+      neighbours.forEach(neighbour => highlightNodes.add(neighbour));
+      selfLinks.forEach(link => highlightLinks.add(link.index));
+      hoverNode = d.id;
+      updateHighlight();
     })
 
   const bloomPass = new UnrealBloomPass();
   bloomPass.strength = 3;
   bloomPass.radius = 1;
-  bloomPass.threshold = 0.1;
+  bloomPass.threshold = 0.2;
   if (isDarkMode) {
     Graph.postProcessingComposer().addPass(bloomPass);
   }
@@ -70,7 +104,7 @@
     renderer.render( scene, camera );
   }, false );
 
-  function update() {
+  function updateDarkMode() {
     isDarkMode = !isDarkMode
     if (isDarkMode) {
       Graph.postProcessingComposer().addPass(bloomPass);
@@ -79,19 +113,26 @@
     }
 
     Graph
-      .backgroundColor(isDarkMode ? "#151521" : "rgba(0,0,0,0)")
+      .backgroundColor(isDarkMode ? getStyle('light') : "rgba(0,0,0,0)")
       .nodeColor(Graph.nodeColor())
       .linkColor(Graph.linkColor())
   }
 
+  function updateHighlight() {
+    Graph
+      .nodeColor(Graph.nodeColor())
+      .linkColor(Graph.linkColor())
+  }
+
+
   const toggleSwitch = document.querySelector('#darkmode-toggle')
-  toggleSwitch.addEventListener('change', update, false)
+  toggleSwitch.addEventListener('change', updateDarkMode, false)
 
   const animate = function () {
-    requestAnimationFrame(animate)
     const scene = Graph.scene()
     scene.rotation.x += 5e-4
     scene.rotation.y += 5e-4
+    requestAnimationFrame(animate)
   }
   animate()
 </script>
