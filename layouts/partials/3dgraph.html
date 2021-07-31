@@ -20,9 +20,9 @@
     rendererConfig: { antialias: true, alpha: true }
   })(document.getElementById('splash-graph-container'))
 
-  const highlightNodes = new Set();
-  const highlightLinks = new Set();
-  let hoverNode = null;
+  const highlightNodes = new Set()
+  const highlightLinks = new Set()
+  let hoverNode = null
 
   Graph
     .nodeLabel('id')
@@ -32,6 +32,8 @@
     .nodeOpacity(1)
     .backgroundColor(isDarkMode ? getStyle('light') : "rgba(0,0,0,0)")
     .graphData(data)
+    .nodeLabel((d) => `<div class="nodeLabel"><p>${d.id}</p></div>`)
+    .onNodeClick((d) => window.location.href = `${d.id}?ref=graph`)
     .nodeColor((d) => {
       if (d.id === hoverNode) {
         return getStyle('salmon')
@@ -49,65 +51,63 @@
           return colour
         }
       }
-
-      return getStyle('navy');
+      return getStyle('navy')
     })
     .linkOpacity(1)
     .linkColor((l) => highlightLinks.has(l.index) ? "#5A7282" : getStyle('outlinegray'))
     .onNodeHover((d) => {
       // empty selection
       if (!d) {
-        highlightNodes.clear();
-        highlightLinks.clear();
-        hoverNode = null;
-        updateHighlight();
+        highlightNodes.clear()
+        highlightLinks.clear()
+        hoverNode = null
+        updateHighlight()
         return
       }
 
       // no state change
-      if ((!d && !highlightNodes.size) || (d && hoverNode === d)) return;
-
-      highlightNodes.clear();
-      highlightLinks.clear();
+      if ((!d && !highlightNodes.size) || (d && hoverNode === d)) return
+      highlightNodes.clear()
+      highlightLinks.clear()
 
       const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
       const selfLinks = links.filter(l => l.source.id === d.id || l.target.id === d.id)
-      neighbours.forEach(neighbour => highlightNodes.add(neighbour));
-      selfLinks.forEach(link => highlightLinks.add(link.index));
-      hoverNode = d.id;
-      updateHighlight();
+      neighbours.forEach(neighbour => highlightNodes.add(neighbour))
+      selfLinks.forEach(link => highlightLinks.add(link.index))
+      hoverNode = d.id
+      updateHighlight()
     })
 
-  const bloomPass = new UnrealBloomPass();
-  bloomPass.strength = 3;
-  bloomPass.radius = 1;
-  bloomPass.threshold = 0.2;
+  const bloomPass = new UnrealBloomPass()
+  bloomPass.strength = 3
+  bloomPass.radius = 1
+  bloomPass.threshold = 0.2
   if (isDarkMode) {
-    Graph.postProcessingComposer().addPass(bloomPass);
+    Graph.postProcessingComposer().addPass(bloomPass)
   }
 
   const camera = Graph.camera()
   const renderer = Graph.renderer()
   const controls = Graph.controls()
   controls.noZoom = true
-  const tanFOV = Math.tan( ( ( Math.PI / 180 ) * camera.fov / 2 ) );
-  const windowHeight = window.innerHeight;
-  window.addEventListener( 'resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
+  const tanFOV = Math.tan(((Math.PI / 180) * camera.fov / 2))
+  const windowHeight = window.innerHeight
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight
 
     // adjust the FOV
-    camera.fov = ( 360 / Math.PI ) * Math.atan( tanFOV * ( window.innerHeight / windowHeight ) );
-    camera.updateProjectionMatrix();
-    camera.lookAt( scene.position );
+    camera.fov = (360 / Math.PI) * Math.atan(tanFOV * (window.innerHeight / windowHeight))
+    camera.updateProjectionMatrix()
+    camera.lookAt(scene.position)
 
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.render( scene, camera );
-  }, false );
+    renderer.setSize(window.innerWidth, window.innerHeight)
+    renderer.render(scene, camera)
+  }, false)
 
   function updateDarkMode() {
     isDarkMode = !isDarkMode
     if (isDarkMode) {
-      Graph.postProcessingComposer().addPass(bloomPass);
+      Graph.postProcessingComposer().addPass(bloomPass)
     } else {
       Graph.postProcessingComposer().removePass(bloomPass)
     }
