@@ -17,8 +17,38 @@ Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/Rese
 By upgrading forms of external communication, we can reduce [research debt](thoughts/articles/research-debt.md) and allow us to [collaborate](posts/collaborative-thinking.md) better
 
 ### Conversing (person-to-person)
+Face-to-face, realtime, improvised. As it stands today, most of this happens through spoken word, hand-waving, and static sketches. This makes grasping the same idea as another person extremely difficult (low bandwidth communication)
+
+> Words are terrible at representing systems
+
+Can we reduce the time to generate models for ideas down from hours to seconds? Is there any way we can integrate the stage into presentations (much like a play)?
+
 ### Presenting (person-to-people)
+Blackboards are more flexible than a computer for presentations right now.
+
+> What's the point of a living, dynamic speaker, if the presentation itself is completely static?
+
+Can we create the visuals of a well-polished science YouTube live like a blackboard?
+
+Can we map concept space to physical space and use the stage as an outline of the presentation? Kind of like a book where you can tell how much of it you're finished by the weight of each side, can the audience see what the presenter has already covered?
+
 ### Reading/Browsing (media-to-person)
+Can we dynamically create content customizable/personalizable for each user? Are there other channels we can use for communicating information outside just text?
+
+Getting this right is critical for effective [knowledge distillation](thoughts/articles/research-debt.md)
+
+Cool potential features to keep in mind
+1. Skimmable at different levels. Is there a 5s version? A 60s version?
+2. Transformable. Can the user transform the data into different representations without having to explicitly define these ahead of time?
+3. Context-sensitive. Not one size fits all, can we create unique content for every reader/reading depending on their prior understanding and current needs?
+4. Interrogable. Can we get clarifications and answers from the text without having the author having to anticipate those questions?
+
+Is it possible to create dynamic spatial media? Virtual museums of information? Are there ways to engage with things other than the hands? Can we storytell as a way to ingest and interact with information?
+
+**The focus is on spatial representation of usable knowledge.**
+
+Can we create a [memory palace](thoughts/memory-palace.md) for people to walk through to recall information and learn new information?
+
 ### Writing (person-to-media)
 ### Thinking (person-to-self)
 

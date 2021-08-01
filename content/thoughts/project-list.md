@@ -7,6 +7,7 @@ date: 2021-06-17T00:33:42-04:00
 ### Tools for Thought
 * block based editors are neat cause i can move stuff around really easily
 	* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
+	* spatially consistent? [memory palace](thoughts/memory-palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
 * card based backlinks/outgoing links
 	* on the left, you can see all the notes that link to the current page
 	* on the right, you can see all outoing links
@@ -17,6 +18,8 @@ date: 2021-06-17T00:33:42-04:00
 	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
 * good global search
 	* being able to index content fast and effectively
+
+
 ### Long Term Archival Storage Service
 
 
