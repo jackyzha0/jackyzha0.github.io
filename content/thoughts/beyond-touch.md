@@ -11,7 +11,7 @@ New representations of thought — written language, numerals, mathematical nota
 
 Desktop was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)
 
-Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf)
+Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf) and [Jinha Lee](http://www.leejinha.com/home.html)
 
 ## Modes of Human Communication
 By upgrading forms of external communication, we can reduce [research debt](thoughts/articles/research-debt.md) and allow us to [collaborate](posts/collaborative-thinking.md) better
@@ -50,8 +50,18 @@ Is it possible to create dynamic spatial media? Virtual museums of information? 
 Can we create a [memory palace](thoughts/memory-palace.md) for people to walk through to recall information and learn new information?
 
 ### Writing (person-to-media)
-### Thinking (person-to-self)
+As it stands, writing is just manipulation of symbols. Even for static materials, the symbols just are more literal representations. Coding still, is manipulating indirect [symbolic systems](thoughts/symbolic-systems.md) and [representations](thoughts/representation.md)
 
+Can we show multiple representations of dynamic behaviour? Can we transform between different representations easily?
+
+The goal is to have manipulation of the behaviour and data itself rather than a structure or set of symbols that 'represents' that behaviour/data -> related to the idea of turtles and the LOGO language in [mindstorms](thoughts/books/mindstorms.md)
+
+### Thinking (person-to-self)
+Why are almost all representations used in intelletual work (both final product and intermediate scratch work) mostly 2D? Mostly paper or pixels
+
+Can we create dynamic tactile mediums?
+
+> Playfair’s invention of data graphics was transformative because it tapped into capabilities of the human visual system which had gone unused in intellectual work. It may be similarly transformative to tap into the profound capabilities that enable a person to tie a shoelace or make a sandwich, and bring them to bear on more abstract thinking.
 
 ## Beyond the Desktop Metaphor
 **An interface that intentionally exploits the vulnerability of human beings for financial or otherwise selfish gain is inhumane and also despicable.**
@@ -63,3 +73,21 @@ Isn't this just [design justice](thoughts/books/design-justice.md)? Considerate 
 
 Reimagining applications and instead using modules and [workflows](thoughts/workflows.md)
 
+## Interaction Design
+http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/?utm_source=pocket_mylist
+
+Tools address human needs by amplifying human capabilities. Great tools have parts that fit the problem as well as fit the person.
+
+> Go ahead and pick up a book. Open it up to some page. Notice how you _know_ where you are in the book by the distribution of weight in each hand, and the thickness of the page stacks between your fingers. Turn a page, and notice how you would _know_ if you grabbed two pages together, by how they would slip apart when you rub them against each other.
+
+> Take a moment to pick up the objects around you. Use them as you normally would, and sense their tactile response — their texture, pliability, temperature; their distribution of weight; their edges, curves, and ridges; how they _respond_ in your hand as you use them.
+
+Current technology is very much just *Pictures Under Glass*. All interaction are glassy and feel like they have no connection with whatever task you were performing. Almost as if it was just under a pane of glass. List of interactions you can do with *Picture Under Glass*:
+1. Slide
+
+When working with our hands, touch does the driving, and vision helps out from the back seat. Moving our limbs and bodies is so well choreographed, its just [telerobotics](thoughts/telerobotics.md) for us. Why should we limit our interactions to a single finger or two?
+
+## The Vision
+ _Visions matter_. Visions give people a direction and inspire people to act, and _a group of inspired people is the most powerful force in the world_. If you're a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.
+ 
+Related: creating [a new DARPA](thoughts/a-new-darpa.md)
