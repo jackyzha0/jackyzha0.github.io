@@ -12,6 +12,8 @@ Can we move away from depending completely on only one of
 2. Market Influence
 3. Academia
 
+> The best predictor of success in innovation is the number of other people they come into contact with
+
 Some thoughts. Already have been thinking about this in relation to [hackathons](posts/hackathons.md), [paid open source](posts/paid-open-source.md), and [academia](thoughts/academia.md).
 
 ## PARPA and alternative funding models

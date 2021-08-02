@@ -16,6 +16,11 @@ Now with all that stuff out of the way, here's the juicy list you've been waitin
 
 ## 2021
 
+* Ghosted by Contrary Build and Contrary Fellowship
+
+* Couldn't work up the courage to apply to the [Maintainers Summer Fellowship](https://themaintainers.org/summer-fellow)
+	* I really love the work that the Maintainers org is doing and this internship would have combined so many things that I'm interested in and passionate about: maintenance, writing, software, infrastructure, etc. I just couldn't convince myself that I wouldn't have made a fool of myself by applying :(
+
 * Had to cut out a bunch of commitments in order to maintain mental sanity
   * While this isn't a 'failure' in the traditional sense, it was a failure for me in terms of setting good boundaries for myself. I had been spending way too much of my 'free' time working for projects and commitments I wasn't 100% interested in. I missed being able to just dedicate an afternoon to tinkering and exploring an idea so I decided to make the leap and cut down on commitments. If it's not a hell yes, it's a no.
 
