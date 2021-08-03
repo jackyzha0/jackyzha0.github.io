@@ -23,6 +23,10 @@ h3 {
   font-size: 1em;
 }
 
+li {
+  line-height: 1.25em;
+}
+
 a {
   color: var(--olive);
   transition: all 0.2s ease;
@@ -120,7 +124,7 @@ p, ul, ol {
     color: var(--dark);
 
     & > a {
-      padding-right: 0.5em;
+      margin-right: 0.5em;
     }
   }
 }

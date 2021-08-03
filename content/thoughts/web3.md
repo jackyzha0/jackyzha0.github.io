@@ -24,6 +24,14 @@ Limitations
 2. UX: 
 3. Cost: gas fees 
 
+## Why not?
+* Too 
+
+the technology feels very "purity"-based (immutability, privacy, etc.) in ways that are not useful or perhaps counterproductive for most applications - the people who care about the pure/extreme qualities are usually doing illegal things, dealing with huge quantities of $, or at high risk like dissidents
+
+ I keep thinking my major issue with crypto is that its economics are imported from the off-chain world and have to interact with it--people who come in rich and benefit from real-world inequalities can then perpetuate that in crypto while those who work to build communities and workers' equity/equality don't necessarily have so much to gain and are less likely to be rewarded with investment...
+
+
 ## Cool Applications
 ### [Gitcoin](https://gitcoin.co/)
 How do we incentivize [open source software](posts/paid-open-source.md)? Gitcoin approaches this through decentralizing funding (away from corporations and toward individuals).
