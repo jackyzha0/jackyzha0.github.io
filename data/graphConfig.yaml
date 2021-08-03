@@ -1,6 +1,6 @@
 enableLegend: false
 enableDrag: true
-enableZoom: false
+enableZoom: true
 paths:
   - /toc: "#4388cc"
   - /newsletters: "#e0b152"
