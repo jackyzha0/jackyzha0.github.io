@@ -61,7 +61,7 @@ i think for me from an engineering perspective like if i'm dishonest with others
   move towards realtime media rather than offline media (e.g. streaming > videos)
 
 A theorem is only a fact in the context of the axioms on which it is based. Axioms are treated more like postulates, accepted only tentatively and defining a branch of mathematics.
-All facts and axioms in mathematics are fundamentally flawed. Take a look at Gödel's incompleteness theorem. It basically states that if math is consistent, it cannot be complete. And if it is not complete, it must not be consistent.
+
 The uncertainty principle governs what we can call facts in all systems. Including mathematics.
 It more or less says that you can only explain a system using criteria defined in that system.
 

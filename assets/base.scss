@@ -152,7 +152,7 @@ hr {
 }
 
 // internal link
-a[href^="/"] {
+a[href^="/"], a[href^="#"] {
   text-decoration: none;
   background-color: #afbfc922;
   padding: 0 0.2em;
