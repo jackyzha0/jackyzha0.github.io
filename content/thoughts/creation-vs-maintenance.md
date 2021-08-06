@@ -60,4 +60,8 @@ Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, exist
 ## Incentivizing Maintenance
 *The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
 
+Is maintenance just the battle against the [tragedy of the commons](thoughts/tragedy-of-the-commons.md)? "Fundamentally, digital infrastructure has a free rider problem. Resources are offered for free, and everybody (whether individual developer or large software company) uses them, so nobody is incentivized to contribute back, figuring that somebody else will step in." [Source](https://techcrunch.com/2018/06/23/open-source-sustainability)
+
+Who are all the maintainers behind the thousands of libraries we depend on each day? Is maintenance a form of [Ghost Work](thoughts/articles/ghost-work.md)?
+
 Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public-goods.md))

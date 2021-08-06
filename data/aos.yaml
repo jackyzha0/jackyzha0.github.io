@@ -1,7 +1,7 @@
-enabled: true
+enabled: false
 settings:
   - data-aos="fade-right"
   - data-aos-duration="800"
   - data-aos-easing="custom"
-  - data-aos-offset="100"
+  - data-aos-offset="0"
   - data-aos-once="true"
