@@ -5,7 +5,9 @@ date: 2021-08-01T22:10:54-04:00
 
 Money is power. It dictates what type of research and work gets funded, and who gets to do it. 
 
-As of now, there are no good spaces to work on long-term (think 10+ years in the future) research to enable the visions of the future.
+It's important to be aware of the incentive structures in place wherever you work (e.g. academia, industry): 80k hours of work in your life, it matters a lot where that goes (voting with labour). 
+
+As of now, there are no good spaces to work on long-term (think 10+ years in the future) research to enable the visions of the future. Also, is long-term innovation just [infrastructure](thoughts/infrastructure.md)?
 
 Can we move away from depending completely on only one of 
 1. Government funding
@@ -15,6 +17,13 @@ Can we move away from depending completely on only one of
 > The best predictor of success in innovation is the number of other people they come into contact with
 
 Some thoughts. Already have been thinking about this in relation to [hackathons](posts/hackathons.md), [paid open source](posts/paid-open-source.md), and [academia](thoughts/academia.md).
+
+## 3rd Spaces
+For people wanting to create change, why do we choose to do that through innovation rather than policy? (is this due to [creation vs maintenance](thoughts/creation-vs-maintenance.md) approaches to thinking?)
+
+Procurement services: finding a business application of research (specifically government funded)
+
+Related: reinventing [hackathons](posts/hackathons.md) as 3rd spaces
 
 ## PARPA and alternative funding models
 https://benjaminreinhardt.com/parpa

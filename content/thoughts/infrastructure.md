@@ -5,20 +5,21 @@ tags: ["communities"]
 ---
 
 ## What is infrastructure even?
--   things that use infrastructure or infrastructure
+-  which came first, the infrastructure or the applications that depend on it?
+-   things that use infrastructure or technology
     -   in the beginning not much of a distinction
     -   first tech → language
         -   how did language arise?
         -   evolve with each other?
-        -   language as infrastructure for thought
+        -   [language as infrastructure for thought](thoughts/language-of-thought.md)
     -   at a certain complexity level, combinatorial explosion of complexity
-    -   does it grows as emergent behaviour?
+    -   does it grows as [emergent behaviour](thoughts/emergent-behaviour.md)?
 -   is any infrastructure ever new?
     -   is [everything derivative?](thoughts/originality.md)
     -   is thought ever new? or is it recombinatorial
-        -   feral children???
         -   neuroplasticity of culture and language?
-- do we need to define [infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
+
+Do we need to define [infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
 
 > Thus, infrastructure design requires a more subtle approach: **creating the right incentives, environments, and dependencies to encourage well-being while preserving user autonomy**.
 

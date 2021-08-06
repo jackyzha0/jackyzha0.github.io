@@ -23,11 +23,16 @@ This reminds me of a common fallacy we see in unreliable systems, where people b
 ## Defining Innovation
 Innovation: the word to hide the lack of substance. A term gains popularity because it resonates with the zeitgeist, reaches buzzword status, then suffers from overexposure and cooptation.
 
-In formal economic terms, ‘innovation’ involves the diffusion of new things and practices. The term is completely agnostic about whether these things and practices are good.
+In formal economic terms, ‘innovation’ involves the diffusion of new things and practices. The term is completely agnostic about whether these things and practices are good. How much of this is tied back to the definition of [progress](thoughts/progress.md)?
 
 * Proved to be useful -> innovations
 * Proved to be useful over 40 years -> technology
-ma
+
+### Innovation as a form of maintenance?
+Is there even a distinction of maintenance and innovation? Is maintenance just micro-innovation?
+
+Maintenance is fixing parts of an existing system whereas innovation is wholistic and changing the whole system
+
 ## Innovation is overvalued
 https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more?utm_source=pocket_mylist
 
@@ -47,10 +52,12 @@ Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, exist
 
 'Broken world thinking' -> focus on constant process of entropy and undoing of work and what we can do to slow/halt this process rather than introducing new things. Curious how this relates to [climate tech](thoughts/climate-tech.md) and general escapist vibes of people like Elon wanting to escape to space rather than fixing problems with our current world.
 
-*The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
-
 "Feminist theorists have long argued that obsessions with technological novelty obscures all of the labour, including housework, that women, disproportionately, do to keep life on track."
 
 ## On shifting the focus too quickly
 "One important topic of conversation is the danger of moving too triumphantly from innovation to maintenance. There is no point in keeping the practice of hero-worship that merely changes the cast of heroes without confronting some of the deeper problems underlying the innovation obsession."
 
+## Incentivizing Maintenance
+*The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
+
+Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public-goods.md))
