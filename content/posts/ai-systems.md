@@ -10,7 +10,7 @@ This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machi
 ## Introduction
 Historically, development of AI has taken a very specific approach &mdash; systems that represent the world through symbols and manipulate those tokens in a systematic way to arrive at a result. This type of AI was coined Good Old-Fashioned AI (GOFAI) by John Haugeland[^1]. 
 
-This worked well up until around 1984 when the field entered an 'AI Winter', a long plateau in progress that was most likely due cynicism in the AI research community that trickled to media and funding bodies, halting research and development[^2].
+This worked well up until around 1984 when the field entered an 'AI Winter', a long plateau in progress that was most likely due cynicism in the AI research community that trickled to media and [funding](thoughts/funding.md) bodies, halting research and development[^2].
 
 However, with the rise of Moore's Law and the insane amount of compute and data available, a new approach to the development of AI arose &mdash; one that focused on statistical methods and connectionist networks like artificial neural networks[^2]. Haugeland[^1] dubbed this approach to AI design New Fangled AI (NFAI).
 

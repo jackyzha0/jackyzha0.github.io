@@ -53,7 +53,7 @@ Limitations
 
 ## Cool Applications
 ### [Gitcoin](https://gitcoin.co/)
-How do we incentivize [open source software](posts/paid-open-source.md)? Gitcoin approaches this through decentralizing funding (away from corporations and toward individuals).
+How do we incentivize [open source software](posts/paid-open-source.md)? Gitcoin approaches this through decentralizing [funding](thoughts/funding.md) (away from corporations and toward individuals).
 
 Not just providing funding, 4 main value adds
 1. Earn -> get paid to do maintenance work and upkeep of public goods!

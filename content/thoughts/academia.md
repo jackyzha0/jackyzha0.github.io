@@ -19,7 +19,7 @@ Academia feels more pure, more like play? More of a 'constructionist' approach, 
 
 Thinking about how similar the incentive structures are in [hackathons](/posts/hackathons)
 
-Can we create the energy of DARPA outside of government funding? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/a-new-darpa.md) perhaps?
+Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/a-new-darpa.md) perhaps?
 
 ## MS Research
 Session w/ Jim Pinkelman, Ph.D. Been at MS for 19 years, 11 years in Microsoft Research

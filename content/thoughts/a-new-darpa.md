@@ -25,7 +25,7 @@ Procurement services: finding a business application of research (specifically g
 
 Related: reinventing [hackathons](posts/hackathons.md) as 3rd spaces
 
-## PARPA and alternative funding models
+## PARPA and alternative [funding](thoughts/funding.md) models
 https://benjaminreinhardt.com/parpa
 https://www.nber.org/system/files/working_papers/w24674/w24674.pdf
 

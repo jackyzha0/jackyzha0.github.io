@@ -4,6 +4,8 @@ date: 2021-07-02T15:40:00-04:00
 tags: ["cognitive-sciences"]
 ---
 
+Can we use language as the method of querying memory? 
+
 # Crane
 ## Language of thought hypothesis → LOTH
 - proposes thinking occurs in a mental language, this is called mentalese

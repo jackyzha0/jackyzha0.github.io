@@ -11,6 +11,10 @@ Progress, loosely defined by [Tyler Cowen and Patrick Collison](https://www.thea
 
 Progress isn't equal, it's multiplicative. It's "a mixed blessing—one that resulted in technologies that have allowed many people to live longer, safer lives, but that has, simultaneously, destroyed global ecosystems, caused the extinction of many living species, facilitated rampant population growth, and wreaked havoc on climate systems, the effects of which will be an increase in droughts, floods, storms, and erratic weather patterns that threaten most global societies." [Source](https://www.theatlantic.com/business/archive/2014/09/the-industrial-revolution-and-its-discontents/379781/)
 
+There are no 'thought leaders' in bleeding tech, only in established fields. Everyone at the edge of a field is a 'pioneer' in a sense. 
+
+After a subject gets established, how do we continue to make progress through research? [A new DARPA](thoughts/a-new-darpa.md) perhaps?
+
 ## History of Progress
 https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/
 
@@ -42,7 +46,7 @@ From a more epistemlogical standpoint, how much of progress just comes down to g
 
 Jasmine has a really good [potential curriculum outline](https://jasminew.me/post/progress):
 1. History and causes: How do we make progress?
-	1. History of science and technology: How were useful discoveries made? What was the relationship between funding and knowledge?
+	1. History of science and technology: How were useful discoveries made? What was the relationship between [funding](thoughts/funding.md) and knowledge?
 	2. Philosophy of technology / technological progress: How, why, and when do particular technologies emerge?
 	3. Meta-science / science of science / social epistemology of science: How do we educate, train, and incentivize scientists?
 	4. Mechanism design + incentive design: How do we design incentives to elicit certain behaviours and aggregate specific information?
