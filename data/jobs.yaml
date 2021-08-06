@@ -1,3 +1,22 @@
+- name: Microsoft
+  expand: false
+  title: Garage SWE Intern
+  img: microsoft.png
+  year: 2021
+  things: >
+    Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams.
+    Decoupled data models from data views by introducing a data and service layer using GraphQL.
+    Abstracted common functionality between all four streaming apps by creating a streaming hook and error manager context with 98% test coverage.
+  techlist:
+    - Jest
+    - Teams SDK
+    - Azure DevOps
+  lang_ratios:
+    - name: TypeScript
+      percent: 80
+    - name: GraphQL
+      percent: 20
+
 - name: BentoML
   expand: false
   title: Open Source Contributor & MLH Fellows Class 0
@@ -23,11 +42,14 @@
 
 - name: nwPlus
   expand: false
-  title: HackCamp Logistics Director
+  title: Co-Preosident
   img: nwplus.png
   year: 2020/21
-  things:
-    Lead a team of 4 in hosting HackCamp, a beginner-focused virtual hackathon, attracting over 900+ registrations, 500+ attendees, 3.2k+ livestream viewers, and $1200 in donations to charities. Co-lead the creation of a publicly available self-learning resources guidebook for tech beginners. Co-lead the development of our hackathon portal which aims to be a central information hub for hackers to do judging, relay announcements, and view the schedule Handled 200k+ interactions on the site during HackCamp.
+  things: >
+    Led and coordinated 7 subteams with a total of 40+ team members to run 3 of the largest hackathons in Western Canada.
+    Led logistics for HackCamp, a beginner-focused virtual hackathon, attracting over 500+ attendees, 3.2k+ livestream viewers, and $1200 in donations to charities.
+    Co-lead the creation of a publicly available self-learning resources guidebook for tech beginners.
+    Co-lead the development of our hackathon portal which aims to be a central information hub for hackers to do judging, relay announcements, and view the schedule Handled 200k+ interactions on the site during HackCamp.
   techlist:
     - Gitbook
     - Firebase
