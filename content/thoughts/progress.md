@@ -7,6 +7,10 @@ From *21 Lesson for the 21st Century* by Yuval Noah Harari:  "Did we domesticate
 
 Progress, loosely defined by [Tyler Cowen and Patrick Collison](https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/), is "the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries"
 
+**Progress implies direction. Progress towards what?** Does this require alignment of values?
+
+Progress isn't equal, it's multiplicative. It's "a mixed blessing—one that resulted in technologies that have allowed many people to live longer, safer lives, but that has, simultaneously, destroyed global ecosystems, caused the extinction of many living species, facilitated rampant population growth, and wreaked havoc on climate systems, the effects of which will be an increase in droughts, floods, storms, and erratic weather patterns that threaten most global societies." [Source](https://www.theatlantic.com/business/archive/2014/09/the-industrial-revolution-and-its-discontents/379781/)
+
 ## History of Progress
 https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/
 
@@ -45,7 +49,7 @@ Jasmine has a really good [potential curriculum outline](https://jasminew.me/pos
 	5. Cultural components of change-making: How have humans organized change in the past around ideas and processes?
 	6. Cause prioritization: How do we decide what to focus on?
 2. Definition and measurement: What sort of world(s) should we be we building towards?
-	1. Visions of the future: What type of future/utopia do we want to live in?
+	1. Visions of the future: What type of future/utopia do we want to live in? **Is progress to one person necessarily progress to the collective?** rel: [The ones who walk from Omelas](thoughts/articles/the-ones-who-walk-from-omelas.md)
 	2. Progress definition and measurement: How do we define progress and metrics?
 3. Drawbacks of progress: What are the risks incurred by progress? How do we make differential progress?
 	1. Costs of progress: Can progress be too fast? How do we mitigate risks (esp those that are irreversible and existential)?
@@ -55,3 +59,8 @@ Jasmine has a really good [potential curriculum outline](https://jasminew.me/pos
 ## What type of Progress?
 
 Do we care more about technological progress or social progress? We can measure social progress via, maybe, [Gini coefficient](https://en.wikipedia.org/wiki/Gini_coefficient) (measuring income/wealth inequality). Technological progress might be measured by our ability to impact the universe, the physical world around us.
+
+### Happiness
+Happiness isn’t necessarily highest in the places with the most technological progress
+
+Is it wrong to try to measure progress in terms of people's happiness? What about the hedonic treadmill, will we eventually just regress to a new 'normal'?

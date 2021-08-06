@@ -26,6 +26,11 @@ Infrastructure can be [emergent](/thoughts/emergent-behaviour)
 
 "I have admiringly called this the "Procrastination Principle," wherein an elegant network design would not be unduly complicated by attempts to solve every possible problem that one could imagine materializing in the future. We see the [principle at work](http://yupnet.org/zittrain/2008/03/01/chapter-6-the-lessons-of-wikipedia/#27) in Wikipedia, where the initial pitch for it would seem preposterous: 'We can generate a consummately thorough and mostly reliable encyclopedia by allowing anyone in the world to create a new page and anyone else in the world to drop by and revise it.'"
 
+## Hard and soft infrastructure
+Hard infrastructure refers to hard rules and goods (e.g. parks, laws, highways, etc.)
+
+Soft infrastructure is upheld as a social protocol, an institution whose maintenance relies on dedication and value alignment. More closely related to [social contracts](thoughts/social-contracts.md)
+
 ## Moderation
 https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/
 "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."

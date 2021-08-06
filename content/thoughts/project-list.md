@@ -3,6 +3,10 @@ title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 ---
 
+## Continuations
+### Desktop Portal
+Creating a desktop version of portal for easier UX
+
 ## Ideas
 ### Tools for Thought
 * block based editors are neat cause i can move stuff around really easily
@@ -33,7 +37,7 @@ DreamCoder Paper:
 https://arxiv.org/pdf/2006.08381.pdf
 https://www.youtube.com/watch?v=qtu0aSTDE2I
 
-### themis — go-based api testing framework
+### Themis — go-based api testing framework
 ```yaml
 tests:
 - name: "test 1"
@@ -60,7 +64,7 @@ tests:
 -   can actually use concurrency lmao
 	-   buffered channel of tests, run x tests in parallel
 
-###  better graph visualization
+###  Better graph visualization
 [social-graphs](/thoughts/social-graphs)
 
 [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
@@ -142,10 +146,10 @@ resFile = {
 // exit(0) is implied
 ```
     
-###  multi-level blogs
+###  Multi-level blogs
 blogging/reading platform where simplicity level can be adjusted
     
-###  better personal analytics
+###  Better personal analytics
 * small js bundle
 * doesn't sell user data!!
 * things to track
@@ -153,7 +157,7 @@ blogging/reading platform where simplicity level can be adjusted
 	* total users
 	* user visit distribution vs time
 
-###  c → fast and free link shortener
+### c → fast and free link shortener
 -   dynamodb for storage
 	-   tables
 		-   registrations
