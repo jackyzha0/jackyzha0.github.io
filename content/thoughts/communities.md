@@ -25,7 +25,7 @@ How large can communities get before they decay? Relevant: [group limits](though
 -   bottom-up emergent properties vs top-down governance
 -   homeostasis of communities
     -   mix of internal and external influence
-    -   secluded vs public
+    -   secluded vs public: [digital commons](thoughts/digital-commons.md)
 -   [labels and quantization](/thoughts/labels-and-quantization)
     -   conforming to labels
     -   self-fulfilling prophecies
@@ -46,9 +46,9 @@ Was called "participation inequality" by researchers at AT&T labs
  
  a type of power law (zipf's law)
  
- Size of the community might matter? e.g.
- small communities like family group chats -> almost everyone creates content
- large communities like LinkedIn -> most people consume, vocal minority
+ Size of the community might matter? a form of [Dunbar's number](thoughts/group-limits.md) e.g.
+* small communities like family group chats -> almost everyone creates content
+* large communities like LinkedIn -> most people consume, vocal minority
  
 though size might just be a proxy for sense of belonging in a group. i.e. if you strongly identify with said group (family) you are more likely to participate and contribute
 

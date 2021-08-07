@@ -7,7 +7,7 @@ date: 2021-08-06T08:42:53-04:00
 Paying people set amounts for set tasks.
 
 Bounty model is tough because
-1. Onboarding new members to do novel work is hard (upfront costs are large)
+1. Immediate shared context is required and onboarding new members to do novel work is hard (upfront costs are large)
 2. Keeping people engaged after the tasks are difficult (no long term sense of investment)
 
 How can we keep individuals engaged with a project on longer term timescales?

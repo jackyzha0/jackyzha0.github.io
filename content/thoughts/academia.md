@@ -15,7 +15,7 @@ https://www.briantimar.com/notes/mimetic/mimetic/
 Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.
 
 ## Incentive Structure
-Academia feels more pure, more like play? More of a 'constructionist' approach, freedom to ask your own questions -> [mindstorms](/thoughts/books/mindstorms)
+Academia feels more pure, more like play? More of a 'constructionist' approach, freedom to ask your own questions rel: [mindstorms](/thoughts/books/mindstorms)
 
 Thinking about how similar the incentive structures are in [hackathons](/posts/hackathons)
 

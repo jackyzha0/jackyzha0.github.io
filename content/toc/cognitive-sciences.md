@@ -24,3 +24,4 @@ date: 2021-07-14T15:03:15-04:00
 - [Mind Design](/thoughts/mind-design)
 - [Emergent Behaviour](/thoughts/emergent-behaviour)
 - [Multiple Realization of Intelligence](/thoughts/multiple-realization)
+- [Computability](thoughts/computability.md)

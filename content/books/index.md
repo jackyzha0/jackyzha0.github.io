@@ -16,6 +16,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Blockchain Chicken Farm** by Xiaowei Wang
 * **Streetfight** by Janette Sadik-Khan
 * **System Error** by Rob Reich
+* **Radical Markets** by Eric A. Posner and E Glen Weyl
 
 ## Current
 * **Mutual Aid** by Dean Spade
