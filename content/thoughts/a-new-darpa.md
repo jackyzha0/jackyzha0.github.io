@@ -9,6 +9,10 @@ It's important to be aware of the incentive structures in place wherever you wor
 
 As of now, there are no good spaces to work on long-term (think 10+ years in the future) research to enable the visions of the future. Also, is long-term innovation just [infrastructure](thoughts/infrastructure.md)?
 
+Limitations of private companies and startups
+- You spend less than what you make (for sake of profit)
+- Trade-off between intellectually interesting and profitable (? debatable but generally true)
+
 Can we move away from depending completely on only one of 
 1. Government funding
 2. Market Influence

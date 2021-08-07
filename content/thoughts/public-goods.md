@@ -38,3 +38,26 @@ Public also means creating venues in which people could begin to identify themse
 These 'goods' exemplify a set of shared values within the 'public'.
 
 Are there concepts of 'free riders' with public goods? What about [tragedy of the commons](thoughts/tragedy-of-the-commons.md)? "It is clearly in the interest of society to promote the creation and consumption of public goods—be they vaccines, public libraries, or open source code"
+
+## [Web3](thoughts/web3.md)
+https://otherinter.net/research/positive-sum-worlds/
+
+Crypto protocols are one of the most compelling novel institutional forms, specifically deriving from their "public" qualities
+1. unrestricted membership + participation
+2. open APIs
+3. transparent allocation of resources and pwoer
+
+Yet not perfect
+* Ownership of these resources are concentrated in a precious few (whales)
+* The 'public' that this infrastructure serves is mostly decentralized finance
+Both of these main tokeholders share one common concern: price
+
+### 'Voice' in web3
+"The equivalence of stake and voice in crypto is reminiscent of early American democracy, in which political representation was conditioned on property ownership. Under this regime, only 6% of the total US population was eligible to vote—a laughably exclusionary idea of the body politic by today's standards (Ratcliffe, 2013)"
+
+"The most consequential members of the crypto-public today are those who hold the most tokens, meaning even small holders are effectively removed from the conversation about what's in their benefit." Same concepts as [design justice](thoughts/books/design-justice.md), we need to talk with and consider the marginalized peoples under existing systems of power so we can gain a deeper understanding of the public that we are building for and how to best serve them.
+
+## Obessions with profit
+Web3 supposed allows us to 'codify' the set of values that a public goods represents. Yet, in practice in web3, "little space has been made for different values to be discussed or enacted. Which is why, in the absence of ways to enact our shared values, we default to the lowest common denominator: profit."
+
+The United States Dollar does not have a responsibility to profit its holders. A cryptocurrency is a monetary instrument, not a business.
