@@ -119,8 +119,7 @@
     .attr("id", (d) => d.id)
     .attr("r", (d) => {
       const numOut = index.links[d.id]?.length || 0
-      const numIn = index.backlinks[d.id]?.length || 0
-      return 3 + (numOut + numIn) / 4
+      return 3 + (numOut / 4)
     })
     .attr("fill", color)
     .style("cursor", "pointer")
