@@ -1,7 +1,6 @@
 ---
 title: "Can Machines Think?"
 date: 2021-07-02T13:29:33-04:00
-tags: ["cognitive-sciences"]
 ---
 
 Intelligence as a measure of information conversation ratio. How do we test intelligence of machines vs humans?

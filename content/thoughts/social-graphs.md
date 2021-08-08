@@ -1,7 +1,6 @@
 ---
 title: "Social Graphs"
 date: 2021-06-16T09:05:37-04:00
-tags: ["communities"]
 ---
 
 -   social graph → who's connected to who

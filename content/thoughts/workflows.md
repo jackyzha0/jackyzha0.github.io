@@ -19,8 +19,6 @@ Are our tools extensions of who we are? At what point does it just become a part
 
 Can we kill the [Desktop Metaphor](https://uxdesign.cc/the-desktop-metaphor-must-die-676fbb34afdb)?
 
-Is there any way we can 
-
 ## Cool Approaches
 ### Mercury
 https://uxdesign.cc/introducing-mercury-os-f4de45a04289

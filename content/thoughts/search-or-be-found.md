@@ -1,7 +1,6 @@
 ---
 title: "Search or be found"
 date: 2021-05-23T21:46:46-04:00
-tags: ["knowledge"]
 ---
 
 ## The search box versus the feed

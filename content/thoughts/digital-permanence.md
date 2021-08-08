@@ -1,7 +1,6 @@
 ---
 title: "Digital Permanence"
 date: 2021-05-09T17:39:37-04:00
-tags: ["tech-and-society"]
 ---
 
 Once you share something, you can't unshare it, internet feels intractable

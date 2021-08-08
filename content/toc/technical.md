@@ -3,8 +3,11 @@ title: "Technical"
 date: 2021-07-14T15:29:51-04:00
 ---
 
-
-## Technical
+### Projects
+- [Project List](thoughts/project-list.md)
 - [ctrl-v](/posts/ctrlv-next)
-- [Docker Explain](/posts/docker)
 - [reflect](/posts/reflect)
+
+### Concepts
+- [Docker Explained](/posts/docker)
+- [React in 30min](posts/react.md)

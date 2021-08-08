@@ -1,7 +1,6 @@
 ---
 title: "Semantics: What is Meaning?"
 date: 2021-07-02T13:49:27-04:00
-tags: ["cognitive-sciences"]
 ---
 
 # Putnam

@@ -1,7 +1,6 @@
 ---
 title: "Acceleration"
 date: 2021-02-27T11:59:22-08:00
-tags: ["knowledge"]
 ---
 
 moving fast but not breaking things

@@ -1,7 +1,6 @@
 ---
 title: "Feedback Loops"
 date: 2021-06-16T23:32:09-07:00
-tags: ["knowledge"]
 ---
 
 [Newsletter bit](/newsletters/issue-4)

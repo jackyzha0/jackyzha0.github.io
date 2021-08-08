@@ -1,7 +1,6 @@
 ---
 title: "Mind-Body Problem"
 date: 2021-07-02T15:43:59-04:00
-tags: ["cognitive-sciences"]
 ---
 
 

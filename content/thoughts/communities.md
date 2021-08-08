@@ -1,7 +1,6 @@
 ---
 title: "Communities"
 date: 2021-07-14T15:22:10-04:00
-tags: ["communities"]
 ---
 
 ## Types of Communities

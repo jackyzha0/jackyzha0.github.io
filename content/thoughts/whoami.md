@@ -1,7 +1,6 @@
 ---
 title: "$whoami"
 date: 2021-03-11T14:43:24-08:00
-tags: ["personal"]
 ---
 
 when I hop on a call with new people and they ask me to give a short intro about myself, I never know what to say. Surely, I've done *something* of note that would be relevant to the conversation? Yeah sure, maybe [introductions are hard](/thoughts/introductions), but I also realized I don't have a cohesive and self-consistent understanding of who I am or what I stand for.

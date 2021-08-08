@@ -1,7 +1,6 @@
 ---
 title: "Framing and Context Collapse"
 date: 2021-05-08T14:57:51-07:00
-tags: ["knowledge"]
 ---
 
 ![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/title.png)

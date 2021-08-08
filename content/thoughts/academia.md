@@ -1,7 +1,6 @@
 ---
 title: "Academia"
 date: 2021-06-18T10:13:33-04:00
-tags: ["knowledge"]
 ---
 
 ## Cool People/Things

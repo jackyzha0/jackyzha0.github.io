@@ -1,9 +1,7 @@
 ---
 title: "Symbolic Systems"
 date: 2021-07-02T15:05:25-04:00
-tags: ["cognitive-sciences"]
 ---
-
 
 # Dreyfus
 ## Convergence of CS and Philosophy

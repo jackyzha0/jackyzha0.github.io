@@ -3,14 +3,18 @@ title: "Education and Epistemology"
 date: 2021-07-14T15:03:11-04:00
 ---
 
-## Education and Epistemology
-- [Academia](/thoughts/academia)
+### Knowledge Acquisition
 - [Acceleration](/thoughts/acceleration)
-- [Building In Public](/thoughts/building-in-public)
-- [Fault Tolerance](/thoughts/fault-tolerance)
 - [Feedback Loops](/thoughts/feedback-loops)
 - [Search or be Found](/thoughts/search-or-be-found)
+
+### Knowledge Sharing
 - [Digital Gardening](/posts/digital-gardening)
+- [Building In Public](/thoughts/building-in-public)
+- [Academia](/thoughts/academia)
+- [Research Debt](thoughts/articles/research-debt.md)
 - [Framing](/posts/framing)
-- [Workflows](thoughts/workflows.md)
+
+### Interaction Design
 - [Beyond Touch and the Screen](thoughts/beyond-touch.md)
+- [Workflows](thoughts/workflows.md)

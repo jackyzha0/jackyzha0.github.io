@@ -1,7 +1,6 @@
 ---
 title: "Virtual Worlds"
 date: 2021-07-02T16:23:05-04:00
-tags: ["cognitive-sciences"]
 ---
 
 # Personal Thoughts

@@ -1,7 +1,6 @@
 ---
 title: "Mind Design"
 date: 2021-07-02T15:27:30-04:00
-tags: ["cognitive-sciences"]
 ---
 
 
