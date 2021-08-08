@@ -182,3 +182,8 @@ p>img+em {
   display: block;
   transform: translateY(-1em);
 }
+
+#graph-container {
+  border: var(--outlinegray) 1px solid;
+  border-radius: 5px
+}

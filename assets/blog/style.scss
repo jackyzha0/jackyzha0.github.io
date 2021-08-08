@@ -55,7 +55,7 @@
   }
 }
 
-header, #postTitle {
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -64,10 +64,6 @@ header, #postTitle {
 
 nav > a {
   margin-left: 2em;
-}
-
-#postTitle h1 {
-  margin-right: 2em;
 }
 
 footer {
@@ -82,10 +78,6 @@ footer {
 @media all and (max-width: 600px) {
   header>nav {
     display: none;
-  }
-  #postTitle {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 sup {

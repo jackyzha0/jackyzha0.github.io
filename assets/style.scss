@@ -84,11 +84,6 @@ p, ul, ol {
   }
 }
 
-#graph-container {
-  border: var(--outlinegray) 1px solid;
-  border-radius: 5px;
-}
-
 // cascade fade in
 #main-landing {
   & > h1 {

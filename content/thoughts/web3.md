@@ -48,3 +48,5 @@ Not just providing funding, 4 main value adds
 2. Learn -> mentorship from industry leaders and peers
 3. Connect -> creating a community of builders and support network
 4. Fund -> making it easy for developers to support each other
+
+### [Golem](https://blog.golemproject.net/golem-primer/)
