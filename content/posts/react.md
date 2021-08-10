@@ -27,6 +27,8 @@ when data changes,
 
 ## Setting up a React project
 
+https://github.com/jackyzha0/min-react
+
 ## Components
 in HTML and JS, rendering logic (HTML) is separate from UI logic (JS)
 
@@ -34,11 +36,14 @@ React focuses on separation of concerns instead of separation of technologies by
 
 
 ```jsx
-
 // defining a component (a function that returns some JSX)
-const HelloWorld = () => {
+const Greeting = () => {
+  return <p>Hello World!</p>
+}
+
+const App = () => {
   return (<div>
-	<p>Hello World!</p>
+	<Greeting />
   </div>)
 }
 
@@ -53,22 +58,18 @@ ReactDOM.render(HelloWorld, document.getElementById('root'))
 What if we want to pass information down to our components?
 
 ```jsx
-
-// time display (always use capital letters for components)
-const CurrentTime = (props) => {
-	
+const Greeting = (props) => {
+  return <p>Hello {props.name}!</p>
 }
 
-// defining a component (a function that returns some JSX)
-const HelloWorld = () => {
+const App = () => {
   return (<div>
-	<p>Hello World!</p>
+	<Greeting name="Jacky"/>
   </div>)
 }
 
 // inserting a react component into our page (at the root)
 ReactDOM.render(HelloWorld, document.getElementById('root'))
-
 ```
 
 ## Hooks

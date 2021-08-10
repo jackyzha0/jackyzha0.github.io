@@ -28,14 +28,20 @@ Creating a desktop version of portal for easier UX
 
 
 ### DreamCoder boolsat
-https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
+Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
+
+kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
+
+Background:
+- https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
+- https://searchworks.stanford.edu/view/13250178
 
 NeuroSAT Paper:
-https://arxiv.org/pdf/1802.03685.pdf
+- https://arxiv.org/pdf/1802.03685.pdf
 
 DreamCoder Paper:
-https://arxiv.org/pdf/2006.08381.pdf
-https://www.youtube.com/watch?v=qtu0aSTDE2I
+- https://arxiv.org/pdf/2006.08381.pdf
+- https://www.youtube.com/watch?v=qtu0aSTDE2I
 
 ### Themis — go-based api testing framework
 ```yaml

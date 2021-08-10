@@ -15,6 +15,13 @@ Applicable to [feedback-loops](/thoughts/feedback-loops)
 
 "When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems."
 
+## Phrases
+
+### Goodhart's Law
+> "When a measure becomes a target, it ceases to be a good measure" -- [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law)
+
+### McNamara Fallacy
+Also known as the quantitative fallacy: making a decision involving purely quantitative observations (ignoring all others) is often wrong. [Source](https://en.wikipedia.org/wiki/McNamara_fallacy)
 
 ## Are labels helpful? 
 In a data-driven world, can we and should we try to quantize everything? What about inherently human qualities like emotions or personality?

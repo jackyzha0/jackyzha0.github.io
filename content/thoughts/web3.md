@@ -5,12 +5,18 @@ date: 2021-07-28T17:13:54-04:00
 
 While crypto protocols operate as open networks, do they truly enact a [public](thoughts/public-goods.md) if solely comprised of private capital?
 
+Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social-contracts.md)"
+
+The cyberpunkspirit: the basic property of which adverserial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
+
 ## Index
 - [Decentralization](thoughts/decentralization.md)
 - [Public Goods](thoughts/public-goods.md)
 - [DAOs](thoughts/dao.md)
 - [Quadratic Funding](thoughts/quadratic-funding.md)
 - [Proof of stake](thoughts/proof-of-stake.md)
+- [Proof of work](thoughts/proof-of-work.md)
+- [Consensus](thoughts/consensus.md)
 
 ## Web History
 https://ethereum.org/en/developers/docs/web2-vs-web3/
@@ -50,3 +56,7 @@ Not just providing funding, 4 main value adds
 4. Fund -> making it easy for developers to support each other
 
 ### [Golem](https://blog.golemproject.net/golem-primer/)
+
+TLDR: Golem democratizes society’s access to computing power by creating a decentralized platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens
+
+>From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network
