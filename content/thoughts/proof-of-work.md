@@ -11,3 +11,7 @@ All transactions are hashed. Hashing in general is a trivial function. To make i
 Because the 'winner' is randomly-chosen proportional to the work done, it incentivizes everybody on the network to act honestly and record only true transactions.
  
 > Proof of work makes it extremely difficult to alter any aspect of the blockchain, since such an alteration would require re-mining all subsequent blocks.
+
+## Disadvantagaes
+- Operates on the logic of massive power (hashing power) incentivized into existence by massive rewards (block rewards). Only defense attacks is just scale of the network (attackers of size less than $x$ are discouraged from appearing by having the network constantly spend $x$ every day)
+- [Extremely electricity intensive](https://digiconomist.net/bitcoin-energy-consumption)
