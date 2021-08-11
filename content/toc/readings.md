@@ -15,6 +15,7 @@ Notes on my favourite articles and books.
 ### Urban Planning
 - [Cities and Programming](/thoughts/articles/cities-and-programming)
 - [City is Not a Tree](/thoughts/articles/city-is-not-a-tree)
+- [Post-it Note City](thoughts/articles/post-it-note-city.md)
 
 ### Tech and Society
 - [The Ones Who Walk From Omelas](/thoughts/articles/the-ones-who-walk-from-omelas)

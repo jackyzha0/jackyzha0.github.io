@@ -3,6 +3,8 @@ title: "Labels and Quantization"
 date: 2021-05-04T22:22:23-04:00
 ---
 
+Our obsession of applying labels to everything even whether a [hot dog is a sandwhich or not](https://www.hot-dog.org/culture/hot-dog-sandwich)
+
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."
 
 "This is because feedback loops which are too short for the overall system makes people focus on inappropriate intermediate goals."
