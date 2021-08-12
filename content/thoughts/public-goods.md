@@ -10,6 +10,8 @@ Public goods are
 1. non-excludable: it’s extremely difficult to stop someone from using the good, like roads and bridges
 2. non-rivalrous:  it’s abundant, and one person’s use of the good doesn’t substantially reduce the amount left for someone else (e.g. there’s more than enough air to go around)
 
+It costs the same to produce for one person as it is for everyone else, and one cannot prevent people from accessing this.
+
 Static [open source](posts/paid-open-source.md) (code that anyone can copy off the internet) is an example of a public good. Another example of these are public [infrastructure](thoughts/infrastructure.md) like roads (although not necessarily, if you have your drivers license revoked you may not be able to make use of the roads in the first place).
 
 It seems only natural that online media archives and open digital [infrastructure](thoughts/infrastructure.md) should qualify as well.
@@ -22,6 +24,8 @@ Club goods are excludable but non-rivalrous. A lot of more recent app launches (
 https://otherinter.net/research/positive-sum-worlds/ and https://gitcoin.co/blog/seeking-a-new-kind-of-public-good/
 
 We govern, share, and maintain [public goods] as a society. While imperfect in how they are built or administered, these objects draw us together in dialogue, debate, and common concern
+
+How can we incentivize creation of public goods? Maybe through [quadratic funding](thoughts/quadratic-funding.md).
 
 ### Defining 'public'
 > The vernacular term "public" is understood to be _something of the people, freely available for use_—such as parks, roads, and common lands.

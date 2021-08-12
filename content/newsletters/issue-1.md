@@ -11,7 +11,7 @@ On an unrelated note, I'm currently working on stepping outside my comfort zone 
 ## 3 things I’ve found interesting
 
 1. [Velocity vs Acceleration based execution](https://www.samsonzhang.com/2021/01/19/how-to-innovate-and-create-a-culture-of-innovation.html). Insightful read on how orgs can be [moving fast but not be innovating](/thoughts/acceleration). How do we have a high acceleration org rather than just a high velocity one?
-2. [Switch Transformers: Larger than GPT-3](https://venturebeat.com/2021/01/12/google-trained-a-trillion-parameter-ai-language-model/?fbclid=IwAR1-OgJWsilve6805OOPFqZ5l3B6sfA2snYsWpl_vogklUX5L6UoGMOemjo).  An interesting approach to deal with huge language models by 'sparsly' activating certain subsets of the network. Interesting to see modern ML techniques going back to expert systems of the early 90's.
+2. [Switch Transformers: Larger than GPT-3](https://venturebeat.com/2021/01/12/google-trained-a-trillion-parameter-ai-language-model).  An interesting approach to deal with huge language models by 'sparsly' activating certain subsets of the network. Interesting to see modern ML techniques going back to expert systems of the early 90's.
 3. [Suspension of Internet in Uganda](https://blog.cloudflare.com/uganda-january-13-2021-internet-shut-down/). During an election at that. Curious how something of this scale was orchestrated, let alone agreed to. Something that feels so close to [infrastructure](/thoughts/infrastructure) shouldn't be freely shutdown so easily.
 
 ## 2 things I’ve been wondering about
