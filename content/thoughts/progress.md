@@ -7,7 +7,7 @@ From *21 Lesson for the 21st Century* by Yuval Noah Harari:  "Did we domesticate
 
 Progress, loosely defined by [Tyler Cowen and Patrick Collison](https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/), is "the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries"
 
-**Progress implies direction. Progress towards what?** Does this require alignment of values?
+**Progress implies direction. Progress towards what?** Does this require alignment of values? Is progress enabling us to better express our [identities](thoughts/introductions.md)?
 
 Progress isn't equal, it's multiplicative. It's "a mixed blessing—one that resulted in technologies that have allowed many people to live longer, safer lives, but that has, simultaneously, destroyed global ecosystems, caused the extinction of many living species, facilitated rampant population growth, and wreaked havoc on climate systems, the effects of which will be an increase in droughts, floods, storms, and erratic weather patterns that threaten most global societies." [Source](https://www.theatlantic.com/business/archive/2014/09/the-industrial-revolution-and-its-discontents/379781/)
 
