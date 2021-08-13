@@ -9,6 +9,8 @@ How do we defend against attacks in distributed systems with no central authorit
 https://en.wikipedia.org/wiki/Byzantine_fault
 https://lamport.azurewebsites.net/pubs/byz.pdf
 
+Related: [game theory](thoughts/game-theory.md)
+
 ### Zooko's Triangle
 Postulates that names of participants can have at most 2 of these 3 properties
 -   Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.

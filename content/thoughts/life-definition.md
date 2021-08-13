@@ -16,7 +16,7 @@ date: 2021-07-02T21:38:52-04:00
 			-   Tin Man tells his own story from when he used to be a creature of flesh and bones → has a memory
 	-   Tik-Tok has neither of those two differences
 		-   built in a tinker's shop
-		-   Tik-Tok is treated as a conscious being
+		-   Tik-Tok is treated as a [conscious](thoughts/consciousness.md) being
 		-   but is not treated as being able to live
 -   Conclusion from Tik-Tok story
 	-   neither thinking nor consciousness entails being alive

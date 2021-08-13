@@ -14,8 +14,7 @@
   }
 
   const getStyle = (name) => getComputedStyle(document.body).getPropertyValue(`--${name}`).trim()
-  const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
-  let isDarkMode = (localStorage.getItem('theme') ?? userPref) === 'dark'
+  let isDarkMode = currentTheme === 'dark'
 
   const canvas = document.getElementById('splash-graph-container')
   const Graph = ForceGraph3D({
@@ -106,16 +105,17 @@
 
   function updateDarkMode() {
     isDarkMode = !isDarkMode
+
+    Graph
+      .backgroundColor(isDarkMode ? getStyle('dark') : "rgba(0,0,0,0)")
+      .nodeColor(Graph.nodeColor())
+      .linkColor(Graph.linkColor())
+
     if (isDarkMode) {
       Graph.postProcessingComposer().addPass(bloomPass)
     } else {
       Graph.postProcessingComposer().removePass(bloomPass)
     }
-
-    Graph
-      .backgroundColor(isDarkMode ? getStyle('light') : "rgba(0,0,0,0)")
-      .nodeColor(Graph.nodeColor())
-      .linkColor(Graph.linkColor())
   }
 
   function updateHighlight() {

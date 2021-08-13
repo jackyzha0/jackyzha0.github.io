@@ -51,14 +51,11 @@
 
 <!-- Load JS stuff -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-{{ $css := slice "script.js" "darkmode.js"}}
-{{range $css}}
-{{- with resources.Get . | minify -}}
+{{- with resources.Get "script.js" | minify -}}
 <script>
   {{.Content | safeJS }}
 </script>
 {{- end -}}
-{{end}}
 
 {{if $.Site.Data.aos.enabled -}}
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

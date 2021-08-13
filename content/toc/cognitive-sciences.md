@@ -23,5 +23,6 @@ date: 2021-07-14T15:03:15-04:00
 - [Telerobotics](/thoughts/telerobotics)
 - [Mind Design](/thoughts/mind-design)
 - [Emergent Behaviour](/thoughts/emergent-behaviour)
+- [Consciousness](thoughts/consciousness.md)
 - [Multiple Realization of Intelligence](/thoughts/multiple-realization)
 - [Computability](thoughts/computability.md)

@@ -43,12 +43,13 @@ date: 2021-07-02T15:33:29-04:00
 -   A $\phi$s that S → Charles (A) believes ($\phi$s) that pigs can swim (S)
     -   propositional attitudes → thoughts of this form
 -   content of a mental state → what distinguishes states involving the same attitude from one another
--   on consciousness, conscious thoughts vs unconscious thoughts
+-   on [consciousness](thoughts/consciousness.md), conscious thoughts vs unconscious thoughts
     -   not all thoughts are conscious thoughts
     -   thoughts you are aware of having
     -   it is possible to believe or desire things you don't know that you believe or desire
     -   descartes denies that there are unconscious thoughts
     -   freud agrees there are unconscious thoughts (and desires)
+
 ## Intentionality
 - representational character of states of mind
 -   mental states which exhibit intentionality are called intentional states
@@ -94,14 +95,10 @@ date: 2021-07-02T15:33:29-04:00
 
 # Dretske
 -   mental representations
-    
     -   naturalistic → matter of correlation, "these spots mean measles", spots are a reliable indicator of measles
-        
-        teach us about the term, they appeal to natural laws and science
-        
+    -   teach us about the term, they appeal to natural laws and science
     -   conceptual → "this read light means stop", matter of convention, connection is arbitrary
-        
-        what a competent speaker knows when he/she knows the term
+    -   what a competent speaker knows when he/she knows the term
         
 ## Simple causal theory
 -   x represents y if and only if x is a reliable indicator of y in ideal conditions

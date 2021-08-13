@@ -9,6 +9,6 @@ How complex behaviour can arise out of seemingly simple rules
 * [Community](/thoughts/communities) dynamics
 
 Interesting to think about in context of single agents in multi-agent systems
-How does consciousness arise?
+How does [consciousness](thoughts/consciousness.md) arise?
 
 Even in systems of [representation](/thoughts/representation), 
