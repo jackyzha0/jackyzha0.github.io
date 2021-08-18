@@ -159,4 +159,4 @@ Let's hack the hackathon. This time, with hackers first, not companies.
 [^4]: [*Wired* on Hackathons and Exploitation](https://www.wired.com/story/sociologists-examine-hackathons-and-see-exploitation/)
 [^5]: [Post-it Note City](https://placesjournal.org/article/post-it-note-city)
 [^6]: [*Forbes* on High Turnover Rate in Tech](https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2018/06/29/the-real-problem-with-tech-professionals-high-turnover)
-[^7]: [Beyond Instrumentalization](https://www.notion.so/Beyond-Instrumentalization-ad5697e4bab24998b8421f0dae65e027) by Jamie Wang
+[^7]: [Beyond Instrumentalization](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization) by Jamie Wang

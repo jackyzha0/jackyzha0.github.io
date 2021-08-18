@@ -1,0 +1,72 @@
+---
+title: "A City is not a Computer"
+date: 2021-08-17T17:49:28-06:00
+---
+
+Reboot event with Shannon Mattern on her new book _A City Is Not A Computer_. Main summary and introduction on the [Substack here](https://reboothq.substack.com/p/mattern).
+
+## Event Notes
+- So much of how we interact with cities is through a computer; how can we reclaim cities for the people within them as people instead of just as data? What have cities lost in the transition to a data governed model
+	- How we define [computation](thoughts/computability.md) matters a lot
+	- Definitely something is lost in this 'generalization' of people as data
+	- A lot of 'messiness' in history (e.g. *why* people were evicted, etc.) especially in *embodied knowledge*
+	- Let's think about what **can't** be digitized and be put on a dashboard
+	- Technosolutionism in governing from just a quantized dashboard where the *people responsible for making the decisions are so abstracted away from the actual problems that they need to solve*
+- What are potential solutions to this overly [quantized](thoughts/labels-and-quantization.md) technosolutionist approach? You mentioned indigenous knowledge
+	- Think more epistemologically broadly (how do we know what we know, are things inherently quantifiable or not)?
+	- Can we contextualize wisdom vs knowledge?
+	- How can we provide public alternatives to privatized social systems (e.g. public interest Google)?
+	- Examples of where knowledge goes beyond data and information
+		- e.g. Public Libraries: center for civic knowledge, trusted knowledge broker, community archives, public digital infrastructure, rather than just a place to borrow books
+		- these are definitely supplements rather than solutions
+	- Maintenance and Care
+		- Focus on [maintenance instead of just plain innovation](thoughts/creation-vs-maintenance.md)
+		- Tech fetishizes creating new things, is there [Value Beyond Instrumentalization](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization)?
+	- What is the 'dashboard' in the proto-city?
+		- Source: Cybernetic Revolutionaries: Technology and Politics in Allendes Chiles (by Medina)
+		- Feels like a lot of abstraction away from actual problems
+		- Potemkin control room! Semblance of control rather than actual control/usefulness
+			- Curious how similar this is to the [potemkin villages that AI systems construct](posts/ai-systems.md)
+- How can digital communities learn from libraries and librarians to prevent a Library of Alexandria moment?
+	- Rise of Amazon: do we need bookstores and libraries anymore? Yes!
+	- Primary point of internet access for underpriveleged communites
+	- Not just about search and delivery of content, but about curation and serving the body not just the mind
+	- Values of libraries that digital maintainers could learn
+		- When you're trying to optimize for 'hits' or 'clicks' feels very opposite to how libraries value knowledge
+		- What knowledge needs to be protected? What knowledge **shouldn't** be universally accessible?
+		- Alternative networks: what could the internet have looked like? A writing on the bit: [A People's History of Computing in the US](http://joyrankin.com/phcus)
+- Reboot has an ethos of techno-optimism, how do we reconcile this with humanists who vehemently reject technology as a whole
+	- A lot of blanket rejection of tech and demonization of the algorithm
+		- misses a lot of things, e.g. predicting weather, modelling climate change, etc.
+	- Rather than just bringing humanists in, starting the collaboration on a more neutral ground
+	- Make it as participatory as possible
+- What can city governments do to help the 'exclusion' of previously 'unseen' or minority groups?
+	- Design Justice approach, specifically acknowledge this bias and try to compensate (e.g. [Data for Black Lives](https://d4bl.org/))
+	- We may not always be able to prevent 'data harvesting', and it sometimes might not all be bad! How do we fairly represent everyone?
+	- How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. GDPR?)
+- Would smart cities be any different if they prioritized the citizens and participation at the get-go rather than as an after-thought
+	- Multiple definitions of smart cities (corporate extractivist approaches, civic approaches, improving democratic processes, open data, etc.)
+	- How do we manage data and data privacy?
+- Thoughts on [web3](thoughts/web3.md) and cities? CityDAO?
+	- Blockchain for decentralized mapping? Mapping in particular holds a lot of power for how a lot of citizens interact with the city
+	- Probably needs more time to read more to provide an intelligent answer
+	- [Decentralizing](thoughts/decentralization.md) on different axes? Architecturally decentralized vs logically decentralized vs politcally decentralized
+	- Does the definition of city matter in this case?
+- What is the value of promixity?
+	- Especially certain 'focus' groups e.g. Silicon Valley, why are these centralized?
+	- What about the future of work and more decentralized approaches to communities?
+- Are ['imperfect' algorithms](posts/bias-bug.md) okay? What about if they are better than biased humans?
+	- Matter of looking at where the technology is useful, who is using it, how can we mitigate the risks using human-in-the-loop systems (if at all possible)
+	- Similar to scientific approaches to hypothesis, define these ahead of time so there is less incentive to 'reclassify' data to hit quotas
+- Ground-up emergence vs Top-down governance for cities
+	- Historically a lot of data **has** been centralized regardless (e.g. libraries, town halls, etc.)
+	- Similar discussion to a an article thinking about hierarchies within cities: [A City is not a Tree](thoughts/articles/city-is-not-a-tree.md)
+	- Related to [group limits and Dunbar's Number](thoughts/group-limits.md)
+	- AnnaLee Newitz's Book, Four Lost Cities has lots of insights for today's techies to think aobut
+- Success metrics on unplanned vs planned development
+	- How do we think about co-optation of civil design tools that are used typicaly by more unplanned/ground-up governance by corporations and more centralized governance models? (design justice)
+	- [Fred Turner](thoughts/books/fctc.md) and the communes, New Communalist approaches to communites
+- How can we best familiarize ourselves in new environments or be a 'tourist' in the places we've lived in for a while?
+	- Think about the various networks that converge on their appartments
+	- Denaturalize physical environments, look at the infrastructure that makes it possible
+	- Take in familiar environments with new senses
