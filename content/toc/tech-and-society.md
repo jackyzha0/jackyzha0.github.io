@@ -18,6 +18,7 @@ date: 2021-07-14T15:06:10-04:00
 ### AI/ML
 - [Labels and Quantization](/thoughts/labels-and-quantization)
 - [Bias Bug](/posts/bias-bug)
+- [Data Distributions](thoughts/data-distributions.md)
 
 ### Building & Maintaining Virtual Worlds
 - [Digital Permanence](/thoughts/digital-permanence)

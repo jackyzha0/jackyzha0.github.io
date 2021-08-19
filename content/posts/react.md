@@ -86,3 +86,6 @@ So this covers static components, but this misses the biggest benefit that React
 
 ## Building an App
 -   simple todo list
+
+
+Ruth is bad as
