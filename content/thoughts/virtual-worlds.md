@@ -14,17 +14,9 @@ https://www.mightyapp.com/
 
 No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves. Interface with these virtual worlds through looking at our screens, typing on our keyboards, etc. even with a [pseudonymous-web](/thoughts/articles/pseudonymous-web) that is not supposedly tied to anything in the physical realm.
 
-Related to: [digital-commons](thoughts/digital-commons.md)
+Related to: [digital-commons](thoughts/digital-commons.md) and [VR](thoughts/vr.md)
 
-### VR
-Physical bodies perceive the senses that are input from the VR machine. Brain in a vat experiment? question of [representation](/thoughts/representation) and whether we need [embedded systems](/thoughts/embedded-ai)
 
-LGBT community – exploring gender identity. Super easy to express this online, and flexibility to do this more safely in an online space.
-
-Reality privilege:
--   Can explore things, can get fully immersed in a virtual world safely
--   Don’t have the same privilege online
--   Is the concept of [utopia](/thoughts/articles/the-ones-who-walk-from-omelas) only a reality for those who can afford to not worry about physiological health? Maslow's hierarchy of needs
 
 ### Crypto
 Crypto still needs to be converted to fiat? Can we have a fully crypto economy?

@@ -9,3 +9,4 @@ Attention as a commodity, it is increasingly competitive to compete for everyone
 people not just as the products, but as the producers of the product (data)
 
 Attention is the main currency of production -- what limits you from doing everything at once. Attention, then, is a common pool resource. It is non-excludable (anyone can bid for their attention) and rivalrous (limited attention).
+

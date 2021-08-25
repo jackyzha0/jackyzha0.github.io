@@ -3,6 +3,8 @@ title: "Pseudonymous Web"
 date: 2021-06-17T00:57:26-04:00
 ---
 
+> "Despite my suburban liberal upbringing in Canada, on VRChat, I have listened to people who want gun rights, who refuse vaccination, and who reject taxation. My worldview has become more open to every strand of human experience." On [Life in the Metaverse](https://reboothq.substack.com/p/metaverse)
+
 https://qualiaspace.substack.com/p/the-future-of-social-media-is-pseudonymous
 
 An identity-based [social graph](/thoughts/social-graphs) is fundamentally limited. Your Facebook identity and social graph are mere digital shadows of their physical counterparts, and little more.
