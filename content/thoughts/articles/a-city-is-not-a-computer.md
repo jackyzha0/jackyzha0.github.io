@@ -5,6 +5,38 @@ date: 2021-08-17T17:49:28-06:00
 
 Reboot event with Shannon Mattern on her new book _A City Is Not A Computer_. Main summary and introduction on the [Substack here](https://reboothq.substack.com/p/mattern).
 
+## Article Notes
+[Source](https://placesjournal.org/article/a-city-is-not-a-computer/)
+
+### Sidewalk Labs
+Doctoroff, the founder of Sidewalk Labs: "What would a city look like if you started from scratch in the internet era — if you built a city 'from the internet up?'"
+
+Sidewalk aims to be the 'fourth revolution' of urban infrastructure where the first 3 were
+1. The Steam Engine
+2. Electricity Grid
+3. Automobile
+
+Constant theme of Doctoroff is that of constant [acceleration](thoughts/acceleration.md) of innovation.
+
+### 'New Cities'
+Is it possible to build 'smart cities' tabula rasa?
+
+A sort of [Collingridge problem](thoughts/catch22.md) where they are constantly developing and "versioning" much like a software product in an agile process.
+
+Does this only appeal to us because of the recent obsession of [computation](thoughts/computability.md) as a metaphor?
+
+### Cities as information centres
+Not only for transmitting information within a generation (breadth-wise) but also between generations (depth-wise)
+
+> "By means of its storage facilities (buildings, vaults, archives, monuments, tablets, books), the city became capable of transmitting a complex culture from generation to generation, for it marshaled together not only the physical means but the human agents needed to pass on and enlarge this heritage."
+
+"What are the non-textual, un-recordable forms of cultural memory? These questions are especially relevant for marginalized populations, indigenous cultures, and developing nations." Especially related to [labels and quantization](thoughts/labels-and-quantization.md), how does always labeling and quantizing our data affect these forms of information? These forms cannot be reduced to 'information' nor can they be 'processed' easily within our digital systems. "Yet they are vital urban intelligences that live within bodies, minds, and communities."
+
+### Computational Metaphors
+Historically, we've analogized the brain (and the city) to technologies of our time. For example, we've compared the brain to "lumps of clay infused with spirits, as hydraulic or electro-chemical systems, as automata."
+
+> The _brain as computer_ is just the latest link in a long chain of metaphors that powerfully shape scientific endeavor in their own images.
+
 ## Event Notes
 - So much of how we interact with cities is through a computer; how can we reclaim cities for the people within them as people instead of just as data? What have cities lost in the transition to a data governed model
 	- How we define [computation](thoughts/computability.md) matters a lot

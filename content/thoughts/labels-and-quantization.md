@@ -3,6 +3,8 @@ title: "Labels and Quantization"
 date: 2021-05-04T22:22:23-04:00
 ---
 
+> "Where is the knowledge we have lost in the information?" -- T.S. Eliot's "The Rock"
+
 Our obsession of applying labels to everything extends to even whether a [hot dog is a sandwhich or not](https://www.hot-dog.org/culture/hot-dog-sandwich)
 
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."
@@ -16,6 +18,16 @@ Applicable to [feedback-loops](/thoughts/feedback-loops)
 * [exploit-explore](/thoughts/exploit-explore) algorithm 
 
 "When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems."
+
+## Qualia
+Is there any anyway to label or quantify the subjective human experience? Probably not.
+
+If the same apple sends two very different signals to two different people's brains, how is it that we decipher it to be [semantically](thoughts/semantics.md) identical?
+
+Not sure if there's any way to easily do this
+
+## Nonsemantic Information
+"[the] shadows, wind, rust, in the signs of wear on a well-trodden staircase, the creaks of a battered bridge — all the indexical messages of our material environments" From [A city is not a computer](thoughts/articles/a-city-is-not-a-computer.md)
 
 ## Phrases
 ### Goodhart's Law
