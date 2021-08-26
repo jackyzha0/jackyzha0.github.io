@@ -58,8 +58,8 @@
   </script>
   {{- end -}}
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-  {{ $css := slice "base.scss" "style.scss" "sidebar.scss" "lite.scss" "smaller-screens.scss" "langbars.scss" "proj.scss" "mobile.scss" "darkmode.scss" "syntax.css"}}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  {{ $css := slice "article.scss" "colours.scss" "components.scss" "darkmode.scss" "syntax.css" "typography.scss" "layouts/home.scss" "layouts/blog.scss"}}
   {{range $css}}
     {{$sass := resources.Get . | resources.ToCSS }}
     {{with $sass | minify}}

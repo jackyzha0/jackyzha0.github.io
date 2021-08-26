@@ -133,7 +133,7 @@ The unmount happens when the parent component is no longer rendered to the DOM. 
 ## Hooks
 Note that when a component updates, React will call the component again with the new props thus **clearing all local state**. This is why you can't just declare a new `const` inside a component for state. Introducing: hooks! They are JavaScript functions that allow us to 'hook' into the React lifecycle and do things like fetch data and persist state.
 
-### `useState`
+### useState
 Let's say we want to track how many times a user has clicked a button. A naive implementation might look something like this, where we define a variable in the scope of the component.
 
 ```jsx
@@ -196,7 +196,7 @@ const count = state[0]
 const setCount = state[1]
 ```
 
-### `useEffect`
+### useEffect
 Asynchronous data fetching, manually changing the window title, and setting recurring events are all examples of side effects. Yet, React won't let us do that right now because we have no way to do things in between the mount and unmount lifecycle events.
 
 Introducing the `useEffect` hook, which lets us peform side effects within components.
@@ -228,7 +228,7 @@ function Counter() {
 
 `useEffect` doesn't return anything, but takes two parameters. The first is the callback which is the effect we want to run, this callback takes 0 parameters. The second parameter is the array of dependencies for the effect. React uses this array to determine when to re-run our effect (you can optionally omit this entire array to re-run the effect *every* time the component updates).
 
-### `useSWR`
+### useSWR
 What about making API requests to fetch user data or data from an external third-party? While technically you can do this with `useEffect` and `useState`, it gets messy really quickly.
 
 This hook isn't an official React one, but I use it so much in my projects that it might as well be. Introducing `useSWR`, a [hook from Vercel](https://swr.vercel.app/) that lets you make asynchronous HTTP requests extremely easily.
