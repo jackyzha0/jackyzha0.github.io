@@ -87,14 +87,22 @@ body {
   }
 }
 
-.nodeLabel {
-  background: rgba( 255, 255, 255, 0.15 );
+@mixin glass {
+  background: rgba( 180, 180, 180, 0.15 );
   box-shadow: 0 4px 15px 0 rgba( 31, 38, 135, 0.12 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
+}
+
+@mixin card {
+  box-shadow: 0 4px 15px 0 rgba( 31, 38, 135, 0.12 );
   border-radius: 4px;
   border: 1px solid rgba( 255, 255, 255, 0.40 );
+}
 
+.nodeLabel {
+  @include glass;
+  @include card;
   & > p {
     margin: 0.25em 0.5em;
   }
@@ -186,4 +194,69 @@ p>img+em {
 #graph-container {
   border: var(--outlinegray) 1px solid;
   border-radius: 5px
+}
+
+#search-container {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+
+  & > div {
+    width: 50%;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media all and (max-width: 1200px) {
+      width: 90%;
+    }
+
+    & > * {
+      width: 100%;
+      border-radius: 4px;
+      background: var(--light);
+      border: 1px solid var(--outlinegray);
+      box-shadow: 0 14px 28px rgba(27, 33, 48,0.18), 0 10px 10px rgba(27, 33, 48,0.16);
+      margin-bottom: 2em;
+    }
+
+    & > input {
+      box-sizing: border-box;
+      padding: 0.5em 1em;
+      font-family: Inter, sans-serif;
+      color: var(--dark);
+      font-size: 1.1em;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & > #results-container {
+      & > .result-card {
+        padding: 0.5em 1em;
+        cursor: pointer;
+        transition: background 0.2s ease;
+
+        &:hover {
+          background: rgba( 180, 180, 180, 0.15 );
+        }
+
+        &:not(:first-of-type) {
+          border-top: 1px solid var(--outlinegray);
+        }
+
+        & > p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
 }

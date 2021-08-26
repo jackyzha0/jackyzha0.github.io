@@ -1,4 +1,6 @@
-# Not work
+---
+title: "Not work"
+---
 
 Contrary to popular belief, I actually have other things I do outside of writing questionable code and school! Here are some things that I'm up to nowadays:
 

@@ -1,5 +1,5 @@
 ---
-title: On AI’s ‘Bias Bug’
+title: "On AI's 'Bias Bug'"
 date: 2020-08-29T16:27:50-07:00
 ---
 
