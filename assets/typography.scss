@@ -50,8 +50,8 @@ p, li, text {
 // internal link
 a[href^="/"], a[href^="#"] {
   text-decoration: none;
-  background-color: #afbfc922;
-  padding: 0 0.2em;
+  background-color: #afbfc928;
+  padding: 0.05em 0.2em;
   border-radius: 3px;
 }
 
@@ -77,15 +77,16 @@ p > img + em {
 
 .singlePage {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 0;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     opacity: 0.9;
   }
 
-  h3 {
+  h3, h4, h5 {
     font-size: 1.2rem;
     opacity: 0.8;
   }

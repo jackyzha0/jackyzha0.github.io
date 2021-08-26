@@ -6,10 +6,17 @@
     {{partial "search.html" .}}
     <div class="singlePage">
         <!-- Begin actual content -->
-        {{partial "landing/darkmode.html" .}}
+        <header>
+            <h1><a href="/toc/directory">{{ .Site.Params.headline }}</a></h1>
+            {{partial "landing/darkmode.html" .}}
+        </header>
         <article>
-            {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
-            {{- .Content -}}
+            <div id="postTitle" class="desc">
+                {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
+            </div>
+            <div id="mainText">
+                {{- .Content -}}
+            </div>
         </article>
         <div>
             <hr/>
