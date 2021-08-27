@@ -1,10 +1,11 @@
-.singlePage .darkmode {
+.singlePage .darkmode, header > .darkmode {
   padding: 2em 0;
 }
 
 .darkmode {
   text-align: right;
   padding: 2em;
+  min-width: 200px;
 
   @media all and (max-width: 450px) {
     padding: 1em;

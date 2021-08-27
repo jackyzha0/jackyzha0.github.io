@@ -3,8 +3,6 @@ title: "Public Goods"
 date: 2021-07-28T18:49:45-04:00
 ---
 
-[GitCoin RFP Proposal](posts/public-goods-rfp.md)
-
 ## Definitions
 Public goods are
 1. non-excludable: it’s extremely difficult to stop someone from using the good, like roads and bridges

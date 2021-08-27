@@ -2,7 +2,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 
   & > nav {
     @media all and (max-width: 600px) {
@@ -11,6 +10,27 @@ header {
 
     & > a {
       margin-left: 2em;
+    }
+  }
+
+  & > .spacer {
+    flex: 1 1 auto;
+  }
+
+  & > svg {
+    cursor: pointer;
+    width: 18px;
+    min-width: 18px;
+    margin: 0 1em;
+
+    &:hover .search-path {
+      stroke: var(--olive);
+    }
+
+    .search-path {
+      stroke: var(--gray);
+      stroke-width: 2px;
+      transition: stroke 0.5s ease;
     }
   }
 }

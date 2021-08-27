@@ -75,7 +75,7 @@ p > img + em {
   transform: translateY(-1em);
 }
 
-.singlePage {
+.singlePage > article {
   h1 {
     font-size: 2rem;
     margin-bottom: 0;

@@ -66,9 +66,6 @@ footer {
   & > input[type="email"] {
     background-color: var(--light);
     border: 1px solid var(--outlinegray);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
 }

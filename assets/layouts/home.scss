@@ -29,7 +29,7 @@
 
     @media all and (max-width: 450px) {
       overflow: hidden;
-      left: 10vw !important;
+      left: 5vw !important;
       padding: 0 0;
     }
   }
@@ -46,7 +46,7 @@
 
   @media all and (max-width: 450px) {
     left: 0 !important;
-    top: 10vh;
+    opacity: 0.3;
   }
 }
 
@@ -68,7 +68,7 @@
 }
 
 .rotating-text {
-  overflow: hidden;
+  overflow-y: hidden;
   animation: fadeIn ease 0.6s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -352,18 +352,21 @@ ul.project-list {
 #sub-nav {
   list-style: none;
   padding-left: 0;
-  margin: 0;
 
   & > li {
     display: inline-block;
     font-family: 'Inter', monospace;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-top: 0.5em;
     font-weight: normal;
-    color: var(--dark);
+
+    @media all and (max-width: 450px) {
+      font-size: 0.8em;
+    }
 
     & > a {
       margin-right: 0.5em;
+      color: var(--olive);
     }
   }
 }

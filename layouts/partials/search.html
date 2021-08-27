@@ -84,8 +84,8 @@
   const stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','your','yours','yourself','yourselves','he','him','his','himself','she','her','hers','herself','it','its','itself','they','them','their','theirs','themselves','what','which','who','whom','this','that','these','those','am','is','are','was','were','be','been','being','have','has','had','having','do','does','did','doing','a','an','the','and','but','if','or','because','as','until','while','of','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','in','out','on','off','over','under','again','further','then','once','here','there','when','where','why','how','all','any','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','s','t','can','will','just','don','should','now']
   const highlight = (content, term) => {
     const highlightWindow = 15
-    const tokenizedTerm = term.split(/[\s,]+/)
-    const splitText = content.split(/[\s,]+/)
+    const tokenizedTerm = term.split(/\s+/).filter(t => t !== "")
+    const splitText = content.split(/\s+/).filter(t => t !== "")
     const includesCheck = (token) => tokenizedTerm.some(term => token.toLowerCase().includes(term.toLowerCase()))
 
     const occurrencesIndices = splitText
@@ -167,22 +167,39 @@
     })
   })
 
+
   const searchContainer = document.getElementById("search-container")
+  function openSearch() {
+    if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+      source.value = ""
+      results.innerHTML = ""
+      searchContainer.style.display = "block"
+      source.focus()
+    } else {
+      searchContainer.style.display = "none"
+    }
+  }
+
+  function closeSearch() {
+    searchContainer.style.display = "none"
+  }
+
   document.addEventListener('keydown', (event) => {
     if (event.key === "/") {
       event.preventDefault()
-      if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
-        source.value = ""
-        results.innerHTML = ""
-        searchContainer.style.display = "block"
-        source.focus()
-      } else {
-        searchContainer.style.display = "none"
-      }
+      openSearch()
     }
     if (event.key === "Escape") {
       event.preventDefault()
-      searchContainer.style.display = "none"
+      closeSearch()
     }
   })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const searchButton = document.getElementById("search-icon")
+    searchButton.addEventListener('click', (evt) => {
+      openSearch()
+    })
+  })
+
 </script>
