@@ -33,6 +33,11 @@ footer {
 
 .postLink {
   display: inline-block;
+  font-family: Inter;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  color: var(--navy);
 
   &:visited {
     color: var(--visited);
@@ -45,13 +50,6 @@ footer {
 
 .postLi {
   margin-bottom: 1em;
-  & a {
-    font-family: Inter;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    color: var(--navy);
-  }
 
   & > .time {
     margin: 0;

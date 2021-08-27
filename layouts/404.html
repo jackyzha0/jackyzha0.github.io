@@ -4,6 +4,7 @@
 
 <body>
     <!-- Begin actual content -->
+    {{partial "search.html" .}}
     <div id="landing-container">
         {{partial "landing/darkmode.html" .}}
         <div id="landing-overlay" class="home-section">
@@ -13,7 +14,6 @@
             <ul id="sub-nav">
                 <li><a href="/">↳ Let's get you home.</a></li>
             </ul>
-           
         </div>
         <canvas id="canvas" alt="Background Particle Effect" ></canvas>
     </div>

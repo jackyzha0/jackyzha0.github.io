@@ -1,3 +1,19 @@
+#home {
+  & h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  & h2 {
+    font-size: 3em;
+  }
+
+  & h3 {
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
 /* Landing Page CSS */
 #landing-container {
   position: relative;
@@ -6,7 +22,7 @@
 
   & > #landing-overlay {
     position: absolute;
-    z-index: 9999 !important;
+    z-index: 999 !important;
     background-color: #00000000 !important;
     top: 30%;
     height: 60%;
@@ -211,6 +227,7 @@ ul.project-list {
         width: 40px;
         height: 40px;
         border-radius: 3px;
+        margin: 0;
         margin-right: 1em;
 
         @media all and (max-width: 450px) {
@@ -227,9 +244,9 @@ ul.project-list {
         }
       }
 
-      & h2 {
+      & > div > h2 {
         font-weight: 600;
-        font-size: 1.2em;
+        font-size: 1.2em !important;
         font-family: "Inter";
         margin: 0;
 
