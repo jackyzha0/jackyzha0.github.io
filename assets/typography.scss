@@ -45,6 +45,11 @@ p, li, text {
   p {
     font-size: 1em !important;
   }
+
+  pre, code {
+    font-size: 0.8em !important;
+    line-height: 1em;
+  }
 }
 
 // internal link

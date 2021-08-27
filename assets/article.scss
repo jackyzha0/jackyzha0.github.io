@@ -13,6 +13,10 @@ header > h1 > a {
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--navy);
+
+  @media all and (max-width: 450px) {
+    font-size: 1em;
+  }
 }
 
 p, tbody, article li {

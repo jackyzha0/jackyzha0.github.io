@@ -1,9 +1,8 @@
 <div class='darkmode'>
+  <input class='toggle' id='darkmode-toggle' type='checkbox'>
   <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
     {{ partial "landing/dayIcon.html" . }}
   </label>
-  <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
-  <label class='toggle-button' for='darkmode-toggle'></label>
   <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
     {{ partial "landing/nightIcon.html" . }}
   </label>
