@@ -24,7 +24,7 @@
     options.gfm = options.hasOwnProperty("gfm") ? options.gfm : true;
     options.useImgAltText = options.hasOwnProperty("useImgAltText")
       ? options.useImgAltText
-      : true;
+      : false;
     options.preserveLinks = options.hasOwnProperty("preserveLinks") ? options.preserveLinks : false;
 
     let output = markdown || "";
@@ -90,12 +90,48 @@
     contentIndex.add(key, value.content)
   }
 
-  const resultToHTML = ({url, title, content}) => {
+  const highlight = (content, term) => {
+    const highlightWindow = 15
+    const tokenizedTerm = term.split(/[ ,]+/)
+    const splitText = content.split(/[ ,]+/)
+    const includesCheck = (token) => tokenizedTerm.some(term => token.toLowerCase().includes(term.toLowerCase()))
+
+    const occurrencesIndices = splitText
+      .map(includesCheck)
+      .reduce((total, cur, i) => {
+        if (cur) {
+          total.push(i)
+        }
+        return total
+      }, [])
+
+    // calculate median
+    const calculateMedian = (sorted) => {
+      const middle = Math.floor(sorted.length / 2);
+      return sorted[middle] || 0;
+    }
+    const medianIndex = calculateMedian(occurrencesIndices)
+    const startIndex = Math.max(medianIndex - highlightWindow, 0)
+    const endIndex = Math.min(startIndex + 2 * highlightWindow, splitText.length)
+    return splitText
+      .slice(startIndex, endIndex)
+      .map(token => {
+        if (includesCheck(token)) {
+          return `<span class="search-highlight">${token}</span>`
+        }
+        return token
+      })
+      .join(" ")
+  }
+
+  const resultToHTML = ({url, title, content, term}) => {
     const md = content.split("---")[2]
     const text = removeMarkdown(md)
+    const resultTitle = highlight(title, term)
+    const resultText = highlight(text, term)
     return `<div class="result-card" id="${url}">
-        <h3>${title}</h3>
-        <p>${text}</p>
+        <h3>${resultTitle}</h3>
+        <p>${resultText}</p>
     </div>`
   }
 
@@ -121,7 +157,12 @@
             <p>No results.</p>
         </div>`
       } else {
-        results.innerHTML = finalResults.map(resultToHTML).join("\n")
+        results.innerHTML = finalResults
+          .map(result => resultToHTML({
+            ...result,
+            term,
+          }))
+          .join("\n")
         const anchors = document.getElementsByClassName("result-card");
         [...anchors].forEach(anchor => {
           anchor.onclick = () => {
@@ -136,7 +177,7 @@
   document.addEventListener('keydown', (event) => {
     if (event.key === "/") {
       event.preventDefault();
-      if (searchContainer.style.display === "none") {
+      if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
         source.value = ""
         results.innerHTML = ""
         searchContainer.style.display = "block"
