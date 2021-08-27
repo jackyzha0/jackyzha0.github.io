@@ -1,6 +1,6 @@
 <div id="search-container">
     <div>
-        <input id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
+        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
         <div id="results-container">
         </div>
     </div>
@@ -84,8 +84,8 @@
 
   const highlight = (content, term) => {
     const highlightWindow = 15
-    const tokenizedTerm = term.split(/[ ,]+/)
-    const splitText = content.split(/[ ,]+/)
+    const tokenizedTerm = term.split(/[\s,]+/)
+    const splitText = content.split(/[\s,]+/)
     const includesCheck = (token) => tokenizedTerm.some(term => token.toLowerCase().includes(term.toLowerCase()))
 
     const occurrencesIndices = splitText
