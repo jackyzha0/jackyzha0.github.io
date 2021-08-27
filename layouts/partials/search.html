@@ -129,7 +129,7 @@
     </div>`
   }
 
-  const source = document.getElementById('search-bar');
+  const source = document.getElementById('search-bar')
   const results = document.getElementById("results-container")
   source.addEventListener('input', (e) => {
     const term = e.target.value
@@ -160,17 +160,17 @@
         const anchors = document.getElementsByClassName("result-card");
         [...anchors].forEach(anchor => {
           anchor.onclick = () => {
-            window.location.href = anchor.id
+            window.location.href = `${anchor.id}#:~:text=${encodeURIComponent(term)}`
           }
         })
       }
     })
-  });
+  })
 
   const searchContainer = document.getElementById("search-container")
   document.addEventListener('keydown', (event) => {
     if (event.key === "/") {
-      event.preventDefault();
+      event.preventDefault()
       if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
         source.value = ""
         results.innerHTML = ""
@@ -181,8 +181,8 @@
       }
     }
     if (event.key === "Escape") {
-      event.preventDefault();
+      event.preventDefault()
       searchContainer.style.display = "none"
     }
-  });
+  })
 </script>
