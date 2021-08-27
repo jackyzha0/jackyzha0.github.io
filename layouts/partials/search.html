@@ -10,22 +10,14 @@
   // code from https://github.com/danestves/markdown-to-text
   const removeMarkdown = (
     markdown,
-    options = {
-      listUnicodeChar: "",
-    },
   ) => {
-    options = options || {};
-    options.listUnicodeChar = options.hasOwnProperty("listUnicodeChar")
-      ? options.listUnicodeChar
-      : false;
-    options.stripListLeaders = options.hasOwnProperty("stripListLeaders")
-      ? options.stripListLeaders
-      : true;
-    options.gfm = options.hasOwnProperty("gfm") ? options.gfm : true;
-    options.useImgAltText = options.hasOwnProperty("useImgAltText")
-      ? options.useImgAltText
-      : false;
-    options.preserveLinks = options.hasOwnProperty("preserveLinks") ? options.preserveLinks : false;
+    const options = {
+      listUnicodeChar: false,
+      stripListLeaders: true,
+      gfm: true,
+      useImgAltText: false,
+      preserveLinks: false,
+    };
 
     let output = markdown || "";
     output = output.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*$/gm, "");
@@ -98,20 +90,20 @@
 
     const occurrencesIndices = splitText
       .map(includesCheck)
-      .reduce((total, cur, i) => {
-        if (cur) {
-          total.push(i)
-        }
-        return total
-      }, [])
 
-    // calculate median
-    const calculateMedian = (sorted) => {
-      const middle = Math.floor(sorted.length / 2);
-      return sorted[middle] || 0;
+    // calculate best index
+    let bestSum = 0
+    let bestIndex = 0
+    for (let i = 0; i < Math.max(occurrencesIndices.length - highlightWindow, 0); i++) {
+      const window = occurrencesIndices.slice(i, i + highlightWindow)
+      const windowSum = window.reduce((total, cur) => total + cur, 0)
+      if (windowSum > bestSum) {
+        bestSum = windowSum
+        bestIndex = i
+      }
     }
-    const medianIndex = calculateMedian(occurrencesIndices)
-    const startIndex = Math.max(medianIndex - highlightWindow, 0)
+
+    const startIndex = Math.max(bestIndex - highlightWindow, 0)
     const endIndex = Math.min(startIndex + 2 * highlightWindow, splitText.length)
     return splitText
       .slice(startIndex, endIndex)
