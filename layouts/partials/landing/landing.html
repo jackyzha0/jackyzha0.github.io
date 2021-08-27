@@ -11,7 +11,7 @@
   </div>
   <ul id="sub-nav">
     {{- range $index, $desc := $.Site.Data.links.intro -}}
-    <li><a href="{{.link}}">/{{.link_name}}</a></li>
+    <li><a href="{{.link}}">{{.link_name}}</a></li>
     {{- end -}}
   </ul>
 </div>

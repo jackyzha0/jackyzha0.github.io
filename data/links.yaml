@@ -1,11 +1,11 @@
 intro:
-- link_name: about
+- link_name: About
   link: '#about'
-- link_name: prev
+- link_name: Experience
   link: '#experience'
-- link_name: projects
+- link_name: Projects
   link: '#projects'
-- link_name: blog
+- link_name: Blog
   link: /posts
 footer:
 - link_name: source
