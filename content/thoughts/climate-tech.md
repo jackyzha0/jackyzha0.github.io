@@ -8,6 +8,15 @@ also about investing in the [infrastructure](/thoughts/infrastructure) to make i
 
 [The Land Ethic](https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf) simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the landcommunity to plain member and citizen of it.
 
+## Investment Facts!
+[Source](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
+
+* Compared to just a year before, there were **~50% more climate deals** in Q2’21 vs Q2’20
+* In the first half of 2021, climate tech startups raised **~$16b across ~250 venture deals**
+* Mobility sector deals are the largest on average (~50% of total H1 2021 funding) whereas Food & Water and Mobility attract the greatest diversity across investment firms (>50% of investors are active in these sectors)
+
+![Investment Diversity across sectors](https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff4c664b-816c-45ef-9e5d-720d1b279c2f_861x475.png)*Investment Diversity across sectors*
+
 ## Carbon Credits
 [Source](https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia)
 
