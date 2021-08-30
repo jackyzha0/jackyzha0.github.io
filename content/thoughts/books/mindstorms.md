@@ -68,7 +68,7 @@ On brain being compartmentalized
 We put our skills and heuristic strategies into a kind of tool box -- and while their interaction can, in the course of time, give rise to global changes, the act of learning is itself a *local* event.
 
 ### Knowledge distillation
-On the role of [knowledge distillers](thoughts/articles/research-debt.md): 
+On the role of [knowledge distillers](thoughts/knowledge-distillation.md): 
 This problem goes deeper than a mere short supply of such people. The fact that in the past there was no role for such people has been cast into social and institutional concrete; now there is a role but there is no place for them.
 
 It is a step toward a situation in which the line between learners and teachers can fade

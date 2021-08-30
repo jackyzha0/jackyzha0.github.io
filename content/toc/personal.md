@@ -13,5 +13,6 @@ date: 2021-07-14T15:03:54-04:00
 - [A Failure Resume](/posts/a-failure-resume)
 - [Hootsuite](/posts/hootsuite)
 - [Optionality](thoughts/optionality.md)
+- [Optionality](thoughts/optionality.md)
 - [A Failure Resume](posts/a-failure-resume.md)
-- [Mindfulness](posts/mindfulness.md)
+- [Mindfulness](thoughts/mindfulness.md)

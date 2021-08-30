@@ -35,7 +35,7 @@ Can we map concept space to physical space and use the stage as an outline of th
 ### Reading/Browsing (media-to-person)
 Can we dynamically create content customizable/personalizable for each user? Are there other channels we can use for communicating information outside just text?
 
-Getting this right is critical for effective [knowledge distillation](thoughts/articles/research-debt.md)
+Getting this right is critical for effective [knowledge distillation](thoughts/knowledge-distillation.md)
 
 Cool potential features to keep in mind
 1. Skimmable at different levels. Is there a 5s version? A 60s version?

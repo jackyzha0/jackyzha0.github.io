@@ -30,6 +30,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Mutual Aid** by Dean Spade
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 * **Winners Take All** by Anand Giridharadas
+* **Atlas of AI** by Kate Crawford
 
 ## Past
 ### 2021

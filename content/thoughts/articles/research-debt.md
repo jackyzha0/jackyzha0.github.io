@@ -5,7 +5,7 @@ date: 2021-06-18T17:34:11-04:00
 
 https://distill.pub/2017/research-debt/
 
-Partly works because we can utilize [collaborative thinking](/posts/collaborative-thinking)
+Partly works because we can utilize [collaborative thinking](/posts/collaborative-thinking). Rel: [knowledge distillation](thoughts/knowledge-distillation.md)
 
 Thinking about understanding knowledge as climbing a mountain. Everytime novel work happens, the mountain gets a little bit taller.
 

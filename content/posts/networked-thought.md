@@ -34,7 +34,9 @@ linking new knowledge to existing knowledge makes it easy to remember
 > Thinking is not only non-linear, it's messy. It involves a lot of back and forth, dead ends, branching, walking back, merging ideas, changing ideas, contradicting ideas. When I picture what my thoughts look like—the actual process of navigating different ideas in my head—I don't see a nice straight road with check points, I see a massive web of tangled threads.
 
 by and large still write for myself
-writing as [knowledge distillation](thoughts/articles/research-debt.md)
+writing as [knowledge distillation](thoughts/knowledge-distillation.md) and crystallized thought
+
+writing things that I wish existed already
 
 what is my knowledge flow?
 1. intake (reading)
