@@ -19,7 +19,7 @@ Applicable to [feedback-loops](/thoughts/feedback-loops)
 
 "When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems."
 
-## Qualia
+## [Qualia](thoughts/qualia.md)
 Is there any anyway to label or quantify the subjective human experience? Probably not.
 
 If the same apple sends two very different signals to two different people's brains, how is it that we decipher it to be [semantically](thoughts/semantics.md) identical?

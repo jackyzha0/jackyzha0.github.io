@@ -7,7 +7,7 @@ What does it mean to be conscious? Is consciousness emergent from matter? Or is 
 
 [Materialism](thoughts/mind-body-problem.md) is the view that the universe is made up of particles and behaviour (esp. consciousness) arises out of it. There is nothing special distinguishing mind from matter.
 
-> To be conscious is to have subjective human experience, to have *qualia*.
+> To be conscious is to have subjective human experience, to have *[qualia](thoughts/qualia.md)*.
 
 No one person experiences red, the smell of garlic, or the warmth of the sun in the same way.
 

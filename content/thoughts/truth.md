@@ -19,6 +19,8 @@ There will always be statements that are true that **cannot** be proven
 
 It basically states that if math is consistent, it cannot be complete. And if it is not complete, it must not be consistent."
 
+Related to Conway's Game of Life and whether we can tell a program can halt or not.
+
 ## Verisimilitude
 Truth is not binary, but rather a spectrum. Some propositions are closer to being true than other propositions.
 
