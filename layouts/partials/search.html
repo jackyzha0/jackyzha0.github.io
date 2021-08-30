@@ -123,10 +123,10 @@
     const text = removeMarkdown(md)
     const resultTitle = highlight(title, term)
     const resultText = highlight(text, term)
-    return `<div class="result-card" id="${url}">
+    return `<button class="result-card" id="${url}">
         <h3>${resultTitle}</h3>
         <p>${resultText}</p>
-    </div>`
+    </button>`
   }
 
   const source = document.getElementById('search-bar')
