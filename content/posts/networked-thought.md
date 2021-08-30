@@ -14,7 +14,7 @@ thinking is not linear, nor is it [hierarchical](thoughts/articles/city-is-not-a
 
 balancing intake and output -> [2020](posts/2020.md)
 
-the scientific method and progress are not linear -> karl popper
+the scientific method and progress are not linear -> karl popper on [truth](thoughts/truth.md)
 
 not just passive knowledge collection -> it's not just knowledge collection
 writing as distilled thought, condense your knowledge and create a feedback cycle (even if you're not super confident in it!)

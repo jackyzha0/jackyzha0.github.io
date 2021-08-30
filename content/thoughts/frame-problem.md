@@ -3,7 +3,6 @@ title: "Frame Problem"
 date: 2021-07-02T13:36:14-04:00
 ---
 
-
 # Dennet
 ## Frame problem of AI
 -   coined by McCarthy and Hayes → particular narrowly conceived problem about representation

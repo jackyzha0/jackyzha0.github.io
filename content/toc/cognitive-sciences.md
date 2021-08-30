@@ -8,14 +8,15 @@ date: 2021-07-14T15:03:15-04:00
 - [Intelligence](/thoughts/intelligence)
 - [Language of Thought](/thoughts/language-of-thought)
 - [Meaning and Semantics](/thoughts/semantics)
-- [Symbolic Systems](/thoughts/symbolic-systems)
 - [Representation](/thoughts/representation)
+- [Truth](thoughts/truth.md)
 
 ### Virtual and Real Worlds
 - [Embedded AI](/thoughts/embedded-ai)
 - [Extended Mind](/thoughts/extended-mind)
 - [The Mind Body Problem](/thoughts/mind-body-problem)
 - [Virtual Worlds](/thoughts/virtual-worlds)
+- [Qualia](thoughts/qualia.md)
 
 ### Design of Artificial Intelligence
 - [Definition of Life](/thoughts/life-definition)
@@ -26,3 +27,8 @@ date: 2021-07-14T15:03:15-04:00
 - [Consciousness](thoughts/consciousness.md)
 - [Multiple Realization of Intelligence](/thoughts/multiple-realization)
 - [Computability](thoughts/computability.md)
+
+### Systems
+- [Downward Causation](thoughts/downward-causation.md)
+- [Supervenience](thoughts/supervenience.md)
+- [Symbolic Systems](/thoughts/symbolic-systems)

@@ -30,14 +30,6 @@ yet, there are cases when other contextual information is important
 * e.g., when talking about diversity issues, talking from first-hand exp is often a lot more valid than second-hand or third-hand
 * in these cases, does methodology and original source of speaker count as *part* of the idea?
 
-## "Truth"
-"The word “axiom” means self evident truth. All of mathematics are models based on frameworks of axioms and postulates. We develop proofs and theorems from these. All facts and axioms in mathematics are fundamentally flawed. Take a look at Gödel's incompleteness theorem. It basically states that if math is consistent, it cannot be complete. And if it is not complete, it must not be consistent."
-
-are ideas inherently different from facts?
-what are the universal axioms of the universe?
-descartes
-* solipsism -> we can only know that we exist
-
 ## Anonymity
 "61% of students on Ivy League campuses are afraid to speak their minds because of campus culture"
 
@@ -57,7 +49,7 @@ i think for me from an engineering perspective like if i'm dishonest with others
   if people STILL hold views that are problematic by today's standards, then THAT's problematic
 
 [ephemereal-content](/thoughts/ephemereal-content)
-  move towards realtime media rather than offline media (e.g. streaming > videos)
+  move towards [real-time content](thoughts/ephemereal-content.md) media rather than offline media (e.g. streaming > videos)
 
 A theorem is only a fact in the context of the axioms on which it is based. Axioms are treated more like postulates, accepted only tentatively and defining a branch of mathematics.
 

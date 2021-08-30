@@ -17,7 +17,7 @@ Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/Rese
 By upgrading forms of external communication, we can reduce [research debt](thoughts/articles/research-debt.md) and allow us to [collaborate](posts/collaborative-thinking.md) better
 
 ### Conversing (person-to-person)
-Face-to-face, realtime, improvised. As it stands today, most of this happens through spoken word, hand-waving, and static sketches. This makes grasping the same idea as another person extremely difficult (low bandwidth communication)
+Face-to-face, [ephemereal](thoughts/ephemereal-content.md), improvised. As it stands today, most of this happens through spoken word, hand-waving, and static sketches. This makes grasping the same idea as another person extremely difficult (low bandwidth communication)
 
 > Words are terrible at representing systems
 

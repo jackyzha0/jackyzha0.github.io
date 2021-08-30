@@ -5,8 +5,19 @@ date: 2021-02-27T12:01:16-08:00
 
 [Full Post](/posts/hackathons)
 
-## Design Justice
+## Discussion
+> "I want hackathons to embody a starting point not a set timeframe"
 
+How do we push for hackathons to be the 'start' of the journey rather than saying its the entirety of a short, not super comprehensive event?
+
+In other words, how can we make hackathons events for people to dip toes into ideas and concepts without having them need to be 'judged' for polish or ability to fully solve a problem?
+
+Questions to think about:
+-   how do we continue projects beyond their initial timeframe
+-   should hackathons even focus on maintainable projects when they require so much context?
+-   what does "hacking racism" mean? what about social good hackathons in general? how realistic is it so try and solve some sort of large societal issue in the span of a few days?
+
+## Design Justice
 ### hackathons becoming very corporate
 * traces the cooptation of hacker culture by neoliberalism
     * what is neoliberalism -> basically let the market decide everything

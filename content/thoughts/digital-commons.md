@@ -79,7 +79,7 @@ One-to-many 'broadcast' relationships.
 Spaces for one-to-one interaction.
 
 #### Questions
-* Almost all of these mediums are on a sliding scale of how 'realtime' the medium is, yet none of them are obsolete. Why is that?
+* Almost all of these mediums are on a sliding scale of how '[real-time](thoughts/ephemereal-content.md)' the medium is, yet none of them are obsolete. Why is that?
 * Who has power in the channels? What tools are there for safety?
 
 #### Tools 

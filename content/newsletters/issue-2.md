@@ -1,6 +1,6 @@
 ---
 title: "Spider-man neurons, hearing fractals, and fulfilment"
-date: 2021-01-31T13:43:34-08:00
+date: 2021-02-01T13:43:34-08:00
 issueNum: 2
 ---
 

@@ -31,8 +31,7 @@ Procurement services: finding a business application of research (specifically g
 Related: reinventing [hackathons](posts/hackathons.md) as 3rd spaces
 
 ## PARPA and alternative [funding](thoughts/funding.md) models
-https://benjaminreinhardt.com/parpa
-https://www.nber.org/system/files/working_papers/w24674/w24674.pdf
+https://benjaminreinhardt.com/parpa / https://benjaminreinhardt.com/wddw / https://www.nber.org/system/files/working_papers/w24674/w24674.pdf
 
 From the [Atlantic](https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/): "In a recent paper, Pierre Azoulay and co-authors [concluded](https://www.nber.org/papers/w15466) that Howard Hughes Medical Institute’s long-term grants to high-potential scientists made those scientists 96 percent more likely to produce breakthrough work. If this finding is borne out, it suggests that present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking."
 

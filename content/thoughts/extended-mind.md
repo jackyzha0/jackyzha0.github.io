@@ -23,6 +23,7 @@ Minds: extended or scaffolded?
 -   things animals build are part of their phenotype (physical exhibited traits that are determined genetically)
 	-   developmentally stable, as heritable and predictable in their ecological effects as other traits
 -   e.g. wasp nests, beaver dams, spider webs
+
 ## Environmentally Supported Cognition
 -   derives from niche construction, helps to emphasize the active role of the agent in explaining the adaptive fit of agent and environment
 -   over time, agents adapt to environments but also adapt their environment to them
@@ -41,7 +42,7 @@ Minds: extended or scaffolded?
 		-   Skilled practitioners ease their own burdens by having apprentices do low to medium skilled work.
 		-   Apprentices do grunt work from the perspective of the skilled, but for the beginner, it builds basic skills.
 	-   Over both evolutionary and developmental time frames, inner mechanisms have coevolved with and adapted to this rich environment. Language and arithmetical notation enhance our capacity to think
-##  Otto — theman who lost has faulty memory
+##  Otto — the man who lost has faulty memory
 -   clark and chalmers (extended mind) argued that information in his notebook should be amongst Otto's memories
 	-   parity principle
 		-   if an external resource plays the same functional role in supporting action as an action-supporting internal resource that is uncontroversially cognitive, then the external resource is part of the cognitive system of the agent

@@ -1,12 +1,12 @@
 ---
-title: "Ephemereal Content"
+title: "Ephemereal and Real-time Content"
 date: 2021-06-16T13:15:09-07:00
 ---
 
 -   moving towards live
     -   ephemerality
     -   pandemic accelerated
-    -   blending of async and sycn convos
+    -   blending of async and synchronous convos
 
 One of the things that keeps face-to-face friendships strong is the [nature of shared experience](http://psycnet.apa.org/psycinfo/2001-00651-001): you laugh together; you dance together; you gape at the hot-dog eaters on Coney Island together.
 
@@ -38,3 +38,8 @@ The promise of the web is that Alexandria’s library might be resurrected for t
 
 Modern content is sometimes actually assembled on the fly through the likes of Ruby, Django, Next.js, etc. Not actual 'flat'/self-enclosed pages
 The data may exist but not the in the format it was originally delivered in
+
+## Interpretation
+Does moving closer to real-time mean less interpretation? Less expressive mediums like text mean that a lot of the emotion and meaning is left up to the reader to interpret and guess at. As we move to higher bandwidth mediums (e.g. calls and video), is there less room to interpret?
+
+What does this mean for art which inherently requires interpretation? Will we ever get to a communication medium so direct (e.g. mind-to-mind) that it doesn't require interpretation? What about qualia and the subjective human experience?

@@ -21,3 +21,4 @@ On an unrelated note, I'm currently working on stepping outside my comfort zone 
 
 ## 1 thing I’ve done
 I presented a technical workshop for the first time at Hack the North 2020++! I've always been a little spooked of public speaking but it was really empowering to be able to go up in front of so many people (albeit virtually) and talk about something I'm passionate about. My workshop was on a gentle introduction to Docker and you can view the recording [here](https://www.youtube.com/watch?v=ONNQ5EDhXUk) (it's not a Rick Roll, I promise).
+
