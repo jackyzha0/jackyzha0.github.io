@@ -34,6 +34,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Past
 ### 2021
+* **The Anthropocene Reviewed** by John Green
 * **Never Let Me Go** by Kazuo Ishiguro
 * [**From Counterculture to Cyberculture**](/thoughts/books/fctc) by Fred Turner
 * [**Design Justice**](/thoughts/books/design-justice) by Sasha Costanza-Chock
