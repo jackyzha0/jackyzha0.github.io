@@ -3,10 +3,11 @@ title: "Climate Tech"
 date: 2021-07-15T17:28:11-04:00
 ---
 
-Not just about investing in carbon removal or carbon offsets 
-also about investing in the [infrastructure](/thoughts/infrastructure) to make it possible
+Not just about investing in carbon removal or carbon offsets also about investing in the [infrastructure](/thoughts/infrastructure) to make it possible. 
 
 [The Land Ethic](https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf) simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the landcommunity to plain member and citizen of it.
+
+Related: [degrowth](thoughts/degrowth.md)
 
 ## Investment Facts!
 [Source](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
