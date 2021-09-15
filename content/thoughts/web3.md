@@ -22,7 +22,7 @@ The cyberpunkspirit: the basic property of which adverserial conflict continues 
 https://ethereum.org/en/developers/docs/web2-vs-web3/ and https://blockchainhub.net/web3-decentralized-web
 
 ### Web1,  Information Economy [1980s to 2000s]
-Internet services were built on open protocols that were controlled by the internet community. Develops could generally rest assured that these protocols wouldn't change much because they were commonly agreed on by the community.
+Internet services were built on open protocols that were controlled by the internet community. Develops could generally rest assured that these protocols wouldn't change much because they were commonly agreed on by the community. 
 
 ### Web2, Platform Economy [2000s to 2020s]
 Internet as we know it today, companies that provide services in exchange for your personal data. Web2 enabled us to enjoy P2P interactions on a global scale, but always with a middleman: a platform acting as a trusted intermediary between two people who do not know or trust each other.

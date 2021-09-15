@@ -16,7 +16,6 @@ date: 2021-07-14T15:06:10-04:00
 - [A new DARPA](thoughts/a-new-darpa.md)
 
 ### AI/ML
-- [Labels and Quantization](/thoughts/labels-and-quantization)
 - [Bias Bug](/posts/bias-bug)
 - [Data Distributions](thoughts/data-distributions.md)
 
@@ -27,3 +26,7 @@ date: 2021-07-14T15:06:10-04:00
 - [Fault Tolerance](/thoughts/fault-tolerance)
 - [Virtual Worlds](thoughts/virtual-worlds.md)
 - [Tragedy of the Commons](thoughts/tragedy-of-the-commons.md)
+
+### Computers and Society
+- [Labels and Quantization](/thoughts/labels-and-quantization)
+- [HCI](thoughts/hci.md)
