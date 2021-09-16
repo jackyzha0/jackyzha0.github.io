@@ -29,9 +29,11 @@ The nested structure of the HTML lends itself very well to a tree-like structure
 
 ## How React works
 ### The Virtual DOM
-Of course, you can still manipulate and interact with the regular DOM [through JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) still but the main gripe that React has with this way of manipulating the DOM (e.g. adding new things to the screen or modifying existing bits on the page) is that it is *realllyyy* slow.
+Of course, you can still manipulate and interact with the regular DOM [through JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) still but the main gripe that React has with this way of manipulating the DOM (e.g. adding new things to the screen or modifying existing bits on the page) is that it can be *realllyyy* slow in some cases.
 
-This is where the mystical **virtual DOM** comes in. Because modifying the real DOM takes a really long time and an in-memory version implemented in JavaScript would be magnitudes faster, that's exactly what React does. React creates a virtual DOM where it keeps track of what it would *like* the real DOM to look like and then intelligently batches and combines changes together to optimize and squeeze the most performance out of the few expensive writes to the real DOM that it actually does. More info on [how DOM diffing and patching works](https://buildwithreact.com/tutorial/under-the-hood) under the hood for those curious.
+This is where the mystical **virtual DOM** comes in. Modifying the DOM in a declarative way is difficult because modifying the real DOM is imperative by nature, making it difficult to write declarative applications. You could use `element.innerHTML = 'your html'` in a declarative fashion, but an in-memory version implemented in JavaScript would be faster than using `innerHTML`, which is exactly exactly what React does. React creates a virtual DOM where it keeps track of what it would *like* the real DOM to look like and then intelligently batches and combines changes together to optimize and squeeze the most performance out of the few expensive writes to the real DOM that it actually does. More info on [how DOM diffing and patching works](https://buildwithreact.com/tutorial/under-the-hood) under the hood for those curious.
+
+> Please note that Virtual DOM is not faster than raw, imperative operations on the real DOM (best performance). React uses the Virtual DOM because it is a relatively efficient way of declaratively representing your UI from state, and much faster compared to straight `innerHTML` calls.
 
 ![React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM](/posts/images/react/virtual-DOM.png)*React's Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM*
 
@@ -81,7 +83,7 @@ To 'compose' components, you can nest them as children within each other.
 
 Great, so that's just what JSX *looks like*, how do we use it in React? The first thing to note is that a **component in React is defined as a function which returns some JSX**.
 
-Here's a simple 'Hello World' component in React! We then write a return statement that defines exactly how to render this component (i.e. what children make up this component). 
+Here's a simple 'Hello World' component in React! We then write a return statement that defines exactly how to render this component (i.e. what children make up this component).
 
 Note that React passes us all of the props from the parent in a 'props' object. Then, in the return statement's JSX, we can then access the name property by using `{}` to indicate a JS expression and accessing the 'name' field in the `props` object.
 
@@ -125,7 +127,7 @@ There are three main parts to the life cycle to a React component. They are moun
 Mounting happens when the component is first added to the virtual DOM. Here, we set the initial state of the component (e.g. to track the number of clicks, a user's input, etc.) and tell React to update the DOM.
 
 ### Update
-An update happens when its parent component is updated or when its state or props changes. Here, we can modify the state of the component, do asyncronous things (like call an API), and rerender the component. 
+An update happens when its parent component is updated or when its state or props changes. Here, we can modify the state of the component, do asyncronous things (like call an API), and rerender the component.
 
 ### Unmount
 The unmount happens when the parent component is no longer rendered to the DOM. Now, we cleanup anything that needs to be cleaned up, destroying all state, and removing the component from the DOM.
@@ -141,7 +143,7 @@ import React from 'react'
 
 function Counter() {
   let count = 0
-  
+
   return (
     <div>
       <p>You clicked {count} times</p>
@@ -184,7 +186,7 @@ Now when the button is clicked, the count is then incremented by one. Because we
 Note that you **cannot** directly modify the `count` variable because it is read-only. If you want to mutate it, use the `setCount` function that is returned from the hook.
 
 #### A note about syntax
-Because this is just using JavaScript's [destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), we can call the variable whatever we want. 
+Because this is just using JavaScript's [destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), we can call the variable whatever we want.
 
 ```jsx
 const [count, setCount] = useState(0)
@@ -208,7 +210,7 @@ import React, { useState, useEffect } from 'react'
 
 function Counter() {
   const [count, setCount] = useState(0)
-  
+
   // setup a new effect that runs everytime `count` is updated
   // this will re-render the component too
   useEffect(() => {
@@ -249,7 +251,7 @@ function Profile() {
   // error or loading messages
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
-  
+
   // if the code reaches this point, we know
   // that our request will have finished and have no errors!
   return <div>Hello {data.name}!</div>
@@ -257,7 +259,7 @@ function Profile() {
 ```
 
 ### Order matters
-One really common beginner mistake that I made a lot when first starting out is that **hooks need to be called in the exact same order every time.** This means that you can't have hooks after any conditional returns, inside `if` statements, or inside function/callback definitions. 
+One really common beginner mistake that I made a lot when first starting out is that **hooks need to be called in the exact same order every time.** This means that you can't have hooks after any conditional returns, inside `if` statements, or inside function/callback definitions.
 
 ```jsx
 // DON'T: conditionally run hook
@@ -317,8 +319,8 @@ We can keep the styling from the template just so it looks a bit nicer.
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-// custom styling using styled-components!  
-const AppContainer = styled.div`  
+// custom styling using styled-components!
+const AppContainer = styled.div`
  margin: 40vh 30vw;
 `
 
@@ -364,16 +366,16 @@ const TodoItemContainer = styled.div`
   &:hover > p {
     text-decoration: line-through;
   }
-`  
-  
-function TodoItem(props) { 
+`
+
+function TodoItem(props) {
   // replace the original div with the `TodoItemContainer`
   // styled div we just created
-  return (  
-    <TodoItemContainer>  
-      <p>{props.name}</p>  
-    </TodoItemContainer>  
-  )  
+  return (
+    <TodoItemContainer>
+      <p>{props.name}</p>
+    </TodoItemContainer>
+  )
 }
 ```
 
@@ -385,16 +387,16 @@ Great! Now let's see what that looks like.
 Hmm, would be great if we could actually delete a todo by just clicking on a todo item. Good thing [React has event handlers](https://reactjs.org/docs/handling-events.html) just like regular HTML elements do! Let's modify our `<TodoItem>` to handle a click event. To do that, we just pass a callback to the the desired component using the `onClick` prop.
 
 ```jsx
-function TodoItem(props) { 
-  return (  
+function TodoItem(props) {
+  return (
     <TodoItemContainer
       onClick={() => {
         alert(`You finished ${props.name}!`)
       }}
-    >  
-      <p>{props.name}</p>  
-    </TodoItemContainer>  
-  )  
+    >
+      <p>{props.name}</p>
+    </TodoItemContainer>
+  )
 }
 ```
 
@@ -402,12 +404,12 @@ Now, when we click each todo item, our page will give us an alert saying we comp
 
 Recall from earlier that with React, information flows *downward* in the component hierarchy tree. This means that in order to modify the state of the parent (`<App>` in this case), we need to pass a callback that helps us modify the information.
 
-To do that, we create a `deleteTodo` function in `<App>` and then pass an anonymous function to each todo which deletes that given todo. Note that because we can't directly modify the `todos` variable as it is read-only, we create a copy of it using the spread syntax (`[...todos]`), then remove a single element by index using splice. 
+To do that, we create a `deleteTodo` function in `<App>` and then pass an anonymous function to each todo which deletes that given todo. Note that because we can't directly modify the `todos` variable as it is read-only, we create a copy of it using the spread syntax (`[...todos]`), then remove a single element by index using splice.
 
 ```jsx
 function App() {
   const [todos, setTodos] = useState(["do laundry", "finish homework"])
-  
+
   // callback to remove a todo
   const deleteTodo = (index) => {
     // copy current todos
@@ -416,7 +418,7 @@ function App() {
     newTodos.splice(index, 1)
     setTodos(newTodos)
   }
-  
+
   return (
     <AppContainer>
       <h1>todos</h1>
@@ -433,12 +435,12 @@ function App() {
 Then, we update `<TodoItem>` to use this callback on click.
 
 ```jsx
-function TodoItem(props) { 
-  return (  
-    <TodoItemContainer onClick={props.deleteCallback}>  
-      <p>{props.name}</p>  
-    </TodoItemContainer>  
-  )  
+function TodoItem(props) {
+  return (
+    <TodoItemContainer onClick={props.deleteCallback}>
+      <p>{props.name}</p>
+    </TodoItemContainer>
+  )
 }
 ```
 
@@ -451,7 +453,7 @@ First, let's create a short form component that will allow us to accept user inp
 function TodoForm(props) {
   // form state
   const [todo, setTodo] = useState("")
-  
+
   return (
     <form>
       <input
@@ -471,18 +473,18 @@ By telling React that the value of the `<input>` is equal to the component state
 ```jsx
 function TodoForm(props) {
   const [todo, setTodo] = useState("")
-  
+
   const handleSubmit = (e) => {
     // prevent form from refreshing page
     e.preventDefault()
-    
+
     // show an alert with user input
     alert(todo)
-    
+
     // clear form
     setTodo("")
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -498,7 +500,7 @@ function TodoForm(props) {
 Let's add a bit of styling to make the text box not as ugly and add `<TodoForm>` to the end of the todos list so it actually gets rendered.
 
 ```jsx
-const TodoInput = styled.input`  
+const TodoInput = styled.input`
  padding: 0.7em 0.5em;
  border: 1px solid black;
  border-radius: 4px;
@@ -506,18 +508,18 @@ const TodoInput = styled.input`
 
 function TodoForm(props) {
   const [todo, setTodo] = useState("")
-  
+
   const handleSubmit = (e) => {
     // prevent form from refreshing page
     e.preventDefault()
-    
+
     // show an alert with user input
     alert(todo)
-    
+
     // clear form
     setTodo("")
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <TodoInput
@@ -530,26 +532,26 @@ function TodoForm(props) {
   )
 }
 
-function App() {  
-  const [todos, setTodos] = useState(["do laundry", "finish homework"])  
+function App() {
+  const [todos, setTodos] = useState(["do laundry", "finish homework"])
 
-  const deleteTodo = (index) => {  
-    const newTodos = [...todos]  
-    newTodos.splice(index, 1)  
-    setTodos(newTodos)  
+  const deleteTodo = (index) => {
+    const newTodos = [...todos]
+    newTodos.splice(index, 1)
+    setTodos(newTodos)
   }
-  
-  return (  
-    <AppContainer>  
-      <h1>todos</h1>  
-      {todos.map((item, i) => <TodoItem  
-        key={i}  
-        name={item}  
-        deleteCallback={() => deleteTodo(i)}  
-      />)}  
-      <TodoForm/>  
-    </AppContainer>  
-  )  
+
+  return (
+    <AppContainer>
+      <h1>todos</h1>
+      {todos.map((item, i) => <TodoItem
+        key={i}
+        name={item}
+        deleteCallback={() => deleteTodo(i)}
+      />)}
+      <TodoForm/>
+    </AppContainer>
+  )
 }
 ```
 
@@ -562,14 +564,14 @@ Finally, let's link this up back to the main `<App>` state so that adding a new 
 ```jsx
 function TodoForm(props) {
   const [todo, setTodo] = useState("")
-  
+
   const handleSubmit = (e) => {
     e.preventDefault()
     // use the provided 'addCallback' prop
     props.addCallback(todo)
     setTodo("")
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <TodoInput
@@ -582,32 +584,32 @@ function TodoForm(props) {
   )
 }
 
-function App() {  
-  const [todos, setTodos] = useState(["do laundry", "finish homework"])  
+function App() {
+  const [todos, setTodos] = useState(["do laundry", "finish homework"])
 
-  const deleteTodo = (index) => {  
-    const newTodos = [...todos]  
-    newTodos.splice(index, 1)  
-    setTodos(newTodos)  
+  const deleteTodo = (index) => {
+    const newTodos = [...todos]
+    newTodos.splice(index, 1)
+    setTodos(newTodos)
   }
-  
+
   // callback to add a new todo
   const addTodo = (todo) => {
     const newTodos = [...todos, todo]
     setTodos(newTodos)
   }
-  
-  return (  
-    <AppContainer>  
-      <h1>todos</h1>  
-      {todos.map((item, i) => <TodoItem  
-        key={i}  
-        name={item}  
-        deleteCallback={() => deleteTodo(i)}  
-      />)}  
-      <TodoForm addCallback={addTodo} />  
-    </AppContainer>  
-  )  
+
+  return (
+    <AppContainer>
+      <h1>todos</h1>
+      {todos.map((item, i) => <TodoItem
+        key={i}
+        name={item}
+        deleteCallback={() => deleteTodo(i)}
+      />)}
+      <TodoForm addCallback={addTodo} />
+    </AppContainer>
+  )
 }
 ```
 
