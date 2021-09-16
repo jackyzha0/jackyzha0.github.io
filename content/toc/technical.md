@@ -11,6 +11,7 @@ date: 2021-07-14T15:29:51-04:00
 ### Concepts
 - [Docker Explained](/posts/docker)
 - [React in 30min](posts/react.md)
+- [Computer Vision](thoughts/computer-vision.md)
 
 ## Article List
 ### AI

@@ -8,6 +8,8 @@ date: 2021-06-17T00:33:42-04:00
 Creating a desktop version of portal for easier UX
 
 ## Ideas
+### Conversational GPS
+why isn't this a thing lmao
 ### Tools for Thought
 * block based editors are neat cause i can move stuff around really easily
 	* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
