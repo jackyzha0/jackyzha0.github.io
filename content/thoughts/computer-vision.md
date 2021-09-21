@@ -34,11 +34,11 @@ All angles are spherical coordinates w.r.t. the normal line of the surface.
 A Lambertian (matte) surface is one which appears the same brightness from all directions. A mirror (specular) surface is one where all incident light is reflected in one direction $(\theta_v,\phi_v)=(\theta_r,\phi_r)$
 
 #### Cameras
-![Bare-sensor imaging](thoughts/images/bare-sensor-imaging.png)*All scene points contribute to all sensor pixels*
+![Bare-sensor imaging](/thoughts/images/bare-sensor-imaging.png)*All scene points contribute to all sensor pixels*
 
 As a result, the image is really blurry.
 
-![Pinhole camera](thoughts/images/pinhole.png)*Pinhole camera*
+![Pinhole camera](/thoughts/images/pinhole.png)*Pinhole camera*
 
 The image here is flipped, but no longer blurry. Roughly, each scene point contributes to one sensor. Pinhole camera means you need to get the right size of pinhole. If the pinhole is too big, then many directions are averaged, blurring the image. If the pinhole is too small, then diffraction becomes a factor, also blurring the image.
 
@@ -66,176 +66,15 @@ Similarities with the human eye
 #### Weak Perspective
 Only accurate when object is small/distant. Useful for recognition
 
-$$
-P = 
-\begin{bmatrix}
-x \\
-y \\
-z
-\end{bmatrix}
-
-\
-
-\textrm{projects to a 2D image point}
-
-\
-
-P' = 
-\begin{bmatrix}
-x' \\
-y'
-\end{bmatrix}
-
-\
-
-\textrm{where}
-
-\
-
-m = \frac{f'}{z_0}, \ x' = mx, \ y' = my
-$$
+![Weak Perspective Equation](/thoughts/images/weak-perspective.png)*Weak Perspective Equation*
 
 #### Orthographic Projection
-$$
-P = 
-\begin{bmatrix}
-x \\
-y \\
-z
-\end{bmatrix}
 
-\
-
-\textrm{projects to a 2D image point}
-
-\
-
-P' = 
-\begin{bmatrix}
-x' \\
-y'
-\end{bmatrix}
-
-\
-
-\textrm{where}
-
-\
-
-x' = x, \ y' = y
-$$
+![Orthographic Project](/thoughts/images/orthographic-projection.png)*Orthographic Projection*
 
 #### Perspective Projection
-$$
-P = 
-\begin{bmatrix}
-x \\
-y \\
-z
-\end{bmatrix}
 
-\
-
-\textrm{projects to a 2D image point}
-
-\
-
-P' = 
-\begin{bmatrix}
-x' \\
-y'
-\end{bmatrix}
-
-\
-
-\textrm{where}
-
-\
-
-x' = f' \frac{x}{z}, \ y' = f' \frac{y}{z}
-$$
-
-Alternatively, using a camera matrix:
-
-$$
-P = 
-\begin{bmatrix}
-x \\
-y \\
-z
-\end{bmatrix}
-
-\
-
-\textrm{projects to a 2D image point}
-
-\
-
-P' = 
-\begin{bmatrix}
-x' \\
-y' \\
-1
-\end{bmatrix}
-
-\
-
-\textrm{where}
-
-\
-
-P' = CP, \ C =
-\begin{bmatrix}
-f' & 0 & 0 & 0 \\
-0 & f' & 0 & 0 \\
-0 & 0 & 1 & 0
-\end{bmatrix}
-$$
-
-Thus,
-
-$$
-CP = 
-\begin{bmatrix}
-f' & 0 & 0 & 0 \\
-0 & f' & 0 & 0 \\
-0 & 0 & 1 & 0
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-y \\
-z \\
-1
-\end{bmatrix}
-=
-\begin{bmatrix}
-f'x \\
-f'y \\
-z
-\end{bmatrix}
-$$
-
-For non-symmetric cameras
-$$\begin{bmatrix}
-f_x' & 0 & 0 & 0 \\
-0 & f_y' & 0 & 0 \\
-0 & 0 & 1 & 0
-\end{bmatrix}$$
-
-Pinhole/sensor have offsets
-$$\begin{bmatrix}
-f' & 0 & 0 & c_x \\
-0 & f' & 0 & c_y \\
-0 & 0 & 1 & 0
-\end{bmatrix}$$
-
-Coordinate system not centered around pinhole (where R is a rotation matrix)
-$$\begin{bmatrix}
-f' & 0 & 0 & c_x \\
-0 & f' & 0 & c_y \\
-0 & 0 & 1 & 0
-\end{bmatrix}\mathbb{R}_{4 \times 4}
-$$
+![Perspective Projection](/thoughts/images/perspective-projection.png)*Perspective Projection*
 
 ## Image as functions
 ### Grayscale images
@@ -259,7 +98,7 @@ Each pixel in the output image is a linear combination of the central pixel and 
 
 #### Properties of Linear Filters
 1. Superposition: distributive law applies to convolution. Let $F_1$ and $F_2$ be digital filters. Then $$(F_1 + F_2) \otimes I(x,y) = F_1 \otimes I(x,y) + F_2 \otimes I(x,y)$$
-2. Scaling. Let $F$ be a digital iflter and let $k$ be a scalar. $$(kF) \otimes I(x,y) = F \otimes (kI(x,y)) = k(F \otimes I(x,y))$$
+2. Scaling. Let $F$ be a digital filter and let $k$ be a scalar. $$(kF) \otimes I(x,y) = F \otimes (kI(x,y)) = k(F \otimes I(x,y))$$
 3. Shift invariance: output is local (doesn't depend on absolute position in image)
 
 #### Characterization Theorem

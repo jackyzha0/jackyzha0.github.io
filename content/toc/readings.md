@@ -3,7 +3,7 @@ title: "Readings"
 date: 2021-07-14T14:16:36-04:00
 ---
 
-Notes on my favourite articles and books.
+Notes on my favourite articles and [books](/books).
 
 ## Books
 - [From Counterculture to Cyberculture](/thoughts/books/fctc)

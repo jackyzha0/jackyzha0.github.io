@@ -3,6 +3,8 @@ title: "Human Computer Interaction (HCI)"
 date: 2021-09-14T15:38:31-07:00
 ---
 
+> Better HCI is better empathy
+
 What even is HCI?
 * The human-machine joint performance of tasks
 * Human-computer or human-human communicationmediated by computers
@@ -127,3 +129,5 @@ Consent will be obtained explicitly in one of the following ways:
 1. by returning a completed questionnaire (questionnaireonly consent)
 2. through the participant signing a consent form (general consent), or
 3. by replying affirmatively to an email that contains the consent form text (general consent).
+
+Human task involves the steps to do something, whereas human needs are general wants of the user, what they want to get accomplished.

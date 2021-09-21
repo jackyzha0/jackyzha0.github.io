@@ -32,7 +32,7 @@ Two main theses:
 1.  all mental phenomena from pains, tickles, and itches to the most abstruse thoughts are caused by lower-level neurobiological processes in the brain
 2.  mental phenomena themselves are higher-level features of the brain
 
-Entails that the brain has the right causal powers to produce intentionality   
+Entails that the brain has the right causal powers to produce [intentionality](thoughts/intentionality.md)   
 -   weak AI → principle value of the computer in the study of the mind is that it gives us a very powerful tool
 -   strong AI → the appropriately programmed computer really IS a mind    
     -   computers, given the right programs, can be literally said to understand and have other cognitive states
@@ -54,7 +54,7 @@ Entails that the brain has the right causal powers to produce intentionality
 -   as it applies to the two claims
 	1.  the symbol manipulator clearly does not understand a word of chinese
 	2.  whatever purely format principles are inserted into the computer, they won't be sufficient for understanding as a human will be able to follow the formal principles without understanding anything!
--   often attribute "understanding" and other cognitive predicates by metaphor and analogy to things that can't be intentioned like cars and adding machines — we make these attributions as we extend our own intentionality onto them (derived intentionality)
+-   often attribute "understanding" and other cognitive predicates by metaphor and analogy to things that can't be intentioned like cars and adding machines — we make these attributions as we extend our own [intentionality](thoughts/intentionality.md) onto them (derived intentionality)
 -   replies
     1.  systems reply
         -   the symbol manipulator is merely a part of a whole system and the system does understand the story
@@ -79,7 +79,7 @@ Entails that the brain has the right causal powers to produce intentionality
                 -   absurd to think that the operator in conjunction with the pipes understands it (operator can internalize the pipes)
     4.  combination reply
         -   imagine a robot with a brain-shaped computer lodged in its cranial cavity, computer programmed with all the synapses of the human brain, whole behaviour of the robot is indistinguishable from human behaviour, and now think of the whole thing as a unified system and not just a computer with inputs and outputs
-        -   as long as you knew nothing about it, it would be rational to ascribe intentionality to the robot
+        -   as long as you knew nothing about it, it would be rational to ascribe [intentionality](thoughts/intentionality.md) to the robot
         -   response: doesn't help the claims of strong AI
             -   the attributions of intentionality that we make to the robot in this example have nothing to do with formal programs
             -   if the robot looks and behaves sufficiently like us, then we would suppose until proven otherwise, that is must have mental states like ours that cause and are expressed by its behaviour and it must have an inner mechanism capable of producing such mental states
@@ -104,13 +104,11 @@ Entails that the brain has the right causal powers to produce intentionality
 	-   "digital computer" as something that can be describes as the instantiation of a computer program
 	-   since we are the instantiations of any number of computer programs, we can think
 -   can something think, understand, and so on SOLELY based on the virtue of being a computer with a specific program? no
-	-   formal symbol manipulations by themselves dont have intentionality → only syntax, no semantics
-	-   intentionality is derived
-	-   chinese room example tries to show that even programming something with intentionality (a person) with a format program, that formal program carries no additional intentionality
+	-   formal symbol manipulations by themselves dont have [intentionality](thoughts/intentionality.md) → only syntax, no semantics
 
 ## Information Processing
--   argument that rests on the ambiguity of what "information" is
--   construing information processing that implies intentionality
+-   argument that rests on the ambiguity of what "[information](thoughts/information.md)" is
+-   construing information processing that implies [intentionality](thoughts/intentionality.md)
 	-   programmed computer does not do information processes, it only manipulates formal symbols
 -   doesn't imply intentionality
 	-   information transformation → taking info at one end, transforming it, and producing different information as output

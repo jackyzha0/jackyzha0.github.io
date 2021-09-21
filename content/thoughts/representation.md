@@ -48,25 +48,7 @@ date: 2021-07-02T15:33:29-04:00
     -   thoughts you are aware of having
     -   it is possible to believe or desire things you don't know that you believe or desire
     -   descartes denies that there are unconscious thoughts
-    -   freud agrees there are unconscious thoughts (and desires)
-
-## Intentionality
-- representational character of states of mind
--   mental states which exhibit intentionality are called intentional states
--   to say thoughts are intentional states is to say that they must have content (an intentional object)
--   brentano's thesis → intentionality is the mark of the mental
-	-   all mental phenomena exhibit intentionality
-		-   rephrased: is mentality sufficient for intentionality?
-		-   what about pain, feelings, moods
-			-   can be accounted for
-			-   physical pain → can have a place, the felt location can cause a plausible difference in intentionality (what the mental state is directed at)
-			-   depression → may seem to be general, but can be characterized as overall "world suck" but the world is still a subject
-	-   only mental phenomena exhibit intentionality
-		-   rephrased: is mentality necessary for intentionality?
-		-   are minds the only things that have intentionality? to prove wrong, we need to find something with intentionality that doesn't have a mind
-		-   what about words / pictures / maps?
-			-   these only exhibit derived intentionality
-			-   interpreted rather than having intrinsic intentionality
+    -   freud agrees there are unconscious thoughts (and desires)**
 
 # Putnam
 ## Ant argument

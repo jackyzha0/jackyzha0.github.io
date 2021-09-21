@@ -26,16 +26,7 @@ date: 2021-07-02T15:27:30-04:00
     -   descartes believes no to empirical but tentative yes to conceptual
         -   empirical → "they could never use words or other signs arranged in such a manner as is competent to us in order to declare our thoughts to others"
         -   conceptual → "but not that it should arrange them variously so as appositely to reply to what is said in its presence, as men of the lowest grade of intellect can do"
--   intentionality
-    -   dennet
-        -   based off of behaviour rather than internal mechanisms
-        -   accepts Brentano's definition of the mental, but proposed materialist way to view intentionality (and intelligence)
-            1.  behaviour should be understood not in isolation but in context and as part of a consistent pattern of behaviour (holism)
-            2.  consistent pattern of behaviour in context can be construed as rational (interpretation)
-                1.  rational → acting so as to best satisfy your goals given what you know and can tell about your situation
-        -   rabbit example
-            -   We infer that a rabbit can tell a fox from another rabbit, always wanting to get away from the one but not the other
-            -   Thus, on a given occasion, we attribute to the rabbit intentional states (beliefs and desires) about a particular fox, on the basis not only of its current behavior but also of the pattern in its behavior over time.
+- [intentionality](thoughts/intentionality.md)
 -   original intentionality vs derived intentionality
     -   some things can be "about" others (sentences, stories, etc.)
         -   this is derivative intentionality, only "about" something because the authors "mean" them that day → second-hand intentionality, borrowed from the intentionality that the users already have
