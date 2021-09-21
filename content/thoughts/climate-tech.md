@@ -64,6 +64,17 @@ Gerrymandering but for trees? A lot of the offset calculations are based off of 
 
 This could actually benefit indigenous tribes because of their more conservative approach to logging -- in fact, offsets can enable tribes to reduce logging. However, "some tribal members are [deeply uncomfortable](https://www.newyorker.com/news/dispatch/how-carbon-trading-became-a-way-of-life-for-californias-yurok-tribe) with the idea of selling offsets to companies like this even if they are legitimate, fearing they’re effectively profiting from pollution."
 
+## Neutral Infrastructure
+[Source](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and other [source](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
+
+Might be software infrastructure but it has lots of political implications (e.g. climate impact, territory disputes, etc.). Its 'reduced cost' does not factor in long-term negative externalities like warming the ocean.
+
+"Many of these solutions are readily available, but in a risk-averse industry, most companies have been reluctant to make wholesale change." This is largely due to the anonymity involved in the industry where even the federal government was unable to determine how much energy its own data centers consume.
+
+> "They don’t get a bonus for saving on the electric bill. They get a bonus for having the data center available 99.999 percent of the time."
+
+Low utilization can mean that the energy wasted is as much as 30x the amount of electricity used if it was at 100% utilization.
+
 ## Company Initiatives
 ### Stripe
 https://stripe.com/climate
@@ -75,7 +86,6 @@ tldr; we need to develop new carbon removal tech, the ones we have right now are
 "Early purchasers can help new carbon removal technologies get down the cost curve and up the volume curve. Experience with manufacturing learning and experience curves has shown repeatedly that deployment and scale beget improvement, a [phenomenon](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0052669) seen across DNA sequencing, hard drive capacity, and solar panels."
 
 ### Shopify
-
 General ethos: we don't know what works so let's invest in a little bit of everything
 
 > There’s no easy fix for climate change, and no solution that will singlehandedly solve the problem. We have to try every possible nature-based and engineered option.
