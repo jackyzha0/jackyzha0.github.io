@@ -3,7 +3,7 @@ title: "Organizing Systems"
 date: 2021-09-21T09:28:57-07:00
 ---
 
-_Organizing System_: an intentionally arranged collection of resources and the interactions they support
+_Organizing System_: an [intentionally](thoughts/intentional-arrangement.md) arranged collection of resources and the interactions they support. It has authoritative description and standard classification. 
 
 We organize
 - physical things (objects/artefacts)

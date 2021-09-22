@@ -3,6 +3,14 @@ title: "Infrastructure"
 date: 2021-06-16T13:15:09-07:00
 ---
 
+Infrastructure should be
+- embedded
+- transparent
+- scape/scope
+- learned
+- linked with practices
+[Source](https://www.jstor.org/stable/23010792)
+
 ## What is infrastructure even?
 -  which came first, the infrastructure or the applications that depend on it?
 -   things that use infrastructure or technology

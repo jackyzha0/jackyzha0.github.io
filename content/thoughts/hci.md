@@ -114,6 +114,24 @@ Benefits:
 1. Expectation management: ensuring that the users' expectations of the new product are realistic and no surprises for users when the product arrives.
 2. Ownership: users who are involved and feel that they have contributed to a product's development are more likely to feel a sense of ownerships toward it and support its user
 
+## Data Recording
+- What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.
+- What does it mean to collect user data? What techniques can be used, and how useful and reliable is the data that is collected?
+
+Five Key Issues
+1. Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed.
+2. Identifying Participants. Those who fit the profile of types of people from whom data can be gathered are called the study population. Types of sampling are as follows:
+  - Probability Sampling: simple random sampling or stratified sampling
+  - Nonprobability Sampling: convenience sampling or volunteer panels
+    - Convenience Sampling: sample includes those who were available rather than those specifically selected
+3. Relationship with Participants: informed consent with a clear and professional relationship between participant and researcher
+
+Triangulation: the investigation of a phenomenon from at least two different perspectives. This is mostly focused on verification and reliability of data rather than making up for the limitations of another type of methodology
+1. Triangulation of data: data is drawn from different sources at different times/places/people
+2. Investigator triangulation: different researchers (observers, interviewers, and so on) have been involved in collecting and interpreting the data
+3. Triangulation of theories: use of different theoretical frameworks through which to view data
+4. Methodological triangulation: employ different data gathering techniques
+
 ### [344](https://www.students.cs.ubc.ca/~cs-344/current-term/) Specific
 - no contentious questions
 - no offensive materials
