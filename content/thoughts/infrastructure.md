@@ -4,11 +4,12 @@ date: 2021-06-16T13:15:09-07:00
 ---
 
 Infrastructure should be
-- embedded
-- transparent
-- scape/scope
-- learned
-- linked with practices
+- Embedded: Infrastructure is "sunk" into, inside of, other structures, social arrangements and technologies
+- Transparent: Infrastructure is transparent to use, in the sense that it does not have to be reinvented each time or assembled for each task, but invisibly supports those tasks.
+- Reach/scope: This may be either spatial or temporal -- infrastructure has reach beyond a single event or one-site practice. Occurs across multiple places.
+- Learned: Strangers and outsiders encounter infrastructure as a target object to be learned about. New participants acquire a naturalized familiarity with its objects as they become members.
+- Links with conventions of practices: Infrastructure both shapes and is shaped by the conventions of a community of practice (e.g. the QWERTY keyboard).
+
 [Source](https://www.jstor.org/stable/23010792)
 
 ## What is infrastructure even?

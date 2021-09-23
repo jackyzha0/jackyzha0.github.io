@@ -132,7 +132,54 @@ Triangulation: the investigation of a phenomenon from at least two different per
 3. Triangulation of theories: use of different theoretical frameworks through which to view data
 4. Methodological triangulation: employ different data gathering techniques
 
-### [344](https://www.students.cs.ubc.ca/~cs-344/current-term/) Specific
+### 3 Methods for Data Recording
+1. Notes + Photographs -> least technical and most flexible way of recording data, but can be difficult to capture the right highlights.
+2. Audio + Photographs -> less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.
+3. Video -> highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants
+
+### Interviews
+> A conversation with a purpose
+
+1. Open-ended/unstructured -> can be time-consuming but can also produce rich insights
+2. Semi-structured -> plans basic script but probes interviewee until no new relevants info is there
+3. Structured -> predetermined questions like a questionnaire, study is standardized
+4. Group interviews -> 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences
+
+Asking questions like "Can you tell me a bit more about..." is called probing
+
+#### Planning
+1. Developing Interview Questions. Open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions
+2. Running the Interview. Before starting, make sure that the goals of the interview have been explained to the interviewee and that they are willing to proceed. Listen more than talk, repond with sympathy but without bias, and to appear to enjoy the interview.
+
+A lot of decisions to make too
+- Choosing a framework
+- Level of participation to adopt
+- How to make a record of the data
+- How to gain acceptance into the group being studied
+- How to ensure that the study uses difference perspectives
+
+Ethnography: the description of the customs of people and cultures. A distinguishing feature of ethnographic studies compared with other data gathering is that a situation is observed without imposing any a priori structure or framework upon it, and everything is viewed as "strange".
+
+| Technique | Good for | Kind of Data | Advantages | Disadvantages |
+| --------- | -------- | ------------ | ---------- | ------------- |
+| Interviews | Exploring issues | Mostly qualitative (some quantitative) | Interviewer can guide, encourages contact between researchers and users | Artificial environment might be intimidating, remove them from usual environment |
+| Focus Groups | Collecting multiple viewpoints | Mostly qualitative (some quantitative) | Highlight areas of agreement/conflict, encourages contact between researchers and users | Possibility of dominant characters |
+| Questionnaires | Answering specific questions | Quantitative and Qualitative | Can reach many people with low resource requirements | Design is key, response rates may be low |
+| Direct observation in the field | Understanding context of user activity | Mostly qualitative | Observational insights | Very time-consuming, huge amounts of data |
+| Direct observation in a controlled environment | Captural detail of individuals | Quantitative and qualitative | User can focus on task without interruption | Data may be of limited use due to artificial environment |
+| Indirect observation | Observing users in natural environment without distraction | Quantitative (logging) and qualitative (diary) | Can be long due to automative recording | Large amounts of data implies need for tools to support analysis, participants may exaggerate memories |
+
+#### Observation
+Users may be observed directly by the investigator as they perform their activities or indirectly through records of the activity that are studied afterward.
+
+Observation can also result in a lot of data to sift through and can be complicated to do well than at firs appreciated. As such, a clearly stated goal is important to have focus for an observation session.
+
+Example frameworks:
+- The person: Who is using the technology at any particular time?
+- The place: Where are they using it?
+- The thing: What are they doing with it?
+
+## [344](https://www.students.cs.ubc.ca/~cs-344/current-term/) Specific
 - no contentious questions
 - no offensive materials
 - all subjects will be competent and over 19 (UBC students 17 and over can also be considered emancipated for the studies)

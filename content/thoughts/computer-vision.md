@@ -5,6 +5,8 @@ date: 2021-09-15T21:49:18-07:00
 
 > CV, broadly speaking, is a research field aimed to enable computers to process and interpret visual data, as sighted humans can
 
+It can also be thought of as the inverse of graphics.
+
 Typically, it's a pipeline from
 1. Image
 2. Sensing Device
@@ -187,3 +189,20 @@ We denote the discrete image with a capital I as $I(x,y)$. So when we go from co
 - Area-based sampling occurs in practice
 
 We also quantize the brightness into a finite number of equivalence classes. These values are called gray-levels
+
+$$I(x,y) \implies \lfloor \frac{i(x,y)}{M} (2^n - 1) + 0.5\rfloor$$
+
+Typically, $n=8$ giving us $0 \leq n \leq 256$
+
+Is it possible to recover $i(x,y)$ from $I(x,y)$? In the case when the continuous is equal to the discrete, this is possible (e.g. a completely flat image). However, if there is a discontinuouty that doesn't fall at a precise integer, we cannot recover the original continuous image.
+
+A bandlimit is the maximum *spatial frequency* of an image. The audio equivalent of this is audio frequency, the upper limit of human hearing is about 20kHz which is the human hearing bandlimit.
+
+Aliasing is the idea that we don't have have enough samples to properly reconstruct the original signal so we construct a lower frequency (fidelity) version.
+
+This creates funky patterns on discrete images called moire patterns. This happens in film too (temporal aliasing), this is why wheels sometimes look like they go backwards.
+
+The fundamental result (Sampling Theorem): For bandlimited signals, if you sample regularly at or above twice the maximum frequency (called the Nyquist Rate), then you can reconstruct the original signal exactly.
+
+- Oversampling: nothing bad happens! Just wasted bits.
+- Undersampling: things are missing and there are artifacts (things that shouldn't be there)
