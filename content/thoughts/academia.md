@@ -3,11 +3,13 @@ title: "Academia"
 date: 2021-06-18T10:13:33-04:00
 ---
 
+> There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)
+
 ## Cool People/Things
-http://jeffclune.com/
-https://www.davidlindlbauer.com/
-https://www.hcii.cmu.edu/summer-research-program
-https://chrisharrison.net/index.php/Research/Welcome
+- http://jeffclune.com/
+- https://www.davidlindlbauer.com/
+- https://www.hcii.cmu.edu/summer-research-program
+- https://chrisharrison.net/index.php/Research/Welcome
 
 ## Tunnel Vision
 https://www.briantimar.com/notes/mimetic/mimetic/

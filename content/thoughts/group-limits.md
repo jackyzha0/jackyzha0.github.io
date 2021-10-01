@@ -34,3 +34,8 @@ Because of the increased number of 'social connections' people have today, is [c
 Does social capacity differ across different types of social interactions? e.g. One-to-one vs One-to-many vs Many-to-many (relevant: [digital commons](thoughts/digital-commons.md))
 
 "Modern Loneliness" by Lauv covers a lot of similar topics
+
+## Research
+I feel there are dangers of large groups, especially within research. Larger groups lead to more bureaucracy and being ok with the average -- an effect of too many cooks in the kitchen. This leads to ideas that are at the middle of the [distribution](thoughts/data-distributions.md) and tends to discourage more radical, out-of-distribution thinking and research
+
+Related: [a new DARPA](thoughts/a-new-darpa.md), [community perception](thoughts/communities.md)

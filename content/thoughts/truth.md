@@ -26,17 +26,6 @@ Truth is not binary, but rather a spectrum. Some propositions are closer to bein
 
 Very related to the work of Karl Popper and the iterative approach to science.
 
-## Karl Popper
-The aim of scientific inquiry is to find the truth. Yet, some of the greatest scientific theories in the history of science are actually false (e.g. early models of the atom, Newtonian physics). 
-
-Closeness to the truth is a function of two factors
-1. Truth
-2. Content
-
-Thus, the more truths a theory entails, the closer it is to the truth.
-
-> Even two true theories can have differing degrees of verisimilitude, depending on how much true information they deliver. For example, the claim "it will be raining on Thursday next week," if true, seems closer to the truth than the true yet logically weaker claim "it will either be raining next Thursday or it will be sunny".
-
 ## Descartes' Meditations
 ### First Meditation → skeptical doubts
 -   descartes wants to find a foundation of knowledge that will still stand strong even after doubting the most basic facts about the world

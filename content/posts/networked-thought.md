@@ -40,7 +40,7 @@ the focus of modern information systems is moving from "data-processing" towards
 
 balancing intake and output -> [2020](posts/2020.md)
 
-the scientific method and progress are not linear -> karl popper on [truth](thoughts/truth.md)
+the scientific method and [scientific progress](thoughts/scientific-progress.md) are not linear -> karl popper on [truth](thoughts/truth.md)
 
 not just passive knowledge collection -> it's not just knowledge collection
 writing as distilled thought, condense your knowledge and create a feedback cycle (even if you're not super confident in it!)
