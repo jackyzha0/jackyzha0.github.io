@@ -25,6 +25,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **System Error** by Rob Reich
 * **Radical Markets** by Eric A. Posner and E Glen Weyl
 * **Roads and Bridges** by Nadia Eghbal
+* **The Disappearance of Rituals** by Byung-Chul Han
 
 ## Current
 * **Mutual Aid** by Dean Spade
