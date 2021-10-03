@@ -467,7 +467,7 @@ Linear filtering is also known as template matching. Convolution/correlation can
 - Consider the filter and image section as vectors
 - Applying the filter can be interpreted as computing the dot product between the filter and the local image patch
 
-The correlation is then normalized to between -1 and 1, where 1 is the value when the filter and image region are identical. This process is essentially finding the cosine similarity between template and local image neighbourhood
+The correlation is then normalized to between -1 and 1 using cosine similarity, where 1 is the value when the filter and image region are identical. This process is essentially finding the cosine similarity between template and local image neighbourhood
 
 $$\cos\theta = \frac{a \cdot b}{|a||b|} = \frac{a \cdot b}{\sqrt{(a \cdot a)(b \cdot b)}} = \frac{a}{|a|} \frac{b}{|b|}$$
 
@@ -483,3 +483,67 @@ Bad:
 4. Sensitive to viewing direction and pose (in 3D worlds)
 
 ### Gaussian Image Pyramid
+Collection of representations of an image. Typically, each layer of the pyramid is half the width and half the height of the previous layer. In the Gaussian version, each layer is smoothed by a Gaussian then resampled to get the next layer.
+
+Details get smoothed out (are completely lost) as we move to higher levels, only large uniform regions of colours in the original image are left.
+
+## Local Feature Detection
+> Moving from global template matching to local template matching (e.g.edges and corners)
+
+As differentiation is linear and shift invariant, we can implement it as a convolution.
+
+The discrete approximation is $\frac{\partial f}{\partial x} \approx \frac{F(X+ \Delta x, y) - F(x,y)}{\Delta x}$ where $\Delta x$ is usually $1$. This is equivalent to a convolution $F$ is a $1 \times 2$ filter with the first element is $-1$ and the second element is $1$. Note that the derivatives go up for the Y direction and the right for the X direction.
+
+We usually smooth the image prior to derivative estimation. Increased smoothing
+- eliminates noise edges
+- makes edges smoother and thicker
+- removes fine detail
+
+Weights of a filter for differentiation should sum to 0 as a constant image should have derivative 0.
+
+### Edge Detection
+The goal here is to identify sudden changes in image brightness as this encodes the vast majority of shape information.
+
+An edge is a location with high gradient.
+
+Mainly caused by
+- Depth discontinuity
+- Surface orientation discontinuity
+- Reflectance discontinuity (e.g. change in material)
+- Illumination discontinuity (e.g. shadows)
+
+As we usually smooth prior to derivative calculation and convolution is associative, we can combine both steps and use derivatives of Gaussian filters.
+
+$$D \otimes (G \otimes I(X,Y)) = (D \otimes G) \otimes I(X,Y)$$
+
+### Gradient Magnitude
+Let $I(X,Y)$ be an image. Then, we let $I_x(X,Y)$ and $I_y(X,Y)$ be estimates of the partial derivatives in the $x$ and $y$ directions, respectively. Then, the vector $[I_x, I_y]$ or $\nabla f = [\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}]$ is the gradient and $\sqrt{I_x^2+I_y^2}$ is the gradient magnitude.
+
+The gradient points in the direction of most rapid increase of intensity. The direction is then $\theta = \arctan{\frac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}}$. The strength of the edge is then the magnitude $||\nabla f|| = \sqrt{\frac{\partial f}{\partial x}^2 + \frac{\partial f}{\partial y}^2}$
+
+#### Laplacian of Gaussian
+**Design Criteria**
+1. localization of space (find where the edge is)
+2. localization in frequency (identify high frequency and low frequency edges)
+3. rotationally invariant (rotation shouldn't affect edges)
+
+Find the zero-crossings (intercepts) of the Laplacian of the Gaussian. This is $\nabla^2 G(x,y) = \frac{-1}{2\pi\sigma^4}[2-\frac{x^2+y^2}{\sigma^2}]\exp{(-\frac{x^2+y^2}{2\sigma^2})} = 0$
+
+Alternatively, we can say that subtracting the delta function from the Gaussian gives you an approximation of the Laplacian
+
+#### Canny Edge Detector
+**Design Criteria**
+1. good detection (reduce missed edges, reduced edges where edges don't exist)
+2. good localization (accurate edge detection)
+3. one (single) response to a given edge
+
+Find the local extrema of a first derivative operator.
+
+Steps
+1. Apply directional derivatives of Gaussian
+2. Computer gradient magnitude and gradient direction
+3. Perform non-max suppression
+	Non-max suppression allows us to suppress near-by similar detections to obtain one "true" result. In images, we select the maximum point across the width of the edge (following the direction of the gradient).
+
+	In implementations, the value at a pixel $q$ must be larger than its interpolated values at $p$ (the next pixel in the direction of the gradient) and $r$ (the previous pixel in the direction of the gradient). Interpolate as needed.
+4. Linking and thresholding
