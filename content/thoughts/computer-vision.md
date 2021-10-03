@@ -516,12 +516,12 @@ As we usually smooth prior to derivative calculation and convolution is associat
 
 $$D \otimes (G \otimes I(X,Y)) = (D \otimes G) \otimes I(X,Y)$$
 
-### Gradient Magnitude
+#### Sobel (Gradient Magnitude)
 Let $I(X,Y)$ be an image. Then, we let $I_x(X,Y)$ and $I_y(X,Y)$ be estimates of the partial derivatives in the $x$ and $y$ directions, respectively. Then, the vector $[I_x, I_y]$ or $\nabla f = [\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}]$ is the gradient and $\sqrt{I_x^2+I_y^2}$ is the gradient magnitude.
 
-The gradient points in the direction of most rapid increase of intensity. The direction is then $\theta = \arctan{\frac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}}$. The strength of the edge is then the magnitude $||\nabla f|| = \sqrt{\frac{\partial f}{\partial x}^2 + \frac{\partial f}{\partial y}^2}$
+The gradient points in the direction of most rapid increase of intensity. The direction is then $\theta = \arctan{\frac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}}$. The strength of the edge is then the magnitude $||\nabla f|| = \sqrt{\frac{\partial f}{\partial x}^2 + \frac{\partial f}{\partial y}^2}$.
 
-#### Laplacian of Gaussian
+#### Marr/Hildreth (Laplacian of Gaussian)
 **Design Criteria**
 1. localization of space (find where the edge is)
 2. localization in frequency (identify high frequency and low frequency edges)
@@ -531,7 +531,7 @@ Find the zero-crossings (intercepts) of the Laplacian of the Gaussian. This is $
 
 Alternatively, we can say that subtracting the delta function from the Gaussian gives you an approximation of the Laplacian
 
-#### Canny Edge Detector
+#### Canny (Local Extrema of 1st deriv)
 **Design Criteria**
 1. good detection (reduce missed edges, reduced edges where edges don't exist)
 2. good localization (accurate edge detection)
@@ -547,3 +547,10 @@ Steps
 
 	In implementations, the value at a pixel $q$ must be larger than its interpolated values at $p$ (the next pixel in the direction of the gradient) and $r$ (the previous pixel in the direction of the gradient). Interpolate as needed.
 4. Linking and thresholding
+	Trying to fix broken edge chains by linking separate edge pixels through taking the normal of the gradient and linking it if the nearest interpolated pixel is also an edge pixel.
+	
+|Author|Approach|Detection|Localization|Single Resp|Limitations|
+|--|--|--|--|--|--|
+|Sobel|Gradient Magnitude Threshold|Good|Poor|Poor|Thick edges|
+|Marr/Hildreth|Zero-crossings of 2nd Derivative|Good|Good|Good|Smooths Corners
+|Canny|Local extrema of 1st Derivative|Best|Good|Good||
