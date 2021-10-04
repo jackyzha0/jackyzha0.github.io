@@ -487,6 +487,23 @@ Collection of representations of an image. Typically, each layer of the pyramid 
 
 Details get smoothed out (are completely lost) as we move to higher levels, only large uniform regions of colours in the original image are left.
 
+![Upsampling Process](https://miro.medium.com/max/1016/1*Q9UKqUC6OqpR3KL1yRrXxA.png)
+
+### Laplacian Pyramid
+To do this, create a Gaussian pyramid and take the difference between one pyramid level and the next after smoothing but before subsampling. 
+
+At each level, retain the residuals (difference between smoothed image and normal image) instead of the blurred images themselves.
+
+Constructing the pyramid, we repeat until min resolution reached:
+1. Filter
+2. Compute Residual
+3. Subsample
+
+Reconstructing, we repeat until original resolution reached:
+1. Upsample
+2. Blur
+3. Sum with residual
+
 ## Local Feature Detection
 > Moving from global template matching to local template matching (e.g.edges and corners)
 
@@ -544,7 +561,7 @@ Steps
 2. Computer gradient magnitude and gradient direction
 3. Perform non-max suppression
 	Non-max suppression allows us to suppress near-by similar detections to obtain one "true" result. In images, we select the maximum point across the width of the edge (following the direction of the gradient).
-
+ 
 	In implementations, the value at a pixel $q$ must be larger than its interpolated values at $p$ (the next pixel in the direction of the gradient) and $r$ (the previous pixel in the direction of the gradient). Interpolate as needed.
 4. Linking and thresholding
 	Trying to fix broken edge chains by linking separate edge pixels through taking the normal of the gradient and linking it if the nearest interpolated pixel is also an edge pixel.
@@ -554,3 +571,22 @@ Steps
 |Sobel|Gradient Magnitude Threshold|Good|Poor|Poor|Thick edges|
 |Marr/Hildreth|Zero-crossings of 2nd Derivative|Good|Good|Good|Smooths Corners
 |Canny|Local extrema of 1st Derivative|Best|Good|Good||
+
+### Boundary Detection
+How closely do image edges correspond to boundaries that humans perceive to be salient or significant? 
+
+One approach is using circular windows of radii $r$ at each pixel $(x,y)$ cut in half by a line that bisects the circle in half. Then, compare visual features on both sides of the cut and if the features are statistically different, then the cut line probably corresponds to a boundary.
+
+For statistical significance:
+1. Compute non-parametric distribution (histogram) for left side
+2. Compute non-parametric distribution (histogram) for right side
+3. Compare two histograms, on left and right side, using statistical test
+
+Example features include
+- Raw Intensity
+- Orientation Energy
+- Brightness Gradient
+- Color Gradient
+- Texture gradient
+
+For this implementation, we consider 8 discrete orientations ($\theta$) and 3 scales ($r$)
