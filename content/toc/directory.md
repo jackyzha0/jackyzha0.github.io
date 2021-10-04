@@ -19,3 +19,4 @@ You can search my entire garden by pressing `/` or hitting the little search ico
 - [Communities and Urban Planning](/toc/communities-and-urban-planning)
 - [Tech and Society](/toc/tech-and-society)
 - [Informatics](toc/informatics.md)
+- [Human Computer Interaction](toc/hci.md)

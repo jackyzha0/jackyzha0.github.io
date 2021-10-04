@@ -27,7 +27,7 @@ Infrastructure should be
     -   is thought ever new? or is it recombinatorial
         -   neuroplasticity of culture and language?
 
-Do we need to define [infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
+Do we need to [define infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
 
 > Thus, infrastructure design requires a more subtle approach: **creating the right incentives, environments, and dependencies to encourage well-being while preserving user autonomy**.
 
@@ -42,7 +42,8 @@ Soft infrastructure is upheld as a social protocol, an institution whose mainten
 
 ## Moderation
 https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/
-"So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
+
+> "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 
 This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots democracy and freedom. -> did this arise out of the [counterculture](thoughts/books/fctc.md)?
 

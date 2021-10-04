@@ -18,6 +18,7 @@ date: 2021-07-14T15:06:10-04:00
 ### AI/ML
 - [Bias Bug](/posts/bias-bug)
 - [Data Distributions](thoughts/data-distributions.md)
+- [Labels and Quantization](/thoughts/labels-and-quantization)
 
 ### Building & Maintaining Virtual Worlds
 - [Digital Permanence](/thoughts/digital-permanence)
@@ -26,7 +27,3 @@ date: 2021-07-14T15:06:10-04:00
 - [Fault Tolerance](/thoughts/fault-tolerance)
 - [Virtual Worlds](thoughts/virtual-worlds.md)
 - [Tragedy of the Commons](thoughts/tragedy-of-the-commons.md)
-
-### Computers and Society
-- [Labels and Quantization](/thoughts/labels-and-quantization)
-- [HCI](thoughts/hci.md)
