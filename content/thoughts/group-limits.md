@@ -39,3 +39,12 @@ Does social capacity differ across different types of social interactions? e.g. 
 I feel there are dangers of large groups, especially within research. Larger groups lead to more bureaucracy and being ok with the average -- an effect of too many cooks in the kitchen. This leads to ideas that are at the middle of the [distribution](thoughts/data-distributions.md) and tends to discourage more radical, out-of-distribution thinking and research
 
 Related: [a new DARPA](thoughts/a-new-darpa.md), [community perception](thoughts/communities.md)
+
+## Scalability
+Why do we feel the need to find the billion-person version of communities? Is this just the [Silicon Valley](thoughts/articles/unrepeatable-miracle-of-silicon-valley.md) question of scale?
+
+Is human intimacy scalable? I think not.
+
+What if the events were universally accessible but instead of serving everyone, serve those who opt-in to participate more? Cultivation > moderation
+
+If we remove misaligned incentives and less people come, then tbh that's better, that eliminates the people you didn't want in the first place

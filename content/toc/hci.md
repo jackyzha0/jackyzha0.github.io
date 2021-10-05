@@ -31,20 +31,10 @@ _Always ask:_ who are my users, and what are their needs?
 - [The Psychopathology of Everyday Things](thoughts/articles/the-psychopathology-of-everyday-things.md)
 - [Human Centered Design (HCD)](thoughts/human-centered-design.md): contains design concepts
 - [Double Diamond Model of Design](thoughts/double-diamond-design.md)
+- [Design Process](thoughts/design-process.md)
 - [Interaction Failures](thoughts/interaction-failures.md)
 - [Design Goals](thoughts/design-goals.md)
-
-## User Involvement
-The underlying aim is to involve members of the public in helping them make a change in their lives where technology is often viewed as an integral part of the process. This is the point of [participatory design](thoughts/books/design-justice.md).
-
-The main principles of user-centered design are as follows:
-1. Early focus on users and tasks
-2. Empirical measurement
-3. Iterative design
-
-Benefits:
-1. Expectation management: ensuring that the users' expectations of the new product are realistic and no surprises for users when the product arrives.
-2. Ownership: users who are involved and feel that they have contributed to a product's development are more likely to feel a sense of ownerships toward it and support its user
+- [User Involvement](thoughts/user-involvement.md)
 
 ## Data Recording
 - What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.
@@ -72,18 +62,30 @@ Triangulation: the investigation of a phenomenon from at least two different per
 ### Interviews
 > A conversation with a purpose
 
-1. Open-ended/unstructured -> can be time-consuming but can also produce rich insights
-2. Semi-structured -> plans basic script but probes interviewee until no new relevants info is there
-3. Structured -> predetermined questions like a questionnaire, study is standardized
+Good for exploring issues, learning more about tasks, and getting inside user's head.
+
+Criteria for good interview:
+    -   Before:
+        -   get questions right → should support goals, should be easy to understand/answer
+        -   be organized → check equipment, have necessary docs
+        -   run pilots
+    -   During:
+        -   structure time
+        -   give participants context
+        -   use props and visuals → easier to show than tell
+    -   Listen well throughout!
+
+1. Open-ended/unstructured -> exploratory and similar to conversation. Can be time-consuming but can also produce rich insights
+2. Semi-structured -> plans basic script with both closed and open questions but probes interviewee until no new relevants info is there
+3. Structured -> predetermined questions like a questionnaire, study is standardized (same questions with each participant)
 4. Group interviews -> 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences
 
 Asking questions like "Can you tell me a bit more about..." is called probing
 
 #### Planning
-1. Developing Interview Questions. Open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions
-2. Running the Interview. Before starting, make sure that the goals of the interview have been explained to the interviewee and that they are willing to proceed. Listen more than talk, repond with sympathy but without bias, and to appear to enjoy the interview.
+When developing Interview Questions, keep in mind open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions
 
-A lot of decisions to make too
+A lot of decisions to make:
 - Choosing a framework
 - Level of participation to adopt
 - How to make a record of the data
@@ -101,7 +103,27 @@ Ethnography: the description of the customs of people and cultures. A distinguis
 | Direct observation in a controlled environment | Captural detail of individuals | Quantitative and qualitative | User can focus on task without interruption | Data may be of limited use due to artificial environment |
 | Indirect observation | Observing users in natural environment without distraction | Quantitative (logging) and qualitative (diary) | Can be long due to automative recording | Large amounts of data implies need for tools to support analysis, participants may exaggerate memories |
 
-#### Observation
+#### Running the interview
+Before starting, make sure that the goals of the interview have been explained to the interviewee and that they are willing to proceed. Listen more than talk, repond with sympathy but without bias, and to appear to enjoy the interview.
+
+1.  **Intro**
+    -   interviewer introduces themselves
+    -   explain why you're doing the interview
+    -   reassure interviewee re: ethical issues
+    -   ask interviewee if they mind being recorded
+2.  **Warm-up session**
+    -   easy, nonthreatening questions
+3.  **Main session**
+    -   questions presented in logical sequence
+    -   probing questions at the end
+    -   order may vary in semi-structured interview
+4.  **Cooling-off period**
+    -   easy questions to defuse any tension
+5.  **Closing session**
+    -   interviewer thanks interviewee
+    -   switch off recorder or put notebook away
+
+### Observation
 Users may be observed directly by the investigator as they perform their activities or indirectly through records of the activity that are studied afterward.
 
 Observation can also result in a lot of data to sift through and can be complicated to do well than at firs appreciated. As such, a clearly stated goal is important to have focus for an observation session.
@@ -109,7 +131,12 @@ Observation can also result in a lot of data to sift through and can be complica
 Example frameworks:
 - The person: Who is using the technology at any particular time?
 - The place: Where are they using it?
-- The thing: What are they doing with it?
+- The thing: What **are they doing with it?
+
+3 common approaches
+1. Simple observation: user is given a task, the evaluator just watches. This gives no insight into users' decision process
+2. Think aloud: 
+3. Co-discovery learning
 
 ## CPSC [344](https://www.students.cs.ubc.ca/~cs-344/current-term/) Ethics Code
 - no contentious questions

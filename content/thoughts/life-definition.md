@@ -3,6 +3,15 @@ title: "Life Definition"
 date: 2021-07-02T21:38:52-04:00
 ---
 
+# Spinoza
+[Source](https://www.theguardian.com/commentisfree/belief/2011/mar/14/spinoza-understanding-emotions)
+
+Every individual thing has *conatus*: it strives to persevere in its existence. In order to live, we need power, or energy, and because various external influences can diminish our power, we seek not only to sustain this power, but to increase it.
+
+The mind's power of thought, and the body's power of movement – fluctuates over time. Joy arises with the feeling of an increase in power, and the emotion of sadness when power is diminished.
+
+A very hedonistic approach to life.
+
 # Matthews
 ## Ozma of oz
 -   Tik-Tok → "Thinks, Speaks, Acts, and Does Everything but Live"
