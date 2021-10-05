@@ -385,4 +385,6 @@ Example features include
 For this implementation, we consider 8 discrete orientations ($\theta$) and 3 scales ($r$)
 
 ### Features
-Corners
+Corners are locally distinct 2D image features that (hopefully) correspond to a distinct position on a 3D object of interest in the scene.
+
+Cannot be an edge as estimation of a location along an edge is close to impossible (the aperture problem)
