@@ -64,19 +64,3 @@ How do we draw the line between an end product and infrastructure? How should in
 https://stratechery.com/2021/moderation-in-infrastructure/
 
 The benefit of retroactive correction in some instances—imagine fixing a typographical error in the proportions of a recipe, or blocking out someone’s phone number shared for the purposes of harassment—should be contextualized against the prospect of systemic, chronic demands for revisions by aggrieved people or companies single-mindedly demanding changes that serve to eat away at the public record.
-
-
-## Actors and Agents
-Actor: anyone, human or nonhuman, who engages in intentional action shaped by internalized expectations of how it will be perceived
-
-## Black boxes
-> Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and ouputs and not on its internal complexity. Thus, paradoxically, the more science and technology succeed, the more opaque and obscure they become
-
-If we start to disect the black box and understand that it
-- is made by people
-- substitutes their actions
-- is a permanent delegate of the work
-- shapes human action by prescribing what sorts of people can pass through it
-
-Then this is called "opening the black box" or "infrastructural inversion" for larger scale infrastructures
-

@@ -15,6 +15,15 @@ The document as an 'information container', but also a 'thing' which documents a
 
 There are inherent tradeoffs in an organizing system, what is the goal? What are we optimizing for?
 
+A set of resources is then transformed by an organizing system when the resources are described or arranged to enable interactions with them.
+
+### Goals
+1. Storing
+2. Retrieving
+3. Minimizing effort to find (increased scale means increased difficulty of finding things)
+
+Not all users have the same goals! How do we address this?
+
 ### Three Tiers of Organizing Systems
 1. User interface or presentation components where users or other applications interact with the data
 2. Business logic or functions that use the data
@@ -24,6 +33,14 @@ There are inherent tradeoffs in an organizing system, what is the goal? What are
 
 ### Design Heuristics
 Sensemaking: organizing to derive meaning from experience by fitting new events of observations into what they already know
+
+Questions to ask
+1. What? What is orgnaized, what type of resource or information object?
+2. Why? What are the goals of the system?
+3. How Much? How many different organization schemes are used?
+4. When? When is the organization of the resource imposed? At the creation of the resource?
+5. How, and by whom? Who is doing the organizaiton? Professional indexers? Algorithms?
+6. Where? Can be abstract ideas like the cloud or physical loike infrastructures and build environments.
 
 General organizing principles
 1. We organize collections of resources using the properties that are easiest to perceive, or whose values vary the most among the items in the collection

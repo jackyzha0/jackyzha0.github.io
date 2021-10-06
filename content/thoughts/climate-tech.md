@@ -9,6 +9,15 @@ Not just about investing in carbon removal or carbon offsets also about investin
 
 Related: [degrowth](thoughts/degrowth.md)
 
+## Measuring Offsets
+> You can not mitigate what you can not measure.
+
+The Greenhouse Gas (GHG) Protocol consists of "Scopes", each of which has multiple sub categories. In order to calculate our current carbon footprint, we looked into the emission categories within Scope 1, Scope 2, and Scope 3.
+
+- Scope 1: Direction Emissions. These are the business activities the company performs that directly create emissions.
+- Scope 2: Indirect Emissions. These consist of the purchased electricity, steam, heating, and cooling for own use.
+- Scope 3: Indirect Emissions. Includes goods and services, goods, fuel, transportation distribution, and business travel.
+
 ## Investment Facts!
 [Source](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
 
@@ -63,6 +72,14 @@ But there's not a lot of incentive for local residents
 Gerrymandering but for trees? A lot of the offset calculations are based off of regional averages for carbon, projects can then take advantage of 'unusually high' concentration areas with certain types of trees to game the system and gain more credits than they should have.
 
 This could actually benefit indigenous tribes because of their more conservative approach to logging -- in fact, offsets can enable tribes to reduce logging. However, "some tribal members are [deeply uncomfortable](https://www.newyorker.com/news/dispatch/how-carbon-trading-became-a-way-of-life-for-californias-yurok-tribe) with the idea of selling offsets to companies like this even if they are legitimate, fearing they’re effectively profiting from pollution."
+
+### Good Offsets?
+[Source](https://negative.sanctuary.computer/offsetting)
+
+1. Transparency: any individual credits can not be purchased more than once
+2. Permanence: credits should not be liable to be undone
+3. Additionality: by facilitating this activity, more carbon was drawn down than would have been
+4. Monitoring and Verification: transparent and public processes for ensuring captured carbon stays where it should
 
 ## Neutral Infrastructure
 [Source](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and other [source](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
