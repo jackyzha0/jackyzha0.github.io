@@ -5,8 +5,6 @@ date: 2021-10-08
 
 [Source](https://kernel.community/en/learn/module-0/money-language)
 
-??todo link back to this
-
 Money is old. "We have yet to discover a civilization that didn't have money. So, we know it's at least as old as civilization."
 
 Money is a language through which to communicate value. Then, was does this mean for [decentralization](thoughts/decentralization.md)? No one should control the expression of economic value in exactly the same way that no one controls the meaning of words: they are arrived at consensually through common use.

@@ -3,8 +3,6 @@ title: "Trust"
 date: 2021-10-08
 ---
 
-??todo link back to this
-
 [Source](https://kernel.community/en/learn/module-0/trust)
 
 > Trust is only meaningful once we have fully understood how people can lie.
