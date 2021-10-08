@@ -68,3 +68,7 @@ Do we care more about technological progress or social progress? We can measure 
 Happiness isn’t necessarily highest in the places with the most technological progress
 
 Is it wrong to try to measure progress in terms of people's happiness? What about the hedonic treadmill, will we eventually just regress to a new 'normal'?
+
+## Hedonic Treadmill
+> "Improvement in my life — should I not desire it or should I not be in need of improvement? I really want to improve. But it’s precisely because I yearn for it that I’m afraid of remedies that are worse than the disease." (Van Gogh, 1879)
+

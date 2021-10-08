@@ -25,5 +25,6 @@ date: 2021-07-14T15:29:51-04:00
 - [GitHub's move to CodeSpaces](https://github.blog/2021-08-11-githubs-engineering-team-moved-codespaces/)
 ### Infra
 - [Uganda's January 13, 2021 Internet Shut Down](https://blog.cloudflare.com/uganda-january-13-2021-internet-shut-down/)
+- [Notion Postgres Sharding](https://www.notion.so/blog/sharding-postgres-at-notion)
 ### Misc
 - [Computational Metaphors in Documentation](https://jvns.ca/blog/2020/05/08/metaphors-in-man-pages/)

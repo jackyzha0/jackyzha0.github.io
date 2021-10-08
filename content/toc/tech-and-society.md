@@ -23,7 +23,7 @@ date: 2021-07-14T15:06:10-04:00
 ### Building & Maintaining Virtual Worlds
 - [Digital Permanence](/thoughts/digital-permanence)
 - [Ephemereal Content](/thoughts/ephemereal-content)
-- [Web3](thoughts/web3.md)
+- [Web3](toc/web3.md)
 - [Fault Tolerance](/thoughts/fault-tolerance)
 - [Virtual Worlds](thoughts/virtual-worlds.md)
 - [Tragedy of the Commons](thoughts/tragedy-of-the-commons.md)

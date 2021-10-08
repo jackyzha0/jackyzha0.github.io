@@ -23,7 +23,7 @@ Crypto still needs to be converted to fiat? Can we have a fully crypto economy?
 
 Crypto has managed to build infrastructures that exist outside the nation state, but we still live our lives embedded in places, communities, and nations. How do we bridge that gap?
 
-Related: [Web3](thoughts/web3.md)
+Related: [Web3](toc/web3.md)
 
 ## Physical Touch
 > "One concern, though, is that some social skills may not develop as effectively when so many interactions exist online. We learn how we are and aren’t supposed to act by observing others and then having opportunities to act out our observations ourselves."

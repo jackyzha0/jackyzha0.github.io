@@ -3,6 +3,8 @@ title: "Proof of Work"
 date: 2021-08-09T21:17:29-04:00
 ---
 
+Miners solve cryptographic problems in order to earn the right to add a new block to the chain where the fastest miner gets the rights to add along with token rewards.
+
 ## Basis
 Cryptocurrencies use a distributed ledger (blockchain) to track all transactions in a publicly agreed upon manner.
 

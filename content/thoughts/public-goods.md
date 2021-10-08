@@ -34,7 +34,7 @@ How can we incentivize creation of public goods? Maybe through [quadratic fundin
 
 "**A public can be identified and classified by** **_shared problems_**, the extent to which they are aware of such problems, and the extent to which they do something about it." Similarly, how do we define a [community](thoughts/communities.md)?
 
-Crypto and [web3](thoughts/web3.md) overcome a lot of the bariers of web1 and web2, namely the inability to satisfy inalienable access to 'public' resources. The internet's so-called "[public spaces](thoughts/digital-commons.md)" are nothing like our cities' public parks. They are merely someone else's private server, where access can be revoked at will.
+Crypto and [web3](toc/web3.md) overcome a lot of the bariers of web1 and web2, namely the inability to satisfy inalienable access to 'public' resources. The internet's so-called "[public spaces](thoughts/digital-commons.md)" are nothing like our cities' public parks. They are merely someone else's private server, where access can be revoked at will.
 
 Public also means creating venues in which people could begin to identify themselves as part of a collective whole.
 
@@ -47,7 +47,7 @@ These 'goods' exemplify a set of shared values within the 'public'.
 
 Are there concepts of 'free riders' with public goods? What about [tragedy of the commons](thoughts/tragedy-of-the-commons.md)? "It is clearly in the interest of society to promote the creation and consumption of public goods—be they vaccines, public libraries, or open source code"
 
-## [Web3](thoughts/web3.md)
+## [Web3](toc/web3.md)
 https://otherinter.net/research/positive-sum-worlds/
 
 Crypto protocols are one of the most compelling novel institutional forms, specifically deriving from their "public" qualities

@@ -288,7 +288,7 @@ To do this, create a Gaussian pyramid and take the difference between one pyrami
 At each level, retain the residuals (difference between smoothed image and normal image) instead of the blurred images themselves.
 
 Constructing the pyramid, we repeat until min resolution reached:
-1. Filter
+1. Blur
 2. Compute Residual
 3. Subsample
 

@@ -22,4 +22,4 @@ What about economies within these metaverses? These feel important for compensat
 
 "Financialization is only a means to better interactions, lives, and communities — and it should never limit or exploit those ends." [Source](https://reboothq.substack.com/p/metaverse)
 
-How related is this to all of the financial incentives within [web3](thoughts/web3.md) in particular and how rooted in money the whole crypto world is?
+How related is this to all of the financial incentives within [web3](toc/web3.md) in particular and how rooted in money the whole crypto world is?

@@ -15,7 +15,7 @@ Now with all that stuff out of the way, here's the juicy list you've been waitin
 
 ## 2021
 
-* Ghosted by Contrary Build and Contrary Fellowship
+* Ghosted by both Contrary Build and Contrary Fellowship
 
 * Couldn't work up the courage to apply to the [Maintainers Summer Fellowship](https://themaintainers.org/summer-fellow)
 	* I really love the work that the Maintainers org is doing and this internship would have combined so many things that I'm interested in and passionate about: maintenance, writing, software, infrastructure, etc. I just couldn't convince myself that I wouldn't have made a fool of myself by applying :(
@@ -43,7 +43,7 @@ Now with all that stuff out of the way, here's the juicy list you've been waitin
 * Rejected from a lot of grants and incubator programs for reflect
   * We took the shotgun approach by applying to as many grants as possible but ended up realizing that were just applying to grants for the sake of applying, rather than having a good reason for why. It was a really good catalyst to reflect (pun intended) on what we wanted reflect to be and what direction to take it in the future.
 
-* Rejected by DeepMind
+* Rejected by DeepMind (and 67 of the 70 companies I applied to)
   * This position rejection hurt more than most &mdash; even if it was swift and abrupt. DeepMind is a company that has played a huge part in shaping my interest of the intersection of machine learning, ethics, and philosophy, so you can imagine that the rejection email was not a pleasant sight to see in my inbox.
 
 ## 2019

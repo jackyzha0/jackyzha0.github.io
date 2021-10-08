@@ -11,12 +11,13 @@ A personal [digital garden](posts/digital-gardening.md) and hub for all my rambl
 You can search my entire garden by pressing `/` or hitting the little search icon in the top left.
 
 ### Contents
-- [Notes on articles and books](/toc/readings) 
-- [Cognitive Sciences](/toc/cognitive-sciences)
-- [Education and Epistemology](/toc/education-and-epistemology)
 - [Technical](/toc/technical)
 - [Personal](/toc/personal)
+- [Notes on articles and books](/toc/readings) 
+- [Education and Epistemology](/toc/education-and-epistemology)
 - [Communities and Urban Planning](/toc/communities-and-urban-planning)
 - [Tech and Society](/toc/tech-and-society)
+- [Cognitive Sciences](/toc/cognitive-sciences)
 - [Informatics](toc/informatics.md)
 - [Human Computer Interaction](toc/hci.md)
+- [Web 3](toc/web3.md)

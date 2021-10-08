@@ -10,6 +10,7 @@ Crypto systems are interesting, they are "decentralized, jurisdictionless entiti
 The cyberpunkspirit: the basic property of which adverserial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Index
+- [Blockchain](thoughts/blockchain.md)
 - [Decentralization](thoughts/decentralization.md)
 - [Public Goods](thoughts/public-goods.md)
 - [DAOs](thoughts/dao.md)
@@ -18,8 +19,14 @@ The cyberpunkspirit: the basic property of which adverserial conflict continues 
 - [Proof of work](thoughts/proof-of-work.md)
 - [Consensus](thoughts/consensus.md)
 
+### Kernel Curriculum
+- [Trust](thoughts/trust.md)
+- [Money](thoughts/money.md)
+
 ## Web History
 https://ethereum.org/en/developers/docs/web2-vs-web3/ and https://blockchainhub.net/web3-decentralized-web
+
+We are in the process from changing platforms to _protocols_; the difference being that, in protocols, there is no central appeal.
 
 ### Web1,  Information Economy [1980s to 2000s]
 Internet services were built on open protocols that were controlled by the internet community. Develops could generally rest assured that these protocols wouldn't change much because they were commonly agreed on by the community. 

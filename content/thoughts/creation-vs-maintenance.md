@@ -63,4 +63,4 @@ Is maintenance just the battle against the [tragedy of the commons](thoughts/tra
 
 Who are all the maintainers behind the thousands of libraries we depend on each day? Is maintenance a form of [Ghost Work](thoughts/articles/ghost-work.md)?
 
-Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public-goods.md))
+Can we use [web3](toc/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public-goods.md))

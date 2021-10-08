@@ -20,7 +20,7 @@ Together, these platforms form digitally native social graphs based on what peop
 ## Decentralized Identities
 [Source](https://g.mirror.xyz/17-QuzdJJ0n-WGtuFiSXpH13-F3XCBgiPYCRtKANwc8)
 
-Is it possible to have pseudonymous identities in decentralized [web3](thoughts/web3.md) systems? Or does it rely purely on natural human recognition of user handles? What about wallet addresses?
+Is it possible to have pseudonymous identities in decentralized [web3](toc/web3.md) systems? Or does it rely purely on natural human recognition of user handles? What about wallet addresses?
 
 Web3 promises participants 'persistant pseudonyms' that  have protective functions (e.g. not revealing offline identities, but also allows holders to participate in economic activity and  hold goods while allowing them to hide undesirable traits that may lead to oppression)
 
