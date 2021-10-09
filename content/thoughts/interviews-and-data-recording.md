@@ -20,12 +20,12 @@ Triangulation: the investigation of a phenomenon from at least two different per
 3. Triangulation of theories: use of different theoretical frameworks through which to view data
 4. Methodological triangulation: employ different data gathering techniques
 
-### 3 Methods for Data Recording
+## 3 Methods for Data Recording
 1. Notes + Photographs -> least technical and most flexible way of recording data, but can be difficult to capture the right highlights.
 2. Audio + Photographs -> less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.
 3. Video -> highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants
 
-### Interviews
+## Interviews
 > A conversation with a purpose
 
 Good for exploring issues, learning more about tasks, and getting inside user's head.
@@ -48,7 +48,7 @@ Criteria for good interview:
 
 Asking questions like "Can you tell me a bit more about..." is called probing
 
-#### Planning
+### Planning
 When developing Interview Questions, keep in mind open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions
 
 A lot of decisions to make:
@@ -69,7 +69,7 @@ Ethnography: the description of the customs of people and cultures. A distinguis
 | Direct observation in a controlled environment | Captural detail of individuals | Quantitative and qualitative | User can focus on task without interruption | Data may be of limited use due to artificial environment |
 | Indirect observation | Observing users in natural environment without distraction | Quantitative (logging) and qualitative (diary) | Can be long due to automative recording | Large amounts of data implies need for tools to support analysis, participants may exaggerate memories |
 
-#### Running the interview
+### Running the interview
 Before starting, make sure that the goals of the interview have been explained to the interviewee and that they are willing to proceed. Listen more than talk, repond with sympathy but without bias, and to appear to enjoy the interview.
 
 1.  **Intro**
@@ -89,7 +89,7 @@ Before starting, make sure that the goals of the interview have been explained t
     -   interviewer thanks interviewee
     -   switch off recorder or put notebook away
 
-### Observation
+## Observation
 Users may be observed directly by the investigator as they perform their activities or indirectly through records of the activity that are studied afterward.
 
 Observation can also result in a lot of data to sift through and can be complicated to do well than at firs appreciated. As such, a clearly stated goal is important to have focus for an observation session.
@@ -104,11 +104,11 @@ Example frameworks:
 2. Think aloud: subjects asked to say what they are thinking/doing. However, its hard to talk while concentrating and thinking may alter the way people naturally perform the task.
 3. Co-discovery learning: two people work together on a task and normal conversation is monitored.
 
-#### Degree of Participation
+### Degree of Participation
 1. Passive Observer: observer who adopts an approach at the outsider end; does not take part in the study environment at all
 2. Participant Observer: adopts an approach at the insider end; becomes a member of the group being studied
 
-#### Coding Sheet
+### Coding Sheet
 > A data recording instrument in which a list of itemized coding options are structured
 
 This standardizes observation practices which makes it more objective.
@@ -120,7 +120,7 @@ Consider:
 	-   what would potentially be an interesting finding from this particular style?
 	-   e.g. for think-aloud, it might be good to record action vs spoken comments
 
-### Questionnaire
+## Questionnaire
 Survey vs Questionnaire: the questionnaire is a *part* of the survey. The questionnaire is just the concrete thigns you're asking.
 
 Pros
@@ -135,7 +135,7 @@ Cons
 
 A questionnaire is good when motivation is high enough without anyone else present. If persuasion is needed, a structured interview is probably better
 
-#### Designing a Questionnaire
+### Designing a Questionnaire
 Keep in mind
 - what info is sought?
 - how would you analyze results?
@@ -153,27 +153,24 @@ Questions
 	-  traingulation (ask multiple questions about the same matter)
 	-  piloting
 
-**Types of questions**
-
-Open-ended (hard to analyze rigorously)
-- 
-
-Closed (easily analyzed but can be hard to interpret if not well-designed)
--  checkboxes and ranges
-	-   range of answers to demo questions is predictable: offer a predefined list
-	-   interval doesn't have to be equal in all cases, depends on what you want to know
-	-   mention how many boxes to check, be consistent with ascending/descending order
--   likert and semantic differential scale
-	-   used for measuring opinions, attitudes, and beliefs
-	-   widely used for evaluating user satisfaction
-	-   likert: a five, seven, or nine-point agreement scale used to measure respondents' agreement with various statements
-	-   semantic differential scale: rely on choosing pairs of adjectives to explore a range of bipolar attitudes about particular opinions
--   ranked (closed)
-    -   respondent places ordering on items in a list
-    -   useful to indicate preferences
-    -   forced choice
--   multi-choice (closed)
-    -   offered choice of explicit responses
+#### Types of questions**
+- Open-ended (hard to analyze rigorously)
+- Closed (easily analyzed but can be hard to interpret if not well-designed)
+	-  checkboxes and ranges
+		-   range of answers to demo questions is predictable: offer a predefined list
+		-   interval doesn't have to be equal in all cases, depends on what you want to know
+		-   mention how many boxes to check, be consistent with ascending/descending order
+	-   likert and semantic differential scale
+		-   used for measuring opinions, attitudes, and beliefs
+		-   widely used for evaluating user satisfaction
+		-   likert: a five, seven, or nine-point agreement scale used to measure respondents' agreement with various statements
+		-   semantic differential scale: rely on choosing pairs of adjectives to explore a range of bipolar attitudes about particular opinions
+	-   ranked (closed)
+		-   respondent places ordering on items in a list
+		-   useful to indicate preferences
+		-   forced choice
+	-   multi-choice (closed)
+		-   offered choice of explicit responses
 
 Checklist
 -   think about ordering of questions → impact can be influenced by order
@@ -183,3 +180,51 @@ Checklist
 -   think about length → avoid questions that don't address study goals
 -   consider allowing respondents to opt out at different stages especially if long → better to have some than none
 -   think about layout and pacing
+
+## Data and Analysis
+- Subjective: what you were told what happened
+- Objective: what you captured using your senses
+- Quantative: data in the form of numbers or data that can be easily translated into numbers. Focuses on ascertain magnitude, amount, or size of something
+- Qualitative: data in the form of words and images. Focuses on nature of something (themes, patterns, and stories)
+
+Note that quantitative data is not always objective! Subjectivity can come from participants in how they express opinions or from investigators during the data capturing/interpreting/analysis process.
+
+Similarly, it is unfair to try to [quantize](thoughts/labels-and-quantization.md) all qualitative data. This needs justification. Also be wary of translating small populatino sizes into percentages.
+
+### What to focus on
+1. What are the most important needs/tasks to support?
+2. What are the repeated patterns?
+3. Key issues/areas that could be improved
+4. What surprised you?
+5. What is essential/nonessential in implementation
+
+### Steps
+1. Initial reactions or observations (identify patterns, simple numerical analysis like averages, ratios, percentages)
+2. Data cleansing (checking for erroneous entries and anomalies)
+3. Analysis
+
+### Qualitative Analysis
+#### Thematic Analysis
+Themes are a small number of high-level patterns that answer your evaluation questions.
+
+Going from codes (descriptive labels) to categories (grouping imposed on codes) to themes (interpretive patterns). Deductive analysis is just the inverse (starting at themes and arriving at codes)
+
+Do an initial pass to check of internal consistency: make sure themes occur across several or all participants. Then, step back to see if an overarching narrative emerges from the themes. One can them remove themes or look into why there are conflicts.
+
+One way of doing this is using affinity diagrams:
+1.  record each idea/observation/problem/etc on individual card or post-it notes
+2.  look for notes that seem to be related
+3.  sort notes into groups until all used
+    -   sort and resort as necessary
+
+#### Categorizing Data
+-   scheme of data: code the data according to categories
+	-   if analysis frame is chosen beforehand: deductive analysis
+	-   if study is explanatory and it is important to let themes emerge from data: inductive analysis
+-   can then analyze with appropriate methods like counting averages # of problems or identifying recurring patterns
+
+### Critical Incident Analysis
+Helps identify significant subsets of data for more detailed analysis.
+
+This is not about summarizing all incidients, more like finding gold nuggets. Incidents need not be bad all the time, can be either desirable or undesirable.
+

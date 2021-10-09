@@ -32,25 +32,28 @@ Needs are problems that people have. Tasks are what they need to do.
 ## Concepts
 - [The Psychopathology of Everyday Things](thoughts/articles/the-psychopathology-of-everyday-things.md)
 - [Human Centered Design (HCD)](thoughts/human-centered-design.md): contains design concepts
-- [Double Diamond Model of Design](thoughts/double-diamond-design.md)
+- [Double Diamond Model of Design](thoughts/double-diamond-design.md): contains requirements
 - [Design Process](thoughts/design-process.md)
 - [Interaction Failures](thoughts/interaction-failures.md)
 - [Design Goals](thoughts/design-goals.md)
 - [User Involvement](thoughts/user-involvement.md)
 - [Interviews and data recording](thoughts/interviews-and-data-recording.md)
+- [Task-centered Design](thoughts/task-centered-design.md)
 
-## CPSC [344](https://www.students.cs.ubc.ca/~cs-344/current-term/) Ethics Code
-- no contentious questions
-- no offensive materials
-- all subjects will be competent and over 19 (UBC students 17 and over can also be considered emancipated for the studies)
-  - individuals who can fully understand what they are consenting to; and
-  - individuals who are not vulnerable in any way relative to the student researchers.
-- no public display of identifiable subject images
-- no physical risks
-- no highly personal/medical data
-- no identifying data sent out of Canada, all data storage servers located in Canada
+## [Course](https://www.students.cs.ubc.ca/~cs-344/current-term/) Specific
+### Ethics Code
+-   Participants
+    -   must be **19 or over,** or **if UBC student, 17 or over**
+    -   must be able to understand what they're consenting to
+    -   not vulnerable relative to the student researchers
+-   Risk
+    -   no contentious questions or offensive materials
+    -   no physical risks
+    -   no personal data
+    -   no personal imagery shown publicly
+    -   all data kept in Canada
 
 Consent will be obtained explicitly in one of the following ways:
-1. by returning a completed questionnaire (questionnaireonly consent)
+1. by returning a completed questionnaire (questionnaire only consent)
 2. through the participant signing a consent form (general consent), or
 3. by replying affirmatively to an email that contains the consent form text (general consent).
