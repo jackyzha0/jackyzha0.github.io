@@ -400,7 +400,7 @@ As a stats reminder, covariance is the *direction* of the correlation. The close
 When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).
 
 1. Compute image gradients over small region
-2. Compute covariance matrix ![Covariance Matrix](thoughts/images/covmat.png) (essentially fitting a quadratic to the gradients over the small image patch $P$)
+2. Compute covariance matrix ![Covariance Matrix](/thoughts/images/covmat.png) (essentially fitting a quadratic to the gradients over the small image patch $P$)
 4. Computer eigenvectors and eigenvalues of the covariance matrix.
 5. Use threshold on eigenvalues to detect corners ($>0$ is a corner)
 
@@ -408,7 +408,7 @@ We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are 
 
 As $C$ is symmetric, we have 
 
-![Covariance matrix as ellipse equation](thoughts/images/covellipse.png)
+![Covariance matrix as ellipse equation](/thoughts/images/covellipse.png)
 
 Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$
 
