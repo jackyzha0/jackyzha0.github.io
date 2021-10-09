@@ -388,3 +388,45 @@ For this implementation, we consider 8 discrete orientations ($\theta$) and 3 sc
 Corners are locally distinct 2D image features that (hopefully) correspond to a distinct position on a 3D object of interest in the scene.
 
 Cannot be an edge as estimation of a location along an edge is close to impossible (the aperture problem)
+
+### Autocorrelation
+Correlation of the image (distribution of pixel values) with itself. At each pixel, compute its partial derivative w.r.t. either the $x$ or the $y$ axis, $I_y = \frac{\partial I}{\partial y}, I_x = \frac{\partial I}{\partial x}$.
+
+Windows on an edge will have autocorrelation that falls of slowly in the direction of the edge but rapidly orthogonal to the edgge. Windows on a corder will have autocorrelation that falls off rapidly in all directions.
+
+#### Harris Corner Detection
+As a stats reminder, covariance is the *direction* of the correlation. The closer the covariance is to 1, the closer it is to a perfect positive correlation. -1 implies perfect negative correlation.
+
+When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).
+
+1. Compute image gradients over small region
+2. Compute covariance matrix ![Covariance Matrix](thoughts/images/covmat.png) (essentially fitting a quadratic to the gradients over the small image patch $P$)
+4. Computer eigenvectors and eigenvalues of the covariance matrix.
+5. Use threshold on eigenvalues to detect corners ($>0$ is a corner)
+
+We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix).
+
+As $C$ is symmetric, we have 
+
+![Covariance matrix as ellipse equation](thoughts/images/covellipse.png)
+
+Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$
+
+Then, this is what the eigenvalues tell us:
+- Case 1 (both $\lambda_1$ and $\lambda_2$ are close to zero): flat region
+- Case 2 ($\lambda_2$ is much greater than $\lambda_1$): horizontal edge
+- Case 3 ($\lambda_1$ is much greater than $\lambda_2$): vertical edge
+- Case 4 ($\lambda_1$ are both rather large $\lambda_2$): corner
+
+To threshold, we can pick a function
+1. Harris & Stephens: $\lambda_1 \lambda_2 - \kappa (\lambda_1 + \lambda_2)^2$ which is equivalent to $\det(C) - \kappa \textrm{trace}^2(C)$. $\kappa$ is usually 0.4 or 0.6.
+2. Kanade & Tomasi: $\min(\lambda_1, \lambda_2)$
+3. Nobel: $\frac{\det(C)}{\textrm{trace}(C)+\epsilon}$
+
+#### Linear Algebra Aside/Review
+Given a square matrix $A$, a scalar $\lambda$ is called an **eigenvalue** of $A$ if there exists a nonzero vector $v$ that satisfies
+
+$$Av = \lambda v$$
+
+The vector $v$ is called an eigenvector for $A$ corresponding to the eigenvalue $\lambda$. The eigenvalues of $A$ are obtained by solving $\det(A-\lambda I) = 0$
+
