@@ -13,9 +13,14 @@ We organize
 
 The document as an 'information container', but also a 'thing' which documents a thing. Data can be seen as 'elementary observations about properties of objects, events, and their environments'
 
+A set of resources is then transformed by an organizing system when the resources are described or arranged to enable interactions with them.
+
+### Tradeoffs
+> The effectiveness of a system for accessing information is a direct function of the intelligence put into organizing it (Svenonius, 2000)
+
 There are inherent tradeoffs in an organizing system, what is the goal? What are we optimizing for?
 
-A set of resources is then transformed by an organizing system when the resources are described or arranged to enable interactions with them.
+Similar to [research-debt](thoughts/articles/research-debt.md) where there is no effort put into the initial organizational process so the mental burden of retrieving information is much higher.
 
 ### Goals
 1. Storing
@@ -48,3 +53,5 @@ General organizing principles
 3. We put rare or unique resources where we can protect them
 
 Examples of these are 1. alphabetical ordering or 2. chronological ordering
+
+This scoping process is similar to the [double-diamond design](thoughts/double-diamond-design.md) in [HCI](toc/hci.md).

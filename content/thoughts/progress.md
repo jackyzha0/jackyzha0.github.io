@@ -72,3 +72,7 @@ Is it wrong to try to measure progress in terms of people's happiness? What abou
 ## Hedonic Treadmill
 > "Improvement in my life — should I not desire it or should I not be in need of improvement? I really want to improve. But it’s precisely because I yearn for it that I’m afraid of remedies that are worse than the disease." (Van Gogh, 1879)
 
+## A humanistic take
+[Source](https://www.vox.com/future-perfect/22652782/roots-of-progress-jason-crawford)
+
+> Progress is anything that helps human beings live better lives: longer, happier, healthier, in mind, body, and spirit. And more choices about how we want to live our lives: our careers; where we live; if, when, and who we marry; whether to have kids or not. Fundamentally, I judge progress by humanistic standards.

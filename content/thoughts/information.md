@@ -12,7 +12,15 @@ Characteristics
 * Aboutness: tells us about something else
 * Thingness: information is a thing, although perhaps intangible
 
-The study of information in and of itself is a research area too, through [education and epistemology](toc/education-and-epistemology.md)
+The study of information in and of itself is a research area too, through [education and epistemology](toc/education-and-epistemology.md) and the [Information Professions](thoughts/information-professions.md)
+
+### Hierarchy
+In informatics, there exists the concept of an Information Hierarchy, Knowledge Pyramid, or DIKW Hierarchy.
+
+Data is transformed into Information, which is transformed into Knowledge, which is then transformed into Wisdom.
+
+1. Data: raw or elementary observations about properties of objects, events, and their environment
+2. Information: data after aggregation, processing, analyzing, formatting, and organization to add meaning and context
 
 ### w.r.t. Power
 [Source](https://faculty.washington.edu/ajko/books/foundations-of-information/#/power)
@@ -33,3 +41,25 @@ Information identifies us. Each of us leave informational foot prints as we live
 Contrary to Marshall McLuhan’s famous phrase, "the medium is the message", it seems as if the vast majority of the power from information is derived from its meaning and context rather than its medium or method of transmission.
 
 > Of what value is its microprocessor, its memory, and its applications if there is no content to consume and no people to connect with?
+
+### Information Systems
+[Source](https://faculty.washington.edu/ajko/books/foundations-of-information/#/systems)
+
+Information Systems are processes that organize people, technology, and data to allow people to create, store, manipulate, distribute, and access information.
+
+**The Great Library of Alexandria** is one of the largest information systems in modern history. It was built in Alexandria, Egypt, and part of a larger research institution called the Mouseion. The idea behind the library was to be a universal collection of knowledge.
+
+Many influential philosophers worked at the library in the 2nd and 3rd centuries BC, including Euclid (founder of geometry), Homer (author of epic Greek poems), Plato (founder of the first Western university), and Socrates (founder of Western moral philosophy).
+
+Why build the ARPANET (precursor to the internet)?
+1. Explore the area of computer networking research (how to share computing resources)
+2. Sharing resources for research communites (e.g. datasets)
+3. Scaling past the speed of the phoneline (2.4kb/s)
+4. Utility for command and control of various military sites (military-industrial complex)
+
+#### Qualities of information systems
+1. Accuracy: how accurate and truthful is data in the system?
+2. Reliability: how many dependencies does it need? How often do those fail?
+3. Learnability: how many skills do you need to acquire to use it?
+
+> Choosing the best system for a particular task then isn’t just about choosing the latest technology, but carefully understanding the task at hand, and what types of systems might best support
