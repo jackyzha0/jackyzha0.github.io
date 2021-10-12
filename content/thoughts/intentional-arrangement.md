@@ -14,3 +14,15 @@ Can be created by top-down authoritative institutions like libraries, museums, b
 Examples of emergent organization are desire paths, swarm intelligence in local interactions (e.g. ants, bees, fish, etc.), or crowdsourcing. rel: [emergent behaviour](thoughts/emergent-behaviour.md)
 
 Similarly, Adam Smith's "invisible hand" is another example where individuals collectively generate an outcome they did not directly intend but that arose from their separate self-interested actions as they respond to price signals in the marketplace. This is the basis of a lot of multi-agent system reasoning and economics.
+
+Standardization allows interopability -- especially necessary for information systems that serve many people. No two people organize things the same way. No two people have the same requirements for the same information system.
+
+Maintaining organizing systems with long expected lifetimes mean that incremental changes to description vocabularies and classification schemes need to happen over time -- ever when the categories are not always explicit. (rel: [digital-gardening](posts/digital-gardening.md))
+
+### Examples
+#### Enumeration
+Putting the resources into a set without any specification of any properties they might share. Only property that matters is that the resources are in the same set
+
+#### Collocation
+Putting resources in the same location without any additional organization. For a small collection, the proximity-to-use organizing principle is the easiest way to satisfy a requirement to minimize the time to find frequently used resources.
+

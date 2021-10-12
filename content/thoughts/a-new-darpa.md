@@ -3,6 +3,8 @@ title: "A new DARPA"
 date: 2021-08-01T22:10:54-04:00
 ---
 
+> Great hackers tend to clump together (PG, 2004)
+
 Money is power. It dictates what type of research and work gets funded, and who gets to do it. 
 
 It's important to be aware of the incentive structures in place wherever you work (e.g. academia, industry): 80k hours of work in your life, it matters a lot where that goes (voting with labour). 

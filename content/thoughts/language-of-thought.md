@@ -18,7 +18,7 @@ Can we use language as the method of querying memory?
         -   units are arranged in layers
         -   computation happens in parallel
     -   like in a classical machine, [representations](/thoughts/representation) are assigned to connectionist networks by the people who build them
-    -   two types of connectionist representation
+    -   two types of connectionist [representation](thoughts/representation.md)
         -   localist → each unit is assigned a feature as a whole that represents
         -   distributed → state of the network as a whole represents something
             -   often claimed to be one of the distinctive features of connectionism

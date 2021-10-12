@@ -19,6 +19,7 @@ date: 2021-07-14T15:06:10-04:00
 - [Bias Bug](/posts/bias-bug)
 - [Data Distributions](thoughts/data-distributions.md)
 - [Labels and Quantization](/thoughts/labels-and-quantization)
+- [Explainability](thoughts/explainability.md)
 
 ### Building & Maintaining Virtual Worlds
 - [Digital Permanence](/thoughts/digital-permanence)

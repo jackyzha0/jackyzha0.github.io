@@ -47,7 +47,16 @@ Questions to ask
 5. How, and by whom? Who is doing the organizaiton? Professional indexers? Algorithms?
 6. Where? Can be abstract ideas like the cloud or physical loike infrastructures and build environments.
 
-General organizing principles
+When designing an organizing system, it is important to consider domain, scope, and scale.
+
+#### What
+1.  the scope and scale of the collection
+2.  the number and nature of users
+3.  the time span or lifetime over which the organizing system will operate
+4.  the physical or technological environment in which the organizing system is situated
+5.  the relationship of the organizing system to other ones that overlap with it in domain or scope
+
+### General organizing principles
 1. We organize collections of resources using the properties that are easiest to perceive, or whose values vary the most among the items in the collection
 2. We group together resources that we often use together
 3. We put rare or unique resources where we can protect them

@@ -83,7 +83,7 @@ The point is, unless we work to prevent, catch, and deter bias, it will inevitab
 ## What we can do
 > So? What can we, as the next generation, do to help?
 
-First, we need to build a better understanding of how the AI systems we are building work. Through this understanding, we can better trust and, as a result, effectively manage the emerging generation of AI. So, don’t be afraid to learn that programming language you heard about. Read up on how that cool translation algorithm works. 
+First, we need to build a [better understanding](thoughts/explainability.md) of how the AI systems we are building work. Through this understanding, we can better trust and, as a result, effectively manage the emerging generation of AI. So, don’t be afraid to learn that programming language you heard about. Read up on how that cool translation algorithm works. 
 
 Secondly, we need to diversify. Diversify not only in the sense of having better representation in datasets, but in tech. Next time you pitch a new product, or create a new project, ask yourself this:
 
