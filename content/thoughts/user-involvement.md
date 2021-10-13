@@ -1,4 +1,8 @@
-## User Involvement
+---
+title: "User Involvement"
+date: 2021-10-13
+---
+
 The underlying aim is to involve members of the public in helping them make a change in their lives where technology is often viewed as an integral part of the process. This is the point of [participatory design](thoughts/books/design-justice.md).
 
 The main principles of **user-centered design** (Gould and Lewis) are as follows:

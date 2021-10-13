@@ -1,4 +1,8 @@
-## Design Process
+---
+title: "Design Process"
+date: 2021-10-13
+---
+
 This is *different* from the [double diamond-design](thoughts/double-diamond-design.md) model.
 
 1.  Pre design: **understand** the problem
