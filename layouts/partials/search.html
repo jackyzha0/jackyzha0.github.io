@@ -134,7 +134,7 @@
   source.addEventListener('input', (e) => {
     const term = e.target.value
     contentIndex.search(term, {
-      limit: 5,
+      limit: 20,
       depth: 3,
       suggest: true,
     }).then(searchResults => {

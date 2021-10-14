@@ -47,7 +47,7 @@ Questions to ask
 5. How, and by whom? Who is doing the organizaiton? Professional indexers? Algorithms?
 6. Where? Can be abstract ideas like the cloud or physical loike infrastructures and build environments.
 
-When designing an organizing system, it is important to consider domain, scope, and scale.
+Similar to the questions in the HCI [design process](thoughts/design-process.md). When designing an organizing system, it is important to consider domain, scope, and scale.
 
 #### What
 1.  the scope and scale of the collection
