@@ -18,10 +18,18 @@ The cyberpunkspirit: the basic property of which adverserial conflict continues 
 - [Proof of stake](thoughts/proof-of-stake.md)
 - [Proof of work](thoughts/proof-of-work.md)
 - [Consensus](thoughts/consensus.md)
+- [Play](thoughts/play.md)
 
 ### Kernel Curriculum
+#### Module 0
 - [Trust](thoughts/trust.md)
 - [Money](thoughts/money.md)
+#### Module 1
+- [Meaning](thoughts/meaning.md)
+- [Value](thoughts/value.md)
+- [Security](thoughts/security.md)
+- [Understanding Ethereum](thoughts/ethereum.md)
+- [The promise of the Blockchain](thoughts/blockchain.md)
 
 ## Web History
 https://ethereum.org/en/developers/docs/web2-vs-web3/ and https://blockchainhub.net/web3-decentralized-web

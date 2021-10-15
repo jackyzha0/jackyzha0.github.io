@@ -14,3 +14,6 @@ This feels like its missing an important step in the process: trusting the mediu
 Related: [game theory and trust](thoughts/game-theory.md)
 
 > To dream up important ideas you must think like an idealist; to build systems that will live up to those dreams, you must think like an adversary.
+
+### Money as Faith
+What you believe informs what you pay attention to and how you act, which define what you vest value in.
