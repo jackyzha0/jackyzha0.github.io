@@ -8,6 +8,10 @@ draft: true
 
 been a while since I wrote about [digital gardening](posts/digital-gardening.md)
 
+things i've learned
+- name things verbs or nouns to make it easier to link
+- better distinguish between source and thoughts
+
 less so a well-kempt, more so a mess of entangled growth
 its not because i dont like order but because chaos and entropy is good for new ideas
 
