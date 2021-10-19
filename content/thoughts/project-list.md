@@ -3,10 +3,6 @@ title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 ---
 
-## Continuations
-### Desktop Portal
-Creating a desktop version of portal for easier UX
-
 ## Ideas
 -   AR + Magic Leap for 3D sculpting
 -   LayoutLM + screenshots → auto-categorization of knowledge
@@ -26,7 +22,18 @@ Creating a desktop version of portal for easier UX
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 
+### Website revamp (again)
+- make graph absolute on side
+- killing the spinny text
+- merge garden index with main page
+- rewrite interests section
+- add feed of most recent digital garden bits
+- separate employment + projects stuff into subpage
+	- make projects a folder and each entry is a file
+
 ### Tools for Thought
+* write first, organize later
+	* good daily notes, choose what to carry over from the previous day
 * block based editors are neat cause i can move stuff around really easily
 	* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
 	* spatially consistent? [memory palace](thoughts/memory-palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
@@ -43,7 +50,7 @@ Creating a desktop version of portal for easier UX
 
 
 ### Long Term Archival Storage Service
-
+Why is storage expensive lmao
 
 ### DreamCoder boolsat
 Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
