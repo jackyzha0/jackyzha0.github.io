@@ -21,6 +21,8 @@ Maybe a part of the [exploit-explore](/thoughts/exploit-explore) curve and the o
 ## What do I value
 TODO: take some time to actually do this
 
+> Creating the shovels for the next generation to build their sand castles
+
 ## What type of work I don't like doing
   * could've spent that time doing other stuff
   * didnt feel intellectual stimulating

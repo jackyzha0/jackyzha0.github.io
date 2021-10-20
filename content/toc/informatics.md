@@ -13,4 +13,4 @@ Information Science: the world of recorded information produced by human agency.
 - [Infrastructure](thoughts/infrastructure.md)
 - [Black Box](thoughts/black-box.md)
 - [Search](thoughts/search.md)
-- [Information Retrieval](thoughts/information-retrieval.md)
+- [Information Behaviour](thoughts/information-behaviour.md)

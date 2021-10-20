@@ -5,6 +5,8 @@ date: 2021-08-05T23:52:21-04:00
 
 Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits? rel: [The ones who walk from Omelas](thoughts/articles/the-ones-who-walk-from-omelas.md)
 
+What about self-care? How does the self fit into the greater whole?
+
 ## What is EA?
 Earning to give. How do we reduce the stigma around wealth?
 
