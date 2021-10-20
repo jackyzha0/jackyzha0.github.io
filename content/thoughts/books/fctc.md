@@ -173,7 +173,7 @@ Another definition: computationalization of human processes
         -   The power of email, allows you to have institutional and parainstitutional ties
         -   The power of search, reams of first hand information instantly
     -   Gone wrong
-        -   Economics of incentives and bad actors
+        -   Economics of [incentives](thoughts/incentives.md) and bad actors
         -   Individuating users and centralize control of information, enables advertising en masse
             -   Although it predates technology via TV and radio, amplified by
     -   Government have to intervene, like oil companies mining our social world

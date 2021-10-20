@@ -34,3 +34,6 @@ In a life like the one we live in where cause and consequence is extremely hard 
 This 'credentials' grind within these prestigious institutions is very reminiscient of [Goodhart's Law](thoughts/labels-and-quantization.md). They saw that their process of scrambling and playing 'the game' for college admissions got them prestige so they continue to optimize for that rather than success.
 
 > Some of the lowest hanging fruit remains unpicked because few smart people are willing to venture down the road not taken.
+
+## Paradox of Choice
+Individuals are *more* likely to be stressed from a larger number of options as considering more choices requires more mental effort.

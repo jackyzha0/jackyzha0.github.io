@@ -101,3 +101,6 @@ e.g.
 How do we convert a query into subject words and then locate these words in the catalogue if people describe things differently? How do we resolve synonyms?
 
 Increasing number of words that describe an item will increase recall at the cost of precision.
+
+#### Precision/recall trade-off
+The trade-off between recall and precision decides whether a search finds all relevant documents (high recall) or only relevant documents (high precision).

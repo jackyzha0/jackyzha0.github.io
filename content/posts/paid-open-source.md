@@ -94,7 +94,7 @@ When you are funding an individual, you are paying for the regular delivery of w
 Funding individuals means trusting not just in the projects they are currently working on, but also that they will continue to deliver future value too. Rather than being tied down to one project, creators then have the creative freedom to apply what they learned and create more groundbreaking initiatives.
 
 ## Mixing money and open source
-> **Q:** Won't financial rewards adversely affect developer's incentives to contribute?
+> **Q:** Won't financial rewards adversely affect developer's [incentives](thoughts/incentives.md) to contribute?
 > 
 > **A:** Yes, but it depends on who you're funding.
 

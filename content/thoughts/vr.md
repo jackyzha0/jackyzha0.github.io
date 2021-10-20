@@ -18,7 +18,7 @@ LGBT community – exploring gender identity. Super easy to express this online,
 -   Is the concept of [utopia](/thoughts/articles/the-ones-who-walk-from-omelas) only a reality for those who can afford to not worry about physiological health? Maslow's hierarchy of needs
 
 ## Money and Corporations
-What about economies within these metaverses? These feel important for compensating creators (via monetary incentives) and running underlying infrastructure.
+What about economies within these metaverses? These feel important for compensating creators (via [monetary](thoughts/money.md) incentives) and running underlying infrastructure.
 
 "Financialization is only a means to better interactions, lives, and communities — and it should never limit or exploit those ends." [Source](https://reboothq.substack.com/p/metaverse)
 

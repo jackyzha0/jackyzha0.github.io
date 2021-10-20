@@ -3,7 +3,7 @@ title: "Public Goods"
 date: 2021-07-28T18:49:45-04:00
 ---
 
-One important advantage of startups over public goods is the possibility of an _exit_. Exits create incentives for upfront funding, hiring, motivation and alignment through equity, a share in the exit. However, for nonprofits, FOSS, and public goods projects, this “light at the end of the tunnel” does not exist.
+One important advantage of startups over public goods is the possibility of an _exit_. Exits create [incentives](thoughts/incentives.md) for upfront funding, hiring, motivation and alignment through equity, a share in the exit. However, for nonprofits, FOSS, and public goods projects, this “light at the end of the tunnel” does not exist.
 
 [Source (Retroactive Public Goods Funding)](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c)
 

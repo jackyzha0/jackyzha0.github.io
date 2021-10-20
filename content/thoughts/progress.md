@@ -49,7 +49,7 @@ Jasmine has a really good [potential curriculum outline](https://jasminew.me/pos
 	1. History of science and technology: How were useful discoveries made? What was the relationship between [funding](thoughts/funding.md) and knowledge?
 	2. Philosophy of technology / technological progress: How, why, and when do particular technologies emerge?
 	3. Meta-science / science of science / social epistemology of science: How do we educate, train, and incentivize scientists?
-	4. Mechanism design + incentive design: How do we design incentives to elicit certain behaviours and aggregate specific information?
+	4. Mechanism design + incentive design: How do we design [incentives](thoughts/incentives.md) to elicit certain behaviours and aggregate specific information?
 	5. Cultural components of change-making: How have humans organized change in the past around ideas and processes?
 	6. Cause prioritization: How do we decide what to focus on?
 2. Definition and measurement: What sort of world(s) should we be we building towards?

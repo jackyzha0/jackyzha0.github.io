@@ -29,7 +29,7 @@ Infrastructure should be
 
 Do we need to [define infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
 
-> Thus, infrastructure design requires a more subtle approach: **creating the right incentives, environments, and dependencies to encourage well-being while preserving user autonomy**.
+> Thus, infrastructure design requires a more subtle approach: **creating the right [incentives](thoughts/incentives.md), environments, and dependencies to encourage well-being while preserving user autonomy**.
 
 Infrastructure can be [emergent](/thoughts/emergent-behaviour)
 
