@@ -64,3 +64,22 @@ Similar to the questions in the HCI [design process](thoughts/design-process.md)
 Examples of these are 1. alphabetical ordering or 2. chronological ordering
 
 This scoping process is similar to the [double-diamond design](thoughts/double-diamond-design.md) in [HCI](toc/hci.md).
+
+## The Filing Cabinet
+[Source](https://placesjournal.org/article/the-filing-cabinet-and-20th-century-information-infrastructure)
+
+The shift from bound volumes (sets of books) to filing systems was extremely significant in the history of classification.
+
+The currently accepted version of the filing cabinet is attributed to the Library Bureau, the Boston-based company founded in 1876 by Melvil Dewey (the guy who invented the Dewey decimal system)
+
+Still reinforced gendered division of labour though -- "female file clerks were expected to handle papers, but not to understand their contents; in contrast, it was male managers and executives who read the files, performing jobs that purportedly required thought"
+
+Mostly made popular by efficiency, exploitation of gendered labour, anxiety over information loss, and granular certainty (wanting to break more and more of life into discrete, [quantized, and labelled](thoughts/labels-and-quantization.md) parts)
+
+[Information](thoughts/information.md) then, was seen as something that could be standardized atomized, and stripped of context.
+
+Now though, the filing cabinet is "no longer an exemplar of productivity and speed, the file cabinet now embodies the facility of bureaucracies to produce paper, to delay, to leave us waiting" -- it can create an alternative paper-based reality to which officials reflexively defer.
+
+Curiously enough, piles of paper on a desktop can be both symbols of "overwhelmed white collar worker confronted with information processing long coded as clerical" but also "exemplary information management practice". In fact, a well-kept pile of papers can be more efficient than a linear index (very similar to the ethic of grab what you need and rely on internal organization than some explicit organizational system). Does this apply to the [Desktop Metaphor](thoughts/beyond-touch.md)?
+
+Is Google search the 21st century filing cabinet?

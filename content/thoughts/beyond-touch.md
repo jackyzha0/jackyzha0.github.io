@@ -7,6 +7,8 @@ date: 2021-07-25T16:47:56-04:00
 
 New representations of thought — written language, numerals, mathematical notation, data graphics — have been responsible for some of the most significant leaps in the progress of civilization, by expanding humanity’s collectively-thinkable territory. Why then, have we been trapped using the desktop/paper metaphor for the last few centuries?
 
+Ted Nelson, the guy who coined the terms hypertext and hypermedia, called the continued use of paper simulations as "like tearing the wings off a 747 and driving it as a bus on a highway."
+
 > And what about screens as a whole? Is the future of computation really just sliding fingers around slabs of glass? -- [Jason Yuan](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)
 
 Desktop was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)

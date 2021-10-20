@@ -7,7 +7,9 @@ date: 2021-09-14T15:38:31-07:00
 
 What even is HCI?
 * The human-machine joint performance of tasks
-* Human-computer or human-human communicationmediated by computers
+* Human-computer or human-human communication mediated by computers
+
+Many a clever invention has been termed ‘before its time’ because the inventor did not see how to build a transition from what was known and in use to what was new.
 
 3 main goals of HCI
 1. Designing

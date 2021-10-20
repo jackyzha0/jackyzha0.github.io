@@ -63,3 +63,41 @@ Why build the ARPANET (precursor to the internet)?
 3. Learnability: how many skills do you need to acquire to use it?
 
 > Choosing the best system for a particular task then isn’t just about choosing the latest technology, but carefully understanding the task at hand, and what types of systems might best support
+
+## Information [Representation](thoughts/representation.md)
+How do we represent documents and information in our databases and collections?
+
+### Indexing
+Index features
+- index term (textual description)
+- number of words (numerical, length description)
+- etc
+
+When indexing, we want to
+1. features that make document easy to find given some similarity measure between query and document (if a term is too broad, it would apply to too many documents)
+2. have high discriminatory power so different documents are sufficiently distinct
+
+Specificity: degree to which a term is broad or narrow
+
+#### Automatic Indexing
+Automatic indexing uses a set of algorithms to convert a document into a set of index terms.
+
+1. Tokenization (how do we turn text into tokens?). However, we need to be wary of edge cases like hyphenation, punctutation, abbreviations, numbers, etc.
+2. Stopword removal (removing words that occur very frequently but don't contribute very much to overall meaning of sentence). However, we need to be wary of creating new phrases that never existed and removal of entire phrases (e.g. 'to be or not to be')
+3. Conflation and stemming (recall enhancing technique that takes different forms of words and replaces them by a single form). Example stemmers include Porter and Krovetz stemmers (difference is that Krovetz is more conservative, only stems to words in a dictionary). However, this can reduce precision when stemming results in incorrect words.
+4. Term weights (which terms are the most important? One common approach is to use term frequency between documents -- sometimes called Document Frequency or DF. The larger the DF, the less useful it is to discriminate between two documents. Measure of importance then is the inverse document frequency. The most common measure is term frequency multiplied by inverse document frequency $TF \times IDF$)
+
+### Catalog
+Catalogs allow for retrieval by simple matching whereby the user has an index term in mind and can then find all items that are indexed by that term.
+
+By its nature, the catalog is divided, and the subject catalog is on its own. The classification scheme typically mirrors the scheme used to organize the physical items in the library.
+
+e.g.
+- Universal Decimal Classification (UDC)
+- Dewey Decimal Classification (DDC) 
+- Library of Congress (LC)
+
+### Querying/[Search](thoughts/search.md)
+How do we convert a query into subject words and then locate these words in the catalogue if people describe things differently? How do we resolve synonyms?
+
+Increasing number of words that describe an item will increase recall at the cost of precision.
