@@ -7,7 +7,7 @@ Source: [Glushko](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-i
 
 > explicit or implicit acts of organization by people, or by computational processes acting as proxies for, or as implementations of, human [intentionality](thoughts/intentionality.md)
 
-The intentional arrangements of resources in an Organizing System are the result of decisions about what is organized, why it is organized, how much it is organized, when it is organized, and how or by whom it is organized.
+The intentional arrangements of resources in an Organizing System are the result of design decisions about what is organized, why it is organized, how much it is organized, when it is organized, and how or by whom it is organized.
 
 Can be created by top-down authoritative institutions like libraries, museums, businesses, and governments or bottom-up self-organizing systems composed of aggregated interactions of actors with resource or with each other.
 
@@ -17,7 +17,9 @@ Similarly, Adam Smith's "invisible hand" is another example where individuals co
 
 Standardization allows interopability -- especially necessary for information systems that serve many people. No two people organize things the same way. No two people have the same requirements for the same information system.
 
-Maintaining organizing systems with long expected lifetimes mean that incremental changes to description vocabularies and classification schemes need to happen over time -- ever when the categories are not always explicit. (rel: [digital-gardening](posts/digital-gardening.md))
+Design questions/dimensional perspectives on the design of [organizing systems](thoughts/organizing-systems.md)
+
+Maintaining organizing systems with long expected lifetimes mean that incremental changes to description vocabularies and classification schemes need to happen over time -- even when the categories are not always explicit. (rel: [digital-gardening](posts/digital-gardening.md))
 
 ### Examples
 #### Enumeration

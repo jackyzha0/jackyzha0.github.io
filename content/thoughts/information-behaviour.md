@@ -13,7 +13,7 @@ A model is a simplified, tentative representation of a phenomenon of interest, o
 
 Knowledge 'is the sense made at a particular point in time-space by someone'
 
-Information seeking is conceptualized as a gap-bridging process in which the individual makes moves, influenced by information, in time and space to reach a desired outcome or goal
+Information seeking is conceptualized as a gap-bridging process in which the individual makes moves, influenced by information, in time and space to reach a desired outcome or goal to make sense of a ever-gappy 'reality'
 
 In this model, an information object is not seen simply as an entity that meets or is relevant to an information need. Rather, information embedded in an information object must be conceptualized by the individual in a particular situation in order to influence actions.
 

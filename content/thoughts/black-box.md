@@ -15,3 +15,4 @@ If we start to disect the black box and understand that it
 
 Then this is called "opening the black box" or "infrastructural inversion" for larger scale infrastructures
 
+Jim Johnson: building and rebuilding walls everytime you use it is a waste, thats why we have doors as *[infrastructure](thoughts/infrastructure.md)* that saves a lot of this repetitive work.
