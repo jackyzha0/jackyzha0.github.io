@@ -1,5 +1,5 @@
 <div id="search-container">
-    <div>
+    <div id="search-space">
         <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
         <div id="results-container">
         </div>
@@ -70,8 +70,6 @@
   const contentIndex = new FlexSearch.Worker({
     tokenize: "reverse",
     charset: "latin:extra",
-    context: true,
-    depth: 3,
     suggest: true,
   })
 
@@ -129,8 +127,15 @@
 
   const source = document.getElementById('search-bar')
   const results = document.getElementById("results-container")
+  let term
+  source.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+          const anchor = document.getElementsByClassName("result-card")[0]
+          window.location.href = `${anchor.id}#:~:text=${encodeURIComponent(term)}`
+      }
+  })
   source.addEventListener('input', (e) => {
-    const term = e.target.value
+    term = e.target.value
     contentIndex.search(term, {
       limit: 20,
       depth: 3,
@@ -200,6 +205,12 @@
     })
     searchButton.addEventListener('keydown', (evt) => {
       openSearch()
+    })
+    searchContainer.addEventListener('click', (evt) => {
+      closeSearch()
+    })
+    document.getElementById("search-space").addEventListener('click', (evt) => {
+      evt.stopPropagation()
     })
   })
 
