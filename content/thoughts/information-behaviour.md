@@ -26,7 +26,11 @@ Perceived information need is bounded in a context (column 1). This perceived ne
 Model to frame information need and seeking in the context of professional work. Work tasks are either assigned to, or identified by, workers.
 
 Similar to Wilson's Feedback loop
-1. Perceived information need
+1. Perceived information need in performing the work task at hand
+2. Performer analyzes need by deciding what information would be sufficient to resolve need (affected by personal seeking style)
+3. Plans for alternative actions, ranks them, and chooses one (affected by situation at hand, personal seeking style, personal factors)
+4. Executes plan fully or partially and uses found information to move forward with the task
+5. Evaluate outcome to see if further information is needed (informs personal seeking style)
 
 ### Ellis's Behavioural Model
 ![](/thoughts/images/ellis.png)
@@ -45,6 +49,16 @@ Grounded theory approach, built a descriptive model based on empirical studies o
 
 ![](/thoughts/images/ellis-process.png)
 There is no sequential pattern of seeking activities (except that verifying is the penultimate step in the whole process)
+
+### Kuhlthau's Information Search Process Model
+- Inititation: students become aware of lack of knowledge
+- Selection: identify a general area they feel optimistic about and begin search
+- Exploration: moving from general to specific, finding sometimes inconsistent, incompatible information
+- Formulation: formed a focus of the topic, knowledge increased, more successful
+- Collection: gathered relevenat information, organized information for writing
+- Presentation: felt satisfied or sometimes bored and want to move onto something new
+
+![](/thoughts/images/kuhlthau.png)
 
 ## 11 Deadliest Sins of Knowledge Management
 Fahey and Prusak (1998)

@@ -1,4 +1,8 @@
-## The Information Professions: Knowledge, memory, heritage
+---
+title: "The Information Professions: Knowledge, memory, heritage"
+date: 2021-10-21
+---
+
 [Source](https://files.eric.ed.gov/fulltext/EJ1060508.pdf)
 
 The traditional view of disciplines is that they lie on a spectrum where the study of arts and humanities (disciplines of the cultural record) lie on one end and mathematics and physical sciences on the other (the sciences of information). I'm not sure I fully agree with this, I think the pursuit of knowledge and truth in physical sciences ties very well with the pursuit of documentation within the cultural record and humanities. It would be more of a circle than a spectrum.
