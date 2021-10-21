@@ -22,6 +22,9 @@ In this model, an information object is not seen simply as an entity that meets 
 
 Perceived information need is bounded in a context (column 1). This perceived need may not be enough if there isn't enough to activate actions if the stress isn't high enough (column 2). Intervening variables may become either barriers to or in support of information seeking activities (column 3). The actual activation mechanism itself is driven by social learning theory.
 
+### Bystrom and Jarvelin's Model
+Model to frame information need and seeking in the context of professional work
+
 ### Ellis's Behavioural Model
 ![](/thoughts/images/ellis.png)
 
