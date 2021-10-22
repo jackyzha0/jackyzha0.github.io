@@ -49,8 +49,23 @@ date: 2021-06-17T00:33:42-04:00
 	* being able to index content fast and effectively
 
 
-### Long Term Archival Storage Service
+### Long Term Archival Storage Service (Shale)
 Why is storage expensive lmao
+
+What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can
+
+
+1. Sell extra storage space you have and get paid based off of capacity + availability
+	2. maybe use a coin for this ($SHALE)?
+	3. create a client to facilitate this
+2. Buying storage means your local folder that you choose will be symlinked to a mounted network drive
+	1. what is actually happening is that your files are redundantly 
+
+Questions
+1. can i just do this using hyperspace instead of using a blockchain lol
+2. ETH layer 2?
+3. any way to avoid gas fees?
+4. Is it possible to build on top of the [Golem platform](https://www.golem.network/platform) directly?
 
 ### DreamCoder boolsat
 Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
@@ -188,48 +203,9 @@ blogging/reading platform where simplicity level can be adjusted
 	* total users
 	* user visit distribution vs time
 
-### c → fast and free link shortener
--   dynamodb for storage
-	-   tables
-		-   registrations
-		-   links
--   serverless go
-	-   registration service
-		-   status path
-			-   `/status/<gh-username>`
-				-   registered (no repo found)
-				-   malformed toml
-					-   subdomain taken?
-					-   validation errors
-				-   serving links (last updated)
-		-   listen on github webhooks
-			-   wait on github star event hook to register and unregister ([](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#star)[https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#star](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#star))
-		-   register
-			-   add entry to registrations table
-		-   unregister
-			-   remove all links with this person as id
-	-   request redir service
-		-   reverse proxy with cache from dynamodb
-		-   lookup based off of subdomain + short path
--   self-host on gh
-	-   everyone makes a repo called c-cfg
-		-   toml based
-			-   main property → subdomain
-			-   row properties
-				-   author (gh id)
-				-   short
-				-   long
-				-   desc
-				-   ttl
-				-   published
-
-[https://stackoverflow.com/questions/1943356/creating-subdomains-programmatically](https://stackoverflow.com/questions/1943356/creating-subdomains-programmatically)
-
 ### living room
 * recreating [communal living spaces](/thoughts/communities) in digital space
 * [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
-    
-### next.js for TUIs?
 
 ### tabfs but for emails
 [](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
@@ -242,9 +218,6 @@ blogging/reading platform where simplicity level can be adjusted
 -   react/electron frontend
     -   ability to add plugins
         -   modular by design, creating [workflows](thoughts/workflows.md)
-    
-### simple recording/timelapse tool for artists
-[https://fireship.io/lessons/electron-screen-recorder-project-tutorial/](https://fireship.io/lessons/electron-screen-recorder-project-tutorial/)
 
 ###  aka → bash profiles, makefile style
 ###  deep foveal VR rendering
