@@ -17,4 +17,5 @@ One of the alternatives to [PoW](thoughts/proof-of-work.md)
 
 ## Disadvantages
 - Greater chance of [51% attacks](thoughts/fault-tolerance.md)
+	- Though this is questionable, 51% means you need to control 51% of the staked ETH which would probably cause ETH's value to drop significantly. There's very little incentive to destroy the value of a currency you have a majority stake in.
 - Incentive to hoard tokens and not use them

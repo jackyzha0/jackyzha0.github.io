@@ -30,6 +30,9 @@ date: 2021-06-17T00:33:42-04:00
 - add feed of most recent digital garden bits
 - separate employment + projects stuff into subpage
 	- make projects a folder and each entry is a file
+- digital gardening
+	- seperate sources from thoughts
+	- rename concepts to be more atomic
 
 ### Tools for Thought
 * write first, organize later
@@ -53,7 +56,6 @@ date: 2021-06-17T00:33:42-04:00
 Why is storage expensive lmao
 
 What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can
-
 
 1. Sell extra storage space you have and get paid based off of capacity + availability
 	2. maybe use a coin for this ($SHALE)?
