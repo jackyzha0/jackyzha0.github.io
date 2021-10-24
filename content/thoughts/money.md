@@ -3,7 +3,7 @@ title: "Money"
 date: 2021-10-08
 ---
 
-> Money as a formal token of delayed reciprocal altruism
+> Money is a form of shared truth
 
 [Source 1](https://kernel.community/en/learn/module-0/money-language) and [Source 2](https://kernel.community/en/learn/module-2/shelling-out)
 
@@ -52,13 +52,13 @@ The question applied to [web3](toc/web3.md): **can we advance the aims of rehabi
 ## Engineering Money
 > Money-as-a-protocol really allows us to do is program incentives at scales never before possible
 
-Money, in this context, is not a concrete thing, its an abstraction to communicatve values, as a language, and as a technology. It is a classifier for things that exhibit behaviour that lets us use it for
+Money, in this context, is not a concrete thing, its an abstraction to communicative values, as a language, and as a technology. It is a classifier for things that exhibit behaviour that lets us use it for
 1. Store of Value
 2. Medium of Exchange
 3. Unit of Account
 
 More importantly, there are tradeoffs in the above properties.
-Gold is a great store of value but sucks as a medium of exchange (interesting tangnet, the traditional heuristic that money *should* have inherent intrinsic value which is separate from the money but the truth is almost the opposite. If the medium used to express transactional relationship has its own value, its not a very functional abstraction).
+Gold is a great store of value but sucks as a medium of exchange (interesting tangent, the traditional heuristic that money *should* have inherent intrinsic value which is separate from the money but the truth is almost the opposite. If the medium used to express transactional relationship has its own value, its not a very functional abstraction).
 
 Historically, like physical materials, we've just accepted properties the way they are and just built what we could with them. However, also like physical materials, we've found ways to engineer the fundamental properties that we want.
 

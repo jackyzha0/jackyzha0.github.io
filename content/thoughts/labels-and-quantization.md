@@ -9,6 +9,18 @@ Our obsession of applying labels to everything extends to even whether a [hot do
 
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."
 
+## Feedback Loops
+1. Practice creates new terminology as a way to communicate complex ideas without needing to rexplain each time
+2. Terminology then shapes how we think about the world: [Shapir-Whorf](thoughts/language-of-thought.md)
+3. Some terminology becomes outdated as practice changes
+4. Arguments ensue over updating shared terminology (esp as language is decentralized, this can cause fracturing)
+5. Two camps emerge
+	1. People who want to use terminology mainly as a means to more efficiently communicate practice
+	2. People who like the theory behind terminology
+6. Camps argue over who has the 'right' definitions but for their own goals
+	1. Camp 1 repeats this loop
+	2. Camp 2 continues to argue over definitions
+
 "This is because feedback loops which are too short for the overall system makes people focus on inappropriate intermediate goals."
 * dangers of intermediate proxies?
 * what about in machine learning? using certain quantities for metrics which are just *proxies* for more difficult to measure qualitative end goals

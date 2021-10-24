@@ -16,3 +16,5 @@ Interesting quote by Buckminster Fuller (who did a lot of pioneering work on geo
 Honestly thought this bit would talk more about why Ethereum is meaningful in the context of [web3](toc/web3.md) and [decentralization](thoughts/decentralization.md) :((
 
 With respect to the argument that 'the fight for liberty' being a fight fought with technical protocols and not natural language is interesting. I think natural language is absolutely necessary and that discourse is pretty similar to change itself. Shared [terminology and labels](thoughts/labels-and-quantization.md) for discourse is important for both. Change can happend based off of perceived improvement which is correlated with how well that improvement is communicated.
+
+Seems similar to [praxis](thoughts/praxis.md) debate, too many layers of abstractions on theory that is no longer grounded in practice becomes useless unless applied. The arguments then occur in the abstract definitions of the labels and less so how they actually apply. 

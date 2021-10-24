@@ -25,6 +25,15 @@ Transactions happen as follows:
 5. Block is added to chain
 6. Chain update is distributed to members
 
+## Why it Matters
+It feels like the level of change which blockchain impacts is huge but at the same time latent.
+
+After going through a bunch of Kernel modules, Austin came upon a name for the concept: "blockchain changes what soil is"
+
+"The "new world" seems to look very similar to the old. i.e. *isn't a DAO just voting on how to donate money, which we could do today?*"
+
+In actuality, the *layer* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
+
 ## Data
 [Source](https://kernel.community/en/learn/module-1/promise-blockchains)
 
@@ -35,6 +44,11 @@ Transactions happen as follows:
 > This is the promise of blockchains -- to create a global 'distributed database'
 
 The goal is to build a single, shared story of reality, spread across all the machines simultaneously. And when it changes in one place, it changes everywhere.
+
+### Thoughts
+The part about no more 'storing stuff' and 'sending stuff' I always find interesting because 'storing' stuff still happens to be on the public ledger. The only difference now is that there is a distinction between sending metadata (which you tell someone to just refer to a piece of data on chain) and sending information (transfering ownership).
+
+Waiting for the day web3 projects get large enough to amortize and offset the gas fees that consumers pay now (much like centralized orgs nowadays front hosting costs for 'free' tier or the average consumer).
 
 ### Act II -- Smart Contracts
 "First we merged the network and the database in a blockchain. Then, we take computer software and put it into the shared database. That means everyone that is connected has a copy of exactly the same program: same data, same code, same result"
