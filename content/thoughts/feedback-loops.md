@@ -15,6 +15,9 @@ https://brianlui.dog/2020/05/10/beware-of-tight-feedback-loops/
 	- extended cognition with centaur systems
 
 
+"Focusing on tight feedback also leads to getting stuck in local maxima. The short turnaround time leads to the pursuit of incremental improvements. Accurate feedback reduces error, but this means reaching and staying at the local maximum. The more accurate and more rapid the loop, the more quickly you’ll arrive at the top of the hill – and the less chance you have of leaving it to climb the mountains of mastery."
+* [exploit-explore](/thoughts/exploit-explore) algorithm 
+
 ## Imitation
 https://www.briantimar.com/notes/mimetic/mimetic/
 The second was a positive feedback loop that encouraged me to spend ever-increasing amounts of time on my work. Humans inherit convictions [mimetically](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard#Mimetic_desire) from each other — we learn what to value by imitating our peers. Maybe this is why we tend to want to conform to ingroup expectations in [communities](/thoughts/communities) so much?

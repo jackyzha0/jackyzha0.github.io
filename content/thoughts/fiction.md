@@ -3,6 +3,8 @@ title: "Fiction"
 date: 2021-10-24
 ---
 
+> The future is manifested
+
 Shared fiction as a statement about the future instead of a statement of today. They're both fictions in that they can't be (dis)proved and thus can have the same functions in a group of people (bring together, motivate to action, share values/language, etc.)
 
 Reminds me of why being ambitious is important and why we should have nondystopian scifi -- there's value in reclaiming an optimistic and hopeful future (very Reboot vibes). I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.

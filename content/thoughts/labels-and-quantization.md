@@ -9,14 +9,25 @@ Our obsession of applying labels to everything extends to even whether a [hot do
 
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."
 
-## Feedback Loops
+Why do we have labels in the first place?
+- they help us to communicate complex ideas between each other without having to explain our entire mental models
+- they are attached to societal connotations and perceptions of certain concepts
+- they give legitimacy in the form of social proof to concepts
+
+In the context of [hackathons](thoughts/hackathons.md), we spend a lot of time clearing up that hackathons don't involve hacking devices, but rather creating creative and innovative solutions
+
+Are overloaded terms still useful? (e.g. [hacker](thoughts/articles/hackers.md) has so many connotations attached to it) At that point, do we need to create new terms?
+
+**Hermeneutical injustice** is a subcategory of epistemic injustice wherein one has no labels/common terminology to describe or explain experiences to others. Historically has been applied in the context of exclusion of marginalized groups from activities which shape the language we use.
+
+## [Feedback Loops](thoughts/feedback-loops.md)
 1. Practice creates new terminology as a way to communicate complex ideas without needing to rexplain each time
 2. Terminology then shapes how we think about the world: [Shapir-Whorf](thoughts/language-of-thought.md)
 3. Some terminology becomes outdated as practice changes
 4. Arguments ensue over updating shared terminology (esp as language is decentralized, this can cause fracturing)
 5. Two camps emerge
 	1. People who want to use terminology mainly as a means to more efficiently communicate practice
-	2. People who like the theory behind terminology
+	2. People who like the theory behind terminology or those who are attached to tradition
 6. Camps argue over who has the 'right' definitions but for their own goals
 	1. Camp 1 repeats this loop
 	2. Camp 2 continues to argue over definitions
@@ -26,8 +37,6 @@ Our obsession of applying labels to everything extends to even whether a [hot do
 * what about in machine learning? using certain quantities for metrics which are just *proxies* for more difficult to measure qualitative end goals
 
 Applicable to [feedback-loops](/thoughts/feedback-loops)
-"Focusing on tight feedback also leads to getting stuck in local maxima. The short turnaround time leads to the pursuit of incremental improvements. Accurate feedback reduces error, but this means reaching and staying at the local maximum. The more accurate and more rapid the loop, the more quickly you’ll arrive at the top of the hill – and the less chance you have of leaving it to climb the mountains of mastery."
-* [exploit-explore](/thoughts/exploit-explore) algorithm 
 
 "When quantifying things, people naturally focus on things that can easily be measured. Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems."
 

@@ -25,7 +25,7 @@ Perceived information need is bounded in a context (column 1). This perceived ne
 ### Bystrom and Jarvelin's Model
 Model to frame information need and seeking in the context of professional work. Work tasks are either assigned to, or identified by, workers.
 
-Similar to Wilson's Feedback loop
+Similar to Wilson's [feedback loops](thoughts/feedback-loops.md)
 1. Perceived information need in performing the work task at hand
 2. Performer analyzes need by deciding what information would be sufficient to resolve need (affected by personal seeking style)
 3. Plans for alternative actions, ranks them, and chooses one (affected by situation at hand, personal seeking style, personal factors)
