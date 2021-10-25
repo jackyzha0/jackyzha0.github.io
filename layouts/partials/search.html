@@ -71,6 +71,7 @@
     tokenize: "reverse",
     charset: "latin:extra",
     suggest: true,
+    cache: 10,
   })
 
   const scrapedContent = {{$.Site.Data.contentIndex}}
@@ -79,10 +80,10 @@
   }
 
   const highlight = (content, term) => {
-    const highlightWindow = 15
+    const highlightWindow = 20
     const tokenizedTerm = term.split(/\s+/).filter(t => t !== "")
     const splitText = content.split(/\s+/).filter(t => t !== "")
-    const includesCheck = (token) => tokenizedTerm.some(term => token.toLowerCase().includes(term.toLowerCase()))
+    const includesCheck = (token) => tokenizedTerm.some(term => token.toLowerCase().startsWith(term.toLowerCase()))
 
     const occurrencesIndices = splitText
       .map(includesCheck)
@@ -115,8 +116,7 @@
   }
 
   const resultToHTML = ({url, title, content, term}) => {
-    const md = content.split("---")[2]
-    const text = removeMarkdown(md)
+    const text = removeMarkdown(content)
     const resultTitle = highlight(title, term)
     const resultText = highlight(text, term)
     return `<button class="result-card" id="${url}">
@@ -137,8 +137,7 @@
   source.addEventListener('input', (e) => {
     term = e.target.value
     contentIndex.search(term, {
-      limit: 20,
-      depth: 3,
+      limit: 15,
       suggest: true,
     }).then(searchResults => {
       const resultIds = [...new Set(searchResults)]
