@@ -29,7 +29,7 @@ date: 2021-06-16T08:59:23-04:00
     -   THEN see how we can apply tech
     -   **avoid techno-solutionism** -> [maintenance of existing systems](/thoughts/creation-vs-maintenance)
 -   involves citizen decision making
-    -   [open source](posts/paid-open-source.md) tech + tech that preserves privacy
+    -   [oss](thoughts/books/oss.md) tech + tech that preserves privacy
 -   zero carbon cities of the future (energy transition)
     -   electrify our mobility, shift to renewables
     -   creating green spaces

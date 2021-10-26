@@ -14,7 +14,7 @@ Public goods are
 
 It costs the same to produce for one person as it is for everyone else, and one cannot prevent people from accessing this.
 
-Static [open source](posts/paid-open-source.md) (code that anyone can copy off the internet) is an example of a public good. Another example of these are public [infrastructure](thoughts/infrastructure.md) like roads (although not necessarily, if you have your drivers license revoked you may not be able to make use of the roads in the first place).
+Static [open source](thoughts/books/oss.md) (code that anyone can copy off the internet) is an example of a public good. Another example of these are public [infrastructure](thoughts/infrastructure.md) like roads (although not necessarily, if you have your drivers license revoked you may not be able to make use of the roads in the first place).
 
 It seems only natural that online media archives and open digital [infrastructure](thoughts/infrastructure.md) should qualify as well.
 

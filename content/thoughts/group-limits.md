@@ -18,7 +18,7 @@ A range (by a factor of 3)
 3. Close Friends -> 15
 4. Intimate Friends -> 5
 
-Can we scale trust beyond the Dunbar number? Curious if this is what makes large orgs so sluggish and boring to work at. This applies to scaling orgs and projects too. How do we ensure that [open source](posts/paid-open-source.md) works when more than say 150 people are contributing?
+Can we scale trust beyond the Dunbar number? Curious if this is what makes large orgs so sluggish and boring to work at. This applies to scaling orgs and projects too. How do we ensure that [open source software](thoughts/books/oss.md) works when more than say 150 people are contributing?
 
 What about in [web3](toc/web3.md)? Structure helps us scale beyond 'natural' community sizes but this seems difficult in a group where the ethos is v much against said centralized structure.
 

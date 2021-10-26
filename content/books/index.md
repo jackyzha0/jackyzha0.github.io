@@ -43,7 +43,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
 * **1984** by George Orwell
 * **On Earth We're Briefly Gorgeous** by Ocean Vuong
-* **Working in Public** by Nadia Eghbal
+* **[The Making and Maintenance of Open Source Software](thoughts/books/oss.md)** by Nadia Eghbal
 * **When Breath Becomes Air** by Paul Kalanithi
 * **Kafka on the Shore** by Haruki Murakami
 * **The Art of Thinking Clearly** by Rolf Dobelli
