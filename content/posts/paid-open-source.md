@@ -4,7 +4,7 @@ date: 2021-02-27T12:03:33-08:00
 ---
 
 ## Making of Open Source software
-I’ve recently made my way through *Working in Public: The Making and Maintenance of Open Source Software* by Nadia Eghbal. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and [funding](thoughts/funding.md). So much so, that I’ve started experiencing the Baader-Meinhof effect, seeing something to do with open source and funding everywhere I look in tweets, conversations, and blogs.
+I’ve recently made my way through [*Working in Public: The Making and Maintenance of Open Source Software*](thoughts/books/oss) by Nadia Eghbal. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and [funding](thoughts/funding.md). So much so, that I’ve started experiencing the Baader-Meinhof effect, seeing something to do with open source and funding everywhere I look in tweets, conversations, and blogs.
 
 This blog post is an exploration of processes in open source, the value it provides, and how money fits into the picture.
 

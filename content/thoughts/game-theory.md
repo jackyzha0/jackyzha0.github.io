@@ -13,3 +13,7 @@ For [trust](thoughts/trust.md) to evolve:
 In the short run, the rules of the game define what the players do. In the long run, players define the rules. Incentive for us to build the environment and rules we want to play in.
 
 Unfortunately, modern day social media means we have less 'close-friends' and thus repeat interactions than ever. With algorithmic news feeds, miscommunication breeds and win-win situations become scarce.
+
+## Applied Game Theory
+Game theory feels hard to apply to the real world due to properties like the [Collingridge Dilemma](thoughts/catch22.md)
+

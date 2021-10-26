@@ -16,7 +16,7 @@ Why do we have labels in the first place?
 
 In the context of [hackathons](thoughts/hackathons.md), we spend a lot of time clearing up that hackathons don't involve hacking devices, but rather creating creative and innovative solutions
 
-Are overloaded terms still useful? (e.g. [hacker](thoughts/articles/hackers.md) has so many connotations attached to it) At that point, do we need to create new terms?
+Are overloaded terms still useful? (e.g. [hacker](thoughts/books/hackers.md) has so many connotations attached to it) At that point, do we need to create new terms?
 
 **Hermeneutical injustice** is a subcategory of epistemic injustice wherein one has no labels/common terminology to describe or explain experiences to others. Historically has been applied in the context of exclusion of marginalized groups from activities which shape the language we use.
 
