@@ -14,5 +14,3 @@ No one person experiences red, the smell of garlic, or the warmth of the sun in 
 Yet, it feels like consciousness is in intrinsic property. We don't know if someone or something is consciousness unless we ask them. However, the inability to _report_ a subjective experience is not the same thing as _not having one_. ([locked-in syndrome](https://en.wikipedia.org/wiki/Locked-in_syndrome)). For all we know, that rock could be conscious.
 
 As an extended thought experiment, how similar to [minds](thoughts/mind-design.md) have to be to human ones to be considered conscious? 
-
-## Hard Problem of Consciousness

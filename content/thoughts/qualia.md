@@ -9,7 +9,7 @@ Qualia: the subjective, conscious experience.
 
 
 ## Hard problem of consciousness
-why do we have subjective human experience?
+How do we bridge objective description and subjective experience
 
 what gives rise to [consciousness](thoughts/consciousness.md) (rel: [emergent-behaviour](thoughts/emergent-behaviour.md)), first-person experiences, and a sense of self?
 

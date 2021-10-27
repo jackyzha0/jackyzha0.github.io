@@ -3,8 +3,12 @@ title: "Group Limits"
 date: 2021-07-22T20:03:33-04:00
 ---
 
+A great example of [zero-sum](thoughts/zero-sum.md) resources
+
 ## The Dunbar number
 https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships
+
+![](/thoughts/images/dunbar.png)
 
 There's only so big a social group can get before it decays into smaller ones.
 

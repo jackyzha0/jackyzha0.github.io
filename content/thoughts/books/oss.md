@@ -39,7 +39,7 @@ Today, "content" is better understood not as a thing we set out to make -- as an
 ### Platforms and Governance
 A "Benevolent Dictator for Life" or BDFL for short, describes authors of open source projects who retain control even as the project grows. A great example of this is Linus Torvalds, who even after 14,000 unique contributors to the Linux kernel, still is the only person allowed to merge contributions into the main branch.
 
-"Like a talent agency, platforms add value to creators by first improving their *distribution*, exposing them to potentially millions of people. ... This [feedback loop](thoughts/feedback-loops.md) is positive-sum, encouraging more creators to join. So long as more people keep using the platform, there's no sense that any one creator will ever suck up all the oxygen in the room."
+"Like a talent agency, platforms add value to creators by first improving their *distribution*, exposing them to potentially millions of people. ... This [feedback loop](thoughts/feedback-loops.md) is [positive-sum](thoughts/positive-sum.md), encouraging more creators to join. So long as more people keep using the platform, there's no sense that any one creator will ever suck up all the oxygen in the room."
 
 ###  Commons-based Peer Production
 The economist Elinor Ostrom identified 8 design principles that contribute to a well-managed, succesful commons:

@@ -16,6 +16,7 @@ date: 2021-07-14T15:03:11-04:00
 - [Research Debt](thoughts/articles/research-debt.md)
 - [Knowledge Distillation](thoughts/knowledge-distillation.md)
 - [Framing](/posts/framing)
+- [Teaching](thoughts/teaching.md)
 
 ### Interaction Design
 - [Beyond Touch and the Screen](thoughts/beyond-touch.md)

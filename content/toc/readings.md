@@ -10,6 +10,7 @@ Notes on my favourite articles and [books](/books).
 - [Design Justice](/thoughts/books/design-justice)
 - [Mindstorms](/thoughts/books/mindstorms)
 - [Ghost Work](thoughts/articles/ghost-work.md)
+- [Making and Maintenance of Open Source Software](thoughts/books/oss.md)
 
 ## Articles
 ### Urban Planning
