@@ -85,6 +85,9 @@ However, this 'trust value' should not be public for the sake of avoiding conver
 
 One also needs to keep in mind that trust differs across social contexts
 
+For new players, one of the scariest things is requirement to engage in specialized, high coordination group performances. Building towards high trust using a ladder:
+![](/thoughts/images/trust-ladder.png)
+
 ### [Positive Sum](thoughts/positive-sum.md) Resources
 An economy of zero sum resources is a world of scarcity. The challenge economics attempts to solve is how we might split up these limited resources in an efficient fashion.
 
@@ -95,3 +98,4 @@ However, truly abundant worlds are not super fun to play in. How can we design f
 - Per group caps: cap total number of harvestable items per group of players
 - Transaction costs: can prevent global pooling with large transaction taxes. This encourages local resource use
 - Appropriate sinks: find ways to drain resources out of the world
+
