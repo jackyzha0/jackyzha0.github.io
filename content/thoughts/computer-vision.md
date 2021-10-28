@@ -404,7 +404,7 @@ When drawing distrubtion, draw normals to edges going from low values (dark) to 
 4. Computer eigenvectors and eigenvalues of the covariance matrix.
 5. Use threshold on eigenvalues to detect corners ($>0$ is a corner)
 
-We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix).
+We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix). It tells us the dispersion of the gradients nearby.
 
 As $C$ is symmetric, we have 
 
@@ -470,4 +470,30 @@ Choice of primaries is equivalent to choice of colour space. In RGB, we choose m
 
 RGB is additive whereas CMY is subtractive.
 
+RGB and CIE are linear.
+
 McAdam ellipses are regions where colour differences are imperceptible to the average human eye.
+
+## Scale Invariant Features (SIFT)
+David Lowe
+
+Invariant to translation, rotation, scale, and other imaging parameters.
+
+Advantages:
+- Locality: features are local (robust to occlusion and clutter)
+- Distinctiveness: individual features can be matched to a large database of objects
+- Quantity: many features can be generated (even for small objects)
+- Efficiency: fast (close to real-time performance)
+
+Describes both a **detector** and **descriptor**
+1. Multi-scale extrema detection
+	Uses an octave-based system for pyramid of difference of gaussians.
+
+	Why downsizing the image is chosen over upsizing the template: the first is much more efficient.
+
+	3 Scales per octave
+1. Keypoint localization
+	We then remove low constrast or poorly localized keypoints. We can determine good. Choose good corners!
+2. Orientation assignment
+	Create histogram of local gradient directions computed at selected scale multiplied by the gaussian kernel at the center, then assign canonical orientation at peak of smoothed histogram (mode)
+3. Keypoint descriptor

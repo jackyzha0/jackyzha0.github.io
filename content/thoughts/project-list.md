@@ -33,6 +33,7 @@ date: 2021-06-17T00:33:42-04:00
 - digital gardening
 	- seperate sources from thoughts
 	- rename concepts to be more atomic
+- https://locomotivemtl.github.io/locomotive-scroll/
 
 ### Tools for Thought
 * write first, organize later

@@ -43,9 +43,9 @@ https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more?u
 
 **It is crucial to understand that technology is not innovation.** This preoccupation with novelty is unfortunate because it fails to account for technologies in widespread use, and it obscures how many of the things around us are quite old.
 
-[Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect) -> future life expectancy of a bit of technology is proportional to its current age (i.e. the longer something has survived, the more likely it is to have a longer remaining life expectancy). Longevity implies a resistance to change, obsolescence or competition and greater odds of continued existence into the future.
-
 The stalest innovation stories focus on well-to-do white guys sitting in garages in a small region of California, but human beings in the Global South live with technologies too. Which ones? Where do they come from? How are they produced, used, repaired?
+
+Related: [Lindy Effect](thoughts/lindy-effect.md)
 
 Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, existing things rather than novel ones reminds us of the absolute centrality of the work that goes into keeping the entire world going. We need to acknowledge and attribute where we are today to the shoulders of the giants we stand on.
 

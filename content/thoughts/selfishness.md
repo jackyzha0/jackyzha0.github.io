@@ -24,10 +24,14 @@ General thoughts:
 
 Is there a label for someone who prioritizes themselves so that they can best help others in the long term? 
 
-https://www.skepticspath.org/blog/how-to-be-intelligently-selfish-dalai-lama/
-
 I think I'm realizing that I am selfish in the sense that I will only help others if it is something I will enjoy doing and obviously that depends on who it is I'm helping, what I'm doing, my state of self, etc.
 
 The catch is that I just really enjoy helping others in pretty much all situations (with a few exceptions, like when my own personal well-being is in jeopardy or the person I just an asshole)
 
 How do I unlearn the negative connotations associated with being selfish?
+
+## Intelligently Selfish
+[Source](https://www.skepticspath.org/blog/how-to-be-intelligently-selfish-dalai-lama/)
+
+His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness -- caring about others.
+
