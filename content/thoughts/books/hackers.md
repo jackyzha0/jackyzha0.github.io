@@ -38,7 +38,7 @@ Labels are logically [decentralized](thoughts/decentralization.md) so if it no l
 
 I think my case for this argument would be slightly different if PG focused more on the *public* perception of the label.
 
-### Academia
+### [Academia](thoughts/academia.md)
 1. Research must be original -- this drives people to stake out a piece of ground no one wants
 2. Research must be substantial -- awkard problems mean more substance to write about and solve, discouraging elegant solutions
 

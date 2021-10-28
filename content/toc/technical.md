@@ -21,6 +21,7 @@ date: 2021-07-14T15:29:51-04:00
 - [DreamCoder](https://arxiv.org/abs/2006.08381)
 - [Neural Radiance Fields (NeRF)](https://arxiv.org/abs/2003.08934)
 - [Language Models are Open Knowledge Graphs](https://arxiv.org/abs/2010.11967)
+- [Just Ask for Generalization](https://evjang.com/2021/10/23/generalization.html)
 ### Tooling
 - [GitHub's move to CodeSpaces](https://github.blog/2021-08-11-githubs-engineering-team-moved-codespaces/)
 ### Infra

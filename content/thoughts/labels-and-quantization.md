@@ -22,7 +22,7 @@ Are overloaded terms still useful? (e.g. [hacker](thoughts/books/hackers.md) has
 
 ## [Feedback Loops](thoughts/feedback-loops.md)
 1. Practice creates new terminology as a way to communicate complex ideas without needing to rexplain each time
-2. Terminology then shapes how we think about the world: [Shapir-Whorf](thoughts/language-of-thought.md)
+2. Terminology then shapes how we think about the world: [Sapir-Whorf](thoughts/language-of-thought.md)
 3. Some terminology becomes outdated as practice changes
 4. Arguments ensue over updating shared terminology (esp as language is decentralized, this can cause fracturing)
 5. Two camps emerge

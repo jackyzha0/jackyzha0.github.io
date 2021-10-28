@@ -52,3 +52,26 @@ Is human intimacy scalable? I think not.
 What if the events were universally accessible but instead of serving everyone, serve those who opt-in to participate more? Cultivation > moderation
 
 If we remove misaligned [incentives](thoughts/incentives.md) and less people come, then tbh that's better, that eliminates the people you didn't want in the first place
+
+### Coordination Headwind
+[Source](https://komoroske.com/slime-mold/)
+
+In small orgs, individuals matter a lot, but when the org gets larger the system (structure + dynamics) dominate.
+
+Bottom-up orgs (slime mold model)
+- unpredictable
+- uncontrollable (can influence via incentives)
+- individual autonomy
+- fluid
+- messy
+- resilient
+- exploratory
+
+Top-down orgs (military model)
+- predictable
+- controllable
+- cog in the machine
+- structured
+- efficient
+- fragile
+- exploitative

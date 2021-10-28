@@ -5,6 +5,8 @@ date: 2021-06-18T10:13:33-04:00
 
 > There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)
 
+My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that “we need better algorithms”. People pay lip service to “simple ideas” but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas. [Source](https://evjang.com/2021/10/23/generalization.html)
+
 ## Cool People/Things
 - http://jeffclune.com/
 - https://www.davidlindlbauer.com/
@@ -15,7 +17,7 @@ date: 2021-06-18T10:13:33-04:00
 https://www.briantimar.com/notes/mimetic/mimetic/
 Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.
 
-## Incentive Structure
+## [Incentive](thoughts/incentives.md) Structure
 Academia feels more pure, more like play? More of a 'constructionist' approach, freedom to ask your own questions rel: [mindstorms](/thoughts/books/mindstorms)
 
 Thinking about how similar the incentive structures are in [hackathons](/posts/hackathons)

@@ -28,3 +28,10 @@ One morning, you notice a child has fallen in and appears to be drowning. To wad
 Do you have any obligation to rescue the child? Unanimously, most people say they do. Does it matter if other people walk by the pond and do nothing? Most people still say no. Does it matter if the child were far away, in another country perhaps? Most people still say no.
 
 "We are all in that situation of the person passing the shallow pond. We can all save the lives of people, both children and adults, who would otherwise die, and we can do so at a very small cost to us: the cost of a new CD, a shirt, or a night out at a restaurant or concert, can mean the difference between life and death to more than one person somewhere in the world."
+
+## Roko's Basilisk
+A form of arithmetical utilitarianism, assuming that one can meaningfully calculate the utility of actions as a numerical value.
+
+You could then "shut up and multiply" utterly negligible probabilities by hypothetical huge outcomes, and take the resulting number seriously — there exists scenarios in which you should torture one person for 50 years if it would prevent dust specks in the eyes of a sufficiently large number of people — resulting in claims like eight lives being saved per dollar donated (a claim made using a calculation of this sort, very popular arguments in EA circles).
+
+See [The Ones Who Walk Away From Omelas](thoughts/articles/the-ones-who-walk-from-omelas.md)

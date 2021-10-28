@@ -1,5 +1,5 @@
 ---
-title: "The Ones Who Walk from Omelas"
+title: "The Ones Who Walk Away From Omelas"
 date: 2021-06-22T09:14:10-04:00
 ---
 
