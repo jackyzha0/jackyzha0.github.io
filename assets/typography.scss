@@ -24,7 +24,13 @@ code {
 
 h1, h2, h3, h4, ol, ul, thead {
   font-family: Inter;
-  color: var(--dark)
+  color: var(--dark);
+}
+
+h1, h2, h3, h4, p, li, text, ol, ul  {
+  font-weight: revert;
+  margin: revert;
+  padding: revert;
 }
 
 p, li, text {

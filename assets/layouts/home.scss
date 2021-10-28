@@ -202,6 +202,7 @@ ul.project-list {
         font-family: "Inter";
         font-weight: 600;
         padding-right: 0.3em;
+        transform: translateY(0.15em);
       }
 
       & > .short-desc {
@@ -210,6 +211,7 @@ ul.project-list {
         font-size: 1em;
         white-space: nowrap;
         margin: 0;
+
 
         @media screen and (max-width: 1440px) {
           display: None;
