@@ -474,10 +474,11 @@ RGB and CIE are linear.
 
 McAdam ellipses are regions where colour differences are imperceptible to the average human eye.
 
-## Scale Invariant Features (SIFT)
+## Keypoint Description
+### Scale Invariant Features (SIFT)
 David Lowe
 
-Invariant to translation, rotation, scale, and other imaging parameters.
+Invariant to translation, rotation, scale, and other imaging parameters. (Generally works for about ~20% change in viewpoint angle)
 
 Advantages:
 - Locality: features are local (robust to occlusion and clutter)
@@ -486,14 +487,78 @@ Advantages:
 - Efficiency: fast (close to real-time performance)
 
 Describes both a **detector** and **descriptor**
-1. Multi-scale extrema detection
-	Uses an octave-based system for pyramid of difference of gaussians.
+1. Multi-scale local extrema detection
+	- Use difference of gradient pyramid (3 scales/octave, down-sample by a factor of 2 each octave)
+2. Keypoint localization
+	- We then remove low constrast or poorly localized keypoints. We can determine good corners by using the covariance matrix! (Threshold on magnitude of extremum, ratio of principal curvatures)
+3. Orientation assignment
+	- Create histogram of local gradient directions computed at selected scale multiplied by the gaussian kernel at the center
+	- Assign canonical orientation at peak of smoothed histogram (mode)
+4. Keypoint description (SIFT Descriptor)
+	- histogram of local gradient directions
+		- (8x(4x4)) = 128 dims
+		- 4x4 = 16 histograms
+		- 8 orientations each
+	- Normalized to unit length to reduce the effects of illumination change
+	Robust to affine changes (rotation and scaling)
+	
+### Histogram of Oriented Gradients (HOG)
+- uses 8x8 cells and blocks which consist of 2x2 cells
+- then for each cell, create a histogram of 'unsigned' gradients
+	- perform soft binning (adding to one bin also adds to neighbour bins)
+- concatenate then L2 normalize
+- 15x7x4x36 = 3780
 
-	Why downsizing the image is chosen over upsizing the template: the first is much more efficient.
+### 'Speeded Up' Robust Features (SURF)
+- 4x4 cell grid of 5x5 cells
+- each cell is represented by 4 values
+	1. sum of all x derivatives
+	2. sum of all y derivatives
+	3. abs of 1
+	4. abs of 2
+- use Haar wavelets filters (simple derivative filters where all black on one side and all white on the other, weighted by gaussian)
+- 4x4x4 = 64 dims
 
-	3 Scales per octave
-1. Keypoint localization
-	We then remove low constrast or poorly localized keypoints. We can determine good. Choose good corners!
-2. Orientation assignment
-	Create histogram of local gradient directions computed at selected scale multiplied by the gaussian kernel at the center, then assign canonical orientation at peak of smoothed histogram (mode)
-3. Keypoint descriptor
+## Object Recognition
+1. Match each keypoint to the database of keypoints
+	To find out probability of correct match, we can compare the ratio of distance between nearest neighbour and 2nd nearest neighbour. A threshold of 0.8 provides great separation.
+2. identify clusters of at least 3 features that agree on an object and pose
+	Lowe uses a generalized Hough transform
+3. check each cluster found by performing detailed geometric fit of affine transformation to the model
+4. accept/reject interpretation accordingly
+	
+### Approximate Nearest Neighbour
+- generally, finding nearest neighbour in high-dimensional data is linear in time (even for KD trees)
+
+### Transformations
+Degrees of freedom (DOF)
+1. translation: 2
+2. rigid (euclidean): 3
+3. similarity: 4
+4. affine: 6
+5. projective: 8
+
+### Random Sample Consensus (RANSAC)
+1. randomly choose minimal subset of data points necessary to fit model
+2. points within some distance threshold of model are a consensus set, the size of the consensus set is the model's support
+3. repeat for N samples, model with biggest support is most robust fit
+
+Choosing number of samples $k$
+1. let $\omega$ be the fraction of inliers
+2. let $n$ be the number of points needed to define hypothesis (e.g. $n=2$ for a line)
+3. suppose $k$ samples of $n$ points are chosen. then
+	1. the probability that all $n$ in a sample are correct is $\omega^n$
+4. the probability that all $k$ samples fail is $(1-\omega^n)^k$, thus we choose a $k$ large enough to keep this below a targe failure rate
+
+Advantages
+- general method
+- easy to implement and calculate failure rate
+Disadvantages
+- only handles a moderate percentage of outliers without cost blowing up
+- many real problems have high rate of outliers (e.g. noise)
+
+### Hough Transform
+- For each token, vote for all models to which the token could belong
+- Return model with most votes
+
+e.g. for each point, vote for all lines that *could* pass through it; true lines will pass through many points and thus receive many votes
