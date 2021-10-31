@@ -8,13 +8,16 @@ draft: true
 
 been a while since I wrote about [digital gardening](posts/digital-gardening.md)
 
+less so a well-kempt, more so a mess of entangled growth
+
+following guides and hard structure is not for me -> too high friction
+its not because i dont like order but because chaos and entropy is good for new ideas
+
 things i've learned
 - name things verbs or nouns to make it easier to link
 - better distinguish between source and thoughts
 
-less so a well-kempt, more so a mess of entangled growth
-its not because i dont like order but because chaos and entropy is good for new ideas
-
+## What is digital gardening?
 thinking is not linear, nor is it [hierarchical](thoughts/articles/city-is-not-a-tree.md). in fact not many things are linear or hierarchical at all, let's not coerce things to be
 
 on-the-fly mind-mapping
