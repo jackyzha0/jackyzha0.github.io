@@ -10,6 +10,7 @@ date: 2021-07-14T15:03:11-04:00
 - [Learning](thoughts/learning.md)
 
 ### Knowledge Sharing
+- [Tools for Thought](thoughts/tools-for-thought.md)
 - [Digital Gardening](/posts/digital-gardening)
 - [Building In Public](/thoughts/building-in-public)
 - [Academia](/thoughts/academia)
