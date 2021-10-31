@@ -3,6 +3,8 @@ title: "Search"
 date: 2021-10-12
 ---
 
+> Search has co-opted the citation, vis-à-vis the hyperlink
+
 The post-WWII 'information explosion' meant that we have a lot of info and not great means of looking through it to find what we want. This is a form of [information retrieval](thoughts/information-retrieval.md).
 
 Inefficient search leads to
@@ -24,3 +26,5 @@ Good way to prototype search system is to analyze the typical dimensions that us
 3. analytical searching on one or more of the facets
 4. empirical searching based on user profiles
 5. similarity searching
+
+

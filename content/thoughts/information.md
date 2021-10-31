@@ -19,6 +19,8 @@ In informatics, there exists the concept of an Information Hierarchy, Knowledge 
 
 Data is transformed into Information, which is transformed into Knowledge, which is then transformed into Wisdom.
 
+> Data is not god-like; it is not absolute truth. It is empathetic. It is imperfect. It is human. 
+
 1. Data: raw or elementary observations about properties of objects, events, and their environment
 2. Information: data after aggregation, processing, analyzing, formatting, and organization to add meaning and context
 

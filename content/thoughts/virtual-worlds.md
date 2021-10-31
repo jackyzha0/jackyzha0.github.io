@@ -14,6 +14,14 @@ https://www.mightyapp.com/
 
 No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves. Interface with these virtual worlds through looking at our screens, typing on our keyboards, etc. even with a [pseudonymous-web](/thoughts/articles/pseudonymous-web) that is not supposedly tied to anything in the physical realm.
 
+> The web is not only an intangible space; it is also a physical space made of brick, mortar, metal trailers, electronics containing magnetic and optical media, and fiber infrastructure. (Safiya Noble)
+  
+MLA 8th Edition (Modern Language Assoc.)  
+Safiya Umoja Noble. Algorithms of Oppression : How Search Engines Reinforce Racism. NYU Press, 2018.  
+  
+APA 7th Edition (American Psychological Assoc.)  
+Safiya Umoja Noble. (2018). Algorithms of Oppression : How Search Engines Reinforce Racism. NYU Press.
+
 Related to: [digital-commons](thoughts/digital-commons.md) and [VR](thoughts/vr.md)
 
 In a world where scarcity is constructed, do we even need to use it? Can we rely on manipulating abundance ([agalmics](thoughts/positive-sum.md)) through [incentives](thoughts/incentives.md)?
