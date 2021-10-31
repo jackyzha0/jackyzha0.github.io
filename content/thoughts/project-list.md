@@ -35,7 +35,7 @@ date: 2021-06-17T00:33:42-04:00
 	- rename concepts to be more atomic
 - https://locomotivemtl.github.io/locomotive-scroll/
 
-### Tools for Thought
+### [Tools for Thought](thoughts/tools-for-thought.md)
 * write first, organize later
 	* good daily notes, choose what to carry over from the previous day
 * block based editors are neat cause i can move stuff around really easily

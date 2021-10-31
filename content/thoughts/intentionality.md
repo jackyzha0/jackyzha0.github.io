@@ -3,8 +3,12 @@ title: "Intentionality"
 date: 2021-09-21T09:51:49-07:00
 ---
 
+## Personal
 -   intentionality is derived
 -   [Chinese room](thoughts/intelligence.md) example tries to show that even programming something with intentionality (a person) with a format program, that formal program carries no additional intentionality
+-   How does intention change with time? Are my intentions in the past just as valid as my current intentions? ([source](https://kernel.community/en/learn/module-3/intention/))
+	-   Smart contracts and blockchains try to permanently embed and codiy intentionality
+	-   But, intentionality doesn't mean you can't change though. People aren't permanent, thoughts aren't permanent. Why should we try to make them so?
 
 ## Dennet
 -   based off of behaviour rather than internal mechanisms
