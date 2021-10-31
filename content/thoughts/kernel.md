@@ -24,3 +24,4 @@ date: 2021-10-30
 - [Intentionality](thoughts/intentionality.md)
 - [Freedom](thoughts/freedom.md)
 - [Remember](thoughts/tools-for-thought.md)
+- [Time](thoughts/attention-economy.md)

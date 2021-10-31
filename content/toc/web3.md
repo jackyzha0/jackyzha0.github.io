@@ -49,9 +49,11 @@ Major benefits:
 
 Limitations
 1. Scalability/Speed: change to state need to be processed and propagated
-2. UX
+2. UX: lots of information, not a lot of good ways to interface with it
 3. Fracturability: can happen when there are disagreements about protocol changes
 4. Cost: gas fees 
+
+Verifiability is the atom of web3. It is what the hyperlink was for Web1.
 
 ## Cool Applications
 ### [Gitcoin](https://gitcoin.co/)
