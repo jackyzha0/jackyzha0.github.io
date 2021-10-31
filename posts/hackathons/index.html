@@ -54,9 +54,9 @@ let term
 source.addEventListener("keyup",(e)=>{if(e.key==="Enter"){const anchor=document.getElementsByClassName("result-card")[0]
 window.location.href=`${anchor.id}#:~:text=${encodeURIComponent(term)}`}})
 source.addEventListener('input',(e)=>{term=e.target.value
-contentIndex.search(term,[{field:"content",limit:10,suggest:true,},{field:"title",limit:5,}]).then(searchResults=>{const titleIds=[...searchResults.filter(x=>x.field==='title')?.[0].result]??[]
-const contentIds=[...searchResults.filter(x=>x.field==='content')?.[0].result]??[]
-const allIds=[...titleIds,...contentIds]
+contentIndex.search(term,[{field:"content",limit:10,suggest:true,},{field:"title",limit:5,}]).then(searchResults=>{const getByField=field=>{const results=searchResults.filter(x=>x.field===field)
+if(results.length===0){return[]}else{return[...results[0].result]}}
+const allIds=[...getByField('title'),...getByField('content')]
 const finalResults=allIds.map(fetch)
 if(finalResults.length===0){results.innerHTML=`<div class="result-card">
             <p>No results.</p>
