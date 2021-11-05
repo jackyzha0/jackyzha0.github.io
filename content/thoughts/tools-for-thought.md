@@ -43,6 +43,11 @@ Is it possible to automatically pick up repeated digital desire paths of user tr
 
 Can we build [memory palaces](thoughts/memory-palace.md)?
 
+The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a context with other concepts.
+
+[Source](https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management)
+
+
 ### Emotion
 Video is incredibly expressive. You can *feel* the passion of people who really care about the things they study, build, and work on.
 

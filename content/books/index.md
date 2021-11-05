@@ -8,7 +8,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
-* **Klara and the Sun** by Kazuo Ishiguro
 * **The Book of Difficult Fruit** by Kate Lebo
 * **A Tale for the Time Being** by Ruth Ozeki
 * **Project Hail Mary** by Andy Weir
@@ -37,6 +36,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Past
 ### 2021
+* **Klara and the Sun** by Kazuo Ishiguro
+* **The Grasshopper: Games, Life and Utopia** by Bernard Suits
 * **The Anthropocene Reviewed** by John Green
 * **Never Let Me Go** by Kazuo Ishiguro
 * [**From Counterculture to Cyberculture**](/thoughts/books/fctc) by Fred Turner
