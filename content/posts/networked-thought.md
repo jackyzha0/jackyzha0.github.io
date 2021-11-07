@@ -1,7 +1,6 @@
 ---
 title: "Networked Thought"
 date: 2021-07-22T18:55:47-04:00
-draft: true
 ---
 
 > "Gardens … lie between farmland and wilderness ... The garden is farmland that delights the senses, designed for delight rather than commodity." -- [Bernstein](http://www.eastgate.com/garden/Gardens.html)
@@ -28,71 +27,52 @@ My blog made me scared of posting. I was scared of putting things into the publi
 
 But honestly, the more I wrote and just put things out there, the less that line of thinking made sense. The internet is pretty [ephemereal already](thoughts/ephemereal-content.md). It's hard enough to *willingly* create something people will remember a week from now, let alone for all of eternity. While this is still a non-zero probability, the consistent outpour of support and interesting comments I *did* get from posting made me feel it was worth it.
 
-I still by and large write for myself. Writing, for me, is a form of [knowledge distillation](thoughts/knowledge-distillation.md). It helps to clarify my thinking and condense my knowledge so I can easily articulate it to others. If done well, I have a **shareable representation of my thoughts** that I can send out into the world and people can respond. Even for my most half-baked thoughts, this helps me create a feedback cycle to strengthen and fully flesh out that idea.
+I still, by and large, write for myself. Writing, for me, is a form of [knowledge distillation](thoughts/knowledge-distillation.md). It helps to clarify my thinking and condense my knowledge so I can easily articulate it to others. If done well, I have a **shareable representation of my thoughts** that I can send out into the world and people can respond. Even for my most half-baked thoughts, this helps me create a feedback cycle to strengthen and fully flesh out that idea.
 
-Digital gardening is not just passive knowledge collection. It's a form of expression and sharing.
-
-Here are some learnings over the past year of digital gardening:
-- Link by concept rather than by exact match. I will often explicitly have a `Related: (some concept)` link somewhere if I feel two subjects are closely associated. These have helped me find really cool connections on numerous occasions. 
-- Name notes to be as simple as possible. Prefer using verbs or nouns to make it easier to link
-- better distinguish between source and thoughts
-	- source for attribution
-
-I use search as an entry-point into a single node, the recall by associativity rather than by indexing. (e.g. I'd like to explore the ideas surrounding tools-for-thought)
-
-When I search, I usually don't know the exact name of the thing I'm looking for, otherwise, why would I be searching for it in the first place?
-
-
-
-
-
-
-
-Instead, the goal should be to tap into your network's collective intelligence to create constructive feedback loops.
-
-> I'd like my browser history to be like a bonsai tree. Carefully growing, trimming, pruning, artfully shaping a beautiful tree of resources and ideas
-
-
-
-linking new knowledge to existing knowledge makes it easy to remember
-
-what is my knowledge flow?
-1. intake
-2. processing
-3. output
-4. feedback
-also being careful of tight [feedback loops](thoughts/feedback-loops.md)
-
-been enjoying putting my work in public (both writing and code)
-invite people in, people give thoughts and feedback
-crazy to see people actually read and interact with what i put out
+Digital gardening is not just passive knowledge collection. It's a form of expression and sharing. The goal should be to tap into your network's collective intelligence to create constructive feedback loops, not to post content that 'gains clout' or makes you look smart.
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-## Inbox Method
-Use Slite and Pocket to have an inbox of temporary thoughts
-keeps my todos, unsorted thoughts, notes to read
+Here are some learnings over the past year of digital gardening:
+- Link by concept rather than by exact match. I will often explicitly have a `Related: (some concept)` link somewhere if I feel two subjects are closely associated. Linking new knowledge to existing knowledge makes it easy to remember. This has helped me find really cool connections on numerous occasions. 
+- Name notes to be as simple as possible. I prefer using verbs or nouns to make it easier to link concepts and thoughts.
+- Good [search](thoughts/search.md) matters a lot. When I search, I usually don't know the exact name of the thing I'm looking for, otherwise, why would I be searching for it in the first place? I use search as an entry-point into a single node, *then* recall by associativity rather than by indexing. But having a good entry-point can make or break my flow into finding what I'm looking for. 
 
-even when reading books, I don't like to take complex notes right away will only keep bookmarks and come back to the bookmarks a second time to generate insights and actual thoughts
+This is still a process I'm refining to this day. Likely, my learnings will have grown by the next time around when I rewrite this again.
 
-this weeds out unnecessary noise and also is a chance for spaced repetition
+## Knowledge Flow
+I don't read everything I come across. I am at a point where I am constantly bombarded with new and interesting things from my Twitter Feed, friends, Slack groups, Discord Servers, Telegram DMs, and so much more.
+
+Despite my manic page parking, I really only get time to read about 30% of content sent my way. Even among those 30%, I probably only have meaningful thoughts and connections with about half of those.
+
+I've started developing a process to better manage my process for information intake.
 
 ### Seeds
-low friction way to evaluate new ideas
-new tab page
+I am a person who needs a very low friction way to dump new ideas and things to look at in the future.
+
+I use [Draft](https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijlaapmiilabpldhmhekeionfh?hl=en) by Slite to have a 'scratch space' in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It's my Apple Notes for my laptop.
+
+I use Pocket to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
+
+Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For [projects](thoughts/project-list.md), writing, and all sorts of reading. Even when reading books, I don't like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.
+
+These are the seeds that form the basis of ideas and thoughts.
 
 ### Saplings
-single nodes
-do not silo notes into categories, prevents us from making surprising connections
+Saplings are single nodes or thoughts. When linking notes, I generally do not silo notes into categories. Sometimes, the presence of specific 'folders' or 'topics' prevents us from making surprising connections between otherwise related topics (e.g. [urban planning](thoughts/urban-planning.md) and [data structures](thoughts/articles/city-is-not-a-tree.md)).
 
-### Branches
-connect ideas where possible
-thread thoughts whenever possible
+Sometimes, I will group nodes under [indexes](toc/directory.md) just so I can can review and approximate how much I've written under specific topics. 
 
 ### Fruits
-creating 'newer' work from branches -> mostly longer form essays, projects, etc.
-sharing the products of your labour with others
+Of course, a knowledge index isn't much use if it doesn't inform future thinking and output. Fruits are what I like to call derivative or 'new' pieces of content.
 
-right now,  traditional 'tools for thought' are not great for this
+It's the act of creating 'newer' work from saplings, mostly longer form essays, projects, etc. At this stage, thoughts and ideas have matured enough to be able to share and collaborate. Right now,  traditional '[tools for thought](thoughts/tools-for-thought.md)' are not great for this aspect, lacking the ability to publish, edit, and share notes with others.
 
-[tools-for-thought](thoughts/tools-for-thought.md)
+## Start your own
+I've found having my own digital garden has been immensely helpful. It's created a playground for me to experiment with writing, have an excuse to read, learn, and share with others, and be less scared of putting this out into the public.
+
+Through tending to this garden [in public](/thoughts/building-in-public), I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.
+
+Maybe you'll find this as an incentive to start your own.
+
+> I'd like digital garden to be like a bonsai tree. Carefully growing, trimming, pruning, artfully shaping a beautiful tree of resources and ideas
