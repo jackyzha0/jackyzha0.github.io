@@ -538,6 +538,7 @@ Degrees of freedom (DOF)
 4. affine: 6
 5. projective: 8
 
+## Data to Model
 ### Random Sample Consensus (RANSAC)
 1. randomly choose minimal subset of data points necessary to fit model
 2. points within some distance threshold of model are a consensus set, the size of the consensus set is the model's support
@@ -562,3 +563,37 @@ Disadvantages
 - Return model with most votes
 
 e.g. for each point, vote for all lines that *could* pass through it; true lines will pass through many points and thus receive many votes
+
+Turning image space into parameter space. Rearranging $y = mx + b$ into $y - mx = b$ where $b$ and $m$ are the variables instead of $y$ and $x$.
+
+We can alternative transform it using Book's Convention: $x\sin(\theta) + y\cos(\theta) + r = 0$. Then, $x\sin(\theta) + y\cos(\theta) = \rho$
+
+Advantages
+- Can handle high percentage of outliers: each point votes separately
+- Can detect multiple instances of a model in a single pass
+Disadvantages:
+- Complexity of search time increases exponentially with the number of model parameters
+- Can be tricky to pick a good bin size
+
+## Stereo
+Computing depth from multiple images. Formulated as a correspondence problem: dtermine match between location of a scene point in one image and its location in another.
+
+Disparity: $d = x - x' = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance from $O$ to epipolar line, and $x'$ is distance from $O'$ to epipolar line. $Z$ is distance from $b$ to target $X$. 
+
+Simple stereo algorithm
+1. Rectify images (make epipolar lines horizontal)
+2. For each pixel
+	1. Find epipolar line
+	2. Scan line for best match
+	3. Compute depth from disparity
+
+Naive approach, pixel-based often lacks content. What we can try is min SSD-error of a window-based approach.
+
+Another approach is to match the edges (the zero-crossings) at different scales.
+
+Note: Sum squared differences (SSD) is the same as Normalized Cross Correlation (NCC)
+
+## Optical Flow
+Determine how objects (and/or the camera itself) move in the 3D world
+
+Difficulty comes as motion is geometric whereas optical flow is radiometric
