@@ -3,6 +3,8 @@ title: "Web3"
 date: 2021-07-28T17:13:54-04:00
 ---
 
+> **Web3 is the open-source ethic extended beyond code as static artifacts but rather as live organisms.**
+
 While crypto protocols operate as open networks, do they truly enact a [public](thoughts/public-goods.md) if solely comprised of private capital?
 
 Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social-contracts.md)"
