@@ -20,6 +20,8 @@ A fun platonic dialogue poised as a tale between insects. The grasshopper, about
 ## A post-work society
 Let us imagine that all of the instrumental activities of human beings have been eliminated. All of the things ordinarily called work are now done by wholly automated machines which are activated solely by mental telepathy, so that not even a minimum staff is necessary for the housekeeping chores of society.
 
+"You talk as though there were but two possible alternatives: either a life devoted exclusively to play or a life devoted exclusively to work. But most of us realize that our labour is valuable because it permits us to play, and we are presumably seeking to achieve some kind of balance between work input and play output. People are not, and do not want to be, wholly grasshoppers or wholly ants, but a combination of the two; people are and want to be (if you will forgive a regrettably vulgar but spooneristically inevitable construction) asshoppers or grants. We can, of course, all cease to work, but if we do then we cannot play for long either, for we will shortly die."
+
 ### Art and Pursuit of Knowledge
 Art has a subject matter which consists in the actions and passions of humanity: with human aspirations and frustrations, hopes and fears, triumphs and tragedies, with flaws of character, moral dilemmas, joy and sorrow. But it would seem that none of these necessary ingredients of art could exist in Utopia, thus there are no artists of any sort in Utopia.
 
@@ -65,13 +67,6 @@ Disagreement in games then, usually comes from the disagreement over whether a c
 ### Distinction between rules and goals
 It is possible to follow the rules of chess [the institution] without playing chess [the game]. On the contrary, one cannot play chess without following the rules (to do so is to be a cheat).
 
-## Lusory Attitude -- the game attitude
-The element which unifies the other elements into a single formula which successfully states the necessary and sufficient conditions for any activity to be an instance of game playing. The elements of game are
-1. The goal
-2. The means of achieving the goal
-3. The rules
-4. The lusory attitude
-
 ### Terminology
 - Prelusory goals: specific achievable state of affairs. They can be described before, or independently of, any game of which it may be, or come to be, a part.
 - Lusory goals: winning the game. Game specific.
@@ -79,9 +74,9 @@ The element which unifies the other elements into a single formula which success
 - Constitutive rules: ruels which prohibit use of the most efficient means for reaching a prelusory goal.
 - Lusory attitude: the acceptance of constitutive rules just so the activity made possible by such acceptance can occur.
 
-## Misc
-"You talk as though there were but two possible alternatives: either a life devoted exclusively to play or a life devoted exclusively to work. But most of us realize that our labour is valuable because it permits us to play, and we are presumably seeking to achieve some kind of balance between work input and play output. People are not, and do not want to be, wholly grasshoppers or wholly ants, but a combination of the two; people are and want to be (if you will forgive a regrettably vulgar but spooneristically inevitable construction) asshoppers or grants. We can, of course, all cease to work, but if we do then we cannot play for long either, for we will shortly die."
-
-"The answer to that argument is that my death is inevitable in any case. Therefore I die or I cease to be the Grasshopper. But since I am just the Grasshopper, no more and no less, dying and ceasing to be the Grasshopper are one and the same thing for me."
-
-"For 'play' we could substitute the expression 'doing things we value for their own sake,' and for 'work' we could substitute the expression 'doing things we value for the sake of something else.'"
+### Lusory Attitude -- the game attitude
+The element which unifies the other elements into a single formula which successfully states the necessary and sufficient conditions for any activity to be an instance of game playing. The elements of game are
+1. The goal
+2. The means of achieving the goal
+3. The rules
+4. The lusory attitude
