@@ -10,6 +10,9 @@ Questions:
 2. As an extension, how do we organize the abundance of [information](thoughts/information.md) we have today so that it is both accessible and useful?
 3. How do we distill all the [research debt](thoughts/articles/research-debt.md) so that our ideas are easily useful to others?
 4. Can we create tools that enable [collaborative-thinking](posts/collaborative-thinking.md)? Is it possible to enable idea-to-idea instead of idea-to-words-to-idea?
+5. How can we make mixed media first-class? Allow drawing, images, and video? Bring back the overhead projector!
+
+Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching
 
 ## On memory
 > If a tree fell and nobody remembered, did it really happen?
@@ -41,12 +44,14 @@ This was demonstrated by chess masters in the 1970's: "Players learn to recogniz
 
 Is it possible to automatically pick up repeated digital desire paths of user trails and pull them into [workflows](thoughts/workflows.md)? take advantage of natural spaced repetition to identify saliency
 
-Can we build [memory palaces](thoughts/memory-palace.md)?
-
 The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a context with other concepts.
 
 [Source](https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management)
 
+Are there ways to 'breadcrumb' how we navigate? Even something as simple as option+click to leave a crumb and when finishing a session, you can save parts of the trail as a flow.
+
+### Spatial
+Can we create spatial reminders that adhere to their contexts? Sticky notes for our mind? A reminder in certain notes to come back later and add to it, etc. Can we build [memory palaces](thoughts/memory-palace.md)? Spatial representations of information? (See https://nototo.app/)
 
 ### Emotion
 Video is incredibly expressive. You can *feel* the passion of people who really care about the things they study, build, and work on.

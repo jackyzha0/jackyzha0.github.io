@@ -12,3 +12,14 @@ Interesting to think about in context of single agents in multi-agent systems. H
 
 Even in systems of [representation](/thoughts/representation)
 
+## Gall's Law
+A rule of thumb for complex system design: simple alphabets produce complex behaviors, complex alphabets produce stupid behaviors
+
+> A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system
+
+## Lossiness as Mutation
+[Source](https://subconscious.substack.com/p/self-organizing-ideas)
+
+Maybe chaos is necessary for [emergent behaviour](thoughts/emergent-behaviour.md). Thus, lossy communication in low [bandwidth](thoughts/bandwidth.md) communication helps seed for selection/mutation of new ideas. Examples of this include writing.
+
+When we write, **[we flatten the cloud of associated ideas in our head](https://subconscious.substack.com/p/hypertext-montage)** into a linearized subset (lossy). The reader then unflattens this linearized subset into their own cloud of associated ideas (lossy). Each lossy step is an opportunity for **mutations** in understanding to emerge.

@@ -24,7 +24,7 @@ https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html
 * impostor syndrome
 
 ## Communication
-bandwidth of communication mediums
+[bandwidth](thoughts/bandwidth.md) of communication mediums
 * 6 word story → baby shoes for sale, never worn
 * creativity in interpretation
 * low bandwidth mediums require interpretation

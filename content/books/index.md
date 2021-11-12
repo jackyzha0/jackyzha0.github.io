@@ -12,7 +12,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **A Tale for the Time Being** by Ruth Ozeki
 * **Project Hail Mary** by Andy Weir
 * **The Midnight Library** by Matt Haig
-* **The Player of Games** by Iain M. Banks
 
 ### Non-fiction
 * **Seeing Like A State** by James C. Scott
@@ -21,12 +20,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Doughnut Economics** by Kate Raworth
 * **How to Do Nothing** by Jenny Odell
 * **Blockchain Chicken Farm** by Xiaowei Wang
-* **Streetfight** by Janette Sadik-Khan
-* **System Error** by Rob Reich
 * **Radical Markets** by Eric A. Posner and E Glen Weyl
 * **Roads and Bridges** by Nadia Eghbal
 * **The Disappearance of Rituals** by Byung-Chul Han
 * **Postmortems** by Raph Koster
+* **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
 * **Mutual Aid** by Dean Spade

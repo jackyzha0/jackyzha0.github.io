@@ -20,9 +20,9 @@ date: 2021-07-02T21:37:23-04:00
     -   once patterns were found, they were able to predict the intended movements directly from the neural activity
 ## Telepresence
 - literally remote presence
--   telephone line → thin, narrow bandwidth of aural telepresence
+-   telephone line → thin, narrow [bandwidth](thoughts/bandwidth.md) of aural telepresence
 -   far end, dennets experiment → leave brain and body joined and intact, but wrap the body in a kind of additional sensory cocoon
--   if this is achievable, would seemingly require a high-bandwidth multi-sensory bath of information with local sensory stimulation
+-   if this is achievable, would seemingly require a high-[bandwidth](thoughts/bandwidth.md) multi-sensory bath of information with local sensory stimulation
 -   "But as soon as a distant camera responds to your controls, and especially if the mode of control is either ‘natural’ (the helmet rig) or highly practiced (a video-gamer with a joystick), you begin to feel relocated, as if you are in the distant scene"
 -   human vision involves a complex process of intelligent search and just-in-time information retrieval
 -   upside-down world example

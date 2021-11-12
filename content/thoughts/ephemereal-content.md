@@ -38,8 +38,3 @@ The promise of the web is that Alexandria’s library might be resurrected for t
 
 Modern content is sometimes actually assembled on the fly through the likes of Ruby, Django, Next.js, etc. Not actual 'flat'/self-enclosed pages
 The data may exist but not the in the format it was originally delivered in
-
-## Interpretation
-Does moving closer to real-time mean less interpretation? Less expressive mediums like text mean that a lot of the emotion and meaning is left up to the reader to interpret and guess at. As we move to higher bandwidth mediums (e.g. calls and video), is there less room to interpret?
-
-What does this mean for art which inherently requires interpretation? Will we ever get to a communication medium so direct (e.g. mind-to-mind) that it doesn't require interpretation? What about [qualia](thoughts/qualia.md) and the subjective human experience?
