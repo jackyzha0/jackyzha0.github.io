@@ -5,6 +5,8 @@ date: 2021-06-23T15:07:59-04:00
 
 So much of today's society revolves around *creating new things* rather than *maintaining existing things*. Yet,  the two go hand in hand - innovation without the ability to scale and maintain is frivolous, and maintenance without innovation is stagnation.
 
+> Almost no buildings adapt well. They're _designed_ not to adapt; also budgeted and financed not to, constructed not to, administered not to, maintained not to, regulated and taxed not to, even remodelled not to. But all buildings (...) adapt anyway, however poorly, because the usages in and around them are changing constantly. -- Stewart Brand
+
 There is importance in indigenous knowledge and tradition.
 
 Web3: shouldering the cost of maintenance among the users rather than centralizing it with the creators

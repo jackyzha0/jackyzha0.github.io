@@ -37,6 +37,11 @@ Yet not perfect
 * The 'public' that this infrastructure serves is mostly decentralized finance
 Both of these main tokeholders share one common concern: price
 
+### Stone Soup Metaphor
+[Source](https://en.wikipedia.org/wiki/Stone_Soup)
+
+Properly seeding new initiatives to set the expectations for future potential contributors.
+
 ### 'Voice' in web3
 "The equivalence of stake and voice in crypto is reminiscent of early American democracy, in which political representation was conditioned on property ownership. Under this regime, only 6% of the total US population was eligible to vote—a laughably exclusionary idea of the body politic by today's standards (Ratcliffe, 2013)"
 

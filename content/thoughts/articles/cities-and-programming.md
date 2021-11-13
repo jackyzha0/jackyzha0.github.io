@@ -19,11 +19,9 @@ Almost no buildings adapt well. They're designed not to adapt; also budgeted and
 
 Open-closed principle
 
-How do we build software so that it gradually and gracefully degrades rather than abruptly stops working?
-Just like software systems, any building built using any kind of materials requires some maintenance over time. And just like with software systems, building owners are often bad at performing the necessary maintenance.
+How do we build software so that it gradually and gracefully degrades rather than abruptly stops working? Just like software systems, any building built using any kind of materials requires some [creation-vs-maintenance](thoughts/creation-vs-maintenance.md) over time. And just like with software systems, building owners are often bad at performing the necessary maintenance.
 
 The idea of chaos engineering is perhaps a first step in this direction.
-
 
 Rebuilding the shrine https://en.wikipedia.org/wiki/Ise_Grand_Shrine -> retaining knowledge through constant revision
 

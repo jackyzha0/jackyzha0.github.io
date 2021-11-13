@@ -1,5 +1,5 @@
 ---
-title: "Grasshopper"
+title: "The Grasshopper: Games, Life and Utopia"
 date: 2021-11-07
 ---
 

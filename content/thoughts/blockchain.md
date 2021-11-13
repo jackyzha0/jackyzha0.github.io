@@ -34,6 +34,9 @@ After going through a bunch of Kernel modules, Austin came upon a name for the c
 
 In actuality, the *layer* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
 
+## Permanence
+Also just leans heavily in the direction of [digital permanence](thoughts/digital-permanence.md). What do we lose when we lose deletion?
+
 ## Data
 [Source](https://kernel.community/en/learn/module-1/promise-blockchains)
 

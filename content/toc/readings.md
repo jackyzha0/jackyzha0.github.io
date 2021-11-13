@@ -11,6 +11,7 @@ Notes on my favourite articles and [books](/books).
 - [Mindstorms](/thoughts/books/mindstorms)
 - [Ghost Work](thoughts/articles/ghost-work.md)
 - [Making and Maintenance of Open Source Software](thoughts/books/oss.md)
+- [The Grasshopper: Games, Life and Utopia](thoughts/books/grasshopper.md)
 
 ## Articles
 ### Urban Planning
