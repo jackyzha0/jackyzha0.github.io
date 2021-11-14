@@ -28,9 +28,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
-* **How to Do Nothing** by Jenny Odell
+* [**How to Do Nothing**](thoughts/books/how-to-do-nothing.md) by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
-
 
 ## Past
 ### 2021
