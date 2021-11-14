@@ -42,6 +42,8 @@ Both of these main tokeholders share one common concern: price
 
 Properly seeding new initiatives to set the expectations for future potential contributors.
 
+Preventing the [cold-start problem](https://en.wikipedia.org/wiki/Cold_start_(recommender_systems))
+
 ### 'Voice' in web3
 "The equivalence of stake and voice in crypto is reminiscent of early American democracy, in which political representation was conditioned on property ownership. Under this regime, only 6% of the total US population was eligible to vote—a laughably exclusionary idea of the body politic by today's standards (Ratcliffe, 2013)"
 

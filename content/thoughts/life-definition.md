@@ -6,8 +6,6 @@ date: 2021-07-02T21:38:52-04:00
 # Artificial
 [Source](https://authors.library.caltech.edu/13564/1/BEDal00.pdf)
 
-
-
 # Spinoza
 [Source](https://www.theguardian.com/commentisfree/belief/2011/mar/14/spinoza-understanding-emotions)
 

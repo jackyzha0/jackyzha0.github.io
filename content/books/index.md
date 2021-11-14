@@ -14,11 +14,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Midnight Library** by Matt Haig
 
 ### Non-fiction
+* **Winners Take All** by Anand Giridharadas
+* **Mutual Aid** by Dean Spade
 * **Seeing Like A State** by James C. Scott
 * **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
 * **Doughnut Economics** by Kate Raworth
-* **How to Do Nothing** by Jenny Odell
 * **Blockchain Chicken Farm** by Xiaowei Wang
 * **Radical Markets** by Eric A. Posner and E Glen Weyl
 * **Roads and Bridges** by Nadia Eghbal
@@ -27,13 +28,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
-* **Mutual Aid** by Dean Spade
+* **How to Do Nothing** by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
-* **Winners Take All** by Anand Giridharadas
-* **Atlas of AI** by Kate Crawford
+
 
 ## Past
 ### 2021
+* [**Atlas of AI**](thoughts/books/atlas-of-ai.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro
 * [**The Grasshopper: Games, Life and Utopia**](thoughts/books/grasshopper.md) by Bernard Suits
 * **The Anthropocene Reviewed** by John Green

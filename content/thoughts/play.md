@@ -3,7 +3,7 @@ title: "Play"
 date: 2021-10-15
 ---
 
-Play: the intentional activity of doing the thing you would want to do
+Play: the intentional activity of doing the thing you would want to do. 
 
 [Source](https://kernel.community/en/learn/module-1/joyful-subversion)
 

@@ -17,6 +17,10 @@ A rule of thumb for complex system design: simple alphabets produce complex beha
 
 > A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system
 
+### Measures of Complexity
+- [Vapnik–Chervonenkis dimension](https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_dimension): cardinality of the largest set of points that a binary classification algorithm can learn.
+- [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity): length of the shortest computer program that produces the object as output.
+
 ## Lossiness as Mutation
 [Source](https://subconscious.substack.com/p/self-organizing-ideas)
 
