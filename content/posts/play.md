@@ -3,8 +3,9 @@ title: "What is play?"
 date: 2021-11-14
 ---
 
-*Extension of thoughts about [play](thoughts/play.md) and discussion from our Interact [Circle](thoughts/circle.md) on Hackathon Culture + Play.*
+*Extension of thoughts about [play](thoughts/play.md) and discussion from our Interact [Circle](thoughts/circle.md) on [Hackathon Culture](posts/hackathons.md) + Play.*
 
+## Defining play
 I've spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals from the amalgamation of sets collected over the years. 
 
 So much time spent thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about what *play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but to put words to it feels difficult.
