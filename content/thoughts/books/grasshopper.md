@@ -6,7 +6,7 @@ date: 2021-11-07
 "It is the attempt to discover and formulate a definition, and to follow the implications of that discovery even when they lead in surprisingly, and sometimes disconcerting, directions."
 
 ## The Grasshopper
-A fun platonic dialogue poised as a tale between insects. The grasshopper, about to die for winter, leaves his disciples with a few riddles. Within these tales, the grashopper details his philosophy of "refusing to work and insisting upon devoting himself exclusively to play". Of course, his disciples challenge him about this, leading to a journey of defining what games are, attitudes toward playing games, and the role of games in utopias. 
+A fun Platonic dialogue poised as a tale between insects. The grasshopper, about to die for winter, leaves his disciples with a few riddles. Within these tales, the grasshopper details his philosophy of "refusing to work and insisting upon devoting himself exclusively to play". Of course, his disciples challenge him about this, leading to a journey of defining what games are, attitudes toward playing games, and the role of games in utopias. 
 
 (When talking about why the author chose to write the book as a Platonic dialogue) "His refusal to express himself in a plain expository style is perhaps no different in principle from someone's setting out to write an entire book without using the letter *e*"
 
@@ -27,7 +27,7 @@ Art has a subject matter which consists in the actions and passions of humanity:
 
 The acquisition of knowledge, just like the acquisition of anything else, is an instrumental process; that is acquisition is instrumental to possession, no matter what it is. We must therefore assume that all Utopians have acquired all the knowledge there is. Thus, there are no scientists, philosophers, or any other intellectual investigators.
 
-We can call this state of affirs the **Alexandrian Condition of Man**, after Alexander the Great. When there are no more worlds to conquer, we are not filled with satisfaction but with despair.
+We can call this state of affairs the **Alexandrian Condition of Man**, after Alexander the Great. When there are no more worlds to conquer, we are not filled with satisfaction but with despair.
 
 Thus in Utopia, we need therefore is some activity in which what is instrumental is inseparably combined with what is intrinsically valuable, and where the activity is not itself is not itself an instrument for some further end: games. Games have obstacles which we can strive to overcome *just so that* we can possess the activity as a whole (playing the game).
 
@@ -54,7 +54,7 @@ Games which are competitive (read: telic) involve winning and losing -- that is 
 
 > Do you like the act of climbing the mountain or just being at the top? Because the latter doesn't require the first.
 
-Games, simply put, reverse the ends and means of other activities. In Kant's *Critique of Aesthetic Judgement*, he likens aesthetic experience to play as a kind of 'purposiveness without purpose' 
+Games, simply put, reverse the ends and means of other activities. In Kant's *Critique of Aesthetic Judgment*, he likens aesthetic experience to play as a kind of 'purposiveness without purpose' 
 
 ### Open and Closed Games
 - **Open games**: system of reciprocally enabling moves whose purpose is the continued operation of the system.
@@ -71,7 +71,7 @@ It is possible to follow the rules of chess [the institution] without playing ch
 - Prelusory goals: specific achievable state of affairs. They can be described before, or independently of, any game of which it may be, or come to be, a part.
 - Lusory goals: winning the game. Game specific.
 - Lusory means: means which are permitted (legal or legitimate) in the attempt to achieve prelusory goals.
-- Constitutive rules: ruels which prohibit use of the most efficient means for reaching a prelusory goal.
+- Constitutive rules: rules which prohibit use of the most efficient means for reaching a prelusory goal.
 - Lusory attitude: the acceptance of constitutive rules just so the activity made possible by such acceptance can occur.
 
 ### Lusory Attitude -- the game attitude
