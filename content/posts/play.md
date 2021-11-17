@@ -18,10 +18,10 @@ Play is the act of enjoying the process, the means to the end. To have as much f
 
 Yet this definition still seems inadequate. What separates work from play? Are they mutually exclusive? What about those who cannot afford time out of their day to do anything *but work*? Those who play games professionally?
 
-Here, I turn to Odell's [*How to do Nothing*](thoughts/books/how-to-do-nothing.md) and Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/books/grasshopper.md) to further explore this definition.
+Here, I turn to Odell's [*How to Do Nothing*](thoughts/books/how-to-do-nothing.md) and Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/books/grasshopper.md) to further explore this definition.
 
-## How to do Nothing
-Odell's main tenet of her book is quite literally the title: how to do nothing. *How to do Nothing* focuses on resisting the current attention economy. The act of doing nothing "in opposition to a productivity-obsessed environment" can help restore communities, both locally and beyond.
+## How to Do Nothing
+Odell's main tenet of her book is quite literally the title: how to do nothing. *How to Do Nothing* focuses on resisting the current attention economy. The act of doing nothing "in opposition to a productivity-obsessed environment" can help restore communities, both locally and beyond.
 
 *Nothing*, in this case, refers not to actually doing nothing but rather to not participating in the [attention economy](thoughts/attention-economy.md) and hustle culture, *i.e.* doing nothing productive.
 
@@ -29,18 +29,16 @@ Recently, I have been grappling with the question of whether self-care is [selfi
 
 ![](/posts/images/play/long-term.png)
 
-How can I justify setting aside time to do nothing when I have so many people asking for my time and pulling me in so many directions? In the attention economy, attention is scarce. **Play is what allows us to create local spaces of abundance.**
+How can I justify setting aside time to do nothing when I have so many people asking for my time and pulling me in so many directions? In the attention economy, attention is scarce. Play allows us to create spaces where saying 'no' is okay. **Play is what allows us to create local spaces of abundance.**
 
 > "Caring for myself is not self-indulgence, it is self preservation, and that is an act of political warfare."
 
-Play allows us to create spaces where saying 'no' is okay. By definition, nobody *forces* you to play. By creating spaces of play, we create spaces of **abundance** for attention and time.
-
-Doing nothing 'productive' is the catalyst that will enable the post-attention-economy society that sets the scene for more rigorous definitions of playing in *The Grasshopper*.
+Play is the catalyst that will enable the post-attention-economy society. But what do we do when we get there?
 
 ## The Grasshopper
-*Of all the things you could do in utopia, why would you play games?*
+*Of all the things you could do in utopia, why would one play games?*
 
-*The Grasshopper* was a book unlike any I've ever read before. It was surreal to say the least that a talking grasshopper and his insect disciples convinced me, through [Socratic dialogue](https://www.thoughtco.com/socratic-dialogue-argumentation-1691972) nonetheless, that "refusing to work and insisting upon devoting himself exclusively to play" is a perfectly acceptable thing to embody.
+*The Grasshopper* was a book unlike any I've ever read before. It was surreal that a talking grasshopper and his insect disciples convinced me, through [Socratic dialogue](https://www.thoughtco.com/socratic-dialogue-argumentation-1691972) nonetheless, that "refusing to work and insisting upon devoting himself exclusively to play" is a perfectly acceptable thing to embody.
 
 Whereas Odell focused on how to get to a post-work society, Suit's approach to play and games focuses on what to do *in* a post-work society. A utopia of doing absolutely nothing feels dreadfully boring. What is there left to do? To play games, obviously!
 
@@ -49,7 +47,7 @@ Not in the narrow-definition of just chess, or basketball, or a video game. But 
 Games, as Suits defines it, are "goal-directed activities in which inefficient means are intentionally chosen." **Playing a game is the voluntary attempt to overcome unnecessary obstacles.**
 
 ### A post-work society
-Following Suit's use of Socratic dialogue in his book, I will do an abridged version arguing for why play is not only necessary but the *only thing* that can exist in a post-work utopia.
+In fact, I posit that play is not only necessary but the *only thing* that can exist in a post-work utopia. Let us explore this argument through a Socratic dialogue.
 
 ---
 
@@ -61,7 +59,7 @@ Following Suit's use of Socratic dialogue in his book, I will do an abridged ver
 
 **S**: You talk as though there are only two possibilities: either a life devoted exclusively to play or a life devoted exclusively to work. How will you feed yourself? Put a roof over your head?
 
-**G**: The only argument against the life I wish to lead is death. One dies if they do not work. Yet, death is inevitable. To continue to work is to bring about the death of my character, my curiosity about the world, my will to exist. To continue to work would effectively cause my death. If I die regardless, I might as well live a life I fully enjoy, if not short. What is life for, if not to enjoy it and to seek pleasure out of things you find valuable?
+**G**: The only argument against the life I wish to lead is death. One dies if they do not work. Yet, death is also inevitable. To continue to work is to bring about the death of my character, my curiosity about the world, my will to exist. To continue to work would effectively cause my death. If I die regardless, I might as well live a life I fully enjoy, if not short. What is life for, if not to enjoy it and to seek pleasure out of things you find valuable?
 
 **S**: This seems awfully hedonistic of you. What about personal fulfillment? Don't you have responsibilities to the rest of society?  If everybody lived like you, society itself would collapse.
 
@@ -69,7 +67,7 @@ Following Suit's use of Socratic dialogue in his book, I will do an abridged ver
 
 **S**: I guess there is no harm to dreaming a little. I'm curious what this future of yours could look like.
 
-**G**: Wonderful. Let us imagine an utopic future where all work has been automated by machines activated purely by thinking about it, requiring no labour to maintain its running cogs or to provide its goods and services to society. This is a utopia of abundance. Anything you could wish for, you can have: food, luxury, knowledge, happiness. In this utopia, one does not need to work to sustain themselves. I argue that there is no work to be done here. In fact, the only *rational* activity is to play.
+**G**: Wonderful. Let us imagine an utopic future where all work has been automated by machines activated purely through thought, requiring no labour to maintain its running cogs or to provide its goods and services to society. This is a utopia of abundance. Anything you could wish for, you can have: food, luxury, knowledge, happiness. In this utopia, one does not need to work to sustain themselves. I argue that there is no work to be done here. In fact, the only *rational* activity is to play.
 
 **S**: Forgive my interruption, but how do you define 'play' here? Isn't it at odds with your definition of 'work'?
 
@@ -85,9 +83,9 @@ Person **A** clearly considers mountain climbing *work* whereas **B** considers 
 
 **S**: Ah, I see. This clarifies my understanding of how you define 'work' and 'play', but I still have a counterpoint. What about those who enjoy their work? The scientist, who after a great effort, has a major breakthrough on a problem they've been stumped on for ages. Far from rejoicing in the discovery, they are eagerly searching for their next challenge to be engaged once more. The carpenter who builds houses because she likes how they look and the feeling of it coming together. Can these individuals not exist in your utopia?
 
-**G**: Interesting point. I would posit that both of the mentioned individuals are actually *playing games*. The resolution appears to be the fact that activities which one views as instrumentally valuable (work) can, for another, be intrinsically valuable (play). The human experience is subjective, there is no universal standard for whether society considers something work or play. An environment of play is created when one self-imposes rules to prevent them from the most efficient way of achieving their goal.
+**G**: Hmm. I would posit that both of the mentioned individuals are actually *playing games*. The resolution appears to be the fact that activities which one views as instrumentally valuable (work) can, for another, be intrinsically valuable (play). The human experience is subjective, there is no universal standard for whether society considers something work or play. An environment of play is created when one self-imposes rules to prevent them from the most efficient way of achieving their goal.
 
-To the carpenter who enjoys building for its own sake, that otherwise instrumental activity has intrinsic value as well. The same could be true of anyone who really enjoys their work, whatever that work might be. This is definition of game playing.
+To the carpenter who enjoys building for its own sake, that otherwise instrumental activity has intrinsic value as well. The same could be true of anyone who really enjoys their work, whatever that work might be. This is the definition of game playing.
 
 **S**: This does make a lot of sense. So in this utopia that you propose, I could theoretically just do what I find intrinsically valuable -- play? And I suppose the rest of my needs would be met by the machines?
 

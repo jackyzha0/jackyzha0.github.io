@@ -38,3 +38,14 @@ The promise of the web is that Alexandria’s library might be resurrected for t
 
 Modern content is sometimes actually assembled on the fly through the likes of Ruby, Django, Next.js, etc. Not actual 'flat'/self-enclosed pages
 The data may exist but not the in the format it was originally delivered in
+
+## Tools for Communication
+[Source](https://twitter.com/vgr/status/1460338562231013376)
+
+Stream interfaces like Discord and Slack basically create a single global timeline that moves at a certain rate. If you miss a certain conversation, it flows away.
+
+Someone once described Slack as the online version of the open office arrangement -- it puts the pressure of everything being visible all the time to everybody on the individual.
+
+We do "gardening" in our tools for thought but it's not exactly social first. Sure, we can leave messages for each other but this is not communication. It's more like background cueing/prompting.
+
+How can we great mangroves? Garden/forest type ecosystems which have gently flowing multi-branched stream systems.

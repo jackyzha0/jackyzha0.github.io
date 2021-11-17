@@ -5,6 +5,8 @@ date: 2021-10-08
 
 [Source](https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58)
 
+The universal message bus.
+
 An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md) and [Ethereum](thoughts/ethereum.md).
 
 Characteristics:

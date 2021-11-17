@@ -13,7 +13,6 @@ Is there a difference between genuine altruism vs egoistic altruism?
 
 Is [play](thoughts/play.md) even self-care?
 
-
 Reverse machiavellianism
 -   machiavellian is like you do the good thing for a selfish ends
 -   opposite would be you do the selfish thing for a good ends
@@ -35,3 +34,9 @@ How do I unlearn the negative connotations associated with being selfish?
 
 His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness -- caring about others.
 
+## Porousness of the self
+selfishness depends on what the definition of the self is 
+
+[noosphere](https://en.wikipedia.org/wiki/Noosphere) as the extended self
+
+[The Egg](https://www.youtube.com/watch?v=h6fcK_fRYaI) by Andy Weir + Kurzgesagt
