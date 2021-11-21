@@ -121,7 +121,7 @@ Consider:
 	-   e.g. for think-aloud, it might be good to record action vs spoken comments
 
 ## Questionnaire
-Survey vs Questionnaire: the questionnaire is a *part* of the survey. The questionnaire is just the concrete thigns you're asking.
+Survey vs Questionnaire: the questionnaire is a *part* of the survey. The questionnaire is just the concrete things you're asking.
 
 Pros
 -   cheap
@@ -145,12 +145,12 @@ Keep in mind
 Don't use vague questions, pilot the questionnaire before testing.
 
 Questions
-- should not be transferable to other interfaces, can't be interpreted in different ways depending on judgement (i.e. domain specific and clear wording)
--  avoid double-barrelled questions and leading questions
+- should not be transferable to other interfaces, can't be interpreted in different ways depending on judgment (i.e. domain specific and clear wording)
+-  avoid double-barreled questions and leading questions
 -  to de-bias: neutral language, can have random order of questions for different participants
 -  for validity
 	-  use previously validated questionnaires
-	-  traingulation (ask multiple questions about the same matter)
+	-  triangulation (ask multiple questions about the same matter)
 	-  piloting
 
 #### Types of questions**
@@ -160,10 +160,10 @@ Questions
 		-   range of answers to demo questions is predictable: offer a predefined list
 		-   interval doesn't have to be equal in all cases, depends on what you want to know
 		-   mention how many boxes to check, be consistent with ascending/descending order
-	-   likert and semantic differential scale
+	-   Likert and semantic differential scale
 		-   used for measuring opinions, attitudes, and beliefs
 		-   widely used for evaluating user satisfaction
-		-   likert: a five, seven, or nine-point agreement scale used to measure respondents' agreement with various statements
+		-   Likert: a five, seven, or nine-point agreement scale used to measure respondents' agreement with various statements
 		-   semantic differential scale: rely on choosing pairs of adjectives to explore a range of bipolar attitudes about particular opinions
 	-   ranked (closed)
 		-   respondent places ordering on items in a list
@@ -184,7 +184,7 @@ Checklist
 ## Data and Analysis
 - Subjective: what you were told what happened
 - Objective: what you captured using your senses
-- Quantative: data in the form of numbers or data that can be easily translated into numbers. Focuses on ascertain magnitude, amount, or size of something
+- Quantitative: data in the form of numbers or data that can be easily translated into numbers. Focuses on ascertain magnitude, amount, or size of something
 - Qualitative: data in the form of words and images. Focuses on nature of something (themes, patterns, and stories)
 
 Note that quantitative data is not always objective! Subjectivity can come from participants in how they express opinions or from investigators during the data capturing/interpreting/analysis process.

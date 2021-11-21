@@ -7,9 +7,9 @@ date: 2021-07-28T17:13:54-04:00
 
 While crypto protocols operate as open networks, do they truly enact a [public](thoughts/public-goods.md) if solely comprised of private capital?
 
-Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social-contracts.md)"
+Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social-contracts.md)" However, blockchain as a technology only *enables* decentralization, it doesn't guarantee it.
 
-The cyberpunkspirit: the basic property of which adverserial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
+The cyberpunk spirit: the basic property of which adversarial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Index
 - [Blockchain](thoughts/blockchain.md)

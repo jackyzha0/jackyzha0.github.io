@@ -596,4 +596,72 @@ Note: Sum squared differences (SSD) is the same as Normalized Cross Correlation 
 ## Optical Flow
 Determine how objects (and/or the camera itself) move in the 3D world
 
-Difficulty comes as motion is geometric whereas optical flow is radiometric
+Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)
+
+### Aperture Problem
+- Without distinct features to track, the true visual motion is ambiguous
+- Locally, one can compute only the component of the visual motion in the direction perpendicular to the contour
+
+### Constraint Equation
+Let image intensity be denoted by $I(x,y,t)$. Then, applying chain rule, we obtain $\frac{dI(x,y,t)}{dt} = I_x\frac{dx}{dt} + I_y\frac{dy}{dt} + I_t$.
+
+Let $u = \frac{dx}{dt}$ and $v = \frac{dy}{dt}$. Then $[u, v]$ is the 2D velocity space.
+
+If we set $\frac{dI(x,y,t)}{dt} = 0$, then we get the **optical flow constraint equation**: $I_xu+I_yv + I_t=0$.
+
+We assume constant brightness for this, meaning $I(x(t), y(t), t) = C$.
+
+We measure each of the following:
+- Spatial Derivative: $I_x = \frac{\partial I}{\partial x}$, $I_y = \frac{\partial I}{\partial y}$
+	- Forward difference
+	- Sobel filter
+	- Scharr filter
+- Optical Flow: $u = \frac{dx}{dt}$, $v = \frac{dy}{dt}$
+	- We need to solve for this! (the unknown in the optical flow problem)
+- Temporal Derivative: $I_t = \frac{\partial I}{\partial t}$
+	- Frame difference
+
+### Lucas-Kanade
+A dense method to compute motion $[u,v]$ at every location in an image.
+
+Where can you see movement that can be effectively computed? A corner!
+
+Solve for $\mathbf v$ in $\mathbf v = (A^TA)^{-1}A^Tb$ where $\mathbf v$ is the 1-by-2 column matrix of $u$ and $v$. $A$ is the $n$-by-2 column matrix of $I_x(q_i)$, $I_y(q_i)$ partial derivatives evaluated at point $q_i$ ($A$ is actually the same matrix $C$ used in Harris corner detection). $b$ is the 1-by-$n$ matrix consisting of the negative of the temporal partial derivative for each point.
+
+![](/thoughts/images/lucas-kanade.png)
+
+Assumptions
+- Motion is slow enough that partial derivatives $I_x$, $I_y$, and $I_t$ are well-defined
+- The optical flow constraint equation holds ($\frac{dI(x,y,t)}{dt} = 0$)
+- Window size is chosen so that motion $[u,v]$ is constant in the window
+- Window size is chosen so that the rank of $A^TA$ is 2 for the window (required inverse exists)
+
+## Classification
+Classifier is a procedure that accepts as input a set of features and outputs a prediction for the class label.
+
+### Bayes Rule
+Let $c$ be the class label and $x$ be the measurement (evidence)
+
+$$P(c|x) = \frac{P(x|c)p(c)}{P(x)}$$
+
+- $P(c|x)$: the posterior probability is the probability of $c$ given $x$ (after the measurement). 
+- $p(c)$: prior probability
+- $P(x|c)$: class-conditional probability (likelihood)
+- $P(x)$: unconditional probability (a.k.a. marginal likelihood)
+
+Decision boundary, the location where one class becomes more probable than the other (e.g the point where the probability classes are equal). 
+
+The Bayes' risk is the shaded region where one class's probability is still non-zero beyond its decision boundary.
+
+![](/thoughts/images/bayes-risk.png)
+
+### ROC Curve
+Trade-off between true positive rate and false positive rate. A random classifier will always have 1:1 true positive and false positive rate
+
+### Parametric vs Non-parametric
+- Parametric classifiers rely on a model
+	- fast, compact
+	- flexibility and accuracy depend on model assumptions
+- Non-parametric classifiers are data driven (rely on comparing to training examples directly)
+	- slow
+	- highly flexible decision boundaries 
