@@ -1,35 +1,37 @@
 ---
-title: "What is play?"
+title: "Play to Win: A Post-Work Society"
 date: 2021-11-14
 ---
 
-*Extension of thoughts about [play](thoughts/play.md) and discussion from our Interact [Circle](thoughts/circle.md) on [Hackathon Culture](posts/hackathons.md) + Play.*
+*Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/circle.md) on [Hackathon Culture](posts/hackathons.md) and Play.*
 
 ## Defining play
-I've spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals from the amalgamation of sets collected over the years. 
+I've spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals.
 
-So much time spent thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about what *play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but to put words to it feels difficult.
+I've spent so much time thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about *what play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but to put words to it feels difficult.
 
-The most intuitive definition is one that comes from Bill Watterson. Anything that you do on your own volition or agency just for its own sake; an *intrinsically* motivated activity. 
+The most intuitive definition is one that comes from Bill Watterson: play is anything that you do on your own volition or agency just for its own sake. It is an *intrinsically* motivated activity.
 
 ![](/posts/images/play/agency.png)
 
-Play is the act of enjoying the process, the means to the end. To have as much fun as possible along the way. To quote [Kernel](https://kernel.community/en/learn/module-1/joyful-subversion), to "turn life into a canvas, rather than a graph with checkpoints".
+Play is the act of enjoying the process, the means to the end. To have as much fun as possible along the way. Quoting [Kernel](https://kernel.community/en/learn/module-1/joyful-subversion), to "turn life into a canvas, rather than a graph with checkpoints".
 
 Yet this definition still seems inadequate. What separates work from play? Are they mutually exclusive? What about those who cannot afford time out of their day to do anything *but work*? Those who play games professionally?
 
-Here, I turn to Odell's [*How to Do Nothing*](thoughts/books/how-to-do-nothing.md) and Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/books/grasshopper.md) to further explore this definition.
+Here, I turn to Jenny Odell's [*How to Do Nothing*](thoughts/books/how-to-do-nothing.md) and Bernard Herbert Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/books/grasshopper.md) to further explore this definition.
 
 ## How to Do Nothing
-Odell's main tenet of her book is quite literally the title: how to do nothing. *How to Do Nothing* focuses on resisting the current attention economy. The act of doing nothing "in opposition to a productivity-obsessed environment" can help restore communities, both locally and beyond.
+Odell’s book *How to Do Nothing* focuses on resisting the current attention economy. Doing ‘nothing’ within a productivity-obsessed environment can, in fact, help to restore communities, both locally and beyond.
 
-*Nothing*, in this case, refers not to actually doing nothing but rather to not participating in the [attention economy](thoughts/attention-economy.md) and hustle culture, *i.e.* doing nothing productive.
+'Nothing', in this case, refers not to actually doing nothing but rather to not participating in the [attention economy](thoughts/attention-economy.md) and hustle culture. 'Nothing' means doing nothing productive.
 
-Recently, I have been grappling with the question of whether self-care is [selfish](thoughts/selfishness.md). My inner self wants to be able to do nothing: just do projects I find fun, hang out with my friends, and go outside. However, I know that *longer-term*, working hard at doing well at my job and in school will do me more good, career-wise.
+Recently, I have been grappling with the question of whether self-care is [selfish](thoughts/selfishness.md). My inner self wants to be able to do nothing: just do projects I find fun, hang out with my friends, and go outside. However, I know that *long term*, working hard at doing well at my job and in school will do me more good, career-wise.
 
 ![](/posts/images/play/long-term.png)
 
-How can I justify setting aside time to do nothing when I have so many people asking for my time and pulling me in so many directions? In the attention economy, attention is scarce. Play allows us to create spaces where saying 'no' is okay. **Play is what allows us to create local spaces of abundance.**
+How can I justify setting aside time to do nothing when I have so many people asking for my time and pulling me in so many directions? In the attention economy, attention is scarce. 
+
+Play allows us to create environments where saying 'no' is okay. By definition, nobody forces you to play. **Play is what allows us to create local spaces of abundance.**
 
 > "Caring for myself is not self-indulgence, it is self preservation, and that is an act of political warfare."
 
@@ -38,13 +40,15 @@ Play is the catalyst that will enable the post-attention-economy society. But wh
 ## The Grasshopper
 *Of all the things you could do in utopia, why would one play games?*
 
-*The Grasshopper* was a book unlike any I've ever read before. It was surreal that a talking grasshopper and his insect disciples convinced me, through [Socratic dialogue](https://www.thoughtco.com/socratic-dialogue-argumentation-1691972) nonetheless, that "refusing to work and insisting upon devoting himself exclusively to play" is a perfectly acceptable thing to embody.
+*The Grasshopper* was a book unlike any I've ever read before. A talking grasshopper and his insect disciples convinced me, through [Socratic dialogue](https://www.thoughtco.com/socratic-dialogue-argumentation-1691972) nonetheless, that "refusing to work and insisting upon devoting himself exclusively to play" is a perfectly acceptable thing to embody.
 
 Whereas Odell focused on how to get to a post-work society, Suit's approach to play and games focuses on what to do *in* a post-work society. A utopia of doing absolutely nothing feels dreadfully boring. What is there left to do? To play games, obviously!
 
-Not in the narrow-definition of just chess, or basketball, or a video game. But a more holistic one that includes climbing mountains, the pursuit of knowledge, and the creation of art itself.
+When I say 'game', I don’t just mean chess, basketball, or a video game. I mean a more holistic one that includes climbing mountains, the pursuit of knowledge, and the creation of art itself.
 
-Games, as Suits defines it, are "goal-directed activities in which inefficient means are intentionally chosen." **Playing a game is the voluntary attempt to overcome unnecessary obstacles.**
+Games, as Suits defines it, are "goal-directed activities in which inefficient means are intentionally chosen." In games, one *purposefully* ignores the more efficient method. To play a game is to do the crossword puzzle *without* looking up the answers, even though looking it up would be the most efficient way of finishing the crossword. The added rules and restrictions are what make possible the act of playing outside of the endless pursuit of efficiency.
+
+**Playing a game is the voluntary attempt to overcome self-imposed obstacles.**
 
 ### A post-work society
 In fact, I posit that play is not only necessary but the *only thing* that can exist in a post-work utopia. Let us explore this argument through a Socratic dialogue.
@@ -71,7 +75,7 @@ In fact, I posit that play is not only necessary but the *only thing* that can e
 
 **S**: Forgive my interruption, but how do you define 'play' here? Isn't it at odds with your definition of 'work'?
 
-**G**: Great question. I supposed I should clarify some terminology. Let us first define something as *instrumental* if it serves as the means to an end (*i.e.* as a way to accomplish a goal). Work then, is explicitly defined as labour which is *instrumentally* valuable.
+**G**: I supposed I should clarify some terminology. Let us first define something as *instrumental* if it serves as the means to an end (*i.e.* as a way to accomplish a goal). Work then, is explicitly defined as labour which is *instrumentally* valuable.
 
 Play, on the other hand, is defined as labour which is non-instrumental. It should be *intrinsically* valuable and self-motivated. Games, then, are the reversal of means and ends. When playing, the means that traditionally entail an end become the ends themselves.
 
@@ -96,11 +100,11 @@ To the carpenter who enjoys building for its own sake, that otherwise instrument
 ---
 
 ## A re-worked definition
-Obviously, this is an exaggeration of the argument I'm hoping to make -- we clearly don't live in this caricature of a post-instrumental society. However, what we do live in is a society whose individuals are malleable to changing how they think.
+Obviously, this is an exaggeration of the argument I'm hoping to make -- we clearly don't live in this caricature of a post-instrumental society. However, we *do* live in is a society that is malleable to change.
 
-Language is one of the only logically [decentralized](thoughts/decentralization.md) aspects of humanity. It is also one that has considerable effects on how we think through the mental models and heuristics that we allow people to construct.
+Language is one of the only logically [decentralized](thoughts/decentralization.md) aspects of humanity. It is also one that has considerable effects on how we think about ourselves and the world.
 
-We started off this journey by asserting that our current accepted definition of play was inadequate. In its place, we offer a charcuterie of alternatives:
+We started off this journey by asserting that our current accepted definition of play was inadequate. In its place, we offer a plurality of alternatives:
 
 - Play is an *intrinsically* motivated activity. 
 - Play is labour which is non-instrumental.

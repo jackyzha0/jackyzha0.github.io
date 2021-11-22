@@ -3,6 +3,8 @@ title: "Play"
 date: 2021-10-15
 ---
 
+Full post on play: [Play to Win: A Post-Work Society](posts/play.md)
+
 Play: the intentional activity of doing the thing you would want to do. 
 
 [Source](https://kernel.community/en/learn/module-1/joyful-subversion)
