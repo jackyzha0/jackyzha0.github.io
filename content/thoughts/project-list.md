@@ -120,81 +120,140 @@ tests:
     
 [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
     
-###  better bash using go (clay)
-workflow
+###  clay
+the cloud-native scripting language
 
-1.  clay build -o program
-2.  ./program
+1. great tooling and extensibility
+	1. static type hinting
+		1. check at compile time
+	2. full HTTP server and request engine
+	3. great compile errors
+	4. compiles down to bytecode using LLVM (find some go/rust bindings for this)
+	5. URL-based module imports
+2. easy to read code
+3. features u love
+	1. pattern matching
+	2. object and array destructuring
+	3. option container
+		1. built-in retry mechanisms
+		2. null coalescing
+	4. chaining
+	5. fat arrow fns
+4. proper stderr for errors
 
-philosophies
+#### notes on syntax
+1. function chaining using the pipe `->`
+2. fat arrow functions `=>` return by default unless you include curly braces (which then explicit return is required)
 
-1.  no explicit loops (foreach, map, filter, reduce only)
-2.  no errors (exit w err code by default)
-
-should be
-
-1.  really simple to do simple disk ops (move, copy, remove)
-2.  common file format reading (csv, txt, excel)
-3.  easy data wrangling with functional pipeline (e.g. map, filter, reduce, pattern match, regex)
-4.  simple http requests
-5.  interface with system processes (e.g. get output of subprocess call like htop or something)
-6.  easy to use modules (import from url would be pog)
-
-```tsx
-import io
-import http
-import sys
-
-content = http.get("<https://example.com/data.csv>")
-print(`fetch completed with status ${content.status}`)
-io.create("data.csv", content.data) // if content is null here, exit 1
-
-fizzbuzz = num -> (num % 3, num % 5) match {
-	case (0, 0) -> "FizzBuzz"
-	case (0, _) -> "Fizz"
-	case (_, 0) -> "Buzz"
-	case _ -> num
-}
-
-data = readCsv("data.csv")
-res = data
-	.map(row -> {
-		// destructuring
-		id, num = row
-		fizzbuzz(num)
-	})
-	.filter(row -> row == "FizzBuzz")
-	.length
-
-io.move("data.csv", "downloaded.csv")
-print(`got ${res} FizzBuzzes`)
-
-resFile = {
-	result: res,
-}
-
- io.isDir("results") match {
-	filename = "result.json"
-
-	// sys.exec returns content and status code
-	// discard status code here
-	lineNumber, _ = sys.exec(`cat ${filename} | wc -l`)
-
-	// if too long, remove and recreate
-	(lineNumber > 5000) match {
-		true -> {
-			io.rm(`results/${filename}`)
-			io.create(`results/${filename}`) // create with no second arg is touch
-		}
-		false -> () // do nothing
-	}
-
-	io.append("results/result.json", resFile)
-}
-
-// exit(0) is implied
 ```
-    
+// simple hello world
+
+name = flags("name") || "World"
+print(`Hello {name}!`)
+
+// alternatively
+name -> writeln("output.txt", mode="append")
+```
+
+```
+// simple calculator cli
+num1 = input("Input first number: ")
+op = match input("Input operation (one of +, -, *, /): ") {
+	"+" : (x,y) => x + y
+	"-" : (x,y) => x - y
+	"*" : (x,y) => x * y
+	"/" : (x,y) => x / y
+	inputOp => error(`{inputOp} was an invalid operation`)
+}
+num2 = input("Input second number: ")
+res = op(num1, num2)
+print(`Your result: {res}`)
+```
+
+```
+// some csv manipulation
+
+type Row {
+	name   :: String
+	age    :: Int
+	points :: Float
+}
+type CSVFormat Row[]
+
+export readcsv = url => 
+	readRemote(url, type=CSV).retry(times=3, strategy="exponential")
+		-> slice(1)
+		-> as(CSVFormat)
+		-> totalPoints
+
+export totalPoints = file =>
+		-> map(row => row.points)
+		-> write("points.txt", mode="overwrite")
+		-> reduce((+), 0)
+		-> x => print(`Total points: {x}`)
+		
+main = {
+	readcsv("http://some_url") -> totalPoints
+	// implic return 0
+}
+```
+
+```
+// testing the above program
+
+// in script.json
+{
+	"name": "count points",
+	"version": "v1.2.1",
+	"scripts": {
+		"build": "clay build",
+		"test": "clay test",
+		"lint": "clay lint",
+	},
+}
+
+// in tests/mocks.json
+"remote": {
+	"http://some_url": "name,age,points\nbob,23,500\njoe,18,1200"
+}
+
+// in tests/points.cl
+mocks = read("./mocks.json", type=JSON)
+
+// explicitly overwrite async read ops defined in file
+mock(mocks)
+
+import("../tallyPoints.cl") as prog
+
+it("works", () => {
+	assert(prog.main == 0)
+	assert(prog.readcsv() -> prog.total == 1700)
+})
+```
+
+```
+// fizzbuzz.cl
+range(0, 100)
+	-> n => match [n % 3, n % 5] {
+		(0, 0): "FizzBuzz"
+		(0, _): "Fizz"
+		(_, 0): "Buzz"
+		(_, _): `{n}`
+	}
+	-> each(print)
+```
+
+```
+// array programming
+a = [2, 2, 2, 2, 2]::Int[5]	// anotate list type and size
+b = range(0, 6)::Int[5]
+
+c = a * b // [0, 2, 4, 6, 8, 10], still type Int[5]
+
+d = [[0, 1], [2, 3]]::Int[2][2] // can annotate 2d sizes matrix
+f = d * c // will fail because Int[2][2] cannot be multiplied by Int[5]
+```
+
 ###  Multi-level blogs
 blogging/reading platform where simplicity level can be adjusted
     
