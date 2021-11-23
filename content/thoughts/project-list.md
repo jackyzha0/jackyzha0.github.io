@@ -124,26 +124,27 @@ tests:
 the cloud-native scripting language
 
 1. great tooling and extensibility
-	1. static type hinting
-		1. check at compile time
+	1. static type hinting (great compile errors that detail relevant variables and possible fixes)
 	2. full HTTP server and request engine
-	3. great compile errors
 	4. compiles down to bytecode using LLVM (find some go/rust bindings for this)
 	5. URL-based module imports
 2. easy to read code
 3. features u love
-	1. pattern matching
-	2. object and array destructuring
+	1. pattern matching `match n { ... }`
+	2. object and array destructuring (same as JS)
 	3. option container
-		1. built-in retry mechanisms
-		2. null coalescing
-	4. chaining
-	5. fat arrow fns
-4. proper stderr for errors
+		1. built-in retry mechanisms on failure
+		2. null coalescing for sensible defaults (converting `Option[Int]` to `Int` for example)
+	4. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
+	5. fat arrow fns `someFn = a => b`
+4. proper stderr for errors (works well with UNIX pipes, can also read STDIN using `input`)
 
 #### notes on syntax
 1. function chaining using the pipe `->`
-2. fat arrow functions `=>` return by default unless you include curly braces (which then explicit return is required)
+2. fat arrow functions `=>` return by default unless you include curly braces (then explicit return is required)
+3. type checking is OPTIONAL (using `::`)but if annotations are provided, will be caught at compile time (default type is `Unknown`)
+	1. explicit casting can be done using the `as()` function
+	2. can include `const` to prevent mutations
 
 ```
 // simple hello world
