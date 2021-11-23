@@ -146,11 +146,29 @@ tests:
 
 #### Hello World
 ```js
-name = flags("name") || "World"
+name = input()
 print(`Hello {name}!`)
 
-// alternatively
+// alternatively, to write to file
 name -> writeln("output.txt", mode="append")
+```
+
+#### Reading input
+```js
+// reading from stdin (works for pipe and )
+file = input("some prompt to print to stdout")
+
+// reading from command-line flags e.g. ./program --name="john"
+name = flag("name")
+
+// reading from env
+secret = env("SECRET_KEY")
+
+// reading from remote
+training_set = read("https://some_remote", type=CSV)
+
+// reading from local file
+shakespeare = read("../files/hamlet.txt")
 ```
 
 #### Calculator CLI Tool
@@ -161,7 +179,7 @@ op = match input("Input operation (one of +, -, *, /): ") {
 	"-" : (x,y) => x - y
 	"*" : (x,y) => x * y
 	"/" : (x,y) => x / y
-	inputOp => error(`{inputOp} was an invalid operation`)
+	inputOp : error(`{inputOp} was an invalid operation`)
 }
 num2 = input("Input second number: ")
 res = op(num1, num2)
@@ -181,17 +199,17 @@ export readcsv = url =>
 	readRemote(url, type=CSV).retry(times=3, strategy="exponential")
 		-> slice(1)
 		-> as(CSVFormat)
-		-> totalPoints
 
 export totalPoints = file =>
 		-> map(row => row.points)
 		-> write("points.txt", mode="overwrite")
 		-> reduce((+), 0)
-		-> x => print(`Total points: {x}`)
 		
 main = {
-	readcsv("http://some_url") -> totalPoints
-	// implic return 0
+	readcsv("http://some_url")
+		-> totalPoints
+		-> x => print(`Total points: {x}`)
+	// implicit return 0
 }
 ```
 
@@ -222,8 +240,8 @@ mock(mocks)
 import("../tallyPoints.cl") as prog
 
 it("works", () => {
-	assert(prog.main == 0)
-	assert(prog.readcsv() -> prog.total == 1700)
+	assert(prog.main.code == 0)
+	assert(prog.main.stdout == "Total points: 1700")
 })
 ```
 
