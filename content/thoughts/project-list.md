@@ -120,9 +120,7 @@ tests:
     
 [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
     
-###  clay
-the cloud-native scripting language
-
+###  Clay: the cloud-native scripting language
 1. great tooling and extensibility
 	1. static type hinting (great compile errors that detail relevant variables and possible fixes)
 	2. full HTTP server and request engine
@@ -146,9 +144,8 @@ the cloud-native scripting language
 	1. explicit casting can be done using the `as()` function
 	2. can include `const` to prevent mutations
 
-```
-// simple hello world
-
+#### Hello World
+```js
 name = flags("name") || "World"
 print(`Hello {name}!`)
 
@@ -156,8 +153,8 @@ print(`Hello {name}!`)
 name -> writeln("output.txt", mode="append")
 ```
 
-```
-// simple calculator cli
+#### Calculator CLI Tool
+```js
 num1 = input("Input first number: ")
 op = match input("Input operation (one of +, -, *, /): ") {
 	"+" : (x,y) => x + y
@@ -171,9 +168,8 @@ res = op(num1, num2)
 print(`Your result: {res}`)
 ```
 
-```
-// some csv manipulation
-
+#### Playing with CSVs
+```js
 type Row {
 	name   :: String
 	age    :: Int
@@ -199,9 +195,8 @@ main = {
 }
 ```
 
+#### Testing Programs
 ```
-// testing the above program
-
 // in script.json
 {
 	"name": "count points",
@@ -232,6 +227,7 @@ it("works", () => {
 })
 ```
 
+#### FizzBuzz
 ```
 // fizzbuzz.cl
 range(0, 100)
@@ -244,6 +240,7 @@ range(0, 100)
 	-> each(print)
 ```
 
+#### Array Programming
 ```
 // array programming
 a = [2, 2, 2, 2, 2]::Int[5]	// anotate list type and size
@@ -253,6 +250,8 @@ c = a * b // [0, 2, 4, 6, 8, 10], still type Int[5]
 
 d = [[0, 1], [2, 3]]::Int[2][2] // can annotate 2d sizes matrix
 f = d * c // will fail because Int[2][2] cannot be multiplied by Int[5]
+
+// will try to expand to tensor operations maybe?? having a good library for this to solve dimension mismatches would be so cool
 ```
 
 ###  Multi-level blogs
