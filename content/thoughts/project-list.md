@@ -196,7 +196,7 @@ main = {
 ```
 
 #### Testing Programs
-```
+```js
 // in script.json
 {
 	"name": "count points",
@@ -228,7 +228,7 @@ it("works", () => {
 ```
 
 #### FizzBuzz
-```
+```js
 // fizzbuzz.cl
 range(0, 100)
 	-> n => match [n % 3, n % 5] {
@@ -241,7 +241,7 @@ range(0, 100)
 ```
 
 #### Array Programming
-```
+```js
 // array programming
 a = [2, 2, 2, 2, 2]::Int[5]	// anotate list type and size
 b = range(0, 6)::Int[5]
