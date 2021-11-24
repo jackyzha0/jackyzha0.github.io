@@ -129,12 +129,13 @@ tests:
 2. easy to read code
 3. features u love
 	1. pattern matching `match n { ... }`
-	2. object and array destructuring (same as JS)
-	3. option container
+	2. a block `a = { ... }` is just a zero-arg anon fn `a = () => { ... }`
+	3. object and array destructuring (same as JS)
+	4. option container
 		1. built-in retry mechanisms on failure
 		2. null coalescing for sensible defaults (converting `Option[Int]` to `Int` for example)
-	4. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
-	5. fat arrow fns `someFn = a => b`
+	5. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
+	6. fat arrow fns `someFn = a => b`
 4. proper stderr for errors (works well with UNIX pipes, can also read STDIN using `input`)
 
 #### notes on syntax
