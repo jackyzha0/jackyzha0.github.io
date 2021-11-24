@@ -5,6 +5,8 @@ date: 2021-07-22T20:03:33-04:00
 
 A great example of [zero-sum](thoughts/zero-sum.md) resources
 
+Related to the [evaporative cooling](thoughts/evaporative-cooling.md) effect
+
 ## The Dunbar number
 https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships
 

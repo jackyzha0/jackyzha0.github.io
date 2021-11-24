@@ -29,6 +29,17 @@ At the beginning, will do everything they can to garner usage and appear more va
 2. **Attack resistance**, no central point to attack
 3. **Collusion resistance**
 
+### Decentralization as Activism
+[Source](https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html)
+
+> Decentralization doesn't work in a vacuum, mainstream decentralized systems require a degree of activism to keep the system working
+
+"BitTorrent seems to represent the minimum viable decentralization required to stay alive as defined by the law at the time"
+
+Decentralization is a tactic for diffusing risk for many and lowering the risk for the activists that operate the most sensitive parts of the system.
+
+**Over applying decentralization isn't a strategy unless your goal is obscurity**
+
 ### Counterpoints
 #### Fault Tolerance
 Common mode failure, all pieces can fail for the same reason. (e.g. all nodes in a blockchain run the same software but that software has a bug)

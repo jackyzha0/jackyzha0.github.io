@@ -31,7 +31,7 @@ date: 2021-06-17T00:33:42-04:00
 - separate employment + projects stuff into subpage
 	- make projects a folder and each entry is a file
 - digital gardening
-	- seperate sources from thoughts
+	- separate sources from thoughts
 	- rename concepts to be more atomic
 - https://locomotivemtl.github.io/locomotive-scroll/
 
@@ -43,7 +43,7 @@ date: 2021-06-17T00:33:42-04:00
 	* spatially consistent? [memory palace](thoughts/memory-palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
 * card based backlinks/outgoing links
 	* on the left, you can see all the notes that link to the current page
-	* on the right, you can see all outoing links
+	* on the right, you can see all outgoing links
 	* hovering on each card will reveal another layer which those ones are connected to
 * graph view
 	* i wanted to have the option for 3d graphs too
@@ -51,6 +51,8 @@ date: 2021-06-17T00:33:42-04:00
 	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
 * good global search
 	* being able to index content fast and effectively
+* interopability, of data, easy export
+	* 
 
 
 ### Long Term Archival Storage Service (Shale)

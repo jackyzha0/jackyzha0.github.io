@@ -8,7 +8,7 @@ Hello there and welcome back to another issue of some mildly coherent ramblings.
 
 ## 3 things I’ve found interesting
 
-1. [Context Collapse](https://www.rewire.org/context-collapse-online/). Follow up to last issue's ['What's not in the frame'](/posts/framing) question, I was finally able to put a name to a concept I've had floating around! The TLDR is the experience when all your different personalities or frames from different contexts (e.g. work, friend group, family) all intermingle. In a place where so many of your social groups intersect, it becomes difficult to decide how to behave or 'be yourself'.
+1. [Context Collapse](https://www.rewire.org/context-collapse-online/). Follow up to last issue's ['What's not in the frame'](posts/context-collapse.md) question, I was finally able to put a name to a concept I've had floating around! The TLDR is the experience when all your different personalities or frames from different contexts (e.g. work, friend group, family) all intermingle. In a place where so many of your social groups intersect, it becomes difficult to decide how to behave or 'be yourself'.
 2. [Emergent Behaviour and Cellular Automata](https://www.youtube.com/watch?v=X-iSQQgOd1A). Mesmerizing video by [Sebastian Lague](https://www.youtube.com/user/Cercopithecan) on [how complex (and beautiful) behaviour can arise out of simple rules.](/thoughts/emergent-behaviour) I've been wanting to get into experimenting with shaders and graphics stuff and this *might* just be the slight nudge I needed.
 3. [Sun Sneezing](https://www.youtube.com/watch?v=e69XZJ9DEj0). When people ask me what I'm allergic to, my two answers are 1) pollen and 2) the sun. Yes, I sneeze when I look at the sun.
 
