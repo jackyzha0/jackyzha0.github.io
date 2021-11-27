@@ -16,6 +16,13 @@ Cooley imagined affiliations and interests as a system of coordinates, with each
 
 "These 'reciprocally constructing phenomena' that may empower one person with increasing self-actualization, burden others with exponentially debilitating oppression." Related: the matrix of domination and intersectional theory in [Design Justice](thoughts/books/design-justice.md)
 
+### About Page
+[Source](https://kortina.nyc/about-andrew-kortina/?curius=1296)
+
+"It strikes me that these labels are more often conversation enders than conversation starters, attempts to reduce a vast complexity into a neat, little word, with the lossiest of compression algorithms."
+
+We cheer for the clothes, not the people. As Feynman said, "honors is epaulets, honors is uniforms"
+
 ## Idolization
 https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html
 * "You implicitly invalidate any struggles they have, and eschew their private life. Your praise becomes so diluted that it’s meaningless, just another reflex or polite gesture. And, god forbid they ever deviate from this god-like persona that you’ve created for them."

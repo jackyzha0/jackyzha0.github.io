@@ -74,3 +74,13 @@ The forced identicality of online and offline lives, and the permanency of the I
 
 Even the most ardent practitioners of cancel culture — which I've always read as an imperative: Cancel culture! — must admit that cancellation is a form of surveillance borne of the same technological capacities used to oppress the vulnerable by patriachal, racist, and downright unkind governments the world over. The intents and outcomes might be different — cancelled people are not sent to camps — but the modus is the same: a constant monitoring, and a rush to judgment.
 
+## Right to be forgotten
+[Denegri Case](https://restofworld.org/2021/argentina-denegri-google-right-forget/) and the [Right to be forgotten](https://en.wikipedia.org/wiki/Right_to_be_forgotten)
+
+Right for individuals to "determine the development of their life in an autonomous way, without being perpetually or periodically stigmatized as a consequence of a specific action performed in the past"
+
+"The public interest, which sometimes stands against the right to deletion and also the right to be forgotten, is the right of the public to know."
+
+"By changing what we were, you change what we are and what we are going to be."
+
+Streisand Effect: efforts to hide information result in even greater publicity

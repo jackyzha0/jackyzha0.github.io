@@ -1,4 +1,4 @@
-**---
+---
 title: "Labels and Quantization"
 date: 2021-05-04T22:22:23-04:00
 ---

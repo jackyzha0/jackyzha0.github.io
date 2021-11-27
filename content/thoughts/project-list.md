@@ -34,6 +34,20 @@ date: 2021-06-17T00:33:42-04:00
 	- separate sources from thoughts
 	- rename concepts to be more atomic
 - https://locomotivemtl.github.io/locomotive-scroll/
+-   aws for web3
+-   tool to interop between different graph representations
+	-   e.g. Notion to Roam to Obsidian
+	-   CommonGraph??
+-   on-chain oracles for integrating real world information
+
+### web3 action-space exploration
+Possible referents/verses extension?
+
+- chain crawlers indexing smart contracts → creating logical relations
+- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
+- suggesting what you can do with existing resources in your wallet
+	- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this NFT enable me to do?)
+
 
 ### [Tools for Thought](thoughts/tools-for-thought.md)
 * write first, organize later

@@ -9,7 +9,7 @@ Questions:
 1. How can we create tools that aid our thinking?
 2. As an extension, how do we organize the abundance of [information](thoughts/information.md) we have today so that it is both accessible and useful?
 3. How do we distill all the [research debt](thoughts/articles/research-debt.md) so that our ideas are easily useful to others?
-4. Can we create tools that enable [collaborative-thinking](posts/collaborative-thinking.md)? Is it possible to enable idea-to-idea instead of idea-to-words-to-idea?
+4.  Can we create [tools-for-discourse](thoughts/tools-for-discourse.md)?
 5. How can we make mixed media first-class? Allow drawing, images, and video? Bring back the overhead projector!
 
 Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching
