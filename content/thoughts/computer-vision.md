@@ -639,6 +639,11 @@ Assumptions
 ## Classification
 Classifier is a procedure that accepts as input a set of features and outputs a prediction for the class label.
 
+### Standard Bag-of-Words pipeline
+1. Dictionary Learning: learn visual words using clustering
+2. Encode: build Bags-of-words vectors for each image
+3. Classify: train and test data using BOW (KNN, naive Bayes, SVM)
+
 ### Bayes Rule
 Let $c$ be the class label and $x$ be the measurement (evidence)
 
@@ -658,6 +663,8 @@ The Bayes' risk is the shaded region where one class's probability is still non-
 ### ROC Curve
 Trade-off between true positive rate and false positive rate. A random classifier will always have 1:1 true positive and false positive rate
 
+![](/thoughts/images/roc-curve.png)
+
 ### Parametric vs Non-parametric
 - Parametric classifiers rely on a model
 	- fast, compact
@@ -665,3 +672,36 @@ Trade-off between true positive rate and false positive rate. A random classifie
 - Non-parametric classifiers are data driven (rely on comparing to training examples directly)
 	- slow
 	- highly flexible decision boundaries 
+
+### K-Means
+1.  pick some k
+2.  assign data to k different clusters randomly
+3.  iterate
+    1.  center update → calculate average for each cluster (using euclidian distance)
+    2.  label update → re-assign the data to the closest cluster center
+    3.  if no labels changed, finish (model has converged)
+
+Warning: the clustering is initialization dependent and converges to a local minimum. Often requires some amount of random runs to approximate a good solution, pick best one.
+
+### Spatial Pyramid
+Have multiple scales of the input image to compute histograms across. Train a classifier for each scale along with a combined weight to combine each classifier.
+
+### VLAD (Vector of Locally Aggregated Descriptors)
+Instead of incrementing the histogram bin by a single count, we increment it by the residual vector $x - c(x)$ (diff between cluster center and feature vector)
+
+Dimensionality is $Kd$ where $K$ is number of codewords and $d$ is the dimensionality of the local descriptor (128 for SIFT)
+
+### Decision Tree
+Entropy of set $S$ of data samples is defined as
+
+$$H(s) = - \sum_{c \in C}p(c)\log(p(c))$$
+
+Where $C$ is the set of classes represented in $S$ and $p(c)$ is the empirical distribution of class $c$ in $S$.
+
+Generally, select feature test that maximizes information gain
+
+$$I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$$
+
+### Classifier Boosting
+- Train an ensemble of classifiers sequentially
+- Bias subsequent classifiers to correctly predict training examples that previous classifiers got wrong
