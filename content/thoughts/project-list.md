@@ -35,7 +35,7 @@ date: 2021-06-17T00:33:42-04:00
 	- rename concepts to be more atomic
 - https://locomotivemtl.github.io/locomotive-scroll/
 -   aws for web3
--   tool to interop between different graph representations
+-   tool to [interopability](thoughts/interopability.md) between different graph representations
 	-   e.g. Notion to Roam to Obsidian
 	-   CommonGraph??
 -   on-chain oracles for integrating real world information
@@ -65,7 +65,7 @@ Possible referents/verses extension?
 	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
 * good global search
 	* being able to index content fast and effectively
-* interopability, of data, easy export
+* [interopability](thoughts/interopability.md), of data, easy export
 	* 
 
 

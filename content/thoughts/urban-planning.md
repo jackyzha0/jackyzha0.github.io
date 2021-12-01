@@ -36,7 +36,7 @@ date: 2021-06-16T08:59:23-04:00
     -   super blocks → make larger blocks, reclaim some roads for public use
 -   agile digital transformation
     -   ethical digital standards for cities
-    -   open source, open standards, interoperability
+    -   open source, open standards, [interopability](thoughts/interopability.md)
     -   _reproducibility_
     -   public money ↔ public code
     -   data is the raw material of the digital economy

@@ -19,3 +19,7 @@ What does this mean for art which inherently requires interpretation? Will we ev
 [Source](https://a9.io/glue-comic/)
 
 "How can we go beyond a linear, temporal, low-bandwidth activity without getting in the way of the sublime symbiosis of speaking?"
+
+## Resources
+"I have a theory, which has not let me down so far, that there is an inverse relationship between imagination and money. Because the more money and technology that is available to [create] a work, the less imagination there will be in it." Alan Moore
+

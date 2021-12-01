@@ -5,9 +5,9 @@ date: 2021-07-22T18:55:47-04:00
 
 > "Gardens … lie between farmland and wilderness ... The garden is farmland that delights the senses, designed for delight rather than commodity." -- [Bernstein](http://www.eastgate.com/garden/Gardens.html)
 
-We live in an information age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be [falling apart](thoughts/search-or-be-found.md) under the stress of todays overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
+We live in an information age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be [falling apart](thoughts/search-or-be-found.md) under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
 
-Over the past year, I've slowly found processes that have worked well in creating a little currated corner of the internet, rich with wonderfully curious people exploring exciting ideas. You may have noticed I merged my blog and digital garden under my main site. A lot has changed since I last wrote about processes in my [Digital Gardening](posts/digital-gardening.md) post and some are no longer accurate. 
+Over the past year, I've slowly found processes that have worked well in creating a little curated corner of the internet, rich with wonderfully curious people exploring exciting ideas. You may have noticed I merged my blog and digital garden under my main site. A lot has changed since I last wrote about processes in my [Digital Gardening](posts/digital-gardening.md) post and some are no longer accurate. 
 
 This is a v2.
 
@@ -18,7 +18,7 @@ This is not because I don't like order, but because I think **a dash of chaos an
 
 My goal with a digital garden is not purely as an [organizing system](thoughts/organizing-systems.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it.
 
-This is the problem with the file cabinet: it focuses on efficiency of access and interopability rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/articles/city-is-not-a-tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
+This is the problem with the file cabinet: it focuses on efficiency of access and [interopability](thoughts/interopability.md) rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/articles/city-is-not-a-tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
 
 ## How I garden
 > Digital gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as your own knowledge grows and changes

@@ -60,3 +60,4 @@ Is it possible to create mediums for thought that convey 'awe and mystery and su
 
 ### Execution
 Can we embed computation into our notes? Create APIs out of our thoughts and concepts? Compose theorems just as easily as we chain function calls?
+
