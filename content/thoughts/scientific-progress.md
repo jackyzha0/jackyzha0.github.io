@@ -26,3 +26,5 @@ Closeness to the truth is a function of two factors
 Thus, the more truths a theory entails, the closer it is to the truth.
 
 > Even two true theories can have differing degrees of verisimilitude, depending on how much true information they deliver. For example, the claim "it will be raining on Thursday next week," if true, seems closer to the truth than the true yet logically weaker claim "it will either be raining next Thursday or it will be sunny".
+
+Similarly, the concept of a [lie-to-children](https://en.wikipedia.org/wiki/Lie-to-children): creating a simplified world model to explain a system because the real one is too complex to grasp

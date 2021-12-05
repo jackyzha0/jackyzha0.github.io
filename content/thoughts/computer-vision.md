@@ -705,3 +705,27 @@ $$I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$$
 ### Classifier Boosting
 - Train an ensemble of classifiers sequentially
 - Bias subsequent classifiers to correctly predict training examples that previous classifiers got wrong
+
+## CNNs
+### Convolutional Layer
+$K$ is the number of filters, $F$ is the spatial extend of filters (kernel size), $S$ is the stride, and $P$ is the padding
+
+- $W_{out} = (W_{input} - F + 2P)/S + 1$
+- $H_{out} = (H_{input} - F + 2P)/S + 1$
+- $D_{out} = K$
+
+Total number of learnable parameters: $(F*F*D_{input})*K + K$.
+
+### Pooling Layer
+- $W_{out} = (W_{input} - F)/S + 1$
+- $H_{out} = (H_{input} - F)/S + 1$
+- $D_{out} = D_{input}$
+
+Total number of learnable parameters: 0.
+
+### Layer Summary
+- Convolutional Layer: applies a set of learnable filters
+- Pooling Layer: performs spatial downsampling
+- Fully-connected Layer: same as any regular neural network
+
+A CNN then just learns a hierarchy of filters
