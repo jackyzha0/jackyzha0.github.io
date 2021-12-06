@@ -253,17 +253,6 @@ footer {
   }
 }
 
-.webring {
-  text-decoration: none;
-
-  img {
-    opacity: 0.5;
-    margin: 0;
-    width: 20px;
-    transform: translateY(0.3em);
-  }
-}
-
 // common styling
 [data-aos] {
   body[data-aos-easing="custom"] &, &[data-aos][data-aos-easing="custom"] {
