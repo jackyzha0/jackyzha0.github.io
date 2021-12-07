@@ -707,6 +707,8 @@ $$I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$$
 - Bias subsequent classifiers to correctly predict training examples that previous classifiers got wrong
 
 ## CNNs
+Standard is DxWxH
+
 ### Convolutional Layer
 $K$ is the number of filters, $F$ is the spatial extend of filters (kernel size), $S$ is the stride, and $P$ is the padding
 
