@@ -716,7 +716,7 @@ $K$ is the number of filters, $F$ is the spatial extend of filters (kernel size)
 - $H_{out} = (H_{input} - F + 2P)/S + 1$
 - $D_{out} = K$
 
-Total number of learnable parameters: $(F*F*D_{input})*K + K$.
+Total number of learnable parameters: $(F \times F \times D_{input}) \times K + K$.
 
 ### Pooling Layer
 - $W_{out} = (W_{input} - F)/S + 1$
