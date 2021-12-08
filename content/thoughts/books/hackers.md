@@ -31,7 +31,7 @@ For hackers, computers are just the medium through which they express themselves
 
 Namely, they don't exclusively try for exclusively [creating or maintaining](thoughts/creation-vs-maintenance.md) but rather to make 'good things' and if either of those happen along the way, all the better.
 
-### Labels
+### [Labels](thoughts/labels-and-quantization.md)
 > But often this mismatch [between labels and what they do] causes problems. It's easy to drift away from building beautiful things toward building ugly things that make more suitable subjects for research papers.
 
 Labels are logically [decentralized](thoughts/decentralization.md) so if it no longer is useful, then it will phase itself out. While yes, language is useful for defining norms externally, for those *strongly* intrinsically motivated (which arguably are the people PG is trying to speak to), those labels don't matter because external incentives matter very little to them. If that label continues to be useful to them (e.g. to secure funding or to talk about it to laypeople) then why not continue to use it? 

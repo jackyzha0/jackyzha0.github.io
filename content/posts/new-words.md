@@ -1,7 +1,6 @@
 ---
-title: "When We Need New Words"
-date: 2021-11-07
-draft: true
+title: "A New Glossary of Words"
+date: 2021-12-07
 ---
 
 *This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original consensus problem: agreeing on what we mean.*
@@ -56,34 +55,51 @@ Of course, this is not to say that definitions are not important. In fact, quite
 
 **P:** As in the process of heating metal to make it more malleable?
 
-**W:** Yes, exactly! Let us imagine definitions of words as metals. After a metal is heated to a high temperature, it is workable. Similarly, when new terminology is coined, it has a period where it is malleable and adaptive. To combine this with the ship metaphor, this is when the ship still has a small crew and achieving local consensus is relatively easy.
+**W:** Yes, exactly! Let us imagine definitions of words as metal nodules. After a nodule is heated to a high temperature, it is workable. Similarly, when new terminology is coined, it has a period where it is malleable and adaptive and achieving local consensus is relatively easy.
 
-Of course, over the course of the annealing process, meaning can drift. Centralizing then, is a form of metal hardening. It anchors meaning and prevents it from being easily modified.
+Of course, over the course of the annealing process, meaning can drift. Centralizing then, is a form of metal hardening and shaping. It anchors meaning and prevents it from being easily modified. Just as one should not have metals be load bearing until they've hardened and been shaped for their specific use case, semantically fluid terms should not be epistemelogically load bearing.
 
-Just as one should not have metals be load bearing until they've hardened, semantically fluid terms should not be epistemelogically load bearing.
+We imagine new words as small nodules. The size correlates with the number of individuals that agree with the definition. Smaller nodules reach the right temperature for annealing more easily. As the definition becomes more widely accepted, it gains mass and becomes harder to work.
 
-P: This answers how 
+**P:** Sorry, I don't follow this metaphor very well. Could you rephrase?
 
-W: These two metaphors have helped clarify my thinking. Let us say that 
+**W:** I hope you excuse my thinking out loud, but this metaphor has given me the clarity to better express this idea in terms of regular language.
 
+Early on, achieving local consensus on a definition is rather easy; there are only a handful of people who then know about the term, let alone use it regularly. As the term grows more popular, it becomes increasingly difficult up maneuver and adapt in such a way that the meaning of the term cannot shift very much without causing fracturing.
 
+**P:** Ah that makes a lot more sense. Hmm. This covers the initial semantic definitions for a word but is there any way to change the meaning of a definition after it's been concretized?
 
-- the right to be forgotten -> its ok for terminology to be forgotten, for it to slip through the hands of time like sand
-- this ignores a lot of history: "By changing what we were, you change what we are and what we are going to be." erasure through terminology change
+**W:** This seems quite difficult for terminology already ingrained within society. Especially as meaning is not dictated by some central organization, any old definitions
+need to be collectively forgotten. As we concluded earlier, this is incredibly difficult for widely used terms.
 
-hard for things ingrained within society
-meaning is not dictated by some central organization
-it needs to be collectively forgotten, and/or overwritten
+As we enter an age of digital permanency, we should normalize the right to be forgotten for terminology. It should be normal for terminology to be forgotten -- for it to slip through the hands of time like sand.
 
-either hard-fork it within a subcommunity -> reclaiming words
-or create an entirely new word
+**P:** This ignores a lot of history, does it not? "By changing what we were, you change what we are and what we are going to be."[^5] This is a form of erasure through terminology change. By 'forgetting' terminology, you deny its existence.
 
-what words need to start anew?
+**W:** I may have phrased my words poorly, that was not my intention. Maybe abandoned is a better word? I want to create dictionaries and glosarries that keep terminological history. A sort of 'append-only' record of how terminology has split, died, and evolved over time.
 
-the multiverse or pluriverse
-hackers
+**P:** What do you mean by append only?
+
+**W:** The only way to overwrite an existing definition is to either hard-fork it within a subcommunity or to create entirely new words. Hard-forking involves an agreement from a subcommunity to use an alternative definition for specific terms.
+
+**P:** Well, what words need to start anew? Clearly there are words that could benefit from redefinition.
+
+**W:** The 'metaverse' for one could use a lot of redefinition. Meta has put a lot of effort into claiming and defining this term for their own benefit -- a closed, profit-driven, and attention-farming dystopia. A few groups have cropped up around reclaiming some of this terminology, including one forking John Perry Barlow’s 1996 [Declaration for the Independence of Cyberspace](https://www.eff.org/cyberspace-independence) as a reaction to Facebook's recent rebranding as Meta.
+
+Likewise, many groups across the world have tried to redefine and hard-fork the definition of 'hacker' for quite some time. Hacking, as known by the general public, generally refers to gaining unauthorized access to technology. Yet within this local hacker subcommunity, a hacker is widely defined as one who builds and creates for the sake of creating.
+
+**P:** I am increasingly convinced by your argument against centralized definitions. I think, as a society, we need to think more critically about language and terminology and how they carry power. We want to enable evolution and creation of new terminology to enable others to have the language to speak of their lived experiences and complex ideas.
+
+**W:** Yes! In fact, I think we need a new approach to building glossaries and dictionaries. At the core of it all, we are hoping to better solve the original consensus problem: agreeing on what each other mean. To do abolish the existing centralized dictionaries and glossaries without suggesting an alternative would be in bad faith.
+
+**P:** What sort of alternative are you proposing?
+
+**W:** A collectively curated glossary of sorts. One which involves a rich history and context of terms, pluralist in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
+
+Let us create a new glossary of terminology. May it be *a* source of truth rather than *the* source of truth and that truth should be able to evolve over time.
 
 [^1]: *Philosophical Investigations*, Ludwig Wittgenstein
 [^2]: *The Science of Discworld*, Terry Pratchett
 [^3]: *The Logic of Scientific Discover*, Karl Popper
 [^4]: *Republic*, Plato
+[^5]: Martín Becerra on Natalia Denegri
