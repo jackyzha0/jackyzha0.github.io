@@ -3,7 +3,7 @@ title: "A New Glossary of Words"
 date: 2021-12-07
 ---
 
-*This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original consensus problem: agreeing on what we mean.*
+*This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean.*
 
 ---
 
@@ -17,7 +17,7 @@ date: 2021-12-07
 
 **P:** Well no one seems to have a good answer at least. Don't we have enough words to express all we want to express already? There are innumerable ways to combine the words we already do have.
 
-**W:** The whole point of language to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as hermeneutical injustice where one has no labels or common terminology to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
+**W:** The whole point of language to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as hermeneutical injustice where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
 
 **P:** Okay, I admit that new words are useful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
 
@@ -76,7 +76,7 @@ As we enter an age of digital permanency, we should normalize the right to be fo
 
 **P:** This ignores a lot of history, does it not? "By changing what we were, you change what we are and what we are going to be."[^5] This is a form of erasure through terminology change. By 'forgetting' terminology, you deny its existence.
 
-**W:** I may have phrased my words poorly, that was not my intention. Maybe abandoned is a better word? I want to create dictionaries and glosarries that keep terminological history. A sort of 'append-only' record of how terminology has split, died, and evolved over time.
+**W:** I may have phrased my words poorly, that was not my intention. Maybe abandoned is a better word? I want to create dictionaries and glossaries that keep terminological history. A sort of 'append-only' record of how terminology has split, died, and evolved over time.
 
 **P:** What do you mean by append only?
 
@@ -96,7 +96,7 @@ Likewise, many groups across the world have tried to redefine and hard-fork the 
 
 **W:** A collectively curated glossary of sorts. One which involves a rich history and context of terms, pluralist in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
 
-Let us create a new glossary of terminology. May it be *a* source of truth rather than *the* source of truth and that truth should be able to evolve over time.
+Let us create a new glossary of terminology. May it be *a* source of [truth](thoughts/truth.md) rather than *the* source of truth.
 
 [^1]: *Philosophical Investigations*, Ludwig Wittgenstein
 [^2]: *The Science of Discworld*, Terry Pratchett
