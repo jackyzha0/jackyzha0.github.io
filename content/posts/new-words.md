@@ -17,13 +17,13 @@ date: 2021-12-07
 
 **P:** Well no one seems to have a good answer at least. Don't we have enough words to express all we want to express already? There are innumerable ways to combine the words we already do have.
 
-**W:** The whole point of language to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as hermeneutical injustice where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
+**W:** The whole point of language is to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as hermeneutical injustice where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
 
 **P:** Okay, I admit that new words are useful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
 
 **W:** Language is logically decentralized, is it not? There is no governing body that determines what a word means. The meaning of a word lies in its use[^1], and that is decided by those who speak the language.
 
-**P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit to needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
+**P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
 
 **W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **plurality**. Context modifies meaning.
 
@@ -43,9 +43,9 @@ date: 2021-12-07
 
 **W:** My concern with a 'standard' library of definitions is that interpretations of concepts are not allowed to adapt to usage over time. How does a dictionary or thesaurus adapt to the historical meaning of racial slurs, for example? Those who hold the ability to rewrite the past are the ones with power. Again, this is why having centrally controlled language is a bad idea. This was quite clear in Orwell's work.
 
-Of course, this is not to say that definitions are not important. In fact, quite the opposite. Definitions hold immense power in shaping how we talk and think about the world writ large. What I am saying is that language needs to ability to evolve on its own. Individuals and groups should have the agency to 'reclaim' harmful and outdated definitions.
+Of course, this is not to say that definitions are not important. In fact, quite the opposite. Definitions hold immense power in shaping how we talk and think about the world writ large. What I am saying is that language needs the ability to evolve on its own. Individuals and groups should have the agency to 'reclaim' harmful and outdated definitions.
 
-**P:** Isn't this exactly *why* we need centralization? This is like Plato's Ship of State[^4]. Any large vessel by their very nature need to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
+**P:** Isn't this exactly *why* we need centralization? This is like Plato's Ship of State[^4]. Any large vessel by their very nature needs to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
 
 **W:** Would sailors want to obey a captain who takes them somewhere they don't want to be? No. I imagine language like multiple small ships, each one with its own crew (crew of course, meaning an agreed meaning for a set of definitions). Let me reiterate without the ship metaphor: language requires **localized** [consensus](thoughts/consensus.md) for it to function.
 
@@ -65,7 +65,7 @@ We imagine new words as small nodules. The size correlates with the number of in
 
 **W:** I hope you excuse my thinking out loud, but this metaphor has given me the clarity to better express this idea in terms of regular language.
 
-Early on, achieving local consensus on a definition is rather easy; there are only a handful of people who then know about the term, let alone use it regularly. As the term grows more popular, it becomes increasingly difficult up maneuver and adapt in such a way that the meaning of the term cannot shift very much without causing fracturing.
+Early on, achieving local consensus on a definition is rather easy; there are only a handful of people who then know about the term, let alone use it regularly. As the term grows more popular, it becomes increasingly difficult to maneuver and adapt in such a way that the meaning of the term cannot shift very much without causing fracturing.
 
 **P:** Ah that makes a lot more sense. Hmm. This covers the initial semantic definitions for a word but is there any way to change the meaning of a definition after it's been concretized?
 
@@ -90,7 +90,7 @@ Likewise, many groups across the world have tried to redefine and hard-fork the 
 
 **P:** I am increasingly convinced by your argument against centralized definitions. I think, as a society, we need to think more critically about language and terminology and how they carry power. We want to enable evolution and creation of new terminology to enable others to have the language to speak of their lived experiences and complex ideas.
 
-**W:** Yes! In fact, I think we need a new approach to building glossaries and dictionaries. At the core of it all, we are hoping to better solve the original consensus problem: agreeing on what each other mean. To do abolish the existing centralized dictionaries and glossaries without suggesting an alternative would be in bad faith.
+**W:** Yes! In fact, I think we need a new approach to building glossaries and dictionaries. At the core of it all, we are hoping to better solve the original consensus problem: agreeing on what each other mean. To abolish the existing centralized dictionaries and glossaries without suggesting an alternative would be in bad faith.
 
 **P:** What sort of alternative are you proposing?
 

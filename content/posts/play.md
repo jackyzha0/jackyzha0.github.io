@@ -75,7 +75,7 @@ In fact, I posit that play is not only necessary but the *only thing* that can e
 
 **S**: Forgive my interruption, but how do you define 'play' here? Isn't it at odds with your definition of 'work'?
 
-**G**: I supposed I should clarify some terminology. Let us first define something as *instrumental* if it serves as the means to an end (*i.e.* as a way to accomplish a goal). Work then, is explicitly defined as labour which is *instrumentally* valuable.
+**G**: I suppose I should clarify some terminology. Let us first define something as *instrumental* if it serves as the means to an end (*i.e.* as a way to accomplish a goal). Work then, is explicitly defined as labour which is *instrumentally* valuable.
 
 Play, on the other hand, is defined as labour which is non-instrumental. It should be *intrinsically* valuable and self-motivated. Games, then, are the reversal of means and ends. When playing, the means that traditionally entail an end become the ends themselves.
 
@@ -102,7 +102,7 @@ To the carpenter who enjoys building for its own sake, that otherwise instrument
 ## A re-worked definition
 Obviously, this is an exaggeration of the argument I'm hoping to make -- we clearly don't live in this caricature of a post-instrumental society. However, we *do* live in is a society that is malleable to change.
 
-Language is one of the only logically [decentralized](thoughts/decentralization.md) aspects of humanity. It is also one that has considerable effects on how we think about ourselves and the world.
+Language is one of the only logically [decentralized](thoughts/decentralization.md) aspects of humanity. It is also one that has considerable effects on [how we think](posts/new-words.md) about ourselves and the world.
 
 We started off this journey by asserting that our current accepted definition of play was inadequate. In its place, we offer a plurality of alternatives:
 
