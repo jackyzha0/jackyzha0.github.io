@@ -3,7 +3,7 @@ title: "A New Glossary of Words"
 date: 2021-12-07
 ---
 
-*This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean.*
+*This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean. You can view the full artifact [here](https://play.jzhao.xyz/new-words).*
 
 ---
 

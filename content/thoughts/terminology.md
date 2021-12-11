@@ -3,6 +3,11 @@ title: "Terminology"
 date: 2021-12-01
 ---
 
+## Orwell on Language
+[Source](https://www.orwell.ru/library/essays/politics/english/e_polit/)
+
+"In prose, the worst thing one can do with words is surrender to them. When you think of a concrete object, you think wordlessly, and then, if you want to describe the thing you have been visualising you probably hunt about until you find the exact words that seem to fit it."
+
 ## A tangent on language
 language as an abstraction for concepts
 

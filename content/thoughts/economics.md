@@ -12,7 +12,7 @@ Economics is predominantly concerned with the central Economic Problem, namely
 -   **Unlimited needs**: Greedy humans have essentially unlimited needs for those resources.
 
 However, assumptions in the early economic models of human behaviour are problematic:
-1. Homo economicus: The most common behavioral model assumes that humans are atomic individuals who operate rationally and selfishly.  We know now that humans have limited attention, are contextually altruistic, are highly tribal, and exhibit a wide range of irrational cognitive biases.
+1. Homo economicus: The most common behavioral model assumes that humans are atomic individuals who operate rationally and selfishly.  We know now that humans have limited attention, are contextually altruistic, are highly [tribe-flourishing](thoughts/tribe-flourishing.md), and exhibit a wide range of irrational cognitive biases.
 2. Individuals are the best judge of their needs: Our brains are not conscious of the base psychological processes driving some of our most pressing needs and are thus unable to value relationships rationally.
 3. Weak social modeling: Most economics models ignore basic human behavior such as friendship networks, affiliation networks, limits on cognitive resources (ex: attention) or altruism.
 

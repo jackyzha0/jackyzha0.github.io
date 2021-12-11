@@ -5,11 +5,13 @@ date: 2021-06-16T08:59:04-04:00
 
 ## Quotes
 ### Digital Communalism
+(see: [tribal flourishing](thoughts/tribe-flourishing.md))
+
 "Ubiquitous networked computing had arrived, and in its shiny array of interlinked devices, pundits, scholars, and investors alike saw the image of an ideal society: decentralized, egalitarian, harmonious, and free"
 
 "In *The Gutenberg Galaxy* McLuhan described the new age in tribal terms: electronic media had linked all of humanity into a single 'global vilage'"
 
-"Nor does the fact that individuals can come together by means of ocmputer networks necessarily require that their gatherings become 'virtual communities'"
+"Nor does the fact that individuals can come together by means of computer networks necessarily require that their gatherings become 'virtual communities'"
 
 "Dyson and Barlow, as well as many other commentators at the time, saw the Internet serving as a rhetorical prototype for new, flexible, and mobile ways of working and living."
 

@@ -54,6 +54,8 @@ Does social capacity differ across different types of social interactions? e.g. 
 
 "Modern Loneliness" by Lauv covers a lot of similar topics
 
+Rel: [tribe-flourishing](thoughts/tribe-flourishing.md)
+
 ## Research
 I feel there are dangers of large groups, especially within research. Larger groups lead to more bureaucracy and being ok with the average -- an effect of too many cooks in the kitchen. This leads to ideas that are at the middle of the [distribution](thoughts/data-distributions.md) and tends to discourage more radical, out-of-distribution thinking and research
 

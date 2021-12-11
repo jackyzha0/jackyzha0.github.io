@@ -21,6 +21,7 @@ The cyberpunk spirit: the basic property of which adversarial conflict continues
 - [Proof of work](thoughts/proof-of-work.md)
 - [Consensus](thoughts/consensus.md)
 - [Play](thoughts/play.md)
+- [NFTs](thoughts/NFT.md)
 
 Notes on [Kernel](https://kernel.community/en/) curriculum: [Kernel](thoughts/kernel.md)
 

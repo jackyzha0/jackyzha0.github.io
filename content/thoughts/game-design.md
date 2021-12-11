@@ -26,6 +26,8 @@ The loneliness epidemic is a real thing. It has been medically associated with m
 
 Advancing age also makes us more likely to be lonely. Especially as we work on [longevity](thoughts/longevity.md) research, this is a pressing issue to try to solve.
 
+The best games are designed to be played with [friends](thoughts/tribe-flourishing.md).
+
 ### Toxicity
 > At the root of much toxicity is the misdirection of our human need to belong
 

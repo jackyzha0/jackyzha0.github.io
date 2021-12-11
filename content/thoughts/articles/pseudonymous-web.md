@@ -24,6 +24,6 @@ Is it possible to have pseudonymous identities in decentralized [web3](toc/web3.
 
 Web3 promises participants 'persistant pseudonyms' that  have protective functions (e.g. not revealing offline identities, but also allows holders to participate in economic activity and  hold goods while allowing them to hide undesirable traits that may lead to oppression)
 
-We can then use on-chain transactions to hypothesize and analyze possible affiiliations and cultural attitudes. For example, owning an NFT whose profits will go towards a charity may signal values similar to that charity/cause.
+We can then use on-chain transactions to hypothesize and analyze possible affiiliations and cultural attitudes. For example, owning an [NFT](thoughts/NFT.md) whose profits will go towards a charity may signal values similar to that charity/cause.
 
 Can we use these web3 packed pseudonymous identities as a tool for social liberation?

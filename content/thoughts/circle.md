@@ -3,9 +3,7 @@ title: "Interact: Hackathon Culture + Play"
 date: 2021-11-13
 ---
 
-[An attempt](posts/play.md) to answer the prompt:
-
-> How does your own intuitive conception of "play" or "playfulness" relate to Suit's idea of "games" and Odell's idea of "doing nothing"? Are they different kinds of things? Are they similar kinds of things with important differences? Some other relationship?
+[View artifact](https://play.jzhao.xyz/). Contains writings on [play](posts/play.md) and [new-words](posts/new-words.md)
 
 ## Reflections
 I did not think I would ever be this excited about meeting people at 9AM on a Monday ever. This Circle has helped me center myself in what I truly find energizing in this world: discussing cool ideas with cool people.
@@ -20,12 +18,4 @@ I was even more intimidated when I saw the list of people applying to be a part 
 Joel, Becky, and Justin have all been so ridiculously wonderful throughout the whole Circle that it's so weird to even think I almost didn't follow through. I feel like this Circle has given me the space to explore ideas that have been marinating in the back of my head with some ridiculously thoughtful people.
 
 I cannot wait to see how we piece this into something that we can show the world. It may be a little naive, but I really think that what we made here is truly special. This is the chance for us to help define what play means for the next few generations and I cannot be more giddy. Towards unabashed excitement :))
-
-### Topics
-todo: write more about why these are cool
-
-things we've talked about
-- why labels are important
-- can play produce products
-- creating spaces of abundance
 

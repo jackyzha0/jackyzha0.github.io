@@ -27,6 +27,7 @@ date: 2021-06-17T00:33:42-04:00
 - killing the spinny text
 - merge garden index with main page
 - rewrite interests section
+- include talks + presentations!
 - add feed of most recent digital garden bits
 - separate employment + projects stuff into subpage
 	- make projects a folder and each entry is a file
@@ -46,7 +47,7 @@ Possible referents/verses extension?
 - chain crawlers indexing smart contracts → creating logical relations
 - prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
 - suggesting what you can do with existing resources in your wallet
-	- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this NFT enable me to do?)
+	- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this [NFT](thoughts/NFT.md) enable me to do?)
 
 
 ### [Tools for Thought](thoughts/tools-for-thought.md)
