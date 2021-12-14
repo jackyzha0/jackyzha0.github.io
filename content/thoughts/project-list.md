@@ -21,6 +21,7 @@ date: 2021-06-17T00:33:42-04:00
 -   autocomplete for rendered latex with a computer algebra system
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
+- Discord bot for interacting with DAOs
 
 ### Website revamp (again)
 - make graph absolute on side

@@ -11,9 +11,9 @@ Two main 'diamonds' of diverge-converge, one to find the right problem and the o
 
 The 4 basic activities for interaction design are as follows:
 1. Discovering requirements (discover/define phase). Deciding what to design is key, and exploring the problem space is one way to decide. The goal is understanding the target users and the support an interactive product could provide.
-2. Designing alternatives (develop phase). This can be 2 parts, conceptual design (producing the ocnceptual model of the product) or concrete design (detail of the product like colours, sounds, images, etc.)
+2. Designing alternatives (develop phase). This can be 2 parts, conceptual design (producing the conceptual model of the product) or concrete design (detail of the product like colours, sounds, images, etc.)
 3. Prototyping alternative designs to be communicated and assessed (develop phase). The process of designing behaviour of interactive products as well as look and feel. Doesn't necessarily need working software!
-4. Evaluating the product and the UX it ofers (develop phase). Determine the usability and acceptability of the product or design measured in terms of a varierty of usability and user-experience criteria.
+4. Evaluating the product and the UX it offers (develop phase). Determine the usability and acceptability of the product or design measured in terms of a variety of usability and user-experience criteria.
 
 Here are a few good questions to ask to better understand the problem:
 -   what are the human needs?

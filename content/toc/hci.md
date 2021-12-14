@@ -41,6 +41,9 @@ Needs are problems that people have. Tasks are what they need to do.
 - [User Involvement](thoughts/user-involvement.md)
 - [Interviews and data recording](thoughts/interviews-and-data-recording.md)
 - [Task-centered Design](thoughts/task-centered-design.md)
+- [Mental Models](thoughts/mental-model.md)
+- [Prototyping](thoughts/prototyping.md)
+- [Page Layout](thoughts/page-layout.md)
 
 ## [Course](https://www.students.cs.ubc.ca/~cs-344/current-term/) Specific
 ### Ethics Code
@@ -59,3 +62,4 @@ Consent will be obtained explicitly in one of the following ways:
 1. by returning a completed questionnaire (questionnaire only consent)
 2. through the participant signing a consent form (general consent), or
 3. by replying affirmatively to an email that contains the consent form text (general consent).
+
