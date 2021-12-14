@@ -5,7 +5,7 @@ date: 2021-12-12
 
 The point is to make ideas real. They are (limited) representations of conceptual designs for users to interact with.
 
-![](thoughts/images/prototype.png)
+![](/thoughts/images/prototype.png)
 
 ### Why prototype?
 -   **save time and money** → don't waste time coding/building the wrong thing

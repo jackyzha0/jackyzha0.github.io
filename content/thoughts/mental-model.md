@@ -38,7 +38,7 @@ If a breakdown occurs on the **right** (5-7), we call that the **gulf of evaluat
 	-   essentially a high level description of how a system *should* work
     -   to foster good mental model formation by the user
 
-![](thoughts/images/mental-vs-conceptual.png)
+![](/thoughts/images/mental-vs-conceptual.png)
 
 ## Interface Types
 Primarily concerned with:
