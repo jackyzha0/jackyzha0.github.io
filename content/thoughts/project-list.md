@@ -22,12 +22,17 @@ date: 2021-06-17T00:33:42-04:00
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - Discord bot for interacting with DAOs
+- aws for web3
+- tool to [interopability](thoughts/interopability.md) between different graph representations
+	-   e.g. Notion to Roam to Obsidian
+	-   CommonGraph??
+- on-chain oracles for integrating real world information
 
 ### Website revamp (again)
 - make graph absolute on side
 - killing the spinny text
 - merge garden index with main page
-- rewrite interests section
+- rewrite interests section (add images!)
 - include talks + presentations!
 - add feed of most recent digital garden bits
 - separate employment + projects stuff into subpage
@@ -35,12 +40,9 @@ date: 2021-06-17T00:33:42-04:00
 - digital gardening
 	- separate sources from thoughts
 	- rename concepts to be more atomic
-- https://locomotivemtl.github.io/locomotive-scroll/
--   aws for web3
--   tool to [interopability](thoughts/interopability.md) between different graph representations
-	-   e.g. Notion to Roam to Obsidian
-	-   CommonGraph??
--   on-chain oracles for integrating real world information
+- ideas
+	- ascii art heavy, serif style
+	- initial only show a hello in a body paragraph and fade in rest of site
 
 ### web3 action-space exploration
 Possible referents/verses extension?

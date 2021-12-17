@@ -3,6 +3,8 @@ title: "Trust"
 date: 2021-10-08
 ---
 
+> In an empire of lies, telling the truth is a revolutionary act. In a fearful society; love and trust are the primary tools of resistance.
+
 [Source](https://kernel.community/en/learn/module-0/trust)
 
 > Trust is only meaningful once we have fully understood how people can lie.

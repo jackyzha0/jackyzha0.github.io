@@ -9,8 +9,6 @@ Play: the intentional activity of doing the thing you would want to do.
 
 [Source](https://kernel.community/en/learn/module-1/joyful-subversion)
 
-> In an empire of lies, telling the truth is a revolutionary act. In a fearful society; love and trust are the primary tools of resistance.
-
 "Play allows us to create and share ownership of spaces in ways which competition cannot. Have as much fun as possible along the way. Turn life into a canvas, rather than a graph with checkpoints. Welcome everyone."
 
 In a world were we seem to be locked behind these little rectangles, how can we escape? Embedded computing experiments like DynamicLand by Bret Victor (more in [beyond-touch](thoughts/beyond-touch.md))

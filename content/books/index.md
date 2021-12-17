@@ -9,11 +9,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Fiction
 * **The Book of Difficult Fruit** by Kate Lebo
-* **A Tale for the Time Being** by Ruth Ozeki
+
 * **Project Hail Mary** by Andy Weir
 * **The Midnight Library** by Matt Haig
 
 ### Non-fiction
+* **Creation: Life and How to Make it** by Steve Grand
 * **Winners Take All** by Anand Giridharadas
 * **Mutual Aid** by Dean Spade
 * **Seeing Like A State** by James C. Scott
@@ -28,6 +29,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
+* **A Tale for the Time Being** by Ruth Ozeki
 * [**How to Do Nothing**](thoughts/books/how-to-do-nothing.md) by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 

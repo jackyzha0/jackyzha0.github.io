@@ -15,6 +15,8 @@ One of the things that keeps face-to-face friendships strong is the [nature of s
 * vlogs
 * vine/tiktoks
 
+Is there more video because video is just 
+
 ### text
 * email
 * sms
@@ -49,3 +51,12 @@ Someone once described Slack as the online version of the open office arrangemen
 We do "gardening" in our tools for thought but it's not exactly social first. Sure, we can leave messages for each other but this is not communication. It's more like background cueing/prompting.
 
 How can we great mangroves? Garden/forest type ecosystems which have gently flowing multi-branched stream systems.
+
+## Dark Forest
+[Source](https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1)
+
+> Imagine a dark forest at night. It’s deathly quiet. Nothing moves. Nothing stirs. This could lead one to assume that the forest is devoid of life. But of course, it’s not. The dark forest is full of life. It’s quiet because night is when the predators come out. To survive, the animals stay silent.
+
+Ephemeral content is the content in the dark forest. Fireflies not lamps.
+
+"These are all spaces where depressurized conversation is possible because of their non-indexed, non-optimized, and non-gamified environments."
