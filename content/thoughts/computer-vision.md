@@ -179,6 +179,15 @@ Then, $\mathcal{I}'(w_x,w_y) = \mathcal{F}(w_x,w_y)\mathcal{I}(w_x,w_y)$ which i
 
 At the expense of two Fourier transforms and one inverse Fourier transform, convolution can be reduced to (complex) multiplication. This speeds up the cost of FFT/IFFT for the image and filter to $\mathcal{O}(n^2\log n)$ and $\mathcal{O}(m^2\log m)$ respectively, dropping the total cost of convolution to $\mathcal{O}(n^2)$
 
+### Convolution Sizing
+Convolving two filters of size $m \times m$ and $n \times n$ results in a filter of size
+
+$$(n + 2 \lfloor \frac m 2 \rfloor) \times (n + 2 \lfloor \frac m 2 \rfloor)$$
+
+More broadly for a set of $K$ filters of sizes $m_k \times m_k$ the resulting filter will have size 
+
+$$(m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor) \times (m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor)$$
+
 ## Non-linear filters
 - Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of noise, such as impulse noise ('salt and pepper' noise or 'shot' noise)
 - Bilateral Filter (edge-preserving filter). Effectively smooths out the image but keeps the sharp edges, good for denoising. Weights of neighbour at a spacial offset $(x,y)$ from the center pixel $I(X,Y)$ given by a product $\exp^{-\frac{x^2+y^2}{2\sigma_d^2}}\exp^{-\frac{(I(X+x, Y+y) - I(X,Y))^2}{2\sigma_r^2}}$. We call the first half of the product the *domain kernel* (which is essentially a Gaussian) and the second half the *range kernel* (which depends on location in the image).
@@ -589,6 +598,11 @@ Disparity: $d = x - x' = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance fr
 
 Simple stereo algorithm
 1. Rectify images (make epipolar lines horizontal)
+	1. Rectified images have these properties:
+		1. Image planes of cameras are parallel
+		2. Focal points are at same height
+		3. Focal lengths are the same
+		4. Epiolar lines fall along the horizontal scan lines
 2. For each pixel
 	1. Find epipolar line
 	2. Scan line for best match

@@ -3,6 +3,8 @@ title: "Funding"
 date: 2021-08-06T08:42:53-04:00
 ---
 
+> Raising funding is just purchasing time to be together
+
 ## Bounty Model
 Paying people set amounts for set tasks.
 

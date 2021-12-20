@@ -27,6 +27,7 @@ date: 2021-06-17T00:33:42-04:00
 	-   e.g. Notion to Roam to Obsidian
 	-   CommonGraph??
 - on-chain oracles for integrating real world information
+- sound-based hashing for cryptographic verification
 
 ### Website revamp (again)
 - make graph absolute on side
