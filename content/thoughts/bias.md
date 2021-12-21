@@ -42,3 +42,11 @@ They freely provide, it seems, a sorting of the wheat from the chaff, and answer
 
 "Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil) 
 
+### Captchas
+How do you distinguish between human and non-human without discriminating against certain types of people (e.g. ethnicity, cultural background)? How does one prove their humanity without betraying anything else about them?
+
+"What is the universal human quality that can be demonstrated to a machine, but that no machine can mimic? What is it to be human?"
+
+> "You need something that’s easy for an average human, it shouldn’t be bound to a specific subgroup of people, and it should be hard for computers at the same time. That’s very limiting in what you can actually do. And it has to be something that a human can do fast, and isn’t too annoying."
+
+Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in the 'right' way? (e.g. optical illusions)

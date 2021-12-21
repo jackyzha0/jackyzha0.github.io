@@ -34,7 +34,7 @@ https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/4
 
 The promise of the web is that Alexandria’s library might be resurrected for the modern world. But today’s great library is being destroyed even as it is being built. Until you lose something big on the Internet, something truly valuable, this paradox can be difficult to understand.
 
-"Ephemerality is built into the very architecture of the web, which was intended to be a messaging system, not a library."
+"Ephemerality is built into the very architecture of the web, which was intended to be a messaging system, not a library." (maybe we need more [friction](thoughts/friction.md)?)
 
 *Too* ephemeral? Move towards real time content.
 

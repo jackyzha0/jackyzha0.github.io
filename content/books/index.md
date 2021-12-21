@@ -9,7 +9,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Fiction
 * **The Book of Difficult Fruit** by Kate Lebo
-
 * **Project Hail Mary** by Andy Weir
 * **The Midnight Library** by Matt Haig
 
@@ -29,12 +28,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
-* **A Tale for the Time Being** by Ruth Ozeki
 * [**How to Do Nothing**](thoughts/books/how-to-do-nothing.md) by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 
 ## Past
 ### 2021
+* [**A Tale for the Time Being**](thoughts/a-tale-for-the-time-being.md) by Ruth Ozeki
 * [**Atlas of AI**](thoughts/books/atlas-of-ai.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro
 * [**The Grasshopper: Games, Life and Utopia**](thoughts/books/grasshopper.md) by Bernard Suits

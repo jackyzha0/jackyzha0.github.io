@@ -10,6 +10,8 @@ https://mmm.page/helena.soft_tech
 
 How might we analogize [urban planning](thoughts/urban-planning.md) to social media and digital spaces? -> https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12
 
+Spaces of [friction](thoughts/friction.md)
+
 ## Creating Digital Spaces
 Can we create digital common spaces like parks and things without everyone online needing to be exceedingly intentioned?
 
@@ -17,7 +19,7 @@ Commons should be safe, low pressure contexts for random interaction. They are p
 
 The park and the trees may stay the same most times you visit yet the people on the benches and walking on the paved paths are always different. One can sit and observe all the people moving by, [wondering what their life is like.](https://en.wikipedia.org/wiki/People-watching).
 
-> "What would it look like to do that with your favorite internet neighborhoods?"
+> "What would it look like to do that with your favourite internet neighbourhoods?"
 
 This is a small reflection on potential new avenues to explore for digital spaces. Not to say that any existing ones are bad but I am interested to see what new direction we can take to explore how we use technology to further human connection.
 

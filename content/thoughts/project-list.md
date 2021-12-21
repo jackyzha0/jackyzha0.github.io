@@ -28,86 +28,72 @@ date: 2021-06-17T00:33:42-04:00
 	-   CommonGraph??
 - on-chain oracles for integrating real world information
 - sound-based hashing for cryptographic verification
-
-### Website revamp (again)
-- make graph absolute on side
-- killing the spinny text
-- merge garden index with main page
-- rewrite interests section (add images!)
-- include talks + presentations!
-- add feed of most recent digital garden bits
-- separate employment + projects stuff into subpage
-	- make projects a folder and each entry is a file
-- digital gardening
-	- separate sources from thoughts
-	- rename concepts to be more atomic
-- ideas
-	- ascii art heavy, serif style
-	- initial only show a hello in a body paragraph and fade in rest of site
-
-### web3 action-space exploration
-Possible referents/verses extension?
-
-- chain crawlers indexing smart contracts → creating logical relations
-- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
-- suggesting what you can do with existing resources in your wallet
-	- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this [NFT](thoughts/NFT.md) enable me to do?)
-
-
-### [Tools for Thought](thoughts/tools-for-thought.md)
-* write first, organize later
-	* good daily notes, choose what to carry over from the previous day
-* block based editors are neat cause i can move stuff around really easily
-	* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
-	* spatially consistent? [memory palace](thoughts/memory-palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
-* card based backlinks/outgoing links
-	* on the left, you can see all the notes that link to the current page
-	* on the right, you can see all outgoing links
-	* hovering on each card will reveal another layer which those ones are connected to
-* graph view
-	* i wanted to have the option for 3d graphs too
-* timeline view
-	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
-* good global search
-	* being able to index content fast and effectively
-* [interopability](thoughts/interopability.md), of data, easy export
-	* 
-
-
-### Long Term Archival Storage Service (Shale)
-Why is storage expensive lmao
-
-What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can
-
-1. Sell extra storage space you have and get paid based off of capacity + availability
-	2. maybe use a coin for this ($SHALE)?
-	3. create a client to facilitate this
-2. Buying storage means your local folder that you choose will be symlinked to a mounted network drive
-	1. what is actually happening is that your files are redundantly 
-
-Questions
-1. can i just do this using hyperspace instead of using a blockchain lol
-2. ETH layer 2?
-3. any way to avoid gas fees?
-4. Is it possible to build on top of the [Golem platform](https://www.golem.network/platform) directly?
-
-### DreamCoder boolsat
-Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
-
-kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
-
-Background:
-- https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
-- https://searchworks.stanford.edu/view/13250178
-
-NeuroSAT Paper:
-- https://arxiv.org/pdf/1802.03685.pdf
-
-DreamCoder Paper:
-- https://arxiv.org/pdf/2006.08381.pdf
-- https://www.youtube.com/watch?v=qtu0aSTDE2I
-
-### Themis — go-based api testing framework
+- google photos + olo radio (see [attention-economy](thoughts/attention-economy.md))
+- (no clue if this would work) integral images but applied to vector similarity search in text documents
+	- viola-jones for text embeddings
+* Website revamp (again)
+	- make graph absolute on side
+	- killing the spinny text
+	- merge garden index with main page
+	- rewrite interests section (add images!)
+	- include talks + presentations!
+	- add feed of most recent digital garden bits
+	- separate employment + projects stuff into subpage
+		- make projects a folder and each entry is a file
+	- digital gardening
+		- separate sources from thoughts
+		- rename concepts to be more atomic
+	- ideas
+		- ascii art heavy, serif style
+		- initial only show a hello in a body paragraph and fade in rest of site
+* web3 action-space exploration
+	* Possible referents/verses extension?
+	- chain crawlers indexing smart contracts → creating logical relations
+	- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
+	- suggesting what you can do with existing resources in your wallet
+		- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this [NFT](thoughts/NFT.md) enable me to do?)
+* [Tools for Thought](thoughts/tools-for-thought.md)
+	* write first, organize later
+		* good daily notes, choose what to carry over from the previous day
+	* block based editors are neat cause i can move stuff around really easily
+		* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
+		* spatially consistent? [memory palace](thoughts/memory-palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
+	* card based backlinks/outgoing links
+		* on the left, you can see all the notes that link to the current page
+		* on the right, you can see all outgoing links
+		* hovering on each card will reveal another layer which those ones are connected to
+	* graph view
+		* i wanted to have the option for 3d graphs too
+	* timeline view
+		* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
+	* good global search
+		* being able to index content fast and effectively
+	* [interopability](thoughts/interopability.md), of data, easy export
+* Long Term Archival Storage Service
+	- Why is storage expensive lmao
+	- What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can
+    1. Sell extra storage space you have and get paid based off of capacity + availability
+		1. maybe use a coin for this ($SHALE)?
+		2. create a client to facilitate this
+	2. Buying storage means your local folder that you choose will be symlinked to a mounted network drive
+		1. what is actually happening is that your files are redundantly 
+	* Questions
+		1. can i just do this using hyperspace instead of using a blockchain lol
+		2. ETH layer 2?
+		3. any way to avoid gas fees?
+		4. Is it possible to build on top of the [Golem platform](https://www.golem.network/platform) directly?
+* DreamCoder boolsat
+	* Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
+	* kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
+	* Background:
+		- https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
+		- https://searchworks.stanford.edu/view/13250178
+	- NeuroSAT Paper:
+		- https://arxiv.org/pdf/1802.03685.pdf
+	- DreamCoder Paper:
+		- https://arxiv.org/pdf/2006.08381.pdf
+		- https://www.youtube.com/watch?v=qtu0aSTDE2I
+* Themis — go-based api testing framework
 ```yaml
 tests:
 - name: "test 1"
@@ -133,38 +119,34 @@ tests:
 -   test reports
 -   can actually use concurrency lmao
 	-   buffered channel of tests, run x tests in parallel
-
-###  Better graph visualization
-[social-graphs](/thoughts/social-graphs)
-
-[https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
-    
-[https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
-    
-###  Clay: the cloud-native scripting language
-1. great tooling and extensibility
-	1. static type hinting (great compile errors that detail relevant variables and possible fixes)
-	2. full HTTP server and request engine
-	4. compiles down to bytecode using LLVM (find some go/rust bindings for this)
-	5. URL-based module imports
-2. easy to read code
-3. features u love
-	1. pattern matching `match n { ... }`
-	2. a block `a = { ... }` is just a zero-arg anon fn `a = () => { ... }`
-	3. object and array destructuring (same as JS)
-	4. option container
-		1. built-in retry mechanisms on failure
-		2. null coalescing for sensible defaults (converting `Option[Int]` to `Int` for example)
-	5. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
-	6. fat arrow fns `someFn = a => b`
-4. proper stderr for errors (works well with UNIX pipes, can also read STDIN using `input`)
-
-#### notes on syntax
-1. function chaining using the pipe `->`
-2. fat arrow functions `=>` return by default unless you include curly braces (then explicit return is required)
-3. type checking is OPTIONAL (using `::`)but if annotations are provided, will be caught at compile time (default type is `Unknown`)
-	1. explicit casting can be done using the `as()` function
-	2. can include `const` to prevent mutations
+* Better graph visualization
+	* [social-graphs](/thoughts/social-graphs)
+	* [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
+	* [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
+* Shale: the cloud-native scripting language
+	* things to prioritize
+		1. great tooling and extensibility
+			1. static type hinting (great compile errors that detail relevant variables and possible fixes)
+			2. full HTTP server and request engine
+			3. compiles down to bytecode using LLVM (find some go/rust bindings for this)
+			4. URL-based module imports
+		2. easy to read code
+		3. features u love
+			1. pattern matching `match n { ... }`
+			2. a block `a = { ... }` is just a zero-arg anon fn `a = () => { ... }`
+			3. object and array destructuring (same as JS)
+			4. option container
+				1. built-in retry mechanisms on failure
+				2. null coalescing for sensible defaults (converting `Option[Int]` to `Int` for example)
+			5. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
+			6. fat arrow fns `someFn = a => b`
+		4. proper stderr for errors (works well with UNIX pipes, can also read STDIN using `input`)
+	* notes on syntax
+		1. function chaining using the pipe `->`
+		2. fat arrow functions `=>` return by default unless you include curly braces (then explicit return is required)
+		3. type checking is OPTIONAL (using `::`)but if annotations are provided, will be caught at compile time (default type is `Unknown`)
+			1. explicit casting can be done using the `as()` function
+			2. can include `const` to prevent mutations
 
 #### Hello World
 ```js
@@ -294,32 +276,25 @@ f = d * c // will fail because Int[2][2] cannot be multiplied by Int[5]
 // will try to expand to tensor operations maybe?? having a good library for this to solve dimension mismatches would be so cool
 ```
 
-###  Multi-level blogs
-blogging/reading platform where simplicity level can be adjusted
-    
-###  Better personal analytics
-* small js bundle
-* doesn't sell user data!!
-* things to track
-	* rough location of each user
-	* total users
-	* user visit distribution vs time
-
-### living room
-* recreating [communal living spaces](/thoughts/communities) in digital space
-* [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
-
-### tabfs but for emails
-[](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
-
-[](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)[https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
-
--   listen on any email server
--   cli based for configuring backend
-    -   or just yaml
--   react/electron frontend
-    -   ability to add plugins
-        -   modular by design, creating [workflows](thoughts/workflows.md)
-
-###  aka → bash profiles, makefile style
-###  deep foveal VR rendering
+* Multi-level blogs
+	* blogging/reading platform where simplicity level can be adjusted
+* Better personal analytics
+	* small js bundle
+	* doesn't sell user data!!
+	* things to track
+		* rough location of each user
+		* total users
+		* user visit distribution vs time
+* living room
+	* recreating [communal living spaces](/thoughts/communities) in digital space
+	* [ephemerality](/thoughts/ephemereal-content) and [digital permanence](/thoughts/digital-permanence)
+- tabfs but for emails
+	* [](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
+	- [](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)[https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
+	-   listen on any email server
+	-   cli based for configuring backend
+	    -   or just yaml
+	-   react/electron frontend
+	    -   ability to add plugins
+	        -   modular by design, creating [workflows](thoughts/workflows.md)
+-  deep foveal VR rendering
