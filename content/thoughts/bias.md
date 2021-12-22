@@ -12,7 +12,7 @@ Source: Addressing Social Bias in Information Retrieval in *In Experimental IR M
 
 "Many algorithmic processes are opaque and that the reasons for this may vary. For instance, it is more often than not difficult to interpret results from models induced by new machine learning techniques such as deep learning" (especially why we need to work on [explainability](thoughts/explainability.md))
 
-As a counter argument, there are social and economic challenges for achieving algorithmic transparency, such as the need for developers/owners of such processes to protect trade secrets, or even the privacy concerns of users.
+As a counter argument, there are social and economic challenges for achieving algorithmic [transparency](thoughts/transparency.md), such as the need for developers/owners of such processes to protect trade secrets, or even the privacy concerns of users.
 
 Friedman and Nissenbaum's definition of bias:
 1. its results are slanted in unfair discrimination against particular persons or groups
@@ -50,3 +50,6 @@ How do you distinguish between human and non-human without discriminating agains
 > "You need something that’s easy for an average human, it shouldn’t be bound to a specific subgroup of people, and it should be hard for computers at the same time. That’s very limiting in what you can actually do. And it has to be something that a human can do fast, and isn’t too annoying."
 
 Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in the 'right' way? (e.g. optical illusions)
+
+### Ethical Matrices
+Who cares about my algorithm? Who are the stakeholders? Why do they care? What are their goals?

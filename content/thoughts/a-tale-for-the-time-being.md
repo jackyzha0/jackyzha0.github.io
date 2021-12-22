@@ -12,3 +12,7 @@ not just in absolute offsets in terms of like time zones, but how different peop
 depending on their context, environment, etc.
 
 and that empathy is really just emotional time dilation and temporarily moving at their pace of live if only for a brief moment
+
+https://clarkesworldmagazine.com/chen_08_11/
+- "They discovered that those suffering from the side effects of time sense dilation and those suffering from the side effects of time sense compression can help each other, be each other’s cure."
+- "time flies past the laborer, the poor, the “third world”; time crawls for the rich, the idle, the “developed world”; time stays still for those in charge, the idols, the gods . . ."
