@@ -26,6 +26,10 @@ Infrastructure should be
     -   is [everything derivative?](thoughts/originality.md)
     -   is thought ever new? or is it recombinatorial
         -   neuroplasticity of culture and language?
+- "near-ubiquitous accessibility" (Carter and Acker)
+- "infrastructure as potential energy held in suspension" (Boyer)
+	- "infrastructure as congealed labor and expertise, such that an electrical grid represents the entanglement and perpetuation of engineering expertise and also a history of materials science and manufacturing that make available substances such as steel, concrete, ceramic, and silicon"
+- "living mediation of what organizes life: the lifeworld of structure" (Berlant)
 
 Do we need to [define infrastructure](https://www.bloomberg.com/opinion/articles/2021-04-09/the-meaning-of-infrastructure-is-a-pointless-debate)?
 
@@ -64,3 +68,35 @@ How do we draw the line between an end product and infrastructure? How should in
 https://stratechery.com/2021/moderation-in-infrastructure/
 
 The benefit of retroactive correction in some instances—imagine fixing a typographical error in the proportions of a recipe, or blocking out someone’s phone number shared for the purposes of harassment—should be contextualized against the prospect of systemic, chronic demands for revisions by aggrieved people or companies single-mindedly demanding changes that serve to eat away at the public record.
+
+## Post-destruction
+*To oblivion and beyond: Imagining infrastructure after collapse*
+
+An alternate take on [creation-vs-maintenance](thoughts/creation-vs-maintenance.md)
+
+Infrastructures do not function forever. Like everything else, they lose in the universe's constant battle against entropy.
+
+As Boyer (2016) argues, infrastructures possess a temporal persistence that “points deathward.” Oil refineries along the Texas Gulf Coast, for example, take part in a system of resource extraction that hastens climate change; at the same time, climate change threatens the continued functioning of these refineries, and oil companies have requested federal funds to protect their facilities from the destructive environmental phenomena that they have a hand in creating (Associated Press, 2018).
+
+- Cruel optimism: the experience of placing hope in an object that perpetually prevents the realization of that hope
+- Angry optimism: "does not attempt to escape or control the dangers of the present or to return to the comforts of the past but instead looks forward to the possibilities of a time beyond these"
+
+Not just maintenance, but rebuilding. In the context of infrastructure and collapse, cruel optimism is the belief that rebuilding is a way to heal. "Breakdown might instead represent an opportunity to create futures that do not resemble the past."
+
+Lifetime of an infrastructure doesn't just cover its functional lifespan. Many components to this:
+1. Service life (assuming ongoing maintenance, duration of functionality)
+	1. Risk analysis and modelling is one way of calculating thius
+2. Material life (how long will it take for the material of the infrastructure itself to degrade and erode)
+
+In fact, for the vast majority of infrastructures, the material life of an infrastructure will far outlast its service life (e.g. concrete aqueducts of the Romans almost 2000 years ago).
+
+Repair, they argue, is just an excuse for returning things to what they used to be rather than see it as a chance for change. Berlant's worry is that the repair of infrastructure merely reinstates a comfortable yet crisis producing past
+
+A new form of utopianism in science [fiction](thoughts/fiction.md): "if present conditions lead inexorably to collapse, how can that collapse be used as a resource from which to build more equitable ways of life"
+
+## Commons
+*The commons: Infrastructures for troubling times*
+
+> The common usually refers to an orientation toward life and value unbound by concepts and divisions of property, and points to the world both as a finite resource that is running out and an inexhaustible fund of human consciousness or creativity
+
+*Sensus communis*: "'common sense' is merely the bourgeois order of truth standing in for the universal, what Stoler calls ‘‘a folk epistemology.’’"

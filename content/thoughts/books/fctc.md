@@ -30,8 +30,11 @@ Contact Language: broadly speaking, this language served to facilitate collabora
 
 ### Network Forums
 Network Forum -- a palce where members of different communities come together, exchanging ideas and legitimacy, and in the process, synthesizing new intellectual frameworks and new social networks.
+
 Joins Peter Galisons' notion of the "trading zone" and Susain Leigh Star and James Griesemer's "boundary object"
+
 Trading Zone -> sites where representatives of multiple disciplines come together to work and, as the ydo, establish contact languages for purposes of collaboration
+
 Boundary Objects -> objects which both inhabit several intersecting social worlds and satisfy the informational requirements of each (e.g. maps, diagrams, standardized forms, notation, etc.)
 
 Network entrepreneur: one who migrates from one intellectual community to another and, in the process, to knit together formerly separate intellectual and social networks.

@@ -18,3 +18,4 @@ Information Science: the world of recorded information produced by human agency.
 - [Transparency](thoughts/transparency.md)
 - [Bias](thoughts/bias.md)
 - [Attention Economy](thoughts/attention-economy.md)
+- [Indigenous Traditional Knowledge (TK)](thoughts/traditional-knowledge.md)
