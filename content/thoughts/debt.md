@@ -11,7 +11,7 @@ On the basis of human exchange: we only have a relationship with the other (as e
 
 By this definition then, a community is one where everybody is a *little bit* in debt to everyone else which gives us an excuse to continue seeing each other.
 
-Money then, appears to be a way to have quantified and transferable promises. (An aside, why do we even feel the need to [quantify](thoughts/labels-and-quantization.md) promises??)
+Money then, appears to be a way to have quantified and transferable promises. (An aside, why do we even feel the need to [quantify](thoughts/quantization.md) promises??)
 
 However, **the philosophy of debt as something which cannot be forgiven only ever crops up in situations of structural coercion and extreme inequality.**
 

@@ -7,14 +7,14 @@ date: 2021-12-01
 
 I think interopability in the context of the web means being able to transparently understand and share data, agnostic of platform. Closed platforms disallow this as they curate the information they present to end-users/devs rather than letting users control their own data.
 
-A good standard is if I can hit 'export all data' on a platform and I can completely and freely use that elsewhere -- no vendor lock-in. I think this is esp hard for [social graphs](thoughts/social-graphs.md), there is no common/accepted standard for identity let alone connectedness between individuals
+A good standard is if I can hit 'export all data' on a platform and I can completely and freely use that elsewhere -- no vendor lock-in. I think this is esp hard for [social graphs](thoughts/social%20graphs.md), there is no common/accepted standard for identity let alone connectedness between individuals
 
-Related: [tools-for-thought](thoughts/tools-for-thought.md) and [tools-for-discourse](thoughts/tools-for-discourse.md)
+Related: [tools for thought](thoughts/tools%20for%20thought.md)
 
 ## Beyond Windows
 [Source](https://alexanderobenauer.com/labnotes/002/)
 
-A modern day [HyperCard](https://en.wikipedia.org/wiki/HyperCard)
+A modern day [HyperCard](https://en.wikipedia.org/wiki/HyperCard). What other types of [interaction design](thoughts/interaction%20design.md) can we facilitate?
 
 > A window runs a self-contained program, isolated from other programs that […] run at the same time in other windows. (Wikipedia)
 

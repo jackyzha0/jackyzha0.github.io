@@ -9,3 +9,19 @@ I'm still trying to figure out what I really want to do with my life but 3 thing
 I strongly believe that **code can't abstract responsibility away from problems**. I spend a lot of time thinking about how to improve hackathon culture as a part of [nwPlus](https://www.nwplus.io/) and how to use technology ethically to make our world better with [Reboot](https://twitter.com/reboot_hq/) and [Interact](https://twitter.com/joininteract).
 
 I'm working towards being a person who is [unabashedly excited about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun) and enables others to be the best versions of themselves. If anything in here piques your interest, let's find a time to chat! It's a magical world out there, it'd be a shame to explore it alone.
+
+## Intro
+A personal [digital garden](posts/digital-gardening.md) and [organizing system](thoughts/organizing%20system.md) for all my ramblings and thoughts.
+
+> [A library without an index](https://www.theatlantic.com/technology/archive/2016/06/knowledge-compendia/485507/) becomes paradoxically [less informative](https://en.wikipedia.org/wiki/The_Library_of_Babel) as it grows. -- Jorge Luis Borges
+
+You can search my entire garden by pressing `/` or hitting the little search icon in the top left.
+
+## Categories
+1. unplanted
+2. seed
+3. sapling: thoughts + concepts
+4. fruit
+5. evergreen: consistently revised
+	1. project list
+	2. failure resume

@@ -5,7 +5,7 @@ date: 2021-10-09
 
 Peer-to-peer electronic cash built using [blockchain](thoughts/blockchain.md). Capital 'B' Bitcoin is the network and protocol, lower case 'b' bitcoin is the actual currency.
 
-Here, centralized intermediaries (banks) are replaced by a trustless network of 'miners' which use [proof-of-work](thoughts/proof-of-work.md) for consensus.
+Here, centralized intermediaries (banks) are replaced by a trustless network of 'miners' which use [proof of work](thoughts/proof%20of%20work.md) for consensus.
 
 ## Mining
 Competing to solve a cryptographic puzzle to earn rights to add a new block to the blockchain. Reward is new bitcoin.

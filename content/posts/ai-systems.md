@@ -1,6 +1,9 @@
 ---
 title: "Machines and Intelligence"
 date: 2020-11-02T16:17:37-08:00
+tags:
+- philosophy
+- fruit
 ---
 
 This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC. I hope you enjoy the post and learn as much as I did in writing it!
@@ -72,9 +75,9 @@ Dreyfus believed that, for any AI system to achieve any sort of general intellig
 ### A non-humanistic approach
 However, Steed refutes Dreyfus' overly humanistic interpretation of Heideggerian AI, believing that a AI model only needs to be "embedded and embodied such that what AI experiences is significant for AI in the particular way that AI is," and thus intelligence would be possible by Heideggerian standards[^13].
 
-The refutation against a purely anthropocentric view of AI brings to light an important concept: the [multiple realization](/thoughts/multiple-realization) argument. Emulating or copying human intelligence isn't the only way to achieve intelligence that rivals that of humans.
+The refutation against a purely anthropocentric view of AI brings to light an important concept: the [multiple realization](thoughts/multiple%20realization.md) argument. Emulating or copying human intelligence isn't the only way to achieve intelligence that rivals that of humans.
 
-Contemporary AI systems are almost always used as a problem solving tool, a means to tackle uniquely human problems and to convey results that are semantically useful to us. As a result, these approaches are doomed to be constrained by human problems. This is the essense of the [bitter lesson of AI](/thoughts/multiple-realization). However, if we look outside the anthropocentric view of intelligence, AI systems may not share these human problems with us and "perhaps an authentic, free AI system does not converge to a solution that is interpretable from a human standpoint at all"[^13]. 
+Contemporary AI systems are almost always used as a problem solving tool, a means to tackle uniquely human problems and to convey results that are semantically useful to us. As a result, these approaches are doomed to be constrained by human problems. This is the essense of the [bitter lesson of AI](thoughts/multiple%20realization.md). However, if we look outside the anthropocentric view of intelligence, AI systems may not share these human problems with us and "perhaps an authentic, free AI system does not converge to a solution that is interpretable from a human standpoint at all"[^13]. 
 
 AI is already capable of learning, adaptation, and basic Being-in-the-world. Thus, to achieve general intelligence, we should allow AI to contemplate its own problems and existence.
 

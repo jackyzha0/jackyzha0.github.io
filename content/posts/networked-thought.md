@@ -5,7 +5,7 @@ date: 2021-07-22T18:55:47-04:00
 
 > "Gardens … lie between farmland and wilderness ... The garden is farmland that delights the senses, designed for delight rather than commodity." -- [Bernstein](http://www.eastgate.com/garden/Gardens.html)
 
-We live in an information age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be [falling apart](thoughts/search-or-be-found.md) under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
+We live in an information age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be falling apart under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
 
 Over the past year, I've slowly found processes that have worked well in creating a little curated corner of the internet, rich with wonderfully curious people exploring exciting ideas. You may have noticed I merged my blog and digital garden under my main site. A lot has changed since I last wrote about processes in my [Digital Gardening](posts/digital-gardening.md) post and some are no longer accurate. 
 
@@ -16,18 +16,18 @@ A digital garden is not a file cabinet, nor is it fully an index. A digital gard
 
 This is not because I don't like order, but because I think **a dash of chaos and entropy is good for new ideas**. They help connect two separate ideas that you normally would not have associated with each other, and to imagine the 'what if' more frequently.
 
-My goal with a digital garden is not purely as an [organizing system](thoughts/organizing-systems.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it.
+My goal with a digital garden is not purely as an [organizing system](thoughts/organizing%20system.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it.
 
-This is the problem with the file cabinet: it focuses on efficiency of access and [interopability](thoughts/interopability.md) rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/articles/city-is-not-a-tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
+This is the problem with the file cabinet: it focuses on efficiency of access and [interopability](thoughts/interopability.md) rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/A%20City%20is%20not%20a%20Tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
 
 ## How I garden
 > Digital gardens focus not on being a definite source of truth, but rather a source which is constantly evolving as your own knowledge grows and changes
 
-My blog made me scared of posting. I was scared of putting things into the public because I was anxious about all the different ways people could perceive it, both in the present and in the future. What if I posted something that people thought was *stupid*? Or worse yet, somebody would see my current work in the future and look down on me for how naive my thinking was. I was scared of [digital permanence](thoughts/digital-permanence.md).
+My blog made me scared of posting. I was scared of putting things into the public because I was anxious about all the different ways people could perceive it, both in the present and in the future. What if I posted something that people thought was *stupid*? Or worse yet, somebody would see my current work in the future and look down on me for how naive my thinking was. I was scared of [digital permanence](thoughts/digital%20permanence.md).
 
-But honestly, the more I wrote and just put things out there, the less that line of thinking made sense. The internet is pretty [ephemereal already](thoughts/ephemereal-content.md). It's hard enough to *willingly* create something people will remember a week from now, let alone for all of eternity. While this is still a non-zero probability, the consistent outpour of support and interesting comments I *did* get from posting made me feel it was worth it.
+But honestly, the more I wrote and just put things out there, the less that line of thinking made sense. The internet is pretty [ephemereal already](thoughts/ephemereal%20content.md). It's hard enough to *willingly* create something people will remember a week from now, let alone for all of eternity. While this is still a non-zero probability, the consistent outpour of support and interesting comments I *did* get from posting made me feel it was worth it.
 
-I still, by and large, write for myself. Writing, for me, is a form of [knowledge distillation](thoughts/knowledge-distillation.md). It helps to clarify my thinking and condense my knowledge so I can easily articulate it to others. If done well, I have a **shareable representation of my thoughts** that I can send out into the world and people can respond. Even for my most half-baked thoughts, this helps me create a feedback cycle to strengthen and fully flesh out that idea.
+I still, by and large, write for myself. Writing, for me, is a form of [knowledge distillation](thoughts/knowledge%20distillation.md). It helps to clarify my thinking and condense my knowledge so I can easily articulate it to others. If done well, I have a **shareable representation of my thoughts** that I can send out into the world and people can respond. Even for my most half-baked thoughts, this helps me create a feedback cycle to strengthen and fully flesh out that idea.
 
 Digital gardening is not just passive knowledge collection. It's a form of expression and sharing. The goal should be to tap into your network's collective intelligence to create constructive feedback loops, not to post content that 'gains clout' or makes you look smart.
 
@@ -54,24 +54,22 @@ I use [Draft](https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijl
 
 I use Pocket to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
 
-Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For [projects](thoughts/project-list.md), writing, and all sorts of reading. Even when reading books, I don't like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.
+Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For [projects](thoughts/idea%20list.md), writing, and all sorts of reading. Even when reading books, I don't like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.
 
 These are the seeds that form the basis of ideas and thoughts.
 
 ### Saplings
-Saplings are single nodes or thoughts. When linking notes, I generally do not silo notes into categories. Sometimes, the presence of specific 'folders' or 'topics' prevents us from making surprising connections between otherwise related topics (e.g. [urban planning](thoughts/urban-planning.md) and [data structures](thoughts/articles/city-is-not-a-tree.md)).
-
-Sometimes, I will group nodes under [indexes](toc/directory.md) just so I can can review and approximate how much I've written under specific topics. 
+Saplings are single nodes or thoughts. When linking notes, I generally do not silo notes into categories. Sometimes, the presence of specific 'folders' or 'topics' prevents us from making surprising connections between otherwise related topics (e.g. [urban planning](thoughts/urban%20planning.md) and [data structures](thoughts/A%20City%20is%20not%20a%20Tree.md)).
 
 ### Fruits
 Of course, a knowledge index isn't much use if it doesn't inform future thinking and output. Fruits are what I like to call derivative or 'new' pieces of content.
 
-It's the act of creating 'newer' work from saplings, mostly longer form essays, projects, etc. At this stage, thoughts and ideas have matured enough to be able to share and collaborate. Right now,  traditional '[tools for thought](thoughts/tools-for-thought.md)' are not great for this aspect, lacking the ability to publish, edit, and share notes with others.
+It's the act of creating 'newer' work from saplings, mostly longer form essays, projects, etc. At this stage, thoughts and ideas have matured enough to be able to share and collaborate. Right now,  traditional '[tools for thought](thoughts/tools%20for%20thought.md)' are not great for this aspect, lacking the ability to publish, edit, and share notes with others.
 
 ## Start your own
 I've found having my own digital garden has been immensely helpful. It's created a playground for me to experiment with writing, have an excuse to read, learn, and share with others, and be less scared of putting this out into the public.
 
-Through tending to this garden [in public](/thoughts/building-in-public), I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.
+Through tending to this garden [in public](thoughts/building%20in%20public.md), I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.
 
 Maybe you'll find this as an incentive to start your own.
 

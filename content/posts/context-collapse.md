@@ -59,14 +59,14 @@ I’ve noticed three main strategies individuals, companies, and platforms have 
 
 1. **Lowest Common Denominator**. Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
 
-2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](/thoughts/ephemereal-content), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
+2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](thoughts/ephemereal%20content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
 
 3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public internet.
 
 I don’t think there is a single 'right' approach, and in part that's why so many types of social networks exist today: they each have their own merits that incentive different approaches to communication. But one part I do want to emphasize is the tradeoff of depth and breadth in these approaches.
 
 ## Social bandwidth
-I think in part, this is why nobody has been successful in creating a single social network to replace all of the existing apps. As humans, we want the ability to closely connect with people, and context collapses makes that exceedingly difficult. We have limited social bandwidth -- there's only so much attention we can give to everyone. By increasing the breadth of our audience, we reduce the depth at which we can communicate with each individual. As app developers rush to combine all of these platforms into one, maybe we should step back and think whether this is really necessary.
+I think in part, this is why nobody has been successful in creating a single social network to replace all of the existing apps. As humans, we want the ability to closely connect with people, and context collapses makes that exceedingly difficult. We have limited social [bandwidth](thoughts/bandwidth.md) -- there's only so much attention we can give to everyone. By increasing the breadth of our audience, we reduce the depth at which we can communicate with each individual. As app developers rush to combine all of these platforms into one, maybe we should step back and think whether this is really necessary.
 
 On these larger social media apps where I'm 'connected' to hundreds of people, I don't feel like I can have very insightful conversations or thoughts. Those conversations almost exclusively happen in communities like [nwPlus](http://nwplus.io/) and [reboot](https://twitter.com/reboot_hq/) where there is enough alignment of values and interests that we can scrape past the surface level chit chat and get to really exploring ideas and knowing people.
 

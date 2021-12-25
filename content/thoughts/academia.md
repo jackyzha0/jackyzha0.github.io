@@ -1,30 +1,27 @@
 ---
 title: "Academia"
 date: 2021-06-18T10:13:33-04:00
+tags:
+- sapling
 ---
+
+## The 'rat race'
 
 > There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)
 
-My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that “we need better algorithms”. People pay lip service to “simple ideas” but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas. [Source](https://evjang.com/2021/10/23/generalization.html)
-
-## Cool People/Things
-- http://jeffclune.com/
-- https://www.davidlindlbauer.com/
-- https://www.hcii.cmu.edu/summer-research-program
-- https://chrisharrison.net/index.php/Research/Welcome
+My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that "we need better algorithms". People pay lip service to "simple ideas" but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas. [Source](https://evjang.com/2021/10/23/generalization.html)
 
 ## Tunnel Vision
-https://www.briantimar.com/notes/mimetic/mimetic/
-Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.
+[Source](https://www.briantimar.com/notes/mimetic/mimetic/)
+
+"Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute."
 
 ## [Incentive](thoughts/incentives.md) Structure
-Academia feels more pure, more like play? More of a 'constructionist' approach, freedom to ask your own questions rel: [mindstorms](/thoughts/books/mindstorms)
+Academia feels more pure, more [playful](thoughts/play.md), than academia? More of a 'constructionist' approach, freedom to ask your own questions (rel: [Mindstorms](thoughts/Mindstorms.md))
 
-Thinking about how similar the incentive structures are in [hackathons](/posts/hackathons)
+Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/new%20DARPA.md) perhaps?
 
-Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/a-new-darpa.md) perhaps?
-
-## MS Research
+## Research at Microsoft
 Session w/ Jim Pinkelman, Ph.D. Been at MS for 19 years, 11 years in Microsoft Research
 
 Most of MS research is not necessarily driven by a technical challenge that a product group faces. Very driven by research interests of new hires.

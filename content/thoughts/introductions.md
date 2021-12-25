@@ -3,10 +3,12 @@ title: "Introductions"
 date: 2021-06-05T19:47:49-04:00
 ---
 
-why i can never do good introductions
-* apply [labels](/thoughts/labels-and-quantization) to things
-* people have expectations
+why i always dislike introductions
+* apply [labels](thoughts/quantization.md) to things too early
+* people have expectations (oh so you're an artist? show me your work)
     * self-imposed as well
+    * a bad amount of [idolization](thoughts/idolization.md)
+    * as a side note, same reason why calling yourself a writer vs someone who writes are two very different vibes (i *dabble*)
 * first of many experiences → why do we feel the need to get it right at the start?
 
 ## Intersectional Identities
@@ -14,7 +16,7 @@ why i can never do good introductions
 
 Cooley imagined affiliations and interests as a system of coordinates, with each additional group determining one's individuality and identity more accurately.
 
-"These 'reciprocally constructing phenomena' that may empower one person with increasing self-actualization, burden others with exponentially debilitating oppression." Related: the matrix of domination and intersectional theory in [Design Justice](thoughts/books/design-justice.md)
+"These 'reciprocally constructing phenomena' that may empower one person with increasing self-actualization, burden others with exponentially debilitating oppression." Related: the matrix of domination and intersectional theory in [Design Justice](thoughts/Design%20Justice.md)
 
 ### About Page
 [Source](https://kortina.nyc/about-andrew-kortina/?curius=1296)
@@ -22,13 +24,6 @@ Cooley imagined affiliations and interests as a system of coordinates, with each
 "It strikes me that these labels are more often conversation enders than conversation starters, attempts to reduce a vast complexity into a neat, little word, with the lossiest of compression algorithms."
 
 We cheer for the clothes, not the people. As Feynman said, "honors is epaulets, honors is uniforms"
-
-## Idolization
-https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html
-* "You implicitly invalidate any struggles they have, and eschew their private life. Your praise becomes so diluted that it’s meaningless, just another reflex or polite gesture. And, god forbid they ever deviate from this god-like persona that you’ve created for them."
-* feels like there is rarely any space to be vulnerable
-	* no room for failure -> [a-failure-resume](/posts/a-failure-resume)
-* impostor syndrome
 
 ## Communication
 [bandwidth](thoughts/bandwidth.md) of communication mediums

@@ -17,6 +17,6 @@ EK on degrowth:
 
 > I think that if the political demand of the [degrowth] movement becomes you don’t get to eat beef, you will set climate politics back so far, so fast, it would be disastrous. Same thing with S.U.V.s. I don’t like S.U.V.s. I don’t drive one. But if you are telling people in rich countries that the climate movement is for them not having the cars they want to have, you are just going to lose. You are going to lose fast…This is where the politics of [degrowth] for me fall apart…
 
-The ideal would not be to reduce economic growth, but to reduce consumption as a whole in order to increase investment and [funding](thoughts/funding.md) for new [green technology](thoughts/climate-tech.md).
+The ideal would not be to reduce economic growth, but to reduce consumption as a whole in order to increase investment and [funding](thoughts/funding.md) for new [green technology](thoughts/climate%20tech.md).
 
 > Instead of “consume less”, their message should be “consume less today, so you can consume more tomorrow”

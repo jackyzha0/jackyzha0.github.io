@@ -7,12 +7,7 @@ date: 2021-10-24
 
 Shared fiction as a statement about the future instead of a statement of today. They're both fictions in that they can't be (dis)proved and thus can have the same functions in a group of people (bring together, motivate to action, share values/language, etc.)
 
-Reminds me of why being ambitious is important and why we should have nondystopian scifi -- there's value in reclaiming an optimistic and hopeful future (very Reboot vibes). I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.
-
-Steve Grand in *Creation: Life and How to Make It*
-> If an architect believes for a moment that there are hooks in the sky to hang his creations from, he may be able to conceive of structures that he would otherwise not dare to think about. Once the design starts to take shape, he may then begin to see ways in which the essence of it can still be achieved without the need for sky-hooks at all. Maybe this will work for us, too.
-
----
+Build as if your creations had [skyhooks](thoughts/skyhooks.md) you could hang them off of.
 
 > To see things as they really are, you must imagine them for what they might be. -- Ruha Benjamin
 
@@ -24,3 +19,6 @@ Where are our futures with no famine and disease? With a clean and healthy plane
 > "Humans are capable of a unique trick: creating realities by first imagining them, by experiencing them in their minds. When Martin Luther King said "I have a dream", he was inviting others to dream it with him. Once a dream becomes shared in that way, current reality gets measured against it and then modified towards it."
 
 The act of imagining something makes it real. Art as processes or the seeds for processes - things that exist and change in time, things that are never finished.
+
+## Fiction as shared visions
+ _Visions matter_. Visions give people a direction and inspire people to act, and _a group of inspired people is the most powerful force in the world_. If you're a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.

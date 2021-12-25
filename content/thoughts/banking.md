@@ -1,5 +1,5 @@
 ---
-title: "Banking "
+title: "Banking"
 date: 2021-10-24
 ---
 

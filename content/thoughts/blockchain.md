@@ -9,6 +9,8 @@ The universal message bus.
 
 An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md) and [Ethereum](thoughts/ethereum.md).
 
+Like symbolic systems, meaning needs to be derived through [intentionality](thoughts/intentionality.md). Run into problems of agreement on meaning of symbols and the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
+
 Characteristics:
 1. Distributed: data is stored by and updates are broadcasted to everyone
 2. Smart Contracts: codified agreements. Once the predetermined conditions of the contract are met, the transaction and attached computation are completed and recorded on the blockchain.
@@ -23,7 +25,7 @@ Transactions happen as follows:
 1. A transaction is initiated
 2. Data is packaged into a bolck
 3. Block is sent to members of the chain
-4. Consensus and approval by rest of network (either [proof-of-work](thoughts/proof-of-work.md) or [proof-of-stake](thoughts/proof-of-stake.md))
+4. Consensus and approval by rest of network (either [proof of work](thoughts/proof%20of%20work.md) or [proof of stake](thoughts/proof%20of%20stake.md))
 5. Block is added to chain
 6. Chain update is distributed to members
 
@@ -36,21 +38,8 @@ After going through a bunch of Kernel modules, Austin came upon a name for the c
 
 In actuality, the *layer* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
 
-### [Trust](thoughts/trust.md) (Degraded Blockchain Problem)
-One thing that I still don't understand about blockchain is the 'trustless' aspect of blockchains. Blockchains are not 'trustless', rather it shifts the trust balance away from trusting people and corporations to trusting an algorithm. 
-
-Yet, how do we go about trusting the algorithm that is 'cryptographically secure' when a good 99.5% of the users don't actually understand how blockchain and cryptography works? 
-
-Come into contact with the [Degraded Blockchain Problem](https://www.fortressofdoors.com/the-degraded-blockchain-problem/):
-
-![The link between the actual data on-chain and the actual thing that depends on the data to function are only *weakly* linked](/thoughts/images/degraded-blockchain.png)
-
-The blockchain really only stores a *pointer* to a good 99% of content that supposedly lives 'on-chain', most of it is never 100% on chain. (This is also why people meme on NFT owners which just link to a PNG, it's literally just a weak pointer. If the image hosting service goes down, that point is useless as it is immutable). The problem with this model is that if most of the value comes from the 'off-chain' *content*, then what use is this proof of ownership if I can't do anything with it?
-
-The only thing that actually connects the blockchain with the 'off-chain' value is... you guessed it... trust.
-
 ## Permanence
-Also just leans heavily in the direction of [digital permanence](thoughts/digital-permanence.md). What do we lose when we lose deletion?
+Also just leans heavily in the direction of [digital permanence](thoughts/digital%20permanence.md)
 
 ## Data
 [Source](https://kernel.community/en/learn/module-1/promise-blockchains)

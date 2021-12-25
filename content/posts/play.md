@@ -1,9 +1,12 @@
 ---
 title: "Play to Win: A Post-Work Society"
 date: 2021-11-14
+tags:
+- fruit
+- sociology
 ---
 
-*Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/circle.md) on [Hackathon Culture](posts/hackathons.md) and Play.*
+*Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/Interact%20Circle%20W21.md) on [Hackathon Culture](posts/hackathons.md) and Play.*
 
 ## Defining play
 I've spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals.
@@ -18,14 +21,14 @@ Play is the act of enjoying the process, the means to the end. To have as much f
 
 Yet this definition still seems inadequate. What separates work from play? Are they mutually exclusive? What about those who cannot afford time out of their day to do anything *but work*? Those who play games professionally?
 
-Here, I turn to Jenny Odell's [*How to Do Nothing*](thoughts/books/how-to-do-nothing.md) and Bernard Herbert Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/books/grasshopper.md) to further explore this definition.
+Here, I turn to Jenny Odell's [*How to Do Nothing*](thoughts/How%20to%20do%20Nothing.md) and Bernard Herbert Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/The%20Grasshopper.md) to further explore this definition.
 
 ## How to Do Nothing
 Odell’s book *How to Do Nothing* focuses on resisting the current attention economy. Doing ‘nothing’ within a productivity-obsessed environment can, in fact, help to restore communities, both locally and beyond.
 
-'Nothing', in this case, refers not to actually doing nothing but rather to not participating in the [attention economy](thoughts/attention-economy.md) and hustle culture. 'Nothing' means doing nothing productive.
+'Nothing', in this case, refers not to actually doing nothing but rather to not participating in the [attention economy](thoughts/attention%20economy.md) and hustle culture. 'Nothing' means doing nothing productive.
 
-Recently, I have been grappling with the question of whether self-care is [selfish](thoughts/selfishness.md). My inner self wants to be able to do nothing: just do projects I find fun, hang out with my friends, and go outside. However, I know that *long term*, working hard at doing well at my job and in school will do me more good, career-wise.
+Recently, I have been grappling with the question of whether self-care is [selfish](thoughts/selfish.md). My inner self wants to be able to do nothing: just do projects I find fun, hang out with my friends, and go outside. However, I know that *long term*, working hard at doing well at my job and in school will do me more good, career-wise.
 
 ![](/posts/images/play/long-term.png)
 

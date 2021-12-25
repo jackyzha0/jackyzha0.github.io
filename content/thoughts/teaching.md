@@ -8,4 +8,4 @@ The fundamental issue may then be that there's too many tools and too much space
 
 However, in a siloed world, communication is not exercised. A major component of a lot of subjects seems to be able to communicate effectively with another programmer. If the novice comes out of this experience unable to verbalize and communicate, is it even of use?
 
-A lot of similar questions to [game design](thoughts/game-design.md)
+A lot of similar questions to [game design](thoughts/game%20design.md). Important learnings in [Mindstorms](thoughts/Mindstorms.md)

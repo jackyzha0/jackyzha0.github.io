@@ -1,6 +1,9 @@
 ---
 title: "A Failure Resume"
 date: 2020-08-21T14:02:48-07:00
+tags:
+- personal
+- evergreen
 ---
 
 Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago. It's a list of things that didn't exactly go according to plan, and the lessons learned.
@@ -16,7 +19,6 @@ Now with all that stuff out of the way, here's the juicy list you've been waitin
 ## 2021
 
 * Stopped sending out newsletter issues :(( Ended up focusing more on longer form writing instead
-	* I do want to revive it at one point but probably in a shorter-form musings things rather than a fully curated list of links and thoughts.
 
 * Ghosted by both Contrary Build and Contrary Fellowship
 

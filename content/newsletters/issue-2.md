@@ -14,7 +14,7 @@ I can't believe we're approaching a time of year when I can wait until *after* d
 
 ## 2 things I’ve been wondering about
 
-1. What does it mean to find fulfilment in what you do? I've found myself involved with an overabundance of projects in the past year and only a select handful have truly been fulfilling to work on. I'm doing a bit of introspection in hopes of maybe figuring out why I love doing the things I love and maybe an answer to [`$whoami`](/thoughts/whoami).
+1. What does it mean to find fulfilment in what you do? I've found myself involved with an overabundance of projects in the past year and only a select handful have truly been fulfilling to work on. I'm doing a bit of introspection in hopes of maybe figuring out why I love doing the things I love and maybe an answer to who I am.
 2. [What's not in the frame](https://www.youtube.com/watch?v=ZRZuEGuU_es). In which Hank talks about the [metaphorical 'frame'](posts/context-collapse.md), or the context in which people present themselves. People choose to present themselves a certain way in front of others and in doing so, leave a lot of what's *actually* going on outside the frame. If all we ever see are other people's frames, how do we remind ourselves of what's going on outside of it and normalize being 'out-of-frame'?
 
 ## 1 thing I’ve done

@@ -11,7 +11,6 @@ Big companies avoid fully detailing how they identify and categorize uses, claim
 
 "They argue, this surveillance allows them ways to minimize the gamification of the social media system by disruptive actors, and by segmentation and differentiation, they may better protect the authentic user from the inauthentic."
 
-
 ## ACM Principles for Algorithmic Transparency and Accountability
 - Awareness: stakeholders of analytic systems should be aware of the biases + risks + potential harms their design, implementation, and use could cause
 - Access and redress: encourage the adoption of mechanisms that allow questioning by and remediation for groups adversely affected by algorithmic decision making systems

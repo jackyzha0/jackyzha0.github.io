@@ -1,10 +1,13 @@
 ---
 title: "A case for funding Open Source"
 date: 2021-02-27T12:03:33-08:00
+tags:
+- fruit
+- funding
 ---
 
 ## Making of Open Source software
-I’ve recently made my way through [*Working in Public: The Making and Maintenance of Open Source Software*](thoughts/books/oss) by Nadia Eghbal. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and [funding](thoughts/funding.md). So much so, that I’ve started experiencing the Baader-Meinhof effect, seeing something to do with open source and funding everywhere I look in tweets, conversations, and blogs.
+I’ve recently made my way through [*Working in Public: The Making and Maintenance of Open Source Software*](thoughts/Making%20and%20Maintenance%20of%20OSS.md) by Nadia Eghbal. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and [funding](thoughts/funding.md). So much so, that I’ve started experiencing the Baader-Meinhof effect, seeing something to do with open source and funding everywhere I look in tweets, conversations, and blogs.
 
 This blog post is an exploration of processes in open source, the value it provides, and how money fits into the picture.
 
@@ -35,7 +38,7 @@ Creating a project is fun. It’s a wild exploration into a new idea, a frivolou
 
 Just a few clicks and a few taps of your keyboard and your project is readily available to any of the 4.66 billion people around the world with internet access. This adrenaline rush of finally releasing the labour of your work onto the world is the moment developers are constantly chasing. For most developers, the process of creation and distribution is intrinsically motivated; it’s an enjoyable process.
 
-[Maintenance is less so.](/thoughts/creation-vs-maintenance) This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
+[Maintenance is less so.](thoughts/creation%20vs%20maintenance.md) This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
 
 Code may be nearly free to create and distribute, but maintenance is still expensive.
 
@@ -43,7 +46,7 @@ Code may be nearly free to create and distribute, but maintenance is still expen
 ### Code as an artifact
 There are two main ways we can look at code. The first of which is *static* code. Code that, on its own, does nothing but exists as an archive. Others can copy and download the code without incurring any additional costs to the author. For the maintainers, it should make no difference in regards to cost whether 10 or 10,000 people use it.
 
-This type of code is a pool resource or [public good](thoughts/public-goods.md), it is
+This type of code is a pool resource or [public good](thoughts/public%20goods.md), it is
 1. **Non-rivalry.** My ability to copy the code doesn’t affect your ability to copy it. (This isn’t exactly true due to some marginal costs but I’ll discuss this later)
 2. **Non-excludable.** If someone has a copy of the code, it is very difficult to prevent them from sharing that code with others.
 
@@ -98,7 +101,7 @@ Funding individuals means trusting not just in the projects they are currently w
 > 
 > **A:** Yes, but it depends on who you're funding.
 
-[Attention](/thoughts/attention-economy) is the main currency of production. Attention is what you divert when you choose to focus on prioritizing a feature request over adding support for a library that you promised to add a few months back. Attention is what limits you from doing everything at once.
+[Attention](thoughts/attention%20economy.md) is the main currency of production. Attention is what you divert when you choose to focus on prioritizing a feature request over adding support for a library that you promised to add a few months back. Attention is what limits you from doing everything at once.
 
 Attention, then, is a common pool resource. It is non-excludable (anyone can bid for their attention) and rivalrous (limited attention). But, by charging for access to maintainer’s attention, it then becomes a private good: excludable and rivalrous. The belief is that, by making attention excludable, the quality of contributions will increase as contributors and users compete for the attention of producers.
 

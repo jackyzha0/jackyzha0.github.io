@@ -68,11 +68,13 @@
   const width = document.getElementById("graph-container").offsetWidth
 
   const simulation = d3.forceSimulation(data.nodes)
-    .force("charge", d3.forceManyBody().strength(-20))
+    .force("charge", d3.forceManyBody().strength(-80))
     .force("link", d3.forceLink(data.links)
       .id(d => d.id)
     )
-    .force("center", d3.forceCenter());
+    .force("collide", d3.forceCollide(7))
+    .force("center", d3.forceCenter().strength(1))
+    .tick(5);
 
   const svg = d3.select('#graph-container')
     .append('svg')
@@ -119,7 +121,7 @@
     .attr("id", (d) => d.id)
     .attr("r", (d) => {
       const numOut = index.links[d.id]?.length || 0
-      return 3 + (numOut / 4)
+      return 5 + (numOut / 3)
     })
     .attr("fill", color)
     .style("cursor", "pointer")

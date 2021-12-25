@@ -5,6 +5,8 @@ date: 2021-12-12
 
 The point is to make ideas real. They are (limited) representations of conceptual designs for users to interact with.
 
+Sketching for [interaction design](thoughts/interaction%20design.md)
+
 ![](/thoughts/images/prototype.png)
 
 ### Why prototype?
@@ -19,37 +21,7 @@ Identify:
 -   **requirements** you need to address
 -   **users and tasks** that your prototype(s) will support
 
-## Discount Evaluation
-### Cognitive Walkthroughs (mental model)
-A method to evaluate the mental model that's supported by your conceptual design. Assesses exploratory learning stage (new/casual users). Mostly for early design stage.
-
-Two methods of conducting CWs:
-1. Structured Approach
-	1. prepared steps, assess according to expected actions/system response
-	2. at each step, assess using the prepared questions
-2. Open-ended Approach
-	1. give the CW participant only the **_higher level directives_**
-	2. eg. "create an event note with the following attributes..."
-	3. note divergences from expected
-
-Process:
-1. **start** with a scenario (task examples + design → scenario)
-2.  break task down into steps of user actions (expected system response)
-3.  carry out each step on the existing interface and ask:
-    1.  will the user know what to do?
-    2.  will the user see how to do the action?
-    3.  will the user correctly understand the system response?
-4.  if you locate a problem, mark it and pretend it has been repaired; then go on to the next step
-
--   not for:
-    -   assessing performance at highly skilled, frequently performed tasks
--   disadvantage:
-    -   limited utility for frequent-use interfaces, narrow focus, time consuming and laborious (compared to other discount methods)
-
-### Heuristic Evaluation (fine tune)
-Suitable for broader audience design (including expert). Fine-tunes the interface (hi-fi prototypes; deployed systems). Conducted by professionals
-
-## Acquiring Mental Models
+## Acquiring [mental models](thoughts/mental%20model.md)
 1. Using the system (hands-on learning)
 2. Observing others using the system
 3. Reading about a system (documentation)
@@ -110,42 +82,3 @@ Method of testing a system that does not yet exist
     -   has computer/screen behave in appropriate manner
 
 Possible downside is that the human can over-/under-estimate the quality of the actual technology being simulated.
-
-## HTML Prototyping
-1. Address issues of provided functionality and content
- 	- rough outline of functions provided by the system, group related functions together
- 	- evaluation
-		- do you cover all functions needed for common user tasks
-		- are there critical tasks that you have not considered?
-		- are the available resources sufficient?
-2. Break content into screens
-	- use `<hr>` to break content into screens, start with one screen per major function
-	- define logical user interface events that should be detected on each screen
-	- evaluation
-		- are there too many screens?
-		- are individual screens too complex?
-		- can needed events be deleted?
-3. Address issues of screen flow
-	- define links between events and result screens (allowing it to be 'runnable')
-	- evaluation
-		- is the length of a typical session too long?
-		- are there too many steps needed for common tasks?
-		- is navigation straightforward? are provided navigational aids sufficient?
-4. Address issues of presentation
-	- format screens to roughly look like finished product
-	- link specific logical events to buttons (rather than whole screen flows)
-	- evaluation
-		- is there enough space to show all info on a given screen?
-		-   is the rough layout of each screen clear? consistent?
-		-   are key screen elements easy to find?
-		-   are messages phrased clearly? appropriate for context?
-5. Gather metrics and feedback from more evaluators
-	- break screens into separate HTML pages
-	- visualize overall UI structure using website mapping tools
-	-   add hit counters to pages or use other monitoring techniques
-	-   use email links or HTML forms to gather feedback from evaluators
-	-   evaluation
-		- does the site map reveal sequences that are too long? dead ends? parallel structures?
-		-   which pages get the most traffic?
-		-   which pages get the least traffic? which are never used?
-		-   what do the evaluators have to say?

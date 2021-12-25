@@ -15,11 +15,12 @@ Does moving closer to real-time mean less interpretation? Less expressive medium
 
 What does this mean for art which inherently requires interpretation? Will we ever get to a communication medium so direct (e.g. mind-to-mind) that it doesn't require interpretation? What about [qualia](thoughts/qualia.md) and the subjective human experience?
 
-## Glue
-[Source](https://a9.io/glue-comic/)
+### Lossiness as Mutation
+[Source](https://subconscious.substack.com/p/self-organizing-ideas)
 
-"How can we go beyond a linear, temporal, low-bandwidth activity without getting in the way of the sublime symbiosis of speaking?"
+Maybe chaos is necessary for [emergent behaviour](thoughts/emergent%20behaviour.md). Thus, lossy communication in low [bandwidth](thoughts/bandwidth.md) communication helps seed for selection/mutation of new ideas. Examples of this include writing.
+
+When we write, **[we flatten the cloud of associated ideas in our head](https://subconscious.substack.com/p/hypertext-montage)** into a linearized subset (lossy). The reader then unflattens this linearized subset into their own cloud of associated ideas (lossy). Each lossy step is an opportunity for **mutations** in understanding to emerge.
 
 ## Resources
 "I have a theory, which has not let me down so far, that there is an inverse relationship between imagination and money. Because the more money and technology that is available to [create] a work, the less imagination there will be in it." Alan Moore
-

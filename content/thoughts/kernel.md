@@ -23,5 +23,5 @@ date: 2021-10-30
 ## Module 3
 - [Intentionality](thoughts/intentionality.md)
 - [Freedom](thoughts/freedom.md)
-- [Remember](thoughts/tools-for-thought.md)
-- [Time](thoughts/attention-economy.md)
+- [Remember](thoughts/tools%20for%20thought.md)
+- [Time](thoughts/attention%20economy.md)

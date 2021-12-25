@@ -13,9 +13,12 @@ Having clearly defined and encoded rules means that there is an *implicit shift*
 
 This feels like its missing an important step in the process: trusting the medium. If people don't understand how the medium works to facilitate transactions, how can they trust it? Not only is **access** important, but how easily people understand why it works.
 
-Related: [game theory and trust](thoughts/game-theory.md)
+Related: [game theory and trust](thoughts/game%20theory.md)
 
 > To dream up important ideas you must think like an idealist; to build systems that will live up to those dreams, you must think like an adversary.
 
 ### Money as Faith
 What you believe informs what you pay attention to and how you act, which define what you vest value in.
+
+## Web3
+"Because [blockchain](thoughts/blockchain.md)s allow us to define succinctly our shared truths, **and because the record itself is shared** across all participants, there is a whole new "trust space" we can explore, searching for more valuable kinds of transactions impossible within merely legal fictions."

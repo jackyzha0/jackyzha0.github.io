@@ -46,7 +46,7 @@ The important part of learning communities like colleges is not necessarily the 
 ## Wiggle room
 > If you want to go deeply into any subject, you need a lot of time, and in particular, you need the privilege of wasting time. You need to experiment with unproductive paths, explore dead ends, make space for doubts and boredom, and allow little seeds of insight to slowly grow and blossom
 
-For me, learning is very close to a [zero-sum](thoughts/zero-sum.md) game. I can only expand the area of my knowledge blob so fast. If I want to broaden my foundational knowledge base, I need to reign in the amount of time spent growing purely technical strengths and to stop saying 'yes' to any and every opportunity that comes up.
+For me, learning is very close to a [zero sum](thoughts/zero%20sum.md) game. I can only expand the area of my knowledge blob so fast. If I want to broaden my foundational knowledge base, I need to reign in the amount of time spent growing purely technical strengths and to stop saying 'yes' to any and every opportunity that comes up.
 
 Slowly but surely, I'm learning to value my own time and to set it aside to just absorb more about the world and to extend the reaches of my knowledge just a little bit further. To dilly-dally among the Wikipedia rabbit holes, cultivate [my digital garden](/posts/digital-gardening), and faff among the ridiculously long list of side projects I planned to start. I'm experimenting with what I previously thought were deadends and little seeds of insight are starting to grow. Maybe I'll find something interesting to share among the construction of this broader foundation.
 

@@ -28,24 +28,24 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
-* [**How to Do Nothing**](thoughts/books/how-to-do-nothing.md) by Jenny Odell
+* [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 
 ## Past
 ### 2021
-* [**A Tale for the Time Being**](thoughts/a-tale-for-the-time-being.md) by Ruth Ozeki
-* [**Atlas of AI**](thoughts/books/atlas-of-ai.md) by Kate Crawford
+* [**A Tale for the Time Being**](thoughts/A%20Tale%20for%20the%20Time%20Being.md) by Ruth Ozeki
+* [**Atlas of AI**](thoughts/Atlas%20of%20AI.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro
-* [**The Grasshopper: Games, Life and Utopia**](thoughts/books/grasshopper.md) by Bernard Suits
+* [**The Grasshopper: Games, Life and Utopia**](thoughts/The%20Grasshopper.md) by Bernard Suits
 * **The Anthropocene Reviewed** by John Green
 * **Never Let Me Go** by Kazuo Ishiguro
-* [**From Counterculture to Cyberculture**](/thoughts/books/fctc) by Fred Turner
-* [**Design Justice**](/thoughts/books/design-justice) by Sasha Costanza-Chock
-* [**Mindstorms**](/thoughts/books/mindstorms) by Seymour A. Papert
+* [**From Counterculture to Cyberculture**](thoughts/From%20Counterculture%20to%20Cyberculture.md) by Fred Turner
+* [**Design Justice**](thoughts/Design%20Justice.md) by Sasha Costanza-Chock
+* [**Mindstorms**](thoughts/Mindstorms.md) by Seymour A. Papert
 * **Half of a Yellow Sun** by Chimamanda Ngozi Adichie
 * **1984** by George Orwell
 * **On Earth We're Briefly Gorgeous** by Ocean Vuong
-* [**The Making and Maintenance of Open Source Software**](thoughts/books/oss.md) by Nadia Eghbal
+* [**The Making and Maintenance of Open Source Software**](thoughts/Making%20and%20Maintenance%20of%20OSS.md) by Nadia Eghbal
 * **When Breath Becomes Air** by Paul Kalanithi
 * **Kafka on the Shore** by Haruki Murakami
 * **The Art of Thinking Clearly** by Rolf Dobelli

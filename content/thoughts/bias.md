@@ -3,9 +3,7 @@ title: "Bias"
 date: 2021-10-30
 ---
 
-Post on [Bias in AI](posts/bias-bug.md)
-
-Related: [Design Justice](thoughts/books/design-justice.md)
+More detailed post on [Bias in AI](posts/bias-bug.md). Related readings: [Design Justice](thoughts/Design%20Justice.md), [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md)
 
 ## Social Bias in Information Retrieval
 Source: Addressing Social Bias in Information Retrieval in *In Experimental IR Meets Multilinguality, Multimodality, and Interaction*
@@ -20,29 +18,9 @@ Friedman and Nissenbaum's definition of bias:
 
 > Indeed, over the past years, many researchers have found that search engines, through the result sets they present to users, tend to reinforce a view of the social world that aligns with the status quo.
 
-Related: [To Live in their Utopia](thoughts/articles/to-live-in-their-utopia.md)
+Related: [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Data Distributions](thoughts/data%20distributions.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md)
 
-## Algorithms of Oppression (Chapter 1)
-Moving the focus away from 'problematic users and data' to search architecture itself.
-
-> If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?
-
-These search results influence the values that surround what is being searched for. This means that minority groups often have their own values and identities influenced by the majority: [double-consciousness](thoughts/collections.md)
-
-Why have we become so reliant on search? Is it a part of our [extended mind](thoughts/extended-mind.md)?
-
-> [Search](thoughts/search.md) is a symbiotic process that both informs and is informed in part by users.  
-
-"Google directs web traffic to mainstream corporate news conglomerates, which increases their ability to shape the political discourse." This is the [zero-sum](thoughts/zero-sum.md) [attention economy](thoughts/attention-economy.md).
-
-> Decreases in funding for public information institutions such as libraries and educational institutions and shifts of responsibility to individuals and the private sector have reframed the ways that the public conceives of what can and should be in the public domain.  
-
-### Search Engines as Faith
-They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.
-
-"Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil) 
-
-### Captchas
+## Captchas
 How do you distinguish between human and non-human without discriminating against certain types of people (e.g. ethnicity, cultural background)? How does one prove their humanity without betraying anything else about them?
 
 "What is the universal human quality that can be demonstrated to a machine, but that no machine can mimic? What is it to be human?"
@@ -51,5 +29,5 @@ How do you distinguish between human and non-human without discriminating agains
 
 Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in the 'right' way? (e.g. optical illusions)
 
-### Ethical Matrices
+## Ethical Matrices
 Who cares about my algorithm? Who are the stakeholders? Why do they care? What are their goals?

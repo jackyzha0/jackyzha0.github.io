@@ -27,7 +27,7 @@ old meanings may no longer make sense. new groups try to co-opt old terminology.
 when do we need new words?
 
 ## Terminological anchoring
-natural meaning 'drift' -> see [labels-and-quantization](thoughts/labels-and-quantization.md)
+natural meaning 'drift'
 
 - hesitant to 'root' new terms, terminology evolves in a decentralized way, centralizing meaning often concretizes meaning (which is good in the case of dictionaries but i dont think web3 is at that stage yet)
 - naming as power, but naming also anchors meaning
@@ -43,11 +43,9 @@ e.g. hacker, metaverse
 
 at nwplus, we have a slide on all our promo materials that explains that hackers don't actually 'hack devices' at hackathons
 
-it actually means 
-
 ## Right to be forgotten
 - right to be forgotten but for terminology
-	- rel: [digital-permanence](thoughts/digital-permanence.md)
+	- rel: [digital permanence](thoughts/digital%20permanence.md)
 
 hard for things ingrained within society
 meaning is not dictated by some central organization
@@ -55,3 +53,15 @@ it needs to be collectively forgotten, and/or overwritten
 
 either hard-fork it within a subcommunity
 or create an entirely new word
+
+## Terminological [Feedback Loops](thoughts/feedback%20loops.md)
+1. Practice creates new terminology as a way to communicate complex ideas without needing to rexplain each time
+2. Terminology then shapes how we think about the world: [Sapir-Whorf](thoughts/language%20of%20thought.md)
+3. Some terminology becomes outdated as practice changes
+4. Arguments ensue over updating shared terminology (esp as language is decentralized, this can cause fracturing)
+5. Two camps emerge
+	1. People who want to use terminology mainly as a means to more efficiently communicate practice
+	2. People who like the theory behind terminology or those who are attached to tradition
+6. Camps argue over who has the 'right' definitions but for their own goals
+	1. Camp 1 repeats this loop
+	2. Camp 2 continues to argue over definitions

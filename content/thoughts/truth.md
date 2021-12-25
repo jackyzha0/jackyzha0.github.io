@@ -24,7 +24,7 @@ Related to Conway's Game of Life and whether we can tell a program can halt or n
 ## Verisimilitude
 Truth is not binary, but rather a spectrum. Some propositions are closer to being true than other propositions.
 
-Very related to the work of Karl Popper and the iterative approach to science.
+Very related to the work of Karl Popper and his [philosophy of science](thoughts/philosophy%20of%20science.md).
 
 ## Descartes' Meditations
 ### First Meditation → skeptical doubts
