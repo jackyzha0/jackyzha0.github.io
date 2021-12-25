@@ -3,6 +3,8 @@ title: "Move Fast and Break Things"
 date: 2021-02-27T11:59:22-08:00
 ---
 
+> To slow down is to end up [default dead](http://www.paulgraham.com/aord.html); the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences. (Jasmine Wang)
+
 [Samson](https://www.samsonzhang.com/2021/01/19/how-to-innovate-and-create-a-culture-of-innovation.html) and [Engelbart](https://www.dougengelbart.org/content/view/348/000/)
 
 Moving fast but not breaking things
