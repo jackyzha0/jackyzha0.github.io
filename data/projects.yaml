@@ -14,6 +14,9 @@
     - Cloud Run
     - React
     - Next.js
+  lang_ratios:
+    - name: JavaScript
+      percent: 100
 
 - name: Portal
   expand: false
