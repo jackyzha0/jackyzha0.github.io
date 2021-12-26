@@ -1,6 +1,8 @@
 ---
 title: "Intentionality"
 date: 2021-09-21T09:51:49-07:00
+tags:
+- sapling
 ---
 
 -  intentionality is derived

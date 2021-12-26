@@ -1,6 +1,8 @@
 ---
 title: "Carbon Credits"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 [Source](https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia)

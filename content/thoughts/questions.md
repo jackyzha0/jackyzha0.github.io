@@ -1,6 +1,8 @@
 ---
 title: "Questions"
 date: 2021-10-22
+tags:
+- sapling
 ---
 
 [Source](https://kernel.community/en/learn/module-2/better-questions)

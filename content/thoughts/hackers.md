@@ -8,7 +8,7 @@ tags:
 ## Steven Levy
 [Source: *Hackers* by Steven Levy](https://classes.visitsteve.com/hacking/wp-content/Steven-Levy-Hackers-ch1+2.pdf)
 
-The hacker ethic: sharing, openness, decentralization, and getting your hands on machines at any cost to improve the machines and to improve the world. All information should be free.
+The hacker ethic: sharing, openness, [decentralization](thoughts/decentralization.md), and getting your hands on machines at any cost to improve the machines and to improve the world. All information should be free.
 
 Squeezing in time where no one else would (sniping people even 1 min late at 3am in the morning). This culture seemed to almost arise bottom-up from the scarcity of compute resources at the early 60s and 70s, especially around the MIT area where there seemed to be a lot more spare compute time and just really smart, curious people.
 
@@ -47,13 +47,13 @@ I think my case for this argument would be slightly different if PG focused more
 Maybe because better incentive systems are so much harder to create and evaluate. Numbers are easy and an easy test that kind-of works is really tempting to stick with.
 
 ### Industry
-"Universities and research labs force hackers to be scientists, and companies force them to be engineers... Programmers were seen as technicians who translated the visions (if that is the word) of product managers into code."
+"Universities and research labs force hackers to be scientists, and companies force them to be engineers... Programmers were seen as technicians who translated the visions (if that is the word) of product managers into code." (re: [academia](thoughts/academia.md))
 
 This feels like a problem of scale: only a small percentage of hackers *can* actually design software and it's hard for people running a company to pick these out
 
 Big companies want to damp oscillation/standard deviation of results, they have shareholders to which they are accountable. They win by sucking less than their competitors, not making great products.
 
-"But when you damp oscillations, you lose the high points as well as the low."
+"But when you damp oscillations, you lose the high points as well as the low." ([Vanilla Ice Cream effect](thoughts/Vanilla%20Ice%20Cream%20effect.md))
 
 ### Figuring things out as you go
 
@@ -68,5 +68,5 @@ Hackers also learn by doing. Hackers, from the start, are doing original work; i
 ### Demand
 > Prices are determined by supply and demand, and there is just not as much demand for things that are fun to work on as there is for things that solve the mundane problems of individual customers.
 
-Similar to [creation vs maintenance](thoughts/creation%20vs%20maintenance.md), there seems to be a need to artificially incentivize the difficult work (e.g. maintenance or mundane problems)
+Similar to [creation vs maintenance](thoughts/creation%20vs%20maintenance.md), there seems to be a need to artificially incentivize the difficult work (e.g. [maintenance](thoughts/maintenance.md) or mundane problems)
 

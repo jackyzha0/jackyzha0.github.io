@@ -1,3 +1,20 @@
+- name: Interdependence
+  expand: false
+  short_desc: platform for signable + forkable writing
+  links:
+    - link_name: site
+      link: https://www.interdependence.online
+    - link_name: github
+      link: https://github.com/verses-xyz/interdependence-server
+  desc:
+    A decentralized platform that allows users to fork and cryptographically sign pieces of writing. Our original drop was a fork of John Perry Barlow's 1996 Declaration for the Independence of Cyberspace. We garnered over 1300+ verified signatures on the document over the span of a week. Built on top of the ARWeave blockchain.
+  techlist:
+    - ARWeave
+    - Express
+    - Cloud Run
+    - React
+    - Next.js
+
 - name: Portal
   expand: false
   short_desc: zero-config P2P encrypted folder syncing

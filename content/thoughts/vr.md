@@ -1,6 +1,8 @@
 ---
 title: "VR"
 date: 2021-08-24T22:03:31-04:00
+tags:
+- sapling
 ---
 
 Physical bodies perceive the senses that are input from the VR machine. [Brains in a Vat](thoughts/Brains%20in%20a%20Vat.md) experiment? question of [representation](/thoughts/representation) and whether we need [embedded systems](thoughts/embedded%20AI.md)

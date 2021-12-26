@@ -1,6 +1,8 @@
 ---
 title: "Consciousness"
 date: 2021-08-12T23:54:29-04:00
+tags:
+- sapling
 ---
 
 What does it mean to be conscious? Is consciousness emergent from matter? Or is it something else entirely (the ether or the soul)?

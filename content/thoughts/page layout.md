@@ -1,6 +1,8 @@
 ---
 title: "Page Layout"
 date: 2021-12-12
+tags:
+- seed
 ---
 
 Page layout is the art of manipulating a user's attention on a page to convey meaning, sequence, and point of interaction.

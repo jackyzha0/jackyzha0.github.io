@@ -1,6 +1,8 @@
 ---
 title: "Extended Mind Hypothesis"
 date: 2021-07-02T13:18:45-04:00
+tags:
+- sapling
 ---
 
 ## Extended view of the mind

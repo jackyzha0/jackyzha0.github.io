@@ -1,6 +1,8 @@
 ---
 title: "Cancel Culture"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 ## Cancel culture and healthy debate

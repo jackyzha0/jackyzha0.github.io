@@ -1,6 +1,8 @@
 ---
 title: "Right to be forgotten"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 Resistance against [digital permanence](thoughts/digital%20permanence.md)

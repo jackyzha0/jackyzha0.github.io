@@ -1,6 +1,8 @@
 ---
 title: "Banking"
 date: 2021-10-24
+tags:
+- seed
 ---
 
 [Source](https://kernel.community/en/learn/module-2/banking)

@@ -1,6 +1,8 @@
 ---
 title: "On AI's 'Bias Bug'"
 date: 2020-08-29T16:27:50-07:00
+tags:
+- fruit
 ---
 
 This blog post was originally intended to be a TED Talk given at TEDxRedmond but I unfortunately was never accepted. However, I did learn a lot in the process of writing it, and I hope you get some value out of it even its presented through just text.
@@ -55,11 +57,11 @@ The first is in the problem definition. When creating an AI, we need to define a
 Take Amazon for example. In 2014, Amazon decided to create a recruitment engine that was able to look at a job applicant and rate them from a one-star rating to a five-star rating. However, by 2015, Amazon realized that their software was not evaluating candidates for positions related to tech in a gender-neutral way[^4]. Although unintentionally, Amazon’s engineers included a gender field. The algorithm, after sifting through 10 years worth of resumes, began to favour men and penalize women. After deeper inspection, this was most likely an unfortunate reflection of the male-dominated tech industry. The lesson is clear. The algorithm served to reflect this bias that was observed in the past.
 
 ### 2. Lack of Data Diversity 
-The second, less obvious way bias can poison AI is with data diversity &mdash; or rather the lack of it. I think the best way to explain this is through a metaphor. Imagine the AI as a small child. It likes to learn from its environment. If this child were to be raised in a racist family, it will almost undoubtedly hold similar views in the future. This is a very similar case for AI. It learns from the environment and data it's given.
+The second, less obvious way bias can poison AI is with [data diversity](thoughts/data%20distributions.md) &mdash; or rather the lack of it. I think the best way to explain this is through a metaphor. Imagine the AI as a small child. It likes to learn from its environment. If this child were to be raised in a racist family, it will almost undoubtedly hold similar views in the future. This is a very similar case for AI. It learns from the environment and data it's given.
 
 One case of this is the very first iteration of Google Photo’s image classification feature back in 2015. This feature claimed to be able to identify people, places, and things with high accuracy. Twitter user [@jackyalcine](https://twitter.com/jackyalcine/) found that the algorithm identified people with darker skin as gorillas[^3]. Google quickly was able to work and manually ‘patch’ the issue, but the actual issue was much deeper – and it had to do with the data used. In this case, the dataset that Google used to train their algorithm had an over proportional amount of middle-aged Caucasian people under the category of ‘people.’ This meant that while the recognition accuracy was really high for that select group of people, the accuracy for people of colour was significantly worse. 
 
-From both cases, we can see that an over-focus on results and accuracy can cause these companies to ignore these biases. When the deadline is too tight or the manager sets an expectation for a “10% increase in accuracy,” there is a very strong incentive to ignore the ‘edge cases’ or things that happen very rarely.
+From both cases, we can see that an over-focus on results and accuracy can cause these companies to ignore these [biases](thoughts/bias.md). When the deadline is too tight or the manager sets an expectation for a “10% increase in accuracy,” there is a very strong incentive to ignore the ‘edge cases’ or things that happen very rarely.
 
 Too often our society is focused on the raw accuracy that we forget that the same accuracy metric is something that we set for ourselves – created arbitrarily by humans which have bias. Unfortunately, this results in things like the Google Photos and Amazon Hiring cases.
 

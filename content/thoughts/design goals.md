@@ -1,6 +1,8 @@
 ---
 title: "Design Goals"
 date: 2021-10-03
+tags:
+- seed
 ---
 
 Goals in the context of HCI are things that can be defined in a given context, then evaluated.

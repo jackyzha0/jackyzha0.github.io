@@ -1,6 +1,8 @@
 ---
 title: "Tragedy of the Commons"
 date: 2021-07-28T18:59:39-04:00
+tags:
+- sapling
 ---
 
 

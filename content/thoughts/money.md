@@ -1,6 +1,8 @@
 ---
 title: "Money"
 date: 2021-10-08
+tags:
+- sapling
 ---
 
 > Money is a form of shared truth
@@ -13,7 +15,7 @@ Money is a language through which to communicate value. Then, was does this mean
 
 What money is, how it is created, and who gets to distribute it goes to the very heart of the ways in which we are all incentivised to act
 
-[incentives](thoughts/incentives.md) can be thought of as the [social, political and neurobiological primitives](thoughts/social%20contracts.md) which define what kinds of behaviours we express.
+[Incentives](thoughts/incentives.md) can be thought of as the [social, political and neurobiological primitives](thoughts/social%20contracts.md) which define what kinds of behaviours we express.
 
 > Programmable money provides utility which makes it much more than just money for the internet: **it turns it into the internet of money**.
 

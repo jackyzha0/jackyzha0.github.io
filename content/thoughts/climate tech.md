@@ -1,11 +1,13 @@
 ---
 title: "Climate Tech"
 date: 2021-07-15T17:28:11-04:00
+tags:
+- seed
 ---
 
 Not just about investing in carbon removal or carbon offsets also about investing in the [infrastructure](/thoughts/infrastructure) to make it possible. 
 
-[The Land Ethic](https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf) simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the landcommunity to plain member and citizen of it.
+[The Land Ethic](https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf) simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the land community to plain member and citizen of it.
 
 Related: [degrowth](thoughts/degrowth.md)
 
@@ -32,7 +34,7 @@ Attempting to pay people to offset carbon through [carbon credits](thoughts/carb
 ## Neutral Infrastructure
 [Source](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and other [source](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
 
-Might be software infrastructure but it has lots of [political](thoughts/Do%20Artifacts%20Have%20Politics.md) implications (e.g. climate impact, territory disputes, etc.). It's 'reduced cost' does not factor in long-term negative externalities like warming the ocean.
+Might be software infrastructure but it has lots of [political](thoughts/Do%20Artifacts%20Have%20Politics.md) implications (e.g. climate impact, territory disputes, etc.). It's 'reduced cost' does not factor in long-term negative externalities like warming the ocean. (also: [software and politics](thoughts/software%20and%20politics.md))
 
 "Many of these solutions are readily available, but in a risk-averse industry, most companies have been reluctant to make wholesale change." This is largely due to the anonymity involved in the industry where even the federal government was unable to determine how much energy its own data centres consume.
 

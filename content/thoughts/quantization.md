@@ -1,6 +1,8 @@
 ---
 title: "Labels and Quantization"
 date: 2021-05-04T22:22:23-04:00
+tags:
+- sapling
 ---
 
 > "Where is the knowledge we have lost in the information?" -- T.S. Eliot's "The Rock"
@@ -15,7 +17,7 @@ Why do we have labels in the first place?
 - they give legitimacy in the form of social proof to concepts
 More on this in [terminology](thoughts/terminology.md)
 
-Are overloaded terms still useful? (e.g. [hacker](thoughts/hackers.md) has so many connotations attached to it) At that point, do we need to create new [terminology](thoughts/terminology.md)? See: [hermeneutical injustice](thoughts/hermeneutical%20injustice.md)
+Are overloaded terms still useful? (e.g. [hacker](thoughts/Hackers.md) has so many connotations attached to it) At that point, do we need to create new [terminology](thoughts/terminology.md)? See: [hermeneutical injustice](thoughts/hermeneutical%20injustice.md)
 
 ## [Qualia](thoughts/qualia.md)
 Is there any anyway to label or quantify the subjective human experience? Probably not.

@@ -1,6 +1,8 @@
 ---
 title: "Embedded AI"
 date: 2021-07-02T15:01:46-04:00
+tags:
+- seed
 ---
 
 More in [post on AI systems](posts/ai-systems.md)

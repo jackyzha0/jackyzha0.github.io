@@ -1,6 +1,8 @@
 ---
 title: "Hedonic Treadmill"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 What does it mean to 'improve' if all we do is take the new baseline as just that -- a baseline? Everything relative to that baseline would be relatively the same.

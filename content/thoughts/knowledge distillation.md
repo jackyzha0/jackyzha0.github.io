@@ -1,6 +1,8 @@
 ---
 title: "Knowledge Distillation + Teaching"
 date: 2021-08-29T00:20:50-04:00
+tags:
+- sapling
 ---
 
 [Source](https://jvns.ca/blog/confusing-explanations/)

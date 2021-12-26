@@ -11,7 +11,7 @@ There is no happiness without suffering. The story presents a classic utilitaria
 
 Thinking about it in terms of technology as a multiplicative tool. Is it then morally just to develop technology to benefit others knowing that it will exacerbate the suffering of marginalized groups?
 
-Follow up: is there any way we can use tech as a running shoe instead of a crutch?
+Follow up: is there any way we can use tech as a [running shoe instead of a crutch](thoughts/crutch%20and%20shoe%20metaphor.md)?
 
 Did the agricultural revolution make us generally less happy? "We didn’t domesticate wheat, we domesticated ourselves"
 

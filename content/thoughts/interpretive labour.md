@@ -1,3 +1,10 @@
+---
+title: "Interpretive Labour"
+date: 2021-12-25
+tags:
+- seed
+---
+
 ## Interpretive Labour
 There is a tradeoff between energy put into explaining an idea, and the energy needed to understand it. This energy differential is called 'interpretive labour'
 

@@ -1,6 +1,8 @@
 ---
-title: "Information System"s
+title: "Information Systems"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 [Source](https://faculty.washington.edu/ajko/books/foundations-of-information/#/systems)

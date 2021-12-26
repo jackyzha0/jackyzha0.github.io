@@ -1,6 +1,8 @@
 ---
 title: "Economics"
 date: 2021-10-26
+tags:
+- seed
 ---
 
 > Our goal as economic designers is to craft the systems that drive our selected set of values.
@@ -25,4 +27,4 @@ Those that practice economics — and to a degree modern American capitalism —
 
 "The repetitive doctrine that humans are best modeled as selfish rational optimizers creates a set of selfish social norms that practitioners consciously or subconsciously follow. The act of studying economics makes you a morally worse human-being (by most definitions of morality.)"
 
-How do we move beyond the study of scarcity and towards a study of abundance? 
+How do we move beyond the study of scarcity and towards a study of abundance and [positive sum](thoughts/positive%20sum.md) goods? 

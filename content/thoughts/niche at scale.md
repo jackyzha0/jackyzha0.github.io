@@ -1,6 +1,8 @@
 ---
 title: "Niche at scale"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 > **The Internet allows you to scale any niche obsession**

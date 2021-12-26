@@ -1,6 +1,8 @@
 ---
 title: "Move Fast and Break Things"
 date: 2021-02-27T11:59:22-08:00
+tags:
+- sapling
 ---
 
 > To slow down is to end up [default dead](http://www.paulgraham.com/aord.html); the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences. (Jasmine Wang)

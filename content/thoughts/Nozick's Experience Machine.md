@@ -1,6 +1,8 @@
 ---
 title: "Nozick's Experience Machine"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 ## Experience machine

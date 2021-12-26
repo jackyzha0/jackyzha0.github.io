@@ -1,6 +1,8 @@
 ---
 title: "Proof of Stake"
 date: 2021-08-06T23:34:08-04:00
+tags:
+- seed
 ---
 
 Uses 'stake' tokens to earn the right to become a validator of the blockchain. Users are chosen to become validators pseudo-randomly depending on various factors like size of stake, age of stake, etc. Validators check for validity of transactions, signing the block, and adding to the chain. Reward for the validator is the transaction fees.

@@ -38,12 +38,12 @@ AI is an attempt to be *the* atlas -- the dominant way of seeing the world. We s
 
 Humans are increasingly treated like robots or the connective tissue between robots.
 
-Potemkin AI systems are a form of deception perpetrated by technology vendors eager to stake a claim in the lucrative tech space. The difference between 'perceived' ability and 'real' ability of these AI system are augmented by human piecework.
+[Potemkin AI](thoughts/potemkin%20village.md) systems are a form of deception perpetrated by technology vendors eager to stake a claim in the lucrative tech space. The difference between 'perceived' ability and 'real' ability of these AI system are augmented by human piecework.
 
 ## Data
 There is a new pervasive belief that everything is data and is there for the taking. 
 
-Data, when aggregated, become infrastructure. "The meaning or care that might be given to the image of an individual person, or the context behind a scene, is presumed to be erased at the moment it becomes part of an aggregate mass that will drive a broader system."
+Data, when aggregated, become [infrastructure](thoughts/infrastructure.md). "The meaning or care that might be given to the image of an individual person, or the context behind a scene, is presumed to be erased at the moment it becomes part of an aggregate mass that will drive a broader system."
 
 ML systems work based on *inductive inference*. Any person who has taken a first-year course on logic will know the false conclusions that this can draw (e.g. all swans are white). Can we create systems that operate on *deductive inference*, which follows logically from a premise?
 
@@ -54,7 +54,7 @@ ML systems work based on *inductive inference*. Any person who has taken a first
 ## Recognition Systems
 "This is the danger of affect recognition tools. As we've seen, they take us back to the phrenological past, where spurious claims were made, allowed to stand, and deployed to support existing systems of power."
 
-## Accountability
+## [Accountability](thoughts/accountability.md)
 Andrew Ferguson: "We are moving to a state where prosecutors and police are going to say 'the algorithm told me to do it, so I did, I had no idea what I was doing'."
 
 A false objectivity, "it's just math, math can't be biased, right?"

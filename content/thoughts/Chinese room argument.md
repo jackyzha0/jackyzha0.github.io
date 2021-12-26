@@ -1,6 +1,8 @@
 ---
 title: "Searle's Chinese room argument"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 [Source](https://plato.stanford.edu/entries/chinese-room/)

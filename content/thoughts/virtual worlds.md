@@ -1,6 +1,8 @@
 ---
 title: "Virtual Worlds"
 date: 2021-07-02T16:23:05-04:00
+tags:
+- sapling
 ---
 
 ## Bridging the real and the virtual
@@ -33,6 +35,6 @@ Related: [Web3](thoughts/web3.md)
 
 "On the internet, you can pull the plug and walk away. There’s no forcing mechanism that makes us have to learn" -> how do we keep people digitally accountable?
 
-[Dunbar](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships) and his colleagues demonstrated that very light touch triggers a cascade of endorphins that, in turn, are important for creating personal relationships. Can this be replicated virtually?
+[Dunbar](thoughts/Dunbar's%20Number.md) and his colleagues demonstrated that very light touch triggers a cascade of endorphins that, in turn, are important for creating personal relationships. Can this be replicated virtually?
 
 What about [Nozick's Experience Machine](thoughts/Nozick's%20Experience%20Machine.md) and the Matrix?

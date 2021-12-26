@@ -1,6 +1,8 @@
 ---
 title: "Workflows"
 date: 2021-07-25T17:03:18-04:00
+tags:
+- seed
 ---
 
 https://uxdesign.cc/introducing-mercury-os-f4de45a04289
@@ -17,7 +19,7 @@ tools you build yourself can grow and change as your workflow changes over time:
 
 Are our tools extensions of who we are? At what point does it just become a part of our mind? Relevant: [the extended mind hypothesis](thoughts/Extended%20mind%20Hypothesis.md)
 
-Can we kill the [Desktop Metaphor](https://uxdesign.cc/the-desktop-metaphor-must-die-676fbb34afdb)?
+Can we kill the [desktop metaphor](thoughts/desktop%20metaphor.md)?
 
 ## Cool Approaches
 ### Mercury

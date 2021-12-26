@@ -1,6 +1,8 @@
 ---
 title: "Framing and Context Collapse"
 date: 2021-05-08T14:57:51-07:00
+tags:
+- fruit
 ---
 
 ![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/title.png)
@@ -33,7 +35,7 @@ It is easier to travel along a path well-travelled than one covered in weeds and
 
 In some ways, this is Newton's First Law but applied to behaviour: if you do something one way, you are likely to keep doing things in that way unless encouraged to do otherwise.
 
-### Individuals tend to conform to group norms
+### Individuals tend to conform to [group norms](thoughts/social%20contracts.md)
 In 1951, Solomon Asch conducted [an experiment](https://en.wikipedia.org/wiki/Asch_conformity_experiments) to investigate the extent of which social pressures can affect a person's behaviour. In this experiment, he asked, "Which line is the longest out of the three given?". In an individual setting, 99% of people answered correctly. However, when put in a room of actors instructed to answer incorrectly, nearly 75% of all participants gave at least one incorrect answer throughout 12 trials.
 
 People conform for two main reasons:
@@ -57,7 +59,7 @@ When we experience context collapse, these social groups and audiences become ma
 ## Centrifuging contexts
 I’ve noticed three main strategies individuals, companies, and platforms have adopted in trying to tackle context collapse.
 
-1. **Lowest Common Denominator**. Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
+1. **Lowest Common Denominator** ([Vanilla Ice Cream effect](thoughts/Vanilla%20Ice%20Cream%20effect.md)). Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
 
 2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](thoughts/ephemereal%20content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
 
@@ -68,7 +70,7 @@ I don’t think there is a single 'right' approach, and in part that's why so ma
 ## Social bandwidth
 I think in part, this is why nobody has been successful in creating a single social network to replace all of the existing apps. As humans, we want the ability to closely connect with people, and context collapses makes that exceedingly difficult. We have limited social [bandwidth](thoughts/bandwidth.md) -- there's only so much attention we can give to everyone. By increasing the breadth of our audience, we reduce the depth at which we can communicate with each individual. As app developers rush to combine all of these platforms into one, maybe we should step back and think whether this is really necessary.
 
-On these larger social media apps where I'm 'connected' to hundreds of people, I don't feel like I can have very insightful conversations or thoughts. Those conversations almost exclusively happen in communities like [nwPlus](http://nwplus.io/) and [reboot](https://twitter.com/reboot_hq/) where there is enough alignment of values and interests that we can scrape past the surface level chit chat and get to really exploring ideas and knowing people.
+On these larger social media apps where I'm 'connected' to hundreds of people, I don't feel like I can have very insightful conversations or thoughts. Those conversations almost exclusively happen in communities like [nwPlus](http://nwplus.io/) and [Reboot](https://twitter.com/reboot_hq/) where there is enough alignment of values and interests that we can scrape past the surface level chit chat and get to really exploring ideas and knowing people.
 
 Because we're so actively a part of all of these different contexts, we are forced to be excessively general on these platforms to try to cater to everyone. We should have platforms where it's ok to engage with different elements of who you are. We have different groups of friends to cater to different aspects of who we are, so why should social media platforms be any different?
 

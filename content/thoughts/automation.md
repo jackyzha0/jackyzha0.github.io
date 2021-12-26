@@ -1,6 +1,8 @@
 ---
-title: "Autonomy"
+title: "Automation"
 date: 2021-12-09
+tags:
+- sapling
 ---
 
 [Source](https://www.noemamag.com/ai-blockchain-human-autonomy-future/)

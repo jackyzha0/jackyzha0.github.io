@@ -1,6 +1,8 @@
 ---
 title: "Turing Test"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 -   dialogic test of competence

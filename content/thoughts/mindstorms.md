@@ -5,20 +5,9 @@ tags:
 - seed
 ---
 
+Lots of really good [constructionist](thoughts/constructionist.md) theory here :))
 
 ## Quotes
-
-### Constructionism
-"As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."
-
-"I never met anyone who was, at once, so playful and so serious about ideas."
-
-Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children learn language by first learning their own ("baby-talk") dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the "official" physics by allowing them the freedom to invent many that will work in as many invented worlds.
-
-Why there is no good answer to "how do I learn CS" 
-"I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching... But 'teaching without curriculum' does not mean spontaneous, free-form classrooms or simply 'leaving the child alone.' It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture"
-
-> "They'll handle the details. Indeed, they insist on it. For a project to feel like your own, you must have sufficient autonomy. You can't be working to order, or slowed down by bureaucracy." -- [Paul Graham](http://paulgraham.com/own.html)
 
 ### Composition
 When knowledge can be broken up into "mind-size bites," it is more communicable, more assimilable, more simply constructable.
@@ -29,7 +18,7 @@ When knowledge can be broken up into "mind-size bites," it is more communicable,
 "Seymour saw the computer not just as a problem-solving tool but as an expressive medium. He believed that learning to program was analogous to learning to write, providing children with new ways of organizing and expressing their ideas."
 
 Does language matter when programming?
-"A programming language is like a natural, human language in that it favors certain metaphors, images, and ways of thinking. The language used strongly colors the computer culture"
+"A programming language is like a natural, human language in that it favors certain metaphors, images, and ways of thinking. The language used strongly colors the computer culture" ([linguistic relativism](thoughts/linguistic%20relativism.md))
 
 ### Microworlds and simplification
 Newton "understood" the universe by reducing whole planets to points that move according to a fixed set of laws of motion. Is this grasping the essence of the real world or hiding its complexities?
@@ -51,9 +40,7 @@ The definition of artificial intelligence can be narrow or broad. In the narrow 
 
 "The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of 'being wrong.'"
 
-### Multiple Realization
-Related to [multiple realization](thoughts/multiple%20realization.md)
-
+### [Multiple realization](thoughts/multiple%20realization.md)
 Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird's wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.
 
 "You have no reason to suppose that airplanes and birds work the same way -- birds have no propellors, airplanes have no feathers"
@@ -69,12 +56,12 @@ On brain being compartmentalized
 We put our skills and heuristic strategies into a kind of tool box -- and while their interaction can, in the course of time, give rise to global changes, the act of learning is itself a *local* event.
 
 ### Knowledge distillation
-On the role of [knowledge distillers](thoughts/knowledge%20distillation.md): 
+On the role of [knowledge distillers](thoughts/knowledge%20distillation.md) and [teaching](thoughts/teaching.md): 
 This problem goes deeper than a mere short supply of such people. The fact that in the past there was no role for such people has been cast into social and institutional concrete; now there is a role but there is no place for them.
 
 It is a step toward a situation in which the line between learners and teachers can fade
 
-A stage of unconscious work, which might appear to the mathmatician as temporarily abondoning the task or leaving the problem to incubate, has to intervene... On the contrary, the problem has been turned over to a very active unconscious which relentlessly begins to combine the elements supplied to it by the 
+A stage of unconscious work, which might appear to the mathematician as temporarily abandoning the task or leaving the problem to incubate, has to intervene... On the contrary, the problem has been turned over to a very active unconscious which relentlessly begins to combine the elements supplied to it by the 
 
 ### Misc
 On self-correcting systems like bikes

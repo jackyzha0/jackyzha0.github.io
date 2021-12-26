@@ -1,6 +1,8 @@
 ---
 title: "Transparency"
 date: 2021-10-30
+tags:
+- seed
 ---
 
 [Source](https://digitaltattoo.ubc.ca/2020/03/30/guest-post-whats-in-a-category-definitions-of-authenticity-transparency-and-the-social-bot/)

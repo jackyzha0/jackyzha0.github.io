@@ -1,6 +1,8 @@
 ---
 title: "Game Theory"
 date: 2021-08-12T10:18:31-04:00
+tags:
+- sapling
 ---
 
 [Source](https://ncase.me/trust/)

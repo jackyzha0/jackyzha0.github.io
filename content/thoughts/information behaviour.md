@@ -1,9 +1,11 @@
 ---
 title: "Information Behaviour"
 date: 2021-10-20
+tags:
+- seed
 ---
 
-A combination of [information retrieval](thoughts/information%20retrieval.md), information encountering, information avoidance, etc.
+A combination of [information retrieval](thoughts/information%20retrieval.md), information encountering, information avoidance, etc. Methods of interacting with [information](thoughts/information.md)
 
 A model is a simplified, tentative representation of a phenomenon of interest, often depicted as a graphic. A model describes important factors (variables) and proposes their relationships (associations).
 

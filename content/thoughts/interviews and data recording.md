@@ -1,6 +1,8 @@
 ---
 title: "Interviews and Data Recording"
 date: 2021-10-05
+tags:
+- seed
 ---
 
 - What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.

@@ -1,6 +1,8 @@
 ---
 title: "Censorship"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 [Source](https://stratechery.com/2021/moderation-in-infrastructure/)

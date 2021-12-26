@@ -1,6 +1,8 @@
 ---
 title: "Bandwidth"
 date: 2021-11-11
+tags:
+- sapling
 ---
 
 > When we talk together, we flatten our N-dimensional thoughts into 1D linear narratives, in order to fit them through the 1D bottleneck of words. When we draw or sketch, we flatten our N-dimensional thoughts into 2D images in order to fit them through the 2D bottleneck of sight.

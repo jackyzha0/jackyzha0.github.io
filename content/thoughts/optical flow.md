@@ -1,6 +1,8 @@
 ---
 title: "Optical Flow"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 Determine how objects (and/or the camera itself) move in the 3D world

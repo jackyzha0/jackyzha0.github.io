@@ -1,6 +1,8 @@
 ---
 title: "Value"
 date: 2021-10-14
+tags:
+- sapling
 ---
 
 [Source](https://kernel.community/en/learn/module-1/value)

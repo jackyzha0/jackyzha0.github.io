@@ -1,6 +1,8 @@
 ---
 title: "Tools for Thought"
 date: 2021-10-30
+tags:
+- sapling
 ---
 
 Related: [Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)

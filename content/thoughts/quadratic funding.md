@@ -1,6 +1,8 @@
 ---
 title: "Quadratic Funding"
 date: 2021-08-06T23:18:49-04:00
+tags:
+- seed
 ---
 
  Sources: [RadicalxChange](https://www.radicalxchange.org/concepts/quadratic-funding/) and [Vitalik](https://vitalik.ca/general/2019/12/07/quadratic.html)
@@ -9,8 +11,7 @@ date: 2021-08-06T23:18:49-04:00
 
 Matching funding is where governments or other institutions match individual contributions to a project. 
 
-In the QF model, the total funding is the square square root of each contribution summed and then squared. This empowers smaller individual contribution and make sure that a broad 
-public benefits. This supposedly solves the [tragedy of the commons](thoughts/tragedy%20of%20the%20commons.md) problem.
+In the QF model, the total funding is the square square root of each contribution summed and then squared. This empowers smaller individual contribution and make sure that a broad public benefits. This supposedly solves the [tragedy of the commons](thoughts/tragedy%20of%20the%20commons.md) problem.
 
 > _Your $N$-th unit of influence costs you $N$_
 

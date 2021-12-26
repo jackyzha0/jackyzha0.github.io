@@ -1,6 +1,8 @@
 ---
 title: "Double Diamond Model of Design"
 date: 2021-10-02
+tags:
+- seed
 ---
 
 Two main 'diamonds' of diverge-converge, one to find the right problem and the other to find the right solution (fulfilling human needs).

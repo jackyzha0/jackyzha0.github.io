@@ -1,6 +1,8 @@
 ---
 title: "Fault Tolerance"
 date: 2021-06-23T15:14:28-04:00
+tags:
+- sapling
 ---
 
 How do we defend against attacks in distributed systems with no central authority?
@@ -16,7 +18,7 @@ Postulates that names of participants can have at most 2 of these 3 properties
 Maybe another version of [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)?
 
 ## Sybil Attacks
-https://en.wikipedia.org/wiki/Sybil_attack
+[Source](https://en.wikipedia.org/wiki/Sybil_attack)
 
 Sybil attacks are also called sock puppetry
 
@@ -30,7 +32,7 @@ Creating a large number of pseudonymous identities and uses them to gain a dispr
 ## Byzantine Faults
 [Wikipedia](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper](https://lamport.azurewebsites.net/pubs/byz.pdf)
 
-A **Byzantine fault** is any fault presenting different symptoms to different observers. A **Byzantine failure** is the loss of a system service due to a Byzantine fault in systems that require concensus between notes.
+A **Byzantine fault** is any fault presenting different symptoms to different observers. A **Byzantine failure** is the loss of a system service due to a Byzantine fault in systems that require [consensus](thoughts/consensus.md) between notes.
 
 Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.
 

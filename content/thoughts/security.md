@@ -1,6 +1,8 @@
 ---
 title: "Security"
 date: 2021-10-14
+tags:
+- seed
 ---
 
 [Source](https://kernel.community/en/learn/module-1/playdough-protocols)

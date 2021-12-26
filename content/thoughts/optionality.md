@@ -1,6 +1,8 @@
 ---
 title: "Optionality"
 date: 2021-08-24T22:15:01-04:00
+tags:
+- seed
 ---
 
 Optionality: the nature of accepting the possibilities of the unknown, to give every fractal self a chance to live.  _I’d much rather know, but then again, not-knowing keeps all the possibilities open. It keeps all the worlds alive._ [Source](https://reading.supply/@jessica/some-comfort-for-the-time-being-64k4Ml)

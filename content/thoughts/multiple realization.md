@@ -1,6 +1,8 @@
 ---
 title: "Multiple Realization"
 date: 2021-07-13T18:17:48-04:00
+tags:
+- seed
 ---
 
 Are there multiple ways of realizing intelligence?

@@ -1,6 +1,8 @@
 ---
 title: "Resource Interaction"
 date: 2021-10-20
+tags:
+- sapling
 ---
 
 Interactions arise naturally from the affordances of resources or are purposefully designed into [organizing systems](thoughts/organizing%20system.md). Intersects with [interaction design](thoughts/interaction%20design.md)

@@ -1,6 +1,8 @@
 ---
 title: "Information"
 date: 2021-09-21T09:30:22-07:00
+tags:
+- seed
 ---
 
 > Information is a thing that conveys meaning about stuff, transmitted from one place to another.

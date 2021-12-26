@@ -1,6 +1,8 @@
 ---
 title: "NFTs"
 date: 2021-12-10
+tags:
+- sapling
 ---
 
 [Source](https://studio.ribbonfarm.com/p/magic-beans)

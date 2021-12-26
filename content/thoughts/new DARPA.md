@@ -1,11 +1,13 @@
 ---
 title: "A new DARPA"
 date: 2021-08-01T22:10:54-04:00
+tags:
+- sapling
 ---
 
 > Great hackers tend to clump together (PG, 2004)
 
-Money is power. It dictates what type of research and work gets [funded](thoughts/funding.md), and who gets to do it. 
+[Money](thoughts/money.md) is power. It dictates what type of research and work gets [funded](thoughts/funding.md), and who gets to do it. 
 
 It's important to be aware of the incentive structures in place wherever you work (e.g. academia, industry): 80k hours of work in your life, it matters a lot where that goes (voting with labour). 
 
@@ -21,11 +23,11 @@ Limitations of private companies and startups
 Can we move away from depending completely on only one of 
 1. Government funding
 2. Market Influence
-3. Academia
+3. [Academia](thoughts/academia.md)
 
 > The best predictor of success in innovation is the number of other people they come into contact with
 
-Some thoughts. Already have been thinking about this in relation to [hackathons](posts/hackathons.md), [paid open source](posts/paid-open-source.md), and [academia](thoughts/academia.md).
+Some thoughts. Already have been thinking about this in relation to [hackathons](posts/hackathons.md), [paid open source](posts/paid-open-source.md)
 
 ## 3rd Spaces
 For people wanting to create change, why do we choose to do that through innovation rather than policy? (is this due to [creation vs maintenance](thoughts/creation%20vs%20maintenance.md) approaches to thinking?)

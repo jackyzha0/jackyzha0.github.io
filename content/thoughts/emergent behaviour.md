@@ -1,6 +1,8 @@
 ---
 title: "Emergent Behaviour"
 date: 2021-06-17T00:21:11-04:00
+tags:
+- sapling
 ---
 
 How complex behaviour can arise out of seemingly simple rules? Is there anything special that causes emergent behaviour?

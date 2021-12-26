@@ -1,6 +1,8 @@
 ---
 title: "Information Retrieval"
 date: 2021-10-19
+tags:
+- seed
 ---
 
 [Information foraging](thoughts/information%20foraging.md) as a metaphor for exploring information retrieval and seeking. Heavily tied to [search](thoughts/search.md) systems.

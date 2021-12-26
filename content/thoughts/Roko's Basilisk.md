@@ -1,6 +1,8 @@
 ---
 title: "Roko's Basilisk"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 A form of arithmetical utilitarianism (see: [effective altruism](thoughts/effective%20altruism.md)), assuming that one can meaningfully calculate the utility of actions as a numerical value.

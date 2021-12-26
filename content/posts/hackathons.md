@@ -1,6 +1,8 @@
 ---
 title: "Hacking the Hackathon"
 date: 2021-07-01T13:36:58-04:00
+tags:
+- fruit
 ---
 
 ## The 'Involution' of Hackathons
@@ -10,7 +12,7 @@ date: 2021-07-01T13:36:58-04:00
 
 Half of our team had been sleeping for the past hour and a bit. Acceptable, considering the time was now 2:42 am. The drone was whirring midair in our little room, nearly getting snagged on our laptops, chargers, and free event swag. Beside us, a blackboard wall displayed a rough chalk diagram of our technical architecture. We had roughly 20 hours left in the hackathon and now that the drone worked, our biggest roadblock was out of the way — it was time to build! We grabbed a plate of cold noodles from the meal line and ran past the crowd of people doing cup stacking competitions, karaoke, and Smash tournaments.
 
-There is something truly special about being able to manifest an idea into reality, that's what pulled me into hackathons in the first place. Anytime I went to a hackathon not knowing anyone, I left with a new group of friends and mentors and a handful of new skills. I've learned a sizable amount of my technical knowledge through workshops and hackathon projects. These events inspired me to be intellectually curious. To this day, they're the main reason why I still to this day spend hours tinkering on projects and exploring new ideas.
+There is something truly special about being able to manifest an idea into reality, that's what pulled me into hackathons in the first place. Anytime I went to a hackathon not knowing anyone, I left with a new group of friends and mentors and a handful of new skills. I've learned a sizeable amount of my technical knowledge through workshops and hackathon projects. These events inspired me to be intellectually curious. To this day, they're the main reason why I still to this day spend hours tinkering on projects and exploring new ideas.
 
 In comparison, something feels different about the vast majority of hackathons held today. Recent hackathons may have all the bells and whistles of earlier events, featuring elaborate meal plans and free bubble tea, but it feels performative at best. When asking most people about why they want to go to a hackathon, most people will mention something about the prizes, the recruiting, or the free t-shirts with company logos plastered over them. There is an unavoidable corporate air to the events.
 
@@ -21,7 +23,7 @@ This corporate co-optation of hacker culture at hackathons has been on the back 
 How did we get here?
 
 ## Hacker Culture
-The hacker subculture formed mainly out of the collaborative (and often competitive) DIY ethic of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md) of the 1960s. This was the generation of the 'hackers,' those interested in figuring things out as they go and invented for the *pure ecstasy of building and learning new things*. As Steven Levy defines it, 'hacks' were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it.[^2]
+The hacker subculture formed mainly out of the collaborative (and often competitive) DIY ethic of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md) of the 1960s. This was the generation of the '[Hackers](thoughts/Hackers.md),' those interested in figuring things out as they go and invented for the *pure ecstasy of building and learning new things*. As Steven Levy defines it, 'hacks' were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it.[^2]
 
 The congregation of hackers eventually led to the creation of alternative design and hackerspaces like hackathons. These very first hackathons were gatherings of excited groups of people ready to build something cool over the weekend.
 
@@ -29,7 +31,7 @@ These spaces were described as originally being "third spaces" outside of the in
 
 **These design sites used to be valorized as places of learning, making, and building. Why then, have they become increasingly corporate places of extraction of free labour?**
 
-## Incentive Structure of Hackathons
+## [Incentive](thoughts/incentives.md) Structure of Hackathons
 ![Stacks of hackathon stickers ready for hackers' laptops](/posts/images/hackathons/swag.jpg)*Stacks of hackathon stickers ready for hackers' laptops*
 
 It takes money to run events. Providing an adequate venue, food, internet, and power are not free resources. Yet, with the exception of a few corporate hackathons, the majority of hackathons remain free for attendees. To accomplish this, most hackathon organizers decide to try to acquire monetary sponsorships, food partnerships, and in-kind sponsorships in order to offset costs.
@@ -56,7 +58,7 @@ These incentive structures push hackers to tailor projects specifically for priz
 ### Short Term Optimization
 > "A one day hack for homelessness takes away from the complexity of social justice issues… you can't just come up with an app that solve the world's problems" -- Design Justice[^3]
 
-Most hackathon projects are unsustainable and are unlikely to be used or continued to be worked on outside of the hackathon. A lot of this practice arises out of the Silicon Valley [saviorism problem](https://www.stanforddaily.com/2018/02/16/silicon-valleys-saviorism-problem/) and "move fast and break things" attitude. [^7] 
+Most hackathon projects are unsustainable and are unlikely to be used or continued to be worked on outside of the hackathon. A lot of this practice arises out of the Silicon Valley [saviorism problem](https://www.stanforddaily.com/2018/02/16/silicon-valleys-saviorism-problem/) and "[move fast and break things](thoughts/move%20fast%20and%20break%20things.md)" attitude. [^7] 
 
 The problem with this approach is that it becomes incredibly reductionist. Hacks nearly always focus on problems and rarely build on existing knowledge and work in the field, often ignoring important context about the issues they so readily reduce to a single web app. Ever seen an app claiming to solve the fentanyl crisis or healthcare for the elderly? People think hackathons can do things that they usually can't, such as solve global problems, create new products overnight, or 'level the playing field' of innovation through meritocracy.[^3]
 
@@ -112,7 +114,7 @@ Work done at hackathons should be toward long-term sustainable processes instead
 
 Encouraging the growth of more sustainable skill building enables individuals to take into account a more holistic view of problems. Hopefully, this leads to building longer term, larger scope, and bigger impact projects and skills.
 
-### Places of Play
+### Places of [play](thoughts/play.md)
 Do we so necessarily need to tie rituals of play in building and tinkering to the recruiting and product testing pipeline for large corporations? Hopefully the answer to that question is no.
 
 Yet even today, a majority of communities focused around building like [YCombinator](https://www.ycombinator.com/) or [OnDeck](https://www.beondeck.com/) are ultimately not places of play – they have external outcomes they'd like to achieve. We should create dedicated spaces for exploration and learning *without* needing to justify it via some specific outcome. This is not to say that spaces with those goals in mind are bad, but giving individuals the option to have a space for unfettered exploration can give them the freedom to explore ideas that may not have clear monetary value in the short term. Communities like [Hack Club](https://hackclub.com/) and [Reboot](https://reboothq.substack.com/) do this particularly well. There is no central 'goal' of trying to launch a product or anything, but rather it's a group of individuals that are intellectually curious and want to learn and build cool things.

@@ -1,6 +1,8 @@
 ---
 title: "Degrowth"
 date: 2021-09-07T22:22:09-07:00
+tags:
+- sapling
 ---
 
 [Source](https://noahpinion.substack.com/p/people-are-realizing-that-degrowth)

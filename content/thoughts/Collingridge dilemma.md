@@ -1,6 +1,8 @@
 ---
 title: "Collingridge Dilemma"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 Efforts to influence or control the further development of technology face a double-bind problem

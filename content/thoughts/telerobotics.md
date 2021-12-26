@@ -1,6 +1,8 @@
 ---
 title: "Telerobotics"
 date: 2021-07-02T21:37:23-04:00
+tags:
+- seed
 ---
 
 ## Dennett's 1981 "where am I" story

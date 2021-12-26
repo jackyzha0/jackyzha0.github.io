@@ -1,6 +1,8 @@
 ---
 title: "Maintenance"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 Maintenance: the gritty upkeep work that keeps the [infrastructure](thoughts/infrastructure.md) of the world running.

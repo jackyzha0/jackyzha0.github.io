@@ -1,6 +1,8 @@
 ---
 title: "User Involvement"
 date: 2021-10-13
+tags:
+- seed
 ---
 
 The underlying aim is to involve members of the public in helping them make a change in their lives where technology is often viewed as an integral part of the process. This is the point of [participatory design](thoughts/Design%20Justice.md).

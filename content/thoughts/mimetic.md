@@ -1,6 +1,8 @@
 ---
 title: "Mimetic"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 [Source](https://www.briantimar.com/notes/mimetic/mimetic/)

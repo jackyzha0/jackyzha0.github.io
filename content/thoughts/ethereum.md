@@ -1,6 +1,8 @@
 ---
 title: "Ethereum"
 date: 2021-10-09
+tags:
+- seed
 ---
 
 [Blockchain](thoughts/blockchain.md) with a built-in Turing-complete programming language to allow individuals to write smart contracts and decentralized applications (dApps) which dictate their own rules around ownership, trasnaction formats, and state transition functions.

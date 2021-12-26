@@ -1,6 +1,8 @@
 ---
 title: "Human Centered Design (HCD)"
 date: 2021-10-02
+tags:
+- seed
 ---
 
 What drives design?

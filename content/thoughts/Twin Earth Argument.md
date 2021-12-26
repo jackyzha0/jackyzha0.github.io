@@ -1,6 +1,8 @@
 ---
 title: "Twin Earth Argument"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 Related to [semantics](thoughts/semantics.md) and [terminology](thoughts/terminology.md)

@@ -1,6 +1,8 @@
 ---
 title: "Dunbar's Number"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 [Source](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships)

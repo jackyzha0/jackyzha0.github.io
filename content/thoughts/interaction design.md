@@ -1,13 +1,15 @@
 ---
 title: "Beyond Touch"
 date: 2021-07-25T16:47:56-04:00
+tags:
+- sapling
 ---
 
 [Source](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/?utm_source=pocket_mylist)
 
 Tools address human needs by amplifying human capabilities. Great tools have parts that fit the problem as well as fit the person.
 
-We need new mediums for exchange of ideas and active construction of thoughts. Those with broken legs will use crutches. Shoes however, will enhance performance no matter what. too much telecommunications work will eventually lead us to building crutches rather than shoes. Stop trying to remedy a perceived defect and instead focus on new functionality
+We need new mediums for exchange of ideas and active construction of thoughts ([crutch and shoe metaphor](thoughts/crutch%20and%20shoe%20metaphor.md)). Too much telecommunications work will eventually lead us to building crutches rather than shoes. Stop trying to remedy a perceived defect and instead focus on new functionality
 
 > Go ahead and pick up a book. Open it up to some page. Notice how you _know_ where you are in the book by the distribution of weight in each hand, and the thickness of the page stacks between your fingers. Turn a page, and notice how you would _know_ if you grabbed two pages together, by how they would slip apart when you rub them against each other.
 
@@ -29,7 +31,7 @@ Ted Nelson, the guy who coined the terms hypertext and hypermedia, called the co
 
 > And what about screens as a whole? Is the future of computation really just sliding fingers around slabs of glass? -- [Jason Yuan](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)
 
-Desktop was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)
+[Desktop metaphor](thoughts/desktop%20metaphor.md) was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)
 
 Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf) and [Jinha Lee](http://www.leejinha.com/home.html)
 

@@ -3,7 +3,6 @@ title: "A case for funding Open Source"
 date: 2021-02-27T12:03:33-08:00
 tags:
 - fruit
-- funding
 ---
 
 ## Making of Open Source software
@@ -27,7 +26,7 @@ Traditionally, software has been seen as a product of firms. Open source develop
 Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then money, an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.
 
 
-## Creation vs Maintenance
+## [Creation vs Maintenance](thoughts/creation%20vs%20maintenance.md)
 > "Creation is an intrinsic motivator, maintenance usually requires extrinsic motivation"
 >
 > @balupton, isaacs/github [#167](https://github.com/isaacs/github/issues/167)
@@ -38,7 +37,7 @@ Creating a project is fun. It’s a wild exploration into a new idea, a frivolou
 
 Just a few clicks and a few taps of your keyboard and your project is readily available to any of the 4.66 billion people around the world with internet access. This adrenaline rush of finally releasing the labour of your work onto the world is the moment developers are constantly chasing. For most developers, the process of creation and distribution is intrinsically motivated; it’s an enjoyable process.
 
-[Maintenance is less so.](thoughts/creation%20vs%20maintenance.md) This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
+[Maintenance is less so.](thoughts/maintenance.md). This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
 
 Code may be nearly free to create and distribute, but maintenance is still expensive.
 
@@ -47,7 +46,7 @@ Code may be nearly free to create and distribute, but maintenance is still expen
 There are two main ways we can look at code. The first of which is *static* code. Code that, on its own, does nothing but exists as an archive. Others can copy and download the code without incurring any additional costs to the author. For the maintainers, it should make no difference in regards to cost whether 10 or 10,000 people use it.
 
 This type of code is a pool resource or [public good](thoughts/public%20goods.md), it is
-1. **Non-rivalry.** My ability to copy the code doesn’t affect your ability to copy it. (This isn’t exactly true due to some marginal costs but I’ll discuss this later)
+1. **Non-rivalrous.** My ability to copy the code doesn’t affect your ability to copy it. (This isn’t exactly true due to some marginal costs but I’ll discuss this later)
 2. **Non-excludable.** If someone has a copy of the code, it is very difficult to prevent them from sharing that code with others.
 
 Any code that is in this state is easy to share, copy, and distribute. This is the type of code that lives dormant on Github, on StackOverflow answers, and in GitHub’s Arctic Vault[^2]. However, the main purpose of consuming code is not to simply read and study it, but to actually use it and to let it interact with other code.

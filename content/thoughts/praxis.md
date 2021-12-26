@@ -1,6 +1,8 @@
 ---
 title: "Praxis"
 date: 2021-09-21T09:28:33-07:00
+tags:
+- seed
 ---
 
 The process in which ideas and theories are realized or embodied as action.

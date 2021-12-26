@@ -19,7 +19,7 @@ Design Justice is a book that invites us to "center people who are too often mar
 ## Reflection
 Design sites are valorized as places of learning, making, and building and the intersection of social movements and the counterculture. Why then, have they become increasingly corporate places of extraction of free labour?
 
-This cooptation of hacker culture, hackathons as design sites in particular, by neoliberalism has been on the back of my mind ever since reading the chapter on design sites in Design Justice. As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time, moving from safe spaces for idea exploration to increasingly corporate, time-bound, events where hackers spin up apps to test company products in exchange for the slim chance of winning prizes and recognition.
+This cooptation of [hacker](thoughts/Hackers.md) culture, hackathons as design sites in particular, by neoliberalism has been on the back of my mind ever since reading the chapter on design sites in Design Justice. As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time, moving from safe spaces for idea exploration to increasingly corporate, time-bound, events where hackers spin up apps to test company products in exchange for the slim chance of winning prizes and recognition.
 
 Hackathons reshape precarious and unpaid work. Writing code and building apps for free becomes an extraordinary opportunity and a collective imagination for fictional expectations of innovation that benefits all. Do we so necessarily need to tie these rituals of play in building and tinkering to the recruiting and product testing pipeline for large corporations?
 
@@ -27,7 +27,7 @@ As a hackathon organizer, Design Justice has helped me to more actively think ab
 
 ## Quotes
 ### Defining Design Justice
-How larger systems -- including norms, values, and assumptions -- are encoded in and reproduced through the design of sciotechnical systems. (artifacts have politics)
+How larger systems -- including norms, values, and assumptions -- are encoded in and reproduced through the design of sociotechnical systems. ([Do Artifacts Have Politics](thoughts/Do%20Artifacts%20Have%20Politics.md))
 
 Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face
 
@@ -40,7 +40,7 @@ True, everyone designs, but only certain kinds of design work are acknowledged, 
 *Affordance* refers to "the perceived and actual properties of the thing, primarily those fundamental properties that determine just how the thing could possibly be used." ... An object's affordances are never equally perceptible to all, and never equally available to all.
 
 ### On Intersectionality
-Block women workers at GM were told they had no legal grounds for a dscrimination case against their employer because antidiscrimination law only protected single-identity categories.
+Block women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.
 
 The concept of intersectionality provided the grounds for a long, slow paradigm shift that is still unfolding in the social sciences, in legal scholarship, and in other domains of research and practice.
 
@@ -48,8 +48,7 @@ While there is rapidly growing interest in algorithmic bias audits, especially i
 
 One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
 
-### Bias
-Relevant to [bias bug](/posts/bias-bug)
+### [Bias](thoughts/bias.md)
 
 3 groups of study
 1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
@@ -68,7 +67,7 @@ We should destabilize the underlying assumption that what is best for the majori
 ### The Unmarked User
 Designers most frequently assume that the unmarked user has access to several very powerful privileges, such as US citizenship, English language proficiency, access to broadband internet, a smartphone, a normatively abled body, and so on.
 
-For broader reasons of structural inequality, the universe of real-world users falls within a limited range compared to the full breadth of *potential* users, then User-Centered Design reproduces exclusion by centering their needs.
+For broader reasons of structural inequality, the universe of real-world users falls within a limited range compared to the full breadth of *potential* users, then [user-centered design](thoughts/human%20centered%20design.md) reproduces exclusion by centering their needs.
 
 ### Disability Simulation
 These 'simulations' produce an unrealistic understanding of the life experience of disability for a number of reasons: the nondisabled person does not have the alternate skill sets developed by [disabled people], and thus overestimates the loss of function which disability presents, and is furthermore likely to think of able-normative solutions rather than solutions more attuned to a [disabled person's] life experience
@@ -87,13 +86,11 @@ Racial hierarchies can only be dismantled by actively antiracist systems design,
 
 Far too often, user personas are created out of thin air by members of the design team, based on their own assumption or stereotypes about groups of people. When this happens, user personas are literally objectified assumptions about end users.
 
-### Maintenance
-Relevant to [maintenance](thoughts/creation%20vs%20maintenance.md)
+### [Maintenance](thoughts/maintenance.md)
 
-Creating new vs maintaing old
-Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating someething new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
-
-Support maintenance, not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
+[Creating new vs maintaing old](thoughts/creation%20vs%20maintenance.md)
+- Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating someething new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
+- Support maintenance, not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
 
 "Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenace"
 
@@ -110,8 +107,7 @@ Neoliberal, technocentric ideas about the city as a machine or as a software sys
 
 First consider what already works at the community level, and to steer students away from the pitfalls of tech solutionism and technochauvanism
 
-### Attention Economy
-Relevant to [attention economy](thoughts/attention%20economy.md)
+### [Attention economy](thoughts/attention%20economy.md)
 
 Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts.
 
@@ -122,8 +118,7 @@ Tracing the cooptation of hacker culture by neoliberalism
 
 Invisibility of subaltern communites may also be strategic. Sometimes, they shield their practices and innovations from mainstream visibility to avoid incorporation and appropriation.
 
-"Alternative spaces and forms of living provided interesting ideas could be milked and marketed. So certain structural features of these 'indie' movement outputs were suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories"
-https://placesjournal.org/article/post-it-note-city/
+"Alternative spaces and forms of living provided interesting ideas could be milked and marketed. So certain structural features of these 'indie' movement outputs were suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories" ([Post-It Note City](thoughts/Post-It%20Note%20City.md))
 
 Hackspaces in the European context, which they describe as originally being "third spaces" outside of the logic of both the communist state and the capitalist market. 
 
@@ -133,8 +128,9 @@ Many who are active in these design sites feel themselves to be participants in 
 
 Without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
 
+More on hackathons: [hackathons](posts/hackathons.md)
+
 #### Hackathons: The Bad
-Relevant to [reinventing hackathons](/thoughts/hackathons)
 
 Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline. 
 
@@ -166,21 +162,6 @@ Key elements
 * Teach data science in a way that honours context, respects situated knowledge, and makes it clear that data is never "raw".
 * Emphasize the user of data to create shared meaning over individual mastery.
 * Teach data science that values not only reason, but ethics and emotions as well
-
-#### Constructionism
-Pedagogical approach that centers context, situated knowledge, and learning by doing. Similar to the ideas in [Mindstorms](thoughts/Mindstorms.md)
-
-Papert rejected the banking method of education: educator transmits a piece of information to the learner's brain
-
-Instead, learning is *experiential*: it takes place through an active process where the learning develops the ability to modify or transform an object or idea.
-
-Core principles
-1. People do not get ideas, they make them
-2. People construct new knowledge with particular effectiveness when they are engaged in constructing personally meaningful products
-
-"Instead, design justice pedagogies must support students to actively develop their own critical analysis of design, power, and liberation, in ways that connect with their own lived experience"
-
-However, if resource constraints become an excuse to avoid examining the root of the problem area, then designers will almost always end up, at best, providing Band-Aids for deep wounds and, at word, actively serving existing power structures.
 
 ### Critiques
 "Design by commitee produces mediocrity" or "we don't want to end up with the lowest-common-denominator design!"

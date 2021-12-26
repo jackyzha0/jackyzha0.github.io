@@ -1,6 +1,8 @@
 ---
 title: "Truth"
 date: 2021-08-30T14:45:13-04:00
+tags:
+- sapling
 ---
 
 Is there a hard truth to anything in the universe? Can we truly know anything?

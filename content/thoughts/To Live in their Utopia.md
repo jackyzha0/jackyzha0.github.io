@@ -23,7 +23,7 @@ A utopia implies perfection and thus no feedback. ML models think they live in a
 
 Related: [The ones who walk away from Omelas](thoughts/The%20ones%20who%20walk%20away%20from%20Omelas.md)
 
-## 'Truth' and Feedback Loops
+## '[Truth](thoughts/truth.md)' and [Feedback loops](thoughts/feedback%20loops.md)
 "Absurdity follows when algorithmic systems deny the people they mistreat the status to lodge complaints, let alone the power to repair, resist, or escape the world that these systems create." How do [feedback loops](thoughts/feedback%20loops.md) play into these systems? Is it possible to create good human-in-the-loop ML?
 
 "Absurdity and tragedy tend to manifest when bureaucratic imaginations diverge from reality and when people can't override the delusions baked into those imaginations" It's dangerous when a single source dictates the truth.

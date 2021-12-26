@@ -1,6 +1,8 @@
 ---
 title: "Game Design"
 date: 2021-10-26
+tags:
+- sapling
 ---
 
 ## Game Design and [Teaching](thoughts/teaching.md)
@@ -10,7 +12,7 @@ date: 2021-10-26
 
 A lot of pedagogy is covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?
 
-The "[vow of silence](https://www.youtube.com/watch?v=xrDZ--AuiL8)": to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through [play](thoughts/play.md). An approach very similar to the constructionist ones found in [Mindstorms](thoughts/Mindstorms.md)
+The "[vow of silence](https://www.youtube.com/watch?v=xrDZ--AuiL8)": to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through [play](thoughts/play.md). An approach very similar to the [constructionist](thoughts/constructionist.md) ones found in [Mindstorms](thoughts/Mindstorms.md)
 
 The goal is to give users/players the freedom to manage their own position relative to their own intellectual "sweet spot"
 
@@ -26,7 +28,7 @@ The loneliness epidemic is a real thing. It has been medically associated with m
 
 Advancing age also makes us more likely to be lonely. Especially as we work on [longevity](thoughts/longevity.md) research, this is a pressing issue to try to solve.
 
-The best games are designed to be played with [friends](thoughts/tribe%20flourishing.md).
+The best games are designed to be played with [friends](thoughts/friendship.md).
 
 ### Toxicity
 > At the root of much toxicity is the misdirection of our human need to belong
@@ -72,7 +74,7 @@ Examples of internal economic systems:
 - Shared goals: The definition and adoption of shared group goals. Players work towards those goals via mutual interdependence, and achieve feelings of purpose and meaningfulness. 
 
 Anti-values
-- Individual Toxicity: poorly socialized individuals resort to antisocial behavoiurs in an attempt to put themselves above the group.
+- Individual Toxicity: poorly socialized individuals resort to antisocial behaviours in an attempt to put themselves above the group.
 - Group Toxicity: intergroup friction results in unhealthy interactions
 - Loneliness: sparse relationship networks, we feel this when our social support network fails. Loneliness tells us that our current social situation is untenable long term and we should seek out connection with others.
 
@@ -83,7 +85,7 @@ Anti-values
 3. Success together in high trust situations
 4. Time spent talking positively to each other
 
-However, this 'trust value' should not be public for the sake of avoiding converting it into a metric to optimize for: [Goodhart's Law](thoughts/quantization.md). Doing so may transform relationships into ones which are transactional in nature with clear extrinsic motivators in the form of your willingness to make that number go up or down. (This is also one of the reasons why ‘likes’ in social media end up being a source of toxicity and in general a very poor practice.)
+However, this 'trust value' should not be public for the sake of avoiding converting it into a metric to optimize for: [Goodhart's Law](thoughts/Goodhart's%20Law.md). Doing so may transform relationships into ones which are transactional in nature with clear extrinsic motivators in the form of your willingness to make that number go up or down. (This is also one of the reasons why ‘likes’ in social media end up being a source of toxicity and in general a very poor practice.)
 
 One also needs to keep in mind that trust differs across social contexts
 

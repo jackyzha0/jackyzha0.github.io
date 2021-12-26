@@ -1,6 +1,8 @@
 ---
 title: "Object Detection"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 ## Template Matching

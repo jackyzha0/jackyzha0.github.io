@@ -1,6 +1,8 @@
 ---
 title: "Group Limits"
 date: 2021-07-22T20:03:33-04:00
+tags:
+- sapling
 ---
 
 Related to the [evaporative cooling](thoughts/evaporative%20cooling.md) effect. Great example of a group limit is [Dunbar's Number](thoughts/Dunbar's%20Number.md)
@@ -32,7 +34,7 @@ Related: [a new DARPA](thoughts/new%20DARPA.md), [community perception](thoughts
 ## Scalability
 Why do we feel the need to find the billion-person version of communities? Is this just the [Silicon Valley](thoughts/Unrepeatable%20Miracle%20of%20Silicon%20Valley.md) question of scale?
 
-Is human intimacy scalable? I think not.
+Is [human intimacy](thoughts/friendship.md) scalable? I think not.
 
 What if the events were universally accessible but instead of serving everyone, serve those who opt-in to participate more? Cultivation > moderation
 

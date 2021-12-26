@@ -1,6 +1,8 @@
 ---
 title: "The Information Professions: Knowledge, memory, heritage"
 date: 2021-10-21
+tags:
+- seed
 ---
 
 [Source](https://files.eric.ed.gov/fulltext/EJ1060508.pdf)

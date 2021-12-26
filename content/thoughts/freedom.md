@@ -1,6 +1,8 @@
 ---
 title: "Freedom"
 date: 2021-10-30
+tags:
+- seed
 ---
 
 [Source](https://kernel.community/en/learn/module-3/freedom)

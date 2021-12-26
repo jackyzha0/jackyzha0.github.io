@@ -3,7 +3,6 @@ title: "Play to Win: A Post-Work Society"
 date: 2021-11-14
 tags:
 - fruit
-- sociology
 ---
 
 *Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/Interact%20Circle%20W21.md) on [Hackathon Culture](posts/hackathons.md) and Play.*

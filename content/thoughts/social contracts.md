@@ -1,6 +1,8 @@
 ---
 title: "Social Contracts"
 date: 2021-07-28T18:41:28-04:00
+tags:
+- sapling
 ---
 
 Social contracts are implicit agreements among members of social  groups to cooperate for social benefits. They help us form shared cultures and values

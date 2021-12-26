@@ -2,7 +2,7 @@
 title: "The Making and Maintenance of Open Source Software"
 date: 2021-10-25
 tags:
-- sapling
+- seed
 ---
 
 Full post: [A case for funding Open Source](posts/paid-open-source.md)
@@ -82,6 +82,8 @@ There are two types of funders that care enough to spend money on open source:
 2. Individuals: usually developers who are direct users. Politicians who fund their campaigns from grassroots donations are generally viewed more favorably by the public than are those who are funded by corporate donations. I'm not sure that open source is so different.
 
 ### Projects and Production Models
+Similar to governance models in [governance](thoughts/governance.md)
+
 "While some open source developers write code in public from the very beginning, many prefer to do their initial creative work in private, so they can properly articulate their ideas before opening the project up for feedback. Even if developers do publish their code early on, they may not advertise it widely until they have something ready for release."
 
 Based off of arelationship between contributors and users, we can think of projects in terms of their contributor growth and user growth.

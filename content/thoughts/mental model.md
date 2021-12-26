@@ -1,6 +1,8 @@
 ---
 title: "Mental Models"
 date: 2021-12-12
+tags:
+- seed
 ---
 
 Mental models (cognitive frameworks) help us understand how people reason and react to interface experiences. They provide predictive and explanatory power for understanding user behaviour.

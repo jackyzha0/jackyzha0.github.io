@@ -1,6 +1,8 @@
 ---
 title: "Instrumentalism"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 [Source](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization)

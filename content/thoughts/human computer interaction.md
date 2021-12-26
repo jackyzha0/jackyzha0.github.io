@@ -1,6 +1,8 @@
 ---
 title: "Human Computer Interaction (HCI)"
 date: 2021-09-14T15:38:31-07:00
+tags:
+- sapling
 ---
 
 > Better HCI is better empathy

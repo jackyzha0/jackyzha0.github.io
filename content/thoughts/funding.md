@@ -1,6 +1,8 @@
 ---
 title: "Funding"
 date: 2021-08-06T08:42:53-04:00
+tags:
+- sapling
 ---
 
 > Raising funding is just purchasing time to be together

@@ -1,6 +1,8 @@
 ---
 title: "Data Distributions"
 date: 2021-08-18T20:19:51-07:00
+tags:
+- sapling
 ---
 
 -   Machine Learning and [AI Systems](posts/ai-systems.md) excludes the tail ends of the distributions

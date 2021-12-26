@@ -1,6 +1,8 @@
 ---
 title: "Effective Altruism"
 date: 2021-08-05T23:52:21-04:00
+tags:
+- sapling
 ---
 
 Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits?

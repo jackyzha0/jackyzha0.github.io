@@ -6,8 +6,7 @@ tags:
 ---
 
 ## Quotes
-### Digital Communalism
-(see: [tribal flourishing](thoughts/tribe%20flourishing.md))
+### Digital Communalism (see: [tribal flourishing](thoughts/tribe%20flourishing.md))
 
 "Ubiquitous networked computing had arrived, and in its shiny array of interlinked devices, pundits, scholars, and investors alike saw the image of an ideal society: decentralized, egalitarian, harmonious, and free"
 
@@ -24,8 +23,6 @@ Much as the dancers at the Trips Festival had imagined that LSD would allow them
 ### Comprehensive Designers
 [Contact Language](thoughts/boundary%20object.md) which to exchange ideas and techniques in linguistically distinct tribes (e.g. scientists, technologists, and administrators)
 
-Contact Language: broadly speaking, this language served to facilitate collaboration across the groups it interconnected.
-
 "The Comprehensive Designer not only did not need to don a gray flannel suit when he went to work; he actually needed to become an artist and intellectual migrant. To a generation preoccupied with the fear of becoming lockstep corporate adults on the military model of Brand's imagined Soviet Army, Buckminster Fuller offered a marvelously playful alternative"
 
 "How you get energy is, you take polarities and slap them next to one another. If you get into cybernetics and your head is just a minute ago full of organic gardening and ecology, then cybernetics starts to come alive for you in a different way."
@@ -38,7 +35,7 @@ Network entrepreneur: one who migrates from one intellectual community to anothe
 "We thought of the WEC as a print version of what the Internet was going to be"
 
 ### Computational Metaphor
-On the computational metaphor (seeing everything as computation)
+On the computational metaphor (seeing everything as [computable](thoughts/computability.md))
 "We are compiling a vocabulary and a syntax that is able to describe in a single language all kinds of phenomenon that have escaped a common language until now. It is a new universal metaphor. It hasm ore juice in it than previous metaphors: Freud's dream state, Darwin's variety, Marx's progress, or the Age of Aquarius. And it has more power than anything else in science at the moment. In fact the computational metaphor may eclipse mathematics as a form of universal notation."
 "Society as a whole, as well as its constituent organizational parts, functioned much like organisms and machines."
 
@@ -60,7 +57,7 @@ WEC seems to promote an incredibly individualistic approach; Indians must work w
 
 "As a variety of economic sociologists have noted, the mid-1980s saw hierarchical firms in many industries and several nations reorganize themselves as project oriented networks. They laid off workers, broke component elements of firms into semi-independent project teams, and decentralized their management structure."
 
-"Although the hive had a queen, he pointed outm it was governmed by the rule-driven behaviour of its many memebers. In the hive one could see 'the true democracy and all distributed governance'. One could also see the faded image of New Communalism. Leveled, collaborative, linked by invisible signals and shared feelings, Kelly's hive was a sort of natural commune."
+"Although the hive had a queen, he pointed out it was governed by the rule-driven behaviour of its many members. In the hive one could see 'the true democracy and all distributed governance'. One could also see the faded image of New Communalism. Leveled, collaborative, linked by invisible signals and shared feelings, Kelly's hive was a sort of natural commune." (more on [collaborative-thinking](posts/collaborative-thinking.md))
 
 "Together, *Wired* suggested, this digital generation would do what the New Communalists had failed to accomplish: they would tear down hierarchies, undermine the sorts of corporations and governments that had spawned them, and, in the hierarchies' place, create a peer-to-peer, collaborative society, interlinked by invisible currents of energy and information."
 
@@ -68,7 +65,7 @@ WEC seems to promote an incredibly individualistic approach; Indians must work w
 
 "In many industries today, and in some parts of military and academic life as well, hierarchies have been replaced by flattened structures, long-term employment by short-term, project-based contracting, and professional positions by complex, networked forms of sociability."
 
-### Hackers
+### [Hackers](thoughts/Hackers.md)
 Hackers ->  those who figured things out as they went and invented for pleasure. Focused on computer systems themselves and on seeing what they could do
 
 Planners -> those who pursued problems according to a set and less flexible strategy. Thought of computers as tools that oculd be used to generate or model infomration

@@ -1,6 +1,8 @@
 ---
 title: "Semantics: What is Meaning?"
 date: 2021-07-02T13:49:27-04:00
+tags:
+- seed
 ---
 
 Meanings are public property: the same meaning be grasped by more than one person and by people at different times. Heavily related to [representation](thoughts/representation.md)

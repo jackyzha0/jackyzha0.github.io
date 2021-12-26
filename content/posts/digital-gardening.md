@@ -1,6 +1,8 @@
 ---
 title: "Digital Gardening"
 date: 2021-01-30T16:53:01-08:00
+tags:
+- fruit
 ---
 
 > As of 2021, this process is no longer accurate. I've embraced a much more networked form of note taking which I've written about [here](posts/networked-thought.md).

@@ -1,6 +1,8 @@
 ---
 title: "Incentives"
 date: 2021-10-20
+tags:
+- sapling
 ---
 
 How do we motivate people? Is [money](thoughts/money.md) effective as an incentive?

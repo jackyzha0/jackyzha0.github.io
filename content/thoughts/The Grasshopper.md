@@ -12,12 +12,12 @@ A fun Platonic dialogue poised as a tale between insects. The grasshopper, about
 
 (When talking about why the author chose to write the book as a Platonic dialogue) "His refusal to express himself in a plain expository style is perhaps no different in principle from someone's setting out to write an entire book without using the letter *e*"
 
-## Utopia and Scarcity
+## [Utopia](thoughts/utopia.md) and Scarcity
 "For one cannot help reflecting that if there were no winters to guard against, then the Grasshopper would not get his come-uppance nor the ant his shabby victory. The life of the grasshopper would be vindicated and that of the ant absurd"
 
 "Thus, although time is a finite quantity for everyone, it is not a limited resource for everyone. For a bored person time is a burden; for a person on the rack it is agony. And when time *is* a resource for someone it is not always a limited resource. For a person with very few goals there is always enough time to accomplish all of them."
 
-"Play is necessary but not sufficient adequately to account for the ideal of existence"
+"[Play](thoughts/play.md) is necessary but not sufficient adequately to account for the ideal of existence"
 
 ## A post-work society
 Let us imagine that all of the instrumental activities of human beings have been eliminated. All of the things ordinarily called work are now done by wholly automated machines which are activated solely by mental telepathy, so that not even a minimum staff is necessary for the housekeeping chores of society.

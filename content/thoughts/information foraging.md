@@ -1,6 +1,8 @@
 ---
 title: "Information Foraging"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 Developed at XEROX PARC in the late 1990s and was inspired by biomimicry (specifically, animal behaviour theories) 
@@ -25,7 +27,7 @@ Things that contribute to scent:
 3. Length
 
 ### Enrichment
-Techniques, tools, and interactions, that maximize the itility of the information foraging. This can happen either between patches or within patches.
+Techniques, tools, and interactions, that maximize the utility of the information foraging. This can happen either between patches or within patches.
 
 **But**, a good user experience involves web pages that are designed so that the user can get the maximum relevant information in the minimum amount of time.
 

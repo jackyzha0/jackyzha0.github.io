@@ -1,11 +1,13 @@
 ---
 title: "Networked Thought"
 date: 2021-07-22T18:55:47-04:00
+tags:
+- fruit
 ---
 
 > "Gardens … lie between farmland and wilderness ... The garden is farmland that delights the senses, designed for delight rather than commodity." -- [Bernstein](http://www.eastgate.com/garden/Gardens.html)
 
-We live in an information age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be falling apart under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
+We live in an information age. The amount of data we produce far outweighs what we consume, so much so that it has extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be falling apart under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
 
 Over the past year, I've slowly found processes that have worked well in creating a little curated corner of the internet, rich with wonderfully curious people exploring exciting ideas. You may have noticed I merged my blog and digital garden under my main site. A lot has changed since I last wrote about processes in my [Digital Gardening](posts/digital-gardening.md) post and some are no longer accurate. 
 

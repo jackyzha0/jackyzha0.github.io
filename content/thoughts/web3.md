@@ -1,6 +1,8 @@
 ---
 title: "Web3"
 date: 2021-07-28T17:13:54-04:00
+tags:
+- sapling
 ---
 
 > **Web3 is the open-source ethic extended beyond code as static artifacts but rather as live organisms.**

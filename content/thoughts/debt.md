@@ -1,7 +1,11 @@
 ---
 title: "Debt"
 date: 2021-10-23
+tags:
+- seed
 ---
+
+[Source](https://kernel.community/en/learn/module-2/debt)
 
 Related: [money](thoughts/money.md)
 

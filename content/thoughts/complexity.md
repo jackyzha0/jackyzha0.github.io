@@ -1,6 +1,8 @@
 ---
 title: "Complexity"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 ### Measures of Complexity

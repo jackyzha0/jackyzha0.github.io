@@ -1,6 +1,8 @@
 ---
 title: "Intentional Arrangement"
 date: 2021-09-21T10:10:48-07:00
+tags:
+- seed
 ---
 
 Source: [Glushko](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-intentional-arrangement/)

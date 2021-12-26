@@ -1,6 +1,8 @@
 ---
 title: "Brentano's Thesis"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 [Intentionality](thoughts/intentionality.md) is the mark of the mental. His thesis posits two points:

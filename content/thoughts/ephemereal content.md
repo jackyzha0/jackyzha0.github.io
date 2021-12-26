@@ -1,6 +1,8 @@
 ---
 title: "Ephemereal and Real-time Content"
 date: 2021-06-16T13:15:09-07:00
+tags:
+- sapling
 ---
 
 One of the things that keeps face-to-face friendships strong is the [nature of shared experience](http://psycnet.apa.org/psycinfo/2001-00651-001): you laugh together; you dance together; you gape at the hot-dog eaters on Coney Island together.

@@ -1,6 +1,8 @@
 ---
 title: "Task-Centered System Design"
 date: 2021-10-09
+tags:
+- seed
 ---
 
 -   articulate concrete descriptions of real-world people doing their real-world tasks

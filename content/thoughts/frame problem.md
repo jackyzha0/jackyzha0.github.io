@@ -1,6 +1,8 @@
 ---
 title: "Frame Problem"
 date: 2021-07-02T13:36:14-04:00
+tags:
+- sapling
 ---
 
 Intelligence is (at least partly) a matter of using well what you know. An intelligent being learns from experience, and then uses what is has learned to guide expectations in the future. How does one select the appropriate frame or context for any given situation?
@@ -11,7 +13,7 @@ There are an infinite number of contextual frames for any given situation. How d
 Problem of installing in one way or another all the information needed by an agent to plan in a changing world.
 
 Can be broken down into
--   semantic problem → what information do we need to install?
+-   [semantic](thoughts/semantics.md) problem → what information do we need to install?
 -   syntactic problem → what system, format, structure, or mechanism do we use to install it
 
 However, one cannot realistically create a Spinozistic solution (a small set of axioms and definitions from which we can deduce the rest of our knowledge on demand)

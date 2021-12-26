@@ -1,6 +1,8 @@
 ---
 title: "Kernel Curriculum"
 date: 2021-10-30
+tags:
+- seed
 ---
 
 > "Too often, the people disrupting any industry don't understand deeply what it is they're disrupting. This is definitely the case with cryptocurrencies and the current financial system. It really is well worth your time to stop and become familiar with more history so that you can understand why we are where we are, what led us here, and - only then - what solutions might actually benefit you and those you care about."

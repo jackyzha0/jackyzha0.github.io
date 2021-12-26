@@ -1,6 +1,8 @@
 ---
 title: "A New Glossary of Words"
 date: 2021-12-07
+tags:
+- fruit
 ---
 
 *This is an expansion of thoughts on [terminology](thoughts/terminology.md) and why we need new words. The following is a dialogue on the original [consensus](thoughts/consensus.md) problem: agreeing on what we mean. You can view the full artifact [here](https://play.jzhao.xyz/new-words).*
@@ -21,7 +23,7 @@ date: 2021-12-07
 
 **P:** Okay, I admit that new words are useful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
 
-**W:** Language is logically decentralized, is it not? There is no governing body that determines what a word means. The meaning of a word lies in its use[^1], and that is decided by those who speak the language.
+**W:** Language is logically [decentralized](thoughts/decentralization.md), is it not? There is no governing body that determines what a word means. The meaning of a word lies in its use[^1], and that is decided by those who speak the language.
 
 **P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
 
@@ -37,7 +39,7 @@ date: 2021-12-07
 
 **P:** Wait... lying is categorically bad is it not?
 
-**W:** Hold on and let me finish my thought. According to Pratchett[^2], "a lie-to-children is a statement that is false, but which nevertheless leads the child's mind towards a more accurate explanation." I think what I'm trying to get at is this concept of [verisimilitude](https://en.wikipedia.org/wiki/Verisimilitude): that there is no binary true or false, [some propositions are more true](thoughts/truth.md) than others, especially in context.
+**W:** Hold on and let me finish my thought. According to Pratchett[^2], "a lie-to-children is a statement that is false, but which nevertheless leads the child's mind towards a more accurate explanation." I think what I'm trying to get at is this concept of [verisimilitude](https://en.wikipedia.org/wiki/Verisimilitude): that there is no binary true or false, [some propositions are more true](thoughts/philosophy%20of%20science.md) than others, especially in context.
 
 **P:** Okay, I accept that taking a toy-model approach to new terminology makes sense. But I still don't understand why we couldn't just have a single definition for each word in this model.
 

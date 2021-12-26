@@ -1,6 +1,8 @@
 ---
 title: "Symbolic Systems"
 date: 2021-07-02T15:05:25-04:00
+tags:
+- seed
 ---
 
 ## Convergence of CS and Philosophy

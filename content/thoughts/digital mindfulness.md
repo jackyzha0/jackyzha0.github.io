@@ -7,6 +7,8 @@ tags:
 
 On methods to reclaim ourselves from the [attention economy](thoughts/attention%20economy.md). How do we enable [friction](thoughts/friction.md) to give people the space to think and reflect?
 
+[reflect](posts/reflect.md) tries to do this a little
+
 ## Time
 [Source](https://kernel.community/en/learn/module-3/time)
 

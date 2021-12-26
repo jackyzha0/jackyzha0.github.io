@@ -1,6 +1,8 @@
 ---
 title: "Black boxes"
 date: 2021-10-05
+tags:
+- sapling
 ---
 
 > Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity. Thus, paradoxically, the more science and technology succeed, the more opaque and obscure they become

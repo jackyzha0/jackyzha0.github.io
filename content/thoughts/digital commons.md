@@ -1,6 +1,8 @@
 ---
 title: "Digital Commons"
 date: 2021-07-15T17:51:42-04:00
+tags:
+- sapling
 ---
 
 How might we analogize [urban planning](thoughts/urban%20planning.md) to social media and digital spaces? -> https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12

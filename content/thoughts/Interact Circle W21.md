@@ -1,9 +1,11 @@
 ---
 title: "Interact: Hackathon Culture + Play"
 date: 2021-11-13
+tags:
+- sapling
 ---
 
-[View artifact](https://play.jzhao.xyz/). Contains writings on [play](posts/play.md) and [new-words](posts/new-words.md)
+[View artifact](https://play.jzhao.xyz/). Contains writings on [play](posts/play.md) and [new-words](posts/new-words.md)/[terminology](thoughts/terminology.md)
 
 ## Reflections
 I did not think I would ever be this excited about meeting people at 9AM on a Monday ever. This Circle has helped me center myself in what I truly find energizing in this world: discussing cool ideas with cool people.

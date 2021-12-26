@@ -1,6 +1,8 @@
 ---
 title: "Decentralization"
 date: 2021-08-06T23:12:28-04:00
+tags:
+- sapling
 ---
 
 [Source](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)

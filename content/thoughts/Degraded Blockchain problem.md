@@ -1,6 +1,8 @@
 ---
 title: "Degraded Blockchain problem"
 date: 2021-12-25
+tags:
+- sapling
 ---
 
 One thing that I still don't understand about blockchain is the 'trustless' aspect of blockchains. Blockchains are not 'trustless', rather it shifts the [trust](thoughts/trust.md) balance away from trusting people and corporations to trusting an algorithm. 

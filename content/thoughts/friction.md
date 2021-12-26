@@ -1,6 +1,8 @@
 ---
 title: "Friction"
 date: 2021-12-21
+tags:
+- seed
 ---
 
 ## Bring back Friction on the internet

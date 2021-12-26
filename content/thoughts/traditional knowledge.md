@@ -1,6 +1,8 @@
 ---
 title: "Traditional Knowledge (TK)"
 date: 2021-12-21
+tags:
+- seed
 ---
 
 *Strategic translation: pollution, data, and Indigenous Traditional Knowledge* by Sarah Blacker

@@ -1,6 +1,8 @@
 ---
 title: "Bitcoin"
 date: 2021-10-09
+tags:
+- seed
 ---
 
 Peer-to-peer electronic cash built using [blockchain](thoughts/blockchain.md). Capital 'B' Bitcoin is the network and protocol, lower case 'b' bitcoin is the actual currency.

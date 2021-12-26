@@ -1,6 +1,8 @@
 ---
 title: "Evaporative Cooling Effect"
 date: 2021-11-24
+tags:
+- seed
 ---
 
 Sources: [BumblebeeLabs](https://web.archive.org/web/20101012105003/http://blog.bumblebeelabs.com/social-software-sundays-2-the-evaporative-cooling-effect/) and [LessWrong](https://www.lesswrong.com/posts/ZQG9cwKbct2LtmL3p/evaporative-cooling-of-group-beliefs)

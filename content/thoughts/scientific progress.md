@@ -1,6 +1,8 @@
 ---
 title: "Scientific Progress"
 date: 2021-10-01
+tags:
+- sapling
 ---
 
 Heavily attached to societal [progress](thoughts/progress.md) and the concept of defining what 'forward progress' even means.

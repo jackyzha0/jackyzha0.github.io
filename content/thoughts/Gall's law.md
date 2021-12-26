@@ -1,6 +1,8 @@
 ---
 title: "Gall's law"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 ## Gall's Law

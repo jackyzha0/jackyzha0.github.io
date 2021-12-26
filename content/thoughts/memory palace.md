@@ -1,6 +1,8 @@
 ---
 title: "Memory Palace"
 date: 2021-07-31T21:07:58-04:00
+tags:
+- sapling
 ---
 
 ## Method of Loci

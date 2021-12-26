@@ -1,6 +1,8 @@
 ---
 title: "Language of Thought"
 date: 2021-07-02T15:40:00-04:00
+tags:
+- seed
 ---
 
 Can we use language as the method of querying memory? 

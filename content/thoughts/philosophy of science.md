@@ -1,6 +1,8 @@
 ---
 title: "Philosophy of science"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 ## Karl Popper

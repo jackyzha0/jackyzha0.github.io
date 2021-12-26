@@ -1,6 +1,8 @@
 ---
 title: "Value Setting"
 date: 2021-03-11T13:31:11-08:00
+tags:
+- sapling
 ---
 
 > "I’ve noticed that many people compete in games they don’t understand because they are modeling the behavior of people around them. Most common is the competition for wealth as a proxy for happiness." —Michael Seibel

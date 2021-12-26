@@ -1,6 +1,8 @@
 ---
 title: "Selfish"
 date: 2021-10-20
+tags:
+- sapling
 ---
 
 Are selfishness and selfcare the same thing?

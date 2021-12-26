@@ -1,6 +1,8 @@
 ---
 title: "Organizing Systems"
 date: 2021-09-21T09:28:57-07:00
+tags:
+- sapling
 ---
 
 _Organizing System_: an [intentionally](thoughts/intentional%20arrangement.md) arranged collection of resources and the interactions they support. It has authoritative description and standard classification. 

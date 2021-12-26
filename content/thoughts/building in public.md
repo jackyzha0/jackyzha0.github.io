@@ -1,11 +1,15 @@
 ---
 title: "Building in Public"
 date: 2021-06-16T17:39:37-04:00
+tags:
+- seed
 ---
 
-"He who works with the door open gets all kinds of interruptions, but he also occasionally gets clues as to what the world is and what might be important." — richard hamming
+[Source]([https://www.cs.virginia.edu/~robins/YouAndYourResearch.html](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
-[https://www.cs.virginia.edu/~robins/YouAndYourResearch.html](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+"He who works with the door open gets all kinds of interruptions, but he also occasionally gets clues as to what the world is and what might be important." — Richard hamming
 
-invite distractions but get a better sense of the world
+Invite distractions but get a better sense of the world
+
+Related: [Collaborative thinking](posts/collaborative-thinking.md)
 

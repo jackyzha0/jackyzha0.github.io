@@ -1,6 +1,8 @@
 ---
 title: "Zero-sum"
 date: 2021-10-26
+tags:
+- sapling
 ---
 
 As opposed to [positive sum](thoughts/positive%20sum.md)

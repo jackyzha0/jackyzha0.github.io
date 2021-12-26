@@ -1,6 +1,8 @@
 ---
 title: "Putnam's Ant Argument"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 -   The ant who traces a line that ends up looking like a caricature of Winston Churchill. Is it a picture or representation of him?

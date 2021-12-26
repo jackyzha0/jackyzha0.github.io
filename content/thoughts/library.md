@@ -1,6 +1,8 @@
 ---
 title: "Libraries"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 [Source](https://placesjournal.org/article/fugitive-libraries)

@@ -1,6 +1,8 @@
 ---
 title: "Fiction"
 date: 2021-10-24
+tags:
+- sapling
 ---
 
 > The future is manifested

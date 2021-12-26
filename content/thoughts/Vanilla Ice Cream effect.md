@@ -1,6 +1,8 @@
 ---
 title: "Vanilla Ice Cream effect"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 Ask everyone to vote on their favourite ice cream, you'll most likely end up with vanilla.

@@ -1,6 +1,8 @@
 ---
 title: "Machine Learning"
 date: 2021-07-02T14:03:17-04:00
+tags:
+- sapling
 ---
 
 ## GOFAI (good old-fashioned AI)

@@ -1,6 +1,8 @@
 ---
 title: "Progress"
 date: 2021-08-03T15:26:24-04:00
+tags:
+- sapling
 ---
 
 From *21 Lesson for the 21st Century* by Yuval Noah Harari:  "Did we domesticate wheat or did wheat domesticate us?" So much of technological progress is conflated as a good thing. Is it necessarily so?

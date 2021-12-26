@@ -1,6 +1,8 @@
 ---
 title: "Qualia"
 date: 2021-08-30T14:44:31-04:00
+tags:
+- sapling
 ---
 
 Qualia: the subjective, conscious experience.
@@ -12,7 +14,7 @@ Qualia: the subjective, conscious experience.
 
 Neural networks just assess vibes, they are the literal technical implementation of "no thoughts, just vibes".
 
-Vibes are very similar to the approximations [machine learning systems](thoughts/machine%20learning.md) use. Both suffer from [Goodhart's Law](thoughts/quantization.md)
+Vibes are very similar to the approximations [machine learning systems](thoughts/machine%20learning.md) use. Both suffer from [Goodhart's Law](thoughts/Goodhart's%20Law.md)
 
 On context-less data: Like vibes, these metrics carry no context or narrative; they can tell you nothing about how or why something might be desirable
 

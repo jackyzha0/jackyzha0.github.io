@@ -23,9 +23,7 @@ Constant theme of Doctoroff is that of constant [move fast and break things](tho
 ### 'New Cities'
 Is it possible to build 'smart cities' tabula rasa?
 
-A sort of [Collingridge problem](thoughts/catch%2022.md) where they are constantly developing and "versioning" much like a software product in an agile process.
-
-Does this only appeal to us because of the recent obsession of [computation](thoughts/computability.md) as a metaphor?
+A sort of [Collingridge dilemma](thoughts/Collingridge%20dilemma.md) where they are constantly developing and "versioning" much like a software product in an agile process.
 
 ### Cities as information centres
 Not only for transmitting information within a generation (breadth-wise) but also between generations (depth-wise): [generational learning](thoughts/generational%20learning.md) and [Theory of Niche Construction](thoughts/Theory%20of%20Niche%20Construction.md)!
@@ -35,6 +33,9 @@ Not only for transmitting information within a generation (breadth-wise) but als
 "What are the non-textual, un-recordable forms of cultural memory? These questions are especially relevant for marginalized populations, indigenous cultures, and developing nations." Especially related to [quantization](thoughts/quantization.md), how does always labeling and quantizing our data affect these forms of information? These forms cannot be reduced to 'information' nor can they be 'processed' easily within our digital systems. "Yet they are vital urban intelligences that live within bodies, minds, and communities."
 
 ### Computational Metaphors
+
+Does this only appeal to us because of the recent obsession of [computation](thoughts/computability.md) as a metaphor?
+
 Historically, we've analogized the brain (and the city) to technologies of our time. For example, we've compared the brain to "lumps of clay infused with spirits, as hydraulic or electro-chemical systems, as automata."
 
 > The _brain as computer_ is just the latest link in a long chain of metaphors that powerfully shape scientific endeavor in their own images.
@@ -46,7 +47,7 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 	- A lot of 'messiness' in history (e.g. *why* people were evicted, etc.) especially in *embodied knowledge*
 	- Let's think about what **can't** be digitized and be put on a dashboard
 	- Technosolutionism in governing from just a quantized dashboard where the *people responsible for making the decisions are so abstracted away from the actual problems that they need to solve*
-- What are potential solutions to this overly [quantized](thoughts/quantization.md) technosolutionist approach? You mentioned indigenous knowledge
+- What are potential solutions to this overly [quantized](thoughts/quantization.md) technosolutionist approach? You mentioned indigenous knowledge and [traditional knowledge](thoughts/traditional%20knowledge.md)
 	- Think more epistemologically broadly (how do we know what we know, are things inherently quantifiable or not)?
 	- Can we contextualize wisdom vs knowledge?
 	- How can we provide public alternatives to privatized social systems (e.g. public interest Google)?
@@ -55,12 +56,12 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 		- these are definitely supplements rather than solutions
 	- Maintenance and Care
 		- Focus on [maintenance instead of just plain innovation](thoughts/creation%20vs%20maintenance.md)
-		- Tech fetishizes creating new things, is there [Value Beyond Instrumentalization](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization)?
+		- Tech fetishizes creating new things, is there value beyond [instrumentalism](thoughts/instrumentalism.md)?
 	- What is the 'dashboard' in the proto-city?
 		- Source: Cybernetic Revolutionaries: Technology and Politics in Allendes Chiles (by Medina)
 		- Feels like a lot of abstraction away from actual problems
-		- Potemkin control room! Semblance of control rather than actual control/usefulness
-			- Curious how similar this is to the [potemkin villages that AI systems construct](posts/ai-systems.md)
+		- [Potemkin village](thoughts/potemkin%20village.md) control room! Semblance of control rather than actual control/usefulness
+			- Curious how similar this is to the [potemkin villages](thoughts/potemkin%20village.md) that AI systems construct
 - How can digital communities learn from libraries and librarians to prevent a Library of Alexandria moment?
 	- Rise of Amazon: do we need bookstores and libraries anymore? Yes!
 	- Primary point of internet access for underprivileged communities
@@ -75,7 +76,7 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 	- Rather than just bringing humanists in, starting the collaboration on a more neutral ground
 	- Make it as participatory as possible
 - What can city governments do to help the 'exclusion' of previously 'unseen' or minority groups?
-	- Design Justice approach, specifically acknowledge this bias and try to compensate (e.g. [Data for Black Lives](https://d4bl.org/))
+	- [Design Justice](thoughts/Design%20Justice.md) approach, specifically acknowledge this bias and try to compensate (e.g. [Data for Black Lives](https://d4bl.org/))
 	- We may not always be able to prevent 'data harvesting', and it sometimes might not all be bad! How do we fairly represent everyone?
 	- How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. GDPR?)
 - Would smart cities be any different if they prioritized the citizens and participation at the get-go rather than as an after-thought
@@ -92,11 +93,9 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 - Are ['imperfect' algorithms](posts/bias-bug.md) okay? What about if they are better than biased humans?
 	- Matter of looking at where the technology is useful, who is using it, how can we mitigate the risks using human-in-the-loop systems (if at all possible)
 	- Similar to scientific approaches to hypothesis, define these ahead of time so there is less incentive to 'reclassify' data to hit quotas
-- Ground-up emergence vs Top-down governance for cities
+- Ground-up emergence vs Top-down [governance](thoughts/governance.md) for cities
 	- Historically a lot of data **has** been centralized regardless (e.g. libraries, town halls, etc.)
 	- Similar discussion to a an article thinking about hierarchies within cities: [A City is not a Tree](thoughts/A%20City%20is%20not%20a%20Tree.md)
-	- Related to [group limits and Dunbar's Number](thoughts/group%20limits.md)
-	- AnnaLee Newitz's Book, Four Lost Cities has lots of insights for today's techies to think about
 - Success metrics on unplanned vs planned development
 	- How do we think about co-optation of civil design tools that are used typically by more unplanned/ground-up governance by corporations and more centralized governance models? (design justice)
 	- [Fred Turner](thoughts/From%20Counterculture%20to%20Cyberculture.md) and the communes, New Communalist approaches to communities

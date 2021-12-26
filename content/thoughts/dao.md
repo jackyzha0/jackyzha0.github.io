@@ -1,6 +1,8 @@
 ---
 title: "DAO"
 date: 2021-07-28T18:46:18-04:00
+tags:
+- seed
 ---
 
 > Communities organized around a shared set of rules enforced on the blockchain through a smart contract. 

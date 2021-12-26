@@ -1,3 +1,10 @@
+---
+title: "Brains in a Vat"
+date: 2021-12-25
+tags:
+- seed
+---
+
 ## Brain in a Vat
 - [Putnam's Ant Argument](thoughts/Putnam's%20Ant%20Argument.md): does intentionality matter for representation?
 - Related to [virtual worlds](thoughts/virtual%20worlds.md) and the Matrix

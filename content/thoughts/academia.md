@@ -17,7 +17,7 @@ My guess is that the research community tends to reward narratives that increase
 "Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute."
 
 ## [Incentive](thoughts/incentives.md) Structure
-Academia feels more pure, more [playful](thoughts/play.md), than academia? More of a 'constructionist' approach, freedom to ask your own questions (rel: [Mindstorms](thoughts/Mindstorms.md))
+Academia feels more pure, more [playful](thoughts/play.md), than academia? More of a '[constructionist](thoughts/constructionist.md)' approach, freedom to ask your own questions
 
 Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/new%20DARPA.md) perhaps?
 

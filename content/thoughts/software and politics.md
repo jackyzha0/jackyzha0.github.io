@@ -1,6 +1,8 @@
 ---
 title: "Software and Politics"
 date: 2021-07-13T16:41:38-04:00
+tags:
+- seed
 ---
 
 [Do Artifacts Have Politics](thoughts/Do%20Artifacts%20Have%20Politics.md)? Yes, they do.

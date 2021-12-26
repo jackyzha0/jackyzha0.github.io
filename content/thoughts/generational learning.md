@@ -1,6 +1,8 @@
 ---
 title: "Generational Learning"
 date: 2021-12-24
+tags:
+- sapling
 ---
 
 Related: [Theory of Niche Construction](thoughts/Theory%20of%20Niche%20Construction.md) and [Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md)

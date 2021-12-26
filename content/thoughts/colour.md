@@ -1,3 +1,10 @@
+---
+title: "Colour"
+date: 2021-12-25
+tags:
+- seed
+---
+
 ## Texture
 Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements
 

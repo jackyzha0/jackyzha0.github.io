@@ -1,6 +1,8 @@
 ---
 title: "Recommendation System"
 date: 2021-12-24
+tags:
+- seed
 ---
 
 ## *Captivating algorithms: Recommender systems as traps*

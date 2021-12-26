@@ -1,6 +1,8 @@
 ---
 title: "Downward Causation"
 date: 2021-08-30T14:02:38-04:00
+tags:
+- seed
 ---
 
 In hierarchical systems, downward casuation implies that higher, more abstract, levels of a system can influence lower level parts of the system.]

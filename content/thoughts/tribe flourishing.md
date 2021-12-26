@@ -1,13 +1,15 @@
 ---
 title: "Tribe Flourishing"
 date: 2021-12-10
+tags:
+- sapling
 ---
 
 Related: [collaborative-thinking](posts/collaborative-thinking.md), [communities](thoughts/communities.md), [friendship](thoughts/friendship.md), and [context-collapse](posts/context-collapse.md)
 
 Why are we more ourselves in small group chats than our posts? Why are we more comfortable trying new things and working on projects in these smaller groups?
 
-Is it because of bureaucratic friction at scale? [Dunbar's number](thoughts/group%20limits.md)? 
+Is it because of bureaucratic friction at scale? [Group limits](thoughts/group%20limits.md)? 
 
 How do we move away from the 'other' and towards the 'us'? Towards collectivism and interdependence rather than individualism?
 
