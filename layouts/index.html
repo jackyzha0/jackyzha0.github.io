@@ -4,17 +4,39 @@
 
 <body>
 {{partial "search.html" .}}
-<div class="singlePage">
-    <!-- Begin actual content -->
+<div class="index">
     <header>
         <h1>{{if .Title}}{{ .Title }}{{else}}Untitled{{end}}</h1>
         <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
-    <article>
-        {{- .Content -}}
-    </article>
+</div>
+<div class="banner">
+    {{partial "ascii/banner.html" .}}
+</div>
+<div class="index">
+    <div class="bio">
+        <article>
+            {{- .Content -}}
+        </article>
+        <ul>
+            <h2>Recent Notes</h2>
+            {{range first 6 .Site.RegularPages }}
+            <li class="section-li">
+                <div class="section">
+                    <div class="desc">
+                        <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+                    </div>
+                    <p class="meta">
+                        {{.WordCount}} words. {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
+                    </p>
+                    {{partial "tags.html" .}}
+                </div>
+            </li>
+            {{end}}
+        </ul>
+    </div>
     {{partial "footer.html" .}}
 </div>
 </body>

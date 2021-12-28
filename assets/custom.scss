@@ -45,3 +45,65 @@
     color: var(--tertiary);
   }
 }
+
+.banner > pre {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.index {
+  margin: 4em 25vw;
+  @media all and (max-width: 1200px) {
+    margin: 25px 5vw;
+  }
+
+  & > .bio {
+    display: flex;
+    gap: 4em;
+
+    @media screen and (max-width: 1440px) {
+      flex-direction: column !important;
+    }
+
+    & > article {
+      text-align: justify;
+    }
+
+    & > ul {
+      flex: 0 0 35%;
+      list-style: none;
+      padding: 0;
+
+      & h2 {
+        font-size: 1.4rem;
+        margin: 0 0 1em 0;
+      }
+
+      & a {
+        font-family: Spectral
+      }
+
+      & li {
+        margin-bottom: 0.5em;
+      }
+
+      & h3 {
+        margin: 0;
+      }
+
+      & .meta {
+        margin-top: 0;
+      }
+
+      & .tags > li > a {
+        font-size: 0.8em;
+        font-weight: 400;
+      }
+    }
+  }
+}
