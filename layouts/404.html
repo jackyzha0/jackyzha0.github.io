@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-{{ partial "head/head.html" . }}
+{{ partial "head.html" . }}
 
 <body>
-    <!-- Begin actual content -->
-    {{partial "search.html" .}}
-    <div id="landing-container">
-        {{partial "landing/darkmode.html" .}}
-        <div id="landing-overlay" class="home-section">
-            <h1>404.</h1>
-            <h3>Hey! You look a little lost.</h3>
-            <p>Either this page doesn't exist or is private. What's a digital garden without a little <a href="https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/">link rot</a>?</p>
-            <ul id="sub-nav">
-                <li><a href="/">↳ Let's get you home.</a></li>
-            </ul>
-        </div>
-        <canvas id="canvas" alt="Background Particle Effect" ></canvas>
+<div class="singlePage">
+    {{partial "darkmode.html" .}}
+    <div class="centered">
+        <h1>404.</h1>
+        <h3>Hey! You look a little lost. This page doesn't exist (or may be private).</h3>
+        <a href="/">↳ Let's get you home.</a>
     </div>
+</div>
 </body>
 
 </html>

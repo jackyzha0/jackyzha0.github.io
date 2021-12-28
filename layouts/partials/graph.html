@@ -1,9 +1,10 @@
 <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+<h3>Interactive Graph</h3>
 <div id="graph-container"></div>
 <style>
     :root {
-        --g-node: var(--navy);
-        --g-node-active: var(--salmon);
+        --g-node: var(--secondary);
+        --g-node-active: var(--primary);
         --g-node-inactive: var(--visited);
         --g-link: var(--outlinegray);
         --g-link-active: #5a7282;
@@ -12,18 +13,40 @@
 <script>
   const index = {{$.Site.Data.linkIndex.index}}
   const links = {{$.Site.Data.linkIndex.links}}
+  const content = {{$.Site.Data.contentIndex}}
   const curPage = {{ strings.TrimRight "/" .Page.RelPermalink }}
   const pathColors = {{$.Site.Data.graphConfig.paths}}
+  let depth = {{$.Site.Data.graphConfig.depth}}
 
   const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
 
+  const neighbours = new Set()
+  const wl = [curPage || "/", "__SENTINEL"]
+  if (depth >= 0) {
+    while (depth >= 0 && wl.length > 0) {
+      // compute neighbours
+      const cur = wl.shift()
+      if (cur === "__SENTINEL") {
+        depth--
+        wl.push("__SENTINEL")
+      } else {
+        neighbours.add(cur)
+        const outgoing = index.links[cur] || []
+        const incoming = index.backlinks[cur] || []
+        wl.push(...outgoing.map(l => l.target), ...incoming.map(l => l.source))
+      }
+    }
+  } else {
+    parseIdsFromLinks(links).forEach(id => neighbours.add(id))
+  }
+
   const data = {
-    nodes: parseIdsFromLinks(links).map(id => ({id})),
-    links,
+    nodes: [...neighbours].map(id => ({id})),
+    links: links.filter(l => neighbours.has(l.source) && neighbours.has(l.target)),
   }
 
   const color = (d) => {
-    if (d.id === curPage) {
+    if (d.id === curPage || (d.id === "/" && curPage === "")) {
       return "var(--g-node-active)"
     }
 
@@ -64,17 +87,13 @@
       .on("end", enableDrag ? dragended : noop);
   }
 
-  const height = 400
+  const height = 250
   const width = document.getElementById("graph-container").offsetWidth
 
   const simulation = d3.forceSimulation(data.nodes)
-    .force("charge", d3.forceManyBody().strength(-80))
-    .force("link", d3.forceLink(data.links)
-      .id(d => d.id)
-    )
-    .force("collide", d3.forceCollide(7))
-    .force("center", d3.forceCenter().strength(1))
-    .tick(5);
+    .force("charge", d3.forceManyBody().strength(-30))
+    .force("link", d3.forceLink(data.links).id(d => d.id))
+    .force("center", d3.forceCenter());
 
   const svg = d3.select('#graph-container')
     .append('svg')
@@ -105,7 +124,7 @@
     .join("line")
     .attr("class", "link")
     .attr("stroke", "var(--g-link)")
-    .attr("stroke-width", 1)
+    .attr("stroke-width", 2)
     .attr("data-source", d => d.source.id)
     .attr("data-target", d => d.target.id)
 
@@ -121,12 +140,13 @@
     .attr("id", (d) => d.id)
     .attr("r", (d) => {
       const numOut = index.links[d.id]?.length || 0
-      return 5 + (numOut / 3)
+      const numIn = index.backlinks[d.id]?.length || 0
+      return 2 + (numOut + numIn) / 4
     })
     .attr("fill", color)
     .style("cursor", "pointer")
     .on("click", (_, d) => {
-      window.location.href = d.id;
+      window.location.href = {{.Site.BaseURL}} + decodeURI(d.id).replace(/[\s_]+/g, '-')
     })
     .on("mouseover", function (_, d) {
       d3.selectAll(".node")
@@ -137,7 +157,7 @@
       const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
       const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
       const currentId = d.id
-      const links = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
 
       // highlight neighbour nodes
       neighbourNodes
@@ -146,7 +166,7 @@
         .attr("fill", color)
 
       // highlight links
-      links
+      linkNodes
         .transition()
         .duration(200)
         .attr("stroke", "var(--g-link-active)")
@@ -165,9 +185,9 @@
         .attr("fill", color)
 
       const currentId = d.id
-      const links = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
 
-      links
+      linkNodes
         .transition()
         .duration(200)
         .attr("stroke", "var(--g-link)")
@@ -178,6 +198,18 @@
         .duration(200)
         .style("opacity", 0)
     })
+    .call(drag(simulation));
+
+  // draw labels
+  const labels = graphNode.append("text")
+    .attr("dx", 12)
+    .attr("dy", ".35em")
+    .text((d) => {
+      console.log(content)
+      return content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || "Untitled"
+    })
+    .style("opacity", 0)
+    .style("pointer-events", "none")
     .call(drag(simulation));
 
   // set panning
@@ -192,15 +224,6 @@
         labels.attr("transform", transform);
       }));
   }
-
-  // draw labels
-  const labels = graphNode.append("text")
-    .attr("dx", 12)
-    .attr("dy", ".35em")
-    .text((d) => d.id)
-    .style("opacity", 0)
-    .style("pointer-events", "none")
-    .call(drag(simulation));
 
   // progress the simulation
   simulation.on("tick", () => {

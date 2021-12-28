@@ -1,4 +1,4 @@
-/* Background */ .chroma { color: #f8f8f2; background-color: #282a36 }
+/* Background */ .chroma { color: #f8f8f2; background-color: #282a36; overflow: hidden }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -82,18 +82,18 @@
 /* TextWhitespace */ .chroma .w {  }
 
 .lntd:first-of-type > .chroma {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .chroma code {
-    font-family: 'Fira Code' !important;
-    font-size: 0.85em;
-    line-height: 1em;
-    background: none;
-    padding: 0;
+  font-family: 'Fira Code' !important;
+  font-size: 0.85em;
+  line-height: 1em;
+  background: none;
+  padding: 0;
 }
 
 .chroma {
-    border-radius: 3px;
-    margin: 0;
+  border-radius: 3px;
+  margin: 0;
 }

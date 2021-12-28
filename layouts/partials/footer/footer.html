@@ -1,9 +1,0 @@
-<footer>
-    <p>made by Jacky Zhao, © {{ dateFormat "2006" now }}</p>
-    {{ if not .IsHome }}
-    <a href="/">home</a>
-    {{end}}
-    {{- range $.Site.Data.links.footer -}}
-    <a href="{{.link}}">{{.link_name}}</a>
-    {{- end -}}
-</footer>
