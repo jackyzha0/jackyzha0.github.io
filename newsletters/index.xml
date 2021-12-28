@@ -1,1 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Newsletters on</title><link>https://jzhao.xyz/newsletters/</link><description>Recent content in Newsletters on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 04 Jun 2021 13:43:34 -0800</lastBuildDate><atom:link href="https://jzhao.xyz/newsletters/index.xml" rel="self" type="application/rss+xml"/><item><title>The bookstore with a single book, knowledge distillation, and tight feedback loops</title><link>https://jzhao.xyz/newsletters/issue-4/</link><pubDate>Fri, 04 Jun 2021 13:43:34 -0800</pubDate><guid>https://jzhao.xyz/newsletters/issue-4/</guid><description>I am writing this newsletter edition as NYC is being bombarded by hail.</description></item><item><title>Sun sneezing, infrastructure moderation, and why bikes are better than tricycles</title><link>https://jzhao.xyz/newsletters/issue-3/</link><pubDate>Tue, 20 Apr 2021 13:43:34 -0800</pubDate><guid>https://jzhao.xyz/newsletters/issue-3/</guid><description>Hello there and welcome back to another issue of some mildly coherent ramblings.</description></item><item><title>Spider-man neurons, hearing fractals, and fulfilment</title><link>https://jzhao.xyz/newsletters/issue-2/</link><pubDate>Mon, 01 Feb 2021 13:43:34 -0800</pubDate><guid>https://jzhao.xyz/newsletters/issue-2/</guid><description>I can&amp;rsquo;t believe we&amp;rsquo;re approaching a time of year when I can wait until after dinner to turn on my desk light.</description></item><item><title>A request for coffee chats</title><link>https://jzhao.xyz/newsletters/issue-1/</link><pubDate>Sun, 31 Jan 2021 13:43:34 -0800</pubDate><guid>https://jzhao.xyz/newsletters/issue-1/</guid><description>This month of January went by with blazing speed. I can&amp;rsquo;t say if it&amp;rsquo;s because of school starting back up or just the massive amounts of s t u f f going on in the world right now.</description></item><item><title>Hello world!</title><link>https://jzhao.xyz/newsletters/issue-0/</link><pubDate>Sat, 09 Jan 2021 13:43:34 -0800</pubDate><guid>https://jzhao.xyz/newsletters/issue-0/</guid><description>Hi there and thanks for signing up for my newsletter!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newsletters on </title>
+    <link>https://jzhao.xyz/newsletters/</link>
+    <description>Recent content in Newsletters on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Jun 2021 13:43:34 -0800</lastBuildDate><atom:link href="https://jzhao.xyz/newsletters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The bookstore with a single book, knowledge distillation, and tight feedback loops</title>
+      <link>https://jzhao.xyz/newsletters/issue-4/</link>
+      <pubDate>Fri, 04 Jun 2021 13:43:34 -0800</pubDate>
+      
+      <guid>https://jzhao.xyz/newsletters/issue-4/</guid>
+      <description>I am writing this newsletter edition as NYC is being bombarded by hail.</description>
+    </item>
+    
+    <item>
+      <title>Sun sneezing, infrastructure moderation, and why bikes are better than tricycles</title>
+      <link>https://jzhao.xyz/newsletters/issue-3/</link>
+      <pubDate>Tue, 20 Apr 2021 13:43:34 -0800</pubDate>
+      
+      <guid>https://jzhao.xyz/newsletters/issue-3/</guid>
+      <description>Hello there and welcome back to another issue of some mildly coherent ramblings.</description>
+    </item>
+    
+    <item>
+      <title>Spider-man neurons, hearing fractals, and fulfilment</title>
+      <link>https://jzhao.xyz/newsletters/issue-2/</link>
+      <pubDate>Mon, 01 Feb 2021 13:43:34 -0800</pubDate>
+      
+      <guid>https://jzhao.xyz/newsletters/issue-2/</guid>
+      <description>I can&amp;rsquo;t believe we&amp;rsquo;re approaching a time of year when I can wait until after dinner to turn on my desk light.</description>
+    </item>
+    
+    <item>
+      <title>A request for coffee chats</title>
+      <link>https://jzhao.xyz/newsletters/issue-1/</link>
+      <pubDate>Sun, 31 Jan 2021 13:43:34 -0800</pubDate>
+      
+      <guid>https://jzhao.xyz/newsletters/issue-1/</guid>
+      <description>This month of January went by with blazing speed. I can&amp;rsquo;t say if it&amp;rsquo;s because of school starting back up or just the massive amounts of s t u f f going on in the world right now.</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://jzhao.xyz/newsletters/issue-0/</link>
+      <pubDate>Sat, 09 Jan 2021 13:43:34 -0800</pubDate>
+      
+      <guid>https://jzhao.xyz/newsletters/issue-0/</guid>
+      <description>Hi there and thanks for signing up for my newsletter!</description>
+    </item>
+    
+  </channel>
+</rss>

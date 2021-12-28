@@ -1,1 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>technical on</title><link>https://jzhao.xyz/tags/technical/</link><description>Recent content in technical on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/technical/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://jzhao.xyz/thoughts/Projects/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://jzhao.xyz/thoughts/Projects/</guid><description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining.</description></item><item><title>React in 30 minutes or your money back</title><link>https://jzhao.xyz/posts/react/</link><pubDate>Sat, 07 Aug 2021 08:38:11 -0400</pubDate><guid>https://jzhao.xyz/posts/react/</guid><description>React is, as the website says, &amp;ldquo;a JavaScript library for building user interfaces.</description></item><item><title>Project Idea List</title><link>https://jzhao.xyz/thoughts/idea-list/</link><pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate><guid>https://jzhao.xyz/thoughts/idea-list/</guid><description>Ideas AR + Magic Leap for 3D sculpting LayoutLM + screenshots → auto-categorization of knowledge maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk Reverse of the above?</description></item><item><title>Rewriting ctrl-v using Next.js</title><link>https://jzhao.xyz/posts/ctrlv-next/</link><pubDate>Sun, 11 Apr 2021 16:55:12 -0700</pubDate><guid>https://jzhao.xyz/posts/ctrlv-next/</guid><description>Ever since I released ctrl-v , friends from HackClub have kept bugging me about switching my current React code over to use Next.</description></item><item><title>Docker Explained</title><link>https://jzhao.xyz/posts/docker/</link><pubDate>Wed, 22 Jul 2020 00:14:11 -0700</pubDate><guid>https://jzhao.xyz/posts/docker/</guid><description>Content from my own &amp;lsquo;Docker Explained&amp;rsquo; repo . Check out the repository for example code!</description></item><item><title>reflect: NLP Model Explained</title><link>https://jzhao.xyz/posts/reflect/</link><pubDate>Sun, 10 May 2020 08:51:56 -0700</pubDate><guid>https://jzhao.xyz/posts/reflect/</guid><description>How do we tell that this is a “valid” intent?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technical on </title>
+    <link>https://jzhao.xyz/tags/technical/</link>
+    <description>Recent content in technical on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/technical/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>https://jzhao.xyz/thoughts/Projects/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Projects/</guid>
+      <description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining.</description>
+    </item>
+    
+    <item>
+      <title>React in 30 minutes or your money back</title>
+      <link>https://jzhao.xyz/posts/react/</link>
+      <pubDate>Sat, 07 Aug 2021 08:38:11 -0400</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/react/</guid>
+      <description>React is, as the website says, &amp;ldquo;a JavaScript library for building user interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Project Idea List</title>
+      <link>https://jzhao.xyz/thoughts/idea-list/</link>
+      <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
+      <description>Ideas  AR + Magic Leap for 3D sculpting LayoutLM + screenshots → auto-categorization of knowledge  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk   Reverse of the above?</description>
+    </item>
+    
+    <item>
+      <title>Rewriting ctrl-v using Next.js</title>
+      <link>https://jzhao.xyz/posts/ctrlv-next/</link>
+      <pubDate>Sun, 11 Apr 2021 16:55:12 -0700</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/ctrlv-next/</guid>
+      <description>Ever since I released ctrl-v , friends from HackClub have kept bugging me about switching my current React code over to use Next.</description>
+    </item>
+    
+    <item>
+      <title>Docker Explained</title>
+      <link>https://jzhao.xyz/posts/docker/</link>
+      <pubDate>Wed, 22 Jul 2020 00:14:11 -0700</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/docker/</guid>
+      <description>Content from my own &amp;lsquo;Docker Explained&amp;rsquo; repo . Check out the repository for example code!</description>
+    </item>
+    
+    <item>
+      <title>reflect: NLP Model Explained</title>
+      <link>https://jzhao.xyz/posts/reflect/</link>
+      <pubDate>Sun, 10 May 2020 08:51:56 -0700</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/reflect/</guid>
+      <description>How do we tell that this is a “valid” intent?</description>
+    </item>
+    
+  </channel>
+</rss>

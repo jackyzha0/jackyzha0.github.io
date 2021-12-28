@@ -1,2 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>evergreen on</title><link>https://jzhao.xyz/tags/evergreen/</link><description>Recent content in evergreen on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml"/><item><title>Experience</title><link>https://jzhao.xyz/thoughts/Experience/</link><pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate><guid>https://jzhao.xyz/thoughts/Experience/</guid><description>2021: Microsoft Garage SWE Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams.</description></item><item><title>Projects</title><link>https://jzhao.xyz/thoughts/Projects/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://jzhao.xyz/thoughts/Projects/</guid><description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining.</description></item><item><title>Quotes</title><link>https://jzhao.xyz/thoughts/quotes/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://jzhao.xyz/thoughts/quotes/</guid><description>Some quotes to live by.
-&amp;ldquo;Choose joy. Choose it like a child chooses the shoe to put on the right foot, the crayon to paint a sky.</description></item><item><title>Project Idea List</title><link>https://jzhao.xyz/thoughts/idea-list/</link><pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate><guid>https://jzhao.xyz/thoughts/idea-list/</guid><description>Ideas AR + Magic Leap for 3D sculpting LayoutLM + screenshots → auto-categorization of knowledge maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk Reverse of the above?</description></item><item><title>A Failure Resume</title><link>https://jzhao.xyz/posts/a-failure-resume/</link><pubDate>Fri, 21 Aug 2020 14:02:48 -0700</pubDate><guid>https://jzhao.xyz/posts/a-failure-resume/</guid><description>Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evergreen on </title>
+    <link>https://jzhao.xyz/tags/evergreen/</link>
+    <description>Recent content in evergreen on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience</title>
+      <link>https://jzhao.xyz/thoughts/Experience/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Experience/</guid>
+      <description>2021: Microsoft Garage SWE Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://jzhao.xyz/thoughts/Projects/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Projects/</guid>
+      <description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining.</description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>https://jzhao.xyz/thoughts/quotes/</link>
+      <pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/quotes/</guid>
+      <description>Some quotes to live by.
+ &amp;ldquo;Choose joy. Choose it like a child chooses the shoe to put on the right foot, the crayon to paint a sky.</description>
+    </item>
+    
+    <item>
+      <title>Project Idea List</title>
+      <link>https://jzhao.xyz/thoughts/idea-list/</link>
+      <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
+      <description>Ideas  AR + Magic Leap for 3D sculpting LayoutLM + screenshots → auto-categorization of knowledge  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk   Reverse of the above?</description>
+    </item>
+    
+    <item>
+      <title>A Failure Resume</title>
+      <link>https://jzhao.xyz/posts/a-failure-resume/</link>
+      <pubDate>Fri, 21 Aug 2020 14:02:48 -0700</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/a-failure-resume/</guid>
+      <description>Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now.</description>
+    </item>
+    
+  </channel>
+</rss>
