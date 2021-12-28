@@ -11,7 +11,6 @@ if (lastVisit) {
   const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
   show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
 }
-console.log(show)
 document.documentElement.setAttribute('show-animation', show)
 localStorage.setItem('lastVisitTime', `${now}`)
 
