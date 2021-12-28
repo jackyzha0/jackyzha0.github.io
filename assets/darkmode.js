@@ -5,12 +5,14 @@ const currentTheme = localStorage.getItem('theme') ?? userPref
 const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 const lastVisit = localStorage.getItem('lastVisitTime')
 const now = Date.now()
+let show = 'true'
 if (lastVisit) {
+  document.documentElement.setAttribute('visited', 'true')
   const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
-  const show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
-  console.log(isReducedMotion, minElapsed, show)
-  document.documentElement.setAttribute('show-animation', show)
+  show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
 }
+console.log(show)
+document.documentElement.setAttribute('show-animation', show)
 localStorage.setItem('lastVisitTime', `${now}`)
 
 if (currentTheme) {

@@ -11,6 +11,14 @@
   100% {opacity:1;}
 }
 
+.return-only {
+  display: none;
+}
+
+[visited="true"] .return-only {
+  display: inline-block;
+}
+
 [show-animation="true"] .delay {
   animation: fadeIn ease 0.5s;
   opacity: 0;
