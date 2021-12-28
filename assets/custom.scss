@@ -8,7 +8,7 @@
   --primary: #e46262;
   --gray: #3a333d;
   --lightgray: #e3deda;
-  --outlinegray: #c9c3bd;
+  --outlinegray: #a8a39e;
 }
 
 ::selection, mark, :root::target-text {
@@ -22,18 +22,24 @@
   --secondary: #77a3a0 !important;
   --visited: #567d7b !important;
   --tertiary: #325452 !important;
-  --primary: #e46262 !important;
+  --primary: #bd6868 !important;
   --gray: #d4d4d4 !important;
   --lightgray: #4f473f !important;
-  --outlinegray: #38323b !important;
+  --outlinegray: #3b2842 !important;
 }
 
 .ascii {
   margin-bottom: 0;
   padding: 0;
+  white-space: pre;
+  font-weight: bold;
+  font-family: "JetBrains Mono";
 
   &.ascii-dark, .ascii-dark {
     color: var(--dark);
+  }
+  &.ascii-gray, .ascii-gray {
+    color: var(--outlinegray);
   }
   &.ascii-primary, .ascii-primary {
     color: var(--primary);
@@ -46,7 +52,7 @@
   }
 }
 
-.banner > pre {
+.banner {
   position: relative;
   overflow: hidden;
   width: 100%;

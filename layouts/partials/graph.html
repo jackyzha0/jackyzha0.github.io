@@ -214,7 +214,7 @@
   if (enableZoom) {
     svg.call(d3.zoom()
       .extent([[0, 0], [width, height]])
-      .scaleExtent([0.25, 4])
+      .scaleExtent([0.25, 2])
       .on("zoom", ({transform}) => {
         link.attr("transform", transform);
         node.attr("transform", transform);

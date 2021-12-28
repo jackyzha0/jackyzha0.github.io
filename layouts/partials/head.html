@@ -4,7 +4,18 @@
     <meta name="description" content="{{$.Site.Data.config.description}}">
     <title>{{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Data.config.page_title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
+
+    <!-- Social Tags -->
+    <meta property="og:url" content="https://jzhao.xyz" />
+    <meta property="og:title" content="{{ .Scratch.Get "title" }}" />
+    <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
+    <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@_jzhao">
+    <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+    <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
+    <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
 
     <!-- CSS Stylesheets and Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Spectral:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
