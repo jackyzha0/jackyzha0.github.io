@@ -12,6 +12,17 @@
       <div class="spacer"></div>
       {{partial "darkmode.html" .}}
   </header>
+    {{if in .Params.tags "seed" }}
+    {{partial "ascii/seed.html" .}}
+    {{else if in .Params.tags "sapling" }}
+    {{partial "ascii/sapling.html" .}}
+    {{else if in .Params.tags "evergreen" }}
+    {{partial "ascii/evergreen.html" .}}
+    {{else if in .Params.tags "fruit" }}
+    {{partial "ascii/fruit.html" .}}
+    {{else if in .Params.tags "unplanted" }}
+    {{partial "ascii/unplanted.html" .}}
+    {{end}}
     {{if .Title}}<h1 class="title">{{ .Title }}</h1>{{end}}
     <article>
       <p class="meta">

@@ -27,3 +27,21 @@
   --lightgray: #4f473f !important;
   --outlinegray: #38323b !important;
 }
+
+.ascii {
+  margin-bottom: 0;
+  padding: 0;
+
+  &.ascii-dark, .ascii-dark {
+    color: var(--dark);
+  }
+  &.ascii-primary, .ascii-primary {
+    color: var(--primary);
+  }
+  &.ascii-secondary, .ascii-secondary {
+    color: var(--secondary);
+  }
+  &.ascii-tertiary, .ascii-tertiary {
+    color: var(--tertiary);
+  }
+}
