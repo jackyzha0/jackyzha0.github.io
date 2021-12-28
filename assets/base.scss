@@ -11,7 +11,7 @@
   100% {opacity:1;}
 }
 
-.delay {
+[show-animation="true"] .delay {
   animation: fadeIn ease 0.5s;
   opacity: 0;
   animation-fill-mode: forwards;

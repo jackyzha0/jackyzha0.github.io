@@ -1,6 +1,18 @@
 const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
+// last visit animation calculations
+const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+const lastVisit = localStorage.getItem('lastVisitTime')
+const now = Date.now()
+if (lastVisit) {
+  const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+  const show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+  console.log(isReducedMotion, minElapsed, show)
+  document.documentElement.setAttribute('show-animation', show)
+}
+localStorage.setItem('lastVisitTime', `${now}`)
+
 if (currentTheme) {
   document.documentElement.setAttribute('saved-theme', currentTheme);
 }
