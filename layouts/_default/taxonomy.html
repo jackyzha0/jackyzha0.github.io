@@ -12,8 +12,8 @@
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
+    <h1>All {{.Title}}</h1>
     <article>
-        <h1>All {{.Title}}</h1>
         <div class="tags">
             {{ range .Site.Taxonomies.tags.ByCount }}
             <div class="meta">

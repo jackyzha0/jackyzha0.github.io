@@ -9,6 +9,7 @@
             <p class="meta">
                 {{ .ReadingTime }} minute read. Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
             </p>
+            {{partial "tags.html" .}}
         </div>
     </li>
     {{- end -}}

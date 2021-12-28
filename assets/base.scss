@@ -7,17 +7,29 @@
 }
 
 h1, h2, h3, h4, ol, ul, thead {
-  font-family: Inter;
+  font-family: "JetBrains Mono";
   color: var(--dark);
   font-weight: revert;
   margin: revert;
   padding: revert;
 }
 
-p, ul, text {
-  font-family: 'Source Sans Pro', sans-serif;
+article {
+  & h1, & h2, & h3, & h4, & h5 {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+
+  & p {
+    margin-bottom: 1.5em;
+  }
+}
+
+p, ul, text, li, ol {
+  font-family: 'Spectral', sans-serif;
   color: var(--gray);
   fill: var(--gray);
+  font-size: 1.1rem;
   font-weight: revert;
   margin: revert;
   padding: revert;
@@ -45,7 +57,7 @@ p, ul, text {
   }
 
   & > li::marker, & > li > ol > li::marker {
-    font-family: Source Sans Pro;
+    font-family: 'Spectral';
     font-weight: 700;
   }
 }
@@ -76,7 +88,7 @@ sup {
 }
 
 p, tbody, li {
-  font-family: Source Sans Pro;
+  font-family: Spectral;
   color: var(--gray);
   line-height: 1.5em;
 }
@@ -122,6 +134,7 @@ td, th {
 
     & a {
       background-color: transparent !important;
+      font-family: "JetBrains Mono";
     }
 
     & a[href$="#"] {
@@ -133,11 +146,40 @@ td, th {
 .section {
   & h3 > a {
     font-weight: 700;
-    font-family: Inter;
+    font-family: "JetBrains Mono";
     margin: 0;
   }
   & p {
-    margin-top: 0;
+    margin: 0.5em 0;
+  }
+}
+
+.tags {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+
+  & .meta {
+    & > h1 {
+      margin: 0;
+    }
+    & > p {
+      margin: 0;
+    }
+  }
+
+  & > li {
+    display: inline-block;
+  }
+  & > li > a {
+    border-radius: 8px;
+    border: var(--outlinegray) 1px solid;
+    padding: 0.1em 0.3em;
+    &::before {
+      content: "#";
+      margin-right: 0.3em;
+      color: var(--outlinegray);
+    }
   }
 }
 
@@ -147,36 +189,8 @@ article {
     opacity: 0.7;
   }
 
-  & > .tags {
-    list-style: none;
-    padding-left: 0;
-
-    & .meta {
-      & > h1 {
-        margin: 0;
-      }
-      & > p {
-        margin: 0;
-      }
-    }
-
-    & > li {
-      display: inline-block;
-    }
-    & > li > a {
-      border-radius: 8px;
-      border: var(--outlinegray) 1px solid;
-      padding: 0.2em 0.5em;
-      &::before {
-        content: "#";
-        margin-right: 0.3em;
-        color: var(--outlinegray);
-      }
-    }
-  }
-
   & a {
-    font-family: Source Sans Pro;
+    font-family: Spectral;
     font-weight: 600;
 
     // internal link
@@ -201,7 +215,7 @@ sup > a {
 }
 
 a {
-  font-family: Inter, sans-serif;
+  font-family: "JetBrains Mono", sans-serif;
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
@@ -214,14 +228,14 @@ a {
 }
 
 pre {
-  font-family: 'Fira Code';
+  font-family: 'JetBrains Mono';
   padding: 0.75em;
   border-radius: 3px;
   overflow-x: scroll;
 }
 
 code {
-  font-family: 'Fira Code';
+  font-family: 'JetBrains Mono';
   font-size: 0.85em;
   padding: 0.15em 0.3em;
   border-radius: 5px;
@@ -256,13 +270,25 @@ footer {
 }
 
 hr {
-  width: 25%;
-  margin: 4em auto;
-  height: 2px;
-  border-radius: 1px;
-  border-width: 0;
+  overflow: visible; /* For IE */
+  padding: 0;
+  margin: 5em auto;
+  border: none;
+  border-top: 1px solid var(--dark);
   color: var(--dark);
-  background-color: var(--dark);
+  text-align: center;
+  width: 40%;
+
+  &:after {
+    content: "* * *";
+    display: inline-block;
+    position: relative;
+    margin: -1em 0 0.5em;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    background: var(--light);
+    transform: translateY(-0.1em);
+  }
 }
 
 .singlePage {
@@ -384,7 +410,7 @@ header {
     & > input {
       box-sizing: border-box;
       padding: 0.5em 1em;
-      font-family: Inter, sans-serif;
+      font-family: "JetBrains Mono", sans-serif;
       color: var(--dark);
       font-size: 1.1em;
       border: 1px solid var(--outlinegray);
@@ -435,7 +461,7 @@ header {
 
         & .search-highlight {
           background-color: #afbfc966;
-          padding: 0.05em 0.2em;
+          padding: 0 0.2em;
           border-radius: 3px;
         }
       }
@@ -461,6 +487,39 @@ header {
 
     & .meta {
       opacity: 0.6;
+    }
+  }
+}
+
+.postLi {
+  margin: 1.5em 0;
+  list-style: none;
+
+  & .time {
+    font-family: "JetBrains Mono";
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .singlePost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & * {
+      margin: 0 auto;
+    }
+
+    & > .desc {
+      flex: 1;
+      & > * {
+        display: inline-block;
+      }
+    }
+
+    & > .meta {
+      margin-left: 2em !important;
     }
   }
 }

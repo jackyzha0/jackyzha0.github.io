@@ -12,17 +12,13 @@
       <div class="spacer"></div>
       {{partial "darkmode.html" .}}
   </header>
-  <article>
-      {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
+    {{if .Title}}<h1 class="title">{{ .Title }}</h1>{{end}}
+    <article>
       <p class="meta">
           Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
       </p>
-      <ul class="tags">
-          {{ range (.GetTerms "tags") }}
-          <li><a href="{{ .Permalink }}">{{ .LinkTitle | humanize }}</a></li>
-          {{ end }}
-      </ul>
-      {{if $.Site.Data.config.enableToc}}
+      {{partial "tags.html" .}}
+      {{if and ($.Site.Data.config.enableToc) (gt .WordCount 300)}}
       <aside class="mainTOC">
           <h3>Table of Contents</h3>
           {{ .TableOfContents }}

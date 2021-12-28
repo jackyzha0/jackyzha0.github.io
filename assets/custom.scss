@@ -1,24 +1,29 @@
 // Add your own CSS here!
 :root {
-  --light: #faf8f8;
-  --dark: #141021;
-  --secondary: #284b63;
-  --tertiary: #84a59d;
-  --visited: #afbfc9;
-  --primary: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #f0f0f0;
-  --outlinegray: #dadada;
+  --light: #f2e9e1;
+  --dark: #2f2235;
+  --secondary: #426b69;
+  --tertiary: #8db9b7;
+  --visited: #8db9b7;
+  --primary: #e46262;
+  --gray: #3a333d;
+  --lightgray: #e3deda;
+  --outlinegray: #c9c3bd;
+}
+
+::selection, mark, :root::target-text {
+  background: var(--tertiary);
+  background-color: var(--tertiary);
 }
 
 [saved-theme="dark"] {
-  --light: #1e1e21 !important;
-  --dark: #fbfffe !important;
-  --secondary: #6b879a !important;
-  --visited: #4a575e !important;
-  --tertiary: #84a59d !important;
-  --primary: #f58382 !important;
+  --light: #201624 !important;
+  --dark: #faede1 !important;
+  --secondary: #77a3a0 !important;
+  --visited: #567d7b !important;
+  --tertiary: #325452 !important;
+  --primary: #e46262 !important;
   --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
+  --lightgray: #4f473f !important;
+  --outlinegray: #38323b !important;
 }

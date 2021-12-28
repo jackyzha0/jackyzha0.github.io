@@ -12,10 +12,24 @@
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
-    <h1>Category: {{.Title | humanize}}</h1>
+    <h1>{{.Title}}</h1>
     <article>
-        {{partial "page-list.html" .Paginator.Pages}}
-        {{ template "_internal/pagination.html" . }}
+        {{range .Paginator.Pages }}
+        <li class="postLi">
+            <span class="time">{{ .Date.Format "2006-01-02" }}</span>
+            <div class="singlePost">
+                <div class="desc">
+                    <p><a class="postLink" href="{{ .Permalink }}?ref=home">
+                        {{- .Title -}}
+                    </a></p>
+                </div>
+                <p class="meta">
+                    {{ .ReadingTime }} minute read
+                </p>
+            </div>
+        </li>
+        {{end}}
+        {{ template "_internal/pagination.html" .}}
     </article>
     {{partial "contact.html" .}}
 </div>

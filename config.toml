@@ -1,6 +1,6 @@
-baseURL = "https://quartz.jzhao.xyz/"
+baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
-googleAnalytics = "G-XYFD95KB4J"
+googleAnalytics = "UA-148413215-1"
 pygmentsUseClasses = true
 relativeURLs = false
 disablePathToLower = true
@@ -8,7 +8,7 @@ ignoreFiles = [
     "/content/templates/*",
     "/content/private/*",
 ]
-summaryLength = 20
+summaryLength = 10
 paginate = 10
 enableGitInfo = true
 

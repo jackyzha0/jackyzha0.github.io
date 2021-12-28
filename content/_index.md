@@ -1,27 +1,21 @@
 ---
-title: "Home Page"
+title: "jzhao.xyz"
 ---
 
-Hi, I'm Jacky and welcome to my little digital garden! Here, I play with ideas through both code and words. Read more about my [non-work endeavours](/notwork) or my [failure resume](/posts/a-failure-resume).
+Hello there, traveller of the web. You must be tired.
 
-I'm still trying to figure out what I really want to do with my life but 3 things that are fascinating to me right now are cognitive systems, ethical tech, and infrastructure. You can find more about what I'm thinking about on my [second brain](/toc/directory).
+Why don't you enjoy a cup of calming Jasmine tea?
 
-I strongly believe that **code can't abstract responsibility away from problems**. I spend a lot of time thinking about how to improve hackathon culture as a part of [nwPlus](https://www.nwplus.io/) and how to use technology ethically to make our world better with [Reboot](https://twitter.com/reboot_hq/) and [Interact](https://twitter.com/joininteract).
+Welcome to my little island on the internet -- I'm Jacky! I spend a lot of time here cultivating and building things I find interesting. This is my personal [digital garden](posts/networked-thought.md) and [organizing system](thoughts/organizing%20system.md) of sorts. It might be a bit messy in here, but that's the dash of [chaos](thoughts/bandwidth.md) I thrive on.
 
-I'm working towards being a person who is [unabashedly excited about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun) and enables others to be the best versions of themselves. If anything in here piques your interest, let's find a time to chat! It's a magical world out there, it'd be a shame to explore it alone.
+I love playing, tinkering, and making out in the open. I've built a number of open-source [projects](thoughts/Projects.md) over the past few years focused around tooling and [infrastructure](thoughts/infrastructure.md). I'm curious about how to better incentivize [public goods](thoughts/public%20goods.md) [funding](thoughts/funding.md), support better [interactions](thoughts/interaction%20design.md) with computers, and be a more responsible steward of technology.
 
-## Intro
-A personal [digital garden](posts/digital-gardening.md) and [organizing system](thoughts/organizing%20system.md) for all my ramblings and thoughts.
+I'm working towards being a person who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun). If anything in here piques your interest, let's find a time to chat! It's a magical world out there and it'd be a shame to explore it alone.
 
-> [A library without an index](https://www.theatlantic.com/technology/archive/2016/06/knowledge-compendia/485507/) becomes paradoxically [less informative](https://en.wikipedia.org/wiki/The_Library_of_Babel) as it grows. -- Jorge Luis Borges
+A few links for your consideration:
+- [Things I've been thinking about](/posts)
+* [Things I've tinkered with](thoughts/Projects.md)
+- [Places I've worked at](thoughts/Experience.md)
+* [Things that didn't quite turn out right](posts/a-failure-resume.md)
 
-You can search my entire garden by pressing `/` or hitting the little search icon in the top left.
-
-## Categories
-1. unplanted
-2. seed
-3. sapling: thoughts + concepts
-4. fruit
-5. evergreen: consistently revised
-	1. project list
-	2. failure resume
+Enjoy your time here, feel free to stay as long as you'd like and I hope to see you around!

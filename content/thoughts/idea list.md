@@ -3,6 +3,7 @@ title: "Project Idea List"
 date: 2021-06-17T00:33:42-04:00
 tags:
 - evergreen
+- technical
 ---
 
 ## Ideas

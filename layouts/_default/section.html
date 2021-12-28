@@ -12,8 +12,8 @@
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
+    <h1>{{.Title}}</h1>
     <article>
-        <h1>All {{.Title}}</h1>
         {{partial "page-list.html" .Paginator.Pages.ByLastmod.Reverse }}
         {{ template "_internal/pagination.html" .}}
     </article>
