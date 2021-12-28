@@ -2,6 +2,8 @@
 title: "Spider-man neurons, hearing fractals, and fulfilment"
 date: 2021-02-01T13:43:34-08:00
 issueNum: 2
+tags:
+- fruit
 ---
 
 I can't believe we're approaching a time of year when I can wait until *after* dinner to turn on my desk light. In the almost two months since my last newsletter, I've been doing a lot of [reading](/books), having 1:1s with some pretty rad people, [learning Rust](https://github.com/jackyzha0/rs-openai/), and of course surviving school. Surviving, in this case, is a questionable word choice.

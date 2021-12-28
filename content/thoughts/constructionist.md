@@ -1,6 +1,8 @@
 ---
 title: "Constructionism"
 date: 2021-12-25
+tags:
+- seed
 ---
 
 ## [Mindstorms](thoughts/Mindstorms.md)

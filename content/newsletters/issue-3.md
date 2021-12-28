@@ -2,6 +2,8 @@
 title: "Sun sneezing, infrastructure moderation, and why bikes are better than tricycles"
 date: 2021-04-20T13:43:34-08:00
 issueNum: 3
+tags:
+- fruit
 ---
 
 Hello there and welcome back to another issue of some mildly coherent ramblings. It's been yet another couple busy weeks, but I've just wrapped up my second decade on this crazy planet! I have a lot of really exciting life updates that I want to share with all of you soon, but without further ado: the content you subscribed for.

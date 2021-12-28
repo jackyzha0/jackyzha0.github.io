@@ -2,6 +2,8 @@
 title: "A request for coffee chats"
 date: 2021-01-31T13:43:34-08:00
 issueNum: 1
+tags:
+- fruit
 ---
 
 This month of January went by with blazing speed. I can't say if it's because of school starting back up or just the massive amounts of s t u f f going on in the world right now. 

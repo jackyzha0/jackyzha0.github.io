@@ -2,7 +2,7 @@
 title: "A Tale for the Time Being"
 date: 2021-12-21
 tags:
-- unplanted
+- sapling
 ---
 
 the amount of depth being slowly unravelled over time is astounding

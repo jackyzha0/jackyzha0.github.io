@@ -2,6 +2,8 @@
 title: "The bookstore with a single book, knowledge distillation, and tight feedback loops"
 date: 2021-06-04T13:43:34-08:00
 issueNum: 4
+tags:
+- fruit
 ---
 
 I am writing this newsletter edition as NYC is being bombarded by hail. The sounds of little balls of ice ricocheting off of the roof has a sort of din to it that feels oddly comforting? In any case, your (bi) monthly dose of links from yours truly:
