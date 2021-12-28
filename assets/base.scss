@@ -6,6 +6,43 @@
   --lt-colours-gray: var(--outlinegray) !important;
 }
 
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.delay {
+  animation: fadeIn ease 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &.t-1 {
+    animation-delay: 0.5s;
+  }
+
+  &.t-2 {
+    animation-delay: 0.9s;
+  }
+
+  &.t-3 {
+    animation-delay: 2s;
+  }
+
+  &.t-4 {
+    animation-delay: 2.2s;
+  }
+
+  @for $i from 1 through 10 {
+  &.stagger > *:nth-child(#{$i}) {
+    animation: fadeIn ease 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: #{$i * .08 + 2.2}s;
+  }
+  }
+}
+
+
 h1, h2, h3, h4, ol, ul, thead {
   font-family: "JetBrains Mono";
   color: var(--dark);
