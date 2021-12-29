@@ -43,7 +43,7 @@ We naturally group things into patterns and chunks and allow us to think on and 
 
 This was demonstrated by chess masters in the 1970's: "Players learn to recognize somewhere between 25,000 and 100,000 **patterns of chess pieces**. These much more elaborate 'chunks' are combinations of pieces that the players **perceive as a unity**, and are able to reason about at a higher level of abstraction than the individual pieces"
 
-Is it possible to automatically pick up repeated digital desire paths of user trails and pull them into [workflows](thoughts/workflows.md)? take advantage of natural spaced repetition to identify saliency
+Is it possible to automatically pick up repeated digital [desire paths](thoughts/desire%20paths.md) of user trails and pull them into [workflows](thoughts/workflows.md)? take advantage of natural spaced repetition to identify saliency
 
 The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a context with other concepts.
 

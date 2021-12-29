@@ -20,7 +20,7 @@ The fundamental engine of development of this field of information professi
 3 information flow lineages through the history of life on Earth
 1. Genetic, information about the history of life on Earth is literally encoded in your DNA
 2. Neural-cultural, information is passed down between generations through language, storytelling, and sharing
-3. Exosomatic, information is embedded into the world around us through writing, digital systems, desire paths, etc.
+3. Exosomatic, information is embedded into the world around us through writing, digital systems, [desire paths](thoughts/desire%20paths.md), etc.
 4. Residue, trace/abandoned information degrading back into nature
 
 > The storage and management of exosomatic information was one of the major contributors to the exponential growth of human knowledge and power over nature.

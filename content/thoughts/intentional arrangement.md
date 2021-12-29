@@ -13,7 +13,7 @@ The intentional arrangements of resources in an [organizing system](thoughts/org
 
 Can be created by top-down authoritative institutions like libraries, museums, businesses, and governments or bottom-up self-organizing systems composed of aggregated interactions of actors with resource or with each other.
 
-Examples of emergent organization are desire paths, swarm intelligence in local interactions (e.g. ants, bees, fish, etc.), or crowdsourcing. rel: [emergent behaviour](thoughts/emergent%20behaviour.md)
+Examples of emergent organization are [desire paths](thoughts/desire%20paths.md), swarm intelligence in local interactions (e.g. ants, bees, fish, etc.), or crowdsourcing. rel: [emergent behaviour](thoughts/emergent%20behaviour.md)
 
 Similarly, Adam Smith's "invisible hand" is another example where individuals collectively generate an outcome they did not directly intend but that arose from their separate self-interested actions as they respond to price signals in the marketplace. This is the basis of a lot of multi-agent system reasoning and economics.
 

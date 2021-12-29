@@ -58,5 +58,5 @@ Sidewalk feels like a city trying to [label and quantize everything](thoughts/qu
 
 [These maps and markers], while useful and actionable, tended to "reduce complex life stories and neighborhood histories to 'dots on a map.'"
 
-Data as [digital desire paths?](https://en.wikipedia.org/wiki/Desire_path) Not sure how I feel about 'anonymized' or 'de-contextualized' data, stripping down and de-contextualizing opinions (e.g. post-it notes) removes important context and nuance.
+Data as digital [desire paths](thoughts/desire%20paths.md)? Not sure how I feel about 'anonymized' or 'de-contextualized' data, stripping down and de-contextualizing opinions (e.g. post-it notes) removes important context and nuance.
 
