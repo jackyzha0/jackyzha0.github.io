@@ -47,7 +47,7 @@ Hard infrastructure refers to hard rules and goods (e.g. parks, laws, highways, 
 Soft infrastructure is upheld as a social protocol, an institution whose maintenance relies on dedication and value alignment. More closely related to [social contracts](thoughts/social%20contracts.md)
 
 ## Moderation
-[Source]
+[Source](https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/)
 
 > "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 

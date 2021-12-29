@@ -26,7 +26,7 @@ If the same apple sends two very different signals to two different people's bra
 
 Not sure if there's any way to easily do this
 
-## Nonsemantic Information
+## Non-semantic Information
 "[the] shadows, wind, rust, in the signs of wear on a well-trodden staircase, the creaks of a battered bridge — all the indexical messages of our material environments" From [A city is not a computer](thoughts/A%20City%20is%20not%20a%20Computer.md)
 
 ## Concepts
@@ -34,9 +34,9 @@ Not sure if there's any way to easily do this
 * McNamara Fallacy: Also known as the quantitative fallacy: making a decision involving purely quantitative observations (ignoring all others) is often wrong. [Source](https://en.wikipedia.org/wiki/McNamara_fallacy)
 
 ## Are labels helpful? 
-In a data-driven world, can we and should we try to quantize everything? What about inherently human qualities like emotions or personality?
+In a data-driven world, can we and should we try to quantize everything?
 
-some metrics that are inherently v difficult to quantize (e.g. quality of engagement) and others that are more easy to quantize and thus optimize for (like engagement)
+Some metrics that are inherently v difficult to quantize (e.g. quality of engagement) and others that are more easy to quantize and thus optimize for (like engagement)
 
 ## On Algorithmic decision making
 [Source](https://outline.com/5H8EEy)

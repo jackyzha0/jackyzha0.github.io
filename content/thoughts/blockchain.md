@@ -55,7 +55,7 @@ Also just leans heavily in the direction of [digital permanence](thoughts/digita
 The goal is to build a single, shared story of reality, spread across all the machines simultaneously. And when it changes in one place, it changes everywhere.
 
 ### Thoughts
-The part about no more 'storing stuff' and 'sending stuff' I always find interesting because 'storing' stuff still happens to be on the public ledger. The only difference now is that there is a distinction between sending metadata (which you tell someone to just refer to a piece of data on chain) and sending information (transfering ownership).
+The part about no more 'storing stuff' and 'sending stuff' I always find interesting because 'storing' stuff still happens to be on the public ledger. The only difference now is that there is a distinction between sending metadata (which you tell someone to just refer to a piece of data on chain) and sending information (transferring ownership).
 
 Waiting for the day web3 projects get large enough to amortize and offset the gas fees that consumers pay now (much like centralized orgs nowadays front hosting costs for 'free' tier or the average consumer).
 

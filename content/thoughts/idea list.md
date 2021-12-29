@@ -34,24 +34,6 @@ tags:
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
 - (no clue if this would work) integral images but applied to vector similarity search in text documents
 	- viola-jones for text embeddings
-* Website revamp (again)
-	- make graph absolute on side
-	- killing the spinny text
-	- merge garden index with main page
-	- add content type distinctions and make notes more atomic
-	- rewrite interests section (add images!)
-	- include talks + presentations!
-	- add feed of most recent digital garden bits
-		- git blame style of when each line was added
-	- separate employment + projects stuff into subpage
-		- make projects a folder and each entry is a file
-	- digital gardening
-		- separate sources from thoughts
-		- rename concepts to be more atomic
-	- ideas
-		- ascii art heavy, serif style
-		- initial only show a hello in a body paragraph and fade in rest of site
-		- card previews for links
 * web3 action-space exploration
 	* Possible referents/verses extension?
 	- chain crawlers indexing smart contracts → creating logical relations

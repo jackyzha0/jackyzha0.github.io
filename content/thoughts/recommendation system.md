@@ -18,7 +18,7 @@ Temporarily taking off the veil of abstraction and seeing them for what they rea
 
 "Successful companies like Facebook have become successful, Eyal writes, by becoming ‘first-to-mind’: their users ‘feel a pang of loneliness and before rational thought occurs, they are scrolling through their Facebook feeds’... We can use 'captology' to designate this understanding of people in behaviourism inflected terms, as habitual minds with tendencies and compulsions that make them susceptible to persuasion and targets for capture."
 
-Optimization metrics
+Optimization metrics (see [quantization](thoughts/quantization.md))
 1. RMSE (root mean squared error) - how accurate the recommender systems were
 	1. RMSE just doesn't work up to a point because user preferences are inherently unstable or 'noisy' signals. These vary significantly with time/setting and posed a serious challenge to predictive accuracy
 2. Transitioned to 'captivation metrics' - ability of a system to capture user [attention](thoughts/attention%20economy.md) or 'engagement'
