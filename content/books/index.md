@@ -28,11 +28,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 
 ## Current
-* [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 
 ## Past
 ### 2021
+* [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
 * [**A Tale for the Time Being**](thoughts/A%20Tale%20for%20the%20Time%20Being.md) by Ruth Ozeki
 * [**Atlas of AI**](thoughts/Atlas%20of%20AI.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro

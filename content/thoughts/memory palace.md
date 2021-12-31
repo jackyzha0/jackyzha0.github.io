@@ -16,6 +16,7 @@ Can we create associations between digital/physical space and concept space? Cre
 Related to better [interaction design](thoughts/interaction%20design.md)
 
 Creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.)
+- can we create skimmable views on data? see https://twitter.com/kirkbyo_/status/1475523898238197771
 
 Create a spatially-anchored overview of the different 'branches' of knowledge
 

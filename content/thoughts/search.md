@@ -96,3 +96,10 @@ Metzler and his colleagues are interested in a search engine that behaves like a
 They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.
 
 "Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil) 
+
+## Internet topology as shaped by search engines
+[Source](https://louisedrulhe.fr/internet-atlas/)
+
+![](/thoughts/images/search%20engine%20space.png)*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
+
+Search engines create an embedding space for the world that maps from physical to digital. Page ranking is the function that maps and remaps the 'location' and relatedness of real concepts.

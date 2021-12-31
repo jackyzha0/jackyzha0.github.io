@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+![](/thoughts/images/the%20persistence%20of%20memory.png)
+
 the amount of depth being slowly unravelled over time is astounding
 
 i think tale for the time being has really got me thinking about time and time differences
