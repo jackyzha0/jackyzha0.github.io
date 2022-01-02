@@ -1,6 +1,8 @@
 ---
 title: "Desire path"
 date: 2021-12-29
+tags:
+- seed
 ---
 
 > The path usually represents the shortest or most easily navigated route between an origin and destination. The width and severity of erosion are often indicators of the traffic level that a path receives. Desire paths emerge as shortcuts where constructed paths take a circuitous route, have gaps, or are non-existent.
