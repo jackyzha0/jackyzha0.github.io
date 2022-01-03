@@ -263,6 +263,7 @@ article {
   transition: opacity 0.2s ease, transform 0.2s ease;
   transition-delay: 0.3s;
   text-align: left;
+  user-select: none;
 
   &.visible {
     opacity: 1;
