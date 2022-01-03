@@ -251,7 +251,7 @@ article {
 .popover {
   z-index: 999;
   position: absolute;
-  width: 15em;
+  width: 17em;
   display: inline;
   background-color: var(--light);
   padding: 1em;
@@ -262,6 +262,7 @@ article {
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
   transition-delay: 0.3s;
+  text-align: left;
 
   &.visible {
     opacity: 1;
@@ -269,13 +270,20 @@ article {
   }
 
   & > h3 {
-    margin: 0.5em 0;
+    font-size: 1rem;
+    margin: 0.25em 0;
+  }
+
+  & > .meta {
+    margin-top: 0.25em;
+    opacity: 0.5;
   }
 
   & > p {
     margin: 0;
     font-weight: 400;
   }
+}
 
 .backlinks a {
   font-weight: 600;
