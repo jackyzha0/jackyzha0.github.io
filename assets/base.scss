@@ -238,8 +238,7 @@ article {
     font-family: Spectral;
     font-weight: 600;
 
-    // internal link
-    &[href^="./"], &[href^="/"] {
+    &.internal-link {
       text-decoration: none;
       background-color: transparentize(#8f9fa9, 0.85);
       padding: 0 0.1em;
@@ -248,6 +247,35 @@ article {
     }
   }
 }
+
+.popover {
+  z-index: 999;
+  position: absolute;
+  width: 15em;
+  display: inline;
+  background-color: var(--light);
+  padding: 1em;
+  border: 1px solid var(--outlinegray);
+  border-radius: 5px;
+  transform: translate(-50%, 40%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition-delay: 0.3s;
+
+  &.visible {
+    opacity: 1;
+    transform: translate(-50%, 20%);
+  }
+
+  & > h3 {
+    margin: 0.5em 0;
+  }
+
+  & > p {
+    margin: 0;
+    font-weight: 400;
+  }
 
 .backlinks a {
   font-weight: 600;
@@ -347,6 +375,7 @@ hr {
 .page-end {
   display: flex;
   flex-direction: row;
+  gap: 2em;
 
   @media all and (max-width: 780px) {
     flex-direction: column;
@@ -360,7 +389,6 @@ hr {
     & > ul {
       list-style: none;
       padding-left: 0;
-      margin-right: 2em;
 
       & > li {
         margin: 0.5em 0;
