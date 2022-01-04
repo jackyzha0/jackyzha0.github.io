@@ -27,25 +27,22 @@
   animation: fadeIn ease 0.5s;
   opacity: 0;
   animation-fill-mode: forwards;
+  z-index: 0;
 
   &.t-1 {
     animation-delay: 0.5s;
-    z-index: -1;
   }
 
   &.t-2 {
     animation-delay: 0.9s;
-    z-index: -2;
   }
 
   &.t-3 {
     animation-delay: 2s;
-    z-index: -3;
   }
 
   &.t-4 {
     animation-delay: 2.2s;
-    z-index: -4;
   }
 
   @for $i from 1 through 10 {
