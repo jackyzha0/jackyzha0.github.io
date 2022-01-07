@@ -7,6 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Aperture Problem</title>
+      <link>https://jzhao.xyz/thoughts/aperture-problem/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/aperture-problem/</guid>
+      <description>Aperture Problem in Computer Vision  Without distinct features to track, the true visual motion is ambiguous Locally, one can compute only the component of the visual motion in the direction perpendicular to the contour  In relation to the internet: our browsing is also very static and in a small window.</description>
+    </item>
+    
+    <item>
+      <title>Information Scales</title>
+      <link>https://jzhao.xyz/thoughts/information-scales/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/information-scales/</guid>
+      <description>Creating a browsable store of knowledge that provides something useful at all distance scales (e.</description>
+    </item>
+    
+    <item>
+      <title>Mangrove Theory of the Internet</title>
+      <link>https://jzhao.xyz/thoughts/Mangrove-Theory-of-the-Internet/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Mangrove-Theory-of-the-Internet/</guid>
+      <description>Tools for Communication  Source
+Related: tools for digital commons</description>
+    </item>
+    
+    <item>
       <title>A Letter to my Past and Future selves</title>
       <link>https://jzhao.xyz/thoughts/2021/</link>
       <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
@@ -1209,7 +1237,7 @@ An immutable, digital, distributed ledger that connects a decentralized network.
       <pubDate>Tue, 21 Sep 2021 09:51:49 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/intentionality/</guid>
-      <description>intentionality is derived  Chinese room argument example tries to show that even programming something with intentionality (a person) with a format program, that formal program carries no additional intentionality How does intention change with time?</description>
+      <description>intentionality is derived  same reason why computer-generated art or AI-assisted writing would not be considered &amp;lsquo;novel&amp;rsquo; or &amp;lsquo;intelligent&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -1929,7 +1957,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Ideas  website inspo  https://victoiredouy.com/about https://shapefarm.net/ https://chartogne-taillet.com/en https://flowersforsociety.com/   AR + Magic Leap for 3D sculpting LayoutLM + screenshots → auto-categorization of knowledge  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk   Reverse of the above?</description>
+      <description>Ideas  LRU blockchain  RBAC blockchain??? groups of roles mutability in a window permanence outside of it edit only the last message you send   recaptcha model for moderation / proof of humanity library of decentralized data structures website inspo  https://victoiredouy.</description>
     </item>
     
     <item>
