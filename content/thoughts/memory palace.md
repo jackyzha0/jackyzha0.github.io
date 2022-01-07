@@ -13,12 +13,7 @@ Can we create associations between digital/physical space and concept space? Cre
 ## Better ways to browse/discover ideas and concepts
 [More from Bret Victor and DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf)
 
-Related to better [interaction design](thoughts/interaction%20design.md)
-
-Creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.)
-- can we create skimmable views on data? see https://twitter.com/kirkbyo_/status/1475523898238197771
-
-Create a spatially-anchored overview of the different 'branches' of knowledge
+Related to better [interaction design](thoughts/interaction%20design.md). How do we better browse [information at different scales](thoughts/information%20scales.md)
 
 Material is dynamic and multi-medium
 

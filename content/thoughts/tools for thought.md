@@ -15,6 +15,11 @@ Questions:
 
 Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching
 
+## Word Charcuterie Board
+Is there any way to rearrange the fuzzy cloud of ideas in our head easily on paper/screens?
+
+How can we 'cut' text without being afraid of it being lost forever? Even with tools like the undo button and Git revision history, the actions of the past are by default hidden. Time is not first class.
+
 ## On memory
 > If a tree fell and nobody remembered, did it really happen?
 

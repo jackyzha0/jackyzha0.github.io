@@ -9,9 +9,7 @@ Determine how objects (and/or the camera itself) move in the 3D world
 
 Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)
 
-### Aperture Problem
-- Without distinct features to track, the true visual motion is ambiguous
-- Locally, one can compute only the component of the visual motion in the direction perpendicular to the contour
+See also: [aperture problem](thoughts/aperture%20problem.md)
 
 ### Constraint Equation
 Let image intensity be denoted by $I(x,y,t)$. Then, applying chain rule, we obtain $\frac{dI(x,y,t)}{dt} = I_x\frac{dx}{dt} + I_y\frac{dy}{dt} + I_t$.
