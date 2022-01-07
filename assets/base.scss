@@ -6,6 +6,10 @@
   --lt-colours-gray: var(--outlinegray) !important;
 }
 
+body {
+  position: relative;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

@@ -9,6 +9,7 @@ I love playing, tinkering, and building out in the open. I've built a number of 
 I'm working towards being a person who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun). If anything in here piques your interest, let's find a time to chat! It's a magical world out there and it'd be a shame to explore it alone.
 
 A few link-gifts for you before you leave:
+- [Things I've been writing about](/posts)
 * [Things I've tinkered with](thoughts/Projects.md)
 - [Places I've worked at](thoughts/Experience.md)
 * [Things that didn't quite turn out right](posts/a-failure-resume.md)

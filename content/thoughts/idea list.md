@@ -7,6 +7,14 @@ tags:
 ---
 
 ## Ideas
+-   LRU blockchain
+	-   RBAC blockchain???
+	-   groups of roles
+	-   mutability in a window
+	-   permanence outside of it
+	-   edit only the last message you send
+-   recaptcha model for moderation / proof of humanity
+-   library of decentralized data structures
 -  website inspo
 	- https://victoiredouy.com/about
 	- https://shapefarm.net/
@@ -246,27 +254,13 @@ it("works", () => {
 ```js
 // fizzbuzz.cl
 range(0, 100)
-	-> n => match [n % 3, n % 5] {
+	-> n => match (n % 3, n % 5) {
 		(0, 0): "FizzBuzz"
 		(0, _): "Fizz"
 		(_, 0): "Buzz"
 		(_, _): `{n}`
 	}
 	-> each(print)
-```
-
-#### Array Programming
-```js
-// array programming
-a = [2, 2, 2, 2, 2]::Int[5]	// anotate list type and size
-b = range(0, 6)::Int[5]
-
-c = a * b // [0, 2, 4, 6, 8, 10], still type Int[5]
-
-d = [[0, 1], [2, 3]]::Int[2][2] // can annotate 2d sizes matrix
-f = d * c // will fail because Int[2][2] cannot be multiplied by Int[5]
-
-// will try to expand to tensor operations maybe?? having a good library for this to solve dimension mismatches would be so cool
 ```
 
 * Multi-level blogs
