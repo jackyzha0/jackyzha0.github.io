@@ -13,6 +13,8 @@ Crypto systems are interesting, they are "decentralized, jurisdictionless entiti
 
 The cyberpunk spirit: the basic property of which adversarial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
+Of course, this is not perfect technology. I do have a few [hesitations/critiques](thoughts/web3%20critique.md) on it as well.
+
 ## Index
 - [Blockchain](thoughts/blockchain.md)
 - [Decentralization](thoughts/decentralization.md)

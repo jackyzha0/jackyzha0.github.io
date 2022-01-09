@@ -39,7 +39,7 @@ tags:
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - Discord bot for interacting with DAOs
 - aws for web3
-- tool to [interopability](thoughts/interopability.md) between different graph representations
+- tool to [interoperability](thoughts/interoperability.md) between different graph representations
 	-   e.g. Notion to Roam to Obsidian
 	-   CommonGraph??
 - on-chain oracles for integrating real world information
@@ -69,7 +69,7 @@ tags:
 		* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
 	* good global search
 		* being able to index content fast and effectively
-	* [interopability](thoughts/interopability.md), of data, easy export
+	* [interoperability](thoughts/interoperability.md), of data, easy export
 * Long Term Archival Storage Service
 	- Why is storage expensive lmao
 	- What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can

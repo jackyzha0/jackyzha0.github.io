@@ -17,7 +17,7 @@ Examples of emergent organization are [desire paths](thoughts/desire%20paths.md)
 
 Similarly, Adam Smith's "invisible hand" is another example where individuals collectively generate an outcome they did not directly intend but that arose from their separate self-interested actions as they respond to price signals in the marketplace. This is the basis of a lot of multi-agent system reasoning and economics.
 
-Standardization allows [interopability](thoughts/interopability.md) -- especially necessary for information systems that serve many people. No two people organize things the same way. No two people have the same requirements for the same information system.
+Standardization allows [interoperability](thoughts/interoperability.md) -- especially necessary for information systems that serve many people. No two people organize things the same way. No two people have the same requirements for the same information system.
 
 Design questions/dimensional perspectives on the design of [organizing systems](thoughts/organizing%20system.md)
 
