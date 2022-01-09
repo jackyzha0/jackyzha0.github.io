@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web3 Critique</title>
+      <link>https://jzhao.xyz/thoughts/web3-critique/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/web3-critique/</guid>
+      <description>Really good piece by Moxie on web3.
+ Web3 lacks infrastructure  By definition, infrastructure does not need to be rebuilt every time they are used.</description>
+    </item>
+    
     <item>
       <title>Aperture Problem</title>
       <link>https://jzhao.xyz/thoughts/aperture-problem/</link>
@@ -695,10 +705,10 @@ Why are we more ourselves in small group chats than our posts?</description>
     
     <item>
       <title>Interopability</title>
-      <link>https://jzhao.xyz/thoughts/interopability/</link>
+      <link>https://jzhao.xyz/thoughts/interoperability/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/interopability/</guid>
+      <guid>https://jzhao.xyz/thoughts/interoperability/</guid>
       <description>Portability implies switching platforms, but true interoperability is platform-agnostic.</description>
     </item>
     
