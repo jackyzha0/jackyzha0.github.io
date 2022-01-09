@@ -9,13 +9,18 @@ Uses 'stake' tokens to earn the right to become a validator of the blockchain. U
 
 The stake is a financial motivator for users not to validate or create fraudulent transactions (i.e. if you care about the chain, you should hope that members of the chain are also honest, mutual [trust](thoughts/trust.md)) 
 
+This validation is known as attesting. You can think of attesting as saying "this block looks good to me." If you attest to malicious blocks, you lose your stake. 128 validators are required to attest to a block to achieve finality on it -- this 128 is known as the committee. The committee works on 32 blocks or 'slots' before disbanding -- this duration is known as an epoch.
+
 [Source](https://eth.wiki/en/concepts/proof-of-stake-faqs)
 
 TLDR; a set of validators take turns proposing and voting on the next block, and the weight of each validator’s vote depends on the size of its deposit (i.e. stake)
 
 One of the alternatives to [PoW](thoughts/proof%20of%20work.md)
 
-> Security comes from putting up economic value-at-loss rather than straight up burning energy
+> Security comes from putting up economic value-at-loss rather than straight up burning energy (however, this doesn't take into account collusion)
+
+## Losing Stake
+For example, a user can lose a portion of their stake for things like going offline (failing to validate) or their entire stake for deliberate collusion.
 
 ## Disadvantages
 - Greater chance of [51% attacks](thoughts/fault%20tolerance.md)
