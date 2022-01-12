@@ -1,6 +1,8 @@
 ---
 title: "Information Scales"
 date: 2022-01-07
+tags:
+- sapling
 ---
 
 Creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.)

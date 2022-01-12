@@ -1,6 +1,8 @@
 ---
 title: "Aperture Problem"
 date: 2022-01-07
+tags:
+- sapling
 ---
 
 ### Aperture Problem in [Computer Vision](thoughts/computer%20vision.md)

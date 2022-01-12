@@ -1,6 +1,8 @@
 ---
 title: "Web3 Critique"
 date: 2022-01-08
+tags:
+- sapling
 ---
 
 Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-impressions.html?curius=1294).

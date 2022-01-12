@@ -1,6 +1,8 @@
 ---
 title: "Mangrove Theory of the Internet"
 date: 2022-01-07
+tags:
+- sapling
 ---
 
 ## Tools for Communication
