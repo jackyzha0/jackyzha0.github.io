@@ -5,6 +5,7 @@ tags:
 - sapling
 ---
 
+- intentions exhibit cognitive inertia ([self-trust](thoughts/trust.md))
 -  intentionality is derived
 	- same reason why computer-generated art or AI-assisted writing would not be considered 'novel' or 'intelligent'. The intentionality of the user is what gets injected.
 	- These tool-assisted generation of artifacts are no more different than fancier pens and paint brushes.

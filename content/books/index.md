@@ -26,6 +26,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Disappearance of Rituals** by Byung-Chul Han
 * **Postmortems** by Raph Koster
 * **Where Is My Flying Car?** by J. Storrs Hall
+* **Games: Agency as Art** by C Thi Nguyen
 
 ## Current
 * **Ghost Work** by Mary L. Gray and Siddharth Suri

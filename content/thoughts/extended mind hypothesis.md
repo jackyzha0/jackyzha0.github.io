@@ -19,6 +19,9 @@ tags:
 		-   thus, ants lay scent trails between nest and food source
 - humans partake in [generational learning](thoughts/generational%20learning.md)
 
+## Agential Gullibility
+In which we too readily bolt external processes onto our own agency. To rephrase, to rely too heavily on the external faculties and [trust](thoughts/trust.md) in them blindly and fully.
+
 ##  Otto — the man who lost his memory
 -   clark and chalmers (extended mind) argued that information in his notebook should be amongst Otto's memories
 	-   parity principle
