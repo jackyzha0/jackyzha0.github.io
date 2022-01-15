@@ -17,7 +17,7 @@ Building tools for others usually means the creator builds for their own workflo
 
 tools you build yourself can grow and change as your workflow changes over time: less of a sense of [digital permanence](thoughts/digital%20permanence.md)
 
-Are our tools extensions of who we are? At what point does it just become a part of our mind? Relevant: [the extended mind hypothesis](thoughts/Extended%20mind%20Hypothesis.md)
+Are our tools extensions of who we are? At what point does it just become a part of our mind? Relevant: [the extended mind hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
 
 Can we kill the [desktop metaphor](thoughts/desktop%20metaphor.md)?
 

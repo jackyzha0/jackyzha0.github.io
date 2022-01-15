@@ -28,7 +28,7 @@ So many historically 'truthful' sources like the Church and classical science we
 
 Skepticism as the taproot of all knowledge, heavily [Cartesian](thoughts/virtual%20worlds.md)
 
-However, writing, the printing press, and other tools allowed us to [extend our mind](thoughts/Extended%20mind%20Hypothesis.md) and conceive of knowledge as **cumulative**.
+However, writing, the printing press, and other tools allowed us to [extend our mind](thoughts/Extended%20Mind%20Hypothesis.md) and conceive of knowledge as **cumulative**.
 
 ## Progress Studies
 The study of the *how* and *why* of progress.

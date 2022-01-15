@@ -58,7 +58,7 @@ Hawley's definition of trust is that "to trust somebody is to take them to have 
 ### Non-agent based theories
 Yet all of these theories share the presumption of agent-directedness or [intentionality](thoughts/intentionality.md).
 
-Related, [agential gullibility and the Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md)
+Related, [agential gullibility and the Extended mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
 
 > "The veteran also suffers from a problem of trust, a building block on which all of social life is erected. The everyday, taken-for-granted reality of civilian life ignores much; civility assumes the nonlethal intentions of others. In war, however, all such assumptions evaporate: one cannot trust the ground one walks on, the air one breathes, nor can one expect with full assuredness that tomorrow will come again." (Kearl 1989, 353)
 > ...

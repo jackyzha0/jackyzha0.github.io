@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-Related: [Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)
+Related: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)
 
 Questions:
 1. How can we create tools that aid our thinking?

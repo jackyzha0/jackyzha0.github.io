@@ -12,7 +12,7 @@ Moving the focus away from 'problematic users and data' to search architecture i
 
 These search results influence the values that surround what is being searched for. This means that minority groups often have their own values and identities influenced by the majority: [double-consciousness](thoughts/collections.md)
 
-Why have we become so reliant on search? Is it a part of our [Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md)?
+Why have we become so reliant on search? Is it a part of our [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)?
 
 > [Search](thoughts/search.md) is a symbiotic process that both informs and is informed in part by users.  
 

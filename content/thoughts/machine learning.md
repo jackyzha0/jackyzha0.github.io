@@ -21,7 +21,7 @@ tags:
 -   NFAI learns from examples (but not in the same way humans do)
 -   inspired by the structure of the brain, but more deeply, by the importance and ubiquity of non-formal pattern reasoning
 -   very grab-bag term → anything that isn't GOFAI
--   argument that a lot of human intelligence is not embodied in anyone, its a part of the world: [Extended mind Hypothesis](thoughts/Extended%20mind%20Hypothesis.md)
+-   argument that a lot of human intelligence is not embodied in anyone, its a part of the world: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
 -   e.g. through the design of tools like hammers, our architecture, etc.
 -   definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself
 
