@@ -32,7 +32,7 @@ In which we too readily bolt external processes onto our own agency. To rephrase
 	-   cant replace internal, embodied wants (e.g. relational and sexual preferences)
 		-   notebook might be a prompt or a cue, but can't replace motivation and desires
 -   environmental fuels for cognition — three dimensions
-	1.  trust
+	1.  [trust](thoughts/trust.md)
 		-   reliability of their access to a resource and the reliability of the resource itself
 		-   the more agents trust a resource, the less they will see themselves needing redundancy against failure
 		-   Otto’s competitors have the opportunity to steal his notebook, erase passages in it and add deceptively to it. If Otto is rational, he will be aware of such a danger and will be wary of committing himself to a high-stakes action on the basis of his notebooked beliefs alone
