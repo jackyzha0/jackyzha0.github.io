@@ -3,7 +3,7 @@ languageCode = "en-us"
 googleAnalytics = "UA-148413215-1"
 pygmentsUseClasses = true
 relativeURLs = false
-disablePathToLower = true
+disablePathToLower = false
 ignoreFiles = [
     "/content/templates/*",
     "/content/private/*",
