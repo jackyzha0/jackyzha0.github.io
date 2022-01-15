@@ -9,7 +9,7 @@ tags:
 
 > Search has co-opted the citation, vis-à-vis the hyperlink
 
-The post-WWII 'information explosion' meant that we have a lot of info and not great means of looking through it to find what we want. This is a form of [information retrieval](thoughts/information%20retrieval.md).
+The post-WWII 'information explosion' meant that we have a lot of info and not great means of looking through it to find what we want. This is a form of [information retrieval](thoughts/information%20retrieval.md) and way of answering [questions](thoughts/questions.md).
 
 Inefficient search leads to
 1. knowledge gaps

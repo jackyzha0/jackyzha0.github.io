@@ -67,3 +67,5 @@ Related, [agential gullibility and the Extended mind Hypothesis](thoughts/Extend
 Interesting to distinguish between what we are trusting when we trust designed (e.g. search engines, devices, websites, etc.) and non-designed objects (the ground, physics, etc.)
 
 To lose trust is to shift from the unquestioning state to the endlessly skeptical and suspicious mood.
+
+PHIL 240A Assignment 1: [Trust as Unquestioning Attitude](thoughts/Trust%20as%20Unquestioning%20Attitude.md)

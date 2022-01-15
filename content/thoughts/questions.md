@@ -21,3 +21,4 @@ A method of hypothesis elimination, where better hypothesis are found by elimina
 A Socratic Circle is an approach to understanding texts. It is based off of the assumption that all knowledge is connected to prior knowledge, all thinking comes from asking questions, and that one question should lead to asking further questions.
 
 Usually two 'circles' of students, where the inner circle explores and analyzes the text through questioning and answering while the outer circle observes. The outer circle gives feedback upon the first circle finishing and the two swap positions.
+
