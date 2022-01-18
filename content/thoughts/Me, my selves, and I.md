@@ -8,7 +8,7 @@ tags:
 
 *An exploration on commitment, [trust](thoughts/trust.md), and growth.*
 
-![](/thoughts/images/the%20persistence%20of%20memory.png)
+![The Persistence of Memory by Salvador Dalí](/thoughts/images/the%20persistence%20of%20memory.png)*The Persistence of Memory by Salvador Dalí*
 
 ---
 
@@ -26,7 +26,7 @@ The ebb and the flow of the waves, the toppling of sand sculptures of children. 
 
 Thank you.
 
-[And they sat there for a while. The sun inched downwards, setting the sky ablaze.]
+**[And they sat there for a while. The sun inched downwards, setting the sky ablaze.]**
 
 What do you think it means to take on an identity?
 
@@ -58,11 +58,11 @@ I think recently, I've been able to better articulate the questions I want to sp
 
 What shall I do?
 
-[Both held their palms up to sunset.]
+**[Both held their palms up to sunset.]**
 
 *Even if it is not your ideal life, you can always choose it. No matter what your life is, choosing it changes everything. I think you need to work on transitioning out of doing [x]. The self that committed to doing [x] has moved on. The self that is here and present needs to deal with the consequences of the past, but is not a slave to it. How we spend our days is, of course, how we spend our lives[^1]. What we do with this hour and that one is what we are doing. What can you do to make your days meaningful? I think [y].*
 
-[The two sat in silence, their silhouettes indistinguishable in the fading sunlight.]
+**[The two sat in silence, their silhouettes indistinguishable in the fading sunlight.]**
 
 Thank you for your company, your space, and your time. I want to take the necessary time to ease out of [x] and to do it with care and tenderness.
 
@@ -70,7 +70,7 @@ Thank you for your company, your space, and your time. I want to take the necess
 
 *Yes, I hope so.*
 
-[And the waves continued to crash down. One got up to leave, another came to sit down.]
+**[And the waves continued to crash down. One got up to leave, another came to sit down.]**
 
 The sound of the waves are nice, huh?
 
