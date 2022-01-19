@@ -5,9 +5,15 @@ tags:
 - sapling
 ---
 
-Qualia: the subjective, conscious experience.
+Qualia is the Latin plural for the singular “quale” (quality). Often known as the subjective, conscious experience, or phenomenal properties.
 
 > Examples of qualia include the perceived sensation of _pain_ of a headache, the _taste_ of wine, as well as the _redness_ of an evening sky
+
+Traditionally have second-order properties
+- Ineffable (indescribable)
+- Intrinsic (atomic, unanalyzable, cannot be split into constituent observations)
+- Private (no interpersonal comparisons)
+- Directly apprehended (not mediated by thought, inference)
 
 ## Vibes
 [Source](https://reallifemag.com/nameless-feeling/)
@@ -19,10 +25,3 @@ Vibes are very similar to the approximations [machine learning systems](thoughts
 On context-less data: Like vibes, these metrics carry no context or narrative; they can tell you nothing about how or why something might be desirable
 
 Is [intentionality](thoughts/intentionality.md) derivative with vibes/qualia too?
-
-## Hard problem of consciousness
-How do we bridge objective description and subjective experience
-
-what gives rise to [consciousness](thoughts/consciousness.md) (rel: [emergent behaviour](thoughts/emergent%20behaviour.md)), first-person experiences, and a sense of self?
-
-Do inanimate and non-human intelligences have personal experiences?

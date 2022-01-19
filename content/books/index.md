@@ -11,6 +11,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
 * **The Midnight Library** by Matt Haig
+* **Permutation City** by Greg Egan
 
 ### Non-fiction
 * **Creation: Life and How to Make it** by Steve Grand

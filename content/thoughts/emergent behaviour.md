@@ -10,7 +10,7 @@ How complex behaviour can arise out of seemingly simple rules? Is there anything
 * Mold simulations
 * [Community](/thoughts/communities) dynamics
 
-Interesting to think about in context of single agents in multi-agent systems. How does [consciousness](thoughts/consciousness.md) arise? Is it just because of the rules itself (a reductionist approach) or is there something larger at play?
+Interesting to think about in context of single agents in multi-agent systems. How does [consciousness](thoughts/consciousness.md) arise? Is it just because of the rules itself (a [reductionist](thoughts/Reductionism.md) approach) or is there something larger at play?
 
 [Gall's law](thoughts/Gall's%20law.md): simple alphabets produce behaviors. Even simple rules like Conway's game of life can be Turing Complete!
 

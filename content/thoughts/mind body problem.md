@@ -13,7 +13,7 @@ Concerned with how the mind and body are connected to one another
 	-   not true, they still might be the same thing
 
 Approaches
--   materialism (physicalism) → minds and brains are identical (identity theory)
+-   [Materialism](thoughts/Materialism.md) (physicalism) → minds and brains are identical (identity theory)
     -   nothing magical about minds, just the brains activity
 -   dualism → minds are distinct from the brain
 -   idealism → everything is mental/in the mind
