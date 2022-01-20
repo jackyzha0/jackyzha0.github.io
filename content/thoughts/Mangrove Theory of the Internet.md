@@ -16,6 +16,6 @@ Someone once described Slack as the online version of the open office arrangemen
 
 We do "gardening" in our tools for thought but it's not exactly social first. Sure, we can leave messages for each other but this is not communication. It's more like background cueing/prompting.
 
-How can we great mangroves? Garden/forest type ecosystems which have gently flowing multi-branched stream systems, designing for [digital mindfulness](thoughts/digital%20mindfulness.md) and non-linearity?
+How can we create mangroves? Garden/forest type ecosystems which have gently flowing multi-branched stream systems, designed for [digital mindfulness](thoughts/digital%20mindfulness.md) and non-linearity?
 
 Related: [ephemereal content](thoughts/ephemereal%20content.md)

@@ -49,3 +49,9 @@ His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of w
 Selfishness depends on what the definition of the self is. Expansions on the concept of 'self': 
 - [noosphere](https://en.wikipedia.org/wiki/Noosphere) as the extended self
 - [The Egg](https://www.youtube.com/watch?v=h6fcK_fRYaI) by Andy Weir + Kurzgesagt
+
+## Nice vs Kind
+*From Joice*
+
+Being nice is doing something you think will people happy. Being kind is doing something because you want to do it for them. The key is agency and boundary of self :))
+
