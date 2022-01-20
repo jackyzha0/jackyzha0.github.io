@@ -18,4 +18,6 @@ We do "gardening" in our tools for thought but it's not exactly social first. Su
 
 How can we create mangroves? Garden/forest type ecosystems which have gently flowing multi-branched stream systems, designed for [digital mindfulness](thoughts/digital%20mindfulness.md) and non-linearity?
 
+Can we create different [pace layers](thoughts/pace%20layers.md) for interaction?
+
 Related: [ephemereal content](thoughts/ephemereal%20content.md)
