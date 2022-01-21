@@ -1,6 +1,8 @@
 ---
 title: "Epistemology"
 date: 2022-01-18
+tags:
+- seed
 ---
 
 ## Mūlamadhyamakakārikā (Root Verses on the Middle Way or the MMK) by Nāgārjuna
