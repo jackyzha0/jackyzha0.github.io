@@ -43,21 +43,7 @@ Let us take the simple perceptual demonstrative judgement of the form 'this is a
 
 What does an erroneous cognition say about its object (if anything at all)?
 
-Well, this states that object and concept must *both* exist. Even in mistaking the shell of the silver, both shell (instantiated as physical demonstrated object) and silver (instantiated as primary object of cognition) exist.
-
-TLDR; erroneous cognition required determinate objects in the determinate world.
-
----
-
-## Essay
-> Ram-Prasad summarizes Vācaspati's argument concerning indeterminacy as follows: "while it is possible to determine the existential status of objects of cognition (and thereby determine the validity or invalidity of particular cognitions), it is indeterminate as to whether objects as a whole are, independently of particular cognitions of them, existent or not" (118). Unpack this argument. You can focus on the material that Ram-Prasad covers in p. 113-118 (Section 7 and Section 8). Note that "unpack" here is just asking you to explain the argument. You don't have to give an evaluation of whether or not it's successful this time.
-
-Let us break this phrase down into constituent parts and tackle them piece by piece. The first part states that *it is possible to determine the existential status of objects of cognition* (let us call this A).
-
-The second part posits that A implies the ability to *determine the validity or invalidity of particular cognitions* (let us call this B).
-
-Finally, the argument concludes that A and B combined do not allow us to conclude *whether objects as a whole are, independently of particular cognitions of them, existent or not*.
-
+Well, this states that object and concept must *both* exist. Even in mistaking the shell of the silver, both shell (instantiated as physical demonstrated object) and silver (instantiated as primary object of cognition) exist. TLDR; erroneous cognition required determinate objects in the determinate world.
 
 The state of taking 'this' to be silver is not explained simply by explaining that 'this' and 'silver' occur in it. Take for example, the non-erroneous cognition 'this looks like silver' which contains both constituent elements but is epistemically different from the earlier erroneous claim of 'this is silver'.
 
@@ -80,6 +66,20 @@ Advaitin makes two contradictory conclusions here
 
 Both P1 and P2 rely on relevant (and fairly uncontroversial principles) to come to contradictory results. This argument shows that there is no way of assigning status to $G\alpha$ and thus indeterminant.
 
+## Indeterminacy of objects in the world
 Extending this to the world, we use the differences between third and first person accounts of erroneous cognition. The distinguishing characteristic of third person accounts is that the third person's determination of what causal elements were involved in the erroneous cognition of the subject is true. However, this is not guaranteed to hold as 
 
 A valid cognition is discriminating, but that is determined only by the judgement of another cognition. In a sense, every cognition requires a third-person account. Yet, we know that every third-person account itself is a first-person cognition merely presuming its validity, no independent judgement as to the truth of the original cognition is possible. We know that whether a cognition is veridical or erroneous is to show whether its object exists or not. As this cannot be done, the existence of the object is indeterminant.
+
+---
+
+## Essay
+> Ram-Prasad summarizes Vācaspati's argument concerning indeterminacy as follows: "while it is possible to determine the existential status of objects of cognition (and thereby determine the validity or invalidity of particular cognitions), it is indeterminate as to whether objects as a whole are, independently of particular cognitions of them, existent or not" (118). Unpack this argument. You can focus on the material that Ram-Prasad covers in p. 113-118 (Section 7 and Section 8). Note that "unpack" here is just asking you to explain the argument. You don't have to give an evaluation of whether or not it's successful this time.
+
+Let us break this phrase down into constituent parts and tackle them piece by piece. The first part states that *it is possible to determine the existential status of objects of cognition* (let us call this A).
+
+We first define some terminology. 
+
+The second part posits that A implies the ability to *determine the validity or invalidity of particular cognitions* (let us call this B).
+
+Finally, the argument concludes that A and B combined do not allow us to conclude *whether objects as a whole are, independently of particular cognitions of them, existent or not*.
