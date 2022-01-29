@@ -1,5 +1,5 @@
 ---
-title: "Epeistemology"
+title: "Epistemology"
 date: 2022-01-18
 tags:
 - seed
