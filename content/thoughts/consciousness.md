@@ -22,12 +22,19 @@ Self-illumination/reflexivity
 	- "How can one and the same awareness be both of an object/content and of itself?"
 
 Other-illumination/reflectivity  
-- For a state to be a conscious state is for it to be the object of a higher-order  
- mental state (an inner perception or inner thought).
+- For a state to be a conscious state is for it to be the object of a higher-order mental state (an inner perception or inner thought).
 - "I see blue, I'm aware that I see blue"
 - Problems: how could two states that are nonconscious in themselves come together and make one of them conscious?
 	- Curious how this applies to [emergent behaviour](thoughts/emergent%20behaviour.md)
 	- By having a higher layer that enables the reference of a lower layer, this is essentially a two-way recursive relation that opens the door to much more composable and perhaps complex behaviour
+
+Nagarjana's Argument
+- Infinite regress, you cannot use a fact to establish itself
+- Summarized in terms of reflectivity
+	- argues against reflexivity
+	- 
+Opponents Argument
+- Can use recursive definition
 
 ## Hard problem of consciousness
 Related: [mind body problem](thoughts/mind%20body%20problem.md), [Materialism](thoughts/Materialism.md)

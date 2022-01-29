@@ -16,6 +16,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Non-fiction
 * **Creation: Life and How to Make it** by Steve Grand
 * **Winners Take All** by Anand Giridharadas
+* **What Money Can't Buy** by Michael Sandel
 * **Mutual Aid** by Dean Spade
 * **Seeing Like A State** by James C. Scott
 * **The Alignment Problem** by Brian Christian

@@ -5,7 +5,7 @@ tags:
 - fruit
 ---
 
-![Pace Layers image from Stewart Brand in The Clock of the Long Now](thoughts/images/pace-layers.png)*The order of civilization. The fast layers innovate; the slow layers stabilize. The whole combines learning with continuity.*
+![Pace Layers image from Stewart Brand in The Clock of the Long Now](/thoughts/images/pace-layers.png)*The order of civilization. The fast layers innovate; the slow layers stabilize. The whole combines learning with continuity.*
 
 Coined by Stewart Brand in 1999.
 
