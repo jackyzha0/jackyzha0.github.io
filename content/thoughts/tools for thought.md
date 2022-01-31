@@ -50,7 +50,7 @@ This was demonstrated by chess masters in the 1970's: "Players learn to recogniz
 
 Is it possible to automatically pick up repeated digital [desire paths](thoughts/desire%20paths.md) of user trails and pull them into [workflows](thoughts/workflows.md)? take advantage of natural spaced repetition to identify saliency
 
-The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a context with other concepts.
+The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a [context](thoughts/context.md) with other concepts.
 
 [Source](https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management)
 

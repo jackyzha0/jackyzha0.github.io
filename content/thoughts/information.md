@@ -43,7 +43,7 @@ Information regulates us. The law, in its codified and written forms, encodes gr
 
 Information identifies us. Each of us leave informational foot prints as we live our lives through documents, interactions, and conversations.
 
-Contrary to Marshall McLuhan’s famous phrase, "the medium is the message", it seems as if the vast majority of the power from information is derived from its meaning and context rather than its medium or method of transmission.
+Contrary to Marshall McLuhan’s famous phrase, "the medium is the message", it seems as if the vast majority of the power from information is derived from its meaning and [context](thoughts/context.md) rather than its medium or method of transmission.
 
 > Of what value is its microprocessor, its memory, and its applications if there is no content to consume and no people to connect with?
 

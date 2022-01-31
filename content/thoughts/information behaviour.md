@@ -22,7 +22,7 @@ In this model, an information object is not seen simply as an entity that meets 
 ### Wilson's Information-seeking Model
 ![](/thoughts/images/wilson.png)
 
-Perceived information need is bounded in a context (column 1). This perceived need may not be enough if there isn't enough to activate actions if the stress isn't high enough (column 2). Intervening variables may become either barriers to or in support of information seeking activities (column 3). The actual activation mechanism itself is driven by social learning theory.
+Perceived information need is bounded in a [context](thoughts/context.md) (column 1). This perceived need may not be enough if there isn't enough to activate actions if the stress isn't high enough (column 2). Intervening variables may become either barriers to or in support of information seeking activities (column 3). The actual activation mechanism itself is driven by social learning theory.
 
 8 main types of information activities
 1. Starting: initial info-gathering (e.g. searching or asking colleagues)

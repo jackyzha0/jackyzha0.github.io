@@ -66,7 +66,7 @@ From both cases, we can see that an over-focus on results and accuracy can cause
 Too often our society is focused on the raw accuracy that we forget that the same accuracy metric is something that we set for ourselves – created arbitrarily by humans which have bias. Unfortunately, this results in things like the Google Photos and Amazon Hiring cases.
 
 ## Fairness in AI
-Truth is, data lacks context. While the trends in the data may show that in the past there have been more men in the women in the workforce, the majority of the population can agree that we are moving away from that more traditional view into more of an equal playing ground. Unfortunately, these models that we create don’t have a deeper understanding of these changes and as a result, produces naïve predictions that we believe are wrong or ‘garbage.’ But is it really? Is it really only a ‘bad’ result because of what we define as fair or right?
+Truth is, data lacks [context](thoughts/context.md). While the trends in the data may show that in the past there have been more men in the women in the workforce, the majority of the population can agree that we are moving away from that more traditional view into more of an equal playing ground. Unfortunately, these models that we create don’t have a deeper understanding of these changes and as a result, produces naïve predictions that we believe are wrong or ‘garbage.’ But is it really? Is it really only a ‘bad’ result because of what we define as fair or right?
 
 ![COMPAS exhibiting bias against those of African descent](https://static.propublica.org/projects/algorithmic-bias/assets/img/generated/methodology-risk-of-recidivism-scores-by-race-900*363-482d1c.png)*ProPublica, 2016*
 

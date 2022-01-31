@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-Intelligence is (at least partly) a matter of using well what you know. An intelligent being learns from experience, and then uses what is has learned to guide expectations in the future. How does one select the appropriate frame or context for any given situation?
+Intelligence is (at least partly) a matter of using well what you know. An intelligent being learns from experience, and then uses what is has learned to guide expectations in the future. How does one select the appropriate frame or [context](thoughts/context.md) for any given situation?
 
 There are an infinite number of contextual frames for any given situation. How do we encode this in discrete systems like in AI?
 

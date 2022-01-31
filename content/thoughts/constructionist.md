@@ -18,7 +18,7 @@ Why there is no good answer to "how do I learn CS"
 > "They'll handle the details. Indeed, they insist on it. For a project to feel like your own, you must have sufficient autonomy. You can't be working to order, or slowed down by bureaucracy." -- [Paul Graham](http://paulgraham.com/own.html)
 
 ## [Design Justice](thoughts/Design%20Justice.md)
-Pedagogical approach that centers context, situated knowledge, and learning by doing.
+Pedagogical approach that centers [context](thoughts/context.md), situated knowledge, and learning by doing.
 
 Papert rejected the banking method of education: educator transmits a piece of information to the learner's brain
 

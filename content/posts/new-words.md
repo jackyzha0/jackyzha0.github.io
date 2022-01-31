@@ -27,7 +27,7 @@ tags:
 
 **P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
 
-**W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **plurality**. Context modifies meaning.
+**W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **plurality**. [context](thoughts/context.md) modifies meaning.
 
 **P:** Plurality as in a multitude of definitions?
 
@@ -96,7 +96,7 @@ Likewise, many groups across the world have tried to redefine and hard-fork the 
 
 **P:** What sort of alternative are you proposing?
 
-**W:** A collectively curated glossary of sorts. One which involves a rich history and context of terms, pluralist in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
+**W:** A collectively curated glossary of sorts. One which involves a rich history and [context](thoughts/context.md) of terms, pluralist in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
 
 Let us create a new glossary of terminology. May it be *a* source of [truth](thoughts/truth.md) rather than *the* source of truth.
 

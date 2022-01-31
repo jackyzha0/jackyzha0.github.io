@@ -67,7 +67,7 @@ One problem that stumped earlier attempts at AGI was the *common-sense problem*:
 Dreyfus[^10] posits that any AI systems which attempt to tackle the frame problem through storing relevant frames are bound to failure. He argues that, "human beings do not simply store common-sense information," rather they "directly perceive and act upon significance in their environment". In his view, a more Heideggerian approach to AI will dissolve this problem.
 
 Heideggerian AI, in its most basic sense, is concerned with 
-the Heideggerian concept of Dasein, which literally means 'Being-there'[^11]. Through the use of this expression, Heidegger calls to attention the fact that a human cannot exist or be taken into account without existing in context of a world with other things &mdash; "to be human is to be fixed, embedded, and immersed in the physical, literal, tangible day to day world"[^12].
+the Heideggerian concept of Dasein, which literally means 'Being-there'[^11]. Through the use of this expression, Heidegger calls to attention the fact that a human cannot exist or be taken into account without existing in [context](thoughts/context.md) of a world with other things &mdash; "to be human is to be fixed, embedded, and immersed in the physical, literal, tangible day to day world"[^12].
 
 Dreyfus believed that, for any AI system to achieve any sort of general intelligence, it must also exhibit Dasein. Thus, "a successful Heideggerian AI would need a perfect model of the human body – and by implication, that Dasein must be expressed as a human being, organically as well as existentially"[^10].
 

@@ -11,7 +11,7 @@ It is an inner [representation](thoughts/representation.md) of a system.
 
 2 types:
 1. Internal frameworks: about the mental process inside user's head
-2. External frameworks: account for interactions with technologies, environment, and context
+2. External frameworks: account for interactions with technologies, environment, and [context](thoughts/context.md)
 
 Characteristics:
 -   constantly evolving

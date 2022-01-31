@@ -5,6 +5,12 @@ tags:
 - sapling
 ---
 
+## Questions
+- How do social graphs work if users are [pseudonymous](thoughts/pseudonymity.md)? If [cities are not top-down hierarchies](thoughts/A%20City%20is%20not%20a%20Tree.md), then are social graphs a better way to think about them?
+-  Does directness matter in social graphs
+	-   i.e. facebook is undirected (friend means you are friends with each other) whereas twitter is directed (you can follow someone but doesn't mean they follow you back)
+
+## Social Graph vs Interest Graphs
 -   social graph → who's connected to who
 -   interest graph → online representations of interests
 -   constructing interest graphs from social graphs
@@ -19,7 +25,7 @@ tags:
 -   "achieving product-market-fit of social is the intersection of a feature and a graph"
     -   people keep copying each others features
     -   but if the underlying graph is different, the intersection might be different too
--   search directed vs feed directed networks
+-   [search](thoughts/search.md) directed vs feed directed networks
     -   [https://outline.com/ZhCArb](https://outline.com/ZhCArb) → future of search?
     -   why feeds exist → more supply than eyeballs to consume it, someone needs to make a decision on what you actually see (no chronological feeds anymore)
 
@@ -27,5 +33,3 @@ tags:
 * constructing social graphs from interests (tiktok)
 * constructing interest graphs from social graphs (traditional networks like fb)
 
-## Questions
-How do social graphs work if users are [pseudonymous](thoughts/pseudonymity.md)? If [cities are not top-down hierarchies](thoughts/A%20City%20is%20not%20a%20Tree.md), then are social graphs a better way to think about them?

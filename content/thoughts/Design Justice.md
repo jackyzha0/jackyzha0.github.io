@@ -53,7 +53,7 @@ One question about [intersectional approaches] is how many identity variables to
 3 groups of study
 1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
 2. Technical Bias: some underlying aspect of the technology reproduces bias
-3. Emergent Bias: may not have been biased given its original context of use or original user base but comes to exhibit bias when the context shifts or when new users arrive
+3. Emergent Bias: may not have been biased given its original [context](thoughts/context.md) of use or original user base but comes to exhibit bias when the context shifts or when new users arrive
 
 ### Universal Design
 Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design

@@ -19,7 +19,7 @@ abstraction involves compression -> detail is lost
 the way we make up for that detail is through having a shared consensus over meaning and intent
 
 this meaning and intent is baked into the meaning of the word through how the word is used 
-‘In most cases, the meaning of a word is its use’, Wittgenstein claimed, in perhaps the most famous passage in the Investigations. It ain’t what you say, it’s the way that you say it, and the context in which you say it. Words are how you use them.
+‘In most cases, the meaning of a word is its use’, Wittgenstein claimed, in perhaps the most famous passage in the Investigations. It ain’t what you say, it’s the way that you say it, and the [context](thoughts/context.md) in which you say it. Words are how you use them.
 
 yet usage changes over time
 no one person or institution decides how language works: it is one of the few logically decentralized aspects of humanity
