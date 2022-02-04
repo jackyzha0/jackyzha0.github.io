@@ -7,6 +7,10 @@ tags:
 
 What does it mean to be conscious? Is consciousness emergent from matter? Or is it something else entirely (the ether or the soul)?
 
+"Consciousness is always consciousness of something, and when the object is subtracted, nothing remains to be characterized" (cannot be of independent origin, [emptiness](thoughts/emptiness.md))
+
+See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md)
+
 Related: [The Upanisads](thoughts/The%20Upanisads.md), [Qualia](thoughts/qualia.md)
 
 Phenomenal consciousness (felt consciousness) vs Access consciousness
@@ -32,43 +36,42 @@ Nagarjana's Argument
 - Infinite regress, you cannot use a fact to establish itself
 - Summarized in terms of reflectivity
 	- argues against reflexivity
-	- 
 Opponents Argument
 - Can use recursive definition
 
-## Hard problem of consciousness
-Related: [mind body problem](thoughts/mind%20body%20problem.md), [Materialism](thoughts/Materialism.md)
+## Neural Correlates of Consciousness (NCC)
+- Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.
+	- Similar to probing for network activation in neural networks / [AI systems](posts/ai-systems.md)
+- The full NCC is the union of all content-specific NCCs.
+- Even for ambiguous figures (those weird visual illusions that have differing things depending on how you perceive it), there is a rivalry for a dominant interpretation
+	- When faced with ambiguous visual information, you don’t normally experience a combination of the different interpretations. Rather, you only see one at a time, often switching back and forth between the two.
+	- Binocular rivalry
 
-How do we bridge objective description and subjective experience (qualia)? Is consciousness explainable in terms of brain processes?
+Theories of consciousness
+- Cognitive Theories: consciousness is based in areas that are devoted to cognitive processing (thinking, reasoning, evaluating, memory, etc.)
+	- Global workspace theory: consciousness arises from highly coordinated, widespread activity in the brain
+		- When signals are broadcast to the global workspace, we become conscious of the sensation
+		- When they remain localized, they are not perceived conscoiusly
+- Sensory Theories: consciousness is based in areas that are devoted to sensory processing
+	- Block argues that recurrent processing in sensory areas is the NCC for phenomenally conscious perception
+- First-order theories: consciousness is a product of the cognitive processing of sensory information
+- Higher-order theories: consciousness involves something done to build on that cognitive representation of the sensory experience
 
-What gives rise to consciousness (rel: [emergent behaviour](thoughts/emergent%20behaviour.md)), first-person experiences, and a sense of self? Do inanimate and non-human intelligences have personal experiences?
+Does phenomenal awareness overflow access?
+- (when reading,) we are conscious only of the letters attended to and the impression that there are other items displayed whose identity we don’t know. Once the cue is presented, we gain access to the unconscious information before it decays and can recall the letters.
+- Great example of why foveated rendering works so well
 
-Chalmers
-- Certain phenomena are functionally definable -- explanation of them requires only the explanation of the relevant functions and the mechanisms that implement them (e.g. hereditary passing of genes and DNA)
-- Consciousness is *not* functionally definable
-	- Defining information discrimination, integration, and reporting does not fully explain consciousness
-- Explanatory Gap
-	- There is no cognitive function such that we can say in advance that explanation of that function will automatically explain subjective experience
+## Integrated Information Theory of Consciousness (IIT)
+First-order sensory theory of consciousness.
 
-### Nagel's Bat Argument (against Physicalism)
-1. Physicalism (read: [Materialism](thoughts/Materialism.md)) is the thesis that everything that exists is physical. 
-2. Physical facts then, are objective truth ("the kind that can be observed and understood from many points of view and by individuals with different perceptual systems")
-3. Even if we knew everything about how the bat's sonar system works, we would not know what is is like for the bat to perceive using this system.
-	1. 'What it's like': in this case, something is conscious (a bat) if and only if there is something it's like to be that being (only a bat knows what it is like for a bat to be a bat)
-	2. One, for example, cannot imagine a chair to know what it is like for a chair to be a chair.
-	3. For a state to be conscious is for it to have a subjective character (to seem or feel a certain way to the subject). A conscious experience is a state that is both subjective and qualitative.
-4. Therefore, complete knowledge of the physical facts about a bat's  perceptual system would not yield knowledge of certain facts about a  bat’s experiences
+> Consciousness *is* integrated information
 
-Physicalism leaves out the subjective facts, so it’s a mystery how it 
-could be true (give that [qualia](thoughts/qualia.md) and the subjective experience exists).
+The amount of information $\phi$ that the entire complex system has beyond the information available from the sum of its parts (i.e. Information that can’t be localized in the system's individual parts.)
 
-### Frank Jackson's Knowledge Argument
-- Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV. Through this, she learns everything there is to know about the physical nature of the world, including all there is to know about the causal and relational facts consequent upon all this, including of course functional roles.
-- If physicalism is true, she knows all there is to know.
-- Yet, if Mary is let out of her black-and-white room or given a colour TV, she will learn what it is like to see something red.
+Has many holes in its axioms but again presented here just to learn:
+1. Intrinsic Existence: consciousness must exist from its own intrinsic perspective, independent of external observers
+2. Composition: consciousness is structured and composed of multiple phenomenological distinctions (elementary or higher order)
+3. Information: consciousness is specific. Each experience is particular and uniquely distinct
+4. Integration: consciousness is unified. Each experience is irreducible and cannot be subdivided into non-interdependent disjoint subsets of phenomenal distinctions
+5. Exclusion: consciousness is definite -- it either has or does not have certain phenomenal distinctions
 
-The implication here is that Mary cannot learn what it is like to subjectively experience red from reading physical facts (similar argument re: [semantics](thoughts/semantics.md) in [Chinese room argument](thoughts/Chinese%20room%20argument.md)).
-
-### Dennett's Refutation of the Knowledge Argument
-
-> “And so, one day, Mary’s captors decided it was time for her to see colours. As a trick, they prepared a bright blue banana to present as her first colour experience ever. Mary took one look at it and said ‘Hey! You tried to trick me! Bananas are yellow but this one is blue!’ Her captors were dumbfounded. How did she do it? ‘Simple,’ she replied. ‘You have to remember that I know everything—absolutely everything— that could ever be known about the physical causes and effects of colour vision.

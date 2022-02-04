@@ -26,6 +26,7 @@ Of course, this is not perfect technology. I do have a few [hesitations/critique
 - [Consensus](thoughts/consensus.md)
 - [Play](thoughts/play.md)
 - [NFTs](thoughts/NFT.md)
+- [Arweave](thoughts/Arweave.md)
 
 Notes on [Kernel](https://kernel.community/en/) curriculum: [Kernel](thoughts/kernel.md)
 
@@ -77,3 +78,4 @@ Not just providing funding, 4 main value adds
 TLDR: Golem democratizes society’s access to computing power by creating a decentralized platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens
 
 >From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network
+

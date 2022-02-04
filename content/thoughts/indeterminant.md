@@ -7,9 +7,9 @@ tags:
 
 > Anirvacanīyatva or indeterminancy
 
-Vācaspati Miśra's *Bhāmatī*, a commentary on Śankara's *Brahmasū-trabhāsya*.
+Vācaspati Miśra's *Bhāmatī*, a commentary on Śamkara's *Brahmasū-trabhāsya*.
 
-In this chapter/section, then, objects of erroneous cognition are used to show how the world as it is experienced can neither be denied an independent status nor established as having one. The key idea is the 'indeterminate' state as to their ontological status.
+In this chapter/section, objects of erroneous cognition are used to show how the world as it is experienced can neither be denied an independent status nor established as having one. The key idea is the 'indeterminate' state as to their ontological status.
 
 Vācaspati does not doubt the correctness of the Nyāya argument for [philosophical realism](thoughts/philosophical%20realism.md) but more so its completeness. I have cognition of a white horse, not of 'white' and of 'horse'. Vācaspati argues that the sum is greater than the whole -- it is not sufficient that a description of its constituent elements ('this' and 'silver') entirely constitute the unitary object of cognition ('this is silver').
 

@@ -25,6 +25,8 @@ Objection posed that [emptiness](thoughts/emptiness.md) is nihilistic and would 
 
 Emptiness is not nothingness. Emptiness is form.
 
+See: [The Dragon and the bridge](thoughts/The%20Dragon%20and%20the%20bridge.md)
+
 ## Nyāya
 > "Perception is a cognition that has arisen from the contact of sense faculty and object and is inexpressible, not erroneous, and determinate in nature."
 

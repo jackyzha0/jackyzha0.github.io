@@ -14,7 +14,7 @@ tags:
     2.  Any particular experience I have might be deceptive
     3.  It is possible that _all_ my experiences are deceptive
 -   Counterexample to first argument
-    -   Some paintings are forgegeries
+    -   Some paintings are forgeries
     -   Any particular painting might be a forgery
     -   It is possible that all paintings are forgeries
     -   can't be possible because all paintings if all paintings are forgeries, what are they based off of?
