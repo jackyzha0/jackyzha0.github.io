@@ -73,6 +73,9 @@ Each layer takes data from above adds header information to create new data unit
 	1. Hardware
 	2. Unit: Frame
 	3. Responsibilities: Routes frames to adjacent machines (“direct” connection). Defines the format of data on the network
+	4. Details
+		- Breaks up chunks into frames, contains some metadata
+		- Hub model (share the same medium) means that we don't need to run wires between every computer (implicit broadcasting). Downside is we have to now specify who the message is for (usually using 48 bit media access control (MAC) addresses)
 6. Physical
 	1. Hardware
 	2. Unit: Bits
@@ -110,3 +113,90 @@ To prevent loops, we set a TTL (time-to-live) for packets to expire after a cert
 	- A network that peers for free with some networks, but still purchases IP transit or pays for peering to reach at least some portion of the Internet
 - Tier 3 Networks
 	- A network that solely purchases transit/peering from other networks to participate in the Internet. Everybody else
+
+## User Datagram Protocol (UDP)
+1. Source Port
+2. Destination Port
+3. Length
+4. Checksum
+5. Payload
+
+68 is usually client, 67 is usually server
+
+For reliable networks (like local) where out-of-order protections of TCP are unnecessary, or for time sensitive applications (e.g. streams or calls) where lossy transmission at high speed is better than quality transmission at choppy speed.
+
+## Address Resolution Protocol (ARP)
+- Host broadcasts a query with an IP address: "who has IP address 130.207.160.47?"
+- Host with that IP address on the LAN will respond with appropriate MAC address.
+- Resolves IP to MAC
+- Generates an ARP Table maps IP to MAC
+- Useful because frames use MAC addresses for addressing
+
+## Hubs, Switches, and Routers
+1. Hub - broadcasting through cloning bits (physical layer)
+	1. Simplest and cheapest way to create a network
+	2. Lots of unnecessary traffic
+	3. Other people can see your traffic
+2. Switch - hub but it knows where other hosts are for direct addressing (link layer)
+	1. Keeps a switch table mapping interface number to MAC address
+	2. If table is initially empty, will behave like a hub and broadcast
+	3. Can start populating switch table based off of sender field from frames
+	4. Quicker than a router for internal communication (though some routers have an Ethernet switch built in)
+3. Router - glue that ties networks together (network layer)
+	1. Does NOT support broadcast
+	2. Serves as a bridge between private home network and the network of the internet provider (which can reach the rest of the internet)
+	3. Modern routers can also perform
+		1. Network address translation (NAT)
+			1. More devices than IP addresses! What do we do?
+			2. Home router gets assigned an IP (public IP) by the ISP
+			3. Devices connected on the local network are assigned a private IP address (usually starts with subnet mask 196.168.x.x or 10.x.x.x)
+			4. Changes the private IP address to the public address of the router (as well as the port)
+			5. Adds the mapping to the NAT forwarding table
+				1. Entries correspond to private side (192.168.1.3:42301) to public side (12.13.14.15:24604)
+			6. Does the inverse when it receives a packet
+		2. Assigning IP addresses to hosts using Dynamic Host Configuration Protocol (DHCP)
+			1. Discovery, host looks for a DHCP server
+				1. Sender is 0.0.0.0 port 68
+				2. Receiver is 255.255.255.255 port 67 (this is the broadcast address!)
+			3. Router responds with an offer valid for the next $n$ seconds
+				1. This is broadcasted (255.255.255.255) as router does not know where receiver is
+			4. Host responds with acceptance
+				1. Broadcast which address picked
+			5. Router responds OK
+				1. ACK message, still broadcast
+		3. Broadcast WiFi signal
+
+## Error Correction
+1. Parity Bit
+	1. Even parity is 1 if number of 1s is odd
+	2. Can detect odd number of bit flips
+3. 2D Parity Bit
+	1. 
+4. Checksum
+	1. Assume data is a sequence of 16-bit integers
+	2. Addition, 1's complement sum, carry out added back in
+	3. Checksum is the 1's complement of the computed value
+	4. Compare with the received data (if same, it is ok)
+		1. Alternatively, compute the same function over the data and checksum
+5. Cyclic Redundancy Check (CRC)
+	1. Parameterized by constants G and r
+	2. r + 1 is the length of G (some power of 2)
+	3. G is the generator (arbitrary bit pattern)
+	4. Sender wants to send D
+		1. Chooses r CRC bits, R such that <D, R> is exactly divisible by G (mod 2)
+	5. Receiver knows G, divides <D, R> by G. If the remainder is non-zero an error is detected!
+	6. Can detect all burst errors less than r+1 bits, and burst errors greater than r+1 with probability 1-0.5^r
+
+## Access Control
+1. Half-duplex - both sides can transmit, but only one at a time
+	1. Carrier Sense Multiple Access
+		1. Listen before sending, only send if no one else is
+	2. Collision Detection
+		1. While sending, listen to see if what you are sending is garbled
+		2. If so, give up
+	3. "Try again later" uses binary exponential backoff
+		1. Random backoff between 0 and power of 2 (n increases each time)
+	4. Turn-based access control
+		1. Controlled by centralized party - polls everyone
+		2. Controlled by centralized party - passes a token between senders
+2. Full-duplex - both sides can transmit at the same time without interference

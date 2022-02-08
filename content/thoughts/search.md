@@ -33,6 +33,8 @@ Good way to prototype search system is to analyze the typical dimensions that us
 
 Search is a form of [recommendation system](thoughts/recommendation%20system.md)
 
+A diary of searches: [Search Diary](thoughts/Search%20Diary.md)
+
 ### Queries on [information](thoughts/information.md)
 How do we convert a query into subject words and then locate these words in the catalogue if people describe things differently? How do we resolve synonyms?
 
@@ -89,8 +91,7 @@ oracle -> tells you the 'right' answer
 
 "The idea is that instead of searching for information in a vast list of web pages, users would ask questions and have a language model trained on those pages answer them directly. The approach could change not only how search engines work, but what they do—and how we interact with them"
 
-epistemological question
-Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.
+[epistemological](thoughts/epistemology.md) question: Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.
 
 ## Search Engines as Faith
 They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.

@@ -75,3 +75,26 @@ Has many holes in its axioms but again presented here just to learn:
 4. Integration: consciousness is unified. Each experience is irreducible and cannot be subdivided into non-interdependent disjoint subsets of phenomenal distinctions
 5. Exclusion: consciousness is definite -- it either has or does not have certain phenomenal distinctions
 
+## Pratyabhijna Self-awareness
+Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
+
+Solipsism with extra steps? There are two types of realization "I"
+
+- Ultimate Reality (Śiva)
+	- Consciousness as the infinite potential for any and all manifest worlds
+	- Śiva is like a sculptor, a playwright, or a yogin because he spontaneously creates worlds from within himself
+- Conventional Reality
+	- Embodied worlds created through exclusion
+	- Manifests because the ultimate desires to experience itself in diverse  forms
+	- When we imagine, for example, an elephant, our consciousness presents this object ('this') as distinct from our conscious selves ('I'). Despite this distinction, we know 'this' is only imagined and arises from the self.
+	- Consciousness, when this happens, does not become the elephant, nor does it cease to exist as the 'I' when taking on the elephant's form, it simplify manifests itself as something distinct from the 'this'.
+	- This plasticity is what the Śaivas call "freedom"
+- Internality is the reflective awareness 'I', externality is the reflective awareness 'this'
+	- For objects perceived there are two kinds of externality
+		1. Object of cognition through the external sense
+		2. Object of cognition through the internal sense
+- No ontologically independent external objects
+	- The internal self must have the notion or essence of object to manifest it as external (?)
+	- Cannot infer the existence of something that has never been perceived 
+
+'Ill-taught' people satisfy themselves with conventional reality call it 'inert', failing to see it is a subset of Śiva. "Only consciousness can present itself as precisely what it’s not while still remaining itself"
