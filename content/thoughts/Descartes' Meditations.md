@@ -5,6 +5,7 @@ tags:
 - seed
 ---
 
+Cartesian doubt refers to the opposite of [trust](thoughts/trust.md) in Nguyen's sense
 
 ## First Meditation → skeptical doubts
 -   descartes wants to find a foundation of knowledge that will still stand strong even after doubting the most basic facts about the world
@@ -39,3 +40,27 @@ tags:
 	-   if there were such a person, then everything I believe would be false
 	-   I can't tell that there isn't such a person
 	-   so, I don't really know anything I thought i knew
+
+## Essay
+*Evaluate Descartes' assertion that God, as a perfect being, cannot be a deceiver. Note that some of his logic is implicit in his idea of perfection. Note that to evaluate an argument, you need to first explain the argument, and then say why it is or is not successful.*
+
+Descartes, in his meditations, wishes to find a foundation of knowledge that will still stand strong even after doubting the most basic facts about the world. In doing so, he starts by methodically doubting all things that he has "less than complete certainty" of. He casts asides sensory experience, claiming that these can be deceived. Even objects close by could be illusory as he could be dreaming. Even basic axioms of the world like mathematics could be false because of some evil genius that has "employed all his energies in order to deceive me". Iteratively, he tries to re-prove existence of many things, starting from the existence of self (*"cogito, ergo sum"*) and progressing towards an argument for the existence of God (and god as a perfect being who cannot be a deceiver.)
+
+In the Fifth Meditation, Descartes presents the argument as follows:
+1.  Suppose there is a supremely perfect being -- a being that has every possible 'perfect' trait. A supremely perfect being *must* have every possible perfect trait because to exclude any or all perfections from a supremely perfect being is to stumble into a contradiction or to "conceive of a mountain without a valley".
+2. Necessary existence is a perfection. It is an existence where one depends only on the self for existence (similar to the concept of independent origination in [emptiness](thoughts/emptiness.md)).
+3. Necessary existence cannot be separated from the essence of a supremely perfect being.
+4. Therefore, a supremely perfect being exists -- it is God.
+
+However, this argument is flawed as it begs the question -- the premise (that there exists a supremely perfect being) is also the conclusion (a supremely perfect being exists). This inherent circular argument then does not hold.
+
+For the sake of continued examination of the argument, let us assume that this argument is sound, and that God indeed does exist.
+
+Descartes goes on to utilize the statement that God exists to prove that God cannot be a deceiver.
+
+1. God exists and is perfect
+2. Deception is imperfect, therefore God cannot deceive
+3. Whatever I perceive "clearly and distinctly" must be true
+4. As my perception is clear, the material world must exist
+
+However, this argument also begs the question as it relies on the first proof that God necessarily exists as a premise. Unfortunately, Descartes first proof relies on the fact that Descartes has a clear and distinct idea of God, which presupposes clear and distinct perception (the conclusion of this argument). Thus, to show that his perception is clear, he must assume that his perception is clear -- clearly an invalid argument.

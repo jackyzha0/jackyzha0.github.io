@@ -32,7 +32,7 @@ The implication here is that Mary cannot learn what it is like to subjectively e
 
 In this paper, I posit that Frank Jackson's "Knowledge Argument" is *logically sound* but hinges on many bold and often presumptuous premises to be true. As such, the conclusion should not be taken for granted without more clarifications around premises and terminology.
 
-I propose that Mary has all of the 'know-that' knowledge but none of 'know-how' knowledge. The act of Mary 'seeing' colour for the first time means that she learns new 'know-how' knowledge which she was did not have. Physicalism, as a result, is preserved as Mary only has 'know-that' knowledge so does not know all physical *facts* about colour perception.
+I propose that Mary has all of the 'know-that' knowledge but none of 'know-how' knowledge. The act of Mary 'seeing' colour for the first time means that she learns new 'know-how' knowledge which she did not have. Physicalism, as a result, is preserved as Mary only has 'know-that' knowledge so does not know all physical *facts* about colour perception.
 
 This relies on three facts:
 1. There is a distinction between physical fact and physical knowledge

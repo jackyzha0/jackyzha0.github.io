@@ -1,5 +1,5 @@
 ---
-title: "contact language"
+title: "Contact Language"
 date: 2022-02-09
 tags:
 - seed
