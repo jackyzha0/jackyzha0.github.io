@@ -2,7 +2,7 @@
 title: "Knowledge Argument"
 date: 2022-02-01
 tags:
-- seed
+- sapling
 ---
 
 ### Frank Jackson's Knowledge Argument
@@ -30,30 +30,63 @@ The implication here is that Mary cannot learn what it is like to subjectively e
 ## Essay
 > Critically evaluate Frank Jackson’s “Knowledge Argument.” Does Mary learn something new, and if so, what exactly does she learn and what are the implications for physicalism? If she does not learn anything new, explain how and why this is the case.
 
-1. exposition, what is the knowledge argument
-	1. Experiencing colour still teachers Mary something new. Then, mental states, like colour perception, can't be completely described by physical facts
-	2. Non-physical properties and knowledge which can only be discovered through conscious experiment
-	3. Contradicts the theory of physicalism -> everything, including mental states, has a physical explanation
-	4. Extending this, we could know every physical detail about someone else's brain and still not understand what it is like to experience things for them (qualia)
-2. important to answer the question of whether
+In this paper, I posit that Frank Jackson's "Knowledge Argument" is *logically sound* but hinges on many bold and often presumptuous premises to be true. As such, the conclusion should not be taken for granted without more clarifications around premises and terminology.
 
-conceivability of the knowledge that mary can gain is doubtful
+I propose that Mary has all of the 'know-that' knowledge but none of 'know-how' knowledge. The act of Mary 'seeing' colour for the first time means that she learns new 'know-how' knowledge which she was did not have. Physicalism, as a result, is preserved as Mary only has 'know-that' knowledge so does not know all physical *facts* about colour perception.
 
-seeing (and phenomenal concepts as a whole) is tacit knowledge
-- non-transferrable knowledge
-- seeing is such tacit knowledge that cannot possibly be known through reading a book or experiments
-- only acquired through practical experience in the relevant context
+This relies on three facts:
+1. There is a distinction between physical fact and physical knowledge
+1. There are unknowable physical facts that give rise to new experiences
+2. Know-how cannot be learned through know-that (e.g. reading and watching videos)
 
-language is our only means of relaying this knowledge
-only constructs potemkin villages of experience
+Briefly, the conclusion that Frank Jackson posits is as follows:
 
-knowledge != fact
-experiencing != learning
+1. It is possible for someone to know all *physical* information there is to know about $x$, still *experiencing* the act of seeing colour will teach her something about $x$.
+2. Certain experiences (e.g. experiencing colour) still teach Mary something new. Then, this means that all physical information there is to know about $x$ do not completely describe *all* information about $x$.
+3. This contradicts the theory of physicalism: that everything, including mental states, has a physical explanation. Extending this argument: if we could know every physical detail about someone else's brain, one would still not understand what it is like to experience things for them (Nagel's Bat Argument).
 
+However, this conclusion relies heavily on the first premise being true, that is, it being possible for one to "acquire ... all the physical information there is to obtain about what goes on when we see [$x$]". Let us first examine the explicit distinction between 'physical knowledge' and 'physical facts' here.
 
+Knowledge, specifically, entails all 'knowable' things. In the context of this paper, I define 'knowledge' as justified true belief. Subject $S$ knows $x$ if and only if[^1]:
 
-talk of ‘physical information’ in the context of the knowledge argument is ambiguous between an epistemological and an ontological reading
+1. $x$ is true
+2. $S$ believes that $x$
+3. $S$ is justified in believing that $x$.
 
-is learned experience say anything about mental states
-ways of knowing that only involve learning through words
+I posit that there are facts (read true statements about object $x$) that cannot be known, let alone proven. For example, let us imagine that it is a fact that aliens do not exist. As of now, we have no suitable methodology or measurements that would allow us to confirm this fact (this would involve an exhaustive search of the universe which, as far as we know, is impossible). Thus, the set of all true statements about object $x$ is equal to or larger than the set of all obtainable knowledge about $x$. To know all physical knowledge about $x$ then does not necessarily imply knowing all physical *facts* about something.
 
+Specifically, we note that the original Mary's Room argument phrases knowing as knowing "all the physical information *there is to obtain* about what goes on when we see [$x$]" (emphasis added). Then, there may be some physical facts Mary may not know that contribute to her experience of experiencing 'yellowness' when seeing a banana for the first time that she may not have known ahead of time, despite her having complete physical knowledge of the banana. As a result, Mary *experiences* something new (namely, seeing yellow) but does not learn anything new.
+
+---
+
+The sharp-eyed may note that the previous argument relies on the fact that the set of all true statements about object $x$ is explicitly larger than the set of all obtainable knowledge about $x$. However, the statement originally assumed that the set of all true statements is *larger than or equal to* the set of all obtainable knowledge. This exposes an edge case which could be problematic where the set of all true statements is *exactly equal to* the set of all obtainable knowledge (i.e. subject $S$ knows all obtainable knowledge about $x$, which coincidentally is also the set of all true statements about $x$).
+
+I will show how this does not prove to be a problem for our argument. I raise one main question: Why is it obvious that she will learn something new about the world through an experience?
+
+To be explicit, let us examine the framing of the Mary's room[^2]:
+
+- An epistemic subject _A_ appears to have no access to particular items of knowledge about a subject _B_
+- _A_ cannot know that _B_ has an experience of a particular quality _Q_ on certain occasions
+- This particular item of knowledge about _B_ is inaccessible to _A_ _because_ _A_ never had experiences of _Q_ herself
+
+This is quite similar to Thomas Nagel's Bat Argument[^3]. Despite everything that Mary knows about seeing colour, she doesn't know what it is like to *see* colour.
+
+Specifically, the Knowledge Argument relies on knowledge that is explicit or codified and can be communicated via language. I argue that, conceptually, one cannot 'know' all there is to know about seeing colour through purely linguistically communicated language. I refer to this 'linguistically unknowable' knowledge as tacit knowledge.
+
+We first examine three different kinds of knowledge[^4]:
+
+1. Acquaintance knowledge: we get to know the characters of others (like friends) by being around them. This is a form of tacit knowledge.
+2. Knowledge-that: propositional knowledge, facts about the world obtained through reading, talking, and consuming content. This can be linguistically communicated.
+3. Knowledge-how: truly knowing how to do something, speaking, reading, etc. This is a form of tacit knowledge.
+
+My position is that knowledge-how *cannot* be learned through only knowledge-that. Ryle calls this the Sufficiency Argument: "how could propositional knowledge be sufficient for knowing how to do something?"[^5]
+
+From this list above, knowledge-that is the only form of transferrable or communicable knowledge. Knowledge-how is a form of tacit knowledge which is inexpressible via language. Knowledge-how, by definition, is only acquired through practical experience in the relevant context. To attempt to reconstruct knowledge-how using knowledge-that is to build a [potemkin village](thoughts/potemkin%20village.md), a sort of 'facade' of understanding. One can read all about playing a piano -- the music theory, the muscles to actuate, the feel of the keys -- yet fail to actually play the piano. Learning to play piano requires an embodied experience of feeling the keys and wiring the feedback between the concept of music in your brain to the motion of playing the notes.
+
+Thus, in Frank Jackson's Knowledge Argument, Mary has all the 'know-that' knowledge about the perception of colour but none of 'know-how' knowledge. The argument depends heavily on Physicalism stating that Mary knows all physical facts about any given object. I have shown through this paper that the premises of Jackson's argument is dubious at best, namely the ability for Mary to know all *physical* facts about $x$. Thus, Physicalism is preserved.
+
+[^1]: https://plato.stanford.edu/entries/knowledge-analysis/
+[^2]: https://plato.stanford.edu/entries/qualia-knowledge/#BasiIdea
+[^3]: https://warwick.ac.uk/fac/cross_fac/iatl/study/ugmodules/humananimalstudies/lectures/32/nagel_bat.pdf
+[^4]: https://plato.stanford.edu/entries/knowledge-how/#LingArgu
+[^5]: *Knowing How and Knowing That: The Presidential Address*, Ryle 1946

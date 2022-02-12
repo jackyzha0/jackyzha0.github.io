@@ -20,3 +20,16 @@ In a world were we seem to be locked behind these little rectangles, how can we 
 
 ## Shifting the nature of work/education
 Can we shift education system away from just assessing students to letting them explore the magical worlds themselves? A more [Mindstorms](thoughts/Mindstorms.md)-esque [constructionist](thoughts/constructionist.md) view on education.
+
+## Magic Circles
+[Source](https://subconscious.substack.com/p/magic-circles)
+
+A “magic circle” is the space in which a game takes place. When we step into the magic circle, the we suspend the rules of ordinary life, and allow the rules of the game to mediate our interactions.
+
+We often mark the boundaries of a magic circle through ceremonies:
+-   Playing the [THX deep note](https://www.youtube.com/watch?v=uYMpMcmpfkI) before a movie
+-   Singing the national anthem before a game
+-   Ringing a gong before yoga practice
+-   Walking down the aisle at a wedding
+
+A lot of concepts similar to [The Grasshopper](thoughts/The%20Grasshopper.md), the lusory attitude as a [boundary](thoughts/boundary%20object.md)

@@ -265,6 +265,7 @@ range(0, 100)
 
 * Multi-level blogs
 	* blogging/reading platform where simplicity level can be adjusted
+	* https://en.wikipedia.org/wiki/StretchText
 * Better personal analytics
 	* small js bundle
 	* doesn't sell user data!!

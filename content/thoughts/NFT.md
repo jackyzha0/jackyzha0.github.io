@@ -10,6 +10,7 @@ tags:
 An NFT need not to contain something. All it guarantees is that it has an "identity and can be traded, transferred, mixed and matched indiscriminately with other things in a social context." See the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md).
 
 ## 3 (progressively more ambitious) ways to think about NFTs
+
 1.  Signifier-value mental models: right to represent things
 2.  Agency-value mental models: right to do things
 3.  Right-to-future-rights mental models: right to expect things

@@ -20,3 +20,8 @@ Emptiness means empty of independent existence
 - Independent Existence: a separate existence. A flower cannot be by herself or have a self-nature (svabhāva).
 
 Thus, form is emptiness but emptiness is form (existence is to depend on others).
+
+## Indra's Net
+[Source](https://en.wikipedia.org/wiki/Indra%27s_net)
+
+![](thoughts/images/Indra's%20Net.png)

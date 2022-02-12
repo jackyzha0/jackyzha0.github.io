@@ -78,8 +78,6 @@ Has many holes in its axioms but again presented here just to learn:
 ## Pratyabhijna Self-awareness
 Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
 
-Solipsism with extra steps? There are two types of realization "I"
-
 - Ultimate Reality (Śiva)
 	- Consciousness as the infinite potential for any and all manifest worlds
 	- Śiva is like a sculptor, a playwright, or a yogin because he spontaneously creates worlds from within himself

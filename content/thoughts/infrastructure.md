@@ -93,4 +93,4 @@ A new form of utopianism in science [fiction](thoughts/fiction.md): "if present 
 
 > The common usually refers to an orientation toward life and value unbound by concepts and divisions of property, and points to the world both as a finite resource that is running out and an inexhaustible fund of human consciousness or creativity
 
-*Sensus communis*: "'common sense' is merely the bourgeois order of truth standing in for the universal, what Stoler calls ‘‘a folk epistemology.’’"
+*Sensus communis*: "'common sense' is merely the bourgeois order of truth standing in for the universal, what Stoler calls ‘‘a folk [epistemology](thoughts/epistemology.md).’’"
