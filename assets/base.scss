@@ -78,7 +78,6 @@ article {
 
   & p {
     margin-bottom: 1.5em;
-    position: relative;
   }
 }
 
@@ -148,10 +147,6 @@ p, tbody, li {
   font-family: Spectral;
   color: var(--gray);
   line-height: 1.5em;
-}
-
-h2, h3 {
-  opacity: 0.9;
 }
 
 blockquote {
@@ -241,14 +236,22 @@ td, th {
 }
 
 article {
+  font-family: Spectral, serif;
+
   & > .meta {
     margin: -1.5em 0 1em 0;
     opacity: 0.7;
   }
 
+  & h1, & h2, & h3, & h4 {
+    & > a {
+      font-family: "JetBrains Mono", monospace;
+    }
+  }
+
   & a {
-    font-family: Spectral;
     font-weight: 600;
+    font-family: Spectral, serif;
 
     &.internal-link {
       text-decoration: none;
@@ -260,16 +263,19 @@ article {
   }
 }
 
+
 .popover {
   position: absolute;
   width: 17em;
-  display: inline-block;
+
   background-color: var(--light);
   padding: 1em;
   border: 1px solid var(--outlinegray);
   border-radius: 5px;
   transform: translate(-50%, 40%);
   opacity: 0;
+  display: inline-block;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
   transition-delay: 0.3s;
@@ -278,6 +284,7 @@ article {
   z-index: 999;
 
   &.visible {
+    visibility: visible;
     opacity: 1;
     transform: translate(-50%, 20%);
   }
