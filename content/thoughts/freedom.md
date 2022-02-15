@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://kernel.community/en/learn/module-3/freedom)
+[Source: Freedom in *Kernel*](https://kernel.community/en/learn/module-3/freedom)
 
 > Freedom is the simple combination of awareness and acceptance. It is the ability to be conscious of the constraints within you live
 

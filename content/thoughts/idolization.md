@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html)
+[Source: On Idolization by *Matthew Wang*](https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html)
 
 "I struggled with this significantly in high school. I had the pleasure of working with some absolutely wonderful people. We debated together and against each other; ran conferences and events; did community service. I’d constantly rave about how insane, out of the world, and unbelievable they were. It was constant and nagging. It seeped into my personality."
 

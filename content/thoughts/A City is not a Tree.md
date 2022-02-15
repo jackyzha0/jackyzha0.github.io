@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://www.patternlanguage.com/archive/cityisnotatree.html)
+[A City is not a Tree](https://www.patternlanguage.com/archive/cityisnotatree.html)
 
 ## Why trees instead of graphs
 Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system. More generally, they are both names for structures of sets.

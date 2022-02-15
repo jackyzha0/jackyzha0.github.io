@@ -6,7 +6,7 @@ tags:
 ---
 
 # Spinoza
-[Source](https://www.theguardian.com/commentisfree/belief/2011/mar/14/spinoza-understanding-emotions)
+[Source: Spinoza -- Understanding the emotions Clare Carlisle](https://www.theguardian.com/commentisfree/belief/2011/mar/14/spinoza-understanding-emotions)
 
 Every individual thing has *conatus*: it strives to persevere in its existence. In order to live, we need power, or energy, and because various external influences can diminish our power, we seek not only to sustain this power, but to increase it.
 

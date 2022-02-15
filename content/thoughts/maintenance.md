@@ -17,7 +17,7 @@ Who are all the maintainers behind the thousands of libraries we depend on each 
 Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maintenance inherently centralized (i.e. we need a centralized body to uphold a [public good](thoughts/public%20goods.md))
 
 ## [Innovation](thoughts/innovation.md) is overvalued
-[Source](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more?utm_source=pocket_mylist)
+[Source: Hail the maintainers by *Andrew Russell and *](https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more)
 
 [The Maintainers Organization](https://themaintainers.org/) and their [fellowship](https://themaintainers.org/summer-fellow)
 

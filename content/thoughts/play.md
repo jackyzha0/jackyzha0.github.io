@@ -9,7 +9,7 @@ Full post on play: [Play to Win: A Post-Work Society](posts/play.md)
 
 Play: the intentional activity of doing the thing you would want to do. 
 
-[Source](https://kernel.community/en/learn/module-1/joyful-subversion)
+[Source: Joyful Subversion in *Kernel*](https://kernel.community/en/learn/module-1/joyful-subversion)
 
 "Play allows us to create and share ownership of spaces in ways which competition cannot. Have as much fun as possible along the way. Turn life into a canvas, rather than a graph with checkpoints. Welcome everyone."
 
@@ -22,7 +22,7 @@ In a world were we seem to be locked behind these little rectangles, how can we 
 Can we shift education system away from just assessing students to letting them explore the magical worlds themselves? A more [Mindstorms](thoughts/Mindstorms.md)-esque [constructionist](thoughts/constructionist.md) view on education.
 
 ## Magic Circles
-[Source](https://subconscious.substack.com/p/magic-circles)
+[Source: Magic circles by *Gordon Brandler*](https://subconscious.substack.com/p/magic-circles)
 
 A “magic circle” is the space in which a game takes place. When we step into the magic circle, the we suspend the rules of ordinary life, and allow the rules of the game to mediate our interactions.
 

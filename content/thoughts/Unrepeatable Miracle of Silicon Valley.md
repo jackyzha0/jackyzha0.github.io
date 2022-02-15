@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://www.aei.org/economics/silicon-valley-an-unrepeatable-miracle-a-long-read-qa-with-margaret-omara/)
+[Source: Silicon Valley: An unrepeatable miracle? with *Margaret O’Mara*](https://www.aei.org/economics/silicon-valley-an-unrepeatable-miracle-a-long-read-qa-with-margaret-omara/)
 
 Podcast Interview with Margaret O’Mara, the author of _[The Code: Silicon Valley and the Remaking of America](https://www.amazon.com/Code-Silicon-Valley-Remaking-America/dp/0399562184)_
 

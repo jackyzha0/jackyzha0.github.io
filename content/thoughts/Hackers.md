@@ -19,7 +19,7 @@ The best way to promote free exchange of information is to have an open system, 
 The difference between bureaucrats and and logical algorithms are that bureaucrats follow *arbitrary rules* whereas algorithms follow *concrete and transparent* rules.
 
 ## Paul Graham
-[Source](http://www.paulgraham.com/hp.html)
+[Source: Hackers and Painters by *Paul Graham*](http://www.paulgraham.com/hp.html)
 
 The art of hacking: for building and exploring for the sake of building and exploring.
 

@@ -13,6 +13,6 @@ Peter Galisons' notion Trading Zone -> sites where representatives of multiple d
 Susain Leigh Star and James Griesemer's Boundary Objects -> objects which both inhabit several intersecting social worlds and satisfy the informational requirements of each (e.g. maps, diagrams, standardized forms, notation, etc.)
 
 ## Ecotone
-[Source](https://en.wikipedia.org/wiki/Ecotone)
+[Source: Ecotone, *Wikipedia*](https://en.wikipedia.org/wiki/Ecotone)
 
 An ecotone is a transition area between two biological communities, where two communities meet and integrate. It may be narrow or wide, and it may be local (the zone between a field and forest) or regional (the transition between forest and grassland ecosystems)

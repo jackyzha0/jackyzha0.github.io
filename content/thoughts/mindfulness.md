@@ -28,6 +28,8 @@ Or if things are going well:
 3. What was beautiful today?
 
 ## Designing for busy-by-default
-[Source](https://aaronzlewis.com/blog/2019/02/11/fools-and-their-time-metaphors/)
+[Source: Fools and their time metaphors by *Aaron Z. Lewis*](https://aaronzlewis.com/blog/2019/02/11/fools-and-their-time-metaphors/)
 
 "The subjective quality of time—how it feels from the inside—is missing entirely. If the idea of a “subjective calendar” sounds too far-out, consider the [alternative maps](https://www.theatlantic.com/entertainment/archive/2011/05/human-cartography-maps-that-define-the-mind/238416/) made by creative cartographers. They add new meaning by distorting conventional representations of geography. Why can’t our calendars follow suit?"
+
+See also: [desire paths](thoughts/desire%20paths.md)

@@ -16,7 +16,7 @@ Web3: shouldering the cost of maintenance among the users rather than centralizi
 Do Eastern vs Western cultures have diff takes on this? "Over the course of the 20th century, open societies that celebrated diversity, novelty, and progress performed better than closed societies that defended uniformity and order."
 
 ## MVP vs Product
-[Source](https://danluu.com/sounds-easy/)
+[Source: I could do that in a weekend! by *Dan Luu*](https://danluu.com/sounds-easy/)
 
 Not just building out an initial system, but also about how maintainable and scalable the system is for the foreseeable future.
 

@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://kernel.community/en/learn/module-1/playdough-protocols)
+[Source: Playdough Protocols in *Kernel*](https://kernel.community/en/learn/module-1/playdough-protocols)
 
 Integrity of information is critical to relationships of [trust](thoughts/trust.md) as we saw in the episode on [game theory](thoughts/game%20theory.md).
 

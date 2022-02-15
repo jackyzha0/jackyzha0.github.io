@@ -28,7 +28,7 @@ Very 1984-line-of-thought but those who control the past, how we remember and wh
 Our tools of memory should be democratized and public. These tools are a [public good](thoughts/public%20goods.md). They are, quite literally, the [infrastructure](thoughts/infrastructure.md) for mental representations and operations. These are the patterns the dictate our very mental processes.
 
 ## Kernel
-[Source](https://kernel.community/en/learn/module-3/remember)
+[Source: Remember in *Kernel*](https://kernel.community/en/learn/module-3/remember)
 
 We live in an [information](thoughts/information.md) age. The amount of data we produce far outweighs what we consume, so much so that its extended far beyond our ability to make meaningful use of it. 
 
@@ -52,7 +52,7 @@ Is it possible to automatically pick up repeated digital [desire paths](thoughts
 
 The focus of modern information systems is moving from "data-processing" towards "concept-processing", meaning that the basic unit of processing is less and less an atomic piece of data and is becoming more a semantic concept which caries an interpretation and exists in a [context](thoughts/context.md) with other concepts.
 
-[Source](https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management)
+[Source: Automated knowledge discovery in advanced knowledge management](https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management)
 
 Are there ways to 'breadcrumb' how we navigate? Even something as simple as option+click to leave a crumb and when finishing a session, you can save parts of the trail as a flow.
 
@@ -67,3 +67,9 @@ Is it possible to create mediums for thought that convey 'awe and mystery and su
 ### Execution
 Can we embed computation into our notes? Create APIs out of our thoughts and concepts? Compose theorems just as easily as we chain function calls?
 
+## Activism
+[Source: On Gathering, *Mindy Seu*](https://www.shiftspace.pub/on-gathering-mindy-seu)
+
+Memory work of this sort is also a form of activism. Whose memories are saved and retold to future generations?
+
+After a conversation, all parties maintain ownership of what transpired, and they continue to hold ties to one another. This form of storytelling is not predetermined, but develops through its unfolding.

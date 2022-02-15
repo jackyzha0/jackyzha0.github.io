@@ -23,7 +23,7 @@ The Greenhouse Gas (GHG) Protocol consists of "Scopes", each of which has multip
 Attempting to pay people to offset carbon through [carbon credits](thoughts/carbon%20credits.md)
 
 ## Investment Facts!
-[Source](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
+[Source: Climate tech $16b mid-year investment action report](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
 
 * Compared to just a year before, there were **~50% more climate deals** in Q2’21 vs Q2’20
 * In the first half of 2021, climate tech startups raised **~$16b across ~250 venture deals**
@@ -32,7 +32,7 @@ Attempting to pay people to offset carbon through [carbon credits](thoughts/carb
 ![Investment Diversity across sectors](https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff4c664b-816c-45ef-9e5d-720d1b279c2f_861x475.png)*Investment Diversity across sectors*
 
 ## Neutral Infrastructure
-[Source](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and other [source](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
+Source: [Microsoft Finds Underwater Data Centers Practical](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and [Power, Pollution and the Internet, NYT](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
 
 Might be software infrastructure but it has lots of [political](thoughts/Do%20Artifacts%20Have%20Politics.md) implications (e.g. climate impact, territory disputes, etc.). It's 'reduced cost' does not factor in long-term negative externalities like warming the ocean. (also: [software and politics](thoughts/software%20and%20politics.md))
 

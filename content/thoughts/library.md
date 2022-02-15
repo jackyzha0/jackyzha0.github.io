@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://placesjournal.org/article/fugitive-libraries)
+[Source: Fugitive Libraries by *Shannon Mattern*](https://placesjournal.org/article/fugitive-libraries)
 
 Libraries are not universally welcoming spaces. At least 87% of librarians are white, and stories of discrimination/hostility for their race/class/sexual identity/disability are not uncommon. There is a lot of reinforcement of outdated values embedded in classification.
 

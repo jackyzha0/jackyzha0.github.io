@@ -10,7 +10,7 @@ On methods to reclaim ourselves from the [attention economy](thoughts/attention%
 [reflect](posts/reflect.md) tries to do this a little
 
 ## Time
-[Source](https://kernel.community/en/learn/module-3/time)
+[Source: The present time by *Kernel*](https://kernel.community/en/learn/module-3/time)
 
 > Instead of having sequential conferences on bulletin boards like The Well where you would take hours to **craft a response** to something, we ended up with a digital space where we were constantly being interrupted [...] We end up in this state of constant emergency interruption which I don't think is healthy neurologically or culturally.
 

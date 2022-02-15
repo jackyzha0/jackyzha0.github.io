@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Tools for Communication
-[Source](https://twitter.com/vgr/status/1460338562231013376)
+[Source: vgr on Twitter](https://twitter.com/vgr/status/1460338562231013376)
 
 Related: tools for [digital commons](thoughts/digital%20commons.md)
 

@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://distill.pub/2017/research-debt/)
+[Source: Research Debt in *Distill Pub*](https://distill.pub/2017/research-debt/)
 
 Partly works because we can utilize [collaborative thinking](/posts/collaborative-thinking). Related: [knowledge distillation](thoughts/knowledge%20distillation.md), [teaching](thoughts/teaching.md)
 

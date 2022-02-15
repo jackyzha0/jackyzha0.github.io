@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://plato.stanford.edu/entries/chinese-room/)
+[Source: Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/chinese-room/)
 
 Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand language but could not produce real understanding.
 

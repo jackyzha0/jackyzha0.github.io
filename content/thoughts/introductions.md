@@ -21,7 +21,7 @@ Cooley imagined affiliations and interests as a system of coordinates, with each
 "These 'reciprocally constructing phenomena' that may empower one person with increasing self-actualization, burden others with exponentially debilitating oppression." Related: the matrix of domination and intersectional theory in [Design Justice](thoughts/Design%20Justice.md)
 
 ### About Page
-[Source](https://kortina.nyc/about-andrew-kortina/?curius=1296)
+[Source: About Andrew Kortina, Wide-Eyed](https://kortina.nyc/about-andrew-kortina/?curius=1296)
 
 "It strikes me that these labels are more often conversation enders than conversation starters, attempts to reduce a vast complexity into a neat, little word, with the lossiest of compression algorithms."
 

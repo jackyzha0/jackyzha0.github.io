@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Source: [Glushko](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-intentional-arrangement/)
+Source: [The Discipline of Organizing by *Glushko*](https://berkeley.pressbooks.pub/tdo4p/chapter/the-concept-of-intentional-arrangement/)
 
 > explicit or implicit acts of organization by people, or by computational processes acting as proxies for, or as implementations of, human [intentionality](thoughts/intentionality.md)
 

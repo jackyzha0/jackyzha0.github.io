@@ -7,7 +7,7 @@ tags:
 
 > Information is a thing that conveys meaning about stuff, transmitted from one place to another.
 
-[Source](https://www.youtube.com/watch?v=pfP7AjwIZI8)
+[Source: What is Library & Information Science? by *Stacks & Facts on YouTube*](https://www.youtube.com/watch?v=pfP7AjwIZI8)
 
 We store, access, and organize information through [information systems](thoughts/information%20system.md).
 
@@ -29,7 +29,7 @@ Data is transformed into Information, which is transformed into Knowledge, which
 2. Information: data after aggregation, processing, analyzing, formatting, and organization to add meaning and context
 
 ### Information is political
-[Source](https://faculty.washington.edu/ajko/books/foundations-of-information/#/power)
+[Source: Foundations of Information by *Amy J. Ko*](https://faculty.washington.edu/ajko/books/foundations-of-information/#/power)
 
 As information becomes more abundant and saturated in our world, has information been any more of less important/necessary? We may have access to more of it, but it’s not obvious that this is better—just different.
 

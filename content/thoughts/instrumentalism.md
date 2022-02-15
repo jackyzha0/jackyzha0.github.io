@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization)
+[Source: Value Beyond Instrumentalization by *Jasmine Wang*](https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization)
 
 Reminiscent of the [move fast and break things](thoughts/move%20fast%20and%20break%20things.md) Silicon Valley ethic.
 

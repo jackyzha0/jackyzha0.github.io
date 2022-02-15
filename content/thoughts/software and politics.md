@@ -8,7 +8,7 @@ tags:
 [Do Artifacts Have Politics](thoughts/Do%20Artifacts%20Have%20Politics.md)? Yes, they do.
 
 ## Politics for Software
-[Source](https://sbuss.substack.com/p/politics-for-software-engineers-part-2)
+[Source: Politics for Software Engineers by *Steven Buss*](https://sbuss.substack.com/p/politics-for-software-engineers-part-2)
 
 "Blockchain voting addresses how to vote in a trust-less society, but a trust-less society cannot have a functioning democracy." (see: [trust](thoughts/trust.md))
 

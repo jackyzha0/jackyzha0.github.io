@@ -34,7 +34,7 @@ Moderation gets problematic when it is used to target and discriminate against i
             -   can never fully/properly frame yourself
 
 ## The Art of Online Governance
-[Source](https://yakcollective.mirror.xyz/lFejXGX-9kLUp5V9qkTw_uoWz06bp1idlZm-ft6z4Ms?curius=1294)
+[Source: The Yak Online Governance Primer](https://mirhub.xyz/post/0x3b894393fbd9c879dc8d16d4d18277831bff9fa1/ajdo_so3gw34cltwbwnc2od3s0yt3us9c-c2nnpq_us/)
 
 ![](/thoughts/images/online-governance-regimes.png)
 
@@ -55,7 +55,7 @@ Four Online Governance Regimes:
 	- those involved with long-standing research/scholarship in governance and management (e.g. from academia) often approach the question as though the context of new digital tools, information ubiquity, and unusual organizing aims changes almost nothing
 
 ## Turing-Complete Governance
-[Source](https://baby.mirror.xyz/O7a922A-9zT4C4UwssRExkftdHywJ-13sR2rxQ-t__k?curius=1294)
+[Source: Turing-Complete Governance by *Saffron Huang*](https://baby.mirror.xyz/O7a922A-9zT4C4UwssRExkftdHywJ-13sR2rxQ-t__k?curius=1294)
 
 - "Auctioning off or loaning away voting power to those uninvested in quality governance, or want to steer governance towards selfish ends misaligned with the community, is generally a terrible idea." (see: [Plato's Ship of State](thoughts/Plato's%20Ship%20of%20State.md))
 - Skeptical about normalizing airdrops as reward for early investors

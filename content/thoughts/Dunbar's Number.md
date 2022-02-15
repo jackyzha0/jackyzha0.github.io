@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships)
+[Source: The Limits of Friendship by *Maria Konnikova*](https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships)
 
 ![](/thoughts/images/dunbar.png)
 

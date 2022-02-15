@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia)
+[Source: An Even More Inconvenient Truth from *ProPublica*](https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia)
 
 Can we create 'credits' that companies can buy to offset their emissions by 'proving' that a forest is sequestering a certain amount of carbon?
 
@@ -51,7 +51,7 @@ Gerrymandering but for trees? A lot of the offset calculations are based off of 
 This could actually benefit indigenous tribes because of their more conservative approach to logging -- in fact, offsets can enable tribes to reduce logging. However, "some tribal members are [deeply uncomfortable](https://www.newyorker.com/news/dispatch/how-carbon-trading-became-a-way-of-life-for-californias-yurok-tribe) with the idea of selling offsets to companies like this even if they are legitimate, fearing they’re effectively profiting from pollution."
 
 ### Good Offsets?
-[Source](https://negative.sanctuary.computer/offsetting)
+[Source: Buying Offsets](https://negative.sanctuary.computer/offsetting)
 
 1. Transparency: any individual credits can not be purchased more than once
 2. Permanence: credits should not be liable to be undone

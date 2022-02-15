@@ -20,7 +20,7 @@ Questions to think about:
 -   what does "hacking racism" mean? what about social good hackathons in general? how realistic is it so try and solve some sort of large societal issue in the span of a few days?
 
 ## Hackathons as co-optation ritual
-[Source](https://academicworks.cuny.edu/gc_pubs/490/)
+[Source: Hackathons as Co-optation Ritual: Socializing Workers and Institutionalizing Innovation in the “New” Economy](https://academicworks.cuny.edu/gc_pubs/490/)
 
 [Hackathons] reshape unpaid and precarious work. Writing code and building apps for free becomes an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all.
 

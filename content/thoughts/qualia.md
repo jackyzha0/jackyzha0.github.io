@@ -16,7 +16,7 @@ Traditionally have second-order properties
 - Directly apprehended (not mediated by thought, inference)
 
 ## Vibes
-[Source](https://reallifemag.com/nameless-feeling/)
+[Source: Nameless Feeling in *Real Life Mag*](https://reallifemag.com/nameless-feeling/)
 
 Neural networks just assess vibes, they are the literal technical implementation of "no thoughts, just vibes".
 

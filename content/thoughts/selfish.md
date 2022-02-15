@@ -34,14 +34,14 @@ How do I unlearn the negative connotations associated with being selfish?
 "We tend to wear our ability to get by on little sleep as some sort of badge of honor that validates our work ethic. But what it really is is a profound failure of self-respect and of priorities. What could possibly be more important than your health and your sanity, from which all else springs?" [Source](https://www.themarginalian.org/2019/10/23/13-learnings-13-years/)
 
 ## In Tech
-[Source](https://priyaghose.io/2021-09-03-the-technofuturists-oath/)
+[Source: the technofuturist's oath by *Priya*](https://priyaghose.io/2021-09-03-the-technofuturists-oath/)
 
 *If we don’t make our numbers, we won’t get the next round of funding. And without that funding, we won’t ever fulfill on our positive-sum, idealistic mission that will benefit everyone.* is a very common thing to hear people working at startups scrounging at money say.
 
 Does competition always kill positive-sum worlds?
 
 ## Intelligently Selfish
-[Source](https://www.skepticspath.org/blog/how-to-be-intelligently-selfish-dalai-lama/)
+[Source: How to be Intelligently Selfish -- *Dalai Lama*](https://www.skepticspath.org/blog/how-to-be-intelligently-selfish-dalai-lama/)
 
 His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness -- caring about others.
 

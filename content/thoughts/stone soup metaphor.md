@@ -6,7 +6,7 @@ tags:
 ---
 
 ### Stone Soup Metaphor
-[Source](https://en.wikipedia.org/wiki/Stone_Soup)
+[Source: Stone Soup in *Wikipedia*](https://en.wikipedia.org/wiki/Stone_Soup)
 
 > Some travelers come to a village, carrying nothing more than an empty cooking pot. Upon their arrival, the villagers are unwilling to share any of their food stores with the very hungry travelers. Then the travelers go to a stream and fill the pot with water, drop a large stone in it, and place it over a fire. One of the villagers becomes curious and asks what they are doing. The travelers answer that they are making "stone [soup](https://en.wikipedia.org/wiki/Soup "Soup")", which tastes wonderful and which they would be delighted to share with the villager, although it still needs a little bit of garnish, which they are missing, to improve the flavor.
 > 

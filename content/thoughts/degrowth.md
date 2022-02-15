@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://noahpinion.substack.com/p/people-are-realizing-that-degrowth)
+[Source: People are realizing that degrowth is bad by *Noah Smith*](https://noahpinion.substack.com/p/people-are-realizing-that-degrowth)
 
 If we interpret "degrowth" as the decision to fix global GDP at its current level, this completely screws over an the existing 40% of the global population that earns less than $2.50 a day while the already rich continue to enjoy their cushy life styles.
 

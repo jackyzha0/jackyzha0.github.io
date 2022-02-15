@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://kernel.community/en/learn/module-2/banking)
+[Source: Banking in the Shadows, *Kernel*](https://kernel.community/en/learn/module-2/banking)
 
 T account or balance sheet-style thinking is a banker's way of being able to hold complementary opposites and demand in mind.
 

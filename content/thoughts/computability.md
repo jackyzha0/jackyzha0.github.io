@@ -6,7 +6,7 @@ tags:
 ---
 
 ## The computational metaphor
-[Source](https://palladiummag.com/2020/08/04/digital-salon-with-stephen-wolfram-building-a-new-kind-of-science/)
+[Source: Digital Salon with Stephen Wolfram: Building a New Kind of Science, *Palladium Mag*](https://palladiummag.com/2020/08/04/digital-salon-with-stephen-wolfram-building-a-new-kind-of-science/)
 
 There is a creaking issue in universities where 70% of incoming students want to study computer science but only 5% of faculty is in computer science. What's really going on is we want to study computer science as a proxy for the computational paradigm for everything around us
 

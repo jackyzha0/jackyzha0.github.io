@@ -14,7 +14,7 @@ A good standard is if I can hit 'export all data' on a platform and I can comple
 Related: [tools for thought](thoughts/tools%20for%20thought.md)
 
 ## Beyond Windows
-[Source](https://alexanderobenauer.com/labnotes/002/)
+[Source: Universal data portability by *Alexander Obenauer*](https://alexanderobenauer.com/labnotes/002/)
 
 A modern day [HyperCard](https://en.wikipedia.org/wiki/HyperCard). What other types of [interaction design](thoughts/interaction%20design.md) can we facilitate?
 
@@ -41,3 +41,9 @@ Markers like 'today' that point to a new date every day. Auto generate a day-sum
 
 ### Chronological Data Querying
 What data was created a few days ago? etc.
+
+## Adverserial Interoperability
+[Source: Adversarial Interoperability by *Cory Doctorow*](https://www.eff.org/deeplinks/2019/10/adversarial-interoperability)
+
+> When you create a new product or service that plugs into the existing ones _without the permission_ of the companies that make them. Think of third-party printer ink, alternative app stores, or independent repair shops that use compatible parts from rival manufacturers to fix your car or your phone or your tractor.
+

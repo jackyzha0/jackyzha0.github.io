@@ -7,7 +7,7 @@ tags:
 
 > Communities organized around a shared set of rules enforced on the blockchain through a smart contract. 
 
-[Source](https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o)
+[Source: A beginner’s guide to DAOs by *Linda Xie*](https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o)
 
 DAOs give us structured ways to [collect](https://foundation.app/blog/pleasrdao), [invest](https://metacartel.xyz/), and [build](https://raidguild.org/) together.
 

@@ -22,6 +22,6 @@ Emptiness means empty of independent existence
 Thus, form is emptiness but emptiness is form (existence is to depend on others).
 
 ## Indra's Net
-[Source](https://en.wikipedia.org/wiki/Indra%27s_net)
+[Source: Indra's net on *Wikipedia*](https://en.wikipedia.org/wiki/Indra%27s_net)
 
 ![](thoughts/images/Indra's%20Net.png)

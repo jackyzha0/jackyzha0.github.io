@@ -20,7 +20,7 @@ Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-imp
 - [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
 
 ### Vitalik Response
-[Source](https://www.reddit.com/r/ethereum/comments/ryk3it/my_first_impressions_of_web3/hrrz15r/)
+[Source: Vitalki's Reddit Response](https://www.reddit.com/r/ethereum/comments/ryk3it/my_first_impressions_of_web3/hrrz15r/)
 
 Levels of connecting to the blockcahin
 1.  Use a Binance account.

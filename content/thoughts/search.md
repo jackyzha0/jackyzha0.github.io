@@ -54,7 +54,7 @@ So used to digital extractivism and data mining that it has become hidden to us 
 The boiling frog problem -- we don't notice we're dying until it's too late.
 
 ## Boutique Search Engines
-[Source](https://sariazout.mirror.xyz/7gSSTJ96SEyvXeljymglO3zN4H6DCgVnrNZq8_2NX1A)
+[Source: Re-Organizing the World’s Information: Why we need more Boutique Search Engines by *Sari Azout*](https://sariazout.mirror.xyz/7gSSTJ96SEyvXeljymglO3zN4H6DCgVnrNZq8_2NX1A)
 
 We've returned to the *curated web* with Notion, Airtable, and Readwise collections, yet we haven't found good ways to make them multiplayer.
 
@@ -81,7 +81,7 @@ Is it possible to move away from the ‘feed’-based model of browsing the soci
 "I realized that the experience of research is exactly opposite to the way I usually often encounter information online. When you research a subject, you make a series of important decisions, not least what it is you want to research, and you make a commitment to spend time finding information that doesn’t immediately present itself. You seek out different sources that you understand may be biased for various reasons. The very structure of the library… allows for browsing and close attention. Nothing could be more different from the news feed, where these aspects of information—provenance, trustworthiness, or what the hell it’s even about—are neither internally coherent nor subject to my judgment. Instead this information throws itself at me in no particular order, auto-playing videos and grabbing me with headlines. And behind the scenes, it’s me who’s being researched."
 
 ## Search Engine to Oracle
-[Source](https://outline.com/ZhCArb)
+[Source: Language models like GPT-3 could herald a new type of search engine in *MIT Technology Review*](https://outline.com/ZhCArb)
 
 transition from aggregator of information to oracle
 
@@ -99,7 +99,9 @@ They freely provide, it seems, a sorting of the wheat from the chaff, and answer
 "Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil) 
 
 ## Internet topology as shaped by search engines
-[Source](https://louisedrulhe.fr/internet-atlas/)
+[Source: Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/)
+
+![](thoughts/images/internet-atlas.png)
 
 ![](/thoughts/images/search%20engine%20space.png)*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
 

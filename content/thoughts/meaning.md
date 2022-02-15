@@ -9,7 +9,7 @@ tags:
 
 A less philosophical discussion of [semantics](thoughts/semantics.md)
 
-[Source](https://kernel.community/en/learn/module-1/meaning)
+[Source: Meaning in *Kernel*](https://kernel.community/en/learn/module-1/meaning)
 
 "The fight for liberty is not conducted with natural language in the form of political rhetoric: it is **hashed out in technical protocols**."
 

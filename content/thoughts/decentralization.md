@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
+[Source: The Meaning of Decentralization by *Vitalik Buterin*](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
 
 ![Decentralization Diagram](https://miro.medium.com/max/1094/1*WG5_xDDwHv0lMaVUYLNbVA.png)
 
@@ -18,7 +18,7 @@ Notes:
 * Architectural centralization often leads to political centralization (at least in the physical world, less true for digital spaces)
 
 ## Centralization
-[Source](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e)
+[Source: Why Decentralization Matters by *Chris Dixon*](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e)
 
 Follow a predictable life cycle along the S-shaped adoption curve.
 
@@ -32,7 +32,7 @@ At the beginning, will do everything they can to garner usage and appear more va
 3. **Collusion resistance**
 
 ### Decentralization as Activism
-[Source](https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html)
+[Source: Resistant protocols: How decentralization evolves by *John Backus*](https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html)
 
 > Decentralization doesn't work in a vacuum, mainstream decentralized systems require a degree of activism to keep the system working
 
@@ -60,7 +60,7 @@ However, after considering coercion, decentralization becomes much more importan
 #### Collusion Resistance
 > Collusion is "coorindation that we don't like"
 
-[consensus](thoughts/consensus.md) model relies on **uncoordinated choice model**, the asusmption that the game consists of many small actors that make decisions independently
+[Consensus](thoughts/consensus.md) model relies on **uncoordinated choice model**, the asusmption that the game consists of many small actors that make decisions independently
 
 Yet, 90% of the entire Bitcion network's mining power can show up at the same conference (as 7 men). Yet, some coordination is good (e.g. strong community spirit and banding together to implement patches and fix bugs)
 
@@ -69,7 +69,6 @@ Ways to counteract:
 2. Try to make a distinction between beneficial coordination and collusion and make the former easier and the latter harder
 
 ## Internet
-
 Imagine the surface of the internet as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.
 
 Instead of creating a new webpage, Internet professionals and private users tend to go to a Facebook Page and therefore open content hosted on the slope of a dominant curve. 

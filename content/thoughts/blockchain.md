@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58)
+[Source: A Primer to Web3](https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58)
 
 The universal message bus.
 
@@ -44,7 +44,7 @@ In actuality, the *layer* at which change is happening is much deeper (more [inf
 Also just leans heavily in the direction of [digital permanence](thoughts/digital%20permanence.md)
 
 ## Data
-[Source](https://kernel.community/en/learn/module-1/promise-blockchains)
+[Source: Ethereal Dreamers by *Kernel*](https://kernel.community/en/learn/module-1/promise-blockchains)
 
 "Back in early history, the databases were singular, existing in an atomic state with one DB per enterprise. The network existed in some relational sense between enterprises, but because DB's were so fragile they never spoke directly to the network because then they broke. Even if you did connect DBs somewhat directly, the DB encodes the worldview of the organization and different organizations have different worldviews, so the DBs can't speak to each other clearly."
 

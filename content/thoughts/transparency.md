@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://digitaltattoo.ubc.ca/2020/03/30/guest-post-whats-in-a-category-definitions-of-authenticity-transparency-and-the-social-bot/)
+[Source: What’s in a Category: Definitions of Authenticity, Transparency, and the Social-Bot by *Eseohe Ojo*](https://digitaltattoo.ubc.ca/2020/03/30/guest-post-whats-in-a-category-definitions-of-authenticity-transparency-and-the-social-bot/)
 
 The process of identifying users is how social media platforms monetize their operations
 

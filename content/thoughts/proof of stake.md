@@ -11,7 +11,7 @@ The stake is a financial motivator for users not to validate or create fraudulen
 
 This validation is known as attesting. You can think of attesting as saying "this block looks good to me." If you attest to malicious blocks, you lose your stake. 128 validators are required to attest to a block to achieve finality on it -- this 128 is known as the committee. The committee works on 32 blocks or 'slots' before disbanding -- this duration is known as an epoch.
 
-[Source](https://eth.wiki/en/concepts/proof-of-stake-faqs)
+[Source: Ethereum Wiki](https://eth.wiki/en/concepts/proof-of-stake-faqs)
 
 TLDR; a set of validators take turns proposing and voting on the next block, and the weight of each validator’s vote depends on the size of its deposit (i.e. stake)
 

@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Method of Loci
-[Source](https://en.wikipedia.org/wiki/Method_of_loci)
+[Source: Method of Loci in *Wikipedia*](https://en.wikipedia.org/wiki/Method_of_loci)
 
 Can we create associations between digital/physical space and concept space? Create a digital library of our concepts and ideas?
 

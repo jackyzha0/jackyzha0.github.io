@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source]([https://www.cs.virginia.edu/~robins/YouAndYourResearch.html](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+[Source: You and Your Research by *Richard Hamming*](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
 "He who works with the door open gets all kinds of interruptions, but he also occasionally gets clues as to what the world is and what might be important." — Richard hamming
 

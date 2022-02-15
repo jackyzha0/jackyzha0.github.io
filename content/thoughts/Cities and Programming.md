@@ -5,7 +5,8 @@ tags:
 - sapling
 ---
 
-[Source](http://tomasp.net/blog/2020/cities-and-programming/)
+[Source: On architecture, urban planning and software construction
+ by *Tomas Petricek*](http://tomasp.net/blog/2020/cities-and-programming/)
 
 Mostly about maintenance of cities and parallels with maintaining software.
 

@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://www.briantimar.com/notes/mimetic/mimetic/)
+[Source: Mimetic by *Brian Timar*](https://www.briantimar.com/notes/mimetic/mimetic/)
 
 [...There was a] positive feedback loop that encouraged me to spend ever-increasing amounts of time on my work. Humans inherit convictions [mimetically](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard#Mimetic_desire) from each other — we learn what to value by imitating our peers. Maybe this is why we tend to want to conform to ingroup expectations in [communities](/thoughts/communities) so much?
 

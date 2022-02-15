@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://kernel.community/en/learn/module-2/debt)
+[Source: Debt - the first 5000 years, David Graeber on *Kernel*](https://kernel.community/en/learn/module-2/debt)
 
 Related: [money](thoughts/money.md)
 

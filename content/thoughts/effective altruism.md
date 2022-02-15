@@ -24,7 +24,7 @@ How do we time donations to maximize impact? Turns out there's no 'goldilocks zo
 Working and being vocal about your work is a way to amplify your effective impact radius. By doing so, you can change other people's thinking around giving, money, and charity through discussion
 
 ## Shallow Puddle Analogy
-Story from [source](https://forum.effectivealtruism.org/posts/SwG8Tj9RkG8DzpM4f/the-drowning-child-and-the-expanding-circle)
+Story from [source: The Drowning Child and the Expanding Circle by *Peter Singer*](https://forum.effectivealtruism.org/posts/SwG8Tj9RkG8DzpM4f/the-drowning-child-and-the-expanding-circle)
 
 One morning, you notice a child has fallen in and appears to be drowning. To wade in and pull the child out would be easy, but it will mean that you get your clothes wet and muddy, and by the time you go home and change you will have missed your first class.
 

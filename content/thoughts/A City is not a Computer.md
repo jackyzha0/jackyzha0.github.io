@@ -8,7 +8,7 @@ tags:
 Reboot event with Shannon Mattern on her new book _A City Is Not A Computer_. Main summary and introduction on the [Substack here](https://reboothq.substack.com/p/mattern).
 
 ## Article Notes
-[Source](https://placesjournal.org/article/a-city-is-not-a-computer/)
+[Source: A City is not a Computer](https://placesjournal.org/article/a-city-is-not-a-computer/)
 
 ### Sidewalk Labs
 Doctoroff, the founder of Sidewalk Labs: "What would a city look like if you started from scratch in the internet era — if you built a city 'from the internet up?'"

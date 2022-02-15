@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://ncase.me/trust/)
+[Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)
 
 For [trust](thoughts/trust.md) to evolve:
 1. Repeat interactions must happen. Trust keeps a relationship going, but you need the knowledge of possible future interactions *before* trust can evolve

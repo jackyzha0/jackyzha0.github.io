@@ -18,7 +18,7 @@ Postulates that names of participants can have at most 2 of these 3 properties
 Maybe another version of [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)?
 
 ## Sybil Attacks
-[Source](https://en.wikipedia.org/wiki/Sybil_attack)
+[Source: Sybil attack on *Wikipedia*](https://en.wikipedia.org/wiki/Sybil_attack)
 
 Sybil attacks are also called sock puppetry
 
@@ -30,7 +30,7 @@ Creating a large number of pseudonymous identities and uses them to gain a dispr
 3. Exit Penalty
 
 ## Byzantine Faults
-[Wikipedia](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper](https://lamport.azurewebsites.net/pubs/byz.pdf)
+Sources: [Byzantine Faults on *Wikipedia*](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper on the Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
 
 A **Byzantine fault** is any fault presenting different symptoms to different observers. A **Byzantine failure** is the loss of a system service due to a Byzantine fault in systems that require [consensus](thoughts/consensus.md) between notes.
 

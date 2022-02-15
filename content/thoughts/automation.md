@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://www.noemamag.com/ai-blockchain-human-autonomy-future/)
+[Source: What Tech Futurists Get Wrong About Human Autonomy by *Divya Siddarth and Kelsi Nabben*](https://www.noemamag.com/ai-blockchain-human-autonomy-future/)
 
 [AI systems](posts/ai-systems.md) and [blockchain](thoughts/blockchain.md) both means to achieve the same "underlying desire: to implicitly or explicitly abstract away human fallibility in service of a fully automated vision of perfection."
 

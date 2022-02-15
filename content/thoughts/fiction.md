@@ -18,7 +18,7 @@ In part why I really like reading things like The Book of Predictions where peop
 Where are our futures with no famine and disease? With a clean and healthy planet? Of universal free access to information? Where did the ambition go?
 
 ## Social Theory as Science
-[Source](https://www.revoltlib.com/anarchism/possibilities-essays-on-hierarchy-graeber-david/part-3-chapter-10-social-theory-as-science/)
+[Source: Possibilities -- Social Theory As Science and Utopia by *David Graeber*](https://www.revoltlib.com/anarchism/possibilities-essays-on-hierarchy-graeber-david/part-3-chapter-10-social-theory-as-science/)
 
 "Where, in earlier generations, science fiction projections seemed to regularly become reality a generation later, now they remain trapped on the screen--even if the screen images look increasingly realistic." (321)
 

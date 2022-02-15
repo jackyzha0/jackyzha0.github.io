@@ -11,4 +11,6 @@ Friendship as witnesses to eudaimonic well-being.
 
 > the type of happiness or contentment that is achieved through self-actualization and having meaningful purpose in one's life
 
+adrienne maree brown described relationships like a spiderweb—diaphanous yet strong, thick yet porous. “A web allows things to fall through, like a sieve,” she said. “Some things are not meant to be caught.”
+
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)

@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
- [Source](https://statespace.substack.com/p/the-prestige-trap)
+ [Source: The Prestige Trap by *Wes De Silvestro*](https://statespace.substack.com/p/the-prestige-trap)
  
  Is this why so many people want to join 'prestigious' places to work like big tech or consulting? To keep doors open?
  

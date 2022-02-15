@@ -54,7 +54,7 @@ I am a person who needs a very low friction way to dump new ideas and things to 
 
 I use [Draft](https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijlaapmiilabpldhmhekeionfh?hl=en) by Slite to have a 'scratch space' in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It's my Apple Notes for my laptop.
 
-I use Pocket to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
+I use [Curius](https://curius.app/) to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
 
 Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For [projects](thoughts/idea%20list.md), writing, and all sorts of reading. Even when reading books, I don't like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.
 
@@ -76,3 +76,7 @@ Through tending to this garden [in public](thoughts/building%20in%20public.md), 
 Maybe you'll find this as an incentive to start your own.
 
 > I'd like digital garden to be like a bonsai tree. Carefully growing, trimming, pruning, artfully shaping a beautiful tree of resources and ideas
+
+![https://www.are.na/block/2175982](thoughts/images/garden-bird.png)*'Everyone tends his or her own little [epistemological](thoughts/epistemology.md)' garden, growing ideas from seed and sharing them with anyone who comes by.*
+
+[Image Source](https://www.are.na/block/2175982)

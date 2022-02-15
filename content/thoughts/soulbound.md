@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://vitalik.ca/general/2022/01/26/soulbound.html)
+[Source: Soulbound by *Vitalik*](https://vitalik.ca/general/2022/01/26/soulbound.html)
 
 ## Non-transferability
 > A soulbound item, once picked up, cannot be transferred or sold to another player.

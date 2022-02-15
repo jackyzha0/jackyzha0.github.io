@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://jvns.ca/blog/confusing-explanations/)
+[Source: Patterns in confusing explanations by *Julia Evans*](https://jvns.ca/blog/confusing-explanations/)
 
 Heavily linked with [research debt](thoughts/research%20debt.md). What makes for effective [teaching](thoughts/teaching.md) and knowledge distillation?
 
@@ -18,8 +18,6 @@ Content addressing
 -   https://newsela.com/about/content/
 
 ## Confusing Explanations
-[Source](https://jvns.ca/blog/confusing-explanations/)
-
 Top things to avoid in explanations and blog posts
 1. **Inconsistent expectations of the reader's knowledge**: it might explain in great detail how a `for` loop works but the next paragraph immediately following implicitly assumes knowledge like how `malloc` works for example. In this case, nearly zero people will understand how `malloc` works without understanding how a `for` loop works. Pick 1 specific person and write for them
 2. **Strained Analogies**: don't try too hard to write a Big Complex Analogy, otherwise more energy will be spent by the user trying to figure out what exactly are the similarities and differences between the two

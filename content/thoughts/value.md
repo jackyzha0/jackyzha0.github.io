@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://kernel.community/en/learn/module-1/value)
+[Source: *Kernel* on Value](https://kernel.community/en/learn/module-1/value)
 
 Interesting approach to taking a negative-space approach to defining values: the *negation* of what destroys value is then what must give it value.
 

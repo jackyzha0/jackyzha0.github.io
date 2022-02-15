@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Game Design and [Teaching](thoughts/teaching.md)
-[Source](https://klr.tumblr.com/post/159583871898/game-designers-vs-education-researchers-on)
+[Source: Game designers vs. education researchers on unguided instruction by *Andy Matuschak*](https://klr.tumblr.com/post/159583871898/game-designers-vs-education-researchers-on)
 
 > A mistake we made early on was looking primarily at metrics like retention and monetization. These simply don’t tell us much about what motivates players to play. If I were to build the game again, I would have implemented the togetherness metric for the very first private alpha.
 
@@ -19,7 +19,7 @@ The goal is to give users/players the freedom to manage their own position relat
 ![](/thoughts/images/flow.png)
 
 ## [Economics](thoughts/economics.md) and [Game Theory](thoughts/game%20theory.md)
-[Source](https://lostgarden.home.blog/2020/01/11/prosocial-economics-for-game-design-%EF%BB%BF/)
+[Source: Prosocial economics for game design by *Daniel Cook*](https://lostgarden.home.blog/2020/01/11/prosocial-economics-for-game-design-%EF%BB%BF/)
 
 > Multiplayer games can help build a player’s social support network. What would game design look like if our goals included **reducing loneliness**, **decreasing toxicity** and boosting a player’s **positive connections** with others?
 

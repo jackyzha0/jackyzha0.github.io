@@ -7,7 +7,7 @@ tags:
 
 > Our goal as economic designers is to craft the systems that drive our selected set of values.
 
-[Source](https://lostgarden.home.blog/2020/01/11/prosocial-economics-for-game-design-%EF%BB%BF/)
+[Source: Prosocial economics for game design by *Daniel Cook*](https://lostgarden.home.blog/2020/01/11/prosocial-economics-for-game-design-%EF%BB%BF/)
 
 Economics is predominantly concerned with the central Economic Problem, namely
 -   **Limited resources**: There are limited resources in the world;
@@ -21,7 +21,7 @@ However, assumptions in the early economic models of human behaviour are problem
 Economics embraces reductive utilitarianism and posits you can put a price on anything. We tend to be intrinsically motivated to connect to others and invest long term in a relationship where no extrinsic value is ever publicly admitted. When a relationship transitions into being an extrinsically rewarded transactional relationship, the relationship often suffers a catastrophic loss of value. (This is the same reason that just throwing money at [open source software](thoughts/Making%20and%20Maintenance%20of%20OSS.md) often doesn't work, it kills the intrinsic drive to create)
 
 ### [Selfishness](thoughts/selfish.md)
-[Source](https://www.psychologytoday.com/us/blog/give-and-take/201310/does-studying-economics-breed-greed)
+[Source: Does Studying Economics Breed Greed? by *Adam Grant*](https://www.psychologytoday.com/us/blog/give-and-take/201310/does-studying-economics-breed-greed)
 
 Those that practice economics — and to a degree modern American capitalism — are heavily invested in an implicit system of self-centered moral values.
 

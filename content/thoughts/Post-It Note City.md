@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](https://placesjournal.org/article/post-it-note-city/)
+[Source: Post-It Note City by Shannon Mattern](https://placesjournal.org/article/post-it-note-city/)
 
 > Alphabet has the tools to design, build, fund, power, connect, monitor, and monetize a city, and that prospect scares people.
 

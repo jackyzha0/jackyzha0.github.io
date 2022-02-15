@@ -6,6 +6,8 @@ tags:
 ---
 
 ## Interpretive Labour
+Source: [Research Debt in *Distill Pub*](https://distill.pub/2017/research-debt)
+
 There is a tradeoff between energy put into explaining an idea, and the energy needed to understand it. This energy differential is called 'interpretive labour'
 
 Most research is one-to-many, where there are a lot more people trying to understand a subject than explaining it. As a result, the quality of explanations have an **outsized impact** for the better.

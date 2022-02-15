@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](https://studio.ribbonfarm.com/p/magic-beans)
+[Source: vgr on Magic Beans](https://studio.ribbonfarm.com/p/magic-beans)
 
 An NFT need not to contain something. All it guarantees is that it has an "identity and can be traded, transferred, mixed and matched indiscriminately with other things in a social context." See the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md).
 

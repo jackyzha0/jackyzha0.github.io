@@ -12,7 +12,7 @@ Infrastructure should be
 - Learned: Strangers and outsiders encounter infrastructure as a target object to be learned about. New participants acquire a naturalized familiarity with its objects as they become members.
 - Links with conventions of practices: Infrastructure both shapes and is shaped by the conventions of a community of practice (e.g. the QWERTY keyboard).
 
-[Source](https://www.jstor.org/stable/23010792)
+[Source: Steps Toward an Ecology of Infrastructure: Design and Access for Large Information Spaces by *Susan Leigh Star and Karen Ruhleder*](https://www.jstor.org/stable/23010792)
 
 ## What is infrastructure even?
 -  which came first, the infrastructure or the applications that depend on it?
@@ -47,7 +47,7 @@ Hard infrastructure refers to hard rules and goods (e.g. parks, laws, highways, 
 Soft infrastructure is upheld as a social protocol, an institution whose maintenance relies on dedication and value alignment. More closely related to [social contracts](thoughts/social%20contracts.md)
 
 ## Moderation
-[Source](https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/)
+[Source: The Internet Is Rotting in *The Atlantic*](https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/)
 
 > "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 

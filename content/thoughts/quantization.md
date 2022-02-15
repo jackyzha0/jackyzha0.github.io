@@ -39,7 +39,7 @@ In a data-driven world, can we and should we try to quantize everything?
 Some metrics that are inherently v difficult to quantize (e.g. quality of engagement) and others that are more easy to quantize and thus optimize for (like engagement)
 
 ## On Algorithmic decision making
-[Source](https://outline.com/5H8EEy)
+[Source: Can you make AI fairer than a judge? Play our courtroom algorithm game in *MIT Technology Review*](https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/amp/)
 
 No matter how much data we collect, two people who look the same to the algorithm can always end up making different choices.
 

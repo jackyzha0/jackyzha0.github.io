@@ -72,6 +72,6 @@ Happiness isn’t necessarily highest in the places with the most technological 
 Is it wrong to try to measure progress in terms of people's happiness? What about the [hedonic treadmill](thoughts/hedonic%20treadmill.md), will we eventually just regress to a new 'normal'?
 
 ## A humanistic take
-[Source](https://www.vox.com/future-perfect/22652782/roots-of-progress-jason-crawford)
+[Source: How does progress happen? by *Kelsey Piper*](https://www.vox.com/future-perfect/22652782/roots-of-progress-jason-crawford)
 
 > Progress is anything that helps human beings live better lives: longer, happier, healthier, in mind, body, and spirit. And more choices about how we want to live our lives: our careers; where we live; if, when, and who we marry; whether to have kids or not. Fundamentally, I judge progress by humanistic standards.

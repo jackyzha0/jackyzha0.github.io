@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Tight feedback Loops
-[Source](https://brianlui.dog/2020/05/10/beware-of-tight-feedback-loops/)
+[Source: Beware of tight feedback loops by *Brian Lui*](https://brianlui.dog/2020/05/10/beware-of-tight-feedback-loops/)
 
 -  noise in social media
     -  used to be a town square → hear what you hear

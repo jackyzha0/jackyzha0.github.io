@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Sources: [BumblebeeLabs](https://web.archive.org/web/20101012105003/http://blog.bumblebeelabs.com/social-software-sundays-2-the-evaporative-cooling-effect/) and [LessWrong](https://www.lesswrong.com/posts/ZQG9cwKbct2LtmL3p/evaporative-cooling-of-group-beliefs)
+Sources: [The Evaporative Cooling Effect in *BumblebeeLabs*](https://web.archive.org/web/20101012105003/http://blog.bumblebeelabs.com/social-software-sundays-2-the-evaporative-cooling-effect/) and [Evaporative Cooling of Group Beliefs in *LessWrong*](https://www.lesswrong.com/posts/ZQG9cwKbct2LtmL3p/evaporative-cooling-of-group-beliefs)
 
 > "The people who are the most eager to talk are the ones who the least number of people are interested in hearing."
 

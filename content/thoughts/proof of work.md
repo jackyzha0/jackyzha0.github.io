@@ -17,7 +17,7 @@ Because the 'winner' is randomly-chosen proportional to the work done, it incent
 > Proof of work makes it extremely difficult to alter any aspect of the blockchain, since such an alteration would require re-mining all subsequent blocks.
 
 ## Finality
-[Source](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/)
+[Source: Ethereum Wiki](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/)
 
 > A transaction has "finality" on Ethereum when it's part of a block that can't change.
 

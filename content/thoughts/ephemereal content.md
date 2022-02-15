@@ -21,7 +21,7 @@ One of the things that keeps face-to-face friendships strong is the [nature of s
 Opposite of [digital permanence](thoughts/digital%20permanence.md)
 
 ## Raider's of the Lost Web
-[Source](https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/)
+[Source: RAIDERS OF THE LOST WEB on *the Atlantic*](https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/)
 
 It is really tempting to cover for mistakes by pretending they never happened.
 “In Supreme Court opinions, every word matters … When they’re changing the wording of opinions, they’re basically rewriting the law.”
@@ -35,15 +35,4 @@ The promise of the web is that Alexandria’s [library](thoughts/library.md) mig
 Modern content is sometimes actually assembled on the fly through the likes of Ruby, Django, Next.js, etc. Not actual 'flat'/self-enclosed pages
 The data may exist but not the in the format it was originally delivered in
 
-Related: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md) and slowness.
-
-## Dark Forest
-[Source](https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1)
-
-> Imagine a dark forest at night. It’s deathly quiet. Nothing moves. Nothing stirs. This could lead one to assume that the forest is devoid of life. But of course, it’s not. The dark forest is full of life. It’s quiet because night is when the predators come out. To survive, the animals stay silent.
-
-Ephemeral content is the content in the dark forest. Fireflies not lamps.
-
-"These are all spaces where depressurized conversation is possible because of their non-indexed, non-optimized, and non-gamified environments."
-
-Creating [digital mindfulness](thoughts/digital%20mindfulness.md) in communication and conversation?
+Related: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md) and slowness, [Dark Forest Theory of the Internet](thoughts/Dark%20Forest%20Theory%20of%20the%20Internet.md)

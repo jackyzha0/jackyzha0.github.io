@@ -5,7 +5,8 @@ tags:
 - sapling
 ---
 
-[Source](https://faculty.washington.edu/ajko/books/foundations-of-information/#/systems)
+[Source: Foundations of Information
+by *Amy J. Ko*](https://faculty.washington.edu/ajko/books/foundations-of-information/#/systems)
 
 Information Systems are processes that organize people, technology, and data to allow people to create, store, manipulate, distribute, and access information.
 

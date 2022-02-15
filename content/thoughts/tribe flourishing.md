@@ -17,14 +17,14 @@ How do we move away from the 'other' and towards the 'us'? Towards collectivism 
 A lot of similar concepts to [FCTC](thoughts/From%20Counterculture%20to%20Cyberculture.md) around digital communalism and back-to-the-land movements
 
 ## Squad Wealth
-[Source](https://otherinter.net/research/squad-wealth/)
+[Source: *Other Internet* on Squad Wealth](https://otherinter.net/research/squad-wealth/)
 
 "Squad culture is the antithesis of neoliberal individualism. Millennials are healing from decades of irony poisoning, rediscovering what it's like to have generative, exploratory relationships with one another."
 
 _The squad economy primarily yields non-monetary forms of value_
 
 ## Friends > Communities
-[Source](https://sariazout.substack.com/p/58-friends-communities)
+[Source: friends > communities, *Sari Azout*](https://sariazout.substack.com/p/58-friends-communities)
 
 "This is about building the picks and shovels for intimate, intentionally small groups of friends and Internet friends to build things together, live together, and create wealth together. Unlike the Discord communities you’re part of, the small groups I’m thinking of have to stay small to survive — they’re small by design. Can you really be yourself in group chats with 50+ people?"
 

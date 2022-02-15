@@ -7,7 +7,7 @@ tags:
 
 > Money is a form of shared truth
 
-[Source 1](https://kernel.community/en/learn/module-0/money-language) and [Source 2](https://kernel.community/en/learn/module-2/shelling-out)
+Sources: [Money Language *in Kernel*](https://kernel.community/en/learn/module-0/money-language) and [Shelling Out *in Kernel*](https://kernel.community/en/learn/module-2/shelling-out)
 
 Money is old. "We have yet to discover a civilization that didn't have money. So, we know it's at least as old as civilization."
 

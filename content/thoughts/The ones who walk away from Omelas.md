@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Source](http://sites.asiasociety.org/asia21summit/wp-content/uploads/2011/02/3.-Le-Guin-Ursula-The-Ones-Who-Walk-Away-From-Omelas.pdf)
+[Source: The Ones Who Walk Away From Omelas by *Ursula Le Guin*](https://learning.hccs.edu/faculty/emily.klotz/engl1302-6/readings/the-ones-who-walk-away-from-omelas-ursula-le-guin/view)
 
 There is no happiness without suffering. The story presents a classic utilitarian problem: is it morally justifiable to inflict suffering on one person in the service of others’ happiness (and a potential [utopia](thoughts/utopia.md))?
 

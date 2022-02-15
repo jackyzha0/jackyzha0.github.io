@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-[Source](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/?utm_source=pocket_mylist)
+[Source: A Brief Rant On The Future of Interaction Design by *Bret Victor*](http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign)
 
 Tools address human needs by amplifying human capabilities. Great tools have parts that fit the problem as well as fit the person.
 
