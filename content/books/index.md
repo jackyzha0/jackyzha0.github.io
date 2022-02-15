@@ -10,7 +10,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Fiction
 * **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
-* **The Midnight Library** by Matt Haig
 * **Permutation City** by Greg Egan
 
 ### Non-fiction
@@ -32,6 +31,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Current
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
+* **The Midnight Library** by Matt Haig
 
 ## Past
 ### 2021
