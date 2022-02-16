@@ -56,7 +56,6 @@ body {
     animation-fill-mode: forwards;
     animation-delay: #{$i * .08 + 2.2}s;
     z-index: -#{$i};
-    position: relative;
   }
   }
 }

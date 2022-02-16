@@ -11,9 +11,8 @@
     }
 </style>
 <script>
-  const index = {{$.Site.Data.linkIndex.index}}
-  const links = {{$.Site.Data.linkIndex.links}}
-  const content = {{$.Site.Data.contentIndex}}
+async function run() {
+  const { index, links, content } = await fetchData()
   const curPage = {{ strings.TrimRight "/" .Page.RelPermalink }}
   const pathColors = {{$.Site.Data.graphConfig.paths}}
   let depth = {{$.Site.Data.graphConfig.depth}}
@@ -236,4 +235,7 @@
       .attr("x", d => d.x)
       .attr("y", d => d.y);
   });
+}
+
+run()
 </script>

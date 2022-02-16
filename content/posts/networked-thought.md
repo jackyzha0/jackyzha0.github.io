@@ -77,6 +77,6 @@ Maybe you'll find this as an incentive to start your own.
 
 > I'd like digital garden to be like a bonsai tree. Carefully growing, trimming, pruning, artfully shaping a beautiful tree of resources and ideas
 
-![https://www.are.na/block/2175982](thoughts/images/garden-bird.png)*'Everyone tends his or her own little [epistemological](thoughts/epistemology.md)' garden, growing ideas from seed and sharing them with anyone who comes by.*
+![https://www.are.na/block/2175982](/thoughts/images/garden-bird.png)*'Everyone tends his or her own little [epistemological](thoughts/epistemology.md)' garden, growing ideas from seed and sharing them with anyone who comes by.*
 
 [Image Source](https://www.are.na/block/2175982)
