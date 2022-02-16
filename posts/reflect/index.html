@@ -511,7 +511,8 @@ if (!doNotTrack) {
 </nav>
       </aside>
       
-      <p><img src="https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png" alt="An image of the reflect block page"><em>How do we tell that this is a “valid” intent?</em></p>
+      <p>
+<img src="https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png" alt="An image of the reflect block page"  /><em>How do we tell that this is a “valid” intent?</em></p>
 <p>A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.</p>
 <h2 id="the-problem">The problem</h2>
 <p>Classifying intents is at the core of reflect. When a user inputs an intent, its reflect’s job to figure out whether that intent should let them into the website.</p>
@@ -808,7 +809,8 @@ if (!doNotTrack) {
 <p>Now that we have something ready to feed into our neural network, let’s dive into how the actual model itself works! How do we tell that this is a “valid” intent?</p>
 <h2 id="the-model">The model</h2>
 <p>The type of neural network that we’ll be using is called Long Short-Term Memory (LSTM).</p>
-<p><img src="https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC" alt="credit: Christopher Olah, 2015"><em>credit: Christopher Olah, 2015</em></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC" alt="credit: Christopher Olah, 2015"  /><em>credit: Christopher Olah, 2015</em></p>
 <p>What’s so special about these networks is that they are really good at modelling time-series data, making it an ideal candidate for tasks like forecasting or natural language processing.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -867,7 +869,8 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><p>Next up, we have the Embedding layer. We could get into a really technical discussion about what this really does, but you can think of it as a layer that helps the neural network to learn semantic relationships between inputs.</p>
-<p><img src="https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD" alt="credit: Rutger Ruizendaal, 2017"><em>credit: Rutger Ruizendaal, 2017</em></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD" alt="credit: Rutger Ruizendaal, 2017"  /><em>credit: Rutger Ruizendaal, 2017</em></p>
 <p>Essentially, it embeds tokens in a higher dimension vector space, where distance between tokens represents its similarity.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -898,7 +901,8 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><p>We have yet another LSTM layer! By having these two chained right after each other, the first layer can pass all the values of all of its hidden states to the second layer, effectively allowing a sort of ‘deeper’ neural network.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9" alt="credit: Jianjing Zhang 2018"><em>credit: Jianjing Zhang 2018</em></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9" alt="credit: Jianjing Zhang 2018"  /><em>credit: Jianjing Zhang 2018</em></p>
 <p>This deep LSTM allows our network to learn more abstract concepts, making them well suited for natural language tasks.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -920,7 +924,8 @@ if (!doNotTrack) {
 </code></pre></td></tr></table>
 </div>
 </div><p>Similarly, we have one final Dense layer that ‘compresses’ all of the hidden units down to one neuron. However, we want the output value of this neuron to be how confident from a scale of 0 to 1 it is that the intent is valid. We do this by applying something called an activation function.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*kdowh3GOGOUvGBr0" alt="A sigmoid activation function"></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*kdowh3GOGOUvGBr0" alt="A sigmoid activation function"  /></p>
 <p>In this case, the particular function we chose is the sigmoid activation function, which looks something like the above.</p>
 <h3 id="model-overview">Model Overview</h3>
 <p>Phew, finally got through everything! After putting it all together, we end up with a network that looks something like this:</p>
@@ -996,15 +1001,18 @@ if (!doNotTrack) {
 <p>The first component is the <strong>loss function.</strong> This component tells the neural network how ‘correct’ its prediction was. In this model, we will use something called 
 
 <a href="https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a" rel="noopener">binary cross entropy</a>, which is basically a fancy word for log-based error. If the true label is 1, we can then show what the log-loss would be for some given prediction probability.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*8rd4ho_3Y6zrtra-.png" alt=""></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*8rd4ho_3Y6zrtra-.png" alt=""  /></p>
 <p>Next, we need to pick an <strong>optimizer</strong>. This component tells the neural network how to change its parameters to improve or ‘optimize’ itself. In this model, we chose to use an optimizer called 
 
 <a href="https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a" rel="noopener">RMSProp</a> with a learning rate of 1e-3 . We aren’t going to cover all the technical details of this optimizer in this blog post, but just know that it is a very fast and effective optimizer.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif" alt="RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev"><em>RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev</em></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif" alt="RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev"  /><em>RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev</em></p>
 <p>One important hyperparameter we choose is the <strong>train-test split.</strong> In data science and machine learning, we typically withhold part of our data and set it aside as a <strong>test set</strong>. The rest of the data will be considered the <strong>training set.</strong> When training the model, we never feed it the test set. As a result, we can use the test set as a metric to see how well it would perform on real-world, unseen data. In our training, we used a train-test split of 20%.</p>
 <p>Another important hyperparameter that we can choose is the <strong>mini-batch size</strong>. The mini-batch size determines how many training examples we feed the machine learning model before updating its parameters. A smaller mini-batch means that we get more frequent updates to the parameters, but it also runs the risk of having outliers that may cause a bad gradient update. A large mini-batch means that we get a more accurate gradient update but it also takes longer. A similar concept is <em>sample size</em> in statistics. We could pick a larger sample to get a better estimate of the overall population, but it is often more expensive to do so. A smaller sample might contain outliers and thus be less robust of an estimate of the overall population, but it very easy to do. So, there’s this tradeoff between accuracy and speed. We found that a good balance between these was a mini-batch size of 128.</p>
 <p>We then trained our neural network over 10 epochs. A single epoch is one iteration over the entire dataset. If we train it for too many epochs, you run the risk of overfitting (memorizing the training data), but we don’t train it enough, we run the risk of not discovering a better model. One thing we can do it minimize this problem is through the use of cross-validation, which is a technique that lets us ‘test’ on portions of the training set. Essentially, at each iteration during training, we withhold a portion of the training set and use it as a sort of ‘validation’.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png" alt="credit: Raheel Shaikh"><em>credit: Raheel Shaikh</em></p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png" alt="credit: Raheel Shaikh"  /><em>credit: Raheel Shaikh</em></p>
 <p>By seeing when this validation accuracy goes down, we can get a pretty good idea of when our model begins to overfit on our data, and stop the training before this happens. In training our model, we will use 5-fold 
 
 <a href="https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85" rel="noopener">cross-validation</a>.</p>

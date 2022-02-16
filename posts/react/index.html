@@ -517,7 +517,9 @@ if (!doNotTrack) {
 <p>Most likely, you&rsquo;ve written some code for a website in plain old HTML before. This, as you know, defines the structure for what is inside a webpage. If the webpage is a house, the HTML is the blueprint that tells you what the house should generally look like and what is inside.</p>
 <p>Yet, to turn that bunch of HTML into something displayable in your web browser, it needs to parse it into a more intermediate format it can more easily work with: the Document Object Model (DOM).</p>
 <p>The nested structure of the HTML lends itself very well to a tree-like structure which the browser can then efficiently traverse and make updates to.</p>
-<p><img src="/posts/images/react/html-dom-site.png" alt="Turning HTML into the DOM and then into the actual site"><em>Turning HTML into the DOM and then into the actual site</em></p>
+<p>
+
+<img src="/posts/images/react/html-dom-site.png" alt="Turning HTML into the DOM and then into the actual site"  /><em>Turning HTML into the DOM and then into the actual site</em></p>
 <h2 id="how-react-works">How React works</h2>
 <h3 id="the-virtual-dom">The Virtual DOM</h3>
 <p>Of course, you can still manipulate and interact with the regular DOM 
@@ -529,12 +531,18 @@ if (!doNotTrack) {
 <blockquote>
 <p>Please note that Virtual DOM is not faster than raw, imperative operations on the real DOM (best performance). React uses the Virtual DOM because it is a relatively efficient way of declaratively representing your UI from state, and much faster compared to straight <code>innerHTML</code> calls.</p>
 </blockquote>
-<p><img src="/posts/images/react/virtual-DOM.png" alt="React&rsquo;s Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM"><em>React&rsquo;s Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM</em></p>
+<p>
+
+<img src="/posts/images/react/virtual-DOM.png" alt="React&amp;rsquo;s Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM"  /><em>React&rsquo;s Virtual DOM in action. ReactDOM.render() tells React to attach your React components to the real DOM</em></p>
 <h3 id="components">Components</h3>
 <p>Another things that React tackles really well is that regular HTML and JS makes it a lot more difficult than it should be to re-use the same UI and logic across different pages on your website.</p>
-<p><img src="/posts/images/react/component-reuse.png" alt="What if you wanted to reuse this &lsquo;product card&rsquo; component?"><em>What if you wanted to reuse this &lsquo;product card&rsquo; component?</em></p>
+<p>
+
+<img src="/posts/images/react/component-reuse.png" alt="What if you wanted to reuse this &amp;lsquo;product card&amp;rsquo; component?"  /><em>What if you wanted to reuse this &lsquo;product card&rsquo; component?</em></p>
 <p>The main philosophy of functional React is that you shouldn&rsquo;t override and inherit behaviour. Instead, get the behaviour you want by creating and composing reusable <em>components</em>. Each of these components can hold some sort of data of its own, called its <strong>state</strong>. Each component can also take in a few arguments or parameters called <strong>properties</strong> or <strong>props</strong> for short. Each component is composed up of either primative HTML elements (e.g. <code>&lt;div&gt;</code> or <code>&lt;h1&gt;</code>) or other React components. The elements that a component is made up of are called its <strong>children</strong>.</p>
-<p><img src="/posts/images/react/component-diagram.png" alt="React Component Diagram"><em>React Component Diagram</em></p>
+<p>
+
+<img src="/posts/images/react/component-diagram.png" alt="React Component Diagram"  /><em>React Component Diagram</em></p>
 <p>Because React uses composition to build components, there is a natural <em>downward flow of information</em>, where components pass data to their children. Thus, to change a parent&rsquo;s state, the parent needs to explicitly pass a callback function that allows that behaviour to the child (e.g. an arrow function that wraps the <code>setState</code> function for the parent). This is detailed more in the &lsquo;Building an App section&rsquo;.</p>
 <h3 id="jsx">JSX</h3>
 <p>JSX is a extension to regular JS which lets you write HTML-like code to define React components. It is declarative at heart, meaning you describe exactly what you want the component to look like based off of some given data (props and state in this case) and React will figure out how to get the page to look like that.</p>
@@ -644,7 +652,9 @@ if (!doNotTrack) {
 </div><h2 id="life-cycle">Life Cycle</h2>
 <p>So far we&rsquo;ve covered static components using just plain old JSX and data passing using props, but this misses the biggest benefit that React offers: reactivity to data changes. We&rsquo;ll look a little at the life cycle of React components to see where we can update a component when data changes.</p>
 <p>There are three main parts to the life cycle to a React component. They are mounted, updated, and eventually unmounted.</p>
-<p><img src="/posts/images/react/lifecycle.png" alt="React Component Lifecycle"><em>React Component Lifecycle</em></p>
+<p>
+
+<img src="/posts/images/react/lifecycle.png" alt="React Component Lifecycle"  /><em>React Component Lifecycle</em></p>
 <h3 id="mount">Mount</h3>
 <p>Mounting happens when the component is first added to the virtual DOM. Here, we set the initial state of the component (e.g. to track the number of clicks, a user&rsquo;s input, etc.) and tell React to update the DOM.</p>
 <h3 id="update">Update</h3>
@@ -1070,7 +1080,9 @@ $ npm run start
 </code></pre></td></tr></table>
 </div>
 </div><p>Great! Now let&rsquo;s see what that looks like.</p>
-<p><img src="/posts/images/react/todo-0.png" alt="Our todo app with a strikethrough effect!"><em>Our todo app with a strikethrough effect!</em></p>
+<p>
+
+<img src="/posts/images/react/todo-0.png" alt="Our todo app with a strikethrough effect!"  /><em>Our todo app with a strikethrough effect!</em></p>
 <h3 id="deleting-a-todo-passing-callbacks">Deleting a Todo (Passing callbacks)</h3>
 <p>Hmm, would be great if we could actually delete a todo by just clicking on a todo item. Good thing 
 
@@ -1388,7 +1400,9 @@ $ npm run start
 </code></pre></td></tr></table>
 </div>
 </div><p>Looking snazzy!</p>
-<p><img src="/posts/images/react/todo-1.png" alt="A nice new &lsquo;Add Todo&rsquo; field!"><em>A nice new &lsquo;Add Todo&rsquo; field!</em></p>
+<p>
+
+<img src="/posts/images/react/todo-1.png" alt="A nice new &amp;lsquo;Add Todo&amp;rsquo; field!"  /><em>A nice new &lsquo;Add Todo&rsquo; field!</em></p>
 <p>Finally, let&rsquo;s link this up back to the main <code>&lt;App&gt;</code> state so that adding a new todo actually modifies the state of the app. We create a <code>addTodo</code> callback and pass this to the <code>&lt;TodoForm&gt;</code> component through using a <code>addCallback</code> prop.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1524,7 +1538,9 @@ $ npm run start
 <p>If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it) 
 
 <a href="https://github.com/jackyzha0/jackyzha0.github.io/blob/hugo/content/posts/react" rel="noopener">here</a>!</p>
-<p><img src="/posts/images/react/todo-fin.gif" alt="Our working todo tracker!"><em>Our working todo tracker!</em></p>
+<p>
+
+<img src="/posts/images/react/todo-fin.gif" alt="Our working todo tracker!"  /><em>Our working todo tracker!</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

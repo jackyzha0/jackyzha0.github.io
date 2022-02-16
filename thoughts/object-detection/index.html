@@ -513,7 +513,8 @@ Bad:</li>
 <h3 id="gaussian-image-pyramid">Gaussian Image Pyramid</h3>
 <p>Collection of representations of an image. Typically, each layer of the pyramid is half the width and half the height of the previous layer. In the Gaussian version, each layer is smoothed by a Gaussian then resampled to get the next layer.</p>
 <p>Details get smoothed out (are completely lost) as we move to higher levels, only large uniform regions of colours in the original image are left.</p>
-<p><img src="https://miro.medium.com/max/1016/1*Q9UKqUC6OqpR3KL1yRrXxA.png" alt="Upsampling Process"></p>
+<p>
+<img src="https://miro.medium.com/max/1016/1*Q9UKqUC6OqpR3KL1yRrXxA.png" alt="Upsampling Process"  /></p>
 <h3 id="laplacian-pyramid">Laplacian Pyramid</h3>
 <p>To do this, create a Gaussian pyramid and take the difference between one pyramid level and the next after smoothing but before subsampling.</p>
 <p>At each level, retain the residuals (difference between smoothed image and normal image) instead of the blurred images themselves.</p>
@@ -659,13 +660,17 @@ Trying to fix broken edge chains by linking separate edge pixels through taking 
 <p>When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).</p>
 <ol>
 <li>Compute image gradients over small region</li>
-<li>Compute covariance matrix <img src="/thoughts/images/covmat.png" alt="Covariance Matrix"> (essentially fitting a quadratic to the gradients over the small image patch $P$)</li>
+<li>Compute covariance matrix 
+
+<img src="/thoughts/images/covmat.png" alt="Covariance Matrix"  /> (essentially fitting a quadratic to the gradients over the small image patch $P$)</li>
 <li>Computer eigenvectors and eigenvalues of the covariance matrix.</li>
 <li>Use threshold on eigenvalues to detect corners ($&gt;0$ is a corner)</li>
 </ol>
 <p>We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix). It tells us the dispersion of the gradients nearby.</p>
 <p>As $C$ is symmetric, we have</p>
-<p><img src="/thoughts/images/covellipse.png" alt="Covariance matrix as ellipse equation"></p>
+<p>
+
+<img src="/thoughts/images/covellipse.png" alt="Covariance matrix as ellipse equation"  /></p>
 <p>Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$</p>
 <p>Then, this is what the eigenvalues tell us:</p>
 <ul>

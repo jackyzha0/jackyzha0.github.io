@@ -521,9 +521,13 @@ if (!doNotTrack) {
 <p>All angles are spherical coordinates w.r.t. the normal line of the surface.</p>
 <p>A Lambertian (matte) surface is one which appears the same brightness from all directions. A mirror (specular) surface is one where all incident light is reflected in one direction $(\theta_v,\phi_v)=(\theta_r,\phi_r)$</p>
 <h4 id="cameras">Cameras</h4>
-<p><img src="/thoughts/images/bare-sensor-imaging.png" alt="Bare-sensor imaging"><em>All scene points contribute to all sensor pixels</em></p>
+<p>
+
+<img src="/thoughts/images/bare-sensor-imaging.png" alt="Bare-sensor imaging"  /><em>All scene points contribute to all sensor pixels</em></p>
 <p>As a result, the image is really blurry.</p>
-<p><img src="/thoughts/images/pinhole.png" alt="Pinhole camera"><em>Pinhole camera</em></p>
+<p>
+
+<img src="/thoughts/images/pinhole.png" alt="Pinhole camera"  /><em>Pinhole camera</em></p>
 <p>The image here is flipped, but no longer blurry. Roughly, each scene point contributes to one sensor. Pinhole camera means you need to get the right size of pinhole. If the pinhole is too big, then many directions are averaged, blurring the image. If the pinhole is too small, then diffraction becomes a factor, also blurring the image.</p>
 <p>A few perspective &lsquo;tricks&rsquo; arise out of the pinhole</p>
 <ol>
@@ -544,11 +548,17 @@ if (!doNotTrack) {
 </ul>
 <h4 id="weak-perspective">Weak Perspective</h4>
 <p>Only accurate when object is small/distant. Useful for recognition</p>
-<p><img src="/thoughts/images/weak-perspective.png" alt="Weak Perspective Equation"><em>Weak Perspective Equation</em></p>
+<p>
+
+<img src="/thoughts/images/weak-perspective.png" alt="Weak Perspective Equation"  /><em>Weak Perspective Equation</em></p>
 <h4 id="orthographic-projection">Orthographic Projection</h4>
-<p><img src="/thoughts/images/orthographic-projection.png" alt="Orthographic Project"><em>Orthographic Projection</em></p>
+<p>
+
+<img src="/thoughts/images/orthographic-projection.png" alt="Orthographic Project"  /><em>Orthographic Projection</em></p>
 <h4 id="perspective-projection">Perspective Projection</h4>
-<p><img src="/thoughts/images/perspective-projection.png" alt="Perspective Projection"><em>Perspective Projection</em></p>
+<p>
+
+<img src="/thoughts/images/perspective-projection.png" alt="Perspective Projection"  /><em>Perspective Projection</em></p>
 <h2 id="image-as-functions">Image as functions</h2>
 <h3 id="grayscale-images">Grayscale images</h3>
 <p>2D function $I(x,y)$ where the domain is $(x,y) \in ([1, width], [1, height])$ and the range is $I(x,y) \in [0, 255] \in \mathbb{Z}$</p>
