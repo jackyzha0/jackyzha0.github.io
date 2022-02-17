@@ -14,26 +14,23 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Non-fiction
 * **Creation: Life and How to Make it** by Steve Grand
-* **Winners Take All** by Anand Giridharadas
 * **What Money Can't Buy** by Michael Sandel
 * **Mutual Aid** by Dean Spade
 * **Seeing Like A State** by James C. Scott
 * **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
 * **Doughnut Economics** by Kate Raworth
-* **Blockchain Chicken Farm** by Xiaowei Wang
-* **Radical Markets** by Eric A. Posner and E Glen Weyl
-* **Roads and Bridges** by Nadia Eghbal
 * **The Disappearance of Rituals** by Byung-Chul Han
-* **Postmortems** by Raph Koster
 * **Where Is My Flying Car?** by J. Storrs Hall
 * **Games: Agency as Art** by C Thi Nguyen
 
 ## Current
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
-* **The Midnight Library** by Matt Haig
 
 ## Past
+2022
+- [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
+
 ### 2021
 * [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
 * [**A Tale for the Time Being**](thoughts/A%20Tale%20for%20the%20Time%20Being.md) by Ruth Ozeki

@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> "I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And why do I want? I want to live and feel all the shades, tones and variations of mental and physical experience possible in my life." -- Sylvia Plath
+
 Optionality: the nature of accepting the possibilities of the unknown, to give every fractal self a chance to live.  _I’d much rather know, but then again, not-knowing keeps all the possibilities open. It keeps all the worlds alive._ [Source](https://reading.supply/@jessica/some-comfort-for-the-time-being-64k4Ml)
 
 > "This individual has merely acquired stamps of approval and has acquired safety net upon safety net. These safety nets don’t end up enabling big risk-taking—individuals just become habitual acquirers of safety nets. The comfort of a high-paying job at a prestigious firm surrounded by smart people is simply too much to give up. When that happens, the dreams that those options were meant to enable slowly recede into the background. For a few, those destinations are in fact their dreams come true—but for every one of those, there are ten entrepreneurs, artists, and restaurateurs that get trapped in those institutions." -- [Mihir Desai on Optionality](https://www.thecrimson.com/article/2017/5/25/desai-commencement-ed/)

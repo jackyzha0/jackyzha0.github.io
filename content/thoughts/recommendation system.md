@@ -24,3 +24,11 @@ Optimization metrics (see [quantization](thoughts/quantization.md))
 2. Transitioned to 'captivation metrics' - ability of a system to capture user [attention](thoughts/attention%20economy.md) or 'engagement'
 	1. Moving towards interpreting behaviours (ex. skipping a video, clicking away, watch time, etc.) rather than explicit ratings (ex. asking users to give feedback on accuracy)
 	2. 'Dwell time': length of individual user sessions
+
+## Approaches
+1. Content-based Recommendation
+	1. "more things like this..."
+	2. Compare the content of an item to user's preferred items
+2. Collaborative Filtering
+	1. "users like you looked for..."
+	2. Based on identification of similar users and their patterns of activity

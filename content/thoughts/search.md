@@ -5,8 +5,6 @@ tags:
 - sapling
 ---
 
-## Search
-
 > Search has co-opted the citation, vis-à-vis the hyperlink
 
 The post-WWII 'information explosion' meant that we have a lot of info and not great means of looking through it to find what we want. This is a form of [information retrieval](thoughts/information%20retrieval.md) and way of answering [questions](thoughts/questions.md).
@@ -106,3 +104,40 @@ They freely provide, it seems, a sorting of the wheat from the chaff, and answer
 ![](/thoughts/images/search%20engine%20space.png)*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
 
 Search engines create an embedding space for the world that maps from physical to digital. Page ranking is the function that maps and remaps the 'location' and relatedness of real concepts.
+
+## The Vocabulary Problem
+Is this a form of [hermeneutical injustice](thoughts/hermeneutical%20injustice.md)?
+
+1. Lexical Ambiguity: the [meaning](thoughts/meaning.md) of human language is not specific
+2. Polysemy: one word has many meanings
+3. Synonymy: many words mean approximately the same thing
+
+### Text Processing
+Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
+
+- Lexical Analysis: break text into tokens
+	- Bag of Words
+- Transformations
+	- Case folding: convert all to lower case
+	- Stopwords: remove words that contribute semantic meaning/indexing value
+		- e.g. words that don't reduce information entropy
+		- for example, words that appear in *all* documents are not very helpful
+		- zipf's law, first ~5% are stop words, next ~45% are meaning content words and the last ~50% are long tail rare words
+	- Stemming: grouping of related words (e.g. cats/cattiness -> cat)
+	- Term Weighting: assigns weights on basis of importance to document
+		- term frequency (TF): occurrences in a
+		- document frequenc (DF): # of docs containing the term
+		- term weight is usually $\frac{TF}{n}\frac{1}{DF}$ where $n$ is the total word count
+- Index: unique id to a single document
+- Inverted Index: index which each entry holds list of pointers to all items with a certain property (e.g. title)
+
+## Internet Content
+1. Surface Web: 1-5%
+2. Deep Web: 95%
+3. Dark Web: 1-5%
+
+## Generations
+1. Pre-1998: keyword frequency and boolean operators
+2. 1998-2010: link structure (page rank), keywords
+3. 2010-2015: user data, personalization, NLP
+4. 2015-now: AI, deep learning

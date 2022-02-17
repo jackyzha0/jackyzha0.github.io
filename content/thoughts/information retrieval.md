@@ -11,7 +11,12 @@ A 'closed stack' library facilitates information transfer from collection to inf
 
 The goal of information seekers is to find information that are useful in answering the original query or research questions
 
-Relevance is the measure or degree to which a document 'was about' a topic. This can be used to measure performance of an information retrieval system by seeing the extent to which the system was able to retrieve all the relevant documents in the collection to a query (recall: ratio of relevant documents retrieved to total relevant documents), and only the relevant documents (precision: ratio of relevant documents retrived to all documents).
+System Relevance is the measure or degree to which a document 'was about' a topic. This can be used to measure performance of an information retrieval system by seeing the extent to which the system was able to retrieve all the relevant documents in the collection to a query (recall: ratio of relevant documents retrieved to total relevant documents), and only the relevant documents (precision: ratio of relevant documents retrieved to all documents).
+
+Human relevance is the degree to which the document is useful to the search query of the user. Composed of 3 separate facets
+1. Situational Relevance: useful, efficient, applicability to the task and situation
+2. Cognitive Relevance: suited to the knowledge level of the searcher; contains novel content of interest
+3. Affective Relevance: satisfies user goals and motivations, trustworthy, algns with beliefs and is emotionally engaging, aesthetics
 
 Types of interactions then are
 1. Between information seeker and intermediary

@@ -5,6 +5,10 @@ tags:
 - seed
 ---
 
+Distinction between information behaviour and information practice
+- Behaviour: how we search (e.g. type in a short query, click top result, etc.)
+- Practice: [search](thoughts/search.md) as conditioned by social and technical norms and practices
+
 A combination of [information retrieval](thoughts/information%20retrieval.md), information encountering, information avoidance, etc. Methods of interacting with [information](thoughts/information.md)
 
 A model is a simplified, tentative representation of a phenomenon of interest, often depicted as a graphic. A model describes important factors (variables) and proposes their relationships (associations).
