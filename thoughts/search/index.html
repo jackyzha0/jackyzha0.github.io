@@ -3,7 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Search  Search has co-opted the citation, vis-à-vis the hyperlink">
+    <meta name="description" content="Search has co-opted the citation, vis-à-vis the hyperlink
+ The post-WWII &lsquo;information explosion&rsquo; meant that we have a lot of info and not great means of looking through it to find what we want.">
     <title>Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -448,7 +449,7 @@ if (!doNotTrack) {
     <h1 class="title">Search</h1>
     <article>
       <p class="meta">
-          Last updated February 15, 2022
+          Last updated February 17, 2022
       </p>
       <ul class="tags">
     
@@ -460,7 +461,7 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#search">Search</a>
+    <li>
       <ol>
         <li><a href="#queries-on-informationthoughtsinformationmd">Queries on <a href="thoughts/information.md">information</a></a></li>
         <li><a href="#infrastructurethoughtsinfrastructuremd-is-a-trap"><a href="thoughts/infrastructure.md">Infrastructure</a> is a trap</a></li>
@@ -474,12 +475,18 @@ if (!doNotTrack) {
     <li><a href="#search-engine-to-oracle">Search Engine to Oracle</a></li>
     <li><a href="#search-engines-as-faith">Search Engines as Faith</a></li>
     <li><a href="#internet-topology-as-shaped-by-search-engines">Internet topology as shaped by search engines</a></li>
+    <li><a href="#the-vocabulary-problem">The Vocabulary Problem</a>
+      <ol>
+        <li><a href="#text-processing">Text Processing</a></li>
+      </ol>
+    </li>
+    <li><a href="#internet-content">Internet Content</a></li>
+    <li><a href="#generations">Generations</a></li>
   </ol>
 </nav>
       </aside>
       
-      <h2 id="search">Search</h2>
-<blockquote>
+      <blockquote>
 <p>Search has co-opted the citation, vis-à-vis the hyperlink</p>
 </blockquote>
 <p>The post-WWII &lsquo;information explosion&rsquo; meant that we have a lot of info and not great means of looking through it to find what we want. This is a form of 
@@ -595,6 +602,66 @@ intentional browsing vs being served by an algorithm</p>
 
 <img src="/thoughts/images/search%20engine%20space.png" alt=""  /><em>The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.</em></p>
 <p>Search engines create an embedding space for the world that maps from physical to digital. Page ranking is the function that maps and remaps the &lsquo;location&rsquo; and relatedness of real concepts.</p>
+<h2 id="the-vocabulary-problem">The Vocabulary Problem</h2>
+<p>Is this a form of 
+
+
+<a href="/thoughts/hermeneutical-injustice" rel="noopener" class="internal-link" data-src="/thoughts/hermeneutical-injustice">hermeneutical injustice</a>?</p>
+<ol>
+<li>Lexical Ambiguity: the 
+
+
+<a href="/thoughts/meaning" rel="noopener" class="internal-link" data-src="/thoughts/meaning">meaning</a> of human language is not specific</li>
+<li>Polysemy: one word has many meanings</li>
+<li>Synonymy: many words mean approximately the same thing</li>
+</ol>
+<h3 id="text-processing">Text Processing</h3>
+<p>Similar to practices in 
+
+
+<a href="/posts/reflect" rel="noopener" class="internal-link" data-src="/posts/reflect">reflect</a> NLP processing actually!</p>
+<ul>
+<li>Lexical Analysis: break text into tokens
+<ul>
+<li>Bag of Words</li>
+</ul>
+</li>
+<li>Transformations
+<ul>
+<li>Case folding: convert all to lower case</li>
+<li>Stopwords: remove words that contribute semantic meaning/indexing value
+<ul>
+<li>e.g. words that don&rsquo;t reduce information entropy</li>
+<li>for example, words that appear in <em>all</em> documents are not very helpful</li>
+<li>zipf&rsquo;s law, first ~5% are stop words, next ~45% are meaning content words and the last ~50% are long tail rare words</li>
+</ul>
+</li>
+<li>Stemming: grouping of related words (e.g. cats/cattiness -&gt; cat)</li>
+<li>Term Weighting: assigns weights on basis of importance to document
+<ul>
+<li>term frequency (TF): occurrences in a</li>
+<li>document frequenc (DF): # of docs containing the term</li>
+<li>term weight is usually $\frac{TF}{n}\frac{1}{DF}$ where $n$ is the total word count</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Index: unique id to a single document</li>
+<li>Inverted Index: index which each entry holds list of pointers to all items with a certain property (e.g. title)</li>
+</ul>
+<h2 id="internet-content">Internet Content</h2>
+<ol>
+<li>Surface Web: 1-5%</li>
+<li>Deep Web: 95%</li>
+<li>Dark Web: 1-5%</li>
+</ol>
+<h2 id="generations">Generations</h2>
+<ol>
+<li>Pre-1998: keyword frequency and boolean operators</li>
+<li>1998-2010: link structure (page rank), keywords</li>
+<li>2010-2015: user data, personalization, NLP</li>
+<li>2015-now: AI, deep learning</li>
+</ol>
 
 
     </article>
@@ -614,6 +681,8 @@ intentional browsing vs being served by an algorithm</p>
             <a href="/posts/networked-thought">Networked Thought</a>
         </li><li>
             <a href="/thoughts/Algorithms-of-Oppression">Algorithms of Oppression</a>
+        </li><li>
+            <a href="/thoughts/information-behaviour">Information Behaviour</a>
         </li><li>
             <a href="/thoughts/information-retrieval">Information Retrieval</a>
         </li><li>

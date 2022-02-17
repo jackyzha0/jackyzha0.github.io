@@ -61,6 +61,11 @@
       "/books": [
         {
           "source": "/books",
+          "target": "/thoughts/The-Midnight-Library",
+          "text": "The Midnight Library"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/How-to-do-Nothing",
           "text": "How to Do Nothing"
         },
@@ -1571,6 +1576,18 @@
           "source": "/thoughts/The-Grasshopper",
           "target": "/thoughts/zero-sum",
           "text": "zero sum"
+        }
+      ],
+      "/thoughts/The-Midnight-Library": [
+        {
+          "source": "/thoughts/The-Midnight-Library",
+          "target": "/thoughts/optionality",
+          "text": "optionality"
+        },
+        {
+          "source": "/thoughts/The-Midnight-Library",
+          "target": "/thoughts/life",
+          "text": "life"
         }
       ],
       "/thoughts/The-Psychopathology-of-Everyday-Things": [
@@ -3267,6 +3284,11 @@
       "/thoughts/information-behaviour": [
         {
           "source": "/thoughts/information-behaviour",
+          "target": "/thoughts/search",
+          "text": "search"
+        },
+        {
+          "source": "/thoughts/information-behaviour",
           "target": "/thoughts/information-retrieval",
           "text": "information retrieval"
         },
@@ -4823,6 +4845,21 @@
           "source": "/thoughts/search",
           "target": "/thoughts/epistemology",
           "text": "epistemological"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/meaning",
+          "text": "meaning"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/posts/reflect",
+          "text": "reflect"
         }
       ],
       "/thoughts/security": [
@@ -5875,6 +5912,11 @@
           "source": "/thoughts/digital-mindfulness",
           "target": "/posts/reflect",
           "text": "reflect"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/posts/reflect",
+          "text": "reflect"
         }
       ],
       "/thoughts/A-City-is-not-a-Computer": [
@@ -6652,6 +6694,13 @@
           "source": "/thoughts/play",
           "target": "/thoughts/The-Grasshopper",
           "text": "The Grasshopper"
+        }
+      ],
+      "/thoughts/The-Midnight-Library": [
+        {
+          "source": "/books",
+          "target": "/thoughts/The-Midnight-Library",
+          "text": "The Midnight Library"
         }
       ],
       "/thoughts/The-Psychopathology-of-Everyday-Things": [
@@ -8618,6 +8667,11 @@
           "source": "/thoughts/quantization",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "hermeneutical injustice"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
         }
       ],
       "/thoughts/human-centered-design": [
@@ -9320,6 +9374,11 @@
       ],
       "/thoughts/life": [
         {
+          "source": "/thoughts/The-Midnight-Library",
+          "target": "/thoughts/life",
+          "text": "life"
+        },
+        {
           "source": "/thoughts/longevity",
           "target": "/thoughts/life",
           "text": "life"
@@ -9393,6 +9452,11 @@
           "source": "/thoughts/kernel",
           "target": "/thoughts/meaning",
           "text": "Meaning"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/meaning",
+          "text": "meaning"
         }
       ],
       "/thoughts/memory-palace": [
@@ -9617,6 +9681,11 @@
         }
       ],
       "/thoughts/optionality": [
+        {
+          "source": "/thoughts/The-Midnight-Library",
+          "target": "/thoughts/optionality",
+          "text": "optionality"
+        },
         {
           "source": "/thoughts/mindfulness",
           "target": "/thoughts/optionality",
@@ -10349,6 +10418,11 @@
           "source": "/thoughts/Algorithms-of-Oppression",
           "target": "/thoughts/search",
           "text": "Search"
+        },
+        {
+          "source": "/thoughts/information-behaviour",
+          "target": "/thoughts/search",
+          "text": "search"
         },
         {
           "source": "/thoughts/information-retrieval",
@@ -11170,6 +11244,11 @@
       "source": "/",
       "target": "/posts/a-failure-resume",
       "text": "Things that didn't quite turn out right"
+    },
+    {
+      "source": "/books",
+      "target": "/thoughts/The-Midnight-Library",
+      "text": "The Midnight Library"
     },
     {
       "source": "/books",
@@ -12565,6 +12644,16 @@
       "source": "/thoughts/The-Grasshopper",
       "target": "/thoughts/zero-sum",
       "text": "zero sum"
+    },
+    {
+      "source": "/thoughts/The-Midnight-Library",
+      "target": "/thoughts/optionality",
+      "text": "optionality"
+    },
+    {
+      "source": "/thoughts/The-Midnight-Library",
+      "target": "/thoughts/life",
+      "text": "life"
     },
     {
       "source": "/thoughts/The-Psychopathology-of-Everyday-Things",
@@ -14078,6 +14167,11 @@
     },
     {
       "source": "/thoughts/information-behaviour",
+      "target": "/thoughts/search",
+      "text": "search"
+    },
+    {
+      "source": "/thoughts/information-behaviour",
       "target": "/thoughts/information-retrieval",
       "text": "information retrieval"
     },
@@ -15535,6 +15629,21 @@
       "source": "/thoughts/search",
       "target": "/thoughts/epistemology",
       "text": "epistemological"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/hermeneutical-injustice",
+      "text": "hermeneutical injustice"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/meaning",
+      "text": "meaning"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/posts/reflect",
+      "text": "reflect"
     },
     {
       "source": "/thoughts/security",
