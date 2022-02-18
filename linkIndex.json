@@ -837,6 +837,13 @@
           "text": "attention economy"
         }
       ],
+      "/thoughts/Archipelago": [
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/contact-language",
+          "text": "contact languages"
+        }
+      ],
       "/thoughts/Arweave": [
         {
           "source": "/thoughts/Arweave",
@@ -7475,6 +7482,11 @@
       ],
       "/thoughts/contact-language": [
         {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/contact-language",
+          "text": "contact languages"
+        },
+        {
           "source": "/thoughts/boundary-object",
           "target": "/thoughts/contact-language",
           "text": "contact language"
@@ -12011,6 +12023,11 @@
       "source": "/thoughts/Algorithms-of-Oppression",
       "target": "/thoughts/attention-economy",
       "text": "attention economy"
+    },
+    {
+      "source": "/thoughts/Archipelago",
+      "target": "/thoughts/contact-language",
+      "text": "contact languages"
     },
     {
       "source": "/thoughts/Arweave",
