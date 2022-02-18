@@ -842,6 +842,26 @@
           "source": "/thoughts/Archipelago",
           "target": "/thoughts/contact-language",
           "text": "contact languages"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/posts/digital-gardening",
+          "text": "Digital gardening"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/posts/networked-thought",
+          "text": "networked thought"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/utopia",
+          "text": "utopias"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/fiction",
+          "text": "fiction"
         }
       ],
       "/thoughts/Arweave": [
@@ -5789,6 +5809,11 @@
           "text": "Digital Gardening"
         },
         {
+          "source": "/thoughts/Archipelago",
+          "target": "/posts/digital-gardening",
+          "text": "Digital gardening"
+        },
+        {
           "source": "/thoughts/intentional-arrangement",
           "target": "/posts/digital-gardening",
           "text": "digital-gardening"
@@ -5841,6 +5866,11 @@
           "source": "/posts/digital-gardening",
           "target": "/posts/networked-thought",
           "text": "here"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/posts/networked-thought",
+          "text": "networked thought"
         },
         {
           "source": "/thoughts/Search-Diary",
@@ -8378,6 +8408,11 @@
           "source": "/posts/play",
           "target": "/thoughts/fiction",
           "text": "shared fiction"
+        },
+        {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/fiction",
+          "text": "fiction"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -11005,6 +11040,11 @@
       ],
       "/thoughts/utopia": [
         {
+          "source": "/thoughts/Archipelago",
+          "target": "/thoughts/utopia",
+          "text": "utopias"
+        },
+        {
           "source": "/thoughts/The-Grasshopper",
           "target": "/thoughts/utopia",
           "text": "Utopia"
@@ -12028,6 +12068,26 @@
       "source": "/thoughts/Archipelago",
       "target": "/thoughts/contact-language",
       "text": "contact languages"
+    },
+    {
+      "source": "/thoughts/Archipelago",
+      "target": "/posts/digital-gardening",
+      "text": "Digital gardening"
+    },
+    {
+      "source": "/thoughts/Archipelago",
+      "target": "/posts/networked-thought",
+      "text": "networked thought"
+    },
+    {
+      "source": "/thoughts/Archipelago",
+      "target": "/thoughts/utopia",
+      "text": "utopias"
+    },
+    {
+      "source": "/thoughts/Archipelago",
+      "target": "/thoughts/fiction",
+      "text": "fiction"
     },
     {
       "source": "/thoughts/Arweave",
