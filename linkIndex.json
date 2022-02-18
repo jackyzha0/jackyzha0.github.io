@@ -985,6 +985,16 @@
         },
         {
           "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/epistemology",
+          "text": "epistemology"
+        },
+        {
+          "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
+          "source": "/thoughts/Descartes-Meditations",
           "target": "/thoughts/emptiness",
           "text": "emptiness"
         }
@@ -2202,6 +2212,11 @@
           "source": "/thoughts/consciousness",
           "target": "/posts/ai-systems",
           "text": "AI systems"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
         }
       ],
       "/thoughts/consensus": [
@@ -8159,6 +8174,11 @@
           "text": "epistemological"
         },
         {
+          "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/epistemology",
+          "text": "epistemology"
+        },
+        {
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/epistemology",
           "text": "epistemology"
@@ -10172,6 +10192,11 @@
       ],
       "/thoughts/qualia": [
         {
+          "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
           "source": "/thoughts/Hard-problem-of-consciousness",
           "target": "/thoughts/qualia",
           "text": "qualia"
@@ -10440,6 +10465,13 @@
           "source": "/thoughts/kernel",
           "target": "/thoughts/security",
           "text": "Security"
+        }
+      ],
+      "/thoughts/self-knowledge": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
         }
       ],
       "/thoughts/selfish": [
@@ -12107,6 +12139,16 @@
     },
     {
       "source": "/thoughts/Descartes-Meditations",
+      "target": "/thoughts/epistemology",
+      "text": "epistemology"
+    },
+    {
+      "source": "/thoughts/Descartes-Meditations",
+      "target": "/thoughts/qualia",
+      "text": "qualia"
+    },
+    {
+      "source": "/thoughts/Descartes-Meditations",
       "target": "/thoughts/emptiness",
       "text": "emptiness"
     },
@@ -13204,6 +13246,11 @@
       "source": "/thoughts/consciousness",
       "target": "/posts/ai-systems",
       "text": "AI systems"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/self-knowledge",
+      "text": "self-knowledge"
     },
     {
       "source": "/thoughts/consensus",
