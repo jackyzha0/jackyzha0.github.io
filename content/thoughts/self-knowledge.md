@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-Paper #2 for PHIL240A.
+## Paper #2 for PHIL240A
 
 > Śiva and God are hanging out, binge-watching a Cosmicflix series called “The Greatest Hits in Philosophy.” It’s the Descartes episode. Descartes says: “To begin with, I acknowledge that it is impossible for God ever to deceive me, for trickery or deception is always indicative of some imperfection” (p. 36) Śiva leans back and smirks. “Now THAT,” he says, “is impressive. I’ve managed to so thoroughly deceive myself that I think I can’t be a deceiver!” God looks sideways at Śiva and responds, “What are you on about? This is one of the greatest moments of insight that one of my creatures has had! Because Descartes clearly and distinctly perceives that I am not a deceiver, he opens himself to all knowledge!” “Oh really?,” Śiva responds. “I thought Descartes already had the key to all knowledge just in the realization ‘I exist.’ He just needs to understand what that means about his own nature!” God pushes pause on the Cosmicflix show and, with a sweep of his arm, transforms their surroundings to a formal debate platform. “OK,” God says, “Time to get to the bottom of what self-knowledge even is. Do you accept the challenge?” “Bring it,” says Śiva, with a grin.
 
@@ -24,7 +24,7 @@ Paper #2 for PHIL240A.
 
 **G:** I am confused.
 
-S: You must remember that, outside of Cosmicflix binging series, I am Śiva, the ultimate reality. I am a sculptor of sorts as I can create and carve worlds from myself. Conventional reality is created through my act of *apoha* or exclusion. So all of the world that Descartes lives in, including himself is actually something I have created. Descartes' conventional sense of personal identity is also conceptual and made through this process of exclusion as well (Torella, p. 132).
+**S:** You must remember that, outside of Cosmicflix binging series, I am Śiva, the ultimate reality. I am a sculptor of sorts as I can create and carve worlds from myself. Conventional reality is created through my act of *apoha* or exclusion. So all of the world that Descartes lives in, including himself is actually something I have created. Descartes' conventional sense of personal identity is also conceptual and made through this process of exclusion as well (Torella, p. 132).
 
 Let me rephrase my question. Seeing as you are also the Creator of all things, did you not consider all of your creations extensions of your self?
 
@@ -55,3 +55,25 @@ Thus, he concludes, I must exist and have these perfect qualities. In doing so, 
 **S:** Ah see now that Descartes does not have the key to *all knowledge* but rather just the ability to know that one must exist and the freedom to be able to judge the world for themselves. Hmm, this seems ok... for now. Let us return to the show.
 
 *[S presses play on the Cosmicflix show again.]*
+
+---
+
+## Week 6 Short-answer for PHIL240A
+
+Answer this question from the perspectives of both Descartes and Pratyabhiñā thinkers.
+
+> What, if anything, about self-knowledge is trustworthy?
+
+From the perspective of Cartesian thinkers, both soul and body are not necessarily trustworthy, but thought is. A Cartesian thinker is one who understands the Meditator, who is in turn sure of their own thoughts. To even have doubts or to be deceived, one must first exist. Thus, above all else, thought is inseparable from being. Then, the 'self' is only a thing that thinks (Descartes, p. 18-19) and thus is a trustworthy indicator of the self existing.
+
+Then, Descartes goes on to extend this by attempting to prove the existence of God. The rationale here surrounds the fact that God is *infinitely* perfect and has infinite substance (the most real) -- necessary existence cannot be separated from the essence of a supremely perfect being. As no effect can have a greater amount of reality than its cause combined with the fact that you can’t actually get the idea of infinity just from endlessly increasing what’s finite, the infinite must independently exist (Descartes, p. 32).
+
+Thus, Cartesian thinkers conclude, if deception is imperfect and God exists and is perfect, God cannot deceive. The things I perceive "clearly and distinctly" must be true and cannot be deceiving us about basic universal truths (e.g. a square has four sides) and methods of logical deduction (if p then q).
+
+---
+
+Pratyabhiñā thinkers on the other hand, believe that *all* knowledge is self-knowledge as everything is carved from the ultimate reality Śiva. They posit that only consciousness can present itself as precisely what it’s not while still remaining itself. Contrary to insentient objects," consciousness is capable of changing without perishing" (Ratie p. 441).
+
+Externality, then, is made on the basis of differentiating internal appearances, in order for Śiva to be able to experience the effects of the created objects (Torella p. 149). This creates a basic divide between self and world. Even the mere appearance of an external world to an embodied subject is the result of this exclusion (*apoha*). My ascertainment of something being a 'jar' is brought about by the free knowing subject and existence of the polarization of 'non-jar' things (Torella, p. 129-131)
+
+As all objects and subjects rest in Siva, there is one underlying unitary consciousness.
