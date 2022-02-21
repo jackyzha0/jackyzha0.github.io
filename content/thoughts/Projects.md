@@ -8,6 +8,14 @@ tags:
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
+## Telescopic Text -- open source library for expandable text
+
+[GitHub](https://github.com/jackyzha0/telescopic-text)
+
+An open-source library to help with creating expandable text, inspired by [StretchText](https://en.wikipedia.org/wiki/StretchText) and [TelescopicText](https://www.telescopictext.org/text/KPx0nlXlKTciC).
+
+I've been thinking a lot about creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.) and concepts like Telescopic Text are a first step in creating more information scales than just a single document level.
+
 ## Portal -- zero-config P2P encrypted folder syncing
 
 [Producthunt](https://www.producthunt.com/posts/portal-11), [GitHub](https://github.com/jackyzha0/portal)

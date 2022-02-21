@@ -30,6 +30,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Past
 2022
 - [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
+- [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant
+- **Unflattening** by Nick Sousanis
 
 ### 2021
 * [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell

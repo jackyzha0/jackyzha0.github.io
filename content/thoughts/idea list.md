@@ -7,6 +7,18 @@ tags:
 ---
 
 ## Ideas
+- data lensing for databases
+	- using https://www.inkandswitch.com/cambria/ maybe?
+	- some cool [interoperability](thoughts/interoperability.md) things
+-   app agnostic channel-based/event-driven communication using hypercore
+	- e.g. wait for message of type x
+	- hypercore as a universal message bus
+- canvas identity primitive
+	- allow users to register 3p providers that use signing
+-   tools for thought applied to IDEs?
+	-   IDEs as graph editors?
+- permaweb npm?
+	- pinning specific code versions
 -   LRU blockchain
 	-   RBAC blockchain???
 	-   groups of roles
@@ -16,20 +28,29 @@ tags:
 -   recaptcha model for moderation / proof of humanity
 -   library of decentralized data structures
 -  website inspo
-	- https://victoiredouy.com/about
-	- https://shapefarm.net/
-	- https://chartogne-taillet.com/en
-	- https://flowersforsociety.com/
--   AR + Magic Leap for 3D sculpting
+	- fun interactions
+		- https://victoiredouy.com/about
+		- http://www.narrowdesign.com/
+		- https://remix.run/
+		- https://lynnandtonic.com/
+		- https://thebrowser.company/
+	- misc
+		- https://shapefarm.net/
+	- 3d
+		- https://chartogne-taillet.com/en
+		- https://flowersforsociety.com/
+		- https://bruno-simon.com/
+		- https://danny-garcia.com/
+		- http://richardmattka.com/prototypes/red-shift
+	
 -   LayoutLM + screenshots → auto-categorization of knowledge
     -   maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk
+    - how do we prevent https://twitter.com/rsnous/status/1130910375795277824
 -   Reverse of the above? using LayoutLM to create semantically useful webpage annotations for those with reduced vision
 -   Marginalia for the web? browser as a graph database, chronological browsing?
     -   what if you could 3 finger swipe up on a browser to see what pages this page is connected to in a graph
     -   and you could write on the margins of pages and share those with friends
         -   a little annotated web
--   Data ownership with personal crypto addresses (personal data management?)
-    -   zero-knowledge proofs on data ownership within ML
 -   location-based ephemeral social groups with zero-knowledge proofs on location
     -   each location/city has a chat group which has a compound hash of all people in that location, derive only a boolean of whether a person is in a city or not without revealing exact location
     -   when a person leaves/arrives at a city, city hash is updated
@@ -42,7 +63,6 @@ tags:
 - tool to [interoperability](thoughts/interoperability.md) between different graph representations
 	-   e.g. Notion to Roam to Obsidian
 	-   CommonGraph??
-- on-chain oracles for integrating real world information
 - sound-based hashing for cryptographic verification
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
 - (no clue if this would work) integral images but applied to vector similarity search in text documents
@@ -95,31 +115,15 @@ tags:
 		- https://arxiv.org/pdf/2006.08381.pdf
 		- https://www.youtube.com/watch?v=qtu0aSTDE2I
 * Themis — go-based api testing framework
-```yaml
-tests:
-- name: "test 1"
-  url: "/test/:id"
-  - var1: "val"
-  config:
-	flags: []
-	benchmark: false
-	env:
-	  GO_PATH: "/usr/local/go"
-  cases:
-  - desc: ""
-		type: "EXACT" # [exact, contains, regex]
-		input: "asdf"
-		expected: "asdf"
-```
--   language agnostic using dockerbasical
--   github actions for CI integration
--   considerations?
-	-   different http verbs
-	-   form data
-	-   mock headers
--   test reports
--   can actually use concurrency lmao
-	-   buffered channel of tests, run x tests in parallel
+	-   language agnostic using dockerbasical
+	-   github actions for CI integration
+	-   considerations?
+		-   different http verbs
+		-   form data
+		-   mock headers
+	-   test reports
+	-   can actually use concurrency lmao
+		-   buffered channel of tests, run x tests in parallel
 * Better graph visualization
 	* [social graphs](thoughts/social%20graphs.md)
 	* [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
@@ -263,9 +267,6 @@ range(0, 100)
 	-> each(print)
 ```
 
-* Multi-level blogs
-	* blogging/reading platform where simplicity level can be adjusted
-	* https://en.wikipedia.org/wiki/StretchText
 * Better personal analytics
 	* small js bundle
 	* doesn't sell user data!!

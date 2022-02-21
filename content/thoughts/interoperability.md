@@ -47,3 +47,21 @@ What data was created a few days ago? etc.
 
 > When you create a new product or service that plugs into the existing ones _without the permission_ of the companies that make them. Think of third-party printer ink, alternative app stores, or independent repair shops that use compatible parts from rival manufacturers to fix your car or your phone or your tractor.
 
+## Data Lenses
+Source: [Ink and Switch on Cambria](https://www.inkandswitch.com/cambria/)
+
+An organization must balance their desire to change their API against their customers' reluctance to change something that works for them. The result is strong pressure to preserve backward compatibility over time, often across many versions.
+
+Developers rely on tribal knowledge to inform them which operations are safe—for example, they intuit that they can respond with additional data, trusting existing clients to ignore it, but not require additional data in requests, because existing clients won’t know to send it. Developers also often resort to shotgun parsing: scattering data checks and fallback values in various places throughout the system’s main logic. This can often lead not just to bugs, but also security vulnerabilities.
+
+However, in practice, most interoperability requires a tradeoff between
+- Consistency: both sides see a meaningfully equivalent view of the world
+- Conservation: neither side operates on data they can’t observe
+- Predictability: the local intent of every operation is preserved
+
+### Cambria
+Over time, a project using Cambria will accumulate many lenses, each describing the relationship between two versions. Migrations between distant versions are created by composing lenses into a graph where each node is a schema, and each edge is a lens. To translate data between two schemas, Cambria sends it through the shortest available path in the lens graph. These lenses must be kept in a place where even old versions of the program can retrieve them, such as in a database, at a well-known URL, or else as part of the document itself.
+
+![](https://www.inkandswitch.com/cambria/static/lens-graph.svg)
+Caveats:
+- Imagine a lens that combines a firstName and lastName fields into a single fullName. This lens works reliably in one direction. All names already stored in the system could be combined into a single field, but there are many names which could not be reliably converted back to “first” and “last” names. The result is a so-called lens that can only run reliably in one direction.

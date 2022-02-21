@@ -35,6 +35,18 @@ Ted Nelson, the guy who coined the terms hypertext and hypermedia, called the co
 
 Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf) and [Jinha Lee](http://www.leejinha.com/home.html)
 
+
+## Computers in Friendlier Forms
+Source: [Omar Rizwan on Notion Blog](https://www.notion.so/blog/omar)
+
+> If you have objects on your computer, you can have holographic projected versions of them on your desk and then you can suck them into physical objects if you want to physicalize them. Or you can turn them back into holographic objects if you have the physical object
+
+On making things that are just toys:
+- I kind of want to make more things that are just toys where it's fun to interact with the thing, because I feel like that actually sets a very high bar, a game can be fun because it has a story or it has cool characters or there's a scoring system or something. But a toy, it has to be fun to [play](thoughts/play.md) with just because it's fun to play with just from the interactions themselves.
+
+On physical analogues of software:
+- I think that they're all about trying to take stuff in the computer and give them some of the richness and texture and embodiment of things in the real world and scale also. Where everything on the computer is kind of pristine and closed and perfect and you can't touch it and it doesn't decay, and it all kind of fits in this 11 inch rectangle.
+
 ## Modes of Human Communication
 By upgrading forms of external communication, we can reduce [research debt](thoughts/research%20debt.md) and allow us to [collaborate](posts/collaborative-thinking.md) better
 
