@@ -6,7 +6,75 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>functional programming</title>
+      <link>https://jzhao.xyz/thoughts/functional-programming/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/functional-programming/</guid>
+      <description>Terminology Functor A type that can be mapped over.
+1 2 3  class Functor f where fmap :: (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b (&amp;lt;$) :: a -&amp;gt; f b -&amp;gt; f a   fmap takes a function which maps a value from a to b and applies it to a Functor f.</description>
+    </item>
+    
+    <item>
+      <title>Ask vs Guess culture</title>
+      <link>https://jzhao.xyz/thoughts/ask-vs-guess-culture/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ask-vs-guess-culture/</guid>
+      <description>phrasing from Jasmine
+Guess Culture  High social cost in asking for things  Often guess at the reaction of the other in order to mitigate potential social cost (e.</description>
+    </item>
+    
+    <item>
+      <title>Cozy software</title>
+      <link>https://jzhao.xyz/thoughts/cozy-software/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/cozy-software/</guid>
+      <description>Cozy eternal beta test mode
+ re: digital mindfulness! Not everything needs to be built at scale &amp;ndash; sometimes it can just be for family and friends :)) Normalize creating playful and non- instrumental technology</description>
+    </item>
+    
+    <item>
+      <title>People as lighthouses</title>
+      <link>https://jzhao.xyz/thoughts/people-as-lighthouses/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/people-as-lighthouses/</guid>
+      <description>written in a note once
+Similar to A love letter to virtual community care by Theresa Gao</description>
+    </item>
+    
+    <item>
+      <title>Software Principles</title>
+      <link>https://jzhao.xyz/thoughts/software-principles/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/software-principles/</guid>
+      <description>A Pattern Language for developing software
+ Inspired by Urbit Precepts</description>
+    </item>
+    
+    <item>
+      <title>Urbit</title>
+      <link>https://jzhao.xyz/thoughts/Urbit/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Urbit/</guid>
+      <description>Terminology  Arvo: OS Hoon: language Tlon: company Azimuth: ID Ames: Network  OS In 1974 a computer was a mainframe the size of a room and was shared by hundreds of people.</description>
+    </item>
+    
+    <item>
+      <title>What is Emptiness if not 0x0?</title>
+      <link>https://jzhao.xyz/thoughts/0x0/</link>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/0x0/</guid>
+      <description> cryptolanders and the 0x0 address what is emptiness if not 0x0  </description>
+    </item>
+    
     <item>
       <title>Archipelago</title>
       <link>https://jzhao.xyz/thoughts/Archipelago/</link>
@@ -2219,7 +2287,8 @@ Partly works because we can utilize collaborative thinking.</description>
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Ideas  LRU blockchain  RBAC blockchain??? groups of roles mutability in a window permanence outside of it edit only the last message you send   recaptcha model for moderation / proof of humanity library of decentralized data structures website inspo   https://victoiredouy.</description>
+      <description>Ideas   data lensing for databases
+ using https://www.inkandswitch.com/cambria/ maybe?</description>
     </item>
     
     <item>

@@ -66,6 +66,11 @@
         },
         {
           "source": "/books",
+          "target": "/thoughts/Archipelago",
+          "text": "Archipelago"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/How-to-do-Nothing",
           "text": "How to Do Nothing"
         },
@@ -1781,6 +1786,18 @@
           "text": "diversity problems"
         }
       ],
+      "/thoughts/Urbit": [
+        {
+          "source": "/thoughts/Urbit",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing"
+        },
+        {
+          "source": "/thoughts/Urbit",
+          "target": "/thoughts/digital-permanence",
+          "text": "digital permanence"
+        }
+      ],
       "/thoughts/Vanilla-Ice-Cream-effect": [
         {
           "source": "/thoughts/Vanilla-Ice-Cream-effect",
@@ -2302,6 +2319,18 @@
           "source": "/thoughts/context",
           "target": "/posts/context-collapse",
           "text": "context collapse"
+        }
+      ],
+      "/thoughts/cozy-software": [
+        {
+          "source": "/thoughts/cozy-software",
+          "target": "/thoughts/digital-mindfulness",
+          "text": "digital mindfulness"
+        },
+        {
+          "source": "/thoughts/cozy-software",
+          "target": "/thoughts/instrumentalism",
+          "text": "instrumental"
         }
       ],
       "/thoughts/creation-vs-maintenance": [
@@ -3181,6 +3210,11 @@
         },
         {
           "source": "/thoughts/idea-list",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
+        },
+        {
+          "source": "/thoughts/idea-list",
           "target": "/thoughts/attention-economy",
           "text": "attention economy"
         },
@@ -3605,6 +3639,11 @@
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/desktop-metaphor",
           "text": "Desktop metaphor"
+        },
+        {
+          "source": "/thoughts/interaction-design",
+          "target": "/thoughts/play",
+          "text": "play"
         },
         {
           "source": "/thoughts/interaction-design",
@@ -4292,6 +4331,23 @@
           "source": "/thoughts/organizing-system",
           "target": "/thoughts/interaction-design",
           "text": "Desktop Metaphor"
+        }
+      ],
+      "/thoughts/pace-layers": [
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/trust",
+          "text": "Trust"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/Extended-Mind-Hypothesis",
+          "text": "Extended Mind Hypothesis"
         }
       ],
       "/thoughts/phenomenology": [
@@ -4991,6 +5047,13 @@
           "source": "/thoughts/software-and-politics",
           "target": "/thoughts/A-City-is-not-a-Tree",
           "text": "A City is not a Tree"
+        }
+      ],
+      "/thoughts/software-principles": [
+        {
+          "source": "/thoughts/software-principles",
+          "target": "/thoughts/maintenance",
+          "text": "maintenance"
         }
       ],
       "/thoughts/soulbound": [
@@ -6039,6 +6102,13 @@
           "text": "Algorithms of Oppression"
         }
       ],
+      "/thoughts/Archipelago": [
+        {
+          "source": "/books",
+          "target": "/thoughts/Archipelago",
+          "text": "Archipelago"
+        }
+      ],
       "/thoughts/Arweave": [
         {
           "source": "/thoughts/web3",
@@ -6307,6 +6377,11 @@
         },
         {
           "source": "/thoughts/machine-learning",
+          "target": "/thoughts/Extended-Mind-Hypothesis",
+          "text": "Extended Mind Hypothesis"
+        },
+        {
+          "source": "/thoughts/pace-layers",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "Extended Mind Hypothesis"
         },
@@ -7135,6 +7210,11 @@
           "source": "/thoughts/kernel",
           "target": "/thoughts/blockchain",
           "text": "The promise of the Blockchain"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
         },
         {
           "source": "/thoughts/trust",
@@ -7970,6 +8050,11 @@
           "text": "designing for slowness"
         },
         {
+          "source": "/thoughts/cozy-software",
+          "target": "/thoughts/digital-mindfulness",
+          "text": "digital mindfulness"
+        },
+        {
           "source": "/thoughts/friction",
           "target": "/thoughts/digital-mindfulness",
           "text": "digital mindfulness"
@@ -7990,6 +8075,11 @@
           "source": "/thoughts/NFT",
           "target": "/thoughts/digital-permanence",
           "text": "Digital Permanence"
+        },
+        {
+          "source": "/thoughts/Urbit",
+          "target": "/thoughts/digital-permanence",
+          "text": "digital permanence"
         },
         {
           "source": "/thoughts/blockchain",
@@ -9136,6 +9226,11 @@
           "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/thoughts/instrumentalism",
           "text": "instrumentalism"
+        },
+        {
+          "source": "/thoughts/cozy-software",
+          "target": "/thoughts/instrumentalism",
+          "text": "instrumental"
         }
       ],
       "/thoughts/intelligence": [
@@ -9298,6 +9393,13 @@
           "text": "interaction failure"
         }
       ],
+      "/thoughts/internet-computing": [
+        {
+          "source": "/thoughts/Urbit",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing"
+        }
+      ],
       "/thoughts/interoperability": [
         {
           "source": "/posts/networked-thought",
@@ -9308,6 +9410,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/interoperability",
           "text": "Interoperable"
+        },
+        {
+          "source": "/thoughts/idea-list",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
         },
         {
           "source": "/thoughts/idea-list",
@@ -9510,6 +9617,11 @@
         },
         {
           "source": "/thoughts/innovation",
+          "target": "/thoughts/maintenance",
+          "text": "maintenance"
+        },
+        {
+          "source": "/thoughts/software-principles",
           "target": "/thoughts/maintenance",
           "text": "maintenance"
         }
@@ -9946,6 +10058,11 @@
         },
         {
           "source": "/thoughts/instrumentalism",
+          "target": "/thoughts/play",
+          "text": "play"
+        },
+        {
+          "source": "/thoughts/interaction-design",
           "target": "/thoughts/play",
           "text": "play"
         },
@@ -10962,6 +11079,11 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/trust",
+          "text": "Trust"
+        },
+        {
           "source": "/thoughts/proof-of-stake",
           "target": "/thoughts/trust",
           "text": "trust"
@@ -11333,6 +11455,11 @@
       "source": "/books",
       "target": "/thoughts/The-Midnight-Library",
       "text": "The Midnight Library"
+    },
+    {
+      "source": "/books",
+      "target": "/thoughts/Archipelago",
+      "text": "Archipelago"
     },
     {
       "source": "/books",
@@ -12915,6 +13042,16 @@
       "text": "diversity problems"
     },
     {
+      "source": "/thoughts/Urbit",
+      "target": "/thoughts/internet-computing",
+      "text": "internet computing"
+    },
+    {
+      "source": "/thoughts/Urbit",
+      "target": "/thoughts/digital-permanence",
+      "text": "digital permanence"
+    },
+    {
       "source": "/thoughts/Vanilla-Ice-Cream-effect",
       "target": "/thoughts/consensus",
       "text": "Consensus"
@@ -13378,6 +13515,16 @@
       "source": "/thoughts/context",
       "target": "/posts/context-collapse",
       "text": "context collapse"
+    },
+    {
+      "source": "/thoughts/cozy-software",
+      "target": "/thoughts/digital-mindfulness",
+      "text": "digital mindfulness"
+    },
+    {
+      "source": "/thoughts/cozy-software",
+      "target": "/thoughts/instrumentalism",
+      "text": "instrumental"
     },
     {
       "source": "/thoughts/creation-vs-maintenance",
@@ -14181,6 +14328,11 @@
     },
     {
       "source": "/thoughts/idea-list",
+      "target": "/thoughts/interoperability",
+      "text": "interoperability"
+    },
+    {
+      "source": "/thoughts/idea-list",
       "target": "/thoughts/attention-economy",
       "text": "attention economy"
     },
@@ -14573,6 +14725,11 @@
       "source": "/thoughts/interaction-design",
       "target": "/thoughts/desktop-metaphor",
       "text": "Desktop metaphor"
+    },
+    {
+      "source": "/thoughts/interaction-design",
+      "target": "/thoughts/play",
+      "text": "play"
     },
     {
       "source": "/thoughts/interaction-design",
@@ -15210,6 +15367,21 @@
       "text": "Desktop Metaphor"
     },
     {
+      "source": "/thoughts/pace-layers",
+      "target": "/thoughts/trust",
+      "text": "Trust"
+    },
+    {
+      "source": "/thoughts/pace-layers",
+      "target": "/thoughts/blockchain",
+      "text": "blockchain"
+    },
+    {
+      "source": "/thoughts/pace-layers",
+      "target": "/thoughts/Extended-Mind-Hypothesis",
+      "text": "Extended Mind Hypothesis"
+    },
+    {
       "source": "/thoughts/phenomenology",
       "target": "/thoughts/Buddhism",
       "text": "Buddhist"
@@ -15843,6 +16015,11 @@
       "source": "/thoughts/software-and-politics",
       "target": "/thoughts/A-City-is-not-a-Tree",
       "text": "A City is not a Tree"
+    },
+    {
+      "source": "/thoughts/software-principles",
+      "target": "/thoughts/maintenance",
+      "text": "maintenance"
     },
     {
       "source": "/thoughts/soulbound",
