@@ -1,5 +1,5 @@
 ---
-title: "functional programming"
+title: "Functional Programming"
 date: 2022-02-21
 tags:
 - sapling

@@ -44,9 +44,9 @@ tags:
 		- http://richardmattka.com/prototypes/red-shift
 	
 -   LayoutLM + screenshots → auto-categorization of knowledge
-    -   maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk
+	- https://screenotate.com/ but with atlas recall
+    -  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk
     - how do we prevent https://twitter.com/rsnous/status/1130910375795277824
--   Reverse of the above? using LayoutLM to create semantically useful webpage annotations for those with reduced vision
 -   Marginalia for the web? browser as a graph database, chronological browsing?
     -   what if you could 3 finger swipe up on a browser to see what pages this page is connected to in a graph
     -   and you could write on the margins of pages and share those with friends

@@ -1,0 +1,110 @@
+---
+title: "Poetry"
+date: 2022-02-22
+tags:
+- fruit
+---
+
+## Knowing
+- They
+	- The man at the bookstore
+		- I went to the
+		- bookstore
+			- little rickety bookstore off of 5th Avenue
+				- that bookstore at the intersection of 5th Avenue and Adam Street I always went to when I was feeling
+				- rather melancholic.
+					- melancholic.
+					- When my father first passed,
+						- I don't think I ever truly knew
+						- my father.
+							- my father -- he was absent for most of my childhood. He would always go on
+							- 'business trips' and
+								- 'business trips'  with his work friends and coming home smelling like smoke and alcohol. Sometimes, he would
+							- come often come home
+							- days later than he said he would.
+								-  days later than he said he would. Who knows what he actually did. 
+							- He was never cruel, but the love that was supposed to be unconditionally present was unconditionally gone.
+						- When he passed, I felt an overwhelming
+						- sense of confusion.
+							- sense of confusion. I remember they said he died of natural causes -- yet nothing had seemed to be wrong with him. In the rare hours he was back at home, he seemed healthy and almost fit at times, often going for early runs.
+						- Mom didn't seem to care about his death, almost as if she was numb to the pain, already used to his absence. Really, it only took a few weeks for her to find someone else and
+						- left me to fend for myself.
+							- left me to fend for myself. To her, I was just a remnant of a past life she was ready to forget.
+					- I used to
+					- hole up here during
+						- curl up in the little bean bag corner by the window
+						- when it rained.
+							- when it rained. On days when it was especially wet,
+							- the tabby
+								- the orange tabby (the owner said his name was Flan but to be honest, I'm not sure I heard it right)
+							- that lived in the bookstore always came up for snuggles.
+							- I'd always look out the window, looking for that familiar speckly salt-and-pepper hair
+							- walking by.
+								- walking by. I don't know what I was hoping for -- to see him again? For him to finally face me and tell me
+								- he was sorry
+									- "I'm sorry"
+										- "I'm sorry"? For him to apologize for
+										- being absent?
+											- being absent? For him to hold out his arms and tell me that he's going to do better and for him to bring our family back together
+								- ?
+								- To this day, I still don't really know why I go back to this bookstore so much.
+						- It was a nice place for the
+					- workdays when I couldn't pull myself together enough to show up to my dead-end job.
+				- Something about the poorly painted "Old Goat Bookstore" sign and the smell of old books just made me
+				- feel comfortable.
+					- feel at home. Maybe it was the smell of the study back when Mom and I used to still have the house we
+					- lived in.
+						- had. I remember that there was always that second-hand copy of The Midnight Library that I used to read as a kid. Or the copy of Le Petit Prince that always sat, dusty, on that desk of his. That was before we had to sell it because of the stupid housing market and all the debt. That world felt so long ago.
+				- In any case, the bookstore visit was
+		- yesterday. At the checkout, there was
+		- a man
+			- a lanky looking man in a trenchcoat
+		- scanning the shelves.
+			- scanning the shelves, as if looking for something among the book store giftcards and mugs.
+		- He
+- seemed
+- interesting.
+	- interesting. I don't mean this in a judgemental way, but more of a
+	- "wow, he seems eccentric" kind of way.
+		- way that told me he wasn't from around the area. I looked for a bit too long and the cashier told me to hurry up.
+		- I studied him
+			- him --
+			- all his wrinkles and scars on his face
+				- the bags under his eyes carrying the weight of over half a century of weariness, the wrinkles a careful folding that seemed to count the years like a tree trunk has rings
+			- -- 
+		- as he paid for his
+		- books.
+			- books. Something stirred in me when I saw the name Antoine de Saint-Exupéry on one.
+		- There was something that was
+		- off.
+			- off -- maybe it was his long coat reached his boots or his curly salt-and-pepper hair being
+			- slightly wet.
+				- slightly wet. Or maybe it was just his face?
+					- Or maybe it was just his face? There was the signature rosy-red of someone who was out in the cold for
+					- far too long.
+						- far too long. Something smelled vaguely of smoke that might have been from a cigar.
+			- I pushed the door open to a little jingle from the door chime. I stood outside for a bit after to
+			- recollect myself.
+				- recollect myself. A familiar *ting-ling* rang through the crisp winter air as the man exited the bookstore.
+				- He stood there for a moment.
+				- I muttered something.
+					- @Q I always liked to read The Little Prince when I was younger.
+				- He glanced over.
+					- @Q Yeah? I used to read it a lot too. Actually, I stopped reading for a while, but I'm picking things up again. My son loves this book. Little bugger can't sleep without it but he lost his old copy.
+				- We stood there for a while in the billowing wind.
+				- There was something about him that just invited me to keep talking.
+					- @Q You know, my dad once told me a quote from Heraclitus. He said that "No man steps in the same river twice. The second time around, both man and river are different than they were before." The books are the same, but we change between each reading. The world changes, too. Sometimes I like to think that he were here to re-read those books to me. Just so he could see that I've grown.
+				- Finally, silence.
+					- @Q There is no point trying to prove to the past how worthy you are now.
+				- I glanced over at his slender frame, realizing know that he looks a lot like my Dad. He pulled out a cigar and lit it.
+				- He continued.
+					- @Q "There are patterns to life… Rhythms. It is so easy, while trapped in just one life, to imagine that times of sadness or tragedy or failure or fear are a result of that particular existence." Matthew Haig. Things may be difficult. You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life. It may not be the life you wanted back then, but you are a different person now. You've stepped out of the river for the second time. This may not be idea life but you can always choose it. No matter what your life is, choosing it changes everything. In choosing it, you give back to yourself the ability to enjoy the present and all of the joys that come with that.
+				- He exhaled a puff of smoke. I looked up at the
+				- beautifully blue sky.
+					- beautifully blue sky, now tinged slightly orange as the sun descended slowly.
+					- I chose to believe that yesterday I had met some reincarnation of my father.
+						- I chose to believe that yesterday was the day I stopped
+						- hating the desert for its dryness and instead admired it for its ability to hold wells.
+						- As Saint-Exupéry said...
+							- @Q “What makes the desert beautiful,' said the little prince, 'is that somewhere it hides a well...”
+	- It was a sunny day after all.
