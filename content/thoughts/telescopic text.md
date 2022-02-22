@@ -1,11 +1,15 @@
 ---
-title: "Poetry"
+title: "Telescopic Text"
 date: 2022-02-22
 tags:
 - fruit
 ---
 
-## Knowing
+Some personal writings using telescopic text.
+
+## knowing
+A short exposition on moving on.
+
 - They
 	- The man at the bookstore
 		- I went to the

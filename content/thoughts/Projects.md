@@ -16,6 +16,8 @@ An open-source library to help with creating expandable text, inspired by [Stret
 
 I've been thinking a lot about creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.) and concepts like Telescopic Text are a first step in creating more information scales than just a single document level.
 
+Writing here: [telescopic text](thoughts/telescopic%20text.md)
+
 ## Portal -- zero-config P2P encrypted folder syncing
 
 [Producthunt](https://www.producthunt.com/posts/portal-11), [GitHub](https://github.com/jackyzha0/portal)
