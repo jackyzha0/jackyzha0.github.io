@@ -45,8 +45,7 @@ tags:
 									- "I'm sorry"
 										- "I'm sorry"? For him to apologize for
 										- being absent?
-											- being absent? For him to hold out his arms and tell me that he's going to do better and for him to bring our family back together
-								- ?
+											- being absent? For him to hold out his arms and tell me that he's going to do better and for him to bring our family back together?
 								- To this day, I still don't really know why I go back to this bookstore so much.
 						- It was a nice place for the
 					- workdays when I couldn't pull myself together enough to show up to my dead-end job.
@@ -67,7 +66,8 @@ tags:
 	- interesting. I don't mean this in a judgemental way, but more of a
 	- "wow, he seems eccentric" kind of way.
 		- way that told me he wasn't from around the area. I looked for a bit too long and the cashier told me to hurry up.
-		- I studied him
+		- I studied
+		- him
 			- him --
 			- all his wrinkles and scars on his face
 				- the bags under his eyes carrying the weight of over half a century of weariness, the wrinkles a careful folding that seemed to count the years like a tree trunk has rings
@@ -90,15 +90,15 @@ tags:
 				- I muttered something.
 					- @Q I always liked to read The Little Prince when I was younger.
 				- He glanced over.
-					- @Q Yeah? I used to read it a lot too. Actually, I stopped reading for a while, but I'm picking things up again. My son loves this book. Little bugger can't sleep without it but he lost his old copy.
+					- @Q Yeah? I used to read it a lot too. Actually, I stopped reading for a while, but I'm picking things up again. My son loves this book. Little bugger can't sleep without it. He lost his old copy so I'm getting him another one.
 				- We stood there for a while in the billowing wind.
 				- There was something about him that just invited me to keep talking.
 					- @Q You know, my dad once told me a quote from Heraclitus. He said that "No man steps in the same river twice. The second time around, both man and river are different than they were before." The books are the same, but we change between each reading. The world changes, too. Sometimes I like to think that he were here to re-read those books to me. Just so he could see that I've grown.
 				- Finally, silence.
 					- @Q There is no point trying to prove to the past how worthy you are now.
-				- I glanced over at his slender frame, realizing know that he looks a lot like my Dad. He pulled out a cigar and lit it.
+				- I glanced over at his slender frame, realizing now that he looks a lot like my Dad. He pulled out a cigar and lit it.
 				- He continued.
-					- @Q "There are patterns to life… Rhythms. It is so easy, while trapped in just one life, to imagine that times of sadness or tragedy or failure or fear are a result of that particular existence." Matthew Haig. Things may be difficult. You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life. It may not be the life you wanted back then, but you are a different person now. You've stepped out of the river for the second time. This may not be idea life but you can always choose it. No matter what your life is, choosing it changes everything. In choosing it, you give back to yourself the ability to enjoy the present and all of the joys that come with that.
+					- @Q "There are patterns to life… Rhythms. It is so easy, while trapped in just one life, to imagine that times of sadness or tragedy or failure or fear are a result of that particular existence." Matthew Haig. Things may be difficult. You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life. It may not be the life you wanted back then, but you are a different person now. You've stepped out of the river for the second time. This may not your ideal life but you can always choose it. No matter what your life is, choosing it changes everything. In choosing it, you give back to yourself the ability to enjoy the present and all of the joys that come with that.
 				- He exhaled a puff of smoke. I looked up at the
 				- beautifully blue sky.
 					- beautifully blue sky, now tinged slightly orange as the sun descended slowly.
