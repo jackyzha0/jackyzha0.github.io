@@ -126,11 +126,25 @@ To prevent loops, we set a TTL (time-to-live) for packets to expire after a cert
 For reliable networks (like local) where out-of-order protections of TCP are unnecessary, or for time sensitive applications (e.g. streams or calls) where lossy transmission at high speed is better than quality transmission at choppy speed.
 
 ## Address Resolution Protocol (ARP)
-- Host broadcasts a query with an IP address: "who has IP address 130.207.160.47?"
-- Host with that IP address on the LAN will respond with appropriate MAC address.
-- Resolves IP to MAC
+Purpose: links the network layer (IP address) with the link layer (MAC address)
+
+Case: A wants tot send a datagram to B, but A doesn't know B's MAC address
+
+- A broadcasts an ARP query packet with an IP address: "who has IP address 130.207.160.47?"
+- B receives ARP request with that IP address on the LAN will respond with appropriate MAC address.
 - Generates an ARP Table maps IP to MAC
+	- This is soft state, information that goes away unless refreshed. Each entry has a time limit
+
+General Notes
 - Useful because frames use MAC addresses for addressing
+- ARP is stateless, doesn't remember whether it sent a request (always reads response)
+- Not authenticated, anyone can ARP
+- Easily spoofed
+
+## DHCP
+Dynamic Host Configuration Protocol so they can join a network.
+
+
 
 ## Hubs, Switches, and Routers
 1. Hub - broadcasting through cloning bits (physical layer)
@@ -142,6 +156,7 @@ For reliable networks (like local) where out-of-order protections of TCP are unn
 	2. If table is initially empty, will behave like a hub and broadcast
 	3. Can start populating switch table based off of sender field from frames
 	4. Quicker than a router for internal communication (though some routers have an Ethernet switch built in)
+	5. If engineered right, can be full-duplex
 3. Router - glue that ties networks together (network layer)
 	1. Does NOT support broadcast
 	2. Serves as a bridge between private home network and the network of the internet provider (which can reach the rest of the internet)
@@ -171,21 +186,24 @@ For reliable networks (like local) where out-of-order protections of TCP are unn
 	1. Even parity is 1 if number of 1s is odd
 	2. Can detect odd number of bit flips
 3. 2D Parity Bit
-	1. 
-4. Checksum
+	1. Additional parity bits for each row
+	2. Additional parity bits for each column
+	4. One last additional bit in last row of parity bits
+5. Checksum
 	1. Assume data is a sequence of 16-bit integers
 	2. Addition, 1's complement sum, carry out added back in
 	3. Checksum is the 1's complement of the computed value
 	4. Compare with the received data (if same, it is ok)
 		1. Alternatively, compute the same function over the data and checksum
-5. Cyclic Redundancy Check (CRC)
-	1. Parameterized by constants G and r
-	2. r + 1 is the length of G (some power of 2)
-	3. G is the generator (arbitrary bit pattern)
-	4. Sender wants to send D
+6. Cyclic Redundancy Check (CRC)
+	1. Uses only XOR and shift
+	2. Parameterized by constants G and r
+	3. r + 1 is the length of G (some power of 2)
+	4. G is the generator (arbitrary bit pattern)
+	5. Sender wants to send D
 		1. Chooses r CRC bits, R such that <D, R> is exactly divisible by G (mod 2)
-	5. Receiver knows G, divides <D, R> by G. If the remainder is non-zero an error is detected!
-	6. Can detect all burst errors less than r+1 bits, and burst errors greater than r+1 with probability 1-0.5^r
+	6. Receiver knows G, divides <D, R> by G. If the remainder is non-zero an error is detected!
+	7. Can detect all burst errors less than $r+1$ bits, and burst errors greater than $r+1$ with probability $1-0.5^r$
 
 ## Access Control
 1. Half-duplex - both sides can transmit, but only one at a time
@@ -198,5 +216,5 @@ For reliable networks (like local) where out-of-order protections of TCP are unn
 		1. Random backoff between 0 and power of 2 (n increases each time)
 	4. Turn-based access control
 		1. Controlled by centralized party - polls everyone
-		2. Controlled by centralized party - passes a token between senders
+		2. Controlled in a decentralized manner - passes a token between senders
 2. Full-duplex - both sides can transmit at the same time without interference
