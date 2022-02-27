@@ -17,11 +17,6 @@
 </div>
 <div class="index">
     <div class="bio">
-        <article>
-            <p>Hello there, traveller of the web. <span class="return-only"> Welcome back! </span> You must be tired.</p>
-            <p class="delay t-2">Why don't you enjoy a cup of calming Jasmine tea? <span class="return-only">I got the kettle going if you want some.</span></p>
-            <div class="delay stagger">{{- .Content -}}</div>
-        </article>
         <ul class="delay t-4 stagger">
             <h2>Recent Notes</h2>
             {{range first 6 .Site.RegularPages }}
@@ -38,6 +33,11 @@
             </li>
             {{end}}
         </ul>
+        <article>
+            <p>Hello there, traveller of the web. <span class="return-only"> Welcome home! </span> You must be tired from your journey.</p>
+            <p class="delay t-2">Come, sit! Can I make you a cup of warm Barley tea? <span class="return-only">I got the kettle going if you want some.</span></p>
+            <div class="delay stagger">{{- .Content -}}</div>
+        </article>
     </div>
     <div class="delay t-4">
         {{partial "footer.html" .}}

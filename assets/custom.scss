@@ -68,20 +68,18 @@
 
   & > .bio {
     display: flex;
-    gap: 4em;
+    gap: 1.5em;
 
     @media screen and (max-width: 1440px) {
       flex-direction: column !important;
     }
 
-    & > article {
-      text-align: justify;
-    }
-
     & > ul {
-      flex: 0 0 35%;
+      flex: 0 0 30%;
       list-style: none;
       padding: 0;
+      margin-left: 0;
+      z-index: 0;
 
       & h2 {
         font-size: 1.4rem;

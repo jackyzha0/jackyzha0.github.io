@@ -24,14 +24,13 @@ body {
 }
 
 [visited="true"] .return-only {
-  display: inline-block;
+  display: inline;
 }
 
 [show-animation="true"] .delay {
   animation: fadeIn ease 0.5s;
   opacity: 0;
   animation-fill-mode: forwards;
-  z-index: 0;
 
   &.t-1 {
     animation-delay: 0.5s;
@@ -49,13 +48,16 @@ body {
     animation-delay: 2.2s;
   }
 
+  @for $j from 1 through 5 {
   @for $i from 1 through 10 {
-  &.stagger > *:nth-child(#{$i}) {
+  &.stagger:nth-last-of-type(#{$j}) > *:nth-child(#{$i}) {
     animation: fadeIn ease 0.5s;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-delay: #{$i * .08 + 2.2}s;
-    z-index: -#{$i};
+    z-index: #{-$i + 10 * ($j+1)};
+    position: relative;
+  }
   }
   }
 }
@@ -296,6 +298,8 @@ article {
   & > .meta {
     margin-top: 0.25em;
     opacity: 0.5;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8rem;
   }
 
   & > p {
@@ -316,7 +320,7 @@ sup > a {
 }
 
 a {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: "JetBrains Mono", monospace;
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
@@ -355,11 +359,6 @@ body {
   background-color: var(--light);
 }
 
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
 footer {
   margin-top: 4em;
 
@@ -383,7 +382,6 @@ hr {
   &:after {
     content: "* * *";
     display: inline-block;
-    position: relative;
     margin: -1em 0 0.5em;
     font-size: 1.5em;
     padding: 0.5em 1em;
