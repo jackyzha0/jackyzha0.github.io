@@ -1612,6 +1612,21 @@
           "source": "/thoughts/NAT",
           "target": "/thoughts/Protocol",
           "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/decentralization",
+          "text": "decentralized"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
         }
       ],
       "/thoughts/NFT": [
@@ -7745,6 +7760,16 @@
           "text": "UDP"
         },
         {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        },
+        {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/UDP",
           "text": "UDP"
@@ -8666,6 +8691,11 @@
         },
         {
           "source": "/thoughts/Making-and-Maintenance-of-OSS",
+          "target": "/thoughts/decentralization",
+          "text": "decentralized"
+        },
+        {
+          "source": "/thoughts/NAT",
           "target": "/thoughts/decentralization",
           "text": "decentralized"
         },
@@ -13746,6 +13776,21 @@
       "source": "/thoughts/NAT",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
+    },
+    {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/decentralization",
+      "text": "decentralized"
+    },
+    {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/UDP",
+      "text": "UDP"
+    },
+    {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/UDP",
+      "text": "UDP"
     },
     {
       "source": "/thoughts/NFT",
