@@ -26,7 +26,7 @@ Reduced mean time-to-acknowledge for alerts from hours to minutes by adding aler
 
 Tech used: React, Jest, Cypress, Terraform, Ansible, Grafana, Prometheus, JavaScript, HCL
 
-## 2019: Hootsuite SWE
+## 2019: [Hootsuite](posts/hootsuite.md) SWE
 Implemented a proof of concept service mesh to break Scala monolith service into microservices. Proposal was added to the company technical roadmap for 2023. Implemented an internal endpoint to assist with data compliance requests. Defined and implemented Service Level Objectives (SLOs) for 3 of Hootsuite's core internal services.
 
 Tech used: SQL, Envoy, Istio, Kubernetes, Docker, Sumologic, Go, Scala
