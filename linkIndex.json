@@ -4,6 +4,11 @@
       "/": [
         {
           "source": "/",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/",
           "target": "/posts/networked-thought",
           "text": "digital garden"
         },
@@ -11,6 +16,11 @@
           "source": "/",
           "target": "/thoughts/organizing-system",
           "text": "organizing system"
+        },
+        {
+          "source": "/",
+          "target": "/posts/play",
+          "text": "playing"
         },
         {
           "source": "/",
@@ -40,12 +50,12 @@
         {
           "source": "/",
           "target": "/posts",
-          "text": "Things I've thought heavily about"
+          "text": "Things I've written more concrete words about"
         },
         {
           "source": "/",
           "target": "/thoughts/Projects",
-          "text": "Things I've tinkered with"
+          "text": "Things I've tinkered with and hacked on"
         },
         {
           "source": "/",
@@ -395,6 +405,11 @@
         },
         {
           "source": "/posts/context-collapse",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/posts/context-collapse",
           "target": "/thoughts/bandwidth",
           "text": "bandwidth"
         }
@@ -478,6 +493,11 @@
           "source": "/posts/networked-thought",
           "target": "/thoughts/search",
           "text": "search"
+        },
+        {
+          "source": "/posts/networked-thought",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         },
         {
           "source": "/posts/networked-thought",
@@ -620,8 +640,18 @@
         },
         {
           "source": "/posts/paid-open-source",
+          "target": "/thoughts/internet-computing",
+          "text": "Internet computing"
+        },
+        {
+          "source": "/posts/paid-open-source",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "Creation vs Maintenance"
+        },
+        {
+          "source": "/posts/paid-open-source",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         },
         {
           "source": "/posts/paid-open-source",
@@ -702,6 +732,11 @@
         }
       ],
       "/thoughts/A-City-is-not-a-Computer": [
+        {
+          "source": "/thoughts/A-City-is-not-a-Computer",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/thoughts/move-fast-and-break-things",
@@ -816,6 +851,11 @@
         }
       ],
       "/thoughts/ARP": [
+        {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
         {
           "source": "/thoughts/ARP",
           "target": "/thoughts/Network-Layer",
@@ -1017,6 +1057,11 @@
       "/thoughts/DHCP": [
         {
           "source": "/thoughts/DHCP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/DHCP",
           "target": "/thoughts/IP-Addresses",
           "text": "IP addresses"
         },
@@ -1027,6 +1072,11 @@
         }
       ],
       "/thoughts/DNS": [
+        {
+          "source": "/thoughts/DNS",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
         {
           "source": "/thoughts/DNS",
           "target": "/thoughts/IP-Addresses",
@@ -1182,6 +1232,11 @@
         },
         {
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/From-Counterculture-to-Cyberculture",
           "target": "/thoughts/boundary-object",
           "text": "Contact Language"
         },
@@ -1334,6 +1389,43 @@
           "source": "/thoughts/Interact-Circle-W21",
           "target": "/thoughts/terminology",
           "text": "terminology"
+        }
+      ],
+      "/thoughts/Internet": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/niche-at-scale",
+          "text": "Niche at scale"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/decentralization",
+          "text": "Centralization"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
+          "text": "Dark Forest Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/digital-permanence",
+          "text": "digital permanence"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Moving-Castles",
+          "text": "Moving Castles and Wizards"
         }
       ],
       "/thoughts/Knowledge-Argument": [
@@ -1498,6 +1590,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/interoperability",
           "text": "Interoperable"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/NAT": [
@@ -1510,6 +1607,11 @@
           "source": "/thoughts/NAT",
           "target": "/thoughts/IP-Addresses",
           "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
         }
       ],
       "/thoughts/NFT": [
@@ -1539,6 +1641,11 @@
           "source": "/thoughts/Network-Layer",
           "target": "/thoughts/IP-Addresses",
           "text": "IP Addresses"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/Nozicks-Experience-Machine": [
@@ -1607,6 +1714,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/telescopic-text",
           "text": "telescopic text"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -1884,6 +1996,13 @@
           "text": "terminology"
         }
       ],
+      "/thoughts/UDP": [
+        {
+          "source": "/thoughts/UDP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        }
+      ],
       "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley": [
         {
           "source": "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley",
@@ -2004,6 +2123,16 @@
         },
         {
           "source": "/thoughts/aperture-problem",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/aperture-problem",
+          "target": "/thoughts/DNS",
+          "text": "DNS"
+        },
+        {
+          "source": "/thoughts/aperture-problem",
           "target": "/thoughts/information-scales",
           "text": "information scales"
         },
@@ -2113,6 +2242,11 @@
           "source": "/thoughts/bitcoin",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/bitcoin",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
         },
         {
           "source": "/thoughts/bitcoin",
@@ -2544,6 +2678,11 @@
         },
         {
           "source": "/thoughts/decentralization",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/decentralization",
           "target": "/thoughts/proof-of-stake",
           "text": "proof of stake"
         },
@@ -2551,6 +2690,11 @@
           "source": "/thoughts/decentralization",
           "target": "/thoughts/consensus",
           "text": "Consensus"
+        },
+        {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/degrowth": [
@@ -2610,6 +2754,11 @@
         },
         {
           "source": "/thoughts/digital-commons",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/digital-commons",
           "target": "/thoughts/ephemereal-content",
           "text": "real-time"
         }
@@ -2662,6 +2811,11 @@
         }
       ],
       "/thoughts/digital-permanence": [
+        {
+          "source": "/thoughts/digital-permanence",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
         {
           "source": "/thoughts/digital-permanence",
           "target": "/thoughts/cancel-culture",
@@ -2795,6 +2949,11 @@
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/library",
           "text": "library"
+        },
+        {
+          "source": "/thoughts/ephemereal-content",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         },
         {
           "source": "/thoughts/ephemereal-content",
@@ -2966,6 +3125,11 @@
         }
       ],
       "/thoughts/friction": [
+        {
+          "source": "/thoughts/friction",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
         {
           "source": "/thoughts/friction",
           "target": "/thoughts/digital-mindfulness",
@@ -3157,6 +3321,11 @@
           "source": "/thoughts/governance",
           "target": "/thoughts/Galls-law",
           "text": "Gall's law"
+        },
+        {
+          "source": "/thoughts/governance",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/group-limits": [
@@ -3535,6 +3704,11 @@
           "source": "/thoughts/information-system",
           "target": "/thoughts/library",
           "text": "library"
+        },
+        {
+          "source": "/thoughts/information-system",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
         }
       ],
       "/thoughts/infrastructure": [
@@ -3565,8 +3739,18 @@
         },
         {
           "source": "/thoughts/infrastructure",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/infrastructure",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/Internet",
+          "text": "internet"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -3812,6 +3996,16 @@
         }
       ],
       "/thoughts/internet-computing": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
         {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Protocol",
@@ -4341,6 +4535,11 @@
         },
         {
           "source": "/thoughts/money",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/money",
           "target": "/thoughts/decentralization",
           "text": "decentralized"
         },
@@ -4368,6 +4567,11 @@
           "source": "/thoughts/money",
           "target": "/thoughts/accountability",
           "text": "accountability"
+        },
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
         },
         {
           "source": "/thoughts/money",
@@ -5148,6 +5352,11 @@
         },
         {
           "source": "/thoughts/search",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "hermeneutical injustice"
         },
@@ -5777,6 +5986,21 @@
         },
         {
           "source": "/thoughts/web3",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/Protocol",
+          "text": "protocols"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/web3",
           "target": "/posts/paid-open-source",
           "text": "open source software"
         },
@@ -5902,7 +6126,7 @@
         {
           "source": "/",
           "target": "/posts",
-          "text": "Things I've thought heavily about"
+          "text": "Things I've written more concrete words about"
         }
       ],
       "/posts/2020": [
@@ -6223,6 +6447,11 @@
       ],
       "/posts/play": [
         {
+          "source": "/",
+          "target": "/posts/play",
+          "text": "playing"
+        },
+        {
           "source": "/thoughts/Interact-Circle-W21",
           "target": "/posts/play",
           "text": "play"
@@ -6425,7 +6654,19 @@
           "text": "DHCP"
         }
       ],
+      "/thoughts/DNS": [
+        {
+          "source": "/thoughts/aperture-problem",
+          "target": "/thoughts/DNS",
+          "text": "DNS"
+        }
+      ],
       "/thoughts/Dark-Forest-Theory-of-the-Internet": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
+          "text": "Dark Forest Theory of the Internet"
+        },
         {
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
@@ -6837,6 +7078,123 @@
           "text": "Circle"
         }
       ],
+      "/thoughts/Internet": [
+        {
+          "source": "/",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/posts/context-collapse",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/posts/networked-thought",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/posts/paid-open-source",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/A-City-is-not-a-Computer",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/DNS",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/From-Counterculture-to-Cyberculture",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/aperture-problem",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/digital-permanence",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/ephemereal-content",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/friction",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/governance",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/information-system",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/Internet",
+          "text": "internet"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        }
+      ],
       "/thoughts/Knowledge-Argument": [
         {
           "source": "/thoughts/Hard-problem-of-consciousness",
@@ -6916,6 +7274,11 @@
         }
       ],
       "/thoughts/Mangrove-Theory-of-the-Internet": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
+        },
         {
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/Mangrove-Theory-of-the-Internet",
@@ -6998,6 +7361,11 @@
           "source": "/thoughts/Dark-Forest-Theory-of-the-Internet",
           "target": "/thoughts/Moving-Castles",
           "text": "Moving Castles"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Moving-Castles",
+          "text": "Moving Castles and Wizards"
         }
       ],
       "/thoughts/NAT": [
@@ -7103,7 +7471,7 @@
         {
           "source": "/",
           "target": "/thoughts/Projects",
-          "text": "Things I've tinkered with"
+          "text": "Things I've tinkered with and hacked on"
         },
         {
           "source": "/posts/2021",
@@ -7113,9 +7481,64 @@
       ],
       "/thoughts/Protocol": [
         {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/DHCP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/UDP",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/bitcoin",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Protocol",
           "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/Protocol",
+          "text": "protocols"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -8237,6 +8660,11 @@
           "text": "decentralized"
         },
         {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/decentralization",
+          "text": "Centralization"
+        },
+        {
           "source": "/thoughts/Making-and-Maintenance-of-OSS",
           "target": "/thoughts/decentralization",
           "text": "decentralized"
@@ -8454,6 +8882,11 @@
       "/thoughts/digital-permanence": [
         {
           "source": "/posts/networked-thought",
+          "target": "/thoughts/digital-permanence",
+          "text": "digital permanence"
+        },
+        {
+          "source": "/thoughts/Internet",
           "target": "/thoughts/digital-permanence",
           "text": "digital permanence"
         },
@@ -8951,6 +9384,11 @@
         }
       ],
       "/thoughts/friction": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
         {
           "source": "/thoughts/digital-mindfulness",
           "target": "/thoughts/friction",
@@ -9791,6 +10229,11 @@
       ],
       "/thoughts/internet-computing": [
         {
+          "source": "/posts/paid-open-source",
+          "target": "/thoughts/internet-computing",
+          "text": "Internet computing"
+        },
+        {
           "source": "/thoughts/Urbit",
           "target": "/thoughts/internet-computing",
           "text": "internet computing"
@@ -10228,6 +10671,11 @@
         }
       ],
       "/thoughts/niche-at-scale": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/niche-at-scale",
+          "text": "Niche at scale"
+        },
         {
           "source": "/thoughts/group-limits",
           "target": "/thoughts/niche-at-scale",
@@ -11806,6 +12254,11 @@
   "links": [
     {
       "source": "/",
+      "target": "/thoughts/Internet",
+      "text": "internet"
+    },
+    {
+      "source": "/",
       "target": "/posts/networked-thought",
       "text": "digital garden"
     },
@@ -11813,6 +12266,11 @@
       "source": "/",
       "target": "/thoughts/organizing-system",
       "text": "organizing system"
+    },
+    {
+      "source": "/",
+      "target": "/posts/play",
+      "text": "playing"
     },
     {
       "source": "/",
@@ -11842,12 +12300,12 @@
     {
       "source": "/",
       "target": "/posts",
-      "text": "Things I've thought heavily about"
+      "text": "Things I've written more concrete words about"
     },
     {
       "source": "/",
       "target": "/thoughts/Projects",
-      "text": "Things I've tinkered with"
+      "text": "Things I've tinkered with and hacked on"
     },
     {
       "source": "/",
@@ -12171,6 +12629,11 @@
     },
     {
       "source": "/posts/context-collapse",
+      "target": "/thoughts/Internet",
+      "text": "internet"
+    },
+    {
+      "source": "/posts/context-collapse",
       "target": "/thoughts/bandwidth",
       "text": "bandwidth"
     },
@@ -12248,6 +12711,11 @@
       "source": "/posts/networked-thought",
       "target": "/thoughts/search",
       "text": "search"
+    },
+    {
+      "source": "/posts/networked-thought",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/posts/networked-thought",
@@ -12386,8 +12854,18 @@
     },
     {
       "source": "/posts/paid-open-source",
+      "target": "/thoughts/internet-computing",
+      "text": "Internet computing"
+    },
+    {
+      "source": "/posts/paid-open-source",
       "target": "/thoughts/creation-vs-maintenance",
       "text": "Creation vs Maintenance"
+    },
+    {
+      "source": "/posts/paid-open-source",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/posts/paid-open-source",
@@ -12463,6 +12941,11 @@
       "source": "/posts/play",
       "target": "/posts/new-words",
       "text": "how we think"
+    },
+    {
+      "source": "/thoughts/A-City-is-not-a-Computer",
+      "target": "/thoughts/Internet",
+      "text": "internet"
     },
     {
       "source": "/thoughts/A-City-is-not-a-Computer",
@@ -12573,6 +13056,11 @@
       "source": "/thoughts/A-City-is-not-a-Tree",
       "target": "/thoughts/social-graphs",
       "text": "social media"
+    },
+    {
+      "source": "/thoughts/ARP",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
     },
     {
       "source": "/thoughts/ARP",
@@ -12751,6 +13239,11 @@
     },
     {
       "source": "/thoughts/DHCP",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
+    },
+    {
+      "source": "/thoughts/DHCP",
       "target": "/thoughts/IP-Addresses",
       "text": "IP addresses"
     },
@@ -12758,6 +13251,11 @@
       "source": "/thoughts/DHCP",
       "target": "/thoughts/UDP",
       "text": "UDP"
+    },
+    {
+      "source": "/thoughts/DNS",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/DNS",
@@ -12893,6 +13391,11 @@
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
       "target": "/thoughts/tribe-flourishing",
       "text": "tribal flourishing"
+    },
+    {
+      "source": "/thoughts/From-Counterculture-to-Cyberculture",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
@@ -13038,6 +13541,41 @@
       "source": "/thoughts/Interact-Circle-W21",
       "target": "/thoughts/terminology",
       "text": "terminology"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/niche-at-scale",
+      "text": "Niche at scale"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/decentralization",
+      "text": "Centralization"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+      "text": "Mangrove Theory of the Internet"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
+      "text": "Dark Forest Theory of the Internet"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/digital-permanence",
+      "text": "digital permanence"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/friction",
+      "text": "friction"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/Moving-Castles",
+      "text": "Moving Castles and Wizards"
     },
     {
       "source": "/thoughts/Knowledge-Argument",
@@ -13190,6 +13728,11 @@
       "text": "Interoperable"
     },
     {
+      "source": "/thoughts/Moving-Castles",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
       "source": "/thoughts/NAT",
       "target": "/thoughts/Transport-Layer",
       "text": "transport layer"
@@ -13198,6 +13741,11 @@
       "source": "/thoughts/NAT",
       "target": "/thoughts/IP-Addresses",
       "text": "IP addresses"
+    },
+    {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
     },
     {
       "source": "/thoughts/NFT",
@@ -13223,6 +13771,11 @@
       "source": "/thoughts/Network-Layer",
       "target": "/thoughts/IP-Addresses",
       "text": "IP Addresses"
+    },
+    {
+      "source": "/thoughts/Network-Layer",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/Nozicks-Experience-Machine",
@@ -13283,6 +13836,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/telescopic-text",
       "text": "telescopic text"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/Putnams-Ant-Argument",
@@ -13530,6 +14088,11 @@
       "text": "terminology"
     },
     {
+      "source": "/thoughts/UDP",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
+    },
+    {
       "source": "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "From Counterculture to Cyberculture"
@@ -13636,6 +14199,16 @@
     },
     {
       "source": "/thoughts/aperture-problem",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
+      "source": "/thoughts/aperture-problem",
+      "target": "/thoughts/DNS",
+      "text": "DNS"
+    },
+    {
+      "source": "/thoughts/aperture-problem",
       "target": "/thoughts/information-scales",
       "text": "information scales"
     },
@@ -13733,6 +14306,11 @@
       "source": "/thoughts/bitcoin",
       "target": "/thoughts/blockchain",
       "text": "blockchain"
+    },
+    {
+      "source": "/thoughts/bitcoin",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
     },
     {
       "source": "/thoughts/bitcoin",
@@ -14116,6 +14694,11 @@
     },
     {
       "source": "/thoughts/decentralization",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
+    },
+    {
+      "source": "/thoughts/decentralization",
       "target": "/thoughts/proof-of-stake",
       "text": "proof of stake"
     },
@@ -14123,6 +14706,11 @@
       "source": "/thoughts/decentralization",
       "target": "/thoughts/consensus",
       "text": "Consensus"
+    },
+    {
+      "source": "/thoughts/decentralization",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/degrowth",
@@ -14176,6 +14764,11 @@
     },
     {
       "source": "/thoughts/digital-commons",
+      "target": "/thoughts/Internet",
+      "text": "internet"
+    },
+    {
+      "source": "/thoughts/digital-commons",
       "target": "/thoughts/ephemereal-content",
       "text": "real-time"
     },
@@ -14223,6 +14816,11 @@
       "source": "/thoughts/digital-mindfulness",
       "target": "/thoughts/infrastructure",
       "text": "infrastructural"
+    },
+    {
+      "source": "/thoughts/digital-permanence",
+      "target": "/thoughts/Internet",
+      "text": "internet"
     },
     {
       "source": "/thoughts/digital-permanence",
@@ -14343,6 +14941,11 @@
       "source": "/thoughts/ephemereal-content",
       "target": "/thoughts/library",
       "text": "library"
+    },
+    {
+      "source": "/thoughts/ephemereal-content",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/ephemereal-content",
@@ -14493,6 +15096,11 @@
       "source": "/thoughts/freedom",
       "target": "/thoughts/web3",
       "text": "web3"
+    },
+    {
+      "source": "/thoughts/friction",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/friction",
@@ -14673,6 +15281,11 @@
       "source": "/thoughts/governance",
       "target": "/thoughts/Galls-law",
       "text": "Gall's law"
+    },
+    {
+      "source": "/thoughts/governance",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
     },
     {
       "source": "/thoughts/group-limits",
@@ -15000,6 +15613,11 @@
       "text": "library"
     },
     {
+      "source": "/thoughts/information-system",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
       "source": "/thoughts/information",
       "target": "/thoughts/information-system",
       "text": "information systems"
@@ -15051,8 +15669,18 @@
     },
     {
       "source": "/thoughts/infrastructure",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
+    },
+    {
+      "source": "/thoughts/infrastructure",
       "target": "/thoughts/social-contracts",
       "text": "social contracts"
+    },
+    {
+      "source": "/thoughts/infrastructure",
+      "target": "/thoughts/Internet",
+      "text": "internet"
     },
     {
       "source": "/thoughts/infrastructure",
@@ -15283,6 +15911,16 @@
       "source": "/thoughts/interaction-design",
       "target": "/thoughts/Mindstorms",
       "text": "Mindstorms"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
     },
     {
       "source": "/thoughts/internet-computing",
@@ -15771,6 +16409,11 @@
     },
     {
       "source": "/thoughts/money",
+      "target": "/thoughts/Internet",
+      "text": "internet"
+    },
+    {
+      "source": "/thoughts/money",
       "target": "/thoughts/decentralization",
       "text": "decentralized"
     },
@@ -15798,6 +16441,11 @@
       "source": "/thoughts/money",
       "target": "/thoughts/accountability",
       "text": "accountability"
+    },
+    {
+      "source": "/thoughts/money",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
     },
     {
       "source": "/thoughts/money",
@@ -16516,6 +17164,11 @@
     },
     {
       "source": "/thoughts/search",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
+      "source": "/thoughts/search",
       "target": "/thoughts/hermeneutical-injustice",
       "text": "hermeneutical injustice"
     },
@@ -17133,6 +17786,21 @@
       "source": "/thoughts/web3",
       "target": "/thoughts/kernel",
       "text": "Kernel"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/Protocol",
+      "text": "protocols"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
     },
     {
       "source": "/thoughts/web3",
