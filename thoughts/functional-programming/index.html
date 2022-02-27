@@ -449,11 +449,13 @@ if (!doNotTrack) {
     <h1 class="title">Functional Programming</h1>
     <article>
       <p class="meta">
-          Last updated February 22, 2022
+          Last updated February 26, 2022
       </p>
       <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
     
 </ul>
       
@@ -468,6 +470,7 @@ if (!doNotTrack) {
       </ol>
     </li>
     <li><a href="#left-and-right-associativity">Left and Right Associativity</a></li>
+    <li><a href="#parser-combinators">Parser Combinators</a></li>
     <li><a href="#haskell-syntax-things">Haskell Syntax Things</a></li>
   </ol>
 </nav>
@@ -519,7 +522,7 @@ if (!doNotTrack) {
   <span class="n">return</span> <span class="ow">::</span>   <span class="n">a</span>               <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Monad lies (all of these equations should be satisfied)</p>
+</div><p>Monad facts (all of these equations should be satisfied)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -559,6 +562,38 @@ if (!doNotTrack) {
 </ol>
 </li>
 <li>Non-associative: operations cannot be chained</li>
+</ol>
+<h2 id="parser-combinators">Parser Combinators</h2>
+<blockquote>
+<p>Parser combinators are a technique for implementing parsers by defining them in terms of other parsers</p>
+</blockquote>
+<p>Notes on 
+
+<a href="https://github.com/zesterer/chumsky" rel="noopener">Chumsky</a></p>
+<p>Where <code>a</code> and <code>b</code> are both parsers.</p>
+<p>Parser Methods</p>
+<ol>
+<li><code>just(a)</code> accepts a single string <code>a</code></li>
+<li><code>a.or(b)</code> parse <code>a</code>, if <code>a</code> fails, try parsing <code>b</code></li>
+<li><code>a.choice(b,c,d...)</code> try parsing <code>b</code>, <code>c</code>, <code>d</code>, return first one that succeeds</li>
+<li><code>a.or_not()</code> optionally parse <code>a</code></li>
+<li><code>a.ignore_then(b)</code> ignore pattern <code>a</code> then parse <code>b</code></li>
+<li><code>a.then_ignore(b)</code> parse <code>a</code> then ignore <code>b</code></li>
+<li><code>a.then(b)</code> parse both <code>a</code> and <code>b</code> and return a tuple of <code>(a,b)</code></li>
+<li><code>a.padded()</code> ignore whitespace around <code>a</code></li>
+<li><code>a.repeated().at_least(n)</code> parse <code>a</code> at least <code>n</code> times</li>
+<li><code>a.filter(fn)</code> only accept <code>a</code> if <code>fn(a)</code> evaluates to true</li>
+</ol>
+<p>Result Methods</p>
+<ol>
+<li><code>a.collect()</code> turn results of <code>a</code> into an iterator</li>
+<li><code>a.map(b)</code> map results of <code>a</code> into type <code>b</code></li>
+<li><code>a.chain(b)</code> concatenate results of parsers <code>a</code> and <code>b</code> into collection</li>
+<li><code>a.copy(b)</code> duplicate parser definition</li>
+<li><code>a.flatten()</code> flatten nested collection</li>
+<li><code>a.to(b)</code> marks result of <code>a</code> as type <code>b</code></li>
+<li><code>a.labelled(b)</code> label result of a with <code>b</code></li>
+<li><code>a.end()</code> indicate end of parser</li>
 </ol>
 <h2 id="haskell-syntax-things">Haskell Syntax Things</h2>
 <ol>

@@ -815,6 +815,18 @@
           "text": "social media"
         }
       ],
+      "/thoughts/ARP": [
+        {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Link-Layer",
+          "text": "link layer"
+        }
+      ],
       "/thoughts/Algorithms-of-Oppression": [
         {
           "source": "/thoughts/Algorithms-of-Oppression",
@@ -840,6 +852,18 @@
           "source": "/thoughts/Algorithms-of-Oppression",
           "target": "/thoughts/attention-economy",
           "text": "attention economy"
+        }
+      ],
+      "/thoughts/Application-Layer": [
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/human-computer-interaction",
+          "text": "human-computer interaction"
         }
       ],
       "/thoughts/Archipelago": [
@@ -990,6 +1014,25 @@
           "text": "creation vs maintenance"
         }
       ],
+      "/thoughts/DHCP": [
+        {
+          "source": "/thoughts/DHCP",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/DHCP",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        }
+      ],
+      "/thoughts/DNS": [
+        {
+          "source": "/thoughts/DNS",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        }
+      ],
       "/thoughts/Dark-Forest-Theory-of-the-Internet": [
         {
           "source": "/thoughts/Dark-Forest-Theory-of-the-Internet",
@@ -1100,6 +1143,13 @@
           "source": "/thoughts/Dunbars-Number",
           "target": "/thoughts/web3",
           "text": "web3"
+        }
+      ],
+      "/thoughts/Experience": [
+        {
+          "source": "/thoughts/Experience",
+          "target": "/posts/hootsuite",
+          "text": "Hootsuite"
         }
       ],
       "/thoughts/Extended-Mind-Hypothesis": [
@@ -1308,6 +1358,18 @@
           "text": "potemkin village"
         }
       ],
+      "/thoughts/Link-Layer": [
+        {
+          "source": "/thoughts/Link-Layer",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/Link-Layer",
+          "target": "/Physical-Layer",
+          "text": "Physical Layer"
+        }
+      ],
       "/thoughts/Making-and-Maintenance-of-OSS": [
         {
           "source": "/thoughts/Making-and-Maintenance-of-OSS",
@@ -1438,6 +1500,18 @@
           "text": "Interoperable"
         }
       ],
+      "/thoughts/NAT": [
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/Transport-Layer",
+          "text": "transport layer"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        }
+      ],
       "/thoughts/NFT": [
         {
           "source": "/thoughts/NFT",
@@ -1450,11 +1524,35 @@
           "text": "Digital Permanence"
         }
       ],
+      "/thoughts/Network-Layer": [
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP Addresses"
+        }
+      ],
       "/thoughts/Nozicks-Experience-Machine": [
         {
           "source": "/thoughts/Nozicks-Experience-Machine",
           "target": "/thoughts/virtual-worlds",
           "text": "virtual worlds"
+        }
+      ],
+      "/thoughts/Physical-Layer": [
+        {
+          "source": "/thoughts/Physical-Layer",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
         }
       ],
       "/thoughts/Post-It-Note-City": [
@@ -1504,6 +1602,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/idea-list",
           "text": "here"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/telescopic-text",
+          "text": "telescopic text"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -1755,6 +1858,18 @@
           "source": "/thoughts/To-Live-in-their-Utopia",
           "target": "/thoughts/traditional-knowledge",
           "text": "traditional knowledge (TK)"
+        }
+      ],
+      "/thoughts/Transport-Layer": [
+        {
+          "source": "/thoughts/Transport-Layer",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/Transport-Layer",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
         }
       ],
       "/thoughts/Twin-Earth-Argument": [
@@ -3696,6 +3811,88 @@
           "text": "Mindstorms"
         }
       ],
+      "/thoughts/internet-computing": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP Addresses"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Physical-Layer",
+          "text": "Physical Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Physical-Layer",
+          "text": "physical layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Link-Layer",
+          "text": "link layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Network-Layer",
+          "text": "network layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/NAT",
+          "text": "NAT"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/DHCP",
+          "text": "DHCP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/NAT",
+          "text": "NAT"
+        }
+      ],
       "/thoughts/interoperability": [
         {
           "source": "/thoughts/interoperability",
@@ -4946,6 +5143,11 @@
         },
         {
           "source": "/thoughts/search",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "hermeneutical injustice"
         },
@@ -5677,6 +5879,13 @@
       ]
     },
     "backlinks": {
+      "/Physical-Layer": [
+        {
+          "source": "/thoughts/Link-Layer",
+          "target": "/Physical-Layer",
+          "text": "Physical Layer"
+        }
+      ],
       "/books": [
         {
           "source": "/newsletters/issue-2",
@@ -5914,6 +6123,13 @@
           "text": "hackathons"
         }
       ],
+      "/posts/hootsuite": [
+        {
+          "source": "/thoughts/Experience",
+          "target": "/posts/hootsuite",
+          "text": "Hootsuite"
+        }
+      ],
       "/posts/networked-thought": [
         {
           "source": "/",
@@ -6102,6 +6318,18 @@
           "text": "Algorithms of Oppression"
         }
       ],
+      "/thoughts/Application-Layer": [
+        {
+          "source": "/thoughts/Transport-Layer",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        }
+      ],
       "/thoughts/Archipelago": [
         {
           "source": "/books",
@@ -6188,6 +6416,13 @@
           "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/thoughts/Collingridge-dilemma",
           "text": "Collingridge dilemma"
+        }
+      ],
+      "/thoughts/DHCP": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/DHCP",
+          "text": "DHCP"
         }
       ],
       "/thoughts/Dark-Forest-Theory-of-the-Internet": [
@@ -6558,6 +6793,38 @@
           "text": "How to do Nothing"
         }
       ],
+      "/thoughts/IP-Addresses": [
+        {
+          "source": "/thoughts/DHCP",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/DNS",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP Addresses"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP Addresses"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP addresses"
+        }
+      ],
       "/thoughts/Interact-Circle-W21": [
         {
           "source": "/posts/play",
@@ -6587,6 +6854,33 @@
           "source": "/thoughts/maintenance",
           "target": "/thoughts/Lindy-effect",
           "text": "Lindy Effect"
+        }
+      ],
+      "/thoughts/Link-Layer": [
+        {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Link-Layer",
+          "text": "link layer"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
+        },
+        {
+          "source": "/thoughts/Physical-Layer",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Link-Layer",
+          "text": "Link Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Link-Layer",
+          "text": "link layer"
         }
       ],
       "/thoughts/Making-and-Maintenance-of-OSS": [
@@ -6706,6 +7000,18 @@
           "text": "Moving Castles"
         }
       ],
+      "/thoughts/NAT": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/NAT",
+          "text": "NAT"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/NAT",
+          "text": "NAT"
+        }
+      ],
       "/thoughts/NFT": [
         {
           "source": "/thoughts/idea-list",
@@ -6723,6 +7029,33 @@
           "text": "NFTs"
         }
       ],
+      "/thoughts/Network-Layer": [
+        {
+          "source": "/thoughts/ARP",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/Link-Layer",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/Transport-Layer",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Network-Layer",
+          "text": "Network Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Network-Layer",
+          "text": "network layer"
+        }
+      ],
       "/thoughts/Nozicks-Experience-Machine": [
         {
           "source": "/thoughts/semantics",
@@ -6733,6 +7066,18 @@
           "source": "/thoughts/virtual-worlds",
           "target": "/thoughts/Nozicks-Experience-Machine",
           "text": "Nozick's Experience Machine"
+        }
+      ],
+      "/thoughts/Physical-Layer": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Physical-Layer",
+          "text": "Physical Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Physical-Layer",
+          "text": "physical layer"
         }
       ],
       "/thoughts/Platos-Ship-of-State": [
@@ -6764,6 +7109,13 @@
           "source": "/posts/2021",
           "target": "/thoughts/Projects",
           "text": "projects"
+        }
+      ],
+      "/thoughts/Protocol": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Protocol",
+          "text": "Protocol"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -6910,6 +7262,28 @@
           "text": "To Live in their Utopia"
         }
       ],
+      "/thoughts/Transport-Layer": [
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/Transport-Layer",
+          "text": "transport layer"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport Layer"
+        }
+      ],
       "/thoughts/Trust-as-Unquestioning-Attitude": [
         {
           "source": "/thoughts/trust",
@@ -6939,6 +7313,18 @@
           "source": "/thoughts/semantics",
           "target": "/thoughts/Twin-Earth-Argument",
           "text": "Twin Earth Argument"
+        }
+      ],
+      "/thoughts/UDP": [
+        {
+          "source": "/thoughts/DHCP",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/UDP",
+          "text": "UDP"
         }
       ],
       "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley": [
@@ -8426,6 +8812,11 @@
           "text": "Fault tolerance"
         },
         {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
+        },
+        {
           "source": "/thoughts/proof-of-stake",
           "target": "/thoughts/fault-tolerance",
           "text": "51% attacks"
@@ -8849,6 +9240,11 @@
         }
       ],
       "/thoughts/human-computer-interaction": [
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/human-computer-interaction",
+          "text": "human-computer interaction"
+        },
         {
           "source": "/thoughts/The-Psychopathology-of-Everyday-Things",
           "target": "/thoughts/human-computer-interaction",
@@ -9396,6 +9792,11 @@
       "/thoughts/internet-computing": [
         {
           "source": "/thoughts/Urbit",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/internet-computing",
           "text": "internet computing"
         }
@@ -10845,6 +11246,13 @@
           "text": "telerobotics"
         }
       ],
+      "/thoughts/telescopic-text": [
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/telescopic-text",
+          "text": "telescopic text"
+        }
+      ],
       "/thoughts/terminology": [
         {
           "source": "/posts/new-words",
@@ -12167,6 +12575,16 @@
       "text": "social media"
     },
     {
+      "source": "/thoughts/ARP",
+      "target": "/thoughts/Network-Layer",
+      "text": "Network Layer"
+    },
+    {
+      "source": "/thoughts/ARP",
+      "target": "/thoughts/Link-Layer",
+      "text": "link layer"
+    },
+    {
       "source": "/thoughts/Algorithms-of-Oppression",
       "target": "/thoughts/collections",
       "text": "double-consciousness"
@@ -12190,6 +12608,16 @@
       "source": "/thoughts/Algorithms-of-Oppression",
       "target": "/thoughts/attention-economy",
       "text": "attention economy"
+    },
+    {
+      "source": "/thoughts/Application-Layer",
+      "target": "/thoughts/Transport-Layer",
+      "text": "Transport Layer"
+    },
+    {
+      "source": "/thoughts/Application-Layer",
+      "target": "/thoughts/human-computer-interaction",
+      "text": "human-computer interaction"
     },
     {
       "source": "/thoughts/Archipelago",
@@ -12322,6 +12750,21 @@
       "text": "creation vs maintenance"
     },
     {
+      "source": "/thoughts/DHCP",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP addresses"
+    },
+    {
+      "source": "/thoughts/DHCP",
+      "target": "/thoughts/UDP",
+      "text": "UDP"
+    },
+    {
+      "source": "/thoughts/DNS",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP addresses"
+    },
+    {
       "source": "/thoughts/Dark-Forest-Theory-of-the-Internet",
       "target": "/thoughts/Moving-Castles",
       "text": "Moving Castles"
@@ -12420,6 +12863,11 @@
       "source": "/thoughts/Dunbars-Number",
       "target": "/thoughts/web3",
       "text": "web3"
+    },
+    {
+      "source": "/thoughts/Experience",
+      "target": "/posts/hootsuite",
+      "text": "Hootsuite"
     },
     {
       "source": "/thoughts/Extended-Mind-Hypothesis",
@@ -12612,6 +13060,16 @@
       "text": "potemkin village"
     },
     {
+      "source": "/thoughts/Link-Layer",
+      "target": "/thoughts/Network-Layer",
+      "text": "Network Layer"
+    },
+    {
+      "source": "/thoughts/Link-Layer",
+      "target": "/Physical-Layer",
+      "text": "Physical Layer"
+    },
+    {
       "source": "/thoughts/Making-and-Maintenance-of-OSS",
       "target": "/posts/paid-open-source",
       "text": "A case for funding Open Source"
@@ -12732,6 +13190,16 @@
       "text": "Interoperable"
     },
     {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/Transport-Layer",
+      "text": "transport layer"
+    },
+    {
+      "source": "/thoughts/NAT",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP addresses"
+    },
+    {
       "source": "/thoughts/NFT",
       "target": "/thoughts/Degraded-Blockchain-problem",
       "text": "Degraded Blockchain problem"
@@ -12742,9 +13210,29 @@
       "text": "Digital Permanence"
     },
     {
+      "source": "/thoughts/Network-Layer",
+      "target": "/thoughts/Transport-Layer",
+      "text": "Transport Layer"
+    },
+    {
+      "source": "/thoughts/Network-Layer",
+      "target": "/thoughts/Link-Layer",
+      "text": "Link Layer"
+    },
+    {
+      "source": "/thoughts/Network-Layer",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP Addresses"
+    },
+    {
       "source": "/thoughts/Nozicks-Experience-Machine",
       "target": "/thoughts/virtual-worlds",
       "text": "virtual worlds"
+    },
+    {
+      "source": "/thoughts/Physical-Layer",
+      "target": "/thoughts/Link-Layer",
+      "text": "Link Layer"
     },
     {
       "source": "/thoughts/Post-It-Note-City",
@@ -12790,6 +13278,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/idea-list",
       "text": "here"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/telescopic-text",
+      "text": "telescopic text"
     },
     {
       "source": "/thoughts/Putnams-Ant-Argument",
@@ -13015,6 +13508,16 @@
       "source": "/thoughts/To-Live-in-their-Utopia",
       "target": "/thoughts/traditional-knowledge",
       "text": "traditional knowledge (TK)"
+    },
+    {
+      "source": "/thoughts/Transport-Layer",
+      "target": "/thoughts/Application-Layer",
+      "text": "Application Layer"
+    },
+    {
+      "source": "/thoughts/Transport-Layer",
+      "target": "/thoughts/Network-Layer",
+      "text": "Network Layer"
     },
     {
       "source": "/thoughts/Twin-Earth-Argument",
@@ -14782,6 +15285,86 @@
       "text": "Mindstorms"
     },
     {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Protocol",
+      "text": "Protocol"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Application-Layer",
+      "text": "Application Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Transport-Layer",
+      "text": "Transport Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/UDP",
+      "text": "UDP"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Network-Layer",
+      "text": "Network Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP Addresses"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Link-Layer",
+      "text": "Link Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Physical-Layer",
+      "text": "Physical Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Physical-Layer",
+      "text": "physical layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Link-Layer",
+      "text": "link layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/Network-Layer",
+      "text": "network layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/NAT",
+      "text": "NAT"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP addresses"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/DHCP",
+      "text": "DHCP"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/fault-tolerance",
+      "text": "fault tolerance"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/NAT",
+      "text": "NAT"
+    },
+    {
       "source": "/thoughts/interoperability",
       "target": "/thoughts/social-graphs",
       "text": "social graphs"
@@ -15925,6 +16508,11 @@
       "source": "/thoughts/search",
       "target": "/thoughts/epistemology",
       "text": "epistemological"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/internet-computing",
+      "text": "internet computing"
     },
     {
       "source": "/thoughts/search",

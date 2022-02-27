@@ -7,12 +7,135 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Poetry</title>
-      <link>https://jzhao.xyz/thoughts/poetry/</link>
+      <title>Application Layer (Networking)</title>
+      <link>https://jzhao.xyz/thoughts/Application-Layer/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Application-Layer/</guid>
+      <description>Layer 1, the layer above the Transport Layer
+Application/Presentation/Session layer</description>
+    </item>
+    
+    <item>
+      <title>ARP</title>
+      <link>https://jzhao.xyz/thoughts/ARP/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ARP/</guid>
+      <description>Address Resolution Protocol (ARP) Purpose: links the Network Layer (IP address) with the link layer (MAC address)</description>
+    </item>
+    
+    <item>
+      <title>DHCP</title>
+      <link>https://jzhao.xyz/thoughts/DHCP/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DHCP/</guid>
+      <description>Dynamic Host Configuration Protocol so they can join a network. Assigns IP addresses to hosts.</description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://jzhao.xyz/thoughts/DNS/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DNS/</guid>
+      <description>Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the internet.</description>
+    </item>
+    
+    <item>
+      <title>IP Addresses</title>
+      <link>https://jzhao.xyz/thoughts/IP-Addresses/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/IP-Addresses/</guid>
+      <description>IP addresses are 32 bits (4 bytes) split into 4 chunks.</description>
+    </item>
+    
+    <item>
+      <title>Link Layer</title>
+      <link>https://jzhao.xyz/thoughts/Link-Layer/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Link-Layer/</guid>
+      <description>Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]</description>
+    </item>
+    
+    <item>
+      <title>NAT</title>
+      <link>https://jzhao.xyz/thoughts/NAT/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/NAT/</guid>
+      <description>Network Address Translation Both network and transport layer (violation of abstraction/layering)</description>
+    </item>
+    
+    <item>
+      <title>Network Layer (IP)</title>
+      <link>https://jzhao.xyz/thoughts/Network-Layer/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Network-Layer/</guid>
+      <description>Layer 3, the layer below the Transport Layer and layer above the Link Layer</description>
+    </item>
+    
+    <item>
+      <title>Physical Layer</title>
+      <link>https://jzhao.xyz/thoughts/Physical-Layer/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Physical-Layer/</guid>
+      <description>Layer 5, layer below the Link Layer
+ Hardware Unit: Bits Responsibilities: Encodes data appropriately for the physical medium  </description>
+    </item>
+    
+    <item>
+      <title>Protocols</title>
+      <link>https://jzhao.xyz/thoughts/Protocol/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Protocol/</guid>
+      <description>Defines:
+ Roles of communicating entities Format of messages Order of messages Actions taken on the transmission, receipt of a message, or other event  A fully-defined protocol must provide a proper action for any event in any state.</description>
+    </item>
+    
+    <item>
+      <title>Transport Layer</title>
+      <link>https://jzhao.xyz/thoughts/Transport-Layer/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Transport-Layer/</guid>
+      <description>Layer 2, the layer below the Application Layer and layer above the Network Layer</description>
+    </item>
+    
+    <item>
+      <title>UDP</title>
+      <link>https://jzhao.xyz/thoughts/UDP/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/UDP/</guid>
+      <description>User Datagram Protocol (UDP)  Source Port Destination Port Length Checksum Payload  68 is usually client, 67 is usually server</description>
+    </item>
+    
+    <item>
+      <title>VPN</title>
+      <link>https://jzhao.xyz/thoughts/VPN/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/VPN/</guid>
+      <description>Virtual Private Networks
+Motivation:
+ Company with multiple locations wants everything to appear as one big network Workers want access to resources restricted to company internal network Users want to bypass regional blocks  VPN Encapsulation</description>
+    </item>
+    
+    <item>
+      <title>Telescopic Text</title>
+      <link>https://jzhao.xyz/thoughts/telescopic-text/</link>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/poetry/</guid>
-      <description>Knowing  They  The man at the bookstore  I went to the bookstore  little rickety bookstore off of 5th Avenue  that bookstore at the intersection of 5th Avenue and Adam Street I always went to when I was feeling rather melancholic.</description>
+      <guid>https://jzhao.xyz/thoughts/telescopic-text/</guid>
+      <description>Some personal writings using telescopic text.
+knowing A short exposition on moving on.</description>
     </item>
     
     <item>
@@ -2350,8 +2473,7 @@ Partly works because we can utilize collaborative thinking.</description>
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Ideas   data lensing for databases
- using https://www.inkandswitch.com/cambria/ maybe?</description>
+      <description>data lensing for databases  using https://www.inkandswitch.com/cambria/ maybe? some cool interoperability things   app agnostic channel-based/event-driven communication using hypercore  e.</description>
     </item>
     
     <item>

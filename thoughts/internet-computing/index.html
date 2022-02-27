@@ -449,7 +449,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet Computing</h1>
     <article>
       <p class="meta">
-          Last updated February 8, 2022
+          Last updated February 26, 2022
       </p>
       <ul class="tags">
     
@@ -461,29 +461,18 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#communication">Communication</a></li>
-    <li><a href="#circuit-switching">Circuit Switching</a></li>
-    <li><a href="#packet-switching">Packet Switching</a></li>
-    <li><a href="#multiplexing">Multiplexing</a></li>
-    <li><a href="#protocols">Protocols</a>
+    <li><a href="#communication">Communication</a>
       <ol>
-        <li><a href="#network-protocol-stack-from-most-abstract-to-least">Network Protocol Stack (from most abstract to least)</a></li>
+        <li><a href="#circuit-switching">Circuit Switching</a></li>
+        <li><a href="#packet-switching">Packet Switching</a></li>
+        <li><a href="#multiplexing">Multiplexing</a></li>
       </ol>
     </li>
-    <li><a href="#network-layer">Network Layer</a>
-      <ol>
-        <li><a href="#packet-definition">Packet Definition</a></li>
-        <li><a href="#bgp-advertisement">BGP Advertisement</a></li>
-        <li><a href="#ipv4">IPv4</a></li>
-        <li><a href="#cidr-notation">CIDR Notation</a></li>
-      </ol>
-    </li>
-    <li><a href="#network-tiers">Network Tiers</a></li>
-    <li><a href="#user-datagram-protocol-udp">User Datagram Protocol (UDP)</a></li>
-    <li><a href="#address-resolution-protocol-arp">Address Resolution Protocol (ARP)</a></li>
+    <li><a href="#network-protocolthoughtsprotocolmd-stack-from-most-abstract-to-least">Network <a href="thoughts/Protocol.md">Protocol</a> Stack (from most abstract to least)</a></li>
     <li><a href="#hubs-switches-and-routers">Hubs, Switches, and Routers</a></li>
     <li><a href="#error-correction">Error Correction</a></li>
     <li><a href="#access-control">Access Control</a></li>
+    <li><a href="#network-metrics">Network Metrics</a></li>
   </ol>
 </nav>
       </aside>
@@ -499,7 +488,7 @@ administrated entities into a common entity</p>
 <li>Protocol (language)</li>
 <li>Message</li>
 </ul>
-<h2 id="circuit-switching">Circuit Switching</h2>
+<h3 id="circuit-switching">Circuit Switching</h3>
 <p>Dedicated path between source and destination. Path taken is determined when connection is established. Single stream of info per path</p>
 <p>Works well when</p>
 <ul>
@@ -507,7 +496,7 @@ administrated entities into a common entity</p>
 <li>Demand is steady (unchanging rate)</li>
 <li>Starting a new conversation is rare</li>
 </ul>
-<h2 id="packet-switching">Packet Switching</h2>
+<h3 id="packet-switching">Packet Switching</h3>
 <p>Data is divided in packets that are sent individually where each packet is self contained (contains source, destination, and data) and independently routed.</p>
 <p>Works well when</p>
 <ul>
@@ -515,7 +504,7 @@ administrated entities into a common entity</p>
 <li>Demand is bursty (rapidly changing rate)</li>
 <li>Starting a new conversation is frequent</li>
 </ul>
-<h2 id="multiplexing">Multiplexing</h2>
+<h3 id="multiplexing">Multiplexing</h3>
 <p>Multiple input streams must share the medium. It must be possible to “demultiplex” at the destination</p>
 <p>Types</p>
 <ol>
@@ -524,185 +513,83 @@ administrated entities into a common entity</p>
 <li>Code division multiplexing: combines all messages using a specific code that can be decoded if code is known (?)</li>
 <li>Orthogonal multiplexing: a combination of techniques</li>
 </ol>
-<h2 id="protocols">Protocols</h2>
-<p>Defines:</p>
-<ul>
-<li>Roles of communicating entities</li>
-<li>Format of messages</li>
-<li>Order of messages</li>
-<li>Actions taken on the transmission, receipt of a message, or other event</li>
-</ul>
-<p>A fully-defined protocol must provide a proper action for any event in any state. Most protocols can be modelled in terms of state machines.</p>
-<h3 id="network-protocol-stack-from-most-abstract-to-least">Network Protocol Stack (from most abstract to least)</h3>
+<h2 id="network-protocolthoughtsprotocolmd-stack-from-most-abstract-to-least">Network 
+
+
+<a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">Protocol</a> Stack (from most abstract to least)</h2>
 <p>Each layer takes data from above adds header information to create new data unit passes new data unit to layer below</p>
 <ol>
-<li>Application/Presentation/Session layer
-<ol>
-<li>Application</li>
-<li>Unit: Data</li>
-<li>Responsibilities: human-computer interaction layer, where applications can access the network services (includes encryption, connection, port, and session management)</li>
+<li>
+
+
+<a href="/thoughts/Application-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Application-Layer">Application Layer</a></li>
+<li>
+
+
+<a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">Transport Layer</a> (TCP, 
+
+
+<a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a>)</li>
+<li>
+
+
+<a href="/thoughts/Network-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Network-Layer">Network Layer</a> (
+
+
+<a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP Addresses</a>) &ndash; this is the &lsquo;thinnest&rsquo; part of the network stack!</li>
+<li>
+
+
+<a href="/thoughts/Link-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Link-Layer">Link Layer</a></li>
+<li>
+
+
+<a href="/thoughts/Physical-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Physical-Layer">Physical Layer</a></li>
 </ol>
-</li>
-<li>Transport (TCP, UDP)
-<ol>
-<li>OS</li>
-<li>Unit: Segment</li>
-<li>Responsibilities: Ensures data arrives in order (if required), Recovers lost data (if required), Identifies process on machine, flow control</li>
-</ol>
-</li>
-<li>Network (IP) &ndash; this is the &lsquo;thinnest&rsquo; part of the network stack!
-<ol>
-<li>OS</li>
-<li>Unit: Packet (datagram)</li>
-<li>Responsibilities: Routes packet through routers to destination machine (not necessary if two devices are on the same network)</li>
-<li>Two main functions
-<ol>
-<li>Forwarding: move packets from router’s input to appropriate router output (process of getting through a single interchange)</li>
-<li>Routing: determine route taken by packets from source to destination (process of planning trip from source to destination)</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Link
-<ol>
-<li>Hardware</li>
-<li>Unit: Frame</li>
-<li>Responsibilities: Routes frames to adjacent machines (“direct” connection). Defines the format of data on the network</li>
-<li>Details
-<ul>
-<li>Breaks up chunks into frames, contains some metadata</li>
-<li>Hub model (share the same medium) means that we don&rsquo;t need to run wires between every computer (implicit broadcasting). Downside is we have to now specify who the message is for (usually using 48 bit media access control (MAC) addresses)</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>Physical
-<ol>
-<li>Hardware</li>
-<li>Unit: Bits</li>
-<li>Responsibilities: Encodes data appropriately for the physical medium</li>
-</ol>
-</li>
-</ol>
-<h2 id="network-layer">Network Layer</h2>
-<h3 id="packet-definition">Packet Definition</h3>
-<p>Contains information about the packet itself (metadata) and the body/content</p>
-<h3 id="bgp-advertisement">BGP Advertisement</h3>
-<ol>
-<li>IP Address: the one they are advertising they can reach</li>
-<li>Gateway Next Hop: address of the entry point</li>
-<li>AS Path: Sequence of AS&rsquo;s a packet would need to travel through</li>
-</ol>
-<p>IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.</p>
-<h3 id="ipv4">IPv4</h3>
-<p>Special Addresses</p>
-<ol>
-<li>First address (generally all 0s): network itself, or not assigned</li>
-<li>Last address (generally all 1s): broadcast</li>
-</ol>
-<h3 id="cidr-notation">CIDR Notation</h3>
-<p><code>IP/#</code> where # is the number of bits in the network ID</p>
-<p>e.g. <code>18.0.0.0/8</code> means first 8 bits are network ID, and <code>18.x.x.x</code> is the space of all possible addresses ($2^{3*8}=2^{24}$)</p>
-<p>By default, routers will take the most specific one (longest network ID).</p>
-<p>To prevent loops, we set a TTL (time-to-live) for packets to expire after a certain time.</p>
-<h2 id="network-tiers">Network Tiers</h2>
-<ul>
-<li>Tier 1 Networks
-<ul>
-<li>A network that can exchange traffic with other Tier 1 networks without paying any fees (transit-free) for the exchange of traffic in either direction</li>
-</ul>
-</li>
-<li>Tier 2 Networks
-<ul>
-<li>A network that peers for free with some networks, but still purchases IP transit or pays for peering to reach at least some portion of the Internet</li>
-</ul>
-</li>
-<li>Tier 3 Networks
-<ul>
-<li>A network that solely purchases transit/peering from other networks to participate in the Internet. Everybody else</li>
-</ul>
-</li>
-</ul>
-<h2 id="user-datagram-protocol-udp">User Datagram Protocol (UDP)</h2>
-<ol>
-<li>Source Port</li>
-<li>Destination Port</li>
-<li>Length</li>
-<li>Checksum</li>
-<li>Payload</li>
-</ol>
-<p>68 is usually client, 67 is usually server</p>
-<p>For reliable networks (like local) where out-of-order protections of TCP are unnecessary, or for time sensitive applications (e.g. streams or calls) where lossy transmission at high speed is better than quality transmission at choppy speed.</p>
-<h2 id="address-resolution-protocol-arp">Address Resolution Protocol (ARP)</h2>
-<ul>
-<li>Host broadcasts a query with an IP address: &ldquo;who has IP address 130.207.160.47?&rdquo;</li>
-<li>Host with that IP address on the LAN will respond with appropriate MAC address.</li>
-<li>Resolves IP to MAC</li>
-<li>Generates an ARP Table maps IP to MAC</li>
-<li>Useful because frames use MAC addresses for addressing</li>
-</ul>
 <h2 id="hubs-switches-and-routers">Hubs, Switches, and Routers</h2>
 <ol>
-<li>Hub - broadcasting through cloning bits (physical layer)
+<li>Hub - broadcasting through cloning bits (
+
+
+<a href="/thoughts/Physical-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Physical-Layer">physical layer</a>)
 <ol>
 <li>Simplest and cheapest way to create a network</li>
 <li>Lots of unnecessary traffic</li>
 <li>Other people can see your traffic</li>
 </ol>
 </li>
-<li>Switch - hub but it knows where other hosts are for direct addressing (link layer)
+<li>Switch - hub but it knows where other hosts are for direct addressing (
+
+
+<a href="/thoughts/Link-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Link-Layer">link layer</a>)
 <ol>
 <li>Keeps a switch table mapping interface number to MAC address</li>
 <li>If table is initially empty, will behave like a hub and broadcast</li>
 <li>Can start populating switch table based off of sender field from frames</li>
 <li>Quicker than a router for internal communication (though some routers have an Ethernet switch built in)</li>
+<li>If engineered right, can be full-duplex</li>
 </ol>
 </li>
-<li>Router - glue that ties networks together (network layer)
+<li>Router - glue that ties networks together (
+
+
+<a href="/thoughts/Network-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Network-Layer">network layer</a>)
 <ol>
 <li>Does NOT support broadcast</li>
 <li>Serves as a bridge between private home network and the network of the internet provider (which can reach the rest of the internet)</li>
 <li>Modern routers can also perform
 <ol>
-<li>Network address translation (NAT)
-<ol>
-<li>More devices than IP addresses! What do we do?</li>
-<li>Home router gets assigned an IP (public IP) by the ISP</li>
-<li>Devices connected on the local network are assigned a private IP address (usually starts with subnet mask 196.168.x.x or 10.x.x.x)</li>
-<li>Changes the private IP address to the public address of the router (as well as the port)</li>
-<li>Adds the mapping to the NAT forwarding table
-<ol>
-<li>Entries correspond to private side (192.168.1.3:42301) to public side (12.13.14.15:24604)</li>
-</ol>
-</li>
-<li>Does the inverse when it receives a packet</li>
-</ol>
-</li>
-<li>Assigning IP addresses to hosts using Dynamic Host Configuration Protocol (DHCP)
-<ol>
-<li>Discovery, host looks for a DHCP server
-<ol>
-<li>Sender is 0.0.0.0 port 68</li>
-<li>Receiver is 255.255.255.255 port 67 (this is the broadcast address!)</li>
-</ol>
-</li>
-<li>Router responds with an offer valid for the next $n$ seconds
-<ol>
-<li>This is broadcasted (255.255.255.255) as router does not know where receiver is</li>
-</ol>
-</li>
-<li>Host responds with acceptance
-<ol>
-<li>Broadcast which address picked</li>
-</ol>
-</li>
-<li>Router responds OK
-<ol>
-<li>ACK message, still broadcast</li>
-</ol>
-</li>
-</ol>
-</li>
+<li>Network address translation (
+
+
+<a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a>)</li>
+<li>Assigning 
+
+
+<a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP addresses</a> to hosts using 
+
+
+<a href="/thoughts/DHCP" rel="noopener" class="internal-link" data-src="/thoughts/DHCP">DHCP</a></li>
 <li>Broadcast WiFi signal</li>
 </ol>
 </li>
@@ -710,6 +597,10 @@ administrated entities into a common entity</p>
 </li>
 </ol>
 <h2 id="error-correction">Error Correction</h2>
+<p>Methods for 
+
+
+<a href="/thoughts/fault-tolerance" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">fault tolerance</a> in data transmission</p>
 <ol>
 <li>Parity Bit
 <ol>
@@ -718,7 +609,12 @@ administrated entities into a common entity</p>
 </ol>
 </li>
 <li>2D Parity Bit
-1.</li>
+<ol>
+<li>Additional parity bits for each row</li>
+<li>Additional parity bits for each column</li>
+<li>One last additional bit in last row of parity bits</li>
+</ol>
+</li>
 <li>Checksum
 <ol>
 <li>Assume data is a sequence of 16-bit integers</li>
@@ -733,6 +629,7 @@ administrated entities into a common entity</p>
 </li>
 <li>Cyclic Redundancy Check (CRC)
 <ol>
+<li>Uses only XOR and shift</li>
 <li>Parameterized by constants G and r</li>
 <li>r + 1 is the length of G (some power of 2)</li>
 <li>G is the generator (arbitrary bit pattern)</li>
@@ -742,7 +639,7 @@ administrated entities into a common entity</p>
 </ol>
 </li>
 <li>Receiver knows G, divides &lt;D, R&gt; by G. If the remainder is non-zero an error is detected!</li>
-<li>Can detect all burst errors less than r+1 bits, and burst errors greater than r+1 with probability 1-0.5^r</li>
+<li>Can detect all burst errors less than $r+1$ bits, and burst errors greater than $r+1$ with probability $1-0.5^r$</li>
 </ol>
 </li>
 </ol>
@@ -769,13 +666,83 @@ administrated entities into a common entity</p>
 <li>Turn-based access control
 <ol>
 <li>Controlled by centralized party - polls everyone</li>
-<li>Controlled by centralized party - passes a token between senders</li>
+<li>Controlled in a decentralized manner - passes a token between senders</li>
 </ol>
 </li>
 </ol>
 </li>
-<li>Full-duplex - both sides can transmit at the same time without interference</li>
+<li>Full-duplex - both sides can transmit at the same time without interference/
+
+
+<a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a></li>
 </ol>
+<h2 id="network-metrics">Network Metrics</h2>
+<ul>
+<li>Bandwidth: max rate at which data can be sent over a link, usually in bits per second
+<ul>
+<li>Measured in base 10, kilobit is $10^3$ bits, megabit is $10^6$ bits</li>
+</ul>
+</li>
+<li>Sizes: usually in bytes
+<ul>
+<li>Measured in base 2, kilobyte is $2^{10}$ bytes, megabyte is $2^{20}$ bytes</li>
+<li>Except for disk managers, who use bits to make sizes look larger</li>
+</ul>
+</li>
+<li>Latency: how long is it from when something is sent to when it is received
+<ul>
+<li>Packet and bit/byte latency: measure start of sending packet/bit/byte to receiving it</li>
+<li>Round trip time: time to send packet and receiving a response</li>
+</ul>
+</li>
+<li>Jitter: variation in latency &ndash; interpacket variance</li>
+<li>Throughput: amount of data moved from one place to another in a given time
+<ul>
+<li>Usually measured in bytes not bits</li>
+</ul>
+</li>
+<li>Goodput: rate at which <em>useful</em> data arrives
+<ul>
+<li>Does not include headers, encoding costs, etc.</li>
+</ul>
+</li>
+</ul>
+<p>Delay</p>
+<ul>
+<li>Processing Delay: figuring out where packet should go
+<ul>
+<li>Pretty much fixed (almost always variable due to cache hits, network queues, etc. but because of how negligible the times are, we can treat as fixed.)</li>
+</ul>
+</li>
+<li>Queueing Delay: waiting time to get access to a link
+<ul>
+<li>Variable</li>
+</ul>
+</li>
+<li>Transmission Delay: time to write packet to medium
+<ul>
+<li>Fixed for bits, variable for packets (dependent on size)</li>
+</ul>
+</li>
+<li>Propagation Delay: time to move each bit over transmission medium
+<ul>
+<li>Fixed for meter, variable depending on actual length traveled</li>
+</ul>
+</li>
+<li>End-to-end Delay: sum of all sources of delay</li>
+</ul>
+<p>Traffic Intensity</p>
+<ul>
+<li>Determined by
+<ul>
+<li>Number of packets arriving per second: $a$</li>
+<li>Average packet size: $L$</li>
+<li>Transmission rate: rate at which bits are disposed of per second: $R$</li>
+</ul>
+</li>
+<li>Traffic Intensity: $\frac{La}{R}$</li>
+<li>Delay = $\frac{S}{1-U}$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)</li>
+</ul>
 
 
     </article>
@@ -793,6 +760,8 @@ administrated entities into a common entity</p>
     
     <li>
             <a href="/thoughts/Urbit">Urbit</a>
+        </li><li>
+            <a href="/thoughts/search">Search</a>
         </li>
 </ul>
 
