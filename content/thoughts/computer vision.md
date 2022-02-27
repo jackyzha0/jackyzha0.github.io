@@ -3,6 +3,7 @@ title: "Computer Vision"
 date: 2021-09-15T21:49:18-07:00
 tags:
 - seed
+- technical
 ---
 
 > CV, broadly speaking, is a research field aimed to enable computers to process and interpret visual data, as sighted humans can

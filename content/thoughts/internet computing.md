@@ -7,14 +7,14 @@ tags:
 
 *Notes for CPSC 317*
 
-The internet is a network of networks. The main goals was to integrate a number of separately  
+The [Internet](thoughts/Internet.md) is a network of networks. The main goals was to integrate a number of separately  
 administrated entities into a common entity
 
 ## Communication
 Necessary conditions
 - A communication medium
 - Source(s) and destination(s)
-- Protocol (language)
+- [Protocol](thoughts/Protocol.md) (language)
 - Message
 
 ### Circuit Switching

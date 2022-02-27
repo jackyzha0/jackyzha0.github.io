@@ -17,7 +17,7 @@ What money is, how it is created, and who gets to distribute it goes to the very
 
 [Incentives](thoughts/incentives.md) can be thought of as the [social, political and neurobiological primitives](thoughts/social%20contracts.md) which define what kinds of behaviours we express.
 
-> Programmable money provides utility which makes it much more than just money for the internet: **it turns it into the internet of money**.
+> Programmable money provides utility which makes it much more than just money for the internet: **it turns it into the [internet](thoughts/Internet.md) of money**.
 
 Money allows specialization, allowing goods and services to be transformed into a intermediary representation that is accepted by society.
 
@@ -53,7 +53,7 @@ Curious if the main reason is that you need to keep track of whether someone has
 The question applied to [web3](thoughts/web3.md): **can we advance the aims of rehabilitative justice using a shared and common historical record for better [accountability](thoughts/accountability.md)?**
 
 ## Engineering Money
-> Money-as-a-protocol really allows us to do is program incentives at scales never before possible
+> Money-as-a-[protocol](thoughts/Protocol.md) really allows us to do is program incentives at scales never before possible
 
 Money, in this context, is not a concrete thing, its an abstraction to communicative values, as a language, and as a technology. It is a classifier for things that exhibit behaviour that lets us use it for
 1. Store of Value

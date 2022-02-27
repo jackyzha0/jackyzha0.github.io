@@ -36,7 +36,7 @@ Systems of magic
 - Rules should be able to be composed
 - Should not be *too powerful*
 
-Programming is magic, and it's too powerful. There is no OS for the internet telling you what you can and cannot do (only limitation is not running out of memory and time).
+Programming is magic, and it's too powerful. There is no OS for the [Internet](thoughts/Internet.md) telling you what you can and cannot do (only limitation is not running out of memory and time).
 
 What is interesting with systems is not what you *can* do, but what you *cannot* do.
 

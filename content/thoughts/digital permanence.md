@@ -5,7 +5,9 @@ tags:
 - sapling
 ---
 
-Once you share something, you can't unshare it, internet feels intractable. **What do we lose when we lose deletion?**
+Once you share something, you can't unshare it, the [internet](thoughts/Internet.md) feels intractable.
+
+**What do we lose when we lose deletion?**
 
 Related: [cancel culture](thoughts/cancel%20culture.md), [right to be forgotten](thoughts/right%20to%20be%20forgotten.md), [ephemereal content](thoughts/ephemereal%20content.md)
 

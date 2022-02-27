@@ -44,12 +44,12 @@ Infrastructure can be [emergent](thoughts/emergent%20behaviour.md)
 ## Hard and soft infrastructure
 Hard infrastructure refers to hard rules and goods (e.g. parks, laws, highways, etc.)
 
-Soft infrastructure is upheld as a social protocol, an institution whose maintenance relies on dedication and value alignment. More closely related to [social contracts](thoughts/social%20contracts.md)
+Soft infrastructure is upheld as a social [protocol](thoughts/Protocol.md), an institution whose maintenance relies on dedication and value alignment. More closely related to [social contracts](thoughts/social%20contracts.md)
 
 ## Moderation
 [Source: The Internet Is Rotting in *The Atlantic*](https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/)
 
-> "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
+> "So the [internet](thoughts/Internet.md) was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 
 This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots democracy and freedom. -> did this arise out of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md)?
 

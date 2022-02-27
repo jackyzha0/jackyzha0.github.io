@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-## Address Resolution Protocol (ARP)
+## Address Resolution [Protocol](thoughts/Protocol.md) (ARP)
 Purpose: links the [Network Layer](thoughts/Network%20Layer.md) (IP address) with the [link layer](thoughts/Link%20Layer.md) (MAC address)
 
 Case: A wants tot send a datagram to B, but A doesn't know B's MAC address

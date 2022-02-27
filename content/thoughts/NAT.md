@@ -20,7 +20,7 @@ Both network and [transport layer](thoughts/Transport%20Layer.md) (violation of 
 		2. Source Port
 		3. Destination IP
 		4. Destination Port
-		5. Protocol
+		5. [Protocol](thoughts/Protocol.md)
 		6. NAT IP (Router public IP address)
 		7. NAT Port (Unique)
 	3. Actually, Port Forwarding just adds entries to the NAT forwarding table! You can set remote IP and remote port to wildcard entries (i.e. any web requests made to this port go to the specified machine)

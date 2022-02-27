@@ -103,7 +103,7 @@ They freely provide, it seems, a sorting of the wheat from the chaff, and answer
 
 ![](/thoughts/images/search%20engine%20space.png)*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
 
-See also: [internet computing](thoughts/internet%20computing.md)
+See also: [internet computing](thoughts/internet%20computing.md), [Internet](thoughts/Internet.md)
 
 Search engines create an embedding space for the world that maps from physical to digital. Page ranking is the function that maps and remaps the 'location' and relatedness of real concepts.
 

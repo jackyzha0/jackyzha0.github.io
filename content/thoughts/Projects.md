@@ -90,7 +90,7 @@ Speech2Braille was created to help the over 360 million people in the world who 
 
 Built with: Tensorflow, numpy, Raspberry Pi, Python, Bash
 
-## PacketBook -- blockchain banking without internet
+## PacketBook -- blockchain banking without [Internet](thoughts/Internet.md)
 
 [Devpost (nwHacks 2018 SAP Prize, Top 30)](https://devpost.com/software/packetbook), [GitHub](https://github.com/jackyzha0/PacketBook)
 

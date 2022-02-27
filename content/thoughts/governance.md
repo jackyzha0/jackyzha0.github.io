@@ -63,4 +63,4 @@ Four Online Governance Regimes:
 	- Wouldn't this just lead to optimizing for airdrops? This happened with ENS ([Goodhart's Law](thoughts/Goodhart's%20Law.md))
 - "Turing-Complete governance shouldn’t be advocated as a way to make the most complex algorithm possible. The point is that we can have any inputs we want, and any computational transformation of those inputs to produce some output. Vitalik has pointed out that [simple social systems with](https://vitalik.ca/general/2018/11/25/central_planning.html) more predictable outcomes and understandable processes for tweaking the outcome are more desirable"
 	- [Gall's law](thoughts/Gall's%20law.md)
-- "Imagine if every application on the Internet by default had a zero-downtime, publicly exposed API"
+- "Imagine if every application on the [Internet](thoughts/Internet.md) by default had a zero-downtime, publicly exposed API"

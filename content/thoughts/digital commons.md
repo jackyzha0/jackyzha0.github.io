@@ -70,7 +70,7 @@ One-to-many 'broadcast' relationships.
 
 #### Tools 
 * Twitch, Celebrities, and Internet Figures -> Gathering around a single person because of personality/content
-* Newsletters and personal sites -> Public places of exploration and self-identity, self-owned corners of the internet
+* Newsletters and personal sites -> Public places of exploration and self-identity, self-owned corners of the [internet](thoughts/Internet.md)
 
 ### Private Channels
 Spaces for one-to-one interaction.

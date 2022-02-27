@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Dynamic Host Configuration Protocol so they can join a network. Assigns [IP addresses](thoughts/IP%20Addresses.md) to hosts. Main reason was when people started moving devices across networks
+Dynamic Host Configuration [Protocol](thoughts/Protocol.md) so they can join a network. Assigns [IP addresses](thoughts/IP%20Addresses.md) to hosts. Main reason was when people started moving devices across networks
 
 Client-server model
 

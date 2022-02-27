@@ -48,7 +48,7 @@ Common mode failure, all pieces can fail for the same reason. (e.g. all nodes in
 
 To counteract this,
 - have multiple competing implementations
-- knowledge of technical considerations behind underlying protocol must be public and democratized
+- knowledge of technical considerations behind underlying [protocol](thoughts/Protocol.md) must be public and democratized
 - core stakeholders should be from multiple companies/orgs or just multiple volunteers
 - use [proof of stake](thoughts/proof%20of%20stake.md) to move away from hardware centralization risk
 
@@ -68,9 +68,4 @@ Ways to counteract:
 1. Find a happy medium that allows enough coordination for a protocol to move forward but not enough to enable attacks
 2. Try to make a distinction between beneficial coordination and collusion and make the former easier and the latter harder
 
-## Internet
-Imagine the surface of the internet as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.
-
-Instead of creating a new webpage, Internet professionals and private users tend to go to a Facebook Page and therefore open content hosted on the slope of a dominant curve. 
-
-![](/thoughts/images/Slope%20Metaphor%20of%20the%20Internet.png)
+Related: decentralization on the [Internet](thoughts/Internet.md)

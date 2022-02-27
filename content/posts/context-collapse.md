@@ -63,7 +63,7 @@ I’ve noticed three main strategies individuals, companies, and platforms have 
 
 2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](thoughts/ephemereal%20content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
 
-3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public internet.
+3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public [internet](thoughts/Internet.md)r.
 
 I don’t think there is a single 'right' approach, and in part that's why so many types of social networks exist today: they each have their own merits that incentive different approaches to communication. But one part I do want to emphasize is the tradeoff of depth and breadth in these approaches.
 

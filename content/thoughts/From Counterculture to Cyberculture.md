@@ -14,7 +14,7 @@ tags:
 
 "Nor does the fact that individuals can come together by means of computer networks necessarily require that their gatherings become 'virtual communities'"
 
-"Dyson and Barlow, as well as many other commentators at the time, saw the Internet serving as a rhetorical prototype for new, flexible, and mobile ways of working and living."
+"Dyson and Barlow, as well as many other commentators at the time, saw the [Internet](thoughts/Internet.md) serving as a rhetorical prototype for new, flexible, and mobile ways of working and living."
 
 Together, the *Catalog* and the *Supplement* became textual forums within which a geographically dispersed collection of individuals and groups could come together, in text and sometimes pictures, and recognize each other as members of a single community. In a sense, *Catalog* and *Supplement* became town squares.
 

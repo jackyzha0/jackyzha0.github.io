@@ -11,7 +11,7 @@ Reboot event with Shannon Mattern on her new book _A City Is Not A Computer_. Ma
 [Source: A City is not a Computer](https://placesjournal.org/article/a-city-is-not-a-computer/)
 
 ### Sidewalk Labs
-Doctoroff, the founder of Sidewalk Labs: "What would a city look like if you started from scratch in the internet era — if you built a city 'from the internet up?'"
+Doctoroff, the founder of Sidewalk Labs: "What would a city look like if you started from scratch in the internet era — if you built a city 'from the [internet](thoughts/Internet.md) up?'"
 
 Sidewalk aims to be the 'fourth revolution' of urban infrastructure where the first 3 were
 1. The Steam Engine

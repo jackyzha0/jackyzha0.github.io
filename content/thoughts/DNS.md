@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the internet.
+Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the [Internet](thoughts/Internet.md).
 
 DNS currently has ~300 million DNS registrations. Both query and reply messages follow the same message format. Both always include Name, Type, Class tuples -- Class is usually `IN`. Names cannot be wildcarded but type and class can
 
