@@ -68,7 +68,8 @@
 
   & > .bio {
     display: flex;
-    gap: 1.5em;
+    flex-direction: row-reverse;
+    gap: 4em;
 
     @media screen and (max-width: 1440px) {
       flex-direction: column !important;
