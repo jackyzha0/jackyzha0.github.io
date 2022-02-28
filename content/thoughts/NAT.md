@@ -29,6 +29,8 @@ Both network and [transport layer](thoughts/Transport%20Layer.md) (violation of 
 		3. Entries are removed when a conversation is coming to a close (stream based protocol, detect termination packets)
 6. Does the inverse when it receives a packet
 
+![](thoughts/images/NAT.jpeg)
+
 ## Hole-punching
 > Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).
 
