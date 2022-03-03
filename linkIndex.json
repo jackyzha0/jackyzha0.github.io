@@ -2986,6 +2986,23 @@
           "text": "Dark Forest Theory of the Internet"
         }
       ],
+      "/thoughts/epistemic-injustice": [
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/power",
+          "text": "power"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/intentionality",
+          "text": "intentionality"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/power",
+          "text": "power"
+        }
+      ],
       "/thoughts/epistemology": [
         {
           "source": "/thoughts/epistemology",
@@ -3425,6 +3442,18 @@
           "source": "/thoughts/hackathons",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "counter-culture"
+        }
+      ],
+      "/thoughts/hermeneutical-injustice": [
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/epistemology",
+          "text": "Epistemologically"
         }
       ],
       "/thoughts/human-centered-design": [
@@ -4886,6 +4915,18 @@
           "source": "/thoughts/potemkin-village",
           "target": "/posts/ai-systems",
           "text": "AI Systems"
+        }
+      ],
+      "/thoughts/power": [
+        {
+          "source": "/thoughts/power",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/power",
+          "target": "/thoughts/social-contracts",
+          "text": "norms"
         }
       ],
       "/thoughts/prestige": [
@@ -9148,6 +9189,13 @@
           "text": "ephemereal"
         }
       ],
+      "/thoughts/epistemic-injustice": [
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
+        }
+      ],
       "/thoughts/epistemology": [
         {
           "source": "/posts/networked-thought",
@@ -9168,6 +9216,11 @@
           "source": "/thoughts/context",
           "target": "/thoughts/epistemology",
           "text": "epistemic"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/epistemology",
+          "text": "Epistemologically"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -10143,6 +10196,11 @@
           "text": "intentionality"
         },
         {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/intentionality",
+          "text": "intentionality"
+        },
+        {
           "source": "/thoughts/intelligence",
           "target": "/thoughts/intentionality",
           "text": "intentionality"
@@ -11045,6 +11103,18 @@
           "text": "Potemkin village"
         }
       ],
+      "/thoughts/power": [
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/power",
+          "text": "power"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/power",
+          "text": "power"
+        }
+      ],
       "/thoughts/praxis": [
         {
           "source": "/thoughts/meaning",
@@ -11605,6 +11675,11 @@
           "text": "social contracts"
         },
         {
+          "source": "/thoughts/power",
+          "target": "/thoughts/social-contracts",
+          "text": "norms"
+        },
+        {
           "source": "/thoughts/value",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
@@ -11968,6 +12043,11 @@
           "source": "/thoughts/pace-layers",
           "target": "/thoughts/trust",
           "text": "Trust"
+        },
+        {
+          "source": "/thoughts/power",
+          "target": "/thoughts/trust",
+          "text": "trust"
         },
         {
           "source": "/thoughts/proof-of-stake",
@@ -15008,6 +15088,21 @@
       "text": "Dark Forest Theory of the Internet"
     },
     {
+      "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/power",
+      "text": "power"
+    },
+    {
+      "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/intentionality",
+      "text": "intentionality"
+    },
+    {
+      "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/power",
+      "text": "power"
+    },
+    {
       "source": "/thoughts/epistemology",
       "target": "/thoughts/indeterminant",
       "text": "indeterminancy"
@@ -15411,6 +15506,16 @@
       "source": "/thoughts/hackathons",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "counter-culture"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/epistemic-injustice",
+      "text": "epistemic injustice"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/epistemology",
+      "text": "Epistemologically"
     },
     {
       "source": "/thoughts/human-centered-design",
@@ -16766,6 +16871,16 @@
       "source": "/thoughts/potemkin-village",
       "target": "/posts/ai-systems",
       "text": "AI Systems"
+    },
+    {
+      "source": "/thoughts/power",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/power",
+      "target": "/thoughts/social-contracts",
+      "text": "norms"
     },
     {
       "source": "/thoughts/prestige",
