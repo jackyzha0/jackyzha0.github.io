@@ -22,3 +22,13 @@ This quotes from Nancy Hartsock has at least 3 different readings of the meaning
 2. Ontologically: the powerful constitute the social world
 3. [Epistemologically](thoughts/epistemology.md): the powerful have an unfair advantage in structuring collective social understandings
 
+## Willful Hermeneutical Ignorance
+In *Relational Knowing and Epistemic Injustice: Toward a Theory of Willful Hermeneutical Ignorance* by GAILE POHLHAUS, JR.
+
+Positing that the sociality of the knower is epistemically significant
+1. Situatedness: the knower's social position draw their attention to particular aspects of the world.
+	1. Note, not as simple as the claim that different experiences lead to different knowledge. Not as strong as the claim that social position leads to automatic knowledge
+	2. Situations resulting from one's social positioning create common challenges that constitute part of the knower's lived experience and contribute to the context from which they approach the world
+2. Interdependence: epistemic resources are by nature collective
+	1. Lynn Nelson: "there are no 'immediate' experiences" Instead, within any given situation, our experience "is shaped and made possible by communal ways of organizing things, and *systems* of connected theories, methodologies, and practices"
+	2. Related: language and [terminology](thoughts/terminology.md). Wittgenstein: "a language that in principle could be understood by only one person would not be a language at all"

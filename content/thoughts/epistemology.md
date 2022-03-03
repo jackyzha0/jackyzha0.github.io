@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Related: [indeterminancy](thoughts/indeterminant.md)
+Related: [indeterminancy](thoughts/indeterminant.md), [epistemic injustice](thoughts/epistemic%20injustice.md)
 
 ## Mūlamadhyamakakārikā (Root Verses on the Middle Way or the MMK) by Nāgārjuna
 
