@@ -32,3 +32,5 @@ Positing that the sociality of the knower is epistemically significant
 2. Interdependence: epistemic resources are by nature collective
 	1. Lynn Nelson: "there are no 'immediate' experiences" Instead, within any given situation, our experience "is shaped and made possible by communal ways of organizing things, and *systems* of connected theories, methodologies, and practices"
 	2. Related: language and [terminology](thoughts/terminology.md). Wittgenstein: "a language that in principle could be understood by only one person would not be a language at all"
+
+It is important to note that being marginally situated leads not to "different" knowledge, but, as Harding has argued, to more *objective* knowledge (Harding 1991, 138-163)
