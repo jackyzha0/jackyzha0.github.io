@@ -3011,6 +3011,11 @@
         },
         {
           "source": "/thoughts/epistemology",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
+        },
+        {
+          "source": "/thoughts/epistemology",
           "target": "/thoughts/Buddhism",
           "text": "Buddhist"
         },
@@ -3454,6 +3459,11 @@
           "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/epistemology",
           "text": "Epistemologically"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
         }
       ],
       "/thoughts/human-centered-design": [
@@ -9191,6 +9201,11 @@
       ],
       "/thoughts/epistemic-injustice": [
         {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
+        },
+        {
           "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/epistemic-injustice",
           "text": "epistemic injustice"
@@ -11839,6 +11854,11 @@
         },
         {
           "source": "/thoughts/Twin-Earth-Argument",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/terminology",
           "text": "terminology"
         },
@@ -15109,6 +15129,11 @@
     },
     {
       "source": "/thoughts/epistemology",
+      "target": "/thoughts/epistemic-injustice",
+      "text": "epistemic injustice"
+    },
+    {
+      "source": "/thoughts/epistemology",
       "target": "/thoughts/Buddhism",
       "text": "Buddhist"
     },
@@ -15516,6 +15541,11 @@
       "source": "/thoughts/hermeneutical-injustice",
       "target": "/thoughts/epistemology",
       "text": "Epistemologically"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/terminology",
+      "text": "terminology"
     },
     {
       "source": "/thoughts/human-centered-design",

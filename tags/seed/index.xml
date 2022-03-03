@@ -116,7 +116,7 @@ Application/Presentation/Session layer</description>
       
       <guid>https://jzhao.xyz/thoughts/Protocol/</guid>
       <description>Defines:
- Roles of communicating entities Format of messages Order of messages Actions taken on the transmission, receipt of a message, or other event  A fully-defined protocol must provide a proper action for any event in any state.</description>
+ Roles of communicating entities Format of messages Order of messages Actions taken on the transmission, receipt of a message, or other event  Protocols as State Machines A fully-defined protocol must provide a proper action for any event in any state.</description>
     </item>
     
     <item>
@@ -326,7 +326,7 @@ How do we bridge objective description and subjective experience (qualia)?</desc
       <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/epistemology/</guid>
-      <description>Related: indeterminancy
+      <description>Related: indeterminancy, epistemic injustice
 Mūlamadhyamakakārikā (Root Verses on the Middle Way or the MMK) by Nāgārjuna A key text in Buddhist religious texts.</description>
     </item>
     
