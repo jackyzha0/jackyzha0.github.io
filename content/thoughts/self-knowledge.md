@@ -5,6 +5,48 @@ tags:
 - sapling
 ---
 
+## Reflexivity vs Reflectivity
+Self-illumination/reflexivity  
+- Every conscious experience is directly revealed to itself.  
+- "In seeing blue, you experience seeing"
+- Problems: Reflexivity as a concept is weird though
+	- "A knife cannot cut itself, an acrobat can’t stand on their own shoulders."
+	- "How can one and the same awareness be both of an object/content and of itself?"
+
+Other-illumination/reflectivity  
+- For a state to be a conscious state is for it to be the object of a higher-order mental state (an inner perception or inner thought).
+- "I see blue, I'm aware that I see blue"
+- Problems: how could two states that are nonconscious in themselves come together and make one of them conscious?
+	- Curious how this applies to [emergent behaviour](thoughts/emergent%20behaviour.md)
+	- By having a higher layer that enables the reference of a lower layer, this is essentially a two-way recursive relation that opens the door to much more composable and perhaps complex behaviour
+
+Nagarjana's Argument
+- Infinite regress, you cannot use a fact to establish itself
+- Summarized in terms of reflectivity
+	- argues against reflexivity
+Opponents Argument
+- Can use recursive definition
+
+## Pratyabhijna Self-awareness
+Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
+
+- Ultimate Reality (Śiva)
+	- Consciousness as the infinite potential for any and all manifest worlds
+	- Śiva is like a sculptor, a playwright, or a yogin because he spontaneously creates worlds from within himself
+- Conventional Reality
+	- Embodied worlds created through exclusion
+	- Manifests because the ultimate desires to experience itself in diverse  forms
+	- When we imagine, for example, an elephant, our consciousness presents this object ('this') as distinct from our conscious selves ('I'). Despite this distinction, we know 'this' is only imagined and arises from the self.
+	- Consciousness, when this happens, does not become the elephant, nor does it cease to exist as the 'I' when taking on the elephant's form, it simplify manifests itself as something distinct from the 'this'.
+	- This plasticity is what the Śaivas call "freedom"
+- Internality is the reflective awareness 'I', externality is the reflective awareness 'this'
+	- For objects perceived there are two kinds of externality
+		1. Object of cognition through the external sense
+		2. Object of cognition through the internal sense
+- No ontologically independent external objects
+	- The internal self must have the notion or essence of object to manifest it as external (?)
+	- Cannot infer the existence of something that has never been perceived 
+
 ## Paper #2 for PHIL240A
 
 > Śiva and God are hanging out, binge-watching a Cosmicflix series called “The Greatest Hits in Philosophy.” It’s the Descartes episode. Descartes says: “To begin with, I acknowledge that it is impossible for God ever to deceive me, for trickery or deception is always indicative of some imperfection” (p. 36) Śiva leans back and smirks. “Now THAT,” he says, “is impressive. I’ve managed to so thoroughly deceive myself that I think I can’t be a deceiver!” God looks sideways at Śiva and responds, “What are you on about? This is one of the greatest moments of insight that one of my creatures has had! Because Descartes clearly and distinctly perceives that I am not a deceiver, he opens himself to all knowledge!” “Oh really?,” Śiva responds. “I thought Descartes already had the key to all knowledge just in the realization ‘I exist.’ He just needs to understand what that means about his own nature!” God pushes pause on the Cosmicflix show and, with a sweep of his arm, transforms their surroundings to a formal debate platform. “OK,” God says, “Time to get to the bottom of what self-knowledge even is. Do you accept the challenge?” “Bring it,” says Śiva, with a grin.

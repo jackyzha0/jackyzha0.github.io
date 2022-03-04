@@ -9,43 +9,11 @@ What does it mean to be conscious? Is consciousness emergent from matter? Or is 
 
 "Consciousness is always consciousness of something, and when the object is subtracted, nothing remains to be characterized" (cannot be of independent origin, [emptiness](thoughts/emptiness.md))
 
-See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md)
+See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md), [Buddhism](thoughts/Buddhism.md), [The Upanisads](thoughts/The%20Upanisads.md), [qualia](thoughts/qualia.md), [self-knowledge](thoughts/self-knowledge.md)
 
-Related: [The Upanisads](thoughts/The%20Upanisads.md), [Qualia](thoughts/qualia.md)
-
-Phenomenal consciousness (felt consciousness) vs Access consciousness
-
-Gross consciousness (obvious waking state) vs Subtle consciousness (sleep/deep sleep). In more Indian philosophy, consciousness is that which is luminous (revealing) and has capacity for cognition.
-
-## Reflexivity vs Reflectivity
-Self-illumination/reflexivity  
-- Every conscious experience is directly revealed to itself.  
-- "In seeing blue, you experience seeing"
-- Problems: Reflexivity as a concept is weird though
-	- "A knife cannot cut itself, an acrobat can’t stand on their own shoulders."
-	- "How can one and the same awareness be both of an object/content and of itself?"
-
-Other-illumination/reflectivity  
-- For a state to be a conscious state is for it to be the object of a higher-order mental state (an inner perception or inner thought).
-- "I see blue, I'm aware that I see blue"
-- Problems: how could two states that are nonconscious in themselves come together and make one of them conscious?
-	- Curious how this applies to [emergent behaviour](thoughts/emergent%20behaviour.md)
-	- By having a higher layer that enables the reference of a lower layer, this is essentially a two-way recursive relation that opens the door to much more composable and perhaps complex behaviour
-
-Nagarjana's Argument
-- Infinite regress, you cannot use a fact to establish itself
-- Summarized in terms of reflectivity
-	- argues against reflexivity
-Opponents Argument
-- Can use recursive definition
-
-## Neural Correlates of Consciousness (NCC)
-- Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.
-	- Similar to probing for network activation in neural networks / [AI systems](posts/ai-systems.md)
-- The full NCC is the union of all content-specific NCCs.
-- Even for ambiguous figures (those weird visual illusions that have differing things depending on how you perceive it), there is a rivalry for a dominant interpretation
-	- When faced with ambiguous visual information, you don’t normally experience a combination of the different interpretations. Rather, you only see one at a time, often switching back and forth between the two.
-	- Binocular rivalry
+Types of consciousness:
+- Phenomenal consciousness (felt consciousness) vs Access consciousness
+- Gross consciousness (obvious waking state) vs Subtle consciousness (sleep/deep sleep). In more Indian philosophy, consciousness is that which is luminous (revealing) and has capacity for cognition.
 
 Theories of consciousness
 - Cognitive Theories: consciousness is based in areas that are devoted to cognitive processing (thinking, reasoning, evaluating, memory, etc.)
@@ -54,64 +22,8 @@ Theories of consciousness
 		- When they remain localized, they are not perceived conscoiusly
 - Sensory Theories: consciousness is based in areas that are devoted to sensory processing
 	- Block argues that recurrent processing in sensory areas is the NCC for phenomenally conscious perception
+	- e.g. [Neural Correlates of Consciousness (NCC)](thoughts/Neural%20Correlates%20of%20Consciousness%20(NCC).md)
 - First-order theories: consciousness is a product of the cognitive processing of sensory information
+	- e.g. [Integrated Information Theory of Consciousness (IIT)](thoughts/Integrated%20Information%20Theory%20of%20Consciousness%20(IIT).md)
 - Higher-order theories: consciousness involves something done to build on that cognitive representation of the sensory experience
-
-Does phenomenal awareness overflow access?
-- (when reading,) we are conscious only of the letters attended to and the impression that there are other items displayed whose identity we don’t know. Once the cue is presented, we gain access to the unconscious information before it decays and can recall the letters.
-- Great example of why foveated rendering works so well
-
-## Integrated Information Theory of Consciousness (IIT)
-First-order sensory theory of consciousness.
-
-> Consciousness *is* integrated information
-
-The amount of information $\phi$ that the entire complex system has beyond the information available from the sum of its parts (i.e. Information that can’t be localized in the system's individual parts.)
-
-Has many holes in its axioms but again presented here just to learn:
-1. Intrinsic Existence: consciousness must exist from its own intrinsic perspective, independent of external observers
-2. Composition: consciousness is structured and composed of multiple phenomenological distinctions (elementary or higher order)
-3. Information: consciousness is specific. Each experience is particular and uniquely distinct
-4. Integration: consciousness is unified. Each experience is irreducible and cannot be subdivided into non-interdependent disjoint subsets of phenomenal distinctions
-5. Exclusion: consciousness is definite -- it either has or does not have certain phenomenal distinctions
-
-## Pratyabhijna Self-awareness
-Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
-
-- Ultimate Reality (Śiva)
-	- Consciousness as the infinite potential for any and all manifest worlds
-	- Śiva is like a sculptor, a playwright, or a yogin because he spontaneously creates worlds from within himself
-- Conventional Reality
-	- Embodied worlds created through exclusion
-	- Manifests because the ultimate desires to experience itself in diverse  forms
-	- When we imagine, for example, an elephant, our consciousness presents this object ('this') as distinct from our conscious selves ('I'). Despite this distinction, we know 'this' is only imagined and arises from the self.
-	- Consciousness, when this happens, does not become the elephant, nor does it cease to exist as the 'I' when taking on the elephant's form, it simplify manifests itself as something distinct from the 'this'.
-	- This plasticity is what the Śaivas call "freedom"
-- Internality is the reflective awareness 'I', externality is the reflective awareness 'this'
-	- For objects perceived there are two kinds of externality
-		1. Object of cognition through the external sense
-		2. Object of cognition through the internal sense
-- No ontologically independent external objects
-	- The internal self must have the notion or essence of object to manifest it as external (?)
-	- Cannot infer the existence of something that has never been perceived 
-
-Argument
-1. We observe causally specific differentiation in our everyday world
-2. Something that is causally specific must be the effect of a specific real cause
-3. Each real cause produces only the effects that are in accord with its nature
-4. Such causes must be either internal or external to consciousness
-5. These causes cannot be external to consciousness because, per Vasubandhu and Dharmakīrti, external objects are irrelevant and logically incoherent
-6. These causes therefore must be internal to consciousness
-7. It is not the nature of something undifferentiated to produce different effects
-8. Consciousness cannot be totally undifferentiated and produce different effects
-9. Consciousness must be inherently differentiated if it is to account for the differentiated awarenesses observed in the conventional world
-10. Since there is no other viable candidate for the cause of this differentiation, the nature of reality is ultimate consciousness that inherently contains the capacity for the expression of all differentiated awarenesses
-
-'Ill-taught' people satisfy themselves with conventional reality call it 'inert', failing to see it is a subset of Śiva. "Only consciousness can present itself as precisely what it’s not while still remaining itself"
-
-### The memory argument against Vijñānavādin Buddhists in Utpaladeva’s Pratyabhijñā Corpus
-1. Utpaladeva does not believe that awareness can become an object of another distinct awareness
-2. Memory involves an awareness-event being the object of another awareness-event
-3. Memory thus is impossible unless they're actually part of the same overall awareness (e.g. Śiva)
-
-More: essay on [self-knowledge](thoughts/self-knowledge.md) 
+	- e.g. [Stream of Consciousness](thoughts/Stream%20of%20Consciousness.md)
