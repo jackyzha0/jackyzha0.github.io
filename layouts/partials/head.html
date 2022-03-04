@@ -2,7 +2,7 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="description" content="{{if .IsHome}}{{$.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
-    <title>{{ if .Title }}{{ .Title | humanize }}{{ else }}{{ $.Site.Data.config.page_title }}{{ end }}</title>
+    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Data.config.page_title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 

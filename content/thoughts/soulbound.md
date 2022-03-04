@@ -13,7 +13,7 @@ tags:
 If you take the proverb that "those who most want to rule people are those least suited to do it" (Douglas Adams, *The Restaurant at the End of the Universe*) seriously, then you should be suspicious of transferability, precisely because transferability makes governance power flow away from the meek who are most likely to provide valuable input to governance and toward the power-hungry who are most likely to cause problems.
 
 ## [Game design](thoughts/game%20design.md)
-Soulbound in the context of video games (specifically Realm of the Mad God). I think this is such an interesting case study because the game itself is perma-death, meaning that items on characters are permanently deleted/lost on a character death.
+Soulbound in the context of video [games](thoughts/games.md) (specifically Realm of the Mad God). I think this is such an interesting case study because the game itself is perma-death, meaning that items on characters are permanently deleted/lost on a character death.
 
 Soulbound is an interesting mechanic that has had a lot of implications for gameplay and in-game economy:
 

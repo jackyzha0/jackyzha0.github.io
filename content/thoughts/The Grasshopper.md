@@ -8,7 +8,7 @@ tags:
 "It is the attempt to discover and formulate a definition, and to follow the implications of that discovery even when they lead in surprisingly, and sometimes disconcerting, directions."
 
 ## The Grasshopper
-A fun Platonic dialogue poised as a tale between insects. The grasshopper, about to die for winter, leaves his disciples with a few riddles. Within these tales, the grasshopper details his philosophy of "refusing to work and insisting upon devoting himself exclusively to play". Of course, his disciples challenge him about this, leading to a journey of defining what games are, attitudes toward playing games, and the role of games in utopias. 
+A fun Platonic dialogue poised as a tale between insects. The grasshopper, about to die for winter, leaves his disciples with a few riddles. Within these tales, the grasshopper details his philosophy of "refusing to work and insisting upon devoting himself exclusively to play". Of course, his disciples challenge him about this, leading to a journey of defining what [games](thoughts/games.md) are, attitudes toward playing games, and the role of games in utopias. 
 
 (When talking about why the author chose to write the book as a Platonic dialogue) "His refusal to express himself in a plain expository style is perhaps no different in principle from someone's setting out to write an entire book without using the letter *e*"
 

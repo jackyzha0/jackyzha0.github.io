@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+Related: [games](thoughts/games.md)
+
 ## Game Design and [Teaching](thoughts/teaching.md)
 [Source: Game designers vs. education researchers on unguided instruction by *Andy Matuschak*](https://klr.tumblr.com/post/159583871898/game-designers-vs-education-researchers-on)
 

@@ -22,7 +22,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Doughnut Economics** by Kate Raworth
 * **The Disappearance of Rituals** by Byung-Chul Han
 * **Where Is My Flying Car?** by J. Storrs Hall
-* **Games: Agency as Art** by C Thi Nguyen
+* [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
 
 ## Current
 * **Ghost Work** by Mary L. Gray and Siddharth Suri

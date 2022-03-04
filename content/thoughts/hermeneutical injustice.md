@@ -9,6 +9,8 @@ tags:
 
 **Hermeneutical injustice** is a subcategory of [epistemic injustice](thoughts/epistemic%20injustice.md) wherein one has no labels/common terminology to describe or explain experiences to others. Historically has been applied in the context of exclusion of marginalized groups from activities which shape the language we use.
 
+Identity affects experience, and experience makes a difference in our judgment.
+
 Hermeneutics is the theory and methodology of interpretation.
 
 > It is the injustice of having some significant area of one's social experience obscured from collective understanding owing to a structural identity prejudice in the collective hermeneutical resource
@@ -34,3 +36,9 @@ Positing that the sociality of the knower is epistemically significant
 	2. Related: language and [terminology](thoughts/terminology.md). Wittgenstein: "a language that in principle could be understood by only one person would not be a language at all"
 
 It is important to note that being marginally situated leads not to "different" knowledge, but, as Harding has argued, to more *objective* knowledge (Harding 1991, 138-163)
+
+The dominantly situated knower cannot step outside of her situatedness in order to experience the world as others do; however, she can learn to use epistemic resources developed from the experiences of marginalized knowers
+
+Willful hermeneutical ignorance: dominantly situated knower's continued engagement in the world while refusing to learn to use epistemic resources developed from marginalized situatedness
+
+The marginalized knower possesses a sort of [double-consciousness](thoughts/double-consciousness.md).

@@ -30,7 +30,9 @@ Built with: Hypercore, React, Ink, and Typescript
 
 [Site](https://quartz.jzhao.xyz/), [GitHub](https://github.com/jackyzha0/quartz)
 
-Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a YAML file to be rendered by some prefined templates with Hugo.
+Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a JSON file to be rendered by Hugo.
+
+Over 1.2k monthly users and 300+ forks on GitHub.
 
 Build with: Hugo, Obsidian, Github Pages, Go, SCSS, and JavaScript.
 

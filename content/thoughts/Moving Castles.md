@@ -17,7 +17,7 @@ Moving Castles should reflect the following principles (adapted from the [design
 1. Collective: many contributors share control through transparent and real-time governance mechanisms.
 2. Portable: the ability to move freely between platforms, standards and protocols, from private to public, without losing any value, knowledge, or lore in the process.
 3. Modular: ability to construct Moving Castles by creating, importing, and arranging composable parts together as a coherent whole while making these parts available for others to reuse and adapt.
-4. [Interoperable](thoughts/interoperability.md): ability to interact with other communities; communicating, playing games, and sharing knowledge & skills in order to help these communities become Moving Castles themselves.
+4. [Interoperable](thoughts/interoperability.md): ability to interact with other communities; communicating, playing [games](thoughts/games.md), and sharing knowledge & skills in order to help these communities become Moving Castles themselves.
 
 ## The Story of All Powerful Wizards
 [Source: A story of all powerful wizards - 20th of Nov 2021 @ 0xPARC Boston by *Justin Glibert*](https://www.youtube.com/watch?v=aFKy6QsbBz4)

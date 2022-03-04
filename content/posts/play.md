@@ -40,7 +40,7 @@ Play allows us to create environments where saying 'no' is okay. By definition, 
 Play is the catalyst that will enable the post-attention-economy society. But what do we do when we get there?
 
 ## The Grasshopper
-*Of all the things you could do in utopia, why would one play games?*
+*Of all the things you could do in utopia, why would one play [games](thoughts/games.md)?*
 
 *The Grasshopper* was a book unlike any I've ever read before. A talking grasshopper and his insect disciples convinced me, through [Socratic dialogue](https://www.thoughtco.com/socratic-dialogue-argumentation-1691972) nonetheless, that "refusing to work and insisting upon devoting himself exclusively to play" is a perfectly acceptable thing to embody.
 
