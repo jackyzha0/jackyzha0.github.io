@@ -21,7 +21,7 @@ Joining the counterculture rather than feeding into the status quo: [From Counte
 Immersion in the [virtual worlds](thoughts/virtual%20worlds.md) rather than reality?
 
 ## Quotes
-"The trouble is that we have a bad habit, encouraged by pedants and sophisticates, of considering happiness as something rather stupid. Only pain is intellectual, only evil interesting."
+"The trouble is that we have a bad habit, encouraged by pedants and sophisticates, of considering happiness as something rather stupid. Only [pain](thoughts/pain.md) is intellectual, only evil interesting."
 
  Some of them understand why, and some do not, but they all understand that their happiness, the beauty of their city, the tenderness of their friendships, the health of their children, the wisdom of their scholars, the skill of their makers, even the abundance of their harvest and the kindly weathers of their skies, depend wholly on this child’s abominable misery.
  

@@ -33,6 +33,8 @@ How do I unlearn the negative connotations associated with being selfish?
 
 "We tend to wear our ability to get by on little sleep as some sort of badge of honor that validates our work ethic. But what it really is is a profound failure of self-respect and of priorities. What could possibly be more important than your health and your sanity, from which all else springs?" [Source](https://www.themarginalian.org/2019/10/23/13-learnings-13-years/)
 
+See also: [pain](thoughts/pain.md)
+
 ## In Tech
 [Source: the technofuturist's oath by *Priya*](https://priyaghose.io/2021-09-03-the-technofuturists-oath/)
 
@@ -46,9 +48,10 @@ Does competition always kill positive-sum worlds?
 His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness -- caring about others.
 
 ## Porousness of the self
-Selfishness depends on what the definition of the self is. Expansions on the concept of 'self': 
+Selfishness depends on what the definition of the self is. Expansions on the concept of 'self':
 - [noosphere](https://en.wikipedia.org/wiki/Noosphere) as the extended self
 - [The Egg](https://www.youtube.com/watch?v=h6fcK_fRYaI) by Andy Weir + Kurzgesagt
+- [self-knowledge](thoughts/self-knowledge.md)
 
 ## Nice vs Kind
 *From Joice*

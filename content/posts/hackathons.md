@@ -84,7 +84,7 @@ But this playful front is not exactly as it seems. A [2017 study](https://busine
 
 100 hour work weeks and 'hustle culture' are becoming increasingly normalized by tech moguls like Elon Musk. Being constantly tired is somewhat of a [status icon](https://www.youtube.com/watch?v=_o7qjN3KF8U) as individuals boast about how little sleep they got.
 
-It has been disturbingly normalized and even celebrated that exhaustion is a sign of strength. Among a [global sleep-loss pandemic](https://www.theguardian.com/business-to-business/2017/dec/04/clocking-off-the-companies-introducing-nap-time-to-the-workplace), events like hackathons which push for attendees to stay up for lengths of 24 to 36 hours are particularly worrisome.
+It has been disturbingly normalized and even celebrated that [exhaustion is a sign of strength](thoughts/pain.md). Among a [global sleep-loss pandemic](https://www.theguardian.com/business-to-business/2017/dec/04/clocking-off-the-companies-introducing-nap-time-to-the-workplace), events like hackathons which push for attendees to stay up for lengths of 24 to 36 hours are particularly worrisome.
 
 I am viscerally reminded of sharing a hard gym floor with dozens of other sleep-deprived hackers, taking shifts to sleep so some people can stay up to work on the hack. Despite the timeboxed nature of hackathons, there is no reason purposefully staying up all night should be quintessential to the hackathon experience.
 
