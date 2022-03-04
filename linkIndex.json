@@ -71,6 +71,11 @@
       "/books": [
         {
           "source": "/books",
+          "target": "/thoughts/games",
+          "text": "Games: Agency as Art"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/The-Midnight-Library",
           "text": "The Midnight Library"
         },
@@ -717,6 +722,11 @@
         },
         {
           "source": "/posts/play",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/posts/play",
           "target": "/thoughts/fiction",
           "text": "shared fiction"
         },
@@ -870,7 +880,7 @@
       "/thoughts/Algorithms-of-Oppression": [
         {
           "source": "/thoughts/Algorithms-of-Oppression",
-          "target": "/thoughts/collections",
+          "target": "/thoughts/double-consciousness",
           "text": "double-consciousness"
         },
         {
@@ -1593,6 +1603,11 @@
         },
         {
           "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/Internet",
           "text": "Internet"
         }
@@ -1831,6 +1846,11 @@
       "/thoughts/The-Grasshopper": [
         {
           "source": "/thoughts/The-Grasshopper",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/The-Grasshopper",
           "target": "/thoughts/utopia",
           "text": "Utopia"
         },
@@ -2065,6 +2085,11 @@
         }
       ],
       "/thoughts/World-Seed": [
+        {
+          "source": "/thoughts/World-Seed",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
         {
           "source": "/thoughts/World-Seed",
           "target": "/thoughts/pace-layers",
@@ -2754,6 +2779,11 @@
         },
         {
           "source": "/thoughts/digital-commons",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/digital-commons",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "Whole Earth 'Lectronic Link (WELL)"
         },
@@ -2855,6 +2885,18 @@
           "source": "/thoughts/digital-permanence",
           "target": "/thoughts/context",
           "text": "context"
+        }
+      ],
+      "/thoughts/double-consciousness": [
+        {
+          "source": "/thoughts/double-consciousness",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
+        },
+        {
+          "source": "/thoughts/double-consciousness",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
         }
       ],
       "/thoughts/downward-causation": [
@@ -2991,6 +3033,16 @@
           "source": "/thoughts/epistemic-injustice",
           "target": "/thoughts/power",
           "text": "power"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "Hermeneutical Injustice"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/trust",
+          "text": "trust"
         },
         {
           "source": "/thoughts/epistemic-injustice",
@@ -3200,6 +3252,11 @@
       "/thoughts/game-design": [
         {
           "source": "/thoughts/game-design",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/game-design",
           "target": "/thoughts/teaching",
           "text": "Teaching"
         },
@@ -3304,6 +3361,43 @@
           "source": "/thoughts/game-theory",
           "target": "/thoughts/game-design",
           "text": "game design"
+        }
+      ],
+      "/thoughts/games": [
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/game-theory",
+          "text": "game theory"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/game-design",
+          "text": "game design"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/The-Grasshopper",
+          "text": "The Grasshopper"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/quantization",
+          "text": "Quantization"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/The-Grasshopper",
+          "text": "The Grasshopper"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/Goodharts-Law",
+          "text": "Goodhart's Law"
         }
       ],
       "/thoughts/generational-learning": [
@@ -3464,6 +3558,11 @@
           "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/terminology",
           "text": "terminology"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/double-consciousness",
+          "text": "double-consciousness"
         }
       ],
       "/thoughts/human-centered-design": [
@@ -4315,6 +4414,13 @@
           "source": "/thoughts/learning",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
+        }
+      ],
+      "/thoughts/library": [
+        {
+          "source": "/thoughts/library",
+          "target": "/thoughts/double-consciousness",
+          "text": "double-consciousness"
         }
       ],
       "/thoughts/life": [
@@ -5538,6 +5644,11 @@
           "source": "/thoughts/soulbound",
           "target": "/thoughts/game-design",
           "text": "Game design"
+        },
+        {
+          "source": "/thoughts/soulbound",
+          "target": "/thoughts/games",
+          "text": "games"
         }
       ],
       "/thoughts/symbolic-system": [
@@ -7024,6 +7135,11 @@
           "text": "Goodhart's Law"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/Goodharts-Law",
+          "text": "Goodhart's Law"
+        },
+        {
           "source": "/thoughts/governance",
           "target": "/thoughts/Goodharts-Law",
           "text": "Goodhart's Law"
@@ -7659,6 +7775,16 @@
           "text": "Grasshopper"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/The-Grasshopper",
+          "text": "The Grasshopper"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/The-Grasshopper",
+          "text": "The Grasshopper"
+        },
+        {
           "source": "/thoughts/play",
           "target": "/thoughts/The-Grasshopper",
           "text": "The Grasshopper"
@@ -8236,13 +8362,6 @@
           "source": "/thoughts/tragedy-of-the-commons",
           "target": "/thoughts/climate-tech",
           "text": "climate tech"
-        }
-      ],
-      "/thoughts/collections": [
-        {
-          "source": "/thoughts/Algorithms-of-Oppression",
-          "target": "/thoughts/collections",
-          "text": "double-consciousness"
         }
       ],
       "/thoughts/colour": [
@@ -9012,6 +9131,23 @@
           "text": "digital permanence"
         }
       ],
+      "/thoughts/double-consciousness": [
+        {
+          "source": "/thoughts/Algorithms-of-Oppression",
+          "target": "/thoughts/double-consciousness",
+          "text": "double-consciousness"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/double-consciousness",
+          "text": "double-consciousness"
+        },
+        {
+          "source": "/thoughts/library",
+          "target": "/thoughts/double-consciousness",
+          "text": "double-consciousness"
+        }
+      ],
       "/thoughts/economics": [
         {
           "source": "/thoughts/game-design",
@@ -9200,6 +9336,11 @@
         }
       ],
       "/thoughts/epistemic-injustice": [
+        {
+          "source": "/thoughts/double-consciousness",
+          "target": "/thoughts/epistemic-injustice",
+          "text": "epistemic injustice"
+        },
         {
           "source": "/thoughts/epistemology",
           "target": "/thoughts/epistemic-injustice",
@@ -9604,6 +9745,11 @@
           "text": "game design"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/game-design",
+          "text": "game design"
+        },
+        {
           "source": "/thoughts/knowledge-distillation",
           "target": "/thoughts/game-design",
           "text": "games"
@@ -9631,6 +9777,11 @@
           "text": "Game Theory"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/game-theory",
+          "text": "game theory"
+        },
+        {
           "source": "/thoughts/security",
           "target": "/thoughts/game-theory",
           "text": "game theory"
@@ -9639,6 +9790,48 @@
           "source": "/thoughts/trust",
           "target": "/thoughts/game-theory",
           "text": "game theory and trust"
+        }
+      ],
+      "/thoughts/games": [
+        {
+          "source": "/books",
+          "target": "/thoughts/games",
+          "text": "Games: Agency as Art"
+        },
+        {
+          "source": "/posts/play",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/The-Grasshopper",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/World-Seed",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/game-design",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/soulbound",
+          "target": "/thoughts/games",
+          "text": "games"
         }
       ],
       "/thoughts/generational-learning": [
@@ -9746,6 +9939,16 @@
           "source": "/posts/new-words",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "hermeneutical injustice"
+        },
+        {
+          "source": "/thoughts/double-consciousness",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "Hermeneutical Injustice"
         },
         {
           "source": "/thoughts/quantization",
@@ -9940,6 +10143,11 @@
       "/thoughts/information": [
         {
           "source": "/thoughts/data-distributions",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
+          "source": "/thoughts/games",
           "target": "/thoughts/information",
           "text": "information"
         },
@@ -11397,6 +11605,11 @@
           "text": "quantify"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/quantization",
+          "text": "Quantization"
+        },
+        {
           "source": "/thoughts/instrumentalism",
           "target": "/thoughts/quantization",
           "text": "quantization"
@@ -12030,6 +12243,11 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
           "source": "/thoughts/epistemology",
           "target": "/thoughts/trust",
           "text": "trust"
@@ -12446,6 +12664,11 @@
       "source": "/",
       "target": "/posts/a-failure-resume",
       "text": "Things that didn't quite turn out right"
+    },
+    {
+      "source": "/books",
+      "target": "/thoughts/games",
+      "text": "Games: Agency as Art"
     },
     {
       "source": "/books",
@@ -13059,6 +13282,11 @@
     },
     {
       "source": "/posts/play",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/posts/play",
       "target": "/thoughts/fiction",
       "text": "shared fiction"
     },
@@ -13204,7 +13432,7 @@
     },
     {
       "source": "/thoughts/Algorithms-of-Oppression",
-      "target": "/thoughts/collections",
+      "target": "/thoughts/double-consciousness",
       "text": "double-consciousness"
     },
     {
@@ -13859,6 +14087,11 @@
     },
     {
       "source": "/thoughts/Moving-Castles",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/thoughts/Moving-Castles",
       "target": "/thoughts/Internet",
       "text": "Internet"
     },
@@ -14069,6 +14302,11 @@
     },
     {
       "source": "/thoughts/The-Grasshopper",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/thoughts/The-Grasshopper",
       "target": "/thoughts/utopia",
       "text": "Utopia"
     },
@@ -14276,6 +14514,11 @@
       "source": "/thoughts/Vanilla-Ice-Cream-effect",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/World-Seed",
+      "target": "/thoughts/games",
+      "text": "games"
     },
     {
       "source": "/thoughts/World-Seed",
@@ -14894,6 +15137,11 @@
     },
     {
       "source": "/thoughts/digital-commons",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/thoughts/digital-commons",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "Whole Earth 'Lectronic Link (WELL)"
     },
@@ -14991,6 +15239,16 @@
       "source": "/thoughts/digital-permanence",
       "target": "/thoughts/context",
       "text": "context"
+    },
+    {
+      "source": "/thoughts/double-consciousness",
+      "target": "/thoughts/hermeneutical-injustice",
+      "text": "hermeneutical injustice"
+    },
+    {
+      "source": "/thoughts/double-consciousness",
+      "target": "/thoughts/epistemic-injustice",
+      "text": "epistemic injustice"
     },
     {
       "source": "/thoughts/downward-causation",
@@ -15111,6 +15369,16 @@
       "source": "/thoughts/epistemic-injustice",
       "target": "/thoughts/power",
       "text": "power"
+    },
+    {
+      "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/hermeneutical-injustice",
+      "text": "Hermeneutical Injustice"
+    },
+    {
+      "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/trust",
+      "text": "trust"
     },
     {
       "source": "/thoughts/epistemic-injustice",
@@ -15294,6 +15562,11 @@
     },
     {
       "source": "/thoughts/game-design",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/thoughts/game-design",
       "target": "/thoughts/teaching",
       "text": "Teaching"
     },
@@ -15396,6 +15669,41 @@
       "source": "/thoughts/game-theory",
       "target": "/thoughts/game-design",
       "text": "game design"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/game-theory",
+      "text": "game theory"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/game-design",
+      "text": "game design"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/The-Grasshopper",
+      "text": "The Grasshopper"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/quantization",
+      "text": "Quantization"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/information",
+      "text": "information"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/The-Grasshopper",
+      "text": "The Grasshopper"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/Goodharts-Law",
+      "text": "Goodhart's Law"
     },
     {
       "source": "/thoughts/generational-learning",
@@ -15546,6 +15854,11 @@
       "source": "/thoughts/hermeneutical-injustice",
       "target": "/thoughts/terminology",
       "text": "terminology"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/double-consciousness",
+      "text": "double-consciousness"
     },
     {
       "source": "/thoughts/human-centered-design",
@@ -16341,6 +16654,11 @@
       "source": "/thoughts/learning",
       "target": "/thoughts/social-contracts",
       "text": "social contracts"
+    },
+    {
+      "source": "/thoughts/library",
+      "target": "/thoughts/double-consciousness",
+      "text": "double-consciousness"
     },
     {
       "source": "/thoughts/life",
@@ -17456,6 +17774,11 @@
       "source": "/thoughts/soulbound",
       "target": "/thoughts/game-design",
       "text": "Game design"
+    },
+    {
+      "source": "/thoughts/soulbound",
+      "target": "/thoughts/games",
+      "text": "games"
     },
     {
       "source": "/thoughts/symbolic-system",
