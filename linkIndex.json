@@ -1384,6 +1384,23 @@
           "text": "maintenance"
         }
       ],
+      "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT": [
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        }
+      ],
       "/thoughts/Interact-Circle-W21": [
         {
           "source": "/thoughts/Interact-Circle-W21",
@@ -1678,6 +1695,13 @@
           "text": "Internet"
         }
       ],
+      "/thoughts/Neural-Correlates-of-Consciousness-NCC": [
+        {
+          "source": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "target": "/posts/ai-systems",
+          "text": "AI systems"
+        }
+      ],
       "/thoughts/Nozicks-Experience-Machine": [
         {
           "source": "/thoughts/Nozicks-Experience-Machine",
@@ -1824,6 +1848,18 @@
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/Algorithms-of-Oppression",
           "text": "Algorithms of Oppression"
+        }
+      ],
+      "/thoughts/Stream-of-Consciousness": [
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic instruments"
+        },
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "NCC"
         }
       ],
       "/thoughts/The-Dragon-and-the-bridge": [
@@ -2528,28 +2564,38 @@
         },
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/Buddhism",
+          "text": "Buddhism"
+        },
+        {
+          "source": "/thoughts/consciousness",
           "target": "/thoughts/The-Upanisads",
           "text": "The Upanisads"
         },
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/qualia",
-          "text": "Qualia"
-        },
-        {
-          "source": "/thoughts/consciousness",
-          "target": "/thoughts/emergent-behaviour",
-          "text": "emergent behaviour"
-        },
-        {
-          "source": "/thoughts/consciousness",
-          "target": "/posts/ai-systems",
-          "text": "AI systems"
+          "text": "qualia"
         },
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "Neural Correlates of Consciousness (NCC)"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "text": "Integrated Information Theory of Consciousness (IIT)"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Stream-of-Consciousness",
+          "text": "Stream of Consciousness"
         }
       ],
       "/thoughts/consensus": [
@@ -5555,6 +5601,13 @@
           "text": "game theory"
         }
       ],
+      "/thoughts/self-knowledge": [
+        {
+          "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/emergent-behaviour",
+          "text": "emergent behaviour"
+        }
+      ],
       "/thoughts/selfish": [
         {
           "source": "/thoughts/selfish",
@@ -6347,12 +6400,12 @@
           "text": "AI systems"
         },
         {
-          "source": "/thoughts/automation",
+          "source": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
           "target": "/posts/ai-systems",
           "text": "AI systems"
         },
         {
-          "source": "/thoughts/consciousness",
+          "source": "/thoughts/automation",
           "target": "/posts/ai-systems",
           "text": "AI systems"
         },
@@ -6782,6 +6835,11 @@
         }
       ],
       "/thoughts/Buddhism": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Buddhism",
+          "text": "Buddhism"
+        },
         {
           "source": "/thoughts/epistemology",
           "target": "/thoughts/Buddhism",
@@ -7248,6 +7306,13 @@
           "text": "IP addresses"
         }
       ],
+      "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "text": "Integrated Information Theory of Consciousness (IIT)"
+        }
+      ],
       "/thoughts/Interact-Circle-W21": [
         {
           "source": "/posts/play",
@@ -7606,6 +7671,18 @@
           "text": "network layer"
         }
       ],
+      "/thoughts/Neural-Correlates-of-Consciousness-NCC": [
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "NCC"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "Neural Correlates of Consciousness (NCC)"
+        }
+      ],
       "/thoughts/Nozicks-Experience-Machine": [
         {
           "source": "/thoughts/semantics",
@@ -7749,6 +7826,13 @@
           "source": "/thoughts/bias",
           "target": "/thoughts/Social-Bias-in-Information-Retrieval",
           "text": "Social Bias in Information Retrieval"
+        }
+      ],
+      "/thoughts/Stream-of-Consciousness": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Stream-of-Consciousness",
+          "text": "Stream of Consciousness"
         }
       ],
       "/thoughts/The-Dragon-and-the-bridge": [
@@ -8490,6 +8574,11 @@
       ],
       "/thoughts/consciousness": [
         {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
           "source": "/thoughts/Knowledge-Argument",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
@@ -9211,11 +9300,6 @@
           "text": "emergent behaviour"
         },
         {
-          "source": "/thoughts/consciousness",
-          "target": "/thoughts/emergent-behaviour",
-          "text": "emergent behaviour"
-        },
-        {
           "source": "/thoughts/emptiness",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent systems"
@@ -9232,6 +9316,11 @@
         },
         {
           "source": "/thoughts/intentional-arrangement",
+          "target": "/thoughts/emergent-behaviour",
+          "text": "emergent behaviour"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent behaviour"
         }
@@ -9362,6 +9451,11 @@
           "source": "/thoughts/Descartes-Meditations",
           "target": "/thoughts/epistemology",
           "text": "epistemology"
+        },
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic instruments"
         },
         {
           "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -10141,6 +10235,11 @@
         }
       ],
       "/thoughts/information": [
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
         {
           "source": "/thoughts/data-distributions",
           "target": "/thoughts/information",
@@ -11560,7 +11659,7 @@
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/qualia",
-          "text": "Qualia"
+          "text": "qualia"
         },
         {
           "source": "/thoughts/philosophical-realism",
@@ -11809,6 +11908,11 @@
         }
       ],
       "/thoughts/self-knowledge": [
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        },
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/self-knowledge",
@@ -13886,6 +13990,21 @@
       "text": "maintenance"
     },
     {
+      "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "target": "/thoughts/information",
+      "text": "information"
+    },
+    {
+      "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "target": "/thoughts/self-knowledge",
+      "text": "self-knowledge"
+    },
+    {
       "source": "/thoughts/Interact-Circle-W21",
       "target": "/posts/play",
       "text": "play"
@@ -14156,6 +14275,11 @@
       "text": "Internet"
     },
     {
+      "source": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+      "target": "/posts/ai-systems",
+      "text": "AI systems"
+    },
+    {
       "source": "/thoughts/Nozicks-Experience-Machine",
       "target": "/thoughts/virtual-worlds",
       "text": "virtual worlds"
@@ -14284,6 +14408,16 @@
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/Algorithms-of-Oppression",
       "text": "Algorithms of Oppression"
+    },
+    {
+      "source": "/thoughts/Stream-of-Consciousness",
+      "target": "/thoughts/epistemology",
+      "text": "epistemic instruments"
+    },
+    {
+      "source": "/thoughts/Stream-of-Consciousness",
+      "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+      "text": "NCC"
     },
     {
       "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -14912,28 +15046,38 @@
     },
     {
       "source": "/thoughts/consciousness",
+      "target": "/thoughts/Buddhism",
+      "text": "Buddhism"
+    },
+    {
+      "source": "/thoughts/consciousness",
       "target": "/thoughts/The-Upanisads",
       "text": "The Upanisads"
     },
     {
       "source": "/thoughts/consciousness",
       "target": "/thoughts/qualia",
-      "text": "Qualia"
-    },
-    {
-      "source": "/thoughts/consciousness",
-      "target": "/thoughts/emergent-behaviour",
-      "text": "emergent behaviour"
-    },
-    {
-      "source": "/thoughts/consciousness",
-      "target": "/posts/ai-systems",
-      "text": "AI systems"
+      "text": "qualia"
     },
     {
       "source": "/thoughts/consciousness",
       "target": "/thoughts/self-knowledge",
       "text": "self-knowledge"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+      "text": "Neural Correlates of Consciousness (NCC)"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "text": "Integrated Information Theory of Consciousness (IIT)"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Stream-of-Consciousness",
+      "text": "Stream of Consciousness"
     },
     {
       "source": "/thoughts/consensus",
@@ -17699,6 +17843,11 @@
       "source": "/thoughts/security",
       "target": "/thoughts/game-theory",
       "text": "game theory"
+    },
+    {
+      "source": "/thoughts/self-knowledge",
+      "target": "/thoughts/emergent-behaviour",
+      "text": "emergent behaviour"
     },
     {
       "source": "/thoughts/selfish",
