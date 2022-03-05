@@ -273,6 +273,10 @@ article {
   position: absolute;
   width: 17em;
 
+  @media all and (max-width: 600px) {
+    display: none;
+  }
+
   background-color: var(--light);
   padding: 1em;
   border: 1px solid var(--outlinegray);

@@ -6,9 +6,17 @@ tags:
 - technical
 ---
 
+- data provenance
+	- https://www.cs.cmu.edu/~NatProg/whyline.html
+- how do we design better UI that reflects true application state?
+	- https://www.scattered-thoughts.net/writing/relational-ui/
+	- CRDTs as reducers over event-logs... that produce a view?
 - data lensing for databases
 	- using https://www.inkandswitch.com/cambria/ maybe?
 	- some cool [interoperability](thoughts/interoperability.md) things
+	- CRDTs for databases? https://archive.jlongster.com/using-crdts-in-the-wild
+		- https://cse.buffalo.edu/tech-reports/2014-04.pdf
+	- distributed state
 -   app agnostic channel-based/event-driven communication using hypercore
 	- e.g. wait for message of type x
 	- hypercore as a universal message bus
@@ -25,7 +33,6 @@ tags:
 	-   permanence outside of it
 	-   edit only the last message you send
 -   recaptcha model for moderation / proof of humanity
--   library of decentralized data structures
 -  website inspo
 	- fun interactions
 		- https://victoiredouy.com/about
@@ -58,7 +65,7 @@ tags:
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - Discord bot for interacting with DAOs
 - aws for web3
-- tool to [interoperability](thoughts/interoperability.md) between different graph representations
+- tool to [interop](thoughts/interoperability.md) between different graph representations
 	-   e.g. Notion to Roam to Obsidian
 	-   CommonGraph??
 - sound-based hashing for cryptographic verification
