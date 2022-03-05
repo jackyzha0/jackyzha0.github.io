@@ -17,6 +17,26 @@ Quotes from *The Principles of Psychology* by William James
 
 See also: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md)
 
+## Types of thought
+- Spontaneous thought
+	- Weak automatic and deliberate constraints
+	- $\textrm{DN}_\textrm{MTL}$ (default network medial temporal lobe) exerts relatively strong diversifying influence on the stream of thought
+- Rumination and obsessive thought (internally oriented thought)
+	- Strong automatic constraints from $\textrm{DN}_\textrm{CORE}$
+- Goal-directed thought
+	- Strong deliberate constraints from the frontoparietal control network ($\textrm{FPCN}$)
+
+### Spontaneous thought
+- Unplanned, much like mind-wandering
+- Contrast is between planned/deliberate thought versus unplanned or spontaneous thought
+
+Guided Thought
+- Counterfactual Aspect
+	- One could alter their behaviour to bring things back on course
+- Normative Aspect
+	- Implies the monitoring and correcting of behaviour in relation to some norms
+- Both goal-directed thinking and rumination fall under this category
+
 ## Abhidharma Buddhist Philosophy
 - Abhidharmikas agree that the mental stream is always changing
 - Appears to flow continuously only to the untrained observer. Deeper examination indicates that the stream of consciousness is made up of very short-lived and discrete moments of awareness
