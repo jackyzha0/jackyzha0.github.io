@@ -13,6 +13,15 @@ A good standard is if I can hit 'export all data' on a platform and I can comple
 
 Related: [tools for thought](thoughts/tools%20for%20thought.md)
 
+## Noun-based Interoperability
+Source: [Riffle: Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
+
+> Since the introduction of object-oriented programming, most interoperability has been “verb-based”: that is, based on having programs call into each other using APIs. Indeed, new programmers are often taught to hide data behind APIs as much as possible in order to encapsulate state. Unfortunately, [verb-based APIs create an unfortunate n-to-n problem](https://twitter.com/andy_matuschak/status/1452438198668328960): every app needs to know how to call the APIs of every other app. In contrast, data-based interoperability can use the shared data directly: once an app knows how to read a data format, it can read that data regardless of which app produced it.
+
+How do we create sources of truth that are *legible outside of the application*, possibly in ways that the application developer never anticipated?
+
+(see: data lensing in [idea list](thoughts/idea%20list.md))
+
 ## Beyond Windows
 [Source: Universal data portability by *Alexander Obenauer*](https://alexanderobenauer.com/labnotes/002/)
 
