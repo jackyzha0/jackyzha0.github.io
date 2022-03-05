@@ -479,6 +479,11 @@
         },
         {
           "source": "/posts/hackathons",
+          "target": "/thoughts/pain",
+          "text": "exhaustion is a sign of strength"
+        },
+        {
+          "source": "/posts/hackathons",
           "target": "/thoughts/play",
           "text": "play"
         },
@@ -1615,6 +1620,11 @@
         },
         {
           "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/metalabel",
+          "text": "Metalabel"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/interoperability",
           "text": "Interoperable"
         },
@@ -1853,6 +1863,16 @@
       "/thoughts/Stream-of-Consciousness": [
         {
           "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/pace-layers",
+          "text": "pace"
+        },
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
           "target": "/thoughts/epistemology",
           "text": "epistemic instruments"
         },
@@ -1957,6 +1977,11 @@
           "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
           "target": "/thoughts/virtual-worlds",
           "text": "virtual worlds"
+        },
+        {
+          "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
+          "target": "/thoughts/pain",
+          "text": "pain"
         }
       ],
       "/thoughts/Theory-of-Niche-Construction": [
@@ -5618,6 +5643,16 @@
           "source": "/thoughts/selfish",
           "target": "/thoughts/play",
           "text": "play"
+        },
+        {
+          "source": "/thoughts/selfish",
+          "target": "/thoughts/pain",
+          "text": "pain"
+        },
+        {
+          "source": "/thoughts/selfish",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
         }
       ],
       "/thoughts/semantics": [
@@ -7523,6 +7558,11 @@
       "/thoughts/Mangrove-Theory-of-the-Internet": [
         {
           "source": "/thoughts/Internet",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/Stream-of-Consciousness",
           "target": "/thoughts/Mangrove-Theory-of-the-Internet",
           "text": "Mangrove Theory of the Internet"
         },
@@ -10926,6 +10966,13 @@
           "text": "mental models"
         }
       ],
+      "/thoughts/metalabel": [
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/metalabel",
+          "text": "Metalabel"
+        }
+      ],
       "/thoughts/mimetic": [
         {
           "source": "/thoughts/academia",
@@ -11206,6 +11253,11 @@
           "text": "pace layers"
         },
         {
+          "source": "/thoughts/Stream-of-Consciousness",
+          "target": "/thoughts/pace-layers",
+          "text": "pace"
+        },
+        {
           "source": "/thoughts/World-Seed",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
@@ -11221,6 +11273,23 @@
           "source": "/thoughts/human-computer-interaction",
           "target": "/thoughts/page-layout",
           "text": "Page Layout"
+        }
+      ],
+      "/thoughts/pain": [
+        {
+          "source": "/posts/hackathons",
+          "target": "/thoughts/pain",
+          "text": "exhaustion is a sign of strength"
+        },
+        {
+          "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
+          "target": "/thoughts/pain",
+          "text": "pain"
+        },
+        {
+          "source": "/thoughts/selfish",
+          "target": "/thoughts/pain",
+          "text": "pain"
         }
       ],
       "/thoughts/phenomenology": [
@@ -11915,6 +11984,11 @@
         },
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/selfish",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
         }
@@ -13151,6 +13225,11 @@
     },
     {
       "source": "/posts/hackathons",
+      "target": "/thoughts/pain",
+      "text": "exhaustion is a sign of strength"
+    },
+    {
+      "source": "/posts/hackathons",
       "target": "/thoughts/play",
       "text": "play"
     },
@@ -14201,6 +14280,11 @@
     },
     {
       "source": "/thoughts/Moving-Castles",
+      "target": "/thoughts/metalabel",
+      "text": "Metalabel"
+    },
+    {
+      "source": "/thoughts/Moving-Castles",
       "target": "/thoughts/interoperability",
       "text": "Interoperable"
     },
@@ -14411,6 +14495,16 @@
     },
     {
       "source": "/thoughts/Stream-of-Consciousness",
+      "target": "/thoughts/pace-layers",
+      "text": "pace"
+    },
+    {
+      "source": "/thoughts/Stream-of-Consciousness",
+      "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+      "text": "Mangrove Theory of the Internet"
+    },
+    {
+      "source": "/thoughts/Stream-of-Consciousness",
       "target": "/thoughts/epistemology",
       "text": "epistemic instruments"
     },
@@ -14503,6 +14597,11 @@
       "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
       "target": "/thoughts/virtual-worlds",
       "text": "virtual worlds"
+    },
+    {
+      "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
+      "target": "/thoughts/pain",
+      "text": "pain"
     },
     {
       "source": "/thoughts/Theory-of-Niche-Construction",
@@ -17858,6 +17957,16 @@
       "source": "/thoughts/selfish",
       "target": "/thoughts/play",
       "text": "play"
+    },
+    {
+      "source": "/thoughts/selfish",
+      "target": "/thoughts/pain",
+      "text": "pain"
+    },
+    {
+      "source": "/thoughts/selfish",
+      "target": "/thoughts/self-knowledge",
+      "text": "self-knowledge"
     },
     {
       "source": "/thoughts/semantics",
