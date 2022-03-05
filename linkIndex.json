@@ -4324,6 +4324,11 @@
         },
         {
           "source": "/thoughts/interoperability",
+          "target": "/thoughts/idea-list",
+          "text": "idea list"
+        },
+        {
+          "source": "/thoughts/interoperability",
           "target": "/thoughts/interaction-design",
           "text": "interaction design"
         }
@@ -10154,6 +10159,11 @@
           "source": "/thoughts/aperture-problem",
           "target": "/thoughts/idea-list",
           "text": "idea"
+        },
+        {
+          "source": "/thoughts/interoperability",
+          "target": "/thoughts/idea-list",
+          "text": "idea list"
         },
         {
           "source": "/thoughts/knowledge-distillation",
@@ -16747,6 +16757,11 @@
       "source": "/thoughts/interoperability",
       "target": "/thoughts/tools-for-thought",
       "text": "tools for thought"
+    },
+    {
+      "source": "/thoughts/interoperability",
+      "target": "/thoughts/idea-list",
+      "text": "idea list"
     },
     {
       "source": "/thoughts/interoperability",

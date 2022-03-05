@@ -448,7 +448,7 @@ if (!doNotTrack) {
     <h1 class="title">Software Principles</h1>
     <article>
       <p class="meta">
-          Last updated February 21, 2022
+          Last updated March 5, 2022
       </p>
       <ul class="tags">
     
@@ -464,13 +464,13 @@ if (!doNotTrack) {
 <a href="https://urbit.org/docs/development/precepts" rel="noopener">Urbit Precepts</a></p>
 <ol>
 <li>Local first. Decentralized/distributed systems second. Avoid hosting like the plague. Make self-hosting easy</li>
+<li>Apps should be treated like queries &ndash; stateless. Local state should be avoided as much as possible, database is the source of truth.</li>
 <li>There is a latent cost to new features: 
 
 
 <a href="/thoughts/maintenance" rel="noopener" class="internal-link" data-src="/thoughts/maintenance">maintenance</a></li>
 <li>Design with the goal of making atomic and reusable libraries</li>
 <li>Heuristics should only be used where determinism is infeasible</li>
-<li>Command Query Responsibility Segregation (CQRS)&ndash; Don&rsquo;t make the server do reads if the client can do it safely</li>
 <li>Code courageously. &ldquo;It&rsquo;s natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right.&rdquo;</li>
 </ol>
 
