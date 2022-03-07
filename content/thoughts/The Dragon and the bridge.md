@@ -14,7 +14,7 @@ tags:
 ---
 
 - **D:** the dragon guarding the bridge
-- **U:** Uddyotakara, a philosopher in the Nyāya school of philosophy, running for their life from wolves. A proponent of [philosophical realism](thoughts/philosophical%20realism.md)
+- **U:** Uddyotakara, a philosopher in the [Nyāya](thoughts/Nyāya.md) school of philosophy, running for their life from wolves. A proponent of [philosophical realism](thoughts/philosophical%20realism.md)
 
 **U:** Great dragon! Please let me pass you so I can cross the bridge.
 

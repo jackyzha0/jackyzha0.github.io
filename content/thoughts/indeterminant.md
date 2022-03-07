@@ -11,7 +11,7 @@ Vācaspati Miśra's *Bhāmatī*, a commentary on Śamkara's *Brahmasū-trabhāsy
 
 In this chapter/section, objects of erroneous cognition are used to show how the world as it is experienced can neither be denied an independent status nor established as having one. The key idea is the 'indeterminate' state as to their ontological status.
 
-Vācaspati does not doubt the correctness of the Nyāya argument for [philosophical realism](thoughts/philosophical%20realism.md) but more so its completeness. I have cognition of a white horse, not of 'white' and of 'horse'. Vācaspati argues that the sum is greater than the whole -- it is not sufficient that a description of its constituent elements ('this' and 'silver') entirely constitute the unitary object of cognition ('this is silver').
+Vācaspati does not doubt the correctness of the [Nyāya](thoughts/Nyāya.md) argument for [philosophical realism](thoughts/philosophical%20realism.md) but more so its completeness. I have cognition of a white horse, not of 'white' and of 'horse'. Vācaspati argues that the sum is greater than the whole -- it is not sufficient that a description of its constituent elements ('this' and 'silver') entirely constitute the unitary object of cognition ('this is silver').
 
 ## Cognition-Object relationship
 The cognition-object relationship here refers to one about [representational](thoughts/representation.md) content.
@@ -77,7 +77,7 @@ A: *It is possible to determine the existential status of objects of cognition*.
 We first define some terminology. The cognition-object relationship here refers to one about representational content. Representation, in this context, means a cognitive state of being 'of' or 'about' the object. Ram-Prasad uses a specific notation to express these relations:
 - $\alpha$ is the object of cognition ('this thing', qualificand, thing being distinguished)
 - $F$ is what it is cognised as (the concept, content of thought, the distinguisher)
-Here, Vācaspati does *not* disagree with Nyāya in terms of recognizing objects of cognition as existing independently of consciousness.
+Here, Vācaspati does *not* disagree with [Nyāya](thoughts/Nyāya.md) in terms of recognizing objects of cognition as existing independently of consciousness.
 
 B: The second part posits that A implies the ability to *determine the validity or invalidity of particular cognitions.
 
