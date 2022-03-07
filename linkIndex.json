@@ -76,6 +76,11 @@
         },
         {
           "source": "/books",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "In Over Our Heads: The Mental Demands of Modern Life"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/The-Midnight-Library",
           "text": "The Midnight Library"
         },
@@ -1719,6 +1724,28 @@
           "text": "virtual worlds"
         }
       ],
+      "/thoughts/Nyāya": [
+        {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/philosophical-realism",
+          "text": "philosophical realism"
+        },
+        {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/testimony",
+          "text": "testimony"
+        },
+        {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/Descartes-Meditations",
+          "text": "Descartes' Dream Argument"
+        }
+      ],
       "/thoughts/Physical-Layer": [
         {
           "source": "/thoughts/Physical-Layer",
@@ -1811,6 +1838,28 @@
           "text": "effective altruism"
         }
       ],
+      "/thoughts/Root-Verses-on-the-Middle-Way-MMK": [
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/Buddhism",
+          "text": "Buddhist"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/phenomenology",
+          "text": "phenomenologist"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        }
+      ],
       "/thoughts/Search-Diary": [
         {
           "source": "/thoughts/Search-Diary",
@@ -1887,6 +1936,11 @@
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/epistemology",
           "text": "epistemology"
+        },
+        {
+          "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
         },
         {
           "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -3107,6 +3161,11 @@
         },
         {
           "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/testimony",
+          "text": "Testimonial"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "Hermeneutical Injustice"
         },
@@ -3129,8 +3188,8 @@
       "/thoughts/epistemology": [
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/indeterminant",
-          "text": "indeterminancy"
+          "target": "/thoughts/truth",
+          "text": "truth"
         },
         {
           "source": "/thoughts/epistemology",
@@ -3139,43 +3198,48 @@
         },
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/Buddhism",
-          "text": "Buddhist"
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
         },
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
+          "target": "/thoughts/indeterminant",
+          "text": "indeterminancy"
         },
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/phenomenology",
-          "text": "phenomenologist"
+          "target": "/thoughts/testimony",
+          "text": "testimony"
         },
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
+          "target": "/thoughts/qualia",
+          "text": "qualia"
         },
         {
           "source": "/thoughts/epistemology",
-          "target": "/thoughts/The-Dragon-and-the-bridge",
-          "text": "The Dragon and the bridge"
-        },
-        {
-          "source": "/thoughts/epistemology",
-          "target": "/thoughts/philosophical-realism",
-          "text": "philosophical realism"
-        },
-        {
-          "source": "/thoughts/epistemology",
-          "target": "/thoughts/trust",
-          "text": "trust"
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
         },
         {
           "source": "/thoughts/epistemology",
           "target": "/thoughts/Descartes-Meditations",
-          "text": "Descartes' Dream Argument"
+          "text": "Descartes' Meditations"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Knowledge-Argument",
+          "text": "Knowledge Argument"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "text": "Root Verses on the Middle Way (MMK)"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
         }
       ],
       "/thoughts/ethereum": [
@@ -3824,6 +3888,11 @@
       "/thoughts/indeterminant": [
         {
           "source": "/thoughts/indeterminant",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/indeterminant",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
         },
@@ -3836,6 +3905,11 @@
           "source": "/thoughts/indeterminant",
           "target": "/thoughts/Twin-Earth-Argument",
           "text": "Twin Earth Argument"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
         }
       ],
       "/thoughts/information": [
@@ -5817,6 +5891,28 @@
           "text": "Sapir-Whorf"
         }
       ],
+      "/thoughts/testimony": [
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/Reductionism",
+          "text": "Reductionism"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
+        }
+      ],
       "/thoughts/tools-for-thought": [
         {
           "source": "/thoughts/tools-for-thought",
@@ -6876,14 +6972,14 @@
       ],
       "/thoughts/Buddhism": [
         {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/Buddhism",
+          "text": "Buddhist"
+        },
+        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Buddhism",
           "text": "Buddhism"
-        },
-        {
-          "source": "/thoughts/epistemology",
-          "target": "/thoughts/Buddhism",
-          "text": "Buddhist"
         },
         {
           "source": "/thoughts/phenomenology",
@@ -6967,6 +7063,11 @@
       ],
       "/thoughts/Descartes-Meditations": [
         {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/Descartes-Meditations",
+          "text": "Descartes' Dream Argument"
+        },
+        {
           "source": "/thoughts/The-Upanisads",
           "target": "/thoughts/Descartes-Meditations",
           "text": "Cartesian Realism"
@@ -6974,7 +7075,7 @@
         {
           "source": "/thoughts/epistemology",
           "target": "/thoughts/Descartes-Meditations",
-          "text": "Descartes' Dream Argument"
+          "text": "Descartes' Meditations"
         },
         {
           "source": "/thoughts/trust",
@@ -7487,6 +7588,11 @@
           "source": "/thoughts/Hard-problem-of-consciousness",
           "target": "/thoughts/Knowledge-Argument",
           "text": "Knowledge Argument"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Knowledge-Argument",
+          "text": "Knowledge Argument"
         }
       ],
       "/thoughts/Lindy-effect": [
@@ -7740,6 +7846,33 @@
           "text": "Nozick's Experience Machine"
         }
       ],
+      "/thoughts/Ny%C4%81ya": [
+        {
+          "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        }
+      ],
       "/thoughts/Physical-Layer": [
         {
           "source": "/thoughts/internet-computing",
@@ -7857,6 +7990,18 @@
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/Reductionism",
           "text": "reductionist"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/Reductionism",
+          "text": "Reductionism"
+        }
+      ],
+      "/thoughts/Root-Verses-on-the-Middle-Way-MMK": [
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "text": "Root Verses on the Middle Way (MMK)"
         }
       ],
       "/thoughts/Search-Diary": [
@@ -7878,13 +8023,6 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Stream-of-Consciousness",
           "text": "Stream of Consciousness"
-        }
-      ],
-      "/thoughts/The-Dragon-and-the-bridge": [
-        {
-          "source": "/thoughts/epistemology",
-          "target": "/thoughts/The-Dragon-and-the-bridge",
-          "text": "The Dragon and the bridge"
         }
       ],
       "/thoughts/The-Grasshopper": [
@@ -7917,6 +8055,13 @@
           "source": "/thoughts/play",
           "target": "/thoughts/The-Grasshopper",
           "text": "The Grasshopper"
+        }
+      ],
+      "/thoughts/The-Mental-Demands-of-Modern-Life": [
+        {
+          "source": "/books",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "In Over Our Heads: The Mental Demands of Modern Life"
         }
       ],
       "/thoughts/The-Midnight-Library": [
@@ -9382,22 +9527,22 @@
           "text": "emptiness"
         },
         {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/emptiness",
           "text": "emptiness"
         },
         {
           "source": "/thoughts/context",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
-        {
-          "source": "/thoughts/epistemology",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
-        {
-          "source": "/thoughts/epistemology",
           "target": "/thoughts/emptiness",
           "text": "emptiness"
         },
@@ -9531,6 +9676,11 @@
           "source": "/thoughts/search",
           "target": "/thoughts/epistemology",
           "text": "epistemological"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
         }
       ],
       "/thoughts/ethereum": [
@@ -10088,6 +10238,11 @@
           "source": "/thoughts/epistemic-injustice",
           "target": "/thoughts/hermeneutical-injustice",
           "text": "Hermeneutical Injustice"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/hermeneutical-injustice",
+          "text": "hermeneutical injustice"
         },
         {
           "source": "/thoughts/quantization",
@@ -11304,19 +11459,19 @@
       ],
       "/thoughts/phenomenology": [
         {
-          "source": "/thoughts/epistemology",
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
           "target": "/thoughts/phenomenology",
           "text": "phenomenologist"
         }
       ],
       "/thoughts/philosophical-realism": [
         {
-          "source": "/thoughts/The-Dragon-and-the-bridge",
+          "source": "/thoughts/Nyāya",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
         },
         {
-          "source": "/thoughts/epistemology",
+          "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
         },
@@ -11741,6 +11896,11 @@
           "text": "qualia"
         },
         {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
           "source": "/thoughts/philosophical-realism",
           "target": "/thoughts/qualia",
           "text": "qualia"
@@ -11994,6 +12154,11 @@
         },
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/epistemology",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
         },
@@ -12289,6 +12454,23 @@
           "text": "terminology"
         }
       ],
+      "/thoughts/testimony": [
+        {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/testimony",
+          "text": "testimony"
+        },
+        {
+          "source": "/thoughts/epistemic-injustice",
+          "target": "/thoughts/testimony",
+          "text": "Testimonial"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/testimony",
+          "text": "testimony"
+        }
+      ],
       "/thoughts/tools-for-thought": [
         {
           "source": "/posts/networked-thought",
@@ -12426,17 +12608,17 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/Nyāya",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/trust",
           "text": "trust"
         },
         {
           "source": "/thoughts/epistemic-injustice",
-          "target": "/thoughts/trust",
-          "text": "trust"
-        },
-        {
-          "source": "/thoughts/epistemology",
           "target": "/thoughts/trust",
           "text": "trust"
         },
@@ -12496,6 +12678,11 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/trust",
           "text": "trust"
@@ -12514,6 +12701,11 @@
         },
         {
           "source": "/thoughts/blockchain",
+          "target": "/thoughts/truth",
+          "text": "truth"
+        },
+        {
+          "source": "/thoughts/epistemology",
           "target": "/thoughts/truth",
           "text": "truth"
         },
@@ -12857,6 +13049,11 @@
       "source": "/books",
       "target": "/thoughts/games",
       "text": "Games: Agency as Art"
+    },
+    {
+      "source": "/books",
+      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "text": "In Over Our Heads: The Mental Demands of Modern Life"
     },
     {
       "source": "/books",
@@ -14379,6 +14576,26 @@
       "text": "virtual worlds"
     },
     {
+      "source": "/thoughts/Nyāya",
+      "target": "/thoughts/philosophical-realism",
+      "text": "philosophical realism"
+    },
+    {
+      "source": "/thoughts/Nyāya",
+      "target": "/thoughts/testimony",
+      "text": "testimony"
+    },
+    {
+      "source": "/thoughts/Nyāya",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/Nyāya",
+      "target": "/thoughts/Descartes-Meditations",
+      "text": "Descartes' Dream Argument"
+    },
+    {
       "source": "/thoughts/Physical-Layer",
       "target": "/thoughts/Link-Layer",
       "text": "Link Layer"
@@ -14459,6 +14676,26 @@
       "text": "effective altruism"
     },
     {
+      "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+      "target": "/thoughts/Buddhism",
+      "text": "Buddhist"
+    },
+    {
+      "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+      "target": "/thoughts/emptiness",
+      "text": "emptiness"
+    },
+    {
+      "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+      "target": "/thoughts/phenomenology",
+      "text": "phenomenologist"
+    },
+    {
+      "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+      "target": "/thoughts/emptiness",
+      "text": "emptiness"
+    },
+    {
       "source": "/thoughts/Search-Diary",
       "target": "/posts/networked-thought",
       "text": "networked thought"
@@ -14527,6 +14764,11 @@
       "source": "/thoughts/The-Dragon-and-the-bridge",
       "target": "/thoughts/epistemology",
       "text": "epistemology"
+    },
+    {
+      "source": "/thoughts/The-Dragon-and-the-bridge",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
     },
     {
       "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -15625,6 +15867,11 @@
     },
     {
       "source": "/thoughts/epistemic-injustice",
+      "target": "/thoughts/testimony",
+      "text": "Testimonial"
+    },
+    {
+      "source": "/thoughts/epistemic-injustice",
       "target": "/thoughts/hermeneutical-injustice",
       "text": "Hermeneutical Injustice"
     },
@@ -15645,8 +15892,8 @@
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/indeterminant",
-      "text": "indeterminancy"
+      "target": "/thoughts/truth",
+      "text": "truth"
     },
     {
       "source": "/thoughts/epistemology",
@@ -15655,43 +15902,48 @@
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/Buddhism",
-      "text": "Buddhist"
+      "target": "/thoughts/hermeneutical-injustice",
+      "text": "hermeneutical injustice"
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/emptiness",
-      "text": "emptiness"
+      "target": "/thoughts/indeterminant",
+      "text": "indeterminancy"
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/phenomenology",
-      "text": "phenomenologist"
+      "target": "/thoughts/testimony",
+      "text": "testimony"
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/emptiness",
-      "text": "emptiness"
+      "target": "/thoughts/qualia",
+      "text": "qualia"
     },
     {
       "source": "/thoughts/epistemology",
-      "target": "/thoughts/The-Dragon-and-the-bridge",
-      "text": "The Dragon and the bridge"
-    },
-    {
-      "source": "/thoughts/epistemology",
-      "target": "/thoughts/philosophical-realism",
-      "text": "philosophical realism"
-    },
-    {
-      "source": "/thoughts/epistemology",
-      "target": "/thoughts/trust",
-      "text": "trust"
+      "target": "/thoughts/self-knowledge",
+      "text": "self-knowledge"
     },
     {
       "source": "/thoughts/epistemology",
       "target": "/thoughts/Descartes-Meditations",
-      "text": "Descartes' Dream Argument"
+      "text": "Descartes' Meditations"
+    },
+    {
+      "source": "/thoughts/epistemology",
+      "target": "/thoughts/Knowledge-Argument",
+      "text": "Knowledge Argument"
+    },
+    {
+      "source": "/thoughts/epistemology",
+      "target": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+      "text": "Root Verses on the Middle Way (MMK)"
+    },
+    {
+      "source": "/thoughts/epistemology",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
     },
     {
       "source": "/thoughts/ethereum",
@@ -16290,6 +16542,11 @@
     },
     {
       "source": "/thoughts/indeterminant",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
+    },
+    {
+      "source": "/thoughts/indeterminant",
       "target": "/thoughts/philosophical-realism",
       "text": "philosophical realism"
     },
@@ -16302,6 +16559,11 @@
       "source": "/thoughts/indeterminant",
       "target": "/thoughts/Twin-Earth-Argument",
       "text": "Twin Earth Argument"
+    },
+    {
+      "source": "/thoughts/indeterminant",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
     },
     {
       "source": "/thoughts/information-behaviour",
@@ -18117,6 +18379,26 @@
       "source": "/thoughts/terminology",
       "target": "/thoughts/language-of-thought",
       "text": "Sapir-Whorf"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/Reductionism",
+      "text": "Reductionism"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/epistemology",
+      "text": "epistemic"
     },
     {
       "source": "/thoughts/tools-for-thought",
