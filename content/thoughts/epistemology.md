@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Related: [indeterminancy](thoughts/indeterminant.md), [epistemic injustice](thoughts/epistemic%20injustice.md)
+Related: [indeterminancy](thoughts/indeterminant.md), [epistemic injustice](thoughts/epistemic%20injustice.md), [self-knowledge](thoughts/self-knowledge.md)
 
 ## Mūlamadhyamakakārikā (Root Verses on the Middle Way or the MMK) by Nāgārjuna
 
@@ -42,7 +42,7 @@ Nyāya adopts the Vaiśeṣika ontology, which posits that seven different types
 7. Absenses (later addition)
 This ontology of a directed graph in which inherence relations connect things in inheror-inheree pairings.
 
-Pramānas are means of knowledge and provide it through mode like perception, inference, and testimony. The objects of knowledge are called 'knowables' (prameya).
+Pramānas are means of knowledge and provide it through mode like perception, inference, and [testimony](thoughts/testimony.md). The objects of knowledge are called 'knowables' (prameya).
 
 Stuff has to exist, if you investigate well, you get answers. Pramāna-generated knowledge is knowledge gained through "close examination of objects through cognition."
 
