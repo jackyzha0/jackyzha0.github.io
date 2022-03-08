@@ -44,7 +44,7 @@ tags:
     -   data is the raw material of the digital economy
         -   ML will increase ROI by anywhere from 10 to 30 percent
     -   data extractivism
-        -   surveillance capitalism → you are not the customer or even the product, you are the raw material
+        -   [surveillance capitalism](thoughts/Data%20Capitalism.md) → you are not the customer or even the product, you are the raw material
         -   black box society → strong need for public engagement
             -   what are the social, ethical, racial & geopolitical implications of automated decision systems ([software is political](thoughts/software%20and%20politics.md))
             -   latent costs of externalities related to manipulating data

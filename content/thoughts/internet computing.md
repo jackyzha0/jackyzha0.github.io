@@ -122,18 +122,25 @@ Methods for [fault tolerance](thoughts/fault%20tolerance.md) in data transmissio
 - Jitter: variation in latency -- interpacket variance
 - Throughput: amount of data moved from one place to another in a given time
 	- Usually measured in bytes not bits
+	- 
 - Goodput: rate at which *useful* data arrives
 	- Does not include headers, encoding costs, etc.
 
 Delay
+- Average Service Time: time taken to put the average packet on the wire
+	- $S = \textrm{Average packet size} \times \frac{8 bits/byte}{\textrm{Bandwidth}}$
 - Processing Delay: figuring out where packet should go
 	- Pretty much fixed (almost always variable due to cache hits, network queues, etc. but because of how negligible the times are, we can treat as fixed.)
 - Queueing Delay: waiting time to get access to a link
 	- Variable
+	- Increase over service time when idle
+	- $\textrm{Delay}_{\textrm{Queueing}} = \frac{S}{1-U} - S = SU$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)
 - Transmission Delay: time to write packet to medium
 	- Fixed for bits, variable for packets (dependent on size)
+	- $\textrm{Delay}_{\textrm{Transmission}} = \frac{\textrm{Message size} \times 8 bits/byte}{\textrm{Bandwidth}}$ for *each* segment (as each router needs to receive the entire packet before adding it to the queue)
 - Propagation Delay: time to move each bit over transmission medium
 	- Fixed for meter, variable depending on actual length traveled
+	- $\textrm{Delay}_{\textrm{Propagation}} = \frac{\textrm{Total distance}}{\textrm{Link speed}}$
 - End-to-end Delay: sum of all sources of delay
 
 Traffic Intensity
@@ -142,4 +149,3 @@ Traffic Intensity
 	- Average packet size: $L$
 	- Transmission rate: rate at which bits are disposed of per second: $R$
 - Traffic Intensity: $\frac{La}{R}$
-- Delay = $\frac{S}{1-U}$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)

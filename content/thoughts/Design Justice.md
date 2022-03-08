@@ -48,19 +48,12 @@ While there is rapidly growing interest in algorithmic bias audits, especially i
 
 One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
 
-### [Bias](thoughts/bias.md)
-
-3 groups of study
-1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
-2. Technical Bias: some underlying aspect of the technology reproduces bias
-3. Emergent Bias: may not have been biased given its original [context](thoughts/context.md) of use or original user base but comes to exhibit bias when the context shifts or when new users arrive
-
 ### Universal Design
 Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design
 
 At least in the digital domain, adaptive design that enables personalization and flexible configuration of shared core objects, tools, platforms, and systems provides a path out of the tension between the diverse needs of individual users and the economic advantages of a large-scale user base.
 
-Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adawptive systems too often are deployed in ways that reinforce surveillance capitalism.
+Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adawptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
 
 We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
 

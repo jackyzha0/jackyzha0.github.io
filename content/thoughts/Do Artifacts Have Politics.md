@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+by *Langdon Winner*
+
 "In controversies about technology and society, there is no idea more provocative than the notion that technical things have political qualities"
 
 "A long lineage of boosters have insisted that the 'biggest and best' that science and industry made available were the best guarantees of democracy, freedom, and social justice" -- seeing these arguments esp wrt [web3](thoughts/web3.md) being a strong driver for these same values

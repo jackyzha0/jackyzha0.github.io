@@ -143,3 +143,12 @@ Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
 2. 1998-2010: link structure (page rank), keywords
 3. 2010-2015: user data, personalization, NLP
 4. 2015-now: AI, deep learning
+
+## Ethics
+Major issues:
+1. Access to information: value of information and knowledge, democracy, gatekeeping, [censorship](thoughts/censorship.md)
+2. Equity, accuracy (truth) and transparency: search-engine bias and the problem of opacity/non-[transparency](thoughts/transparency.md)
+3. Privacy and freedom: personal privacy and informed consent; monitoring and surveillance
+4. Property rights: how do crawlers/search engines respect property, ownership, free market competition
+
+Search is a form of [data capitalism](thoughts/Data%20Capitalism.md)

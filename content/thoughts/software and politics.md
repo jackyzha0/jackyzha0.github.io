@@ -19,4 +19,7 @@ Potential use of [Merkle Trees?](https://en.wikipedia.org/wiki/Merkle_tree) (but
 
 Curious how this ties into the [over simplification of user interfaces](/thoughts/books/mindstorms#Microworlds and simplification)
 
-"Blockchain voting fails at the most basic test of social technology: can you explain how it works to someone skeptical of the people in power in a way that makes them trust the system?"
+"Blockchain vot**ing fails at the most basic test of social technology: can you explain how it works to someone skeptical of the people in power in a way that makes them trust the system?"
+
+## Values and Technology
+> "Technology is the result of human imagination – of human beings envisioning alternatives to the status quo and acting upon the environment with the materials at hand to change the conditions of human and non-human life. As a result of this human activity, all technologies to some degree reflect, and reciprocally affect, human values." (Friedman and Hendry, 2019)
