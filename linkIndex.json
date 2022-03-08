@@ -1980,6 +1980,13 @@
           "text": "zero sum"
         }
       ],
+      "/thoughts/The-Mental-Demands-of-Modern-Life": [
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        }
+      ],
       "/thoughts/The-Midnight-Library": [
         {
           "source": "/thoughts/The-Midnight-Library",
@@ -5911,6 +5918,16 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/epistemology",
           "text": "epistemic"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/bias",
+          "text": "biases"
         }
       ],
       "/thoughts/tools-for-thought": [
@@ -8449,6 +8466,11 @@
           "source": "/thoughts/Design-Justice",
           "target": "/thoughts/bias",
           "text": "Bias"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/bias",
+          "text": "biases"
         }
       ],
       "/thoughts/bitcoin": [
@@ -8774,6 +8796,11 @@
           "text": "consciousness"
         },
         {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
@@ -8829,6 +8856,11 @@
           "source": "/thoughts/money",
           "target": "/thoughts/consensus",
           "text": "Consensus"
+        },
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
         },
         {
           "source": "/thoughts/value",
@@ -14806,6 +14838,11 @@
       "text": "zero sum"
     },
     {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
       "source": "/thoughts/The-Midnight-Library",
       "target": "/thoughts/optionality",
       "text": "optionality"
@@ -18399,6 +18436,16 @@
       "source": "/thoughts/testimony",
       "target": "/thoughts/epistemology",
       "text": "epistemic"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
+    },
+    {
+      "source": "/thoughts/testimony",
+      "target": "/thoughts/bias",
+      "text": "biases"
     },
     {
       "source": "/thoughts/tools-for-thought",
