@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="More detailed post on Bias in AI. Related readings: Design Justice, To Live in their Utopia, Social Bias in Information Retrieval">
+    <meta name="description" content="More detailed post on Bias in AI. Related readings: Design Justice, To Live in their Utopia, Social Bias in Information Retrieval, Algorithms of Oppression">
     <title>Bias</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -447,13 +447,25 @@ if (!doNotTrack) {
     <h1 class="title">Bias</h1>
     <article>
       <p class="meta">
-          Last updated December 25, 2021
+          Last updated March 8, 2022
       </p>
       <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
 </ul>
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#captchas">Captchas</a></li>
+    <li><a href="#ethical-matrices">Ethical Matrices</a></li>
+    <li><a href="#searchthoughtssearchmd-engine-bias"><a href="thoughts/search.md">Search</a> Engine Bias</a></li>
+    <li><a href="#3-groups-of-study">3 groups of study</a></li>
+  </ol>
+</nav>
+      </aside>
       
       <p>More detailed post on 
 
@@ -467,7 +479,11 @@ if (!doNotTrack) {
 <a href="/thoughts/To-Live-in-their-Utopia" rel="noopener" class="internal-link" data-src="/thoughts/To-Live-in-their-Utopia">To Live in their Utopia</a>, 
 
 
-<a href="/thoughts/Social-Bias-in-Information-Retrieval" rel="noopener" class="internal-link" data-src="/thoughts/Social-Bias-in-Information-Retrieval">Social Bias in Information Retrieval</a></p>
+<a href="/thoughts/Social-Bias-in-Information-Retrieval" rel="noopener" class="internal-link" data-src="/thoughts/Social-Bias-in-Information-Retrieval">Social Bias in Information Retrieval</a>, 
+
+
+<a href="/thoughts/Algorithms-of-Oppression" rel="noopener" class="internal-link" data-src="/thoughts/Algorithms-of-Oppression">Algorithms of Oppression</a></p>
+<p>Bias: a slant or preference</p>
 <h2 id="captchas">Captchas</h2>
 <p>How do you distinguish between human and non-human without discriminating against certain types of people (e.g. ethnicity, cultural background)? How does one prove their humanity without betraying anything else about them?</p>
 <p>&ldquo;What is the universal human quality that can be demonstrated to a machine, but that no machine can mimic? What is it to be human?&rdquo;</p>
@@ -477,6 +493,60 @@ if (!doNotTrack) {
 <p>Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in the &lsquo;right&rsquo; way? (e.g. optical illusions)</p>
 <h2 id="ethical-matrices">Ethical Matrices</h2>
 <p>Who cares about my algorithm? Who are the stakeholders? Why do they care? What are their goals?</p>
+<h2 id="searchthoughtssearchmd-engine-bias">
+
+
+<a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">Search</a> Engine Bias</h2>
+<p>From 
+
+
+<a href="/thoughts/Social-Bias-in-Information-Retrieval" rel="noopener" class="internal-link" data-src="/thoughts/Social-Bias-in-Information-Retrieval">Social Bias in Information Retrieval</a></p>
+<p>Related: 
+
+
+<a href="/thoughts/data-distributions" rel="noopener" class="internal-link" data-src="/thoughts/data-distributions">data distributions</a></p>
+<blockquote>
+<p>&ldquo;We use the term bias to refer to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others&hellip; A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate&rdquo; (Friedman and Nissenbaum, 1996)</p>
+</blockquote>
+<h2 id="3-groups-of-study">3 groups of study</h2>
+<p>from 
+
+
+<a href="/thoughts/Design-Justice" rel="noopener" class="internal-link" data-src="/thoughts/Design-Justice">Design Justice</a></p>
+<ol>
+<li>Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
+<ul>
+<li>e.g. Notions of quality and authority bias embedded in the web content itself</li>
+</ul>
+</li>
+<li>Technical Bias: some underlying aspect of the technology reproduces bias
+<ul>
+<li>e.g. Design of crawlers/aggregate/surfacing algorithms for content, ranking features</li>
+</ul>
+</li>
+<li>Emergent Bias: may not have been biased given its original 
+
+
+<a href="/thoughts/context" rel="noopener" class="internal-link" data-src="/thoughts/context">context</a> of use or original user base but comes to exhibit bias when the context shifts or when new users arrive
+<ul>
+<li>e.g. Responses to spam, content moderation, search suggestions</li>
+</ul>
+</li>
+</ol>
+<p>Cathy O’Neil: algorithms are “opinions embedded in code” &ndash; 
+
+
+<a href="/thoughts/Do-Artifacts-Have-Politics" rel="noopener" class="internal-link" data-src="/thoughts/Do-Artifacts-Have-Politics">artifacts do indeed have politics</a></p>
+<p>Baeza-Yates</p>
+<ol>
+<li>Activity Bias: who contributes to the data? who is seen by these algorithms?</li>
+<li>Data Bias: is the underlying data biased/non-representative?</li>
+<li>Sampling Bias: what data is used by algorithms?</li>
+<li>Algorithmic Bias: what gets shown to users?</li>
+<li>Interaction Bias: how do people use the algorithms?</li>
+<li>Self-selection Bias: who uses these algorithms?</li>
+<li>Second-order Bias: digital trace data, how do our data-residues</li>
+</ol>
 
 
     </article>
@@ -494,8 +564,6 @@ if (!doNotTrack) {
     
     <li>
             <a href="/posts/bias-bug">On AI&#39;s &#39;Bias Bug&#39;</a>
-        </li><li>
-            <a href="/thoughts/Design-Justice">Design Justice</a>
         </li><li>
             <a href="/thoughts/testimony">Testimony</a>
         </li>

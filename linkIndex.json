@@ -1157,13 +1157,8 @@
         },
         {
           "source": "/thoughts/Design-Justice",
-          "target": "/thoughts/bias",
-          "text": "Bias"
-        },
-        {
-          "source": "/thoughts/Design-Justice",
-          "target": "/thoughts/context",
-          "text": "context"
+          "target": "/thoughts/Data-Capitalism",
+          "text": "surveillance capitalism"
         },
         {
           "source": "/thoughts/Design-Justice",
@@ -2397,6 +2392,41 @@
           "source": "/thoughts/bias",
           "target": "/thoughts/Social-Bias-in-Information-Retrieval",
           "text": "Social Bias in Information Retrieval"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "Algorithms of Oppression"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/search",
+          "text": "Search"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "text": "Social Bias in Information Retrieval"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/data-distributions",
+          "text": "data distributions"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Design-Justice",
+          "text": "Design Justice"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/context",
+          "text": "context"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Do-Artifacts-Have-Politics",
+          "text": "artifacts do indeed have politics"
         }
       ],
       "/thoughts/bitcoin": [
@@ -5698,6 +5728,21 @@
           "source": "/thoughts/search",
           "target": "/posts/reflect",
           "text": "reflect"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/transparency",
+          "text": "transparency"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/Data-Capitalism",
+          "text": "data capitalism"
         }
       ],
       "/thoughts/security": [
@@ -6132,6 +6177,11 @@
           "source": "/thoughts/urban-planning",
           "target": "/thoughts/interoperability",
           "text": "interoperability"
+        },
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/Data-Capitalism",
+          "text": "surveillance capitalism"
         },
         {
           "source": "/thoughts/urban-planning",
@@ -6925,6 +6975,11 @@
           "text": "Algorithms of Oppression"
         },
         {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "Algorithms of Oppression"
+        },
+        {
           "source": "/thoughts/quantization",
           "target": "/thoughts/Algorithms-of-Oppression",
           "text": "Algorithms of Oppression"
@@ -7061,6 +7116,23 @@
           "text": "Dark Forest Theory of the Internet"
         }
       ],
+      "/thoughts/Data-Capitalism": [
+        {
+          "source": "/thoughts/Design-Justice",
+          "target": "/thoughts/Data-Capitalism",
+          "text": "surveillance capitalism"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/Data-Capitalism",
+          "text": "data capitalism"
+        },
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/Data-Capitalism",
+          "text": "surveillance capitalism"
+        }
+      ],
       "/thoughts/Degraded-Blockchain-problem": [
         {
           "source": "/thoughts/NFT",
@@ -7152,6 +7224,11 @@
           "text": "Design Justice"
         },
         {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Design-Justice",
+          "text": "Design Justice"
+        },
+        {
           "source": "/thoughts/constructionist",
           "target": "/thoughts/Design-Justice",
           "text": "Design Justice"
@@ -7192,6 +7269,11 @@
           "source": "/thoughts/Design-Justice",
           "target": "/thoughts/Do-Artifacts-Have-Politics",
           "text": "Do Artifacts Have Politics"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Do-Artifacts-Have-Politics",
+          "text": "artifacts do indeed have politics"
         },
         {
           "source": "/thoughts/climate-tech",
@@ -8033,6 +8115,11 @@
           "source": "/thoughts/bias",
           "target": "/thoughts/Social-Bias-in-Information-Retrieval",
           "text": "Social Bias in Information Retrieval"
+        },
+        {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "text": "Social Bias in Information Retrieval"
         }
       ],
       "/thoughts/Stream-of-Consciousness": [
@@ -8463,11 +8550,6 @@
           "text": "biases"
         },
         {
-          "source": "/thoughts/Design-Justice",
-          "target": "/thoughts/bias",
-          "text": "Bias"
-        },
-        {
           "source": "/thoughts/testimony",
           "target": "/thoughts/bias",
           "text": "biases"
@@ -8641,6 +8723,11 @@
           "source": "/thoughts/infrastructure",
           "target": "/thoughts/censorship",
           "text": "censor"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
         }
       ],
       "/thoughts/climate-tech": [
@@ -8944,7 +9031,7 @@
           "text": "context"
         },
         {
-          "source": "/thoughts/Design-Justice",
+          "source": "/thoughts/bias",
           "target": "/thoughts/context",
           "text": "context"
         },
@@ -9113,6 +9200,11 @@
         },
         {
           "source": "/thoughts/To-Live-in-their-Utopia",
+          "target": "/thoughts/data-distributions",
+          "text": "data distributions"
+        },
+        {
+          "source": "/thoughts/bias",
           "target": "/thoughts/data-distributions",
           "text": "data distributions"
         },
@@ -12156,6 +12248,11 @@
           "text": "Search"
         },
         {
+          "source": "/thoughts/bias",
+          "target": "/thoughts/search",
+          "text": "Search"
+        },
+        {
           "source": "/thoughts/information-behaviour",
           "target": "/thoughts/search",
           "text": "search"
@@ -12572,6 +12669,11 @@
       "/thoughts/transparency": [
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/transparency",
+          "text": "transparency"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/transparency",
           "text": "transparency"
         },
@@ -14089,13 +14191,8 @@
     },
     {
       "source": "/thoughts/Design-Justice",
-      "target": "/thoughts/bias",
-      "text": "Bias"
-    },
-    {
-      "source": "/thoughts/Design-Justice",
-      "target": "/thoughts/context",
-      "text": "context"
+      "target": "/thoughts/Data-Capitalism",
+      "text": "surveillance capitalism"
     },
     {
       "source": "/thoughts/Design-Justice",
@@ -15211,6 +15308,41 @@
       "source": "/thoughts/bias",
       "target": "/thoughts/Social-Bias-in-Information-Retrieval",
       "text": "Social Bias in Information Retrieval"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/Algorithms-of-Oppression",
+      "text": "Algorithms of Oppression"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/search",
+      "text": "Search"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/Social-Bias-in-Information-Retrieval",
+      "text": "Social Bias in Information Retrieval"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/data-distributions",
+      "text": "data distributions"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/Design-Justice",
+      "text": "Design Justice"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/context",
+      "text": "context"
+    },
+    {
+      "source": "/thoughts/bias",
+      "target": "/thoughts/Do-Artifacts-Have-Politics",
+      "text": "artifacts do indeed have politics"
     },
     {
       "source": "/thoughts/bitcoin",
@@ -18248,6 +18380,21 @@
       "text": "reflect"
     },
     {
+      "source": "/thoughts/search",
+      "target": "/thoughts/censorship",
+      "text": "censorship"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/transparency",
+      "text": "transparency"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/Data-Capitalism",
+      "text": "data capitalism"
+    },
+    {
       "source": "/thoughts/security",
       "target": "/thoughts/trust",
       "text": "trust"
@@ -18636,6 +18783,11 @@
       "source": "/thoughts/urban-planning",
       "target": "/thoughts/interoperability",
       "text": "interoperability"
+    },
+    {
+      "source": "/thoughts/urban-planning",
+      "target": "/thoughts/Data-Capitalism",
+      "text": "surveillance capitalism"
     },
     {
       "source": "/thoughts/urban-planning",

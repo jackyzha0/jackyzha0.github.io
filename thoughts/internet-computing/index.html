@@ -448,7 +448,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet Computing</h1>
     <article>
       <p class="meta">
-          Last updated March 7, 2022
+          Last updated March 8, 2022
       </p>
       <ul class="tags">
     
@@ -704,6 +704,7 @@ administrated entities into a common entity</p>
 <li>Throughput: amount of data moved from one place to another in a given time
 <ul>
 <li>Usually measured in bytes not bits</li>
+<li></li>
 </ul>
 </li>
 <li>Goodput: rate at which <em>useful</em> data arrives
@@ -714,6 +715,11 @@ administrated entities into a common entity</p>
 </ul>
 <p>Delay</p>
 <ul>
+<li>Average Service Time: time taken to put the average packet on the wire
+<ul>
+<li>$S = \textrm{Average packet size} \times \frac{8 bits/byte}{\textrm{Bandwidth}}$</li>
+</ul>
+</li>
 <li>Processing Delay: figuring out where packet should go
 <ul>
 <li>Pretty much fixed (almost always variable due to cache hits, network queues, etc. but because of how negligible the times are, we can treat as fixed.)</li>
@@ -722,16 +728,20 @@ administrated entities into a common entity</p>
 <li>Queueing Delay: waiting time to get access to a link
 <ul>
 <li>Variable</li>
+<li>Increase over service time when idle</li>
+<li>$\textrm{Delay}_{\textrm{Queueing}} = \frac{S}{1-U} - S = SU$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)</li>
 </ul>
 </li>
 <li>Transmission Delay: time to write packet to medium
 <ul>
 <li>Fixed for bits, variable for packets (dependent on size)</li>
+<li>$\textrm{Delay}_{\textrm{Transmission}} = \frac{\textrm{Message size} \times 8 bits/byte}{\textrm{Bandwidth}}$ for <em>each</em> segment (as each router needs to receive the entire packet before adding it to the queue)</li>
 </ul>
 </li>
 <li>Propagation Delay: time to move each bit over transmission medium
 <ul>
 <li>Fixed for meter, variable depending on actual length traveled</li>
+<li>$\textrm{Delay}_{\textrm{Propagation}} = \frac{\textrm{Total distance}}{\textrm{Link speed}}$</li>
 </ul>
 </li>
 <li>End-to-end Delay: sum of all sources of delay</li>
@@ -746,7 +756,6 @@ administrated entities into a common entity</p>
 </ul>
 </li>
 <li>Traffic Intensity: $\frac{La}{R}$</li>
-<li>Delay = $\frac{S}{1-U}$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)</li>
 </ul>
 
 
