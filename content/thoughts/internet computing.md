@@ -110,7 +110,7 @@ Methods for [fault tolerance](thoughts/fault%20tolerance.md) in data transmissio
 		2. Controlled in a decentralized manner - passes a token between senders
 2. Full-duplex - both sides can transmit at the same time without interference/[NAT](thoughts/NAT.md)
 
-## Network Metrics
+## Network Metrics / Peformance
 - Bandwidth: max rate at which data can be sent over a link, usually in bits per second
 	- Measured in base 10, kilobit is $10^3$ bits, megabit is $10^6$ bits
 - Sizes: usually in bytes

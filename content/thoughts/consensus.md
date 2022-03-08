@@ -8,3 +8,11 @@ tags:
 Consensus in human systems is actually usually pretty easy because of the social layer of society. This [fault tolerance](thoughts/fault%20tolerance.md) against 51% attacks is due to the fact that convincing the community that any engineered 'truth' is the real on requires subverting every trusted member in the community, most notably media and news sources (also why systems of authoritarian power are so scary). 
 
 A difficult problem for [governance](thoughts/governance.md) within [communities](thoughts/communities.md)
+
+## Consensus and Humming in the IETF
+[Source: IETF](https://datatracker.ietf.org/doc/html/rfc7282)
+
+On rough consensus
+- Humming as 'temp checks' for people to voice disagreement but default assumption is optimistic trust
+- "While counting heads might give a good guess as to what the rough consensus will be, doing so can allow important minority views to get lost in the noise. One of the strengths of a consensus model is that minority views are addressed, and using a rough consensus model should not take away from that."
+- "We can't know who the "members" of any given working group would be at any one time, and we certainly can't know who all of the "members" of the IETF would be: That's why we refer to "participants" in the IETF; the IETF doesn't really have "members". Indeed, we often recruit additional implementers and other experts into working groups in order to ensure that broader views are brought into the discussion. So, voting is simply not practical."

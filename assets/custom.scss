@@ -75,16 +75,27 @@
       gap: 4em;
     }
 
-    & > ul {
+    & > .writing-sidebar {
       flex: 0 0 30%;
-      list-style: none;
-      padding: 0;
-      margin-left: 0;
-      z-index: 0;
+
+      & > div {
+        margin-bottom: 2em;
+      }
+
+      & ul {
+        list-style: none;
+        padding: 0;
+        margin-left: 0;
+        z-index: 0;
+      }
+
+      & > div > a {
+        opacity: 0.6;
+      }
 
       & h2 {
         font-size: 1.4rem;
-        margin: 0 0 1em 0;
+        margin: 0.75em 0;
       }
 
       & a {

@@ -15,3 +15,20 @@ Defines:
 A fully-defined protocol must provide a proper action for any event in any state. Most protocols can be modelled in terms of state machines.
 
 Each interaction can have its own state machine.
+
+## Building a Reliable Protocol
+- Generally includes a few states
+	- Idle - waiting for something to be initiated
+	- Waiting - waiting for a response
+- Edges are actions (e.g. receives a response of a certain type) or timeouts
+- Edge cases
+	- Timeout too soon! (may result in getting two ACKs)
+- Timeout formulas
+	- Assuming measured round trip time (RTT) of $t$
+	- Estimated RTT
+		- $ERTT_i = (1-\alpha) ERTT_{i-1} + \alpha t$
+	- Deviation of RTT (captures jitter):
+		- $\Delta RTT_i = (1 - \beta)\Delta RTT_{i-1} + \beta |t - ERTT_{i-1}|$
+	- Timeout:
+		- $ERTT_i + 4 \Delta RTT_{i}$
+	- Suggested: $\alpha = 0.125$, $\beta = 0.25$
