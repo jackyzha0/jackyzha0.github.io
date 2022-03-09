@@ -1348,18 +1348,8 @@
         },
         {
           "source": "/thoughts/Hard-problem-of-consciousness",
-          "target": "/thoughts/Materialism",
-          "text": "Materialism"
-        },
-        {
-          "source": "/thoughts/Hard-problem-of-consciousness",
-          "target": "/thoughts/qualia",
-          "text": "qualia"
-        },
-        {
-          "source": "/thoughts/Hard-problem-of-consciousness",
-          "target": "/thoughts/Knowledge-Argument",
-          "text": "Knowledge Argument"
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
         }
       ],
       "/thoughts/How-to-do-Nothing": [
@@ -1683,6 +1673,23 @@
           "text": "Digital Permanence"
         }
       ],
+      "/thoughts/Nagels-Bat-Argument": [
+        {
+          "source": "/thoughts/Nagels-Bat-Argument",
+          "target": "/thoughts/Materialism",
+          "text": "Materialism"
+        },
+        {
+          "source": "/thoughts/Nagels-Bat-Argument",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
+          "source": "/thoughts/Nagels-Bat-Argument",
+          "target": "/thoughts/Knowledge-Argument",
+          "text": "Knowledge Argument"
+        }
+      ],
       "/thoughts/Network-Layer": [
         {
           "source": "/thoughts/Network-Layer",
@@ -1980,6 +1987,16 @@
           "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/group-limits",
+          "text": "group limits"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/social-contracts",
+          "text": "social contracts"
         }
       ],
       "/thoughts/The-Midnight-Library": [
@@ -3188,6 +3205,23 @@
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
           "text": "Dark Forest Theory of the Internet"
+        }
+      ],
+      "/thoughts/epistemic-authority": [
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
         }
       ],
       "/thoughts/epistemic-injustice": [
@@ -7684,7 +7718,7 @@
       ],
       "/thoughts/Knowledge-Argument": [
         {
-          "source": "/thoughts/Hard-problem-of-consciousness",
+          "source": "/thoughts/Nagels-Bat-Argument",
           "target": "/thoughts/Knowledge-Argument",
           "text": "Knowledge Argument"
         },
@@ -7789,7 +7823,7 @@
           "text": "Materialism"
         },
         {
-          "source": "/thoughts/Hard-problem-of-consciousness",
+          "source": "/thoughts/Nagels-Bat-Argument",
           "target": "/thoughts/Materialism",
           "text": "Materialism"
         },
@@ -7892,6 +7926,18 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/NFT",
           "text": "NFTs"
+        }
+      ],
+      "/thoughts/Nagels-Bat-Argument": [
+        {
+          "source": "/thoughts/Hard-problem-of-consciousness",
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
         }
       ],
       "/thoughts/Network-Layer": [
@@ -9782,6 +9828,11 @@
           "text": "epistemic"
         },
         {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
+        },
+        {
           "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/epistemology",
           "text": "Epistemologically"
@@ -10277,6 +10328,11 @@
         }
       ],
       "/thoughts/group-limits": [
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/group-limits",
+          "text": "group limits"
+        },
         {
           "source": "/thoughts/accountability",
           "target": "/thoughts/group-limits",
@@ -11990,12 +12046,12 @@
           "text": "qualia"
         },
         {
-          "source": "/thoughts/Hard-problem-of-consciousness",
+          "source": "/thoughts/Materialism",
           "target": "/thoughts/qualia",
           "text": "qualia"
         },
         {
-          "source": "/thoughts/Materialism",
+          "source": "/thoughts/Nagels-Bat-Argument",
           "target": "/thoughts/qualia",
           "text": "qualia"
         },
@@ -12363,6 +12419,11 @@
           "source": "/posts/context-collapse",
           "target": "/thoughts/social-contracts",
           "text": "group norms"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/social-contracts",
+          "text": "social contracts"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -12748,6 +12809,11 @@
         },
         {
           "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/trust",
           "text": "trust"
         },
@@ -14366,18 +14432,8 @@
     },
     {
       "source": "/thoughts/Hard-problem-of-consciousness",
-      "target": "/thoughts/Materialism",
-      "text": "Materialism"
-    },
-    {
-      "source": "/thoughts/Hard-problem-of-consciousness",
-      "target": "/thoughts/qualia",
-      "text": "qualia"
-    },
-    {
-      "source": "/thoughts/Hard-problem-of-consciousness",
-      "target": "/thoughts/Knowledge-Argument",
-      "text": "Knowledge Argument"
+      "target": "/thoughts/Nagels-Bat-Argument",
+      "text": "Nagel's Bat Argument"
     },
     {
       "source": "/thoughts/How-to-do-Nothing",
@@ -14675,6 +14731,21 @@
       "text": "Digital Permanence"
     },
     {
+      "source": "/thoughts/Nagels-Bat-Argument",
+      "target": "/thoughts/Materialism",
+      "text": "Materialism"
+    },
+    {
+      "source": "/thoughts/Nagels-Bat-Argument",
+      "target": "/thoughts/qualia",
+      "text": "qualia"
+    },
+    {
+      "source": "/thoughts/Nagels-Bat-Argument",
+      "target": "/thoughts/Knowledge-Argument",
+      "text": "Knowledge Argument"
+    },
+    {
       "source": "/thoughts/Network-Layer",
       "target": "/thoughts/Transport-Layer",
       "text": "Transport Layer"
@@ -14938,6 +15009,16 @@
       "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
       "target": "/thoughts/consciousness",
       "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/group-limits",
+      "text": "group limits"
+    },
+    {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/social-contracts",
+      "text": "social contracts"
     },
     {
       "source": "/thoughts/The-Midnight-Library",
@@ -16028,6 +16109,21 @@
       "source": "/thoughts/ephemereal-content",
       "target": "/thoughts/Dark-Forest-Theory-of-the-Internet",
       "text": "Dark Forest Theory of the Internet"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/epistemology",
+      "text": "epistemic"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/Nagels-Bat-Argument",
+      "text": "Nagel's Bat Argument"
     },
     {
       "source": "/thoughts/epistemic-injustice",
