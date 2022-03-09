@@ -17,3 +17,4 @@ Some quotes to live by.
 8. "People need to be able to shape, extend, reconfigure, and repair their environment to feel truly at home within it... And when there's no space to call your own, there's no opportunity to take refuge in quiet and solitude, and it's more difficult to share space with others." [[Source](https://kmcgillivray.github.io/a-web-pattern-language/a-domain-of-ones-own/)] 
 9. "**You must be completely awake in the present to enjoy the tea.** Only in the awareness of the present, can your hands feel the pleasant warmth of the cup. Only in the present, can you savor the aroma, taste the sweetness, appreciate the delicacy." [Source](https://theteacupoflife.com/2014/03/thich-nhat-hanhs-tea-meditation.html)
 10. “Even if it’s not your ideal life, you can always choose it. No matter what your life is, choosing it changes everything.” [Source](https://perell.com/essay/the-price-of-discipline/)
+11. “We're all just walking each other home.” ― Ram Dass
