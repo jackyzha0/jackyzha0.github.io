@@ -48,6 +48,10 @@ body {
     animation-delay: 2.2s;
   }
 
+  &.t-5 {
+    animation-delay: 2.4s;
+  }
+
   @for $j from 1 through 5 {
   @for $i from 1 through 10 {
   &.stagger:nth-last-of-type(#{$j}) > *:nth-child(#{$i}) {
@@ -78,7 +82,8 @@ article {
   }
 
   & p {
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -290,6 +295,7 @@ article {
   transition-delay: 0.3s;
   text-align: left;
   user-select: none;
+  overflow-wrap: anywhere;
   z-index: 999;
 
   &.visible {

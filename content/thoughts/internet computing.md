@@ -149,3 +149,31 @@ Traffic Intensity
 	- Average packet size: $L$
 	- Transmission rate: rate at which bits are disposed of per second: $R$
 - Traffic Intensity: $\frac{La}{R}$
+
+## Sliding Window
+- When we allow multiple packets in flight, modelling this with a finite state machine is less than ideal
+- We can use a sliding window to represent the 'window' of all bits that are in flight
+- Timeout: how much longer should I wait for the ack for the first packet in my window
+
+### Receiver
+- When packet is received, send ACK for last packet received in order
+- Discard arriving packet if out of order (receiver window is 1)
+### Sender
+- Can have a specific number of outstanding (unacknowledged) packets in memory: sender's window
+- Start timer on first packet sent
+- On timeout go to last unack'ed packet and resend everything (restart timer)
+- Received ACKs may be cumulative (restart timer on receipt)
+
+[Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/go-back-n-protocol/index.html)
+
+## Selective-Repeat Strategy
+### Receiver
+- Each packet is ack'ed individually
+- Out of order packet is stored for later: receiver's window
+### Sender
+- Can have a specific number of outstanding (unacknowledged) packets in memory: sender's window
+- Each packet has its own timer
+- Each packet is individually resent if timeout is reached
+- ACKs received in order move the sender's window
+
+[Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html)

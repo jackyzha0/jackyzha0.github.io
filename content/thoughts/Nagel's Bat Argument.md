@@ -18,3 +18,19 @@ Physicalism leaves out the subjective facts, so it’s a mystery how it
 could be true (give that [qualia](thoughts/qualia.md) and the subjective experience exists).
 
 Related: Frank Jackson's [Knowledge Argument](thoughts/Knowledge%20Argument.md)
+
+## Fishes
+A famous Taoist story about happiness and knowing what it is like to be a fish
+
+- Zhuangzi and Huizi were strolling on a bridge over the River Hao, when the former observed, “See how the minnows dart between the rocks! Such is the happiness of fishes.”
+- “You not being a fish,” said Huizi, “how can you possibly know what makes fish happy?”
+- “And you not being I,” said Zhuangzi, “how can you know that I don’t know what makes fish happy?”
+- “If I, not being you, cannot know what you know,” replied Huizi, “does it not follow from that very fact that you, not being a fish, cannot know what makes fish happy?”
+- “Let us go back,” said Zhuangzi, “to your original question. You asked me how I knew what makes fish happy. The very fact you asked shows that you knew I knew—as I did know, from my own feelings on this bridge.”
+
+Why did Zhuangzi, who wrote it down, show himself to be defeated by his logician friend?
+
+> We can each understand what the other is feeling because, arguing about the fish, we are doing exactly what the fish are doing: having fun, doing something we do well for the sheer pleasure of doing it.
+
+How can we know what it is like for others to [play](thoughts/play.md) if not that we are playing ourselves?
+

@@ -17,11 +17,11 @@
 </div>
 <div class="index">
     <div class="bio">
-        <div class="writing-sidebar delay t-4 stagger">
-            <div>
+        <div class="writing-sidebar">
+            <div class="delay t-4">
                 <h2>Recent Writing</h2>
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
-                <ul>
+                <ul class="delay stagger">
                     {{range first 3 $writing }}
                     <li class="section-li">
                         <div class="section">
@@ -38,10 +38,10 @@
                 </ul>
                 <a href="/posts">See {{sub (len $writing) 3}} more →</a>
             </div>
-            <div>
+            <div class="delay t-5">
                 <h2>Recent Notes</h2>
                 {{$notes := where .Site.RegularPages "Section" "thoughts"}}
-                <ul>
+                <ul class="delay stagger">
                     {{range first 3 $notes }}
                     <li class="section-li">
                         <div class="section">
