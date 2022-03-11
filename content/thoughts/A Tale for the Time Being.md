@@ -20,3 +20,9 @@ and that empathy is really just emotional time dilation and temporarily moving a
 https://clarkesworldmagazine.com/chen_08_11/
 - "They discovered that those suffering from the side effects of time sense dilation and those suffering from the side effects of time sense compression can help each other, be each other’s cure."
 - "time flies past the laborer, the poor, the “third world”; time crawls for the rich, the idle, the “developed world”; time stays still for those in charge, the idols, the gods . . ."
+
+https://griefbacon.substack.com/p/nothing-stops?utm_source=url&curius=1299&s=r
+- This is the process of history, and of crisis, of disease and of love. We may try sometimes to stand still, but we are standing on a moving walkway.
+- All people want is for nothing to happen; all anybody wants is another day of our soft, stupid little lives, to be allowed the vulnerabilities we have built into them. We clutter up our houses with useless objects that mean something to us; we adopt pets who would slow us down in a crisis. All this is a way of ignoring the truth that nothing stops, which is to say it is a form of love.
+- We are making a declaration that it is worth it to choose the losing side.
+- But I choose all that anyway; I would rather try and fail to stand still with you than to be fast and sleek without you.

@@ -13,11 +13,7 @@ Emptiness thus does not mean nothingness (0 is not null), emptiness is the base 
 
 > In order for a glass to even be empty, it should first and foremost be there.
 
-Emptiness means empty of independent existence
-- Dependent Existence: for a flower to exist and for us to have experienced it requires the existence of many others. The gardener, the sun, the water, the minerals, the soil.
-	- In cognitive science, concept of [connectionist representation](thoughts/representation.md)
-	- In [emergent systems](thoughts/emergent%20behaviour.md), there is no 'conductor' there is only a symphony that interdepend on each other
-- Independent Existence: a separate existence. A flower cannot be by herself or have a self-nature (svabhāva).
+Emptiness means empty of independent existence -- all things are [interdependent](thoughts/interdependence.md)
 
 Thus, form is emptiness but emptiness is form (existence is to depend on others).
 

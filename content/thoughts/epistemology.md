@@ -15,6 +15,7 @@ tags:
 ## Of the self
 - [qualia](thoughts/qualia.md)
 - [self-knowledge](thoughts/self-knowledge.md)
+- [the self](thoughts/the%20Self.md)
 
 ## Doubt
 - [Descartes' Meditations](thoughts/Descartes'%20Meditations.md)

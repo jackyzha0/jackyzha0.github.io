@@ -92,3 +92,8 @@ Why are almost all representations used in intelletual work (both final product 
 Can we create dynamic tactile mediums?
 
 > Playfair’s invention of data graphics was transformative because it tapped into capabilities of the human visual system which had gone unused in intellectual work. It may be similarly transformative to tap into the profound capabilities that enable a person to tie a shoelace or make a sandwich, and bring them to bear on more abstract thinking.
+
+
+## Cool Experiments
+1. https://www.robertxiao.ca/research/lumitrack/
+2. https://www.robertxiao.ca/research/desktopography/

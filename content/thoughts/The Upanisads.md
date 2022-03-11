@@ -23,7 +23,7 @@ The order of Y's responses is as follows:
 - The moon
 - Fire
 - Speech
-- The Self (see: [Cartesian Realism](thoughts/Descartes'%20Meditations.md))
+- [The Self](thoughts/the%20Self.md) (see: [Cartesian Realism](thoughts/Descartes'%20Meditations.md))
 
 Interesting to note that this moves from far away to closeby in terms of spatial distance (astronomically far to the intimate self)
 

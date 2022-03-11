@@ -47,7 +47,7 @@ Does competition always kill positive-sum worlds?
 
 His Holiness skillfully _redefines_ selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness -- caring about others.
 
-## Porousness of the self
+## Porousness of [the self](thoughts/the%20Self.md)
 Selfishness depends on what the definition of the self is. Expansions on the concept of 'self':
 - [noosphere](https://en.wikipedia.org/wiki/Noosphere) as the extended self
 - [The Egg](https://www.youtube.com/watch?v=h6fcK_fRYaI) by Andy Weir + Kurzgesagt

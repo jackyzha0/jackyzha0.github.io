@@ -36,7 +36,7 @@ Nondual Śaiva philosophical tradition concerned with articulating and defending
 - Conventional Reality
 	- Embodied worlds created through exclusion
 	- Manifests because the ultimate desires to experience itself in diverse  forms
-	- When we imagine, for example, an elephant, our consciousness presents this object ('this') as distinct from our conscious selves ('I'). Despite this distinction, we know 'this' is only imagined and arises from the self.
+	- When we imagine, for example, an elephant, our consciousness presents this object ('this') as distinct from our conscious selves ('I'). Despite this distinction, we know 'this' is only imagined and arises from [the self](thoughts/the%20Self.md).
 	- Consciousness, when this happens, does not become the elephant, nor does it cease to exist as the 'I' when taking on the elephant's form, it simplify manifests itself as something distinct from the 'this'.
 	- This plasticity is what the Śaivas call "freedom"
 - Internality is the reflective awareness 'I', externality is the reflective awareness 'this'
@@ -80,7 +80,7 @@ Descartes is this own conscious being. He has actually ascertained this himself 
 
 *[G presses play on the show and continues talking.]*
 
-For Descartes, the self is the thinking being. This was what his statement *“cogito, ergo sum”* posits (Descartes, p. 18-19). Existence must necessarily be true whenever it is put forward by me or conceived in my mind. In this second meditation, Descartes explores the concept of the "I" quite clearly, eventually resolving that both soul and body can be deceptions (p. 18-19) and only thought, above all else, is inseparable from the existence of the self (p. 20).
+For Descartes, [the self](thoughts/the%20Self.md) is the thinking being. This was what his statement *“cogito, ergo sum”* posits (Descartes, p. 18-19). Existence must necessarily be true whenever it is put forward by me or conceived in my mind. In this second meditation, Descartes explores the concept of the "I" quite clearly, eventually resolving that both soul and body can be deceptions (p. 18-19) and only thought, above all else, is inseparable from the existence of the self (p. 20).
 
 *[S pauses the show once again.]*
 

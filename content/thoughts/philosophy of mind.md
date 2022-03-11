@@ -9,7 +9,7 @@ tags:
 
 Guiding Questions
 - What is [consciousness](thoughts/consciousness.md)?  
-- What is the self?  
+- What is [the self](thoughts/the%20Self.md)?  
 - How are consciousness and the self related to the brain, the whole body, and the world?
 
 Subjects of discussion

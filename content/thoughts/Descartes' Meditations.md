@@ -111,7 +111,7 @@ Descartes, in his meditations, wishes to find a foundation of knowledge that wil
 
 In the Fifth Meditation, Descartes presents the argument as follows:
 1.  Suppose there is a supremely perfect being -- a being that has every possible 'perfect' trait. A supremely perfect being *must* have every possible perfect trait because to exclude any or all perfections from a supremely perfect being is to stumble into a contradiction or to "conceive of a mountain without a valley".
-2. Necessary existence is a perfection. It is an existence where one depends only on the self for existence (similar to the concept of independent origination in [emptiness](thoughts/emptiness.md)).
+2. Necessary existence is a perfection. It is an existence where one depends only on [the self](thoughts/the%20Self.md) for existence (similar to the concept of independent origination in [emptiness](thoughts/emptiness.md)).
 3. Necessary existence cannot be separated from the essence of a supremely perfect being.
 4. Therefore, a supremely perfect being exists -- it is God.
 
