@@ -1140,6 +1140,11 @@
         },
         {
           "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/Descartes-Meditations",
           "target": "/thoughts/emptiness",
           "text": "emptiness"
         }
@@ -1196,6 +1201,33 @@
           "source": "/thoughts/Do-Artifacts-Have-Politics",
           "target": "/thoughts/web3",
           "text": "web3"
+        }
+      ],
+      "/thoughts/Dreams": [
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/linguistic-relativism",
+          "text": "linguistic relativism"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
         }
       ],
       "/thoughts/Dunbars-Number": [
@@ -2031,6 +2063,11 @@
       "/thoughts/The-Upanisads": [
         {
           "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/the-Self",
+          "text": "The Self"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
           "target": "/thoughts/Descartes-Meditations",
           "text": "Cartesian Realism"
         }
@@ -2370,6 +2407,18 @@
           "source": "/thoughts/automation",
           "target": "/thoughts/positive-sum",
           "text": "positive sum"
+        }
+      ],
+      "/thoughts/autopoiesis": [
+        {
+          "source": "/thoughts/autopoiesis",
+          "target": "/thoughts/emergent-behaviour",
+          "text": "emergent behaviour"
+        },
+        {
+          "source": "/thoughts/autopoiesis",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "The Mental Demands of Modern Life"
         }
       ],
       "/thoughts/bandwidth": [
@@ -3171,13 +3220,8 @@
       "/thoughts/emptiness": [
         {
           "source": "/thoughts/emptiness",
-          "target": "/thoughts/representation",
-          "text": "connectionist representation"
-        },
-        {
-          "source": "/thoughts/emptiness",
-          "target": "/thoughts/emergent-behaviour",
-          "text": "emergent systems"
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
         }
       ],
       "/thoughts/ephemereal-content": [
@@ -3296,6 +3340,11 @@
           "source": "/thoughts/epistemology",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
         },
         {
           "source": "/thoughts/epistemology",
@@ -4369,6 +4418,18 @@
           "text": "Mindstorms"
         }
       ],
+      "/thoughts/interdependence": [
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/representation",
+          "text": "connectionist representation"
+        },
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/emergent-behaviour",
+          "text": "emergent systems"
+        }
+      ],
       "/thoughts/internet-computing": [
         {
           "source": "/thoughts/internet-computing",
@@ -5179,6 +5240,11 @@
         },
         {
           "source": "/thoughts/philosophy-of-mind",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/philosophy-of-mind",
           "target": "/thoughts/consciousness",
           "text": "Consciousness"
         },
@@ -5821,6 +5887,16 @@
           "source": "/thoughts/self-knowledge",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent behaviour"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
         }
       ],
       "/thoughts/selfish": [
@@ -5838,6 +5914,11 @@
           "source": "/thoughts/selfish",
           "target": "/thoughts/pain",
           "text": "pain"
+        },
+        {
+          "source": "/thoughts/selfish",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
         },
         {
           "source": "/thoughts/selfish",
@@ -6037,6 +6118,23 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/bias",
           "text": "biases"
+        }
+      ],
+      "/thoughts/the-Self": [
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoietic"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
         }
       ],
       "/thoughts/tools-for-thought": [
@@ -8033,6 +8131,11 @@
       ],
       "/thoughts/Ny%C4%81ya": [
         {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/Ny%C4%81ya",
+          "text": "Nyāya"
+        },
+        {
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/Ny%C4%81ya",
           "text": "Nyāya"
@@ -8252,6 +8355,11 @@
           "source": "/books",
           "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
           "text": "In Over Our Heads: The Mental Demands of Modern Life"
+        },
+        {
+          "source": "/thoughts/autopoiesis",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "The Mental Demands of Modern Life"
         }
       ],
       "/thoughts/The-Midnight-Library": [
@@ -8571,6 +8679,13 @@
           "source": "/thoughts/workflows",
           "target": "/thoughts/attention-economy",
           "text": "attention economy"
+        }
+      ],
+      "/thoughts/autopoiesis": [
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoietic"
         }
       ],
       "/thoughts/awareness": [
@@ -8958,6 +9073,11 @@
         }
       ],
       "/thoughts/consciousness": [
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
         {
           "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
           "target": "/thoughts/consciousness",
@@ -9700,14 +9820,14 @@
           "text": "emergent behaviour"
         },
         {
-          "source": "/thoughts/bandwidth",
+          "source": "/thoughts/autopoiesis",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent behaviour"
         },
         {
-          "source": "/thoughts/emptiness",
+          "source": "/thoughts/bandwidth",
           "target": "/thoughts/emergent-behaviour",
-          "text": "emergent systems"
+          "text": "emergent behaviour"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -9723,6 +9843,11 @@
           "source": "/thoughts/intentional-arrangement",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent behaviour"
+        },
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/emergent-behaviour",
+          "text": "emergent systems"
         },
         {
           "source": "/thoughts/play",
@@ -10344,6 +10469,11 @@
         },
         {
           "source": "/thoughts/soulbound",
+          "target": "/thoughts/games",
+          "text": "games"
+        },
+        {
+          "source": "/thoughts/the-Self",
           "target": "/thoughts/games",
           "text": "games"
         }
@@ -11072,6 +11202,18 @@
           "text": "interaction failure"
         }
       ],
+      "/thoughts/interdependence": [
+        {
+          "source": "/thoughts/emptiness",
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
+        }
+      ],
       "/thoughts/internet-computing": [
         {
           "source": "/posts/paid-open-source",
@@ -11255,6 +11397,11 @@
         }
       ],
       "/thoughts/linguistic-relativism": [
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/linguistic-relativism",
+          "text": "linguistic relativism"
+        },
         {
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/linguistic-relativism",
@@ -12280,11 +12427,6 @@
           "text": "representations"
         },
         {
-          "source": "/thoughts/emptiness",
-          "target": "/thoughts/representation",
-          "text": "connectionist representation"
-        },
-        {
           "source": "/thoughts/explainability",
           "target": "/thoughts/representation",
           "text": "representation"
@@ -12303,6 +12445,11 @@
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/representation",
           "text": "representations"
+        },
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/representation",
+          "text": "connectionist representation"
         },
         {
           "source": "/thoughts/mental-model",
@@ -12721,6 +12868,53 @@
           "source": "/thoughts/epistemology",
           "target": "/thoughts/testimony",
           "text": "testimony"
+        }
+      ],
+      "/thoughts/the-Self": [
+        {
+          "source": "/thoughts/Descartes-Meditations",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
+        },
+        {
+          "source": "/thoughts/Dreams",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/the-Self",
+          "text": "The Self"
+        },
+        {
+          "source": "/thoughts/epistemology",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/philosophy-of-mind",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/selfish",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
         }
       ],
       "/thoughts/tools-for-thought": [
@@ -14304,6 +14498,11 @@
     },
     {
       "source": "/thoughts/Descartes-Meditations",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
+      "source": "/thoughts/Descartes-Meditations",
       "target": "/thoughts/emptiness",
       "text": "emptiness"
     },
@@ -14356,6 +14555,31 @@
       "source": "/thoughts/Do-Artifacts-Have-Politics",
       "target": "/thoughts/web3",
       "text": "web3"
+    },
+    {
+      "source": "/thoughts/Dreams",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/Dreams",
+      "target": "/thoughts/the-Self",
+      "text": "the Self"
+    },
+    {
+      "source": "/thoughts/Dreams",
+      "target": "/thoughts/linguistic-relativism",
+      "text": "linguistic relativism"
+    },
+    {
+      "source": "/thoughts/Dreams",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
+      "source": "/thoughts/Dreams",
+      "target": "/thoughts/Ny%C4%81ya",
+      "text": "Nyāya"
     },
     {
       "source": "/thoughts/Dunbars-Number",
@@ -15109,6 +15333,11 @@
     },
     {
       "source": "/thoughts/The-Upanisads",
+      "target": "/thoughts/the-Self",
+      "text": "The Self"
+    },
+    {
+      "source": "/thoughts/The-Upanisads",
       "target": "/thoughts/Descartes-Meditations",
       "text": "Cartesian Realism"
     },
@@ -15416,6 +15645,16 @@
       "source": "/thoughts/automation",
       "target": "/thoughts/positive-sum",
       "text": "positive sum"
+    },
+    {
+      "source": "/thoughts/autopoiesis",
+      "target": "/thoughts/emergent-behaviour",
+      "text": "emergent behaviour"
+    },
+    {
+      "source": "/thoughts/autopoiesis",
+      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "text": "The Mental Demands of Modern Life"
     },
     {
       "source": "/thoughts/bandwidth",
@@ -16139,13 +16378,8 @@
     },
     {
       "source": "/thoughts/emptiness",
-      "target": "/thoughts/representation",
-      "text": "connectionist representation"
-    },
-    {
-      "source": "/thoughts/emptiness",
-      "target": "/thoughts/emergent-behaviour",
-      "text": "emergent systems"
+      "target": "/thoughts/interdependence",
+      "text": "interdependent"
     },
     {
       "source": "/thoughts/ephemereal-content",
@@ -16256,6 +16490,11 @@
       "source": "/thoughts/epistemology",
       "target": "/thoughts/self-knowledge",
       "text": "self-knowledge"
+    },
+    {
+      "source": "/thoughts/epistemology",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
     },
     {
       "source": "/thoughts/epistemology",
@@ -17253,6 +17492,16 @@
       "text": "Mindstorms"
     },
     {
+      "source": "/thoughts/interdependence",
+      "target": "/thoughts/representation",
+      "text": "connectionist representation"
+    },
+    {
+      "source": "/thoughts/interdependence",
+      "target": "/thoughts/emergent-behaviour",
+      "text": "emergent systems"
+    },
+    {
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/Internet",
       "text": "Internet"
@@ -17999,6 +18248,11 @@
     },
     {
       "source": "/thoughts/philosophy-of-mind",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
+      "source": "/thoughts/philosophy-of-mind",
       "target": "/thoughts/consciousness",
       "text": "Consciousness"
     },
@@ -18593,6 +18847,16 @@
       "text": "emergent behaviour"
     },
     {
+      "source": "/thoughts/self-knowledge",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
+      "source": "/thoughts/self-knowledge",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
       "source": "/thoughts/selfish",
       "target": "/thoughts/effective-altruism",
       "text": "altruism"
@@ -18606,6 +18870,11 @@
       "source": "/thoughts/selfish",
       "target": "/thoughts/pain",
       "text": "pain"
+    },
+    {
+      "source": "/thoughts/selfish",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
     },
     {
       "source": "/thoughts/selfish",
@@ -18781,6 +19050,21 @@
       "source": "/thoughts/testimony",
       "target": "/thoughts/bias",
       "text": "biases"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/games",
+      "text": "games"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/autopoiesis",
+      "text": "autopoietic"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/interdependence",
+      "text": "interdependent"
     },
     {
       "source": "/thoughts/tools-for-thought",
