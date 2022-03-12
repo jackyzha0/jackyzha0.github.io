@@ -2070,6 +2070,26 @@
           "source": "/thoughts/The-Upanisads",
           "target": "/thoughts/Descartes-Meditations",
           "text": "Cartesian Realism"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/Dreams",
+          "text": "Dreaming"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/death",
+          "text": "Death"
         }
       ],
       "/thoughts/The-ones-who-walk-away-from-Omelas": [
@@ -2212,6 +2232,11 @@
           "source": "/thoughts/UDP",
           "target": "/thoughts/Protocol",
           "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/UDP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         }
       ],
       "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley": [
@@ -2241,6 +2266,13 @@
           "source": "/thoughts/Urbit",
           "target": "/thoughts/digital-permanence",
           "text": "digital permanence"
+        }
+      ],
+      "/thoughts/VPN": [
+        {
+          "source": "/thoughts/VPN",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         }
       ],
       "/thoughts/Vanilla-Ice-Cream-effect": [
@@ -2783,6 +2815,16 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Stream-of-Consciousness",
           "text": "Stream of Consciousness"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/phenomenology",
+          "text": "phenomenologies"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "physicalist"
         }
       ],
       "/thoughts/consensus": [
@@ -2919,6 +2961,23 @@
           "source": "/thoughts/data-distributions",
           "target": "/thoughts/context",
           "text": "context"
+        }
+      ],
+      "/thoughts/death": [
+        {
+          "source": "/thoughts/death",
+          "target": "/thoughts/The-Upanisads",
+          "text": "The Upanisads"
+        },
+        {
+          "source": "/thoughts/death",
+          "target": "/thoughts/Epicurueanism",
+          "text": "Epicurueanism"
+        },
+        {
+          "source": "/thoughts/death",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
         }
       ],
       "/thoughts/debt": [
@@ -3271,6 +3330,46 @@
           "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/Nagels-Bat-Argument",
           "text": "Nagel's Bat Argument"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/testimony",
+          "text": "Testimony"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/philosophy-of-mind",
+          "text": "philosophy of mind"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/positive-sum",
+          "text": "positive sum"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/zero-sum",
+          "text": "zero sum"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/boundary-object",
+          "text": "boundary people"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/knowledge-distillation",
+          "text": "knowledge distillers"
         }
       ],
       "/thoughts/epistemic-injustice": [
@@ -4455,6 +4554,11 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Transport-Layer",
           "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -7448,6 +7552,13 @@
           "text": "Do Artifacts Have Politics"
         }
       ],
+      "/thoughts/Dreams": [
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/Dreams",
+          "text": "Dreaming"
+        }
+      ],
       "/thoughts/Dunbars-Number": [
         {
           "source": "/thoughts/communities",
@@ -7468,6 +7579,13 @@
           "source": "/thoughts/virtual-worlds",
           "target": "/thoughts/Dunbars-Number",
           "text": "Dunbar"
+        }
+      ],
+      "/thoughts/Epicurueanism": [
+        {
+          "source": "/thoughts/death",
+          "target": "/thoughts/Epicurueanism",
+          "text": "Epicurueanism"
         }
       ],
       "/thoughts/Experience": [
@@ -7961,6 +8079,11 @@
           "text": "Materialism"
         },
         {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "physicalist"
+        },
+        {
           "source": "/thoughts/mind-body-problem",
           "target": "/thoughts/Materialism",
           "text": "Materialism"
@@ -8318,6 +8441,23 @@
           "text": "Stream of Consciousness"
         }
       ],
+      "/thoughts/TCP": [
+        {
+          "source": "/thoughts/UDP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/VPN",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        }
+      ],
       "/thoughts/The-Grasshopper": [
         {
           "source": "/books",
@@ -8379,6 +8519,11 @@
       "/thoughts/The-Upanisads": [
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/The-Upanisads",
+          "text": "The Upanisads"
+        },
+        {
+          "source": "/thoughts/death",
           "target": "/thoughts/The-Upanisads",
           "text": "The Upanisads"
         }
@@ -8839,6 +8984,11 @@
           "text": "boundary object"
         },
         {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/boundary-object",
+          "text": "boundary people"
+        },
+        {
           "source": "/thoughts/play",
           "target": "/thoughts/boundary-object",
           "text": "boundary"
@@ -9090,6 +9240,16 @@
         },
         {
           "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/death",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
         },
@@ -9423,6 +9583,13 @@
           "source": "/thoughts/group-limits",
           "target": "/thoughts/data-distributions",
           "text": "distribution"
+        }
+      ],
+      "/thoughts/death": [
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/death",
+          "text": "Death"
         }
       ],
       "/thoughts/debt": [
@@ -11328,6 +11495,11 @@
           "text": "knowledge distillers"
         },
         {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/knowledge-distillation",
+          "text": "knowledge distillers"
+        },
+        {
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/knowledge-distillation",
           "text": "knowledge distillation"
@@ -11846,6 +12018,11 @@
           "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
           "target": "/thoughts/phenomenology",
           "text": "phenomenologist"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/phenomenology",
+          "text": "phenomenologies"
         }
       ],
       "/thoughts/philosophical-realism": [
@@ -11863,6 +12040,13 @@
           "source": "/thoughts/indeterminant",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
+        }
+      ],
+      "/thoughts/philosophy-of-mind": [
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/philosophy-of-mind",
+          "text": "philosophy of mind"
         }
       ],
       "/thoughts/philosophy-of-science": [
@@ -11982,6 +12166,11 @@
         },
         {
           "source": "/thoughts/economics",
+          "target": "/thoughts/positive-sum",
+          "text": "positive sum"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/positive-sum",
           "text": "positive sum"
         },
@@ -12860,6 +13049,11 @@
           "text": "testimony"
         },
         {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/testimony",
+          "text": "Testimony"
+        },
+        {
           "source": "/thoughts/epistemic-injustice",
           "target": "/thoughts/testimony",
           "text": "Testimonial"
@@ -12890,6 +13084,16 @@
           "source": "/thoughts/The-Upanisads",
           "target": "/thoughts/the-Self",
           "text": "The Self"
+        },
+        {
+          "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
         },
         {
           "source": "/thoughts/epistemology",
@@ -13065,6 +13269,11 @@
         },
         {
           "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/trust",
           "text": "trust"
         },
@@ -13424,6 +13633,11 @@
         },
         {
           "source": "/thoughts/decentralization",
+          "target": "/thoughts/zero-sum",
+          "text": "zero sum"
+        },
+        {
+          "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/zero-sum",
           "text": "zero sum"
         },
@@ -15342,6 +15556,26 @@
       "text": "Cartesian Realism"
     },
     {
+      "source": "/thoughts/The-Upanisads",
+      "target": "/thoughts/the-Self",
+      "text": "the Self"
+    },
+    {
+      "source": "/thoughts/The-Upanisads",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/The-Upanisads",
+      "target": "/thoughts/Dreams",
+      "text": "Dreaming"
+    },
+    {
+      "source": "/thoughts/The-Upanisads",
+      "target": "/thoughts/death",
+      "text": "Death"
+    },
+    {
       "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
       "target": "/thoughts/utopia",
       "text": "utopia"
@@ -15472,6 +15706,11 @@
       "text": "Protocol"
     },
     {
+      "source": "/thoughts/UDP",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
+    },
+    {
       "source": "/thoughts/Unrepeatable-Miracle-of-Silicon-Valley",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "From Counterculture to Cyberculture"
@@ -15495,6 +15734,11 @@
       "source": "/thoughts/Urbit",
       "target": "/thoughts/digital-permanence",
       "text": "digital permanence"
+    },
+    {
+      "source": "/thoughts/VPN",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/Vanilla-Ice-Cream-effect",
@@ -15987,6 +16231,16 @@
       "text": "Stream of Consciousness"
     },
     {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/phenomenology",
+      "text": "phenomenologies"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Materialism",
+      "text": "physicalist"
+    },
+    {
       "source": "/thoughts/consensus",
       "target": "/thoughts/fault-tolerance",
       "text": "fault tolerance"
@@ -16105,6 +16359,21 @@
       "source": "/thoughts/data-distributions",
       "target": "/thoughts/context",
       "text": "context"
+    },
+    {
+      "source": "/thoughts/death",
+      "target": "/thoughts/The-Upanisads",
+      "text": "The Upanisads"
+    },
+    {
+      "source": "/thoughts/death",
+      "target": "/thoughts/Epicurueanism",
+      "text": "Epicurueanism"
+    },
+    {
+      "source": "/thoughts/death",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
     },
     {
       "source": "/thoughts/debt",
@@ -16425,6 +16694,46 @@
       "source": "/thoughts/epistemic-authority",
       "target": "/thoughts/Nagels-Bat-Argument",
       "text": "Nagel's Bat Argument"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/testimony",
+      "text": "Testimony"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/philosophy-of-mind",
+      "text": "philosophy of mind"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/positive-sum",
+      "text": "positive sum"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/zero-sum",
+      "text": "zero sum"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/boundary-object",
+      "text": "boundary people"
+    },
+    {
+      "source": "/thoughts/epistemic-authority",
+      "target": "/thoughts/knowledge-distillation",
+      "text": "knowledge distillers"
     },
     {
       "source": "/thoughts/epistemic-injustice",
@@ -17525,6 +17834,11 @@
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/Transport-Layer",
       "text": "Transport Layer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/internet-computing",

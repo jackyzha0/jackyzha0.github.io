@@ -448,7 +448,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet Computing</h1>
     <article>
       <p class="meta">
-          Last updated March 10, 2022
+          Last updated March 11, 2022
       </p>
       <ul class="tags">
     
@@ -474,12 +474,10 @@ if (!doNotTrack) {
     <li><a href="#network-metrics--peformance">Network Metrics / Peformance</a></li>
     <li><a href="#sliding-window">Sliding Window</a>
       <ol>
+        <li><a href="#go-back-n">Go-back-N</a></li>
         <li><a href="#receiver">Receiver</a></li>
         <li><a href="#sender">Sender</a></li>
-      </ol>
-    </li>
-    <li><a href="#selective-repeat-strategy">Selective-Repeat Strategy</a>
-      <ol>
+        <li><a href="#selective-repeat-strategy">Selective-Repeat Strategy</a></li>
         <li><a href="#receiver-1">Receiver</a></li>
         <li><a href="#sender-1">Sender</a></li>
       </ol>
@@ -543,7 +541,10 @@ administrated entities into a common entity</p>
 <li>
 
 
-<a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">Transport Layer</a> (TCP, 
+<a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">Transport Layer</a> (
+
+
+<a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a>, 
 
 
 <a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a>)</li>
@@ -771,10 +772,23 @@ administrated entities into a common entity</p>
 </ul>
 <h2 id="sliding-window">Sliding Window</h2>
 <ul>
-<li>When we allow multiple packets in flight, modelling this with a finite state machine is less than ideal</li>
-<li>We can use a sliding window to represent the &lsquo;window&rsquo; of all bits that are in flight</li>
-<li>Timeout: how much longer should I wait for the ack for the first packet in my window</li>
+<li>
+<p>When we allow multiple packets in flight, modelling this with a finite state machine is less than ideal</p>
+</li>
+<li>
+<p>We can use a sliding window to represent the &lsquo;window&rsquo; of all bits that are in flight</p>
+</li>
+<li>
+<p>Timeout: how much longer should I wait for the ack for the first packet in my window</p>
+</li>
+<li>
+<p>Big window costs us memory</p>
+</li>
+<li>
+<p>Smaller window is easier to reason about</p>
+</li>
 </ul>
+<h3 id="go-back-n">Go-back-N</h3>
 <h3 id="receiver">Receiver</h3>
 <ul>
 <li>When packet is received, send ACK for last packet received in order</li>
@@ -790,7 +804,7 @@ administrated entities into a common entity</p>
 <p>
 
 <a href="https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/go-back-n-protocol/index.html" rel="noopener">Simulation Link</a></p>
-<h2 id="selective-repeat-strategy">Selective-Repeat Strategy</h2>
+<h3 id="selective-repeat-strategy">Selective-Repeat Strategy</h3>
 <h3 id="receiver-1">Receiver</h3>
 <ul>
 <li>Each packet is ack&rsquo;ed individually</li>
@@ -806,6 +820,11 @@ administrated entities into a common entity</p>
 <p>
 
 <a href="https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html" rel="noopener">Simulation Link</a></p>
+<p>Congestion Control</p>
+<ul>
+<li>If the network can&rsquo;t handle a full window&rsquo;s worth of data (packets + ACKs are dropped by routers) then sender can reduce sending window</li>
+<li>If all packets are ACKed, we can increase the window again</li>
+</ul>
 
 
     </article>
