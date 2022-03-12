@@ -27,3 +27,36 @@ Theories of consciousness
 	- e.g. [Integrated Information Theory of Consciousness (IIT)](thoughts/Integrated%20Information%20Theory%20of%20Consciousness%20(IIT).md)
 - Higher-order theories: consciousness involves something done to build on that cognitive representation of the sensory experience
 	- e.g. [Stream of Consciousness](thoughts/Stream%20of%20Consciousness.md)
+
+## Minimal Phenomenal Experience
+Simplest form in which a state can be phenomenally conscious
+
+Dreamless sleep experience is a candidate for this
+
+Background [phenomenologies](thoughts/phenomenology.md) claim these experiences combine
+- minimal dimensionality (of awareness)
+- maximal prototypicality (overlap with other states/modes of awareness)
+
+If we find a minimal form of phenomenal experience in all forms of phenomenal content and underlies all conscious experience, then this model would amount to solving the problem of consciousness as such
+
+Problems for interpreting reports of pure awareness in meditative experience
+1. Embodied theory contamination: background theoretical assumptions strongly condition personal beliefs and thus processing and reporting
+2. Conceptual consistency: how does one interpret words like "perceive", "luminous", "radiant" in reports of experiences that are supposed to be "contentless"
+3. Performative self-contradiction: "I experienced a selfless state" is a self-contradictory 
+
+### Metzinger's 6D concept of MPE
+1. PC1 - Wakefulness: phenomenal quality of tonic alertness (intrinsic arousal and focus of attention)
+2. PC2 - Low Complexity: absence of high-level symbolic mental content, perceptual, sensorimotor, emotional content
+3. PC3 - Self-luminosity: the "clear light" of primordial awareness
+4. PC4 - Introspective Availability: can we introspect on our current mental state
+5. PC5 - Epistemicity: feeling of knowing or subjective quality of confidence (doesn't logically entail actual knowledge)
+6. PC6 - Transparency/Opacity: transparent means only intentional-content properties of the state can be introspected whereas opacity means properties of the carrier/vehicle of the state can also be introspected
+
+![](thoughts/images/6d%20MPE.png)
+
+### Ascending Reticular Activating System (ARAS)
+This system determines the brain's general level of activation.
+
+Pure awareness is experienced as "contentless" although it is actually a representation of ARAS
+
+This model is [physicalist](thoughts/Materialism.md) (awareness-as-such is constituted by the brain) and representationalist (awareness-as-such is a neurally constituted representation of the brain's auto-activated wakefulness -- character is tonic alertness with a feeling of knowing)

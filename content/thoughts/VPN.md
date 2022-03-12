@@ -15,7 +15,7 @@ Motivation:
 ![](thoughts/images/VPN.jpeg)
 
 VPN Encapsulation
-- Virtual end points establish software association between them (e.g. TCP connection) usually referred to as a tunnel
+- Virtual end points establish software association between them (e.g. [TCP](thoughts/TCP.md) connection) usually referred to as a tunnel
 - Routing rules on local machine send traffic to virtual interface
 - Virtual card encapsulates IP message and sends it through tunnel
 - Receiver receives message and sends it through its own network

@@ -14,7 +14,7 @@ tags:
 
 68 is usually client, 67 is usually server
 
-For reliable networks (like local) where out-of-order protections of TCP are unnecessary, or for time sensitive applications (e.g. streams or calls) where lossy transmission at high speed is better than quality transmission at choppy speed.
+For reliable networks (like local) where out-of-order protections of [TCP](thoughts/TCP.md) are unnecessary, or for time sensitive applications (e.g. streams or calls) where lossy transmission at high speed is better than quality transmission at choppy speed.
 
 Segment Format
 - Source Port (16 bits)

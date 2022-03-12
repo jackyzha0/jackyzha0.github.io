@@ -46,7 +46,7 @@ Types
 Each layer takes data from above adds header information to create new data unit passes new data unit to layer below
 
 1. [Application Layer](thoughts/Application%20Layer.md)
-2. [Transport Layer](thoughts/Transport%20Layer.md) (TCP, [UDP](thoughts/UDP.md))
+2. [Transport Layer](thoughts/Transport%20Layer.md) ([TCP](thoughts/TCP.md), [UDP](thoughts/UDP.md))
 3. [Network Layer](thoughts/Network%20Layer.md) ([IP Addresses](thoughts/IP%20Addresses.md)) -- this is the 'thinnest' part of the network stack!
 4. [Link Layer](thoughts/Link%20Layer.md)
 5. [Physical Layer](thoughts/Physical%20Layer.md)
@@ -155,6 +155,10 @@ Traffic Intensity
 - We can use a sliding window to represent the 'window' of all bits that are in flight
 - Timeout: how much longer should I wait for the ack for the first packet in my window
 
+- Big window costs us memory
+- Smaller window is easier to reason about
+
+### Go-back-N
 ### Receiver
 - When packet is received, send ACK for last packet received in order
 - Discard arriving packet if out of order (receiver window is 1)
@@ -166,7 +170,7 @@ Traffic Intensity
 
 [Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/go-back-n-protocol/index.html)
 
-## Selective-Repeat Strategy
+### Selective-Repeat Strategy
 ### Receiver
 - Each packet is ack'ed individually
 - Out of order packet is stored for later: receiver's window
@@ -177,3 +181,8 @@ Traffic Intensity
 - ACKs received in order move the sender's window
 
 [Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html)
+
+Congestion Control
+- If the network can't handle a full window's worth of data (packets + ACKs are dropped by routers) then sender can reduce sending window
+- If all packets are ACKed, we can increase the window again
+

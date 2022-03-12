@@ -13,13 +13,7 @@ An inverse is absence, particularly visual absence
 ## On Having No Head
 *D. E. Harding*
 
-> What actually happened was something absurdly simple and  
-unspectacular: just for the moment I stopped thinking.  
-Reason and imagination and all mental chatter died down.  
-For once, words really failed me. I forgot my name, my  
-humanness, my thingness, all that could be called me or  
-mine. Past and future dropped away. It was as if I had been  
-born that instant, brand new, mindless, innocent of all  
+> What actually happened was something absurdly simple and unspectacular: just for the moment I stopped thinking. Reason and imagination and all mental chatter died down. For once, words really failed me. I forgot my name, my humanness, my thingness, all that could be called me or mine. Past and future dropped away. It was as if I had been born that instant, brand new, mindless, innocent of all  
 memories. There existed only the Now, that present moment  
 and what was clearly given in it. To look was enough.
 
