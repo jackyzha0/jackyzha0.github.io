@@ -20,4 +20,6 @@ Thus, form is emptiness but emptiness is form (existence is to depend on others)
 ## Indra's Net
 [Source: Indra's net on *Wikipedia*](https://en.wikipedia.org/wiki/Indra%27s_net)
 
+Imagine a net stretching out infinitely in all directions with a monadic-like jewel at each node that reflects every one, including itself. These objects are nodes in a net of ontological interdependence, one in all and all in one.
+
 ![](thoughts/images/Indra's%20Net.png)

@@ -22,3 +22,13 @@ How does this fit into low [bandwidth](thoughts/bandwidth.md) communication?
 - In this way, the laws of chemistry can be said to be emergent from physics: the laws of chemistry presuppose the laws of physics, but can’t simply be reduced to them.
 - In the same way, the laws of biology emerge from chemistry: one obviously needs to understand the chemical components of a fish to understand how it swims, but chemical components will never provide a full explanation.
 - In the same way, the human mind can be said to be emergent from the cells that make it up.
+
+## Combination Problem
+How do microlevel experiences combine to form macrolevel ones?
+
+"Take a sentence of a dozen words, and take twelve men and tell to each one word. Then stand the men in a row or jam them in a bunch, and let each think of his word as intently as he will; nowhere will there be a consciousness of the whole sentence"
+
+### [Panpsychist](thoughts/Panpsychism.md) response
+Mental properties belong only to genuine individuals, not to mere aggregates
+
+Then, what is the boundary of the genuine individual? This is a problem of embodiment. To be a genuine individual is not simply to be a particular (as opposed to a conglomerate or universal) but also a system that has some kind of bounded organizational unity through [autopoiesis](thoughts/autopoiesis.md) -- this is a body

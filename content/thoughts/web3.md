@@ -7,9 +7,9 @@ tags:
 
 > **Web3 is the open-source ethic extended beyond code as static artifacts but rather as live organisms.**
 
-While crypto protocols operate as open networks, do they truly enact a [public](thoughts/public%20goods.md) if solely comprised of private capital?
+Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social%20contracts.md)" However, blockchain as a technology only *enables* [decentralization](thoughts/decentralization.md), it doesn't guarantee it.
 
-Crypto systems are interesting, they are "decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and [social consensus](thoughts/social%20contracts.md)" However, blockchain as a technology only *enables* decentralization, it doesn't guarantee it.
+> “The point isn’t ‘web3’, it isn’t ‘decentralization’ for the word’s sake. The point is developing tools that allow us to leverage computers to collaborate more effectively. It’s about accountability and choosing for ourselves what to trust. It’s about withholding trust from strangers on the internet but holding out the belief that we can build a better way.” ([Dan Finlay](https://medium.com/@danfinlay/what-moxie-missed-on-web3-wallets-8dc572e7f39b))
 
 The cyberpunk spirit: the basic property of which adversarial conflict continues to heavily favour the defender. **It should be much more expensive to destroy or disrupt than they are to use and maintain** -- [Vitalkik Buterin](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
