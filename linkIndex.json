@@ -1785,6 +1785,23 @@
           "text": "Descartes' Dream Argument"
         }
       ],
+      "/thoughts/Panpsychism": [
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/Materialism",
+          "text": "Materialism"
+        },
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/Materialism",
+          "text": "Physicalism"
+        },
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/philosophical-realism",
+          "text": "philosophical realism"
+        }
+      ],
       "/thoughts/Physical-Layer": [
         {
           "source": "/thoughts/Physical-Layer",
@@ -2825,6 +2842,16 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Materialism",
           "text": "physicalist"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/emptiness",
+          "text": "empty"
         }
       ],
       "/thoughts/consensus": [
@@ -3274,6 +3301,16 @@
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/bandwidth",
           "text": "bandwidth"
+        },
+        {
+          "source": "/thoughts/emergent-behaviour",
+          "target": "/thoughts/Panpsychism",
+          "text": "Panpsychist"
+        },
+        {
+          "source": "/thoughts/emergent-behaviour",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoiesis"
         }
       ],
       "/thoughts/emptiness": [
@@ -6610,13 +6647,13 @@
       "/thoughts/web3": [
         {
           "source": "/thoughts/web3",
-          "target": "/thoughts/public-goods",
-          "text": "public"
+          "target": "/thoughts/social-contracts",
+          "text": "social consensus"
         },
         {
           "source": "/thoughts/web3",
-          "target": "/thoughts/social-contracts",
-          "text": "social consensus"
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
         },
         {
           "source": "/thoughts/web3",
@@ -8079,6 +8116,16 @@
           "text": "Materialism"
         },
         {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/Materialism",
+          "text": "Materialism"
+        },
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/Materialism",
+          "text": "Physicalism"
+        },
+        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Materialism",
           "text": "physicalist"
@@ -8282,6 +8329,13 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/Ny%C4%81ya",
           "text": "Nyāya"
+        }
+      ],
+      "/thoughts/Panpsychism": [
+        {
+          "source": "/thoughts/emergent-behaviour",
+          "target": "/thoughts/Panpsychism",
+          "text": "Panpsychist"
         }
       ],
       "/thoughts/Physical-Layer": [
@@ -8827,6 +8881,11 @@
         }
       ],
       "/thoughts/autopoiesis": [
+        {
+          "source": "/thoughts/emergent-behaviour",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoiesis"
+        },
         {
           "source": "/thoughts/the-Self",
           "target": "/thoughts/autopoiesis",
@@ -9678,6 +9737,11 @@
         {
           "source": "/thoughts/web3",
           "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/decentralization",
           "text": "Decentralization"
         }
       ],
@@ -10052,6 +10116,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/emptiness",
           "text": "emptiness"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/emptiness",
+          "text": "empty"
         },
         {
           "source": "/thoughts/context",
@@ -12032,6 +12101,11 @@
           "text": "philosophical realism"
         },
         {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/philosophical-realism",
+          "text": "philosophical realism"
+        },
+        {
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
@@ -12412,11 +12486,6 @@
         {
           "source": "/thoughts/web3",
           "target": "/thoughts/public-goods",
-          "text": "public"
-        },
-        {
-          "source": "/thoughts/web3",
-          "target": "/thoughts/public-goods",
           "text": "Public Goods"
         }
       ],
@@ -12465,6 +12534,11 @@
         },
         {
           "source": "/thoughts/bandwidth",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
+          "source": "/thoughts/consciousness",
           "target": "/thoughts/qualia",
           "text": "qualia"
         },
@@ -15301,6 +15375,21 @@
       "text": "Descartes' Dream Argument"
     },
     {
+      "source": "/thoughts/Panpsychism",
+      "target": "/thoughts/Materialism",
+      "text": "Materialism"
+    },
+    {
+      "source": "/thoughts/Panpsychism",
+      "target": "/thoughts/Materialism",
+      "text": "Physicalism"
+    },
+    {
+      "source": "/thoughts/Panpsychism",
+      "target": "/thoughts/philosophical-realism",
+      "text": "philosophical realism"
+    },
+    {
       "source": "/thoughts/Physical-Layer",
       "target": "/thoughts/Link-Layer",
       "text": "Link Layer"
@@ -16241,6 +16330,16 @@
       "text": "physicalist"
     },
     {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/qualia",
+      "text": "qualia"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/emptiness",
+      "text": "empty"
+    },
+    {
       "source": "/thoughts/consensus",
       "target": "/thoughts/fault-tolerance",
       "text": "fault tolerance"
@@ -16644,6 +16743,16 @@
       "source": "/thoughts/emergent-behaviour",
       "target": "/thoughts/bandwidth",
       "text": "bandwidth"
+    },
+    {
+      "source": "/thoughts/emergent-behaviour",
+      "target": "/thoughts/Panpsychism",
+      "text": "Panpsychist"
+    },
+    {
+      "source": "/thoughts/emergent-behaviour",
+      "target": "/thoughts/autopoiesis",
+      "text": "autopoiesis"
     },
     {
       "source": "/thoughts/emptiness",
@@ -19767,13 +19876,13 @@
     },
     {
       "source": "/thoughts/web3",
-      "target": "/thoughts/public-goods",
-      "text": "public"
+      "target": "/thoughts/social-contracts",
+      "text": "social consensus"
     },
     {
       "source": "/thoughts/web3",
-      "target": "/thoughts/social-contracts",
-      "text": "social consensus"
+      "target": "/thoughts/decentralization",
+      "text": "decentralization"
     },
     {
       "source": "/thoughts/web3",
