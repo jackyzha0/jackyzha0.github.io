@@ -77,3 +77,65 @@ The horizon itself is [empty](thoughts/emptiness.md)
 In science, we constantly forget that lived experience is the source of science and its ground of validity, not the other way around.
 
 Kant defines 'transcendental knowledge' as knowledge which is occupied not so much with objects as with the mode of our knowledge of objects in so far as this mode of knowledge is to be possible *a priori*
+
+## Problems with information theories of consciousness
+[Frontiers in Systems Neuroscience](https://www.frontiersin.org/articles/10.3389/fnsys.2014.00225/full)
+
+Two main camps
+1. Radical behaviourists: all talk of the mind could be translated, without scientific loss, into talk about behaviour
+2. Cognitivists: all talk of the mind (including consciousness) could translated, without scientific loss, into talk about information processing
+
+### Cognitivists
+Theories that equate consciousness with information or information processing are dualist in nature
+
+Chalmers (in The Conscious Mind: in Search of a Fundamental Theory) defines information in the actual world as having two aspects
+1. Physical
+2. Phenomenal
+
+However, [information](thoughts/information.md) is usually defined at odds to this
+1. Information is often used to refer to non-mental, user-independent, declarative semantic contents, embedded *in* physical implementations (Floridi, 2005)
+	1. Important distinction: Physical things encode and embed information but themselves are not information
+	2. James Joyce's copy of Dante's Inferno may _carry_ information, but it is not itself information—it's just an arrangement of paper and ink
+	3. Your brain when he looks at an octopus may encode information, but it is not itself information
+2. An objective (mind-independent) entity... information can be encoded and transmitted, but the information would exist independently of its encoding or transmission
+
+Seriality problem
+- While the brain works as a parallel distributed network with virtually unlimited resources, conscoius events appear consecutive and momentary capacity is strongly limited. Multi-tasking is notoriously hard. Theories regarding consciousness as a particular case of brain information processing must suggest a specific mechanism for creating serial processes from a collection of parallel ones
+- Not a problem for behaviour-based theories as behaviour is a series of agent-environment interactions. Attention budget, more complex behaviours take more bandwidth and thus require more focus (need to be done in serial). Things can be trained to reduce focus needed (e.g. walking and talking)
+
+Problematic: thermostats (for example) clearly carry information, but are not widely regarded as having any degree of consciousness
+
+Chalmers has two options:
+1. Perhaps only some kinds of “physically realized information spaces” are conscious.
+2. Perhaps thermostats are conscious (option that Chalmers chose). Suggests that "the level of organization at which consciousness “winks out” might be lower than a thermostat but higher than a rock."
+
+Tononi's [Integrated Information Theory of Consciousness (IIT)](thoughts/Integrated%20Information%20Theory%20of%20Consciousness%20(IIT).md)
+- Resolution to this problem is choosing that only *integrated* information is conscious
+- IIT does not even answer this question directly, only correlating the two and correlation is most definitely neither definition nor causation: "To recapitulate, the theory claims that consciousness _corresponds to_ the capacity to integrate information"
+
+### Behaviourist approaches
+[Boris Kotchoubey in Frontiers in Psychology](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00567/full)
+
+Human consciousness emerges on the interface between three components of animal behaviour:
+1. Communication
+2. Play
+3. Use of tools
+
+Behaviour, in this context, is a biological adjustment by means of movements and all kinds of movement-related physiological activity
+
+Communication and play yields symbolic games and, more importantly, language
+
+Interaction between symbols and tools results in human [praxis](thoughts/praxis.md)
+
+Life is a continuous battle against the second law of thermodynamics. All organisms' needs can be subsumed as a need in negentropy
+
+1. [Play](thoughts/play.md): Play, therefore, introduces something that can be called “second reality” (Vygotsky, 1978). In this reality the life is going on as if it is the “primary reality,” but with the nice difference that whenever I don't like what happens, I simply stop the process and go out, or start it anew. This makes play suspiciously like consciousness
+2. Tools: A stick is eventually manipulated “just for fun,” and then, suddenly, it turns out to be useful. Thus no animals unable to play can use tools.
+3. Communication: behaviour whose main effect is changing the behaviour of another animal
+
+![](thoughts/images/Sources%20of%20consciousness.png)
+
+Consciousness is then the simulated or [potemkin village](thoughts/potemkin%20village.md) of reality. In words of Karl Popper, instead of dying as a result of our errors, we can let our hypotheses die on our site ([Popper, 1963](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00567/full#B143)).
+
+We do not consciously think (construct this virtual reality) all the time. Consciousness is the *capacity* to consciously think ([telerobotics](thoughts/telerobotics.md) vs telepresence)
+
