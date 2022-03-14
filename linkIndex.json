@@ -1074,6 +1074,23 @@
           "text": "creation vs maintenance"
         }
       ],
+      "/thoughts/Consciousness-is-not-Information": [
+        {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Stream-of-Consciousness",
+          "text": "stream of consciousness"
+        },
+        {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist"
+        },
+        {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Goodharts-Law",
+          "text": "Goodhart's Law"
+        }
+      ],
       "/thoughts/DHCP": [
         {
           "source": "/thoughts/DHCP",
@@ -2882,6 +2899,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/telerobotics",
           "text": "telerobotics"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "Consciousness is not Information"
         }
       ],
       "/thoughts/consensus": [
@@ -7428,6 +7450,13 @@
           "text": "Collingridge dilemma"
         }
       ],
+      "/thoughts/Consciousness-is-not-Information": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "Consciousness is not Information"
+        }
+      ],
       "/thoughts/DHCP": [
         {
           "source": "/thoughts/internet-computing",
@@ -7784,6 +7813,11 @@
         }
       ],
       "/thoughts/Goodharts-Law": [
+        {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Goodharts-Law",
+          "text": "Goodhart's Law"
+        },
         {
           "source": "/thoughts/game-design",
           "target": "/thoughts/Goodharts-Law",
@@ -8373,6 +8407,11 @@
       ],
       "/thoughts/Panpsychism": [
         {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist"
+        },
+        {
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/Panpsychism",
           "text": "Panpsychist"
@@ -8529,6 +8568,11 @@
         }
       ],
       "/thoughts/Stream-of-Consciousness": [
+        {
+          "source": "/thoughts/Consciousness-is-not-Information",
+          "target": "/thoughts/Stream-of-Consciousness",
+          "text": "stream of consciousness"
+        },
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Stream-of-Consciousness",
@@ -14800,6 +14844,21 @@
       "text": "creation vs maintenance"
     },
     {
+      "source": "/thoughts/Consciousness-is-not-Information",
+      "target": "/thoughts/Stream-of-Consciousness",
+      "text": "stream of consciousness"
+    },
+    {
+      "source": "/thoughts/Consciousness-is-not-Information",
+      "target": "/thoughts/Panpsychism",
+      "text": "panpsychist"
+    },
+    {
+      "source": "/thoughts/Consciousness-is-not-Information",
+      "target": "/thoughts/Goodharts-Law",
+      "text": "Goodhart's Law"
+    },
+    {
       "source": "/thoughts/DHCP",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
@@ -16438,6 +16497,11 @@
       "source": "/thoughts/consciousness",
       "target": "/thoughts/telerobotics",
       "text": "telerobotics"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Consciousness-is-not-Information",
+      "text": "Consciousness is not Information"
     },
     {
       "source": "/thoughts/consensus",
