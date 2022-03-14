@@ -139,3 +139,4 @@ Consciousness is then the simulated or [potemkin village](thoughts/potemkin%20vi
 
 We do not consciously think (construct this virtual reality) all the time. Consciousness is the *capacity* to consciously think ([telerobotics](thoughts/telerobotics.md) vs telepresence)
 
+Essay 2 for PHIL451A: [Consciousness is not Information](thoughts/Consciousness%20is%20not%20Information.md)
