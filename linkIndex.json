@@ -1424,8 +1424,8 @@
         },
         {
           "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
-          "target": "/thoughts/self-knowledge",
-          "text": "self-knowledge"
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
         }
       ],
       "/thoughts/Interact-Circle-W21": [
@@ -2852,6 +2852,36 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/emptiness",
           "text": "empty"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "text": "Integrated Information Theory of Consciousness (IIT)"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/praxis",
+          "text": "praxis"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/play",
+          "text": "Play"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/potemkin-village",
+          "text": "potemkin village"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/telerobotics",
+          "text": "telerobotics"
         }
       ],
       "/thoughts/consensus": [
@@ -6036,6 +6066,11 @@
         },
         {
           "source": "/thoughts/self-knowledge",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
           "target": "/thoughts/the-Self",
           "text": "the self"
         }
@@ -7873,6 +7908,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
           "text": "Integrated Information Theory of Consciousness (IIT)"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "text": "Integrated Information Theory of Consciousness (IIT)"
         }
       ],
       "/thoughts/Interact-Circle-W21": [
@@ -9284,6 +9324,11 @@
       "/thoughts/consciousness": [
         {
           "source": "/thoughts/Dreams",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
         },
@@ -11042,6 +11087,11 @@
           "text": "information"
         },
         {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
           "source": "/thoughts/data-distributions",
           "target": "/thoughts/information",
           "text": "information"
@@ -12182,6 +12232,11 @@
           "text": "playful"
         },
         {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/play",
+          "text": "Play"
+        },
+        {
           "source": "/thoughts/exploit-explore",
           "target": "/thoughts/play",
           "text": "play"
@@ -12306,6 +12361,11 @@
           "text": "potemkin villages"
         },
         {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/potemkin-village",
+          "text": "potemkin village"
+        },
+        {
           "source": "/thoughts/machine-learning",
           "target": "/thoughts/potemkin-village",
           "text": "Potemkin village"
@@ -12324,6 +12384,11 @@
         }
       ],
       "/thoughts/praxis": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/praxis",
+          "text": "praxis"
+        },
         {
           "source": "/thoughts/meaning",
           "target": "/thoughts/praxis",
@@ -12805,17 +12870,17 @@
       ],
       "/thoughts/self-knowledge": [
         {
-          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
-          "target": "/thoughts/self-knowledge",
-          "text": "self-knowledge"
-        },
-        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
         },
         {
           "source": "/thoughts/epistemology",
+          "target": "/thoughts/self-knowledge",
+          "text": "self-knowledge"
+        },
+        {
+          "source": "/thoughts/self-knowledge",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
         },
@@ -13031,6 +13096,11 @@
         }
       ],
       "/thoughts/telerobotics": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/telerobotics",
+          "text": "telerobotics"
+        },
         {
           "source": "/thoughts/downward-causation",
           "target": "/thoughts/telerobotics",
@@ -15046,8 +15116,8 @@
     },
     {
       "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
-      "target": "/thoughts/self-knowledge",
-      "text": "self-knowledge"
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
     },
     {
       "source": "/thoughts/Interact-Circle-W21",
@@ -16338,6 +16408,36 @@
       "source": "/thoughts/consciousness",
       "target": "/thoughts/emptiness",
       "text": "empty"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/information",
+      "text": "information"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "text": "Integrated Information Theory of Consciousness (IIT)"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/praxis",
+      "text": "praxis"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/play",
+      "text": "Play"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/potemkin-village",
+      "text": "potemkin village"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/telerobotics",
+      "text": "telerobotics"
     },
     {
       "source": "/thoughts/consensus",
@@ -19273,6 +19373,11 @@
       "source": "/thoughts/self-knowledge",
       "target": "/thoughts/the-Self",
       "text": "the self"
+    },
+    {
+      "source": "/thoughts/self-knowledge",
+      "target": "/thoughts/self-knowledge",
+      "text": "self-knowledge"
     },
     {
       "source": "/thoughts/self-knowledge",
