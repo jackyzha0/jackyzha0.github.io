@@ -1512,6 +1512,36 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/trust",
           "text": "trust"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/gate-keeping",
+          "text": "gate keeping"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Moderation",
+          "text": "Moderation"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counterculture"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/censorship",
+          "text": "censor"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/ephemereal-content",
+          "text": "ephemereal content"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/creation-vs-maintenance",
+          "text": "maintenance"
         }
       ],
       "/thoughts/Knowledge-Argument": [
@@ -1664,6 +1694,18 @@
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/teaching",
           "text": "teaching"
+        }
+      ],
+      "/thoughts/Moderation": [
+        {
+          "source": "/thoughts/Moderation",
+          "target": "/thoughts/communities",
+          "text": "communities"
+        },
+        {
+          "source": "/thoughts/Moderation",
+          "target": "/thoughts/infrastructure",
+          "text": "infrastructure"
         }
       ],
       "/thoughts/Moving-Castles": [
@@ -2405,6 +2447,11 @@
           "source": "/thoughts/accountability",
           "target": "/thoughts/pseudonymity",
           "text": "pseudonymous"
+        },
+        {
+          "source": "/thoughts/accountability",
+          "target": "/thoughts/Moderation",
+          "text": "moderation"
         },
         {
           "source": "/thoughts/accountability",
@@ -3863,6 +3910,28 @@
           "text": "Goodhart's Law"
         }
       ],
+      "/thoughts/gate-keeping": [
+        {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
+        },
+        {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        }
+      ],
       "/thoughts/generational-learning": [
         {
           "source": "/thoughts/generational-learning",
@@ -3878,13 +3947,8 @@
       "/thoughts/governance": [
         {
           "source": "/thoughts/governance",
-          "target": "/thoughts/communities",
-          "text": "communities"
-        },
-        {
-          "source": "/thoughts/governance",
-          "target": "/thoughts/infrastructure",
-          "text": "infrastructure"
+          "target": "/thoughts/Moderation",
+          "text": "Moderation"
         },
         {
           "source": "/thoughts/governance",
@@ -3987,6 +4051,11 @@
           "source": "/thoughts/group-limits",
           "target": "/thoughts/friendship",
           "text": "human intimacy"
+        },
+        {
+          "source": "/thoughts/group-limits",
+          "target": "/thoughts/Moderation",
+          "text": "moderation"
         },
         {
           "source": "/thoughts/group-limits",
@@ -4377,31 +4446,6 @@
           "source": "/thoughts/infrastructure",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/Internet",
-          "text": "internet"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/From-Counterculture-to-Cyberculture",
-          "text": "counterculture"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/censorship",
-          "text": "censor"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/ephemereal-content",
-          "text": "ephemereal content"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/creation-vs-maintenance",
-          "text": "maintenance"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -7775,6 +7819,11 @@
           "text": "Fred Turner"
         },
         {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counterculture"
+        },
+        {
           "source": "/thoughts/Post-It-Note-City",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "techno-solutionism"
@@ -7798,11 +7847,6 @@
           "source": "/thoughts/hackathons",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "counter-culture"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/From-Counterculture-to-Cyberculture",
-          "text": "counterculture"
         },
         {
           "source": "/thoughts/maintenance",
@@ -8063,6 +8107,11 @@
           "text": "Internet"
         },
         {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/Internet",
+          "text": "Internet"
+        },
+        {
           "source": "/thoughts/governance",
           "target": "/thoughts/Internet",
           "text": "Internet"
@@ -8071,11 +8120,6 @@
           "source": "/thoughts/information-system",
           "target": "/thoughts/Internet",
           "text": "Internet"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/Internet",
-          "text": "internet"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -8287,6 +8331,28 @@
           "source": "/thoughts/teaching",
           "target": "/thoughts/Mindstorms",
           "text": "Mindstorms"
+        }
+      ],
+      "/thoughts/Moderation": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/Moderation",
+          "text": "Moderation"
+        },
+        {
+          "source": "/thoughts/accountability",
+          "target": "/thoughts/Moderation",
+          "text": "moderation"
+        },
+        {
+          "source": "/thoughts/governance",
+          "target": "/thoughts/Moderation",
+          "text": "Moderation"
+        },
+        {
+          "source": "/thoughts/group-limits",
+          "target": "/thoughts/Moderation",
+          "text": "moderation"
         }
       ],
       "/thoughts/Moving-Castles": [
@@ -9066,6 +9132,11 @@
           "text": "biases"
         },
         {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        },
+        {
           "source": "/thoughts/testimony",
           "target": "/thoughts/bias",
           "text": "biases"
@@ -9241,9 +9312,14 @@
       ],
       "/thoughts/censorship": [
         {
-          "source": "/thoughts/infrastructure",
+          "source": "/thoughts/Internet",
           "target": "/thoughts/censorship",
           "text": "censor"
+        },
+        {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
         },
         {
           "source": "/thoughts/search",
@@ -9282,6 +9358,11 @@
           "text": "group"
         },
         {
+          "source": "/thoughts/Moderation",
+          "target": "/thoughts/communities",
+          "text": "communities"
+        },
+        {
           "source": "/thoughts/consensus",
           "target": "/thoughts/communities",
           "text": "communities"
@@ -9290,11 +9371,6 @@
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/communities",
           "text": "Community"
-        },
-        {
-          "source": "/thoughts/governance",
-          "target": "/thoughts/communities",
-          "text": "communities"
         },
         {
           "source": "/thoughts/group-limits",
@@ -9664,6 +9740,11 @@
           "text": "maintenance"
         },
         {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/creation-vs-maintenance",
+          "text": "maintenance"
+        },
+        {
           "source": "/thoughts/Making-and-Maintenance-of-OSS",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "Maintenance"
@@ -9672,11 +9753,6 @@
           "source": "/thoughts/To-Live-in-their-Utopia",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "Creation vs Maintenance"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/creation-vs-maintenance",
-          "text": "maintenance"
         },
         {
           "source": "/thoughts/infrastructure",
@@ -10261,6 +10337,11 @@
           "text": "ephemereal already"
         },
         {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/ephemereal-content",
+          "text": "ephemereal content"
+        },
+        {
           "source": "/thoughts/Mangrove-Theory-of-the-Internet",
           "target": "/thoughts/ephemereal-content",
           "text": "ephemereal content"
@@ -10299,11 +10380,6 @@
           "source": "/thoughts/idea-list",
           "target": "/thoughts/ephemereal-content",
           "text": "ephemerality"
-        },
-        {
-          "source": "/thoughts/infrastructure",
-          "target": "/thoughts/ephemereal-content",
-          "text": "ephemereal content"
         },
         {
           "source": "/thoughts/interaction-design",
@@ -10842,6 +10918,13 @@
           "text": "games"
         }
       ],
+      "/thoughts/gate-keeping": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/gate-keeping",
+          "text": "gate keeping"
+        }
+      ],
       "/thoughts/generational-learning": [
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
@@ -11185,6 +11268,11 @@
           "text": "information"
         },
         {
+          "source": "/thoughts/gate-keeping",
+          "target": "/thoughts/information",
+          "text": "information"
+        },
+        {
           "source": "/thoughts/information-behaviour",
           "target": "/thoughts/information",
           "text": "information"
@@ -11292,6 +11380,11 @@
           "text": "Infrastructure"
         },
         {
+          "source": "/thoughts/Moderation",
+          "target": "/thoughts/infrastructure",
+          "text": "infrastructure"
+        },
+        {
           "source": "/thoughts/Post-It-Note-City",
           "target": "/thoughts/infrastructure",
           "text": "infrastructure"
@@ -11325,11 +11418,6 @@
           "source": "/thoughts/digital-mindfulness",
           "target": "/thoughts/infrastructure",
           "text": "infrastructural"
-        },
-        {
-          "source": "/thoughts/governance",
-          "target": "/thoughts/infrastructure",
-          "text": "infrastructure"
         },
         {
           "source": "/thoughts/maintenance",
@@ -15288,6 +15376,36 @@
       "text": "trust"
     },
     {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/gate-keeping",
+      "text": "gate keeping"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/Moderation",
+      "text": "Moderation"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/From-Counterculture-to-Cyberculture",
+      "text": "counterculture"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/censorship",
+      "text": "censor"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/ephemereal-content",
+      "text": "ephemereal content"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/creation-vs-maintenance",
+      "text": "maintenance"
+    },
+    {
       "source": "/thoughts/Knowledge-Argument",
       "target": "/thoughts/semantics",
       "text": "semantics"
@@ -15426,6 +15544,16 @@
       "source": "/thoughts/Mindstorms",
       "target": "/thoughts/teaching",
       "text": "teaching"
+    },
+    {
+      "source": "/thoughts/Moderation",
+      "target": "/thoughts/communities",
+      "text": "communities"
+    },
+    {
+      "source": "/thoughts/Moderation",
+      "target": "/thoughts/infrastructure",
+      "text": "infrastructure"
     },
     {
       "source": "/thoughts/Moving-Castles",
@@ -16091,6 +16219,11 @@
       "source": "/thoughts/accountability",
       "target": "/thoughts/pseudonymity",
       "text": "pseudonymous"
+    },
+    {
+      "source": "/thoughts/accountability",
+      "target": "/thoughts/Moderation",
+      "text": "moderation"
     },
     {
       "source": "/thoughts/accountability",
@@ -17423,6 +17556,26 @@
       "text": "Goodhart's Law"
     },
     {
+      "source": "/thoughts/gate-keeping",
+      "target": "/thoughts/information",
+      "text": "information"
+    },
+    {
+      "source": "/thoughts/gate-keeping",
+      "target": "/thoughts/Internet",
+      "text": "Internet"
+    },
+    {
+      "source": "/thoughts/gate-keeping",
+      "target": "/thoughts/censorship",
+      "text": "censorship"
+    },
+    {
+      "source": "/thoughts/gate-keeping",
+      "target": "/thoughts/bias",
+      "text": "bias"
+    },
+    {
       "source": "/thoughts/generational-learning",
       "target": "/thoughts/Theory-of-Niche-Construction",
       "text": "Theory of Niche Construction"
@@ -17434,13 +17587,8 @@
     },
     {
       "source": "/thoughts/governance",
-      "target": "/thoughts/communities",
-      "text": "communities"
-    },
-    {
-      "source": "/thoughts/governance",
-      "target": "/thoughts/infrastructure",
-      "text": "infrastructure"
+      "target": "/thoughts/Moderation",
+      "text": "Moderation"
     },
     {
       "source": "/thoughts/governance",
@@ -17541,6 +17689,11 @@
       "source": "/thoughts/group-limits",
       "target": "/thoughts/friendship",
       "text": "human intimacy"
+    },
+    {
+      "source": "/thoughts/group-limits",
+      "target": "/thoughts/Moderation",
+      "text": "moderation"
     },
     {
       "source": "/thoughts/group-limits",
@@ -17901,31 +18054,6 @@
       "source": "/thoughts/infrastructure",
       "target": "/thoughts/social-contracts",
       "text": "social contracts"
-    },
-    {
-      "source": "/thoughts/infrastructure",
-      "target": "/thoughts/Internet",
-      "text": "internet"
-    },
-    {
-      "source": "/thoughts/infrastructure",
-      "target": "/thoughts/From-Counterculture-to-Cyberculture",
-      "text": "counterculture"
-    },
-    {
-      "source": "/thoughts/infrastructure",
-      "target": "/thoughts/censorship",
-      "text": "censor"
-    },
-    {
-      "source": "/thoughts/infrastructure",
-      "target": "/thoughts/ephemereal-content",
-      "text": "ephemereal content"
-    },
-    {
-      "source": "/thoughts/infrastructure",
-      "target": "/thoughts/creation-vs-maintenance",
-      "text": "maintenance"
     },
     {
       "source": "/thoughts/infrastructure",
