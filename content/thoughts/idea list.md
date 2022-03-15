@@ -17,13 +17,9 @@ tags:
 	- CRDTs for databases? https://archive.jlongster.com/using-crdts-in-the-wild
 		- https://cse.buffalo.edu/tech-reports/2014-04.pdf
 	- distributed state
--   app agnostic channel-based/event-driven communication using hypercore
-	- e.g. wait for message of type x
-	- hypercore as a universal message bus
-- canvas identity primitive
-	- allow users to register 3p providers that use signing
 -   tools for thought applied to IDEs?
 	-   IDEs as graph editors?
+- more on decentralized tech in [Rhizome](thoughts/Rhizome.md)
 - permaweb npm?
 	- pinning specific code versions
 -   LRU blockchain
@@ -48,6 +44,7 @@ tags:
 		- https://bruno-simon.com/
 		- https://danny-garcia.com/
 		- http://richardmattka.com/prototypes/red-shift
+		- https://ventureworks.io/
 -   LayoutLM + screenshots → auto-categorization of knowledge
 	- https://screenotate.com/ but with atlas recall
     -  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk

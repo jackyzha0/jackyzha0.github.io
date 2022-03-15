@@ -24,3 +24,23 @@ Instead of creating a new webpage, Internet professionals and private users tend
 3. The Internet Is a Collective Hallucination ([digital permanence](thoughts/digital%20permanence.md))
 4. A [friction](thoughts/friction.md)-ful Internet
 5. [Moving Castles and Wizards](thoughts/Moving%20Castles.md)
+
+## Internet [Epistemology](thoughts/epistemology.md)
+On [epistemic authority](thoughts/epistemic%20authority.md)
+
+Traditional
+- expertise-based
+- hierarchical
+- institutionally-mediated
+- education, positions of authority
+
+Internet
+- crowd-based
+- broad and distributed
+- technologically-mediated
+- popularity, usefulness, influence
+- data and metrics
+- post-truth?
+	- truth and facts as constructed, contested notions
+	- product of low [trust](thoughts/trust.md) and highly polarized information environment
+	- information becomes fact
