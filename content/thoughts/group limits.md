@@ -36,6 +36,6 @@ Why do we feel the need to find the billion-person version of communities? Is th
 
 Is [human intimacy](thoughts/friendship.md) scalable? I think not.
 
-What if the events were universally accessible but instead of serving everyone, serve those who opt-in to participate more? Cultivation > moderation
+What if the events were universally accessible but instead of serving everyone, serve those who opt-in to participate more? Cultivation > [moderation](thoughts/Moderation.md)
 
 If we remove misaligned [incentives](thoughts/incentives.md) and less people come, then tbh that's better, that eliminates the people you didn't want in the first place

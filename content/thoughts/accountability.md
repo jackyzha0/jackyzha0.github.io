@@ -11,5 +11,5 @@ tags:
 	-   is there a point where it is almost always better to have an authoritarian/impersonal third party? (e.g. the state and the law)
 -   how do we keep people accountable in [digital spaces](thoughts/digital%20commons.md) and [virtual worlds](thoughts/virtual%20worlds.md)?
 	-   especially with anonymous/[pseudonymous](thoughts/pseudonymity.md) users
-	-   is it better to create better tools to help users manage digital boundaries or to shift the responsibility to the platforms? moderation in [infrastructure](thoughts/infrastructure.md)?
+	-   is it better to create better tools to help users manage digital boundaries or to shift the responsibility to the platforms? [moderation](thoughts/Moderation.md) in [infrastructure](thoughts/infrastructure.md)?
 	-   digital boundaries and scale: being bigger will attract hate
