@@ -9,7 +9,6 @@ Mass media communications theory
 - Origins in social psychology
 - Gatekeeper makes decisions about what should be passed on and to whom
 - A form of social control
-- 
 
 ## Digital gate keeping
 - Platforms gate keep by managing [information](thoughts/information.md) flows in many different ways
@@ -25,3 +24,6 @@ Mass media communications theory
 - Bozdag( 2013): personalization leads to more [bias](thoughts/bias.md) rather than less
 - Cass Sunstein: "information cocoons"
 - Serves a sort of invisible auto propaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar
+
+## Governmental
+[Google Takedown Requests](https://transparencyreport.google.com/government-removals/government-requests)

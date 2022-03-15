@@ -44,6 +44,7 @@ Internet
 	- truth and facts as constructed, contested notions
 	- product of low [trust](thoughts/trust.md) and highly polarized information environment
 	- information becomes fact
+- see: [gate keeping](thoughts/gate%20keeping.md)
 
 ## [Moderation](thoughts/Moderation.md)
 [Source: The Internet Is Rotting in *The Atlantic*](https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/)

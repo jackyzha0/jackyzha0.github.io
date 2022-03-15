@@ -6,6 +6,9 @@ tags:
 - evergreen
 ---
 
+## 2022: Verses Technical Lead
+
+
 ## 2021: Microsoft Garage SWE
 Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams. Decoupled data models from data views by introducing a data and service layer using GraphQL. Abstracted common functionality between all four streaming apps by creating a streaming hook and error manager context with 98% test coverage.
 
