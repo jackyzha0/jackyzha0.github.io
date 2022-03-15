@@ -447,7 +447,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet</h1>
     <article>
       <p class="meta">
-          Last updated February 26, 2022
+          Last updated March 15, 2022
       </p>
       <ul class="tags">
     
@@ -495,6 +495,39 @@ if (!doNotTrack) {
 
 <a href="/thoughts/Moving-Castles" rel="noopener" class="internal-link" data-src="/thoughts/Moving-Castles">Moving Castles and Wizards</a></li>
 </ol>
+<h2 id="internet-epistemologythoughtsepistemologymd">Internet 
+
+
+<a href="/thoughts/epistemology" rel="noopener" class="internal-link" data-src="/thoughts/epistemology">Epistemology</a></h2>
+<p>On 
+
+
+<a href="/thoughts/epistemic-authority" rel="noopener" class="internal-link" data-src="/thoughts/epistemic-authority">epistemic authority</a></p>
+<p>Traditional</p>
+<ul>
+<li>expertise-based</li>
+<li>hierarchical</li>
+<li>institutionally-mediated</li>
+<li>education, positions of authority</li>
+</ul>
+<p>Internet</p>
+<ul>
+<li>crowd-based</li>
+<li>broad and distributed</li>
+<li>technologically-mediated</li>
+<li>popularity, usefulness, influence</li>
+<li>data and metrics</li>
+<li>post-truth?
+<ul>
+<li>truth and facts as constructed, contested notions</li>
+<li>product of low 
+
+
+<a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> and highly polarized information environment</li>
+<li>information becomes fact</li>
+</ul>
+</li>
+</ul>
 
 
     </article>
@@ -766,7 +799,7 @@ async function run() {
   const labels = graphNode.append("text")
     .attr("dx", 12)
     .attr("dy", ".35em")
-    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || "Untitled")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
     .style("opacity", 0)
     .style("pointer-events", "none")
     .call(drag(simulation));

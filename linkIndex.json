@@ -1497,6 +1497,21 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/Moving-Castles",
           "text": "Moving Castles and Wizards"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/epistemology",
+          "text": "Epistemology"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/epistemic-authority",
+          "text": "epistemic authority"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/trust",
+          "text": "trust"
         }
       ],
       "/thoughts/Knowledge-Argument": [
@@ -4092,6 +4107,11 @@
           "source": "/thoughts/idea-list",
           "target": "/thoughts/interoperability",
           "text": "interoperability"
+        },
+        {
+          "source": "/thoughts/idea-list",
+          "target": "/thoughts/Rhizome",
+          "text": "Rhizome"
         },
         {
           "source": "/thoughts/idea-list",
@@ -8541,6 +8561,13 @@
           "text": "Reductionism"
         }
       ],
+      "/thoughts/Rhizome": [
+        {
+          "source": "/thoughts/idea-list",
+          "target": "/thoughts/Rhizome",
+          "text": "Rhizome"
+        }
+      ],
       "/thoughts/Root-Verses-on-the-Middle-Way-MMK": [
         {
           "source": "/thoughts/epistemology",
@@ -10284,6 +10311,13 @@
           "text": "ephemereal"
         }
       ],
+      "/thoughts/epistemic-authority": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/epistemic-authority",
+          "text": "epistemic authority"
+        }
+      ],
       "/thoughts/epistemic-injustice": [
         {
           "source": "/thoughts/double-consciousness",
@@ -10311,6 +10345,11 @@
           "source": "/thoughts/Descartes-Meditations",
           "target": "/thoughts/epistemology",
           "text": "epistemology"
+        },
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/epistemology",
+          "text": "Epistemology"
         },
         {
           "source": "/thoughts/Stream-of-Consciousness",
@@ -13451,6 +13490,11 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
           "source": "/thoughts/Nyāya",
           "target": "/thoughts/trust",
           "text": "trust"
@@ -15227,6 +15271,21 @@
       "source": "/thoughts/Internet",
       "target": "/thoughts/Moving-Castles",
       "text": "Moving Castles and Wizards"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/epistemology",
+      "text": "Epistemology"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/epistemic-authority",
+      "text": "epistemic authority"
+    },
+    {
+      "source": "/thoughts/Internet",
+      "target": "/thoughts/trust",
+      "text": "trust"
     },
     {
       "source": "/thoughts/Knowledge-Argument",
@@ -17592,6 +17651,11 @@
       "source": "/thoughts/idea-list",
       "target": "/thoughts/interoperability",
       "text": "interoperability"
+    },
+    {
+      "source": "/thoughts/idea-list",
+      "target": "/thoughts/Rhizome",
+      "text": "Rhizome"
     },
     {
       "source": "/thoughts/idea-list",

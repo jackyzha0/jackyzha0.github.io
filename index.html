@@ -518,6 +518,22 @@ if (!doNotTrack) {
                     <li class="section-li">
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/gate-keeping/">Gate Keeping</a></h3>
+                            </div>
+                            <p class="meta">
+                                25 words. March 15, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+                        </div>
+                    </li>
+                    
+                    <li class="section-li">
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/Consciousness-is-not-Information/">Consciousness is not Information</a></h3>
                             </div>
                             <p class="meta">
@@ -547,24 +563,8 @@ if (!doNotTrack) {
                         </div>
                     </li>
                     
-                    <li class="section-li">
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/autopoiesis/">Autopoiesis</a></h3>
-                            </div>
-                            <p class="meta">
-                                80 words. March 11, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 300 more →</a>
+                <a href="/thoughts">See 301 more →</a>
             </div>
         </div>
         <article>
@@ -857,7 +857,7 @@ async function run() {
   const labels = graphNode.append("text")
     .attr("dx", 12)
     .attr("dy", ".35em")
-    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || "Untitled")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
     .style("opacity", 0)
     .style("pointer-events", "none")
     .call(drag(simulation));
