@@ -7,7 +7,9 @@ tags:
 ---
 
 ## 2022: Verses Technical Lead
+Led engineering for [pluriverse.world](https://pluriverse.world/) and [interdependence.online](https://www.interdependence.online/declaration) artifacts, building technical infrastructure to support over 10,000+ signatures across both. Developed an [open source package](https://github.com/verses-xyz/ar-wrapper) for versioned permaweb document management on Arweave and a [GitHub action](https://github.com/verses-xyz/arweave-publish-action) to automatically persist documents to Arweave. Currently doing greenfield research around tooling for local-first peer-to-peer applications.
 
+Tech used: Vercel, GitHub Actions, Node.js, TypeScript, Arweave
 
 ## 2021: Microsoft Garage SWE
 Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams. Decoupled data models from data views by introducing a data and service layer using GraphQL. Abstracted common functionality between all four streaming apps by creating a streaming hook and error manager context with 98% test coverage.
