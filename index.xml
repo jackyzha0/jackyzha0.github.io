@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bias in Search</title>
+      <link>https://jzhao.xyz/thoughts/Bias-in-Search/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Bias-in-Search/</guid>
+      <description>Term paper for INFO303
+ One of the critiques of search engines is a lack of transparency and potential for bias in their algorithms.</description>
+    </item>
+    
+    <item>
       <title>Gate Keeping</title>
       <link>https://jzhao.xyz/thoughts/gate-keeping/</link>
       <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
@@ -849,7 +859,7 @@ Related: tools for digital commons</description>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Experience/</guid>
-      <description>2022: Verses Technical Lead 2021: Microsoft Garage SWE Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams.</description>
+      <description>2022: Verses Technical Lead Led engineering for pluriverse.world and interdependence.online artifacts, building technical infrastructure to support over 10,000+ signatures across both.</description>
     </item>
     
     <item>

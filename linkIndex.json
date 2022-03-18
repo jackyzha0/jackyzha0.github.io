@@ -2025,6 +2025,11 @@
         },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        },
+        {
+          "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/To-Live-in-their-Utopia",
           "text": "To Live in their Utopia"
         },
@@ -3740,6 +3745,16 @@
           "source": "/thoughts/friendship",
           "target": "/thoughts/tribe-flourishing",
           "text": "Tribe flourishing"
+        },
+        {
+          "source": "/thoughts/friendship",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/friendship",
+          "target": "/thoughts/Knowledge-Argument",
+          "text": "Knowledge Argument"
         }
       ],
       "/thoughts/funding": [
@@ -6063,6 +6078,11 @@
         },
         {
           "source": "/thoughts/search",
+          "target": "/thoughts/Bias-in-Search",
+          "text": "Bias in Search"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/information",
           "text": "information"
         },
@@ -6572,6 +6592,16 @@
           "source": "/thoughts/trust",
           "target": "/thoughts/Trust-as-Unquestioning-Attitude",
           "text": "Trust as Unquestioning Attitude"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/friendship",
+          "text": "friends"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/bias",
+          "text": "bias"
         }
       ],
       "/thoughts/truth": [
@@ -7442,6 +7472,13 @@
           "text": "Atlas of AI"
         }
       ],
+      "/thoughts/Bias-in-Search": [
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/Bias-in-Search",
+          "text": "Bias in Search"
+        }
+      ],
       "/thoughts/Brains-in-a-Vat": [
         {
           "source": "/thoughts/representation",
@@ -8150,6 +8187,11 @@
         },
         {
           "source": "/thoughts/epistemology",
+          "target": "/thoughts/Knowledge-Argument",
+          "text": "Knowledge Argument"
+        },
+        {
+          "source": "/thoughts/friendship",
           "target": "/thoughts/Knowledge-Argument",
           "text": "Knowledge Argument"
         }
@@ -9132,6 +9174,11 @@
           "text": "biases"
         },
         {
+          "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        },
+        {
           "source": "/thoughts/gate-keeping",
           "target": "/thoughts/bias",
           "text": "bias"
@@ -9140,6 +9187,11 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/bias",
           "text": "biases"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/bias",
+          "text": "bias"
         }
       ],
       "/thoughts/bitcoin": [
@@ -10743,6 +10795,11 @@
           "source": "/thoughts/tribe-flourishing",
           "target": "/thoughts/friendship",
           "text": "friendship"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/friendship",
+          "text": "friends"
         }
       ],
       "/thoughts/funding": [
@@ -13608,6 +13665,11 @@
           "text": "trust"
         },
         {
+          "source": "/thoughts/friendship",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
           "source": "/thoughts/game-design",
           "target": "/thoughts/trust",
           "text": "Trust"
@@ -15837,6 +15899,11 @@
     },
     {
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+      "target": "/thoughts/bias",
+      "text": "bias"
+    },
+    {
+      "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/To-Live-in-their-Utopia",
       "text": "To Live in their Utopia"
     },
@@ -17394,6 +17461,16 @@
       "source": "/thoughts/friendship",
       "target": "/thoughts/tribe-flourishing",
       "text": "Tribe flourishing"
+    },
+    {
+      "source": "/thoughts/friendship",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/friendship",
+      "target": "/thoughts/Knowledge-Argument",
+      "text": "Knowledge Argument"
     },
     {
       "source": "/thoughts/funding",
@@ -19547,6 +19624,11 @@
     },
     {
       "source": "/thoughts/search",
+      "target": "/thoughts/Bias-in-Search",
+      "text": "Bias in Search"
+    },
+    {
+      "source": "/thoughts/search",
       "target": "/thoughts/information",
       "text": "information"
     },
@@ -20014,6 +20096,16 @@
       "source": "/thoughts/trust",
       "target": "/thoughts/Trust-as-Unquestioning-Attitude",
       "text": "Trust as Unquestioning Attitude"
+    },
+    {
+      "source": "/thoughts/trust",
+      "target": "/thoughts/friendship",
+      "text": "friends"
+    },
+    {
+      "source": "/thoughts/trust",
+      "target": "/thoughts/bias",
+      "text": "bias"
     },
     {
       "source": "/thoughts/truth",
