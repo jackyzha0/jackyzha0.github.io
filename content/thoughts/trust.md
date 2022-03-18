@@ -108,3 +108,29 @@ Stroud's 4 demands of friendship
 2. Different conclusions: draw different conclusions and make difference inferences than they otherwise would about non-friends given the same information
 3. Interpretive Charity: interpret evidence against friends more charitably than with non-friends
 4. Reason: treat the fact someone is a friend as a reason when we believe about them
+
+## Trust between human and non-human systems
+- situation:
+	- set the scene
+		- you are a hiring manager: whether to trust algorithmic expert system or a human expert
+		- there is a very interesting female candidate in the pipeline who has a solid resume
+		- she has a strong hire recommendation from a higher up who is a close friend -- you don't know this higher up very well
+			- expert: likely knows her well in a personal context and can vouch for her
+			- trusted by company executives
+		- but the algorithm that the company uses internally gives her a strong don't-hire recommendation
+			- expert: extremely high accuracy on historical data
+			- company approved
+	- all trust is in effect based off of trusting their reliability
+		- both 'experts' here are biased
+	- weighting of algorithmic bias and partiality towards friends/loved ones
+	- ai system is not only biased but also lacks explainability
+		- It is interesting to consider differences between what we are trusting when we trust designed objects (e.g. search engines, devices, websites, etc.) versus non-designed objects (the ground, physics, etc.). I’m curious if there are properties of derived trust especially in regards to trusting the object really being a trust in its designer (trusting the engineers at Apple versus the iPhone itself).
+		- data lacks context. While the trends in the data may show that in the past there have been more men in the women in the workforce, the majority of the population can agree that we are moving away from that more traditional view into more of an equal playing ground
+		- forbidden rates (tamar gendler)
+		- cannot determine how it came to its conclusion
+	- higher up could be wrong given state-given reasons (i.e. they owe them a favour)
+		- false belief requirement
+		- at least the decision is explainable, can be questioned
+	- would not trust the ai system, clearly lacks context
+	- higher up can be held accountable
+	- algorithm, less so
