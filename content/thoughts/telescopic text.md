@@ -78,7 +78,7 @@ A short exposition on moving on.
 			- -- 
 		- as he paid for his
 		- books.
-			- books. Something stirred in me when I saw the name Antoine de Saint-Exupéry on one.
+			- books. Something stirred in me when I saw the name Antoine de Saint-Exupery on one.
 		- There was something that was
 		- off.
 			- off -- maybe it was his long coat reached his boots or his curly salt-and-pepper hair being
@@ -89,26 +89,63 @@ A short exposition on moving on.
 						- far too long. Something smelled vaguely of smoke that might have been from a cigar.
 			- I pushed the door open to a little jingle from the door chime. I stood outside for a bit after to
 			- recollect myself.
-				- recollect myself. A familiar *ting-ling* rang through the crisp winter air as the man exited the bookstore.
+				- recollect myself. A familiar _ting-ling_ rang through the crisp winter air as the man exited the bookstore.
 				- He stood there for a moment.
 				- I muttered something.
-					- @Q I always liked to read The Little Prince when I was younger.
+					- "
+					- <br>
+					- I always liked to read The Little Prince when I was younger.
+					- <br>
+					- "
 				- He glanced over.
-					- @Q Yeah? I used to read it a lot too. Actually, I stopped reading for a while, but I'm picking things up again. My son loves this book. Little bugger can't sleep without it. He lost his old copy so I'm getting him another one.
+					- "
+					- <br>
+					- Yeah? I used to read it a lot too.
+						- Yeah? I used to read it a lot too.
+						- Actually, I stopped reading for a while, but I'm picking things up again.
+						- My son loves this book.
+							- My son loves this book.
+							- Little bugger can't sleep without it.
+								- Little bugger can't sleep without it. He lost his old copy so I'm getting him another one.
+					- <br>
+					- "
 				- We stood there for a while in the billowing wind.
 				- There was something about him that just invited me to keep talking.
-					- @Q You know, my dad once told me a quote from Heraclitus. He said that "No man steps in the same river twice. The second time around, both man and river are different than they were before." The books are the same, but we change between each reading. The world changes, too. Sometimes I like to think that he were here to re-read those books to me. Just so he could see that I've grown.
+					- "
+					- <br>
+					- You know, my dad once told me a quote from Heraclitus.
+						- You know, my dad once told me a quote from Heraclitus.
+						- He said that 'No man steps in the same river twice. The second time around, both man and river are different than they were before.'
+						- The books are the same, but we change between each reading.
+							- The books are the same, but we change between each reading.
+							- The world changes, too. Sometimes I like to think that he were here to re-read those books to me. Just so he could see that I've grown.
+					- <br>
+					- "
 				- Finally, silence.
-					- @Q There is no point trying to prove to the past how worthy you are now.
+					- "
+					- <br>
+					- There is no point trying to prove to the past how worthy you are now.
+					- <br>
+					- "
 				- I glanced over at his slender frame, realizing now that he looks a lot like my Dad. He pulled out a cigar and lit it.
 				- He continued.
-					- @Q "There are patterns to life… Rhythms. It is so easy, while trapped in just one life, to imagine that times of sadness or tragedy or failure or fear are a result of that particular existence." Matthew Haig. Things may be difficult. You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life. It may not be the life you wanted back then, but you are a different person now. You've stepped out of the river for the second time. This may not your ideal life but you can always choose it. No matter what your life is, choosing it changes everything. In choosing it, you give back to yourself the ability to enjoy the present and all of the joys that come with that.
+					- "
+					- <br>
+					- 'There are patterns to life...
+					- Rhythms.
+						- Rhythms. It is so easy, while trapped in just one life, to imagine that times of sadness or tragedy or failure or fear are a result of that particular existence.' Matthew Haig.
+						- Things may be difficult.
+						- You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life.
+							- You may hold grudges against people and hate them for the cruelties they committed against you, but that does nothing to change your life.
+							- It may not be the life you wanted back then, but you are a different person now.
+							- You've stepped out of the river for the second time."
+								- You've stepped out of the river for the second time. This may not your ideal life but you can always choose it. No matter what your life is, choosing it changes everything. In choosing it, you give back to yourself the ability to enjoy the present and all of the joys that come with that.
+					- <br>
+					- "
 				- He exhaled a puff of smoke. I looked up at the
 				- beautifully blue sky.
 					- beautifully blue sky, now tinged slightly orange as the sun descended slowly.
 					- I chose to believe that yesterday I had met some reincarnation of my father.
 						- I chose to believe that yesterday was the day I stopped
 						- hating the desert for its dryness and instead admired it for its ability to hold wells.
-						- As Saint-Exupéry said...
-							- @Q “What makes the desert beautiful,' said the little prince, 'is that somewhere it hides a well...”
 	- It was a sunny day after all.

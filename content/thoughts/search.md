@@ -33,6 +33,8 @@ Search is a form of [recommendation system](thoughts/recommendation%20system.md)
 
 A diary of searches: [Search Diary](thoughts/Search%20Diary.md)
 
+Essay on [Bias in Search](thoughts/Bias%20in%20Search.md)
+
 ### Queries on [information](thoughts/information.md)
 How do we convert a query into subject words and then locate these words in the catalogue if people describe things differently? How do we resolve synonyms?
 

@@ -48,3 +48,10 @@ Baeza-Yates
 5. Interaction Bias: how do people use the algorithms?
 6. Self-selection Bias: who uses these algorithms?
 7. Second-order Bias: digital trace data, how do our data-residues 
+
+## Forbidden Rates
+Coined by Tamar Gendler
+
+We do not live in perfectly egalitarian societies, and race, gender, class and other identities can significantly affect how our lives work out.
+
+> Now suppose you’re at a reception for engineers and their spouses, and you’re introduced to a male–female couple about whom you know next to nothing. Odds are, he’s the engineer. But if you have anti-sexist instincts, you may feel pulled towards keeping an entirely open mind about which of these two strangers is the engineer, rather than allowing your statistical knowledge to incline you towards the man. If you do ‘slip’ into assuming the man to be the engineer, and this turns out to be a mistake, you’re likely to be more embarrassed than you would be had you wrongly assumed the couple to live in the local area, on the grounds that most guests at the reception live locally.

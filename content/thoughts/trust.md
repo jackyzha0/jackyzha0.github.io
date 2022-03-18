@@ -69,3 +69,42 @@ Interesting to distinguish between what we are trusting when we trust designed (
 To lose trust is to shift from the unquestioning state to the endlessly skeptical and suspicious mood.
 
 PHIL 240A Assignment 1: [Trust as Unquestioning Attitude](thoughts/Trust%20as%20Unquestioning%20Attitude.md)
+
+## Partiality and prejudice in trusting
+*By Katherine Hawley*
+
+> Is it reasonable to trust your [friends](thoughts/friendship.md)?
+
+Common definition of trust:
+- involves relying on them to do it
+- an extra factor which distinguishes genuine trust from the attitude of mere reliance we take to inanimate objects
+
+Interestingly, there is a gap between relying on someone to do something and believing that they will do it
+- Trust is a choice -- so "trusting someone to do something need not involve belief that she is trustworthy, nor belief that she will do what she is trusted to do, nor even belief that it is likely she will do it"
+- You can trust someone to do something without relying on them to do it
+	- I can trust my friends to keep my secrets by not believing that they *won't* keep my secrets
+- You can rely on them without trusting them
+	- I can rely on my neighbour to tidy the garden we share but I don't trust her to do so (nor distrust) -- I would feel disappointed but not resentful if she didn't do the job
+Trust doesn't require *active knowledge* -- checking whether $x$ will $p$ is unnecessary when I already *know* whether $x$ will $p$
+
+Stroud (2006) and Kelly (2004) argue that we *should* have partiality towards friends not only in actions but beliefs as well, though this isn't always the right thing to do. As Stroud says, 'friendship requires epistemic irrationality'
+- Confirmation [bias](thoughts/bias.md): tendency to notice evidence which confirms our existing beliefs (that our friends are indeed good people)
+- May resist bad news that undermines a shared history of friendship (sunk cost fallacy)
+	- "should we quietly drop the friend, provoke a confrontation, or accept a continuing friendship contaminated with doubts?"
+
+The considerations are all in some sense selfish—they play on our wish to be right, to have been right, to be a good judge of character, and to avoid difficult situations.
+
+Exploring potential conflicts between different types of trust
+1. Epistemic Trust: trust in someone as a speaker or source of knowledge
+2. Practical Trust: trust in someone as an actor
+
+In fact, there is often a two-way causal interaction between friendship and trustworthiness. Roughly, people are more likely to behave in a trust-worthy manner towards their friends, and we are more likely to form friendships with people we consider trustworthy. Clearly, there are exceptions
+1. Friend might let you down instead of disappointing someone else as your friend hopes you will understand and forgive them
+2. Might find it more tempting to lie about some matters because they are concerned about maintaining a good image of themselves in your mind
+But if she takes these liberties too often, you will feel you have been taken for granted, and come to resent your friend. **Friendship requires mutual respect and openness as well as forgiveness.**
+
+Stroud's 4 demands of friendship
+1. Serious scrutiny: scrutinize negative claims about our friends
+2. Different conclusions: draw different conclusions and make difference inferences than they otherwise would about non-friends given the same information
+3. Interpretive Charity: interpret evidence against friends more charitably than with non-friends
+4. Reason: treat the fact someone is a friend as a reason when we believe about them
