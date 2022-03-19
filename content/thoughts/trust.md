@@ -110,27 +110,27 @@ Stroud's 4 demands of friendship
 4. Reason: treat the fact someone is a friend as a reason when we believe about them
 
 ## Trust between human and non-human systems
-- situation:
-	- set the scene
-		- you are a hiring manager: whether to trust algorithmic expert system or a human expert
-		- there is a very interesting female candidate in the pipeline who has a solid resume
-		- she has a strong hire recommendation from a higher up who is a close friend -- you don't know this higher up very well
-			- expert: likely knows her well in a personal context and can vouch for her
-			- trusted by company executives
-		- but the algorithm that the company uses internally gives her a strong don't-hire recommendation
-			- expert: extremely high accuracy on historical data
-			- company approved
-	- all trust is in effect based off of trusting their reliability
-		- both 'experts' here are biased
-	- weighting of algorithmic bias and partiality towards friends/loved ones
-	- ai system is not only biased but also lacks explainability
-		- It is interesting to consider differences between what we are trusting when we trust designed objects (e.g. search engines, devices, websites, etc.) versus non-designed objects (the ground, physics, etc.). I’m curious if there are properties of derived trust especially in regards to trusting the object really being a trust in its designer (trusting the engineers at Apple versus the iPhone itself).
-		- data lacks context. While the trends in the data may show that in the past there have been more men in the women in the workforce, the majority of the population can agree that we are moving away from that more traditional view into more of an equal playing ground
-		- forbidden rates (tamar gendler)
-		- cannot determine how it came to its conclusion
-	- higher up could be wrong given state-given reasons (i.e. they owe them a favour)
-		- false belief requirement
-		- at least the decision is explainable, can be questioned
-	- would not trust the ai system, clearly lacks context
-	- higher up can be held accountable
-	- algorithm, less so
+
+Trust has historically distinguished from *mere reliance* (Baier, 1986, p. 242) through an attitude of trust or extra factors which distinguish genuine trust from mere reliance (Hawley, 2014, p. 1) that we take to inanimate objects. However, algorithms and computerized decision making systems are beginning to play larger roles in our society -- deciding jail time for criminals, giving medical diagnoses, and many more. How should we weigh the epistemic authority or trustworthiness of human versus non-human expert systems?
+
+I posit that, until these algorithmic systems are able to reliably be held accountable for their decision making, they should not be epistemologically load-bearing. These systems should *supplement* human decision making rather than be considered an epistemic authority in and of itself. Let us construct a case study to examine this in more detail.
+
+Suppose you are a hiring manager at a tech company. There is a potential candidate in the pipeline for you company that you are very on the fence about whether to hire or not. She has an incredibly strong 'yes' recommendation from a more senior hiring manager. You don't know this higher up very well but you know that her and this candidate are close friends already. On the other hand, the company uses an internal AI-powered candidate ranking system. This system is quite complex and the original engineers who designed it have since long left the company. This system gives this candidate a strong 'no' hire recommendation.
+
+In this situation, both systems are 'authorities', having been approved by the company for use in the hiring process. The more senior hiring manager is clearly an expert, having been working in this company and hiring many stellar employees in the past. The algorithm can also be considered an expert here, having scored extremely highly on tests of accuracy in predicting based off of historical data whether candidates will do well in the company. It has been vetted for internal use.
+
+However, it is important to note here that in the case example, while *both* systems are potentially biased, it is far more likely that the algorithmic system is biased.
+
+The senior hiring manager could potentially be doxastically partial towards her friend but not because it is normative to be always partial to our friends. Notably, Crawford defines being a good friend constitutively involving forming attitudes about one’s friends that are appropriately responsive to the features that one’s friends have that appear to warrant those attitudes (2019, p. 1). It is unknown to you whether the senior hiring manager has any state-given reason to highly recommend her friend, so we cannot assume this to be the case as it is an unbased claim (as we have no evidence to believe so). Thus, we have solid reason to assume that the manager's friend actually *does* have those features that she believes makes them such a good candidate.
+
+However, there is one clear detail in this case that makes the algorithmic expert far more likely to be biased: it is trained on historical data that has been sanitized and decontextualized. In fact, historical data shows that in the past there have been more men in the women in the workforce. The *forbidden base rate* (Gendler, 2011) here is the statistical information about the relative number of male and female employees in the tech industry. If the data was sampled at random, then it is *statistically optimal* for the algorithm to prefer male applicants to female applicants rather than purely on the basis of qualification for the position. This, while *epistemically* rational, may not be the correct choice of action for moral reasons.
+
+Lastly, I put forth the concept of epistemic accountability, a measure of whether there are ways to holding the agent in question accountable for their doxastic claims. Accountability here refers to the ability to reduce the epistemic trust in an authority after violating an epistemic norm (e.g. being incorrect). I argue that the algorithmic authority cannot be held accountable for its actions as it does not have capacity as an epistemic agent on its own -- it cannot be held accountable for its decisions. As the algorithm itself is a *designed object* we can instead attribute it forms of *derived* trust whereas the trust is not only in the algorithm itself, but its designer (the engineers who created the algorithm, the data engineers who sourced and cleaned the data) or experts who know how to operate it. As both types of progenitors of this type of trust are absent, it would be epistemically irrational to trust this algorithm.
+
+In conclusion, it is clear that despite potential biases from both parties, the algorithmic authority has clear flaws in its ability to be held accountable as an epistemic agent and highly likely to be partial *against* the female candidate due to the forbidden base rate in this case study. It is much more likely that the senior hiring manager is a trustworthy epistemic agent.
+
+### References
+1.  Baier A. 1986. Trust and antitrust. *Ethics* 96:231–60.
+2. Hawley, K., 2014. Partiality and prejudice in trusting. _Synthese_, _191_(9), pp. 2029-2045.
+3. Crawford, L., 2019. Believing the best: on doxastic partiality in friendship. *Synthese*, 196(4), pp. 1575-1593.
+4. Gendler, T. 2011. On the Epistemic Cost of Implicit Bias. *Philosophical Studies* 156(57), pp. 33-63
