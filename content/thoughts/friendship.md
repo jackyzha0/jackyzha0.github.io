@@ -81,3 +81,24 @@ Doxastic voluntarism: we can make ourselves belief a proposition
 		2. Belief Itself Condition: holding the belief is what wrongs (not how the belief was formed or the actions that follow from the belief)
 		3. Content Condition: content of the belief wrongs
 	- Lovers stand in a privileged position -- they know things not usually shared with other people. This position makes them especially vulnerable to doxastic wronging
+
+### Love and False Belief
+*Week 9 Essay for PHIL 240A*
+
+> Evaluate Atkins' argument that love sometimes requires false belief. (Remember that to evaluate an argument, you have to explain what it is, and then say why it is or is not convincing).
+
+Atkin's argument that love sometimes rqeuires false belief extends upon the work of Sarah Stroud and Simon Keller about the conflicts between relationships and epistemology. Both Stroud and Keller claim that those who know each other intimately (either platonic or romantic) should owe each other epistemic partiality. However, Atkin's extends this further and posits that love requires "something beyond epistemic partiality -- false beliefs."
+
+Atkin's calls this the False Belief Requirement (FBR). Atkin's then tries to argue that love is opposed to epistemic norms as follows:
+1. Knowledge is justified true belief (JTB): $S$ believes that $p$, $S$ is justified in believing that $p$, and $p$ is true
+2. Belief then cannot be knowledge as one can hold beliefs that are false
+3. Thus, when poses the false belief argument, love will be opposed to epistemic norms (and thus rationality)
+
+Delaney argues that lovers desire to be loved for the right reasons. That is, person $A$ wants a romantic partner $B$ to love them for properties that $A$ takes central to their self-conception. Atkins then claims that false beliefs are required in order to avoid doxastic wrong-doing -- the wronging of another by having beliefs that do not align with the other's self-conception.
+
+Here, I don't think Atkins' line of argumentation is correct. I agree with Delaney's point about lovers wanting to be loved for properties that they take central to their self-conception. However, I don't think that false beliefs are required for this want to hold true.
+
+Take for example, the cases of *striving* that Atkin's mentions. Cases of striving, as Atkin defines it, occurs when one prematurely sees themselves as what they desire to become. Specifically, "truth is not required, for example, in striving cases where we desire to premature be seen as what we hope to become." Let me illustrate why this is not the case.
+
+Say I want to become a painter -- I am striving to be a painter. But I generally do not claim that I *am* a painter until I am confident and believe that to be the case. If I *do* say that "I am a painter," this is a case of 'fake it until you make it'. The actual underlying belief (and hope) is that I will *eventually be* a painter rather than actually believing that I currently am a painter. In this example, one explicitly repeats an obviously false statement *to others* in order to get external social reinforcement to create necessary social structures to enforce this to happen. My partner then knows that this statement is not necessarily a statement about my current skill with painting but rather a *wish* about a future skill of painting. They would not take the obviously false statement at face value and instead believes in the underlying *true* belief that I strive to be a painter. Much like sarcasm, those socially aware of the situation will believe the real deeper intention over the facade statement. This, to me, is a clear flaw in Atkin's argument that love requires false belief.
+
