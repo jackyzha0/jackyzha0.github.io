@@ -642,6 +642,23 @@
           "text": "truth"
         }
       ],
+      "/posts/nothing-stops": [
+        {
+          "source": "/posts/nothing-stops",
+          "target": "/thoughts/quotes",
+          "text": "quote"
+        },
+        {
+          "source": "/posts/nothing-stops",
+          "target": "/thoughts/Nozicks-Experience-Machine",
+          "text": "Nozick's Experience Machine"
+        },
+        {
+          "source": "/posts/nothing-stops",
+          "target": "/thoughts/pain",
+          "text": "here"
+        }
+      ],
       "/posts/paid-open-source": [
         {
           "source": "/posts/paid-open-source",
@@ -5387,23 +5404,6 @@
           "text": "universities"
         }
       ],
-      "/thoughts/nothing-stops": [
-        {
-          "source": "/thoughts/nothing-stops",
-          "target": "/thoughts/quotes",
-          "text": "quote"
-        },
-        {
-          "source": "/thoughts/nothing-stops",
-          "target": "/thoughts/Nozicks-Experience-Machine",
-          "text": "Nozick's Experience Machine"
-        },
-        {
-          "source": "/thoughts/nothing-stops",
-          "target": "/thoughts/pain",
-          "text": "here"
-        }
-      ],
       "/thoughts/optical-flow": [
         {
           "source": "/thoughts/optical-flow",
@@ -8508,7 +8508,7 @@
       ],
       "/thoughts/Nozicks-Experience-Machine": [
         {
-          "source": "/thoughts/nothing-stops",
+          "source": "/posts/nothing-stops",
           "target": "/thoughts/Nozicks-Experience-Machine",
           "text": "Nozick's Experience Machine"
         },
@@ -12372,14 +12372,14 @@
           "text": "exhaustion is a sign of strength"
         },
         {
+          "source": "/posts/nothing-stops",
+          "target": "/thoughts/pain",
+          "text": "here"
+        },
+        {
           "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
           "target": "/thoughts/pain",
           "text": "pain"
-        },
-        {
-          "source": "/thoughts/nothing-stops",
-          "target": "/thoughts/pain",
-          "text": "here"
         },
         {
           "source": "/thoughts/selfish",
@@ -12964,7 +12964,7 @@
       ],
       "/thoughts/quotes": [
         {
-          "source": "/thoughts/nothing-stops",
+          "source": "/posts/nothing-stops",
           "target": "/thoughts/quotes",
           "text": "quote"
         }
@@ -14670,6 +14670,21 @@
       "source": "/posts/new-words",
       "target": "/thoughts/truth",
       "text": "truth"
+    },
+    {
+      "source": "/posts/nothing-stops",
+      "target": "/thoughts/quotes",
+      "text": "quote"
+    },
+    {
+      "source": "/posts/nothing-stops",
+      "target": "/thoughts/Nozicks-Experience-Machine",
+      "text": "Nozick's Experience Machine"
+    },
+    {
+      "source": "/posts/nothing-stops",
+      "target": "/thoughts/pain",
+      "text": "here"
     },
     {
       "source": "/posts/paid-open-source",
@@ -19025,21 +19040,6 @@
       "source": "/thoughts/new-DARPA",
       "target": "/thoughts/academia",
       "text": "universities"
-    },
-    {
-      "source": "/thoughts/nothing-stops",
-      "target": "/thoughts/quotes",
-      "text": "quote"
-    },
-    {
-      "source": "/thoughts/nothing-stops",
-      "target": "/thoughts/Nozicks-Experience-Machine",
-      "text": "Nozick's Experience Machine"
-    },
-    {
-      "source": "/thoughts/nothing-stops",
-      "target": "/thoughts/pain",
-      "text": "here"
     },
     {
       "source": "/thoughts/optical-flow",
