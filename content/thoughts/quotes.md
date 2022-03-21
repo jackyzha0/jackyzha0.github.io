@@ -18,3 +18,4 @@ Some quotes to live by.
 9. "**You must be completely awake in the present to enjoy the tea.** Only in the awareness of the present, can your hands feel the pleasant warmth of the cup. Only in the present, can you savor the aroma, taste the sweetness, appreciate the delicacy." [Source](https://theteacupoflife.com/2014/03/thich-nhat-hanhs-tea-meditation.html)
 10. “Even if it’s not your ideal life, you can always choose it. No matter what your life is, choosing it changes everything.” [Source](https://perell.com/essay/the-price-of-discipline/)
 11. “We're all just walking each other home.” ― Ram Dass
+12. "磨刀不誤砍柴功" -- Chinese Proverb. Taking a break to sharpen your saw will not delay you from cutting wood more
