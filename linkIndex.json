@@ -5387,6 +5387,23 @@
           "text": "universities"
         }
       ],
+      "/thoughts/nothing-stops": [
+        {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/quotes",
+          "text": "quote"
+        },
+        {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/Nozicks-Experience-Machine",
+          "text": "Nozick's Experience Machine"
+        },
+        {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/pain",
+          "text": "here"
+        }
+      ],
       "/thoughts/optical-flow": [
         {
           "source": "/thoughts/optical-flow",
@@ -8490,6 +8507,11 @@
         }
       ],
       "/thoughts/Nozicks-Experience-Machine": [
+        {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/Nozicks-Experience-Machine",
+          "text": "Nozick's Experience Machine"
+        },
         {
           "source": "/thoughts/semantics",
           "target": "/thoughts/Nozicks-Experience-Machine",
@@ -12355,6 +12377,11 @@
           "text": "pain"
         },
         {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/pain",
+          "text": "here"
+        },
+        {
           "source": "/thoughts/selfish",
           "target": "/thoughts/pain",
           "text": "pain"
@@ -12933,6 +12960,13 @@
           "source": "/thoughts/search",
           "target": "/thoughts/questions",
           "text": "questions"
+        }
+      ],
+      "/thoughts/quotes": [
+        {
+          "source": "/thoughts/nothing-stops",
+          "target": "/thoughts/quotes",
+          "text": "quote"
         }
       ],
       "/thoughts/rationality": [
@@ -18991,6 +19025,21 @@
       "source": "/thoughts/new-DARPA",
       "target": "/thoughts/academia",
       "text": "universities"
+    },
+    {
+      "source": "/thoughts/nothing-stops",
+      "target": "/thoughts/quotes",
+      "text": "quote"
+    },
+    {
+      "source": "/thoughts/nothing-stops",
+      "target": "/thoughts/Nozicks-Experience-Machine",
+      "text": "Nozick's Experience Machine"
+    },
+    {
+      "source": "/thoughts/nothing-stops",
+      "target": "/thoughts/pain",
+      "text": "here"
     },
     {
       "source": "/thoughts/optical-flow",
