@@ -6,7 +6,16 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP</title>
+      <link>https://jzhao.xyz/thoughts/HTTP/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/HTTP/</guid>
+      <description>Main method of communication at the Application Layer for the web</description>
+    </item>
+    
     <item>
       <title>Bias in Search</title>
       <link>https://jzhao.xyz/thoughts/Bias-in-Search/</link>
@@ -2708,7 +2717,7 @@ Partly works because we can utilize collaborative thinking.</description>
       
       <guid>https://jzhao.xyz/thoughts/A-City-is-not-a-Tree/</guid>
       <description>A City is not a Tree
-Why trees instead of graphs Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system.</description>
+ More diagrams in Figma</description>
     </item>
     
     <item>

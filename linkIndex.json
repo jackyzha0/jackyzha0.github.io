@@ -24,6 +24,11 @@
         },
         {
           "source": "/",
+          "target": "/thoughts/building-in-public",
+          "text": "building out in the open"
+        },
+        {
+          "source": "/",
           "target": "/thoughts/Projects",
           "text": "projects"
         },
@@ -31,6 +36,11 @@
           "source": "/",
           "target": "/thoughts/infrastructure",
           "text": "infrastructure"
+        },
+        {
+          "source": "/",
+          "target": "/thoughts/incentives",
+          "text": "incentivize"
         },
         {
           "source": "/",
@@ -46,6 +56,11 @@
           "source": "/",
           "target": "/thoughts/interaction-design",
           "text": "interactions"
+        },
+        {
+          "source": "/",
+          "target": "/thoughts/tribe-flourishing",
+          "text": "it'd be a shame to explore it alone"
         },
         {
           "source": "/",
@@ -1347,6 +1362,18 @@
           "source": "/thoughts/Galls-law",
           "target": "/thoughts/complexity",
           "text": "complexity"
+        }
+      ],
+      "/thoughts/HTTP": [
+        {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         }
       ],
       "/thoughts/Hackers": [
@@ -4737,6 +4764,11 @@
         },
         {
           "source": "/thoughts/internet-computing",
+          "target": "/thoughts/HTTP",
+          "text": "HTTP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
           "target": "/thoughts/Transport-Layer",
           "text": "Transport Layer"
         },
@@ -4809,6 +4841,11 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/NAT",
           "text": "NAT"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         }
       ],
       "/thoughts/interoperability": [
@@ -7458,6 +7495,11 @@
       ],
       "/thoughts/Application-Layer": [
         {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/Application-Layer",
+          "text": "Application Layer"
+        },
+        {
           "source": "/thoughts/Transport-Layer",
           "target": "/thoughts/Application-Layer",
           "text": "Application Layer"
@@ -7970,6 +8012,13 @@
           "source": "/thoughts/quantization",
           "target": "/thoughts/Goodharts-Law",
           "text": "Goodhart's Law"
+        }
+      ],
+      "/thoughts/HTTP": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/HTTP",
+          "text": "HTTP"
         }
       ],
       "/thoughts/Hackers": [
@@ -8738,12 +8787,22 @@
       ],
       "/thoughts/TCP": [
         {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
           "source": "/thoughts/UDP",
           "target": "/thoughts/TCP",
           "text": "TCP"
         },
         {
           "source": "/thoughts/VPN",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/internet-computing",
           "target": "/thoughts/TCP",
           "text": "TCP"
         },
@@ -9322,6 +9381,11 @@
         }
       ],
       "/thoughts/building-in-public": [
+        {
+          "source": "/",
+          "target": "/thoughts/building-in-public",
+          "text": "building out in the open"
+        },
         {
           "source": "/posts/digital-gardening",
           "target": "/thoughts/building-in-public",
@@ -11232,6 +11296,11 @@
         }
       ],
       "/thoughts/incentives": [
+        {
+          "source": "/",
+          "target": "/thoughts/incentives",
+          "text": "incentivize"
+        },
         {
           "source": "/posts/hackathons",
           "target": "/thoughts/incentives",
@@ -13612,6 +13681,11 @@
       ],
       "/thoughts/tribe-flourishing": [
         {
+          "source": "/",
+          "target": "/thoughts/tribe-flourishing",
+          "text": "it'd be a shame to explore it alone"
+        },
+        {
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
           "target": "/thoughts/tribe-flourishing",
           "text": "tribal flourishing"
@@ -14088,6 +14162,11 @@
     },
     {
       "source": "/",
+      "target": "/thoughts/building-in-public",
+      "text": "building out in the open"
+    },
+    {
+      "source": "/",
       "target": "/thoughts/Projects",
       "text": "projects"
     },
@@ -14095,6 +14174,11 @@
       "source": "/",
       "target": "/thoughts/infrastructure",
       "text": "infrastructure"
+    },
+    {
+      "source": "/",
+      "target": "/thoughts/incentives",
+      "text": "incentivize"
     },
     {
       "source": "/",
@@ -14110,6 +14194,11 @@
       "source": "/",
       "target": "/thoughts/interaction-design",
       "text": "interactions"
+    },
+    {
+      "source": "/",
+      "target": "/thoughts/tribe-flourishing",
+      "text": "it'd be a shame to explore it alone"
     },
     {
       "source": "/",
@@ -15315,6 +15404,16 @@
       "source": "/thoughts/Galls-law",
       "target": "/thoughts/complexity",
       "text": "complexity"
+    },
+    {
+      "source": "/thoughts/HTTP",
+      "target": "/thoughts/Application-Layer",
+      "text": "Application Layer"
+    },
+    {
+      "source": "/thoughts/HTTP",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/Hackers",
@@ -18423,6 +18522,11 @@
     },
     {
       "source": "/thoughts/internet-computing",
+      "target": "/thoughts/HTTP",
+      "text": "HTTP"
+    },
+    {
+      "source": "/thoughts/internet-computing",
       "target": "/thoughts/Transport-Layer",
       "text": "Transport Layer"
     },
@@ -18495,6 +18599,11 @@
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/NAT",
       "text": "NAT"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/interoperability",

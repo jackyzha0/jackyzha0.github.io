@@ -447,7 +447,7 @@ if (!doNotTrack) {
     <h1 class="title">TCP</h1>
     <article>
       <p class="meta">
-          Last updated March 11, 2022
+          Last updated March 21, 2022
       </p>
       <ul class="tags">
     
@@ -455,7 +455,91 @@ if (!doNotTrack) {
     
 </ul>
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#connection-establishment">Connection Establishment</a></li>
+    <li><a href="#window-management">Window Management</a></li>
+    <li><a href="#congestion-management">Congestion Management</a></li>
+    <li><a href="#flow-control">Flow Control</a></li>
+    <li><a href="#sequence-number">Sequence Number</a></li>
+    <li><a href="#acknowledgement-number">Acknowledgement Number</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       <p>When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned</p>
+<h2 id="overview">Overview</h2>
+<ol>
+<li>Point-to-point: one sender, one receiver</li>
+<li>Reliable, in-order byte stream: no message boundaries</li>
+<li>Pipelined: TCP congestion and flow control set window size</li>
+<li>Send and receive buffers (similar to GBN and SR)</li>
+<li>Full duplex data: bi-directional data flow in same connection
+<ol>
+<li>MSS: maximum segment size</li>
+</ol>
+</li>
+<li>Connection-oriented: handshaking initializes both sender and receiver state before data exchange</li>
+<li>Flow controlled: sender will not overwhelm receiver</li>
+</ol>
+<h2 id="connection-establishment">Connection Establishment</h2>
+<ul>
+<li>Three-way handshake</li>
+<li>To solve single initial sequence number problem, we randomly choose the initial sequence number</li>
+</ul>
+<ol>
+<li>Client sends initial SYN message
+<ol>
+<li>Sequence number for client to server is specified</li>
+</ol>
+</li>
+<li>Server responds with a SYN/ACK (flip both bits) message
+<ol>
+<li>Client to server sequence number is confirmed in ACK</li>
+<li>Server to client initial sequence number is specified</li>
+</ol>
+</li>
+<li>Client sends an ACK emssage
+<ol>
+<li>Server to client sequence number is confirmed in ACK</li>
+</ol>
+</li>
+</ol>
+<h2 id="window-management">Window Management</h2>
+<ul>
+<li>Size is selected by the application (if not the default)</li>
+<li>Both sender and receiver have congestion windows
+<ul>
+<li>Measured with segments of maximum segment size (MSS)</li>
+<li>Size is determined by the presence of absence of congestion</li>
+<li>Actual send window is the min of the flow control window (receiver) and the scaled congestion window (computed by sender)</li>
+</ul>
+</li>
+<li>Retransmission strategy
+<ul>
+<li>ACKs correspond to first sequence number not yet received (similar to GBN)</li>
+<li>Receiver stores packets in its own window (like SR)</li>
+<li>Four or more ACKs with same number triggers a retransmission without a timeout</li>
+<li>Retransmit just one segment instead of whole window (like SR)</li>
+</ul>
+</li>
+</ul>
+<h2 id="congestion-management">Congestion Management</h2>
+<ul>
+<li>Very conservative, at first sign of congestion, cuts congestion window in half</li>
+<li>When it appears that congestion has eased, it increases slowly (1 segment to congestion window each time)</li>
+<li>TCP uses bandwidth in a fair way</li>
+<li>Slow start: always start with a congestion window of 1 segment
+<ul>
+<li>Increase by 1 each time a segment is ACKed (this is exponential, equivalent to doubling each time we send a window full of data)</li>
+<li>Stop doubling when we detect congestion</li>
+</ul>
+</li>
+</ul>
+<h2 id="flow-control">Flow Control</h2>
 <p>Difference between a sender&rsquo;s sequence number and the remote host&rsquo;s acknowledgement number represents any outstanding, unacknowledged data</p>
 <p>ACK flag is offset 107</p>
 <p>Sequence and acknowledgement number are both 32 bit fields so the range is from $0$ to $2^{32}-1$. After all the $2^{32}$ sequence numbers are used up and more data is to be sent, the sequence numbers can be wrapped around and used again from the starting.</p>
@@ -481,6 +565,8 @@ if (!doNotTrack) {
     
     
     <li>
+            <a href="/thoughts/HTTP">HTTP</a>
+        </li><li>
             <a href="/thoughts/UDP">UDP</a>
         </li><li>
             <a href="/thoughts/VPN">VPN</a>

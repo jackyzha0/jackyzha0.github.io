@@ -448,7 +448,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet Computing</h1>
     <article>
       <p class="meta">
-          Last updated March 11, 2022
+          Last updated March 21, 2022
       </p>
       <ul class="tags">
     
@@ -537,7 +537,10 @@ administrated entities into a common entity</p>
 <li>
 
 
-<a href="/thoughts/Application-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Application-Layer">Application Layer</a></li>
+<a href="/thoughts/Application-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Application-Layer">Application Layer</a> (
+
+
+<a href="/thoughts/HTTP" rel="noopener" class="internal-link" data-src="/thoughts/HTTP">HTTP</a>)</li>
 <li>
 
 
@@ -777,6 +780,12 @@ administrated entities into a common entity</p>
 </li>
 <li>
 <p>We can use a sliding window to represent the &lsquo;window&rsquo; of all bits that are in flight</p>
+<ul>
+<li>Although, better version of this is to just use a proper protocol like 
+
+
+<a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a></li>
+</ul>
 </li>
 <li>
 <p>Timeout: how much longer should I wait for the ack for the first packet in my window</p>
@@ -820,10 +829,13 @@ administrated entities into a common entity</p>
 <p>
 
 <a href="https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html" rel="noopener">Simulation Link</a></p>
-<p>Congestion Control</p>
+<p>Congestion/Flow Control</p>
 <ul>
+<li>As long as sender&rsquo;s window size is smaller than the receivers window size, it&rsquo;s fine</li>
 <li>If the network can&rsquo;t handle a full window&rsquo;s worth of data (packets + ACKs are dropped by routers) then sender can reduce sending window</li>
-<li>If all packets are ACKed, we can increase the window again</li>
+<li>If all packets are ACKed, we can increase the window again (too slow! we can up the pace)</li>
+<li>Receiver will notify the sender about how much data it can handle (usually included in the ACK)</li>
+<li>If receiver runs out of space, sender will send a packet every once in a while even though its not supposed to just to check if it now has space</li>
 </ul>
 
 
