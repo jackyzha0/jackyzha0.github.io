@@ -16,6 +16,16 @@ A fully-defined protocol must provide a proper action for any event in any state
 
 Each interaction can have its own state machine.
 
+## Open vs Closed Protocols
+- Open Protocols
+	- Examples: HTTP, SMTP, SSH
+	- Usually defined in RFC documents
+	- Different implementations
+	- Allows a community, generally good!
+- Proprietary Protocols
+	- Examples: Skype, iCloud, Zoom
+	- Only one implementation
+
 ## Building a Reliable Protocol
 - Generally includes a few states
 	- Idle - waiting for something to be initiated

@@ -45,7 +45,7 @@ Types
 ## Network [Protocol](thoughts/Protocol.md) Stack (from most abstract to least)
 Each layer takes data from above adds header information to create new data unit passes new data unit to layer below
 
-1. [Application Layer](thoughts/Application%20Layer.md)
+1. [Application Layer](thoughts/Application%20Layer.md) ([HTTP](thoughts/HTTP.md))
 2. [Transport Layer](thoughts/Transport%20Layer.md) ([TCP](thoughts/TCP.md), [UDP](thoughts/UDP.md))
 3. [Network Layer](thoughts/Network%20Layer.md) ([IP Addresses](thoughts/IP%20Addresses.md)) -- this is the 'thinnest' part of the network stack!
 4. [Link Layer](thoughts/Link%20Layer.md)
@@ -153,6 +153,7 @@ Traffic Intensity
 ## Sliding Window
 - When we allow multiple packets in flight, modelling this with a finite state machine is less than ideal
 - We can use a sliding window to represent the 'window' of all bits that are in flight
+	- Although, better version of this is to just use a proper protocol like [TCP](thoughts/TCP.md)
 - Timeout: how much longer should I wait for the ack for the first packet in my window
 
 - Big window costs us memory
@@ -182,7 +183,10 @@ Traffic Intensity
 
 [Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html)
 
-Congestion Control
+Congestion/Flow Control
+- As long as sender's window size is smaller than the receivers window size, it's fine
 - If the network can't handle a full window's worth of data (packets + ACKs are dropped by routers) then sender can reduce sending window
-- If all packets are ACKed, we can increase the window again
+- If all packets are ACKed, we can increase the window again (too slow! we can up the pace)
+- Receiver will notify the sender about how much data it can handle (usually included in the ACK)
+- If receiver runs out of space, sender will send a packet every once in a while even though its not supposed to just to check if it now has space
 

@@ -8,7 +8,8 @@ draft: true
 
 Longer-term research project/experiment around building multi-writer decentralized applications specific focus on local-first
 
--   curius + obisidian + gdocs?? example application
+## Lattice
+- curius + obisidian + gdocs?? example application
 	-   collaborative gardening
 	-   take notes on website iframes and link to them
 
