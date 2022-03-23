@@ -8,29 +8,27 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
+* **The Book of Form and Emptiness** by Ruth Ozeki
 * **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
 * **Permutation City** by Greg Egan
 
 ### Non-fiction
+* **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
+* **Seeing Like A State** by James C. Scott
 * **Creation: Life and How to Make it** by Steve Grand
 * **What Money Can't Buy** by Michael Sandel
-* **Mutual Aid** by Dean Spade
-* **Seeing Like A State** by James C. Scott
 * **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
-* **Doughnut Economics** by Kate Raworth
-* **The Disappearance of Rituals** by Byung-Chul Han
 * **Where Is My Flying Car?** by J. Storrs Hall
 * [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
-* **The Emperor's New Mind** by Roger Penrose
 
 ## Current
-* **Ghost Work** by Mary L. Gray and Siddharth Suri
 * **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/The%20Mental%20Demands%20of%20Modern%20Life.md)** by Robert Kegan
 
 ## Past
 2022
+* **Ghost Work** by Mary L. Gray and Siddharth Suri
 - [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
 - [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant
 - **Unflattening** by Nick Sousanis

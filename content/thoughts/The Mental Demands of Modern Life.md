@@ -76,3 +76,31 @@ An example:
 - Self: you show up to work on time because if you don’t, you might be fired, and then you’d have to find another job, which would be a hassle, and you’d lose pay in the meantime. If you do show up, you’ll eventually be promoted, so you’ll get paid more.
 - Communal: you show up to work on time because your coworkers would be upset with you if you were late; or because your spouse would be upset with you if you got fired; or because you might miss a pay raise that would mean a better quality of life for your children.
 - Systematic: you show up to work on time because that’s your job.
+
+
+## Independence and [love](thoughts/friendship.md)
+- To want to find the answer for oneself is not to reject the advice of others
+	- "is not just rejecting the assumptions of her husband or church or culture; she is rejecting her *relationship* to these assumptions as truths"
+	- the discovery here is not that one may have different ideas, values, or beliefs but rather ideas, values, and beliefs are by their very nature assumptive
+- What brings two people together in the first place?
+	- "we find each other in love out of some correspondence we feel with our deepest personal and primordial themes of longing, hoping, and desiring."
+	- "these deeply felt desires and needs animate our personal images, themes, stories, and myths. And the images, themes, stories, and myths inside our skins look for people to portray and enact them outside"
+- Marriage is a partnership between two distinct individuals who do not share one mind, heart, and soul
+	- Differences need not signal the failure of their closeness or bond but rather the reality of their distinctness
+	- Corollary: successful couples do not give up the pursuit of closeness in their intimate relationship but reconstruct the very definition of what closeness is about
+	- Rilke: "once the realization is accepted that even between the closest human beings infinite distances continue to exist, a wonderful living side by side can grow up, if they succeed in loving the distance between them which makes it possible for each to see the other whole against the sky"
+
+## [Burnout](thoughts/burnout.md)
+
+Maslach describes the "burnout prone individual" as one who mostly yield to the other without adapting to their own capacity: "is often unable to exert control over a situation and will passively yield to its demands rather than actively limiting them to his capacity to give... faced with self-doubt this person tries to establish a sense of self-worth by winning the approval and acceptance of other people"
+
+This is a very fourth-order consciousness of viewing burnout when in fact most people are not even fourth-order (majority is third-order!)
+
+Culture-as-school: poor school whose favourite students are the ones it does not have to teach.
+
+## [Constructivism](thoughts/constructionist.md)
+Our capacity to select, regulate, act upon, and make decisions about raw data
+
+We select in, but we also select out. Having an active way of hearing also meant that we were deaf to other perfectly "good" sound in the room. We just didn't hear it. For us it wasn't happening.
+
+Having put our world together, are we awake to the fact that it is an *invented* reality? Do we tend to take our construction of reality as Reality, as the fact of "how it is out there?"

@@ -5,13 +5,13 @@ tags:
 - seed
 ---
 
-"It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intellgience, removed from any relation to the material world." -- they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.
+"It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world." -- they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.
 
 "To understand how AI is fundamentally political, we need to go beyond neural nets and statistical pattern recognition to instead ask *what* is being optimized, and *for whom*, and *who* gets to decide."
 
 "As author and engineer Ellen Ullman puts it, this belief that the mind is like a computer, and vice versa, has infected decades of thinking in the computer and cognitive sciences,' creating a kind of original sin for the field. It is the idealogy of Cartesian dualism in artificial intelligence: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world."
 
-"An atlas is an unusual type of book. It is a collection of disparate parts, with maps that very in resolution from a satellite view of the planet to a zoomed-in dertail of an archipelago. When you open an atlas, you may be seeking specific information about a particularp lace -- or perhaps you are wandering, following your curiosity, and finding unexpected pathways and new perspectives."
+"An atlas is an unusual type of book. It is a collection of disparate parts, with maps that very in resolution from a satellite view of the planet to a zoomed-in detail of an archipelago. When you open an atlas, you may be seeking specific information about a particular place -- or perhaps you are wandering, following your curiosity, and finding unexpected pathways and new perspectives."
 
 AI is an attempt to be *the* atlas -- the dominant way of seeing the world. We should instead try to construct "humble geography" that acknowledges one's specific perspectives rather than claiming objectivity or mastery.
 

@@ -16,3 +16,8 @@ Antitodes
 1. If it hurts, you're probably doing it wrong. That's just bad form.
 	1. So much of this applies to the physical (e.g. working out) why don't we apply this to our emotional and mental selves?
 2. You're not trying your best if you're not happy.
+
+**Motivation in Hard Times**
+[John in vlogbrothers](https://www.youtube.com/watch?v=oAEewFj_-dg)
+
+"[worked fuelled by resentment and pain] may burn bright, but it also burns dirty"

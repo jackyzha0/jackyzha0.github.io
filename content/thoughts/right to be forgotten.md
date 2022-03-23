@@ -16,4 +16,4 @@ Right for individuals to "determine the development of their life in an autonomo
 
 "By changing what we were, you change what we are and what we are going to be."
 
-Streisand Effect: efforts to hide information result in even greater publicity
+Barbra Streisand Effect: efforts to hide information result in even greater publicity

@@ -28,5 +28,5 @@ _The squad economy primarily yields non-monetary forms of value_
 
 "This is about building the picks and shovels for intimate, intentionally small groups of friends and Internet friends to build things together, live together, and create wealth together. Unlike the Discord communities you’re part of, the small groups I’m thinking of have to stay small to survive — they’re small by design. Can you really be yourself in group chats with 50+ people?"
 
-## Mutual Aid
-[Chama](https://en.wikipedia.org/wiki/Chama_(investment))'s for the modern age
+## [Mutual Aid](thoughts/Mutual%20Aid.md)
+[Chama](https://en.wikipedia.org/wiki/Chama_(investment))'s for the modern age, [Communities of Fate](thoughts/Community%20of%20Fate.md)

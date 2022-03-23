@@ -96,7 +96,9 @@ oracle -> tells you the 'right' answer
 ## Search Engines as Faith
 They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.
 
-"Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil) 
+"Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil)
+
+They are the database of our intentions. We search for things we are hoping to know, hoping to do, and hoping to become
 
 ## Internet topology as shaped by search engines
 [Source: Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/)

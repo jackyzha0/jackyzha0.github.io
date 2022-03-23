@@ -31,5 +31,6 @@ Central Question: the Novice/2-Expert Problem
 	3. Appraisals by "meta-experts" of the experts' expertise
 	4. Evidence of the expert's interests and biases vis-a-vis the question at issue
 	5. Evidence of the expert's past track-records
+- Important to note that all of these depend on *human* knowledge, not [religious authority](thoughts/religious%20authority.md)
 - Not fool-proof either, e.g. differences in communication medium, language, smooth-talking, etc.
 - How does the novice avoid cognitive [biases](thoughts/bias.md) of their own?

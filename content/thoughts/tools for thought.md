@@ -20,12 +20,17 @@ Is there any way to rearrange the fuzzy cloud of ideas in our head easily on pap
 
 How can we 'cut' text without being afraid of it being lost forever? Even with tools like the undo button and Git revision history, the actions of the past are by default hidden. Time is not first class.
 
-## On memory
+## On memory and [lost knowledge](thoughts/lost%20knowledge.md)
 > If a tree fell and nobody remembered, did it really happen?
 
 Very 1984-line-of-thought but those who control the past, how we remember and what history is, controls the present and thus controls the future.
 
 Our tools of memory should be democratized and public. These tools are a [public good](thoughts/public%20goods.md). They are, quite literally, the [infrastructure](thoughts/infrastructure.md) for mental representations and operations. These are the patterns the dictate our very mental processes.
+
+## Memex
+> device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.
+
+Bush envisioned the memex behaving like an “intricate web of trails” similar to the function of the human mind, which he believed works by a method of “association” and not via an alphabetical index. According to Levy (2008, 508), the most “innovative feature” of Bush’s memex system was the establishing of associative indices between portions of microfilmed text—what we now call hypertext links—so that researchers could follow trails of useful information through masses of literature.
 
 ## Kernel
 [Source: Remember in *Kernel*](https://kernel.community/en/learn/module-3/remember)
