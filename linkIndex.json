@@ -86,6 +86,11 @@
       "/books": [
         {
           "source": "/books",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "Mutual Aid"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/games",
           "text": "Games: Agency as Art"
         },
@@ -292,6 +297,11 @@
           "source": "/posts/2021",
           "target": "/posts/networked-thought",
           "text": "digital gardening"
+        },
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/Bentoism",
+          "text": "Bentoism"
         },
         {
           "source": "/posts/2021",
@@ -1024,6 +1034,13 @@
           "text": "Accountability"
         }
       ],
+      "/thoughts/Bentoism": [
+        {
+          "source": "/thoughts/Bentoism",
+          "target": "/thoughts/Community-of-Fate",
+          "text": "Community of Fate"
+        }
+      ],
       "/thoughts/Brains-in-a-Vat": [
         {
           "source": "/thoughts/Brains-in-a-Vat",
@@ -1104,6 +1121,18 @@
           "source": "/thoughts/Cities-and-Programming",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "creation vs maintenance"
+        }
+      ],
+      "/thoughts/Community-of-Fate": [
+        {
+          "source": "/thoughts/Community-of-Fate",
+          "target": "/thoughts/Bentoism",
+          "text": "Bentoism"
+        },
+        {
+          "source": "/thoughts/Community-of-Fate",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "mutual aid"
         }
       ],
       "/thoughts/Consciousness-is-not-Information": [
@@ -1369,6 +1398,11 @@
           "source": "/thoughts/HTTP",
           "target": "/thoughts/Application-Layer",
           "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         },
         {
           "source": "/thoughts/HTTP",
@@ -2174,6 +2208,21 @@
           "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/friendship",
+          "text": "love"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/burnout",
+          "text": "Burnout"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/constructionist",
+          "text": "Constructivism"
         }
       ],
       "/thoughts/The-Midnight-Library": [
@@ -2432,14 +2481,39 @@
           "text": "consensus"
         }
       ],
-      "/thoughts/World-Seed": [
+      "/thoughts/World-Building": [
         {
-          "source": "/thoughts/World-Seed",
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/games",
+          "text": "Games"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/fiction",
+          "text": "fiction"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/friendship",
+          "text": "friendships, and love"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/Hackers",
+          "text": "Hacker"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/play",
+          "text": "play"
+        },
+        {
+          "source": "/thoughts/World-Building",
           "target": "/thoughts/games",
           "text": "games"
         },
         {
-          "source": "/thoughts/World-Seed",
+          "source": "/thoughts/World-Building",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
         }
@@ -2772,6 +2846,18 @@
           "source": "/thoughts/building-in-public",
           "target": "/posts/collaborative-thinking",
           "text": "Collaborative thinking"
+        }
+      ],
+      "/thoughts/burnout": [
+        {
+          "source": "/thoughts/burnout",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "The Mental Demands of Modern Life"
+        },
+        {
+          "source": "/thoughts/burnout",
+          "target": "/thoughts/pain",
+          "text": "pain"
         }
       ],
       "/thoughts/censorship": [
@@ -5097,6 +5183,18 @@
           "text": "a new DARPA"
         }
       ],
+      "/thoughts/lost-knowledge": [
+        {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/posts/collaborative-thinking",
+          "text": "collaborative thinking"
+        },
+        {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/posts/networked-thought",
+          "text": "networked thought"
+        }
+      ],
       "/thoughts/machine-learning": [
         {
           "source": "/thoughts/machine-learning",
@@ -6019,6 +6117,23 @@
           "text": "attention"
         }
       ],
+      "/thoughts/religious-authority": [
+        {
+          "source": "/thoughts/religious-authority",
+          "target": "/thoughts/epistemic-authority",
+          "text": "epistemic authority"
+        },
+        {
+          "source": "/thoughts/religious-authority",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
+        },
+        {
+          "source": "/thoughts/religious-authority",
+          "target": "/thoughts/intentionality",
+          "text": "intentionality"
+        }
+      ],
       "/thoughts/representation": [
         {
           "source": "/thoughts/representation",
@@ -6452,6 +6567,11 @@
         },
         {
           "source": "/thoughts/testimony",
+          "target": "/thoughts/religious-authority",
+          "text": "religious authority"
+        },
+        {
+          "source": "/thoughts/testimony",
           "target": "/thoughts/bias",
           "text": "biases"
         }
@@ -6498,6 +6618,11 @@
           "source": "/thoughts/tools-for-thought",
           "target": "/thoughts/research-debt",
           "text": "research debt"
+        },
+        {
+          "source": "/thoughts/tools-for-thought",
+          "target": "/thoughts/lost-knowledge",
+          "text": "lost knowledge"
         },
         {
           "source": "/thoughts/tools-for-thought",
@@ -6604,6 +6729,16 @@
           "source": "/thoughts/tribe-flourishing",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "FCTC"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "Mutual Aid"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/Community-of-Fate",
+          "text": "Communities of Fate"
         }
       ],
       "/thoughts/trust": [
@@ -7175,6 +7310,11 @@
           "text": "collaborate"
         },
         {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/posts/collaborative-thinking",
+          "text": "collaborative thinking"
+        },
+        {
           "source": "/thoughts/mimetic",
           "target": "/posts/collaborative-thinking",
           "text": "collaborative-thinking"
@@ -7325,6 +7465,11 @@
           "source": "/thoughts/bandwidth",
           "target": "/posts/networked-thought",
           "text": "networked-thought"
+        },
+        {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/posts/networked-thought",
+          "text": "networked thought"
         },
         {
           "source": "/thoughts/tools-for-thought",
@@ -7531,6 +7676,18 @@
           "text": "Atlas of AI"
         }
       ],
+      "/thoughts/Bentoism": [
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/Bentoism",
+          "text": "Bentoism"
+        },
+        {
+          "source": "/thoughts/Community-of-Fate",
+          "target": "/thoughts/Bentoism",
+          "text": "Bentoism"
+        }
+      ],
       "/thoughts/Bias-in-Search": [
         {
           "source": "/thoughts/search",
@@ -7608,6 +7765,18 @@
           "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/thoughts/Collingridge-dilemma",
           "text": "Collingridge dilemma"
+        }
+      ],
+      "/thoughts/Community-of-Fate": [
+        {
+          "source": "/thoughts/Bentoism",
+          "target": "/thoughts/Community-of-Fate",
+          "text": "Community of Fate"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/Community-of-Fate",
+          "text": "Communities of Fate"
         }
       ],
       "/thoughts/Consciousness-is-not-Information": [
@@ -8036,6 +8205,11 @@
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
           "target": "/thoughts/Hackers",
           "text": "Hackers"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/Hackers",
+          "text": "Hacker"
         },
         {
           "source": "/thoughts/quantization",
@@ -8475,6 +8649,23 @@
           "text": "Moving Castles and Wizards"
         }
       ],
+      "/thoughts/Mutual-Aid": [
+        {
+          "source": "/books",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "Mutual Aid"
+        },
+        {
+          "source": "/thoughts/Community-of-Fate",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "mutual aid"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/Mutual-Aid",
+          "text": "Mutual Aid"
+        }
+      ],
       "/thoughts/NAT": [
         {
           "source": "/thoughts/internet-computing",
@@ -8792,6 +8983,11 @@
           "text": "TCP"
         },
         {
+          "source": "/thoughts/HTTP",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
           "source": "/thoughts/UDP",
           "target": "/thoughts/TCP",
           "text": "TCP"
@@ -8852,6 +9048,11 @@
         },
         {
           "source": "/thoughts/autopoiesis",
+          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "text": "The Mental Demands of Modern Life"
+        },
+        {
+          "source": "/thoughts/burnout",
           "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
           "text": "The Mental Demands of Modern Life"
         }
@@ -9407,6 +9608,13 @@
           "text": "building in public"
         }
       ],
+      "/thoughts/burnout": [
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/burnout",
+          "text": "Burnout"
+        }
+      ],
       "/thoughts/cancel-culture": [
         {
           "source": "/thoughts/digital-permanence",
@@ -9725,6 +9933,11 @@
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/constructionist",
           "text": "constructionist"
+        },
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/constructionist",
+          "text": "Constructivism"
         },
         {
           "source": "/thoughts/academia",
@@ -10530,6 +10743,11 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/epistemic-authority",
           "text": "epistemic authority"
+        },
+        {
+          "source": "/thoughts/religious-authority",
+          "target": "/thoughts/epistemic-authority",
+          "text": "epistemic authority"
         }
       ],
       "/thoughts/epistemic-injustice": [
@@ -10785,6 +11003,11 @@
           "text": "fiction"
         },
         {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/fiction",
+          "text": "fiction"
+        },
+        {
           "source": "/thoughts/infrastructure",
           "target": "/thoughts/fiction",
           "text": "fiction"
@@ -10862,6 +11085,16 @@
         }
       ],
       "/thoughts/friendship": [
+        {
+          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/friendship",
+          "text": "love"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/friendship",
+          "text": "friendships, and love"
+        },
         {
           "source": "/thoughts/game-design",
           "target": "/thoughts/friendship",
@@ -11036,7 +11269,12 @@
           "text": "games"
         },
         {
-          "source": "/thoughts/World-Seed",
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/games",
+          "text": "Games"
+        },
+        {
+          "source": "/thoughts/World-Building",
           "target": "/thoughts/games",
           "text": "games"
         },
@@ -11718,6 +11956,11 @@
           "text": "intentionality"
         },
         {
+          "source": "/thoughts/religious-authority",
+          "target": "/thoughts/intentionality",
+          "text": "intentionality"
+        },
+        {
           "source": "/thoughts/representation",
           "target": "/thoughts/intentionality",
           "text": "intentionality"
@@ -12023,6 +12266,13 @@
           "source": "/thoughts/game-design",
           "target": "/thoughts/longevity",
           "text": "longevity"
+        }
+      ],
+      "/thoughts/lost-knowledge": [
+        {
+          "source": "/thoughts/tools-for-thought",
+          "target": "/thoughts/lost-knowledge",
+          "text": "lost knowledge"
         }
       ],
       "/thoughts/machine-learning": [
@@ -12417,7 +12667,7 @@
           "text": "pace"
         },
         {
-          "source": "/thoughts/World-Seed",
+          "source": "/thoughts/World-Building",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
         },
@@ -12447,6 +12697,11 @@
         },
         {
           "source": "/thoughts/The-ones-who-walk-away-from-Omelas",
+          "target": "/thoughts/pain",
+          "text": "pain"
+        },
+        {
+          "source": "/thoughts/burnout",
           "target": "/thoughts/pain",
           "text": "pain"
         },
@@ -12549,6 +12804,11 @@
           "source": "/thoughts/The-Grasshopper",
           "target": "/thoughts/play",
           "text": "Play"
+        },
+        {
+          "source": "/thoughts/World-Building",
+          "target": "/thoughts/play",
+          "text": "play"
         },
         {
           "source": "/thoughts/academia",
@@ -13069,6 +13329,13 @@
           "text": "recommendation system"
         }
       ],
+      "/thoughts/religious-authority": [
+        {
+          "source": "/thoughts/testimony",
+          "target": "/thoughts/religious-authority",
+          "text": "religious authority"
+        }
+      ],
       "/thoughts/representation": [
         {
           "source": "/posts/ai-systems",
@@ -13508,6 +13775,11 @@
         },
         {
           "source": "/thoughts/quantization",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
+        },
+        {
+          "source": "/thoughts/religious-authority",
           "target": "/thoughts/terminology",
           "text": "terminology"
         },
@@ -14222,6 +14494,11 @@
     },
     {
       "source": "/books",
+      "target": "/thoughts/Mutual-Aid",
+      "text": "Mutual Aid"
+    },
+    {
+      "source": "/books",
       "target": "/thoughts/games",
       "text": "Games: Agency as Art"
     },
@@ -14414,6 +14691,11 @@
       "source": "/posts/2021",
       "target": "/posts/networked-thought",
       "text": "digital gardening"
+    },
+    {
+      "source": "/posts/2021",
+      "target": "/thoughts/Bentoism",
+      "text": "Bentoism"
     },
     {
       "source": "/posts/2021",
@@ -15106,6 +15388,11 @@
       "text": "Accountability"
     },
     {
+      "source": "/thoughts/Bentoism",
+      "target": "/thoughts/Community-of-Fate",
+      "text": "Community of Fate"
+    },
+    {
       "source": "/thoughts/Brains-in-a-Vat",
       "target": "/thoughts/Putnams-Ant-Argument",
       "text": "Putnam's Ant Argument"
@@ -15174,6 +15461,16 @@
       "source": "/thoughts/Cities-and-Programming",
       "target": "/thoughts/creation-vs-maintenance",
       "text": "creation vs maintenance"
+    },
+    {
+      "source": "/thoughts/Community-of-Fate",
+      "target": "/thoughts/Bentoism",
+      "text": "Bentoism"
+    },
+    {
+      "source": "/thoughts/Community-of-Fate",
+      "target": "/thoughts/Mutual-Aid",
+      "text": "mutual aid"
     },
     {
       "source": "/thoughts/Consciousness-is-not-Information",
@@ -15409,6 +15706,11 @@
       "source": "/thoughts/HTTP",
       "target": "/thoughts/Application-Layer",
       "text": "Application Layer"
+    },
+    {
+      "source": "/thoughts/HTTP",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/HTTP",
@@ -16146,6 +16448,21 @@
       "text": "social contracts"
     },
     {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/friendship",
+      "text": "love"
+    },
+    {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/burnout",
+      "text": "Burnout"
+    },
+    {
+      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/constructionist",
+      "text": "Constructivism"
+    },
+    {
       "source": "/thoughts/The-Midnight-Library",
       "target": "/thoughts/optionality",
       "text": "optionality"
@@ -16376,12 +16693,37 @@
       "text": "consensus"
     },
     {
-      "source": "/thoughts/World-Seed",
+      "source": "/thoughts/World-Building",
+      "target": "/thoughts/games",
+      "text": "Games"
+    },
+    {
+      "source": "/thoughts/World-Building",
+      "target": "/thoughts/fiction",
+      "text": "fiction"
+    },
+    {
+      "source": "/thoughts/World-Building",
+      "target": "/thoughts/friendship",
+      "text": "friendships, and love"
+    },
+    {
+      "source": "/thoughts/World-Building",
+      "target": "/thoughts/Hackers",
+      "text": "Hacker"
+    },
+    {
+      "source": "/thoughts/World-Building",
+      "target": "/thoughts/play",
+      "text": "play"
+    },
+    {
+      "source": "/thoughts/World-Building",
       "target": "/thoughts/games",
       "text": "games"
     },
     {
-      "source": "/thoughts/World-Seed",
+      "source": "/thoughts/World-Building",
       "target": "/thoughts/pace-layers",
       "text": "pace layers"
     },
@@ -16684,6 +17026,16 @@
       "source": "/thoughts/building-in-public",
       "target": "/posts/collaborative-thinking",
       "text": "Collaborative thinking"
+    },
+    {
+      "source": "/thoughts/burnout",
+      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "text": "The Mental Demands of Modern Life"
+    },
+    {
+      "source": "/thoughts/burnout",
+      "target": "/thoughts/pain",
+      "text": "pain"
     },
     {
       "source": "/thoughts/censorship",
@@ -18831,6 +19183,16 @@
       "text": "a new DARPA"
     },
     {
+      "source": "/thoughts/lost-knowledge",
+      "target": "/posts/collaborative-thinking",
+      "text": "collaborative thinking"
+    },
+    {
+      "source": "/thoughts/lost-knowledge",
+      "target": "/posts/networked-thought",
+      "text": "networked thought"
+    },
+    {
       "source": "/thoughts/machine-learning",
       "target": "/thoughts/connectionist-networks",
       "text": "connectionist networks"
@@ -19681,6 +20043,21 @@
       "text": "attention"
     },
     {
+      "source": "/thoughts/religious-authority",
+      "target": "/thoughts/epistemic-authority",
+      "text": "epistemic authority"
+    },
+    {
+      "source": "/thoughts/religious-authority",
+      "target": "/thoughts/terminology",
+      "text": "terminology"
+    },
+    {
+      "source": "/thoughts/religious-authority",
+      "target": "/thoughts/intentionality",
+      "text": "intentionality"
+    },
+    {
       "source": "/thoughts/representation",
       "target": "/thoughts/intentionality",
       "text": "intentionality"
@@ -20072,6 +20449,11 @@
     },
     {
       "source": "/thoughts/testimony",
+      "target": "/thoughts/religious-authority",
+      "text": "religious authority"
+    },
+    {
+      "source": "/thoughts/testimony",
       "target": "/thoughts/bias",
       "text": "biases"
     },
@@ -20114,6 +20496,11 @@
       "source": "/thoughts/tools-for-thought",
       "target": "/thoughts/research-debt",
       "text": "research debt"
+    },
+    {
+      "source": "/thoughts/tools-for-thought",
+      "target": "/thoughts/lost-knowledge",
+      "text": "lost knowledge"
     },
     {
       "source": "/thoughts/tools-for-thought",
@@ -20214,6 +20601,16 @@
       "source": "/thoughts/tribe-flourishing",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "FCTC"
+    },
+    {
+      "source": "/thoughts/tribe-flourishing",
+      "target": "/thoughts/Mutual-Aid",
+      "text": "Mutual Aid"
+    },
+    {
+      "source": "/thoughts/tribe-flourishing",
+      "target": "/thoughts/Community-of-Fate",
+      "text": "Communities of Fate"
     },
     {
       "source": "/thoughts/trust",

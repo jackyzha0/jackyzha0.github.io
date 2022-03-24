@@ -447,7 +447,7 @@ if (!doNotTrack) {
     <h1 class="title">HTTP</h1>
     <article>
       <p class="meta">
-          Last updated March 21, 2022
+          Last updated March 23, 2022
       </p>
       <ul class="tags">
     
@@ -455,10 +455,93 @@ if (!doNotTrack) {
     
 </ul>
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#connections">Connections</a></li>
+    <li><a href="#cache">Cache</a></li>
+    <li><a href="#cookies">Cookies</a></li>
+    <li><a href="#clientserver-model">Client/server model</a></li>
+    <li><a href="#message-format">Message Format</a></li>
+    <li><a href="#request-methods">Request Methods</a></li>
+    <li><a href="#codes">Codes</a></li>
+    <li><a href="#www">WWW</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       <p>Main method of communication at the 
 
 
 <a href="/thoughts/Application-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Application-Layer">Application Layer</a> for the web</p>
+<h2 id="connections">Connections</h2>
+<ol>
+<li>Non-persistent HTTP (v1.0)
+<ul>
+<li>At most one object is sent over each 
+
+
+<a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a> connection</li>
+<li>Connection is closed as soon as data is transferred</li>
+<li>Include an additional round trip for the TCP handshake for <em>each object</em> = $2n$ RTTs where $n$ is number of resources</li>
+</ul>
+</li>
+<li>Persistent HTTP (v1.1)
+<ul>
+<li>Multiple requests can be sent over single connection</li>
+<li><code>Keep-Alive</code> header</li>
+<li>Round trip for each resource = $n + 1$ RTTs where $n$ is number of resources</li>
+<li>Pipelining:
+<ul>
+<li>Can send all the requests at once!</li>
+<li>Process them all sequentially but get all the responses in the same order as the requests</li>
+<li>Round trip = 3 RTTs (one for handshake, one for initial resource, one for the rest of the resources)</li>
+</ul>
+</li>
+<li>Server has the right to close any connection
+<ul>
+<li>Usual heuristic is to close the connection after 5 seconds of inactivity</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="cache">Cache</h2>
+<ul>
+<li>Browser may maintain a cached version of page</li>
+<li>Cache can also be maintained by a separate host (a proxy e.g. Varnish)</li>
+<li>Web servers can provide cache policy</li>
+<li>Calculating cache speedups
+<ul>
+<li>Cache time = $rRTT_\textrm{cache} + (1-r)(RTT_\textrm{server} + RTT_\textrm{cache})$ where $r$ is the cache hit rate</li>
+</ul>
+</li>
+</ul>
+<h2 id="cookies">Cookies</h2>
+<ul>
+<li>Used for storing per-user state
+<ul>
+<li>&ldquo;Remember me&rdquo; authentication</li>
+<li>Session state</li>
+</ul>
+</li>
+<li>Applicable for a particular hostname</li>
+<li>Response from server includes <code>Set-Cookie</code> header</li>
+<li>Browser saves cookie associated with the server</li>
+<li>Next request to the same server will include Cookie header with the same value</li>
+<li>Two styles of using cookies
+<ul>
+<li>All the state is in the cookie
+<ul>
+<li>Total header size limited by servers (~8KBytes)</li>
+<li>Individual cookie size limited by browsers (~4KBytes)</li>
+</ul>
+</li>
+<li>State (or part of it) may be stored server-side: cookie is used to identify entry in server database</li>
+</ul>
+</li>
+</ul>
 <h2 id="clientserver-model">Client/server model</h2>
 <ul>
 <li>Client: browser that requests, receives, displays Web objects</li>
