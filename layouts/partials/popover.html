@@ -7,7 +7,7 @@
     return template.content.firstChild
   }
   document.addEventListener("DOMContentLoaded", () => {
-    fetchData().then(({content}) => {
+    fetchData.then(({content}) => {
       [...document.getElementsByClassName("internal-link")]
         .forEach(li => {
           const linkDest = content[li.dataset.src]

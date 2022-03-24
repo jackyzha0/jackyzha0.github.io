@@ -12,7 +12,7 @@
 </style>
 <script>
 async function run() {
-  const { index, links, content } = await fetchData()
+  const { index, links, content } = await fetchData
   const curPage = {{ strings.TrimRight "/" .Page.RelPermalink }}
   const pathColors = {{$.Site.Data.graphConfig.paths}}
   let depth = {{$.Site.Data.graphConfig.depth}}
