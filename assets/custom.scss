@@ -61,9 +61,9 @@
 }
 
 .index {
-  margin: 4em 25vw;
+  padding: 4em 25vw;
   @media all and (max-width: 1200px) {
-    margin: 25px 5vw;
+    padding: 25px 5vw;
   }
 
   & > .bio {
