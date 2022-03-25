@@ -229,7 +229,7 @@
     }
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === "/") {
+      if (event.key === "k" && (event.ctrlKey || event.metaKey)) {
         event.preventDefault()
         openSearch()
       }
