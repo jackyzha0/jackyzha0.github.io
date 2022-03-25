@@ -374,7 +374,7 @@ if (!doNotTrack) {
     }
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === "/") {
+      if (event.key === "k" && (event.ctrlKey || event.metaKey)) {
         event.preventDefault()
         openSearch()
       }
@@ -401,6 +401,12 @@ if (!doNotTrack) {
 
   run()
 </script>
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
 
 <div class="index delay t-3">
     <header>
