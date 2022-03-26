@@ -96,7 +96,7 @@
         },
         {
           "source": "/books",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "target": "/thoughts/In-Over-Our-Heads",
           "text": "In Over Our Heads: The Mental Demands of Modern Life"
         },
         {
@@ -1506,6 +1506,48 @@
           "text": "maintenance"
         }
       ],
+      "/thoughts/In-Over-Our-Heads": [
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/group-limits",
+          "text": "group limits"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/social-contracts",
+          "text": "social contracts"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/friendship",
+          "text": "love"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/burnout",
+          "text": "Burnout"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/constructionist",
+          "text": "Constructivism"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/selfish",
+          "text": "selfish"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/teaching",
+          "text": "teaching"
+        }
+      ],
       "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT": [
         {
           "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
@@ -2011,6 +2053,16 @@
         },
         {
           "source": "/thoughts/Projects",
+          "target": "/thoughts/interaction-design",
+          "text": "interaction design"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/digital-commons",
+          "text": "digital commons"
+        },
+        {
+          "source": "/thoughts/Projects",
           "target": "/thoughts/telescopic-text",
           "text": "telescopic text"
         },
@@ -2191,38 +2243,6 @@
           "source": "/thoughts/The-Grasshopper",
           "target": "/thoughts/zero-sum",
           "text": "zero sum"
-        }
-      ],
-      "/thoughts/The-Mental-Demands-of-Modern-Life": [
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/consciousness",
-          "text": "consciousness"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/group-limits",
-          "text": "group limits"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/social-contracts",
-          "text": "social contracts"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/friendship",
-          "text": "love"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/burnout",
-          "text": "Burnout"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/constructionist",
-          "text": "Constructivism"
         }
       ],
       "/thoughts/The-Midnight-Library": [
@@ -2668,8 +2688,8 @@
         },
         {
           "source": "/thoughts/autopoiesis",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "text": "The Mental Demands of Modern Life"
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
         }
       ],
       "/thoughts/bandwidth": [
@@ -2851,8 +2871,8 @@
       "/thoughts/burnout": [
         {
           "source": "/thoughts/burnout",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "text": "The Mental Demands of Modern Life"
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
         },
         {
           "source": "/thoughts/burnout",
@@ -4825,6 +4845,11 @@
           "source": "/thoughts/interdependence",
           "target": "/thoughts/emergent-behaviour",
           "text": "emergent systems"
+        },
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/friendship",
+          "text": "friendship"
         }
       ],
       "/thoughts/internet-computing": [
@@ -6479,6 +6504,11 @@
         }
       ],
       "/thoughts/teaching": [
+        {
+          "source": "/thoughts/teaching",
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
+        },
         {
           "source": "/thoughts/teaching",
           "target": "/thoughts/constructionist",
@@ -8278,6 +8308,28 @@
           "text": "IP addresses"
         }
       ],
+      "/thoughts/In-Over-Our-Heads": [
+        {
+          "source": "/books",
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads: The Mental Demands of Modern Life"
+        },
+        {
+          "source": "/thoughts/autopoiesis",
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
+        },
+        {
+          "source": "/thoughts/burnout",
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
+        },
+        {
+          "source": "/thoughts/teaching",
+          "target": "/thoughts/In-Over-Our-Heads",
+          "text": "In Over Our Heads"
+        }
+      ],
       "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT": [
         {
           "source": "/thoughts/consciousness",
@@ -9040,23 +9092,6 @@
           "text": "The Grasshopper"
         }
       ],
-      "/thoughts/The-Mental-Demands-of-Modern-Life": [
-        {
-          "source": "/books",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "text": "In Over Our Heads: The Mental Demands of Modern Life"
-        },
-        {
-          "source": "/thoughts/autopoiesis",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "text": "The Mental Demands of Modern Life"
-        },
-        {
-          "source": "/thoughts/burnout",
-          "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "text": "The Mental Demands of Modern Life"
-        }
-      ],
       "/thoughts/The-Midnight-Library": [
         {
           "source": "/books",
@@ -9610,7 +9645,7 @@
       ],
       "/thoughts/burnout": [
         {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "source": "/thoughts/In-Over-Our-Heads",
           "target": "/thoughts/burnout",
           "text": "Burnout"
         }
@@ -9836,11 +9871,6 @@
           "text": "consciousness"
         },
         {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/consciousness",
-          "text": "consciousness"
-        },
-        {
           "source": "/thoughts/The-Upanisads",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
@@ -9930,14 +9960,14 @@
       ],
       "/thoughts/constructionist": [
         {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/constructionist",
+          "text": "Constructivism"
+        },
+        {
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/constructionist",
           "text": "constructionist"
-        },
-        {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-          "target": "/thoughts/constructionist",
-          "text": "Constructivism"
         },
         {
           "source": "/thoughts/academia",
@@ -10396,6 +10426,11 @@
       "/thoughts/digital-commons": [
         {
           "source": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "target": "/thoughts/digital-commons",
+          "text": "digital commons"
+        },
+        {
+          "source": "/thoughts/Projects",
           "target": "/thoughts/digital-commons",
           "text": "digital commons"
         },
@@ -11086,7 +11121,7 @@
       ],
       "/thoughts/friendship": [
         {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "source": "/thoughts/In-Over-Our-Heads",
           "target": "/thoughts/friendship",
           "text": "love"
         },
@@ -11104,6 +11139,11 @@
           "source": "/thoughts/group-limits",
           "target": "/thoughts/friendship",
           "text": "human intimacy"
+        },
+        {
+          "source": "/thoughts/interdependence",
+          "target": "/thoughts/friendship",
+          "text": "friendship"
         },
         {
           "source": "/thoughts/quotes",
@@ -11337,7 +11377,7 @@
       ],
       "/thoughts/group-limits": [
         {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "source": "/thoughts/In-Over-Our-Heads",
           "target": "/thoughts/group-limits",
           "text": "group limits"
         },
@@ -11979,6 +12019,11 @@
         },
         {
           "source": "/posts/2021",
+          "target": "/thoughts/interaction-design",
+          "text": "interaction design"
+        },
+        {
+          "source": "/thoughts/Projects",
           "target": "/thoughts/interaction-design",
           "text": "interaction design"
         },
@@ -13500,6 +13545,11 @@
           "text": "selfish"
         },
         {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/selfish",
+          "text": "selfish"
+        },
+        {
           "source": "/thoughts/economics",
           "target": "/thoughts/selfish",
           "text": "Selfishness"
@@ -13556,7 +13606,7 @@
           "text": "group norms"
         },
         {
-          "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
+          "source": "/thoughts/In-Over-Our-Heads",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
         },
@@ -13672,6 +13722,11 @@
         }
       ],
       "/thoughts/teaching": [
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/teaching",
+          "text": "teaching"
+        },
         {
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/teaching",
@@ -13826,6 +13881,11 @@
           "source": "/thoughts/Dreams",
           "target": "/thoughts/the-Self",
           "text": "the self"
+        },
+        {
+          "source": "/thoughts/In-Over-Our-Heads",
+          "target": "/thoughts/the-Self",
+          "text": "the Self"
         },
         {
           "source": "/thoughts/The-Upanisads",
@@ -14504,7 +14564,7 @@
     },
     {
       "source": "/books",
-      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
+      "target": "/thoughts/In-Over-Our-Heads",
       "text": "In Over Our Heads: The Mental Demands of Modern Life"
     },
     {
@@ -15808,6 +15868,46 @@
       "text": "maintenance"
     },
     {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/group-limits",
+      "text": "group limits"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/social-contracts",
+      "text": "social contracts"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/friendship",
+      "text": "love"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/burnout",
+      "text": "Burnout"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/constructionist",
+      "text": "Constructivism"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/the-Self",
+      "text": "the Self"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/selfish",
+      "text": "selfish"
+    },
+    {
+      "source": "/thoughts/In-Over-Our-Heads",
+      "target": "/thoughts/teaching",
+      "text": "teaching"
+    },
+    {
       "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
       "target": "/thoughts/consciousness",
       "text": "consciousness"
@@ -16269,6 +16369,16 @@
     },
     {
       "source": "/thoughts/Projects",
+      "target": "/thoughts/interaction-design",
+      "text": "interaction design"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/digital-commons",
+      "text": "digital commons"
+    },
+    {
+      "source": "/thoughts/Projects",
       "target": "/thoughts/telescopic-text",
       "text": "telescopic text"
     },
@@ -16431,36 +16541,6 @@
       "source": "/thoughts/The-Grasshopper",
       "target": "/thoughts/zero-sum",
       "text": "zero sum"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/consciousness",
-      "text": "consciousness"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/group-limits",
-      "text": "group limits"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/social-contracts",
-      "text": "social contracts"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/friendship",
-      "text": "love"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/burnout",
-      "text": "Burnout"
-    },
-    {
-      "source": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "target": "/thoughts/constructionist",
-      "text": "Constructivism"
     },
     {
       "source": "/thoughts/The-Midnight-Library",
@@ -16864,8 +16944,8 @@
     },
     {
       "source": "/thoughts/autopoiesis",
-      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "text": "The Mental Demands of Modern Life"
+      "target": "/thoughts/In-Over-Our-Heads",
+      "text": "In Over Our Heads"
     },
     {
       "source": "/thoughts/bandwidth",
@@ -17029,8 +17109,8 @@
     },
     {
       "source": "/thoughts/burnout",
-      "target": "/thoughts/The-Mental-Demands-of-Modern-Life",
-      "text": "The Mental Demands of Modern Life"
+      "target": "/thoughts/In-Over-Our-Heads",
+      "text": "In Over Our Heads"
     },
     {
       "source": "/thoughts/burnout",
@@ -18853,6 +18933,11 @@
       "text": "emergent systems"
     },
     {
+      "source": "/thoughts/interdependence",
+      "target": "/thoughts/friendship",
+      "text": "friendship"
+    },
+    {
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/Internet",
       "text": "Internet"
@@ -20366,6 +20451,11 @@
       "source": "/thoughts/symbolic-system",
       "target": "/thoughts/frame-problem",
       "text": "frame problem"
+    },
+    {
+      "source": "/thoughts/teaching",
+      "target": "/thoughts/In-Over-Our-Heads",
+      "text": "In Over Our Heads"
     },
     {
       "source": "/thoughts/teaching",

@@ -440,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">TCP</h1>
     <article>
       <p class="meta">
-          Last updated March 21, 2022
+          Last updated March 26, 2022
       </p>
       <ul class="tags">
     
@@ -495,7 +495,7 @@ if (!doNotTrack) {
 <li>Server to client initial sequence number is specified</li>
 </ol>
 </li>
-<li>Client sends an ACK emssage
+<li>Client sends an ACK message
 <ol>
 <li>Server to client sequence number is confirmed in ACK</li>
 </ol>
@@ -541,7 +541,7 @@ if (!doNotTrack) {
 <p>Tracks number of bytes sent outward by a host. If a TCP packet contains 1400 bytes of data, then the sequence number will be increased by 1400 after the packet is transmitted.</p>
 <h2 id="acknowledgement-number">Acknowledgement Number</h2>
 <p>Offset 64</p>
-<p>Tracks number of bytes received. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.</p>
+<p>Tracks number of bytes <strong>received</strong>. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.</p>
 
 
     </article>
