@@ -25,7 +25,7 @@ When a host requires assurance that the remote end has actually received the dat
 2. Server responds with a SYN/ACK (flip both bits) message
 	1. Client to server sequence number is confirmed in ACK
 	2. Server to client initial sequence number is specified
-3. Client sends an ACK emssage
+3. Client sends an ACK message
 	1. Server to client sequence number is confirmed in ACK
 
 ## Window Management
@@ -63,4 +63,4 @@ Tracks number of bytes sent outward by a host. If a TCP packet contains 1400 byt
 ## Acknowledgement Number
 Offset 64
 
-Tracks number of bytes received. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.
+Tracks number of bytes **received**. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.

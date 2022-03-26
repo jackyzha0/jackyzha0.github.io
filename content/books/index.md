@@ -24,7 +24,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
 
 ## Current
-* **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/The%20Mental%20Demands%20of%20Modern%20Life.md)** by Robert Kegan
+* **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
 
 ## Past
 2022

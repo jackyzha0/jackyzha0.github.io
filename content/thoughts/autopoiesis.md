@@ -13,4 +13,4 @@ Often times, [emergent behaviour](thoughts/emergent%20behaviour.md) is a form of
 
 Joint Attention
 - Children coordinating attention between two things: object and the adult
-- But as the child monitors the attention of the adult to other entities, this entity is sometimes the child, and thus the child begins to see themselves from the outside (see: Kegan's Development stages in [The Mental Demands of Modern Life](thoughts/The%20Mental%20Demands%20of%20Modern%20Life.md))
+- But as the child monitors the attention of the adult to other entities, this entity is sometimes the child, and thus the child begins to see themselves from the outside (see: Kegan's Development stages in [In Over Our Heads](thoughts/In%20Over%20Our%20Heads.md))

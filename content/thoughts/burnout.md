@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-From [The Mental Demands of Modern Life](thoughts/The%20Mental%20Demands%20of%20Modern%20Life.md)
+From [In Over Our Heads](thoughts/In%20Over%20Our%20Heads.md)
 
 Related: [pain](thoughts/pain.md) is not the unit of effort
 

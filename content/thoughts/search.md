@@ -66,7 +66,7 @@ The big thing here is that horizontal/'universal search' sites like Google use t
 
 Curation, when thought of in the context of sharing bite-sized, isolated bits in feed-like architectures, is predominantly about entertainment, not utility. **How do we move beyond the search bar in an [attention economy](thoughts/attention%20economy.md)?**
 
-But if we curate, who curates the currators? We then run into a meta-governance problem. Mirror's [Token Race](https://dev.mirror.xyz/dLLIq4Iebg5DLWJbOWa3sU6oQuwbogkmqPnz-ZbzPUg) appears to be a good start to answering this question.
+But if we curate, who curates the curators? We then run into a meta-governance problem. Mirror's [Token Race](https://dev.mirror.xyz/dLLIq4Iebg5DLWJbOWa3sU6oQuwbogkmqPnz-ZbzPUg) appears to be a good start to answering this question.
 
 ### On Ads
 When you monetize via ads, curation takes a backseat to featuring advertisers - there is just less digital real estate available to curate your own recommendations. This creates [trust](thoughts/trust.md) gaps between users and search engines.

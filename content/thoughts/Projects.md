@@ -8,9 +8,17 @@ tags:
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
+## Cursor Chat -- 
+
+[GitHub](https://github.com/jackyzha0/cursor-chat), [Demo](https://jzhao.xyz/cursor-chat/)
+
+A lightweight (31.8kB) cursor chat à la Figma for digital co-existing + presence. An experiment in spatial software, [interaction design](thoughts/interaction%20design.md), and [digital commons](thoughts/digital%20commons.md).
+
+Built on top of [yjs](https://github.com/yjs/yjs) and [perfect-cursors](https://github.com/steveruizok/perfect-cursors).
+
 ## Telescopic Text -- open source library for expandable text
 
-[GitHub](https://github.com/jackyzha0/telescopic-text)
+[GitHub](https://github.com/jackyzha0/telescopic-text), [Demo](https://jzhao.xyz/telescopic-text/demo/)
 
 An open-source library to help with creating expandable text, inspired by [StretchText](https://en.wikipedia.org/wiki/StretchText) and [TelescopicText](https://www.telescopictext.org/text/KPx0nlXlKTciC).
 
