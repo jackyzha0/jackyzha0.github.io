@@ -59,7 +59,7 @@ WEC seems to promote an incredibly individualistic approach; Indians must work w
 
 "Although the hive had a queen, he pointed out it was governed by the rule-driven behaviour of its many members. In the hive one could see 'the true democracy and all distributed governance'. One could also see the faded image of New Communalism. Leveled, collaborative, linked by invisible signals and shared feelings, Kelly's hive was a sort of natural commune." (more on [collaborative-thinking](posts/collaborative-thinking.md))
 
-"Together, *Wired* suggested, this digital generation would do what the New Communalists had failed to accomplish: they would tear down hierarchies, undermine the sorts of corporations and governments that had spawned them, and, in the hierarchies' place, create a peer-to-peer, collaborative society, interlinked by invisible currents of energy and information."
+"Together, *Wired* suggested, this digital generation would do what the New Communalists had failed to accomplish: they would tear down hierarchies, undermine the sorts of corporations and governments that had spawned them, and, in the hierarchies' place, create a [peer-to-peer](thoughts/peer%20to%20peer.md), collaborative society, interlinked by invisible currents of energy and information."
 
 "The urge to 'hack' politics by bringing governance down to a mangeable local level and by basing social integration on technologically facilitated forms of consciousness was one of the driving impulses behind the New Communalist movement"
 

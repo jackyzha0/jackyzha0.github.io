@@ -27,3 +27,11 @@ e.g.
 - social stigma
 - high cost (time and money)
 - difficult entry (hazing)
+
+## Geeks, MOPs, and sociopaths in subculture evolution
+[From the article of the same name](https://meaningness.com/geeks-mops-sociopaths)
+
+- Creators: riff off of each other, produce examples and variants, and share them for mutual enjoyment, generating positive energy
+- Fanatics: don’t create, but they contribute energy (time, money, adulation, organization, analysis) to support the creators.
+- Creators and fanatics are both geeks. They totally love the New Thing, they’re fascinated with all its esoteric ins and outs, and they spend all available time either doing it or talking about it.
+- Mops: fans, but not rabid fans like the fanatics. They show up to have a good time, and contribute as little as they reasonably can in exchange.

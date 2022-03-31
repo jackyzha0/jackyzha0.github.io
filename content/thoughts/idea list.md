@@ -56,7 +56,7 @@ tags:
 -   location-based ephemeral social groups with zero-knowledge proofs on location
     -   each location/city has a chat group which has a compound hash of all people in that location, derive only a boolean of whether a person is in a city or not without revealing exact location
     -   when a person leaves/arrives at a city, city hash is updated
--   p2p reddit w custom chain crawlers and the ability to bake keys into content
+-   [p2p](thoughts/peer%20to%20peer.md) reddit w custom chain crawlers and the ability to bake keys into content
 -   autocomplete for rendered latex with a computer algebra system
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol

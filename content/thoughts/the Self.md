@@ -35,3 +35,12 @@ Autoscopic Phenomena
 		- The self is self-specifying ([autopoietic](thoughts/autopoiesis.md)) and also [interdependent](thoughts/interdependence.md) (dependently originated process)
 3. Absolutism
 	- There exists a real independent self
+
+## Identity
+Essay by Jenny Odell and in [Kopi Chats on Substack](https://kopiclub.substack.com/p/letter-37-loneliness-vs-being-alone)
+
+> _“When I examine my identity, I do see an inalienable spirit grasping for infinity. But in the very same place, I also see an intersection of historical and cultural vectors, held up by **a web of countless reliances**.”_
+
+Reminds me of Indra's Net, that everything is [interdependent](thoughts/interdependence.md), [empty](thoughts/emptiness.md) of dependent origination.
+
+"Connective vulnerability is so frightening because sometimes we will be let down by others, unmoored from [friendships](thoughts/friendship.md) and relationships we thought were our anchors in life. But that doesn’t mean we shouldn’t try. (see: [nothing stops](posts/nothing%20stops.md))"

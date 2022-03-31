@@ -39,7 +39,7 @@ We are in the process from changing platforms to _protocols_; the difference bei
 [Internet](thoughts/Internet.md) services were built on open [protocols](thoughts/Protocol.md) that were controlled by the internet community. Develops could generally rest assured that these protocols wouldn't change much because they were commonly agreed on by the community. 
 
 ### Web2, Platform Economy [2000s to 2020s]
-Internet as we know it today, companies that provide services in exchange for your personal data. Web2 enabled us to enjoy P2P interactions on a global scale, but always with a middleman: a platform acting as a trusted intermediary between two people who do not know or trust each other.
+Internet as we know it today, companies that provide services in exchange for your personal data. Web2 enabled us to enjoy [P2P](thoughts/peer%20to%20peer.md) interactions on a global scale, but always with a middleman: a platform acting as a trusted intermediary between two people who do not know or trust each other.
 
 General migration from open services to more sophisticated, centralized services
 

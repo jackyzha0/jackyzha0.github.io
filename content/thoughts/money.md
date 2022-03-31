@@ -21,7 +21,7 @@ What money is, how it is created, and who gets to distribute it goes to the very
 
 Money allows specialization, allowing goods and services to be transformed into a intermediary representation that is accepted by society.
 
-## Master-slave vs Peer-to-peer
+## Master-slave vs [Peer-to-peer](thoughts/peer%20to%20peer.md)
 Difference between hierarchical and [decentralized](thoughts/decentralization.md) methods.
 
 Question is "who is the slave"? Supposedly the those that need to follow the interfaces that the master dictates, there is no 'ownership'.

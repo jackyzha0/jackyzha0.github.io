@@ -100,6 +100,22 @@ They freely provide, it seems, a sorting of the wheat from the chaff, and answer
 
 They are the database of our intentions. We search for things we are hoping to know, hoping to do, and hoping to become
 
+## Library Search
+- first catalogue was 4000 years ago
+- card catalogue: "indexing" each book listed alphabetically by title, author, and subject
+- computerization: online public access catalogues (OPACs) in 1970s, 1980s
+- catalogues move online in 1990s - "web OPAC"
+	- downsides: locked libraries into traditional models of search
+- second generation OPACs - incorporate interactive features and simplified interfaces
+	- competition from search engines pushed redesign
+- library "discovery layers" implemented
+	- expansion of online collections: articles, ebooks, digital library collections
+	- gives a search engine appearance and functionality
+- mainly relies on metadata as opposed to internet search engines which rely on full text content and keywords
+
+## Federated Search
+Federated search is a technique used to search multiple data sources at once. With federated search, you can retrieve information from many different content locations with just one query and one search interface.
+
 ## Internet topology as shaped by search engines
 [Source: Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/)
 
@@ -137,11 +153,6 @@ Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
 - Index: unique id to a single document
 - Inverted Index: index which each entry holds list of pointers to all items with a certain property (e.g. title)
 
-## Internet Content
-1. Surface Web: 1-5%
-2. Deep Web: 95%
-3. Dark Web: 1-5%
-
 ## Generations
 1. Pre-1998: keyword frequency and boolean operators
 2. 1998-2010: link structure (page rank), keywords
@@ -156,3 +167,35 @@ Major issues:
 4. Property rights: how do crawlers/search engines respect property, ownership, free market competition
 
 Search is a form of [data capitalism](thoughts/Data%20Capitalism.md)
+
+## Regulation
+### Google Books
+- Goal to scan 1 million books in 3 years
+	- Bypassed copyright, which is highly problematic
+	- Tried to fix this by partnering with 20 major libraries through their Publisher Program
+	- Secretive; tried to tell libraries not to tell each other about this partnership
+- Aiming to create a large scale digital [library](thoughts/library.md) that included *historical* knowledge
+- Critiques
+	- Poor quality of scanning
+	- Privacy -- Google would gain access into detailed insights about what people were reading
+		- Historically, librarians focussed heavily on this, sometimes even going to jail due to resisting handing over library records
+- 2005 Class Action Lawsuit by author and copyright holders' organizations: theft of books
+	- 2008 settlement: Google agreed to pay copyright holders; revenue from orphan works; access through libraries
+	- 2011 settlement thrown out over concerns of monopoly, privacy, European opposition
+	- 2013 appealed
+	- 2016 Supreme Court of US ruled that Google Books was legal under the Fair Use exception (claiming it expands public knowledge and understanding)
+- Competition policies
+	- Sherman Act (1890): outlaws "monopolization, attempted monopolization, or conspiracy or combination to monopolize"
+[Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz)
+- In 2011, Swartz was arrested MIT police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR in the hopes of freer access of information
+- Federal prosecutors, led by Carmen Ortiz, later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act
+- Swartz was found dead supposedly by suicide in his Brooklyn apartment, though this is still disputed 
+EU Digital Markets Act
+- Applies to "gate-keeper platforms"; fines up to 20% of annual revenue
+- e.g.
+	- Prohibits use of personal data mined from one service to benefit another service they offer
+	- Prohibition on requiring users to subscribe to one's service
+	- Requirements for transparency on advertising prices
+	- Prohibitions on self-preferencing
+	- Restrictions on targeted advertising without consent
+	- Requirements for interoperability with third-party software

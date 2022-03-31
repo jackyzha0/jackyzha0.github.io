@@ -17,6 +17,12 @@ When a host requires assurance that the remote end has actually received the dat
 6. Connection-oriented: handshaking initializes both sender and receiver state before data exchange
 7. Flow controlled: sender will not overwhelm receiver
 
+## Flags
+- SYN (sychronize): packets used to initiate a connection
+- ACK (acknowledgement): packets that are used to confirm that the data packets have been received, also used to confirm the initiation request and tear down requests
+- RST (reset): signify the connection is down or maybe the service is not accepting the requests
+- FIN (finish): indicate that the connection is being torn down. Both sender and receiver send the FIN packets to gracefully terminate the connection
+
 ## Connection Establishment
 - Three-way handshake
 - To solve single initial sequence number problem, we randomly choose the initial sequence number
@@ -64,3 +70,5 @@ Tracks number of bytes sent outward by a host. If a TCP packet contains 1400 byt
 Offset 64
 
 Tracks number of bytes **received**. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.
+
+The flag is set **if the acknowledgement number field contains a valid acknowledgement number**.

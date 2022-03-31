@@ -10,6 +10,8 @@ tags:
 The [Internet](thoughts/Internet.md) is a network of networks. The main goals was to integrate a number of separately  
 administrated entities into a common entity
 
+See also: [peer to peer](thoughts/peer%20to%20peer.md)
+
 ## Communication
 Necessary conditions
 - A communication medium
@@ -175,11 +177,13 @@ Traffic Intensity
 ### Receiver
 - Each packet is ack'ed individually
 - Out of order packet is stored for later: receiver's window
+- If a packet arrives whose sequence number is too small to fit in the window it will be ACKed and dropped.
+- Only when a packet whose sequence number is too large to fit in the window will it not be ACKed; such packets will be silently dropped.
 ### Sender
 - Can have a specific number of outstanding (unacknowledged) packets in memory: sender's window
-- Each packet has its own timer
-- Each packet is individually resent if timeout is reached
+- Each packet has its own timer and is individually resent if timeout is reached
 - ACKs received in order move the sender's window
+
 
 [Simulation Link](https://media.pearsoncmg.com/aw/ecs_kurose_compnetwork_7/cw/content/interactiveanimations/selective-repeat-protocol/index.html)
 

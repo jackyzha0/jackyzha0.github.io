@@ -8,7 +8,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
-* **The Book of Form and Emptiness** by Ruth Ozeki
 * **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
 * **Permutation City** by Greg Egan
@@ -24,10 +23,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
 
 ## Current
-* **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
+* **The Book of Form and Emptiness** by Ruth Ozeki
 
 ## Past
 2022
+* **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
 - [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
 - [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant

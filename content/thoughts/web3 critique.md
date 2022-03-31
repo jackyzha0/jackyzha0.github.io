@@ -27,7 +27,7 @@ Levels of connecting to the blockcahin
 2.  Run a piece of code that asks the Infura API endpoint what the blockchain state is, trust the answer. However, keys are still kept locally; the code signs transactions locally and sends them to the Infura API endpoint to be re-broadcasted.
 3.  Same as (2), but the code also runs a [light client](https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-protocol.md) to verify the signatures on the block headers and uses Merkle proofs to verify individual account and storage data.
 4.  Same as (3), but the code talks to N different API endpoints run by N different companies, so only 1 of them need to be providing honest answers for the connection to be reliable.
-5.  Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a p2p network
+5.  Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a [p2p](thoughts/peer%20to%20peer.md) network
 6.  Same as (5), but the code also does data availability sampling and accepts fraud proofs, so it can detect and refuse to accept blocks that are invalid.
 7.  Run a fully verifying node.
 8.  Run a fully verifying node that also participates in mining/staking.

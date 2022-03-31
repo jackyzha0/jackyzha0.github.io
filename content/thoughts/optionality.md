@@ -25,3 +25,10 @@ Maybe why humans constantly chase [prestige](thoughts/prestige.md): to keep door
 
 ## Paradox of Choice
 Individuals are *more* likely to be stressed from a larger number of options as considering more choices requires more mental effort.
+
+## Requiem for a Dream
+[New Yorker on Aaron Swartz](https://www.newyorker.com/magazine/2013/03/11/requiem-for-a-dream)
+
+“I’ve hired a lot of very talented programmers, and one of the things I discovered was that the people who didn’t graduate from college couldn’t finish projects,” his father says. “Because when you go to college, there’s all sorts of stupid stuff you have to do in order to get through.”
+
+> It is a vertiginous thing to have so much freedom—to be always self-skeptical, always testing the reasons for your beliefs, always prepared to abandon them for something better. If you can do anything you want, then every day becomes an existential problem—an empty space of possibility that has no ceiling but also no walls and no floor.

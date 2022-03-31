@@ -18,7 +18,7 @@ Characteristics
 
 The study of information in and of itself is a research area too, through and the [Information Professions](thoughts/information%20professions.md)
 
-### Hierarchy
+## Hierarchy
 In informatics, there exists the concept of an Information Hierarchy, Knowledge Pyramid, or DIKW Hierarchy.
 
 Data is transformed into Information, which is transformed into Knowledge, which is then transformed into Wisdom.
@@ -28,7 +28,7 @@ Data is transformed into Information, which is transformed into Knowledge, which
 1. Data: raw or elementary observations about properties of objects, events, and their environment
 2. Information: data after aggregation, processing, analyzing, formatting, and organization to add meaning and context
 
-### Information is political
+## Information is political
 [Source: Foundations of Information by *Amy J. Ko*](https://faculty.washington.edu/ajko/books/foundations-of-information/#/power)
 
 As information becomes more abundant and saturated in our world, has information been any more of less important/necessary? We may have access to more of it, but it’s not obvious that this is better—just different.
@@ -46,6 +46,10 @@ Information identifies us. Each of us leave informational foot prints as we live
 Contrary to Marshall McLuhan’s famous phrase, "the medium is the message", it seems as if the vast majority of the power from information is derived from its meaning and [context](thoughts/context.md) rather than its medium or method of transmission.
 
 > Of what value is its microprocessor, its memory, and its applications if there is no content to consume and no people to connect with?
+
+Aaron Swartz in the *“Guerrilla Open Access Manifesto”*
+
+> Information is power. But like all power, there are those who want to keep it for themselves. The world’s entire scientific and cultural heritage, published over centuries in books and journals, is increasingly being digitized and locked up by a handful of private corporations. . . . Providing scientific articles to those at elite universities in the First World, but not to children in the Global South? It’s outrageous and unacceptable. . . . We can fight back. Those with access to these resources—students, librarians, scientists—you have been given a privilege. You get to feed at this banquet of knowledge while the rest of the world is locked out. But you need not—indeed, morally, you cannot—keep this privilege for yourselves. You have a duty to share it with the world.
 
 ## Information [Representation](thoughts/representation.md)
 How do we represent documents and information in our databases and collections?
