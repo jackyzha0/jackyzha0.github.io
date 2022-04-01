@@ -34,7 +34,7 @@ Both network and [transport layer](thoughts/Transport%20Layer.md) (violation of 
 ## Hole-punching
 > Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).
 
-Mostly used in [decentralized](thoughts/decentralization.md) or [peer-to-peer](thoughts/peer%20to%20peer.md) communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.
+Mostly used in [decentralized](thoughts/decentralization.md) or [peer-to-peer](thoughts/peer-to-peer.md) communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.
 
 Hole-punching usually involves the use of third-party hosts that run STUN or ICE to figure out the public address of the NAT.
 

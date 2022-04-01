@@ -48,5 +48,5 @@ Longer-term research project/experiment around building multi-writer decentraliz
 ## IP/Name Resolution/DNS Layer
 -   distributed hash table for network comms (this replaces DNS)
 -   ID to IP
--   can be used for hole punching for [p2p](thoughts/peer%20to%20peer.md)
+-   can be used for hole punching for [p2p](thoughts/peer-to-peer.md)
 -   Still good ol' IP + HTTP for base layer of communication

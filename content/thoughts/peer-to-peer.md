@@ -1,5 +1,5 @@
 ---
-title: "Peer-to-peer"
+title: "Peer to peer"
 date: 2022-03-30
 tags:
 - seed

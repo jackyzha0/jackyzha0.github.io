@@ -10,7 +10,7 @@ tags:
 The [Internet](thoughts/Internet.md) is a network of networks. The main goals was to integrate a number of separately  
 administrated entities into a common entity
 
-See also: [peer to peer](thoughts/peer%20to%20peer.md)
+See also: [peer-to-peer](thoughts/peer-to-peer.md)
 
 ## Communication
 Necessary conditions

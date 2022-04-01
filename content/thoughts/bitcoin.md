@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Peer to peer](thoughts/peer%20to%20peer.md) electronic cash built using [blockchain](thoughts/blockchain.md). Capital 'B' Bitcoin is the network and [protocol](thoughts/Protocol.md), lower case 'b' bitcoin is the actual currency.
+[Peer to peer](thoughts/peer-to-peer.md) electronic cash built using [blockchain](thoughts/blockchain.md). Capital 'B' Bitcoin is the network and [protocol](thoughts/Protocol.md), lower case 'b' bitcoin is the actual currency.
 
 Here, centralized intermediaries (banks) are replaced by a trustless network of 'miners' which use [proof of work](thoughts/proof%20of%20work.md) for consensus.
 

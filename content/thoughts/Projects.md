@@ -26,7 +26,7 @@ I've been thinking a lot about creating a browsable store of knowledge that prov
 
 Writing here: [telescopic text](thoughts/telescopic%20text.md)
 
-## Portal -- zero-config [P2P](thoughts/peer%20to%20peer.md) encrypted folder syncing
+## Portal -- zero-config [P2P](thoughts/peer-to-peer.md) encrypted folder syncing
 
 [Producthunt](https://www.producthunt.com/posts/portal-11), [GitHub](https://github.com/jackyzha0/portal)
 
