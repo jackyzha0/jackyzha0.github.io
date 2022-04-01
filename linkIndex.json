@@ -526,6 +526,11 @@
           "source": "/posts/hackathons",
           "target": "/thoughts/funding",
           "text": "funding"
+        },
+        {
+          "source": "/posts/hackathons",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
         }
       ],
       "/posts/networked-thought": [
@@ -1323,6 +1328,11 @@
       "/thoughts/Experience": [
         {
           "source": "/thoughts/Experience",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/Experience",
           "target": "/posts/hootsuite",
           "text": "Hootsuite"
         }
@@ -1374,6 +1384,11 @@
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
           "target": "/posts/collaborative-thinking",
           "text": "collaborative-thinking"
+        },
+        {
+          "source": "/thoughts/From-Counterculture-to-Cyberculture",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
         },
         {
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
@@ -1878,6 +1893,11 @@
         },
         {
           "source": "/thoughts/NAT",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/NAT",
           "target": "/thoughts/UDP",
           "text": "UDP"
         },
@@ -2068,6 +2088,11 @@
         },
         {
           "source": "/thoughts/Projects",
+          "target": "/thoughts/peer-to-peer",
+          "text": "P2P"
+        },
+        {
+          "source": "/thoughts/Projects",
           "target": "/thoughts/Internet",
           "text": "Internet"
         }
@@ -2089,6 +2114,13 @@
           "source": "/thoughts/Reductionism",
           "target": "/thoughts/qualia",
           "text": "qualia"
+        }
+      ],
+      "/thoughts/Rhizome": [
+        {
+          "source": "/thoughts/Rhizome",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
         }
       ],
       "/thoughts/Rokos-Basilisk": [
@@ -2602,6 +2634,28 @@
           "text": "infrastructure"
         }
       ],
+      "/thoughts/algorithmic-decision-making": [
+        {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/posts/bias-bug",
+          "text": "bias-bug"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "Algorithms of Oppression"
+        }
+      ],
       "/thoughts/aperture-problem": [
         {
           "source": "/thoughts/aperture-problem",
@@ -2772,6 +2826,11 @@
         }
       ],
       "/thoughts/bitcoin": [
+        {
+          "source": "/thoughts/bitcoin",
+          "target": "/thoughts/peer-to-peer",
+          "text": "Peer to peer"
+        },
         {
           "source": "/thoughts/bitcoin",
           "target": "/thoughts/blockchain",
@@ -3473,6 +3532,11 @@
           "source": "/thoughts/digital-permanence",
           "target": "/thoughts/context",
           "text": "context"
+        },
+        {
+          "source": "/thoughts/digital-permanence",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
         }
       ],
       "/thoughts/double-consciousness": [
@@ -4349,6 +4413,11 @@
         },
         {
           "source": "/thoughts/idea-list",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/idea-list",
           "target": "/thoughts/interoperability",
           "text": "interop"
         },
@@ -4857,6 +4926,11 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -5436,6 +5510,11 @@
         },
         {
           "source": "/thoughts/money",
+          "target": "/thoughts/peer-to-peer",
+          "text": "Peer-to-peer"
+        },
+        {
+          "source": "/thoughts/money",
           "target": "/thoughts/decentralization",
           "text": "decentralized"
         },
@@ -5645,6 +5724,48 @@
           "source": "/thoughts/pace-layers",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "Extended Mind Hypothesis"
+        }
+      ],
+      "/thoughts/peer-to-peer": [
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/blockchain",
+          "text": "Blockchain"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/decentralization",
+          "text": "decentralized"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/trust",
+          "text": "trusted"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/truth",
+          "text": "truth"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
         }
       ],
       "/thoughts/phenomenology": [
@@ -6339,6 +6460,11 @@
           "source": "/thoughts/search",
           "target": "/thoughts/Data-Capitalism",
           "text": "data capitalism"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/library",
+          "text": "library"
         }
       ],
       "/thoughts/security": [
@@ -6621,6 +6747,26 @@
           "source": "/thoughts/the-Self",
           "target": "/thoughts/interdependence",
           "text": "interdependent"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/emptiness",
+          "text": "empty"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/friendship",
+          "text": "friendships"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/posts/nothing-stops",
+          "text": "nothing stops"
         }
       ],
       "/thoughts/tools-for-thought": [
@@ -7102,6 +7248,11 @@
         },
         {
           "source": "/thoughts/web3",
+          "target": "/thoughts/peer-to-peer",
+          "text": "P2P"
+        },
+        {
+          "source": "/thoughts/web3",
           "target": "/thoughts/Protocol",
           "text": "protocol"
         },
@@ -7161,6 +7312,11 @@
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/Degraded-Blockchain-problem",
           "text": "Degraded Blockchain problem"
+        },
+        {
+          "source": "/thoughts/web3-critique",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
         }
       ],
       "/thoughts/workflows": [
@@ -7306,6 +7462,11 @@
           "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/posts/bias-bug",
           "text": "'imperfect' algorithms"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/posts/bias-bug",
+          "text": "bias-bug"
         },
         {
           "source": "/thoughts/bias",
@@ -7524,6 +7685,13 @@
           "text": "new-words"
         }
       ],
+      "/posts/nothing-stops": [
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/posts/nothing-stops",
+          "text": "nothing stops"
+        }
+      ],
       "/posts/paid-open-source": [
         {
           "source": "/newsletters/issue-2",
@@ -7654,6 +7822,11 @@
       "/thoughts/Algorithms-of-Oppression": [
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "Algorithms of Oppression"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
           "target": "/thoughts/Algorithms-of-Oppression",
           "text": "Algorithms of Oppression"
         },
@@ -8954,6 +9127,11 @@
           "text": "protocol"
         },
         {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/Protocol",
+          "text": "protocol"
+        },
+        {
           "source": "/thoughts/web3",
           "target": "/thoughts/Protocol",
           "text": "protocols"
@@ -9056,6 +9234,16 @@
         },
         {
           "source": "/thoughts/internet-computing",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/TCP",
+          "text": "TCP"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/TCP",
           "text": "TCP"
         }
@@ -9496,6 +9684,11 @@
           "text": "bias"
         },
         {
+          "source": "/thoughts/algorithmic-decision-making",
+          "target": "/thoughts/bias",
+          "text": "bias"
+        },
+        {
           "source": "/thoughts/gate-keeping",
           "target": "/thoughts/bias",
           "text": "bias"
@@ -9514,6 +9707,11 @@
       "/thoughts/bitcoin": [
         {
           "source": "/thoughts/blockchain",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/bitcoin",
           "text": "Bitcoin"
         }
@@ -9560,6 +9758,11 @@
           "source": "/thoughts/pace-layers",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/blockchain",
+          "text": "Blockchain"
         },
         {
           "source": "/thoughts/trust",
@@ -9872,6 +10075,11 @@
         },
         {
           "source": "/thoughts/The-Upanisads",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/algorithmic-decision-making",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
         },
@@ -10303,6 +10511,11 @@
           "text": "decentralized"
         },
         {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/decentralization",
+          "text": "decentralized"
+        },
+        {
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/decentralization",
           "text": "Decentralization"
@@ -10707,6 +10920,11 @@
         },
         {
           "source": "/thoughts/phenomenology",
+          "target": "/thoughts/emptiness",
+          "text": "empty"
+        },
+        {
+          "source": "/thoughts/the-Self",
           "target": "/thoughts/emptiness",
           "text": "empty"
         }
@@ -11149,6 +11367,11 @@
           "source": "/thoughts/quotes",
           "target": "/thoughts/friendship",
           "text": "friendship"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/friendship",
+          "text": "friendships"
         },
         {
           "source": "/thoughts/tribe-flourishing",
@@ -12105,6 +12328,11 @@
           "source": "/thoughts/the-Self",
           "target": "/thoughts/interdependence",
           "text": "interdependent"
+        },
+        {
+          "source": "/thoughts/the-Self",
+          "target": "/thoughts/interdependence",
+          "text": "interdependent"
         }
       ],
       "/thoughts/internet-computing": [
@@ -12278,6 +12506,11 @@
         },
         {
           "source": "/thoughts/information-system",
+          "target": "/thoughts/library",
+          "text": "library"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/library",
           "text": "library"
         }
@@ -12754,6 +12987,73 @@
           "source": "/thoughts/selfish",
           "target": "/thoughts/pain",
           "text": "pain"
+        }
+      ],
+      "/thoughts/peer-to-peer": [
+        {
+          "source": "/posts/hackathons",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/Experience",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/From-Counterculture-to-Cyberculture",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/NAT",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/peer-to-peer",
+          "text": "P2P"
+        },
+        {
+          "source": "/thoughts/Rhizome",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/bitcoin",
+          "target": "/thoughts/peer-to-peer",
+          "text": "Peer to peer"
+        },
+        {
+          "source": "/thoughts/digital-permanence",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/idea-list",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/peer-to-peer",
+          "text": "Peer-to-peer"
+        },
+        {
+          "source": "/thoughts/web3-critique",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/peer-to-peer",
+          "text": "P2P"
         }
       ],
       "/thoughts/phenomenology": [
@@ -14140,6 +14440,11 @@
           "text": "Trust"
         },
         {
+          "source": "/thoughts/peer-to-peer",
+          "target": "/thoughts/trust",
+          "text": "trusted"
+        },
+        {
           "source": "/thoughts/power",
           "target": "/thoughts/trust",
           "text": "trust"
@@ -14193,6 +14498,11 @@
         },
         {
           "source": "/thoughts/epistemology",
+          "target": "/thoughts/truth",
+          "text": "truth"
+        },
+        {
+          "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/truth",
           "text": "truth"
         },
@@ -14968,6 +15278,11 @@
       "text": "funding"
     },
     {
+      "source": "/posts/hackathons",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
+    },
+    {
       "source": "/posts/networked-thought",
       "target": "/thoughts/search",
       "text": "search"
@@ -15699,6 +16014,11 @@
     },
     {
       "source": "/thoughts/Experience",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
+    },
+    {
+      "source": "/thoughts/Experience",
       "target": "/posts/hootsuite",
       "text": "Hootsuite"
     },
@@ -15746,6 +16066,11 @@
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
       "target": "/posts/collaborative-thinking",
       "text": "collaborative-thinking"
+    },
+    {
+      "source": "/thoughts/From-Counterculture-to-Cyberculture",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
     },
     {
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
@@ -16214,6 +16539,11 @@
     },
     {
       "source": "/thoughts/NAT",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
+    },
+    {
+      "source": "/thoughts/NAT",
       "target": "/thoughts/UDP",
       "text": "UDP"
     },
@@ -16384,6 +16714,11 @@
     },
     {
       "source": "/thoughts/Projects",
+      "target": "/thoughts/peer-to-peer",
+      "text": "P2P"
+    },
+    {
+      "source": "/thoughts/Projects",
       "target": "/thoughts/Internet",
       "text": "Internet"
     },
@@ -16401,6 +16736,11 @@
       "source": "/thoughts/Reductionism",
       "target": "/thoughts/qualia",
       "text": "qualia"
+    },
+    {
+      "source": "/thoughts/Rhizome",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
     },
     {
       "source": "/thoughts/Rokos-Basilisk",
@@ -16868,6 +17208,26 @@
       "text": "infrastructure"
     },
     {
+      "source": "/thoughts/algorithmic-decision-making",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/algorithmic-decision-making",
+      "target": "/thoughts/bias",
+      "text": "bias"
+    },
+    {
+      "source": "/thoughts/algorithmic-decision-making",
+      "target": "/posts/bias-bug",
+      "text": "bias-bug"
+    },
+    {
+      "source": "/thoughts/algorithmic-decision-making",
+      "target": "/thoughts/Algorithms-of-Oppression",
+      "text": "Algorithms of Oppression"
+    },
+    {
       "source": "/thoughts/aperture-problem",
       "target": "/thoughts/computer-vision",
       "text": "Computer Vision"
@@ -17021,6 +17381,11 @@
       "source": "/thoughts/bias",
       "target": "/thoughts/Do-Artifacts-Have-Politics",
       "text": "artifacts do indeed have politics"
+    },
+    {
+      "source": "/thoughts/bitcoin",
+      "target": "/thoughts/peer-to-peer",
+      "text": "Peer to peer"
     },
     {
       "source": "/thoughts/bitcoin",
@@ -17661,6 +18026,11 @@
       "source": "/thoughts/digital-permanence",
       "target": "/thoughts/context",
       "text": "context"
+    },
+    {
+      "source": "/thoughts/digital-permanence",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
     },
     {
       "source": "/thoughts/double-consciousness",
@@ -18469,6 +18839,11 @@
     },
     {
       "source": "/thoughts/idea-list",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
+    },
+    {
+      "source": "/thoughts/idea-list",
       "target": "/thoughts/interoperability",
       "text": "interop"
     },
@@ -18941,6 +19316,11 @@
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/Internet",
       "text": "Internet"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
     },
     {
       "source": "/thoughts/internet-computing",
@@ -19474,6 +19854,11 @@
     },
     {
       "source": "/thoughts/money",
+      "target": "/thoughts/peer-to-peer",
+      "text": "Peer-to-peer"
+    },
+    {
+      "source": "/thoughts/money",
       "target": "/thoughts/decentralization",
       "text": "decentralized"
     },
@@ -19671,6 +20056,46 @@
       "source": "/thoughts/pace-layers",
       "target": "/thoughts/Extended-Mind-Hypothesis",
       "text": "Extended Mind Hypothesis"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/Protocol",
+      "text": "protocol"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/blockchain",
+      "text": "Blockchain"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/decentralization",
+      "text": "decentralized"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/trust",
+      "text": "trusted"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/truth",
+      "text": "truth"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/bitcoin",
+      "text": "Bitcoin"
+    },
+    {
+      "source": "/thoughts/peer-to-peer",
+      "target": "/thoughts/TCP",
+      "text": "TCP"
     },
     {
       "source": "/thoughts/phenomenology",
@@ -20313,6 +20738,11 @@
       "text": "data capitalism"
     },
     {
+      "source": "/thoughts/search",
+      "target": "/thoughts/library",
+      "text": "library"
+    },
+    {
       "source": "/thoughts/security",
       "target": "/thoughts/trust",
       "text": "trust"
@@ -20561,6 +20991,26 @@
       "source": "/thoughts/the-Self",
       "target": "/thoughts/interdependence",
       "text": "interdependent"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/interdependence",
+      "text": "interdependent"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/emptiness",
+      "text": "empty"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/thoughts/friendship",
+      "text": "friendships"
+    },
+    {
+      "source": "/thoughts/the-Self",
+      "target": "/posts/nothing-stops",
+      "text": "nothing stops"
     },
     {
       "source": "/thoughts/tools-for-thought",
@@ -20973,6 +21423,11 @@
       "text": "Degraded Blockchain problem"
     },
     {
+      "source": "/thoughts/web3-critique",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
+    },
+    {
       "source": "/thoughts/web3",
       "target": "/thoughts/social-contracts",
       "text": "social consensus"
@@ -21056,6 +21511,11 @@
       "source": "/thoughts/web3",
       "target": "/thoughts/Protocol",
       "text": "protocols"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/peer-to-peer",
+      "text": "P2P"
     },
     {
       "source": "/thoughts/web3",

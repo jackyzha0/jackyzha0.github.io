@@ -440,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">TCP</h1>
     <article>
       <p class="meta">
-          Last updated March 26, 2022
+          Last updated March 31, 2022
       </p>
       <ul class="tags">
     
@@ -453,6 +453,7 @@ if (!doNotTrack) {
           <nav id="TableOfContents">
   <ol>
     <li><a href="#overview">Overview</a></li>
+    <li><a href="#flags">Flags</a></li>
     <li><a href="#connection-establishment">Connection Establishment</a></li>
     <li><a href="#window-management">Window Management</a></li>
     <li><a href="#congestion-management">Congestion Management</a></li>
@@ -478,6 +479,13 @@ if (!doNotTrack) {
 <li>Connection-oriented: handshaking initializes both sender and receiver state before data exchange</li>
 <li>Flow controlled: sender will not overwhelm receiver</li>
 </ol>
+<h2 id="flags">Flags</h2>
+<ul>
+<li>SYN (sychronize): packets used to initiate a connection</li>
+<li>ACK (acknowledgement): packets that are used to confirm that the data packets have been received, also used to confirm the initiation request and tear down requests</li>
+<li>RST (reset): signify the connection is down or maybe the service is not accepting the requests</li>
+<li>FIN (finish): indicate that the connection is being torn down. Both sender and receiver send the FIN packets to gracefully terminate the connection</li>
+</ul>
 <h2 id="connection-establishment">Connection Establishment</h2>
 <ul>
 <li>Three-way handshake</li>
@@ -542,6 +550,7 @@ if (!doNotTrack) {
 <h2 id="acknowledgement-number">Acknowledgement Number</h2>
 <p>Offset 64</p>
 <p>Tracks number of bytes <strong>received</strong>. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.</p>
+<p>The flag is set <strong>if the acknowledgement number field contains a valid acknowledgement number</strong>.</p>
 
 
     </article>
@@ -557,15 +566,32 @@ if (!doNotTrack) {
     
     
     
-    <li>
+    
+        
+        <li>
             <a href="/thoughts/HTTP">HTTP</a>
-        </li><li>
+        </li>
+        
+        
+        <li>
             <a href="/thoughts/UDP">UDP</a>
-        </li><li>
+        </li>
+        
+        
+        <li>
             <a href="/thoughts/VPN">VPN</a>
-        </li><li>
+        </li>
+        
+        
+        <li>
             <a href="/thoughts/internet-computing">Internet Computing</a>
         </li>
+        
+        
+        <li>
+            <a href="/thoughts/peer-to-peer">Peer to peer</a>
+        </li>
+        
 </ul>
 
     </div>

@@ -441,7 +441,7 @@ if (!doNotTrack) {
     <h1 class="title">Internet Computing</h1>
     <article>
       <p class="meta">
-          Last updated March 21, 2022
+          Last updated March 31, 2022
       </p>
       <ul class="tags">
     
@@ -485,6 +485,10 @@ if (!doNotTrack) {
 
 <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a> is a network of networks. The main goals was to integrate a number of separately<br>
 administrated entities into a common entity</p>
+<p>See also: 
+
+
+<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a></p>
 <h2 id="communication">Communication</h2>
 <p>Necessary conditions</p>
 <ul>
@@ -811,12 +815,13 @@ administrated entities into a common entity</p>
 <ul>
 <li>Each packet is ack&rsquo;ed individually</li>
 <li>Out of order packet is stored for later: receiver&rsquo;s window</li>
+<li>If a packet arrives whose sequence number is too small to fit in the window it will be ACKed and dropped.</li>
+<li>Only when a packet whose sequence number is too large to fit in the window will it not be ACKed; such packets will be silently dropped.</li>
 </ul>
 <h3 id="sender-1">Sender</h3>
 <ul>
 <li>Can have a specific number of outstanding (unacknowledged) packets in memory: sender&rsquo;s window</li>
-<li>Each packet has its own timer</li>
-<li>Each packet is individually resent if timeout is reached</li>
+<li>Each packet has its own timer and is individually resent if timeout is reached</li>
 <li>ACKs received in order move the sender&rsquo;s window</li>
 </ul>
 <p>
@@ -845,13 +850,22 @@ administrated entities into a common entity</p>
     
     
     
-    <li>
+    
+        
+        <li>
             <a href="/posts/paid-open-source">A case for funding Open Source</a>
-        </li><li>
+        </li>
+        
+        
+        <li>
             <a href="/thoughts/Urbit">Urbit</a>
-        </li><li>
+        </li>
+        
+        
+        <li>
             <a href="/thoughts/search">Search</a>
         </li>
+        
 </ul>
 
     </div>

@@ -441,7 +441,7 @@ if (!doNotTrack) {
     <h1 class="title">Web3 Critique</h1>
     <article>
       <p class="meta">
-          Last updated February 15, 2022
+          Last updated March 31, 2022
       </p>
       <ul class="tags">
     
@@ -526,7 +526,10 @@ if (!doNotTrack) {
 
 <a href="https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-protocol" rel="noopener">light client</a> to verify the signatures on the block headers and uses Merkle proofs to verify individual account and storage data.</li>
 <li>Same as (3), but the code talks to N different API endpoints run by N different companies, so only 1 of them need to be providing honest answers for the connection to be reliable.</li>
-<li>Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a p2p network</li>
+<li>Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a 
+
+
+<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">p2p</a> network</li>
 <li>Same as (5), but the code also does data availability sampling and accepts fraud proofs, so it can detect and refuse to accept blocks that are invalid.</li>
 <li>Run a fully verifying node.</li>
 <li>Run a fully verifying node that also participates in mining/staking.</li>
@@ -546,9 +549,12 @@ if (!doNotTrack) {
     
     
     
-    <li>
+    
+        
+        <li>
             <a href="/thoughts/web3">Web3</a>
         </li>
+        
 </ul>
 
     </div>
