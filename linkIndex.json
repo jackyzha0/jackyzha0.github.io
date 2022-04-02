@@ -1660,6 +1660,11 @@
         },
         {
           "source": "/thoughts/Internet",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        },
+        {
+          "source": "/thoughts/Internet",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "counterculture"
         },
@@ -2090,6 +2095,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/peer-to-peer",
           "text": "P2P"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
         },
         {
           "source": "/thoughts/Projects",
@@ -3003,8 +3013,8 @@
         },
         {
           "source": "/thoughts/communities",
-          "target": "/thoughts/ephemereal-content",
-          "text": "ephemereal content"
+          "target": "/thoughts/in-group-bias",
+          "text": "in-group bias"
         },
         {
           "source": "/thoughts/communities",
@@ -3394,6 +3404,18 @@
           "source": "/thoughts/degrowth",
           "target": "/thoughts/climate-tech",
           "text": "green technology"
+        }
+      ],
+      "/thoughts/democracy": [
+        {
+          "source": "/thoughts/democracy",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
+        },
+        {
+          "source": "/thoughts/democracy",
+          "target": "/thoughts/attention-economy",
+          "text": "attention"
         }
       ],
       "/thoughts/desktop-metaphor": [
@@ -4482,6 +4504,13 @@
           "source": "/thoughts/idolization",
           "target": "/posts/a-failure-resume",
           "text": "failure resumes"
+        }
+      ],
+      "/thoughts/in-group-bias": [
+        {
+          "source": "/thoughts/in-group-bias",
+          "target": "/thoughts/ephemereal-content",
+          "text": "ephemereal content"
         }
       ],
       "/thoughts/incentives": [
@@ -6448,6 +6477,11 @@
         },
         {
           "source": "/thoughts/search",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/censorship",
           "text": "censorship"
         },
@@ -6586,6 +6620,11 @@
           "source": "/thoughts/software-and-politics",
           "target": "/thoughts/Do-Artifacts-Have-Politics",
           "text": "Do Artifacts Have Politics"
+        },
+        {
+          "source": "/thoughts/software-and-politics",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
         },
         {
           "source": "/thoughts/software-and-politics",
@@ -9574,6 +9613,11 @@
           "text": "attention"
         },
         {
+          "source": "/thoughts/democracy",
+          "target": "/thoughts/attention-economy",
+          "text": "attention"
+        },
+        {
           "source": "/thoughts/digital-mindfulness",
           "target": "/thoughts/attention-economy",
           "text": "attention economy"
@@ -10538,6 +10582,28 @@
           "text": "degrowth"
         }
       ],
+      "/thoughts/democracy": [
+        {
+          "source": "/thoughts/Internet",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        },
+        {
+          "source": "/thoughts/software-and-politics",
+          "target": "/thoughts/democracy",
+          "text": "democracy"
+        }
+      ],
       "/thoughts/design-goals": [
         {
           "source": "/thoughts/Moving-Castles",
@@ -10956,11 +11022,6 @@
           "text": "real-time content"
         },
         {
-          "source": "/thoughts/communities",
-          "target": "/thoughts/ephemereal-content",
-          "text": "ephemereal content"
-        },
-        {
           "source": "/thoughts/digital-commons",
           "target": "/thoughts/ephemereal-content",
           "text": "real time"
@@ -10984,6 +11045,11 @@
           "source": "/thoughts/idea-list",
           "target": "/thoughts/ephemereal-content",
           "text": "ephemerality"
+        },
+        {
+          "source": "/thoughts/in-group-bias",
+          "target": "/thoughts/ephemereal-content",
+          "text": "ephemereal content"
         },
         {
           "source": "/thoughts/interaction-design",
@@ -11048,6 +11114,11 @@
         },
         {
           "source": "/thoughts/context",
+          "target": "/thoughts/epistemology",
+          "text": "epistemic"
+        },
+        {
+          "source": "/thoughts/democracy",
           "target": "/thoughts/epistemology",
           "text": "epistemic"
         },
@@ -11794,6 +11865,13 @@
           "source": "/thoughts/computer-vision",
           "target": "/thoughts/imaging",
           "text": "Images, Cameras, Lenses, Filters, Sampling"
+        }
+      ],
+      "/thoughts/in-group-bias": [
+        {
+          "source": "/thoughts/communities",
+          "target": "/thoughts/in-group-bias",
+          "text": "in-group bias"
         }
       ],
       "/thoughts/incentives": [
@@ -16324,6 +16402,11 @@
     },
     {
       "source": "/thoughts/Internet",
+      "target": "/thoughts/democracy",
+      "text": "democracy"
+    },
+    {
+      "source": "/thoughts/Internet",
       "target": "/thoughts/From-Counterculture-to-Cyberculture",
       "text": "counterculture"
     },
@@ -16716,6 +16799,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/peer-to-peer",
       "text": "P2P"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/democracy",
+      "text": "democracy"
     },
     {
       "source": "/thoughts/Projects",
@@ -17539,8 +17627,8 @@
     },
     {
       "source": "/thoughts/communities",
-      "target": "/thoughts/ephemereal-content",
-      "text": "ephemereal content"
+      "target": "/thoughts/in-group-bias",
+      "text": "in-group bias"
     },
     {
       "source": "/thoughts/communities",
@@ -17896,6 +17984,16 @@
       "source": "/thoughts/degrowth",
       "target": "/thoughts/climate-tech",
       "text": "green technology"
+    },
+    {
+      "source": "/thoughts/democracy",
+      "target": "/thoughts/epistemology",
+      "text": "epistemic"
+    },
+    {
+      "source": "/thoughts/democracy",
+      "target": "/thoughts/attention-economy",
+      "text": "attention"
     },
     {
       "source": "/thoughts/desktop-metaphor",
@@ -18906,6 +19004,11 @@
       "source": "/thoughts/idolization",
       "target": "/posts/a-failure-resume",
       "text": "failure resumes"
+    },
+    {
+      "source": "/thoughts/in-group-bias",
+      "target": "/thoughts/ephemereal-content",
+      "text": "ephemereal content"
     },
     {
       "source": "/thoughts/incentives",
@@ -20724,6 +20827,11 @@
     },
     {
       "source": "/thoughts/search",
+      "target": "/thoughts/democracy",
+      "text": "democracy"
+    },
+    {
+      "source": "/thoughts/search",
       "target": "/thoughts/censorship",
       "text": "censorship"
     },
@@ -20846,6 +20954,11 @@
       "source": "/thoughts/software-and-politics",
       "target": "/thoughts/Do-Artifacts-Have-Politics",
       "text": "Do Artifacts Have Politics"
+    },
+    {
+      "source": "/thoughts/software-and-politics",
+      "target": "/thoughts/democracy",
+      "text": "democracy"
     },
     {
       "source": "/thoughts/software-and-politics",
