@@ -161,7 +161,7 @@ Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
 
 ## Ethics
 Major issues:
-1. Access to information: value of information and knowledge, democracy, gatekeeping, [censorship](thoughts/censorship.md)
+1. Access to information: value of information and knowledge, [democracy](thoughts/democracy.md), gatekeeping, [censorship](thoughts/censorship.md)
 2. Equity, accuracy (truth) and transparency: search-engine bias and the problem of opacity/non-[transparency](thoughts/transparency.md)
 3. Privacy and freedom: personal privacy and informed consent; monitoring and surveillance
 4. Property rights: how do crawlers/search engines respect property, ownership, free market competition

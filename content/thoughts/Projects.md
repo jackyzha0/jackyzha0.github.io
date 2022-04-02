@@ -44,7 +44,7 @@ Over 1.2k monthly users and 300+ forks on GitHub.
 
 Build with: Hugo, Obsidian, Github Pages, Go, SCSS, and JavaScript.
 
-## Legist -- a platform to summarize policy for democracy
+## Legist -- a platform to summarize policy for [democracy](thoughts/democracy.md)
 
 [DevPost (Finalists at HTN 2020++)](https://devpost.com/software/legist), [GitHub](https://github.com/htn2020plusplus)
 

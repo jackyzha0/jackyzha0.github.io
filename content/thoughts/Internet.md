@@ -51,7 +51,7 @@ Internet
 
 > "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 
-This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots democracy and freedom. -> did this arise out of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md)?
+This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots [democracy](thoughts/democracy.md) and freedom. -> did this arise out of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md)?
 
 Gap of responsibility: Their designs naturally create gaps of responsibility for maintaining valuable content that others rely on.
 

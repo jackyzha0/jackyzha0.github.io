@@ -10,7 +10,7 @@ tags:
 ## Politics for Software
 [Source: Politics for Software Engineers by *Steven Buss*](https://sbuss.substack.com/p/politics-for-software-engineers-part-2)
 
-"Blockchain voting addresses how to vote in a trust-less society, but a trust-less society cannot have a functioning democracy." (see: [trust](thoughts/trust.md))
+"Blockchain voting addresses how to vote in a trust-less society, but a trust-less society cannot have a functioning [democracy](thoughts/democracy.md)." (see: [trust](thoughts/trust.md))
 
 Potential use of [Merkle Trees?](https://en.wikipedia.org/wiki/Merkle_tree) (but also, [A City is not a Tree](thoughts/A%20City%20is%20not%20a%20Tree.md))
 

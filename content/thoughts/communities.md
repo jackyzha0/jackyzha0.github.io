@@ -13,14 +13,7 @@ tags:
 
 Can we ever have fully [digital commons](thoughts/digital%20commons.md)?
 
-How large can communities get before they decay? Relevant: [group limits](thoughts/group%20limits.md)
-
-## Ingroup/outgroup bias
--   get social status points
--   we will choose to identify with whatever in-group will immediately benefit us the most
--   why sororities + frats are successful → sunk cost fallacy
--   amount of boundaries required → well organized events vs serendipitous interactions
-	-   do serendipitous interactions only come from [ephemereal content](thoughts/ephemereal%20content.md)?
+How large can communities get before they decay? Relevant: [group limits](thoughts/group%20limits.md), [in-group bias](thoughts/in-group%20bias.md)
 
 ## [Turing Test](thoughts/Turing%20Test.md) for communities
 *heuristic* from Austin Wu
