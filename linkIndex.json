@@ -3450,6 +3450,31 @@
         },
         {
           "source": "/thoughts/digital-commons",
+          "target": "/thoughts/software-principles",
+          "text": "Principles for Internet Spaces"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/pace-layers",
+          "text": "pace layers"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/play",
+          "text": "play"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/exploit-explore",
+          "text": "exploit explore"
+        },
+        {
+          "source": "/thoughts/digital-commons",
           "target": "/thoughts/social-graphs",
           "text": "interest groups"
         },
@@ -6946,6 +6971,16 @@
           "source": "/thoughts/tribe-flourishing",
           "target": "/thoughts/group-limits",
           "text": "Group limits"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/trust",
+          "text": "trusting"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/play",
+          "text": "playful"
         },
         {
           "source": "/thoughts/tribe-flourishing",
@@ -11223,6 +11258,11 @@
           "text": "exploit explore"
         },
         {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/exploit-explore",
+          "text": "exploit explore"
+        },
+        {
           "source": "/thoughts/feedback-loops",
           "target": "/thoughts/exploit-explore",
           "text": "exploit explore"
@@ -11401,6 +11441,11 @@
       "/thoughts/friction": [
         {
           "source": "/thoughts/Internet",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
+          "source": "/thoughts/digital-commons",
           "target": "/thoughts/friction",
           "text": "friction"
         },
@@ -13043,6 +13088,11 @@
           "source": "/thoughts/art",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/pace-layers",
+          "text": "pace layers"
         }
       ],
       "/thoughts/page-layout": [
@@ -13256,6 +13306,11 @@
           "text": "Play"
         },
         {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/play",
+          "text": "play"
+        },
+        {
           "source": "/thoughts/exploit-explore",
           "target": "/thoughts/play",
           "text": "play"
@@ -13284,6 +13339,11 @@
           "source": "/thoughts/selfish",
           "target": "/thoughts/play",
           "text": "play"
+        },
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/thoughts/play",
+          "text": "playful"
         },
         {
           "source": "/thoughts/web3",
@@ -14085,6 +14145,13 @@
           "text": "software is political"
         }
       ],
+      "/thoughts/software-principles": [
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/software-principles",
+          "text": "Principles for Internet Spaces"
+        }
+      ],
       "/thoughts/stone-soup-metaphor": [
         {
           "source": "/thoughts/public-goods",
@@ -14867,6 +14934,13 @@
           "source": "/thoughts/positive-sum",
           "target": "/thoughts/zero-sum",
           "text": "zero sum"
+        }
+      ],
+      "/trust": [
+        {
+          "source": "/thoughts/tribe-flourishing",
+          "target": "/trust",
+          "text": "trusting"
         }
       ]
     }
@@ -18031,6 +18105,31 @@
       "source": "/thoughts/digital-commons",
       "target": "/thoughts/urban-planning",
       "text": "urban planning"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/software-principles",
+      "text": "Principles for Internet Spaces"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/friction",
+      "text": "friction"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/pace-layers",
+      "text": "pace layers"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/play",
+      "text": "play"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/exploit-explore",
+      "text": "exploit explore"
     },
     {
       "source": "/thoughts/digital-commons",
@@ -21266,6 +21365,16 @@
       "source": "/thoughts/tribe-flourishing",
       "target": "/thoughts/group-limits",
       "text": "Group limits"
+    },
+    {
+      "source": "/thoughts/tribe-flourishing",
+      "target": "/trust",
+      "text": "trusting"
+    },
+    {
+      "source": "/thoughts/tribe-flourishing",
+      "target": "/thoughts/play",
+      "text": "playful"
     },
     {
       "source": "/thoughts/tribe-flourishing",
