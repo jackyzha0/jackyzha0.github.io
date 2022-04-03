@@ -38,7 +38,11 @@
       {{end}}
       {{$content := .Content}}
       {{$content = replace $content "-&gt;" "→" }}
-      {{$content = replaceRE "\\\\ *\n" "\\\\" $content }}
+      {{$latex := findRE "\\$\\$([^\\$]+)\\$\\$" $content}}
+      {{range $latex}}
+        {{$fixed := replaceRE "\\\\(?: +|\\n)" "\\\\" .}}
+        {{$content = replace $content . $fixed}}
+      {{end}}
       {{$content | safeHTML}}
 
     </article>

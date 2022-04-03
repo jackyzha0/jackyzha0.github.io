@@ -3,6 +3,9 @@ title: "Tribe Flourishing"
 date: 2021-12-10
 tags:
 - sapling
+aliases:
+- squad wealth
+- squad
 ---
 
 Related: [collaborative-thinking](posts/collaborative-thinking.md), [communities](thoughts/communities.md), [friendship](thoughts/friendship.md), and [context-collapse](posts/context-collapse.md)
@@ -12,6 +15,17 @@ Why are we more ourselves in small group chats than our posts? Why are we more c
 Is it because of bureaucratic friction at scale? [Group limits](thoughts/group%20limits.md)? 
 
 How do we move away from the 'other' and towards the 'us'? Towards collectivism and interdependence rather than individualism?
+
+## On Building with a Squad
+By [Jon Borichevskiy](https://jon.bo/posts/squad/)
+
+> It is not a startup, nor an organization with a mission statement, nor a non-profit, nor a consultancy... Our calls are space we hold in which we invite one other to explore and create what wants to be built at the intersection of all our interests and diverse perspectives and past experiences. **A squad is a collective identity in which I can participate to create something more intricate, comprehensive, and wonderful than with just myself.**
+
+It’s [[trust|trusting]] everyone else in the group is committed to upholding a high-openness, high-trust, [[thoughts/play|playful]] mode of co-creating and exploration. It’s having the confidence that whatever comes up – we will make space for the collective group wisdom to work through it and come out on the other end stronger, together. 
+
+Takeaways
+- Shared knowledge graph tooling is a common pain point and one no one has solved well
+- Frictionful onboarding can be good! "What does work is having people join our open calls, playing with ideas and tasks they resonate with, and progressively getting more involved"
 
 ## 'Back to the Land'
 A lot of similar concepts to [FCTC](thoughts/From%20Counterculture%20to%20Cyberculture.md) around digital communalism and back-to-the-land movements

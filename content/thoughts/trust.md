@@ -109,6 +109,11 @@ Stroud's 4 demands of friendship
 3. Interpretive Charity: interpret evidence against friends more charitably than with non-friends
 4. Reason: treat the fact someone is a friend as a reason when we believe about them
 
+## Trust Circles
+From [Buzzard](https://buzzard.life/posts/kristen/buzzard-squad-as-cell/)
+
+![Trust circles](thoughts/images/Trust%20Circles.png)
+
 ## Trust between human and non-human systems
 
 Trust has historically distinguished from *mere reliance* (Baier, 1986, p. 242) through an attitude of trust or extra factors which distinguish genuine trust from mere reliance (Hawley, 2014, p. 1) that we take to inanimate objects. However, algorithms and computerized decision making systems are beginning to play larger roles in our society -- deciding jail time for criminals, giving medical diagnoses, and many more. How should we weigh the epistemic authority or trustworthiness of human versus non-human expert systems?
