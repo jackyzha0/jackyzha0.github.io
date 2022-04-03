@@ -82,7 +82,6 @@
             depth: 3,
             bidirectional: true
           },
-          suggest: true,
         }, {
           field: "title",
           tokenize: "forward",
@@ -171,7 +170,6 @@
         {
           field: "content",
           limit: 10,
-          suggest: true,
         },
         {
           field: "title",
@@ -212,7 +210,6 @@
 
 
     const searchContainer = document.getElementById("search-container")
-
     function openSearch() {
       if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
         source.value = ""
@@ -252,7 +249,9 @@
     document.getElementById("search-space").addEventListener('click', (evt) => {
       evt.stopPropagation()
     })
+
   }
 
   run()
+
 </script>

@@ -3,8 +3,8 @@
 {{ partial "head.html" . }}
 
 <body>
-{{partial "search.html" .}}
 {{partial "chat.html" .}}
+{{partial "search.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
     <header>
@@ -36,7 +36,10 @@
           {{ .TableOfContents }}
       </aside>
       {{end}}
-      {{.Content}}
+      {{$content := .Content}}
+      {{$content = replace $content "-&gt;" "→" }}
+      {{$content = replaceRE "\\\\ *\n" "\\\\" $content }}
+      {{$content}}
 
     </article>
     {{partial "footer.html" .}}

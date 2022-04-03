@@ -37,7 +37,8 @@ Where can you see movement that can be effectively computed? A corner!
 
 Solve for $\mathbf v$ in $\mathbf v = (A^TA)^{-1}A^Tb$ where $\mathbf v$ is the 1-by-2 column matrix of $u$ and $v$. $A$ is the $n$-by-2 column matrix of $I_x(q_i)$, $I_y(q_i)$ partial derivatives evaluated at point $q_i$ ($A$ is actually the same matrix $C$ used in Harris corner detection). $b$ is the 1-by-$n$ matrix consisting of the negative of the temporal partial derivative for each point.
 
-![](/thoughts/images/lucas-kanade.png)
+$$A = \begin{bmatrix}I_x(q_1) & I_y(q_1)\\I_x(q_2) & I_y(q_2)\\\vdots & \vdots \\ I_x(q_n) & I_y(q_n)\end{bmatrix} \qquad v=\begin{bmatrix}V_x\\V_y\end{bmatrix} \qquad b = \begin{bmatrix}-I_t(q_1) \\ -I_t(q_2) \\ \vdots \\ -I_t(q_n)\end{bmatrix}$$
+*Lucas-Kanade Method*
 
 Assumptions
 - Motion is slow enough that partial derivatives $I_x$, $I_y$, and $I_t$ are well-defined

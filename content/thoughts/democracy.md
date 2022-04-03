@@ -16,7 +16,9 @@ By Susanna Siegel
 - Politics can become salient through elections, contact with the government (e.g. jury duty, drivers license, or a 'brush' with the law)
 	- John Rawls: "In a well-governed state only a small fraction of persons may devote much of their time to politics"
 - Lipmann: we need to bridge by means of mass communication. Journalists then, are the [epistemic](thoughts/epistemology.md) bridges between government and the public
-- Newsworthiness: whatever is actually important for the public to know about
+- Importance principle
+	- "make salient information that is important for the public to know about"
+	- Newsworthiness: whatever is actually important for the public to know about
 	- In a different context, can refer to whether it will attract attention if reported in a news outlet
 - To make something salient is to put it forward as both demanding attention and deserving it. In can be distinct from actual uptake (as the receiving end can experience it as demanding of attention but not classify it as deserving it)
 - Accountability/watchdog journalism: reporting on the working of government or political campaigns
@@ -34,6 +36,6 @@ By Susanna Siegel
 		- Framing, style, presentation matters a lot
 - Public-as-protagonist principle
 	- "recommends framing and selecting information to invite readers to view themselves and one another as potential political participants"
-	- Stories should make explicit when it can the ways in which the reading public has a state in how the story unfolds and how the reader can affect its outcome
+	- Stories should make explicit when it can the ways in which the reading public has a stake in how the story unfolds and how the reader can affect its outcome
 		- Not every reader will be a potential protagonist in every story. However, every regular reader is likely to encounter a story in which they feel addressed as a potential protagonist eventually
 	- Underlying belief that there are many publics

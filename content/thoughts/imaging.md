@@ -67,15 +67,16 @@ Similarities with the human eye
 #### Weak Perspective
 Only accurate when object is small/distant. Useful for recognition
 
-![Weak Perspective Equation](/thoughts/images/weak-perspective.png)*Weak Perspective Equation*
+$$P = \begin{bmatrix}x \\ y \\ z\end{bmatrix} \textrm{projects to a 2D image point} \ P' = \begin{bmatrix}x' \\ y'\end{bmatrix} \textrm{where} \ m = \frac{f'}{z_0}, x' = mx, y' = my$$
+
 
 #### Orthographic Projection
 
-![Orthographic Project](/thoughts/images/orthographic-projection.png)*Orthographic Projection*
+$$P = \begin{bmatrix}x \\ y \\ z\end{bmatrix} \textrm{projects to a 2D image point} \ P' = \begin{bmatrix}x' \\ y'\end{bmatrix} \textrm{where} \ x' = x, y' = y$$
 
 #### Perspective Projection
 
-![Perspective Projection](/thoughts/images/perspective-projection.png)*Perspective Projection*
+$$P = \begin{bmatrix}x \\ y \\ z\end{bmatrix} \textrm{projects to a 2D image point} \ P' = \begin{bmatrix}x' \\ y'\end{bmatrix} \textrm{where} \ m = \frac{f'}{z_0}, x' = f'\frac{x}{z}, y' = f'\frac{y}{z}$$
 
 ## Image as functions
 ### Grayscale images

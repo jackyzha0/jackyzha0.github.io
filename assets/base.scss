@@ -405,10 +405,10 @@ hr {
 }
 
 .singlePage {
-  margin: 4em 30vw;
+  padding: 4em 30vw;
 
   @media all and (max-width: 1200px) {
-    margin: 25px 5vw;
+    padding: 25px 5vw;
   }
 }
 

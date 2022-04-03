@@ -150,15 +150,15 @@ As a stats reminder, covariance is the *direction* of the correlation. The close
 When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).
 
 1. Compute image gradients over small region
-2. Compute covariance matrix ![Covariance Matrix](/thoughts/images/covmat.png) (essentially fitting a quadratic to the gradients over the small image patch $P$)
+2. Compute covariance matrix $$\begin{bmatrix}\sum_{p \in P}I_xI_x & \sum_{p \in P}I_xI_y \\ \sum_{p \in P}I_yI_x & \sum_{p \in P}I_yI_y\end{bmatrix}$$ (essentially fitting a quadratic to the gradients over the small image patch $P$)
 4. Computer eigenvectors and eigenvalues of the covariance matrix.
 5. Use threshold on eigenvalues to detect corners ($>0$ is a corner)
 
 We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix). It tells us the dispersion of the gradients nearby.
 
-As $C$ is symmetric, we have 
+As $C$ is symmetric, we have the covariance matrix as the ellipse equation
 
-![Covariance matrix as ellipse equation](/thoughts/images/covellipse.png)
+$$f(x,y) = \begin{bmatrix}x & y\end{bmatrix}\begin{bmatrix}1 & 0 \\ 0 & 1\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \textrm{const}$$
 
 Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$
 
