@@ -39,7 +39,7 @@
       {{$content := .Content}}
       {{$content = replace $content "-&gt;" "→" }}
       {{$content = replaceRE "\\\\ *\n" "\\\\" $content }}
-      {{$content}}
+      {{$content | safeHTML}}
 
     </article>
     {{partial "footer.html" .}}
