@@ -798,6 +798,13 @@
           "text": "how we think"
         }
       ],
+      "/thoughts/0x0": [
+        {
+          "source": "/thoughts/0x0",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        }
+      ],
       "/thoughts/A-City-is-not-a-Computer": [
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
@@ -1982,24 +1989,24 @@
           "text": "virtual worlds"
         }
       ],
-      "/thoughts/Nyāya": [
+      "/thoughts/Ny%C4%81ya": [
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
         },
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/testimony",
           "text": "testimony"
         },
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/trust",
           "text": "trust"
         },
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/Descartes-Meditations",
           "text": "Descartes' Dream Argument"
         }
@@ -8090,7 +8097,7 @@
       ],
       "/thoughts/Descartes-Meditations": [
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/Descartes-Meditations",
           "text": "Descartes' Dream Argument"
         },
@@ -10950,6 +10957,11 @@
       ],
       "/thoughts/emptiness": [
         {
+          "source": "/thoughts/0x0",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
           "source": "/thoughts/Buddhism",
           "target": "/thoughts/emptiness",
           "text": "independent existence"
@@ -13148,7 +13160,7 @@
       ],
       "/thoughts/philosophical-realism": [
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/philosophical-realism",
           "text": "philosophical realism"
         },
@@ -14224,7 +14236,7 @@
       ],
       "/thoughts/testimony": [
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/testimony",
           "text": "testimony"
         },
@@ -14458,7 +14470,7 @@
           "text": "trust"
         },
         {
-          "source": "/thoughts/Nyāya",
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/trust",
           "text": "trust"
         },
@@ -15616,6 +15628,11 @@
       "text": "how we think"
     },
     {
+      "source": "/thoughts/0x0",
+      "target": "/thoughts/emptiness",
+      "text": "emptiness"
+    },
+    {
       "source": "/thoughts/A-City-is-not-a-Computer",
       "target": "/thoughts/Internet",
       "text": "internet"
@@ -16696,22 +16713,22 @@
       "text": "virtual worlds"
     },
     {
-      "source": "/thoughts/Nyāya",
+      "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/philosophical-realism",
       "text": "philosophical realism"
     },
     {
-      "source": "/thoughts/Nyāya",
+      "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/testimony",
       "text": "testimony"
     },
     {
-      "source": "/thoughts/Nyāya",
+      "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/trust",
       "text": "trust"
     },
     {
-      "source": "/thoughts/Nyāya",
+      "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/Descartes-Meditations",
       "text": "Descartes' Dream Argument"
     },
