@@ -500,193 +500,193 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;Content from my own 
+      <p>Content from my own 
 
-&lt;a href=&#34;https://github.com/jackyzha0/docker-explained&#34; rel=&#34;noopener&#34;&gt;&amp;lsquo;Docker Explained&amp;rsquo; repo&lt;/a&gt;. Check out the repository for example code!&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;h3 id=&#34;what-is-docker&#34;&gt;What is Docker?&lt;/h3&gt;
-&lt;p&gt;Docker is a tool that makes it really easy to package applications into self-sustaining &amp;lsquo;containers&amp;rsquo;.&lt;/p&gt;
-&lt;h3 id=&#34;what-are-containers&#34;&gt;What are containers?&lt;/h3&gt;
-&lt;p&gt;Containers, as their name suggests, contain things. In the case of Docker, these contain all the parts the application needs to run, everything from libraries and dependencies to the actual source code.&lt;/p&gt;
-&lt;h3 id=&#34;why-containers&#34;&gt;Why containers?&lt;/h3&gt;
-&lt;p&gt;Containerization means that everything to do with your application stays inside the container. You shouldn&amp;rsquo;t need to worry about how stuff on your machine (e.g. which version of Python you have) affects how your program runs. As a side benefit, this means that Docker containers are dependency-free. Never worry about &amp;ldquo;oh, it works on my machine&amp;rdquo; ever again! After a Docker image is created, all of its contents are frozen so it should work exactly the same on your computer as it does for someone else (assuming you both have Docker).&lt;/p&gt;
-&lt;h3 id=&#34;why-docker&#34;&gt;Why Docker?&lt;/h3&gt;
-&lt;p&gt;Docker makes it super easy to work with these containers and, by proxy, you can get all the cool benefits of containers easily too! It also allows you to programmatically define a container through code, meaning you can collaborate and work on Docker containers just as you would with a regular piece of code through version control like &lt;code&gt;git&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;installing-docker&#34;&gt;Installing Docker&lt;/h2&gt;
-&lt;p&gt;More detailed instructions can be found 
+<a href="https://github.com/jackyzha0/docker-explained" rel="noopener">&lsquo;Docker Explained&rsquo; repo</a>. Check out the repository for example code!</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="what-is-docker">What is Docker?</h3>
+<p>Docker is a tool that makes it really easy to package applications into self-sustaining &lsquo;containers&rsquo;.</p>
+<h3 id="what-are-containers">What are containers?</h3>
+<p>Containers, as their name suggests, contain things. In the case of Docker, these contain all the parts the application needs to run, everything from libraries and dependencies to the actual source code.</p>
+<h3 id="why-containers">Why containers?</h3>
+<p>Containerization means that everything to do with your application stays inside the container. You shouldn&rsquo;t need to worry about how stuff on your machine (e.g. which version of Python you have) affects how your program runs. As a side benefit, this means that Docker containers are dependency-free. Never worry about &ldquo;oh, it works on my machine&rdquo; ever again! After a Docker image is created, all of its contents are frozen so it should work exactly the same on your computer as it does for someone else (assuming you both have Docker).</p>
+<h3 id="why-docker">Why Docker?</h3>
+<p>Docker makes it super easy to work with these containers and, by proxy, you can get all the cool benefits of containers easily too! It also allows you to programmatically define a container through code, meaning you can collaborate and work on Docker containers just as you would with a regular piece of code through version control like <code>git</code>.</p>
+<h2 id="installing-docker">Installing Docker</h2>
+<p>More detailed instructions can be found 
 
-&lt;a href=&#34;https://docs.docker.com/get-docker/&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;parts-of-docker&#34;&gt;Parts of Docker&lt;/h2&gt;
-&lt;h3 id=&#34;docker-containers&#34;&gt;Docker Containers&lt;/h3&gt;
-&lt;p&gt;I think the intro covered this pretty well so I&amp;rsquo;ll repeat it again here.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Containers, as their name suggests, contain things. In the case of Docker, these contain all the parts the application needs to run, everything from libraries and dependencies to the actual source code.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This means that &amp;lsquo;containerized&amp;rsquo; applications don&amp;rsquo;t need to rely on a system to have certain dependencies (e.g. &lt;code&gt;Node.js&lt;/code&gt;) installed on the user&amp;rsquo;s system to run because the container will have it packaged.&lt;/p&gt;
-&lt;p&gt;You can think of Docker containers like a fully self-contained and running version of your application.&lt;/p&gt;
-&lt;h3 id=&#34;docker-image&#34;&gt;Docker Image&lt;/h3&gt;
-&lt;p&gt;You can think of Docker images like a sort of &amp;lsquo;template&amp;rsquo; that describes to Docker how to create a container from scratch. You can build these images by providing instructions on how to build them in the form of layers.&lt;/p&gt;
-&lt;h3 id=&#34;layers&#34;&gt;Layers&lt;/h3&gt;
-&lt;p&gt;Docker images, like ogres (or cakes if you&amp;rsquo;re a boring person), have many layers. The base layer often provides some basic functionality like providing &lt;code&gt;git&lt;/code&gt;, &lt;code&gt;bash&lt;/code&gt; or &lt;code&gt;apt&lt;/code&gt; &amp;ndash; otherwise your container has nothing to run off of! We can then add our own layers on top of that base layer, like installing dependencies, copying files into the image, and defining the command to run when the container starts up. These instructions are programmatically defined through a Dockerfile.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;One of the coolest parts of Docker is that these layers get cached between builds if nothing has changed. That means that if you rebuild an image and only changed the last layer, it&amp;rsquo;ll only need to rebuild the last layer rather than rebuilding the whole image, making for some really fast iteration times.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;dockerfile&#34;&gt;Dockerfile&lt;/h3&gt;
-&lt;p&gt;The Dockerfile are the actual specific instructions for how to create the actual image or &amp;lsquo;template&amp;rsquo;. The Dockerfile starts off by defining a &amp;lsquo;base-layer&amp;rsquo;, which serve as the basis for your actual image. Some common base layers are &lt;code&gt;ubuntu&lt;/code&gt; (which contains a minimal install of the actual Ubuntu operating system) and &lt;code&gt;python&lt;/code&gt; (which contains everything needed to run a basic Python app).&lt;/p&gt;
-&lt;p&gt;I won&amp;rsquo;t dive into too much details about each command you can use as these will be described more in-depth within the examples. You can find detailed documentation on the commands you can use in a Dockerfile here: 
+<a href="https://docs.docker.com/get-docker/" rel="noopener">here</a>.</p>
+<h2 id="parts-of-docker">Parts of Docker</h2>
+<h3 id="docker-containers">Docker Containers</h3>
+<p>I think the intro covered this pretty well so I&rsquo;ll repeat it again here.</p>
+<blockquote>
+<p>Containers, as their name suggests, contain things. In the case of Docker, these contain all the parts the application needs to run, everything from libraries and dependencies to the actual source code.</p>
+</blockquote>
+<p>This means that &lsquo;containerized&rsquo; applications don&rsquo;t need to rely on a system to have certain dependencies (e.g. <code>Node.js</code>) installed on the user&rsquo;s system to run because the container will have it packaged.</p>
+<p>You can think of Docker containers like a fully self-contained and running version of your application.</p>
+<h3 id="docker-image">Docker Image</h3>
+<p>You can think of Docker images like a sort of &lsquo;template&rsquo; that describes to Docker how to create a container from scratch. You can build these images by providing instructions on how to build them in the form of layers.</p>
+<h3 id="layers">Layers</h3>
+<p>Docker images, like ogres (or cakes if you&rsquo;re a boring person), have many layers. The base layer often provides some basic functionality like providing <code>git</code>, <code>bash</code> or <code>apt</code> &ndash; otherwise your container has nothing to run off of! We can then add our own layers on top of that base layer, like installing dependencies, copying files into the image, and defining the command to run when the container starts up. These instructions are programmatically defined through a Dockerfile.</p>
+<blockquote>
+<p>One of the coolest parts of Docker is that these layers get cached between builds if nothing has changed. That means that if you rebuild an image and only changed the last layer, it&rsquo;ll only need to rebuild the last layer rather than rebuilding the whole image, making for some really fast iteration times.</p>
+</blockquote>
+<h3 id="dockerfile">Dockerfile</h3>
+<p>The Dockerfile are the actual specific instructions for how to create the actual image or &lsquo;template&rsquo;. The Dockerfile starts off by defining a &lsquo;base-layer&rsquo;, which serve as the basis for your actual image. Some common base layers are <code>ubuntu</code> (which contains a minimal install of the actual Ubuntu operating system) and <code>python</code> (which contains everything needed to run a basic Python app).</p>
+<p>I won&rsquo;t dive into too much details about each command you can use as these will be described more in-depth within the examples. You can find detailed documentation on the commands you can use in a Dockerfile here: 
 
-&lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34; rel=&#34;noopener&#34;&gt;https://docs.docker.com/engine/reference/builder/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;docker-cli&#34;&gt;Docker CLI&lt;/h2&gt;
-&lt;p&gt;Great, so now I know a little bit about how Docker actually works, how do I get started? First, let&amp;rsquo;s make sure our Docker install works correctly. You can do this by opening your favourite terminal and entering &lt;code&gt;docker run hello-world&lt;/code&gt;. You should get something that looks like:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ docker run hello-world
+<a href="https://docs.docker.com/engine/reference/builder/" rel="noopener">https://docs.docker.com/engine/reference/builder/</a></p>
+<h2 id="docker-cli">Docker CLI</h2>
+<p>Great, so now I know a little bit about how Docker actually works, how do I get started? First, let&rsquo;s make sure our Docker install works correctly. You can do this by opening your favourite terminal and entering <code>docker run hello-world</code>. You should get something that looks like:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ docker run hello-world
 
 Hello from Docker.
 This message shows that your installation appears to be working correctly.
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Now, let&amp;rsquo;s go over a few basic CLI commands that you&amp;rsquo;ll probably be using as you work with Docker.&lt;/p&gt;
-&lt;h3 id=&#34;docker-build&#34;&gt;&lt;code&gt;docker build&lt;/code&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do I turn a Dockerfile into an actual image?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;To built an image, you can do &lt;code&gt;docker build . -t &amp;lt;name-of-image&amp;gt;&lt;/code&gt; which tells Docker to look in the current directory for a file called &lt;code&gt;Dockerfile&lt;/code&gt; and to follow the instructions inside to build an image. After doing so, tag the image so we can easily find it later. Docker image tags let you version your images as well. Say you wanted to build a v1 for your image, you would do &lt;code&gt;docker build . -t &amp;lt;name-of-image&amp;gt;:v1&lt;/code&gt;. If you have a different name for your Dockerfile, you can also refer to it using the &lt;code&gt;-f&lt;/code&gt; flag like so: &lt;code&gt;docker build . -t &amp;lt;name-of-image&amp;gt; -f &amp;lt;name-of-dockerfile&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;More info can be found here: 
+</code></pre></td></tr></table>
+</div>
+</div><p>Now, let&rsquo;s go over a few basic CLI commands that you&rsquo;ll probably be using as you work with Docker.</p>
+<h3 id="docker-build"><code>docker build</code></h3>
+<blockquote>
+<p>How do I turn a Dockerfile into an actual image?</p>
+</blockquote>
+<p>To built an image, you can do <code>docker build . -t &lt;name-of-image&gt;</code> which tells Docker to look in the current directory for a file called <code>Dockerfile</code> and to follow the instructions inside to build an image. After doing so, tag the image so we can easily find it later. Docker image tags let you version your images as well. Say you wanted to build a v1 for your image, you would do <code>docker build . -t &lt;name-of-image&gt;:v1</code>. If you have a different name for your Dockerfile, you can also refer to it using the <code>-f</code> flag like so: <code>docker build . -t &lt;name-of-image&gt; -f &lt;name-of-dockerfile&gt;</code></p>
+<p>More info can be found here: 
 
-&lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/build/&#34; rel=&#34;noopener&#34;&gt;https://docs.docker.com/engine/reference/commandline/build/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;docker-image-ls&#34;&gt;&lt;code&gt;docker image ls&lt;/code&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do I get a list of all the images I&amp;rsquo;ve built?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The command will give you an output that looks something like the following.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
-image1                     0.1.1               9eb95c7f06b0        &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; days ago          343MB
-image2                     &amp;lt;none&amp;gt;              c99ac06cf60a        &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; days ago           23MB
+<a href="https://docs.docker.com/engine/reference/commandline/build/" rel="noopener">https://docs.docker.com/engine/reference/commandline/build/</a></p>
+<h3 id="docker-image-ls"><code>docker image ls</code></h3>
+<blockquote>
+<p>How do I get a list of all the images I&rsquo;ve built?</p>
+</blockquote>
+<p>The command will give you an output that looks something like the following.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+image1                     0.1.1               9eb95c7f06b0        <span class="m">2</span> days ago          343MB
+image2                     &lt;none&gt;              c99ac06cf60a        <span class="m">2</span> days ago           23MB
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;More info can be found here: 
+</code></pre></td></tr></table>
+</div>
+</div><p>More info can be found here: 
 
-&lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/image_ls/&#34; rel=&#34;noopener&#34;&gt;https://docs.docker.com/engine/reference/commandline/image_ls/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;docker-run&#34;&gt;&lt;code&gt;docker run&lt;/code&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do I create a container from an image?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now that you&amp;rsquo;ve built an image, you can just run it by doing &lt;code&gt;docker run &amp;lt;name-of-container&amp;gt;:&amp;lt;version&amp;gt;&lt;/code&gt;. More often than not, you can just use the latest version of the image, &lt;code&gt;docker run &amp;lt;name-of-container&amp;gt;:latest&lt;/code&gt;. However, certain applications (like servers) need to listen on specific ports. By default, Docker doesn&amp;rsquo;t allow containers to use ports on your local machine, but you can allow this by specifying ports using the &lt;code&gt;-p&lt;/code&gt; flag, &lt;code&gt;docker run -p &amp;lt;host-port&amp;gt;:&amp;lt;container-port&amp;gt; &amp;lt;name-of-container&amp;gt;&lt;/code&gt;. If your container listens on port 3000, but you want it to appear as port 5000 on your local machine, it would look like &lt;code&gt;docker run -p 5000:3000 &amp;lt;name-of-container&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;If you want to run your container in the background in a detached manner, you can just add the &lt;code&gt;-d&lt;/code&gt; flag.&lt;/p&gt;
-&lt;p&gt;More info can be found here: 
+<a href="https://docs.docker.com/engine/reference/commandline/image_ls/" rel="noopener">https://docs.docker.com/engine/reference/commandline/image_ls/</a></p>
+<h3 id="docker-run"><code>docker run</code></h3>
+<blockquote>
+<p>How do I create a container from an image?</p>
+</blockquote>
+<p>Now that you&rsquo;ve built an image, you can just run it by doing <code>docker run &lt;name-of-container&gt;:&lt;version&gt;</code>. More often than not, you can just use the latest version of the image, <code>docker run &lt;name-of-container&gt;:latest</code>. However, certain applications (like servers) need to listen on specific ports. By default, Docker doesn&rsquo;t allow containers to use ports on your local machine, but you can allow this by specifying ports using the <code>-p</code> flag, <code>docker run -p &lt;host-port&gt;:&lt;container-port&gt; &lt;name-of-container&gt;</code>. If your container listens on port 3000, but you want it to appear as port 5000 on your local machine, it would look like <code>docker run -p 5000:3000 &lt;name-of-container&gt;</code></p>
+<p>If you want to run your container in the background in a detached manner, you can just add the <code>-d</code> flag.</p>
+<p>More info can be found here: 
 
-&lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/run/&#34; rel=&#34;noopener&#34;&gt;https://docs.docker.com/engine/reference/commandline/run/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;docker-ps&#34;&gt;&lt;code&gt;docker ps&lt;/code&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do I figure out what containers are currently running?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can get a list of currently running containers by doing &lt;code&gt;docker ps&lt;/code&gt;, which will give you each container running along with details about its Container ID, what image it was created from, when it was created, as well as which ports are open.&lt;/p&gt;
-&lt;h3 id=&#34;docker-exec&#34;&gt;&lt;code&gt;docker exec&lt;/code&gt;&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do I run a command inside a container?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can use the command &lt;code&gt;docker exec -it &amp;lt;container name&amp;gt; /bin/bash&lt;/code&gt; to get a bash shell in the container, allowing you to run commands from within the container as if it was a full-fledged machine. If you know specifically what command you want to execute, you can use &lt;code&gt;docker exec -it &amp;lt;container name&amp;gt; &amp;lt;command&amp;gt;&lt;/code&gt; to execute whatever command you specify in the container.&lt;/p&gt;
-&lt;h2 id=&#34;docker-examples&#34;&gt;Docker Examples&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
+<a href="https://docs.docker.com/engine/reference/commandline/run/" rel="noopener">https://docs.docker.com/engine/reference/commandline/run/</a></p>
+<h3 id="docker-ps"><code>docker ps</code></h3>
+<blockquote>
+<p>How do I figure out what containers are currently running?</p>
+</blockquote>
+<p>You can get a list of currently running containers by doing <code>docker ps</code>, which will give you each container running along with details about its Container ID, what image it was created from, when it was created, as well as which ports are open.</p>
+<h3 id="docker-exec"><code>docker exec</code></h3>
+<blockquote>
+<p>How do I run a command inside a container?</p>
+</blockquote>
+<p>You can use the command <code>docker exec -it &lt;container name&gt; /bin/bash</code> to get a bash shell in the container, allowing you to run commands from within the container as if it was a full-fledged machine. If you know specifically what command you want to execute, you can use <code>docker exec -it &lt;container name&gt; &lt;command&gt;</code> to execute whatever command you specify in the container.</p>
+<h2 id="docker-examples">Docker Examples</h2>
+<ol>
+<li>
 
-&lt;a href=&#34;https://github.com/jackyzha0/docker-explained/tree/master/1-basic-python/&#34; rel=&#34;noopener&#34;&gt;Basic Python app with dependencies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://github.com/jackyzha0/docker-explained/tree/master/1-basic-python/" rel="noopener">Basic Python app with dependencies</a></li>
+<li>
 
-&lt;a href=&#34;https://github.com/jackyzha0/docker-explained/tree/master/2-basic-node&#34; rel=&#34;noopener&#34;&gt;Node.js and Express app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://github.com/jackyzha0/docker-explained/tree/master/2-basic-node" rel="noopener">Node.js and Express app</a></li>
+<li>
 
-&lt;a href=&#34;https://github.com/jackyzha0/docker-explained/tree/master/3-multi-stage-go&#34; rel=&#34;noopener&#34;&gt;Multi-stage Go app&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;further-reading&#34;&gt;Further reading&lt;/h2&gt;
-&lt;p&gt;These topics will not be talked about within this repository, but I&amp;rsquo;ve added a few resources I&amp;rsquo;ve found helpful in my understanding of each of them.&lt;/p&gt;
-&lt;h3 id=&#34;docker-compose&#34;&gt;Docker Compose&lt;/h3&gt;
-&lt;p&gt;Docker Compose is a tool that lets you start multiple Docker containers together and configure how they interact.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
+<a href="https://github.com/jackyzha0/docker-explained/tree/master/3-multi-stage-go" rel="noopener">Multi-stage Go app</a></li>
+</ol>
+<h2 id="further-reading">Further reading</h2>
+<p>These topics will not be talked about within this repository, but I&rsquo;ve added a few resources I&rsquo;ve found helpful in my understanding of each of them.</p>
+<h3 id="docker-compose">Docker Compose</h3>
+<p>Docker Compose is a tool that lets you start multiple Docker containers together and configure how they interact.</p>
+<ul>
+<li>
 
-&lt;a href=&#34;https://docs.docker.com/compose/&#34; rel=&#34;noopener&#34;&gt;https://docs.docker.com/compose/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://docs.docker.com/compose/" rel="noopener">https://docs.docker.com/compose/</a></li>
+<li>
 
-&lt;a href=&#34;https://github.com/docker/compose&#34; rel=&#34;noopener&#34;&gt;https://github.com/docker/compose&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;kubernetes-and-microservices&#34;&gt;Kubernetes and Microservices&lt;/h2&gt;
-&lt;p&gt;mIcRoSerViCeS you may hear them say. What&amp;rsquo;s all the hype about? Basically, its the 
+<a href="https://github.com/docker/compose" rel="noopener">https://github.com/docker/compose</a></li>
+</ul>
+<h2 id="kubernetes-and-microservices">Kubernetes and Microservices</h2>
+<p>mIcRoSerViCeS you may hear them say. What&rsquo;s all the hype about? Basically, its the 
 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Single-responsibility_principle&#34; rel=&#34;noopener&#34;&gt;single responsibility principle&lt;/a&gt; but applied to services. This means that each responsibility should, ideally, be split out into its own service and be completely responsible for that one thing. This lends itself really easily to Docker and containers. Kubernetes is a system that makes it really easy to deploy, scale, and manage a bunch of containers, making it near ideal in creating a microservices architecture using Docker.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
+<a href="https://en.wikipedia.org/wiki/Single-responsibility_principle" rel="noopener">single responsibility principle</a> but applied to services. This means that each responsibility should, ideally, be split out into its own service and be completely responsible for that one thing. This lends itself really easily to Docker and containers. Kubernetes is a system that makes it really easy to deploy, scale, and manage a bunch of containers, making it near ideal in creating a microservices architecture using Docker.</p>
+<ul>
+<li>
 
-&lt;a href=&#34;https://microservices.io/&#34; rel=&#34;noopener&#34;&gt;https://microservices.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://microservices.io/" rel="noopener">https://microservices.io/</a></li>
+<li>
 
-&lt;a href=&#34;https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9&#34; rel=&#34;noopener&#34;&gt;https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9" rel="noopener">https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9</a></li>
+<li>
 
-&lt;a href=&#34;https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/&#34; rel=&#34;noopener&#34;&gt;https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" rel="noopener">https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/</a></li>
+<li>
 
-&lt;a href=&#34;https://kubernetes.io/docs/tutorials/kubernetes-basics/&#34; rel=&#34;noopener&#34;&gt;https://kubernetes.io/docs/tutorials/kubernetes-basics/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" rel="noopener">https://kubernetes.io/docs/tutorials/kubernetes-basics/</a></li>
+<li>
 
-&lt;a href=&#34;https://opensource.com/article/17/11/getting-started-kubernetes&#34; rel=&#34;noopener&#34;&gt;https://opensource.com/article/17/11/getting-started-kubernetes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;deploying-to-the-cloud&#34;&gt;Deploying to the Cloud&lt;/h2&gt;
-&lt;p&gt;Now that you got some cool new containers? How do I run them in the Cloud like all the other cool kids? Thankfully, Docker makes this super easy too.&lt;/p&gt;
-&lt;h3 id=&#34;google-cloud-run-gcr&#34;&gt;Google Cloud Run (GCR)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
+<a href="https://opensource.com/article/17/11/getting-started-kubernetes" rel="noopener">https://opensource.com/article/17/11/getting-started-kubernetes</a></li>
+</ul>
+<h2 id="deploying-to-the-cloud">Deploying to the Cloud</h2>
+<p>Now that you got some cool new containers? How do I run them in the Cloud like all the other cool kids? Thankfully, Docker makes this super easy too.</p>
+<h3 id="google-cloud-run-gcr">Google Cloud Run (GCR)</h3>
+<blockquote>
+<p>
 
-&lt;a href=&#34;https://cloud.google.com/run&#34; rel=&#34;noopener&#34;&gt;https://cloud.google.com/run&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;GCR completely manages scaling and deploying your containers for you so you don&amp;rsquo;t need to worry about server management (yay serverless)! Simply upload your images to Google Container Registry, and create a new Cloud Run deployment.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
+<a href="https://cloud.google.com/run" rel="noopener">https://cloud.google.com/run</a></p>
+</blockquote>
+<p>GCR completely manages scaling and deploying your containers for you so you don&rsquo;t need to worry about server management (yay serverless)! Simply upload your images to Google Container Registry, and create a new Cloud Run deployment.</p>
+<ul>
+<li>
 
-&lt;a href=&#34;https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy&#34; rel=&#34;noopener&#34;&gt;https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
+<a href="https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy" rel="noopener">https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy</a></li>
+<li>
 
-&lt;a href=&#34;https://cloud.google.com/run/docs/quickstarts/build-and-deploy&#34; rel=&#34;noopener&#34;&gt;https://cloud.google.com/run/docs/quickstarts/build-and-deploy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;google-kubernetes-engine-gke&#34;&gt;Google Kubernetes Engine (GKE)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
+<a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy" rel="noopener">https://cloud.google.com/run/docs/quickstarts/build-and-deploy</a></li>
+</ul>
+<h3 id="google-kubernetes-engine-gke">Google Kubernetes Engine (GKE)</h3>
+<blockquote>
+<p>
 
-&lt;a href=&#34;https://cloud.google.com/kubernetes-engine&#34; rel=&#34;noopener&#34;&gt;https://cloud.google.com/kubernetes-engine&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Want to run your own Kubernetes cluster and have a lot of money to burn? GKE may be right for you! Other than the price, GKE is super user friendly and makes it really easy to manage and visualize your deployments.&lt;/p&gt;
-&lt;h3 id=&#34;amazon-fargate&#34;&gt;Amazon Fargate&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
+<a href="https://cloud.google.com/kubernetes-engine" rel="noopener">https://cloud.google.com/kubernetes-engine</a></p>
+</blockquote>
+<p>Want to run your own Kubernetes cluster and have a lot of money to burn? GKE may be right for you! Other than the price, GKE is super user friendly and makes it really easy to manage and visualize your deployments.</p>
+<h3 id="amazon-fargate">Amazon Fargate</h3>
+<blockquote>
+<p>
 
-&lt;a href=&#34;https://aws.amazon.com/fargate/&#34; rel=&#34;noopener&#34;&gt;https://aws.amazon.com/fargate/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Think GCR but Bezos.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
+<a href="https://aws.amazon.com/fargate/" rel="noopener">https://aws.amazon.com/fargate/</a></p>
+</blockquote>
+<p>Think GCR but Bezos.</p>
+<ul>
+<li>
 
-&lt;a href=&#34;https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361&#34; rel=&#34;noopener&#34;&gt;https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;closing&#34;&gt;Closing&lt;/h1&gt;
-&lt;p&gt;I hope you learned a thing or two about Docker! If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it)! If you liked it, feel free to give it a ⭐ so both you and I can feel fuzzy inside.&lt;/p&gt;
+<a href="https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361" rel="noopener">https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361</a></li>
+</ul>
+<h1 id="closing">Closing</h1>
+<p>I hope you learned a thing or two about Docker! If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it)! If you liked it, feel free to give it a ⭐ so both you and I can feel fuzzy inside.</p>
 
 
     </article>

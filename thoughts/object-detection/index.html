@@ -485,290 +485,290 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;template-matching&#34;&gt;Template Matching&lt;/h2&gt;
-&lt;p&gt;Linear filtering is also known as template matching. Convolution/correlation can be thought of as comparing a template (the kernel) with each section of the image.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Consider the filter and image section as vectors&lt;/li&gt;
-&lt;li&gt;Applying the filter can be interpreted as computing the dot product between the filter and the local image patch&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The correlation is then normalized to between -1 and 1 using cosine similarity, where 1 is the value when the filter and image region are identical. This process is essentially finding the cosine similarity between template and local image neighbourhood&lt;/p&gt;
-&lt;p&gt;$$\cos\theta = \frac{a \cdot b}{|a||b|} = \frac{a \cdot b}{\sqrt{(a \cdot a)(b \cdot b)}} = \frac{a}{|a|} \frac{b}{|b|}$$&lt;/p&gt;
-&lt;p&gt;Then, we can map over the image and create a correlation map. Thresholding this gives us detections.&lt;/p&gt;
-&lt;p&gt;Good:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Robust against noise&lt;/li&gt;
-&lt;li&gt;Relatively easy to compute
-Bad:&lt;/li&gt;
-&lt;li&gt;Scaling (we can address this using scaled representations like a Gaussian image pyramid)&lt;/li&gt;
-&lt;li&gt;Rotation&lt;/li&gt;
-&lt;li&gt;Lighting conditions&lt;/li&gt;
-&lt;li&gt;Sensitive to viewing direction and pose (in 3D worlds)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;gaussian-image-pyramid&#34;&gt;Gaussian Image Pyramid&lt;/h3&gt;
-&lt;p&gt;Collection of representations of an image. Typically, each layer of the pyramid is half the width and half the height of the previous layer. In the Gaussian version, each layer is smoothed by a Gaussian then resampled to get the next layer.&lt;/p&gt;
-&lt;p&gt;Details get smoothed out (are completely lost) as we move to higher levels, only large uniform regions of colours in the original image are left.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://miro.medium.com/max/1016/1*Q9UKqUC6OqpR3KL1yRrXxA.png&#34; alt=&#34;Upsampling Process&#34;  /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;laplacian-pyramid&#34;&gt;Laplacian Pyramid&lt;/h3&gt;
-&lt;p&gt;To do this, create a Gaussian pyramid and take the difference between one pyramid level and the next after smoothing but before subsampling.&lt;/p&gt;
-&lt;p&gt;At each level, retain the residuals (difference between smoothed image and normal image) instead of the blurred images themselves.&lt;/p&gt;
-&lt;p&gt;Constructing the pyramid, we repeat until min resolution reached:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Blur&lt;/li&gt;
-&lt;li&gt;Compute Residual&lt;/li&gt;
-&lt;li&gt;Subsample&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Reconstructing, we repeat until original resolution reached:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Upsample&lt;/li&gt;
-&lt;li&gt;Blur&lt;/li&gt;
-&lt;li&gt;Sum with residual&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;local-feature-detection&#34;&gt;Local Feature Detection&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Moving from global template matching to local template matching (e.g.edges and corners)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;As differentiation is linear and shift invariant, we can implement it as a convolution.&lt;/p&gt;
-&lt;p&gt;The discrete approximation is $\frac{\partial f}{\partial x} \approx \frac{F(X&#43; \Delta x, y) - F(x,y)}{\Delta x}$ where $\Delta x$ is usually $1$. This is equivalent to a convolution $F$ is a $1 \times 2$ filter with the first element is $-1$ and the second element is $1$. Note that the derivatives go up for the Y direction and the right for the X direction.&lt;/p&gt;
-&lt;p&gt;We usually smooth the image prior to derivative estimation. Increased smoothing&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;eliminates noise edges&lt;/li&gt;
-&lt;li&gt;makes edges smoother and thicker&lt;/li&gt;
-&lt;li&gt;removes fine detail&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Weights of a filter for differentiation should sum to 0 as a constant image should have derivative 0.&lt;/p&gt;
-&lt;h3 id=&#34;edge-detection&#34;&gt;Edge Detection&lt;/h3&gt;
-&lt;p&gt;The goal here is to identify sudden changes in image brightness as this encodes the vast majority of shape information.&lt;/p&gt;
-&lt;p&gt;An edge is a location with high gradient.&lt;/p&gt;
-&lt;p&gt;Mainly caused by&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Depth discontinuity&lt;/li&gt;
-&lt;li&gt;Surface orientation discontinuity&lt;/li&gt;
-&lt;li&gt;Reflectance discontinuity (e.g. change in material)&lt;/li&gt;
-&lt;li&gt;Illumination discontinuity (e.g. shadows)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As we usually smooth prior to derivative calculation and convolution is associative, we can combine both steps and use derivatives of Gaussian filters.&lt;/p&gt;
-&lt;p&gt;$$D \otimes (G \otimes I(X,Y)) = (D \otimes G) \otimes I(X,Y)$$&lt;/p&gt;
-&lt;h4 id=&#34;sobel-gradient-magnitude&#34;&gt;Sobel (Gradient Magnitude)&lt;/h4&gt;
-&lt;p&gt;Let $I(X,Y)$ be an image. Then, we let $I_x(X,Y)$ and $I_y(X,Y)$ be estimates of the partial derivatives in the $x$ and $y$ directions, respectively. Then, the vector $[I_x, I_y]$ or $\nabla f = [\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}]$ is the gradient and $\sqrt{I_x^2&#43;I_y^2}$ is the gradient magnitude.&lt;/p&gt;
-&lt;p&gt;The gradient points in the direction of most rapid increase of intensity. The direction is then $\theta = \arctan{\frac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}}$. The strength of the edge is then the magnitude $||\nabla f|| = \sqrt{\frac{\partial f}{\partial x}^2 &#43; \frac{\partial f}{\partial y}^2}$.&lt;/p&gt;
-&lt;h4 id=&#34;marrhildreth-laplacian-of-gaussian&#34;&gt;Marr/Hildreth (Laplacian of Gaussian)&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Design Criteria&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;localization of space (find where the edge is)&lt;/li&gt;
-&lt;li&gt;localization in frequency (identify high frequency and low frequency edges)&lt;/li&gt;
-&lt;li&gt;rotationally invariant (rotation shouldn&amp;rsquo;t affect edges)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Find the zero-crossings (intercepts) of the Laplacian of the Gaussian. This is $\nabla^2 G(x,y) = \frac{-1}{2\pi\sigma^4}[2-\frac{x^2&#43;y^2}{\sigma^2}]\exp{(-\frac{x^2&#43;y^2}{2\sigma^2})} = 0$&lt;/p&gt;
-&lt;p&gt;Alternatively, we can say that subtracting the delta function from the Gaussian gives you an approximation of the Laplacian&lt;/p&gt;
-&lt;h4 id=&#34;canny-local-extrema-of-1st-deriv&#34;&gt;Canny (Local Extrema of 1st deriv)&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;Design Criteria&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;good detection (reduce missed edges, reduced edges where edges don&amp;rsquo;t exist)&lt;/li&gt;
-&lt;li&gt;good localization (accurate edge detection)&lt;/li&gt;
-&lt;li&gt;one (single) response to a given edge&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Find the local extrema of a first derivative operator.&lt;/p&gt;
-&lt;p&gt;Steps&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Apply directional derivatives of Gaussian&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Computer gradient magnitude and gradient direction&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Perform non-max suppression
-Non-max suppression allows us to suppress near-by similar detections to obtain one &amp;ldquo;true&amp;rdquo; result. In images, we select the maximum point across the width of the edge (following the direction of the gradient).&lt;/p&gt;
-&lt;p&gt;In implementations, the value at a pixel $q$ must be larger than its interpolated values at $p$ (the next pixel in the direction of the gradient) and $r$ (the previous pixel in the direction of the gradient). Interpolate as needed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Linking and thresholding
-Trying to fix broken edge chains by linking separate edge pixels through taking the normal of the gradient and linking it if the nearest interpolated pixel is also an edge pixel. Accept all edges over low threshold that are connect to an edge over high threshold.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Author&lt;/th&gt;
-&lt;th&gt;Approach&lt;/th&gt;
-&lt;th&gt;Detection&lt;/th&gt;
-&lt;th&gt;Localization&lt;/th&gt;
-&lt;th&gt;Single Resp&lt;/th&gt;
-&lt;th&gt;Limitations&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Sobel&lt;/td&gt;
-&lt;td&gt;Gradient Magnitude Threshold&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;Poor&lt;/td&gt;
-&lt;td&gt;Poor&lt;/td&gt;
-&lt;td&gt;Thick edges&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Marr/Hildreth&lt;/td&gt;
-&lt;td&gt;Zero-crossings of 2nd Derivative&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;Smooths Corners&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Canny&lt;/td&gt;
-&lt;td&gt;Local extrema of 1st Derivative&lt;/td&gt;
-&lt;td&gt;Best&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;Good&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;boundary-detection&#34;&gt;Boundary Detection&lt;/h3&gt;
-&lt;p&gt;How closely do image edges correspond to boundaries that humans perceive to be salient or significant?&lt;/p&gt;
-&lt;p&gt;One approach is using circular windows of radii $r$ at each pixel $(x,y)$ cut in half by a line that bisects the circle in half. Then, compare visual features on both sides of the cut and if the features are statistically different, then the cut line probably corresponds to a boundary.&lt;/p&gt;
-&lt;p&gt;For statistical significance:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Compute non-parametric distribution (histogram) for left side&lt;/li&gt;
-&lt;li&gt;Compute non-parametric distribution (histogram) for right side&lt;/li&gt;
-&lt;li&gt;Compare two histograms, on left and right side, using statistical test&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Example features include&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Raw Intensity&lt;/li&gt;
-&lt;li&gt;Orientation Energy&lt;/li&gt;
-&lt;li&gt;Brightness Gradient&lt;/li&gt;
-&lt;li&gt;Color Gradient&lt;/li&gt;
-&lt;li&gt;Texture gradient&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For this implementation, we consider 8 discrete orientations ($\theta$) and 3 scales ($r$)&lt;/p&gt;
-&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
-&lt;p&gt;Corners are locally distinct 2D image features that (hopefully) correspond to a distinct position on a 3D object of interest in the scene.&lt;/p&gt;
-&lt;p&gt;Cannot be an edge as estimation of a location along an edge is close to impossible (the aperture problem)&lt;/p&gt;
-&lt;h3 id=&#34;autocorrelation&#34;&gt;Autocorrelation&lt;/h3&gt;
-&lt;p&gt;Correlation of the image (distribution of pixel values) with itself. At each pixel, compute its partial derivative w.r.t. either the $x$ or the $y$ axis, $I_y = \frac{\partial I}{\partial y}, I_x = \frac{\partial I}{\partial x}$.&lt;/p&gt;
-&lt;p&gt;Windows on an edge will have autocorrelation that falls of slowly in the direction of the edge but rapidly orthogonal to the edgge. Windows on a corder will have autocorrelation that falls off rapidly in all directions.&lt;/p&gt;
-&lt;h4 id=&#34;harris-corner-detection&#34;&gt;Harris Corner Detection&lt;/h4&gt;
-&lt;p&gt;As a stats reminder, covariance is the &lt;em&gt;direction&lt;/em&gt; of the correlation. The closer the covariance is to 1, the closer it is to a perfect positive correlation. -1 implies perfect negative correlation.&lt;/p&gt;
-&lt;p&gt;When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Compute image gradients over small region&lt;/li&gt;
-&lt;li&gt;Compute covariance matrix $$\begin{bmatrix}\sum_{p \in P}I_xI_x &amp;amp; \sum_{p \in P}I_xI_y \ \sum_{p \in P}I_yI_x &amp;amp; \sum_{p \in P}I_yI_y\end{bmatrix}$$ (essentially fitting a quadratic to the gradients over the small image patch $P$)&lt;/li&gt;
-&lt;li&gt;Computer eigenvectors and eigenvalues of the covariance matrix.&lt;/li&gt;
-&lt;li&gt;Use threshold on eigenvalues to detect corners ($&amp;gt;0$ is a corner)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix). It tells us the dispersion of the gradients nearby.&lt;/p&gt;
-&lt;p&gt;As $C$ is symmetric, we have the covariance matrix as the ellipse equation&lt;/p&gt;
-&lt;p&gt;$$f(x,y) = \begin{bmatrix}x &amp;amp; y\end{bmatrix}\begin{bmatrix}1 &amp;amp; 0 \ 0 &amp;amp; 1\end{bmatrix}\begin{bmatrix}x \ y\end{bmatrix} = \textrm{const}$$&lt;/p&gt;
-&lt;p&gt;Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$&lt;/p&gt;
-&lt;p&gt;Then, this is what the eigenvalues tell us:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Case 1 (both $\lambda_1$ and $\lambda_2$ are close to zero): flat region&lt;/li&gt;
-&lt;li&gt;Case 2 ($\lambda_2$ is much greater than $\lambda_1$): horizontal edge&lt;/li&gt;
-&lt;li&gt;Case 3 ($\lambda_1$ is much greater than $\lambda_2$): vertical edge&lt;/li&gt;
-&lt;li&gt;Case 4 ($\lambda_1$ are both rather large $\lambda_2$): corner&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To threshold, we can pick a function&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Harris &amp;amp; Stephens: $\lambda_1 \lambda_2 - \kappa (\lambda_1 &#43; \lambda_2)^2$ which is equivalent to $\det(C) - \kappa \textrm{trace}^2(C)$. $\kappa$ is usually 0.4 or 0.6.&lt;/li&gt;
-&lt;li&gt;Kanade &amp;amp; Tomasi: $\min(\lambda_1, \lambda_2)$&lt;/li&gt;
-&lt;li&gt;Nobel: $\frac{\det(C)}{\textrm{trace}(C)&#43;\epsilon}$&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;linear-algebra-asidereview&#34;&gt;Linear Algebra Aside/Review&lt;/h4&gt;
-&lt;p&gt;Given a square matrix $A$, a scalar $\lambda$ is called an &lt;strong&gt;eigenvalue&lt;/strong&gt; of $A$ if there exists a nonzero vector $v$ that satisfies&lt;/p&gt;
-&lt;p&gt;$$Av = \lambda v$$&lt;/p&gt;
-&lt;p&gt;The vector $v$ is called an eigenvector for $A$ corresponding to the eigenvalue $\lambda$. The eigenvalues of $A$ are obtained by solving $\det(A-\lambda I) = 0$&lt;/p&gt;
-&lt;h2 id=&#34;keypoint-description&#34;&gt;Keypoint Description&lt;/h2&gt;
-&lt;h3 id=&#34;scale-invariant-features-sift&#34;&gt;Scale Invariant Features (SIFT)&lt;/h3&gt;
-&lt;p&gt;David Lowe&lt;/p&gt;
-&lt;p&gt;Invariant to translation, rotation, scale, and other imaging parameters. (Generally works for about ~20% change in viewpoint angle)&lt;/p&gt;
-&lt;p&gt;Advantages:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Locality: features are local (robust to occlusion and clutter)&lt;/li&gt;
-&lt;li&gt;Distinctiveness: individual features can be matched to a large database of objects&lt;/li&gt;
-&lt;li&gt;Quantity: many features can be generated (even for small objects)&lt;/li&gt;
-&lt;li&gt;Efficiency: fast (close to real-time performance)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Describes both a &lt;strong&gt;detector&lt;/strong&gt; and &lt;strong&gt;descriptor&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Multi-scale local extrema detection
-&lt;ul&gt;
-&lt;li&gt;Use difference of gradient pyramid (3 scales/octave, down-sample by a factor of 2 each octave)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Keypoint localization
-&lt;ul&gt;
-&lt;li&gt;We then remove low constrast or poorly localized keypoints. We can determine good corners by using the covariance matrix! (Threshold on magnitude of extremum, ratio of principal curvatures)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Orientation assignment
-&lt;ul&gt;
-&lt;li&gt;Create histogram of local gradient directions computed at selected scale multiplied by the gaussian kernel at the center&lt;/li&gt;
-&lt;li&gt;Assign canonical orientation at peak of smoothed histogram (mode)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Keypoint description (SIFT Descriptor)
-&lt;ul&gt;
-&lt;li&gt;histogram of local gradient directions
-&lt;ul&gt;
-&lt;li&gt;(8x(4x4)) = 128 dims&lt;/li&gt;
-&lt;li&gt;4x4 = 16 histograms&lt;/li&gt;
-&lt;li&gt;8 orientations each&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Normalized to unit length to reduce the effects of illumination change
-Robust to affine changes (rotation and scaling)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;histogram-of-oriented-gradients-hog&#34;&gt;Histogram of Oriented Gradients (HOG)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;uses 8x8 cells and blocks which consist of 2x2 cells&lt;/li&gt;
-&lt;li&gt;then for each cell, create a histogram of &amp;lsquo;unsigned&amp;rsquo; gradients
-&lt;ul&gt;
-&lt;li&gt;perform soft binning (adding to one bin also adds to neighbour bins)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;concatenate then L2 normalize&lt;/li&gt;
-&lt;li&gt;15x7x4x36 = 3780&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;speeded-up-robust-features-surf&#34;&gt;&amp;lsquo;Speeded Up&amp;rsquo; Robust Features (SURF)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;4x4 cell grid of 5x5 cells&lt;/li&gt;
-&lt;li&gt;each cell is represented by 4 values
-&lt;ol&gt;
-&lt;li&gt;sum of all x derivatives&lt;/li&gt;
-&lt;li&gt;sum of all y derivatives&lt;/li&gt;
-&lt;li&gt;abs of 1&lt;/li&gt;
-&lt;li&gt;abs of 2&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;use Haar wavelets filters (simple derivative filters where all black on one side and all white on the other, weighted by gaussian)&lt;/li&gt;
-&lt;li&gt;4x4x4 = 64 dims&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;object-recognition&#34;&gt;Object Recognition&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Match each keypoint to the database of keypoints
-To find out probability of correct match, we can compare the ratio of distance between nearest neighbour and 2nd nearest neighbour. A threshold of 0.8 provides great separation.&lt;/li&gt;
-&lt;li&gt;identify clusters of at least 3 features that agree on an object and pose
-Lowe uses a generalized Hough transform&lt;/li&gt;
-&lt;li&gt;check each cluster found by performing detailed geometric fit of affine transformation to the model&lt;/li&gt;
-&lt;li&gt;accept/reject interpretation accordingly&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;approximate-nearest-neighbour&#34;&gt;Approximate Nearest Neighbour&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;generally, finding nearest neighbour in high-dimensional data is linear in time (even for KD trees)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;transformations&#34;&gt;Transformations&lt;/h3&gt;
-&lt;p&gt;Degrees of freedom (DOF)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;translation: 2&lt;/li&gt;
-&lt;li&gt;rigid (euclidean): 3&lt;/li&gt;
-&lt;li&gt;similarity: 4&lt;/li&gt;
-&lt;li&gt;affine: 6&lt;/li&gt;
-&lt;li&gt;projective: 8&lt;/li&gt;
-&lt;/ol&gt;
+      <h2 id="template-matching">Template Matching</h2>
+<p>Linear filtering is also known as template matching. Convolution/correlation can be thought of as comparing a template (the kernel) with each section of the image.</p>
+<ul>
+<li>Consider the filter and image section as vectors</li>
+<li>Applying the filter can be interpreted as computing the dot product between the filter and the local image patch</li>
+</ul>
+<p>The correlation is then normalized to between -1 and 1 using cosine similarity, where 1 is the value when the filter and image region are identical. This process is essentially finding the cosine similarity between template and local image neighbourhood</p>
+<p>$$\cos\theta = \frac{a \cdot b}{|a||b|} = \frac{a \cdot b}{\sqrt{(a \cdot a)(b \cdot b)}} = \frac{a}{|a|} \frac{b}{|b|}$$</p>
+<p>Then, we can map over the image and create a correlation map. Thresholding this gives us detections.</p>
+<p>Good:</p>
+<ol>
+<li>Robust against noise</li>
+<li>Relatively easy to compute
+Bad:</li>
+<li>Scaling (we can address this using scaled representations like a Gaussian image pyramid)</li>
+<li>Rotation</li>
+<li>Lighting conditions</li>
+<li>Sensitive to viewing direction and pose (in 3D worlds)</li>
+</ol>
+<h3 id="gaussian-image-pyramid">Gaussian Image Pyramid</h3>
+<p>Collection of representations of an image. Typically, each layer of the pyramid is half the width and half the height of the previous layer. In the Gaussian version, each layer is smoothed by a Gaussian then resampled to get the next layer.</p>
+<p>Details get smoothed out (are completely lost) as we move to higher levels, only large uniform regions of colours in the original image are left.</p>
+<p>
+<img src="https://miro.medium.com/max/1016/1*Q9UKqUC6OqpR3KL1yRrXxA.png" alt="Upsampling Process"  /></p>
+<h3 id="laplacian-pyramid">Laplacian Pyramid</h3>
+<p>To do this, create a Gaussian pyramid and take the difference between one pyramid level and the next after smoothing but before subsampling.</p>
+<p>At each level, retain the residuals (difference between smoothed image and normal image) instead of the blurred images themselves.</p>
+<p>Constructing the pyramid, we repeat until min resolution reached:</p>
+<ol>
+<li>Blur</li>
+<li>Compute Residual</li>
+<li>Subsample</li>
+</ol>
+<p>Reconstructing, we repeat until original resolution reached:</p>
+<ol>
+<li>Upsample</li>
+<li>Blur</li>
+<li>Sum with residual</li>
+</ol>
+<h2 id="local-feature-detection">Local Feature Detection</h2>
+<blockquote>
+<p>Moving from global template matching to local template matching (e.g.edges and corners)</p>
+</blockquote>
+<p>As differentiation is linear and shift invariant, we can implement it as a convolution.</p>
+<p>The discrete approximation is $\frac{\partial f}{\partial x} \approx \frac{F(X+ \Delta x, y) - F(x,y)}{\Delta x}$ where $\Delta x$ is usually $1$. This is equivalent to a convolution $F$ is a $1 \times 2$ filter with the first element is $-1$ and the second element is $1$. Note that the derivatives go up for the Y direction and the right for the X direction.</p>
+<p>We usually smooth the image prior to derivative estimation. Increased smoothing</p>
+<ul>
+<li>eliminates noise edges</li>
+<li>makes edges smoother and thicker</li>
+<li>removes fine detail</li>
+</ul>
+<p>Weights of a filter for differentiation should sum to 0 as a constant image should have derivative 0.</p>
+<h3 id="edge-detection">Edge Detection</h3>
+<p>The goal here is to identify sudden changes in image brightness as this encodes the vast majority of shape information.</p>
+<p>An edge is a location with high gradient.</p>
+<p>Mainly caused by</p>
+<ul>
+<li>Depth discontinuity</li>
+<li>Surface orientation discontinuity</li>
+<li>Reflectance discontinuity (e.g. change in material)</li>
+<li>Illumination discontinuity (e.g. shadows)</li>
+</ul>
+<p>As we usually smooth prior to derivative calculation and convolution is associative, we can combine both steps and use derivatives of Gaussian filters.</p>
+<p>$$D \otimes (G \otimes I(X,Y)) = (D \otimes G) \otimes I(X,Y)$$</p>
+<h4 id="sobel-gradient-magnitude">Sobel (Gradient Magnitude)</h4>
+<p>Let $I(X,Y)$ be an image. Then, we let $I_x(X,Y)$ and $I_y(X,Y)$ be estimates of the partial derivatives in the $x$ and $y$ directions, respectively. Then, the vector $[I_x, I_y]$ or $\nabla f = [\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}]$ is the gradient and $\sqrt{I_x^2+I_y^2}$ is the gradient magnitude.</p>
+<p>The gradient points in the direction of most rapid increase of intensity. The direction is then $\theta = \arctan{\frac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}}$. The strength of the edge is then the magnitude $||\nabla f|| = \sqrt{\frac{\partial f}{\partial x}^2 + \frac{\partial f}{\partial y}^2}$.</p>
+<h4 id="marrhildreth-laplacian-of-gaussian">Marr/Hildreth (Laplacian of Gaussian)</h4>
+<p><strong>Design Criteria</strong></p>
+<ol>
+<li>localization of space (find where the edge is)</li>
+<li>localization in frequency (identify high frequency and low frequency edges)</li>
+<li>rotationally invariant (rotation shouldn&rsquo;t affect edges)</li>
+</ol>
+<p>Find the zero-crossings (intercepts) of the Laplacian of the Gaussian. This is $\nabla^2 G(x,y) = \frac{-1}{2\pi\sigma^4}[2-\frac{x^2+y^2}{\sigma^2}]\exp{(-\frac{x^2+y^2}{2\sigma^2})} = 0$</p>
+<p>Alternatively, we can say that subtracting the delta function from the Gaussian gives you an approximation of the Laplacian</p>
+<h4 id="canny-local-extrema-of-1st-deriv">Canny (Local Extrema of 1st deriv)</h4>
+<p><strong>Design Criteria</strong></p>
+<ol>
+<li>good detection (reduce missed edges, reduced edges where edges don&rsquo;t exist)</li>
+<li>good localization (accurate edge detection)</li>
+<li>one (single) response to a given edge</li>
+</ol>
+<p>Find the local extrema of a first derivative operator.</p>
+<p>Steps</p>
+<ol>
+<li>
+<p>Apply directional derivatives of Gaussian</p>
+</li>
+<li>
+<p>Computer gradient magnitude and gradient direction</p>
+</li>
+<li>
+<p>Perform non-max suppression
+Non-max suppression allows us to suppress near-by similar detections to obtain one &ldquo;true&rdquo; result. In images, we select the maximum point across the width of the edge (following the direction of the gradient).</p>
+<p>In implementations, the value at a pixel $q$ must be larger than its interpolated values at $p$ (the next pixel in the direction of the gradient) and $r$ (the previous pixel in the direction of the gradient). Interpolate as needed.</p>
+</li>
+<li>
+<p>Linking and thresholding
+Trying to fix broken edge chains by linking separate edge pixels through taking the normal of the gradient and linking it if the nearest interpolated pixel is also an edge pixel. Accept all edges over low threshold that are connect to an edge over high threshold.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Author</th>
+<th>Approach</th>
+<th>Detection</th>
+<th>Localization</th>
+<th>Single Resp</th>
+<th>Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sobel</td>
+<td>Gradient Magnitude Threshold</td>
+<td>Good</td>
+<td>Poor</td>
+<td>Poor</td>
+<td>Thick edges</td>
+</tr>
+<tr>
+<td>Marr/Hildreth</td>
+<td>Zero-crossings of 2nd Derivative</td>
+<td>Good</td>
+<td>Good</td>
+<td>Good</td>
+<td>Smooths Corners</td>
+</tr>
+<tr>
+<td>Canny</td>
+<td>Local extrema of 1st Derivative</td>
+<td>Best</td>
+<td>Good</td>
+<td>Good</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="boundary-detection">Boundary Detection</h3>
+<p>How closely do image edges correspond to boundaries that humans perceive to be salient or significant?</p>
+<p>One approach is using circular windows of radii $r$ at each pixel $(x,y)$ cut in half by a line that bisects the circle in half. Then, compare visual features on both sides of the cut and if the features are statistically different, then the cut line probably corresponds to a boundary.</p>
+<p>For statistical significance:</p>
+<ol>
+<li>Compute non-parametric distribution (histogram) for left side</li>
+<li>Compute non-parametric distribution (histogram) for right side</li>
+<li>Compare two histograms, on left and right side, using statistical test</li>
+</ol>
+<p>Example features include</p>
+<ul>
+<li>Raw Intensity</li>
+<li>Orientation Energy</li>
+<li>Brightness Gradient</li>
+<li>Color Gradient</li>
+<li>Texture gradient</li>
+</ul>
+<p>For this implementation, we consider 8 discrete orientations ($\theta$) and 3 scales ($r$)</p>
+<h3 id="features">Features</h3>
+<p>Corners are locally distinct 2D image features that (hopefully) correspond to a distinct position on a 3D object of interest in the scene.</p>
+<p>Cannot be an edge as estimation of a location along an edge is close to impossible (the aperture problem)</p>
+<h3 id="autocorrelation">Autocorrelation</h3>
+<p>Correlation of the image (distribution of pixel values) with itself. At each pixel, compute its partial derivative w.r.t. either the $x$ or the $y$ axis, $I_y = \frac{\partial I}{\partial y}, I_x = \frac{\partial I}{\partial x}$.</p>
+<p>Windows on an edge will have autocorrelation that falls of slowly in the direction of the edge but rapidly orthogonal to the edgge. Windows on a corder will have autocorrelation that falls off rapidly in all directions.</p>
+<h4 id="harris-corner-detection">Harris Corner Detection</h4>
+<p>As a stats reminder, covariance is the <em>direction</em> of the correlation. The closer the covariance is to 1, the closer it is to a perfect positive correlation. -1 implies perfect negative correlation.</p>
+<p>When drawing distrubtion, draw normals to edges going from low values (dark) to high values (white).</p>
+<ol>
+<li>Compute image gradients over small region</li>
+<li>Compute covariance matrix $$\begin{bmatrix}\sum_{p \in P}I_xI_x &amp; \sum_{p \in P}I_xI_y \ \sum_{p \in P}I_yI_x &amp; \sum_{p \in P}I_yI_y\end{bmatrix}$$ (essentially fitting a quadratic to the gradients over the small image patch $P$)</li>
+<li>Computer eigenvectors and eigenvalues of the covariance matrix.</li>
+<li>Use threshold on eigenvalues to detect corners ($&gt;0$ is a corner)</li>
+</ol>
+<p>We can visualize the covariance matrix $C$ as an ellipse whose axis lengths are determined by the eigenvalues and orientation determined by $R$ (the rotation matrix). It tells us the dispersion of the gradients nearby.</p>
+<p>As $C$ is symmetric, we have the covariance matrix as the ellipse equation</p>
+<p>$$f(x,y) = \begin{bmatrix}x &amp; y\end{bmatrix}\begin{bmatrix}1 &amp; 0 \ 0 &amp; 1\end{bmatrix}\begin{bmatrix}x \ y\end{bmatrix} = \textrm{const}$$</p>
+<p>Where the minor axis is $\lambda_{max}^{-1/2}$ and the major axis is $\lambda_{min}^{-1/2}$</p>
+<p>Then, this is what the eigenvalues tell us:</p>
+<ul>
+<li>Case 1 (both $\lambda_1$ and $\lambda_2$ are close to zero): flat region</li>
+<li>Case 2 ($\lambda_2$ is much greater than $\lambda_1$): horizontal edge</li>
+<li>Case 3 ($\lambda_1$ is much greater than $\lambda_2$): vertical edge</li>
+<li>Case 4 ($\lambda_1$ are both rather large $\lambda_2$): corner</li>
+</ul>
+<p>To threshold, we can pick a function</p>
+<ol>
+<li>Harris &amp; Stephens: $\lambda_1 \lambda_2 - \kappa (\lambda_1 + \lambda_2)^2$ which is equivalent to $\det(C) - \kappa \textrm{trace}^2(C)$. $\kappa$ is usually 0.4 or 0.6.</li>
+<li>Kanade &amp; Tomasi: $\min(\lambda_1, \lambda_2)$</li>
+<li>Nobel: $\frac{\det(C)}{\textrm{trace}(C)+\epsilon}$</li>
+</ol>
+<h4 id="linear-algebra-asidereview">Linear Algebra Aside/Review</h4>
+<p>Given a square matrix $A$, a scalar $\lambda$ is called an <strong>eigenvalue</strong> of $A$ if there exists a nonzero vector $v$ that satisfies</p>
+<p>$$Av = \lambda v$$</p>
+<p>The vector $v$ is called an eigenvector for $A$ corresponding to the eigenvalue $\lambda$. The eigenvalues of $A$ are obtained by solving $\det(A-\lambda I) = 0$</p>
+<h2 id="keypoint-description">Keypoint Description</h2>
+<h3 id="scale-invariant-features-sift">Scale Invariant Features (SIFT)</h3>
+<p>David Lowe</p>
+<p>Invariant to translation, rotation, scale, and other imaging parameters. (Generally works for about ~20% change in viewpoint angle)</p>
+<p>Advantages:</p>
+<ul>
+<li>Locality: features are local (robust to occlusion and clutter)</li>
+<li>Distinctiveness: individual features can be matched to a large database of objects</li>
+<li>Quantity: many features can be generated (even for small objects)</li>
+<li>Efficiency: fast (close to real-time performance)</li>
+</ul>
+<p>Describes both a <strong>detector</strong> and <strong>descriptor</strong></p>
+<ol>
+<li>Multi-scale local extrema detection
+<ul>
+<li>Use difference of gradient pyramid (3 scales/octave, down-sample by a factor of 2 each octave)</li>
+</ul>
+</li>
+<li>Keypoint localization
+<ul>
+<li>We then remove low constrast or poorly localized keypoints. We can determine good corners by using the covariance matrix! (Threshold on magnitude of extremum, ratio of principal curvatures)</li>
+</ul>
+</li>
+<li>Orientation assignment
+<ul>
+<li>Create histogram of local gradient directions computed at selected scale multiplied by the gaussian kernel at the center</li>
+<li>Assign canonical orientation at peak of smoothed histogram (mode)</li>
+</ul>
+</li>
+<li>Keypoint description (SIFT Descriptor)
+<ul>
+<li>histogram of local gradient directions
+<ul>
+<li>(8x(4x4)) = 128 dims</li>
+<li>4x4 = 16 histograms</li>
+<li>8 orientations each</li>
+</ul>
+</li>
+<li>Normalized to unit length to reduce the effects of illumination change
+Robust to affine changes (rotation and scaling)</li>
+</ul>
+</li>
+</ol>
+<h3 id="histogram-of-oriented-gradients-hog">Histogram of Oriented Gradients (HOG)</h3>
+<ul>
+<li>uses 8x8 cells and blocks which consist of 2x2 cells</li>
+<li>then for each cell, create a histogram of &lsquo;unsigned&rsquo; gradients
+<ul>
+<li>perform soft binning (adding to one bin also adds to neighbour bins)</li>
+</ul>
+</li>
+<li>concatenate then L2 normalize</li>
+<li>15x7x4x36 = 3780</li>
+</ul>
+<h3 id="speeded-up-robust-features-surf">&lsquo;Speeded Up&rsquo; Robust Features (SURF)</h3>
+<ul>
+<li>4x4 cell grid of 5x5 cells</li>
+<li>each cell is represented by 4 values
+<ol>
+<li>sum of all x derivatives</li>
+<li>sum of all y derivatives</li>
+<li>abs of 1</li>
+<li>abs of 2</li>
+</ol>
+</li>
+<li>use Haar wavelets filters (simple derivative filters where all black on one side and all white on the other, weighted by gaussian)</li>
+<li>4x4x4 = 64 dims</li>
+</ul>
+<h2 id="object-recognition">Object Recognition</h2>
+<ol>
+<li>Match each keypoint to the database of keypoints
+To find out probability of correct match, we can compare the ratio of distance between nearest neighbour and 2nd nearest neighbour. A threshold of 0.8 provides great separation.</li>
+<li>identify clusters of at least 3 features that agree on an object and pose
+Lowe uses a generalized Hough transform</li>
+<li>check each cluster found by performing detailed geometric fit of affine transformation to the model</li>
+<li>accept/reject interpretation accordingly</li>
+</ol>
+<h3 id="approximate-nearest-neighbour">Approximate Nearest Neighbour</h3>
+<ul>
+<li>generally, finding nearest neighbour in high-dimensional data is linear in time (even for KD trees)</li>
+</ul>
+<h3 id="transformations">Transformations</h3>
+<p>Degrees of freedom (DOF)</p>
+<ol>
+<li>translation: 2</li>
+<li>rigid (euclidean): 3</li>
+<li>similarity: 4</li>
+<li>affine: 6</li>
+<li>projective: 8</li>
+</ol>
 
 
     </article>

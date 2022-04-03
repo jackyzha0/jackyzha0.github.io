@@ -469,84 +469,84 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;
+      <p>
 
 
-&lt;a href=&#34;/thoughts/information-foraging&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/information-foraging&#34;&gt;Information foraging&lt;/a&gt; as a metaphor for exploring information retrieval and seeking. Heavily tied to 
+<a href="/thoughts/information-foraging" rel="noopener" class="internal-link" data-src="/thoughts/information-foraging">Information foraging</a> as a metaphor for exploring information retrieval and seeking. Heavily tied to 
 
 
-&lt;a href=&#34;/thoughts/search&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/search&#34;&gt;search&lt;/a&gt; systems.&lt;/p&gt;
-&lt;p&gt;A &amp;lsquo;closed stack&amp;rsquo; library facilitates information transfer from collection to information seeker through some intermediary who controls access to said objects. &amp;lsquo;Open stack&amp;rsquo; libraries often allow direct access to information objects (although sometimes with an intermediary&amp;rsquo;s help). Both may utilize some ordering/index.&lt;/p&gt;
-&lt;p&gt;The goal of information seekers is to find information that are useful in answering the original query or research questions&lt;/p&gt;
-&lt;p&gt;System Relevance is the measure or degree to which a document &amp;lsquo;was about&amp;rsquo; a topic. This can be used to measure performance of an information retrieval system by seeing the extent to which the system was able to retrieve all the relevant documents in the collection to a query (recall: ratio of relevant documents retrieved to total relevant documents), and only the relevant documents (precision: ratio of relevant documents retrieved to all documents).&lt;/p&gt;
-&lt;p&gt;Human relevance is the degree to which the document is useful to the search query of the user. Composed of 3 separate facets&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Situational Relevance: useful, efficient, applicability to the task and situation&lt;/li&gt;
-&lt;li&gt;Cognitive Relevance: suited to the knowledge level of the searcher; contains novel content of interest&lt;/li&gt;
-&lt;li&gt;Affective Relevance: satisfies user goals and motivations, trustworthy, algns with beliefs and is emotionally engaging, aesthetics&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Types of interactions then are&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Between information seeker and intermediary&lt;/li&gt;
-&lt;li&gt;Between the intermediary and the collection&lt;/li&gt;
-&lt;li&gt;Between the information seeker and the collection&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Information retrieval has a whole slew of related terminology surrounding it:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Indexing (characterizing documents)&lt;/li&gt;
-&lt;li&gt;Retrieval (characterizing information seeker&amp;rsquo;s information problem as a query put to the collection)&lt;/li&gt;
-&lt;li&gt;Information retrival system (combination of method to index, organization of the collection, and method of querying and searching the collection)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;cranfieldsmart-paradigm&#34;&gt;Cranfield/SMART Paradigm&lt;/h2&gt;
-&lt;p&gt;A &amp;lsquo;test collection&amp;rsquo; is constructed, consisting of a collection of documents, a set of descriptions of information &amp;lsquo;needs&amp;rsquo;, and an exhaustive evaluation of the relevance of each document to each information need description.&lt;/p&gt;
-&lt;p&gt;Why it may be faulty:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;relevance assessments are collected once for each information need for each document alone, without reference to any other document (most queries involve looking at multiple sources, relevance can depend on documents they have seen before)&lt;/li&gt;
-&lt;li&gt;evaluation is made of the performance of just the single query that represents each information need (queries are often iterative, you originally may not know what you don&amp;rsquo;t know or what you are looking for)&lt;/li&gt;
-&lt;li&gt;model of the user on which the measures are based limits their appropriateness for other possible user goals&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The dominance of the SMART (very technical and computational approach to information retrieval) means the research in the field of information retrieval was split into two disciplines: information retrieval (mainly CS/computational, study of formal models of information retrieval) and information seeking/use (mainly library/information science, study of people&amp;rsquo;s information-seeking behaviours and uses of and interactions with information systems). As a result, &amp;lsquo;interactiveness&amp;rsquo; was more of an afterthought and relegated to the peripheral.&lt;/p&gt;
-&lt;h3 id=&#34;cranfield-experiments&#34;&gt;Cranfield experiments&lt;/h3&gt;
-&lt;h4 id=&#34;cranfield-1&#34;&gt;Cranfield 1&lt;/h4&gt;
-&lt;p&gt;Featured&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Universal Decimal Classification (UDC): mostly empirically derived for what works best&lt;/li&gt;
-&lt;li&gt;Alphabetical&lt;/li&gt;
-&lt;li&gt;Faceted classification&lt;/li&gt;
-&lt;li&gt;Uniterm system of co-ordinate indexing (allowed boolean AND queries)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In failure analysis, only 1 in 20 failures were the result of the indexing systems themselves. Majority was human error in either the indexing, searching, or clerical processes of preparing the catalogues. Cleverdon then concluded what then must matter is the underlying document representation.&lt;/p&gt;
-&lt;h2 id=&#34;early-information-retrieval-systems&#34;&gt;Early information retrieval systems&lt;/h2&gt;
-&lt;p&gt;Mostly &amp;lsquo;batch&amp;rsquo;, non-interactive &amp;lsquo;closed stack&amp;rsquo; systems.&lt;/p&gt;
-&lt;h3 id=&#34;walker-1971&#34;&gt;Walker (1971)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A key difference in interactive terminal search is that data is brought to the searcher rather than the searcher going to the data&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Creating an online system as an access point for databases. However, these information retrieval systems required substantial knowledge not only of the characteristics of the database and its indexing systems but also of the details of the query language, boolean algebra for effective queries, and effective techniques for modifying queries given search results. This resulted in a new class of librarians and information scientists &amp;ndash; search intermediaries &amp;ndash; well versed in this new form of information seeking.&lt;/p&gt;
-&lt;p&gt;5 main filters to forming an effective query&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Determining the subject of the information query&lt;/li&gt;
-&lt;li&gt;Determining the objective/motivation of information-seeking behaviour&lt;/li&gt;
-&lt;li&gt;Determining the personal characteristics of the inquirer&lt;/li&gt;
-&lt;li&gt;Establishing the relationship between the query description and the information system&lt;/li&gt;
-&lt;li&gt;Determining anticipated/acceptable answers&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The problem: most people don&amp;rsquo;t actually know the thing they are searching for.&lt;/p&gt;
-&lt;h3 id=&#34;savage-knepshield-and-belkin-1999&#34;&gt;Savage-Knepshield and Belkin (1999)&lt;/h3&gt;
-&lt;p&gt;Bennet was looking at some very important 
+<a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">search</a> systems.</p>
+<p>A &lsquo;closed stack&rsquo; library facilitates information transfer from collection to information seeker through some intermediary who controls access to said objects. &lsquo;Open stack&rsquo; libraries often allow direct access to information objects (although sometimes with an intermediary&rsquo;s help). Both may utilize some ordering/index.</p>
+<p>The goal of information seekers is to find information that are useful in answering the original query or research questions</p>
+<p>System Relevance is the measure or degree to which a document &lsquo;was about&rsquo; a topic. This can be used to measure performance of an information retrieval system by seeing the extent to which the system was able to retrieve all the relevant documents in the collection to a query (recall: ratio of relevant documents retrieved to total relevant documents), and only the relevant documents (precision: ratio of relevant documents retrieved to all documents).</p>
+<p>Human relevance is the degree to which the document is useful to the search query of the user. Composed of 3 separate facets</p>
+<ol>
+<li>Situational Relevance: useful, efficient, applicability to the task and situation</li>
+<li>Cognitive Relevance: suited to the knowledge level of the searcher; contains novel content of interest</li>
+<li>Affective Relevance: satisfies user goals and motivations, trustworthy, algns with beliefs and is emotionally engaging, aesthetics</li>
+</ol>
+<p>Types of interactions then are</p>
+<ol>
+<li>Between information seeker and intermediary</li>
+<li>Between the intermediary and the collection</li>
+<li>Between the information seeker and the collection</li>
+</ol>
+<p>Information retrieval has a whole slew of related terminology surrounding it:</p>
+<ul>
+<li>Indexing (characterizing documents)</li>
+<li>Retrieval (characterizing information seeker&rsquo;s information problem as a query put to the collection)</li>
+<li>Information retrival system (combination of method to index, organization of the collection, and method of querying and searching the collection)</li>
+</ul>
+<h2 id="cranfieldsmart-paradigm">Cranfield/SMART Paradigm</h2>
+<p>A &lsquo;test collection&rsquo; is constructed, consisting of a collection of documents, a set of descriptions of information &lsquo;needs&rsquo;, and an exhaustive evaluation of the relevance of each document to each information need description.</p>
+<p>Why it may be faulty:</p>
+<ul>
+<li>relevance assessments are collected once for each information need for each document alone, without reference to any other document (most queries involve looking at multiple sources, relevance can depend on documents they have seen before)</li>
+<li>evaluation is made of the performance of just the single query that represents each information need (queries are often iterative, you originally may not know what you don&rsquo;t know or what you are looking for)</li>
+<li>model of the user on which the measures are based limits their appropriateness for other possible user goals</li>
+</ul>
+<p>The dominance of the SMART (very technical and computational approach to information retrieval) means the research in the field of information retrieval was split into two disciplines: information retrieval (mainly CS/computational, study of formal models of information retrieval) and information seeking/use (mainly library/information science, study of people&rsquo;s information-seeking behaviours and uses of and interactions with information systems). As a result, &lsquo;interactiveness&rsquo; was more of an afterthought and relegated to the peripheral.</p>
+<h3 id="cranfield-experiments">Cranfield experiments</h3>
+<h4 id="cranfield-1">Cranfield 1</h4>
+<p>Featured</p>
+<ul>
+<li>Universal Decimal Classification (UDC): mostly empirically derived for what works best</li>
+<li>Alphabetical</li>
+<li>Faceted classification</li>
+<li>Uniterm system of co-ordinate indexing (allowed boolean AND queries)</li>
+</ul>
+<p>In failure analysis, only 1 in 20 failures were the result of the indexing systems themselves. Majority was human error in either the indexing, searching, or clerical processes of preparing the catalogues. Cleverdon then concluded what then must matter is the underlying document representation.</p>
+<h2 id="early-information-retrieval-systems">Early information retrieval systems</h2>
+<p>Mostly &lsquo;batch&rsquo;, non-interactive &lsquo;closed stack&rsquo; systems.</p>
+<h3 id="walker-1971">Walker (1971)</h3>
+<blockquote>
+<p>A key difference in interactive terminal search is that data is brought to the searcher rather than the searcher going to the data</p>
+</blockquote>
+<p>Creating an online system as an access point for databases. However, these information retrieval systems required substantial knowledge not only of the characteristics of the database and its indexing systems but also of the details of the query language, boolean algebra for effective queries, and effective techniques for modifying queries given search results. This resulted in a new class of librarians and information scientists &ndash; search intermediaries &ndash; well versed in this new form of information seeking.</p>
+<p>5 main filters to forming an effective query</p>
+<ol>
+<li>Determining the subject of the information query</li>
+<li>Determining the objective/motivation of information-seeking behaviour</li>
+<li>Determining the personal characteristics of the inquirer</li>
+<li>Establishing the relationship between the query description and the information system</li>
+<li>Determining anticipated/acceptable answers</li>
+</ol>
+<p>The problem: most people don&rsquo;t actually know the thing they are searching for.</p>
+<h3 id="savage-knepshield-and-belkin-1999">Savage-Knepshield and Belkin (1999)</h3>
+<p>Bennet was looking at some very important 
 
 
-&lt;a href=&#34;/thoughts/human-computer-interaction&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/human-computer-interaction&#34;&gt;HCI&lt;/a&gt; considerations here, esp. w.r.t. the differences between human searcher and its automated counterpart. Asks some design questions to determine&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;characteristics of the searchers served by the facility&lt;/li&gt;
-&lt;li&gt;the conceptual framework presented to the searcher&lt;/li&gt;
-&lt;li&gt;the role of feedback to the searcher during searches&lt;/li&gt;
-&lt;li&gt;operational characteristics of the facility: the command language, display formats and response time&lt;/li&gt;
-&lt;li&gt;the constraints of the terminal and techniques to ameliorate them&lt;/li&gt;
-&lt;li&gt;the effects of the bibliographic database on the user interface for searchers&lt;/li&gt;
-&lt;li&gt;how to introduce the search facility to the user&lt;/li&gt;
-&lt;li&gt;the role of evaluation and feedback in the redesign cycle&lt;/li&gt;
-&lt;/ul&gt;
+<a href="/thoughts/human-computer-interaction" rel="noopener" class="internal-link" data-src="/thoughts/human-computer-interaction">HCI</a> considerations here, esp. w.r.t. the differences between human searcher and its automated counterpart. Asks some design questions to determine</p>
+<ul>
+<li>characteristics of the searchers served by the facility</li>
+<li>the conceptual framework presented to the searcher</li>
+<li>the role of feedback to the searcher during searches</li>
+<li>operational characteristics of the facility: the command language, display formats and response time</li>
+<li>the constraints of the terminal and techniques to ameliorate them</li>
+<li>the effects of the bibliographic database on the user interface for searchers</li>
+<li>how to introduce the search facility to the user</li>
+<li>the role of evaluation and feedback in the redesign cycle</li>
+</ul>
 
 
     </article>

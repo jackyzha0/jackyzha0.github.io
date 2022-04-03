@@ -470,134 +470,134 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;
-&lt;h3 id=&#34;functor&#34;&gt;Functor&lt;/h3&gt;
-&lt;p&gt;A type that can be mapped over.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span class=&#34;kr&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Functor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;where&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;fmap&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;
-	&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;code&gt;fmap&lt;/code&gt; takes a function which maps a value from &lt;code&gt;a&lt;/code&gt; to &lt;code&gt;b&lt;/code&gt; and applies it to a Functor &lt;code&gt;f&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;monad&#34;&gt;Monad&lt;/h3&gt;
-&lt;p&gt;All Monads are functors. Monads allow you to &amp;lsquo;chain&amp;rsquo; or compose monads. A container for values that can be mapped over.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span class=&#34;kr&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Monad&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;where&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;-- bind operation&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;-- takes an f :: (a → m b) and applies it to&lt;/span&gt;
-  &lt;span class=&#34;c1&#34;&gt;-- the inner value a of m&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;
+      <h2 id="terminology">Terminology</h2>
+<h3 id="functor">Functor</h3>
+<p>A type that can be mapped over.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="kr">class</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="kr">where</span>
+	<span class="n">fmap</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">→</span> <span class="n">b</span><span class="p">)</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">b</span>
+	<span class="p">(</span><span class="o">&lt;$</span><span class="p">)</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">b</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">a</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>fmap</code> takes a function which maps a value from <code>a</code> to <code>b</code> and applies it to a Functor <code>f</code>.</p>
+<h3 id="monad">Monad</h3>
+<p>All Monads are functors. Monads allow you to &lsquo;chain&rsquo; or compose monads. A container for values that can be mapped over.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="kr">class</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
+  <span class="c1">-- bind operation</span>
+  <span class="c1">-- takes an f :: (a → m b) and applies it to</span>
+  <span class="c1">-- the inner value a of m</span>
+  <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span>  <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">→</span> <span class="p">(</span><span class="n">a</span> <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span>
 
-  &lt;span class=&#34;c1&#34;&gt;-- replaces m a with m b&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;   &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;       &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;
+  <span class="c1">-- replaces m a with m b</span>
+  <span class="p">(</span><span class="o">&gt;&gt;</span><span class="p">)</span>   <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">→</span>  <span class="n">m</span> <span class="n">b</span>       <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span>
 
-  &lt;span class=&#34;c1&#34;&gt;-- constructs the simplest monad m using a&lt;/span&gt;
-  &lt;span class=&#34;n&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;::&lt;/span&gt;   &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;               &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Monad facts (all of these equations should be satisfied)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-haskell&#34; data-lang=&#34;haskell&#34;&gt;&lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;                  &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;m&lt;/span&gt;        &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;return&lt;/span&gt;             &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;m&lt;/span&gt;        &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;→&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;ow&#34;&gt;=&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;left-and-right-associativity&#34;&gt;Left and Right Associativity&lt;/h2&gt;
-&lt;p&gt;Associativity of an operator determines how operators are grouped in the absence of parentheses.&lt;/p&gt;
-&lt;p&gt;For the following examples, we consider a fictional operator &lt;code&gt;~&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Associative: operations can be grouped arbitrarily (e.g. addition, order doesn&amp;rsquo;t matter)&lt;/li&gt;
-&lt;li&gt;Left-associative: operations are grouped left to right
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;a ~ b ~ c&lt;/code&gt; is interpreted as &lt;code&gt;(a ~ b) ~ c&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Examples include
-&lt;ol&gt;
-&lt;li&gt;Function application operator&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Right-associative: operations are grouped right to left
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;a ~ b ~ c&lt;/code&gt; is interpreted as &lt;code&gt;a ~ (b ~ c)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Examples include
-&lt;ol&gt;
-&lt;li&gt;Variable assignment (&lt;code&gt;=&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Exponentiation (&lt;code&gt;^&lt;/code&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Non-associative: operations cannot be chained&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;parser-combinators&#34;&gt;Parser Combinators&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Parser combinators are a technique for implementing parsers by defining them in terms of other parsers&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Notes on 
+  <span class="c1">-- constructs the simplest monad m using a</span>
+  <span class="n">return</span> <span class="ow">::</span>   <span class="n">a</span>               <span class="ow">→</span> <span class="n">m</span> <span class="n">a</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Monad facts (all of these equations should be satisfied)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="nf">return</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span>                  <span class="ow">=</span>  <span class="n">k</span> <span class="n">a</span>
+<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="n">return</span>             <span class="ow">=</span>  <span class="n">m</span>
+<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">→</span> <span class="n">k</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span><span class="p">)</span>  <span class="ow">=</span>  <span class="p">(</span><span class="n">m</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span><span class="p">)</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="left-and-right-associativity">Left and Right Associativity</h2>
+<p>Associativity of an operator determines how operators are grouped in the absence of parentheses.</p>
+<p>For the following examples, we consider a fictional operator <code>~</code></p>
+<ol>
+<li>Associative: operations can be grouped arbitrarily (e.g. addition, order doesn&rsquo;t matter)</li>
+<li>Left-associative: operations are grouped left to right
+<ol>
+<li><code>a ~ b ~ c</code> is interpreted as <code>(a ~ b) ~ c</code></li>
+<li>Examples include
+<ol>
+<li>Function application operator</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Right-associative: operations are grouped right to left
+<ol>
+<li><code>a ~ b ~ c</code> is interpreted as <code>a ~ (b ~ c)</code></li>
+<li>Examples include
+<ol>
+<li>Variable assignment (<code>=</code>)</li>
+<li>Exponentiation (<code>^</code>)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Non-associative: operations cannot be chained</li>
+</ol>
+<h2 id="parser-combinators">Parser Combinators</h2>
+<blockquote>
+<p>Parser combinators are a technique for implementing parsers by defining them in terms of other parsers</p>
+</blockquote>
+<p>Notes on 
 
-&lt;a href=&#34;https://github.com/zesterer/chumsky&#34; rel=&#34;noopener&#34;&gt;Chumsky&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Where &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; are both parsers.&lt;/p&gt;
-&lt;p&gt;Parser Methods&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;just(a)&lt;/code&gt; accepts a single string &lt;code&gt;a&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.or(b)&lt;/code&gt; parse &lt;code&gt;a&lt;/code&gt;, if &lt;code&gt;a&lt;/code&gt; fails, try parsing &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.choice(b,c,d...)&lt;/code&gt; try parsing &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;c&lt;/code&gt;, &lt;code&gt;d&lt;/code&gt;, return first one that succeeds&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.or_not()&lt;/code&gt; optionally parse &lt;code&gt;a&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.ignore_then(b)&lt;/code&gt; ignore pattern &lt;code&gt;a&lt;/code&gt; then parse &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.then_ignore(b)&lt;/code&gt; parse &lt;code&gt;a&lt;/code&gt; then ignore &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.then(b)&lt;/code&gt; parse both &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; and return a tuple of &lt;code&gt;(a,b)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.padded()&lt;/code&gt; ignore whitespace around &lt;code&gt;a&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.repeated().at_least(n)&lt;/code&gt; parse &lt;code&gt;a&lt;/code&gt; at least &lt;code&gt;n&lt;/code&gt; times&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.filter(fn)&lt;/code&gt; only accept &lt;code&gt;a&lt;/code&gt; if &lt;code&gt;fn(a)&lt;/code&gt; evaluates to true&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Result Methods&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;a.collect()&lt;/code&gt; turn results of &lt;code&gt;a&lt;/code&gt; into an iterator&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.map(b)&lt;/code&gt; map results of &lt;code&gt;a&lt;/code&gt; into type &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.chain(b)&lt;/code&gt; concatenate results of parsers &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; into collection&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.copy(b)&lt;/code&gt; duplicate parser definition&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.flatten()&lt;/code&gt; flatten nested collection&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.to(b)&lt;/code&gt; marks result of &lt;code&gt;a&lt;/code&gt; as type &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.labelled(b)&lt;/code&gt; label result of a with &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;a.end()&lt;/code&gt; indicate end of parser&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;haskell-syntax-things&#34;&gt;Haskell Syntax Things&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;a $ b&lt;/code&gt; generally useful for removing parenthesis in function calls (adds implicit parentheses and makes it right associative instead of left associative)
-&lt;ol&gt;
-&lt;li&gt;Normally, &lt;code&gt;sort &amp;quot;abc&amp;quot; &#43;&#43; &amp;quot;def&amp;quot;&lt;/code&gt; would be interpreted as &lt;code&gt;(sort &amp;quot;abc&amp;quot;) &#43;&#43; &amp;quot;def&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;If we use the &lt;code&gt;$&lt;/code&gt; operator, we can do &lt;code&gt;sort $ &amp;quot;abc&amp;quot; &#43;&#43; &amp;quot;def&amp;quot;&lt;/code&gt; which is interpreted as &lt;code&gt;sort (&amp;quot;abc&amp;quot; &#43;&#43; &amp;quot;def&amp;quot;)&lt;/code&gt; as intended.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+<a href="https://github.com/zesterer/chumsky" rel="noopener">Chumsky</a></p>
+<p>Where <code>a</code> and <code>b</code> are both parsers.</p>
+<p>Parser Methods</p>
+<ol>
+<li><code>just(a)</code> accepts a single string <code>a</code></li>
+<li><code>a.or(b)</code> parse <code>a</code>, if <code>a</code> fails, try parsing <code>b</code></li>
+<li><code>a.choice(b,c,d...)</code> try parsing <code>b</code>, <code>c</code>, <code>d</code>, return first one that succeeds</li>
+<li><code>a.or_not()</code> optionally parse <code>a</code></li>
+<li><code>a.ignore_then(b)</code> ignore pattern <code>a</code> then parse <code>b</code></li>
+<li><code>a.then_ignore(b)</code> parse <code>a</code> then ignore <code>b</code></li>
+<li><code>a.then(b)</code> parse both <code>a</code> and <code>b</code> and return a tuple of <code>(a,b)</code></li>
+<li><code>a.padded()</code> ignore whitespace around <code>a</code></li>
+<li><code>a.repeated().at_least(n)</code> parse <code>a</code> at least <code>n</code> times</li>
+<li><code>a.filter(fn)</code> only accept <code>a</code> if <code>fn(a)</code> evaluates to true</li>
+</ol>
+<p>Result Methods</p>
+<ol>
+<li><code>a.collect()</code> turn results of <code>a</code> into an iterator</li>
+<li><code>a.map(b)</code> map results of <code>a</code> into type <code>b</code></li>
+<li><code>a.chain(b)</code> concatenate results of parsers <code>a</code> and <code>b</code> into collection</li>
+<li><code>a.copy(b)</code> duplicate parser definition</li>
+<li><code>a.flatten()</code> flatten nested collection</li>
+<li><code>a.to(b)</code> marks result of <code>a</code> as type <code>b</code></li>
+<li><code>a.labelled(b)</code> label result of a with <code>b</code></li>
+<li><code>a.end()</code> indicate end of parser</li>
+</ol>
+<h2 id="haskell-syntax-things">Haskell Syntax Things</h2>
+<ol>
+<li><code>a $ b</code> generally useful for removing parenthesis in function calls (adds implicit parentheses and makes it right associative instead of left associative)
+<ol>
+<li>Normally, <code>sort &quot;abc&quot; ++ &quot;def&quot;</code> would be interpreted as <code>(sort &quot;abc&quot;) ++ &quot;def&quot;</code></li>
+<li>If we use the <code>$</code> operator, we can do <code>sort $ &quot;abc&quot; ++ &quot;def&quot;</code> which is interpreted as <code>sort (&quot;abc&quot; ++ &quot;def&quot;)</code> as intended.</li>
+</ol>
+</li>
+</ol>
 
 
     </article>

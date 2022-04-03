@@ -460,111 +460,111 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;bit-torrent&#34;&gt;Bit-torrent&lt;/h2&gt;
-&lt;p&gt;Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.&lt;/p&gt;
-&lt;p&gt;Could be very slow: limited by the throughput possible by those N machines. Peer to peer could speed this up!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;N hosts are called &amp;lsquo;seeds&amp;rsquo;&lt;/li&gt;
-&lt;li&gt;Hosts are called peers&lt;/li&gt;
-&lt;li&gt;As soon as one of the M peers has a portion of the file it can share it with other peers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The file is broken into many pieces&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Generally fixed size except for the last one&lt;/li&gt;
-&lt;li&gt;Protected by a cryptographic hash (allows reliable detection of corruption)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A summary (torrent file) gives the necessary start up information&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How many pieces there are&lt;/li&gt;
-&lt;li&gt;The hash of each piece&lt;/li&gt;
-&lt;li&gt;Somewhere to start looking for peers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Basic operation&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Finding other peers
-&lt;ul&gt;
-&lt;li&gt;Seeds or trackers to start with&lt;/li&gt;
-&lt;li&gt;Peer exchange: each peer &amp;lsquo;gossips&amp;rsquo; about the peers they know about&lt;/li&gt;
-&lt;li&gt;Group of peers for one file is a &amp;ldquo;swarm&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Each peer talks to some subset of the &amp;ldquo;swarm&amp;rdquo; at any time&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Finding pieces
-&lt;ul&gt;
-&lt;li&gt;Each peer shares the identity of the pieces they own with its peers&lt;/li&gt;
-&lt;li&gt;A peer asks a peer who has the file to share it&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Generally&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A peer asks for the &amp;lsquo;rarest&amp;rsquo; piece which increases the overall &amp;lsquo;health&amp;rsquo; of the file&lt;/li&gt;
-&lt;li&gt;Prioritize ones that are sending the most data to it (preferred peers) &amp;ndash; tit-for-tat
-&lt;ul&gt;
-&lt;li&gt;Discourages &amp;lsquo;selfish&amp;rsquo; behaviour where peers accept pieces but don&amp;rsquo;t share many pieces&lt;/li&gt;
-&lt;li&gt;Opportunistic unchoking
-&lt;ul&gt;
-&lt;li&gt;Randomly choose a peer sometimes (prevents problems at the start where there aren&amp;rsquo;t many peers)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Unpopular/rare files can be hard to find seeds for&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It is an open 
+      <h2 id="bit-torrent">Bit-torrent</h2>
+<p>Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</p>
+<p>Could be very slow: limited by the throughput possible by those N machines. Peer to peer could speed this up!</p>
+<ul>
+<li>N hosts are called &lsquo;seeds&rsquo;</li>
+<li>Hosts are called peers</li>
+<li>As soon as one of the M peers has a portion of the file it can share it with other peers</li>
+</ul>
+<p>The file is broken into many pieces</p>
+<ul>
+<li>Generally fixed size except for the last one</li>
+<li>Protected by a cryptographic hash (allows reliable detection of corruption)</li>
+</ul>
+<p>A summary (torrent file) gives the necessary start up information</p>
+<ul>
+<li>How many pieces there are</li>
+<li>The hash of each piece</li>
+<li>Somewhere to start looking for peers</li>
+</ul>
+<p>Basic operation</p>
+<ul>
+<li>Finding other peers
+<ul>
+<li>Seeds or trackers to start with</li>
+<li>Peer exchange: each peer &lsquo;gossips&rsquo; about the peers they know about</li>
+<li>Group of peers for one file is a &ldquo;swarm&rdquo;</li>
+<li>Each peer talks to some subset of the &ldquo;swarm&rdquo; at any time</li>
+</ul>
+</li>
+<li>Finding pieces
+<ul>
+<li>Each peer shares the identity of the pieces they own with its peers</li>
+<li>A peer asks a peer who has the file to share it</li>
+</ul>
+</li>
+</ul>
+<p>Generally</p>
+<ul>
+<li>A peer asks for the &lsquo;rarest&rsquo; piece which increases the overall &lsquo;health&rsquo; of the file</li>
+<li>Prioritize ones that are sending the most data to it (preferred peers) &ndash; tit-for-tat
+<ul>
+<li>Discourages &lsquo;selfish&rsquo; behaviour where peers accept pieces but don&rsquo;t share many pieces</li>
+<li>Opportunistic unchoking
+<ul>
+<li>Randomly choose a peer sometimes (prevents problems at the start where there aren&rsquo;t many peers)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unpopular/rare files can be hard to find seeds for</li>
+</ul>
+<p>It is an open 
 
 
-&lt;a href=&#34;/thoughts/Protocol&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Protocol&#34;&gt;protocol&lt;/a&gt;, most implementations use 
+<a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">protocol</a>, most implementations use 
 
 
-&lt;a href=&#34;/thoughts/TCP&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/TCP&#34;&gt;TCP&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;blockchainthoughtsblockchainmd&#34;&gt;
+<a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a></p>
+<h2 id="blockchainthoughtsblockchainmd">
 
 
-&lt;a href=&#34;/thoughts/blockchain&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/blockchain&#34;&gt;Blockchain&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Purpose: distributed, unmodifiable transaction history&lt;/li&gt;
-&lt;li&gt;Uses cryptography to ensure that records added to the history can never be changed or removed&lt;/li&gt;
-&lt;li&gt;Can be implemented in a centralized manner (bank ledgers)
-&lt;ul&gt;
-&lt;li&gt;Primary value of the 
+<a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">Blockchain</a></h2>
+<ul>
+<li>Purpose: distributed, unmodifiable transaction history</li>
+<li>Uses cryptography to ensure that records added to the history can never be changed or removed</li>
+<li>Can be implemented in a centralized manner (bank ledgers)
+<ul>
+<li>Primary value of the 
 
 
-&lt;a href=&#34;/thoughts/decentralization&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/decentralization&#34;&gt;decentralized&lt;/a&gt; approach is that it doesn&amp;rsquo;t require a 
+<a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralized</a> approach is that it doesn&rsquo;t require a 
 
 
-&lt;a href=&#34;/thoughts/trust&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/trust&#34;&gt;trusted&lt;/a&gt; agent&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;No central repository of the 
+<a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trusted</a> agent</li>
+</ul>
+</li>
+<li>No central repository of the 
 
 
-&lt;a href=&#34;/thoughts/truth&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/truth&#34;&gt;truth&lt;/a&gt;, each peer holds the entire history
-&lt;ul&gt;
-&lt;li&gt;Incredibly hard to forget history as it is heavily replicated&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Dealing with forks
-&lt;ul&gt;
-&lt;li&gt;Can be some disagreement over whether new blocks are included into the chain&lt;/li&gt;
-&lt;li&gt;Likelihood of a block being removed from the history gets progressively (exponentially) smaller as it gets older&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
+<a href="/thoughts/truth" rel="noopener" class="internal-link" data-src="/thoughts/truth">truth</a>, each peer holds the entire history
+<ul>
+<li>Incredibly hard to forget history as it is heavily replicated</li>
+</ul>
+</li>
+<li>Dealing with forks
+<ul>
+<li>Can be some disagreement over whether new blocks are included into the chain</li>
+<li>Likelihood of a block being removed from the history gets progressively (exponentially) smaller as it gets older</li>
+</ul>
+</li>
+<li>
 
 
-&lt;a href=&#34;/thoughts/bitcoin&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/bitcoin&#34;&gt;Bitcoin&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;Anyone can join, initial peers found via DNS&lt;/li&gt;
-&lt;li&gt;Uses 
+<a href="/thoughts/bitcoin" rel="noopener" class="internal-link" data-src="/thoughts/bitcoin">Bitcoin</a>
+<ul>
+<li>Anyone can join, initial peers found via DNS</li>
+<li>Uses 
 
 
-&lt;a href=&#34;/thoughts/TCP&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/TCP&#34;&gt;TCP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Gossip-based&lt;/li&gt;
-&lt;li&gt;Chain is ~200GB&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+<a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a></li>
+<li>Gossip-based</li>
+<li>Chain is ~200GB</li>
+</ul>
+</li>
+</ul>
 
 
     </article>

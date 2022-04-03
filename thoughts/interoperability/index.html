@@ -471,86 +471,86 @@ if (!doNotTrack) {
       
       
       
-      &lt;blockquote&gt;
-&lt;p&gt;Portability implies switching platforms, but true interoperability is platform-agnostic.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I think interopability in the context of the web means being able to transparently understand and share data, agnostic of platform. Closed platforms disallow this as they curate the information they present to end-users/devs rather than letting users control their own data.&lt;/p&gt;
-&lt;p&gt;A good standard is if I can hit &amp;lsquo;export all data&amp;rsquo; on a platform and I can completely and freely use that elsewhere &amp;ndash; no vendor lock-in. I think this is esp hard for 
+      <blockquote>
+<p>Portability implies switching platforms, but true interoperability is platform-agnostic.</p>
+</blockquote>
+<p>I think interopability in the context of the web means being able to transparently understand and share data, agnostic of platform. Closed platforms disallow this as they curate the information they present to end-users/devs rather than letting users control their own data.</p>
+<p>A good standard is if I can hit &lsquo;export all data&rsquo; on a platform and I can completely and freely use that elsewhere &ndash; no vendor lock-in. I think this is esp hard for 
 
 
-&lt;a href=&#34;/thoughts/social-graphs&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/social-graphs&#34;&gt;social graphs&lt;/a&gt;, there is no common/accepted standard for identity let alone connectedness between individuals&lt;/p&gt;
-&lt;p&gt;Related: 
+<a href="/thoughts/social-graphs" rel="noopener" class="internal-link" data-src="/thoughts/social-graphs">social graphs</a>, there is no common/accepted standard for identity let alone connectedness between individuals</p>
+<p>Related: 
 
 
-&lt;a href=&#34;/thoughts/tools-for-thought&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/tools-for-thought&#34;&gt;tools for thought&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;noun-based-interoperability&#34;&gt;Noun-based Interoperability&lt;/h2&gt;
-&lt;p&gt;Source: 
+<a href="/thoughts/tools-for-thought" rel="noopener" class="internal-link" data-src="/thoughts/tools-for-thought">tools for thought</a></p>
+<h2 id="noun-based-interoperability">Noun-based Interoperability</h2>
+<p>Source: 
 
-&lt;a href=&#34;https://riffle.systems/essays/prelude/&#34; rel=&#34;noopener&#34;&gt;Riffle: Building data-centric apps with a reactive relational database&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Since the introduction of object-oriented programming, most interoperability has been “verb-based”: that is, based on having programs call into each other using APIs. Indeed, new programmers are often taught to hide data behind APIs as much as possible in order to encapsulate state. Unfortunately, 
+<a href="https://riffle.systems/essays/prelude/" rel="noopener">Riffle: Building data-centric apps with a reactive relational database</a></p>
+<blockquote>
+<p>Since the introduction of object-oriented programming, most interoperability has been “verb-based”: that is, based on having programs call into each other using APIs. Indeed, new programmers are often taught to hide data behind APIs as much as possible in order to encapsulate state. Unfortunately, 
 
-&lt;a href=&#34;https://twitter.com/andy_matuschak/status/1452438198668328960&#34; rel=&#34;noopener&#34;&gt;verb-based APIs create an unfortunate n-to-n problem&lt;/a&gt;: every app needs to know how to call the APIs of every other app. In contrast, data-based interoperability can use the shared data directly: once an app knows how to read a data format, it can read that data regardless of which app produced it.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;How do we create sources of truth that are &lt;em&gt;legible outside of the application&lt;/em&gt;, possibly in ways that the application developer never anticipated?&lt;/p&gt;
-&lt;p&gt;(see: data lensing in 
-
-
-&lt;a href=&#34;/thoughts/idea-list&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/idea-list&#34;&gt;idea list&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&#34;beyond-windows&#34;&gt;Beyond Windows&lt;/h2&gt;
-&lt;p&gt;
-
-&lt;a href=&#34;https://alexanderobenauer.com/labnotes/002/&#34; rel=&#34;noopener&#34;&gt;Source: Universal data portability by &lt;em&gt;Alexander Obenauer&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A modern day 
-
-&lt;a href=&#34;https://en.wikipedia.org/wiki/HyperCard&#34; rel=&#34;noopener&#34;&gt;HyperCard&lt;/a&gt;. What other types of 
+<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">verb-based APIs create an unfortunate n-to-n problem</a>: every app needs to know how to call the APIs of every other app. In contrast, data-based interoperability can use the shared data directly: once an app knows how to read a data format, it can read that data regardless of which app produced it.</p>
+</blockquote>
+<p>How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated?</p>
+<p>(see: data lensing in 
 
 
-&lt;a href=&#34;/thoughts/interaction-design&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/interaction-design&#34;&gt;interaction design&lt;/a&gt; can we facilitate?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A window runs a self-contained program, isolated from other programs that […] run at the same time in other windows. (Wikipedia)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Windows and applications silo data. The only way to &amp;lsquo;share&amp;rsquo; data between them is through the file system. What if applications exposed data by default?&lt;/p&gt;
-&lt;p&gt;An application then is a specific &lt;em&gt;view&lt;/em&gt; on types of data rather than a standalone thing. Data can be dragged through different applications. Each data is annotated with a type. There is also a most common interface for data that allows basic-level interop with any application. We can then create an open marketplace for views on data.&lt;/p&gt;
-&lt;p&gt;Apps in this operating system then declare &amp;lsquo;default&amp;rsquo; apps for certain data types.&lt;/p&gt;
-&lt;p&gt;Ability to not only source local data but remote data too → fetching from URLs, feeds, etc.&lt;/p&gt;
-&lt;p&gt;UNIX-level composability &amp;ndash; apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??).&lt;/p&gt;
-&lt;p&gt;Auto-grouping of similar data? Set-theory for data?&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;
+<a href="/thoughts/idea-list" rel="noopener" class="internal-link" data-src="/thoughts/idea-list">idea list</a>)</p>
+<h2 id="beyond-windows">Beyond Windows</h2>
+<p>
 
-&lt;a href=&#34;https://www.dougengelbart.org/content/view/226/269/&#34; rel=&#34;noopener&#34;&gt;Engelbart-inspired bootstrapping&lt;/a&gt;. A system with which you can, as a user, co-evolve both the tool and your methodologies simultaneously to build up better whole systems (those systems which include the human and the tool).&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;semantic-datamarkers&#34;&gt;Semantic Data/Markers&lt;/h3&gt;
-&lt;p&gt;Auto-run scripts/data transformations to data.&lt;/p&gt;
-&lt;p&gt;Markers like &amp;lsquo;today&amp;rsquo; that point to a new date every day. Auto generate a day-summary for the next day. etc.&lt;/p&gt;
-&lt;h3 id=&#34;chronological-data-querying&#34;&gt;Chronological Data Querying&lt;/h3&gt;
-&lt;p&gt;What data was created a few days ago? etc.&lt;/p&gt;
-&lt;h2 id=&#34;adverserial-interoperability&#34;&gt;Adverserial Interoperability&lt;/h2&gt;
-&lt;p&gt;
+<a href="https://alexanderobenauer.com/labnotes/002/" rel="noopener">Source: Universal data portability by <em>Alexander Obenauer</em></a></p>
+<p>A modern day 
 
-&lt;a href=&#34;https://www.eff.org/deeplinks/2019/10/adversarial-interoperability&#34; rel=&#34;noopener&#34;&gt;Source: Adversarial Interoperability by &lt;em&gt;Cory Doctorow&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;When you create a new product or service that plugs into the existing ones &lt;em&gt;without the permission&lt;/em&gt; of the companies that make them. Think of third-party printer ink, alternative app stores, or independent repair shops that use compatible parts from rival manufacturers to fix your car or your phone or your tractor.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;data-lenses&#34;&gt;Data Lenses&lt;/h2&gt;
-&lt;p&gt;Source: 
+<a href="https://en.wikipedia.org/wiki/HyperCard" rel="noopener">HyperCard</a>. What other types of 
 
-&lt;a href=&#34;https://www.inkandswitch.com/cambria/&#34; rel=&#34;noopener&#34;&gt;Ink and Switch on Cambria&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;An organization must balance their desire to change their API against their customers&#39; reluctance to change something that works for them. The result is strong pressure to preserve backward compatibility over time, often across many versions.&lt;/p&gt;
-&lt;p&gt;Developers rely on tribal knowledge to inform them which operations are safe—for example, they intuit that they can respond with additional data, trusting existing clients to ignore it, but not require additional data in requests, because existing clients won’t know to send it. Developers also often resort to shotgun parsing: scattering data checks and fallback values in various places throughout the system’s main logic. This can often lead not just to bugs, but also security vulnerabilities.&lt;/p&gt;
-&lt;p&gt;However, in practice, most interoperability requires a tradeoff between&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Consistency: both sides see a meaningfully equivalent view of the world&lt;/li&gt;
-&lt;li&gt;Conservation: neither side operates on data they can’t observe&lt;/li&gt;
-&lt;li&gt;Predictability: the local intent of every operation is preserved&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;cambria&#34;&gt;Cambria&lt;/h3&gt;
-&lt;p&gt;Over time, a project using Cambria will accumulate many lenses, each describing the relationship between two versions. Migrations between distant versions are created by composing lenses into a graph where each node is a schema, and each edge is a lens. To translate data between two schemas, Cambria sends it through the shortest available path in the lens graph. These lenses must be kept in a place where even old versions of the program can retrieve them, such as in a database, at a well-known URL, or else as part of the document itself.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://www.inkandswitch.com/cambria/static/lens-graph.svg&#34; alt=&#34;&#34;  /&gt;
-Caveats:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Imagine a lens that combines a firstName and lastName fields into a single fullName. This lens works reliably in one direction. All names already stored in the system could be combined into a single field, but there are many names which could not be reliably converted back to “first” and “last” names. The result is a so-called lens that can only run reliably in one direction.&lt;/li&gt;
-&lt;/ul&gt;
+
+<a href="/thoughts/interaction-design" rel="noopener" class="internal-link" data-src="/thoughts/interaction-design">interaction design</a> can we facilitate?</p>
+<blockquote>
+<p>A window runs a self-contained program, isolated from other programs that […] run at the same time in other windows. (Wikipedia)</p>
+</blockquote>
+<p>Windows and applications silo data. The only way to &lsquo;share&rsquo; data between them is through the file system. What if applications exposed data by default?</p>
+<p>An application then is a specific <em>view</em> on types of data rather than a standalone thing. Data can be dragged through different applications. Each data is annotated with a type. There is also a most common interface for data that allows basic-level interop with any application. We can then create an open marketplace for views on data.</p>
+<p>Apps in this operating system then declare &lsquo;default&rsquo; apps for certain data types.</p>
+<p>Ability to not only source local data but remote data too → fetching from URLs, feeds, etc.</p>
+<p>UNIX-level composability &ndash; apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??).</p>
+<p>Auto-grouping of similar data? Set-theory for data?</p>
+<p>&ldquo;
+
+<a href="https://www.dougengelbart.org/content/view/226/269/" rel="noopener">Engelbart-inspired bootstrapping</a>. A system with which you can, as a user, co-evolve both the tool and your methodologies simultaneously to build up better whole systems (those systems which include the human and the tool).&rdquo;</p>
+<h3 id="semantic-datamarkers">Semantic Data/Markers</h3>
+<p>Auto-run scripts/data transformations to data.</p>
+<p>Markers like &lsquo;today&rsquo; that point to a new date every day. Auto generate a day-summary for the next day. etc.</p>
+<h3 id="chronological-data-querying">Chronological Data Querying</h3>
+<p>What data was created a few days ago? etc.</p>
+<h2 id="adverserial-interoperability">Adverserial Interoperability</h2>
+<p>
+
+<a href="https://www.eff.org/deeplinks/2019/10/adversarial-interoperability" rel="noopener">Source: Adversarial Interoperability by <em>Cory Doctorow</em></a></p>
+<blockquote>
+<p>When you create a new product or service that plugs into the existing ones <em>without the permission</em> of the companies that make them. Think of third-party printer ink, alternative app stores, or independent repair shops that use compatible parts from rival manufacturers to fix your car or your phone or your tractor.</p>
+</blockquote>
+<h2 id="data-lenses">Data Lenses</h2>
+<p>Source: 
+
+<a href="https://www.inkandswitch.com/cambria/" rel="noopener">Ink and Switch on Cambria</a></p>
+<p>An organization must balance their desire to change their API against their customers' reluctance to change something that works for them. The result is strong pressure to preserve backward compatibility over time, often across many versions.</p>
+<p>Developers rely on tribal knowledge to inform them which operations are safe—for example, they intuit that they can respond with additional data, trusting existing clients to ignore it, but not require additional data in requests, because existing clients won’t know to send it. Developers also often resort to shotgun parsing: scattering data checks and fallback values in various places throughout the system’s main logic. This can often lead not just to bugs, but also security vulnerabilities.</p>
+<p>However, in practice, most interoperability requires a tradeoff between</p>
+<ul>
+<li>Consistency: both sides see a meaningfully equivalent view of the world</li>
+<li>Conservation: neither side operates on data they can’t observe</li>
+<li>Predictability: the local intent of every operation is preserved</li>
+</ul>
+<h3 id="cambria">Cambria</h3>
+<p>Over time, a project using Cambria will accumulate many lenses, each describing the relationship between two versions. Migrations between distant versions are created by composing lenses into a graph where each node is a schema, and each edge is a lens. To translate data between two schemas, Cambria sends it through the shortest available path in the lens graph. These lenses must be kept in a place where even old versions of the program can retrieve them, such as in a database, at a well-known URL, or else as part of the document itself.</p>
+<p>
+<img src="https://www.inkandswitch.com/cambria/static/lens-graph.svg" alt=""  />
+Caveats:</p>
+<ul>
+<li>Imagine a lens that combines a firstName and lastName fields into a single fullName. This lens works reliably in one direction. All names already stored in the system could be combined into a single field, but there are many names which could not be reliably converted back to “first” and “last” names. The result is a so-called lens that can only run reliably in one direction.</li>
+</ul>
 
 
     </article>

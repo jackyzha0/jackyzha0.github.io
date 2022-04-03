@@ -451,69 +451,69 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;Defines:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Roles of communicating entities&lt;/li&gt;
-&lt;li&gt;Format of messages&lt;/li&gt;
-&lt;li&gt;Order of messages&lt;/li&gt;
-&lt;li&gt;Actions taken on the transmission, receipt of a message, or other event&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;protocols-as-state-machines&#34;&gt;Protocols as State Machines&lt;/h2&gt;
-&lt;p&gt;A fully-defined protocol must provide a proper action for any event in any state. Most protocols can be modelled in terms of state machines.&lt;/p&gt;
-&lt;p&gt;Each interaction can have its own state machine.&lt;/p&gt;
-&lt;h2 id=&#34;open-vs-closed-protocols&#34;&gt;Open vs Closed Protocols&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Open Protocols
-&lt;ul&gt;
-&lt;li&gt;Examples: HTTP, SMTP, SSH&lt;/li&gt;
-&lt;li&gt;Usually defined in RFC documents&lt;/li&gt;
-&lt;li&gt;Different implementations&lt;/li&gt;
-&lt;li&gt;Allows a community, generally good!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Proprietary Protocols
-&lt;ul&gt;
-&lt;li&gt;Examples: Skype, iCloud, Zoom&lt;/li&gt;
-&lt;li&gt;Only one implementation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;building-a-reliable-protocol&#34;&gt;Building a Reliable Protocol&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Generally includes a few states
-&lt;ul&gt;
-&lt;li&gt;Idle - waiting for something to be initiated&lt;/li&gt;
-&lt;li&gt;Waiting - waiting for a response&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Edges are actions (e.g. receives a response of a certain type) or timeouts&lt;/li&gt;
-&lt;li&gt;Edge cases
-&lt;ul&gt;
-&lt;li&gt;Timeout too soon! (may result in getting two ACKs)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Timeout formulas
-&lt;ul&gt;
-&lt;li&gt;Assuming measured round trip time (RTT) of $t$&lt;/li&gt;
-&lt;li&gt;Estimated RTT
-&lt;ul&gt;
-&lt;li&gt;$ERTT_i = (1-\alpha) ERTT_{i-1} &#43; \alpha t$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Deviation of RTT (captures jitter):
-&lt;ul&gt;
-&lt;li&gt;$\Delta RTT_i = (1 - \beta)\Delta RTT_{i-1} &#43; \beta |t - ERTT_{i-1}|$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Timeout:
-&lt;ul&gt;
-&lt;li&gt;$ERTT_i &#43; 4 \Delta RTT_{i}$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Suggested: $\alpha = 0.125$, $\beta = 0.25$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+      <p>Defines:</p>
+<ul>
+<li>Roles of communicating entities</li>
+<li>Format of messages</li>
+<li>Order of messages</li>
+<li>Actions taken on the transmission, receipt of a message, or other event</li>
+</ul>
+<h2 id="protocols-as-state-machines">Protocols as State Machines</h2>
+<p>A fully-defined protocol must provide a proper action for any event in any state. Most protocols can be modelled in terms of state machines.</p>
+<p>Each interaction can have its own state machine.</p>
+<h2 id="open-vs-closed-protocols">Open vs Closed Protocols</h2>
+<ul>
+<li>Open Protocols
+<ul>
+<li>Examples: HTTP, SMTP, SSH</li>
+<li>Usually defined in RFC documents</li>
+<li>Different implementations</li>
+<li>Allows a community, generally good!</li>
+</ul>
+</li>
+<li>Proprietary Protocols
+<ul>
+<li>Examples: Skype, iCloud, Zoom</li>
+<li>Only one implementation</li>
+</ul>
+</li>
+</ul>
+<h2 id="building-a-reliable-protocol">Building a Reliable Protocol</h2>
+<ul>
+<li>Generally includes a few states
+<ul>
+<li>Idle - waiting for something to be initiated</li>
+<li>Waiting - waiting for a response</li>
+</ul>
+</li>
+<li>Edges are actions (e.g. receives a response of a certain type) or timeouts</li>
+<li>Edge cases
+<ul>
+<li>Timeout too soon! (may result in getting two ACKs)</li>
+</ul>
+</li>
+<li>Timeout formulas
+<ul>
+<li>Assuming measured round trip time (RTT) of $t$</li>
+<li>Estimated RTT
+<ul>
+<li>$ERTT_i = (1-\alpha) ERTT_{i-1} + \alpha t$</li>
+</ul>
+</li>
+<li>Deviation of RTT (captures jitter):
+<ul>
+<li>$\Delta RTT_i = (1 - \beta)\Delta RTT_{i-1} + \beta |t - ERTT_{i-1}|$</li>
+</ul>
+</li>
+<li>Timeout:
+<ul>
+<li>$ERTT_i + 4 \Delta RTT_{i}$</li>
+</ul>
+</li>
+<li>Suggested: $\alpha = 0.125$, $\beta = 0.25$</li>
+</ul>
+</li>
+</ul>
 
 
     </article>

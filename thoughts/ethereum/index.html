@@ -450,50 +450,50 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;
+      <p>
 
 
-&lt;a href=&#34;/thoughts/blockchain&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/blockchain&#34;&gt;Blockchain&lt;/a&gt; with a built-in Turing-complete programming language to allow individuals to write smart contracts and decentralized applications (dApps) which dictate their own rules around ownership, trasnaction formats, and state transition functions.&lt;/p&gt;
-&lt;p&gt;Ether (ETH) is the actual currency. All transactions (sending ETH, using a dApp, executing a smart contract) cost a gas fee to disincentivize bad actors from spamming.&lt;/p&gt;
-&lt;p&gt;Currently uses 
+<a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">Blockchain</a> with a built-in Turing-complete programming language to allow individuals to write smart contracts and decentralized applications (dApps) which dictate their own rules around ownership, trasnaction formats, and state transition functions.</p>
+<p>Ether (ETH) is the actual currency. All transactions (sending ETH, using a dApp, executing a smart contract) cost a gas fee to disincentivize bad actors from spamming.</p>
+<p>Currently uses 
 
 
-&lt;a href=&#34;/thoughts/proof-of-work&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/proof-of-work&#34;&gt;proof of work&lt;/a&gt; but soon to switch to 
+<a href="/thoughts/proof-of-work" rel="noopener" class="internal-link" data-src="/thoughts/proof-of-work">proof of work</a> but soon to switch to 
 
 
-&lt;a href=&#34;/thoughts/proof-of-stake&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/proof-of-stake&#34;&gt;proof of stake&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;understanding&#34;&gt;Understanding&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Has a built-in Turing-complete scripting language built on top of the Ethereum VM that perform transactions and send them to the 
+<a href="/thoughts/proof-of-stake" rel="noopener" class="internal-link" data-src="/thoughts/proof-of-stake">proof of stake</a>.</p>
+<h2 id="understanding">Understanding</h2>
+<ul>
+<li>Has a built-in Turing-complete scripting language built on top of the Ethereum VM that perform transactions and send them to the 
 
 
-&lt;a href=&#34;/thoughts/blockchain&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/blockchain&#34;&gt;blockchain&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;VM details
-&lt;ul&gt;
-&lt;li&gt;Stack: up to 1024 32-byte fields&lt;/li&gt;
-&lt;li&gt;Memory: infinite in size but more size means more gas&lt;/li&gt;
-&lt;li&gt;Storage: permanent for contracts (verifiable using a Merkle trie)&lt;/li&gt;
-&lt;li&gt;Environment variables: VM can access block number, time, mining difficulty, previous block hash etc.&lt;/li&gt;
-&lt;li&gt;Logs: append-only storage in a specific block (not state)&lt;/li&gt;
-&lt;li&gt;Sub-calling: VM can call other contracts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;To prevent halting problem from taking up all computational resources, we implement a &amp;ldquo;gas fee&amp;rdquo; to charge every computational step&lt;/li&gt;
-&lt;li&gt;The more bytes the &lt;code&gt;data&lt;/code&gt; field in each transaction is, the more expensive it becomes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;State is the database (key value mapping addresses to account objects)&lt;/li&gt;
-&lt;li&gt;Contracts are programs that run on top of the database&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This feels like time-share all the way back in the day but decentralized and now on the global scale. Crazy&lt;/p&gt;
-&lt;h2 id=&#34;dapps&#34;&gt;dApps&lt;/h2&gt;
-&lt;p&gt;Combine smart contracts (the backend) with a frontend user interface. Typically,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;open-source&lt;/li&gt;
-&lt;li&gt;public data &#43; records&lt;/li&gt;
-&lt;li&gt;uses a cryptographic token to keep the network secure&lt;/li&gt;
-&lt;/ul&gt;
+<a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a>
+<ul>
+<li>VM details
+<ul>
+<li>Stack: up to 1024 32-byte fields</li>
+<li>Memory: infinite in size but more size means more gas</li>
+<li>Storage: permanent for contracts (verifiable using a Merkle trie)</li>
+<li>Environment variables: VM can access block number, time, mining difficulty, previous block hash etc.</li>
+<li>Logs: append-only storage in a specific block (not state)</li>
+<li>Sub-calling: VM can call other contracts</li>
+</ul>
+</li>
+<li>To prevent halting problem from taking up all computational resources, we implement a &ldquo;gas fee&rdquo; to charge every computational step</li>
+<li>The more bytes the <code>data</code> field in each transaction is, the more expensive it becomes</li>
+</ul>
+</li>
+<li>State is the database (key value mapping addresses to account objects)</li>
+<li>Contracts are programs that run on top of the database</li>
+</ul>
+<p>This feels like time-share all the way back in the day but decentralized and now on the global scale. Crazy</p>
+<h2 id="dapps">dApps</h2>
+<p>Combine smart contracts (the backend) with a frontend user interface. Typically,</p>
+<ul>
+<li>open-source</li>
+<li>public data + records</li>
+<li>uses a cryptographic token to keep the network secure</li>
+</ul>
 
 
     </article>

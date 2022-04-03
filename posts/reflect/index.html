@@ -505,566 +505,566 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;
-&lt;img src=&#34;https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png&#34; alt=&#34;An image of the reflect block page&#34;  /&gt;&lt;em&gt;How do we tell that this is a “valid” intent?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.&lt;/p&gt;
-&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
-&lt;p&gt;Classifying intents is at the core of reflect. When a user inputs an intent, its reflect’s job to figure out whether that intent should let them into the website.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;How do we make sure “do some marketing work for reflect” is classified as productive but “watch cute dog videos” isn’t?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;why-its-so-difficult&#34;&gt;Why it’s so difficult&lt;/h2&gt;
-&lt;p&gt;A lot of it comes down to the fact that natural language processing (NLP) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?&lt;/p&gt;
-&lt;p&gt;We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.&lt;/p&gt;
-&lt;p&gt;Specifically, the form of machine learning we will be using is called &lt;strong&gt;supervised learning,&lt;/strong&gt; in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.&lt;/p&gt;
-&lt;h2 id=&#34;the-data&#34;&gt;The data&lt;/h2&gt;
-&lt;p&gt;Of course, if we want to perform supervised learning, we’re going to need a lot of data. Where are we going to get all of it? Luckily, we were able to get it through 3 different sources.&lt;/p&gt;
-&lt;h3 id=&#34;survey-data-444-entries&#34;&gt;Survey data (444 entries)&lt;/h3&gt;
-&lt;p&gt;Our team sent out an interest survey in early January in which we asked 3 questions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;How would you answer if you were trying to visit a distracting site while trying to focus? (eg. youtube, facebook, etc)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;We used these answers to form the basis of our very first dataset. We ended up getting a surprising amount of entries, ending with 148 responses to 3 questions and totalling 444 different observations. Here’s what some of that data looks like after tidying it up:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We classified any answer to Q1 as invalid and Q2 &#43; Q3 as valid&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;intent&lt;/th&gt;
-&lt;th&gt;valid&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;I am watching a 5 minute video to take my mind off not being productive :/&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;I&amp;rsquo;m just bored&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;I’m bored/tired and trying to relax&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;work is pretty boring, i need to take a quick break I just can&amp;rsquo;t focus atm&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;I finished all my work for today so I&amp;rsquo;m going to take a break now!&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;getting some advertising done for my club&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;I need to make a post on Twitter for my job announcing the latest update to our site&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;I&amp;rsquo;m trying to network&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;closed-beta-790-entries&#34;&gt;Closed Beta (790 entries)&lt;/h3&gt;
-&lt;p&gt;After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a .csv file. A few examples are show below:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;intent&lt;/th&gt;
-&lt;th&gt;url&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;to do some marketing&lt;/td&gt;
-&lt;td&gt;facebook.com/&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i cannot focus on my work&lt;/td&gt;
-&lt;td&gt;instagram.com/&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fuel my crippling social media addiction&lt;/td&gt;
-&lt;td&gt;facebook.com/&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;These were then hand-labelled by our reflect team in a similar format as the survey data we collected earlier.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;intent&lt;/th&gt;
-&lt;th&gt;valid&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;to do some marketing&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;i cannot focus on my work&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;fuel my crippling social media addiction&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;closed-beta-corrections-37-entries&#34;&gt;Closed Beta Corrections (37 entries)&lt;/h3&gt;
-&lt;p&gt;Finally, we created a Google Forms through which we directly asked beta testers if a decision made by reflect’s intent classifier was faulty. Specifically, we asked what they input, and what they expected. Here are a few examples:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;input&lt;/th&gt;
-&lt;th&gt;valid&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;reply to a friend about a lab&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;listening to a youtube music playlist&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;goof off as much as possible&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;This entire section of the dataset was only 37 observations, but it drastically helped us reduce false positives and false negatives by focusing specifically on misclassifications.&lt;/p&gt;
-&lt;p&gt;After aggregating and combing all our data into one common format, we ended up with a grand total of 1271 observations. They looked something like this:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;input&lt;/th&gt;
-&lt;th&gt;expected&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;fail school by watching youtube&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;sdlkjasd&lt;/td&gt;
-&lt;td&gt;no&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;making a quick product post (should take &amp;lt;10 min)&lt;/td&gt;
-&lt;td&gt;yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;td&gt;&amp;hellip;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;so&#34;&gt;So?&lt;/h3&gt;
-&lt;p&gt;Now that we have the data, can we just throw it into a machine learning model? Unfortunately, the answer is no, not quite yet.&lt;/p&gt;
-&lt;h2 id=&#34;data-augmentation&#34;&gt;Data augmentation&lt;/h2&gt;
-&lt;p&gt;Our dataset is still pretty small, even after aggregating all of our data. It most definitely doesn’t cover all of our bases for all the possible things that future users could possibly input. So, how can we “upsample” our data to get more of it? Well, it turns out that the field of Natural Language Processing has quite a few tricks to augment our data.&lt;/p&gt;
-&lt;h3 id=&#34;sentence-variation&#34;&gt;Sentence Variation&lt;/h3&gt;
-&lt;p&gt;Essentially what sentence variation is, is just replacing a few words of given sentences with their synonyms. If we have a sentence like “I’m trying to make a marketing post,” we can swap out singular words with their synonyms and tell our network that it means the same thing.&lt;/p&gt;
-&lt;p&gt;In this example, we could get something like “I’m attempting to fabricate a marketing post”. Adding these additional sentence variations will allow our machine learning model to learn semantic relationships between similar words (e.g. fabricate and make have similar meaning)&lt;/p&gt;
-&lt;h3 id=&#34;sentence-negation&#34;&gt;Sentence Negation&lt;/h3&gt;
-&lt;p&gt;Additionally, if we add a ‘not’ in the sentence, it should flip the meaning of the sentence. An example would be “learning about physics” is valid, whereas “not learning about physics” is not. However, if the sentence already contains ‘not’ (e.g. “I’m not being productive”), adding another ‘not’ would make the sentence too complex and obfuscated, so we just label it as invalid. In essence, we just add ‘not’ to a bunch of sentences and label them as invalid. This helps us to combat intents which use negations in a sort of round-a-bout way to confuse the algorithm.&lt;/p&gt;
-&lt;h3 id=&#34;shuffled-sentences&#34;&gt;Shuffled Sentences&lt;/h3&gt;
-&lt;p&gt;If we take an existing, valid sentence and completely shuffle the words, the resulting sentence should be invalid. An example would be “to watch a crash course video*” should be valid whereas “video course a watch crash to*” should be invalid. Basically, we’re just shuffling existing sentences and also labelling them as invalid. This helps us to combat intents which grammatically make no sense, but are otherwise valid.&lt;/p&gt;
-&lt;h3 id=&#34;garbage-sentences&#34;&gt;Garbage Sentences&lt;/h3&gt;
-&lt;p&gt;We can also take completely random words from the English language and put them together. The resulting sentences should all be invalid. For example, “*untinkered phalangitis shaly quinovic dish spadiciflorous unshaved” *clearly makes no sense. However, the addition of these gibberish sentences allows our model to be more robust against foreign words and out-of-vocabulary terms.&lt;/p&gt;
-&lt;h3 id=&#34;vocabulary-mix-sentences&#34;&gt;Vocabulary-mix Sentences&lt;/h3&gt;
-&lt;p&gt;Last but definitely not least, we can take the most common words in our dataset and mash them together. This should yield us a bunch of sentences which contain “key words” but should be marked as invalid because the context in which they are used makes no sense. For example, “video look watching” and “get research facebook take need want need message watch” are both clearly gibberish sentences, but they have a lot of keywords that one would think would let you in (e.g. video, research, watching, etc.). This lets us be more robust against those who try to get around the algorithm using keywords.&lt;/p&gt;
-&lt;h2 id=&#34;data-preprocessing&#34;&gt;Data preprocessing&lt;/h2&gt;
-&lt;p&gt;What about now? Can we throw it into the neural network yet? Well, no. We may have increased the amount of data we have to work with, but we also need to convert it to a form that is easy to understand for both the computer and for our algorithm. We do that with a series of functions that we apply on our data.&lt;/p&gt;
-&lt;h3 id=&#34;strip-punctuation&#34;&gt;Strip punctuation&lt;/h3&gt;
-&lt;p&gt;As the name suggests, we remove all punctuation from the input phrase. We found that including the punctuation hurt our performance, most likely due to the fact that they offer very little in terms of semantic meaning and obfuscate the real meaning of the sentence.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;stripPunctuation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;I don&amp;#39;t know if I&amp;#39;m being productive! :(&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;I dont know if Im being productive&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;make-everything-lowercase&#34;&gt;Make everything lowercase&lt;/h3&gt;
-&lt;p&gt;Additionally, we found that in this particular setting, capital letters also didn’t matter that much. Because of the nature we collect our data (just a simple textbox), users tend to not bother with capitalization. As such, we remove it to make it consistent across our data.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;lower&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;I dont know if Im being productive&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;i dont know if im being productive&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;expand-contractions&#34;&gt;Expand contractions&lt;/h3&gt;
-&lt;p&gt;The English language does this weird thing where we can just smush two words together (e.g. “I am” to “I’m”). Unfortunately for us, these produce extra complexity in our model that we could reduce by making them all consistent. In our case, we chose to expand all of these contractions.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;expandContractions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;i dont know if im being productive&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;i do not know if i am being productive&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;remove-stop-words&#34;&gt;Remove stop words&lt;/h3&gt;
-&lt;p&gt;The English language also has a bunch of these things called &lt;strong&gt;stop words&lt;/strong&gt; — words that do not contribute anything major to the sentence in terms of semantic understanding (usually in the context of natural language tasks such as this). A few examples of them are ‘I’, ‘me’, ‘my’, ‘by’, and ‘on’. By removing them, we once again remove unneeded complexity from the model.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;rmStopwords&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;i do not know if i am being productive&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;not know productive&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;tokenization&#34;&gt;Tokenization&lt;/h3&gt;
-&lt;p&gt;However, these words are not super friendly for machine learning algorithms who would much rather deal with integers and floating point numbers than words and sentences. How do we fix this?&lt;/p&gt;
-&lt;p&gt;Well, one thing we can do is turn words in indices by how often they appear, capped at the most common 1000 words — in essence, creating a vocabulary list mapping common words to numbers. For example, if “the” is the most common word, we convert it to 1. If “work” is the 8th most common word, we convert it to 8. For anything that isn’t in the top 1000, we give it the value of 0.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;tokenize&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;not know productive&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;fixed-sequence-length&#34;&gt;Fixed sequence length&lt;/h3&gt;
-&lt;p&gt;Finally, we need to ensure that all the inputs are the same length of simplicity sake. If we were to handle dynamic length inputs, it would introduce a whole other level of complexity that we’re really not ready to deal with. As such, we can make sure all the inputs are the same length by adding a bunch of zeros to those who are too short (zero padding) or by slicing those who are too long.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;pad&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;finally&#34;&gt;Finally&lt;/h3&gt;
-&lt;p&gt;After all of these functions have been applied, we have successfully converted a complex sentence into a series of ‘tokens’ that is easy to understand for the machine learning algorithm.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;preprocess&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;I don’t know if I’m being productive! :(&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;35&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;whats-next&#34;&gt;What’s next?&lt;/h2&gt;
-&lt;p&gt;Now that we have something ready to feed into our neural network, let’s dive into how the actual model itself works! How do we tell that this is a “valid” intent?&lt;/p&gt;
-&lt;h2 id=&#34;the-model&#34;&gt;The model&lt;/h2&gt;
-&lt;p&gt;The type of neural network that we’ll be using is called Long Short-Term Memory (LSTM).&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC&#34; alt=&#34;credit: Christopher Olah, 2015&#34;  /&gt;&lt;em&gt;credit: Christopher Olah, 2015&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;What’s so special about these networks is that they are really good at modelling time-series data, making it an ideal candidate for tasks like forecasting or natural language processing.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Function to create a RNN model with given parameters&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# max_seq_len: maximum token sequence length&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# vocab_size:  size of tokenizer vocabulary&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;RNN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max_seq_len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vocab_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;inputs&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max_seq_len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Embedding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vocab_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;input_length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max_seq_len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LSTM&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;return_sequences&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dropout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LSTM&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dense&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;FC1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dropout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dense&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;out_layer&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Activation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sigmoid&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Model&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;outputs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Here’s how we define it in our 
+      <p>
+<img src="https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png" alt="An image of the reflect block page"  /><em>How do we tell that this is a “valid” intent?</em></p>
+<p>A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.</p>
+<h2 id="the-problem">The problem</h2>
+<p>Classifying intents is at the core of reflect. When a user inputs an intent, its reflect’s job to figure out whether that intent should let them into the website.</p>
+<blockquote>
+<p>How do we make sure “do some marketing work for reflect” is classified as productive but “watch cute dog videos” isn’t?</p>
+</blockquote>
+<h2 id="why-its-so-difficult">Why it’s so difficult</h2>
+<p>A lot of it comes down to the fact that natural language processing (NLP) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?</p>
+<p>We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.</p>
+<p>Specifically, the form of machine learning we will be using is called <strong>supervised learning,</strong> in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.</p>
+<h2 id="the-data">The data</h2>
+<p>Of course, if we want to perform supervised learning, we’re going to need a lot of data. Where are we going to get all of it? Luckily, we were able to get it through 3 different sources.</p>
+<h3 id="survey-data-444-entries">Survey data (444 entries)</h3>
+<p>Our team sent out an interest survey in early January in which we asked 3 questions:</p>
+<ol>
+<li>
+<p>How would you answer if you were trying to visit a distracting site while trying to focus? (eg. youtube, facebook, etc)</p>
+</li>
+<li>
+<p>How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)</p>
+</li>
+<li>
+<p>How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)</p>
+</li>
+</ol>
+<p>We used these answers to form the basis of our very first dataset. We ended up getting a surprising amount of entries, ending with 148 responses to 3 questions and totalling 444 different observations. Here’s what some of that data looks like after tidying it up:</p>
+<blockquote>
+<p>We classified any answer to Q1 as invalid and Q2 + Q3 as valid</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>intent</th>
+<th>valid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I am watching a 5 minute video to take my mind off not being productive :/</td>
+<td>no</td>
+</tr>
+<tr>
+<td>I&rsquo;m just bored</td>
+<td>no</td>
+</tr>
+<tr>
+<td>I’m bored/tired and trying to relax</td>
+<td>no</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td>work is pretty boring, i need to take a quick break I just can&rsquo;t focus atm</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>I finished all my work for today so I&rsquo;m going to take a break now!</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>getting some advertising done for my club</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>I need to make a post on Twitter for my job announcing the latest update to our site</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>I&rsquo;m trying to network</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="closed-beta-790-entries">Closed Beta (790 entries)</h3>
+<p>After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a .csv file. A few examples are show below:</p>
+<table>
+<thead>
+<tr>
+<th>intent</th>
+<th>url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to do some marketing</td>
+<td>facebook.com/</td>
+</tr>
+<tr>
+<td>i cannot focus on my work</td>
+<td>instagram.com/</td>
+</tr>
+<tr>
+<td>fuel my crippling social media addiction</td>
+<td>facebook.com/</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>These were then hand-labelled by our reflect team in a similar format as the survey data we collected earlier.</p>
+<table>
+<thead>
+<tr>
+<th>intent</th>
+<th>valid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>to do some marketing</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>i cannot focus on my work</td>
+<td>no</td>
+</tr>
+<tr>
+<td>fuel my crippling social media addiction</td>
+<td>no</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="closed-beta-corrections-37-entries">Closed Beta Corrections (37 entries)</h3>
+<p>Finally, we created a Google Forms through which we directly asked beta testers if a decision made by reflect’s intent classifier was faulty. Specifically, we asked what they input, and what they expected. Here are a few examples:</p>
+<table>
+<thead>
+<tr>
+<th>input</th>
+<th>valid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reply to a friend about a lab</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>listening to a youtube music playlist</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>goof off as much as possible</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>This entire section of the dataset was only 37 observations, but it drastically helped us reduce false positives and false negatives by focusing specifically on misclassifications.</p>
+<p>After aggregating and combing all our data into one common format, we ended up with a grand total of 1271 observations. They looked something like this:</p>
+<table>
+<thead>
+<tr>
+<th>input</th>
+<th>expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fail school by watching youtube</td>
+<td>no</td>
+</tr>
+<tr>
+<td>sdlkjasd</td>
+<td>no</td>
+</tr>
+<tr>
+<td>making a quick product post (should take &lt;10 min)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="so">So?</h3>
+<p>Now that we have the data, can we just throw it into a machine learning model? Unfortunately, the answer is no, not quite yet.</p>
+<h2 id="data-augmentation">Data augmentation</h2>
+<p>Our dataset is still pretty small, even after aggregating all of our data. It most definitely doesn’t cover all of our bases for all the possible things that future users could possibly input. So, how can we “upsample” our data to get more of it? Well, it turns out that the field of Natural Language Processing has quite a few tricks to augment our data.</p>
+<h3 id="sentence-variation">Sentence Variation</h3>
+<p>Essentially what sentence variation is, is just replacing a few words of given sentences with their synonyms. If we have a sentence like “I’m trying to make a marketing post,” we can swap out singular words with their synonyms and tell our network that it means the same thing.</p>
+<p>In this example, we could get something like “I’m attempting to fabricate a marketing post”. Adding these additional sentence variations will allow our machine learning model to learn semantic relationships between similar words (e.g. fabricate and make have similar meaning)</p>
+<h3 id="sentence-negation">Sentence Negation</h3>
+<p>Additionally, if we add a ‘not’ in the sentence, it should flip the meaning of the sentence. An example would be “learning about physics” is valid, whereas “not learning about physics” is not. However, if the sentence already contains ‘not’ (e.g. “I’m not being productive”), adding another ‘not’ would make the sentence too complex and obfuscated, so we just label it as invalid. In essence, we just add ‘not’ to a bunch of sentences and label them as invalid. This helps us to combat intents which use negations in a sort of round-a-bout way to confuse the algorithm.</p>
+<h3 id="shuffled-sentences">Shuffled Sentences</h3>
+<p>If we take an existing, valid sentence and completely shuffle the words, the resulting sentence should be invalid. An example would be “to watch a crash course video*” should be valid whereas “video course a watch crash to*” should be invalid. Basically, we’re just shuffling existing sentences and also labelling them as invalid. This helps us to combat intents which grammatically make no sense, but are otherwise valid.</p>
+<h3 id="garbage-sentences">Garbage Sentences</h3>
+<p>We can also take completely random words from the English language and put them together. The resulting sentences should all be invalid. For example, “*untinkered phalangitis shaly quinovic dish spadiciflorous unshaved” *clearly makes no sense. However, the addition of these gibberish sentences allows our model to be more robust against foreign words and out-of-vocabulary terms.</p>
+<h3 id="vocabulary-mix-sentences">Vocabulary-mix Sentences</h3>
+<p>Last but definitely not least, we can take the most common words in our dataset and mash them together. This should yield us a bunch of sentences which contain “key words” but should be marked as invalid because the context in which they are used makes no sense. For example, “video look watching” and “get research facebook take need want need message watch” are both clearly gibberish sentences, but they have a lot of keywords that one would think would let you in (e.g. video, research, watching, etc.). This lets us be more robust against those who try to get around the algorithm using keywords.</p>
+<h2 id="data-preprocessing">Data preprocessing</h2>
+<p>What about now? Can we throw it into the neural network yet? Well, no. We may have increased the amount of data we have to work with, but we also need to convert it to a form that is easy to understand for both the computer and for our algorithm. We do that with a series of functions that we apply on our data.</p>
+<h3 id="strip-punctuation">Strip punctuation</h3>
+<p>As the name suggests, we remove all punctuation from the input phrase. We found that including the punctuation hurt our performance, most likely due to the fact that they offer very little in terms of semantic meaning and obfuscate the real meaning of the sentence.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">stripPunctuation</span><span class="p">(</span><span class="s2">&#34;I don&#39;t know if I&#39;m being productive! :(&#34;</span><span class="p">)</span> 
+<span class="o">&gt;</span> <span class="s2">&#34;I dont know if Im being productive&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="make-everything-lowercase">Make everything lowercase</h3>
+<p>Additionally, we found that in this particular setting, capital letters also didn’t matter that much. Because of the nature we collect our data (just a simple textbox), users tend to not bother with capitalization. As such, we remove it to make it consistent across our data.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">lower</span><span class="p">(</span><span class="s2">&#34;I dont know if Im being productive&#34;</span><span class="p">)</span>
+<span class="o">&gt;</span> <span class="s2">&#34;i dont know if im being productive&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="expand-contractions">Expand contractions</h3>
+<p>The English language does this weird thing where we can just smush two words together (e.g. “I am” to “I’m”). Unfortunately for us, these produce extra complexity in our model that we could reduce by making them all consistent. In our case, we chose to expand all of these contractions.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">expandContractions</span><span class="p">(</span><span class="s2">&#34;i dont know if im being productive&#34;</span><span class="p">)</span> 
+<span class="o">&gt;</span> <span class="s2">&#34;i do not know if i am being productive&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="remove-stop-words">Remove stop words</h3>
+<p>The English language also has a bunch of these things called <strong>stop words</strong> — words that do not contribute anything major to the sentence in terms of semantic understanding (usually in the context of natural language tasks such as this). A few examples of them are ‘I’, ‘me’, ‘my’, ‘by’, and ‘on’. By removing them, we once again remove unneeded complexity from the model.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">rmStopwords</span><span class="p">(</span><span class="s2">&#34;i do not know if i am being productive&#34;</span><span class="p">)</span> 
+<span class="o">&gt;</span> <span class="s2">&#34;not know productive&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="tokenization">Tokenization</h3>
+<p>However, these words are not super friendly for machine learning algorithms who would much rather deal with integers and floating point numbers than words and sentences. How do we fix this?</p>
+<p>Well, one thing we can do is turn words in indices by how often they appear, capped at the most common 1000 words — in essence, creating a vocabulary list mapping common words to numbers. For example, if “the” is the most common word, we convert it to 1. If “work” is the 8th most common word, we convert it to 8. For anything that isn’t in the top 1000, we give it the value of 0.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">tokenize</span><span class="p">(</span><span class="s2">&#34;not know productive&#34;</span><span class="p">)</span> 
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="fixed-sequence-length">Fixed sequence length</h3>
+<p>Finally, we need to ensure that all the inputs are the same length of simplicity sake. If we were to handle dynamic length inputs, it would introduce a whole other level of complexity that we’re really not ready to deal with. As such, we can make sure all the inputs are the same length by adding a bunch of zeros to those who are too short (zero padding) or by slicing those who are too long.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pad</span><span class="p">([</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span> 
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="finally">Finally</h3>
+<p>After all of these functions have been applied, we have successfully converted a complex sentence into a series of ‘tokens’ that is easy to understand for the machine learning algorithm.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">preprocess</span><span class="p">(</span><span class="s2">&#34;I don’t know if I’m being productive! :(&#34;</span><span class="p">)</span>
+<span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="whats-next">What’s next?</h2>
+<p>Now that we have something ready to feed into our neural network, let’s dive into how the actual model itself works! How do we tell that this is a “valid” intent?</p>
+<h2 id="the-model">The model</h2>
+<p>The type of neural network that we’ll be using is called Long Short-Term Memory (LSTM).</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC" alt="credit: Christopher Olah, 2015"  /><em>credit: Christopher Olah, 2015</em></p>
+<p>What’s so special about these networks is that they are really good at modelling time-series data, making it an ideal candidate for tasks like forecasting or natural language processing.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Function to create a RNN model with given parameters</span>
+<span class="c1"># max_seq_len: maximum token sequence length</span>
+<span class="c1"># vocab_size:  size of tokenizer vocabulary</span>
+<span class="k">def</span> <span class="nf">RNN</span><span class="p">(</span><span class="n">max_seq_len</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">):</span>
+    <span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">layer</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Here’s how we define it in our 
 
-&lt;a href=&#34;https://github.com/jackyzha0/reflect-nlp/blob/master/nlp/net.py&#34; rel=&#34;noopener&#34;&gt;Keras code&lt;/a&gt;, don’t worry if you don’t understand it just yet! We’ll explain it in the next few paragraphs.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;inputs&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;shape&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max_seq_len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is max_seq_len units long. When we trained our model, this was set to 75.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Embedding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vocab_size&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;input_length&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;max_seq_len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;inputs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Next up, we have the Embedding layer. We could get into a really technical discussion about what this really does, but you can think of it as a layer that helps the neural network to learn semantic relationships between inputs.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD&#34; alt=&#34;credit: Rutger Ruizendaal, 2017&#34;  /&gt;&lt;em&gt;credit: Rutger Ruizendaal, 2017&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Essentially, it embeds tokens in a higher dimension vector space, where distance between tokens represents its similarity.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LSTM&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;return_sequences&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Now, we get into the meat of the neural network: the LSTM layer. As stated before, these LSTM networks are really good at modelling time series data like language. In this case, our LSTM network has 64 hidden units per cell, and that we’d like to pass these hidden states to the next layer. If you’d like to learn more about the inner workings of the LSTM model, theres a really good resource 
+<a href="https://github.com/jackyzha0/reflect-nlp/blob/master/nlp/net.py" rel="noopener">Keras code</a>, don’t worry if you don’t understand it just yet! We’ll explain it in the next few paragraphs.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is max_seq_len units long. When we trained our model, this was set to 75.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Next up, we have the Embedding layer. We could get into a really technical discussion about what this really does, but you can think of it as a layer that helps the neural network to learn semantic relationships between inputs.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD" alt="credit: Rutger Ruizendaal, 2017"  /><em>credit: Rutger Ruizendaal, 2017</em></p>
+<p>Essentially, it embeds tokens in a higher dimension vector space, where distance between tokens represents its similarity.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Now, we get into the meat of the neural network: the LSTM layer. As stated before, these LSTM networks are really good at modelling time series data like language. In this case, our LSTM network has 64 hidden units per cell, and that we’d like to pass these hidden states to the next layer. If you’d like to learn more about the inner workings of the LSTM model, theres a really good resource 
 
-&lt;a href=&#34;https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;!&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dropout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Next, you’ll notice there are a few Dropout layers. These layers help to prevent overfitting by randomly killing off connections between the two layers (a sort of regularization). This makes sure neurons aren’t just “memorizing” the input data. This is especially important because our dataset is relatively small (~2000 observations even after augmentation), so making sure that our machine learning model can generalize outside of this limited dataset is really important.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LSTM&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;64&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;We have yet another LSTM layer! By having these two chained right after each other, the first layer can pass all the values of all of its hidden states to the second layer, effectively allowing a sort of ‘deeper’ neural network.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9&#34; alt=&#34;credit: Jianjing Zhang 2018&#34;  /&gt;&lt;em&gt;credit: Jianjing Zhang 2018&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This deep LSTM allows our network to learn more abstract concepts, making them well suited for natural language tasks.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dense&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;FC1&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Next, we have something called a Fully Connected layer, or a Dense layer. In a dense layer, each of the input neurons is connected to every output neuron. This kind of ‘glue’ layer helps the network to pick out and discriminate feature output by our previous LSTM layer.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Dense&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;out_layer&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Activation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sigmoid&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;layer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Similarly, we have one final Dense layer that ‘compresses’ all of the hidden units down to one neuron. However, we want the output value of this neuron to be how confident from a scale of 0 to 1 it is that the intent is valid. We do this by applying something called an activation function.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/2000/0*kdowh3GOGOUvGBr0&#34; alt=&#34;A sigmoid activation function&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;In this case, the particular function we chose is the sigmoid activation function, which looks something like the above.&lt;/p&gt;
-&lt;h3 id=&#34;model-overview&#34;&gt;Model Overview&lt;/h3&gt;
-&lt;p&gt;Phew, finally got through everything! After putting it all together, we end up with a network that looks something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 75 max_seq_len&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# 1000 tokenizer_vocab_size&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;model&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;net&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RNN&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;75&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-&lt;span class=&#34;n&#34;&gt;model&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+<a href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21" rel="noopener">here</a>!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Next, you’ll notice there are a few Dropout layers. These layers help to prevent overfitting by randomly killing off connections between the two layers (a sort of regularization). This makes sure neurons aren’t just “memorizing” the input data. This is especially important because our dataset is relatively small (~2000 observations even after augmentation), so making sure that our machine learning model can generalize outside of this limited dataset is really important.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>We have yet another LSTM layer! By having these two chained right after each other, the first layer can pass all the values of all of its hidden states to the second layer, effectively allowing a sort of ‘deeper’ neural network.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*0BRdnA5sJBYbaeR9" alt="credit: Jianjing Zhang 2018"  /><em>credit: Jianjing Zhang 2018</em></p>
+<p>This deep LSTM allows our network to learn more abstract concepts, making them well suited for natural language tasks.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Next, we have something called a Fully Connected layer, or a Dense layer. In a dense layer, each of the input neurons is connected to every output neuron. This kind of ‘glue’ layer helps the network to pick out and discriminate feature output by our previous LSTM layer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+<span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Similarly, we have one final Dense layer that ‘compresses’ all of the hidden units down to one neuron. However, we want the output value of this neuron to be how confident from a scale of 0 to 1 it is that the intent is valid. We do this by applying something called an activation function.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*kdowh3GOGOUvGBr0" alt="A sigmoid activation function"  /></p>
+<p>In this case, the particular function we chose is the sigmoid activation function, which looks something like the above.</p>
+<h3 id="model-overview">Model Overview</h3>
+<p>Phew, finally got through everything! After putting it all together, we end up with a network that looks something like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 75 max_seq_len</span>
+<span class="c1"># 1000 tokenizer_vocab_size</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">RNN</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> 
+<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Layer (type)                 Output Shape              Param #   &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# =================================================================&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# inputs (InputLayer)          (None, 75)                0         &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# embedding_1 (Embedding)      (None, 75, 64)            64000     &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# lstm_1 (LSTM)                (None, 75, 64)            33024     &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# dropout_1 (Dropout)          (None, 75, 64)            0         &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# lstm_2 (LSTM)                (None, 64)                33024     &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# FC1 (Dense)                  (None, 256)               16640     &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# dropout_2 (Dropout)          (None, 256)               0         &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# out_layer (Dense)            (None, 1)                 257       &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# activation_1 (Activation)    (None, 1)                 0         &lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# =================================================================&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Total params: 146,945&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Trainable params: 146,945&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# Non-trainable params: 0&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;# _________________________________________________________________&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Theres a grand total of 150,000 different trainable knobs and parameters in our neural network!&lt;/p&gt;
-&lt;h2 id=&#34;training-pipeline&#34;&gt;Training pipeline&lt;/h2&gt;
-&lt;p&gt;So, how does the data we got earlier play a role in helping our machine learning model learn and improve?&lt;/p&gt;
-&lt;p&gt;The first component is the &lt;strong&gt;loss function.&lt;/strong&gt; This component tells the neural network how ‘correct’ its prediction was. In this model, we will use something called 
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># Layer (type)                 Output Shape              Param #   </span>
+<span class="c1"># =================================================================</span>
+<span class="c1"># inputs (InputLayer)          (None, 75)                0         </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># embedding_1 (Embedding)      (None, 75, 64)            64000     </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># lstm_1 (LSTM)                (None, 75, 64)            33024     </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># dropout_1 (Dropout)          (None, 75, 64)            0         </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># lstm_2 (LSTM)                (None, 64)                33024     </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># FC1 (Dense)                  (None, 256)               16640     </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># dropout_2 (Dropout)          (None, 256)               0         </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># out_layer (Dense)            (None, 1)                 257       </span>
+<span class="c1"># _________________________________________________________________</span>
+<span class="c1"># activation_1 (Activation)    (None, 1)                 0         </span>
+<span class="c1"># =================================================================</span>
+<span class="c1"># Total params: 146,945</span>
+<span class="c1"># Trainable params: 146,945</span>
+<span class="c1"># Non-trainable params: 0</span>
+<span class="c1"># _________________________________________________________________</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Theres a grand total of 150,000 different trainable knobs and parameters in our neural network!</p>
+<h2 id="training-pipeline">Training pipeline</h2>
+<p>So, how does the data we got earlier play a role in helping our machine learning model learn and improve?</p>
+<p>The first component is the <strong>loss function.</strong> This component tells the neural network how ‘correct’ its prediction was. In this model, we will use something called 
 
-&lt;a href=&#34;https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a&#34; rel=&#34;noopener&#34;&gt;binary cross entropy&lt;/a&gt;, which is basically a fancy word for log-based error. If the true label is 1, we can then show what the log-loss would be for some given prediction probability.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/2000/0*8rd4ho_3Y6zrtra-.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;Next, we need to pick an &lt;strong&gt;optimizer&lt;/strong&gt;. This component tells the neural network how to change its parameters to improve or ‘optimize’ itself. In this model, we chose to use an optimizer called 
+<a href="https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a" rel="noopener">binary cross entropy</a>, which is basically a fancy word for log-based error. If the true label is 1, we can then show what the log-loss would be for some given prediction probability.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*8rd4ho_3Y6zrtra-.png" alt=""  /></p>
+<p>Next, we need to pick an <strong>optimizer</strong>. This component tells the neural network how to change its parameters to improve or ‘optimize’ itself. In this model, we chose to use an optimizer called 
 
-&lt;a href=&#34;https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a&#34; rel=&#34;noopener&#34;&gt;RMSProp&lt;/a&gt; with a learning rate of 1e-3 . We aren’t going to cover all the technical details of this optimizer in this blog post, but just know that it is a very fast and effective optimizer.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif&#34; alt=&#34;RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev&#34;  /&gt;&lt;em&gt;RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;One important hyperparameter we choose is the &lt;strong&gt;train-test split.&lt;/strong&gt; In data science and machine learning, we typically withhold part of our data and set it aside as a &lt;strong&gt;test set&lt;/strong&gt;. The rest of the data will be considered the &lt;strong&gt;training set.&lt;/strong&gt; When training the model, we never feed it the test set. As a result, we can use the test set as a metric to see how well it would perform on real-world, unseen data. In our training, we used a train-test split of 20%.&lt;/p&gt;
-&lt;p&gt;Another important hyperparameter that we can choose is the &lt;strong&gt;mini-batch size&lt;/strong&gt;. The mini-batch size determines how many training examples we feed the machine learning model before updating its parameters. A smaller mini-batch means that we get more frequent updates to the parameters, but it also runs the risk of having outliers that may cause a bad gradient update. A large mini-batch means that we get a more accurate gradient update but it also takes longer. A similar concept is &lt;em&gt;sample size&lt;/em&gt; in statistics. We could pick a larger sample to get a better estimate of the overall population, but it is often more expensive to do so. A smaller sample might contain outliers and thus be less robust of an estimate of the overall population, but it very easy to do. So, there’s this tradeoff between accuracy and speed. We found that a good balance between these was a mini-batch size of 128.&lt;/p&gt;
-&lt;p&gt;We then trained our neural network over 10 epochs. A single epoch is one iteration over the entire dataset. If we train it for too many epochs, you run the risk of overfitting (memorizing the training data), but we don’t train it enough, we run the risk of not discovering a better model. One thing we can do it minimize this problem is through the use of cross-validation, which is a technique that lets us ‘test’ on portions of the training set. Essentially, at each iteration during training, we withhold a portion of the training set and use it as a sort of ‘validation’.&lt;/p&gt;
-&lt;p&gt;
-&lt;img src=&#34;https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png&#34; alt=&#34;credit: Raheel Shaikh&#34;  /&gt;&lt;em&gt;credit: Raheel Shaikh&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;By seeing when this validation accuracy goes down, we can get a pretty good idea of when our model begins to overfit on our data, and stop the training before this happens. In training our model, we will use 5-fold 
+<a href="https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a" rel="noopener">RMSProp</a> with a learning rate of 1e-3 . We aren’t going to cover all the technical details of this optimizer in this blog post, but just know that it is a very fast and effective optimizer.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*HZM5XJ-quu276w39.gif" alt="RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev"  /><em>RMSProp(black) vs a bunch of other optimizers. credit: Vitaly Bushaev</em></p>
+<p>One important hyperparameter we choose is the <strong>train-test split.</strong> In data science and machine learning, we typically withhold part of our data and set it aside as a <strong>test set</strong>. The rest of the data will be considered the <strong>training set.</strong> When training the model, we never feed it the test set. As a result, we can use the test set as a metric to see how well it would perform on real-world, unseen data. In our training, we used a train-test split of 20%.</p>
+<p>Another important hyperparameter that we can choose is the <strong>mini-batch size</strong>. The mini-batch size determines how many training examples we feed the machine learning model before updating its parameters. A smaller mini-batch means that we get more frequent updates to the parameters, but it also runs the risk of having outliers that may cause a bad gradient update. A large mini-batch means that we get a more accurate gradient update but it also takes longer. A similar concept is <em>sample size</em> in statistics. We could pick a larger sample to get a better estimate of the overall population, but it is often more expensive to do so. A smaller sample might contain outliers and thus be less robust of an estimate of the overall population, but it very easy to do. So, there’s this tradeoff between accuracy and speed. We found that a good balance between these was a mini-batch size of 128.</p>
+<p>We then trained our neural network over 10 epochs. A single epoch is one iteration over the entire dataset. If we train it for too many epochs, you run the risk of overfitting (memorizing the training data), but we don’t train it enough, we run the risk of not discovering a better model. One thing we can do it minimize this problem is through the use of cross-validation, which is a technique that lets us ‘test’ on portions of the training set. Essentially, at each iteration during training, we withhold a portion of the training set and use it as a sort of ‘validation’.</p>
+<p>
+<img src="https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png" alt="credit: Raheel Shaikh"  /><em>credit: Raheel Shaikh</em></p>
+<p>By seeing when this validation accuracy goes down, we can get a pretty good idea of when our model begins to overfit on our data, and stop the training before this happens. In training our model, we will use 5-fold 
 
-&lt;a href=&#34;https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85&#34; rel=&#34;noopener&#34;&gt;cross-validation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;After all of this, we end with a training accuracy of 93.60% and test accuracy of 85.95%. Not bad at all!&lt;/p&gt;
-&lt;h2 id=&#34;serving-the-model&#34;&gt;Serving the model&lt;/h2&gt;
-&lt;p&gt;Great! So now we have a trained model. Can we put that in the Chrome extension now? Not quite yet…&lt;/p&gt;
-&lt;p&gt;Our model was written and trained with Keras (a Python Deep Learning library). Our Chrome extension is written in TypeScript. How do we get these two to work together?&lt;/p&gt;
-&lt;p&gt;Luckily for us, Tensorflow.js exists! This library allows us to run Tensorflow models from within JavaScript. Tensorflow has released a script that lets us to convert a Keras model into something that Tensorflow.js understands, so we can run that to convert our models.&lt;/p&gt;
-&lt;p&gt;However, we can’t just directly plug-and-play. You may remember that we did all of that data preprocessing before we trained our model. Tensorflow.js doesn’t have any of this built in, so we made our own implementation of it. You can check it out 
+<a href="https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85" rel="noopener">cross-validation</a>.</p>
+<p>After all of this, we end with a training accuracy of 93.60% and test accuracy of 85.95%. Not bad at all!</p>
+<h2 id="serving-the-model">Serving the model</h2>
+<p>Great! So now we have a trained model. Can we put that in the Chrome extension now? Not quite yet…</p>
+<p>Our model was written and trained with Keras (a Python Deep Learning library). Our Chrome extension is written in TypeScript. How do we get these two to work together?</p>
+<p>Luckily for us, Tensorflow.js exists! This library allows us to run Tensorflow models from within JavaScript. Tensorflow has released a script that lets us to convert a Keras model into something that Tensorflow.js understands, so we can run that to convert our models.</p>
+<p>However, we can’t just directly plug-and-play. You may remember that we did all of that data preprocessing before we trained our model. Tensorflow.js doesn’t have any of this built in, so we made our own implementation of it. You can check it out 
 
-&lt;a href=&#34;https://github.com/jackyzha0/reflect-chrome/blob/master/src/nn.ts&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We’ll leave all the technical code out (if you’re interested, feel free to peek around the source code!), but we’ve abstracted it enough that classifying an intent is a breeze.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// declared somewhere earlier
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;model&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;nn.IntentClassifier&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;nn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;IntentClassifier&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;acc85.95&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// name of converted model
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;// send to nlp model for prediction
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;valid&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;boolean&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;await&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;model&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;predict&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;intent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;valid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// let through
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;c1&#34;&gt;// block page
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;future-improvement&#34;&gt;Future improvement&lt;/h2&gt;
-&lt;h3 id=&#34;possible-models&#34;&gt;Possible models&lt;/h3&gt;
-&lt;p&gt;We have thought about using something more established and complex like 
+<a href="https://github.com/jackyzha0/reflect-chrome/blob/master/src/nn.ts" rel="noopener">here</a>.</p>
+<p>We’ll leave all the technical code out (if you’re interested, feel free to peek around the source code!), but we’ve abstracted it enough that classifying an intent is a breeze.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="c1">// declared somewhere earlier
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">model</span>: <span class="kt">nn.IntentClassifier</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">nn</span><span class="p">.</span><span class="nx">IntentClassifier</span><span class="p">(</span><span class="s2">&#34;acc85.95&#34;</span><span class="p">);</span> <span class="c1">// name of converted model
+</span><span class="c1"></span>
+<span class="c1">// send to nlp model for prediction
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">valid</span>: <span class="kt">boolean</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">intent</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">valid</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// let through
+</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// block page
+</span><span class="c1"></span><span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="future-improvement">Future improvement</h2>
+<h3 id="possible-models">Possible models</h3>
+<p>We have thought about using something more established and complex like 
 
-&lt;a href=&#34;https://arxiv.org/abs/1810.04805&#34; rel=&#34;noopener&#34;&gt;BERT&lt;/a&gt; and retraining it on our dataset, however then comes the problem of runtime and memory usage.&lt;/p&gt;
-&lt;p&gt;BERT is a huge model. If you thought 150 thousand parameters was a lot, wait till you see BERT’s 110 &lt;em&gt;million&lt;/em&gt; parameters. This bad boy takes a few hundred times longer and many times more memory than our current model. While yes BERT may perform really well, we just don’t think it has a place inside of a Chrome extension.&lt;/p&gt;
-&lt;p&gt;Our model is decently robust as it is, especially considering the entire model is &amp;lt;2MB and takes less than 200ms to run in browser. For now, we will stick with lightweight models, but we may switch if we find a better match in the future :)&lt;/p&gt;
-&lt;h3 id=&#34;misclassifications&#34;&gt;Misclassifications&lt;/h3&gt;
-&lt;p&gt;Of course, this algorithm isn’t perfect. It does have a lot of flaws and weaknesses that we find every day, and we’re working to fix those! If there are any misclassifications that you find in the algorithm, we love to hear about it on our feedback form: 
+<a href="https://arxiv.org/abs/1810.04805" rel="noopener">BERT</a> and retraining it on our dataset, however then comes the problem of runtime and memory usage.</p>
+<p>BERT is a huge model. If you thought 150 thousand parameters was a lot, wait till you see BERT’s 110 <em>million</em> parameters. This bad boy takes a few hundred times longer and many times more memory than our current model. While yes BERT may perform really well, we just don’t think it has a place inside of a Chrome extension.</p>
+<p>Our model is decently robust as it is, especially considering the entire model is &lt;2MB and takes less than 200ms to run in browser. For now, we will stick with lightweight models, but we may switch if we find a better match in the future :)</p>
+<h3 id="misclassifications">Misclassifications</h3>
+<p>Of course, this algorithm isn’t perfect. It does have a lot of flaws and weaknesses that we find every day, and we’re working to fix those! If there are any misclassifications that you find in the algorithm, we love to hear about it on our feedback form: 
 
-&lt;a href=&#34;https://forms.gle/ctypb6FmDT9RQqjv6&#34; rel=&#34;noopener&#34;&gt;https://forms.gle/ctypb6FmDT9RQqjv6&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
-&lt;p&gt;This NLP model is at the core of reflect. It is this model’s goal to predict whether user intents are valid or not. As a result, we need to make sure this algorithm is accurate, fast, and lightweight. Hopefully, through this blog post, you’ve learned a little about how we went about building a model to fulfill those requirements.&lt;/p&gt;
-&lt;p&gt;Learn more about us on our website! ✨ 
+<a href="https://forms.gle/ctypb6FmDT9RQqjv6" rel="noopener">https://forms.gle/ctypb6FmDT9RQqjv6</a>.</p>
+<h2 id="closing">Closing</h2>
+<p>This NLP model is at the core of reflect. It is this model’s goal to predict whether user intents are valid or not. As a result, we need to make sure this algorithm is accurate, fast, and lightweight. Hopefully, through this blog post, you’ve learned a little about how we went about building a model to fulfill those requirements.</p>
+<p>Learn more about us on our website! ✨ 
 
-&lt;a href=&#34;http://getreflect.app/&#34; rel=&#34;noopener&#34;&gt;http://getreflect.app/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;If you have any further questions about reflect or this NLP model, feel free to shoot us an email at 
+<a href="http://getreflect.app/" rel="noopener">http://getreflect.app/</a></p>
+<p>If you have any further questions about reflect or this NLP model, feel free to shoot us an email at 
 
 
-&lt;a href=&#34;/mailtohellogetreflect.app&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/mailtohellogetreflect.app&#34;&gt;hello@getreflect.app&lt;/a&gt;&lt;/p&gt;
+<a href="/mailtohellogetreflect.app" rel="noopener" class="internal-link" data-src="/mailtohellogetreflect.app">hello@getreflect.app</a></p>
 
 
     </article>

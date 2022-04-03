@@ -465,48 +465,48 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;How do we defend against attacks in distributed systems with no central authority?&lt;/p&gt;
-&lt;p&gt;Related: 
+      <p>How do we defend against attacks in distributed systems with no central authority?</p>
+<p>Related: 
 
 
-&lt;a href=&#34;/thoughts/game-theory&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/game-theory&#34;&gt;game theory&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;zookos-triangle&#34;&gt;Zooko&amp;rsquo;s Triangle&lt;/h2&gt;
-&lt;p&gt;Postulates that names of participants can have at most 2 of these 3 properties&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.&lt;/li&gt;
-&lt;li&gt;Secure: The amount of damage a malicious entity can inflict on the system should be as low as possible.&lt;/li&gt;
-&lt;li&gt;Decentralized: Names correctly resolve to their respective entities without the use of a central authority or service.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Maybe another version of 
+<a href="/thoughts/game-theory" rel="noopener" class="internal-link" data-src="/thoughts/game-theory">game theory</a></p>
+<h2 id="zookos-triangle">Zooko&rsquo;s Triangle</h2>
+<p>Postulates that names of participants can have at most 2 of these 3 properties</p>
+<ul>
+<li>Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.</li>
+<li>Secure: The amount of damage a malicious entity can inflict on the system should be as low as possible.</li>
+<li>Decentralized: Names correctly resolve to their respective entities without the use of a central authority or service.</li>
+</ul>
+<p>Maybe another version of 
 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem&#34; rel=&#34;noopener&#34;&gt;Arrow&amp;rsquo;s Impossibility Theorem&lt;/a&gt;?&lt;/p&gt;
-&lt;h2 id=&#34;sybil-attacks&#34;&gt;Sybil Attacks&lt;/h2&gt;
-&lt;p&gt;
+<a href="https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem" rel="noopener">Arrow&rsquo;s Impossibility Theorem</a>?</p>
+<h2 id="sybil-attacks">Sybil Attacks</h2>
+<p>
 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Sybil_attack&#34; rel=&#34;noopener&#34;&gt;Source: Sybil attack on &lt;em&gt;Wikipedia&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Sybil attacks are also called sock puppetry&lt;/p&gt;
-&lt;p&gt;Creating a large number of pseudonymous identities and uses them to gain a disproportionately large influence (e.g. control of &amp;gt;50% nodes allows you to &amp;lsquo;override&amp;rsquo; the consensus)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3E&amp;rsquo;s of Preventing Sybil Attacks&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Entry Cost&lt;/li&gt;
-&lt;li&gt;Existence Cost&lt;/li&gt;
-&lt;li&gt;Exit Penalty&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;byzantine-faults&#34;&gt;Byzantine Faults&lt;/h2&gt;
-&lt;p&gt;Sources: 
+<a href="https://en.wikipedia.org/wiki/Sybil_attack" rel="noopener">Source: Sybil attack on <em>Wikipedia</em></a></p>
+<p>Sybil attacks are also called sock puppetry</p>
+<p>Creating a large number of pseudonymous identities and uses them to gain a disproportionately large influence (e.g. control of &gt;50% nodes allows you to &lsquo;override&rsquo; the consensus)</p>
+<p><strong>3E&rsquo;s of Preventing Sybil Attacks</strong></p>
+<ol>
+<li>Entry Cost</li>
+<li>Existence Cost</li>
+<li>Exit Penalty</li>
+</ol>
+<h2 id="byzantine-faults">Byzantine Faults</h2>
+<p>Sources: 
 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Byzantine_fault&#34; rel=&#34;noopener&#34;&gt;Byzantine Faults on &lt;em&gt;Wikipedia&lt;/em&gt;&lt;/a&gt; and 
+<a href="https://en.wikipedia.org/wiki/Byzantine_fault" rel="noopener">Byzantine Faults on <em>Wikipedia</em></a> and 
 
-&lt;a href=&#34;https://lamport.azurewebsites.net/pubs/byz.pdf&#34; rel=&#34;noopener&#34;&gt;Paper on the Byzantine Generals Problem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A &lt;strong&gt;Byzantine fault&lt;/strong&gt; is any fault presenting different symptoms to different observers. A &lt;strong&gt;Byzantine failure&lt;/strong&gt; is the loss of a system service due to a Byzantine fault in systems that require 
+<a href="https://lamport.azurewebsites.net/pubs/byz.pdf" rel="noopener">Paper on the Byzantine Generals Problem</a></p>
+<p>A <strong>Byzantine fault</strong> is any fault presenting different symptoms to different observers. A <strong>Byzantine failure</strong> is the loss of a system service due to a Byzantine fault in systems that require 
 
 
-&lt;a href=&#34;/thoughts/consensus&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/consensus&#34;&gt;consensus&lt;/a&gt; between notes.&lt;/p&gt;
-&lt;p&gt;Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;Note that the PoW algorithm is not 100% tolerant to the Byzantine faults, but due to the and the underlying cryptographic techniques, PoW has proven to be one of the most secure and reliable implementations for blockchain networks.&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;byzantine-generals-problem&#34;&gt;Byzantine Generals Problem&lt;/h3&gt;
-&lt;p&gt;This situation can be expressed abstractly in terms of a group of generals of the Byzantine army camped with their troops around an enemy city. Communicating only by messenger, the generals must agree upon a common battle plan. However, one or more of them may be traitors who will try to confuse the others. The problem is to find an algorithm to ensure that the loyal generals will reach agreement.&lt;/p&gt;
-&lt;p&gt;It is shown that, using only oral messages, this problem is solvable if and only if more than two-thirds of the generals are loyal; so a single traitor can confound two loyal generals. With unforgeable written messages, the problem is solvable for any number of generals and possible traitors.&lt;/p&gt;
+<a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> between notes.</p>
+<p>Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.</p>
+<p>&ldquo;Note that the PoW algorithm is not 100% tolerant to the Byzantine faults, but due to the and the underlying cryptographic techniques, PoW has proven to be one of the most secure and reliable implementations for blockchain networks.&rdquo;</p>
+<h3 id="byzantine-generals-problem">Byzantine Generals Problem</h3>
+<p>This situation can be expressed abstractly in terms of a group of generals of the Byzantine army camped with their troops around an enemy city. Communicating only by messenger, the generals must agree upon a common battle plan. However, one or more of them may be traitors who will try to confuse the others. The problem is to find an algorithm to ensure that the loyal generals will reach agreement.</p>
+<p>It is shown that, using only oral messages, this problem is solvable if and only if more than two-thirds of the generals are loyal; so a single traitor can confound two loyal generals. With unforgeable written messages, the problem is solvable for any number of generals and possible traitors.</p>
 
 
     </article>

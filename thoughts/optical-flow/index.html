@@ -465,78 +465,78 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;Determine how objects (and/or the camera itself) move in the 3D world&lt;/p&gt;
-&lt;p&gt;Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)&lt;/p&gt;
-&lt;p&gt;See also: 
+      <p>Determine how objects (and/or the camera itself) move in the 3D world</p>
+<p>Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)</p>
+<p>See also: 
 
 
-&lt;a href=&#34;/thoughts/aperture-problem&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/aperture-problem&#34;&gt;aperture problem&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;constraint-equation&#34;&gt;Constraint Equation&lt;/h3&gt;
-&lt;p&gt;Let image intensity be denoted by $I(x,y,t)$. Then, applying chain rule, we obtain $\frac{dI(x,y,t)}{dt} = I_x\frac{dx}{dt} &#43; I_y\frac{dy}{dt} &#43; I_t$.&lt;/p&gt;
-&lt;p&gt;Let $u = \frac{dx}{dt}$ and $v = \frac{dy}{dt}$. Then $[u, v]$ is the 2D velocity space.&lt;/p&gt;
-&lt;p&gt;If we set $\frac{dI(x,y,t)}{dt} = 0$, then we get the &lt;strong&gt;optical flow constraint equation&lt;/strong&gt;: $I_xu&#43;I_yv &#43; I_t=0$.&lt;/p&gt;
-&lt;p&gt;We assume constant brightness for this, meaning $I(x(t), y(t), t) = C$.&lt;/p&gt;
-&lt;p&gt;We measure each of the following:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Spatial Derivative: $I_x = \frac{\partial I}{\partial x}$, $I_y = \frac{\partial I}{\partial y}$
-&lt;ul&gt;
-&lt;li&gt;Forward difference&lt;/li&gt;
-&lt;li&gt;Sobel filter&lt;/li&gt;
-&lt;li&gt;Scharr filter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Optical Flow: $u = \frac{dx}{dt}$, $v = \frac{dy}{dt}$
-&lt;ul&gt;
-&lt;li&gt;We need to solve for this! (the unknown in the optical flow problem)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Temporal Derivative: $I_t = \frac{\partial I}{\partial t}$
-&lt;ul&gt;
-&lt;li&gt;Frame difference&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;lucas-kanade&#34;&gt;Lucas-Kanade&lt;/h3&gt;
-&lt;p&gt;A dense method to compute motion $[u,v]$ at every location in an image.&lt;/p&gt;
-&lt;p&gt;Where can you see movement that can be effectively computed? A corner!&lt;/p&gt;
-&lt;p&gt;Solve for $\mathbf v$ in $\mathbf v = (A^TA)^{-1}A^Tb$ where $\mathbf v$ is the 1-by-2 column matrix of $u$ and $v$. $A$ is the $n$-by-2 column matrix of $I_x(q_i)$, $I_y(q_i)$ partial derivatives evaluated at point $q_i$ ($A$ is actually the same matrix $C$ used in Harris corner detection). $b$ is the 1-by-$n$ matrix consisting of the negative of the temporal partial derivative for each point.&lt;/p&gt;
-&lt;p&gt;$$A = \begin{bmatrix}I_x(q_1) &amp;amp; I_y(q_1)\I_x(q_2) &amp;amp; I_y(q_2)\\vdots &amp;amp; \vdots \ I_x(q_n) &amp;amp; I_y(q_n)\end{bmatrix} \qquad v=\begin{bmatrix}V_x\V_y\end{bmatrix} \qquad b = \begin{bmatrix}-I_t(q_1) \ -I_t(q_2) \ \vdots \ -I_t(q_n)\end{bmatrix}$$
-&lt;em&gt;Lucas-Kanade Method&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Assumptions&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Motion is slow enough that partial derivatives $I_x$, $I_y$, and $I_t$ are well-defined&lt;/li&gt;
-&lt;li&gt;The optical flow constraint equation holds ($\frac{dI(x,y,t)}{dt} = 0$)&lt;/li&gt;
-&lt;li&gt;Window size is chosen so that motion $[u,v]$ is constant in the window&lt;/li&gt;
-&lt;li&gt;Window size is chosen so that the rank of $A^TA$ is 2 for the window (required inverse exists)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;stereo&#34;&gt;Stereo&lt;/h2&gt;
-&lt;p&gt;Computing depth from multiple images. Formulated as a correspondence problem: dtermine match between location of a scene point in one image and its location in another.&lt;/p&gt;
-&lt;p&gt;Disparity: $d = x - x&#39; = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance from $O$ to epipolar line, and $x&#39;$ is distance from $O&#39;$ to epipolar line. $Z$ is distance from $b$ to target $X$.&lt;/p&gt;
-&lt;p&gt;Simple stereo algorithm&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Rectify images (make epipolar lines horizontal)
-&lt;ol&gt;
-&lt;li&gt;Rectified images have these properties:
-&lt;ol&gt;
-&lt;li&gt;Image planes of cameras are parallel&lt;/li&gt;
-&lt;li&gt;Focal points are at same height&lt;/li&gt;
-&lt;li&gt;Focal lengths are the same&lt;/li&gt;
-&lt;li&gt;Epiolar lines fall along the horizontal scan lines&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;For each pixel
-&lt;ol&gt;
-&lt;li&gt;Find epipolar line&lt;/li&gt;
-&lt;li&gt;Scan line for best match&lt;/li&gt;
-&lt;li&gt;Compute depth from disparity&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Naive approach, pixel-based often lacks content. What we can try is min SSD-error of a window-based approach.&lt;/p&gt;
-&lt;p&gt;Another approach is to match the edges (the zero-crossings) at different scales.&lt;/p&gt;
-&lt;p&gt;Note: Sum squared differences (SSD) is the same as Normalized Cross Correlation (NCC)&lt;/p&gt;
+<a href="/thoughts/aperture-problem" rel="noopener" class="internal-link" data-src="/thoughts/aperture-problem">aperture problem</a></p>
+<h3 id="constraint-equation">Constraint Equation</h3>
+<p>Let image intensity be denoted by $I(x,y,t)$. Then, applying chain rule, we obtain $\frac{dI(x,y,t)}{dt} = I_x\frac{dx}{dt} + I_y\frac{dy}{dt} + I_t$.</p>
+<p>Let $u = \frac{dx}{dt}$ and $v = \frac{dy}{dt}$. Then $[u, v]$ is the 2D velocity space.</p>
+<p>If we set $\frac{dI(x,y,t)}{dt} = 0$, then we get the <strong>optical flow constraint equation</strong>: $I_xu+I_yv + I_t=0$.</p>
+<p>We assume constant brightness for this, meaning $I(x(t), y(t), t) = C$.</p>
+<p>We measure each of the following:</p>
+<ul>
+<li>Spatial Derivative: $I_x = \frac{\partial I}{\partial x}$, $I_y = \frac{\partial I}{\partial y}$
+<ul>
+<li>Forward difference</li>
+<li>Sobel filter</li>
+<li>Scharr filter</li>
+</ul>
+</li>
+<li>Optical Flow: $u = \frac{dx}{dt}$, $v = \frac{dy}{dt}$
+<ul>
+<li>We need to solve for this! (the unknown in the optical flow problem)</li>
+</ul>
+</li>
+<li>Temporal Derivative: $I_t = \frac{\partial I}{\partial t}$
+<ul>
+<li>Frame difference</li>
+</ul>
+</li>
+</ul>
+<h3 id="lucas-kanade">Lucas-Kanade</h3>
+<p>A dense method to compute motion $[u,v]$ at every location in an image.</p>
+<p>Where can you see movement that can be effectively computed? A corner!</p>
+<p>Solve for $\mathbf v$ in $\mathbf v = (A^TA)^{-1}A^Tb$ where $\mathbf v$ is the 1-by-2 column matrix of $u$ and $v$. $A$ is the $n$-by-2 column matrix of $I_x(q_i)$, $I_y(q_i)$ partial derivatives evaluated at point $q_i$ ($A$ is actually the same matrix $C$ used in Harris corner detection). $b$ is the 1-by-$n$ matrix consisting of the negative of the temporal partial derivative for each point.</p>
+<p>$$A = \begin{bmatrix}I_x(q_1) &amp; I_y(q_1)\I_x(q_2) &amp; I_y(q_2)\\vdots &amp; \vdots \ I_x(q_n) &amp; I_y(q_n)\end{bmatrix} \qquad v=\begin{bmatrix}V_x\V_y\end{bmatrix} \qquad b = \begin{bmatrix}-I_t(q_1) \ -I_t(q_2) \ \vdots \ -I_t(q_n)\end{bmatrix}$$
+<em>Lucas-Kanade Method</em></p>
+<p>Assumptions</p>
+<ul>
+<li>Motion is slow enough that partial derivatives $I_x$, $I_y$, and $I_t$ are well-defined</li>
+<li>The optical flow constraint equation holds ($\frac{dI(x,y,t)}{dt} = 0$)</li>
+<li>Window size is chosen so that motion $[u,v]$ is constant in the window</li>
+<li>Window size is chosen so that the rank of $A^TA$ is 2 for the window (required inverse exists)</li>
+</ul>
+<h2 id="stereo">Stereo</h2>
+<p>Computing depth from multiple images. Formulated as a correspondence problem: dtermine match between location of a scene point in one image and its location in another.</p>
+<p>Disparity: $d = x - x' = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance from $O$ to epipolar line, and $x'$ is distance from $O'$ to epipolar line. $Z$ is distance from $b$ to target $X$.</p>
+<p>Simple stereo algorithm</p>
+<ol>
+<li>Rectify images (make epipolar lines horizontal)
+<ol>
+<li>Rectified images have these properties:
+<ol>
+<li>Image planes of cameras are parallel</li>
+<li>Focal points are at same height</li>
+<li>Focal lengths are the same</li>
+<li>Epiolar lines fall along the horizontal scan lines</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>For each pixel
+<ol>
+<li>Find epipolar line</li>
+<li>Scan line for best match</li>
+<li>Compute depth from disparity</li>
+</ol>
+</li>
+</ol>
+<p>Naive approach, pixel-based often lacks content. What we can try is min SSD-error of a window-based approach.</p>
+<p>Another approach is to match the edges (the zero-crossings) at different scales.</p>
+<p>Note: Sum squared differences (SSD) is the same as Normalized Cross Correlation (NCC)</p>
 
 
     </article>

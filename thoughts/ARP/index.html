@@ -450,34 +450,34 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;address-resolution-protocolthoughtsprotocolmd-arp&#34;&gt;Address Resolution 
+      <h2 id="address-resolution-protocolthoughtsprotocolmd-arp">Address Resolution 
 
 
-&lt;a href=&#34;/thoughts/Protocol&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Protocol&#34;&gt;Protocol&lt;/a&gt; (ARP)&lt;/h2&gt;
-&lt;p&gt;Purpose: links the 
+<a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">Protocol</a> (ARP)</h2>
+<p>Purpose: links the 
 
 
-&lt;a href=&#34;/thoughts/Network-Layer&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Network-Layer&#34;&gt;Network Layer&lt;/a&gt; (IP address) with the 
+<a href="/thoughts/Network-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Network-Layer">Network Layer</a> (IP address) with the 
 
 
-&lt;a href=&#34;/thoughts/Link-Layer&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Link-Layer&#34;&gt;link layer&lt;/a&gt; (MAC address)&lt;/p&gt;
-&lt;p&gt;Case: A wants tot send a datagram to B, but A doesn&amp;rsquo;t know B&amp;rsquo;s MAC address&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A broadcasts an ARP query packet with an IP address: &amp;ldquo;who has IP address 130.207.160.47?&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;B receives ARP request with that IP address on the LAN will respond with appropriate MAC address.&lt;/li&gt;
-&lt;li&gt;Generates an ARP Table maps IP to MAC
-&lt;ul&gt;
-&lt;li&gt;This is soft state, information that goes away unless refreshed. Each entry has a time limit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;General Notes&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Useful because frames use MAC addresses for addressing&lt;/li&gt;
-&lt;li&gt;ARP is stateless, doesn&amp;rsquo;t remember whether it sent a request (always reads response)&lt;/li&gt;
-&lt;li&gt;Not authenticated, anyone can ARP&lt;/li&gt;
-&lt;li&gt;Easily spoofed&lt;/li&gt;
-&lt;/ul&gt;
+<a href="/thoughts/Link-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Link-Layer">link layer</a> (MAC address)</p>
+<p>Case: A wants tot send a datagram to B, but A doesn&rsquo;t know B&rsquo;s MAC address</p>
+<ul>
+<li>A broadcasts an ARP query packet with an IP address: &ldquo;who has IP address 130.207.160.47?&rdquo;</li>
+<li>B receives ARP request with that IP address on the LAN will respond with appropriate MAC address.</li>
+<li>Generates an ARP Table maps IP to MAC
+<ul>
+<li>This is soft state, information that goes away unless refreshed. Each entry has a time limit</li>
+</ul>
+</li>
+</ul>
+<p>General Notes</p>
+<ul>
+<li>Useful because frames use MAC addresses for addressing</li>
+<li>ARP is stateless, doesn&rsquo;t remember whether it sent a request (always reads response)</li>
+<li>Not authenticated, anyone can ARP</li>
+<li>Easily spoofed</li>
+</ul>
 
 
     </article>

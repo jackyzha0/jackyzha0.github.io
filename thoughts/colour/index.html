@@ -471,61 +471,61 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;texture&#34;&gt;Texture&lt;/h2&gt;
-&lt;p&gt;Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements&lt;/p&gt;
-&lt;p&gt;Sometimes thought of as patterns composed of repeated instances of one or more identifiable elements called &lt;em&gt;textons&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Can be used for&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;object identity (tell what it is from the textures)&lt;/li&gt;
-&lt;li&gt;object&amp;rsquo;s shape (based on spatial deformation of texture)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Shape from texture&lt;/strong&gt;: Estimating surface orientation or shape from texture&lt;/p&gt;
-&lt;p&gt;Typically, texture is a property of a region, not a point. But, then we run into a boundary segmentation problem. We comproimise by using a local window to compute a texture and assign it to a point.&lt;/p&gt;
-&lt;h3 id=&#34;synthesis&#34;&gt;Synthesis&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Inpainting (filling in holes)&lt;/li&gt;
-&lt;li&gt;Produce large quantities of texture for computer graphics&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)&lt;/p&gt;
-&lt;h2 id=&#34;colour&#34;&gt;Colour&lt;/h2&gt;
-&lt;p&gt;Two lights whose spectral power distributions appear identical to most observers are called metamers&lt;/p&gt;
-&lt;p&gt;Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time&lt;/p&gt;
-&lt;p&gt;Contrast effects: nearby colours affect what is perceived&lt;/p&gt;
-&lt;h3 id=&#34;colour-filter-arrays&#34;&gt;Colour Filter Arrays&lt;/h3&gt;
-&lt;p&gt;One implementation of photo sensors&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Microlens&lt;/li&gt;
-&lt;li&gt;[optional] Colour Filter (what spectral sensitivity functions do we use for each colour? Human colour sensitivity differs between colours as well)&lt;/li&gt;
-&lt;li&gt;Photodiode&lt;/li&gt;
-&lt;li&gt;Potential well&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Two design choices to make when designing CFAs:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;What spectral sensitivity functions (SSFs) do we use for each colour filter?&lt;/li&gt;
-&lt;li&gt;How do we spatially arrange filters to create the best mosaic for CFAs?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;RAW Bayer Image gives us direct pixel data&lt;/p&gt;
-&lt;h3 id=&#34;cfa-demoisaicing&#34;&gt;CFA Demoisaicing&lt;/h3&gt;
-&lt;p&gt;How do we produce the full RGB image from mosaiced sensor output?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Bilinear Interpolation: average your 4 neighbours&lt;/li&gt;
-&lt;li&gt;Bicubic Interpolation → needs more neighbours, may overblur&lt;/li&gt;
-&lt;li&gt;Edge-aware interpolatin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;grassmans-law&#34;&gt;Grassman&amp;rsquo;s Law&lt;/h3&gt;
-&lt;p&gt;TL;DR, colour matching is, to an accurate approximation, linear&lt;/p&gt;
-&lt;p&gt;For colour matches&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;symmetry ($U = V \iff V = U$)&lt;/li&gt;
-&lt;li&gt;transitivity ($U = V$ and $V = W \implies U = W$)&lt;/li&gt;
-&lt;li&gt;proportionality ($U = V \iff tU = tV$)&lt;/li&gt;
-&lt;li&gt;additivity ($U=V$ and $W=X$, then $(U&#43;W)=(V&#43;X)$)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;colour-space&#34;&gt;Colour Space&lt;/h3&gt;
-&lt;p&gt;Choice of primaries is equivalent to choice of colour space. In RGB, we choose monochromatic energies.&lt;/p&gt;
-&lt;p&gt;RGB is additive whereas CMY is subtractive.&lt;/p&gt;
-&lt;p&gt;RGB and CIE are linear.&lt;/p&gt;
-&lt;p&gt;McAdam ellipses are regions where colour differences are imperceptible to the average human eye.&lt;/p&gt;
+      <h2 id="texture">Texture</h2>
+<p>Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements</p>
+<p>Sometimes thought of as patterns composed of repeated instances of one or more identifiable elements called <em>textons</em></p>
+<p>Can be used for</p>
+<ul>
+<li>object identity (tell what it is from the textures)</li>
+<li>object&rsquo;s shape (based on spatial deformation of texture)</li>
+</ul>
+<p><strong>Shape from texture</strong>: Estimating surface orientation or shape from texture</p>
+<p>Typically, texture is a property of a region, not a point. But, then we run into a boundary segmentation problem. We comproimise by using a local window to compute a texture and assign it to a point.</p>
+<h3 id="synthesis">Synthesis</h3>
+<ol>
+<li>Inpainting (filling in holes)</li>
+<li>Produce large quantities of texture for computer graphics</li>
+</ol>
+<p>Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)</p>
+<h2 id="colour">Colour</h2>
+<p>Two lights whose spectral power distributions appear identical to most observers are called metamers</p>
+<p>Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time</p>
+<p>Contrast effects: nearby colours affect what is perceived</p>
+<h3 id="colour-filter-arrays">Colour Filter Arrays</h3>
+<p>One implementation of photo sensors</p>
+<ol>
+<li>Microlens</li>
+<li>[optional] Colour Filter (what spectral sensitivity functions do we use for each colour? Human colour sensitivity differs between colours as well)</li>
+<li>Photodiode</li>
+<li>Potential well</li>
+</ol>
+<p>Two design choices to make when designing CFAs:</p>
+<ol>
+<li>What spectral sensitivity functions (SSFs) do we use for each colour filter?</li>
+<li>How do we spatially arrange filters to create the best mosaic for CFAs?</li>
+</ol>
+<p>RAW Bayer Image gives us direct pixel data</p>
+<h3 id="cfa-demoisaicing">CFA Demoisaicing</h3>
+<p>How do we produce the full RGB image from mosaiced sensor output?</p>
+<ul>
+<li>Bilinear Interpolation: average your 4 neighbours</li>
+<li>Bicubic Interpolation → needs more neighbours, may overblur</li>
+<li>Edge-aware interpolatin</li>
+</ul>
+<h3 id="grassmans-law">Grassman&rsquo;s Law</h3>
+<p>TL;DR, colour matching is, to an accurate approximation, linear</p>
+<p>For colour matches</p>
+<ul>
+<li>symmetry ($U = V \iff V = U$)</li>
+<li>transitivity ($U = V$ and $V = W \implies U = W$)</li>
+<li>proportionality ($U = V \iff tU = tV$)</li>
+<li>additivity ($U=V$ and $W=X$, then $(U+W)=(V+X)$)</li>
+</ul>
+<h3 id="colour-space">Colour Space</h3>
+<p>Choice of primaries is equivalent to choice of colour space. In RGB, we choose monochromatic energies.</p>
+<p>RGB is additive whereas CMY is subtractive.</p>
+<p>RGB and CIE are linear.</p>
+<p>McAdam ellipses are regions where colour differences are imperceptible to the average human eye.</p>
 
 
     </article>

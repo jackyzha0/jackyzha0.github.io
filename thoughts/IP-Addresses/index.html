@@ -450,18 +450,18 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.&lt;/p&gt;
-&lt;h3 id=&#34;ipv4&#34;&gt;IPv4&lt;/h3&gt;
-&lt;p&gt;Special Addresses&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;First address (generally all 0s): network itself, or not assigned&lt;/li&gt;
-&lt;li&gt;Last address (generally all 1s): broadcast&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;cidr-notation&#34;&gt;CIDR Notation&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;IP/#&lt;/code&gt; where # is the number of bits in the network ID&lt;/p&gt;
-&lt;p&gt;e.g. &lt;code&gt;18.0.0.0/8&lt;/code&gt; means first 8 bits are network ID, and &lt;code&gt;18.x.x.x&lt;/code&gt; is the space of all possible addresses ($2^{3*8}=2^{24}$)&lt;/p&gt;
-&lt;p&gt;By default, routers will take the most specific one (longest network ID).&lt;/p&gt;
-&lt;p&gt;To prevent loops, we set a TTL (time-to-live) for packets to expire after a certain time.&lt;/p&gt;
+      <p>IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.</p>
+<h3 id="ipv4">IPv4</h3>
+<p>Special Addresses</p>
+<ol>
+<li>First address (generally all 0s): network itself, or not assigned</li>
+<li>Last address (generally all 1s): broadcast</li>
+</ol>
+<h3 id="cidr-notation">CIDR Notation</h3>
+<p><code>IP/#</code> where # is the number of bits in the network ID</p>
+<p>e.g. <code>18.0.0.0/8</code> means first 8 bits are network ID, and <code>18.x.x.x</code> is the space of all possible addresses ($2^{3*8}=2^{24}$)</p>
+<p>By default, routers will take the most specific one (longest network ID).</p>
+<p>To prevent loops, we set a TTL (time-to-live) for packets to expire after a certain time.</p>
 
 
     </article>

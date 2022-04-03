@@ -466,93 +466,93 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned&lt;/p&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Point-to-point: one sender, one receiver&lt;/li&gt;
-&lt;li&gt;Reliable, in-order byte stream: no message boundaries&lt;/li&gt;
-&lt;li&gt;Pipelined: TCP congestion and flow control set window size&lt;/li&gt;
-&lt;li&gt;Send and receive buffers (similar to GBN and SR)&lt;/li&gt;
-&lt;li&gt;Full duplex data: bi-directional data flow in same connection
-&lt;ol&gt;
-&lt;li&gt;MSS: maximum segment size&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Connection-oriented: handshaking initializes both sender and receiver state before data exchange&lt;/li&gt;
-&lt;li&gt;Flow controlled: sender will not overwhelm receiver&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SYN (sychronize): packets used to initiate a connection&lt;/li&gt;
-&lt;li&gt;ACK (acknowledgement): packets that are used to confirm that the data packets have been received, also used to confirm the initiation request and tear down requests&lt;/li&gt;
-&lt;li&gt;RST (reset): signify the connection is down or maybe the service is not accepting the requests&lt;/li&gt;
-&lt;li&gt;FIN (finish): indicate that the connection is being torn down. Both sender and receiver send the FIN packets to gracefully terminate the connection&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;connection-establishment&#34;&gt;Connection Establishment&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Three-way handshake&lt;/li&gt;
-&lt;li&gt;To solve single initial sequence number problem, we randomly choose the initial sequence number&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Client sends initial SYN message
-&lt;ol&gt;
-&lt;li&gt;Sequence number for client to server is specified&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Server responds with a SYN/ACK (flip both bits) message
-&lt;ol&gt;
-&lt;li&gt;Client to server sequence number is confirmed in ACK&lt;/li&gt;
-&lt;li&gt;Server to client initial sequence number is specified&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Client sends an ACK message
-&lt;ol&gt;
-&lt;li&gt;Server to client sequence number is confirmed in ACK&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;window-management&#34;&gt;Window Management&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Size is selected by the application (if not the default)&lt;/li&gt;
-&lt;li&gt;Both sender and receiver have congestion windows
-&lt;ul&gt;
-&lt;li&gt;Measured with segments of maximum segment size (MSS)&lt;/li&gt;
-&lt;li&gt;Size is determined by the presence of absence of congestion&lt;/li&gt;
-&lt;li&gt;Actual send window is the min of the flow control window (receiver) and the scaled congestion window (computed by sender)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Retransmission strategy
-&lt;ul&gt;
-&lt;li&gt;ACKs correspond to first sequence number not yet received (similar to GBN)&lt;/li&gt;
-&lt;li&gt;Receiver stores packets in its own window (like SR)&lt;/li&gt;
-&lt;li&gt;Four or more ACKs with same number triggers a retransmission without a timeout&lt;/li&gt;
-&lt;li&gt;Retransmit just one segment instead of whole window (like SR)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;congestion-management&#34;&gt;Congestion Management&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Very conservative, at first sign of congestion, cuts congestion window in half&lt;/li&gt;
-&lt;li&gt;When it appears that congestion has eased, it increases slowly (1 segment to congestion window each time)&lt;/li&gt;
-&lt;li&gt;TCP uses bandwidth in a fair way&lt;/li&gt;
-&lt;li&gt;Slow start: always start with a congestion window of 1 segment
-&lt;ul&gt;
-&lt;li&gt;Increase by 1 each time a segment is ACKed (this is exponential, equivalent to doubling each time we send a window full of data)&lt;/li&gt;
-&lt;li&gt;Stop doubling when we detect congestion&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;flow-control&#34;&gt;Flow Control&lt;/h2&gt;
-&lt;p&gt;Difference between a sender&amp;rsquo;s sequence number and the remote host&amp;rsquo;s acknowledgement number represents any outstanding, unacknowledged data&lt;/p&gt;
-&lt;p&gt;ACK flag is offset 107&lt;/p&gt;
-&lt;p&gt;Sequence and acknowledgement number are both 32 bit fields so the range is from $0$ to $2^{32}-1$. After all the $2^{32}$ sequence numbers are used up and more data is to be sent, the sequence numbers can be wrapped around and used again from the starting.&lt;/p&gt;
-&lt;h2 id=&#34;sequence-number&#34;&gt;Sequence Number&lt;/h2&gt;
-&lt;p&gt;Offset 32&lt;/p&gt;
-&lt;p&gt;Tracks number of bytes sent outward by a host. If a TCP packet contains 1400 bytes of data, then the sequence number will be increased by 1400 after the packet is transmitted.&lt;/p&gt;
-&lt;h2 id=&#34;acknowledgement-number&#34;&gt;Acknowledgement Number&lt;/h2&gt;
-&lt;p&gt;Offset 64&lt;/p&gt;
-&lt;p&gt;Tracks number of bytes &lt;strong&gt;received&lt;/strong&gt;. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.&lt;/p&gt;
-&lt;p&gt;The flag is set &lt;strong&gt;if the acknowledgement number field contains a valid acknowledgement number&lt;/strong&gt;.&lt;/p&gt;
+      <p>When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned</p>
+<h2 id="overview">Overview</h2>
+<ol>
+<li>Point-to-point: one sender, one receiver</li>
+<li>Reliable, in-order byte stream: no message boundaries</li>
+<li>Pipelined: TCP congestion and flow control set window size</li>
+<li>Send and receive buffers (similar to GBN and SR)</li>
+<li>Full duplex data: bi-directional data flow in same connection
+<ol>
+<li>MSS: maximum segment size</li>
+</ol>
+</li>
+<li>Connection-oriented: handshaking initializes both sender and receiver state before data exchange</li>
+<li>Flow controlled: sender will not overwhelm receiver</li>
+</ol>
+<h2 id="flags">Flags</h2>
+<ul>
+<li>SYN (sychronize): packets used to initiate a connection</li>
+<li>ACK (acknowledgement): packets that are used to confirm that the data packets have been received, also used to confirm the initiation request and tear down requests</li>
+<li>RST (reset): signify the connection is down or maybe the service is not accepting the requests</li>
+<li>FIN (finish): indicate that the connection is being torn down. Both sender and receiver send the FIN packets to gracefully terminate the connection</li>
+</ul>
+<h2 id="connection-establishment">Connection Establishment</h2>
+<ul>
+<li>Three-way handshake</li>
+<li>To solve single initial sequence number problem, we randomly choose the initial sequence number</li>
+</ul>
+<ol>
+<li>Client sends initial SYN message
+<ol>
+<li>Sequence number for client to server is specified</li>
+</ol>
+</li>
+<li>Server responds with a SYN/ACK (flip both bits) message
+<ol>
+<li>Client to server sequence number is confirmed in ACK</li>
+<li>Server to client initial sequence number is specified</li>
+</ol>
+</li>
+<li>Client sends an ACK message
+<ol>
+<li>Server to client sequence number is confirmed in ACK</li>
+</ol>
+</li>
+</ol>
+<h2 id="window-management">Window Management</h2>
+<ul>
+<li>Size is selected by the application (if not the default)</li>
+<li>Both sender and receiver have congestion windows
+<ul>
+<li>Measured with segments of maximum segment size (MSS)</li>
+<li>Size is determined by the presence of absence of congestion</li>
+<li>Actual send window is the min of the flow control window (receiver) and the scaled congestion window (computed by sender)</li>
+</ul>
+</li>
+<li>Retransmission strategy
+<ul>
+<li>ACKs correspond to first sequence number not yet received (similar to GBN)</li>
+<li>Receiver stores packets in its own window (like SR)</li>
+<li>Four or more ACKs with same number triggers a retransmission without a timeout</li>
+<li>Retransmit just one segment instead of whole window (like SR)</li>
+</ul>
+</li>
+</ul>
+<h2 id="congestion-management">Congestion Management</h2>
+<ul>
+<li>Very conservative, at first sign of congestion, cuts congestion window in half</li>
+<li>When it appears that congestion has eased, it increases slowly (1 segment to congestion window each time)</li>
+<li>TCP uses bandwidth in a fair way</li>
+<li>Slow start: always start with a congestion window of 1 segment
+<ul>
+<li>Increase by 1 each time a segment is ACKed (this is exponential, equivalent to doubling each time we send a window full of data)</li>
+<li>Stop doubling when we detect congestion</li>
+</ul>
+</li>
+</ul>
+<h2 id="flow-control">Flow Control</h2>
+<p>Difference between a sender&rsquo;s sequence number and the remote host&rsquo;s acknowledgement number represents any outstanding, unacknowledged data</p>
+<p>ACK flag is offset 107</p>
+<p>Sequence and acknowledgement number are both 32 bit fields so the range is from $0$ to $2^{32}-1$. After all the $2^{32}$ sequence numbers are used up and more data is to be sent, the sequence numbers can be wrapped around and used again from the starting.</p>
+<h2 id="sequence-number">Sequence Number</h2>
+<p>Offset 32</p>
+<p>Tracks number of bytes sent outward by a host. If a TCP packet contains 1400 bytes of data, then the sequence number will be increased by 1400 after the packet is transmitted.</p>
+<h2 id="acknowledgement-number">Acknowledgement Number</h2>
+<p>Offset 64</p>
+<p>Tracks number of bytes <strong>received</strong>. If 1000 bytes are received by a host, it increases the acknowledgement number by 1000 when it sends out a packet in response.</p>
+<p>The flag is set <strong>if the acknowledgement number field contains a valid acknowledgement number</strong>.</p>
 
 
     </article>

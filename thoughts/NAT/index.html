@@ -467,97 +467,97 @@ if (!doNotTrack) {
       
       
       
-      &lt;h2 id=&#34;network-address-translation&#34;&gt;Network Address Translation&lt;/h2&gt;
-&lt;p&gt;Both network and 
+      <h2 id="network-address-translation">Network Address Translation</h2>
+<p>Both network and 
 
 
-&lt;a href=&#34;/thoughts/Transport-Layer&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Transport-Layer&#34;&gt;transport layer&lt;/a&gt; (violation of abstraction/layering)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;More devices than 
+<a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">transport layer</a> (violation of abstraction/layering)</p>
+<ol>
+<li>More devices than 
 
 
-&lt;a href=&#34;/thoughts/IP-Addresses&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/IP-Addresses&#34;&gt;IP addresses&lt;/a&gt;! What do we do?&lt;/li&gt;
-&lt;li&gt;Home router gets assigned an IP (public IP) by the ISP&lt;/li&gt;
-&lt;li&gt;Devices connected on the local network are assigned a private IP address (usually starts with subnet mask 196.168.x.x or 10.x.x.x)&lt;/li&gt;
-&lt;li&gt;Changes the private IP address to the public address of the router
-&lt;ol&gt;
-&lt;li&gt;Changes source port to some available port&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Adds the mapping to the NAT forwarding table
-&lt;ol&gt;
-&lt;li&gt;Entries correspond to private side (192.168.1.3:42301) to public side (12.13.14.15:24604)&lt;/li&gt;
-&lt;li&gt;Includes
-&lt;ol&gt;
-&lt;li&gt;Source IP&lt;/li&gt;
-&lt;li&gt;Source Port&lt;/li&gt;
-&lt;li&gt;Destination IP&lt;/li&gt;
-&lt;li&gt;Destination Port&lt;/li&gt;
-&lt;li&gt;
+<a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP addresses</a>! What do we do?</li>
+<li>Home router gets assigned an IP (public IP) by the ISP</li>
+<li>Devices connected on the local network are assigned a private IP address (usually starts with subnet mask 196.168.x.x or 10.x.x.x)</li>
+<li>Changes the private IP address to the public address of the router
+<ol>
+<li>Changes source port to some available port</li>
+</ol>
+</li>
+<li>Adds the mapping to the NAT forwarding table
+<ol>
+<li>Entries correspond to private side (192.168.1.3:42301) to public side (12.13.14.15:24604)</li>
+<li>Includes
+<ol>
+<li>Source IP</li>
+<li>Source Port</li>
+<li>Destination IP</li>
+<li>Destination Port</li>
+<li>
 
 
-&lt;a href=&#34;/thoughts/Protocol&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Protocol&#34;&gt;Protocol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;NAT IP (Router public IP address)&lt;/li&gt;
-&lt;li&gt;NAT Port (Unique)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Actually, Port Forwarding just adds entries to the NAT forwarding table! You can set remote IP and remote port to wildcard entries (i.e. any web requests made to this port go to the specified machine)
-&lt;ol&gt;
-&lt;li&gt;Max number of rows is 65535&lt;/li&gt;
-&lt;li&gt;Any requests that come in then &lt;em&gt;clone&lt;/em&gt; the wildcard rule and make it specific to that conversation (to avoid collisions to the NAT port)&lt;/li&gt;
-&lt;li&gt;Entries are removed when a conversation is coming to a close (stream based protocol, detect termination packets)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Does the inverse when it receives a packet&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
+<a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">Protocol</a></li>
+<li>NAT IP (Router public IP address)</li>
+<li>NAT Port (Unique)</li>
+</ol>
+</li>
+<li>Actually, Port Forwarding just adds entries to the NAT forwarding table! You can set remote IP and remote port to wildcard entries (i.e. any web requests made to this port go to the specified machine)
+<ol>
+<li>Max number of rows is 65535</li>
+<li>Any requests that come in then <em>clone</em> the wildcard rule and make it specific to that conversation (to avoid collisions to the NAT port)</li>
+<li>Entries are removed when a conversation is coming to a close (stream based protocol, detect termination packets)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Does the inverse when it receives a packet</li>
+</ol>
+<p>
 
-&lt;img src=&#34;/thoughts/images/NAT.jpeg&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;hole-punching&#34;&gt;Hole-punching&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Mostly used in 
-
-
-&lt;a href=&#34;/thoughts/decentralization&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/decentralization&#34;&gt;decentralized&lt;/a&gt; or 
+<img src="/thoughts/images/NAT.jpeg" alt=""  /></p>
+<h2 id="hole-punching">Hole-punching</h2>
+<blockquote>
+<p>Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).</p>
+</blockquote>
+<p>Mostly used in 
 
 
-&lt;a href=&#34;/thoughts/peer-to-peer&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/peer-to-peer&#34;&gt;peer-to-peer&lt;/a&gt; communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.&lt;/p&gt;
-&lt;p&gt;Hole-punching usually involves the use of third-party hosts that run STUN or ICE to figure out the public address of the NAT.&lt;/p&gt;
-&lt;p&gt;Note: as 
+<a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralized</a> or 
 
 
-&lt;a href=&#34;/thoughts/UDP&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/UDP&#34;&gt;UDP&lt;/a&gt; usually expires after very short periods of time, hole-punching sometimes sends keep-alive packets to maintain the connection&lt;/p&gt;
-&lt;h3 id=&#34;flow&#34;&gt;Flow&lt;/h3&gt;
-&lt;p&gt;Let $A$ and B $be$ the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;A and B both begin a 
+<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.</p>
+<p>Hole-punching usually involves the use of third-party hosts that run STUN or ICE to figure out the public address of the NAT.</p>
+<p>Note: as 
 
 
-&lt;a href=&#34;/thoughts/UDP&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/UDP&#34;&gt;UDP&lt;/a&gt; conversation with $S$&lt;/li&gt;
-&lt;li&gt;NAT devices $N_A$ and $N_B$ create UDP translations and assign temporary external ports $EP_A$ and $EP_B$&lt;/li&gt;
-&lt;li&gt;S looks at UDP packets to get source ports of $N_A$ and $N_B$ (through $EP_A$ and $EP_B$)&lt;/li&gt;
-&lt;li&gt;S makes pairs of external IP addresses assigned by the NAT along with temporary external ports and exchanges them between $A$ and $B$ (S passes $EIP_A:EP_A$ to $B$ and $EIP_B:EP_B$ to $A$)&lt;/li&gt;
-&lt;li&gt;$A$ and $B$ send packets to each other and their appropriate NAT devices create the entries in their lookup tables
-&lt;ol&gt;
-&lt;li&gt;$A$ sends a packet to $EIP_B:EP_B$.&lt;/li&gt;
-&lt;li&gt;$N_A$ examines $A$&amp;rsquo;s outgoing packet and adds (Source-IP-$A$, $EP_A$, $EIP_B$, $EP_B$) to its translation table.&lt;/li&gt;
-&lt;li&gt;$B$ sends a packet to $EIP_A:EP_A$.&lt;/li&gt;
-&lt;li&gt;$N_B$ examines $B$&amp;rsquo;s outgoing packet and adds (Source-IP-$B$, $EP_B$, $EIP_A$, $EP_A$) to its translation table.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$ and $&lt;/li&gt;
-&lt;li&gt;At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been &amp;ldquo;punched&amp;rdquo; in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;stun-session-traversal-utilities-for-nat&#34;&gt;STUN (Session Traversal Utilities for NAT)&lt;/h3&gt;
-&lt;p&gt;Servers like $S$ usually run STUN. Recognized using a &lt;code&gt;stun&lt;/code&gt; or &lt;code&gt;stuns&lt;/code&gt; resource record&lt;/p&gt;
-&lt;h3 id=&#34;ice-interactive-connectivity-establishment&#34;&gt;ICE (Interactive Connectivity Establishment)&lt;/h3&gt;
-&lt;p&gt;Uses STUN. Provides a structured mechanism to determine the optimal communication path between two peers&lt;/p&gt;
-&lt;h3 id=&#34;turn-traversal-using-relays-around-nat&#34;&gt;TURN (Traversal Using Relays around NAT)&lt;/h3&gt;
-&lt;p&gt;TURN places a third-party server to relay messages between two clients when direct media traffic between peers is not allowed by a firewall.&lt;/p&gt;
+<a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a> usually expires after very short periods of time, hole-punching sometimes sends keep-alive packets to maintain the connection</p>
+<h3 id="flow">Flow</h3>
+<p>Let $A$ and B $be$ the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.</p>
+<ol>
+<li>A and B both begin a 
+
+
+<a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a> conversation with $S$</li>
+<li>NAT devices $N_A$ and $N_B$ create UDP translations and assign temporary external ports $EP_A$ and $EP_B$</li>
+<li>S looks at UDP packets to get source ports of $N_A$ and $N_B$ (through $EP_A$ and $EP_B$)</li>
+<li>S makes pairs of external IP addresses assigned by the NAT along with temporary external ports and exchanges them between $A$ and $B$ (S passes $EIP_A:EP_A$ to $B$ and $EIP_B:EP_B$ to $A$)</li>
+<li>$A$ and $B$ send packets to each other and their appropriate NAT devices create the entries in their lookup tables
+<ol>
+<li>$A$ sends a packet to $EIP_B:EP_B$.</li>
+<li>$N_A$ examines $A$&rsquo;s outgoing packet and adds (Source-IP-$A$, $EP_A$, $EIP_B$, $EP_B$) to its translation table.</li>
+<li>$B$ sends a packet to $EIP_A:EP_A$.</li>
+<li>$N_B$ examines $B$&rsquo;s outgoing packet and adds (Source-IP-$B$, $EP_B$, $EIP_A$, $EP_A$) to its translation table.</li>
+</ol>
+</li>
+<li>Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$ and $</li>
+<li>At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been &ldquo;punched&rdquo; in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$.</li>
+</ol>
+<h3 id="stun-session-traversal-utilities-for-nat">STUN (Session Traversal Utilities for NAT)</h3>
+<p>Servers like $S$ usually run STUN. Recognized using a <code>stun</code> or <code>stuns</code> resource record</p>
+<h3 id="ice-interactive-connectivity-establishment">ICE (Interactive Connectivity Establishment)</h3>
+<p>Uses STUN. Provides a structured mechanism to determine the optimal communication path between two peers</p>
+<h3 id="turn-traversal-using-relays-around-nat">TURN (Traversal Using Relays around NAT)</h3>
+<p>TURN places a third-party server to relay messages between two clients when direct media traffic between peers is not allowed by a firewall.</p>
 
 
     </article>

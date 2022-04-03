@@ -455,77 +455,77 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the 
+      <p>Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the 
 
 
-&lt;a href=&#34;/thoughts/Internet&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Internet&#34;&gt;Internet&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;DNS currently has ~300 million DNS registrations. Both query and reply messages follow the same message format. Both always include Name, Type, Class tuples &amp;ndash; Class is usually &lt;code&gt;IN&lt;/code&gt;. Names cannot be wildcarded but type and class can&lt;/p&gt;
-&lt;p&gt;How do we resolve domain names to 
+<a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a>.</p>
+<p>DNS currently has ~300 million DNS registrations. Both query and reply messages follow the same message format. Both always include Name, Type, Class tuples &ndash; Class is usually <code>IN</code>. Names cannot be wildcarded but type and class can</p>
+<p>How do we resolve domain names to 
 
 
-&lt;a href=&#34;/thoughts/IP-Addresses&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/IP-Addresses&#34;&gt;IP addresses&lt;/a&gt;? Resolves starting from the root and makes it way down the network hierarchy&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Root (13 of these worldwide)&lt;/li&gt;
-&lt;li&gt;Top-level Domains (e.g. .com, .net, .org, etc.)&lt;/li&gt;
-&lt;li&gt;Second-level Domains (e.g. Microsoft, UBC)&lt;/li&gt;
-&lt;li&gt;Subdomains (e.g. www)&lt;/li&gt;
-&lt;li&gt;Individual machines&lt;/li&gt;
-&lt;li&gt;Local DNS Servers (not actually a part of the hierarchy, just caches data)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Authoritative DNS server is the server with the actual jurisdiction of the domain name you are looking for. The authoritative server of &lt;code&gt;cs.ubc.ca&lt;/code&gt; is the &lt;code&gt;cs&lt;/code&gt; server under UBC.&lt;/p&gt;
-&lt;p&gt;Types of queries&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Recursive Query &amp;ndash; if the name server doesn&amp;rsquo;t know the answer, it asks a downstream server (recursively) for the answer on your behalf.&lt;/li&gt;
-&lt;li&gt;Iterative Query &amp;ndash; if the name server doesn&amp;rsquo;t know the answer, it tells you where to look at next, you do all the querying&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;DNS servers store resource records (RRs)
-Types:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;A (address records)
-&lt;ol&gt;
-&lt;li&gt;name: hostname&lt;/li&gt;
-&lt;li&gt;value: IPv4 address&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;NS (name server)
-&lt;ol&gt;
-&lt;li&gt;name: domain&lt;/li&gt;
-&lt;li&gt;value: name of DNS server for domain&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;MX (mail exchanger)
-&lt;ol&gt;
-&lt;li&gt;name: domain of email address&lt;/li&gt;
-&lt;li&gt;value: name of mail server&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;AAAA (addressx4 record)
-&lt;ol&gt;
-&lt;li&gt;name: hostname&lt;/li&gt;
-&lt;li&gt;value: IPv6 address&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Inserting records into DNS&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Register name with a registrar
-&lt;ol&gt;
-&lt;li&gt;Provide registrar with name and IP address for your authoritative name server (usually a primary and secondary)&lt;/li&gt;
-&lt;li&gt;Registrar inserts two resource records into the top-level domain server for each authoritative name server
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;(example.com, dns1.example.com, NS)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;(dns1.example.com, 212.212.212.1, A)&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add appropriate records into our own authoritative name server
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;(www.example.com, &amp;lt;server-ip&amp;gt;, A)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;(www.example.com, &amp;lt;server-ip&amp;gt;, MX)&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+<a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP addresses</a>? Resolves starting from the root and makes it way down the network hierarchy</p>
+<ol>
+<li>Root (13 of these worldwide)</li>
+<li>Top-level Domains (e.g. .com, .net, .org, etc.)</li>
+<li>Second-level Domains (e.g. Microsoft, UBC)</li>
+<li>Subdomains (e.g. www)</li>
+<li>Individual machines</li>
+<li>Local DNS Servers (not actually a part of the hierarchy, just caches data)</li>
+</ol>
+<p>Authoritative DNS server is the server with the actual jurisdiction of the domain name you are looking for. The authoritative server of <code>cs.ubc.ca</code> is the <code>cs</code> server under UBC.</p>
+<p>Types of queries</p>
+<ol>
+<li>Recursive Query &ndash; if the name server doesn&rsquo;t know the answer, it asks a downstream server (recursively) for the answer on your behalf.</li>
+<li>Iterative Query &ndash; if the name server doesn&rsquo;t know the answer, it tells you where to look at next, you do all the querying</li>
+</ol>
+<p>DNS servers store resource records (RRs)
+Types:</p>
+<ol>
+<li>A (address records)
+<ol>
+<li>name: hostname</li>
+<li>value: IPv4 address</li>
+</ol>
+</li>
+<li>NS (name server)
+<ol>
+<li>name: domain</li>
+<li>value: name of DNS server for domain</li>
+</ol>
+</li>
+<li>MX (mail exchanger)
+<ol>
+<li>name: domain of email address</li>
+<li>value: name of mail server</li>
+</ol>
+</li>
+<li>AAAA (addressx4 record)
+<ol>
+<li>name: hostname</li>
+<li>value: IPv6 address</li>
+</ol>
+</li>
+</ol>
+<p>Inserting records into DNS</p>
+<ol>
+<li>Register name with a registrar
+<ol>
+<li>Provide registrar with name and IP address for your authoritative name server (usually a primary and secondary)</li>
+<li>Registrar inserts two resource records into the top-level domain server for each authoritative name server
+<ol>
+<li><code>(example.com, dns1.example.com, NS)</code></li>
+<li><code>(dns1.example.com, 212.212.212.1, A)</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Add appropriate records into our own authoritative name server
+<ol>
+<li><code>(www.example.com, &lt;server-ip&gt;, A)</code></li>
+<li><code>(www.example.com, &lt;server-ip&gt;, MX)</code></li>
+</ol>
+</li>
+</ol>
 
 
     </article>

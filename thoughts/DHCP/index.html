@@ -450,58 +450,58 @@ if (!doNotTrack) {
       
       
       
-      &lt;p&gt;Dynamic Host Configuration 
+      <p>Dynamic Host Configuration 
 
 
-&lt;a href=&#34;/thoughts/Protocol&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/Protocol&#34;&gt;Protocol&lt;/a&gt; so they can join a network. Assigns 
+<a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">Protocol</a> so they can join a network. Assigns 
 
 
-&lt;a href=&#34;/thoughts/IP-Addresses&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/IP-Addresses&#34;&gt;IP addresses&lt;/a&gt; to hosts. Main reason was when people started moving devices across networks&lt;/p&gt;
-&lt;p&gt;Client-server model&lt;/p&gt;
-&lt;p&gt;Basic Messages&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Discovery, host looks for a DHCP server
-&lt;ol&gt;
-&lt;li&gt;Sender is 0.0.0.0 port 68&lt;/li&gt;
-&lt;li&gt;Receiver is 255.255.255.255 port 67 (this is the broadcast address!)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Router responds with an offer valid for the next $n$ seconds
-&lt;ol&gt;
-&lt;li&gt;This is broadcasted (255.255.255.255) as router does not know where receiver is&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Host responds with acceptance
-&lt;ol&gt;
-&lt;li&gt;Broadcast which address picked&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Router responds OK
-&lt;ol&gt;
-&lt;li&gt;ACK message, still broadcast&lt;/li&gt;
-&lt;li&gt;Includes
-&lt;ol&gt;
-&lt;li&gt;Unique IP Address for Client&lt;/li&gt;
-&lt;li&gt;Netmask for local network&lt;/li&gt;
-&lt;li&gt;Lease time&lt;/li&gt;
-&lt;li&gt;Routing information&lt;/li&gt;
-&lt;li&gt;Host name, domain name (optional)&lt;/li&gt;
-&lt;li&gt;Name (DNS) Server
+<a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP addresses</a> to hosts. Main reason was when people started moving devices across networks</p>
+<p>Client-server model</p>
+<p>Basic Messages</p>
+<ol>
+<li>Discovery, host looks for a DHCP server
+<ol>
+<li>Sender is 0.0.0.0 port 68</li>
+<li>Receiver is 255.255.255.255 port 67 (this is the broadcast address!)</li>
+</ol>
+</li>
+<li>Router responds with an offer valid for the next $n$ seconds
+<ol>
+<li>This is broadcasted (255.255.255.255) as router does not know where receiver is</li>
+</ol>
+</li>
+<li>Host responds with acceptance
+<ol>
+<li>Broadcast which address picked</li>
+</ol>
+</li>
+<li>Router responds OK
+<ol>
+<li>ACK message, still broadcast</li>
+<li>Includes
+<ol>
+<li>Unique IP Address for Client</li>
+<li>Netmask for local network</li>
+<li>Lease time</li>
+<li>Routing information</li>
+<li>Host name, domain name (optional)</li>
+<li>Name (DNS) Server
 Fields (all 
 
 
-&lt;a href=&#34;/thoughts/UDP&#34; rel=&#34;noopener&#34; class=&#34;internal-link&#34; data-src=&#34;/thoughts/UDP&#34;&gt;UDP&lt;/a&gt;)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;src&lt;/code&gt;: source IP address (usually 0.0.0.0 for no meaningful IP)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dest&lt;/code&gt;: destination IP address&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;yiaddr&lt;/code&gt;: your IP address&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;transaction ID&lt;/code&gt;: for matching request with response&lt;/li&gt;
-&lt;/ul&gt;
+<a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a>)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><code>src</code>: source IP address (usually 0.0.0.0 for no meaningful IP)</li>
+<li><code>dest</code>: destination IP address</li>
+<li><code>yiaddr</code>: your IP address</li>
+<li><code>transaction ID</code>: for matching request with response</li>
+</ul>
 
 
     </article>
