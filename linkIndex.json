@@ -2077,6 +2077,23 @@
           "text": "desire paths"
         }
       ],
+      "/thoughts/Primary-of-Consciousness": [
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/emptiness",
+          "text": "empty"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/philosophy-of-science",
+          "text": "Karl Popper's Philosophy of Science"
+        }
+      ],
       "/thoughts/Projects": [
         {
           "source": "/thoughts/Projects",
@@ -3130,6 +3147,11 @@
         },
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/Primary-of-Consciousness",
+          "text": "Primary of Consciousness"
+        },
+        {
+          "source": "/thoughts/consciousness",
           "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
           "text": "Neural Correlates of Consciousness (NCC)"
         },
@@ -3152,16 +3174,6 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Materialism",
           "text": "physicalist"
-        },
-        {
-          "source": "/thoughts/consciousness",
-          "target": "/thoughts/qualia",
-          "text": "qualia"
-        },
-        {
-          "source": "/thoughts/consciousness",
-          "target": "/thoughts/emptiness",
-          "text": "empty"
         },
         {
           "source": "/thoughts/consciousness",
@@ -5785,6 +5797,18 @@
           "source": "/thoughts/pace-layers",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "Extended Mind Hypothesis"
+        }
+      ],
+      "/thoughts/pattern-matching": [
+        {
+          "source": "/thoughts/pattern-matching",
+          "target": "/thoughts/language-of-thought",
+          "text": "Language of thought"
+        },
+        {
+          "source": "/thoughts/pattern-matching",
+          "target": "/thoughts/conceptual-model",
+          "text": "idealised models"
         }
       ],
       "/thoughts/peer-to-peer": [
@@ -9139,6 +9163,13 @@
           "text": "Post-It Note City"
         }
       ],
+      "/thoughts/Primary-of-Consciousness": [
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Primary-of-Consciousness",
+          "text": "Primary of Consciousness"
+        }
+      ],
       "/thoughts/Projects": [
         {
           "source": "/",
@@ -10119,6 +10150,11 @@
           "source": "/thoughts/mental-model",
           "target": "/thoughts/conceptual-model",
           "text": "conceptual model"
+        },
+        {
+          "source": "/thoughts/pattern-matching",
+          "target": "/thoughts/conceptual-model",
+          "text": "idealised models"
         }
       ],
       "/thoughts/connectionist-networks": [
@@ -11007,24 +11043,24 @@
           "text": "emptiness"
         },
         {
-          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
-        {
-          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
-        {
-          "source": "/thoughts/consciousness",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
-        {
-          "source": "/thoughts/consciousness",
+          "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/emptiness",
           "text": "empty"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
+          "source": "/thoughts/Root-Verses-on-the-Middle-Way-MMK",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/emptiness",
+          "text": "emptiness"
         },
         {
           "source": "/thoughts/context",
@@ -12616,6 +12652,11 @@
           "text": "language of thought"
         },
         {
+          "source": "/thoughts/pattern-matching",
+          "target": "/thoughts/language-of-thought",
+          "text": "Language of thought"
+        },
+        {
           "source": "/thoughts/terminology",
           "target": "/thoughts/language-of-thought",
           "text": "Sapir-Whorf"
@@ -13244,6 +13285,11 @@
           "text": "some propositions are more true"
         },
         {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/philosophy-of-science",
+          "text": "Karl Popper's Philosophy of Science"
+        },
+        {
           "source": "/thoughts/scientific-progress",
           "target": "/thoughts/philosophy-of-science",
           "text": "Philosophy of science"
@@ -13667,6 +13713,11 @@
           "text": "qualia"
         },
         {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/qualia",
+          "text": "qualia"
+        },
+        {
           "source": "/thoughts/Reductionism",
           "target": "/thoughts/qualia",
           "text": "qualia"
@@ -13678,11 +13729,6 @@
         },
         {
           "source": "/thoughts/bandwidth",
-          "target": "/thoughts/qualia",
-          "text": "qualia"
-        },
-        {
-          "source": "/thoughts/consciousness",
           "target": "/thoughts/qualia",
           "text": "qualia"
         },
@@ -16867,6 +16913,21 @@
       "text": "desire paths"
     },
     {
+      "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/qualia",
+      "text": "qualia"
+    },
+    {
+      "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/emptiness",
+      "text": "empty"
+    },
+    {
+      "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/philosophy-of-science",
+      "text": "Karl Popper's Philosophy of Science"
+    },
+    {
       "source": "/thoughts/Projects",
       "target": "/thoughts/idea-list",
       "text": "here"
@@ -17818,6 +17879,11 @@
     },
     {
       "source": "/thoughts/consciousness",
+      "target": "/thoughts/Primary-of-Consciousness",
+      "text": "Primary of Consciousness"
+    },
+    {
+      "source": "/thoughts/consciousness",
       "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
       "text": "Neural Correlates of Consciousness (NCC)"
     },
@@ -17840,16 +17906,6 @@
       "source": "/thoughts/consciousness",
       "target": "/thoughts/Materialism",
       "text": "physicalist"
-    },
-    {
-      "source": "/thoughts/consciousness",
-      "target": "/thoughts/qualia",
-      "text": "qualia"
-    },
-    {
-      "source": "/thoughts/consciousness",
-      "target": "/thoughts/emptiness",
-      "text": "empty"
     },
     {
       "source": "/thoughts/consciousness",
@@ -20275,6 +20331,16 @@
       "source": "/thoughts/pace-layers",
       "target": "/thoughts/Extended-Mind-Hypothesis",
       "text": "Extended Mind Hypothesis"
+    },
+    {
+      "source": "/thoughts/pattern-matching",
+      "target": "/thoughts/language-of-thought",
+      "text": "Language of thought"
+    },
+    {
+      "source": "/thoughts/pattern-matching",
+      "target": "/thoughts/conceptual-model",
+      "text": "idealised models"
     },
     {
       "source": "/thoughts/peer-to-peer",
