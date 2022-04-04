@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">Optical Flow</h1>
     <article>
       <p class="meta">
-          Last updated April 2, 2022
+          Last updated April 3, 2022
       </p>
       <ul class="tags">
     
@@ -504,7 +504,7 @@ if (!doNotTrack) {
 <p>A dense method to compute motion $[u,v]$ at every location in an image.</p>
 <p>Where can you see movement that can be effectively computed? A corner!</p>
 <p>Solve for $\mathbf v$ in $\mathbf v = (A^TA)^{-1}A^Tb$ where $\mathbf v$ is the 1-by-2 column matrix of $u$ and $v$. $A$ is the $n$-by-2 column matrix of $I_x(q_i)$, $I_y(q_i)$ partial derivatives evaluated at point $q_i$ ($A$ is actually the same matrix $C$ used in Harris corner detection). $b$ is the 1-by-$n$ matrix consisting of the negative of the temporal partial derivative for each point.</p>
-<p>$$A = \begin{bmatrix}I_x(q_1) &amp; I_y(q_1)\I_x(q_2) &amp; I_y(q_2)\\vdots &amp; \vdots \\I_x(q_n) &amp; I_y(q_n)\end{bmatrix} \qquad v=\begin{bmatrix}V_x\V_y\end{bmatrix} \qquad b = \begin{bmatrix}-I_t(q_1) \\-I_t(q_2) \\\vdots \\-I_t(q_n)\end{bmatrix}$$
+<p>$$A = \begin{bmatrix}I_x(q_1) &amp; I_y(q_1) \\I_x(q_2) &amp; I_y(q_2) \\\vdots &amp; \vdots \\I_x(q_n) &amp; I_y(q_n)\end{bmatrix} \qquad v=\begin{bmatrix}V_x \\V_y\end{bmatrix} \qquad b = \begin{bmatrix}-I_t(q_1) \\-I_t(q_2) \\\vdots \\-I_t(q_n)\end{bmatrix}$$
 <em>Lucas-Kanade Method</em></p>
 <p>Assumptions</p>
 <ul>
