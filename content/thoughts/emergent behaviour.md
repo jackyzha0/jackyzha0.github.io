@@ -32,3 +32,5 @@ How do microlevel experiences combine to form macrolevel ones?
 Mental properties belong only to genuine individuals, not to mere aggregates
 
 Then, what is the boundary of the genuine individual? This is a problem of embodiment. To be a genuine individual is not simply to be a particular (as opposed to a conglomerate or universal) but also a system that has some kind of bounded organizational unity through [autopoiesis](thoughts/autopoiesis.md) -- this is a body
+
+Their own emergence problem: how do genuine individuals emerge from particular that aren't individuals/subjects of experience? It doesn't solve the problem of accounting for the place of consciousness in nature, it just relocates it

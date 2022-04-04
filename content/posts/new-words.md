@@ -102,6 +102,6 @@ Let us create a new glossary of terminology. May it be *a* source of [truth](tho
 
 [^1]: *Philosophical Investigations*, Ludwig Wittgenstein
 [^2]: *The Science of Discworld*, Terry Pratchett
-[^3]: *The Logic of Scientific Discover*, Karl Popper
+[^3]: *The Logic of Scientific Discovery*, Karl Popper
 [^4]: *Republic*, Plato
 [^5]: Martín Becerra on Natalia Denegri

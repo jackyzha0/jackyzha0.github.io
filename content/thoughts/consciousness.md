@@ -9,7 +9,7 @@ What does it mean to be conscious? Is consciousness emergent from matter? Or is 
 
 "Consciousness is always consciousness of something, and when the object is subtracted, nothing remains to be characterized" (cannot be of independent origin, [emptiness](thoughts/emptiness.md))
 
-See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md), [Buddhism](thoughts/Buddhism.md), [The Upanisads](thoughts/The%20Upanisads.md), [qualia](thoughts/qualia.md), [self-knowledge](thoughts/self-knowledge.md)
+See also: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md), [Buddhism](thoughts/Buddhism.md), [The Upanisads](thoughts/The%20Upanisads.md), [qualia](thoughts/qualia.md), [self-knowledge](thoughts/self-knowledge.md), [[thoughts/Primary of Consciousness|Primary of Consciousness]]
 
 Types of consciousness:
 - Phenomenal consciousness (felt consciousness) vs Access consciousness
@@ -60,23 +60,6 @@ This system determines the brain's general level of activation.
 Pure awareness is experienced as "contentless" although it is actually a representation of ARAS
 
 This model is [physicalist](thoughts/Materialism.md) (awareness-as-such is constituted by the brain) and representationalist (awareness-as-such is a neurally constituted representation of the brain's auto-activated wakefulness -- character is tonic alertness with a feeling of knowing)
-
-## Horizonal Conception of Consciousness
-Two conceptions
-1. The horizon is real: it is the farthest point the eye can see before the Earth's surface curves away beneath our view
-2. The horizon is ideal: it is a structure of perception but not something that actually exists independent of perception
-
-The horizon is a phenomenal structure of consciousness, not a particular phenomenal property (quale) or phenomenal content. Both [qualia](thoughts/qualia.md) and other phenomenal contents always appear from within the horizon of conscoiusness.
-
-Consciousness then in the horizonal sense is not something we 'have', it is something we live in. There is no way to step outside consciousness and measure it against something else because inside the horizon is all we know
-
-The horizon itself is [empty](thoughts/emptiness.md)
-
-"In principle, it is absurd to think that we can explain consciousness by reducing it to certain objects of science, since these objects are abstract relational structures extracted from the life-world of lived experience" (Husserl)
-
-In science, we constantly forget that lived experience is the source of science and its ground of validity, not the other way around.
-
-Kant defines 'transcendental knowledge' as knowledge which is occupied not so much with objects as with the mode of our knowledge of objects in so far as this mode of knowledge is to be possible *a priori*
 
 ## Problems with information theories of consciousness
 [Frontiers in Systems Neuroscience](https://www.frontiersin.org/articles/10.3389/fnsys.2014.00225/full)

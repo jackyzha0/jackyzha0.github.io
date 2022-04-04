@@ -9,6 +9,8 @@ Opposite take to that of [Materialism](thoughts/Materialism.md). Panpsychists de
 
 > Everything physical is also mental or phenomenal or experiential
 
+See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
+
 ## Eddington, Russell, Strawson's argument for panpsychism
 1. Physical science tells us about only the structural and relational properties of physical phenomena.
 2. Relational properties are determined by intrinsic properties
