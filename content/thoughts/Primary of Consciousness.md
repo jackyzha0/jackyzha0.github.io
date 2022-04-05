@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-What even does primary mean in this context?
+Related: [[thoughts/consciousness|consciousness]]
 
 ## Horizon Metaphor
 > The existential primacy of consciousness: consciousness in the horizonal sense is not something we have; it's something we *live*
@@ -44,3 +44,39 @@ Advocates of this interpretation sometimes describe it as ‘participatory reali
 The upshot: there is no simple way to remove our experience as scientists from the characterization of the physical world. Observing it doesn't only affect the measurement, observing it *is* the measurement
 
 Scientific knowledge then is a self-correcting narrative made from the world and our experience of it evolving together (see [[thoughts/philosophy of science|Karl Popper's Philosophy of Science]])
+
+## Is Consciousness Primary?
+Michel Bitbol in *NeuroQuantology*
+
+Posits that consciousness is methodological and existentially primary
+
+- Consciousness is not *something*
+	- Nouns refer to some manipulable or abstract object. But an object is an entity which supposedly exists independently of situations and subjective states.
+	- This cannot possibly be the case as consciousness as experience is situated -- it is what it feels like to be *a* subject/what it feels like to be
+
+Arguing that consciousness is existentially primary and not ontologically secondary to matter. Sartre: "consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual"
+
+> They have forgotten that objective knowledge is 'made possible' by carving the lacuna of first person experience within it... scientists who believe that solving many such "easy problems" about consciousness will finally clear up the harder problem of its physical origin, look like somebody who believes one can finally reach the horizon by walking far enough
+
+In the same way as the walker ignores the category gap between a line *in* space and an apparent line seen *through* space, these scientists ignore the category gap between the exclusively structural connections provided by science and the absolute and the absolute of experience analyzed through a structured framework
+
+Two approaches to overcome the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]] both fail
+1. Absolutizing some properties of matter
+	- If anything can be called "absolute", it is conscious experience
+		- Lived experience is immediately and completely given from a self-evidential standpoint
+		- Future experience can by no means *disconfirm* its existence here and now, but only take its place -- it is absolute in the sense that it is indubitable whenever it is present
+	- Searle: "Consciousness is the very fact that there is appearance; appearance is the reality of consciousness"
+	- Something like "it appears red" instead of "it *is* red". The subjective statement is admittedly indisputable, but the fact is not. This is a *functional absolutization* of the statement
+2. Relativizing/structuralizing experience
+	- Karl Mannheim: coordinating the variety of individual or collective perspectives entails an ever increasing formalization of knowledge
+	- Cassirer: history of science as a whole tends towards relinquishment of substantial and toward research of "invariant relations" instead
+		- If properties are referred to, it is only after the concept of property has been redefined in such a way that it includes in itself the concept of relation
+	- The problem: accounting for the self-evidentially *absolute* conscious experience in terms of the *relational* concepts of objective science
+		- Chalmers and Strawson both attempt to overcome this conflict in naturalist terms, seeking to explain it in terms of some hidden *nonrelational* property
+		- Leibnizian *Monadology*: "we can attribute to substances no other intrinsic state than that whereby we ourselves inwardly determine our sense"
+
+Potential solutions
+1. Instead of absorbing or reducing contents of experience or phenomenological reports into the structural network of objective science, strive towards *embedding* these experiences within a broader relational network of which the law-like relations of the objective domain is only a fraction
+2. Varela's notion of "mutually generative constraints" towards reciprocal alteration and enrichment of experiential and objective concepts
+	1. Phenomenological reports may help to pick out and ascribe meaning to previously unnoticed neural configurations
+	2. Neurological findings may become an incentive for re-categorization and further development in phenomenological research

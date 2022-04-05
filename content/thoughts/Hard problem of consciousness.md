@@ -15,7 +15,8 @@ Chalmers
 - Certain phenomena are functionally definable -- explanation of them requires only the explanation of the relevant functions and the mechanisms that implement them (e.g. hereditary passing of genes and DNA)
 - Consciousness is *not* functionally definable
 	- Defining information discrimination, integration, and reporting does not fully explain consciousness
-- Explanatory Gap
-	- There is no cognitive function such that we can say in advance that explanation of that function will automatically explain subjective experience
+
+## Explanatory Gap
+- There is no cognitive function such that we can say in advance that explanation of that function will automatically explain subjective experience
 
 See [Nagel's Bat Argument](thoughts/Nagel's%20Bat%20Argument.md)
