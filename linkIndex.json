@@ -2080,6 +2080,11 @@
       "/thoughts/Primary-of-Consciousness": [
         {
           "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/qualia",
           "text": "qualia"
         },
@@ -4817,6 +4822,11 @@
       "/thoughts/intelligence": [
         {
           "source": "/thoughts/intelligence",
+          "target": "/thoughts/Materialism",
+          "text": "materialism"
+        },
+        {
+          "source": "/thoughts/intelligence",
           "target": "/thoughts/intentionality",
           "text": "intentionality"
         },
@@ -5133,6 +5143,18 @@
           "source": "/thoughts/interpretive-labour",
           "target": "/thoughts/group-limits",
           "text": "group limits"
+        }
+      ],
+      "/thoughts/intersubjectivity": [
+        {
+          "source": "/thoughts/intersubjectivity",
+          "target": "/thoughts/interdependence",
+          "text": "interdependence"
+        },
+        {
+          "source": "/thoughts/intersubjectivity",
+          "target": "/thoughts/phenomenology",
+          "text": "phenomenology"
         }
       ],
       "/thoughts/interviews-and-data-recording": [
@@ -5783,6 +5805,16 @@
         }
       ],
       "/thoughts/pace-layers": [
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/Bentoism",
+          "text": "Cross-time-scale planning (Bentoism)"
+        },
         {
           "source": "/thoughts/pace-layers",
           "target": "/thoughts/trust",
@@ -7994,6 +8026,11 @@
           "source": "/thoughts/Community-of-Fate",
           "target": "/thoughts/Bentoism",
           "text": "Bentoism"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/Bentoism",
+          "text": "Cross-time-scale planning (Bentoism)"
         }
       ],
       "/thoughts/Bias-in-Search": [
@@ -8852,6 +8889,11 @@
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/Mangrove-Theory-of-the-Internet",
           "text": "Mangrove Theory of the Internet"
+        },
+        {
+          "source": "/thoughts/pace-layers",
+          "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+          "text": "Mangrove Theory of the Internet"
         }
       ],
       "/thoughts/Materialism": [
@@ -8879,6 +8921,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Materialism",
           "text": "physicalist"
+        },
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/Materialism",
+          "text": "materialism"
         },
         {
           "source": "/thoughts/mind-body-problem",
@@ -10192,6 +10239,11 @@
         },
         {
           "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/consciousness",
+          "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
         },
@@ -12496,6 +12548,11 @@
           "text": "interdependent"
         },
         {
+          "source": "/thoughts/intersubjectivity",
+          "target": "/thoughts/interdependence",
+          "text": "interdependence"
+        },
+        {
           "source": "/thoughts/the-Self",
           "target": "/thoughts/interdependence",
           "text": "interdependent"
@@ -13247,6 +13304,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/phenomenology",
           "text": "phenomenologies"
+        },
+        {
+          "source": "/thoughts/intersubjectivity",
+          "target": "/thoughts/phenomenology",
+          "text": "phenomenology"
         }
       ],
       "/thoughts/philosophical-realism": [
@@ -16914,6 +16976,11 @@
     },
     {
       "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/consciousness",
+      "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/Primary-of-Consciousness",
       "target": "/thoughts/qualia",
       "text": "qualia"
     },
@@ -19419,6 +19486,11 @@
     },
     {
       "source": "/thoughts/intelligence",
+      "target": "/thoughts/Materialism",
+      "text": "materialism"
+    },
+    {
+      "source": "/thoughts/intelligence",
       "target": "/thoughts/intentionality",
       "text": "intentionality"
     },
@@ -19721,6 +19793,16 @@
       "source": "/thoughts/interpretive-labour",
       "target": "/thoughts/group-limits",
       "text": "group limits"
+    },
+    {
+      "source": "/thoughts/intersubjectivity",
+      "target": "/thoughts/interdependence",
+      "text": "interdependence"
+    },
+    {
+      "source": "/thoughts/intersubjectivity",
+      "target": "/thoughts/phenomenology",
+      "text": "phenomenology"
     },
     {
       "source": "/thoughts/interviews-and-data-recording",
@@ -20316,6 +20398,16 @@
       "source": "/thoughts/organizing-system",
       "target": "/thoughts/interaction-design",
       "text": "Desktop Metaphor"
+    },
+    {
+      "source": "/thoughts/pace-layers",
+      "target": "/thoughts/Mangrove-Theory-of-the-Internet",
+      "text": "Mangrove Theory of the Internet"
+    },
+    {
+      "source": "/thoughts/pace-layers",
+      "target": "/thoughts/Bentoism",
+      "text": "Cross-time-scale planning (Bentoism)"
     },
     {
       "source": "/thoughts/pace-layers",

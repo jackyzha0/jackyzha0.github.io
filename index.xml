@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Intersubjectivity</title>
+      <link>https://jzhao.xyz/thoughts/intersubjectivity/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/intersubjectivity/</guid>
+      <description>Related: [[thoughts/interdependence|interdependence]], [[thoughts/phenomenology|phenomenology]]
+Subjectivity is the perception or experience of reality from within one&amp;rsquo;s own perspective</description>
+    </item>
+    
+    <item>
       <title>Pattern Matching</title>
       <link>https://jzhao.xyz/thoughts/pattern-matching/</link>
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
@@ -22,7 +32,7 @@ If prior patterns are essential for making sense of things, how can we avoid fal
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Primary-of-Consciousness/</guid>
-      <description>What even does primary mean in this context?
+      <description>Related: [[thoughts/consciousness|consciousness]]
 Horizon Metaphor  The existential primacy of consciousness: consciousness in the horizonal sense is not something we have; it&amp;rsquo;s something we live</description>
     </item>
     
@@ -544,8 +554,7 @@ knowing A short exposition on moving on.</description>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/functional-programming/</guid>
-      <description>Terminology Functor A type that can be mapped over.
-1 2 3  class Functor f where fmap :: (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b (&amp;lt;$) :: a -&amp;gt; f b -&amp;gt; f a   fmap takes a function which maps a value from a to b and applies it to a Functor f.</description>
+      <description>Syntax Quirks  $ :: (a -&amp;gt; b) -&amp;gt; a -&amp;gt; b is function application (adds implicit parentheses and makes it right associative instead of left associative)  Normally, sort &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; would be interpreted as (sort &amp;quot;abc&amp;quot;) ++ &amp;quot;def&amp;quot; If we use the $ operator, we can do sort $ &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; which is interpreted as sort (&amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot;) as intended.</description>
     </item>
     
     <item>
@@ -804,7 +813,7 @@ How do we bridge objective description and subjective experience (qualia)?</desc
       <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/pace-layers/</guid>
-      <description>The order of civilization. The fast layers innovate; the slow layers stabilize.</description>
+      <description>The order of civilization. The whole combines learning with continuity.</description>
     </item>
     
     <item>
@@ -3211,15 +3220,6 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       <guid>https://jzhao.xyz/posts/hootsuite/</guid>
       <description>(with insights from Calvin and Hobbes)
 Since I’ve started at Hootsuite, I have</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/illusion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/illusion/</guid>
-      <description></description>
     </item>
     
     <item>

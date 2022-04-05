@@ -22,8 +22,7 @@
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/functional-programming/</guid>
-      <description>Terminology Functor A type that can be mapped over.
-1 2 3  class Functor f where fmap :: (a -&amp;gt; b) -&amp;gt; f a -&amp;gt; f b (&amp;lt;$) :: a -&amp;gt; f b -&amp;gt; f a   fmap takes a function which maps a value from a to b and applies it to a Functor f.</description>
+      <description>Syntax Quirks  $ :: (a -&amp;gt; b) -&amp;gt; a -&amp;gt; b is function application (adds implicit parentheses and makes it right associative instead of left associative)  Normally, sort &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; would be interpreted as (sort &amp;quot;abc&amp;quot;) ++ &amp;quot;def&amp;quot; If we use the $ operator, we can do sort $ &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; which is interpreted as sort (&amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot;) as intended.</description>
     </item>
     
     <item>

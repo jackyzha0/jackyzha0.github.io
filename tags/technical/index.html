@@ -434,11 +434,10 @@ if (!doNotTrack) {
         <div class="section">
             <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/functional-programming/">Functional Programming</a></h3>
-                <p>Terminology Functor A type that can be mapped over.
-1 2 3  class Functor f where fmap :: (a -&gt; b) -&gt; f a -&gt; f b (&lt;$) :: a -&gt; f b -&gt; f a   fmap takes a function which maps a value from a to b and applies it to a Functor f....</p>
+                <p>Syntax Quirks  $ :: (a -&gt; b) -&gt; a -&gt; b is function application (adds implicit parentheses and makes it right associative instead of left associative)  Normally, sort &quot;abc&quot; ++ &quot;def&quot; would be interpreted as (sort &quot;abc&quot;) ++ &quot;def&quot; If we use the $ operator, we can do sort $ &quot;abc&quot; ++ &quot;def&quot; which is interpreted as sort (&quot;abc&quot; ++ &quot;def&quot;) as intended....</p>
             </div>
             <p class="meta">
-                3 minute read. Last updated February 26, 2022
+                5 minute read. Last updated April 5, 2022
             </p>
             <ul class="tags">
     
