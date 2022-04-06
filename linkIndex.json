@@ -2002,6 +2002,11 @@
         },
         {
           "source": "/thoughts/Ny%C4%81ya",
+          "target": "/thoughts/ontology",
+          "text": "ontology"
+        },
+        {
+          "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/testimony",
           "text": "testimony"
         },
@@ -2026,6 +2031,11 @@
           "source": "/thoughts/Panpsychism",
           "target": "/thoughts/Materialism",
           "text": "Physicalism"
+        },
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/monism",
+          "text": "Monism"
         },
         {
           "source": "/thoughts/Panpsychism",
@@ -2102,6 +2112,11 @@
           "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/philosophy-of-science",
           "text": "Karl Popper's Philosophy of Science"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/ontology",
+          "text": "ontologically"
         },
         {
           "source": "/thoughts/Primary-of-Consciousness",
@@ -3076,6 +3091,13 @@
           "text": "Dunbar's Number"
         }
       ],
+      "/thoughts/complexity": [
+        {
+          "source": "/thoughts/complexity",
+          "target": "/thoughts/Galls-law",
+          "text": "Gall's Law"
+        }
+      ],
       "/thoughts/computability": [
         {
           "source": "/thoughts/computability",
@@ -3737,6 +3759,11 @@
           "source": "/thoughts/emptiness",
           "target": "/thoughts/interdependence",
           "text": "interdependent"
+        },
+        {
+          "source": "/thoughts/emptiness",
+          "target": "/thoughts/ontology",
+          "text": "ontological"
         }
       ],
       "/thoughts/ephemereal-content": [
@@ -4206,6 +4233,31 @@
         },
         {
           "source": "/thoughts/games",
+          "target": "/thoughts/Moving-Castles",
+          "text": "Moving Castles"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/Galls-law",
+          "text": "Gall's Law"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/complexity",
+          "text": "Kolmogorov Complexity"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/interaction-design",
+          "text": "interaction design"
+        },
+        {
+          "source": "/thoughts/games",
           "target": "/thoughts/quantization",
           "text": "Quantization"
         },
@@ -4398,6 +4450,11 @@
         },
         {
           "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/ontology",
+          "text": "Ontologically"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/epistemology",
           "text": "Epistemologically"
         },
@@ -4489,6 +4546,11 @@
       "/thoughts/idea-list": [
         {
           "source": "/thoughts/idea-list",
+          "target": "/thoughts/Rhizome",
+          "text": "Rhizome"
+        },
+        {
+          "source": "/thoughts/idea-list",
           "target": "/thoughts/interoperability",
           "text": "interoperability"
         },
@@ -4563,6 +4625,23 @@
           "text": "workflows"
         }
       ],
+      "/thoughts/idealism": [
+        {
+          "source": "/thoughts/idealism",
+          "target": "/thoughts/self-knowledge",
+          "text": "Self-awareness"
+        },
+        {
+          "source": "/thoughts/idealism",
+          "target": "/thoughts/ontology",
+          "text": "ontological"
+        },
+        {
+          "source": "/thoughts/idealism",
+          "target": "/thoughts/the-Self",
+          "text": "the self"
+        }
+      ],
       "/thoughts/idolization": [
         {
           "source": "/thoughts/idolization",
@@ -4634,6 +4713,11 @@
           "source": "/thoughts/indeterminant",
           "target": "/thoughts/Twin-Earth-Argument",
           "text": "Twin Earth Argument"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/ontology",
+          "text": "Ontologies"
         },
         {
           "source": "/thoughts/indeterminant",
@@ -4835,6 +4919,11 @@
         }
       ],
       "/thoughts/intelligence": [
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/ontology",
+          "text": "Ontologically"
+        },
         {
           "source": "/thoughts/intelligence",
           "target": "/thoughts/Materialism",
@@ -5551,6 +5640,18 @@
           "text": "conceptual model"
         }
       ],
+      "/thoughts/metaphysics": [
+        {
+          "source": "/thoughts/metaphysics",
+          "target": "/thoughts/ontology",
+          "text": "ontology"
+        },
+        {
+          "source": "/thoughts/metaphysics",
+          "target": "/thoughts/epistemology",
+          "text": "epistemology"
+        }
+      ],
       "/thoughts/mimetic": [
         {
           "source": "/thoughts/mimetic",
@@ -5573,6 +5674,11 @@
           "source": "/thoughts/mind-body-problem",
           "target": "/thoughts/Materialism",
           "text": "Materialism"
+        },
+        {
+          "source": "/thoughts/mind-body-problem",
+          "target": "/thoughts/idealism",
+          "text": "idealism"
         }
       ],
       "/thoughts/mindfulness": [
@@ -5669,6 +5775,18 @@
           "text": "social contracts"
         }
       ],
+      "/thoughts/monism": [
+        {
+          "source": "/thoughts/monism",
+          "target": "/thoughts/idealism",
+          "text": "Idealism"
+        },
+        {
+          "source": "/thoughts/monism",
+          "target": "/thoughts/Materialism",
+          "text": "Materialism"
+        }
+      ],
       "/thoughts/move-fast-and-break-things": [
         {
           "source": "/thoughts/move-fast-and-break-things",
@@ -5751,6 +5869,18 @@
           "source": "/thoughts/new-DARPA",
           "target": "/thoughts/academia",
           "text": "universities"
+        }
+      ],
+      "/thoughts/ontology": [
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysics"
+        },
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/context",
+          "text": "context"
         }
       ],
       "/thoughts/optical-flow": [
@@ -6626,11 +6756,6 @@
           "source": "/thoughts/self-knowledge",
           "target": "/thoughts/the-Self",
           "text": "the self"
-        },
-        {
-          "source": "/thoughts/self-knowledge",
-          "target": "/thoughts/the-Self",
-          "text": "the self"
         }
       ],
       "/thoughts/selfish": [
@@ -6670,6 +6795,16 @@
           "source": "/thoughts/semantics",
           "target": "/thoughts/Twin-Earth-Argument",
           "text": "Twin Earth Argument"
+        },
+        {
+          "source": "/thoughts/semantics",
+          "target": "/thoughts/epistemology",
+          "text": "epistemically"
+        },
+        {
+          "source": "/thoughts/semantics",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysically"
         },
         {
           "source": "/thoughts/semantics",
@@ -8481,9 +8616,19 @@
       ],
       "/thoughts/Galls-law": [
         {
+          "source": "/thoughts/complexity",
+          "target": "/thoughts/Galls-law",
+          "text": "Gall's Law"
+        },
+        {
           "source": "/thoughts/emergent-behaviour",
           "target": "/thoughts/Galls-law",
           "text": "Gall's law"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/Galls-law",
+          "text": "Gall's Law"
         },
         {
           "source": "/thoughts/governance",
@@ -8948,6 +9093,11 @@
           "text": "Materialism"
         },
         {
+          "source": "/thoughts/monism",
+          "target": "/thoughts/Materialism",
+          "text": "Materialism"
+        },
+        {
           "source": "/thoughts/play",
           "target": "/thoughts/Materialism",
           "text": "materialism"
@@ -9039,6 +9189,11 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/Moving-Castles",
           "text": "Moving Castles and Wizards"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/Moving-Castles",
+          "text": "Moving Castles"
         }
       ],
       "/thoughts/Mutual-Aid": [
@@ -9346,6 +9501,11 @@
         }
       ],
       "/thoughts/Rhizome": [
+        {
+          "source": "/thoughts/idea-list",
+          "target": "/thoughts/Rhizome",
+          "text": "Rhizome"
+        },
         {
           "source": "/thoughts/idea-list",
           "target": "/thoughts/Rhizome",
@@ -10181,6 +10341,11 @@
           "source": "/thoughts/Galls-law",
           "target": "/thoughts/complexity",
           "text": "complexity"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/complexity",
+          "text": "Kolmogorov Complexity"
         }
       ],
       "/thoughts/computability": [
@@ -10477,6 +10642,11 @@
         },
         {
           "source": "/thoughts/mental-model",
+          "target": "/thoughts/context",
+          "text": "context"
+        },
+        {
+          "source": "/thoughts/ontology",
           "target": "/thoughts/context",
           "text": "context"
         },
@@ -11298,6 +11468,11 @@
           "text": "epistemology"
         },
         {
+          "source": "/thoughts/metaphysics",
+          "target": "/thoughts/epistemology",
+          "text": "epistemology"
+        },
+        {
           "source": "/thoughts/progress",
           "target": "/thoughts/epistemology",
           "text": "epistemology"
@@ -11306,6 +11481,11 @@
           "source": "/thoughts/search",
           "target": "/thoughts/epistemology",
           "text": "epistemological"
+        },
+        {
+          "source": "/thoughts/semantics",
+          "target": "/thoughts/epistemology",
+          "text": "epistemically"
         },
         {
           "source": "/thoughts/testimony",
@@ -12023,6 +12203,18 @@
           "text": "minigrants"
         }
       ],
+      "/thoughts/idealism": [
+        {
+          "source": "/thoughts/mind-body-problem",
+          "target": "/thoughts/idealism",
+          "text": "idealism"
+        },
+        {
+          "source": "/thoughts/monism",
+          "target": "/thoughts/idealism",
+          "text": "Idealism"
+        }
+      ],
       "/thoughts/idolization": [
         {
           "source": "/thoughts/introductions",
@@ -12509,6 +12701,11 @@
           "text": "interaction design"
         },
         {
+          "source": "/thoughts/games",
+          "target": "/thoughts/interaction-design",
+          "text": "interaction design"
+        },
+        {
           "source": "/thoughts/human-computer-interaction",
           "target": "/thoughts/interaction-design",
           "text": "designing interactions"
@@ -12918,6 +13115,18 @@
           "text": "Metalabel"
         }
       ],
+      "/thoughts/metaphysics": [
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysics"
+        },
+        {
+          "source": "/thoughts/semantics",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysically"
+        }
+      ],
       "/thoughts/mimetic": [
         {
           "source": "/thoughts/academia",
@@ -12994,6 +13203,13 @@
           "source": "/thoughts/vr",
           "target": "/thoughts/money",
           "text": "monetary"
+        }
+      ],
+      "/thoughts/monism": [
+        {
+          "source": "/thoughts/Panpsychism",
+          "target": "/thoughts/monism",
+          "text": "Monism"
         }
       ],
       "/thoughts/move-fast-and-break-things": [
@@ -13101,6 +13317,48 @@
           "source": "/thoughts/computer-vision",
           "target": "/thoughts/object-detection",
           "text": "Object detection/recognition (Template Matching, Keypoint Descriptors)"
+        }
+      ],
+      "/thoughts/ontology": [
+        {
+          "source": "/thoughts/Ny%C4%81ya",
+          "target": "/thoughts/ontology",
+          "text": "ontology"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/ontology",
+          "text": "ontologically"
+        },
+        {
+          "source": "/thoughts/emptiness",
+          "target": "/thoughts/ontology",
+          "text": "ontological"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/ontology",
+          "text": "Ontologically"
+        },
+        {
+          "source": "/thoughts/idealism",
+          "target": "/thoughts/ontology",
+          "text": "ontological"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/ontology",
+          "text": "Ontologies"
+        },
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/ontology",
+          "text": "Ontologically"
+        },
+        {
+          "source": "/thoughts/metaphysics",
+          "target": "/thoughts/ontology",
+          "text": "ontology"
         }
       ],
       "/thoughts/optical-flow": [
@@ -13292,6 +13550,11 @@
           "source": "/thoughts/digital-permanence",
           "target": "/thoughts/peer-to-peer",
           "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/games",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
         },
         {
           "source": "/thoughts/idea-list",
@@ -14106,6 +14369,11 @@
           "text": "self-knowledge"
         },
         {
+          "source": "/thoughts/idealism",
+          "target": "/thoughts/self-knowledge",
+          "text": "Self-awareness"
+        },
+        {
           "source": "/thoughts/selfish",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
@@ -14493,12 +14761,12 @@
           "text": "the self"
         },
         {
-          "source": "/thoughts/philosophy-of-mind",
+          "source": "/thoughts/idealism",
           "target": "/thoughts/the-Self",
           "text": "the self"
         },
         {
-          "source": "/thoughts/self-knowledge",
+          "source": "/thoughts/philosophy-of-mind",
           "target": "/thoughts/the-Self",
           "text": "the self"
         },
@@ -16926,6 +17194,11 @@
     },
     {
       "source": "/thoughts/Ny%C4%81ya",
+      "target": "/thoughts/ontology",
+      "text": "ontology"
+    },
+    {
+      "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/testimony",
       "text": "testimony"
     },
@@ -16948,6 +17221,11 @@
       "source": "/thoughts/Panpsychism",
       "target": "/thoughts/Materialism",
       "text": "Physicalism"
+    },
+    {
+      "source": "/thoughts/Panpsychism",
+      "target": "/thoughts/monism",
+      "text": "Monism"
     },
     {
       "source": "/thoughts/Panpsychism",
@@ -17018,6 +17296,11 @@
       "source": "/thoughts/Primary-of-Consciousness",
       "target": "/thoughts/philosophy-of-science",
       "text": "Karl Popper's Philosophy of Science"
+    },
+    {
+      "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/ontology",
+      "text": "ontologically"
     },
     {
       "source": "/thoughts/Primary-of-Consciousness",
@@ -17900,6 +18183,11 @@
       "text": "Dunbar's Number"
     },
     {
+      "source": "/thoughts/complexity",
+      "target": "/thoughts/Galls-law",
+      "text": "Gall's Law"
+    },
+    {
       "source": "/thoughts/computability",
       "target": "/thoughts/representation",
       "text": "representations"
@@ -18505,6 +18793,11 @@
       "text": "interdependent"
     },
     {
+      "source": "/thoughts/emptiness",
+      "target": "/thoughts/ontology",
+      "text": "ontological"
+    },
+    {
       "source": "/thoughts/ephemereal-content",
       "target": "/thoughts/digital-permanence",
       "text": "digital permanence"
@@ -18936,6 +19229,31 @@
     },
     {
       "source": "/thoughts/games",
+      "target": "/thoughts/Moving-Castles",
+      "text": "Moving Castles"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/Galls-law",
+      "text": "Gall's Law"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/complexity",
+      "text": "Kolmogorov Complexity"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
+    },
+    {
+      "source": "/thoughts/games",
+      "target": "/thoughts/interaction-design",
+      "text": "interaction design"
+    },
+    {
+      "source": "/thoughts/games",
       "target": "/thoughts/quantization",
       "text": "Quantization"
     },
@@ -19116,6 +19434,11 @@
     },
     {
       "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/ontology",
+      "text": "Ontologically"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
       "target": "/thoughts/epistemology",
       "text": "Epistemologically"
     },
@@ -19201,6 +19524,11 @@
     },
     {
       "source": "/thoughts/idea-list",
+      "target": "/thoughts/Rhizome",
+      "text": "Rhizome"
+    },
+    {
+      "source": "/thoughts/idea-list",
       "target": "/thoughts/interoperability",
       "text": "interoperability"
     },
@@ -19275,6 +19603,21 @@
       "text": "workflows"
     },
     {
+      "source": "/thoughts/idealism",
+      "target": "/thoughts/self-knowledge",
+      "text": "Self-awareness"
+    },
+    {
+      "source": "/thoughts/idealism",
+      "target": "/thoughts/ontology",
+      "text": "ontological"
+    },
+    {
+      "source": "/thoughts/idealism",
+      "target": "/thoughts/the-Self",
+      "text": "the self"
+    },
+    {
       "source": "/thoughts/idolization",
       "target": "/posts/a-failure-resume",
       "text": "failure resumes"
@@ -19338,6 +19681,11 @@
       "source": "/thoughts/indeterminant",
       "target": "/thoughts/Twin-Earth-Argument",
       "text": "Twin Earth Argument"
+    },
+    {
+      "source": "/thoughts/indeterminant",
+      "target": "/thoughts/ontology",
+      "text": "Ontologies"
     },
     {
       "source": "/thoughts/indeterminant",
@@ -19518,6 +19866,11 @@
       "source": "/thoughts/instrumentalism",
       "target": "/thoughts/play",
       "text": "play"
+    },
+    {
+      "source": "/thoughts/intelligence",
+      "target": "/thoughts/ontology",
+      "text": "Ontologically"
     },
     {
       "source": "/thoughts/intelligence",
@@ -20185,6 +20538,16 @@
       "text": "conceptual model"
     },
     {
+      "source": "/thoughts/metaphysics",
+      "target": "/thoughts/ontology",
+      "text": "ontology"
+    },
+    {
+      "source": "/thoughts/metaphysics",
+      "target": "/thoughts/epistemology",
+      "text": "epistemology"
+    },
+    {
       "source": "/thoughts/mimetic",
       "target": "/thoughts/communities",
       "text": "communities"
@@ -20203,6 +20566,11 @@
       "source": "/thoughts/mind-body-problem",
       "target": "/thoughts/Materialism",
       "text": "Materialism"
+    },
+    {
+      "source": "/thoughts/mind-body-problem",
+      "target": "/thoughts/idealism",
+      "text": "idealism"
     },
     {
       "source": "/thoughts/mindfulness",
@@ -20295,6 +20663,16 @@
       "text": "social contracts"
     },
     {
+      "source": "/thoughts/monism",
+      "target": "/thoughts/idealism",
+      "text": "Idealism"
+    },
+    {
+      "source": "/thoughts/monism",
+      "target": "/thoughts/Materialism",
+      "text": "Materialism"
+    },
+    {
       "source": "/thoughts/move-fast-and-break-things",
       "target": "/thoughts/software-and-politics",
       "text": "software and politics"
@@ -20373,6 +20751,16 @@
       "source": "/thoughts/new-DARPA",
       "target": "/thoughts/academia",
       "text": "universities"
+    },
+    {
+      "source": "/thoughts/ontology",
+      "target": "/thoughts/metaphysics",
+      "text": "metaphysics"
+    },
+    {
+      "source": "/thoughts/ontology",
+      "target": "/thoughts/context",
+      "text": "context"
     },
     {
       "source": "/thoughts/optical-flow",
@@ -21180,11 +21568,6 @@
       "text": "the self"
     },
     {
-      "source": "/thoughts/self-knowledge",
-      "target": "/thoughts/the-Self",
-      "text": "the self"
-    },
-    {
       "source": "/thoughts/selfish",
       "target": "/thoughts/effective-altruism",
       "text": "altruism"
@@ -21218,6 +21601,16 @@
       "source": "/thoughts/semantics",
       "target": "/thoughts/Twin-Earth-Argument",
       "text": "Twin Earth Argument"
+    },
+    {
+      "source": "/thoughts/semantics",
+      "target": "/thoughts/epistemology",
+      "text": "epistemically"
+    },
+    {
+      "source": "/thoughts/semantics",
+      "target": "/thoughts/metaphysics",
+      "text": "metaphysically"
     },
     {
       "source": "/thoughts/semantics",
