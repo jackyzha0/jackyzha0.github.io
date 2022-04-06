@@ -75,7 +75,7 @@ Posits that consciousness is methodological and existentially primary
 	- Nouns refer to some manipulable or abstract object. But an object is an entity which supposedly exists independently of situations and subjective states.
 	- This cannot possibly be the case as consciousness as experience is situated -- it is what it feels like to be *a* subject/what it feels like to be
 
-Arguing that consciousness is existentially primary and not ontologically secondary to matter. Sartre: "consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual"
+Arguing that consciousness is existentially primary and not [[thoughts/ontology|ontologically]] secondary to matter. Sartre: "consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual"
 
 > They have forgotten that objective knowledge is 'made possible' by carving the lacuna of first person experience within it... scientists who believe that solving many such "easy problems" about consciousness will finally clear up the harder problem of its physical origin, look like somebody who believes one can finally reach the horizon by walking far enough
 

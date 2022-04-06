@@ -9,7 +9,7 @@ tags:
 
 Nyāya is a major proponent of [philosophical realism](thoughts/philosophical%20realism.md) -- cognition is only possible because it is dependent on the objects in this world.
 
-Nyāya adopts the Vaiśeṣika ontology, which posits that seven different types of things:
+Nyāya adopts the Vaiśeṣika [[thoughts/ontology|ontology]], which posits that seven different types of things:
 1. Universals (node)
 2. Qualities (node)
 3. Motions (node)

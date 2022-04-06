@@ -21,7 +21,7 @@ It is always a form of powerlessness, whether structural or one-off. If one can 
 
 This quotes from Nancy Hartsock has at least 3 different readings of the meaning of the word structured
 1. Materially: social institutions and practices favour the powerful
-2. Ontologically: the powerful constitute the social world
+2. [[thoughts/ontology|Ontologically]]: the powerful constitute the social world
 3. [Epistemologically](thoughts/epistemology.md): the powerful have an unfair advantage in structuring collective social understandings
 
 ## Willful Hermeneutical Ignorance

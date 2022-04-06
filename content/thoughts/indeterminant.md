@@ -28,7 +28,7 @@ The form usually is 'this thing is a shell' which is in the form of $F\alpha$ wh
 - Akin to the [Twin Earth Argument](thoughts/Twin%20Earth%20Argument.md), "this" can refer to different things
 	- Like variable naming in programming languages where unification would not unify two 'this' from different scopes
 
-Ontologies are theories of objects -- a conception of what the world is made up of. Ontologies need to be *interpreted*
+[[thoughts/ontology|Ontologies]] are theories of objects -- a conception of what the world is made up of. Ontologies need to be *interpreted*
 
 ## Erroneous Cognition
 - A cognition is valid if it discriminates between that object and all others.

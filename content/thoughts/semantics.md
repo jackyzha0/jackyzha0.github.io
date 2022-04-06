@@ -1,5 +1,5 @@
 ---
-title: "Semantics: What is Meaning?"
+title: "Semantics"
 date: 2021-07-02T13:49:27-04:00
 tags:
 - seed
@@ -37,8 +37,8 @@ Meanings are public property: the same meaning be grasped by more than one perso
 	-   i.e. one we have discovered that water (in the actual world) is h2o, nothing counts as a possible world in which water isn't h2o
 -   water at another time or in another place or even in another possible world has to bear the relation same to our "water" in order to be water
 -   types of statements
-	-   epistemically necessary → rationally unrevisable
-	-   metaphysically necessary → true in all possible worlds
+	-   [[thoughts/epistemology|epistemically]] necessary → rationally unrevisable
+	-   [[thoughts/metaphysics|metaphysically]] necessary → true in all possible worlds
 
 # Pryor
 - would the experiences in [Nozick's Experience Machine](thoughts/Nozick's%20Experience%20Machine.md) be the same as real ones?

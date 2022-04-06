@@ -28,7 +28,7 @@ See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 ## Strawson's Panpsychism
 [Physicalism](thoughts/Materialism.md) actually entails panpsychism
 
-1. Monism is true (there is only one kind of 'stuff' in the universe)
+1. [[thoughts/monism|Monism]] is true (there is only one kind of 'stuff' in the universe)
 2. Experiential phenomena are real phenomena (denies illusionism: see [philosophical realism](thoughts/philosophical%20realism.md)))
 3. All concrete phenomena are physical
 4. Therefore experiential phenomena are physical

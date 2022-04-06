@@ -3,6 +3,8 @@ title: "Mind-Body Problem"
 date: 2021-07-02T15:43:59-04:00
 tags:
 - sapling
+aliases:
+- mind-body problem
 ---
 
 Concerned with how the mind and body are connected to one another
@@ -16,7 +18,7 @@ Approaches
 -   [Materialism](thoughts/Materialism.md) (physicalism) → minds and brains are identical (identity theory)
     -   nothing magical about minds, just the brains activity
 -   dualism → minds are distinct from the brain
--   idealism → everything is mental/in the mind
+-   [[thoughts/idealism|idealism]] → everything is mental/in the mind
 
 ## Considering other minds
 -   for own mind → introspection works, more or less

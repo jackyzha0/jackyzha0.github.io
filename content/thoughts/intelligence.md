@@ -19,7 +19,7 @@ There are two ways of thinking about it
 Thought alone is not enough, the thoughts need to do something, and sometimes explain the doing. Actions that are not governed by/explained by thought are not intelligent
 
 ## Biological naturalism (Searle)
-Ontologically equivalent to [[thoughts/Materialism|materialism]]
+[[thoughts/ontology|Ontologically]] equivalent to [[thoughts/Materialism|materialism]]
 
 Two main theses:
 1.  all mental phenomena from pains, tickles, and itches to the most abstruse thoughts are caused by lower-level neurobiological processes in the brain
