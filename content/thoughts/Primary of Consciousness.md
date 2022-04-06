@@ -7,6 +7,20 @@ tags:
 
 Related: [[thoughts/consciousness|consciousness]]
 
+## Primacy of Consciousness
+> Is consciousness primary?
+
+- What does it mean for consciousness to be primary?
+	- to be the first and foremost
+	- Explaining it with life-world: two conceptions on the world and the universe
+		- Define the life-world as the space of meaning within which anything is intelligible and thinkable
+		- Natural Science: the universe contains the life-world
+		- Philosophy: the life-world contains the universe; the universe is always disclosed to us from within the life-world
+- Arguing that consciousness is existentially primary and not ontologically secondary to matter.
+	- Sartre: “consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual”
+	- They have forgotten that objective knowledge is ‘made possible’ by carving the lacuna of first person experience within it… scientists who believe that solving many such “easy problems” about consciousness will finally clear up the harder problem of its physical origin, look like somebody who believes one can finally reach the horizon by walking far enough
+	- In the same way as the walker ignores the category gap between a line _in_ space and an apparent line seen _through_ space, these scientists ignore the category gap between the exclusively structural connections provided by science and the absolute and the absolute of experience analyzed through a structured framework
+
 - physics only tells us what it does but not what it is
 - universe can't purely be relational: 
 	- for there to be a relation, there must be two things being related

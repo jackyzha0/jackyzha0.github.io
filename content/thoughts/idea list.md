@@ -8,6 +8,7 @@ tags:
 
 -   baba is you but for browser interactions
 	-   data plane is main source of truth
+		- optionally replicated using [[thoughts/Rhizome|Rhizome]]
 	-   data inputs like webcam, keyboard, mouse, window size, etc.
 	-   relations are from data plane → data plane (no functions!)
 		- e.g. x bounces off of y

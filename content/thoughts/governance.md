@@ -27,6 +27,8 @@ Related: [Moderation](thoughts/Moderation.md)
 
 ![](/thoughts/images/online-governance-regimes.png)
 
+See also: [[thoughts/games#Bartle Taxonomy of Player Types|Bartle Taxonomy of Player Types]]
+
 Four Online Governance Regimes:
 -   **Hobbesian:** Governance ideas responding to wild defaults and low alignment that attempt to foster progress despite conflict and chaos
 	- Generally ok for early years of a subculture or a social network but fails when it scales or becomes popular (e.g. external influence is too strong)

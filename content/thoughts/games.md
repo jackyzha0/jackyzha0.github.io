@@ -5,10 +5,14 @@ tags:
 - seed
 ---
 
-Related: [game theory](thoughts/game%20theory.md), [game design](thoughts/game%20design.md), [The Grasshopper](thoughts/The%20Grasshopper.md)
+Related: [game theory](thoughts/game%20theory.md), [game design](thoughts/game%20design.md), [The Grasshopper](thoughts/The%20Grasshopper.md), [[thoughts/Moving Castles|Moving Castles]]
+
+Games are interesting when the underlying rules are simple (see: [[thoughts/Gall's law|Gall's Law]], low [[thoughts/complexity|Kolmogorov Complexity]]) but exhibit complex behaviour.
+
+The more I think about it the more I think I eventually want to build games. All of my [[thoughts/peer-to-peer|p2p]] infrastructure work now is to build up the tools possible to explore that space of potential games. Games as explorations in [[thoughts/interaction design|interaction design]].
 
 ## A Philosophy of Games
-A Philosophy of Games that is really a Philosophy of Life with [C. Thi Nguyen](https://overcast.fm/+oiPXNKQBw)
+[A Philosophy of Games that is really a Philosophy of Life with C. Thi Nguyen](https://overcast.fm/+oiPXNKQBw)
 
 ## [Quantization](thoughts/quantization.md)
 -  “The most important thing in my game designer toolbox is the point system because the point system tells the players what to care about.” -- Reiner Knizia
