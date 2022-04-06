@@ -73,7 +73,7 @@ Discussion  &ldquo;I want hackathons to embody a starting point not a set timefr
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -459,13 +459,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 
 <a href="/posts/hackathons" rel="noopener" class="internal-link" data-src="/posts/hackathons">Full Post</a></p>
@@ -496,19 +503,19 @@ if (!doNotTrack) {
 <li>Exhaustion is Effervescent</li>
 <li>Precarity is Opportunity</li>
 </ol>
-<p>Hacker Subculture → Work is Play
+<p>Hacker Subculture -&gt; Work is Play
 Informal meetings and clubs of young amateur hackers were energized by the collaborative (and competitive) tinkering of a DIY ethic relating to 1960s 
 
 
 <a href="/thoughts/From-Counterculture-to-Cyberculture" rel="noopener" class="internal-link" data-src="/thoughts/From-Counterculture-to-Cyberculture">counter-culture</a>.</p>
 <p>Hackathons are a multi-site mechanism for both &ldquo;manufacturing&rdquo; innovation and &ldquo;manufacturing consent&rdquo;</p>
 <p>The hackathon acts a a multimodal platform for building social capital as well as facilitating and institutionalizing innovation. Yet the hackathon&rsquo;s corporate sponsors are front and center in control of the event.</p>
-<p>Sponsors fuel the romance of digital innovation by appealing to hackers' apsiration to be multi-dimensional agents of chance. &ldquo;Doers, makers &amp; disruptors,&rdquo; one announcement goes</p>
+<p>Sponsors fuel the romance of digital innovation by appealing to hackers&rsquo; apsiration to be multi-dimensional agents of chance. &ldquo;Doers, makers &amp; disruptors,&rdquo; one announcement goes</p>
 <p>Balance of Recreation and Career
 &ldquo;[Hackathons] are also perfect for my creative spur. I work as a corporate consultant and sometimes miss the research thing, the building of things. Hackathons allow me to do this.&rdquo;</p>
 <p>Sponsors don&rsquo;t really think hackathons are a good recruitment tool. Performance on a hackathon team doesn&rsquo;t give an adequate indication of ability to work on a &ldquo;real&rdquo; team.</p>
 <p>Hackathons are more important for companies because they need to maintain their &lsquo;cool&rsquo; profile.</p>
-
+ 
 
     </article>
     <hr/>

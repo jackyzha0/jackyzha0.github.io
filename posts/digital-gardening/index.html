@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -461,13 +461,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>As of 2021, this process is no longer accurate. I&rsquo;ve embraced a much more networked form of note taking which I&rsquo;ve written about 
 
 
@@ -523,13 +530,13 @@ if (!doNotTrack) {
 
 <img src="/posts/images/digital-gardening/weeds.png" alt="Pulling weeds"  /></p>
 <h2 id="end">End</h2>
-<p>None of what I do is perfect. Looking back at writing from a year ago, reading code from a few months ago even, makes me cringe a little. Like any garden, this one evolves and grows over time; there is no &lsquo;end-state&rsquo; that I&rsquo;m trying to get the garden to. This little garden is just a little place for me to experiment, to push out things that I&rsquo;m working on, and to provide snapshots of all the in-progress things going on in my life.</p>
+<p>None of what I do is perfect. Looking back at writing from a year ago, reading code from a few months ago even, makes me cringe a little. Like any garden, this one evolves and grows over time; there is no &rsquo;end-state&rsquo; that I&rsquo;m trying to get the garden to. This little garden is just a little place for me to experiment, to push out things that I&rsquo;m working on, and to provide snapshots of all the in-progress things going on in my life.</p>
 <p>Through tending to this garden 
 
 
 <a href="/thoughts/building-in-public" rel="noopener" class="internal-link" data-src="/thoughts/building-in-public">in public</a>, I hope to show my success, failures, and everything in between and offer it as an open garden to learn from for anyone who stumbles upon it in the future. If just one person is inspired by it, learns from a mistake I made, or builds off of my work, then I would consider this garden a success.</p>
 <p>Maybe you&rsquo;ll find this as an incentive to start your own.</p>
-
+ 
 
     </article>
     <hr/>

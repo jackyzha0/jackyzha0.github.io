@@ -73,7 +73,7 @@ The universal message bus.">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -466,13 +466,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58" rel="noopener">Source: A Primer to Web3</a></p>
 <p>The universal message bus.</p>
@@ -553,8 +560,8 @@ if (!doNotTrack) {
 <p>I&rsquo;m curious how this relates to 
 
 
-<a href="/thoughts/truth" rel="noopener" class="internal-link" data-src="/thoughts/truth">truth</a>, specifically how different people have different views on &lsquo;reality&rsquo; and &lsquo;truth&rsquo;. How do we reconcile that at a global scale?</p>
-
+<a href="/thoughts/truth" rel="noopener" class="internal-link" data-src="/thoughts/truth">truth</a>, specifically how different people have different views on &lsquo;reality&rsquo; and &rsquo;truth&rsquo;. How do we reconcile that at a global scale?</p>
+ 
 
     </article>
     <hr/>

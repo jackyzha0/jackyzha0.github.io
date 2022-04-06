@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -456,13 +456,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p><em>An exploration on commitment, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><em>An exploration on commitment, 
 
 
 <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a>, and growth.</em></p>
@@ -482,7 +489,7 @@ if (!doNotTrack) {
 <p><em>Hmm. I think there is an element of trust &ndash; that the ground below them will hold, that tomorrow will come again, and that the ocean will continue to rise and fall. Trust is an unquestioning attitude, an absence of deliberation over reliability. To commit is to believe it as a truth about oneself.</em></p>
 <p>Do you think identities can change with time?</p>
 <p><em>Yes. I don&rsquo;t think truth is absolute &ndash; I think truth is a function of identity and identity itself is a function of time. Maybe, at this slice in time, certain axioms hold true about the universe. A few hours, years, millennia might pass and those truths might be different. Our different selves can choose between different systems of meaning and sense as our basic axioms.</em></p>
-<p>I think my sense of self is undergoing a shift. It feels very liquid right now. One supposedly is supposed to &lsquo;live in the present&rsquo; to enjoy the tea<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, but I can&rsquo;t help but feel&hellip; scattered. I feel like I am trying to live too many lives at once and I feel the very fabric of my being being tugged at the seams.</p>
+<p>I think my sense of self is undergoing a shift. It feels very liquid right now. One supposedly is supposed to &rsquo;live in the present&rsquo; to enjoy the tea<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, but I can&rsquo;t help but feel&hellip; scattered. I feel like I am trying to live too many lives at once and I feel the very fabric of my being being tugged at the seams.</p>
 <p><em>I think empathy is a means of time dilation. For one to slow down or speed up their rate of life to match another. Of course, to constantly time travel to bridge the worlds of slow and fast is incredibly tiring. You must be very worn.</em></p>
 <p>I want to be whole again. I want to be able to pour my everything in one life and to live that life well.</p>
 <p><em>I understand. What is stopping you?</em></p>
@@ -518,7 +525,7 @@ if (!doNotTrack) {
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

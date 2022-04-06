@@ -73,7 +73,7 @@ Related: pain is not the unit of effort">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,13 +449,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>From 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>From 
 
 
 <a href="/thoughts/In-Over-Our-Heads" rel="noopener" class="internal-link" data-src="/thoughts/In-Over-Our-Heads">In Over Our Heads</a></p>
@@ -464,7 +471,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/pain" rel="noopener" class="internal-link" data-src="/thoughts/pain">pain</a> is not the unit of effort</p>
 <p>Freudenberger (who first coined the term burnout): &ldquo;almost always an indication that the person&rsquo;s goals have been externally imposed. Somehow [they] embarked on his present course because it was expected of [them]&hellip; [they were] never the authentic source of [their own] choices and consequently they afford little real satisfaction&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

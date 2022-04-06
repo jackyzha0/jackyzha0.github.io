@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -469,18 +469,25 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>In Over Our Heads is about the societal expectations of higher orders of consciousness that most of us do not have.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>In Over Our Heads is about the societal expectations of higher orders of consciousness that most of us do not have.</p>
 <blockquote>
 <p>All of us will spend some portion of our adult lives overmatched by the demands of modernism, the compulsory &ldquo;major&rdquo; in our culture&rsquo;s curriculum.</p>
 </blockquote>
 <p>The book details Robert Kegan’s model of adult development &ndash; basically a series of increasingly sophisticated ways one can approach ethical reasoning.</p>
-<p>Growth is a process of &lsquo;leaving home&rsquo;. It is a process of leaving the mental homes they have furnished and made familiar.</p>
+<p>Growth is a process of &rsquo;leaving home&rsquo;. It is a process of leaving the mental homes they have furnished and made familiar.</p>
 <h2 id="stages-of-adult-development">Stages of Adult Development</h2>
 <h3 id="stage-2-self">Stage 2: Self</h3>
 <ul>
@@ -614,7 +621,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-
+ 
 
     </article>
     <hr/>

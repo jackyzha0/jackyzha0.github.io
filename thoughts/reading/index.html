@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -453,13 +453,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol>
 <li>getting back into reading</li>
 <li>Books, with some effort, can help you learn to walk, but only people can help you orient where to walk. In other (equally vague yet obvious) words, I can’t know (through books), if I don’t know what to know (through people). (quote from eva)</li>
 <li>organizing thoughts</li>
@@ -470,7 +477,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/value-setting" rel="noopener" class="internal-link" data-src="/thoughts/value-setting"><em>why</em> we need to build</a> in the first place. I realized that the problems we try so hard to solve with technology are not tech problems, but human ones.</p>
 <p>I&rsquo;ve started to write more about these ideas, at first to help me organize my own thoughts, but eventually segued into an excuse for me to talk to people about interesting ideas and get their perspective. It&rsquo;s started a sort of chain reaction in a sense, with an observation from a book leading to a conversation with a friend to a blog post ad infinitum — leading me to be a more informed and curious individual.</p>
-
+ 
 
     </article>
     <hr/>

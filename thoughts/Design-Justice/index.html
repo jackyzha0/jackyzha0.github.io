@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -474,13 +474,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="summary">Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="summary">Summary</h2>
 <p>Design Justice focuses not just on design in the visual and aesthetic sense, but also on the design of systems.</p>
 <p>To quote from the book, &ldquo;Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face.&rdquo; The norms, values, and assumptions that are encoded and reproduced in the <em>design</em> of systems can be changed by rethinking our design processes.</p>
 <p>In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and technosolutionism &ndash; all through detailed case studies of real-world design practices and social movements.</p>
@@ -577,10 +584,10 @@ Algorithmic decision systems based on historical data sets reinforce white seupr
 <a href="/posts/hackathons" rel="noopener" class="internal-link" data-src="/posts/hackathons">hackathons</a></p>
 <h4 id="hackathons-the-bad">Hackathons: The Bad</h4>
 <p>Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline.</p>
-<p>&ldquo;Hackathons, time-bounded events where participants write computer code and build apps, have become a popular means of socializing tech students and workers to produce &lsquo;innovation&rsquo; despite little promise of material reward&hellip; [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works' consent in the &lsquo;new&rsquo; economy.&rdquo; (Sharon Zukin and Max Papadantonakis)</p>
+<p>&ldquo;Hackathons, time-bounded events where participants write computer code and build apps, have become a popular means of socializing tech students and workers to produce &lsquo;innovation&rsquo; despite little promise of material reward&hellip; [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works&rsquo; consent in the &rsquo;new&rsquo; economy.&rdquo; (Sharon Zukin and Max Papadantonakis)</p>
 <p>Hackathons provide excellent opportunities for the extraction of free labour.</p>
 <p>The assumption that a &ldquo;hackathon for good&rdquo; will be successful if it produces a new app that can help &ldquo;solve&rdquo; a social problem runs deep.</p>
-<p>Hackathons nearly always focus on problems and rarely build on existing community assets; and people thing hackathons can do things that they usually can&rsquo;t, such as solve big or even little problems, create new products overnight, or &lsquo;level the playing field&rsquo; of innovation through meritocracy. &ldquo;A one day hack for homelessness takes away from the complexity of social justice issues. &hellip; You can&rsquo;t just come up with an app and solve the world&rsquo;s problems&rdquo;</p>
+<p>Hackathons nearly always focus on problems and rarely build on existing community assets; and people thing hackathons can do things that they usually can&rsquo;t, such as solve big or even little problems, create new products overnight, or &rsquo;level the playing field&rsquo; of innovation through meritocracy. &ldquo;A one day hack for homelessness takes away from the complexity of social justice issues. &hellip; You can&rsquo;t just come up with an app and solve the world&rsquo;s problems&rdquo;</p>
 <p>&ldquo;Hackathon spaces cultivate a culture that marginalizes hackers with specific needs, including but not limited to women, people with disabilities, people with non-traditional backgrounds, and even individuals with specific dietary restrictions. By consistently ignoring the health, diet, and care needs of diverse attendees, along with needs based on skill, class, and gender identities, hackathons create an exclusive and hostile environment.&rdquo;</p>
 <h4 id="hackathons-the-good">Hackathons: The Good</h4>
 <p>They are often crucibles of intense and focused learning, making, problem-solving, communtiy building, and play.</p>
@@ -600,7 +607,7 @@ Algorithmic decision systems based on historical data sets reinforce white seupr
 <p>&ldquo;Design by commitee produces mediocrity&rdquo; or &ldquo;we don&rsquo;t want to end up with the lowest-common-denominator design!&rdquo;</p>
 <p>It&rsquo;s true that design justice practitioners have to take care that critique does not become our primary activity; an overemphasis on testing, evaluation, and critique can indeed be ultimately disempowering. At the same time, explicit critique paired with alternative proposals can be very productive.</p>
 <p>Design justice doesn&rsquo;t imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a <em>filter</em> that we use to eliminate most design possibilities from consideration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choics, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.</p>
-
+ 
 
     </article>
     <hr/>

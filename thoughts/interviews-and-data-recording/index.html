@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -482,13 +482,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
 <li>What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.</li>
 <li>What does it mean to collect user data? What techniques can be used, and how useful and reliable is the data that is collected?</li>
 </ul>
@@ -517,9 +524,9 @@ if (!doNotTrack) {
 </ol>
 <h2 id="3-methods-for-data-recording">3 Methods for Data Recording</h2>
 <ol>
-<li>Notes + Photographs → least technical and most flexible way of recording data, but can be difficult to capture the right highlights.</li>
-<li>Audio + Photographs → less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.</li>
-<li>Video → highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants</li>
+<li>Notes + Photographs -&gt; least technical and most flexible way of recording data, but can be difficult to capture the right highlights.</li>
+<li>Audio + Photographs -&gt; less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.</li>
+<li>Video -&gt; highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants</li>
 </ol>
 <h2 id="interviews">Interviews</h2>
 <blockquote>
@@ -537,10 +544,10 @@ if (!doNotTrack) {
 -   use props and visuals → easier to show than tell
 -   Listen well throughout!</p>
 <ol>
-<li>Open-ended/unstructured → exploratory and similar to conversation. Can be time-consuming but can also produce rich insights</li>
-<li>Semi-structured → plans basic script with both closed and open questions but probes interviewee until no new relevants info is there</li>
-<li>Structured → predetermined questions like a questionnaire, study is standardized (same questions with each participant)</li>
-<li>Group interviews → 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences</li>
+<li>Open-ended/unstructured -&gt; exploratory and similar to conversation. Can be time-consuming but can also produce rich insights</li>
+<li>Semi-structured -&gt; plans basic script with both closed and open questions but probes interviewee until no new relevants info is there</li>
+<li>Structured -&gt; predetermined questions like a questionnaire, study is standardized (same questions with each participant)</li>
+<li>Group interviews -&gt; 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences</li>
 </ol>
 <p>Asking questions like &ldquo;Can you tell me a bit more about&hellip;&rdquo; is called probing</p>
 <h3 id="planning">Planning</h3>
@@ -655,7 +662,7 @@ if (!doNotTrack) {
 </ul>
 <p>3 common approaches</p>
 <ol>
-<li>Simple observation: user is given a task, the evaluator just watches. This gives no insight into users' decision process</li>
+<li>Simple observation: user is given a task, the evaluator just watches. This gives no insight into users&rsquo; decision process</li>
 <li>Think aloud: subjects asked to say what they are thinking/doing. However, its hard to talk while concentrating and thinking may alter the way people naturally perform the task.</li>
 <li>Co-discovery learning: two people work together on a task and normal conversation is monitored.</li>
 </ol>
@@ -733,7 +740,7 @@ if (!doNotTrack) {
 <ul>
 <li>used for measuring opinions, attitudes, and beliefs</li>
 <li>widely used for evaluating user satisfaction</li>
-<li>Likert: a five, seven, or nine-point agreement scale used to measure respondents' agreement with various statements</li>
+<li>Likert: a five, seven, or nine-point agreement scale used to measure respondents&rsquo; agreement with various statements</li>
 <li>semantic differential scale: rely on choosing pairs of adjectives to explore a range of bipolar attitudes about particular opinions</li>
 </ul>
 </li>
@@ -819,7 +826,7 @@ if (!doNotTrack) {
 <h3 id="critical-incident-analysis">Critical Incident Analysis</h3>
 <p>Helps identify significant subsets of data for more detailed analysis.</p>
 <p>This is not about summarizing all incidients, more like finding gold nuggets. Incidents need not be bad all the time, can be either desirable or undesirable.</p>
-
+ 
 
     </article>
     <hr/>

@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -453,13 +453,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>&ldquo;Perception is a cognition that has arisen from the contact of sense faculty and object and is inexpressible, not erroneous, and determinate in nature.&rdquo;</p>
 </blockquote>
 <p>Nyāya is a major proponent of 
@@ -489,7 +496,7 @@ This ontology of a directed graph in which inherence relations connect things in
 <p>Counter against the dream argument (perception of knowledge is akin to conception of objects in dreams) &ndash; similar to 
 
 
-<a href="/thoughts/Descartes-Meditations" rel="noopener" class="internal-link" data-src="/thoughts/Descartes-Meditations">Descartes' Dream Argument</a></p>
+<a href="/thoughts/Descartes-Meditations" rel="noopener" class="internal-link" data-src="/thoughts/Descartes-Meditations">Descartes&rsquo; Dream Argument</a></p>
 <ol>
 <li>Dreams aren&rsquo;t real because we can wake up</li>
 <li>Alternatively, dream objects fall apart under close examination</li>
@@ -504,10 +511,10 @@ This ontology of a directed graph in which inherence relations connect things in
 <li>I could not mistakenly see a person in the distance if I didn&rsquo;t have the concept of a person, and Nyāya argues that in order to have such a concept, I must have had knowledge of people in the past.</li>
 </ul>
 </li>
-<li>Not true that incorrect understands have convergent content, the essence of things implies natural diversity in the similarity of things. (Argument against the fact that &lsquo;nothing can be explained&rsquo;)</li>
+<li>Not true that incorrect understands have convergent content, the essence of things implies natural diversity in the similarity of things. (Argument against the fact that &rsquo;nothing can be explained&rsquo;)</li>
 <li>Erroneous and dream cognition are both real, they have specific content arising from specific causes</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -461,13 +461,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>&ldquo;Where is the knowledge we have lost in the information?&rdquo; &ndash; T.S. Eliot&rsquo;s &ldquo;The Rock&rdquo;</p>
 </blockquote>
 <p>Our obsession of applying labels to everything extends to even whether a 
@@ -530,14 +537,14 @@ More on this in
 <a href="https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/amp/" rel="noopener">Source: Can you make AI fairer than a judge? Play our courtroom algorithm game in <em>MIT Technology Review</em></a></p>
 <p>No matter how much data we collect, two people who look the same to the algorithm can always end up making different choices.</p>
 <p>We gave you two definitions of fairness: keep the error rates comparable between groups, and treat people with the same risk scores in the same way. Both of these definitions are totally defensible! But satisfying both at the same time is impossible.</p>
-<p>relevant bit on algorithms and algorithmic decision making → 
+<p>relevant bit on algorithms and algorithmic decision making -&gt; 
 
 
 <a href="/thoughts/To-Live-in-their-Utopia" rel="noopener" class="internal-link" data-src="/thoughts/To-Live-in-their-Utopia">To Live in their Utopia</a>, 
 
 
 <a href="/thoughts/Algorithms-of-Oppression" rel="noopener" class="internal-link" data-src="/thoughts/Algorithms-of-Oppression">Algorithms of Oppression</a></p>
-
+ 
 
     </article>
     <hr/>

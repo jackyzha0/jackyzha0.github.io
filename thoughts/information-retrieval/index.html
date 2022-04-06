@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -467,13 +467,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 
 <a href="/thoughts/information-foraging" rel="noopener" class="internal-link" data-src="/thoughts/information-foraging">Information foraging</a> as a metaphor for exploring information retrieval and seeking. Heavily tied to 
@@ -502,7 +509,7 @@ if (!doNotTrack) {
 <li>Information retrival system (combination of method to index, organization of the collection, and method of querying and searching the collection)</li>
 </ul>
 <h2 id="cranfieldsmart-paradigm">Cranfield/SMART Paradigm</h2>
-<p>A &lsquo;test collection&rsquo; is constructed, consisting of a collection of documents, a set of descriptions of information &lsquo;needs&rsquo;, and an exhaustive evaluation of the relevance of each document to each information need description.</p>
+<p>A &rsquo;test collection&rsquo; is constructed, consisting of a collection of documents, a set of descriptions of information &rsquo;needs&rsquo;, and an exhaustive evaluation of the relevance of each document to each information need description.</p>
 <p>Why it may be faulty:</p>
 <ul>
 <li>relevance assessments are collected once for each information need for each document alone, without reference to any other document (most queries involve looking at multiple sources, relevance can depend on documents they have seen before)</li>
@@ -551,7 +558,7 @@ if (!doNotTrack) {
 <li>how to introduce the search facility to the user</li>
 <li>the role of evaluation and feedback in the redesign cycle</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

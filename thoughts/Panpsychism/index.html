@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -458,28 +458,42 @@ if (!doNotTrack) {
       </aside>
       
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
       
       
       
       
       
       
+      
+      
+      
+      
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-          
-          
-          
         
       
-      <p>Opposite take to that of 
+    
+  
+
+<p>Opposite take to that of 
 
 
 <a href="/thoughts/Materialism" rel="noopener" class="internal-link" data-src="/thoughts/Materialism">Materialism</a>. Panpsychists deny that the mind is fundamentally non-mental.</p>
@@ -526,7 +540,7 @@ if (!doNotTrack) {
 <li>If at least some elementary physical phenomena must also be experiential, it&rsquo;s far more likely that all of them are (otherwise there would be radical heterogeneity edging on dualism and we are assuming that monism is true)</li>
 <li>Therefore, panpsychism is true</li>
 </ol>
-
+ 
 
     </article>
     <hr/>
@@ -545,6 +559,11 @@ if (!doNotTrack) {
         
         <li>
             <a href="/thoughts/Consciousness-is-not-Information">Consciousness is not Information</a>
+        </li>
+        
+        
+        <li>
+            <a href="/thoughts/Integrated-Information-Theory-of-Consciousness-IIT">Integrated Information Theory of Consciousness (IIT)</a>
         </li>
         
         

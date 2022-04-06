@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -503,13 +503,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 <img src="https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png" alt="An image of the reflect block page"  /><em>How do we tell that this is a “valid” intent?</em></p>
 <p>A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.</p>
 <h2 id="the-problem">The problem</h2>
@@ -726,9 +733,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">stripPunctuation</span><span class="p">(</span><span class="s2">&#34;I don&#39;t know if I&#39;m being productive! :(&#34;</span><span class="p">)</span> 
-<span class="o">&gt;</span> <span class="s2">&#34;I dont know if Im being productive&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stripPunctuation</span><span class="p">(</span><span class="s2">&#34;I don&#39;t know if I&#39;m being productive! :(&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="s2">&#34;I dont know if Im being productive&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="make-everything-lowercase">Make everything lowercase</h3>
 <p>Additionally, we found that in this particular setting, capital letters also didn’t matter that much. Because of the nature we collect our data (just a simple textbox), users tend to not bother with capitalization. As such, we remove it to make it consistent across our data.</p>
@@ -738,9 +745,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">lower</span><span class="p">(</span><span class="s2">&#34;I dont know if Im being productive&#34;</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="s2">&#34;i dont know if im being productive&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lower</span><span class="p">(</span><span class="s2">&#34;I dont know if Im being productive&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="s2">&#34;i dont know if im being productive&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="expand-contractions">Expand contractions</h3>
 <p>The English language does this weird thing where we can just smush two words together (e.g. “I am” to “I’m”). Unfortunately for us, these produce extra complexity in our model that we could reduce by making them all consistent. In our case, we chose to expand all of these contractions.</p>
@@ -750,9 +757,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">expandContractions</span><span class="p">(</span><span class="s2">&#34;i dont know if im being productive&#34;</span><span class="p">)</span> 
-<span class="o">&gt;</span> <span class="s2">&#34;i do not know if i am being productive&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">expandContractions</span><span class="p">(</span><span class="s2">&#34;i dont know if im being productive&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="s2">&#34;i do not know if i am being productive&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="remove-stop-words">Remove stop words</h3>
 <p>The English language also has a bunch of these things called <strong>stop words</strong> — words that do not contribute anything major to the sentence in terms of semantic understanding (usually in the context of natural language tasks such as this). A few examples of them are ‘I’, ‘me’, ‘my’, ‘by’, and ‘on’. By removing them, we once again remove unneeded complexity from the model.</p>
@@ -762,9 +769,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">rmStopwords</span><span class="p">(</span><span class="s2">&#34;i do not know if i am being productive&#34;</span><span class="p">)</span> 
-<span class="o">&gt;</span> <span class="s2">&#34;not know productive&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">rmStopwords</span><span class="p">(</span><span class="s2">&#34;i do not know if i am being productive&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="s2">&#34;not know productive&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="tokenization">Tokenization</h3>
 <p>However, these words are not super friendly for machine learning algorithms who would much rather deal with integers and floating point numbers than words and sentences. How do we fix this?</p>
@@ -775,9 +782,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">tokenize</span><span class="p">(</span><span class="s2">&#34;not know productive&#34;</span><span class="p">)</span> 
-<span class="o">&gt;</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tokenize</span><span class="p">(</span><span class="s2">&#34;not know productive&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="fixed-sequence-length">Fixed sequence length</h3>
 <p>Finally, we need to ensure that all the inputs are the same length of simplicity sake. If we were to handle dynamic length inputs, it would introduce a whole other level of complexity that we’re really not ready to deal with. As such, we can make sure all the inputs are the same length by adding a bunch of zeros to those who are too short (zero padding) or by slicing those who are too long.</p>
@@ -787,9 +794,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">pad</span><span class="p">([</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span> 
-<span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">pad</span><span class="p">([</span><span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="mi">10</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="finally">Finally</h3>
 <p>After all of these functions have been applied, we have successfully converted a complex sentence into a series of ‘tokens’ that is easy to understand for the machine learning algorithm.</p>
@@ -799,9 +806,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">preprocess</span><span class="p">(</span><span class="s2">&#34;I don’t know if I’m being productive! :(&#34;</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">preprocess</span><span class="p">(</span><span class="s2">&#34;I don’t know if I’m being productive! :(&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="whats-next">What’s next?</h2>
 <p>Now that we have something ready to feed into our neural network, let’s dive into how the actual model itself works! How do we tell that this is a “valid” intent?</p>
@@ -829,22 +836,22 @@ if (!doNotTrack) {
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Function to create a RNN model with given parameters</span>
-<span class="c1"># max_seq_len: maximum token sequence length</span>
-<span class="c1"># vocab_size:  size of tokenizer vocabulary</span>
-<span class="k">def</span> <span class="nf">RNN</span><span class="p">(</span><span class="n">max_seq_len</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">):</span>
-    <span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">layer</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">model</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Function to create a RNN model with given parameters</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># max_seq_len: maximum token sequence length</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># vocab_size:  size of tokenizer vocabulary</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">RNN</span><span class="p">(</span><span class="n">max_seq_len</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">model</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Here’s how we define it in our 
 
@@ -854,8 +861,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is max_seq_len units long. When we trained our model, this was set to 75.</p>
 <div class="highlight"><div class="chroma">
@@ -863,8 +870,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">max_seq_len</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Next up, we have the Embedding layer. We could get into a really technical discussion about what this really does, but you can think of it as a layer that helps the neural network to learn semantic relationships between inputs.</p>
 <p>
@@ -875,8 +882,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now, we get into the meat of the neural network: the LSTM layer. As stated before, these LSTM networks are really good at modelling time series data like language. In this case, our LSTM network has 64 hidden units per cell, and that we’d like to pass these hidden states to the next layer. If you’d like to learn more about the inner workings of the LSTM model, theres a really good resource 
 
@@ -886,8 +893,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Next, you’ll notice there are a few Dropout layers. These layers help to prevent overfitting by randomly killing off connections between the two layers (a sort of regularization). This makes sure neurons aren’t just “memorizing” the input data. This is especially important because our dataset is relatively small (~2000 observations even after augmentation), so making sure that our machine learning model can generalize outside of this limited dataset is really important.</p>
 <div class="highlight"><div class="chroma">
@@ -895,8 +902,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">LSTM</span><span class="p">(</span><span class="mi">64</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>We have yet another LSTM layer! By having these two chained right after each other, the first layer can pass all the values of all of its hidden states to the second layer, effectively allowing a sort of ‘deeper’ neural network.</p>
 <p>
@@ -907,8 +914,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;FC1&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Next, we have something called a Fully Connected layer, or a Dense layer. In a dense layer, each of the input neurons is connected to every output neuron. This kind of ‘glue’ layer helps the network to pick out and discriminate feature output by our previous LSTM layer.</p>
 <div class="highlight"><div class="chroma">
@@ -917,9 +924,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-<span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;out_layer&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">layer</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">layer</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Similarly, we have one final Dense layer that ‘compresses’ all of the hidden units down to one neuron. However, we want the output value of this neuron to be how confident from a scale of 0 to 1 it is that the intent is valid. We do this by applying something called an activation function.</p>
 <p>
@@ -961,37 +968,37 @@ if (!doNotTrack) {
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 75 max_seq_len</span>
-<span class="c1"># 1000 tokenizer_vocab_size</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">RNN</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> 
-<span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># Layer (type)                 Output Shape              Param #   </span>
-<span class="c1"># =================================================================</span>
-<span class="c1"># inputs (InputLayer)          (None, 75)                0         </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># embedding_1 (Embedding)      (None, 75, 64)            64000     </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># lstm_1 (LSTM)                (None, 75, 64)            33024     </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># dropout_1 (Dropout)          (None, 75, 64)            0         </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># lstm_2 (LSTM)                (None, 64)                33024     </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># FC1 (Dense)                  (None, 256)               16640     </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># dropout_2 (Dropout)          (None, 256)               0         </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># out_layer (Dense)            (None, 1)                 257       </span>
-<span class="c1"># _________________________________________________________________</span>
-<span class="c1"># activation_1 (Activation)    (None, 1)                 0         </span>
-<span class="c1"># =================================================================</span>
-<span class="c1"># Total params: 146,945</span>
-<span class="c1"># Trainable params: 146,945</span>
-<span class="c1"># Non-trainable params: 0</span>
-<span class="c1"># _________________________________________________________________</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 75 max_seq_len</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 1000 tokenizer_vocab_size</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">RNN</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Layer (type)                 Output Shape              Param #   </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># =================================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># inputs (InputLayer)          (None, 75)                0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># embedding_1 (Embedding)      (None, 75, 64)            64000     </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># lstm_1 (LSTM)                (None, 75, 64)            33024     </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># dropout_1 (Dropout)          (None, 75, 64)            0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># lstm_2 (LSTM)                (None, 64)                33024     </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># FC1 (Dense)                  (None, 256)               16640     </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># dropout_2 (Dropout)          (None, 256)               0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># out_layer (Dense)            (None, 1)                 257       </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># activation_1 (Activation)    (None, 1)                 0         </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># =================================================================</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Total params: 146,945</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Trainable params: 146,945</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Non-trainable params: 0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># _________________________________________________________________</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Theres a grand total of 150,000 different trainable knobs and parameters in our neural network!</p>
 <h2 id="training-pipeline">Training pipeline</h2>
@@ -1037,17 +1044,17 @@ if (!doNotTrack) {
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="c1">// declared somewhere earlier
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">model</span>: <span class="kt">nn.IntentClassifier</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">nn</span><span class="p">.</span><span class="nx">IntentClassifier</span><span class="p">(</span><span class="s2">&#34;acc85.95&#34;</span><span class="p">);</span> <span class="c1">// name of converted model
-</span><span class="c1"></span>
-<span class="c1">// send to nlp model for prediction
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">valid</span>: <span class="kt">boolean</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">intent</span><span class="p">);</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">valid</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// let through
-</span><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="c1">// block page
-</span><span class="c1"></span><span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// declared somewhere earlier
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">model</span>: <span class="kt">nn.IntentClassifier</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">nn</span><span class="p">.</span><span class="nx">IntentClassifier</span><span class="p">(</span><span class="s2">&#34;acc85.95&#34;</span><span class="p">);</span> <span class="c1">// name of converted model
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// send to nlp model for prediction
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">valid</span>: <span class="kt">boolean</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">model</span><span class="p">.</span><span class="nx">predict</span><span class="p">(</span><span class="nx">intent</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">valid</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// let through
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// block page
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="future-improvement">Future improvement</h2>
 <h3 id="possible-models">Possible models</h3>
@@ -1069,7 +1076,7 @@ if (!doNotTrack) {
 
 
 <a href="/mailtohellogetreflect.app" rel="noopener" class="internal-link" data-src="/mailtohellogetreflect.app">hello@getreflect.app</a></p>
-
+ 
 
     </article>
     <hr/>

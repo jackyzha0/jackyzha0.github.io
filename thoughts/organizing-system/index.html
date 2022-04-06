@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -466,13 +466,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p><em>Organizing System</em>: an 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><em>Organizing System</em>: an 
 
 
 <a href="/thoughts/intentional-arrangement" rel="noopener" class="internal-link" data-src="/thoughts/intentional-arrangement">intentionally</a> arranged collection of resources and the interactions they support. It has authoritative description and standard classification.</p>
@@ -494,7 +501,7 @@ if (!doNotTrack) {
 <li>Context-sensitive. Not one size fits all, can we create unique content for every reader/reading depending on their prior understanding and current needs?</li>
 <li>Interrogable. Can we get clarifications and answers from the text without having the author having to anticipate those questions?</li>
 </ol>
-<p>The document as an &lsquo;information container&rsquo;, but also a &lsquo;thing&rsquo; which documents a thing. Data can be seen as &lsquo;elementary observations about properties of objects, events, and their environments&rsquo;</p>
+<p>The document as an &lsquo;information container&rsquo;, but also a &rsquo;thing&rsquo; which documents a thing. Data can be seen as &rsquo;elementary observations about properties of objects, events, and their environments&rsquo;</p>
 <p>A set of resources is then transformed by an organizing system when the resources are described or arranged to enable interactions with them.</p>
 <h3 id="tradeoffs">Tradeoffs</h3>
 <blockquote>
@@ -578,7 +585,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/interaction-design" rel="noopener" class="internal-link" data-src="/thoughts/interaction-design">Desktop Metaphor</a>?</p>
 <p>Is Google search the 21st century filing cabinet?</p>
-
+ 
 
     </article>
     <hr/>

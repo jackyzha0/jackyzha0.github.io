@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -487,25 +487,32 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-      
-      
-      <h2 id="data-to-model">Data to Model</h2>
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<h2 id="data-to-model">Data to Model</h2>
 <h3 id="random-sample-consensus-ransac">Random Sample Consensus (RANSAC)</h3>
 <ol>
 <li>randomly choose minimal subset of data points necessary to fit model</li>
@@ -565,7 +572,7 @@ Disadvantages:</li>
 <li>$P(x)$: unconditional probability (a.k.a. marginal likelihood)</li>
 </ul>
 <p>Decision boundary, the location where one class becomes more probable than the other (e.g the point where the probability classes are equal).</p>
-<p>The Bayes' risk is the shaded region where one class&rsquo;s probability is still non-zero beyond its decision boundary.</p>
+<p>The Bayes&rsquo; risk is the shaded region where one class&rsquo;s probability is still non-zero beyond its decision boundary.</p>
 <p>
 
 <img src="/thoughts/images/bayes-risk.png" alt=""  /></p>
@@ -650,7 +657,7 @@ Disadvantages:</li>
 <p>Set of techniques to find components that belong together.</p>
 <p>Note: Grouping is how the human visual system perceives things and clustering is the actual algorithm itself.</p>
 <ol>
-<li>Agglomerative Clustering → build up close together things
+<li>Agglomerative Clustering -&gt; build up close together things
 <ol>
 <li>Each data point stars as a separate cluster, clusters are recursively merged</li>
 <li>Algorithm
@@ -665,7 +672,7 @@ Disadvantages:</li>
 </li>
 </ol>
 </li>
-<li>Divisive Clustering →breaks features into smaller clusters
+<li>Divisive Clustering -&gt;breaks features into smaller clusters
 <ol>
 <li>The entire dataset starts as a single cluster. Clusters are recursively split</li>
 <li>Algorithm
@@ -718,7 +725,7 @@ Disadvantages:</li>
 </li>
 <li>Return remaining clusters</li>
 </ol>
-
+ 
 
     </article>
     <hr/>

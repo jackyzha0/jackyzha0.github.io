@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -485,52 +485,59 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-      
-      
-      <h2 id="image-formation-cameras-and-lenses">Image Formation, Cameras, and Lenses</h2>
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<h2 id="image-formation-cameras-and-lenses">Image Formation, Cameras, and Lenses</h2>
 <p>Image formation depends on</p>
 <ol>
 <li>Lighting conditions</li>
@@ -544,13 +551,13 @@ if (!doNotTrack) {
 <ol>
 <li>Lens</li>
 <li>CFA</li>
-<li>Analog Front-end → RAW image (mosaiced, linear, 12-bit)</li>
+<li>Analog Front-end -&gt; RAW image (mosaiced, linear, 12-bit)</li>
 <li>White balance</li>
 <li>CFA demoisaicing</li>
 <li>Denoising</li>
 <li>Colour transforms</li>
 <li>Tone reproduction</li>
-<li>Compression → final RGB image (non-linear, 8-bit)</li>
+<li>Compression -&gt; final RGB image (non-linear, 8-bit)</li>
 </ol>
 <h3 id="examples">Examples</h3>
 <h4 id="reflection">Reflection</h4>
@@ -566,7 +573,7 @@ if (!doNotTrack) {
 
 <img src="/thoughts/images/pinhole.png" alt="Pinhole camera"  /><em>Pinhole camera</em></p>
 <p>The image here is flipped, but no longer blurry. Roughly, each scene point contributes to one sensor. Pinhole camera means you need to get the right size of pinhole. If the pinhole is too big, then many directions are averaged, blurring the image. If the pinhole is too small, then diffraction becomes a factor, also blurring the image.</p>
-<p>A few perspective &lsquo;tricks&rsquo; arise out of the pinhole</p>
+<p>A few perspective &rsquo;tricks&rsquo; arise out of the pinhole</p>
 <ol>
 <li>Size is inversely proportional to distance</li>
 <li>Parallel lines meet at a point (vanishing point on the horizon)</li>
@@ -574,8 +581,8 @@ if (!doNotTrack) {
 <p>Side note, pinhole cameras are really slow because only a small amount of light actually makes it through the pinhole. As a result, we have lenses</p>
 <h4 id="lenses">Lenses</h4>
 <p>The role of a lens is to capture more light while preserving, as much as possible, the abstraction of an ideal pinhole camera, the thin lens equation</p>
-<p>$$\frac{1}{z'} - \frac{1}{z} = \frac{1}{f}$$</p>
-<p>where $f$ is the focal point, $z'$ is the distance to the image plane, and $z$ is the distance to the object.</p>
+<p>$$\frac{1}{z&rsquo;} - \frac{1}{z} = \frac{1}{f}$$</p>
+<p>where $f$ is the focal point, $z&rsquo;$ is the distance to the image plane, and $z$ is the distance to the object.</p>
 <p>Focal length can be thought of as the distance behind the lens where incoming rays parallel to the optical axis converge to a single point.</p>
 <p>Different effects can be explained using physics phenomena. Vignettes are simply light that reaches one lens but not the other in a compound lens. Chromatic aberration happens because the index of refraction depends on wavelength of the light so not all colours can be in equal focus.</p>
 <p>Similarities with the human eye</p>
@@ -585,11 +592,11 @@ if (!doNotTrack) {
 </ul>
 <h4 id="weak-perspective">Weak Perspective</h4>
 <p>Only accurate when object is small/distant. Useful for recognition</p>
-<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P' = \begin{bmatrix}x' \\y'\end{bmatrix} \textrm{where} \\m = \frac{f'}{z_0}, x' = mx, y' = my$$</p>
+<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P&rsquo; = \begin{bmatrix}x&rsquo; \\y&rsquo;\end{bmatrix} \textrm{where} \\m = \frac{f&rsquo;}{z_0}, x&rsquo; = mx, y&rsquo; = my$$</p>
 <h4 id="orthographic-projection">Orthographic Projection</h4>
-<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P' = \begin{bmatrix}x' \\y'\end{bmatrix} \textrm{where} \\x' = x, y' = y$$</p>
+<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P&rsquo; = \begin{bmatrix}x&rsquo; \\y&rsquo;\end{bmatrix} \textrm{where} \\x&rsquo; = x, y&rsquo; = y$$</p>
 <h4 id="perspective-projection">Perspective Projection</h4>
-<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P' = \begin{bmatrix}x' \\y'\end{bmatrix} \textrm{where} \\m = \frac{f'}{z_0}, x' = f'\frac{x}{z}, y' = f'\frac{y}{z}$$</p>
+<p>$$P = \begin{bmatrix}x \\y \\z\end{bmatrix} \textrm{projects to a 2D image point} \\P&rsquo; = \begin{bmatrix}x&rsquo; \\y&rsquo;\end{bmatrix} \textrm{where} \\m = \frac{f&rsquo;}{z_0}, x&rsquo; = f&rsquo;\frac{x}{z}, y&rsquo; = f&rsquo;\frac{y}{z}$$</p>
 <h2 id="image-as-functions">Image as functions</h2>
 <h3 id="grayscale-images">Grayscale images</h3>
 <p>2D function $I(x,y)$ where the domain is $(x,y) \in ([1, width], [1, height])$ and the range is $I(x,y) \in [0, 255] \in \mathbb{Z}$</p>
@@ -597,10 +604,10 @@ if (!doNotTrack) {
 <p>Apply a single mathematical operation to each individual pixel</p>
 <h2 id="linear-filters">Linear Filters</h2>
 <p>Let $I(x,y)$ be an $n \times n$ digital image. Let $F(x,y)$ be the $m \times m$ filter or kernel. For convenience, assume $m$ is odd and $m &lt; n$. Let $k = \lfloor \frac{m}{2} \rfloor$, we call $k$ the half-width.</p>
-<p>For a correlation, we then compute the new image $I'(x,y)$ as follows:
-$$I'(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x + i, y + j)$$</p>
-<p>For a convolution, we then compute the new image $I'(x,y)$ as follows:
-$$I'(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x - i, y - j)$$</p>
+<p>For a correlation, we then compute the new image $I&rsquo;(x,y)$ as follows:
+$$I&rsquo;(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x + i, y + j)$$</p>
+<p>For a convolution, we then compute the new image $I&rsquo;(x,y)$ as follows:
+$$I&rsquo;(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x - i, y - j)$$</p>
 <p>A convolution is just the correlation with the filter rotated 180 degrees. We denote a convolution with the $\otimes$ symbol.</p>
 <p>In general,</p>
 <ol>
@@ -661,8 +668,8 @@ $$</p>
 <p>$$Asin(\omega x + \phi)$$</p>
 <p>where $A$ is the amplitude, $\omega$ is the angular frequency and $\phi$ is the phase. Fourier&rsquo;s claim was that you could add enough of these to get any periodic signal!</p>
 <h3 id="the-convolution-theorem">The Convolution Theorem</h3>
-<p>Let $i'(x,y) = f(x,y) \otimes i(x,y)$ be the convolution.</p>
-<p>Then, $\mathcal{I}'(w_x,w_y) = \mathcal{F}(w_x,w_y)\mathcal{I}(w_x,w_y)$ which is just a simple element-wise multiplication after applying a Fourier transform to each.</p>
+<p>Let $i&rsquo;(x,y) = f(x,y) \otimes i(x,y)$ be the convolution.</p>
+<p>Then, $\mathcal{I}&rsquo;(w_x,w_y) = \mathcal{F}(w_x,w_y)\mathcal{I}(w_x,w_y)$ which is just a simple element-wise multiplication after applying a Fourier transform to each.</p>
 <p>At the expense of two Fourier transforms and one inverse Fourier transform, convolution can be reduced to (complex) multiplication. This speeds up the cost of FFT/IFFT for the image and filter to $\mathcal{O}(n^2\log n)$ and $\mathcal{O}(m^2\log m)$ respectively, dropping the total cost of convolution to $\mathcal{O}(n^2)$</p>
 <h3 id="convolution-sizing">Convolution Sizing</h3>
 <p>Convolving two filters of size $m \times m$ and $n \times n$ results in a filter of size</p>
@@ -710,7 +717,7 @@ $$</p>
 <li>Fast phenomena can look slower (wagon wheels rolling the wrong way)</li>
 </ol>
 <p>We can sub-sample by using Gaussian pre-filtering (Gaussian blur first then throw away every other column/row). Practically, for ever image reduction of a half, smooth by $\sigma = 1$</p>
-
+ 
 
     </article>
     <hr/>

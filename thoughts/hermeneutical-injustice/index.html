@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -458,13 +458,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>The powerful tend to have appropriate understandings of their experiences ready to draw on as they make sense of their social experiences, whereas the powerless are more likely to find themselves having some social experiences through a glass darkly, with a best ill-fitting meanings to draw on in the effort to render them intelligible</p>
 </blockquote>
 <p><strong>Hermeneutical injustice</strong> is a subcategory of 
@@ -518,7 +525,7 @@ if (!doNotTrack) {
 <a href="/thoughts/double-consciousness" rel="noopener" class="internal-link" data-src="/thoughts/double-consciousness">double-consciousness</a>.</p>
 <h2 id="phil240a-essay">PHIL240A Essay</h2>
 <blockquote>
-<p>Compare and contrast Fricker&rsquo;s concept of hermeneutical injustice with Polhaus' concept of wilful hermeneutical ignorance. Illustrate with an example.</p>
+<p>Compare and contrast Fricker&rsquo;s concept of hermeneutical injustice with Polhaus&rsquo; concept of wilful hermeneutical ignorance. Illustrate with an example.</p>
 </blockquote>
 <p>Hermeneutical injustice, as defined by Fricker, is the injustice of having a significant portion of one&rsquo;s social experience be ineffable to the collective understanding due to a lack of reliable hermeneutical resources through which to communicate the experience. This is <em>always</em> a form of powerlessness, whether structural or one-off &ndash; it is not something that one can opt-out of being (otherwise, it should not be considered hermeneutical injustice). Fricker describes this as a thwarted epistemic agent who is not believed or cannot make sense of her world (Pohlhaus, 716), specifically due to hermeneutical marginalization: &ldquo;an unequal participation in meaning-generating practices pertaining to some areas of the social world that is the result of subordination in or exclusion from those practices&rdquo; (Fricker 2007, 153-54)</p>
 <p>Wilful hermeneutical ignorance, on the other hand is a situation where dominantly situated knower continue engaging in the world while refusing to learn to use epistemic resources developed from knowers who are marginally situated. Specifically, wilful hermeneutical ignorance posits that the <em>sociality</em> of the marginally situated knower is epistemically significant through two forms 1) situatedness (the knower&rsquo;s social position draws their attention to particular aspects of the world) and 2) interdependence (epistemic resources are, by nature, collective). In the example given by Polhaus where she references the jurors in <em>To Kill a Mockingbird</em>, she declares that the &ldquo;jurors are culpable as since there is nothing forcing them to use faulty epistemic resources.&rdquo; Polhaus notes here that being marginally situated does not lead to &ldquo;different&rdquo; knowledge, but rather as Harding argued, actually more <em>objective</em> knowledge (Harding 1991, 138-163). The inferences that the juror <em>should</em> have drawn are unavailable to them because they use epistemic resources that distort how they experience the world and prevent them from rationally understanding how Robinson could have acted the way he did. The <em>wilful</em> part comes from the fact that while the dominantly situated knower cannot step outside of their situatedness, they <em>can</em> learn to use epistemic resources developed from the experiences of marginalized knowers (much like Atticus Finch does).</p>
@@ -527,7 +534,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>In that one forty-five-minute period, I realized that what I&rsquo;d been blaming myself for, and what my husband had blamed me for, wasn&rsquo;t my personal deficiency. It was a combination of physiological things and a real societal thing, isolation.</p>
 </blockquote>
-
+ 
 
     </article>
     <hr/>

@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -476,13 +476,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>In an empire of lies, telling the truth is a revolutionary act. In a fearful society; love and trust are the primary tools of resistance.</p>
 </blockquote>
 <p>
@@ -633,7 +640,7 @@ But if she takes these liberties too often, you will feel you have been taken fo
 <h2 id="trust-between-human-and-non-human-systems">Trust between human and non-human systems</h2>
 <p>Trust has historically distinguished from <em>mere reliance</em> (Baier, 1986, p. 242) through an attitude of trust or extra factors which distinguish genuine trust from mere reliance (Hawley, 2014, p. 1) that we take to inanimate objects. However, algorithms and computerized decision making systems are beginning to play larger roles in our society &ndash; deciding jail time for criminals, giving medical diagnoses, and many more. How should we weigh the epistemic authority or trustworthiness of human versus non-human expert systems?</p>
 <p>I posit that, until these algorithmic systems are able to reliably be held accountable for their decision making, they should not be epistemologically load-bearing. These systems should <em>supplement</em> human decision making rather than be considered an epistemic authority in and of itself. Let us construct a case study to examine this in more detail.</p>
-<p>Suppose you are a hiring manager at a tech company. There is a potential candidate in the pipeline for you company that you are very on the fence about whether to hire or not. She has an incredibly strong &lsquo;yes&rsquo; recommendation from a more senior hiring manager. You don&rsquo;t know this higher up very well but you know that her and this candidate are close friends already. On the other hand, the company uses an internal AI-powered candidate ranking system. This system is quite complex and the original engineers who designed it have since long left the company. This system gives this candidate a strong &lsquo;no&rsquo; hire recommendation.</p>
+<p>Suppose you are a hiring manager at a tech company. There is a potential candidate in the pipeline for you company that you are very on the fence about whether to hire or not. She has an incredibly strong &lsquo;yes&rsquo; recommendation from a more senior hiring manager. You don&rsquo;t know this higher up very well but you know that her and this candidate are close friends already. On the other hand, the company uses an internal AI-powered candidate ranking system. This system is quite complex and the original engineers who designed it have since long left the company. This system gives this candidate a strong &rsquo;no&rsquo; hire recommendation.</p>
 <p>In this situation, both systems are &lsquo;authorities&rsquo;, having been approved by the company for use in the hiring process. The more senior hiring manager is clearly an expert, having been working in this company and hiring many stellar employees in the past. The algorithm can also be considered an expert here, having scored extremely highly on tests of accuracy in predicting based off of historical data whether candidates will do well in the company. It has been vetted for internal use.</p>
 <p>However, it is important to note here that in the case example, while <em>both</em> systems are potentially biased, it is far more likely that the algorithmic system is biased.</p>
 <p>The senior hiring manager could potentially be doxastically partial towards her friend but not because it is normative to be always partial to our friends. Notably, Crawford defines being a good friend constitutively involving forming attitudes about one’s friends that are appropriately responsive to the features that one’s friends have that appear to warrant those attitudes (2019, p. 1). It is unknown to you whether the senior hiring manager has any state-given reason to highly recommend her friend, so we cannot assume this to be the case as it is an unbased claim (as we have no evidence to believe so). Thus, we have solid reason to assume that the manager&rsquo;s friend actually <em>does</em> have those features that she believes makes them such a good candidate.</p>
@@ -647,7 +654,7 @@ But if she takes these liberties too often, you will feel you have been taken fo
 <li>Crawford, L., 2019. Believing the best: on doxastic partiality in friendship. <em>Synthese</em>, 196(4), pp. 1575-1593.</li>
 <li>Gendler, T. 2011. On the Epistemic Cost of Implicit Bias. <em>Philosophical Studies</em> 156(57), pp. 33-63</li>
 </ol>
-
+ 
 
     </article>
     <hr/>

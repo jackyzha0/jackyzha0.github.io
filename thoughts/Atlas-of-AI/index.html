@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -462,15 +462,22 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>&ldquo;It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo; &ndash; they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&ldquo;It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo; &ndash; they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.</p>
 <p>&ldquo;To understand how AI is fundamentally political, we need to go beyond neural nets and statistical pattern recognition to instead ask <em>what</em> is being optimized, and <em>for whom</em>, and <em>who</em> gets to decide.&rdquo;</p>
-<p>&ldquo;As author and engineer Ellen Ullman puts it, this belief that the mind is like a computer, and vice versa, has infected decades of thinking in the computer and cognitive sciences,' creating a kind of original sin for the field. It is the idealogy of Cartesian dualism in artificial intelligence: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo;</p>
+<p>&ldquo;As author and engineer Ellen Ullman puts it, this belief that the mind is like a computer, and vice versa, has infected decades of thinking in the computer and cognitive sciences,&rsquo; creating a kind of original sin for the field. It is the idealogy of Cartesian dualism in artificial intelligence: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo;</p>
 <p>&ldquo;An atlas is an unusual type of book. It is a collection of disparate parts, with maps that very in resolution from a satellite view of the planet to a zoomed-in detail of an archipelago. When you open an atlas, you may be seeking specific information about a particular place &ndash; or perhaps you are wandering, following your curiosity, and finding unexpected pathways and new perspectives.&rdquo;</p>
 <p>AI is an attempt to be <em>the</em> atlas &ndash; the dominant way of seeing the world. We should instead try to construct &ldquo;humble geography&rdquo; that acknowledges one&rsquo;s specific perspectives rather than claiming objectivity or mastery.</p>
 <p>&ldquo;In this sense, artificial intelligence is a registry of power&hellip; Computational reason and embodied work are deeply interlinked: AI systems both reflect and produce social relations and understanding of the world.&rdquo;</p>
@@ -505,10 +512,10 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/accountability" rel="noopener" class="internal-link" data-src="/thoughts/accountability">Accountability</a></h2>
-<p>Andrew Ferguson: &ldquo;We are moving to a state where prosecutors and police are going to say &lsquo;the algorithm told me to do it, so I did, I had no idea what I was doing&rsquo;.&rdquo;</p>
+<p>Andrew Ferguson: &ldquo;We are moving to a state where prosecutors and police are going to say &rsquo;the algorithm told me to do it, so I did, I had no idea what I was doing&rsquo;.&rdquo;</p>
 <p>A false objectivity, &ldquo;it&rsquo;s just math, math can&rsquo;t be biased, right?&rdquo;</p>
 <p>The historian of technology Alex Campolo calls this <em>enchanted determinism</em>: &ldquo;AI systems are seen as enchanted, beyond the known world, yet determinisitc in that they discover patterns that can be applied with predictive certainty to everyday life.&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

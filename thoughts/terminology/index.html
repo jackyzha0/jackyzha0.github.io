@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -462,13 +462,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="orwell-on-language">Orwell on Language</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="orwell-on-language">Orwell on Language</h2>
 <p>
 
 <a href="https://www.orwell.ru/library/essays/politics/english/e_polit/" rel="noopener">Source: <em>Orwell</em> on Politics and the English Language</a></p>
@@ -476,7 +483,7 @@ if (!doNotTrack) {
 <h2 id="a-tangent-on-language">A tangent on language</h2>
 <p>language as an abstraction for concepts</p>
 <p>need to communicate and refer to objects that are not spatially/temporally local</p>
-<p>abstraction involves compression → detail is lost
+<p>abstraction involves compression -&gt; detail is lost
 the way we make up for that detail is through having a shared consensus over meaning and intent</p>
 <p>this meaning and intent is baked into the meaning of the word through how the word is used
 ‘In most cases, the meaning of a word is its use’, Wittgenstein claimed, in perhaps the most famous passage in the Investigations. It ain’t what you say, it’s the way that you say it, and the 
@@ -497,8 +504,8 @@ no one person or institution decides how language works: it is one of the few lo
 <ul>
 <li>term overloading
 <ul>
-<li>i think my worry with a &lsquo;standard library&rsquo; is that there is no one &lsquo;unified&rsquo; interpretation of a single concept, how will it adapt to usage overtime? wouldnt this anchor thought patterns to a shared &lsquo;truth&rsquo;?</li>
-<li>&ldquo;By changing what we were, you change what we are and what we are going to be.&rdquo; erasure through terminology change → essentially just cooptation?</li>
+<li>i think my worry with a &lsquo;standard library&rsquo; is that there is no one &lsquo;unified&rsquo; interpretation of a single concept, how will it adapt to usage overtime? wouldnt this anchor thought patterns to a shared &rsquo;truth&rsquo;?</li>
+<li>&ldquo;By changing what we were, you change what we are and what we are going to be.&rdquo; erasure through terminology change -&gt; essentially just cooptation?</li>
 <li>&ldquo;Thus potential sources of uncertainty and misunderstanding arise in the form of homonyms (i.e. words that are used to denote more than one concept) and synonyms (i.e. more than one word for the same concept).&rdquo; 
 
 <a href="https://philosophyforchange.wordpress.com/2014/03/11/meaning-is-use-wittgenstein-on-the-limits-of-language/?curius=1294" rel="noopener">Source</a></li>
@@ -549,7 +556,7 @@ or create an entirely new word</p>
 </ol>
 </li>
 </ol>
-
+ 
 
     </article>
     <hr/>

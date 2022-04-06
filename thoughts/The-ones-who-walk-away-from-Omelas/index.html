@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://learning.hccs.edu/faculty/emily.klotz/engl1302-6/readings/the-ones-who-walk-away-from-omelas-ursula-le-guin/view" rel="noopener">Source: The Ones Who Walk Away From Omelas by <em>Ursula Le Guin</em></a></p>
 <p>There is no happiness without suffering. The story presents a classic utilitarian problem: is it morally justifiable to inflict suffering on one person in the service of others’ happiness (and a potential 
@@ -483,7 +490,7 @@ if (!doNotTrack) {
 <a href="/thoughts/pain" rel="noopener" class="internal-link" data-src="/thoughts/pain">pain</a> is intellectual, only evil interesting.&rdquo;</p>
 <p>Some of them understand why, and some do not, but they all understand that their happiness, the beauty of their city, the tenderness of their friendships, the health of their children, the wisdom of their scholars, the skill of their makers, even the abundance of their harvest and the kindly weathers of their skies, depend wholly on this child’s abominable misery.</p>
 <p>&ldquo;To exchange all the goodness and grace of every life in Omelas for that single, small improvement: to throw away the happiness of thousands for the chance of the happiness of one: that would be to let guilt within the walls indeed.&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

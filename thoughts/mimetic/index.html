@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,13 +449,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://www.briantimar.com/notes/mimetic/mimetic/" rel="noopener">Source: Mimetic by <em>Brian Timar</em></a></p>
 <p>[&hellip;There was a] positive feedback loop that encouraged me to spend ever-increasing amounts of time on my work. Humans inherit convictions 
@@ -475,7 +482,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/reading" rel="noopener" class="internal-link" data-src="/thoughts/reading">Reading</a></h2>
 <p>Speaking with authors through their written work triggers the same neural circuits that produce imitation of desire. By stocking a bookshelf judiciously, you can express a preference over preferences — “what should I value? What do I want to spend my waking hours thinking about?” — and act on it through careful, honest reading. This engineering is safe: most authors exert their influence slowly, over hundreds of pages, and if the effect turns out to be undesirable, you need only put the book down. It’s cheap and reliable — if you want to emulate someone, start by reading what they read. Most importantly, it’s <em>powerful</em>, because authors form a large part of the meta-peer group that determines which communities and games you engage with.</p>
-
+ 
 
     </article>
     <hr/>

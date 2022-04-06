@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,21 +448,28 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>The &ldquo;potemkin village that works well on naturally occurring data, but is exposed as fake when one visits points in space that do not have high probability&rdquo;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The &ldquo;potemkin village that works well on naturally occurring data, but is exposed as fake when one visits points in space that do not have high probability&rdquo;</p>
 <ul>
-<li>&ldquo;A &ldquo;Potemkin village&rdquo; signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside.&rdquo; → Potemkin Villages in 
+<li>&ldquo;A &ldquo;Potemkin village&rdquo; signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside.&rdquo; -&gt; Potemkin Villages in 
 
 
 <a href="/posts/ai-systems" rel="noopener" class="internal-link" data-src="/posts/ai-systems">AI Systems</a></li>
 <li>movie village thing</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

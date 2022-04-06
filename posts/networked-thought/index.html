@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -466,13 +466,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>&ldquo;Gardens … lie between farmland and wilderness &hellip; The garden is farmland that delights the senses, designed for delight rather than commodity.&rdquo; &ndash; 
 
 <a href="http://www.eastgate.com/garden/Gardens.html" rel="noopener">Bernstein</a></p>
@@ -551,7 +558,7 @@ if (!doNotTrack) {
 <a href="/thoughts/idea-list" rel="noopener" class="internal-link" data-src="/thoughts/idea-list">projects</a>, writing, and all sorts of reading. Even when reading books, I don&rsquo;t like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.</p>
 <p>These are the seeds that form the basis of ideas and thoughts.</p>
 <h3 id="saplings">Saplings</h3>
-<p>Saplings are single nodes or thoughts. When linking notes, I generally do not silo notes into categories. Sometimes, the presence of specific &lsquo;folders&rsquo; or &lsquo;topics&rsquo; prevents us from making surprising connections between otherwise related topics (e.g. 
+<p>Saplings are single nodes or thoughts. When linking notes, I generally do not silo notes into categories. Sometimes, the presence of specific &lsquo;folders&rsquo; or &rsquo;topics&rsquo; prevents us from making surprising connections between otherwise related topics (e.g. 
 
 
 <a href="/thoughts/urban-planning" rel="noopener" class="internal-link" data-src="/thoughts/urban-planning">urban planning</a> and 
@@ -559,8 +566,8 @@ if (!doNotTrack) {
 
 <a href="/thoughts/A-City-is-not-a-Tree" rel="noopener" class="internal-link" data-src="/thoughts/A-City-is-not-a-Tree">data structures</a>).</p>
 <h3 id="fruits">Fruits</h3>
-<p>Of course, a knowledge index isn&rsquo;t much use if it doesn&rsquo;t inform future thinking and output. Fruits are what I like to call derivative or &lsquo;new&rsquo; pieces of content.</p>
-<p>It&rsquo;s the act of creating &lsquo;newer&rsquo; work from saplings, mostly longer form essays, projects, etc. At this stage, thoughts and ideas have matured enough to be able to share and collaborate. Right now,  traditional &lsquo;
+<p>Of course, a knowledge index isn&rsquo;t much use if it doesn&rsquo;t inform future thinking and output. Fruits are what I like to call derivative or &rsquo;new&rsquo; pieces of content.</p>
+<p>It&rsquo;s the act of creating &rsquo;newer&rsquo; work from saplings, mostly longer form essays, projects, etc. At this stage, thoughts and ideas have matured enough to be able to share and collaborate. Right now,  traditional &lsquo;
 
 
 <a href="/thoughts/tools-for-thought" rel="noopener" class="internal-link" data-src="/thoughts/tools-for-thought">tools for thought</a>&rsquo; are not great for this aspect, lacking the ability to publish, edit, and share notes with others.</p>
@@ -583,7 +590,7 @@ if (!doNotTrack) {
 <p>
 
 <a href="https://www.are.na/block/2175982" rel="noopener">Image Source</a></p>
-
+ 
 
     </article>
     <hr/>

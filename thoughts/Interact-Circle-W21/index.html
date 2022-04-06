@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -461,13 +461,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://play.jzhao.xyz/" rel="noopener">View artifact</a>. Contains writings on 
 
@@ -487,7 +494,7 @@ if (!doNotTrack) {
 <p>I was even more intimidated when I saw the list of people applying to be a part of it. These are people who are attending some of the top schools in the world, working on some of the hardest problems that our society is working on, and have just such wealth of knowledge and kindness that I could hardly fathom why they would be interested in my circle. I had a moment where I realized, that this is what it feels like to be the dumbest person in the room. And you know what? <strong>That&rsquo;s okay</strong>.</p>
 <p>Joel, Becky, and Justin have all been so ridiculously wonderful throughout the whole Circle that it&rsquo;s so weird to even think I almost didn&rsquo;t follow through. I feel like this Circle has given me the space to explore ideas that have been marinating in the back of my head with some ridiculously thoughtful people.</p>
 <p>I cannot wait to see how we piece this into something that we can show the world. It may be a little naive, but I really think that what we made here is truly special. This is the chance for us to help define what play means for the next few generations and I cannot be more giddy. Towards unabashed excitement :))</p>
-
+ 
 
     </article>
     <hr/>

@@ -73,7 +73,7 @@ Is this why so many people want to join &lsquo;prestigious&rsquo; places to work
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,13 +449,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://statespace.substack.com/p/the-prestige-trap" rel="noopener">Source: The Prestige Trap by <em>Wes De Silvestro</em></a></p>
 <p>Is this why so many people want to join &lsquo;prestigious&rsquo; places to work like big tech or consulting? To keep doors open?</p>
@@ -467,11 +474,11 @@ if (!doNotTrack) {
 <p>This &lsquo;credentials&rsquo; grind within these prestigious institutions is very reminiscient of 
 
 
-<a href="/thoughts/Goodharts-Law" rel="noopener" class="internal-link" data-src="/thoughts/Goodharts-Law">Goodhart&rsquo;s Law</a>. They saw that their process of scrambling and playing &lsquo;the game&rsquo; for college admissions got them prestige so they continue to optimize for that rather than success.</p>
+<a href="/thoughts/Goodharts-Law" rel="noopener" class="internal-link" data-src="/thoughts/Goodharts-Law">Goodhart&rsquo;s Law</a>. They saw that their process of scrambling and playing &rsquo;the game&rsquo; for college admissions got them prestige so they continue to optimize for that rather than success.</p>
 <blockquote>
 <p>Some of the lowest hanging fruit remains unpicked because few smart people are willing to venture down the road not taken.</p>
 </blockquote>
-
+ 
 
     </article>
     <hr/>

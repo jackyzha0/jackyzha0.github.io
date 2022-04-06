@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -475,13 +475,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Cartesian doubt refers to the opposite of 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Cartesian doubt refers to the opposite of 
 
 
 <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> in Nguyen&rsquo;s sense</p>
@@ -510,7 +517,7 @@ if (!doNotTrack) {
 </li>
 </ul>
 </li>
-<li>Descartes' objection to First Argument
+<li>Descartes&rsquo; objection to First Argument
 <ul>
 <li>Premise 2 doesn&rsquo;t work → any particular experience I have might be deceptive</li>
 <li>I am sure of my own thoughts
@@ -682,7 +689,7 @@ if (!doNotTrack) {
 <li>At the very least, then, the existence of God must be as certain as the properties of mathematical and geometrical objects since he can prove them in the same way.</li>
 </ul>
 <h2 id="essay">Essay</h2>
-<p><em>Evaluate Descartes' assertion that God, as a perfect being, cannot be a deceiver. Note that some of his logic is implicit in his idea of perfection. Note that to evaluate an argument, you need to first explain the argument, and then say why it is or is not successful.</em></p>
+<p><em>Evaluate Descartes&rsquo; assertion that God, as a perfect being, cannot be a deceiver. Note that some of his logic is implicit in his idea of perfection. Note that to evaluate an argument, you need to first explain the argument, and then say why it is or is not successful.</em></p>
 <p>Descartes, in his meditations, wishes to find a foundation of knowledge that will still stand strong even after doubting the most basic facts about the world. In doing so, he starts by methodically doubting all things that he has &ldquo;less than complete certainty&rdquo; of. He casts asides sensory experience, claiming that these can be deceived. Even objects close by could be illusory as he could be dreaming. Even basic axioms of the world like mathematics could be false because of some evil genius that has &ldquo;employed all his energies in order to deceive me&rdquo;. Iteratively, he tries to re-prove existence of many things, starting from the existence of self (<em>&ldquo;cogito, ergo sum&rdquo;</em>) and progressing towards an argument for the existence of God (and god as a perfect being who cannot be a deceiver.)</p>
 <p>In the Fifth Meditation, Descartes presents the argument as follows:</p>
 <ol>
@@ -707,7 +714,7 @@ if (!doNotTrack) {
 <li>As my perception is clear, the material world must exist</li>
 </ol>
 <p>However, this argument also begs the question as it relies on the first proof that God necessarily exists as a premise. Unfortunately, Descartes first proof relies on the fact that Descartes has a clear and distinct idea of God, which presupposes clear and distinct perception (the conclusion of this argument). Thus, to show that his perception is clear, he must assume that his perception is clear &ndash; clearly an invalid argument.</p>
-
+ 
 
     </article>
     <hr/>

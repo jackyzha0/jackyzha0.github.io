@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -458,13 +458,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>&ldquo;I can never be all the people I want and live all the lives I want. I can never train myself in all the skills I want. And why do I want? I want to live and feel all the shades, tones and variations of mental and physical experience possible in my life.&rdquo; &ndash; Sylvia Plath</p>
 </blockquote>
 <p>Optionality: the nature of accepting the possibilities of the unknown, to give every fractal self a chance to live.  <em>I’d much rather know, but then again, not-knowing keeps all the possibilities open. It keeps all the worlds alive.</em> 
@@ -475,7 +482,7 @@ if (!doNotTrack) {
 
 <a href="https://www.thecrimson.com/article/2017/5/25/desai-commencement-ed/" rel="noopener">Mihir Desai on Optionality</a></p>
 </blockquote>
-<p>As humans, we tend to love &lsquo;exploring&rsquo; our possibilities more than &lsquo;exploiting&rsquo; and diving deep/committing to what we already have &ndash; we lean heavily toward explore in the 
+<p>As humans, we tend to love &rsquo;exploring&rsquo; our possibilities more than &rsquo;exploiting&rsquo; and diving deep/committing to what we already have &ndash; we lean heavily toward explore in the 
 
 
 <a href="/thoughts/exploit-explore" rel="noopener" class="internal-link" data-src="/thoughts/exploit-explore">exploit explore</a> tradeoff curve.</p>
@@ -503,7 +510,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>It is a vertiginous thing to have so much freedom—to be always self-skeptical, always testing the reasons for your beliefs, always prepared to abandon them for something better. If you can do anything you want, then every day becomes an existential problem—an empty space of possibility that has no ceiling but also no walls and no floor.</p>
 </blockquote>
-
+ 
 
     </article>
     <hr/>

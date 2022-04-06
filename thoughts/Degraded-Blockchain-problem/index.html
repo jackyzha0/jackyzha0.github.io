@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="One thing that I still don&rsquo;t understand about blockchain is the &lsquo;trustless&rsquo; aspect of blockchains.">
+    <meta name="description" content="One thing that I still don&rsquo;t understand about blockchain is the &rsquo;trustless&rsquo; aspect of blockchains.">
     <title>Degraded Blockchain problem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>One thing that I still don&rsquo;t understand about blockchain is the &lsquo;trustless&rsquo; aspect of blockchains. Blockchains are not &lsquo;trustless&rsquo;, rather it shifts the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>One thing that I still don&rsquo;t understand about blockchain is the &rsquo;trustless&rsquo; aspect of blockchains. Blockchains are not &rsquo;trustless&rsquo;, rather it shifts the 
 
 
 <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> balance away from trusting people and corporations to trusting an algorithm.</p>
@@ -467,7 +474,7 @@ if (!doNotTrack) {
 <img src="/thoughts/images/degraded-blockchain.png" alt="The link between the actual data on-chain and the actual thing that depends on the data to function are only &lt;em&gt;weakly&lt;/em&gt; linked"  /></p>
 <p>The blockchain really only stores a <em>pointer</em> to a good 99% of content that supposedly lives &lsquo;on-chain&rsquo;, most of it is never 100% on chain. (This is also why people meme on NFT owners which just link to a PNG, it&rsquo;s literally just a weak pointer. If the image hosting service goes down, that point is useless as it is immutable). The problem with this model is that if most of the value comes from the &lsquo;off-chain&rsquo; <em>content</em>, then what use is this proof of ownership if I can&rsquo;t do anything with it?</p>
 <p>The only thing that actually connects the blockchain with the &lsquo;off-chain&rsquo; value is&hellip; you guessed it&hellip; trust.</p>
-
+ 
 
     </article>
     <hr/>

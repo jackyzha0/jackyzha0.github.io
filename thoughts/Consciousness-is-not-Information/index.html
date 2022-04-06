@@ -73,7 +73,7 @@ Prompt 1: Is consciousness essentially a kind of information?">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -454,13 +454,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>Paper #2 for PHIL 451A</p>
 <p>Prompt 1:  Is consciousness essentially a kind of information?</p>
 </blockquote>
@@ -483,16 +490,16 @@ if (!doNotTrack) {
 <li>Brute optimization of its mathematical definition
 We expand on each of these in turn.</li>
 </ol>
-<p>Chalmers' process theory starts by defining information in the world as having two aspects, physicality and phenomenality. Information then, is both a physical thing and has phenomenal intentionality (or what is is like to <em>be</em> information). In doing so, Chalmers defines information as having the property of being conscious. However, this is quite different from colloquially accepted and typical academic definitions of information. Information usually refers to <em>non-mental</em>, mind-independent entities that are embedded <em>in</em> the physical (e.g. a book or brain states). Pioneers of information theory like Claude Shannon and even colloquial usage of the term information agree with this definition. An important distinction between these two definitions is that while physical things encode and embed information, they themselves are not information. A book by itself is just an arrangement of paper and ink but it may carry information like the concept of Dante&rsquo;s <em>Inferno</em>. Thus, whatever Chalmers claims to be &lsquo;information&rsquo; cannot be the same information everyone else refers to<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and so his conclusions on the basis of information cannot be valid.</p>
-<p>We then consider the seriality/stream problem in the context of Chalmers' process theory. The &lsquo;stream&rsquo; character of human conscious experience seems to almost be at odds with the parallel distributed model of the mind with its various synapses and neurons that have no central center for keeping order.  Process theories of consciousness must therefore account for how seriality arises from the distributed nature of the mind<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Chalmers fails to do address this in his theory all-together. It is important to note that behaviourist theories avoid this all-together as behaviour is a <em>series</em> (or at least, very limited parallelism) of agent-environment interactions. Agents do not perform multiple complex interactions at once (e.g. eating and playing). Even for multi-tasking of simple interactions, most theories propose the concept of a bottle-neck or limiting capacity &ndash; more complex behaviours take more bandwidth and thus require more focus, required the need for serial execution.</p>
-<p>Last but not least, we turn to how Chalmers' refutes information carrying in non-conscious objects. From earlier, Chalmers defines the ability to contain information states as the capacity for consciousness<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Yet, there are clearly non-conscious objects, books for example, that clearly carry information but are not widely accepted as being conscious. Chalmers provides two options:</p>
+<p>Chalmers&rsquo; process theory starts by defining information in the world as having two aspects, physicality and phenomenality. Information then, is both a physical thing and has phenomenal intentionality (or what is is like to <em>be</em> information). In doing so, Chalmers defines information as having the property of being conscious. However, this is quite different from colloquially accepted and typical academic definitions of information. Information usually refers to <em>non-mental</em>, mind-independent entities that are embedded <em>in</em> the physical (e.g. a book or brain states). Pioneers of information theory like Claude Shannon and even colloquial usage of the term information agree with this definition. An important distinction between these two definitions is that while physical things encode and embed information, they themselves are not information. A book by itself is just an arrangement of paper and ink but it may carry information like the concept of Dante&rsquo;s <em>Inferno</em>. Thus, whatever Chalmers claims to be &lsquo;information&rsquo; cannot be the same information everyone else refers to<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and so his conclusions on the basis of information cannot be valid.</p>
+<p>We then consider the seriality/stream problem in the context of Chalmers&rsquo; process theory. The &lsquo;stream&rsquo; character of human conscious experience seems to almost be at odds with the parallel distributed model of the mind with its various synapses and neurons that have no central center for keeping order.  Process theories of consciousness must therefore account for how seriality arises from the distributed nature of the mind<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Chalmers fails to do address this in his theory all-together. It is important to note that behaviourist theories avoid this all-together as behaviour is a <em>series</em> (or at least, very limited parallelism) of agent-environment interactions. Agents do not perform multiple complex interactions at once (e.g. eating and playing). Even for multi-tasking of simple interactions, most theories propose the concept of a bottle-neck or limiting capacity &ndash; more complex behaviours take more bandwidth and thus require more focus, required the need for serial execution.</p>
+<p>Last but not least, we turn to how Chalmers&rsquo; refutes information carrying in non-conscious objects. From earlier, Chalmers defines the ability to contain information states as the capacity for consciousness<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Yet, there are clearly non-conscious objects, books for example, that clearly carry information but are not widely accepted as being conscious. Chalmers provides two options:</p>
 <ol>
 <li>Perhaps only some kinds of “physically realized information spaces” are conscious.</li>
 <li>Perhaps thermostats are conscious.
-Chalmers' chooses the second option and suggests that “the level of organization at which consciousness &lsquo;winks out&rsquo; might be lower than a thermostat but higher than a rock.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The resolution that Chalmers' chose is quite unsatisfying.</li>
+Chalmers&rsquo; chooses the second option and suggests that “the level of organization at which consciousness &lsquo;winks out&rsquo; might be lower than a thermostat but higher than a rock.”<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The resolution that Chalmers&rsquo; chose is quite unsatisfying.</li>
 </ol>
-<p>Tononi attempts to improve on Chalmers' theory by proposing IIT<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. In this theory, information is defined as information that is specified by a system that is irreducible to that specified by its parts. That is, information is <em>integrated</em> information. In making this distinction, Tononi explicitly rejects Chalmer&rsquo;s choice of distinguishing information-carriers as conscious and instead chooses to define a subset of physically-realized information spaces (<em>integrated</em> information) as conscious. In doing so, IIT avoids the first and third pitfalls of Chalmers' theory.</p>
-<p>However, IIT still has a major flaw in that it only claims to <em>correlate</em> integrated information $\Phi$ with consciousness: &ldquo;To recapitulate, the theory claims that consciousness corresponds to the capacity to integrate information.&quot;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Yet, we know that correlation is most definitely neither definition nor causation. Even while this is a glaring hole in what IIT claims to be, we can continue to show that even the definition of $\Phi$ itself is problematic.</p>
+<p>Tononi attempts to improve on Chalmers&rsquo; theory by proposing IIT<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. In this theory, information is defined as information that is specified by a system that is irreducible to that specified by its parts. That is, information is <em>integrated</em> information. In making this distinction, Tononi explicitly rejects Chalmer&rsquo;s choice of distinguishing information-carriers as conscious and instead chooses to define a subset of physically-realized information spaces (<em>integrated</em> information) as conscious. In doing so, IIT avoids the first and third pitfalls of Chalmers&rsquo; theory.</p>
+<p>However, IIT still has a major flaw in that it only claims to <em>correlate</em> integrated information $\Phi$ with consciousness: &ldquo;To recapitulate, the theory claims that consciousness corresponds to the capacity to integrate information.&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Yet, we know that correlation is most definitely neither definition nor causation. Even while this is a glaring hole in what IIT claims to be, we can continue to show that even the definition of $\Phi$ itself is problematic.</p>
 <p>Roughly, $\Phi$ is large if the system has a lot interconnection between its components. In more technical terms, it is &ldquo;minimizing, over all subdivisions of your physical system into two parts A and B, some measure of the mutual information between A’s outputs and B’s inputs and vice versa.&rdquo; <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> It is worth noting then that <em>any</em> sort of device that has some level of interconnection would be slightly conscious. According to Aaronson, Tononi seemed to accept this 
 
 
@@ -530,7 +537,7 @@ Chalmers' chooses the second option and suggests that “the level of organizati
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

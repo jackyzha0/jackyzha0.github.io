@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -462,13 +462,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="bridging-the-real-and-the-virtual">Bridging the real and the virtual</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="bridging-the-real-and-the-virtual">Bridging the real and the virtual</h2>
 <ul>
 <li>moving away from personal computing
 <ul>
@@ -516,7 +523,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>&ldquo;One concern, though, is that some social skills may not develop as effectively when so many interactions exist online. We learn how we are and aren’t supposed to act by observing others and then having opportunities to act out our observations ourselves.&rdquo;</p>
 </blockquote>
-<p>&ldquo;On the internet, you can pull the plug and walk away. There’s no forcing mechanism that makes us have to learn&rdquo; → how do we keep people digitally accountable?</p>
+<p>&ldquo;On the internet, you can pull the plug and walk away. There’s no forcing mechanism that makes us have to learn&rdquo; -&gt; how do we keep people digitally accountable?</p>
 <p>
 
 
@@ -525,7 +532,7 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/Nozicks-Experience-Machine" rel="noopener" class="internal-link" data-src="/thoughts/Nozicks-Experience-Machine">Nozick&rsquo;s Experience Machine</a> and the Matrix?</p>
-
+ 
 
     </article>
     <hr/>

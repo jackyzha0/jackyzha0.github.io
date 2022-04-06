@@ -73,7 +73,7 @@ Quotes Maintenance A lot of initiatives like HacktoberFest are widely championed
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -469,13 +469,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Full post: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Full post: 
 
 
 <a href="/posts/paid-open-source" rel="noopener" class="internal-link" data-src="/posts/paid-open-source">A case for funding Open Source</a></p>
@@ -497,7 +504,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/infrastructure">Infrastructure</a></h3>
 <p>There&rsquo;s even a term called the <em>bus factor</em>, where project health is a measured by the number of developers that would need to get hit by a bus before the project is in trouble.</p>
-<p>However, this &lsquo;theory&rsquo; no longer matches up with empirical observation. In fact, less than 5% of developers were responsible for over 95% of code and social interactions on GitHub. The average software developer these days easily relies on hundreds of open source projects to write code these days, it&rsquo;s inevitable that they&rsquo;ll only be able to passively consume most of them.</p>
+<p>However, this &rsquo;theory&rsquo; no longer matches up with empirical observation. In fact, less than 5% of developers were responsible for over 95% of code and social interactions on GitHub. The average software developer these days easily relies on hundreds of open source projects to write code these days, it&rsquo;s inevitable that they&rsquo;ll only be able to passively consume most of them.</p>
 <p>Infrastructure is recursively defined by public consensus. It&rsquo;s the set of structures that we&rsquo;ve collectively decided are most valuable <em>in any given moment,</em> and, therefore, its boundaries and definitions are expected to change over time.</p>
 <p>Like a bridge that needs to support more traffic that it was built for, every social platform is scramlbing to upgrade its infrastructure to accommodate the volume of social interactions we&rsquo;re dealing with today. Platforms need to build skyscrapers where there were once villages.</p>
 <h3 id="identity">Identity</h3>
@@ -525,7 +532,7 @@ if (!doNotTrack) {
 <li>Those who violate the rules are subject to <em>graduated sanctions</em>, which vary depending on the seriousness and context of the offense</li>
 <li>Conflicts should be resolved within the community, using low-cost methods</li>
 <li>External authorities recognize the right of community members to devise their own institutions</li>
-<li>If the commons is part of a larger system, its governing rules are organized into multiple &lsquo;nested&rsquo; layers of authority</li>
+<li>If the commons is part of a larger system, its governing rules are organized into multiple &rsquo;nested&rsquo; layers of authority</li>
 </ol>
 <p>&ldquo;At a company, only employees can do the work, limited by their job function. But in a commons, anyone can stumble upon an advertised task and volunteer themselves. By removing &lsquo;property and contract&rsquo;, the commons will theoretically select for the best person for the job at a lower cost.&rdquo;</p>
 <p>Main types of goods</p>
@@ -552,7 +559,7 @@ if (!doNotTrack) {
 </table>
 <p>Non-rivalry: If I download code from GitHub, my decision doesn&rsquo;t diminish your ability to download that same code. (By contrast, if I bite into an apple and hand it to you, there is now less apple for you to eat) &ndash; a key point here is that open source software isn&rsquo;t necessarily non-rivalrous especially when it comes to marginal increase in maintenance for each additional user
 Non-excludability: If someone owns my copy of my code, it is difficult for me to prevent them from sharing it with others. (By contrast, if I build a theme park, I can prevent people from entering by putting up a turnstile or charging admission)</p>
-<p>The implication is that support can be handled in a fully decentralized manner that will distribute its costs among users &ndash; but someone still needs to review, manage, and process these reports. This maintenance cost is referred to as the &ldquo;servicing costs&rdquo; of software, noting the &ldquo;asymmetry between the low cost of community participation and the high cost that others' participation places on the leaders of the community.&rdquo; She compares the problem to traffic congestion, where each person wants to drive their own car, but in doing so increases the congestion experienced by others, and, eventually, themself.</p>
+<p>The implication is that support can be handled in a fully decentralized manner that will distribute its costs among users &ndash; but someone still needs to review, manage, and process these reports. This maintenance cost is referred to as the &ldquo;servicing costs&rdquo; of software, noting the &ldquo;asymmetry between the low cost of community participation and the high cost that others&rsquo; participation places on the leaders of the community.&rdquo; She compares the problem to traffic congestion, where each person wants to drive their own car, but in doing so increases the congestion experienced by others, and, eventually, themself.</p>
 <h3 id="incentivethoughtsincentivesmd-structures">
 
 
@@ -608,7 +615,7 @@ Non-excludability: If someone owns my copy of my code, it is difficult for me to
 <li>Toys: effectively personal projects</li>
 </ul>
 <p>Jonathan Zdziarski (aka @NerveGas) on user demands: &ldquo;There is definitely a place for users and. their demands, however that&rsquo;s not inside the community (unless they&rsquo;re also contributing devs); the community, as in practicing any art form, is vulnerable; you wouldn&rsquo;t sit and criticize a painter while they&rsquo;re still painting their piece. The user base needs to be moved outside of the artistic realm and into the museum, where you software is on display.&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

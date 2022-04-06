@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -459,13 +459,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Hello there and welcome back to another issue of some mildly coherent ramblings. It&rsquo;s been yet another couple busy weeks, but I&rsquo;ve just wrapped up my second decade on this crazy planet! I have a lot of really exciting life updates that I want to share with all of you soon, but without further ado: the content you subscribed for.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Hello there and welcome back to another issue of some mildly coherent ramblings. It&rsquo;s been yet another couple busy weeks, but I&rsquo;ve just wrapped up my second decade on this crazy planet! I have a lot of really exciting life updates that I want to share with all of you soon, but without further ado: the content you subscribed for.</p>
 <h2 id="3-things-ive-found-interesting">3 things I’ve found interesting</h2>
 <ol>
 <li>
@@ -499,7 +506,7 @@ if (!doNotTrack) {
 <a href="/thoughts/public-goods" rel="noopener" class="internal-link" data-src="/thoughts/public-goods">public good</a>&rsquo;? As more and more of our digital infrastructure is built out under private companies, does it change how we govern content on top of it?</li>
 <li>
 
-<a href="https://www.dougengelbart.org/content/view/348/000/" rel="noopener">Are &lsquo;easy-to-use&rsquo; products always better?</a> Interesting read about the &lsquo;seductive, destructive appeal of ease of use&rsquo;: the belief that &ldquo;ease of use&rdquo; is somehow conflated with better products. I always hear that complex tools and apps being not implemented because user research proved that it was &lsquo;too difficult to use&rsquo; but is this costing us in the long run? One great example the article talks about is the tricycle/bicycle analogy. &ldquo;It is clear that for an unskilled user, the tricycle is much easier to use. But, as we know, the payoff from investing in learning to ride on two wheels is enormous.&rdquo; Related: 
+<a href="https://www.dougengelbart.org/content/view/348/000/" rel="noopener">Are &rsquo;easy-to-use&rsquo; products always better?</a> Interesting read about the &lsquo;seductive, destructive appeal of ease of use&rsquo;: the belief that &ldquo;ease of use&rdquo; is somehow conflated with better products. I always hear that complex tools and apps being not implemented because user research proved that it was &rsquo;too difficult to use&rsquo; but is this costing us in the long run? One great example the article talks about is the tricycle/bicycle analogy. &ldquo;It is clear that for an unskilled user, the tricycle is much easier to use. But, as we know, the payoff from investing in learning to ride on two wheels is enormous.&rdquo; Related: 
 
 
 <a href="/thoughts/workflows" rel="noopener" class="internal-link" data-src="/thoughts/workflows">building tools around workflows</a></li>
@@ -512,7 +519,7 @@ if (!doNotTrack) {
 
 <a href="/posts/ctrlv-next" rel="noopener" class="internal-link" data-src="/posts/ctrlv-next">https://blog.jzhao.xyz/posts/ctrlv-next/</a>. The weather has been nice in Vancouver the past couple of days so I&rsquo;ve had the chance to just go outside and read in a park which has been a really nice change of pace from my usual go-go-go-get-shit-done daily schedule. Looking forward to finishing up this semester, I have a lot of really cool projects I want to work in the next month and a bit!</p>
 <p>Until next time, don&rsquo;t forget to be awesome :)</p>
-
+ 
 
     </article>
     <hr/>

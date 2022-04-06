@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -498,13 +498,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Content from my own 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Content from my own 
 
 <a href="https://github.com/jackyzha0/docker-explained" rel="noopener">&lsquo;Docker Explained&rsquo; repo</a>. Check out the repository for example code!</p>
 <h2 id="introduction">Introduction</h2>
@@ -529,14 +536,14 @@ if (!doNotTrack) {
 <p>This means that &lsquo;containerized&rsquo; applications don&rsquo;t need to rely on a system to have certain dependencies (e.g. <code>Node.js</code>) installed on the user&rsquo;s system to run because the container will have it packaged.</p>
 <p>You can think of Docker containers like a fully self-contained and running version of your application.</p>
 <h3 id="docker-image">Docker Image</h3>
-<p>You can think of Docker images like a sort of &lsquo;template&rsquo; that describes to Docker how to create a container from scratch. You can build these images by providing instructions on how to build them in the form of layers.</p>
+<p>You can think of Docker images like a sort of &rsquo;template&rsquo; that describes to Docker how to create a container from scratch. You can build these images by providing instructions on how to build them in the form of layers.</p>
 <h3 id="layers">Layers</h3>
 <p>Docker images, like ogres (or cakes if you&rsquo;re a boring person), have many layers. The base layer often provides some basic functionality like providing <code>git</code>, <code>bash</code> or <code>apt</code> &ndash; otherwise your container has nothing to run off of! We can then add our own layers on top of that base layer, like installing dependencies, copying files into the image, and defining the command to run when the container starts up. These instructions are programmatically defined through a Dockerfile.</p>
 <blockquote>
 <p>One of the coolest parts of Docker is that these layers get cached between builds if nothing has changed. That means that if you rebuild an image and only changed the last layer, it&rsquo;ll only need to rebuild the last layer rather than rebuilding the whole image, making for some really fast iteration times.</p>
 </blockquote>
 <h3 id="dockerfile">Dockerfile</h3>
-<p>The Dockerfile are the actual specific instructions for how to create the actual image or &lsquo;template&rsquo;. The Dockerfile starts off by defining a &lsquo;base-layer&rsquo;, which serve as the basis for your actual image. Some common base layers are <code>ubuntu</code> (which contains a minimal install of the actual Ubuntu operating system) and <code>python</code> (which contains everything needed to run a basic Python app).</p>
+<p>The Dockerfile are the actual specific instructions for how to create the actual image or &rsquo;template&rsquo;. The Dockerfile starts off by defining a &lsquo;base-layer&rsquo;, which serve as the basis for your actual image. Some common base layers are <code>ubuntu</code> (which contains a minimal install of the actual Ubuntu operating system) and <code>python</code> (which contains everything needed to run a basic Python app).</p>
 <p>I won&rsquo;t dive into too much details about each command you can use as these will be described more in-depth within the examples. You can find detailed documentation on the commands you can use in a Dockerfile here: 
 
 <a href="https://docs.docker.com/engine/reference/builder/" rel="noopener">https://docs.docker.com/engine/reference/builder/</a></p>
@@ -551,12 +558,12 @@ if (!doNotTrack) {
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ docker run hello-world
-
-Hello from Docker.
-This message shows that your installation appears to be working correctly.
-...
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ docker run hello-world
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Hello from Docker.
+</span></span><span class="line"><span class="cl">This message shows that your installation appears to be working correctly.
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now, let&rsquo;s go over a few basic CLI commands that you&rsquo;ll probably be using as you work with Docker.</p>
 <h3 id="docker-build"><code>docker build</code></h3>
@@ -580,11 +587,11 @@ This message shows that your installation appears to be working correctly.
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
-image1                     0.1.1               9eb95c7f06b0        <span class="m">2</span> days ago          343MB
-image2                     &lt;none&gt;              c99ac06cf60a        <span class="m">2</span> days ago           23MB
-...
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+</span></span><span class="line"><span class="cl">image1                     0.1.1               9eb95c7f06b0        <span class="m">2</span> days ago          343MB
+</span></span><span class="line"><span class="cl">image2                     &lt;none&gt;              c99ac06cf60a        <span class="m">2</span> days ago           23MB
+</span></span><span class="line"><span class="cl">...
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>More info can be found here: 
 
@@ -691,7 +698,7 @@ image2                     &lt;none&gt;              c99ac06cf60a        <span c
 </ul>
 <h1 id="closing">Closing</h1>
 <p>I hope you learned a thing or two about Docker! If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it)! If you liked it, feel free to give it a ⭐ so both you and I can feel fuzzy inside.</p>
-
+ 
 
     </article>
     <hr/>

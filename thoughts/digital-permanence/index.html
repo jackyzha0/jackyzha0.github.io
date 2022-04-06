@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -459,13 +459,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Once you share something, you can&rsquo;t unshare it, the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Once you share something, you can&rsquo;t unshare it, the 
 
 
 <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">internet</a> feels intractable.</p>
@@ -528,11 +535,11 @@ It more or less says that you can only explain a system using criteria defined i
 <p>&ldquo;One history of the Internet — and I&rsquo;d argue a rather significant one — is the history of the individual&rsquo;s disempowerment, as governments and businesses both sought to monitor and profit from what had fundamentally been a user-to-user or 
 
 
-<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> relationship. The result was the centralization and consolidation of the Internet — the true y2k tragedy. This tragedy unfolded in stages, a gradual infringement of rights: users had to first be made transparent to their internet service providers, and then they were made transparent to the internet services they used, and finally they were made transparent to one another. The intimate linking of users' online personas with their offline legal identity was an iniquitous squandering of liberty and technology that has resulted in today&rsquo;s atmosphere of accountability for the citizen and impunity for the state. Gone were the days of self-reinvention, imagination, and flexibility, and a new era emerged — a new eternal era — where our pasts were held against us. Forever.&rdquo;</p>
+<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> relationship. The result was the centralization and consolidation of the Internet — the true y2k tragedy. This tragedy unfolded in stages, a gradual infringement of rights: users had to first be made transparent to their internet service providers, and then they were made transparent to the internet services they used, and finally they were made transparent to one another. The intimate linking of users&rsquo; online personas with their offline legal identity was an iniquitous squandering of liberty and technology that has resulted in today&rsquo;s atmosphere of accountability for the citizen and impunity for the state. Gone were the days of self-reinvention, imagination, and flexibility, and a new era emerged — a new eternal era — where our pasts were held against us. Forever.&rdquo;</p>
 <p>&ldquo;Everything we do now lasts forever&hellip; The Internet&rsquo;s synonymizing of digital presence and physical existence ensures fidelity to memory, identitarian consistency, and ideological conformity. Be honest: if one of your opinions provokes the hordes on social media, you&rsquo;re less likely to ditch your account and start a new one than you are to apologize and grovel, or dig in and harden yourself ideologically. Neither of those &ldquo;solutions&rdquo; is one that fosters change, or intellectual and emotional growth&rdquo;</p>
 <p>&ldquo;The forced identicality of online and offline lives, and the permanency of the Internet&rsquo;s record, augur against forgiveness, and advise against all mercy. Technological omniscence, and the ease of accessibility, promulgate a climate of censorship that in the so-called free world instantiates as self-censorship: people are afraid to speak and so they speak the party&rsquo;s words&hellip; or people are afraid to speak and so they speak no words at all&hellip;&rdquo;</p>
 <p>&ldquo;Even the most ardent practitioners of cancel culture — which I&rsquo;ve always read as an imperative: Cancel culture! — must admit that cancellation is a form of surveillance borne of the same technological capacities used to oppress the vulnerable by patriachal, racist, and downright unkind governments the world over. The intents and outcomes might be different — cancelled people are not sent to camps — but the modus is the same: a constant monitoring, and a rush to judgment.&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

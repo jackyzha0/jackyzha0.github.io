@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -458,13 +458,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="mindstormsthoughtsmindstormsmd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="mindstormsthoughtsmindstormsmd">
 
 
 <a href="/thoughts/Mindstorms" rel="noopener" class="internal-link" data-src="/thoughts/Mindstorms">Mindstorms</a></h2>
@@ -472,7 +479,7 @@ if (!doNotTrack) {
 <p>&ldquo;I never met anyone who was, at once, so playful and so serious about ideas.&rdquo;</p>
 <p>Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children learn language by first learning their own (&ldquo;baby-talk&rdquo;) dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the &ldquo;official&rdquo; physics by allowing them the freedom to invent many that will work in as many invented worlds.</p>
 <p>Why there is no good answer to &ldquo;how do I learn CS&rdquo;
-&ldquo;I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching&hellip; But &lsquo;teaching without curriculum&rsquo; does not mean spontaneous, free-form classrooms or simply &lsquo;leaving the child alone.&rsquo; It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture&rdquo;</p>
+&ldquo;I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching&hellip; But &rsquo;teaching without curriculum&rsquo; does not mean spontaneous, free-form classrooms or simply &rsquo;leaving the child alone.&rsquo; It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture&rdquo;</p>
 <blockquote>
 <p>&ldquo;They&rsquo;ll handle the details. Indeed, they insist on it. For a project to feel like your own, you must have sufficient autonomy. You can&rsquo;t be working to order, or slowed down by bureaucracy.&rdquo; &ndash; 
 
@@ -495,7 +502,7 @@ if (!doNotTrack) {
 </ol>
 <p>&ldquo;Instead, design justice pedagogies must support students to actively develop their own critical analysis of design, power, and liberation, in ways that connect with their own lived experience&rdquo;</p>
 <p>However, if resource constraints become an excuse to avoid examining the root of the problem area, then designers will almost always end up, at best, providing Band-Aids for deep wounds and, at word, actively serving existing power structures.</p>
-
+ 
 
     </article>
     <hr/>

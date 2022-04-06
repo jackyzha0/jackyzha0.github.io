@@ -73,7 +73,7 @@ If prior patterns are essential for making sense of things, how can we avoid fal
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,65 +449,93 @@ if (!doNotTrack) {
 </ul>
       
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
       
       
       
       
       
       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          
-          
-          
-        
+      
+      
+      
       
         
         
         
-        
-        
-        
-        
-        
-        
-        
-          
-          
-          
-        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
         
         
         
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         
         
-        
-        
-        
-        
-        
-          
-          
-          
         
       
-      <p>
+    
+  
+
+<p>
 
 <a href="https://aeon.co/essays/seeing-is-not-simple-you-need-to-be-both-knowing-and-naive" rel="noopener"><em>Science as Seeing</em> in Aeon</a></p>
 <p>If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception? And most importantly, how can we learn to see in genuinely new ways?</p>
 <p>To say that we construct idealised categories is not to say that patterns in the world don’t already exist, but that we must learn how to see them in the world around us.</p>
 <p>If the brain is a taxonomising (see: <a href="/thoughts/terminology#Terminological anchoring" rel="noopener" class="internal-link" data-src="/thoughts/terminology">terminological anchoring</a> and <a href="/thoughts/language-of-thought" rel="noopener" class="internal-link" data-src="/thoughts/language-of-thought">Language of thought</a>) engine, anxious to map the things and people we experience into familiar categories, then true learning must always be disorienting. Learning shifts the internal constellation of the firings of our nerves, the star by which we set our course, the spark of thought itself.</p>
 <p>Seeing is a multipartite process, requiring a comparison between noisy signals and <a href="/thoughts/conceptual-model" rel="noopener" class="internal-link" data-src="/thoughts/conceptual-model">idealised models</a>.</p>
-
+ 
 
     </article>
     <hr/>

@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -470,31 +470,45 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          
-          
-          
-        
-      
-      <p>How might we analogize 
 
 
-<a href="/thoughts/urban-planning" rel="noopener" class="internal-link" data-src="/thoughts/urban-planning">urban planning</a> to social media and digital spaces? → 
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+<p>How might we analogize 
+
+
+<a href="/thoughts/urban-planning" rel="noopener" class="internal-link" data-src="/thoughts/urban-planning">urban planning</a> to social media and digital spaces? -&gt; 
 
 <a href="https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12" rel="noopener">https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12</a></p>
 <h2 id="internet-studio-gardens">Internet Studio Gardens</h2>
@@ -579,9 +593,9 @@ what they are looking for?</li>
 </ul>
 <h4 id="tools">Tools</h4>
 <ul>
-<li>Forums → Gathering based on interest</li>
-<li>Game lobbies and public squares → A temporary bringing-together of otherwise completely unrelated individuals</li>
-<li>Meeting rooms and Gather.town → Intentional spaces to meet and mingle with coworkers and friends</li>
+<li>Forums -&gt; Gathering based on interest</li>
+<li>Game lobbies and public squares -&gt; A temporary bringing-together of otherwise completely unrelated individuals</li>
+<li>Meeting rooms and Gather.town -&gt; Intentional spaces to meet and mingle with coworkers and friends</li>
 </ul>
 <h3 id="parasocial-relationships">Parasocial Relationships</h3>
 <p>One-to-many &lsquo;broadcast&rsquo; relationships.</p>
@@ -592,8 +606,8 @@ what they are looking for?</li>
 </ul>
 <h4 id="tools-1">Tools</h4>
 <ul>
-<li>Twitch, Celebrities, and Internet Figures → Gathering around a single person because of personality/content</li>
-<li>Newsletters and personal sites → Public places of exploration and self-identity, self-owned corners of the 
+<li>Twitch, Celebrities, and Internet Figures -&gt; Gathering around a single person because of personality/content</li>
+<li>Newsletters and personal sites -&gt; Public places of exploration and self-identity, self-owned corners of the 
 
 
 <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">internet</a></li>
@@ -610,11 +624,11 @@ what they are looking for?</li>
 </ul>
 <h4 id="tools-2">Tools</h4>
 <ul>
-<li>Letters and Mail → Completely asyncronous text based communication</li>
-<li>Messages → Instantaneous text or audio based communication with a history log. No immediate urgency to reply</li>
-<li>Calling → Audio/video based live communication</li>
+<li>Letters and Mail -&gt; Completely asyncronous text based communication</li>
+<li>Messages -&gt; Instantaneous text or audio based communication with a history log. No immediate urgency to reply</li>
+<li>Calling -&gt; Audio/video based live communication</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

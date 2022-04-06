@@ -73,7 +73,7 @@ Game Design and Teaching  Source: Game designers vs.">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -470,13 +470,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Related: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Related: 
 
 
 <a href="/thoughts/games" rel="noopener" class="internal-link" data-src="/thoughts/games">games</a></p>
@@ -493,7 +500,7 @@ if (!doNotTrack) {
 <p>A lot of pedagogy is covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?</p>
 <p>The &ldquo;
 
-<a href="https://www.youtube.com/watch?v=xrDZ--AuiL8" rel="noopener">vow of silence</a>&quot;: to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through 
+<a href="https://www.youtube.com/watch?v=xrDZ--AuiL8" rel="noopener">vow of silence</a>&rdquo;: to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through 
 
 
 <a href="/thoughts/play" rel="noopener" class="internal-link" data-src="/thoughts/play">play</a>. An approach very similar to the 
@@ -606,7 +613,7 @@ if (!doNotTrack) {
 <li>Success together in high trust situations</li>
 <li>Time spent talking positively to each other</li>
 </ol>
-<p>However, this &lsquo;trust value&rsquo; should not be public for the sake of avoiding converting it into a metric to optimize for: 
+<p>However, this &rsquo;trust value&rsquo; should not be public for the sake of avoiding converting it into a metric to optimize for: 
 
 
 <a href="/thoughts/Goodharts-Law" rel="noopener" class="internal-link" data-src="/thoughts/Goodharts-Law">Goodhart&rsquo;s Law</a>. Doing so may transform relationships into ones which are transactional in nature with clear extrinsic motivators in the form of your willingness to make that number go up or down. (This is also one of the reasons why ‘likes’ in social media end up being a source of toxicity and in general a very poor practice.)</p>
@@ -631,7 +638,7 @@ if (!doNotTrack) {
 <li>Transaction costs: can prevent global pooling with large transaction taxes. This encourages local resource use</li>
 <li>Appropriate sinks: find ways to drain resources out of the world</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

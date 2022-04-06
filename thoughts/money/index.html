@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -465,13 +465,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>Money is a form of shared truth</p>
 </blockquote>
 <p>Sources: 
@@ -562,12 +569,12 @@ Gold is a great store of value but sucks as a medium of exchange (interesting ta
 <p>However, it feels liek we run into a weird 
 
 
-<a href="/thoughts/catch-22" rel="noopener" class="internal-link" data-src="/thoughts/catch-22">catch 22</a> here where it is debatable whether the new &lsquo;engineered money&rsquo; actually does have the properties we claim to have so it holds us back from developing/accepting it any more. I think this is in large part due to money being a combination of both <strong>technical protocols and 
+<a href="/thoughts/catch-22" rel="noopener" class="internal-link" data-src="/thoughts/catch-22">catch 22</a> here where it is debatable whether the new &rsquo;engineered money&rsquo; actually does have the properties we claim to have so it holds us back from developing/accepting it any more. I think this is in large part due to money being a combination of both <strong>technical protocols and 
 
 
 <a href="/thoughts/social-contracts" rel="noopener" class="internal-link" data-src="/thoughts/social-contracts">social contracts</a></strong></p>
-<p>Andreas' argument is that we can use abstract monetary protocols which we can engineer to change gradually higher-order social contracts.</p>
-
+<p>Andreas&rsquo; argument is that we can use abstract monetary protocols which we can engineer to change gradually higher-order social contracts.</p>
+ 
 
     </article>
     <hr/>

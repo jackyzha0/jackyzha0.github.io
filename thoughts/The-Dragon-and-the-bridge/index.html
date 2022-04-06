@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -454,13 +454,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p><em>Paper #1 for PHIL240A at UBC</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><em>Paper #1 for PHIL240A at UBC</em></p>
 <blockquote>
 <p>It&rsquo;s been three weeks now since you woke up deep in a forest. You&rsquo;ve managed to survive; the forest itself isn&rsquo;t that bad. But, there&rsquo;s a pack of wolves that keeps trying to hunt you down, and every few days you have to run away from where you&rsquo;ve set up camp. This is one of those days. You hear the howling of the wolves and run run run for it&hellip; until you break through the tree line and find yourself facing a massive ravine. There&rsquo;s clearly no way to jump, go around, or scale down it. Scanning frantically, you see a rope bridge about half a kilometer away, and you dash toward it. There seems to be some large boulder blocking the entrance, but you&rsquo;ll deal with that when you get there. As you approach, a long neck raises an elegant reptilian head, and two golden eyes turn to regard you. The boulder was a sleeping dragon! You slow down and approach with caution. Dragons are known to be intelligent and mostly benevolent; maybe you can just talk to them and ask them to move. &ldquo;Great dragon!,&rdquo; you call out. &ldquo;Please let me past you onto the bridge. There&rsquo;s a group of wolves coming after me, and I don&rsquo;t want to be eaten.&rdquo; The dragon looks askance at you, turns its long neck to look across the ravine, and turns back to you again. &ldquo;Bridge? What bridge?,&rdquo; they ask. &ldquo;The one right behind you,&rdquo; you reply, surprised. &ldquo;There&rsquo;s a bridge here?,&rdquo; the dragon queries, feigning (or not?) confusion. You&rsquo;re stunned. &ldquo;Yes, the bridge, it&rsquo;s right there!,&rdquo; you say. &ldquo;Aha!,&rdquo; says the dragon. &ldquo;But how do you know there&rsquo;s a bridge here? How can you be certain of what you see, that it&rsquo;s not an illusion, or that all of this isn&rsquo;t a dream? Death approaches you from behind, death looms before you if you fall unsupported into this ravine. Why would you trust that the world has provided you with a bridge?&rdquo;</p>
 <p>Respond from the perspective of Uddyotakara, assuming that he endorses Gautama&rsquo;s verses and Vātsyāyana&rsquo;s comments (see: 
@@ -501,12 +508,12 @@ if (!doNotTrack) {
 <p><strong>U:</strong> That is to say that my cognition of the bridge is erroneous? Do you believe there to be nothing in its place? I cannot make a mistake about what it is unless there is something there that I could be wrong about. What do you see instead?</p>
 <p><strong>[The Dragon takes another glance at the ravine.]</strong></p>
 <p><strong>D:</strong> I see a log. There is no concept of &lsquo;bridge&rsquo; behind me.</p>
-<p><strong>U:</strong> This is quite the anti-realist argument &ndash; that because you and I see two different things when referring to the same object (due to language understanding, presupposed knowledge, etc.) then the object must therefore have no &lsquo;true nature&rsquo; (Nyāyasūtra 4.2.37).</p>
+<p><strong>U:</strong> This is quite the anti-realist argument &ndash; that because you and I see two different things when referring to the same object (due to language understanding, presupposed knowledge, etc.) then the object must therefore have no &rsquo;true nature&rsquo; (Nyāyasūtra 4.2.37).</p>
 <p>Yet, to even be wrong about something, one needs to mistake something $\lnot F$ for something $F$ (to see a post as a person). This, of course, happens when the differences between $\lnot F$ and $F$ are ignored while their similarities are grasped.</p>
-<p>While either one of us could be wrong about the <em>true</em> nature of the thing in the ravine, it is undoubtable that there is something there which has the essence of &lsquo;bridge&rsquo; and &lsquo;log&rsquo; and should be usable to cross the ravine.</p>
+<p>While either one of us could be wrong about the <em>true</em> nature of the thing in the ravine, it is undoubtable that there is something there which has the essence of &lsquo;bridge&rsquo; and &rsquo;log&rsquo; and should be usable to cross the ravine.</p>
 <p><strong>D:</strong> Well, seeing as there is <em>something</em> for you to cross the ravine with, you must get going now. The wolves are getting close, I shall let you cross.</p>
 <p><strong>[The Dragon steps aside.]</strong></p>
-
+ 
 
     </article>
     <hr/>

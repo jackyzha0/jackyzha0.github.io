@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,20 +448,27 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Efforts to influence or control the further development of technology face a double-bind problem</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Efforts to influence or control the further development of technology face a double-bind problem</p>
 <ul>
 <li>An information problem: impacts cannot be easily predicted until the technology is extensively developed and widely used.</li>
 <li>A power problem: control or change is difficult when the technology has become entrenched.</li>
 </ul>
 <h2 id="pacing-problem">Pacing Problem</h2>
-<p>The &ldquo;pacing problem&rdquo; refers to the notion that technological innovation is increasingly outpacing the ability of laws and regulations to keep up, first explained in Larry Downes' 2009 book The Laws of Disruption, in which he famously states that &ldquo;technology changes exponentially, but social, economic, and legal systems change incrementally&rdquo;.</p>
-
+<p>The &ldquo;pacing problem&rdquo; refers to the notion that technological innovation is increasingly outpacing the ability of laws and regulations to keep up, first explained in Larry Downes&rsquo; 2009 book The Laws of Disruption, in which he famously states that &ldquo;technology changes exponentially, but social, economic, and legal systems change incrementally&rdquo;.</p>
+ 
 
     </article>
     <hr/>

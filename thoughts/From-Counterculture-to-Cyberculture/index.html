@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -483,13 +483,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="quotes">Quotes</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="quotes">Quotes</h2>
 <h3 id="digital-communalism-see-tribal-flourishingthoughtstribe20flourishingmd">Digital Communalism (see: 
 
 
@@ -525,17 +532,17 @@ if (!doNotTrack) {
 <p>Technocracy, technostructure, or technological society: society&rsquo;s rapid process of centralization and rationalization as both supported by new technologies and designed to help build them.</p>
 <p>Sante Fe Institute: founded in 1984 by a group of scientists who had come to believe that since WWII, the biological, physical, and socila sciences had begun to converge. Computers, they argued, had made this convergence possible in two ways: first, they had served as tools for examining and modeling the world, and, second, the algorithms with which they organized information mimicked the algorithmic patterning of life itself by means of biological &ldquo;technologies&rdquo; such as DNA.</p>
 <h3 id="neocolonialism">Neocolonialism</h3>
-<p>&ldquo;[The hippie&rsquo;s] arrival tapped into memories of very old patterns of colonization and migration. A chicano member of New Mexico&rsquo;s Reality Construction Company commune told a visiting reporter, &lsquo;every time a white hippie comes in a buys a Chicano&rsquo;s land to escape the fuckin&rsquo; city, he sends that Chicano <em>to</em> the city to go through what he&rsquo;s trying to escape <em>from</em>, can you dig it?&hellip; Then when that money&rsquo;s gone, see, the Chicano has to <em>stay</em> in the city, cause now he ain&rsquo;t got no land to come back to.&rdquo;</p>
+<p>&ldquo;[The hippie&rsquo;s] arrival tapped into memories of very old patterns of colonization and migration. A chicano member of New Mexico&rsquo;s Reality Construction Company commune told a visiting reporter, &rsquo;every time a white hippie comes in a buys a Chicano&rsquo;s land to escape the fuckin&rsquo; city, he sends that Chicano <em>to</em> the city to go through what he&rsquo;s trying to escape <em>from</em>, can you dig it?&hellip; Then when that money&rsquo;s gone, see, the Chicano has to <em>stay</em> in the city, cause now he ain&rsquo;t got no land to come back to.&rdquo;</p>
 <h3 id="power-hierarchies-and-individualism">Power Hierarchies and Individualism</h3>
 <p>&ldquo;Brand suggests that top-down politics (i.e. the kind where Mr. Advantage tells Mr. Disadvantage what to do) is backrupt. The center of change must be the individual, acting with other likeminded individuals. This emphasis on local action echoes the notion of the individual&rsquo;s local role in maintaining universal systems.&rdquo;</p>
 <p>WEC seems to promote an incredibly individualistic approach; Indians must work with Indians, the Third World with the Third Wolrd, blacks with blacks, and so on. No group should count on help from any other&hellip; Such segregation might seem to conflict with the WEC&rsquo;s celebration of &lsquo;whole&rsquo; systems. This seems to be an artifact of the fact that all members of the WEC were white and relatively young, iwth a high level of education and easy access to social and financial resources.</p>
 <p>&ldquo;The great machines of empire had been miniturized and turned over to individuals, and so transformed into tools with which individuals could improve their own lives.&rdquo;</p>
 <p>&ldquo;As a variety of economic sociologists have noted, the mid-1980s saw hierarchical firms in many industries and several nations reorganize themselves as project oriented networks. They laid off workers, broke component elements of firms into semi-independent project teams, and decentralized their management structure.&rdquo;</p>
-<p>&ldquo;Although the hive had a queen, he pointed out it was governed by the rule-driven behaviour of its many members. In the hive one could see &lsquo;the true democracy and all distributed governance&rsquo;. One could also see the faded image of New Communalism. Leveled, collaborative, linked by invisible signals and shared feelings, Kelly&rsquo;s hive was a sort of natural commune.&rdquo; (more on 
+<p>&ldquo;Although the hive had a queen, he pointed out it was governed by the rule-driven behaviour of its many members. In the hive one could see &rsquo;the true democracy and all distributed governance&rsquo;. One could also see the faded image of New Communalism. Leveled, collaborative, linked by invisible signals and shared feelings, Kelly&rsquo;s hive was a sort of natural commune.&rdquo; (more on 
 
 
 <a href="/posts/collaborative-thinking" rel="noopener" class="internal-link" data-src="/posts/collaborative-thinking">collaborative-thinking</a>)</p>
-<p>&ldquo;Together, <em>Wired</em> suggested, this digital generation would do what the New Communalists had failed to accomplish: they would tear down hierarchies, undermine the sorts of corporations and governments that had spawned them, and, in the hierarchies' place, create a 
+<p>&ldquo;Together, <em>Wired</em> suggested, this digital generation would do what the New Communalists had failed to accomplish: they would tear down hierarchies, undermine the sorts of corporations and governments that had spawned them, and, in the hierarchies&rsquo; place, create a 
 
 
 <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a>, collaborative society, interlinked by invisible currents of energy and information.&rdquo;</p>
@@ -545,13 +552,13 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/Hackers" rel="noopener" class="internal-link" data-src="/thoughts/Hackers">Hackers</a></h3>
-<p>Hackers →  those who figured things out as they went and invented for pleasure. Focused on computer systems themselves and on seeing what they could do</p>
-<p>Planners → those who pursued problems according to a set and less flexible strategy. Thought of computers as tools that oculd be used to generate or model infomration</p>
+<p>Hackers -&gt;  those who figured things out as they went and invented for pleasure. Focused on computer systems themselves and on seeing what they could do</p>
+<p>Planners -&gt; those who pursued problems according to a set and less flexible strategy. Thought of computers as tools that oculd be used to generate or model infomration</p>
 <p>Steven Levy&rsquo;s definitions:
-A hack → a project undertaken or a product built not solely to fulfill some constructive goal, but with some mild pleasure take in mere involvement</p>
+A hack -&gt; a project undertaken or a product built not solely to fulfill some constructive goal, but with some mild pleasure take in mere involvement</p>
 <h3 id="media-labs">Media Labs</h3>
 <p>&ldquo;The sponsors were not allowed to demand that any particular reserach be done on their behalf. Rather, they were buying permission to watch as [they built]&rdquo;</p>
-<p>&ldquo;Media Lab personnel were never required to produce artifiacts that could be mass-produced or that would feede directly into sponsors' lines of business per se. Instead, they were expected to produce &lsquo;demos.'&rdquo;</p>
+<p>&ldquo;Media Lab personnel were never required to produce artifiacts that could be mass-produced or that would feede directly into sponsors&rsquo; lines of business per se. Instead, they were expected to produce &lsquo;demos.&rsquo;&rdquo;</p>
 <h3 id="misc">Misc</h3>
 <p>&ldquo;I always thought tools were objects, things: screw drivers, wrenches, axes, hoes. Now I realize that tools are a process: using the right-sized and shaped object in the most effective way to get a job done.&rdquo;</p>
 <p>On CompuServe and elsewhere, developers largely treated information as a commodity to be exchanged and users as consumers of information goods</p>
@@ -720,7 +727,7 @@ A hack → a project undertaken or a product built not solely to fulfill some co
 </ul>
 </li>
 </ul>
-
+ 
 
     </article>
     <hr/>

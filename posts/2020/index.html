@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -478,13 +478,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="a-year-of-almosts">A year of &lsquo;almosts&rsquo;</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="a-year-of-almosts">A year of &lsquo;almosts&rsquo;</h2>
 <p>2020 is:</p>
 <ul>
 <li>about 9.5 times longer than a Rick Roll in seconds</li>
@@ -507,7 +514,7 @@ if (!doNotTrack) {
 <ol>
 <li><strong>Time Blocking</strong> &ndash; COVID had eliminated any physical boundaries I already had; no 15 minute transit to separate work and home, no physical walk required to go from home to school. As a result, everything started to meld together. If it only takes me 3 clicks to go from my club meeting to my work tickets, I can just work just a little longer, right? I found that time blocking really let me regain a little bit of control back in my life. I could tell myself to only spend <em>x</em> hours doing <em>y</em>. It had the added benefit of allowing me to <em>actually block off time for myself</em> and to enjoy life a little bit.</li>
 <li><strong>Exercise</strong> &ndash; although I&rsquo;ve known this fact for a while now, this is the year I&rsquo;ve really decided to actually apply it to my life. Feeling like garbage? Go for a run to feel more like garbage for a good hour before feeling better! I&rsquo;ve had the privilege of being really close to nature so I get to enjoy the subtle crunching of leaves and brisk autumn air with each step.</li>
-<li><strong>Quality time with quality people</strong> &ndash; 2020 was not a kind year to most, myself included and I&rsquo;m not going to pretend otherwise. However, the presence of a select few individuals in my life really helped to make the year slightly less of a dumpster fire. You know who you are :')</li>
+<li><strong>Quality time with quality people</strong> &ndash; 2020 was not a kind year to most, myself included and I&rsquo;m not going to pretend otherwise. However, the presence of a select few individuals in my life really helped to make the year slightly less of a dumpster fire. You know who you are :&rsquo;)</li>
 </ol>
 <h3 id="independent-living">Independent living</h3>
 <p>I finally moved out from on-campus housing into my own place! I&rsquo;ve definitely felt tinges of loneliness during the pandemic but I&rsquo;ve learned to fill the silence with music, podcasts, reading, or questionable arts and crafts. I&rsquo;ve also somehow managed to get by the past few months without giving myself food poisoning in my transition from campus food to homecooked food.</p>
@@ -569,7 +576,7 @@ if (!doNotTrack) {
 <p>hindsight is 2020.</p>
 </blockquote>
 <p>(no I didn&rsquo;t plan on releasing this right at midnight, I just take a long time to write)</p>
-
+ 
 
     </article>
     <hr/>

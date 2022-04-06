@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -459,13 +459,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>This month of January went by with blazing speed. I can&rsquo;t say if it&rsquo;s because of school starting back up or just the massive amounts of s t u f f going on in the world right now.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This month of January went by with blazing speed. I can&rsquo;t say if it&rsquo;s because of school starting back up or just the massive amounts of s t u f f going on in the world right now.</p>
 <p>On an unrelated note, I&rsquo;m currently working on stepping outside my comfort zone and meeting new people so feel free to email back if you&rsquo;d be interested in a coffee chat! I&rsquo;d be happy to learn about all the cool things y&rsquo;all are working on :)</p>
 <h2 id="3-things-ive-found-interesting">3 things I’ve found interesting</h2>
 <ol>
@@ -503,7 +510,7 @@ if (!doNotTrack) {
 <p>I presented a technical workshop for the first time at Hack the North 2020++! I&rsquo;ve always been a little spooked of public speaking but it was really empowering to be able to go up in front of so many people (albeit virtually) and talk about something I&rsquo;m passionate about. My workshop was on a gentle introduction to Docker and you can view the recording 
 
 <a href="https://www.youtube.com/watch?v=ONNQ5EDhXUk" rel="noopener">here</a> (it&rsquo;s not a Rick Roll, I promise).</p>
-
+ 
 
     </article>
     <hr/>

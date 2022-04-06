@@ -73,7 +73,7 @@ Partly works because we can utilize collaborative thinking.">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -463,13 +463,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://distill.pub/2017/research-debt/" rel="noopener">Source: Research Debt in <em>Distill Pub</em></a></p>
 <p>Partly works because we can utilize 
@@ -493,10 +500,10 @@ if (!doNotTrack) {
 <a href="/thoughts/interpretive-labour" rel="noopener" class="internal-link" data-src="/thoughts/interpretive-labour">interpretive labour</a> for learners?</p>
 <h2 id="debt-in-research">Debt in research</h2>
 <ul>
-<li>Poor exposition → no good explanation of ideas and concepts</li>
-<li>Undigested ideas → it takes effort to polish ideas, developing the right analogies, language, and ways of thinking</li>
-<li>Bad abstractions and notation → abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge</li>
-<li>Noise → there&rsquo;s <em>too</em> much new progress being made each day. How do we choose what to focus on?</li>
+<li>Poor exposition -&gt; no good explanation of ideas and concepts</li>
+<li>Undigested ideas -&gt; it takes effort to polish ideas, developing the right analogies, language, and ways of thinking</li>
+<li>Bad abstractions and notation -&gt; abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge</li>
+<li>Noise -&gt; there&rsquo;s <em>too</em> much new progress being made each day. How do we choose what to focus on?</li>
 </ul>
 <p>Not just about poorly explained ideas, but rather the lack of ideas being digested and worked through in public (communal messiness of thought). How can we create better abstractions, notations, and visualizations to improve how we interact and interface with ideas?</p>
 <blockquote>
@@ -522,7 +529,7 @@ if (!doNotTrack) {
 
 
 <a href="/posts/paid-open-source" rel="noopener" class="internal-link" data-src="/posts/paid-open-source">incentives in open source maintenance</a>).</p>
-
+ 
 
     </article>
     <hr/>

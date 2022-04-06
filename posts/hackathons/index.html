@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -484,13 +484,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="the-involution-of-hackathons">The &lsquo;Involution&rsquo; of Hackathons</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="the-involution-of-hackathons">The &lsquo;Involution&rsquo; of Hackathons</h2>
 <p>
 
 <img src="/posts/images/hackathons/drone.png" alt="A late night breakthrough on our PennApps XX Project"  /><em>A late night breakthrough on our PennApps XX Project</em></p>
@@ -523,7 +530,7 @@ if (!doNotTrack) {
 <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">Incentive</a> Structure of Hackathons</h2>
 <p>
 
-<img src="/posts/images/hackathons/swag.jpg" alt="Stacks of hackathon stickers ready for hackers&#39; laptops"  /><em>Stacks of hackathon stickers ready for hackers' laptops</em></p>
+<img src="/posts/images/hackathons/swag.jpg" alt="Stacks of hackathon stickers ready for hackers&amp;rsquo; laptops"  /><em>Stacks of hackathon stickers ready for hackers&rsquo; laptops</em></p>
 <p>It takes money to run events. Providing an adequate venue, food, internet, and power are not free resources. Yet, with the exception of a few corporate hackathons, the majority of hackathons remain free for attendees. To accomplish this, most hackathon organizers decide to try to acquire monetary sponsorships, food partnerships, and in-kind sponsorships in order to offset costs.</p>
 <p>As a result a viscious cycle forms:</p>
 <ol>
@@ -558,13 +565,13 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/move-fast-and-break-things" rel="noopener" class="internal-link" data-src="/thoughts/move-fast-and-break-things">move fast and break things</a>&rdquo; attitude. <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
-<p>The problem with this approach is that it becomes incredibly reductionist. Hacks nearly always focus on problems and rarely build on existing knowledge and work in the field, often ignoring important context about the issues they so readily reduce to a single web app. Ever seen an app claiming to solve the fentanyl crisis or healthcare for the elderly? People think hackathons can do things that they usually can&rsquo;t, such as solve global problems, create new products overnight, or &lsquo;level the playing field&rsquo; of innovation through meritocracy.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>The problem with this approach is that it becomes incredibly reductionist. Hacks nearly always focus on problems and rarely build on existing knowledge and work in the field, often ignoring important context about the issues they so readily reduce to a single web app. Ever seen an app claiming to solve the fentanyl crisis or healthcare for the elderly? People think hackathons can do things that they usually can&rsquo;t, such as solve global problems, create new products overnight, or &rsquo;level the playing field&rsquo; of innovation through meritocracy.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <p>Hackathons, as they stand today, seem to optimize for short term excitement, and not so much for long term benefit. But this short-term burst of new products and ideas is exactly what corporations need to fuel their endless hunger for products, testing, and new talent.</p>
 <h2 id="corporate-cooptation">Corporate Cooptation</h2>
 <p>
 
 <img src="/posts/images/hackathons/cooptation.jpg" alt="Cupstacking, a commonplace hackathon activity"  /><em>Cupstacking, a commonplace hackathon activity</em></p>
-<p>Companies realized that the attendees of these design spaces would <em>readily</em> give up their free time to build potentially marketable products. If hackers so readily built things in their own time, why couldn&rsquo;t we co opt these for the company? Hackers provided a source of interesting ideas that could be milked, and, as a result, the creative outputs of these hackerspaces were &ldquo;suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories.&quot;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>Companies realized that the attendees of these design spaces would <em>readily</em> give up their free time to build potentially marketable products. If hackers so readily built things in their own time, why couldn&rsquo;t we co opt these for the company? Hackers provided a source of interesting ideas that could be milked, and, as a result, the creative outputs of these hackerspaces were &ldquo;suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories.&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>The free market has warped the hacker ethos and hackerspaces into something almost unrecognizable from what it was supposed to stand for. This set of values which may have worked well for small startups or individuals just doesn&rsquo;t scale well for an entire industry. Sharon Zukin and Max Papadantonakis in their work <em>Hackathons as Co-optation Ritual</em> describe three quasi-Orwellian principles that describe this new hacker culture: Work is Play, Exhaustion is Effervescent, and Precarity is Opportunity.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <h3 id="work-is-play">Work is Play</h3>
 <blockquote>
@@ -592,12 +599,12 @@ if (!doNotTrack) {
 
 <a href="https://www.theguardian.com/business-to-business/2017/dec/04/clocking-off-the-companies-introducing-nap-time-to-the-workplace" rel="noopener">global sleep-loss pandemic</a>, events like hackathons which push for attendees to stay up for lengths of 24 to 36 hours are particularly worrisome.</p>
 <p>I am viscerally reminded of sharing a hard gym floor with dozens of other sleep-deprived hackers, taking shifts to sleep so some people can stay up to work on the hack. Despite the timeboxed nature of hackathons, there is no reason purposefully staying up all night should be quintessential to the hackathon experience.</p>
-<p>Physical and mental health should not be &ldquo;instrumentalized in service of being useful to a startup mission, or even a life philosophy.&quot;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> These events set the precedence of what the next generation of engineers, builders, and designers consider as &lsquo;normal&rsquo; for the industry. Why are we saying that it&rsquo;s okay to prioritize &lsquo;success&rsquo; above personal wellbeing?</p>
+<p>Physical and mental health should not be &ldquo;instrumentalized in service of being useful to a startup mission, or even a life philosophy.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> These events set the precedence of what the next generation of engineers, builders, and designers consider as &rsquo;normal&rsquo; for the industry. Why are we saying that it&rsquo;s okay to prioritize &lsquo;success&rsquo; above personal wellbeing?</p>
 <h3 id="precarity-is-opportunity">Precarity is Opportunity</h3>
 <p>The startup and hustle culture heavily idolizes those who live precarious lifestyles. <em>High risk, high reward</em>. The industry has normalized high turnover rates and job-hopping, with companies like Google and Amazon reporting median tenures of around a year, compared to the national average of 4.1 years.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
 <p>Today, the majority of tech employment consists of internships, contract work, short tenures at medium to large companies, and precarious work at startups. Because of the incredulous demand for tech jobs, candidates have considerably more leverage than employers do in offer negotiations, with individuals often using competing offers between companies to renege better signing bonuses and compensation.</p>
-<p>While not precarious in the traditional labour sense, the employment itself is unstable and temporary. The concept of a &lsquo;life-long job&rsquo; just doesn&rsquo;t exist in this industry. As a result, individuals are constantly asked to market themselves for continually shifting jobs.</p>
-<p>Similarly, these coopted design spaces reshape precarious and unpaid work from exploitative to opportunity. Writing code and building apps for free becomes something to be clamoured and competed over. In other words, &ldquo;institutions use the allure of hackathons, with sponsors, prizes, snacks, and potential for career advancement, to get people to work for free.&quot;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
+<p>While not precarious in the traditional labour sense, the employment itself is unstable and temporary. The concept of a &rsquo;life-long job&rsquo; just doesn&rsquo;t exist in this industry. As a result, individuals are constantly asked to market themselves for continually shifting jobs.</p>
+<p>Similarly, these coopted design spaces reshape precarious and unpaid work from exploitative to opportunity. Writing code and building apps for free becomes something to be clamoured and competed over. In other words, &ldquo;institutions use the allure of hackathons, with sponsors, prizes, snacks, and potential for career advancement, to get people to work for free.&rdquo;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
 <h2 id="reclaiming-design-spaces">Reclaiming Design Spaces</h2>
 <p>
 
@@ -643,7 +650,7 @@ if (!doNotTrack) {
 <p>
 
 <img src="/posts/images/hackathons/reclaiming.jpg" alt="A project demo at nwHacks 2020"  /><em>A project demo at nwHacks 2020</em></p>
-<p>If well-organized, hackathons can provide a fertile ground for pathways to employment as well as being a place of exploration. Those identities don&rsquo;t need to be mutually exclusive. My argument here is that hackathons have recently placed too much emphasis on the pathways to employment; the main focus of design spaces like hackathons should be on hackers, not sponsors. Even for lower-income students, the &lsquo;employment&rsquo; opportunities are usually short-term and precarious. Of course, sponsorship and money does have a role in making these hackathons possible, but not to the scale we&rsquo;ve come to expect at these events.</p>
+<p>If well-organized, hackathons can provide a fertile ground for pathways to employment as well as being a place of exploration. Those identities don&rsquo;t need to be mutually exclusive. My argument here is that hackathons have recently placed too much emphasis on the pathways to employment; the main focus of design spaces like hackathons should be on hackers, not sponsors. Even for lower-income students, the &rsquo;employment&rsquo; opportunities are usually short-term and precarious. Of course, sponsorship and money does have a role in making these hackathons possible, but not to the scale we&rsquo;ve come to expect at these events.</p>
 <h3 id="the-future-of-hackathons">The Future of Hackathons</h3>
 <p>What might the future of the hackathon look like, if not what it is now?</p>
 <ul>
@@ -670,8 +677,8 @@ if (!doNotTrack) {
 <a href="https://hackcamp.nwplus.io/" rel="noopener">HackCamp</a>. To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend. Here are a few things we changed:</p>
 <ol>
 <li>We separated learning and workshops from building and hacking and turned it into a two-day hackathon. This allowed hackers to attend workshops and learn without fear of missing out on precious hacking time and to have scheduled sleeping time between the Learn and Build days.</li>
-<li>We replaced our &lsquo;top&rsquo; hackathon project awards with a $25 donation to charity for every project submitted. In the past, we&rsquo;ve had feedback from hackers saying how this gave them the confidence to finish a project rather than to fail and give up working on the &lsquo;perfect&rsquo; or &lsquo;winning&rsquo; project.</li>
-<li>All events were live streamed. This meant that hackers could do the event on their own time and rewatch important events like opening ceremonies while still providing a &lsquo;live&rsquo; viewing experience for those who are available.</li>
+<li>We replaced our &rsquo;top&rsquo; hackathon project awards with a $25 donation to charity for every project submitted. In the past, we&rsquo;ve had feedback from hackers saying how this gave them the confidence to finish a project rather than to fail and give up working on the &lsquo;perfect&rsquo; or &lsquo;winning&rsquo; project.</li>
+<li>All events were live streamed. This meant that hackers could do the event on their own time and rewatch important events like opening ceremonies while still providing a &rsquo;live&rsquo; viewing experience for those who are available.</li>
 <li>We changed judging to be focused on feedback rather than on evaluation. To do so, we replaced exposition judges (who were normally volunteers or company sponsors) with hackers and did 
 
 
@@ -722,7 +729,7 @@ if (!doNotTrack) {
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

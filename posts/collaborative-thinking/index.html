@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -461,13 +461,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Recently, I&rsquo;ve been reading <strong>21 Lessons for the 21st Century</strong> written by none other than Yuval Noah Harari, and have been enjoying the book. Its approach to weaving together insights from a vast number of disciplines to create something novel is extremely refreshing. I just read a section on learning, the knowledge illusion, and collaborative thinking and wanted to share some of my thoughts that have been bouncing around and marinating for a few days as well as some learnings that I&rsquo;ve applied to my own life.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Recently, I&rsquo;ve been reading <strong>21 Lessons for the 21st Century</strong> written by none other than Yuval Noah Harari, and have been enjoying the book. Its approach to weaving together insights from a vast number of disciplines to create something novel is extremely refreshing. I just read a section on learning, the knowledge illusion, and collaborative thinking and wanted to share some of my thoughts that have been bouncing around and marinating for a few days as well as some learnings that I&rsquo;ve applied to my own life.</p>
 <h2 id="collaborative-thinking">Collaborative Thinking</h2>
 <blockquote>
 <p>Humans rarely think for themselves. Rather, we think in groups. Just as it takes a tribe to raise a child, it also takes a tribe to invent a tool, solve a conflict, or cure a disease. No individual knows everything it takes to build a cathedral, an atom bomb, or an aircraft.</p>
@@ -522,7 +529,7 @@ if (!doNotTrack) {
 <a href="https://www.linkedin.com/in/anneguo3/" rel="noopener">Anne</a> and 
 
 <a href="https://twitter.com/y1huen" rel="noopener">Joice</a> for also giving feedback on rough drafts :))</p>
-
+ 
 
     </article>
     <hr/>

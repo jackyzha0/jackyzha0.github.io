@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">Projects</h1>
     <article>
       <p class="meta">
-          Last updated April 1, 2022
+          Last updated April 5, 2022
       </p>
       <ul class="tags">
     
@@ -453,7 +453,7 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#cursor-chat---">Cursor Chat &ndash;</a></li>
+    <li><a href="#cursor-chat----open-source-library-for-digital-presence">Cursor Chat &ndash; open source library for digital presence</a></li>
     <li><a href="#telescopic-text----open-source-library-for-expandable-text">Telescopic Text &ndash; open source library for expandable text</a></li>
     <li><a href="#portal----zero-config-p2pthoughtspeer-to-peermd-encrypted-folder-syncing">Portal &ndash; zero-config <a href="thoughts/peer-to-peer.md">P2P</a> encrypted folder syncing</a></li>
     <li><a href="#quartz----create-and-publish-digital-gardens-for-free">Quartz &ndash; create and publish digital gardens for free</a></li>
@@ -470,17 +470,24 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>This is a list of notable projects that I&rsquo;ve finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This is a list of notable projects that I&rsquo;ve finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found 
 
 
 <a href="/thoughts/idea-list" rel="noopener" class="internal-link" data-src="/thoughts/idea-list">here</a>.</p>
-<h2 id="cursor-chat---">Cursor Chat &ndash;</h2>
+<h2 id="cursor-chat----open-source-library-for-digital-presence">Cursor Chat &ndash; open source library for digital presence</h2>
 <p>
 
 <a href="https://github.com/jackyzha0/cursor-chat" rel="noopener">GitHub</a>, 
@@ -605,7 +612,7 @@ if (!doNotTrack) {
 <a href="https://github.com/jackyzha0/PacketBook" rel="noopener">GitHub</a></p>
 <p>PacketBook is a financial accessibility chatbot, fully accessible through the SMS (text messaging) protocol. Users are able to issue simple commands to register, check their balance, deposit, withdraw, and send money. These commands are secured with two-factor authentication through a Flask server on Heroku with Twilio. The backend that handles transaction is written with Node and Express and deployed on stdlib. PacketBook is unique in that it leverages the Stellar blockchain and tokens (XLM) for its transactions which greatly reduces operating overhead with its minimal transaction costs (around 1/100 of a cent per transaction).</p>
 <p>Built with: MongoDB, Node.js, Express, Flask, Stellar, Heroku, JavaScript, Python</p>
-
+ 
 
     </article>
     <hr/>

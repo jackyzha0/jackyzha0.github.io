@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -463,13 +463,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>by <em>Langdon Winner</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>by <em>Langdon Winner</em></p>
 <p>&ldquo;In controversies about technology and society, there is no idea more provocative than the notion that technical things have political qualities&rdquo;</p>
 <p>&ldquo;A long lineage of boosters have insisted that the &lsquo;biggest and best&rsquo; that science and industry made available were the best guarantees of democracy, freedom, and social justice&rdquo; &ndash; seeing these arguments esp wrt 
 
@@ -477,7 +484,7 @@ if (!doNotTrack) {
 <a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a> being a strong driver for these same values</p>
 <p>&ldquo;What matters is not technology itself, but the social or economic system in which it is embedded.&rdquo;</p>
 <p>&ldquo;Seemingly innocuous design features in mass transit systems, water projects, industrial machinery, and other technologies actually mask social choices of profound significance.&rdquo; (societal impact is treated as an externality, those which do not matter when &lsquo;just considering efficiency&rsquo;)</p>
-<p>&ldquo;The things we call &lsquo;technologies&rsquo; are just ways of building order in our world.&rdquo;</p>
+<p>&ldquo;The things we call &rsquo;technologies&rsquo; are just ways of building order in our world.&rdquo;</p>
 <p>&ldquo;In that sense technological innovations are similar to legislative acts or political foundings that establish a framework for public order that will endure over many generations.&rdquo;</p>
 <h3 id="how-artifacts-can-contain-political-properties">How artifacts can contain political properties</h3>
 <p>&ldquo;Politics&rdquo; is defined as &ldquo;arrangements of power and authority in human associations as well as the activities that take place within those arrangements.&rdquo;</p>
@@ -490,7 +497,7 @@ if (!doNotTrack) {
 <p>A remarkable device perfected by researchers at UC from the late 1940s to present. The harvesters replace the system of handpicking.</p>
 <p>The machine reduces costs by approximately five to seven dollars per ton as compared to hand-harvesting.</p>
 <p>&ldquo;The suit charges that University officials are spending tax monies on projects that benefit a handful of private interests to the detriment of farmworkers, small farmers, consumers, and rural California generally, and asks for a court injunction to stop the practice. The University has denied these charges, arguing that to accept them &lsquo;would require elimination of all research with any potential practical application&rsquo;&rdquo; &ndash; this is an especially good point re: whether additive (as opposed to multiplicative) tech is truly possible</p>
-
+ 
 
     </article>
     <hr/>

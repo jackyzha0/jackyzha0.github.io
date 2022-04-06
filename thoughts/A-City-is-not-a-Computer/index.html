@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -465,13 +465,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Reboot event with Shannon Mattern on her new book <em>A City Is Not A Computer</em>. Main summary and introduction on the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Reboot event with Shannon Mattern on her new book <em>A City Is Not A Computer</em>. Main summary and introduction on the 
 
 <a href="https://reboothq.substack.com/p/mattern" rel="noopener">Substack here</a>.</p>
 <h2 id="article-notes">Article Notes</h2>
@@ -482,7 +489,7 @@ if (!doNotTrack) {
 <p>Doctoroff, the founder of Sidewalk Labs: &ldquo;What would a city look like if you started from scratch in the internet era — if you built a city &lsquo;from the 
 
 
-<a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">internet</a> up?'&rdquo;</p>
+<a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">internet</a> up?&rsquo;&rdquo;</p>
 <p>Sidewalk aims to be the &lsquo;fourth revolution&rsquo; of urban infrastructure where the first 3 were</p>
 <ol>
 <li>The Steam Engine</li>
@@ -612,7 +619,7 @@ if (!doNotTrack) {
 <li>Make it as participatory as possible</li>
 </ul>
 </li>
-<li>What can city governments do to help the &lsquo;exclusion&rsquo; of previously &lsquo;unseen&rsquo; or minority groups?
+<li>What can city governments do to help the &rsquo;exclusion&rsquo; of previously &lsquo;unseen&rsquo; or minority groups?
 <ul>
 <li>
 
@@ -680,7 +687,7 @@ if (!doNotTrack) {
 <a href="/thoughts/From-Counterculture-to-Cyberculture" rel="noopener" class="internal-link" data-src="/thoughts/From-Counterculture-to-Cyberculture">Fred Turner</a> and the communes, New Communalist approaches to communities</li>
 </ul>
 </li>
-<li>How can we best familiarize ourselves in new environments or be a &lsquo;tourist&rsquo; in the places we&rsquo;ve lived in for a while?
+<li>How can we best familiarize ourselves in new environments or be a &rsquo;tourist&rsquo; in the places we&rsquo;ve lived in for a while?
 <ul>
 <li>Think about the various networks that converge on their apartments</li>
 <li>Denaturalize physical environments, look at the infrastructure that makes it possible</li>
@@ -688,7 +695,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-
+ 
 
     </article>
     <hr/>

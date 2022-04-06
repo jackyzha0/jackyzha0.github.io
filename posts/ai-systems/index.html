@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -472,13 +472,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC. I hope you enjoy the post and learn as much as I did in writing it!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC. I hope you enjoy the post and learn as much as I did in writing it!</p>
 <hr>
 <h2 id="introduction">Introduction</h2>
 <p>Historically, development of AI has taken a very specific approach — systems that represent the world through symbols and manipulate those tokens in a systematic way to arrive at a result. This type of AI was coined Good Old-Fashioned AI (GOFAI) by John Haugeland<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
@@ -541,7 +548,7 @@ the Heideggerian concept of Dasein, which literally means &lsquo;Being-there&rsq
 <a href="/thoughts/context" rel="noopener" class="internal-link" data-src="/thoughts/context">context</a> of a world with other things — &ldquo;to be human is to be fixed, embedded, and immersed in the physical, literal, tangible day to day world&rdquo;<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>.</p>
 <p>Dreyfus believed that, for any AI system to achieve any sort of general intelligence, it must also exhibit Dasein. Thus, &ldquo;a successful Heideggerian AI would need a perfect model of the human body – and by implication, that Dasein must be expressed as a human being, organically as well as existentially&rdquo;<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup>.</p>
 <h3 id="a-non-humanistic-approach">A non-humanistic approach</h3>
-<p>However, Steed refutes Dreyfus' overly humanistic interpretation of Heideggerian AI, believing that a AI model only needs to be &ldquo;embedded and embodied such that what AI experiences is significant for AI in the particular way that AI is,&rdquo; and thus intelligence would be possible by Heideggerian standards<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>.</p>
+<p>However, Steed refutes Dreyfus&rsquo; overly humanistic interpretation of Heideggerian AI, believing that a AI model only needs to be &ldquo;embedded and embodied such that what AI experiences is significant for AI in the particular way that AI is,&rdquo; and thus intelligence would be possible by Heideggerian standards<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup>.</p>
 <p>The refutation against a purely anthropocentric view of AI brings to light an important concept: the 
 
 
@@ -595,7 +602,7 @@ the Heideggerian concept of Dasein, which literally means &lsquo;Being-there&rsq
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

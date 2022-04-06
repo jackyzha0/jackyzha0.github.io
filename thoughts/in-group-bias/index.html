@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -462,16 +462,23 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="your-brain-on-groups">Your Brain on Groups</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="your-brain-on-groups">Your Brain on Groups</h2>
 <p>Ezra Klein in <em>Why We&rsquo;re Polarized</em></p>
 <blockquote>
-<p>The most important principle of the subjective social order we construct for ourselves is the classification of groups as &lsquo;we&rsquo; and &lsquo;they&rsquo;. Once someone has become a &lsquo;they&rsquo; we are used to dismissing them, competing against them, discriminating against them even if there is no reason for it in terms of our own interests (Tajfel)</p>
+<p>The most important principle of the subjective social order we construct for ourselves is the classification of groups as &lsquo;we&rsquo; and &rsquo;they&rsquo;. Once someone has become a &rsquo;they&rsquo; we are used to dismissing them, competing against them, discriminating against them even if there is no reason for it in terms of our own interests (Tajfel)</p>
 </blockquote>
 <p>Historically, people have nurtured their prejudices as they believed they reflected reality &ndash; we disliked those we disliked because we had reason to dislike them</p>
 <h3 id="tajfels-experiement">Tajfel&rsquo;s Experiement</h3>
@@ -514,7 +521,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-
+ 
 
     </article>
     <hr/>

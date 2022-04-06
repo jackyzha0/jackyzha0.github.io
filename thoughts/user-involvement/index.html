@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>The underlying aim is to involve members of the public in helping them make a change in their lives where technology is often viewed as an integral part of the process. This is the point of 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The underlying aim is to involve members of the public in helping them make a change in their lives where technology is often viewed as an integral part of the process. This is the point of 
 
 
 <a href="/thoughts/Design-Justice" rel="noopener" class="internal-link" data-src="/thoughts/Design-Justice">participatory design</a>.</p>
@@ -469,7 +476,7 @@ if (!doNotTrack) {
 </ol>
 <p>Benefits:</p>
 <ol>
-<li>Expectation management: ensuring that the users' expectations of the new product are realistic and no surprises for users when the product arrives.</li>
+<li>Expectation management: ensuring that the users&rsquo; expectations of the new product are realistic and no surprises for users when the product arrives.</li>
 <li>Ownership: users who are involved and feel that they have contributed to a product&rsquo;s development are more likely to feel a sense of ownerships toward it and support its user</li>
 </ol>
 <p>The process of this is the 
@@ -479,7 +486,7 @@ if (!doNotTrack) {
 <h3 id="participation">Participation</h3>
 <p>Wide participation helps bring different perspectives to the process, which enhances design itself, produces more user satisfaction with the final product, and engenders a sense of ownership.</p>
 <p><strong>Participatory/cooperative/co-design</strong> is an overarching design philosophy that places stakeholders as central actors in creation activities. A stakeholder is anybody who is affected by the item</p>
-
+ 
 
     </article>
     <hr/>

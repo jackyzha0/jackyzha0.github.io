@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -463,16 +463,23 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-        
-        
-      
-      
-      
-      <p>Determine how objects (and/or the camera itself) move in the 3D world</p>
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+<p>Determine how objects (and/or the camera itself) move in the 3D world</p>
 <p>Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)</p>
 <p>See also: 
 
@@ -518,7 +525,7 @@ if (!doNotTrack) {
 </ul>
 <h2 id="stereo">Stereo</h2>
 <p>Computing depth from multiple images. Formulated as a correspondence problem: dtermine match between location of a scene point in one image and its location in another.</p>
-<p>Disparity: $d = x - x' = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance from $O$ to epipolar line, and $x'$ is distance from $O'$ to epipolar line. $Z$ is distance from $b$ to target $X$.</p>
+<p>Disparity: $d = x - x&rsquo; = \frac{bf}{Z}$ where $b$ is baseline, $x$ is distance from $O$ to epipolar line, and $x&rsquo;$ is distance from $O&rsquo;$ to epipolar line. $Z$ is distance from $b$ to target $X$.</p>
 <p>Simple stereo algorithm</p>
 <ol>
 <li>Rectify images (make epipolar lines horizontal)
@@ -544,7 +551,7 @@ if (!doNotTrack) {
 <p>Naive approach, pixel-based often lacks content. What we can try is min SSD-error of a window-based approach.</p>
 <p>Another approach is to match the edges (the zero-crossings) at different scales.</p>
 <p>Note: Sum squared differences (SSD) is the same as Normalized Cross Correlation (NCC)</p>
-
+ 
 
     </article>
     <hr/>

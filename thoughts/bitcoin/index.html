@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 
 <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">Peer to peer</a> electronic cash built using 
@@ -470,9 +477,9 @@ if (!doNotTrack) {
 <a href="/thoughts/proof-of-work" rel="noopener" class="internal-link" data-src="/thoughts/proof-of-work">proof of work</a> for consensus.</p>
 <h2 id="mining">Mining</h2>
 <p>Competing to solve a cryptographic puzzle to earn rights to add a new block to the blockchain. Reward is new bitcoin.</p>
-<p>Hashing then, is the process of guessing a &lsquo;nonce&rsquo; (pseudo-random number once which is used to initialize communication) that when entered with the previous block information into SHA-256, generates an output deemed satisfactory by the Bitcoin protocol. If the nonce found can be verified by the other miners, then can add the new block to the network and earn bitcoin.</p>
+<p>Hashing then, is the process of guessing a &rsquo;nonce&rsquo; (pseudo-random number once which is used to initialize communication) that when entered with the previous block information into SHA-256, generates an output deemed satisfactory by the Bitcoin protocol. If the nonce found can be verified by the other miners, then can add the new block to the network and earn bitcoin.</p>
 <p>To prevent transaction data from being altered, Bitcoin employs an algorithm in which tampering of transaction details will result in large difficulty increases in the puzzle. As a result, it would be extremely difficult to achieve consensus around tampered data.</p>
-
+ 
 
     </article>
     <hr/>

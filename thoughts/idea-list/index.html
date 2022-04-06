@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="data provenance   https://www.cs.cmu.edu/~NatProg/whyline.html   how do we design better UI that reflects true application state?">
+    <meta name="description" content="baba is you but for browser interactions  data plane is main source of truth data inputs like webcam, keyboard, mouse, window size, etc.">
     <title>Project Idea List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">Project Idea List</h1>
     <article>
       <p class="meta">
-          Last updated March 31, 2022
+          Last updated April 5, 2022
       </p>
       <ul class="tags">
     
@@ -455,13 +455,32 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+<li>baba is you but for browser interactions
+<ul>
+<li>data plane is main source of truth</li>
+<li>data inputs like webcam, keyboard, mouse, window size, etc.</li>
+<li>relations are from data plane → data plane (no functions!)
+<ul>
+<li>e.g. x bounces off of y</li>
+</ul>
+</li>
+<li>rendering using canvas (higher performance games/interactions) or plain html elements (UI)</li>
+</ul>
+</li>
 <li>data provenance
 <ul>
 <li>
@@ -667,7 +686,7 @@ if (!doNotTrack) {
 <li>spatially consistent? 
 
 
-<a href="/thoughts/memory-palace" rel="noopener" class="internal-link" data-src="/thoughts/memory-palace">memory palace</a> vibes → 
+<a href="/thoughts/memory-palace" rel="noopener" class="internal-link" data-src="/thoughts/memory-palace">memory palace</a> vibes -&gt; 
 
 <a href="https://twitter.com/jordanmoore/status/1418942880941477891" rel="noopener">https://twitter.com/jordanmoore/status/1418942880941477891</a></li>
 </ul>
@@ -828,7 +847,7 @@ if (!doNotTrack) {
 <li>null coalescing for sensible defaults (converting <code>Option[Int]</code> to <code>Int</code> for example)</li>
 </ol>
 </li>
-<li>function chaining (really just function composition) <code>123 → a → b</code> is equivalent to <code>b(a(123))</code></li>
+<li>function chaining (really just function composition) <code>123 -&gt; a -&gt; b</code> is equivalent to <code>b(a(123))</code></li>
 <li>fat arrow fns <code>someFn = a =&gt; b</code></li>
 </ol>
 </li>
@@ -837,7 +856,7 @@ if (!doNotTrack) {
 </li>
 <li>notes on syntax
 <ol>
-<li>function chaining using the pipe <code>→</code></li>
+<li>function chaining using the pipe <code>-&gt;</code></li>
 <li>fat arrow functions <code>=&gt;</code> return by default unless you include curly braces (then explicit return is required)</li>
 <li>type checking is OPTIONAL (using <code>::</code>)but if annotations are provided, will be caught at compile time (default type is <code>Unknown</code>)
 <ol>
@@ -915,7 +934,7 @@ if (!doNotTrack) {
 </li>
 <li>deep foveal VR rendering</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

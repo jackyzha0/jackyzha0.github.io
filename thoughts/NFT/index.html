@@ -73,7 +73,7 @@ An NFT need not to contain something.">
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -460,13 +460,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://studio.ribbonfarm.com/p/magic-beans" rel="noopener">Source: vgr on Magic Beans</a></p>
 <p>An NFT need not to contain something. All it guarantees is that it has an &ldquo;identity and can be traded, transferred, mixed and matched indiscriminately with other things in a social context.&rdquo; See the 
@@ -491,7 +498,7 @@ if (!doNotTrack) {
 <a href="/thoughts/digital-permanence" rel="noopener" class="internal-link" data-src="/thoughts/digital-permanence">Digital Permanence</a></h2>
 <p>&ldquo;Our web experiences to date have [for the majority of users] been like running errands out from points of departure/return within the physical world. Of going out to the web to - browse the news, buy something, trade a stock, whatever - but then coming back to the physical world. Our trips are short, and we travel lightly - by necessity - for we have no real way to &ldquo;bring&rdquo; anything with us from site to site besides our wallets.</p>
 <p>The NFT, at least as a concept, represents something of a sea change in that mentality. That the web will not be errand space forever, but a place that we come to &ldquo;inhabit&rdquo; to a deeper degree than we do now (and maybe which most people would even think they&rsquo;d ever want to).&rdquo;</p>
-
+ 
 
     </article>
     <hr/>

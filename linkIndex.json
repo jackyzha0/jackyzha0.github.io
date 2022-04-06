@@ -1578,6 +1578,11 @@
         },
         {
           "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychism"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
           "target": "/thoughts/information",
           "text": "information"
         },
@@ -2097,6 +2102,11 @@
           "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/philosophy-of-science",
           "text": "Karl Popper's Philosophy of Science"
+        },
+        {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/Hard-problem-of-consciousness",
+          "text": "hard problem"
         }
       ],
       "/thoughts/Projects": [
@@ -3154,6 +3164,11 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Primary-of-Consciousness",
           "text": "Primary of Consciousness"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
         },
         {
           "source": "/thoughts/consciousness",
@@ -6614,11 +6629,6 @@
         },
         {
           "source": "/thoughts/self-knowledge",
-          "target": "/thoughts/self-knowledge",
-          "text": "self-knowledge"
-        },
-        {
-          "source": "/thoughts/self-knowledge",
           "target": "/thoughts/the-Self",
           "text": "the self"
         }
@@ -8564,6 +8574,11 @@
       ],
       "/thoughts/Hard-problem-of-consciousness": [
         {
+          "source": "/thoughts/Primary-of-Consciousness",
+          "target": "/thoughts/Hard-problem-of-consciousness",
+          "text": "hard problem"
+        },
+        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Hard-problem-of-consciousness",
           "text": "Hard problem of consciousness"
@@ -9079,6 +9094,11 @@
           "text": "Nagel's Bat Argument"
         },
         {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/Nagels-Bat-Argument",
+          "text": "Nagel's Bat Argument"
+        },
+        {
           "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/Nagels-Bat-Argument",
           "text": "Nagel's Bat Argument"
@@ -9177,6 +9197,11 @@
           "source": "/thoughts/Consciousness-is-not-Information",
           "target": "/thoughts/Panpsychism",
           "text": "panpsychist"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychism"
         },
         {
           "source": "/thoughts/emergent-behaviour",
@@ -14081,11 +14106,6 @@
           "text": "self-knowledge"
         },
         {
-          "source": "/thoughts/self-knowledge",
-          "target": "/thoughts/self-knowledge",
-          "text": "self-knowledge"
-        },
-        {
           "source": "/thoughts/selfish",
           "target": "/thoughts/self-knowledge",
           "text": "self-knowledge"
@@ -16516,6 +16536,11 @@
     },
     {
       "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "target": "/thoughts/Panpsychism",
+      "text": "panpsychism"
+    },
+    {
+      "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
       "target": "/thoughts/information",
       "text": "information"
     },
@@ -16993,6 +17018,11 @@
       "source": "/thoughts/Primary-of-Consciousness",
       "target": "/thoughts/philosophy-of-science",
       "text": "Karl Popper's Philosophy of Science"
+    },
+    {
+      "source": "/thoughts/Primary-of-Consciousness",
+      "target": "/thoughts/Hard-problem-of-consciousness",
+      "text": "hard problem"
     },
     {
       "source": "/thoughts/Projects",
@@ -17948,6 +17978,11 @@
       "source": "/thoughts/consciousness",
       "target": "/thoughts/Primary-of-Consciousness",
       "text": "Primary of Consciousness"
+    },
+    {
+      "source": "/thoughts/consciousness",
+      "target": "/thoughts/Nagels-Bat-Argument",
+      "text": "Nagel's Bat Argument"
     },
     {
       "source": "/thoughts/consciousness",
@@ -21143,11 +21178,6 @@
       "source": "/thoughts/self-knowledge",
       "target": "/thoughts/the-Self",
       "text": "the self"
-    },
-    {
-      "source": "/thoughts/self-knowledge",
-      "target": "/thoughts/self-knowledge",
-      "text": "self-knowledge"
     },
     {
       "source": "/thoughts/self-knowledge",

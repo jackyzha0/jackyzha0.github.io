@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -469,13 +469,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h2 id="texture">Texture</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="texture">Texture</h2>
 <p>Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements</p>
 <p>Sometimes thought of as patterns composed of repeated instances of one or more identifiable elements called <em>textons</em></p>
 <p>Can be used for</p>
@@ -513,7 +520,7 @@ if (!doNotTrack) {
 <p>How do we produce the full RGB image from mosaiced sensor output?</p>
 <ul>
 <li>Bilinear Interpolation: average your 4 neighbours</li>
-<li>Bicubic Interpolation → needs more neighbours, may overblur</li>
+<li>Bicubic Interpolation -&gt; needs more neighbours, may overblur</li>
 <li>Edge-aware interpolatin</li>
 </ul>
 <h3 id="grassmans-law">Grassman&rsquo;s Law</h3>
@@ -530,7 +537,7 @@ if (!doNotTrack) {
 <p>RGB is additive whereas CMY is subtractive.</p>
 <p>RGB and CIE are linear.</p>
 <p>McAdam ellipses are regions where colour differences are imperceptible to the average human eye.</p>
-
+ 
 
     </article>
     <hr/>

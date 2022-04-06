@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -468,51 +468,176 @@ if (!doNotTrack) {
       </aside>
       
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
       
       
       
       
       
       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          
-          
-        
       
-      <h2 id="syntax-quirks">Syntax Quirks</h2>
+      
+    
+  
+
+<h2 id="syntax-quirks">Syntax Quirks</h2>
 <ul>
-<li><code>$ :: (a → b) → a → b</code> is function application (adds implicit parentheses and makes it right associative instead of left associative)
+<li><code>$ :: (a -&gt; b) -&gt; a -&gt; b</code> is function application (adds implicit parentheses and makes it right associative instead of left associative)
 <ol>
 <li>Normally, <code>sort &quot;abc&quot; ++ &quot;def&quot;</code> would be interpreted as <code>(sort &quot;abc&quot;) ++ &quot;def&quot;</code></li>
 <li>If we use the <code>$</code> operator, we can do <code>sort $ &quot;abc&quot; ++ &quot;def&quot;</code> which is interpreted as <code>sort (&quot;abc&quot; ++ &quot;def&quot;)</code> as intended.</li>
 </ol>
 </li>
 <li><code>.</code> is function composition. Read the dot as the little dot in $f \circ g$</li>
-<li><code>&lt;&gt;</code> is a synonym for <code>mappend :: Monoid m =&gt; m → m → m</code> or the monoidal append</li>
-<li><code>&lt;$&gt;</code> is a synonym for <code>fmap :: (a → b) → f a → f b</code>
+<li><code>&lt;&gt;</code> is a synonym for <code>mappend :: Monoid m =&gt; m -&gt; m -&gt; m</code> or the monoidal append</li>
+<li><code>&lt;$&gt;</code> is a synonym for <code>fmap :: (a -&gt; b) -&gt; f a -&gt; f b</code>
 <ul>
 <li>Intuitively like applying a function to a container</li>
 </ul>
 </li>
-<li><code>&lt;*&gt;</code> is like <code>&lt;$&gt;</code> but for wrapped functions <code>(&lt;*&gt;) :: Applicative f =&gt; f (a → b) → f a → f b</code>
+<li><code>&lt;*&gt;</code> is like <code>&lt;$&gt;</code> but for wrapped functions <code>(&lt;*&gt;) :: Applicative f =&gt; f (a -&gt; b) -&gt; f a -&gt; f b</code>
 <ul>
 <li>Intuitively like applying a function in a container to another container</li>
 </ul>
 </li>
 <li>Remember that <code>(&lt;$)</code> and <code>($&gt;)</code> point towards the value that will be kept</li>
-<li><code>void :: Functor f =&gt; f a → f ()</code> is implemented as <code>void x = () &lt;$ x</code>. Read as: whatever you give me, I will return the unit value</li>
+<li><code>void :: Functor f =&gt; f a -&gt; f ()</code> is implemented as <code>void x = () &lt;$ x</code>. Read as: whatever you give me, I will return the unit value</li>
 </ul>
 <h2 id="terminology">Terminology</h2>
-<p>!<a class="internal-link broken">thoughts/images/Haskell typeclasses.png</a></p>
+<p><img src="/thoughts/images/Haskell typeclasses.png" title="/thoughts/images/Haskell typeclasses.png"></p>
 <h3 id="category-theory">Category Theory</h3>
 <p>In essence, a simple collection which can be thought of as a graph. Three components</p>
 <ol>
@@ -546,7 +671,7 @@ if (!doNotTrack) {
 <li>$F$ maps any object $A \in C$ to $F(A) \in D$ (the type constructor)</li>
 <li>$F$ maps morphisms $f: A \rightarrow B \in C$ to $F(f): F(A) \rightarrow F(B) \in D$ (<code>fmap</code>). Importantly, this means that all functors must be generic over at least one parameter (e.g. <code>Maybe</code> and not <code>Integer</code>)
 <ul>
-<li>applying <code>fmap</code> is sometimes called &lsquo;lifting&rsquo; as it lifts a function from the normal context into the &lsquo;f&rsquo; world</li>
+<li>applying <code>fmap</code> is sometimes called &rsquo;lifting&rsquo; as it lifts a function from the normal context into the &lsquo;f&rsquo; world</li>
 </ul>
 </li>
 </ol>
@@ -562,17 +687,17 @@ if (!doNotTrack) {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="kr">class</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="kr">where</span>
-	<span class="c1">-- fmap maps morphisms</span>
-	<span class="n">fmap</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">→</span> <span class="n">b</span><span class="p">)</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">b</span>
-
-	<span class="c1">-- applies a &#39;constant&#39; function to replace the values in a container</span>
-	<span class="p">(</span><span class="o">&lt;$</span><span class="p">)</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">b</span> <span class="ow">→</span> <span class="n">f</span> <span class="n">a</span>
-	<span class="c1">-- default implementation</span>
-	<span class="p">(</span><span class="o">&lt;$</span><span class="p">)</span> <span class="ow">=</span> <span class="n">fmap</span> <span class="o">.</span> <span class="n">const</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="kr">class</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="kr">where</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">-- fmap maps morphisms</span>
+</span></span><span class="line"><span class="cl">	<span class="n">fmap</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">-- applies a &#39;constant&#39; function to replace the values in a container</span>
+</span></span><span class="line"><span class="cl">	<span class="p">(</span><span class="o">&lt;$</span><span class="p">)</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">b</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">-- default implementation</span>
+</span></span><span class="line"><span class="cl">	<span class="p">(</span><span class="o">&lt;$</span><span class="p">)</span> <span class="ow">=</span> <span class="n">fmap</span> <span class="o">.</span> <span class="n">const</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p><code>fmap</code> takes a function which maps a value from <code>a</code> to <code>b</code> and applies it to a Functor <code>f</code>. Think of <code>f</code> as the container, <code>(a → b)</code> as the function that operates on the &lsquo;inner&rsquo; values.</p>
+</div><p><code>fmap</code> takes a function which maps a value from <code>a</code> to <code>b</code> and applies it to a Functor <code>f</code>. Think of <code>f</code> as the container, <code>(a -&gt; b)</code> as the function that operates on the &lsquo;inner&rsquo; values.</p>
 <h3 id="monad">Monad</h3>
 <p>Monads are functors from a category $A$ to that same category. A container for values that can be mapped over.</p>
 <p>A monad is a functor $M: C \rightarrow C$ along with two morphisms $\forall X \in C$</p>
@@ -598,21 +723,21 @@ if (!doNotTrack) {
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="kr">class</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
-  <span class="c1">-- join operation (optional, only one of bind or join need to be defined)</span>
-  <span class="n">join</span> <span class="ow">::</span> <span class="n">m</span> <span class="p">(</span><span class="n">m</span> <span class="n">a</span><span class="p">)</span> <span class="ow">→</span> <span class="n">m</span> <span class="n">a</span>
-
-  <span class="c1">-- bind operation</span>
-  <span class="c1">-- takes an f :: (a → m b) and applies it to</span>
-  <span class="c1">-- the inner value a of m</span>
-  <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span>  <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">→</span> <span class="p">(</span><span class="n">a</span> <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span>
-
-  <span class="c1">-- replaces m a with m b</span>
-  <span class="p">(</span><span class="o">&gt;&gt;</span><span class="p">)</span>   <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">→</span>  <span class="n">m</span> <span class="n">b</span>       <span class="ow">→</span> <span class="n">m</span> <span class="n">b</span>
-
-  <span class="c1">-- constructs the simplest monad m using a</span>
-  <span class="n">return</span> <span class="ow">::</span>   <span class="n">a</span>               <span class="ow">→</span> <span class="n">m</span> <span class="n">a</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="kr">class</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">-- join operation (optional, only one of bind or join need to be defined)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">join</span> <span class="ow">::</span> <span class="n">m</span> <span class="p">(</span><span class="n">m</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">-- bind operation</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">-- takes an f :: (a -&gt; m b) and applies it to</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">-- the inner value a of m</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span>  <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">-- replaces m a with m b</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="o">&gt;&gt;</span><span class="p">)</span>   <span class="ow">::</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span>  <span class="n">m</span> <span class="n">b</span>       <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">-- constructs the simplest monad m using a</span>
+</span></span><span class="line"><span class="cl">  <span class="n">return</span> <span class="ow">::</span>   <span class="n">a</span>               <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Monad laws</p>
 <div class="highlight"><div class="chroma">
@@ -622,10 +747,10 @@ if (!doNotTrack) {
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="nf">return</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span>                  <span class="ow">=</span>  <span class="n">k</span> <span class="n">a</span>
-<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="n">return</span>             <span class="ow">=</span>  <span class="n">m</span>
-<span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">→</span> <span class="n">k</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span><span class="p">)</span>  <span class="ow">=</span>  <span class="p">(</span><span class="n">m</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span><span class="p">)</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-haskell" data-lang="haskell"><span class="line"><span class="cl"><span class="nf">return</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span>                  <span class="ow">=</span>  <span class="n">k</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="n">return</span>             <span class="ow">=</span>  <span class="n">m</span>
+</span></span><span class="line"><span class="cl"><span class="nf">m</span>        <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">k</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span><span class="p">)</span>  <span class="ow">=</span>  <span class="p">(</span><span class="n">m</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span><span class="p">)</span> <span class="o">&gt;&gt;=</span> <span class="n">h</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="left-and-right-associativity">Left and Right Associativity</h2>
 <p>Associativity of an operator determines how operators are grouped in the absence of parentheses.</p>
@@ -687,7 +812,7 @@ if (!doNotTrack) {
 <li><code>a.labelled(b)</code> label result of a with <code>b</code></li>
 <li><code>a.end()</code> indicate end of parser</li>
 </ol>
-
+ 
 
     </article>
     <hr/>

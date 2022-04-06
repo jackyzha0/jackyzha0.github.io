@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -466,13 +466,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Maintenance: the gritty upkeep work that keeps the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Maintenance: the gritty upkeep work that keeps the 
 
 
 <a href="/thoughts/infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/infrastructure">infrastructure</a> of the world running.</p>
@@ -511,7 +518,7 @@ if (!doNotTrack) {
 
 <a href="https://themaintainers.org/summer-fellow" rel="noopener">fellowship</a></p>
 <p>&ldquo;What happens <em>after</em> innovation, they argue, is more important. Maintenance and repair, the building of infrastructures, the mundane labour that goes into sustaining functioning and efficient infrastructures, simply has more impact on people’s daily lives than the vast majority of technological innovations.&rdquo;</p>
-<p>&ldquo;These shuttles brought high-tech employees from hip, pricey urban homes to their lush suburban campuses, without exposing them to the inconvenience of public transportation or to the vast populations of the poor and homeless who also call Silicon Valley their home.&rdquo; → similar to some concepts in 
+<p>&ldquo;These shuttles brought high-tech employees from hip, pricey urban homes to their lush suburban campuses, without exposing them to the inconvenience of public transportation or to the vast populations of the poor and homeless who also call Silicon Valley their home.&rdquo; -&gt; similar to some concepts in 
 
 
 <a href="/thoughts/From-Counterculture-to-Cyberculture" rel="noopener" class="internal-link" data-src="/thoughts/From-Counterculture-to-Cyberculture">From Counterculture to Cyberculture</a> talking about displacement of people during the &lsquo;back to the land&rsquo;  movement by the New Communalists</p>
@@ -550,7 +557,7 @@ if (!doNotTrack) {
 <h3 id="corruption-curators-who-clean-and-maintain-data">Corruption: curators who clean and maintain data</h3>
 <p>Historian Nathan Ensmenger reports that “from the early 1960s to the present, software maintenance costs have represented between 50 and 70 percent of all total expenditures on software development.”</p>
 <p>The internal maintenance work isn’t supposed to be visible to end users, who tend to like the idea that they’re working with “raw” data. Yet “data never come as raw,” Plantin observes. “Multiple interventions are always needed before data can be reused.”</p>
-
+ 
 
     </article>
     <hr/>

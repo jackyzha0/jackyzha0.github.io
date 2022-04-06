@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -457,13 +457,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Forming a belief based on the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Forming a belief based on the 
 
 
 <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> of another&rsquo;s written or spoken word.</p>
@@ -502,12 +509,12 @@ if (!doNotTrack) {
 <li>Arguments presented by the contending to support their own views and critique their rival&rsquo;s views</li>
 <li>Agreement from additional putative experts on one side or other of the subject in question
 <ol>
-<li>Counterpoint: Copernican heliocentrism, most &lsquo;experts&rsquo; believed that the Earth was the middle of the solar system, not the sun</li>
+<li>Counterpoint: Copernican heliocentrism, most &rsquo;experts&rsquo; believed that the Earth was the middle of the solar system, not the sun</li>
 <li>Goldman steel-mans his argument through Bayesian analysis, experts should think for themselves and should be &lsquo;conditionally independent&rsquo; &ndash; they will not invariably parrot the claims of others when those claims are wrong</li>
 <li>What about discoverability of experts? If a tree falls but nobody hears it, did it still happen?</li>
 </ol>
 </li>
-<li>Appraisals by &ldquo;meta-experts&rdquo; of the experts' expertise</li>
+<li>Appraisals by &ldquo;meta-experts&rdquo; of the experts&rsquo; expertise</li>
 <li>Evidence of the expert&rsquo;s interests and biases vis-a-vis the question at issue</li>
 <li>Evidence of the expert&rsquo;s past track-records</li>
 </ol>
@@ -522,7 +529,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/bias" rel="noopener" class="internal-link" data-src="/thoughts/bias">biases</a> of their own?</li>
 </ul>
-
+ 
 
     </article>
     <hr/>

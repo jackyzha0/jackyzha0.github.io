@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,13 +449,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://blog.matthewwang.me/life/concise21/2021/03/01/on-idolization.html" rel="noopener">Source: On Idolization by <em>Matthew Wang</em></a></p>
 <p>&ldquo;I struggled with this significantly in high school. I had the pleasure of working with some absolutely wonderful people. We debated together and against each other; ran conferences and events; did community service. I’d constantly rave about how insane, out of the world, and unbelievable they were. It was constant and nagging. It seeped into my personality.&rdquo;</p>
@@ -464,12 +471,12 @@ if (!doNotTrack) {
 <li>Reinforcement of impostor syndrome</li>
 <li>Recognizing that excessive praise (even if genuine) can be toxic positivity
 <ul>
-<li>Sets unrealistic boundaries for how people should act all the time → makes it hard for people to be truly vulnerable</li>
+<li>Sets unrealistic boundaries for how people should act all the time -&gt; makes it hard for people to be truly vulnerable</li>
 </ul>
 </li>
 <li>How can we approach showing appreciation without being over-the-top about it?
 <ul>
-<li>acknowledging and normalizing failure → 
+<li>acknowledging and normalizing failure -&gt; 
 
 
 <a href="/posts/a-failure-resume" rel="noopener" class="internal-link" data-src="/posts/a-failure-resume">failure resumes</a></li>
@@ -477,7 +484,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-
+ 
 
     </article>
     <hr/>

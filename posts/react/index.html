@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -492,13 +492,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>React is, as the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>React is, as the 
 
 <a href="https://reactjs.org/" rel="noopener">website</a> says, &ldquo;a JavaScript library for building user interfaces.&rdquo; What this means exactly, is often confusing to people.</p>
 <p>Many articles claim to teach you &ldquo;React in 10 minutes&rdquo; but rarely go beyond a few code examples. The problem is that this leaves you with an inkling of what React looks like and maybe how to write a bit of it, but no clue <em>why</em> it works and how to think about fixing React bugs.</p>
@@ -550,8 +557,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Bottom</span> <span class="nx">Text</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Bottom</span> <span class="nx">Text</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>It can also be a user-defined component. In this case, the component has no children or &lsquo;inner HTML&rsquo; so we can write its shorthand.</p>
 <div class="highlight"><div class="chroma">
@@ -559,8 +566,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">ExampleComponent</span><span class="p">/&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ExampleComponent</span><span class="p">/&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>We can also pass in properties to a component by adding a tag with that property name. Any string can be passed in regularly, or you can also choose to pass in any JS expression (e.g. number, function, object, etc.) by enclosing it in curly braces.</p>
 <div class="highlight"><div class="chroma">
@@ -568,8 +575,8 @@ if (!doNotTrack) {
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">Hello</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;World&#34;</span> <span class="na">someData</span><span class="o">=</span><span class="p">{</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">}/&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Hello</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;World&#34;</span> <span class="na">someData</span><span class="o">=</span><span class="p">{</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">}/&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>To &lsquo;compose&rsquo; components, you can nest them as children within each other.</p>
 <div class="highlight"><div class="chroma">
@@ -583,18 +590,18 @@ if (!doNotTrack) {
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">&lt;</span><span class="nt">Dashboard</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">Greeting</span><span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">Statistics</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">BarChart</span> <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">PieChart</span> <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}/&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">Statistics</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">Dashboard</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">Dashboard</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Greeting</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">Statistics</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">BarChart</span> <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">PieChart</span> <span class="na">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">Statistics</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">Dashboard</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Great, so that&rsquo;s just what JSX <em>looks like</em>, how do we use it in React? The first thing to note is that a <strong>component in React is defined as a function which returns some JSX</strong>.</p>
 <p>Here&rsquo;s a simple &lsquo;Hello World&rsquo; component in React! We then write a return statement that defines exactly how to render this component (i.e. what children make up this component).</p>
-<p>Note that React passes us all of the props from the parent in a &lsquo;props&rsquo; object. Then, in the return statement&rsquo;s JSX, we can then access the name property by using <code>{}</code> to indicate a JS expression and accessing the &lsquo;name&rsquo; field in the <code>props</code> object.</p>
+<p>Note that React passes us all of the props from the parent in a &lsquo;props&rsquo; object. Then, in the return statement&rsquo;s JSX, we can then access the name property by using <code>{}</code> to indicate a JS expression and accessing the &rsquo;name&rsquo; field in the <code>props</code> object.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -604,12 +611,12 @@ if (!doNotTrack) {
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-
-<span class="kd">function</span> <span class="nx">Greeting</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Greeting</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Let&rsquo;s say we want to create a <code>&lt;HelloWorld/&gt;</code> component that re-uses our <code>&lt;Greeting/&gt;</code> component from above.</p>
 <div class="highlight"><div class="chroma">
@@ -624,15 +631,15 @@ if (!doNotTrack) {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-
-<span class="kd">function</span> <span class="nx">HelloWorld</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">My</span> <span class="nx">Hello</span> <span class="nx">World</span> <span class="nx">App</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">Greeting</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;World!&#34;</span><span class="p">/&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">HelloWorld</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">My</span> <span class="nx">Hello</span> <span class="nx">World</span> <span class="nx">App</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">Greeting</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;World!&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Then, at the end, we tell React to finally render our <code>&lt;HelloWorld/&gt;</code> component into the actual DOM by using <code>ReactDOM.render(...)</code>. Here, we choose to replace the element with the id &lsquo;root&rsquo; in the real DOM with our <code>&lt;HelloWorld/&gt;</code> component.</p>
 <div class="highlight"><div class="chroma">
@@ -642,10 +649,10 @@ if (!doNotTrack) {
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">ReactDOM</span> <span class="nx">from</span> <span class="s1">&#39;react-dom&#39;</span>
-
-<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">HelloWorld</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">))</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">ReactDOM</span> <span class="nx">from</span> <span class="s1">&#39;react-dom&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">HelloWorld</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;root&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="life-cycle">Life Cycle</h2>
 <p>So far we&rsquo;ve covered static components using just plain old JSX and data passing using props, but this misses the biggest benefit that React offers: reactivity to data changes. We&rsquo;ll look a little at the life cycle of React components to see where we can update a component when data changes.</p>
@@ -681,21 +688,21 @@ if (!doNotTrack) {
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-
-<span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">count</span><span class="o">++</span><span class="p">}&gt;</span>
-        <span class="nx">Increment</span>
-      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">count</span><span class="o">++</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Increment</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>However, this will not work! Because React doesn&rsquo;t know about the count variable, incrementing it will not update the component and thus not re-render it onto the screen. To register a component&rsquo;s state with React, we use the <code>useState</code> hook.</p>
 <p>This will allow React to preserve the state between re-renders. <code>useState</code> returns a pair: a read-only variable representing the <em>current</em> state value and a function that lets you set a new value for the state.</p>
@@ -721,24 +728,24 @@ if (!doNotTrack) {
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-
-<span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// Declare a new state variable called count initialized to 0
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-  <span class="c1">// When the button is clicked, update the count to be
-</span><span class="c1"></span>  <span class="c1">// the previous count + 1
-</span><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}&gt;</span>
-        <span class="nx">Increment</span>
-      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Declare a new state variable called count initialized to 0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// When the button is clicked, update the count to be
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// the previous count + 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Increment</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now when the button is clicked, the count is then incremented by one. Because we used the <code>useState</code> hook, React knows about this component state and will then known to re-render the component when the state is updated.</p>
 <p>Note that you <strong>cannot</strong> directly modify the <code>count</code> variable because it is read-only. If you want to mutate it, use the <code>setCount</code> function that is returned from the hook.</p>
@@ -757,14 +764,14 @@ if (!doNotTrack) {
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1">// is equivalent to
-</span><span class="c1"></span>
-<span class="kr">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// state is an array of length 2
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="kr">const</span> <span class="nx">setCount</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// is equivalent to
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">// state is an array of length 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">setCount</span> <span class="o">=</span> <span class="nx">state</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="useeffect">useEffect</h3>
 <p>Asynchronous data fetching, manually changing the window title, and setting recurring events are all examples of side effects. Yet, React won&rsquo;t let us do that right now because we have no way to do things in between the mount and unmount lifecycle events.</p>
@@ -794,27 +801,27 @@ if (!doNotTrack) {
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-
-<span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-  <span class="c1">// setup a new effect that runs everytime `count` is updated
-</span><span class="c1"></span>  <span class="c1">// this will re-render the component too
-</span><span class="c1"></span>  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">count</span><span class="si">}</span><span class="sb"> clicks`</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">count</span><span class="p">])</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}&gt;</span>
-        <span class="nx">Increment</span>
-      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Counter</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// setup a new effect that runs everytime `count` is updated
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// this will re-render the component too
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">title</span> <span class="o">=</span> <span class="sb">`</span><span class="si">${</span><span class="nx">count</span><span class="si">}</span><span class="sb"> clicks`</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span> <span class="p">[</span><span class="nx">count</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">You</span> <span class="nx">clicked</span> <span class="p">{</span><span class="nx">count</span><span class="p">}</span> <span class="nx">times</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Increment</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>useEffect</code> doesn&rsquo;t return anything, but takes two parameters. The first is the callback which is the effect we want to run, this callback takes 0 parameters. The second parameter is the array of dependencies for the effect. React uses this array to determine when to re-run our effect (you can optionally omit this entire array to re-run the effect <em>every</em> time the component updates).</p>
 <h3 id="useswr">useSWR</h3>
@@ -846,27 +853,27 @@ if (!doNotTrack) {
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-<span class="kr">import</span> <span class="nx">useSWR</span> <span class="nx">from</span> <span class="s1">&#39;swr&#39;</span>
-
-<span class="c1">// a function that performs an http request and returns a response
-</span><span class="c1">// this can be reused across all of your requests
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">fetcher</span> <span class="o">=</span> <span class="nx">url</span> <span class="p">=&gt;</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-
-<span class="kd">function</span> <span class="nx">Profile</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// example HTTP GET request to /api/user
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="p">{</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useSWR</span><span class="p">(</span><span class="s1">&#39;/api/user&#39;</span><span class="p">,</span> <span class="nx">fetcher</span><span class="p">)</span>
-
-  <span class="c1">// we can use conditional rendering to display
-</span><span class="c1"></span>  <span class="c1">// error or loading messages
-</span><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">failed</span> <span class="nx">to</span> <span class="nx">load</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-  <span class="c1">// if the code reaches this point, we know
-</span><span class="c1"></span>  <span class="c1">// that our request will have finished and have no errors!
-</span><span class="c1"></span>  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">useSWR</span> <span class="nx">from</span> <span class="s1">&#39;swr&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// a function that performs an http request and returns a response
+</span></span></span><span class="line"><span class="cl"><span class="c1">// this can be reused across all of your requests
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">fetcher</span> <span class="o">=</span> <span class="nx">url</span> <span class="p">=&gt;</span> <span class="nx">fetch</span><span class="p">(</span><span class="nx">url</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">Profile</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// example HTTP GET request to /api/user
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="p">{</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useSWR</span><span class="p">(</span><span class="s1">&#39;/api/user&#39;</span><span class="p">,</span> <span class="nx">fetcher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// we can use conditional rendering to display
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// error or loading messages
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">failed</span> <span class="nx">to</span> <span class="nx">load</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// if the code reaches this point, we know
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// that our request will have finished and have no errors!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Hello</span> <span class="p">{</span><span class="nx">data</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="order-matters">Order matters</h3>
 <p>One really common beginner mistake that I made a lot when first starting out is that <strong>hooks need to be called in the exact same order every time.</strong> This means that you can&rsquo;t have hooks after any conditional returns, inside <code>if</code> statements, or inside function/callback definitions.</p>
@@ -887,20 +894,20 @@ if (!doNotTrack) {
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// DON&#39;T: conditionally run hook
-</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">someCondition</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// run effect here
-</span><span class="c1"></span>  <span class="p">})</span>
-<span class="p">}</span>
-
-<span class="c1">// DO: put conditional inside the hook
-</span><span class="c1"></span><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">someCondition</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// run effect here
-</span><span class="c1"></span>  <span class="p">}</span>
-<span class="p">})</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// DON&#39;T: conditionally run hook
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">someCondition</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// run effect here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// DO: put conditional inside the hook
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">useEffect</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">someCondition</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// run effect here
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>For more information, read the 
 
@@ -918,9 +925,9 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ node -v
-v12.14.0 <span class="c1"># good to go!</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ node -v
+</span></span><span class="line"><span class="cl">v12.14.0 <span class="c1"># good to go!</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="starter-code">Starter Code</h3>
 <p>Normally, most people will tell you to run <code>create-react-app</code> here to create a new React application, but I find that <code>create-react-app</code> has way too much boilerplate (extra code) for my taste so I made my own more stripped down version of <code>create-react-app</code>. It contains everything you need to get started with a new React app and, in my opinion, is a lot less confusing.</p>
@@ -942,18 +949,18 @@ v12.14.0 <span class="c1"># good to go!</span>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># clone the repository</span>
-$ git clone https://github.com/jackyzha0/min-react.git
-
-<span class="c1"># navigate to folder</span>
-$ <span class="nb">cd</span> min-react
-
-<span class="c1"># install dependencies</span>
-$ npm i
-
-<span class="c1"># run local dev server! (open localhost:3000 in your browser)</span>
-$ npm run start
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># clone the repository</span>
+</span></span><span class="line"><span class="cl">$ git clone https://github.com/jackyzha0/min-react.git
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># navigate to folder</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> min-react
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># install dependencies</span>
+</span></span><span class="line"><span class="cl">$ npm i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># run local dev server! (open localhost:3000 in your browser)</span>
+</span></span><span class="line"><span class="cl">$ npm run start
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Then, let&rsquo;s remove some of the starter files we don&rsquo;t need. Delete the <code>src/components</code> folder. We&rsquo;ll be working <code>src/App.js</code> for the rest of this tutorial.</p>
 <h3 id="creating-the-app-component">Creating the App component</h3>
@@ -988,32 +995,32 @@ $ npm run start
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-<span class="kr">import</span> <span class="nx">styled</span> <span class="nx">from</span> <span class="s1">&#39;styled-components&#39;</span>
-
-<span class="c1">// custom styling using styled-components!
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">AppContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
-</span><span class="sb"> margin: 40vh 30vw;
-</span><span class="sb">`</span>
-
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// setup todos
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
-
-  <span class="c1">// app is composed up of all the current todos
-</span><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
-        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
-        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
-      <span class="p">/&gt;)}</span>
-    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">styled</span> <span class="nx">from</span> <span class="s1">&#39;styled-components&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// custom styling using styled-components!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">AppContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb"> margin: 40vh 30vw;
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// setup todos
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// app is composed up of all the current todos
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
+</span></span><span class="line"><span class="cl">        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;)}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>The problem is, we don&rsquo;t have a <code>&lt;TodoItem&gt;</code> component yet. Let&rsquo;s make it!</p>
 <h3 id="creating-a-todo-component-component-styling">Creating a Todo component (Component Styling)</h3>
@@ -1029,14 +1036,14 @@ $ npm run start
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Let&rsquo;s add a hover state so that the item has a strikethrough effect when you hover over it. We can do this using <code>styled-components</code> which is a way for us to add CSS to our components really easily.</p>
 <div class="highlight"><div class="chroma">
@@ -1059,23 +1066,23 @@ $ npm run start
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// create a &#39;styled&#39; div that has a strikethrough on hover
-</span><span class="c1"></span><span class="kr">const</span> <span class="nx">TodoItemContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
-</span><span class="sb">  &amp;:hover &gt; p {
-</span><span class="sb">    text-decoration: line-through;
-</span><span class="sb">  }
-</span><span class="sb">`</span>
-
-<span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// replace the original div with the `TodoItemContainer`
-</span><span class="c1"></span>  <span class="c1">// styled div we just created
-</span><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// create a &#39;styled&#39; div that has a strikethrough on hover
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">TodoItemContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">  &amp;:hover &gt; p {
+</span></span></span><span class="line"><span class="cl"><span class="sb">    text-decoration: line-through;
+</span></span></span><span class="line"><span class="cl"><span class="sb">  }
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// replace the original div with the `TodoItemContainer`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// styled div we just created
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Great! Now let&rsquo;s see what that looks like.</p>
 <p>
@@ -1100,18 +1107,18 @@ $ npm run start
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span>
-      <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="sb">`You finished </span><span class="si">${</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">)</span>
-      <span class="p">}}</span>
-    <span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span>
+</span></span><span class="line"><span class="cl">      <span class="na">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="sb">`You finished </span><span class="si">${</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now, when we click each todo item, our page will give us an alert saying we completed that item! Not super useful though. Can we just delete the item from the component?</p>
 <p>Recall from earlier that with React, information flows <em>downward</em> in the component hierarchy tree. This means that in order to modify the state of the parent (<code>&lt;App&gt;</code> in this case), we need to pass a callback that helps us modify the information.</p>
@@ -1143,30 +1150,30 @@ $ npm run start
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
-
-  <span class="c1">// callback to remove a todo
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// copy current todos
-</span><span class="c1"></span>    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
-    <span class="c1">// remove todo at given index
-</span><span class="c1"></span>    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
-        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
-        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
-        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
-      <span class="p">/&gt;)}</span>
-    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// callback to remove a todo
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// copy current todos
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// remove todo at given index
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
+</span></span><span class="line"><span class="cl">        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;)}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Then, we update <code>&lt;TodoItem&gt;</code> to use this callback on click.</p>
 <div class="highlight"><div class="chroma">
@@ -1180,14 +1187,14 @@ $ npm run start
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">deleteCallback</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">deleteCallback</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Great, so now we have display and deletion. Adding new todos is up next!</p>
 <h3 id="adding-a-todo-form-inputs">Adding a Todo (Form Inputs)</h3>
@@ -1210,21 +1217,21 @@ $ npm run start
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// form state
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">input</span>
-        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
-        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
-        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
-      <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// form state
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now, let&rsquo;s handle what happens when the user submits this form (i.e. presses enter). We add an <code>onSubmit</code> handler to the form to handle this. Note that we specifically tell the browser to <em>not</em> refresh the page (which is the default behaviour for a form submission) and clear the form state.</p>
 <p>By telling React that the value of the <code>&lt;input&gt;</code> is equal to the component state <code>todo</code>, React knows that this is a 
@@ -1258,31 +1265,31 @@ $ npm run start
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-
-  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// prevent form from refreshing page
-</span><span class="c1"></span>    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
-
-    <span class="c1">// show an alert with user input
-</span><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
-
-    <span class="c1">// clear form
-</span><span class="c1"></span>    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">input</span>
-        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
-        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
-        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
-      <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// prevent form from refreshing page
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// show an alert with user input
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// clear form
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">input</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Let&rsquo;s add a bit of styling to make the text box not as ugly and add <code>&lt;TodoForm&gt;</code> to the end of the todos list so it actually gets rendered.</p>
 <div class="highlight"><div class="chroma">
@@ -1342,60 +1349,60 @@ $ npm run start
 </span><span class="lnt">53
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">TodoInput</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">input</span><span class="sb">`
-</span><span class="sb"> padding: 0.7em 0.5em;
-</span><span class="sb"> border: 1px solid black;
-</span><span class="sb"> border-radius: 4px;
-</span><span class="sb">`</span>
-
-<span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-
-  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// prevent form from refreshing page
-</span><span class="c1"></span>    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
-
-    <span class="c1">// show an alert with user input
-</span><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
-
-    <span class="c1">// clear form
-</span><span class="c1"></span>    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">TodoInput</span>
-        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
-        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
-        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
-        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
-      <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
-
-  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
-    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
-        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
-        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
-        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
-      <span class="p">/&gt;)}</span>
-      <span class="p">&lt;</span><span class="nt">TodoForm</span><span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">TodoInput</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">input</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb"> padding: 0.7em 0.5em;
+</span></span></span><span class="line"><span class="cl"><span class="sb"> border: 1px solid black;
+</span></span></span><span class="line"><span class="cl"><span class="sb"> border-radius: 4px;
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// prevent form from refreshing page
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// show an alert with user input
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">alert</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// clear form
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoInput</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
+</span></span><span class="line"><span class="cl">        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoForm</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Looking snazzy!</p>
 <p>
@@ -1455,56 +1462,56 @@ $ npm run start
 </span><span class="lnt">49
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-
-  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
-    <span class="c1">// use the provided &#39;addCallback&#39; prop
-</span><span class="c1"></span>    <span class="nx">props</span><span class="p">.</span><span class="nx">addCallback</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
-    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">TodoInput</span>
-        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
-        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
-        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
-        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
-      <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
-
-  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
-    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="c1">// callback to add a new todo
-</span><span class="c1"></span>  <span class="kr">const</span> <span class="nx">addTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">todo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">todo</span><span class="p">]</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
-        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
-        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
-        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
-      <span class="p">/&gt;)}</span>
-      <span class="p">&lt;</span><span class="nt">TodoForm</span> <span class="na">addCallback</span><span class="o">=</span><span class="p">{</span><span class="nx">addTodo</span><span class="p">}</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// use the provided &#39;addCallback&#39; prop
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">props</span><span class="p">.</span><span class="nx">addCallback</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoInput</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// callback to add a new todo
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">addTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">todo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">todo</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
+</span></span><span class="line"><span class="cl">        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoForm</span> <span class="na">addCallback</span><span class="o">=</span><span class="p">{</span><span class="nx">addTodo</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="finished-app">Finished App</h3>
 <p>And with that, you&rsquo;ve finished your first React application! To recap, you&rsquo;ve learned</p>
@@ -1620,86 +1627,86 @@ $ npm run start
 </span><span class="lnt">77
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// Full Code
-</span><span class="c1"></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
-<span class="kr">import</span> <span class="nx">styled</span> <span class="nx">from</span> <span class="s1">&#39;styled-components&#39;</span>
-
-<span class="kr">const</span> <span class="nx">AppContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
-</span><span class="sb"> margin: 40vh 30vw;
-</span><span class="sb">`</span>
-
-<span class="kr">const</span> <span class="nx">TodoItemContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
-</span><span class="sb">  &amp;:hover &gt; p {
-</span><span class="sb">    text-decoration: line-through;
-</span><span class="sb">  }
-</span><span class="sb">`</span>
-
-<span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">deleteCallback</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kr">const</span> <span class="nx">TodoInput</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">input</span><span class="sb">`
-</span><span class="sb">  padding: 0.7em 0.5em;
-</span><span class="sb">  border: 1px solid black;
-</span><span class="sb">  border-radius: 4px;
-</span><span class="sb">`</span>
-
-<span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-
-  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
-    <span class="nx">props</span><span class="p">.</span><span class="nx">addCallback</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
-    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
-      <span class="p">&lt;</span><span class="nt">TodoInput</span>
-        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
-        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
-        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
-        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
-      <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
-
-  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
-    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="kr">const</span> <span class="nx">addTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">todo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">todo</span><span class="p">]</span>
-    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
-  <span class="p">}</span>
-
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
-        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
-        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
-        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
-      <span class="p">/&gt;)}</span>
-      <span class="p">&lt;</span><span class="nt">TodoForm</span> <span class="na">addCallback</span><span class="o">=</span><span class="p">{</span><span class="nx">addTodo</span><span class="p">}</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
-  <span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="c1">// Full Code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;react&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">styled</span> <span class="nx">from</span> <span class="s1">&#39;styled-components&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">AppContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb"> margin: 40vh 30vw;
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">TodoItemContainer</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">div</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">  &amp;:hover &gt; p {
+</span></span></span><span class="line"><span class="cl"><span class="sb">    text-decoration: line-through;
+</span></span></span><span class="line"><span class="cl"><span class="sb">  }
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoItem</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">TodoItemContainer</span> <span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">deleteCallback</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">TodoItemContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">TodoInput</span> <span class="o">=</span> <span class="nx">styled</span><span class="p">.</span><span class="nx">input</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">  padding: 0.7em 0.5em;
+</span></span></span><span class="line"><span class="cl"><span class="sb">  border: 1px solid black;
+</span></span></span><span class="line"><span class="cl"><span class="sb">  border-radius: 4px;
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">TodoForm</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todo</span><span class="p">,</span> <span class="nx">setTodo</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">handleSubmit</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">props</span><span class="p">.</span><span class="nx">addCallback</span><span class="p">(</span><span class="nx">todo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodo</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoInput</span>
+</span></span><span class="line"><span class="cl">        <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Add a new todo...&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">todo</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">e</span> <span class="p">=&gt;</span> <span class="nx">setTodo</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">[</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">setTodos</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([</span><span class="s2">&#34;do laundry&#34;</span><span class="p">,</span> <span class="s2">&#34;finish homework&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">deleteTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">newTodos</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">addTodo</span> <span class="o">=</span> <span class="p">(</span><span class="nx">todo</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">newTodos</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">todos</span><span class="p">,</span> <span class="nx">todo</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">setTodos</span><span class="p">(</span><span class="nx">newTodos</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">todos</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span><span class="nx">todos</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">&lt;</span><span class="nt">TodoItem</span>
+</span></span><span class="line"><span class="cl">        <span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">i</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">name</span><span class="o">=</span><span class="p">{</span><span class="nx">item</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="na">deleteCallback</span><span class="o">=</span><span class="p">{()</span> <span class="p">=&gt;</span> <span class="nx">deleteTodo</span><span class="p">(</span><span class="nx">i</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">/&gt;)}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">TodoForm</span> <span class="na">addCallback</span><span class="o">=</span><span class="p">{</span><span class="nx">addTodo</span><span class="p">}</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">AppContainer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">App</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div> 
 
     </article>
     <hr/>

@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -467,13 +467,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <img src="/posts/images/framing/title.png" alt="Abstract illustration of a blob framed by two picture frames"  /></p>
 <p>The content I throw on Twitter is not something I would readily post on LinkedIn. I also wouldn&rsquo;t post LinkedIn-style business content to my Facebook timeline. To an extent, my social presence across these platforms is <em>incongruent</em>. The core tenet is that different apps curate different types of communities and thus social contexts. As a result, we try to separate these contexts in the best way we know how to: by acting differently, <strong>and that&rsquo;s ok.</strong></p>
@@ -488,7 +495,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>&ldquo;I mean of course the central trick of the social internet, is that whenever you make something, you choose what&rsquo;s inside the frame, but as viewers the rest of us can&rsquo;t help but believe what&rsquo;s inside the frame, because it&rsquo;s literally all we can see&rdquo;</p>
 </blockquote>
-<p>An unfortunate side effect of this is that it starts setting expectations for the audience as to how we &lsquo;normally&rsquo; behave. This &lsquo;audience&rsquo; of people can be friends, followers, or strangers. They are a group of people that pay attention to what <em>you</em> have to say because of your thoughts, opinions, and general persona. So what happens when we change?</p>
+<p>An unfortunate side effect of this is that it starts setting expectations for the audience as to how we &rsquo;normally&rsquo; behave. This &lsquo;audience&rsquo; of people can be friends, followers, or strangers. They are a group of people that pay attention to what <em>you</em> have to say because of your thoughts, opinions, and general persona. So what happens when we change?</p>
 <p>If we&rsquo;re expected to keep growing as people, these thoughts and opinions will obviously change over time. So why does it feel so <em>weird</em>, for both the audience and ourselves, to deviate from these set identities that we&rsquo;ve become used to portraying in certain scenarios?</p>
 <h2 id="context-separation">Context separation</h2>
 <p>
@@ -537,7 +544,7 @@ if (!doNotTrack) {
 <p><strong>Realtime</strong>. Platforms and individuals are leaning more towards 
 
 
-<a href="/thoughts/ephemereal-content" rel="noopener" class="internal-link" data-src="/thoughts/ephemereal-content">ephemereal content</a>, like stories or streaming. The &lsquo;live&rsquo; aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.</p>
+<a href="/thoughts/ephemereal-content" rel="noopener" class="internal-link" data-src="/thoughts/ephemereal-content">ephemereal content</a>, like stories or streaming. The &rsquo;live&rsquo; aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.</p>
 </li>
 <li>
 <p><strong>Fragmentation</strong>. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to &lsquo;finstas&rsquo; which are accounts focused for a closed group of friends and family rather than the entire public 
@@ -560,7 +567,7 @@ if (!doNotTrack) {
 <p>Because we&rsquo;re so actively a part of all of these different contexts, we are forced to be excessively general on these platforms to try to cater to everyone. We should have platforms where it&rsquo;s ok to engage with different elements of who you are. We have different groups of friends to cater to different aspects of who we are, so why should social media platforms be any different?</p>
 <p>Different social contexts call for different social behaviours, and that&rsquo;s ok.</p>
 <p><em>Special thanks to Anson, Ivan, Rishi, Joss, Jasmine, Kat, and Anh for helping read over and edit this piece! Wouldn&rsquo;t be possible without y&rsquo;all :)</em></p>
-
+ 
 
     </article>
     <hr/>

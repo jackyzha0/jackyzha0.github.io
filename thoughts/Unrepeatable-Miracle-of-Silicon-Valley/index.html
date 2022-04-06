@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -463,13 +463,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://www.aei.org/economics/silicon-valley-an-unrepeatable-miracle-a-long-read-qa-with-margaret-omara/" rel="noopener">Source: Silicon Valley: An unrepeatable miracle? with <em>Margaret O’Mara</em></a></p>
 <p>Podcast Interview with Margaret O’Mara, the author of <em>
@@ -481,12 +488,12 @@ if (!doNotTrack) {
 <a href="/thoughts/From-Counterculture-to-Cyberculture" rel="noopener" class="internal-link" data-src="/thoughts/From-Counterculture-to-Cyberculture"><em>From Counterculture to Cyberculture</em></a></p>
 <p>What caused the big influx of extraordinary opportunity in Northern California, despite mostly being another sleepy fruit-growing region? Mostly the result of the Cold War and the military-industrial complex and the power of Stanford &ndash; these two were not completely separate.</p>
 <p>A lot of military funding went to the west (and to California and thus Stanford). Big result of Fred Terman (Dean of Engineering at the time): &ldquo;let’s remake Stanford so that it’s a perfect receptacle for this new money. We are a true Cold War university.&rdquo;</p>
-<p>The military-industrial complex rose as a result of the Cold War, showing how a capitalist democracy can be &lsquo;triumphant&rsquo; over more socialist policies. As a result, a lot of government money went to private defense contractors (think Lockheed). When the Space Race came along, a lot of that money went to places specializing in small, light, powerful devices (microchips, integrated circuirts), and this happened to be Silicon Valley.</p>
+<p>The military-industrial complex rose as a result of the Cold War, showing how a capitalist democracy can be &rsquo;triumphant&rsquo; over more socialist policies. As a result, a lot of government money went to private defense contractors (think Lockheed). When the Space Race came along, a lot of that money went to places specializing in small, light, powerful devices (microchips, integrated circuirts), and this happened to be Silicon Valley.</p>
 <p>Government wasn&rsquo;t the sole reason this explosion happened, rather more of &ldquo;a customer, as a catalyst, as a kind of de facto venture capitalist at an early stage, when there was no commercial market for this stuff.&rdquo;</p>
 <blockquote>
 <p>To have such mobilization around this massive effort, you do probably need some sort of geopolitical catalyst. It’s hard for it to be purely commercial&hellip;  <strong>That’s the thing that can catalyze people, government, and resources into doing these big things.</strong></p>
 </blockquote>
-<p>Problem is that this &lsquo;urgency&rsquo; needs to be bipartisan &ndash; this was very difficult when the Soviet Union was widely feared. As a result, anything even mildly centrist is perceived as socialist → 
+<p>Problem is that this &lsquo;urgency&rsquo; needs to be bipartisan &ndash; this was very difficult when the Soviet Union was widely feared. As a result, anything even mildly centrist is perceived as socialist -&gt; 
 
 <a href="https://www.youtube.com/watch?v=ULYWIDcUOY4" rel="noopener">https://www.youtube.com/watch?v=ULYWIDcUOY4</a></p>
 <p>Abstraction of the problem</p>
@@ -511,7 +518,7 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/Design-Justice" rel="noopener" class="internal-link" data-src="/thoughts/Design-Justice">diversity problems</a> where it works really well for elite college students in the US but less so for the housewives in Myanmar.</p>
-
+ 
 
     </article>
     <hr/>

@@ -73,7 +73,7 @@ Quotes Composition When knowledge can be broken up into &ldquo;mind-size bites,&
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -469,13 +469,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Lots of really good 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Lots of really good 
 
 
 <a href="/thoughts/constructionist" rel="noopener" class="internal-link" data-src="/thoughts/constructionist">constructionist</a> theory here :))</p>
@@ -507,7 +514,7 @@ if (!doNotTrack) {
 
 <a href="/posts/ai-systems" rel="noopener" class="internal-link" data-src="/posts/ai-systems">AI systems</a>
 The definition of artificial intelligence can be narrow or broad. In the narrow sense, AI is concerned with extending the capacity of machines to perform functions that would be considered intelligent if performed by people. Its goal is to construct machines, and, in doing so, it can be thought of as a branch of advanced engineering&hellip; In order to make a machine capable of learning, we have to probe deeply into the nature of learning. And from this kind of research comes the broader definition of artificial intelligence: that of cognitive science.</p>
-<p>&ldquo;The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of &lsquo;being wrong.'&rdquo;</p>
+<p>&ldquo;The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of &lsquo;being wrong.&rsquo;&rdquo;</p>
 <h3 id="multiple-realizationthoughtsmultiple20realizationmd">
 
 
@@ -541,7 +548,7 @@ This problem goes deeper than a mere short supply of such people. The fact that 
 <p>On the split between &lsquo;humanities&rsquo; and &lsquo;science&rsquo;
 &ldquo;It is self-perpetuating: The more the culture is divided, the more each side builds separation into its new growth&rdquo;</p>
 <p>The printed page cannot capture either the product or the process: the serendipitous discoveries, the bugs, and the mathematical insights all require movement to be appreciated.</p>
-
+ 
 
     </article>
     <hr/>

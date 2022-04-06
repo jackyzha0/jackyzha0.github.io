@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -464,13 +464,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>From <em>21 Lesson for the 21st Century</em> by Yuval Noah Harari:  &ldquo;Did we domesticate wheat or did wheat domesticate us?&rdquo; So much of technological progress is conflated as a good thing. Is it necessarily so?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>From <em>21 Lesson for the 21st Century</em> by Yuval Noah Harari:  &ldquo;Did we domesticate wheat or did wheat domesticate us?&rdquo; So much of technological progress is conflated as a good thing. Is it necessarily so?</p>
 <p>Progress, loosely defined by 
 
 <a href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/" rel="noopener">Tyler Cowen and Patrick Collison</a>, is &ldquo;the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries&rdquo;</p>
@@ -481,7 +488,7 @@ if (!doNotTrack) {
 <p>Progress isn&rsquo;t equal, it&rsquo;s multiplicative. It&rsquo;s &ldquo;a mixed blessing—one that resulted in technologies that have allowed many people to live longer, safer lives, but that has, simultaneously, destroyed global ecosystems, caused the extinction of many living species, facilitated rampant population growth, and wreaked havoc on climate systems, the effects of which will be an increase in droughts, floods, storms, and erratic weather patterns that threaten most global societies.&rdquo; 
 
 <a href="https://www.theatlantic.com/business/archive/2014/09/the-industrial-revolution-and-its-discontents/379781/" rel="noopener">Source</a></p>
-<p>There are no &lsquo;thought leaders&rsquo; in bleeding tech, only in established fields. Everyone at the edge of a field is a &lsquo;pioneer&rsquo; in a sense.</p>
+<p>There are no &rsquo;thought leaders&rsquo; in bleeding tech, only in established fields. Everyone at the edge of a field is a &lsquo;pioneer&rsquo; in a sense.</p>
 <p>After a subject gets established, how do we continue to make progress through research? 
 
 
@@ -497,7 +504,7 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/creation-vs-maintenance" rel="noopener" class="internal-link" data-src="/thoughts/creation-vs-maintenance">maintenance</a> focused one? Finding answers through working on new things rather than what was revealed in the past</p>
-<p>So many historically &lsquo;truthful&rsquo; sources like the Church and classical science were wrong about fundamental aspects of the universe (e.g. Earth being the centre of the universe). &ldquo;By 1600, much of ancient wisdom had crumbled.&rdquo;</p>
+<p>So many historically &rsquo;truthful&rsquo; sources like the Church and classical science were wrong about fundamental aspects of the universe (e.g. Earth being the centre of the universe). &ldquo;By 1600, much of ancient wisdom had crumbled.&rdquo;</p>
 <p>Skepticism as the taproot of all knowledge, heavily 
 
 
@@ -523,7 +530,7 @@ if (!doNotTrack) {
 <a href="/thoughts/social-graphs" rel="noopener" class="internal-link" data-src="/thoughts/social-graphs">social graphs</a>)</li>
 <li>chance and circumstance</li>
 </ol>
-<p>&ldquo;Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably.&rdquo; → 
+<p>&ldquo;Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably.&rdquo; -&gt; 
 
 
 <a href="/thoughts/new-DARPA" rel="noopener" class="internal-link" data-src="/thoughts/new-DARPA">a new DARPA</a> to catalyze progress?</p>
@@ -582,7 +589,7 @@ if (!doNotTrack) {
 <p>Is it wrong to try to measure progress in terms of people&rsquo;s happiness? What about the 
 
 
-<a href="/thoughts/hedonic-treadmill" rel="noopener" class="internal-link" data-src="/thoughts/hedonic-treadmill">hedonic treadmill</a>, will we eventually just regress to a new &lsquo;normal&rsquo;?</p>
+<a href="/thoughts/hedonic-treadmill" rel="noopener" class="internal-link" data-src="/thoughts/hedonic-treadmill">hedonic treadmill</a>, will we eventually just regress to a new &rsquo;normal&rsquo;?</p>
 <h2 id="a-humanistic-take">A humanistic take</h2>
 <p>
 
@@ -590,7 +597,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>Progress is anything that helps human beings live better lives: longer, happier, healthier, in mind, body, and spirit. And more choices about how we want to live our lives: our careers; where we live; if, when, and who we marry; whether to have kids or not. Fundamentally, I judge progress by humanistic standards.</p>
 </blockquote>
-
+ 
 
     </article>
     <hr/>

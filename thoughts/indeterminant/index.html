@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -460,13 +460,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>Anirvacanīyatva or indeterminancy</p>
 </blockquote>
 <p>Vācaspati Miśra&rsquo;s <em>Bhāmatī</em>, a commentary on Śamkara&rsquo;s <em>Brahmasū-trabhāsya</em>.</p>
@@ -477,7 +484,7 @@ if (!doNotTrack) {
 <a href="/thoughts/Ny%C4%81ya" rel="noopener" class="internal-link" data-src="/thoughts/Ny%C4%81ya">Nyāya</a> argument for 
 
 
-<a href="/thoughts/philosophical-realism" rel="noopener" class="internal-link" data-src="/thoughts/philosophical-realism">philosophical realism</a> but more so its completeness. I have cognition of a white horse, not of &lsquo;white&rsquo; and of &lsquo;horse&rsquo;. Vācaspati argues that the sum is greater than the whole &ndash; it is not sufficient that a description of its constituent elements (&lsquo;this&rsquo; and &lsquo;silver&rsquo;) entirely constitute the unitary object of cognition (&lsquo;this is silver&rsquo;).</p>
+<a href="/thoughts/philosophical-realism" rel="noopener" class="internal-link" data-src="/thoughts/philosophical-realism">philosophical realism</a> but more so its completeness. I have cognition of a white horse, not of &lsquo;white&rsquo; and of &lsquo;horse&rsquo;. Vācaspati argues that the sum is greater than the whole &ndash; it is not sufficient that a description of its constituent elements (&rsquo;this&rsquo; and &lsquo;silver&rsquo;) entirely constitute the unitary object of cognition (&rsquo;this is silver&rsquo;).</p>
 <h2 id="cognition-object-relationship">Cognition-Object relationship</h2>
 <p>The cognition-object relationship here refers to one about 
 
@@ -489,16 +496,16 @@ if (!doNotTrack) {
 <li>Object gives content (visayatā) to a cognition in the sense it is the subject of the thought and therefore individuates/gives identity to/specifies that cognition</li>
 <li>The cognition is then a representation (visayitā) of the object</li>
 </ol>
-<p>The form usually is &lsquo;this thing is a shell&rsquo; which is in the form of $F\alpha$ where</p>
+<p>The form usually is &rsquo;this thing is a shell&rsquo; which is in the form of $F\alpha$ where</p>
 <ul>
-<li>$\alpha$ is the object (&lsquo;this thing&rsquo;, dharmin, qualificand, thing being distinguished)</li>
+<li>$\alpha$ is the object (&rsquo;this thing&rsquo;, dharmin, qualificand, thing being distinguished)</li>
 <li>$F$ is what it is cognised as (the concept, content of thought, dharma, the distinguisher)</li>
 <li>Akin to the 
 
 
 <a href="/thoughts/Twin-Earth-Argument" rel="noopener" class="internal-link" data-src="/thoughts/Twin-Earth-Argument">Twin Earth Argument</a>, &ldquo;this&rdquo; can refer to different things
 <ul>
-<li>Like variable naming in programming languages where unification would not unify two &lsquo;this&rsquo; from different scopes</li>
+<li>Like variable naming in programming languages where unification would not unify two &rsquo;this&rsquo; from different scopes</li>
 </ul>
 </li>
 </ul>
@@ -510,11 +517,11 @@ if (!doNotTrack) {
 <li>Erroneous cognition occurs when the subject takes it to be true when it is not.</li>
 <li>Sublation is the incidence of a later cognition that results in the realization of an earlier cognition being erroneous.</li>
 </ul>
-<p>Epistemic indistinguishability: there is no perceived difference between contents of distinct cognitions (i.e. confusing &lsquo;this is shell&rsquo; with &lsquo;this is silver&rsquo;)</p>
-<p>Let us take the simple perceptual demonstrative judgement of the form &lsquo;this is a piece of silver&rsquo;. This can clearly be a wrong judgement as the relevant object could be a piece of shell.</p>
+<p>Epistemic indistinguishability: there is no perceived difference between contents of distinct cognitions (i.e. confusing &rsquo;this is shell&rsquo; with &rsquo;this is silver&rsquo;)</p>
+<p>Let us take the simple perceptual demonstrative judgement of the form &rsquo;this is a piece of silver&rsquo;. This can clearly be a wrong judgement as the relevant object could be a piece of shell.</p>
 <p>What does an erroneous cognition say about its object (if anything at all)?</p>
 <p>Well, this states that object and concept must <em>both</em> exist. Even in mistaking the shell of the silver, both shell (instantiated as physical demonstrated object) and silver (instantiated as primary object of cognition) exist. TLDR; erroneous cognition required determinate objects in the determinate world.</p>
-<p>The state of taking &lsquo;this&rsquo; to be silver is not explained simply by explaining that &lsquo;this&rsquo; and &lsquo;silver&rsquo; occur in it. Take for example, the non-erroneous cognition &lsquo;this looks like silver&rsquo; which contains both constituent elements but is epistemically different from the earlier erroneous claim of &lsquo;this is silver&rsquo;.</p>
+<p>The state of taking &rsquo;this&rsquo; to be silver is not explained simply by explaining that &rsquo;this&rsquo; and &lsquo;silver&rsquo; occur in it. Take for example, the non-erroneous cognition &rsquo;this looks like silver&rsquo; which contains both constituent elements but is epistemically different from the earlier erroneous claim of &rsquo;this is silver&rsquo;.</p>
 <p>So how does an erroneous cognition $G\alpha$ arise?</p>
 <ol>
 <li>Suppose the subject knows when the distinguisher $G$ is valid</li>
@@ -542,7 +549,7 @@ The erroneous cognition arises when the subject believes 5 and 6 to be true inst
 <p>A: <em>It is possible to determine the existential status of objects of cognition</em>.</p>
 <p>We first define some terminology. The cognition-object relationship here refers to one about representational content. Representation, in this context, means a cognitive state of being &lsquo;of&rsquo; or &lsquo;about&rsquo; the object. Ram-Prasad uses a specific notation to express these relations:</p>
 <ul>
-<li>$\alpha$ is the object of cognition (&lsquo;this thing&rsquo;, qualificand, thing being distinguished)</li>
+<li>$\alpha$ is the object of cognition (&rsquo;this thing&rsquo;, qualificand, thing being distinguished)</li>
 <li>$F$ is what it is cognised as (the concept, content of thought, the distinguisher)
 Here, Vācaspati does <em>not</em> disagree with 
 
@@ -550,8 +557,8 @@ Here, Vācaspati does <em>not</em> disagree with
 <a href="/thoughts/Ny%C4%81ya" rel="noopener" class="internal-link" data-src="/thoughts/Ny%C4%81ya">Nyāya</a> in terms of recognizing objects of cognition as existing independently of consciousness.</li>
 </ul>
 <p>B: The second part posits that A implies the ability to *determine the validity or invalidity of particular cognitions.</p>
-<p>To use more of Ram-Prasad&rsquo;s notation, let the object at at hand (&lsquo;this&rsquo;) be $\alpha$ and what it is cognised as (&lsquo;silver&rsquo;) be $F$. The resulting cognition is of form $F\alpha$. This resulting cognition is a demonstrative, grounded in reference to a &ldquo;spatio-temporally indexed object&rdquo; and is &lsquo;valid&rsquo; until sublated by subsequent cognition.</p>
-<p>However, let us consider the &lsquo;invalid&rsquo; case. Let us take the simple perceptual demonstrative judgement of the form &lsquo;this is a piece of silver&rsquo;. This can clearly be a wrong judgement as the relevant object could be a piece of shell. In more formal terms, if the cognition is actually $G\alpha$ (this is a piece of silver), then $F\alpha$ would be invalid as each object is <em>uniquely</em> distinguished by its distinguisher.</p>
+<p>To use more of Ram-Prasad&rsquo;s notation, let the object at at hand (&rsquo;this&rsquo;) be $\alpha$ and what it is cognised as (&lsquo;silver&rsquo;) be $F$. The resulting cognition is of form $F\alpha$. This resulting cognition is a demonstrative, grounded in reference to a &ldquo;spatio-temporally indexed object&rdquo; and is &lsquo;valid&rsquo; until sublated by subsequent cognition.</p>
+<p>However, let us consider the &lsquo;invalid&rsquo; case. Let us take the simple perceptual demonstrative judgement of the form &rsquo;this is a piece of silver&rsquo;. This can clearly be a wrong judgement as the relevant object could be a piece of shell. In more formal terms, if the cognition is actually $G\alpha$ (this is a piece of silver), then $F\alpha$ would be invalid as each object is <em>uniquely</em> distinguished by its distinguisher.</p>
 <p>Yet, even in mistaking the shell of the silver, both shell (instantiated as physical demonstrated object) and silver (instantiated as primary object of cognition) exist. Erroneous cognition still require determinate objects in the determinate world.</p>
 <p>C: Finally, the argument concludes that A and B combined do not allow us to conclude <em>whether objects as a whole are, independently of particular cognitions of them, existent or not</em>.</p>
 <p>For this argument, Ram-Prasad refers to Advaitin&rsquo;s seemingly contradictory conclusions which arise from fairly uncontroversial principles (P1 and P2 in the text):</p>
@@ -562,7 +569,7 @@ This argument shows that there is no way of assigning status to $G\alpha$ and th
 </ol>
 <p>Extending this to the world, we use the differences between third and first person accounts of erroneous cognition. The distinguishing characteristic of third person accounts is that the third person&rsquo;s determination of what causal elements were involved in the erroneous cognition of the subject is true. However, this is not guaranteed to hold.</p>
 <p>A valid cognition is discriminating, but that is determined only by the judgement of another cognition. In a sense, every cognition requires a third-person account. Yet, we know that every third-person account itself is a first-person cognition merely presuming its validity, no independent judgement as to the truth of the original cognition is possible. We know that whether a cognition is veridical or erroneous is to show whether its object exists or not. As this cannot be done, Ram-Prasad concludes that the existence of the object as a whole is indeterminant.</p>
-
+ 
 
     </article>
     <hr/>

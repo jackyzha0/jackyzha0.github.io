@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>If code is law, then are programmers the governors?</p>
 </blockquote>
 <p>A less philosophical discussion of 
@@ -466,7 +473,7 @@ if (!doNotTrack) {
 <a href="https://kernel.community/en/learn/module-1/meaning" rel="noopener">Source: Meaning in <em>Kernel</em></a></p>
 <p>&ldquo;The fight for liberty is not conducted with natural language in the form of political rhetoric: it is <strong>hashed out in technical protocols</strong>.&rdquo;</p>
 <p>Interesting quote by Buckminster Fuller (who did a lot of pioneering work on geodesic domes): &ldquo;You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete&rdquo;</p>
-<p>With respect to the argument that &lsquo;the fight for liberty&rsquo; being a fight fought with technical protocols and not natural language is interesting. I think natural language is absolutely necessary and that discourse is pretty similar to change itself. Shared 
+<p>With respect to the argument that &rsquo;the fight for liberty&rsquo; being a fight fought with technical protocols and not natural language is interesting. I think natural language is absolutely necessary and that discourse is pretty similar to change itself. Shared 
 
 
 <a href="/thoughts/terminology" rel="noopener" class="internal-link" data-src="/thoughts/terminology">terminology</a> and 
@@ -477,7 +484,7 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/praxis" rel="noopener" class="internal-link" data-src="/thoughts/praxis">praxis</a> debate, too many layers of abstractions on theory that is no longer grounded in practice becomes useless unless applied. The arguments then occur in the abstract definitions of the labels and less so how they actually apply.</p>
-
+ 
 
     </article>
     <hr/>

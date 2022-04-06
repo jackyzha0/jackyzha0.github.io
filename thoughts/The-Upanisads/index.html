@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -457,13 +457,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>A collection of texts composed over several centuries (the oldest from ca. 700-300 BCE) and in various regions (northern India, ranging from the upper Indus valley to the lower Ganges).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>A collection of texts composed over several centuries (the oldest from ca. 700-300 BCE) and in various regions (northern India, ranging from the upper Indus valley to the lower Ganges).</p>
 <p>Two interpretations</p>
 <ol>
 <li>Upa(near)+ ni(down) + sad(sit): &ldquo;to sit close beside&rdquo; The secret teaching passed orally from teacher to disciple</li>
@@ -513,7 +520,7 @@ if (!doNotTrack) {
 
 <a href="/thoughts/death" rel="noopener" class="internal-link" data-src="/thoughts/death">Death</a> is described as the dissolution of vital functions (prāna) of the mind and body which then culminates in pure awareness and transitioning to rebirth</p>
 <p>Life, then, is impelled by desire which leads to rebirth according to karma. Death is liberation for those who have freed themselves from desire (and achieve nothing but <em>brahman</em> or pure light)</p>
-
+ 
 
     </article>
     <hr/>

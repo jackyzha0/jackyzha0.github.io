@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -454,13 +454,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>NOTHING STOPS</p>
 </blockquote>
 <p><em>It was so heavy-handed and so stupid, hitting the nail on the head so hard that it rang like a bell. Nothing stops.</em> &ndash; 
@@ -487,7 +494,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>&ldquo;The ultimate touchstone is witness, the privilege of having been seen by someone, and the equal privilege of being granted the sight of the essence of another, to have walked with them, and to have believed in them, and sometimes, just to have accompanied them, for however brief a span, on a journey impossible to accomplish alone&rdquo; &ndash; David Whyte</p>
 </blockquote>
-<p><em>Nothing stops</em> isn&rsquo;t a statement about how nothing matters. Rather, it is a call to spent time on what does matter. As Patti Smith said when discussing William Blake and her creative influences, &ldquo;Who are the people, ideas, and books that magnify your spirit? Find them, hold on to them, and visit them often.&quot;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p><em>Nothing stops</em> isn&rsquo;t a statement about how nothing matters. Rather, it is a call to spent time on what does matter. As Patti Smith said when discussing William Blake and her creative influences, &ldquo;Who are the people, ideas, and books that magnify your spirit? Find them, hold on to them, and visit them often.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <p>In the lifespan of the universe, how lucky are we to share our lives together?</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -520,7 +527,7 @@ if (!doNotTrack) {
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

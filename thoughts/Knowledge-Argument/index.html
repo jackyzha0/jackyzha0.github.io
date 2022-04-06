@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -463,13 +463,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <h3 id="frank-jacksons-knowledge-argument">Frank Jackson&rsquo;s Knowledge Argument</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="frank-jacksons-knowledge-argument">Frank Jackson&rsquo;s Knowledge Argument</h3>
 <ul>
 <li>Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV. Through this, she learns everything there is to know about the physical nature of the world, including all there is to know about the causal and relational facts consequent upon all this, including of course functional roles.</li>
 <li>If physicalism is true, she knows all there is to know.</li>
@@ -547,14 +554,14 @@ if (!doNotTrack) {
 <li>This particular item of knowledge about <em>B</em> is inaccessible to <em>A</em> <em>because</em> <em>A</em> never had experiences of <em>Q</em> herself</li>
 </ul>
 <p>This is quite similar to Thomas Nagel&rsquo;s Bat Argument<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Despite everything that Mary knows about seeing colour, she doesn&rsquo;t know what it is like to <em>see</em> colour.</p>
-<p>Specifically, the Knowledge Argument relies on knowledge that is explicit or codified and can be communicated via language. I argue that, conceptually, one cannot &lsquo;know&rsquo; all there is to know about seeing colour through purely linguistically communicated language. I refer to this &lsquo;linguistically unknowable&rsquo; knowledge as tacit knowledge.</p>
+<p>Specifically, the Knowledge Argument relies on knowledge that is explicit or codified and can be communicated via language. I argue that, conceptually, one cannot &lsquo;know&rsquo; all there is to know about seeing colour through purely linguistically communicated language. I refer to this &rsquo;linguistically unknowable&rsquo; knowledge as tacit knowledge.</p>
 <p>We first examine three different kinds of knowledge<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>:</p>
 <ol>
 <li>Acquaintance knowledge: we get to know the characters of others (like friends) by being around them. This is a form of tacit knowledge.</li>
 <li>Knowledge-that: propositional knowledge, facts about the world obtained through reading, talking, and consuming content. This can be linguistically communicated.</li>
 <li>Knowledge-how: truly knowing how to do something, speaking, reading, etc. This is a form of tacit knowledge.</li>
 </ol>
-<p>My position is that knowledge-how <em>cannot</em> be learned through only knowledge-that. Ryle calls this the Sufficiency Argument: &ldquo;how could propositional knowledge be sufficient for knowing how to do something?&quot;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>My position is that knowledge-how <em>cannot</em> be learned through only knowledge-that. Ryle calls this the Sufficiency Argument: &ldquo;how could propositional knowledge be sufficient for knowing how to do something?&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>From this list above, knowledge-that is the only form of transferrable or communicable knowledge. Knowledge-how is a form of tacit knowledge which is inexpressible via language. Knowledge-how, by definition, is only acquired through practical experience in the relevant context. To attempt to reconstruct knowledge-how using knowledge-that is to build a 
 
 
@@ -588,7 +595,7 @@ if (!doNotTrack) {
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

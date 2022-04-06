@@ -73,7 +73,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -449,27 +449,34 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
 
 <a href="https://www.newyorker.com/science/maria-konnikova/social-media-affect-math-dunbar-number-friendships" rel="noopener">Source: The Limits of Friendship by <em>Maria Konnikova</em></a></p>
 <p>
 
 <img src="/thoughts/images/dunbar.png" alt=""  /></p>
 <p>There&rsquo;s only so big a social group can get before it decays into smaller ones.</p>
-<p>Social Brain Hypothesis → primates have large brains because they live in socially complex societies: the larger the group, the larger the brain</p>
+<p>Social Brain Hypothesis -&gt; primates have large brains because they live in socially complex societies: the larger the group, the larger the brain</p>
 <p>Applied to humans, Dunbar computed a theoretical maximum of 150 for human social groups.</p>
 <p>A range (by a factor of 3)</p>
 <ol>
-<li>Casual Friends → 150</li>
-<li>&lsquo;Dinner&rsquo; Friends → 50</li>
-<li>Close Friends → 15</li>
-<li>Intimate Friends → 5</li>
+<li>Casual Friends -&gt; 150</li>
+<li>&lsquo;Dinner&rsquo; Friends -&gt; 50</li>
+<li>Close Friends -&gt; 15</li>
+<li>Intimate Friends -&gt; 5</li>
 </ol>
 <p>Can we scale trust beyond the Dunbar number? Curious if this is what makes large orgs so sluggish and boring to work at. This applies to scaling orgs and projects too. How do we ensure that 
 
@@ -478,8 +485,8 @@ if (!doNotTrack) {
 <p>What about in 
 
 
-<a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a>? Structure helps us scale beyond &lsquo;natural&rsquo; community sizes but this seems difficult in a group where the ethos is v much against said centralized structure.</p>
-
+<a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a>? Structure helps us scale beyond &rsquo;natural&rsquo; community sizes but this seems difficult in a group where the ethos is v much against said centralized structure.</p>
+ 
 
     </article>
     <hr/>

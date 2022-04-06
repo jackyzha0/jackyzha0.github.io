@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -462,13 +462,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don&rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a <strong>failure resume</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> a while ago. It&rsquo;s a list of things that didn&rsquo;t exactly go according to plan, and the lessons learned.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don&rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a <strong>failure resume</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> a while ago. It&rsquo;s a list of things that didn&rsquo;t exactly go according to plan, and the lessons learned.</p>
 <p>The more I think about it, the more I realize that a failure resume is a great way to document all the spectacular ways you&rsquo;ve worked hard towards your own goals and accomplishments. In some ways, it validates your struggle and your effort.</p>
 <p>I&rsquo;ve recently been inspired by both Kate Huang<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and Joice Tang&rsquo;s<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> failure resumes and decided to make my own. What I wanted to try with this failure resume is, rather than focusing on the individual failures themselves, note what I learned from each of them. Hopefully, it&rsquo;ll serve as a powerful reminder to myself of how much I&rsquo;ve struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.</p>
 <p><em>A 2021 update:</em> Keeping a failure resume has let me be so much more ambitious in trying new things and applying for things I would otherwise think I&rsquo;m unqualified to apply for! I&rsquo;m really glad I started this.</p>
@@ -499,7 +506,7 @@ if (!doNotTrack) {
 <p>Rejected from the Delta Fellowship</p>
 </li>
 <li>
-<p>Rejected from ZFellows after they reached out to &lsquo;learn more&rsquo; about my idea</p>
+<p>Rejected from ZFellows after they reached out to &rsquo;learn more&rsquo; about my idea</p>
 </li>
 <li>
 <p>Rejected from the Y. P. Heung Foundation Award</p>
@@ -513,7 +520,7 @@ if (!doNotTrack) {
 <li>
 <p>Rejected from an undergraduate TA position for a CS course</p>
 <ul>
-<li>I really wanted to give TA-ing a shot, especially after hearing almost all friends' positive experiences with it, so I decided to apply to TA a class I had done well in. It was a good reality check to realize that there&rsquo;s more to being a TA than just good grades and the title. Next time I apply, I&rsquo;ll find a course that I&rsquo;m really passionate about and get to know the prof better.</li>
+<li>I really wanted to give TA-ing a shot, especially after hearing almost all friends&rsquo; positive experiences with it, so I decided to apply to TA a class I had done well in. It was a good reality check to realize that there&rsquo;s more to being a TA than just good grades and the title. Next time I apply, I&rsquo;ll find a course that I&rsquo;m really passionate about and get to know the prof better.</li>
 </ul>
 </li>
 <li>
@@ -612,7 +619,7 @@ if (!doNotTrack) {
 </li>
 </ol>
 </section>
-
+ 
 
     </article>
     <hr/>

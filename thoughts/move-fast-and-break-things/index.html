@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -448,13 +448,20 @@ if (!doNotTrack) {
 </ul>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p>To slow down is to end up 
 
 <a href="http://www.paulgraham.com/aord.html" rel="noopener">default dead</a>; the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences. (Jasmine Wang)</p>
@@ -465,9 +472,9 @@ if (!doNotTrack) {
 
 <a href="https://www.dougengelbart.org/content/view/348/000/" rel="noopener">Engelbart</a></p>
 <p>Moving fast but not breaking things</p>
-<p>A activity → core business activity (actual value producing activities)
-B activity → reduce product-cycle time, make faster, smarter, higher-quality A activities (increase velocity)
-C activity → reduce improvement-cycle time, make faster, smarter, higher-quality B activities (increase acceleration)</p>
+<p>A activity -&gt; core business activity (actual value producing activities)
+B activity -&gt; reduce product-cycle time, make faster, smarter, higher-quality A activities (increase velocity)
+C activity -&gt; reduce improvement-cycle time, make faster, smarter, higher-quality B activities (increase acceleration)</p>
 <p>This is exactly what I mean when I talk about &ldquo;bootstrapping.&rdquo; It is a very American term – the image is of someone able to perform the wonderful, impossible trick of pulling himself up by pulling up on his own bootstraps – but the idea is one that we put into practice every time that we &ldquo;boot up&rdquo; a computer. A small bit of code in a permanent read only memory knows how to go out to the disk to get more instructions, that in turn know how do to even more things, such as getting even more instructions. Eventually, this process of using successive steps to lead to ever bigger steps, building on each other, get the whole machine up and running. You start small, and keep leveraging what you know at each stage to solve a bigger and bigger problem.</p>
 <h2 id="the-coming-software-apocalypse">The Coming Software Apocalypse</h2>
 <p>
@@ -478,11 +485,11 @@ C activity → reduce improvement-cycle time, make faster, smarter, higher-quali
 <li>take time to understand the actual tech youre working on and the problems you&rsquo;re trying to solve</li>
 <li>talk it out with people</li>
 </ul>
-<p>“The problem is that software engineers don’t understand the problem they’re trying to solve, and don’t care to,” says Leveson, the MIT software-safety expert. → 
+<p>“The problem is that software engineers don’t understand the problem they’re trying to solve, and don’t care to,” says Leveson, the MIT software-safety expert. -&gt; 
 
 
 <a href="/thoughts/software-and-politics" rel="noopener" class="internal-link" data-src="/thoughts/software-and-politics">software and politics</a></p>
-
+ 
 
     </article>
     <hr/>

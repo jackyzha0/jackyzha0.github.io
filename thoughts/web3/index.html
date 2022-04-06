@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -470,13 +470,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
 <p><strong>Web3 is the open-source ethic extended beyond code as static artifacts but rather as live organisms.</strong></p>
 </blockquote>
 <p>Crypto systems are interesting, they are &ldquo;decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and 
@@ -607,10 +614,10 @@ if (!doNotTrack) {
 <a href="/thoughts/funding" rel="noopener" class="internal-link" data-src="/thoughts/funding">funding</a> (away from corporations and toward individuals).</p>
 <p>Not just providing funding, 4 main value adds</p>
 <ol>
-<li>Earn → get paid to do maintenance work and upkeep of public goods!</li>
-<li>Learn → mentorship from industry leaders and peers</li>
-<li>Connect → creating a community of builders and support network</li>
-<li>Fund → making it easy for developers to support each other</li>
+<li>Earn -&gt; get paid to do maintenance work and upkeep of public goods!</li>
+<li>Learn -&gt; mentorship from industry leaders and peers</li>
+<li>Connect -&gt; creating a community of builders and support network</li>
+<li>Fund -&gt; making it easy for developers to support each other</li>
 </ol>
 <h3 id="golemhttpsbloggolemprojectnetgolem-primer">
 
@@ -619,7 +626,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network</p>
 </blockquote>
-
+ 
 
     </article>
     <hr/>

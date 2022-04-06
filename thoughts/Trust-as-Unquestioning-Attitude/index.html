@@ -72,7 +72,7 @@
   });
 </script>
 <script>
-      const userPref=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark',currentTheme=localStorage.getItem('theme')??userPref,isReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches,lastVisit=localStorage.getItem('lastVisitTime'),now=Date.now();let show='true';if(lastVisit){document.documentElement.setAttribute('visited','true');const a=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&a>5?'true':'false'}document.documentElement.setAttribute('show-animation',show),localStorage.setItem('lastVisitTime',`${now}`),currentTheme&&document.documentElement.setAttribute('saved-theme',currentTheme);const switchTheme=a=>{a.target.checked?(document.documentElement.setAttribute('saved-theme','dark'),localStorage.setItem('theme','dark')):(document.documentElement.setAttribute('saved-theme','light'),localStorage.setItem('theme','light'))};window.addEventListener('DOMContentLoaded',()=>{const a=document.querySelector('#darkmode-toggle');a.addEventListener('change',switchTheme,!1),currentTheme==='dark'&&(a.checked=!0)})
+      const userPref=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark",currentTheme=localStorage.getItem("theme")??userPref,isReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches,lastVisit=localStorage.getItem("lastVisitTime"),now=Date.now();let show="true";if(lastVisit){document.documentElement.setAttribute("visited","true");const e=Math.ceil((now-parseInt(lastVisit))/(1e3*60));show=!isReducedMotion&&e>5?"true":"false"}document.documentElement.setAttribute("show-animation",show),localStorage.setItem("lastVisitTime",`${now}`),currentTheme&&document.documentElement.setAttribute("saved-theme",currentTheme);const switchTheme=e=>{e.target.checked?(document.documentElement.setAttribute("saved-theme","dark"),localStorage.setItem("theme","dark")):(document.documentElement.setAttribute("saved-theme","light"),localStorage.setItem("theme","light"))};window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector("#darkmode-toggle");e.addEventListener("change",switchTheme,!1),currentTheme==="dark"&&(e.checked=!0)})
     </script>
     <script>
       const fetchData = Promise.all([
@@ -453,13 +453,20 @@ if (!doNotTrack) {
       </aside>
       
       
-      
-      
-      
-      
-      
-      
-      <p>Explain how Nguyen&rsquo;s account of trust as an unquestioning attitude entails that we integrate objects into our own agency.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Explain how Nguyen&rsquo;s account of trust as an unquestioning attitude entails that we integrate objects into our own agency.</p>
 <p>A good answer to this question will include an explanation of what it means for trust to be an unquestioning attitude, a clarification of why we trust objects given this account, and a statement of what it means to integrate objects into our own agency.</p>
 <hr>
 <p>Nguyen&rsquo;s theory of the form of trust is the unquestioning attitude. Let us break down this meaning-laden phrase.</p>
@@ -470,7 +477,7 @@ if (!doNotTrack) {
 <p>We then turn to Clark and Chalmer&rsquo;s Extended Mind Hypothesis. Specifically, the parity principle: if an external resource plays the same functional role in supporting action as an action-supporting internal resource that is uncontroversially cognitive, then the external resource is part of the cognitive system of the agent.</p>
 <p>One trusts their digital photo albums like they would their own memory &ndash; often treating it like a part of our extended mind. When we lose our saved photos, it almost feels as if we&rsquo;ve lost a part of our experience. When this object fails to function in an expected way, we not only feel disappointed but betrayed. To lose trust then, is to shift from the unquestioning state to the endlessly skeptical and suspicious mood.</p>
 <p>Footnote: It is interesting to consider differences between what we are trusting when we trust designed objects (e.g. search engines, devices, websites, etc.) versus non-designed objects (the ground, physics, etc.). I&rsquo;m curious if there are properties of derived trust especially in regards to trusting the object really being a trust in its designer (trusting the engineers at Apple versus the iPhone itself). Does this have relation to non-designed objects like the Earth? Does this lead to the religious attempts to describe everything to ever exist as designed by God?</p>
-
+ 
 
     </article>
     <hr/>
