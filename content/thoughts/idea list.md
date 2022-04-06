@@ -6,6 +6,12 @@ tags:
 - technical
 ---
 
+-   baba is you but for browser interactions
+	-   data plane is main source of truth
+	-   data inputs like webcam, keyboard, mouse, window size, etc.
+	-   relations are from data plane → data plane (no functions!)
+		- e.g. x bounces off of y
+	-   rendering using canvas (higher performance games/interactions) or plain html elements (UI)
 - data provenance
 	- https://www.cs.cmu.edu/~NatProg/whyline.html
 - how do we design better UI that reflects true application state?

@@ -7,7 +7,28 @@ tags:
 
 Related: [[thoughts/consciousness|consciousness]]
 
+- physics only tells us what it does but not what it is
+- universe can't purely be relational: 
+	- for there to be a relation, there must be two things being related
+	- otherwise, the relation is empty -- a show that goes on without performers, or a castle constructed out of thin air
+	- physical structure must be realized or implemented by some stuff or substance that is itself not purely structure
+	- otherwise there would be no clear difference between physical and mere mathematical structure or between the concrete universe and a mere abstraction
+- to get at the nature of what things are in themselves, is precisely the same reason that physical approaches to consciousness seem doomed to fail
+	- intrinsic natures simply cannot be captured through a purely physical approach
+- russel: neutral monism
+	- reality has a single underlying nature that is neither mental nor physical but capable of being expressed in these two different ways
+	- much like interiors and exteriors, in Russel's account the mental and physical imply and necessitate each other as reflection of a single (hence monistic) nature
+- intrinsic nature argument
+	- eddington argued that there is one thing we know concretely about consciousness: that it is an intrinsic nature
+	- consciousness is a reality that we apprehend directly and without inference
+	- it exists uniquely to and for itself
+- any physical theory of consciousness is forced to take no less than a leap of pure faith from the objetively physical to the subjectively mental -- the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]]
+- materialism -> taking its physical description as the totality is like confusing the map with the territory
+- panpsychism and idealism as two sides to the same thing
+
 ## Horizon Metaphor
+Husserl had no word to denote what is not really an object, but a process of uncovering or displaying potentialities -- thus, the horizon metaphor.
+
 > The existential primacy of consciousness: consciousness in the horizonal sense is not something we have; it's something we *live*
 
 Two conceptions
@@ -80,3 +101,5 @@ Potential solutions
 2. Varela's notion of "mutually generative constraints" towards reciprocal alteration and enrichment of experiential and objective concepts
 	1. Phenomenological reports may help to pick out and ascribe meaning to previously unnoticed neural configurations
 	2. Neurological findings may become an incentive for re-categorization and further development in phenomenological research
+
+These are not 'solutions' to the [[thoughts/Hard problem of consciousness|hard problem]] per-se but rather dissolves it. It does not arise because the physical world is no longer the standard for being, and objectivity is no longer the ultimate standard of method.

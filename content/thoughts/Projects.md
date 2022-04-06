@@ -8,7 +8,7 @@ tags:
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
-## Cursor Chat -- 
+## Cursor Chat -- open source library for digital presence
 
 [GitHub](https://github.com/jackyzha0/cursor-chat), [Demo](https://jzhao.xyz/cursor-chat/)
 

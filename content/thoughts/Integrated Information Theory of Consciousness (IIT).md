@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-First-order sensory theory of [consciousness](thoughts/consciousness.md).
+First-order sensory theory of [consciousness](thoughts/consciousness.md), a form of [[thoughts/Panpsychism|panpsychism]]
 
 > Consciousness *is* integrated information
 

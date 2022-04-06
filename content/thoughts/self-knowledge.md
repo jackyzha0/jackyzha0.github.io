@@ -30,6 +30,8 @@ Opponents Argument
 ## Pratyabhijna Self-awareness
 Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
 
+A form of Cosmopsychism which is in turn a form of ontological idealism
+
 - Ultimate Reality (Śiva)
 	- Consciousness as the infinite potential for any and all manifest worlds
 	- Śiva is like a sculptor, a playwright, or a yogin because he spontaneously creates worlds from within himself
@@ -66,7 +68,7 @@ Argument
 9. Consciousness must be inherently differentiated if it is to account for the differentiated awarenesses observed in the conventional world
 10. Since there is no other viable candidate for the cause of this differentiation, the nature of reality is ultimate consciousness that inherently contains the capacity for the expression of all differentiated awarenesses
 
-'Ill-taught' people satisfy themselves with conventional reality call it 'inert', failing to see it is a subset of Śiva (see: [self-knowledge](thoughts/self-knowledge.md)). "Only consciousness can present itself as precisely what it’s not while still remaining itself"
+'Ill-taught' people satisfy themselves with conventional reality call it 'inert', failing to see it is a subset of Śiva. "Only consciousness can present itself as precisely what it’s not while still remaining itself"
 
 ### The memory argument against Vijñānavādin Buddhists in Utpaladeva’s Pratyabhijñā Corpus
 1. Utpaladeva does not believe that awareness can become an object of another distinct awareness
