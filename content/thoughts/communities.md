@@ -38,3 +38,8 @@ Was called "participation inequality" by researchers at AT&T labs
 though size might just be a proxy for sense of belonging in a group. i.e. if you strongly identify with said group (family) you are more likely to participate and contribute
 
 in larger communities then, the approximately normal distribution of people who are engaged in the community may lead to some type of power law
+
+## Expanding circles of trust
+Getting people sitting on the outside circle to suggest activities that would make them feel included.
+
+Having things be opt-in gives them power
