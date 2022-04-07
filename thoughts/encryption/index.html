@@ -448,6 +448,16 @@ if (!doNotTrack) {
     
 </ul>
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#key-sharing-problem">Key Sharing Problem</a></li>
+    <li><a href="#asymmetric-cryptography">Asymmetric Cryptography</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -484,6 +494,74 @@ if (!doNotTrack) {
 <li>Known-plaintext attack: for some $m$ knows $K_A(m)$</li>
 <li>Chosen-plaintext attack: knows $K_A$ but not $K_B$</li>
 </ol>
+<h2 id="key-sharing-problem">Key Sharing Problem</h2>
+<ul>
+<li>Alice locks the box with her lock and sends it to Bob</li>
+<li>Bob locks the box with his lock and sends it back to Alice</li>
+<li>Alice removes her lock and sends it back to Bob</li>
+<li>Bob removes his lock</li>
+<li>Double Encryption Transfer
+<ul>
+<li>Both parties generate random keys $K_A$ and $K_B$</li>
+<li>Sender sends encrypted message $K_A(m)$</li>
+<li>Receiver encrypts received message and sends it back $K_B(K_A(m))$</li>
+<li>Sender decrypts message and sends it again $K^-<em>{A}(K_B(K_A(m))) = K_B(K^+</em>{A}(K_A(m))) = K_B(m)$ (only valid if operation is associative!)</li>
+<li>Receiver decrypts final message $K^-_{B}(K_B(m)) = m$</li>
+</ul>
+</li>
+</ul>
+<h2 id="asymmetric-cryptography">Asymmetric Cryptography</h2>
+<ul>
+<li>Pair of keys, one for encrypting (public) another for decrypting (private). One is private ($K^-$), the other is public ($K^+$)
+<ul>
+<li>Key property, one key cannot be obtained from the other in reasonable computation time</li>
+</ul>
+</li>
+<li>Two use cases
+<ul>
+<li>Sender encrypts with public key
+<ul>
+<li>Only private key can decrypt it</li>
+<li>Used for confidentiality</li>
+</ul>
+</li>
+<li>Owner encrypts with private key
+<ul>
+<li>Anyone can decrypt as public key is public</li>
+<li>Used for authentication/proof of ownership</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Can theoretically encrypt using private key but anyone with public key can decrypt!</li>
+<li>RSA (Rivest, Shamir, Adelson) Algorithm
+<ul>
+<li>Relies on modular arithmetic
+<ul>
+<li>Unfortunately, also really slow :((</li>
+<li>Encryption/decryption are computation-heavy. Ok for occasional communication but too slow for extensive data transfer</li>
+<li>Good for establishing initial secure connection</li>
+</ul>
+</li>
+<li>Hard to crack because to determine $d$ from $(n, e)$ requires computing factors of $n$ which is a hard problem</li>
+<li>Choose two large primes $p$ and $q$ (1024-bits each)</li>
+<li>Compute $n = pq, z = (p-1)(q-1)$</li>
+<li>Choose $e &lt; n$ that has no common factors with $z$ (commonly 3)</li>
+<li>Choose $d &lt; n$ such that $ed \mod z = 1$</li>
+<li>Public key: $K^+_B=(n,e)$</li>
+<li>Private key: $K^-_B = (n,d)$</li>
+<li>Encrypting is then $encrypt(m) = m^e \mod n$</li>
+<li>Decrypting is then $decrypt(c) = c^d\mod n$</li>
+</ul>
+</li>
+<li>Key exchange using RSA
+<ul>
+<li>If Alice and Bob both know the other&rsquo;s public key, how can they agree on a shared &ldquo;session&rdquo; key?</li>
+<li>Alice chooses key $K_S$ and encrypts it with Bob&rsquo;s public key and Alice&rsquo;s private key $K_A^-(K_B^+(K_S))$</li>
+<li>Bob decrypt&rsquo;s the message using his private key and Alice&rsquo;s public key $K_B^-(K_A^+(K_A^-(K_B^+(K_S)))) = K_S$</li>
+</ul>
+</li>
+</ul>
  
 
     </article>

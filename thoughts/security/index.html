@@ -448,6 +448,25 @@ if (!doNotTrack) {
     
 </ul>
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#internet">Internet</a>
+      <ol>
+        <li><a href="#terminology">Terminology</a></li>
+      </ol>
+    </li>
+    <li><a href="#symmetric-key-cryptography">Symmetric Key Cryptography</a></li>
+    <li><a href="#block-ciphers">Block Ciphers</a></li>
+    <li><a href="#certification-authorities-ca">Certification Authorities (CA)</a></li>
+    <li><a href="#message-digest">Message Digest</a></li>
+    <li><a href="#preventing-replay-attacks">Preventing Replay Attacks</a></li>
+    <li><a href="#hash-functions">Hash Functions</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -574,6 +593,107 @@ if (!doNotTrack) {
 </li>
 <li>Given that Trudy can see all the data, how do we provide confidentiality? <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">Encryption</a>!</li>
 </ul>
+<h2 id="symmetric-key-cryptography">Symmetric Key Cryptography</h2>
+<ul>
+<li>Bob and Alice share same key $K_S$</li>
+<li>Method/algorithm maybe be different (opposite) for decryption but same key is used</li>
+</ul>
+<h2 id="block-ciphers">Block Ciphers</h2>
+<ul>
+<li>Message is broken into blocks (e.g. 64-bits of data)</li>
+<li>Each block is encrypted/decrypted separately</li>
+<li>$2^{64}$ combinations for a 64-bit block!</li>
+<li>Cipher-block chaining
+<ul>
+<li>Do an additional operation with the plaintext</li>
+<li>E.g.
+<ul>
+<li>XOR first block with arbitrary (randomly chosen) number known by both parties</li>
+<li>Following blocks are XOR&rsquo;ed with previous block</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DES
+<ul>
+<li>56-bit symmetric key, 64-bit plaintext input</li>
+<li>No longer considered secure, 56-bit key can be brute forced in &lt;1 day</li>
+<li>3DES is more secure, do it 3 times with 3 different keys</li>
+</ul>
+</li>
+<li>AES
+<ul>
+<li>Also symmetric, replaced DES as NIST standard in 2001</li>
+<li>128-bit block cipher</li>
+<li>128-, 192-, or 256-bit key</li>
+<li>Way more secure than DES
+<ul>
+<li>Brute force decryption that takes 1 second for DES would take 149 trillion years for 128-bit AES</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="certification-authorities-ca">Certification Authorities (CA)</h2>
+<ul>
+<li>Authority of who own&rsquo;s what public keys</li>
+<li>When Bob wants Alice&rsquo;s public key
+<ul>
+<li>Alice provides a certificate</li>
+<li>Certificate is signed by CA</li>
+<li>Bob applies CA&rsquo;s public key to confirm certificate&rsquo;s authenticity</li>
+<li>Certificate contains Alice&rsquo;s public key</li>
+</ul>
+</li>
+</ul>
+<h2 id="message-digest">Message Digest</h2>
+<ul>
+<li>Signature of long messages is computationally expensive</li>
+<li>We can compute a fixed-length &ldquo;fingerprint&rdquo;
+<ul>
+<li>Apply hash function $H$ to message $m$, giving a fixed size message digest, $H(m)$</li>
+</ul>
+</li>
+<li>Signed message digest
+<ul>
+<li>Bob sends message $m$ and signed digest $K_B^-(H(m))$</li>
+<li>Alice receives $m$ and computes $H_{new}(m)$</li>
+<li>Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$</li>
+<li>If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)</li>
+</ul>
+</li>
+<li>Alternative: message authentication code (MAC)
+<ul>
+<li>Add a secret to the end of each message that is also hashed. It is extremely unlikely that anyone who doesn&rsquo;t know the secret to come up with an appropriate hash</li>
+<li>Shared secret $s$</li>
+<li>Hash is computed not on message $m$, but on $m+s$
+<ul>
+<li>Bob sends message $h = H(m + s)$</li>
+<li>Alice receives $(m, h)$ and computes $H(m + s)$</li>
+<li>If $h = H(m+s)$, message is considered signed</li>
+</ul>
+</li>
+<li>Fast because encryption is not necessary</li>
+</ul>
+</li>
+</ul>
+<h2 id="preventing-replay-attacks">Preventing Replay Attacks</h2>
+<ul>
+<li>Nonce - value that will only ever be used once (usually derived from clock time)</li>
+<li>A sort of challenge, Alice wants Bob to prove they have received the nonce by sending them back that same nonce</li>
+<li>Ensures this is a new conversation between Alice and Bob</li>
+</ul>
+<h2 id="hash-functions">Hash Functions</h2>
+<ol>
+<li>Order should matter, should be very unlikely for two messages two have a hash collision</li>
+<li>Examples of good hash functions
+<ol>
+<li>MD5: compute a 128-bit message digest in a 4-step process</li>
+<li>SHA-1: US NIST standard, 160-bit digest</li>
+<li>SHA-256 and SHA-512 are more secure</li>
+</ol>
+</li>
+</ol>
  
 
     </article>
