@@ -1,5 +1,5 @@
 ---
-title: "idealism"
+title: "Idealism"
 date: 2022-04-05
 tags:
 - seed
@@ -7,7 +7,9 @@ tags:
 
 Everything is in the mind. The intrinsic nature of ultimate reality is the mind.
 
-## Pratyabhijna [[thoughts/self-knowledge|Self-awareness]]
+## Pratyabhijna Self-awareness
+On [[thoughts/self-knowledge|Self-knowledge]]
+
 Nondual Śaiva philosophical tradition concerned with articulating and defending the idea that everything is Śiva, as well as the practices that lead to this realization
 
 A form of Cosmopsychism which is in turn a form of [[thoughts/ontology|ontological]] idealism

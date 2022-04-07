@@ -18,7 +18,7 @@ Now with all that stuff out of the way, here's the juicy list you've been waitin
 
 ## 2021
 
-* Stopped sending out newsletter issues :(( Ended up focusing more on longer form writing instead
+* Stopped sending out newsletter issues :(( Ended up focusing more on longer form [[thoughts/writing|writing]] instead
 
 * Ghosted by both Contrary Build and Contrary Fellowship
 

@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+[[thoughts/Transport Layer|Transport layer protocol]]
+
 When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned
 
 ## Overview

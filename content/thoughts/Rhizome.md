@@ -33,7 +33,7 @@ Longer-term research project/experiment around building multi-writer decentraliz
 -   plug and play auth system
 	-   TODO: how does this integrate
 -   single priv / pub key pair
-	-   how do you do encryption through message queues? priv keys?
+	-   how do you do [[thoughts/encryption|encryption]] through message queues? priv keys?
 -   hash of pub key → id
 -   encrypts a data block on computer containing outgoing message queues
 -   NAT for local replication

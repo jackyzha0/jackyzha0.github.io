@@ -79,7 +79,7 @@ Is it possible to create dynamic spatial media? Virtual museums of information? 
 
 Can we create a [memory palace](thoughts/memory%20palace.md) for people to walk through to recall information and learn new information?
 
-### Writing (person-to-media)
+### [Writing](thoughts/writing) (person-to-media)
 As it stands, writing is just manipulation of symbols. Even for static materials, the symbols just are more literal representations. Coding still, is manipulating indirect [symbolic systems](thoughts/symbolic%20system.md) and [representations](thoughts/representation.md)
 
 Can we show multiple representations of dynamic behaviour? Can we transform between different representations easily?

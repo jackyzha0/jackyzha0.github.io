@@ -6,6 +6,8 @@ tags:
 - technical
 ---
 
+- phone as wiimote
+- hand position to gesture toolkit
 -   baba is you but for browser interactions
 	-   data plane is main source of truth
 		- optionally replicated using [[thoughts/Rhizome|Rhizome]]
