@@ -6,9 +6,19 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>idealism</title>
+      <title>Encryption</title>
+      <link>https://jzhao.xyz/thoughts/encryption/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/encryption/</guid>
+      <description>An encryption algorithm comprises
+ a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Language</description>
+    </item>
+    
+    <item>
+      <title>Idealism</title>
       <link>https://jzhao.xyz/thoughts/idealism/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
@@ -260,7 +270,8 @@ Aims to lead a life characterized by</description>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/TCP/</guid>
-      <description>When a host requires assurance that the remote end has actually received the data it sends.</description>
+      <description>[[thoughts/Transport Layer|Transport layer protocol]]
+When a host requires assurance that the remote end has actually received the data it sends.</description>
     </item>
     
     <item>

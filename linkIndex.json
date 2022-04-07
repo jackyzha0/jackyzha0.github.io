@@ -263,6 +263,11 @@
         },
         {
           "source": "/posts/2020",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/2020",
           "target": "/thoughts/play",
           "text": "playful"
         },
@@ -273,6 +278,11 @@
         }
       ],
       "/posts/2021": [
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
         {
           "source": "/posts/2021",
           "target": "/books",
@@ -307,6 +317,11 @@
           "source": "/posts/2021",
           "target": "/thoughts/play",
           "text": "local abundance"
+        },
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/writing",
+          "text": "writing"
         }
       ],
       "/posts/Me-my-selves-and-I": [
@@ -314,6 +329,13 @@
           "source": "/posts/Me-my-selves-and-I",
           "target": "/thoughts/trust",
           "text": "trust"
+        }
+      ],
+      "/posts/a-failure-resume": [
+        {
+          "source": "/posts/a-failure-resume",
+          "target": "/thoughts/writing",
+          "text": "writing"
         }
       ],
       "/posts/ai-systems": [
@@ -457,6 +479,11 @@
         },
         {
           "source": "/posts/digital-gardening",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/digital-gardening",
           "target": "/posts/2020",
           "text": "2020"
         },
@@ -464,6 +491,11 @@
           "source": "/posts/digital-gardening",
           "target": "/posts/collaborative-thinking",
           "text": "base of knowledge"
+        },
+        {
+          "source": "/posts/digital-gardening",
+          "target": "/thoughts/writing",
+          "text": "Writing"
         },
         {
           "source": "/posts/digital-gardening",
@@ -573,6 +605,11 @@
           "source": "/posts/networked-thought",
           "target": "/thoughts/ephemereal-content",
           "text": "ephemereal already"
+        },
+        {
+          "source": "/posts/networked-thought",
+          "target": "/thoughts/writing",
+          "text": "Writing"
         },
         {
           "source": "/posts/networked-thought",
@@ -978,6 +1015,11 @@
           "source": "/thoughts/Application-Layer",
           "target": "/thoughts/human-computer-interaction",
           "text": "human-computer interaction"
+        },
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
         }
       ],
       "/thoughts/Archipelago": [
@@ -2183,6 +2225,11 @@
       "/thoughts/Rhizome": [
         {
           "source": "/thoughts/Rhizome",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
+        },
+        {
+          "source": "/thoughts/Rhizome",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
         }
@@ -2290,6 +2337,13 @@
           "source": "/thoughts/Stream-of-Consciousness",
           "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
           "text": "NCC"
+        }
+      ],
+      "/thoughts/TCP": [
+        {
+          "source": "/thoughts/TCP",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport layer protocol"
         }
       ],
       "/thoughts/The-Dragon-and-the-bridge": [
@@ -2830,6 +2884,11 @@
           "source": "/thoughts/bandwidth",
           "target": "/thoughts/bandwidth",
           "text": "bandwidth"
+        },
+        {
+          "source": "/thoughts/bandwidth",
+          "target": "/thoughts/writing",
+          "text": "writing"
         }
       ],
       "/thoughts/bias": [
@@ -4063,6 +4122,11 @@
         },
         {
           "source": "/thoughts/friction",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/thoughts/friction",
           "target": "/thoughts/digital-mindfulness",
           "text": "digital mindfulness"
         }
@@ -4629,7 +4693,7 @@
         {
           "source": "/thoughts/idealism",
           "target": "/thoughts/self-knowledge",
-          "text": "Self-awareness"
+          "text": "Self-knowledge"
         },
         {
           "source": "/thoughts/idealism",
@@ -4782,6 +4846,11 @@
         }
       ],
       "/thoughts/information-professions": [
+        {
+          "source": "/thoughts/information-professions",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
         {
           "source": "/thoughts/information-professions",
           "target": "/thoughts/desire-paths",
@@ -5000,6 +5069,11 @@
         },
         {
           "source": "/thoughts/intentionality",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/thoughts/intentionality",
           "target": "/thoughts/Chinese-room-argument",
           "text": "Chinese room argument"
         },
@@ -5077,6 +5151,11 @@
         },
         {
           "source": "/thoughts/interaction-design",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/thoughts/interaction-design",
           "target": "/thoughts/symbolic-system",
           "text": "symbolic systems"
         },
@@ -5118,6 +5197,11 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/peer-to-peer",
           "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/security",
+          "text": "security"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -6219,6 +6303,11 @@
         },
         {
           "source": "/thoughts/progress",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/thoughts/progress",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "extend our mind"
         },
@@ -6744,6 +6833,21 @@
           "source": "/thoughts/security",
           "target": "/thoughts/game-theory",
           "text": "game theory"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/internet-computing",
+          "text": "the internet"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing stack"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/encryption",
+          "text": "Encryption"
         }
       ],
       "/thoughts/self-knowledge": [
@@ -7633,6 +7737,33 @@
           "text": "attention economy"
         }
       ],
+      "/thoughts/writing": [
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/knowledge-distillation",
+          "text": "knowledge distillation"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/posts/networked-thought",
+          "text": "networked"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/contact-language",
+          "text": "contact language"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/context",
+          "text": "contexts"
+        }
+      ],
       "/thoughts/zero-sum": [
         {
           "source": "/thoughts/zero-sum",
@@ -7948,6 +8079,11 @@
           "source": "/thoughts/tools-for-thought",
           "target": "/posts/networked-thought",
           "text": "Networked thought"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/posts/networked-thought",
+          "text": "networked"
         }
       ],
       "/posts/new-words": [
@@ -9733,6 +9869,11 @@
           "text": "Transport Layer"
         },
         {
+          "source": "/thoughts/TCP",
+          "target": "/thoughts/Transport-Layer",
+          "text": "Transport layer protocol"
+        },
+        {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Transport-Layer",
           "text": "Transport Layer"
@@ -10577,6 +10718,11 @@
           "source": "/thoughts/boundary-object",
           "target": "/thoughts/contact-language",
           "text": "contact language"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/contact-language",
+          "text": "contact language"
         }
       ],
       "/thoughts/context": [
@@ -10659,6 +10805,11 @@
           "source": "/thoughts/tools-for-thought",
           "target": "/thoughts/context",
           "text": "context"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/context",
+          "text": "contexts"
         }
       ],
       "/thoughts/creation-vs-maintenance": [
@@ -11323,6 +11474,23 @@
           "source": "/thoughts/the-Self",
           "target": "/thoughts/emptiness",
           "text": "empty"
+        }
+      ],
+      "/thoughts/encryption": [
+        {
+          "source": "/thoughts/Application-Layer",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
+        },
+        {
+          "source": "/thoughts/Rhizome",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/encryption",
+          "text": "Encryption"
         }
       ],
       "/thoughts/ephemereal-content": [
@@ -12800,6 +12968,16 @@
           "source": "/thoughts/search",
           "target": "/thoughts/internet-computing",
           "text": "internet computing"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/internet-computing",
+          "text": "the internet"
+        },
+        {
+          "source": "/thoughts/security",
+          "target": "/thoughts/internet-computing",
+          "text": "internet computing stack"
         }
       ],
       "/thoughts/interoperability": [
@@ -12910,6 +13088,11 @@
         },
         {
           "source": "/thoughts/research-debt",
+          "target": "/thoughts/knowledge-distillation",
+          "text": "knowledge distillation"
+        },
+        {
+          "source": "/thoughts/writing",
           "target": "/thoughts/knowledge-distillation",
           "text": "knowledge distillation"
         }
@@ -14352,6 +14535,11 @@
       ],
       "/thoughts/security": [
         {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/security",
+          "text": "security"
+        },
+        {
           "source": "/thoughts/kernel",
           "target": "/thoughts/security",
           "text": "Security"
@@ -14371,7 +14559,7 @@
         {
           "source": "/thoughts/idealism",
           "target": "/thoughts/self-knowledge",
-          "text": "Self-awareness"
+          "text": "Self-knowledge"
         },
         {
           "source": "/thoughts/selfish",
@@ -14693,6 +14881,11 @@
         },
         {
           "source": "/thoughts/representation",
+          "target": "/thoughts/terminology",
+          "text": "terminology"
+        },
+        {
+          "source": "/thoughts/writing",
           "target": "/thoughts/terminology",
           "text": "terminology"
         }
@@ -15300,6 +15493,73 @@
           "text": "workflows"
         }
       ],
+      "/thoughts/writing": [
+        {
+          "source": "/posts/2020",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/2021",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/a-failure-resume",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/digital-gardening",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/posts/digital-gardening",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/posts/networked-thought",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/thoughts/bandwidth",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/thoughts/friction",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/thoughts/information-professions",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/thoughts/intentionality",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
+          "source": "/thoughts/interaction-design",
+          "target": "/thoughts/writing",
+          "text": "Writing"
+        },
+        {
+          "source": "/thoughts/progress",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        }
+      ],
       "/thoughts/zero-sum": [
         {
           "source": "/posts/collaborative-thinking",
@@ -15589,6 +15849,11 @@
     },
     {
       "source": "/posts/2020",
+      "target": "/thoughts/writing",
+      "text": "writing"
+    },
+    {
+      "source": "/posts/2020",
       "target": "/thoughts/play",
       "text": "playful"
     },
@@ -15596,6 +15861,11 @@
       "source": "/posts/2020",
       "target": "/thoughts/feedback-loops",
       "text": "feedback loops"
+    },
+    {
+      "source": "/posts/2021",
+      "target": "/thoughts/writing",
+      "text": "writing"
     },
     {
       "source": "/posts/2021",
@@ -15633,9 +15903,19 @@
       "text": "local abundance"
     },
     {
+      "source": "/posts/2021",
+      "target": "/thoughts/writing",
+      "text": "writing"
+    },
+    {
       "source": "/posts/Me-my-selves-and-I",
       "target": "/thoughts/trust",
       "text": "trust"
+    },
+    {
+      "source": "/posts/a-failure-resume",
+      "target": "/thoughts/writing",
+      "text": "writing"
     },
     {
       "source": "/posts/ai-systems",
@@ -15769,6 +16049,11 @@
     },
     {
       "source": "/posts/digital-gardening",
+      "target": "/thoughts/writing",
+      "text": "writing"
+    },
+    {
+      "source": "/posts/digital-gardening",
       "target": "/posts/2020",
       "text": "2020"
     },
@@ -15776,6 +16061,11 @@
       "source": "/posts/digital-gardening",
       "target": "/posts/collaborative-thinking",
       "text": "base of knowledge"
+    },
+    {
+      "source": "/posts/digital-gardening",
+      "target": "/thoughts/writing",
+      "text": "Writing"
     },
     {
       "source": "/posts/digital-gardening",
@@ -15881,6 +16171,11 @@
       "source": "/posts/networked-thought",
       "target": "/thoughts/ephemereal-content",
       "text": "ephemereal already"
+    },
+    {
+      "source": "/posts/networked-thought",
+      "target": "/thoughts/writing",
+      "text": "Writing"
     },
     {
       "source": "/posts/networked-thought",
@@ -16266,6 +16561,11 @@
       "source": "/thoughts/Application-Layer",
       "target": "/thoughts/human-computer-interaction",
       "text": "human-computer interaction"
+    },
+    {
+      "source": "/thoughts/Application-Layer",
+      "target": "/thoughts/encryption",
+      "text": "encryption"
     },
     {
       "source": "/thoughts/Archipelago",
@@ -17359,6 +17659,11 @@
     },
     {
       "source": "/thoughts/Rhizome",
+      "target": "/thoughts/encryption",
+      "text": "encryption"
+    },
+    {
+      "source": "/thoughts/Rhizome",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
     },
@@ -17456,6 +17761,11 @@
       "source": "/thoughts/Stream-of-Consciousness",
       "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
       "text": "NCC"
+    },
+    {
+      "source": "/thoughts/TCP",
+      "target": "/thoughts/Transport-Layer",
+      "text": "Transport layer protocol"
     },
     {
       "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -17946,6 +18256,11 @@
       "source": "/thoughts/bandwidth",
       "target": "/thoughts/bandwidth",
       "text": "bandwidth"
+    },
+    {
+      "source": "/thoughts/bandwidth",
+      "target": "/thoughts/writing",
+      "text": "writing"
     },
     {
       "source": "/thoughts/bias",
@@ -19069,6 +19384,11 @@
     },
     {
       "source": "/thoughts/friction",
+      "target": "/thoughts/writing",
+      "text": "Writing"
+    },
+    {
+      "source": "/thoughts/friction",
       "target": "/thoughts/digital-mindfulness",
       "text": "digital mindfulness"
     },
@@ -19605,7 +19925,7 @@
     {
       "source": "/thoughts/idealism",
       "target": "/thoughts/self-knowledge",
-      "text": "Self-awareness"
+      "text": "Self-knowledge"
     },
     {
       "source": "/thoughts/idealism",
@@ -19716,6 +20036,11 @@
       "source": "/thoughts/information-foraging",
       "target": "/thoughts/rationality",
       "text": "Bounded rationality is at play here"
+    },
+    {
+      "source": "/thoughts/information-professions",
+      "target": "/thoughts/writing",
+      "text": "writing"
     },
     {
       "source": "/thoughts/information-professions",
@@ -19944,6 +20269,11 @@
     },
     {
       "source": "/thoughts/intentionality",
+      "target": "/thoughts/writing",
+      "text": "writing"
+    },
+    {
+      "source": "/thoughts/intentionality",
       "target": "/thoughts/Chinese-room-argument",
       "text": "Chinese room argument"
     },
@@ -20019,6 +20349,11 @@
     },
     {
       "source": "/thoughts/interaction-design",
+      "target": "/thoughts/writing",
+      "text": "Writing"
+    },
+    {
+      "source": "/thoughts/interaction-design",
       "target": "/thoughts/symbolic-system",
       "text": "symbolic systems"
     },
@@ -20056,6 +20391,11 @@
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/peer-to-peer",
       "text": "peer-to-peer"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/security",
+      "text": "security"
     },
     {
       "source": "/thoughts/internet-computing",
@@ -21069,6 +21409,11 @@
     },
     {
       "source": "/thoughts/progress",
+      "target": "/thoughts/writing",
+      "text": "writing"
+    },
+    {
+      "source": "/thoughts/progress",
       "target": "/thoughts/Extended-Mind-Hypothesis",
       "text": "extend our mind"
     },
@@ -21556,6 +21901,21 @@
       "source": "/thoughts/security",
       "target": "/thoughts/game-theory",
       "text": "game theory"
+    },
+    {
+      "source": "/thoughts/security",
+      "target": "/thoughts/internet-computing",
+      "text": "the internet"
+    },
+    {
+      "source": "/thoughts/security",
+      "target": "/thoughts/internet-computing",
+      "text": "internet computing stack"
+    },
+    {
+      "source": "/thoughts/security",
+      "target": "/thoughts/encryption",
+      "text": "Encryption"
     },
     {
       "source": "/thoughts/self-knowledge",
@@ -22381,6 +22741,31 @@
       "source": "/thoughts/workflows",
       "target": "/thoughts/attention-economy",
       "text": "attention economy"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/knowledge-distillation",
+      "text": "knowledge distillation"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/posts/networked-thought",
+      "text": "networked"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/terminology",
+      "text": "terminology"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/contact-language",
+      "text": "contact language"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/context",
+      "text": "contexts"
     },
     {
       "source": "/thoughts/zero-sum",

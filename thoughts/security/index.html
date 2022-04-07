@@ -440,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">Security</h1>
     <article>
       <p class="meta">
-          Last updated February 15, 2022
+          Last updated April 7, 2022
       </p>
       <ul class="tags">
     
@@ -462,6 +462,72 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 <p>
 
 <a href="https://kernel.community/en/learn/module-1/playdough-protocols" rel="noopener">Source: Playdough Protocols in <em>Kernel</em></a></p>
@@ -472,6 +538,42 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/game-theory" rel="noopener" class="internal-link" data-src="/thoughts/game-theory">game theory</a>.</p>
+<h2 id="internet">Internet</h2>
+<p>On security in <a href="/thoughts/internet-computing" rel="noopener" class="internal-link" data-src="/thoughts/internet-computing">the internet</a></p>
+<p>Main excuse: &ldquo;when $x$ was designed, there were only a few players and they all know and trusted each other&rdquo;</p>
+<blockquote>
+<p>&ldquo;Secure&rdquo; web servers are the equivalent of heavy armoured cars. The problem is, they are being used to transfer rolls of coins and checks written in crayon by people on park benches to merchants doing business in cardboard boxes from beneath highway bridges. Further, the roads are subject to random detours, anyone with a screwdriver can control the traffic lights, and there are no police. &ndash; Garfinkel, Spafford, &ldquo;Web Security and Commerce&rdquo;</p>
+</blockquote>
+<p>A lot of the internet is based on good faith and relying on users to be good actors</p>
+<p>What level of the <a href="/thoughts/internet-computing" rel="noopener" class="internal-link" data-src="/thoughts/internet-computing">internet computing stack</a> should be responsible for security? Options:</p>
+<ul>
+<li>New network-layer protocol</li>
+<li>New transport-layer protocol</li>
+<li>New &lsquo;pseudo-layer&rsquo; between transport and application (SSL, TLS)</li>
+<li>Responsibility of the application (SSH)</li>
+</ul>
+<h3 id="terminology">Terminology</h3>
+<ul>
+<li>confidentiality: only the sender and the intended receiver should &ldquo;understand&rdquo; message contents</li>
+<li>authentication: the sender and receiver want to confirm each other&rsquo;s identity</li>
+<li>message integrity: the sender and receiver want to ensure that the message is not altered without detection</li>
+<li>access and availability: services must be accessible and available to users</li>
+<li>Actors: can be people or entities
+<ul>
+<li>Alice, Bob: want to communicate securely</li>
+<li>Trudy: intruder, may
+<ul>
+<li>eavesdrop: intercept messages</li>
+<li>delete/add messages</li>
+<li>impersonation: can fake source</li>
+<li>hijacking: &rsquo;take over&rsquo; ongoing connection</li>
+<li>denial of service: prevent service from being used by others</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Given that Trudy can see all the data, how do we provide confidentiality? <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">Encryption</a>!</li>
+</ul>
  
 
     </article>
@@ -488,6 +590,11 @@ if (!doNotTrack) {
     
     
     
+        
+        <li>
+            <a href="/thoughts/internet-computing">Internet Computing</a>
+        </li>
+        
         
         <li>
             <a href="/thoughts/kernel">Kernel Curriculum</a>

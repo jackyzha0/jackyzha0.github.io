@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>idealism</title>
+      <title>Encryption</title>
+      <link>https://jzhao.xyz/thoughts/encryption/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/encryption/</guid>
+      <description>An encryption algorithm comprises
+ a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Language</description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://jzhao.xyz/thoughts/writing/</link>
+      <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/writing/</guid>
+      <description>Why write?
+Writing as crystallized thought, a way of expressing the labyrinth of interconnected, messy, and many time incoherent ideas in my mind.</description>
+    </item>
+    
+    <item>
+      <title>Idealism</title>
       <link>https://jzhao.xyz/thoughts/idealism/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       
@@ -279,7 +299,8 @@ Aims to lead a life characterized by</description>
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/TCP/</guid>
-      <description>When a host requires assurance that the remote end has actually received the data it sends.</description>
+      <description>[[thoughts/Transport Layer|Transport layer protocol]]
+When a host requires assurance that the remote end has actually received the data it sends.</description>
     </item>
     
     <item>
@@ -2213,7 +2234,7 @@ The universal message bus.</description>
       <pubDate>Tue, 21 Sep 2021 09:51:49 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/intentionality/</guid>
-      <description>intentions exhibit cognitive inertia ( self-trust) intentionality is derived  same reason why computer-generated art or AI-assisted writing would not be considered &amp;rsquo;novel&amp;rsquo; or &amp;lsquo;intelligent&amp;rsquo;.</description>
+      <description>intentions exhibit cognitive inertia ( self-trust) intentionality is derived  same reason why computer-generated art or AI-assisted [[thoughts/writing|writing]] would not be considered &amp;rsquo;novel&amp;rsquo; or &amp;lsquo;intelligent&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -2923,7 +2944,7 @@ Partly works because we can utilize collaborative thinking.</description>
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>baba is you but for browser interactions  data plane is main source of truth  optionally replicated using [[thoughts/Rhizome|Rhizome]]   data inputs like webcam, keyboard, mouse, window size, etc.</description>
+      <description>phone as wiimote hand position to gesture toolkit baba is you but for browser interactions  data plane is main source of truth  optionally replicated using [[thoughts/Rhizome|Rhizome]]   data inputs like webcam, keyboard, mouse, window size, etc.</description>
     </item>
     
     <item>
