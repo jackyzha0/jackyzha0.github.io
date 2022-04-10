@@ -8,25 +8,56 @@ tags:
 Related: [[thoughts/consciousness|consciousness]], [[thoughts/monism#Neutral Monism|neutral monism]]
 
 ## Primacy of Consciousness
+PHIL450A Paper 3
+
 > Is consciousness primary?
 
-- What does it mean for consciousness to be primary?
-	- to be the first and foremost
-	- Explaining it with life-world: two conceptions on the world and the universe
-		- Define the life-world as the space of meaning within which anything is intelligible and thinkable
-		- Natural Science: the universe contains the life-world
-		- Philosophy: the life-world contains the universe; the universe is always disclosed to us from within the life-world
-- Arguing that consciousness is existentially primary and not ontologically secondary to matter.
-	- Sartre: “consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual”
-	- any physical theory of consciousness is forced to take no less than a leap of pure faith from the objectively physical to the subjectively mental -- the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]]
-- Existentially primary
-	- They have forgotten that objective knowledge is ‘made possible’ by carving the lacuna of first person experience within it… scientists who believe that solving many such “easy problems” about consciousness will finally clear up the harder problem of its physical origin, look like somebody who believes one can finally reach the horizon by walking far enough
-	- In the same way as the walker ignores the category gap between a line _in_ space and an apparent line seen _through_ space, these scientists ignore the category gap between the exclusively structural connections provided by science and the absolute and the absolute of experience analyzed through a structured framework
-- horizon metaphor
-- intrinsic nature argument
-	- eddington argued that there is one thing we know concretely about consciousness: that it is an intrinsic nature
-	- consciousness is a reality that we apprehend directly and without inference
-	- it exists uniquely to and for itself
+For something to be primary is for it to be the first and foremost; a prior for all else that comes after it. First, I show how our current understanding of the physical world centres around the primacy of the material. Then, I claim that consciousness is primary – namely existentially, transcendentally, and epistemologically and finally posit a version of neutral monism as a stance on the primacy of consciousness.
+
+Historically, scientific materialists have argued that science and the scientific method enables us to get ‘outside of experience’ and grasp the world in and of itself. Yet, subjective experience is present at every step. When we observe the cosmos, we do so by formulating theories and models about how we think they work. All of this depends on the subjective experience. We look at the results of our complex telescopic instruments and formulate theories based off of what we have learned and have observed in the world. We pull scientific models from our experiments and observations but again, these are models and idealisations, not actual instantiations of ’things’ in the world.
+
+Gottfried Leibniz, Immanuel Kant, Arthur Schopenhauer, and Bertrand Russel were all strong believers that a fully physical account of the world actually offers no explanation of the _intrinsic nature_ of the things within it (Leibniz, 1686; Kant, 1787; Schopenhauer, 1818; Russel, 1959). The ideal gas law tells us how pressure, volume, amount, and temperature of a gas are all related to each other, but tells us nothing about what each of those things in and of themselves are. Chemistry tells us that Carbon has an atomic number of six. At first glance, this may be an intrinsic property. But probe deeper at what an atomic number *is* and all it represents is the number of protons it has. Protons themselves are not ‘real’ things. They are abstractions of how this group of abstractions we call quarks behaves together depending on their relations. Mass is a property that determines how an object will obey the relation $m = \frac{F}{a}$. Again, it is abstractions all the way down. Purely physical descriptions **tell us not what matter _is_ but what what it _does_.**
+
+Physics, by name, is supposed to be a mathematical theory of the physical. Yet mathematics, by nature, is purely relational; numbers are quantifiers on abstract objects, formulas describe precise relations between variables. But intuitively, there must also be an _intrinsic nature_ to these objects. _What is an atom in and of itself?_ This question is not answered by a relational account of the world.
+
+It is tempting to say at this point that perhaps a relational view all there is to reality. After all, this is realistically all that is useful to the functioning of society. It has enabled us to program silicon, photograph the depths of the universe, and predict weather across the world. Yet intuitively, a world held up purely through relations does not make sense. As Hedda Hassel Mørch pointed out in her critique of physics for ignoring consciousness, “for there to be a relation there must be two things being related.” (Mørch, 2017) Otherwise, the relationship is empty – “a show that goes on without performers, or a castle constructed out of thin air.” Mørch posits that all physical relations should be made real by some substance that itself is not purely relational or else there would be no difference between mere mathematical abstraction and the concrete universe.
+
+Clearly, if we wish to poke beyond this veil of pure abstractions, our current explanations of our reality will not do: intrinsic natures simply cannot be captured through a purely physical approach. Materialism as given so far does not seem to stand. Taking its physical description as the totality is like **confusing the map with the territory.** It may be fine if you just need the map to navigate the world, but to open one’s eyes to the real world, we must dig deeper. Here, I propose that perhaps consciousness is fundamental to reality, not the other way around -- that consciousness is _primary_.
+
+It almost self-evident that consciousness is **existentially primary** – it is through the subjective human experience, that the universe is disclosed to us. Arthur Eddington argued that the one thing we know concretely about consciousness is that has an intrinsic nature (Eddington, 1927). As René Descartes famously said in his Second Meditation, “cogito, ergo sum”: I think, therefore I am. It is the foundation upon which Descartes builds upon his certainty in his knowledge about the world. In all the ways we can be mistaken about reality, consciousness is not one of them – it is a reality that we apprehend directly and without inference. Thus, consciousness is existentially primary.
+
+Consciousness is also **transcendentally primary**. Kant defined transcendental primacy as all knowledge which is “occupied not so much with objects as with the mode of our knowledge of objects in so far as this mode of knowledge is to be possible a priori.” (Kant, 1787) In more colloquial language, the transcendental primacy of consciousness refers to how consciousness is not another object of knowledge, but that by which any object can become _knowable_.
+
+Edmund Husserl, in his 1936 work _The Crisis of European Sciences and Transcendental Phenomenology,_ defines a concept called the _life-world_. Roughly defined, it refers to the world as it is collectively experienced. Husserl likened this model of consciousness to our visual horizon: it is not really an object, but a rather a process of uncovering or displaying potentialities (Husserl, 1936).
+
+It is in this way then that the horizonal sense of consciousness is not something that can be _had,_ but rather something we _live_. Quoting Bertrand Russel, “we know nothing about the intrinsic quality of physical events except when these are mental events that we directly experience.” (Russel, 1919) As such, consciousness is transcendentally primary.
+
+Consciousness is additionally **epistemically primary** – it is the source and destination of all knowledge. In creating models, we set aside aspects of experience on which we have doubts about (e.g. our senses, emotions, etc.) and extract idealised and abstract models (e.g. mathematics, physics, logic). Even the most abstract physical relation or mathematical formulas describe some ‘real’ thing we are trying to model or express a relation between. These models ideals and models are only as useful insofar as we can implement these abstractions as things we can use to measure, predict, and control phenomena within our lived experience. In this way, consciousness is epistemically primary.
+
+I will pause here to clarify that I am _not_ claiming consciousness to be ontologically primary. I am not making any sort of panpsychist claim that consciousness exists as a fundamental aspect of reality where everything has a small amount of consciousness. Neither am I claiming that consciousness exists inherently in the natural world as a fundamental aspect of reality.
+
+Rather, I am positing a form of **neutral monism** that sits somewhere between physicalism and idealism. Monism, in its simplest form, suggests that there is only one ‘kind’ of underlying reality. A neutral stance on this does not side with either matter or mind, instead a potential 3rd substance. Russel explained this form of reality as having “a single underlying nature that is _neither_ mental nor physical but capable of being expressed in these two different ways.” (Russel, 1919) Much like the interiors and exterior of any object, Russel’s account of the mental and physical imply and necessitate each other as reflection of a single nature.
+
+In Husserl’s horizon metaphor, the horizon is not possible without a world to be observed but the world also cannot be perceived without a perceiver. Similarly, the ‘horizon’ of consciousness is not possible without the physical but the the physical cannot be perceived without the mental. It is absurd to try to reduce one completely to another.
+
+Francisco Varela’s notion of “mutually generative constraints,” (Varela, 1996) points toward a possibility where both physicalism and idealism work together towards reciprocal enrichment:
+
+1. Phenomenological reports may help to pick out and ascribe meaning to previously unnoticed neural configurations
+2. Neurological findings may become an incentive for re-categorization and further development in phenomenological research
+
+It is in this neutrally monistic view that one can acknowledge consciousness as primary without necessarily needing to discount our existing objective knowledge about the world. This neutrally monistic view of consciousness does not ‘solve’ the hard problem. Rather, the problem never even arises because the physical world is no longer the standard for being, and objectivity is no longer the ultimate standard of being.
+
+### Citations
+- Eddington, A. (1927). _The nature of the physical world: THE GIFFORD LECTURES (Vol. 23).
+- Descartes, R. (2008). Meditations on first philosophy (M. Moriarty, Trans.). Oxford University Press.
+- Husserl, E. (1936). _The crisis of European sciences and transcendental phenomenology: An introduction to phenomenological philosophy_. Northwestern University Press.
+- Kant, I. (1787). Critique of pure reason. _Modern Classical Philosophers, Cambridge, MA: Houghton Mifflin_, 370-456.
+- Leibniz, G. W. (1686). Discours de métaphysique [Discourse on Metaphysics]. _Die Philosophischen Schriften_, G, _IV_, 1875-90.
+- Mørch, H. H. (2017, March 31). _Is matter conscious?_ Nautilus | Science Connected. Retrieved April 7, 2022, from https://nautil.us/is-matter-conscious-6028/
+- Russel, B., (1919), On Propositions: What They Are and How They Mean, _Proceedings of the Aristotelian Society_, Supplementary Volume 2: 1–43. 283–321.
+- Russell, B. (1959). _My philosophical development_. Psychology Press.
+- Schopenhauer, A., Frauenstädt, J., & Hübscher, A. (1818). _Die welt als wille und vorstellung_ (Vol. 2). Leipzig: Brockhaus.
+- Varela, F. J. (1996). Neurophenomenology: A methodological remedy for the hard problem. _Journal of consciousness studies_, _3_(4), 330-349.
 
 ## Horizon Metaphor
 Husserl had no word to denote what is not really an object, but a process of uncovering or displaying potentialities -- thus, the horizon metaphor.
