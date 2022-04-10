@@ -7,7 +7,9 @@ tags:
 
 Opposite take to that of [Materialism](thoughts/Materialism.md). Panpsychists deny that the mind is fundamentally non-mental.
 
-> Everything physical is also mental or phenomenal or experiential
+> Everything physical is also mental or phenomenal or experiential.
+
+In other words, everything is slightly conscious.
 
 See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 

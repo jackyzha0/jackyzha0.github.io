@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Related: [[thoughts/consciousness|consciousness]]
+Related: [[thoughts/consciousness|consciousness]], [[thoughts/monism#Neutral Monism|neutral monism]]
 
 ## Primacy of Consciousness
 > Is consciousness primary?
@@ -18,27 +18,15 @@ Related: [[thoughts/consciousness|consciousness]]
 		- Philosophy: the life-world contains the universe; the universe is always disclosed to us from within the life-world
 - Arguing that consciousness is existentially primary and not ontologically secondary to matter.
 	- Sartre: “consciousness is never merely possible apart from existing; it is no possible instantiation of a definition apart from being actual”
+	- any physical theory of consciousness is forced to take no less than a leap of pure faith from the objectively physical to the subjectively mental -- the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]]
+- Existentially primary
 	- They have forgotten that objective knowledge is ‘made possible’ by carving the lacuna of first person experience within it… scientists who believe that solving many such “easy problems” about consciousness will finally clear up the harder problem of its physical origin, look like somebody who believes one can finally reach the horizon by walking far enough
 	- In the same way as the walker ignores the category gap between a line _in_ space and an apparent line seen _through_ space, these scientists ignore the category gap between the exclusively structural connections provided by science and the absolute and the absolute of experience analyzed through a structured framework
-
-- physics only tells us what it does but not what it is
-- universe can't purely be relational: 
-	- for there to be a relation, there must be two things being related
-	- otherwise, the relation is empty -- a show that goes on without performers, or a castle constructed out of thin air
-	- physical structure must be realized or implemented by some stuff or substance that is itself not purely structure
-	- otherwise there would be no clear difference between physical and mere mathematical structure or between the concrete universe and a mere abstraction
-- to get at the nature of what things are in themselves, is precisely the same reason that physical approaches to consciousness seem doomed to fail
-	- intrinsic natures simply cannot be captured through a purely physical approach
-- russel: neutral monism
-	- reality has a single underlying nature that is neither mental nor physical but capable of being expressed in these two different ways
-	- much like interiors and exteriors, in Russel's account the mental and physical imply and necessitate each other as reflection of a single (hence monistic) nature
+- horizon metaphor
 - intrinsic nature argument
 	- eddington argued that there is one thing we know concretely about consciousness: that it is an intrinsic nature
 	- consciousness is a reality that we apprehend directly and without inference
 	- it exists uniquely to and for itself
-- any physical theory of consciousness is forced to take no less than a leap of pure faith from the objetively physical to the subjectively mental -- the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]]
-- materialism -> taking its physical description as the totality is like confusing the map with the territory
-- panpsychism and idealism as two sides to the same thing
 
 ## Horizon Metaphor
 Husserl had no word to denote what is not really an object, but a process of uncovering or displaying potentialities -- thus, the horizon metaphor.

@@ -13,3 +13,5 @@ More familiar forms of monism:
 
 ## Neutral Monism
 The intrinsic nature of ultimate reality is neither mental nor physical (between idealism and materialism)
+
+Much like interiors and exteriors, in Russel's account the mental and physical imply and necessitate each other as reflection of a single (hence monistic) nature

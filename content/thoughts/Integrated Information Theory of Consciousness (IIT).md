@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+See also: [[thoughts/Consciousness is not Information|a refutation against IIT]]
+
 First-order sensory theory of [consciousness](thoughts/consciousness.md), a form of [[thoughts/Panpsychism|panpsychism]]
 
 > Consciousness *is* integrated information

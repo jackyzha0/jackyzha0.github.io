@@ -24,6 +24,7 @@ Yet, neither theory completely accounts for:
 2. How a serial [stream of consciousness](thoughts/Stream%20of%20Consciousness.md) can arise from a parallel distributed network
 3. Information carrying in obviously non-conscious objects
 4. Brute optimization of its mathematical definition
+
 We expand on each of these in turn.
 
 Chalmers' process theory starts by defining information in the world as having two aspects, physicality and phenomenality. Information then, is both a physical thing and has phenomenal intentionality (or what is is like to *be* information). In doing so, Chalmers defines information as having the property of being conscious. However, this is quite different from colloquially accepted and typical academic definitions of information. Information usually refers to *non-mental*, mind-independent entities that are embedded *in* the physical (e.g. a book or brain states). Pioneers of information theory like Claude Shannon and even colloquial usage of the term information agree with this definition. An important distinction between these two definitions is that while physical things encode and embed information, they themselves are not information. A book by itself is just an arrangement of paper and ink but it may carry information like the concept of Dante's *Inferno*. Thus, whatever Chalmers claims to be 'information' cannot be the same information everyone else refers to[^4] and so his conclusions on the basis of information cannot be valid.
