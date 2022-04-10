@@ -863,6 +863,16 @@
         },
         {
           "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "materialists"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "thoughts/Materialism"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
           "target": "/thoughts/Descartes-Meditations",
           "text": "René Descartes"
         },
@@ -873,13 +883,13 @@
         },
         {
           "source": "/posts/primacy-of-consciousness",
-          "target": "/thoughts/Consciousness-is-not-Information",
-          "text": "how theories like Giulio Tononi's IIT define information"
+          "target": "/thoughts/Primary-of-Consciousness",
+          "text": "PHIL450A final paper"
         },
         {
           "source": "/posts/primacy-of-consciousness",
-          "target": "/thoughts/Primary-of-Consciousness",
-          "text": "PHIL450A final paper"
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "how theories like Giulio Tononi's IIT define information"
         },
         {
           "source": "/posts/primacy-of-consciousness",
@@ -9271,6 +9281,16 @@
       ],
       "/thoughts/Materialism": [
         {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "materialists"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Materialism",
+          "text": "thoughts/Materialism"
+        },
+        {
           "source": "/thoughts/Hard-problem-of-consciousness",
           "target": "/thoughts/Materialism",
           "text": "Materialism"
@@ -16531,6 +16551,16 @@
     },
     {
       "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Materialism",
+      "text": "materialists"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Materialism",
+      "text": "thoughts/Materialism"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
       "target": "/thoughts/Descartes-Meditations",
       "text": "René Descartes"
     },
@@ -16541,13 +16571,13 @@
     },
     {
       "source": "/posts/primacy-of-consciousness",
-      "target": "/thoughts/Consciousness-is-not-Information",
-      "text": "how theories like Giulio Tononi's IIT define information"
+      "target": "/thoughts/Primary-of-Consciousness",
+      "text": "PHIL450A final paper"
     },
     {
       "source": "/posts/primacy-of-consciousness",
-      "target": "/thoughts/Primary-of-Consciousness",
-      "text": "PHIL450A final paper"
+      "target": "/thoughts/Consciousness-is-not-Information",
+      "text": "how theories like Giulio Tononi's IIT define information"
     },
     {
       "source": "/posts/primacy-of-consciousness",
