@@ -48,6 +48,7 @@ Francisco Varela’s notion of “mutually generative constraints,” (Varela, 1
 It is in this neutrally monistic view that one can acknowledge consciousness as primary without necessarily needing to discount our existing objective knowledge about the world. This neutrally monistic view of consciousness does not ‘solve’ the hard problem. Rather, the problem never even arises because the physical world is no longer the standard for being, and objectivity is no longer the ultimate standard of being.
 
 ### Citations
+- Bitbol, M. (2008). Is consciousness primary?.
 - Eddington, A. (1927). _The nature of the physical world: THE GIFFORD LECTURES (Vol. 23).
 - Descartes, R. (2008). Meditations on first philosophy (M. Moriarty, Trans.). Oxford University Press.
 - Husserl, E. (1936). _The crisis of European sciences and transcendental phenomenology: An introduction to phenomenological philosophy_. Northwestern University Press.
