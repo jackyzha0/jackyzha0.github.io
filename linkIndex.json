@@ -835,6 +835,58 @@
           "text": "how we think"
         }
       ],
+      "/posts/primacy-of-consciousness": [
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/philosophy-of-science",
+          "text": "philosophy of science"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/mind-body-problem",
+          "text": "mind-body problem"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Hard-problem-of-consciousness",
+          "text": "hard problem of consciousness."
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysics"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "NCC"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Descartes-Meditations",
+          "text": "René Descartes"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist claim"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "how theories like Giulio Tononi's IIT define information"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Primary-of-Consciousness",
+          "text": "PHIL450A final paper"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist"
+        }
+      ],
       "/thoughts/0x0": [
         {
           "source": "/thoughts/0x0",
@@ -1613,6 +1665,11 @@
         }
       ],
       "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT": [
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "a refutation against IIT"
+        },
         {
           "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
           "target": "/thoughts/consciousness",
@@ -8407,6 +8464,16 @@
       ],
       "/thoughts/Consciousness-is-not-Information": [
         {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "how theories like Giulio Tononi's IIT define information"
+        },
+        {
+          "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+          "target": "/thoughts/Consciousness-is-not-Information",
+          "text": "a refutation against IIT"
+        },
+        {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Consciousness-is-not-Information",
           "text": "Consciousness is not Information"
@@ -8473,6 +8540,11 @@
         }
       ],
       "/thoughts/Descartes-Meditations": [
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Descartes-Meditations",
+          "text": "René Descartes"
+        },
         {
           "source": "/thoughts/Ny%C4%81ya",
           "target": "/thoughts/Descartes-Meditations",
@@ -8854,6 +8926,11 @@
         }
       ],
       "/thoughts/Hard-problem-of-consciousness": [
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Hard-problem-of-consciousness",
+          "text": "hard problem of consciousness."
+        },
         {
           "source": "/thoughts/Primary-of-Consciousness",
           "target": "/thoughts/Hard-problem-of-consciousness",
@@ -9424,6 +9501,11 @@
       ],
       "/thoughts/Neural-Correlates-of-Consciousness-NCC": [
         {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+          "text": "NCC"
+        },
+        {
           "source": "/thoughts/Stream-of-Consciousness",
           "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
           "text": "NCC"
@@ -9485,6 +9567,16 @@
       ],
       "/thoughts/Panpsychism": [
         {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist claim"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Panpsychism",
+          "text": "panpsychist"
+        },
+        {
           "source": "/thoughts/Consciousness-is-not-Information",
           "target": "/thoughts/Panpsychism",
           "text": "panpsychist"
@@ -9527,6 +9619,11 @@
         }
       ],
       "/thoughts/Primary-of-Consciousness": [
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/Primary-of-Consciousness",
+          "text": "PHIL450A final paper"
+        },
         {
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Primary-of-Consciousness",
@@ -13300,6 +13397,11 @@
       ],
       "/thoughts/metaphysics": [
         {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/metaphysics",
+          "text": "metaphysics"
+        },
+        {
           "source": "/thoughts/ontology",
           "target": "/thoughts/metaphysics",
           "text": "metaphysics"
@@ -13323,6 +13425,11 @@
         }
       ],
       "/thoughts/mind-body-problem": [
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/mind-body-problem",
+          "text": "mind-body problem"
+        },
         {
           "source": "/thoughts/Hard-problem-of-consciousness",
           "target": "/thoughts/mind-body-problem",
@@ -13816,6 +13923,11 @@
           "source": "/posts/new-words",
           "target": "/thoughts/philosophy-of-science",
           "text": "some propositions are more true"
+        },
+        {
+          "source": "/posts/primacy-of-consciousness",
+          "target": "/thoughts/philosophy-of-science",
+          "text": "philosophy of science"
         },
         {
           "source": "/thoughts/Primary-of-Consciousness",
@@ -16393,6 +16505,56 @@
       "text": "how we think"
     },
     {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/philosophy-of-science",
+      "text": "philosophy of science"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/mind-body-problem",
+      "text": "mind-body problem"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Hard-problem-of-consciousness",
+      "text": "hard problem of consciousness."
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/metaphysics",
+      "text": "metaphysics"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
+      "text": "NCC"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Descartes-Meditations",
+      "text": "René Descartes"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Panpsychism",
+      "text": "panpsychist claim"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Consciousness-is-not-Information",
+      "text": "how theories like Giulio Tononi's IIT define information"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Primary-of-Consciousness",
+      "text": "PHIL450A final paper"
+    },
+    {
+      "source": "/posts/primacy-of-consciousness",
+      "target": "/thoughts/Panpsychism",
+      "text": "panpsychist"
+    },
+    {
       "source": "/thoughts/0x0",
       "target": "/thoughts/emptiness",
       "text": "emptiness"
@@ -17096,6 +17258,11 @@
       "source": "/thoughts/In-Over-Our-Heads",
       "target": "/thoughts/teaching",
       "text": "teaching"
+    },
+    {
+      "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
+      "target": "/thoughts/Consciousness-is-not-Information",
+      "text": "a refutation against IIT"
     },
     {
       "source": "/thoughts/Integrated-Information-Theory-of-Consciousness-IIT",
