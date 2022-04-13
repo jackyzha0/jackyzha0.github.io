@@ -64,7 +64,7 @@ Built with: React, Next.js, Vercel, styled-components, MongoDB, Cloud Run, GCR, 
 
 [Site](https://getreflect.app/), [GitHub](https://github.com/jackyzha0/reflect-chrome)
 
-reflect is a browser extension with 800+ active users focused around asking users to reflect before visiting distracting sites, helping to reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network in Keras on the closed-beta data and augmented it using NLP data augmentation techniques, reaching ~86% classification accuracy. Finally, the model was ported to Tensorflow.js where it runs in-browser within the extension which is written in Typescript.
+reflect is a browser extension with 800+ active users focused around asking users to reflect before visiting distracting sites, helping to reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network in Keras on the closed-beta data and augmented it using [[thoughts/NLP|NLP]] data augmentation techniques, reaching ~86% classification accuracy. Finally, the model was ported to Tensorflow.js where it runs in-browser within the extension which is written in Typescript.
 
 Built with: Kubernetes, Docker, GKE, Cloud SQL, Keras, Tensorflow.js, Flask, CircleCI, TypeScript, Python, Go
 

@@ -18,7 +18,7 @@ Classifying intents is at the core of reflect. When a user inputs an intent, its
 
 ## Why it’s so difficult
 
-A lot of it comes down to the fact that natural language processing (NLP) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?
+A lot of it comes down to the fact that natural language processing ([[thoughts/NLP|NLP]]) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?
 
 We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.
 

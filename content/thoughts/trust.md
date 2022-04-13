@@ -17,7 +17,7 @@ This feels like its missing an important step in the process: trusting the mediu
 
 Curious whether this has relations to [philosophy of science](thoughts/philosophy%20of%20science.md) and [Cartesian skepticism](thoughts/Descartes'%20Meditations.md)
 
-Related: [game theory and trust](thoughts/game%20theory.md)
+Related: [game theory and trust](thoughts/game%20theory.md), [[thoughts/PHIL240A Final Paper|PHIL240A Final Paper]]
 
 > To dream up important ideas you must think like an idealist; to build systems that will live up to those dreams, you must think like an adversary.
 
@@ -139,3 +139,4 @@ In conclusion, it is clear that despite potential biases from both parties, the 
 2. Hawley, K., 2014. Partiality and prejudice in trusting. _Synthese_, _191_(9), pp. 2029-2045.
 3. Crawford, L., 2019. Believing the best: on doxastic partiality in friendship. *Synthese*, 196(4), pp. 1575-1593.
 4. Gendler, T. 2011. On the Epistemic Cost of Implicit Bias. *Philosophical Studies* 156(57), pp. 33-63
+
