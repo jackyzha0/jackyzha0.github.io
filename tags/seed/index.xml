@@ -6,7 +6,36 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paperclip optimizers</title>
+      <link>https://jzhao.xyz/thoughts/paperclip-optimizer/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/paperclip-optimizer/</guid>
+      <description>On LessWrong
+The paperclip maximizer is the canonical thought experiment showing how an artificial general intelligence, even one designed competently and without malice, could ultimately destroy humanity.</description>
+    </item>
+    
+    <item>
+      <title>PHIL240A Final Paper</title>
+      <link>https://jzhao.xyz/thoughts/PHIL240A-Final-Paper/</link>
+      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/PHIL240A-Final-Paper/</guid>
+      <description>Section I: Trusting Institutions  Is it ever responsible to trust an institution about something that outstrips your individual ability to verify?</description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>https://jzhao.xyz/thoughts/NLP/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/NLP/</guid>
+      <description>Chain of Thought Prompting  ArXiv Link
+ Flat scaling curves—simply increasing model scale does not lead to substantive performance gains Chain of thought prompting facilitating multistep reasoning in large language models  The intuition is that a chain of thought allows language models to decompose a multi-step problem into intermediate steps that are solved individually, instead of solving an entire multi-hop problem in a single forward pass Another intuition behind chain of thought reasoning is that it allows the model to spend more computation (i.</description>
+    </item>
+    
     <item>
       <title>Encryption</title>
       <link>https://jzhao.xyz/thoughts/encryption/</link>

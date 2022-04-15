@@ -897,6 +897,13 @@
           "text": "panpsychist"
         }
       ],
+      "/posts/reflect": [
+        {
+          "source": "/posts/reflect",
+          "target": "/thoughts/NLP",
+          "text": "NLP"
+        }
+      ],
       "/thoughts/0x0": [
         {
           "source": "/thoughts/0x0",
@@ -1155,6 +1162,33 @@
           "source": "/thoughts/Bentoism",
           "target": "/thoughts/Community-of-Fate",
           "text": "Community of Fate"
+        }
+      ],
+      "/thoughts/Bias-in-Search": [
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/transparency",
+          "text": "thoughts/transparency"
+        },
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/bias",
+          "text": "thoughts/bias"
+        },
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "thoughts/Algorithms of Oppression"
+        },
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/attention-economy",
+          "text": "thoughts/attention economy"
+        },
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/To-Live-in-their-Utopia",
+          "text": "thoughts/To Live in their Utopia"
         }
       ],
       "/thoughts/Brains-in-a-Vat": [
@@ -1517,6 +1551,13 @@
           "source": "/thoughts/Galls-law",
           "target": "/thoughts/complexity",
           "text": "complexity"
+        }
+      ],
+      "/thoughts/Goodharts-Law": [
+        {
+          "source": "/thoughts/Goodharts-Law",
+          "target": "/thoughts/paperclip-optimizer",
+          "text": "paperclip optimizer"
         }
       ],
       "/thoughts/HTTP": [
@@ -2045,6 +2086,13 @@
           "text": "Digital Permanence"
         }
       ],
+      "/thoughts/NLP": [
+        {
+          "source": "/thoughts/NLP",
+          "target": "/thoughts/explainability",
+          "text": "explainable"
+        }
+      ],
       "/thoughts/Nagels-Bat-Argument": [
         {
           "source": "/thoughts/Nagels-Bat-Argument",
@@ -2263,6 +2311,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/democracy",
           "text": "democracy"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/NLP",
+          "text": "NLP"
         },
         {
           "source": "/thoughts/Projects",
@@ -3040,8 +3093,28 @@
       "/thoughts/black-box": [
         {
           "source": "/thoughts/black-box",
+          "target": "/thoughts/paperclip-optimizer",
+          "text": "paperclip optimizer"
+        },
+        {
+          "source": "/thoughts/black-box",
           "target": "/thoughts/infrastructure",
           "text": "infrastructure"
+        },
+        {
+          "source": "/thoughts/black-box",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/black-box",
+          "target": "/thoughts/epistemology",
+          "text": "epistemically opaque"
+        },
+        {
+          "source": "/thoughts/black-box",
+          "target": "/thoughts/transparency",
+          "text": "transparency"
         }
       ],
       "/thoughts/blockchain": [
@@ -7388,6 +7461,11 @@
         },
         {
           "source": "/thoughts/trust",
+          "target": "/thoughts/PHIL240A-Final-Paper",
+          "text": "PHIL240A Final Paper"
+        },
+        {
+          "source": "/thoughts/trust",
           "target": "/thoughts/money",
           "text": "Money"
         },
@@ -8305,6 +8383,11 @@
         }
       ],
       "/thoughts/Algorithms-of-Oppression": [
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/Algorithms-of-Oppression",
+          "text": "thoughts/Algorithms of Oppression"
+        },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/Algorithms-of-Oppression",
@@ -9475,6 +9558,18 @@
           "text": "NFTs"
         }
       ],
+      "/thoughts/NLP": [
+        {
+          "source": "/posts/reflect",
+          "target": "/thoughts/NLP",
+          "text": "NLP"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/NLP",
+          "text": "NLP"
+        }
+      ],
       "/thoughts/Nagels-Bat-Argument": [
         {
           "source": "/thoughts/Hard-problem-of-consciousness",
@@ -9583,6 +9678,13 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/Ny%C4%81ya",
           "text": "Nyāya"
+        }
+      ],
+      "/thoughts/PHIL240A-Final-Paper": [
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/PHIL240A-Final-Paper",
+          "text": "PHIL240A Final Paper"
         }
       ],
       "/thoughts/Panpsychism": [
@@ -9949,6 +10051,11 @@
       ],
       "/thoughts/To-Live-in-their-Utopia": [
         {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/To-Live-in-their-Utopia",
+          "text": "thoughts/To Live in their Utopia"
+        },
+        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/To-Live-in-their-Utopia",
           "text": "To Live in their Utopia"
@@ -10156,6 +10263,11 @@
           "text": "attention economy"
         },
         {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/attention-economy",
+          "text": "thoughts/attention economy"
+        },
+        {
           "source": "/thoughts/Design-Justice",
           "target": "/thoughts/attention-economy",
           "text": "Attention economy"
@@ -10284,6 +10396,11 @@
           "source": "/posts/bias-bug",
           "target": "/thoughts/bias",
           "text": "biases"
+        },
+        {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/bias",
+          "text": "thoughts/bias"
         },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -11728,6 +11845,11 @@
           "text": "epistemology"
         },
         {
+          "source": "/thoughts/black-box",
+          "target": "/thoughts/epistemology",
+          "text": "epistemically opaque"
+        },
+        {
           "source": "/thoughts/context",
           "target": "/thoughts/epistemology",
           "text": "epistemic"
@@ -11817,6 +11939,11 @@
           "source": "/thoughts/Cities-and-Programming",
           "target": "/thoughts/explainability",
           "text": "explainability"
+        },
+        {
+          "source": "/thoughts/NLP",
+          "target": "/thoughts/explainability",
+          "text": "explainable"
         },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -13820,6 +13947,18 @@
           "text": "pain"
         }
       ],
+      "/thoughts/paperclip-optimizer": [
+        {
+          "source": "/thoughts/Goodharts-Law",
+          "target": "/thoughts/paperclip-optimizer",
+          "text": "paperclip optimizer"
+        },
+        {
+          "source": "/thoughts/black-box",
+          "target": "/thoughts/paperclip-optimizer",
+          "text": "paperclip optimizer"
+        }
+      ],
       "/thoughts/peer-to-peer": [
         {
           "source": "/posts/hackathons",
@@ -15174,7 +15313,17 @@
       ],
       "/thoughts/transparency": [
         {
+          "source": "/thoughts/Bias-in-Search",
+          "target": "/thoughts/transparency",
+          "text": "thoughts/transparency"
+        },
+        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/transparency",
+          "text": "transparency"
+        },
+        {
+          "source": "/thoughts/black-box",
           "target": "/thoughts/transparency",
           "text": "transparency"
         },
@@ -15264,6 +15413,11 @@
         },
         {
           "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/trust",
+          "text": "trust"
+        },
+        {
+          "source": "/thoughts/black-box",
           "target": "/thoughts/trust",
           "text": "trust"
         },
@@ -16585,6 +16739,11 @@
       "text": "panpsychist"
     },
     {
+      "source": "/posts/reflect",
+      "target": "/thoughts/NLP",
+      "text": "NLP"
+    },
+    {
       "source": "/thoughts/0x0",
       "target": "/thoughts/emptiness",
       "text": "emptiness"
@@ -16823,6 +16982,31 @@
       "source": "/thoughts/Bentoism",
       "target": "/thoughts/Community-of-Fate",
       "text": "Community of Fate"
+    },
+    {
+      "source": "/thoughts/Bias-in-Search",
+      "target": "/thoughts/transparency",
+      "text": "thoughts/transparency"
+    },
+    {
+      "source": "/thoughts/Bias-in-Search",
+      "target": "/thoughts/bias",
+      "text": "thoughts/bias"
+    },
+    {
+      "source": "/thoughts/Bias-in-Search",
+      "target": "/thoughts/Algorithms-of-Oppression",
+      "text": "thoughts/Algorithms of Oppression"
+    },
+    {
+      "source": "/thoughts/Bias-in-Search",
+      "target": "/thoughts/attention-economy",
+      "text": "thoughts/attention economy"
+    },
+    {
+      "source": "/thoughts/Bias-in-Search",
+      "target": "/thoughts/To-Live-in-their-Utopia",
+      "text": "thoughts/To Live in their Utopia"
     },
     {
       "source": "/thoughts/Brains-in-a-Vat",
@@ -17143,6 +17327,11 @@
       "source": "/thoughts/Galls-law",
       "target": "/thoughts/complexity",
       "text": "complexity"
+    },
+    {
+      "source": "/thoughts/Goodharts-Law",
+      "target": "/thoughts/paperclip-optimizer",
+      "text": "paperclip optimizer"
     },
     {
       "source": "/thoughts/HTTP",
@@ -17635,6 +17824,11 @@
       "text": "Digital Permanence"
     },
     {
+      "source": "/thoughts/NLP",
+      "target": "/thoughts/explainability",
+      "text": "explainable"
+    },
+    {
       "source": "/thoughts/Nagels-Bat-Argument",
       "target": "/thoughts/Materialism",
       "text": "Materialism"
@@ -17833,6 +18027,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/democracy",
       "text": "democracy"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/NLP",
+      "text": "NLP"
     },
     {
       "source": "/thoughts/Projects",
@@ -18536,8 +18735,28 @@
     },
     {
       "source": "/thoughts/black-box",
+      "target": "/thoughts/paperclip-optimizer",
+      "text": "paperclip optimizer"
+    },
+    {
+      "source": "/thoughts/black-box",
       "target": "/thoughts/infrastructure",
       "text": "infrastructure"
+    },
+    {
+      "source": "/thoughts/black-box",
+      "target": "/thoughts/trust",
+      "text": "trust"
+    },
+    {
+      "source": "/thoughts/black-box",
+      "target": "/thoughts/epistemology",
+      "text": "epistemically opaque"
+    },
+    {
+      "source": "/thoughts/black-box",
+      "target": "/thoughts/transparency",
+      "text": "transparency"
     },
     {
       "source": "/thoughts/blockchain",
@@ -22543,6 +22762,11 @@
       "source": "/thoughts/trust",
       "target": "/thoughts/game-theory",
       "text": "game theory and trust"
+    },
+    {
+      "source": "/thoughts/trust",
+      "target": "/thoughts/PHIL240A-Final-Paper",
+      "text": "PHIL240A Final Paper"
     },
     {
       "source": "/thoughts/trust",

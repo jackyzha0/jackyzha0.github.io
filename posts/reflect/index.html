@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">reflect: NLP Model Explained</h1>
     <article>
       <p class="meta">
-          Last updated December 25, 2021
+          Last updated April 13, 2022
       </p>
       <ul class="tags">
     
@@ -516,6 +516,62 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 <p>
 <img src="https://miro.medium.com/max/1400/1*yjCs2Mmcve8wNI1pdfXelw.png" alt="An image of the reflect block page"  /><em>How do we tell that this is a “valid” intent?</em></p>
 <p>A (not so) brief exploration of how we tackle classifying intents in reflect. Part 1 will touch on defining the problem we’re trying to solve, the data we have, and how we pre-processed it. Part 2 will focus on the architecture of the model we built, how well it does, and thoughts on improving it for the future.</p>
@@ -525,7 +581,7 @@ if (!doNotTrack) {
 <p>How do we make sure “do some marketing work for reflect” is classified as productive but “watch cute dog videos” isn’t?</p>
 </blockquote>
 <h2 id="why-its-so-difficult">Why it’s so difficult</h2>
-<p>A lot of it comes down to the fact that natural language processing (NLP) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?</p>
+<p>A lot of it comes down to the fact that natural language processing (<a href="/thoughts/NLP" rel="noopener" class="internal-link" data-src="/thoughts/NLP">NLP</a>) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?</p>
 <p>We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.</p>
 <p>Specifically, the form of machine learning we will be using is called <strong>supervised learning,</strong> in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.</p>
 <h2 id="the-data">The data</h2>

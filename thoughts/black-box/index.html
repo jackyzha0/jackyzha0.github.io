@@ -3,7 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Scientific and technical work is made invisible by its own success.">
+    <meta name="description" content="See also: [[thoughts/paperclip optimizer|paperclip optimizer]]
+ Scientific and technical work is made invisible by its own success.">
     <title>Black boxes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -439,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">Black boxes</h1>
     <article>
       <p class="meta">
-          Last updated December 25, 2021
+          Last updated April 13, 2022
       </p>
       <ul class="tags">
     
@@ -447,6 +448,15 @@ if (!doNotTrack) {
     
 </ul>
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#computational-reliabilism-cr">Computational Reliabilism (CR)</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -461,6 +471,95 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+<p>See also: <a href="/thoughts/paperclip-optimizer" rel="noopener" class="internal-link" data-src="/thoughts/paperclip-optimizer">paperclip optimizer</a></p>
 <blockquote>
 <p>Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity. Thus, paradoxically, the more science and technology succeed, the more opaque and obscure they become</p>
 </blockquote>
@@ -477,6 +576,72 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/infrastructure">infrastructure</a></em> that saves a lot of this repetitive work.</p>
+<h2 id="computational-reliabilism-cr">Computational Reliabilism (CR)</h2>
+<p><em>Who is afraid of black box algorithms? On the epistemological and ethical basis of trust in medical AI</em> by Juan Manuel Durán, Karin Rolanda Jongsma</p>
+<p>On <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> in black box algorithmic decision making systems</p>
+<p>Black boxes are algorithms that humans cannot survey: they are <a href="/thoughts/epistemology" rel="noopener" class="internal-link" data-src="/thoughts/epistemology">epistemically opaque</a> systems that no human or group of humans can closely examine in order to determine its inner states. Physicians have a hard time offering accounts of how the algorithm came to its recommendation or diagnosis</p>
+<p>Terms:</p>
+<ul>
+<li><a href="/thoughts/transparency" rel="noopener" class="internal-link" data-src="/thoughts/transparency">transparency</a>: algorithmic procedures that make the inner workings of a block box algorithm interpretable to humans
+<ul>
+<li>transparency is an epistemic manoeuvre intended to offer reasons to believe that certain algorithmic procedures render a reliable output and that the output of the algorithm is interpretable by humans</li>
+</ul>
+</li>
+<li>opacity: inherent impossibility of humans to survey an algorithm both understood as a script as well as a computer process. Burrell proposes 3 types of opacity
+<ol>
+<li>Intentional corporate or state secrecy</li>
+<li>Technical illiteracy</li>
+<li>Arising out of the scale of machine learning algorithms</li>
+</ol>
+</li>
+</ul>
+<p>Claim: transparency will not provide solutions to opacity, and therefore having more transparent algorithms is not a guarantee for better explanations, predictions, and overall justification of our trust in the results of an algorithm</p>
+<p>Computational reliabilism (CR)</p>
+<ul>
+<li>offers epistemic justification for the belief that the algorithm is reliable and its results are trustworthy</li>
+<li>main claim: researchers are justified in believing the results of AI systems because there is a reliable process that yields, most of the time, trustworthy results.</li>
+<li>formal definition &ldquo;the probability that the next set of results of a reliable (AI system) is trustworthy is greater than the probability that the next set of results is trustworthy given that the first set was produced by an unreliable process by mere luck&rdquo;
+<ul>
+<li>in regular language: given two results are the same, we should consider the one generated by a reliable system to be more trustworthy</li>
+</ul>
+</li>
+<li>reliability indicators
+<ol>
+<li>verification and validation methods: building and measuring dev confidence in the computer system. Verification is assessment of accuracy with comparison to known solutions, validation is the assessment of accuracy with comparison to experimental data</li>
+<li>robustness analysis: figure out whether results of a given model are an artefact of the model or related to the core features of the model</li>
+<li>a history of (un)successful implementations: scientific and engineering methodologies and practices related to designing, coding, and running algorithms</li>
+<li>expert knowledge: experts&rsquo; judgements, evaluations, and sanctioning</li>
+</ol>
+</li>
+</ul>
+<p>Responsibility gaps</p>
+<ul>
+<li>a physician cannot be held responsible for results of algorithms they don&rsquo;t understand
+<ul>
+<li>though, we do generally accept ex-post explanations and deem these sufficient of human actors in decision making</li>
+<li>physicians typically operate other technologies and machinery which they do not fully understand or cannot fully explain the inner working of (e.g. MRI scans)
+<ul>
+<li>Debatable; because they are not making decisions, just presenting information. Additionally, these other technologies generally <em>can</em> be understood by an expert. This is not the case for AI systems</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Counterpoints raised:</p>
+<ul>
+<li>automation complacency: tendency to overestimate the reliability of decision support systems</li>
+<li>black box algorithms can hide normative assumptions
+<ul>
+<li>epistemic and normative considerations often blur into each other in the medical setting</li>
+<li>we know nothing about the priors of the black box algorithm</li>
+</ul>
+</li>
+<li>model and data drift
+<ul>
+<li>computationally reliable black box algorithms can be reliable in one setting and time and not everywhere and forever</li>
+</ul>
+</li>
+</ul>
  
 
     </article>
