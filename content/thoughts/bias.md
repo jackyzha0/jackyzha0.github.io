@@ -29,7 +29,7 @@ Related: [data distributions](thoughts/data%20distributions.md)
 > "We use the term bias to refer to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others... A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate" (Friedman and Nissenbaum, 1996)
 
 ## 3 groups of study
-from [Design Justice](thoughts/Design%20Justice.md)
+from [Design Justice](thoughts/Design%20Justice.md) and Friedman
 
 1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
 	- e.g. Notions of quality and authority bias embedded in the web content itself
