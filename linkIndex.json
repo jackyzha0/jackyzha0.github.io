@@ -1164,33 +1164,6 @@
           "text": "Community of Fate"
         }
       ],
-      "/thoughts/Bias-in-Search": [
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/transparency",
-          "text": "thoughts/transparency"
-        },
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/bias",
-          "text": "thoughts/bias"
-        },
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/Algorithms-of-Oppression",
-          "text": "thoughts/Algorithms of Oppression"
-        },
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/attention-economy",
-          "text": "thoughts/attention economy"
-        },
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/To-Live-in-their-Utopia",
-          "text": "thoughts/To Live in their Utopia"
-        }
-      ],
       "/thoughts/Brains-in-a-Vat": [
         {
           "source": "/thoughts/Brains-in-a-Vat",
@@ -8384,11 +8357,6 @@
       ],
       "/thoughts/Algorithms-of-Oppression": [
         {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/Algorithms-of-Oppression",
-          "text": "thoughts/Algorithms of Oppression"
-        },
-        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/Algorithms-of-Oppression",
           "text": "Algorithms of Oppression"
@@ -10051,11 +10019,6 @@
       ],
       "/thoughts/To-Live-in-their-Utopia": [
         {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/To-Live-in-their-Utopia",
-          "text": "thoughts/To Live in their Utopia"
-        },
-        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/To-Live-in-their-Utopia",
           "text": "To Live in their Utopia"
@@ -10263,11 +10226,6 @@
           "text": "attention economy"
         },
         {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/attention-economy",
-          "text": "thoughts/attention economy"
-        },
-        {
           "source": "/thoughts/Design-Justice",
           "target": "/thoughts/attention-economy",
           "text": "Attention economy"
@@ -10396,11 +10354,6 @@
           "source": "/posts/bias-bug",
           "target": "/thoughts/bias",
           "text": "biases"
-        },
-        {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/bias",
-          "text": "thoughts/bias"
         },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -15313,11 +15266,6 @@
       ],
       "/thoughts/transparency": [
         {
-          "source": "/thoughts/Bias-in-Search",
-          "target": "/thoughts/transparency",
-          "text": "thoughts/transparency"
-        },
-        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/transparency",
           "text": "transparency"
@@ -16982,31 +16930,6 @@
       "source": "/thoughts/Bentoism",
       "target": "/thoughts/Community-of-Fate",
       "text": "Community of Fate"
-    },
-    {
-      "source": "/thoughts/Bias-in-Search",
-      "target": "/thoughts/transparency",
-      "text": "thoughts/transparency"
-    },
-    {
-      "source": "/thoughts/Bias-in-Search",
-      "target": "/thoughts/bias",
-      "text": "thoughts/bias"
-    },
-    {
-      "source": "/thoughts/Bias-in-Search",
-      "target": "/thoughts/Algorithms-of-Oppression",
-      "text": "thoughts/Algorithms of Oppression"
-    },
-    {
-      "source": "/thoughts/Bias-in-Search",
-      "target": "/thoughts/attention-economy",
-      "text": "thoughts/attention economy"
-    },
-    {
-      "source": "/thoughts/Bias-in-Search",
-      "target": "/thoughts/To-Live-in-their-Utopia",
-      "text": "thoughts/To Live in their Utopia"
     },
     {
       "source": "/thoughts/Brains-in-a-Vat",

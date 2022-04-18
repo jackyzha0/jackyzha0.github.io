@@ -439,13 +439,24 @@ if (!doNotTrack) {
     <h1 class="title">Transparency</h1>
     <article>
       <p class="meta">
-          Last updated February 15, 2022
+          Last updated April 18, 2022
       </p>
       <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#algorithmic-transparency-in-the-news-media">Algorithmic Transparency in the News Media</a></li>
+    <li><a href="#explanations-as-mechanisms-for-supporting-algorithmic-transparency">Explanations as Mechanisms for Supporting Algorithmic Transparency</a></li>
+    <li><a href="#acm-principles-for-algorithmic-transparency-and-accountability">ACM Principles for Algorithmic Transparency and Accountability</a></li>
+  </ol>
+</nav>
+      </aside>
       
       
 
@@ -467,6 +478,65 @@ if (!doNotTrack) {
 <p>The process of identifying users is how social media platforms monetize their operations</p>
 <p>Big companies avoid fully detailing how they identify and categorize uses, claiming that the information is &ldquo;proprietary&rdquo;.</p>
 <p>&ldquo;They argue, this surveillance allows them ways to minimize the gamification of the social media system by disruptive actors, and by segmentation and differentiation, they may better protect the authentic user from the inauthentic.&rdquo;</p>
+<h2 id="algorithmic-transparency-in-the-news-media">Algorithmic Transparency in the News Media</h2>
+<p>
+
+<a href="http://www.nickdiakopoulos.com/wp-content/uploads/2016/07/Algorithmic-Transparency-in-the-News-Media-Final.pdf" rel="noopener">PDF in Digital Journalism</a></p>
+<ul>
+<li>Deuze (2005, 455) defines transparency as the “ways in which people both inside and external to journalism are given a chance to monitor, check, criticize and even intervene in the journalistic process.”</li>
+<li>Similarly, defines <em>algorithmic transparency</em>: what we define as the disclosure of information about algorithms to enable monitoring, checking, criticism, or intervention by interested parties.</li>
+<li>Even though transparency is not a new concept for holding governments and institutions accountable, its recent renaissance has been accompanied by changes in communication technologies (Fung, Graham, and Weil 2007)
+<ul>
+<li>Digital technologies have changed the access to and scrutiny of information by anyone with internet access, which Meijer (2009) broadly described as “computer-mediated transparency.”</li>
+</ul>
+</li>
+<li>Transparency is generally considered a means to see the truth and motives behind people’s actions (Balkin 1999) and to ensure social accountability and trust (Breton 2006). On a very basic level, transparency allows access to more information which can influence power relationships between governments and citizens, business and customers, and in our case between news outlets and audiences (Bennis 2013). The access to more information also reduces uncertainty in social relations and theoretically increases trust (Cotterrell 1999), which is crucial in the maintenance of a functional society (Fukuyama 1995).</li>
+<li>But while transparency can be seen as beneficial to engendering trust, seeing the inner workings of a government, business, or newsroom can result in negative implications such as undermining competitive advantages or creating costs without concomitant gains (Granados and Gupta 2013).</li>
+<li>Challenges
+<ul>
+<li>what would motivate a news or media organization to disclose details about their algorithms? Costs identified in producing transparency information included: data preparation, documentation writing, source code polishing, and benchmark testing. “How does being transparent offset loss of revenue?&quot;</li>
+<li>Participants also suggested that disclosing aspects of how a proprietary algorithmic system works may hurt an organization’s technological competitive advantage, or open the system to manipulation by third parties. Yet it was recognized that people will game the system no matter what, and that by disclosing information publicly it would level the playing field or, as one participant (CS2) put it, “everybody has the same chance now because we all know the rules of the game.”</li>
+</ul>
+</li>
+</ul>
+<p>Cited as:</p>
+<blockquote>
+<p>Diakopoulos, N., &amp; Koliska, M. (2017). Algorithmic transparency in the news media. <em>Digital journalism</em>, <em>5</em>(7), 809-828.</p>
+</blockquote>
+<h2 id="explanations-as-mechanisms-for-supporting-algorithmic-transparency">Explanations as Mechanisms for Supporting Algorithmic Transparency</h2>
+<p>
+
+<a href="https://dl.acm.org/doi/pdf/10.1145/3173574.3173677" rel="noopener">PDF in CHI 2018</a></p>
+<ul>
+<li>Transparency involves encountering non-obvious information that is difficult for an individual to learn or experience directly, about how and why a system works the way it does and what this means for the system’s outputs.</li>
+<li>Greater transparency allows people to question and critique a system in order to develop appropriate reliance, rather than blind faith</li>
+<li>Methods for transparency
+<ul>
+<li>algorithm audits, which investigate both how an algorithmic decision making system works, and what its impacts are
+<ul>
+<li>some have argued that platforms are intentionally opaque regarding details about their operation as a form of self-protection from competitors or others who attempt to “game” the system</li>
+</ul>
+</li>
+<li>providing explanations, a common approach in recommender systems that may help solve problems caused by lack of transparency in algorithmic decision-making systems</li>
+</ul>
+</li>
+<li>How explanations are &ldquo;white box descriptions&rdquo;
+<ul>
+<li>They provide information about how a system produces a recommendation, particularly focusing on the system’s reasoning and data source</li>
+</ul>
+</li>
+<li>Why explanations are &ldquo;black box descriptions&rdquo;
+<ul>
+<li>providing justifications for a system and its outcomes and explaining the motivations behind the system, but not disclosing how the system works.</li>
+<li>These explanations fill an intention gap between a user’s needs and interests and the system’s goals, but do not provide any visibility into how the system works</li>
+</ul>
+</li>
+<li>Transparency of mechanism vs outcome</li>
+</ul>
+<p>Cited as:</p>
+<blockquote>
+<p>Rader, E., Cotter, K., &amp; Cho, J. (2018, April). Explanations as mechanisms for supporting algorithmic transparency. In <em>Proceedings of the 2018 CHI conference on human factors in computing systems</em> (pp. 1-13).</p>
+</blockquote>
 <h2 id="acm-principles-for-algorithmic-transparency-and-accountability">ACM Principles for Algorithmic Transparency and Accountability</h2>
 <ul>
 <li>Awareness: stakeholders of analytic systems should be aware of the biases + risks + potential harms their design, implementation, and use could cause</li>
@@ -493,11 +563,6 @@ if (!doNotTrack) {
     
     
     
-        
-        <li>
-            <a href="/thoughts/Bias-in-Search">Bias in Search</a>
-        </li>
-        
         
         <li>
             <a href="/thoughts/Social-Bias-in-Information-Retrieval">Social Bias in Information Retrieval</a>
