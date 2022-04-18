@@ -12,6 +12,10 @@ Longer-term research project/experiment around building multi-writer decentraliz
 - curius + obisidian + gdocs?? example application
 	-   collaborative gardening
 	-   take notes on website iframes and link to them
+- transclusion of blocks supported by default
+- full revision history w granularity of single operations
+- always-on 'default note'
+	- make it super easy to split out content into a new note
 
 ## Application Layer
 -   library to listen for events in logic layer

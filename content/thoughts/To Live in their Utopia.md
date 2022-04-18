@@ -30,10 +30,9 @@ Related: [The ones who walk away from Omelas](thoughts/The%20ones%20who%20walk%2
 
 But when the institution *does* wield power and people can't just leave anymore, these institutions can (and do) get more and more detached from the lives and needs of people. Those bureaucracies construct their own worlds where everything gets "rationalized" in simplified, reductive language.
 
-"People talk about "debiasing" data and reviewing code before a model is trained and deployed.
-What I'm saying is that even if you've done everything right, if you don't pay attention to the power dynamics as they unfold and play out, the system out in the world is going to drift further and further away from reality."
+"People talk about "debiasing" data and reviewing code before a model is trained and deployed. What I'm saying is that even if you've done everything right, if you don't pay attention to the power dynamics as they unfold and play out, the system out in the world is going to drift further and further away from reality."
 
-Systemized classification and quantification of the world acts as an interpretive and transformational force. In other words, [quantization](thoughts/quantization.md) change the world.
+Systemized classification and quantification of the world acts as an interpretive and transformational force. In other words, [quantization](thoughts/quantization.md) changes the world.
 
 Why monopolies (over data and power) are bad: bureaucracies with no power self-correct (or be corrected) -> they have no place in a world where people can freely walk away or reject the bureaucracy's nonsense (give feedback)
 
@@ -48,7 +47,7 @@ These systems become more actively dangerous when they go from "making sense of 
 
 There's no dataset in the world that adequately conveys white supremacy, or slavery, or colonialism. (see: [data distributions](thoughts/data%20distributions.md))
 
-So at best these systems generate a facsimile of a world with the shadows of history cast on the ground skewed, flattened, and always lacking depth that only living these experiences can bring. Once again, creating a potemkin village of what the true problem, an incredibly reductionist view on complex problems.
+So at best these systems generate a facsimile of a world with the shadows of history cast on the ground skewed, flattened, and always lacking depth that only living these experiences can bring. Once again, creating a potemkin village of what the true problem is: an incredibly reductionist view on complex problems.
 
 ## Metis
 James C. Scott in Seeing like a State desribes *metis*, which he translates substantively as the intelligence required to adapt to new and changing circumstances.
