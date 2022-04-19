@@ -3,6 +3,8 @@ title: "Knowledge Argument"
 date: 2022-02-01
 tags:
 - sapling
+- PHIL240A
+- PHIL451A
 ---
 
 ### Frank Jackson's Knowledge Argument

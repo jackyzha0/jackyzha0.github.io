@@ -3,6 +3,7 @@ title: "Dreams"
 date: 2022-03-10
 tags:
 - seed
+- PHIL451A
 ---
 
 ## Threefold model of [consciousness](thoughts/consciousness.md)

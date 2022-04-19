@@ -3,6 +3,7 @@ title: "DHCP"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Dynamic Host Configuration [Protocol](thoughts/Protocol.md) so they can join a network. Assigns [IP addresses](thoughts/IP%20Addresses.md) to hosts. Main reason was when people started moving devices across networks

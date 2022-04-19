@@ -3,6 +3,7 @@ title: "Epistemic Authority"
 date: 2022-03-09
 tags:
 - seed
+- PHIL240A
 ---
 
 On when to [trust](thoughts/trust.md) [epistemic](thoughts/epistemology.md) claims

@@ -3,6 +3,7 @@ title: "Physical Layer"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Layer 5, layer below the [Link Layer](thoughts/Link%20Layer.md)

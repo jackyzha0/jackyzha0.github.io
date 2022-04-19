@@ -3,6 +3,7 @@ title: "Integrated Information Theory of Consciousness (IIT)"
 date: 2022-03-04
 tags:
 - seed
+- PHIL451A
 ---
 
 See also: [[thoughts/Consciousness is not Information|a refutation against IIT]]

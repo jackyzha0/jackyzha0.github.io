@@ -3,6 +3,7 @@ title: "Double-consciousness"
 date: 2022-03-03
 tags:
 - seed
+- PHIL240A
 ---
 
 Term from DuBois, 1989

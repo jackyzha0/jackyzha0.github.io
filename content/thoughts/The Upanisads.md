@@ -3,6 +3,7 @@ title: "The Upanisads"
 date: 2022-01-12
 tags:
 - seed
+- PHIL240A
 ---
 
 A collection of texts composed over several centuries (the oldest from ca. 700-300 BCE) and in various regions (northern India, ranging from the upper Indus valley to the lower Ganges).

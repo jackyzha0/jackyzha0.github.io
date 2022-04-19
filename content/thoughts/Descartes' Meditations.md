@@ -3,6 +3,7 @@ title: "Descartes' Meditations"
 date: 2022-01-12
 tags:
 - seed
+- PHIL240A
 ---
 
 Cartesian doubt refers to the opposite of [trust](thoughts/trust.md) in Nguyen's sense

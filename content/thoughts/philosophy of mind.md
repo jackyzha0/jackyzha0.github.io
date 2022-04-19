@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-*Notes for Philosophy 451A - Philosophy of the Mind*
+*Notes for Philosophy 451A - Philosophy of the Mind* [(see all notes)](/tags/PHIL451A)
 
 Guiding Questions
 - What is [consciousness](thoughts/consciousness.md)?  

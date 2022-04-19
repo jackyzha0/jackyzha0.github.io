@@ -3,6 +3,7 @@ title: "Nyāya"
 date: 2022-03-07
 tags:
 - seed
+- PHIL240A
 ---
 
 > "Perception is a cognition that has arisen from the contact of sense faculty and object and is inexpressible, not erroneous, and determinate in nature."

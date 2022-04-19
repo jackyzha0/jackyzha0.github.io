@@ -3,6 +3,7 @@ title: "Application Layer (Networking)"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Layer 1, the layer above the [Transport Layer](thoughts/Transport%20Layer.md)

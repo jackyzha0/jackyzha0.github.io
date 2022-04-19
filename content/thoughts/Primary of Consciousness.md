@@ -3,12 +3,13 @@ title: "Primary of Consciousness"
 date: 2022-04-03
 tags:
 - seed
+- PHIL451A
 ---
 
 Related: [[thoughts/consciousness|consciousness]], [[thoughts/monism#Neutral Monism|neutral monism]]
 
 ## Primacy of Consciousness
-PHIL450A Paper 3
+PHIL451A Paper 3
 
 > Is consciousness primary?
 

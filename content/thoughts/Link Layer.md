@@ -3,6 +3,7 @@ title: "Link Layer"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Layer 4, the layer below the [Network Layer](thoughts/Network%20Layer.md) and layer above the [[Physical Layer]]

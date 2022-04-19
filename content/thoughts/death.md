@@ -3,6 +3,7 @@ title: "Death"
 date: 2022-03-11
 tags:
 - seed
+- PHIL451A
 ---
 
 Conceptions of death in [The Upanisads](thoughts/The%20Upanisads.md) and [Epicurueanism](thoughts/Epicurueanism.md)

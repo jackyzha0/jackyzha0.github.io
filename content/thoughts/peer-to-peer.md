@@ -3,6 +3,7 @@ title: "Peer to peer"
 date: 2022-03-30
 tags:
 - seed
+- CPSC317
 aliases:
 - peer-to-peer
 - p2p

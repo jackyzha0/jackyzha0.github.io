@@ -3,6 +3,7 @@ title: "Buddhism"
 date: 2022-01-18
 tags:
 - seed
+- PHIL240A
 ---
 
 ## Four Noble Truths

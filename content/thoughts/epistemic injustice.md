@@ -3,6 +3,7 @@ title: "Epistemic injustice"
 date: 2022-03-02
 tags:
 - seed
+- PHIL240A
 ---
 
 from *Epistemic Injustice* by Miranda Fricker

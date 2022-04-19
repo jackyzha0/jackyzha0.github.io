@@ -3,6 +3,7 @@ title: "Hard problem of consciousness"
 date: 2022-01-31
 tags:
 - seed
+- PHIL451A
 ---
 
 Related: [mind body problem](thoughts/mind%20body%20problem.md), [Materialism](thoughts/Materialism.md)

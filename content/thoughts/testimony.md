@@ -3,6 +3,7 @@ title: "Testimony"
 date: 2022-03-07
 tags:
 - seed
+- PHIL240A
 ---
 
 Forming a belief based on the [trust](thoughts/trust.md) of another's written or spoken word.

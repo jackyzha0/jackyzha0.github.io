@@ -3,6 +3,7 @@ title: "The self"
 date: 2022-03-11
 tags:
 - seed
+- PHIL451A
 ---
 
 1. Me (self-as-object)

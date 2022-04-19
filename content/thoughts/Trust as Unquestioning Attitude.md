@@ -1,9 +1,12 @@
 ---
-title: "PHIL 240A A1: Trust as Unquestioning Attitude"
+title: "Trust as Unquestioning Attitude"
 date: 2022-01-14
 tags:
 - fruit
+- PHIL240A
 ---
+
+PHIL240A Essay 1
 
 Explain how Nguyen's account of trust as an unquestioning attitude entails that we integrate objects into our own agency.
 

@@ -3,6 +3,7 @@ title: "Monism"
 date: 2022-04-05
 tags:
 - seed
+- PHIL451A
 ---
 
 Monism holds that ultimate reality is *all of one kind and one kind only*.

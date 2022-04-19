@@ -3,6 +3,7 @@ title: "UDP"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 ## User Datagram [Protocol](thoughts/Protocol.md) (UDP)

@@ -3,6 +3,7 @@ title: "Bridging the explanatory gap from the other side"
 date: 2022-04-07
 tags:
 - fruit
+- PHIL451A
 ---
 
 ![[thoughts/images/consciousness-midjourney.png]]*"Bridging the explanatory gap from the other side" [@midjourney](https://www.midjourney.com/)*
@@ -80,7 +81,7 @@ It is in this neutrally monistic view that one can acknowledge consciousness as 
 
 Instead of absorbing or reducing contents of experience into the relational network of objective science or vice versa, we could strive towards embedding these experiences within a broader network of a potentially new amplified science of structures which we may not know of yet.
 
-*Adapted version of my [[thoughts/Primary of Consciousness|PHIL450A final paper]].*
+*Adapted version of my [[thoughts/Primary of Consciousness|PHIL451A final paper]].*
 
 ![[thoughts/images/observatory-midjourney.png]]*"A beautiful observatory in the park of Mars" in the style of James Paik and Ross Tran @midjourney*
 

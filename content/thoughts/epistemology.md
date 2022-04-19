@@ -3,6 +3,7 @@ title: "Epistemology"
 date: 2022-01-18
 tags:
 - seed
+- PHIL240A
 ---
 
 ## Validity

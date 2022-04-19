@@ -3,6 +3,7 @@ title: "VPN"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Virtual Private Networks

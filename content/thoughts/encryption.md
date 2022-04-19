@@ -3,6 +3,7 @@ title: "Encryption"
 date: 2022-04-07
 tags:
 - seed
+- CPSC317
 ---
 
 An encryption algorithm comprises

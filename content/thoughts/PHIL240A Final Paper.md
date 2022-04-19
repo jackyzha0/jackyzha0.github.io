@@ -3,6 +3,7 @@ title: "PHIL240A Final Paper"
 date: 2022-04-12
 tags:
 - fruit
+- PHIL240A
 ---
 
 ## Section I: Trusting Institutions

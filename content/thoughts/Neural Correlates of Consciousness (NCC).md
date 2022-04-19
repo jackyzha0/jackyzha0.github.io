@@ -3,6 +3,7 @@ title: "Neural Correlates of Consciousness (NCC)"
 date: 2022-03-04
 tags:
 - seed
+- PHIL451A
 ---
 
 - Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.

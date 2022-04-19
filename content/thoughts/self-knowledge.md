@@ -3,6 +3,8 @@ title: "Self-knowledge"
 date: 2022-02-18
 tags:
 - sapling
+- PHIL240A
+- PHIL451A
 ---
 
 ## Reflexivity vs Reflectivity

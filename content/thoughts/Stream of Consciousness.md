@@ -3,6 +3,7 @@ title: "Stream of Consciousness"
 date: 2022-03-04
 tags:
 - seed
+- PHIL451A
 ---
 
 Quotes from *The Principles of Psychology* by William James

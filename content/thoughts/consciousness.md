@@ -3,6 +3,7 @@ title: "Consciousness"
 date: 2021-08-12T23:54:29-04:00
 tags:
 - sapling
+- PHIL451A
 ---
 
 > If $x$ is conscious, then there is an experience of what it is like to be $x$

@@ -3,6 +3,7 @@ title: "Religious authority"
 date: 2022-03-23
 tags:
 - seed
+- PHIL240A
 ---
 
 As it pertains to [epistemic authority](thoughts/epistemic%20authority.md)

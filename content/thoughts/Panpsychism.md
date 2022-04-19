@@ -3,6 +3,7 @@ title: "Panpsychism"
 date: 2022-03-12
 tags:
 - seed
+- PHIL451A
 ---
 
 Opposite take to that of [Materialism](thoughts/Materialism.md). Panpsychists deny that the mind is fundamentally non-mental.

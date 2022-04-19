@@ -3,6 +3,7 @@ title: "IP Addresses"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.

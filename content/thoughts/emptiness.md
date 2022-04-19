@@ -3,6 +3,8 @@ title: "Emptiness"
 date: 2022-01-18
 tags:
 - seed
+- PHIL240A
+- PHIL451A
 ---
 
 Emptiness is like the mathematical concept of 0.

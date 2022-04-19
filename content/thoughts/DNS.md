@@ -3,6 +3,7 @@ title: "DNS"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the [Internet](thoughts/Internet.md).

@@ -3,6 +3,7 @@ title: "Consciousness is not Information"
 date: 2022-03-13
 tags:
 - fruit
+- PHIL451A
 ---
 
 > Paper #2 for PHIL 451A

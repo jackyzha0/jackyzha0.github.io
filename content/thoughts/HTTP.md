@@ -3,6 +3,7 @@ title: "HTTP"
 date: 2022-03-21
 tags:
 - seed
+- CPSC317
 ---
 
 Main method of communication at the [Application Layer](thoughts/Application%20Layer.md) for the web

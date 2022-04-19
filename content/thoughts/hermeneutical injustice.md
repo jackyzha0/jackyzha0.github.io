@@ -3,6 +3,7 @@ title: "Hermeneutical injustice"
 date: 2021-12-25
 tags:
 - sapling
+- PHIL240A
 ---
 
 > The powerful tend to have appropriate understandings of their experiences ready to draw on as they make sense of their social experiences, whereas the powerless are more likely to find themselves having some social experiences through a glass darkly, with a best ill-fitting meanings to draw on in the effort to render them intelligible

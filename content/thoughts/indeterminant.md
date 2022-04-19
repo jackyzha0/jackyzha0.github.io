@@ -3,6 +3,7 @@ title: "Indeterminacy"
 date: 2022-01-28
 tags:
 - seed
+- PHIL240A
 ---
 
 > Anirvacanīyatva or indeterminancy

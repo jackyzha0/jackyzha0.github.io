@@ -3,6 +3,7 @@ title: "Network Layer (IP)"
 date: 2022-02-26
 tags:
 - seed
+- CPSC317
 ---
 
 Layer 3, the layer below the [Transport Layer](thoughts/Transport%20Layer.md) and layer above the [Link Layer](thoughts/Link%20Layer.md)

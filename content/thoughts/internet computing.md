@@ -3,9 +3,10 @@ title: "Internet Computing"
 date: 2022-01-17
 tags:
 - sapling
+- CPSC317
 ---
 
-*Notes for CPSC 317*
+*Notes for CPSC 317* [(see all notes)](/tags/CPSC317)
 
 The [Internet](thoughts/Internet.md) is a network of networks. The main goals was to integrate a number of separately  
 administrated entities into a common entity
