@@ -137,7 +137,7 @@ Delay
 - Queueing Delay: waiting time to get access to a link
 	- Variable
 	- Increase over service time when idle
-	- $\textrm{Delay}_{\textrm{Queueing}} = \frac{S}{1-U} - S = SU$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)
+	- $\textrm{Delay}_{\textrm{Queueing}} = \frac{S}{1-U} - S$ where $S$ is the average service time when no other requests and $U$ is the server utilization (usually traffic intensity)
 - Transmission Delay: time to write packet to medium
 	- Fixed for bits, variable for packets (dependent on size)
 	- $\textrm{Delay}_{\textrm{Transmission}} = \frac{\textrm{Message size} \times 8 bits/byte}{\textrm{Bandwidth}}$ for *each* segment (as each router needs to receive the entire packet before adding it to the queue)
@@ -149,7 +149,7 @@ Delay
 Traffic Intensity
 - Determined by
 	- Number of packets arriving per second: $a$
-	- Average packet size: $L$
+	- Average packet size: $L$ in bits
 	- Transmission rate: rate at which bits are disposed of per second: $R$
 - Traffic Intensity: $\frac{La}{R}$
 

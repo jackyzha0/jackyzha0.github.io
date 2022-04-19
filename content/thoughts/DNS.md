@@ -38,6 +38,9 @@ Types:
 4. AAAA (addressx4 record)
 	1. name: hostname
 	2. value: IPv6 address
+5. CNAME (canonical name)
+	1. name: alias
+	2. value: canonical name (e.g. foo.com)
 
 Inserting records into DNS
 1. Register name with a registrar
