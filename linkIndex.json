@@ -884,7 +884,7 @@
         {
           "source": "/posts/primacy-of-consciousness",
           "target": "/thoughts/Primary-of-Consciousness",
-          "text": "PHIL450A final paper"
+          "text": "PHIL451A final paper"
         },
         {
           "source": "/posts/primacy-of-consciousness",
@@ -5303,6 +5303,11 @@
       "/thoughts/internet-computing": [
         {
           "source": "/thoughts/internet-computing",
+          "target": "/tags/CPSC317",
+          "text": "(see all notes)"
+        },
+        {
+          "source": "/thoughts/internet-computing",
           "target": "/thoughts/Internet",
           "text": "Internet"
         },
@@ -6262,6 +6267,11 @@
         }
       ],
       "/thoughts/philosophy-of-mind": [
+        {
+          "source": "/thoughts/philosophy-of-mind",
+          "target": "/tags/PHIL451A",
+          "text": "(see all notes)"
+        },
         {
           "source": "/thoughts/philosophy-of-mind",
           "target": "/thoughts/consciousness",
@@ -8299,6 +8309,20 @@
           "text": "reflect"
         }
       ],
+      "/tags/CPSC317": [
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/tags/CPSC317",
+          "text": "(see all notes)"
+        }
+      ],
+      "/tags/PHIL451A": [
+        {
+          "source": "/thoughts/philosophy-of-mind",
+          "target": "/tags/PHIL451A",
+          "text": "(see all notes)"
+        }
+      ],
       "/thoughts/A-City-is-not-a-Computer": [
         {
           "source": "/thoughts/information-professions",
@@ -9712,7 +9736,7 @@
         {
           "source": "/posts/primacy-of-consciousness",
           "target": "/thoughts/Primary-of-Consciousness",
-          "text": "PHIL450A final paper"
+          "text": "PHIL451A final paper"
         },
         {
           "source": "/thoughts/consciousness",
@@ -16674,7 +16698,7 @@
     {
       "source": "/posts/primacy-of-consciousness",
       "target": "/thoughts/Primary-of-Consciousness",
-      "text": "PHIL450A final paper"
+      "text": "PHIL451A final paper"
     },
     {
       "source": "/posts/primacy-of-consciousness",
@@ -20723,6 +20747,11 @@
     },
     {
       "source": "/thoughts/internet-computing",
+      "target": "/tags/CPSC317",
+      "text": "(see all notes)"
+    },
+    {
+      "source": "/thoughts/internet-computing",
       "target": "/thoughts/Internet",
       "text": "Internet"
     },
@@ -21605,6 +21634,11 @@
       "source": "/thoughts/philosophical-realism",
       "target": "/thoughts/Hard-problem-of-consciousness",
       "text": "Hard problem of consciousness"
+    },
+    {
+      "source": "/thoughts/philosophy-of-mind",
+      "target": "/tags/PHIL451A",
+      "text": "(see all notes)"
     },
     {
       "source": "/thoughts/philosophy-of-mind",
