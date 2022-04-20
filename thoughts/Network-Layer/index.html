@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">Network Layer (IP)</h1>
     <article>
       <p class="meta">
-          Last updated April 18, 2022
+          Last updated April 19, 2022
       </p>
       <ul class="tags">
     
@@ -450,6 +450,27 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#packet-definition">Packet Definition</a></li>
+        <li><a href="#bgp-advertisement">BGP Advertisement</a></li>
+      </ol>
+    </li>
+    <li><a href="#network-tiers">Network Tiers</a></li>
+    <li><a href="#routing">Routing</a>
+      <ol>
+        <li><a href="#internal-gateway-protocols-igp">Internal Gateway Protocols (IGP)</a></li>
+        <li><a href="#external-gateway-protocol-egp">External Gateway Protocol (EGP)</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -463,6 +484,28 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 <p>Layer 3, the layer below the 
 
@@ -493,13 +536,26 @@ if (!doNotTrack) {
 <li>AS Path: Sequence of AS&rsquo;s a packet would need to travel through</li>
 </ol>
 <h2 id="network-tiers">Network Tiers</h2>
+<p>The structure of the internet is organized into entities called <strong>autonomous systems (ASs)</strong>.</p>
+<p>Each AS is</p>
 <ul>
-<li>Tier 1 Networks
+<li>
+<p>assigned a range/collection of IP addresses</p>
+</li>
+<li>
+<p>responsible for routing to addresses it “owns”</p>
+</li>
+<li>
+<p>responsible for routing to addresses that are not its responsibility</p>
+</li>
+<li>
+<p>Tier 1 Networks</p>
 <ul>
 <li>A network that can exchange traffic with other Tier 1 networks without paying any fees (transit-free) for the exchange of traffic in either direction</li>
 </ul>
 </li>
-<li>Tier 2 Networks
+<li>
+<p>Tier 2 Networks</p>
 <ul>
 <li>A network that peers for free with some networks, but still purchases IP transit or pays for peering to reach at least some portion of the 
 
@@ -507,9 +563,53 @@ if (!doNotTrack) {
 <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a></li>
 </ul>
 </li>
-<li>Tier 3 Networks
+<li>
+<p>Tier 3 Networks</p>
 <ul>
 <li>A network that solely purchases transit/peering from other networks to participate in the Internet. Everybody else</li>
+</ul>
+</li>
+</ul>
+<h2 id="routing">Routing</h2>
+<p>Both IGP and EGP run at the <a href="/thoughts/Application-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Application-Layer">application layer</a></p>
+<h3 id="internal-gateway-protocols-igp">Internal Gateway Protocols (IGP)</h3>
+<ul>
+<li>routing within a single AS, under the control of a single administrative entity</li>
+<li>Link State
+<ul>
+<li>each router tells every other router about all its links</li>
+<li>this gives other routers complete info about the entire network</li>
+<li>every so often, each router uses Dijkstra’s to find shortest path to all routers, then it updates its forwarding table</li>
+<li>OSPF (open-shortest-path-first)
+<ul>
+<li>most used IGP in the internet</li>
+<li>uses link-state protocol (each router has complete topological map of the entire AS)</li>
+<li>supports extensions such as areas (support hierarchy and scaling)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Distance Vector
+<ul>
+<li>every so often, each router tells its neighbours about the cost of its best routes to the networks it knows about</li>
+<li>a receiving router checks if any of the broadcasted routes would shorten their path to destination</li>
+<li>if so, it updates its routing table to route through the first router</li>
+</ul>
+</li>
+</ul>
+<h3 id="external-gateway-protocol-egp">External Gateway Protocol (EGP)</h3>
+<ul>
+<li>routing between different AS, no control over the routing policies of other AS (External Gateway Protocols - EGP)</li>
+<li>BGP
+<ul>
+<li>the protocol that all ASs use for inter-AS routing</li>
+<li>packets are not routed to specific destination address, but to CIDRized prefixes, with each prefix representing a subnet or collection of subnets</li>
+<li>enables each router to
+<ul>
+<li>obtain prefix information from neighbouring ASs</li>
+<li>determine “best” routes to the prefixes</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

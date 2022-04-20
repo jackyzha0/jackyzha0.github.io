@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">317 Note Sheet</h1>
     <article>
       <p class="meta">
-          Last updated April 18, 2022
+          Last updated April 19, 2022
       </p>
       <ul class="tags">
     
@@ -455,6 +455,7 @@ if (!doNotTrack) {
     <li><a href="#definitions">Definitions</a></li>
     <li><a href="#packet-routing">Packet Routing</a></li>
     <li><a href="#network-protocol-stack">Network Protocol Stack</a></li>
+    <li><a href="#multiplexing">Multiplexing</a></li>
     <li><a href="#ip-addresses">IP Addresses</a></li>
     <li><a href="#error-correction">Error Correction</a></li>
     <li><a href="#cidr-questions">CIDR Questions</a></li>
@@ -578,6 +579,15 @@ if (!doNotTrack) {
 </ol>
 </li>
 </ol>
+<h2 id="multiplexing">Multiplexing</h2>
+<p>Multiple input streams must share the medium. It must be possible to “demultiplex” at the destination</p>
+<p>Types</p>
+<ol>
+<li>Time division multiplexing: each person gets a certain amount of time on the channel</li>
+<li>Frequency division multiplexing: each person gets a single frequency band on the channel</li>
+<li>Code division multiplexing: combines all messages using a specific code that can be decoded if code is known</li>
+<li>Orthogonal multiplexing: a combination of techniques</li>
+</ol>
 <h2 id="ip-addresses">IP Addresses</h2>
 <ul>
 <li>Number of hosts in a network is $2^{32 - \textrm{length of network mask}} - 2$ (as first and last addresses in a network are reserved)</li>
@@ -610,11 +620,8 @@ if (!doNotTrack) {
 <h2 id="vpn-vs-nat">VPN vs NAT</h2>
 <ul>
 <li>Insert diagram here</li>
-<li>VPN: completely encapsulates the IP packet
-<ul>
-<li>Within</li>
-</ul>
-</li>
+<li>VPN: completely encapsulates the IP packet</li>
+<li>NAT: rewrites</li>
 </ul>
  
 

@@ -2108,6 +2108,11 @@
           "source": "/thoughts/Network-Layer",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Application-Layer",
+          "text": "application layer"
         }
       ],
       "/thoughts/Neural-Correlates-of-Consciousness-NCC": [
@@ -8406,6 +8411,11 @@
           "source": "/thoughts/HTTP",
           "target": "/thoughts/Application-Layer",
           "text": "Application Layer"
+        },
+        {
+          "source": "/thoughts/Network-Layer",
+          "target": "/thoughts/Application-Layer",
+          "text": "application layer"
         },
         {
           "source": "/thoughts/Transport-Layer",
@@ -17814,6 +17824,11 @@
       "source": "/thoughts/Network-Layer",
       "target": "/thoughts/Internet",
       "text": "Internet"
+    },
+    {
+      "source": "/thoughts/Network-Layer",
+      "target": "/thoughts/Application-Layer",
+      "text": "application layer"
     },
     {
       "source": "/thoughts/Neural-Correlates-of-Consciousness-NCC",
