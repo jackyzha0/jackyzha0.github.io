@@ -42,7 +42,7 @@ Hole-punching usually involves the use of third-party hosts that run STUN or ICE
 Note: as [UDP](thoughts/UDP.md) usually expires after very short periods of time, hole-punching sometimes sends keep-alive packets to maintain the connection
 
 ### Flow
-Let $A$ and B $be$ the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.
+Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.
 1. A and B both begin a [UDP](thoughts/UDP.md) conversation with $S$
 2. NAT devices $N_A$ and $N_B$ create UDP translations and assign temporary external ports $EP_A$ and $EP_B$
 3. S looks at UDP packets to get source ports of $N_A$ and $N_B$ (through $EP_A$ and $EP_B$)

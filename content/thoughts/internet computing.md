@@ -42,7 +42,7 @@ Multiple input streams must share the medium. It must be possible to “demultip
 Types
 1. Time division multiplexing: each person gets a certain amount of time on the channel
 2. Frequency division multiplexing: each person gets a single frequency band on the channel
-3. Code division multiplexing: combines all messages using a specific code that can be decoded if code is known (?)
+3. Code division multiplexing: combines all messages using a specific code that can be decoded if code is known
 4. Orthogonal multiplexing: a combination of techniques
 
 ## Network [Protocol](thoughts/Protocol.md) Stack (from most abstract to least)

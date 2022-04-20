@@ -62,6 +62,15 @@ Each layer takes data from above adds header information to create new data unit
 	1. Unit: Bits
 	2. Responsibilities: Encodes data appropriately for the physical medium
 
+## Multiplexing
+Multiple input streams must share the medium. It must be possible to “demultiplex” at the destination
+
+Types
+1. Time division multiplexing: each person gets a certain amount of time on the channel
+2. Frequency division multiplexing: each person gets a single frequency band on the channel
+3. Code division multiplexing: combines all messages using a specific code that can be decoded if code is known
+4. Orthogonal multiplexing: a combination of techniques
+
 ## IP Addresses
 - Number of hosts in a network is $2^{32 - \textrm{length of network mask}} - 2$ (as first and last addresses in a network are reserved)
 
@@ -82,4 +91,4 @@ Each layer takes data from above adds header information to create new data unit
 ## VPN vs NAT
 - Insert diagram here
 - VPN: completely encapsulates the IP packet
-	- Within 
+- NAT: rewrites 
