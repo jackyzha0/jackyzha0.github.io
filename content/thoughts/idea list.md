@@ -6,11 +6,29 @@ tags:
 - technical
 ---
 
+- wave function collapse for poetry
+	- bringing shape-shifting text to its most literal form
+	- [https://oskarstalberg.com/Townscaper/](https://oskarstalberg.com/Townscaper/ "https://oskarstalberg.com/Townscaper/") for words
+	- base representation is word vectors
+		- you can jiggle word vectors around
+		- apply transformations to vectors (e.g. the past tense vector)
+		- some sort of 1d marching cubes which modifies a vector depending on context?
+			- potentially transformer related
+	- image <-> text interop using CLIP/unCLIP/DALL-E?
+- better search
+	- searching through vectors
+		- (no clue if this would work) integral images but applied to vector similarity search in text documents
+		- viola-jones for text embeddings
+		- https://github.com/facebookresearch/faiss
+	- how do we encode sentences/paragraphs/documents as vectors?
+		- https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings
+		- https://github.com/ryankiros/skip-thoughts
+		- https://github.com/pytorch/fairseq/tree/main/examples/data2vec
 - phone as wiimote
 - hand position to gesture toolkit
 -   baba is you but for browser interactions
 	-   data plane is main source of truth
-		- optionally replicated using [[thoughts/Rhizome|Rhizome]]
+		- optionally replicated using [[thoughts/Rhizome Research Proposal|Rhizome]]
 	-   data inputs like webcam, keyboard, mouse, window size, etc.
 	-   relations are from data plane → data plane (no functions!)
 		- e.g. x bounces off of y
@@ -28,7 +46,7 @@ tags:
 	- distributed state
 -   tools for thought applied to IDEs?
 	-   IDEs as graph editors?
-- more on decentralized tech in [Rhizome](thoughts/Rhizome.md)
+- more on decentralized tech in [Rhizome Research Proposal](thoughts/Rhizome%20Research%20Proposal.md)
 - permaweb npm?
 	- pinning specific code versions
 -   LRU blockchain
@@ -70,50 +88,14 @@ tags:
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
 - Discord bot for interacting with DAOs
-- aws for web3
-- tool to [interop](thoughts/interoperability.md) between different graph representations
-	-   e.g. Notion to Roam to Obsidian
-	-   CommonGraph??
 - sound-based hashing for cryptographic verification
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
-- (no clue if this would work) integral images but applied to vector similarity search in text documents
-	- viola-jones for text embeddings
 * web3 action-space exploration
 	* Possible referents/verses extension?
 	- chain crawlers indexing smart contracts → creating logical relations
 	- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
 	- suggesting what you can do with existing resources in your wallet
 		- over time, emergent best-practices develop (i.e. whats the most obvious thing to do after you buy BTC, what does this [NFT](thoughts/NFT.md) enable me to do?)
-* [Tools for Thought](thoughts/tools%20for%20thought.md)
-	* write first, organize later
-		* good daily notes, choose what to carry over from the previous day
-	* block based editors are neat cause i can move stuff around really easily
-		* if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes
-		* spatially consistent? [memory palace](thoughts/memory%20palace.md) vibes -> https://twitter.com/jordanmoore/status/1418942880941477891
-	* card based backlinks/outgoing links
-		* on the left, you can see all the notes that link to the current page
-		* on the right, you can see all outgoing links
-		* hovering on each card will reveal another layer which those ones are connected to
-	* graph view
-		* i wanted to have the option for 3d graphs too
-	* timeline view
-		* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
-	* good global search
-		* being able to index content fast and effectively
-	* [interoperability](thoughts/interoperability.md), of data, easy export
-* Long Term Archival Storage Service
-	- Why is storage expensive lmao
-	- What if there was [Golem](https://www.golem.network/) but for storage instead of compute? [Decentralized](thoughts/decentralization.md) storage so you can
-    1. Sell extra storage space you have and get paid based off of capacity + availability
-		1. maybe use a coin for this ($SHALE)?
-		2. create a client to facilitate this
-	2. Buying storage means your local folder that you choose will be symlinked to a mounted network drive
-		1. what is actually happening is that your files are redundantly 
-	* Questions
-		1. can i just do this using hyperspace instead of using a blockchain lol
-		2. ETH layer 2?
-		3. any way to avoid gas fees?
-		4. Is it possible to build on top of the [Golem platform](https://www.golem.network/platform) directly?
 * DreamCoder boolsat
 	* Creating a LISP-like higher-order language to exploit reusable sub-proofs in specific domains (e.g. graph colouring)
 	* kinda iffy on the sat problem solver using dreamcoder, not a lot of exploitable structure in the proofs (otherwise we'd have a more reliable human method)
@@ -125,20 +107,6 @@ tags:
 	- DreamCoder Paper:
 		- https://arxiv.org/pdf/2006.08381.pdf
 		- https://www.youtube.com/watch?v=qtu0aSTDE2I
-* Themis — go-based api testing framework
-	-   language agnostic using dockerbasical
-	-   github actions for CI integration
-	-   considerations?
-		-   different http verbs
-		-   form data
-		-   mock headers
-	-   test reports
-	-   can actually use concurrency lmao
-		-   buffered channel of tests, run x tests in parallel
-* Better graph visualization
-	* [social graphs](thoughts/social%20graphs.md)
-	* [https://twitter.com/azlenelza/status/1370159999691919364](https://twitter.com/azlenelza/status/1370159999691919364) but for graphs
-	* [https://twitter.com/astralwave/status/1293104261778354176](https://twitter.com/astralwave/status/1293104261778354176)
 * Shale: the cloud-native scripting language
 	* things to prioritize
 		1. great tooling and extensibility

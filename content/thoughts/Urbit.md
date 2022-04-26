@@ -12,6 +12,8 @@ tags:
 - Azimuth: ID
 - Ames: Network
 
+> imo, falls into the category of vaporwave tech that never manifested itself into anything useful
+
 ## OS
 In 1974 a computer was a mainframe the size of a room and was shared by hundreds of people. By 1984 a computer was the size of a desk and everyone had their own PC. The PC was more flexible and more fun, so it won by a wide margin. Then, with the rise of the internet, the PC’s flexibility slowly became irrelevant -- we’re more or less back to the timesharing model of the 1970s.
 

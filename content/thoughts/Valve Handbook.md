@@ -37,10 +37,10 @@ Flatness implies anyone has the power to green-light projects. So how does Valve
 2. Strong projects are ones in which people can see demonstrated value; they staff up easily.
 
 How should I as an individual choose what to work on? A few good guiding questions:
-	1. Of all the projects currently under way, what’s the most valuable thing I can be working on?
-	2. Which project will have the highest direct impact on our customers? How much will the work I ship benefit them?
-	3. Is Valve not doing something that it should be doing?
-	4. What’s interesting? What’s rewarding? What leverages my individual strengths the most?
+1. Of all the projects currently under way, what’s the most valuable thing I can be working on?
+2. Which project will have the highest direct impact on our customers? How much will the work I ship benefit them?
+3. Is Valve not doing something that it should be doing?
+4. What’s interesting? What’s rewarding? What leverages my individual strengths the most?
 
 How do people discover new projects? There is no central 'board', but the best way to find out about projects is to just ask people. 
 
