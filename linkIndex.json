@@ -2732,6 +2732,18 @@
           "text": "TCP"
         }
       ],
+      "/thoughts/Valve-Handbook": [
+        {
+          "source": "/thoughts/Valve-Handbook",
+          "target": "/thoughts/metalabel",
+          "text": "metalabel"
+        },
+        {
+          "source": "/thoughts/Valve-Handbook",
+          "target": "/thoughts/friction",
+          "text": "friction-ful"
+        }
+      ],
       "/thoughts/Vanilla-Ice-Cream-effect": [
         {
           "source": "/thoughts/Vanilla-Ice-Cream-effect",
@@ -3678,6 +3690,16 @@
           "source": "/thoughts/digital-commons",
           "target": "/thoughts/urban-planning",
           "text": "urban planning"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/maintenance",
+          "text": "maintenance"
         },
         {
           "source": "/thoughts/digital-commons",
@@ -12137,6 +12159,16 @@
           "text": "friction"
         },
         {
+          "source": "/thoughts/Valve-Handbook",
+          "target": "/thoughts/friction",
+          "text": "friction-ful"
+        },
+        {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
           "source": "/thoughts/digital-commons",
           "target": "/thoughts/friction",
           "text": "friction"
@@ -13461,6 +13493,11 @@
           "text": "maintenance"
         },
         {
+          "source": "/thoughts/digital-commons",
+          "target": "/thoughts/maintenance",
+          "text": "maintenance"
+        },
+        {
           "source": "/thoughts/incentives",
           "target": "/thoughts/maintenance",
           "text": "maintenance"
@@ -13527,6 +13564,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/metalabel",
           "text": "Metalabel"
+        },
+        {
+          "source": "/thoughts/Valve-Handbook",
+          "target": "/thoughts/metalabel",
+          "text": "metalabel"
         }
       ],
       "/thoughts/metaphysics": [
@@ -18386,6 +18428,16 @@
       "text": "TCP"
     },
     {
+      "source": "/thoughts/Valve-Handbook",
+      "target": "/thoughts/metalabel",
+      "text": "metalabel"
+    },
+    {
+      "source": "/thoughts/Valve-Handbook",
+      "target": "/thoughts/friction",
+      "text": "friction-ful"
+    },
+    {
       "source": "/thoughts/Vanilla-Ice-Cream-effect",
       "target": "/thoughts/consensus",
       "text": "Consensus"
@@ -19244,6 +19296,16 @@
       "source": "/thoughts/digital-commons",
       "target": "/thoughts/urban-planning",
       "text": "urban planning"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/friction",
+      "text": "friction"
+    },
+    {
+      "source": "/thoughts/digital-commons",
+      "target": "/thoughts/maintenance",
+      "text": "maintenance"
     },
     {
       "source": "/thoughts/digital-commons",
