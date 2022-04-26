@@ -7,6 +7,17 @@ tags:
 
 How might we analogize [urban planning](thoughts/urban%20planning.md) to social media and digital spaces? -> https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12
 
+## Online Parks
+[Eli Pariser in Wired](https://www.wired.com/story/to-mend-a-broken-internet-create-online-parks/)
+
+> When technologists refer to platforms like Facebook and Twitter as “walled gardens”—environments where the corporate owner has total control—they’re literally referring to those same private pleasure gardens that Whitman was reacting to. And while Facebook and Twitter may be open to all, as in those gardens, their owners determine the rules.
+
+- [[thoughts/friction|friction]] is essential to public space.
+	- "Public spaces are so generative precisely because we run into people we’d normally avoid, encounter events we’d never expect, and have to negotiate with other groups that have their own needs."
+	- Rapid growth can quickly overwhelm and destroy it—as anyone who has lived in a gentrifying neighborhood knows.
+- public goods require constant, active care and [[thoughts/maintenance|maintenance]]
+	- nuanced labor of governance and maintenance—finding the balance between welcoming everyone and providing safety and comfort for everyone—is critical to the health of online communities
+
 ## Internet Studio Gardens
 By [Jon Borichevskiy](https://jon.bo/posts/internet-studio-gardens/)
 

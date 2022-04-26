@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> “One day I will find the right words, and they will be simple.” ― **Jack Kerouac, The Dharma Bums**
+
 ## Gall's Law
 A rule of thumb for [complexity](thoughts/complexity.md) system design: simple alphabets produce complex behaviors, complex alphabets produce stupid behaviors
 
