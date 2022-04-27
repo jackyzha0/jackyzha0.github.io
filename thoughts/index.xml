@@ -6,7 +6,34 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAP Theorem</title>
+      <link>https://jzhao.xyz/thoughts/CAP-Theorem/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CAP-Theorem/</guid>
+      <description>When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:</description>
+    </item>
+    
+    <item>
+      <title>Lattice Proposal</title>
+      <link>https://jzhao.xyz/thoughts/Lattice-Proposal/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Lattice-Proposal/</guid>
+      <description>Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Research Proposal|Rhizome]].</description>
+    </item>
+    
+    <item>
+      <title>Local-first software</title>
+      <link>https://jzhao.xyz/thoughts/local-first-software/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/local-first-software/</guid>
+      <description>By centralizing data storage on servers, cloud apps also take away ownership and agency from users.</description>
+    </item>
+    
     <item>
       <title>Valve Handbook</title>
       <link>https://jzhao.xyz/thoughts/Valve-Handbook/</link>
@@ -266,6 +293,15 @@ Debates from Classical South Asia  Right and wrong aren’t directly perceptible
     </item>
     
     <item>
+      <title>Rhizome</title>
+      <link>https://jzhao.xyz/thoughts/Rhizome-Research-Proposal/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Proposal/</guid>
+      <description>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.</description>
+    </item>
+    
+    <item>
       <title>Consciousness is not Information</title>
       <link>https://jzhao.xyz/thoughts/Consciousness-is-not-Information/</link>
       <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
@@ -300,7 +336,7 @@ Prompt 1: Is consciousness essentially a kind of information?</description>
       
       <guid>https://jzhao.xyz/thoughts/death/</guid>
       <description>Conceptions of death in The Upanisads and Epicurueanism
-Death in contemporary terms  State of being dead The momentary event of dying  Ending of the dying process (denouement death): separates the dying process from the subsequent disintegration Point when extinction is assured (threshold death): irreversable loss of consciousness/personhood/functioning  Medical Criteria  Irreversible cessation of circulatory-respiratory function (traditionally) Irreversible cessation of the functioning of the entire brain, including the brain stem (the modern biomedical criterion) Irreversible cessation of the functioning of the cerebral cortex (newer controversial idea that the cortex is the locus of consciousness)     Loss of integrated functioning (integration death)   The process of dissolution (dying)   Near Death Experiences (NDEs)  Subjective experiences occurring when people are physiologically near death or when they believe themselves to be near death</description>
+Death in contemporary terms1  State of being dead The momentary event of dying  Ending of the dying process (denouement death): separates the dying process from the subsequent disintegration Point when extinction is assured (threshold death): irreversable loss of consciousness/personhood/functioning  Medical Criteria  Irreversible cessation of circulatory-respiratory function (traditionally) Irreversible cessation of the functioning of the entire brain, including the brain stem (the modern biomedical criterion) Irreversible cessation of the functioning of the cerebral cortex (newer controversial idea that the cortex is the locus of consciousness)     Loss of integrated functioning (integration death)   The process of dissolution (dying)   Near Death Experiences (NDEs)1  Subjective experiences occurring when people are physiologically near death or when they believe themselves to be near death</description>
     </item>
     
     <item>
@@ -347,8 +383,8 @@ When a host requires assurance that the remote end has actually received the dat
       <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Dreams/</guid>
-      <description>Threefold model of consciousness Different brain-body processes
- Awareness: specific to global levels of awareness Contents of awareness: specific to consciousness of an object in a given sense field Identification: sense of the Self  Hypnagogic State State of leading into sleep</description>
+      <description>Threefold model of consciousness1 Different brain-body processes
+ Awareness: specific to global levels of awareness Contents of awareness: specific to consciousness of an object in a given sense field Identification: sense of the Self  Hypnagogic State1 State of leading into sleep</description>
     </item>
     
     <item>
@@ -690,7 +726,7 @@ Similar to A love letter to virtual community care by Theresa Gao</description>
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Urbit/</guid>
-      <description>Terminology  Arvo: OS Hoon: language Tlon: company Azimuth: ID Ames: Network  OS In 1974 a computer was a mainframe the size of a room and was shared by hundreds of people.</description>
+      <description>Terminology  Arvo: OS Hoon: language Tlon: company Azimuth: ID Ames: Network   imo, falls into the category of vaporwave tech that never manifested itself into anything useful</description>
     </item>
     
     <item>
@@ -709,7 +745,7 @@ A beautiful dialogue between Glissand and the curator Hans Ulrish Obrist.</descr
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/self-knowledge/</guid>
-      <description>Reflexivity vs Reflectivity Self-illumination/reflexivity
+      <description>Reflexivity vs Reflectivity1 Self-illumination/reflexivity
  Every conscious experience is directly revealed to itself.</description>
     </item>
     
@@ -807,7 +843,7 @@ Arweave uses a blockchain-like structure called the blockweave.</description>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Knowledge-Argument/</guid>
-      <description>Frank Jackson&amp;rsquo;s Knowledge Argument  Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV.</description>
+      <description>Frank Jackson&amp;rsquo;s Knowledge Argument1  Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV.</description>
     </item>
     
     <item>
@@ -816,7 +852,7 @@ Arweave uses a blockchain-like structure called the blockweave.</description>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/meditation/</guid>
-      <description>A Traditional Account  bhāvanā = “bringing into being” certain types of mental states, qualities, and traits through repeated practice śamatha(calm, tranquility): a state of sustained and stable attention, concentration.</description>
+      <description>A Traditional Account1  bhāvanā = “bringing into being” certain types of mental states, qualities, and traits through repeated practice śamatha(calm, tranquility): a state of sustained and stable attention, concentration.</description>
     </item>
     
     <item>
@@ -1005,7 +1041,7 @@ Explain how Nguyen&amp;rsquo;s account of trust as an unquestioning attitude ent
       <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/philosophy-of-mind/</guid>
-      <description>Notes for Philosophy 451A - Philosophy of the Mind (see all notes)</description>
+      <description>Notes for Philosophy 451A - Philosophy of the Mind (see all notes).</description>
     </item>
     
     <item>
@@ -2910,7 +2946,7 @@ Partly works because we can utilize collaborative thinking.</description>
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>phone as wiimote hand position to gesture toolkit baba is you but for browser interactions  data plane is main source of truth  optionally replicated using [[thoughts/Rhizome|Rhizome]]   data inputs like webcam, keyboard, mouse, window size, etc.</description>
+      <description>wave function collapse for poetry  bringing shape-shifting text to its most literal form  https://oskarstalberg.</description>
     </item>
     
     <item>
