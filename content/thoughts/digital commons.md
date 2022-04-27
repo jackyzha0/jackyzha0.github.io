@@ -42,12 +42,12 @@ Serendipity is bumping into new people you otherwise wouldn't have talked to or 
 
 Are there ways to be _less_ intentional with digital interactions?
 
-If you want to meet with someone you need to schedule it or visit a link, etc. There is no 'random' interaction. Even algorithmic experiences are like being carried away by the TikTok or Facebook algorithm rather than something out of the blue. Though these experiences may seem random at times, they are explicitly currated with an _end goal_ in mind.
+If you want to meet with someone you need to schedule it or visit a link, etc. There is no 'random' interaction. Even algorithmic experiences are like being carried away by the TikTok or Facebook algorithm rather than something out of the blue. Though these experiences may seem random at times, they are explicitly curated with an _end goal_ in mind.
 
-Are there any spaces that don't have ulterior motives and are just places of gathering? The only example that comes to mind where 'coincidental' interaction happen is within currated [interest groups](thoughts/social%20graphs.md) like onlike network forums around [games](thoughts/games.md) or technologies or early communities lead by superconnectors like the [Whole Earth 'Lectronic Link (WELL)](thoughts/From%20Counterculture%20to%20Cyberculture.md). How can we recreate these public 'watering holes' for people to gather around? 
+Are there any spaces that don't have ulterior motives and are just places of gathering? The only example that comes to mind where 'coincidental' interaction happen is within currated [interest groups](thoughts/social%20graphs.md) like online network forums around [games](thoughts/games.md) or technologies or early communities lead by superconnectors like the [Whole Earth 'Lectronic Link (WELL)](thoughts/From%20Counterculture%20to%20Cyberculture.md). How can we recreate these public 'watering holes' for people to gather around? 
 
 ### Permanence in Private Spaces
-Permance means that the environment reflects that people have been there. A shared garden to tend to, a bookshelf to work through, a guestbook of all the people who have dropped in and out.
+Permanence means that the environment reflects that people have been there. A shared garden to tend to, a bookshelf to work through, a guestbook of all the people who have dropped in and out.
 
 So many of our mediums have now tended towards [real time](thoughts/ephemereal%20content.md) in an effort to replicate the fleeting nature of face-to-face conversation; vanishing messages, video chats, and audio rooms. Yet, rarely do any of these platforms leave any indication whether a conversation ever happened between two people.
 
