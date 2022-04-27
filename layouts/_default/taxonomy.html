@@ -13,7 +13,10 @@
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
-    <h1>All {{.Title}}</h1>
+    <h1>All {{.Title | title}}</h1>
+    {{with .Params.description}}
+      <p>{{.}}</p>
+    {{end}}
     <article>
         <div class="tags">
             {{ range .Site.Taxonomies.tags.ByCount }}
