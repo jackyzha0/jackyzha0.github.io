@@ -7,14 +7,14 @@ tags:
 - PHIL451A
 ---
 
-### Frank Jackson's Knowledge Argument
+## Frank Jackson's Knowledge Argument[^1]
 - Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV. Through this, she learns everything there is to know about the physical nature of the world, including all there is to know about the causal and relational facts consequent upon all this, including of course functional roles.
 - If physicalism is true, she knows all there is to know.
 - Yet, if Mary is let out of her black-and-white room or given a colour TV, she will learn what it is like to see something red.
 
 The implication here is that Mary cannot learn what it is like to subjectively experience red from reading physical facts (similar argument re: [semantics](thoughts/semantics.md) in [Chinese room argument](thoughts/Chinese%20room%20argument.md)).
 
-### Dennett's Refutation of the Knowledge Argument
+## Dennett's Refutation of the Knowledge Argument[^1]
 
 > “And so, one day, Mary’s captors decided it was time for her to see colours. As a trick, they prepared a bright blue banana to present as her first colour experience ever. Mary took one look at it and said ‘Hey! You tried to trick me! Bananas are yellow but this one is blue!’ Her captors were dumbfounded. How did she do it? ‘Simple,’ she replied. ‘You have to remember that I know everything—absolutely everything— that could ever be known about the physical causes and effects of colour vision.
 
@@ -92,3 +92,4 @@ Thus, in Frank Jackson's Knowledge Argument, Mary has all the 'know-that' knowle
 [^3]: https://warwick.ac.uk/fac/cross_fac/iatl/study/ugmodules/humananimalstudies/lectures/32/nagel_bat.pdf
 [^4]: https://plato.stanford.edu/entries/knowledge-how/#LingArgu
 [^5]: *Knowing How and Knowing That: The Presidential Address*, Ryle 1946
+[^6]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

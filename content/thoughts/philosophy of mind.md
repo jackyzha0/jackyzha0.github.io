@@ -3,9 +3,10 @@ title: "Philosophy of Mind"
 date: 2022-01-12
 tags:
 - sapling
+- PHIL451A
 ---
 
-*Notes for Philosophy 451A - Philosophy of the Mind* [(see all notes)](/tags/PHIL451A)
+*Notes for Philosophy 451A - Philosophy of the Mind* [(see all notes)](/tags/PHIL451A). All content generally tagged #sapling and #PHIL451A are notes from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content.
 
 Guiding Questions
 - What is [consciousness](thoughts/consciousness.md)?  

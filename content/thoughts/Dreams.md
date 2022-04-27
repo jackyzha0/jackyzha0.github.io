@@ -6,14 +6,14 @@ tags:
 - PHIL451A
 ---
 
-## Threefold model of [consciousness](thoughts/consciousness.md)
+## Threefold model of [consciousness](thoughts/consciousness.md)[^1]
 Different brain-body processes
 
 1. Awareness: specific to global levels of awareness
 2. Contents of awareness: specific to consciousness of an object in a given sense field
 3. Identification: sense of [the Self](thoughts/the%20Self.md)
 
-## Hypnagogic State
+## Hypnagogic State[^1]
 State of leading into sleep
 
 - See images and hear sounds and strange associative thoughts
@@ -28,7 +28,7 @@ State of leading into sleep
 	- Not strong sense of being immersed in a world
 - We look *at* patterns and they absorb us
 
-## Dream State
+## Dream State[^1]
 Immersion in a dream
 
 > Dreams
@@ -68,7 +68,7 @@ Immersion in a dream
 	- Eye movements during lucid-REM sleep resemble waking perception more than they resemble waking imagination
 	- Upshot: to dream is to imagine a dream world and to identify with the dream ego immersed in that world
 
-## Mind-wandering and Dreaming
+## Mind-wandering and Dreaming[^1]
 - Similarities
 	- Content
 		- Largely audiovisual and emotional
@@ -83,7 +83,7 @@ Immersion in a dream
 	- Lack of meta-awareness (awareness of the current contents of consciousness)
 	- Large overlaps in activation patterns of cortical regions
 
-## Lucid Dreaming
+## Lucid Dreaming[^1]
 - A dream in which you can direct your attention to the dreamlike quality of the state
 - Features
 	- Greater clarity/vividness
@@ -98,7 +98,7 @@ Immersion in a dream
 	- Knowing you're dreaming seems to involve a certain kind of attention and cognitive control that is missing when you dream you're dreaming
 	- Seems to be a tell-tale LRLR eye moment signal during REM sleep when participants realize they are dreaming
 
-## Sleep Maps
+## Sleep Maps[^1]
 - Neuroscience
 	- Presence of conciousness (waking, dreaming) vs
 	- Absence of consciousness (dreamless sleep, coma)
@@ -113,3 +113,5 @@ Are sleep states conscious?
 	3. Invoked to explain the waking knowledge of having been asleep
 3. No: [Nyāya](thoughts/Nyāya.md)
 	1. Concept of sleep is based off of inference
+
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

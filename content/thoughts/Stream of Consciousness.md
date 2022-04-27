@@ -18,7 +18,7 @@ Quotes from *The Principles of Psychology* by William James
 
 See also: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md)
 
-## Types of thought
+## Types of thought[^1]
 - Spontaneous thought
 	- Weak automatic and deliberate constraints
 	- $\textrm{DN}_\textrm{MTL}$ (default network medial temporal lobe) exerts relatively strong diversifying influence on the stream of thought
@@ -38,7 +38,7 @@ Guided Thought
 	- Implies the monitoring and correcting of behaviour in relation to some norms
 - Both goal-directed thinking and rumination fall under this category
 
-## Abhidharma Buddhist Philosophy
+## Abhidharma Buddhist Philosophy[^1]
 - Abhidharmikas agree that the mental stream is always changing
 - Appears to flow continuously only to the untrained observer. Deeper examination indicates that the stream of consciousness is made up of very short-lived and discrete moments of awareness
 - Consciousness is reckoned by the particular condition dependent upon which it arises
@@ -82,7 +82,7 @@ Guided Thought
 
 ![Mind-moments](thoughts/images/Mind-moments.png)
 
-## Waves of Consciousness
+## Waves of Consciousness[^1]
 *Waves of consciousness: ongoing cortical patterns during binocular rivalry*
 
 An example of an [NCC](thoughts/Neural%20Correlates%20of%20Consciousness%20(NCC).md)
@@ -93,5 +93,4 @@ They measure brain activity using EEGs and they are seeing the expanding/contrac
 - There is very strong evidence for the content of perception being influenced by endogenous (intrinsic) neural rhythms at various spatiotemporal scales
 	- What you perceive is a function of how your brain rhythmically parses the ongoing stream of sensory stimulation
 
-![Model for perceptual cycles](thoughts/images/Pasted%20image%2020220304112345.png)*Red and blue lines illustrate two different perceptual cycles. If a stimuli occurs in two cycles, it is perceived as two separate stimuli whereas if it is in one cycle, it is perceived a single continuous stimuli*
-
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

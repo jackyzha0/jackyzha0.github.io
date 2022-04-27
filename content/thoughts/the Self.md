@@ -15,13 +15,13 @@ tags:
 
 Valid in dreams, but also [games](thoughts/games.md)?
 
-Autoscopic Phenomena
+## Autoscopic Phenomena[^1]
 - Autoscopic Hallucination: you see a double of yourself but do not feel like you have ownership or agnecy over it
 - Heautoscopy: visual perspective switches back and forth between yourself and double and you feel ownership of both
 - Out-of-body experience: you identify the body seen from the outside as yours but have no feeling of agency for it
 	- Direct electrical stimulation at the temporoparietal junction induces out-of-body experiences
 
-## Views of the self
+## Views of the self[^1]
 1. Neuro-nihilism
 	- There is no self
 	- The self is an illusion created by the brain
@@ -45,3 +45,5 @@ Essay by Jenny Odell and in [Kopi Chats on Substack](https://kopiclub.substack.c
 Reminds me of Indra's Net, that everything is [interdependent](thoughts/interdependence.md), [empty](thoughts/emptiness.md) of dependent origination.
 
 "Connective vulnerability is so frightening because sometimes we will be let down by others, unmoored from [friendships](thoughts/friendship.md) and relationships we thought were our anchors in life. But that doesn’t mean we shouldn’t try. (see: [nothing stops](posts/nothing%20stops.md))"
+
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

@@ -4,6 +4,7 @@ date: 2022-04-05
 tags:
 - seed
 - PHIL451A
+- PHIL240A
 ---
 
 Everything is in the mind. The intrinsic nature of ultimate reality is the mind.

@@ -6,6 +6,7 @@ tags:
 - PHIL451A
 ---
 
+
 - Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.
 	- Similar to probing for network activation in neural networks / [AI systems](posts/ai-systems.md)
 - The full NCC is the union of all content-specific NCCs.
@@ -16,3 +17,5 @@ tags:
 Does phenomenal awareness overflow access?
 - (when reading,) we are conscious only of the letters attended to and the impression that there are other items displayed whose identity we don’t know. Once the cue is presented, we gain access to the unconscious information before it decays and can recall the letters.
 - Great example of why foveated rendering works so well
+
+> This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

@@ -8,7 +8,7 @@ tags:
 
 Conceptions of death in [The Upanisads](thoughts/The%20Upanisads.md) and [Epicurueanism](thoughts/Epicurueanism.md)
 
-## Death in contemporary terms
+## Death in contemporary terms[^1]
 1. State of being dead
 2. The momentary event of dying
 	1. Ending of the dying process (denouement death): separates the dying process from the subsequent disintegration
@@ -22,7 +22,7 @@ Conceptions of death in [The Upanisads](thoughts/The%20Upanisads.md) and [Epicur
 
 ![](thoughts/images/perspectives%20on%20death.png)
 
-## Near Death Experiences (NDEs)
+## Near Death Experiences (NDEs)[^1]
 > Subjective experiences occurring when people are physiologically near death or when they believe themselves to be near death
 
 Greyson Scale
@@ -53,3 +53,4 @@ Problem with these is that we don't know exactly when the experiences happen in 
 - Reports only give us the patient's subjective representation of time, not the objective time when the experience was actually happening
 - Have virtually no direct evidence about what states of the brain are associated with NDEs
 
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

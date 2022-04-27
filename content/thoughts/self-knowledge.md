@@ -7,7 +7,7 @@ tags:
 - PHIL451A
 ---
 
-## Reflexivity vs Reflectivity
+## Reflexivity vs Reflectivity[^1]
 Self-illumination/reflexivity  
 - Every conscious experience is directly revealed to itself.  
 - "In seeing blue, you experience seeing"
@@ -101,3 +101,5 @@ Pratyabhiñā thinkers on the other hand, believe that *all* knowledge is self-k
 Externality, then, is made on the basis of differentiating internal appearances, in order for Śiva to be able to experience the effects of the created objects (Torella p. 149). This creates a basic divide between self and world. Even the mere appearance of an external world to an embodied subject is the result of this exclusion (*apoha*). My ascertainment of something being a 'jar' is brought about by the free knowing subject and existence of the polarization of 'non-jar' things (Torella, p. 129-131)
 
 As all objects and subjects rest in Siva, there is one underlying unitary consciousness.
+
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

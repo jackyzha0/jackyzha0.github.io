@@ -31,7 +31,7 @@ Theories of consciousness
 - Higher-order theories: consciousness involves something done to build on that cognitive representation of the sensory experience
 	- e.g. [Stream of Consciousness](thoughts/Stream%20of%20Consciousness.md)
 
-## Minimal Phenomenal Experience
+## Minimal Phenomenal Experience[^1]
 Simplest form in which a state can be phenomenally conscious
 
 Dreamless sleep experience is a candidate for this
@@ -57,7 +57,7 @@ Problems for interpreting reports of pure awareness in meditative experience
 
 ![](thoughts/images/6d%20MPE.png)
 
-### Ascending Reticular Activating System (ARAS)
+### Ascending Reticular Activating System (ARAS)[^1]
 This system determines the brain's general level of activation.
 
 Pure awareness is experienced as "contentless" although it is actually a representation of ARAS
@@ -126,3 +126,5 @@ Consciousness is then the simulated or [potemkin village](thoughts/potemkin%20vi
 We do not consciously think (construct this virtual reality) all the time. Consciousness is the *capacity* to consciously think ([telerobotics](thoughts/telerobotics.md) vs telepresence)
 
 Essay 2 for PHIL451A: [Consciousness is not Information](thoughts/Consciousness%20is%20not%20Information.md)
+
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

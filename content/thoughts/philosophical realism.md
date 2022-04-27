@@ -8,7 +8,7 @@ tags:
 
 Certain features of reality (like objects, selves, etc.) exist independently of consciousness (that is, do not depend on conscious observation to exist). Keyword here is that not everything we encounter is real, but rather much of the world we experience consists of mind-independent realities that are categorized into certain fundamental types.
 
-## 3 views of realism
+## 3 views of realism[^1]
 1. Radical Realism: [qualia](thoughts/qualia.md) are real and cannot be explained by science without radical changes in scientific theory
 3. Conservative Realism: qualia are real and can be explained using current understandings of science or extensions of it
 4. Frankish' Illusionism: qualia do not actually exist but seem to exist
@@ -19,3 +19,5 @@ Certain features of reality (like objects, selves, etc.) exist independently of 
 	1. Looking into consciousness reveals only what it’s like when we look
 
 Related: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md)
+
+[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content

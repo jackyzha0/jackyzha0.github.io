@@ -76,18 +76,18 @@ But what if developers didn't have to worry about server hosting *or* complexiti
 The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.
 
 ### Differentiation from existing work
-- Urbit
-- Ceramic
-- Hypercore/Dat Protocol
-- Canvas
-	- A layer on top of Hypercore/Dat. Quite value aligned but mainly differs from their focus on on-chain and 
-- Liveblocks
+- [Urbit](https://urbit.org/): a bad case of [NIH](https://en.wikipedia.org/wiki/Not_invented_here), pretty much reinvented everything from scratch in a language that nobody really understands. Very vaporwavy, not much of their tech lives up to their promises. Good summary [here](https://wejn.org/2021/02/urbit-good-bad-insane/) but TLDR; good in principle, didn't work out in practice.
+	- Claims to be an overlay OS and networking layer
+	- Modular and collaborative yes, no on everything else.
+- [Ceramic](https://blog.ceramic.network/what-is-ceramic/): great principles and solid work already. Seems to have gained some adoption from people in [[thoughts/web3|web3]] already. Doesn't seem to provide an easy way to do 
+	- Signed and updateable document and identity storage anchored on blockchain
+	- No on collaborative
+- Hypercore/Dat Protocol: 
 
 ## Target
 Below is a rough dump on what these values could manifest themselves as 
 
-### Rhizome
-
+### Rhizome -- a set of protocols for making local-first p2p apps
 Application Layer
 -   library to listen for events in logic layer
 -   addtl library to expose as react hooks?
