@@ -18,4 +18,4 @@ Does phenomenal awareness overflow access?
 - (when reading,) we are conscious only of the letters attended to and the impression that there are other items displayed whose identity we don’t know. Once the cue is presented, we gain access to the unconscious information before it decays and can recall the letters.
 - Great example of why foveated rendering works so well
 
-> This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+> This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.	

@@ -20,4 +20,4 @@ Certain features of reality (like objects, selves, etc.) exist independently of 
 
 Related: [Hard problem of consciousness](thoughts/Hard%20problem%20of%20consciousness.md)
 
-[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

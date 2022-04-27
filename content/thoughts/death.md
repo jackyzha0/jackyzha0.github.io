@@ -53,4 +53,4 @@ Problem with these is that we don't know exactly when the experiences happen in 
 - Reports only give us the patient's subjective representation of time, not the objective time when the experience was actually happening
 - Have virtually no direct evidence about what states of the brain are associated with NDEs
 
-[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

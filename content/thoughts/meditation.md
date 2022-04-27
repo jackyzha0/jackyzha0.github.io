@@ -27,4 +27,4 @@ tags:
 	- Nonreactive
 	- Leads to acute awareness of phenomenal qualities of experience without ‘grasping’ (approach/avoidance).
 
- [^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

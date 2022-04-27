@@ -26,4 +26,4 @@ Axioms of IIT
 4. Integration: each experience is irreducible to non-interdependent, disjoint subsets of phenomenal distinctions (I experience the whole scene, not just the left side independent of the right side)
 5. Exclusion: consciousness is definite
 
- [^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

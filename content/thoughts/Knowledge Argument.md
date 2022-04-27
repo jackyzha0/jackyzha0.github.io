@@ -92,4 +92,4 @@ Thus, in Frank Jackson's Knowledge Argument, Mary has all the 'know-that' knowle
 [^3]: https://warwick.ac.uk/fac/cross_fac/iatl/study/ugmodules/humananimalstudies/lectures/32/nagel_bat.pdf
 [^4]: https://plato.stanford.edu/entries/knowledge-how/#LingArgu
 [^5]: *Knowing How and Knowing That: The Presidential Address*, Ryle 1946
-[^6]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^6]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

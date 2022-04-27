@@ -25,4 +25,4 @@ As an extended thought experiment, how similar do minds have to be to human ones
 	- If we define “physical” as what contemporary physics tells us is the physical, then physicalism is likely to be false
 	- If we define “physical” by what the ideal, completed physics tells us is the physical, then physicalism is empty (because don’t know what that physics will be)
 
- [^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

@@ -46,4 +46,4 @@ Reminds me of Indra's Net, that everything is [interdependent](thoughts/interdep
 
 "Connective vulnerability is so frightening because sometimes we will be let down by others, unmoored from [friendships](thoughts/friendship.md) and relationships we thought were our anchors in life. But that doesn’t mean we shouldn’t try. (see: [nothing stops](posts/nothing%20stops.md))"
 
-[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

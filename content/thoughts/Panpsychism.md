@@ -40,4 +40,4 @@ See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 7. If at least some elementary physical phenomena must also be experiential, it's far more likely that all of them are (otherwise there would be radical heterogeneity edging on dualism and we are assuming that monism is true)
 8. Therefore, panpsychism is true
 
-[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

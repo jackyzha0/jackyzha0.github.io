@@ -93,4 +93,4 @@ They measure brain activity using EEGs and they are seeing the expanding/contrac
 - There is very strong evidence for the content of perception being influenced by endogenous (intrinsic) neural rhythms at various spatiotemporal scales
 	- What you perceive is a function of how your brain rhythmically parses the ongoing stream of sensory stimulation
 
-[^1]: This content is sourced from [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A who retains the rights to this content
+[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.
