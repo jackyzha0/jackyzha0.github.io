@@ -6,7 +6,16 @@
     <description>Recent content in sapling on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhizome Specification</title>
+      <link>https://jzhao.xyz/thoughts/Rhizome-Specification/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
+      <description>Application Layer  library to listen for events in logic layer addtl library to expose as react hooks?</description>
+    </item>
+    
     <item>
       <title>Writing</title>
       <link>https://jzhao.xyz/thoughts/writing/</link>

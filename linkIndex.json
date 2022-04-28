@@ -1849,7 +1849,7 @@
         },
         {
           "source": "/thoughts/Lattice-Proposal",
-          "target": "/thoughts/Rhizome-Research-Proposal",
+          "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
         },
         {
@@ -2347,56 +2347,63 @@
           "text": "qualia"
         }
       ],
-      "/thoughts/Rhizome-Research-Proposal": [
+      "/thoughts/Rhizome-Proposal": [
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/posts/digital-gardening",
           "text": "digital garden"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/digital-commons",
           "text": "digital commons"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/friction",
           "text": "friction"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/tragedy-of-the-commons",
           "text": "tragedy of the commons"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/evaporative-cooling",
           "text": "evaporative cooling"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/web3",
           "text": "web3"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Rhizome-Specification",
+          "text": "Rhizome Specification"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Lattice-Proposal",
+          "text": "Lattice -- an experiment on collective sense-making and digital gardening"
+        }
+      ],
+      "/thoughts/Rhizome-Specification": [
+        {
+          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/encryption",
           "text": "encryption"
-        },
-        {
-          "source": "/thoughts/Rhizome-Research-Proposal",
-          "target": "/thoughts/Lattice-Proposal",
-          "text": "Lattice -- an experiment on collective sense-making and digital gardening"
         }
       ],
       "/thoughts/Rokos-Basilisk": [
@@ -4817,7 +4824,7 @@
       "/thoughts/idea-list": [
         {
           "source": "/thoughts/idea-list",
-          "target": "/thoughts/Rhizome-Research-Proposal",
+          "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
         },
         {
@@ -4827,8 +4834,8 @@
         },
         {
           "source": "/thoughts/idea-list",
-          "target": "/thoughts/Rhizome-Research-Proposal",
-          "text": "Rhizome Research Proposal"
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome Proposal"
         },
         {
           "source": "/thoughts/idea-list",
@@ -8187,7 +8194,7 @@
           "text": "Digital gardening"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/posts/digital-gardening",
           "text": "digital garden"
         },
@@ -9337,7 +9344,7 @@
       ],
       "/thoughts/Lattice-Proposal": [
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Lattice-Proposal",
           "text": "Lattice -- an experiment on collective sense-making and digital gardening"
         }
@@ -9928,21 +9935,28 @@
           "text": "Reductionism"
         }
       ],
-      "/thoughts/Rhizome-Research-Proposal": [
+      "/thoughts/Rhizome-Proposal": [
         {
           "source": "/thoughts/Lattice-Proposal",
-          "target": "/thoughts/Rhizome-Research-Proposal",
+          "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
         },
         {
           "source": "/thoughts/idea-list",
-          "target": "/thoughts/Rhizome-Research-Proposal",
+          "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
         },
         {
           "source": "/thoughts/idea-list",
-          "target": "/thoughts/Rhizome-Research-Proposal",
-          "text": "Rhizome Research Proposal"
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome Proposal"
+        }
+      ],
+      "/thoughts/Rhizome-Specification": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Rhizome-Specification",
+          "text": "Rhizome Specification"
         }
       ],
       "/thoughts/Root-Verses-on-the-Middle-Way-MMK": [
@@ -11482,7 +11496,7 @@
           "text": "digital commons"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/digital-commons",
           "text": "digital commons"
         },
@@ -11780,7 +11794,7 @@
           "text": "encryption"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/encryption",
           "text": "encryption"
         },
@@ -11982,7 +11996,7 @@
       ],
       "/thoughts/evaporative-cooling": [
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/evaporative-cooling",
           "text": "evaporative cooling"
         },
@@ -12218,7 +12232,7 @@
           "text": "friction"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/friction",
           "text": "friction"
         },
@@ -13986,7 +14000,7 @@
           "text": "pace layers"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
         },
@@ -14084,7 +14098,7 @@
           "text": "P2P"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
         },
@@ -15379,7 +15393,7 @@
       ],
       "/thoughts/tragedy-of-the-commons": [
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/tragedy-of-the-commons",
           "text": "tragedy of the commons"
         },
@@ -15788,7 +15802,7 @@
           "text": "web3"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Proposal",
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/web3",
           "text": "web3"
         },
@@ -17703,7 +17717,7 @@
     },
     {
       "source": "/thoughts/Lattice-Proposal",
-      "target": "/thoughts/Rhizome-Research-Proposal",
+      "target": "/thoughts/Rhizome-Proposal",
       "text": "Rhizome"
     },
     {
@@ -18157,54 +18171,59 @@
       "text": "qualia"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/posts/digital-gardening",
       "text": "digital garden"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/digital-commons",
       "text": "digital commons"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/friction",
       "text": "friction"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/pace-layers",
       "text": "pace layers"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/tragedy-of-the-commons",
       "text": "tragedy of the commons"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/evaporative-cooling",
       "text": "evaporative cooling"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/web3",
       "text": "web3"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Rhizome-Specification",
+      "text": "Rhizome Specification"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Lattice-Proposal",
+      "text": "Lattice -- an experiment on collective sense-making and digital gardening"
+    },
+    {
+      "source": "/thoughts/Rhizome-Specification",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
     },
     {
-      "source": "/thoughts/Rhizome-Research-Proposal",
+      "source": "/thoughts/Rhizome-Specification",
       "target": "/thoughts/encryption",
       "text": "encryption"
-    },
-    {
-      "source": "/thoughts/Rhizome-Research-Proposal",
-      "target": "/thoughts/Lattice-Proposal",
-      "text": "Lattice -- an experiment on collective sense-making and digital gardening"
     },
     {
       "source": "/thoughts/Rokos-Basilisk",
@@ -20423,7 +20442,7 @@
     },
     {
       "source": "/thoughts/idea-list",
-      "target": "/thoughts/Rhizome-Research-Proposal",
+      "target": "/thoughts/Rhizome-Proposal",
       "text": "Rhizome"
     },
     {
@@ -20433,8 +20452,8 @@
     },
     {
       "source": "/thoughts/idea-list",
-      "target": "/thoughts/Rhizome-Research-Proposal",
-      "text": "Rhizome Research Proposal"
+      "target": "/thoughts/Rhizome-Proposal",
+      "text": "Rhizome Proposal"
     },
     {
       "source": "/thoughts/idea-list",

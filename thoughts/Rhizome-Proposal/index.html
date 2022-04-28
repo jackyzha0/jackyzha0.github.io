@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <title>Thoughts</title>
+    <meta name="description" content="A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.">
+    <title>Rhizome Proposal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -410,9 +410,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
-        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        <div class="spacer"></div>
-        <div class='darkmode'>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -427,203 +427,642 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    </header>
-    <h1>Thoughts</h1>
+  </header>
+    
+    <pre class="ascii ascii-dark">
+     <span class="ascii-tertiary">.</span> _
+<span class="ascii-tertiary">.</span>_   \/ <span class="ascii-primary">@</span>
+<span class="ascii-primary">@</span> \<span class="ascii-tertiary">.</span>_/
+  //
+</pre>
+    
+    <h1 class="title">Rhizome Proposal</h1>
     <article>
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/friction/">Friction</a></h3>
-                <p>Bring back Friction on the Internet  Source: The case for slowing everything down a bit by Ezra Klein...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated April 7, 2022
-            </p>
-            <ul class="tags">
+      <p class="meta">
+          Last updated April 28, 2022
+      </p>
+      <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/seed/">seed</a></li>
+    <li><a href="https://jzhao.xyz/tags/fruit/">fruit</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/rhizome/">rhizome</a></li>
     
 </ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/A-Tale-for-the-Time-Being/">A Tale for the Time Being</a></h3>
-                <p>the amount of depth being slowly unravelled over time is astounding...</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated March 31, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">sapling</a></li>
-    
-</ul>
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#motivation-and-values">Motivation and Values</a>
+      <ol>
+        <li><a href="#interoperable">Interoperable</a></li>
+        <li><a href="#modular">Modular</a></li>
+        <li><a href="#local-first">Local-first</a></li>
+        <li><a href="#collaborative">Collaborative</a></li>
+        <li><a href="#simple-developer-experience">Simple Developer Experience</a></li>
+        <li><a href="#differentiation-from-existing-work">Differentiation from existing work</a></li>
+      </ol>
+    </li>
+    <li><a href="#timeline--labour-estimates">Timeline / Labour Estimates</a>
+      <ol>
+        <li><a href="#research--background-work">Research / Background Work</a></li>
+        <li><a href="#rhizome-implementation">Rhizome Implementation</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
+      
+      
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/quotes/">Quotes</a></h3>
-                <p>Some quotes to live by.
- &ldquo;Choose joy. Choose it like a child chooses the shoe to put on the right foot, the crayon to paint a sky....</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated March 21, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/evergreen/">evergreen</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/digital-mindfulness/">Digital Mindfulness</a></h3>
-                <p>On methods to reclaim ourselves from the attention economy. How do we enable friction to give people the space to think and reflect?...</p>
-            </div>
-            <p class="meta">
-                4 minute read. Last updated February 15, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Vanilla-Ice-Cream-effect/">Vanilla Ice Cream effect</a></h3>
-                <p>Ask everyone to vote on their favourite ice cream, you&rsquo;ll most likely end up with vanilla....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated February 15, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/mental-model/">Mental Models</a></h3>
-                <p>Mental models (cognitive frameworks) help us understand how people reason and react to interface experiences....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated January 30, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/page-layout/">Page Layout</a></h3>
-                <p>Page layout is the art of manipulating a user&rsquo;s attention on a page to convey meaning, sequence, and point of interaction....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/traditional-knowledge/">Traditional Knowledge (TK)</a></h3>
-                <p>Strategic translation: pollution, data, and Indigenous Traditional Knowledge by Sarah Blacker...</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/linguistic-relativism/">Linguistic Relativism</a></h3>
-                <p>Does language dictate how we think about the world? importance of vocabulary do we need labels and terminology to discuss things false dichotomies Sapir-Whorf hypothesis is true &ndash; but the effects are far more pronounced for programming languages than for spoken languages....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Theory-of-Niche-Construction/">Theory of Niche Construction</a></h3>
-                <p>Theory of Niche Construction  many animals intervene in their environment, shaping it in ways that improve the adaptive fit between the agent and its world such animals in part adapt to their niche, in part construct their own the niche construction perspective focuses our attention on the common features of this whole range of cases whereas the extended mind model does not  human capacities, cognitive and non-cognitive alike, turn out to depend on the fact that humans engineer their environment to support their activities   extended digestion example  some animals do the hard digestion stuff on-board, powerful jaws, large mouths, lots of time chewing we cook lmao also, we selectively breed livestock which improves the food value of domestic stock    Extended Phenotypes Concept  things animals build are part of their phenotype (physical exhibited traits that are determined genetically)  developmentally stable, as heritable and predictable in their ecological effects as other traits   e....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li></ul>
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/thoughts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/17/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/16/" aria-label="Page 16" class="page-link" role="button">16</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/17/" aria-label="Page 17" class="page-link" role="button">17</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 18" class="page-link" role="button">18</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/19/" aria-label="Page 19" class="page-link" role="button">19</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/20/" aria-label="Page 20" class="page-link" role="button">20</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/19/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/34/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-    </article>
+        
+        
+      
     
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+<p>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for <strong>collaborative local-first applications</strong>.</p>
+<blockquote>
+<p>Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two&hellip; a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” 
+
+<a href="https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/" rel="noopener">&ndash;Claire Webb in Noema</a></p>
+</blockquote>
+<h2 id="motivation-and-values">Motivation and Values</h2>
+<p>Imagine a web where you can bring all of your data from Roam to Obsidian or Google Drive to Dropbox without needing to worry about how to make the file types work or massage the output of one API into another.</p>
+<p>Imagine a web where your applications don&rsquo;t just stop working when you lose internet connection or some company intern accidentally takes down production.</p>
+<p>Imagine a web where it is <em>easy</em> and <em>normal</em> to create vast and rich collaborative spaces that allow you co-browse the internet and collectively <a href="/posts/digital-gardening" rel="noopener" class="internal-link" data-src="/posts/digital-gardening">digital garden</a> with friends.</p>
+<p>Imagine a web where your digital spaces feel like portable universes and community gardens.</p>
+<hr>
+<p>My goal is to answer the question: <strong>What would something like this look like if it were possible?</strong></p>
+<p>In short, <em>Rhizome</em> is an attempt to decouple data from applications. Below are properties that Rhizome will optimize for.</p>
+<h3 id="interoperable">Interoperable</h3>
+<p>Data on the web today is mostly treated as second-class to applications. In this form, data is contextual &ndash; it only makes sense in the context of what you can do in an application. At its best, developers and companies expose this data in the form of an API, not allowing you to actually access the underlying data but rather only giving you a limited range of actions or verbs that you can perform on it.</p>
+<p>This is known as <em>verb-based interoperability</em> and it 
+
+<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate. Data exported in this form rarely makes sense on its own outside of the application and often requires a lot of glue code in order to make the data the right format so that you can pass it off to the next application. In fact, companies are <em>incentivized</em> to not provide an easily understandable format that users can easily export. Why would they make it easier for people to leave their product?</p>
+<p>Users shouldn&rsquo;t have to keep using platforms they don&rsquo;t like just because it&rsquo;s impossible to move all the data they have to another. Instead, users should <em>want</em> to use platforms because it fits the needs they have.</p>
+<p>This might be possible if we treat data like a <strong>noun</strong>. How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated? Data-based interoperability can use the shared data directly. Once an app knows how to read a data format, it can read that data regardless of which app produced it.</p>
+<p>This enables users to escape the iron-clad grasp of corporations which hold your data hostage in exchange for usage of their application. Users shouldn&rsquo;t have to sign away all rights to their data when they agree to use app &ndash; they should control what applications have access to their data and how.</p>
+<h3 id="modular">Modular</h3>
+<p>When users choose to use an application, they generally have no choice but to use the whole stack that application uses.</p>
+<p>In choosing an application, you are ceding agency to the application to decide how it stores the data, how it transforms that data, and how it displays that data. Don&rsquo;t like the way an application looks and the app doesn&rsquo;t give you an option to customize it? Better find a new app or deal with it.</p>
+<p>Can we give agency back to users by create modular layers so users can pick and choose what layers they want? Can we make it so these layers are available to others to reuse and adapt to their own needs?</p>
+<h3 id="local-first">Local-first</h3>
+<p>The cloud gives us collaboration, but old-fashioned apps give us ownership. Can’t we have the best of both worlds?</p>
+<p>We should be able to use our applications without needing to be connected to an internet to load a 4MB web page. Many modern &lsquo;desktop&rsquo; applications are simply Electron wrappers around a web application, providing no such thing as &lsquo;offline-support&rsquo;.</p>
+<p>Your apps shouldn&rsquo;t break as soon as you reach an area with spotty internet connection or when some company&rsquo;s server goes down. When you work with local-first software, your work should continue to be accessible indefinitely, even after the company that produces the software has died. You shouldn&rsquo;t need to worry about companies selling your data to advertisers or using it to train large language models without your permission because you control exactly who has access and permission to your data.</p>
+<p>The internet should be used to synchronize, update, and collaborate, not be a requirement for basic function. Your data should stay on your device unless you say otherwise.</p>
+<h3 id="collaborative">Collaborative</h3>
+<p>Of course, local-first doesn&rsquo;t mean local-only.</p>
+<p>It was a dream of the early internet to be able to make spaces anyone can inhabit and enjoy, little pockets of <a href="/thoughts/digital-commons" rel="noopener" class="internal-link" data-src="/thoughts/digital-commons">digital commons</a> that are tended to by many.</p>
+<p>Apps should have the freedom to create new mediums of being digitally present with others. Apps should easily be able to have a digital indication that a space is lived in and occupied.</p>
+<p>As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital 
+
+<a href="https://twitter.com/samihusseni/status/1329499588982575104" rel="noopener">gardens</a> to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces. Places where people can consume the firehose of information through a feed or slow and lazily through Socratic dialogue (see: 
+
+
+<a href="/thoughts/friction" rel="noopener" class="internal-link" data-src="/thoughts/friction">friction</a>, 
+
+
+<a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">pace layers</a>).</p>
+<p>A collaborative application doesn&rsquo;t necessarily need completely open to the public either. It could just be among your family or close friends. It could just be permeable enough to be discovered by those curious enough to add their own drawings and words and details just hidden enough to be carefully unearthed by the intentional visitor. An app can be a <a href="/thoughts/cozy-software#An app can be a home-cooked meal" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">home-cooked meal</a>.</p>
+<h3 id="simple-developer-experience">Simple Developer Experience</h3>
+<p>Last but not least, the experience should feel pleasant to both build and use.</p>
+<p>There are clearly social problems when it comes to making collaborative apps (e.g. <a href="/thoughts/tragedy-of-the-commons" rel="noopener" class="internal-link" data-src="/thoughts/tragedy-of-the-commons">tragedy of the commons</a>, <a href="/thoughts/evaporative-cooling" rel="noopener" class="internal-link" data-src="/thoughts/evaporative-cooling">evaporative cooling</a>), but even <em>enabling</em> this collaboration on a technical level to happen in the first place is already really difficult.</p>
+<p>The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is <em>actually</em> happening in the code. Networking quirks like NAT traversal make direct connections</p>
+<p>People tend to lean towards client-server models because nobody has made it easy to make P2P software. Almost everything today requires users to still setup their own signalling servers, STUN servers, ICE servers, and a bunch of other infrastructure that makes client-server applications seem like child play.</p>
+<p>But what if developers didn&rsquo;t have to worry about server hosting <em>or</em> complexities of eventual consistency? Can we make the tech really easy to build so even hobbyists can quickly spin up a chat app for their own friends that suits their own needs?</p>
+<p>The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.</p>
+<h3 id="differentiation-from-existing-work">Differentiation from existing work</h3>
+<ul>
+<li>
+
+<a href="https://urbit.org/" rel="noopener">Urbit</a>
+<ul>
+<li>Claims to be an overlay OS and networking layer</li>
+<li>A bad case of 
+
+<a href="https://en.wikipedia.org/wiki/Not_invented_here" rel="noopener">NIH</a>, pretty much reinvented everything from scratch in a language that nobody really understands. Very vaporwavy, not much of their tech lives up to their promises. Good summary 
+
+<a href="https://wejn.org/2021/02/urbit-good-bad-insane/" rel="noopener">here</a> but TLDR; good in principle, didn&rsquo;t work out in practice.</li>
+<li>No real applications built on top of it.</li>
+<li>Modular collaborative yes, no on everything else.</li>
+<li>-Interoperable +Modular +Local +Collaborative -Developer Experience</li>
+</ul>
+</li>
+<li>
+
+<a href="https://blog.ceramic.network/what-is-ceramic/" rel="noopener">Ceramic</a>
+<ul>
+<li>Provides a universal document graph (Ceramic Documents) which by default are interoperable, scalable, and permissionless.</li>
+<li>Seems to require a blockchain to anchor storage and provide strict ordering which in turn makes real-time data read/write infeasible (e.g. games, chat).</li>
+<li>Use of DIDs is incredibly smart, potentially enabling self-sovereign identity (SSI) down the line.</li>
+<li>Doesn&rsquo;t seem to support multi-writer documents right out of the box, seems to be an ongoing area of work/research.</li>
+<li>Great principles and solid work already. Seems to have gained some adoption from people in <a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a> already.</li>
+<li>+Interoperable +Modular -Local -Collaborative +Developer Experience</li>
+</ul>
+</li>
+<li>Hypercore/Dat Protocol: tbd</li>
+<li>Yjs: tbd</li>
+</ul>
+<h2 id="timeline--labour-estimates">Timeline / Labour Estimates</h2>
+<p>Labour estimate is roughly 40 hours/week for 16 weeks working on this research with the primary output goal being Rhizome. Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of p2p systems will also be produced and released.</p>
+<p>All bullet points below are releasable artifacts.</p>
+<h3 id="research--background-work">Research / Background Work</h3>
+<ul>
+<li>P2P Readings + Notes - Week 1-3
+<ul>
+<li>DID</li>
+<li>Merkle-DAG</li>
+<li>IPLD</li>
+<li>CID</li>
+<li>CRDT</li>
+<li>Yjs</li>
+<li>Hypercore</li>
+<li>SSI</li>
+</ul>
+</li>
+<li>Implementation Practice
+<ul>
+<li>Implement 
+
+<a href="https://raft.github.io/#implementations" rel="noopener">Raft Consensus</a> in Rust - Week 2</li>
+<li>Barebones Hypercore in Rust - Week 3</li>
+<li>&hellip; tbd</li>
+</ul>
+</li>
+</ul>
+<h3 id="rhizome-implementation">Rhizome Implementation</h3>
+<ul>
+<li>Revise and concretize <a href="/thoughts/Rhizome-Specification" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Specification">Rhizome Specification</a></li>
+<li>ID Layer - Week 4-7</li>
+<li>Transport Layer - Week 7-10</li>
+<li>Logic Layer - Week 10-13</li>
+<li>Application Layer - Week 13-16
+<ul>
+<li>Potential application: <a href="/thoughts/Lattice-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Lattice-Proposal">Lattice &ndash; an experiment on collective sense-making and digital gardening</a> [WIP]</li>
+</ul>
+</li>
+</ul>
+ 
+
+    </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        <li>
+            <a href="/thoughts/Lattice-Proposal">Lattice Proposal</a>
+        </li>
+        
+        
+        <li>
+            <a href="/thoughts/idea-list">Project Idea List</a>
+        </li>
+        
+</ul>
+
+    </div>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+    :root {
+        --g-node: var(--secondary);
+        --g-node-active: var(--primary);
+        --g-node-inactive: var(--visited);
+        --g-link: var(--outlinegray);
+        --g-link-active: #5a7282;
+    }
+</style>
+<script>
+async function run() {
+  const { index, links, content } = await fetchData
+  const curPage = "/thoughts/Rhizome-Proposal"
+  const pathColors = [{"/moc":"#4388cc"}]
+  let depth =  1 
+
+  const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
+
+  const neighbours = new Set()
+  const wl = [curPage || "/", "__SENTINEL"]
+  if (depth >= 0) {
+    while (depth >= 0 && wl.length > 0) {
+      
+      const cur = wl.shift()
+      if (cur === "__SENTINEL") {
+        depth--
+        wl.push("__SENTINEL")
+      } else {
+        neighbours.add(cur)
+        const outgoing = index.links[cur] || []
+        const incoming = index.backlinks[cur] || []
+        wl.push(...outgoing.map(l => l.target), ...incoming.map(l => l.source))
+      }
+    }
+  } else {
+    parseIdsFromLinks(links).forEach(id => neighbours.add(id))
+  }
+
+  const data = {
+    nodes: [...neighbours].map(id => ({id})),
+    links: links.filter(l => neighbours.has(l.source) && neighbours.has(l.target)),
+  }
+
+  const color = (d) => {
+    if (d.id === curPage || (d.id === "/" && curPage === "")) {
+      return "var(--g-node-active)"
+    }
+
+    for (const pathColor of pathColors) {
+      const path = Object.keys(pathColor)[0]
+      const colour = pathColor[path]
+      if (d.id.startsWith(path)) {
+        return colour
+      }
+    }
+
+    return "var(--g-node)"
+  }
+
+  const drag = simulation => {
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(1).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event,d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event,d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    const enableDrag =  true 
+    const noop = () => {}
+    return d3.drag()
+      .on("start", enableDrag ? dragstarted : noop)
+      .on("drag", enableDrag ? dragged : noop)
+      .on("end", enableDrag ? dragended : noop);
+  }
+
+  const height = 250
+  const width = document.getElementById("graph-container").offsetWidth
+
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("charge", d3.forceManyBody().strength(-30))
+    .force("link", d3.forceLink(data.links).id(d => d.id))
+    .force("center", d3.forceCenter());
+
+  const svg = d3.select('#graph-container')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr("viewBox", [-width / 2, -height / 2, width, height]);
+
+  
+  const enableLegend =  false 
+  if (enableLegend) {
+    const legend = [
+      {"Current": "var(--g-node-active)"},
+      {"Note": "var(--g-node)"},
+      ...pathColors
+    ]
+    legend.forEach((legendEntry, i) => {
+      const key = Object.keys(legendEntry)[0]
+      const colour = legendEntry[key]
+      svg.append("circle").attr("cx", -width/2 + 20).attr("cy", height/2 - 30 * (i+1)).attr("r", 6).style("fill", colour)
+      svg.append("text").attr("x", -width/2 + 40).attr("y", height/2 - 30 * (i+1)).text(key).style("font-size", "15px").attr("alignment-baseline","middle")
+    })
+  }
+
+  
+  const link = svg.append("g")
+    .selectAll("line")
+    .data(data.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "var(--g-link)")
+    .attr("stroke-width", 2)
+    .attr("data-source", d => d.source.id)
+    .attr("data-target", d => d.target.id)
+
+  
+  const graphNode = svg.append("g")
+    .selectAll("g")
+    .data(data.nodes)
+    .enter().append("g")
+
+  
+  const node = graphNode.append("circle")
+    .attr("class", "node")
+    .attr("id", (d) => d.id)
+    .attr("r", (d) => {
+      const numOut = index.links[d.id]?.length || 0
+      const numIn = index.backlinks[d.id]?.length || 0
+      return 2 + (numOut + numIn) / 4
+    })
+    .attr("fill", color)
+    .style("cursor", "pointer")
+    .on("click", (_, d) => {
+      window.location.href = "https://jzhao.xyz/" + decodeURI(d.id).replace(/[\s_]+/g, '-')
+    })
+    .on("mouseover", function (_, d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(100)
+        .attr("fill", "var(--g-node-inactive)")
+
+      const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
+      const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      
+      neighbourNodes
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link-active)")
+
+      
+      d3.select(this.parentNode)
+        .select("text")
+        .raise()
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+    }).on("mouseleave", function (_,d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link)")
+
+      d3.select(this.parentNode)
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    })
+    .call(drag(simulation));
+
+  
+  const labels = graphNode.append("text")
+    .attr("dx", 12)
+    .attr("dy", ".35em")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
+    .style("opacity", 0)
+    .style("pointer-events", "none")
+    .call(drag(simulation));
+
+  
+  const enableZoom =  false 
+  if (enableZoom) {
+    svg.call(d3.zoom()
+      .extent([[0, 0], [width, height]])
+      .scaleExtent([0.25, 2])
+      .on("zoom", ({transform}) => {
+        link.attr("transform", transform);
+        node.attr("transform", transform);
+        labels.attr("transform", transform);
+      }));
+  }
+
+  
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+    labels
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+}
+
+run()
+</script>
+
+    </div>
+</div>
+
+
 <div id="contact_buttons">
     <footer>
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
