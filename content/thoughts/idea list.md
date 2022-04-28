@@ -28,7 +28,7 @@ tags:
 - hand position to gesture toolkit
 -   baba is you but for browser interactions
 	-   data plane is main source of truth
-		- optionally replicated using [[thoughts/Rhizome Research Proposal|Rhizome]]
+		- optionally replicated using [[thoughts/Rhizome Proposal|Rhizome]]
 	-   data inputs like webcam, keyboard, mouse, window size, etc.
 	-   relations are from data plane → data plane (no functions!)
 		- e.g. x bounces off of y
@@ -46,7 +46,7 @@ tags:
 	- distributed state
 -   tools for thought applied to IDEs?
 	-   IDEs as graph editors?
-- more on decentralized tech in [Rhizome Research Proposal](thoughts/Rhizome%20Research%20Proposal.md)
+- more on decentralized tech in [Rhizome Proposal](thoughts/Rhizome%20Proposal.md)
 - permaweb npm?
 	- pinning specific code versions
 -   LRU blockchain

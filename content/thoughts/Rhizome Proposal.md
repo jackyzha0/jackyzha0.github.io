@@ -1,5 +1,5 @@
 ---
-title: "Rhizome"
+title: "Rhizome Proposal"
 date: 2022-03-14
 tags:
 - fruit
@@ -7,6 +7,8 @@ tags:
 ---
 
 A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications**.
+
+> Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 
 ## Motivation and Values
 
@@ -76,64 +78,45 @@ But what if developers didn't have to worry about server hosting *or* complexiti
 The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.
 
 ### Differentiation from existing work
-- [Urbit](https://urbit.org/): a bad case of [NIH](https://en.wikipedia.org/wiki/Not_invented_here), pretty much reinvented everything from scratch in a language that nobody really understands. Very vaporwavy, not much of their tech lives up to their promises. Good summary [here](https://wejn.org/2021/02/urbit-good-bad-insane/) but TLDR; good in principle, didn't work out in practice.
+- [Urbit](https://urbit.org/)
 	- Claims to be an overlay OS and networking layer
-	- Modular and collaborative yes, no on everything else.
-- [Ceramic](https://blog.ceramic.network/what-is-ceramic/): great principles and solid work already. Seems to have gained some adoption from people in [[thoughts/web3|web3]] already. Doesn't seem to provide an easy way to do 
-	- Signed and updateable document and identity storage anchored on blockchain
-	- No on collaborative
-- Hypercore/Dat Protocol: 
-
-## Target
-Below is a rough dump on what these values could manifest themselves as 
-
-### Rhizome -- a set of protocols for making local-first p2p apps
-Application Layer
--   library to listen for events in logic layer
--   addtl library to expose as react hooks?
-
-Logic Layer
--   all message schemas should be public
-	-   data lenses for transformations between versions + between applications
--   multiwriter support?
-	-   CRDTs over n input message queues????
-	-   resolution based off of https://cse.buffalo.edu/tech-reports/2014-04.pdf
--   publish subscribe endpoints? message bus model
-	-   TODO: how do we manage scoping?
--   filters (read: scope management) + reducers over message queues to achieve state
--   incremental reducers?
--   state checkpoints?
-
-Transport Layer / Message Queue
--  (this could be Canvas)
--   ID to ID append-only data structure
--   standard structure for atomic messages
--   max msg size, pagination by default
-
-Name Resolution/DNS Layer
--   distributed hash table for network comms (this replaces DNS)
--   ID to IP
--   can be used for hole punching for [p2p](thoughts/peer-to-peer.md)
--   Still good ol' IP + HTTP for base layer of communication
-
-NAT/ID Layer
--   generative art identifier
--   plug and play auth system
-	-   TODO: how does this integrate
--   single priv / pub key pair
-	-   how do you do [[thoughts/encryption|encryption]] through message queues? priv keys?
--   hash of pub key → id
--   encrypts a data block on computer containing outgoing message queues
--   NAT for local replication
-	-   trying to reach local ID is actually all of your devices
-
-Example application: [[thoughts/Lattice Proposal|Lattice -- an experiment on collective sense-making and digital gardening]]
+	- A bad case of [NIH](https://en.wikipedia.org/wiki/Not_invented_here), pretty much reinvented everything from scratch in a language that nobody really understands. Very vaporwavy, not much of their tech lives up to their promises. Good summary [here](https://wejn.org/2021/02/urbit-good-bad-insane/) but TLDR; good in principle, didn't work out in practice.
+	- No real applications built on top of it.
+	- Modular collaborative yes, no on everything else.
+	- -Interoperable +Modular +Local +Collaborative -Developer Experience
+- [Ceramic](https://blog.ceramic.network/what-is-ceramic/)
+	- Provides a universal document graph (Ceramic Documents) which by default are interoperable, scalable, and permissionless.
+	- Seems to require a blockchain to anchor storage and provide strict ordering which in turn makes real-time data read/write infeasible (e.g. games, chat).
+	- Use of DIDs is incredibly smart, potentially enabling self-sovereign identity (SSI) down the line.
+	- Doesn't seem to support multi-writer documents right out of the box, seems to be an ongoing area of work/research.
+	- Great principles and solid work already. Seems to have gained some adoption from people in [[thoughts/web3|web3]] already.
+	- +Interoperable +Modular -Local -Collaborative +Developer Experience
+- Hypercore/Dat Protocol: tbd
+- Yjs: tbd
 
 ## Timeline / Labour Estimates
+Labour estimate is roughly 40 hours/week for 16 weeks working on this research with the primary output goal being Rhizome. Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of p2p systems will also be produced and released.
+
+All bullet points below are releasable artifacts.
+
 ### Research / Background Work
--   p2p readings - w1
--   implement raft in rust - w1
--   https://raft.github.io/#implementations
--   p2p readings contd - w2
--   hypercore deepdive in rust - w2/3
--  CRDT deepdive
+- P2P Readings + Notes - Week 1-3
+	- DID
+	- Merkle-DAG
+	- IPLD
+	- CID
+	- CRDT
+	- Yjs
+	- Hypercore
+	- SSI
+- Implementation Practice
+	- Implement [Raft Consensus](https://raft.github.io/#implementations) in Rust - Week 2
+	- Barebones Hypercore in Rust - Week 3
+	- ... tbd
+### Rhizome Implementation
+- Revise and concretize [[thoughts/Rhizome Specification|Rhizome Specification]]
+- ID Layer - Week 4-7
+- Transport Layer - Week 7-10
+- Logic Layer - Week 10-13
+- Application Layer - Week 13-16
+	- Potential application: [[thoughts/Lattice Proposal|Lattice -- an experiment on collective sense-making and digital gardening]] [WIP]

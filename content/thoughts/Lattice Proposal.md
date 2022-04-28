@@ -6,7 +6,7 @@ tags:
 - rhizome
 ---
 
-Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Research Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]
+Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]
 
 - transclusion of blocks supported by default
 - full revision history w granularity of single operations
