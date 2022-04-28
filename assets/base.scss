@@ -308,7 +308,7 @@ article {
   box-shadow: 6px 6px 36px 0px rgba(0,0,0,0.25);
 
   @media all and (max-width: 600px) {
-    display: none;
+    display: none !important;
   }
 
   &.visible {
@@ -457,6 +457,11 @@ hr {
   & #graph-container {
     border: var(--outlinegray) 1px solid;
     border-radius: 5px;
+    box-sizing: border-box;
+
+    & > svg {
+      margin-bottom: -5px;
+    }
   }
 }
 
