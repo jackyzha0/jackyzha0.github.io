@@ -18,3 +18,5 @@ draft: true
 4. unabashed excitement is Good (tm)
 5. learning is learning
 	1. If you spend five hours on a problem and can't figure out the answer, it doesn't mean you haven't learned, it means _you spent five hours learning_. Your brain has rewired and formed new attractor states, you've done necessary work, the activity you've done is called learning. (https://io0.github.io/)
+6. you can change your mind
+7. 
