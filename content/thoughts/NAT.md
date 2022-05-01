@@ -52,8 +52,16 @@ Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_
 	2. $N_A$ examines $A$'s outgoing packet and adds (Source-IP-$A$, $EP_A$, $EIP_B$, $EP_B$) to its translation table.
 	3. $B$ sends a packet to $EIP_A:EP_A$.
 	2. $N_B$ examines $B$'s outgoing packet and adds (Source-IP-$B$, $EP_B$, $EIP_A$, $EP_A$) to its translation table.
-6. Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$ and $
-7. At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been "punched" in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$.
+6. Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$
+7. At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been "punched" in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$
+
+### Peer Discovery in a purely distributed manner
+1.  Peer A sends an introduction-request to peer B. Peer B is chosen from an existing pool of neighboring peers.
+2.  Peer B sends an introduction-response to peer A containing the address of peer C.
+3.  Peer B sends a puncture-request to peer C containing the address of peer A.
+4.  Peer C sends a puncture to peer A, puncturing its NAT.
+
+When a peer doesn’t yet have a list of neighboring peers, it will select a bootstrap server for peer B. Bootstrap servers have the same peer discovery protocol as regular peers except they respond to introduction-requests for anyone.
 
 ### STUN (Session Traversal Utilities for NAT)
 Servers like $S$ usually run STUN. Recognized using a `stun` or `stuns` resource record

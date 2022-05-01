@@ -29,6 +29,10 @@ Each AS is
 -   responsible for routing to addresses it “owns”
 -   responsible for routing to addresses that are not its responsibility
 
+- Peering vs Transit
+	- Transit: AS pays for the right to transit traffic across another AS
+	- Peering: mutual exchange of traffic between networks
+
 - Tier 1 Networks
 	- A network that can exchange traffic with other Tier 1 networks without paying any fees (transit-free) for the exchange of traffic in either direction
 - Tier 2 Networks

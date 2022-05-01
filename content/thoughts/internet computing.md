@@ -13,6 +13,18 @@ administrated entities into a common entity
 
 See also: [peer-to-peer](thoughts/peer-to-peer.md), [[thoughts/security|security]]
 
+## Changing an entrenched internet 
+[*Enabling a Permanent Revolution in Internet Architecture* by McCauley, Harchol, Panda, Raghavan, and Shenker](https://dl.acm.org/doi/pdf/10.1145/3341302.3342075)
+
+The current Internet architecture is both inherently flawed (so we should explore radically different alternative designs) and deeply entrenched (so we should restrict ourselves to backwards-compatible and therefore incrementally deployable improvements).
+
+For example, the decades-long migration effort from [[thoughts/IP Addresses|IPv4 to IPv6]]
+
+TLDR;
+1. Internet architecture is, and will remain, difficult to change -- clean-slate research and projects seem increasingly impossible
+2. Current focus is on backwards-compatible designs that have been tested in large-scale operational networks
+3. OSI model of the internet sees levels below them as 'logical pipes' to get something from place A to B
+
 ## Communication
 Necessary conditions
 - A communication medium

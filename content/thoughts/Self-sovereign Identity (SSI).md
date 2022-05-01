@@ -12,4 +12,4 @@ Identities are required for trust to be established (Party A needs to ensure Par
 
 In centralized identity paradigms, this is usually done through authorities (e.g. [[thoughts/security#Certification Authorities CA|Certification Authorities]]) who are trusted by both parties.
 
-In SSI systems, 
+In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using public-key cryptography and anchored on some sort of distributed ledger (e.g. [[thoughts/blockchain|blockchain]])

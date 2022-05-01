@@ -112,6 +112,7 @@ All bullet points below are releasable artifacts.
 - Implementation Practice
 	- Implement [Raft Consensus](https://raft.github.io/#implementations) in Rust - Week 2
 	- Barebones Hypercore in Rust - Week 3
+	- Some form of DHT with NAT traversal - Week 2/3
 	- ... tbd
 ### Rhizome Implementation
 - Revise and concretize [[thoughts/Rhizome Specification|Rhizome Specification]]
