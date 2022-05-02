@@ -147,6 +147,7 @@ impl Server {
 	//   term: currentTerm for leader to update itself
 	//.  success: true if follower contained entry matching prevLogIndex and prevLogTerm
 	fn appendEntries(
+		&mut self,
 		term: u32,          // leader's term
 		leaderId: NodeId,   // so follower can redirect clients
 		prevLogIndex: u32,  // index of log entry immediately preceding new ones
@@ -154,8 +155,38 @@ impl Server {
 		entries: [LogEntry] // log entries to store
 		leaderCommit: u32   // leader's commit index
 	) -> (u32, bool) {
-		if term < currentTerm {
+		// If a server receives a request with a stale term number, it rejects the request.
+		if term < self.currentTerm {
 			false
+		}
+
+		// Consistency check for second property of Log Matching Property:
+		// If two entries in different logs have the same index and term,
+		// then the logs are identical in all preceding entries.
+		if self.log[prevLogIndex].term != prevLogTerm {
+			false
+		}
+
+		// Remove any conflicting entries in the follower's log
+		// Conflict is defined as when an entry has the same index but different terms
+		for (i, entry) in entries.vec().enumerate() {
+			let our_term = self.log.get_term(i);
+			if our_term != entry.term {
+				self.log.drain(i..self.log.len())
+			}
+		}
+		
+		// Appends entries from the leader's log that are not already in the log
+		for (i, entry) in entries.vec().enumerate() {
+			if i == self.log.len() + 1 {
+				self.log.append(entry)
+			}
+		}
+		
+		// Update commitIndex if applicable
+		if leaderCommit > self.commitIndex {
+			// set commit index to be the minimum of leaderCommit and index of last new entry
+			self.commitIndex = min(leaderCommit, self.log.len() - 1);
 		}
 	}
 }
