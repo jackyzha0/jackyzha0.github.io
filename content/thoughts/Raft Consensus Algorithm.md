@@ -145,7 +145,7 @@ impl Server {
 	// Invoked by leader to replicate log entries, also used as heartbeat
 	// Returns: (term, success)
 	//   term: currentTerm for leader to update itself
-	//.  success: true if follower contained entry matching prevLogIndex and prevLogTerm
+	//   success: true if follower contained entry matching prevLogIndex and prevLogTerm
 	fn appendEntries(
 		&mut self,
 		term: u32,          // leader's term
@@ -188,6 +188,28 @@ impl Server {
 			// set commit index to be the minimum of leaderCommit and index of last new entry
 			self.commitIndex = min(leaderCommit, self.log.len() - 1);
 		}
+	}
+	
+	fn requestVote(
+		&mut self,           // candidate's term
+		term: u32,           // candidate requesting vote
+		candidateId: NodeId, // 
+		lastLogIndex: u32,   //
+		lastLogTerm: u32,    //
+	) -> (u32, bool) {
+		// If a server receives a request with a stale term number, it rejects the request.
+		if term < self.currentTerm {
+			false
+		}
+
+		// Only grant vote if we haven't voted this term and candidate's log is
+		// at least as up-to-date as our log
+		if self.votedFor.is_none() && lastLogIndex >= self.log.len() - 1 {
+			true
+		}
+
+		// Don't vote by default
+		false
 	}
 }
 ```
