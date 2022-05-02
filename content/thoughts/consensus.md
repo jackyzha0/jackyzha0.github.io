@@ -5,9 +5,18 @@ tags:
 - sapling
 ---
 
+
 Consensus in human systems is actually usually pretty easy because of the social layer of society. This [fault tolerance](thoughts/fault%20tolerance.md) against 51% attacks is due to the fact that convincing the community that any engineered 'truth' is the real on requires subverting every trusted member in the community, most notably media and news sources (also why systems of authoritarian power are so scary). 
 
 A difficult problem for [governance](thoughts/governance.md) within [communities](thoughts/communities.md)
+
+## Algorithmic Consensus
+There are four requirements to such an algorithm:
+
+1. Validity. The result must be a value that was submitted by at least one of the processes. The consensus algorithm cannot just make up a value.
+2. Uniform agreement. All nodes must select the same value.
+3. Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.
+4. Termination. Also known as progress, every node must eventually reach a decision.
 
 ## Consensus and Humming in the IETF
 [Source: IETF](https://datatracker.ietf.org/doc/html/rfc7282)
