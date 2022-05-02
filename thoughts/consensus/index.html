@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">Consensus</h1>
     <article>
       <p class="meta">
-          Last updated March 7, 2022
+          Last updated May 2, 2022
       </p>
       <ul class="tags">
     
@@ -447,6 +447,16 @@ if (!doNotTrack) {
     
 </ul>
 
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#algorithmic-consensus">Algorithmic Consensus</a></li>
+    <li><a href="#consensus-and-humming-in-the-ietf">Consensus and Humming in the IETF</a></li>
+  </ol>
+</nav>
+      </aside>
       
       
 
@@ -477,6 +487,14 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/communities" rel="noopener" class="internal-link" data-src="/thoughts/communities">communities</a></p>
+<a href="#algorithmic-consensus"><h2 id="algorithmic-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Consensus</h2></a>
+<p>There are four requirements to such an algorithm:</p>
+<ol>
+<li>Validity. The result must be a value that was submitted by at least one of the processes. The consensus algorithm cannot just make up a value.</li>
+<li>Uniform agreement. All nodes must select the same value.</li>
+<li>Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.</li>
+<li>Termination. Also known as progress, every node must eventually reach a decision.</li>
+</ol>
 <a href="#consensus-and-humming-in-the-ietf"><h2 id="consensus-and-humming-in-the-ietf"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus and Humming in the IETF</h2></a>
 <p>
 

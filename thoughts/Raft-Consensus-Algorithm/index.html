@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="description" content="An understandable [[thoughts/consensus|consensus]] algorithm.
- A distilled version of the Raft paper">
+ A distilled version of the Raft paper.">
     <title>Raft Consensus Algorithm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -440,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">Raft Consensus Algorithm</h1>
     <article>
       <p class="meta">
-          Last updated May 1, 2022
+          Last updated May 2, 2022
       </p>
       <ul class="tags">
     
@@ -455,15 +455,19 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
+    <li><a href="#distributed-consensus">Distributed Consensus</a></li>
     <li><a href="#replicated-state-machines">Replicated State Machines</a></li>
     <li><a href="#consensus">Consensus</a></li>
     <li><a href="#leader-election">Leader Election</a>
       <ol>
         <li><a href="#initiate-state">Initiate State</a></li>
         <li><a href="#beginning-an-election">Beginning an Election</a></li>
+        <li><a href="#properties">Properties</a></li>
       </ol>
     </li>
     <li><a href="#log-replication">Log Replication</a></li>
+    <li><a href="#unbounded-logs-log-compaction">Unbounded Logs (Log Compaction)</a></li>
+    <li><a href="#rpcs">RPCs</a></li>
   </ol>
 </nav>
       </aside>
@@ -485,6 +489,16 @@ if (!doNotTrack) {
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -507,6 +521,16 @@ if (!doNotTrack) {
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -529,6 +553,48 @@ if (!doNotTrack) {
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -544,6 +610,16 @@ if (!doNotTrack) {
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
   
     
@@ -567,19 +643,27 @@ if (!doNotTrack) {
 </blockquote>
 <p>A distilled version of the 
 
-<a href="https://raft.github.io/raft.pdf" rel="noopener">Raft paper</a></p>
-<a href="#replicated-state-machines"><h2 id="replicated-state-machines"><span class="hanchor" ariaLabel="Anchor"># </span>Replicated State Machines</h2></a>
+<a href="https://raft.github.io/raft.pdf" rel="noopener">Raft paper</a>. For a more graphic version, see this 
+
+<a href="http://thesecretlivesofdata.com/raft/" rel="noopener">visualization of Raft by The Secret Lives of Data</a>.</p>
+<a href="#distributed-consensus"><h2 id="distributed-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Consensus</h2></a>
+<p>When you only have one machine, it is easy to figure out what the state of that machine is in. But what happens when you have multiple machines that need to agree on some value or state?</p>
 <p>How do we arrive at a shared set of state across multiple machines that can be as far as opposite sides of the world? How do we handle machines crashing and become unable to respond to incoming requests?</p>
-<p>Generally, this is done using a log of actions that are <em>replicated</em> across all machines. Keeping this replicated log consistent between all the machines is the job of the <em>consensus algorithm</em>. They allow a collection of machines to agree on some shared state which still make sense even when there are bad actors, latency, or unavailability.</p>
+<p>This is the problem of <em>distributed consensus</em></p>
+<a href="#replicated-state-machines"><h2 id="replicated-state-machines"><span class="hanchor" ariaLabel="Anchor"># </span>Replicated State Machines</h2></a>
+<p>Generally, this is done using a log of actions that are <em>replicated</em> across all machines. Keeping this replicated log consistent between all the machines is the job of the <em>consensus algorithm</em>. They allow a collection of machines to agree on some shared state which still make sense even when there is latency or unavailability.</p>
 <p>In more formal language, consensus algorithms should typically have the following properties:</p>
 <ol>
-<li>Safety in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there is no known solutions, e.g. <a href="/thoughts/fault-tolerance#Byzantine Faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
+<li>Safety in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. <a href="/thoughts/fault-tolerance#Byzantine Faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
 <li>Functional (available) as long as the majority of servers are operational and can communicate</li>
 <li>Latency resilient and does not depend on timing of messages to ensure consistency</li>
 </ol>
 <p>Raft is one such consensus algorithm for managing a replicated log. It is an alternative to 
 
 <a href="https://en.wikipedia.org/wiki/Paxos_%28computer_science%29" rel="noopener">Paxos</a> which is the main consensus algorithm in use over the last decade. The main aim is to make it <em>understandable</em> to builders and students alike.</p>
+<p>It is important to note that Raft assumes that all messages have been authenticated/authourized. It hands this responsibility to the <a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">transport layer</a> to deal with. As such, Raft <em>does not have any protection against malicious actors</em>. More discussion in this 
+
+<a href="https://groups.google.com/g/raft-dev/c/8WIrWfzIkvM" rel="noopener">Google Groups conversation</a>.</p>
 <a href="#consensus"><h2 id="consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus</h2></a>
 <p>Raft implements consensus by first electing a <em>leader</em>, then giving that leader temporary but complete responsibility for managing the replicated log. When a leader fails or becomes disconnected, a new leader is elected.</p>
 <p>Given this approach, Raft decomposes this consensus into 3 independent subproblems</p>
@@ -604,9 +688,10 @@ if (!doNotTrack) {
 <a href="#initiate-state"><h3 id="initiate-state"><span class="hanchor" ariaLabel="Anchor"># </span>Initiate State</h3></a>
 <p>Servers start up in the follower state.</p>
 <p>A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a &lsquo;heartbeat&rsquo; from a leader which is an empty AppendEntries RPC with no log entries).</p>
-<p>If a follower receives no communication over a period of time called the <em>election timeout</em>, then it assumes there is no viable leader and begins an election to choose a new leader.</p>
+<p>If a follower receives no communication over a period of time called the <em>election timeout</em> (randomized between 150ms and 300ms), then it assumes there is no viable leader and begins an election to choose a new leader.</p>
 <a href="#beginning-an-election"><h3 id="beginning-an-election"><span class="hanchor" ariaLabel="Anchor"># </span>Beginning an Election</h3></a>
 <p>A follower increments its current term and transitions to candidate state. It then votes for itself and issues RequestVote RPCs in parallel to each of the other servers in the cluster.</p>
+<p>It is important to note that a server can only vote once per election. <em>It will give its vote to the first server that asks for it and meets the requirements for election.</em> A server should <em>only</em> vote for a candidate if the candidate&rsquo;s log is more up-to-date than its own. If the logs have different terms, the one with the larger term is more up to date. If the logs have the same term, the longer log is more up-to-date.</p>
 <p>A candidate remains a candidate until one of 3 events happens:</p>
 <ol>
 <li>It wins the election. It received votes from a majority of servers in the cluster. Majority rule ensures that at most one candidate can win the election for a particular term. It then sends heartbeat messages to all other servers to establish authority and prevent new elections.</li>
@@ -614,12 +699,134 @@ if (!doNotTrack) {
 <li>A period of time goes by with no winner. Possible if many followers become candidates at the same time, votes can be split so no candidate wins majority. When this happens, each candidate times out and starts a new election by incrementing its term and initiating another election. Raft uses randomized election timeouts to ensure split votes are rare.</li>
 </ol>
 <p>After a leader has been elected, it beings servicing client requests.</p>
+<a href="#properties"><h3 id="properties"><span class="hanchor" ariaLabel="Anchor"># </span>Properties</h3></a>
+<p>Generally, Raft will be able to elect and maintain a steady leader as long as the system roughly follows the timing requirement: <code>broadcastTime &lt; 10 * electionTimeout &lt; 100 * MTBF</code> where <code>broadcastTime</code> is amount of time for a server to send an RPC to every server in the cluster and <code>MTBF</code> is the mean time between failure for a server.</p>
+<p>Broadcast time should be roughly an order of magnitude less than the election timeout so that leaders can reliably send heartbeat messages required to keep followers from starting elections (similar to having RTT be roughly a magnitude smaller than request timeout).</p>
+<p>The election timeout should be a few orders of magnitude less than MTBF so that the system makes steady progress. When a system crashes, it will be down for roughly the period of the election timeout.</p>
 <a href="#log-replication"><h2 id="log-replication"><span class="hanchor" ariaLabel="Anchor"># </span>Log Replication</h2></a>
 <p>Each client request is a command to be executed by the replicated state machines. The leader appends the command to its own log as a new entry, then issues AppendEntries RPCs in parallel to each of the other servers to replicate the entry.</p>
-<p>The leader handles inconsistencies by forcing the follower&rsquo;s logs to duplicate its own. Conflicting entries in follower logs will be overwritten with entries from the leader&rsquo;s log. To figure out</p>
 <p>A single log entry contains the state machine command from the client request along with the term number when the entry was received by the leader. A log entry is considered &lsquo;safely replicated&rsquo; or <em>committed</em> once it is replicated on a majority of servers.</p>
 <p>After an entry is committed, it applies the entry to its own state machine and returns the result of that execution to the client. When a follower learns a log entry is committed, it too applies the entry to its own state machine.</p>
- 
+<p>The <em>Log Matching Property</em> is maintained by Raft which guarantees</p>
+<ol>
+<li>Log entries with same index and term number store the same command</li>
+<li>Log entries with same index and term number mean that all preceding entries must identical (all log entries prior to that index are correctly replicated)</li>
+</ol>
+<p>When a leader comes to power, it just begins normal operation, and the logs automatically converge in response to failures of the AppendEntries consistency check.</p>
+<p>To bring a follower&rsquo;s log into consistency with its own, the leader must find the latest log entry where the two logs agree. To do this, the leader keeps a value <code>nextIndex</code> for each follower which is the number of the <em>next log entry the leader will send to that follower</em>. The leader pings each follower with a AppendEntries RPC call with that <code>nextIndex</code> value. If this call is successful, the leader knows that this follower is up to date. If it fails, then the leader decrements <code>nextIndex</code> again until it reaches a log entry that does succeed.  At this point, the follower&rsquo;s logs will be removed (as anything between <code>nextIndex</code> and what the follower currently has is conflicting) and the follower&rsquo;s log is now consistent with the leader&rsquo;s and will remain that way for the rest of the term.</p>
+<a href="#unbounded-logs-log-compaction"><h2 id="unbounded-logs-log-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Unbounded Logs (Log Compaction)</h2></a>
+<p>In a practical system, a log cannot grow without bounds. The simplest solution is to use snapshotting where the entire current system state is written to a snapshot on stable storage, then the entire log up until that point is discarded.</p>
+<p>All snapshots are taken independently by each server. Each snapshot contains data like last included index, last included term, and the state machine state.</p>
+<p>Sometimes, snapshots need to be sent from leader to followers if the followers lag behind using the InstallSnapshot RPC. This can happen when the leader has discarded the next log entry that needs to be send to a follower (e.g. new server joining cluster).</p>
+<p>When a server receives a InstallSnapshot RPC call, it usually discard its entire log. In the odd case where the server receiving the RPC call has <em>more</em> entries in its log than the snapshot, it deletes all log entries covered by the snapshot but entries following the snapshot are still valid and must be kept.</p>
+<p>Other options like log cleaning and log-structured merge trees are also possible.</p>
+<a href="#rpcs"><h2 id="rpcs"><span class="hanchor" ariaLabel="Anchor"># </span>RPCs</h2></a>
+<p>All Raft RPCs are idempotent so sending multiple RPCs causes no harms (e.g. telling a follower to AppendEntries it already has does nothing).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">type</span> <span class="nc">NodeId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">u64</span><span class="w"> </span><span class="c1">// can be pretty much anything that satisfies Ord + Clone + Display
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">LogEntry</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">payload</span>: <span class="nc">Any</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">term</span>: <span class="kt">u64</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Node</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Persistent State
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">id</span>: <span class="nc">NodeId</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// last term we have seen
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">currentTerm</span>: <span class="kt">u32</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// id of server that received our vote in current term
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">votedFor</span>: <span class="nb">Option</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">log</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="n">LogEntry</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Volatile State
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// index of highest log entry known to be committed
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">commitIndex</span>: <span class="kt">u32</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// index of highest log entry applied to state machine
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">lastApplied</span>: <span class="kt">u32</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Volatile State on leaders
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// map of server id -&gt; index of the next log entry to send to that server
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// initialize all to last log index + 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">nextIndex</span>: <span class="nc">Map</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="p">,</span><span class="w"> </span><span class="kt">u32</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// map of server id -&gt; index of highest log entry known to be replicated
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// initialize all to 0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">matchIndex</span>: <span class="nc">Map</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="p">,</span><span class="w"> </span><span class="kt">u32</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">impl</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Invoked by leader to replicate log entries, also used as heartbeat
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// Returns: (term, success)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">//   term: currentTerm for leader to update itself
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">//.  success: true if follower contained entry matching prevLogIndex and prevLogTerm
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="k">fn</span> <span class="nf">appendEntries</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">term</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">          </span><span class="c1">// leader&#39;s term
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">leaderId</span>: <span class="nc">NodeId</span><span class="p">,</span><span class="w">   </span><span class="c1">// so follower can redirect clients
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">prevLogIndex</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">  </span><span class="c1">// index of log entry immediately preceding new ones
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">prevLogTerm</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">   </span><span class="c1">// term of prevLogIndex entry
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">entries</span>: <span class="p">[</span><span class="n">LogEntry</span><span class="p">]</span><span class="w"> </span><span class="c1">// log entries to store
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">leaderCommit</span>: <span class="kt">u32</span>   <span class="c1">// leader&#39;s commit index
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">(</span><span class="kt">u32</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">currentTerm</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div> 
 
     </article>
     <hr/>

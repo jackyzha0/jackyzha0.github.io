@@ -2340,6 +2340,11 @@
           "source": "/thoughts/Raft-Consensus-Algorithm",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/Transport-Layer",
+          "text": "transport layer"
         }
       ],
       "/thoughts/Reductionism": [
@@ -10214,6 +10219,11 @@
           "source": "/thoughts/Network-Layer",
           "target": "/thoughts/Transport-Layer",
           "text": "Transport Layer"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/Transport-Layer",
+          "text": "transport layer"
         },
         {
           "source": "/thoughts/TCP",
@@ -18222,6 +18232,11 @@
       "source": "/thoughts/Raft-Consensus-Algorithm",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/Transport-Layer",
+      "text": "transport layer"
     },
     {
       "source": "/thoughts/Reductionism",
