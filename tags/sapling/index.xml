@@ -13,7 +13,8 @@
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
-      <description>Application Layer  library to listen for events in logic layer addtl library to expose as react hooks?</description>
+      <description>misc notes
+ should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
     </item>
     
     <item>

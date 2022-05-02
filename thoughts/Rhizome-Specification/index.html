@@ -3,7 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Application Layer  library to listen for events in logic layer addtl library to expose as react hooks?">
+    <meta name="description" content="misc notes
+ should provide key components  logical pipes -&gt; connectivity between nodes host bootstrapping -&gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?">
     <title>Rhizome Specification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -439,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Specification</h1>
     <article>
       <p class="meta">
-          Last updated April 28, 2022
+          Last updated May 1, 2022
       </p>
       <ul class="tags">
     
@@ -450,6 +451,19 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#application-layer">Application Layer</a></li>
+    <li><a href="#logic-layer">Logic Layer</a></li>
+    <li><a href="#transport-layer--message-queue">Transport Layer / Message Queue</a></li>
+    <li><a href="#name-resolutiondns-layer">Name Resolution/DNS Layer</a></li>
+    <li><a href="#natid-layer">NAT/ID Layer</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -486,10 +500,51 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
+
+<p>misc notes</p>
+<ul>
+<li>should provide key components
+<ul>
+<li>logical pipes -&gt; connectivity between nodes</li>
+<li>host bootstrapping -&gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery</li>
+</ul>
+</li>
+<li>petnames rather than global connection table?
+<ul>
+<li>&ldquo;One obvious point about trust is that if communication is to be mediated based on trust, then as a preliminary step, parties must be able to know to whom they are talking. Otherwise, one has little basis for judging how much to trust others. One could take this as a call for the imposition of a global namespace of Internet users, with attached trust assessments. We believe this is a bad idea. It is hard to imagine a global system that is really trustworthy.&rdquo;</li>
+<li>
+
+<a href="https://dl.acm.org/doi/pdf/10.1145/633025.633059" rel="noopener">https://dl.acm.org/doi/pdf/10.1145/633025.633059</a></li>
+<li>optionally verify identity?</li>
+</ul>
+</li>
+<li><a href="/thoughts/mechanism-design" rel="noopener" class="internal-link" data-src="/thoughts/mechanism-design">thoughts/mechanism design</a></li>
+</ul>
 <a href="#application-layer"><h2 id="application-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Application Layer</h2></a>
 <ul>
 <li>library to listen for events in logic layer</li>

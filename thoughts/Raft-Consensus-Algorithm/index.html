@@ -3,8 +3,9 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <title>Thoughts</title>
+    <meta name="description" content="An understandable [[thoughts/consensus|consensus]] algorithm.
+ A distilled version of the Raft paper">
+    <title>Raft Consensus Algorithm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -410,9 +411,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
-        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        <div class="spacer"></div>
-        <div class='darkmode'>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -427,205 +428,476 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    </header>
-    <h1>Thoughts</h1>
-    <article>
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Projects/">Projects</a></h3>
-                <p>This is a list of notable projects that I&rsquo;ve finished and or currently maintaining....</p>
-            </div>
-            <p class="meta">
-                6 minute read. Last updated April 13, 2022
-            </p>
-            <ul class="tags">
+  </header>
     
-    <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
+    <pre class="ascii ascii-secondary">
+
+ .
+  \_.
+  /
+</pre>
+    
+    <h1 class="title">Raft Consensus Algorithm</h1>
+    <article>
+      <p class="meta">
+          Last updated May 1, 2022
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
     <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
     
 </ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/censorship/">Censorship</a></h3>
-                <p>Source: Moderation in Infrastructure
-How do we draw the line between an end product and infrastructure?...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated February 15, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-</ul>
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#replicated-state-machines">Replicated State Machines</a></li>
+    <li><a href="#consensus">Consensus</a></li>
+    <li><a href="#leader-election">Leader Election</a>
+      <ol>
+        <li><a href="#initiate-state">Initiate State</a></li>
+        <li><a href="#beginning-an-election">Beginning an Election</a></li>
+      </ol>
+    </li>
+    <li><a href="#log-replication">Log Replication</a></li>
+  </ol>
+</nav>
+      </aside>
+      
+      
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/constructionist/">Constructionism</a></h3>
-                <p>Mindstorms &ldquo;As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated January 30, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/crutch-and-shoe-metaphor/">Crutch and Shoe metaphor</a></h3>
-                <p>Those with broken legs will use crutches. Shoes however, will enhance performance no matter what....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 27, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Degraded-Blockchain-problem/">Degraded Blockchain problem</a></h3>
-                <p>One thing that I still don&rsquo;t understand about blockchain is the &rsquo;trustless&rsquo; aspect of blockchains....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/connectionist-networks/">Connectionist networks</a></h3>
-                <p> architecture  large number of units which are connected to others (connectionism) and the connections have different strengths (weights) units are arranged in layers computation happens in parallel   like in a classical machine, representations are assigned to connectionist networks by the people who build them two types of connectionist representation  localist → each unit is assigned a feature as a whole that represents distributed → state of the network as a whole represents something  often claimed to be one of the distinctive features of connectionism connectionist networks is sometimes called parallel distributed processing (PDP)     can be trained to learn resemble the structure of the brain much more closely than any classical computer  really good at pattern recognition    </p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/conceptual-model/">Conceptual models</a></h3>
-                <p>Conceptual models are explanations (usually highly simplified) of how something works....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/colour/">Colour</a></h3>
-                <p>Texture Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements...</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Brentanos-Thesis/">Brentano&#39;s Thesis</a></h3>
-                <p>Intentionality is the mark of the mental. His thesis posits two points:...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Brains-in-a-Vat/">Brains in a Vat</a></h3>
-                <p>Brain in a Vat   Putnam&rsquo;s Ant Argument: does intentionality matter for representation?...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated December 25, 2021
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li></ul>
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/thoughts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/12/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/11/" aria-label="Page 11" class="page-link" role="button">11</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/12/" aria-label="Page 12" class="page-link" role="button">12</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 13" class="page-link" role="button">13</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/15/" aria-label="Page 15" class="page-link" role="button">15</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/14/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/34/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-    </article>
+        
+        
+      
     
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+
+
+
+
+<blockquote>
+<p>An understandable <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> algorithm.</p>
+</blockquote>
+<p>A distilled version of the 
+
+<a href="https://raft.github.io/raft.pdf" rel="noopener">Raft paper</a></p>
+<a href="#replicated-state-machines"><h2 id="replicated-state-machines"><span class="hanchor" ariaLabel="Anchor"># </span>Replicated State Machines</h2></a>
+<p>How do we arrive at a shared set of state across multiple machines that can be as far as opposite sides of the world? How do we handle machines crashing and become unable to respond to incoming requests?</p>
+<p>Generally, this is done using a log of actions that are <em>replicated</em> across all machines. Keeping this replicated log consistent between all the machines is the job of the <em>consensus algorithm</em>. They allow a collection of machines to agree on some shared state which still make sense even when there are bad actors, latency, or unavailability.</p>
+<p>In more formal language, consensus algorithms should typically have the following properties:</p>
+<ol>
+<li>Safety in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there is no known solutions, e.g. <a href="/thoughts/fault-tolerance#Byzantine Faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
+<li>Functional (available) as long as the majority of servers are operational and can communicate</li>
+<li>Latency resilient and does not depend on timing of messages to ensure consistency</li>
+</ol>
+<p>Raft is one such consensus algorithm for managing a replicated log. It is an alternative to 
+
+<a href="https://en.wikipedia.org/wiki/Paxos_%28computer_science%29" rel="noopener">Paxos</a> which is the main consensus algorithm in use over the last decade. The main aim is to make it <em>understandable</em> to builders and students alike.</p>
+<a href="#consensus"><h2 id="consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus</h2></a>
+<p>Raft implements consensus by first electing a <em>leader</em>, then giving that leader temporary but complete responsibility for managing the replicated log. When a leader fails or becomes disconnected, a new leader is elected.</p>
+<p>Given this approach, Raft decomposes this consensus into 3 independent subproblems</p>
+<ol>
+<li>Leader election: how do we choose a new leader when an existing leader fails?</li>
+<li>Log replication: how does the leader accept new log entries from clients and replicate them across all the other machines?</li>
+<li>Safety: when is it safe to consider log entries as &lsquo;agreed upon&rsquo; and fully replicated across all machines?</li>
+</ol>
+<p>A server can only be in one of 3 states:</p>
+<ol>
+<li>Leader: handles all client requests</li>
+<li>Follower: issues no requests but respond to requests from leaders and candidates</li>
+<li>Candidate: used to elect a new leader</li>
+</ol>
+<p>State transitions follow the state diagram below:
+<img src="/thoughts/images/raft-state-diagram.png" title="/thoughts/images/raft-state-diagram.png"></p>
+<p>All Raft servers communicate using remote procedure calls (RPCs) that happen over the network. The basis consensus algorithm only requires 2 types of RPCs, RequestVote and Append-Entries. These are retried if a request times out and are issued in parallel for best performance.</p>
+<a href="#leader-election"><h2 id="leader-election"><span class="hanchor" ariaLabel="Anchor"># </span>Leader Election</h2></a>
+<p>Leaders are active for <em>terms</em> of arbitrary length (this is randomly determined as we will see later). These are numbered with consecutive and monotonically increasing integers.</p>
+<p>Each term begins with an election in which one or more candidates attempt to become leader. If a candidate wins the election, then it serves as leader for the rest of the term.</p>
+<p><img src="/thoughts/images/raft-elections.png" title="/thoughts/images/raft-elections.png"></p>
+<a href="#initiate-state"><h3 id="initiate-state"><span class="hanchor" ariaLabel="Anchor"># </span>Initiate State</h3></a>
+<p>Servers start up in the follower state.</p>
+<p>A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a &lsquo;heartbeat&rsquo; from a leader which is an empty AppendEntries RPC with no log entries).</p>
+<p>If a follower receives no communication over a period of time called the <em>election timeout</em>, then it assumes there is no viable leader and begins an election to choose a new leader.</p>
+<a href="#beginning-an-election"><h3 id="beginning-an-election"><span class="hanchor" ariaLabel="Anchor"># </span>Beginning an Election</h3></a>
+<p>A follower increments its current term and transitions to candidate state. It then votes for itself and issues RequestVote RPCs in parallel to each of the other servers in the cluster.</p>
+<p>A candidate remains a candidate until one of 3 events happens:</p>
+<ol>
+<li>It wins the election. It received votes from a majority of servers in the cluster. Majority rule ensures that at most one candidate can win the election for a particular term. It then sends heartbeat messages to all other servers to establish authority and prevent new elections.</li>
+<li>Another server establishes itself as leader. Received an AppendEntries RPC from another server claiming to be leader. This claim is legitimate if the leader&rsquo;s term is at least as large as the candidate&rsquo;s current term.</li>
+<li>A period of time goes by with no winner. Possible if many followers become candidates at the same time, votes can be split so no candidate wins majority. When this happens, each candidate times out and starts a new election by incrementing its term and initiating another election. Raft uses randomized election timeouts to ensure split votes are rare.</li>
+</ol>
+<p>After a leader has been elected, it beings servicing client requests.</p>
+<a href="#log-replication"><h2 id="log-replication"><span class="hanchor" ariaLabel="Anchor"># </span>Log Replication</h2></a>
+<p>Each client request is a command to be executed by the replicated state machines. The leader appends the command to its own log as a new entry, then issues AppendEntries RPCs in parallel to each of the other servers to replicate the entry.</p>
+<p>The leader handles inconsistencies by forcing the follower&rsquo;s logs to duplicate its own. Conflicting entries in follower logs will be overwritten with entries from the leader&rsquo;s log. To figure out</p>
+<p>A single log entry contains the state machine command from the client request along with the term number when the entry was received by the leader. A log entry is considered &lsquo;safely replicated&rsquo; or <em>committed</em> once it is replicated on a majority of servers.</p>
+<p>After an entry is committed, it applies the entry to its own state machine and returns the result of that execution to the client. When a follower learns a log entry is committed, it too applies the entry to its own state machine.</p>
+ 
+
+    </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+        No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+    :root {
+        --g-node: var(--secondary);
+        --g-node-active: var(--primary);
+        --g-node-inactive: var(--visited);
+        --g-link: var(--outlinegray);
+        --g-link-active: #5a7282;
+    }
+</style>
+<script>
+async function run() {
+  const { index, links, content } = await fetchData
+  const curPage = "/thoughts/Raft-Consensus-Algorithm"
+  const pathColors = [{"/moc":"#4388cc"}]
+  let depth =  1 
+
+  const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
+
+  const neighbours = new Set()
+  const wl = [curPage || "/", "__SENTINEL"]
+  if (depth >= 0) {
+    while (depth >= 0 && wl.length > 0) {
+      
+      const cur = wl.shift()
+      if (cur === "__SENTINEL") {
+        depth--
+        wl.push("__SENTINEL")
+      } else {
+        neighbours.add(cur)
+        const outgoing = index.links[cur] || []
+        const incoming = index.backlinks[cur] || []
+        wl.push(...outgoing.map(l => l.target), ...incoming.map(l => l.source))
+      }
+    }
+  } else {
+    parseIdsFromLinks(links).forEach(id => neighbours.add(id))
+  }
+
+  const data = {
+    nodes: [...neighbours].map(id => ({id})),
+    links: links.filter(l => neighbours.has(l.source) && neighbours.has(l.target)),
+  }
+
+  const color = (d) => {
+    if (d.id === curPage || (d.id === "/" && curPage === "")) {
+      return "var(--g-node-active)"
+    }
+
+    for (const pathColor of pathColors) {
+      const path = Object.keys(pathColor)[0]
+      const colour = pathColor[path]
+      if (d.id.startsWith(path)) {
+        return colour
+      }
+    }
+
+    return "var(--g-node)"
+  }
+
+  const drag = simulation => {
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(1).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event,d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event,d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    const enableDrag =  true 
+    const noop = () => {}
+    return d3.drag()
+      .on("start", enableDrag ? dragstarted : noop)
+      .on("drag", enableDrag ? dragged : noop)
+      .on("end", enableDrag ? dragended : noop);
+  }
+
+  const height = Math.max(document.getElementById("graph-container").offsetHeight, 250)
+  const width = document.getElementById("graph-container").offsetWidth
+
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("charge", d3.forceManyBody().strength(-30))
+    .force("link", d3.forceLink(data.links).id(d => d.id).distance(40))
+    .force("center", d3.forceCenter());
+
+  const svg = d3.select('#graph-container')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr("viewBox", [-width / 2, -height / 2, width, height]);
+
+  
+  const enableLegend =  false 
+  if (enableLegend) {
+    const legend = [
+      {"Current": "var(--g-node-active)"},
+      {"Note": "var(--g-node)"},
+      ...pathColors
+    ]
+    legend.forEach((legendEntry, i) => {
+      const key = Object.keys(legendEntry)[0]
+      const colour = legendEntry[key]
+      svg.append("circle").attr("cx", -width/2 + 20).attr("cy", height/2 - 30 * (i+1)).attr("r", 6).style("fill", colour)
+      svg.append("text").attr("x", -width/2 + 40).attr("y", height/2 - 30 * (i+1)).text(key).style("font-size", "15px").attr("alignment-baseline","middle")
+    })
+  }
+
+  
+  const link = svg.append("g")
+    .selectAll("line")
+    .data(data.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "var(--g-link)")
+    .attr("stroke-width", 2)
+    .attr("data-source", d => d.source.id)
+    .attr("data-target", d => d.target.id)
+
+  
+  const graphNode = svg.append("g")
+    .selectAll("g")
+    .data(data.nodes)
+    .enter().append("g")
+
+  
+  const nodeRadius = (d) => {
+    const numOut = index.links[d.id]?.length || 0
+    const numIn = index.backlinks[d.id]?.length || 0
+    return 3 + (numOut + numIn) / 4
+  }
+
+  
+  const node = graphNode.append("circle")
+    .attr("class", "node")
+    .attr("id", (d) => d.id)
+    .attr("r", nodeRadius)
+    .attr("fill", color)
+    .style("cursor", "pointer")
+    .on("click", (_, d) => {
+      window.location.href = "https://jzhao.xyz/" + decodeURI(d.id).replace(/[\s_]+/g, '-') + '/'
+    })
+    .on("mouseover", function (_, d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(100)
+        .attr("fill", "var(--g-node-inactive)")
+
+      const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
+      const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      
+      neighbourNodes
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link-active)")
+
+      
+      d3.select(this.parentNode)
+        .raise()
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+        .raise()
+    }).on("mouseleave", function (_,d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link)")
+
+      d3.select(this.parentNode)
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    })
+    .call(drag(simulation));
+
+  
+  const labels = graphNode.append("text")
+    .attr("dx", 0)
+    .attr("dy", d => nodeRadius(d) + 16 + "px")
+    .attr("text-anchor", "middle")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
+    .style("opacity", 0)
+    .style("pointer-events", "none")
+    .raise()
+    .call(drag(simulation));
+
+  
+  const enableZoom =  false 
+  if (enableZoom) {
+    svg.call(d3.zoom()
+      .extent([[0, 0], [width, height]])
+      .scaleExtent([0.25, 2])
+      .on("zoom", ({transform}) => {
+        link.attr("transform", transform);
+        node.attr("transform", transform);
+        const scale = transform.k
+        const scaledOpacity = Math.max((scale - 1) / 3.75, 0)
+        labels
+          .attr("transform", transform)
+          .style("opacity", scaledOpacity);
+      }));
+  }
+
+  
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+    labels
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+}
+
+run()
+</script>
+
+    </div>
+</div>
+
+
 <div id="contact_buttons">
     <footer>
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>

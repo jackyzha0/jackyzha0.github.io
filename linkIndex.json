@@ -2335,6 +2335,13 @@
           "text": "original thing"
         }
       ],
+      "/thoughts/Raft-Consensus-Algorithm": [
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        }
+      ],
       "/thoughts/Reductionism": [
         {
           "source": "/thoughts/Reductionism",
@@ -2397,6 +2404,11 @@
       "/thoughts/Rhizome-Specification": [
         {
           "source": "/thoughts/Rhizome-Specification",
+          "target": "/thoughts/mechanism-design",
+          "text": "thoughts/mechanism design"
+        },
+        {
+          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
         },
@@ -2455,6 +2467,13 @@
           "source": "/thoughts/Search-Diary",
           "target": "/thoughts/information-foraging",
           "text": "information foraging"
+        }
+      ],
+      "/thoughts/Self-sovereign-Identity-SSI": [
+        {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
         }
       ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
@@ -5394,6 +5413,11 @@
         },
         {
           "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IPv4 to IPv6"
+        },
+        {
+          "source": "/thoughts/internet-computing",
           "target": "/thoughts/Protocol",
           "text": "Protocol"
         },
@@ -5875,6 +5899,13 @@
           "source": "/thoughts/meaning",
           "target": "/thoughts/praxis",
           "text": "praxis"
+        }
+      ],
+      "/thoughts/mechanism-design": [
+        {
+          "source": "/thoughts/mechanism-design",
+          "target": "/thoughts/incentives",
+          "text": "incentive"
         }
       ],
       "/thoughts/meditation": [
@@ -9154,6 +9185,11 @@
         {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/IP-Addresses",
+          "text": "IPv4 to IPv6"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/IP-Addresses",
           "text": "IP Addresses"
         },
         {
@@ -10531,6 +10567,11 @@
           "text": "blockchain"
         },
         {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
           "source": "/thoughts/automation",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
@@ -10938,6 +10979,11 @@
         },
         {
           "source": "/posts/new-words",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
           "target": "/thoughts/consensus",
           "text": "consensus"
         },
@@ -12812,6 +12858,11 @@
           "text": "Incentivizing"
         },
         {
+          "source": "/thoughts/mechanism-design",
+          "target": "/thoughts/incentives",
+          "text": "incentive"
+        },
+        {
           "source": "/thoughts/money",
           "target": "/thoughts/incentives",
           "text": "Incentives"
@@ -13601,6 +13652,13 @@
           "source": "/thoughts/search",
           "target": "/thoughts/meaning",
           "text": "meaning"
+        }
+      ],
+      "/thoughts/mechanism-design": [
+        {
+          "source": "/thoughts/Rhizome-Specification",
+          "target": "/thoughts/mechanism-design",
+          "text": "thoughts/mechanism design"
         }
       ],
       "/thoughts/memory-palace": [
@@ -18161,6 +18219,11 @@
       "text": "original thing"
     },
     {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
+    },
+    {
       "source": "/thoughts/Reductionism",
       "target": "/thoughts/emergent-behaviour",
       "text": "emergent behaviour"
@@ -18217,6 +18280,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Specification",
+      "target": "/thoughts/mechanism-design",
+      "text": "thoughts/mechanism design"
+    },
+    {
+      "source": "/thoughts/Rhizome-Specification",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
     },
@@ -18269,6 +18337,11 @@
       "source": "/thoughts/Search-Diary",
       "target": "/thoughts/information-foraging",
       "text": "information foraging"
+    },
+    {
+      "source": "/thoughts/Self-sovereign-Identity-SSI",
+      "target": "/thoughts/blockchain",
+      "text": "blockchain"
     },
     {
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -20972,6 +21045,11 @@
     },
     {
       "source": "/thoughts/internet-computing",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IPv4 to IPv6"
+    },
+    {
+      "source": "/thoughts/internet-computing",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
     },
@@ -21419,6 +21497,11 @@
       "source": "/thoughts/meaning",
       "target": "/thoughts/praxis",
       "text": "praxis"
+    },
+    {
+      "source": "/thoughts/mechanism-design",
+      "target": "/thoughts/incentives",
+      "text": "incentive"
     },
     {
       "source": "/thoughts/meditation",

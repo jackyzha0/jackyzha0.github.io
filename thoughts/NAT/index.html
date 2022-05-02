@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">NAT</h1>
     <article>
       <p class="meta">
-          Last updated April 19, 2022
+          Last updated May 1, 2022
       </p>
       <ul class="tags">
     
@@ -458,6 +458,7 @@ if (!doNotTrack) {
     <li><a href="#hole-punching">Hole-punching</a>
       <ol>
         <li><a href="#flow">Flow</a></li>
+        <li><a href="#peer-discovery-in-a-purely-distributed-manner">Peer Discovery in a purely distributed manner</a></li>
         <li><a href="#stun-session-traversal-utilities-for-nat">STUN (Session Traversal Utilities for NAT)</a></li>
         <li><a href="#ice-interactive-connectivity-establishment">ICE (Interactive Connectivity Establishment)</a></li>
         <li><a href="#turn-traversal-using-relays-around-nat">TURN (Traversal Using Relays around NAT)</a></li>
@@ -567,9 +568,17 @@ if (!doNotTrack) {
 <li>$N_B$ examines $B$&rsquo;s outgoing packet and adds (Source-IP-$B$, $EP_B$, $EIP_A$, $EP_A$) to its translation table.</li>
 </ol>
 </li>
-<li>Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$ and $</li>
-<li>At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been &ldquo;punched&rdquo; in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$.</li>
+<li>Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$</li>
+<li>At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been &ldquo;punched&rdquo; in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$</li>
 </ol>
+<a href="#peer-discovery-in-a-purely-distributed-manner"><h3 id="peer-discovery-in-a-purely-distributed-manner"><span class="hanchor" ariaLabel="Anchor"># </span>Peer Discovery in a purely distributed manner</h3></a>
+<ol>
+<li>Peer A sends an introduction-request to peer B. Peer B is chosen from an existing pool of neighboring peers.</li>
+<li>Peer B sends an introduction-response to peer A containing the address of peer C.</li>
+<li>Peer B sends a puncture-request to peer C containing the address of peer A.</li>
+<li>Peer C sends a puncture to peer A, puncturing its NAT.</li>
+</ol>
+<p>When a peer doesn’t yet have a list of neighboring peers, it will select a bootstrap server for peer B. Bootstrap servers have the same peer discovery protocol as regular peers except they respond to introduction-requests for anyone.</p>
 <a href="#stun-session-traversal-utilities-for-nat"><h3 id="stun-session-traversal-utilities-for-nat"><span class="hanchor" ariaLabel="Anchor"># </span>STUN (Session Traversal Utilities for NAT)</h3></a>
 <p>Servers like $S$ usually run STUN. Recognized using a <code>stun</code> or <code>stuns</code> resource record</p>
 <a href="#ice-interactive-connectivity-establishment"><h3 id="ice-interactive-connectivity-establishment"><span class="hanchor" ariaLabel="Anchor"># </span>ICE (Interactive Connectivity Establishment)</h3></a>
