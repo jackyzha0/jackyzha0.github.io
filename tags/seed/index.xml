@@ -6,7 +6,16 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solana</title>
+      <link>https://jzhao.xyz/thoughts/Solana/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Solana/</guid>
+      <description>Solana is a [[thoughts/blockchain|blockchain]] that claims to be fast, secure, scalable, affordable, and resistant to [[thoughts/censorship|censorship]]</description>
+    </item>
+    
     <item>
       <title>Mechanism design</title>
       <link>https://jzhao.xyz/thoughts/mechanism-design/</link>

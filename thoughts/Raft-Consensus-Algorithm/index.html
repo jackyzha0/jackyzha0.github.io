@@ -440,7 +440,7 @@ if (!doNotTrack) {
     <h1 class="title">Raft Consensus Algorithm</h1>
     <article>
       <p class="meta">
-          Last updated May 2, 2022
+          Last updated May 3, 2022
       </p>
       <ul class="tags">
     
@@ -835,7 +835,7 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">term</span>: <span class="kt">u64</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Node</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Server</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Persistent State
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">id</span>: <span class="nc">NodeId</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// last term we have seen
@@ -909,11 +909,11 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">fn</span> <span class="nf">requestVote</span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w">           </span><span class="c1">// candidate&#39;s term
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">term</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">           </span><span class="c1">// candidate requesting vote
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">candidateId</span>: <span class="nc">NodeId</span><span class="p">,</span><span class="w"> </span><span class="c1">// 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogIndex</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">   </span><span class="c1">//
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogTerm</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">    </span><span class="c1">//
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">term</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">           </span><span class="c1">// candidate&#39;s term
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">candidateId</span>: <span class="nc">NodeId</span><span class="p">,</span><span class="w"> </span><span class="c1">// candidate requesting vote
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogIndex</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">   </span><span class="c1">// index of candidate&#39;s last log entry
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogTerm</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">    </span><span class="c1">// term of candidate&#39;s last log entry
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">(</span><span class="kt">u32</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// If a server receives a request with a stale term number, it rejects the request.
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">currentTerm</span><span class="w"> </span><span class="p">{</span><span class="w">

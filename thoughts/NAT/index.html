@@ -439,7 +439,7 @@ if (!doNotTrack) {
     <h1 class="title">NAT</h1>
     <article>
       <p class="meta">
-          Last updated May 1, 2022
+          Last updated May 3, 2022
       </p>
       <ul class="tags">
     
@@ -457,6 +457,7 @@ if (!doNotTrack) {
     <li><a href="#network-address-translation">Network Address Translation</a></li>
     <li><a href="#hole-punching">Hole-punching</a>
       <ol>
+        <li><a href="#efficacy">Efficacy</a></li>
         <li><a href="#flow">Flow</a></li>
         <li><a href="#peer-discovery-in-a-purely-distributed-manner">Peer Discovery in a purely distributed manner</a></li>
         <li><a href="#stun-session-traversal-utilities-for-nat">STUN (Session Traversal Utilities for NAT)</a></li>
@@ -481,6 +482,46 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
 
 
 
@@ -546,10 +587,70 @@ if (!doNotTrack) {
 
 <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.</p>
 <p>Hole-punching usually involves the use of third-party hosts that run STUN or ICE to figure out the public address of the NAT.</p>
-<p>Note: as 
+<p>The idea is that to allow packets to come in from a remote endpoint, the computer behind the NAT or firewall needs to send something to the remote endpoint first. By doing so it creates a “hole” in the NAT or firewall through which communications can proceed. This even works when both sides are behind a NAT/firewall, when both sides start by punching a hole in their respective NAT/firewalls.</p>
+<p>Types of NAT/Firewall combinations</p>
+<ol>
+<li>Endpoint-Independent Mapping (EIM): all outgoing connections from the same IP address and port have the same modified IP address and port</li>
+<li>Address-Dependent Mapping (ADM): each outgoing connection to a different address from the same IP address and port has a different modified IP address and port</li>
+<li>Address and Port-Dependent Mapping (APDM): same as ADM, instead of just address, it&rsquo;s address + port</li>
+<li>Endpoint-Independent Filtering (EIF): all packets from remote addresses are allowed for a single endpoint on the NAT/Firewall</li>
+<li>Address-Dependent Filtering (ADF): only allows packets to a specific endpoint from a specific address if a computer behind the NAT/Firewall has sent a packet to that address</li>
+<li>Address and Port-Dependent Filtering (APDF): same as ADF but instead of just address, it&rsquo;s address + port</li>
+</ol>
+<a href="#efficacy"><h3 id="efficacy"><span class="hanchor" ariaLabel="Anchor"># </span>Efficacy</h3></a>
+<p>From 
 
-
-<a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a> usually expires after very short periods of time, hole-punching sometimes sends keep-alive packets to maintain the connection</p>
+<a href="https://link.springer.com/content/pdf/10.1007/978-3-642-20798-3_1.pdf" rel="noopener"><em>UDP NAT and Firewall Puncturing in the Wild</em> by Gertjan Halkes and Johan Pouwelse</a></p>
+<ul>
+<li>Over 79% of peers on the Internet are not directly connectable
+<ul>
+<li>Using a simple redez-vouz mechanism decreases this to ~15% of peers</li>
+<li>Keep-alive messages should be sent at least every 55 seconds to ensure that mappings/holes will remain open on almost every NAT/firewall</li>
+</ul>
+</li>
+<li>Firewalls and NAT makes establishing P2P connections directly between any two machines hard
+<ul>
+<li>Firewalls are frequently configured to allow only outgoing connections, based on the assumption of the client-server model of communication</li>
+<li>NAT hides the &rsquo;true&rsquo; port and IP combination of any machine that is behind it, meaning that connecting to an arbitrary port is often not allowed</li>
+</ul>
+</li>
+<li>Mostly useful for UDP traffic as setting up a connecting for TCP when NAT/firewall requires unusual or non-standard use of TCP and IP mechanisms, and may rely on specific NAT/firewall behaviour to work</li>
+<li>Detection
+<ul>
+<li>NAT
+<ul>
+<li>A and B report the remote address and port they see when a connection is set up. They now know their own external address and port</li>
+<li>If all other peers agree on peer A&rsquo;s remote address and port, peer A determines they have no NAT or the NAT has EIM behaviour</li>
+<li>If peer A&rsquo;s remote address and port are reported differ among peers, peer A determines they are behind a A(P)DM NAT</li>
+</ul>
+</li>
+<li>Filtering Behaviour
+<ul>
+<li>Check order of requests received when connecting to a rendez-vous server
+<ul>
+<li>Side note: this many not always be true. The reason for this is that the direct connection request is not always faster than the reverse connection request which is sent through the rendez-vous peer. This is known as a Triangle Inequality Violation (TIV)</li>
+<li>This can happen as often as 40% of the time although lower numbers are more common</li>
+</ul>
+</li>
+<li>When a peer A tries to set up a connection using rendezvous R, it will always first send a direct connection request to the remote peer B
+<ul>
+<li>If the direct connection request from A to B arrives first, there is no filtering behaviour or it uses EIF</li>
+<li>If the rendez-vouz connection request from R to B arrives first, the filtering behaviour is most likely A(P)DF</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/thoughts/images/NAT-firewall-share.png" title="/thoughts/images/NAT-firewall-share.png"></p>
+<p><img src="/thoughts/images/NAT-firewall-connection-rates.png" title="/thoughts/images/NAT-firewall-connection-rates.png"></p>
+<p>Possible explanations for a non-100% connection rate even in EIM-EIF to EIM-EIF peers</p>
+<ul>
+<li>UDP packets being dropped under high UDP packet load (especially in consumer-grade NAT/firewalls)</li>
+<li>Routers stop functioning when mapping tables are full (not out of the realm of possibilies, only 65535 entries)</li>
+<li></li>
+</ul>
 <a href="#flow"><h3 id="flow"><span class="hanchor" ariaLabel="Anchor"># </span>Flow</h3></a>
 <p>Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.</p>
 <ol>
@@ -580,7 +681,8 @@ if (!doNotTrack) {
 </ol>
 <p>When a peer doesn’t yet have a list of neighboring peers, it will select a bootstrap server for peer B. Bootstrap servers have the same peer discovery protocol as regular peers except they respond to introduction-requests for anyone.</p>
 <a href="#stun-session-traversal-utilities-for-nat"><h3 id="stun-session-traversal-utilities-for-nat"><span class="hanchor" ariaLabel="Anchor"># </span>STUN (Session Traversal Utilities for NAT)</h3></a>
-<p>Servers like $S$ usually run STUN. Recognized using a <code>stun</code> or <code>stuns</code> resource record</p>
+<p>Servers like $S$ usually run STUN. Recognized using a <code>stun</code> or <code>stuns</code> resource record.</p>
+<p>Details how a server can determine what kind of NAT and firewall is between itself and the public Internet.</p>
 <a href="#ice-interactive-connectivity-establishment"><h3 id="ice-interactive-connectivity-establishment"><span class="hanchor" ariaLabel="Anchor"># </span>ICE (Interactive Connectivity Establishment)</h3></a>
 <p>Uses STUN. Provides a structured mechanism to determine the optimal communication path between two peers</p>
 <a href="#turn-traversal-using-relays-around-nat"><h3 id="turn-traversal-using-relays-around-nat"><span class="hanchor" ariaLabel="Anchor"># </span>TURN (Traversal Using Relays around NAT)</h3></a>

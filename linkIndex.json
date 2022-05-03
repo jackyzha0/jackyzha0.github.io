@@ -2067,11 +2067,6 @@
           "source": "/thoughts/NAT",
           "target": "/thoughts/UDP",
           "text": "UDP"
-        },
-        {
-          "source": "/thoughts/NAT",
-          "target": "/thoughts/UDP",
-          "text": "UDP"
         }
       ],
       "/thoughts/NFT": [
@@ -2511,6 +2506,33 @@
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/Algorithms-of-Oppression",
           "text": "Algorithms of Oppression"
+        }
+      ],
+      "/thoughts/Solana": [
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/proof-of-work",
+          "text": "proof of work"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
         }
       ],
       "/thoughts/Stream-of-Consciousness": [
@@ -3210,6 +3232,11 @@
           "source": "/thoughts/blockchain",
           "target": "/thoughts/bitcoin",
           "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/blockchain",
+          "target": "/thoughts/Solana",
+          "text": "Solana"
         },
         {
           "source": "/thoughts/blockchain",
@@ -10026,6 +10053,13 @@
           "text": "Social Bias in Information Retrieval"
         }
       ],
+      "/thoughts/Solana": [
+        {
+          "source": "/thoughts/blockchain",
+          "target": "/thoughts/Solana",
+          "text": "Solana"
+        }
+      ],
       "/thoughts/Stream-of-Consciousness": [
         {
           "source": "/thoughts/Consciousness-is-not-Information",
@@ -10270,11 +10304,6 @@
       "/thoughts/UDP": [
         {
           "source": "/thoughts/DHCP",
-          "target": "/thoughts/UDP",
-          "text": "UDP"
-        },
-        {
-          "source": "/thoughts/NAT",
           "target": "/thoughts/UDP",
           "text": "UDP"
         },
@@ -10553,6 +10582,11 @@
       ],
       "/thoughts/bitcoin": [
         {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
           "source": "/thoughts/blockchain",
           "target": "/thoughts/bitcoin",
           "text": "Bitcoin"
@@ -10578,6 +10612,11 @@
         },
         {
           "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/Solana",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
         },
@@ -10751,6 +10790,11 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/censorship",
           "text": "censor"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/censorship",
+          "text": "censorship"
         },
         {
           "source": "/thoughts/gate-keeping",
@@ -14171,6 +14215,11 @@
           "text": "p2p"
         },
         {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
           "source": "/thoughts/bitcoin",
           "target": "/thoughts/peer-to-peer",
           "text": "Peer to peer"
@@ -14546,6 +14595,11 @@
         }
       ],
       "/thoughts/proof-of-work": [
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/proof-of-work",
+          "text": "proof of work"
+        },
         {
           "source": "/thoughts/bitcoin",
           "target": "/thoughts/proof-of-work",
@@ -17989,11 +18043,6 @@
       "text": "UDP"
     },
     {
-      "source": "/thoughts/NAT",
-      "target": "/thoughts/UDP",
-      "text": "UDP"
-    },
-    {
       "source": "/thoughts/NFT",
       "target": "/thoughts/Degraded-Blockchain-problem",
       "text": "Degraded Blockchain problem"
@@ -18387,6 +18436,31 @@
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/Algorithms-of-Oppression",
       "text": "Algorithms of Oppression"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/blockchain",
+      "text": "blockchain"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/censorship",
+      "text": "censorship"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/bitcoin",
+      "text": "Bitcoin"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/proof-of-work",
+      "text": "proof of work"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
     },
     {
       "source": "/thoughts/Stream-of-Consciousness",
@@ -19022,6 +19096,11 @@
       "source": "/thoughts/blockchain",
       "target": "/thoughts/bitcoin",
       "text": "Bitcoin"
+    },
+    {
+      "source": "/thoughts/blockchain",
+      "target": "/thoughts/Solana",
+      "text": "Solana"
     },
     {
       "source": "/thoughts/blockchain",
