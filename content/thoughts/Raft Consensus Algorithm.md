@@ -117,7 +117,7 @@ struct LogEntry {
 	term: u64
 }
 
-struct Node {
+struct Server {
 	// Persistent State
 	id: NodeId
 	// last term we have seen
@@ -191,11 +191,11 @@ impl Server {
 	}
 	
 	fn requestVote(
-		&mut self,           // candidate's term
-		term: u32,           // candidate requesting vote
-		candidateId: NodeId, // 
-		lastLogIndex: u32,   //
-		lastLogTerm: u32,    //
+		&mut self,
+		term: u32,           // candidate's term
+		candidateId: NodeId, // candidate requesting vote
+		lastLogIndex: u32,   // index of candidate's last log entry
+		lastLogTerm: u32,    // term of candidate's last log entry
 	) -> (u32, bool) {
 		// If a server receives a request with a stale term number, it rejects the request.
 		if term < self.currentTerm {

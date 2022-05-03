@@ -9,7 +9,7 @@ tags:
 
 The universal message bus.
 
-An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md) and [Ethereum](thoughts/ethereum.md).
+An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md), [[thoughts/Solana|Solana]], and [Ethereum](thoughts/ethereum.md).
 
 Like symbolic systems, meaning needs to be derived through [intentionality](thoughts/intentionality.md). Run into problems of agreement on meaning of symbols and the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
 
