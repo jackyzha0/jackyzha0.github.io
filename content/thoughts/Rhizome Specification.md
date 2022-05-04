@@ -6,7 +6,9 @@ tags:
 - rhizome
 ---
 
-misc notes
+> See also: [[thoughts/Rhizome Research Log|Research Log]]
+
+## Misc notes
 - should provide key components
 	- logical pipes -> connectivity between nodes
 	- host bootstrapping -> akin to DHCP, set of protocols supported, basic info and about where to connect for discovery
@@ -14,7 +16,6 @@ misc notes
 	- "One obvious point about trust is that if communication is to be mediated based on trust, then as a preliminary step, parties must be able to know to whom they are talking. Otherwise, one has little basis for judging how much to trust others. One could take this as a call for the imposition of a global namespace of Internet users, with attached trust assessments. We believe this is a bad idea. It is hard to imagine a global system that is really trustworthy."
 	- https://dl.acm.org/doi/pdf/10.1145/633025.633059
 	- optionally verify identity?
-- [[thoughts/mechanism design]] 
 
 ## Application Layer
 -   library to listen for events in logic layer
@@ -53,5 +54,3 @@ misc notes
 - encrypts a data block on computer containing outgoing message queues
 - NAT for local replication
 	- trying to reach local ID is actually all of your devices
-
-
