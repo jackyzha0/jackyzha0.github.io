@@ -6,7 +6,16 @@
     <description>Recent content in evergreen on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhizome Research Log</title>
+      <link>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
+      <description>May May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].</description>
+    </item>
+    
     <item>
       <title>Experience</title>
       <link>https://jzhao.xyz/thoughts/Experience/</link>

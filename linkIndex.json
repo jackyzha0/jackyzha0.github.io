@@ -2401,11 +2401,53 @@
           "text": "Lattice -- an experiment on collective sense-making and digital gardening"
         }
       ],
+      "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Solana",
+          "text": "Solana"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "the proposal"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/mechanism-design",
+          "text": "Mechanism Design"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Self-sovereign-Identity-SSI",
+          "text": "SSI"
+        }
+      ],
       "/thoughts/Rhizome-Specification": [
         {
           "source": "/thoughts/Rhizome-Specification",
-          "target": "/thoughts/mechanism-design",
-          "text": "thoughts/mechanism design"
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "Research Log"
         },
         {
           "source": "/thoughts/Rhizome-Specification",
@@ -7234,6 +7276,11 @@
       "/thoughts/software-principles": [
         {
           "source": "/thoughts/software-principles",
+          "target": "/thoughts/local-first-software",
+          "text": "Local first"
+        },
+        {
+          "source": "/thoughts/software-principles",
           "target": "/thoughts/maintenance",
           "text": "maintenance"
         }
@@ -9991,6 +10038,28 @@
           "text": "Putnam's Ant Argument"
         }
       ],
+      "/thoughts/Raft-Consensus-Algorithm": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        }
+      ],
       "/thoughts/Reductionism": [
         {
           "source": "/thoughts/emergent-behaviour",
@@ -10010,6 +10079,11 @@
           "text": "Rhizome"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "the proposal"
+        },
+        {
           "source": "/thoughts/idea-list",
           "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
@@ -10018,6 +10092,13 @@
           "source": "/thoughts/idea-list",
           "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome Proposal"
+        }
+      ],
+      "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Specification",
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "Research Log"
         }
       ],
       "/thoughts/Rhizome-Specification": [
@@ -10041,6 +10122,13 @@
           "text": "Search Diary"
         }
       ],
+      "/thoughts/Self-sovereign-Identity-SSI": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Self-sovereign-Identity-SSI",
+          "text": "SSI"
+        }
+      ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
         {
           "source": "/thoughts/bias",
@@ -10054,6 +10142,11 @@
         }
       ],
       "/thoughts/Solana": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Solana",
+          "text": "Solana"
+        },
         {
           "source": "/thoughts/blockchain",
           "target": "/thoughts/Solana",
@@ -13623,6 +13716,13 @@
           "text": "linguistic relativism"
         }
       ],
+      "/thoughts/local-first-software": [
+        {
+          "source": "/thoughts/software-principles",
+          "target": "/thoughts/local-first-software",
+          "text": "Local first"
+        }
+      ],
       "/thoughts/longevity": [
         {
           "source": "/thoughts/game-design",
@@ -13710,9 +13810,9 @@
       ],
       "/thoughts/mechanism-design": [
         {
-          "source": "/thoughts/Rhizome-Specification",
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/mechanism-design",
-          "text": "thoughts/mechanism design"
+          "text": "Mechanism Design"
         }
       ],
       "/thoughts/memory-palace": [
@@ -18343,9 +18443,49 @@
       "text": "Lattice -- an experiment on collective sense-making and digital gardening"
     },
     {
-      "source": "/thoughts/Rhizome-Specification",
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Solana",
+      "text": "Solana"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Rhizome-Proposal",
+      "text": "the proposal"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/mechanism-design",
-      "text": "thoughts/mechanism design"
+      "text": "Mechanism Design"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Self-sovereign-Identity-SSI",
+      "text": "SSI"
+    },
+    {
+      "source": "/thoughts/Rhizome-Specification",
+      "target": "/thoughts/Rhizome-Research-Log",
+      "text": "Research Log"
     },
     {
       "source": "/thoughts/Rhizome-Specification",
@@ -22781,6 +22921,11 @@
       "source": "/thoughts/software-and-politics",
       "target": "/thoughts/A-City-is-not-a-Tree",
       "text": "A City is not a Tree"
+    },
+    {
+      "source": "/thoughts/software-principles",
+      "target": "/thoughts/local-first-software",
+      "text": "Local first"
     },
     {
       "source": "/thoughts/software-principles",

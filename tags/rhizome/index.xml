@@ -6,15 +6,24 @@
     <description>Recent content in rhizome on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhizome Research Log</title>
+      <link>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
+      <description>May May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].</description>
+    </item>
+    
     <item>
       <title>Rhizome Specification</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Specification/</link>
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
-      <description>misc notes
- should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
+      <description>See also: [[thoughts/Rhizome Research Log|Research Log]]
+ Misc notes  should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
     </item>
     
     <item>
