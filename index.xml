@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Distributed Systems</title>
+      <link>https://jzhao.xyz/thoughts/distributed-systems/</link>
+      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/distributed-systems/</guid>
+      <description>A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.</description>
+    </item>
+    
+    <item>
       <title>Rhizome Research Log</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>May May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].</description>
+      <description>May May 4th  Skimming [[thoughts/distributed systems#Martin Kleppmann&amp;rsquo;s Course|Martin Kleppmann&amp;rsquo;s Course on Distributed Systems]]  Really good foundation to work off of Learned about differences between physical and logical clocks and realizing that miniraft should probably use some sort of logical clock rather than relying on physical time    May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].</description>
     </item>
     
     <item>
@@ -3002,7 +3011,7 @@ Design and Development of Systems  Creation vs Maintenance view of developing AI
       <pubDate>Wed, 23 Jun 2021 15:14:28 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/fault-tolerance/</guid>
-      <description>How do we defend against attacks in distributed systems with no central authority?</description>
+      <description>How do we defend against attacks in [[thoughts/distributed systems|distributed systems]] with no central authority?</description>
     </item>
     
     <item>

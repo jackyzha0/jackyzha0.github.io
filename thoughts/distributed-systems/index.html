@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="What is the role of moderation in communities? What does good/bad moderation look like?">
-    <title>Moderation</title>
+    <meta name="description" content="A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.">
+    <title>Distributed Systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -462,10 +462,10 @@ if (!doNotTrack) {
   /
 </pre>
     
-    <h1 class="title">Moderation</h1>
+    <h1 class="title">Distributed Systems</h1>
     <article>
       <p class="meta">
-          Last updated March 15, 2022
+          Last updated May 5, 2022
       </p>
       <ul class="tags">
     
@@ -474,6 +474,30 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#martin-kleppmanns-course">Martin Kleppmann&rsquo;s Course</a>
+      <ol>
+        <li><a href="#11-introduction">1.1: Introduction</a></li>
+        <li><a href="#13-rpc">1.3: RPC</a></li>
+        <li><a href="#21--22-fault-tolerance">2.1 + 2.2: Fault Tolerance</a></li>
+        <li><a href="#23-system-models">2.3: System Models</a></li>
+        <li><a href="#31-physical-time">3.1: Physical Time</a></li>
+        <li><a href="#33-causality--message-ordering">3.3: Causality + Message ordering</a></li>
+        <li><a href="#41-logical-time">4.1: Logical Time</a></li>
+        <li><a href="#42--43-broadcast">4.2 + 4.3: Broadcast</a></li>
+        <li><a href="#51-replication">5.1: Replication</a></li>
+        <li><a href="#52-quorums">5.2: Quorums</a></li>
+        <li><a href="#53-state-machine-replication">5.3 State machine replication</a></li>
+        <li><a href="#61-thoughtsconsensusconsensus">6.1: [[thoughts/consensus|Consensus]]</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -481,6 +505,8 @@ if (!doNotTrack) {
 
 
 
+  
+  
 
 
 
@@ -489,21 +515,577 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
-<p>What is the role of moderation in 
 
 
-<a href="/thoughts/communities" rel="noopener" class="internal-link" data-src="/thoughts/communities">communities</a>? What does good/bad moderation look like? (posts/comments/membership)</p>
-<p>I think a key part of answering this is trying to define what role a community occupies. Is it just a collection of people gathering around a shared identity? Or is it supposed to be a platform for moderated idea discussion/generation? Or something else in between.</p>
-<p>Thinking about this at the 
+<p>A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.</p>
+<a href="#martin-kleppmanns-course"><h2 id="martin-kleppmanns-course"><span class="hanchor" ariaLabel="Anchor"># </span>Martin Kleppmann&rsquo;s Course</h2></a>
+<p>Notes from 
 
-
-<a href="/thoughts/infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/infrastructure">infrastructure</a> level too, if a community&rsquo;s purpose is to serve as infrastructure so that it enables conversations, should infrastructure be regulated/enforced or something that should just play out naturally?</p>
-<p>Broadly defined, I see moderation as having two main categories: moderation of users and moderation of content. Moderation then, is to ensure that the set of values that is being conveyed by the users/content roughly aligns with that of the group/community.</p>
-<p>Moderation of users involves regulating the <em>membership</em> of individuals within the community whereas moderation of content regulates what can/can&rsquo;t be said in the community.</p>
-<p>Moderation gets problematic when it is used to target and discriminate against individuals because of personal relations or vendettas. I was thinking about also saying it becomes problematic when it discriminates against characteristics but I&rsquo;m hesitant on this bit. Is it categorically different to exclude people who are misogynistic vs those of a certain race? Probably yes but I don&rsquo;t have a solid argument for it yet.</p>
+<a href="https://www.youtube.com/watch?v=UEAMfLPZZhE&amp;list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB" rel="noopener">Martin Kleppmann&rsquo;s Distributed Systems Course</a> (he&rsquo;s the guy who wrote &ldquo;Designing Data-Intensive Applications&rdquo; O&rsquo;Reilly 2017)</p>
+<blockquote>
+<p>How do we share data amongst different concurrent entities?</p>
+</blockquote>
+<a href="#11-introduction"><h3 id="11-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>1.1: Introduction</h3></a>
+<ul>
+<li>Recommended Reading
+<ul>
+<li>&ldquo;Distributed Systems&rdquo; by van Steen &amp; Tanenbaum: Implementation detail heavy, more practical</li>
+<li>&ldquo;Introduction to Reliable and Secure Distributed Programs&rdquo; (2nd ed) by Cachin, Guerraoui &amp; Rodrigues: Theory heavy</li>
+<li>&ldquo;Designing Data-Intensive Applications&rdquo; by Kleppmann: More oriented toward distributed databases</li>
+<li>&ldquo;Operating Systems: Concurrent and Distributed Software Design&rdquo; by Addison-Wesley: links to Operating Systems</li>
+</ul>
+</li>
+<li>Why distributed?
+<ul>
+<li>Things are inherently distributed: sending a message from your phone to your friend&rsquo;s phone</li>
+<li>Reliability: even if one node fails, the system as a whole keeps functioning</li>
+<li>Performance: get data from a nearby node rather than one centralized server halfway around the world</li>
+<li>Solve bigger problems: some amounts of data can&rsquo;t fit on just one machine</li>
+</ul>
+</li>
+<li>Why <em>not</em> distributed?
+<ul>
+<li>Communication may fail (and we might not even know it has failed)</li>
+<li>Processes may crash (and we might not know)</li>
+<li>All of this can happen nondeterministically</li>
+<li>Thus we need to think about <a href="/thoughts/fault-tolerance" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">fault tolerance</a></li>
+</ul>
+</li>
+</ul>
+<a href="#13-rpc"><h3 id="13-rpc"><span class="hanchor" ariaLabel="Anchor"># </span>1.3: RPC</h3></a>
+<ul>
+<li>RPC: Remote Procedure Call
+<ul>
+<li>sometimes called a remote function call</li>
+</ul>
+</li>
+<li>Call a function whose implementation is on another node</li>
+<li>Needs an RPC client/server to mediate the call.
+<ul>
+<li>Client marshals (encode) arguments and passes it to the server</li>
+<li>Server unmarshals (decodes) arguments and runs the implementation</li>
+<li>&hellip; same in reverse for response</li>
+</ul>
+</li>
+<li>Generally an HTTP request but other types of RPCs exists as well (e.g. gRPC)</li>
+</ul>
+<a href="#21--22-fault-tolerance"><h3 id="21--22-fault-tolerance"><span class="hanchor" ariaLabel="Anchor"># </span>2.1 + 2.2: Fault Tolerance</h3></a>
+<ul>
+<li>See <a href="/thoughts/fault-tolerance#Two Generals Problem" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Two Generals Problem</a> and <a href="/thoughts/fault-tolerance#Byzantine Generals Problem" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Generals Problem</a></li>
+<li>Failure: system as a whole isn&rsquo;t working</li>
+<li>Fault: some part of the system isn&rsquo;t working</li>
+</ul>
+<a href="#23-system-models"><h3 id="23-system-models"><span class="hanchor" ariaLabel="Anchor"># </span>2.3: System Models</h3></a>
+<ul>
+<li>How do we capture assumptions in a system model consisting of
+<ul>
+<li>Network behaviour (e.g. message loss)
+<ul>
+<li>Reliable: message is received if and only if it is sent, messages may be reordered</li>
+<li>Fair-loss: messages may be lost, duplicated, or reordered. A message eventually gets through if you keep retrying (can be upgraded to reliable using retry + packet deduplication)</li>
+<li>Arbitrary: active adversary, may interfere with messages (can be upgraded to fair-loss using TLS)</li>
+<li>Network partition: some links dropping/delaying all messages for an extended period of time</li>
+</ul>
+</li>
+<li>Node behaviour (e.g. crashes)
+<ul>
+<li>Crash-stop: node is faulty if it crashes. After it crashes, it stops executing forever</li>
+<li>Crash-recovery: node may crash at any moment, losing in-memory state. It may resume executing sometime later</li>
+<li>Byzantine: a node is faulty if it deviates from the algorithm. Faulty nodes may do anything, including crashing or malicious behaviour</li>
+<li>Correct: not faulty</li>
+</ul>
+</li>
+<li>Timing behaviour (e.g. latency)
+<ul>
+<li>Synchronous: message latency no greater than a known upper bound</li>
+<li>Partially synchronous: asynchronous for some finite (but unknown) periods of time, synchronous otherwise</li>
+<li>Asynchronous: messages can be delayed arbitrarily, no timing guarantees</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="#31-physical-time"><h3 id="31-physical-time"><span class="hanchor" ariaLabel="Anchor"># </span>3.1: Physical Time</h3></a>
+<ul>
+<li>Two types of clock
+<ul>
+<li>Physical clock: number of seconds elapsed</li>
+<li>Logical clock: count events, e.g. messages sent</li>
+</ul>
+</li>
+<li>Time is hard!
+<ul>
+<li>Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation</li>
+<li>International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency</li>
+<li>Compromise, UTC is TAI with corrections to account for Earth rotation</li>
+<li>Unix Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds</li>
+<li>ISO8601: year, month, day, hour, minute, second, and timezone offset relative to UTC</li>
+</ul>
+</li>
+<li>Periodically adjust local clock with a server with a more accurate time source using Network Time Protocol (NTP) or Precision Time Protocol (PTP)</li>
+<li>Estimating time over a network
+<ul>
+<li>NTP Client sends out a request at $t_1$</li>
+<li>NTP Server receives request at $t_2$</li>
+<li>NTP Server sends a response at $t_3$</li>
+<li>NTP Client receives a request at $t_4$</li>
+<li>Round-trip network delay = $\delta = (t_4-t_1) - (t_3-t_2)$</li>
+<li><strong>Estimated</strong> single-trip network delay = $\delta / 2$</li>
+<li>Estimated server time when client receives response, so clock skew is $\theta = (t_3 + \delta / 2) - t_4$</li>
+<li>If $\theta &lt; 125ms$, slew the clock: speed it up/slow it down by 500ppm until clocks are in sync</li>
+<li>If $125ms \leq \theta &lt; 1000s$, step the clock: suddenly reset client clock to estimated server timestamp</li>
+<li>If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)</li>
+</ul>
+</li>
+</ul>
+<a href="#33-causality--message-ordering"><h3 id="33-causality--message-ordering"><span class="hanchor" ariaLabel="Anchor"># </span>3.3: Causality + Message ordering</h3></a>
+<ul>
+<li>We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:
+<ul>
+<li>$a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order</li>
+<li>$a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique)</li>
+<li>there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$</li>
+<li>Concurrent does <em>not</em> mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)</li>
+</ul>
+</li>
+<li>Causality
+<ul>
+<li>When $a \rightarrow b$ then $a$ might have caused $b$</li>
+<li>When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)</li>
+<li>$\prec$ is a causal order, it is consistent with causality, a strict total order on events</li>
+</ul>
+</li>
+</ul>
+<a href="#41-logical-time"><h3 id="41-logical-time"><span class="hanchor" ariaLabel="Anchor"># </span>4.1: Logical Time</h3></a>
+<ul>
+<li>Problem is that <em>even with synced clocks</em> we can have $t_2 &lt; t_1$ with a message A at $t_1$ with a response B at $t_2$
+<ul>
+<li>Here, the timestamp order is inconsistent with expected order!</li>
+<li>Can happen when the clock skew is <em>less</em> than the one way network latency</li>
+</ul>
+</li>
+<li>Logical clock: count number of events occurred</li>
+<li>Lamport Clock (a form of logical clock)
+<ul>
+<li>Logic
+<ul>
+<li>On initialization, set <code>t := 0</code> for each node</li>
+<li>On any event on local node, <code>fn tick() -&gt; t += 1</code></li>
+<li>On sending message $m$, <code>fn send(m) -&gt; tick(); actually_send(t, m)</code></li>
+<li>On receiving <code>fn receive(t', m) -&gt; t = max(t, t') + 1; do_something(m)</code></li>
+</ul>
+</li>
+<li>Properties
+<ul>
+<li>If $a \rightarrow b$ then $L(a) &lt; L(b)$</li>
+<li>However, $L(a) &lt; L(b)$ does not imply $a \rightarrow b$</li>
+<li>Possible that $L(a) = L(b)$ for $a \neq b$</li>
+<li>However if we include the node $N(e)$ for the node where event $e$ occurred, then $(L(e), N(e))$ <strong>uniquely identifies</strong> event $e$</li>
+<li>We can then define a total causal order
+<ul>
+<li>$$(a \prec b) \iff (L(a) &lt; L(b)) \lor (L(a) = L(b) \land N(a) &lt; N(b))$$</li>
+</ul>
+</li>
+<li>Limitation, given timestamps $L(a) &lt; L(b)$, we can&rsquo;t tell whether $a \rightarrow b$ or $a \parallel b$</li>
+<li>We need vector clocks!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Vector Clocks (another form of logical clock)
+<ul>
+<li>Instead of having a single counter <code>t</code> for all nodes, we keep a vector timestamp $a$ of an event for <em>each</em> node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$</li>
+<li>Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$</li>
+<li>Logic
+<ul>
+<li>On initialization , set <code>t := [0] * n</code></li>
+<li>On any event on node $N_i$, <code>fn tick() -&gt; t[i] += 1</code></li>
+<li>On sending message $m$ from node $N_i$, <code>fn send(m) -&gt; tick(); actually_send(t, m)</code></li>
+<li>On receiving <code>fn receive(t', m) -&gt; t = zip(t, t').map(max); tick(); do_something(m)</code></li>
+</ul>
+</li>
+<li>Thus, a vector timestamp of an event $e$ actually represents all of its <em>causal dependencies</em>: ${ e } \cup {a | a \rightarrow e }$
+<ul>
+<li>E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$</li>
+</ul>
+</li>
+<li>Ordering
+<ul>
+<li>$T= T&rsquo; \iff T[i] = T&rsquo;[i] \ \forall i \in {1, \ldots, n}$ (T and T&rsquo; are same if each element has the same value)</li>
+<li>$T \leq T&rsquo; \iff T[i] \leq T&rsquo;[i] \ \forall i \in {1, \cdots, n}$ (T happened at the same time or earlier than T&rsquo; if each element in T is less than or equal to its value in T')</li>
+<li>$T &lt; T&rsquo; \iff T \leq T&rsquo; \land T \neq T&rsquo;$ (T happened earlier than T&rsquo; if each element in T is less than its value in T&rsquo;, at least one element in T differs from T')
+<ul>
+<li>$T \parallel T&rsquo; \iff T \nleq T&rsquo; \land T&rsquo; \nleq T$ (T is incomparable to T')</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Properties</li>
+<li>$V(a) \leq V(b) \iff ({a} \cup {e | e \rightarrow a}) \subseteq ({b} \cup {e | e \rightarrow b})$</li>
+<li>$V(a) &lt; V(b) \iff (a \rightarrow b)$</li>
+<li>$V(a) = V(b) \iff (a = b)$</li>
+<li>$V(a) \parallel V(b) \iff a \parallel b$</li>
+</ul>
+</li>
+</ul>
+<a href="#42--43-broadcast"><h3 id="42--43-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>4.2 + 4.3: Broadcast</h3></a>
+<ol>
+<li>Ordering
+<ol>
+<li>FIFO Broadcast: messages sent by the <strong>same</strong> node must be delivered in the order they were sent</li>
+<li>Causal Broadcast: obeys happen-before (causal) relationships</li>
+<li>Total order broadcast: globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a>!)</li>
+</ol>
+</li>
+<li>Reliability
+<ol>
+<li>Nodes can die mid-transmission!</li>
+<li>Strategies
+<ol>
+<li>Eager reliable broadcast: first time a node receives a message, re-broadcast to each other node (reliable but expensive! $O(n^2)$ messages for $n$ nodes)</li>
+<li>Gossip: first time a node receives a message, forward it to $k$ other nodes, chosen randomly (reliable with high probability)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<a href="#51-replication"><h3 id="51-replication"><span class="hanchor" ariaLabel="Anchor"># </span>5.1: Replication</h3></a>
+<ul>
+<li>A node that has a copy of the data is called a <em>replica</em></li>
+<li>If one replica is faulty, others are ideally accessible</li>
+<li>If data doesn&rsquo;t change, this is an easy problem: just copy it. Hard problem is when the data changes</li>
+<li>RAID (Redundant Array of Independent Disks) which is used to replicate within a single computer
+<ul>
+<li>RAID has a single controlled whereas distributed systems have nodes that act independently</li>
+</ul>
+</li>
+<li>How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e.g. pressing the like button)?</li>
+<li>Idempotence is important
+<ul>
+<li>$f$ is idempotent if $f(x) = f(f(x))$</li>
+<li>e.g.
+<ul>
+<li>Not idempotent: $f(likeCount) = likeCount + 1$</li>
+<li>Idempotent: $f(likeSet) = likeSet \cup {userID}$</li>
+</ul>
+</li>
+<li>Idempotent requests can be retried without deduplication</li>
+<li>But problematic when other functions are in the mix: $f(f(x))= f(x)$ but $f(g(f(x))) \neq g(x)$</li>
+</ul>
+</li>
+<li>Retry semantics
+<ul>
+<li>At-most-once: send request, don&rsquo;t retry, update may not happen</li>
+<li>At-least-once: retry request until acknowledged, may repeat update</li>
+<li>Exactly-once: retry + idempotence / deduplication</li>
+</ul>
+</li>
+<li>To somewhat fix this, use tombstones and record logical timestamp for when events happen
+<ul>
+<li>Then, we can reconcile replicas by propagating the record with the latest timestamp and discard the records with earlier timestamps</li>
+<li>Then, to fix concurrent writes by different clients
+<ul>
+<li>Last writer wins (LWW): resolve conflicts using a logical clock that gives total ordering (e.g. Lamport clock)</li>
+<li>Multi-value register (give all options to let user/algorithm above resolve it): use a Vector clock, $v_2$ replaces $v_1$ if $t_2 &gt; t_1$; preserver both ${v_1, v_2}$ if $t_1 \parallel t_2$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="#52-quorums"><h3 id="52-quorums"><span class="hanchor" ariaLabel="Anchor"># </span>5.2: Quorums</h3></a>
+<ul>
+<li>Faults
+<ul>
+<li>Probability of all $n$ replicas being faulty: $p^n$</li>
+<li>Probability of 1 or more replicas being faulty: $1 - (1-p)^n$</li>
+</ul>
+</li>
+<li>Read-after-write
+<ul>
+<li>Client writes to servers A and B but request to A fails (so only B has correct state)</li>
+<li>Client reads from servers A and B but request to B fails (so only client gets A&rsquo;s incorrect state)</li>
+<li>Fix this by quorum
+<ul>
+<li>In a system with $n$ replicas</li>
+<li>If a write is acknowledged by $w$ replicas (write quorum)</li>
+<li>We request reads from $r$ replicas (read quorum)
+<ul>
+<li>e.g. send 3 requests, only 2 have to come back. Choose most up to date based on timestamp</li>
+</ul>
+</li>
+<li>$r + w &gt; n$
+<ul>
+<li>Typically, $r = w = \frac{n+1}{2}$</li>
+<li>Reads can tolerate $n-r$ unavailable replicas</li>
+<li>Writes can tolerate $n - w$ unavailable replicas</li>
+</ul>
+</li>
+<li>Then the read will see the previously written value (as the read and write quorum share $\geq 1$ replica)
+<ul>
+<li>Client can then &lsquo;repair&rsquo; the servers by sending its most up to state to servers that are out of date (with original logical timestamp! idempotent, should be fine)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="#53-state-machine-replication"><h3 id="53-state-machine-replication"><span class="hanchor" ariaLabel="Anchor"># </span>5.3 State machine replication</h3></a>
+<ul>
+<li>Can be done by FIFO-total order broadcasting every updated to all replicas. Whenever a replica delivers an update message, it applies it to its own state</li>
+<li>Underlies a lot of <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchains</a>, distributed ledgers, smart contracts, etc.</li>
+<li>Broadcast and associated assumptions about state update function
+<ul>
+<li>Total order: deterministic
+<ul>
+<li>Whenever two replicas are in the same state, giving them the same input, they will transition to the same next state</li>
+<li>Limitations: cannot update state immediately, have to wait for delivery through broadcast</li>
+</ul>
+</li>
+<li>Causal broadcast: deterministic + concurrent updates are commutative
+<ul>
+<li>Replicas can process updates in different orders and still end up in the same state</li>
+</ul>
+</li>
+<li>Reliable broadcast: deterministic + all updates are commutative</li>
+<li>Best-effort broadcast: deterministic + commutative + idempotent + tolerates message loss</li>
+</ul>
+</li>
+</ul>
+<a href="#61-thoughtsconsensusconsensus"><h3 id="61-thoughtsconsensusconsensus"><span class="hanchor" ariaLabel="Anchor"># </span>6.1: <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">Consensus</a></h3></a>
+<ul>
+<li></li>
+</ul>
  
 
     </article>
@@ -531,34 +1113,14 @@ if (!doNotTrack) {
     
       
       
-      
-    
-      
-      
-      
-    
-      
-      
       <li>
-        <a href="/thoughts/Internet/" data-ctx="Moderation" data-src="/thoughts/Internet" class="internal-link">Internet</a>
+        <a href="/thoughts/fault-tolerance/" data-ctx="distributed systems" data-src="/thoughts/fault-tolerance" class="internal-link">Fault Tolerance</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/accountability/" data-ctx="moderation" data-src="/thoughts/accountability" class="internal-link">Accountability</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/governance/" data-ctx="Moderation" data-src="/thoughts/governance" class="internal-link">Governance</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/group-limits/" data-ctx="moderation" data-src="/thoughts/group-limits" class="internal-link">Group Limits</a>
+        <a href="/thoughts/software-principles/" data-ctx="distributed systems" data-src="/thoughts/software-principles" class="internal-link">Software Principles</a>
       </li>
       
       
@@ -582,7 +1144,7 @@ if (!doNotTrack) {
 <script>
 async function run() {
   const { index, links, content } = await fetchData
-  const curPage = "/thoughts/Moderation"
+  const curPage = "/thoughts/distributed-systems"
   const pathColors = [{"/moc":"#4388cc"}]
   let depth =  1 
 

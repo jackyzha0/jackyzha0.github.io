@@ -4013,6 +4013,28 @@
           "text": "peer-to-peer"
         }
       ],
+      "/thoughts/distributed-systems": [
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/consensus",
+          "text": "Consensus"
+        }
+      ],
       "/thoughts/double-consciousness": [
         {
           "source": "/thoughts/double-consciousness",
@@ -4372,6 +4394,11 @@
         }
       ],
       "/thoughts/fault-tolerance": [
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
         {
           "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/game-theory",
@@ -7281,6 +7308,11 @@
         },
         {
           "source": "/thoughts/software-principles",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/software-principles",
           "target": "/thoughts/maintenance",
           "text": "maintenance"
         }
@@ -10058,6 +10090,11 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
         }
       ],
       "/thoughts/Reductionism": [
@@ -10724,6 +10761,11 @@
           "text": "blockchain"
         },
         {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
+        {
           "source": "/thoughts/ethereum",
           "target": "/thoughts/blockchain",
           "text": "Blockchain"
@@ -11146,6 +11188,11 @@
         },
         {
           "source": "/thoughts/decentralization",
+          "target": "/thoughts/consensus",
+          "text": "Consensus"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
           "target": "/thoughts/consensus",
           "text": "Consensus"
         },
@@ -11813,6 +11860,18 @@
           "text": "digital permanence"
         }
       ],
+      "/thoughts/distributed-systems": [
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/software-principles",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        }
+      ],
       "/thoughts/double-consciousness": [
         {
           "source": "/thoughts/Algorithms-of-Oppression",
@@ -12273,6 +12332,11 @@
           "source": "/thoughts/decentralization",
           "target": "/thoughts/fault-tolerance",
           "text": "Fault tolerance"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -19913,6 +19977,26 @@
       "text": "peer-to-peer"
     },
     {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/fault-tolerance",
+      "text": "fault tolerance"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/blockchain",
+      "text": "blockchains"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/consensus",
+      "text": "Consensus"
+    },
+    {
       "source": "/thoughts/double-consciousness",
       "target": "/thoughts/hermeneutical-injustice",
       "text": "hermeneutical injustice"
@@ -20241,6 +20325,11 @@
       "source": "/thoughts/exploit-explore",
       "target": "/thoughts/play",
       "text": "play"
+    },
+    {
+      "source": "/thoughts/fault-tolerance",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems"
     },
     {
       "source": "/thoughts/fault-tolerance",
@@ -22926,6 +23015,11 @@
       "source": "/thoughts/software-principles",
       "target": "/thoughts/local-first-software",
       "text": "Local first"
+    },
+    {
+      "source": "/thoughts/software-principles",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems"
     },
     {
       "source": "/thoughts/software-principles",
