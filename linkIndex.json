@@ -2404,6 +2404,11 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/idea-list",
+          "text": "idea list"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
         },
@@ -12954,6 +12959,11 @@
           "text": "here"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/idea-list",
+          "text": "idea list"
+        },
+        {
           "source": "/thoughts/aperture-problem",
           "target": "/thoughts/idea-list",
           "text": "idea"
@@ -18505,6 +18515,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Lattice-Proposal",
       "text": "Lattice -- an experiment on collective sense-making and digital gardening"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/idea-list",
+      "text": "idea list"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
