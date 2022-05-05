@@ -7,6 +7,9 @@ tags:
 
 How do we defend against attacks in [[thoughts/distributed systems|distributed systems]] with no central authority? We want the system as a whole to continue working, even when some parts are faulty
 
+- Failure: system as a whole isn't working
+- Fault: some part of the system isn't working
+
 Related: [game theory](thoughts/game%20theory.md)
 
 ## Zooko's Triangle

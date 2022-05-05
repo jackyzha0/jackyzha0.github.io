@@ -1,0 +1,75 @@
+---
+title: "Clocks"
+date: 2022-05-05
+tags:
+- seed
+aliases:
+- physical clock
+- logical clock
+---
+
+Measuring time in the context of computer systems
+
+## Physical Time
+- Two types of clock
+	- Physical clock: number of seconds elapsed
+	- Logical clock: count events, e.g. messages sent
+- Time is hard!
+	- Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation
+	- International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency
+	- Compromise, UTC is TAI with corrections to account for Earth rotation
+	- Unix Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds
+	- ISO8601: year, month, day, hour, minute, second, and timezone offset relative to UTC
+- Periodically adjust local clock with a server with a more accurate time source using Network Time Protocol (NTP) or Precision Time Protocol (PTP)
+- Estimating time over a network
+	- NTP Client sends out a request at $t_1$
+	- NTP Server receives request at $t_2$
+	- NTP Server sends a response at $t_3$
+	- NTP Client receives a request at $t_4$
+	- Round-trip network delay = $\delta = (t_4-t_1) - (t_3-t_2)$
+	- **Estimated** single-trip network delay = $\delta / 2$
+	- Estimated server time when client receives response, so clock skew is $\theta = (t_3 + \delta / 2) - t_4$
+	- If $\theta < 125ms$, slew the clock: speed it up/slow it down by 500ppm until clocks are in sync
+	- If $125ms \leq \theta < 1000s$, step the clock: suddenly reset client clock to estimated server timestamp
+	- If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)
+
+## Logical Time
+- Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message A at $t_1$ with a response B at $t_2$
+	- Here, the timestamp order is inconsistent with expected order!
+	- Can happen when the clock skew is *less* than the one way network latency
+- Logical clock: count number of events occurred
+- Lamport Clock (a form of logical clock)
+	- Logic
+		- On initialization, set `t := 0` for each node
+		- On any event on local node, `fn tick() -> t += 1`
+		- On sending message $m$, `fn send(m) -> tick(); actually_send(t, m)`
+		- On receiving `fn receive(t', m) -> t = max(t, t') + 1; do_something(m)`
+	- Properties
+		- If $a \rightarrow b$ then $L(a) < L(b)$
+		- However, $L(a) < L(b)$ does not imply $a \rightarrow b$
+		- Possible that $L(a) = L(b)$ for $a \neq b$
+		- However if we include the node $N(e)$ for the node where event $e$ occurred, then $(L(e), N(e))$ **uniquely identifies** event $e$
+		- We can then define a total causal order
+			- $$(a \prec b) \iff (L(a) < L(b)) \lor (L(a) = L(b) \land N(a) < N(b))$$
+		- Limitation, given timestamps $L(a) < L(b)$, we can't tell whether $a \rightarrow b$ or $a \parallel b$
+		- We need vector clocks!
+- Vector Clocks (another form of logical clock)
+	- Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
+	- Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$
+	- Logic
+		- On initialization , set `t := [0] * n`
+		- On any event on node $N_i$, `fn tick() -> t[i] += 1`
+		- On sending message $m$ from node $N_i$, `fn send(m) -> tick(); actually_send(t, m)`
+		- On receiving `fn receive(t', m) -> t = zip(t, t').map(max); tick(); do_something(m)`
+	- Thus, a vector timestamp of an event $e$ actually represents all of its *causal dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
+		- E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$
+	- Ordering
+		- $T= T' \iff T[i] = T'[i] \ \forall i \in \{1, \ldots, n\}$ (T and T' are same if each element has the same value)
+		- $T \leq T' \iff T[i] \leq T'[i] \ \forall i \in \{1, \cdots, n\}$ (T happened at the same time or earlier than T' if each element in T is less than or equal to its value in T')
+		- $T < T' \iff T \leq T' \land T \neq T'$ (T happened earlier than T' if each element in T is less than its value in T', at least one element in T differs from T')
+			- $T \parallel T' \iff T \nleq T' \land T' \nleq T$ (T is incomparable to T')
+	- Properties
+	- $V(a) \leq V(b) \iff (\{a\} \cup \{e | e \rightarrow a\}) \subseteq (\{b\} \cup \{e | e \rightarrow b\})$
+	- $V(a) < V(b) \iff (a \rightarrow b)$
+	- $V(a) = V(b) \iff (a = b)$
+	- $V(a) \parallel V(b) \iff a \parallel b$

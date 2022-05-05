@@ -59,7 +59,7 @@ Each term begins with an election in which one or more candidates attempt to bec
 ### Initiate State
 Servers start up in the follower state.
 
-A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a 'heartbeat' from a leader which is an empty AppendEntries RPC with no log entries).
+A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a 'heartbeat' from a leader which is an empty AppendEntries [[thoughts/RPC|RPC]] with no log entries).
 
 If a follower receives no communication over a period of time called the *election timeout* (randomized between 150ms and 300ms), then it assumes there is no viable leader and begins an election to choose a new leader.
 
@@ -70,13 +70,13 @@ It is important to note that a server can only vote once per election. *It will 
 
 A candidate remains a candidate until one of 3 events happens:
 1. It wins the election. It received votes from a majority of servers in the cluster. Majority rule ensures that at most one candidate can win the election for a particular term. It then sends heartbeat messages to all other servers to establish authority and prevent new elections.
-2. Another server establishes itself as leader. Received an AppendEntries RPC from another server claiming to be leader. This claim is legitimate if the leader's term is at least as large as the candidate's current term.
+2. Another server establishes itself as leader. Received an AppendEntries [[thoughts/RPC|RPC]] from another server claiming to be leader. This claim is legitimate if the leader's term is at least as large as the candidate's current term.
 3. A period of time goes by with no winner. Possible if many followers become candidates at the same time, votes can be split so no candidate wins majority. When this happens, each candidate times out and starts a new election by incrementing its term and initiating another election. Raft uses randomized election timeouts to ensure split votes are rare.
 
 After a leader has been elected, it beings servicing client requests.
 
 ### Properties
-Generally, Raft will be able to elect and maintain a steady leader as long as the system roughly follows the timing requirement: `broadcastTime < 10 * electionTimeout < 100 * MTBF` where `broadcastTime` is amount of time for a server to send an RPC to every server in the cluster and `MTBF` is the mean time between failure for a server.
+Generally, Raft will be able to elect and maintain a steady leader as long as the system roughly follows the timing requirement: `broadcastTime < 10 * electionTimeout < 100 * MTBF` where `broadcastTime` is amount of time for a server to send an [[thoughts/RPC|RPC]] to every server in the cluster and `MTBF` is the mean time between failure for a server.
 
 Broadcast time should be roughly an order of magnitude less than the election timeout so that leaders can reliably send heartbeat messages required to keep followers from starting elections (similar to having RTT be roughly a magnitude smaller than request timeout). 
 
@@ -95,16 +95,16 @@ The *Log Matching Property* is maintained by Raft which guarantees
 
 When a leader comes to power, it just begins normal operation, and the logs automatically converge in response to failures of the AppendEntries consistency check.
 
-To bring a follower's log into consistency with its own, the leader must find the latest log entry where the two logs agree. To do this, the leader keeps a value `nextIndex` for each follower which is the number of the *next log entry the leader will send to that follower*. The leader pings each follower with a AppendEntries RPC call with that `nextIndex` value. If this call is successful, the leader knows that this follower is up to date. If it fails, then the leader decrements `nextIndex` again until it reaches a log entry that does succeed.  At this point, the follower's logs will be removed (as anything between `nextIndex` and what the follower currently has is conflicting) and the follower's log is now consistent with the leader's and will remain that way for the rest of the term.
+To bring a follower's log into consistency with its own, the leader must find the latest log entry where the two logs agree. To do this, the leader keeps a value `nextIndex` for each follower which is the number of the *next log entry the leader will send to that follower*. The leader pings each follower with a AppendEntries [[thoughts/RPC|RPC]] call with that `nextIndex` value. If this call is successful, the leader knows that this follower is up to date. If it fails, then the leader decrements `nextIndex` again until it reaches a log entry that does succeed.  At this point, the follower's logs will be removed (as anything between `nextIndex` and what the follower currently has is conflicting) and the follower's log is now consistent with the leader's and will remain that way for the rest of the term.
 
 ## Unbounded Logs (Log Compaction)
 In a practical system, a log cannot grow without bounds. The simplest solution is to use snapshotting where the entire current system state is written to a snapshot on stable storage, then the entire log up until that point is discarded.
 
 All snapshots are taken independently by each server. Each snapshot contains data like last included index, last included term, and the state machine state.
 
-Sometimes, snapshots need to be sent from leader to followers if the followers lag behind using the InstallSnapshot RPC. This can happen when the leader has discarded the next log entry that needs to be send to a follower (e.g. new server joining cluster).
+Sometimes, snapshots need to be sent from leader to followers if the followers lag behind using the InstallSnapshot [[thoughts/RPC|RPC]]. This can happen when the leader has discarded the next log entry that needs to be send to a follower (e.g. new server joining cluster).
 
-When a server receives a InstallSnapshot RPC call, it usually discard its entire log. In the odd case where the server receiving the RPC call has *more* entries in its log than the snapshot, it deletes all log entries covered by the snapshot but entries following the snapshot are still valid and must be kept.
+When a server receives a InstallSnapshot [[thoughts/RPC|RPC]] call, it usually discard its entire log. In the odd case where the server receiving the [[thoughts/RPC|RPC]] call has *more* entries in its log than the snapshot, it deletes all log entries covered by the snapshot but entries following the snapshot are still valid and must be kept.
 
 Other options like log cleaning and log-structured merge trees are also possible.
 

@@ -25,3 +25,16 @@ On rough consensus
 - Humming as 'temp checks' for people to voice disagreement but default assumption is optimistic trust
 - "While counting heads might give a good guess as to what the rough consensus will be, doing so can allow important minority views to get lost in the noise. One of the strengths of a consensus model is that minority views are addressed, and using a rough consensus model should not take away from that."
 - "We can't know who the "members" of any given working group would be at any one time, and we certainly can't know who all of the "members" of the IETF would be: That's why we refer to "participants" in the IETF; the IETF doesn't really have "members". Indeed, we often recruit additional implementers and other experts into working groups in order to ensure that broader views are brought into the discussion. So, voting is simply not practical."
+
+## Distributed Systems
+- Useful for fault-tolerant total order broadcast
+	- One way to do it is using a single leader, but what happens if the leader crashes/becomes unavailable?
+- Manual failover: human operator chooses a new leader and reconfigures each node to use new leader
+- Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value
+- Consensus in the context of total order broadcast is on *what the next message to deliver is*
+- Common consensus algorithms (all assume partially synchronous, crash-recovery system model)
+	- Paxos: single-value consensus
+	- Multi-Paxos: generalization to total order broadcast
+	- Raft, Viewstamped Replication, Zab: total order broadcast by default
+- Blockchain consensus models assume partially synchronous Byzantine system model
+- Cannot be asynchronous due to the FLP Result: there is no deterministic consensus algorithm that is guaranteed to terminate in an asynchronous crash-stop system model

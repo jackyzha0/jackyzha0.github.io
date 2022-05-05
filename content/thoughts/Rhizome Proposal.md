@@ -105,7 +105,7 @@ All bullet points below are releasable artifacts.
 	- Merkle-DAG
 	- IPLD
 	- CID
-	- CRDT
+	- [[thoughts/CRDT|CRDT]]
 	- Yjs
 	- Hypercore
 	- SSI

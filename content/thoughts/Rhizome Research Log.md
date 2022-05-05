@@ -15,11 +15,17 @@ tags:
 	- Default branches are single stream
 	- To make a collaborative doc you can 'fuse' or 'join' branches together temporarily to sync them with each other
 		- What if we made something on top of `git` like this that actually functions on a syntax level rather than a character level... one for the [[thoughts/idea list|idea list]]
+	- Pace layers for collaboration
+		- Real-time (keystroke-by-keystroke)
+		- On-click (manually click refresh)
+		- Suggest changes (like Google Docs, accept/reject)
+- Agreeing on what operations a [[thoughts/CRDT|CRDT]] can perform still seems to be difficult ([see 1hr into this talk](https://youtu.be/Qytg0Ibet2E?t=3665))
+	- Possible room for data lensing on public schemas to be useful here
 
 ### May 4th
 - Skimming [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
 	- Really good foundation to work off of
-	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of logical clock rate
+	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of [[thoughts/clocks|logical clock]] rate
 
 ### May 3rd
 - Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was

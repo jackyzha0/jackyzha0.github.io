@@ -84,7 +84,7 @@ tags:
 -   how do we explain 'conceptual change'?
 	-   knowing a creature's vector-space partitions may suffice for short-term prediction of behaviour but inadequate to predict or explain the evolution of those partitions over the course of time
 	-   just knowing output space partitions is not enough, but connection weights seems to provide a level that meets all of these conditions
--   neural networks have decently high fault tolerance (some redundant neurons)
+-   neural networks have decently high [[thoughts/fault tolerance|fault tolerance]] (some redundant neurons)
 	-   may help to explain functional persistence of brains in the face of minor damage
 	-   in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade
 ## Differences

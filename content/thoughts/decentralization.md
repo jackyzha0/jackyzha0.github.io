@@ -43,7 +43,7 @@ Decentralization is a tactic for diffusing risk for many and lowering the risk f
 **Over applying decentralization isn't a strategy unless your goal is obscurity**
 
 ### Counterpoints
-#### Fault Tolerance
+#### [[thoughts/fault tolerance|Fault Tolerance]]
 Common mode failure, all pieces can fail for the same reason. (e.g. all nodes in a blockchain run the same software but that software has a bug)
 
 To counteract this,
