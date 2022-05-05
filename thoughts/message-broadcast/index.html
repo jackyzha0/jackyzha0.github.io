@@ -563,7 +563,7 @@ if (!doNotTrack) {
 <p>Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a>!)</p>
 <p>In state machine replication, total order broadcast assumes the state update function is <strong>deterministic</strong>. That is, whenever two replicas are in the same state, giving them the same input, they will transition to the same next state. The main limitation is that total order broadcast cannot update state immediately, have to wait for delivery through broadcast</p>
 <a href="#causal-broadcast"><h3 id="causal-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Broadcast</h3></a>
-<p>Obeys happens-before (<a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causal</a>) relationships.</p>
+<p>Obeys happens-before (<a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a>) relationships.</p>
 <p>In state machine replication, assumed state update function is <strong>deterministic and concurrent updates are commutative</strong>. Replicas can process updates in different orders and still end up in the same state</p>
 <a href="#fifo-reliable-broadcast"><h3 id="fifo-reliable-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>FIFO (reliable) Broadcast</h3></a>
 <p>Messages sent by the <strong>same</strong> node must be delivered in the order they were sent</p>

@@ -1220,12 +1220,12 @@
         },
         {
           "source": "/thoughts/Chinese-room-argument",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
           "source": "/thoughts/Chinese-room-argument",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         }
       ],
@@ -2048,7 +2048,7 @@
         },
         {
           "source": "/thoughts/Moving-Castles",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "Causality"
         }
       ],
@@ -3476,12 +3476,12 @@
       "/thoughts/clocks": [
         {
           "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
           "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causality"
         }
       ],
@@ -3748,17 +3748,17 @@
         },
         {
           "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
           "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
           "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "Causal"
         },
         {
@@ -4187,7 +4187,7 @@
         },
         {
           "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "Message ordering and Causality"
         },
         {
@@ -5277,7 +5277,7 @@
         },
         {
           "source": "/thoughts/indeterminant",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         }
       ],
@@ -5492,7 +5492,7 @@
         },
         {
           "source": "/thoughts/intelligence",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
@@ -6005,7 +6005,7 @@
         },
         {
           "source": "/thoughts/learning",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         }
       ],
@@ -6263,7 +6263,7 @@
         },
         {
           "source": "/thoughts/message-broadcast",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         },
         {
@@ -7970,7 +7970,7 @@
         },
         {
           "source": "/thoughts/trust",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         }
       ],
@@ -11267,6 +11267,78 @@
           "text": "catch 22"
         }
       ],
+      "/thoughts/causality": [
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/causality",
+          "text": "Causality"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/causality",
+          "text": "causality"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/causality",
+          "text": "Causal"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/causality",
+          "text": "Message ordering and Causality"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/learning",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/causality",
+          "text": "causal"
+        }
+      ],
       "/thoughts/censorship": [
         {
           "source": "/thoughts/Internet",
@@ -14351,78 +14423,6 @@
           "source": "/thoughts/replication",
           "target": "/thoughts/message-broadcast",
           "text": "message broadcast"
-        }
-      ],
-      "/thoughts/message-ordering": [
-        {
-          "source": "/thoughts/Chinese-room-argument",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/Chinese-room-argument",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/Moving-Castles",
-          "target": "/thoughts/message-ordering",
-          "text": "Causality"
-        },
-        {
-          "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
-          "text": "causality"
-        },
-        {
-          "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/consistency",
-          "target": "/thoughts/message-ordering",
-          "text": "Causal"
-        },
-        {
-          "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/message-ordering",
-          "text": "Message ordering and Causality"
-        },
-        {
-          "source": "/thoughts/indeterminant",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/intelligence",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/learning",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/message-broadcast",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        },
-        {
-          "source": "/thoughts/trust",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
         }
       ],
       "/thoughts/metalabel": [
@@ -17986,12 +17986,12 @@
     },
     {
       "source": "/thoughts/Chinese-room-argument",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
       "source": "/thoughts/Chinese-room-argument",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -18746,7 +18746,7 @@
     },
     {
       "source": "/thoughts/Moving-Castles",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "Causality"
     },
     {
@@ -20046,12 +20046,12 @@
     },
     {
       "source": "/thoughts/clocks",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
       "source": "/thoughts/clocks",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causality"
     },
     {
@@ -20296,17 +20296,17 @@
     },
     {
       "source": "/thoughts/consistency",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
       "source": "/thoughts/consistency",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
       "source": "/thoughts/consistency",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "Causal"
     },
     {
@@ -20701,7 +20701,7 @@
     },
     {
       "source": "/thoughts/distributed-systems",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "Message ordering and Causality"
     },
     {
@@ -21711,7 +21711,7 @@
     },
     {
       "source": "/thoughts/indeterminant",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -21906,7 +21906,7 @@
     },
     {
       "source": "/thoughts/intelligence",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -22391,7 +22391,7 @@
     },
     {
       "source": "/thoughts/learning",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -22621,7 +22621,7 @@
     },
     {
       "source": "/thoughts/message-broadcast",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -24196,7 +24196,7 @@
     },
     {
       "source": "/thoughts/trust",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {

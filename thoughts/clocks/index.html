@@ -616,7 +616,6 @@ if (!doNotTrack) {
       
         
         
-        
       
     
   
@@ -672,10 +671,10 @@ if (!doNotTrack) {
 <li>Possible that $L(a) = L(b)$ for $a \neq b$</li>
 </ul>
 <p>This means that two identical Lamport timestamps might not correspond to the same unique event. However if we include the node $N(e)$ for the node where event $e$ occurred, then $(L(e), N(e))$ <strong>uniquely identifies</strong> event $e$.</p>
-<p>We attempt to define a total <a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causal</a> order</p>
+<p>We attempt to define a total <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> order</p>
 <p>$$(a \prec b) \iff (L(a) &lt; L(b)) \lor (L(a) = L(b) \land N(a) &lt; N(b))$$</p>
 <p>However even now, given timestamps $L(a) &lt; L(b)$, we can&rsquo;t tell whether $a \rightarrow b$ or $a \parallel b$</p>
-<p>To separate <a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causality</a> from concurrent events, we need vector clocks!</p>
+<p>To separate <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a> from concurrent events, we need vector clocks!</p>
 <a href="#vector-clocks"><h3 id="vector-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Clocks</h3></a>
 <pre><code>- Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
 - Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$
@@ -684,7 +683,7 @@ if (!doNotTrack) {
 	- On any event on node $N_i$, `fn tick() -&gt; t[i] += 1`
 	- On sending message $m$ from node $N_i$, `fn send(m) -&gt; tick(); actually_send(t, m)`
 	- On receiving `fn receive(t', m) -&gt; t = zip(t, t').map(max); tick(); do_something(m)`
-- Thus, a vector timestamp of an event $e$ actually represents all of its *<a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causal</a> dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
+- Thus, a vector timestamp of an event $e$ actually represents all of its *<a class="internal-link broken">causal</a> dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
 	- E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$
 - Ordering
 	- $T= T' \iff T[i] = T'[i] \ \forall i \in \{1, \ldots, n\}$ (T and T' are same if each element has the same value)
@@ -744,7 +743,7 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/idempotence/" data-ctx="logical clock" data-src="/thoughts/idempotence" class="internal-link">idempotence</a>
+        <a href="/thoughts/idempotence/" data-ctx="logical clock" data-src="/thoughts/idempotence" class="internal-link">Idempotence</a>
       </li>
       
       

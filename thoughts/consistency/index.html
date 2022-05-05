@@ -670,7 +670,7 @@ if (!doNotTrack) {
 <a href="#linearizability"><h2 id="linearizability"><span class="hanchor" ariaLabel="Anchor"># </span>Linearizability</h2></a>
 <p>Defined as consistency in the face of concurrent reads/writes.</p>
 <p>Informally: every operation takes effect atomically sometime after it started and before it finished. All operations behave as if executed on a <em>single copy of the data</em></p>
-<p>Not to be confused with serializability: transactions having the same effect as if they were run in some serial order. Also contrasting with <a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causal</a> relationships, linearizability is defined in terms of real-time whereas <a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">causal</a> is defined in terms of message sending and receiving.</p>
+<p>Not to be confused with serializability: transactions having the same effect as if they were run in some serial order. Also contrasting with <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> relationships, linearizability is defined in terms of real-time whereas <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> is defined in terms of message sending and receiving.</p>
 <p>The consequence/desired property of linearizability is that every operation returns an &ldquo;up-to-date&rdquo; value, sometimes called &ldquo;strong consistency&rdquo;</p>
 <p>We can guarantee linearizability of get (quorum read + read repair) and set (blind write to quorum). If events overlap, either order could happen and is ok.</p>
 <p>Not without downsides</p>
@@ -690,7 +690,7 @@ if (!doNotTrack) {
 <p>Properties</p>
 <ul>
 <li>Does not require waiting for network communication</li>
-<li><a href="/thoughts/message-ordering" rel="noopener" class="internal-link" data-src="/thoughts/message-ordering">Causal</a> broadcast can disseminate updates</li>
+<li><a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">Causal</a> broadcast can disseminate updates</li>
 <li>Conflicts arising from concurrent updates need to be resolved</li>
 </ul>
 <a href="#summary"><h2 id="summary"><span class="hanchor" ariaLabel="Anchor"># </span>Summary</h2></a>
@@ -764,7 +764,7 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/quorum/" data-ctx="consistent" data-src="/thoughts/quorum" class="internal-link">quorum</a>
+        <a href="/thoughts/quorum/" data-ctx="consistent" data-src="/thoughts/quorum" class="internal-link">Quorum</a>
       </li>
       
       
