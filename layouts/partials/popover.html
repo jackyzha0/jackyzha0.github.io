@@ -10,12 +10,12 @@
     fetchData.then(({content}) => {
       [...document.getElementsByClassName("internal-link")]
         .forEach(li => {
-          const linkDest = content[li.dataset.src]
-          if (linkDest) {
+          if (li.dataset.ctx) {
+            const linkDest = content[li.dataset.src]
             const popoverElement = `<div class="popover">
     <h3>${linkDest.title}</h3>
-    <p>${removeMarkdown(linkDest.content).split(" ", 20).join(" ")}...</p>
-    <p class="meta">Updated ${new Date(linkDest.lastmodified).toLocaleDateString()}</p>
+    <p>${highlight(removeMarkdown(linkDest.content), li.dataset.ctx)}...</p>
+    <p class="meta">${new Date(linkDest.lastmodified).toLocaleDateString()}</p>
 </div>`
             const el = htmlToElement(popoverElement)
             li.appendChild(el)
@@ -25,6 +25,23 @@
             li.addEventListener("mouseout", () => {
               el.classList.remove("visible")
             })
+          } else {
+            const linkDest = content[li.dataset.src]
+            if (linkDest) {
+              const popoverElement = `<div class="popover">
+      <h3>${linkDest.title}</h3>
+      <p>${removeMarkdown(linkDest.content).split(" ", 20).join(" ")}...</p>
+      <p class="meta">Updated ${new Date(linkDest.lastmodified).toLocaleDateString()}</p>
+  </div>`
+              const el = htmlToElement(popoverElement)
+              li.appendChild(el)
+              li.addEventListener("mouseover", () => {
+                el.classList.add("visible")
+              })
+              li.addEventListener("mouseout", () => {
+                el.classList.remove("visible")
+              })
+            }
           }
         })
     })

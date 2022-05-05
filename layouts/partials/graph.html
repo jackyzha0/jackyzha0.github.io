@@ -148,7 +148,7 @@ async function run() {
     .attr("fill", color)
     .style("cursor", "pointer")
     .on("click", (_, d) => {
-      window.location.href = {{.Site.BaseURL}} + decodeURI(d.id).replace(/[\s_]+/g, '-') + '/'
+      window.location.href = {{.Site.BaseURL}}.replace(/\/$/g, "") + decodeURI(d.id).replace(/[\s_]+/g, '-') + '/'
     })
     .on("mouseover", function (_, d) {
       d3.selectAll(".node")
