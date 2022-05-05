@@ -7,10 +7,19 @@ tags:
 ---
 
 ## May
+### May 5th
+- Finishing up [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
+	- Cleaning up notes into atomic concepts that I can reference
+- Continuing implementation of `miniraft`
+- What if... Rhizome had built in mechanisms for managing 'branches'
+	- Default branches are single stream
+	- To make a collaborative doc you can 'fuse' or 'join' branches together temporarily to sync them with each other
+		- What if we made something on top of `git` like this that actually functions on a syntax level rather than a character level... one for the [[thoughts/idea list|idea list]]
+
 ### May 4th
 - Skimming [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
 	- Really good foundation to work off of
-	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of logical clock rather than relying on physical time
+	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of logical clock rate
 
 ### May 3rd
 - Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was

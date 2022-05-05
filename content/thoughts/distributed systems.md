@@ -192,4 +192,65 @@ Notes from [Martin Kleppmann's Distributed Systems Course](https://www.youtube.c
 	- Reliable broadcast: deterministic + all updates are commutative
 	- Best-effort broadcast: deterministic + commutative + idempotent + tolerates message loss
 ### 6.1: [[thoughts/consensus|Consensus]]
-- 
+- Useful for fault-tolerant total order broadcast
+	- One way to do it is using a single leader, but what happens if the leader crashes/becomes unavailable?
+- Manual failover: human operator chooses a new leader and reconfigures each node to use new leader
+- Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value
+- Consensus in the context of total order broadcast is on *what the next message to deliver is*
+- Common consensus algorithms (all assume partially synchronous, crash-recovery system model)
+	- Paxos: single-value consensus
+	- Multi-Paxos: generalization to total order broadcast
+	- Raft, Viewstamped Replication, Zab: total order broadcast by default
+- Blockchain consensus models assume partially synchronous Byzantine system model
+- Cannot be asynchronous due to the FLP Result: there is no deterministic consensus algorithm that is guaranteed to terminate in an asynchronous crash-stop system model
+### 7.1: Consistency
+- ACID Consistency: satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)
+- Replication Consistency: many models to choose from
+	- Read-after-write
+- Distributed transactions: atomic commitment problem
+	- Either all nodes must commit or all must abort
+	- If any node crashes, all must abort
+- Usually done through two-phase commit (2PC)
+	- Client begins a transaction with database nodes A and B
+	- When done, the client *commits* the transaction with the coordinator
+	- Coordinator tells both A and B to prepare for the commit
+	- If both A and B think it is fine for them to commit, then coordinator tells both to commit (A and B cannot go back on their response to prepare, if they said they are prepared for the commit they must commit when the coordinator tells them to)
+- What if the coordinator crashes? The algorithm is blocked until coordinator recovers
+	- We can use a fault-tolerant two-phase commit (uses total order broadcast)
+### 7.2: Linearizability
+- Defined as consistency in the face of concurrent reads/writes
+- Not to be confused with serializability: transactions having the same effect as if they were run in some serial order
+- Also contrasts with happens-before relationships, linearizability is defined in terms of real-time whereas happens-before is defined in terms of message sending and receiving
+- Informally: every operation takes effect atomically sometime after it started and before it finished. All operations behave as if executed on a single copy of the data
+- Consequence: every operation returns an "up-to-date" value, sometimes called "strong consistency"
+	- Can guarantee linearizability of get (quorum read + read repair) and set (blind write to quorum) 
+- If events overlap, either order could happen and is ok
+- Downsides
+	- Performance costs: lots of messages and waiting for responses
+	- Scalability limits: leader can be a bottleneck
+	- Availability problems: if you can't contact a quorum of nodes, you can't process any operations
+### 7.3: Eventual Consistency
+- If there are no more updates, **eventually** all replicas will be in the same state
+- Strong eventual consistency
+	- Eventual delivery: every update made to one non-faulty replica is eventually processed by every non-faulty replica
+	- Convergence: any two replicas that have processed the same set of updates are in the same state
+	- Properties
+		- Does not require waiting for network communication
+		- Causal broadcast can disseminate updates
+		- Conflicts arising from concurrent updates need to be resolved
+
+Summary of minimum system model requirements
+
+|Problem|Must wait for communication|Requires synchrony|
+|--|--|--|
+|atomic commit|all participating nodes|partially synchronous|
+|consensus, total order broadcast|quorum|partially synchronous|
+|linearizable get/set|quorum|asynchronous|
+|eventual consistency, causal broadcast, FIFO broadcast|local replica only|asynchronous|
+
+### 8.1: Collaboration Software
+- Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available
+- Challenge: how do we reconcile concurrent updates?
+- Two main families
+	- Conflict-free Replicated Data Types (CRDTs)
+	- Operational Transformation (OT)

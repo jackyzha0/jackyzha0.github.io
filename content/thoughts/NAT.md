@@ -79,7 +79,8 @@ From [*UDP NAT and Firewall Puncturing in the Wild* by Gertjan Halkes and Johan 
 Possible explanations for a non-100% connection rate even in EIM-EIF to EIM-EIF peers
 - UDP packets being dropped under high UDP packet load (especially in consumer-grade NAT/firewalls)
 - Routers stop functioning when mapping tables are full (not out of the realm of possibilies, only 65535 entries)
-- 
+- Use of [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) (NAT at the ISP level instead of home-router)
+
 
 ### Flow
 Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.

@@ -12,6 +12,9 @@ tags:
 
 To sum up: the cloud gives us collaboration, but old-fashioned apps give us ownership. Can’t we have the best of both worlds?
 
+- Traditional web app model: "If it's not stored in the server database, it didn't really happen"
+- Local-first model: "The client's local storage is what matters -- the server is just for multi-user sync and backup"
+
 Local-first ideals include
 1. No spinners: your work at your fingertips
 	- All operations can be handled by reading and writing files on the local disk, and data synchronization with other devices happens quietly in the background.
