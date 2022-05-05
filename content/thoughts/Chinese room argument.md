@@ -40,9 +40,9 @@ We often attribute "understanding" and other cognitive predicates by metaphor an
         -   response: doesn't help the claims of strong AI
             -   the attributions of intentionality that we make to the robot in this example have nothing to do with formal programs
             -   if the robot looks and behaves sufficiently like us, then we would suppose until proven otherwise, that is must have mental states like ours that cause and are expressed by its behaviour and it must have an inner mechanism capable of producing such mental states
-            -   however, as soon as we knew that the behaviour was the result of a formal program, and that the actual causal properties of the physical substance were irrelevant, we would abandon the assumption of intentionality
+            -   however, as soon as we knew that the behaviour was the result of a formal program, and that the actual [[thoughts/message ordering|causal]] properties of the physical substance were irrelevant, we would abandon the assumption of intentionality
     5.  The many mansion reply
-    -   will eventually build devices that have these causal processes and that will be artificial intelligence
+    -   will eventually build devices that have these [[thoughts/message ordering|causal]] processes and that will be artificial intelligence
     -   avoids the original thesis: mental processes are computational processes over formally defined elements
     -   say we gave a machine the capacity to understand English or Chinese
         -   this is possible as our bodies with our brains are precisely such machines

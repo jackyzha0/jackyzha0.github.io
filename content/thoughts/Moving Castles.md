@@ -44,6 +44,6 @@ What if programming was closer to mechanical engineering and physics?
 - Energy conversation
 - Symmetries
 - Spatial computation
-- Causality, speed of light, etc.
+- [[thoughts/message ordering|Causality]], speed of light, etc.
 
 The dream is to be wizards in the same world together. We want to be able to protect things like person A wiping all of person B's work out of existence with the snap of their finger

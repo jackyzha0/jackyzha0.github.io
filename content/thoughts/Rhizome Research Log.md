@@ -25,7 +25,7 @@ tags:
 ### May 4th
 - Skimming [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
 	- Really good foundation to work off of
-	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of [[thoughts/clocks|logical clock]] rate
+	- Learned about differences between physical and logical [[thoughts/clocks|clocks]] and realizing that `miniraft` should probably use some sort of [[thoughts/clocks|logical clock]] rate
 
 ### May 3rd
 - Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was

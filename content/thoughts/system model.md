@@ -1,11 +1,10 @@
 ---
-title: "System models"
+title: "System model"
 date: 2022-05-05
 tags:
 - seed
 ---
 
-## Distributed Systems
 How do we capture assumptions in a system model for [[thoughts/distributed systems|distributed systems?]]
 
 ### Network behaviour (e.g. message loss)

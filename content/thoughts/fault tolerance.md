@@ -9,6 +9,8 @@ How do we defend against attacks in [[thoughts/distributed systems|distributed s
 
 - Failure: system as a whole isn't working
 - Fault: some part of the system isn't working
+	- Probability of all $n$ replicas being faulty: $p^n$
+	- Probability of 1 or more replicas being faulty: $1 - (1-p)^n$
 
 Related: [game theory](thoughts/game%20theory.md)
 

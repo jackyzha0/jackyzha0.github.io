@@ -25,7 +25,7 @@ Two main theses:
 1.  all mental phenomena from pains, tickles, and itches to the most abstruse thoughts are caused by lower-level neurobiological processes in the brain
 2.  mental phenomena themselves are higher-level features of the brain
 
-Entails that the brain has the right causal powers to produce [intentionality](thoughts/intentionality.md)   
+Entails that the brain has the right [[thoughts/message ordering|causal]] powers to produce [intentionality](thoughts/intentionality.md)   
 -   weak AI → principle value of the computer in the study of the mind is that it gives us a very powerful tool
 -   strong AI → the appropriately programmed computer really IS a mind. Computers, given the right programs, can be literally said to understand and have other cognitive states
 -   attempting to refute the claims that
