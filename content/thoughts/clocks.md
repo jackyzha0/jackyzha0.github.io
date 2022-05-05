@@ -56,13 +56,13 @@ Properties
 
 This means that two identical Lamport timestamps might not correspond to the same unique event. However if we include the node $N(e)$ for the node where event $e$ occurred, then $(L(e), N(e))$ **uniquely identifies** event $e$.
 
-We attempt to define a total [[thoughts/message ordering|causal]] order
+We attempt to define a total [[thoughts/causality|causal]] order
 
 $$(a \prec b) \iff (L(a) < L(b)) \lor (L(a) = L(b) \land N(a) < N(b))$$
 
 However even now, given timestamps $L(a) < L(b)$, we can't tell whether $a \rightarrow b$ or $a \parallel b$
 
-To separate [[thoughts/message ordering|causality]] from concurrent events, we need vector clocks!
+To separate [[thoughts/causality|causality]] from concurrent events, we need vector clocks!
 
 ### Vector Clocks
 	- Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$

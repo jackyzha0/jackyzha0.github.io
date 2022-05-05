@@ -1,5 +1,5 @@
 ---
-title: "idempotence"
+title: "Idempotence"
 date: 2022-05-05
 tags:
 - seed

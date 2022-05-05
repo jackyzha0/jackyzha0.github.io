@@ -1,10 +1,10 @@
 ---
-title: "message ordering"
+title: "Causality"
 date: 2022-05-05
 tags:
 - seed
 aliases:
-- causality
+- message ordering
 - causal
 ---
 

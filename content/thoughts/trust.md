@@ -98,7 +98,7 @@ Exploring potential conflicts between different types of trust
 1. Epistemic Trust: trust in someone as a speaker or source of knowledge
 2. Practical Trust: trust in someone as an actor
 
-In fact, there is often a two-way [[thoughts/message ordering|causal]] interaction between friendship and trustworthiness. Roughly, people are more likely to behave in a trust-worthy manner towards their friends, and we are more likely to form friendships with people we consider trustworthy. Clearly, there are exceptions
+In fact, there is often a two-way [[thoughts/causality|causal]] interaction between friendship and trustworthiness. Roughly, people are more likely to behave in a trust-worthy manner towards their friends, and we are more likely to form friendships with people we consider trustworthy. Clearly, there are exceptions
 1. Friend might let you down instead of disappointing someone else as your friend hopes you will understand and forgive them
 2. Might find it more tempting to lie about some matters because they are concerned about maintaining a good image of themselves in your mind
 But if she takes these liberties too often, you will feel you have been taken for granted, and come to resent your friend. **Friendship requires mutual respect and openness as well as forgiveness.**

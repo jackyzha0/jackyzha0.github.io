@@ -38,7 +38,7 @@ Defined as consistency in the face of concurrent reads/writes.
 
 Informally: every operation takes effect atomically sometime after it started and before it finished. All operations behave as if executed on a *single copy of the data*
 
-Not to be confused with serializability: transactions having the same effect as if they were run in some serial order. Also contrasting with [[thoughts/message ordering|causal]] relationships, linearizability is defined in terms of real-time whereas [[thoughts/message ordering|causal]] is defined in terms of message sending and receiving.
+Not to be confused with serializability: transactions having the same effect as if they were run in some serial order. Also contrasting with [[thoughts/causality|causal]] relationships, linearizability is defined in terms of real-time whereas [[thoughts/causality|causal]] is defined in terms of message sending and receiving.
 
 The consequence/desired property of linearizability is that every operation returns an "up-to-date" value, sometimes called "strong consistency"
 
@@ -60,7 +60,7 @@ But how do we know when there are no more updates? This can be an indefinite amo
 
 Properties
 - Does not require waiting for network communication
-- [[thoughts/message ordering|Causal]] broadcast can disseminate updates
+- [[thoughts/causality|Causal]] broadcast can disseminate updates
 - Conflicts arising from concurrent updates need to be resolved
 
 ## Summary

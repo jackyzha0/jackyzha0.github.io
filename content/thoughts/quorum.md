@@ -1,5 +1,5 @@
 ---
-title: "quorum"
+title: "Quorum"
 date: 2022-05-05
 tags:
 - seed

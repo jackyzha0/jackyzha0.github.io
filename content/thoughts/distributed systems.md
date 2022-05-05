@@ -37,7 +37,7 @@ Notes from [Martin Kleppmann's Distributed Systems Course](https://www.youtube.c
 	- See [[thoughts/fault tolerance#Two Generals Problem|Two Generals Problem]] and [[thoughts/fault tolerance#Byzantine Generals Problem|Byzantine Generals Problem]]
 - [[thoughts/system model|System models]]
 - [[thoughts/clocks|Physical and Logical Time]]
-- [[thoughts/message ordering|Message ordering and Causality]]
+- [[thoughts/causality|Message ordering and Causality]]
 - [[thoughts/message broadcast|Message broadcast]]
 - [[thoughts/replication|Replication]]
 - [[thoughts/quorum|Quorum]]
