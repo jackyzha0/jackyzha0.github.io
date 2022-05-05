@@ -660,6 +660,230 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -716,7 +940,7 @@ if (!doNotTrack) {
 <p><img src="/thoughts/images/raft-elections.png" title="/thoughts/images/raft-elections.png"></p>
 <a href="#initiate-state"><h3 id="initiate-state"><span class="hanchor" ariaLabel="Anchor"># </span>Initiate State</h3></a>
 <p>Servers start up in the follower state.</p>
-<p>A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a &lsquo;heartbeat&rsquo; from a leader which is an empty AppendEntries RPC with no log entries).</p>
+<p>A server remains in the follower state as long as it receives valid RPCs from a leader or candidate (this is usually in the form of a &lsquo;heartbeat&rsquo; from a leader which is an empty AppendEntries <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> with no log entries).</p>
 <p>If a follower receives no communication over a period of time called the <em>election timeout</em> (randomized between 150ms and 300ms), then it assumes there is no viable leader and begins an election to choose a new leader.</p>
 <a href="#beginning-an-election"><h3 id="beginning-an-election"><span class="hanchor" ariaLabel="Anchor"># </span>Beginning an Election</h3></a>
 <p>A follower increments its current term and transitions to candidate state. It then votes for itself and issues RequestVote RPCs in parallel to each of the other servers in the cluster.</p>
@@ -724,12 +948,12 @@ if (!doNotTrack) {
 <p>A candidate remains a candidate until one of 3 events happens:</p>
 <ol>
 <li>It wins the election. It received votes from a majority of servers in the cluster. Majority rule ensures that at most one candidate can win the election for a particular term. It then sends heartbeat messages to all other servers to establish authority and prevent new elections.</li>
-<li>Another server establishes itself as leader. Received an AppendEntries RPC from another server claiming to be leader. This claim is legitimate if the leader&rsquo;s term is at least as large as the candidate&rsquo;s current term.</li>
+<li>Another server establishes itself as leader. Received an AppendEntries <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> from another server claiming to be leader. This claim is legitimate if the leader&rsquo;s term is at least as large as the candidate&rsquo;s current term.</li>
 <li>A period of time goes by with no winner. Possible if many followers become candidates at the same time, votes can be split so no candidate wins majority. When this happens, each candidate times out and starts a new election by incrementing its term and initiating another election. Raft uses randomized election timeouts to ensure split votes are rare.</li>
 </ol>
 <p>After a leader has been elected, it beings servicing client requests.</p>
 <a href="#properties"><h3 id="properties"><span class="hanchor" ariaLabel="Anchor"># </span>Properties</h3></a>
-<p>Generally, Raft will be able to elect and maintain a steady leader as long as the system roughly follows the timing requirement: <code>broadcastTime &lt; 10 * electionTimeout &lt; 100 * MTBF</code> where <code>broadcastTime</code> is amount of time for a server to send an RPC to every server in the cluster and <code>MTBF</code> is the mean time between failure for a server.</p>
+<p>Generally, Raft will be able to elect and maintain a steady leader as long as the system roughly follows the timing requirement: <code>broadcastTime &lt; 10 * electionTimeout &lt; 100 * MTBF</code> where <code>broadcastTime</code> is amount of time for a server to send an <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> to every server in the cluster and <code>MTBF</code> is the mean time between failure for a server.</p>
 <p>Broadcast time should be roughly an order of magnitude less than the election timeout so that leaders can reliably send heartbeat messages required to keep followers from starting elections (similar to having RTT be roughly a magnitude smaller than request timeout).</p>
 <p>The election timeout should be a few orders of magnitude less than MTBF so that the system makes steady progress. When a system crashes, it will be down for roughly the period of the election timeout.</p>
 <a href="#log-replication"><h2 id="log-replication"><span class="hanchor" ariaLabel="Anchor"># </span>Log Replication</h2></a>
@@ -742,12 +966,12 @@ if (!doNotTrack) {
 <li>Log entries with same index and term number mean that all preceding entries must identical (all log entries prior to that index are correctly replicated)</li>
 </ol>
 <p>When a leader comes to power, it just begins normal operation, and the logs automatically converge in response to failures of the AppendEntries consistency check.</p>
-<p>To bring a follower&rsquo;s log into consistency with its own, the leader must find the latest log entry where the two logs agree. To do this, the leader keeps a value <code>nextIndex</code> for each follower which is the number of the <em>next log entry the leader will send to that follower</em>. The leader pings each follower with a AppendEntries RPC call with that <code>nextIndex</code> value. If this call is successful, the leader knows that this follower is up to date. If it fails, then the leader decrements <code>nextIndex</code> again until it reaches a log entry that does succeed.  At this point, the follower&rsquo;s logs will be removed (as anything between <code>nextIndex</code> and what the follower currently has is conflicting) and the follower&rsquo;s log is now consistent with the leader&rsquo;s and will remain that way for the rest of the term.</p>
+<p>To bring a follower&rsquo;s log into consistency with its own, the leader must find the latest log entry where the two logs agree. To do this, the leader keeps a value <code>nextIndex</code> for each follower which is the number of the <em>next log entry the leader will send to that follower</em>. The leader pings each follower with a AppendEntries <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> call with that <code>nextIndex</code> value. If this call is successful, the leader knows that this follower is up to date. If it fails, then the leader decrements <code>nextIndex</code> again until it reaches a log entry that does succeed.  At this point, the follower&rsquo;s logs will be removed (as anything between <code>nextIndex</code> and what the follower currently has is conflicting) and the follower&rsquo;s log is now consistent with the leader&rsquo;s and will remain that way for the rest of the term.</p>
 <a href="#unbounded-logs-log-compaction"><h2 id="unbounded-logs-log-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Unbounded Logs (Log Compaction)</h2></a>
 <p>In a practical system, a log cannot grow without bounds. The simplest solution is to use snapshotting where the entire current system state is written to a snapshot on stable storage, then the entire log up until that point is discarded.</p>
 <p>All snapshots are taken independently by each server. Each snapshot contains data like last included index, last included term, and the state machine state.</p>
-<p>Sometimes, snapshots need to be sent from leader to followers if the followers lag behind using the InstallSnapshot RPC. This can happen when the leader has discarded the next log entry that needs to be send to a follower (e.g. new server joining cluster).</p>
-<p>When a server receives a InstallSnapshot RPC call, it usually discard its entire log. In the odd case where the server receiving the RPC call has <em>more</em> entries in its log than the snapshot, it deletes all log entries covered by the snapshot but entries following the snapshot are still valid and must be kept.</p>
+<p>Sometimes, snapshots need to be sent from leader to followers if the followers lag behind using the InstallSnapshot <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a>. This can happen when the leader has discarded the next log entry that needs to be send to a follower (e.g. new server joining cluster).</p>
+<p>When a server receives a InstallSnapshot <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> call, it usually discard its entire log. In the odd case where the server receiving the <a href="/thoughts/RPC" rel="noopener" class="internal-link" data-src="/thoughts/RPC">RPC</a> call has <em>more</em> entries in its log than the snapshot, it deletes all log entries covered by the snapshot but entries following the snapshot are still valid and must be kept.</p>
 <p>Other options like log cleaning and log-structured merge trees are also possible.</p>
 <a href="#rpcs"><h2 id="rpcs"><span class="hanchor" ariaLabel="Anchor"># </span>RPCs</h2></a>
 <p>All Raft RPCs are idempotent so sending multiple RPCs causes no harms (e.g. telling a follower to AppendEntries it already has does nothing).</p>
@@ -1000,6 +1224,10 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Raft" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
@@ -1007,7 +1235,13 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/distributed-systems/" data-ctx="Raft" data-src="/thoughts/distributed-systems" class="internal-link">Distributed Systems</a>
+        <a href="/thoughts/consensus/" data-ctx="Raft" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/message-broadcast/" data-ctx="Raft" data-src="/thoughts/message-broadcast" class="internal-link">Message broadcast</a>
       </li>
       
       

@@ -6,7 +6,108 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clocks</title>
+      <link>https://jzhao.xyz/thoughts/clocks/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/clocks/</guid>
+      <description>Measuring time in the context of computer systems
+Physical Time Two types of clock</description>
+    </item>
+    
+    <item>
+      <title>Collaborative software</title>
+      <link>https://jzhao.xyz/thoughts/collaborative-software/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/collaborative-software/</guid>
+      <description>Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available Challenge: how do we reconcile concurrent updates?</description>
+    </item>
+    
+    <item>
+      <title>Conflict-free Replicated Data Type (CRDT)</title>
+      <link>https://jzhao.xyz/thoughts/CRDT/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
+      <description>stub, tk</description>
+    </item>
+    
+    <item>
+      <title>Consistency</title>
+      <link>https://jzhao.xyz/thoughts/consistency/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/consistency/</guid>
+      <description>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)</description>
+    </item>
+    
+    <item>
+      <title>idempotence</title>
+      <link>https://jzhao.xyz/thoughts/idempotence/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/idempotence/</guid>
+      <description>How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e.</description>
+    </item>
+    
+    <item>
+      <title>Message broadcast</title>
+      <link>https://jzhao.xyz/thoughts/message-broadcast/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/message-broadcast/</guid>
+      <description>Ordering Total order broadcast Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!</description>
+    </item>
+    
+    <item>
+      <title>message ordering</title>
+      <link>https://jzhao.xyz/thoughts/message-ordering/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/message-ordering/</guid>
+      <description>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&amp;rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </description>
+    </item>
+    
+    <item>
+      <title>quorum</title>
+      <link>https://jzhao.xyz/thoughts/quorum/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/quorum/</guid>
+      <description>Read/Write Quorum In a system with $n$ replicas, we can ensure [[thoughts/consistency|consistent]]</description>
+    </item>
+    
+    <item>
+      <title>Replication</title>
+      <link>https://jzhao.xyz/thoughts/replication/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/replication/</guid>
+      <description>A node that has a copy of the data is called a replica</description>
+    </item>
+    
+    <item>
+      <title>RPC</title>
+      <link>https://jzhao.xyz/thoughts/RPC/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/RPC/</guid>
+      <description>RPC: Remote Procedure Call
+Sometimes called a remote function call, it is a call to a function whose implementation is on another node.</description>
+    </item>
+    
+    <item>
+      <title>System model</title>
+      <link>https://jzhao.xyz/thoughts/system-model/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/system-model/</guid>
+      <description>How do we capture assumptions in a system model for [[thoughts/distributed systems|distributed systems?</description>
+    </item>
+    
     <item>
       <title>Distributed Systems</title>
       <link>https://jzhao.xyz/thoughts/distributed-systems/</link>

@@ -1217,6 +1217,16 @@
           "source": "/thoughts/Chinese-room-argument",
           "target": "/thoughts/intentionality",
           "text": "intentionality"
+        },
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/Cities-and-Programming": [
@@ -2035,6 +2045,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/message-ordering",
+          "text": "Causality"
         }
       ],
       "/thoughts/NAT": [
@@ -2340,6 +2355,41 @@
           "source": "/thoughts/Raft-Consensus-Algorithm",
           "target": "/thoughts/Transport-Layer",
           "text": "transport layer"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
         }
       ],
       "/thoughts/Reductionism": [
@@ -2392,6 +2442,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Rhizome-Specification",
           "text": "Rhizome Specification"
         },
@@ -2406,6 +2461,21 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/idea-list",
           "text": "idea list"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/clocks",
+          "text": "clocks"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/clocks",
+          "text": "logical clock"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -3403,6 +3473,25 @@
           "text": "software and politics"
         }
       ],
+      "/thoughts/clocks": [
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causality"
+        }
+      ],
+      "/thoughts/collaborative-software": [
+        {
+          "source": "/thoughts/collaborative-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        }
+      ],
       "/thoughts/collections": [
         {
           "source": "/thoughts/collections",
@@ -3629,6 +3718,53 @@
           "source": "/thoughts/consensus",
           "target": "/thoughts/communities",
           "text": "communities"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        }
+      ],
+      "/thoughts/consistency": [
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/quorum",
+          "text": "quorum"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "Causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/system-model",
+          "text": "system model"
         }
       ],
       "/thoughts/constructionist": [
@@ -3794,6 +3930,11 @@
           "source": "/thoughts/decentralization",
           "target": "/thoughts/fault-tolerance",
           "text": "Fault tolerance"
+        },
+        {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/fault-tolerance",
+          "text": "Fault Tolerance"
         },
         {
           "source": "/thoughts/decentralization",
@@ -4026,18 +4167,48 @@
         },
         {
           "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/Raft-Consensus-Algorithm",
-          "text": "Raft"
+          "target": "/thoughts/RPC",
+          "text": "RPCs"
         },
         {
           "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/blockchain",
-          "text": "blockchains"
+          "target": "/thoughts/fault-tolerance",
+          "text": "Fault Tolerance"
         },
         {
           "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/consensus",
-          "text": "Consensus"
+          "target": "/thoughts/system-model",
+          "text": "System models"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/clocks",
+          "text": "Physical and Logical Time"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/message-ordering",
+          "text": "Message ordering and Causality"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/message-broadcast",
+          "text": "Message broadcast"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/replication",
+          "text": "Replication"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/quorum",
+          "text": "Quorum"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/consistency",
+          "text": "Consistency"
         }
       ],
       "/thoughts/double-consciousness": [
@@ -5015,6 +5186,13 @@
           "text": "the self"
         }
       ],
+      "/thoughts/idempotence": [
+        {
+          "source": "/thoughts/idempotence",
+          "target": "/thoughts/clocks",
+          "text": "logical clock"
+        }
+      ],
       "/thoughts/idolization": [
         {
           "source": "/thoughts/idolization",
@@ -5096,6 +5274,11 @@
           "source": "/thoughts/indeterminant",
           "target": "/thoughts/Ny%C4%81ya",
           "text": "Nyāya"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/information": [
@@ -5306,6 +5489,11 @@
           "source": "/thoughts/intelligence",
           "target": "/thoughts/Materialism",
           "text": "materialism"
+        },
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         },
         {
           "source": "/thoughts/intelligence",
@@ -5814,6 +6002,11 @@
           "source": "/thoughts/learning",
           "target": "/thoughts/social-contracts",
           "text": "social contracts"
+        },
+        {
+          "source": "/thoughts/learning",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/library": [
@@ -5855,6 +6048,13 @@
           "source": "/thoughts/linguistic-relativism",
           "target": "/thoughts/constructionist",
           "text": "constructionism"
+        }
+      ],
+      "/thoughts/local-first-software": [
+        {
+          "source": "/thoughts/local-first-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
         }
       ],
       "/thoughts/longevity": [
@@ -5926,6 +6126,11 @@
           "source": "/thoughts/machine-learning",
           "target": "/thoughts/potemkin-village",
           "text": "Potemkin village"
+        },
+        {
+          "source": "/thoughts/machine-learning",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
         }
       ],
       "/thoughts/maintenance": [
@@ -6048,6 +6253,23 @@
           "source": "/thoughts/mental-model",
           "target": "/thoughts/conceptual-model",
           "text": "conceptual model"
+        }
+      ],
+      "/thoughts/message-broadcast": [
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/idempotence",
+          "text": "idempotence"
         }
       ],
       "/thoughts/metaphysics": [
@@ -6897,6 +7119,18 @@
           "text": "Algorithms of Oppression"
         }
       ],
+      "/thoughts/quorum": [
+        {
+          "source": "/thoughts/quorum",
+          "target": "/thoughts/consistency",
+          "text": "consistent"
+        },
+        {
+          "source": "/thoughts/quorum",
+          "target": "/thoughts/idempotence",
+          "text": "idempotent"
+        }
+      ],
       "/thoughts/quotes": [
         {
           "source": "/thoughts/quotes",
@@ -6960,6 +7194,33 @@
           "source": "/thoughts/religious-authority",
           "target": "/thoughts/intentionality",
           "text": "intentionality"
+        }
+      ],
+      "/thoughts/replication": [
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/message-broadcast",
+          "text": "message broadcast"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/idempotence",
+          "text": "idempotence"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
         }
       ],
       "/thoughts/representation": [
@@ -7346,6 +7607,13 @@
           "text": "frame problem"
         }
       ],
+      "/thoughts/system-model": [
+        {
+          "source": "/thoughts/system-model",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems?"
+        }
+      ],
       "/thoughts/teaching": [
         {
           "source": "/thoughts/teaching",
@@ -7699,6 +7967,11 @@
           "source": "/thoughts/trust",
           "target": "/thoughts/bias",
           "text": "bias"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/truth": [
@@ -8730,6 +9003,28 @@
           "source": "/thoughts/phenomenology",
           "target": "/thoughts/Buddhism",
           "text": "Buddhist"
+        }
+      ],
+      "/thoughts/CRDT": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/collaborative-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/local-first-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDT"
         }
       ],
       "/thoughts/Chestertons-Fence": [
@@ -10075,6 +10370,48 @@
           "text": "Putnam's Ant Argument"
         }
       ],
+      "/thoughts/RPC": [
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/RPC",
+          "text": "RPC"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/RPC",
+          "text": "RPCs"
+        }
+      ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -10097,7 +10434,12 @@
           "text": "Raft"
         },
         {
-          "source": "/thoughts/distributed-systems",
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/message-broadcast",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
         }
@@ -10766,11 +11108,6 @@
           "text": "blockchain"
         },
         {
-          "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/blockchain",
-          "text": "blockchains"
-        },
-        {
           "source": "/thoughts/ethereum",
           "target": "/thoughts/blockchain",
           "text": "Blockchain"
@@ -10794,6 +11131,11 @@
           "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/blockchain",
           "text": "Blockchain"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
         },
         {
           "source": "/thoughts/trust",
@@ -10962,6 +11304,28 @@
           "source": "/thoughts/tragedy-of-the-commons",
           "target": "/thoughts/climate-tech",
           "text": "climate tech"
+        }
+      ],
+      "/thoughts/clocks": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/clocks",
+          "text": "clocks"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/clocks",
+          "text": "logical clock"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/clocks",
+          "text": "Physical and Logical Time"
+        },
+        {
+          "source": "/thoughts/idempotence",
+          "target": "/thoughts/clocks",
+          "text": "logical clock"
         }
       ],
       "/thoughts/colour": [
@@ -11197,11 +11561,6 @@
           "text": "Consensus"
         },
         {
-          "source": "/thoughts/distributed-systems",
-          "target": "/thoughts/consensus",
-          "text": "Consensus"
-        },
-        {
           "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/consensus",
           "text": "consensus"
@@ -11225,6 +11584,23 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/consensus",
           "text": "Consensus"
+        }
+      ],
+      "/thoughts/consistency": [
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/consistency",
+          "text": "Consistency"
+        },
+        {
+          "source": "/thoughts/quorum",
+          "target": "/thoughts/consistency",
+          "text": "consistent"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
         }
       ],
       "/thoughts/constructionist": [
@@ -11875,6 +12251,11 @@
           "source": "/thoughts/software-principles",
           "target": "/thoughts/distributed-systems",
           "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/system-model",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems?"
         }
       ],
       "/thoughts/double-consciousness": [
@@ -12249,6 +12630,11 @@
           "source": "/thoughts/kernel",
           "target": "/thoughts/ethereum",
           "text": "Understanding Ethereum"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
         }
       ],
       "/thoughts/evaporative-cooling": [
@@ -12339,12 +12725,27 @@
           "text": "Fault tolerance"
         },
         {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/fault-tolerance",
+          "text": "Fault Tolerance"
+        },
+        {
           "source": "/thoughts/distributed-systems",
           "target": "/thoughts/fault-tolerance",
           "text": "fault tolerance"
         },
         {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/fault-tolerance",
+          "text": "Fault Tolerance"
+        },
+        {
           "source": "/thoughts/internet-computing",
+          "target": "/thoughts/fault-tolerance",
+          "text": "fault tolerance"
+        },
+        {
+          "source": "/thoughts/machine-learning",
           "target": "/thoughts/fault-tolerance",
           "text": "fault tolerance"
         },
@@ -12994,6 +13395,23 @@
           "source": "/thoughts/monism",
           "target": "/thoughts/idealism",
           "text": "Idealism"
+        }
+      ],
+      "/thoughts/idempotence": [
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/idempotence",
+          "text": "idempotence"
+        },
+        {
+          "source": "/thoughts/quorum",
+          "target": "/thoughts/idempotence",
+          "text": "idempotent"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/idempotence",
+          "text": "idempotence"
         }
       ],
       "/thoughts/idolization": [
@@ -13921,6 +14339,90 @@
           "source": "/thoughts/prototyping",
           "target": "/thoughts/mental-model",
           "text": "mental models"
+        }
+      ],
+      "/thoughts/message-broadcast": [
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/message-broadcast",
+          "text": "Message broadcast"
+        },
+        {
+          "source": "/thoughts/replication",
+          "target": "/thoughts/message-broadcast",
+          "text": "message broadcast"
+        }
+      ],
+      "/thoughts/message-ordering": [
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/Moving-Castles",
+          "target": "/thoughts/message-ordering",
+          "text": "Causality"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causality"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/message-ordering",
+          "text": "Causal"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/message-ordering",
+          "text": "Message ordering and Causality"
+        },
+        {
+          "source": "/thoughts/indeterminant",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/intelligence",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/learning",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/message-broadcast",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        },
+        {
+          "source": "/thoughts/trust",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/metalabel": [
@@ -15044,6 +15546,18 @@
           "text": "questions"
         }
       ],
+      "/thoughts/quorum": [
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/quorum",
+          "text": "quorum"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/quorum",
+          "text": "Quorum"
+        }
+      ],
       "/thoughts/quotes": [
         {
           "source": "/posts/nothing-stops",
@@ -15087,6 +15601,13 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/religious-authority",
           "text": "religious authority"
+        }
+      ],
+      "/thoughts/replication": [
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/replication",
+          "text": "Replication"
         }
       ],
       "/thoughts/representation": [
@@ -15427,6 +15948,33 @@
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/symbolic-system",
           "text": "symbolic systems"
+        }
+      ],
+      "/thoughts/system-model": [
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/consistency",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/distributed-systems",
+          "target": "/thoughts/system-model",
+          "text": "System models"
         }
       ],
       "/thoughts/task-centered-design": [
@@ -17437,6 +17985,16 @@
       "text": "intentionality"
     },
     {
+      "source": "/thoughts/Chinese-room-argument",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
+      "source": "/thoughts/Chinese-room-argument",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
       "source": "/thoughts/Cities-and-Programming",
       "target": "/thoughts/urban-planning",
       "text": "Urban planning"
@@ -18187,6 +18745,11 @@
       "text": "Internet"
     },
     {
+      "source": "/thoughts/Moving-Castles",
+      "target": "/thoughts/message-ordering",
+      "text": "Causality"
+    },
+    {
       "source": "/thoughts/NAT",
       "target": "/thoughts/Transport-Layer",
       "text": "transport layer"
@@ -18462,6 +19025,41 @@
       "text": "transport layer"
     },
     {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/RPC",
+      "text": "RPC"
+    },
+    {
       "source": "/thoughts/Reductionism",
       "target": "/thoughts/emergent-behaviour",
       "text": "emergent behaviour"
@@ -18508,6 +19106,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/CRDT",
+      "text": "CRDT"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Specification",
       "text": "Rhizome Specification"
     },
@@ -18520,6 +19123,21 @@
       "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/idea-list",
       "text": "idea list"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/CRDT",
+      "text": "CRDT"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/clocks",
+      "text": "clocks"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/clocks",
+      "text": "logical clock"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -19427,6 +20045,21 @@
       "text": "software and politics"
     },
     {
+      "source": "/thoughts/clocks",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
+      "source": "/thoughts/clocks",
+      "target": "/thoughts/message-ordering",
+      "text": "causality"
+    },
+    {
+      "source": "/thoughts/collaborative-software",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
+    },
+    {
       "source": "/thoughts/collections",
       "target": "/thoughts/library",
       "text": "library"
@@ -19637,6 +20270,51 @@
       "text": "communities"
     },
     {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/consistency",
+      "target": "/thoughts/quorum",
+      "text": "quorum"
+    },
+    {
+      "source": "/thoughts/consistency",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
+      "source": "/thoughts/consistency",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
+      "source": "/thoughts/consistency",
+      "target": "/thoughts/message-ordering",
+      "text": "Causal"
+    },
+    {
+      "source": "/thoughts/consistency",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
       "source": "/thoughts/constructionist",
       "target": "/thoughts/Mindstorms",
       "text": "Mindstorms"
@@ -19780,6 +20458,11 @@
       "source": "/thoughts/decentralization",
       "target": "/thoughts/fault-tolerance",
       "text": "Fault tolerance"
+    },
+    {
+      "source": "/thoughts/decentralization",
+      "target": "/thoughts/fault-tolerance",
+      "text": "Fault Tolerance"
     },
     {
       "source": "/thoughts/decentralization",
@@ -19998,18 +20681,48 @@
     },
     {
       "source": "/thoughts/distributed-systems",
-      "target": "/thoughts/Raft-Consensus-Algorithm",
-      "text": "Raft"
+      "target": "/thoughts/RPC",
+      "text": "RPCs"
     },
     {
       "source": "/thoughts/distributed-systems",
-      "target": "/thoughts/blockchain",
-      "text": "blockchains"
+      "target": "/thoughts/fault-tolerance",
+      "text": "Fault Tolerance"
     },
     {
       "source": "/thoughts/distributed-systems",
-      "target": "/thoughts/consensus",
-      "text": "Consensus"
+      "target": "/thoughts/system-model",
+      "text": "System models"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/clocks",
+      "text": "Physical and Logical Time"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/message-ordering",
+      "text": "Message ordering and Causality"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/message-broadcast",
+      "text": "Message broadcast"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/replication",
+      "text": "Replication"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/quorum",
+      "text": "Quorum"
+    },
+    {
+      "source": "/thoughts/distributed-systems",
+      "target": "/thoughts/consistency",
+      "text": "Consistency"
     },
     {
       "source": "/thoughts/double-consciousness",
@@ -20917,6 +21630,11 @@
       "text": "the self"
     },
     {
+      "source": "/thoughts/idempotence",
+      "target": "/thoughts/clocks",
+      "text": "logical clock"
+    },
+    {
       "source": "/thoughts/idolization",
       "target": "/posts/a-failure-resume",
       "text": "failure resumes"
@@ -20990,6 +21708,11 @@
       "source": "/thoughts/indeterminant",
       "target": "/thoughts/Ny%C4%81ya",
       "text": "Nyāya"
+    },
+    {
+      "source": "/thoughts/indeterminant",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
     },
     {
       "source": "/thoughts/information-behaviour",
@@ -21180,6 +21903,11 @@
       "source": "/thoughts/intelligence",
       "target": "/thoughts/Materialism",
       "text": "materialism"
+    },
+    {
+      "source": "/thoughts/intelligence",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
     },
     {
       "source": "/thoughts/intelligence",
@@ -21662,6 +22390,11 @@
       "text": "social contracts"
     },
     {
+      "source": "/thoughts/learning",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
       "source": "/thoughts/library",
       "target": "/thoughts/double-consciousness",
       "text": "double-consciousness"
@@ -21695,6 +22428,11 @@
       "source": "/thoughts/linguistic-relativism",
       "target": "/thoughts/constructionist",
       "text": "constructionism"
+    },
+    {
+      "source": "/thoughts/local-first-software",
+      "target": "/thoughts/CRDT",
+      "text": "CRDT"
     },
     {
       "source": "/thoughts/longevity",
@@ -21760,6 +22498,11 @@
       "source": "/thoughts/machine-learning",
       "target": "/thoughts/potemkin-village",
       "text": "Potemkin village"
+    },
+    {
+      "source": "/thoughts/machine-learning",
+      "target": "/thoughts/fault-tolerance",
+      "text": "fault tolerance"
     },
     {
       "source": "/thoughts/maintenance",
@@ -21870,6 +22613,21 @@
       "source": "/thoughts/mental-model",
       "target": "/thoughts/conceptual-model",
       "text": "conceptual model"
+    },
+    {
+      "source": "/thoughts/message-broadcast",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/message-broadcast",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
+    },
+    {
+      "source": "/thoughts/message-broadcast",
+      "target": "/thoughts/idempotence",
+      "text": "idempotence"
     },
     {
       "source": "/thoughts/metaphysics",
@@ -22657,6 +23415,16 @@
       "text": "Algorithms of Oppression"
     },
     {
+      "source": "/thoughts/quorum",
+      "target": "/thoughts/consistency",
+      "text": "consistent"
+    },
+    {
+      "source": "/thoughts/quorum",
+      "target": "/thoughts/idempotence",
+      "text": "idempotent"
+    },
+    {
       "source": "/thoughts/quotes",
       "target": "/thoughts/friendship",
       "text": "friendship"
@@ -22710,6 +23478,31 @@
       "source": "/thoughts/religious-authority",
       "target": "/thoughts/intentionality",
       "text": "intentionality"
+    },
+    {
+      "source": "/thoughts/replication",
+      "target": "/thoughts/consistency",
+      "text": "consistency"
+    },
+    {
+      "source": "/thoughts/replication",
+      "target": "/thoughts/message-broadcast",
+      "text": "message broadcast"
+    },
+    {
+      "source": "/thoughts/replication",
+      "target": "/thoughts/idempotence",
+      "text": "idempotence"
+    },
+    {
+      "source": "/thoughts/replication",
+      "target": "/thoughts/blockchain",
+      "text": "blockchains"
+    },
+    {
+      "source": "/thoughts/replication",
+      "target": "/thoughts/ethereum",
+      "text": "Ethereum"
     },
     {
       "source": "/thoughts/representation",
@@ -23062,6 +23855,11 @@
       "text": "frame problem"
     },
     {
+      "source": "/thoughts/system-model",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems?"
+    },
+    {
       "source": "/thoughts/teaching",
       "target": "/thoughts/In-Over-Our-Heads",
       "text": "In Over Our Heads"
@@ -23395,6 +24193,11 @@
       "source": "/thoughts/trust",
       "target": "/thoughts/bias",
       "text": "bias"
+    },
+    {
+      "source": "/thoughts/trust",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
     },
     {
       "source": "/thoughts/truth",

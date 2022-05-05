@@ -459,8 +459,105 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/local-first-software/">Local-first software</a></h3>
-                <p>By centralizing data storage on servers, cloud apps also take away ownership and agency from users....</p>
+                <h3><a href="https://jzhao.xyz/thoughts/RPC/">RPC</a></h3>
+                <p>RPC: Remote Procedure Call
+Sometimes called a remote function call, it is a call to a function whose implementation is on another node....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/replication/">Replication</a></h3>
+                <p>A node that has a copy of the data is called a replica...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/quorum/">quorum</a></h3>
+                <p>Read/Write Quorum In a system with $n$ replicas, we can ensure [[thoughts/consistency|consistent]]...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/message-ordering/">message ordering</a></h3>
+                <p>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/message-broadcast/">Message broadcast</a></h3>
+                <p>Ordering Total order broadcast Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!...</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/idempotence/">idempotence</a></h3>
+                <p>How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 5, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/consistency/">Consistency</a></h3>
+                <p>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)...</p>
             </div>
             <p class="meta">
                 3 minute read. Last updated May 5, 2022
@@ -475,48 +572,12 @@ if (!doNotTrack) {
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Raft-Consensus-Algorithm/">Raft Consensus Algorithm</a></h3>
-                <p>An understandable [[thoughts/consensus|consensus]] algorithm.
- A distilled version of the Raft paper....</p>
+                <h3><a href="https://jzhao.xyz/thoughts/clocks/">Clocks</a></h3>
+                <p>Measuring time in the context of computer systems
+Physical Time Two types of clock...</p>
             </div>
             <p class="meta">
-                10 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log/">Rhizome Research Log</a></h3>
-                <p>May May 5th  Finishing up [[thoughts/distributed systems#Martin Kleppmann&rsquo;s Course|Martin Kleppmann&rsquo;s Course on Distributed Systems]]  Cleaning up notes into atomic concepts that I can reference   Continuing implementation of miniraft What if&hellip; Rhizome had built in mechanisms for managing &lsquo;branches&rsquo;  Default branches are single stream To make a collaborative doc you can &lsquo;fuse&rsquo; or &lsquo;join&rsquo; branches together temporarily to sync them with each other  What if we made something on top of git like this that actually functions on a syntax level rather than a character level&hellip; one for the [[thoughts/idea list|idea list]]      May 4th  Skimming [[thoughts/distributed systems#Martin Kleppmann&rsquo;s Course|Martin Kleppmann&rsquo;s Course on Distributed Systems]]  Really good foundation to work off of Learned about differences between physical and logical clocks and realizing that miniraft should probably use some sort of logical clock rate    May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]]....</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/distributed-systems/">Distributed Systems</a></h3>
-                <p>A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together....</p>
-            </div>
-            <p class="meta">
-                13 minute read. Last updated May 5, 2022
+                4 minute read. Last updated May 5, 2022
             </p>
             <ul class="tags">
     
@@ -528,30 +589,11 @@ if (!doNotTrack) {
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Specification/">Rhizome Specification</a></h3>
-                <p>See also: [[thoughts/Rhizome Research Log|Research Log]]
- Misc notes  should provide key components  logical pipes -&gt; connectivity between nodes host bootstrapping -&gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?...</p>
+                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
+                <p>stub, tk</p>
             </div>
             <p class="meta">
-                2 minute read. Last updated May 3, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Solana/">Solana</a></h3>
-                <p>Solana is a [[thoughts/blockchain|blockchain]] that claims to be fast, secure, scalable, affordable, and resistant to [[thoughts/censorship|censorship]]...</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated May 3, 2022
+                1 minute read. Last updated May 5, 2022
             </p>
             <ul class="tags">
     
@@ -563,63 +605,11 @@ if (!doNotTrack) {
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/">Self-sovereign Identity (SSI)</a></h3>
-                <p>Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities...</p>
+                <h3><a href="https://jzhao.xyz/thoughts/collaborative-software/">Collaborative software</a></h3>
+                <p>Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available Challenge: how do we reconcile concurrent updates?...</p>
             </div>
             <p class="meta">
-                1 minute read. Last updated May 1, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/mechanism-design/">Mechanism design</a></h3>
-                <p>Distributed Algorithmic Mechanism Design: Recent Results and Future Directions. Joan Feigenbaum and Scott Shenker...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 1, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Lattice-Proposal/">Lattice Proposal</a></h3>
-                <p>Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated April 28, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CAP-Theorem/">CAP Theorem</a></h3>
-                <p>When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated April 26, 2022
+                1 minute read. Last updated May 5, 2022
             </p>
             <ul class="tags">
     
@@ -656,7 +646,7 @@ if (!doNotTrack) {
         <a href="/thoughts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/thoughts/page/34/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/thoughts/page/36/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </article>
