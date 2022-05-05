@@ -7,6 +7,11 @@ tags:
 ---
 
 ## May
+### May 4th
+- Skimming [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
+	- Really good foundation to work off of
+	- Learned about differences between physical and logical clocks and realizing that `miniraft` should probably use some sort of logical clock rather than relying on physical time
+
 ### May 3rd
 - Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was
 - Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].

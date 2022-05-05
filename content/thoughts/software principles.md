@@ -9,7 +9,7 @@ tags:
 
 Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts)
 
-1. [[thoughts/local-first software|Local first]]. Decentralized/distributed systems second. Avoid hosting like the plague. Make self-hosting easy
+1. [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Avoid hosting like the plague. Make self-hosting easy
 2. Apps should be treated like queries -- stateless. Local state should be avoided as much as possible, database is the source of truth.
 3. There is a latent cost to new features: [maintenance](thoughts/maintenance.md)
 4. Design with the goal of making atomic and reusable libraries
