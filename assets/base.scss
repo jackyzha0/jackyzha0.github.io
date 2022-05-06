@@ -285,6 +285,11 @@ article {
   }
 }
 
+.backlinks .popover a {
+  font-family: Spectral;
+  font-weight: 600;
+}
+
 @keyframes dropin {
   0% {
     display: none;
@@ -306,7 +311,7 @@ article {
 .popover {
   z-index: 999;
   position: absolute;
-  width: 20em;
+  width: 20rem;
   display: none;
   background-color: var(--light);
   padding: 1em;
@@ -343,10 +348,11 @@ article {
     font-size: 0.8rem;
   }
 
-  & > p {
+  & > p, & > a {
     margin: 0;
     font-weight: 400;
     user-select: none;
+    font-size: 1rem;
   }
 }
 
@@ -566,7 +572,7 @@ header {
     }
 
     & > #results-container {
-      & > .result-card {
+      & .result-card {
         padding: 1em;
         cursor: pointer;
         transition: background 0.2s ease;

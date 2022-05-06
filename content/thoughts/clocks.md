@@ -65,22 +65,28 @@ However even now, given timestamps $L(a) < L(b)$, we can't tell whether $a \righ
 To separate [[thoughts/causality|causality]] from concurrent events, we need vector clocks!
 
 ### Vector Clocks
-	- Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
-	- Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$
-	- Logic
-		- On initialization , set `t := [0] * n`
-		- On any event on node $N_i$, `fn tick() -> t[i] += 1`
-		- On sending message $m$ from node $N_i$, `fn send(m) -> tick(); actually_send(t, m)`
-		- On receiving `fn receive(t', m) -> t = zip(t, t').map(max); tick(); do_something(m)`
-	- Thus, a vector timestamp of an event $e$ actually represents all of its *[[thoughts/message ordering|causal]] dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
-		- E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$
-	- Ordering
-		- $T= T' \iff T[i] = T'[i] \ \forall i \in \{1, \ldots, n\}$ (T and T' are same if each element has the same value)
-		- $T \leq T' \iff T[i] \leq T'[i] \ \forall i \in \{1, \cdots, n\}$ (T happened at the same time or earlier than T' if each element in T is less than or equal to its value in T')
-		- $T < T' \iff T \leq T' \land T \neq T'$ (T happened earlier than T' if each element in T is less than its value in T', at least one element in T differs from T')
-			- $T \parallel T' \iff T \nleq T' \land T' \nleq T$ (T is incomparable to T')
-	- Properties
-	- $V(a) \leq V(b) \iff (\{a\} \cup \{e | e \rightarrow a\}) \subseteq (\{b\} \cup \{e | e \rightarrow b\})$
-	- $V(a) < V(b) \iff (a \rightarrow b)$
-	- $V(a) = V(b) \iff (a = b)$
-	- $V(a) \parallel V(b) \iff a \parallel b$
+Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
+
+Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$
+
+Logic
+- On initialization , set `t := [0] * n`
+- On any event on node $N_i$, `fn tick() -> t[i] += 1`
+- On sending message $m$ from node $N_i$, `fn send(m) -> tick(); actually_send(t, m)`
+- On receiving `fn receive(t', m) -> t = zip(t, t').map(max); tick(); do_something(m)`
+
+Thus, a vector timestamp of an event $e$ actually represents all of its *[[thoughts/message ordering|causal]] dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
+
+E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$
+
+Ordering
+- $T= T' \iff T[i] = T'[i] \ \forall i \in \{1, \ldots, n\}$ (T and T' are same if each element has the same value)
+- $T \leq T' \iff T[i] \leq T'[i] \ \forall i \in \{1, \cdots, n\}$ (T happened at the same time or earlier than T' if each element in T is less than or equal to its value in T')
+- $T < T' \iff T \leq T' \land T \neq T'$ (T happened earlier than T' if each element in T is less than its value in T', at least one element in T differs from T')
+	- $T \parallel T' \iff T \nleq T' \land T' \nleq T$ (T is incomparable to T')
+
+Properties
+- $V(a) \leq V(b) \iff (\{a\} \cup \{e | e \rightarrow a\}) \subseteq (\{b\} \cup \{e | e \rightarrow b\})$
+- $V(a) < V(b) \iff (a \rightarrow b)$
+- $V(a) = V(b) \iff (a = b)$
+- $V(a) \parallel V(b) \iff a \parallel b$
