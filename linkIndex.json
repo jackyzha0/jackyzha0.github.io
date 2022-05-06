@@ -3483,6 +3483,11 @@
           "source": "/thoughts/clocks",
           "target": "/thoughts/causality",
           "text": "causality"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
         }
       ],
       "/thoughts/collaborative-software": [
@@ -14425,6 +14430,13 @@
           "text": "message broadcast"
         }
       ],
+      "/thoughts/message-ordering": [
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/message-ordering",
+          "text": "causal"
+        }
+      ],
       "/thoughts/metalabel": [
         {
           "source": "/thoughts/Moving-Castles",
@@ -20053,6 +20065,11 @@
       "source": "/thoughts/clocks",
       "target": "/thoughts/causality",
       "text": "causality"
+    },
+    {
+      "source": "/thoughts/clocks",
+      "target": "/thoughts/message-ordering",
+      "text": "causal"
     },
     {
       "source": "/thoughts/collaborative-software",
