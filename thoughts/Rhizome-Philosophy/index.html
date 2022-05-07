@@ -3,8 +3,9 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <title>Thoughts</title>
+    <meta name="description" content="See the main [[thoughts/Rhizome Proposal|Rhizome Proposal]]
+Interoperable Data on the web today is mostly treated as second-class to applications.">
+    <title>Rhizome Philosophy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -443,9 +444,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
-        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        <div class="spacer"></div>
-        <div class='darkmode'>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -460,20 +461,21 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    </header>
-    <h1>Thoughts</h1>
+  </header>
+    
+    <pre class="ascii ascii-secondary">
+
+ .
+  \_.
+  /
+</pre>
+    
+    <h1 class="title">Rhizome Philosophy</h1>
     <article>
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Philosophy/">Rhizome Philosophy</a></h3>
-                <p>See the main [[thoughts/Rhizome Proposal|Rhizome Proposal]]
-Interoperable Data on the web today is mostly treated as second-class to applications....</p>
-            </div>
-            <p class="meta">
-                6 minute read. Last updated May 6, 2022
-            </p>
-            <ul class="tags">
+      <p class="meta">
+          Last updated May 6, 2022
+      </p>
+      <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
@@ -481,185 +483,480 @@ Interoperable Data on the web today is mostly treated as second-class to applica
     
 </ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/clocks/">Clocks</a></h3>
-                <p>Measuring time in the context of computer systems
-Physical Time Two types of clock...</p>
-            </div>
-            <p class="meta">
-                4 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#interoperable">Interoperable</a></li>
+        <li><a href="#modular">Modular</a></li>
+        <li><a href="#local-first">Local-first</a></li>
+        <li><a href="#collaborative">Collaborative</a></li>
+        <li><a href="#simple-developer-experience">Simple Developer Experience</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
+      
+      
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/quorum/">Quorum</a></h3>
-                <p>Read/Write Quorum In a system with $n$ replicas, we can ensure [[thoughts/consistency|consistent]]...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/message-broadcast/">Message broadcast</a></h3>
-                <p>Ordering Total order broadcast Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!...</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/idempotence/">Idempotence</a></h3>
-                <p>How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/consistency/">Consistency</a></h3>
-                <p>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)...</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/causality/">Causality</a></h3>
-                <p>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/replication/">Replication</a></h3>
-                <p>A node that has a copy of the data is called a replica...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
-                <p>stub, tk</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/collaborative-software/">Collaborative software</a></h3>
-                <p>Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available Challenge: how do we reconcile concurrent updates?...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li></ul>
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/36/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-    </article>
+        
+        
+      
     
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+<p>See the main <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome Proposal</a></p>
+<a href="#interoperable"><h3 id="interoperable"><span class="hanchor" ariaLabel="Anchor"># </span>Interoperable</h3></a>
+<p>Data on the web today is mostly treated as second-class to applications. In this form, data is contextual &ndash; it only makes sense in the context of what you can do in an application. At its best, developers and companies expose this data in the form of an API, not allowing you to actually access the underlying data but rather only giving you a limited range of actions or verbs that you can perform on it.</p>
+<p>This is known as <em>verb-based interoperability</em> and it 
+
+<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate. Data exported in this form rarely makes sense on its own outside of the application and often requires a lot of glue code in order to make the data the right format so that you can pass it off to the next application. In fact, companies are <em>incentivized</em> to not provide an easily understandable format that users can easily export. Why would they make it easier for people to leave their product?</p>
+<p>Users shouldn&rsquo;t have to keep using platforms they don&rsquo;t like just because it&rsquo;s impossible to move all the data they have to another. Instead, users should <em>want</em> to use platforms because it fits the needs they have.</p>
+<p>This might be possible if we treat data like a <strong>noun</strong>. How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated? Data-based interoperability can use the shared data directly. Once an app knows how to read a data format, it can read that data regardless of which app produced it.</p>
+<p>This enables users to escape the iron-clad grasp of corporations which hold your data hostage in exchange for usage of their application. Users shouldn&rsquo;t have to sign away all rights to their data when they agree to use app &ndash; they should control what applications have access to their data and how.</p>
+<a href="#modular"><h3 id="modular"><span class="hanchor" ariaLabel="Anchor"># </span>Modular</h3></a>
+<p>When users choose to use an application, they generally have no choice but to use the whole stack that application uses.</p>
+<p>In choosing an application, you are ceding agency to the application to decide how it stores the data, how it transforms that data, and how it displays that data. Don&rsquo;t like the way an application looks and the app doesn&rsquo;t give you an option to customize it? Better find a new app or deal with it.</p>
+<p>Can we give agency back to users by create modular layers so users can pick and choose what layers they want? Can we make it so these layers are available to others to reuse and adapt to their own needs?</p>
+<a href="#local-first"><h3 id="local-first"><span class="hanchor" ariaLabel="Anchor"># </span>Local-first</h3></a>
+<p>The cloud gives us collaboration, but old-fashioned apps give us ownership. Can’t we have the best of both worlds?</p>
+<p>We should be able to use our applications without needing to be connected to an internet to load a 4MB web page. Many modern &lsquo;desktop&rsquo; applications are simply Electron wrappers around a web application, providing no such thing as &lsquo;offline-support&rsquo;.</p>
+<p>Your apps shouldn&rsquo;t break as soon as you reach an area with spotty internet connection or when some company&rsquo;s server goes down. When you work with local-first software, your work should continue to be accessible indefinitely, even after the company that produces the software has died. You shouldn&rsquo;t need to worry about companies selling your data to advertisers or using it to train large language models without your permission because you control exactly who has access and permission to your data.</p>
+<p>The internet should be used to synchronize, update, and collaborate, not be a requirement for basic function. Your data should stay on your device unless you say otherwise.</p>
+<a href="#collaborative"><h3 id="collaborative"><span class="hanchor" ariaLabel="Anchor"># </span>Collaborative</h3></a>
+<p>Of course, local-first doesn&rsquo;t mean local-only.</p>
+<p>It was a dream of the early internet to be able to make spaces anyone can inhabit and enjoy, little pockets of <a href="/thoughts/digital-commons" rel="noopener" class="internal-link" data-src="/thoughts/digital-commons">digital commons</a> that are tended to by many.</p>
+<p>Apps should have the freedom to create new mediums of being digitally present with others. Apps should easily be able to have a digital indication that a space is lived in and occupied.</p>
+<p>As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital 
+
+<a href="https://twitter.com/samihusseni/status/1329499588982575104" rel="noopener">gardens</a> to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces. Places where people can consume the firehose of information through a feed or slowly and lazily through dialogue (see: 
+
+
+<a href="/thoughts/friction" rel="noopener" class="internal-link" data-src="/thoughts/friction">friction</a>, 
+
+
+<a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">pace layers</a>).</p>
+<p>A collaborative application doesn&rsquo;t necessarily need completely open to the public either. It could just be among your family or close friends. It could just be permeable enough to be discovered by those curious enough to add their own drawings and words and details just hidden enough to be carefully unearthed by the intentional visitor. An app can be a <a href="/thoughts/cozy-software#An app can be a home-cooked meal" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">home-cooked meal</a>.</p>
+<a href="#simple-developer-experience"><h3 id="simple-developer-experience"><span class="hanchor" ariaLabel="Anchor"># </span>Simple Developer Experience</h3></a>
+<p>Last but not least, the experience should feel pleasant to both build and use.</p>
+<p>There are clearly social problems when it comes to making collaborative apps (e.g. <a href="/thoughts/tragedy-of-the-commons" rel="noopener" class="internal-link" data-src="/thoughts/tragedy-of-the-commons">tragedy of the commons</a>, <a href="/thoughts/evaporative-cooling" rel="noopener" class="internal-link" data-src="/thoughts/evaporative-cooling">evaporative cooling</a>), but even <em>enabling</em> this collaboration on a technical level to happen in the first place is already really difficult.</p>
+<p>The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is <em>actually</em> happening in the code. Networking quirks like NAT traversal make direct connections</p>
+<p>People tend to lean towards client-server models because nobody has made it easy to make P2P software. Almost everything today requires users to still setup their own signalling servers, STUN servers, ICE servers, and a bunch of other infrastructure that makes client-server applications seem like child play.</p>
+<p>But what if developers didn&rsquo;t have to worry about server hosting <em>or</em> complexities of eventual consistency? Can we make the tech really easy to build so even hobbyists can quickly spin up a chat app for their own friends that suits their own needs?</p>
+<p>The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.</p>
+ 
+
+    </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Proposal/" data-ctx="Rhizome&#39;s Philosophy" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+    :root {
+        --g-node: var(--secondary);
+        --g-node-active: var(--primary);
+        --g-node-inactive: var(--visited);
+        --g-link: var(--outlinegray);
+        --g-link-active: #5a7282;
+    }
+</style>
+<script>
+async function run() {
+  const { index, links, content } = await fetchData
+  const curPage = "/thoughts/Rhizome-Philosophy"
+  const pathColors = [{"/moc":"#4388cc"}]
+  let depth =  1 
+
+  const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
+
+  const neighbours = new Set()
+  const wl = [curPage || "/", "__SENTINEL"]
+  if (depth >= 0) {
+    while (depth >= 0 && wl.length > 0) {
+      
+      const cur = wl.shift()
+      if (cur === "__SENTINEL") {
+        depth--
+        wl.push("__SENTINEL")
+      } else {
+        neighbours.add(cur)
+        const outgoing = index.links[cur] || []
+        const incoming = index.backlinks[cur] || []
+        wl.push(...outgoing.map(l => l.target), ...incoming.map(l => l.source))
+      }
+    }
+  } else {
+    parseIdsFromLinks(links).forEach(id => neighbours.add(id))
+  }
+
+  const data = {
+    nodes: [...neighbours].map(id => ({id})),
+    links: links.filter(l => neighbours.has(l.source) && neighbours.has(l.target)),
+  }
+
+  const color = (d) => {
+    if (d.id === curPage || (d.id === "/" && curPage === "")) {
+      return "var(--g-node-active)"
+    }
+
+    for (const pathColor of pathColors) {
+      const path = Object.keys(pathColor)[0]
+      const colour = pathColor[path]
+      if (d.id.startsWith(path)) {
+        return colour
+      }
+    }
+
+    return "var(--g-node)"
+  }
+
+  const drag = simulation => {
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(1).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event,d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event,d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    const enableDrag =  true 
+    const noop = () => {}
+    return d3.drag()
+      .on("start", enableDrag ? dragstarted : noop)
+      .on("drag", enableDrag ? dragged : noop)
+      .on("end", enableDrag ? dragended : noop);
+  }
+
+  const height = Math.max(document.getElementById("graph-container").offsetHeight, 250)
+  const width = document.getElementById("graph-container").offsetWidth
+
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("charge", d3.forceManyBody().strength(-30))
+    .force("link", d3.forceLink(data.links).id(d => d.id).distance(40))
+    .force("center", d3.forceCenter());
+
+  const svg = d3.select('#graph-container')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr("viewBox", [-width / 2, -height / 2, width, height]);
+
+  
+  const enableLegend =  false 
+  if (enableLegend) {
+    const legend = [
+      {"Current": "var(--g-node-active)"},
+      {"Note": "var(--g-node)"},
+      ...pathColors
+    ]
+    legend.forEach((legendEntry, i) => {
+      const key = Object.keys(legendEntry)[0]
+      const colour = legendEntry[key]
+      svg.append("circle").attr("cx", -width/2 + 20).attr("cy", height/2 - 30 * (i+1)).attr("r", 6).style("fill", colour)
+      svg.append("text").attr("x", -width/2 + 40).attr("y", height/2 - 30 * (i+1)).text(key).style("font-size", "15px").attr("alignment-baseline","middle")
+    })
+  }
+
+  
+  const link = svg.append("g")
+    .selectAll("line")
+    .data(data.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "var(--g-link)")
+    .attr("stroke-width", 2)
+    .attr("data-source", d => d.source.id)
+    .attr("data-target", d => d.target.id)
+
+  
+  const graphNode = svg.append("g")
+    .selectAll("g")
+    .data(data.nodes)
+    .enter().append("g")
+
+  
+  const nodeRadius = (d) => {
+    const numOut = index.links[d.id]?.length || 0
+    const numIn = index.backlinks[d.id]?.length || 0
+    return 3 + (numOut + numIn) / 4
+  }
+
+  
+  const node = graphNode.append("circle")
+    .attr("class", "node")
+    .attr("id", (d) => d.id)
+    .attr("r", nodeRadius)
+    .attr("fill", color)
+    .style("cursor", "pointer")
+    .on("click", (_, d) => {
+      window.location.href = "https://jzhao.xyz/".replace(/\/$/g, "") + decodeURI(d.id).replace(/[\s_]+/g, '-') + '/'
+    })
+    .on("mouseover", function (_, d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(100)
+        .attr("fill", "var(--g-node-inactive)")
+
+      const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
+      const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      
+      neighbourNodes
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link-active)")
+
+      
+      d3.select(this.parentNode)
+        .raise()
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+        .raise()
+    }).on("mouseleave", function (_,d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link)")
+
+      d3.select(this.parentNode)
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    })
+    .call(drag(simulation));
+
+  
+  const labels = graphNode.append("text")
+    .attr("dx", 0)
+    .attr("dy", d => nodeRadius(d) + 16 + "px")
+    .attr("text-anchor", "middle")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
+    .style("opacity", 0)
+    .style("pointer-events", "none")
+    .raise()
+    .call(drag(simulation));
+
+  
+  const enableZoom =  false 
+  if (enableZoom) {
+    svg.call(d3.zoom()
+      .extent([[0, 0], [width, height]])
+      .scaleExtent([0.25, 2])
+      .on("zoom", ({transform}) => {
+        link.attr("transform", transform);
+        node.attr("transform", transform);
+        const scale = transform.k
+        const scaledOpacity = Math.max((scale - 1) / 3.75, 0)
+        labels
+          .attr("transform", transform)
+          .style("opacity", scaledOpacity);
+      }));
+  }
+
+  
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+    labels
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+}
+
+run()
+</script>
+
+    </div>
+</div>
+
+
 <div id="contact_buttons">
     <footer>
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>

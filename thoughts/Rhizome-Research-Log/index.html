@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="May May 5th  Finishing up [[thoughts/distributed systems#Martin Kleppmann&rsquo;s Course|Martin Kleppmann&rsquo;s Course on Distributed Systems]]  Cleaning up notes into atomic concepts that I can reference   Continuing implementation of miniraft What if&hellip; Rhizome had built in mechanisms for managing &lsquo;branches&rsquo;  Default branches are single stream To make a collaborative doc you can &lsquo;fuse&rsquo; or &lsquo;join&rsquo; branches together temporarily to sync them with each other  What if we made something on top of git like this that actually functions on a syntax level rather than a character level&hellip; one for the [[thoughts/idea list|idea list]]   Pace layers for collaboration  Real-time (keystroke-by-keystroke) On-click (manually click refresh) Suggest changes (like Google Docs, accept/reject)     Agreeing on what operations a [[thoughts/CRDT|CRDT]] can perform still seems to be difficult ( see 1hr into this talk)  Possible room for data lensing on public schemas to be useful here    May 4th  Skimming [[thoughts/distributed systems#Martin Kleppmann&rsquo;s Course|Martin Kleppmann&rsquo;s Course on Distributed Systems]]  Really good foundation to work off of Learned about differences between physical and logical [[thoughts/clocks|clocks]] and realizing that miniraft should probably use some sort of [[thoughts/clocks|logical clock]] rate    May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].">
+    <meta name="description" content="May May 6th  Mostly writing up recent learnings and incorporating them into the [[thoughts/Rhizome Proposal|research proposal]]&hellip; lots of words today  Sometimes I feel like I&rsquo;m doing research to be able to do more research&hellip;   I think I am finally getting to a point where Rhizome is making more and more sense and obvious why it is necessary  I started this project/research very much like &ldquo;oh wow, this is a cool set of technologies and here are some vague words and feelings about what I think is inadequate in the space&rdquo; and it has sort of refined itself into a clear use case!">
     <title>Rhizome Research Log</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Research Log</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated May 6, 2022
       </p>
       <ul class="tags">
     
@@ -489,6 +489,7 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#may">May</a>
       <ol>
+        <li><a href="#may-6th">May 6th</a></li>
         <li><a href="#may-5th">May 5th</a></li>
         <li><a href="#may-4th">May 4th</a></li>
         <li><a href="#may-3rd">May 3rd</a></li>
@@ -513,6 +514,56 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
 
   
   
@@ -1017,6 +1068,24 @@ if (!doNotTrack) {
 
 
 <a href="#may"><h2 id="may"><span class="hanchor" ariaLabel="Anchor"># </span>May</h2></a>
+<a href="#may-6th"><h3 id="may-6th"><span class="hanchor" ariaLabel="Anchor"># </span>May 6th</h3></a>
+<ul>
+<li>Mostly writing up recent learnings and incorporating them into the <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">research proposal</a>&hellip; lots of words today
+<ul>
+<li>Sometimes I feel like I&rsquo;m doing research to be able to do more research&hellip;</li>
+</ul>
+</li>
+<li>I think I am finally getting to a point where Rhizome is making more and more sense and obvious why it is necessary
+<ul>
+<li>I started this project/research very much like &ldquo;oh wow, this is a cool set of technologies and here are some vague words and feelings about what I think is inadequate in the space&rdquo; and it has sort of refined itself into a clear use case!</li>
+<li>Came across the concept of a &ldquo;cloud peer&rdquo; today in Hypercore documentation and it was like &ldquo;WOW I had this exact same idea and they already have a name for it&rdquo; and it was so cool</li>
+<li>Really excited about this future of &lsquo;personal cloud computing&rsquo;</li>
+<li>I think this summer will be mostly focused on the data replication / identity aspect of Rhizome, realizing that I think I was way too ambitious with my first proposal</li>
+</ul>
+</li>
+<li>More implementation on <code>miniraft</code>. Rust feels so slow to get back into a &lsquo;de-rusted state&rsquo; (hah) where code just &lsquo;flows&rsquo;. It feels fun though! Type system reminds me a lot of Haskell.</li>
+</ul>
+<p><img src="/thoughts/images/rhizome-may-6.jpeg" title="/thoughts/images/rhizome-may-6.jpeg"></p>
 <a href="#may-5th"><h3 id="may-5th"><span class="hanchor" ariaLabel="Anchor"># </span>May 5th</h3></a>
 <ul>
 <li>Finishing up <a href="/thoughts/distributed-systems#Martin Kleppmann&rsquo;s Course" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">Martin Kleppmann&rsquo;s Course on Distributed Systems</a>
@@ -1140,6 +1209,16 @@ if (!doNotTrack) {
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Proposal/" data-ctx="research log here" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+      </li>
+      
       
       
       <li>

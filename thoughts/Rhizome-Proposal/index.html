@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.">
+    <meta name="description" content="A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications and personal cloud computing.">
     <title>Rhizome Proposal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated May 6, 2022
       </p>
       <ul class="tags">
     
@@ -487,22 +487,21 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#motivation-and-values">Motivation and Values</a>
+    <li><a href="#motivation-and-values">Motivation and Values</a></li>
+    <li><a href="#existing-problems-with-peer-to-peer-protocols">Existing problems with peer-to-peer protocols</a>
       <ol>
-        <li><a href="#interoperable">Interoperable</a></li>
-        <li><a href="#modular">Modular</a></li>
-        <li><a href="#local-first">Local-first</a></li>
-        <li><a href="#collaborative">Collaborative</a></li>
-        <li><a href="#simple-developer-experience">Simple Developer Experience</a></li>
+        <li><a href="#availability--durability">Availability + Durability</a></li>
+        <li><a href="#connectivity">Connectivity</a></li>
+        <li><a href="#identity">Identity</a></li>
+        <li><a href="#why-not-blockchain">Why not Blockchain?</a></li>
+      </ol>
+    </li>
+    <li><a href="#so-what-is-rhizome">So, what is Rhizome?</a>
+      <ol>
         <li><a href="#differentiation-from-existing-work">Differentiation from existing work</a></li>
       </ol>
     </li>
-    <li><a href="#timeline--labour-estimates">Timeline / Labour Estimates</a>
-      <ol>
-        <li><a href="#research--background-work">Research / Background Work</a></li>
-        <li><a href="#rhizome-implementation">Rhizome Implementation</a></li>
-      </ol>
-    </li>
+    <li><a href="#timeline--labour-estimates">Timeline / Labour Estimates</a></li>
   </ol>
 </nav>
       </aside>
@@ -719,11 +718,137 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
-<p>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for <strong>collaborative local-first applications</strong>.</p>
+
+<p>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for <strong>collaborative local-first applications</strong> and <strong>personal cloud computing</strong>.</p>
 <blockquote>
 <p>Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two&hellip; a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” 
 
@@ -734,47 +859,77 @@ if (!doNotTrack) {
 <p>Imagine a web where your applications don&rsquo;t just stop working when you lose internet connection or some company intern accidentally takes down production.</p>
 <p>Imagine a web where it is <em>easy</em> and <em>normal</em> to create vast and rich collaborative spaces that allow you co-browse the internet and collectively <a href="/posts/digital-gardening" rel="noopener" class="internal-link" data-src="/posts/digital-gardening">digital garden</a> with friends.</p>
 <p>Imagine a web where your digital spaces feel like portable universes and community gardens.</p>
-<hr>
-<p>My goal is to answer the question: <strong>What would something like this look like if it were possible?</strong></p>
-<p>In short, <em>Rhizome</em> is an attempt to decouple data from applications. Below are properties that Rhizome will optimize for.</p>
-<a href="#interoperable"><h3 id="interoperable"><span class="hanchor" ariaLabel="Anchor"># </span>Interoperable</h3></a>
-<p>Data on the web today is mostly treated as second-class to applications. In this form, data is contextual &ndash; it only makes sense in the context of what you can do in an application. At its best, developers and companies expose this data in the form of an API, not allowing you to actually access the underlying data but rather only giving you a limited range of actions or verbs that you can perform on it.</p>
-<p>This is known as <em>verb-based interoperability</em> and it 
+<p><em>Rhizome is an attempt at infrastructure for a world where these are possible.</em></p>
+<p>Below are properties that Rhizome will optimize for:</p>
+<ul>
+<li>Interoperable: data should be first-class, not applications</li>
+<li>Modular: choose the parts you like, no vendor lock-in</li>
+<li>Local-first: your apps should work even when the internet is broken</li>
+<li>Collaborative: multiplayer gardens with ease</li>
+</ul>
+<p>I&rsquo;ve written about these in greater detail regarding <a href="/thoughts/Rhizome-Philosophy" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Philosophy">Rhizome&rsquo;s Philosophy</a>.</p>
+<a href="#existing-problems-with-peer-to-peer-protocols"><h2 id="existing-problems-with-peer-to-peer-protocols"><span class="hanchor" ariaLabel="Anchor"># </span>Existing problems with peer-to-peer protocols</h2></a>
+<p>Of course, many peer-to-peer protocols already exist today, claiming to give people ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.</p>
+<p>Reflecting on this, there seems to be 3 major unsolved problems with these protocols:</p>
+<a href="#availability--durability"><h3 id="availability--durability"><span class="hanchor" ariaLabel="Anchor"># </span>Availability + Durability</h3></a>
+<p>In most P2P apps nowadays, closing your device or disconnecting it from the internet means the end of a session and whatever resource your peers were also connected to is no longer available.</p>
+<p>If you need to send someone a file or message, both devices need to be online at the same point. If you need to download a really obscure file through a torrent, the chances that someone is currently seeding it are extremely slim.</p>
+<p>Large companies get around this by storing the state of a user&rsquo;s documents on one of their many servers who make it available on your behalf but P2P apps do not have this luxury. The problem is that most people do not have a device that is &ldquo;always-on&rdquo; like a server is.</p>
+<p>This poses a large problem for emulating those smooth &lsquo;always available&rsquo; experiences that we&rsquo;ve grown accustomed to in modern web apps like Google Docs.</p>
+<a href="#connectivity"><h3 id="connectivity"><span class="hanchor" ariaLabel="Anchor"># </span>Connectivity</h3></a>
+<p>The current Internet, with its NAT routers, firewalls and VPNs, are hostile to P2P connections. Even the best techniques we have to establish direct peer-to-peer connections with other hosts work only about ~85% of the time (see notes on <a href="/thoughts/NAT#Efficacy" rel="noopener" class="internal-link" data-src="/thoughts/NAT">hole-punching efficacy</a>). Approaches like DHTs are promising but no one has got it to work consistently in a browser yet.</p>
+<p>Peer-to-peer connectivity is hard without an intermediary.</p>
+<p>Of course we can always fallback to a trusted server to act as a proxy but this comes at the same price of decentralization. Lots of protocols provide their own signalling and rendez-vous servers you can run but people don&rsquo;t want to run/host/maintain their own servers either!</p>
+<a href="#identity"><h3 id="identity"><span class="hanchor" ariaLabel="Anchor"># </span>Identity</h3></a>
+<p>Most P2P protocols don&rsquo;t have good primitives for identity. Most users are identified by whatever session they are in along with a sequence of random numbers or codes.</p>
+<p>Once that session is terminated, that notion of identity dissolves. Often, there is no way to identify a user across applications. Sometimes this is useful but not for vast majority of use cases.</p>
+<p>Most apps require some notion of persistent &lsquo;identity&rsquo; in order to function properly.</p>
+<a href="#why-not-blockchain"><h3 id="why-not-blockchain"><span class="hanchor" ariaLabel="Anchor"># </span>Why not Blockchain?</h3></a>
+<p>At this point, some critics may be screaming &ldquo;why not just use blockchain??&rdquo;</p>
+<p>I admit that it is true that <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a> actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentive</a> mechanisms. Yet, they solve it in a way that leaves much to be desired.</p>
+<p>Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it &ndash; partially why I suspect there has yet to be a widely-adopted real-world application of <a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a> yet. Some of the core problems that I have personally seen are:</p>
+<ul>
+<li>Lack of ability to store large files on-chain (people have resorted to referring to IPFS CIDs on-chain but this leads to the <a href="/thoughts/Degraded-Blockchain-problem" rel="noopener" class="internal-link" data-src="/thoughts/Degraded-Blockchain-problem">degraded blockchain problem</a>)</li>
+<li>Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
+<li>Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)</li>
+</ul>
+<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and <a href="/thoughts/consistency#Eventual Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">eventual consistency</a> is more than good enough.</p>
+<p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
+<a href="#so-what-is-rhizome"><h2 id="so-what-is-rhizome"><span class="hanchor" ariaLabel="Anchor"># </span>So, what is Rhizome?</h2></a>
+<p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web.</p>
+<p>It is an abstraction on top of IPFS (specifically 
 
-<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate. Data exported in this form rarely makes sense on its own outside of the application and often requires a lot of glue code in order to make the data the right format so that you can pass it off to the next application. In fact, companies are <em>incentivized</em> to not provide an easily understandable format that users can easily export. Why would they make it easier for people to leave their product?</p>
-<p>Users shouldn&rsquo;t have to keep using platforms they don&rsquo;t like just because it&rsquo;s impossible to move all the data they have to another. Instead, users should <em>want</em> to use platforms because it fits the needs they have.</p>
-<p>This might be possible if we treat data like a <strong>noun</strong>. How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated? Data-based interoperability can use the shared data directly. Once an app knows how to read a data format, it can read that data regardless of which app produced it.</p>
-<p>This enables users to escape the iron-clad grasp of corporations which hold your data hostage in exchange for usage of their application. Users shouldn&rsquo;t have to sign away all rights to their data when they agree to use app &ndash; they should control what applications have access to their data and how.</p>
-<a href="#modular"><h3 id="modular"><span class="hanchor" ariaLabel="Anchor"># </span>Modular</h3></a>
-<p>When users choose to use an application, they generally have no choice but to use the whole stack that application uses.</p>
-<p>In choosing an application, you are ceding agency to the application to decide how it stores the data, how it transforms that data, and how it displays that data. Don&rsquo;t like the way an application looks and the app doesn&rsquo;t give you an option to customize it? Better find a new app or deal with it.</p>
-<p>Can we give agency back to users by create modular layers so users can pick and choose what layers they want? Can we make it so these layers are available to others to reuse and adapt to their own needs?</p>
-<a href="#local-first"><h3 id="local-first"><span class="hanchor" ariaLabel="Anchor"># </span>Local-first</h3></a>
-<p>The cloud gives us collaboration, but old-fashioned apps give us ownership. Can’t we have the best of both worlds?</p>
-<p>We should be able to use our applications without needing to be connected to an internet to load a 4MB web page. Many modern &lsquo;desktop&rsquo; applications are simply Electron wrappers around a web application, providing no such thing as &lsquo;offline-support&rsquo;.</p>
-<p>Your apps shouldn&rsquo;t break as soon as you reach an area with spotty internet connection or when some company&rsquo;s server goes down. When you work with local-first software, your work should continue to be accessible indefinitely, even after the company that produces the software has died. You shouldn&rsquo;t need to worry about companies selling your data to advertisers or using it to train large language models without your permission because you control exactly who has access and permission to your data.</p>
-<p>The internet should be used to synchronize, update, and collaborate, not be a requirement for basic function. Your data should stay on your device unless you say otherwise.</p>
-<a href="#collaborative"><h3 id="collaborative"><span class="hanchor" ariaLabel="Anchor"># </span>Collaborative</h3></a>
-<p>Of course, local-first doesn&rsquo;t mean local-only.</p>
-<p>It was a dream of the early internet to be able to make spaces anyone can inhabit and enjoy, little pockets of <a href="/thoughts/digital-commons" rel="noopener" class="internal-link" data-src="/thoughts/digital-commons">digital commons</a> that are tended to by many.</p>
-<p>Apps should have the freedom to create new mediums of being digitally present with others. Apps should easily be able to have a digital indication that a space is lived in and occupied.</p>
-<p>As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital 
-
-<a href="https://twitter.com/samihusseni/status/1329499588982575104" rel="noopener">gardens</a> to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces. Places where people can consume the firehose of information through a feed or slow and lazily through Socratic dialogue (see: 
-
-
-<a href="/thoughts/friction" rel="noopener" class="internal-link" data-src="/thoughts/friction">friction</a>, 
-
-
-<a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">pace layers</a>).</p>
-<p>A collaborative application doesn&rsquo;t necessarily need completely open to the public either. It could just be among your family or close friends. It could just be permeable enough to be discovered by those curious enough to add their own drawings and words and details just hidden enough to be carefully unearthed by the intentional visitor. An app can be a <a href="/thoughts/cozy-software#An app can be a home-cooked meal" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">home-cooked meal</a>.</p>
-<a href="#simple-developer-experience"><h3 id="simple-developer-experience"><span class="hanchor" ariaLabel="Anchor"># </span>Simple Developer Experience</h3></a>
-<p>Last but not least, the experience should feel pleasant to both build and use.</p>
-<p>There are clearly social problems when it comes to making collaborative apps (e.g. <a href="/thoughts/tragedy-of-the-commons" rel="noopener" class="internal-link" data-src="/thoughts/tragedy-of-the-commons">tragedy of the commons</a>, <a href="/thoughts/evaporative-cooling" rel="noopener" class="internal-link" data-src="/thoughts/evaporative-cooling">evaporative cooling</a>), but even <em>enabling</em> this collaboration on a technical level to happen in the first place is already really difficult.</p>
-<p>The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is <em>actually</em> happening in the code. Networking quirks like NAT traversal make direct connections</p>
-<p>People tend to lean towards client-server models because nobody has made it easy to make P2P software. Almost everything today requires users to still setup their own signalling servers, STUN servers, ICE servers, and a bunch of other infrastructure that makes client-server applications seem like child play.</p>
-<p>But what if developers didn&rsquo;t have to worry about server hosting <em>or</em> complexities of eventual consistency? Can we make the tech really easy to build so even hobbyists can quickly spin up a chat app for their own friends that suits their own needs?</p>
-<p>The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.</p>
+<a href="https://ipld.io/" rel="noopener">IPLD</a>), Filecoin, and the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft consensus protocol</a>.</p>
+<p>The goal of Rhizome is to build out the model of the <em>personal cloud</em>. Think iCloud or Dropbox but distributed and extensible. It is the one database that is the source of truth for all other applications you use. You control it, nobody can take it down because it runs primarily on devices <em>you own</em>.</p>
+<p>In this model,</p>
+<ul>
+<li>Users have devices (phones, laptops, desktops) they can link to identities</li>
+<li>Data is fully replicated within devices linked to a single identity</li>
+<li>People can own multiple identities (a <a href="/thoughts/pseudonymity" rel="noopener" class="internal-link" data-src="/thoughts/pseudonymity">pseudonymous web</a>)</li>
+</ul>
+<p>At this basic level, Rhizome is a local-first data replication and synchronization service much like iCloud/Dropbox. This on its own is already a promising idea but where it gets interesting is how application data is managed.</p>
+<ul>
+<li>All application data is stored in the form of an append-only event log for each app they interact with.
+<ul>
+<li>This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.</li>
+</ul>
+</li>
+<li>All apps are deterministic state transition functions (functions that transform the state from $x$ at some time $t$ to state $y$ at some time $t+1$). These state transition functions are run over the event log to arrive at some application state.
+<ul>
+<li>As a result, no servers are needed because all computation now happens locally on your device.</li>
+</ul>
+</li>
+<li>All apps have a public schema which describe what type of events it adds to the append-only event log.
+<ul>
+<li>As a result, interoperability and data lensing is easy.</li>
+<li>Users can then &lsquo;bind&rsquo; streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).</li>
+</ul>
+</li>
+</ul>
+<p>At this point, you may be wondering &ldquo;okay, where am I going to get the storage for all this data and how can my phone handle all this compute&rdquo;?</p>
+<p>We can solve this with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</p>
+<p><img src="/thoughts/images/rhizome-may-6.jpeg" title="/thoughts/images/rhizome-may-6.jpeg"><em>Rough architecture diagram as of May 6th</em></p>
+<p>The properties work together to make a solid foundation for peer-to-peer applications to exist and thrive in the future.</p>
 <a href="#differentiation-from-existing-work"><h3 id="differentiation-from-existing-work"><span class="hanchor" ariaLabel="Anchor"># </span>Differentiation from existing work</h3></a>
 <ul>
 <li>
@@ -789,7 +944,6 @@ if (!doNotTrack) {
 <a href="https://wejn.org/2021/02/urbit-good-bad-insane/" rel="noopener">here</a> but TLDR; good in principle, didn&rsquo;t work out in practice.</li>
 <li>No real applications built on top of it.</li>
 <li>Modular collaborative yes, no on everything else.</li>
-<li>-Interoperable +Modular +Local +Collaborative -Developer Experience</li>
 </ul>
 </li>
 <li>
@@ -798,55 +952,34 @@ if (!doNotTrack) {
 <ul>
 <li>Provides a universal document graph (Ceramic Documents) which by default are interoperable, scalable, and permissionless.</li>
 <li>Seems to require a blockchain to anchor storage and provide strict ordering which in turn makes real-time data read/write infeasible (e.g. games, chat).</li>
-<li>Use of DIDs is incredibly smart, potentially enabling self-sovereign identity (SSI) down the line.</li>
+<li>Use of DIDs is incredibly smart, potentially enabling <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">self-sovereign identity</a> down the line.</li>
 <li>Doesn&rsquo;t seem to support multi-writer documents right out of the box, seems to be an ongoing area of work/research.</li>
 <li>Great principles and solid work already. Seems to have gained some adoption from people in <a href="/thoughts/web3" rel="noopener" class="internal-link" data-src="/thoughts/web3">web3</a> already.</li>
-<li>+Interoperable +Modular -Local -Collaborative +Developer Experience</li>
 </ul>
 </li>
-<li>Hypercore/Dat Protocol: tbd</li>
-<li>Yjs: tbd</li>
+<li>Hypercore/Dat Protocol:
+<ul>
+<li>Extremely values aligned! Streaming based append-only log that aims to be the lego-block of distributed applications.</li>
+<li>Great developer experience.</li>
+<li>Use of DHT means that it doesn&rsquo;t need a signalling server for peer discovery.</li>
+<li>Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system).</li>
+<li>Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously.</li>
+<li>Hypercore also does not guarantee long-term write-once storage.</li>
+<li>Multi-writer support is still being worked on.</li>
+</ul>
+</li>
 </ul>
 <a href="#timeline--labour-estimates"><h2 id="timeline--labour-estimates"><span class="hanchor" ariaLabel="Anchor"># </span>Timeline / Labour Estimates</h2></a>
-<p>Labour estimate is roughly 40 hours/week for 16 weeks working on this research with the primary output goal being Rhizome. Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of p2p systems will also be produced and released.</p>
-<p>All bullet points below are releasable artifacts.</p>
-<a href="#research--background-work"><h3 id="research--background-work"><span class="hanchor" ariaLabel="Anchor"># </span>Research / Background Work</h3></a>
-<ul>
-<li>P2P Readings + Notes - Week 1-3
-<ul>
-<li>DID</li>
-<li>Merkle-DAG</li>
-<li>IPLD</li>
-<li>CID</li>
-<li><a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a></li>
-<li>Yjs</li>
-<li>Hypercore</li>
-<li>SSI</li>
-</ul>
-</li>
-<li>Implementation Practice
-<ul>
-<li>Implement 
-
-<a href="https://raft.github.io/#implementations" rel="noopener">Raft Consensus</a> in Rust - Week 2</li>
-<li>Barebones Hypercore in Rust - Week 3</li>
-<li>Some form of DHT with NAT traversal - Week 2/3</li>
-<li>&hellip; tbd</li>
-</ul>
-</li>
-</ul>
-<a href="#rhizome-implementation"><h3 id="rhizome-implementation"><span class="hanchor" ariaLabel="Anchor"># </span>Rhizome Implementation</h3></a>
-<ul>
-<li>Revise and concretize <a href="/thoughts/Rhizome-Specification" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Specification">Rhizome Specification</a></li>
-<li>ID Layer - Week 4-7</li>
-<li>Transport Layer - Week 7-10</li>
-<li>Logic Layer - Week 10-13</li>
-<li>Application Layer - Week 13-16
-<ul>
-<li>Potential application: <a href="/thoughts/Lattice-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Lattice-Proposal">Lattice &ndash; an experiment on collective sense-making and digital gardening</a> [WIP]</li>
-</ul>
-</li>
-</ul>
+<p>Labour estimate is roughly 40 hours/week for 16 weeks working on this research with the primary output goal being Rhizome.</p>
+<p>Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer to peer</a> systems will also be produced and released.</p>
+<p>A rough hierarchy of work follows:</p>
+<ol>
+<li>Research artifacts (blog posts explaining distributed systems concepts as I learn and become more familiar with them)</li>
+<li>Root: the data replication and identity part of Rhizome</li>
+<li>Trunk: the application-level event log management and collaboration</li>
+</ol>
+<p>The goal is to finish 1. and 2. by end of summer.</p>
+<p>You can find the ongoing <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log here</a>.</p>
  
 
     </article>
@@ -882,8 +1015,22 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Lattice-Proposal/" data-ctx="Rhizome" data-src="/thoughts/Lattice-Proposal" class="internal-link">Lattice Proposal</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Philosophy/" data-ctx="Rhizome Proposal" data-src="/thoughts/Rhizome-Philosophy" class="internal-link">Rhizome Philosophy</a>
       </li>
       
       

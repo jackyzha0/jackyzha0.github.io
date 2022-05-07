@@ -6,7 +6,17 @@
     <description>Recent content in rhizome on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhizome Philosophy</title>
+      <link>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</guid>
+      <description>See the main [[thoughts/Rhizome Proposal|Rhizome Proposal]]
+Interoperable Data on the web today is mostly treated as second-class to applications.</description>
+    </item>
+    
     <item>
       <title>Distributed Systems</title>
       <link>https://jzhao.xyz/thoughts/distributed-systems/</link>
@@ -22,7 +32,7 @@
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>May May 5th  Finishing up [[thoughts/distributed systems#Martin Kleppmann&amp;rsquo;s Course|Martin Kleppmann&amp;rsquo;s Course on Distributed Systems]]  Cleaning up notes into atomic concepts that I can reference   Continuing implementation of miniraft What if&amp;hellip; Rhizome had built in mechanisms for managing &amp;lsquo;branches&amp;rsquo;  Default branches are single stream To make a collaborative doc you can &amp;lsquo;fuse&amp;rsquo; or &amp;lsquo;join&amp;rsquo; branches together temporarily to sync them with each other  What if we made something on top of git like this that actually functions on a syntax level rather than a character level&amp;hellip; one for the [[thoughts/idea list|idea list]]   Pace layers for collaboration  Real-time (keystroke-by-keystroke) On-click (manually click refresh) Suggest changes (like Google Docs, accept/reject)     Agreeing on what operations a [[thoughts/CRDT|CRDT]] can perform still seems to be difficult ( see 1hr into this talk)  Possible room for data lensing on public schemas to be useful here    May 4th  Skimming [[thoughts/distributed systems#Martin Kleppmann&amp;rsquo;s Course|Martin Kleppmann&amp;rsquo;s Course on Distributed Systems]]  Really good foundation to work off of Learned about differences between physical and logical [[thoughts/clocks|clocks]] and realizing that miniraft should probably use some sort of [[thoughts/clocks|logical clock]] rate    May 3rd  Read about more [[thoughts/NAT#Efficacy|NAT traversal and holepunching efficacy]], turns out hole punching is just not as reliable as I thought it was Compared more traditional consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]] to [[thoughts/Solana|Solana]].</description>
+      <description>May May 6th  Mostly writing up recent learnings and incorporating them into the [[thoughts/Rhizome Proposal|research proposal]]&amp;hellip; lots of words today  Sometimes I feel like I&amp;rsquo;m doing research to be able to do more research&amp;hellip;   I think I am finally getting to a point where Rhizome is making more and more sense and obvious why it is necessary  I started this project/research very much like &amp;ldquo;oh wow, this is a cool set of technologies and here are some vague words and feelings about what I think is inadequate in the space&amp;rdquo; and it has sort of refined itself into a clear use case!</description>
     </item>
     
     <item>
@@ -59,7 +69,7 @@
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Proposal/</guid>
-      <description>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.</description>
+      <description>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications and personal cloud computing.</description>
     </item>
     
   </channel>

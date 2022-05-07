@@ -2404,6 +2404,38 @@
           "text": "qualia"
         }
       ],
+      "/thoughts/Rhizome-Philosophy": [
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome Proposal"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/digital-commons",
+          "text": "digital commons"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/friction",
+          "text": "friction"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/pace-layers",
+          "text": "pace layers"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/tragedy-of-the-commons",
+          "text": "tragedy of the commons"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/evaporative-cooling",
+          "text": "evaporative cooling"
+        }
+      ],
       "/thoughts/Rhizome-Proposal": [
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -2412,28 +2444,18 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/digital-commons",
-          "text": "digital commons"
+          "target": "/thoughts/Rhizome-Philosophy",
+          "text": "Rhizome's Philosophy"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/friction",
-          "text": "friction"
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/pace-layers",
-          "text": "pace layers"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/tragedy-of-the-commons",
-          "text": "tragedy of the commons"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/evaporative-cooling",
-          "text": "evaporative cooling"
+          "target": "/thoughts/incentives",
+          "text": "incentive"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -2442,21 +2464,46 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/CRDT",
-          "text": "CRDT"
+          "target": "/thoughts/Degraded-Blockchain-problem",
+          "text": "degraded blockchain problem"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Rhizome-Specification",
-          "text": "Rhizome Specification"
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft consensus protocol"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Lattice-Proposal",
-          "text": "Lattice -- an experiment on collective sense-making and digital gardening"
+          "target": "/thoughts/pseudonymity",
+          "text": "pseudonymous web"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Self-sovereign-Identity-SSI",
+          "text": "self-sovereign identity"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/web3",
+          "text": "web3"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer to peer"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "research log here"
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "research proposal"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/idea-list",
@@ -9012,11 +9059,6 @@
       ],
       "/thoughts/CRDT": [
         {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/CRDT",
-          "text": "CRDT"
-        },
-        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CRDT",
           "text": "CRDT"
@@ -9140,6 +9182,11 @@
           "source": "/thoughts/NFT",
           "target": "/thoughts/Degraded-Blockchain-problem",
           "text": "Degraded Blockchain problem"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Degraded-Blockchain-problem",
+          "text": "degraded blockchain problem"
         },
         {
           "source": "/thoughts/blockchain",
@@ -9794,13 +9841,6 @@
           "text": "Knowledge Argument"
         }
       ],
-      "/thoughts/Lattice-Proposal": [
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Lattice-Proposal",
-          "text": "Lattice -- an experiment on collective sense-making and digital gardening"
-        }
-      ],
       "/thoughts/Lindy-effect": [
         {
           "source": "/thoughts/Chestertons-Fence",
@@ -10419,6 +10459,11 @@
       ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft consensus protocol"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
@@ -10461,11 +10506,28 @@
           "text": "Reductionism"
         }
       ],
+      "/thoughts/Rhizome-Philosophy": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Rhizome-Philosophy",
+          "text": "Rhizome's Philosophy"
+        }
+      ],
       "/thoughts/Rhizome-Proposal": [
         {
           "source": "/thoughts/Lattice-Proposal",
           "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome"
+        },
+        {
+          "source": "/thoughts/Rhizome-Philosophy",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome Proposal"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "research proposal"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -10485,16 +10547,14 @@
       ],
       "/thoughts/Rhizome-Research-Log": [
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "research log here"
+        },
+        {
           "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/Rhizome-Research-Log",
           "text": "Research Log"
-        }
-      ],
-      "/thoughts/Rhizome-Specification": [
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Rhizome-Specification",
-          "text": "Rhizome Specification"
         }
       ],
       "/thoughts/Root-Verses-on-the-Middle-Way-MMK": [
@@ -10512,6 +10572,11 @@
         }
       ],
       "/thoughts/Self-sovereign-Identity-SSI": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Self-sovereign-Identity-SSI",
+          "text": "self-sovereign identity"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Self-sovereign-Identity-SSI",
@@ -11089,6 +11154,11 @@
       "/thoughts/blockchain": [
         {
           "source": "/thoughts/Arweave",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
         },
@@ -12194,7 +12264,7 @@
           "text": "digital commons"
         },
         {
-          "source": "/thoughts/Rhizome-Proposal",
+          "source": "/thoughts/Rhizome-Philosophy",
           "target": "/thoughts/digital-commons",
           "text": "digital commons"
         },
@@ -12716,7 +12786,7 @@
       ],
       "/thoughts/evaporative-cooling": [
         {
-          "source": "/thoughts/Rhizome-Proposal",
+          "source": "/thoughts/Rhizome-Philosophy",
           "target": "/thoughts/evaporative-cooling",
           "text": "evaporative cooling"
         },
@@ -12972,7 +13042,7 @@
           "text": "friction"
         },
         {
-          "source": "/thoughts/Rhizome-Proposal",
+          "source": "/thoughts/Rhizome-Philosophy",
           "target": "/thoughts/friction",
           "text": "friction"
         },
@@ -13542,6 +13612,11 @@
           "source": "/thoughts/Making-and-Maintenance-of-OSS",
           "target": "/thoughts/incentives",
           "text": "Incentive"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/incentives",
+          "text": "incentive"
         },
         {
           "source": "/thoughts/academia",
@@ -14800,7 +14875,7 @@
           "text": "pace layers"
         },
         {
-          "source": "/thoughts/Rhizome-Proposal",
+          "source": "/thoughts/Rhizome-Philosophy",
           "target": "/thoughts/pace-layers",
           "text": "pace layers"
         },
@@ -14896,6 +14971,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/peer-to-peer",
           "text": "P2P"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer to peer"
         },
         {
           "source": "/thoughts/Rhizome-Specification",
@@ -15322,6 +15402,11 @@
         }
       ],
       "/thoughts/pseudonymity": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/pseudonymity",
+          "text": "pseudonymous web"
+        },
         {
           "source": "/thoughts/accountability",
           "target": "/thoughts/pseudonymity",
@@ -16249,7 +16334,7 @@
       ],
       "/thoughts/tragedy-of-the-commons": [
         {
-          "source": "/thoughts/Rhizome-Proposal",
+          "source": "/thoughts/Rhizome-Philosophy",
           "target": "/thoughts/tragedy-of-the-commons",
           "text": "tragedy of the commons"
         },
@@ -16654,6 +16739,11 @@
         },
         {
           "source": "/thoughts/Dunbars-Number",
+          "target": "/thoughts/web3",
+          "text": "web3"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/web3",
           "text": "web3"
         },
@@ -19082,34 +19172,54 @@
       "text": "qualia"
     },
     {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/Rhizome-Proposal",
+      "text": "Rhizome Proposal"
+    },
+    {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/digital-commons",
+      "text": "digital commons"
+    },
+    {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/friction",
+      "text": "friction"
+    },
+    {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/pace-layers",
+      "text": "pace layers"
+    },
+    {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/tragedy-of-the-commons",
+      "text": "tragedy of the commons"
+    },
+    {
+      "source": "/thoughts/Rhizome-Philosophy",
+      "target": "/thoughts/evaporative-cooling",
+      "text": "evaporative cooling"
+    },
+    {
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/posts/digital-gardening",
       "text": "digital garden"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/digital-commons",
-      "text": "digital commons"
+      "target": "/thoughts/Rhizome-Philosophy",
+      "text": "Rhizome's Philosophy"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/friction",
-      "text": "friction"
+      "target": "/thoughts/blockchain",
+      "text": "blockchain"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/pace-layers",
-      "text": "pace layers"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/tragedy-of-the-commons",
-      "text": "tragedy of the commons"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/evaporative-cooling",
-      "text": "evaporative cooling"
+      "target": "/thoughts/incentives",
+      "text": "incentive"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
@@ -19118,18 +19228,43 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/CRDT",
-      "text": "CRDT"
+      "target": "/thoughts/Degraded-Blockchain-problem",
+      "text": "degraded blockchain problem"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/Rhizome-Specification",
-      "text": "Rhizome Specification"
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft consensus protocol"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/Lattice-Proposal",
-      "text": "Lattice -- an experiment on collective sense-making and digital gardening"
+      "target": "/thoughts/pseudonymity",
+      "text": "pseudonymous web"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Self-sovereign-Identity-SSI",
+      "text": "self-sovereign identity"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/web3",
+      "text": "web3"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer to peer"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Rhizome-Research-Log",
+      "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Rhizome-Proposal",
+      "text": "research proposal"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
