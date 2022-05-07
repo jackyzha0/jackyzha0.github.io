@@ -7,6 +7,10 @@ tags:
 ---
 
 ## May
+### May 6th
+- Mostly writing up recent learnings in 
+- I think finally 
+
 ### May 5th
 - Finishing up [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
 	- Cleaning up notes into atomic concepts that I can reference
