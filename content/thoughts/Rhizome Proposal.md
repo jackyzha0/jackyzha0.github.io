@@ -6,7 +6,7 @@ tags:
 - rhizome
 ---
 
-A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications**.
+A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications** and **personal cloud computing**.
 
 > Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 
@@ -19,63 +19,87 @@ Imagine a web where it is *easy* and *normal* to create vast and rich collaborat
 
 Imagine a web where your digital spaces feel like portable universes and community gardens.
 
-Rhizome is an attempt at infrastructure for a world where these are possible.
+*Rhizome is an attempt at infrastructure for a world where these are possible.*
 
 Below are properties that Rhizome will optimize for:
 - Interoperable: data should be first-class, not applications
 - Modular: choose the parts you like, no vendor lock-in
-- Local-first: your apps shouldn't break because the internet stopped working
+- Local-first: your apps should work even when the internet is broken
 - Collaborative: multiplayer gardens with ease
 
 I've written about these in greater detail regarding [[thoughts/Rhizome Philosophy|Rhizome's Philosophy]].
 
-## So, what is Rhizome?
-### Existing problems with peer-to-peer protocols
-Main problems with existing p2p
+## Existing problems with peer-to-peer protocols
+Of course, many peer-to-peer protocols already exist today, claiming to give people ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.
 
-1. Availability
-	- For example, in a P2P collaborative editing app competing with Google Docs, once you close your laptop, your collaborators can't get your latest content, unless they were online when you made edits. If the user wants to send data to someone else, both devices need to be online simultaneously.
-	- So some master nodes that "seed" the content are always needed in P2P applications (e.g. Hashbase), but these so called super-nodes often re-centralize things and introduce challenges for permissioning, data sovereignty, and data privacy. Availability problem remains unsolved.
-2. Durability
-	- Hard to achieve in P2P world -- people don't want to run their own servers!!
-	- incentivising others to replicate data is largely unsolved
-3. Identity
-	- most p2p systems dont bother with identity, purely going off of random numbers or codes
-	- no way to identify a user across applications
-	- sometimes this is useful (!) but not for vast majority of use cases
-	- have all the data you own in one place and be able to own and control it 
+Reflecting on this, there seems to be 3 major unsolved problems with these protocols:
+
+### Availability + Durability
+In most P2P apps nowadays, closing your device or disconnecting it from the internet means the end of a session and whatever resource your peers were also connected to is no longer available.
+
+If you need to send someone a file or message, both devices need to be online at the same point. If you need to download a really obscure file through a torrent, the chances that someone is currently seeding it are extremely slim.
+
+Large companies get around this by storing the state of a user's documents on one of their many servers who make it available on your behalf but P2P apps do not have this luxury. The problem is that most people do not have a device that is "always-on" like a server is.
+
+This poses a large problem for emulating those smooth 'always available' experiences that we've grown accustomed to in modern web apps like Google Docs.
+
+### Connectivity
+The current Internet, with its NAT routers, firewalls and VPNs, are hostile to P2P connections. Even the best techniques we have to establish direct peer-to-peer connections with other hosts work only about ~85% of the time (see notes on [[thoughts/NAT#Efficacy|hole-punching efficacy]]). Approaches like DHTs are promising but no one has got it to work consistently in a browser yet.
+
+Peer-to-peer connectivity is hard without an intermediary. 
+
+Of course we can always fallback to a trusted server to act as a proxy but this comes at the same price of decentralization. Lots of protocols provide their own signalling and rendez-vous servers you can run but people don't want to run/host/maintain their own servers either!
+
+### Identity
+Most P2P protocols don't have good primitives for identity. Most users are identified by whatever session they are in along with a sequence of random numbers or codes.
+
+Once that session is terminated, that notion of identity dissolves. Often, there is no way to identify a user across applications. Sometimes this is useful but not for vast majority of use cases.
+
+Most apps require some notion of persistent 'identity' in order to function properly.
 
 ### Why not Blockchain?
-- blockchain actually solves most of these
-	- great approaches to solving identity + availability through incentive mechanisms and wallets
-- but in a way i find unsatisfactory
-- all of these but trades away speed and efficiency -- in the most anti local-first way possible
-- can store only the miniscule amounts of data
-- web3 apps have some of the highest latency i've come across (not to mention tx + gas fees but i am assuming these will be fixed at some point down the line)
-- makes it incredibly unfeasible for real-time applications (e.g. games, collaborative text editing, etc.)
-- most applications dont require the level of consistency that blockchains guarantees
-	- for most apps, eventual consistency is good enough
-	- even a global database does not make sense for most applications
-		- only care about communication in the context of your app
-		- what interoperability? most message schemas are not public
+At this point, some critics may be screaming "why not just use blockchain??"
 
-### A data-persistence and identity layer
-- first step is building a solid foundation for distributed apps is tackling the availability, durability, and identity problems
-- Rhizome is a data-persistence and identity layer for the distributed web. 
+I admit that it is true that [[thoughts/blockchain|blockchain]] actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token [[thoughts/incentives|incentive]] mechanisms. Yet, they solve it in a way that leaves much to be desired.
 
-- It is an abstraction on top of IPFS (https://ipld.io/) + filecoin + raft for syncing eventLogs
-- personal cloud model
-	- people can own multiple identities ([[thoughts/pseudonymity|pseudonymous web]])
-	- data is fully replicated on any device you own
-	- manage it just like they would any other on-disk directory
-- a user has an eventlog for each app they interact with
-	- all apps are actually deterministic state transition functions that are used to reduce the eventlog to some application state
-	- as all apps have public schemas, interoperability and data lensing is easy
-	- eventually working on how to bind these streams together to enable collaboration (CRDTs seem promising here)
+Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it -- partially why I suspect there has yet to be a widely-adopted real-world application of [[thoughts/web3|web3]] yet. Some of the core problems that I have personally seen are:
+- Lack of ability to store large files on-chain (people have resorted to referring to IPFS CIDs on-chain but this leads to the [[thoughts/Degraded Blockchain problem|degraded blockchain problem]])
+- Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
+- Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
 
-distributed + extensible icloud/dropbox
-it is the one database that is the source of truth for all your other applications
-you control it, nobody can take it down
+All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and [[thoughts/consistency#Eventual Consistency|eventual consistency]] is more than good enough. 
+
+Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?
+
+## So, what is Rhizome?
+**Rhizome** aims to be a data-persistence and identity layer for the distributed web.
+
+It is an abstraction on top of IPFS (specifically [IPLD](https://ipld.io/)), Filecoin, and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]].
+
+The goal of Rhizome is to build out the model of the *personal cloud*. Think iCloud or Dropbox but distributed and extensible. It is the one database that is the source of truth for all other applications you use. You control it, nobody can take it down because it runs primarily on devices *you own*.
+
+In this model,
+- Users have devices (phones, laptops, desktops) they can link to identities
+- Data is fully replicated within devices linked to a single identity
+- People can own multiple identities (a [[thoughts/pseudonymity|pseudonymous web]])
+
+At this basic level, Rhizome is a local-first data replication and synchronization service much like iCloud/Dropbox. This on its own is already a promising idea but where it gets interesting is how application data is managed.
+
+- All application data is stored in the form of an append-only event log for each app they interact with.
+	- This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
+- All apps are deterministic state transition functions (functions that transform the state from $x$ at some time $t$ to state $y$ at some time $t+1$). These state transition functions are run over the event log to arrive at some application state.
+	- As a result, no servers are needed because all computation now happens locally on your device. 
+- All apps have a public schema which describe what type of events it adds to the append-only event log.
+	- As a result, interoperability and data lensing is easy.
+	- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).
+
+At this point, you may be wondering "okay, where am I going to get the storage for all this data and how can my phone handle all this compute"?
+
+We can solve this with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
+
+![[thoughts/images/rhizome-may-6.jpeg]]*Rough architecture diagram as of May 6th*
+
+The properties work together to make a solid foundation for peer-to-peer applications to exist and thrive in the future.
 
 ### Differentiation from existing work
 - [Urbit](https://urbit.org/)
@@ -104,7 +128,10 @@ Labour estimate is roughly 40 hours/week for 16 weeks working on this research w
 Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of [[thoughts/peer-to-peer|peer to peer]] systems will also be produced and released.
 
 A rough hierarchy of work follows:
-1. Research artifacts (blog posts explaining ...)
-2. tk
+1. Research artifacts (blog posts explaining distributed systems concepts as I learn and become more familiar with them)
+2. Root: the data replication and identity part of Rhizome
+3. Trunk: the application-level event log management and collaboration
+
+The goal is to finish 1. and 2. by end of summer.
 
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].

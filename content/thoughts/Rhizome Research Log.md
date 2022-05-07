@@ -8,8 +8,16 @@ tags:
 
 ## May
 ### May 6th
-- Mostly writing up recent learnings in 
-- I think finally 
+- Mostly writing up recent learnings and incorporating them into the [[thoughts/Rhizome Proposal|research proposal]]... lots of words today
+	- Sometimes I feel like I'm doing research to be able to do more research...
+- I think I am finally getting to a point where Rhizome is making more and more sense and obvious why it is necessary
+	- I started this project/research very much like "oh wow, this is a cool set of technologies and here are some vague words and feelings about what I think is inadequate in the space" and it has sort of refined itself into a clear use case!
+	- Came across the concept of a "cloud peer" today in Hypercore documentation and it was like "WOW I had this exact same idea and they already have a name for it" and it was so cool
+	- Really excited about this future of 'personal cloud computing'
+	- I think this summer will be mostly focused on the data replication / identity aspect of Rhizome, realizing that I think I was way too ambitious with my first proposal
+- More implementation on `miniraft`. Rust feels so slow to get back into a 'de-rusted state' (hah) where code just 'flows'. It feels fun though! Type system reminds me a lot of Haskell.
+
+![[thoughts/images/rhizome-may-6.jpeg]]
 
 ### May 5th
 - Finishing up [[thoughts/distributed systems#Martin Kleppmann's Course|Martin Kleppmann's Course on Distributed Systems]]
