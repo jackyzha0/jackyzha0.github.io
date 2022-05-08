@@ -7,6 +7,14 @@ tags:
 ---
 
 ## May
+### May 8th
+- Applying to Emergent Ventures + Protocol Labs
+
+### May 7th
+- Does not seem promising that my research work will be support by Verses this summer...
+- Looking for other places to apply for funding but ugh this is unfortunate
+- Lots of coding today for `miniraft`! Finally feeling like I'm becoming more fluent in Rust. Figured out some nasty named lifetime stuff today by drawing a few diagrams and kinda feel like a wizard!!! Small wins
+
 ### May 6th
 - Mostly writing up recent learnings and incorporating them into the [[thoughts/Rhizome Proposal|research proposal]]... lots of words today
 	- Sometimes I feel like I'm doing research to be able to do more research...

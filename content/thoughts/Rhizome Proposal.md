@@ -88,10 +88,11 @@ At this basic level, Rhizome is a local-first data replication and synchronizati
 - All application data is stored in the form of an append-only event log for each app they interact with.
 	- This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
 - All apps are deterministic state transition functions (functions that transform the state from $x$ at some time $t$ to state $y$ at some time $t+1$). These state transition functions are run over the event log to arrive at some application state.
-	- As a result, no servers are needed because all computation now happens locally on your device. 
+	- As a result, no servers are needed because all computation now happens locally on your device.
 - All apps have a public schema which describe what type of events it adds to the append-only event log.
-	- As a result, interoperability and data lensing is easy.
+	- As a result, interoperability and data lensing is easy! A group of users could, for example, edit the same document in different applications because they can easily translate between their message schemas.
 	- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).
+- All of this will be exposed in the form a single replicated data structure (similar to Firestore) so that developers can easily build collaborative apps without needing to relearn everything from scratch.
 
 At this point, you may be wondering "okay, where am I going to get the storage for all this data and how can my phone handle all this compute"?
 
@@ -127,11 +128,32 @@ Labour estimate is roughly 40 hours/week for 16 weeks working on this research w
 
 Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of [[thoughts/peer-to-peer|peer to peer]] systems will also be produced and released.
 
-A rough hierarchy of work follows:
-1. Research artifacts (blog posts explaining distributed systems concepts as I learn and become more familiar with them)
-2. Root: the data replication and identity part of Rhizome
-3. Trunk: the application-level event log management and collaboration
+### Research artifacts
+Blog posts explaining distributed systems concepts as I learn and become more familiar with them
 
-The goal is to finish 1. and 2. by end of summer.
+- Explainer on Raft
+- Explainer on CRDTs
+- Modelling distributed systems
+- ...more to come
+
+### Root
+The data replication and identity part of Rhizome
+
+- Build a modified version of the Raft consensus algorithm that supports no-downtime cluster membership changes. This will be the 'backbone' that allows devices under an identity to replicate application state amongst each other, even in the case of network partitions and device failure.
+- Build in the ability for a Raft cluster to snapshot state to disk and to a more permanent layer like IPFS
+- Build an abstraction layer on top of IPFS, Filecoin for the persistence and incentive layer
+
+### Trunk
+The application-level event log management and collaboration
+
+- Develop a mechanism to optimize event log snapshot frequency to prevent event log from getting too long
+- Prototype and test event log reducers that take in $n \geq 1$ event streams and combine them to arrive at a consistent state
+- Build an algorithm to 'bind' event logs at different 'streams' of asynchronicity, supporting completely synchronous collaboration and asynchronous pull-request-style collaboration
+- Create client libraries to abstract logic into a single replicated data structure (similar to Firestore) for easy consumption by application developers
+	- Target environments: Web, Node.js, Rust
+
+---
+
+The goal is to finish the major research artifacts and Root by end of summer.
 
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
