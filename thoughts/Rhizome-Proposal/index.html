@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated May 6, 2022
+          Last updated May 8, 2022
       </p>
       <ul class="tags">
     
@@ -501,7 +501,13 @@ if (!doNotTrack) {
         <li><a href="#differentiation-from-existing-work">Differentiation from existing work</a></li>
       </ol>
     </li>
-    <li><a href="#timeline--labour-estimates">Timeline / Labour Estimates</a></li>
+    <li><a href="#timeline--labour-estimates">Timeline / Labour Estimates</a>
+      <ol>
+        <li><a href="#research-artifacts">Research artifacts</a></li>
+        <li><a href="#root">Root</a></li>
+        <li><a href="#trunk">Trunk</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
       </aside>
@@ -921,10 +927,11 @@ if (!doNotTrack) {
 </li>
 <li>All apps have a public schema which describe what type of events it adds to the append-only event log.
 <ul>
-<li>As a result, interoperability and data lensing is easy.</li>
+<li>As a result, interoperability and data lensing is easy! A group of users could, for example, edit the same document in different applications because they can easily translate between their message schemas.</li>
 <li>Users can then &lsquo;bind&rsquo; streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).</li>
 </ul>
 </li>
+<li>All of this will be exposed in the form a single replicated data structure (similar to Firestore) so that developers can easily build collaborative apps without needing to relearn everything from scratch.</li>
 </ul>
 <p>At this point, you may be wondering &ldquo;okay, where am I going to get the storage for all this data and how can my phone handle all this compute&rdquo;?</p>
 <p>We can solve this with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</p>
@@ -972,13 +979,35 @@ if (!doNotTrack) {
 <a href="#timeline--labour-estimates"><h2 id="timeline--labour-estimates"><span class="hanchor" ariaLabel="Anchor"># </span>Timeline / Labour Estimates</h2></a>
 <p>Labour estimate is roughly 40 hours/week for 16 weeks working on this research with the primary output goal being Rhizome.</p>
 <p>Secondary artifacts like open-source implementations of various protocols/consensus mechanisms/algorithms as well as comprehensive and understandable notes for various concepts of <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer to peer</a> systems will also be produced and released.</p>
-<p>A rough hierarchy of work follows:</p>
-<ol>
-<li>Research artifacts (blog posts explaining distributed systems concepts as I learn and become more familiar with them)</li>
-<li>Root: the data replication and identity part of Rhizome</li>
-<li>Trunk: the application-level event log management and collaboration</li>
-</ol>
-<p>The goal is to finish 1. and 2. by end of summer.</p>
+<a href="#research-artifacts"><h3 id="research-artifacts"><span class="hanchor" ariaLabel="Anchor"># </span>Research artifacts</h3></a>
+<p>Blog posts explaining distributed systems concepts as I learn and become more familiar with them</p>
+<ul>
+<li>Explainer on Raft</li>
+<li>Explainer on CRDTs</li>
+<li>Modelling distributed systems</li>
+<li>&hellip;more to come</li>
+</ul>
+<a href="#root"><h3 id="root"><span class="hanchor" ariaLabel="Anchor"># </span>Root</h3></a>
+<p>The data replication and identity part of Rhizome</p>
+<ul>
+<li>Build a modified version of the Raft consensus algorithm that supports no-downtime cluster membership changes. This will be the &lsquo;backbone&rsquo; that allows devices under an identity to replicate application state amongst each other, even in the case of network partitions and device failure.</li>
+<li>Build in the ability for a Raft cluster to snapshot state to disk and to a more permanent layer like IPFS</li>
+<li>Build an abstraction layer on top of IPFS, Filecoin for the persistence and incentive layer</li>
+</ul>
+<a href="#trunk"><h3 id="trunk"><span class="hanchor" ariaLabel="Anchor"># </span>Trunk</h3></a>
+<p>The application-level event log management and collaboration</p>
+<ul>
+<li>Develop a mechanism to optimize event log snapshot frequency to prevent event log from getting too long</li>
+<li>Prototype and test event log reducers that take in $n \geq 1$ event streams and combine them to arrive at a consistent state</li>
+<li>Build an algorithm to &lsquo;bind&rsquo; event logs at different &lsquo;streams&rsquo; of asynchronicity, supporting completely synchronous collaboration and asynchronous pull-request-style collaboration</li>
+<li>Create client libraries to abstract logic into a single replicated data structure (similar to Firestore) for easy consumption by application developers
+<ul>
+<li>Target environments: Web, Node.js, Rust</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>The goal is to finish the major research artifacts and Root by end of summer.</p>
 <p>You can find the ongoing <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log here</a>.</p>
  
 
