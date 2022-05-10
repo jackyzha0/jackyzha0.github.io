@@ -8,7 +8,10 @@ tags:
 
 ## May
 ### May 8th
-- Applying to Emergent Ventures + Protocol Labs
+- Sketching out grant proposals to Emergent Ventures + Protocol Labs
+- Had a chat with Sebastien about research institutes and what long-term support for work like this could look like in the context of Verses
+- More implementation work for `miniraft`, about halfway done I think?
+- More of a slower day to spend time with family for Mothers Day :)
 
 ### May 7th
 - Does not seem promising that my research work will be support by Verses this summer...

@@ -72,6 +72,7 @@ tags:
 		- https://danny-garcia.com/
 		- http://richardmattka.com/prototypes/red-shift
 		- https://ventureworks.io/
+		- https://henryheffernan.com/
 -   LayoutLM + screenshots → auto-categorization of knowledge
 	- https://screenotate.com/ but with atlas recall
     -  maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk
