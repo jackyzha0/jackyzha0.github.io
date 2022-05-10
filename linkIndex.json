@@ -6565,6 +6565,21 @@
           "source": "/thoughts/ontology",
           "target": "/thoughts/context",
           "text": "context"
+        },
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/Do-Artifacts-Have-Politics",
+          "text": "artifacts have politics"
+        },
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/urban-planning",
+          "text": "urban planning"
+        },
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/prefigurative-politics",
+          "text": "prefigurative politics"
         }
       ],
       "/thoughts/optical-flow": [
@@ -6876,6 +6891,13 @@
           "source": "/thoughts/power",
           "target": "/thoughts/social-contracts",
           "text": "norms"
+        }
+      ],
+      "/thoughts/prefigurative-politics": [
+        {
+          "source": "/thoughts/prefigurative-politics",
+          "target": "/thoughts/skyhooks",
+          "text": "skyhooks"
         }
       ],
       "/thoughts/prestige": [
@@ -9333,6 +9355,11 @@
           "source": "/thoughts/climate-tech",
           "target": "/thoughts/Do-Artifacts-Have-Politics",
           "text": "political"
+        },
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/Do-Artifacts-Have-Politics",
+          "text": "artifacts have politics"
         },
         {
           "source": "/thoughts/software-and-politics",
@@ -15321,6 +15348,13 @@
           "text": "praxis"
         }
       ],
+      "/thoughts/prefigurative-politics": [
+        {
+          "source": "/thoughts/ontology",
+          "target": "/thoughts/prefigurative-politics",
+          "text": "prefigurative politics"
+        }
+      ],
       "/thoughts/prestige": [
         {
           "source": "/thoughts/optionality",
@@ -15921,6 +15955,11 @@
       "/thoughts/skyhooks": [
         {
           "source": "/thoughts/fiction",
+          "target": "/thoughts/skyhooks",
+          "text": "skyhooks"
+        },
+        {
+          "source": "/thoughts/prefigurative-politics",
           "target": "/thoughts/skyhooks",
           "text": "skyhooks"
         },
@@ -16610,6 +16649,11 @@
         },
         {
           "source": "/thoughts/digital-commons",
+          "target": "/thoughts/urban-planning",
+          "text": "urban planning"
+        },
+        {
+          "source": "/thoughts/ontology",
           "target": "/thoughts/urban-planning",
           "text": "urban planning"
         }
@@ -23007,6 +23051,21 @@
       "text": "context"
     },
     {
+      "source": "/thoughts/ontology",
+      "target": "/thoughts/Do-Artifacts-Have-Politics",
+      "text": "artifacts have politics"
+    },
+    {
+      "source": "/thoughts/ontology",
+      "target": "/thoughts/urban-planning",
+      "text": "urban planning"
+    },
+    {
+      "source": "/thoughts/ontology",
+      "target": "/thoughts/prefigurative-politics",
+      "text": "prefigurative politics"
+    },
+    {
       "source": "/thoughts/optical-flow",
       "target": "/thoughts/aperture-problem",
       "text": "aperture problem"
@@ -23290,6 +23349,11 @@
       "source": "/thoughts/power",
       "target": "/thoughts/social-contracts",
       "text": "norms"
+    },
+    {
+      "source": "/thoughts/prefigurative-politics",
+      "target": "/thoughts/skyhooks",
+      "text": "skyhooks"
     },
     {
       "source": "/thoughts/prestige",
