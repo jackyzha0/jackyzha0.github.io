@@ -7,6 +7,18 @@ tags:
 ---
 
 ## May
+### May 10th
+- Discussing grant proposals with Verses folks, doing a lot more grant/proposal writing than I'd like these days
+- Tech bear market isn't promising for raising funding, esp for more experimental/greenfield work like this :((
+
+### May 9th
+- Literally just wrestling with Rust's borrow checker because `dyn` traits are funky :((
+	- Ran into a really weird design problem where I wasn't sure how to order the lifetimes of the log or the state machine (should the app own the log which owns the state machine? should the log hold a reference to the app)? 
+	- I opted to construct the application first then pass a pointer to the log so that when appending entries to the log, it can just call `self.entries.iter().for_each(|entry| self.app.transition_fn(entry))`
+- Finally caved and watched an hour long video on closures, `Fn`, `FnOnce`, `FnMut`, boxed closures, and function pointers ([Jon Gjengset, I owe you my life](https://www.youtube.com/watch?v=dHkzSZnYXmk&t=3005s))
+	- Feels really stupid but it was literally a change from `&'s mut dyn App<'s, T, S>` to `Box<dyn App<T, S>`
+	- When lifetimes get as messy as they did, there's probably a cleaner way to do it with a heap allocated value :)) Use `Box` more often!
+
 ### May 8th
 - Sketching out grant proposals to Emergent Ventures + Protocol Labs
 - Had a chat with Sebastien about research institutes and what long-term support for work like this could look like in the context of Verses
