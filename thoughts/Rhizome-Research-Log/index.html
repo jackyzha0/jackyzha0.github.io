@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="May May 8th  Sketching out grant proposals to Emergent Ventures &#43; Protocol Labs Had a chat with Sebastien about research institutes and what long-term support for work like this could look like in the context of Verses More implementation work for miniraft, about halfway done I think?">
+    <meta name="description" content="May May 10th  Discussing grant proposals with Verses folks, doing a lot more grant/proposal writing than I&rsquo;d like these days Tech bear market isn&rsquo;t promising for raising funding, esp for more experimental/greenfield work like this :((  May 9th  Literally just wrestling with Rust&rsquo;s borrow checker because dyn traits are funky :((  Ran into a really weird design problem where I wasn&rsquo;t sure how to order the lifetimes of the log or the state machine (should the app own the log which owns the state machine?">
     <title>Rhizome Research Log</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -489,6 +489,8 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#may">May</a>
       <ol>
+        <li><a href="#may-10th">May 10th</a></li>
+        <li><a href="#may-9th">May 9th</a></li>
         <li><a href="#may-8th">May 8th</a></li>
         <li><a href="#may-7th">May 7th</a></li>
         <li><a href="#may-6th">May 6th</a></li>
@@ -526,27 +528,7 @@ if (!doNotTrack) {
   
     
   
-  
     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
   
     
   
@@ -554,21 +536,7 @@ if (!doNotTrack) {
   
     
   
-  
     
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-
-  
-  
   
     
   
@@ -604,27 +572,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -641,12 +597,6 @@ if (!doNotTrack) {
       
       
       
-      
-      
-      
-        
-        
-        
       
     
   
@@ -660,27 +610,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -716,27 +654,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -772,27 +698,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -828,21 +742,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -878,27 +786,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -934,27 +830,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -990,27 +874,15 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
   
     
   
@@ -1039,6 +911,456 @@ if (!doNotTrack) {
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1070,6 +1392,28 @@ if (!doNotTrack) {
 
 
 <a href="#may"><h2 id="may"><span class="hanchor" ariaLabel="Anchor"># </span>May</h2></a>
+<a href="#may-10th"><h3 id="may-10th"><span class="hanchor" ariaLabel="Anchor"># </span>May 10th</h3></a>
+<ul>
+<li>Discussing grant proposals with Verses folks, doing a lot more grant/proposal writing than I&rsquo;d like these days</li>
+<li>Tech bear market isn&rsquo;t promising for raising funding, esp for more experimental/greenfield work like this :((</li>
+</ul>
+<a href="#may-9th"><h3 id="may-9th"><span class="hanchor" ariaLabel="Anchor"># </span>May 9th</h3></a>
+<ul>
+<li>Literally just wrestling with Rust&rsquo;s borrow checker because <code>dyn</code> traits are funky :((
+<ul>
+<li>Ran into a really weird design problem where I wasn&rsquo;t sure how to order the lifetimes of the log or the state machine (should the app own the log which owns the state machine? should the log hold a reference to the app)?</li>
+<li>I opted to construct the application first then pass a pointer to the log so that when appending entries to the log, it can just call <code>self.entries.iter().for_each(|entry| self.app.transition_fn(entry))</code></li>
+</ul>
+</li>
+<li>Finally caved and watched an hour long video on closures, <code>Fn</code>, <code>FnOnce</code>, <code>FnMut</code>, boxed closures, and function pointers (
+
+<a href="https://www.youtube.com/watch?v=dHkzSZnYXmk&amp;t=3005s" rel="noopener">Jon Gjengset, I owe you my life</a>)
+<ul>
+<li>Feels really stupid but it was literally a change from <code>&amp;'s mut dyn App&lt;'s, T, S&gt;</code> to <code>Box&lt;dyn App&lt;T, S&gt;</code></li>
+<li>When lifetimes get as messy as they did, there&rsquo;s probably a cleaner way to do it with a heap allocated value :)) Use <code>Box</code> more often!</li>
+</ul>
+</li>
+</ul>
 <a href="#may-8th"><h3 id="may-8th"><span class="hanchor" ariaLabel="Anchor"># </span>May 8th</h3></a>
 <ul>
 <li>Sketching out grant proposals to Emergent Ventures + Protocol Labs</li>
