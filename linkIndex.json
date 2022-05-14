@@ -5221,6 +5221,23 @@
           "text": "workflows"
         }
       ],
+      "/thoughts/idea-machine": [
+        {
+          "source": "/thoughts/idea-machine",
+          "target": "/thoughts/funding",
+          "text": "funding"
+        },
+        {
+          "source": "/thoughts/idea-machine",
+          "target": "/thoughts/research-institutions",
+          "text": "research institutions"
+        },
+        {
+          "source": "/thoughts/idea-machine",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoietic"
+        }
+      ],
       "/thoughts/idealism": [
         {
           "source": "/thoughts/idealism",
@@ -11061,6 +11078,11 @@
           "text": "autopoiesis"
         },
         {
+          "source": "/thoughts/idea-machine",
+          "target": "/thoughts/autopoiesis",
+          "text": "autopoietic"
+        },
+        {
           "source": "/thoughts/the-Self",
           "target": "/thoughts/autopoiesis",
           "text": "autopoietic"
@@ -13184,6 +13206,11 @@
         },
         {
           "source": "/thoughts/degrowth",
+          "target": "/thoughts/funding",
+          "text": "funding"
+        },
+        {
+          "source": "/thoughts/idea-machine",
           "target": "/thoughts/funding",
           "text": "funding"
         },
@@ -15818,6 +15845,13 @@
           "source": "/thoughts/tools-for-thought",
           "target": "/thoughts/research-debt",
           "text": "research debt"
+        }
+      ],
+      "/thoughts/research-institutions": [
+        {
+          "source": "/thoughts/idea-machine",
+          "target": "/thoughts/research-institutions",
+          "text": "research institutions"
         }
       ],
       "/thoughts/right-to-be-forgotten": [
@@ -21809,6 +21843,21 @@
       "source": "/thoughts/idea-list",
       "target": "/thoughts/workflows",
       "text": "workflows"
+    },
+    {
+      "source": "/thoughts/idea-machine",
+      "target": "/thoughts/funding",
+      "text": "funding"
+    },
+    {
+      "source": "/thoughts/idea-machine",
+      "target": "/thoughts/research-institutions",
+      "text": "research institutions"
+    },
+    {
+      "source": "/thoughts/idea-machine",
+      "target": "/thoughts/autopoiesis",
+      "text": "autopoietic"
     },
     {
       "source": "/thoughts/idealism",
