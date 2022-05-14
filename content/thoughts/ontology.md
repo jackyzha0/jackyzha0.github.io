@@ -12,6 +12,12 @@ The nature of being and structures of objects. Ontology seeks the classification
 ## Heidegger
 Concept of dasein, which literally means 'Being-there'. Through the use of this expression, Heidegger calls to attention the fact that a human cannot exist or be taken into account without existing in [context](thoughts/context.md) of a world with other things -- "to be human is to be fixed, embedded, and immersed in the physical, literal, tangible day to day world"
 
+### Near-ness
+- Heidegger observes that because of technology, “all distances in time and space are shrinking” and “yet the hasty setting aside of all distances brings no nearness; for nearness does not consist in a small amount of distance.”
+
+### Essence
+- The essence of technology is not something we make; it is a mode of being, or of revealing. ... To consider technology essentially is to see it as an event to which we belong: the structuring, ordering, and “requisitioning” of everything around us, and of ourselves.
+
 ## Technology
 Technology as it relates to ontology.
 -   technology is not just neutral: [[thoughts/Do Artifacts Have Politics|artifacts have politics]]

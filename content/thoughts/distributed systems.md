@@ -9,7 +9,7 @@ tags:
 A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.
 
 ## Martin Kleppmann's Course
-Notes from [Martin Kleppmann's Distributed Systems Course](https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) (he's the guy who wrote "Designing Data-Intensive Applications" O'Reilly 2017)
+Notes from [Martin Kleppmann's Distributed Systems Course](https://www.youtube.com/watch?v=UEAMfLPZZhE&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) (he's the guy who wrote "Designing Data-Intensive Applications" O'Reilly 2017). He has a set of [course notes on his teaching site as well](https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf).
 
 > How do we share data amongst different concurrent entities?
 

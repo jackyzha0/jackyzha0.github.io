@@ -6,7 +6,7 @@ tags:
 - rhizome
 ---
 
-A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications** and **personal cloud computing**.
+A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications**.
 
 > Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 

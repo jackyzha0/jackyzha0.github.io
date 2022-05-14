@@ -7,8 +7,38 @@ tags:
 ---
 
 ## May
+### May 14th
+- Finish testing harness - it looks so pretty!
+- Finally updating research proposals after putting it off for 3 days. I suspect I'm using `miniraft` as an excuse to avoid the grant writing because making things legible is hard!! I'd much rather write code and look at pretty command line outputs instead but this is important work that needs to be done.
+
+### May 12th + May 13th
+- Reaffirming myself that a lot of this is necessary learning and this is a worthwhile project
+	- Not sure if this is actually true
+	- But more so convincing myself of it so that I have the energy/motivation to go through with it
+- A lot of technical refactoring going on to accommodate unit testing
+	- Removed a lot of unnecessary lifetimes while changing `RaftServer` functions to return a vector of sendable messages rather than directly having each server hold a mutable reference to the transport layer (Rust doesn't allow multiple mutable references without a `RefCell`!)
+
+> Let's say you want to become good at [x].
+> 
+> It's almost impossible to do it because every day on Twitter you have friends who’ve raised 6 million to do crazy stuff. And so every single day, you open your books, and you take your notes and you start writing stuff, and you have to solve those equations.
+> 
+> And every single day you tell yourself, why am I doing this?
+> 
+> I could just go out and bullshit investors and build a company. And I think too many people actually do that. Myself included. I managed to resist for a while and I spent a lot of time learning different, difficult things, but it's very hard not to have ADD in this world. It's very hard to stay focused on important things that take a while to be learned.
+> 
+> - [Justin Glibert on doing hard things](https://masterplan.substack.com/p/master-plan-justin-glibert-foundation?curius=1294&s=r)
+
+### May 11th
+- Finished the first pass of implementation of `miniraft`! In the midst of adding test infrastructure and verifying correctness of the implementation.
+	- Probably spent tooo long making it look nice but hey, if I'm going to be spending hours looking at this it might as well be good to look at
+- Also spent an hour trying to debug a test only before realizing `cargo test` runs in parallel so debug messages were out of whack
+- Feeling quite demotivated regarding overall self-belief in the project even though I'm only 11 days in! Been trying to explain Rhizome to a few folks who have experience in the space and it is often so intimidating.
+	- Like yeah, I know this probably isn't the best way to go about it. Maybe they'll tell me what I'm working on is a long solved problem and I'm wasting my time. Or "couldn't you just use x and y to achieve the same effect"? I can't help but sometimes feel like I'm wasting my time -- there are so many smart people working on the same problem, what makes me feel like I can be the one to make a meaningful contribution to it?
+	- I know that regardless of whether this project succeeds a lot, I'm already learning a lot in terms of technical skills and also about myself in the face of uncertainty and more independent work so I will take that as a win regardless.
+
 ### May 10th
 - Discussing grant proposals with Verses folks, doing a lot more grant/proposal writing than I'd like these days
+- Finished most of `miniraft` logic up until `commit_log_entries`. Still need to add tests though :')
 - Tech bear market isn't promising for raising funding, esp for more experimental/greenfield work like this :((
 
 ### May 9th
