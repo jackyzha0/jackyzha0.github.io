@@ -142,7 +142,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>May May 10th  Discussing grant proposals with Verses folks, doing a lot more grant/proposal writing than I&amp;rsquo;d like these days Tech bear market isn&amp;rsquo;t promising for raising funding, esp for more experimental/greenfield work like this :((  May 9th  Literally just wrestling with Rust&amp;rsquo;s borrow checker because dyn traits are funky :((  Ran into a really weird design problem where I wasn&amp;rsquo;t sure how to order the lifetimes of the log or the state machine (should the app own the log which owns the state machine?</description>
+      <description>May May 14th  Finish testing harness - it looks so pretty!</description>
     </item>
     
     <item>
@@ -484,7 +484,7 @@ Debates from Classical South Asia  Right and wrong aren’t directly perceptible
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Proposal/</guid>
-      <description>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications and personal cloud computing.</description>
+      <description>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.</description>
     </item>
     
     <item>
