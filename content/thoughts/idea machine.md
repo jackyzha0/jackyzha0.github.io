@@ -21,3 +21,11 @@ Related: [[thoughts/funding|funding]], [[thoughts/research institutions|research
 ![[thoughts/images/idea machine diagram.png]]
 
 Idea machines are different from _movements,_ which are focused on achieving a specific outcome and are therefore self-limiting (if they succeed, the movement winds down). On the other end of specificity, idea machines are less broad than _paradigm shifts,_ which are widespread, headless, decentralized shifts in cultural norms and attitudes due to changes in systemic conditions.
+
+Definitions
+1. Ideology: a mimetic engine that drives the formation of a community
+2. Agenda: articulates how the ideology will be brought into the world
+3. Funders: presence ensures the community's ideas can move from theory to practice
+4. Scene builder: sustain the community, develop the agenda, attract new members
+5. Operators: driver operating initiatives which lead to real outcomes
+6. Support organizations: infrastructural organizations whose purpose is to strengthen the values and best practices of the idea machine
