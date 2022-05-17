@@ -7,6 +7,20 @@ tags:
 ---
 
 ## May
+### May 17th
+- Went to NYC to work at the Thrive Capital office with some Interact folks and wow... the difference being outside and in a good working environment makes
+- Migrated all the tracing stuff out of `server.rs` and `log.rs` into its own file. Makes the code a lot cleaner to work with.
+- Deleted `transport.rs` (and moved the contents into `tests/common.rs`) now that it is no longer a part of the server. Realizing now I'll probably need to do another refactor of the transport layer to support simulating network partitions, dropping packets, etc.
+
+### May 16th
+- Grant writing again... Finished rough draft for Protocol Labs RFP 000 and writing EV grant proposal + getting feedback
+- Had a mini-breakdown today after realizing I am just not enjoying this as much as I thought I would be. I'm often spending 12+ hour days writing code or grants and I just feel so behind. And I don't get why!!!! I've been looking forward to this summer for so long.
+	- I think financial uncertainty is becoming more real day after day... really hoping that one of these goes through and is successful
+	- It's too early to quit. There's still so much more to build/learn/do/write and I'm not ready to throw in the towel just yet.
+
+### May 15th
+- Family roadtrip, no work today :)
+
 ### May 14th
 - Finish testing harness - it looks so pretty!
 - Finally updating research proposals after putting it off for 3 days. I suspect I'm using `miniraft` as an excuse to avoid the grant writing because making things legible is hard!! I'd much rather write code and look at pretty command line outputs instead but this is important work that needs to be done.

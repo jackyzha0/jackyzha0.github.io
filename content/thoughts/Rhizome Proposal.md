@@ -6,7 +6,7 @@ tags:
 - rhizome
 ---
 
-A short proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications**.
+A proposal and outline for my summer research in 2022 focussed on building infrastructure for **collaborative local-first applications**.
 
 > Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 
@@ -23,16 +23,15 @@ Imagine a web where your digital spaces feel like portable universes and communi
 
 Below are properties that Rhizome will optimize for:
 - Interoperable: data should be first-class, not applications
-- Modular: choose the parts you like, no vendor lock-in
 - Local-first: your apps should work even when the internet is broken
 - Collaborative: multiplayer gardens with ease
 
 I've written about these in greater detail regarding [[thoughts/Rhizome Philosophy|Rhizome's Philosophy]].
 
 ## Existing problems with peer-to-peer protocols
-Of course, many peer-to-peer protocols already exist today, claiming to give people ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.
+Many peer-to-peer protocols already exist today, claiming to give people the ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.
 
-Reflecting on this, there seems to be 3 major unsolved problems with these protocols:
+Reflecting on this, there seems to be 3 major hurdles that no single protocol/system has been able to overcome:
 
 ### Availability + Durability
 In most P2P apps nowadays, closing your device or disconnecting it from the internet means the end of a session and whatever resource your peers were also connected to is no longer available.
@@ -67,7 +66,7 @@ Blockchain causes a whole new set of problems that makes it quite cumbersome to 
 - Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
 - Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
 
-All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and [[thoughts/consistency#Eventual Consistency|eventual consistency]] is more than good enough. 
+All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and [[thoughts/consistency#Eventual Consistency|eventual consistency]] in a fair-loss crash recovery [[thoughts/system model|system model]] is more than good enough. 
 
 Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?
 
@@ -94,9 +93,9 @@ At this basic level, Rhizome is a local-first data replication and synchronizati
 	- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).
 - All of this will be exposed in the form a single replicated data structure (similar to Firestore) so that developers can easily build collaborative apps without needing to relearn everything from scratch.
 
-At this point, you may be wondering "okay, where am I going to get the storage for all this data and how can my phone handle all this compute"?
+Of course, this then brings up a question about how users are going to be able to provide the necessary compute and storage and uptime? Nobody has a set of devices they keep on all the time.
 
-We can solve this with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
+We can solve this with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
 
 ![[thoughts/images/rhizome-may-6.jpeg]]*Rough architecture diagram as of May 6th*
 
