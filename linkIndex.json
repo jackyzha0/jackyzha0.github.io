@@ -2469,6 +2469,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft consensus protocol"
         },
@@ -16122,6 +16127,11 @@
       ],
       "/thoughts/system-model": [
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
           "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
           "text": "system model"
@@ -19308,6 +19318,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Degraded-Blockchain-problem",
       "text": "degraded blockchain problem"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/system-model",
+      "text": "system model"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",

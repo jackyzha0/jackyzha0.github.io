@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="A short proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.">
+    <meta name="description" content="A proposal and outline for my summer research in 2022 focussed on building infrastructure for collaborative local-first applications.">
     <title>Rhizome Proposal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated May 14, 2022
+          Last updated May 17, 2022
       </p>
       <ul class="tags">
     
@@ -759,6 +759,28 @@ if (!doNotTrack) {
       
       
       
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
     
   
 
@@ -854,7 +876,7 @@ if (!doNotTrack) {
 
 
 
-<p>A short proposal and outline for my summer research in 2022 focussed on building infrastructure for <strong>collaborative local-first applications</strong>.</p>
+<p>A proposal and outline for my summer research in 2022 focussed on building infrastructure for <strong>collaborative local-first applications</strong>.</p>
 <blockquote>
 <p>Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two&hellip; a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” 
 
@@ -869,14 +891,13 @@ if (!doNotTrack) {
 <p>Below are properties that Rhizome will optimize for:</p>
 <ul>
 <li>Interoperable: data should be first-class, not applications</li>
-<li>Modular: choose the parts you like, no vendor lock-in</li>
 <li>Local-first: your apps should work even when the internet is broken</li>
 <li>Collaborative: multiplayer gardens with ease</li>
 </ul>
 <p>I&rsquo;ve written about these in greater detail regarding <a href="/thoughts/Rhizome-Philosophy" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Philosophy">Rhizome&rsquo;s Philosophy</a>.</p>
 <a href="#existing-problems-with-peer-to-peer-protocols"><h2 id="existing-problems-with-peer-to-peer-protocols"><span class="hanchor" ariaLabel="Anchor"># </span>Existing problems with peer-to-peer protocols</h2></a>
-<p>Of course, many peer-to-peer protocols already exist today, claiming to give people ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.</p>
-<p>Reflecting on this, there seems to be 3 major unsolved problems with these protocols:</p>
+<p>Many peer-to-peer protocols already exist today, claiming to give people the ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.</p>
+<p>Reflecting on this, there seems to be 3 major hurdles that no single protocol/system has been able to overcome:</p>
 <a href="#availability--durability"><h3 id="availability--durability"><span class="hanchor" ariaLabel="Anchor"># </span>Availability + Durability</h3></a>
 <p>In most P2P apps nowadays, closing your device or disconnecting it from the internet means the end of a session and whatever resource your peers were also connected to is no longer available.</p>
 <p>If you need to send someone a file or message, both devices need to be online at the same point. If you need to download a really obscure file through a torrent, the chances that someone is currently seeding it are extremely slim.</p>
@@ -899,7 +920,7 @@ if (!doNotTrack) {
 <li>Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
 <li>Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)</li>
 </ul>
-<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and <a href="/thoughts/consistency#Eventual Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">eventual consistency</a> is more than good enough.</p>
+<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing). Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and <a href="/thoughts/consistency#Eventual Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">eventual consistency</a> in a fair-loss crash recovery <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> is more than good enough.</p>
 <p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
 <a href="#so-what-is-rhizome"><h2 id="so-what-is-rhizome"><span class="hanchor" ariaLabel="Anchor"># </span>So, what is Rhizome?</h2></a>
 <p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web.</p>
@@ -933,8 +954,8 @@ if (!doNotTrack) {
 </li>
 <li>All of this will be exposed in the form a single replicated data structure (similar to Firestore) so that developers can easily build collaborative apps without needing to relearn everything from scratch.</li>
 </ul>
-<p>At this point, you may be wondering &ldquo;okay, where am I going to get the storage for all this data and how can my phone handle all this compute&rdquo;?</p>
-<p>We can solve this with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</p>
+<p>Of course, this then brings up a question about how users are going to be able to provide the necessary compute and storage and uptime? Nobody has a set of devices they keep on all the time.</p>
+<p>We can solve this with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</p>
 <p><img src="/thoughts/images/rhizome-may-6.jpeg" title="/thoughts/images/rhizome-may-6.jpeg"><em>Rough architecture diagram as of May 6th</em></p>
 <p>The properties work together to make a solid foundation for peer-to-peer applications to exist and thrive in the future.</p>
 <a href="#differentiation-from-existing-work"><h3 id="differentiation-from-existing-work"><span class="hanchor" ariaLabel="Anchor"># </span>Differentiation from existing work</h3></a>
