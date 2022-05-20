@@ -24,12 +24,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Current
 * **The Book of Form and Emptiness** by Ruth Ozeki
+* **Walden Two** by B. F. Skinner
 
 ## Past
 2022
 * **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
-- [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
+* [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
 - [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant
 - **Unflattening** by Nick Sousanis
 

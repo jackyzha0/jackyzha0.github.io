@@ -7,6 +7,16 @@ tags:
 ---
 
 ## May
+### May 18th
+- Grant writing + Verses proposal wrangling
+- Had Anson tear apart my proposal today
+	- It was so incredibly helpful to get that level of honest feedback but I just feel in the dumps right now LOL I need to figure out how to untie my own self-worth from my work
+	- I expect something similar will happen with the technical side of things when I meet with Justin.. and many more times this summer
+- Good feedback is equal parts bitter and sweet
+	- Bitter in that it tells you the harsh truths that few have the courage to
+	- Sweet in that they truly care enough and have enough faith to point harsh truths out
+	- "When you’re screwing up and nobody says anything to you anymore that means they’ve given up on you…you may not want to hear it but your critics are often the ones telling you they still love you and care about you and want to make you better." ― Randy Pausch, The Last Lecture
+
 ### May 17th
 - Went to NYC to work at the Thrive Capital office with some Interact folks and wow... the difference being outside and in a good working environment makes is ridiculous.
 - Migrated all the tracing stuff out of `server.rs` and `log.rs` into its own file. Makes the code a lot cleaner to work with.

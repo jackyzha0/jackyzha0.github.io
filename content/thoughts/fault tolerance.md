@@ -12,15 +12,7 @@ How do we defend against attacks in [[thoughts/distributed systems|distributed s
 	- Probability of all $n$ replicas being faulty: $p^n$
 	- Probability of 1 or more replicas being faulty: $1 - (1-p)^n$
 
-Related: [game theory](thoughts/game%20theory.md)
-
-## Zooko's Triangle
-Postulates that names of participants can have at most 2 of these 3 properties
--   Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.
--   Secure: The amount of damage a malicious entity can inflict on the system should be as low as possible.
--   Decentralized: Names correctly resolve to their respective entities without the use of a central authority or service.
-
-Maybe another version of [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)?
+Related: [game theory](thoughts/game%20theory.md), [[thoughts/Zooko's Triangle|Zooko's Triangle]]
 
 ## Sybil Attacks
 [Source: Sybil attack on *Wikipedia*](https://en.wikipedia.org/wiki/Sybil_attack)

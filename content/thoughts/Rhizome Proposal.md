@@ -10,6 +10,64 @@ A proposal and outline for my summer research in 2022 focussed on building infra
 
 > Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 
+---
+
+- questions
+	- identity 'clusters' -> organizations/groups of people
+		- how do we prevent redundant identities here?
+		- instead of having separate instantiation of your identity on fixed set of apps, same identity separate instantiation of the app
+	- who runs cloud peers?
+		- have a global marketplace where people can list spare compute and storage
+	- who does the compute?
+		- most apps are lightweight to run on people's own devices
+		- the main reason we've needed massive datastores and compute centers in the first place is because large companies have centralized billions of people's data into their own servers
+	- data still remains relational
+		- 'data' is on data in the context of that user (or group of users) using that specific application
+		- however, still easily portable because it gives agency to the user who has an intention of transferring data from one context to another the exact steps for them to do so
+		- all data is namespaced under associated user
+
+- problems with current web platforms
+	- applications built on today's internet are extractive and siloed
+		- can't just use parts that you like, you use all of it or don't use it at all
+		- can't just use google photos without signing up for a whole gsuite account, can't message across whatsapp and instagram without some third-party app that glues all of your accounts together
+		- but the infrastructure of the internet allows for much more than this
+		- the internet has many layers, often ones that support alternatives (e.g. UDP vs TCP)
+		- why is it that we've fallen into these patterns of vendor lock-in / agreeing to arbitrary terms of use out of 'convenience' at the application level?
+	- we spend so much time online that it is worthwhile exploring better ways of existing online
+- what is the ideal world?
+	- decentralization’s value is in genuinely empowering people to act decisively within their social contexts
+	- focus on local units that work independent of large platforms -- at the end of the day platforms should be used to support efficiency of collaboration at scale, the average person doesnt need this to talk to friends for example
+	- local units are composable—modular and interoperable with each other, essentially “stackable” to a more global scale—to enable decentralized systems to efficiently solve problems that may at first blush seem to require centralization for coordination
+- how people use p2p + distributed tech to get closer to this
+	- 
+- why does it fall short?
+	- people don't want to run their own infra
+	- availability + durability
+		- P2P networks often contain large numbers of users who utilize resources shared by other nodes, but who do not share anything themselves (often referred to as the "freeloader problem").
+		- why is this problematic?
+	- identity: essentially having your account deleted after a session ends
+		- Solutions that take redundancy as a prior focus on universal, decontextualized unique cryptographic identifiers. Removing context leads to reliance on “universally secure” identifiers based on clean/universal features like biometrics, which often raise at least as many concerns as the centralized protocols they replace.
+		- how does this work at an org level?
+		- why is this problematic?
+	- on a short term horizon: people not really using p2p because its inconvenient
+	- on a long term horizon: they don't have the infrastructure to do it well
+- what does this mean for the average internet user?
+- what could it look like?
+	- personal cloud
+	- why would people want a personal cloud?
+- how rhizome can help realize that future
+	- what it addresses
+	- technical details
+
+- identity
+	- relational names (sometimes called petnames) vs global identity
+	- Once a user passes this code to another, both of their applications generate a strong shared cryptographic secret using [SPAKE2](https://docs.rs/spake2/0.2.0/spake2/), a PAKE protocol. This shared secret represents the relationships between those two users, and is used to generate a secure end-to-end encrypted connection.
+	- Users then assign a name for each other, rather than naming themselves. Names in Backchannel are private – i.e., they are only seen by the person who created them, just like in a phone’s contact list. Naming contacts privately is important. Because there is no self-described user profile system, a user cannot be impersonated by someone else within the application.
+	- how does this work for group communication?
+		- secret is derived from resource id of document?
+
+---
+
 ## Motivation and Values
 Imagine a web where you can bring all of your data from Roam to Obsidian or Google Drive to Dropbox without needing to worry about how to make the file types work or massage the output of one API into another.
 
@@ -20,6 +78,8 @@ Imagine a web where it is *easy* and *normal* to create vast and rich collaborat
 Imagine a web where your digital spaces feel like portable universes and community gardens.
 
 *Rhizome is an attempt at infrastructure for a world where these are possible.*
+
+> Collaboration at scale while keeping local conditions in mind
 
 Below are properties that Rhizome will optimize for:
 - Interoperable: data should be first-class, not applications
