@@ -4639,6 +4639,11 @@
         },
         {
           "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Zookos-Triangle",
+          "text": "Zooko's Triangle"
+        },
+        {
+          "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/consensus",
           "text": "consensus"
         }
@@ -10941,6 +10946,13 @@
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/Vanilla-Ice-Cream-effect",
           "text": "Vanilla Ice Cream effect"
+        }
+      ],
+      "/thoughts/Zookos-Triangle": [
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Zookos-Triangle",
+          "text": "Zooko's Triangle"
         }
       ],
       "/thoughts/academia": [
@@ -21308,6 +21320,11 @@
       "source": "/thoughts/fault-tolerance",
       "target": "/thoughts/game-theory",
       "text": "game theory"
+    },
+    {
+      "source": "/thoughts/fault-tolerance",
+      "target": "/thoughts/Zookos-Triangle",
+      "text": "Zooko's Triangle"
     },
     {
       "source": "/thoughts/fault-tolerance",

@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated May 17, 2022
+          Last updated May 19, 2022
       </p>
       <ul class="tags">
     
@@ -487,6 +487,7 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
+    <li><a href="#how-people-use-p2p--distributed-tech-to-get-closer-to-this">how people use p2p + distributed tech to get closer to this</a></li>
     <li><a href="#motivation-and-values">Motivation and Values</a></li>
     <li><a href="#existing-problems-with-peer-to-peer-protocols">Existing problems with peer-to-peer protocols</a>
       <ol>
@@ -882,12 +883,127 @@ if (!doNotTrack) {
 
 <a href="https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/" rel="noopener">&ndash;Claire Webb in Noema</a></p>
 </blockquote>
+<hr>
+<ul>
+<li>
+<p>questions</p>
+<ul>
+<li>identity &lsquo;clusters&rsquo; -&gt; organizations/groups of people
+<ul>
+<li>how do we prevent redundant identities here?</li>
+<li>instead of having separate instantiation of your identity on fixed set of apps, same identity separate instantiation of the app</li>
+</ul>
+</li>
+<li>who runs cloud peers?
+<ul>
+<li>have a global marketplace where people can list spare compute and storage</li>
+</ul>
+</li>
+<li>who does the compute?
+<ul>
+<li>most apps are lightweight to run on people&rsquo;s own devices</li>
+<li>the main reason we&rsquo;ve needed massive datastores and compute centers in the first place is because large companies have centralized billions of people&rsquo;s data into their own servers</li>
+</ul>
+</li>
+<li>data still remains relational
+<ul>
+<li>&lsquo;data&rsquo; is on data in the context of that user (or group of users) using that specific application</li>
+<li>however, still easily portable because it gives agency to the user who has an intention of transferring data from one context to another the exact steps for them to do so</li>
+<li>all data is namespaced under associated user</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>problems with current web platforms</p>
+<ul>
+<li>applications built on today&rsquo;s internet are extractive and siloed
+<ul>
+<li>can&rsquo;t just use parts that you like, you use all of it or don&rsquo;t use it at all</li>
+<li>can&rsquo;t just use google photos without signing up for a whole gsuite account, can&rsquo;t message across whatsapp and instagram without some third-party app that glues all of your accounts together</li>
+<li>but the infrastructure of the internet allows for much more than this</li>
+<li>the internet has many layers, often ones that support alternatives (e.g. UDP vs TCP)</li>
+<li>why is it that we&rsquo;ve fallen into these patterns of vendor lock-in / agreeing to arbitrary terms of use out of &lsquo;convenience&rsquo; at the application level?</li>
+</ul>
+</li>
+<li>we spend so much time online that it is worthwhile exploring better ways of existing online</li>
+</ul>
+</li>
+<li>
+<p>what is the ideal world?</p>
+<ul>
+<li>decentralization’s value is in genuinely empowering people to act decisively within their social contexts</li>
+<li>focus on local units that work independent of large platforms &ndash; at the end of the day platforms should be used to support efficiency of collaboration at scale, the average person doesnt need this to talk to friends for example</li>
+<li>local units are composable—modular and interoperable with each other, essentially “stackable” to a more global scale—to enable decentralized systems to efficiently solve problems that may at first blush seem to require centralization for coordination</li>
+</ul>
+</li>
+<li>
+<a href="#how-people-use-p2p--distributed-tech-to-get-closer-to-this"><h2 id="how-people-use-p2p--distributed-tech-to-get-closer-to-this"><span class="hanchor" ariaLabel="Anchor"># </span>how people use p2p + distributed tech to get closer to this</h2></a>
+</li>
+<li>
+<p>why does it fall short?</p>
+<ul>
+<li>people don&rsquo;t want to run their own infra</li>
+<li>availability + durability
+<ul>
+<li>P2P networks often contain large numbers of users who utilize resources shared by other nodes, but who do not share anything themselves (often referred to as the &ldquo;freeloader problem&rdquo;).</li>
+<li>why is this problematic?</li>
+</ul>
+</li>
+<li>identity: essentially having your account deleted after a session ends
+<ul>
+<li>Solutions that take redundancy as a prior focus on universal, decontextualized unique cryptographic identifiers. Removing context leads to reliance on “universally secure” identifiers based on clean/universal features like biometrics, which often raise at least as many concerns as the centralized protocols they replace.</li>
+<li>how does this work at an org level?</li>
+<li>why is this problematic?</li>
+</ul>
+</li>
+<li>on a short term horizon: people not really using p2p because its inconvenient</li>
+<li>on a long term horizon: they don&rsquo;t have the infrastructure to do it well</li>
+</ul>
+</li>
+<li>
+<p>what does this mean for the average internet user?</p>
+</li>
+<li>
+<p>what could it look like?</p>
+<ul>
+<li>personal cloud</li>
+<li>why would people want a personal cloud?</li>
+</ul>
+</li>
+<li>
+<p>how rhizome can help realize that future</p>
+<ul>
+<li>what it addresses</li>
+<li>technical details</li>
+</ul>
+</li>
+<li>
+<p>identity</p>
+<ul>
+<li>relational names (sometimes called petnames) vs global identity</li>
+<li>Once a user passes this code to another, both of their applications generate a strong shared cryptographic secret using 
+
+<a href="https://docs.rs/spake2/0.2.0/spake2/" rel="noopener">SPAKE2</a>, a PAKE protocol. This shared secret represents the relationships between those two users, and is used to generate a secure end-to-end encrypted connection.</li>
+<li>Users then assign a name for each other, rather than naming themselves. Names in Backchannel are private – i.e., they are only seen by the person who created them, just like in a phone’s contact list. Naming contacts privately is important. Because there is no self-described user profile system, a user cannot be impersonated by someone else within the application.</li>
+<li>how does this work for group communication?
+<ul>
+<li>secret is derived from resource id of document?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
 <a href="#motivation-and-values"><h2 id="motivation-and-values"><span class="hanchor" ariaLabel="Anchor"># </span>Motivation and Values</h2></a>
 <p>Imagine a web where you can bring all of your data from Roam to Obsidian or Google Drive to Dropbox without needing to worry about how to make the file types work or massage the output of one API into another.</p>
 <p>Imagine a web where your applications don&rsquo;t just stop working when you lose internet connection or some company intern accidentally takes down production.</p>
 <p>Imagine a web where it is <em>easy</em> and <em>normal</em> to create vast and rich collaborative spaces that allow you co-browse the internet and collectively <a href="/posts/digital-gardening" rel="noopener" class="internal-link" data-src="/posts/digital-gardening">digital garden</a> with friends.</p>
 <p>Imagine a web where your digital spaces feel like portable universes and community gardens.</p>
 <p><em>Rhizome is an attempt at infrastructure for a world where these are possible.</em></p>
+<blockquote>
+<p>Collaboration at scale while keeping local conditions in mind</p>
+</blockquote>
 <p>Below are properties that Rhizome will optimize for:</p>
 <ul>
 <li>Interoperable: data should be first-class, not applications</li>
