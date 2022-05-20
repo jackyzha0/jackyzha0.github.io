@@ -12,20 +12,6 @@ A proposal and outline for my summer research in 2022 focussed on building infra
 
 ---
 
-- questions
-	- identity 'clusters' -> organizations/groups of people
-		- how do we prevent redundant identities here?
-		- instead of having separate instantiation of your identity on fixed set of apps, same identity separate instantiation of the app
-	- who runs cloud peers?
-		- have a global marketplace where people can list spare compute and storage
-	- who does the compute?
-		- most apps are lightweight to run on people's own devices
-		- the main reason we've needed massive datastores and compute centers in the first place is because large companies have centralized billions of people's data into their own servers
-	- data still remains relational
-		- 'data' is on data in the context of that user (or group of users) using that specific application
-		- however, still easily portable because it gives agency to the user who has an intention of transferring data from one context to another the exact steps for them to do so
-		- all data is namespaced under associated user
-
 - problems with current web platforms
 	- applications built on today's internet are extractive and siloed
 		- can't just use parts that you like, you use all of it or don't use it at all

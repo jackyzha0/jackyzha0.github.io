@@ -7,11 +7,49 @@ tags:
 ---
 
 ## May
+### May 20th
+- Chatted with Justin Glibert who gave some very piercing advice
+	- least amount of work and most impact
+		- via negativa -> essentially the study of what not to do
+			- In action, it is a recipe for what to avoid, what not to do—subtraction, not addition, say, in medicine.
+		- can't know what is going to work but also dont do stuff that is obviously wrong
+		- dont try to think you are a god and reinvent everything, thats what the urbit guys did
+	- dont be in the middle
+		- either write a blogpost at the end focussing on your learning making it clear that you don't expect anyone to use it
+		- or make it small and meaningful enough that people will
+		- counterpoint: what if i just want to work on it for the sake of working on it
+	- 10 beautiful idea tokens in your life you want to do it so you should just do it
+		- dont just do the plumbing or work to justify your idea
+		- if this is something you just want to work on (true in this case) then work on it completely
+	- not harsh because its a bad idea
+		- last summer without responsibilities
+		- i just dont want you to waste time
+	- is this actually a generalized form of state channels ??
+		- evm + solidity on top of little chains
+		- minecraft on top of this → building engines like https://www.worldql.com/
+
+### May 19th
+- Proposal re-writes + more research today, got a lot done in office today and still had time to head to Central Park to read... a great day all things considered.
+- Open questions from today's reading + writing:
+	- How do identity 'clusters' or organizations/groups of people work? How are they represented?
+		- Perhaps instead of having separate instantiation of your identity on fixed set of apps, we can have the same identity with separate instantiations of the app?
+	- Who runs cloud peers?
+		- Have a global marketplace where people can list/sell spare compute and storage
+	- Who does the compute?
+		- Most apps are lightweight to run on people's own devices
+		- The main reason we've needed massive datastores and compute centers in the first place is because large companies have centralized billions of people's data into their own servers
+		- Cloud peers can offload and perform heavy lifting if necessary
+- More meditations on identity and data
+	- Thinking about how data exists only as *relations* between things... how do we preserve this?
+	- 'Data' is data in the context of that user (or group of users) using that specific application
+	- Learned about the concept of [[thoughts/Zooko's Triangle#Petnames|petnames]] in more depth today and there's a really cool way of thinking about identity here perhaps
+		- Almost all of the contexts in which we collaborate are not global. The *you* I know is likely different from the you your family knows. Identity should be relational rather than standalone?
+
 ### May 18th
 - Grant writing + Verses proposal wrangling
 - Had Anson tear apart my proposal today
 	- It was so incredibly helpful to get that level of honest feedback but I just feel in the dumps right now LOL I need to figure out how to untie my own self-worth from my work
-	- I expect something similar will happen with the technical side of things when I meet with Justin.. and many more times this summer
+	- I expect something similar will happen when I meet with Justin.. and many more times this summer
 - Good feedback is equal parts bitter and sweet
 	- Bitter in that it tells you the harsh truths that few have the courage to
 	- Sweet in that they truly care enough and have enough faith to point harsh truths out
