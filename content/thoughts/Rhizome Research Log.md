@@ -9,24 +9,21 @@ tags:
 ## May
 ### May 20th
 - Chatted with Justin Glibert who gave some very piercing advice
-	- least amount of work and most impact
-		- via negativa -> essentially the study of what not to do
-			- In action, it is a recipe for what to avoid, what not to do—subtraction, not addition, say, in medicine.
-		- can't know what is going to work but also dont do stuff that is obviously wrong
-		- dont try to think you are a god and reinvent everything, thats what the urbit guys did
-	- dont be in the middle
-		- either write a blogpost at the end focussing on your learning making it clear that you don't expect anyone to use it
-		- or make it small and meaningful enough that people will
-		- counterpoint: what if i just want to work on it for the sake of working on it
-	- 10 beautiful idea tokens in your life you want to do it so you should just do it
-		- dont just do the plumbing or work to justify your idea
-		- if this is something you just want to work on (true in this case) then work on it completely
-	- not harsh because its a bad idea
-		- last summer without responsibilities
-		- i just dont want you to waste time
-	- is this actually a generalized form of state channels ??
-		- evm + solidity on top of little chains
-		- minecraft on top of this → building engines like https://www.worldql.com/
+	- What is the most you can cut from your current proposal and have it still be meaningful?
+		- *via negativa*: essentially the study of what not to do
+			- In action, it is a recipe for what to avoid, what not to do—subtraction, not addition.
+		- You can't know what is going to work but also you know there are things that are obviously not.
+		- Don't try to think you are a god and reinvent everything from scratch. Don't catch NIH syndrome.
+	- You only have 10 beautiful idea tokens in your life you want to do it so you should just do it
+		- Don't just do the plumbing and make stuff you already are good at if you're trying to learn
+		- If this is something you just want to work on (true in this case) then work on it with your full heart
+	- Not being harsh because it's a bad idea
+		- But rather I don't want you to waste your time. This is your last summer without 'real-world' responsibilities. I would trade so much to be in your position right now.
+		- I am being harsh so that you spend your time wisely and don't do something stupid.
+- Technical thoughts
+	- Is Rhizome actually a generalized form of state channels?
+		- EVM + Solidity on top of little chains between people
+		- Minecraft on top of this to build engines like https://www.worldql.com/
 
 ### May 19th
 - Proposal re-writes + more research today, got a lot done in office today and still had time to head to Central Park to read... a great day all things considered.

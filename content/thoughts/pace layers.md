@@ -30,3 +30,9 @@ Proposing a layer even below nature: physics. This are the axioms of the univers
 -   physics has infinite availability
 -   legitimacy is a pattern of higher order acceptance (vitalik)
 -  blockchains as digital physics (the bottom layer of trust)
+
+## Internet Pace Layering
+[Gordon Brander on Substack](https://subconscious.substack.com/p/layered-protocols)
+
+> The pace layering is partial—evolved layering is relaxed layering—but we can definitely see chronological shearing reflected by the cycle times of different layers of the stack. Hardware and programming languages tend to evolve on the decades timescale. Operating systems tend to release every few years. Apps, every month. Content is instant.
+

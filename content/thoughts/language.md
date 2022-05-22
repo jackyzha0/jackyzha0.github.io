@@ -21,7 +21,7 @@ tags:
 	- Grammar (morphology, syntax)
 	- Social and communicative Function (pragmatics)
 ### Parts of language
-- Phonetics: how to produce/pronounce sounds or signs
+- Phonetics: how to produce/pronounce sounds or signs, how we hear sounds
 - Phonology: which sounds are used in language, how sounds are combined to form words
 - Morphology: what do words look like in the language, what are the different types of words
 - Syntax: how are words combined, is a sentence grammatical
@@ -33,4 +33,10 @@ that children learn language without formal instruction (maturation)
 - Empiricism (nurture): everything comes from experience (learning)
 	- We know that human children who are not exposed to language early in their lives do not reach the same proficiency in adulthood
 ### Critical Period
-- Critical period hypothesis: language must be learned within a biologically determined window (comparable to birds and imprinting) 
+- Critical period hypothesis: language must be learned within a biologically determined window (comparable to birds and imprinting)
+### Definitions
+- Phonemes are sounds that can make a difference in meaning
+- Allophones are sounds that do not make a difference in meaning
+### Measuring sound discrimination
+- Children become bored or inattentive to the sounds (habituated). Children hear a new sound and their response is measured. 
+- Prosody: includes learning about the intonation, stress, pitch of a language.
