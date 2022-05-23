@@ -23,7 +23,7 @@ Take the time to find yourself. Take the time to smell the proverbial flowers. T
 
 There is no permanence to this universe. If we could stop time, we would. Bill Waterson once said that 'If people could put rainbows in zoos, they'd do it'. Everything we build is a sand castle waiting to be washed away at high tide. Yet, I think that's what gives life its beauty.
 
-What gives live meaning is its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
+What gives life meaning is its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
 
 Love then, is *knowingly* choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? Loving one another is always the process of deluding ourselves into believing in a better world. What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
 
