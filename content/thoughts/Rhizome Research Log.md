@@ -7,6 +7,10 @@ tags:
 ---
 
 ## May
+### May 21st + May 22nd
+- Packing + flights! I am now in Vancouver for the next week :))
+- Hectic flying experience... didn't get much done
+
 ### May 20th
 - Chatted with Justin Glibert who gave some very piercing advice
 	- What is the most you can cut from your current proposal and have it still be meaningful?
