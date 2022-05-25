@@ -904,13 +904,6 @@
           "text": "NLP"
         }
       ],
-      "/thoughts/0x0": [
-        {
-          "source": "/thoughts/0x0",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        }
-      ],
       "/thoughts/A-City-is-not-a-Computer": [
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
@@ -2439,6 +2432,11 @@
       "/thoughts/Rhizome-Proposal": [
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Degraded-Blockchain-problem",
+          "text": "degraded blockchain problem"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/posts/digital-gardening",
           "text": "digital garden"
         },
@@ -2491,11 +2489,6 @@
           "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/web3",
           "text": "web3"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/peer-to-peer",
-          "text": "peer to peer"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -4317,6 +4310,11 @@
         },
         {
           "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/quantization",
+          "text": "quantization"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
           "target": "/thoughts/selfish",
           "text": "selfish"
         },
@@ -4324,6 +4322,21 @@
           "source": "/thoughts/effective-altruism",
           "target": "/thoughts/building-in-public",
           "text": "Building in public"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/quantization",
+          "text": "quantize"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/traditional-knowledge",
+          "text": "traditional knowledge"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/The-ones-who-walk-away-from-Omelas",
+          "text": "The Ones Who Walk Away From Omelas"
         }
       ],
       "/thoughts/embedded-AI": [
@@ -9238,6 +9251,11 @@
           "text": "degraded blockchain problem"
         },
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Degraded-Blockchain-problem",
+          "text": "degraded blockchain problem"
+        },
+        {
           "source": "/thoughts/blockchain",
           "target": "/thoughts/Degraded-Blockchain-problem",
           "text": "Degraded Blockchain problem"
@@ -10783,6 +10801,11 @@
           "source": "/thoughts/effective-altruism",
           "target": "/thoughts/The-ones-who-walk-away-from-Omelas",
           "text": "The ones who walk away from Omelas"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/The-ones-who-walk-away-from-Omelas",
+          "text": "The Ones Who Walk Away From Omelas"
         },
         {
           "source": "/thoughts/progress",
@@ -12587,11 +12610,6 @@
         }
       ],
       "/thoughts/emptiness": [
-        {
-          "source": "/thoughts/0x0",
-          "target": "/thoughts/emptiness",
-          "text": "emptiness"
-        },
         {
           "source": "/thoughts/Buddhism",
           "target": "/thoughts/emptiness",
@@ -15044,11 +15062,6 @@
           "text": "P2P"
         },
         {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/peer-to-peer",
-          "text": "peer to peer"
-        },
-        {
           "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
@@ -15672,6 +15685,16 @@
           "source": "/thoughts/debt",
           "target": "/thoughts/quantization",
           "text": "quantify"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/quantization",
+          "text": "quantization"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
+          "target": "/thoughts/quantization",
+          "text": "quantize"
         },
         {
           "source": "/thoughts/games",
@@ -16423,6 +16446,11 @@
         },
         {
           "source": "/thoughts/creation-vs-maintenance",
+          "target": "/thoughts/traditional-knowledge",
+          "text": "traditional knowledge"
+        },
+        {
+          "source": "/thoughts/effective-altruism",
           "target": "/thoughts/traditional-knowledge",
           "text": "traditional knowledge"
         }
@@ -17902,11 +17930,6 @@
       "text": "NLP"
     },
     {
-      "source": "/thoughts/0x0",
-      "target": "/thoughts/emptiness",
-      "text": "emptiness"
-    },
-    {
       "source": "/thoughts/A-City-is-not-a-Computer",
       "target": "/thoughts/Internet",
       "text": "internet"
@@ -19303,6 +19326,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Degraded-Blockchain-problem",
+      "text": "degraded blockchain problem"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/posts/digital-gardening",
       "text": "digital garden"
     },
@@ -19355,11 +19383,6 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/web3",
       "text": "web3"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/peer-to-peer",
-      "text": "peer to peer"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
@@ -21023,6 +21046,11 @@
     },
     {
       "source": "/thoughts/effective-altruism",
+      "target": "/thoughts/quantization",
+      "text": "quantization"
+    },
+    {
+      "source": "/thoughts/effective-altruism",
       "target": "/thoughts/selfish",
       "text": "selfish"
     },
@@ -21030,6 +21058,21 @@
       "source": "/thoughts/effective-altruism",
       "target": "/thoughts/building-in-public",
       "text": "Building in public"
+    },
+    {
+      "source": "/thoughts/effective-altruism",
+      "target": "/thoughts/quantization",
+      "text": "quantize"
+    },
+    {
+      "source": "/thoughts/effective-altruism",
+      "target": "/thoughts/traditional-knowledge",
+      "text": "traditional knowledge"
+    },
+    {
+      "source": "/thoughts/effective-altruism",
+      "target": "/thoughts/The-ones-who-walk-away-from-Omelas",
+      "text": "The Ones Who Walk Away From Omelas"
     },
     {
       "source": "/thoughts/embedded-AI",
