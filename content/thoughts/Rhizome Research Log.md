@@ -7,7 +7,14 @@ tags:
 ---
 
 ## May
-### May 21st + May 22nd
+### May 23rd - May 26th
+- Catching up on school work
+- More reading + notes in [[thoughts/decentralization|decentralization]], [[thoughts/authorization|authorization]], and [[thoughts/federation|federation]]. Notable readings:
+	- [IETF Draft on Centralization and Internet Standards](https://www.ietf.org/archive/id/draft-nottingham-avoiding-internet-centralization-03.html?curius=1294)
+	- Gordon Brander on [Modularity](https://subconscious.substack.com/p/modularity?s=r&curius=1294), [weblike things](https://subconscious.substack.com/p/weblike-things?s=r&curius=1294), and [feudal metaphors for the web](https://subconscious.substack.com/p/web3?s=r&curius=1294)
+	- [Fission on UCAN for serverless authorization](https://fission.codes/blog/auth-without-backend/?curius=1294)
+
+### May 21st - May 22nd
 - Packing + flights! I am now in Vancouver for the next week :))
 - Hectic flying experience... didn't get much done
 
@@ -88,7 +95,7 @@ tags:
 - Finish testing harness - it looks so pretty!
 - Finally updating research proposals after putting it off for 3 days. I suspect I'm using `miniraft` as an excuse to avoid the grant writing because making things legible is hard!! I'd much rather write code and look at pretty command line outputs instead but this is important work that needs to be done.
 
-### May 12th + May 13th
+### May 12th - May 13th
 - Reaffirming myself that a lot of this is necessary learning and this is a worthwhile project
 	- Not sure if this is actually true
 	- But more so convincing myself of it so that I have the energy/motivation to go through with it

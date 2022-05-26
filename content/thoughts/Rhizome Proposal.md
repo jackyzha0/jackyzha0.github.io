@@ -12,6 +12,16 @@ A proposal on building infrastructure for **collaborative local-first applicatio
 
 ---
 
+Privacy and security in this world mostly means “which private company do you trust with your safety?” The answer often coincides with who has the largest walls and deepest moats.
+
+Commercial software, especially aggregators, are incentivized to resist interoperability. To be composable is to be commoditized. Interoperability means you no longer have a data lock-in moat, or a privileged hub position in the network.
+
+When you have a universal API for composition each additional tool increases the number of possible workflow combinations by n * (n - 1).
+
+Unix philosophy: Expect the output of every program to become the input to another, as yet unknown, program.
+
+For example, lego rigorously defines the interface between pieces (“the dot”). If they didn’t, each piece would have to make up its own mind about the kind of connector it should present.
+
 - current landscape
 	- the competitive advantage of many of today’s popular centralized platforms is their data silo, and the fact that **their service depends entirely on access to that data**. Conceptually speaking, the _service_ offered by Facebook, Twitter, and LinkedIn is fairly simple and could be replicated easily by others. Yet a major reason why people appreciate the services of these platforms is because of their data: Facebook is engaging because our friends’ data is there, Twitter has all of the world’s tweets and direct messages, and LinkedIn showcases our broad networks.
 	- Apps are inseparable from data. Applications built on today's internet are extractive and siloed

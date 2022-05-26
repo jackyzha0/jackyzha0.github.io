@@ -26,6 +26,16 @@ At the beginning, will do everything they can to garner usage and appear more va
 
 > Centralized systems often start out fully baked, but only get better at the rate at which employees at the sponsoring company improve them. Decentralized systems start out half-baked but, under the right conditions, grow exponentially as they attract new contributors.
 
+### Types of Centralization
+[From IETF Draft](https://www.ietf.org/archive/id/draft-nottingham-avoiding-internet-centralization-03.html#name-authors-address)
+
+1. Proprietary Centralization: creation of a protocol/application with a fixed role for a specific party (e.g. making a protocol for streaming on Zoom). Generally undesirable as it most often reflect commercial goals (strong desire to capture financial benefits by "locking in" users to a proprietary service)
+2. Beneficial Centralization: need for a single, globally coordinated "source of truth" (e.g. DNS). Need for coordination in establishing p2p connections (endpoint mutual discovery typically requires a third party)
+3. Inherited Centralization: depending on a centralized "lower-layer" protocol. Having only a single implementation of a protocol is also an inherited centralization risk because applications that use it are vulnerable to the control it has over their operation (can still happen with open source! maintaining forks for example is costly)
+4. Platform Centralization: platform for centralization -- while the protocol itself is not centralized, it facilitates the creation of centralized services and applications (can help to mitigate this through [[thoughts/federation|federation]])
+
+Standards efforts should focus on providing concrete utility to the majority of their users as published, rather than being a "framework" where interoperability is not immediately available.
+
 ## Why Decentralize?
 1. [**Fault tolerance**](thoughts/fault%20tolerance.md), less likely to fail accidentally because they rely on many separate redundant components
 2. **Attack resistance**, no central point to attack

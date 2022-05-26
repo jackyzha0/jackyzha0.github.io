@@ -6,6 +6,7 @@ tags:
 ---
 
 > CRWR 200 Short Story
+> 
 > Disclaimer: This piece touches on suicidal ideation. My intention was to explore the connection of the Buddhist conception of emptiness and the experience of death/non-being. This is in no way drawn from my own life or experiences and encourage those dealing with suicidal ideation to seek professional help.
 
 The room was fraught with tension. 

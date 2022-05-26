@@ -47,7 +47,6 @@ that children learn language without formal instruction (maturation)
 4. Reduplicated Babbling (e.g. bababa)
 	1. Deaf child also babble but at a later time than other children. The number of sounds produced gets smaller (not larger) over time.
 5. Non-Reduplicated Babbling (e.g. bagiga)
-
 - Impacts of experience in speech production
 	- Input from adults – affects sounds and prosody in babbling  
 	- Vocal feedback from own productions  
