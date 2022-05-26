@@ -40,3 +40,24 @@ that children learn language without formal instruction (maturation)
 ### Measuring sound discrimination
 - Children become bored or inattentive to the sounds (habituated). Children hear a new sound and their response is measured. 
 - Prosody: includes learning about the intonation, stress, pitch of a language.
+### 5 stages in early speech production
+1. Reflexive Crying and Vegetative Sounds  
+2. Cooing and Laughter  
+3. Vocal Play  
+4. Reduplicated Babbling (e.g. bababa)
+	1. Deaf child also babble but at a later time than other children. The number of sounds produced gets smaller (not larger) over time.
+5. Non-Reduplicated Babbling (e.g. bagiga)
+
+- Impacts of experience in speech production
+	- Input from adults – affects sounds and prosody in babbling  
+	- Vocal feedback from own productions  
+	- Social feedback
+### Phoneme Acquisition Time
+- Why are some phonemes acquired later than others?  
+	- Ease of articulation  
+	- Frequency in the input  
+	- Markedness  
+	- Functional load – how many words in the language use this sound?
+- Early: /p/, /b/, /d/, /m/, /n/, /j/, /w/, /h/
+- Middle: /t/, /k/, /g/, /f/, /v/, /tʃ/, /ŋ/, /dʒ/
+- Late: /θ/, /ð/, /s/, /z/, /ʃ/, /ʒ/, /l/, /r/
