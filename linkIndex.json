@@ -2499,6 +2499,21 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/authorization",
+          "text": "authorization"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Rhizome-Proposal",
           "text": "research proposal"
         },
@@ -3978,6 +3993,11 @@
         },
         {
           "source": "/thoughts/decentralization",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/decentralization",
           "target": "/thoughts/fault-tolerance",
           "text": "Fault tolerance"
         },
@@ -4659,6 +4679,13 @@
           "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        }
+      ],
+      "/thoughts/federation": [
+        {
+          "source": "/thoughts/federation",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
         }
       ],
       "/thoughts/feedback-loops": [
@@ -11111,6 +11138,13 @@
           "text": "attention economy"
         }
       ],
+      "/thoughts/authorization": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/authorization",
+          "text": "authorization"
+        }
+      ],
       "/thoughts/autopoiesis": [
         {
           "source": "/thoughts/emergent-behaviour",
@@ -12179,6 +12213,11 @@
           "text": "decentralized"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
           "source": "/thoughts/blockchain",
           "target": "/thoughts/decentralization",
           "text": "Decentralized"
@@ -12984,6 +13023,18 @@
           "source": "/thoughts/proof-of-stake",
           "target": "/thoughts/fault-tolerance",
           "text": "51% attacks"
+        }
+      ],
+      "/thoughts/federation": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/decentralization",
+          "target": "/thoughts/federation",
+          "text": "federation"
         }
       ],
       "/thoughts/feedback-loops": [
@@ -14272,6 +14323,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/interoperability",
           "text": "Interoperable"
+        },
+        {
+          "source": "/thoughts/federation",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
         },
         {
           "source": "/thoughts/idea-list",
@@ -19391,6 +19447,21 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/decentralization",
+      "text": "decentralization"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/authorization",
+      "text": "authorization"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/federation",
+      "text": "federation"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/Rhizome-Proposal",
       "text": "research proposal"
     },
@@ -20736,6 +20807,11 @@
     },
     {
       "source": "/thoughts/decentralization",
+      "target": "/thoughts/federation",
+      "text": "federation"
+    },
+    {
+      "source": "/thoughts/decentralization",
       "target": "/thoughts/fault-tolerance",
       "text": "Fault tolerance"
     },
@@ -21373,6 +21449,11 @@
       "source": "/thoughts/fault-tolerance",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/federation",
+      "target": "/thoughts/interoperability",
+      "text": "interoperability"
     },
     {
       "source": "/thoughts/feedback-loops",

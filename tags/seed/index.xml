@@ -6,7 +6,25 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Federation</title>
+      <link>https://jzhao.xyz/thoughts/federation/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/federation/</guid>
+      <description>Designing in such a way that new instances of any [[thoughts/decentralization#Centralization|centralized]] function are relatively easy to create and can maintain [[thoughts/interoperability|interoperability]] and connectivity with other instances.</description>
+    </item>
+    
+    <item>
+      <title>Authorization</title>
+      <link>https://jzhao.xyz/thoughts/authorization/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/authorization/</guid>
+      <description>Authorization is the process of verifying what a user has access to (whereas authentication is the process of verifying who someone is)</description>
+    </item>
+    
     <item>
       <title>Zooko&#39;s Triangle</title>
       <link>https://jzhao.xyz/thoughts/Zookos-Triangle/</link>
