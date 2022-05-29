@@ -49,3 +49,5 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 		- Act III: Get him outta the tree
 - McGuffin: an object, device, or event that is necessary to the plot and the motivation of the characters, but insignificant, unimportant, or irrelevant in itself.
 - The universal grammar for stories: character + conflict = change
+- Plot: the how of the story. Explicit
+- Theme: the why of the story, the "so what". Implicit
