@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>State Channels</title>
+      <link>https://jzhao.xyz/thoughts/state-channels/</link>
+      <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/state-channels/</guid>
+      <description>State channels are a very broad and simple way to think about [[thoughts/blockchain|blockchain]] interactions which could occur on the blockchain, but instead get conducted off of the blockchain, without significantly increasing the risk of any participant.</description>
+    </item>
+    
+    <item>
       <title>Federation</title>
       <link>https://jzhao.xyz/thoughts/federation/</link>
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
@@ -187,7 +196,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>May May 23rd - May 26th  Catching up on school work More reading + notes in [[thoughts/decentralization|decentralization]], [[thoughts/authorization|authorization]], and [[thoughts/federation|federation]].</description>
+      <description>May May 27th  Finishing up miniraft, added tests for voting and fixed up some workflow stuff to auto-test and publish documentation!</description>
     </item>
     
     <item>

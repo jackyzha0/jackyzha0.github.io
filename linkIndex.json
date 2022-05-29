@@ -7736,6 +7736,18 @@
           "text": "games"
         }
       ],
+      "/thoughts/state-channels": [
+        {
+          "source": "/thoughts/state-channels",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/state-channels",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoins"
+        }
+      ],
       "/thoughts/symbolic-system": [
         {
           "source": "/thoughts/symbolic-system",
@@ -11265,6 +11277,11 @@
           "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/bitcoin",
           "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/state-channels",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoins"
         }
       ],
       "/thoughts/black-box": [
@@ -11334,6 +11351,11 @@
           "source": "/thoughts/replication",
           "target": "/thoughts/blockchain",
           "text": "blockchains"
+        },
+        {
+          "source": "/thoughts/state-channels",
+          "target": "/thoughts/blockchain",
+          "text": "blockchain"
         },
         {
           "source": "/thoughts/trust",
@@ -24264,6 +24286,16 @@
       "source": "/thoughts/soulbound",
       "target": "/thoughts/games",
       "text": "games"
+    },
+    {
+      "source": "/thoughts/state-channels",
+      "target": "/thoughts/blockchain",
+      "text": "blockchain"
+    },
+    {
+      "source": "/thoughts/state-channels",
+      "target": "/thoughts/bitcoin",
+      "text": "Bitcoins"
     },
     {
       "source": "/thoughts/symbolic-system",

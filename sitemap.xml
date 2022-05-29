@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jzhao.xyz/thoughts/federation/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/state-channels/</loc>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/federation/</loc>
     <lastmod>2022-05-26T13:34:16-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/authorization/</loc>
@@ -30,7 +33,7 @@
     <lastmod>2022-05-10T16:59:45-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/rhizome/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</loc>
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
@@ -72,10 +75,10 @@
     <lastmod>2022-05-14T11:48:19-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-05-03T16:04:35-04:00</lastmod>
@@ -93,7 +96,7 @@
     <lastmod>2022-05-03T20:50:04-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/sapling/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</loc>
     <lastmod>2022-05-01T17:28:55-04:00</lastmod>
@@ -138,7 +141,7 @@
     <lastmod>2022-05-23T10:38:47-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/writing/</loc>
-    <lastmod>2022-05-25T18:46:10-07:00</lastmod>
+    <lastmod>2022-05-28T18:19:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idealism/</loc>
     <lastmod>2022-04-27T08:09:00-07:00</lastmod>

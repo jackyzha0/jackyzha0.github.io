@@ -6,7 +6,16 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>State Channels</title>
+      <link>https://jzhao.xyz/thoughts/state-channels/</link>
+      <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/state-channels/</guid>
+      <description>State channels are a very broad and simple way to think about [[thoughts/blockchain|blockchain]] interactions which could occur on the blockchain, but instead get conducted off of the blockchain, without significantly increasing the risk of any participant.</description>
+    </item>
+    
     <item>
       <title>Federation</title>
       <link>https://jzhao.xyz/thoughts/federation/</link>
