@@ -9,6 +9,8 @@ tags:
 ## May
 ### May 27th
 - Finishing up `miniraft`, added tests for voting and fixed up some workflow stuff to auto-test and publish documentation!!! It's [published now on GitHub :))](https://github.com/jackyzha0/miniraft)
+- Notes on [[thoughts/DID|DID]] which seems particularly applicable to the notion of identity + identity documents
+- Once again had a breakdown :)) Constantly feel like I'm not doing enough and that time is slipping between my fingertips...
 
 ### May 23rd - May 26th
 - Catching up on school work
