@@ -66,5 +66,3 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 - Vagueness (unclear) vs Ambiguity (up to interpretation)
 - Deus Ex Machina: god from the machine, heavy handed use of magic or coincidence to solve a conflict
 - Characters: be aware of your defaults
-
-- Readings: Two Step

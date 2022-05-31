@@ -57,6 +57,9 @@ tags:
 	-   edit only the last message you send
 -   recaptcha model for moderation / proof of humanity
 -  website inspo
+	- hand-drawn vibe
+	- have a featured/favourites section to help people find stuff
+	- no more ascii art perhaps
 	- door/portal motif? ![[thoughts/images/portal motif.png]]
 	- really like the aesthetics in https://www.themarginalian.org/2022/05/28/arthur-zajonc-catching-the-light/?curius=1294
 	- fun interactions

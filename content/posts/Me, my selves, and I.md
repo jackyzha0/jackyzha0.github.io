@@ -4,6 +4,7 @@ date: 2022-01-17
 tags:
 - fruit
 - personal
+- writing
 ---
 
 *An exploration on commitment, [trust](thoughts/trust.md), and growth.*

@@ -19,3 +19,5 @@ Some quotes to live by.
 10. “Even if it’s not your ideal life, you can always choose it. No matter what your life is, choosing it changes everything.” [Source](https://perell.com/essay/the-price-of-discipline/)
 11. “We're all just walking each other home.” ― Ram Dass
 12. "磨刀不誤砍柴功" -- Chinese Proverb. Taking a break to sharpen your saw will not delay you from cutting wood more
+13. Never be ashamed to let your feelings, smiles and tears shine a light in this world.
+14. Be humble at the mountaintops, be strong in the valleys, and be faithful in between. [Source](https://www.marcandangel.com/2022/01/18/19-great-truths-my-grandmother-told-me-on-her-90th-birthday/?curius=1417)

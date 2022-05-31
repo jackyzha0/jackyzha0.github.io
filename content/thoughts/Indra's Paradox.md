@@ -3,6 +3,7 @@ title: "Indra's Paradox"
 date: 2022-02-19
 tags:
 - fruit
+- writing
 ---
 
 > CRWR 200 Short Story
