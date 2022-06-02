@@ -7,6 +7,10 @@ tags:
 ---
 
 ## May
+### May 28th - Jun 1
+- Attending friends' graduation for the past few days, crazy to think that this will be the last time I see some of these friends for a long time.
+- Worked on thinking about and polishing my grant proposal, finally getting to some phrasings that resonate and sound good
+
 ### May 27th
 - Finishing up `miniraft`, added tests for voting and fixed up some workflow stuff to auto-test and publish documentation!!! It's [published now on GitHub :))](https://github.com/jackyzha0/miniraft)
 - Notes on [[thoughts/DID|DID]] which seems particularly applicable to the notion of identity + identity documents

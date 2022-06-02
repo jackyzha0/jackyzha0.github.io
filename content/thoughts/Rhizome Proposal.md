@@ -2,179 +2,111 @@
 title: "Rhizome Proposal"
 date: 2022-03-14
 tags:
-- fruit
+- evergreen
 - rhizome
 ---
 
-A proposal on building infrastructure for **collaborative local-first applications**.
+> Enabling collaboration at scale while keeping local conditions in mind
 
-> Perhaps the current episteme is best rendered as a rhizome: a subterranean plant stem that can shoot out roots that grow, hydralike, even when snipped in two... a system without beginning or end, “always in the middle, between things, interbeing, intermezzo.” [--Claire Webb in Noema](https://www.noemamag.com/the-ladder-the-sphere-and-the-rhizome/)
 
----
 
-Privacy and security in this world mostly means “which private company do you trust with your safety?” The answer often coincides with who has the largest walls and deepest moats.
+The competitive advantage of the vast majority of today's centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren't difficult to replicate -- in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.
 
-Commercial software, especially aggregators, are incentivized to resist interoperability. To be composable is to be commoditized. Interoperability means you no longer have a data lock-in moat, or a privileged hub position in the network.
+These platforms, especially aggregators, are *incentivized* to resist [[thoughts/decentralization|decentralization]] and [[thoughts/interoperability|interoperability]]. After all, 'data is the new oil'. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.
 
-When you have a universal API for composition each additional tool increases the number of possible workflow combinations by n * (n - 1).
+![[thoughts/images/platforms as old oil rigs.png]]
 
-Unix philosophy: Expect the output of every program to become the input to another, as yet unknown, program.
+As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can't choose what parts you like; you either use the platform and sign all of your rights to them, or don't use it at all. Privacy and security in this world mostly means "which company do you trust with your safety?" The answer often is the one with the largest walls and deepest moats.
 
-For example, lego rigorously defines the interface between pieces (“the dot”). If they didn’t, each piece would have to make up its own mind about the kind of connector it should present.
+![[thoughts/images/data moat.png]]
 
-- current landscape
-	- the competitive advantage of many of today’s popular centralized platforms is their data silo, and the fact that **their service depends entirely on access to that data**. Conceptually speaking, the _service_ offered by Facebook, Twitter, and LinkedIn is fairly simple and could be replicated easily by others. Yet a major reason why people appreciate the services of these platforms is because of their data: Facebook is engaging because our friends’ data is there, Twitter has all of the world’s tweets and direct messages, and LinkedIn showcases our broad networks.
-	- Apps are inseparable from data. Applications built on today's internet are extractive and siloed
-		- can't just use parts that you like, you use all of it or don't use it at all
-	- we spend so much time online that it is worthwhile exploring better ways of existing online
-- what is the ideal world?
-	- decentralization’s value is in genuinely empowering people to act decisively within their social contexts
-		- Decentralizing the Web means that people gain the ability to store their data wherever they want, while still getting the services they need.
-		- **Decentralization is about choice**: we will choose where we _store_ our data, who we give _access_ to which parts of that data, which _services_ we want on top of it, and how we _pay_ for those. Nowadays, we are instead forced to accept _package deals_ we cannot customize
-		- However, we want the **convenience of the single stream** without the central control that currently comes with that. We want to continue enjoying **the same types of services** that nowadays are only available on centralized platforms. So the important question is: can applications on top of decentralized data **behave the same way as centralized apps**? For example, can we still generate a friend list and news feed like Facebook does—even if our friends’ data is stored on different servers?
-	- focus on local units that work independent of large platforms -- at the end of the day platforms should be used to support efficiency of collaboration at scale, the average person doesnt need this to talk to friends for example
-	- local units are composable—modular and interoperable with each other, essentially “stackable” to a more global scale—to enable decentralized systems to efficiently solve problems that may at first blush seem to require centralization for coordination
-- how people use p2p + distributed tech to get closer to this
-	- p2p tech has existed for a while and in theory does all of this!
-	- [tk: explain]
-	- not much consumer grade tech other than video calling applications and torrents
-	- none of these have seen mass adoption, why is that?
-- why does it fall short?
-	- people don't want to run their own infra
-		- spinning up a server is hard for non-technical folks
-		- gates a lot of people from adopting this technology
-	- data availability + durability
-		- connections are ephemeral -- there is no persistent state
-		- imagine having your account deleted every time you close your browser window
-		- this means that any sort of asynchronous collaboration isn't possible: couldn't work on the same document unless you were both online, couldn't see another's most recent status update unless they were also on facebook
-		- Large companies get around this by storing the state of a user’s documents on one of their many servers who make it available on your behalf but P2P apps do not have this luxury. The problem is that most people do not have a device that is “always-on” like a server is
-	- network effects of existing platforms
-		- migrating data is hard because this is disincentivized for large platforms to support
-		- no 'import' tool for new platforms, even if they offer a better service (services like facebook, instagram, etc. do not offer difficult services to make!)
-		- data silos are incredibly powerful
-	- on a short term horizon: users are not really using p2p because its inconvenient
-	- on a long term horizon: developers don't have the infrastructure to build apps that are 10x improvements over existing ones
-		- hard to build p2p apps without solving above problems
-		- data silos make it hard for people to move platforms
-		- need a strong on-ramp from existing platforms to new ones
-- why not crypto
-	- Lack of ability to store large files on-chain (builders have resorted to referring to IPFS CIDs on-chain but this leads to the [[thoughts/Degraded Blockchain problem|degraded blockchain problem]])
-	- Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
-	- Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
-	- All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without *aggressive* application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies where 
-- why rhizome is a good alternative
-	- providing personal cloud -> a data pod that you personally own
-	- why would people want a personal cloud?
-		- easy on-ramp for people using centralized services
-		- a new model of the internet
-			- people own their own data
-			- Apps in this new model are now just views on top of data -> Applications ask rather than store
-				- Apps are different ways of visualizing and interacting with data
-			- Instead of maintaining credentials with each app, you log in through your data pod and **give apps permission** to read or write specific parts of your data
-			- **Any change in one view is directly reflected in another** because they share the same storage.
-			- Separate markets for data and applications
-				- current market is competition based on data ownership
-				- Whereas having separate markets that work each other creates competition based on service quality
-			- This competition argument is highly similar to the Net Neutrality debate, which strives to maintain the separation of the content and connectivity markets.
-			- Indeed, we can regard a fully decentralized approach as a way to realize platform neutrality, where applications and storage solutions become interchangeable, just like websites and Internet providers.
-	- technical details
-		- generalized non-crypto implementation of state channels
-		- 
+Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.
 
----
+## An Ideal World
+Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts[^1]. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. **Decentralization is about agency**: we get choice about where we _store_ our data, who we give _access_ to which parts of that data, which _services_ we want on top of it, and how we _pay_ for those.
 
-## Motivation and Values
-Imagine a web where you can bring all of your data from Roam to Obsidian or Google Drive to Dropbox without needing to worry about how to make the file types work or massage the output of one API into another.
+In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable [[thoughts/local-first software|local-first software]][^2] which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego "dot" that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.
 
-Imagine a web where your applications don't just stop working when you lose internet connection or some company intern accidentally takes down production.
+In an ideal world, there is *data-neutrality*. Much like how the Net Neutrality debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.
 
-Imagine a web where it is *easy* and *normal* to create vast and rich collaborative spaces that allow you co-browse the internet and collectively [[posts/digital-gardening|digital garden]] with friends.
+In an ideal world, we focus on local-first software that works independently of large platforms -- at the end of the day **platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.**
 
-Imagine a web where your digital spaces feel like portable universes and community gardens.
+## Peer-to-peer
+Peer-to-peer technology has existed for a while and in theory, gets quite close to realizing this ideal world on its own. Federated open source software means anyone can run their own local instances and customize them to their liking. Organizations like the IETF and W3C work on standardizing open data formats to act as universal formats to store and convert between. Yet, most platforms do the minimum they need as required by law to maintain interoperability and data-neutrality. 
 
-*Rhizome is an attempt at infrastructure for a world where these are possible.*
+So why does it fall short?
 
-> Collaboration at scale while keeping local conditions in mind
+### 1. Running your own infrastructure
+> Even nerds do not want to run their own servers at this point. Even organizations building software full time do not want to run their own servers at this point. If there’s one thing I hope we’ve learned about the world, it’s that people do not want to run their own servers.
+> 
+> Moxie in *My first impressions of Web3*[^3]
 
-Below are properties that Rhizome will optimize for:
-- Interoperable: data should be first-class, not applications
-- Local-first: your apps should work even when the internet is broken
-- Collaborative: multiplayer gardens with ease
+Running your own infrastructure and servers is hard. Maintenance and upkeep of your software is hard. There is a reason that companies which offered to do that for others were so successful.
 
-I've written about these in greater detail regarding [[thoughts/Rhizome Philosophy|Rhizome's Philosophy]].
+If one company figured out a good way to do $x$, it was incentivized to offer doing $x$ as a service (hence the explosion of SAAS startups) instead of making it easy for competitors to do the same. Overtime, companies specialized at getting really good at doing $x$ and thus became known as the go-to people for that thing. This centralization-over-time of this knowledge leads to the monopolies that we see today.
 
-## Existing problems with peer-to-peer protocols
-Many peer-to-peer protocols already exist today, claiming to give people the ability to own their own data. Yet, none of them have seen large-scale adoption with the exception of a few social media platforms.
+Centralizing this knowledge in open standards and public, forkable code rather than data moats and proprietary technology is a great start but it isn't enough if the general public doesn't know how to use it. Just as you wouldn't expect the average home owner to setup their internet connection, we shouldn't expect the average person to run their own infrastructure.
 
-Reflecting on this, there seems to be 3 major hurdles that no single protocol/system has been able to overcome:
+It should be easy for people to create competing yet interoperable platform providers and it should be easy for people to switch between platform providers as one can switch between internet providers today.
 
-### Availability + Durability
-In most P2P apps nowadays, closing your device or disconnecting it from the internet means the end of a session and whatever resource your peers were also connected to is no longer available.
+### 2. Data availability and durability
+The vast majority of peer-to-peer applications have yet to solve the data availability problem. In short, all connections are ephemeral -- there is no persistent state. Imagine if everybody you shared a Google Doc with had to be online at the same time everytime you wanted to edit it, or if all 3 billion users of Facebook all had to have the app open to even use it. Imagine if you had your Twitter account deleted every time you closed your browser window.
 
-If you need to send someone a file or message, both devices need to be online at the same point. If you need to download a really obscure file through a torrent, the chances that someone is currently seeding it are extremely slim.
+This means that *asynchronous collaboration isn't possible* in most peer-to-peer apps. Platforms usually get around this by storing the state of a user on one of their many servers who make it available on your behalf but peer-to-peer apps do not have this luxury -- most people do not have a device that is “always-on” like a server is.
 
-Large companies get around this by storing the state of a user's documents on one of their many servers who make it available on your behalf but P2P apps do not have this luxury. The problem is that most people do not have a device that is "always-on" like a server is.
+### 3. Existing network effects
+Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are 'export' tools on platforms, they are the worst they can be while still meeting [GDPR Requirements](https://gdpr-info.eu/art-20-gdpr/). New platforms almost never have 'import' tools because each platform has their own data format and that format changes unpredictably. This is [creates a form of n-to-n problem](https://twitter.com/andy_matuschak/status/1452438198668328960) where every app needs to know what the APIs of another app are to even begin to interoperate. 
 
-This poses a large problem for emulating those smooth 'always available' experiences that we've grown accustomed to in modern web apps like Google Docs.
+This means that, even if an alternative platform offers a better service, switching is often impossible.
 
-### Connectivity
-The current Internet, with its NAT routers, firewalls and VPNs, are hostile to P2P connections. Even the best techniques we have to establish direct peer-to-peer connections with other hosts work only about ~85% of the time (see notes on [[thoughts/NAT#Efficacy|hole-punching efficacy]]). Approaches like DHTs are promising but no one has got it to work consistently in a browser yet.
+The important question is: can applications on top of decentralized data **behave the same way as centralized apps**? Can we still aggregate information into feeds and present a cohesive user experience even if all of our friends' data is stored in different places?
 
-Peer-to-peer connectivity is hard without an intermediary. 
-
-Of course we can always fallback to a trusted server to act as a proxy but this comes at the same price of decentralization. Lots of protocols provide their own signalling and rendez-vous servers you can run but people don't want to run/host/maintain their own servers either!
-
-### Identity
-Most P2P protocols don't have good primitives for identity. Most users are identified by whatever session they are in along with a sequence of random numbers or codes.
-
-Once that session is terminated, that notion of identity dissolves. Often, there is no way to identify a user across applications. Sometimes this is useful but not for vast majority of use cases.
-
-Most apps require some notion of persistent 'identity' in order to function properly.
-
-### Why not Blockchain?
-At this point, some critics may be screaming "why not just use blockchain??"
-
+## Why not use blockchains?
 I admit that it is true that [[thoughts/blockchain|blockchain]] actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token [[thoughts/incentives|incentive]] mechanisms. Yet, they solve it in a way that leaves much to be desired.
 
-Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it -- partially why I suspect there has yet to be a widely-adopted real-world application of [[thoughts/web3|web3]] yet. Some of the core problems that I have personally seen are:
-- Lack of ability to store large files on-chain (builders have resorted to referring to IPFS CIDs on-chain but this leads to the [[thoughts/Degraded Blockchain problem|degraded blockchain problem]])
-- Huge losses in speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
-- Incredibly high latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
+Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include
+- Lack of ability to store large files on-chain in a cost-effective manner
+- Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
+- High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
 
-All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without *aggressive* application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make no sense and [[thoughts/consistency#Eventual Consistency|eventual consistency]] in a fair-loss crash recovery [[thoughts/system model|system model]] is more than good enough. 
+All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without *aggressive* application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.
 
 Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?
 
-## So, what is Rhizome?
-**Rhizome** aims to be a data-persistence and identity layer for the distributed web.
+## The personal cloud
+**Rhizome** aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable *data-neutrality* by separating data from applications.
 
-It is an abstraction on top of IPFS (specifically [IPLD](https://ipld.io/)), Filecoin, and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]].
+It is made up of two layers
+1. Root: a personal data pod that *you* own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.
+2. Trunk: a framework for easily developing cohesive peer-to-peer applications on top of data from Root
 
-The goal of Rhizome is to build out the model of the *personal cloud*. Think iCloud or Dropbox but distributed and extensible. It is the one database that is the source of truth for all other applications you use. You control it, nobody can take it down because it runs primarily on devices *you own*.
+As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.
 
-In this model,
-- Users have devices (phones, laptops, desktops) they can link to identities
-- Data is fully replicated within devices linked to a single identity
-- People can own multiple identities (a [[thoughts/pseudonymity|pseudonymous web]])
+- Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*. 
+- Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
+- Local-first means interaction times are measured in *microseconds* not seconds, resulting in more responsive-feeling applications and no loading spinners.
+- Two users can collaborate by simple 'inviting' another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.
+- As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.
 
-At this basic level, Rhizome is a local-first data replication and synchronization service much like iCloud/Dropbox. This on its own is already a promising idea but where it gets interesting is how application data is managed.
+With Rhizome, we get the convenience of a single centralized platform without the lack of agency that comes with it.
 
-- All application data is stored in the form of an append-only event log for each app they interact with.
-	- This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
+## Technical Details
+Rhizhome is a set of abstractions on top of DIDs, IPFS (specifically [IPLD](https://ipld.io/)), Filecoin, and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]]. It can be analogized to a generalized implementation of [[thoughts/state channels|state channels]] which don't need to be anchored to a chain.
+
+- Root is a local-first data replication and synchronization service much like iCloud/Dropbox. Root will be implemented as a DID method which uses IPFS as a VDR. The pinned state snapshot is the DID Document.
+- All application data is stored in the form of an append-only event log for each app they interact with. This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
+	- Data availability is achieved with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
+	- A public marketplace where people can buy and sell compute/storage. Reliability of service is ensured using a modified version of FileCoin's [Proof of Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/)and providers can advertise storage/compute specification so purchasers can choose whether to optimize for space or performance.
+- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs
 - All apps are deterministic state transition functions (functions that transform the state from $x$ at some time $t$ to state $y$ at some time $t+1$). These state transition functions are run over the event log to arrive at some application state.
-	- As a result, no servers are needed because all computation now happens locally on your device.
-- All apps have a public schema which describe what type of events it adds to the append-only event log.
-	- As a result, interoperability and data lensing is easy! A group of users could, for example, edit the same document in different applications because they can easily translate between their message schemas.
-	- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs (CRDTs seem to be promising here).
-- All of this will be exposed in the form a single replicated data structure (similar to Firestore) so that developers can easily build collaborative apps without needing to relearn everything from scratch.
+- All of this will be exposed in the form a single replicated data structure (similar to Firestore or yjs) so that developers can easily build collaborative apps without needing to relearn everything from scratch
 
-Of course, this then brings up a question about how users are going to be able to provide the necessary compute and storage and uptime? Nobody has a set of devices they keep on all the time.
+When Root and Trunk are combined, its properties handily solve or avert the three problems listed above:
+1. Data replication is considered solved as devices under a single DID sync with each other. Data availability is solved with a cloud peer which can be bought from a distributed and decentralized network of providers.
+2. Users no longer need to run their own server infrastructure as compute happens natively on a users device rather than on some remote sever. When a user needs more compute, they can utilize a cloud peer which is like renting compute from a neutral provider.
+3. As all apps have a public schema which describe what type of events it adds to the append-only event log, interoperability and data lensing is zero-cost to developers. To interoperate with outside apps, anyone can publish a schema file for the output of a data export of API call for example.
 
-We can solve this with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
-
-![[thoughts/images/rhizome-may-6.jpeg]]*Rough architecture diagram as of May 6th*
-
-The properties work together to make a solid foundation for peer-to-peer applications to exist and thrive in the future.
+![[thoughts/images/rhizome-may-6.jpeg]]*Rough architecture diagram as of June 1st*
 
 ### Differentiation from existing work
 - [Urbit](https://urbit.org/)
@@ -204,6 +136,7 @@ Blog posts explaining distributed systems concepts as I learn and become more fa
 - Explainer on Raft
 - Explainer on CRDTs
 - Modelling distributed systems
+	- [<1kloc Raft Implementation](https://github.com/jackyzha0/miniraft)
 - ...more to come
 
 ### Root
@@ -224,6 +157,8 @@ The application-level event log management and collaboration
 
 ---
 
-The goal is to finish the major research artifacts and Root by end of summer.
-
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
+
+[^1]: Divya Siddarth, Danielle Allen, E. Glen Weyl, *The Web3 Decentralization Debate is Focused on the Wrong Question* in Wired Magazine ([Source](https://www.wired.com/story/web3-blockchain-decentralization-governance/))
+[^2]: Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, MArk McGranaghan, *Local-first software* in Ink & Switch ([Source](https://www.inkandswitch.com/local-first/))
+[^3]: Moxie Marlinspike, *My first impression of web3* ([Source](https://moxie.org/2022/01/07/web3-first-impressions.html))
