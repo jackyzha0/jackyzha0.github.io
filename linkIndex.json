@@ -2454,18 +2454,18 @@
       "/thoughts/Rhizome-Proposal": [
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Degraded-Blockchain-problem",
-          "text": "degraded blockchain problem"
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/posts/digital-gardening",
-          "text": "digital garden"
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Rhizome-Philosophy",
-          "text": "Rhizome's Philosophy"
+          "target": "/thoughts/local-first-software",
+          "text": "local-first software"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -2479,28 +2479,13 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/web3",
-          "text": "web3"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Degraded-Blockchain-problem",
-          "text": "degraded blockchain problem"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft consensus protocol"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/pseudonymity",
-          "text": "pseudonymous web"
+          "target": "/thoughts/state-channels",
+          "text": "state channels"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -8794,11 +8779,6 @@
           "text": "Digital gardening"
         },
         {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/posts/digital-gardening",
-          "text": "digital garden"
-        },
-        {
           "source": "/thoughts/intentional-arrangement",
           "target": "/posts/digital-gardening",
           "text": "digital-gardening"
@@ -9317,16 +9297,6 @@
           "source": "/thoughts/NFT",
           "target": "/thoughts/Degraded-Blockchain-problem",
           "text": "Degraded Blockchain problem"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Degraded-Blockchain-problem",
-          "text": "degraded blockchain problem"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Degraded-Blockchain-problem",
-          "text": "degraded blockchain problem"
         },
         {
           "source": "/thoughts/blockchain",
@@ -10649,13 +10619,6 @@
           "source": "/thoughts/testimony",
           "target": "/thoughts/Reductionism",
           "text": "Reductionism"
-        }
-      ],
-      "/thoughts/Rhizome-Philosophy": [
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/Rhizome-Philosophy",
-          "text": "Rhizome's Philosophy"
         }
       ],
       "/thoughts/Rhizome-Proposal": [
@@ -12287,6 +12250,11 @@
           "source": "/thoughts/NAT",
           "target": "/thoughts/decentralization",
           "text": "decentralized"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -14401,6 +14369,11 @@
           "text": "Interoperable"
         },
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
+        },
+        {
           "source": "/thoughts/federation",
           "target": "/thoughts/interoperability",
           "text": "interoperability"
@@ -14582,6 +14555,11 @@
         }
       ],
       "/thoughts/local-first-software": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/local-first-software",
+          "text": "local-first software"
+        },
         {
           "source": "/thoughts/software-principles",
           "target": "/thoughts/local-first-software",
@@ -15626,11 +15604,6 @@
       ],
       "/thoughts/pseudonymity": [
         {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/pseudonymity",
-          "text": "pseudonymous web"
-        },
-        {
           "source": "/thoughts/accountability",
           "target": "/thoughts/pseudonymity",
           "text": "pseudonymous"
@@ -16273,6 +16246,13 @@
           "text": "Principles for Internet Spaces"
         }
       ],
+      "/thoughts/state-channels": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/state-channels",
+          "text": "state channels"
+        }
+      ],
       "/thoughts/stone-soup-metaphor": [
         {
           "source": "/thoughts/public-goods",
@@ -16293,11 +16273,6 @@
         }
       ],
       "/thoughts/system-model": [
-        {
-          "source": "/thoughts/Rhizome-Proposal",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
         {
           "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
@@ -16999,11 +16974,6 @@
         },
         {
           "source": "/thoughts/Dunbars-Number",
-          "target": "/thoughts/web3",
-          "text": "web3"
-        },
-        {
-          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/web3",
           "text": "web3"
         },
@@ -19478,18 +19448,18 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/Degraded-Blockchain-problem",
-      "text": "degraded blockchain problem"
+      "target": "/thoughts/decentralization",
+      "text": "decentralization"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/posts/digital-gardening",
-      "text": "digital garden"
+      "target": "/thoughts/interoperability",
+      "text": "interoperability"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/Rhizome-Philosophy",
-      "text": "Rhizome's Philosophy"
+      "target": "/thoughts/local-first-software",
+      "text": "local-first software"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
@@ -19503,28 +19473,13 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/web3",
-      "text": "web3"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/Degraded-Blockchain-problem",
-      "text": "degraded blockchain problem"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/system-model",
-      "text": "system model"
-    },
-    {
-      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Raft-Consensus-Algorithm",
       "text": "Raft consensus protocol"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
-      "target": "/thoughts/pseudonymity",
-      "text": "pseudonymous web"
+      "target": "/thoughts/state-channels",
+      "text": "state channels"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
