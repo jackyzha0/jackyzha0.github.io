@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> constructed by the child using inborn mental equipment but operating on information provided by the environment
+
 ## [Mindstorms](thoughts/Mindstorms.md)
 "As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."
 

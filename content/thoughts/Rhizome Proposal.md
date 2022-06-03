@@ -8,8 +8,6 @@ tags:
 
 > Enabling collaboration at scale while keeping local conditions in mind
 
-
-
 The competitive advantage of the vast majority of today's centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren't difficult to replicate -- in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.
 
 These platforms, especially aggregators, are *incentivized* to resist [[thoughts/decentralization|decentralization]] and [[thoughts/interoperability|interoperability]]. After all, 'data is the new oil'. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.
@@ -37,6 +35,7 @@ Peer-to-peer technology has existed for a while and in theory, gets quite close 
 So why does it fall short?
 
 ### 1. Running your own infrastructure
+
 > Even nerds do not want to run their own servers at this point. Even organizations building software full time do not want to run their own servers at this point. If there’s one thing I hope we’ve learned about the world, it’s that people do not want to run their own servers.
 > 
 > Moxie in *My first impressions of Web3*[^3]
@@ -56,6 +55,10 @@ This means that *asynchronous collaboration isn't possible* in most peer-to-peer
 
 ### 3. Existing network effects
 Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are 'export' tools on platforms, they are the worst they can be while still meeting [GDPR Requirements](https://gdpr-info.eu/art-20-gdpr/). New platforms almost never have 'import' tools because each platform has their own data format and that format changes unpredictably. This is [creates a form of n-to-n problem](https://twitter.com/andy_matuschak/status/1452438198668328960) where every app needs to know what the APIs of another app are to even begin to interoperate. 
+
+> "But usually you don't want a dead snapshot; you want to "use this data elsewhere"—which requires repeatedly exporting & reconciling."
+> 
+> [Andy Matuschak on Twitter](https://twitter.com/andy_matuschak/status/1452438176996347907)
 
 This means that, even if an alternative platform offers a better service, switching is often impossible.
 
