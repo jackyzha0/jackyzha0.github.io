@@ -6,8 +6,12 @@ tags:
 - rhizome
 ---
 
+## June
+### June 1st - June 3rd
+- Had a call with a few others folks working adjacent to decentralized infrastructure and people seemed pretty excited about the proposal! It was the first time in the past month that I felt pretty confident about the project when talking about this with others, definitely a personal milestone :)
+
 ## May
-### May 28th - Jun 1
+### May 28th - May 29th
 - Attending friends' graduation for the past few days, crazy to think that this will be the last time I see some of these friends for a long time.
 - Worked on thinking about and polishing my grant proposal, finally getting to some phrasings that resonate and sound good
 

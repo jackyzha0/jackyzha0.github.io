@@ -26,6 +26,7 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 	- Imagine two groups of early humans competing for the same resources who lived pretty much the same
 	- The first group gossiped and told stories during their leisure time while the second group continued working
 	- We know the first group survived because that's us! So why is story telling so evolutionarily beneficial? It's a form of simulation (see also: [[thoughts/consciousness#Behaviourist approaches|behaviourist approaches to consciousness]])
+
 ### Classic Story Structures
 - Freytag's Pyramid
 	- Exposition
@@ -51,7 +52,7 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 ### Aspects of Stories
 - McGuffin: an object, device, or event that is necessary to the plot and the motivation of the characters, but insignificant, unimportant, or irrelevant in itself.
 - The universal grammar for stories: character + conflict = change
-- Plot: the how of the story. Explicit
+- Plot: the how of the story. Explicit. A series of actions, taken by characters, towards their wants, needs or desires
 - Theme: the why of the story, the "so what". Should be
 	- Universal
 	- Specific
@@ -66,3 +67,24 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 - Vagueness (unclear) vs Ambiguity (up to interpretation)
 - Deus Ex Machina: god from the machine, heavy handed use of magic or coincidence to solve a conflict
 - Characters: be aware of your defaults
+	- There not always a person but instead an element of storytelling -- a vehicle on which the action of the story plays out
+
+### Storytelling techniques
+- Voice
+	- How your characters speak, their voice and diction
+	- The language you use as the author
+- Irony
+	- Verbal irony: the device by which we say one thing and mean another
+	- Dramatic irony: the device by which the audience has crucial information that the characters do not
+	- Cosmic irony: our understanding of the human condition, in which efforts are thwarted despite our best intentions
+
+### Poetry
+- Assonance: repetition of a vowel sound between consonants that may or may not match
+- Consonance: repetition of the consonant that concludes a word or syllable
+- Alliteration: repetition of an initial consonant sound
+- Rhyme
+	- True rhyme: both the vowel and consonant of the last accented syllable correspond
+	- Internal rhyme: the end of one line rhymes into the beginning or middle of noather
+	- Off-rhyme: near-rhyme, slightly discordant or 'not quire there' rhymes (four-inch, door hinge)
+- Line: a typographical break representing a slight oral pause or hesitation
+	- It adds a kind of emphasis both to the last word of the line and the first of the next line
