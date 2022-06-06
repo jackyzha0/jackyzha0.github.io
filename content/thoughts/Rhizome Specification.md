@@ -9,6 +9,8 @@ tags:
 > See also: [[thoughts/Rhizome Research Log|Research Log]]
 
 ## Misc notes
+- good datastructures to have as primitives
+	- 
 - should provide key components
 	- logical pipes -> connectivity between nodes
 	- host bootstrapping -> akin to DHCP, set of protocols supported, basic info and about where to connect for discovery

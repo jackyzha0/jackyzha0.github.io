@@ -21,7 +21,7 @@ Goals:
 5. Cryptographically verifiable
 
 ## High level overview
-A DID is a unique string that has a specific syntax. It can be resolved to a *DID Document* in a global, decentralized, key-value database (Verifiable Data Registry).
+A DID is a unique string that has a specific syntax. It can be resolved to a *DID Document* (also called a DDO - DID descriptor object) in a global, decentralized, key-value database (Verifiable Data Registry).
 
 It can be on any and multiple personal device that you own!
 
@@ -42,4 +42,9 @@ A DID Document can have arbitrary content. It contains references to "controller
 - Easily send encrypted messages
 - Authorize delegates
 - Usage and ownership on *your own terms* -- without surveillance or middlemen
-- 
+
+## Creating DIDs using IPLD
+- In IPID, associating the DID document with a DID is accomplished by cryptographically publishing the [[thoughts/CID|CID]] to the IPNS public key associated with the identity owner (DID method specific identifier). Any updates to the DID document are saved to IPLD and the resulting hash is published to IPNS cryptographically associating the new CID with the DID (for IPID this is the multihash of the public key). IPID uses a PubSub model for realtime updates to the DID.
+	- This is self-attesting and does not facilitate consensus of the document across peers
+	- Sometimes described as the "microledger" approach
+- More reading in [RWoT 7, 2018](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did.md)
