@@ -1278,6 +1278,13 @@
           "text": "Goodhart's Law"
         }
       ],
+      "/thoughts/Coraline-Ada-Ehmke": [
+        {
+          "source": "/thoughts/Coraline-Ada-Ehmke",
+          "target": "/thoughts/software-and-politics",
+          "text": "political"
+        }
+      ],
       "/thoughts/DHCP": [
         {
           "source": "/thoughts/DHCP",
@@ -2338,6 +2345,11 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/idea-list",
           "text": "here"
+        },
+        {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "raft Consensus Algorithm"
         },
         {
           "source": "/thoughts/Projects",
@@ -10608,6 +10620,11 @@
       ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
+          "source": "/thoughts/Projects",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "raft Consensus Algorithm"
+        },
+        {
           "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft consensus protocol"
@@ -16270,6 +16287,11 @@
       ],
       "/thoughts/software-and-politics": [
         {
+          "source": "/thoughts/Coraline-Ada-Ehmke",
+          "target": "/thoughts/software-and-politics",
+          "text": "political"
+        },
+        {
           "source": "/thoughts/climate-tech",
           "target": "/thoughts/software-and-politics",
           "text": "software and politics"
@@ -18418,6 +18440,11 @@
       "text": "Goodhart's Law"
     },
     {
+      "source": "/thoughts/Coraline-Ada-Ehmke",
+      "target": "/thoughts/software-and-politics",
+      "text": "political"
+    },
+    {
       "source": "/thoughts/DHCP",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
@@ -19386,6 +19413,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/idea-list",
       "text": "here"
+    },
+    {
+      "source": "/thoughts/Projects",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "raft Consensus Algorithm"
     },
     {
       "source": "/thoughts/Projects",

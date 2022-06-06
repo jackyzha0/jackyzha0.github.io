@@ -573,6 +573,24 @@ if (!doNotTrack) {
 <li>IPLD: data layer, standards and formats to build Merkle-DAG structures (quasi-filesystem)</li>
 <li>Multiformats: formatting structures for self-describing values</li>
 </ul>
+<p>Publishing content</p>
+<ul>
+<li>Chunk the content and deduplicate chunks</li>
+<li>Obtain CID</li>
+<li>Add the content to the network
+<ul>
+<li>Not the actual content, just the provider record to the DHT</li>
+</ul>
+</li>
+</ul>
+<p>Consuming content as a peer</p>
+<ul>
+<li>Get CID (out of band)</li>
+<li>Using DHT, resolve CID to peer</li>
+<li>Contact peer to ask for CID content</li>
+<li>Fetch content and cache a copy</li>
+<li>Serve local copy upon subsequent request</li>
+</ul>
  
 
     </article>
