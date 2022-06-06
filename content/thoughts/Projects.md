@@ -8,6 +8,13 @@ tags:
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
+## miniraft - <1kloc Raft consensus algorithm implementation
+A minimal implementation of the [[thoughts/Raft Consensus Algorithm|raft Consensus Algorithm]] with a focus on readability/understandability.
+
+This project was created as an exercise in implementing and learning about distributed systems. Do NOT use this in production.
+
+[GitHub](https://github.com/jackyzha0/miniraft), [Documentation](https://jzhao.xyz/miniraft/miniraft/)
+
 ## Cursor Chat -- open source library for digital presence
 
 [GitHub](https://github.com/jackyzha0/cursor-chat), [Demo](https://jzhao.xyz/cursor-chat/)
