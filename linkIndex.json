@@ -1315,6 +1315,11 @@
           "source": "/thoughts/DID",
           "target": "/thoughts/blockchain",
           "text": "blockchains"
+        },
+        {
+          "source": "/thoughts/DID",
+          "target": "/thoughts/CID",
+          "text": "CID"
         }
       ],
       "/thoughts/DNS": [
@@ -1669,6 +1674,23 @@
           "source": "/thoughts/How-to-do-Nothing",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "maintenance"
+        }
+      ],
+      "/thoughts/IPFS": [
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/CID",
+          "text": "CID"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/content-addressed-storage",
+          "text": "content-address"
         }
       ],
       "/thoughts/In-Over-Our-Heads": [
@@ -9165,6 +9187,18 @@
           "text": "Buddhist"
         }
       ],
+      "/thoughts/CID": [
+        {
+          "source": "/thoughts/DID",
+          "target": "/thoughts/CID",
+          "text": "CID"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/CID",
+          "text": "CID"
+        }
+      ],
       "/thoughts/CRDT": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -11959,6 +11993,13 @@
           "source": "/thoughts/writing",
           "target": "/thoughts/contact-language",
           "text": "contact language"
+        }
+      ],
+      "/thoughts/content-addressed-storage": [
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/content-addressed-storage",
+          "text": "content-address"
         }
       ],
       "/thoughts/context": [
@@ -15160,6 +15201,11 @@
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
           "target": "/thoughts/peer-to-peer",
           "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/peer-to-peer",
+          "text": "p2p"
         },
         {
           "source": "/thoughts/NAT",
@@ -18407,6 +18453,11 @@
       "text": "blockchains"
     },
     {
+      "source": "/thoughts/DID",
+      "target": "/thoughts/CID",
+      "text": "CID"
+    },
+    {
       "source": "/thoughts/DNS",
       "target": "/thoughts/Internet",
       "text": "Internet"
@@ -18725,6 +18776,21 @@
       "source": "/thoughts/How-to-do-Nothing",
       "target": "/thoughts/creation-vs-maintenance",
       "text": "maintenance"
+    },
+    {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/peer-to-peer",
+      "text": "p2p"
+    },
+    {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/CID",
+      "text": "CID"
+    },
+    {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/content-addressed-storage",
+      "text": "content-address"
     },
     {
       "source": "/thoughts/In-Over-Our-Heads",

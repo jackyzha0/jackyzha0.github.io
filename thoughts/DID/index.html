@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">DID</h1>
     <article>
       <p class="meta">
-          Last updated May 29, 2022
+          Last updated June 6, 2022
       </p>
       <ul class="tags">
     
@@ -482,6 +482,17 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#high-level-overview">High level overview</a></li>
+    <li><a href="#what-it-enables">What it enables</a></li>
+    <li><a href="#creating-dids-using-ipld">Creating DIDs using IPLD</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -495,6 +506,38 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -647,7 +690,7 @@ if (!doNotTrack) {
 <li>Cryptographically verifiable</li>
 </ol>
 <a href="#high-level-overview"><h2 id="high-level-overview"><span class="hanchor" ariaLabel="Anchor"># </span>High level overview</h2></a>
-<p>A DID is a unique string that has a specific syntax. It can be resolved to a <em>DID Document</em> in a global, decentralized, key-value database (Verifiable Data Registry).</p>
+<p>A DID is a unique string that has a specific syntax. It can be resolved to a <em>DID Document</em> (also called a DDO - DID descriptor object) in a global, decentralized, key-value database (Verifiable Data Registry).</p>
 <p>It can be on any and multiple personal device that you own!</p>
 <p>Format: <code>did:xyz:abcde123456</code></p>
 <ol>
@@ -665,7 +708,18 @@ if (!doNotTrack) {
 <li>Easily send encrypted messages</li>
 <li>Authorize delegates</li>
 <li>Usage and ownership on <em>your own terms</em> &ndash; without surveillance or middlemen</li>
-<li></li>
+</ul>
+<a href="#creating-dids-using-ipld"><h2 id="creating-dids-using-ipld"><span class="hanchor" ariaLabel="Anchor"># </span>Creating DIDs using IPLD</h2></a>
+<ul>
+<li>In IPID, associating the DID document with a DID is accomplished by cryptographically publishing the <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CID</a> to the IPNS public key associated with the identity owner (DID method specific identifier). Any updates to the DID document are saved to IPLD and the resulting hash is published to IPNS cryptographically associating the new CID with the DID (for IPID this is the multihash of the public key). IPID uses a PubSub model for realtime updates to the DID.
+<ul>
+<li>This is self-attesting and does not facilitate consensus of the document across peers</li>
+<li>Sometimes described as the &ldquo;microledger&rdquo; approach</li>
+</ul>
+</li>
+<li>More reading in 
+
+<a href="https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did" rel="noopener">RWoT 7, 2018</a></li>
 </ul>
  
 

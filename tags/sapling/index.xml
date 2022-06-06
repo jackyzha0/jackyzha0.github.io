@@ -14,7 +14,7 @@
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
       <description>See also: [[thoughts/Rhizome Research Log|Research Log]]
- Misc notes  should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
+ Misc notes   good datastructures to have as primitives  should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
     </item>
     
     <item>

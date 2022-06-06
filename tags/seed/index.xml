@@ -6,7 +6,35 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CID</title>
+      <link>https://jzhao.xyz/thoughts/CID/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CID/</guid>
+      <description>Self-describing content-addressed identifiers for distributed systems
+ Basically a hash with some metadata</description>
+    </item>
+    
+    <item>
+      <title>Content addressed storage</title>
+      <link>https://jzhao.xyz/thoughts/content-addressed-storage/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/content-addressed-storage/</guid>
+      <description>If I identify the book by its content, saying &amp;ldquo;Check out the book called Why Information Grows by César Hidalgo.</description>
+    </item>
+    
+    <item>
+      <title>IPFS</title>
+      <link>https://jzhao.xyz/thoughts/IPFS/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/IPFS/</guid>
+      <description>IPFS is a decentralized storage and delivery network which builds on fundamental principles of [[thoughts/peer-to-peer|p2p]] networking and content-based addressing (see [[thoughts/CID|CID]])</description>
+    </item>
+    
     <item>
       <title>The Inner Lives of Books</title>
       <link>https://jzhao.xyz/thoughts/The-Inner-Lives-of-Books/</link>

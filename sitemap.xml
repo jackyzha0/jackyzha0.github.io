@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/CID/</loc>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/content-addressed-storage/</loc>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/IPFS/</loc>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-06-02T22:13:32-07:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-06-04T22:12:30-07:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/The-Inner-Lives-of-Books/</loc>
     <lastmod>2022-05-31T11:29:18-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-06-04T22:12:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/writing/</loc>
     <lastmod>2022-05-31T11:29:18-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/DID/</loc>
-    <lastmod>2022-05-29T10:52:12-07:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/state-channels/</loc>
     <lastmod>2022-05-28T18:19:37-07:00</lastmod>
@@ -42,7 +51,7 @@
     <lastmod>2022-05-10T16:59:45-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/rhizome/</loc>
-    <lastmod>2022-06-04T22:12:30-07:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</loc>
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
@@ -102,10 +111,10 @@
     <lastmod>2022-05-31T11:29:18-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Specification/</loc>
-    <lastmod>2022-05-03T20:50:04-04:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/sapling/</loc>
-    <lastmod>2022-06-04T22:12:30-07:00</lastmod>
+    <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</loc>
     <lastmod>2022-05-01T17:28:55-04:00</lastmod>
