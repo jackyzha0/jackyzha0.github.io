@@ -126,7 +126,7 @@ When Root and Trunk are combined, its properties handily solve or avert the thre
 - Hypercore/Dat Protocol:
 	- Extremely values aligned! Streaming based append-only log that aims to be the lego-block of distributed applications.
 	- Great developer experience.
-	- Use of DHT means that it doesn't need a signalling server for peer discovery.
+	- Use of [[thoughts/DHT|DHT]] means that it doesn't need a signalling server for peer discovery.
 	- Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system).
 	- Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously.
 	- Hypercore also does not guarantee long-term write-once storage.
@@ -136,7 +136,7 @@ When Root and Trunk are combined, its properties handily solve or avert the thre
 ### Research artifacts
 Blog posts explaining distributed systems concepts as I learn and become more familiar with them
 
-- Explainer on Raft
+- [[thoughts/Raft Consensus Algorithm|Explainer on the Raft Consensus Algorithm]]
 - Explainer on CRDTs
 - Modelling distributed systems
 	- [<1kloc Raft Implementation](https://github.com/jackyzha0/miniraft)

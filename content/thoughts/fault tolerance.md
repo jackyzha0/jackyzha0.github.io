@@ -12,20 +12,7 @@ How do we defend against attacks in [[thoughts/distributed systems|distributed s
 	- Probability of all $n$ replicas being faulty: $p^n$
 	- Probability of 1 or more replicas being faulty: $1 - (1-p)^n$
 
-Related: [game theory](thoughts/game%20theory.md), [[thoughts/Zooko's Triangle|Zooko's Triangle]]
-
-## Sybil Attacks
-[Source: Sybil attack on *Wikipedia*](https://en.wikipedia.org/wiki/Sybil_attack)
-
-Sybil attacks are also called sock puppetry
-
-Creating a large number of pseudonymous identities and uses them to gain a disproportionately large influence (e.g. control of >50% nodes allows you to 'override' the consensus)
-
-**3E's of Preventing Sybil Attacks**
-1. Entry Cost
-2. Existence Cost
-3. Exit Penalty
-
+Related: [game theory](thoughts/game%20theory.md), [[thoughts/Zooko's Triangle|Zooko's Triangle]], [[thoughts/Sybil Attack|Sybil attack]]
 ## Byzantine Faults
 Sources: [Byzantine Faults on *Wikipedia*](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper on the Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
 

@@ -18,11 +18,20 @@ Publishing content
 - Chunk the content and deduplicate chunks
 - Obtain CID
 - Add the content to the network
-	- Not the actual content, just the provider record to the DHT
+	- Not the actual content, just the provider record to the [[thoughts/DHT|DHT]]
 
 Consuming content as a peer
 - Get CID (out of band)
-- Using DHT, resolve CID to peer
+- Using [[thoughts/DHT|DHT]], resolve CID to peer
 - Contact peer to ask for CID content
 - Fetch content and cache a copy
 - Serve local copy upon subsequent request
+
+## Encoding/decoding
+How does the system decode the hashes that it gets into the component data structures?
+
+Codecs! IPLD codecs are functions that transform IPLD Data Model into serialized bytes so you can send and share data, and transform serialized bytes back into IPLD Data Model so you can work with it. The [[thoughts/CID|CID]] includes an indicator called a multicodec (opens new window)to tell us which codec to use!
+
+Systems can build abstractions on top of this. For example, IPFS encodes the UnixFS using DAG-PB (which is a IPLD codec).
+
+> Because the CID can describe different codecs relating to different systems, all sorts of systems can interoperate using CIDs, and IPLD and process and cross-link data from any of them.

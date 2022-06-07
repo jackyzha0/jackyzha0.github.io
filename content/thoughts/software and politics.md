@@ -5,6 +5,10 @@ tags:
 - seed
 ---
 
+> "Computers play a fundamental role in making the world — and above all the built structure of the world — alive, humane, ecologically profound, and with a deep living structure"
+> 
+> -- Christopher Alexander to a room of 
+
 [Do Artifacts Have Politics](thoughts/Do%20Artifacts%20Have%20Politics.md)? Yes, they do.
 
 ## Politics for Software

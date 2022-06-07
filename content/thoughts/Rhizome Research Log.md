@@ -7,6 +7,11 @@ tags:
 ---
 
 ## June
+### June 4th - June 7th
+- Getting back into a working groove after moving again, Arizona is ridiculously hot. Made the dumb mistake of walking to the grocery instead of taking transit lol
+- Learned more about underlying datastructures of [[thoughts/IPFS|IPFS]] including [[thoughts/CID|CIDs]]
+	- Potential for interop between IPFS and [[thoughts/DID#Creating DIDs using IPLD|DID Documents]]?
+
 ### June 1st - June 3rd
 - Had a call with a few others folks working adjacent to decentralized infrastructure and people seemed pretty excited about the proposal! It was the first time in the past month that I felt pretty confident about the project when talking about this with others, definitely a personal milestone :)
 
