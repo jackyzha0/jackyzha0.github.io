@@ -34,7 +34,7 @@
     
     
     <style>
-        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}
+        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}.poem{font-family:Spectral,serif;font-size:1.1rem;padding:0}
     </style>
     
     
@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Raft Consensus Algorithm</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated June 7, 2022
       </p>
       <ul class="tags">
     
@@ -501,6 +501,7 @@ if (!doNotTrack) {
     <li><a href="#log-replication">Log Replication</a></li>
     <li><a href="#unbounded-logs-log-compaction">Unbounded Logs (Log Compaction)</a></li>
     <li><a href="#rpcs">RPCs</a></li>
+    <li><a href="#implementation">Implementation</a></li>
   </ol>
 </nav>
       </aside>
@@ -530,8 +531,6 @@ if (!doNotTrack) {
   
     
   
-    
-  
   
     
       
@@ -553,40 +552,6 @@ if (!doNotTrack) {
 
   
   
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
   
     
   
@@ -626,60 +591,6 @@ if (!doNotTrack) {
   
     
   
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
   
     
       
@@ -710,8 +621,6 @@ if (!doNotTrack) {
   
     
   
-    
-  
   
     
       
@@ -721,12 +630,6 @@ if (!doNotTrack) {
       
       
       
-      
-      
-      
-        
-        
-        
       
     
   
@@ -735,6 +638,28 @@ if (!doNotTrack) {
   
   
     
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
   
     
   
@@ -774,6 +699,34 @@ if (!doNotTrack) {
   
     
   
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
     
   
   
@@ -806,6 +759,34 @@ if (!doNotTrack) {
   
     
   
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
     
   
   
@@ -838,8 +819,6 @@ if (!doNotTrack) {
   
     
   
-    
-  
   
     
       
@@ -861,8 +840,6 @@ if (!doNotTrack) {
 
   
   
-  
-    
   
     
   
@@ -982,217 +959,17 @@ if (!doNotTrack) {
 <p>Other options like log cleaning and log-structured merge trees are also possible.</p>
 <a href="#rpcs"><h2 id="rpcs"><span class="hanchor" ariaLabel="Anchor"># </span>RPCs</h2></a>
 <p>All Raft RPCs are idempotent so sending multiple RPCs causes no harms (e.g. telling a follower to AppendEntries it already has does nothing).</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">  1
-</span><span class="lnt">  2
-</span><span class="lnt">  3
-</span><span class="lnt">  4
-</span><span class="lnt">  5
-</span><span class="lnt">  6
-</span><span class="lnt">  7
-</span><span class="lnt">  8
-</span><span class="lnt">  9
-</span><span class="lnt"> 10
-</span><span class="lnt"> 11
-</span><span class="lnt"> 12
-</span><span class="lnt"> 13
-</span><span class="lnt"> 14
-</span><span class="lnt"> 15
-</span><span class="lnt"> 16
-</span><span class="lnt"> 17
-</span><span class="lnt"> 18
-</span><span class="lnt"> 19
-</span><span class="lnt"> 20
-</span><span class="lnt"> 21
-</span><span class="lnt"> 22
-</span><span class="lnt"> 23
-</span><span class="lnt"> 24
-</span><span class="lnt"> 25
-</span><span class="lnt"> 26
-</span><span class="lnt"> 27
-</span><span class="lnt"> 28
-</span><span class="lnt"> 29
-</span><span class="lnt"> 30
-</span><span class="lnt"> 31
-</span><span class="lnt"> 32
-</span><span class="lnt"> 33
-</span><span class="lnt"> 34
-</span><span class="lnt"> 35
-</span><span class="lnt"> 36
-</span><span class="lnt"> 37
-</span><span class="lnt"> 38
-</span><span class="lnt"> 39
-</span><span class="lnt"> 40
-</span><span class="lnt"> 41
-</span><span class="lnt"> 42
-</span><span class="lnt"> 43
-</span><span class="lnt"> 44
-</span><span class="lnt"> 45
-</span><span class="lnt"> 46
-</span><span class="lnt"> 47
-</span><span class="lnt"> 48
-</span><span class="lnt"> 49
-</span><span class="lnt"> 50
-</span><span class="lnt"> 51
-</span><span class="lnt"> 52
-</span><span class="lnt"> 53
-</span><span class="lnt"> 54
-</span><span class="lnt"> 55
-</span><span class="lnt"> 56
-</span><span class="lnt"> 57
-</span><span class="lnt"> 58
-</span><span class="lnt"> 59
-</span><span class="lnt"> 60
-</span><span class="lnt"> 61
-</span><span class="lnt"> 62
-</span><span class="lnt"> 63
-</span><span class="lnt"> 64
-</span><span class="lnt"> 65
-</span><span class="lnt"> 66
-</span><span class="lnt"> 67
-</span><span class="lnt"> 68
-</span><span class="lnt"> 69
-</span><span class="lnt"> 70
-</span><span class="lnt"> 71
-</span><span class="lnt"> 72
-</span><span class="lnt"> 73
-</span><span class="lnt"> 74
-</span><span class="lnt"> 75
-</span><span class="lnt"> 76
-</span><span class="lnt"> 77
-</span><span class="lnt"> 78
-</span><span class="lnt"> 79
-</span><span class="lnt"> 80
-</span><span class="lnt"> 81
-</span><span class="lnt"> 82
-</span><span class="lnt"> 83
-</span><span class="lnt"> 84
-</span><span class="lnt"> 85
-</span><span class="lnt"> 86
-</span><span class="lnt"> 87
-</span><span class="lnt"> 88
-</span><span class="lnt"> 89
-</span><span class="lnt"> 90
-</span><span class="lnt"> 91
-</span><span class="lnt"> 92
-</span><span class="lnt"> 93
-</span><span class="lnt"> 94
-</span><span class="lnt"> 95
-</span><span class="lnt"> 96
-</span><span class="lnt"> 97
-</span><span class="lnt"> 98
-</span><span class="lnt"> 99
-</span><span class="lnt">100
-</span><span class="lnt">101
-</span><span class="lnt">102
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">type</span> <span class="nc">NodeId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">u64</span><span class="w"> </span><span class="c1">// can be pretty much anything that satisfies Ord + Clone + Display
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">LogEntry</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">payload</span>: <span class="nc">Any</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">term</span>: <span class="kt">u64</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Server</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Persistent State
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">id</span>: <span class="nc">NodeId</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// last term we have seen
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">currentTerm</span>: <span class="kt">u32</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">// id of server that received our vote in current term
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">votedFor</span>: <span class="nb">Option</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">log</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="n">LogEntry</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Volatile State
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// index of highest log entry known to be committed
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">commitIndex</span>: <span class="kt">u32</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">// index of highest log entry applied to state machine
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">lastApplied</span>: <span class="kt">u32</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">// Volatile State on leaders
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// map of server id -&gt; index of the next log entry to send to that server
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// initialize all to last log index + 1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">nextIndex</span>: <span class="nc">Map</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="p">,</span><span class="w"> </span><span class="kt">u32</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// map of server id -&gt; index of highest log entry known to be replicated
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// initialize all to 0
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">matchIndex</span>: <span class="nc">Map</span><span class="o">&lt;</span><span class="n">NodeId</span><span class="p">,</span><span class="w"> </span><span class="kt">u32</span><span class="o">&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">impl</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// Invoked by leader to replicate log entries, also used as heartbeat
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// Returns: (term, success)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">//   term: currentTerm for leader to update itself
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">//   success: true if follower contained entry matching prevLogIndex and prevLogTerm
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="k">fn</span> <span class="nf">appendEntries</span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">term</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">          </span><span class="c1">// leader&#39;s term
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">leaderId</span>: <span class="nc">NodeId</span><span class="p">,</span><span class="w">   </span><span class="c1">// so follower can redirect clients
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">prevLogIndex</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">  </span><span class="c1">// index of log entry immediately preceding new ones
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">prevLogTerm</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">   </span><span class="c1">// term of prevLogIndex entry
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">entries</span>: <span class="p">[</span><span class="n">LogEntry</span><span class="p">]</span><span class="w"> </span><span class="c1">// log entries to store
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">leaderCommit</span>: <span class="kt">u32</span>   <span class="c1">// leader&#39;s commit index
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">(</span><span class="kt">u32</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// If a server receives a request with a stale term number, it rejects the request.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">currentTerm</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Consistency check for second property of Log Matching Property:
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="c1">// If two entries in different logs have the same index and term,
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="c1">// then the logs are identical in all preceding entries.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">[</span><span class="n">prevLogIndex</span><span class="p">].</span><span class="n">term</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">prevLogTerm</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Remove any conflicting entries in the follower&#39;s log
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="c1">// Conflict is defined as when an entry has the same index but different terms
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">entry</span><span class="p">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">entries</span><span class="p">.</span><span class="n">vec</span><span class="p">().</span><span class="n">enumerate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kd">let</span><span class="w"> </span><span class="n">our_term</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">get_term</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">if</span><span class="w"> </span><span class="n">our_term</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">entry</span><span class="p">.</span><span class="n">term</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">drain</span><span class="p">(</span><span class="n">i</span><span class="o">..</span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">len</span><span class="p">())</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Appends entries from the leader&#39;s log that are not already in the log
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">entry</span><span class="p">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">entries</span><span class="p">.</span><span class="n">vec</span><span class="p">().</span><span class="n">enumerate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Update commitIndex if applicable
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="n">leaderCommit</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">commitIndex</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="c1">// set commit index to be the minimum of leaderCommit and index of last new entry
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">			</span><span class="bp">self</span><span class="p">.</span><span class="n">commitIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">leaderCommit</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">fn</span> <span class="nf">requestVote</span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">term</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">           </span><span class="c1">// candidate&#39;s term
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">candidateId</span>: <span class="nc">NodeId</span><span class="p">,</span><span class="w"> </span><span class="c1">// candidate requesting vote
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogIndex</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">   </span><span class="c1">// index of candidate&#39;s last log entry
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">lastLogTerm</span>: <span class="kt">u32</span><span class="p">,</span><span class="w">    </span><span class="c1">// term of candidate&#39;s last log entry
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">(</span><span class="kt">u32</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// If a server receives a request with a stale term number, it rejects the request.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="n">term</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">currentTerm</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Only grant vote if we haven&#39;t voted this term and candidate&#39;s log is
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="c1">// at least as up-to-date as our log
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="k">if</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">votedFor</span><span class="p">.</span><span class="n">is_none</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">lastLogIndex</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">log</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="c1">// Don&#39;t vote by default
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div> 
+<a href="#implementation"><h2 id="implementation"><span class="hanchor" ariaLabel="Anchor"># </span>Implementation</h2></a>
+<p>You can find a reference implementation on GitHub</p>
+<ul>
+<li>
+
+<a href="https://github.com/jackyzha0/miniraft" rel="noopener">Miniraft Github Repository</a></li>
+<li>
+
+<a href="https://jzhao.xyz/miniraft/miniraft/" rel="noopener">Miniraft Crate Documentation</a></li>
+</ul>
+ 
 
     </article>
     <hr/>
@@ -1243,6 +1020,10 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Projects/" data-ctx="raft Consensus Algorithm" data-src="/thoughts/Projects" class="internal-link">Projects</a>
       </li>
@@ -1250,7 +1031,7 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/Rhizome-Proposal/" data-ctx="Raft consensus protocol" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+        <a href="/thoughts/Rhizome-Proposal/" data-ctx="Explainer on the Raft Consensus Algorithm" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
       </li>
       
       

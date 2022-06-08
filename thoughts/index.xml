@@ -6,7 +6,56 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DHT</title>
+      <link>https://jzhao.xyz/thoughts/DHT/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DHT/</guid>
+      <description>One solution for &amp;lsquo;decentralized&amp;rsquo; registry of peers.
+ The big hash table in the sky</description>
+    </item>
+    
+    <item>
+      <title>Kademlia DHT</title>
+      <link>https://jzhao.xyz/thoughts/Kademlia-DHT/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Kademlia-DHT/</guid>
+      <description>Summarization of the Kademlia paper
+ A [[thoughts/peer-to-peer|peer-to-peer]] distributed hash table ([[thoughts/DHT|DHT]])</description>
+    </item>
+    
+    <item>
+      <title>Solid</title>
+      <link>https://jzhao.xyz/thoughts/Solid/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Solid/</guid>
+      <description>Solid is a specification that lets people store their data securely in decentralized data stores called Pods.</description>
+    </item>
+    
+    <item>
+      <title>Sybil Attack</title>
+      <link>https://jzhao.xyz/thoughts/Sybil-Attack/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Sybil-Attack/</guid>
+      <description>Source: Sybil attack on Wikipedia
+Sybil attacks are also called sock puppetry</description>
+    </item>
+    
+    <item>
+      <title>WebID</title>
+      <link>https://jzhao.xyz/thoughts/WebID/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/WebID/</guid>
+      <description>Similar to [[thoughts/DID|DIDs]]
+ A WebID is a way to uniquely identify a person, company, organisation, or other agent using a URI.</description>
+    </item>
+    
     <item>
       <title>Coraline Ada Ehmke</title>
       <link>https://jzhao.xyz/thoughts/Coraline-Ada-Ehmke/</link>
@@ -253,7 +302,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 1st - June 3rd  Had a call with a few others folks working adjacent to decentralized infrastructure and people seemed pretty excited about the proposal!</description>
+      <description>June June 4th - June 7th  Getting back into a working groove after moving again, Arizona is ridiculously hot.</description>
     </item>
     
     <item>
@@ -3012,8 +3061,7 @@ Definitions Peter Galisons&amp;rsquo; notion Trading Zone -&amp;gt; sites where 
       <pubDate>Tue, 13 Jul 2021 16:41:38 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/software-and-politics/</guid>
-      <description>Do Artifacts Have Politics? Yes, they do.
-Politics for Software  Source: Politics for Software Engineers by Steven Buss</description>
+      <description>&amp;ldquo;Computers play a fundamental role in making the world — and above all the built structure of the world — alive, humane, ecologically profound, and with a deep living structure&amp;rdquo;</description>
     </item>
     
     <item>

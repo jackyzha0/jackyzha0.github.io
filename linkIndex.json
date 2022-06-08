@@ -1302,6 +1302,13 @@
           "text": "UDP"
         }
       ],
+      "/thoughts/DHT": [
+        {
+          "source": "/thoughts/DHT",
+          "target": "/thoughts/Sybil-Attack",
+          "text": "Sybil attack"
+        }
+      ],
       "/thoughts/DID": [
         {
           "source": "/thoughts/DID",
@@ -1698,6 +1705,21 @@
           "source": "/thoughts/IPFS",
           "target": "/thoughts/content-addressed-storage",
           "text": "content-address"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/CID",
+          "text": "CID"
         }
       ],
       "/thoughts/In-Over-Our-Heads": [
@@ -1871,6 +1893,23 @@
           "source": "/thoughts/Internet",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "maintenance"
+        }
+      ],
+      "/thoughts/Kademlia-DHT": [
+        {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP"
         }
       ],
       "/thoughts/Knowledge-Argument": [
@@ -2533,11 +2572,41 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Explainer on the Raft Consensus Algorithm"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Rhizome-Research-Log",
           "text": "research log here"
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/IPFS",
+          "text": "IPFS"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CID",
+          "text": "CIDs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/DHT",
+          "text": "DHTs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/DID",
@@ -3102,6 +3171,13 @@
           "source": "/thoughts/Vanilla-Ice-Cream-effect",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        }
+      ],
+      "/thoughts/WebID": [
+        {
+          "source": "/thoughts/WebID",
+          "target": "/thoughts/DID",
+          "text": "DIDs"
         }
       ],
       "/thoughts/World-Building": [
@@ -4720,6 +4796,11 @@
           "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/Zookos-Triangle",
           "text": "Zooko's Triangle"
+        },
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Sybil-Attack",
+          "text": "Sybil attack"
         },
         {
           "source": "/thoughts/fault-tolerance",
@@ -9209,6 +9290,16 @@
           "source": "/thoughts/IPFS",
           "target": "/thoughts/CID",
           "text": "CID"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/CID",
+          "text": "CID"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CID",
+          "text": "CIDs"
         }
       ],
       "/thoughts/CRDT": [
@@ -9295,11 +9386,43 @@
           "text": "DHCP"
         }
       ],
+      "/thoughts/DHT": [
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/IPFS",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/DHT",
+          "text": "DHT"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/DHT",
+          "text": "DHTs"
+        }
+      ],
       "/thoughts/DID": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/DID",
           "text": "DID"
+        },
+        {
+          "source": "/thoughts/WebID",
+          "target": "/thoughts/DID",
+          "text": "DIDs"
         }
       ],
       "/thoughts/DNS": [
@@ -9797,6 +9920,11 @@
           "text": "IP addresses"
         },
         {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP"
+        },
+        {
           "source": "/thoughts/NAT",
           "target": "/thoughts/IP-Addresses",
           "text": "IP addresses"
@@ -9820,6 +9948,13 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/IP-Addresses",
           "text": "IP addresses"
+        }
+      ],
+      "/thoughts/IPFS": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/IPFS",
+          "text": "IPFS"
         }
       ],
       "/thoughts/In-Over-Our-Heads": [
@@ -9983,6 +10118,13 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        }
+      ],
+      "/thoughts/Kademlia-DHT": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia"
         }
       ],
       "/thoughts/Knowledge-Argument": [
@@ -10630,6 +10772,11 @@
           "text": "Raft consensus protocol"
         },
         {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Explainer on the Raft Consensus Algorithm"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
@@ -10781,6 +10928,18 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Stream-of-Consciousness",
           "text": "Stream of Consciousness"
+        }
+      ],
+      "/thoughts/Sybil-Attack": [
+        {
+          "source": "/thoughts/DHT",
+          "target": "/thoughts/Sybil-Attack",
+          "text": "Sybil attack"
+        },
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Sybil-Attack",
+          "text": "Sybil attack"
         }
       ],
       "/thoughts/TCP": [
@@ -15225,6 +15384,11 @@
           "text": "p2p"
         },
         {
+          "source": "/thoughts/Kademlia-DHT",
+          "target": "/thoughts/peer-to-peer",
+          "text": "peer-to-peer"
+        },
+        {
           "source": "/thoughts/NAT",
           "target": "/thoughts/peer-to-peer",
           "text": "peer-to-peer"
@@ -18460,6 +18624,11 @@
       "text": "UDP"
     },
     {
+      "source": "/thoughts/DHT",
+      "target": "/thoughts/Sybil-Attack",
+      "text": "Sybil attack"
+    },
+    {
       "source": "/thoughts/DID",
       "target": "/thoughts/Self-sovereign-Identity-SSI",
       "text": "self-sovereign identity"
@@ -18820,6 +18989,21 @@
       "text": "content-address"
     },
     {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/DHT",
+      "text": "DHT"
+    },
+    {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/DHT",
+      "text": "DHT"
+    },
+    {
+      "source": "/thoughts/IPFS",
+      "target": "/thoughts/CID",
+      "text": "CID"
+    },
+    {
       "source": "/thoughts/In-Over-Our-Heads",
       "target": "/thoughts/group-limits",
       "text": "group limits"
@@ -18983,6 +19167,21 @@
       "source": "/thoughts/Internet",
       "target": "/thoughts/creation-vs-maintenance",
       "text": "maintenance"
+    },
+    {
+      "source": "/thoughts/Kademlia-DHT",
+      "target": "/thoughts/peer-to-peer",
+      "text": "peer-to-peer"
+    },
+    {
+      "source": "/thoughts/Kademlia-DHT",
+      "target": "/thoughts/DHT",
+      "text": "DHT"
+    },
+    {
+      "source": "/thoughts/Kademlia-DHT",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP"
     },
     {
       "source": "/thoughts/Knowledge-Argument",
@@ -19591,8 +19790,38 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/DHT",
+      "text": "DHT"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Explainer on the Raft Consensus Algorithm"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/IPFS",
+      "text": "IPFS"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/CID",
+      "text": "CIDs"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/DHT",
+      "text": "DHTs"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Kademlia-DHT",
+      "text": "Kademlia"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -20108,6 +20337,11 @@
       "source": "/thoughts/Vanilla-Ice-Cream-effect",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/WebID",
+      "target": "/thoughts/DID",
+      "text": "DIDs"
     },
     {
       "source": "/thoughts/World-Building",
@@ -21598,6 +21832,11 @@
       "source": "/thoughts/fault-tolerance",
       "target": "/thoughts/Zookos-Triangle",
       "text": "Zooko's Triangle"
+    },
+    {
+      "source": "/thoughts/fault-tolerance",
+      "target": "/thoughts/Sybil-Attack",
+      "text": "Sybil attack"
     },
     {
       "source": "/thoughts/fault-tolerance",
