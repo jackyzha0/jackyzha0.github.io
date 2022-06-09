@@ -1521,6 +1521,13 @@
           "text": "trust"
         }
       ],
+      "/thoughts/FOAF": [
+        {
+          "source": "/thoughts/FOAF",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        }
+      ],
       "/thoughts/From-Counterculture-to-Cyberculture": [
         {
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
@@ -1932,6 +1939,18 @@
           "source": "/thoughts/Knowledge-Argument",
           "target": "/thoughts/potemkin-village",
           "text": "potemkin village"
+        }
+      ],
+      "/thoughts/LDP": [
+        {
+          "source": "/thoughts/LDP",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/LDP",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
         }
       ],
       "/thoughts/Lattice-Proposal": [
@@ -2433,6 +2452,13 @@
           "text": "original thing"
         }
       ],
+      "/thoughts/RDF": [
+        {
+          "source": "/thoughts/RDF",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
+        }
+      ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
           "source": "/thoughts/Raft-Consensus-Algorithm",
@@ -2825,6 +2851,23 @@
           "source": "/thoughts/Solana",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
+        }
+      ],
+      "/thoughts/Solid": [
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/HTTP",
+          "text": "HTTP"
+        },
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/WebID",
+          "text": "WebID"
         }
       ],
       "/thoughts/Stream-of-Consciousness": [
@@ -6928,6 +6971,13 @@
           "text": "TCP"
         }
       ],
+      "/thoughts/people-as-lighthouses": [
+        {
+          "source": "/thoughts/people-as-lighthouses",
+          "target": "/thoughts/friendship",
+          "text": "friendship"
+        }
+      ],
       "/thoughts/phenomenology": [
         {
           "source": "/thoughts/phenomenology",
@@ -9849,6 +9899,11 @@
       ],
       "/thoughts/HTTP": [
         {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/HTTP",
+          "text": "HTTP"
+        },
+        {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/HTTP",
           "text": "HTTP"
@@ -10154,6 +10209,13 @@
           "source": "/thoughts/friendship",
           "target": "/thoughts/Knowledge-Argument",
           "text": "Knowledge Argument"
+        }
+      ],
+      "/thoughts/LDP": [
+        {
+          "source": "/thoughts/RDF",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
         }
       ],
       "/thoughts/Lindy-effect": [
@@ -10730,6 +10792,28 @@
           "text": "Putnam's Ant Argument"
         }
       ],
+      "/thoughts/RDF": [
+        {
+          "source": "/thoughts/FOAF",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/LDP",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/LDP",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        }
+      ],
       "/thoughts/RPC": [
         {
           "source": "/thoughts/Raft-Consensus-Algorithm",
@@ -11232,6 +11316,13 @@
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/Vanilla-Ice-Cream-effect",
           "text": "Vanilla Ice Cream effect"
+        }
+      ],
+      "/thoughts/WebID": [
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/WebID",
+          "text": "WebID"
         }
       ],
       "/thoughts/Zookos-Triangle": [
@@ -13508,6 +13599,11 @@
         },
         {
           "source": "/thoughts/interdependence",
+          "target": "/thoughts/friendship",
+          "text": "friendship"
+        },
+        {
+          "source": "/thoughts/people-as-lighthouses",
           "target": "/thoughts/friendship",
           "text": "friendship"
         },
@@ -18831,6 +18927,11 @@
       "text": "trust"
     },
     {
+      "source": "/thoughts/FOAF",
+      "target": "/thoughts/RDF",
+      "text": "RDF"
+    },
+    {
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
       "target": "/thoughts/tribe-flourishing",
       "text": "tribal flourishing"
@@ -19214,6 +19315,16 @@
       "source": "/thoughts/Knowledge-Argument",
       "target": "/thoughts/potemkin-village",
       "text": "potemkin village"
+    },
+    {
+      "source": "/thoughts/LDP",
+      "target": "/thoughts/RDF",
+      "text": "RDF"
+    },
+    {
+      "source": "/thoughts/LDP",
+      "target": "/thoughts/RDF",
+      "text": "RDF"
     },
     {
       "source": "/thoughts/Lattice-Proposal",
@@ -19671,6 +19782,11 @@
       "text": "original thing"
     },
     {
+      "source": "/thoughts/RDF",
+      "target": "/thoughts/LDP",
+      "text": "LDP"
+    },
+    {
       "source": "/thoughts/Raft-Consensus-Algorithm",
       "target": "/thoughts/consensus",
       "text": "consensus"
@@ -20039,6 +20155,21 @@
       "source": "/thoughts/Solana",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
+    },
+    {
+      "source": "/thoughts/Solid",
+      "target": "/thoughts/HTTP",
+      "text": "HTTP"
+    },
+    {
+      "source": "/thoughts/Solid",
+      "target": "/thoughts/RDF",
+      "text": "RDF"
+    },
+    {
+      "source": "/thoughts/Solid",
+      "target": "/thoughts/WebID",
+      "text": "WebID"
     },
     {
       "source": "/thoughts/Stream-of-Consciousness",
@@ -23814,6 +23945,11 @@
       "source": "/thoughts/peer-to-peer",
       "target": "/thoughts/TCP",
       "text": "TCP"
+    },
+    {
+      "source": "/thoughts/people-as-lighthouses",
+      "target": "/thoughts/friendship",
+      "text": "friendship"
     },
     {
       "source": "/thoughts/phenomenology",

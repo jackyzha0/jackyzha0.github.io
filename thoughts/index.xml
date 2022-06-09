@@ -6,7 +6,25 @@
     <description>Recent content in Thoughts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LDP</title>
+      <link>https://jzhao.xyz/thoughts/LDP/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/LDP/</guid>
+      <description>Think of an LDP as a way of interacting with [[thoughts/RDF|RDF]] resources in a way that is similar to a web site with folders and documents in a RESTful manner.</description>
+    </item>
+    
+    <item>
+      <title>RDF</title>
+      <link>https://jzhao.xyz/thoughts/RDF/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/RDF/</guid>
+      <description>RDF is a standard model for data interchange on the Web</description>
+    </item>
+    
     <item>
       <title>FOAF</title>
       <link>https://jzhao.xyz/thoughts/FOAF/</link>
