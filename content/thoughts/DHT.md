@@ -13,6 +13,8 @@ Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with 
 
 Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)
 
+Common implementations include [[thoughts/Kademlia DHT|Kademlia DHT]] and Chord DHT.
+
 ### Applications to Torrent Software
 Old way was to use a tracker, you announce which file you are going to download to the tracker and the trackers sends back a list of peers. However, these trackers tend to go down easily (get sued)
 

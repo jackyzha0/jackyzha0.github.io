@@ -1,0 +1,35 @@
+---
+title: "Decentralized marketplace"
+date: 2022-06-09
+tags:
+- seed
+---
+
+Related: [[thoughts/decentralization|decentralization]], [[thoughts/funding|funding]], [[thoughts/web3|web3]]
+
+## Nanopayments
+"When you wake up in the morning and flick on a light switch, do you pause to think about how many tiny fractions of a penny that electricity costs? Or do you just flick on the light so you don’t bump your head?
+
+And if you could pay for other kinds of services the same way you pay for electricity — a tiny flow of resources that could be turned on or off at any moment — what possibilities would that open up?"
+
+Can be done through 2 main ways:
+1. [[thoughts/state channels|State channels]]
+2. Amortized cost through probabilistic payments (i.e. 1% chance to win $100 instead of $1 payment). Over time, the value transmitted on-chain will in expectation match the value represented in the probabilistic nanopayments.
+
+## Orchid
+[Website](https://www.orchid.com/)
+
+TLDR; decentralized VPN with nanopayment channels
+
+Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.
+
+They also offer prepaid access credits: A frictionless payment system
+
+Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service.
+
+## Golem
+[Website](https://blog.golemproject.net/golem-primer/)
+
+TLDR: Golem democratizes society’s access to computing power by creating a decentralized platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens
+
+>From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network

@@ -7,8 +7,16 @@ tags:
 ---
 
 ## June
+### June 9th
+- Lots of research, mostly around [[thoughts/FOAF|FOAF]], [[thoughts/LDP|LDP]], [[thoughts/RDF|RDF]]
+- Looked more into [[thoughts/decentralized marketplace|decentralized marketplaces]] like Raiden and Orchid to see how they handle payments
+
 ### June 8th
 - Got my first grant rejection from Emergent Ventures today :((
+	- Feeling.. kinda numb? I feel like grand scheme of things it doesn't matter but this is the first *hard* no that I've gotten
+	- Spent some time looking for some other grants but my conclusion is that I should spend more time getting shit done before asking for more funding.
+	- I have enough in savings to last me until end of summer but it means I'll have to start contracting during the school year which isn't ideal, but gives me pure focused time this summer to just do research.
+	- Onwards!
 - Lots of really great bits from Browser Co's piece on Optimizing for Feelings
 	- "Anything new is by nature without precedent — meaning, without data to know whether it will work or not. So when we approach building new things, we don’t optimize for metrics. We optimize for feelings"
 	- "How do you feel when you finally step foot in your own living room, after weeks away from home? When you plop down on your own bed, or whip up a meal in your own kitchen? It conjures up a specific feeling, doesn’t it? That’s because these spaces are a reflection of you — created by you, for you. Software can feel the same way if individuals have agency and sovereignty over what is on their screens."

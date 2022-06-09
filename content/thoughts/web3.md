@@ -73,9 +73,4 @@ Not just providing funding, 4 main value adds
 3. Connect -> creating a community of builders and support network
 4. Fund -> making it easy for developers to support each other
 
-### [Golem](https://blog.golemproject.net/golem-primer/)
-
-TLDR: Golem democratizes society’s access to computing power by creating a decentralized platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens
-
->From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network
-
+See also: [[thoughts/decentralized marketplace|marketplaces]]
