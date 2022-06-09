@@ -21,3 +21,4 @@ Some quotes to live by.
 12. "磨刀不誤砍柴功" -- Chinese Proverb. Taking a break to sharpen your saw will not delay you from cutting wood more
 13. Never be ashamed to let your feelings, smiles and tears shine a light in this world.
 14. Be humble at the mountaintops, be strong in the valleys, and be faithful in between. [Source](https://www.marcandangel.com/2022/01/18/19-great-truths-my-grandmother-told-me-on-her-90th-birthday/?curius=1417)
+15. "Anything new is by nature without precedent — meaning, without data to know whether it will work or not. So when we approach building new things, we don’t optimize for metrics. We optimize for feelings." [Source](https://browsercompany.substack.com/p/optimizing-for-feelings?s=r)

@@ -7,6 +7,12 @@ tags:
 ---
 
 ## June
+### June 8th
+- Got my first grant rejection from Emergent Ventures today :((
+- Lots of really great bits from Browser Co's piece on Optimizing for Feelings
+	- "Anything new is by nature without precedent — meaning, without data to know whether it will work or not. So when we approach building new things, we don’t optimize for metrics. We optimize for feelings"
+	- "How do you feel when you finally step foot in your own living room, after weeks away from home? When you plop down on your own bed, or whip up a meal in your own kitchen? It conjures up a specific feeling, doesn’t it? That’s because these spaces are a reflection of you — created by you, for you. Software can feel the same way if individuals have agency and sovereignty over what is on their screens."
+
 ### June 4th - June 7th
 - Getting back into a working groove after moving again, Arizona is ridiculously hot. Made the dumb mistake of walking to the grocery instead of taking transit lol
 - Learned more about underlying datastructures of [[thoughts/IPFS|IPFS]] including [[thoughts/CID|CIDs]]

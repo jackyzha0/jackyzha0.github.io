@@ -27,3 +27,20 @@ Worked a lot with Ruby, known for social justice work and activism. Transitioned
 - Opalgate
 	- "meh went on to state that he would knowingly and gladly accept working with a child molestor or cross-burning racist as long as their contributed code was good"
 - First-time contributor tag, good first issue, etc.
+
+Questions
+- Deciding to work within a company vs outside of it
+	- At what point do you leave?
+- Sustainability of working outside of the context of a company
+	- funding open source is hard
+	- intersection of social justice work and open source, v prone to burn out
+	- We can be successful while leading rich, full lives. Our success and value is not dependent on exerting all of our energy on contributing to software. (re: post-meritocracy)
+		- Don't bring your whole self to work? Is this what this is saying
+- 21:42 "I believe that as technologists we have a moral imperative to prevent our work from being used to harm others. Responsibility is about impact not intent. Freedom for freedom’s sake is incompatible with our responsibility to society." [Source](https://www.youtube.com/watch?v=_-WP9g4jCU0)
+- Whether https://ethicalsource.dev/ is worth doing
+	- ethics of AI/multiplicative technology
+	- how would gating open source technology look like
+- Early music streaming/torrent
+- Building things into tech vs relying on policy
+	- codifying/quantifying values in software -- is this possible
+- Target: 1500-3000 words
