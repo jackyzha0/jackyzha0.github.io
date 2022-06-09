@@ -3178,6 +3178,11 @@
           "source": "/thoughts/WebID",
           "target": "/thoughts/DID",
           "text": "DIDs"
+        },
+        {
+          "source": "/thoughts/WebID",
+          "target": "/thoughts/FOAF",
+          "text": "FOAFs"
         }
       ],
       "/thoughts/World-Building": [
@@ -9707,6 +9712,13 @@
           "source": "/thoughts/workflows",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "the extended mind hypothesis"
+        }
+      ],
+      "/thoughts/FOAF": [
+        {
+          "source": "/thoughts/WebID",
+          "target": "/thoughts/FOAF",
+          "text": "FOAFs"
         }
       ],
       "/thoughts/From-Counterculture-to-Cyberculture": [
@@ -20342,6 +20354,11 @@
       "source": "/thoughts/WebID",
       "target": "/thoughts/DID",
       "text": "DIDs"
+    },
+    {
+      "source": "/thoughts/WebID",
+      "target": "/thoughts/FOAF",
+      "text": "FOAFs"
     },
     {
       "source": "/thoughts/World-Building",

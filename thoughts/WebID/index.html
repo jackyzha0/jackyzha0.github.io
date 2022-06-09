@@ -3,7 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Similar to [[thoughts/DID|DIDs]]
+    <meta name="description" content="Content summarized from W3
+Similar to [[thoughts/DID|DIDs]].
  A WebID is a way to uniquely identify a person, company, organisation, or other agent using a URI.">
     <title>WebID</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -518,14 +519,53 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
-<p>Similar to <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">DIDs</a></p>
+
+<p>
+
+<a href="https://www.w3.org/wiki/WebID" rel="noopener">Content summarized from W3</a></p>
+<p>Similar to <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">DIDs</a>.</p>
 <blockquote>
 <p>A WebID is a way to uniquely identify a person, company, organisation, or other agent using a URI.</p>
 </blockquote>
+<p>People often publish data about themselves on the Web, such as:</p>
+<ul>
+<li>Who they know</li>
+<li>What they are interested in</li>
+<li>Photos they have taken</li>
+<li>Projects they work on</li>
+<li>Their curriculum vitae or employment history</li>
+<li>Their publications</li>
+</ul>
+<p>Most importantly of all, having a Web ID allows people to reference you and declare social relations on the web (such as that you are their friend, colleague, parent, etc.) even when their profile is hosted on a <em>different web server</em> than yours (emphasis added).</p>
+<p>Commonly uses <a href="/thoughts/FOAF" rel="noopener" class="internal-link" data-src="/thoughts/FOAF">FOAFs</a> for profiles.</p>
+<a href="#proof-of-ownership"><h2 id="proof-of-ownership"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of Ownership</h2></a>
+<p>WebID protocol is just a technology that leverages X.509 Certificates, already in common (and largely invisible) use. By placing that same URL in the certificate that identifies the user, and then placing information at that URL about the public key of the certificate, a web server that receives a user request can verify that the user has write access to that URL</p>
+<p>Seems to be read-only (i.e. only user can write, can&rsquo;t tell apps to write to your own WebID)?</p>
  
 
     </article>
