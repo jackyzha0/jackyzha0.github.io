@@ -16,7 +16,7 @@ It is a way of creating a semantically meaningful network of objects, useful for
 - FOAF descriptions are published as linked documents in the Web
 - The result of the FOAF project is a network of documents describing a network of people (and other stuff).
 
-Example FOAF describing a person
+Example FOAF describing a person (using [[thoughts/RDF|RDF]])
 
 ```xml
 <foaf:Person rdf:about="#danbri" xmlns:foaf="http://xmlns.com/foaf/0.1/">

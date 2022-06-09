@@ -17,6 +17,8 @@ adrienne maree brown described relationships like a spiderweb—diaphanous yet s
 
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)
 
+## Commitment
+Commit to some great loves; falling in love with something and building a structure of behaviour for when love falters. Who would they care about if nobody knew?
 
 ## Epistemic [trust](thoughts/trust.md)
 From *Believing the best: on doxastic partiality in friendship* by Lindsay Crawford

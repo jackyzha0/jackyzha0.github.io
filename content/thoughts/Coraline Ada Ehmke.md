@@ -43,4 +43,6 @@ Questions
 - Early music streaming/torrent
 - Building things into tech vs relying on policy
 	- codifying/quantifying values in software -- is this possible
+- Decentralization
+	- https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html
 - Target: 1500-3000 words

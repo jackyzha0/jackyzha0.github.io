@@ -14,3 +14,21 @@ tags:
 - Linked Data means that different applications can work with the same data
 
 ![[thoughts/images/Solid pod Linked Data.png]]
+## Details
+*Summarized from specs*
+
+- Exchanges data between clients using [[thoughts/HTTP|HTTP]] + TLS
+- A storage (`pim:Storage`) is a space of URIs in which data can be accessed; it is the root container for all of its contained resources
+- Seems to just be a fancy HTTP file server (operated on [[thoughts/RDF|RDF]] Documents)
+	- Applications can 'patch' pods with new data, given that they have the correct access to it
+- Real-time collaborative communication between pod and application uses WebSockets
+- CORS by default prevents apps that run on one origin from accessing data on other origins
+	- Get around this by having servers waive the cross-origin protection as Solid handles this access control themselves
+- Identity is done through [[thoughts/WebID|WebID]]
+- Servers are strongly discouraged from exposing information beyond the minimum amount necessary to enable a feature.
+
+## Opinions
+- Feels completely unopinionated, see this as a negative. Should shepherd and guide the average user down the happy path but still make it easy to customize for those who wish to.
+- Still seems to try to emulate client-server interactions heavily
+- Providers are not distributed
+- DX seems pretty poor, comment section on [this video](https://www.youtube.com/watch?v=-C-hSqcU4k8) which has a lot of laypeople seem to dislike
