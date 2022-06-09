@@ -6,7 +6,17 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FOAF</title>
+      <link>https://jzhao.xyz/thoughts/FOAF/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/FOAF/</guid>
+      <description>Summarized from the xmlns FOAF specs
+FOAF stands for &amp;lsquo;friend of a friend&amp;rsquo;</description>
+    </item>
+    
     <item>
       <title>DHT</title>
       <link>https://jzhao.xyz/thoughts/DHT/</link>
