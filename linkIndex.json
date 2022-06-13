@@ -1305,6 +1305,11 @@
       "/thoughts/DHT": [
         {
           "source": "/thoughts/DHT",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia DHT"
+        },
+        {
+          "source": "/thoughts/DHT",
           "target": "/thoughts/Sybil-Attack",
           "text": "Sybil attack"
         }
@@ -2615,6 +2620,26 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/FOAF",
+          "text": "FOAF"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplaces"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/IPFS",
           "text": "IPFS"
         },
@@ -2792,6 +2817,16 @@
           "source": "/thoughts/Self-sovereign-Identity-SSI",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
+        },
+        {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/soulbound",
+          "text": "SBTs"
+        },
+        {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/Verifiable-Credential",
+          "text": "VCs"
         }
       ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
@@ -2854,6 +2889,11 @@
         }
       ],
       "/thoughts/Solid": [
+        {
+          "source": "/thoughts/Solid",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
+        },
         {
           "source": "/thoughts/Solid",
           "target": "/thoughts/HTTP",
@@ -4195,6 +4235,28 @@
           "source": "/thoughts/decentralization",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        }
+      ],
+      "/thoughts/decentralized-marketplace": [
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/funding",
+          "text": "funding"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/web3",
+          "text": "web3"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/state-channels",
+          "text": "State channels"
         }
       ],
       "/thoughts/degrowth": [
@@ -8605,6 +8667,11 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/funding",
           "text": "funding"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "marketplaces"
         }
       ],
       "/thoughts/web3-critique": [
@@ -9766,6 +9833,11 @@
       ],
       "/thoughts/FOAF": [
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/FOAF",
+          "text": "FOAF"
+        },
+        {
           "source": "/thoughts/WebID",
           "target": "/thoughts/FOAF",
           "text": "FOAFs"
@@ -10189,6 +10261,11 @@
       ],
       "/thoughts/Kademlia-DHT": [
         {
+          "source": "/thoughts/DHT",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia DHT"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Kademlia-DHT",
           "text": "Kademlia"
@@ -10214,6 +10291,16 @@
       "/thoughts/LDP": [
         {
           "source": "/thoughts/RDF",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/LDP",
+          "text": "LDP"
+        },
+        {
+          "source": "/thoughts/Solid",
           "target": "/thoughts/LDP",
           "text": "LDP"
         }
@@ -10809,6 +10896,11 @@
           "text": "RDF"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/RDF",
+          "text": "RDF"
+        },
+        {
           "source": "/thoughts/Solid",
           "target": "/thoughts/RDF",
           "text": "RDF"
@@ -11316,6 +11408,13 @@
           "source": "/thoughts/web3-critique",
           "target": "/thoughts/Vanilla-Ice-Cream-effect",
           "text": "Vanilla Ice Cream effect"
+        }
+      ],
+      "/thoughts/Verifiable-Credential": [
+        {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/Verifiable-Credential",
+          "text": "VCs"
         }
       ],
       "/thoughts/WebID": [
@@ -12587,6 +12686,11 @@
           "text": "Decentralized"
         },
         {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
           "source": "/thoughts/money",
           "target": "/thoughts/decentralization",
           "text": "decentralization"
@@ -12615,6 +12719,18 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/decentralization",
           "text": "Decentralization"
+        }
+      ],
+      "/thoughts/decentralized-marketplace": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplaces"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "marketplaces"
         }
       ],
       "/thoughts/degrowth": [
@@ -13656,6 +13772,11 @@
         },
         {
           "source": "/thoughts/academia",
+          "target": "/thoughts/funding",
+          "text": "funding"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
           "target": "/thoughts/funding",
           "text": "funding"
         },
@@ -16586,11 +16707,23 @@
           "text": "Principles for Internet Spaces"
         }
       ],
+      "/thoughts/soulbound": [
+        {
+          "source": "/thoughts/Self-sovereign-Identity-SSI",
+          "target": "/thoughts/soulbound",
+          "text": "SBTs"
+        }
+      ],
       "/thoughts/state-channels": [
         {
           "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/state-channels",
           "text": "state channels"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/state-channels",
+          "text": "State channels"
         }
       ],
       "/thoughts/stone-soup-metaphor": [
@@ -17319,6 +17452,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/web3",
+          "text": "web3"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
           "target": "/thoughts/web3",
           "text": "web3"
         },
@@ -18733,6 +18871,11 @@
     },
     {
       "source": "/thoughts/DHT",
+      "target": "/thoughts/Kademlia-DHT",
+      "text": "Kademlia DHT"
+    },
+    {
+      "source": "/thoughts/DHT",
       "target": "/thoughts/Sybil-Attack",
       "text": "Sybil attack"
     },
@@ -19933,6 +20076,26 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/FOAF",
+      "text": "FOAF"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/LDP",
+      "text": "LDP"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/RDF",
+      "text": "RDF"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/decentralized-marketplace",
+      "text": "decentralized marketplaces"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/IPFS",
       "text": "IPFS"
     },
@@ -20102,6 +20265,16 @@
       "text": "blockchain"
     },
     {
+      "source": "/thoughts/Self-sovereign-Identity-SSI",
+      "target": "/thoughts/soulbound",
+      "text": "SBTs"
+    },
+    {
+      "source": "/thoughts/Self-sovereign-Identity-SSI",
+      "target": "/thoughts/Verifiable-Credential",
+      "text": "VCs"
+    },
+    {
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/explainability",
       "text": "explainability"
@@ -20155,6 +20328,11 @@
       "source": "/thoughts/Solana",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
+    },
+    {
+      "source": "/thoughts/Solid",
+      "target": "/thoughts/LDP",
+      "text": "LDP"
     },
     {
       "source": "/thoughts/Solid",
@@ -21375,6 +21553,26 @@
       "source": "/thoughts/decentralization",
       "target": "/thoughts/Internet",
       "text": "Internet"
+    },
+    {
+      "source": "/thoughts/decentralized-marketplace",
+      "target": "/thoughts/decentralization",
+      "text": "decentralization"
+    },
+    {
+      "source": "/thoughts/decentralized-marketplace",
+      "target": "/thoughts/funding",
+      "text": "funding"
+    },
+    {
+      "source": "/thoughts/decentralized-marketplace",
+      "target": "/thoughts/web3",
+      "text": "web3"
+    },
+    {
+      "source": "/thoughts/decentralized-marketplace",
+      "target": "/thoughts/state-channels",
+      "text": "State channels"
     },
     {
       "source": "/thoughts/degrowth",
@@ -25505,6 +25703,11 @@
       "source": "/thoughts/web3",
       "target": "/thoughts/funding",
       "text": "funding"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/decentralized-marketplace",
+      "text": "marketplaces"
     },
     {
       "source": "/thoughts/workflows",
