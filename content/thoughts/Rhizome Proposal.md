@@ -6,7 +6,7 @@ tags:
 - rhizome
 ---
 
-> Enabling collaboration at scale while keeping local conditions in mind
+> Companies of the future should derive value from the intelligence they provide on top of existing data rather than have the value be just the data.
 
 The competitive advantage of the vast majority of today's centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren't difficult to replicate -- in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.
 

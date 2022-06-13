@@ -48,3 +48,13 @@ A DID Document can have arbitrary content. It contains references to "controller
 	- This is self-attesting and does not facilitate consensus of the document across peers
 	- Sometimes described as the "microledger" approach
 - More reading in [RWoT 7, 2018](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did.md)
+
+## DID Method Key
+The `did:key` format
+
+This DID Method is purely generative, requiring no look ups in a registry. Since did:key values are not stored in any registry, they cannot be updated or deactivated.
+
+## DWN
+A Decentralized Web Node (DWN) is a data storage and message relay mechanism entities can use to locate public or private permissioned data related to a given Decentralized Identifier (DID).
+
+Decentralized Web Nodes are a mesh-like datastore construction that enable an entity to operate multiple nodes that sync to the same state across one another, enabling the owning entity to secure, manage, and transact their data with others.

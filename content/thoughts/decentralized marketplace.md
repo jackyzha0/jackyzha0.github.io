@@ -19,7 +19,7 @@ Can be done through 2 main ways:
 ## Orchid
 [Website](https://www.orchid.com/)
 
-TLDR; decentralized VPN with nanopayment channels
+TLDR; decentralized VPN with nanopayment channels based on xDAI L2 chain
 
 Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.
 
@@ -30,6 +30,14 @@ Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VP
 ## Golem
 [Website](https://blog.golemproject.net/golem-primer/)
 
+Based on Polygon L2 using a native ERC-20 GLM
+
 TLDR: Golem democratizes society’s access to computing power by creating a decentralized platform where anyone can build a variety of applications, request computational resources and/or offer their idle systems in exchange for cryptocurrency tokens
 
 >From large universities to scientists or artists, anyone can leverage the world’s unused computing power to conduct data intensive research and complex computations through the Golem Network
+
+The basic premise of the Golem Network is as follows:
+1. providers make some resources available to potential requestors for a price,
+2. requestors rent those resources and pay the providers in exchange.
+
+The costs of an activity are based on a pre-agreed set of coefficients that specify the price the requestor is required to pay for the time the activity is running, the processor time used and for starting any activity in the first place.

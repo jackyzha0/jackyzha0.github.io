@@ -7,7 +7,7 @@ tags:
 
 State channels are a very broad and simple way to think about [[thoughts/blockchain|blockchain]] interactions which could occur on the blockchain, but instead get conducted off of the blockchain, without significantly increasing the risk of any participant.
 
-Similar to the concept of payment channels in [[thoughts/bitcoin|Bitcoins]]’s Lightning Network, but instead of only supporting payments, they also support general ‘state updates.’
+Similar to the concept of payment channels in [[thoughts/bitcoin|Bitcoins]]’s Lightning Network and [Raiden Network](https://raiden.network/) on Ethereum, but instead of only supporting payments, they also support general ‘state updates.’
 
 Work by
 1. Locking up some portion of state into a contract through a deposit of some amount of token

@@ -13,3 +13,14 @@ Identities are required for trust to be established (Party A needs to ensure Par
 In centralized identity paradigms, this is usually done through authorities (e.g. [[thoughts/security#Certification Authorities CA|Certification Authorities]]) who are trusted by both parties.
 
 In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using public-key cryptography and anchored on some sort of distributed ledger (e.g. [[thoughts/blockchain|blockchain]])
+
+## Critiques of SSI
+[Source: Molly White](https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/)
+
+Mostly critiques about certain implementations of [[thoughts/soulbound|SBTs]] or [[thoughts/Verifiable Credential|VCs]] (which she refers to as Verifiable attestations)
+- people are able to send soulbound tokens without the consent of the recipient—given that it is unlikely people would consent to police departments recording their crimes for others to later use against them if they had the choice
+- against a world where relationships are front-run by a deluge of data rather than formed more organically between individuals
+	- "An acquaintance now quits those ‘old-fashioned’ relationship-building niceties and gets straight to the SSI point. Where do you work? Which college did you go to? Which college did your parents go to? Republican or Democrat? What’s your gender? Your ethnic origins? Do you have this gene or the other one? If you fail to offer up the requisite verifiable claims then you fail to get to ‘trust building’ first base in the SSI century."
+	- similar to Black Mirror's Nosedive Episode (S3E1)
+- people suck at security: the average person is shit at securing their data
+	- though, is this just bad ui/ux or is it just fundamentally hard (tm) to make it easy for people to be secure? i feel like VPNs for example have made 'good security' practice pretty easy for the average consumer

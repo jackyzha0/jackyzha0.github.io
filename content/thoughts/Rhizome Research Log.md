@@ -7,9 +7,20 @@ tags:
 ---
 
 ## June
+### June 10th
+- Spicy day today... Jack Dorsey just announced TBD working on Web5, supposedly an extra decentralized web platform (https://twitter.com/jack/status/1535314738078486533)
+	- web5 seems to focus on the philosophy side a lot more than actual usability
+	- v similar to webid except anchored on bitcoin
+- 
+- feel like a little boat in a big ocean where huge battleships drift by every now and then
+	- makes me doubt what i can really do as this small little boat
+	- but reminded that steering my own little boat gives me agency as to what i can explore and do
+	- the little boat that could
+
 ### June 9th
 - Lots of research, mostly around [[thoughts/FOAF|FOAF]], [[thoughts/LDP|LDP]], [[thoughts/RDF|RDF]]
 - Looked more into [[thoughts/decentralized marketplace|decentralized marketplaces]] like Raiden and Orchid to see how they handle payments
+- Mostly just reading articles and specifications, your average day of research
 
 ### June 8th
 - Got my first grant rejection from Emergent Ventures today :((

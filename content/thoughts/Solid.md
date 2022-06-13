@@ -7,8 +7,16 @@ tags:
 
 > **Solid** is a [specification](https://solidproject.org/TR/protocol) that lets people store their data securely in decentralized data stores called **Pods**. Pods are like secure personal web servers for data. When data is stored in someone's Pod, they control which people and applications can access it.
 
+Pushing for universalization at the data level: just as any website can be viewed on any browser and any internet provider, any data should be accessible by any application under people's control.
+
+Existing large owners of data wont innovate because they have monopoly over data, new innovators cant enter because they lack data
+
+GDPR technically does all of this, Solid is just technology that ensure it actually happens.
+
+Solid is essentially a glue between HTTP, [[thoughts/LDP|LDP]], and LDN
+
 ## Pods
-- Pods are like secure personal web servers for your data.
+- Pods are like secure personal web servers for your data. You can think of it like a website with data.
 - You can get a Pod from a Pod Provider, or you may choose to self-host your Pod.
 - Users can own multiple pods
 - Linked Data means that different applications can work with the same data
