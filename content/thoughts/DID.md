@@ -58,3 +58,13 @@ This DID Method is purely generative, requiring no look ups in a registry. Since
 A Decentralized Web Node (DWN) is a data storage and message relay mechanism entities can use to locate public or private permissioned data related to a given Decentralized Identifier (DID).
 
 Decentralized Web Nodes are a mesh-like datastore construction that enable an entity to operate multiple nodes that sync to the same state across one another, enabling the owning entity to secure, manage, and transact their data with others.
+
+## Methods
+### `did:key`
+Great for burner DIDs
+
+### Sidetree
+A 'meta' protocol that can be applied to any target trust layer to create a scalable DID method (batteries *almost* included)
+
+A bunch of DID methods work fine at lab scales (~100 DIDs) but how do we scale to billions?
+

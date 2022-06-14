@@ -7,6 +7,33 @@ tags:
 ---
 
 ## June
+### June 13th
+-   did document needs to specify the service
+	-   resolve a DID to web node URI
+	-   `did:example:123` -> resolve to Decentralized Web Node endpoint(s) -> `https://dwn.example.com`
+-   Raw vs Signed Data
+	-   Raw → only data + descriptor
+	-   Signed → data + descriptor + attestation (JSON web signature/JWS)
+	-   more details: https://identity.foundation/decentralized-web-node/spec/#message-descriptors
+-   Storing data relative to a schema
+	-   https://identity.foundation/decentralized-web-node/spec/#query
+	-   schema field in descriptor
+	-   JSON-LD + https://schema.org ?
+	-   or... openzepellin style, vetted schemas
+	-   data lensing should fit into this
+-   Permissions request
+	-   https://identity.foundation/decentralized-web-node/spec/#request
+	-   signed message
+	-   define scope
+	-   based on DAG commit range perhaps?
+-   Open questions
+	-   how does DID ownership work? what is it pinned to? is IPFS sufficient?
+	-   notes on sidetree
+	-   how do we make ownership/data management easy for non-technical people?
+
+### June 11-12th
+- Roadtrip with Anson! Much needed break to get a mental break and reset.
+
 ### June 10th
 - Spicy day today... Jack Dorsey just announced TBD working on Web5, supposedly an extra decentralized web platform (https://twitter.com/jack/status/1535314738078486533)
 	- web5 seems to focus on the philosophy side a lot more than actual usability

@@ -8,6 +8,8 @@ tags:
 
 > Companies of the future should derive value from the intelligence they provide on top of existing data rather than have the value be just the data.
 
+*DISCLAIMER: To borrow wording from [Robin Sloan](https://www.robinsloan.com/lab/specifying-spring-83/), while it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.*
+
 The competitive advantage of the vast majority of today's centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren't difficult to replicate -- in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.
 
 These platforms, especially aggregators, are *incentivized* to resist [[thoughts/decentralization|decentralization]] and [[thoughts/interoperability|interoperability]]. After all, 'data is the new oil'. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.
