@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="Verifiable credentials can be issued by anyone, about anything, and can be presented to and verified by everyone">
     <title>Verifiable Credential</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Verifiable Credential</h1>
     <article>
       <p class="meta">
-          Last updated June 12, 2022
+          Last updated June 14, 2022
       </p>
       <ul class="tags">
     
@@ -495,11 +495,120 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
 
 
 
 
- 
+
+<p>Verifiable credentials can be issued by anyone, about anything, and can be presented to and verified by everyone</p>
+<ul>
+<li>Issuer: the entity that generates the credential</li>
+<li>Holder: entity that receives the credential</li>
+<li>Verifier: entity that wants to check the credentials of the Holder</li>
+</ul>
+<p>For this to work requires a triangle of trust:</p>
+<ul>
+<li>The issuer trusts the holder</li>
+<li>The holder trusts the verifier</li>
+<li>The verifier trusts the issuer</li>
+</ul>
+<p>Verifiable Data Registry (VDR): can be used to maintain identifiers and schemas</p>
+<p>To make a VC:</p>
+<ol>
+<li>Issuer registers a DID and its associated verification key (verkey) to the VDR</li>
+<li>Issuer writes a credential definition (a template) to the VDR</li>
+<li>(Optional) Issuer offers a credential to the holder</li>
+<li>Holder requests a credential from the Issuer</li>
+<li>Issuer creates a credential based on the definition for the holder</li>
+<li>Issuer signs the credential with their private part of the verification key, and gives it to the holder (offer)</li>
+<li>Verifier can then check the credential against the issuer&rsquo;s verkey</li>
+</ol>
+<p><img src="/thoughts/images/verifiable credential.png" title="/thoughts/images/verifiable credential.png"></p>
+<p>Example VC</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;@context&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;https://www.w3.org/2018/credentials/v1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;https://www.w3.org/2018/credentials/examples/v1&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;0892f680-6aeb-11eb-9bcf-f10d8993fde7&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;VerifiableCredential&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;UniversityDegreeCredential&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;issuer&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;did:example:76e12ec712ebc6f1c221ebfeb1f&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Acme University&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;issuanceDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-05-11T23:09:06.803Z&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;credentialSubject&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;did:example:ebfeb1f712ebc6f1c276e12ec21&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;degree&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;BachelorDegree&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Bachelor of Science&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;proof&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;Ed25519Signature2018&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;created&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-05-17T15:25:26Z&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;jws&#34;</span><span class="p">:</span> <span class="s2">&#34;eyJhbGciOiJFZERTQYjY0Il19..nlcAA&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;proofPurpose&#34;</span><span class="p">:</span> <span class="s2">&#34;assertionMethod&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;verificationMethod&#34;</span><span class="p">:</span> <span class="s2">&#34;https://pathToIssuerPublicKey&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div> 
 
     </article>
     <hr/>

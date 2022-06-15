@@ -1339,6 +1339,11 @@
           "source": "/thoughts/DID",
           "target": "/thoughts/CID",
           "text": "CID"
+        },
+        {
+          "source": "/thoughts/DID",
+          "target": "/thoughts/IPFS",
+          "text": "IPFS"
         }
       ],
       "/thoughts/DNS": [
@@ -4257,6 +4262,11 @@
           "source": "/thoughts/decentralized-marketplace",
           "target": "/thoughts/state-channels",
           "text": "State channels"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
         }
       ],
       "/thoughts/degrowth": [
@@ -10091,6 +10101,11 @@
       ],
       "/thoughts/IPFS": [
         {
+          "source": "/thoughts/DID",
+          "target": "/thoughts/IPFS",
+          "text": "IPFS"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/IPFS",
           "text": "IPFS"
@@ -13373,6 +13388,11 @@
         },
         {
           "source": "/thoughts/blockchain",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
+        },
+        {
+          "source": "/thoughts/decentralized-marketplace",
           "target": "/thoughts/ethereum",
           "text": "Ethereum"
         },
@@ -18905,6 +18925,11 @@
       "text": "CID"
     },
     {
+      "source": "/thoughts/DID",
+      "target": "/thoughts/IPFS",
+      "text": "IPFS"
+    },
+    {
       "source": "/thoughts/DNS",
       "target": "/thoughts/Internet",
       "text": "Internet"
@@ -21573,6 +21598,11 @@
       "source": "/thoughts/decentralized-marketplace",
       "target": "/thoughts/state-channels",
       "text": "State channels"
+    },
+    {
+      "source": "/thoughts/decentralized-marketplace",
+      "target": "/thoughts/ethereum",
+      "text": "Ethereum"
     },
     {
       "source": "/thoughts/degrowth",

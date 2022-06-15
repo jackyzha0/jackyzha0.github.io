@@ -14,7 +14,7 @@
       
       <guid>https://jzhao.xyz/thoughts/encryption/</guid>
       <description>An encryption algorithm comprises
- a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Language</description>
+ a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Trapdoor: a mathematical function that is easy to go one way but hard to go the other way (an effectively one-way function)</description>
     </item>
     
     <item>
