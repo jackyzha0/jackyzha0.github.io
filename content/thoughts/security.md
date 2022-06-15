@@ -72,23 +72,7 @@ What level of the [[thoughts/internet computing|internet computing stack]] shoul
 	- Bob applies CA's public key to confirm certificate's authenticity
 	- Certificate contains Alice's public key
 
-## Message Digest
-- Signature of long messages is computationally expensive
-- We can compute a fixed-length "fingerprint"
-	- Apply hash function $H$ to message $m$, giving a fixed size message digest, $H(m)$
-- Signed message digest
-	- Bob sends message $m$ and signed digest $K_B^-(H(m))$
-	- Alice receives $m$ and computes $H_{new}(m)$
-	- Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$
-	- If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)
-- Alternative: message authentication code (MAC)
-	- Add a secret to the end of each message that is also hashed. It is extremely unlikely that anyone who doesn't know the secret to come up with an appropriate hash
-	- Shared secret $s$
-	- Hash is computed not on message $m$, but on $m+s$
-		- Bob sends message $h = H(m + s)$
-		- Alice receives $(m, h)$ and computes $H(m + s)$
-		- If $h = H(m+s)$, message is considered signed
-	- Fast because encryption is not necessary
+
 
 ## Preventing Replay Attacks
 - Nonce - value that will only ever be used once (usually derived from clock time)
