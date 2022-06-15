@@ -35,3 +35,15 @@ Codecs! IPLD codecs are functions that transform IPLD Data Model into serialized
 Systems can build abstractions on top of this. For example, IPFS encodes the UnixFS using DAG-PB (which is a IPLD codec).
 
 > Because the CID can describe different codecs relating to different systems, all sorts of systems can interoperate using CIDs, and IPLD and process and cross-link data from any of them.
+
+## WNFS
+Under the Fission project, [see specs](https://guide.fission.codes/developers/webnative/file-system-wnfs)
+
+File system built on top of IPFS. Uses a DAG instead of a hierarchy, meaning that a given child can have more than one parent.
+
+Each user has their own WNFS and consists of a public and private tree.
+
+- The public tree is "live" and publicly accessible on the Internet.
+- The private tree is encrypted so that only the owner can see the contents.
+
+Uses [[thoughts/authorization#UCAN|UCAN]] for authorization.

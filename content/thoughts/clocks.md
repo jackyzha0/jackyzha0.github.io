@@ -90,3 +90,8 @@ Properties
 - $V(a) < V(b) \iff (a \rightarrow b)$
 - $V(a) = V(b) \iff (a = b)$
 - $V(a) \parallel V(b) \iff a \parallel b$
+
+You can tell that versions are in conflict when neither vector clock “descends” from the other. In order for vector clock B to be considered a descendant of vector clock A, each marker in vector clock A must have a corresponding marker in B that has a revision number greater than or equal to the marker in vector clock A. Markers not contained in a vector clock can be considered to have revision number zero.
+
+Vector Clock Example
+![[thoughts/images/vector clock example.png]]
