@@ -41,3 +41,17 @@ The basic premise of the Golem Network is as follows:
 2. requestors rent those resources and pay the providers in exchange.
 
 The costs of an activity are based on a pre-agreed set of coefficients that specify the price the requestor is required to pay for the time the activity is running, the processor time used and for starting any activity in the first place.
+
+Payments and transactions happen through [[thoughts/ethereum|Ethereum]].
+
+### Registry
+Uses an application registry so anyone can publish their own applications. Goals:
+
+1. Give developers a way to publish their integrations and reach out to users in a decentralized manner
+2. Give requestors a place to look for specific tools fitting their needs
+
+3 categories of users:
+1. Authors: publish applications
+2. Validators: review and certify applications as safe by adding them to a whitelist
+3. Providers: can choose whom to trust by selecting validators' whitelist
+
