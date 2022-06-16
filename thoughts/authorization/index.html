@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Authorization</h1>
     <article>
       <p class="meta">
-          Last updated May 26, 2022
+          Last updated June 15, 2022
       </p>
       <ul class="tags">
     
@@ -495,6 +495,28 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -502,7 +524,7 @@ if (!doNotTrack) {
 <p>Authorization is the process of verifying what a user has access to (whereas authentication is the process of verifying who someone is)</p>
 <a href="#jwt"><h2 id="jwt"><span class="hanchor" ariaLabel="Anchor"># </span>JWT</h2></a>
 <blockquote>
-<p>Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
+<p>Each JWT contains encoded JSON objects, including a set of claims. JWTs are <a href="/thoughts/signed-messages" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">signed</a> using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
 **
 Three components (looks something like this: xxxxx.yyyyy.zzzzz.)</p>
 </blockquote>
@@ -521,9 +543,11 @@ Three components (looks something like this: xxxxx.yyyyy.zzzzz.)</p>
 <blockquote>
 <p>At a high level, User Controlled Authorization Networks (UCANs) are a way of doing authorization (&ldquo;what you can do&rdquo;) where users are fully in control. There&rsquo;s no all-powerful authorization server, or server of any kind required. Everything that a users is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format.</p>
 </blockquote>
-<p>
+<p>See 
 
-<a href="https://fission.codes/blog/auth-without-backend/" rel="noopener">See source</a></p>
+<a href="https://fission.codes/blog/auth-without-backend/" rel="noopener">source 1</a> and 
+
+<a href="https://fission.codes/blog/verifying-ucans/" rel="noopener">source 2</a></p>
  
 
     </article>

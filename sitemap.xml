@@ -2,14 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/ActivityPub/</loc>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Bluesky/</loc>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Farcaster/</loc>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Matrix/</loc>
+    <lastmod>2022-06-15T13:57:58-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-06-14T19:11:15-07:00</lastmod>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/signed-messages/</loc>
+    <lastmod>2022-06-15T13:57:58-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-06-14T19:11:15-07:00</lastmod>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-06-14T19:11:15-07:00</lastmod>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Verifiable-Credential/</loc>
     <lastmod>2022-06-14T19:11:15-07:00</lastmod>
@@ -63,22 +78,22 @@
     <lastmod>2022-06-06T08:55:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/IPFS/</loc>
-    <lastmod>2022-06-07T15:46:57-07:00</lastmod>
+    <lastmod>2022-06-15T13:26:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/The-Inner-Lives-of-Books/</loc>
     <lastmod>2022-05-31T11:29:18-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/DID/</loc>
-    <lastmod>2022-06-14T19:11:15-07:00</lastmod>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/state-channels/</loc>
     <lastmod>2022-06-12T22:45:00-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/federation/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/authorization/</loc>
-    <lastmod>2022-05-26T13:34:16-07:00</lastmod>
+    <lastmod>2022-06-15T13:57:58-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Zookos-Triangle/</loc>
     <lastmod>2022-05-20T17:13:44-04:00</lastmod>
@@ -102,7 +117,7 @@
     <lastmod>2022-05-05T19:05:58-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
-    <lastmod>2022-05-05T21:07:59-04:00</lastmod>
+    <lastmod>2022-06-15T13:26:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
     <lastmod>2022-05-05T17:55:36-04:00</lastmod>
@@ -189,7 +204,7 @@
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/CPSC317/</loc>
-    <lastmod>2022-06-14T09:30:07-07:00</lastmod>
+    <lastmod>2022-06-15T13:57:58-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/encryption/</loc>
     <lastmod>2022-06-14T09:30:07-07:00</lastmod>
@@ -846,7 +861,7 @@
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/security/</loc>
-    <lastmod>2022-04-18T21:51:19-07:00</lastmod>
+    <lastmod>2022-06-15T13:57:58-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/value/</loc>
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
@@ -1249,6 +1264,9 @@
   </url><url>
     <loc>https://jzhao.xyz/posts/hootsuite/</loc>
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Sidetree/</loc>
+    <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/books/</loc>
     <lastmod>2022-06-09T13:10:10-07:00</lastmod>

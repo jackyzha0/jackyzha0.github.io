@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Clocks</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated June 15, 2022
       </p>
       <ul class="tags">
     
@@ -627,6 +627,38 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
 
 
 
@@ -711,6 +743,9 @@ if (!doNotTrack) {
 <li>$V(a) = V(b) \iff (a = b)$</li>
 <li>$V(a) \parallel V(b) \iff a \parallel b$</li>
 </ul>
+<p>You can tell that versions are in conflict when neither vector clock “descends” from the other. In order for vector clock B to be considered a descendant of vector clock A, each marker in vector clock A must have a corresponding marker in B that has a revision number greater than or equal to the marker in vector clock A. Markers not contained in a vector clock can be considered to have revision number zero.</p>
+<p>Vector Clock Example
+<img src="/thoughts/images/vector clock example.png" title="/thoughts/images/vector clock example.png"></p>
  
 
     </article>

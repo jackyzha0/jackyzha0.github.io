@@ -6,7 +6,57 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ActivityPub</title>
+      <link>https://jzhao.xyz/thoughts/ActivityPub/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ActivityPub/</guid>
+      <description>From W3C Editor&amp;rsquo;s Draft
+ The ActivityPub protocol is a decentralized social networking protocol.</description>
+    </item>
+    
+    <item>
+      <title>Bluesky</title>
+      <link>https://jzhao.xyz/thoughts/Bluesky/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Bluesky/</guid>
+      <description>ADX From ARCHITECTURE.md
+Bluesky is building a protocol for large-scale distributed social applications, and in doing so released ADX (Authenticated Data eXperiment)</description>
+    </item>
+    
+    <item>
+      <title>Farcaster</title>
+      <link>https://jzhao.xyz/thoughts/Farcaster/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Farcaster/</guid>
+      <description>Farcaster is a sufficiently decentralized social network.
+ Two main components:</description>
+    </item>
+    
+    <item>
+      <title>Matrix</title>
+      <link>https://jzhao.xyz/thoughts/Matrix/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Matrix/</guid>
+      <description>An open network for secure, decentralized communication
+  Website</description>
+    </item>
+    
+    <item>
+      <title>Signed messages</title>
+      <link>https://jzhao.xyz/thoughts/signed-messages/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/signed-messages/</guid>
+      <description>Signed Blobs  From Farcaster Docs
+Blobs are [[thoughts/security#Message Digest|cryptographically signed]] so that it cannot be tampered with</description>
+    </item>
+    
     <item>
       <title>Verifiable Credential</title>
       <link>https://jzhao.xyz/thoughts/Verifiable-Credential/</link>
@@ -175,7 +225,7 @@ Similar to [[thoughts/DID|DIDs]].
       <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/federation/</guid>
-      <description>Designing in such a way that new instances of any [[thoughts/decentralization#Centralization|centralized]] function are relatively easy to create and can maintain [[thoughts/interoperability|interoperability]] and connectivity with other instances.</description>
+      <description>In a federated network, users are still interacting with a server, but anyone can run a server that interoperates with others in the network, giving users more providers to choose from</description>
     </item>
     
     <item>

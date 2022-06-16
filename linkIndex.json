@@ -1040,6 +1040,18 @@
           "text": "link layer"
         }
       ],
+      "/thoughts/ActivityPub": [
+        {
+          "source": "/thoughts/ActivityPub",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/ActivityPub",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        }
+      ],
       "/thoughts/Algorithms-of-Oppression": [
         {
           "source": "/thoughts/Algorithms-of-Oppression",
@@ -1155,6 +1167,13 @@
           "source": "/thoughts/Bentoism",
           "target": "/thoughts/Community-of-Fate",
           "text": "Community of Fate"
+        }
+      ],
+      "/thoughts/Bluesky": [
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/federation",
+          "text": "Federation"
         }
       ],
       "/thoughts/Brains-in-a-Vat": [
@@ -1342,8 +1361,8 @@
         },
         {
           "source": "/thoughts/DID",
-          "target": "/thoughts/IPFS",
-          "text": "IPFS"
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
         }
       ],
       "/thoughts/DNS": [
@@ -2081,6 +2100,13 @@
           "source": "/thoughts/Materialism",
           "target": "/thoughts/qualia",
           "text": "qualia"
+        }
+      ],
+      "/thoughts/Matrix": [
+        {
+          "source": "/thoughts/Matrix",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
         }
       ],
       "/thoughts/Mindstorms": [
@@ -2834,6 +2860,13 @@
           "text": "VCs"
         }
       ],
+      "/thoughts/Sidetree": [
+        {
+          "source": "/thoughts/Sidetree",
+          "target": "/thoughts/IPFS",
+          "text": "IPFS"
+        }
+      ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -3450,6 +3483,13 @@
           "source": "/thoughts/attention-economy",
           "target": "/thoughts/digital-mindfulness",
           "text": "designing for slowness"
+        }
+      ],
+      "/thoughts/authorization": [
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/signed-messages",
+          "text": "signed"
         }
       ],
       "/thoughts/automation": [
@@ -10101,12 +10141,12 @@
       ],
       "/thoughts/IPFS": [
         {
-          "source": "/thoughts/DID",
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/IPFS",
           "text": "IPFS"
         },
         {
-          "source": "/thoughts/Rhizome-Research-Log",
+          "source": "/thoughts/Sidetree",
           "target": "/thoughts/IPFS",
           "text": "IPFS"
         }
@@ -10965,6 +11005,11 @@
       ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
+          "source": "/thoughts/Matrix",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
           "source": "/thoughts/Projects",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "raft Consensus Algorithm"
@@ -11095,6 +11140,13 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Self-sovereign-Identity-SSI",
           "text": "SSI"
+        }
+      ],
+      "/thoughts/Sidetree": [
+        {
+          "source": "/thoughts/DID",
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
         }
       ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
@@ -13526,6 +13578,21 @@
         }
       ],
       "/thoughts/federation": [
+        {
+          "source": "/thoughts/ActivityPub",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/ActivityPub",
+          "target": "/thoughts/federation",
+          "text": "federation"
+        },
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/federation",
+          "text": "Federation"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/federation",
@@ -16607,6 +16674,13 @@
           "text": "semantically"
         }
       ],
+      "/thoughts/signed-messages": [
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/signed-messages",
+          "text": "signed"
+        }
+      ],
       "/thoughts/skyhooks": [
         {
           "source": "/thoughts/fiction",
@@ -18660,6 +18734,16 @@
       "text": "link layer"
     },
     {
+      "source": "/thoughts/ActivityPub",
+      "target": "/thoughts/federation",
+      "text": "federation"
+    },
+    {
+      "source": "/thoughts/ActivityPub",
+      "target": "/thoughts/federation",
+      "text": "federation"
+    },
+    {
       "source": "/thoughts/Algorithms-of-Oppression",
       "target": "/thoughts/double-consciousness",
       "text": "double-consciousness"
@@ -18763,6 +18847,11 @@
       "source": "/thoughts/Bentoism",
       "target": "/thoughts/Community-of-Fate",
       "text": "Community of Fate"
+    },
+    {
+      "source": "/thoughts/Bluesky",
+      "target": "/thoughts/federation",
+      "text": "Federation"
     },
     {
       "source": "/thoughts/Brains-in-a-Vat",
@@ -18926,8 +19015,8 @@
     },
     {
       "source": "/thoughts/DID",
-      "target": "/thoughts/IPFS",
-      "text": "IPFS"
+      "target": "/thoughts/Sidetree",
+      "text": "Sidetree"
     },
     {
       "source": "/thoughts/DNS",
@@ -19603,6 +19692,11 @@
       "source": "/thoughts/Materialism",
       "target": "/thoughts/qualia",
       "text": "qualia"
+    },
+    {
+      "source": "/thoughts/Matrix",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
     },
     {
       "source": "/thoughts/Mindstorms",
@@ -20300,6 +20394,11 @@
       "text": "VCs"
     },
     {
+      "source": "/thoughts/Sidetree",
+      "target": "/thoughts/IPFS",
+      "text": "IPFS"
+    },
+    {
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/explainability",
       "text": "explainability"
@@ -20858,6 +20957,11 @@
       "source": "/thoughts/attention-economy",
       "target": "/thoughts/digital-mindfulness",
       "text": "designing for slowness"
+    },
+    {
+      "source": "/thoughts/authorization",
+      "target": "/thoughts/signed-messages",
+      "text": "signed"
     },
     {
       "source": "/thoughts/automation",

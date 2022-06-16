@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Security</h1>
     <article>
       <p class="meta">
-          Last updated April 18, 2022
+          Last updated June 15, 2022
       </p>
       <ul class="tags">
     
@@ -496,7 +496,6 @@ if (!doNotTrack) {
     <li><a href="#symmetric-key-cryptography">Symmetric Key Cryptography</a></li>
     <li><a href="#block-ciphers">Block Ciphers</a></li>
     <li><a href="#certification-authorities-ca">Certification Authorities (CA)</a></li>
-    <li><a href="#message-digest">Message Digest</a></li>
     <li><a href="#preventing-replay-attacks">Preventing Replay Attacks</a></li>
     <li><a href="#hash-functions">Hash Functions</a></li>
   </ol>
@@ -683,37 +682,6 @@ if (!doNotTrack) {
 <li>Certificate is signed by CA</li>
 <li>Bob applies CA&rsquo;s public key to confirm certificate&rsquo;s authenticity</li>
 <li>Certificate contains Alice&rsquo;s public key</li>
-</ul>
-</li>
-</ul>
-<a href="#message-digest"><h2 id="message-digest"><span class="hanchor" ariaLabel="Anchor"># </span>Message Digest</h2></a>
-<ul>
-<li>Signature of long messages is computationally expensive</li>
-<li>We can compute a fixed-length &ldquo;fingerprint&rdquo;
-<ul>
-<li>Apply hash function $H$ to message $m$, giving a fixed size message digest, $H(m)$</li>
-</ul>
-</li>
-<li>Signed message digest
-<ul>
-<li>Bob sends message $m$ and signed digest $K_B^-(H(m))$</li>
-<li>Alice receives $m$ and computes $H_{new}(m)$</li>
-<li>Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$</li>
-<li>If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)</li>
-</ul>
-</li>
-<li>Alternative: message authentication code (MAC)
-<ul>
-<li>Add a secret to the end of each message that is also hashed. It is extremely unlikely that anyone who doesn&rsquo;t know the secret to come up with an appropriate hash</li>
-<li>Shared secret $s$</li>
-<li>Hash is computed not on message $m$, but on $m+s$
-<ul>
-<li>Bob sends message $h = H(m + s)$</li>
-<li>Alice receives $(m, h)$ and computes $H(m + s)$</li>
-<li>If $h = H(m+s)$, message is considered signed</li>
-</ul>
-</li>
-<li>Fast because encryption is not necessary</li>
 </ul>
 </li>
 </ul>

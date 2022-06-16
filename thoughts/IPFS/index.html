@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">IPFS</h1>
     <article>
       <p class="meta">
-          Last updated June 7, 2022
+          Last updated June 15, 2022
       </p>
       <ul class="tags">
     
@@ -481,6 +481,16 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#encodingdecoding">Encoding/decoding</a></li>
+    <li><a href="#wnfs">WNFS</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -494,6 +504,28 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -664,6 +696,17 @@ if (!doNotTrack) {
 <blockquote>
 <p>Because the CID can describe different codecs relating to different systems, all sorts of systems can interoperate using CIDs, and IPLD and process and cross-link data from any of them.</p>
 </blockquote>
+<a href="#wnfs"><h2 id="wnfs"><span class="hanchor" ariaLabel="Anchor"># </span>WNFS</h2></a>
+<p>Under the Fission project, 
+
+<a href="https://guide.fission.codes/developers/webnative/file-system-wnfs" rel="noopener">see specs</a></p>
+<p>File system built on top of IPFS. Uses a DAG instead of a hierarchy, meaning that a given child can have more than one parent.</p>
+<p>Each user has their own WNFS and consists of a public and private tree.</p>
+<ul>
+<li>The public tree is &ldquo;live&rdquo; and publicly accessible on the Internet.</li>
+<li>The private tree is encrypted so that only the owner can see the contents.</li>
+</ul>
+<p>Uses <a href="/thoughts/authorization#UCAN" rel="noopener" class="internal-link" data-src="/thoughts/authorization">UCAN</a> for authorization.</p>
  
 
     </article>
@@ -692,13 +735,13 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/DID/" data-ctx="IPFS" data-src="/thoughts/DID" class="internal-link">DID</a>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="IPFS" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="IPFS" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+        <a href="/thoughts/Sidetree/" data-ctx="IPFS" data-src="/thoughts/Sidetree" class="internal-link"></a>
       </li>
       
       
