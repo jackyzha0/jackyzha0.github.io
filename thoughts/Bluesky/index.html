@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Bluesky</h1>
     <article>
       <p class="meta">
-          Last updated June 15, 2022
+          Last updated June 21, 2022
       </p>
       <ul class="tags">
     
@@ -482,6 +482,21 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#adx">ADX</a>
+      <ol>
+        <li><a href="#moderation">Moderation</a></li>
+        <li><a href="#did-consortium">DID Consortium</a></li>
+        <li><a href="#key-management">Key management</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -530,6 +545,50 @@ if (!doNotTrack) {
       
       
       
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
       
     
   
@@ -556,6 +615,17 @@ if (!doNotTrack) {
 <p>Our model is that <em>speech</em> (data, networking) and <em>reach</em> (crawling, aggregation, algorithm) should be two separate layers, built to work with each other. The “speech” layer should remain neutral, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale.</p>
 <p>There&rsquo;s no one company that can decide what gets published; instead there is a marketplace of companies deciding what to carry to their audiences.</p>
 <p><img src="/thoughts/images/speech and reach layers.png" title="/thoughts/images/speech and reach layers.png"></p>
+<a href="#did-consortium"><h3 id="did-consortium"><span class="hanchor" ariaLabel="Anchor"># </span>DID Consortium</h3></a>
+<p>Source of truth for DIDs on ADX, operated by multiple different operators (organizations) who share ownership of service. They all operate a shared append-only log. Client send transactions to operators. Auditors can monitor the append-only log to ensure the consortium is operating as it should.</p>
+<a href="#key-management"><h3 id="key-management"><span class="hanchor" ariaLabel="Anchor"># </span>Key management</h3></a>
+<p>We believe users should be given the options to use both custodial and non-custodial solutions. Key management is (at this stage) difficult for average consumers and so a custodial solution should be made available, but for professionals and security-conscious users a non-custodial option should also be supported.</p>
+<p>The key manager has the following responsibilities:</p>
+<ul>
+<li>Store root private keys</li>
+<li>Publish updates to the users&rsquo; <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">DID</a> Documents</li>
+<li>Create delegated keypairs through <a href="/thoughts/UCAN" rel="noopener" class="internal-link" data-src="/thoughts/UCAN">UCAN</a> issuance
+Handle recovery flows in the event of key loss</li>
+</ul>
  
 
     </article>
@@ -571,10 +641,20 @@ if (!doNotTrack) {
     
     
     
-    <li>
-        No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/UCAN/" data-ctx="Bluesky&#39;s ADX" data-src="/thoughts/UCAN" class="internal-link">UCAN</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

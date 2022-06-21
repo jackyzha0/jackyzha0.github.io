@@ -1174,6 +1174,16 @@
           "source": "/thoughts/Bluesky",
           "target": "/thoughts/federation",
           "text": "Federation"
+        },
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/DID",
+          "text": "DID"
+        },
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/UCAN",
+          "text": "UCAN"
         }
       ],
       "/thoughts/Brains-in-a-Vat": [
@@ -1298,6 +1308,11 @@
         }
       ],
       "/thoughts/Coraline-Ada-Ehmke": [
+        {
+          "source": "/thoughts/Coraline-Ada-Ehmke",
+          "target": "/thoughts/To-Live-in-their-Utopia",
+          "text": "To Live in their Utopia"
+        },
         {
           "source": "/thoughts/Coraline-Ada-Ehmke",
           "target": "/thoughts/software-and-politics",
@@ -2651,6 +2666,11 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplaces"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/FOAF",
           "text": "FOAF"
         },
@@ -3217,6 +3237,18 @@
           "text": "terminology"
         }
       ],
+      "/thoughts/UCAN": [
+        {
+          "source": "/thoughts/UCAN",
+          "target": "/thoughts/authorization",
+          "text": "authorization"
+        },
+        {
+          "source": "/thoughts/UCAN",
+          "target": "/thoughts/Bluesky",
+          "text": "Bluesky's ADX"
+        }
+      ],
       "/thoughts/UDP": [
         {
           "source": "/thoughts/UDP",
@@ -3490,6 +3522,11 @@
           "source": "/thoughts/authorization",
           "target": "/thoughts/signed-messages",
           "text": "signed"
+        },
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/UCAN",
+          "text": "UCAN"
         }
       ],
       "/thoughts/automation": [
@@ -9411,6 +9448,13 @@
           "text": "Bias in Search"
         }
       ],
+      "/thoughts/Bluesky": [
+        {
+          "source": "/thoughts/UCAN",
+          "target": "/thoughts/Bluesky",
+          "text": "Bluesky's ADX"
+        }
+      ],
       "/thoughts/Brains-in-a-Vat": [
         {
           "source": "/thoughts/representation",
@@ -9586,6 +9630,11 @@
         }
       ],
       "/thoughts/DID": [
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/DID",
+          "text": "DID"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/DID",
@@ -11348,6 +11397,11 @@
       ],
       "/thoughts/To-Live-in-their-Utopia": [
         {
+          "source": "/thoughts/Coraline-Ada-Ehmke",
+          "target": "/thoughts/To-Live-in-their-Utopia",
+          "text": "To Live in their Utopia"
+        },
+        {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/To-Live-in-their-Utopia",
           "text": "To Live in their Utopia"
@@ -11429,6 +11483,18 @@
           "source": "/thoughts/semantics",
           "target": "/thoughts/Twin-Earth-Argument",
           "text": "Twin Earth Argument"
+        }
+      ],
+      "/thoughts/UCAN": [
+        {
+          "source": "/thoughts/Bluesky",
+          "target": "/thoughts/UCAN",
+          "text": "UCAN"
+        },
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/UCAN",
+          "text": "UCAN"
         }
       ],
       "/thoughts/UDP": [
@@ -11634,6 +11700,11 @@
       "/thoughts/authorization": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/authorization",
+          "text": "authorization"
+        },
+        {
+          "source": "/thoughts/UCAN",
           "target": "/thoughts/authorization",
           "text": "authorization"
         }
@@ -12789,6 +12860,11 @@
         }
       ],
       "/thoughts/decentralized-marketplace": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplaces"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/decentralized-marketplace",
@@ -18854,6 +18930,16 @@
       "text": "Federation"
     },
     {
+      "source": "/thoughts/Bluesky",
+      "target": "/thoughts/DID",
+      "text": "DID"
+    },
+    {
+      "source": "/thoughts/Bluesky",
+      "target": "/thoughts/UCAN",
+      "text": "UCAN"
+    },
+    {
       "source": "/thoughts/Brains-in-a-Vat",
       "target": "/thoughts/Putnams-Ant-Argument",
       "text": "Putnam's Ant Argument"
@@ -18957,6 +19043,11 @@
       "source": "/thoughts/Consciousness-is-not-Information",
       "target": "/thoughts/Goodharts-Law",
       "text": "Goodhart's Law"
+    },
+    {
+      "source": "/thoughts/Coraline-Ada-Ehmke",
+      "target": "/thoughts/To-Live-in-their-Utopia",
+      "text": "To Live in their Utopia"
     },
     {
       "source": "/thoughts/Coraline-Ada-Ehmke",
@@ -20195,6 +20286,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/decentralized-marketplace",
+      "text": "decentralized marketplaces"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/FOAF",
       "text": "FOAF"
     },
@@ -20719,6 +20815,16 @@
       "text": "terminology"
     },
     {
+      "source": "/thoughts/UCAN",
+      "target": "/thoughts/authorization",
+      "text": "authorization"
+    },
+    {
+      "source": "/thoughts/UCAN",
+      "target": "/thoughts/Bluesky",
+      "text": "Bluesky's ADX"
+    },
+    {
       "source": "/thoughts/UDP",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
@@ -20962,6 +21068,11 @@
       "source": "/thoughts/authorization",
       "target": "/thoughts/signed-messages",
       "text": "signed"
+    },
+    {
+      "source": "/thoughts/authorization",
+      "target": "/thoughts/UCAN",
+      "text": "UCAN"
     },
     {
       "source": "/thoughts/automation",

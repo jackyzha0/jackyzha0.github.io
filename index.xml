@@ -57,6 +57,15 @@ Blobs are [[thoughts/security#Message Digest|cryptographically signed]] so that 
     </item>
     
     <item>
+      <title>UCAN</title>
+      <link>https://jzhao.xyz/thoughts/UCAN/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/UCAN/</guid>
+      <description>At a high level, User Controlled Authorization Networks (UCANs) are a way of doing [[thoughts/authorization|authorization]] (&amp;ldquo;what you can do&amp;rdquo;) where users are fully in control.</description>
+    </item>
+    
+    <item>
       <title>Verifiable Credential</title>
       <link>https://jzhao.xyz/thoughts/Verifiable-Credential/</link>
       <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
@@ -408,7 +417,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 13th  did document needs to specify the service  resolve a DID to web node URI did:example:123 -&amp;gt; resolve to Decentralized Web Node endpoint(s) -&amp;gt; https://dwn.</description>
+      <description>June June 14 - 16th  Mostly trying to answer questions around how [[thoughts/decentralized marketplace|decentralized marketplaces]] for demand work, looking at Golem and Orchid  June 13th  Rough research notes and open questions DID document needs to specify the service  resolve a DID to web node URI did:example:123 -&amp;gt; resolve to Decentralized Web Node endpoint(s) -&amp;gt; https://dwn.</description>
     </item>
     
     <item>

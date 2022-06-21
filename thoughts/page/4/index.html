@@ -547,8 +547,8 @@ Physical Time Two types of clock...</p>
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/system-model/">System model</a></h3>
-                <p>How do we capture assumptions in a system model for [[thoughts/distributed systems|distributed systems?...</p>
+                <h3><a href="https://jzhao.xyz/thoughts/causality/">Causality</a></h3>
+                <p>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </p>
             </div>
             <p class="meta">
                 1 minute read. Last updated May 5, 2022
