@@ -7,8 +7,12 @@ tags:
 ---
 
 ## June
+### June 14 - 16th
+- Mostly trying to answer questions around how [[thoughts/decentralized marketplace|decentralized marketplaces]] for demand work, looking at Golem and Orchid
+
 ### June 13th
--   did document needs to specify the service
+- Rough research notes and open questions
+- DID document needs to specify the service
 	-   resolve a DID to web node URI
 	-   `did:example:123` -> resolve to Decentralized Web Node endpoint(s) -> `https://dwn.example.com`
 -   Raw vs Signed Data

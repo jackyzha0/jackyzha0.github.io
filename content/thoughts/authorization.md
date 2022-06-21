@@ -21,7 +21,4 @@ The party that creates the JWT signs the header and payload with
 
 When the token is used, the receiving party verifies that the header and payload match the signature.
 
-## UCAN
-> At a high level, User Controlled Authorization Networks (UCANs) are a way of doing authorization ("what you can do") where users are fully in control. There's no all-powerful authorization server, or server of any kind required. Everything that a users is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format.
-
-See [source 1](https://fission.codes/blog/auth-without-backend/) and [source 2](https://fission.codes/blog/verifying-ucans/)
+See also: [[thoughts/UCAN|UCAN]]

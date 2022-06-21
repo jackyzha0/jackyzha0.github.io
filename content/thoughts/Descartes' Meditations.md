@@ -128,3 +128,4 @@ Descartes goes on to utilize the statement that God exists to prove that God can
 4. As my perception is clear, the material world must exist
 
 However, this argument also begs the question as it relies on the first proof that God necessarily exists as a premise. Unfortunately, Descartes first proof relies on the fact that Descartes has a clear and distinct idea of God, which presupposes clear and distinct perception (the conclusion of this argument). Thus, to show that his perception is clear, he must assume that his perception is clear -- clearly an invalid argument.
+

@@ -11,6 +11,11 @@ Worked a lot with Ruby, known for social justice work and activism. Transitioned
 	- 2014
 	- Helped promote widespread adoption of codes of conduct
 - Post-Meritocracy
+	- Meritocracy
+		- "We hide behind the motto of “love the art, hate the artist” to justify our preferences despite the faint voice of conscience, persistent in telling us that something is amiss."
+		- "One of the well-noted problems of adopting utility as the primary measure of morality is that it ignores the concept of justice, as cruel actions are condoned so long as they contribute to the greater good. Inequalities or injustices inflicted upon a minority are also deemed acceptable by this philosophy, so long as they do not interfere with the ability of the majority to experience pleasure." -- [[thoughts/To Live in their Utopia|To Live in their Utopia]]
+		- Foolish to think we can make metrics and measure everything that's important.
+			- "Measuring the final result doesn’t provide enough quantitative data, so it’s tempting to include the data from intermediate steps. This is an attempt to shorten the feedback loop, and trying to shorten feedback loops is very dangerous in complex systems." [Source](https://brianlui.dog/2020/05/10/beware-of-tight-feedback-loops/)
 	- But meritocracy has consistently shown itself to mainly benefit those with privilege, to the exclusion of underrepresented people in technology
 	- "We can add the most value as professionals by drawing on the diversity of our identities, backgrounds, experiences, and perspectives. Homogeneity is an antipattern."
 	- More than the work we do -- what would meritocracy look like in a post-work society?
@@ -27,22 +32,3 @@ Worked a lot with Ruby, known for social justice work and activism. Transitioned
 - Opalgate
 	- "meh went on to state that he would knowingly and gladly accept working with a child molestor or cross-burning racist as long as their contributed code was good"
 - First-time contributor tag, good first issue, etc.
-
-Questions
-- Deciding to work within a company vs outside of it
-	- At what point do you leave?
-- Sustainability of working outside of the context of a company
-	- funding open source is hard
-	- intersection of social justice work and open source, v prone to burn out
-	- We can be successful while leading rich, full lives. Our success and value is not dependent on exerting all of our energy on contributing to software. (re: post-meritocracy)
-		- Don't bring your whole self to work? Is this what this is saying
-- 21:42 "I believe that as technologists we have a moral imperative to prevent our work from being used to harm others. Responsibility is about impact not intent. Freedom for freedom’s sake is incompatible with our responsibility to society." [Source](https://www.youtube.com/watch?v=_-WP9g4jCU0)
-- Whether https://ethicalsource.dev/ is worth doing
-	- ethics of AI/multiplicative technology
-	- how would gating open source technology look like
-- Early music streaming/torrent
-- Building things into tech vs relying on policy
-	- codifying/quantifying values in software -- is this possible
-- Decentralization
-	- https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html
-- Target: 1500-3000 words

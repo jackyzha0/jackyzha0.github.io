@@ -27,3 +27,15 @@ Our model is that _speech_ (data, networking) and _reach_ (crawling, aggrega
 There's no one company that can decide what gets published; instead there is a marketplace of companies deciding what to carry to their audiences.
 
 ![[thoughts/images/speech and reach layers.png]]
+
+### DID Consortium
+Source of truth for DIDs on ADX, operated by multiple different operators (organizations) who share ownership of service. They all operate a shared append-only log. Client send transactions to operators. Auditors can monitor the append-only log to ensure the consortium is operating as it should.
+
+### Key management
+We believe users should be given the options to use both custodial and non-custodial solutions. Key management is (at this stage) difficult for average consumers and so a custodial solution should be made available, but for professionals and security-conscious users a non-custodial option should also be supported.
+
+The key manager has the following responsibilities:
+- Store root private keys
+- Publish updates to the users' [[thoughts/DID|DID]] Documents
+- Create delegated keypairs through [[thoughts/UCAN|UCAN]] issuance
+Handle recovery flows in the event of key loss
