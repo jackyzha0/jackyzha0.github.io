@@ -31,7 +31,7 @@ How larger systems -- including norms, values, and assumptions -- are encoded in
 
 Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face
 
-Design justice is a framework for analysis of how design distributes benefits and burdges between various groups of people.
+Design justice is a framework for analysis of how design distributes benefits and bridges between various groups of people.
 
 Design (noun): A plan or scheme conceived in the mind and intended for subsequent execution; the preliminary conception of an idea that is to carried into effect by action; a project. (Oxford English Dictionary)
 
@@ -40,11 +40,11 @@ True, everyone designs, but only certain kinds of design work are acknowledged, 
 *Affordance* refers to "the perceived and actual properties of the thing, primarily those fundamental properties that determine just how the thing could possibly be used." ... An object's affordances are never equally perceptible to all, and never equally available to all.
 
 ### On Intersectionality
-Block women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.
+Black women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.
 
 The concept of intersectionality provided the grounds for a long, slow paradigm shift that is still unfolding in the social sciences, in legal scholarship, and in other domains of research and practice.
 
-While there is rapidly growing interest in algorithmic bias audits, especially in the fairness, accoutnability, and transparency in machine learning (FAT*) community, most are single-axis: they look for a biased distribution of error rates only according to a single variable, such as race or gender.
+While there is rapidly growing interest in algorithmic bias audits, especially in the fairness, accountability, and transparency in machine learning (FAT*) community, most are single-axis: they look for a biased distribution of error rates only according to a single variable, such as race or gender.
 
 One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
 
@@ -53,7 +53,7 @@ Universal Design (UD) as defined by Center for UD at North Carolina State Univer
 
 At least in the digital domain, adaptive design that enables personalization and flexible configuration of shared core objects, tools, platforms, and systems provides a path out of the tension between the diverse needs of individual users and the economic advantages of a large-scale user base.
 
-Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adawptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
+Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adaptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
 
 We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
 
@@ -73,7 +73,7 @@ i.e. what's wrong with colour blindness
 "Under this new rhetoric of colour-blindness, equality means treating all individuals the same, regardless of differences they brought with them due to the effects of past discrimination or even discrimination in other venues"
 
 New Jim Code
-Algorithmic decision systems based on historical data sets reinforce white seupremacy and discrimination even as they are positioned by their designers as "fair"
+Algorithmic decision systems based on historical data sets reinforce white supremacy and discrimination even as they are positioned by their designers as "fair"
 
 Racial hierarchies can only be dismantled by actively antiracist systems design, not by pretending they don't exist.
 
@@ -81,16 +81,16 @@ Far too often, user personas are created out of thin air by members of the desig
 
 ### [Maintenance](thoughts/maintenance.md)
 
-[Creating new vs maintaing old](thoughts/creation%20vs%20maintenance.md)
-- Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating someething new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
+[Creating new vs maintaining old](thoughts/creation%20vs%20maintenance.md)
+- Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating something new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
 - Support maintenance, not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
 
-"Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenace"
+"Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenance"
 
 ### Technosolutionism/Technochauvinism
 New technology will save us!!
 
-An exclusionary and elitist understanding of what technology is and where it comes from and a lack of interest in preexisting, community-based desigbn practices.
+An exclusionary and elitist understanding of what technology is and where it comes from and a lack of interest in preexisting, community-based design practices.
 
 "... where we are wholly dependent on a handful of extraordinarily gifted entrepreneurs to lead us out of the dark ages. This is a myth."
 
@@ -109,17 +109,17 @@ Mediated visibility has become an important form of capital. Attention (time) is
 ### Design Sites
 Tracing the cooptation of hacker culture by neoliberalism
 
-Invisibility of subaltern communites may also be strategic. Sometimes, they shield their practices and innovations from mainstream visibility to avoid incorporation and appropriation.
+Invisibility of subaltern communities may also be strategic. Sometimes, they shield their practices and innovations from mainstream visibility to avoid incorporation and appropriation.
 
 "Alternative spaces and forms of living provided interesting ideas could be milked and marketed. So certain structural features of these 'indie' movement outputs were suddenly highly acclaimed, applied, and copy-pasted into capitalist developing laboratories" ([Post-It Note City](thoughts/Post-It%20Note%20City.md))
 
-Hackspaces in the European context, which they describe as originally being "third spaces" outside of the logic of both the communist state and the capitalist market. 
+Hackerspaces in the European context, which they describe as originally being "third spaces" outside of the logic of both the communist state and the capitalist market. 
 
 The assumption that making sites "open" makes them inclusive, without specifically addressing race, class, gender, and/or disability dynamics, is common to many privileged design sites.
 
 Many who are active in these design sites feel themselves to be participants in *commons-based peer production,* or "decentralized, collaborative, and non-proprietary; base on sharing resources and outputs among widely distributed, loosely connected individuals who cooperate with each other without relying on either market signals or managerial commands"
 
-Without intentional intervention, these spaces find it very difficult to fulfill even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
+Without intentional intervention, these spaces find it very difficult to fulfil even their own liberal democratic rhetoric because they end up dominated by white cis men and by middle-class people with free time and disposable income.
 
 More on hackathons: [hackathons](posts/hackathons.md)
 
@@ -138,7 +138,7 @@ Hackathons nearly always focus on problems and rarely build on existing communit
 "Hackathon spaces cultivate a culture that marginalizes hackers with specific needs, including but not limited to women, people with disabilities, people with non-traditional backgrounds, and even individuals with specific dietary restrictions. By consistently ignoring the health, diet, and care needs of diverse attendees, along with needs based on skill, class, and gender identities, hackathons create an exclusive and hostile environment."
 
 #### Hackathons: The Good
-They are often crucibles of intense and focused learning, making, problem-solving, communtiy building, and play.
+They are often crucibles of intense and focused learning, making, problem-solving, community building, and play.
 
 "In the old days people used to form teams and rush in and try to fix things, without really even knowing what was broken ... it is no longer just a bunch of programmers in a room. There are now hackathons where actual community members are learning to code and interacting. ... Community members are also teaching programmers about the things they need to sustain and build for the future. That's a really good thing happening"
 
@@ -157,8 +157,8 @@ Key elements
 * Teach data science that values not only reason, but ethics and emotions as well
 
 ### Critiques
-"Design by commitee produces mediocrity" or "we don't want to end up with the lowest-common-denominator design!"
+"Design by committee produces mediocrity" or "we don't want to end up with the lowest-common-denominator design!"
 
 It's true that design justice practitioners have to take care that critique does not become our primary activity; an overemphasis on testing, evaluation, and critique can indeed be ultimately disempowering. At the same time, explicit critique paired with alternative proposals can be very productive.
 
-Design justice doesn't imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a *filter* that we use to eliminate most design possibilities from consideration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choics, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
+Design justice doesn't imply that we must somehow reduce our options to only those that satisfy all accessibility criteria for the most marginalized within the matrix of domination. It is not meant to be a *filter* that we use to eliminate most design possibilities from consideration because they fail an accessibility checklist. In fact, design justice as a framework is meant to do the opposite: to act not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
