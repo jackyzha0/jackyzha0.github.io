@@ -7,46 +7,60 @@ tags:
 ---
 
 ## June
-### June 14 - 16th
+### June 20th - 23rd
+- Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio)
+- Open Questions
+	- Handling cases where data > storage availability
+	- Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely
+- Settling into new place, we cleaned out the garage (which is where I am staying) and made it somewhat liveable?? Took a lot of work, the previous tenant didn't even properly move out which was a stressor for a little while
+	- Because there is no proper heating/cooling, sometimes I literally work with the garage door open for good circulation which gets me weird looks from the neighbours but its fun
+	- Incepto people have all been super nice and they are all working on/exploring cool things
+
+### June 16 - 19th
+- Interact Retreat! Lots of good conversations about the work I'm doing which has been super clarifying for what type of explanation gets through to certain types of people
+- Generally find framing it in terms of net neutrality but applied to data gets a lot of people excited about it, as well as meaningfully explaining + differentiating from Tim Berners-Lee's [[thoughts/Solid|Solid]] project and how Rhizome focuses on addressing main retro points from major p2p protocols.
+
+### June 14 - 15th
 - Mostly trying to answer questions around how [[thoughts/decentralized marketplace|decentralized marketplaces]] for demand work, looking at Golem and Orchid
+- Lots of moving around (moved from Tempe to SF, about to head to Interact retreat!)
 
 ### June 13th
-- Rough research notes and open questions
+- Rough research notes and open questions on [[thoughts/DID#DWN|DWNs]]
 - DID document needs to specify the service
-	-   resolve a DID to web node URI
-	-   `did:example:123` -> resolve to Decentralized Web Node endpoint(s) -> `https://dwn.example.com`
--   Raw vs Signed Data
-	-   Raw → only data + descriptor
-	-   Signed → data + descriptor + attestation (JSON web signature/JWS)
-	-   more details: https://identity.foundation/decentralized-web-node/spec/#message-descriptors
--   Storing data relative to a schema
-	-   https://identity.foundation/decentralized-web-node/spec/#query
-	-   schema field in descriptor
-	-   JSON-LD + https://schema.org ?
-	-   or... openzepellin style, vetted schemas
-	-   data lensing should fit into this
--   Permissions request
-	-   https://identity.foundation/decentralized-web-node/spec/#request
-	-   signed message
-	-   define scope
-	-   based on DAG commit range perhaps?
--   Open questions
-	-   how does DID ownership work? what is it pinned to? is IPFS sufficient?
-	-   notes on sidetree
-	-   how do we make ownership/data management easy for non-technical people?
+	- Resolve a DID to web node URI
+	- `did:example:123` -> resolve to Decentralized Web Node endpoint(s) -> `https://dwn.example.com`
+- Raw vs Signed Data
+	- Raw → only data + descriptor
+	- Signed → data + descriptor + attestation (JSON web signature/JWS)
+	- more details: https://identity.foundation/decentralized-web-node/spec/#message-descriptors
+- Storing data relative to a schema
+	- https://identity.foundation/decentralized-web-node/spec/#query
+	- schema field in descriptor
+	- JSON-LD + https://schema.org ?
+	- or... openzepellin style, vetted schemas
+	- data lensing should fit into this
+- Permissions request
+	- https://identity.foundation/decentralized-web-node/spec/#request
+	- signed message
+	- define scope
+	- based on DAG commit range perhaps?
+	- Potentially using [[thoughts/UCAN|UCANs]]
+- Open questions
+	- How does DID ownership work? what is it pinned to? is IPFS sufficient?
+		- TLDR; DID needs to be generally anchored to something. Notes on [[thoughts/Sidetree|Sidetree]], a backend agnostic DID persistence mechanism
+	- How do we make ownership/data management easy for non-technical people?
 
 ### June 11-12th
-- Roadtrip with Anson! Much needed break to get a mental break and reset.
+- Roadtrip with Anson! Much needed break to get a mental break and reset
 
 ### June 10th
 - Spicy day today... Jack Dorsey just announced TBD working on Web5, supposedly an extra decentralized web platform (https://twitter.com/jack/status/1535314738078486533)
 	- web5 seems to focus on the philosophy side a lot more than actual usability
-	- v similar to webid except anchored on bitcoin
-- 
-- feel like a little boat in a big ocean where huge battleships drift by every now and then
-	- makes me doubt what i can really do as this small little boat
-	- but reminded that steering my own little boat gives me agency as to what i can explore and do
-	- the little boat that could
+	- v similar to webid except anchored on bitcoin (lots of interesting stuff using [[thoughts/Sidetree|Sidetree]] tjpigj)
+- Feel like a little boat in a big ocean where huge battleships drift by every now and then
+	- Makes me doubt what I can really do as this small little boat
+	- But reminded that steering my own little boat gives me agency as to what I can explore and do
+	- The little boat that could
 
 ### June 9th
 - Lots of research, mostly around [[thoughts/FOAF|FOAF]], [[thoughts/LDP|LDP]], [[thoughts/RDF|RDF]]
