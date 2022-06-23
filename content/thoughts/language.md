@@ -20,6 +20,9 @@ tags:
 	- Words (phonology, semantics)
 	- Grammar (morphology, syntax)
 	- Social and communicative Function (pragmatics)
+- Productivity: you can come up with (or generate) new words and sentences, even if you have never said them before
+- Comprehension: you can understand infinite combinations of morphemes and
+words, even if you have never heard them before
 ### Components of Language Knowledge
 - Phonetics: how to produce/pronounce sounds or signs, how we hear sounds
 - Phonology: which sounds are used in language, how sounds are combined to form words
@@ -62,8 +65,6 @@ that children learn language without formal instruction (maturation)
 - Rule learning: a stronger claim than statistical learning, claims that babies can learn a pattern that must be described in terms of symbols (or variables) that stand for any sound. Babies learn algebraic rules, not just statistical regularities
 - Phonological bootstrapping hypothesis: children use phonological cues (e.g. nouns tend to have first-syllable stress whereas verbs have second-syllable stress) to break into grammatical structure 
 - Prosodic bootstrapping hypothesis: pauses and changes in intonation at phrase boundaries
-- Child-directed speech: aka motherese, when talking to babies, adults use a higher-pitched voice, a wider range of pitches, longer pauses, and shorter phrases. Vowels are not only longer in duration, but also are more prototypical examples of the particular vowel being produced
-- Negative evidence: correcting overgeneralizations
 ### 5 stages in early speech production
 1. Reflexive Crying and Vegetative Sounds
 	1. Burps, sneezes, anything that accompanies biological functions
@@ -133,7 +134,9 @@ that children learn language without formal instruction (maturation)
 - Relational relativity hypothesis: possibility that verb meanings will vary from language to language (linguistic work showing that noun meanings are more similar across languages than are verb meanings)
 - Word extension: to what extent is a word valid?
 	- Underextensions: using words in a more restricted fashion
-	- Overextensions: using words in a more broad fashion
+	- Overextensions: using words in a more broad fashion (for related study, see Naigles & Gelman 1995 study, results showed that overextensions are mistakes, they don’t indicate incorrect understanding of the words)
+	- Protowords (also known as phonetically consistent forms -- PCFs)
+		- Phonetically consistent: the child uses the same word every time.
 	- Things that help with accurate word extension:
 		- Taxonomic extension: words to things are actually taxonomies (they are of the same category)
 - Word spurt: see Choi & Gopnik (1995)
@@ -145,4 +148,104 @@ that children learn language without formal instruction (maturation)
 	- Lexical principles/lexical constraints: guides that limit possible interpretations of new words
 		- Whole-object assumption: words refer to whole objects
 		- Assumption of mutual exclusivity: different words refer to different kinds of things. No category overlap
+	- Lexical gaps: Sometimes things are not a one-to-one match – your language may not have a lexical item for something
 - Syntactic bootstrapping hypothesis: knowledge of language structure is generally useful for learning new verbs
+	- If we know what the syntactic structure of the language is, it is easier to figure out the meaning of a new word
+- Age at which children learn early words (first 50-100) can vary a lot due to
+	- Environmental Factors
+		- Language experience and input
+		- Socioeconomic status (SES)
+		- Birth order
+	- Individual Factors
+		- Processing speed
+		- Phonological memory
+		- Personality and temperament
+### Learning Syntax
+- Motherese/infant-directed speech (IDS)/child-directed speech (CDS), when talking to babies, adults use a higher-pitched voice, a wider range of pitches, longer pauses, and shorter phrases. Vowels are not only longer in duration, but also are more prototypical examples of the particular vowel being produced
+	- Generally more straightforward - focused on here and now, directs joint attention, and connects to real world referents
+	- Lots of repetition for new lexical items
+	- Helps with language acquisition
+- Negative evidence: correcting overgeneralizations
+	- There is no negative evidence in the speech stream without explicit feedback
+- Cross-situational learning: computing correlations between hearing a word and experiencing its referent (see Smith & Yu 2008 for related study on whether cross-situational learning is a possible explanation for how children learn words)
+- Prescriptive grammar: dictates how people should speak, gives rules and grammar based around a “standard” or “correct” way of speaking, ignoring variation between dialects or between different demographics of people
+- Descriptive grammar: we want to describe how people actually speak, not how we think they should speak
+- Measurables
+	- Longest utterance
+	- Average utterance (mean length of utterance or MLU)
+	- Kinds of sentences the child can produce
+- Stages of development
+	- Stage I (MLU 1.01 to 1.99): earliest word combinations
+	- Stage II (MLU 2.00 to 2.49): grammatical morphemes start showing up
+	- Stage III (MLU 2.50 to 2.99): varied simple sentences
+	- Stage IV (MLU 3.00 and up): varied complex sentences
+	- Stage V: new complex sentences
+- Open-class words: nouns, verbs, adjectives (can be added to)
+- Closed-class words: auxiliaries, prepositions, complementizers, determiners (usually fixed in language)
+- Sentence types
+	- Declarative (statement): “that’s a doggie”
+	- Imperative (command): “look at the doggie”
+	- Interrogative (question): yes/no questions
+	- Negative sentences: contain negation
+	- Complex sentences: contain more than one main verb
+- Hirsch-Pasek and Golinkoff (1996): word order comprehension study. Do children know about subjects vs. objects and word order? 
+- Two theories of syntax
+	- Innate/generative: children do not "learn" anything specific for a given language, they already have a universal grammar (UG), they learn language-specific parameters to the UG
+	- Experience-based/constructivist: grammatical knowledge comes completely from experience
+### Learning Morphology
+- Morpheme: the smallest unit of meaning in a language
+	- Free morphemes can occur alone
+	- Bound morphemes cannot
+- Order of acquisition of phonemes (Brown 1973)
+	- Morphemes come in in a consistent order (within a language)
+	- The order is predicted based on a variety of factors, including the salience and consistency of form-meaning mapping
+	- Same factors can predict differences between languages (in languages with more salient affixes and consistent form-meaning mappings children learn the morphology earlier)
+- The U-shaped curve
+	1. Rote memorization (child stores the forms they hear) – higher accuracy
+	2. Rule acquired and over-applied – lower accuracy
+	3. Rule acquired but children also know there are exceptions – higher accuracy
+### Learning Pragmatics
+- Linguistic competence: ability to use language in grammatical ways, including in production and comprehension
+- Communicative competence: ability to use languages in manners that are appropriate for a given conversation, communicative goal, or social setting.
+- Intentionality is actually a bigger question with respect to language acquisition: is the child intending to communicate?
+	- Early vegetative noises are not communicative acts, but they can be for adults (e.g., an intentional yawn to express boredom).
+- Three phases
+	- Perlocutionary Phase (0;0-0;10): what I do/say has an effect on other people
+	- Illocutionary Phase (0;10-1;0): I can use what I do/say to communicate with other people
+	- Locutionary Phase (1;0+): I can use language (words used referentially and within well-formed sentences) in my communication
+- Conversational ability
+	- Connected discourse: communication involving multiple sentences or utterances in a longer time period
+	- Grice (1957, 1985): two rules to be a good conversationalist
+		- Take turns
+			- Very young children (preschoolers and young school age) have longer pauses between turns and less overlapping speech than adults have. They are not as good (as adults) at using words like and, and then, or um to indicate they are not finished talking.
+		- Be cooperative, optimize for
+			- Quantity: Make your contribution as informative as is required; provide neither too much nor too little information
+			- Quality: Try to make your contribution one that is true; do not say what you believe to be false or that for which you lack adequate evidence
+			- Relation: Be relevant
+			- Manner: Be perspicuous (i.e., be clear—brief, orderly, unambiguous)
+- Theories about early conversation
+	- Piaget: child does not have the skill and will for conversation yet
+	- Vygotsky: speech serves a different function for children at early stages
+### Learning Sociolinguistics
+- Sociolinguistic development: how children learn to use their languages in socially appropriate ways that reflect their status in the community and the social context
+- Constrained variation: distribution of a variant is not random or free, there are systematic correlations with independent factors.
+- Free variation: accounts for cases where some variants seem to alternate with each other without any reliable constraints in a particular context or when used by a certain speaker
+- Interspeaker: variation occurs between different speakers within or across speech communities
+- Intraspeaker: variation occurs between within a single speaker, but might depend on interlocutors and context (= inherent variability)
+- Group differentiation: social/regional varieties index (mark) group boundaries
+- Language: not mutually intelligible communication systems
+- Dialect: mutually intelligible, but have differences in sentence structure (syntax), how words are made (morphology), or word choice (lexicon)
+- Accent: mutually intelligible, only have differences in phonology (sounds)
+- Variation factors
+	- Speaker-driven factors
+	- Audience-driven factors
+	- Task-related factors
+	- Linguistic factors
+- Ochs (1985)
+	- How are phonological registers, word order, and ergativity acquired by children learning Samoan (and how does their speech compare to adult patterns)?
+		- Children use features of both registers even at one word stage, but do not show recognition of appropriate contexts until multi-word stage (2- 2.5 years), children start producing tautala lelei first and then tautala leaga
+	- Ergativity acquired relatively late, appears to match a sociolinguistic norm in the community
+- Types of time
+	- Real Time: chronological time based on year
+	- Apparent Time: an estimate of time based on speaker age or date of birth
+	- When we look at a speaker age as a proxy for time, we must make assumptions what things are stable in language and at what ages.

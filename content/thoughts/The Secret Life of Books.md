@@ -1,5 +1,5 @@
 ---
-title: "The Inner Lives of Books"
+title: "The Secret Life of Books"
 date: 2022-05-30
 tags:
 - seed
