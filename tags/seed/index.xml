@@ -6,7 +6,16 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File system</title>
+      <link>https://jzhao.xyz/thoughts/file-system/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/file-system/</guid>
+      <description>Virtual Distributed File System From Alluxio&amp;rsquo;s Technical Paper by Haoyuan Li</description>
+    </item>
+    
     <item>
       <title>ActivityPub</title>
       <link>https://jzhao.xyz/thoughts/ActivityPub/</link>

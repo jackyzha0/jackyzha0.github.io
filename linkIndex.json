@@ -2666,8 +2666,28 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Solid",
+          "text": "Solid"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/decentralized-marketplace",
           "text": "decentralized marketplaces"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/UCAN",
+          "text": "UCANs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -5029,6 +5049,13 @@
           "source": "/thoughts/fiction",
           "target": "/thoughts/skyhooks",
           "text": "skyhooks"
+        }
+      ],
+      "/thoughts/file-system": [
+        {
+          "source": "/thoughts/file-system",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP"
         }
       ],
       "/thoughts/frame-problem": [
@@ -10173,6 +10200,11 @@
           "text": "IP Addresses"
         },
         {
+          "source": "/thoughts/file-system",
+          "target": "/thoughts/IP-Addresses",
+          "text": "IP"
+        },
+        {
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/IP-Addresses",
           "text": "IPv4 to IPv6"
@@ -11196,6 +11228,16 @@
           "source": "/thoughts/DID",
           "target": "/thoughts/Sidetree",
           "text": "Sidetree"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Sidetree",
+          "text": "Sidetree"
         }
       ],
       "/thoughts/Social-Bias-in-Information-Retrieval": [
@@ -11220,6 +11262,13 @@
           "source": "/thoughts/blockchain",
           "target": "/thoughts/Solana",
           "text": "Solana"
+        }
+      ],
+      "/thoughts/Solid": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Solid",
+          "text": "Solid"
         }
       ],
       "/thoughts/Stream-of-Consciousness": [
@@ -11490,6 +11539,11 @@
           "source": "/thoughts/Bluesky",
           "target": "/thoughts/UCAN",
           "text": "UCAN"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/UCAN",
+          "text": "UCANs"
         },
         {
           "source": "/thoughts/authorization",
@@ -20286,8 +20340,28 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Solid",
+      "text": "Solid"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/decentralized-marketplace",
       "text": "decentralized marketplaces"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/UCAN",
+      "text": "UCANs"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Sidetree",
+      "text": "Sidetree"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Sidetree",
+      "text": "Sidetree"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -22453,6 +22527,11 @@
       "source": "/thoughts/fiction",
       "target": "/thoughts/skyhooks",
       "text": "skyhooks"
+    },
+    {
+      "source": "/thoughts/file-system",
+      "target": "/thoughts/IP-Addresses",
+      "text": "IP"
     },
     {
       "source": "/thoughts/frame-problem",

@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/file-system/</loc>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/seed/</loc>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/fruit/</loc>
     <lastmod>2022-06-23T09:24:42-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Hold-the-Fries/</loc>
-    <lastmod>2022-06-23T09:24:42-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-06-23T09:24:42-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
     <lastmod>2022-06-23T09:24:42-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/writing/</loc>
@@ -28,9 +34,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Matrix/</loc>
     <lastmod>2022-06-15T13:57:58-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-06-23T09:24:42-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/signed-messages/</loc>
     <lastmod>2022-06-15T13:57:58-07:00</lastmod>
@@ -114,7 +117,7 @@
     <lastmod>2022-05-10T16:59:45-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/rhizome/</loc>
-    <lastmod>2022-06-21T11:17:18-07:00</lastmod>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</loc>
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
@@ -156,10 +159,10 @@
     <lastmod>2022-05-14T11:48:19-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
-    <lastmod>2022-06-21T11:17:18-07:00</lastmod>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-06-21T11:17:18-07:00</lastmod>
+    <lastmod>2022-06-23T12:13:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-05-03T16:04:35-04:00</lastmod>

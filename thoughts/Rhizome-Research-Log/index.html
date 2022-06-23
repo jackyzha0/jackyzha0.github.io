@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="June June 14 - 16th  Mostly trying to answer questions around how [[thoughts/decentralized marketplace|decentralized marketplaces]] for demand work, looking at Golem and Orchid  June 13th  Rough research notes and open questions DID document needs to specify the service  resolve a DID to web node URI did:example:123 -&gt; resolve to Decentralized Web Node endpoint(s) -&gt; https://dwn.">
+    <meta name="description" content="June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&rsquo;]] (specifically Alluxio) Open Questions  Handling cases where data &gt; storage availability Checkpoint heuristics: when to checkpoint?">
     <title>Rhizome Research Log</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Research Log</h1>
     <article>
       <p class="meta">
-          Last updated June 21, 2022
+          Last updated June 23, 2022
       </p>
       <ul class="tags">
     
@@ -489,7 +489,9 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#june">June</a>
       <ol>
-        <li><a href="#june-14---16th">June 14 - 16th</a></li>
+        <li><a href="#june-20th---23rd">June 20th - 23rd</a></li>
+        <li><a href="#june-16---19th">June 16 - 19th</a></li>
+        <li><a href="#june-14---15th">June 14 - 15th</a></li>
         <li><a href="#june-13th">June 13th</a></li>
         <li><a href="#june-11-12th">June 11-12th</a></li>
         <li><a href="#june-10th">June 10th</a></li>
@@ -543,6 +545,390 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -2776,16 +3162,38 @@ if (!doNotTrack) {
 
 
 <a href="#june"><h2 id="june"><span class="hanchor" ariaLabel="Anchor"># </span>June</h2></a>
-<a href="#june-14---16th"><h3 id="june-14---16th"><span class="hanchor" ariaLabel="Anchor"># </span>June 14 - 16th</h3></a>
+<a href="#june-20th---23rd"><h3 id="june-20th---23rd"><span class="hanchor" ariaLabel="Anchor"># </span>June 20th - 23rd</h3></a>
+<ul>
+<li>Reading about <a href="/thoughts/file-system#Virtual Distributed File System" rel="noopener" class="internal-link" data-src="/thoughts/file-system">VDFS&rsquo;</a> (specifically Alluxio)</li>
+<li>Open Questions
+<ul>
+<li>Handling cases where data &gt; storage availability</li>
+<li>Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely</li>
+</ul>
+</li>
+<li>Settling into new place, we cleaned out the garage (which is where I am staying) and made it somewhat liveable?? Took a lot of work, the previous tenant didn&rsquo;t even properly move out which was a stressor for a little while
+<ul>
+<li>Because there is no proper heating/cooling, sometimes I literally work with the garage door open for good circulation which gets me weird looks from the neighbours but its fun</li>
+<li>Incepto people have all been super nice and they are all working on/exploring cool things</li>
+</ul>
+</li>
+</ul>
+<a href="#june-16---19th"><h3 id="june-16---19th"><span class="hanchor" ariaLabel="Anchor"># </span>June 16 - 19th</h3></a>
+<ul>
+<li>Interact Retreat! Lots of good conversations about the work I&rsquo;m doing which has been super clarifying for what type of explanation gets through to certain types of people</li>
+<li>Generally find framing it in terms of net neutrality but applied to data gets a lot of people excited about it, as well as meaningfully explaining + differentiating from Tim Berners-Lee&rsquo;s <a href="/thoughts/Solid" rel="noopener" class="internal-link" data-src="/thoughts/Solid">Solid</a> project and how Rhizome focuses on addressing main retro points from major p2p protocols.</li>
+</ul>
+<a href="#june-14---15th"><h3 id="june-14---15th"><span class="hanchor" ariaLabel="Anchor"># </span>June 14 - 15th</h3></a>
 <ul>
 <li>Mostly trying to answer questions around how <a href="/thoughts/decentralized-marketplace" rel="noopener" class="internal-link" data-src="/thoughts/decentralized-marketplace">decentralized marketplaces</a> for demand work, looking at Golem and Orchid</li>
+<li>Lots of moving around (moved from Tempe to SF, about to head to Interact retreat!)</li>
 </ul>
 <a href="#june-13th"><h3 id="june-13th"><span class="hanchor" ariaLabel="Anchor"># </span>June 13th</h3></a>
 <ul>
-<li>Rough research notes and open questions</li>
+<li>Rough research notes and open questions on <a href="/thoughts/DID#DWN" rel="noopener" class="internal-link" data-src="/thoughts/DID">DWNs</a></li>
 <li>DID document needs to specify the service
 <ul>
-<li>resolve a DID to web node URI</li>
+<li>Resolve a DID to web node URI</li>
 <li><code>did:example:123</code> -&gt; resolve to Decentralized Web Node endpoint(s) -&gt; <code>https://dwn.example.com</code></li>
 </ul>
 </li>
@@ -2819,19 +3227,23 @@ if (!doNotTrack) {
 <li>signed message</li>
 <li>define scope</li>
 <li>based on DAG commit range perhaps?</li>
+<li>Potentially using <a href="/thoughts/UCAN" rel="noopener" class="internal-link" data-src="/thoughts/UCAN">UCANs</a></li>
 </ul>
 </li>
 <li>Open questions
 <ul>
-<li>how does DID ownership work? what is it pinned to? is IPFS sufficient?</li>
-<li>notes on sidetree</li>
-<li>how do we make ownership/data management easy for non-technical people?</li>
+<li>How does DID ownership work? what is it pinned to? is IPFS sufficient?
+<ul>
+<li>TLDR; DID needs to be generally anchored to something. Notes on <a href="/thoughts/Sidetree" rel="noopener" class="internal-link" data-src="/thoughts/Sidetree">Sidetree</a>, a backend agnostic DID persistence mechanism</li>
+</ul>
+</li>
+<li>How do we make ownership/data management easy for non-technical people?</li>
 </ul>
 </li>
 </ul>
 <a href="#june-11-12th"><h3 id="june-11-12th"><span class="hanchor" ariaLabel="Anchor"># </span>June 11-12th</h3></a>
 <ul>
-<li>Roadtrip with Anson! Much needed break to get a mental break and reset.</li>
+<li>Roadtrip with Anson! Much needed break to get a mental break and reset</li>
 </ul>
 <a href="#june-10th"><h3 id="june-10th"><span class="hanchor" ariaLabel="Anchor"># </span>June 10th</h3></a>
 <ul>
@@ -2840,15 +3252,14 @@ if (!doNotTrack) {
 <a href="https://twitter.com/jack/status/1535314738078486533" rel="noopener">https://twitter.com/jack/status/1535314738078486533</a>)
 <ul>
 <li>web5 seems to focus on the philosophy side a lot more than actual usability</li>
-<li>v similar to webid except anchored on bitcoin</li>
+<li>v similar to webid except anchored on bitcoin (lots of interesting stuff using <a href="/thoughts/Sidetree" rel="noopener" class="internal-link" data-src="/thoughts/Sidetree">Sidetree</a> tjpigj)</li>
 </ul>
 </li>
-<li></li>
-<li>feel like a little boat in a big ocean where huge battleships drift by every now and then
+<li>Feel like a little boat in a big ocean where huge battleships drift by every now and then
 <ul>
-<li>makes me doubt what i can really do as this small little boat</li>
-<li>but reminded that steering my own little boat gives me agency as to what i can explore and do</li>
-<li>the little boat that could</li>
+<li>Makes me doubt what I can really do as this small little boat</li>
+<li>But reminded that steering my own little boat gives me agency as to what I can explore and do</li>
+<li>The little boat that could</li>
 </ul>
 </li>
 </ul>
