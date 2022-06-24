@@ -13,7 +13,7 @@ Authorization is the process of verifying what a user has access to (whereas aut
 Three components (looks something like this: xxxxx.yyyyy.zzzzz.)
 1. Header: contains the type of token and signing algorithm
 2. Payload: contains the claims
-3. Signature: ensures the token hasn't been altered
+3. [[thoughts/signed messages|Signature]]: ensures the token hasn't been altered
 
 The party that creates the JWT signs the header and payload with
 - a secret that is known to both the issuer and receiver, or

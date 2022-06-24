@@ -40,6 +40,6 @@ Isn't this potentially problematic? If all nodes know what the upcoming leader i
 ## Archiver Nodes
 If each node in the network was required to store that much data, a limited group of participants who could afford and manage that kind of storage, could join the network and this makes the network centralized.
 
-PoRep stands for proof of replication and it’s a system introduced by Filecoin initially in which a prover defends a publicly verifiable claim that it is dedicating unique resources to storing one or more retrievable replicas of a data file.
+PoRep stands for proof of replication and it’s a system introduced by [[thoughts/Filecoin|Filecoin]] initially in which a prover defends a publicly verifiable claim that it is dedicating unique resources to storing one or more retrievable replicas of a data file.
 
 Occasionally, the network will ask/challenge the archivers to prove they’re doing their job of storing data and at this point, archivers should complete PoRep.

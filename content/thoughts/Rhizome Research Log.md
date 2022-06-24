@@ -8,10 +8,11 @@ tags:
 
 ## June
 ### June 20th - 23rd
-- Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio)
+- Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio) and 
 - Open Questions
 	- Handling cases where data > storage availability
 	- Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely
+		- "Lineage chains can grow very long in a long-running system like Alluxio, therefore the checkpointing algorithm should provide a bound on how long it takes to recompute data in the case of failures"
 - Settling into new place, we cleaned out the garage (which is where I am staying) and made it somewhat liveable?? Took a lot of work, the previous tenant didn't even properly move out which was a stressor for a little while
 	- Because there is no proper heating/cooling, sometimes I literally work with the garage door open for good circulation which gets me weird looks from the neighbours but its fun
 	- Incepto people have all been super nice and they are all working on/exploring cool things
