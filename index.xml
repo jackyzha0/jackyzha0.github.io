@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hyper Hyper Space</title>
+      <link>https://jzhao.xyz/thoughts/Hyper-Hyper-Space/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Hyper-Hyper-Space/</guid>
+      <description>Make all data local, communicate only through data sync</description>
+    </item>
+    
+    <item>
       <title>Elliptic-curve Cryptography (ECC)</title>
       <link>https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
@@ -453,7 +462,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&amp;rsquo;]] (specifically Alluxio) and Open Questions  Handling cases where data &amp;gt; storage availability Checkpoint heuristics: when to checkpoint?</description>
+      <description>June June 24th  Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]] Open questions:  Append-only log or append-only Merkle-DAG?</description>
     </item>
     
     <item>

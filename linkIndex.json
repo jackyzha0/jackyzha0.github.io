@@ -1758,6 +1758,13 @@
           "text": "maintenance"
         }
       ],
+      "/thoughts/Hyper-Hyper-Space": [
+        {
+          "source": "/thoughts/Hyper-Hyper-Space",
+          "target": "/thoughts/causality",
+          "text": "causality"
+        }
+      ],
       "/thoughts/IPFS": [
         {
           "source": "/thoughts/IPFS",
@@ -2691,6 +2698,16 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Hyper-Hyper-Space",
+          "text": "Hyper Hyper Space"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Solid",
@@ -10253,6 +10270,13 @@
           "text": "How to do Nothing"
         }
       ],
+      "/thoughts/Hyper-Hyper-Space": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Hyper-Hyper-Space",
+          "text": "Hyper Hyper Space"
+        }
+      ],
       "/thoughts/IP-Addresses": [
         {
           "source": "/thoughts/DHCP",
@@ -12004,6 +12028,11 @@
           "text": "blockchain"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
+        {
           "source": "/thoughts/Self-sovereign-Identity-SSI",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
@@ -12198,6 +12227,11 @@
           "source": "/thoughts/Chinese-room-argument",
           "target": "/thoughts/causality",
           "text": "causal"
+        },
+        {
+          "source": "/thoughts/Hyper-Hyper-Space",
+          "target": "/thoughts/causality",
+          "text": "causality"
         },
         {
           "source": "/thoughts/Moving-Castles",
@@ -19604,6 +19638,11 @@
       "text": "maintenance"
     },
     {
+      "source": "/thoughts/Hyper-Hyper-Space",
+      "target": "/thoughts/causality",
+      "text": "causality"
+    },
+    {
       "source": "/thoughts/IPFS",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
@@ -20462,6 +20501,16 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Hyper-Hyper-Space",
+      "text": "Hyper Hyper Space"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/blockchain",
+      "text": "blockchains"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",

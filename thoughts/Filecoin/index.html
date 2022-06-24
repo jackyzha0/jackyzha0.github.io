@@ -633,8 +633,14 @@ if (!doNotTrack) {
 <p>Two components</p>
 <ol>
 <li>Proof of replication (PoRep): extends the basic concept of proof-of-retrievability by proving that multiple copies of the data are stored</li>
-<li>Proof of spacetime (PoSt): extends PoRep by proving that replicas are stored for a given period of time. It involves a series of PoReps</li>
+<li>Proof of spacetime (PoSt): extends PoRep by proving that replicas are stored for a given period of time. It involves a series of PoReps
+<ol>
+<li>WinningPoSt: The answer to the <em>WinningPoSt</em> challenge has to be submitted within a short deadline, making it impossible for the miner to seal and find the answer to the challenge on demand. This guarantees that at the time of the challenge the miner maintains a copy of the data.</li>
+<li>WindowPoSt: This involves submitting proofs regularly (see details below) and makes it irrational for a miner to <em>not</em> keep a sealed copy of the data as it is more expensive to seal a copy of the data every time they are asked to submit a WindowPoSt challenge.</li>
 </ol>
+</li>
+</ol>
+<p>The sectors a miner has pledged to store, the more the partitions of sectors that the miner will need to prove per deadline. This requires ready access to sealed copies of each of the challenged sectors and makes it irrational for the miner to seal data every time they need to provide a WindowPoSt proof. If this proof is not completed in time, the storage miner supplying that sector in the proof has their collateral slashed and storage power reduced.</p>
 <a href="#gossippub"><h3 id="gossippub"><span class="hanchor" ariaLabel="Anchor"># </span>GossipPub</h3></a>
 <p>GossipSub is a gossip-based pubsub protocol that is utilising two types of links to propagate messages:</p>
 <ol>
