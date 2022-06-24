@@ -56,7 +56,7 @@ Cassidy glanced at the clock just as it hit 10:00pm.
 
 The two of them sat down in the only two chairs in the room that weren't coated in grime, neither of them saying a word.
 
-Shaun took a bite and chewed, feeling the greasy chicken inch down her throat. "How did you find Mr. Saltsworth's calc test? I definitely feel like I got slaughtered. That one with the double integral was real tricky, how did he expect us to actually know that one?"
+Shaun took a bite and chewed, feeling the greasy chicken inch down his throat. "How did you find Mr. Saltsworth's calc test? I definitely feel like I got slaughtered. That one with the double integral was real tricky, how did he expect us to actually know that one?"
 
 Cassidy spoke between bites. "Well silly, if you actually did the practice problems you would know. In any case, you should start taking school seriously. College application season is soon. How do you expect to do great things in the world if you don't even take this stuff seriously?"
 

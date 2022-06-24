@@ -44,6 +44,10 @@ Challenge properties:
 Two components
 1. Proof of replication (PoRep): extends the basic concept of proof-of-retrievability by proving that multiple copies of the data are stored
 2. Proof of spacetime (PoSt): extends PoRep by proving that replicas are stored for a given period of time. It involves a series of PoReps
+	1. WinningPoSt: The answer to the _WinningPoSt_ challenge has to be submitted within a short deadline, making it impossible for the miner to seal and find the answer to the challenge on demand. This guarantees that at the time of the challenge the miner maintains a copy of the data.
+	2. WindowPoSt: This involves submitting proofs regularly (see details below) and makes it irrational for a miner to _not_ keep a sealed copy of the data as it is more expensive to seal a copy of the data every time they are asked to submit a WindowPoSt challenge.
+
+The sectors a miner has pledged to store, the more the partitions of sectors that the miner will need to prove per deadline. This requires ready access to sealed copies of each of the challenged sectors and makes it irrational for the miner to seal data every time they need to provide a WindowPoSt proof. If this proof is not completed in time, the storage miner supplying that sector in the proof has their collateral slashed and storage power reduced.
 
 ### GossipPub
 GossipSub is a gossip-based pubsub protocol that is utilising two types of links to propagate messages:

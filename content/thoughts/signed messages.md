@@ -16,6 +16,7 @@ It is infeasible for Alice to generate a signed message that appears to have bee
 
 ## Computing Signatures
 - ECDSA Signature over the Secp256k1 [[thoughts/Elliptic-curve Cryptography (ECC)|elliptic curve]]
+- BLS signatures over the BLS12-381 curves
 
 ## Signed Blobs
 [From Farcaster Docs](https://www.farcaster.xyz/docs/signed-blob)
