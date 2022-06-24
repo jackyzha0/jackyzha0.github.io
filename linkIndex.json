@@ -1572,6 +1572,23 @@
           "text": "RDF"
         }
       ],
+      "/thoughts/Filecoin": [
+        {
+          "source": "/thoughts/Filecoin",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplace"
+        },
+        {
+          "source": "/thoughts/Filecoin",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia DHT"
+        },
+        {
+          "source": "/thoughts/Filecoin",
+          "target": "/thoughts/clocks",
+          "text": "clocks"
+        }
+      ],
       "/thoughts/From-Counterculture-to-Cyberculture": [
         {
           "source": "/thoughts/From-Counterculture-to-Cyberculture",
@@ -2629,6 +2646,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Filecoin",
+          "text": "Filecoin"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft consensus protocol"
         },
@@ -2636,6 +2658,11 @@
           "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/state-channels",
           "text": "state channels"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Filecoin",
+          "text": "FileCoin"
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -2964,6 +2991,11 @@
           "source": "/thoughts/Solana",
           "target": "/thoughts/peer-to-peer",
           "text": "p2p"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/Filecoin",
+          "text": "Filecoin"
         }
       ],
       "/thoughts/Solid": [
@@ -3542,6 +3574,11 @@
           "source": "/thoughts/authorization",
           "target": "/thoughts/signed-messages",
           "text": "signed"
+        },
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/signed-messages",
+          "text": "Signature"
         },
         {
           "source": "/thoughts/authorization",
@@ -4757,6 +4794,13 @@
           "source": "/thoughts/emptiness",
           "target": "/thoughts/ontology",
           "text": "ontological"
+        }
+      ],
+      "/thoughts/encryption": [
+        {
+          "source": "/thoughts/encryption",
+          "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+          "text": "elliptic curve cryptography"
         }
       ],
       "/thoughts/ephemereal-content": [
@@ -8007,6 +8051,13 @@
           "text": "Nozick's Experience Machine"
         }
       ],
+      "/thoughts/signed-messages": [
+        {
+          "source": "/thoughts/signed-messages",
+          "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+          "text": "elliptic curve"
+        }
+      ],
       "/thoughts/skyhooks": [
         {
           "source": "/thoughts/skyhooks",
@@ -9901,6 +9952,18 @@
           "text": "Dunbar"
         }
       ],
+      "/thoughts/Elliptic-curve-Cryptography-ECC": [
+        {
+          "source": "/thoughts/encryption",
+          "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+          "text": "elliptic curve cryptography"
+        },
+        {
+          "source": "/thoughts/signed-messages",
+          "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+          "text": "elliptic curve"
+        }
+      ],
       "/thoughts/Epicurueanism": [
         {
           "source": "/thoughts/death",
@@ -9967,6 +10030,23 @@
           "source": "/thoughts/WebID",
           "target": "/thoughts/FOAF",
           "text": "FOAFs"
+        }
+      ],
+      "/thoughts/Filecoin": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Filecoin",
+          "text": "Filecoin"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/Filecoin",
+          "text": "FileCoin"
+        },
+        {
+          "source": "/thoughts/Solana",
+          "target": "/thoughts/Filecoin",
+          "text": "Filecoin"
         }
       ],
       "/thoughts/From-Counterculture-to-Cyberculture": [
@@ -10398,6 +10478,11 @@
       "/thoughts/Kademlia-DHT": [
         {
           "source": "/thoughts/DHT",
+          "target": "/thoughts/Kademlia-DHT",
+          "text": "Kademlia DHT"
+        },
+        {
+          "source": "/thoughts/Filecoin",
           "target": "/thoughts/Kademlia-DHT",
           "text": "Kademlia DHT"
         },
@@ -12216,6 +12301,11 @@
       ],
       "/thoughts/clocks": [
         {
+          "source": "/thoughts/Filecoin",
+          "target": "/thoughts/clocks",
+          "text": "clocks"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/clocks",
           "text": "clocks"
@@ -12914,6 +13004,11 @@
         }
       ],
       "/thoughts/decentralized-marketplace": [
+        {
+          "source": "/thoughts/Filecoin",
+          "target": "/thoughts/decentralized-marketplace",
+          "text": "decentralized marketplace"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/decentralized-marketplace",
@@ -16809,6 +16904,11 @@
           "source": "/thoughts/authorization",
           "target": "/thoughts/signed-messages",
           "text": "signed"
+        },
+        {
+          "source": "/thoughts/authorization",
+          "target": "/thoughts/signed-messages",
+          "text": "Signature"
         }
       ],
       "/thoughts/skyhooks": [
@@ -19334,6 +19434,21 @@
       "text": "RDF"
     },
     {
+      "source": "/thoughts/Filecoin",
+      "target": "/thoughts/decentralized-marketplace",
+      "text": "decentralized marketplace"
+    },
+    {
+      "source": "/thoughts/Filecoin",
+      "target": "/thoughts/Kademlia-DHT",
+      "text": "Kademlia DHT"
+    },
+    {
+      "source": "/thoughts/Filecoin",
+      "target": "/thoughts/clocks",
+      "text": "clocks"
+    },
+    {
       "source": "/thoughts/From-Counterculture-to-Cyberculture",
       "target": "/thoughts/tribe-flourishing",
       "text": "tribal flourishing"
@@ -20305,6 +20420,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Filecoin",
+      "text": "Filecoin"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Raft-Consensus-Algorithm",
       "text": "Raft consensus protocol"
     },
@@ -20312,6 +20432,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/state-channels",
       "text": "state channels"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/Filecoin",
+      "text": "FileCoin"
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
@@ -20622,6 +20747,11 @@
       "source": "/thoughts/Solana",
       "target": "/thoughts/peer-to-peer",
       "text": "p2p"
+    },
+    {
+      "source": "/thoughts/Solana",
+      "target": "/thoughts/Filecoin",
+      "text": "Filecoin"
     },
     {
       "source": "/thoughts/Solid",
@@ -21142,6 +21272,11 @@
       "source": "/thoughts/authorization",
       "target": "/thoughts/signed-messages",
       "text": "signed"
+    },
+    {
+      "source": "/thoughts/authorization",
+      "target": "/thoughts/signed-messages",
+      "text": "Signature"
     },
     {
       "source": "/thoughts/authorization",
@@ -22257,6 +22392,11 @@
       "source": "/thoughts/emptiness",
       "target": "/thoughts/ontology",
       "text": "ontological"
+    },
+    {
+      "source": "/thoughts/encryption",
+      "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+      "text": "elliptic curve cryptography"
     },
     {
       "source": "/thoughts/ephemereal-content",
@@ -25257,6 +25397,11 @@
       "source": "/thoughts/semantics",
       "target": "/thoughts/Nozicks-Experience-Machine",
       "text": "Nozick's Experience Machine"
+    },
+    {
+      "source": "/thoughts/signed-messages",
+      "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
+      "text": "elliptic curve"
     },
     {
       "source": "/thoughts/skyhooks",

@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated June 14, 2022
+          Last updated June 24, 2022
       </p>
       <ul class="tags">
     
@@ -599,6 +599,50 @@ if (!doNotTrack) {
       
       
       
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
       
     
   
@@ -918,13 +962,13 @@ if (!doNotTrack) {
 <a href="#technical-details"><h2 id="technical-details"><span class="hanchor" ariaLabel="Anchor"># </span>Technical Details</h2></a>
 <p>Rhizhome is a set of abstractions on top of DIDs, IPFS (specifically 
 
-<a href="https://ipld.io/" rel="noopener">IPLD</a>), Filecoin, and the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft consensus protocol</a>. It can be analogized to a generalized implementation of <a href="/thoughts/state-channels" rel="noopener" class="internal-link" data-src="/thoughts/state-channels">state channels</a> which don&rsquo;t need to be anchored to a chain.</p>
+<a href="https://ipld.io/" rel="noopener">IPLD</a>), <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">Filecoin</a>, and the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft consensus protocol</a>. It can be analogized to a generalized implementation of <a href="/thoughts/state-channels" rel="noopener" class="internal-link" data-src="/thoughts/state-channels">state channels</a> which don&rsquo;t need to be anchored to a chain.</p>
 <ul>
 <li>Root is a local-first data replication and synchronization service much like iCloud/Dropbox. Root will be implemented as a DID method which uses IPFS as a VDR. The pinned state snapshot is the DID Document.</li>
 <li>All application data is stored in the form of an append-only event log for each app they interact with. This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
 <ul>
 <li>Data availability is achieved with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</li>
-<li>A public marketplace where people can buy and sell compute/storage. Reliability of service is ensured using a modified version of FileCoin&rsquo;s 
+<li>A public marketplace where people can buy and sell compute/storage. Reliability of service is ensured using a modified version of <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">FileCoin</a>&rsquo;s 
 
 <a href="https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/" rel="noopener">Proof of Replication</a>and providers can advertise storage/compute specification so purchasers can choose whether to optimize for space or performance.</li>
 </ul>

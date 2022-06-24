@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <title>Thoughts</title>
+    <meta name="description" content="A form of asymmetric cryptography Much smaller key-sizes than RSA Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 &#43; ax &#43; b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &ldquo;dot&rdquo; function -&gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B.">
+    <title>Elliptic-curve Cryptography (ECC)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -443,9 +443,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
-        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        <div class="spacer"></div>
-        <div class='darkmode'>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -460,213 +460,376 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    </header>
-    <h1>Thoughts</h1>
+  </header>
+    
+    <pre class="ascii ascii-secondary">
+
+ .
+  \_.
+  /
+</pre>
+    
+    <h1 class="title">Elliptic-curve Cryptography (ECC)</h1>
     <article>
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/pace-layers/">Pace Layers</a></h3>
-                <p>The order of civilization. The whole combines learning with continuity....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated May 22, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/indeterminant/">Indeterminacy</a></h3>
-                <p>Anirvacanīyatva or indeterminancy
- Vācaspati Miśra&rsquo;s Bhāmatī, a commentary on Śamkara&rsquo;s Brahmasū-trabhāsya....</p>
-            </div>
-            <p class="meta">
-                7 minute read. Last updated May 5, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/PHIL240A/">PHIL240A</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/philosophical-realism/">Philosophical Realism</a></h3>
-                <p>Certain features of reality (like objects, selves, etc.) exist independently of consciousness (that is, do not depend on conscious observation to exist)....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated April 27, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/meditation/">Meditation</a></h3>
-                <p>A Traditional Account1  bhāvanā = “bringing into being” certain types of mental states, qualities, and traits through repeated practice śamatha(calm, tranquility): a state of sustained and stable attention, concentration....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated April 27, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Hard-problem-of-consciousness/">Hard problem of consciousness</a></h3>
-                <p>Related: mind body problem, Materialism
-How do we bridge objective description and subjective experience (qualia)?...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated April 18, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/art/">Art</a></h3>
-                <p>Source: An artist in Crypto by Wendi Yan and in discussion with Wendi...</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated February 15, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Chestertons-Fence/">Chesterton&#39;s Fence</a></h3>
-                <p>&ldquo;Don&rsquo;t ever take a fence down until you truly know the reason why it was put up&rdquo; &ndash; G....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated February 15, 2022
-            </p>
-            <ul class="tags">
+      <p class="meta">
+          Last updated June 24, 2022
+      </p>
+      <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Matthew-Effect/">Matthew Effect</a></h3>
-                <p>The Matthew effect of accumulated advantage, Matthew principle, or Matthew effect for short, is sometimes summarized by the adage &ldquo;the rich get richer and the poor get poorer&rdquo;</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated January 30, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
+      
+      
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/context/">Context</a></h3>
-                <p>Content only has meaning if it has context
-  emptiness/dependent-origination: does this connect to context as potentially an epistemic instrument?...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated January 30, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-</ul>
 
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/phenomenology/">Phenomenology</a></h3>
-                <p>In phenomenology, the source of all meaning and value is through the subjective lived experience of conscious beings....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated January 28, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
 
-        </div>
-    </li></ul>
-        
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/thoughts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/14/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/13/" aria-label="Page 13" class="page-link" role="button">13</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/14/" aria-label="Page 14" class="page-link" role="button">14</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 15" class="page-link" role="button">15</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/16/" aria-label="Page 16" class="page-link" role="button">16</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/17/" aria-label="Page 17" class="page-link" role="button">17</a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/16/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/39/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+<li>A form of asymmetric cryptography</li>
+<li>Much smaller key-sizes than RSA</li>
+<li>Elliptic Curve properties (specifically looking at Ed25519)
+<ul>
+<li>Formula follows something like $y^2 = x^3 + ax + b$</li>
+<li>Symmetric about the x-axis</li>
+<li>Drawing a straight line through the curve will intersect no more than 3 points
+<ul>
+<li>A line between any two points will also intersect the curve at another place</li>
+</ul>
+</li>
+<li>Starting point on the curve point: A</li>
+<li>&ldquo;dot&rdquo; function -&gt; kind of like a game of billiards
+<ul>
+<li>In this game of billiards, you take a ball at point A, shoot it towards point B. When it hits the curve, the ball bounces either straight up (if it&rsquo;s below the x-axis) or straight down (if it&rsquo;s above the x-axis) to the other side of the curve. The point it lands on is C</li>
+<li>If the value C is over some maximum value (usually a prime), we modulus it with the maximum to end with a valid number.</li>
+<li>A dot B = C</li>
+</ul>
+</li>
+<li>
+<img src="https://blog.cloudflare.com/content/images/image02.gif" alt="Billiard animation"  /></li>
+<li>It turns out that if you &ldquo;dot&rdquo; an initial point with itself $n$ times to arrive at a final point, finding out $n$ when you only know the final point and the first point is hard</li>
+<li>$n$ is then the private key, point A dotted with itself $n$ times is the public key</li>
+</ul>
+</li>
+<li>ECDHE stands for Elliptic Curve Diffie Hellman Ephemeral and is a key exchange mechanism based on elliptic curves
+<ul>
+<li>Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C. Bindings and alternative implementations are also available.</li>
+</ul>
+</li>
+</ul>
+ 
+
     </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
     
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/encryption/" data-ctx="elliptic curve cryptography" data-src="/thoughts/encryption" class="internal-link">Encryption</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/signed-messages/" data-ctx="elliptic curve" data-src="/thoughts/signed-messages" class="internal-link">Signed messages</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+    :root {
+        --g-node: var(--secondary);
+        --g-node-active: var(--primary);
+        --g-node-inactive: var(--visited);
+        --g-link: var(--outlinegray);
+        --g-link-active: #5a7282;
+    }
+</style>
+<script>
+async function run() {
+  const { index, links, content } = await fetchData
+  const curPage = "/thoughts/Elliptic-curve-Cryptography-ECC"
+  const pathColors = [{"/moc":"#4388cc"}]
+  let depth =  1 
+
+  const parseIdsFromLinks = (links) => [...(new Set(links.flatMap(link => ([link.source, link.target]))))]
+
+  const neighbours = new Set()
+  const wl = [curPage || "/", "__SENTINEL"]
+  if (depth >= 0) {
+    while (depth >= 0 && wl.length > 0) {
+      
+      const cur = wl.shift()
+      if (cur === "__SENTINEL") {
+        depth--
+        wl.push("__SENTINEL")
+      } else {
+        neighbours.add(cur)
+        const outgoing = index.links[cur] || []
+        const incoming = index.backlinks[cur] || []
+        wl.push(...outgoing.map(l => l.target), ...incoming.map(l => l.source))
+      }
+    }
+  } else {
+    parseIdsFromLinks(links).forEach(id => neighbours.add(id))
+  }
+
+  const data = {
+    nodes: [...neighbours].map(id => ({id})),
+    links: links.filter(l => neighbours.has(l.source) && neighbours.has(l.target)),
+  }
+
+  const color = (d) => {
+    if (d.id === curPage || (d.id === "/" && curPage === "")) {
+      return "var(--g-node-active)"
+    }
+
+    for (const pathColor of pathColors) {
+      const path = Object.keys(pathColor)[0]
+      const colour = pathColor[path]
+      if (d.id.startsWith(path)) {
+        return colour
+      }
+    }
+
+    return "var(--g-node)"
+  }
+
+  const drag = simulation => {
+    function dragstarted(event, d) {
+      if (!event.active) simulation.alphaTarget(1).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    }
+
+    function dragged(event,d) {
+      d.fx = event.x;
+      d.fy = event.y;
+    }
+
+    function dragended(event,d) {
+      if (!event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    }
+
+    const enableDrag =  true 
+    const noop = () => {}
+    return d3.drag()
+      .on("start", enableDrag ? dragstarted : noop)
+      .on("drag", enableDrag ? dragged : noop)
+      .on("end", enableDrag ? dragended : noop);
+  }
+
+  const height = Math.max(document.getElementById("graph-container").offsetHeight, 250)
+  const width = document.getElementById("graph-container").offsetWidth
+
+  const simulation = d3.forceSimulation(data.nodes)
+    .force("charge", d3.forceManyBody().strength(-30))
+    .force("link", d3.forceLink(data.links).id(d => d.id).distance(40))
+    .force("center", d3.forceCenter());
+
+  const svg = d3.select('#graph-container')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr("viewBox", [-width / 2, -height / 2, width, height]);
+
+  
+  const enableLegend =  false 
+  if (enableLegend) {
+    const legend = [
+      {"Current": "var(--g-node-active)"},
+      {"Note": "var(--g-node)"},
+      ...pathColors
+    ]
+    legend.forEach((legendEntry, i) => {
+      const key = Object.keys(legendEntry)[0]
+      const colour = legendEntry[key]
+      svg.append("circle").attr("cx", -width/2 + 20).attr("cy", height/2 - 30 * (i+1)).attr("r", 6).style("fill", colour)
+      svg.append("text").attr("x", -width/2 + 40).attr("y", height/2 - 30 * (i+1)).text(key).style("font-size", "15px").attr("alignment-baseline","middle")
+    })
+  }
+
+  
+  const link = svg.append("g")
+    .selectAll("line")
+    .data(data.links)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", "var(--g-link)")
+    .attr("stroke-width", 2)
+    .attr("data-source", d => d.source.id)
+    .attr("data-target", d => d.target.id)
+
+  
+  const graphNode = svg.append("g")
+    .selectAll("g")
+    .data(data.nodes)
+    .enter().append("g")
+
+  
+  const nodeRadius = (d) => {
+    const numOut = index.links[d.id]?.length || 0
+    const numIn = index.backlinks[d.id]?.length || 0
+    return 3 + (numOut + numIn) / 4
+  }
+
+  
+  const node = graphNode.append("circle")
+    .attr("class", "node")
+    .attr("id", (d) => d.id)
+    .attr("r", nodeRadius)
+    .attr("fill", color)
+    .style("cursor", "pointer")
+    .on("click", (_, d) => {
+      window.location.href = "https://jzhao.xyz/".replace(/\/$/g, "") + decodeURI(d.id).replace(/[\s_]+/g, '-') + '/'
+    })
+    .on("mouseover", function (_, d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(100)
+        .attr("fill", "var(--g-node-inactive)")
+
+      const neighbours = parseIdsFromLinks([...(index.links[d.id] || []), ...(index.backlinks[d.id] || [])])
+      const neighbourNodes = d3.selectAll(".node").filter(d => neighbours.includes(d.id))
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      
+      neighbourNodes
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link-active)")
+
+      
+      d3.select(this.parentNode)
+        .raise()
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+        .raise()
+    }).on("mouseleave", function (_,d) {
+      d3.selectAll(".node")
+        .transition()
+        .duration(200)
+        .attr("fill", color)
+
+      const currentId = d.id
+      const linkNodes = d3.selectAll(".link").filter(d => d.source.id === currentId || d.target.id === currentId)
+
+      linkNodes
+        .transition()
+        .duration(200)
+        .attr("stroke", "var(--g-link)")
+
+      d3.select(this.parentNode)
+        .select("text")
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    })
+    .call(drag(simulation));
+
+  
+  const labels = graphNode.append("text")
+    .attr("dx", 0)
+    .attr("dy", d => nodeRadius(d) + 16 + "px")
+    .attr("text-anchor", "middle")
+    .text((d) => content[decodeURI(d.id).replace(/[\s_]+/g, '-')]?.title || d.id)
+    .style("opacity", 0)
+    .style("pointer-events", "none")
+    .raise()
+    .call(drag(simulation));
+
+  
+  const enableZoom =  false 
+  if (enableZoom) {
+    svg.call(d3.zoom()
+      .extent([[0, 0], [width, height]])
+      .scaleExtent([0.25, 2])
+      .on("zoom", ({transform}) => {
+        link.attr("transform", transform);
+        node.attr("transform", transform);
+        const scale = transform.k
+        const scaledOpacity = Math.max((scale - 1) / 3.75, 0)
+        labels
+          .attr("transform", transform)
+          .style("opacity", scaledOpacity);
+      }));
+  }
+
+  
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+    labels
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+}
+
+run()
+</script>
+
+    </div>
+</div>
+
+
 <div id="contact_buttons">
     <footer>
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>

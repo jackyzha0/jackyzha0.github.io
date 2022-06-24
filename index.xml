@@ -7,12 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Elliptic-curve Cryptography (ECC)</title>
+      <link>https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/</guid>
+      <description>A form of asymmetric cryptography Much smaller key-sizes than RSA Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 + ax + b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &amp;ldquo;dot&amp;rdquo; function -&amp;gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B.</description>
+    </item>
+    
+    <item>
       <title>File system</title>
       <link>https://jzhao.xyz/thoughts/file-system/</link>
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/file-system/</guid>
       <description>Virtual Distributed File System From Alluxio&amp;rsquo;s Technical Paper by Haoyuan Li</description>
+    </item>
+    
+    <item>
+      <title>Filecoin</title>
+      <link>https://jzhao.xyz/thoughts/Filecoin/</link>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Filecoin/</guid>
+      <description>A decentralized storage network
+ Summarized from Filecoin Specs</description>
     </item>
     
     <item>
@@ -70,8 +89,7 @@ Bluesky is building a protocol for large-scale distributed social applications, 
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/signed-messages/</guid>
-      <description>Signed Blobs  From Farcaster Docs
-Blobs are [[thoughts/security#Message Digest|cryptographically signed]] so that it cannot be tampered with</description>
+      <description>Signatures are cryptographic functions that attest to the origin of a particular message.</description>
     </item>
     
     <item>
@@ -435,7 +453,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&amp;rsquo;]] (specifically Alluxio) Open Questions  Handling cases where data &amp;gt; storage availability Checkpoint heuristics: when to checkpoint?</description>
+      <description>June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&amp;rsquo;]] (specifically Alluxio) and Open Questions  Handling cases where data &amp;gt; storage availability Checkpoint heuristics: when to checkpoint?</description>
     </item>
     
     <item>

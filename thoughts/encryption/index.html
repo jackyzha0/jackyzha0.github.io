@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Encryption</h1>
     <article>
       <p class="meta">
-          Last updated June 14, 2022
+          Last updated June 24, 2022
       </p>
       <ul class="tags">
     
@@ -490,7 +490,7 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#key-sharing-problem">Key Sharing Problem</a></li>
     <li><a href="#asymmetric-cryptography">Asymmetric Cryptography</a></li>
-    <li><a href="#elliptic-curve-cryptography-ecc">Elliptic-curve Cryptography (ECC)</a></li>
+    <li><a href="#diffie-hellman">Diffie Hellman</a></li>
   </ol>
 </nav>
       </aside>
@@ -508,6 +508,28 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -609,35 +631,9 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<a href="#elliptic-curve-cryptography-ecc"><h2 id="elliptic-curve-cryptography-ecc"><span class="hanchor" ariaLabel="Anchor"># </span>Elliptic-curve Cryptography (ECC)</h2></a>
-<ul>
-<li>A form of asymmetric cryptography</li>
-<li>Much smaller key-sizes than RSA</li>
-<li>Elliptic Curve properties (specifically looking at Ed25519)
-<ul>
-<li>Formula follows something like $y^2 = x^3 + ax + b$</li>
-<li>Symmetric about the x-axis</li>
-<li>Drawing a straight line through the curve will intersect no more than 3 points
-<ul>
-<li>A line between any two points will also intersect the curve at another place</li>
-</ul>
-</li>
-<li>Starting point on the curve point: A</li>
-<li>&ldquo;dot&rdquo; function -&gt; kind of like a game of billiards
-<ul>
-<li>In this game of billiards, you take a ball at point A, shoot it towards point B. When it hits the curve, the ball bounces either straight up (if it&rsquo;s below the x-axis) or straight down (if it&rsquo;s above the x-axis) to the other side of the curve. The point it lands on is C</li>
-<li>If the value C is over some maximum value (usually a prime), we modulus it with the maximum to end with a valid number.</li>
-<li>A dot B = C</li>
-</ul>
-</li>
-<li>
-<img src="https://blog.cloudflare.com/content/images/image02.gif" alt="Billiard animation"  /></li>
-<li>It turns out that if you &ldquo;dot&rdquo; an initial point with itself $n$ times to arrive at a final point, finding out $n$ when you only know the final point and the first point is hard</li>
-<li>$n$ is then the private key, point A dotted with itself $n$ times is the public key</li>
-</ul>
-</li>
-<li>ECDHE stands for Elliptic Curve Diffie Hellman Ephemeral and is a key exchange mechanism based on elliptic curves</li>
-</ul>
+<a href="#diffie-hellman"><h2 id="diffie-hellman"><span class="hanchor" ariaLabel="Anchor"># </span>Diffie Hellman</h2></a>
+<p>A way of performing key exchange over an insecure channel.</p>
+<p>See also: <a href="/thoughts/Elliptic-curve-Cryptography-ECC" rel="noopener" class="internal-link" data-src="/thoughts/Elliptic-curve-Cryptography-ECC">elliptic curve cryptography</a></p>
  
 
     </article>

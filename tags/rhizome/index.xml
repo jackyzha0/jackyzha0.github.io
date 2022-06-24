@@ -32,7 +32,7 @@ Interoperable Data on the web today is mostly treated as second-class to applica
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&amp;rsquo;]] (specifically Alluxio) Open Questions  Handling cases where data &amp;gt; storage availability Checkpoint heuristics: when to checkpoint?</description>
+      <description>June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&amp;rsquo;]] (specifically Alluxio) and Open Questions  Handling cases where data &amp;gt; storage availability Checkpoint heuristics: when to checkpoint?</description>
     </item>
     
     <item>

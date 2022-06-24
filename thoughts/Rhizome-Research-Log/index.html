@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&rsquo;]] (specifically Alluxio) Open Questions  Handling cases where data &gt; storage availability Checkpoint heuristics: when to checkpoint?">
+    <meta name="description" content="June June 20th - 23rd  Reading about [[thoughts/file system#Virtual Distributed File System|VDFS&rsquo;]] (specifically Alluxio) and Open Questions  Handling cases where data &gt; storage availability Checkpoint heuristics: when to checkpoint?">
     <title>Rhizome Research Log</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Research Log</h1>
     <article>
       <p class="meta">
-          Last updated June 23, 2022
+          Last updated June 24, 2022
       </p>
       <ul class="tags">
     
@@ -3164,11 +3164,15 @@ if (!doNotTrack) {
 <a href="#june"><h2 id="june"><span class="hanchor" ariaLabel="Anchor"># </span>June</h2></a>
 <a href="#june-20th---23rd"><h3 id="june-20th---23rd"><span class="hanchor" ariaLabel="Anchor"># </span>June 20th - 23rd</h3></a>
 <ul>
-<li>Reading about <a href="/thoughts/file-system#Virtual Distributed File System" rel="noopener" class="internal-link" data-src="/thoughts/file-system">VDFS&rsquo;</a> (specifically Alluxio)</li>
+<li>Reading about <a href="/thoughts/file-system#Virtual Distributed File System" rel="noopener" class="internal-link" data-src="/thoughts/file-system">VDFS&rsquo;</a> (specifically Alluxio) and</li>
 <li>Open Questions
 <ul>
 <li>Handling cases where data &gt; storage availability</li>
-<li>Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely</li>
+<li>Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely
+<ul>
+<li>&ldquo;Lineage chains can grow very long in a long-running system like Alluxio, therefore the checkpointing algorithm should provide a bound on how long it takes to recompute data in the case of failures&rdquo;</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Settling into new place, we cleaned out the garage (which is where I am staying) and made it somewhat liveable?? Took a lot of work, the previous tenant didn&rsquo;t even properly move out which was a stressor for a little while
