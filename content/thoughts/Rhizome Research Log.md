@@ -7,6 +7,11 @@ tags:
 ---
 
 ## June
+### June 24th
+- Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]]
+- Open questions:
+	- Append-only log or append-only Merkle-DAG? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
+
 ### June 20th - 23rd
 - Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio) and 
 - Open Questions

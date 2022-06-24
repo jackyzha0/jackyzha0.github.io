@@ -121,4 +121,10 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 	- Silver Age (1954 - 1970s): the Code restricted many topics from being covered in stories: this prevented certain genres, such as crime and horror comics, from being sold at most comic book shops, and also helped superheroes stay popular and culturally relevant
 	- Bronze Age (1970s - 1980s): underground comix movement in response to the restrictions of the Code, and was part of the broader counterculture of the 1960s
 - Will Eisner popularized the term graphic novels/sequential art
-
+- Stages of making a comic
+	1. Script: lays out story and dialogue, describes each panel in detail
+	2. Thumbnails/Roughs: rough sketches that work out the general blocking of panels and page layout
+	3. Pencils: refines & finalizes the roughs, works out details & nails down specifics
+	4. Inks: finalizes penciles, eliminates unused pencil lines and any excess sketchiness
+	5. Colours
+	6. Letters: lettering, word balloons, caption boxes, SFX
