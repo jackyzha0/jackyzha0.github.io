@@ -8,9 +8,15 @@ tags:
 
 ## June
 ### June 26th
-- 
+- Belinda and Athena from Incepto told me about an SF writer event which happens every week and I'm currently at it right now. So many people here are just working on such really cool things and I'm excited to potentially have this space as incredibly condensed resesarch + thinking time. I think this is a great forcing function every Sunday to just... orient myself for the week and get shit done.
+- More research on [[thoughts/CouchDB|CouchDB]] and other database replication mechanisms to see what I can learn from it
 
-### June 24th - 25th
+### June 25th
+- HackLodge meetup today, also met up with Spencer and Liam. Talked lots about the project then realized I haven't spent much time just... sitting down and grinding out work.
+- A decent chunk of it is 1) summer courses taking up much more time than I expected them to and 2) wanting to meet people in SF and spend time with Anson while she is still in SF... priorities priorities
+- To borrow words from Anson, it's "hermit time". I feel like I am definitely behind schedule in terms of what I wanted to get done by this point of summer and I need to put in some serious work and thinking into this project.
+
+### June 24th 
 - Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]], doesn't seem to place a big deal of emphasis on finality which seems important for a large chunk of applications.
 - Open questions:
 	- Append-only log or append-only Merkle-DAG? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
@@ -22,8 +28,8 @@ tags:
 	- Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely
 		- "Lineage chains can grow very long in a long-running system like Alluxio, therefore the checkpointing algorithm should provide a bound on how long it takes to recompute data in the case of failures"
 - Settling into new place, we cleaned out the garage (which is where I am staying) and made it somewhat liveable?? Took a lot of work, the previous tenant didn't even properly move out which was a stressor for a little while
-	- Because there is no proper heating/cooling, sometimes I literally work with the garage door open for good circulation which gets me weird looks from the neighbours but its fun
-	- Incepto people have all been super nice and they are all working on/exploring cool things
+	- Because there is no proper heating/cooling, sometimes I literally work with the garage door open for good circulation which gets me weird looks from the neighbours but it's fun
+	- Incepto people have all been super nice and they are all working on/exploring cool things. I get a little distracted sometimes just working in the garage so it's really nice I can just hop over to the hackerspace in the house to get some more focused work done.
 
 ### June 16 - 19th
 - Interact Retreat! Lots of good conversations about the work I'm doing which has been super clarifying for what type of explanation gets through to certain types of people
@@ -65,7 +71,7 @@ tags:
 ### June 10th
 - Spicy day today... Jack Dorsey just announced TBD working on Web5, supposedly an extra decentralized web platform (https://twitter.com/jack/status/1535314738078486533)
 	- web5 seems to focus on the philosophy side a lot more than actual usability
-	- v similar to webid except anchored on bitcoin (lots of interesting stuff using [[thoughts/Sidetree|Sidetree]] tjpigj)
+	- Very similar to [[thoughts/WebID|WebID]] except anchored on bitcoin (lots of interesting stuff using [[thoughts/Sidetree|Sidetree]])
 - Feel like a little boat in a big ocean where huge battleships drift by every now and then
 	- Makes me doubt what I can really do as this small little boat
 	- But reminded that steering my own little boat gives me agency as to what I can explore and do
