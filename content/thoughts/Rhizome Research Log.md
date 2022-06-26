@@ -7,8 +7,11 @@ tags:
 ---
 
 ## June
-### June 24th
-- Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]]
+### June 26th
+- 
+
+### June 24th - 25th
+- Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]], doesn't seem to place a big deal of emphasis on finality which seems important for a large chunk of applications.
 - Open questions:
 	- Append-only log or append-only Merkle-DAG? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
 
