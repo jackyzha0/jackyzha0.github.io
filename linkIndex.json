@@ -1319,6 +1319,13 @@
           "text": "political"
         }
       ],
+      "/thoughts/CouchDB": [
+        {
+          "source": "/thoughts/CouchDB",
+          "target": "/thoughts/CAP-Theorem",
+          "text": "CAP Theorem"
+        }
+      ],
       "/thoughts/DHCP": [
         {
           "source": "/thoughts/DHCP",
@@ -2700,6 +2707,11 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CouchDB",
+          "text": "CouchDB"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Hyper-Hyper-Space",
           "text": "Hyper Hyper Space"
         },
@@ -2727,6 +2739,11 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Sidetree",
           "text": "Sidetree"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/WebID",
+          "text": "WebID"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -2864,16 +2881,6 @@
           "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/Rhizome-Research-Log",
           "text": "Research Log"
-        },
-        {
-          "source": "/thoughts/Rhizome-Specification",
-          "target": "/thoughts/peer-to-peer",
-          "text": "p2p"
-        },
-        {
-          "source": "/thoughts/Rhizome-Specification",
-          "target": "/thoughts/encryption",
-          "text": "encryption"
         }
       ],
       "/thoughts/Rokos-Basilisk": [
@@ -9591,6 +9598,13 @@
           "text": "Buddhist"
         }
       ],
+      "/thoughts/CAP-Theorem": [
+        {
+          "source": "/thoughts/CouchDB",
+          "target": "/thoughts/CAP-Theorem",
+          "text": "CAP Theorem"
+        }
+      ],
       "/thoughts/CID": [
         {
           "source": "/thoughts/DID",
@@ -9688,6 +9702,13 @@
           "source": "/thoughts/consciousness",
           "target": "/thoughts/Consciousness-is-not-Information",
           "text": "Consciousness is not Information"
+        }
+      ],
+      "/thoughts/CouchDB": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CouchDB",
+          "text": "CouchDB"
         }
       ],
       "/thoughts/DHCP": [
@@ -11715,6 +11736,11 @@
       ],
       "/thoughts/WebID": [
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/WebID",
+          "text": "WebID"
+        },
+        {
           "source": "/thoughts/Solid",
           "target": "/thoughts/WebID",
           "text": "WebID"
@@ -13504,11 +13530,6 @@
       "/thoughts/encryption": [
         {
           "source": "/thoughts/Application-Layer",
-          "target": "/thoughts/encryption",
-          "text": "encryption"
-        },
-        {
-          "source": "/thoughts/Rhizome-Specification",
           "target": "/thoughts/encryption",
           "text": "encryption"
         },
@@ -15972,11 +15993,6 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/peer-to-peer",
           "text": "P2P"
-        },
-        {
-          "source": "/thoughts/Rhizome-Specification",
-          "target": "/thoughts/peer-to-peer",
-          "text": "p2p"
         },
         {
           "source": "/thoughts/Solana",
@@ -19243,6 +19259,11 @@
       "text": "political"
     },
     {
+      "source": "/thoughts/CouchDB",
+      "target": "/thoughts/CAP-Theorem",
+      "text": "CAP Theorem"
+    },
+    {
       "source": "/thoughts/DHCP",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
@@ -20504,6 +20525,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/CouchDB",
+      "text": "CouchDB"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/Hyper-Hyper-Space",
       "text": "Hyper Hyper Space"
     },
@@ -20531,6 +20557,11 @@
       "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/Sidetree",
       "text": "Sidetree"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/WebID",
+      "text": "WebID"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -20666,16 +20697,6 @@
       "source": "/thoughts/Rhizome-Specification",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "Research Log"
-    },
-    {
-      "source": "/thoughts/Rhizome-Specification",
-      "target": "/thoughts/peer-to-peer",
-      "text": "p2p"
-    },
-    {
-      "source": "/thoughts/Rhizome-Specification",
-      "target": "/thoughts/encryption",
-      "text": "encryption"
     },
     {
       "source": "/thoughts/Rokos-Basilisk",

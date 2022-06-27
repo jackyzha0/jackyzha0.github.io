@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="description" content="See also: [[thoughts/Rhizome Research Log|Research Log]]
- Misc notes   good datastructures to have as primitives  should provide key components  logical pipes -&gt; connectivity between nodes host bootstrapping -&gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?">
+ &hellip; tbd">
     <title>Rhizome Specification</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Specification</h1>
     <article>
       <p class="meta">
-          Last updated June 6, 2022
+          Last updated June 26, 2022
       </p>
       <ul class="tags">
     
@@ -484,21 +484,6 @@ if (!doNotTrack) {
 </ul>
 
       
-      <aside class="mainTOC">
-          <h3>Table of Contents</h3>
-          <nav id="TableOfContents">
-  <ol>
-    <li><a href="#misc-notes">Misc notes</a></li>
-    <li><a href="#good-datastructures-to-have-as-primitives">good datastructures to have as primitives</a></li>
-    <li><a href="#application-layer">Application Layer</a></li>
-    <li><a href="#logic-layer">Logic Layer</a></li>
-    <li><a href="#transport-layer--message-queue">Transport Layer / Message Queue</a></li>
-    <li><a href="#name-resolutiondns-layer">Name Resolution/DNS Layer</a></li>
-    <li><a href="#natid-layer">NAT/ID Layer</a></li>
-  </ol>
-</nav>
-      </aside>
-      
       
 
 
@@ -512,28 +497,6 @@ if (!doNotTrack) {
 
 
 
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
 
   
   
@@ -564,93 +527,8 @@ if (!doNotTrack) {
 <blockquote>
 <p>See also: <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">Research Log</a></p>
 </blockquote>
-<a href="#misc-notes"><h2 id="misc-notes"><span class="hanchor" ariaLabel="Anchor"># </span>Misc notes</h2></a>
-<ul>
-<li>
-<a href="#good-datastructures-to-have-as-primitives"><h2 id="good-datastructures-to-have-as-primitives"><span class="hanchor" ariaLabel="Anchor"># </span>good datastructures to have as primitives</h2></a>
-</li>
-<li>should provide key components
-<ul>
-<li>logical pipes -&gt; connectivity between nodes</li>
-<li>host bootstrapping -&gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery</li>
-</ul>
-</li>
-<li>petnames rather than global connection table?
-<ul>
-<li>&ldquo;One obvious point about trust is that if communication is to be mediated based on trust, then as a preliminary step, parties must be able to know to whom they are talking. Otherwise, one has little basis for judging how much to trust others. One could take this as a call for the imposition of a global namespace of Internet users, with attached trust assessments. We believe this is a bad idea. It is hard to imagine a global system that is really trustworthy.&rdquo;</li>
-<li>
-
-<a href="https://dl.acm.org/doi/pdf/10.1145/633025.633059" rel="noopener">https://dl.acm.org/doi/pdf/10.1145/633025.633059</a></li>
-<li>optionally verify identity?</li>
-</ul>
-</li>
-</ul>
-<a href="#application-layer"><h2 id="application-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Application Layer</h2></a>
-<ul>
-<li>library to listen for events in logic layer</li>
-<li>addtl library to expose as react hooks?</li>
-</ul>
-<a href="#logic-layer"><h2 id="logic-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Logic Layer</h2></a>
-<ul>
-<li>all message schemas should be public
-<ul>
-<li>data lenses for transformations between versions + between applications</li>
-</ul>
-</li>
-<li>multiwriter support?
-<ul>
-<li>CRDTs over n input message queues????</li>
-<li>resolution based off of 
-
-<a href="https://cse.buffalo.edu/tech-reports/2014-04.pdf" rel="noopener">https://cse.buffalo.edu/tech-reports/2014-04.pdf</a></li>
-</ul>
-</li>
-<li>publish subscribe endpoints? message bus model
-<ul>
-<li>TODO: how do we manage scoping?</li>
-</ul>
-</li>
-<li>filters (read: scope management) + reducers over message queues to achieve state</li>
-<li>incremental reducers?</li>
-<li>state checkpoints?</li>
-</ul>
-<a href="#transport-layer--message-queue"><h2 id="transport-layer--message-queue"><span class="hanchor" ariaLabel="Anchor"># </span>Transport Layer / Message Queue</h2></a>
-<ul>
-<li>ID to ID append-only data structure</li>
-<li>standard structure for atomic messages</li>
-<li>max msg size, pagination by default</li>
-</ul>
-<a href="#name-resolutiondns-layer"><h2 id="name-resolutiondns-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Name Resolution/DNS Layer</h2></a>
-<ul>
-<li>distributed hash table for network comms (this replaces DNS)</li>
-<li>ID to IP</li>
-<li>can be used for hole punching for 
-
-
-<a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">p2p</a></li>
-<li>Still good ol&rsquo; IP + HTTP for base layer of communication</li>
-</ul>
-<a href="#natid-layer"><h2 id="natid-layer"><span class="hanchor" ariaLabel="Anchor"># </span>NAT/ID Layer</h2></a>
-<ul>
-<li>generative art identifier</li>
-<li>plug and play auth system
-<ul>
-<li>TODO: how does this integrate</li>
-</ul>
-</li>
-<li>single priv / pub key pair
-<ul>
-<li>how do you do <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a> through message queues? priv keys?</li>
-</ul>
-</li>
-<li>hash of pub key → id</li>
-<li>encrypts a data block on computer containing outgoing message queues</li>
-<li>NAT for local replication
-<ul>
-<li>trying to reach local ID is actually all of your devices</li>
-</ul>
-</li>
-</ul>
+<p>&hellip; tbd</p>
+<p>scraping the page for now as my idea for what Rhizome even is is still evolving rapidly</p>
  
 
     </article>

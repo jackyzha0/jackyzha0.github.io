@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CouchDB</title>
+      <link>https://jzhao.xyz/thoughts/CouchDB/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CouchDB/</guid>
+      <description>NoSQL database with great replication capabilities.
+Multi-master replication (you can write to any server, even if it cannot see any other servers).</description>
+    </item>
+    
+    <item>
       <title>Hyper Hyper Space</title>
       <link>https://jzhao.xyz/thoughts/Hyper-Hyper-Space/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>

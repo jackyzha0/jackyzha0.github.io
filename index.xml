@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CouchDB</title>
+      <link>https://jzhao.xyz/thoughts/CouchDB/</link>
+      <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CouchDB/</guid>
+      <description>NoSQL database with great replication capabilities.
+Multi-master replication (you can write to any server, even if it cannot see any other servers).</description>
+    </item>
+    
+    <item>
       <title>Hyper Hyper Space</title>
       <link>https://jzhao.xyz/thoughts/Hyper-Hyper-Space/</link>
       <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
@@ -462,7 +472,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>June June 24th  Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]] Open questions:  Append-only log or append-only Merkle-DAG?</description>
+      <description>June June 26th  Belinda and Athena from Incepto told me about an SF writer event which happens every week and I&amp;rsquo;m currently at it right now.</description>
     </item>
     
     <item>
@@ -500,7 +510,7 @@ Sometimes called a remote function call, it is a call to a function whose implem
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
       <description>See also: [[thoughts/Rhizome Research Log|Research Log]]
- Misc notes   good datastructures to have as primitives  should provide key components  logical pipes -&amp;gt; connectivity between nodes host bootstrapping -&amp;gt; akin to DHCP, set of protocols supported, basic info and about where to connect for discovery   petnames rather than global connection table?</description>
+ &amp;hellip; tbd</description>
     </item>
     
     <item>
