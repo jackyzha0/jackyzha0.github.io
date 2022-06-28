@@ -9,7 +9,7 @@ aliases:
 
 ## Definitions
 ### ACID Consistency
-The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)
+The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time
 
 ### Replication Consistency
 Many models to choose from! Most common being read-after-write consistency

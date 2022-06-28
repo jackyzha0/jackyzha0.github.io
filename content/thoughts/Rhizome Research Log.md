@@ -7,8 +7,13 @@ tags:
 ---
 
 ## June
+### June 27th
+- Nearing the end of my literature review era. Still need to go through Braid/Redwood, SSB, Yjs, and Hypercore inner-workings.
+- Thinking it might be good to do a general overview of [[thoughts/CRDT|CRDTs]] before delving any further
+
 ### June 26th
 - Belinda and Athena from Incepto told me about an SF writer event which happens every week and I'm currently at it right now. So many people here are just working on such really cool things and I'm excited to potentially have this space as incredibly condensed resesarch + thinking time. I think this is a great forcing function every Sunday to just... orient myself for the week and get shit done.
+- Talked with some really really cool people at a birthday party in SF which were surprisingly receptive and interested in my work. Will definitely follow up on these conversations.
 - More research on [[thoughts/CouchDB|CouchDB]] and other database replication mechanisms to see what I can learn from it
 
 ### June 25th
