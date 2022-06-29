@@ -5,8 +5,20 @@ tags:
 - seed
 ---
 
-## notes from *A people-centric smart city for racial justice*
+## Arcosanti
+A provocative concept of a compact city designed not around roads and cars but around people. 
 
+Designed and established by Paolo Soleri, around same time as the [[thoughts/From Counterculture to Cyberculture|counter-cultural movements of "back to the land"]]
+
+Arcology: the mixture of architecture and local ecologies
+
+Dispersal is antagonistic to life. Density is the only [[thoughts/morphology|morphology]] that can give us a lively existence.
+
+Wanted it to be a caravansary, a traditional inn with central courtyard for travelers in the desert regions of Asian or North Africa that often served as a stopover for ideas.
+
+![[thoughts/images/arcosanti.png]]
+
+## Notes from *A people-centric smart city for racial justice*
 -   cities are the backbone and hope of social change
 -   either great benefit but also digital cages of surveillance and control
 -   what is the role of cities in the post-pandemic phase?   
@@ -14,7 +26,7 @@ tags:
     -   smart, equitable, democratic cities
 -   tech has market AND social power 
     -   9T market cap, more than the entirety of european stock market
--   IMPORTANT QUESTIONS
+- IMPORTANT QUESTIONS
     -   smart for whom?
     -   cities for whom?
 -   types of cities
