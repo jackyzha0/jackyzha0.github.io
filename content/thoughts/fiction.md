@@ -7,7 +7,7 @@ tags:
 
 > The future is manifested
 
-Shared fiction as a statement about the future instead of a statement of today. They're both fictions in that they can't be (dis)proved and thus can have the same functions in a group of people (bring together, motivate to action, share values/language, etc.)
+Shared fiction as a statement about the future instead of a statement of today. They're both fictions in that they can't be (dis)proved and thus can have the same functions in a group of people (bring together, motivate to action, share values/[[thoughts/language|language]], etc.)
 
 Build as if your creations had [skyhooks](thoughts/skyhooks.md) you could hang them off of.
 

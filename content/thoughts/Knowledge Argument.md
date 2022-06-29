@@ -73,7 +73,7 @@ To be explicit, let us examine the framing of the Mary's room[^2]:
 
 This is quite similar to Thomas Nagel's Bat Argument[^3]. Despite everything that Mary knows about seeing colour, she doesn't know what it is like to *see* colour.
 
-Specifically, the Knowledge Argument relies on knowledge that is explicit or codified and can be communicated via language. I argue that, conceptually, one cannot 'know' all there is to know about seeing colour through purely linguistically communicated language. I refer to this 'linguistically unknowable' knowledge as tacit knowledge.
+Specifically, the Knowledge Argument relies on knowledge that is explicit or codified and can be communicated via [[thoughts/language|language]]. I argue that, conceptually, one cannot 'know' all there is to know about seeing colour through purely linguistically communicated [[thoughts/language|language]]. I refer to this 'linguistically unknowable' knowledge as tacit knowledge.
 
 We first examine three different kinds of knowledge[^4]:
 
@@ -83,7 +83,7 @@ We first examine three different kinds of knowledge[^4]:
 
 My position is that knowledge-how *cannot* be learned through only knowledge-that. Ryle calls this the Sufficiency Argument: "how could propositional knowledge be sufficient for knowing how to do something?"[^5]
 
-From this list above, knowledge-that is the only form of transferrable or communicable knowledge. Knowledge-how is a form of tacit knowledge which is inexpressible via language. Knowledge-how, by definition, is only acquired through practical experience in the relevant context. To attempt to reconstruct knowledge-how using knowledge-that is to build a [potemkin village](thoughts/potemkin%20village.md), a sort of 'facade' of understanding. One can read all about playing a piano -- the music theory, the muscles to actuate, the feel of the keys -- yet fail to actually play the piano. Learning to play piano requires an embodied experience of feeling the keys and wiring the feedback between the concept of music in your brain to the motion of playing the notes.
+From this list above, knowledge-that is the only form of transferrable or communicable knowledge. Knowledge-how is a form of tacit knowledge which is inexpressible via [[thoughts/language|language]]. Knowledge-how, by definition, is only acquired through practical experience in the relevant context. To attempt to reconstruct knowledge-how using knowledge-that is to build a [potemkin village](thoughts/potemkin%20village.md), a sort of 'facade' of understanding. One can read all about playing a piano -- the music theory, the muscles to actuate, the feel of the keys -- yet fail to actually play the piano. Learning to play piano requires an embodied experience of feeling the keys and wiring the feedback between the concept of music in your brain to the motion of playing the notes.
 
 Thus, in Frank Jackson's Knowledge Argument, Mary has all the 'know-that' knowledge about the perception of colour but none of 'know-how' knowledge. The argument depends heavily on Physicalism stating that Mary knows all physical facts about any given object. I have shown through this paper that the premises of Jackson's argument is dubious at best, namely the ability for Mary to know all *physical* facts about $x$. Thus, Physicalism is preserved.
 

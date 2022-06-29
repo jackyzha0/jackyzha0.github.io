@@ -18,8 +18,8 @@ Infrastructure should be
 -  which came first, the infrastructure or the applications that depend on it?
 -   things that use infrastructure or technology
     -   in the beginning not much of a distinction
-    -   first tech → language
-        -   how did language arise?
+    -   first tech → [[thoughts/language|language]]
+        -   how did [[thoughts/language|language]] arise?
         -   evolve with each other?
         -   [language as infrastructure for thought](thoughts/language%20of%20thought.md)
     -   at a certain complexity level, combinatorial explosion of complexity

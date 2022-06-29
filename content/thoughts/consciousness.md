@@ -109,7 +109,7 @@ Human consciousness emerges on the interface between three components of animal 
 
 Behaviour, in this context, is a biological adjustment by means of movements and all kinds of movement-related physiological activity
 
-Communication and play yields symbolic games and, more importantly, language
+Communication and play yields symbolic games and, more importantly, [[thoughts/language|language]]
 
 Interaction between symbols and tools results in human [praxis](thoughts/praxis.md)
 

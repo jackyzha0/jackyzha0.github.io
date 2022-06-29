@@ -45,5 +45,5 @@ In which we too readily bolt external processes onto our own agency. To rephrase
 	3.  the individual and the collective
 		-   distinction between individual and collective resources
 			-   collective resources have distinct individual and intergeneration dynamics
-			-   language have almost certainly transformed the internal processes of human minds
-			-   We adapt the expressive powers of language to our own purposes, but no doubt we have also adapted to it (not to any one individual, but to society as a collective)
+			-   [[thoughts/language|language]] have almost certainly transformed the internal processes of human minds
+			-   We adapt the expressive powers of [[thoughts/language|language]] to our own purposes, but no doubt we have also adapted to it (not to any one individual, but to society as a collective)

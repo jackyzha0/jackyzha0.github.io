@@ -7,7 +7,7 @@ tags:
 
 [Source: Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/chinese-room/)
 
-Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand language but could not produce real understanding.
+Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand [[thoughts/language|language]] but could not produce real understanding.
 
 "Searle imagines himself alone in a room following a computer program for responding to Chinese characters slipped under the door. Searle understands nothing of Chinese, and yet, by following the program for manipulating symbols and numerals just as a computer does, he sends appropriate strings of Chinese characters back out under the door, and this leads those outside to mistakenly suppose there is a Chinese speaker in the room."
 

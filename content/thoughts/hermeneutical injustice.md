@@ -8,7 +8,7 @@ tags:
 
 > The powerful tend to have appropriate understandings of their experiences ready to draw on as they make sense of their social experiences, whereas the powerless are more likely to find themselves having some social experiences through a glass darkly, with a best ill-fitting meanings to draw on in the effort to render them intelligible
 
-**Hermeneutical injustice** is a subcategory of [epistemic injustice](thoughts/epistemic%20injustice.md) wherein one has no labels/common terminology to describe or explain experiences to others. Historically has been applied in the context of exclusion of marginalized groups from activities which shape the language we use.
+**Hermeneutical injustice** is a subcategory of [epistemic injustice](thoughts/epistemic%20injustice.md) wherein one has no labels/common terminology to describe or explain experiences to others. Historically has been applied in the context of exclusion of marginalized groups from activities which shape the [[thoughts/language|language]] we use.
 
 Identity affects experience, and experience makes a difference in our judgment.
 
@@ -34,7 +34,7 @@ Positing that the sociality of the knower is epistemically significant
 	2. Situations resulting from one's social positioning create common challenges that constitute part of the knower's lived experience and contribute to the context from which they approach the world
 2. Interdependence: epistemic resources are by nature collective
 	1. Lynn Nelson: "there are no 'immediate' experiences" Instead, within any given situation, our experience "is shaped and made possible by communal ways of organizing things, and *systems* of connected theories, methodologies, and practices"
-	2. Related: language and [terminology](thoughts/terminology.md). Wittgenstein: "a language that in principle could be understood by only one person would not be a language at all"
+	2. Related: [[thoughts/language|language]] and [terminology](thoughts/terminology.md). Wittgenstein: "a language that in principle could be understood by only one person would not be a language at all"
 
 It is important to note that being marginally situated leads not to "different" knowledge, but, as Harding has argued, to more *objective* knowledge (Harding 1991, 138-163)
 

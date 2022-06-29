@@ -19,7 +19,7 @@ tags:
 
 **P:** Well no one seems to have a good answer at least. Don't we have enough words to express all we want to express already? There are innumerable ways to combine the words we already do have.
 
-**W:** The whole point of language is to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as [hermeneutical injustice](thoughts/hermeneutical%20injustice.md) where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
+**W:** The whole point of [[thoughts/language|language]] is to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as [hermeneutical injustice](thoughts/hermeneutical%20injustice.md) where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
 
 **P:** Okay, I admit that new words are useful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
 

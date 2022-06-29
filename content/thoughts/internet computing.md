@@ -29,7 +29,7 @@ TLDR;
 Necessary conditions
 - A communication medium
 - Source(s) and destination(s)
-- [Protocol](thoughts/Protocol.md) (language)
+- [Protocol](thoughts/Protocol.md) ([[thoughts/language|language]])
 - Message
 
 ### Circuit Switching

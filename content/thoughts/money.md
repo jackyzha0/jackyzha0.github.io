@@ -11,7 +11,7 @@ Sources: [Money Language *in Kernel*](https://kernel.community/en/learn/module-0
 
 Money is old. "We have yet to discover a civilization that didn't have money. So, we know it's at least as old as civilization."
 
-Money is a language through which to communicate value. Then, was does this mean for [decentralization](thoughts/decentralization.md)? No one should control the expression of economic value in exactly the same way that no one controls the meaning of words: they are arrived at consensually through common use.
+Money is a [[thoughts/language|language]] through which to communicate value. Then, was does this mean for [decentralization](thoughts/decentralization.md)? No one should control the expression of economic value in exactly the same way that no one controls the meaning of words: they are arrived at consensually through common use.
 
 What money is, how it is created, and who gets to distribute it goes to the very heart of the ways in which we are all incentivised to act
 

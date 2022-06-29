@@ -12,7 +12,7 @@ tags:
 
 "I never met anyone who was, at once, so playful and so serious about ideas."
 
-Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children learn language by first learning their own ("baby-talk") dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the "official" physics by allowing them the freedom to invent many that will work in as many invented worlds.
+Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children [[thoughts/language development|learn language]] by first learning their own ("baby-talk") dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the "official" physics by allowing them the freedom to invent many that will work in as many invented worlds.
 
 Why there is no good answer to "how do I learn CS" 
 "I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching... But 'teaching without curriculum' does not mean spontaneous, free-form classrooms or simply 'leaving the child alone.' It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture"

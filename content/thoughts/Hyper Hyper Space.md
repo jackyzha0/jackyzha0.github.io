@@ -11,7 +11,7 @@ Summarized from [the site](https://www.hyperhyperspace.org/) and [whitepaper](ht
 
 Provides:
 - a local data store, both in-browser using IndexedDB and server-side
-- a data representation format, based on Merkle-DAGs and CRDTs
+- a data representation format, based on Merkle-DAGs and [[thoughts/CRDT|CRDTs]]
 - a secure data sync protocol over WebRTC and WebSockets
 
 The Hyper Hyper Space project proposes a framework for _universal information access_

@@ -51,7 +51,7 @@ The concept of being chased by wolves and the concept of a rope bridge may have 
 
 **D:** I see a log. There is no concept of 'bridge' behind me.
 
-**U:** This is quite the anti-realist argument -- that because you and I see two different things when referring to the same object (due to language understanding, presupposed knowledge, etc.) then the object must therefore have no 'true nature' (Nyāyasūtra 4.2.37).
+**U:** This is quite the anti-realist argument -- that because you and I see two different things when referring to the same object (due to [[thoughts/language|language]] understanding, presupposed knowledge, etc.) then the object must therefore have no 'true nature' (Nyāyasūtra 4.2.37).
 
 Yet, to even be wrong about something, one needs to mistake something $\lnot F$ for something $F$ (to see a post as a person). This, of course, happens when the differences between $\lnot F$ and $F$ are ignored while their similarities are grasped.
 
