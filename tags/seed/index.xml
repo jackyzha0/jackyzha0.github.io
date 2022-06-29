@@ -6,7 +6,72 @@
     <description>Recent content in seed on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Morphology</title>
+      <link>https://jzhao.xyz/thoughts/morphology/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/morphology/</guid>
+      <description> The system for combining units of meaning
+  Morpheme: the smallest unit of meaning in a language  Free morphemes can occur alone Bound morphemes cannot   Order of acquisition of phonemes (Brown 1973)  Morphemes come in in a consistent order (within a language) The order is predicted based on a variety of factors, including the salience and consistency of form-meaning mapping Same factors can predict differences between languages (in languages with more salient affixes and consistent form-meaning mappings children learn the morphology earlier)   The U-shaped curve  Rote memorization (child stores the forms they hear) – higher accuracy Rule acquired and over-applied – lower accuracy Rule acquired but children also know there are exceptions – higher accuracy    </description>
+    </item>
+    
+    <item>
+      <title>Phonetics</title>
+      <link>https://jzhao.xyz/thoughts/phonetics/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/phonetics/</guid>
+      <description>How to produce/pronounce sounds or signs, how we hear sounds</description>
+    </item>
+    
+    <item>
+      <title>Phonology</title>
+      <link>https://jzhao.xyz/thoughts/phonology/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/phonology/</guid>
+      <description>Which sounds are used in language, how sounds are combined to form words</description>
+    </item>
+    
+    <item>
+      <title>Pragmatics</title>
+      <link>https://jzhao.xyz/thoughts/pragmatics/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/pragmatics/</guid>
+      <description>How do you use the language in communication and conversation</description>
+    </item>
+    
+    <item>
+      <title>sociolinguistics</title>
+      <link>https://jzhao.xyz/thoughts/sociolinguistics/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/sociolinguistics/</guid>
+      <description>How children learn to use their languages in socially appropriate ways that reflect their status in the community and the social context</description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>https://jzhao.xyz/thoughts/syntax/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/syntax/</guid>
+      <description>How are words combined, is a sentence grammatical
+ Child-directed Speech  Motherese/infant-directed speech (IDS)/child-directed speech (CDS), when talking to babies, adults use a higher-pitched voice, a wider range of pitches, longer pauses, and shorter phrases.</description>
+    </item>
+    
+    <item>
+      <title>Creative writing</title>
+      <link>https://jzhao.xyz/thoughts/creative-writing/</link>
+      <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/creative-writing/</guid>
+      <description>CRWR200 Common misconceptions  Creative [[thoughts/writing|writing]] is about creating &amp;rsquo;literature&amp;rsquo; and not genre stories: it is more so a question of quality than content Writing is an innate talent: writing is a tool that can be honed and practiced No real world application for creative writing: almost all conversations, media, arguments, involve some form of convincing the other side!</description>
+    </item>
+    
     <item>
       <title>CouchDB</title>
       <link>https://jzhao.xyz/thoughts/CouchDB/</link>
@@ -373,7 +438,7 @@ Physical Time Two types of clock</description>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
-      <description>stub, tk</description>
+      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>
@@ -382,7 +447,7 @@ Physical Time Two types of clock</description>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/consistency/</guid>
-      <description>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer)</description>
+      <description>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time</description>
     </item>
     
     <item>
@@ -1150,7 +1215,7 @@ A really good fiction read on optionality, the meaning of life and what it means
       
       <guid>https://jzhao.xyz/thoughts/contact-language/</guid>
       <description>See also: boundary object
-Digital Contact Languages Contact Language: broadly speaking, this language served to facilitate collaboration across the groups it interconnected.</description>
+Digital Contact Languages Contact Language: broadly speaking, this [[thoughts/language|language]] served to facilitate collaboration across the groups it interconnected.</description>
     </item>
     
     <item>
@@ -2131,7 +2196,7 @@ Definitions Peter Galisons&amp;rsquo; notion Trading Zone -&amp;gt; sites where 
       <pubDate>Fri, 02 Jul 2021 15:40:00 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/language-of-thought/</guid>
-      <description>Can we use language as the method of querying memory?</description>
+      <description>Can we use [[thoughts/language|language]] as the method of querying memory?</description>
     </item>
     
     <item>
@@ -2168,7 +2233,8 @@ Dreyfus Dreyfus believed that, for any AI system to achieve any sort of general 
       <pubDate>Fri, 02 Jul 2021 13:49:27 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/semantics/</guid>
-      <description>Meanings are public property: the same meaning be grasped by more than one person and by people at different times.</description>
+      <description>What do words or sentences mean
+ Meanings are public property: the same meaning be grasped by more than one person and by people at different times.</description>
     </item>
     
     <item>

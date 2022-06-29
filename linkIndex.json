@@ -334,6 +334,11 @@
       "/posts/a-failure-resume": [
         {
           "source": "/posts/a-failure-resume",
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "research log"
+        },
+        {
+          "source": "/posts/a-failure-resume",
           "target": "/thoughts/writing",
           "text": "writing"
         }
@@ -427,6 +432,11 @@
           "source": "/posts/collaborative-thinking",
           "target": "/thoughts/academia",
           "text": "academia"
+        },
+        {
+          "source": "/posts/collaborative-thinking",
+          "target": "/thoughts/language",
+          "text": "linguistics"
         },
         {
           "source": "/posts/collaborative-thinking",
@@ -662,6 +672,11 @@
           "source": "/posts/new-words",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        },
+        {
+          "source": "/posts/new-words",
+          "target": "/thoughts/language",
+          "text": "language"
         },
         {
           "source": "/posts/new-words",
@@ -1212,6 +1227,13 @@
           "text": "independent existence"
         }
       ],
+      "/thoughts/CRDT": [
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/causality",
+          "text": "causal consistency"
+        }
+      ],
       "/thoughts/Chestertons-Fence": [
         {
           "source": "/thoughts/Chestertons-Fence",
@@ -1235,6 +1257,11 @@
         }
       ],
       "/thoughts/Chinese-room-argument": [
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
         {
           "source": "/thoughts/Chinese-room-argument",
           "target": "/thoughts/intentionality",
@@ -1570,6 +1597,16 @@
           "source": "/thoughts/Extended-Mind-Hypothesis",
           "target": "/thoughts/trust",
           "text": "trust"
+        },
+        {
+          "source": "/thoughts/Extended-Mind-Hypothesis",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Extended-Mind-Hypothesis",
+          "target": "/thoughts/language",
+          "text": "language"
         }
       ],
       "/thoughts/FOAF": [
@@ -1766,6 +1803,11 @@
         }
       ],
       "/thoughts/Hyper-Hyper-Space": [
+        {
+          "source": "/thoughts/Hyper-Hyper-Space",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
         {
           "source": "/thoughts/Hyper-Hyper-Space",
           "target": "/thoughts/causality",
@@ -2009,6 +2051,21 @@
           "source": "/thoughts/Knowledge-Argument",
           "target": "/thoughts/consciousness",
           "text": "consciousness"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
         },
         {
           "source": "/thoughts/Knowledge-Argument",
@@ -2707,6 +2764,11 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CouchDB",
           "text": "CouchDB"
         },
@@ -3093,6 +3155,11 @@
           "source": "/thoughts/The-Dragon-and-the-bridge",
           "target": "/thoughts/trust",
           "text": "trust"
+        },
+        {
+          "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/language",
+          "text": "language"
         }
       ],
       "/thoughts/The-Grasshopper": [
@@ -4117,6 +4184,11 @@
         },
         {
           "source": "/thoughts/consciousness",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/consciousness",
           "target": "/thoughts/praxis",
           "text": "praxis"
         },
@@ -4213,6 +4285,11 @@
         },
         {
           "source": "/thoughts/constructionist",
+          "target": "/thoughts/language-development",
+          "text": "learn language"
+        },
+        {
+          "source": "/thoughts/constructionist",
           "target": "/thoughts/Design-Justice",
           "text": "Design Justice"
         },
@@ -4227,6 +4304,11 @@
           "source": "/thoughts/contact-language",
           "target": "/thoughts/boundary-object",
           "text": "boundary object"
+        },
+        {
+          "source": "/thoughts/contact-language",
+          "target": "/thoughts/language",
+          "text": "language"
         }
       ],
       "/thoughts/context": [
@@ -4273,6 +4355,13 @@
           "source": "/thoughts/creation-vs-maintenance",
           "target": "/thoughts/traditional-knowledge",
           "text": "traditional knowledge"
+        }
+      ],
+      "/thoughts/creative-writing": [
+        {
+          "source": "/thoughts/creative-writing",
+          "target": "/thoughts/writing",
+          "text": "writing"
         }
       ],
       "/thoughts/dao": [
@@ -5115,6 +5204,11 @@
       "/thoughts/fiction": [
         {
           "source": "/thoughts/fiction",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/fiction",
           "target": "/thoughts/skyhooks",
           "text": "skyhooks"
         }
@@ -5545,6 +5639,11 @@
         },
         {
           "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/ontology",
           "text": "Ontologically"
         },
@@ -5552,6 +5651,11 @@
           "source": "/thoughts/hermeneutical-injustice",
           "target": "/thoughts/epistemology",
           "text": "Epistemologically"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/language",
+          "text": "language"
         },
         {
           "source": "/thoughts/hermeneutical-injustice",
@@ -5878,6 +5982,11 @@
       "/thoughts/information-professions": [
         {
           "source": "/thoughts/information-professions",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/information-professions",
           "target": "/thoughts/writing",
           "text": "writing"
         },
@@ -5922,6 +6031,16 @@
         }
       ],
       "/thoughts/infrastructure": [
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
         {
           "source": "/thoughts/infrastructure",
           "target": "/thoughts/language-of-thought",
@@ -6136,6 +6255,11 @@
         },
         {
           "source": "/thoughts/interaction-design",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/interaction-design",
           "target": "/thoughts/bandwidth",
           "text": "bandwidth"
         },
@@ -6252,6 +6376,11 @@
           "source": "/thoughts/internet-computing",
           "target": "/thoughts/Protocol",
           "text": "Protocol"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/language",
+          "text": "language"
         },
         {
           "source": "/thoughts/internet-computing",
@@ -6523,7 +6652,111 @@
           "text": "project list"
         }
       ],
+      "/thoughts/language": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonetics",
+          "text": "phonetics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonology",
+          "text": "phonology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/semantics",
+          "text": "semantics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/syntax",
+          "text": "syntax"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/pragmatics",
+          "text": "pragmatics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/sociolinguistics",
+          "text": "sociolinguistics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonetics",
+          "text": "Phonetics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonology",
+          "text": "Phonology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/morphology",
+          "text": "Morphology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/syntax",
+          "text": "Syntax"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/semantics",
+          "text": "Semantics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/pragmatics",
+          "text": "Pragmatics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/sociolinguistics",
+          "text": "Sociolinguistics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/language-development",
+          "text": "language development"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/language-of-thought",
+          "text": "language of thought"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/linguistic-relativism",
+          "text": "linguistic relativism"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/posts/new-words",
+          "text": "New Words"
+        }
+      ],
+      "/thoughts/language-development": [
+        {
+          "source": "/thoughts/language-development",
+          "target": "/thoughts/constructionist",
+          "text": "constructivist"
+        }
+      ],
       "/thoughts/language-of-thought": [
+        {
+          "source": "/thoughts/language-of-thought",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
         {
           "source": "/thoughts/language-of-thought",
           "target": "/thoughts/connectionist-networks",
@@ -6569,8 +6802,18 @@
       "/thoughts/linguistic-relativism": [
         {
           "source": "/thoughts/linguistic-relativism",
+          "target": "/thoughts/language",
+          "text": "linguistics"
+        },
+        {
+          "source": "/thoughts/linguistic-relativism",
           "target": "/thoughts/terminology",
           "text": "terminology"
+        },
+        {
+          "source": "/thoughts/linguistic-relativism",
+          "target": "/thoughts/language",
+          "text": "language"
         },
         {
           "source": "/thoughts/linguistic-relativism",
@@ -6593,6 +6836,11 @@
           "source": "/thoughts/local-first-software",
           "target": "/thoughts/CRDT",
           "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/local-first-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
         }
       ],
       "/thoughts/longevity": [
@@ -6736,6 +6984,11 @@
         },
         {
           "source": "/thoughts/meaning",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/meaning",
           "target": "/thoughts/terminology",
           "text": "terminology"
         },
@@ -6874,6 +7127,11 @@
         }
       ],
       "/thoughts/money": [
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
         {
           "source": "/thoughts/money",
           "target": "/thoughts/decentralization",
@@ -8068,11 +8326,6 @@
           "source": "/thoughts/semantics",
           "target": "/thoughts/metaphysics",
           "text": "metaphysically"
-        },
-        {
-          "source": "/thoughts/semantics",
-          "target": "/thoughts/Nozicks-Experience-Machine",
-          "text": "Nozick's Experience Machine"
         }
       ],
       "/thoughts/signed-messages": [
@@ -8116,6 +8369,23 @@
           "source": "/thoughts/social-graphs",
           "target": "/thoughts/search",
           "text": "search"
+        }
+      ],
+      "/thoughts/sociolinguistics": [
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/syntax",
+          "text": "syntax"
+        },
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        },
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/phonology",
+          "text": "phonology"
         }
       ],
       "/thoughts/software-and-politics": [
@@ -8960,6 +9230,11 @@
         },
         {
           "source": "/thoughts/writing",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/writing",
           "target": "/thoughts/terminology",
           "text": "terminology"
         },
@@ -9311,6 +9586,11 @@
           "source": "/thoughts/Interact-Circle-W21",
           "target": "/posts/new-words",
           "text": "new-words"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/posts/new-words",
+          "text": "New Words"
         }
       ],
       "/posts/nothing-stops": [
@@ -9629,6 +9909,16 @@
       ],
       "/thoughts/CRDT": [
         {
+          "source": "/thoughts/Hyper-Hyper-Space",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CRDT",
           "text": "CRDT"
@@ -9642,6 +9932,11 @@
           "source": "/thoughts/local-first-software",
           "target": "/thoughts/CRDT",
           "text": "CRDT"
+        },
+        {
+          "source": "/thoughts/local-first-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
         }
       ],
       "/thoughts/Chestertons-Fence": [
@@ -10940,11 +11235,6 @@
           "text": "Nozick's Experience Machine"
         },
         {
-          "source": "/thoughts/semantics",
-          "target": "/thoughts/Nozicks-Experience-Machine",
-          "text": "Nozick's Experience Machine"
-        },
-        {
           "source": "/thoughts/virtual-worlds",
           "target": "/thoughts/Nozicks-Experience-Machine",
           "text": "Nozick's Experience Machine"
@@ -11311,6 +11601,11 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/posts/a-failure-resume",
+          "target": "/thoughts/Rhizome-Research-Log",
+          "text": "research log"
+        },
         {
           "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/Rhizome-Research-Log",
@@ -12245,6 +12540,11 @@
       ],
       "/thoughts/causality": [
         {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/causality",
+          "text": "causal consistency"
+        },
+        {
           "source": "/thoughts/Chinese-room-argument",
           "target": "/thoughts/causality",
           "text": "causal"
@@ -12681,6 +12981,11 @@
           "source": "/thoughts/game-design",
           "target": "/thoughts/constructionist",
           "text": "constructionist"
+        },
+        {
+          "source": "/thoughts/language-development",
+          "target": "/thoughts/constructionist",
+          "text": "constructivist"
         },
         {
           "source": "/thoughts/linguistic-relativism",
@@ -15287,6 +15592,145 @@
           "text": "knowledge distillation"
         }
       ],
+      "/thoughts/language": [
+        {
+          "source": "/posts/collaborative-thinking",
+          "target": "/thoughts/language",
+          "text": "linguistics"
+        },
+        {
+          "source": "/posts/new-words",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Chinese-room-argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Extended-Mind-Hypothesis",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Extended-Mind-Hypothesis",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/Knowledge-Argument",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/The-Dragon-and-the-bridge",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/consciousness",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/contact-language",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/fiction",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/hermeneutical-injustice",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/information-professions",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/infrastructure",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/interaction-design",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/internet-computing",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/language-of-thought",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/linguistic-relativism",
+          "target": "/thoughts/language",
+          "text": "linguistics"
+        },
+        {
+          "source": "/thoughts/linguistic-relativism",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/meaning",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/money",
+          "target": "/thoughts/language",
+          "text": "language"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/language",
+          "text": "language"
+        }
+      ],
+      "/thoughts/language-development": [
+        {
+          "source": "/thoughts/constructionist",
+          "target": "/thoughts/language-development",
+          "text": "learn language"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/language-development",
+          "text": "language development"
+        }
+      ],
       "/thoughts/language-of-thought": [
         {
           "source": "/thoughts/Theory-of-Niche-Construction",
@@ -15297,6 +15741,11 @@
           "source": "/thoughts/infrastructure",
           "target": "/thoughts/language-of-thought",
           "text": "language as infrastructure for thought"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/language-of-thought",
+          "text": "language of thought"
         },
         {
           "source": "/thoughts/linguistic-relativism",
@@ -15363,6 +15812,11 @@
         },
         {
           "source": "/thoughts/Mindstorms",
+          "target": "/thoughts/linguistic-relativism",
+          "text": "linguistic relativism"
+        },
+        {
+          "source": "/thoughts/language",
           "target": "/thoughts/linguistic-relativism",
           "text": "linguistic relativism"
         }
@@ -15641,6 +16095,23 @@
           "source": "/thoughts/Panpsychism",
           "target": "/thoughts/monism",
           "text": "Monism"
+        }
+      ],
+      "/thoughts/morphology": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/morphology",
+          "text": "Morphology"
+        },
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
         }
       ],
       "/thoughts/move-fast-and-break-things": [
@@ -16118,6 +16589,35 @@
           "text": "philosophy of science"
         }
       ],
+      "/thoughts/phonetics": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonetics",
+          "text": "phonetics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonetics",
+          "text": "Phonetics"
+        }
+      ],
+      "/thoughts/phonology": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonology",
+          "text": "phonology"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/phonology",
+          "text": "Phonology"
+        },
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/phonology",
+          "text": "phonology"
+        }
+      ],
       "/thoughts/play": [
         {
           "source": "/posts/2020",
@@ -16319,6 +16819,18 @@
           "source": "/thoughts/epistemic-injustice",
           "target": "/thoughts/power",
           "text": "power"
+        }
+      ],
+      "/thoughts/pragmatics": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/pragmatics",
+          "text": "pragmatics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/pragmatics",
+          "text": "Pragmatics"
         }
       ],
       "/thoughts/praxis": [
@@ -16939,6 +17451,16 @@
           "text": "semantic"
         },
         {
+          "source": "/thoughts/language",
+          "target": "/thoughts/semantics",
+          "text": "semantics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/semantics",
+          "text": "Semantics"
+        },
+        {
           "source": "/thoughts/meaning",
           "target": "/thoughts/semantics",
           "text": "semantics"
@@ -17052,6 +17574,18 @@
           "text": "social graph"
         }
       ],
+      "/thoughts/sociolinguistics": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/sociolinguistics",
+          "text": "sociolinguistics"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/sociolinguistics",
+          "text": "Sociolinguistics"
+        }
+      ],
       "/thoughts/software-and-politics": [
         {
           "source": "/thoughts/Coraline-Ada-Ehmke",
@@ -17117,6 +17651,23 @@
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/symbolic-system",
           "text": "symbolic systems"
+        }
+      ],
+      "/thoughts/syntax": [
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/syntax",
+          "text": "syntax"
+        },
+        {
+          "source": "/thoughts/language",
+          "target": "/thoughts/syntax",
+          "text": "Syntax"
+        },
+        {
+          "source": "/thoughts/sociolinguistics",
+          "target": "/thoughts/syntax",
+          "text": "syntax"
         }
       ],
       "/thoughts/system-model": [
@@ -17961,6 +18512,11 @@
           "text": "writing"
         },
         {
+          "source": "/thoughts/creative-writing",
+          "target": "/thoughts/writing",
+          "text": "writing"
+        },
+        {
           "source": "/thoughts/friction",
           "target": "/thoughts/writing",
           "text": "Writing"
@@ -18340,6 +18896,11 @@
     },
     {
       "source": "/posts/a-failure-resume",
+      "target": "/thoughts/Rhizome-Research-Log",
+      "text": "research log"
+    },
+    {
+      "source": "/posts/a-failure-resume",
       "target": "/thoughts/writing",
       "text": "writing"
     },
@@ -18427,6 +18988,11 @@
       "source": "/posts/collaborative-thinking",
       "target": "/thoughts/academia",
       "text": "academia"
+    },
+    {
+      "source": "/posts/collaborative-thinking",
+      "target": "/thoughts/language",
+      "text": "linguistics"
     },
     {
       "source": "/posts/collaborative-thinking",
@@ -18652,6 +19218,11 @@
       "source": "/posts/new-words",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/posts/new-words",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/posts/new-words",
@@ -19164,6 +19735,11 @@
       "text": "independent existence"
     },
     {
+      "source": "/thoughts/CRDT",
+      "target": "/thoughts/causality",
+      "text": "causal consistency"
+    },
+    {
       "source": "/thoughts/Chestertons-Fence",
       "target": "/thoughts/terminology",
       "text": "terminology"
@@ -19182,6 +19758,11 @@
       "source": "/thoughts/Chestertons-Fence",
       "target": "/thoughts/Lindy-effect",
       "text": "Lindy effect"
+    },
+    {
+      "source": "/thoughts/Chinese-room-argument",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/Chinese-room-argument",
@@ -19484,6 +20065,16 @@
       "text": "trust"
     },
     {
+      "source": "/thoughts/Extended-Mind-Hypothesis",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/Extended-Mind-Hypothesis",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
       "source": "/thoughts/FOAF",
       "target": "/thoughts/RDF",
       "text": "RDF"
@@ -19657,6 +20248,11 @@
       "source": "/thoughts/How-to-do-Nothing",
       "target": "/thoughts/creation-vs-maintenance",
       "text": "maintenance"
+    },
+    {
+      "source": "/thoughts/Hyper-Hyper-Space",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
     },
     {
       "source": "/thoughts/Hyper-Hyper-Space",
@@ -19887,6 +20483,21 @@
       "source": "/thoughts/Knowledge-Argument",
       "target": "/thoughts/consciousness",
       "text": "consciousness"
+    },
+    {
+      "source": "/thoughts/Knowledge-Argument",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/Knowledge-Argument",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/Knowledge-Argument",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/Knowledge-Argument",
@@ -20525,6 +21136,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/CouchDB",
       "text": "CouchDB"
     },
@@ -20887,6 +21503,11 @@
       "source": "/thoughts/The-Dragon-and-the-bridge",
       "target": "/thoughts/trust",
       "text": "trust"
+    },
+    {
+      "source": "/thoughts/The-Dragon-and-the-bridge",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/The-Grasshopper",
@@ -21815,6 +22436,11 @@
     },
     {
       "source": "/thoughts/consciousness",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/consciousness",
       "target": "/thoughts/praxis",
       "text": "praxis"
     },
@@ -21905,6 +22531,11 @@
     },
     {
       "source": "/thoughts/constructionist",
+      "target": "/thoughts/language-development",
+      "text": "learn language"
+    },
+    {
+      "source": "/thoughts/constructionist",
       "target": "/thoughts/Design-Justice",
       "text": "Design Justice"
     },
@@ -21917,6 +22548,11 @@
       "source": "/thoughts/contact-language",
       "target": "/thoughts/boundary-object",
       "text": "boundary object"
+    },
+    {
+      "source": "/thoughts/contact-language",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/context",
@@ -21957,6 +22593,11 @@
       "source": "/thoughts/creation-vs-maintenance",
       "target": "/thoughts/traditional-knowledge",
       "text": "traditional knowledge"
+    },
+    {
+      "source": "/thoughts/creative-writing",
+      "target": "/thoughts/writing",
+      "text": "writing"
     },
     {
       "source": "/thoughts/dao",
@@ -22735,6 +23376,11 @@
     },
     {
       "source": "/thoughts/fiction",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/fiction",
       "target": "/thoughts/skyhooks",
       "text": "skyhooks"
     },
@@ -23135,6 +23781,11 @@
     },
     {
       "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
       "target": "/thoughts/ontology",
       "text": "Ontologically"
     },
@@ -23142,6 +23793,11 @@
       "source": "/thoughts/hermeneutical-injustice",
       "target": "/thoughts/epistemology",
       "text": "Epistemologically"
+    },
+    {
+      "source": "/thoughts/hermeneutical-injustice",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/hermeneutical-injustice",
@@ -23415,6 +24071,11 @@
     },
     {
       "source": "/thoughts/information-professions",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/information-professions",
       "target": "/thoughts/writing",
       "text": "writing"
     },
@@ -23477,6 +24138,16 @@
       "source": "/thoughts/information",
       "target": "/thoughts/representation",
       "text": "Representation"
+    },
+    {
+      "source": "/thoughts/infrastructure",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/infrastructure",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/infrastructure",
@@ -23680,6 +24351,11 @@
     },
     {
       "source": "/thoughts/interaction-design",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/interaction-design",
       "target": "/thoughts/bandwidth",
       "text": "bandwidth"
     },
@@ -23792,6 +24468,11 @@
       "source": "/thoughts/internet-computing",
       "target": "/thoughts/Protocol",
       "text": "Protocol"
+    },
+    {
+      "source": "/thoughts/internet-computing",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/internet-computing",
@@ -24049,9 +24730,109 @@
       "text": "project list"
     },
     {
+      "source": "/thoughts/language-development",
+      "target": "/thoughts/constructionist",
+      "text": "constructivist"
+    },
+    {
+      "source": "/thoughts/language-of-thought",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
       "source": "/thoughts/language-of-thought",
       "target": "/thoughts/connectionist-networks",
       "text": "connectionist networks"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/phonetics",
+      "text": "phonetics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/phonology",
+      "text": "phonology"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/semantics",
+      "text": "semantics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/morphology",
+      "text": "morphology"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/syntax",
+      "text": "syntax"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/pragmatics",
+      "text": "pragmatics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/sociolinguistics",
+      "text": "sociolinguistics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/phonetics",
+      "text": "Phonetics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/phonology",
+      "text": "Phonology"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/morphology",
+      "text": "Morphology"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/syntax",
+      "text": "Syntax"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/semantics",
+      "text": "Semantics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/pragmatics",
+      "text": "Pragmatics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/sociolinguistics",
+      "text": "Sociolinguistics"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/language-development",
+      "text": "language development"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/language-of-thought",
+      "text": "language of thought"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/thoughts/linguistic-relativism",
+      "text": "linguistic relativism"
+    },
+    {
+      "source": "/thoughts/language",
+      "target": "/posts/new-words",
+      "text": "New Words"
     },
     {
       "source": "/thoughts/learning",
@@ -24085,8 +24866,18 @@
     },
     {
       "source": "/thoughts/linguistic-relativism",
+      "target": "/thoughts/language",
+      "text": "linguistics"
+    },
+    {
+      "source": "/thoughts/linguistic-relativism",
       "target": "/thoughts/terminology",
       "text": "terminology"
+    },
+    {
+      "source": "/thoughts/linguistic-relativism",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/linguistic-relativism",
@@ -24107,6 +24898,11 @@
       "source": "/thoughts/local-first-software",
       "target": "/thoughts/CRDT",
       "text": "CRDT"
+    },
+    {
+      "source": "/thoughts/local-first-software",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
     },
     {
       "source": "/thoughts/longevity",
@@ -24240,6 +25036,11 @@
     },
     {
       "source": "/thoughts/meaning",
+      "target": "/thoughts/language",
+      "text": "language"
+    },
+    {
+      "source": "/thoughts/meaning",
       "target": "/thoughts/terminology",
       "text": "terminology"
     },
@@ -24357,6 +25158,11 @@
       "source": "/thoughts/mindfulness",
       "target": "/thoughts/desire-paths",
       "text": "desire paths"
+    },
+    {
+      "source": "/thoughts/money",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/money",
@@ -25464,11 +26270,6 @@
       "text": "metaphysically"
     },
     {
-      "source": "/thoughts/semantics",
-      "target": "/thoughts/Nozicks-Experience-Machine",
-      "text": "Nozick's Experience Machine"
-    },
-    {
       "source": "/thoughts/signed-messages",
       "target": "/thoughts/Elliptic-curve-Cryptography-ECC",
       "text": "elliptic curve"
@@ -25502,6 +26303,21 @@
       "source": "/thoughts/social-graphs",
       "target": "/thoughts/search",
       "text": "search"
+    },
+    {
+      "source": "/thoughts/sociolinguistics",
+      "target": "/thoughts/syntax",
+      "text": "syntax"
+    },
+    {
+      "source": "/thoughts/sociolinguistics",
+      "target": "/thoughts/morphology",
+      "text": "morphology"
+    },
+    {
+      "source": "/thoughts/sociolinguistics",
+      "target": "/thoughts/phonology",
+      "text": "phonology"
     },
     {
       "source": "/thoughts/software-and-politics",
@@ -26287,6 +27103,11 @@
       "source": "/thoughts/writing",
       "target": "/posts/networked-thought",
       "text": "networked"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/language",
+      "text": "language"
     },
     {
       "source": "/thoughts/writing",

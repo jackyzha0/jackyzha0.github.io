@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Local-first software</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated June 27, 2022
       </p>
       <ul class="tags">
     
@@ -486,6 +486,8 @@ if (!doNotTrack) {
           <nav id="TableOfContents">
   <ol>
     <li><a href="#ink-and-switch">Ink and Switch</a></li>
+    <li><a href="#tlfs">TLFS</a></li>
+    <li><a href="#locutus">Locutus</a></li>
   </ol>
 </nav>
       </aside>
@@ -503,6 +505,28 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -582,6 +606,19 @@ if (!doNotTrack) {
 <li>Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: NAT traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.</li>
 <li>Visualizing document history is important and difficult. How do we communicate this version history to users? How should users think about versioning, share and accept changes, and understand how their documents came to be a certain way when there is no central source of truth?</li>
 </ol>
+<a href="#tlfs"><h2 id="tlfs"><span class="hanchor" ariaLabel="Anchor"># </span>TLFS</h2></a>
+<p>From 
+
+<a href="https://cloudpeers.co/" rel="noopener">Cloudpeers</a></p>
+<p>The Local-First SDK offers a stack to write applications as productively as when using state-of-the-art cloud-based architectures. It enables building serverless apps that traditionally require backend engineers to build, scale and maintain.</p>
+<p>Really great SDK but unsure how this differs from existing platforms like Yjs or Hypercore (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.</p>
+<p>Actually uses a Cambria-like system for data lensing which is cool.</p>
+<a href="#locutus"><h2 id="locutus"><span class="hanchor" ariaLabel="Anchor"># </span>Locutus</h2></a>
+<p>Locutus is a decentralized key-value database. It uses the same 
+
+<a href="https://freenetproject.org/assets/papers/lic.pdf" rel="noopener">small world</a> routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.</p>
+<p>Locutus is <em>not</em> append-only and has mutable state.</p>
+<p>Splits are merged using <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a></p>
  
 
     </article>
