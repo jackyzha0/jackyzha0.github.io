@@ -75,7 +75,7 @@ Logic
 - On sending message $m$ from node $N_i$, `fn send(m) -> tick(); actually_send(t, m)`
 - On receiving `fn receive(t', m) -> t = zip(t, t').map(max); tick(); do_something(m)`
 
-Thus, a vector timestamp of an event $e$ actually represents all of its *[[thoughts/message ordering|causal]] dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
+Thus, a vector timestamp of an event $e$ actually represents all of its *[[thoughts/causality|causal]] dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
 
 E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$
 

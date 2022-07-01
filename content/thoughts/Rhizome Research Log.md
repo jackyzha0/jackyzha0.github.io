@@ -13,11 +13,12 @@ I think research logs tend to generally focus too much on what one did rather th
 - Settling into a better work rhythm I think.
 	- Food here is surprisingly expensive but groceries is still miles cheaper than just getting Uber Eats everyday. 
 - Have a sudden urge to work on my personal site but I will ignore that for the time being...
+- Sebastien sent a [YouTube playlist](https://www.youtube.com/watch?v=KNJGPI0fuFA&list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA&index=1) on the foundations of [[thoughts/blockchain|blockchains]] that have some sections which seem highly relevant. Slowly making my way through these
 
 ### June 29th
 - Finally wrapped up school! Anson is headed back to Arizona today too :((
 	- Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I'm really glad I chose to prioritize relationship, truly some moments over the past month where I was like "wow, is this real". It feels like I'm selectively giving deep attention in-turn to the things I care most about.
-	- Now is the era to just fully focus my attention on research and this project
+	- Now is the era to just fully focus my attention on research and this project though
 - I think this finally means that the vast majority of my waking hours will be on research. Uninstalled a game I was spending way too much time playing.. it is grind time!!
 
 ### June 27-28th

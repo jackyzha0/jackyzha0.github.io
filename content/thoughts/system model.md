@@ -15,7 +15,7 @@ How do we capture assumptions in a system model for [[thoughts/distributed syste
 
 ### Node behaviour (e.g. crashes)
 - Crash-stop: node is faulty if it crashes. After it crashes, it stops executing forever
-- Crash-recovery: node may crash at any moment, losing in-memory state. It may resume executing sometime later
+- Crash-recovery: node may crash at any moment, losing in-memory state. It may resume executing sometime later (sometimes call omission fault)
 - Byzantine: a node is faulty if it deviates from the algorithm. Faulty nodes may do anything, including crashing or malicious behaviour
 - Correct: not faulty
 
