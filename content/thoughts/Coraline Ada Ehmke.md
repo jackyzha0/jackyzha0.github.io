@@ -31,4 +31,3 @@ Worked a lot with Ruby, known for social justice work and activism. Transitioned
 	- an Ethical Source license that specifically prohibits the use of software to violate universal standards of human rights
 - Opalgate
 	- "meh went on to state that he would knowingly and gladly accept working with a child molestor or cross-burning racist as long as their contributed code was good"
-- First-time contributor tag, good first issue, etc.

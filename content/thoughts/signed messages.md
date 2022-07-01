@@ -14,6 +14,12 @@ It is infeasible for Alice to generate a signed message that appears to have bee
 - Aggregating signatures: have multiple signatures signed by various people and then you can aggregate it into a single signature, which makes it more efficient in terms of size
 - Thresholding signatures: multiple people split a key into multiple parts, and you require some fixed number of people to agree to sign a message to be able to actually sign it with the full key
 
+## Signatures Schemes
+Require 3 algorithms
+1. Key generation algorithm: `seed -> public_key, private_key`
+2. Signing algorithm: `msg, private_key -> msg, signature`
+3. Verification algorithm: `msg, signature, public_key -> boolean`
+
 ## Computing Signatures
 - ECDSA Signature over the Secp256k1 [[thoughts/Elliptic-curve Cryptography (ECC)|elliptic curve]]
 - BLS signatures over the BLS12-381 curves
