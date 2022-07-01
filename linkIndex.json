@@ -2434,6 +2434,13 @@
           "text": "Descartes' Dream Argument"
         }
       ],
+      "/thoughts/Open-Source-and-Politics": [
+        {
+          "source": "/thoughts/Open-Source-and-Politics",
+          "target": "/thoughts/Coraline-Ada-Ehmke",
+          "text": "Coraline Ada Ehmke"
+        }
+      ],
       "/thoughts/Panpsychism": [
         {
           "source": "/thoughts/Panpsychism",
@@ -8845,6 +8852,16 @@
       "/thoughts/urban-planning": [
         {
           "source": "/thoughts/urban-planning",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counter-cultural movements of \"back to the land\""
+        },
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        },
+        {
+          "source": "/thoughts/urban-planning",
           "target": "/thoughts/creation-vs-maintenance",
           "text": "maintenance of existing systems"
         },
@@ -9999,6 +10016,13 @@
           "text": "Consciousness is not Information"
         }
       ],
+      "/thoughts/Coraline-Ada-Ehmke": [
+        {
+          "source": "/thoughts/Open-Source-and-Politics",
+          "target": "/thoughts/Coraline-Ada-Ehmke",
+          "text": "Coraline Ada Ehmke"
+        }
+      ],
       "/thoughts/CouchDB": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -10437,6 +10461,11 @@
           "source": "/thoughts/tribe-flourishing",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "FCTC"
+        },
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counter-cultural movements of \"back to the land\""
         }
       ],
       "/thoughts/Galls-law": [
@@ -16112,6 +16141,11 @@
           "source": "/thoughts/sociolinguistics",
           "target": "/thoughts/morphology",
           "text": "morphology"
+        },
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
         }
       ],
       "/thoughts/move-fast-and-break-things": [
@@ -20828,6 +20862,11 @@
       "source": "/thoughts/Ny%C4%81ya",
       "target": "/thoughts/Descartes-Meditations",
       "text": "Descartes' Dream Argument"
+    },
+    {
+      "source": "/thoughts/Open-Source-and-Politics",
+      "target": "/thoughts/Coraline-Ada-Ehmke",
+      "text": "Coraline Ada Ehmke"
     },
     {
       "source": "/thoughts/Panpsychism",
@@ -26738,6 +26777,16 @@
       "source": "/thoughts/truth",
       "target": "/thoughts/Descartes-Meditations",
       "text": "Descartes' Meditations"
+    },
+    {
+      "source": "/thoughts/urban-planning",
+      "target": "/thoughts/From-Counterculture-to-Cyberculture",
+      "text": "counter-cultural movements of \"back to the land\""
+    },
+    {
+      "source": "/thoughts/urban-planning",
+      "target": "/thoughts/morphology",
+      "text": "morphology"
     },
     {
       "source": "/thoughts/urban-planning",

@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Signed messages</h1>
     <article>
       <p class="meta">
-          Last updated June 24, 2022
+          Last updated June 30, 2022
       </p>
       <ul class="tags">
     
@@ -485,6 +485,7 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
+    <li><a href="#signatures-schemes">Signatures Schemes</a></li>
     <li><a href="#computing-signatures">Computing Signatures</a></li>
     <li><a href="#signed-blobs">Signed Blobs</a>
       <ol>
@@ -520,6 +521,12 @@ if (!doNotTrack) {
   
     
   
+    
+  
+    
+  
+    
+  
   
     
       
@@ -541,6 +548,12 @@ if (!doNotTrack) {
 
   
   
+  
+    
+  
+    
+  
+    
   
     
   
@@ -579,6 +592,13 @@ if (!doNotTrack) {
 <li>Aggregating signatures: have multiple signatures signed by various people and then you can aggregate it into a single signature, which makes it more efficient in terms of size</li>
 <li>Thresholding signatures: multiple people split a key into multiple parts, and you require some fixed number of people to agree to sign a message to be able to actually sign it with the full key</li>
 </ul>
+<a href="#signatures-schemes"><h2 id="signatures-schemes"><span class="hanchor" ariaLabel="Anchor"># </span>Signatures Schemes</h2></a>
+<p>Require 3 algorithms</p>
+<ol>
+<li>Key generation algorithm: <code>seed -&gt; public_key, private_key</code></li>
+<li>Signing algorithm: <code>msg, private_key -&gt; msg, signature</code></li>
+<li>Verification algorithm: <code>msg, signature, public_key -&gt; boolean</code></li>
+</ol>
 <a href="#computing-signatures"><h2 id="computing-signatures"><span class="hanchor" ariaLabel="Anchor"># </span>Computing Signatures</h2></a>
 <ul>
 <li>ECDSA Signature over the Secp256k1 <a href="/thoughts/Elliptic-curve-Cryptography-ECC" rel="noopener" class="internal-link" data-src="/thoughts/Elliptic-curve-Cryptography-ECC">elliptic curve</a></li>
