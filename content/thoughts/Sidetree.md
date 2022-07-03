@@ -1,3 +1,10 @@
+---
+title: "Sidetree"
+date: 2022-07-03
+tags:
+- seed
+---
+
 [Source Spec](https://identity.foundation/sidetree/spec)
 
 A 'meta'/Layer 2 protocol that can be applied to any target trust layer to create a scalable DID method (batteries *almost* included)

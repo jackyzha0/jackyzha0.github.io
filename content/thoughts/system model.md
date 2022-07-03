@@ -22,6 +22,11 @@ How do we capture assumptions in a system model for [[thoughts/distributed syste
 ### Timing behaviour (e.g. latency)
 - Synchronous: message latency no greater than a known upper bound
 - Partially synchronous: asynchronous for some finite (but unknown, possibly arbitrarily large) periods of time, synchronous otherwise
+	- Like synchronous model, assumes a shared global clock with bounded drift $\Delta$
+	- There is an unknown transition point GST (global stabilization time) where the system goes from asynchronous to synchronous.
+		- All messages sent in an asynchronous period $t \leq GST$ are delivered by time $GST + \Delta$
+		- All messages sent in the synchronous period $t \geq GST$ arrive by time $t + \Delta$
+	- The key difference is that we can wait for a sufficiently long delay ($\Delta$) after the start of a round that if the network has reached synchrony you're guaranteed to receive all messages from all non-Byzantine nodes
 - Asynchronous: messages can be delayed arbitrarily, no timing guarantees
 
 ### Identity and Messages

@@ -25,6 +25,8 @@ There are four requirements to such an algorithm:
 3. Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.
 4. Termination. Also known as progress, every node must eventually reach a decision.
 
+See also: [[thoughts/33% Impossibility Result|33% Impossibility Result]]
+
 ### Total order broadcast
 > Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value. Consensus in the context of [[thoughts/message broadcast#Total order broadcast|total order broadcast]] is on *what the next message to deliver is*
 
@@ -36,13 +38,13 @@ One way to do it is using a single leader, but what happens if the leader crashe
 	- [[thoughts/Raft Consensus Algorithm|Raft]], Viewstamped Replication, Zab: [[thoughts/message broadcast#Total order broadcast|total order broadcast]] by default
 - Blockchain consensus models assume partially synchronous Byzantine [[thoughts/system model|system model]]
 
-[[thoughts/FLP Result|FLP Result]] states that these consensus algorithms cannot assume an *asynchronous* [[thoughts/system model|system model]].
+[[thoughts/FLP Result|FLP Result]] states that these consensus algorithms cannot assume an *asynchronous* [[thoughts/system model|system model]] without giving up either [[thoughts/safety|safety]] or [[thoughts/liveness|liveness]].
 
 ### State Machine Replication
 A subset of the algorithmic consensus problem about agreeing on the same state
 
 1. Consistency: all notes agree on the same history
-2. Liveness: every transaction submitted eventually added to all node's histories
+2. [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node's histories
 
 SMR can be reduced to [[thoughts/Byzantine Broadcast|BB]]
 

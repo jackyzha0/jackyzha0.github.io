@@ -9,6 +9,9 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 2-3rd
+- An 'aha' moment caught in 4k... watch me try to figure out why asynchronous and partially synchronous [[thoughts/system model|system models]] aren't the same thing (s/o Sebastien for being so kind and patient). This was super satisfying! ![[thoughts/images/on-async-partially-sync-models.png]]
+
 ### July 1st
 - Internet went out today halfway through watching lectures :(( 
 	- Spent a bunch of time just reading books + thinking

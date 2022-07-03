@@ -23,7 +23,7 @@ This is the problem of *distributed consensus*
 Generally, this is done using a log of actions that are *replicated* across all machines. Keeping this replicated log consistent between all the machines is the job of the *consensus algorithm*. They allow a collection of machines to agree on some shared state which still make sense even when there is latency or unavailability.
 
 In more formal language, consensus algorithms should typically have the following properties:
-1. Safety in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. [[thoughts/fault tolerance#Byzantine Faults|Byzantine Faults]])
+1. [[thoughts/safety|Safety]] in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. [[thoughts/fault tolerance#Byzantine Faults|Byzantine Faults]])
 2. Functional (available) as long as the majority of servers are operational and can communicate
 3. Latency resilient and does not depend on timing of messages to ensure consistency
 
@@ -37,7 +37,7 @@ Raft implements consensus by first electing a *leader*, then giving that leader 
 Given this approach, Raft decomposes this consensus into 3 independent subproblems
 1. Leader election: how do we choose a new leader when an existing leader fails?
 2. Log replication: how does the leader accept new log entries from clients and replicate them across all the other machines?
-3. Safety: when is it safe to consider log entries as 'agreed upon' and fully replicated across all machines?
+3. [[thoughts/safety|Safety]]: when is it safe to consider log entries as 'agreed upon' and fully replicated across all machines?
 
 A server can only be in one of 3 states:
 1. Leader: handles all client requests
