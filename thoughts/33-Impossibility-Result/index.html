@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]">
-    <title>Public-key Infrastructure</title>
+    <meta name="description" content="In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f &#43; 1$ (equivalently, $f &lt; \frac n 3$)">
+    <title>33% Impossibility Result</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -469,7 +469,7 @@ if (!doNotTrack) {
   /
 </pre>
     
-    <h1 class="title">Public-key Infrastructure</h1>
+    <h1 class="title">33% Impossibility Result</h1>
     <article>
       <p class="meta">
           Last updated July 3, 2022
@@ -517,12 +517,105 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
-<p>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a></p>
-<p>For example, it can help ensure that all peers in the network know each other&rsquo;s public keys (i.e. that public keys are&hellip; public knowledge)</p>
+
+<p>In general (assuming a partially-synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>), a protocol can achieve <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> all the time and additionally <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> in synchronous conditions <em>if and only if</em> $n \geq 3f + 1$ (equivalently, $f &lt; \frac n 3$)</p>
+<p>This result holds despite the assumption of <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> (unlike the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM result</a>), so this bound must be driven by the possibility of unbounded message delays.</p>
+<p>Intuition:</p>
+<ol>
+<li>We can&rsquo;t wait indefinitely for all nodes to respond (one valid strategy for Byzantine nodes is to never respond, even after GST) so realistically we can only wait to hear from $n - f$ nodes before deciding on the next possible action</li>
+<li>But we can&rsquo;t say for certain the $f$ nodes are actually Byzantine (they could be honest nodes that are congested), thus of the $n - f$ nodes, more than half should be honest, $f &lt; \frac 1 2 (n -f)$ or equivalently $f &lt; \frac n 3$</li>
+</ol>
  
 
     </article>
@@ -546,38 +639,8 @@ if (!doNotTrack) {
     
       
       
-      
-    
-      
-      
-      
-    
-      
-      
-      
-    
-      
-      
       <li>
-        <a href="/thoughts/33-Impossibility-Result/" data-ctx="PKI" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/Byzantine-Broadcast/" data-ctx="PKI" data-src="/thoughts/Byzantine-Broadcast" class="internal-link">Byzantine Broadcast</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/PSL-FLM-Impossibility-Result/" data-ctx="PKI" data-src="/thoughts/PSL-FLM-Impossibility-Result" class="internal-link">PSL-FLM Impossibility Result</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="PKI" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+        <a href="/thoughts/consensus/" data-ctx="33% Impossibility Result" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
       </li>
       
       
@@ -601,7 +664,7 @@ if (!doNotTrack) {
 <script>
 async function run() {
   const { index, links, content } = await fetchData
-  const curPage = "/thoughts/Public-key-Infrastructure"
+  const curPage = "/thoughts/33-Impossibility-Result"
   const pathColors = [{"/moc":"#4388cc"}]
   let depth =  1 
 

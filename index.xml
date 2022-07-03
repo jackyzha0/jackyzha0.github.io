@@ -7,6 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>33% Impossibility Result</title>
+      <link>https://jzhao.xyz/thoughts/33-Impossibility-Result/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/33-Impossibility-Result/</guid>
+      <description>In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f + 1$ (equivalently, $f &amp;lt; \frac n 3$)</description>
+    </item>
+    
+    <item>
+      <title>Liveness</title>
+      <link>https://jzhao.xyz/thoughts/liveness/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/liveness/</guid>
+      <description>A promise in [[thoughts/distributed systems|distributed systems]] that claims that &amp;ldquo;something good&amp;rdquo; will eventually happen.</description>
+    </item>
+    
+    <item>
+      <title>Safety</title>
+      <link>https://jzhao.xyz/thoughts/safety/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/safety/</guid>
+      <description>A promise in [[thoughts/distributed systems|distributed systems]] that claims that &amp;ldquo;something bad&amp;rdquo; will never happen</description>
+    </item>
+    
+    <item>
+      <title>Sidetree</title>
+      <link>https://jzhao.xyz/thoughts/Sidetree/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Sidetree/</guid>
+      <description>Source Spec
+A &amp;lsquo;meta&amp;rsquo;/Layer 2 protocol that can be applied to any target trust layer to create a scalable DID method (batteries almost included)</description>
+    </item>
+    
+    <item>
       <title>Byzantine Broadcast</title>
       <link>https://jzhao.xyz/thoughts/Byzantine-Broadcast/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
@@ -4012,16 +4049,6 @@ Since I’ve started at Hootsuite, I have</description>
       
       <guid>https://jzhao.xyz/thoughts/language-development/</guid>
       <description>Approaches to study of language development  Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible &amp;ndash; this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG) Learnability approach: focuses on explaining the fact that language is acquired (i.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/Sidetree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Sidetree/</guid>
-      <description>Source Spec
-A &amp;lsquo;meta&amp;rsquo;/Layer 2 protocol that can be applied to any target trust layer to create a scalable DID method (batteries almost included)</description>
     </item>
     
     <item>

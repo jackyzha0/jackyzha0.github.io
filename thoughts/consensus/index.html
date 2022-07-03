@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Consensus</h1>
     <article>
       <p class="meta">
-          Last updated July 2, 2022
+          Last updated July 3, 2022
       </p>
       <ul class="tags">
     
@@ -731,6 +731,94 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -764,6 +852,7 @@ if (!doNotTrack) {
 <li>Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.</li>
 <li>Termination. Also known as progress, every node must eventually reach a decision.</li>
 </ol>
+<p>See also: <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a></p>
 <a href="#total-order-broadcast"><h3 id="total-order-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>Total order broadcast</h3></a>
 <blockquote>
 <p>Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value. Consensus in the context of <a href="/thoughts/message-broadcast#Total order broadcast" rel="noopener" class="internal-link" data-src="/thoughts/message-broadcast">total order broadcast</a> is on <em>what the next message to deliver is</em></p>
@@ -779,12 +868,12 @@ if (!doNotTrack) {
 </li>
 <li>Blockchain consensus models assume partially synchronous Byzantine <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></li>
 </ul>
-<p><a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> states that these consensus algorithms cannot assume an <em>asynchronous</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
+<p><a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> states that these consensus algorithms cannot assume an <em>asynchronous</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> without giving up either <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> or <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a>.</p>
 <a href="#state-machine-replication"><h3 id="state-machine-replication"><span class="hanchor" ariaLabel="Anchor"># </span>State Machine Replication</h3></a>
 <p>A subset of the algorithmic consensus problem about agreeing on the same state</p>
 <ol>
 <li>Consistency: all notes agree on the same history</li>
-<li>Liveness: every transaction submitted eventually added to all node&rsquo;s histories</li>
+<li><a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">Liveness</a>: every transaction submitted eventually added to all node&rsquo;s histories</li>
 </ol>
 <p>SMR can be reduced to <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">BB</a></p>
 <a href="#byzantine-agreement"><h3 id="byzantine-agreement"><span class="hanchor" ariaLabel="Anchor"># </span>Byzantine Agreement</h3></a>

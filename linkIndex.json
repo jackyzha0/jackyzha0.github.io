@@ -919,6 +919,33 @@
           "text": "NLP"
         }
       ],
+      "/thoughts/33-Impossibility-Result": [
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM result"
+        }
+      ],
       "/thoughts/A-City-is-not-a-Computer": [
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
@@ -2671,8 +2698,18 @@
         },
         {
           "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/safety",
+          "text": "Safety"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
           "target": "/thoughts/Transport-Layer",
           "text": "transport layer"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/safety",
+          "text": "Safety"
         },
         {
           "source": "/thoughts/Raft-Consensus-Algorithm",
@@ -2827,6 +2864,11 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/system-model",
+          "text": "system models"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Public-key-Infrastructure",
@@ -4311,6 +4353,11 @@
         },
         {
           "source": "/thoughts/consensus",
+          "target": "/thoughts/33-Impossibility-Result",
+          "text": "33% Impossibility Result"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
           "text": "system model"
         },
@@ -4333,6 +4380,21 @@
           "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
           "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/liveness",
+          "text": "Liveness"
         },
         {
           "source": "/thoughts/consensus",
@@ -6931,6 +6993,13 @@
           "text": "constructionism"
         }
       ],
+      "/thoughts/liveness": [
+        {
+          "source": "/thoughts/liveness",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        }
+      ],
       "/thoughts/local-first-software": [
         {
           "source": "/thoughts/local-first-software",
@@ -8224,6 +8293,18 @@
           "source": "/thoughts/right-to-be-forgotten",
           "target": "/thoughts/digital-permanence",
           "text": "digital permanence"
+        }
+      ],
+      "/thoughts/safety": [
+        {
+          "source": "/thoughts/safety",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/safety",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
         }
       ],
       "/thoughts/scientific-progress": [
@@ -9793,6 +9874,13 @@
           "source": "/thoughts/philosophy-of-mind",
           "target": "/tags/PHIL451A",
           "text": "(see all notes)"
+        }
+      ],
+      "/thoughts/33-Impossibility-Result": [
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/33-Impossibility-Result",
+          "text": "33% Impossibility Result"
         }
       ],
       "/thoughts/A-City-is-not-a-Computer": [
@@ -11447,6 +11535,11 @@
       ],
       "/thoughts/PSL-FLM-Impossibility-Result": [
         {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM result"
+        },
+        {
           "source": "/thoughts/Byzantine-Broadcast",
           "target": "/thoughts/PSL-FLM-Impossibility-Result",
           "text": "PSL-FLM Impossibility Result"
@@ -11602,6 +11695,11 @@
         }
       ],
       "/thoughts/Public-key-Infrastructure": [
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
         {
           "source": "/thoughts/Byzantine-Broadcast",
           "target": "/thoughts/Public-key-Infrastructure",
@@ -13860,6 +13958,16 @@
           "text": "distributed systems"
         },
         {
+          "source": "/thoughts/liveness",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/safety",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
           "source": "/thoughts/software-principles",
           "target": "/thoughts/distributed-systems",
           "text": "distributed systems"
@@ -16031,6 +16139,28 @@
           "text": "linguistic relativism"
         }
       ],
+      "/thoughts/liveness": [
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/liveness",
+          "text": "Liveness"
+        },
+        {
+          "source": "/thoughts/safety",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        }
+      ],
       "/thoughts/local-first-software": [
         {
           "source": "/thoughts/Rhizome-Proposal",
@@ -17544,6 +17674,28 @@
           "text": "right to be forgotten"
         }
       ],
+      "/thoughts/safety": [
+        {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/safety",
+          "text": "Safety"
+        },
+        {
+          "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/safety",
+          "text": "Safety"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        }
+      ],
       "/thoughts/search": [
         {
           "source": "/posts/networked-thought",
@@ -17885,6 +18037,11 @@
       ],
       "/thoughts/system-model": [
         {
+          "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
           "source": "/thoughts/FLP-Result",
           "target": "/thoughts/system-model",
           "text": "system model"
@@ -17893,6 +18050,11 @@
           "source": "/thoughts/PSL-FLM-Impossibility-Result",
           "target": "/thoughts/system-model",
           "text": "system model"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/system-model",
+          "text": "system models"
         },
         {
           "source": "/thoughts/consensus",
@@ -19671,6 +19833,31 @@
       "text": "NLP"
     },
     {
+      "source": "/thoughts/33-Impossibility-Result",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/33-Impossibility-Result",
+      "target": "/thoughts/safety",
+      "text": "safety"
+    },
+    {
+      "source": "/thoughts/33-Impossibility-Result",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
+    },
+    {
+      "source": "/thoughts/33-Impossibility-Result",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
+      "source": "/thoughts/33-Impossibility-Result",
+      "target": "/thoughts/PSL-FLM-Impossibility-Result",
+      "text": "PSL-FLM result"
+    },
+    {
       "source": "/thoughts/A-City-is-not-a-Computer",
       "target": "/thoughts/Internet",
       "text": "internet"
@@ -21257,8 +21444,18 @@
     },
     {
       "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/safety",
+      "text": "Safety"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
       "target": "/thoughts/Transport-Layer",
       "text": "transport layer"
+    },
+    {
+      "source": "/thoughts/Raft-Consensus-Algorithm",
+      "target": "/thoughts/safety",
+      "text": "Safety"
     },
     {
       "source": "/thoughts/Raft-Consensus-Algorithm",
@@ -21404,6 +21601,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/system-model",
+      "text": "system models"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -22767,6 +22969,11 @@
     },
     {
       "source": "/thoughts/consensus",
+      "target": "/thoughts/33-Impossibility-Result",
+      "text": "33% Impossibility Result"
+    },
+    {
+      "source": "/thoughts/consensus",
       "target": "/thoughts/system-model",
       "text": "system model"
     },
@@ -22789,6 +22996,21 @@
       "source": "/thoughts/consensus",
       "target": "/thoughts/system-model",
       "text": "system model"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/safety",
+      "text": "safety"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/liveness",
+      "text": "Liveness"
     },
     {
       "source": "/thoughts/consensus",
@@ -25201,6 +25423,11 @@
       "text": "constructionism"
     },
     {
+      "source": "/thoughts/liveness",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems"
+    },
+    {
       "source": "/thoughts/local-first-software",
       "target": "/thoughts/CRDT",
       "text": "CRDT"
@@ -26384,6 +26611,16 @@
       "source": "/thoughts/right-to-be-forgotten",
       "target": "/thoughts/digital-permanence",
       "text": "digital permanence"
+    },
+    {
+      "source": "/thoughts/safety",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems"
+    },
+    {
+      "source": "/thoughts/safety",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
     },
     {
       "source": "/thoughts/scientific-progress",

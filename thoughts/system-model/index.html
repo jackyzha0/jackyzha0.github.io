@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">System model</h1>
     <article>
       <p class="meta">
-          Last updated July 2, 2022
+          Last updated July 3, 2022
       </p>
       <ul class="tags">
     
@@ -480,6 +480,22 @@ if (!doNotTrack) {
     
 </ul>
 
+      
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#network-behaviour-eg-message-loss">Network behaviour (e.g. message loss)</a></li>
+        <li><a href="#node-behaviour-eg-crashes">Node behaviour (e.g. crashes)</a></li>
+        <li><a href="#timing-behaviour-eg-latency">Timing behaviour (e.g. latency)</a></li>
+        <li><a href="#identity-and-messages">Identity and Messages</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+      </aside>
       
       
 
@@ -539,7 +555,18 @@ if (!doNotTrack) {
 <a href="#timing-behaviour-eg-latency"><h3 id="timing-behaviour-eg-latency"><span class="hanchor" ariaLabel="Anchor"># </span>Timing behaviour (e.g. latency)</h3></a>
 <ul>
 <li>Synchronous: message latency no greater than a known upper bound</li>
-<li>Partially synchronous: asynchronous for some finite (but unknown, possibly arbitrarily large) periods of time, synchronous otherwise</li>
+<li>Partially synchronous: asynchronous for some finite (but unknown, possibly arbitrarily large) periods of time, synchronous otherwise
+<ul>
+<li>Like synchronous model, assumes a shared global clock with bounded drift $\Delta$</li>
+<li>There is an unknown transition point GST (global stabilization time) where the system goes from asynchronous to synchronous.
+<ul>
+<li>All messages sent in an asynchronous period $t \leq GST$ are delivered by time $GST + \Delta$</li>
+<li>All messages sent in the synchronous period $t \geq GST$ arrive by time $t + \Delta$</li>
+</ul>
+</li>
+<li>The key difference is that we can wait for a sufficiently long delay ($\Delta$) after the start of a round that if the network has reached synchrony you&rsquo;re guaranteed to receive all messages from all non-Byzantine nodes</li>
+</ul>
+</li>
 <li>Asynchronous: messages can be delayed arbitrarily, no timing guarantees</li>
 </ul>
 <a href="#identity-and-messages"><h3 id="identity-and-messages"><span class="hanchor" ariaLabel="Anchor"># </span>Identity and Messages</h3></a>
@@ -594,6 +621,20 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/33-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/FLP-Result/" data-ctx="system model" data-src="/thoughts/FLP-Result" class="internal-link">FLP Result</a>
       </li>
@@ -602,6 +643,12 @@ if (!doNotTrack) {
       
       <li>
         <a href="/thoughts/PSL-FLM-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/PSL-FLM-Impossibility-Result" class="internal-link">PSL-FLM Impossibility Result</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="system models" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       

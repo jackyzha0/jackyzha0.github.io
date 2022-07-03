@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Raft Consensus Algorithm</h1>
     <article>
       <p class="meta">
-          Last updated June 7, 2022
+          Last updated July 3, 2022
       </p>
       <ul class="tags">
     
@@ -519,6 +519,66 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -891,7 +951,7 @@ if (!doNotTrack) {
 <p>Generally, this is done using a log of actions that are <em>replicated</em> across all machines. Keeping this replicated log consistent between all the machines is the job of the <em>consensus algorithm</em>. They allow a collection of machines to agree on some shared state which still make sense even when there is latency or unavailability.</p>
 <p>In more formal language, consensus algorithms should typically have the following properties:</p>
 <ol>
-<li>Safety in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. <a href="/thoughts/fault-tolerance#Byzantine Faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
+<li><a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">Safety</a> in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. <a href="/thoughts/fault-tolerance#Byzantine Faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
 <li>Functional (available) as long as the majority of servers are operational and can communicate</li>
 <li>Latency resilient and does not depend on timing of messages to ensure consistency</li>
 </ol>
@@ -907,7 +967,7 @@ if (!doNotTrack) {
 <ol>
 <li>Leader election: how do we choose a new leader when an existing leader fails?</li>
 <li>Log replication: how does the leader accept new log entries from clients and replicate them across all the other machines?</li>
-<li>Safety: when is it safe to consider log entries as &lsquo;agreed upon&rsquo; and fully replicated across all machines?</li>
+<li><a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">Safety</a>: when is it safe to consider log entries as &lsquo;agreed upon&rsquo; and fully replicated across all machines?</li>
 </ol>
 <p>A server can only be in one of 3 states:</p>
 <ol>

@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]">
-    <title>Public-key Infrastructure</title>
+    <meta name="description" content="A promise in [[thoughts/distributed systems|distributed systems]] that claims that &ldquo;something good&rdquo; will eventually happen.">
+    <title>Liveness</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -469,7 +469,7 @@ if (!doNotTrack) {
   /
 </pre>
     
-    <h1 class="title">Public-key Infrastructure</h1>
+    <h1 class="title">Liveness</h1>
     <article>
       <p class="meta">
           Last updated July 3, 2022
@@ -517,12 +517,36 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
-<p>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a></p>
-<p>For example, it can help ensure that all peers in the network know each other&rsquo;s public keys (i.e. that public keys are&hellip; public knowledge)</p>
+
+<blockquote>
+<p>A promise in <a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a> that claims that &ldquo;something good&rdquo; will eventually happen. A system will never enter a state such that no progress cannot be made.</p>
+</blockquote>
+<p>One such example of a liveness property is <a href="/thoughts/consistency#Eventual Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">eventual consistency</a>.</p>
  
 
     </article>
@@ -559,25 +583,19 @@ if (!doNotTrack) {
       
       
       <li>
-        <a href="/thoughts/33-Impossibility-Result/" data-ctx="PKI" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
+        <a href="/thoughts/33-Impossibility-Result/" data-ctx="liveness" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/Byzantine-Broadcast/" data-ctx="PKI" data-src="/thoughts/Byzantine-Broadcast" class="internal-link">Byzantine Broadcast</a>
+        <a href="/thoughts/consensus/" data-ctx="Liveness" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/PSL-FLM-Impossibility-Result/" data-ctx="PKI" data-src="/thoughts/PSL-FLM-Impossibility-Result" class="internal-link">PSL-FLM Impossibility Result</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="PKI" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+        <a href="/thoughts/safety/" data-ctx="liveness" data-src="/thoughts/safety" class="internal-link">Safety</a>
       </li>
       
       
@@ -601,7 +619,7 @@ if (!doNotTrack) {
 <script>
 async function run() {
   const { index, links, content } = await fetchData
-  const curPage = "/thoughts/Public-key-Infrastructure"
+  const curPage = "/thoughts/liveness"
   const pathColors = [{"/moc":"#4388cc"}]
   let depth =  1 
 
