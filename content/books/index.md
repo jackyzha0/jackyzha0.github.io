@@ -14,7 +14,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Non-fiction
 * **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
-* **Seeing Like A State** by James C. Scott
 * **Creation: Life and How to Make it** by Steve Grand
 * **What Money Can't Buy** by Michael Sandel
 * **The Alignment Problem** by Brian Christian
@@ -23,10 +22,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
 
 ## Current
-* **The Book of Form and Emptiness** by Ruth Ozeki
+- **Tools for Conviviality** by Ivan Illich
+* **Seeing Like A State** by James C. Scott
 
 ## Past
 2022
+* **The Book of Form and Emptiness** by Ruth Ozeki
 * **Walden Two** by B. F. Skinner
 * **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
 * **Ghost Work** by Mary L. Gray and Siddharth Suri
@@ -57,7 +58,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### 2020
 * **Sapiens** by Yuval Noah Harari
 * **Measure What Matters** by John Doerr
-* **A Beautifully Foolish Endeavor** by Hank Green
+* **A Beautifully Foolish Endeavour** by Hank Green
 * **The Uninhabitable Earth** by David Wallace-Wells
-* **The Subtle Art of Not Giving a F*ck** by Mark Manson
+* **The Subtle Art of Not Giving a Fuck** by Mark Manson
 * **The Death of Ivan Ilyich** by Tolstoy

@@ -6,3 +6,7 @@ tags:
 ---
 
 Consensus in distributed systems **cannot be asynchronous** due to the FLP Result: there is no deterministic consensus algorithm that is guaranteed to terminate in an asynchronous crash-stop [[thoughts/system model|system model]]
+
+This holds even if $f = 1$
+
+This can somewhat be abated by randomized protocols [tk]

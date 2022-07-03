@@ -21,5 +21,9 @@ How do we capture assumptions in a system model for [[thoughts/distributed syste
 
 ### Timing behaviour (e.g. latency)
 - Synchronous: message latency no greater than a known upper bound
-- Partially synchronous: asynchronous for some finite (but unknown) periods of time, synchronous otherwise
+- Partially synchronous: asynchronous for some finite (but unknown, possibly arbitrarily large) periods of time, synchronous otherwise
 - Asynchronous: messages can be delayed arbitrarily, no timing guarantees
+
+### Identity and Messages
+- Authenticated: a Byzantine node cannot forge a message or change the contents of a received message before it relays the message to other nodes
+- Non-authenticated: nodes have no way of verifying the authenticity of a received message

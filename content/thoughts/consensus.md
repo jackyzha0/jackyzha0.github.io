@@ -25,7 +25,7 @@ There are four requirements to such an algorithm:
 3. Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.
 4. Termination. Also known as progress, every node must eventually reach a decision.
 
-### Distributed Systems
+### Total order broadcast
 > Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value. Consensus in the context of [[thoughts/message broadcast#Total order broadcast|total order broadcast]] is on *what the next message to deliver is*
 
 One way to do it is using a single leader, but what happens if the leader crashes/becomes unavailable? Manual failover: human operator chooses a new leader and reconfigures each node to use new leader, but this is non-ideal.
@@ -42,6 +42,13 @@ One way to do it is using a single leader, but what happens if the leader crashe
 A subset of the algorithmic consensus problem about agreeing on the same state
 
 1. Consistency: all notes agree on the same history
-2. Liveness: Every transaction submitted eventually added to all node's histories
+2. Liveness: every transaction submitted eventually added to all node's histories
 
 SMR can be reduced to [[thoughts/Byzantine Broadcast|BB]]
+
+### Byzantine Agreement
+Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
+
+Every node has a private input, there is no distinguished sender. 
+
+All non-Byzantine nodes need to agree on a single common value.
