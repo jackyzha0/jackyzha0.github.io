@@ -7,6 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Byzantine Broadcast</title>
+      <link>https://jzhao.xyz/thoughts/Byzantine-Broadcast/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Byzantine-Broadcast/</guid>
+      <description>In Byzantine broadcast (BB) or Byzantine reliable broadcast (BRB), there is a designated sender that sends its input value to all parties, and all non-[[thoughts/fault tolerance|faulty]] parties must deliver the same value.</description>
+    </item>
+    
+    <item>
+      <title>FLP Result</title>
+      <link>https://jzhao.xyz/thoughts/FLP-Result/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/FLP-Result/</guid>
+      <description>Consensus in distributed systems cannot be asynchronous due to the FLP Result: there is no deterministic consensus algorithm that is guaranteed to terminate in an asynchronous crash-stop [[thoughts/system model|system model]]</description>
+    </item>
+    
+    <item>
+      <title>PSL-FLM Impossibility Result</title>
+      <link>https://jzhao.xyz/thoughts/PSL-FLM-Impossibility-Result/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/PSL-FLM-Impossibility-Result/</guid>
+      <description>[[thoughts/Byzantine Broadcast|Byzantine Broadcast]] is impossible in the synchronous [[thoughts/system model|system model]] if you have too many byzantine nodes (for $f \geq \frac n 3$).</description>
+    </item>
+    
+    <item>
+      <title>Public-key Infrastructure</title>
+      <link>https://jzhao.xyz/thoughts/Public-key-Infrastructure/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Public-key-Infrastructure/</guid>
+      <description>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]</description>
+    </item>
+    
+    <item>
       <title>Morphology</title>
       <link>https://jzhao.xyz/thoughts/morphology/</link>
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>

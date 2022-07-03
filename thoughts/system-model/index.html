@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">System model</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated July 2, 2022
       </p>
       <ul class="tags">
     
@@ -532,15 +532,20 @@ if (!doNotTrack) {
 <a href="#node-behaviour-eg-crashes"><h3 id="node-behaviour-eg-crashes"><span class="hanchor" ariaLabel="Anchor"># </span>Node behaviour (e.g. crashes)</h3></a>
 <ul>
 <li>Crash-stop: node is faulty if it crashes. After it crashes, it stops executing forever</li>
-<li>Crash-recovery: node may crash at any moment, losing in-memory state. It may resume executing sometime later</li>
+<li>Crash-recovery: node may crash at any moment, losing in-memory state. It may resume executing sometime later (sometimes call omission fault)</li>
 <li>Byzantine: a node is faulty if it deviates from the algorithm. Faulty nodes may do anything, including crashing or malicious behaviour</li>
 <li>Correct: not faulty</li>
 </ul>
 <a href="#timing-behaviour-eg-latency"><h3 id="timing-behaviour-eg-latency"><span class="hanchor" ariaLabel="Anchor"># </span>Timing behaviour (e.g. latency)</h3></a>
 <ul>
 <li>Synchronous: message latency no greater than a known upper bound</li>
-<li>Partially synchronous: asynchronous for some finite (but unknown) periods of time, synchronous otherwise</li>
+<li>Partially synchronous: asynchronous for some finite (but unknown, possibly arbitrarily large) periods of time, synchronous otherwise</li>
 <li>Asynchronous: messages can be delayed arbitrarily, no timing guarantees</li>
+</ul>
+<a href="#identity-and-messages"><h3 id="identity-and-messages"><span class="hanchor" ariaLabel="Anchor"># </span>Identity and Messages</h3></a>
+<ul>
+<li>Authenticated: a Byzantine node cannot forge a message or change the contents of a received message before it relays the message to other nodes</li>
+<li>Non-authenticated: nodes have no way of verifying the authenticity of a received message</li>
 </ul>
  
 
@@ -579,6 +584,26 @@ if (!doNotTrack) {
       
       
     
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/FLP-Result/" data-ctx="system model" data-src="/thoughts/FLP-Result" class="internal-link">FLP Result</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/PSL-FLM-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/PSL-FLM-Impossibility-Result" class="internal-link">PSL-FLM Impossibility Result</a>
+      </li>
+      
       
       
       <li>

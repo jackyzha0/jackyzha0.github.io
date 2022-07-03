@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Clocks</h1>
     <article>
       <p class="meta">
-          Last updated June 15, 2022
+          Last updated July 1, 2022
       </p>
       <ul class="tags">
     
@@ -623,6 +623,7 @@ if (!doNotTrack) {
       
         
         
+        
       
     
   
@@ -724,7 +725,7 @@ if (!doNotTrack) {
 <li>On sending message $m$ from node $N_i$, <code>fn send(m) -&gt; tick(); actually_send(t, m)</code></li>
 <li>On receiving <code>fn receive(t', m) -&gt; t = zip(t, t').map(max); tick(); do_something(m)</code></li>
 </ul>
-<p>Thus, a vector timestamp of an event $e$ actually represents all of its <em><a class="internal-link broken">causal</a> dependencies</em>: ${ e } \cup {a | a \rightarrow e }$</p>
+<p>Thus, a vector timestamp of an event $e$ actually represents all of its <em><a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> dependencies</em>: ${ e } \cup {a | a \rightarrow e }$</p>
 <p>E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$</p>
 <p>Ordering</p>
 <ul>

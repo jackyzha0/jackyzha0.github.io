@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/Byzantine-Broadcast/</loc>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/FLP-Result/</loc>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/PSL-FLM-Impossibility-Result/</loc>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Public-key-Infrastructure/</loc>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/seed/</loc>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/fruit/</loc>
     <lastmod>2022-06-30T17:23:30-07:00</lastmod>
   </url><url>
@@ -23,20 +44,11 @@
     <loc>https://jzhao.xyz/thoughts/pragmatics/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/sociolinguistics/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/syntax/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/creative-writing/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
@@ -156,7 +168,7 @@
     <lastmod>2022-05-10T16:59:45-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/rhizome/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</loc>
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
@@ -165,7 +177,7 @@
     <lastmod>2022-05-05T19:05:58-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
-    <lastmod>2022-06-15T13:26:37-07:00</lastmod>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
     <lastmod>2022-05-05T17:55:36-04:00</lastmod>
@@ -192,16 +204,16 @@
     <lastmod>2022-05-05T19:04:17-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/system-model/</loc>
-    <lastmod>2022-05-05T19:04:17-04:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/distributed-systems/</loc>
     <lastmod>2022-05-14T11:48:19-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-06-30T17:23:30-07:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>
@@ -213,13 +225,13 @@
     <lastmod>2022-06-07T15:46:57-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/technical/</loc>
-    <lastmod>2022-06-07T15:46:57-07:00</lastmod>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Specification/</loc>
     <lastmod>2022-06-26T11:01:36-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/sapling/</loc>
-    <lastmod>2022-06-29T12:23:47-07:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</loc>
     <lastmod>2022-06-12T22:45:00-07:00</lastmod>
@@ -594,7 +606,7 @@
     <lastmod>2022-03-31T23:03:41-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Projects/</loc>
-    <lastmod>2022-06-06T15:43:21-07:00</lastmod>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Brains-in-a-Vat/</loc>
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
@@ -1032,7 +1044,7 @@
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consensus/</loc>
-    <lastmod>2022-05-05T19:04:17-04:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/proof-of-work/</loc>
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
@@ -1173,7 +1185,7 @@
     <lastmod>2022-04-18T14:41:54-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/fault-tolerance/</loc>
-    <lastmod>2022-06-07T15:46:57-07:00</lastmod>
+    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/creation-vs-maintenance/</loc>
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
@@ -1320,7 +1332,7 @@
     <lastmod>2022-06-15T15:10:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/books/</loc>
-    <lastmod>2022-06-09T13:10:10-07:00</lastmod>
+    <lastmod>2022-07-02T23:01:05-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/categories/</loc>
   </url><url>

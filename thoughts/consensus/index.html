@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Consensus</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated July 2, 2022
       </p>
       <ul class="tags">
     
@@ -485,9 +485,14 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#algorithmic-consensus">Algorithmic Consensus</a></li>
     <li><a href="#consensus-and-humming-in-the-ietf">Consensus and Humming in the IETF</a></li>
-    <li><a href="#distributed-systems">Distributed Systems</a></li>
+    <li><a href="#algorithmic-consensus">Algorithmic Consensus</a>
+      <ol>
+        <li><a href="#total-order-broadcast">Total order broadcast</a></li>
+        <li><a href="#state-machine-replication">State Machine Replication</a></li>
+        <li><a href="#byzantine-agreement">Byzantine Agreement</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
       </aside>
@@ -660,6 +665,72 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -675,14 +746,6 @@ if (!doNotTrack) {
 
 
 <a href="/thoughts/communities" rel="noopener" class="internal-link" data-src="/thoughts/communities">communities</a></p>
-<a href="#algorithmic-consensus"><h2 id="algorithmic-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Consensus</h2></a>
-<p>There are four requirements to such an algorithm:</p>
-<ol>
-<li>Validity. The result must be a value that was submitted by at least one of the processes. The consensus algorithm cannot just make up a value.</li>
-<li>Uniform agreement. All nodes must select the same value.</li>
-<li>Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.</li>
-<li>Termination. Also known as progress, every node must eventually reach a decision.</li>
-</ol>
 <a href="#consensus-and-humming-in-the-ietf"><h2 id="consensus-and-humming-in-the-ietf"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus and Humming in the IETF</h2></a>
 <p>
 
@@ -693,7 +756,15 @@ if (!doNotTrack) {
 <li>&ldquo;While counting heads might give a good guess as to what the rough consensus will be, doing so can allow important minority views to get lost in the noise. One of the strengths of a consensus model is that minority views are addressed, and using a rough consensus model should not take away from that.&rdquo;</li>
 <li>&ldquo;We can&rsquo;t know who the &ldquo;members&rdquo; of any given working group would be at any one time, and we certainly can&rsquo;t know who all of the &ldquo;members&rdquo; of the IETF would be: That&rsquo;s why we refer to &ldquo;participants&rdquo; in the IETF; the IETF doesn&rsquo;t really have &ldquo;members&rdquo;. Indeed, we often recruit additional implementers and other experts into working groups in order to ensure that broader views are brought into the discussion. So, voting is simply not practical.&rdquo;</li>
 </ul>
-<a href="#distributed-systems"><h2 id="distributed-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Systems</h2></a>
+<a href="#algorithmic-consensus"><h2 id="algorithmic-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Consensus</h2></a>
+<p>There are four requirements to such an algorithm:</p>
+<ol>
+<li>Validity. The result must be a value that was submitted by at least one of the processes. The consensus algorithm cannot just make up a value.</li>
+<li>Uniform agreement. All nodes must select the same value.</li>
+<li>Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.</li>
+<li>Termination. Also known as progress, every node must eventually reach a decision.</li>
+</ol>
+<a href="#total-order-broadcast"><h3 id="total-order-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>Total order broadcast</h3></a>
 <blockquote>
 <p>Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value. Consensus in the context of <a href="/thoughts/message-broadcast#Total order broadcast" rel="noopener" class="internal-link" data-src="/thoughts/message-broadcast">total order broadcast</a> is on <em>what the next message to deliver is</em></p>
 </blockquote>
@@ -708,7 +779,18 @@ if (!doNotTrack) {
 </li>
 <li>Blockchain consensus models assume partially synchronous Byzantine <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></li>
 </ul>
-<p>Consensus in distributed systems <strong>cannot be asynchronous</strong> due to the FLP Result: there is no deterministic consensus algorithm that is guaranteed to terminate in an asynchronous crash-stop <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></p>
+<p><a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> states that these consensus algorithms cannot assume an <em>asynchronous</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
+<a href="#state-machine-replication"><h3 id="state-machine-replication"><span class="hanchor" ariaLabel="Anchor"># </span>State Machine Replication</h3></a>
+<p>A subset of the algorithmic consensus problem about agreeing on the same state</p>
+<ol>
+<li>Consistency: all notes agree on the same history</li>
+<li>Liveness: every transaction submitted eventually added to all node&rsquo;s histories</li>
+</ol>
+<p>SMR can be reduced to <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">BB</a></p>
+<a href="#byzantine-agreement"><h3 id="byzantine-agreement"><span class="hanchor" ariaLabel="Anchor"># </span>Byzantine Agreement</h3></a>
+<p>Differs from <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a></p>
+<p>Every node has a private input, there is no distinguished sender.</p>
+<p>All non-Byzantine nodes need to agree on a single common value.</p>
  
 
     </article>

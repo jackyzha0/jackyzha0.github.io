@@ -1227,6 +1227,28 @@
           "text": "independent existence"
         }
       ],
+      "/thoughts/Byzantine-Broadcast": [
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/fault-tolerance",
+          "text": "faulty"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/signed-messages",
+          "text": "signature"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM Impossibility Result"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        }
+      ],
       "/thoughts/CRDT": [
         {
           "source": "/thoughts/CRDT",
@@ -1607,6 +1629,13 @@
           "source": "/thoughts/Extended-Mind-Hypothesis",
           "target": "/thoughts/language",
           "text": "language"
+        }
+      ],
+      "/thoughts/FLP-Result": [
+        {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
         }
       ],
       "/thoughts/FOAF": [
@@ -2441,6 +2470,33 @@
           "text": "Coraline Ada Ehmke"
         }
       ],
+      "/thoughts/PSL-FLM-Impossibility-Result": [
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        }
+      ],
       "/thoughts/Panpsychism": [
         {
           "source": "/thoughts/Panpsychism",
@@ -2567,11 +2623,6 @@
         },
         {
           "source": "/thoughts/Projects",
-          "target": "/thoughts/telescopic-text",
-          "text": "telescopic text"
-        },
-        {
-          "source": "/thoughts/Projects",
           "target": "/thoughts/peer-to-peer",
           "text": "P2P"
         },
@@ -2589,6 +2640,13 @@
           "source": "/thoughts/Projects",
           "target": "/thoughts/Internet",
           "text": "Internet"
+        }
+      ],
+      "/thoughts/Public-key-Infrastructure": [
+        {
+          "source": "/thoughts/Public-key-Infrastructure",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -2769,6 +2827,21 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CRDT",
@@ -3993,7 +4066,7 @@
         },
         {
           "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
+          "target": "/thoughts/causality",
           "text": "causal"
         }
       ],
@@ -4253,8 +4326,23 @@
         },
         {
           "source": "/thoughts/consensus",
+          "target": "/thoughts/FLP-Result",
+          "text": "FLP Result"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
           "text": "system model"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
         }
       ],
       "/thoughts/consistency": [
@@ -5187,6 +5275,11 @@
           "source": "/thoughts/fault-tolerance",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        },
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
         }
       ],
       "/thoughts/federation": [
@@ -9895,6 +9988,43 @@
           "text": "Buddhist"
         }
       ],
+      "/thoughts/Byzantine-Broadcast": [
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "BB"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
+        },
+        {
+          "source": "/thoughts/fault-tolerance",
+          "target": "/thoughts/Byzantine-Broadcast",
+          "text": "Byzantine Broadcast"
+        }
+      ],
       "/thoughts/CAP-Theorem": [
         {
           "source": "/thoughts/CouchDB",
@@ -10375,6 +10505,13 @@
           "source": "/thoughts/workflows",
           "target": "/thoughts/Extended-Mind-Hypothesis",
           "text": "the extended mind hypothesis"
+        }
+      ],
+      "/thoughts/FLP-Result": [
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/FLP-Result",
+          "text": "FLP Result"
         }
       ],
       "/thoughts/FOAF": [
@@ -11308,6 +11445,13 @@
           "text": "PHIL240A Final Paper"
         }
       ],
+      "/thoughts/PSL-FLM-Impossibility-Result": [
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM Impossibility Result"
+        }
+      ],
       "/thoughts/Panpsychism": [
         {
           "source": "/posts/primacy-of-consciousness",
@@ -11455,6 +11599,23 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/Protocol",
           "text": "protocol"
+        }
+      ],
+      "/thoughts/Public-key-Infrastructure": [
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -12383,6 +12544,11 @@
           "text": "blockchains"
         },
         {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/blockchain",
+          "text": "blockchains"
+        },
+        {
           "source": "/thoughts/Self-sovereign-Identity-SSI",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
@@ -12602,6 +12768,11 @@
           "source": "/thoughts/clocks",
           "target": "/thoughts/causality",
           "text": "causality"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/causality",
+          "text": "causal"
         },
         {
           "source": "/thoughts/consistency",
@@ -13868,6 +14039,11 @@
           "text": "encryption"
         },
         {
+          "source": "/thoughts/Public-key-Infrastructure",
+          "target": "/thoughts/encryption",
+          "text": "encryption"
+        },
+        {
           "source": "/thoughts/security",
           "target": "/thoughts/encryption",
           "text": "Encryption"
@@ -14149,6 +14325,11 @@
           "source": "/thoughts/Arweave",
           "target": "/thoughts/fault-tolerance",
           "text": "fault tolerant"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/fault-tolerance",
+          "text": "faulty"
         },
         {
           "source": "/thoughts/consensus",
@@ -16000,13 +16181,6 @@
           "text": "message broadcast"
         }
       ],
-      "/thoughts/message-ordering": [
-        {
-          "source": "/thoughts/clocks",
-          "target": "/thoughts/message-ordering",
-          "text": "causal"
-        }
-      ],
       "/thoughts/metalabel": [
         {
           "source": "/thoughts/Moving-Castles",
@@ -17507,6 +17681,11 @@
       ],
       "/thoughts/signed-messages": [
         {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/signed-messages",
+          "text": "signature"
+        },
+        {
           "source": "/thoughts/authorization",
           "target": "/thoughts/signed-messages",
           "text": "signed"
@@ -17706,6 +17885,16 @@
       ],
       "/thoughts/system-model": [
         {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
           "source": "/thoughts/consensus",
           "target": "/thoughts/system-model",
           "text": "system model"
@@ -17780,13 +17969,6 @@
           "source": "/thoughts/interaction-design",
           "target": "/thoughts/telerobotics",
           "text": "telerobotics"
-        }
-      ],
-      "/thoughts/telescopic-text": [
-        {
-          "source": "/thoughts/Projects",
-          "target": "/thoughts/telescopic-text",
-          "text": "telescopic text"
         }
       ],
       "/thoughts/terminology": [
@@ -19769,6 +19951,26 @@
       "text": "independent existence"
     },
     {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/fault-tolerance",
+      "text": "faulty"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/signed-messages",
+      "text": "signature"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/PSL-FLM-Impossibility-Result",
+      "text": "PSL-FLM Impossibility Result"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
       "source": "/thoughts/CRDT",
       "target": "/thoughts/causality",
       "text": "causal consistency"
@@ -20107,6 +20309,11 @@
       "source": "/thoughts/Extended-Mind-Hypothesis",
       "target": "/thoughts/language",
       "text": "language"
+    },
+    {
+      "source": "/thoughts/FLP-Result",
+      "target": "/thoughts/system-model",
+      "text": "system model"
     },
     {
       "source": "/thoughts/FOAF",
@@ -20869,6 +21076,31 @@
       "text": "Coraline Ada Ehmke"
     },
     {
+      "source": "/thoughts/PSL-FLM-Impossibility-Result",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "Byzantine Broadcast"
+    },
+    {
+      "source": "/thoughts/PSL-FLM-Impossibility-Result",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/PSL-FLM-Impossibility-Result",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
+      "source": "/thoughts/PSL-FLM-Impossibility-Result",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "BB"
+    },
+    {
+      "source": "/thoughts/PSL-FLM-Impossibility-Result",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "BB"
+    },
+    {
       "source": "/thoughts/Panpsychism",
       "target": "/thoughts/Materialism",
       "text": "Materialism"
@@ -20985,11 +21217,6 @@
     },
     {
       "source": "/thoughts/Projects",
-      "target": "/thoughts/telescopic-text",
-      "text": "telescopic text"
-    },
-    {
-      "source": "/thoughts/Projects",
       "target": "/thoughts/peer-to-peer",
       "text": "P2P"
     },
@@ -21007,6 +21234,11 @@
       "source": "/thoughts/Projects",
       "target": "/thoughts/Internet",
       "text": "Internet"
+    },
+    {
+      "source": "/thoughts/Public-key-Infrastructure",
+      "target": "/thoughts/encryption",
+      "text": "encryption"
     },
     {
       "source": "/thoughts/Putnams-Ant-Argument",
@@ -21172,6 +21404,21 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "BB"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/blockchain",
+      "text": "blockchains"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -22295,7 +22542,7 @@
     },
     {
       "source": "/thoughts/clocks",
-      "target": "/thoughts/message-ordering",
+      "target": "/thoughts/causality",
       "text": "causal"
     },
     {
@@ -22535,8 +22782,23 @@
     },
     {
       "source": "/thoughts/consensus",
+      "target": "/thoughts/FLP-Result",
+      "text": "FLP Result"
+    },
+    {
+      "source": "/thoughts/consensus",
       "target": "/thoughts/system-model",
       "text": "system model"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "BB"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "Byzantine Broadcast"
     },
     {
       "source": "/thoughts/consistency",
@@ -23397,6 +23659,11 @@
       "source": "/thoughts/fault-tolerance",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/fault-tolerance",
+      "target": "/thoughts/Byzantine-Broadcast",
+      "text": "Byzantine Broadcast"
     },
     {
       "source": "/thoughts/federation",

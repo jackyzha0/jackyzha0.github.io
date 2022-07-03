@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Fault Tolerance</h1>
     <article>
       <p class="meta">
-          Last updated June 7, 2022
+          Last updated July 1, 2022
       </p>
       <ul class="tags">
     
@@ -574,6 +574,28 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -601,9 +623,10 @@ if (!doNotTrack) {
 <p>A <strong>Byzantine fault</strong> is any fault presenting different symptoms to different observers. A <strong>Byzantine failure</strong> is the loss of a system service due to a Byzantine fault in systems that require 
 
 
-<a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> between notes.</p>
+<a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> between nodes.</p>
 <p>Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.</p>
 <p>&ldquo;Note that the PoW algorithm is not 100% tolerant to the Byzantine faults, but due to the and the underlying cryptographic techniques, PoW has proven to be one of the most secure and reliable implementations for blockchain networks.&rdquo;</p>
+<p>See also: <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a></p>
 <a href="#two-generals-problem"><h3 id="two-generals-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Two Generals Problem</h3></a>
 <p>This thought experiment meant to illustrate the pitfalls and design challenges of attempting to coordinate an action by communicating over an unreliable link. In the experiment, two generals are only able to communicate with one another by sending a messenger through enemy territory. The experiment asks how they might reach an agreement on the time to launch an attack, while knowing that any messenger they send could be captured. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying.</p>
 <p>Because acknowledgement of message receipt can be lost as easily as the original message, a potentially infinite series of messages is required to come to consensus.</p>
@@ -666,8 +689,18 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Arweave/" data-ctx="fault tolerant" data-src="/thoughts/Arweave" class="internal-link">Arweave</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Byzantine-Broadcast/" data-ctx="faulty" data-src="/thoughts/Byzantine-Broadcast" class="internal-link">Byzantine Broadcast</a>
       </li>
       
       
