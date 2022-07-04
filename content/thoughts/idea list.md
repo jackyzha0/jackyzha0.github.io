@@ -70,6 +70,7 @@ tags:
 		- https://thebrowser.company/
 	- misc
 		- https://shapefarm.net/
+		- https://kernel-mag.vercel.app/post/take-back-the-future
 	- 3d
 		- https://chartogne-taillet.com/en
 		- https://flowersforsociety.com/

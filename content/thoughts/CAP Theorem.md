@@ -7,9 +7,13 @@ tags:
 
 When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:
 
-1. **C**onsistency: a system operates fully or not at all, all nodes agree
+1. **C**onsistency: a system operates fully or not at all, all nodes agree (the system's behaviour is indistinguishable from a centralized system)
 2. **A**vailability: system is always able to answer a request
 3. **P**artition Tolerance: if data is distributed and some nodes fail, the whole system and continue to function
+
+One way to illustrate this is to imagine a set of clusters trying to agree on a value. There is a network partition between two groups of nodes in the cluster called A and B. They all initially have a value `x = 0`.  A client ever issues a command `x = 1` to a node `i` in A and sometime in the future, a client issues another command `return x`.
+1. If node `i` ever returns 1, this violates consistency as B cannot have heard of the update from A.
+2. If it only ever answers 0, this violates availability as `x = 1` was never appropriately set.
 
 ACID vs BASE
 - ACID stands for atomicity, consistency, isolation, durability

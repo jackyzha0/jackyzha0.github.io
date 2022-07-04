@@ -9,4 +9,7 @@ Consensus in distributed systems **cannot be asynchronous** due to the FLP Resul
 
 This holds even if $f = 1$
 
+Similar to tradeoffs made in the [[thoughts/CAP Theorem|CAP Theorem]], when under attack, we need to choose between [[thoughts/safety|safety]]/consistency and [[thoughts/liveness|liveness]]/availability
+
 This can somewhat be abated by randomized protocols [tk]
+

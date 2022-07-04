@@ -8,7 +8,7 @@ tags:
 
 "Shaun, you're doing that thing again. Staring into some far off land. Hurry up loopyhead, figure out what you wanna get."
 
-A fog seemed to lift from Shaun's brain and she realized she had been staring at the menu for a while.
+A fog seemed to lift from Shaun's brain and he realized he had been staring at the menu for a while.
 
 "Same as usual I guess. Deluxe Burger, hold the fries. I just want the coke."
 
