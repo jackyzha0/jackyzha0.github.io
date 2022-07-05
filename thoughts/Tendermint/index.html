@@ -3,8 +3,8 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Source: An artist in Crypto by Wendi Yan and in discussion with Wendi">
-    <title>Art</title>
+    <meta name="description" content="Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.">
+    <title>Tendermint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
 
@@ -462,21 +462,21 @@ if (!doNotTrack) {
 </div>
   </header>
     
-    <pre class="ascii ascii-dark">
-     <span class="ascii-secondary">*</span> _ 
-<span class="ascii-secondary">*</span>_<span class="ascii-secondary">#</span>  \/
-  \._/<span class="ascii-secondary">#</span>
-  //        
+    <pre class="ascii ascii-secondary">
+
+ .
+  \_.
+  /
 </pre>
     
-    <h1 class="title">Art</h1>
+    <h1 class="title">Tendermint</h1>
     <article>
       <p class="meta">
-          Last updated February 15, 2022
+          Last updated July 5, 2022
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
 
@@ -485,11 +485,9 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
-    <li><a href="#on-crypto-art">On Crypto Art</a>
-      <ol>
-        <li><a href="#art-as-entertainment">Art as entertainment</a></li>
-      </ol>
-    </li>
+    <li><a href="#pseudocode">Pseudocode</a></li>
+    <li><a href="#proof-of-consistency">Proof of consistency</a></li>
+    <li><a href="#proof-of-liveness">Proof of liveness</a></li>
   </ol>
 </nav>
       </aside>
@@ -508,36 +506,251 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
-<p>
 
-<a href="https://reboothq.substack.com/p/crypto-artists" rel="noopener">Source: An artist in Crypto by <em>Wendi Yan</em></a> and in discussion with Wendi</p>
-<p>What makes something “art” comes from its <em>intention</em>. How did the artist create the work? What is the personal experience or historical question their art responds to? Or did they seek to evoke certain emotions through their work?</p>
-<p>In this sense, art is a form of derivative 
-
-
-<a href="/thoughts/intentionality" rel="noopener" class="internal-link" data-src="/thoughts/intentionality">intentionality</a> where the artist imparts it into the work. Is generative art still art? I still think so. You just have a fancier paintbrush.</p>
-<blockquote>
-<p>True art doesn’t care to be appreciated, obsessed over with, or owned. It holds a certain self-respect that knows enough of its own value to not plea for attention.</p>
-</blockquote>
-<p>True art is like a gift. They should not be explicitly marked with a monetary value. They should not be used as holds of value to be predicted and sold. &ldquo;If art is important to you, you want to hold onto it, instead of trading it with others.&rdquo;</p>
-<a href="#on-crypto-art"><h2 id="on-crypto-art"><span class="hanchor" ariaLabel="Anchor"># </span>On Crypto Art</h2></a>
-<p>Has a lot of money in it right now but most (keyword: most) of the &lsquo;value&rsquo; derived is from speculation and not necessarily new ways of exploring the medium or good/interesting art.</p>
-<p>Yet, this new form of &lsquo;art&rsquo; still carries the burden of its past. Crypto art still has not solved the curation problem. There is so much art (just take a look at open sea). How does one ensure their art is discovered, other than pleading to the whims of Twitter and to constantly blast their work in hopes that someone will pay 
-
-
-<a href="/thoughts/attention-economy" rel="noopener" class="internal-link" data-src="/thoughts/attention-economy">attention</a>?</p>
-<a href="#art-as-entertainment"><h3 id="art-as-entertainment"><span class="hanchor" ariaLabel="Anchor"># </span>Art as entertainment</h3></a>
-<blockquote>
-<p>Most of what the crypto world calls art is entertainment. They snatch your attention. They care more about making a tweet or a headline declaring they SOLD OUT, they set a HISTORICAL RECORD, and they tell you this is the art’s value.</p>
-</blockquote>
-<p>Situated at the top of the 
-
-
-<a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">pace layers</a>, true art should be much lower.</p>
+<p>Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.</p>
+<p>A <a href="/thoughts/consensus#State Machine Replication" rel="noopener" class="internal-link" data-src="/thoughts/consensus">state machine replication</a> protocol that, when $f &lt; \frac n 3$, satisfies always <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a> and eventually satisfies <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> (under the presence of an attack)</p>
+<p>High-level ideas:</p>
+<ol>
+<li>Iterated single-shot consensus (something that looks like <a href="/thoughts/consensus#Byzantine Agreement" rel="noopener" class="internal-link" data-src="/thoughts/consensus">Byzantine Agreement</a>) where the output of each single-shot consensus instance outputs a block (ordered list of transactions)
+<ul>
+<li>Each node maintains it&rsquo;s own height (which block it is currently working on) and ignores all messages about other heights</li>
+</ul>
+</li>
+<li>For a fixed height, keep proposing + voting until agreement is reached</li>
+<li>Two stages of voting as different nodes may see different voting schemes</li>
+</ol>
+<p>We assume <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> and a shared global <a href="/thoughts/clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">clock</a>. A round is $4 \Delta$ timesteps, leaders are rotated once per round.</p>
+<p>Quorum certificate (QC) Lemma: a collection of a supermajority ($\geq \frac 2 3$) of votes for a block $B$ in a particular round at some height $h$ and some stage $s$. Any two QCs overlap in at least one honest node as $overlap \geq n - \frac 1 3 n - \frac 1 3 n &gt; f$ and thus any two QCs must support the same block $B$.</p>
+<p>Each node maintains a ($B_i$, $QC_i$) and periodically updates these variables block-QC pair it&rsquo;s heard about.</p>
+<a href="#pseudocode"><h2 id="pseudocode"><span class="hanchor" ariaLabel="Anchor"># </span>Pseudocode</h2></a>
+<p>Assume a specific height $h$ and round $r$ with leader $l$. We split each round into 4 phases ($t = 4 \Delta r$).</p>
+<ol>
+<li>$t = 4 \Delta r$:
+<ol>
+<li>$l$ updates $(B_l,QC_l)$ to most recent QC known</li>
+<li>broadcast $(B_l, Q_l)$ signed by $l$ to all other nodes</li>
+</ol>
+</li>
+<li>$t = 4\Delta r + \Delta$:
+<ol>
+<li>honest node $i$ will ignore the proposal if it seems out of date ($QC_l$ seems behind $QC_i$)</li>
+<li>if node $i$ receives $(B_l, QC_l)$ from $l$ and it is up to date
+<ol>
+<li>broadcast first-stage vote for $vote_1(B_l)$</li>
+<li>update $(B_i, Q_i) := (B_l, Q_l)$</li>
+<li>broadcast $(B_l, Q_l)$ signed by $i$</li>
+</ol>
+</li>
+<li>else, do nothing</li>
+</ol>
+</li>
+<li>$t = 4 \Delta r + 2\Delta$:
+<ol>
+<li>if node $i$ receives $\geq \frac 2 3 n$ round-$r$ stage-1 votes (supermajority) for block $B$,
+<ol>
+<li>if this occurs, all possible QCs must all support the same block (by QC overlap property)</li>
+<li>assemble QC from supermajority of votes</li>
+<li>set $QC_i := QC_\textrm{assembed}$, $B_i := B$</li>
+<li>after witnessing a conclusive winner to the first stage, we broadcast second stage vote for $vote_2(B_i)$</li>
+<li>broadcast $(B_i, QC_i)$ signed by $i$</li>
+</ol>
+</li>
+<li>else, do nothing</li>
+</ol>
+</li>
+<li>$t = 4\Delta + 3 \Delta$:
+<ol>
+<li>if node $i$ receives $\geq \frac 2 3 n$ round-$r$ stage-2 votes for block $B$,
+<ol>
+<li>set $QC_i := QC_\textrm{assembed}$, $B_i := B$</li>
+<li>commit $B$ to local history</li>
+<li>broadcast $(B_i, QC_i)$ signed by $i$</li>
+</ol>
+</li>
+<li>else, do nothing</li>
+</ol>
+</li>
+<li>$t = 4 \Delta + 4 \Delta$ (just before round $r + 1$):
+<ol>
+<li>If we have heard of a stage-2 QC for block $h_i$ supporting block B
+<ol>
+<li>commit $B$ to local history</li>
+</ol>
+</li>
+<li>else, do nothing</li>
+</ol>
+</li>
+</ol>
+<p>In the background,</p>
+<ul>
+<li>All honest nodes store all QCs received for future blocks $h_i + 1, h_i + 2, \dots$</li>
+</ul>
+<a href="#proof-of-consistency"><h2 id="proof-of-consistency"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of consistency</h2></a>
+<p>Definition of <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a>: For a given block number, all honest nodes commit the same block.</p>
+<p>Proof:</p>
+<ol>
+<li>Fix a height $h$.</li>
+<li>Let $r$ be the first round in which $&gt; \frac n 3$ honest nodes (set $S$) cast stage-2 votes for some block $B^*$. $r$ is the first round in which a stage-2 QC could have been created.</li>
+<li></li>
+</ol>
+<a href="#proof-of-liveness"><h2 id="proof-of-liveness"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of liveness</h2></a>
  
 
     </article>
@@ -553,20 +766,10 @@ if (!doNotTrack) {
     
     
     
+    <li>
+        No backlinks found
+    </li>
     
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/thoughts/writing/" data-ctx="art" data-src="/thoughts/writing" class="internal-link">Writing</a>
-      </li>
-      
-      
-      
 </ul>
 
     </div>
@@ -586,7 +789,7 @@ if (!doNotTrack) {
 <script>
 async function run() {
   const { index, links, content } = await fetchData
-  const curPage = "/thoughts/art"
+  const curPage = "/thoughts/Tendermint"
   const pathColors = [{"/moc":"#4388cc"}]
   let depth =  1 
 

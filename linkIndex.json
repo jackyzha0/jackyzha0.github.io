@@ -1663,6 +1663,21 @@
           "source": "/thoughts/FLP-Result",
           "target": "/thoughts/system-model",
           "text": "system model"
+        },
+        {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/CAP-Theorem",
+          "text": "CAP Theorem"
+        },
+        {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
         }
       ],
       "/thoughts/FOAF": [
@@ -3255,6 +3270,33 @@
           "source": "/thoughts/TCP",
           "target": "/thoughts/Transport-Layer",
           "text": "Transport layer protocol"
+        }
+      ],
+      "/thoughts/Tendermint": [
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/clocks",
+          "text": "clock"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
         }
       ],
       "/thoughts/The-Dragon-and-the-bridge": [
@@ -9438,6 +9480,11 @@
           "source": "/thoughts/writing",
           "target": "/thoughts/context",
           "text": "contexts"
+        },
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/art",
+          "text": "art"
         }
       ],
       "/thoughts/zero-sum": [
@@ -10116,6 +10163,11 @@
       "/thoughts/CAP-Theorem": [
         {
           "source": "/thoughts/CouchDB",
+          "target": "/thoughts/CAP-Theorem",
+          "text": "CAP Theorem"
+        },
+        {
+          "source": "/thoughts/FLP-Result",
           "target": "/thoughts/CAP-Theorem",
           "text": "CAP Theorem"
         }
@@ -11714,6 +11766,11 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Public-key-Infrastructure",
           "text": "PKI"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -12392,6 +12449,13 @@
           "text": "aperture problem"
         }
       ],
+      "/thoughts/art": [
+        {
+          "source": "/thoughts/writing",
+          "target": "/thoughts/art",
+          "text": "art"
+        }
+      ],
       "/thoughts/attention-economy": [
         {
           "source": "/newsletters/issue-4",
@@ -12974,6 +13038,11 @@
           "text": "logical clock"
         },
         {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/clocks",
+          "text": "clock"
+        },
+        {
           "source": "/thoughts/distributed-systems",
           "target": "/thoughts/clocks",
           "text": "Physical and Logical Time"
@@ -13243,6 +13312,16 @@
         }
       ],
       "/thoughts/consistency": [
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
         {
           "source": "/thoughts/distributed-systems",
           "target": "/thoughts/consistency",
@@ -16146,6 +16225,16 @@
           "text": "liveness"
         },
         {
+          "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
           "source": "/thoughts/consensus",
           "target": "/thoughts/liveness",
           "text": "liveness"
@@ -17677,6 +17766,11 @@
       "/thoughts/safety": [
         {
           "source": "/thoughts/33-Impossibility-Result",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/FLP-Result",
           "target": "/thoughts/safety",
           "text": "safety"
         },
@@ -20503,6 +20597,21 @@
       "text": "system model"
     },
     {
+      "source": "/thoughts/FLP-Result",
+      "target": "/thoughts/CAP-Theorem",
+      "text": "CAP Theorem"
+    },
+    {
+      "source": "/thoughts/FLP-Result",
+      "target": "/thoughts/safety",
+      "text": "safety"
+    },
+    {
+      "source": "/thoughts/FLP-Result",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
+    },
+    {
       "source": "/thoughts/FOAF",
       "target": "/thoughts/RDF",
       "text": "RDF"
@@ -21971,6 +22080,31 @@
       "source": "/thoughts/TCP",
       "target": "/thoughts/Transport-Layer",
       "text": "Transport layer protocol"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/consistency",
+      "text": "consistency"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/clocks",
+      "text": "clock"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/consistency",
+      "text": "consistency"
     },
     {
       "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -27676,6 +27810,11 @@
       "source": "/thoughts/writing",
       "target": "/thoughts/context",
       "text": "contexts"
+    },
+    {
+      "source": "/thoughts/writing",
+      "target": "/thoughts/art",
+      "text": "art"
     },
     {
       "source": "/thoughts/zero-sum",

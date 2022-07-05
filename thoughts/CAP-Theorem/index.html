@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">CAP Theorem</h1>
     <article>
       <p class="meta">
-          Last updated April 26, 2022
+          Last updated July 4, 2022
       </p>
       <ul class="tags">
     
@@ -501,9 +501,14 @@ if (!doNotTrack) {
 
 <p>When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:</p>
 <ol>
-<li><strong>C</strong>onsistency: a system operates fully or not at all, all nodes agree</li>
+<li><strong>C</strong>onsistency: a system operates fully or not at all, all nodes agree (the system&rsquo;s behaviour is indistinguishable from a centralized system)</li>
 <li><strong>A</strong>vailability: system is always able to answer a request</li>
 <li><strong>P</strong>artition Tolerance: if data is distributed and some nodes fail, the whole system and continue to function</li>
+</ol>
+<p>One way to illustrate this is to imagine a set of clusters trying to agree on a value. There is a network partition between two groups of nodes in the cluster called A and B. They all initially have a value <code>x = 0</code>.  A client ever issues a command <code>x = 1</code> to a node <code>i</code> in A and sometime in the future, a client issues another command <code>return x</code>.</p>
+<ol>
+<li>If node <code>i</code> ever returns 1, this violates consistency as B cannot have heard of the update from A.</li>
+<li>If it only ever answers 0, this violates availability as <code>x = 1</code> was never appropriately set.</li>
 </ol>
 <p>ACID vs BASE</p>
 <ul>
@@ -544,8 +549,18 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/CouchDB/" data-ctx="CAP Theorem" data-src="/thoughts/CouchDB" class="internal-link">CouchDB</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/FLP-Result/" data-ctx="CAP Theorem" data-src="/thoughts/FLP-Result" class="internal-link">FLP Result</a>
       </li>
       
       
