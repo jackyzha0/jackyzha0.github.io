@@ -1165,6 +1165,18 @@
           "text": "fiction"
         }
       ],
+      "/thoughts/Arcosanti": [
+        {
+          "source": "/thoughts/Arcosanti",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counter-cultural movements of \"back to the land\""
+        },
+        {
+          "source": "/thoughts/Arcosanti",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        }
+      ],
       "/thoughts/Arweave": [
         {
           "source": "/thoughts/Arweave",
@@ -1259,6 +1271,41 @@
           "source": "/thoughts/Byzantine-Broadcast",
           "target": "/thoughts/fault-tolerance",
           "text": "faulty"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/FLP-Result",
+          "text": "FLP Result"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
         },
         {
           "source": "/thoughts/Byzantine-Broadcast",
@@ -2881,6 +2928,16 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/system-model",
           "text": "system models"
         },
@@ -3275,6 +3332,11 @@
       "/thoughts/Tendermint": [
         {
           "source": "/thoughts/Tendermint",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Tendermint",
           "target": "/thoughts/consistency",
           "text": "consistency"
         },
@@ -3297,6 +3359,11 @@
           "source": "/thoughts/Tendermint",
           "target": "/thoughts/consistency",
           "text": "consistency"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
         }
       ],
       "/thoughts/The-Dragon-and-the-bridge": [
@@ -4056,11 +4123,6 @@
         },
         {
           "source": "/thoughts/blockchain",
-          "target": "/thoughts/digital-permanence",
-          "text": "digital permanence"
-        },
-        {
-          "source": "/thoughts/blockchain",
           "target": "/thoughts/truth",
           "text": "truth"
         }
@@ -4395,43 +4457,33 @@
         },
         {
           "source": "/thoughts/consensus",
-          "target": "/thoughts/33-Impossibility-Result",
-          "text": "33% Impossibility Result"
+          "target": "/thoughts/consistency",
+          "text": "consistency"
         },
         {
           "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
+          "target": "/thoughts/consistency",
+          "text": "consistency"
         },
         {
           "source": "/thoughts/consensus",
-          "target": "/thoughts/Raft-Consensus-Algorithm",
-          "text": "Raft"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/FLP-Result",
-          "text": "FLP Result"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/safety",
-          "text": "safety"
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
         },
         {
           "source": "/thoughts/consensus",
           "target": "/thoughts/liveness",
           "text": "liveness"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
         },
         {
           "source": "/thoughts/consensus",
@@ -4441,7 +4493,7 @@
         {
           "source": "/thoughts/consensus",
           "target": "/thoughts/Byzantine-Broadcast",
-          "text": "BB"
+          "text": "Byzantine Broadcast"
         },
         {
           "source": "/thoughts/consensus",
@@ -7054,6 +7106,13 @@
           "text": "CRDTs"
         }
       ],
+      "/thoughts/longest-chain-consensus": [
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        }
+      ],
       "/thoughts/longevity": [
         {
           "source": "/thoughts/longevity",
@@ -7185,6 +7244,53 @@
           "source": "/thoughts/maintenance",
           "target": "/thoughts/infrastructure",
           "text": "infrastructure"
+        }
+      ],
+      "/thoughts/math": [
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/boundary-object",
+          "text": "boundary object"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/posts/new-words",
+          "text": "word meaning"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/semantics",
+          "text": "semantics"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/FLP-Result",
+          "text": "FLP"
         }
       ],
       "/thoughts/meaning": [
@@ -9068,13 +9174,8 @@
       "/thoughts/urban-planning": [
         {
           "source": "/thoughts/urban-planning",
-          "target": "/thoughts/From-Counterculture-to-Cyberculture",
-          "text": "counter-cultural movements of \"back to the land\""
-        },
-        {
-          "source": "/thoughts/urban-planning",
-          "target": "/thoughts/morphology",
-          "text": "morphology"
+          "target": "/thoughts/Arcosanti",
+          "text": "Arcosanti"
         },
         {
           "source": "/thoughts/urban-planning",
@@ -9829,6 +9930,11 @@
           "source": "/thoughts/language",
           "target": "/posts/new-words",
           "text": "New Words"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/posts/new-words",
+          "text": "word meaning"
         }
       ],
       "/posts/nothing-stops": [
@@ -9921,13 +10027,6 @@
           "source": "/thoughts/philosophy-of-mind",
           "target": "/tags/PHIL451A",
           "text": "(see all notes)"
-        }
-      ],
-      "/thoughts/33-Impossibility-Result": [
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/33-Impossibility-Result",
-          "text": "33% Impossibility Result"
         }
       ],
       "/thoughts/A-City-is-not-a-Computer": [
@@ -10035,6 +10134,13 @@
           "source": "/books",
           "target": "/thoughts/Archipelago",
           "text": "Archipelago"
+        }
+      ],
+      "/thoughts/Arcosanti": [
+        {
+          "source": "/thoughts/urban-planning",
+          "target": "/thoughts/Arcosanti",
+          "text": "Arcosanti"
         }
       ],
       "/thoughts/Arweave": [
@@ -10147,7 +10253,7 @@
         {
           "source": "/thoughts/consensus",
           "target": "/thoughts/Byzantine-Broadcast",
-          "text": "BB"
+          "text": "Byzantine Broadcast"
         },
         {
           "source": "/thoughts/consensus",
@@ -10649,9 +10755,14 @@
       ],
       "/thoughts/FLP-Result": [
         {
-          "source": "/thoughts/consensus",
+          "source": "/thoughts/Byzantine-Broadcast",
           "target": "/thoughts/FLP-Result",
           "text": "FLP Result"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/FLP-Result",
+          "text": "FLP"
         }
       ],
       "/thoughts/FOAF": [
@@ -10700,6 +10811,11 @@
           "text": "Fred Turner"
         },
         {
+          "source": "/thoughts/Arcosanti",
+          "target": "/thoughts/From-Counterculture-to-Cyberculture",
+          "text": "counter-cultural movements of \"back to the land\""
+        },
+        {
           "source": "/thoughts/Internet",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "counterculture"
@@ -10738,11 +10854,6 @@
           "source": "/thoughts/tribe-flourishing",
           "target": "/thoughts/From-Counterculture-to-Cyberculture",
           "text": "FCTC"
-        },
-        {
-          "source": "/thoughts/urban-planning",
-          "target": "/thoughts/From-Counterculture-to-Cyberculture",
-          "text": "counter-cultural movements of \"back to the land\""
         }
       ],
       "/thoughts/Galls-law": [
@@ -11595,6 +11706,11 @@
           "source": "/thoughts/Byzantine-Broadcast",
           "target": "/thoughts/PSL-FLM-Impossibility-Result",
           "text": "PSL-FLM Impossibility Result"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/PSL-FLM-Impossibility-Result",
+          "text": "PSL-FLM"
         }
       ],
       "/thoughts/Panpsychism": [
@@ -11851,6 +11967,11 @@
       ],
       "/thoughts/Raft-Consensus-Algorithm": [
         {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
           "source": "/thoughts/Matrix",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
@@ -11891,7 +12012,17 @@
           "text": "Raft"
         },
         {
-          "source": "/thoughts/consensus",
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/Tendermint",
+          "target": "/thoughts/Raft-Consensus-Algorithm",
+          "text": "Raft"
+        },
+        {
+          "source": "/thoughts/math",
           "target": "/thoughts/Raft-Consensus-Algorithm",
           "text": "Raft"
         },
@@ -12105,6 +12236,23 @@
           "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/TCP",
           "text": "TCP"
+        }
+      ],
+      "/thoughts/Tendermint": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/Tendermint",
+          "text": "Tendermint"
         }
       ],
       "/thoughts/The-Grasshopper": [
@@ -12667,6 +12815,11 @@
           "text": "Bitcoin"
         },
         {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/bitcoin",
+          "text": "Bitcoin"
+        },
+        {
           "source": "/thoughts/peer-to-peer",
           "target": "/thoughts/bitcoin",
           "text": "Bitcoin"
@@ -12801,6 +12954,11 @@
           "source": "/thoughts/epistemic-authority",
           "target": "/thoughts/boundary-object",
           "text": "boundary people"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/boundary-object",
+          "text": "boundary object"
         },
         {
           "source": "/thoughts/play",
@@ -13291,6 +13449,11 @@
           "text": "consensus"
         },
         {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
           "source": "/thoughts/money",
           "target": "/thoughts/consensus",
           "text": "Consensus"
@@ -13319,6 +13482,16 @@
         },
         {
           "source": "/thoughts/Tendermint",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
+        {
+          "source": "/thoughts/consensus",
+          "target": "/thoughts/consistency",
+          "text": "consistency"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/consistency",
           "text": "consistency"
         },
@@ -13715,6 +13888,11 @@
           "text": "decentralization"
         },
         {
+          "source": "/thoughts/math",
+          "target": "/thoughts/decentralization",
+          "text": "decentralization"
+        },
+        {
           "source": "/thoughts/money",
           "target": "/thoughts/decentralization",
           "text": "decentralization"
@@ -14000,11 +14178,6 @@
           "text": "digital permanence"
         },
         {
-          "source": "/thoughts/blockchain",
-          "target": "/thoughts/digital-permanence",
-          "text": "digital permanence"
-        },
-        {
           "source": "/thoughts/ephemereal-content",
           "target": "/thoughts/digital-permanence",
           "text": "digital permanence"
@@ -14038,6 +14211,11 @@
         },
         {
           "source": "/thoughts/liveness",
+          "target": "/thoughts/distributed-systems",
+          "text": "distributed systems"
+        },
+        {
+          "source": "/thoughts/math",
           "target": "/thoughts/distributed-systems",
           "text": "distributed systems"
         },
@@ -14417,6 +14595,11 @@
         },
         {
           "source": "/thoughts/blockchain",
+          "target": "/thoughts/ethereum",
+          "text": "Ethereum"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/ethereum",
           "text": "Ethereum"
         },
@@ -16225,7 +16408,17 @@
           "text": "liveness"
         },
         {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
           "source": "/thoughts/FLP-Result",
+          "target": "/thoughts/liveness",
+          "text": "liveness"
+        },
+        {
+          "source": "/thoughts/Tendermint",
           "target": "/thoughts/liveness",
           "text": "liveness"
         },
@@ -16521,6 +16714,11 @@
       ],
       "/thoughts/morphology": [
         {
+          "source": "/thoughts/Arcosanti",
+          "target": "/thoughts/morphology",
+          "text": "morphology"
+        },
+        {
           "source": "/thoughts/language",
           "target": "/thoughts/morphology",
           "text": "morphology"
@@ -16532,11 +16730,6 @@
         },
         {
           "source": "/thoughts/sociolinguistics",
-          "target": "/thoughts/morphology",
-          "text": "morphology"
-        },
-        {
-          "source": "/thoughts/urban-planning",
           "target": "/thoughts/morphology",
           "text": "morphology"
         }
@@ -17770,6 +17963,11 @@
           "text": "safety"
         },
         {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/safety",
+          "text": "safety"
+        },
+        {
           "source": "/thoughts/FLP-Result",
           "target": "/thoughts/safety",
           "text": "safety"
@@ -17783,11 +17981,6 @@
           "source": "/thoughts/Raft-Consensus-Algorithm",
           "target": "/thoughts/safety",
           "text": "Safety"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/safety",
-          "text": "safety"
         }
       ],
       "/thoughts/search": [
@@ -17913,6 +18106,11 @@
           "source": "/thoughts/language",
           "target": "/thoughts/semantics",
           "text": "Semantics"
+        },
+        {
+          "source": "/thoughts/math",
+          "target": "/thoughts/semantics",
+          "text": "semantics"
         },
         {
           "source": "/thoughts/meaning",
@@ -18136,6 +18334,21 @@
           "text": "system model"
         },
         {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Byzantine-Broadcast",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
           "source": "/thoughts/FLP-Result",
           "target": "/thoughts/system-model",
           "text": "system model"
@@ -18149,21 +18362,6 @@
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/system-model",
           "text": "system models"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
-        },
-        {
-          "source": "/thoughts/consensus",
-          "target": "/thoughts/system-model",
-          "text": "system model"
         },
         {
           "source": "/thoughts/consistency",
@@ -20157,6 +20355,16 @@
       "text": "fiction"
     },
     {
+      "source": "/thoughts/Arcosanti",
+      "target": "/thoughts/From-Counterculture-to-Cyberculture",
+      "text": "counter-cultural movements of \"back to the land\""
+    },
+    {
+      "source": "/thoughts/Arcosanti",
+      "target": "/thoughts/morphology",
+      "text": "morphology"
+    },
+    {
       "source": "/thoughts/Arweave",
       "target": "/thoughts/blockchain",
       "text": "blockchain"
@@ -20235,6 +20443,41 @@
       "source": "/thoughts/Byzantine-Broadcast",
       "target": "/thoughts/fault-tolerance",
       "text": "faulty"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/FLP-Result",
+      "text": "FLP Result"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/safety",
+      "text": "safety"
+    },
+    {
+      "source": "/thoughts/Byzantine-Broadcast",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
     },
     {
       "source": "/thoughts/Byzantine-Broadcast",
@@ -21713,6 +21956,16 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Tendermint",
+      "text": "Tendermint"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/system-model",
       "text": "system models"
     },
@@ -22083,6 +22336,11 @@
     },
     {
       "source": "/thoughts/Tendermint",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/Tendermint",
       "target": "/thoughts/consistency",
       "text": "consistency"
     },
@@ -22105,6 +22363,11 @@
       "source": "/thoughts/Tendermint",
       "target": "/thoughts/consistency",
       "text": "consistency"
+    },
+    {
+      "source": "/thoughts/Tendermint",
+      "target": "/thoughts/liveness",
+      "text": "liveness"
     },
     {
       "source": "/thoughts/The-Dragon-and-the-bridge",
@@ -22798,11 +23061,6 @@
     },
     {
       "source": "/thoughts/blockchain",
-      "target": "/thoughts/digital-permanence",
-      "text": "digital permanence"
-    },
-    {
-      "source": "/thoughts/blockchain",
       "target": "/thoughts/truth",
       "text": "truth"
     },
@@ -23103,43 +23361,33 @@
     },
     {
       "source": "/thoughts/consensus",
-      "target": "/thoughts/33-Impossibility-Result",
-      "text": "33% Impossibility Result"
+      "target": "/thoughts/consistency",
+      "text": "consistency"
     },
     {
       "source": "/thoughts/consensus",
-      "target": "/thoughts/system-model",
-      "text": "system model"
+      "target": "/thoughts/consistency",
+      "text": "consistency"
     },
     {
       "source": "/thoughts/consensus",
-      "target": "/thoughts/Raft-Consensus-Algorithm",
-      "text": "Raft"
-    },
-    {
-      "source": "/thoughts/consensus",
-      "target": "/thoughts/system-model",
-      "text": "system model"
-    },
-    {
-      "source": "/thoughts/consensus",
-      "target": "/thoughts/FLP-Result",
-      "text": "FLP Result"
-    },
-    {
-      "source": "/thoughts/consensus",
-      "target": "/thoughts/system-model",
-      "text": "system model"
-    },
-    {
-      "source": "/thoughts/consensus",
-      "target": "/thoughts/safety",
-      "text": "safety"
+      "target": "/thoughts/Tendermint",
+      "text": "Tendermint"
     },
     {
       "source": "/thoughts/consensus",
       "target": "/thoughts/liveness",
       "text": "liveness"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/bitcoin",
+      "text": "Bitcoin"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/ethereum",
+      "text": "Ethereum"
     },
     {
       "source": "/thoughts/consensus",
@@ -23149,7 +23397,7 @@
     {
       "source": "/thoughts/consensus",
       "target": "/thoughts/Byzantine-Broadcast",
-      "text": "BB"
+      "text": "Byzantine Broadcast"
     },
     {
       "source": "/thoughts/consensus",
@@ -25572,6 +25820,11 @@
       "text": "CRDTs"
     },
     {
+      "source": "/thoughts/longest-chain-consensus",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
+    },
+    {
       "source": "/thoughts/longevity",
       "target": "/thoughts/life",
       "text": "life"
@@ -25695,6 +25948,51 @@
       "source": "/thoughts/maintenance",
       "target": "/thoughts/infrastructure",
       "text": "infrastructure"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/boundary-object",
+      "text": "boundary object"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/distributed-systems",
+      "text": "distributed systems"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/decentralization",
+      "text": "decentralization"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/posts/new-words",
+      "text": "word meaning"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/semantics",
+      "text": "semantics"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/Raft-Consensus-Algorithm",
+      "text": "Raft"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/Tendermint",
+      "text": "Tendermint"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/PSL-FLM-Impossibility-Result",
+      "text": "PSL-FLM"
+    },
+    {
+      "source": "/thoughts/math",
+      "target": "/thoughts/FLP-Result",
+      "text": "FLP"
     },
     {
       "source": "/thoughts/meaning",
@@ -27418,13 +27716,8 @@
     },
     {
       "source": "/thoughts/urban-planning",
-      "target": "/thoughts/From-Counterculture-to-Cyberculture",
-      "text": "counter-cultural movements of \"back to the land\""
-    },
-    {
-      "source": "/thoughts/urban-planning",
-      "target": "/thoughts/morphology",
-      "text": "morphology"
+      "target": "/thoughts/Arcosanti",
+      "text": "Arcosanti"
     },
     {
       "source": "/thoughts/urban-planning",

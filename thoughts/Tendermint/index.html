@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.">
+    <meta name="description" content="Tendermint is most useful as an analog of Paxos/[[thoughts/Raft Consensus Algorithm|Raft]] but in a multi-stakeholder, or otherwise more adversarial, setting.">
     <title>Tendermint</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Tendermint</h1>
     <article>
       <p class="meta">
-          Last updated July 5, 2022
+          Last updated July 6, 2022
       </p>
       <ul class="tags">
     
@@ -485,6 +485,12 @@ if (!doNotTrack) {
           <h3>Table of Contents</h3>
           <nav id="TableOfContents">
   <ol>
+    <li><a href="#properties">Properties</a>
+      <ol>
+        <li><a href="#quorum-certificate-qc-lemma">Quorum Certificate (QC) Lemma</a></li>
+        <li><a href="#state">State</a></li>
+      </ol>
+    </li>
     <li><a href="#pseudocode">Pseudocode</a></li>
     <li><a href="#proof-of-consistency">Proof of consistency</a></li>
     <li><a href="#proof-of-liveness">Proof of liveness</a></li>
@@ -660,25 +666,92 @@ if (!doNotTrack) {
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
+
+<blockquote>
+<p>Tendermint is most useful as an analog of Paxos/<a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> but in a multi-stakeholder, or otherwise more adversarial, setting. However, the performance may not be as high due to the overhead of cryptographic operations</p>
+</blockquote>
 <p>Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.</p>
 <p>A <a href="/thoughts/consensus#State Machine Replication" rel="noopener" class="internal-link" data-src="/thoughts/consensus">state machine replication</a> protocol that, when $f &lt; \frac n 3$, satisfies always <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a> and eventually satisfies <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> (under the presence of an attack)</p>
 <p>High-level ideas:</p>
 <ol>
-<li>Iterated single-shot consensus (something that looks like <a href="/thoughts/consensus#Byzantine Agreement" rel="noopener" class="internal-link" data-src="/thoughts/consensus">Byzantine Agreement</a>) where the output of each single-shot consensus instance outputs a block (ordered list of transactions)
-<ul>
-<li>Each node maintains it&rsquo;s own height (which block it is currently working on) and ignores all messages about other heights</li>
-</ul>
-</li>
+<li>Iterated single-shot consensus (something that looks like <a href="/thoughts/consensus#Byzantine Agreement" rel="noopener" class="internal-link" data-src="/thoughts/consensus">Byzantine Agreement</a>) where the output of each single-shot consensus instance outputs a block (ordered list of transactions)</li>
 <li>For a fixed height, keep proposing + voting until agreement is reached</li>
 <li>Two stages of voting as different nodes may see different voting schemes</li>
 </ol>
 <p>We assume <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> and a shared global <a href="/thoughts/clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">clock</a>. A round is $4 \Delta$ timesteps, leaders are rotated once per round.</p>
-<p>Quorum certificate (QC) Lemma: a collection of a supermajority ($\geq \frac 2 3$) of votes for a block $B$ in a particular round at some height $h$ and some stage $s$. Any two QCs overlap in at least one honest node as $overlap \geq n - \frac 1 3 n - \frac 1 3 n &gt; f$ and thus any two QCs must support the same block $B$.</p>
-<p>Each node maintains a ($B_i$, $QC_i$) and periodically updates these variables block-QC pair it&rsquo;s heard about.</p>
+<a href="#properties"><h2 id="properties"><span class="hanchor" ariaLabel="Anchor"># </span>Properties</h2></a>
+<a href="#quorum-certificate-qc-lemma"><h3 id="quorum-certificate-qc-lemma"><span class="hanchor" ariaLabel="Anchor"># </span>Quorum Certificate (QC) Lemma</h3></a>
+<p>A collection of a supermajority ($\geq \frac 2 3$) of votes for a block $B$ in a particular round at some height $h$ and some stage $s$. Any two QCs overlap in at least one honest node as $overlap \geq n - \frac 1 3 n - \frac 1 3 n &gt; f$ and thus any two QCs must support the same block $B$.</p>
+<p><img src="/thoughts/images/tendermint proof of consistency.png" title="/thoughts/images/tendermint proof of consistency.png"></p>
+<a href="#state"><h3 id="state"><span class="hanchor" ariaLabel="Anchor"># </span>State</h3></a>
+<ul>
+<li>Each node maintains a ($B_i$, $QC_i$) and periodically updates these variables block-QC pair it&rsquo;s heard about</li>
+<li>Each node also keeps a local append-only data structure for blocks considered &lsquo;delivered&rsquo;</li>
+<li>Each node maintains it&rsquo;s own height (which block it is currently working on) and ignores all messages about other heights</li>
+</ul>
 <a href="#pseudocode"><h2 id="pseudocode"><span class="hanchor" ariaLabel="Anchor"># </span>Pseudocode</h2></a>
 <p>Assume a specific height $h$ and round $r$ with leader $l$. We split each round into 4 phases ($t = 4 \Delta r$).</p>
 <ol>
@@ -715,19 +788,20 @@ if (!doNotTrack) {
 <li>else, do nothing</li>
 </ol>
 </li>
-<li>$t = 4\Delta + 3 \Delta$:
+<li>$t = 4\Delta r + 3 \Delta$:
 <ol>
 <li>if node $i$ receives $\geq \frac 2 3 n$ round-$r$ stage-2 votes for block $B$,
 <ol>
 <li>set $QC_i := QC_\textrm{assembed}$, $B_i := B$</li>
 <li>commit $B$ to local history</li>
 <li>broadcast $(B_i, QC_i)$ signed by $i$</li>
+<li>increment $h_i$, re-initialize $B_i$ and $QC_i$ to null</li>
 </ol>
 </li>
 <li>else, do nothing</li>
 </ol>
 </li>
-<li>$t = 4 \Delta + 4 \Delta$ (just before round $r + 1$):
+<li>$t = 4 \Delta r + 4 \Delta$ (just before round $r + 1$):
 <ol>
 <li>If we have heard of a stage-2 QC for block $h_i$ supporting block B
 <ol>
@@ -743,14 +817,47 @@ if (!doNotTrack) {
 <li>All honest nodes store all QCs received for future blocks $h_i + 1, h_i + 2, \dots$</li>
 </ul>
 <a href="#proof-of-consistency"><h2 id="proof-of-consistency"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of consistency</h2></a>
-<p>Definition of <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a>: For a given block number, all honest nodes commit the same block.</p>
-<p>Proof:</p>
+<p>Definition of <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a>: For a given block number, all honest nodes commit the same block $B^*$.</p>
+<p>This seems pretty obvious from the QC lemma but we can formalize this through proof by induction:</p>
+<p>Assumptions</p>
 <ol>
 <li>Fix a height $h$.</li>
 <li>Let $r$ be the first round in which $&gt; \frac n 3$ honest nodes (set $S$) cast stage-2 votes for some block $B^*$. $r$ is the first round in which a stage-2 QC could have been created.</li>
-<li></li>
 </ol>
+<p>Induction: at the end of round $r$</p>
+<ul>
+<li>we know $B_i = B^*$, $\forall i \in S$</li>
+<li>current $QC_i$ is from round-$r$ stage-1 or later</li>
+<li>all QCs for other blocks are from round $r - 1$ or earlier</li>
+</ul>
+<p>These properties remain to be held in round $r + 1$ given they hold in round $r$ as no nodes of $S$ change their mind.</p>
 <a href="#proof-of-liveness"><h2 id="proof-of-liveness"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of liveness</h2></a>
+<p>Definition of <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a>: if a transaction $T$ is known by all honest nodes, then it will get added to all of their local histories.</p>
+<p>Note: this is a weaker definition of liveness than usual for SMR which states that if a single honest node knows about a transaction, then all honest nodes will eventually add that transaction to their local histories.</p>
+<p>We define a <strong>clean</strong> round when</p>
+<ol>
+<li>we are post-GST</li>
+<li>there is an honest leader</li>
+<li>all honest nodes are working on the same block number</li>
+</ol>
+<p>Proofs:</p>
+<ul>
+<li>Fast forward to pair of $r_1$, $r_2$ consecutive rounds after $GST + \Delta$ with honest leaders $l_1$, $l_2$ (this must be true for $f &lt; \frac n 3$)</li>
+<li>Lemma: at the start of round $r_1$, every honest node is working on either block $h$ or $h+1$
+<ul>
+<li>True because of the broadcast of a stage-2 QC at the end of $t = 4\Delta (r - 1) + 3 \Delta$, and all nodes should pick this up by $t = 4 \Delta r + 3 \Delta$ and be working on at least $h$</li>
+<li>Nodes could possibly be split between working on $h$ and $h + 1$ if a Byzantine node keeps secret a stage-2 QC for $h$ and selectively forward it to honest nodes.</li>
+</ul>
+</li>
+<li>Lemma: if there is a clean round, all honest nodes commit the block proposed by the leader
+<ul>
+<li>By part 2 in assumption of clean round, after the update in the first phase, the leader&rsquo;s QC is at least as recent as any other honest nodes.</li>
+<li>As we are post-GST, vote request will arrive at each node for $4 \Delta r + \Delta$ where they all broadcast stage-1 votes for $B_l$ and have their local variable updated.</li>
+<li>Nodes assemble super majority for $B_l$ and can create a QC&hellip; same argument for stage-2 votes</li>
+<li>All nodes then commit $B_l$ to their local history</li>
+</ul>
+</li>
+</ul>
  
 
     </article>
@@ -766,10 +873,40 @@ if (!doNotTrack) {
     
     
     
-    <li>
-        No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Tendermint" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/consensus/" data-ctx="Tendermint" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/math/" data-ctx="Tendermint" data-src="/thoughts/math" class="internal-link">Math</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

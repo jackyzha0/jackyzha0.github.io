@@ -7,6 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arcosanti</title>
+      <link>https://jzhao.xyz/thoughts/Arcosanti/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Arcosanti/</guid>
+      <description>A provocative concept of a compact city designed not around roads and cars but around people.</description>
+    </item>
+    
+    <item>
+      <title>Longest-chain consensus</title>
+      <link>https://jzhao.xyz/thoughts/longest-chain-consensus/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/longest-chain-consensus/</guid>
+      <description>See also: [[thoughts/consensus|consensus]]</description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://jzhao.xyz/thoughts/math/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/math/</guid>
+      <description>Three pillars of Math
+ Definitions: so you know what you&amp;rsquo;re talking about, the communicate ideas to others, [[thoughts/boundary object|boundary object]].</description>
+    </item>
+    
+    <item>
       <title>33% Impossibility Result</title>
       <link>https://jzhao.xyz/thoughts/33-Impossibility-Result/</link>
       <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
@@ -49,7 +77,7 @@ A &amp;lsquo;meta&amp;rsquo;/Layer 2 protocol that can be applied to any target 
       <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Tendermint/</guid>
-      <description>Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.</description>
+      <description>Tendermint is most useful as an analog of Paxos/[[thoughts/Raft Consensus Algorithm|Raft]] but in a multi-stakeholder, or otherwise more adversarial, setting.</description>
     </item>
     
     <item>
@@ -2893,7 +2921,7 @@ Interesting approach to taking a negative-space approach to defining values: the
       
       <guid>https://jzhao.xyz/thoughts/blockchain/</guid>
       <description>Source: A Primer to Web3
-The universal message bus.</description>
+The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network.</description>
     </item>
     
     <item>
@@ -3790,7 +3818,8 @@ Partly works because we can utilize collaborative thinking.</description>
       <pubDate>Wed, 16 Jun 2021 08:59:23 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/urban-planning/</guid>
-      <description>Arcosanti A provocative concept of a compact city designed not around roads and cars but around people.</description>
+      <description>See also: [[thoughts/Arcosanti|Arcosanti]]
+Notes from A people-centric smart city for racial justice  cities are the backbone and hope of social change either great benefit but also digital cages of surveillance and control what is the role of cities in the post-pandemic phase?</description>
     </item>
     
     <item>
