@@ -9,7 +9,21 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
-### July 2-3rd
+### July 6th
+- Holy shit [Morgan](https://twitter.com/morgallant), [Aadil](https://twitter.com/aadillpickle), [David](https://twitter.com/TheDavidZhou), and [JZ](https://twitter.com/jzlegion) just sponsored me for ~$400/mo + $1.5k one time for this research project and ... I am genuinely just speechless??
+	- It's just so wild to me that this little project that I’ve just felt so strongly about because of reasons that still seem to evade words is something that other people are interested in seeing come to life too.
+	- It feels like this project is a mountain I've set my sights on hiking for the longest time. And for a while I was hiking it alone, appreciating the scenery and the path but the path was lonely. But now I can hear the singing and laughing of my friends as people cheer and join along for the journey and it feels just a bit more manageable.
+	- The generosity of these friends (shoutout to MFC and Anson) means that paying the next two months of rent and food isn't something constantly nagging at the back of my mind :')
+- There were many points this summer I was fully ready to give up (see: plenty of mental breakdowns below) and stop trying because I questioned whether this was worth doing -- if I should just stop and get an actual job
+	- I felt really silly for asking people to help financially on a project that I sometimes had trouble believing in too.
+	- So thank you for your trust, thank you for dreaming with me
+
+![???](thoughts/images/IMG_1805.png)
+
+### July 5th
+- Finalizing notes on [[thoughts/Tendermint|Tendermint]] and wondering if I should switch out [[thoughts/Raft Consensus Algorithm|Raft]] for it. How valuable is [[thoughts/fault tolerance#Byzantine Faults|BFT]] anyways? Do we assume nodes are prone to potentially malicious takeover?
+
+### July 2-4th
 - An 'aha' moment caught in 4k... watch me try to figure out why asynchronous and partially synchronous [[thoughts/system model|system models]] aren't the same thing (s/o Sebastien for being so kind and patient). This was super satisfying! ![[thoughts/images/on-async-partially-sync-models.png]]
 
 ### July 1st
@@ -28,7 +42,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - Finally wrapped up school! Anson is headed back to Arizona today too :((
 	- Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I'm really glad I chose to prioritize relationship, truly some moments over the past month where I was like "wow, is this real". It feels like I'm selectively giving deep attention in-turn to the things I care most about.
 	- Now is the era to just fully focus my attention on research and this project though
-- I think this finally means that the vast majority of my waking hours will be on research. Uninstalled a game I was spending way too much time playing.. it is grind time!!
+- I think this finally means that the vast majority of my waking hours will be on research. Uninstalled a game I was spending way too much time playing :')' it is grind time
 
 ### June 27-28th
 - Nearing the end of my literature review era. Still need to go through Braid/Redwood, SSB, Yjs, and Hypercore inner-workings.

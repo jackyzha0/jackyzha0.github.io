@@ -3,6 +3,8 @@ title: "Fault Tolerance"
 date: 2021-06-23T15:14:28-04:00
 tags:
 - sapling
+aliases:
+- BFT
 ---
 
 How do we defend against attacks in [[thoughts/distributed systems|distributed systems]] with no central authority? We want the system as a whole to continue working, even when some parts are faulty
@@ -20,8 +22,6 @@ Sources: [Byzantine Faults on *Wikipedia*](https://en.wikipedia.org/wiki/Byzanti
 A **Byzantine fault** is any fault presenting different symptoms to different observers. A **Byzantine failure** is the loss of a system service due to a Byzantine fault in systems that require [consensus](thoughts/consensus.md) between nodes.
 
 Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.
-
-"Note that the PoW algorithm is not 100% tolerant to the Byzantine faults, but due to the and the underlying cryptographic techniques, PoW has proven to be one of the most secure and reliable implementations for blockchain networks."
 
 See also: [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
 

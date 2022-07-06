@@ -7,9 +7,7 @@ tags:
 
 [Source: A Primer to Web3](https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58)
 
-The universal message bus.
-
-An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md), [[thoughts/Solana|Solana]], and [Ethereum](thoughts/ethereum.md).
+The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md), [[thoughts/Solana|Solana]], and [Ethereum](thoughts/ethereum.md).
 
 Like symbolic systems, meaning needs to be derived through [intentionality](thoughts/intentionality.md). Run into problems of agreement on meaning of symbols and the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
 
@@ -19,13 +17,13 @@ Characteristics:
 3. Immutable: A completed transaction can never be changed or hidden. This gives us **provenance of assets** (you can determine any asset's entire history as long as all transactions happen on-chain)
 4. [Decentralized](thoughts/decentralization.md): communal consensus rather than one party's decisions determines access/update to the chain
 
-On a technical level, blockchain is just a distributed linked list.
+On a technical level, blockchain is just a linked list that is replicated.
 
 Each block contains the hash of the previous block header and the [Merkle root](https://www.investopedia.com/terms/m/merkle-tree.asp) representing the hash of all the transactions in that block.
 
 Transactions happen as follows:
 1. A transaction is initiated
-2. Data is packaged into a bolck
+2. Data is packaged into a block
 3. Block is sent to members of the chain
 4. Consensus and approval by rest of network (either [proof of work](thoughts/proof%20of%20work.md) or [proof of stake](thoughts/proof%20of%20stake.md))
 5. Block is added to chain
@@ -39,9 +37,6 @@ After going through a bunch of Kernel modules, Austin came upon a name for the c
 "The "new world" seems to look very similar to the old. i.e. *isn't a DAO just voting on how to donate money, which we could do today?*"
 
 In actuality, the *layer* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
-
-## Permanence
-Also just leans heavily in the direction of [digital permanence](thoughts/digital%20permanence.md)
 
 ## Data
 [Source: Ethereal Dreamers by *Kernel*](https://kernel.community/en/learn/module-1/promise-blockchains)

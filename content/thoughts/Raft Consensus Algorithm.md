@@ -4,6 +4,8 @@ date: 2022-05-01
 tags:
 - seed
 - technical
+aliases:
+- Raft
 ---
 
 > An understandable [[thoughts/consensus|consensus]] algorithm.

@@ -25,20 +25,17 @@ There are four requirements to such an algorithm:
 3. Integrity. A node can select only a single value. That is, a node cannot announce one outcome and later change its mind.
 4. Termination. Also known as progress, every node must eventually reach a decision.
 
-See also: [[thoughts/33% Impossibility Result|33% Impossibility Result]]
-
-### Total order broadcast
-> Consensus is traditionally formulated as several nodes needing to come to an agreement about a single value. Consensus in the context of [[thoughts/message broadcast#Total order broadcast|total order broadcast]] is on *what the next message to deliver is*
-
-One way to do it is using a single leader, but what happens if the leader crashes/becomes unavailable? Manual failover: human operator chooses a new leader and reconfigures each node to use new leader, but this is non-ideal.
-
-- Common consensus algorithms (all assume partially synchronous, crash-recovery [[thoughts/system model|system model]])
-	- Paxos: single-value consensus
-	- Multi-Paxos: generalization to [[thoughts/message broadcast#Total order broadcast|total order broadcast]]
-	- [[thoughts/Raft Consensus Algorithm|Raft]], Viewstamped Replication, Zab: [[thoughts/message broadcast#Total order broadcast|total order broadcast]] by default
-- Blockchain consensus models assume partially synchronous Byzantine [[thoughts/system model|system model]]
-
-[[thoughts/FLP Result|FLP Result]] states that these consensus algorithms cannot assume an *asynchronous* [[thoughts/system model|system model]] without giving up either [[thoughts/safety|safety]] or [[thoughts/liveness|liveness]].
+There are two main protocol paradigms for achieving consensus in the presence of Byzantine nodes:
+1. [[thoughts/fault tolerance#Byzantine Faults|BFT]]-type protocols
+	1. typically use multiple rounds of voting to ensure [[thoughts/consistency|consistency]]
+	2. favour [[thoughts/consistency|consistency]] in the face of an attack (assuming <33% Byzantine as per)
+	3. very difficult to resolve forks in-protocol (Tendermint literally says to communicate out-of-band to resolve this lol)
+	4. includes [[thoughts/Tendermint|Tendermint]]
+3. longest-chain protocols
+	1. embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct
+	2. favour [[thoughts/liveness|liveness]] in the face of an attack
+	3. at risk of potentially large chain reorganizations and double-spend attacks
+	4. includes [[thoughts/bitcoin|Bitcoin]], [[thoughts/ethereum|Ethereum]]
 
 ### State Machine Replication
 A subset of the algorithmic consensus problem about agreeing on the same state
@@ -46,7 +43,7 @@ A subset of the algorithmic consensus problem about agreeing on the same state
 1. Consistency: all notes agree on the same history
 2. [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node's histories
 
-SMR can be reduced to [[thoughts/Byzantine Broadcast|BB]]
+SMR can be reduced to [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
 
 ### Byzantine Agreement
 Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]

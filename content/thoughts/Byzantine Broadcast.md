@@ -9,6 +9,16 @@ aliases:
 
 In Byzantine broadcast (BB) or Byzantine reliable broadcast (BRB), there is a designated sender that sends its input value to all parties, and all non-[[thoughts/fault tolerance|faulty]] parties must deliver the same value.
 
+One way to do it is using a single leader, but what happens if the leader crashes/becomes unavailable? Manual failover: human operator chooses a new leader and reconfigures each node to use new leader, but this is non-ideal.
+
+- Common consensus algorithms (all assume partially synchronous, crash-recovery [[thoughts/system model|system model]])
+	- Paxos: single-value consensus
+	- Multi-Paxos: generalization to [[thoughts/message broadcast#Total order broadcast|total order broadcast]]
+	- [[thoughts/Raft Consensus Algorithm|Raft]], Viewstamped Replication, Zab: [[thoughts/message broadcast#Total order broadcast|total order broadcast]] by default
+- Blockchain consensus models assume partially synchronous Byzantine [[thoughts/system model|system model]]
+
+[[thoughts/FLP Result|FLP Result]] states that these consensus algorithms cannot assume an *asynchronous* [[thoughts/system model|system model]] without giving up either [[thoughts/safety|safety]] or [[thoughts/liveness|liveness]].
+
 Assumptions:
 1. Honest users all output a message if the leader is honest (termination)
 2. Honest users never output different messages (consistency)
