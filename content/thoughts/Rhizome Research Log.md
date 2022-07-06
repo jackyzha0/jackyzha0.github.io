@@ -10,7 +10,7 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## July
 ### July 6th
-- Holy shit [Morgan](https://twitter.com/morgallant), [Aadil](https://twitter.com/aadillpickle), [David](https://twitter.com/TheDavidZhou), and [JZ](https://twitter.com/jzlegion) just sponsored me for ~$400/mo + $1.5k one time for this research project and ... I am genuinely just speechless??
+- Holy shit [Morgan](https://twitter.com/morgallant), [Aadil](https://twitter.com/aadillpickle), [David](https://twitter.com/TheDavidZhou), and [JZ](https://twitter.com/jzlegion) just sponsored me for ~$400/mo for this research project and ... I am genuinely just speechless??
 	- It's just so wild to me that this little project that I’ve just felt so strongly about because of reasons that still seem to evade words is something that other people are interested in seeing come to life too.
 	- It feels like this project is a mountain I've set my sights on hiking for the longest time. And for a while I was hiking it alone, appreciating the scenery and the path but the path was lonely. But now I can hear the singing and laughing of my friends as people cheer and join along for the journey and it feels just a bit more manageable.
 	- The generosity of these friends (shoutout to MFC and Anson) means that paying the next two months of rent and food isn't something constantly nagging at the back of my mind :')
