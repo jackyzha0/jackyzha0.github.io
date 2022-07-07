@@ -2928,6 +2928,11 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Tendermint",
           "text": "Tendermint"
         },
@@ -7111,6 +7116,26 @@
           "source": "/thoughts/longest-chain-consensus",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/proof-of-work",
+          "text": "PoW"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/proof-of-stake",
+          "text": "PoS"
         }
       ],
       "/thoughts/longevity": [
@@ -11887,6 +11912,11 @@
           "source": "/thoughts/Tendermint",
           "target": "/thoughts/Public-key-Infrastructure",
           "text": "PKI"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/Public-key-Infrastructure",
+          "text": "PKI"
         }
       ],
       "/thoughts/Putnams-Ant-Argument": [
@@ -13425,6 +13455,11 @@
         },
         {
           "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/consensus",
           "text": "consensus"
         },
@@ -17508,6 +17543,11 @@
           "text": "proof of stake"
         },
         {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/proof-of-stake",
+          "text": "PoS"
+        },
+        {
           "source": "/thoughts/web3",
           "target": "/thoughts/proof-of-stake",
           "text": "Proof of stake"
@@ -17533,6 +17573,11 @@
           "source": "/thoughts/ethereum",
           "target": "/thoughts/proof-of-work",
           "text": "proof of work"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/proof-of-work",
+          "text": "PoW"
         },
         {
           "source": "/thoughts/proof-of-stake",
@@ -18372,6 +18417,11 @@
           "source": "/thoughts/distributed-systems",
           "target": "/thoughts/system-model",
           "text": "System models"
+        },
+        {
+          "source": "/thoughts/longest-chain-consensus",
+          "target": "/thoughts/system-model",
+          "text": "system model"
         }
       ],
       "/thoughts/task-centered-design": [
@@ -21953,6 +22003,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -25823,6 +25878,26 @@
       "source": "/thoughts/longest-chain-consensus",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/longest-chain-consensus",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/longest-chain-consensus",
+      "target": "/thoughts/Public-key-Infrastructure",
+      "text": "PKI"
+    },
+    {
+      "source": "/thoughts/longest-chain-consensus",
+      "target": "/thoughts/proof-of-work",
+      "text": "PoW"
+    },
+    {
+      "source": "/thoughts/longest-chain-consensus",
+      "target": "/thoughts/proof-of-stake",
+      "text": "PoS"
     },
     {
       "source": "/thoughts/longevity",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rhizome on </title>
+    <title>rhizome on jzhao.xyz</title>
     <link>https://jzhao.xyz/tags/rhizome/</link>
-    <description>Recent content in rhizome on </description>
+    <description>Recent content in rhizome on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
@@ -15,15 +15,6 @@
       <guid>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</guid>
       <description>See the main [[thoughts/Rhizome Proposal|Rhizome Proposal]]
 Interoperable Data on the web today is mostly treated as second-class to applications.</description>
-    </item>
-    
-    <item>
-      <title>Distributed Systems</title>
-      <link>https://jzhao.xyz/thoughts/distributed-systems/</link>
-      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/distributed-systems/</guid>
-      <description>A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.</description>
     </item>
     
     <item>
@@ -43,24 +34,6 @@ Interoperable Data on the web today is mostly treated as second-class to applica
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
       <description>See also: [[thoughts/Rhizome Research Log|Research Log]]
  &amp;hellip; tbd</description>
-    </item>
-    
-    <item>
-      <title>Self-sovereign Identity (SSI)</title>
-      <link>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</link>
-      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</guid>
-      <description>Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities</description>
-    </item>
-    
-    <item>
-      <title>Lattice Proposal</title>
-      <link>https://jzhao.xyz/thoughts/Lattice-Proposal/</link>
-      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Lattice-Proposal/</guid>
-      <description>Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]].</description>
     </item>
     
     <item>

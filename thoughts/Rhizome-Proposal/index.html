@@ -33,7 +33,7 @@
     
     
     <style>
-        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}.poem{font-family:Spectral,serif;font-size:1.1rem;padding:0}
+        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}.poem{font-family:Spectral,serif;font-size:1.1rem;padding:0;color:var(--dark)}
     </style>
     
     
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Proposal</h1>
     <article>
       <p class="meta">
-          Last updated July 6, 2022
+          Last updated July 7, 2022
       </p>
       <ul class="tags">
     
@@ -953,7 +953,7 @@ if (!doNotTrack) {
 </ol>
 <p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.</p>
 <ul>
-<li>Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
+<li>Single purpose apps backed by general-purpose data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
 <li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.</li>
 <li>Local-first means interaction times are measured in <em>microseconds</em> not seconds, resulting in more responsive-feeling applications and no loading spinners.</li>
 <li>Two users can collaborate by simple &lsquo;inviting&rsquo; another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.</li>
@@ -1061,7 +1061,7 @@ if (!doNotTrack) {
 <hr>
 <p>You can find the ongoing <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log here</a>.</p>
 <a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
-<p>Thank you to Anson, Sebastien, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, and Amir for you continued support. This project wouldn&rsquo;t be possible without all of you :))</p>
+<p>Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, and Spencer for you continued support. This project wouldn&rsquo;t be possible without all of you :))</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -1079,6 +1079,11 @@ if (!doNotTrack) {
 <p>Moxie Marlinspike, <em>My first impression of web3</em> (
 
 <a href="https://moxie.org/2022/01/07/web3-first-impressions.html" rel="noopener">Source</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Spencer Chang on 
+
+<a href="https://twitter.com/spencerc99/status/1544420768137740288" rel="noopener">Twitter</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1416,6 +1421,7 @@ run()
         <a href="/">Home</a>
         <a href="https://twitter.com/_jzhao">Twitter</a><a href="https://github.com/jackyzha0">Github</a></footer>
 </div>
+
 </div>
 </body>
 

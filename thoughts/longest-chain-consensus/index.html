@@ -3,7 +3,9 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="See also: [[thoughts/consensus|consensus]]">
+    <meta name="description" content="See also: [[thoughts/consensus|consensus]]
+Requires $f &lt; \frac n 2$
+Primarily studied in the synchronous [[thoughts/system model|system model]].">
     <title>Longest-chain consensus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -33,7 +35,7 @@
     
     
     <style>
-        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}.poem{font-family:Spectral,serif;font-size:1.1rem;padding:0}
+        :root{--light:#f2e9e1;--dark:#2f2235;--secondary:#426b69;--tertiary:#8db9b7;--visited:#8db9b7;--primary:#e46262;--gray:#3a333d;--lightgray:#e3deda;--outlinegray:#a8a39e}::selection,mark,:root::target-text{background:var(--tertiary);background-color:var(--tertiary)}[saved-theme=dark]{--light:#201624 !important;--dark:#faede1 !important;--secondary:#77a3a0 !important;--visited:#567d7b !important;--tertiary:#325452 !important;--primary:#bd6868 !important;--gray:#d4d4d4 !important;--lightgray:#4f473f !important;--outlinegray:#3b2842 !important}.ascii{margin-bottom:0;padding:0;white-space:pre;font-weight:700;font-family:jetbrains mono}.ascii.ascii-dark,.ascii .ascii-dark{color:var(--dark)}.ascii.ascii-gray,.ascii .ascii-gray{color:var(--outlinegray)}.ascii.ascii-primary,.ascii .ascii-primary{color:var(--primary)}.ascii.ascii-secondary,.ascii .ascii-secondary{color:var(--secondary)}.ascii.ascii-tertiary,.ascii .ascii-tertiary{color:var(--tertiary)}.banner{position:relative;width:100%;overflow-x:hidden;display:flex;justify-content:center}.index{padding:4em 25vw}@media all and (max-width:1200px){.index{padding:25px 5vw}}.index>.bio{display:flex;gap:1.5em}@media screen and (max-width:1440px){.index>.bio{flex-direction:column-reverse!important;gap:4em}}.index>.bio>.writing-sidebar{flex:0 0 30%}.index>.bio>.writing-sidebar>div{margin-bottom:2em}.index>.bio>.writing-sidebar ul{list-style:none;padding:0;margin-left:0;z-index:0}.index>.bio>.writing-sidebar>div>a{opacity:.6}.index>.bio>.writing-sidebar h2{font-size:1.4rem;margin:.75em 0}.index>.bio>.writing-sidebar a{font-family:Spectral}.index>.bio>.writing-sidebar li{margin-bottom:.5em}.index>.bio>.writing-sidebar h3{margin:0}.index>.bio>.writing-sidebar .meta{margin-top:0}.index>.bio>.writing-sidebar .tags>li>a{font-size:.8em;font-weight:400}.poem{font-family:Spectral,serif;font-size:1.1rem;padding:0;color:var(--dark)}
     </style>
     
     
@@ -472,7 +474,7 @@ if (!doNotTrack) {
     <h1 class="title">Longest-chain consensus</h1>
     <article>
       <p class="meta">
-          Last updated July 6, 2022
+          Last updated July 7, 2022
       </p>
       <ul class="tags">
     
@@ -481,6 +483,15 @@ if (!doNotTrack) {
 </ul>
 
       
+      <aside class="mainTOC">
+          <h3>Table of Contents</h3>
+          <nav id="TableOfContents">
+  <ol>
+    <li><a href="#balanced-leaders">Balanced Leaders</a></li>
+  </ol>
+</nav>
+      </aside>
+      
       
 
 
@@ -494,6 +505,94 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -522,6 +621,53 @@ if (!doNotTrack) {
 
 
 <p>See also: <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a></p>
+<p>Requires $f &lt; \frac n 2$</p>
+<p>Primarily studied in the synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>. Three forms:</p>
+<ol>
+<li>Permissioned + <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a></li>
+<li>Permissionless + <a href="/thoughts/proof-of-work" rel="noopener" class="internal-link" data-src="/thoughts/proof-of-work">PoW</a></li>
+<li>Permissionless + <a href="/thoughts/proof-of-stake" rel="noopener" class="internal-link" data-src="/thoughts/proof-of-stake">PoS</a></li>
+</ol>
+<p>Pseudocode properties (all implementations should satisfy these!):</p>
+<ol>
+<li>Initialize a hard-coded &ldquo;genesis block&rdquo; $B_0$ so everyone knows where the chain starts</li>
+<li>In each round $r = 1,2,3, \dots$
+<ol>
+<li>One node is chosen as a leader. This leader can prove itself as leader to other nodes, non-leaders cannot pretend to be a leader or manipulate their chances of becoming a leader.</li>
+<li>Leader can create a set of round-$r$ blocks where all of there predecessors are strictly created in some previous round, each with a predecessor block. Blocks form an in-tree rooted at the genesis block.</li>
+</ol>
+</li>
+</ol>
+<p>Honest behaviour</p>
+<ol>
+<li>Form block $B$ using all known pending pending transactions</li>
+<li>Set the predecessor of $B$ to be the current longest chain, break ties arbitrarily</li>
+<li>Immediately broadcast $(B, predecessor)$ to all other nodes</li>
+</ol>
+<a href="#balanced-leaders"><h2 id="balanced-leaders"><span class="hanchor" ariaLabel="Anchor"># </span>Balanced Leaders</h2></a>
+<p>We define a sequence $l_1, l_2, \dots, \in { H, A }$ as $w$-balanced if in every window $l_i, l_{i + 1}, \dots, l_j$  where $j - 1 \geq w$ and a strict majority of leaders in that sequence are honest.</p>
+<p>On finality: if $f &lt; \frac n 2$, we can consider all but the last $k$ blocks in the chain finalized. $k$ is up to the user to determine what parts of the chain they want to consider finalized.</p>
+<p>If we assume that the rate of block production is slow relative to the maximum message delay $\Delta$ then inadvertent honest forks rarely occur.</p>
+<p>We define $B_k(G)$ as the last $k$ blocks of the longest chain where $G$ is the current tree of all transactions known. $B_k(G)$ is potentially ill-defined if there are multiple longest chains.</p>
+<p>Theorem: if a leader sequence is $2k$-balanced, then for every possible sequence $G_0, G_1, \dots$ has</p>
+<ol>
+<li>The common prefix property: $\forall i, B_k(G_i)$ is well defined</li>
+<li>Finality: one a block is confirmed, it is always confirmed, $B_k(G_0) \leq B_k(G_1) \leq \dots$</li>
+<li>Liveness: if a transaction is known to all honest nodes, it will eventually be included in $B_k(G)$</li>
+</ol>
+<p>In the case that we chose completely random leaders:</p>
+<ul>
+<li>we can expect randomly chosen leaders to be reasonably balanced
+<ul>
+<li>on average, expect $1 - \frac f n &gt; \frac 1 2$ nodes to be honest</li>
+<li>bigger window length $w$ means that we are less likely to see $\geq 50%$ Byzantine nodes</li>
+<li>Probability of a given length $w$ window being $\geq 50%$ Byzantine is $\leq e^{-cw}$ where $c$ is some constant (exponential is good!)</li>
+<li>Probability of a given length $\geq w$ window being $\geq 50 %$ Byzantine is $\leq T^2 e^{-cw}$ where $T$ is the length of the sequence we&rsquo;re considering</li>
+<li>Thus we get a failure probability less than some $\delta$ if $w \geq c_2 (\ln T + \ln \frac 1 \delta)$</li>
+</ul>
+</li>
+<li>however, there is a small but non-zero chance of balancing failure</li>
+</ul>
  
 
     </article>
@@ -808,6 +954,7 @@ run()
         <a href="/">Home</a>
         <a href="https://twitter.com/_jzhao">Twitter</a><a href="https://github.com/jackyzha0">Github</a></footer>
 </div>
+
 </div>
 </body>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jzhao.xyz on </title>
+    <title>jzhao.xyz</title>
     <link>https://jzhao.xyz/</link>
-    <description>Recent content in jzhao.xyz on </description>
+    <description>Recent content on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -21,7 +21,9 @@
       <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/longest-chain-consensus/</guid>
-      <description>See also: [[thoughts/consensus|consensus]]</description>
+      <description>See also: [[thoughts/consensus|consensus]]
+Requires $f &amp;lt; \frac n 2$
+Primarily studied in the synchronous [[thoughts/system model|system model]].</description>
     </item>
     
     <item>
