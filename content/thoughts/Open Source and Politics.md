@@ -5,13 +5,11 @@ tags:
 - fruit
 ---
 
-In conversation with [[thoughts/Coraline Ada Ehmke|Coraline Ada Ehmke]]
+[[thoughts/Coraline Ada Ehmke|Coraline Ada Ehmke]] is an acclaimed speaker, writer, engineer, and activist with over 25 years in open source. She thinks a lot about how to promote diversity, equity, and justice in open source communities and the tech industry as a whole. She created the Contributor Covenant, the very first code of conduct for open source communities, as well as the Hippocratic License which legally prohibits an open source project from being used for human rights violations. 
 
-Intros
-- Jacky:
-- Coraline:
+Jacky is a student studying Computer Science and Philosophy at UBC. He spends a lot of time maintaining and building a number of widely used open-source projects like Quartz and cursor-chat over the past few years. He thinks a lot about how we can better incentivize public goods funding, support better interactions with computers, and be more responsible stewards of technology.
 
-_This interview has been edited for clarity and length._
+_This conversation has been edited for clarity and length._
 
 ## How did we get here?
 
@@ -73,37 +71,83 @@ C: Every technology for the entire duration of human history has been modulated 
 
 Regulation regulations are imperfect. But they are a way of codifying constraints or guardrails. And, you know, maybe it's okay to slow down a little bit, right? If we're gonna reduce harm, maybe it's okay to slow down a bit.
 
-## On Agency in Technology
-J: Yeah. One take I have been seeing a lot of is that top-down regulation is explicitly bad and we should 'decentralize'. And I think one interesting aspect that I spend a lot of time thinking about is the value of decentralization when it comes to comes to technology. A lot of these new technologies like blockchain kind of treat decentralization as an ends rather than a means.
+## What can we do?
 
-- on decentralization + agency of technology [could cut if we run out of space]
-	- personal research over the summer: rhizome
-	- more data portability, autonomy, and permeability between systems
-		- differentiating mobility and permeability
-	- offramp existing systems -> onramp to existing systems
-	- downloading the source code isn't enough, governance is critically important
-		- chrome user-defined styled sheets example
-		- frame it in terms of agency
-	- participating in governance is hard, reclaiming standards
-		- most standards bodies and governance structures for orgs that own standards are incredibly tight and hard for average person to participate in and make meaningful changes/decisions
-		- don't know the answer but we definitely need to prioritize it
-	- layers of normalization
-		- we've normalized codes of conduct
-		- let's now let's normalize representative equitable governance of open source technologies
-		- let's go a step beyond that, and talk about like standards and enforceable standards
-		- beyond that, of course, we have the legal aspects
-	- metaphor of securing a server, no single layer is enough, we need all of them
-- on how can we bring about these changes? help recognize technology + open source as political and non-neutral
-	- what does regulating open source look like?
-		- ethical source is not just about the hippocratic license
-		- nb: to live in their utopia, systems of feedback and regulation are important
-		- it's about building layers of normalization that this is stuff we should care about
-			- "Harm reduction is not an event, it's a process. And I think we have to start normalizing those processes. If we have any chance at all of allowing the Internet to like be the incredible force for good that it has the potential to be."
-		- not fire and forget either, can perpetuate systemic inequalities if not kept in check
-	- interdisciplinary + multidisciplinary technologists
-		- moving beyond the individualistic perception of open source as the long hacker in the basement but more so like as curators and crafters of a community around this project that you're building
-		- comes down to ingroup vs outgroup: open source technology is simply tooling for people just like us
-		- developers build infrastructure and dev tooling because they thats their ingroup, those are the problems they are familiar with
-		- by bringing people who've had problems and experiences and other fields, then you start getting useful applications of technology in those areas
-		- not through consultation but meaningful empowerment
-		- nb: not treating human lives as 'externalities' to systems that spoil the purity of mathematical things 
+J: Yeah. One take I have been seeing a lot of is that top-down regulation is explicitly bad and we should 'decentralize'. And I think one interesting aspect that I spend a lot of time thinking about is the value of decentralization when it comes to comes to technology. A lot of these new technologies like blockchain treat decentralization as an end rather than as a means.
+
+But there's a lot of use cases that are very much building [decentralized applications] for the wrong reasons. I don't think decentralization is objectively a good thing, but rather something that can return agency to users. A lot of my research work over this summer has been figuring out how do we apply, for example, the net neutrality debate to data? The net neutrality debate was very much about separating content from providers, similarly, how do we separate data from applications? 
+
+A lot of our modern centralized providers are incredibly successful and have such a large network effects. It is so hard to migrate from them because they have these huge data moats where it's impossible to just move from Facebook, for example, to some other provider that claims to be better. So a lot of it has been asking questions of how we reclaim agency for people to choose how to use their data, how they want to store their data.
+
+I think the convincing case for decentralization is in terms of enabling agency for people to choose what types of frameworks they want, rather than having to be locked into these providers.
+
+C: 20 some years later, we're never going to have an internet that's 100% Open Source. And hopefully, we'll never have an internet that's 100% closed or proprietary either. What we have to recognize in the reality of where we are -- that we we need more than data portability, we need data autonomy, and we need permeability between closed and open systems.
+And I believe permeability as opposed to mobility is kind of an important aspect. 
+
+J: How would you differentiate permeability and mobility?
+
+C: Mobility means you can export all of your tweets. Okay, well, what are you going to do with that? Can you import them into mastodon? No. So when you withdraw your data, it becomes valueless. It's not in a form that you can ever reuse. So is that really ownership of your data? No, it says something different.
+
+J: Yeah, I think one common theme I am noticing in a lot of retrospectives of older peer-to-peer projects that have been alive for a while but haven't really garnered any major usage is that they've thought about all these ways to create new shiny platforms that claim to be better or give more agency to users, but no one has really thought about how to off-ramp easily from existing systems to get people onto these new platforms.
+
+C: So I think the way we guarantee that kind of permeability between closed and open systems is through standards.
+
+But the problem is that representation in these standards boards are primarily private corporations. And they are trying to influence things. Logically, that will probably impact their business models. Amnesty International actually wrote a paper in 2018 were they they flat out said that platforms like Google and Facebook, their entire business models are predicated on human rights abuses and on harvest of data and surveillance capitalism. So we can't expect those companies to do the right thing for the right reason. And those are the companies that have not only the economic power, but also power in the standards bodies and governing bodies. I think that reclaiming standards bodies is a way of having meaningful consequences for willful violations of standards. I think that's critical.
+
+J: Yeah I agree. At some point, being able to download the source code isn't enough, governance and accountability is critically important too.
+
+What do you think is the first step to reclaiming standards bodies even look like? I remember reading the DID spec a while ago and I remember that of all of the W3C members, only three members had formal objections about the proposal. They were Google, Apple, and Mozilla. So when you people trying to propose new standards that inevitably will undermine the business model of these large companies, it feels incredibly difficult to get these pushed through.
+
+Also, a lot of these standards and processes are illegible to people new to this space. I read a lot of these, like IETF proposals, for example. And they're ridiculously long at times, often almost 100 pages. It feels like some of them require decades of experience working in the space to even being to have a voice. It's incredibly difficult for the average person to participate and make meaningful decisions.
+
+So if you want to create a  widely accepted standard, is there any way to do that without dismantling these original systems with these large corporations sitting on the standards boards?
+
+C: I don't know the answer to that. I don't know how we do it. But I think we need to prioritize it. And I think we need to figure it out.
+
+There's, a growing trend. We see more people asking the question of whether tech companies should pay for the tech that we're freely giving them today?
+
+I think we have a lot of power. As participants and members in good standing in the open source community, we should find ways to hold hold these large players accountable, either by threatening their primacy through the development of alternatives, but also figuring out how can we pressure them to make governance as intentional, as equitable, as diverse as we've done within our developer communities.
+
+It's sort of a radiating effect, right? We've normalized codes of conduct. Now let's normalize representative and equitable governance of open source technologies. Let's go a step beyond that and talk about standards and enforceable standards. And then beyond that, of course, we have the legal aspects.
+
+The the metaphor that think of is an InfoSec metaphor. You have a server on the internet, it is not secure as it is impossible to secure any resource on the internet 100%. But what we do is we add layers of protection, layers of privacy, layers of security, to make it not impossible to breach a system, but make it so involved and so expensive, that it's no longer worth someone's while.
+
+And I think that's an approach that we can take with the development of ethical and equitable technology as well. If we've made it difficult for Google to sweep issues like accessibility standards under the rug, then we're incentivizing them to do the right thing. Because if they don't, they will lose status, they will lose their ability to draw employees. We as developers do have the ability to exercise some moral authority and we have the ability to decreed meaningful consequences for the corporations.
+
+## Where do we go from here?
+
+J: How do you think we can best bring about these changes to build more ethical and equitable technology? The logical path forward seems to be either 1) find ways to empower a more diverse set of people to help build these standards and technologies or 2) regulate how open source is used by these large companies through licenses and the law.
+
+C: To be clear, ethical source is not about licensing. Ethical source is not about the Hippocratic license. It is not solely about legal instruments for trying to protect the vulnerable, marginalized, and under-represented. It's bigger than that. It's about codes of conduct. It's about governance. It's about social contracts and rights.
+
+J: It's about building those layers, right?
+
+C: Exactly, that layered approach. I think it represents a movement to change our mindset to really ask ourselves some of these difficult questions to look at who's making the decisions around what technologies are developed. Are we comfortable leaving these decisions in the hands of those players?
+
+It's not a fire and forget thing either. It's not a problem that's solved at the beginning, and we're good forever. These systems that can cause harm that perpetuate systemic inequities, they're not static either. Just like how consensus isn't an event, it's a process, harm reduction is also not an event, it's a process.
+
+And I think we have to start normalizing those processes [of harm reduction at all of these different layers]. If we have any chance at all of allowing the Internet to like be the incredible force for good that it has the potential to be.[^3]
+
+[^3]: nb: to live in their utopia, systems of feedback and regulation are important
+
+And, as you said, part of that is being interdisciplinary, transdisciplinary, and multidisciplinary in our thinking. Bringing together the people who have different areas of expertise, whether it be technological or social in nature, because, you know, a lot of these problems that we're facing have happened before. They're not new problems.
+
+J: Yeah. I think a big part of this is moving beyond the individualistic perception of open source as a long hacker in the basement but more so like as curators and crafters of a community around this project that you're building.
+
+One personal anecdote that I want to bring is that, I think building a visible community around synchronous interaction with the actual users makes such a big difference when it comes to maintenance. As a maintainer or creator of a software library, most people are like, "I just want to make new features and do whatever works best for me."
+
+But there are so many edge cases and small bugs that don't work for a lot of users of your library. For example, users from Saudi Arabia who said that they would actually really appreciate right-to-left support using Quartz for example. How do we enable people from all over the world who weren't necessarily the users that you initially had in mind to still be able to use it?[^4]
+
+[^4]: nb: not treating human lives as 'externalities' to systems that spoil the purity of mathematical things 
+
+I think by curating a community that is open and accepting of more types of people and getting them to suggest and contribute.
+
+C: Absolutely. And I think a lot of that comes down to ingroup-outgroup biases. Just L=look at it from the perspective of just how much open source technology is simply tooling for people just like us.
+
+J: Yeah. And I think this is a great call for more diversity in the space as well. One thing that I talked about with a friend a while ago, we noticed that the people who build developer tooling and tools for other developers do that because that's the only problem they've really known their entire lives! And by bringing people who've had problems and experiences and other fields, then you start getting useful applications of technology in those areas. So this is call for all types of people to contribute to technology, to contribute to open source in hopes of like a more diverse future.
+
+C: And we do that not through consultation, but meaningful empowerment. Getting people who are not like us in positions of power, by yielding power and yielding agency.
+
+J: Yeah, thank you for that. And thank you again for taking time to come chat today!
+
+C: Of course, I really enjoyed our conversation, Jacky.
