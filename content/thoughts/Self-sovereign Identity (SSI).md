@@ -3,7 +3,6 @@ title: "Self-sovereign Identity (SSI)"
 date: 2022-04-28
 tags:
 - seed
-- rhizome
 ---
 
 Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities

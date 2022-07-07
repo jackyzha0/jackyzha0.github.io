@@ -3,7 +3,6 @@ title: "Distributed Systems"
 date: 2022-05-03
 tags:
 - seed
-- rhizome
 ---
 
 A distributed system can be defined as multiple computers (nodes) communicating via a network trying to achieve some task together.

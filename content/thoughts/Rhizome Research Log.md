@@ -9,6 +9,12 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 7th
+- Finished up Tim Roughgarden's lectures on the foundations of blockchain which had some really useful theoretical details on traditional [[thoughts/consensus|consensus]] mechanisms which definitely solidified my understanding
+- Currently at ~$900/mo in terms of sponsors and I'm just blown away by the volume of support people have expressed. This is more than halfway to monthly living expenses and it feels so close?
+	- At first I was a little nervous because, y'know, that's a lot of expectation of producing something meaningful
+	- But I think this is exactly the forcing function I need to be active in doing as much as I feasibly can and share as much as possible. Even if someone steals my idea and runs with it, so what? The future is pluralistic. If it's interoperable, it doesn't matter how many implementations there are!
+
 ### July 6th
 - Holy shit [Morgan](https://twitter.com/morgallant), [Aadil](https://twitter.com/aadillpickle), [David](https://twitter.com/TheDavidZhou), and [JZ](https://twitter.com/jzlegion) just sponsored me for ~$400/mo for this research project and ... I am genuinely just speechless??
 	- It's just so wild to me that this little project that I’ve just felt so strongly about because of reasons that still seem to evade words is something that other people are interested in seeing come to life too.
@@ -17,6 +23,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - There were many points this summer I was fully ready to give up (see: plenty of mental breakdowns below) and stop trying because I questioned whether this was worth doing -- if I should just stop and get an actual job
 	- I felt really silly for asking people to help financially on a project that I sometimes had trouble believing in too.
 	- So thank you for your trust, thank you for dreaming with me
+	- Today's soundtrack is from [La La Land -- Audition (The Fools Who Dream)](https://open.spotify.com/track/6j0wBBAP3hMe4t1Ymj7GIe?si=ef50241abfe04ac2)
 
 ![???](thoughts/images/IMG_1805.png)
 

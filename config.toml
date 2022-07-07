@@ -11,6 +11,10 @@ ignoreFiles = [
 summaryLength = 10
 paginate = 10
 enableGitInfo = true
+title = "jzhao.xyz"
+
+[author]
+  name = "Jacky Zhao"
 
 [markup]
     [markup.tableOfContents]
@@ -28,3 +32,4 @@ enableGitInfo = true
         lineNumbersInTable = true
         style = "dracula"
         tabWidth = 4
+

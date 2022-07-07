@@ -87,7 +87,7 @@ It is made up of two layers
 
 As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.
 
-- Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*. 
+- Single purpose apps backed by general-purpose data[^4]. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*.
 - Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
 - Local-first means interaction times are measured in *microseconds* not seconds, resulting in more responsive-feeling applications and no loading spinners.
 - Two users can collaborate by simple 'inviting' another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.
@@ -165,8 +165,9 @@ The application-level event log management and collaboration
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
 
 ## Acknowledgements
-Thank you to Anson, Sebastien, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, and Amir for you continued support. This project wouldn't be possible without all of you :))
+Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, and Spencer for you continued support. This project wouldn't be possible without all of you :))
 
 [^1]: Divya Siddarth, Danielle Allen, E. Glen Weyl, *The Web3 Decentralization Debate is Focused on the Wrong Question* in Wired Magazine ([Source](https://www.wired.com/story/web3-blockchain-decentralization-governance/))
 [^2]: Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, MArk McGranaghan, *Local-first software* in Ink & Switch ([Source](https://www.inkandswitch.com/local-first/))
 [^3]: Moxie Marlinspike, *My first impression of web3* ([Source](https://moxie.org/2022/01/07/web3-first-impressions.html))
+[^4]: Spencer Chang on [Twitter](https://twitter.com/spencerc99/status/1544420768137740288)

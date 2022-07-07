@@ -3,7 +3,6 @@ title: "Lattice Proposal"
 date: 2022-04-26
 tags:
 - seed
-- rhizome
 ---
 
 Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]

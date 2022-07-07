@@ -32,3 +32,7 @@ How do we capture assumptions in a system model for [[thoughts/distributed syste
 ### Identity and Messages
 - Authenticated: a Byzantine node cannot forge a message or change the contents of a received message before it relays the message to other nodes
 - Non-authenticated: nodes have no way of verifying the authenticity of a received message
+
+### Permissioning
+- Permissioned: all nodes in the cluster are known ahead of time
+- Permissionless: anyone can join the cluster
