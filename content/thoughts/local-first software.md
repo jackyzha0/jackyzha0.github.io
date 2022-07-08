@@ -51,8 +51,6 @@ Really great SDK but unsure how this differs from existing platforms like Yjs or
 Actually uses a Cambria-like system for data lensing which is cool.
 
 ## Locutus
-
-
 Locutus is a decentralized key-value database. It uses the same [small world](https://freenetproject.org/assets/papers/lic.pdf) routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.
 
 Locutus is *not* append-only and has mutable state.

@@ -9,11 +9,23 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 8th
+- Learning more about [[thoughts/CRDT|CRDTs]], [[thoughts/Order theory|Order Theory]]
+- I got my first email from a mutual which was along the lines of "help, I'm stuck in leetcode hell, how do I escape and do other things?"
+	- I feel like I barely know what I'm doing, let alone ready to help another person along on their journey! I sent along a few questions that were really helpful for me when convincing myself to do this project and I hope it's useful.
+	- Here was the email response I sent: ![[thoughts/images/Screenshot 2022-07-08 at 4.08.41 PM.png]]
+- Had a great chat with Saffron today about some of the really cool research she's thinking about doing re: online identity and data agency.
+	- This really would not have happened if Spencer hadn't pushed me to write a thread briefly summarizing what I was working on this summer. I've had a lot of super cool folks reach out and say that they are really excited by the work I'm doing! This is both reassuring but also extremely nerve-wracking. Expectations!!!! A concept
+	- One point we talked about that I'm still ruminating on is the idea that selling data requires a baseline level of interoperability between two parties
+		- How do current data markets work? If Facebook for example sells their data to another company, is it literally a raw export? How does that handoff happen and how do they ensure the format of the data they are using is understandable by both parties?
+		- I think inspiring more thoughts on what potential business models could exist on a platform like this
+
 ### July 7th
 - Finished up Tim Roughgarden's lectures on the foundations of blockchain which had some really useful theoretical details on traditional [[thoughts/consensus|consensus]] mechanisms which definitely solidified my understanding
 - Currently at ~$900/mo in terms of sponsors and I'm just blown away by the volume of support people have expressed. This is more than halfway to monthly living expenses and it feels so close?
 	- At first I was a little nervous because, y'know, that's a lot of expectation of producing something meaningful
 	- But I think this is exactly the forcing function I need to be active in doing as much as I feasibly can and share as much as possible. Even if someone steals my idea and runs with it, so what? The future is pluralistic. If it's interoperable, it doesn't matter how many implementations there are!
+- Read a really good paper on [[thoughts/neutrality|neutrality]] and learned about the [Data Transfer Project](https://datatransferproject.dev/)
 
 ### July 6th
 - Holy shit [Morgan](https://twitter.com/morgallant), [Aadil](https://twitter.com/aadillpickle), [David](https://twitter.com/TheDavidZhou), and [JZ](https://twitter.com/jzlegion) just sponsored me for ~$400/mo for this research project and ... I am genuinely just speechless??

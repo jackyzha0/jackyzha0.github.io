@@ -7,6 +7,8 @@ tags:
 
 One of the things that keeps face-to-face friendships strong is the [nature of shared experience](http://psycnet.apa.org/psycinfo/2001-00651-001): you laugh together; you dance together; you gape at the hot-dog eaters on Coney Island together.
 
+> The internet is often hailed for bringing people closer together. The apparent collapse of the physical space between users is achieved by slashing down the time between the moment in which a message is sent and received, until it’s close to real time. For millions of years, the only real-time communication we’ve had as a species involved physical presence. Thus, real-time digital communication makes us feel physically close (from [[thoughts/neutrality#Net Neutrality|The Neutrality Pyramid]])
+
 ### video
 * movies
 * vlogs

@@ -37,12 +37,11 @@ How do we estimate time over a network?
 - If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)
 
 ## Logical Time
-Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp order is inconsistent with expected order! This can happen when the clock skew is *less* than the one way network latency.
+Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp [[thoughts/Order theory|order]] is inconsistent with expected order! This can happen when the clock skew is *less* than the one way network latency.
 
 So we use logical clocks to work based off of *the number of events that have occurred rather than actual time passed.*
 
 ### Lamport Clocks
-
 Logic
 - On initialization, set `t := 0` for each node
 - On any event on local node, `fn tick() -> t += 1`
@@ -85,7 +84,7 @@ Ordering
 - $T < T' \iff T \leq T' \land T \neq T'$ (T happened earlier than T' if each element in T is less than its value in T', at least one element in T differs from T')
 	- $T \parallel T' \iff T \nleq T' \land T' \nleq T$ (T is incomparable to T')
 
-Properties
+Properties (based on [[thoughts/Order theory|Order theory]])
 - $V(a) \leq V(b) \iff (\{a\} \cup \{e | e \rightarrow a\}) \subseteq (\{b\} \cup \{e | e \rightarrow b\})$
 - $V(a) < V(b) \iff (a \rightarrow b)$
 - $V(a) = V(b) \iff (a = b)$
