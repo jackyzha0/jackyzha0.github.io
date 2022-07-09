@@ -467,6 +467,38 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/federation/">Federation</a></h3>
+                <p>In a federated network, users are still interacting with a server, but anyone can run a server that interoperates with others in the network, giving users more providers to choose from...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 15, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/authorization/">Authorization</a></h3>
+                <p>Authorization is the process of verifying what a user has access to (whereas authentication is the process of verifying who someone is)...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 24, 2022
+            </p>
+            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/Zookos-Triangle/">Zooko&#39;s Triangle</a></h3>
                 <p>Postulates that names of participants can have at most 2 of these 3 properties...</p>
             </div>
@@ -552,10 +584,10 @@ Interoperable Data on the web today is mostly treated as second-class to applica
         <div class="section">
             <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/causality/">Causality</a></h3>
-                <p>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </p>
+                <p>Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$) Similar notation to [[thoughts/Order theory|Order theory]]    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  </p>
             </div>
             <p class="meta">
-                1 minute read. Last updated May 5, 2022
+                1 minute read. Last updated July 8, 2022
             </p>
             <ul class="tags">
     
@@ -572,7 +604,7 @@ Interoperable Data on the web today is mostly treated as second-class to applica
 Physical Time Two types of clock...</p>
             </div>
             <p class="meta">
-                5 minute read. Last updated July 1, 2022
+                5 minute read. Last updated July 8, 2022
             </p>
             <ul class="tags">
     
@@ -589,38 +621,6 @@ Physical Time Two types of clock...</p>
             </div>
             <p class="meta">
                 1 minute read. Last updated July 7, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
-                <p>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated June 29, 2022
-            </p>
-            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/consistency/">Consistency</a></h3>
-                <p>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time...</p>
-            </div>
-            <p class="meta">
-                3 minute read. Last updated June 27, 2022
             </p>
             <ul class="tags">
     

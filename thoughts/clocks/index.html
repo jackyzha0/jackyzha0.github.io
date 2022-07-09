@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Clocks</h1>
     <article>
       <p class="meta">
-          Last updated July 1, 2022
+          Last updated July 8, 2022
       </p>
       <ul class="tags">
     
@@ -657,6 +657,82 @@ if (!doNotTrack) {
       
       
       
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
     
   
 
@@ -694,7 +770,7 @@ if (!doNotTrack) {
 <li>If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)</li>
 </ul>
 <a href="#logical-time"><h2 id="logical-time"><span class="hanchor" ariaLabel="Anchor"># </span>Logical Time</h2></a>
-<p>Problem is that <em>even with synced clocks</em> we can have $t_2 &lt; t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp order is inconsistent with expected order! This can happen when the clock skew is <em>less</em> than the one way network latency.</p>
+<p>Problem is that <em>even with synced clocks</em> we can have $t_2 &lt; t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order</a> is inconsistent with expected order! This can happen when the clock skew is <em>less</em> than the one way network latency.</p>
 <p>So we use logical clocks to work based off of <em>the number of events that have occurred rather than actual time passed.</em></p>
 <a href="#lamport-clocks"><h3 id="lamport-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Lamport Clocks</h3></a>
 <p>Logic</p>
@@ -737,7 +813,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<p>Properties</p>
+<p>Properties (based on <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a>)</p>
 <ul>
 <li>$V(a) \leq V(b) \iff ({a} \cup {e | e \rightarrow a}) \subseteq ({b} \cup {e | e \rightarrow b})$</li>
 <li>$V(a) &lt; V(b) \iff (a \rightarrow b)$</li>

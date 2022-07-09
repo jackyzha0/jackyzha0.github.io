@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  ">
+    <meta name="description" content="Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$) Similar notation to [[thoughts/Order theory|Order theory]]    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events  ">
     <title>Causality</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Causality</h1>
     <article>
       <p class="meta">
-          Last updated May 5, 2022
+          Last updated July 8, 2022
       </p>
       <ul class="tags">
     
@@ -494,6 +494,28 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -518,6 +540,7 @@ if (!doNotTrack) {
 <li>When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)
 <ul>
 <li>Concurrent does <em>not</em> mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)</li>
+<li>Similar notation to <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a></li>
 </ul>
 </li>
 </ul>
@@ -612,6 +635,10 @@ if (!doNotTrack) {
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/CRDT/" data-ctx="causal consistency" data-src="/thoughts/CRDT" class="internal-link">Conflict-free Replicated Data Type (CRDT)</a>
       </li>
@@ -632,6 +659,12 @@ if (!doNotTrack) {
       
       <li>
         <a href="/thoughts/Moving-Castles/" data-ctx="Causality" data-src="/thoughts/Moving-Castles" class="internal-link">Moving Castles</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Order-theory/" data-ctx="message ordering" data-src="/thoughts/Order-theory" class="internal-link">Order theory</a>
       </li>
       
       

@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/Order-theory/</loc>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/seed/</loc>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/neutrality/</loc>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/Arcosanti/</loc>
     <lastmod>2022-07-06T11:50:14-07:00</lastmod>
   </url><url>
@@ -10,15 +25,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/math/</loc>
     <lastmod>2022-07-06T11:50:14-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/seed/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/33-Impossibility-Result/</loc>
     <lastmod>2022-07-03T14:06:28-07:00</lastmod>
@@ -192,22 +198,22 @@
     <lastmod>2022-05-10T16:59:45-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/rhizome/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</loc>
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/causality/</loc>
-    <lastmod>2022-05-05T19:05:58-04:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
-    <lastmod>2022-07-01T15:21:30-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
-    <lastmod>2022-06-29T12:23:47-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consistency/</loc>
     <lastmod>2022-06-27T22:59:25-07:00</lastmod>
@@ -234,10 +240,10 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>
@@ -255,7 +261,7 @@
     <lastmod>2022-06-26T11:01:36-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/sapling/</loc>
-    <lastmod>2022-07-06T11:50:14-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/</loc>
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
@@ -267,7 +273,7 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/local-first-software/</loc>
-    <lastmod>2022-06-27T22:59:25-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Valve-Handbook/</loc>
     <lastmod>2022-04-26T15:00:42-07:00</lastmod>
@@ -363,7 +369,7 @@
     <lastmod>2022-03-15T10:35:08-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Proposal/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Consciousness-is-not-Information/</loc>
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
@@ -1245,13 +1251,13 @@
     <lastmod>2022-04-03T21:29:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/A-City-is-not-a-Tree/</loc>
-    <lastmod>2022-03-21T22:11:29-07:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/building-in-public/</loc>
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ephemereal-content/</loc>
-    <lastmod>2022-02-26T22:40:18-08:00</lastmod>
+    <lastmod>2022-07-08T16:58:37-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/infrastructure/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>

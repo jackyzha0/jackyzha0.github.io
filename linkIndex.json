@@ -2559,6 +2559,18 @@
           "text": "Coraline Ada Ehmke"
         }
       ],
+      "/thoughts/Order-theory": [
+        {
+          "source": "/thoughts/Order-theory",
+          "target": "/thoughts/causality",
+          "text": "message ordering"
+        },
+        {
+          "source": "/thoughts/Order-theory",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        }
+      ],
       "/thoughts/PSL-FLM-Impossibility-Result": [
         {
           "source": "/thoughts/PSL-FLM-Impossibility-Result",
@@ -2871,6 +2883,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/neutrality",
+          "text": "Neutrality"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/blockchain",
           "text": "blockchain"
         },
@@ -2928,8 +2945,23 @@
       "/thoughts/Rhizome-Research-Log": [
         {
           "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Order-theory",
+          "text": "Order Theory"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/consensus",
           "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/neutrality",
+          "text": "neutrality"
         },
         {
           "source": "/thoughts/Rhizome-Research-Log",
@@ -4165,6 +4197,13 @@
           "text": "pain"
         }
       ],
+      "/thoughts/causality": [
+        {
+          "source": "/thoughts/causality",
+          "target": "/thoughts/Order-theory",
+          "text": "Order theory"
+        }
+      ],
       "/thoughts/censorship": [
         {
           "source": "/thoughts/censorship",
@@ -4207,6 +4246,11 @@
       "/thoughts/clocks": [
         {
           "source": "/thoughts/clocks",
+          "target": "/thoughts/Order-theory",
+          "text": "order"
+        },
+        {
+          "source": "/thoughts/clocks",
           "target": "/thoughts/causality",
           "text": "causal"
         },
@@ -4219,6 +4263,11 @@
           "source": "/thoughts/clocks",
           "target": "/thoughts/causality",
           "text": "causal"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/Order-theory",
+          "text": "Order theory"
         }
       ],
       "/thoughts/collaborative-software": [
@@ -7564,6 +7613,18 @@
           "text": "software and politics"
         }
       ],
+      "/thoughts/neutrality": [
+        {
+          "source": "/thoughts/neutrality",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome proposal"
+        },
+        {
+          "source": "/thoughts/neutrality",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
+        }
+      ],
       "/thoughts/new-DARPA": [
         {
           "source": "/thoughts/new-DARPA",
@@ -10332,6 +10393,16 @@
           "text": "CRDTs"
         },
         {
+          "source": "/thoughts/Order-theory",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CRDT",
           "text": "CRDTs"
@@ -11714,6 +11785,28 @@
           "text": "Nyāya"
         }
       ],
+      "/thoughts/Order-theory": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/Order-theory",
+          "text": "Order Theory"
+        },
+        {
+          "source": "/thoughts/causality",
+          "target": "/thoughts/Order-theory",
+          "text": "Order theory"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/Order-theory",
+          "text": "order"
+        },
+        {
+          "source": "/thoughts/clocks",
+          "target": "/thoughts/Order-theory",
+          "text": "Order theory"
+        }
+      ],
       "/thoughts/PHIL240A-Final-Paper": [
         {
           "source": "/thoughts/trust",
@@ -12104,6 +12197,11 @@
           "source": "/thoughts/idea-list",
           "target": "/thoughts/Rhizome-Proposal",
           "text": "Rhizome Proposal"
+        },
+        {
+          "source": "/thoughts/neutrality",
+          "target": "/thoughts/Rhizome-Proposal",
+          "text": "Rhizome proposal"
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
@@ -13108,6 +13206,11 @@
           "source": "/thoughts/Moving-Castles",
           "target": "/thoughts/causality",
           "text": "Causality"
+        },
+        {
+          "source": "/thoughts/Order-theory",
+          "target": "/thoughts/causality",
+          "text": "message ordering"
         },
         {
           "source": "/thoughts/clocks",
@@ -16122,6 +16225,11 @@
           "text": "interoperability"
         },
         {
+          "source": "/thoughts/neutrality",
+          "target": "/thoughts/interoperability",
+          "text": "interoperability"
+        },
+        {
           "source": "/thoughts/urban-planning",
           "target": "/thoughts/interoperability",
           "text": "interoperability"
@@ -16811,6 +16919,18 @@
           "source": "/thoughts/Mindstorms",
           "target": "/thoughts/multiple-realization",
           "text": "Multiple realization"
+        }
+      ],
+      "/thoughts/neutrality": [
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/neutrality",
+          "text": "Neutrality"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/neutrality",
+          "text": "neutrality"
         }
       ],
       "/thoughts/new-DARPA": [
@@ -21665,6 +21785,16 @@
       "text": "Coraline Ada Ehmke"
     },
     {
+      "source": "/thoughts/Order-theory",
+      "target": "/thoughts/causality",
+      "text": "message ordering"
+    },
+    {
+      "source": "/thoughts/Order-theory",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
+    },
+    {
       "source": "/thoughts/PSL-FLM-Impossibility-Result",
       "target": "/thoughts/Byzantine-Broadcast",
       "text": "Byzantine Broadcast"
@@ -21951,6 +22081,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/neutrality",
+      "text": "Neutrality"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/blockchain",
       "text": "blockchain"
     },
@@ -22006,8 +22141,23 @@
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/Order-theory",
+      "text": "Order Theory"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
       "target": "/thoughts/consensus",
       "text": "consensus"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/neutrality",
+      "text": "neutrality"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -23145,6 +23295,11 @@
       "text": "pain"
     },
     {
+      "source": "/thoughts/causality",
+      "target": "/thoughts/Order-theory",
+      "text": "Order theory"
+    },
+    {
       "source": "/thoughts/censorship",
       "target": "/thoughts/infrastructure",
       "text": "infrastructure"
@@ -23181,6 +23336,11 @@
     },
     {
       "source": "/thoughts/clocks",
+      "target": "/thoughts/Order-theory",
+      "text": "order"
+    },
+    {
+      "source": "/thoughts/clocks",
       "target": "/thoughts/causality",
       "text": "causal"
     },
@@ -23193,6 +23353,11 @@
       "source": "/thoughts/clocks",
       "target": "/thoughts/causality",
       "text": "causal"
+    },
+    {
+      "source": "/thoughts/clocks",
+      "target": "/thoughts/Order-theory",
+      "text": "Order theory"
     },
     {
       "source": "/thoughts/collaborative-software",
@@ -26288,6 +26453,16 @@
       "source": "/thoughts/move-fast-and-break-things",
       "target": "/thoughts/software-and-politics",
       "text": "software and politics"
+    },
+    {
+      "source": "/thoughts/neutrality",
+      "target": "/thoughts/Rhizome-Proposal",
+      "text": "Rhizome proposal"
+    },
+    {
+      "source": "/thoughts/neutrality",
+      "target": "/thoughts/interoperability",
+      "text": "interoperability"
     },
     {
       "source": "/thoughts/new-DARPA",
