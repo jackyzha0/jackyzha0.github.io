@@ -42,6 +42,8 @@ Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message
 So we use logical clocks to work based off of *the number of events that have occurred rather than actual time passed.*
 
 ### Lamport Clocks
+Provides a **partial order** on ervents
+
 Logic
 - On initialization, set `t := 0` for each node
 - On any event on local node, `fn tick() -> t += 1`
@@ -64,6 +66,8 @@ However even now, given timestamps $L(a) < L(b)$, we can't tell whether $a \righ
 To separate [[thoughts/causality|causality]] from concurrent events, we need vector clocks!
 
 ### Vector Clocks
+Provides a **causal order** on ervents
+
 Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
 
 Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$
@@ -94,3 +98,49 @@ You can tell that versions are in conflict when neither vector clock “descend
 
 Vector Clock Example
 ![[thoughts/images/vector clock example.png]]
+
+## Hybrid Logical Clocks
+Physical and logical clocks both have non-ideal properties.
+- Logical clocks don't actually store any sort of date-time when events happen. Clients usually have a notion of time through actual wall time
+- BUT wall time isn't perfect either as clock drift is non-trivial and users can manually turn time backwards on their local machines
+
+*Note that this is not a substitute for Vector Clocks as they only provide partial order instead of causal order*
+
+Can we combine them to achieve better properties? 
+
+Hybrid Logical Clocks (HLCs) achieve
+- partial ordering
+- constant space
+- bounded different from physical time
+
+We can store a tuple containing:
+- `pt`: physical time (wall time)
+- `l`: logical time (holds maximum `pt` so far)
+- `c`: capturing causality when `l` is equal
+
+This tuple can be used directly as a replacement for a physical clock timestamp (and in fact works as a superposition on top of the NTP protocol without any interference)
+
+### Pseudocode
+- Initial state
+	- `l := 0`
+	- `c := 0`
+- Send / local event
+	- `l' := l`
+	- `l := max(l', pt)` update `l` to `pt` if applicable
+	- if `pt` is the same (`l == l'`):
+		- `c += 1` increment causality as logical time is the same
+	- if `pt` is updated:
+		- `c := 0` reset `c`
+	- timestamp message with `(l, c)`
+- Receive of message `m`
+	- `l' := l`
+	- `l := max(l', m.l, pt)`
+	- if all logical clocks are the same `l == l' == m.l`:
+		- `c := max(c, m.c) + 1` set to max causality known
+	- if our logic clocks are the same but message logical clock is behind `l == l'`:
+		- `c += 1` (ignore as message clock is behind)
+	- if our logic clock was behind the message logical clock and just got updated `l == m.l`
+		- `c := m.c + 1`
+	- otherwise `pt` was just updated
+		- `c := 0` reset `c`
+	- timestamp message with `(l, c)`

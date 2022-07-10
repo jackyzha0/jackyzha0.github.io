@@ -9,6 +9,43 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 10th
+- A lot of good meditations on adoption of tech that gives agency to users at a Hack Night that Rishi hosted :))
+- Currently at another session of the writing circle. Good to probably zoom out from a lot of the technical in-the-weeds work and re-orient about what this means for the average consumer
+- Do people care about data ownership and data agency?
+	- The average user probably doesn't. They want convenience and are comfortable with current options.
+	- But as a counterpoint, if you ask anyone on the street whether they would be comfortable sharing their entire browsing history right there on the spot, my bet is that ~95% of people will say no
+		- This could be a really fun social experiment: incrementally increase the amount you offer strangers to look at their browsing history
+		- How much does the average person value their privacy?
+	- Another question is why having a *real person* snoop on your data feels so different than large companies snooping and *profiting* off of your data
+		- I suspect a large part of this is due to learned helplessness
+		- We haven't ever really known what it is like for companies *not* to be doing that
+		- It feels abstract! A company remotely snooping on your data is something that a user could remain fully blissfully ignorant from
+	- I think people don't care because they haven't known what a possible future could look like
+		- People don't ask for cars because all they've known in their lives are horses. They can only think of faster horses
+- How do we convince the average consumer that this is something worth caring about?
+	- Near zero-friction doesn't necessarily people will want to switch to this new paradigm. It is still a non-neglible activation energy to move platforms
+	- This probably won't happen unless there is both 1) a radical *push away* from existing centralized platforms and 2) a strong and convincing *pull towards* new decentralized platforms like Rhizome
+		1. This is where I think regulation, anti-trust, and legal requirements for data usage transparency are incredibly important! There are institutions just as powerful as these large tech companies that can serve as a counterbalancing force too
+			- This still feels incredibly difficult as these tech companies have started invading these regulatory bodies and holding immense lobbying power
+		2. We do so by providing tangible and real improvements over existing products (that matter to the average consumer)
+			- Never need to manage a million different accounts again
+			- Local-first feels lighter and faster
+			- Easily understandable ToS (people know what access are giving away)
+			- End-user programming should be trivial and non-technical (i.e. making integrations like Zapier useless)
+- Why would companies care about this model of computing?
+	- tldr; building and maintaining a data moat is hard
+	- Computation happens almost entirely on end-user devices, need to host massive infrastructure goes way down (unless you are doing heavy ML and info processing, which most companies are not)
+	- New markets for lending compute to the masses rather than just to programmers and tech companies
+	- Almost all the grunt work of data transformations is eliminated so companies can focus on business logic
+	- GDPR compliance built-in, users have freedom to manage their own data
+- Meta-meditations: this was incredibly helpful to iron out philosophy a bit more. I think this is starting to make more sense from both a user and company perspective, but only for people who *care* about these sorts of things. I think end-game is getting my Mom to understand why this is important.
+
+### July 9th
+- Various notes on CRDTs
+	- Seem to require [[thoughts/consensus|consensus]] for state compaction
+	- Learning about [[thoughts/clocks#Hybrid Logical Clocks|HLCs]] and maintaining [[thoughts/causality#Causal Order|causal order]] in CRDTs
+
 ### July 8th
 - Learning more about [[thoughts/CRDT|CRDTs]], [[thoughts/Order theory|Order Theory]]
 - I got my first email from a mutual which was along the lines of "help, I'm stuck in leetcode hell, how do I escape and do other things?"

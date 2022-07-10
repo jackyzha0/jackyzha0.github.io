@@ -30,6 +30,8 @@ Only 2 operations: `add(x)`, `delete(t)`
 ### Strings/Arrays
 We need to translate indices into unique immutable positions (what the user intuitively means when they say 'insert here').
 
+This assumption of relative order of elements remains constant over time is called the **strong list specification**.
+
 Indices are based off of what % of the text they get inserted at. 0.0 is the index of the start sequence, 1.0 is the index of the end sequence. 
 
 ```
@@ -67,3 +69,13 @@ The merge operator $\sqcup$ must be:
 1. Commutative: $s_1 \sqcup s_2 = s_2 \sqcup s_1$
 2. Associative: $(s_1 \sqcup s_2) \sqcup s_3 = s_1 \sqcup (s_2 \sqcup s_3)$
 3. Idempotent: $s_1 \sqcup s_1 = s_1$
+
+## State Compaction
+Technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
+
+> So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. [(#2)](https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2)
+
+## Strategies
+- Add-wins
+- Remove-wins
+- Last-writer-wins

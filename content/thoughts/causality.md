@@ -21,4 +21,4 @@ aliases:
 	- Similar notation to [[thoughts/Order theory|Order theory]]
 
 ## Causal Order
-- $\prec$ is a causal order, it is consistent with causality, a strict total order on events
+- $\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the 'happens-before' relation
