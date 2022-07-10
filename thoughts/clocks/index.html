@@ -473,7 +473,7 @@ if (!doNotTrack) {
     <h1 class="title">Clocks</h1>
     <article>
       <p class="meta">
-          Last updated July 8, 2022
+          Last updated July 10, 2022
       </p>
       <ul class="tags">
     
@@ -491,6 +491,11 @@ if (!doNotTrack) {
       <ol>
         <li><a href="#lamport-clocks">Lamport Clocks</a></li>
         <li><a href="#vector-clocks">Vector Clocks</a></li>
+      </ol>
+    </li>
+    <li><a href="#hybrid-logical-clocks">Hybrid Logical Clocks</a>
+      <ol>
+        <li><a href="#pseudocode">Pseudocode</a></li>
       </ol>
     </li>
   </ol>
@@ -533,27 +538,21 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -609,27 +608,21 @@ if (!doNotTrack) {
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
+    
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -685,6 +678,38 @@ if (!doNotTrack) {
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -706,6 +731,178 @@ if (!doNotTrack) {
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -773,6 +970,7 @@ if (!doNotTrack) {
 <p>Problem is that <em>even with synced clocks</em> we can have $t_2 &lt; t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order</a> is inconsistent with expected order! This can happen when the clock skew is <em>less</em> than the one way network latency.</p>
 <p>So we use logical clocks to work based off of <em>the number of events that have occurred rather than actual time passed.</em></p>
 <a href="#lamport-clocks"><h3 id="lamport-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Lamport Clocks</h3></a>
+<p>Provides a <strong>partial order</strong> on ervents</p>
 <p>Logic</p>
 <ul>
 <li>On initialization, set <code>t := 0</code> for each node</li>
@@ -792,6 +990,7 @@ if (!doNotTrack) {
 <p>However even now, given timestamps $L(a) &lt; L(b)$, we can&rsquo;t tell whether $a \rightarrow b$ or $a \parallel b$</p>
 <p>To separate <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a> from concurrent events, we need vector clocks!</p>
 <a href="#vector-clocks"><h3 id="vector-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Clocks</h3></a>
+<p>Provides a <strong>causal order</strong> on ervents</p>
 <p>Instead of having a single counter <code>t</code> for all nodes, we keep a vector timestamp $a$ of an event for <em>each</em> node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$</p>
 <p>Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$</p>
 <p>Logic</p>
@@ -823,6 +1022,80 @@ if (!doNotTrack) {
 <p>You can tell that versions are in conflict when neither vector clock “descends” from the other. In order for vector clock B to be considered a descendant of vector clock A, each marker in vector clock A must have a corresponding marker in B that has a revision number greater than or equal to the marker in vector clock A. Markers not contained in a vector clock can be considered to have revision number zero.</p>
 <p>Vector Clock Example
 <img src="/thoughts/images/vector clock example.png" title="/thoughts/images/vector clock example.png"></p>
+<a href="#hybrid-logical-clocks"><h2 id="hybrid-logical-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Hybrid Logical Clocks</h2></a>
+<p>Physical and logical clocks both have non-ideal properties.</p>
+<ul>
+<li>Logical clocks don&rsquo;t actually store any sort of date-time when events happen. Clients usually have a notion of time through actual wall time</li>
+<li>BUT wall time isn&rsquo;t perfect either as clock drift is non-trivial and users can manually turn time backwards on their local machines</li>
+</ul>
+<p><em>Note that this is not a substitute for Vector Clocks as they only provide partial order instead of causal order</em></p>
+<p>Can we combine them to achieve better properties?</p>
+<p>Hybrid Logical Clocks (HLCs) achieve</p>
+<ul>
+<li>partial ordering</li>
+<li>constant space</li>
+<li>bounded different from physical time</li>
+</ul>
+<p>We can store a tuple containing:</p>
+<ul>
+<li><code>pt</code>: physical time (wall time)</li>
+<li><code>l</code>: logical time (holds maximum <code>pt</code> so far)</li>
+<li><code>c</code>: capturing causality when <code>l</code> is equal</li>
+</ul>
+<p>This tuple can be used directly as a replacement for a physical clock timestamp (and in fact works as a superposition on top of the NTP protocol without any interference)</p>
+<a href="#pseudocode"><h3 id="pseudocode"><span class="hanchor" ariaLabel="Anchor"># </span>Pseudocode</h3></a>
+<ul>
+<li>Initial state
+<ul>
+<li><code>l := 0</code></li>
+<li><code>c := 0</code></li>
+</ul>
+</li>
+<li>Send / local event
+<ul>
+<li><code>l' := l</code></li>
+<li><code>l := max(l', pt)</code> update <code>l</code> to <code>pt</code> if applicable</li>
+<li>if <code>pt</code> is the same (<code>l == l'</code>):
+<ul>
+<li><code>c += 1</code> increment causality as logical time is the same</li>
+</ul>
+</li>
+<li>if <code>pt</code> is updated:
+<ul>
+<li><code>c := 0</code> reset <code>c</code></li>
+</ul>
+</li>
+<li>timestamp message with <code>(l, c)</code></li>
+</ul>
+</li>
+<li>Receive of message <code>m</code>
+<ul>
+<li><code>l' := l</code></li>
+<li><code>l := max(l', m.l, pt)</code></li>
+<li>if all logical clocks are the same <code>l == l' == m.l</code>:
+<ul>
+<li><code>c := max(c, m.c) + 1</code> set to max causality known</li>
+</ul>
+</li>
+<li>if our logic clocks are the same but message logical clock is behind <code>l == l'</code>:
+<ul>
+<li><code>c += 1</code> (ignore as message clock is behind)</li>
+</ul>
+</li>
+<li>if our logic clock was behind the message logical clock and just got updated <code>l == m.l</code>
+<ul>
+<li><code>c := m.c + 1</code></li>
+</ul>
+</li>
+<li>otherwise <code>pt</code> was just updated
+<ul>
+<li><code>c := 0</code> reset <code>c</code></li>
+</ul>
+</li>
+<li>timestamp message with <code>(l, c)</code></li>
+</ul>
+</li>
+</ul>
  
 
     </article>

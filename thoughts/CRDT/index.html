@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Conflict-free Replicated Data Type (CRDT)</h1>
     <article>
       <p class="meta">
-          Last updated July 8, 2022
+          Last updated July 10, 2022
       </p>
       <ul class="tags">
     
@@ -494,6 +494,8 @@ if (!doNotTrack) {
       </ol>
     </li>
     <li><a href="#state-based">State Based</a></li>
+    <li><a href="#state-compaction">State Compaction</a></li>
+    <li><a href="#strategies">Strategies</a></li>
   </ol>
 </nav>
       </aside>
@@ -511,6 +513,54 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -775,6 +825,7 @@ if (!doNotTrack) {
 </ol>
 <a href="#stringsarrays"><h3 id="stringsarrays"><span class="hanchor" ariaLabel="Anchor"># </span>Strings/Arrays</h3></a>
 <p>We need to translate indices into unique immutable positions (what the user intuitively means when they say &lsquo;insert here&rsquo;).</p>
+<p>This assumption of relative order of elements remains constant over time is called the <strong>strong list specification</strong>.</p>
 <p>Indices are based off of what % of the text they get inserted at. 0.0 is the index of the start sequence, 1.0 is the index of the end sequence.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -821,6 +872,19 @@ if (!doNotTrack) {
 <li>Associative: $(s_1 \sqcup s_2) \sqcup s_3 = s_1 \sqcup (s_2 \sqcup s_3)$</li>
 <li>Idempotent: $s_1 \sqcup s_1 = s_1$</li>
 </ol>
+<a href="#state-compaction"><h2 id="state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>State Compaction</h2></a>
+<p>Technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this.</p>
+<blockquote>
+<p>So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. 
+
+<a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a></p>
+</blockquote>
+<a href="#strategies"><h2 id="strategies"><span class="hanchor" ariaLabel="Anchor"># </span>Strategies</h2></a>
+<ul>
+<li>Add-wins</li>
+<li>Remove-wins</li>
+<li>Last-writer-wins</li>
+</ul>
  
 
     </article>

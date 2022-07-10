@@ -1328,6 +1328,11 @@
           "source": "/thoughts/CRDT",
           "target": "/thoughts/causality",
           "text": "causal consistency"
+        },
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
         }
       ],
       "/thoughts/Chestertons-Fence": [
@@ -2943,6 +2948,11 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/CRDT",
@@ -13557,7 +13567,17 @@
           "text": "consensus"
         },
         {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
           "source": "/thoughts/Raft-Consensus-Algorithm",
+          "target": "/thoughts/consensus",
+          "text": "consensus"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/consensus",
           "text": "consensus"
         },
@@ -20670,6 +20690,11 @@
       "text": "causal consistency"
     },
     {
+      "source": "/thoughts/CRDT",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
+    },
+    {
       "source": "/thoughts/Chestertons-Fence",
       "target": "/thoughts/terminology",
       "text": "terminology"
@@ -22138,6 +22163,11 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/consensus",
+      "text": "consensus"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
