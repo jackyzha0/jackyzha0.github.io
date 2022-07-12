@@ -6,7 +6,36 @@
     <description>Recent content in seed on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CRDT Implementations</title>
+      <link>https://jzhao.xyz/thoughts/CRDT-Implementations/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT-Implementations/</guid>
+      <description>All examples below are written in pseudocode that happens to carry a lot of syntax from Typescript.</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://jzhao.xyz/thoughts/privacy/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/privacy/</guid>
+      <description>Conflicting need between companies and users
+ Companies want to use data to improve their products Users want to protect their privacy  Data anonymization isn&amp;rsquo;t enough.</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://jzhao.xyz/thoughts/visualization/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/visualization/</guid>
+      <description>Mostly from Envisioning Information by Edward R. Tufte
+High density visualization  High-density designs allow viewers to select, to narrate, to recast and personalize data for their own uses.</description>
+    </item>
+    
     <item>
       <title>Order theory</title>
       <link>https://jzhao.xyz/thoughts/Order-theory/</link>

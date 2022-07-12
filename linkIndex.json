@@ -96,6 +96,11 @@
         },
         {
           "source": "/books",
+          "target": "/thoughts/visualization",
+          "text": "Envisioning Information"
+        },
+        {
+          "source": "/books",
           "target": "/thoughts/In-Over-Our-Heads",
           "text": "In Over Our Heads: The Mental Demands of Modern Life"
         },
@@ -1024,6 +1029,11 @@
         },
         {
           "source": "/thoughts/A-City-is-not-a-Computer",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/A-City-is-not-a-Computer",
           "target": "/thoughts/web3",
           "text": "web3"
         },
@@ -1058,6 +1068,11 @@
           "source": "/thoughts/A-City-is-not-a-Tree",
           "target": "/thoughts/urban-planning",
           "text": "Urban planning"
+        },
+        {
+          "source": "/thoughts/A-City-is-not-a-Tree",
+          "target": "/thoughts/visualization",
+          "text": "visualization"
         },
         {
           "source": "/thoughts/A-City-is-not-a-Tree",
@@ -1328,6 +1343,16 @@
           "source": "/thoughts/CRDT",
           "target": "/thoughts/causality",
           "text": "causal consistency"
+        },
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/CRDT-Implementations",
+          "text": "CRDT Implementations"
+        },
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/Order-theory",
+          "text": "order theory"
         },
         {
           "source": "/thoughts/CRDT",
@@ -2883,6 +2908,11 @@
         },
         {
           "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
           "target": "/thoughts/local-first-software",
           "text": "local-first software"
         },
@@ -2948,6 +2978,16 @@
         }
       ],
       "/thoughts/Rhizome-Research-Log": [
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/consensus",
@@ -3271,6 +3311,11 @@
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
           "target": "/thoughts/transparency",
           "text": "transparency"
+        },
+        {
+          "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
         },
         {
           "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -6268,6 +6313,11 @@
           "source": "/thoughts/information",
           "target": "/thoughts/representation",
           "text": "Representation"
+        },
+        {
+          "source": "/thoughts/information",
+          "target": "/thoughts/visualization",
+          "text": "visualization"
         }
       ],
       "/thoughts/information-behaviour": [
@@ -7166,6 +7216,11 @@
         },
         {
           "source": "/thoughts/local-first-software",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/local-first-software",
           "target": "/thoughts/CRDT",
           "text": "CRDTs"
         }
@@ -7234,6 +7289,11 @@
           "source": "/thoughts/lost-knowledge",
           "target": "/posts/networked-thought",
           "text": "networked thought"
+        },
+        {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/thoughts/search",
+          "text": "search"
         }
       ],
       "/thoughts/machine-learning": [
@@ -8656,6 +8716,11 @@
         },
         {
           "source": "/thoughts/search",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
+        },
+        {
+          "source": "/thoughts/search",
           "target": "/thoughts/Data-Capitalism",
           "text": "data capitalism"
         },
@@ -8663,6 +8728,11 @@
           "source": "/thoughts/search",
           "target": "/thoughts/library",
           "text": "library"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
         }
       ],
       "/thoughts/security": [
@@ -9541,6 +9611,11 @@
           "source": "/thoughts/web3",
           "target": "/thoughts/peer-to-peer",
           "text": "P2P"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
         },
         {
           "source": "/thoughts/web3",
@@ -10436,6 +10511,13 @@
           "source": "/thoughts/local-first-software",
           "target": "/thoughts/CRDT",
           "text": "CRDTs"
+        }
+      ],
+      "/thoughts/CRDT-Implementations": [
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/CRDT-Implementations",
+          "text": "CRDT Implementations"
         }
       ],
       "/thoughts/Chestertons-Fence": [
@@ -11796,6 +11878,11 @@
         }
       ],
       "/thoughts/Order-theory": [
+        {
+          "source": "/thoughts/CRDT",
+          "target": "/thoughts/Order-theory",
+          "text": "order theory"
+        },
         {
           "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/Order-theory",
@@ -17654,6 +17741,48 @@
           "text": "prestige"
         }
       ],
+      "/thoughts/privacy": [
+        {
+          "source": "/thoughts/A-City-is-not-a-Computer",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/Rhizome-Proposal",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/local-first-software",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
+        },
+        {
+          "source": "/thoughts/search",
+          "target": "/thoughts/privacy",
+          "text": "Privacy"
+        },
+        {
+          "source": "/thoughts/web3",
+          "target": "/thoughts/privacy",
+          "text": "privacy"
+        }
+      ],
       "/thoughts/progress": [
         {
           "source": "/thoughts/innovation",
@@ -18200,6 +18329,11 @@
           "text": "search"
         },
         {
+          "source": "/thoughts/lost-knowledge",
+          "target": "/thoughts/search",
+          "text": "search"
+        },
+        {
           "source": "/thoughts/social-graphs",
           "target": "/thoughts/search",
           "text": "search"
@@ -18540,6 +18674,11 @@
         },
         {
           "source": "/thoughts/PSL-FLM-Impossibility-Result",
+          "target": "/thoughts/system-model",
+          "text": "system model"
+        },
+        {
+          "source": "/thoughts/Rhizome-Research-Log",
           "target": "/thoughts/system-model",
           "text": "system model"
         },
@@ -19212,6 +19351,23 @@
           "text": "virtual worlds"
         }
       ],
+      "/thoughts/visualization": [
+        {
+          "source": "/books",
+          "target": "/thoughts/visualization",
+          "text": "Envisioning Information"
+        },
+        {
+          "source": "/thoughts/A-City-is-not-a-Tree",
+          "target": "/thoughts/visualization",
+          "text": "visualization"
+        },
+        {
+          "source": "/thoughts/information",
+          "target": "/thoughts/visualization",
+          "text": "visualization"
+        }
+      ],
       "/thoughts/vr": [
         {
           "source": "/thoughts/virtual-worlds",
@@ -19533,6 +19689,11 @@
       "source": "/books",
       "target": "/thoughts/games",
       "text": "Games: Agency as Art"
+    },
+    {
+      "source": "/books",
+      "target": "/thoughts/visualization",
+      "text": "Envisioning Information"
     },
     {
       "source": "/books",
@@ -20416,6 +20577,11 @@
     },
     {
       "source": "/thoughts/A-City-is-not-a-Computer",
+      "target": "/thoughts/privacy",
+      "text": "privacy"
+    },
+    {
+      "source": "/thoughts/A-City-is-not-a-Computer",
       "target": "/thoughts/web3",
       "text": "web3"
     },
@@ -20448,6 +20614,11 @@
       "source": "/thoughts/A-City-is-not-a-Tree",
       "target": "/thoughts/urban-planning",
       "text": "Urban planning"
+    },
+    {
+      "source": "/thoughts/A-City-is-not-a-Tree",
+      "target": "/thoughts/visualization",
+      "text": "visualization"
     },
     {
       "source": "/thoughts/A-City-is-not-a-Tree",
@@ -20688,6 +20859,16 @@
       "source": "/thoughts/CRDT",
       "target": "/thoughts/causality",
       "text": "causal consistency"
+    },
+    {
+      "source": "/thoughts/CRDT",
+      "target": "/thoughts/CRDT-Implementations",
+      "text": "CRDT Implementations"
+    },
+    {
+      "source": "/thoughts/CRDT",
+      "target": "/thoughts/Order-theory",
+      "text": "order theory"
     },
     {
       "source": "/thoughts/CRDT",
@@ -22101,6 +22282,11 @@
     },
     {
       "source": "/thoughts/Rhizome-Proposal",
+      "target": "/thoughts/privacy",
+      "text": "Privacy"
+    },
+    {
+      "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/local-first-software",
       "text": "local-first software"
     },
@@ -22163,6 +22349,16 @@
       "source": "/thoughts/Rhizome-Proposal",
       "target": "/thoughts/Rhizome-Research-Log",
       "text": "research log here"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/system-model",
+      "text": "system model"
+    },
+    {
+      "source": "/thoughts/Rhizome-Research-Log",
+      "target": "/thoughts/privacy",
+      "text": "privacy"
     },
     {
       "source": "/thoughts/Rhizome-Research-Log",
@@ -22473,6 +22669,11 @@
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
       "target": "/thoughts/transparency",
       "text": "transparency"
+    },
+    {
+      "source": "/thoughts/Social-Bias-in-Information-Retrieval",
+      "target": "/thoughts/privacy",
+      "text": "privacy"
     },
     {
       "source": "/thoughts/Social-Bias-in-Information-Retrieval",
@@ -25300,6 +25501,11 @@
       "text": "Representation"
     },
     {
+      "source": "/thoughts/information",
+      "target": "/thoughts/visualization",
+      "text": "visualization"
+    },
+    {
       "source": "/thoughts/infrastructure",
       "target": "/thoughts/language",
       "text": "language"
@@ -26066,6 +26272,11 @@
     },
     {
       "source": "/thoughts/local-first-software",
+      "target": "/thoughts/privacy",
+      "text": "privacy"
+    },
+    {
+      "source": "/thoughts/local-first-software",
       "target": "/thoughts/CRDT",
       "text": "CRDTs"
     },
@@ -26128,6 +26339,11 @@
       "source": "/thoughts/lost-knowledge",
       "target": "/posts/networked-thought",
       "text": "networked thought"
+    },
+    {
+      "source": "/thoughts/lost-knowledge",
+      "target": "/thoughts/search",
+      "text": "search"
     },
     {
       "source": "/thoughts/machine-learning",
@@ -27436,6 +27652,11 @@
     },
     {
       "source": "/thoughts/search",
+      "target": "/thoughts/privacy",
+      "text": "Privacy"
+    },
+    {
+      "source": "/thoughts/search",
       "target": "/thoughts/Data-Capitalism",
       "text": "data capitalism"
     },
@@ -27443,6 +27664,11 @@
       "source": "/thoughts/search",
       "target": "/thoughts/library",
       "text": "library"
+    },
+    {
+      "source": "/thoughts/search",
+      "target": "/thoughts/privacy",
+      "text": "Privacy"
     },
     {
       "source": "/thoughts/security",
@@ -28303,6 +28529,11 @@
       "source": "/thoughts/web3",
       "target": "/thoughts/peer-to-peer",
       "text": "P2P"
+    },
+    {
+      "source": "/thoughts/web3",
+      "target": "/thoughts/privacy",
+      "text": "privacy"
     },
     {
       "source": "/thoughts/web3",

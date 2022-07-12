@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Rhizome Research Log</h1>
     <article>
       <p class="meta">
-          Last updated July 10, 2022
+          Last updated July 11, 2022
       </p>
       <ul class="tags">
     
@@ -489,6 +489,7 @@ if (!doNotTrack) {
   <ol>
     <li><a href="#july">July</a>
       <ol>
+        <li><a href="#july-11th">July 11th</a></li>
         <li><a href="#july-10th">July 10th</a></li>
         <li><a href="#july-9th">July 9th</a></li>
         <li><a href="#july-8th">July 8th</a></li>
@@ -563,6 +564,134 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -4513,6 +4642,20 @@ if (!doNotTrack) {
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</p>
 <a href="#july"><h2 id="july"><span class="hanchor" ariaLabel="Anchor"># </span>July</h2></a>
+<a href="#july-11th"><h3 id="july-11th"><span class="hanchor" ariaLabel="Anchor"># </span>July 11th</h3></a>
+<ul>
+<li>Seems like there are a lot of open research questions in CRDTs that I could plausibly spend <em>years</em> working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic encryption)</li>
+<li>I need to read more about this but it seems like most traditional consensus algorithms require synchronicity from all nodes for them to be considered honest. I wonder how we can reconcile this methods like CRDTs that allow for more asynchronous forms of consistency
+<ul>
+<li>Is it possible to take advantage of the partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> and having CRDT-like behaviour in async modes and Raft/Paxos-like behaviour during synchronous periods for compaction</li>
+<li>This is especially important as users will rarely have all (or even supermajority) of their nodes online at any given time. Will need to look into variations on Raft that tolerate live membership changes
+<ul>
+<li>&ldquo;The network can partition and recover, and nodes can operate in disconnected mode for some time.&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <a href="#july-10th"><h3 id="july-10th"><span class="hanchor" ariaLabel="Anchor"># </span>July 10th</h3></a>
 <ul>
 <li>A lot of good meditations on adoption of tech that gives agency to users at a Hack Night that Rishi hosted :))</li>
@@ -4523,7 +4666,7 @@ if (!doNotTrack) {
 <li>But as a counterpoint, if you ask anyone on the street whether they would be comfortable sharing their entire browsing history right there on the spot, my bet is that ~95% of people will say no
 <ul>
 <li>This could be a really fun social experiment: incrementally increase the amount you offer strangers to look at their browsing history</li>
-<li>How much does the average person value their privacy?</li>
+<li>How much does the average person value their <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">privacy</a>?</li>
 </ul>
 </li>
 <li>Another question is why having a <em>real person</em> snoop on your data feels so different than large companies snooping and <em>profiting</em> off of your data

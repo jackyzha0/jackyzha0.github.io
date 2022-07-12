@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Conflict-free Replicated Data Type (CRDT)</h1>
     <article>
       <p class="meta">
-          Last updated July 10, 2022
+          Last updated July 11, 2022
       </p>
       <ul class="tags">
     
@@ -486,16 +486,22 @@ if (!doNotTrack) {
           <nav id="TableOfContents">
   <ol>
     <li><a href="#causal-consistency">Causal Consistency</a></li>
-    <li><a href="#operation-based">Operation-based</a>
+    <li><a href="#operation-based">Operation-based</a></li>
+    <li><a href="#state-based">State-based</a></li>
+    <li><a href="#delta-based-hybrid">Delta-based (hybrid)</a></li>
+    <li><a href="#strategies-for-designing-crdts">Strategies for Designing CRDTs</a>
       <ol>
-        <li><a href="#set">Set</a></li>
-        <li><a href="#stringsarrays">Strings/Arrays</a></li>
-        <li><a href="#arbitrary-json">Arbitrary JSON</a></li>
+        <li><a href="#conflict-resolution">Conflict Resolution</a></li>
+        <li><a href="#undo">Undo</a></li>
+        <li><a href="#secure-crdts">Secure CRDTs</a></li>
       </ol>
     </li>
-    <li><a href="#state-based">State Based</a></li>
-    <li><a href="#state-compaction">State Compaction</a></li>
-    <li><a href="#strategies">Strategies</a></li>
+    <li><a href="#performance">Performance</a>
+      <ol>
+        <li><a href="#storage--state-compaction">Storage + State Compaction</a></li>
+      </ol>
+    </li>
+    <li><a href="#readings">Readings</a></li>
   </ol>
 </nav>
       </aside>
@@ -521,23 +527,27 @@ if (!doNotTrack) {
   
     
   
-    
   
     
-  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
-    
+
   
-    
   
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -569,23 +579,27 @@ if (!doNotTrack) {
   
     
   
-    
   
     
-  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
-    
+
   
-    
   
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -617,23 +631,27 @@ if (!doNotTrack) {
   
     
   
-    
   
     
-  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
-    
+
   
-    
   
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -665,23 +683,27 @@ if (!doNotTrack) {
   
     
   
-    
   
     
-  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
-    
+
   
-    
   
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -713,28 +735,6 @@ if (!doNotTrack) {
   
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
   
     
       
@@ -761,23 +761,27 @@ if (!doNotTrack) {
   
     
   
-    
   
     
-  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
-    
+
   
-    
   
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -810,61 +814,42 @@ if (!doNotTrack) {
 <p>CRDTs should always strive to preserve user intent.</p>
 <p>Two main families of CRDTs are operation-based and state-based CRDTs. They have their trade offs</p>
 <ol>
-<li>Operation-based typically has smaller messages</li>
-<li>State-based can tolerate message loss/duplication</li>
+<li>Operation-based
+<ul>
+<li>generally smaller messages</li>
+<li>requires <a href="/thoughts/causality#Causal Order" rel="noopener" class="internal-link" data-src="/thoughts/causality">causally-ordered delivery</a> for messages</li>
+<li>can be more complex because it requires reasoning about history</li>
+</ul>
+</li>
+<li>State-based
+<ul>
+<li>can tolerate message loss/duplication</li>
+<li>requires <a href="/thoughts/message-broadcast#Best-effort" rel="noopener" class="internal-link" data-src="/thoughts/message-broadcast">best-effort broadcast</a> delivery for messages</li>
+</ul>
+</li>
 </ol>
+<p>See example implementations here: <a href="/thoughts/CRDT-Implementations" rel="noopener" class="internal-link" data-src="/thoughts/CRDT-Implementations">CRDT Implementations</a></p>
 <a href="#causal-consistency"><h2 id="causal-consistency"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Consistency</h2></a>
 <p>Causality is in each change (delta) as a <a href="/thoughts/clocks#Vector Clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">vector clock</a> which encodes all of that delta&rsquo;s causal dependencies. Each delta is then queued until its vector clock is complete.</p>
 <a href="#operation-based"><h2 id="operation-based"><span class="hanchor" ariaLabel="Anchor"># </span>Operation-based</h2></a>
-<p>Replication as commutative operations (order doesn&rsquo;t matter!)</p>
-<a href="#set"><h3 id="set"><span class="hanchor" ariaLabel="Anchor"># </span>Set</h3></a>
-<p>Only 2 operations: <code>add(x)</code>, <code>delete(t)</code></p>
-<ol>
-<li><code>add(x)</code>: generates a new unique <code>t</code> and adds element <code>e := (t, x)</code> to the set. This is serialized as <code>(t,x)</code> and causally broadcasted to all other nodes</li>
-<li><code>delete(t)</code>: deletes the element <code>e = (t, x)</code> from the set. This is serialized as <code>t</code> and is broadcasted to all other nodes. <code>t</code> is guaranteed to exist due to causal ordering.</li>
-</ol>
-<a href="#stringsarrays"><h3 id="stringsarrays"><span class="hanchor" ariaLabel="Anchor"># </span>Strings/Arrays</h3></a>
-<p>We need to translate indices into unique immutable positions (what the user intuitively means when they say &lsquo;insert here&rsquo;).</p>
-<p>This assumption of relative order of elements remains constant over time is called the <strong>strong list specification</strong>.</p>
-<p>Indices are based off of what % of the text they get inserted at. 0.0 is the index of the start sequence, 1.0 is the index of the end sequence.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0.0       1.0
-</span></span><span class="line"><span class="cl">NUL       NUL
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Inserting a single character would be halfway between 0.0 and 1.0 so it would have an index of 0.5.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0.0   0.5   1.0
-</span></span><span class="line"><span class="cl">NUL   &#39;B&#39;   NUL
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Inserting to the left of &lsquo;B&rsquo; would be between 0.0 and 0.5 so 0.25.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0.0  0.25  0.5   1.0
-</span></span><span class="line"><span class="cl">NUL   &#39;A&#39;  &#39;B&#39;   NUL
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Indices are never ambiguous! Causal broadcast is required so the insertion of a character is delivered before its deletion.</p>
-<a href="#arbitrary-json"><h3 id="arbitrary-json"><span class="hanchor" ariaLabel="Anchor"># </span>Arbitrary JSON</h3></a>
-<p>Can work for <em>any</em> JSON using only 4 operations: <code>set</code>, <code>delete</code>, <code>increment</code>, <code>insert</code></p>
-<p><code>set</code> is the only operation among them which is <em>convergent</em> instead of commutative. Convergent means that all actors will arrive at the same state but values during convergence (i.e. as they receive updates) may differ. Usually last-writer-wins (LWW).</p>
-<p>Concept of time is implemented by giving each field (including nested ones!) a UUID. Assigns give a field a new UUID. All other operations specify which field they are operating on by UUID (nested ones need to provide the UUID of each parent required to reach the nested field). It is a sort of versioning that holds the state that CRDTs need to autonomously resolve conflicts <em>without</em> consensus.</p>
-<a href="#state-based"><h2 id="state-based"><span class="hanchor" ariaLabel="Anchor"># </span>State Based</h2></a>
+<blockquote>
+<p>Sometimes also called commutative replicated data types (CmRDT)</p>
+</blockquote>
+<p>Replication requires one of the following assumptions:</p>
+<ul>
+<li>all concurrent operations to commute given <strong><a href="/thoughts/causality#Causal Order" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal ordering</a></strong> (most common)</li>
+<li>all operations to commute given no ordering</li>
+<li>all operations to commute and be idempotent if message duplication can occur</li>
+</ul>
+<p>History is kept through the notion of a causal history $\mathcal{C}$</p>
+<ul>
+<li>Initially, $\mathcal{C}(x_i) = \varnothing$</li>
+<li>After executing the 2nd (downstream) phase of operation $f$, $\mathcal{C}(f(x_i)) = \mathcal{C}(x_i) \cup { f }$</li>
+</ul>
+<a href="#state-based"><h2 id="state-based"><span class="hanchor" ariaLabel="Anchor"># </span>State-based</h2></a>
+<blockquote>
+<p>Sometimes also called convergent replicated data types (CvRDT)</p>
+</blockquote>
 <p>Can broadcast the values of the state using <a href="/thoughts/message-broadcast#Best-effort" rel="noopener" class="internal-link" data-src="/thoughts/message-broadcast">best-effort broadcast</a> and then merging using a defined merge operator $\sqcup$.</p>
 <p>The merge operator $\sqcup$ must be:</p>
 <ol>
@@ -872,18 +857,63 @@ if (!doNotTrack) {
 <li>Associative: $(s_1 \sqcup s_2) \sqcup s_3 = s_1 \sqcup (s_2 \sqcup s_3)$</li>
 <li>Idempotent: $s_1 \sqcup s_1 = s_1$</li>
 </ol>
-<a href="#state-compaction"><h2 id="state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>State Compaction</h2></a>
+<p>To fully specify a state-based CRDT, implementer must define</p>
+<ol>
+<li>Payload: the initial value of the data type (on each replicate)</li>
+<li>Queries: a function that computes a view of the payload and has no side effects</li>
+<li>Update: a function that when evaluated, has side-effects on the payload (evaluated locally at source)</li>
+<li>Compare: a function that compares two states in the semilattice (see: <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a>)</li>
+<li>Merge: a function that performs a least-upper-bound merge on two states</li>
+</ol>
+<p>History is kept through the notion of a causal history $\mathcal{C}$</p>
+<ul>
+<li>Initially, $\mathcal{C}(x_i) = \varnothing$</li>
+<li>After an update operation $f$, $\mathcal{C}(f(x_i)) = \mathcal{C}(x_i) \cup { f }$</li>
+<li>After merging states $x_i$, $x_j$, $\mathcal{C}(merge(x_i, x_j)) = \mathcal{C}(x_i) \cup \mathcal{C}(x_j)$
+The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mathcal{C}(f) \subset \mathcal{C}(g)$</li>
+</ul>
+<a href="#delta-based-hybrid"><h2 id="delta-based-hybrid"><span class="hanchor" ariaLabel="Anchor"># </span>Delta-based (hybrid)</h2></a>
+<p>Delta-based CRDTs propagate delta-mutators that encode the changes that have been made to a replica since the last communication.</p>
+<p>For efficiency, CRDT implementations can &lsquo;hold on&rsquo; to outbound events and compact/compress the log by rewriting operations (e.g. turning two <code>add(1)</code> operations into a single <code>add(2)</code> operation)</p>
+<p>[tk: Big delta state CRDTs]
+[tk: Join-decompositions]</p>
+<a href="#strategies-for-designing-crdts"><h2 id="strategies-for-designing-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Strategies for Designing CRDTs</h2></a>
+<p>A CRDT can be specified by relying on:</p>
+<ol>
+<li>the full history of updates executed;</li>
+<li>the happens-before relation among updates; and</li>
+<li>an arbitration relation among updates (when necessary)</li>
+</ol>
+<p>A query can be specified as a function that uses this information and the value of parameters to compute the result (i.e. goes from the state to a value).</p>
+<a href="#conflict-resolution"><h3 id="conflict-resolution"><span class="hanchor" ariaLabel="Anchor"># </span>Conflict Resolution</h3></a>
+<ul>
+<li>Add-wins</li>
+<li>Remove-wins</li>
+<li>Last-writer-wins</li>
+</ul>
+<a href="#undo"><h3 id="undo"><span class="hanchor" ariaLabel="Anchor"># </span>Undo</h3></a>
+<p>[tk, look at Logoot-Undo]</p>
+<ul>
+<li>does this conflict with potential storage optimizations like state compaction?</li>
+</ul>
+<a href="#secure-crdts"><h3 id="secure-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Secure CRDTs</h3></a>
+<p>[tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]</p>
+<a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
+<a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this.</p>
 <blockquote>
 <p>So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. 
 
 <a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a></p>
 </blockquote>
-<a href="#strategies"><h2 id="strategies"><span class="hanchor" ariaLabel="Anchor"># </span>Strategies</h2></a>
+<a href="#readings"><h2 id="readings"><span class="hanchor" ariaLabel="Anchor"># </span>Readings</h2></a>
 <ul>
-<li>Add-wins</li>
-<li>Remove-wins</li>
-<li>Last-writer-wins</li>
+<li>
+
+<a href="https://hal.inria.fr/inria-00555588/document" rel="noopener">A comprehensive study of CRDTs</a></li>
+<li>
+
+<a href="https://arxiv.org/pdf/1806.10254.pdf" rel="noopener">Conflict-free Replicated Data Types: An Overview</a></li>
 </ul>
  
 
