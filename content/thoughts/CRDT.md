@@ -51,13 +51,6 @@ The merge operator $\sqcup$ must be:
 2. Associative: $(s_1 \sqcup s_2) \sqcup s_3 = s_1 \sqcup (s_2 \sqcup s_3)$
 3. Idempotent: $s_1 \sqcup s_1 = s_1$
 
-To fully specify a state-based CRDT, implementer must define
-1. Payload: the initial value of the data type (on each replicate)
-2. Queries: a function that computes a view of the payload and has no side effects
-3. Update: a function that when evaluated, has side-effects on the payload (evaluated locally at source)
-4. Compare: a function that compares two states in the semilattice (see: [[thoughts/Order theory|order theory]])
-5. Merge: a function that performs a least-upper-bound merge on two states
-
 History is kept through the notion of a causal history $\mathcal{C}$
 - Initially, $\mathcal{C}(x_i) = \varnothing$
 - After an update operation $f$, $\mathcal{C}(f(x_i)) = \mathcal{C}(x_i) \cup \{ f \}$

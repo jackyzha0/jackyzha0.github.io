@@ -6,6 +6,11 @@ tags:
 - technical
 ---
 
+- big touchscreen desk
+	- what if i just got a huge old flatscreen tv
+	- mounted 4 pressure sensors on each corner and then got a big sheet of thin glass
+	- 4 points is enough to pinpoint single-point touch accurately for dragging
+	- what if you could use it like a scratch space? like an always available figjam/muse board that also supports linking and trails a la [[thoughts/tools for thought#Memex|memex]]
 - wave function collapse for poetry
 	- bringing shape-shifting text to its most literal form
 	- [https://oskarstalberg.com/Townscaper/](https://oskarstalberg.com/Townscaper/ "https://oskarstalberg.com/Townscaper/") for words
@@ -44,18 +49,14 @@ tags:
 	- CRDTs for databases? https://archive.jlongster.com/using-crdts-in-the-wild
 		- https://cse.buffalo.edu/tech-reports/2014-04.pdf
 	- distributed state
--   tools for thought applied to IDEs?
-	-   IDEs as graph editors?
-- more on decentralized tech in [Rhizome Proposal](thoughts/Rhizome%20Proposal.md)
-- permaweb npm?
-	- pinning specific code versions
+- tools for thought applied to IDEs?
+	- IDEs as graph editors?
 -   LRU blockchain
 	-   RBAC blockchain???
 	-   groups of roles
 	-   mutability in a window
 	-   permanence outside of it
 	-   edit only the last message you send
--   recaptcha model for moderation / proof of humanity
 -  website inspo
 	- hand-drawn vibe
 	- have a featured/favourites section to help people find stuff

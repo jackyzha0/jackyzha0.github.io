@@ -66,7 +66,7 @@ class StateCRDT<State> {
 		}
 	}
 	
-	// any global function that take in arguments and has two phases
+	// any function that when evaluated, has side-effects on the payload
 	@update
 	function update(...args: any[]) {
 		if (local_invariant) {
@@ -74,11 +74,13 @@ class StateCRDT<State> {
 		}	
 	}
 
+	// a function that compares two states in the semilattice (see: order theory)
 	@compare
 	function cmp(a: State, b: State): boolean {
 		// is a <= b in the semilattice?
 	}
 
+	// a function that performs a least-upper-bound merge on two states
 	@merge
 	function merge(a: State, b: State): State {
 		// least-upper-bound merge on a and b at any replica
