@@ -16,7 +16,7 @@ These platforms, especially aggregators, are *incentivized* to resist [[thoughts
 
 ![[thoughts/images/platforms as old oil rigs.png]]
 
-As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can't choose what parts you like; you either use the platform and sign all of your rights to them, or don't use it at all. [[thoughts/privacy|Privacy]] and security in this world mostly means "which company do you trust with your safety?" The answer often is the one with the largest walls and deepest moats.
+As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign over the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can't choose what parts you like; you either use the platform and sign all of your rights to them, or don't use it at all. [[thoughts/privacy|Privacy]] and security in this world mostly means "which company do you trust with your safety?" The answer often is the one with the largest walls and deepest moats.
 
 ![[thoughts/images/data moat.png]]
 
@@ -25,7 +25,7 @@ Clearly, this leaves much to be desired. We spend so much time online that it is
 ## An Ideal World
 Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts[^1]. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. **Decentralization is about agency**: we get choice about where we _store_ our data, who we give _access_ to which parts of that data, which _services_ we want on top of it, and how we _pay_ for those.
 
-In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable [[thoughts/local-first software|local-first software]][^2] which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego "dot" that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.
+In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable [[thoughts/local-first software|local-first software]][^2] which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego "dot" that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.
 
 In an ideal world, there is *data-neutrality*. Much like how the Net [[thoughts/neutrality|Neutrality]] debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.
 
@@ -56,7 +56,7 @@ The vast majority of peer-to-peer applications have yet to solve the data availa
 This means that *asynchronous collaboration isn't possible* in most peer-to-peer apps. Platforms usually get around this by storing the state of a user on one of their many servers who make it available on your behalf but peer-to-peer apps do not have this luxury -- most people do not have a device that is “always-on” like a server is.
 
 ### 3. Existing network effects
-Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are 'export' tools on platforms, they are the worst they can be while still meeting [GDPR Requirements](https://gdpr-info.eu/art-20-gdpr/). New platforms almost never have 'import' tools because each platform has their own data format and that format changes unpredictably. This is [creates a form of n-to-n problem](https://twitter.com/andy_matuschak/status/1452438198668328960) where every app needs to know what the APIs of another app are to even begin to interoperate. 
+Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are 'export' tools on platforms, they are the worst they can be while still meeting [GDPR Requirements](https://gdpr-info.eu/art-20-gdpr/). New platforms almost never have 'import' tools because each platform has their own data format and that format changes unpredictably. This [creates a form of n-to-n problem](https://twitter.com/andy_matuschak/status/1452438198668328960) where every app needs to know what the APIs of another app are to even begin to interoperate. 
 
 > "But usually you don't want a dead snapshot; you want to "use this data elsewhere"—which requires repeatedly exporting & reconciling."
 > 
@@ -74,7 +74,7 @@ Blockchain causes a whole new set of problems that makes it quite cumbersome to 
 - Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
 - High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
 
-All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without *aggressive* application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.
+All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without *aggressive* application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of [[thoughts/fault tolerance#Byzantine Faults|Byzantine]] actors) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.
 
 Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?
 
@@ -90,7 +90,7 @@ As a whole, it forms the basis for a new model of the internet where first and f
 - Single purpose apps backed by general-purpose data[^4]. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*.
 - Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
 - Local-first means interaction times are measured in *microseconds* not seconds, resulting in more responsive-feeling applications and no loading spinners.
-- Two users can collaborate by simple 'inviting' another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.
+- Two users can collaborate by simply 'inviting' another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.
 - As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.
 
 With Rhizome, we get the convenience of a single centralized platform without the lack of agency that comes with it.
@@ -165,7 +165,7 @@ The application-level event log management and collaboration
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
 
 ## Acknowledgements
-Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, and Spencer for you continued support. This project wouldn't be possible without all of you :))
+Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for you continued support. This project wouldn't be possible without all of you :))
 
 [^1]: Divya Siddarth, Danielle Allen, E. Glen Weyl, *The Web3 Decentralization Debate is Focused on the Wrong Question* in Wired Magazine ([Source](https://www.wired.com/story/web3-blockchain-decentralization-governance/))
 [^2]: Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan, *Local-first software* in Ink & Switch ([Source](https://www.inkandswitch.com/local-first/))

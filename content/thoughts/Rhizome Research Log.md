@@ -9,6 +9,9 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 12th
+- Ok, a bit of a wrench in the system : ' )))) CRDTs are incredibly hard to reason with for the average dev and *cannot guarantee global invariants* without requiring consensus.
+
 ### July 11th
 - Seems like there are a lot of open research questions in CRDTs that I could plausibly spend *years* working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic encryption)
 - I need to read more about this but it seems like most traditional consensus algorithms require synchronicity from all nodes for them to be considered honest. I wonder how we can reconcile this methods like CRDTs that allow for more asynchronous forms of consistency

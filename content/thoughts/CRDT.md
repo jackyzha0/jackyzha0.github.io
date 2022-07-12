@@ -13,6 +13,8 @@ aliases:
 
 Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss *but* there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).
 
+> Note: In general, maintaining global invariants (e.g. shapes such as a tree or a DAG), cannot be done by a CRDT. Global invariant cannot be determined locally; maintaining it requires synchronisation.
+
 CRDTs should always strive to preserve user intent.
 
 Two main families of CRDTs are operation-based and state-based CRDTs. They have their trade offs

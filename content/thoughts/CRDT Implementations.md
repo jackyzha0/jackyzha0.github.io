@@ -13,7 +13,7 @@ See [[thoughts/CRDT#Operation-based|operation-based CRDTs]] for more properties
 
 ```ts
 // the initial value of the data type (on each replicate)
-type State {
+type State = {
 	...
 }
 
@@ -53,7 +53,7 @@ See [[thoughts/CRDT#State-based|state-based CRDTs]] for more properties
 
 ```ts
 // the initial value of the data type (on each replicate)
-type State {
+type State = {
 	...
 }
 
@@ -108,12 +108,12 @@ class OpCRDT<State> {
 	}
 	
 	@update
-	function increment() {
+	function increment(): Closure {
 		return (node) => node.i := node.i + 1
 	}
 	
 	@update
-	function decrement() {
+	function decrement(): Closure {
 		return (node) => node.i := node.i - 1
 	}
 }
@@ -125,7 +125,7 @@ Inspired by vector clocks. Merge takes max of each entry so this forms a monoton
 For example, say you have two states `[1, 0, 1]` and `[1, 1, 1]`. You would never tell if the first one happens after the second (second node subtraction) or if the second one happens after the first (second node addition).
 
 ```ts
-type State {
+type State = {
 	plus: number[n];
 	minus: number[n];
 }
@@ -171,7 +171,7 @@ A register is a memory cell storing a single value.
 `X` is an arbitrary type
 
 ```ts
-type State<X> {
+type State<X> = {
 	val: X;
 	t: number;
 }
@@ -183,7 +183,7 @@ class OpCRDT<State> {
 	}
 
 	@update
-	function assign(x: X) {
+	function assign(x: X): Closure {
 		const t_now = now()
 		return (node) => {
 			if node.t < t_now {
@@ -199,7 +199,7 @@ class OpCRDT<State> {
 Timestamp is monotonic increasing so compare created a valid monotonic semilattice.
 
 ```ts
-type State<X> {
+type State<X> = {
 	x: X;
 	t: number;
 }
@@ -240,6 +240,7 @@ For example:
 - Grow-only set (G-Set) avoids remove altogether
 - 2-Phase set (2P-Set) is a variant where both add and remove are valid operations but an element cannot be re-added once removed
 - Unique set (U-Set) is an extension of 2-Phase set where we additionally assume elements are unique. Additional requirement that causal dependencies are respected (op-based CRDTs are sufficient to ensure this)
+- Observed-Removed set (OR-Set) supports both adding and removing elements. Add has precedence when an add and remove happen concurrently.
 
 ### State-based 2P-Set
 The compare function (checking to see if `x` comes before `y` in the semilattice) here is quite tricky and not immediately obvious why it is correct.
@@ -248,7 +249,7 @@ The compare function (checking to see if `x` comes before `y` in the semilattice
 - If `x.set` is not a subset of `y.set` then `x` cannot have come before `y`
 
 ```ts
-type State<X> {
+type State<X> = {
 	set: Set<X>;
 	removed: Set<X>;
 }
@@ -292,7 +293,7 @@ class StateCRDT<State> {
 Again, this op-based implementation assumes causal ordering in message delivering
 
 ```ts
-type State<X> {
+type State<X> = {
 	set: Set<X>;
 }
 
@@ -303,12 +304,12 @@ class OpCRDT<State> {
 	}
 	
 	@update
-	function add(x: X) {
-		this.set.add(x)
+	function add(x: X): Closure {
+		return this.set.add(x)
 	}
 	
 	@update
-	function remove(x: X) {
+	function remove(x: X): Closure {
 		if this.has(x) {
 			// due to causal ordering assumption, add(x) must have been delivered already
 			return (node) => node.set.remove(x)
@@ -318,10 +319,155 @@ class OpCRDT<State> {
 
 ```
 
-## Strings/Arrays
+### Op-based OR-Set
+Intuition here is to generate a unique ID for each element added. Multiple `add`s will add multiple values and `delete` will delete all elements with the same value.
+
+Concurrent `add`s commute as each `add` is unique. If a concurrent `add` and `remove` happen, it also commutes as `add` has precedence.
+
+```ts
+type State<X> = {
+	// track element and uuid
+	set: Set<(X, number)>;
+}
+
+class OpCRDT<State> {
+	@query
+	function has(x: X): boolean {
+		return this.set.values.any((val, id) => val === x)
+	}
+
+	@update
+	function add(x: X): Closure {
+		const id = uuid()
+		return (node) => node.set.add((x, id))
+	}
+
+	@update
+	function remove(x: X): Closure {
+		if this.has(x) {
+			const vals_to_delete = this.set.values.filter((val, id) => x === val)
+			return (node) => node.set.remove(vals_to_delete)
+		}
+	}
+}
+```
+
+
+## Sequences
+A sequence for text editing (or just sequence hereafter) is a totally-ordered set of elements, each composed of a unique identifier and an atom.
+
+For the rest of this section, assume the following definitions
+
+```ts
+const __LEFT: any = ("START", -1)
+const __RIGHT: any = ("END", 0)
+
+// e.g., a character, a string, an XML tag, or an embedded graphic
+type Atom = any
+
+// Timestamps are unique, positive, and increase consistently with causality
+type T = number
+type Vertex = (Atom, T)
+```
+
+
+### Replicated Growable Array (RGA)
+Represented as a 2P-Set of vertices in a linked list.  
+
+```ts
+type State = {
+	// 2P-Set of vertices
+	v_added: Set<Vertex> = [__LEFT, __RIGHT];
+	v_rmved: Set<Vertex> = [];
+
+	// G-Set of edges
+	edges: Set<(Vertex, Vertex)> = [(__LEFT, RIGHT)];
+}
+
+class OpCRDT {
+	@query
+	function lookup(v: Vertex): boolean {
+		return this.v_added.has(v) && !this.v_rmved.has(v)
+	}
+
+	// is u before v in the sequence?
+	@query
+	function before(u: Vertex, v: Vertex): boolean {
+		if this.lookup(u) && this.lookup(v) {
+			// see if there is a valid path from u to v using dfs
+			const stack = [u]			
+			while stack.length > 0 {
+				const cur = stack.pop()
+				if cur === v {
+					return true
+				}
+				
+				const outgoing_vertices = this
+					.edges
+					.filter((_u, _v) => u === _u)
+					.map((_, _v) => v)
+					
+				stack.push(...outgoing_vertices)
+			}
+			return false
+		}
+	}
+
+	@query
+	function successor(u: Vertex): Vertex {
+		if this.lookup(u) {
+			return this.edges.find((_u, _v) => u === _u)[1]
+		}
+	}
+
+	@update
+	function addRight(v: Vertex, x: Atom) {
+		// ensure valid insert
+		if v !== __RIGHT && this.v_added.sub(this.v_rmved).has(v) {
+			const t = now()
+			const w = (x, t)
+			
+			return (node) => {
+				// find right place to insert node
+				if node.v_added.has(v) {
+					const l = v
+					const r = node.successor(v)
+					while true {
+						const _v, _t = r
+						if t < _t {
+							// move forward one step
+							l = r
+							r = node.successor(r)
+						} else {
+							// right spot!
+							// remove old edge
+							this.edges.remove((l, r))
+							// add new ones
+							this.edges.add((l, w))
+							this.edges.add((w, r))
+							return
+						}
+					}
+				}
+			} 
+		}
+	}
+
+	@update
+	function remove(v: Vertex) {
+		if this.lookup(v) {
+			return (node) => v_rmved.add(v)
+		}
+	}
+}
+```
+
+### Continuous Sequence using real numbers
 We need to translate indices into unique immutable positions (what the user intuitively means when they say 'insert here').
 
 This assumption of relative order of elements remains constant over time is called the **strong list specification**.
+
+Performance depends critically on the implementation of identifiers. One possible implementation is to use a dense identifier space like $\mathbb{R}$ where a unique identifier can always be allocated between any two identifiers.
 
 Indices are based off of what % of the text they get inserted at. 0.0 is the index of the start sequence, 1.0 is the index of the end sequence (this is similar to what Treedoc does). 
 
@@ -344,5 +490,59 @@ Inserting to the left of 'B' would be between 0.0 and 0.5 so 0.25.
 NUL   'A'  'B'   NUL
 ```
 
-Indices are never ambiguous! Causal broadcast is required so the insertion of a character is delivered before its deletion.
+We represent the continuum using a tree. The first element is allocated at the root. Thereafter, it is always possible to create a new leaf $e$ between any two nodes $n$ and $m$.
+
+We do this by representing the tree using a U-Set
+
+```ts
+type Element = (Atom, number)
+
+type State = {
+	set: Set<Element> = [];
+}
+
+class OpCRDT {
+	@query
+	function lookup(u: Element): boolean {
+		return this.set.has(u)
+	}
+
+	@query
+	function before(u: Element, v: Element): boolean {
+		if this.lookup(u) && this.lookup(v) {
+			const _, u_id = u
+			const _, v_id = v
+			return u_id < v_id
+		}
+	}
+
+	@update
+	function addBetween(u: Element, x: Atom, v: Element) {
+		if this.before(u, v) {
+			const _, u_id = u
+			const _, v_id = v
+			const new_el = (x, (u_id + v_id) / 2)
+			return (node) => {
+				node.set.add(new_el)
+			}
+		}
+	}
+
+	@update
+	function remove(u: Element) {
+		if this.lookup(u) {
+			return (node) => node.set.remove(u)
+		}
+	}
+}
+```
+
+## Graphs
+Generally, graphs are difficult to maintain due to the property that CRDTs *cannot compute and maintain* global invariants like structure.
+
+However, some stronger forms of acyclicity are implied by local properties, for instance
+a monotonic DAG, in which an edge may be added only if it oriented in the same direction
+as an existing path. Vertices and edges can be stores as sets.
+
+See reference implementations in [this paper](https://hal.inria.fr/inria-00555588/document)
 

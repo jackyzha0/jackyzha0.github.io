@@ -18,3 +18,10 @@ Thin data prompts suspicions: "What are they leaving out? Is that really everyth
 It is not how much information there is, but rather how effectively it is arranged.
 
 **Clutter and confusion are failures of design, not attributes of information**
+
+### Colour
+Fundamental uses of colour in information design
+- To label (colour as noun)
+- To measure (colour as quantity)
+- To represent or imitate reality (colour as representation)
+- To enliven it decorate
