@@ -6,6 +6,7 @@ tags:
 - technical
 ---
 
+- treesitter based CRDT for smart git merges
 - big touchscreen desk
 	- what if i just got a huge old flatscreen tv
 	- mounted 4 pressure sensors on each corner and then got a big sheet of thin glass

@@ -1,7 +1,6 @@
 baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
 googleAnalytics = "G-WDD4K02HML"
-pygmentsUseClasses = true
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
@@ -22,6 +21,7 @@ title = "jzhao.xyz"
         ordered = true
         startLevel = 2
     [markup.highlight]
+        noClasses = false
         anchorLineNos = false
         codeFences = true
         guessSyntax = true
@@ -31,5 +31,4 @@ title = "jzhao.xyz"
         lineNos = true
         lineNumbersInTable = true
         style = "dracula"
-        tabWidth = 4
 

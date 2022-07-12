@@ -9,6 +9,8 @@ Consensus in human systems is actually usually pretty easy because of the social
 
 A difficult problem for [governance](thoughts/governance.md) within [communities](thoughts/communities.md)
 
+Note that this is inherently *different* from collaboration methods like [[thoughts/CRDT|CRDTs]]. Collaboration involves keeping *all* edits and merging them. Consensus involves picking one of several proposed values and agreeing on it.
+
 ## Consensus and Humming in the IETF
 [Source: IETF](https://datatracker.ietf.org/doc/html/rfc7282)
 
