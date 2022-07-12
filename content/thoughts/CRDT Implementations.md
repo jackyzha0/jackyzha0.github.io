@@ -9,6 +9,8 @@ All examples below are written in pseudocode that happens to carry a lot of synt
 
 ## Spec
 ### Op-based
+See [[thoughts/CRDT#Operation-based|operation-based CRDTs]] for more properties
+
 ```ts
 // the initial value of the data type (on each replicate)
 type State {
@@ -47,6 +49,8 @@ class OpCRDT<State> {
 ```
 
 ### State-based
+See [[thoughts/CRDT#State-based|state-based CRDTs]] for more properties
+
 ```ts
 // the initial value of the data type (on each replicate)
 type State {
