@@ -24,6 +24,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Current
 - **Tools for Conviviality** by Ivan Illich
 * **Seeing Like A State** by James C. Scott
+* **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
 
 ## Past
 2022

@@ -54,6 +54,8 @@ Aaron Swartz in the *“Guerrilla Open Access Manifesto”*
 ## Information [Representation](thoughts/representation.md)
 How do we represent documents and information in our databases and collections?
 
+See also: [[thoughts/visualization|visualization]]
+
 ### Indexing
 Index features
 - index term (textual description)

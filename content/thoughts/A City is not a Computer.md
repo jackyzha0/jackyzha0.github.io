@@ -81,7 +81,7 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 	- How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. GDPR?)
 - Would smart cities be any different if they prioritized the citizens and participation at the get-go rather than as an after-thought
 	- Multiple definitions of smart cities (corporate extractivist approaches, civic approaches, improving democratic processes, open data, etc.)
-	- How do we manage data and data privacy?
+	- How do we manage data and data [[thoughts/privacy|privacy]]?
 - Thoughts on [web3](thoughts/web3.md) and cities? CityDAO?
 	- Blockchain for decentralized mapping? Mapping in particular holds a lot of power for how a lot of citizens interact with the city
 	- Probably needs more time to read more to provide an intelligent answer

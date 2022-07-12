@@ -43,7 +43,7 @@ Internet as we know it today, companies that provide services in exchange for yo
 
 General migration from open services to more sophisticated, centralized services
 
-Effects include frequent incursions on personal privacy, the spread of misinformation, and the ‘attention economy,’ all of which have fundamentally changed how we relate to one another, and destabilized civic engagement and labor across industries. [Source](https://gitcoin.co/blog/seeking-a-new-kind-of-public-good/)
+Effects include frequent incursions on personal [[thoughts/privacy|privacy]], the spread of misinformation, and the ‘attention economy,’ all of which have fundamentally changed how we relate to one another, and destabilized civic engagement and labor across industries. [Source](https://gitcoin.co/blog/seeking-a-new-kind-of-public-good/)
 
 ### Web3, Token Economy [2020s to present]
 Decentralized apps (usually running on the blockchain).

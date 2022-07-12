@@ -163,7 +163,7 @@ Similar to practices in [reflect](posts/reflect.md) NLP processing actually!
 Major issues:
 1. Access to information: value of information and knowledge, [democracy](thoughts/democracy.md), gatekeeping, [censorship](thoughts/censorship.md)
 2. Equity, accuracy (truth) and transparency: search-engine bias and the problem of opacity/non-[transparency](thoughts/transparency.md)
-3. Privacy and freedom: personal privacy and informed consent; monitoring and surveillance
+3. [[thoughts/privacy|Privacy]] and freedom: personal privacy and informed consent; monitoring and surveillance
 4. Property rights: how do crawlers/search engines respect property, ownership, free market competition
 
 Search is a form of [data capitalism](thoughts/Data%20Capitalism.md)
@@ -177,7 +177,7 @@ Search is a form of [data capitalism](thoughts/Data%20Capitalism.md)
 - Aiming to create a large scale digital [library](thoughts/library.md) that included *historical* knowledge
 - Critiques
 	- Poor quality of scanning
-	- Privacy -- Google would gain access into detailed insights about what people were reading
+	- [[thoughts/privacy|Privacy]] -- Google would gain access into detailed insights about what people were reading
 		- Historically, librarians focussed heavily on this, sometimes even going to jail due to resisting handing over library records
 - 2005 Class Action Lawsuit by author and copyright holders' organizations: theft of books
 	- 2008 settlement: Google agreed to pay copyright holders; revenue from orphan works; access through libraries

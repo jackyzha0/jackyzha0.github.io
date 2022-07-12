@@ -9,6 +9,13 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 11th
+- Seems like there are a lot of open research questions in CRDTs that I could plausibly spend *years* working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic encryption)
+- I need to read more about this but it seems like most traditional consensus algorithms require synchronicity from all nodes for them to be considered honest. I wonder how we can reconcile this methods like CRDTs that allow for more asynchronous forms of consistency
+	- Is it possible to take advantage of the partially synchronous [[thoughts/system model|system model]] and having CRDT-like behaviour in async modes and Raft/Paxos-like behaviour during synchronous periods for compaction
+	- This is especially important as users will rarely have all (or even supermajority) of their nodes online at any given time. Will need to look into variations on Raft that tolerate live membership changes
+		- "The network can partition and recover, and nodes can operate in disconnected mode for some time."
+
 ### July 10th
 - A lot of good meditations on adoption of tech that gives agency to users at a Hack Night that Rishi hosted :))
 - Currently at another session of the writing circle. Good to probably zoom out from a lot of the technical in-the-weeds work and re-orient about what this means for the average consumer
@@ -16,7 +23,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- The average user probably doesn't. They want convenience and are comfortable with current options.
 	- But as a counterpoint, if you ask anyone on the street whether they would be comfortable sharing their entire browsing history right there on the spot, my bet is that ~95% of people will say no
 		- This could be a really fun social experiment: incrementally increase the amount you offer strangers to look at their browsing history
-		- How much does the average person value their privacy?
+		- How much does the average person value their [[thoughts/privacy|privacy]]?
 	- Another question is why having a *real person* snoop on your data feels so different than large companies snooping and *profiting* off of your data
 		- I suspect a large part of this is due to learned helplessness
 		- We haven't ever really known what it is like for companies *not* to be doing that

@@ -37,4 +37,4 @@ Maybe this is where tools like knowledge graphs come in. Allow us to better visu
 Regular note taking like Notion is hierarchical and linear → its a tree
 Graph representations like Roam Research, Obsidian allow us to make non-obvious non-hierarchical connections between concepts
 
-Curious if we can apply graph visualization approaches to [social media](thoughts/social%20graphs.md)?
+Curious if we can apply graph [[thoughts/visualization|visualization]] approaches to [social media](thoughts/social%20graphs.md)?

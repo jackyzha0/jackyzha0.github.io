@@ -32,6 +32,7 @@ Not sure if there's any way to easily do this
 ## Concepts
 - [Goodhart's Law](thoughts/Goodhart's%20Law.md)
 * McNamara Fallacy: Also known as the quantitative fallacy: making a decision involving purely quantitative observations (ignoring all others) is often wrong. [Source](https://en.wikipedia.org/wiki/McNamara_fallacy)
+* Procrustean: an arbitrary standard is used to measure success, while completely disregarding obvious harm that results from the effort
 
 ## Are labels helpful? 
 In a data-driven world, can we and should we try to quantize everything?

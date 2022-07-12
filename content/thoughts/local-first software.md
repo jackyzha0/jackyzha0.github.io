@@ -25,7 +25,7 @@ Local-first ideals include
 	2. Asynchronous changes that need review (e.g. suggestions or pull requests)
 5. The long now (optional permanence/digital longetivity)
 	- When you do some work with local-first software, your work should continue to be accessible indefinitely, even after the company that produced the software is gone.
-6. Security and privacy by default
+6. Security and [[thoughts/privacy|privacy]] by default
 	- Many professionals cannot use cloud apps due to regulatory compliance and confidentiality obligations.
 7. User retains ownership and control
 	- You should be able to copy and modify data in any way, write down any thought, and no company should restrict what you are allowed to do.

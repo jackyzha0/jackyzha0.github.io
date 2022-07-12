@@ -16,7 +16,7 @@ These platforms, especially aggregators, are *incentivized* to resist [[thoughts
 
 ![[thoughts/images/platforms as old oil rigs.png]]
 
-As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can't choose what parts you like; you either use the platform and sign all of your rights to them, or don't use it at all. Privacy and security in this world mostly means "which company do you trust with your safety?" The answer often is the one with the largest walls and deepest moats.
+As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can't choose what parts you like; you either use the platform and sign all of your rights to them, or don't use it at all. [[thoughts/privacy|Privacy]] and security in this world mostly means "which company do you trust with your safety?" The answer often is the one with the largest walls and deepest moats.
 
 ![[thoughts/images/data moat.png]]
 
