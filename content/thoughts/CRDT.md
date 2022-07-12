@@ -89,9 +89,16 @@ A query can be specified as a function that uses this information and the value 
 
 ## Performance
 ### Storage + State Compaction
-Technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
+Practical experience with CRDTs shows that they tend to become inefficient over time,
+as tombstones accumulate and internal data structures become unbalanced. However, GC + rebalancing technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
 
 > So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. [(#2)](https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2)
+
+One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.
+
+
+### Exploiting good connectivity for stronger consistency
+Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define *weak operations* which only *eventually* need to be linearized.
 
 ## Readings
 - [A comprehensive study of CRDTs](https://hal.inria.fr/inria-00555588/document) 
