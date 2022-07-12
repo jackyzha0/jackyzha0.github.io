@@ -648,6 +648,8 @@ if (!doNotTrack) {
 </span><span class="lnt">34
 </span><span class="lnt">35
 </span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="c1">// the initial value of the data type (on each replicate)
@@ -668,7 +670,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">		<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="c1">// any global function that take in arguments and has two phases
+</span></span><span class="line"><span class="cl">	<span class="c1">// any function that when evaluated, has side-effects on the payload
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">@update</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">update</span><span class="p">(...</span><span class="nx">args</span>: <span class="kt">any</span><span class="p">[])</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="p">(</span><span class="nx">local_invariant</span><span class="p">)</span> <span class="p">{</span>
@@ -676,12 +678,14 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="p">}</span>	
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="kd">@compare</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// a function that compares two states in the semilattice (see: order theory)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">@compare</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">cmp</span><span class="p">(</span><span class="nx">a</span>: <span class="kt">State</span><span class="p">,</span> <span class="nx">b</span>: <span class="kt">State</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="c1">// is a &lt;= b in the semilattice?
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="kd">@merge</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// a function that performs a least-upper-bound merge on two states
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">@merge</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">a</span>: <span class="kt">State</span><span class="p">,</span> <span class="nx">b</span>: <span class="kt">State</span><span class="p">)</span><span class="o">:</span> <span class="nx">State</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="c1">// least-upper-bound merge on a and b at any replica
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
