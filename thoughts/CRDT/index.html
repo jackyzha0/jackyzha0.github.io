@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Conflict-free Replicated Data Type (CRDT)</h1>
     <article>
       <p class="meta">
-          Last updated July 11, 2022
+          Last updated July 12, 2022
       </p>
       <ul class="tags">
     
@@ -785,6 +785,9 @@ if (!doNotTrack) {
 
 
 <p>Provides <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal consistency</a> as well as <a href="/thoughts/consistency#Eventual Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">strong eventual consistency</a>: over time, all actors converge to same state without data loss <em>but</em> there is no guarantee of exact same state across actors at any given moment (not <a href="/thoughts/consistency#ACID Consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">ACID</a>).</p>
+<blockquote>
+<p>Note: In general, maintaining global invariants (e.g. shapes such as a tree or a DAG), cannot be done by a CRDT. Global invariant cannot be determined locally; maintaining it requires synchronisation.</p>
+</blockquote>
 <p>CRDTs should always strive to preserve user intent.</p>
 <p>Two main families of CRDTs are operation-based and state-based CRDTs. They have their trade offs</p>
 <ol>

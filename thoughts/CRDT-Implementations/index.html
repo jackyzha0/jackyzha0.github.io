@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">CRDT Implementations</h1>
     <article>
       <p class="meta">
-          Last updated July 11, 2022
+          Last updated July 12, 2022
       </p>
       <ul class="tags">
     
@@ -507,9 +507,16 @@ if (!doNotTrack) {
       <ol>
         <li><a href="#state-based-2p-set">State-based 2P-Set</a></li>
         <li><a href="#op-based-u-set">Op-based U-Set</a></li>
+        <li><a href="#op-based-or-set">Op-based OR-Set</a></li>
       </ol>
     </li>
-    <li><a href="#stringsarrays">Strings/Arrays</a></li>
+    <li><a href="#sequences">Sequences</a>
+      <ol>
+        <li><a href="#replicated-growable-array-rga">Replicated Growable Array (RGA)</a></li>
+        <li><a href="#continuous-sequence-using-real-numbers">Continuous Sequence using real numbers</a></li>
+      </ol>
+    </li>
+    <li><a href="#graphs">Graphs</a></li>
   </ol>
 </nav>
       </aside>
@@ -573,6 +580,20 @@ if (!doNotTrack) {
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -594,6 +615,20 @@ if (!doNotTrack) {
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -703,7 +738,7 @@ if (!doNotTrack) {
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="c1">// the initial value of the data type (on each replicate)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">State</span> <span class="p">{</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">State</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="p">...</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -783,7 +818,7 @@ if (!doNotTrack) {
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="c1">// the initial value of the data type (on each replicate)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">State</span> <span class="p">{</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">State</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="p">...</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -860,12 +895,12 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">increment() {</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">increment</span><span class="p">()</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="nx">i</span> <span class="o">:=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">decrement() {</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">decrement</span><span class="p">()</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="nx">i</span> <span class="o">:=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -915,7 +950,7 @@ if (!doNotTrack) {
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">plus</span>: <span class="kt">number</span><span class="p">[</span><span class="nx">n</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">minus</span>: <span class="kt">number</span><span class="p">[</span><span class="nx">n</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -984,7 +1019,7 @@ if (!doNotTrack) {
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">val</span>: <span class="kt">X</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">t</span>: <span class="kt">number</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -996,7 +1031,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">assign</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">assign</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="kr">const</span> <span class="nx">t_now</span> <span class="o">=</span> <span class="nx">now</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="nx">node</span><span class="p">.</span><span class="nx">t</span> <span class="o">&lt;</span> <span class="nx">t_now</span> <span class="p">{</span>
@@ -1042,7 +1077,7 @@ if (!doNotTrack) {
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">x</span>: <span class="kt">X</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">t</span>: <span class="kt">number</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -1081,6 +1116,7 @@ if (!doNotTrack) {
 <li>Grow-only set (G-Set) avoids remove altogether</li>
 <li>2-Phase set (2P-Set) is a variant where both add and remove are valid operations but an element cannot be re-added once removed</li>
 <li>Unique set (U-Set) is an extension of 2-Phase set where we additionally assume elements are unique. Additional requirement that causal dependencies are respected (op-based CRDTs are sufficient to ensure this)</li>
+<li>Observed-Removed set (OR-Set) supports both adding and removing elements. Add has precedence when an add and remove happen concurrently.</li>
 </ul>
 <a href="#state-based-2p-set"><h3 id="state-based-2p-set"><span class="hanchor" ariaLabel="Anchor"># </span>State-based 2P-Set</h3></a>
 <p>The compare function (checking to see if <code>x</code> comes before <code>y</code> in the semilattice) here is quite tricky and not immediately obvious why it is correct.</p>
@@ -1131,7 +1167,7 @@ if (!doNotTrack) {
 </span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="kr">set</span><span class="o">:</span> <span class="nx">Set</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;;</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">removed</span>: <span class="kt">Set</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -1200,7 +1236,7 @@ if (!doNotTrack) {
 </span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="kr">set</span><span class="o">:</span> <span class="nx">Set</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -1211,12 +1247,12 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">			<span class="c1">// due to causal ordering assumption, add(x) must have been delivered already
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
@@ -1225,9 +1261,274 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><a href="#stringsarrays"><h2 id="stringsarrays"><span class="hanchor" ariaLabel="Anchor"># </span>Strings/Arrays</h2></a>
+</div><a href="#op-based-or-set"><h3 id="op-based-or-set"><span class="hanchor" ariaLabel="Anchor"># </span>Op-based OR-Set</h3></a>
+<p>Intuition here is to generate a unique ID for each element added. Multiple <code>add</code>s will add multiple values and <code>delete</code> will delete all elements with the same value.</p>
+<p>Concurrent <code>add</code>s commute as each <code>add</code> is unique. If a concurrent <code>add</code> and <code>remove</code> happen, it also commutes as <code>add</code> has precedence.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// track element and uuid
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kr">set</span><span class="o">:</span> <span class="nx">Set</span><span class="o">&lt;</span><span class="p">(</span><span class="nx">X</span><span class="p">,</span> <span class="kt">number</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">OpCRDT</span><span class="p">&lt;</span><span class="nt">State</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">has</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="kt">any</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">val</span> <span class="o">===</span> <span class="nx">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kr">const</span> <span class="nx">id</span> <span class="o">=</span> <span class="nx">uuid</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">x</span><span class="p">,</span> <span class="nx">id</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">vals_to_delete</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">===</span> <span class="nx">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">vals_to_delete</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#sequences"><h2 id="sequences"><span class="hanchor" ariaLabel="Anchor"># </span>Sequences</h2></a>
+<p>A sequence for text editing (or just sequence hereafter) is a totally-ordered set of elements, each composed of a unique identifier and an atom.</p>
+<p>For the rest of this section, assume the following definitions</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">__LEFT</span>: <span class="kt">any</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&#34;START&#34;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">__RIGHT</span>: <span class="kt">any</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&#34;END&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// e.g., a character, a string, an XML tag, or an embedded graphic
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">Atom</span> <span class="o">=</span> <span class="kt">any</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Timestamps are unique, positive, and increase consistently with causality
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">type</span> <span class="nx">T</span> <span class="o">=</span> <span class="kt">number</span>
+</span></span><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">Vertex</span> <span class="o">=</span> <span class="p">(</span><span class="nx">Atom</span><span class="p">,</span> <span class="nx">T</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#replicated-growable-array-rga"><h3 id="replicated-growable-array-rga"><span class="hanchor" ariaLabel="Anchor"># </span>Replicated Growable Array (RGA)</h3></a>
+<p>Represented as a 2P-Set of vertices in a linked list.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// 2P-Set of vertices
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">v_added</span>: <span class="kt">Set</span><span class="p">&lt;</span><span class="nt">Vertex</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="nx">__LEFT</span><span class="p">,</span> <span class="nx">__RIGHT</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">v_rmved</span>: <span class="kt">Set</span><span class="p">&lt;</span><span class="nt">Vertex</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// G-Set of edges
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">edges</span>: <span class="kt">Set</span><span class="o">&lt;</span><span class="p">(</span><span class="nx">Vertex</span><span class="p">,</span> <span class="nx">Vertex</span><span class="p">)</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[(</span><span class="nx">__LEFT</span><span class="p">,</span> <span class="nx">RIGHT</span><span class="p">)];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">OpCRDT</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">lookup</span><span class="p">(</span><span class="nx">v</span>: <span class="kt">Vertex</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">v_added</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">v_rmved</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// is u before v in the sequence?
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">before</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Vertex</span><span class="p">,</span> <span class="nx">v</span>: <span class="kt">Vertex</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">// see if there is a valid path from u to v using dfs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="kr">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[</span><span class="nx">u</span><span class="p">]</span>			
+</span></span><span class="line"><span class="cl">			<span class="k">while</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="kr">const</span> <span class="nx">cur</span> <span class="o">=</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span> <span class="nx">cur</span> <span class="o">===</span> <span class="nx">v</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">					<span class="k">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">				
+</span></span><span class="line"><span class="cl">				<span class="kr">const</span> <span class="nx">outgoing_vertices</span> <span class="o">=</span> <span class="k">this</span>
+</span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">edges</span>
+</span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o">===</span> <span class="nx">_u</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">_</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">					
+</span></span><span class="line"><span class="cl">				<span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">outgoing_vertices</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="p">}</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">successor</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Vertex</span><span class="p">)</span><span class="o">:</span> <span class="nx">Vertex</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o">===</span> <span class="nx">_u</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">addRight</span><span class="p">(</span><span class="nx">v</span>: <span class="kt">Vertex</span><span class="p">,</span> <span class="nx">x</span>: <span class="kt">Atom</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// ensure valid insert
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span> <span class="nx">v</span> <span class="o">!==</span> <span class="nx">__RIGHT</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">v_added</span><span class="p">.</span><span class="nx">sub</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">v_rmved</span><span class="p">).</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">w</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="c1">// find right place to insert node
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>				<span class="k">if</span> <span class="nx">node</span><span class="p">.</span><span class="nx">v_added</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">					<span class="kr">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">v</span>
+</span></span><span class="line"><span class="cl">					<span class="kr">const</span> <span class="nx">r</span> <span class="o">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">successor</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">					<span class="k">while</span> <span class="kc">true</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="kr">const</span> <span class="nx">_v</span><span class="p">,</span> <span class="nx">_t</span> <span class="o">=</span> <span class="nx">r</span>
+</span></span><span class="line"><span class="cl">						<span class="k">if</span> <span class="nx">t</span> <span class="o">&lt;</span> <span class="nx">_t</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">							<span class="c1">// move forward one step
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>							<span class="nx">l</span> <span class="o">=</span> <span class="nx">r</span>
+</span></span><span class="line"><span class="cl">							<span class="nx">r</span> <span class="o">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">successor</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">						<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">							<span class="c1">// right spot!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>							<span class="c1">// remove old edge
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>							<span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">remove</span><span class="p">((</span><span class="nx">l</span><span class="p">,</span> <span class="nx">r</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">							<span class="c1">// add new ones
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>							<span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">l</span><span class="p">,</span> <span class="nx">w</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">							<span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">w</span><span class="p">,</span> <span class="nx">r</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">							<span class="k">return</span>
+</span></span><span class="line"><span class="cl">						<span class="p">}</span>
+</span></span><span class="line"><span class="cl">					<span class="p">}</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">			<span class="p">}</span> 
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">v</span>: <span class="kt">Vertex</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">v_rmved</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#continuous-sequence-using-real-numbers"><h3 id="continuous-sequence-using-real-numbers"><span class="hanchor" ariaLabel="Anchor"># </span>Continuous Sequence using real numbers</h3></a>
 <p>We need to translate indices into unique immutable positions (what the user intuitively means when they say &lsquo;insert here&rsquo;).</p>
 <p>This assumption of relative order of elements remains constant over time is called the <strong>strong list specification</strong>.</p>
+<p>Performance depends critically on the implementation of identifiers. One possible implementation is to use a dense identifier space like $\mathbb{R}$ where a unique identifier can always be allocated between any two identifiers.</p>
 <p>Indices are based off of what % of the text they get inserted at. 0.0 is the index of the start sequence, 1.0 is the index of the end sequence (this is similar to what Treedoc does).</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1261,7 +1562,102 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">NUL   &#39;A&#39;  &#39;B&#39;   NUL
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Indices are never ambiguous! Causal broadcast is required so the insertion of a character is delivered before its deletion.</p>
+</div><p>We represent the continuum using a tree. The first element is allocated at the root. Thereafter, it is always possible to create a new leaf $e$ between any two nodes $n$ and $m$.</p>
+<p>We do this by representing the tree using a U-Set</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ts" data-lang="ts"><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">Element</span> <span class="o">=</span> <span class="p">(</span><span class="nx">Atom</span><span class="p">,</span> <span class="kt">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">type</span> <span class="nx">State</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">set</span><span class="o">:</span> <span class="nx">Set</span><span class="p">&lt;</span><span class="nt">Element</span><span class="p">&gt;</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">OpCRDT</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Element</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">before</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Element</span><span class="p">,</span> <span class="nx">v</span>: <span class="kt">Element</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">u_id</span> <span class="o">=</span> <span class="nx">u</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">v_id</span> <span class="o">=</span> <span class="nx">v</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="nx">u_id</span> <span class="o">&lt;</span> <span class="nx">v_id</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">addBetween</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Element</span><span class="p">,</span> <span class="nx">x</span>: <span class="kt">Atom</span><span class="p">,</span> <span class="nx">v</span>: <span class="kt">Element</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">before</span><span class="p">(</span><span class="nx">u</span><span class="p">,</span> <span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">u_id</span> <span class="o">=</span> <span class="nx">u</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">v_id</span> <span class="o">=</span> <span class="nx">v</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">new_el</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="p">(</span><span class="nx">u_id</span> <span class="o">+</span> <span class="nx">v_id</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">new_el</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Element</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#graphs"><h2 id="graphs"><span class="hanchor" ariaLabel="Anchor"># </span>Graphs</h2></a>
+<p>Generally, graphs are difficult to maintain due to the property that CRDTs <em>cannot compute and maintain</em> global invariants like structure.</p>
+<p>However, some stronger forms of acyclicity are implied by local properties, for instance
+a monotonic DAG, in which an edge may be added only if it oriented in the same direction
+as an existing path. Vertices and edges can be stores as sets.</p>
+<p>See reference implementations in 
+
+<a href="https://hal.inria.fr/inria-00555588/document" rel="noopener">this paper</a></p>
  
 
     </article>
