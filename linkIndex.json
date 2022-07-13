@@ -4561,6 +4561,11 @@
         },
         {
           "source": "/thoughts/consensus",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/consistency",
           "text": "consistency"
         },
@@ -10489,6 +10494,11 @@
         },
         {
           "source": "/thoughts/collaborative-software",
+          "target": "/thoughts/CRDT",
+          "text": "CRDTs"
+        },
+        {
+          "source": "/thoughts/consensus",
           "target": "/thoughts/CRDT",
           "text": "CRDTs"
         },
@@ -23784,6 +23794,11 @@
       "source": "/thoughts/consensus",
       "target": "/thoughts/communities",
       "text": "communities"
+    },
+    {
+      "source": "/thoughts/consensus",
+      "target": "/thoughts/CRDT",
+      "text": "CRDTs"
     },
     {
       "source": "/thoughts/consensus",

@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="description" content="big touchscreen desk  what if i just got a huge old flatscreen tv mounted 4 pressure sensors on each corner and then got a big sheet of thin glass 4 points is enough to pinpoint single-point touch accurately for dragging what if you could use it like a scratch space?">
+    <meta name="description" content="treesitter based CRDT for smart git merges big touchscreen desk  what if i just got a huge old flatscreen tv mounted 4 pressure sensors on each corner and then got a big sheet of thin glass 4 points is enough to pinpoint single-point touch accurately for dragging what if you could use it like a scratch space?">
     <title>Project Idea List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
@@ -47,7 +47,7 @@
     
     
     <style>
-        .chroma{color:#f8f8f2;background-color:#282a36;overflow:hidden}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffc}.chroma .lnt{margin-right:.4em;padding:0 .4em;color:#7f7f7f}.chroma .ln{margin-right:.4em;padding:0 .4em;color:#7f7f7f}.chroma .k{color:#ff79c6}.chroma .kc{color:#ff79c6}.chroma .kd{color:#8be9fd;font-style:italic}.chroma .kn{color:#ff79c6}.chroma .kp{color:#ff79c6}.chroma .kr{color:#ff79c6}.chroma .kt{color:#8be9fd}.chroma .na{color:#50fa7b}.chroma .nb{color:#8be9fd;font-style:italic}.chroma .nc{color:#50fa7b}.chroma .nf{color:#50fa7b}.chroma .nl{color:#8be9fd;font-style:italic}.chroma .nt{color:#ff79c6}.chroma .nv{color:#8be9fd;font-style:italic}.chroma .vc{color:#8be9fd;font-style:italic}.chroma .vg{color:#8be9fd;font-style:italic}.chroma .vi{color:#8be9fd;font-style:italic}.chroma .s{color:#f1fa8c}.chroma .sa{color:#f1fa8c}.chroma .sb{color:#f1fa8c}.chroma .sc{color:#f1fa8c}.chroma .dl{color:#f1fa8c}.chroma .sd{color:#f1fa8c}.chroma .s2{color:#f1fa8c}.chroma .se{color:#f1fa8c}.chroma .sh{color:#f1fa8c}.chroma .si{color:#f1fa8c}.chroma .sx{color:#f1fa8c}.chroma .sr{color:#f1fa8c}.chroma .s1{color:#f1fa8c}.chroma .ss{color:#f1fa8c}.chroma .m{color:#bd93f9}.chroma .mb{color:#bd93f9}.chroma .mf{color:#bd93f9}.chroma .mh{color:#bd93f9}.chroma .mi{color:#bd93f9}.chroma .il{color:#bd93f9}.chroma .mo{color:#bd93f9}.chroma .o{color:#ff79c6}.chroma .ow{color:#ff79c6}.chroma .c{color:#6272a4}.chroma .ch{color:#6272a4}.chroma .cm{color:#6272a4}.chroma .c1{color:#6272a4}.chroma .cs{color:#6272a4}.chroma .cp{color:#ff79c6}.chroma .cpf{color:#ff79c6}.chroma .gd{color:#8b080b}.chroma .ge{text-decoration:underline}.chroma .gh{font-weight:700}.chroma .gi{font-weight:700}.chroma .go{color:#44475a}.chroma .gu{font-weight:700}.chroma .gl{text-decoration:underline}.lntd:first-of-type>.chroma{padding-right:0}.chroma code{font-family:jetbrains mono!important;font-size:.85em;line-height:1em;background:0 0;padding:0}.chroma{border-radius:3px;margin:0}
+        .chroma{color:#f8f8f2;background-color:#282a36;overflow:hidden}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#ffc}.chroma .lnt{margin-right:.4em;padding:0 .4em;color:#7f7f7f}.chroma .ln{margin-right:.4em;padding:0 .4em;color:#7f7f7f}.chroma .k{color:#ff79c6}.chroma .kc{color:#ff79c6}.chroma .kd{color:#8be9fd;font-style:italic}.chroma .kn{color:#ff79c6}.chroma .kp{color:#ff79c6}.chroma .kr{color:#ff79c6}.chroma .kt{color:#8be9fd}.chroma .na{color:#50fa7b}.chroma .nb{color:#8be9fd;font-style:italic}.chroma .nc{color:#50fa7b}.chroma .nf{color:#50fa7b}.chroma .nl{color:#8be9fd;font-style:italic}.chroma .nt{color:#ff79c6}.chroma .nv{color:#8be9fd;font-style:italic}.chroma .vc{color:#8be9fd;font-style:italic}.chroma .vg{color:#8be9fd;font-style:italic}.chroma .vi{color:#8be9fd;font-style:italic}.chroma .s{color:#f1fa8c}.chroma .sa{color:#f1fa8c}.chroma .sb{color:#f1fa8c}.chroma .sc{color:#f1fa8c}.chroma .dl{color:#f1fa8c}.chroma .sd{color:#f1fa8c}.chroma .s2{color:#f1fa8c}.chroma .se{color:#f1fa8c}.chroma .sh{color:#f1fa8c}.chroma .si{color:#f1fa8c}.chroma .sx{color:#f1fa8c}.chroma .sr{color:#f1fa8c}.chroma .s1{color:#f1fa8c}.chroma .ss{color:#f1fa8c}.chroma .m{color:#bd93f9}.chroma .mb{color:#bd93f9}.chroma .mf{color:#bd93f9}.chroma .mh{color:#bd93f9}.chroma .mi{color:#bd93f9}.chroma .il{color:#bd93f9}.chroma .mo{color:#bd93f9}.chroma .o{color:#ff79c6}.chroma .ow{color:#ff79c6}.chroma .c{color:#6272a4}.chroma .ch{color:#6272a4}.chroma .cm{color:#6272a4}.chroma .c1{color:#6272a4}.chroma .cs{color:#6272a4}.chroma .cp{color:#ff79c6}.chroma .cpf{color:#ff79c6}.chroma .gd{color:#8b080b}.chroma .ge{text-decoration:underline}.chroma .gh{font-weight:700}.chroma .gi{font-weight:700}.chroma .go{color:#44475a}.chroma .gu{font-weight:700}.chroma .gl{text-decoration:underline}.lntd:first-of-type>.chroma{padding-right:0}.chroma code{font-family:jetbrains mono!important;font-size:.85em;line-height:1em;background:0 0;padding:0}.chroma{border-radius:3px;margin:0}pre.chroma{-moz-tab-size:4;-o-tab-size:4;tab-size:4}
     </style>
     
     
@@ -472,7 +472,7 @@ if (!doNotTrack) {
     <h1 class="title">Project Idea List</h1>
     <article>
       <p class="meta">
-          Last updated July 11, 2022
+          Last updated July 13, 2022
       </p>
       <ul class="tags">
     
@@ -606,57 +606,12 @@ if (!doNotTrack) {
     
   
 
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-
 
 
 
 
 <ul>
+<li>treesitter based CRDT for smart git merges</li>
 <li>big touchscreen desk
 <ul>
 <li>what if i just got a huge old flatscreen tv</li>
@@ -783,9 +738,7 @@ if (!doNotTrack) {
 <ul>
 <li>hand-drawn vibe</li>
 <li>have a featured/favourites section to help people find stuff</li>
-<li>include github sponsors link + rss</li>
 <li>no more ascii art perhaps</li>
-<li>door/portal motif? <img src="/thoughts/images/portal motif.png" title="/thoughts/images/portal motif.png"></li>
 <li>really like the aesthetics in 
 
 <a href="https://www.themarginalian.org/2022/05/28/arthur-zajonc-catching-the-light/?curius=1294" rel="noopener">https://www.themarginalian.org/2022/05/28/arthur-zajonc-catching-the-light/?curius=1294</a></li>
@@ -799,13 +752,10 @@ if (!doNotTrack) {
 <a href="http://www.narrowdesign.com/" rel="noopener">http://www.narrowdesign.com/</a></li>
 <li>
 
-<a href="https://remix.run/" rel="noopener">https://remix.run/</a></li>
-<li>
-
-<a href="https://lynnandtonic.com/" rel="noopener">https://lynnandtonic.com/</a></li>
-<li>
-
 <a href="https://thebrowser.company/" rel="noopener">https://thebrowser.company/</a></li>
+<li>
+
+<a href="http://lynnecarty.info/" rel="noopener">http://lynnecarty.info/</a></li>
 </ul>
 </li>
 <li>misc
