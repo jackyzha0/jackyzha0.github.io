@@ -165,7 +165,7 @@ The application-level event log management and collaboration
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
 
 ## Acknowledgements
-Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for you continued support. This project wouldn't be possible without all of you :))
+Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for your continued support. This project wouldn't be possible without all of you :))
 
 [^1]: Divya Siddarth, Danielle Allen, E. Glen Weyl, *The Web3 Decentralization Debate is Focused on the Wrong Question* in Wired Magazine ([Source](https://www.wired.com/story/web3-blockchain-decentralization-governance/))
 [^2]: Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan, *Local-first software* in Ink & Switch ([Source](https://www.inkandswitch.com/local-first/))

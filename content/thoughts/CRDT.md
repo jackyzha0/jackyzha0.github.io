@@ -96,9 +96,12 @@ as tombstones accumulate and internal data structures become unbalanced. However
 
 One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.
 
-
 ### Exploiting good connectivity for stronger consistency
 Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define *weak operations* which only *eventually* need to be linearized.
+
+## Unsolved Problems
+- Concurrent move + edit in sequences is unsolved
+	- Almost all implementations cause duplication
 
 ## Readings
 - [A comprehensive study of CRDTs](https://hal.inria.fr/inria-00555588/document) 

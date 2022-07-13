@@ -42,7 +42,7 @@ Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message
 So we use logical clocks to work based off of *the number of events that have occurred rather than actual time passed.*
 
 ### Lamport Clocks
-Provides a **partial order** on ervents
+Provides a **partial order** on events
 
 Logic
 - On initialization, set `t := 0` for each node

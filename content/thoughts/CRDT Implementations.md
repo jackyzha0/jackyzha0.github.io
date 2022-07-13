@@ -240,7 +240,7 @@ For example:
 - Grow-only set (G-Set) avoids remove altogether
 - 2-Phase set (2P-Set) is a variant where both add and remove are valid operations but an element cannot be re-added once removed
 - Unique set (U-Set) is an extension of 2-Phase set where we additionally assume elements are unique. Additional requirement that causal dependencies are respected (op-based CRDTs are sufficient to ensure this)
-- Observed-Removed set (OR-Set) supports both adding and removing elements. Add has precedence when an add and remove happen concurrently.
+- Add-wins set (OR-Set/AW-Set) supports both adding and removing elements. Add has precedence when an add and remove happen concurrently.
 
 ### State-based 2P-Set
 The compare function (checking to see if `x` comes before `y` in the semilattice) here is quite tricky and not immediately obvious why it is correct.
@@ -319,7 +319,7 @@ class OpCRDT<State> {
 
 ```
 
-### Op-based OR-Set
+### Op-based AW-Set
 Intuition here is to generate a unique ID for each element added. Multiple `add`s will add multiple values and `delete` will delete all elements with the same value.
 
 Concurrent `add`s commute as each `add` is unique. If a concurrent `add` and `remove` happen, it also commutes as `add` has precedence.

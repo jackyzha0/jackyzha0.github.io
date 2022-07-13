@@ -61,16 +61,13 @@ tags:
 -  website inspo
 	- hand-drawn vibe
 	- have a featured/favourites section to help people find stuff
-	- include github sponsors link + rss
 	- no more ascii art perhaps
-	- door/portal motif? ![[thoughts/images/portal motif.png]]
 	- really like the aesthetics in https://www.themarginalian.org/2022/05/28/arthur-zajonc-catching-the-light/?curius=1294
 	- fun interactions
 		- https://victoiredouy.com/about
 		- http://www.narrowdesign.com/
-		- https://remix.run/
-		- https://lynnandtonic.com/
 		- https://thebrowser.company/
+		- http://lynnecarty.info/
 	- misc
 		- https://shapefarm.net/
 		- https://kernel-mag.vercel.app/post/take-back-the-future
