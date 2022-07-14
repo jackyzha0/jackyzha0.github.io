@@ -33,66 +33,60 @@
   pointer-events: none;
   top: 0px;
   left: 0px;
-}
 
-#cursor-chat-layer .cursor > svg {
-  position: absolute;
-  top: -17.5px;
-  left: -17.5px;
-  width: 35px;
-  height: 35px;
-}
-
-#cursor-chat-layer .cursor {
-  transition: opacity 1s ease;
-}
-
-#cursor-chat-layer .stale, #cursor-chat-layer .new {
-  visibility: hidden;
-}
-
-#cursor-chat-layer .expiring {
-  opacity: 0;
-}
-
-#cursor-chat-layer .cursor > p, #cursor-chat-layer #cursor-chat-box {
-  display: inline-block;
-  margin-top: 1em;
-  margin-left: 0.5em;
-  padding: 0.6em 1em;
-  position: relative;
-  border-radius: 20px;
-  border: 2px solid #00000011;
-  box-shadow: 7px 15px 36px 4px rgba(0,0,0,0.1);
-  max-width: 250px;
-  border-top-left-radius: 0;
-  font-family: sans-serif;
-  overflow-wrap: anywhere;
-  font-size: 1em;
-  min-height: calc(1em + 4px);
-}
-
-#cursor-chat-layer #cursor-chat-box {
-  display: none;
-}
-
-#cursor-chat-layer .chat {
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-
-#cursor-chat-layer .chat.show {
-  visibility: visible;
-  opacity: 1;
-}
-
-.index {
-  padding: 4em 25vw;
-  @media all and (max-width: 1200px) {
-    padding: 25px 5vw;
+  & .cursor {
+    transition: opacity 1s ease;
+    & > svg {
+      position: absolute;
+      top: -17.5px;
+      left: -17.5px;
+      width: 35px;
+      height: 35px;
+    }
   }
 
+  & .stale, & .new {
+    visibility: hidden;
+  }
+
+  & .expiring {
+    opacity: 0;
+  }
+
+  & .cursor > p, & #cursor-chat-box {
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    padding: 0.6em 1em;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #00000011;
+    box-shadow: 7px 15px 36px 4px rgba(0,0,0,0.1);
+    max-width: 250px;
+    border-top-left-radius: 0;
+    font-family: sans-serif;
+    overflow-wrap: anywhere;
+    font-size: 1em;
+    min-height: calc(1em + 4px);
+  }
+
+  & #cursor-chat-box {
+    display: none;
+  }
+
+  & .chat {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+#index {
   & > .bio {
     display: flex;
     gap: 1.5em;
@@ -154,4 +148,60 @@
   font-size: 1.1rem;
   padding: 0;
   color: var(--dark);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.return-only {
+  display: none;
+}
+
+[visited="true"] .return-only {
+  display: inline;
+}
+
+[show-animation="true"] .delay {
+  animation: fadeIn ease 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &.t-1 {
+    animation-delay: 0.5s;
+  }
+
+  &.t-2 {
+    animation-delay: 0.9s;
+  }
+
+  &.t-3 {
+    animation-delay: 2s;
+  }
+
+  &.t-4 {
+    animation-delay: 2.2s;
+  }
+
+  &.t-5 {
+    animation-delay: 2.4s;
+  }
+
+  @for $j from 1 through 5 {
+  @for $i from 1 through 10 {
+  &.stagger:nth-last-of-type(#{$j}) > *:nth-child(#{$i}) {
+    animation: fadeIn ease 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: #{$i * .08 + 2.2}s;
+    z-index: #{-$i + 10 * ($j+1)};
+    position: relative;
+  }
+  }
+  }
 }

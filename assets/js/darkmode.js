@@ -2,13 +2,12 @@ const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'l
 const currentTheme = localStorage.getItem('theme') ?? userPref
 const syntaxTheme = document.querySelector("#theme-link");
 
-
-{{ $darkSyntax := resources.Get "styles/_dark_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
-{{ $lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
+{{ $darkSyntax := resources.Get "styles/_dark_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify }}
+{{ $lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify }}
 
 if (currentTheme) {
   document.documentElement.setAttribute('saved-theme', currentTheme);
-  syntaxTheme.href = currentTheme === 'dark' ?  '{{ $darkSyntax.Permalink }}' :  '{{ $lightSyntax.Permalink }}';
+  syntaxTheme.href = currentTheme === 'dark' ? '{{ $darkSyntax.Permalink }}' : '{{ $lightSyntax.Permalink }}';
 }
 
 const switchTheme = (e) => {

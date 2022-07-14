@@ -4,10 +4,10 @@
 
 <body>
 {{partial "search.html" .}}
+{{partial "chat.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
     {{partial "header.html" .}}
-    {{partial "chat.html" .}}
     <article>
       {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
       <p class="meta">

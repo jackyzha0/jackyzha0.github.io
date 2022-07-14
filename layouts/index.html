@@ -3,12 +3,10 @@
 {{ partial "head.html" . }}
 
 <body>
-{{partial "chat.html" .}}
 {{partial "search.html" .}}
-<div class="index delay t-3">
+{{partial "chat.html" .}}
+<div id="index" class="singlePage">
     {{partial "header.html" .}}
-</div>
-<div class="index">
     <div class="bio">
         <div class="writing-sidebar">
             <div class="delay t-3">
