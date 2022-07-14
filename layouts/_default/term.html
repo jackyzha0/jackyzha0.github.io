@@ -12,6 +12,7 @@
         <h1>Tag: {{ .Title }}</h1>
         {{with .Params.description}}
             <p>{{.}}</p>
+            <a href="/tags">See all tags →</a>
         {{end}}
         {{partial "page-list.html" .Paginator.Pages}}
         {{ template "_internal/pagination.html" . }}
