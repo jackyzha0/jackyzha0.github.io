@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>evergreen on jzhao.xyz</title>
+    <title>Evergreen on jzhao.xyz</title>
     <link>https://jzhao.xyz/tags/evergreen/</link>
-    <description>Recent content in evergreen on jzhao.xyz</description>
+    <description>Recent content in Evergreen on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jzhao.xyz/tags/evergreen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rhizome Research Log</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</link>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>I think research logs tend to generally focus too much on what one did rather than what one felt.</description>
+      <description>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</description>
     </item>
     
     <item>
@@ -40,7 +39,7 @@
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Projects/</guid>
-      <description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining.</description>
+      <description>This is a list of notable projects that I&amp;rsquo;ve finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found here.</description>
     </item>
     
     <item>

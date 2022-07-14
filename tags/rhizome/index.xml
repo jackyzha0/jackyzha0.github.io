@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rhizome on jzhao.xyz</title>
+    <title>Rhizome on jzhao.xyz</title>
     <link>https://jzhao.xyz/tags/rhizome/</link>
-    <description>Recent content in rhizome on jzhao.xyz</description>
+    <description>Recent content in Rhizome on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jzhao.xyz/tags/rhizome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rhizome Philosophy</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</link>
@@ -14,7 +13,7 @@
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Philosophy/</guid>
       <description>See the main [[thoughts/Rhizome Proposal|Rhizome Proposal]]
-Interoperable Data on the web today is mostly treated as second-class to applications.</description>
+Interoperable Data on the web today is mostly treated as second-class to applications. In this form, data is contextual &amp;ndash; it only makes sense in the context of what you can do in an application.</description>
     </item>
     
     <item>
@@ -23,7 +22,7 @@ Interoperable Data on the web today is mostly treated as second-class to applica
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</guid>
-      <description>I think research logs tend to generally focus too much on what one did rather than what one felt.</description>
+      <description>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</description>
     </item>
     
     <item>
@@ -33,7 +32,8 @@ Interoperable Data on the web today is mostly treated as second-class to applica
       
       <guid>https://jzhao.xyz/thoughts/Rhizome-Specification/</guid>
       <description>See also: [[thoughts/Rhizome Research Log|Research Log]]
- &amp;hellip; tbd</description>
+ &amp;hellip; tbd
+scraping the page for now as my idea for what Rhizome even is is still evolving rapidly</description>
     </item>
     
     <item>

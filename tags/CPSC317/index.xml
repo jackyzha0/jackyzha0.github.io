@@ -32,7 +32,8 @@
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/HTTP/</guid>
-      <description>Main method of communication at the Application Layer for the web</description>
+      <description>Main method of communication at the Application Layer for the web
+Connections  Non-persistent HTTP (v1.0)  At most one object is sent over each TCP connection Connection is closed as soon as data is transferred Include an additional round trip for the TCP handshake for each object = $2n$ RTTs where $n$ is number of resources   Persistent HTTP (v1.</description>
     </item>
     
     <item>
@@ -42,7 +43,7 @@
       
       <guid>https://jzhao.xyz/thoughts/TCP/</guid>
       <description>[[thoughts/Transport Layer|Transport layer protocol]]
-When a host requires assurance that the remote end has actually received the data it sends.</description>
+When a host requires assurance that the remote end has actually received the data it sends. But instead of requesting a signature at the remote end, TCP requires an acknowledgement be returned</description>
     </item>
     
     <item>
@@ -52,7 +53,8 @@ When a host requires assurance that the remote end has actually received the dat
       
       <guid>https://jzhao.xyz/thoughts/Application-Layer/</guid>
       <description>Layer 1, the layer above the Transport Layer
-Application/Presentation/Session layer</description>
+Application/Presentation/Session layer
+ Unit: Data Responsibilities: human-computer interaction layer, where applications can access the network services (includes [[thoughts/encryption|encryption]], connection, port, and session management)  </description>
     </item>
     
     <item>
@@ -61,7 +63,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/ARP/</guid>
-      <description>Address Resolution Protocol (ARP) Purpose: links the Network Layer (IP address) with the link layer (MAC address)</description>
+      <description>Address Resolution Protocol (ARP) Purpose: links the Network Layer (IP address) with the link layer (MAC address)
+Case: A wants tot send a datagram to B, but A doesn&amp;rsquo;t know B&amp;rsquo;s MAC address</description>
     </item>
     
     <item>
@@ -70,7 +73,7 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/DHCP/</guid>
-      <description>Dynamic Host Configuration Protocol so they can join a network. Assigns IP addresses to hosts.</description>
+      <description>Dynamic Host Configuration Protocol so they can join a network. Assigns IP addresses to hosts. Main reason was when people started moving devices across networks</description>
     </item>
     
     <item>
@@ -79,7 +82,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/DNS/</guid>
-      <description>Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the Internet.</description>
+      <description>Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the Internet.
+DNS currently has ~300 million DNS registrations.</description>
     </item>
     
     <item>
@@ -88,7 +92,7 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/IP-Addresses/</guid>
-      <description>IP addresses are 32 bits (4 bytes) split into 4 chunks.</description>
+      <description>IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.</description>
     </item>
     
     <item>
@@ -97,7 +101,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Link-Layer/</guid>
-      <description>Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]</description>
+      <description>Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]
+ Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection).</description>
     </item>
     
     <item>
@@ -106,7 +111,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/NAT/</guid>
-      <description>Network Address Translation Both network and transport layer (violation of abstraction/layering)</description>
+      <description>Network Address Translation Both network and transport layer (violation of abstraction/layering)
+ More devices than IP addresses! What do we do?</description>
     </item>
     
     <item>
@@ -115,7 +121,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Network-Layer/</guid>
-      <description>Layer 3, the layer below the Transport Layer and layer above the Link Layer</description>
+      <description>Layer 3, the layer below the Transport Layer and layer above the Link Layer
+ Unit: Packet (datagram) Responsibilities: Routes packet through routers to destination machine (not necessary if two devices are on the same network) Two main functions  Forwarding: move packets from router’s input to appropriate router output (process of getting through a single interchange) Routing: determine route taken by packets from source to destination (process of planning trip from source to destination)    Packet Definition Contains information about the packet itself (metadata) and the body/content</description>
     </item>
     
     <item>
@@ -144,7 +151,8 @@ Application/Presentation/Session layer</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Transport-Layer/</guid>
-      <description>Layer 2, the layer below the Application Layer and layer above the Network Layer</description>
+      <description>Layer 2, the layer below the Application Layer and layer above the Network Layer
+ Unit: Segment Responsibilities: Ensures data arrives in order (if required), Recovers lost data (if required), Identifies process on machine, flow control Adds an additional addressing space at the port level (historically a 16 bit uint from 0 to 65535) Can be either be either packet or stream based  Packet - best effort, no established connection, no transport level delay/waiting (e.</description>
     </item>
     
     <item>
@@ -174,7 +182,7 @@ Motivation:
       
       <guid>https://jzhao.xyz/thoughts/internet-computing/</guid>
       <description>Notes for CPSC 317 (see all notes)
-The Internet is a network of networks.</description>
+The Internet is a network of networks. The main goals was to integrate a number of separately</description>
     </item>
     
     <item>

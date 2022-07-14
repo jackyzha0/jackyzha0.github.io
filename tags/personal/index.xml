@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>personal on jzhao.xyz</title>
+    <title>Personal on jzhao.xyz</title>
     <link>https://jzhao.xyz/tags/personal/</link>
-    <description>Recent content in personal on jzhao.xyz</description>
+    <description>Recent content in Personal on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jzhao.xyz/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Me, my selves, and I</title>
       <link>https://jzhao.xyz/posts/Me-my-selves-and-I/</link>
@@ -14,7 +13,8 @@
       
       <guid>https://jzhao.xyz/posts/Me-my-selves-and-I/</guid>
       <description>An exploration on commitment, trust, and growth.
- The Persistence of Memory by Salvador Dalí</description>
+ The Persistence of Memory by Salvador Dalí
+ The sound of the waves are nice, huh?</description>
     </item>
     
     <item>
@@ -61,7 +61,8 @@
       
       <guid>https://jzhao.xyz/posts/hootsuite/</guid>
       <description>(with insights from Calvin and Hobbes)
-Since I’ve started at Hootsuite, I have</description>
+Since I’ve started at Hootsuite, I have
+  added and/or changed 6223 lines of code in 16 different repos</description>
     </item>
     
   </channel>

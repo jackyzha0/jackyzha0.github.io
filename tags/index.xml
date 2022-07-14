@@ -8,78 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>seed</title>
-      <link>https://jzhao.xyz/tags/seed/</link>
-      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/seed/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fruit</title>
-      <link>https://jzhao.xyz/tags/fruit/</link>
-      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/fruit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>writing</title>
-      <link>https://jzhao.xyz/tags/writing/</link>
-      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rhizome</title>
-      <link>https://jzhao.xyz/tags/rhizome/</link>
-      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/rhizome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>evergreen</title>
-      <link>https://jzhao.xyz/tags/evergreen/</link>
-      <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/evergreen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>technical</title>
-      <link>https://jzhao.xyz/tags/technical/</link>
-      <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/technical/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sapling</title>
-      <link>https://jzhao.xyz/tags/sapling/</link>
-      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/sapling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PHIL240A</title>
-      <link>https://jzhao.xyz/tags/PHIL240A/</link>
-      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/tags/PHIL240A/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CPSC317</title>
       <link>https://jzhao.xyz/tags/CPSC317/</link>
       <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
@@ -89,11 +17,38 @@
     </item>
     
     <item>
-      <title>personal</title>
+      <title>Evergreen</title>
+      <link>https://jzhao.xyz/tags/evergreen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/evergreen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fruit</title>
+      <link>https://jzhao.xyz/tags/fruit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/fruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
       <link>https://jzhao.xyz/tags/personal/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHIL240A</title>
+      <link>https://jzhao.xyz/tags/PHIL240A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/PHIL240A/</guid>
       <description></description>
     </item>
     
@@ -103,6 +58,51 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/tags/PHIL451A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rhizome</title>
+      <link>https://jzhao.xyz/tags/rhizome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/rhizome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sapling</title>
+      <link>https://jzhao.xyz/tags/sapling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/sapling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seed</title>
+      <link>https://jzhao.xyz/tags/seed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/seed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical</title>
+      <link>https://jzhao.xyz/tags/technical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/technical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>https://jzhao.xyz/tags/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/tags/writing/</guid>
       <description></description>
     </item>
     
