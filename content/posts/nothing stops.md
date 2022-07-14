@@ -1,12 +1,10 @@
 ---
-title: "nothing stops"
+title: "Nothing stops"
 date: 2022-03-20
 tags:
 - fruit
 - writing
 ---
-
-> NOTHING STOPS
 
 *It was so heavy-handed and so stupid, hitting the nail on the head so hard that it rang like a bell. Nothing stops.* -- [Helena Fitzgerald on Substack](https://griefbacon.substack.com/p/nothing-stops?utm_source=url&curius=1294)
 

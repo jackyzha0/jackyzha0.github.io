@@ -24,6 +24,16 @@
   --outlinegray: #343434 !important;
 }
 
+#banner {
+  margin: 3em 0;
+  filter: invert(0%);
+  opacity: 0.85;
+
+  [saved-theme="dark"] & {
+    filter: invert(100%);
+  }
+}
+
 #cursor-chat-layer {
   position: absolute;
   width: 100%;

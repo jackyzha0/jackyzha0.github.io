@@ -5,11 +5,9 @@ tags:
 - sapling
 ---
 
->Cozy eternal beta test mode
+>cozy eternal beta test mode
 
 re: [digital mindfulness](thoughts/digital%20mindfulness.md)! Not everything needs to be built at scale -- sometimes it can just be for family and friends :)) Normalize creating playful and non-[instrumental](thoughts/instrumentalism.md) technology
-
-For example, the [gift I made for Anson](https://jzhao.xyz/anson/v22) for Valentines in 2022.
 
 ## An app can be a home-cooked meal
 Source: [Robin Sloan](https://www.robinsloan.com/notes/home-cooked-app/)
@@ -36,4 +34,3 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 
 - There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.
 - Little towns of people's plots :)) https://tilde.town/~troido/cadastre/town.html
-- 

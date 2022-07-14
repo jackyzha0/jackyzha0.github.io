@@ -10,27 +10,6 @@ tags:
 
 ---
 
-**the mundane**
-
-{{< poem >}}
-The sun streams in through the window at 1:00,
-same as always.
-
-The water dribbling out of the tin can,
-moistening the soil for the perennials,
-same as always.
-
-The book sitting on the coffee table,
-bookmark wedged slightly past halfway,
-same as always.
-
-The transit home,
-listening to music,
-same as always.
-{{< /poem >}}
-
----
-
 **casual magic**
 
 {{< poem >}}

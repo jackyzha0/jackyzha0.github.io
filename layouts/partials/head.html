@@ -79,6 +79,19 @@
   "indices/contentIndex.json" | resources.Fingerprint "md5" | resources.Minify
   }}
   <script>
+    // last visit animation calculations
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
     const BASE_URL = {{.Site.BaseURL}}
     const fetchData = Promise.all([
           fetch("{{ $linkIndex.Permalink }}")
@@ -140,19 +153,6 @@
     }
 
     const init = (doc = document) => {
-      // last visit animation calculations
-      const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      const lastVisit = localStorage.getItem('lastVisitTime')
-      const now = Date.now()
-      let show = 'true'
-      if (lastVisit) {
-        doc.documentElement.setAttribute('visited', 'true')
-        const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
-        show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
-      }
-      doc.documentElement.setAttribute('show-animation', show)
-      localStorage.setItem('lastVisitTime', `${now}`)
-
       // NOTE: everything within this callback will be executed for initial page navigation. This is a good place to put JavaScript that only replaces DOM nodes.
       {{if $.Site.Data.config.enableCodeBlockCopy -}}
       addCopyButtons();
