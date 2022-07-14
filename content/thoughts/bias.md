@@ -21,7 +21,7 @@ Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in t
 ## Ethical Matrices
 Who cares about my algorithm? Who are the stakeholders? Why do they care? What are their goals?
 
-## [Search](thoughts/search.md) Engine Bias
+## Search Engine Bias
 From [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md)
 
 Related: [data distributions](thoughts/data%20distributions.md)

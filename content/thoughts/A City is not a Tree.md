@@ -17,10 +17,12 @@ Both the tree and the semilattice are ways of thinking about how a large collect
 
 > For the human mind, the tree is the easiest vehicle for complex thoughts. But the city is not, cannot and must not be a tree. The city is a receptacle for life. If the receptacle severs the overlap of the strands of life within it, because it is a tree, it will be like a bowl full of razor blades on edge, ready to cut up whatever is entrusted to it. In such a receptacle life will be cut to pieces. If we make cities which are trees, they will cut our life within to pieces.
 
-## [Urban planning](thoughts/urban%20planning.md)
+## Urban Planning
 Columbia, Maryland → Neighbourhoods, in clusters of five, form 'villages'. Transportation joins the villages into a new town. The organization is a tree.
 
 Hilberseimer's book The Nature of Cities → He describes the fact that certain Roman towns had their origin as military camps. The symbol is apt, for, of course, the organization of the army was designed precisely in order to create discipline and rigidity.
+
+See more in the note on [Urban planning](thoughts/urban%20planning.md)
 
 ## Abolish hierarchies
 Whenever we have a tree structure, it means that within this structure no piece of any unit is ever connected to other units, except through the its parent (meaning the unit as a whole)

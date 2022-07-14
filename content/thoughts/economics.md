@@ -20,10 +20,10 @@ However, assumptions in the early economic models of human behaviour are problem
 
 Economics embraces reductive utilitarianism and posits you can put a price on anything. We tend to be intrinsically motivated to connect to others and invest long term in a relationship where no extrinsic value is ever publicly admitted. When a relationship transitions into being an extrinsically rewarded transactional relationship, the relationship often suffers a catastrophic loss of value. (This is the same reason that just throwing money at [open source software](thoughts/Making%20and%20Maintenance%20of%20OSS.md) often doesn't work, it kills the intrinsic drive to create)
 
-### [Selfishness](thoughts/selfish.md)
+### Selfishness
 [Source: Does Studying Economics Breed Greed? by *Adam Grant*](https://www.psychologytoday.com/us/blog/give-and-take/201310/does-studying-economics-breed-greed)
 
-Those that practice economics — and to a degree modern American capitalism — are heavily invested in an implicit system of self-centered moral values.
+Those that practice economics — and to a degree modern American capitalism — are heavily invested in an implicit system of [self-centered](thoughts/selfish.md) moral values.
 
 "The repetitive doctrine that humans are best modeled as selfish rational optimizers creates a set of selfish social norms that practitioners consciously or subconsciously follow. The act of studying economics makes you a morally worse human-being (by most definitions of morality.)"
 

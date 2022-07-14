@@ -15,12 +15,14 @@ Can we ever have fully [digital commons](thoughts/digital%20commons.md)?
 
 How large can communities get before they decay? Relevant: [group limits](thoughts/group%20limits.md), [in-group bias](thoughts/in-group%20bias.md)
 
-## [Turing Test](thoughts/Turing%20Test.md) for communities
+## Turing Test for communities
 *heuristic* from Austin Wu
 
 A very [computational](thoughts/computability.md) view of communities but is it possible to test for value alignment within a community like a Turing Test? If the community feels and behaves like a person, then its [values](thoughts/value%20setting.md) are aligned?
 
 How do we quantify this if vibes are unoptimizable?
+
+See also: [Turing Test](thoughts/Turing%20Test.md) 
 
 ## 90/9/1 Rule
 The "90–9–1" version of this rule states that for websites where users can both create and edit content, 1% of people create content, 9% edit or modify that content, and 90% view the content without contributing.

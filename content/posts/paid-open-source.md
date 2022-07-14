@@ -26,7 +26,7 @@ Traditionally, software has been seen as a product of firms. Open source develop
 Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then money, an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.
 
 
-## [Creation vs Maintenance](thoughts/creation%20vs%20maintenance.md)
+## Creation vs Maintenance
 > "Creation is an intrinsic motivator, maintenance usually requires extrinsic motivation"
 >
 > @balupton, isaacs/github [#167](https://github.com/isaacs/github/issues/167)

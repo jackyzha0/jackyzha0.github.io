@@ -31,12 +31,12 @@ These spaces were described as originally being "third spaces" outside of the in
 
 **These design sites used to be valorized as places of learning, making, and building. Why then, have they become increasingly corporate places of extraction of free labour?**
 
-## [Incentive](thoughts/incentives.md) Structure of Hackathons
+## Incentive Structure of Hackathons
 ![Stacks of hackathon stickers ready for hackers' laptops](/posts/images/hackathons/swag.jpg)*Stacks of hackathon stickers ready for hackers' laptops*
 
 It takes money to run events. Providing an adequate venue, food, internet, and power are not free resources. Yet, with the exception of a few corporate hackathons, the majority of hackathons remain free for attendees. To accomplish this, most hackathon organizers decide to try to acquire monetary sponsorships, food partnerships, and in-kind sponsorships in order to offset costs.
 
-As a result a viscious cycle forms:
+As a result a viscious cycle of [incentives](/thoughts/incentives) forms:
 1. Sponsors try to maximize the benefits they get for their money (e.g. hosting workshops, hiring booths, keynote speakers, company branding)
 2. With more money, hackathon organizers increase the size and scope of the event, leading to more hackers
 3. Hackers see sponsors as increasingly quintessential to the hackathon experience, being a key reason why hackers attend the events (sponsor prizes, free merch, hiring opportunities, etc.)

@@ -54,9 +54,9 @@ ML systems work based on *inductive inference*. Any person who has taken a first
 ## Recognition Systems
 "This is the danger of affect recognition tools. As we've seen, they take us back to the phrenological past, where spurious claims were made, allowed to stand, and deployed to support existing systems of power."
 
-## [Accountability](thoughts/accountability.md)
+## Accountability
 Andrew Ferguson: "We are moving to a state where prosecutors and police are going to say 'the algorithm told me to do it, so I did, I had no idea what I was doing'."
 
-A false objectivity, "it's just math, math can't be biased, right?"
+A false objectivity, "it's just math, math can't be biased, right?" -- where's the [accountability](thoughts/accountability.md)?
 
-The historian of technology Alex Campolo calls this *enchanted determinism*: "AI systems are seen as enchanted, beyond the known world, yet determinisitc in that they discover patterns that can be applied with predictive certainty to everyday life."
+The historian of technology Alex Campolo calls this *enchanted determinism*: "AI systems are seen as enchanted, beyond the known world, yet deterministic in that they discover patterns that can be applied with predictive certainty to everyday life."

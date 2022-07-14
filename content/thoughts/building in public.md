@@ -13,3 +13,5 @@ Invite distractions but get a better sense of the world
 
 Related: [Collaborative thinking](posts/collaborative-thinking.md)
 
+## As a form of EA
+Working and being vocal about your work is a way to amplify your [effective](/thoughts/effective%20altruism.md) impact radius. By doing so, you can change other people's thinking around giving, money, and charity through discussion

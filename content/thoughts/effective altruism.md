@@ -20,9 +20,6 @@ How do we time donations to maximize impact? Turns out there's no 'goldilocks zo
 * When you're young: justify putting it off by saying "oh I'll donate when I have more money"
 * When you're old: justify not doing it by saying "oh that's too much of my money I'm giving away"
 
-## [Building in public](thoughts/building%20in%20public.md) as a form of EA
-Working and being vocal about your work is a way to amplify your effective impact radius. By doing so, you can change other people's thinking around giving, money, and charity through discussion
-
 ## Shallow Puddle Analogy
 Story from [source: The Drowning Child and the Expanding Circle by *Peter Singer*](https://forum.effectivealtruism.org/posts/SwG8Tj9RkG8DzpM4f/the-drowning-child-and-the-expanding-circle)
 

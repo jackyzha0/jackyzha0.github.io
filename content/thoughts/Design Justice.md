@@ -79,11 +79,11 @@ Racial hierarchies can only be dismantled by actively antiracist systems design,
 
 Far too often, user personas are created out of thin air by members of the design team, based on their own assumption or stereotypes about groups of people. When this happens, user personas are literally objectified assumptions about end users.
 
-### [Maintenance](thoughts/maintenance.md)
+### Maintenance
 
 [Creating new vs maintaining old](thoughts/creation%20vs%20maintenance.md)
 - Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating something new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
-- Support maintenance, not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
+- Support [Maintenance](thoughts/maintenance.md), not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
 
 "Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenance"
 
@@ -100,9 +100,9 @@ Neoliberal, technocentric ideas about the city as a machine or as a software sys
 
 First consider what already works at the community level, and to steer students away from the pitfalls of tech solutionism and technochauvanism
 
-### [Attention economy](thoughts/attention%20economy.md)
+### Attention
 
-Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts.
+Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts (this is the [Attention economy](thoughts/attention%20economy.md)).
 
 "Design challenges" in which dozens, sometimes hundreds, of people do free labour and submit ideas in hopes that they'll be the lucky one chosen to receive visibility, recognition, and possibly even compensation.
 
