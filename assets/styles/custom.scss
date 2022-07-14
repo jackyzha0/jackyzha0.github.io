@@ -129,13 +129,9 @@
         font-size: 1.4rem;
         margin: 0.75em 0;
       }
-
-      & a {
-        font-family: Spectral
-      }
-
+      
       & li {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.8em;
       }
 
       & h3 {
@@ -143,19 +139,19 @@
       }
 
       & .meta {
-        margin-top: 0;
+        margin: 0.2em 0;
       }
 
       & .tags > li > a {
-        font-size: 0.8em;
-        font-weight: 400;
+        font-size: 0.9em;
+        font-weight: 600;
       }
     }
   }
 }
 
 .poem {
-  font-family: Spectral, serif;
+  font-family: var(--font-body);
   font-size: 1.1rem;
   padding: 0;
   color: var(--dark);

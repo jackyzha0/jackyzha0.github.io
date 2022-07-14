@@ -1,5 +1,5 @@
 ---
-title: "React in 30 minutes or your money back"
+title: "React in 30 minutes"
 date: 2021-08-07T08:38:11-04:00
 tags:
 - fruit

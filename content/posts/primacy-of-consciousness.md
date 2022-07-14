@@ -1,5 +1,5 @@
 ---
-title: "Bridging the explanatory gap from the other side"
+title: "On Consciousness"
 date: 2022-04-07
 tags:
 - fruit

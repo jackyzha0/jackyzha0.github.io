@@ -15,7 +15,7 @@
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
                 <ul class="delay stagger">
                     {{range first 3 $writing }}
-                    <li class="section-li">
+                    <li>
                         <div class="section">
                             <div class="desc">
                                 <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
@@ -34,8 +34,8 @@
                 <h2>Recent Notes</h2>
                 {{$notes := where .Site.RegularPages "Section" "thoughts"}}
                 <ul class="delay stagger">
-                    {{range first 3 $notes }}
-                    <li class="section-li">
+                    {{range first 2 $notes }}
+                    <li>
                         <div class="section">
                             <div class="desc">
                                 <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
@@ -48,7 +48,7 @@
                     </li>
                     {{end}}
                 </ul>
-                <a href="/thoughts">See {{sub (len $notes) 3}} more →</a>
+                <a href="/thoughts">See {{sub (len $notes) 2}} more →</a>
             </div>
         </div>
         <article>

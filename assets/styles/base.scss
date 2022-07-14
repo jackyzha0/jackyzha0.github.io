@@ -505,14 +505,14 @@ header {
 
   & > .section {
     display: flex;
-    align-items: center; 
+    align-items: center;
 
     @media all and (max-width: 600px) {
       & .tags {
         display: none;
       }
     }
-
+    
     & h3 > a {
       font-weight: 700;
       margin: 0;
@@ -521,7 +521,7 @@ header {
     & p {
       margin: 0;
       padding-right: 1em;
-      flex-basis: 6em; 
+      width: clamp(6em, 6em, 6em); 
     }
   }
 

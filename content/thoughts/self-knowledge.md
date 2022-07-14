@@ -7,7 +7,7 @@ tags:
 - PHIL451A
 ---
 
-## Reflexivity vs Reflectivity[^1]
+## Reflexivity vs Reflectivity
 Self-illumination/reflexivity  
 - Every conscious experience is directly revealed to itself.  
 - "In seeing blue, you experience seeing"
