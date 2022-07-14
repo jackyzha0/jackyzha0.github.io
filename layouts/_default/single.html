@@ -1,42 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Lang }}">
 {{ partial "head.html" . }}
 
 <body>
-{{partial "chat.html" .}}
 {{partial "search.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
-    <header>
-        <h1 id="page-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Data.config.page_title }}</a></h1>
-      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-      <div class="spacer"></div>
-      {{partial "darkmode.html" .}}
-  </header>
-    {{if in .Params.tags "seed" }}
-    {{partial "ascii/seed.html" .}}
-    {{else if in .Params.tags "sapling" }}
-    {{partial "ascii/sapling.html" .}}
-    {{else if in .Params.tags "evergreen" }}
-    {{partial "ascii/evergreen.html" .}}
-    {{else if in .Params.tags "fruit" }}
-    {{partial "ascii/fruit.html" .}}
-    {{else if in .Params.tags "unplanted" }}
-    {{partial "ascii/unplanted.html" .}}
-    {{end}}
-    {{if .Title}}<h1 class="title">{{ .Title }}</h1>{{end}}
+    {{partial "header.html" .}}
+    {{partial "chat.html" .}}
     <article>
+      {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
       <p class="meta">
-          Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
+          Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}. 
+          {{ partial "github.html" . }}
       </p>
       {{partial "tags.html" .}}
-      {{if and ($.Site.Data.config.enableToc) (gt .WordCount 300)}}
-      <aside class="mainTOC">
-          <h3>Table of Contents</h3>
-          {{ .TableOfContents }}
-      </aside>
-      {{end}}
-      {{partial "textprocessing.html" .}}
+      {{partial "toc.html" .}}
+      {{partial "textprocessing.html" . }}
     </article>
     {{partial "footer.html" .}}
 </div>

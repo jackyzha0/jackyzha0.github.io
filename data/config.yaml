@@ -1,5 +1,16 @@
+name: Jacky Zhao
 enableToc: true
+openToc: false
 enableLinkPreview: true
+enableLatex: true
+enableCodeBlockTitle: true
+enableCodeBlockCopy: true
+enableSPA: false
+enableFooter: true
+enableContextualBacklinks: true
+enableRecentNotes: false
+enableGitHubEdit: false
+GitHubLink: https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content
 description:
   Welcome to my little island on the internet – I’m Jacky!
   I’m curious about how we can better incentivize public goods funding, support better interactions with computers, and be more responsible stewards of technology.

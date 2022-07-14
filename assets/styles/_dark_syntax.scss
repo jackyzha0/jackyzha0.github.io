@@ -1,11 +1,14 @@
-/* Background */ .chroma { color: #f8f8f2; background-color: #282a36; overflow: hidden }
+/* Background */ .bg { color: #f8f8f2; background-color: #282a36; }
+/* PreWrapper */ .chroma { color: #f8f8f2; background-color: #282a36; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err {  }
+/* CodeLine */ .chroma .cl {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
-/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
-/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+/* LineHighlight */ .chroma .hl { background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Line */ .chroma .line { display: flex; }
 /* Keyword */ .chroma .k { color: #ff79c6 }
 /* KeywordConstant */ .chroma .kc { color: #ff79c6 }
 /* KeywordDeclaration */ .chroma .kd { color: #8be9fd; font-style: italic }
@@ -68,11 +71,11 @@
 /* CommentPreproc */ .chroma .cp { color: #ff79c6 }
 /* CommentPreprocFile */ .chroma .cpf { color: #ff79c6 }
 /* Generic */ .chroma .g {  }
-/* GenericDeleted */ .chroma .gd { color: #8b080b }
+/* GenericDeleted */ .chroma .gd { color: #ff5555 }
 /* GenericEmph */ .chroma .ge { text-decoration: underline }
 /* GenericError */ .chroma .gr {  }
 /* GenericHeading */ .chroma .gh { font-weight: bold }
-/* GenericInserted */ .chroma .gi { font-weight: bold }
+/* GenericInserted */ .chroma .gi { color: #50fa7b; font-weight: bold }
 /* GenericOutput */ .chroma .go { color: #44475a }
 /* GenericPrompt */ .chroma .gp {  }
 /* GenericStrong */ .chroma .gs {  }
@@ -80,24 +83,3 @@
 /* GenericTraceback */ .chroma .gt {  }
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w {  }
-
-.lntd:first-of-type > .chroma {
-  padding-right: 0;
-}
-
-.chroma code {
-  font-family: 'JetBrains Mono' !important;
-  font-size: 0.85em;
-  line-height: 1em;
-  background: none;
-  padding: 0;
-}
-
-.chroma {
-  border-radius: 3px;
-  margin: 0;
-}
-
-pre.chroma {
-  -moz-tab-size:4;-o-tab-size:4;tab-size:4;
-}

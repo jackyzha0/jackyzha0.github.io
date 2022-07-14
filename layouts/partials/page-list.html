@@ -4,12 +4,12 @@
         <div class="section">
             <div class="desc">
                 <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+                {{partial "tags.html" .}}
                 <p>{{- .Summary -}}{{if .Truncated}}...{{end}}</p>
             </div>
             <p class="meta">
                 {{ .ReadingTime }} minute read. Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
             </p>
-            {{partial "tags.html" .}}
         </div>
     </li>
     {{- end -}}

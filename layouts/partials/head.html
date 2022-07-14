@@ -1,59 +1,184 @@
 <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="{{if .IsHome}}{{$.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
-    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Data.config.page_title }}{{ end }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="/res/logo.png" />
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="{{if .IsHome}}{{$.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}"
+  />
+  <title>
+    {{ if .Title }}{{ .Title }}{{ else }}{{ $.Site.Data.config.page_title }}{{
+    end }}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Social Tags -->
-    <meta property="og:url" content="https://jzhao.xyz" />
-    <meta property="og:title" content="{{ .Scratch.Get "title" | humanize }}" />
-    <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
-    <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@_jzhao">
-    <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
-    <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
-    <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+  <!-- Social Tags -->
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="{{ .Scratch.Get "title" | humanize }}" />
+  <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="{{ .Scratch.Get "title" }}">
+  <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
 
-    <!-- CSS Stylesheets and Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Spectral:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    {{ $css := slice "base.scss" "custom.scss" "darkmode.scss" "syntax.scss"}}
-    {{range $css}}
-    {{$sass := resources.Get . | resources.ToCSS }}
-    {{with $sass | minify}}
-    <style>
-        {{.Content | safeCSS}}
-    </style>
-    {{end}}
-    {{end}}
 
-    {{partial "latex.html" .}}
-    {{- with resources.Get "darkmode.js" | minify -}}
-    <script>
-      {{.Content | safeJS }}
-    </script>
-    {{- end -}}
+  <!-- HTML Favicon -->
+  {{ $favicon := $.Site.Data.config.favicon | default (slice (dict "rel" "shortcut icon" "type" "image/png" "href" "icon.png")) }}
+  {{ $type := (printf "%T" $favicon) }}
+  {{ if eq $type "string" }}
+  {{ $favicon | safeHTML }}
+  {{ else }}
+  {{ range $favicon }}
+  <link rel="{{.rel}}" {{if .type}}type="{{.type}}"{{end}} {{if .sizes}}sizes="{{.sizes}}"{{end}} href="{{$.Site.BaseURL}}/{{.href}}" />
+  {{- end }}
+  {{ end }}
 
-    <!--  Preload page vars  -->
-    <script>
-      const fetchData = Promise.all([
-        fetch("/linkIndex.json")
-          .then(data => data.json())
+  <!-- CSS Stylesheets and Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  {{$sass := resources.Match "styles/[!_]*.scss" }}
+  {{$css := slice }}
+  {{range $sass}}
+  {{$scss := . | resources.ToCSS (dict "outputStyle" "compressed") }}
+  {{$css = $css | append $scss}}
+  {{end}}
+  {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5" | resources.Minify  }}
+  <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
+
+  {{$lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
+  <link href="{{$lightSyntax.Permalink}}" rel="stylesheet" id="theme-link">
+
+   <!-- Base scripts -->
+  {{ $darkMode := resources.Get "js/darkmode.js" | resources.ExecuteAsTemplate "js/darkmode.js" . | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$darkMode.Permalink}}"></script>
+  {{partial "katex.html" .}}
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
+  resources.Minify }}
+  <script src="{{$popover.Permalink}}"></script>
+
+  <!-- Optional scripts -->
+  {{ if $.Site.Data.config.enableCodeBlockTitle }}
+  {{ $codeTitle := resources.Get "js/code-title.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$codeTitle.Permalink}}"></script>
+  {{end}}
+
+  {{ if $.Site.Data.config.enableCodeBlockCopy }}
+  {{ $clipboard := resources.Get "js/clipboard.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$clipboard.Permalink}}"></script>
+  {{ end }}
+
+  <!--  Preload page vars  -->
+  {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
+  "md5" | resources.Minify | }} {{$contentIndex := resources.Get
+  "indices/contentIndex.json" | resources.Fingerprint "md5" | resources.Minify
+  }}
+  <script>
+    const BASE_URL = {{.Site.BaseURL}}
+    const fetchData = Promise.all([
+          fetch("{{ $linkIndex.Permalink }}")
+            .then(data => data.json())
             .then(data => ({
-                index: data.index,
-                links: data.links,
-              })),
-            fetch("/contentIndex.json")
-              .then(data => data.json()),
-          ])
-          .then(([{index, links}, content]) => ({
-            index,
-            links,
-            content,
-          }))
-    </script>
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("{{ $contentIndex.Permalink }}")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page, adds event listeners, etc. If you are only dealing with basic DOM replacement, use the init function
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      {{if $.Site.Data.config.enableCodeBlockCopy -}}
+      addCopyButtons();
+      {{ end }}
+
+      {{if $.Site.Data.config.enableSPA -}}
+      addTitleToCodeBlocks();
+      {{ end }}
+
+      {{if $.Site.Data.config.enableFooter}}
+      const container = document.getElementById("graph-container")
+      // retry if the graph is not ready
+      if (!container) return requestAnimationFrame(render)
+      // clear the graph in case there is anything within it
+      container.textContent = ""
+
+      const drawGlobal = isHome && {{$.Site.Data.graphConfig.enableGlobalGraph}};
+      drawGraph(
+          {{strings.TrimRight "/" .Site.BaseURL}},
+          drawGlobal,
+          {{$.Site.Data.graphConfig.paths}},
+          drawGlobal ? {{$.Site.Data.graphConfig.globalGraph}} : {{$.Site.Data.graphConfig.localGraph}}
+        );
+
+      {{end}}
+
+
+      {{if $.Site.Data.config.enableLinkPreview}}
+      initPopover(
+        {{strings.TrimRight "/" .Site.BaseURL }},
+        {{$.Site.Data.config.enableContextualBacklinks}},
+        {{$.Site.Data.config.enableLatex}}
+      )
+      {{end}}
+    }
+
+    const init = (doc = document) => {
+      // NOTE: everything within this callback will be executed for initial page navigation. This is a good place to put JavaScript that only replaces DOM nodes.
+      {{if $.Site.Data.config.enableCodeBlockCopy -}}
+      addCopyButtons();
+      {{ end }}
+
+      {{if $.Site.Data.config.enableCodeBlockTitle -}}
+      addTitleToCodeBlocks();
+      {{- end -}}
+      {{if $.Site.Data.config.enableLatex}}
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      {{end}}
+    };
+  </script>
+  {{if $.Site.Data.config.enableSPA}}
+  {{ $router := resources.Get "js/router.js" | resources.Fingerprint "md5" |
+  resources.Minify }}
+  <script type="module">
+    import { attachSPARouting } from "{{$router.Permalink}}"
+    attachSPARouting(init, render)
+  </script>
+  {{else}}
+  <script>
+    window.Million = {
+      navigate: (url) => (window.location.href = url),
+      prefetch: () => {},
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      init()
+      render()
+    })
+  </script>
+  {{end}}
 </head>
 {{ template "_internal/google_analytics.html" . }}
-{{ partial "popover.html" .}}

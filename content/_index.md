@@ -9,7 +9,6 @@ I love [playing](posts/play.md), tinkering, and [building out in the open](thoug
 I'm working towards being a person who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun). If anything in here piques your interest, let's find a time to chat! It's a magical world out there and [it'd be a shame to explore it alone](thoughts/tribe%20flourishing.md).
 
 A few link-gifts for you as some sign-posts for your digital wandering throughout this garden:
-- [Things I've written more concrete words about](/posts)
 * [Things I've tinkered with and hacked on](thoughts/Projects.md)
 - [Places I've worked at](thoughts/Experience.md)
 * [Things that didn't quite turn out right](posts/a-failure-resume.md)

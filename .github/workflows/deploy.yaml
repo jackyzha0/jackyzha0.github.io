@@ -1,4 +1,4 @@
-name: github pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -11,14 +11,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.13
         with:
           index: true
           input: content
-          output: static
+          output: assets/indices
+          root: .
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2

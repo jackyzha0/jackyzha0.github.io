@@ -7,8 +7,8 @@ ignoreFiles = [
     "/content/templates/*",
     "/content/private/*",
 ]
-summaryLength = 10
 paginate = 10
+summaryLength = 20
 enableGitInfo = true
 title = "jzhao.xyz"
 
@@ -31,4 +31,8 @@ title = "jzhao.xyz"
         lineNos = true
         lineNumbersInTable = true
         style = "dracula"
-
+    [frontmatter]
+        lastmod = ["lastmod", ":git", "date", "publishDate"]
+        publishDate = ["publishDate", "date"]
+    [markup.goldmark.renderer]
+        unsafe = true
