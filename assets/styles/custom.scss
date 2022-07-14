@@ -154,7 +154,7 @@
   font-family: var(--font-body);
   font-size: 1.1rem;
   padding: 0;
-  color: var(--dark);
+  color: var(--gray);
 }
 
 @keyframes fadeIn {
@@ -218,10 +218,10 @@ hr {
   padding: 0;
   margin: 5em auto;
   border: none;
-  color: var(--dark);
+  color: var(--gray);
   text-align: center;
   width: 40%;
-
+  border-color: var(--gray);
   &:after {
     content: "* * *";
     display: inline-block;

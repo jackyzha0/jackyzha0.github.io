@@ -9,8 +9,28 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 14th
+- Reboot published my research proposal / manifesto / essay on Rhizome and data-neutrality today!
+	- [Check it out on Substack](https://reboothq.substack.com/p/rhizome)
+	- Ben Tarnoff, the guy who cofounded Logic, actually read and [tweeted about it](https://twitter.com/bentarnoff/status/1547619611796914179) and readers seemed to resonate a lot with the post!
+	- Two general sentiments:
+		1. This project seems really exciting and I appreciate it recognizes existing work. What will get people to use this though? The social difficulty with "apps as a view over data" is that it requires users to understand data models and this consensus over data models has proven difficult
+			- I agree with this evaluation and so far, feels unsolved. I think a promising solution is to think about it like how community-sourced types for TypeScript work. There's a whole open-source project that wildly popular that provides TypeScript definitions for plain JS libraries called [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) (with over 12.6 million usages!). I think there's a potential for this to work with data schemas as well
+		2. Well.. crypto/existing-thing actually solves this! Blockchain scaling techniques are getting pretty good, don't see why this work is necessary.
+			- Again, true. But it is 
+- nobody: ...
+   youtube: https://www.youtube.com/watch?v=g7MSfHEdxXs
+- Going to read more about [[thoughts/causal tree|causal trees]]
+
+### July 13th
+- Feeling a little tired of just reading papers and coding
+- Going to do a mental reset and just play piano for a while and then doing that person website redesign that I've been thinking about for a while now...
+	- Update: this is so fun gah
+	- Realized that the typography on the old site was kind of garbage and hard to read. Spent a bit of time reading up on good typography practices and it looks soooo much better
+
 ### July 12th
 - Ok, a bit of a wrench in the system : ' )))) CRDTs are incredibly hard to reason with for the average dev and *cannot guarantee global invariants* without requiring consensus.
+- Finished up CRDT implementation collection over at [[thoughts/CRDT Implementations|CRDT Implementations]].. I feel like I'm getting a better grasp at how to write op-based CRDTs but less so for state-based
 
 ### July 11th
 - Seems like there are a lot of open research questions in CRDTs that I could plausibly spend *years* working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic encryption)
