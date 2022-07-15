@@ -13,9 +13,19 @@
       <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/causal-tree/</guid>
-      <description> towards real-time read-write hypertext
+      <description>towards real-time read-write hypertext
   Paper summary
-   </description>
+ The objective is to automate information dissemination the way hyperlink automated associations and search engines automated search.</description>
+    </item>
+    
+    <item>
+      <title>Merkle-DAG</title>
+      <link>https://jzhao.xyz/thoughts/Merkle-DAG/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Merkle-DAG/</guid>
+      <description>A directed acyclic graph where nodes correspond to versions of the content and arcs correspond to changes (diffs).
+Each node has an identifier which is the result of hashing the node&amp;rsquo;s content.</description>
     </item>
     
     <item>

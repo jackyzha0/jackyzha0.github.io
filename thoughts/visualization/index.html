@@ -56,7 +56,7 @@ High density visualization  High-density designs allow viewers to select, to nar
   
   
   
-  <link href="https://jzhao.xyz/styles.2154b8528c5369dc336cad81c78d1600.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.44888d85a1b5ce2225f220bd95f85a9f.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -105,13 +105,13 @@ High density visualization  High-density designs allow viewers to select, to nar
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca47b5bf0d2f7d15806320500f0b8a6b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76ad5ed9992b565517e06cb1422a6305.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b92f472d698631b2290d3451487ce7d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3bd00344881aa1a106344856b5c35ab4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -247,7 +247,10 @@ if (!doNotTrack) {
     <article>
       <h1>Visualization</h1>
       <p class="meta">
-          Last updated July 12, 2022. 
+          Last updated 
+Jul 10, 2022
+
+ 
           
 
       </p>

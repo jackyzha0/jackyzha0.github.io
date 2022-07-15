@@ -55,7 +55,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.2154b8528c5369dc336cad81c78d1600.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.44888d85a1b5ce2225f220bd95f85a9f.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -104,13 +104,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca47b5bf0d2f7d15806320500f0b8a6b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76ad5ed9992b565517e06cb1422a6305.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b92f472d698631b2290d3451487ce7d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3bd00344881aa1a106344856b5c35ab4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -246,7 +246,10 @@ if (!doNotTrack) {
     <article>
       <h1>Rhizome Research Log</h1>
       <p class="meta">
-          Last updated July 12, 2022. 
+          Last updated 
+May 3, 2022
+
+ 
           
 
       </p>
@@ -273,6 +276,134 @@ if (!doNotTrack) {
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -4343,9 +4474,54 @@ if (!doNotTrack) {
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</p>
 <a href="#july"><h2 id="july"><span class="hanchor" ariaLabel="Anchor"># </span>July</h2></a>
+<a href="#july-14th"><h3 id="july-14th"><span class="hanchor" ariaLabel="Anchor"># </span>July 14th</h3></a>
+<ul>
+<li>Reboot published my research proposal / manifesto / essay on Rhizome and data-neutrality today!
+<ul>
+<li>
+
+<a href="https://reboothq.substack.com/p/rhizome" rel="noopener">Check it out on Substack</a></li>
+<li>Ben Tarnoff, the guy who cofounded Logic, actually read and 
+
+<a href="https://twitter.com/bentarnoff/status/1547619611796914179" rel="noopener">tweeted about it</a> and readers seemed to resonate a lot with the post!</li>
+<li>Two general sentiments:
+<ol>
+<li>This project seems really exciting and I appreciate it recognizes existing work. What will get people to use this though? The social difficulty with &ldquo;apps as a view over data&rdquo; is that it requires users to understand data models and this consensus over data models has proven difficult
+<ul>
+<li>I agree with this evaluation and so far, feels unsolved. I think a promising solution is to think about it like how community-sourced types for TypeScript work. There&rsquo;s a whole open-source project that wildly popular that provides TypeScript definitions for plain JS libraries called 
+
+<a href="https://github.com/DefinitelyTyped/DefinitelyTyped" rel="noopener">DefinitelyTyped</a> (with over 12.6 million usages!). I think there&rsquo;s a potential for this to work with data schemas as well</li>
+</ul>
+</li>
+<li>Well.. crypto/existing-thing actually solves this! Blockchain scaling techniques are getting pretty good, don&rsquo;t see why this work is necessary.
+<ul>
+<li>Again, true. But it is</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>nobody: &hellip;
+youtube: 
+
+<a href="https://www.youtube.com/watch?v=g7MSfHEdxXs" rel="noopener">https://www.youtube.com/watch?v=g7MSfHEdxXs</a></li>
+<li>Going to read more about <a href="/thoughts/causal-tree" rel="noopener" class="internal-link" data-src="/thoughts/causal-tree">causal trees</a></li>
+</ul>
+<a href="#july-13th"><h3 id="july-13th"><span class="hanchor" ariaLabel="Anchor"># </span>July 13th</h3></a>
+<ul>
+<li>Feeling a little tired of just reading papers and coding</li>
+<li>Going to do a mental reset and just play piano for a while and then doing that person website redesign that I&rsquo;ve been thinking about for a while now&hellip;
+<ul>
+<li>Update: this is so fun gah</li>
+<li>Realized that the typography on the old site was kind of garbage and hard to read. Spent a bit of time reading up on good typography practices and it looks soooo much better</li>
+</ul>
+</li>
+</ul>
 <a href="#july-12th"><h3 id="july-12th"><span class="hanchor" ariaLabel="Anchor"># </span>July 12th</h3></a>
 <ul>
 <li>Ok, a bit of a wrench in the system : &rsquo; )))) CRDTs are incredibly hard to reason with for the average dev and <em>cannot guarantee global invariants</em> without requiring consensus.</li>
+<li>Finished up CRDT implementation collection over at <a href="/thoughts/CRDT-Implementations" rel="noopener" class="internal-link" data-src="/thoughts/CRDT-Implementations">CRDT Implementations</a>.. I feel like I&rsquo;m getting a better grasp at how to write op-based CRDTs but less so for state-based</li>
 </ul>
 <a href="#july-11th"><h3 id="july-11th"><span class="hanchor" ariaLabel="Anchor"># </span>July 11th</h3></a>
 <ul>
