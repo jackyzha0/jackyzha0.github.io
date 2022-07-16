@@ -55,7 +55,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.44888d85a1b5ce2225f220bd95f85a9f.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.70285497a778989432a932fe3dfc22f2.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -104,13 +104,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76ad5ed9992b565517e06cb1422a6305.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.28884747b32c5025ee18fe7a6fa8c9c6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3bd00344881aa1a106344856b5c35ab4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3c27ff9fcc9f48e9db0ef5fe29fc3770.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -625,7 +625,8 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Practical experience with CRDTs shows that they tend to become inefficient over time,
-as tombstones accumulate and internal data structures become unbalanced. However, GC + rebalancing technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this.</p>
+as tombstones accumulate and internal data structures become unbalanced. The compacted portion of the CRDT must retain enough metadata to allow future operations to reference it on an atomic level and order themselves correctly. From the outside, a compacted CRDT must continue to behave exactly the same as a non-compacted CRDT.</p>
+<p>However, GC + rebalancing technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this.</p>
 <blockquote>
 <p>So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. 
 
@@ -669,6 +670,10 @@ as tombstones accumulate and internal data structures become unbalanced. However
     
     
     
+    
+      
+      
+      
     
       
       

@@ -7,14 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Identity</title>
+      <link>https://jzhao.xyz/thoughts/identity/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/identity/</guid>
+      <description>extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&amp;curius=1294
+ on site redesigns  every year i feel the urge to redesign my website The logo, colors, spacing, tone of voice — it all felt somewhat foreign.</description>
+    </item>
+    
+    <item>
       <title>Causal Tree</title>
       <link>https://jzhao.xyz/thoughts/causal-tree/</link>
       <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/causal-tree/</guid>
-      <description>towards real-time read-write hypertext
-  Paper summary
- The objective is to automate information dissemination the way hyperlink automated associations and search engines automated search.</description>
+      <description>Towards real-time read-write hypertext
+ TLDR; a simpler and more understandable form of [[thoughts/CRDT#Operation-based|CvRDT]] that relies on a strong notion of happens-before [[thoughts/causality|causal relationships]] and unique identifiers.</description>
     </item>
     
     <item>

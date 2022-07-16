@@ -5,9 +5,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="towards real-time read-write hypertext
-  Paper summary
- The objective is to automate information dissemination the way hyperlink automated associations and search engines automated search."
+    content="Towards real-time read-write hypertext
+ TLDR; a simpler and more understandable form of [[thoughts/CRDT#Operation-based|CvRDT]] that relies on a strong notion of happens-before [[thoughts/causality|causal relationships]] and unique identifiers."
   />
   <title>
     Causal Tree
@@ -57,7 +56,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.44888d85a1b5ce2225f220bd95f85a9f.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.70285497a778989432a932fe3dfc22f2.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -106,13 +105,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76ad5ed9992b565517e06cb1422a6305.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.28884747b32c5025ee18fe7a6fa8c9c6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3bd00344881aa1a106344856b5c35ab4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3c27ff9fcc9f48e9db0ef5fe29fc3770.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -277,20 +276,182 @@ Jul 14, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
 
 
 
 
 <blockquote>
-<p>towards real-time read-write hypertext</p>
+<p>Towards real-time read-write hypertext</p>
 </blockquote>
+<p>TLDR; a simpler and more understandable form of <a href="/thoughts/CRDT#operation-based" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CvRDT</a> that relies on a strong notion of happens-before <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal relationships</a> and unique identifiers.</p>
 <p>
 
 <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.627.5286&amp;rep=rep1&amp;type=pdf" rel="noopener">Paper summary</a></p>
 <ul>
 <li>The objective is to automate information dissemination the way hyperlink automated associations and search engines automated search.</li>
 <li>Speculatively, as people become more and more densely connected, they are more and more aware of each other’s details. As a consequence, communications naturally gravitate to compact and speedy update-only forms.</li>
+<li>Causal Trees
+<ul>
+<li>A tree of atoms. Atoms are triples of <code>(id, causing_id, letter)</code>.
+<ul>
+<li>Any set of changes can be represented as a set of atom removals and insertions.</li>
+<li>Atom removals are represented by a special &ldquo;backspace&rdquo; atom</li>
+<li><code>id</code> is generated in the form of a owner UUID and a Lamport timestamp</li>
 </ul>
+</li>
+<li>An atom&rsquo;s <code>id</code> is always greater than its <code>causing_id</code>. This defines a partial <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order</a>
+<ul>
+<li>Thus, the tree is a causality tree where each causing atom acts as a parent to its caused atoms</li>
+<li>Atoms are stored in append-only causality feeds. Every feed complies with that order: the causing atom always precedes any of its caused atoms</li>
+</ul>
+</li>
+<li>Inserts happen directly to the right of its <code>causing_id</code> (or parent)</li>
+<li>A yarn is a full contiguous sequence of operations at a node</li>
+</ul>
+</li>
+<li>Merging feeds: sort by <code>id</code>
+<ul>
+<li>This is actually called a weave, which contains every piece of the file to ever exist as well as all the special characters (e.g. backspace)</li>
+<li>Note that backspace only marks an atom as <em>inactive</em>, it is never actually removed
+<ul>
+<li>This &ldquo;backspace&rdquo; atom has high priority so always hugs its parent in the resulting weave</li>
+</ul>
+</li>
+<li>Recovering the plaintext version of the weave is constructed by removing inactive atoms from the weave.</li>
+</ul>
+</li>
+</ul>
+<p><img src="/thoughts/images/causal tree.png" width="500" /></p>
+<p>Anyone writing something based on causal trees only needs to define two functions:</p>
+<ol>
+<li>Reducers: inserts arbitrary atoms into an ordered log</li>
+<li>Mapper: traverses the structured log to arrive at a state</li>
+</ol>
+<p><img src="/thoughts/images/causal tree fn.png" width="auto" /></p>
 
 
     </article>

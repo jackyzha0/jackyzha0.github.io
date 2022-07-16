@@ -57,7 +57,7 @@ Physical Time Two types of clock
   
   
   
-  <link href="https://jzhao.xyz/styles.44888d85a1b5ce2225f220bd95f85a9f.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.70285497a778989432a932fe3dfc22f2.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -106,13 +106,13 @@ Physical Time Two types of clock
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76ad5ed9992b565517e06cb1422a6305.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.28884747b32c5025ee18fe7a6fa8c9c6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3bd00344881aa1a106344856b5c35ab4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3c27ff9fcc9f48e9db0ef5fe29fc3770.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -749,7 +749,7 @@ May 5, 2022
 <p>However even now, given timestamps $L(a) &lt; L(b)$, we can&rsquo;t tell whether $a \rightarrow b$ or $a \parallel b$</p>
 <p>To separate <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a> from concurrent events, we need vector clocks!</p>
 <a href="#vector-clocks"><h3 id="vector-clocks"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Clocks</h3></a>
-<p>Provides a <strong>causal order</strong> on ervents</p>
+<p>Provides a <strong>causal order</strong> on events</p>
 <p>Instead of having a single counter <code>t</code> for all nodes, we keep a vector timestamp $a$ of an event for <em>each</em> node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$</p>
 <p>Each node has a current vector timestamp $T$, on an event on node $N_i$, increment vector element $T[i]$</p>
 <p>Logic</p>

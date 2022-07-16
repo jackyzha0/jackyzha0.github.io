@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/identity/</loc>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/causal-tree/</loc>
-    <lastmod>2022-07-14T15:27:20-07:00</lastmod>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Merkle-DAG/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-07-14T15:27:20-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-07-14T15:27:20-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT-Implementations/</loc>
     <lastmod>2022-07-13T16:37:07-07:00</lastmod>
@@ -147,7 +150,7 @@
     <lastmod>2022-06-09T13:10:10-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/</loc>
-    <lastmod>2022-07-14T11:51:08-07:00</lastmod>
+    <lastmod>2022-07-15T19:10:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/DHT/</loc>
     <lastmod>2022-06-09T14:27:49-07:00</lastmod>
@@ -210,13 +213,13 @@
     <lastmod>2022-07-10T11:26:57-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
-    <lastmod>2022-07-13T16:37:07-07:00</lastmod>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
-    <lastmod>2022-07-13T16:37:07-07:00</lastmod>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consistency/</loc>
     <lastmod>2022-06-27T22:59:25-07:00</lastmod>
@@ -243,7 +246,7 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-07-14T15:27:20-07:00</lastmod>
+    <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>
@@ -348,7 +351,7 @@
     <lastmod>2022-07-11T22:04:21-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/nothing-stops/</loc>
-    <lastmod>2022-07-13T22:20:13-07:00</lastmod>
+    <lastmod>2022-07-15T19:10:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Bias-in-Search/</loc>
     <lastmod>2022-04-18T14:59:21-07:00</lastmod>
@@ -804,7 +807,7 @@
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/quotes/</loc>
-    <lastmod>2022-06-08T18:54:38-07:00</lastmod>
+    <lastmod>2022-07-15T19:10:02-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/mental-model/</loc>
     <lastmod>2022-01-30T22:17:58-08:00</lastmod>
