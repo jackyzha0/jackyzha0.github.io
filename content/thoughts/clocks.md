@@ -66,7 +66,7 @@ However even now, given timestamps $L(a) < L(b)$, we can't tell whether $a \righ
 To separate [[thoughts/causality|causality]] from concurrent events, we need vector clocks!
 
 ### Vector Clocks
-Provides a **causal order** on ervents
+Provides a **causal order** on events
 
 Instead of having a single counter `t` for all nodes, we keep a vector timestamp $a$ of an event for *each* node so we have $V(a) = \langle t_1, t_2, \ldots, t_n \rangle$ where $t_i$ is the number of events observed by node $N_i$
 

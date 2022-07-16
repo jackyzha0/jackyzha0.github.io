@@ -90,7 +90,10 @@ A query can be specified as a function that uses this information and the value 
 ## Performance
 ### Storage + State Compaction
 Practical experience with CRDTs shows that they tend to become inefficient over time,
-as tombstones accumulate and internal data structures become unbalanced. However, GC + rebalancing technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
+as tombstones accumulate and internal data structures become unbalanced. The compacted portion of the CRDT must retain enough metadata to allow future operations to reference it on an atomic level and order themselves correctly. From the outside, a compacted CRDT must continue to behave exactly the same as a non-compacted CRDT.
+
+However, GC + rebalancing technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
+
 
 > So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. [(#2)](https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2)
 

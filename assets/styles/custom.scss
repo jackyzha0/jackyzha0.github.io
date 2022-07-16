@@ -221,6 +221,7 @@ hr {
   color: var(--gray);
   text-align: center;
   width: 40%;
+  z-index: -1;
   border-color: var(--gray);
   &:after {
     content: "* * *";

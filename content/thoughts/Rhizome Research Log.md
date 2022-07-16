@@ -16,6 +16,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Long read but I think it captures a lot of my thinking around why I think [[thoughts/digital permanence|digital permanence]] is scary (and why I've been thinking about relational notions of identity!) TLDR;
 		- The concept of identity is very noun-like (i.e. tied to physical traits and current state) in Computer Science + software systems
 		- Contrasts with identity as verb-like (i.e. incredibly contextual, based on who you are with, how you are feeling, what experiences you have)
+			- "The joins are the pathways for information exchange and transformation, for organising, and the expansion of organisational identity. Joins give the dots their meaning, their contextual relevance, their identity, just as dots give the information exchange direction and potency."
 
 ### July 14th
 - Reboot published my research proposal / manifesto / essay on Rhizome and data-neutrality today!
