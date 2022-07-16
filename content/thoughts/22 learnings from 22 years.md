@@ -12,6 +12,7 @@ draft: true
 2. choosing it makes all the difference
 	1. you can choose joy
 		1. my phone lockscreen has been this
+		2. nothing stops! the nihilist probably doesn't build any sandcastles. They leave the beach and drown themselves, or sit grumpily in the car. But I want to have fun _now_ and _play_.
 	2. you can choose people
 	3. you can choose how you spend you hours because how you spend your hours is how you spend your life
 3. a yes means nothing if you never say no

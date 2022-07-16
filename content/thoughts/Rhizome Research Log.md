@@ -9,6 +9,14 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 15th
+- Part of the nail of my left pinkie ripped off today argH it is now painful to type :((
+- Realized that when doing site redesign, I lost a commit's worth of notes (sad) but also Obsidian Sync which I normally use for backup *also* expired today (double sad). Not as bad as it could have been though! Thankfully I commit often :)
+- Spent a lot of time just reading today, a lot of different scattered blogs that I've been meaning to get to. [One link that was sent](https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/?curius=1294) in the Metagov Slack particularly stood out to me though. It was on human identity and, more specifically, a critique of specifically [[thoughts/Self-sovereign Identity (SSI)|SSI]]
+	- Long read but I think it captures a lot of my thinking around why I think [[thoughts/digital permanence|digital permanence]] is scary (and why I've been thinking about relational notions of identity!) TLDR;
+		- The concept of identity is very noun-like (i.e. tied to physical traits and current state) in Computer Science + software systems
+		- Contrasts with identity as verb-like (i.e. incredibly contextual, based on who you are with, how you are feeling, what experiences you have)
+
 ### July 14th
 - Reboot published my research proposal / manifesto / essay on Rhizome and data-neutrality today!
 	- [Check it out on Substack](https://reboothq.substack.com/p/rhizome)
@@ -17,10 +25,11 @@ I think research logs tend to generally focus too much on what one did rather th
 		1. This project seems really exciting and I appreciate it recognizes existing work. What will get people to use this though? The social difficulty with "apps as a view over data" is that it requires users to understand data models and this consensus over data models has proven difficult
 			- I agree with this evaluation and so far, feels unsolved. I think a promising solution is to think about it like how community-sourced types for TypeScript work. There's a whole open-source project that wildly popular that provides TypeScript definitions for plain JS libraries called [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) (with over 12.6 million usages!). I think there's a potential for this to work with data schemas as well
 		2. Well.. crypto/existing-thing actually solves this! Blockchain scaling techniques are getting pretty good, don't see why this work is necessary.
-			- Again, true. But it is 
+			- Again, true. I think these new technologies all seem really promising and I definitely try to keep up with all the developments in the space but my main concern comes from how convoluted these solutions are slowly getting.
+			- A lott of smart people in crypto have been working on these problems for a while, I'm starting to think it might be easier to tackle it from the other side. Plurality of approaches y'know :))
 - nobody: ...
    youtube: https://www.youtube.com/watch?v=g7MSfHEdxXs
-- Going to read more about [[thoughts/causal tree|causal trees]]
+- Going to read more about [[thoughts/causal tree|causal trees]] as a way of understanding more basic forms of [[thoughts/CRDT|CRDTs]] that value readability over correctness
 
 ### July 13th
 - Feeling a little tired of just reading papers and coding

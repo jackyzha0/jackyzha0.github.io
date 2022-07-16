@@ -20,7 +20,11 @@ What we do with this hour and that one is what we are doing. What can you do to 
 
 Take the time to find yourself. Take the time to smell the proverbial flowers. Take a break to sharpen your saw for it will not delay you from cutting more wood.
 
-There is no permanence to this universe. If we could stop time, we would. Bill Waterson once said that 'If people could put rainbows in zoos, they'd do it'. Everything we build is a sand castle waiting to be washed away at high tide. Yet, I think that's what gives life its beauty.
+There is no permanence to this universe. If we could stop time, we would. Bill Waterson once said that 'If people could put rainbows in zoos, they'd do it'. Everything we build is a sand castle waiting to be washed away at high tide.
+
+We build and craft the most beautiful sandcastles we can, knowing they will be washed away. We get others to build with us, suspending the knowledge that this will all eventually disappear.
+
+I think that's what gives life its beauty.
 
 What gives life meaning is its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
 
