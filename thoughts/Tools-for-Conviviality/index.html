@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Ivan Illich on the proper use of technology to reclaim agency and practical knowledge for the average citizen.
+ The main TLDR; science and technology with their panoply of elite controlled knowledge and procedures have brought us so far, but cannot take us much further."
+  />
+  <title>
+    Tools for Conviviality
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.70285497a778989432a932fe3dfc22f2.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js"></script>
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d4289107a2cc04b68af4bc3321b6f147.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.580bbb6925b5d0ac104589104a4aeb42.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(render)
+      
+      container.textContent = ""
+
+      const drawGlobal = isHome &&  false ;
+      drawGraph(
+          "https://jzhao.xyz",
+          drawGlobal,
+          [{"/moc":"#4388cc"}],
+          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+        );
+
+      
+
+
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+    <div id="search-space">
+        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
+        <div id="results-container">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://jzhao.xyz/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js"></script>
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Tools for Conviviality</h1>
+      <p class="meta">
+          Last updated 
+Jul 17, 2022
+
+ 
+          
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+<p>Ivan Illich on the proper use of technology to reclaim agency and practical knowledge for the average citizen.</p>
+<hr>
+<p>The main TLDR; science and technology with their panoply of elite controlled knowledge and procedures have brought us so far, but cannot take us much further. They are, in fact, damaging as we approach crisis.</p>
+<p>These tools suppress other ideas and systems of knowledge and concentrate control of knowledge and power in the few and the elite. As such, these tools can only provide a limited and very unsatisfactory set of answers to how we may live meaningful lives. Illich argues that these tools alienate humans from each other, moving away from communal notions of <a href="/thoughts/interdependence" rel="noopener" class="internal-link" data-src="/thoughts/interdependence">interdependence</a> and towards increasing dependence on systems of production, killing our ability to work together and towards a better world.</p>
+<p>This dependence on production creates a treadmill, encouraging the average citizen to consume more and forever be unsatisfied. The only way out, Illich posits, is through giving people convivial tools. &lsquo;Convivial&rsquo; is used as by Illich as a technical term to designate a modern society of responsibly limited tools. Often times, this is used interchangeably with a notion of agency or autonomous discourse.</p>
+<p>Illich seems to advocate for a world where we consume less, depend less on systems which depend on us consuming more to survive, and depend more on each other.</p>
+<blockquote>
+<p>People will suddenly find obvious what is now evident to only a few: that the organization of the entire economy toward the “better” life has become the major enemy of the <em>good</em> life.</p>
+</blockquote>
+<a href="#quotes"><h2 id="quotes"><span class="hanchor" ariaLabel="Anchor"># </span>Quotes</h2></a>
+<a href="#acceleration-and-law"><h3 id="acceleration-and-law"><span class="hanchor" ariaLabel="Anchor"># </span>Acceleration and law</h3></a>
+<p>&ldquo;Speed is one of the means by which an efficiency-oriented society is stratified&hellip; Fostered addiction to speed is also a means of social control.&rdquo;</p>
+<p>&ldquo;Society can be destroyed when &hellip; cancerous acceleration enforces social change at a rate that rules out legal, cultural, and political precedents as formal guidelines to present behaviour.&rdquo;</p>
+<p>&ldquo;Convivial reconstruction requires limits on the rate of compulsory change. An unlimited rate of change makes lawful community meaningless. Law is based on the retrospective judgement of peers about circumstances that occur ordinarily and are likely to occur again. If the rate of change which affects all circumstances accelerates beyond some point, such judgements cease to be valid. Lawful society breaks down. Social control does not accommodate community participation and becomes the function of experts and the elite.&rdquo;</p>
+<p>&ldquo;Judges, governments, and voters abdicate their own evidence about the necessity of resolving conflicts in a situation of defined and permanent scarcity and opt for further growth on the basis of data which they admittedly cannot fully understand&rdquo;</p>
+<a href="#watershed-moments"><h3 id="watershed-moments"><span class="hanchor" ariaLabel="Anchor"># </span>Watershed Moments</h3></a>
+<p>On the two watershed moments of institutions: &ldquo;At first, new knowledge is applied to the solution of a clearly stated problem and scientific measuring sticks are applied to account for the new efficiency. But at the second point, the progress demonstrated in a previous achievement is used as a rationale for the exploitation of society as a whole in the service of a value which is determined and constantly revised by an element of society, by one of its self-certifying professional elites.&rdquo;</p>
+<p><strong>Transportation</strong></p>
+<p>It has taken almost a century to pass from an era served by motorized vehicles to the era in which society has been reduced to virtual enslavement to the car. Cars have ceased to be effective tools for mass transportation.</p>
+<ol>
+<li>During the American Civil War steam power on wheels became effective. The new economy in transportation enabled many people to travel by rail at the speed of a royal coach, and to do so with a comfort kings had no dared dream of.</li>
+<li>When transportation had passed through its second watershed, vehicles had created more distances than they helped to bridge; more time was used by the entire society for the sake of traffic than was &ldquo;saved&rdquo;</li>
+</ol>
+<p><strong>Medicine</strong></p>
+<ol>
+<li>1913, we reached the point in Western medicine where a patient had a better than 50-50 chance that trained doctors would provide better treatment than anyone else. Medicine and our expanding knowledge grew in leaps and bounds, and improvements resulted in corresponding improvements in health.</li>
+<li>The point at which we shifted to keeping people alive longer, without worrying about quality. Treatment has become further and further professionalised, removed from the control of patients and their families and communities. Multiple studies in health argue this exact point — that medical knowledge can solve only a portion of health issues, the others are interconnected with society, environment, employment, housing, inequality, etc.</li>
+</ol>
+<a href="#agency-and-conviviality"><h3 id="agency-and-conviviality"><span class="hanchor" ariaLabel="Anchor"># </span>Agency and Conviviality</h3></a>
+<p>&ldquo;I choose the term &lsquo;conviviality&rsquo; to designate the opposite of industrial productivity &hellip; I consider conviviality to be individual freedom realized in personal interdependence and, as such, an intrinsic ethical value. I believe that, in any society, as conviviality is reduced below a certain level, no amount of industrial productivity can effectively satisfy the needs it creates among society&rsquo;s members&rdquo; (Illich seems to be very against of a &lsquo;utopia&rsquo; like the one imagine in B.F. Skinner&rsquo;s <em>Walden Two</em>)</p>
+<p>&ldquo;A convivial society would be the result of social arrangements that guarantee for each member the most ample and free access to the tools of the community and limit this freedom only in favour of another member&rsquo;s equal freedom&rdquo;</p>
+<p>&ldquo;What is fundamental to a convivial society is not the total absence of manipulative institutions and addictive goods and services, but the balance between those tools which create the specific demands they are specialized to satisfy and those complementary, enabling tools which foster self-realization&rdquo;</p>
+<p>Tools foster conviviality to the extent that</p>
+<ul>
+<li>they can be easily used, by anybody, as often or as seldom as desired</li>
+<li>they allow the user to express their meaning into action (i.e. for a purpose chosen by the user)</li>
+<li>the use of such tools by one person does not restrain another from using them equally (non-rivalrous)</li>
+<li>their existence does not impose any obligation to use them</li>
+</ul>
+<a href="#radical-monopoly"><h3 id="radical-monopoly"><span class="hanchor" ariaLabel="Anchor"># </span>Radical monopoly</h3></a>
+<p>&ldquo;By &lsquo;radical monopoly&rsquo; I mean the dominance of one type of product rather than the dominance of one brand&hellip; Cars can thus monopolize traffic. They can shape a city into their image&ndash;practically ruling out locomotion on foot or by bicycle in Los Angeles. That motor traffic curtails the right to walk&hellip; constitutes radical monopoly.&rdquo;</p>
+<p>&ldquo;People will face a danger that threatens their own self-interest but not one that threatens society as a whole. Many more people are against cars than are against driving them. They are against cars because they pollute and because they monopolize traffic. They drive cars because they consider the pollution created by one car insignificant, and because they do not feel personally deprived of freedom when they drive. It is also difficult to be protected against monopoly when a society is already littered with roads, schools, or hospitals, when independent action has been paralyzed for so long that the ability for it seems to have atrophied, and when simple alternatives seem beyond the reach of the imagination. Monopoly is hard to get rid of when it has frozen not only the shape of the physical world but also the range of behaviour and of imagination.&rdquo;</p>
+<p>&ldquo;The attempt to make a better environment has turned out to be a presumptuous as the attempt to create better health, education, or communication .As a result there are now more people, most of them less at home in the world. This large population can survive because of new tools. In turn, it spurs the search for even more powerful tools, and thereby demands more radical monopoly; this monopoly, in its turn, calls for more and more education.&rdquo;</p>
+<a href="#degrowth"><h3 id="degrowth"><span class="hanchor" ariaLabel="Anchor"># </span>Degrowth</h3></a>
+<p>See also: <a href="/thoughts/degrowth" rel="noopener" class="internal-link" data-src="/thoughts/degrowth">thoughts on degrowth</a></p>
+<p>&ldquo;Most of the present laws and present legislators, most of the present courts and their decisions, most of the claimants and their demands are deeply corrupted by an overarching industrial consensus: that more is better, and that corporations serve the public interest better than men&rdquo;</p>
+<p>&ldquo;If within the very near future man cannot set limits to the interference of his tools with the environment and practice effective birth control, the next generations will experience the gruesome apocalypse predicted by many ecologists.&rdquo;</p>
+<p>&ldquo;This expansion is maintained by the illusion that careful systems engineering can stabilize and harmonize present growth, while in fact it pushes all institutions simultaneously toward their second watershed&rdquo;</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/books/" data-ctx="Tools for Conviviality" data-src="/books" class="internal-link">Booklist</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+
+    </div>
+</div>
+
+
+
+<div id="contact_buttons">
+    <footer>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+
+</html>
