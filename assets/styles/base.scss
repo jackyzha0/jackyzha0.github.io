@@ -29,10 +29,11 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
+  position: relative;
   background-color: var(--light);
 }
 
