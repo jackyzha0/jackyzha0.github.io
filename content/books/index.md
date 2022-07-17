@@ -22,12 +22,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
 
 ## Current
-- **Tools for Conviviality** by Ivan Illich
 * **Seeing Like A State** by James C. Scott
-* **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
 
 ## Past
 2022
+- **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
+* **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
 * **The Book of Form and Emptiness** by Ruth Ozeki
 * **Walden Two** by B. F. Skinner
 * **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan

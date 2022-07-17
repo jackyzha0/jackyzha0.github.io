@@ -9,6 +9,11 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 16th
+- Currently on a two-day writing retreat with some folks from Incepto. It's been such a good mix of sight-seeing and focused writing.
+	- The other choice of spending this weekend was to go to an Art Book Fair and assemble furniture with friends. In all honesty, I'm very glad I chose to focus and write over just socializing.
+	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/verb-based-identity|verb based identity]]
+
 ### July 15th
 - Part of the nail of my left pinkie ripped off today argH it is now painful to type :((
 - Realized that when doing site redesign, I lost a commit's worth of notes (sad) but also Obsidian Sync which I normally use for backup *also* expired today (double sad). Not as bad as it could have been though! Thankfully I commit often :)

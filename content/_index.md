@@ -11,5 +11,6 @@ Before you go, I wanted to leave a few sign-posts while you digitally wander thr
 * [Things I've tinkered with and hacked on](thoughts/Projects.md)
 - [Places I've worked at](thoughts/Experience.md)
 * [A failure resume](posts/a-failure-resume.md)
+* [What I've been reading](/books)
 
 I hope you enjoy your time here! Feel free to stay as long as you'd like.

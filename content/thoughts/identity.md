@@ -5,8 +5,9 @@ tags:
 - seed
 ---
 
-extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&curius=1294
+Notes for [[posts/verb-based-identity|a post on verb-based identity]]
 
+extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&curius=1294
 - on site redesigns
 	- every year i feel the urge to redesign my website
 	- The logo, colors, spacing, tone of voice — it all felt somewhat foreign. How could something so recent and intimate feel unfamiliar?
@@ -14,7 +15,6 @@ extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&cu
 	- original web was designed to be read-write
 		- the little scraps of agency we have left are in the gardens that we can tend to and choose what grows there
 		- thats our little personal site
-	- "A website creator becomes both author and architect simultaneously. There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle? Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity." (Laurel Schwulst in https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/)
 	- ive been thinking heavily about what it means to represent yourself online
 - digital identity, broadly: https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/
 	- gordon brander: https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&curius=1294
@@ -38,9 +38,8 @@ extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&cu
 				2.  Reality is too complex and refuses to fit into map
 				3.  Remake reality in the image of map
 				4.  *Systemic collapse*
-		- Identity, in what you might call a natural sense, is reciprocally defining and co-constitutive with relationships and information exchange (Wheatley & Kellner-Rogers 1996, 1998). Identities are immanent in contextual relationships, and relationships are immanent in information exchange. A person is a person through other persons (Birhane 2017).
-		- In other words, the dots (the nodes, the people) don’t simply define the joins (the edges, the relationships) as Social Networking 101 might have it. We dot the joins in contextual information exchange just as much as we might be said to join the dots. The joins are the pathways for information exchange and transformation, for organising, and the expansion of organisational identity. Joins give the dots their meaning, their contextual relevance, their identity, just as dots give the information exchange direction and potency. 
-	- are agency and verb-based identity mutually exclusive
-	- noun-based describes the shape of the 6/9
-	- verb-based describes the viewing angle
+	- noun vs verb like identity
+		- "Such conceptualizations consider identity to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts."
+	- Identity, in what you might call a natural sense, is reciprocally defining and co-constitutive with relationships and information exchange (Wheatley & Kellner-Rogers 1996, 1998). Identities are immanent in contextual relationships, and relationships are immanent in information exchange. A person is a person through other persons (Birhane 2017).
+	- In other words, the dots (the nodes, the people) don’t simply define the joins (the edges, the relationships) as Social Networking 101 might have it. We dot the joins in contextual information exchange just as much as we might be said to join the dots. The joins are the pathways for information exchange and transformation, for organising, and the expansion of organisational identity. Joins give the dots their meaning, their contextual relevance, their identity, just as dots give the information exchange direction and potency. 
 	- not who you are, but what you are authorized to do. So, Keys, not IDs.
