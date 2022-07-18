@@ -9,8 +9,8 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
-### July 16th
-- Currently on a two-day writing retreat with some folks from Incepto. It's been such a good mix of sight-seeing and focused writing.
+### July 16th - 17th
+- Currently on a two-day writing retreat with Belinda, Athena, and Vincent. It's been such a good mix of sight-seeing and focused writing.
 	- The other choice of spending this weekend was to go to an Art Book Fair and assemble furniture with friends. In all honesty, I'm very glad I chose to focus and write over just socializing.
 	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/verb-based-identity|verb based identity]]
 
