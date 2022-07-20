@@ -111,7 +111,7 @@ Defined roughly, identity is something that is contextual, situationally adaptiv
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7bc14f74737acc98452546cd7088af2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.00d0f16788dbffd071f255fd69cc0c34.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -562,7 +562,7 @@ Jul 16, 2022
 <p><em>What is identity? Who defines it? Who controls it? What is its relationship to software?</em></p>
 <p>Defined roughly, identity is something that is contextual, situationally adaptive, subjective, and constantly changing.</p>
 <p>It is made up of qualities, beliefs, personality quirks, traits, and relationships that make you <em>you</em>. Yet when we gesture towards digital identity, it seems to point towards not this subjective and contextual set of relationships, but something else entirely.</p>
-<a href="#identity-as-object"><h2 id="identity-as-object"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Object</h2></a>
+<a href="#identity-as-attributes"><h2 id="identity-as-attributes"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Attributes</h2></a>
 <p><img src="/thoughts/images/identity-object.png" width="auto" /></p>
 <p>Software developers and computer scientists have been tackling this for almost half a century now, trying to model identity in ways that are understandable to machines, but in doing so, forget the very nature of identity we live out in the real world.</p>
 <p>Our digital representations consist of</p>
@@ -573,24 +573,27 @@ Jul 16, 2022
 <li>The hundreds, maybe thousands, of online accounts you have scattered around the internet, made hastily so you can access an article, use a service, or leave a review.</li>
 </ul>
 <p>Notice that in this form, all aspects of identity are quantifiable. Identity, in this model, is a thing to be managed, sold, or searched for. Links and relations in this model are secondary, expressed as joins between tables in databases or identifying users through &lsquo;unique&rsquo; identifiers like email addresses, cookies, IP addresses and advertising identifiers: all things that are machine legible but unusable for anyone</p>
+<blockquote>
+<p>[The attribute model of identity] ignores the consequences of common identification across different systems for the sake of simplicity and feature management. It also ignores how that data came to be, what is done with it, and how it is governed. In effect, it focuses on the bits and bytes and not on the processes involved. (Five Mental Models of Identity)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
 <p>Big companies make identities legible so that they may measure, manage, and control our attention to optimize their ad revenue and sell our data.</p>
 <p><strong>What’s measured gets managed. What’s legible gets controlled.</strong></p>
 <p>Legibility on its own is not a bad thing. Many aspects of our lives benefit from legibility. It the complex systems of weather understandable to the average layperson, allows us to have transparency into the progress of public projects and initiatives by our governments, and enables people to easily find information they are looking for.</p>
 <p>But this process of legibility becomes dangerous when the simplifications are taken to be the real thing and the map is mistaken for the territory.</p>
 <a href="#maps-and-territories"><h3 id="maps-and-territories"><span class="hanchor" ariaLabel="Anchor"># </span>Maps and Territories</h3></a>
 <p>Through this process of legibility, what James C. Scott calls a process of simplifying, restructuring, and labeling, nuance is excluded. Legibility means that &lsquo;only what matters&rsquo; and can be quantified is kept; all else is discarded.</p>
-<p><img src="/thoughts/images/forest death.png" width="auto" /><em>Illegible natural forest vs legible &ldquo;scientific&rdquo; forest (James C. Scott in Gordon Brander)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></em></p>
-<p>But who are these god-like entities to tell us what is important and what isn&rsquo;t? Legibility doesn&rsquo;t capture the context behind how you failed out of your diploma because you needed to grieve for the death of a loved one. Legibility doesn&rsquo;t capture the context behind the conviction for a felony that was given because the officer was racially motivated. This simplification will only serve to widen the gulf that already exists in society and disproportionately impacts marginalized groups<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p><img src="/thoughts/images/forest death.png" width="auto" /><em>Illegible natural forest vs legible &ldquo;scientific&rdquo; forest (James C. Scott in Gordon Brander)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></em></p>
+<p>But who are these god-like entities to tell us what is important and what isn&rsquo;t? Legibility doesn&rsquo;t capture the context behind how you failed out of your diploma because you needed to grieve for the death of a loved one. Legibility doesn&rsquo;t capture the context behind the conviction for a felony that was given because the officer was racially motivated. This simplification will only serve to widen the gulf that already exists in society and disproportionately impacts marginalized groups<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <p>Processes of legibility become more actively dangerous when they go from &ldquo;making sense of the world&rdquo; to &ldquo;making the world make sense&rdquo;.</p>
-<p>When this is the <em>only</em> lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. We emerge in a world that comes straight from Black Mirror&rsquo;s Nosedive episode where everyone&rsquo;s status is determined by a &lsquo;social media score&rsquo;. This systemized legibility of the world is an interpretive and transformational force. In other words, <strong>legibility changes the world we live in</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>When this is the <em>only</em> lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. We emerge in a world that comes straight from Black Mirror&rsquo;s Nosedive episode where everyone&rsquo;s status is determined by a &lsquo;social media score&rsquo;. This systemized legibility of the world is an interpretive and transformational force. In other words, <strong>legibility changes the world we live in</strong><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>Having individuals completely own their identities (e.g. <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">SSI</a> and <a href="/thoughts/Verifiable-Credential" rel="noopener" class="internal-link" data-src="/thoughts/Verifiable-Credential">VCs</a>) doesn&rsquo;t solve this either. It might give agency to people to control these representations but the main function of these identities is still <em>to make the bearer legible</em>.</p>
 <p>If we want to flip access control back to the users, we need to consider other representations of identity.</p>
 <blockquote>
 <p>Can we build networked software that allows people to be illegible? Or at least self-selectively legible?</p>
 </blockquote>
-<a href="#identity-as-actions"><h2 id="identity-as-actions"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Actions</h2></a>
+<a href="#identity-as-capabilities"><h2 id="identity-as-capabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Capabilities</h2></a>
 <p><img src="/thoughts/images/identity-action.png" width="auto" /></p>
-<p>When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: &ldquo;digital identity should not be about who you are, but what you are authorized to do.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>When I think about what identity ultimately feels useful for, it is to gesture at <em>capabilities</em> rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: &ldquo;digital identity should not be about who you are, but what you are authorized to do.&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <blockquote>
 <p>&ldquo;[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts.&rdquo;</p>
 </blockquote>
@@ -600,9 +603,9 @@ Jul 16, 2022
 
 <a href="https://ucan.xyz/" rel="noopener">ucan.xyz</a>)</em></p>
 </blockquote>
-<p>This entirely displaces the previous notion of identity as an object. There is no &lsquo;identity&rsquo; to be managed. Public-key cryptography means that there isn&rsquo;t any sort of global registry of identities<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. There is no easy way to figure out everything related to one person.</p>
+<p>There is no &lsquo;identity&rsquo; to be managed but rather a set of capabilities to be possessed. Public-key cryptography means that there isn&rsquo;t any sort of global registry of identities<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There is no easy way to figure out all the information related to one identity unless that person purposefully makes it legible.</p>
 <p>This feels promising. A token that grants access isn&rsquo;t making legible any information that doesn&rsquo;t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer not to link real-world identities to digital ones.</p>
-<p>Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren&rsquo;t human-meaningful. In gaining the option for illegibility, we&rsquo;ve lost any resemblance of a human identity. I want to know that I&rsquo;m talking to my friend Kevin and not just a key like <code>0x8ff6b283368b5f149f1de2005d763243</code> or a phone number like <code>323-594-1604</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren&rsquo;t human-meaningful. In gaining the option for illegibility, we&rsquo;ve lost any resemblance of a human identity. I want to know that I&rsquo;m talking to my friend Kevin and not just a key like <code>0x8ff6b283368b5f149f1de2005d763243</code> or a phone number like <code>323-594-1604</code><sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
 <a href="#identity-as-relationships"><h2 id="identity-as-relationships"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Relationships</h2></a>
 <p><img src="/thoughts/images/identity-relationship.png" width="auto" /></p>
 <blockquote>
@@ -627,27 +630,32 @@ Jul 16, 2022
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>&ldquo;Scott details a pattern of disaster that repeatedly manifests around legibility. His opening example is from the late-18th century discipline of “scientific forestry”. A natural forest is illegible. A tangle of plants. This is inconvenient from the standpoint of harvesting lumber. How do you quantify yield? Can you even make a meaningful map of this mess? Much easier to clear the forest and plant a legible “scientific” forest. Uniform rows of trees that produce good lumber. Now we can count the trees, make a map, track sustainable yield. What’s missing from our map? Everything else. The forest has been <em>made legible</em> to lumber production. In the process, the entire ecological web of trees, shrubs, birds, bugs, moss, soil microbiota are stripped away. They didn’t fit into our map. By the second generation of planting, there is a noticeable decline in forest health. Within one century: <em>Waldsterben</em>, forest death, ecological collapse.&rdquo; Quote from 
-
-<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
 <p>Source: 
 
-<a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Is &ldquo;acceptably non-dystopian&rdquo; self-sovereign identity even possible?</a>, Molly White&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/mental-models.pdf" rel="noopener">Five Mental Models of Identity</a>, presented in <em>Rebooting the Web of Trust VII</em> by Joe Andrieu, Nathan George, Andrew Hughes, Christophe MacIntosh, and Antoine Rondelet&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>&ldquo;Scott details a pattern of disaster that repeatedly manifests around legibility. His opening example is from the late-18th century discipline of “scientific forestry”. A natural forest is illegible. A tangle of plants. This is inconvenient from the standpoint of harvesting lumber. How do you quantify yield? Can you even make a meaningful map of this mess? Much easier to clear the forest and plant a legible “scientific” forest. Uniform rows of trees that produce good lumber. Now we can count the trees, make a map, track sustainable yield. What’s missing from our map? Everything else. The forest has been <em>made legible</em> to lumber production. In the process, the entire ecological web of trees, shrubs, birds, bugs, moss, soil microbiota are stripped away. They didn’t fit into our map. By the second generation of planting, there is a noticeable decline in forest health. Within one century: <em>Waldsterben</em>, forest death, ecological collapse.&rdquo; Quote from 
+
+<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>Source: 
 
-<a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445740" rel="noopener">To Live in Their Utopia</a>, Ali Alkhatib&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Is &ldquo;acceptably non-dystopian&rdquo; self-sovereign identity even possible?</a>, Molly White&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>Source: 
 
-<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445740" rel="noopener">To Live in Their Utopia</a>, Ali Alkhatib&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Systems like ENS get most of the way there (achieving all three properties of Zooko&rsquo;s Triangle until <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine fault tolerance</a>), providing human-meaningful names on top of secure + decentralized identifiers.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Source: 
+
+<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Systems like ENS get most of the way there (achieving all three properties of Zooko&rsquo;s Triangle until <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine fault tolerance</a>), providing human-meaningful names on top of secure + decentralized identifiers.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
