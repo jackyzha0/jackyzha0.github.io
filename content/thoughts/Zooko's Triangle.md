@@ -6,9 +6,9 @@ tags:
 ---
 
 Postulates that names of participants can have at most 2 of these 3 properties
--  Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.
--  Unique: statistically impossible collisions
--  Global: names are globally scoped, correspondence between name and the entity behind the name does not depend on context
+- Human-meaningful: Meaningful and memorable (low-entropy) names are provided to the users.
+- Unique: statistically impossible collisions
+- Global: names are globally scoped, correspondence between name and the entity behind the name does not depend on context
 
 ## Petnames
 [Petnames](http://www.erights.org/elib/capability/pnml.html) are potentially a method of achieving all 3 properties by having "names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties."

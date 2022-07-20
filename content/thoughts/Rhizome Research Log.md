@@ -9,10 +9,26 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 19th
+- Slowly reaching a place where I'm happy with the direction of this piece on identity, framing it more around 3 modes of thinking about [[posts/relational-identity|identity]].
+- Got a comment from Zoë Ruha Bell on my essay in Reboot that asked about "the complexities of how moving data between contexts changes its meaning and that individual control over data may not match up well with the relational information encoded in data"
+	- Incidentally, this is exactly what I've been thinking more about! My response:
+	- This is a great question and I'm still grappling with (and in the midst of writing a whole other piece about!). Data in context is incredibly important. Like identity, when taken out of context, it can be incredibly harmful and misused. Pursuing interoperability without considering the intention behind the actions that data encodes can easily turn dangerous very quickly.
+	- One way I'm thinking about this is analogizing the multiple facets and contexts of data as people. Just as people behave differently in different contexts, so can data. The same reason we have so many 'alts' or 'finstas' is that this multifaceted-ness isn't accommodated by existing media platforms. Data platforms similarly treat data as single faceted. What does a multi-faceted encoding of data look like? What does communal ownership of data look like?
+
+### July 18th
+- I've been trying to write down some more cohesive thoughts around [[thoughts/identity|identity]] for the past two days and running into a block where I'm struggling to articulate why and how real world identity and digital identity differ
+- Just read this blog post on [Going Doorless](https://rosano.hmm.garden/01evv3hq1ak4b6ng1jzppx5n2j) that really resonated and gave new language to ideas and concepts that have been floating around in my head for a while
+	- Public commons like parks and libraries feel public because moving around in them is effortless
+		- We don't have commons because the space between digital spaces have the viscosity of honey. Movement becomes heavily disincentivized.
+		- To be clear: I mean that *people* should be able to move freely. Data should have access control switches exposed to users. They should decide whether it moves freely or not. "after voluntary communication to others, free as the air to common use"
+	- You shouldn't need to pay or set up and account to walk through the gates, commons just let you show up and start using it
+	- Software is the principles of an experience, your data is just the details
+
 ### July 16th - 17th
 - Currently on a two-day writing retreat with Belinda, Athena, and Vincent. It's been such a good mix of sight-seeing and focused writing.
 	- The other choice of spending this weekend was to go to an Art Book Fair and assemble furniture with friends. In all honesty, I'm very glad I chose to focus and write over just socializing.
-	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/verb-based-identity|verb based identity]]
+	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/relational-identity|verb based identity]]
 
 ### July 15th
 - Part of the nail of my left pinkie ripped off today argH it is now painful to type :((

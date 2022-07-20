@@ -9,6 +9,8 @@ Why write?
 
 Writing as crystallized thought, a way of expressing the labyrinth of interconnected, messy, and many time incoherent ideas in my mind. It is a form of [[thoughts/knowledge distillation|knowledge distillation]].
 
+> The thing I like about writing is that it’s quite literally _thinking_—a way for me access my own interiority and construct something from it. What I write is all mine, it’s a living thing, it’s an extension of me that wanders out into the world. (Ava in [How To Avoid Half-Heartedness](https://ava.substack.com/p/how-to-avoid-half-heartedness))
+
 It is a form of [[thoughts/bandwidth#Lossiness as Mutation|lossiness as mutation]], a way to re-interpret and adapt the thoughts into a new form -- to breathe it new life. Whether [[posts/networked-thought|networked]] or linear, molding it into new forms through [[thoughts/language|language]] and [[thoughts/terminology|terminology]] can give it a new perspective. A mental unflattening.
 
 It is the form almost universally understood by all, a sort of [[thoughts/contact language|contact language]] that enables people from vastly different backgrounds and [[thoughts/context|contexts]] to build [[thoughts/fiction#Fiction as shared visions|shared fictions]].

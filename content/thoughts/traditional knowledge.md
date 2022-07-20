@@ -36,3 +36,10 @@ Seems to mutual distrust between First Nations groups and government + industry
 2. Government + industry doesn't trust First Nations as they doubt their scientific abilities and incapability of producing 'objective' data
 
 Did not end up working under Harper government, but First Nations communities were undeterred.
+
+## Open Access
+Contests over access to knowledge arise because of the historical conditions that meant that indigenous people lost control over how and what knowledge was to be circulated
+
+Data and information should only be common use *after* voluntary communication to others. This is not the case for the vast majority of traditional knowledge.
+
+Public domain instead violates indigenous peoples’ rights by defining their collective works as “folklore” and excluding their protection via copyright system

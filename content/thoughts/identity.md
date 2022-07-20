@@ -5,7 +5,24 @@ tags:
 - seed
 ---
 
-Notes for [[posts/verb-based-identity|a post on verb-based identity]]
+## On Website Redesigns
+> There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle?
+> 
+> Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity." --[Laurel Schwulst](https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/)
+
+About every half a year, I get an intense urge to redesign my website. Some years I overhaul everything, ripping out the content and gutting the divs and p tags. Other years, I make only minor changes, giving it a fresh coat of paint and changing out old typography for new ones.
+
+I find it hard to place a finger on exactly why I feel this way. The colours, font spacing, and content -- they don't feel 'me'. How did something that used to feel so perfect and intimate feel so alien and off-kilter?
+
+Our digital artifacts and spaces are reflections of our real selves. We feel like we outgrow digital spaces just as we change, learn, and grow in real life.
+
+In part, this is why I think having your own little plot on the internet to change and modify at your own whim is worth protecting. This is our last little bit of land in an era where we leave our wizardly powers to build worlds of our choosing at the door of digital giants.
+
+![[thoughts/images/call for hand made tech.png|500]]
+See also: [[thoughts/cozy software|cozy software]]
+
+## Digital Legibility
+Notes for [[posts/relational-identity|a post on verb-based identity]]
 
 extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&curius=1294
 - on site redesigns
@@ -43,3 +60,10 @@ extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&cu
 	- Identity, in what you might call a natural sense, is reciprocally defining and co-constitutive with relationships and information exchange (Wheatley & Kellner-Rogers 1996, 1998). Identities are immanent in contextual relationships, and relationships are immanent in information exchange. A person is a person through other persons (Birhane 2017).
 	- In other words, the dots (the nodes, the people) don’t simply define the joins (the edges, the relationships) as Social Networking 101 might have it. We dot the joins in contextual information exchange just as much as we might be said to join the dots. The joins are the pathways for information exchange and transformation, for organising, and the expansion of organisational identity. Joins give the dots their meaning, their contextual relevance, their identity, just as dots give the information exchange direction and potency. 
 	- not who you are, but what you are authorized to do. So, Keys, not IDs.
+
+
+- identity constantly shifts in real life depending on who you are around
+- we try to approximate this using multiple accounts -> prevent context collapse
+- but identity shouldnt feel like different accounts you hop between different digital platforms
+- identity should be the principles of your experience -> applicable across contexts
+- digital identity should enable novel interactions, not try to simplify existing ones

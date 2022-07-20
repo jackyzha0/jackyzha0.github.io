@@ -62,6 +62,8 @@ class Functor f where
 ### Monad
 Monads are functors from a category $A$ to that same category. A container for values that can be mapped over.
 
+Think of it like a context-specific environment. You need a function to transform things outside of it to things in it. You also need a function to manipulate stuff inside of that environment.
+
 A monad is a functor $M: C \rightarrow C$ along with two morphisms $\forall X \in C$
 1. $\textrm{unit}_X : X \rightarrow M(X)$ (`return`)
 2. $\textrm{join}_X: M(M(X)) \rightarrow M(X)$ (can be recovered from `bind`)
