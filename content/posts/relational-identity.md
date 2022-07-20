@@ -12,6 +12,9 @@ Defined roughly, identity is something that is contextual, situationally adaptiv
 It is made up of qualities, beliefs, personality quirks, traits, and relationships that make you *you*. Yet when we gesture towards digital identity, it seems to point towards not this subjective and contextual set of relationships, but something else entirely.
 
 ## Identity as Object
+
+![[thoughts/images/identity-object.png]]
+
 Software developers and computer scientists have been tackling this for almost half a century now, trying to model identity in ways that are understandable to machines, but in doing so, forget the very nature of identity we live out in the real world.
 
 Our digital representations consist of
@@ -48,13 +51,16 @@ When this is the *only* lens you view the world through, relationships are front
 
 Having individuals completely own their identities (e.g. [[thoughts/Self-sovereign Identity (SSI)|SSI]] and [[thoughts/Verifiable Credential|VCs]]) doesn't solve this either. It might give agency to people to control these representations but the main function of these identities is still *to make the bearer legible*.
 
-If we want to flip access control switches back to the users, we need to consider other representations of identity.
+If we want to flip access control back to the users, we need to consider other representations of identity.
 
 >  Can we build networked software that allows people to be illegible? Or at least self-selectively legible?
 
 [^3]: Source: [Soulbinding Like a State](https://subconscious.substack.com/p/soulbinding-like-a-state), Gordon Brander
 
 ## Identity as Actions
+
+![[thoughts/images/identity-action.png]]
+
 When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do."[^3] 
 
 > "[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts."
@@ -77,6 +83,8 @@ Yet, I think there is still room for improvement here. Identities based off of t
 [^7]: Systems like ENS get most of the way there (achieving all three properties of Zooko's Triangle until [[thoughts/fault tolerance#Byzantine Faults|Byzantine fault tolerance]]), providing human-meaningful names on top of secure + decentralized identifiers.
 
 ## Identity as Relationships
+
+![[thoughts/images/identity-relationship.png]]
 
 > Humans also need to communicate securely with other humans, and in so doing, securely designate various objects, including yet other humans. Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.
 
