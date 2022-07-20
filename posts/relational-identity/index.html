@@ -105,13 +105,13 @@ Defined roughly, identity is something that is contextual, situationally adaptiv
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89ae9a6081ae56745e8ff592d40259fe.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f5574d5fdba9a4b3cd81b6f2168f9bab.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d4578a980966eba9016d4ffd5b54e5e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a2eb4b0b0c3f428dfc63553eabbc33b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -419,6 +419,83 @@ Jul 16, 2022
       
         
         
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
         
       
     
@@ -456,7 +533,7 @@ Jul 16, 2022
 <blockquote>
 <p>Can we build networked software that allows people to be illegible? Or at least self-selectively legible?</p>
 </blockquote>
-<a href="#identity-as-action-space"><h2 id="identity-as-action-space"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Action-space</h2></a>
+<a href="#identity-as-actions"><h2 id="identity-as-actions"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Actions</h2></a>
 <p>When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: &ldquo;digital identity should not be about who you are, but what you are authorized to do.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <blockquote>
 <p>&ldquo;[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts.&rdquo;</p>
@@ -470,16 +547,25 @@ Jul 16, 2022
 <p>This entirely displaces the previous notion of identity as an object. There is no &lsquo;identity&rsquo; to be managed. Public-key cryptography means that there isn&rsquo;t any sort of global registry of identities<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. There is no easy way to figure out everything related to one person.</p>
 <p>This feels promising. A token that grants access isn&rsquo;t making legible any information that doesn&rsquo;t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer not to link real-world identities to digital ones.</p>
 <p>Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren&rsquo;t human-meaningful. In gaining the option for illegibility, we&rsquo;ve lost any resemblance of a human identity. I want to know that I&rsquo;m talking to my friend Kevin and not just a key like <code>0x8ff6b283368b5f149f1de2005d763243</code> or a phone number like <code>323-594-1604</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
-<a href="#identity-as-the-intersection-of-relationships"><h2 id="identity-as-the-intersection-of-relationships"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as the Intersection of Relationships</h2></a>
-<p>In fact, we do this with phone numbers already. All of our phones have a personal address book we use to map human-meaningful names to sometimes multiple meaningless phone numbers. There is no global database mapping people to phone numbers. Our contact books are great tools for identity keeping because they are local, private, and memorable.</p>
+<a href="#identity-as-relationships"><h2 id="identity-as-relationships"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Relationships</h2></a>
+<blockquote>
+<p>Humans also need to communicate securely with other humans, and in so doing, securely designate various objects, including yet other humans. Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.</p>
+</blockquote>
+<p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names. HCI researchers call systems like these <a class="internal-link broken">petname systems</a>.</p>
 <blockquote>
 <p>For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). <em>(
 
 <a href="https://www.inkandswitch.com/backchannel/" rel="noopener">Backchannel</a>, Ink &amp; Switch)</em></p>
 </blockquote>
-<p>In this way, the name doesn&rsquo;t just represent the person you are referring to also the relationship between the two of you. The <em>real identity</em> is neither the phone number nor the name. Rather, the real identity is the <em>intersection</em> of all of the relationships they have with others (including themselves)!</p>
-<p>Just as we have many &lsquo;alt accounts&rsquo; or &lsquo;finstas&rsquo; that try to approximate the many facets of our being, we should also embrace the natural tendency for different expressions of ourselves through our many relationships. We can use this metaphor to build on top of key-based identity. In this model, keys play the role of a phone number. It is a lookup method to connect two people.</p>
+<p>In this way, the petname doesn&rsquo;t just represent the person you are referring to also the relationship between the two of you. The <em>real identity</em> is neither the phone number nor the petname. Rather, their real identity is the <em>intersection</em> of all of the relationships they have with others. Just as we have many &lsquo;alt accounts&rsquo; or &lsquo;finstas&rsquo; that try to approximate the many facets of our being, we should also embrace the natural tendency for different expressions of ourselves through our many relationships.</p>
 <p>The key thing in a relational notion of identity is that the relation &ndash; the &lsquo;join&rsquo; between identities &ndash; is a thing in and of itself. It can be described, and it has a history which can be built on top of.</p>
+<p>We can use this as the basis for any app that involves relations:</p>
+<ul>
+<li>A group chat can be modelled as an n-to-n relationship between a group of people. In this context, each member has their own group-chat-specific petname which can be used to refer to other members and address content.</li>
+<li>A personal note-taking app might be modelled as a 1-to-1 relationship with yourself with a history log of all the notes you&rsquo;ve written.</li>
+</ul>
+<p>Identity may be a difficult thing to model, but it is worth thinking about intensely. Our models for identity will impact how many future generations of internet users are categorized, made legible, and modelled and it makes sense to ensure it best serves the people it represents.</p>
+<p>As <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> and <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first</a> apps slowly make a resurgence, I hope that relational notions of identity are at the forefront, enabling users to choose which parts of themselves to make legible and foster connections that feel <em>real</em> and human rather than extractive and limiting.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
