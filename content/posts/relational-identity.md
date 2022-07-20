@@ -11,7 +11,7 @@ Defined roughly, identity is something that is contextual, situationally adaptiv
 
 It is made up of qualities, beliefs, personality quirks, traits, and relationships that make you *you*. Yet when we gesture towards digital identity, it seems to point towards not this subjective and contextual set of relationships, but something else entirely.
 
-## Identity as Object
+## Identity as Attributes
 
 ![[thoughts/images/identity-object.png]]
 
@@ -24,6 +24,10 @@ Our digital representations consist of
 - The hundreds, maybe thousands, of online accounts you have scattered around the internet, made hastily so you can access an article, use a service, or leave a review.
 
 Notice that in this form, all aspects of identity are quantifiable. Identity, in this model, is a thing to be managed, sold, or searched for. Links and relations in this model are secondary, expressed as joins between tables in databases or identifying users through 'unique' identifiers like email addresses, cookies, IP addresses and advertising identifiers: all things that are machine legible but unusable for anyone 
+
+> [The attribute model of identity] ignores the consequences of common identification across different systems for the sake of simplicity and feature management. It also ignores how that data came to be, what is done with it, and how it is governed. In effect, it focuses on the bits and bytes and not on the processes involved. (Five Mental Models of Identity)[^8]
+
+[^8]: Source: [Five Mental Models of Identity](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/mental-models.pdf), presented in *Rebooting the Web of Trust VII* by Joe Andrieu, Nathan George, Andrew Hughes, Christophe MacIntosh, and Antoine Rondelet
 
 Big companies make identities legible so that they may measure, manage, and control our attention to optimize their ad revenue and sell our data.
 
@@ -57,11 +61,11 @@ If we want to flip access control back to the users, we need to consider other r
 
 [^3]: Source: [Soulbinding Like a State](https://subconscious.substack.com/p/soulbinding-like-a-state), Gordon Brander
 
-## Identity as Actions
+## Identity as Capabilities
 
 ![[thoughts/images/identity-action.png]]
 
-When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do."[^3] 
+When I think about what identity ultimately feels useful for, it is to gesture at *capabilities* rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do."[^3] 
 
 > "[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts."
 
@@ -72,7 +76,7 @@ From a software perspective, this isn't a new representation of digital identity
 
 > Everything that a user is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format. _([ucan.xyz](https://ucan.xyz/))_
 
-This entirely displaces the previous notion of identity as an object. There is no 'identity' to be managed. Public-key cryptography means that there isn't any sort of global registry of identities[^6]. There is no easy way to figure out everything related to one person.
+There is no 'identity' to be managed but rather a set of capabilities to be possessed. Public-key cryptography means that there isn't any sort of global registry of identities[^6]. There is no easy way to figure out all the information related to one identity unless that person purposefully makes it legible.
 
 [^6]: For those familiar with [[thoughts/Zooko's Triangle|Zooko's Triangle]], this is a secure + decentralized ID.
 

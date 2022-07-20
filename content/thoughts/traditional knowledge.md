@@ -38,6 +38,8 @@ Seems to mutual distrust between First Nations groups and government + industry
 Did not end up working under Harper government, but First Nations communities were undeterred.
 
 ## Open Access
+From Kimberly Christen’s “Does Information Really Want to be Free?” and Salomé Viljoen’s “A Relational Theory of Data Governance”
+
 Contests over access to knowledge arise because of the historical conditions that meant that indigenous people lost control over how and what knowledge was to be circulated
 
 Data and information should only be common use *after* voluntary communication to others. This is not the case for the vast majority of traditional knowledge.
