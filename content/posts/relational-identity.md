@@ -20,7 +20,7 @@ Software developers and computer scientists have been tackling this for almost h
 Our digital representations consist of
 - What we bought last time we visited Amazon.
 - All of our Facebook, Instagram, and Twitter posts.
-- Google Analytic's data points about what pages we visited and when.
+- Google Analytics data points about what pages we visited and when.
 - The hundreds, maybe thousands, of online accounts you have scattered around the internet, made hastily so you can access an article, use a service, or leave a review.
 
 Notice that in this form, all aspects of identity are quantifiable. Identity, in this model, is a thing to be managed, sold, or searched for. Links and relations in this model are secondary, expressed as joins between tables in databases or identifying users through 'unique' identifiers like email addresses, cookies, IP addresses and advertising identifiers: all things that are machine legible but unusable for anyone 
