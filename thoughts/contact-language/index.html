@@ -105,13 +105,13 @@ Digital Contact Languages Contact Language: broadly speaking, this [[thoughts/la
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d4289107a2cc04b68af4bc3321b6f147.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89ae9a6081ae56745e8ff592d40259fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a84f626c7b7d84e3a6236746cf3ff43b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d4578a980966eba9016d4ffd5b54e5e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

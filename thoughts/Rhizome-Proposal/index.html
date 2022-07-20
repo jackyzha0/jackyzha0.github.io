@@ -104,13 +104,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d4289107a2cc04b68af4bc3321b6f147.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89ae9a6081ae56745e8ff592d40259fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a84f626c7b7d84e3a6236746cf3ff43b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d4578a980966eba9016d4ffd5b54e5e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -332,56 +332,6 @@ Mar 14, 2022
       
       
       
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
       
       
       
@@ -448,14 +398,6 @@ Mar 14, 2022
       
       
       
-      
-      
-      
-      
-        
-        
-        
-      
     
   
 
@@ -477,108 +419,6 @@ Mar 14, 2022
         
         
         
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
       
     
   
@@ -703,72 +543,31 @@ Mar 14, 2022
 <p><em>DISCLAIMER: To borrow words from 
 
 <a href="https://www.robinsloan.com/lab/specifying-spring-83/" rel="noopener">Robin Sloan</a>: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.</em></p>
-<p>The competitive advantage of the vast majority of today&rsquo;s centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren&rsquo;t difficult to replicate &ndash; in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.</p>
-<p>These platforms, especially aggregators, are <em>incentivized</em> to resist <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralization</a> and <a href="/thoughts/interoperability" rel="noopener" class="internal-link" data-src="/thoughts/interoperability">interoperability</a>. After all, &lsquo;data is the new oil&rsquo;. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.</p>
-<p><img src="/thoughts/images/platforms as old oil rigs.png" width="auto" /></p>
-<p>As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign over the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can&rsquo;t choose what parts you like; you either use the platform and sign all of your rights to them, or don&rsquo;t use it at all. <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">Privacy</a> and security in this world mostly means &ldquo;which company do you trust with your safety?&rdquo; The answer often is the one with the largest walls and deepest moats.</p>
-<p><img src="/thoughts/images/data moat.png" width="auto" /></p>
-<p>Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.</p>
-<a href="#an-ideal-world"><h2 id="an-ideal-world"><span class="hanchor" ariaLabel="Anchor"># </span>An Ideal World</h2></a>
-<p>Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. <strong>Decentralization is about agency</strong>: we get choice about where we <em>store</em> our data, who we give <em>access</em> to which parts of that data, which <em>services</em> we want on top of it, and how we <em>pay</em> for those.</p>
-<p>In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego &ldquo;dot&rdquo; that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.</p>
-<p>In an ideal world, there is <em>data-neutrality</em>. Much like how the Net <a href="/thoughts/neutrality" rel="noopener" class="internal-link" data-src="/thoughts/neutrality">Neutrality</a> debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.</p>
-<p>In an ideal world, we focus on local-first software that works independently of large platforms &ndash; at the end of the day <strong>platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.</strong></p>
-<a href="#peer-to-peer"><h2 id="peer-to-peer"><span class="hanchor" ariaLabel="Anchor"># </span>Peer-to-peer</h2></a>
-<p>Peer-to-peer technology has existed for a while and in theory, gets quite close to realizing this ideal world on its own. Federated open source software means anyone can run their own local instances and customize them to their liking. Organizations like the IETF and W3C work on standardizing open data formats to act as universal formats to store and convert between. Yet, most platforms do the minimum they need as required by law to maintain interoperability and data-neutrality.</p>
-<p>So why does it fall short?</p>
-<a href="#1-running-your-own-infrastructure"><h3 id="1-running-your-own-infrastructure"><span class="hanchor" ariaLabel="Anchor"># </span>1. Running your own infrastructure</h3></a>
-<blockquote>
-<p>Even nerds do not want to run their own servers at this point. Even organizations building software full time do not want to run their own servers at this point. If there’s one thing I hope we’ve learned about the world, it’s that people do not want to run their own servers.</p>
-<p>Moxie in <em>My first impressions of Web3</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
-</blockquote>
-<p>Running your own infrastructure and servers is hard. Maintenance and upkeep of your software is hard. There is a reason that companies which offered to do that for others were so successful.</p>
-<p>If one company figured out a good way to do $x$, it was incentivized to offer doing $x$ as a service (hence the explosion of SAAS startups) instead of making it easy for competitors to do the same. Overtime, companies specialized at getting really good at doing $x$ and thus became known as the go-to people for that thing. This centralization-over-time of this knowledge leads to the monopolies that we see today.</p>
-<p>Centralizing this knowledge in open standards and public, forkable code rather than data moats and proprietary technology is a great start but it isn&rsquo;t enough if the general public doesn&rsquo;t know how to use it. Just as you wouldn&rsquo;t expect the average home owner to setup their internet connection, we shouldn&rsquo;t expect the average person to run their own infrastructure.</p>
-<p>It should be easy for people to create competing yet interoperable platform providers and it should be easy for people to switch between platform providers as one can switch between internet providers today.</p>
-<a href="#2-data-availability-and-durability"><h3 id="2-data-availability-and-durability"><span class="hanchor" ariaLabel="Anchor"># </span>2. Data availability and durability</h3></a>
-<p>The vast majority of peer-to-peer applications have yet to solve the data availability problem. In short, all connections are ephemeral &ndash; there is no persistent state. Imagine if everybody you shared a Google Doc with had to be online at the same time everytime you wanted to edit it, or if all 3 billion users of Facebook all had to have the app open to even use it. Imagine if you had your Twitter account deleted every time you closed your browser window.</p>
-<p>This means that <em>asynchronous collaboration isn&rsquo;t possible</em> in most peer-to-peer apps. Platforms usually get around this by storing the state of a user on one of their many servers who make it available on your behalf but peer-to-peer apps do not have this luxury &ndash; most people do not have a device that is “always-on” like a server is.</p>
-<a href="#3-existing-network-effects"><h3 id="3-existing-network-effects"><span class="hanchor" ariaLabel="Anchor"># </span>3. Existing network effects</h3></a>
-<p>Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are &rsquo;export&rsquo; tools on platforms, they are the worst they can be while still meeting 
-
-<a href="https://gdpr-info.eu/art-20-gdpr/" rel="noopener">GDPR Requirements</a>. New platforms almost never have &lsquo;import&rsquo; tools because each platform has their own data format and that format changes unpredictably. This 
-
-<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate.</p>
-<blockquote>
-<p>&ldquo;But usually you don&rsquo;t want a dead snapshot; you want to &ldquo;use this data elsewhere&rdquo;—which requires repeatedly exporting &amp; reconciling.&rdquo;</p>
-<p>
-
-<a href="https://twitter.com/andy_matuschak/status/1452438176996347907" rel="noopener">Andy Matuschak on Twitter</a></p>
-</blockquote>
-<p>This means that, even if an alternative platform offers a better service, switching is often impossible.</p>
-<p>The important question is: can applications on top of decentralized data <strong>behave the same way as centralized apps</strong>? Can we still aggregate information into feeds and present a cohesive user experience even if all of our friends&rsquo; data is stored in different places?</p>
-<a href="#why-not-use-blockchains"><h2 id="why-not-use-blockchains"><span class="hanchor" ariaLabel="Anchor"># </span>Why not use blockchains?</h2></a>
-<p>I admit that it is true that <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a> actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentive</a> mechanisms. Yet, they solve it in a way that leaves much to be desired.</p>
-<p>Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include</p>
-<ul>
-<li>Lack of ability to store large files on-chain in a cost-effective manner</li>
-<li>Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
-<li>High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)</li>
-</ul>
-<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without <em>aggressive</em> application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine</a> actors) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.</p>
-<p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
-<a href="#the-personal-cloud"><h2 id="the-personal-cloud"><span class="hanchor" ariaLabel="Anchor"># </span>The personal cloud</h2></a>
-<p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable <em>data-neutrality</em> by separating data from applications.</p>
-<p>It is made up of two layers</p>
+<p>The competitive advantage of the vast majority of today’s centralized platforms are in their data moats and network effects. The major reason why these platforms remain so dominant is because of their data and users, not because of how good the service quality is.</p>
+<p>As a result, apps have become inseparable from data. In an ideal world, there is data-neutrality. Much like how net neutrality strives to maintain separation of provider and content markets, data neutrality strives to maintain the separation of data and application markets.</p>
+<p>In an ideal world, we focus on local-first software that works independently of large platforms – at the end of the day platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.</p>
+<p>I&rsquo;ve spent a lot of time looking at the retrospectives of peer-to-peer protocols and distributed applications and there are 3 common themes I&rsquo;ve found in all of them:</p>
 <ol>
-<li>Root: a personal data pod that <em>you</em> own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.</li>
-<li>Trunk: a framework for easily developing cohesive peer-to-peer applications on top of data from Root</li>
+<li>Running your own infrastructure is hard. We need to think about the average non-technical user.</li>
+<li>Data availability and durability is largely unsolved. In most p2p systems, offline collaboration isn&rsquo;t possible.</li>
+<li>Lack of thought behind off-ramping off of existing systems. We have shiny new systems, how do we get people to switch to it?</li>
 </ol>
-<p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.</p>
-<ul>
-<li>Single purpose apps backed by general-purpose data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
-<li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.</li>
-<li>Local-first means interaction times are measured in <em>microseconds</em> not seconds, resulting in more responsive-feeling applications and no loading spinners.</li>
-<li>Two users can collaborate by simply &lsquo;inviting&rsquo; another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.</li>
-<li>As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.</li>
-</ul>
-<p>With Rhizome, we get the convenience of a single centralized platform without the lack of agency that comes with it.</p>
+<p>While blockchain can be used in creative ways to overcome most of these, it currently comes with a large set of downsides that make it hard to build on top of it (e.g. expensive to store things completely on chain, slow confirmation times).</p>
+<p>While I hope these will be mitigated in the future, I wanted to spend time exploring alternative and potentially more general-purpose means of addressing these main problems without blockchains.</p>
+<p><strong>My main research question is about how we can enable data-neutrality on a web dominated by data moats.</strong> A few consequences of this work:</p>
+<ol>
+<li>Single purpose apps backed by general purpose data. If two apps are views on the same data, any change to the underlying data will instantly update both apps</li>
+<li>Applications ask for access rather than store their own data. You give apps permission to read or write specific parts of your data</li>
+<li>As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership</li>
+<li>We can get the convenience of a single centralized platform without the lack of agency that typically comes with it.</li>
+</ol>
+<p>I’m tentatively calling this project Rhizome. It aims to be a data-persistence and identity layer for the distributed web.</p>
+<ol>
+<li>A personal data pod that <em>you</em> own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.</li>
+<li>A framework for easily developing cohesive peer-to-peer applications on top of data from the prev layer</li>
+</ol>
+<p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data.</p>
+<p><em>This is a summarized version of the full vision of Rhizome. Read the full essay on <a href="/posts/towards-data-neutrality" rel="noopener" class="internal-link" data-src="/posts/towards-data-neutrality">data neutrality</a>.</em></p>
 <a href="#technical-details"><h2 id="technical-details"><span class="hanchor" ariaLabel="Anchor"># </span>Technical Details</h2></a>
 <p>Rhizhome is a set of abstractions on top of DIDs, IPFS (specifically 
 
@@ -846,6 +645,7 @@ Mar 14, 2022
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">&lt;1kloc Raft Implementation</a></li>
 </ul>
 </li>
+<li><a href="/posts/relational-identity" rel="noopener" class="internal-link" data-src="/posts/relational-identity">From legibility to identity</a></li>
 <li>&hellip;more to come</li>
 </ul>
 <a href="#root"><h3 id="root"><span class="hanchor" ariaLabel="Anchor"># </span>Root</h3></a>
@@ -871,31 +671,6 @@ Mar 14, 2022
 <p>You can find the ongoing <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log here</a>.</p>
 <a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
 <p>Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for your continued support. This project wouldn&rsquo;t be possible without all of you :))</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>Divya Siddarth, Danielle Allen, E. Glen Weyl, <em>The Web3 Decentralization Debate is Focused on the Wrong Question</em> in Wired Magazine (
-
-<a href="https://www.wired.com/story/web3-blockchain-decentralization-governance/" rel="noopener">Source</a>)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p>Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan, <em>Local-first software</em> in Ink &amp; Switch (
-
-<a href="https://www.inkandswitch.com/local-first/" rel="noopener">Source</a>)&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3" role="doc-endnote">
-<p>Moxie Marlinspike, <em>My first impression of web3</em> (
-
-<a href="https://moxie.org/2022/01/07/web3-first-impressions.html" rel="noopener">Source</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:4" role="doc-endnote">
-<p>Spencer Chang on 
-
-<a href="https://twitter.com/spencerc99/status/1544420768137740288" rel="noopener">Twitter</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
 
 
     </article>
@@ -945,8 +720,18 @@ Mar 14, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/" data-ctx="data" data-src="/" class="internal-link">jzhao.xyz</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/posts/towards-data-neutrality/" data-ctx="in the proposal" data-src="/posts/towards-data-neutrality" class="internal-link">Towards Data Neutrality</a>
       </li>
       
       

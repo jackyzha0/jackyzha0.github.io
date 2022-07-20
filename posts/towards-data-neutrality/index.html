@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="This essay was originally published in Reboot.
+ DISCLAIMER: To borrow words from Robin Sloan: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it!"
+  />
+  <title>
+    Towards Data Neutrality
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.ed06f75b12d34d6bd16a49dc1fb3b177.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js"></script>
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89ae9a6081ae56745e8ff592d40259fe.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d4578a980966eba9016d4ffd5b54e5e.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(render)
+      
+      container.textContent = ""
+
+      const drawGlobal = isHome &&  false ;
+      drawGraph(
+          "https://jzhao.xyz",
+          drawGlobal,
+          [{"/moc":"#4388cc"}],
+          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+        );
+
+      
+
+
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+    <div id="search-space">
+        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
+        <div id="results-container">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://jzhao.xyz/js/search.cf33b507388f3dfd5513a2afcda7af41.min.js"></script>
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Towards Data Neutrality</h1>
+      <p class="meta">
+          Last updated 
+Jul 14, 2022
+
+ 
+          
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+<blockquote>
+<p>This essay was originally published in 
+
+<a href="https://reboothq.substack.com/p/rhizome" rel="noopener">Reboot</a>.</p>
+</blockquote>
+<p><em>DISCLAIMER: To borrow words from 
+
+<a href="https://www.robinsloan.com/lab/specifying-spring-83/" rel="noopener">Robin Sloan</a>: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.</em></p>
+<p>The competitive advantage of the vast majority of today&rsquo;s centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren&rsquo;t difficult to replicate &ndash; in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.</p>
+<p>These platforms, especially aggregators, are <em>incentivized</em> to resist <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralization</a> and <a href="/thoughts/interoperability" rel="noopener" class="internal-link" data-src="/thoughts/interoperability">interoperability</a>. After all, &lsquo;data is the new oil&rsquo;. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.</p>
+<p><img src="/thoughts/images/platforms as old oil rigs.png" width="auto" /></p>
+<p>As a result, apps have become inseparable from data. They are extractive, asking for ever-increasing access to our personal lives. We willingly sign over the ability to control our data, blindly scrolling miles and miles of Terms of Service Agreements because we know that at the end of the day, we have no power to change what they want from us. You can&rsquo;t choose what parts you like; you either use the platform and sign all of your rights to them, or don&rsquo;t use it at all. <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">Privacy</a> and security in this world mostly means &ldquo;which company do you trust with your safety?&rdquo; The answer often is the one with the largest walls and deepest moats.</p>
+<p><img src="/thoughts/images/data moat.png" width="auto" /></p>
+<p>Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.</p>
+<a href="#an-ideal-world"><h2 id="an-ideal-world"><span class="hanchor" ariaLabel="Anchor"># </span>An Ideal World</h2></a>
+<p>Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. <strong>Decentralization is about agency</strong>: we get choice about where we <em>store</em> our data, who we give <em>access</em> to which parts of that data, which <em>services</em> we want on top of it, and how we <em>pay</em> for those.</p>
+<p>In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego &ldquo;dot&rdquo; that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.</p>
+<p>In an ideal world, there is <em>data-neutrality</em>. Much like how the Net <a href="/thoughts/neutrality" rel="noopener" class="internal-link" data-src="/thoughts/neutrality">Neutrality</a> debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.</p>
+<p>In an ideal world, we focus on local-first software that works independently of large platforms &ndash; at the end of the day <strong>platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.</strong></p>
+<a href="#peer-to-peer"><h2 id="peer-to-peer"><span class="hanchor" ariaLabel="Anchor"># </span>Peer-to-peer</h2></a>
+<p>Peer-to-peer technology has existed for a while and in theory, gets quite close to realizing this ideal world on its own. Federated open source software means anyone can run their own local instances and customize them to their liking. Organizations like the IETF and W3C work on standardizing open data formats to act as universal formats to store and convert between. Yet, most platforms do the minimum they need as required by law to maintain interoperability and data-neutrality.</p>
+<p>So why does it fall short?</p>
+<a href="#1-running-your-own-infrastructure"><h3 id="1-running-your-own-infrastructure"><span class="hanchor" ariaLabel="Anchor"># </span>1. Running your own infrastructure</h3></a>
+<blockquote>
+<p>Even nerds do not want to run their own servers at this point. Even organizations building software full time do not want to run their own servers at this point. If there’s one thing I hope we’ve learned about the world, it’s that people do not want to run their own servers.</p>
+<p>Moxie in <em>My first impressions of Web3</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+</blockquote>
+<p>Running your own infrastructure and servers is hard. Maintenance and upkeep of your software is hard. There is a reason that companies which offered to do that for others were so successful.</p>
+<p>If one company figured out a good way to do $x$, it was incentivized to offer doing $x$ as a service (hence the explosion of SAAS startups) instead of making it easy for competitors to do the same. Overtime, companies specialized at getting really good at doing $x$ and thus became known as the go-to people for that thing. This centralization-over-time of this knowledge leads to the monopolies that we see today.</p>
+<p>Centralizing this knowledge in open standards and public, forkable code rather than data moats and proprietary technology is a great start but it isn&rsquo;t enough if the general public doesn&rsquo;t know how to use it. Just as you wouldn&rsquo;t expect the average home owner to setup their internet connection, we shouldn&rsquo;t expect the average person to run their own infrastructure.</p>
+<p>It should be easy for people to create competing yet interoperable platform providers and it should be easy for people to switch between platform providers as one can switch between internet providers today.</p>
+<a href="#2-data-availability-and-durability"><h3 id="2-data-availability-and-durability"><span class="hanchor" ariaLabel="Anchor"># </span>2. Data availability and durability</h3></a>
+<p>The vast majority of peer-to-peer applications have yet to solve the data availability problem. In short, all connections are ephemeral &ndash; there is no persistent state. Imagine if everybody you shared a Google Doc with had to be online at the same time everytime you wanted to edit it, or if all 3 billion users of Facebook all had to have the app open to even use it. Imagine if you had your Twitter account deleted every time you closed your browser window.</p>
+<p>This means that <em>asynchronous collaboration isn&rsquo;t possible</em> in most peer-to-peer apps. Platforms usually get around this by storing the state of a user on one of their many servers who make it available on your behalf but peer-to-peer apps do not have this luxury &ndash; most people do not have a device that is “always-on” like a server is.</p>
+<a href="#3-existing-network-effects"><h3 id="3-existing-network-effects"><span class="hanchor" ariaLabel="Anchor"># </span>3. Existing network effects</h3></a>
+<p>Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are &rsquo;export&rsquo; tools on platforms, they are the worst they can be while still meeting 
+
+<a href="https://gdpr-info.eu/art-20-gdpr/" rel="noopener">GDPR Requirements</a>. New platforms almost never have &lsquo;import&rsquo; tools because each platform has their own data format and that format changes unpredictably. This 
+
+<a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate.</p>
+<blockquote>
+<p>&ldquo;But usually you don&rsquo;t want a dead snapshot; you want to &ldquo;use this data elsewhere&rdquo;—which requires repeatedly exporting &amp; reconciling.&rdquo;</p>
+<p>
+
+<a href="https://twitter.com/andy_matuschak/status/1452438176996347907" rel="noopener">Andy Matuschak on Twitter</a></p>
+</blockquote>
+<p>This means that, even if an alternative platform offers a better service, switching is often impossible.</p>
+<p>The important question is: can applications on top of decentralized data <strong>behave the same way as centralized apps</strong>? Can we still aggregate information into feeds and present a cohesive user experience even if all of our friends&rsquo; data is stored in different places?</p>
+<a href="#why-not-use-blockchains"><h2 id="why-not-use-blockchains"><span class="hanchor" ariaLabel="Anchor"># </span>Why not use blockchains?</h2></a>
+<p>I admit that it is true that <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a> actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentive</a> mechanisms. Yet, they solve it in a way that leaves much to be desired.</p>
+<p>Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include</p>
+<ul>
+<li>Lack of ability to store large files on-chain in a cost-effective manner</li>
+<li>Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
+<li>High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)</li>
+</ul>
+<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without <em>aggressive</em> application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine</a> actors) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.</p>
+<p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
+<a href="#the-personal-cloud"><h2 id="the-personal-cloud"><span class="hanchor" ariaLabel="Anchor"># </span>The personal cloud</h2></a>
+<p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable <em>data-neutrality</em> by separating data from applications.</p>
+<p>It is made up of two layers</p>
+<ol>
+<li>Root: a personal data pod that <em>you</em> own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.</li>
+<li>Trunk: a framework for easily developing cohesive peer-to-peer applications on top of data from Root</li>
+</ol>
+<p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.</p>
+<ul>
+<li>Single purpose apps backed by general-purpose data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
+<li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.</li>
+<li>Local-first means interaction times are measured in <em>microseconds</em> not seconds, resulting in more responsive-feeling applications and no loading spinners.</li>
+<li>Two users can collaborate by simply &lsquo;inviting&rsquo; another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.</li>
+<li>As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.</li>
+</ul>
+<p>With Rhizome, we get the convenience of a single centralized platform without the lack of agency that comes with it.</p>
+<p>You can find more technical details <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">in the proposal</a>, and rough notes from my day-to-day in my <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log</a>.</p>
+<p>I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.</p>
+<p>Think of this project as a <a href="/thoughts/skyhooks" rel="noopener" class="internal-link" data-src="/thoughts/skyhooks">skyhook</a>: a dream about a future so that we may build towards it.</p>
+<a href="#q--a"><h2 id="q--a"><span class="hanchor" ariaLabel="Anchor"># </span>Q &amp; A</h2></a>
+<p><strong>This proposal has seen a lot of evolution. How does this current version differ from your initial proposal? What shaped your ideas?</strong> </p>
+<p>The 
+
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/blob/bd194ffe671e6ff51b0d79f11a40aa595da17e7f/content/thoughts/Rhizome-Research-Proposal" rel="noopener">early proposal</a> contained very lofty goals for the future but I don’t think it critically thought about how to get there or why people would want a future like it. It had very scattered technical ideas and lacked conviction in the vision.</p>
+<p>I found it really odd that this type of technology has existed for a while but there were no widespread examples of usage. I spent about a month and a bit looking at retrospectives of peer-to-peer protocols and applications to get a good foundation for what’s been done and what hasn’t been done.</p>
+<p>This literature review era led me to revise the proposal to go a lot more in-depth about the why of the research, placing heavier emphasis on adoption and why the average internet user should care. The internal metric I had was whether my Mom, who doesn’t work in technology and mostly uses the internet to look at articles, would be able to understand why what I was working on was important.</p>
+<p><strong>What’s something that surprised you in your work so far this summer?</strong></p>
+<p>People say independent research is a lonely journey. I disagree. I don’t think being independent means you need to do it alone. Rather, it means without being attached to any particular institution or label.</p>
+<p>I’ve been very surprised at just the number of people who have been thought partners, collaborators, and supporters throughout the whole process.</p>
+<p><strong>Rhizome is very much in early stages right now from a research perspective. Let’s say the research phase fully succeeds — what do you think would come next? What would it take for this to shape how individuals interact with the internet?</strong> </p>
+<p>I honestly don’t think the technical part or the research will be the hard part of this project! Getting people to build on top of it and to imagine possible futures using this technology is the hard part.</p>
+<p>Building distributed systems and peer-to-peer tech shouldn’t require a PhD to do. I think a large part of the next step if research is successful is to build demo apps with <em>real users</em> to show what’s possible with it.</p>
+<p>I want your average computer science student to be able to build apps for their friends and family using this. I want people to actively play with this new framework, this new mental model of computing, and then to build the apps they wish they could have themselves.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Divya Siddarth, Danielle Allen, E. Glen Weyl, <em>The Web3 Decentralization Debate is Focused on the Wrong Question</em> in Wired Magazine (
+
+<a href="https://www.wired.com/story/web3-blockchain-decentralization-governance/" rel="noopener">Source</a>)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan, <em>Local-first software</em> in Ink &amp; Switch (
+
+<a href="https://www.inkandswitch.com/local-first/" rel="noopener">Source</a>)&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Moxie Marlinspike, <em>My first impression of web3</em> (
+
+<a href="https://moxie.org/2022/01/07/web3-first-impressions.html" rel="noopener">Source</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Spencer Chang on 
+
+<a href="https://twitter.com/spencerc99/status/1544420768137740288" rel="noopener">Twitter</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Proposal/" data-ctx="data neutrality" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+
+    </div>
+</div>
+
+
+
+<div id="contact_buttons">
+    <footer>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+
+</html>

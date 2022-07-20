@@ -17,14 +17,22 @@
     </item>
     
     <item>
+      <title>From legibility to identity</title>
+      <link>https://jzhao.xyz/posts/relational-identity/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/relational-identity/</guid>
+      <description>What is identity? Who defines it? Who controls it? What is its relationship to software?
+Defined roughly, identity is something that is contextual, situationally adaptive, subjective, and constantly changing.</description>
+    </item>
+    
+    <item>
       <title>Identity</title>
       <link>https://jzhao.xyz/thoughts/identity/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/identity/</guid>
-      <description>Notes for [[posts/verb-based-identity|a post on verb-based identity]]
-extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&amp;curius=1294
- on site redesigns  every year i feel the urge to redesign my website The logo, colors, spacing, tone of voice — it all felt somewhat foreign.</description>
+      <description>On Website Redesigns  There are endless possibilities as to what a website could be. What kind of room is a website?</description>
     </item>
     
     <item>
@@ -45,6 +53,16 @@ extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&am
       <guid>https://jzhao.xyz/thoughts/Merkle-DAG/</guid>
       <description>A directed acyclic graph where nodes correspond to versions of the content and arcs correspond to changes (diffs).
 Each node has an identifier which is the result of hashing the node&amp;rsquo;s content.</description>
+    </item>
+    
+    <item>
+      <title>Towards Data Neutrality</title>
+      <link>https://jzhao.xyz/posts/towards-data-neutrality/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/towards-data-neutrality/</guid>
+      <description>This essay was originally published in Reboot.
+ DISCLAIMER: To borrow words from Robin Sloan: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it!</description>
     </item>
     
     <item>

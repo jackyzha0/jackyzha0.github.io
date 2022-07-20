@@ -3,22 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Tools-for-Conviviality/</loc>
     <lastmod>2022-07-17T12:49:24-07:00</lastmod>
   </url><url>
+    <loc>https://jzhao.xyz/posts/relational-identity/</loc>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/identity/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/posts/</loc>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/causal-tree/</loc>
     <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Merkle-DAG/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/posts/towards-data-neutrality/</loc>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT-Implementations/</loc>
     <lastmod>2022-07-13T16:37:07-07:00</lastmod>
@@ -152,9 +161,6 @@
     <loc>https://jzhao.xyz/thoughts/FOAF/</loc>
     <lastmod>2022-06-09T13:10:10-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/posts/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/DHT/</loc>
     <lastmod>2022-06-09T14:27:49-07:00</lastmod>
   </url><url>
@@ -198,7 +204,7 @@
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Zookos-Triangle/</loc>
-    <lastmod>2022-05-20T17:13:44-04:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/language/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
@@ -249,7 +255,7 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>
@@ -297,7 +303,7 @@
     <lastmod>2022-07-14T11:51:08-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/writing/</loc>
-    <lastmod>2022-07-04T11:40:34-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idealism/</loc>
     <lastmod>2022-04-27T08:09:00-07:00</lastmod>
@@ -309,7 +315,7 @@
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ontology/</loc>
-    <lastmod>2022-07-06T11:50:14-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/intersubjectivity/</loc>
     <lastmod>2022-04-05T01:10:14-07:00</lastmod>
@@ -366,7 +372,7 @@
     <lastmod>2022-03-15T10:35:08-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Proposal/</loc>
-    <lastmod>2022-07-13T16:37:07-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Consciousness-is-not-Information/</loc>
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
@@ -483,7 +489,7 @@
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/functional-programming/</loc>
-    <lastmod>2022-04-05T01:10:14-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ask-vs-guess-culture/</loc>
     <lastmod>2022-02-21T15:50:05-05:00</lastmod>
@@ -807,10 +813,10 @@
     <lastmod>2022-04-07T12:35:46-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/traditional-knowledge/</loc>
-    <lastmod>2021-12-25T21:02:46-05:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/quotes/</loc>
-    <lastmod>2022-07-15T19:10:02-07:00</lastmod>
+    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/mental-model/</loc>
     <lastmod>2022-01-30T22:17:58-08:00</lastmod>
@@ -1353,7 +1359,7 @@
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/books/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-18T10:28:13-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/categories/</loc>
   </url><url>
@@ -1364,7 +1370,7 @@
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/</loc>
-    <lastmod>2022-07-17T12:49:24-07:00</lastmod>
+    <lastmod>2022-07-18T10:28:13-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/personal/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
