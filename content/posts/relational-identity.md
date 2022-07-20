@@ -54,7 +54,7 @@ If we want to flip access control switches back to the users, we need to conside
 
 [^3]: Source: [Soulbinding Like a State](https://subconscious.substack.com/p/soulbinding-like-a-state), Gordon Brander
 
-## Identity as Action-space
+## Identity as Actions
 When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do."[^3] 
 
 > "[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts."
@@ -76,13 +76,22 @@ Yet, I think there is still room for improvement here. Identities based off of t
 
 [^7]: Systems like ENS get most of the way there (achieving all three properties of Zooko's Triangle until [[thoughts/fault tolerance#Byzantine Faults|Byzantine fault tolerance]]), providing human-meaningful names on top of secure + decentralized identifiers.
 
-## Identity as the Intersection of Relationships
-In fact, we do this with phone numbers already. All of our phones have a personal address book we use to map human-meaningful names to sometimes multiple meaningless phone numbers. There is no global database mapping people to phone numbers. Our contact books are great tools for identity keeping because they are local, private, and memorable. 
+## Identity as Relationships
+
+> Humans also need to communicate securely with other humans, and in so doing, securely designate various objects, including yet other humans. Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.
+
+You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names. HCI researchers call systems like these [[thoughts/Zooko's Triangle#Petnames|petname systems]].
 
 > For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). *([Backchannel](https://www.inkandswitch.com/backchannel/), Ink & Switch)*
 
-In this way, the name doesn't just represent the person you are referring to also the relationship between the two of you. The *real identity* is neither the phone number nor the name. Rather, the real identity is the *intersection* of all of the relationships they have with others (including themselves)! 
+In this way, the petname doesn't just represent the person you are referring to also the relationship between the two of you. The *real identity* is neither the phone number nor the petname. Rather, their real identity is the *intersection* of all of the relationships they have with others. Just as we have many 'alt accounts' or 'finstas' that try to approximate the many facets of our being, we should also embrace the natural tendency for different expressions of ourselves through our many relationships.
 
-Just as we have many 'alt accounts' or 'finstas' that try to approximate the many facets of our being, we should also embrace the natural tendency for different expressions of ourselves through our many relationships. We can use this metaphor to build on top of key-based identity. In this model, keys play the role of a phone number. It is a lookup method to connect two people.
+The key thing in a relational notion of identity is that the relation -- the 'join' between identities -- is a thing in and of itself. It can be described, and it has a history which can be built on top of.
 
-The key thing in a relational notion of identity is that the relation -- the 'join' between identities -- is a thing in and of itself. It can be described, and it has a history which can be built on top of. 
+We can use this as the basis for any app that involves relations:
+- A group chat can be modelled as an n-to-n relationship between a group of people. In this context, each member has their own group-chat-specific petname which can be used to refer to other members and address content.
+- A personal note-taking app might be modelled as a 1-to-1 relationship with yourself with a history log of all the notes you've written.
+
+Identity may be a difficult thing to model, but it is worth thinking about intensely. Our models for identity will impact how many future generations of internet users are categorized, made legible, and modelled and it makes sense to ensure it best serves the people it represents.
+
+As [[thoughts/peer-to-peer|peer-to-peer]] and [[thoughts/local-first software|local-first]] apps slowly make a resurgence, I hope that relational notions of identity are at the forefront, enabling users to choose which parts of themselves to make legible and foster connections that feel *real* and human rather than extractive and limiting.
