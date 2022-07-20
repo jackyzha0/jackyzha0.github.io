@@ -111,7 +111,7 @@ Defined roughly, identity is something that is contextual, situationally adaptiv
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a2eb4b0b0c3f428dfc63553eabbc33b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7bc14f74737acc98452546cd7088af2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -309,14 +309,6 @@ Jul 16, 2022
       
       
       
-      
-      
-      
-      
-        
-        
-        
-      
     
   
 
@@ -387,6 +379,24 @@ Jul 16, 2022
       
       
       
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
       
       
       
@@ -394,6 +404,50 @@ Jul 16, 2022
         
         
         
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
       
     
   
@@ -509,6 +563,7 @@ Jul 16, 2022
 <p>Defined roughly, identity is something that is contextual, situationally adaptive, subjective, and constantly changing.</p>
 <p>It is made up of qualities, beliefs, personality quirks, traits, and relationships that make you <em>you</em>. Yet when we gesture towards digital identity, it seems to point towards not this subjective and contextual set of relationships, but something else entirely.</p>
 <a href="#identity-as-object"><h2 id="identity-as-object"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Object</h2></a>
+<p><img src="/thoughts/images/identity-object.png" width="auto" /></p>
 <p>Software developers and computer scientists have been tackling this for almost half a century now, trying to model identity in ways that are understandable to machines, but in doing so, forget the very nature of identity we live out in the real world.</p>
 <p>Our digital representations consist of</p>
 <ul>
@@ -529,11 +584,12 @@ Jul 16, 2022
 <p>Processes of legibility become more actively dangerous when they go from &ldquo;making sense of the world&rdquo; to &ldquo;making the world make sense&rdquo;.</p>
 <p>When this is the <em>only</em> lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. We emerge in a world that comes straight from Black Mirror&rsquo;s Nosedive episode where everyone&rsquo;s status is determined by a &lsquo;social media score&rsquo;. This systemized legibility of the world is an interpretive and transformational force. In other words, <strong>legibility changes the world we live in</strong><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <p>Having individuals completely own their identities (e.g. <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">SSI</a> and <a href="/thoughts/Verifiable-Credential" rel="noopener" class="internal-link" data-src="/thoughts/Verifiable-Credential">VCs</a>) doesn&rsquo;t solve this either. It might give agency to people to control these representations but the main function of these identities is still <em>to make the bearer legible</em>.</p>
-<p>If we want to flip access control switches back to the users, we need to consider other representations of identity.</p>
+<p>If we want to flip access control back to the users, we need to consider other representations of identity.</p>
 <blockquote>
 <p>Can we build networked software that allows people to be illegible? Or at least self-selectively legible?</p>
 </blockquote>
 <a href="#identity-as-actions"><h2 id="identity-as-actions"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Actions</h2></a>
+<p><img src="/thoughts/images/identity-action.png" width="auto" /></p>
 <p>When I think about what identity ultimately feels useful for, it is to gesture at actions and verbs rather than attributes. My identity perhaps represents how I act, what I have permission to do, how I relate to the world through my actions. Gordon Brander suggests similarly: &ldquo;digital identity should not be about who you are, but what you are authorized to do.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
 <blockquote>
 <p>&ldquo;[Verb-like conceptualizations of identity] consider it to be dynamic, multiple, informational, temporary, contextual. Whereas the noun-like conceptualizations attach actions and interactions to actors, the verb-like recognise that identity is co-emergent with actions and interactions in contexts.&rdquo;</p>
@@ -548,6 +604,7 @@ Jul 16, 2022
 <p>This feels promising. A token that grants access isn&rsquo;t making legible any information that doesn&rsquo;t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer not to link real-world identities to digital ones.</p>
 <p>Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren&rsquo;t human-meaningful. In gaining the option for illegibility, we&rsquo;ve lost any resemblance of a human identity. I want to know that I&rsquo;m talking to my friend Kevin and not just a key like <code>0x8ff6b283368b5f149f1de2005d763243</code> or a phone number like <code>323-594-1604</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <a href="#identity-as-relationships"><h2 id="identity-as-relationships"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Relationships</h2></a>
+<p><img src="/thoughts/images/identity-relationship.png" width="auto" /></p>
 <blockquote>
 <p>Humans also need to communicate securely with other humans, and in so doing, securely designate various objects, including yet other humans. Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.</p>
 </blockquote>
