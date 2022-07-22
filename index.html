@@ -105,13 +105,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f5574d5fdba9a4b3cd81b6f2168f9bab.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1ce8d0c43a9d26884fef6ffc461b6a52.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ec2acd8e961a007a96f337d6e7eb506d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa7217a2bc761878bf427d71601c270c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -257,7 +257,7 @@ if (!doNotTrack) {
                                 <h3><a href="https://jzhao.xyz/posts/relational-identity/">From legibility to identity</a></h3>
                             </div>
                             <p class="meta">
-                            1736 words on 
+                            1787 words on 
 Jul 16, 2022
 
  
@@ -346,7 +346,7 @@ Jun 8, 2022
                                 <h3><a href="https://jzhao.xyz/thoughts/identity/">Identity</a></h3>
                             </div>
                             <p class="meta">
-                                892 words on Jul 19, 2022
+                                962 words on Jul 21, 2022
                             </p>
                             <ul class="tags">
     

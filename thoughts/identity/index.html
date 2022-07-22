@@ -104,13 +104,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f5574d5fdba9a4b3cd81b6f2168f9bab.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1ce8d0c43a9d26884fef6ffc461b6a52.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ec2acd8e961a007a96f337d6e7eb506d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa7217a2bc761878bf427d71601c270c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -470,6 +470,14 @@ See also: <a href="/thoughts/cozy-software" rel="noopener" class="internal-link"
 </li>
 <li>
 <p>digital identity should enable novel interactions, not try to simplify existing ones</p>
+</li>
+<li>
+<p>identity systems rely on the concentration of power in the hands of operators who cannot possibly be fully aligned (financially, socially, or morally) with all of their users—for example, private social media companies with diverse global audiences must often 
+
+<a href="https://blog.twitter.com/en_us/topics/company/2020/suspension" rel="noopener">make decisions</a> about what constitutes an act of unjustified censorship versus an act in the interest of public safety, though they are often ill-equipped to do so.</p>
+<ul>
+<li>from 0xPARC on zk-identity</li>
+</ul>
 </li>
 </ul>
 

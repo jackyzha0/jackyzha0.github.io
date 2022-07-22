@@ -107,13 +107,13 @@ Types of epistemic injustice:
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f5574d5fdba9a4b3cd81b6f2168f9bab.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1ce8d0c43a9d26884fef6ffc461b6a52.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ec2acd8e961a007a96f337d6e7eb506d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa7217a2bc761878bf427d71601c270c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

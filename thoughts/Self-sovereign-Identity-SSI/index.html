@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities
-Identities are required for trust to be established (Party A needs to ensure Party B is actually who they claim to be and vice versa)."
+ &ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders."
   />
   <title>
     Self-sovereign Identity (SSI)
@@ -105,13 +105,13 @@ Identities are required for trust to be established (Party A needs to ensure Par
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f5574d5fdba9a4b3cd81b6f2168f9bab.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1ce8d0c43a9d26884fef6ffc461b6a52.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ec2acd8e961a007a96f337d6e7eb506d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa7217a2bc761878bf427d71601c270c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -369,9 +369,22 @@ Apr 28, 2022
 
 
 <p>Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities</p>
+<blockquote>
+<p>&ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders.&rdquo; (Christopher Allen)</p>
+</blockquote>
 <p>Identities are required for trust to be established (Party A needs to ensure Party B is actually who they claim to be and vice versa).</p>
 <p>In centralized identity paradigms, this is usually done through authorities (e.g. <a href="/thoughts/security#certification-authorities-ca" rel="noopener" class="internal-link" data-src="/thoughts/security">Certification Authorities</a>) who are trusted by both parties.</p>
 <p>In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using public-key cryptography and anchored on some sort of distributed ledger (e.g. <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a>)</p>
+<a href="#why-ssi-matters-to-the-average-citizen"><h2 id="why-ssi-matters-to-the-average-citizen"><span class="hanchor" ariaLabel="Anchor"># </span>Why SSI matters to the average citizen</h2></a>
+<ul>
+<li>Avoid a million accounts to log into
+<ul>
+<li>SSI federates logins to various services and applications</li>
+</ul>
+</li>
+<li>Granular access permissions for content</li>
+<li>Data provenance through signatures, can request takedowns as proving ownership is trivial</li>
+</ul>
 <a href="#critiques-of-ssi"><h2 id="critiques-of-ssi"><span class="hanchor" ariaLabel="Anchor"># </span>Critiques of SSI</h2></a>
 <p>
 
@@ -433,7 +446,7 @@ Apr 28, 2022
       
       
       <li>
-        <a href="/posts/relational-identity/" data-ctx="SSI" data-src="/posts/relational-identity" class="internal-link">From legibility to identity</a>
+        <a href="/posts/relational-identity/" data-ctx="Self-sovereign Identity (SSI)" data-src="/posts/relational-identity" class="internal-link">From legibility to identity</a>
       </li>
       
       
