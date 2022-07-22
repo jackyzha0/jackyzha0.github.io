@@ -32,6 +32,7 @@ This essay seeks to explore alternate abstractions for identity to better resolv
 |Attributes|Video game character, e-shopping account, TikTok|Verifiable Claims, NFTs|
 |Capabilities|IAM (Identity and Access Management)|OAuth Tokens, UCANs|
 |Relationships|Messenger, Whatsapp|???|
+
 *Fig 1: Different models of digital identity.*
 
 What are ways we can lean towards self-sovereign models of identity? How do we give users freedom to choose how legible they are online?
