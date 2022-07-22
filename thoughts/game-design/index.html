@@ -106,13 +106,13 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1ce8d0c43a9d26884fef6ffc461b6a52.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.5ed4f8e19a77bfd5ae5e6b62993a6028.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa7217a2bc761878bf427d71601c270c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.df4dd6d22c009ebd92cacaf89d85f2c2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
