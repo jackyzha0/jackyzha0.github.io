@@ -1,5 +1,5 @@
 ---
-title: "From legibility to identity"
+title: "From Legibility to Identity"
 date: 2022-07-16
 tags:
 - fruit

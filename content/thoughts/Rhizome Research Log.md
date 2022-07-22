@@ -9,12 +9,19 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
-### July 21st
+### July 22nd
+- Finished up the [[posts/relational-identity|identity piece]]! Cent and B from Metagov gave some very good advice and clarifying feedback on the piece.
+	- I think the essay was trying to do too much so I'm going to split out the content and keep all the stuff about agency and legibility in this one.
+	- I want to write another piece eventually about different ways of being online (specifically, collective inter-being vs individualism)
+		- The new atom of identity is not a single entity but a set of relationships. A group chat. A chat that isn’t just a text messaging history but can embed applications and rich worlds on top of it.
+		- Elaborate more on groupchat as an entity
+- I have a bunch of reading piled up this week since I've been doing a lot of writing so I'll focus on getting through some more stuff today and tomorrow.
+
+### July 21st 
 - Polishing up [[posts/relational-identity|identity piece]]. I've worked on it enough that I'm starting to feel ick just touching it but I'm happy that I've thought about this deeply. Implications for Rhizome as a whole:
 	- Self-sovereignty seems useful for agency *if implemented in ways that don't force legibility*
 		- e.g. be careful about [[thoughts/Verifiable Credential|VCs]] without zkSNARKS
 	- Probably will need to think more heavily about how to model a relation history on the dev side of things as people are used to modelling individual users. Perhaps phrasing the basic item as a *group chat* makes sense?
-	- **The new atom of identity is not a single entity but a group chat. A chat that isn’t just a text messaging history but can embed applications and rich worlds on top of it.**
 
 ### July 20th
 - Finally got the piece to a place where it is ready for feedback. B, Shrey, and Saffron took a look and left a bunch of comments which identified plenty of spots where either my reasoning was flawed or just wasn't good.
