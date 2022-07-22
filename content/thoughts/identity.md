@@ -61,9 +61,10 @@ extension of https://subconscious.substack.com/p/soulbinding-like-a-state?s=r&cu
 	- In other words, the dots (the nodes, the people) don’t simply define the joins (the edges, the relationships) as Social Networking 101 might have it. We dot the joins in contextual information exchange just as much as we might be said to join the dots. The joins are the pathways for information exchange and transformation, for organising, and the expansion of organisational identity. Joins give the dots their meaning, their contextual relevance, their identity, just as dots give the information exchange direction and potency. 
 	- not who you are, but what you are authorized to do. So, Keys, not IDs.
 
-
 - identity constantly shifts in real life depending on who you are around
 - we try to approximate this using multiple accounts -> prevent context collapse
 - but identity shouldnt feel like different accounts you hop between different digital platforms
 - identity should be the principles of your experience -> applicable across contexts
 - digital identity should enable novel interactions, not try to simplify existing ones
+- identity systems rely on the concentration of power in the hands of operators who cannot possibly be fully aligned (financially, socially, or morally) with all of their users—for example, private social media companies with diverse global audiences must often [make decisions](https://blog.twitter.com/en_us/topics/company/2020/suspension) about what constitutes an act of unjustified censorship versus an act in the interest of public safety, though they are often ill-equipped to do so.
+	- from 0xPARC on zk-identity

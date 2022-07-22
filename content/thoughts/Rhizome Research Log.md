@@ -9,6 +9,20 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
+### July 21st
+- Polishing up [[posts/relational-identity|identity piece]]. I've worked on it enough that I'm starting to feel ick just touching it but I'm happy that I've thought about this deeply. Implications for Rhizome as a whole:
+	- Self-sovereignty seems useful for agency *if implemented in ways that don't force legibility*
+		- e.g. be careful about [[thoughts/Verifiable Credential|VCs]] without zkSNARKS
+	- Probably will need to think more heavily about how to model a relation history on the dev side of things as people are used to modelling individual users. Perhaps phrasing the basic item as a *group chat* makes sense?
+	- **The new atom of identity is not a single entity but a group chat. A chat that isn’t just a text messaging history but can embed applications and rich worlds on top of it.**
+
+### July 20th
+- Finally got the piece to a place where it is ready for feedback. B, Shrey, and Saffron took a look and left a bunch of comments which identified plenty of spots where either my reasoning was flawed or just wasn't good.
+	- Revision time !! 🙃
+- Feel like I haven't been very proactive in thinking about funder relations.
+	- Found out today that GitHub has a very handy feature to email all of your sponsors!
+	- Will probably draft up a short update email and include a link to the identity piece as soon as it's done.
+
 ### July 19th
 - Slowly reaching a place where I'm happy with the direction of this piece on identity, framing it more around 3 modes of thinking about [[posts/relational-identity|identity]].
 - Got a comment from Zoë Ruha Bell on my essay in Reboot that asked about "the complexities of how moving data between contexts changes its meaning and that individual control over data may not match up well with the relational information encoded in data"

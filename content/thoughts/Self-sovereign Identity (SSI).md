@@ -7,11 +7,19 @@ tags:
 
 Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities
 
+> "Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver's license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders." (Christopher Allen)
+
 Identities are required for trust to be established (Party A needs to ensure Party B is actually who they claim to be and vice versa).
 
 In centralized identity paradigms, this is usually done through authorities (e.g. [[thoughts/security#Certification Authorities CA|Certification Authorities]]) who are trusted by both parties.
 
 In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using public-key cryptography and anchored on some sort of distributed ledger (e.g. [[thoughts/blockchain|blockchain]])
+
+## Why SSI matters to the average citizen
+- Avoid a million accounts to log into
+	- SSI federates logins to various services and applications
+- Granular access permissions for content
+- Data provenance through signatures, can request takedowns as proving ownership is trivial
 
 ## Critiques of SSI
 [Source: Molly White](https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/)
