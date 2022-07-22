@@ -106,13 +106,13 @@ Edmund Husserl: Intersubjectivity is most simply stated as the interchange of th
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.5ed4f8e19a77bfd5ae5e6b62993a6028.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.582e0aac7851453ea8549238f4e01735.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2a3bf584ea9729523d64cb15a6aec898.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6828ab1bcdf940f8ff8277244d6907d7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
