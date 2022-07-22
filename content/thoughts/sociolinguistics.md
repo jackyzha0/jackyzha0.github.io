@@ -1,5 +1,5 @@
 ---
-title: "sociolinguistics"
+title: "Sociolinguistics"
 date: 2022-06-29
 tags:
 - seed

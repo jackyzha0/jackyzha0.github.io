@@ -47,6 +47,8 @@ A DID Document can have arbitrary content. It contains references to "controller
 - In IPID, associating the DID document with a DID is accomplished by cryptographically publishing the [[thoughts/CID|CID]] to the IPNS public key associated with the identity owner (DID method specific identifier). Any updates to the DID document are saved to IPLD and the resulting hash is published to IPNS cryptographically associating the new CID with the DID (for IPID this is the multihash of the public key). IPID uses a PubSub model for realtime updates to the DID.
 	- This is self-attesting and does not facilitate consensus of the document across peers
 	- Sometimes described as the "microledger" approach
+	- Even though IPFS could be used for content addressing there would not be a need to connect to a wider IPFS network.
+		- Not resolvable without hosting (which might actually be good for relational DIDs)
 - More reading in [RWoT 7, 2018](https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/ipld-did.md)
 
 ## DID Method Key

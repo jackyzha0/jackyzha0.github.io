@@ -9,21 +9,19 @@ tags:
 
 Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.
 
-But for engineers building these digital identities, the primary focus is on *legibility*: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the *only* formal international standard for identity, sees identity as a set of attributes to be managed[^1]. 
+But for engineers building these digital identities, the primary focus is on legibility: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed[^1]. 
 
-Legibility on its own is not a bad thing. It’s how Google assembles droves of information on the web so we can search through it easily. It’s how we have transparency into the progress of public projects and initiatives by our governments.
+Legibility on its own is not a bad thing. It’s how Google assembles droves of information on the web so we can search through it easily. It’s how we have transparency into the progress of publicly funded projects and initiatives by our governments.
 
-But this process of legibility becomes dangerous when it is forced upon users. When legibility becomes the lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals[^2]. We emerge in a world that comes straight from Black Mirror's Nosedive episode where everyone’s status is determined by a ‘social media score’. This systemized legibility of the world is an interpretive and transformational force that changes how we perceive others in ways that feel flat and transactional[^3].
+But this process of legibility becomes dangerous when it forcefully shapes users. When legibility becomes the lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals[^2]. This systemized legibility of the world is an interpretive and transformational force that changes how we perceive others[^3].
 
-In the process of legibility, nuance is excluded. Legibility means that ‘only what matters’ and can be quantified is kept; all else is discarded. This is extremely dangerous when that legibility happens without the choice of the users.
+In the process of being made legible, nuance is excluded. Legibility means that ‘only what matters’ and can be quantified is kept; all else is discarded. This is especially dangerous when that legibility happens without the choice of the users.
 
 ![[thoughts/images/forest death.png]]*Illegible natural forest vs legible "scientific" forest (James C. Scott in Gordon Brander)[^4-1]*
 
-Forced legibility may look like a passing or failing grade in a class without an accompanying note explaining how you missed the final because you needed to grieve for the death of a loved one. Forced legibility may look like a conviction charge without the context behind how the officer was racially motivated. When legibility is forced upon people, it only serves to widen the gulf that already exists in society and disproportionately impacts marginalized groups[^2]. This legibility is beneficial for companies and governments seeking to better model users and data, but it doesn’t serve users who seek to govern their own identities and control who accesses their information.
+Forced legibility may look like a set of failing grades on a report card without an accompanying note explaining how you missed finals week because you needed to grieve for the death of a loved one. Forced legibility may look like a conviction charge without the context behind how the officer was racially motivated. Forced legibility may look like having to choose between identifying as a man or a woman on the national census when neither describes you well, erasing their lived experience. When legibility is forced upon people, it only serves to widen the gulf that already exists in society and disproportionately impacts marginalized groups[^2]. This legibility is beneficial for companies and governments seeking to better model user-data, but it doesn’t serve humans who seek to govern their own identities and control who accesses their information.
 
-I want to live in a world where it is possible to have different levels of granularity of information that is made legible for a messaging app versus a government portal versus interacting with my employer. With the way the web is set up currently, these are difficult to separate.
-
-If we want to flip access control back to the users, we need to consider other representations of identity. Clearly, it doesn't make sense to try to make every part of our digital identities legible. **Can we develop alternate systems that provide rich models of identity that allow people to be illegible? Or at least self-selectively legible?**
+If we want to flip access control back to the users, we need to consider other representations of identity. Clearly, it doesn't make sense to try to make every part of our digital identities legible. **Can we develop alternate systems that provide similarly rich models of identity that also allow people to be illegible? Or at least self-selectively legible?**
 
 This essay seeks to explore alternate abstractions for identity to better resolve the identity needs of *all* relevant stakeholders, not just centralized providers. We can categorize digital identity models based on the primary representation of identity along with the locus of control (managed versus self-sovereign).
 
@@ -36,8 +34,6 @@ This essay seeks to explore alternate abstractions for identity to better resolv
 *Fig 1: Different models of digital identity.*
 
 What are ways we can lean towards self-sovereign models of identity? How do we give users freedom to choose how legible they are online?
-
-To do so, let us explore what managed identity even is first.
 
 ## Identity as Attributes
 
@@ -58,7 +54,7 @@ Having individuals completely own their identities (e.g. [[thoughts/Self-soverei
 
 ![[thoughts/images/identity-capability.png]]
 
-When I think about what identity ultimately feels useful for, it is to gesture at *capabilities* rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do."[^5] 
+When I think about what digital identity ultimately feels useful for, it is to gesture at *capabilities* rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do." [^5] 
 
 > "[A model of identity as capabilities] considers it to be dynamic, multiple, informational, temporary, contextual. Whereas the [model of identity as attributes] attach actions and interactions to actors, the [capability model] recognises that identity is co-emergent with actions and interactions in contexts." (AKASHA and Kernel[^6])
 
@@ -66,9 +62,9 @@ From a software perspective, this isn't a new representation of digital identity
 
 > Everything that a user is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format. _([ucan.xyz](https://ucan.xyz/))_
 
-There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using public-key cryptography means that we can prove the same person you issued the access token to is now requesting access without revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
+There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using public-key cryptography means that we can prove the same person you issued the access token to is now requesting access *without* revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
 
-This feels promising. A token that grants access isn’t making legible any information that doesn’t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer to keep real-world identities and digital ones seperate.
+This feels promising. A token that grants access isn’t making legible any information that doesn’t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer to keep real-world identities and digital ones separate.
 
 Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren't human-meaningful. In gaining the option for illegibility, we've lost any resemblance of a human identity. I want to know that I'm talking to my friend Kevin and not just a key like `0x8ff6b283368b5f149f1de2005d763243` or a phone number like `323-594-1604`.
 
@@ -78,19 +74,19 @@ Yet, I think there is still room for improvement here. Identities based off of t
 
 > "Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects."[^7]
 
-You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names. HCI researchers call systems like these [[thoughts/Zooko's Triangle#Petnames|petname systems]].
+You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these [[thoughts/Zooko's Triangle#Petnames|petname systems]].
 
 > For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). *([Backchannel](https://www.inkandswitch.com/backchannel/), Ink & Switch)*
 
-In this way, the petname doesn't just represent the person you are referring to, but also the relationship between the two of you. The *real identity* is neither the phone number nor the petname. Rather, their real identity is the *intersection* of all of the relationships they have with others. Just as we have many 'alt accounts' or 'finstas' that exist to approximate the many facets of our being, we should also embrace the natural tendency for different expressions of ourselves through our many relationships.
+In this way, the petname doesn’t just represent the person you are referring to, but also the relationship between the two of you. The *real identity* is neither the phone number nor the petname. Rather, the real identity is the *intersection* of all of the relationships they have with others. Just as we have many ‘alt accounts’ that exist to approximate the many facets of our being, each identity in this model is specific to each relationship. Even if data gets leaked, it is extremely difficult to trace back to the original author because there is no ‘global’ identity to trace it back to — all of it is contextual.
 
-The key thing in a relational notion of identity is that the relation – the ‘join’ between identities – is a thing in and of itself. It can be described, and it has a history which can be built on top of. This is a relation that is private by default (only between parties involved) and unique (no other relation like this exists).
+The key thing in a relational notion of identity is that the relation – the ‘join’ between identities – is an entity in and of itself. It can be described, and it has a history which can be built on top of. This is a relation that is private by default (only between parties involved) and unique (no other relation like this exists).
 
-**The new atom of identity is not a single entity but a group chat. A chat that isn’t just a text messaging history but can embed applications and rich worlds on top of it.**
+**Perhaps the new atom of identity is not a single entity but a set of relationships: *a group chat.***
 
-Identity may be a difficult thing to model, but it is worth thinking about deeply. Our models for identity will impact how many future generations of internet users are categorized, made legible, and modeled and it makes sense to ensure it best serves the people it represents.
+Identity may be a difficult thing to model, but it is worth thinking about deeply. Our models for identity will impact how many future generations of internet users are categorized and made legible. It makes sense to ensure it best serves the people it represents.
 
-As [[thoughts/peer-to-peer|peer-to-peer]] and [[thoughts/local-first software|local-first]] apps slowly make a resurgence, I hope that optional legibility and agency are values at the forefront of new applications and protocols, enabling users to choose which parts of themselves to make legible and foster connections that feel real and human rather than extractive and limiting.
+As [[thoughts/peer-to-peer|peer-to-peer]], [[thoughts/local-first software|local-first]], and [doorless](https://rosano.hmm.garden/01evv3hq1ak4b6ng1jzppx5n2j) apps slowly make a resurgence, I hope that agency is the value at the forefront of new applications and protocols, enabling users to choose which parts of themselves to make legible.
 
 *Thank you to Anson Yu, B Cavello, Cent Hosten, Saffron Huang, Shrey Jain for reading earlier drafts and providing clarifying feedback.*
 
