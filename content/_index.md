@@ -6,6 +6,7 @@ Welcome to my little [garden](posts/networked-thought.md) on the [internet](thou
 
 Currently, I do [[thoughts/Rhizome Research Log|independent research]] focused on how we can enable [[posts/towards-data-neutrality|data neutrality]] on a web dominated by data moats. In my spare time, I create and [[thoughts/maintenance|maintain]] a number of widely used open-source [projects](thoughts/Projects.md).
 
+<<<<<<< HEAD
 I'm curious about how we can better [incentivize](thoughts/incentives.md) [public goods](thoughts/public%20goods.md) [funding](thoughts/funding.md), support better [interactions](thoughts/interaction%20design.md) with computers and [[thoughts/Rhizome Proposal|data]], and be more responsible stewards of technology.
 
 In this era of my life, I’m working towards being someone who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun).
