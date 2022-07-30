@@ -70,9 +70,9 @@ However, after considering coercion, decentralization becomes much more importan
 #### Collusion Resistance
 > Collusion is "coorindation that we don't like"
 
-[Consensus](thoughts/consensus.md) model relies on **uncoordinated choice model**, the asusmption that the game consists of many small actors that make decisions independently
+[Consensus](thoughts/consensus.md) model relies on **uncoordinated choice model**, the assumption that the game consists of many small actors that make decisions independently
 
-Yet, 90% of the entire Bitcion network's mining power can show up at the same conference (as 7 men). Yet, some coordination is good (e.g. strong community spirit and banding together to implement patches and fix bugs)
+Yet, 90% of the entire Bitcoin network's mining power can show up at the same conference (as 7 men). Yet, some coordination is good (e.g. strong community spirit and banding together to implement patches and fix bugs)
 
 Ways to counteract:
 1. Find a happy medium that allows enough coordination for a protocol to move forward but not enough to enable attacks

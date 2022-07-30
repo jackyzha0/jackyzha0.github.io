@@ -1,8 +1,9 @@
 ---
-title: "From Legibility to Identity"
+title: "On Digital Identity"
 date: 2022-07-16
 tags:
 - fruit
+- rhizome
 ---
 
 *What is identity? Who defines it? Who controls it? What is its relationship to software?*

@@ -11,6 +11,8 @@ tags:
 
 In ActivityPub, a user is represented by "[actors](https://w3c.github.io/activitypub/#actors)" via the user's accounts on servers. User's accounts on different servers correspond to different actors.
 
+Used to be called *OStatus* which was the basis for Mastadon
+
 Based on [ActivityStreams](https://www.w3.org/TR/activitystreams-core/), a social data syntax.
 
 Each actor has:

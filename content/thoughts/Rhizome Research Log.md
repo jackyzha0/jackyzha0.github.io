@@ -9,7 +9,14 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
-### July 22nd
+### July 25th
+- 
+
+### July 24th
+- what parts of the dev stack is this replacing?
+- more thoughts on UCAN
+
+### July 22nd - 23rd
 - Finished up the [[posts/relational-identity|identity piece]]! Cent and B from Metagov gave some very good advice and clarifying feedback on the piece.
 	- I think the essay was trying to do too much so I'm going to split out the content and keep all the stuff about agency and legibility in this one.
 	- I want to write another piece eventually about different ways of being online (specifically, collective inter-being vs individualism)

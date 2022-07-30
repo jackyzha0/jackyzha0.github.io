@@ -19,13 +19,15 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
 * **Where Is My Flying Car?** by J. Storrs Hall
-* [**Games: Agency as Art**](thoughts/games.md) by C Thi Nguyen
+* **Games: Agency as Art** by C. Thi Nguyen
 
 ## Current
 * **Seeing Like A State** by James C. Scott
+* **Weaving the Web** by Tim Berners-Lee
 
 ## Past
 2022
+- **[[The Writing Life]]** by Annie Dillard
 - **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
 - **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
 - **The Book of Form and Emptiness** by Ruth Ozeki
