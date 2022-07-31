@@ -57,7 +57,7 @@ i think tale for the time being has really got me thinking about time and time d
   
   
   
-  <link href="https://jzhao.xyz/styles.ed06f75b12d34d6bd16a49dc1fb3b177.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.20d42b17cb9edb3aa5644847edf23ef1.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -108,13 +108,13 @@ i think tale for the time being has really got me thinking about time and time d
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d7a8c318f0da3efec49529b2261697ba.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39cbe6590641f83c3e66251181628ba2.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2494cd34f13b4f49f57ee62919203f97.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d833958498a94006dcd80d8370056db.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
