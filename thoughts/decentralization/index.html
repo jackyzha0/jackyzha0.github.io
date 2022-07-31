@@ -84,7 +84,7 @@
 
   
   
-  <script src="https://jzhao.xyz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js"></script>
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
   
 
   
@@ -105,13 +105,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.582e0aac7851453ea8549238f4e01735.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d7a8c318f0da3efec49529b2261697ba.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6828ab1bcdf940f8ff8277244d6907d7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.deaf9ea20929caa2f8b3481b1fd2c37d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -447,8 +447,8 @@ Aug 6, 2021
 <a
   href="/thoughts/consensus/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/consensus/">Consensus</a> model relies on <strong>uncoordinated choice model</strong>, the asusmption that the game consists of many small actors that make decisions independently</p>
-<p>Yet, 90% of the entire Bitcion network&rsquo;s mining power can show up at the same conference (as 7 men). Yet, some coordination is good (e.g. strong community spirit and banding together to implement patches and fix bugs)</p>
+  data-src="/thoughts/consensus/">Consensus</a> model relies on <strong>uncoordinated choice model</strong>, the assumption that the game consists of many small actors that make decisions independently</p>
+<p>Yet, 90% of the entire Bitcoin network&rsquo;s mining power can show up at the same conference (as 7 men). Yet, some coordination is good (e.g. strong community spirit and banding together to implement patches and fix bugs)</p>
 <p>Ways to counteract:</p>
 <ol>
 <li>Find a happy medium that allows enough coordination for a protocol to move forward but not enough to enable attacks</li>

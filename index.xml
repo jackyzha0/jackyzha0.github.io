@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Writing Life</title>
+      <link>https://jzhao.xyz/thoughts/The-Writing-Life/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/The-Writing-Life/</guid>
+      <description>By Annie Dillard
+Quotes On throwing away early work:
+ A painting covers its tracks. Painters work from the ground up.</description>
+    </item>
+    
+    <item>
+      <title>NVIM Cheatsheet</title>
+      <link>https://jzhao.xyz/thoughts/NVIM-Cheatsheet/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/NVIM-Cheatsheet/</guid>
+      <description>Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &amp;lt; or { &amp;quot; or &#39; - quoted string    Mappings  &amp;lt;enter&amp;gt; - leave insert mode &amp;lt;leader&amp;gt;o - find files f - hop by 2 chars &amp;lt;ctrl+/&amp;gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &amp;lt;leader&amp;gt;&amp;lt;direction&amp;gt; - move to window in that direction (one of wasd)   Tabs  &amp;lt;alt-&amp;lt;&amp;gt; - previous tab &amp;lt;alt-&amp;gt;&amp;gt; - previous tab &amp;lt;alt-q&amp;gt; - close tab &amp;lt;alt-#&amp;gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &amp;lt;shift&amp;gt;K - show type hint &amp;lt;space&amp;gt;rn - rename   Moving  press m mid operation to select jump point % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2    Git conflicts   </description>
+    </item>
+    
+    <item>
       <title>Tools for Conviviality</title>
       <link>https://jzhao.xyz/thoughts/Tools-for-Conviviality/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
@@ -17,22 +37,22 @@
     </item>
     
     <item>
-      <title>From Legibility to Identity</title>
-      <link>https://jzhao.xyz/posts/relational-identity/</link>
-      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/posts/relational-identity/</guid>
-      <description>What is identity? Who defines it? Who controls it? What is its relationship to software?
-Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines.</description>
-    </item>
-    
-    <item>
       <title>Identity</title>
       <link>https://jzhao.xyz/thoughts/identity/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/identity/</guid>
       <description>On Website Redesigns  There are endless possibilities as to what a website could be. What kind of room is a website?</description>
+    </item>
+    
+    <item>
+      <title>On Digital Identity</title>
+      <link>https://jzhao.xyz/posts/relational-identity/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/relational-identity/</guid>
+      <description>What is identity? Who defines it? Who controls it? What is its relationship to software?
+Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines.</description>
     </item>
     
     <item>
@@ -2844,9 +2864,7 @@ Reflections I did not think I would ever be this excited about meeting people at
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/tools-for-thought/</guid>
-      <description>Related: Extended Mind Hypothesis, Networked thought, interaction design
-Questions:
- How can we create tools that aid our thinking? As an extension, how do we organize the abundance of information we have today so that it is both accessible and useful?</description>
+      <description>&amp;ldquo;When designing new tools for thought, let’s think not just in terms of features, but materials – what software laws of physics do we want embodiments of our thoughts to obey?</description>
     </item>
     
     <item>
@@ -4326,7 +4344,7 @@ I’ll try to keep these in a rough 3-2-1 fashion in each issue, with 3 things I
       <pubDate>Fri, 21 Aug 2020 14:02:48 -0700</pubDate>
       
       <guid>https://jzhao.xyz/posts/a-failure-resume/</guid>
-      <description>Imposter Syndrome has been hitting really hard lately. Sometimes, it makes me feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now.</description>
+      <description>Sometimes, I feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now.</description>
     </item>
     
     <item>

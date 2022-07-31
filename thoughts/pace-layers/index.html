@@ -85,7 +85,7 @@ See: [[thoughts/Mangrove Theory of the Internet|Mangrove Theory of the Internet]
 
   
   
-  <script src="https://jzhao.xyz/js/clipboard.25155053855f45fdc48fd92540bcebc9.min.js"></script>
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
   
 
   
@@ -106,13 +106,13 @@ See: [[thoughts/Mangrove Theory of the Internet|Mangrove Theory of the Internet]
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.582e0aac7851453ea8549238f4e01735.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d7a8c318f0da3efec49529b2261697ba.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6828ab1bcdf940f8ff8277244d6907d7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.deaf9ea20929caa2f8b3481b1fd2c37d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
