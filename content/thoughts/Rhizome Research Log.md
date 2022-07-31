@@ -13,6 +13,13 @@ I think research logs tend to generally focus too much on what one did rather th
 - I think I'm going to take a gap semester from September to December to give myself the time to finish the research to a level I'd be happy presenting to Protocol Labs at the end of the year.
 	- Never thought I'd *actually* take a gap semester but here I am... looks like I might graduate late now LOL
 - I want to spend some time thinking about how to create effective learning and research communities. I know that since I started working in the public hackerspace at Incepto, my productivity has gone up something like 5x. How do I *geographically* surround myself with people that constantly inspire me to work on ambitious things?
+- On a whim, read this awesome [Patreon post](https://www.patreon.com/posts/ratcheting-in-47976114) by Andy Matuschak
+	- *Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in _The New ABCs of Research_. He calls it the “two parents, three children” pattern.*
+	  ![[thoughts/images/research project pattern.png|500]]
+	  - I've been thinking more about how research seems to come in two layers
+		  1. The ideas
+		  2. The language in which it is expressed
+	  - Majority of my time has been on refining 1. so that 2. may come easier, but perhaps both should be worked on in concert. 
 
 ### July 24th - 29th
 - Roadtrip! Had a really fun roadtrip with Anson, Joss, and Jaclyn from SF to LA. Stopped at a million beaches, observed some stunning sunsets, surfed for the first time, ate great food, and sang lots of songs. Learned about 'Surfboard' by Cody Simpson which was the trip themesong.

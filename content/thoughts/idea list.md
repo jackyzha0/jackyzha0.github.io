@@ -6,6 +6,11 @@ tags:
 - technical
 ---
 
+- [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
+	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
+	- turning a graph traversal into a beautiful essay
+- todo app where items are objects whose scale corresponds to urgency
+	- helps focus on clearing things out, satisfying to see it 'clear out'
 - a text experience where latency increases as more texts are sent
 - what does entropy + erosion of data look like
 	- is they ways to make cryptography that are valid in time windows?
@@ -33,7 +38,6 @@ tags:
 		- https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings
 		- https://github.com/ryankiros/skip-thoughts
 		- https://github.com/pytorch/fairseq/tree/main/examples/data2vec
-- phone as wiimote
 - hand position to gesture toolkit
 -   baba is you but for browser interactions
 	-   data plane is main source of truth
@@ -55,17 +59,7 @@ tags:
 	- distributed state
 - tools for thought applied to IDEs?
 	- IDEs as graph editors?
--   LRU blockchain
-	-   RBAC blockchain???
-	-   groups of roles
-	-   mutability in a window
-	-   permanence outside of it
-	-   edit only the last message you send
 -  website inspo
-	- hand-drawn vibe
-	- have a featured/favourites section to help people find stuff
-	- no more ascii art perhaps
-	- really like the aesthetics in https://www.themarginalian.org/2022/05/28/arthur-zajonc-catching-the-light/?curius=1294
 	- fun interactions
 		- https://victoiredouy.com/about
 		- http://www.narrowdesign.com/
@@ -93,15 +87,11 @@ tags:
 -   location-based ephemeral social groups with zero-knowledge proofs on location
     -   each location/city has a chat group which has a compound hash of all people in that location, derive only a boolean of whether a person is in a city or not without revealing exact location
     -   when a person leaves/arrives at a city, city hash is updated
--   [p2p](thoughts/peer-to-peer.md) reddit w custom chain crawlers and the ability to bake keys into content
--   autocomplete for rendered latex with a computer algebra system
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
-- Discord bot for interacting with DAOs
 - sound-based hashing for cryptographic verification
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
 * web3 action-space exploration
-	* Possible referents/verses extension?
 	- chain crawlers indexing smart contracts → creating logical relations
 	- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
 	- suggesting what you can do with existing resources in your wallet
@@ -152,12 +142,7 @@ tags:
 	* recreating [communal living spaces](/thoughts/communities) in digital space
 	* [ephemerality](thoughts/ephemereal%20content.md) and [digital permanence](thoughts/digital%20permanence.md)
 - tabfs but for emails
-	* [](https://bazil.org/fuse/)[https://bazil.org/fuse/](https://bazil.org/fuse/)
-	- [](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)[https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
+	* [https://bazil.org/fuse/](https://bazil.org/fuse/)
+	- [https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
 	-   listen on any email server
-	-   cli based for configuring backend
-	    -   or just yaml
-	-   react/electron frontend
-	    -   ability to add plugins
-	        -   modular by design, creating [workflows](thoughts/workflows.md)
 -  deep foveal VR rendering

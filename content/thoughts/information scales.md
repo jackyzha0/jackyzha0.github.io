@@ -9,3 +9,10 @@ Creating a browsable store of knowledge that provides something useful at all di
 - can we create skimmable views on data? see https://twitter.com/kirkbyo_/status/1475523898238197771
 
 Create a spatially-anchored overview of the different 'branches' of knowledge
+
+## Engelbart Zoom
+*[Engelbart on HyperScope](https://dougengelbart.org/content/view/154/86/)*
+
+*Hyperscope is a browsing tool that enables most of the viewing and navigating features called for in Doug Engelbart's _open hyperdocument system_ framework ([OHS](https://www.dougengelbart.org/about/ohs.html)) to support _dynamic knowledge repositories_*
+
+![[thoughts/images/hyperscope.png|300]]

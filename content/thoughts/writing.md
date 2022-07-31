@@ -13,6 +13,8 @@ Writing as crystallized thought, a way of expressing the labyrinth of interconne
 
 It is a form of [[thoughts/bandwidth#Lossiness as Mutation|lossiness as mutation]], a way to re-interpret and adapt the thoughts into a new form -- to breathe it new life. Whether [[posts/networked-thought|networked]] or linear, molding it into new forms through [[thoughts/language|language]] and [[thoughts/terminology|terminology]] can give it a new perspective. A mental unflattening.
 
+> What I am doing right now, writing this essay, is, technically, a linear walk through the network of my ideas. That is what writing is: turning a net into a line. (Henrik Karlsson, [Reader-generated Essays](https://www.lesswrong.com/posts/ZtMsyMP5F7zzP8Gvc/reader-generated-essays))
+
 It is the form almost universally understood by all, a sort of [[thoughts/contact language|contact language]] that enables people from vastly different backgrounds and [[thoughts/context|contexts]] to build [[thoughts/fiction#Fiction as shared visions|shared fictions]].
 
 It is the contribution of the radical intellectual, a sort of gift and offering. From David Graeber, ‘Fragments of an Anarchist Anthropology’:
