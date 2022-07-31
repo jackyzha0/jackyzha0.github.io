@@ -16,7 +16,7 @@ Play: the intentional activity of doing the thing you would want to do.
 In a world were we seem to be locked behind these little rectangles, how can we escape? Embedded computing experiments like DynamicLand by Bret Victor (more in [interaction design](thoughts/interaction%20design.md))
 
 ## Creating spaces not products
-"Creating a space for change does not necessarily mean you're doing it yourself; you're just making it possible for others." (a lot of similar ideas in [Design Justice](thoughts/Design%20Justice.md) and [a new DARPA](thoughts/new%20DARPA.md))
+"Creating a space for change does not necessarily mean you're doing it yourself; you're just making it possible for others." (a lot of similar ideas in [Design Justice](thoughts/Design%20Justice.md) and [a new DARPA](thoughts/research%20institutions.md))
 
 ## Shifting the nature of work/education
 Can we shift education system away from just assessing students to letting them explore the magical worlds themselves? A more [Mindstorms](thoughts/Mindstorms.md)-esque [constructionist](thoughts/constructionist.md) view on education.

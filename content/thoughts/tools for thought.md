@@ -84,3 +84,10 @@ Can we embed computation into our notes? Create APIs out of our thoughts and con
 Memory work of this sort is also a form of activism. Whose memories are saved and retold to future generations?
 
 After a conversation, all parties maintain ownership of what transpired, and they continue to hold ties to one another. This form of storytelling is not predetermined, but develops through its unfolding.
+
+## Mediums versus Tools
+Linus Lee on [Browsers as Tools of Thought](https://thesephist.com/posts/browser/)
+
+> A tool is something that takes an existing workflow, and makes it more efficient. A nail is an efficient way of holding pieces of wood together; a to-do app is an efficient way of remembering your responsibilities. A medium, on the other hand, gives us new agency or power by which we can do something we couldn’t do before.
+
+**The best mediums are instead collections of generic, multi-purpose _components_ that mesh together well**

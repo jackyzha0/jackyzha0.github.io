@@ -18,6 +18,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - Roadtrip! Had a really fun roadtrip with Anson, Joss, and Jaclyn from SF to LA. Stopped at a million beaches, observed some stunning sunsets, surfed for the first time, ate great food, and sang lots of songs. Learned about 'Surfboard' by Cody Simpson which was the trip themesong.
 - On July 25th, I heard back from Protocol Labs and got my first large grant for 20k for the next 4 months!!! 
 	- I think this support will mean a lot for the project. Protocol Labs is incredibly values aligned and they have some of the brightest minds thinking about similar problems. Even just being in an environment where I know I can expect feedback from these people (not to mention financial support) feels like a major milestone
+	- I really loved how they have an RFP-000 which is an 'open-call' for research that may not fall any other current category
 	- They are strongly encourage I have more 'traditional' research outputs, which I think makes a lot of sense! This will give me more exposure to the more 'academic' side of research as
 		- An open-access paper or brief technical report (e.g. submitted to arXiv)
 	    - An open-source code library with good documentation

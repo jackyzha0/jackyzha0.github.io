@@ -22,7 +22,7 @@ My guess is that the research community tends to reward narratives that increase
 ## Incentive Structure
 Academia feels more pure, more [playful](thoughts/play.md), than academia? More of a '[constructionist](thoughts/constructionist.md)' approach, freedom to ask your own questions
 
-Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [new DARPA](thoughts/new%20DARPA.md) perhaps?
+Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [research institutions](thoughts/research%20institutions.md) perhaps?
 
 More on [incentives](thoughts/incentives.md)
 

@@ -101,6 +101,8 @@
   & > .bio {
     display: flex;
     gap: 1.5em;
+    z-index: 1;
+    position: relative;
 
     @media screen and (max-width: 1440px) {
       flex-direction: column-reverse !important;
@@ -221,10 +223,11 @@ hr {
   color: var(--gray);
   text-align: center;
   width: 40%;
-  z-index: -1;
+  z-index: -999;
   border-color: var(--gray);
   &:after {
     content: "* * *";
+    z-index: -999;
     display: inline-block;
     margin: -1em 0 0.5em;
     font-size: 1.5em;

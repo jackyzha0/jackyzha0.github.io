@@ -15,7 +15,7 @@ Progress isn't equal, it's multiplicative. It's "a mixed blessing—one that res
 
 There are no 'thought leaders' in bleeding tech, only in established fields. Everyone at the edge of a field is a 'pioneer' in a sense. 
 
-After a subject gets established, how do we continue to make progress through research? [A new DARPA](thoughts/new%20DARPA.md) perhaps?
+After a subject gets established, how do we continue to make progress through research? [A new DARPA](thoughts/research%20institutions.md) perhaps?
 
 ## History of Progress
 https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/
@@ -44,7 +44,7 @@ From a more epistemlogical standpoint, how much of progress just comes down to g
 2. networks (re: [social graphs](thoughts/social%20graphs.md))
 3. chance and circumstance
 
-"Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably." -> [a new DARPA](thoughts/new%20DARPA.md) to catalyze progress?
+"Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably." -> [a new DARPA](thoughts/research%20institutions.md) to catalyze progress?
 
 Jasmine has a really good [potential curriculum outline](https://jasminew.me/post/progress):
 1. History and causes: How do we make progress?
