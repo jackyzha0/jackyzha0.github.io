@@ -9,12 +9,23 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## July
-### July 25th
-- 
+### July 30th
+- I think I'm going to take a gap semester from September to December to give myself the time to finish the research to a level I'd be happy presenting to Protocol Labs at the end of the year.
+	- Never thought I'd *actually* take a gap semester but here I am... looks like I might graduate late now LOL
+- I want to spend some time thinking about how to create effective learning and research communities. I know that since I started working in the public hackerspace at Incepto, my productivity has gone up something like 5x. How do I *geographically* surround myself with people that constantly inspire me to work on ambitious things?
 
-### July 24th
-- what parts of the dev stack is this replacing?
-- more thoughts on UCAN
+### July 24th - 29th
+- Roadtrip! Had a really fun roadtrip with Anson, Joss, and Jaclyn from SF to LA. Stopped at a million beaches, observed some stunning sunsets, surfed for the first time, ate great food, and sang lots of songs. Learned about 'Surfboard' by Cody Simpson which was the trip themesong.
+- On July 25th, I heard back from Protocol Labs and got my first large grant for 20k for the next 4 months!!! 
+	- I think this support will mean a lot for the project. Protocol Labs is incredibly values aligned and they have some of the brightest minds thinking about similar problems. Even just being in an environment where I know I can expect feedback from these people (not to mention financial support) feels like a major milestone
+	- They are strongly encourage I have more 'traditional' research outputs, which I think makes a lot of sense! This will give me more exposure to the more 'academic' side of research as
+		- An open-access paper or brief technical report (e.g. submitted to arXiv)
+	    - An open-source code library with good documentation
+	    - A recorded, shareable presentation of the work, preferably as part of our research talk series (!! this is really exciting).
+	    - A blog post describing the impact of your work to be featured it their [research blog](https://research.protocol.ai/posts/).
+	- I especially love how the grant is 'no-strings attached'. I think this really incentivizes honest behaviour and reporting of *true outcomes* rather than encouraging fabricated results or demos to get funding.
+		- "**Unsuccessful projects**. Our interest is in accelerating science for the benefit of all. Naturally, over time we will be more likely to fund proposals from active and effective members of our community.  However, we understand the complexities of research and do not revoke payment if the work changes course, is unsuccessful, or reaches a dead end. We value great results but also understand the value of exploration and impossibility results."
+- My passport is about to expire so I will need to be in Canada for fall :(
 
 ### July 22nd - 23rd
 - Finished up the [[posts/relational-identity|identity piece]]! Cent and B from Metagov gave some very good advice and clarifying feedback on the piece.

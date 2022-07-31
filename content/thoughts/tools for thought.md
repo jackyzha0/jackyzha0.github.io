@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+> "When designing new tools for thought, let’s think not just in terms of features, but materials – _what software laws of physics do we want embodiments of our thoughts to obey?_"
+
 Related: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)
 
 Questions:
