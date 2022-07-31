@@ -109,13 +109,13 @@ Creating modular tools for users to build their own workflows and interactions
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39cbe6590641f83c3e66251181628ba2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c881b28837b4dc8906272f722c508dd2.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d833958498a94006dcd80d8370056db.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b6f6a718bcad2a3c4a2c005f9a570c22.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -402,10 +402,6 @@ Jul 25, 2021
     
       
       
-      
-    
-      
-      
       <li>
         <a href="/newsletters/issue-3/" data-ctx="building tools around workflows" data-src="/newsletters/issue-3" class="internal-link">Sun sneezing, infrastructure moderation, and why bikes are better than tricycles</a>
       </li>
@@ -414,12 +410,6 @@ Jul 25, 2021
       
       <li>
         <a href="/thoughts/desktop-metaphor/" data-ctx="workflows" data-src="/thoughts/desktop-metaphor" class="internal-link">Desktop Metaphor</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/idea-list/" data-ctx="workflows" data-src="/thoughts/idea-list" class="internal-link">Project Idea List</a>
       </li>
       
       

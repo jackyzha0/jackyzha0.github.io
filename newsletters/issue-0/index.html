@@ -108,13 +108,13 @@ I’ll try to keep these in a rough 3-2-1 fashion in each issue, with 3 things I
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39cbe6590641f83c3e66251181628ba2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c881b28837b4dc8906272f722c508dd2.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6d833958498a94006dcd80d8370056db.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b6f6a718bcad2a3c4a2c005f9a570c22.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
