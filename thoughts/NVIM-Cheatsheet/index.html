@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string    Mappings  &lt;enter&gt; - leave insert mode &lt;leader&gt;o - find files f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  press m mid operation to select jump point % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2    Git conflicts   "
+    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string    Mappings  &lt;enter&gt; - leave insert mode &lt;leader&gt;o - find files &lt;leader&gt;g - live grep ff - format file f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  press m mid operation to select jump point % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  co - choose ours ct - choose theirs cb - choose both c0 - choose none ]x - move to previous conflict [x - move to next conflict    "
   />
   <title>
     NVIM Cheatsheet
@@ -63,7 +63,15 @@
 
    
   
+  
+  
+  
   <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.59b5eb848f398a9b2cf864a089780673.min.js"></script>
+  
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
@@ -107,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c881b28837b4dc8906272f722c508dd2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4f30012db78b9c72c4f247eabc063054.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b6f6a718bcad2a3c4a2c005f9a570c22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.43bb4f28a7027be602fc61892834050b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -205,15 +213,18 @@ if (!doNotTrack) {
 
 <body>
 <div id="search-container">
-    <div id="search-space">
-        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
-        <div id="results-container">
-        </div>
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something...">
+    <div id="results-container">
     </div>
+  </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script defer src="https://jzhao.xyz/js/search.c33eed1d4f4e062c5794c5afb8786e3e.min.js"></script>
+
+<script defer src="https://jzhao.xyz/js/semantic-search.41e7b9cc83edc47db32353de41b4b2f4.min.js"></script>
+
+
 
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
@@ -256,6 +267,8 @@ Jul 24, 2022
 
  
           
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/thoughts/NVIM%20Cheatsheet.md" rel="noopener">Edit Source</a>
+
 
       </p>
       <ul class="tags">
@@ -311,6 +324,8 @@ Jul 24, 2022
 <ul>
 <li><code>&lt;enter&gt;</code> - leave insert mode</li>
 <li><code>&lt;leader&gt;o</code> - find files</li>
+<li><code>&lt;leader&gt;g</code> - live grep</li>
+<li><code>ff</code> - format file</li>
 <li><code>f</code> - hop by 2 chars</li>
 <li><code>&lt;ctrl+/&gt;</code> - comment line or block</li>
 <li>Window Navigation
@@ -350,8 +365,15 @@ Jul 24, 2022
 <li><code>cs[char1][char2]</code> - change surrounding <code>char1</code> to <code>char2</code></li>
 </ul>
 </li>
-<li>
-<a href="#git-conflicts"><h2 id="git-conflicts"><span class="hanchor" ariaLabel="Anchor"># </span>Git conflicts</h2></a>
+<li>Git conflicts
+<ul>
+<li><code>co</code> - choose ours</li>
+<li><code>ct</code> - choose theirs</li>
+<li><code>cb</code> - choose both</li>
+<li><code>c0</code> - choose none</li>
+<li><code>]x</code> - move to previous conflict</li>
+<li><code>[x</code> - move to next conflict</li>
+</ul>
 </li>
 </ul>
 
