@@ -20,6 +20,8 @@ tags:
 ## Mappings
 - `<enter>` - leave insert mode
 - `<leader>o` - find files
+- `<leader>g` - live grep
+- `ff` - format file
 - `f` - hop by 2 chars
 - `<ctrl+/>` - comment line or block
 - Window Navigation
@@ -45,4 +47,9 @@ tags:
 	- `ds[text-object][char]` - delete surrounding `char`
 	- `cs[char1][char2]` - change surrounding `char1` to `char2`
 - Git conflicts
-	- 
+	- `co` - choose ours
+	- `ct` - choose theirs
+	- `cb` - choose both
+	- `c0` - choose none
+	- `]x` - move to previous conflict
+	-  `[x` - move to next conflict

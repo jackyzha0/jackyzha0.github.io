@@ -10,8 +10,10 @@ enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
-enableGitHubEdit: false
+enableGitHubEdit: true
 GitHubLink: https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content
+enableSemanticSearch: true
+operandApiKey: "62ff9f9c-5230-4693-9a74-905b2a051460"
 description:
   Welcome to my little island on the internet – I’m Jacky!
   I’m curious about how we can better incentivize public goods funding, support better interactions with computers, and be more responsible stewards of technology.

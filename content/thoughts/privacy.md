@@ -35,3 +35,14 @@ Note that this will only work for larger datasets as injecting noise into a smal
 ### Usage
 - Apple for error reporting
 - Google for malware reports and traffic reports in Maps
+
+## Contextual Privacy
+Helene Nissenbaum’s ‘contextual privacy’
+
+An example she draws in her work is imagining your interactions with your physician when dealing with a medical issue. Even in a world where the right to live as a stranger among strangers reigns supreme, we unquestioningly turn over the most intimate medical details to people we barely know. 
+
+Now, let’s imagine you leave your doctor’s office and fire up Instagram to take your mind off the diagnosis he just gave you, which is that you don’t have brain cancer but you simply suffer from chronic migraines and will just have to deal. Scrolling past pictures of friends and celebrities, you see an advertisement for a migraine medication, specifically for the vestibular migraines you suffer from. While two seconds ago you were willing to send images of your brain across the world for medical advice, you now feel horribly violated knowing that everyone from Facebook to a pharma marketing team know about your condition.
+
+**The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.**
+
+## GDPR

@@ -11,7 +11,7 @@ Much like how we look up sites on the internet using URIs, we can look for speci
 
 Under the hood, IPFS uses
 - libp2p: network layer, takes care of host addressing, content and peer discovery, and structures like DHTs and pubsub
-- IPLD: data layer, standards and formats to build Merkle-DAG structures (quasi-filesystem)
+- IPLD: data layer, standards and formats to build [[thoughts/Merkle-DAG|Merkle-DAG]] structures (quasi-filesystem)
 - Multiformats: formatting structures for self-describing values
 
 Publishing content

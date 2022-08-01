@@ -225,7 +225,7 @@ I think research logs tend to generally focus too much on what one did rather th
 ### June 24th 
 - Reading about [[thoughts/Hyper Hyper Space|Hyper Hyper Space]], doesn't seem to place a big deal of emphasis on finality which seems important for a large chunk of applications.
 - Open questions:
-	- Append-only log or append-only Merkle-DAG? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
+	- Append-only log or append-only [[thoughts/Merkle-DAG|Merkle-DAG]]? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
 
 ### June 20th - 23rd
 - Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio) and 
