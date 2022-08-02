@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,6 +330,30 @@ Jun 7, 2022
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -419,7 +443,7 @@ Jun 7, 2022
 </blockquote>
 <p>Pushing for universalization at the data level: just as any website can be viewed on any browser and any internet provider, any data should be accessible by any application under people&rsquo;s control.</p>
 <p>Existing large owners of data wont innovate because they have monopoly over data, new innovators cant enter because they lack data</p>
-<p>GDPR technically does all of this, Solid is just technology that ensure it actually happens.</p>
+<p><a href="/thoughts/GDPR" rel="noopener" class="internal-link" data-src="/thoughts/GDPR">GDPR</a> technically does all of this, Solid is just technology that ensure it actually happens.</p>
 <p>Solid is essentially a glue between HTTP, <a href="/thoughts/LDP" rel="noopener" class="internal-link" data-src="/thoughts/LDP">LDP</a>, and LDN</p>
 <a href="#pods"><h2 id="pods"><span class="hanchor" ariaLabel="Anchor"># </span>Pods</h2></a>
 <ul>

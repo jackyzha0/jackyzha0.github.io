@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -344,6 +344,23 @@ Jun 8, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/cascading-failures/">Cascading failures</a></h3>
+                            </div>
+                            <p class="meta">
+                                585 words on Aug 2, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/GDPR/">GDPR</a></h3>
                             </div>
                             <p class="meta">
@@ -358,25 +375,8 @@ Jun 8, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Network-Theory/">Network Theory</a></h3>
-                            </div>
-                            <p class="meta">
-                                417 words on Aug 1, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 420 more →</a>
+                <a href="/thoughts">See 421 more →</a>
             </div>
         </div>
         <article>

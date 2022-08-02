@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -292,6 +292,28 @@ Aug 17, 2021
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -562,7 +584,7 @@ Aug 17, 2021
 
 <a href="https://d4bl.org/" rel="noopener">Data for Black Lives</a>)</li>
 <li>We may not always be able to prevent &lsquo;data harvesting&rsquo;, and it sometimes might not all be bad! How do we fairly represent everyone?</li>
-<li>How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. GDPR?)</li>
+<li>How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. <a href="/thoughts/GDPR" rel="noopener" class="internal-link" data-src="/thoughts/GDPR">GDPR</a>?)</li>
 </ul>
 </li>
 <li>Would smart cities be any different if they prioritized the citizens and participation at the get-go rather than as an after-thought

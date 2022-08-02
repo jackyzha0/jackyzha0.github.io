@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -380,6 +380,50 @@ Jun 23, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -406,7 +450,7 @@ Jun 23, 2021
 <a
   href="/thoughts/game-theory/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/game-theory/">game theory</a>, <a class="internal-link broken">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a></p>
+  data-src="/thoughts/game-theory/">game theory</a>, <a class="internal-link broken">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a>, <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a></p>
 <a href="#byzantine-faults"><h2 id="byzantine-faults"><span class="hanchor" ariaLabel="Anchor"># </span>Byzantine Faults</h2></a>
 <p>Sources: 
 
@@ -432,6 +476,29 @@ Jun 23, 2021
 <a href="#byzantine-generals-problem"><h3 id="byzantine-generals-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Byzantine Generals Problem</h3></a>
 <p>This situation can be expressed abstractly in terms of a group of generals of the Byzantine army camped with their troops around an enemy city. Communicating only by messenger, the generals must agree upon a common battle plan. However, one or more of them may be traitors who will try to confuse the others. The problem is to find an algorithm to ensure that the loyal generals will reach agreement.</p>
 <p>It is shown that, using only oral messages, this problem is solvable if and only if more than two-thirds of the generals are loyal; so a single traitor can confound two loyal generals. With unforgeable written messages, the problem is solvable for any number of generals and possible traitors.</p>
+<a href="#designing-robust-networks"><h2 id="designing-robust-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Designing Robust Networks</h2></a>
+<p>See also: <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">Network theory</a></p>
+<p>Designing networks that are simultaneously robust to attacks <em>and</em> random failures appears to be a conflicting desire</p>
+<ul>
+<li>The hub-and-spoke network is robust to random failures, as only the failure of its central node can break the network into isolated components, but a single targeted attack can fragment the network.</li>
+<li>A completely random network lacks hubs, the impact of an attack is similar to the impact of random node removal &ndash; both are equally bad and can easily fragment a network.</li>
+</ul>
+<p>To maximize robustness, we want to maximize the &lsquo;breakdown&rsquo; or critical threshold: $f_c^{tot} = f_c^{rand} + f_c^{targ}$</p>
+<p>This is maximized by having a bimodal degree distribution where an $r$ fraction of nodes have degree $k_{max}$ and the remaining $1-r$ fraction have degree $k_{min}$</p>
+<a href="#halting-cascading-failures"><h3 id="halting-cascading-failures"><span class="hanchor" ariaLabel="Anchor"># </span>Halting Cascading Failures</h3></a>
+<p>Two approaches come to mind</p>
+<ol>
+<li>Adding new links to increase connectivity and thus $f_c$. However, in most real systems the time needed to establish a new link is much larger than the timescale of a cascading failure.</li>
+<li>Removing redundant links and nodes. The size of a cascade can be reduced if we intentionally remove additional nodes right after the initial failure (i), but before the failure could propagate.</li>
+</ol>
+<p>The mechanism of 2. is similar to the method used by firefighters, who set a controlled fire in the fireline to consume the fuel in the path of a wildfire. In a counterintuitive fashion, controlled damage can be beneficial to a network: the Lazarus Effect</p>
+<p>The growth rate of a bacteria is determined by its ability to generate biomass, the molecules it needs to build its cell wall, DNA and other cellular components. If some key genes are missing, the bacteria is unable to generate the necessary biomass. Scientists can <em>revive</em> these dead bacteria by removing five additional genes.</p>
+<a href="#robustness-vs-resilience-vs-redundancy"><h3 id="robustness-vs-resilience-vs-redundancy"><span class="hanchor" ariaLabel="Anchor"># </span>Robustness vs Resilience vs Redundancy</h3></a>
+<ul>
+<li>Robustness: able to maintain basic functions in the presence of internal and external errors (static).</li>
+<li>Resilience: able to adapt to internal and external errors by changing its mode of operation to maintain its ability to function (dynamic).</li>
+<li>Redundancy: presence of parallel components and functions that can replace missing components or functions.</li>
+</ul>
 
 
     </article>

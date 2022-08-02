@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$
-Power Laws and Scale-Free Networks From the Network Science Book"
+    content="Whenever nature seeks robustness, it resorts to networks.
+ The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$"
   />
   <title>
     Network Theory
@@ -116,13 +116,13 @@ Power Laws and Scale-Free Networks From the Network Science Book"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -361,6 +361,55 @@ Aug 1, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
 
 
 
@@ -368,6 +417,10 @@ Aug 1, 2022
 
 
 
+
+<blockquote>
+<p>Whenever nature seeks robustness, it resorts to networks.</p>
+</blockquote>
 <p>The <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">internet</a> played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$</p>
 <a href="#power-laws-and-scale-free-networks"><h2 id="power-laws-and-scale-free-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Power Laws and Scale-Free Networks</h2></a>
 <p>From the 
@@ -404,6 +457,17 @@ const &amp; \gamma = 2 \\\ln \ln N &amp; 2 &lt; \gamma &lt; 3 \\\frac{\ln N}{\ln
 <li>$\gamma &gt; 3$: Small-world and random networks. Extremely unlikely to have large hubs, traversal time is on the order of $\ln N$</li>
 </ol>
 <p><img src="/thoughts/images/distances in networks.png" width="auto" /></p>
+<a href="#network-robustness"><h2 id="network-robustness"><span class="hanchor" ariaLabel="Anchor"># </span>Network Robustness</h2></a>
+<a href="#percolation-theory"><h3 id="percolation-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Percolation Theory</h3></a>
+<p>How many nodes do we have to delete to fragment a network into isolated components, assuming deletion is random?</p>
+<p>We can model network breakdown as inverse percolation.</p>
+<p>Thinking about this using the metaphor of forest fires helps to imagine what these variables mean. If we randomly ignite a tree, what fraction of the forest burns down? How long it takes the fire to burn out?</p>
+<p>As a forest is roughly similar to a random network, the answer depends on the tree density, controlled by the parameter $p$. For small $p$ the forest consists of many small islands of trees ($p = 0.55$), hence igniting any tree will at most burn down one of these small islands. Consequently, the fire will die out quickly. For large $p$ most trees belong to a single large cluster, hence the fire rapidly sweeps through the dense forest ($p = 0.62$). But there also exists a critical $p_c$ at which it takes extremely long time for the fire to end.</p>
+<p>However, this breaks down once we consider scale-free networks. Scale-free networks observe unusual robustness to failure: we must remove all of its nodes to have likely destroyed its giant component.</p>
+<p><img src="/thoughts/images/robustness of scale-free networks.png" width="auto" /></p>
+<a href="#under-attack"><h3 id="under-attack"><span class="hanchor" ariaLabel="Anchor"># </span>Under Attack</h3></a>
+<p>The removal of a small fraction of the hubs is sufficient to break a scale-free network into tiny clusters. See more on <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a> in networks</p>
+<p><img src="/thoughts/images/scale-free under attack.png" width="auto" /><em>The probability that a node belongs to the largest connected component in a scale-free network under attack (purple) and under random failures (green).</em></p>
 
 
     </article>
@@ -421,10 +485,20 @@ const &amp; \gamma = 2 \\\ln \ln N &amp; 2 &lt; \gamma &lt; 3 \\\frac{\ln N}{\ln
     
     
     
-    <li>
-        No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/fault-tolerance/" data-ctx="Network theory" data-src="/thoughts/fault-tolerance" class="internal-link">Fault Tolerance</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

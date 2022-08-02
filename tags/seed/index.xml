@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cascading failures</title>
+      <link>https://jzhao.xyz/thoughts/cascading-failures/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/cascading-failures/</guid>
+      <description>Effect can be approximated using a power law distribution
+$$p(s) \sim s^{-\alpha}$$
+where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.</description>
+    </item>
+    
+    <item>
       <title>GDPR</title>
       <link>https://jzhao.xyz/thoughts/GDPR/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
@@ -23,8 +34,8 @@ Two foundational concepts in GDPR:
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Network-Theory/</guid>
-      <description>The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$
-Power Laws and Scale-Free Networks From the Network Science Book</description>
+      <description>Whenever nature seeks robustness, it resorts to networks.
+ The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$</description>
     </item>
     
     <item>
