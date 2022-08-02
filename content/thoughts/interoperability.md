@@ -11,7 +11,7 @@ I think interopability in the context of the web means being able to transparent
 
 A good standard is if I can hit 'export all data' on a platform and I can completely and freely use that elsewhere -- no vendor lock-in. I think this is esp hard for [social graphs](thoughts/social%20graphs.md), there is no common/accepted standard for identity let alone connectedness between individuals
 
-Related: [tools for thought](thoughts/tools%20for%20thought.md)
+Related: [tools for thought](thoughts/tools%20for%20thought.md), [[thoughts/credible exit|credible exit]]
 
 ## Noun-based Interoperability
 Source: [Riffle: Building data-centric apps with a reactive relational database](https://riffle.systems/essays/prelude/)
