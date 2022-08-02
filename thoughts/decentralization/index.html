@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Source: The Meaning of Decentralization by Vitalik Buterin
- 3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?"
+    content="![[thoughts/images/decentralization.png]]
+See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
+3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?"
   />
   <title>
     Decentralization
@@ -116,13 +117,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -305,6 +306,42 @@ Aug 6, 2021
       
       
       
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
       
       
       
@@ -345,12 +382,8 @@ Aug 6, 2021
 
 
 
-<p>
-
-<a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274" rel="noopener">Source: The Meaning of Decentralization by <em>Vitalik Buterin</em></a></p>
-<p>
-
-<img src="https://miro.medium.com/max/1094/1*WG5_xDDwHv0lMaVUYLNbVA.png" width="auto" alt="Decentralization Diagram"  /></p>
+<p><img src="/thoughts/images/decentralization.png" width="auto" /></p>
+<p>See also: <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">inevitability of centralization</a></p>
 <a href="#3-axes-of-decentralizatiaon"><h2 id="3-axes-of-decentralizatiaon"><span class="hanchor" ariaLabel="Anchor"># </span>3 Axes of Decentralizatiaon</h2></a>
 <ol>
 <li>Architectural Decentralization: how many physical computers is a system made of? how many computers can fail before the network fails?</li>

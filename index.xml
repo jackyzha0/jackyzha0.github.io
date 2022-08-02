@@ -18,6 +18,16 @@ where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.</des
     </item>
     
     <item>
+      <title>Inevitability of Recentralization</title>
+      <link>https://jzhao.xyz/thoughts/inevitability-of-centralization/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/inevitability-of-centralization/</guid>
+      <description>Notes on Gordon Brander&amp;rsquo;s  Decentralization enables permissionless innovation,  Centralization is Inevitable and  Redecentralization
+To be efficient is to be fragile, and to be fragile, over the long run, is to go extinct.</description>
+    </item>
+    
+    <item>
       <title>GDPR</title>
       <link>https://jzhao.xyz/thoughts/GDPR/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
@@ -623,10 +633,9 @@ Similar to [[thoughts/DID|DIDs]].
       <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/CID/</guid>
-      <description>Self-describing content-addressed identifiers for distributed systems
- Basically a hash with some metadata
-Summarized from Github Specification
-CID is a self-describing format for referencing content.</description>
+      <description>Summarized from Github Specification
+ Self-describing content-addressed identifiers for distributed systems
+ Basically a hash with some metadata. CID is a self-describing format for referencing content, it is a form of [[thoughts/content addressed storage|content addressed storage]].</description>
     </item>
     
     <item>
@@ -3566,8 +3575,9 @@ For trust to evolve:
       <pubDate>Fri, 06 Aug 2021 23:12:28 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/decentralization/</guid>
-      <description>Source: The Meaning of Decentralization by Vitalik Buterin
- 3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?</description>
+      <description>![[thoughts/images/decentralization.png]]
+See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
+3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?</description>
     </item>
     
     <item>

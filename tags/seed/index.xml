@@ -574,10 +574,9 @@ Similar to [[thoughts/DID|DIDs]].
       <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/CID/</guid>
-      <description>Self-describing content-addressed identifiers for distributed systems
- Basically a hash with some metadata
-Summarized from Github Specification
-CID is a self-describing format for referencing content.</description>
+      <description>Summarized from Github Specification
+ Self-describing content-addressed identifiers for distributed systems
+ Basically a hash with some metadata. CID is a self-describing format for referencing content, it is a form of [[thoughts/content addressed storage|content addressed storage]].</description>
     </item>
     
     <item>

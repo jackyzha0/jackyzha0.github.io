@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Inevitability of Recentralization</title>
+      <link>https://jzhao.xyz/thoughts/inevitability-of-centralization/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/inevitability-of-centralization/</guid>
+      <description>Notes on Gordon Brander&amp;rsquo;s  Decentralization enables permissionless innovation,  Centralization is Inevitable and  Redecentralization
+To be efficient is to be fragile, and to be fragile, over the long run, is to go extinct.</description>
+    </item>
+    
+    <item>
       <title>Rhizome Specification</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Specification/</link>
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
@@ -864,8 +874,9 @@ For trust to evolve:
       <pubDate>Fri, 06 Aug 2021 23:12:28 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/decentralization/</guid>
-      <description>Source: The Meaning of Decentralization by Vitalik Buterin
- 3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?</description>
+      <description>![[thoughts/images/decentralization.png]]
+See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
+3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?</description>
     </item>
     
     <item>

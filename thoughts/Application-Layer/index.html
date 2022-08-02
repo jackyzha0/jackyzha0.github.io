@@ -117,13 +117,13 @@ Application/Presentation/Session layer
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -387,6 +387,10 @@ Feb 26, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/HTTP/" data-ctx="Application Layer" data-src="/thoughts/HTTP" class="internal-link">HTTP</a>
       </li>
@@ -401,6 +405,12 @@ Feb 26, 2022
       
       <li>
         <a href="/thoughts/Transport-Layer/" data-ctx="Application Layer" data-src="/thoughts/Transport-Layer" class="internal-link">Transport Layer</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/inevitability-of-centralization/" data-ctx="Application Layer" data-src="/thoughts/inevitability-of-centralization" class="internal-link">Inevitability of Recentralization</a>
       </li>
       
       

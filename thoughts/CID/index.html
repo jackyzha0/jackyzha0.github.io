@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Self-describing content-addressed identifiers for distributed systems
- Basically a hash with some metadata
-Summarized from Github Specification
-CID is a self-describing format for referencing content."
+    content="Summarized from Github Specification
+ Self-describing content-addressed identifiers for distributed systems
+ Basically a hash with some metadata. CID is a self-describing format for referencing content, it is a form of [[thoughts/content addressed storage|content addressed storage]]."
   />
   <title>
     CID
@@ -118,13 +117,13 @@ CID is a self-describing format for referencing content."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.59c89a023fe4ad2668519403e9e7adae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.78dab10d95520a4f8b2d1ae4f1b8ab16.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -296,6 +295,37 @@ Jun 5, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -303,14 +333,14 @@ Jun 5, 2022
 
 
 
-<blockquote>
-<p>Self-describing content-addressed identifiers for distributed systems</p>
-</blockquote>
-<p>Basically a hash with some metadata</p>
+
 <p>Summarized from 
 
 <a href="https://github.com/multiformats/cid" rel="noopener">Github Specification</a></p>
-<p>CID is a self-describing format for referencing content.</p>
+<blockquote>
+<p>Self-describing content-addressed identifiers for distributed systems</p>
+</blockquote>
+<p>Basically a hash with some metadata. CID is a self-describing format for referencing content, it is a form of <a href="/thoughts/content-addressed-storage" rel="noopener" class="internal-link" data-src="/thoughts/content-addressed-storage">content addressed storage</a>.</p>
 <p>Format: <code>&lt;cidv1&gt; ::= &lt;multibase-prefix&gt;&lt;multicodec-cidv1&gt;&lt;multicodec-content-type&gt;&lt;multihash-content-address&gt;</code></p>
 <p>Where</p>
 <ul>
@@ -337,6 +367,10 @@ Jun 5, 2022
     
     
     
+    
+      
+      
+      
     
       
       
