@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Niche at scale  The Internet allows you to scale any niche obsession
- Location-based scaling before usually meant smaller audiences."
+    content="Not to be confused for the web. While the terms web and Internet are often used interchangeably in the media, they refer to different systems."
   />
   <title>
     Internet
@@ -116,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4f30012db78b9c72c4f247eabc063054.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76743a4227d14db4d61fb694bcdc5e6f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ea797c9dbeaeacbcb4277fb872a474e0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.1fbfcaabd6f3b1e210dfe221adb0d126.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -301,6 +300,7 @@ Feb 26, 2022
 
 
 
+<p>Not to be confused for the web. While the terms web and Internet are often used interchangeably in the media, they refer to different systems. The web is an information network, whose nodes are documents. In contrast the Internet is an infrastructural network, whose nodes are routers.</p>
 <h2 id="niche-at-scalethoughtsniche20at20scalemd">
 
 
@@ -325,7 +325,7 @@ Feb 26, 2022
   href="/thoughts/decentralization/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/decentralization/">Centralization</a> of Content and Services</h2>
-<p>Imagine the surface of the internet as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.</p>
+<p>Imagine the surface of the web as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.</p>
 <p>Instead of creating a new webpage, Internet professionals and private users tend to go to a Facebook Page and therefore open content hosted on the slope of a dominant curve.</p>
 <p>
 
@@ -625,6 +625,10 @@ Feb 26, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/" data-ctx="internet" data-src="/" class="internal-link">jzhao.xyz</a>
       </li>
@@ -675,6 +679,12 @@ Feb 26, 2022
       
       <li>
         <a href="/thoughts/Network-Layer/" data-ctx="Internet" data-src="/thoughts/Network-Layer" class="internal-link">Network Layer (IP)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Network-Theory/" data-ctx="internet" data-src="/thoughts/Network-Theory" class="internal-link">Network Theory</a>
       </li>
       
       

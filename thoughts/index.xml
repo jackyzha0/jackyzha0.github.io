@@ -6,7 +6,28 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDPR</title>
+      <link>https://jzhao.xyz/thoughts/GDPR/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/GDPR/</guid>
+      <description>From Antonio García Martínez in The right to never be forgotten
+Two foundational concepts in GDPR:
+ presence and persistence of personal data who keeps that data around (further distinguished into two classes of data holders)  controllers (first-party).</description>
+    </item>
+    
+    <item>
+      <title>Network Theory</title>
+      <link>https://jzhao.xyz/thoughts/Network-Theory/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Network-Theory/</guid>
+      <description>The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$
+Power Laws and Scale-Free Networks From the Network Science Book</description>
+    </item>
+    
     <item>
       <title>The Writing Life</title>
       <link>https://jzhao.xyz/thoughts/The-Writing-Life/</link>
@@ -1447,8 +1468,7 @@ DNS currently has ~300 million DNS registrations.</description>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Internet/</guid>
-      <description>Niche at scale  The Internet allows you to scale any niche obsession
- Location-based scaling before usually meant smaller audiences.</description>
+      <description>Not to be confused for the web. While the terms web and Internet are often used interchangeably in the media, they refer to different systems.</description>
     </item>
     
     <item>
