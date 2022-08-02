@@ -5,13 +5,11 @@ tags:
 - seed
 ---
 
-> Self-describing content-addressed identifiers for distributed systems
-
-Basically a hash with some metadata
-
 Summarized from [Github Specification](https://github.com/multiformats/cid)
 
-CID is a self-describing format for referencing content. 
+> Self-describing content-addressed identifiers for distributed systems
+
+Basically a hash with some metadata. CID is a self-describing format for referencing content, it is a form of [[thoughts/content addressed storage|content addressed storage]]. 
 
 Format: `<cidv1> ::= <multibase-prefix><multicodec-cidv1><multicodec-content-type><multihash-content-address>`
 

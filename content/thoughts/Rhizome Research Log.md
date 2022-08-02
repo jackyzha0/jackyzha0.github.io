@@ -8,6 +8,18 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
+## August
+### August 1st
+- Gordon Brander deep-dive today... more thoughts on the [[thoughts/inevitability of centralization|inevitability of centralization]]
+- It seems we are reaching that 'recentralization' step of the decentralization-recentralization cycle, with power concentrating in the infrastructure and application level.
+	- Gordon proposes abolishing the `same-origin` policy. His thesis is that this forces resources on the web to be centralized around the ownership of domains. Everything -- security, privacy, identity, data, and scripting -- needs to be provided by the same origin, unless explicitly set otherwise. The 'hub' here that everything goes through is the domain. We've arrived back at the original centralized hub model of the internet.
+	- How we can learn from the leap that Baran made going from circuit switching to packet switching and apply it to this new layer of the web? In the words of Gordon: "Can we imagine a new weblike thing that is to the web as packet switching is to circuit switching?"
+- Content-addressing feels like a viable alternative to how loading resources works on the internet today.
+	- Address-based addressing relies on a central registry to figure out where things are. [[thoughts/content addressed storage|Content addressed storage]] (e.g. [[thoughts/CID|CIDs]]) *decouples* the data from the origin. If you know what the hash is, you can request the original file, irrespective of where the file actually lives.
+		- There is no single domain hosting your file.
+		- Many copies of your file exist across the network. This redundancy keeps things safe in case of failure.
+	- 
+
 ## July
 ### July 30th
 - I think I'm going to take a gap semester from September to December to give myself the time to finish the research to a level I'd be happy presenting to Protocol Labs at the end of the year.

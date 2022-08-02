@@ -3,6 +3,8 @@ title: "Network Theory"
 date: 2022-08-01
 tags:
 - seed
+aliases:
+- scale-free networks
 ---
 
 > Whenever nature seeks robustness, it resorts to networks.
@@ -71,3 +73,5 @@ However, this breaks down once we consider scale-free networks. Scale-free netwo
 The removal of a small fraction of the hubs is sufficient to break a scale-free network into tiny clusters. See more on [[thoughts/cascading failures|cascading failures]] in networks
 
 ![[thoughts/images/scale-free under attack.png]]*The probability that a node belongs to the largest connected component in a scale-free network under attack (purple) and under random failures (green).*
+
+Knocking out even a few hubs quickly breaks down the network. Y-axis is the ratio $\frac{P_\infty(f)}{P_\infty(0)}$ provides the relative size of the largest connected subgraph

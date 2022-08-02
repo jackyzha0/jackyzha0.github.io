@@ -5,9 +5,9 @@ tags:
 - sapling
 ---
 
-[Source: The Meaning of Decentralization by *Vitalik Buterin*](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
+![[thoughts/images/decentralization.png]]
 
-![Decentralization Diagram](https://miro.medium.com/max/1094/1*WG5_xDDwHv0lMaVUYLNbVA.png)
+See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
 
 ## 3 Axes of Decentralizatiaon
 1. Architectural Decentralization: how many physical computers is a system made of? how many computers can fail before the network fails?
