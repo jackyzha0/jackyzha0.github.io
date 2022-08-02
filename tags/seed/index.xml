@@ -18,6 +18,27 @@ where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.</des
     </item>
     
     <item>
+      <title>Credible exit</title>
+      <link>https://jzhao.xyz/thoughts/credible-exit/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/credible-exit/</guid>
+      <description>One sub-branch of the Exit, Voice, and Loyalty model (based on [[thoughts/game theory|game theory]]).
+Exit, Voice, and Loyalty There are two agents.</description>
+    </item>
+    
+    <item>
+      <title>Rhizomatic vs Arborescent Systems</title>
+      <link>https://jzhao.xyz/thoughts/rhizomatic-vs-arborescent/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/rhizomatic-vs-arborescent/</guid>
+      <description>See also: [[thoughts/A City is not a Tree|A City is Not a Tree]]
+Arborescent Hierarchical, tree-like networks.
+Comes from the way genealogy trees are drawn: unidirectional progress, with no possible retroactivity and continuous binary cuts.</description>
+    </item>
+    
+    <item>
       <title>GDPR</title>
       <link>https://jzhao.xyz/thoughts/GDPR/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
@@ -2658,7 +2679,7 @@ There is no happiness without suffering. The story presents a classic utilitaria
       <description>A City is not a Tree
 Semilattices  More diagrams in Figma
 ![[thoughts/images/semilattice example.png]]
-Why trees instead of graphs Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system.</description>
+Why graphs instead of trees Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system.</description>
     </item>
     
     <item>

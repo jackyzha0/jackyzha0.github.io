@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,6 +294,72 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -5611,7 +5677,7 @@ May 3, 2022
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
 <a href="#august-1st"><h3 id="august-1st"><span class="hanchor" ariaLabel="Anchor"># </span>August 1st</h3></a>
 <ul>
-<li>Gordon Brander deep-dive today&hellip; more thoughts on the <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">inevitability of centralization</a></li>
+<li>Gordon Brander deep-dive today&hellip; more thoughts on the <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">inevitability of centralization</a> and <a href="/thoughts/credible-exit" rel="noopener" class="internal-link" data-src="/thoughts/credible-exit">credible exit</a></li>
 <li>It seems we are reaching that &lsquo;recentralization&rsquo; step of the decentralization-recentralization cycle, with power concentrating in the infrastructure and application level.
 <ul>
 <li>Gordon proposes abolishing the <code>same-origin</code> policy. His thesis is that this forces resources on the web to be centralized around the ownership of domains. Everything &ndash; security, privacy, identity, data, and scripting &ndash; needs to be provided by the same origin, unless explicitly set otherwise. The &lsquo;hub&rsquo; here that everything goes through is the domain. We&rsquo;ve arrived back at the original centralized hub model of the internet.</li>
@@ -5626,7 +5692,6 @@ May 3, 2022
 <li>Many copies of your file exist across the network. This redundancy keeps things safe in case of failure.</li>
 </ul>
 </li>
-<li></li>
 </ul>
 </li>
 </ul>

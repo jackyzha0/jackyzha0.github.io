@@ -8,7 +8,7 @@
     content="A City is not a Tree
 Semilattices  More diagrams in Figma
 ![[thoughts/images/semilattice example.png]]
-Why trees instead of graphs Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system."
+Why graphs instead of trees Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system."
   />
   <title>
     A City is not a Tree
@@ -118,13 +118,13 @@ Why trees instead of graphs Both the tree and the semilattice are ways of thinki
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -350,14 +350,14 @@ Jun 16, 2021
 
 <a href="https://www.figma.com/file/eFPS114umxiV44LgL82UUb/Christopher-Alexander%27s-Semilattice-from-A-City-is-Not-a-Tree-%28Community%29?node-id=0%3A1" rel="noopener">Figma</a></em></p>
 <p><img src="/thoughts/images/semilattice example.png" width="auto" /></p>
-<a href="#why-trees-instead-of-graphs"><h2 id="why-trees-instead-of-graphs"><span class="hanchor" ariaLabel="Anchor"># </span>Why trees instead of graphs</h2></a>
+<a href="#why-graphs-instead-of-trees"><h2 id="why-graphs-instead-of-trees"><span class="hanchor" ariaLabel="Anchor"># </span>Why graphs instead of trees</h2></a>
 <p>Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system. More generally, they are both names for structures of sets.</p>
 <blockquote>
 <p>For the human mind, the tree is the easiest vehicle for complex thoughts. But the city is not, cannot and must not be a tree. The city is a receptacle for life. If the receptacle severs the overlap of the strands of life within it, because it is a tree, it will be like a bowl full of razor blades on edge, ready to cut up whatever is entrusted to it. In such a receptacle life will be cut to pieces. If we make cities which are trees, they will cut our life within to pieces.</p>
 </blockquote>
 <a href="#urban-planning"><h2 id="urban-planning"><span class="hanchor" ariaLabel="Anchor"># </span>Urban Planning</h2></a>
-<p>Columbia, Maryland → Neighbourhoods, in clusters of five, form &lsquo;villages&rsquo;. Transportation joins the villages into a new town. The organization is a tree.</p>
-<p>Hilberseimer&rsquo;s book The Nature of Cities → He describes the fact that certain Roman towns had their origin as military camps. The symbol is apt, for, of course, the organization of the army was designed precisely in order to create discipline and rigidity.</p>
+<p>Columbia, Maryland: Neighbourhoods, in clusters of five, form &lsquo;villages&rsquo;. Transportation joins the villages into a new town. The organization is a tree.</p>
+<p>Hilberseimer&rsquo;s book The Nature of Cities: He describes the fact that certain Roman towns had their origin as military camps. The symbol is apt, for, of course, the organization of the army was designed precisely in order to create discipline and rigidity.</p>
 <p>See more in the note on 
 
 
@@ -368,12 +368,6 @@ Jun 16, 2021
   href="/thoughts/urban-planning/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/urban-planning/">Urban planning</a></p>
-<a href="#abolish-hierarchies"><h2 id="abolish-hierarchies"><span class="hanchor" ariaLabel="Anchor"># </span>Abolish hierarchies</h2></a>
-<p>Whenever we have a tree structure, it means that within this structure no piece of any unit is ever connected to other units, except through the its parent (meaning the unit as a whole)</p>
-<p>Does power always need to function top down?</p>
-<blockquote>
-<p>&ldquo;The enormity of this restriction is difficult to grasp. It is a little as though the members of a family were not free to make friends outside the family, except when the family as a whole made a friendship.&rdquo;</p>
-</blockquote>
 <a href="#why-graphs-are-hard-to-visualize"><h2 id="why-graphs-are-hard-to-visualize"><span class="hanchor" ariaLabel="Anchor"># </span>Why graphs are hard to visualize</h2></a>
 <p>The example the article used was to try and an orange, a watermelon, a football and a tennis ball. How will you keep them in your mind, in your mind&rsquo;s eye? However you do it, you will do it by grouping them. Maybe two fruits and two sports balls together. In doing so, you construct a tree structure. Maybe you group it by size, two small spheres and two large spheres. This constructs another tree. But try as hard as you like, two trees combined form a semilattice. It is very difficult to hold a semilattice in your head.</p>
 <p>Maybe this is where tools like knowledge graphs come in. Allow us to better visually explore these graph relations and allow us to capture more complex relations in things</p>
@@ -434,6 +428,10 @@ Graph representations like Roam Research, Obsidian allow us to make non-obvious 
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/networked-thought/" data-ctx="data structures" data-src="/posts/networked-thought" class="internal-link">Networked Thought</a>
       </li>
@@ -442,6 +440,12 @@ Graph representations like Roam Research, Obsidian allow us to make non-obvious 
       
       <li>
         <a href="/thoughts/A-City-is-not-a-Computer/" data-ctx="A City is not a Tree" data-src="/thoughts/A-City-is-not-a-Computer" class="internal-link">A City is not a Computer</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/rhizomatic-vs-arborescent/" data-ctx="A City is Not a Tree" data-src="/thoughts/rhizomatic-vs-arborescent" class="internal-link">Rhizomatic vs Arborescent Systems</a>
       </li>
       
       

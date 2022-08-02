@@ -116,13 +116,13 @@ Mostly about maintenance of cities and parallels with maintaining software."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.843621630a6ac4de236fe7e58d6bf6c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.69ab52e3ffbc8efb5fafd677c7466078.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -360,9 +360,9 @@ by <em>Tomas Petricek</em></a></p>
   rel="noopener" class="internal-link"
   data-src="/thoughts/creation-vs-maintenance/">creation vs maintenance</a> over time. And just like with software systems, building owners are often bad at performing the necessary maintenance.</p>
 <p>The idea of chaos engineering is perhaps a first step in this direction.</p>
-<p>Rebuilding the shrine 
+<p>
 
-<a href="https://en.wikipedia.org/wiki/Ise_Grand_Shrine" rel="noopener">https://en.wikipedia.org/wiki/Ise_Grand_Shrine</a> -&gt; retaining knowledge through constant revision</p>
+<a href="https://en.wikipedia.org/wiki/Ise_Grand_Shrine" rel="noopener">Rebuilding the Ise Grand Shrine</a>: retaining knowledge through constant revision</p>
 <p>vernacular design restricts the scope of the problem by limiting architectural ideas to what is typically used in the local context. This reduces the design task and allows the builder to focus on skilful solutions to specific problems rather than at reinventing forms.</p>
 
 

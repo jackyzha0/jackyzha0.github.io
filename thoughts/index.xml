@@ -19,6 +19,16 @@ where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.</des
     </item>
     
     <item>
+      <title>Credible exit</title>
+      <link>https://jzhao.xyz/thoughts/credible-exit/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/credible-exit/</guid>
+      <description>One sub-branch of the Exit, Voice, and Loyalty model (based on [[thoughts/game theory|game theory]]).
+Exit, Voice, and Loyalty There are two agents.</description>
+    </item>
+    
+    <item>
       <title>Inevitability of Recentralization</title>
       <link>https://jzhao.xyz/thoughts/inevitability-of-centralization/</link>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
@@ -26,6 +36,17 @@ where $\alpha$ is the avalanche exponent. $\alpha$ tends to hover around 1.</des
       <guid>https://jzhao.xyz/thoughts/inevitability-of-centralization/</guid>
       <description>Notes on Gordon Brander&amp;rsquo;s  Decentralization enables permissionless innovation,  Centralization is Inevitable and  Redecentralization
 To be efficient is to be fragile, and to be fragile, over the long run, is to go extinct.</description>
+    </item>
+    
+    <item>
+      <title>Rhizomatic vs Arborescent Systems</title>
+      <link>https://jzhao.xyz/thoughts/rhizomatic-vs-arborescent/</link>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/rhizomatic-vs-arborescent/</guid>
+      <description>See also: [[thoughts/A City is not a Tree|A City is Not a Tree]]
+Arborescent Hierarchical, tree-like networks.
+Comes from the way genealogy trees are drawn: unidirectional progress, with no possible retroactivity and continuous binary cuts.</description>
     </item>
     
     <item>
@@ -281,15 +302,6 @@ For example, it can help ensure that all peers in the network know each other&am
       <guid>https://jzhao.xyz/thoughts/morphology/</guid>
       <description> The system for combining units of meaning
   Morpheme: the smallest unit of meaning in a language  Free morphemes can occur alone Bound morphemes cannot   Order of acquisition of phonemes (Brown 1973)  Morphemes come in in a consistent order (within a language) The order is predicted based on a variety of factors, including the salience and consistency of form-meaning mapping Same factors can predict differences between languages (in languages with more salient affixes and consistent form-meaning mappings children learn the morphology earlier)   The U-shaped curve  Rote memorization (child stores the forms they hear) – higher accuracy Rule acquired and over-applied – lower accuracy Rule acquired but children also know there are exceptions – higher accuracy    </description>
-    </item>
-    
-    <item>
-      <title>Open Source and Politics</title>
-      <link>https://jzhao.xyz/thoughts/Open-Source-and-Politics/</link>
-      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Open-Source-and-Politics/</guid>
-      <description>[[thoughts/Coraline Ada Ehmke|Coraline Ada Ehmke]] is an acclaimed speaker, writer, engineer, and activist with over 25 years of experience in software and almost 20 years in open source.</description>
     </item>
     
     <item>
@@ -3986,7 +3998,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <description>A City is not a Tree
 Semilattices  More diagrams in Figma
 ![[thoughts/images/semilattice example.png]]
-Why trees instead of graphs Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system.</description>
+Why graphs instead of trees Both the tree and the semilattice are ways of thinking about how a large collection of many small systems goes to make up a large and complex system.</description>
     </item>
     
     <item>
