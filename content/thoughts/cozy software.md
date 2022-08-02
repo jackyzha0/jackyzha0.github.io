@@ -34,3 +34,9 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 
 - There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.
 - Little towns of people's plots :)) https://tilde.town/~troido/cadastre/town.html
+
+## Handmade Web
+From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)
+
+> I evoke the term 'handmade web' to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or identity.
+

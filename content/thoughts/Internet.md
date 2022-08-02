@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+Not to be confused for the web. While the terms web and Internet are often used interchangeably in the media, they refer to different systems. The web is an information network, whose nodes are documents. In contrast the Internet is an infrastructural network, whose nodes are routers.
+
 ## [Niche at scale](thoughts/niche%20at%20scale.md)
 
 > **The Internet allows you to scale any niche obsession**
@@ -12,7 +14,7 @@ tags:
 Location-based scaling before usually meant smaller audiences. Now, larger cities (and the internet at large) has allowed audience sizes to grow to ridiculous amounts.
 
 ## [Centralization](thoughts/decentralization.md) of Content and Services
-Imagine the surface of the internet as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.
+Imagine the surface of the web as a representation of its potential activity. A few heavyweight players have dug into the web surface, dragging activities down their slopes, activities that could have remained independent and decentralized.
 
 Instead of creating a new webpage, Internet professionals and private users tend to go to a Facebook Page and therefore open content hosted on the slope of a dominant curve. 
 

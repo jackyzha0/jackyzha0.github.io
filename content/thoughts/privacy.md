@@ -37,6 +37,8 @@ Note that this will only work for larger datasets as injecting noise into a smal
 - Google for malware reports and traffic reports in Maps
 
 ## Contextual Privacy
+From Antonio García Martínez in [*The right to never be forgotten*](https://www.thepullrequest.com/p/the-right-to-never-be-forgotten)
+
 Helene Nissenbaum’s ‘contextual privacy’
 
 An example she draws in her work is imagining your interactions with your physician when dealing with a medical issue. Even in a world where the right to live as a stranger among strangers reigns supreme, we unquestioningly turn over the most intimate medical details to people we barely know. 
@@ -45,4 +47,8 @@ Now, let’s imagine you leave your doctor’s office and fire up Instagram to t
 
 **The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.**
 
-## GDPR
+See also: [[thoughts/GDPR|GDPR]]
+
+### Web3
+- Web2: considers identity public but data private
+- Web3: identity is private, but data public

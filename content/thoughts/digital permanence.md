@@ -54,3 +54,8 @@ It more or less says that you can only explain a system using criteria defined i
 "The forced identicality of online and offline lives, and the permanency of the Internet's record, augur against forgiveness, and advise against all mercy. Technological omniscence, and the ease of accessibility, promulgate a climate of censorship that in the so-called free world instantiates as self-censorship: people are afraid to speak and so they speak the party's words... or people are afraid to speak and so they speak no words at all..."
 
 "Even the most ardent practitioners of cancel culture — which I've always read as an imperative: Cancel culture! — must admit that cancellation is a form of surveillance borne of the same technological capacities used to oppress the vulnerable by patriachal, racist, and downright unkind governments the world over. The intents and outcomes might be different — cancelled people are not sent to camps — but the modus is the same: a constant monitoring, and a rush to judgment."
+
+## Blockchain
+The sheer immutability of [[thoughts/blockchain|blockchain]] data—you can’t delete a block without redoing the chain, something semi-impossible in practice—puts it in obvious violation of [[GDPR]].
+
+So long as the wallet is unassociated with real personal data, either on chain or off, it shouldn’t be subject to the many data restrictions of GDPR by a strict reading of it. But as soon as a company like Coinbase does a KYC to verify your identity, this data gets linked at GDPR violation happens once again.
