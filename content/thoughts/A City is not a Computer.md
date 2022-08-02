@@ -78,7 +78,7 @@ Historically, we've analogized the brain (and the city) to technologies of our t
 - What can city governments do to help the 'exclusion' of previously 'unseen' or minority groups?
 	- [Design Justice](thoughts/Design%20Justice.md) approach, specifically acknowledge this bias and try to compensate (e.g. [Data for Black Lives](https://d4bl.org/))
 	- We may not always be able to prevent 'data harvesting', and it sometimes might not all be bad! How do we fairly represent everyone?
-	- How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. GDPR?)
+	- How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. [[thoughts/GDPR|GDPR]]?)
 - Would smart cities be any different if they prioritized the citizens and participation at the get-go rather than as an after-thought
 	- Multiple definitions of smart cities (corporate extractivist approaches, civic approaches, improving democratic processes, open data, etc.)
 	- How do we manage data and data [[thoughts/privacy|privacy]]?

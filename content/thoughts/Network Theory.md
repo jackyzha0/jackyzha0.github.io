@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> Whenever nature seeks robustness, it resorts to networks.
+
 The [[thoughts/Internet|internet]] played a huge role in developing network theory with over a trillion documents $N \approx 10^{12}$
 
 ## Power Laws and Scale-Free Networks
@@ -51,3 +53,21 @@ $$\langle d \rangle = \begin{cases}
 4. $\gamma > 3$: Small-world and random networks. Extremely unlikely to have large hubs, traversal time is on the order of $\ln N$
 
 ![[thoughts/images/distances in networks.png]]
+## Network Robustness
+### Percolation Theory
+How many nodes do we have to delete to fragment a network into isolated components, assuming deletion is random?
+
+We can model network breakdown as inverse percolation.
+
+Thinking about this using the metaphor of forest fires helps to imagine what these variables mean. If we randomly ignite a tree, what fraction of the forest burns down? How long it takes the fire to burn out?
+
+As a forest is roughly similar to a random network, the answer depends on the tree density, controlled by the parameter $p$. For small $p$ the forest consists of many small islands of trees ($p = 0.55$), hence igniting any tree will at most burn down one of these small islands. Consequently, the fire will die out quickly. For large $p$ most trees belong to a single large cluster, hence the fire rapidly sweeps through the dense forest ($p = 0.62$). But there also exists a critical $p_c$ at which it takes extremely long time for the fire to end.
+
+However, this breaks down once we consider scale-free networks. Scale-free networks observe unusual robustness to failure: we must remove all of its nodes to have likely destroyed its giant component.
+
+![[thoughts/images/robustness of scale-free networks.png]]
+
+### Under Attack
+The removal of a small fraction of the hubs is sufficient to break a scale-free network into tiny clusters. See more on [[thoughts/cascading failures|cascading failures]] in networks
+
+![[thoughts/images/scale-free under attack.png]]*The probability that a node belongs to the largest connected component in a scale-free network under attack (purple) and under random failures (green).*

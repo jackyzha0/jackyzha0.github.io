@@ -11,7 +11,7 @@ Pushing for universalization at the data level: just as any website can be viewe
 
 Existing large owners of data wont innovate because they have monopoly over data, new innovators cant enter because they lack data
 
-GDPR technically does all of this, Solid is just technology that ensure it actually happens.
+[[thoughts/GDPR|GDPR]] technically does all of this, Solid is just technology that ensure it actually happens.
 
 Solid is essentially a glue between HTTP, [[thoughts/LDP|LDP]], and LDN
 

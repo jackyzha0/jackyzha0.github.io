@@ -146,7 +146,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Computation happens almost entirely on end-user devices, need to host massive infrastructure goes way down (unless you are doing heavy ML and info processing, which most companies are not)
 	- New markets for lending compute to the masses rather than just to programmers and tech companies
 	- Almost all the grunt work of data transformations is eliminated so companies can focus on business logic
-	- GDPR compliance built-in, users have freedom to manage their own data
+	- [[thoughts/GDPR|GDPR]] compliance built-in, users have freedom to manage their own data
 - Meta-meditations: this was incredibly helpful to iron out philosophy a bit more. I think this is starting to make more sense from both a user and company perspective, but only for people who *care* about these sorts of things. I think end-game is getting my Mom to understand why this is important.
 
 ### July 9th

@@ -58,4 +58,4 @@ It more or less says that you can only explain a system using criteria defined i
 ## Blockchain
 The sheer immutability of [[thoughts/blockchain|blockchain]] data—you can’t delete a block without redoing the chain, something semi-impossible in practice—puts it in obvious violation of [[GDPR]].
 
-So long as the wallet is unassociated with real personal data, either on chain or off, it shouldn’t be subject to the many data restrictions of GDPR by a strict reading of it. But as soon as a company like Coinbase does a KYC to verify your identity, this data gets linked at GDPR violation happens once again.
+So long as the wallet is unassociated with real personal data, either on chain or off, it shouldn’t be subject to the many data restrictions of [[thoughts/GDPR|GDPR]] by a strict reading of it. But as soon as a company like Coinbase does a KYC to verify your identity, this data gets linked at [[thoughts/GDPR|GDPR]] violation happens once again.
