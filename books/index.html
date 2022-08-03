@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7658500dfd32dff4853bb21acd12645f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a145c3bb49a3e51d6aaa44f8505a8cf1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -263,7 +263,7 @@ if (!doNotTrack) {
       <h1>Booklist</h1>
       <p class="meta">
           Last updated 
-Jul 29, 2022
+Aug 3, 2022
 
  
           
@@ -306,6 +306,7 @@ Jul 29, 2022
       
       
       
+        
         
         
       
@@ -375,6 +376,7 @@ Jul 29, 2022
 <li><strong>The Book of Difficult Fruit</strong> by Kate Lebo</li>
 <li><strong>Project Hail Mary</strong> by Andy Weir</li>
 <li><strong>Permutation City</strong> by Greg Egan</li>
+<li><strong>Homo Ludens</strong> by Johan Huizinga</li>
 </ul>
 <a href="#non-fiction"><h3 id="non-fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Non-fiction</h3></a>
 <ul>
@@ -403,7 +405,7 @@ Jul 29, 2022
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <p>2022</p>
 <ul>
-<li><strong><a class="internal-link broken">The Writing Life</a></strong> by Annie Dillard</li>
+<li><strong><a href="/thoughts/The-Writing-Life" rel="noopener" class="internal-link" data-src="/thoughts/The-Writing-Life">The Writing Life</a></strong> by Annie Dillard</li>
 <li><strong><a href="/thoughts/Tools-for-Conviviality" rel="noopener" class="internal-link" data-src="/thoughts/Tools-for-Conviviality">Tools for Conviviality</a></strong> by Ivan Illich</li>
 <li><strong><a href="/thoughts/visualization" rel="noopener" class="internal-link" data-src="/thoughts/visualization">Envisioning Information</a></strong> by Edward R. Tufte</li>
 <li><strong>The Book of Form and Emptiness</strong> by Ruth Ozeki</li>

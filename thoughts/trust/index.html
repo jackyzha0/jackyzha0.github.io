@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7658500dfd32dff4853bb21acd12645f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a145c3bb49a3e51d6aaa44f8505a8cf1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -703,6 +703,10 @@ But if she takes these liberties too often, you will feel you have been taken fo
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bias-bug/" data-ctx="trust" data-src="/posts/bias-bug" class="internal-link">On AI&#39;s &#39;Bias Bug&#39;</a>
       </li>
@@ -735,6 +739,12 @@ But if she takes these liberties too often, you will feel you have been taken fo
       
       <li>
         <a href="/thoughts/Internet/" data-ctx="trust" data-src="/thoughts/Internet" class="internal-link">Internet</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Jestermaxxing/" data-ctx="trust" data-src="/thoughts/Jestermaxxing" class="internal-link">Jestermaxxing</a>
       </li>
       
       

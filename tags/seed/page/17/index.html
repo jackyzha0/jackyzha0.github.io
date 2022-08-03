@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2cf6333f7b58b8412fece0267669d5b9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7658500dfd32dff4853bb21acd12645f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca329a00d04a276d39d82db329459731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a145c3bb49a3e51d6aaa44f8505a8cf1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -266,6 +266,26 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jan 31, 2022
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/Hard-problem-of-consciousness/">Hard problem of consciousness</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -438,24 +458,6 @@ Jan 18, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jan 18, 2022
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Reductionism/">Reductionism</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
             </ul>
         </div>
