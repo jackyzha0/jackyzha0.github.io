@@ -7,13 +7,15 @@ tags:
 
 Full post on play: [Play to Win: A Post-Work Society](posts/play.md)
 
-Play: the intentional activity of doing the thing you would want to do. 
+> Play: the intentional activity of doing the thing you would want to do. 
 
 [Source: Joyful Subversion in *Kernel*](https://kernel.community/en/learn/module-1/joyful-subversion)
 
 "Play allows us to create and share ownership of spaces in ways which competition cannot. Have as much fun as possible along the way. Turn life into a canvas, rather than a graph with checkpoints. Welcome everyone."
 
 In a world were we seem to be locked behind these little rectangles, how can we escape? Embedded computing experiments like DynamicLand by Bret Victor (more in [interaction design](thoughts/interaction%20design.md))
+
+Play is adoption of strong rules and beliefs, loosely held.
 
 ## Creating spaces not products
 "Creating a space for change does not necessarily mean you're doing it yourself; you're just making it possible for others." (a lot of similar ideas in [Design Justice](thoughts/Design%20Justice.md) and [a new DARPA](thoughts/research%20institutions.md))
@@ -49,4 +51,19 @@ A lot of concepts similar to [The Grasshopper](thoughts/The%20Grasshopper.md), t
 	- "Is it meaningful to say an electron “chooses” to jump the way it does? Obviously, there’s no way to prove it. The only evidence we _could_ have (that we can’t predict what it’s going to do), we do have. But it’s hardly decisive."
 	-  "If an electron is acting freely—if it, as Richard Feynman is supposed to have said, “does anything it likes”—it can only be acting freely as an end in itself. Which would mean that at the very foundations of physical reality, we encounter freedom for its own sake—which also means we encounter the most rudimentary form of play."
 	- Interesting implications for [materialism](thoughts/Materialism.md) -- consciousness does not *arise* as it is already present? Potential application of [Gall's law](thoughts/Gall's%20law.md)
-- Philosophy as a form of play :))
+- Philosophy as a form of play :)) see also [[thoughts/Jestermaxxing|Jestermaxxing]]
+
+## Against Irony
+> The playful person is neither dogmatist or ironist, but, as Lugones puts it, an easy traveller between, and an explorer of, different normative worlds.
+
+Play involves lightness with rules -- the ability to lightly step away from but also the ability to lightly adopt.
+
+To be serious about a game is to play it under the idea that its goals are really and genuinely important -- as an Olympic athlete does. 
+
+An ironist -- a spoilsport -- by openly refusing that shared commitment, destroys the communal development of shared moods in play.
+
+To be playful about games is neither to be utterly serious, or utterly ironic, but to move easily into and out of commitments to rule-sets. To be playful is to bring oneself to care, for a time, about the specified goals of the game, and to adopt, for a time, a temporary but absolute obedience to a set of rules.
+
+**To be playful with a game is to wear the game's cares and norms lightly**
+
+> Consider, for example, the shared mood of tabletop roleplaying games. The players have to commit, temporarily, to the rules of the game and a kind of (absurd) sincerity of purpose. The players have to really go all-in in pretending to be in character -- of really being, say, fantasy elves and dwarves on a quest to save a village. As is often remarked by dedicated role-players, this shared mood is often wrecked by the pure ironist -- who mocks the activity, who follows the rules mechanically but without real commitment, who breaks the illusion by calling attention to the arbitrariness of its rules

@@ -9,6 +9,16 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 2nd
+- Learned a lot about [[thoughts/Network Theory]]
+- Stressed about visa situation for upcoming gap semester
+	- school options
+		- virtual school: 1 course
+		- in-person school: 1 course
+		- completely gap semester
+	- living options
+		- 
+
 ### August 1st
 - Gordon Brander deep-dive today... more thoughts on the [[thoughts/inevitability of centralization|inevitability of centralization]] and [[thoughts/credible exit|credible exit]]
 - It seems we are reaching that 'recentralization' step of the decentralization-recentralization cycle, with power concentrating in the infrastructure and application level.

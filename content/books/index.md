@@ -11,6 +11,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
 * **Permutation City** by Greg Egan
+* **Homo Ludens** by Johan Huizinga
 
 ### Non-fiction
 * **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
@@ -27,7 +28,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Past
 2022
-- **[[The Writing Life]]** by Annie Dillard
+- **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
 - **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
 - **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
 - **The Book of Form and Emptiness** by Ruth Ozeki
