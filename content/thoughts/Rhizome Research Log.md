@@ -9,15 +9,29 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
-### August 2nd
-- Learned a lot about [[thoughts/Network Theory]]
-- Stressed about visa situation for upcoming gap semester
-	- school options
-		- virtual school: 1 course
-		- in-person school: 1 course
-		- completely gap semester
-	- living options
-		- 
+### August 2nd - August 3rd
+- Learned a lot about [[thoughts/Network Theory|Network theory]]
+	- Expanded more on thoughts about the inevitability of centralization with more insights from advantages and disadvantages of scale-free networks compared with random ones
+	- Also notes on [[thoughts/cascading failures|cascading failures]], interesting to note that sometimes the most effective way to stop a failure is to prematurely kill edges and nodes (e.g. burning parts of the forest ahead of a forest fire to clear debris in a controlled manner)
+- Stressed about what to do for the upcoming gap term/year!! 
+	- Things that are weighing on my mind:
+		- I want to graduate. Most visas other than the O-1 visa require at minimum a Bachelor's degree so this is definitely something I'm thinking about. Also, a lot of highly technical jobs are (unfortunately) still gated by degrees so having at least a Bachelors is useful in that regard.
+		- I want to be able to spend the *at least 3-6 hours per day* thinking about this research project. I really think that given I have the financial means to pursue research full-time I should. A younger version of me once said that if they found an idea that excites them when they wake up every morning, they would pursue it without fail.
+	- School Situation: I need 2 more 4xx+ Computer Science Courses and 5 more 3xx+ Electives to graduate. Problem is that it is wayyy past course registration time to jig things around so either:
+		- I keep my current course schedule (stay on track to graduate next May)
+		- Unregister from all my courses (push back graduation date to next fall or 2024 May)
+	- Research Situation: Although the research grant is no-strings attached, I really want to be able to output good work that I am proud of. Plus, the people at Protocol Labs are super cool and I want to be on good working terms with them for potential future collaboration.
+		- I think summer research has been literature review era and once next semester starts, it will mostly be building things out.
+	- Other thoughts: in my [[posts/2021|Letter to my Future Self]], I mentioned I wanted to reach deep focus in whatever work I do and have the resources to be able to choose the work I find enjoyable. I'm not going to half-ass do whatever, so it will either be full-send research or full-send finishing school.
+	- Options
+		- Keep current class schedule and try to move research to after graduation
+			- Not nearly as interesting as working on research
+			- Will graduate on-time in May!!
+			- Less long-term stress about returning to school to finish things
+		- Gap year to purely focus on research
+			- Output research work I am proud of, keep good relations with Protocol Labs
+			- Keeps research momentum going, will be more effective than picking up the project a year from now
+			- Will need to go back to school which will feel like I'm set back a year
 
 ### August 1st
 - Gordon Brander deep-dive today... more thoughts on the [[thoughts/inevitability of centralization|inevitability of centralization]] and [[thoughts/credible exit|credible exit]]
