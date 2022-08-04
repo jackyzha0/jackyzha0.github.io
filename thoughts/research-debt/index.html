@@ -117,13 +117,13 @@ Thinking about understanding knowledge as climbing a mountain."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7658500dfd32dff4853bb21acd12645f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a145c3bb49a3e51d6aaa44f8505a8cf1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7658500dfd32dff4853bb21acd12645f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a145c3bb49a3e51d6aaa44f8505a8cf1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -544,10 +544,20 @@ Dec 30, 2021
     
     
     
-    <li>
-        No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Letter to my Future Self" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
