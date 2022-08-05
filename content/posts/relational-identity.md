@@ -63,7 +63,7 @@ From a software perspective, this isn't a new representation of digital identity
 
 > Everything that a user is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format. _([ucan.xyz](https://ucan.xyz/))_
 
-There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using public-key cryptography means that we can prove the same person you issued the access token to is now requesting access *without* revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
+There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using [[thoughts/encryption|public-key cryptography]] means that we can prove the same person you issued the access token to is now requesting access *without* revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
 
 This feels promising. A token that grants access isn’t making legible any information that doesn’t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer to keep real-world identities and digital ones separate.
 

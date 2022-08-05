@@ -23,7 +23,7 @@ A **Byzantine fault** is any fault presenting different symptoms to different ob
 
 Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.
 
-See also: [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
+See also: [[thoughts/Byzantine Broadcast|Byzantine Broadcast]], [[thoughts/PBFT|PBFT]]
 
 ### Two Generals Problem
 This thought experiment meant to illustrate the pitfalls and design challenges of attempting to coordinate an action by communicating over an unreliable link. In the experiment, two generals are only able to communicate with one another by sending a messenger through enemy territory. The experiment asks how they might reach an agreement on the time to launch an attack, while knowing that any messenger they send could be captured. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying.

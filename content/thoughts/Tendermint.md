@@ -84,7 +84,7 @@ These properties remain to be held in round $r + 1$ given they hold in round $r$
 ## Proof of liveness
 Definition of [[thoughts/liveness|liveness]]: if a transaction $T$ is known by all honest nodes, then it will get added to all of their local histories.
 
-Note: this is a weaker definition of liveness than usual for SMR which states that if a single honest node knows about a transaction, then all honest nodes will eventually add that transaction to their local histories.
+Note: this is a weaker definition of liveness than usual for [[thoughts/State Machine Replication (SMR)|SMR]] which states that if a single honest node knows about a transaction, then all honest nodes will eventually add that transaction to their local histories.
 
 We define a **clean** round when
 1. we are post-GST

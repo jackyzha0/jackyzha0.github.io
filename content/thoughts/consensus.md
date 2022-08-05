@@ -39,17 +39,4 @@ There are two main protocol paradigms for achieving consensus in the presence of
 	3. at risk of potentially large chain reorganizations and double-spend attacks
 	4. includes [[thoughts/bitcoin|Bitcoin]], [[thoughts/ethereum|Ethereum]]
 
-### State Machine Replication
-A subset of the algorithmic consensus problem about agreeing on the same state
-
-1. Consistency: all notes agree on the same history
-2. [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node's histories
-
-SMR can be reduced to [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
-
-### Byzantine Agreement
-Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
-
-Every node has a private input, there is no distinguished sender. 
-
-All non-Byzantine nodes need to agree on a single common value.
+Examples include: [[thoughts/State Machine Replication (SMR)|SMR]], [[thoughts/Byzantine Agreement|Byzantine Agreement]]

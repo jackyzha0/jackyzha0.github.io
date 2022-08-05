@@ -63,4 +63,4 @@ The structure that holds this data is called a Signed Blob, and it contains thre
 		- Bob sends message $h = H(m + s)$
 		- Alice receives $(m, h)$ and computes $H(m + s)$
 		- If $h = H(m+s)$, message is considered signed
-	- Fast because encryption is not necessary
+	- Fast because [[thoughts/encryption|encryption]] is not necessary

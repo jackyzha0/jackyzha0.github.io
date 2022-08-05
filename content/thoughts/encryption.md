@@ -4,6 +4,9 @@ date: 2022-04-07
 tags:
 - seed
 - CPSC317
+aliases:
+- public-key cryptography
+- public key cryptography
 ---
 
 An encryption algorithm comprises

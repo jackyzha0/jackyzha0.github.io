@@ -50,4 +50,4 @@ The principle is to only accept a value in the last round if its contents can ce
 
 At the end of $f$ rounds of cross-checking (one round per possible Byzantine node), if node $i$ is convinced of exactly one value, that is the correct value. Otherwise, output the. default value (e.g. an empty list of txs)
 
-Solves BB for $f < n$, but really only useful at $f < \frac n 2$ for state machine replication. If $f < \frac n 2$ then we can take majority vote to arrive at consistent state (not the case if $f \geq \frac n 2$). This bypasses the [[thoughts/PSL-FLM Impossibility Result|PSL-FLM Impossibility Result]] because we assume [[thoughts/Public-key Infrastructure|PKI]] exists
+Solves BB for $f < n$, but really only useful at $f < \frac n 2$ for [[thoughts/State Machine Replication (SMR)|state machine replication]]. If $f < \frac n 2$ then we can take majority vote to arrive at consistent state (not the case if $f \geq \frac n 2$). This bypasses the [[thoughts/PSL-FLM Impossibility Result|PSL-FLM Impossibility Result]] because we assume [[thoughts/Public-key Infrastructure|PKI]] exists

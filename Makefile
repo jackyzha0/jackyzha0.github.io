@@ -20,4 +20,4 @@ update-fetch:
 	git pull upstream hugo --allow-unrelated-histories
 
 serve: ## Serve Quartz locally
-	hugo-obsidian -input=content -output=assets/indices -index -root=. && hugo server --enableGitInfo
+	hugo-obsidian -input=content -output=assets/indices -index -root=. && hugo server --enableGitInfo --minify
