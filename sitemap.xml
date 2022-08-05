@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/Holochain/</loc>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/cascading-failures/</loc>
     <lastmod>2022-08-02T11:55:51-07:00</lastmod>
   </url><url>
@@ -16,12 +25,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/rhizomatic-vs-arborescent/</loc>
     <lastmod>2022-08-02T15:59:04-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-08-03T21:06:30-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-08-03T21:06:30-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/GDPR/</loc>
     <lastmod>2022-08-01T22:11:57-07:00</lastmod>
@@ -105,7 +108,7 @@
     <lastmod>2022-07-03T14:06:28-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Public-key-Infrastructure/</loc>
-    <lastmod>2022-07-03T14:06:28-07:00</lastmod>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/morphology/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
@@ -180,7 +183,7 @@
     <lastmod>2022-06-09T13:10:10-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/RDF/</loc>
-    <lastmod>2022-06-09T13:10:10-07:00</lastmod>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/casual-magic/</loc>
     <lastmod>2022-07-13T22:20:13-07:00</lastmod>
@@ -189,7 +192,7 @@
     <lastmod>2022-06-09T13:10:10-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/DHT/</loc>
-    <lastmod>2022-06-09T14:27:49-07:00</lastmod>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Kademlia-DHT/</loc>
     <lastmod>2022-06-07T15:46:57-07:00</lastmod>
@@ -282,7 +285,7 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-08-03T21:06:30-07:00</lastmod>
+    <lastmod>2022-08-04T18:13:48-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-06-24T09:21:04-07:00</lastmod>

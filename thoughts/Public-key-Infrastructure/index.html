@@ -116,13 +116,13 @@ For example, it can help ensure that all peers in the network know each other&rs
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -325,6 +325,32 @@ Jul 1, 2022
 
 <p>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a></p>
 <p>For example, it can help ensure that all peers in the network know each other&rsquo;s public keys (i.e. that public keys are&hellip; public knowledge)</p>
+<table>
+<thead>
+<tr>
+<th>Private Key</th>
+<th>Public Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stays secret on your device</td>
+<td>Shared with all your peers on the network</td>
+</tr>
+<tr>
+<td>Acts like a password &ndash; only you have it, and it&rsquo;s necessary for proving ownership of your public key</td>
+<td>Acts like a User ID &ndash; people publicly know about this to identity you</td>
+</tr>
+<tr>
+<td>Can create signatures &ndash; unforgeable, tamper-evident certifications that <em>you</em> created that data</td>
+<td>Allows others to verify the integrity of your signature</td>
+</tr>
+<tr>
+<td>A mailbox key &ndash; allows you to open messages that only you can see</td>
+<td>A mail slot &ndash; allows others to send you data only you can see</td>
+</tr>
+</tbody>
+</table>
 
 
     </article>

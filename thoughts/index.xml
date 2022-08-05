@@ -6,7 +6,16 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Holochain</title>
+      <link>https://jzhao.xyz/thoughts/Holochain/</link>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Holochain/</guid>
+      <description>Holochain is an open-source application development framework and peer-to-peer networking protocol. It allows you to create truly serverless applications with high levels of security, reliability, and performance.</description>
+    </item>
+    
     <item>
       <title>Cascading failures</title>
       <link>https://jzhao.xyz/thoughts/cascading-failures/</link>
@@ -562,9 +571,8 @@ FOAF stands for &amp;lsquo;friend of a friend&amp;rsquo;
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/DHT/</guid>
-      <description>One solution for &amp;lsquo;decentralized&amp;rsquo; registry of peers.
- The big hash table in the sky
- Keys are opaque, 160-bit quantities (e.</description>
+      <description>The big hash table in the sky
+ One solution for &amp;lsquo;decentralized&amp;rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent.</description>
     </item>
     
     <item>

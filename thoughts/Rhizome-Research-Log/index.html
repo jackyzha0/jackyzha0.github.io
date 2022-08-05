@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -5873,6 +5873,14 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</p>
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
+<a href="#august-4th"><h3 id="august-4th"><span class="hanchor" ariaLabel="Anchor"># </span>August 4th</h3></a>
+<ul>
+<li>Random thoughts:
+<ul>
+<li>Sign events with hash of application source -&gt; events are specific to application version</li>
+</ul>
+</li>
+</ul>
 <a href="#august-2nd---august-3rd"><h3 id="august-2nd---august-3rd"><span class="hanchor" ariaLabel="Anchor"># </span>August 2nd - August 3rd</h3></a>
 <ul>
 <li>Learned a lot about <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">Network theory</a>
@@ -5908,6 +5916,7 @@ May 3, 2022
 <li>Not nearly as interesting as working on research</li>
 <li>Will graduate on-time in May!!</li>
 <li>Less long-term stress about returning to school to finish things</li>
+<li><strong>I think I&rsquo;m going to choose this option!!</strong></li>
 </ul>
 </li>
 <li>Gap year to purely focus on research

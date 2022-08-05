@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -333,7 +333,8 @@ Jun 9, 2022
 <p>RDF can be understood as a linking structure which forms a directed, labeled graph, where the edges represent the named link between two resources, represented by the graph nodes.</p>
 <p>See also: <a href="/thoughts/LDP" rel="noopener" class="internal-link" data-src="/thoughts/LDP">LDP</a></p>
 <a href="#rdf-triple"><h2 id="rdf-triple"><span class="hanchor" ariaLabel="Anchor"># </span>RDF Triple</h2></a>
-<p>RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”)</p>
+<p>RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”). Much like a relational database, information in a triplestore is stored and retrieved via a query language.</p>
+<p>A store of RDF Triples is called a triplestore.</p>
 <a href="#turtle"><h2 id="turtle"><span class="hanchor" ariaLabel="Anchor"># </span>Turtle</h2></a>
 <p>
 

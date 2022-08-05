@@ -5,9 +5,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="One solution for &lsquo;decentralized&rsquo; registry of peers.
- The big hash table in the sky
- Keys are opaque, 160-bit quantities (e."
+    content="The big hash table in the sky
+ One solution for &lsquo;decentralized&rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent."
   />
   <title>
     DHT
@@ -117,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cdea6e4198ccf2e94f67724cb9dbc8f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.668351001a5e4b1c8224460052349cec.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -346,10 +345,10 @@ Jun 7, 2022
 
 
 
-<p>One solution for &lsquo;decentralized&rsquo; registry of peers.</p>
 <blockquote>
 <p>The big hash table in the sky</p>
 </blockquote>
+<p>One solution for &lsquo;decentralized&rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.</p>
 <p>Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.</p>
 <p>Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)</p>
 <p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT.</p>
@@ -403,6 +402,16 @@ Jun 7, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Holochain/" data-ctx="DHT" data-src="/thoughts/Holochain" class="internal-link">Holochain</a>
+      </li>
+      
       
       
       <li>
