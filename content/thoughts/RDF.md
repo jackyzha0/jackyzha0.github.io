@@ -12,7 +12,9 @@ RDF can be understood as a linking structure which forms a directed, labeled gra
 See also: [[thoughts/LDP|LDP]]
 
 ## RDF Triple
-RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”)
+RDF extends the linking structure of the Web to use URIs to name the relationship between things as well as the two ends of the link (this is usually referred to as a “triple”). Much like a relational database, information in a triplestore is stored and retrieved via a query language.
+
+A store of RDF Triples is called a triplestore.
 
 ## Turtle
 [Source: W3](https://www.w3.org/TR/turtle/)

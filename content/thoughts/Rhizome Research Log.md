@@ -9,6 +9,10 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 4th
+- Random thoughts:
+	- Sign events with hash of application source -> events are specific to application version
+
 ### August 2nd - August 3rd
 - Learned a lot about [[thoughts/Network Theory|Network theory]]
 	- Expanded more on thoughts about the inevitability of centralization with more insights from advantages and disadvantages of scale-free networks compared with random ones
@@ -28,6 +32,7 @@ I think research logs tend to generally focus too much on what one did rather th
 			- Not nearly as interesting as working on research
 			- Will graduate on-time in May!!
 			- Less long-term stress about returning to school to finish things
+			- **I think I'm going to choose this option!!**
 		- Gap year to purely focus on research
 			- Output research work I am proud of, keep good relations with Protocol Labs
 			- Keeps research momentum going, will be more effective than picking up the project a year from now
