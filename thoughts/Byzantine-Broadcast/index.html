@@ -70,7 +70,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.59b5eb848f398a9b2cf864a089780673.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -685,6 +685,34 @@ Jul 1, 2022
     
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -734,7 +762,7 @@ Jul 1, 2022
 </ul>
 <p>The principle is to only accept a value in the last round if its contents can certify that all parties have received this value. This leads to a very powerful idea in the synchronous model: The validity of a message is a function also of the time it is received</p>
 <p>At the end of $f$ rounds of cross-checking (one round per possible Byzantine node), if node $i$ is convinced of exactly one value, that is the correct value. Otherwise, output the. default value (e.g. an empty list of txs)</p>
-<p>Solves BB for $f &lt; n$, but really only useful at $f &lt; \frac n 2$ for state machine replication. If $f &lt; \frac n 2$ then we can take majority vote to arrive at consistent state (not the case if $f \geq \frac n 2$). This bypasses the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM Impossibility Result</a> because we assume <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> exists</p>
+<p>Solves BB for $f &lt; n$, but really only useful at $f &lt; \frac n 2$ for <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a>. If $f &lt; \frac n 2$ then we can take majority vote to arrive at consistent state (not the case if $f \geq \frac n 2$). This bypasses the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM Impossibility Result</a> because we assume <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> exists</p>
 
 
     </article>
@@ -785,6 +813,12 @@ Jul 1, 2022
       
       
       <li>
+        <a href="/thoughts/Byzantine-Agreement/" data-ctx="Byzantine Broadcast" data-src="/thoughts/Byzantine-Agreement" class="internal-link">Byzantine Agreement</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/PSL-FLM-Impossibility-Result/" data-ctx="BB" data-src="/thoughts/PSL-FLM-Impossibility-Result" class="internal-link">PSL-FLM Impossibility Result</a>
       </li>
       
@@ -797,7 +831,7 @@ Jul 1, 2022
       
       
       <li>
-        <a href="/thoughts/consensus/" data-ctx="Byzantine Broadcast" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
+        <a href="/thoughts/State-Machine-Replication-SMR/" data-ctx="Byzantine Broadcast" data-src="/thoughts/State-Machine-Replication-SMR" class="internal-link">State Machine Replication (SMR)</a>
       </li>
       
       
@@ -829,7 +863,7 @@ Jul 1, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
 
     </div>
 </div>

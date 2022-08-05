@@ -70,7 +70,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.59b5eb848f398a9b2cf864a089780673.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -315,6 +315,72 @@ Aug 4, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -342,9 +408,18 @@ Aug 4, 2022
 <li>DNA: A bundle of Zomes that makes a unit of functionality in a hApp.</li>
 <li>Zome: (chromosome). Made up of DNA define the core business logic in a DNA, exposing their functions to the conductor.</li>
 </ul>
+<a href="#dht"><h2 id="dht"><span class="hanchor" ariaLabel="Anchor"># </span>DHT</h2></a>
+<p>Of course, the DHT is really large. You need to know its address in order to retrieve a piece of data that matters to you.</p>
+<p>But because Holochain&rsquo;s DHT is <a href="/thoughts/content-addressed-storage" rel="noopener" class="internal-link" data-src="/thoughts/content-addressed-storage">content-addressed</a>, you can only know the address if you can calculate it from the data (in which case you don’t need to retrieve it), or if you discover the address somehow.</p>
+<p>Address discovery in Holochain works through anchors and links.</p>
+<ul>
+<li>Anchors: ‘known’ things you can use as starting points</li>
+<li>Links: an <a href="/thoughts/RDF#rdf-triple" rel="noopener" class="internal-link" data-src="/thoughts/RDF">RDF triple</a></li>
+</ul>
 <a href="#source-chain"><h2 id="source-chain"><span class="hanchor" ariaLabel="Anchor"># </span>Source Chain</h2></a>
 <p>Each user in a Holochain network creates and stores their own data in a journal called a <strong>source chain</strong>. Each journal entry is cryptographically signed by its author and is immutable once written.</p>
-<p>Identifiers are based off of a public/private key pair</p>
+<p>Identifiers are based off of a public/private key pair. All messages posted to the source chain are signed so they are tamper-proof. Each message refers the previous one in the order so it order can&rsquo;t be tampered with either.</p>
+<p>But unfortunately anyone can modify their own source chain, regenerate the hashes and signatures, and create a perfectly valid, but wrong, alternate history for themselves. The <a href="/thoughts/DHT" rel="noopener" class="internal-link" data-src="/thoughts/DHT">DHT</a> resolves this sharing your source chain actions and public entries with a random selection of your peers, who witness, validate, and hold copies of them.</p>
 
 
     </article>
@@ -387,7 +462,7 @@ Aug 4, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
 
     </div>
 </div>

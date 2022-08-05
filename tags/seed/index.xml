@@ -7,6 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Byzantine Agreement</title>
+      <link>https://jzhao.xyz/thoughts/Byzantine-Agreement/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Byzantine-Agreement/</guid>
+      <description>Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
+Every node has a private input, there is no distinguished sender. All non-Byzantine nodes need to agree on a single common value.</description>
+    </item>
+    
+    <item>
+      <title>PBFT</title>
+      <link>https://jzhao.xyz/thoughts/PBFT/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/PBFT/</guid>
+      <description>Practical Byzantine Fault Tolerance by Miguel Castro and Barbara Liskov
+A form of [[thoughts/State Machine Replication (SMR)|state machine replication]] which offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/encryption|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/signed messages#Signed Message Digest|signed message digests]]).</description>
+    </item>
+    
+    <item>
+      <title>State Machine Replication (SMR)</title>
+      <link>https://jzhao.xyz/thoughts/State-Machine-Replication-SMR/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/State-Machine-Replication-SMR/</guid>
+      <description>A subset of the algorithmic consensus problem about agreeing on the same state
+ Consistency: all notes agree on the same history [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node&amp;rsquo;s histories  SMR can be reduced to [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]</description>
+    </item>
+    
+    <item>
       <title>Holochain</title>
       <link>https://jzhao.xyz/thoughts/Holochain/</link>
       <pubDate>Thu, 04 Aug 2022 00:00:00 +0000</pubDate>

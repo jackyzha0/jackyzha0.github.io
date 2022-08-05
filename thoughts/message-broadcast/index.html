@@ -70,7 +70,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.59b5eb848f398a9b2cf864a089780673.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -359,6 +359,50 @@ May 5, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -369,10 +413,10 @@ May 5, 2022
 <a href="#ordering"><h2 id="ordering"><span class="hanchor" ariaLabel="Anchor"># </span>Ordering</h2></a>
 <a href="#total-order-broadcast"><h3 id="total-order-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>Total order broadcast</h3></a>
 <p>Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a>!)</p>
-<p>In state machine replication, total order broadcast assumes the state update function is <strong>deterministic</strong>. That is, whenever two replicas are in the same state, giving them the same input, they will transition to the same next state. The main limitation is that total order broadcast cannot update state immediately, have to wait for delivery through broadcast</p>
+<p>In <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a>, total order broadcast assumes the state update function is <strong>deterministic</strong>. That is, whenever two replicas are in the same state, giving them the same input, they will transition to the same next state. The main limitation is that total order broadcast cannot update state immediately, have to wait for delivery through broadcast</p>
 <a href="#causal-broadcast"><h3 id="causal-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Broadcast</h3></a>
 <p>Obeys happens-before (<a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a>) relationships.</p>
-<p>In state machine replication, assumed state update function is <strong>deterministic and concurrent updates are commutative</strong>. Replicas can process updates in different orders and still end up in the same state</p>
+<p>In <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a>, assumed state update function is <strong>deterministic and concurrent updates are commutative</strong>. Replicas can process updates in different orders and still end up in the same state</p>
 <a href="#fifo-reliable-broadcast"><h3 id="fifo-reliable-broadcast"><span class="hanchor" ariaLabel="Anchor"># </span>FIFO (reliable) Broadcast</h3></a>
 <p>Messages sent by the <strong>same</strong> node must be delivered in the order they were sent</p>
 <p>Assumes state update function is <strong>deterministic + all updates are commutative</strong>.</p>
@@ -454,7 +498,7 @@ May 5, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
 
     </div>
 </div>

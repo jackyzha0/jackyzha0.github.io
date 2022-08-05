@@ -70,7 +70,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.59b5eb848f398a9b2cf864a089780673.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e55b2808dcd13aaa1a1036a7de0c7f32.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d091482bf43f89ca4576e3f2d07d4731.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -505,6 +505,28 @@ Jul 3, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -615,7 +637,7 @@ Jul 3, 2022
 <p>These properties remain to be held in round $r + 1$ given they hold in round $r$ as no nodes of $S$ change their mind.</p>
 <a href="#proof-of-liveness"><h2 id="proof-of-liveness"><span class="hanchor" ariaLabel="Anchor"># </span>Proof of liveness</h2></a>
 <p>Definition of <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a>: if a transaction $T$ is known by all honest nodes, then it will get added to all of their local histories.</p>
-<p>Note: this is a weaker definition of liveness than usual for SMR which states that if a single honest node knows about a transaction, then all honest nodes will eventually add that transaction to their local histories.</p>
+<p>Note: this is a weaker definition of liveness than usual for <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a> which states that if a single honest node knows about a transaction, then all honest nodes will eventually add that transaction to their local histories.</p>
 <p>We define a <strong>clean</strong> round when</p>
 <ol>
 <li>we are post-GST</li>
@@ -712,7 +734,7 @@ Jul 3, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.afdb02e537635f9a611b53a988e5645b.js"></script>
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
 
     </div>
 </div>
