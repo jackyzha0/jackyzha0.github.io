@@ -9,9 +9,38 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 8th
+- I want to target 60 updates per second (~16ms budget) for local and 10 updates per second (~100ms budget) for global updates
+	- This is a good target to aim for but also wary of premature optimization
+	- Will likely need to just build stuff out first and experiment to see if it is usable
+- Musings on getting people to offramp out of existing systems
+
+### August 5th - 7th
+- Went to [Hackclub Assemble](https://assemble.hackclub.com/) and was just inspired by the magnitude of talent of the next generation of hackers and builders. Zach (+ Sam and rest of the HC team) really blew it out of the park this time. The theme was to build something completely useless and the kids went wild with it. I still strongly believe that one of the best signals for someone who *deeply* and intrinsically cares about technology is one who can still play and tinker for the hell of it.
+	- In a similar vain, I'm organizing a Hack Day at [The SF Commons](https://www.thesfcommons.com/) on August 14th! A little callback to my hackathon organizing days :)) Really hoping to bring this new space to life with this event
+- Reading **Weaving the Web** by Tim Berners-Lee. More thoughts on this coming soon, but tldr; it is reassuring to hear that it took almost 13 years to combine the Internet and hypertext together to conceptually create the Web. Even then, it took a lot of trying over many years to bring adoption for something that many didn't really see as potentially revolutionary
+- Reading through [[thoughts/PBFT|PBFT]] paper, really trying to understand the correctness and [[thoughts/liveness|liveness]] proofs
+
 ### August 4th
 - Random thoughts:
-	- Sign events with hash of application source -> events are specific to application version
+	- What if messages were doubly-signed with the hash of application source? This would mean that all events are specific to application version.
+		- Holochain cites that this may be a problem: "unfortunately anyone can modify their own source chain, regenerate the hashes and signatures, and create a perfectly valid, but wrong, alternate history for themselves."
+		- However, this is actually a non-issue, given we split this into two cases:
+			1. Single-player App: whatever the user does is 'correct' behaviour anyways, what does it mean to have a wrong alternate history when you are the only person dictating it? All actions will still need to be in the domain of valid actions as dictated by the app (otherwise, message signature would not add up as we sign messages with the hash of application source).
+			2. Multi-player App: peers will have a hash of the last known action of a user. If the action history is completely rewritten, the probability of arriving at the same hash is negligible, meaning that the peers will reject any further actions as invalid.
+		- This brings up a new question of what migration paths look like between old and new versions of applications. If we go by hash of application source, then each update to the source code will seem like a completely new application!
+			- Each application perhaps can be signed by an author. If a newer application by the same author claims to be an update for the existing application, it can propose an upgrade path to interpret the older data in a usable format for a new one, essentially 'importing' the data in
+	- Good furniture and architectural choices respect user agency, allowing those in the space the ability to move around at will. How might we analogize this to software? [[thoughts/digital commons|Digital commons]]?
+- Read through [[thoughts/Holochain|Holochain]] docs which are actually quite similar to what I have in mind for Rhizome.
+	- Really liked
+		- Using [[thoughts/RDF|RDF]] triples in a [[thoughts/DHT|DHT]] to create a distributed graph database is a smart way to network the data -- feels like what semweb was supposed to be
+		- Everything is self-owned and consistency of application state is maintained by storing hashes of actions to a global [[thoughts/DHT|DHT]] which allows for peer accountability
+	- Things that I think are unaddressed
+		- Documentation was well-written but the terminology was confusing at times. Was not immediately obvious what part each piece played
+		- How important is global data-witnessing? Why do we need social pressures for this when we can do this using cryptography?
+			- This also means that progress cannot be made until a node is back online (otherwise, actions remain unvalidated)
+		- Problem of getting people to migrate off of existing platforms remains unsolved
+		- Developer experience is difficult to set up and get started (see [HApp setup docs](https://developer.holochain.org/happ-setup/)) -- heavy use of technical terminology
 
 ### August 2nd - August 3rd
 - Learned a lot about [[thoughts/Network Theory|Network theory]]

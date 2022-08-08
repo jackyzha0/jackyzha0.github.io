@@ -64,3 +64,7 @@ The structure that holds this data is called a Signed Blob, and it contains thre
 		- Alice receives $(m, h)$ and computes $H(m + s)$
 		- If $h = H(m+s)$, message is considered signed
 	- Fast because [[thoughts/encryption|encryption]] is not necessary
+
+## Digital Signatures vs MACs
+MACs can be computed three orders of magnitude faster than digital signatures. For example, a 200MHz Pentium Pro takes 43ms to generate a 1024-bit modulus RSA signature of an MD5 digest and 0.6ms to verify the signature, whereas it takes only 10.3$\mu s$ to compute the MAC of a 64-byte message on the same hardware in our implementation. There are other publickey cryptosystems that generate signatures faster, e.g.,
+[[thoughts/Elliptic-curve Cryptography (ECC)|elliptic curve]] public-key cryptosystems, but signature verification is slower.
