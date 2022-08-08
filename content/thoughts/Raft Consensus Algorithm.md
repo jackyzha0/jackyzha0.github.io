@@ -8,11 +8,13 @@ aliases:
 - Raft
 ---
 
-> An understandable [[thoughts/consensus|consensus]] algorithm.
+> An understandable [[thoughts/consensus|consensus]] algorithm
 
 A distilled version of the [Raft paper](https://raft.github.io/raft.pdf). For a more graphic version, see this [visualization of Raft by The Secret Lives of Data](http://thesecretlivesofdata.com/raft/).
 
 A really good [video review of the algorithm by Martin Kleppmann](https://www.youtube.com/watch?v=uXEYuDwm7e4&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&index=18)
+
+For a [[thoughts/Byzantine Faults|BFT]]-resilient
 
 ## Distributed Consensus
 When you only have one machine, it is easy to figure out what the state of that machine is in. But what happens when you have multiple machines that need to agree on some value or state?
@@ -25,7 +27,7 @@ This is the problem of *distributed consensus*
 Generally, this is done using a log of actions that are *replicated* across all machines. Keeping this replicated log consistent between all the machines is the job of the *consensus algorithm*. They allow a collection of machines to agree on some shared state which still make sense even when there is latency or unavailability.
 
 In more formal language, consensus algorithms should typically have the following properties:
-1. [[thoughts/safety|Safety]] in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. [[thoughts/fault tolerance#Byzantine Faults|Byzantine Faults]])
+1. [[thoughts/safety|Safety]] in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. [[thoughts/Byzantine Faults|Byzantine Fault Tolerance]])
 2. Functional (available) as long as the majority of servers are operational and can communicate
 3. Latency resilient and does not depend on timing of messages to ensure consistency
 
@@ -118,3 +120,4 @@ You can find a reference implementation on GitHub
 
 - [Miniraft Github Repository](https://github.com/jackyzha0/miniraft)
 - [Miniraft Crate Documentation](https://jzhao.xyz/miniraft/miniraft/)
+

@@ -3,8 +3,6 @@ title: "Fault Tolerance"
 date: 2021-06-23T15:14:28-04:00
 tags:
 - sapling
-aliases:
-- BFT
 ---
 
 How do we defend against attacks in [[thoughts/distributed systems|distributed systems]] with no central authority? We want the system as a whole to continue working, even when some parts are faulty
@@ -14,16 +12,7 @@ How do we defend against attacks in [[thoughts/distributed systems|distributed s
 	- Probability of all $n$ replicas being faulty: $p^n$
 	- Probability of 1 or more replicas being faulty: $1 - (1-p)^n$
 
-Related: [game theory](thoughts/game%20theory.md), [[thoughts/Zooko's Triangle|Zooko's Triangle]], [[thoughts/Sybil Attack|Sybil attack]], [[thoughts/cascading failures|cascading failures]]
-
-## Byzantine Faults
-Sources: [Byzantine Faults on *Wikipedia*](https://en.wikipedia.org/wiki/Byzantine_fault) and [Paper on the Byzantine Generals Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
-
-A **Byzantine fault** is any fault presenting different symptoms to different observers. A **Byzantine failure** is the loss of a system service due to a Byzantine fault in systems that require [consensus](thoughts/consensus.md) between nodes.
-
-Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.
-
-See also: [[thoughts/Byzantine Broadcast|Byzantine Broadcast]], [[thoughts/PBFT|PBFT]]
+Related: [game theory](thoughts/game%20theory.md), [[thoughts/Zooko's Triangle|Zooko's Triangle]], [[thoughts/Sybil Attack|Sybil attack]], [[thoughts/cascading failures|cascading failures]], [[thoughts/Byzantine Faults|Byzantine Faults]]
 
 ### Two Generals Problem
 This thought experiment meant to illustrate the pitfalls and design challenges of attempting to coordinate an action by communicating over an unreliable link. In the experiment, two generals are only able to communicate with one another by sending a messenger through enemy territory. The experiment asks how they might reach an agreement on the time to launch an attack, while knowing that any messenger they send could be captured. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying.

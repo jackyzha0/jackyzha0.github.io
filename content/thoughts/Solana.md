@@ -21,7 +21,7 @@ The whole philosophy behind it is:
 This guarantees that when an output is valid for an input, some time has passed for producing that output.
 
 ## Tower BFT
-Practical [[thoughts/fault tolerance#Byzantine Faults|Byzantine Fault Tolerance]] which uses proof of history as a reliable source of time.
+[[thoughts/PBFT|PBFT]] which uses proof of history as a reliable source of time.
 
 From [Solana Documentation](https://docs.solana.com/implemented-proposals/tower-bft)
 

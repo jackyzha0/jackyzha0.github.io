@@ -255,7 +255,7 @@ I think research logs tend to generally focus too much on what one did rather th
 ![???](thoughts/images/IMG_1805.png)
 
 ### July 5th
-- Finalizing notes on [[thoughts/Tendermint|Tendermint]] and wondering if I should switch out [[thoughts/Raft Consensus Algorithm|Raft]] for it. How valuable is [[thoughts/fault tolerance#Byzantine Faults|BFT]] anyways? Do we assume nodes are prone to potentially malicious takeover?
+- Finalizing notes on [[thoughts/Tendermint|Tendermint]] and wondering if I should switch out [[thoughts/Raft Consensus Algorithm|Raft]] for it. How valuable is [[thoughts/Byzantine Faults|BFT]] anyways? Do we assume nodes are prone to potentially malicious takeover?
 
 ### July 2-4th
 - An 'aha' moment caught in 4k... watch me try to figure out why asynchronous and partially synchronous [[thoughts/system model|system models]] aren't the same thing (s/o Sebastien for being so kind and patient). This was super satisfying! ![[thoughts/images/on-async-partially-sync-models.png]]
@@ -579,7 +579,7 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ### May 2nd
 - Mostly reading about [[thoughts/Raft Consensus Algorithm|Raft]] consensus algorithm today and understanding how it works
-	- Always wondered how these consensus algorithms deal with bad actors -- turn out they don't! That's where [[thoughts/fault tolerance#Byzantine Faults|BFT]] comes in
+	- Always wondered how these consensus algorithms deal with bad actors -- turn out they don't! That's where [[thoughts/Byzantine Faults|BFT]] comes in
 	- Seems to be promising for replicating between trusted peers (potentially applicable)
 - Starting a very minimal stripped down implementation of [[thoughts/Raft Consensus Algorithm|Raft]] in Rust I am nicknaming `miniraft`. Code [here](https://github.com/jackyzha0/miniraft) (but will most likely be private until it is done).
 

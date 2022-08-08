@@ -28,7 +28,7 @@ There are four requirements to such an algorithm:
 4. Termination. Also known as progress, every node must eventually reach a decision.
 
 There are two main protocol paradigms for achieving consensus in the presence of Byzantine nodes:
-1. [[thoughts/fault tolerance#Byzantine Faults|BFT]]-type protocols
+1. [[thoughts/Byzantine Faults|BFT]]-type protocols
 	1. typically use multiple rounds of voting to ensure [[thoughts/consistency|consistency]]
 	2. favour [[thoughts/consistency|consistency]] in the face of an attack (assuming <33% Byzantine as per)
 	3. very difficult to resolve forks in-protocol (Tendermint literally says to communicate out-of-band to resolve this lol)

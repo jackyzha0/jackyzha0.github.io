@@ -1,4 +1,10 @@
-## BitTorrent
+---
+title: "BitTorrent"
+date: 2022-08-08
+tags:
+- seed
+---
+
 Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.
 
 Could be very slow: limited by the throughput possible by those N machines. Peer to peer could speed this up!
