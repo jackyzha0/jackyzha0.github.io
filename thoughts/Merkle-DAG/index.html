@@ -116,13 +116,13 @@ Each node has an identifier which is the result of hashing the node&rsquo;s cont
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,6 +294,54 @@ Jul 14, 2022
 
 
 
+  
+  
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -304,6 +352,12 @@ Jul 14, 2022
 <p>A directed acyclic graph where nodes correspond to versions of the content and arcs correspond to changes (diffs).</p>
 <p>Each node has an identifier which is the result of hashing the node&rsquo;s content.</p>
 <p>Merkle DAG nodes are <em>immutable</em>. Any change in a node would alter its identifier and thus affect all the ascendants in the DAG, essentially creating a different DAG</p>
+<p>Examples of DAGs include:</p>
+<ul>
+<li><code>git</code></li>
+<li><a href="/thoughts/IPFS" rel="noopener" class="internal-link" data-src="/thoughts/IPFS">IPFS</a></li>
+<li><a href="/posts/docker" rel="noopener" class="internal-link" data-src="/posts/docker">Docker</a> images</li>
+</ul>
 
 
     </article>
@@ -333,6 +387,10 @@ Jul 14, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/IPFS/" data-ctx="Merkle-DAG" data-src="/thoughts/IPFS" class="internal-link">IPFS</a>
       </li>
@@ -341,6 +399,12 @@ Jul 14, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Merkle-DAG" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/content-addressed-storage/" data-ctx="Merkle-DAG" data-src="/thoughts/content-addressed-storage" class="internal-link">Content addressed storage</a>
       </li>
       
       

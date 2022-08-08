@@ -22,7 +22,7 @@
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/peer-to-peer/</guid>
-      <description>Bit-torrent Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</description>
+      <description>In contrast to client-server models, peer-to-peer systems are [[thoughts/decentralization|decentralized]] [[thoughts/Network Theory|networks]] with no privileged nodes. Each node performs the same roles as any other.</description>
     </item>
     
     <item>

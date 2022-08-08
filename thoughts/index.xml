@@ -1200,7 +1200,7 @@ Primacy of Consciousness PHIL451A Paper 3
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/peer-to-peer/</guid>
-      <description>Bit-torrent Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</description>
+      <description>In contrast to client-server models, peer-to-peer systems are [[thoughts/decentralization|decentralized]] [[thoughts/Network Theory|networks]] with no privileged nodes. Each node performs the same roles as any other.</description>
     </item>
     
     <item>
@@ -4072,7 +4072,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
+      <description>IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
     </item>
     
     <item>
@@ -4259,6 +4259,15 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       
       <guid>https://jzhao.xyz/thoughts/move-fast-and-break-things/</guid>
       <description>To slow down is to end up default dead; the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jzhao.xyz/thoughts/BitTorrent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/BitTorrent/</guid>
+      <description>BitTorrent Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</description>
     </item>
     
     <item>

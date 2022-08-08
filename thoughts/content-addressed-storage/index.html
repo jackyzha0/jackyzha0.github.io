@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,6 +293,58 @@ Jun 5, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -307,6 +359,9 @@ Jun 5, 2022
 <p>Content-addressed storage or abbreviated CAS, is a way to store information so it can be retrieved based on its content, not its location.</p>
 <p>Location-addressed: e.g. HTTP, you lookup a content by its location (URI). Whoever controls the location controls the content. This location-addressed approach forces us all to pretend that the data are in only one location (even if multiple people have copies of it!)</p>
 <p>Content-addressed: using the content&rsquo;s cryptographic hash to identify it. These links are permanent because the cryptographic hash for a piece of content never changes.</p>
+<a href="#immutable-objects-mutable-references"><h2 id="immutable-objects-mutable-references"><span class="hanchor" ariaLabel="Anchor"># </span>Immutable Objects, Mutable References</h2></a>
+<p>The <a href="/thoughts/Merkle-DAG" rel="noopener" class="internal-link" data-src="/thoughts/Merkle-DAG">Merkle-DAG</a>, immutable content-addressed objects, and mutable pointers to the Merkle-DAG, instantiate a dichotomy present in many successful distributed systems</p>
+<p><a href="/thoughts/IPFS" rel="noopener" class="internal-link" data-src="/thoughts/IPFS">IPFS</a> accomplishes this by creating a separate prefix <code>/ipns/&lt;NodeID&gt;</code> ofr mutable paths. One can prove ownership because only the owner of the private key of <code>NodeID</code> can publish to it</p>
 
 
     </article>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Bit-torrent Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file."
+    content="In contrast to client-server models, peer-to-peer systems are [[thoughts/decentralization|decentralized]] [[thoughts/Network Theory|networks]] with no privileged nodes. Each node performs the same roles as any other."
   />
   <title>
     Peer to peer
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,6 +317,93 @@ Mar 30, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -324,159 +411,9 @@ Mar 30, 2022
 
 
 
-<a href="#bit-torrent"><h2 id="bit-torrent"><span class="hanchor" ariaLabel="Anchor"># </span>Bit-torrent</h2></a>
-<p>Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</p>
-<p>Could be very slow: limited by the throughput possible by those N machines. Peer to peer could speed this up!</p>
-<ul>
-<li>N hosts are called &lsquo;seeds&rsquo;</li>
-<li>Hosts are called peers</li>
-<li>As soon as one of the M peers has a portion of the file it can share it with other peers</li>
-</ul>
-<p>The file is broken into many pieces</p>
-<ul>
-<li>Generally fixed size except for the last one</li>
-<li>Protected by a cryptographic hash (allows reliable detection of corruption)</li>
-</ul>
-<p>A summary (torrent file) gives the necessary start up information</p>
-<ul>
-<li>How many pieces there are</li>
-<li>The hash of each piece</li>
-<li>Somewhere to start looking for peers</li>
-</ul>
-<p>Basic operation</p>
-<ul>
-<li>Finding other peers
-<ul>
-<li>Seeds or trackers to start with</li>
-<li>Peer exchange: each peer &lsquo;gossips&rsquo; about the peers they know about</li>
-<li>Group of peers for one file is a &ldquo;swarm&rdquo;</li>
-<li>Each peer talks to some subset of the &ldquo;swarm&rdquo; at any time</li>
-</ul>
-</li>
-<li>Finding pieces
-<ul>
-<li>Each peer shares the identity of the pieces they own with its peers</li>
-<li>A peer asks a peer who has the file to share it</li>
-</ul>
-</li>
-</ul>
-<p>Generally</p>
-<ul>
-<li>A peer asks for the &lsquo;rarest&rsquo; piece which increases the overall &lsquo;health&rsquo; of the file</li>
-<li>Prioritize ones that are sending the most data to it (preferred peers) &ndash; tit-for-tat
-<ul>
-<li>Discourages &lsquo;selfish&rsquo; behaviour where peers accept pieces but don&rsquo;t share many pieces</li>
-<li>Opportunistic unchoking
-<ul>
-<li>Randomly choose a peer sometimes (prevents problems at the start where there aren&rsquo;t many peers)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Unpopular/rare files can be hard to find seeds for</li>
-</ul>
-<p>It is an open 
 
-
-
-
-
-<a
-  href="/thoughts/Protocol/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/Protocol/">protocol</a>, most implementations use 
-
-
-
-
-
-<a
-  href="/thoughts/TCP/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/TCP/">TCP</a></p>
-<h2 id="blockchainthoughtsblockchainmd">
-
-
-
-
-
-<a
-  href="/thoughts/blockchain/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/blockchain/">Blockchain</a></h2>
-<ul>
-<li>Purpose: distributed, unmodifiable transaction history</li>
-<li>Uses <a href="/thoughts/cryptography" rel="noopener" class="internal-link" data-src="/thoughts/cryptography">cryptography</a> to ensure that records added to the history can never be changed or removed</li>
-<li>Can be implemented in a centralized manner (bank ledgers)
-<ul>
-<li>Primary value of the 
-
-
-
-
-
-<a
-  href="/thoughts/decentralization/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/decentralization/">decentralized</a> approach is that it doesn&rsquo;t require a 
-
-
-
-
-
-<a
-  href="/thoughts/trust/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/trust/">trusted</a> agent</li>
-</ul>
-</li>
-<li>No central repository of the 
-
-
-
-
-
-<a
-  href="/thoughts/truth/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/truth/">truth</a>, each peer holds the entire history
-<ul>
-<li>Incredibly hard to forget history as it is heavily replicated</li>
-</ul>
-</li>
-<li>Dealing with forks
-<ul>
-<li>Can be some disagreement over whether new blocks are included into the chain</li>
-<li>Likelihood of a block being removed from the history gets progressively (exponentially) smaller as it gets older</li>
-</ul>
-</li>
-<li>
-
-
-
-
-
-<a
-  href="/thoughts/bitcoin/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/bitcoin/">Bitcoin</a>
-<ul>
-<li>Anyone can join, initial peers found via DNS</li>
-<li>Uses 
-
-
-
-
-
-<a
-  href="/thoughts/TCP/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/TCP/">TCP</a></li>
-<li>Gossip-based</li>
-<li>Chain is ~200GB</li>
-</ul>
-</li>
-</ul>
+<p>In contrast to client-server models, peer-to-peer systems are <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralized</a> <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">networks</a> with no privileged nodes. Each node performs the same roles as any other.</p>
+<p>Examples include <a href="/thoughts/BitTorrent" rel="noopener" class="internal-link" data-src="/thoughts/BitTorrent">BitTorrent</a>, <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchains</a>, <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a></p>
 
 
     </article>

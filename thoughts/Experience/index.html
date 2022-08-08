@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -339,7 +339,7 @@ Dec 28, 2021
 <p>Built out third-party streaming apps, enabling non-technical content creators to livestream content using Microsoft Teams. Decoupled data models from data views by introducing a data and service layer using GraphQL. Abstracted common functionality between all four streaming apps by creating a streaming hook and error manager context with 98% test coverage.</p>
 <p>Tech used: Jest, Teams SDK, Azure DevOps, JavaScript, GraphQL</p>
 <a href="#2021-bentoml-open-source-contributor--mlh-fellows-class-0"><h2 id="2021-bentoml-open-source-contributor--mlh-fellows-class-0"><span class="hanchor" ariaLabel="Anchor"># </span>2021: BentoML Open Source Contributor &amp; MLH Fellows Class 0</h2></a>
-<p>Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Implemented CLI command to containerize BentoML machine learning models, reducing dependence on external tool workflows. Proposed, implemented, and tested a distributed application-level locking module to allow multiple concurrent operations on models. Reduced docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.</p>
+<p>Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Implemented CLI command to containerize BentoML machine learning models, reducing dependence on external tool workflows. Proposed, implemented, and tested a distributed application-level locking module to allow multiple concurrent operations on models. Reduced Docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.</p>
 <p>Tech used: Pytest, Docker, AWS Lambda, Helm, Kubernetes, Python</p>
 <a href="#2021-nwplus-co-president"><h2 id="2021-nwplus-co-president"><span class="hanchor" ariaLabel="Anchor"># </span>2021: nwPlus Co-president</h2></a>
 <p>Led and coordinated 7 subteams with a total of ~50 team members to run 3 of the largest hackathons in Western Canada. Led logistics for HackCamp, a beginner-focused virtual hackathon, attracting over 500+ attendees, 3.2k+ livestream viewers, and $1200 in donations to charities. Co-lead the creation of a publicly available self-learning resources guidebook for tech beginners. Co-lead the development of our hackathon portal which aims to be a central information hub for hackers to do judging, relay announcements, and view the schedule Handled 200k+ interactions on the site during HackCamp.</p>

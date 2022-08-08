@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -296,49 +296,9 @@ Jun 5, 2022
   
   
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
-  
-  
-  
-  
     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
   
   
     
@@ -362,49 +322,9 @@ Jun 5, 2022
   
   
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
-  
-  
-  
-  
     
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
   
   
     
@@ -428,6 +348,10 @@ Jun 5, 2022
   
   
   
+    
+  
+    
+  
   
     
       
@@ -449,6 +373,140 @@ Jun 5, 2022
 
   
   
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
   
   
     
@@ -477,6 +535,9 @@ Jun 5, 2022
 
 
 <p>IPFS is a decentralized storage and delivery network which builds on fundamental principles of <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">p2p</a> networking and content-based addressing (see <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CID</a>)</p>
+<blockquote>
+<p>Can seen as a single BitTorrent swarm, exchanging objects within one big Git repository</p>
+</blockquote>
 <p>Much like how we look up sites on the internet using URIs, we can look for specific pieces of content by their <a href="/thoughts/content-addressed-storage" rel="noopener" class="internal-link" data-src="/thoughts/content-addressed-storage">content-address</a>.</p>
 <p>Under the hood, IPFS uses</p>
 <ul>
@@ -509,6 +570,20 @@ Jun 5, 2022
 <blockquote>
 <p>Because the CID can describe different codecs relating to different systems, all sorts of systems can interoperate using CIDs, and IPLD and process and cross-link data from any of them.</p>
 </blockquote>
+<a href="#block-exchange-using-bitswap"><h2 id="block-exchange-using-bitswap"><span class="hanchor" ariaLabel="Anchor"># </span>Block Exchange using BitSwap</h2></a>
+<p>BitSwap peers are looking to acquire a set of blocks (<code>want_list</code>), and have another set of blocks to offer in exchange (<code>have_list</code>). Unlike BitTorrent, BitSwap is not limited to the blocks in one torrent. BitSwap operates as a persistent marketplace where node can acquire the blocks they need, regardless of what files those blocks are part of. The blocks could come from completely unrelated files in the filesystem. Nodes come together to barter in the marketplace.</p>
+<a href="#incentivizing-rare-blocks"><h3 id="incentivizing-rare-blocks"><span class="hanchor" ariaLabel="Anchor"># </span>Incentivizing rare blocks</h3></a>
+<p>Of course, there will not be perfect overlaps between nodes&rsquo; <code>have_list</code> and <code>want_list</code>s . Nodes must work for their blocks. In the case that a node has nothing that its peers want (or nothing at all), it seeks the pieces its peers want, with lower priority than what the node wants itself. <strong>This incentivizes nodes to cache and disseminate rare pieces, even if they are not interested in them directly.</strong></p>
+<p>This barter system implies a virtual currency could be created, this would require a global ledger to track ownership and transfer of the currency, which is exactly what <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">Filecoin</a> provides.</p>
+<a href="#incentivizing-satisfied-nodes-to-seed"><h3 id="incentivizing-satisfied-nodes-to-seed"><span class="hanchor" ariaLabel="Anchor"># </span>Incentivizing satisfied nodes to seed</h3></a>
+<p>The protocol must also incentivize nodes to seed when they do not need anything in particular, as they might have the blocks others want. Thus, BitSwap nodes send blocks to their peers optimistically, expecting the debt to be repaid.</p>
+<p>A simple credit-like system solves the problem:</p>
+<ol>
+<li>Peers track their balance (in bytes verified) with other nodes.</li>
+<li>Peers send blocks to debtor peers probabilistically, according to a function that falls as debt increases. The probability function, given a debt ratio $r = \frac{\textrm{bytes sent}}{\textrm{bytes received} + 1}$ is $P(send | r) = 1 - \frac{1}{1 + \exp(6-3r)}$. The debt ratio is a measure of trust: lenient to debts between nodes that have previously exchanged lots of data successfully, and merciless to unknown, untrusted nodes. This also strongly disincentivizes Sybil attacks by making it hard for new nodes to request a lot of blocks without the intention of paying them back.</li>
+</ol>
+<a href="#pinning"><h2 id="pinning"><span class="hanchor" ariaLabel="Anchor"># </span>Pinning</h2></a>
+<p>This ensures the objects are kept in the node’s local storage. Pinning can be done recursively, to pin down all linked descendent objects as well. All objects pointed to are then stored locally. This is particularly useful to persist files, including references</p>
 <a href="#wnfs"><h2 id="wnfs"><span class="hanchor" ariaLabel="Anchor"># </span>WNFS</h2></a>
 <p>Under the Fission project, 
 
@@ -549,6 +624,24 @@ Jun 5, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Merkle-DAG/" data-ctx="IPFS" data-src="/thoughts/Merkle-DAG" class="internal-link">Merkle-DAG</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="IPFS" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
@@ -557,6 +650,12 @@ Jun 5, 2022
       
       <li>
         <a href="/thoughts/Sidetree/" data-ctx="IPFS" data-src="/thoughts/Sidetree" class="internal-link">Sidetree</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/content-addressed-storage/" data-ctx="IPFS" data-src="/thoughts/content-addressed-storage" class="internal-link">Content addressed storage</a>
       </li>
       
       

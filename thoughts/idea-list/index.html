@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="webgpt but its for tools for thought  &ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
+    content="IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
   />
   <title>
     Project Idea List
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -459,6 +459,7 @@ Jun 17, 2021
 
 
 <ul>
+<li>IPFS as a versioned package manager for all software</li>
 <li>
 
 <a href="https://openai.com/blog/webgpt/" rel="noopener">webgpt</a> but its for tools for thought

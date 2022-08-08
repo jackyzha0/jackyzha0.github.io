@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -446,6 +446,12 @@ Feb 26, 2022
       
       
       <li>
+        <a href="/thoughts/BitTorrent/" data-ctx="protocol" data-src="/thoughts/BitTorrent" class="internal-link"></a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/DHCP/" data-ctx="Protocol" data-src="/thoughts/DHCP" class="internal-link">DHCP</a>
       </li>
       
@@ -489,12 +495,6 @@ Feb 26, 2022
       
       <li>
         <a href="/thoughts/money/" data-ctx="protocol" data-src="/thoughts/money" class="internal-link">Money</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/peer-to-peer/" data-ctx="protocol" data-src="/thoughts/peer-to-peer" class="internal-link">Peer to peer</a>
       </li>
       
       
