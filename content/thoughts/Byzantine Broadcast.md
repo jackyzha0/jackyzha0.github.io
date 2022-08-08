@@ -39,7 +39,7 @@ Reliant on a synchronous [[thoughts/system model#Timing behaviour e g latency|sy
 Solves BB for $f \leq 1$, $n \geq 4$. Doesn't hold for Byzantine sender, only Byzantine peers.
 
 ## Dolev-Strong (1983)
-Trying to generalize the naive approach for potentially Byzantine senders by utilizing [[thoughts/signed messages|signature]] chains
+Trying to generalize the naive approach for potentially Byzantine senders by utilizing [[thoughts/digital signatures|signature]] chains
 
 In essence, node $i$ is only convinced of value $v$ at time $t$ if it receives a message that
 - references the value $v$

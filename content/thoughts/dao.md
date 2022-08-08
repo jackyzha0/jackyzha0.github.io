@@ -17,7 +17,7 @@ The most infamous DAO, [The DAO](https://en.wikipedia.org/wiki/The_DAO_(organiza
 
 Stable employment is possible through DAOs, Empty Set Dollar DAO is paying a $180k salary to their community manager
 
-All members can still be anonymous and built reputations attached to their [pseudonym](thoughts/pseudonymity.md) rather than real identity, hopefully helps to create a more even playing field
+All members can still be anonymous and built reputations attached to their [pseudonym](thoughts/pseudonymity.md) rather than real [[thoughts/identity|identity]], hopefully helps to create a more even playing field
 
 ## Potential Issues
 - How does this work for people who want to keep things under NDA/keep IP safe?

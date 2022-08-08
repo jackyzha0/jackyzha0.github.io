@@ -13,7 +13,7 @@ tags:
 	- helps focus on clearing things out, satisfying to see it 'clear out'
 - a text experience where latency increases as more texts are sent
 - what does entropy + erosion of data look like
-	- is they ways to make cryptography that are valid in time windows?
+	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
 - treesitter based CRDT for smart git merges
 - big touchscreen desk
 	- what if i just got a huge old flatscreen tv

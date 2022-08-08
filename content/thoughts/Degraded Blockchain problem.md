@@ -7,7 +7,7 @@ tags:
 
 One thing that I still don't understand about blockchain is the 'trustless' aspect of blockchains. Blockchains are not 'trustless', rather it shifts the [trust](thoughts/trust.md) balance away from trusting people and corporations to trusting an algorithm. 
 
-Yet, how do we go about trusting the algorithm that is 'cryptographically secure' when a good 99.5% of the users don't actually understand how blockchain and cryptography works? 
+Yet, how do we go about trusting the algorithm that is 'cryptographically secure' when a good 99.5% of the users don't actually understand how blockchain and [[thoughts/cryptography|cryptography]] works? 
 
 Come into contact with the [Degraded Blockchain Problem](https://www.fortressofdoors.com/the-degraded-blockchain-problem/):
 

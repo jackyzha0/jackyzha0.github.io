@@ -37,7 +37,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Everything is self-owned and consistency of application state is maintained by storing hashes of actions to a global [[thoughts/DHT|DHT]] which allows for peer accountability
 	- Things that I think are unaddressed
 		- Documentation was well-written but the terminology was confusing at times. Was not immediately obvious what part each piece played
-		- How important is global data-witnessing? Why do we need social pressures for this when we can do this using cryptography?
+		- How important is global data-witnessing? Why do we need social pressures for this when we can do this using [[thoughts/cryptography|cryptography]]?
 			- This also means that progress cannot be made until a node is back online (otherwise, actions remain unvalidated)
 		- Problem of getting people to migrate off of existing platforms remains unsolved
 		- Developer experience is difficult to set up and get started (see [HApp setup docs](https://developer.holochain.org/happ-setup/)) -- heavy use of technical terminology
@@ -105,7 +105,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - My passport is about to expire so I will need to be in Canada for fall :(
 
 ### July 22nd - 23rd
-- Finished up the [[posts/relational-identity|identity piece]]! Cent and B from Metagov gave some very good advice and clarifying feedback on the piece.
+- Finished up the [[posts/digital-identity|identity piece]]! Cent and B from Metagov gave some very good advice and clarifying feedback on the piece.
 	- I think the essay was trying to do too much so I'm going to split out the content and keep all the stuff about agency and legibility in this one.
 	- I want to write another piece eventually about different ways of being online (specifically, collective inter-being vs individualism)
 		- The new atom of identity is not a single entity but a set of relationships. A group chat. A chat that isn’t just a text messaging history but can embed applications and rich worlds on top of it.
@@ -113,7 +113,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - I have a bunch of reading piled up this week since I've been doing a lot of writing so I'll focus on getting through some more stuff today and tomorrow.
 
 ### July 21st 
-- Polishing up [[posts/relational-identity|identity piece]]. I've worked on it enough that I'm starting to feel ick just touching it but I'm happy that I've thought about this deeply. Implications for Rhizome as a whole:
+- Polishing up [[posts/digital-identity|identity piece]]. I've worked on it enough that I'm starting to feel ick just touching it but I'm happy that I've thought about this deeply. Implications for Rhizome as a whole:
 	- Self-sovereignty seems useful for agency *if implemented in ways that don't force legibility*
 		- e.g. be careful about [[thoughts/Verifiable Credential|VCs]] without zkSNARKS
 	- Probably will need to think more heavily about how to model a relation history on the dev side of things as people are used to modelling individual users. Perhaps phrasing the basic item as a *group chat* makes sense?
@@ -126,7 +126,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Will probably draft up a short update email and include a link to the identity piece as soon as it's done.
 
 ### July 19th
-- Slowly reaching a place where I'm happy with the direction of this piece on identity, framing it more around 3 modes of thinking about [[posts/relational-identity|identity]].
+- Slowly reaching a place where I'm happy with the direction of this piece on identity, framing it more around 3 modes of thinking about [[posts/digital-identity|identity]].
 - Got a comment from Zoë Ruha Bell on my essay in Reboot that asked about "the complexities of how moving data between contexts changes its meaning and that individual control over data may not match up well with the relational information encoded in data"
 	- Incidentally, this is exactly what I've been thinking more about! My response:
 	- This is a great question and I'm still grappling with (and in the midst of writing a whole other piece about!). Data in context is incredibly important. Like identity, when taken out of context, it can be incredibly harmful and misused. Pursuing interoperability without considering the intention behind the actions that data encodes can easily turn dangerous very quickly.
@@ -144,7 +144,7 @@ I think research logs tend to generally focus too much on what one did rather th
 ### July 16th - 17th
 - Currently on a two-day writing retreat with Belinda, Athena, and Vincent. It's been such a good mix of sight-seeing and focused writing.
 	- The other choice of spending this weekend was to go to an Art Book Fair and assemble furniture with friends. In all honesty, I'm very glad I chose to focus and write over just socializing.
-	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/relational-identity|verb based identity]]
+	- Some good time away from purely technical reading meant I had time to think more about identity. More thoughts around [[posts/digital-identity|verb based identity]]
 
 ### July 15th
 - Part of the nail of my left pinkie ripped off today argH it is now painful to type :((
@@ -180,7 +180,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - Finished up CRDT implementation collection over at [[thoughts/CRDT Implementations|CRDT Implementations]].. I feel like I'm getting a better grasp at how to write op-based CRDTs but less so for state-based
 
 ### July 11th
-- Seems like there are a lot of open research questions in CRDTs that I could plausibly spend *years* working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic encryption)
+- Seems like there are a lot of open research questions in CRDTs that I could plausibly spend *years* working on (e.g. undo operations in CRDTs, encrypted CRDTs using homomorphic [[thoughts/encryption|encryption]])
 - I need to read more about this but it seems like most traditional consensus algorithms require synchronicity from all nodes for them to be considered honest. I wonder how we can reconcile this methods like CRDTs that allow for more asynchronous forms of consistency
 	- Is it possible to take advantage of the partially synchronous [[thoughts/system model|system model]] and having CRDT-like behaviour in async modes and Raft/Paxos-like behaviour during synchronous periods for compaction
 	- This is especially important as users will rarely have all (or even supermajority) of their nodes online at any given time. Will need to look into variations on Raft that tolerate live membership changes

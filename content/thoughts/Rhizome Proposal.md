@@ -91,7 +91,7 @@ Blog posts explaining distributed systems concepts as I learn and become more fa
 - Explainer on CRDTs
 - Modelling distributed systems
 	- [<1kloc Raft Implementation](https://github.com/jackyzha0/miniraft)
-- [[posts/relational-identity|From legibility to identity]]
+- [[posts/digital-identity|From legibility to identity]]
 - ...more to come
 
 ### Root

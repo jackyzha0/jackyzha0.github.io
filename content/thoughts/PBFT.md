@@ -7,7 +7,7 @@ tags:
 
 *[Practical Byzantine Fault Tolerance](http://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf)* by Miguel Castro and Barbara Liskov
 
-tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/fault tolerance#Byzantine Faults|Byzantine faults]]. It offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/encryption|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/signed messages#Signed Message Digest|signed message digests]]).
+tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/fault tolerance#Byzantine Faults|Byzantine faults]]. It offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/Asymmetric Key Cryptography|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/digital signatures#Signed Message Digest|signed message digests]]).
 
 The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this *explicitly allows for faulty primaries* while the algorithm properly handles.
 

@@ -1,10 +1,10 @@
 ---
-title: "Signed messages"
+title: "Digital signatures"
 date: 2022-06-15
 tags:
 - seed
 aliases:
-- signature
+- signed messages
 ---
 
 > Signatures are cryptographic functions that attest to the origin of a particular message.
@@ -19,10 +19,6 @@ Require 3 algorithms
 1. Key generation algorithm: `seed -> public_key, private_key`
 2. Signing algorithm: `msg, private_key -> msg, signature`
 3. Verification algorithm: `msg, signature, public_key -> boolean`
-
-## Computing Signatures
-- ECDSA Signature over the Secp256k1 [[thoughts/Elliptic-curve Cryptography (ECC)|elliptic curve]]
-- BLS signatures over the BLS12-381 curves
 
 ## Signed Blobs
 [From Farcaster Docs](https://www.farcaster.xyz/docs/signed-blob)
@@ -47,7 +43,7 @@ The structure that holds this data is called a Signed Blob, and it contains thre
 3.  Perform an ecRecover on the signature with the merkle root to retrieve the address.
 4.  Check that the recovered address matches the expected address.
 
-## Signed Message Digest
+## Signed Message Digests
 - Signature of long messages is computationally expensive
 - We can compute a fixed-length "fingerprint"
 	- Apply hash function $H$ to message $m$, giving a fixed size message digest, $H(m)$
@@ -56,15 +52,5 @@ The structure that holds this data is called a Signed Blob, and it contains thre
 	- Alice receives $m$ and computes $H_{new}(m)$
 	- Alice receives signed digest $K_B^-(H(m))$ and computes $K_B^+(K_B^-(H(m)))$
 	- If $K_B^+(K_B^-(H(m))) = H_{new}(m)$, the message is considered signed (and untampered)
-- Alternative: message authentication code (MAC)
-	- Add a secret to the end of each message that is also hashed. It is extremely unlikely that anyone who doesn't know the secret to come up with an appropriate hash
-	- Shared secret $s$
-	- Hash is computed not on message $m$, but on $m+s$
-		- Bob sends message $h = H(m + s)$
-		- Alice receives $(m, h)$ and computes $H(m + s)$
-		- If $h = H(m+s)$, message is considered signed
-	- Fast because [[thoughts/encryption|encryption]] is not necessary
+- Alternatively, [[thoughts/MAC|MACs]]
 
-## Digital Signatures vs MACs
-MACs can be computed three orders of magnitude faster than digital signatures. For example, a 200MHz Pentium Pro takes 43ms to generate a 1024-bit modulus RSA signature of an MD5 digest and 0.6ms to verify the signature, whereas it takes only 10.3$\mu s$ to compute the MAC of a 64-byte message on the same hardware in our implementation. There are other publickey cryptosystems that generate signatures faster, e.g.,
-[[thoughts/Elliptic-curve Cryptography (ECC)|elliptic curve]] public-key cryptosystems, but signature verification is slower.

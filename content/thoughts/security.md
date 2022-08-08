@@ -40,10 +40,6 @@ What level of the [[thoughts/internet computing|internet computing stack]] shoul
 		- denial of service: prevent service from being used by others
 - Given that Trudy can see all the data, how do we provide confidentiality? [[thoughts/encryption|Encryption]]!
 
-## Symmetric Key Cryptography
-- Bob and Alice share same key $K_S$
-- Method/algorithm maybe be different (opposite) for decryption but same key is used
-
 ## Block Ciphers
 - Message is broken into blocks (e.g. 64-bits of data)
 - Each block is encrypted/decrypted separately
@@ -72,17 +68,9 @@ What level of the [[thoughts/internet computing|internet computing stack]] shoul
 	- Bob applies CA's public key to confirm certificate's authenticity
 	- Certificate contains Alice's public key
 
-
-
 ## Preventing Replay Attacks
 - Nonce - value that will only ever be used once (usually derived from clock time)
 - A sort of challenge, Alice wants Bob to prove they have received the nonce by sending them back that same nonce
 - Ensures this is a new conversation between Alice and Bob
 
-## Hash Functions
-1. Order should matter, should be very unlikely for two messages two have a hash collision
-2. Examples of good hash functions
-	1. MD5: compute a 128-bit message digest in a 4-step process
-	2. SHA-1: US NIST standard, 160-bit digest
-	3. SHA-256 and SHA-512 are more secure
-
+See also: [[thoughts/hash function|hash functions]]

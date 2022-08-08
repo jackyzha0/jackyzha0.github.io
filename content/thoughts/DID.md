@@ -7,7 +7,7 @@ tags:
 
 Summarized from [W3C Proposal](https://www.w3.org/TR/did-core)
 
-[Decentralized identifiers](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers) (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of cryptography.
+[Decentralized identifiers](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers) (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of [[thoughts/cryptography|cryptography]].
 
 > They are designed to enable individuals and organizations to generate their own identifiers using systems they trust. These new identifiers enable entities to prove control over them by authenticating using cryptographic proofs such as digital signatures.
 
@@ -34,7 +34,7 @@ Can be thought of like a public decentralized keychain. It binds a public/privat
 
 The VDR can be hosted/based on any platform (e.g. on distributed [[thoughts/blockchain|blockchains]] or just hosted files on GitHub)
 
-A DID Document can have arbitrary content. It contains references to "controllers" which are entities that have permission to make changes to a DID Document. It can also contain various cryptographic data delated to the DID subject (e.g. RSA, keys, etc.)
+A DID Document can have arbitrary content. It contains references to "controllers" which are entities that have permission to make changes to a DID Document. It can also contain various cryptographic data delated to the DID subject (e.g. [[thoughts/RSA|RSA]], keys, etc.)
 
 ## What it enables
 - Login without usernames or passwords

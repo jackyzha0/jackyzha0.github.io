@@ -5,10 +5,11 @@ tags:
 - seed
 aliases:
 - elliptic curve
+- ECC
 ---
 
-- A form of asymmetric cryptography
-- Much smaller key-sizes than RSA
+- A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]]
+- Much smaller key-sizes than [[thoughts/RSA|RSA]]
 - Elliptic Curve properties (specifically looking at Ed25519)
 	- Formula follows something like $y^2 = x^3 + ax + b$
 	- Symmetric about the x-axis

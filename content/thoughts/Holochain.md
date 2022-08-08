@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-> Holochain is an open-source application development framework and peer-to-peer networking protocol. It allows you to create truly serverless applications with high levels of security, reliability, and performance. Every user runs the application on their own device, creates and stores their own data, and talks directly to other users. The security of the application is supported by both cryptography and peer accountability.
+> Holochain is an open-source application development framework and peer-to-peer networking protocol. It allows you to create truly serverless applications with high levels of security, reliability, and performance. Every user runs the application on their own device, creates and stores their own data, and talks directly to other users. The security of the application is supported by both [[thoughts/cryptography|cryptography]] and peer accountability.
 
 Summarized from [Holochain Docs](https://developer.holochain.org/concepts/1_the_basics/)
 

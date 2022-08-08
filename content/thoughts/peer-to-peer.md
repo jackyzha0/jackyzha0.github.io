@@ -50,7 +50,7 @@ It is an open [protocol](thoughts/Protocol.md), most implementations use [TCP](t
 ## [Blockchain](thoughts/blockchain.md)
 
 - Purpose: distributed, unmodifiable transaction history
-- Uses cryptography to ensure that records added to the history can never be changed or removed
+- Uses [[thoughts/cryptography|cryptography]] to ensure that records added to the history can never be changed or removed
 - Can be implemented in a centralized manner (bank ledgers)
 	- Primary value of the [decentralized](thoughts/decentralization.md) approach is that it doesn't require a [trusted](thoughts/trust.md) agent
 - No central repository of the [truth](thoughts/truth.md), each peer holds the entire history

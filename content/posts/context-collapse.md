@@ -28,7 +28,7 @@ If we're expected to keep growing as people, these thoughts and opinions will ob
 In order to answer that question, let us make a brief foray into the realm of psychology. Why do humans tend to act differently in different environments? I think three key aspects of behaviour play a role here:
 
 ### People are unique
-No one individual has the exact same interests, goals, values, and identity as you. We have different friends and environments, so we create different contexts in which we can exercise different aspects of ourselves. People find spaces where they can authentically express all the dimensions of themselves. If a situation only exercises one axis of our self-identity, we will actively seek out places to exercise other axes.
+No one individual has the exact same interests, goals, values, and [[thoughts/identity|identity]] as you. We have different friends and environments, so we create different contexts in which we can exercise different aspects of ourselves. People find spaces where they can authentically express all the dimensions of themselves. If a situation only exercises one axis of our self-identity, we will actively seek out places to exercise other axes.
 
 ### Behaviour is sticky
 It is easier to travel along a path well-travelled than one covered in weeds and bush -- if you do something once, it becomes easier to do it again. Similarly, doing something with a certain context once means it becomes easier to repeat that same behaviour in that context again. If I use Twitter as my social media of choice to post memes, I'm likely to continue using it like so.

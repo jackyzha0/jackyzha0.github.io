@@ -40,7 +40,7 @@ Valid in dreams, but also [games](thoughts/games.md)?
 ## Identity
 Essay by Jenny Odell and in [Kopi Chats on Substack](https://kopiclub.substack.com/p/letter-37-loneliness-vs-being-alone)
 
-> _“When I examine my identity, I do see an inalienable spirit grasping for infinity. But in the very same place, I also see an intersection of historical and cultural vectors, held up by **a web of countless reliances**.”_
+> _“When I examine my [[thoughts/identity|identity]], I do see an inalienable spirit grasping for infinity. But in the very same place, I also see an intersection of historical and cultural vectors, held up by **a web of countless reliances**.”_
 
 Reminds me of Indra's Net, that everything is [interdependent](thoughts/interdependence.md), [empty](thoughts/emptiness.md) of dependent origination.
 

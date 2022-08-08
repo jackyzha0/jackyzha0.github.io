@@ -16,3 +16,4 @@ Dispersal is antagonistic to life. Density is the only [[thoughts/morphology|mor
 Wanted it to be a caravansary, a traditional inn with central courtyard for travelers in the desert regions of Asian or North Africa that often served as a stopover for ideas.
 
 ![[thoughts/images/arcosanti.png]]
+

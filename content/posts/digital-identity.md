@@ -8,7 +8,7 @@ tags:
 
 *What is identity? Who defines it? Who controls it? What is its relationship to software?*
 
-Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.
+Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.
 
 But for engineers building these digital identities, the primary focus is on legibility: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed[^1]. 
 
@@ -57,13 +57,13 @@ Having individuals completely own their identities (e.g. [[thoughts/Self-soverei
 
 When I think about what digital identity ultimately feels useful for, it is to gesture at *capabilities* rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: "digital identity should not be about who you are, but what you are authorized to do." [^5] 
 
-> "[A model of identity as capabilities] considers it to be dynamic, multiple, informational, temporary, contextual. Whereas the [model of identity as attributes] attach actions and interactions to actors, the [capability model] recognises that identity is co-emergent with actions and interactions in contexts." (AKASHA and Kernel[^6])
+> "[A model of identity as capabilities] considers it to be dynamic, multiple, informational, temporary, contextual. Whereas the [model of identity] as attributes] attach actions and interactions to actors, the [capability model] recognises that identity is co-emergent with actions and interactions in contexts." (AKASHA and Kernel[^6])
 
 From a software perspective, this isn't a new representation of digital identity either. [[thoughts/UCAN|UCAN]] serves to be a promising way to delegate permissions and actions through a [[thoughts/DID|decentralized identity]]. JWTs have been granting permissions to users for a decade. New forms of token-based access using NFTs are being experimented with.
 
 > Everything that a user is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format. _([ucan.xyz](https://ucan.xyz/))_
 
-There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using [[thoughts/encryption|public-key cryptography]] means that we can prove the same person you issued the access token to is now requesting access *without* revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
+There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using [[thoughts/Asymmetric Key Cryptography|public-key cryptography]] means that we can prove the same person you issued the access token to is now requesting access *without* revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.
 
 This feels promising. A token that grants access isn’t making legible any information that doesn’t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer to keep real-world identities and digital ones separate.
 

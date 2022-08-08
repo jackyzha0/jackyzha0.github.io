@@ -7,7 +7,7 @@ aliases:
 - PKI
 ---
 
-Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]
+Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage [[thoughts/Asymmetric Key Cryptography|public key cryptography]]. Related is the [[thoughts/Key Sharing Problem|key sharing problem]].
 
 For example, it can help ensure that all peers in the network know each other's public keys (i.e. that public keys are... public knowledge)
 
