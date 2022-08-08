@@ -18,7 +18,9 @@ A digital garden is not a file cabinet, nor is it fully an index. A digital gard
 
 This is not because I don't like order, but because I think **a dash of chaos and entropy is good for new ideas**. They help connect two separate ideas that you normally would not have associated with each other, and to imagine the 'what if' more frequently.
 
-My goal with a digital garden is not purely as an [organizing system](thoughts/organizing%20system.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it.
+> But there is also a philosophical basis for this which to me is quite practical. A pretty good master analogy is that it’s an attempt to make a big stew pot out of my brain – there is tremendous value in allowing all of these notes and ideas and observations to stew and ferment in there. For me, the real power comes when ideas intermingle and I’m able to discover connections that I truly could never have dreamed of under normal conditions. ([Robin Sloan](https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085)on [[thoughts/rhizomatic vs arborescent|rhizomatic]] notetaking)
+
+My goal with a digital garden is not purely as an [organizing system](thoughts/organizing%20system.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it. [[thoughts/rhizomatic vs arborescent|Rhizomatic, not arboresecent.]]
 
 This is the problem with the file cabinet: it focuses on efficiency of access and [interoperability](thoughts/interoperability.md) rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/A%20City%20is%20not%20a%20Tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
 
@@ -52,9 +54,7 @@ I've started developing a process to better manage my process for information in
 ### Seeds
 I am a person who needs a very low friction way to dump new ideas and things to look at in the future.
 
-I use [Draft](https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijlaapmiilabpldhmhekeionfh?hl=en) by Slite to have a 'scratch space' in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It's my Apple Notes for my laptop.
-
-I use [Curius](https://curius.app/) to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
+I use [Draft](https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijlaapmiilabpldhmhekeionfh?hl=en) by Slite to have a 'scratch space' in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It's my Apple Notes for my laptop. I use [Curius](https://curius.app/) to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.
 
 Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For [projects](thoughts/idea%20list.md), writing, and all sorts of reading. Even when reading books, I don't like to take complex notes right away will only bookmark or highlight phrases. I will eventually come back to the bookmarks a second time to generate insights and actual thoughts. It feels like this weeds out unnecessary noise and provides a natural chance for spaced repetition.
 
@@ -77,6 +77,7 @@ Maybe you'll find this as an incentive to start your own.
 
 > I'd like digital garden to be like a bonsai tree. Carefully growing, trimming, pruning, artfully shaping a beautiful tree of resources and ideas
 
-![https://www.are.na/block/2175982](/thoughts/images/garden-bird.png)*'Everyone tends his or her own little [epistemological](thoughts/epistemology.md)' garden, growing ideas from seed and sharing them with anyone who comes by.*
+![[thoughts/images/garden-bird.png|500]]
+*'Everyone tends his or her own little [epistemological](thoughts/epistemology.md)' garden, growing ideas from seed and sharing them with anyone who comes by.*
 
 [Image Source](https://www.are.na/block/2175982)

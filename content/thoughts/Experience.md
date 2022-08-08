@@ -17,7 +17,7 @@ Built out third-party streaming apps, enabling non-technical content creators to
 Tech used: Jest, Teams SDK, Azure DevOps, JavaScript, GraphQL
 
 ## 2021: BentoML Open Source Contributor & MLH Fellows Class 0
-Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Implemented CLI command to containerize BentoML machine learning models, reducing dependence on external tool workflows. Proposed, implemented, and tested a distributed application-level locking module to allow multiple concurrent operations on models. Reduced docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.
+Selected as one of 144 fellows to be part of the inaugural class of the MLH Fellowship program from a pool of 20,000 applicants. Implemented CLI command to containerize BentoML machine learning models, reducing dependence on external tool workflows. Proposed, implemented, and tested a distributed application-level locking module to allow multiple concurrent operations on models. Reduced Docker image size by 60% to enable lighter deployments by building Debian-slim based Docker images for model server. Created Helm chart allowing users to deploy the model storage component to a Kubernetes cluster with a single command rather than needing to follow an entire guide.
 
 Tech used: Pytest, Docker, AWS Lambda, Helm, Kubernetes, Python
 

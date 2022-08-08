@@ -91,3 +91,14 @@ Linus Lee on [Browsers as Tools of Thought](https://thesephist.com/posts/browser
 > A tool is something that takes an existing workflow, and makes it more efficient. A nail is an efficient way of holding pieces of wood together; a to-do app is an efficient way of remembering your responsibilities. A medium, on the other hand, gives us new agency or power by which we can do something we couldn’t do before.
 
 **The best mediums are instead collections of generic, multi-purpose _components_ that mesh together well**
+
+
+## Tasting Notes
+[Robin Sloan shares his recipe for taking notes that spark novels](https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085)
+
+> But the interesting thing about Robin is he doesn’t look at these things as bricks exactly. They don’t combine together in predictable, linear ways.
+> 
+> Instead, Robin’s notes are more like ingredients—deep yellow saffron, Ceylon cinnamon, black garlic, and white truffle—bits of the world that he throws together into a pot and covers with a heavy lid. He turns up the heat, he adds salt to taste—until out comes a story. 
+
+### On inventing new containers
+I describe myself as a ‘media inventor’, which I know sounds like a strange label. To me, it means that a lot of my work – not really my novels, but almost everything else – involves inventing a format or container at the same time that I’m writing or imagining what goes into it.

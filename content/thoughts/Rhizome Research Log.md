@@ -13,7 +13,8 @@ I think research logs tend to generally focus too much on what one did rather th
 - I want to target 60 updates per second (~16ms budget) for local and 10 updates per second (~100ms budget) for global updates
 	- This is a good target to aim for but also wary of premature optimization
 	- Will likely need to just build stuff out first and experiment to see if it is usable
-- Musings on getting people to offramp out of existing systems
+- Spent some time restructuring all my notes around [[thoughts/cryptography|cryptography]] to have better note and concept separation
+- Reading more about [[thoughts/IPFS|IPFS]], their BitSwap protocol for block exchange is a super cool case study on how to do incentive design.
 
 ### August 5th - 7th
 - Went to [Hackclub Assemble](https://assemble.hackclub.com/) and was just inspired by the magnitude of talent of the next generation of hackers and builders. Zach (+ Sam and rest of the HC team) really blew it out of the park this time. The theme was to build something completely useless and the kids went wild with it. I still strongly believe that one of the best signals for someone who *deeply* and intrinsically cares about technology is one who can still play and tinker for the hell of it.

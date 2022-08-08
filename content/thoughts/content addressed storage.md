@@ -14,3 +14,8 @@ Content-addressed storage or abbreviated CAS, is a way to store information so i
 Location-addressed: e.g. HTTP, you lookup a content by its location (URI). Whoever controls the location controls the content. This location-addressed approach forces us all to pretend that the data are in only one location (even if multiple people have copies of it!)
 
 Content-addressed: using the content's cryptographic hash to identify it. These links are permanent because the cryptographic hash for a piece of content never changes. 
+
+## Immutable Objects, Mutable References
+The [[thoughts/Merkle-DAG|Merkle-DAG]], immutable content-addressed objects, and mutable pointers to the Merkle-DAG, instantiate a dichotomy present in many successful distributed systems
+
+[[thoughts/IPFS|IPFS]] accomplishes this by creating a separate prefix `/ipns/<NodeID>` ofr mutable paths. One can prove ownership because only the owner of the private key of `NodeID` can publish to it 

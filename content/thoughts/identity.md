@@ -21,6 +21,9 @@ Our digital artifacts and spaces are reflections of our real selves. We feel lik
 In part, this is why I think having your own little plot on the internet to change and modify at your own whim is worth protecting. This is our last little bit of land in an era where we leave our wizardly powers to build worlds of our choosing at the door of digital giants.
 
 ![[thoughts/images/call for hand made tech.png|500]]
+
+> Think about it: there’s no way to make a web page or a blog that is not an act of playing with its form at the same time as you're creating its content. So it just seemed natural: the world was always telling me that you worked on those two things – the container and its contents – together. ([Robin Sloan on websites and notes](https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085))
+
 See also: [[thoughts/cozy software|cozy software]]
 
 ## Digital Legibility
