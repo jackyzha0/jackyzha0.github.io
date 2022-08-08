@@ -23,7 +23,7 @@ Every node has a private input, there is no distinguished sender. All non-Byzant
       
       <guid>https://jzhao.xyz/thoughts/PBFT/</guid>
       <description>Practical Byzantine Fault Tolerance by Miguel Castro and Barbara Liskov
-A form of [[thoughts/State Machine Replication (SMR)|state machine replication]] which offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/encryption|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/signed messages#Signed Message Digest|signed message digests]]).</description>
+tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/fault tolerance#Byzantine Faults|Byzantine faults]].</description>
     </item>
     
     <item>

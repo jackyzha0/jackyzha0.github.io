@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="Practical Byzantine Fault Tolerance by Miguel Castro and Barbara Liskov
-A form of [[thoughts/State Machine Replication (SMR)|state machine replication]] which offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/encryption|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/signed messages#Signed Message Digest|signed message digests]])."
+tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/fault tolerance#Byzantine Faults|Byzantine faults]]."
   />
   <title>
     PBFT
@@ -116,13 +116,13 @@ A form of [[thoughts/State Machine Replication (SMR)|state machine replication]]
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -448,6 +448,64 @@ Aug 5, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -458,29 +516,131 @@ Aug 5, 2022
 <p><em>
 
 <a href="http://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf" rel="noopener">Practical Byzantine Fault Tolerance</a></em> by Miguel Castro and Barbara Liskov</p>
-<p>A form of <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> which offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/signed-messages#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">signed message digests</a>).</p>
-<p>The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this <em>explicitly allows for faulty primaries</em> as the algorithm actually handles this.</p>
-<p>Roughly, the algorithm works as follows (very similar to <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> and Paxos)</p>
+<p>tldr; one of the first <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> algorithms with a partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> that can tolerate <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine faults</a>. It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/signed-messages#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">signed message digests</a>).</p>
+<p>The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this <em>explicitly allows for faulty primaries</em> while the algorithm properly handles.</p>
+<p>The algorithm works as follows</p>
 <ol>
-<li>A client $c$ sends a request for operation $o$ to a node in the cluster: $\langle Request, o, t, c \rangle_{\sigma_c}$
+<li>A client $c$ sends a request for operation $o$ to a node in the cluster: $\langle \textrm{Request}, o, t, c \rangle_{\sigma_c}$
 <ol>
 <li>If a replica receives the request, it forwards it to the leader</li>
 </ol>
 </li>
 <li>The primary multicasts the request to the backup nodes in a three-phase protocol. The pre-prepare and prepare phases are used to totally order requests sent in the same view even when the primary, which proposes the ordering of requests, is faulty
 <ol>
-<li>Pre-prepare</li>
-<li>Prepare</li>
-<li>Commit</li>
+<li>Pre-prepare: mainly used to ensure request was assigned sequence number $n$ in view $v$. Primary $p$ assigns a sequence number $n$ to the request and multicasts a pre-prepare message with digest $m$: $\langle \langle \textrm{Pre-prepare}, v, n, d \rangle_{\sigma_p}, m \rangle$
+<ol>
+<li>A replica $i$ accepts a pre-prepare message iff:
+<ol>
+<li>It is in view $v$</li>
+<li>$d$ is the digest for $m$ and the signature is correct</li>
+<li>has not seen a pre-prepare message with the same $v$ and $n$ with a different digest $d$</li>
+<li>sequence number is between some $h$ and $H$</li>
 </ol>
 </li>
-<li>Replicas execute the request and send a reply to the client</li>
+</ol>
+</li>
+<li>Prepare
+<ol>
+<li>If replica $i$ accepts the pre-prepare message, it enters the prepare phase by multicasting a $\langle \textrm{Prepare}, v, n, d, i \rangle_{\sigma_i}$</li>
+<li>We define a replica $i$ as prepared iff $i$ has in its log:
+<ol>
+<li>The request $m$</li>
+<li>A pre-prepare for $m$ in view $v$ with sequence number $n$</li>
+<li>$&gt;2f$ prepares that match the pre-prepare based on $v$, $n$, and $d$</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Commit
+<ol>
+<li>If we are prepared, we have supermajority agreement which means all honest replicas agree on the requests in view $v$</li>
+<li>Replica $i$ multicasts $\langle \textrm{Commit}, v, n, D(m), i \rangle_{\sigma_i}$</li>
+<li>Replicas accept commit messages and insert them in their log provided they are properly signed, the view number in the message is equal to the replica’s current view, and the sequence number is between $h$ and $H$</li>
+<li>This phase ensures that if a message is considered committed locally, then it should have been committed for the cluster
+<ol>
+<li>A message $m$ is considered committed locally on replica $i$ if it has a log entry indicating it has prepared $m$ with view $v$ and sequence number $n$ and has also accepted $2f+1$ commits that match the pre-prepare for $m$
+<ol>
+<li>After a $m$ is considered committed locally and all $m&rsquo;$ with lower $n$ have been executed, $i$ executes $m$ and applies the state change (as we don&rsquo;t assume ordered message delivery, keeping messages until ready is critical to ensuring message ordering)</li>
+<li>$i$ then sends a reply to the client: $\langle \textrm{Reply}, v, t, c, i, r \rangle_{\sigma_i}$</li>
+</ol>
+</li>
+<li>A message $m$ is considered committed on the cluster if for all $i$ in some $f+1$ honest replicas, it has a log entry indicating it has prepared $m$ with view $v$ and sequence number $n$</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
 <li>The client waits for $f + 1$ replies from different replicas with the same result; this is the end result
 <ol>
 <li>If the client doesn&rsquo;t receive replies in a timely manner, it broadcasts the request to all replicas. If the request has already been processed, the replicas simply re-send the reply (as replicas cache the last reply sent to each client)</li>
 </ol>
 </li>
 </ol>
+<p><img src="/thoughts/images/3pc-pbft.png" width="auto" /><em>Replica 0 is the primary, replica 3 is faulty, and C is the client</em></p>
+<a href="#garbage-collection"><h2 id="garbage-collection"><span class="hanchor" ariaLabel="Anchor"># </span>Garbage Collection</h2></a>
+<p>As we assume only partially synchronous model, we can&rsquo;t assume any unresponsive node won&rsquo;t rejoin at some later point. So either, we need to keep all log entries around potentially forever (not idea), or have some way to transfer state between nodes (which requires nodes to prove correctness of state).</p>
+<p>Generate state correctness proofs are expensive so only happen once every 100 sequence numbers (a stable checkpoint).</p>
+<p>Proof generation:</p>
+<ol>
+<li>When a replica $i$ reaches a checkpoint, it multicasts a message $\langle \textrm{Checkpoint}, n, d, i \rangle_{\sigma_i}$ where $d$ is the digest of the state</li>
+<li>A replica collects checkpoint messages until they have $2f+1$ messages for the same sequence number $n$ and digest $d$
+<ol>
+<li>$2f+1$ messages are the proof of correctness for the checkpoint</li>
+<li>A checkpoint with a proof means that the replica is safe to discard all log messages related to sequence number $n$</li>
+</ol>
+</li>
+</ol>
+<p>Additionally, this checkpointing determines what the waterlevel $h$ and $H$ are</p>
+<ul>
+<li>$h$ is the sequence number of the last stable checkpoint</li>
+<li>$H = h + k$ where $k$ is generally twice the gap between stable checkpoints (e.g. 200)</li>
+</ul>
+<a href="#view-changes"><h2 id="view-changes"><span class="hanchor" ariaLabel="Anchor"># </span>View Changes</h2></a>
+<p>Similar to the concept of term changes and heartbeats in <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a></p>
+<p>If the timer of replica $i$ expires in view $v$, it can broadcast a message to move the system to view $v + 1$</p>
+<ul>
+<li>It stops accepting messages (other than checkpoint, view change and new view messages)</li>
+<li>Multicasts a $\langle \textrm{View-change}, v + 1, n , \mathcal C, \mathcal P, i \rangle_{\sigma_i}$ to all nodes
+<ul>
+<li>$n$ is the sequence number of the last stable checkpoint $s$ known to $i$</li>
+<li>$\mathcal C$ is the set of $2f+1$ certificates for $s$</li>
+<li>$\mathcal P$ is a set of sets $\mathcal{P}_m$ for each message $m$ with a sequence number higher than $n$</li>
+<li>Each $\mathcal{P}_m$ is the set containing
+<ul>
+<li>A valid pre-prepare message for $m$</li>
+<li>$2f$ matching valid prepare messages from different replicas</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>When the initiator $p$ of view $v + 1$ receives $2f$ valid view-change messages, it multicasts a new $\langle \textrm{New-view}, v + 1, \mathcal V, \mathcal O \rangle_{\sigma_p}$
+<ul>
+<li>$\mathcal V$ is the set of all received $2f$ view-change messages along with the initial view-change message $p$ sent out</li>
+<li>$\mathcal O$ is the set of pre-prepare messages computed as follows:
+<ul>
+<li><em>min-s</em>: latest stable checkpoint in $\mathcal V$</li>
+<li><em>max-s</em>: highest sequence number in a prepare message in $\mathcal V$</li>
+<li>For each $n$ between <em>min-s</em> and <em>max-s</em>
+<ul>
+<li>If there is some message in $\mathcal P$ where the sequence number matches $n$
+<ul>
+<li>Create a new message $\langle \textrm{Pre-prepare}, v+1, n,d \rangle_{\sigma_p}$</li>
+</ul>
+</li>
+<li>If there isn&rsquo;t
+<ul>
+<li>Create a new message $\langle \textrm{Pre-prepare}, v+1, n,d^{\textrm{null}} \rangle_{\sigma_p}$ where $d^{\textrm{null}}$ is the digest of a noop request</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Leader appends all messages in $\mathcal O$ to its log and enters view $v + 1$</li>
+</ul>
+</li>
+</ul>
 
 
     </article>
@@ -504,6 +664,16 @@ Aug 5, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="PBFT" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
       
       
       <li>

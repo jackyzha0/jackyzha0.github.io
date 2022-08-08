@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -396,6 +396,40 @@ Jun 15, 2022
     
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -483,6 +517,9 @@ Jun 15, 2022
 </ul>
 </li>
 </ul>
+<a href="#digital-signatures-vs-macs"><h2 id="digital-signatures-vs-macs"><span class="hanchor" ariaLabel="Anchor"># </span>Digital Signatures vs MACs</h2></a>
+<p>MACs can be computed three orders of magnitude faster than digital signatures. For example, a 200MHz Pentium Pro takes 43ms to generate a 1024-bit modulus RSA signature of an MD5 digest and 0.6ms to verify the signature, whereas it takes only 10.3$\mu s$ to compute the MAC of a 64-byte message on the same hardware in our implementation. There are other publickey cryptosystems that generate signatures faster, e.g.,
+<a href="/thoughts/Elliptic-curve-Cryptography-ECC" rel="noopener" class="internal-link" data-src="/thoughts/Elliptic-curve-Cryptography-ECC">elliptic curve</a> public-key cryptosystems, but signature verification is slower.</p>
 
 
     </article>

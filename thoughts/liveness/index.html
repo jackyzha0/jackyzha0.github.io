@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c9a0ef1ede680c5bbf4fc973cc75e1e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9bb4c42f005c3ab5667876b0db4bd82b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -405,6 +405,10 @@ Jul 3, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/33-Impossibility-Result/" data-ctx="liveness" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
@@ -425,6 +429,12 @@ Jul 3, 2022
       
       <li>
         <a href="/thoughts/PBFT/" data-ctx="liveness" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="liveness" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       
