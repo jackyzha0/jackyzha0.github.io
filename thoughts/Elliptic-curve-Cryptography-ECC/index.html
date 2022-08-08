@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="A form of asymmetric cryptography Much smaller key-sizes than RSA Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 &#43; ax &#43; b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &ldquo;dot&rdquo; function -&gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B."
+    content="A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] Much smaller key-sizes than [[thoughts/RSA|RSA]] Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 &#43; ax &#43; b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &ldquo;dot&rdquo; function -&gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B."
   />
   <title>
     Elliptic-curve Cryptography (ECC)
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,6 +293,50 @@ Jun 23, 2022
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -301,8 +345,8 @@ Jun 23, 2022
 
 
 <ul>
-<li>A form of asymmetric cryptography</li>
-<li>Much smaller key-sizes than RSA</li>
+<li>A form of <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">asymmetric cryptography</a></li>
+<li>Much smaller key-sizes than <a href="/thoughts/RSA" rel="noopener" class="internal-link" data-src="/thoughts/RSA">RSA</a></li>
 <li>Elliptic Curve properties (specifically looking at Ed25519)
 <ul>
 <li>Formula follows something like $y^2 = x^3 + ax + b$</li>
@@ -366,14 +410,34 @@ Jun 23, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
-        <a href="/thoughts/encryption/" data-ctx="elliptic curve cryptography" data-src="/thoughts/encryption" class="internal-link">Encryption</a>
+        <a href="/thoughts/Asymmetric-Key-Cryptography/" data-ctx="ECC" data-src="/thoughts/Asymmetric-Key-Cryptography" class="internal-link">Public-key Cryptography</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/signed-messages/" data-ctx="elliptic curve" data-src="/thoughts/signed-messages" class="internal-link">Signed messages</a>
+        <a href="/thoughts/RSA/" data-ctx="elliptic curve cryptography" data-src="/thoughts/RSA" class="internal-link">RSA</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/cryptography/" data-ctx="elliptic curve" data-src="/thoughts/cryptography" class="internal-link">Cryptography</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/encryption/" data-ctx="ECC" data-src="/thoughts/encryption" class="internal-link">Encryption</a>
       </li>
       
       

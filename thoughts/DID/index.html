@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="Summarized from W3C Proposal
- Decentralized identifiers (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of cryptography."
+ Decentralized identifiers (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of [[thoughts/cryptography|cryptography]]."
   />
   <title>
     DID
@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -498,6 +498,74 @@ May 28, 2022
     
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -510,7 +578,7 @@ May 28, 2022
 <a href="https://www.w3.org/TR/did-core" rel="noopener">W3C Proposal</a></p>
 <p>
 
-<a href="https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers" rel="noopener">Decentralized identifiers</a> (DIDs) are a new type of <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">self-sovereign identity</a> that enables verifiable, decentralized digital identity through the use of cryptography.</p>
+<a href="https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers" rel="noopener">Decentralized identifiers</a> (DIDs) are a new type of <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">self-sovereign identity</a> that enables verifiable, decentralized digital identity through the use of <a href="/thoughts/cryptography" rel="noopener" class="internal-link" data-src="/thoughts/cryptography">cryptography</a>.</p>
 <blockquote>
 <p>They are designed to enable individuals and organizations to generate their own identifiers using systems they trust. These new identifiers enable entities to prove control over them by authenticating using cryptographic proofs such as digital signatures.</p>
 </blockquote>
@@ -534,7 +602,7 @@ May 28, 2022
 </ol>
 <p>Can be thought of like a public decentralized keychain. It binds a public/private key pair to an identity, even when those keys are rotated out and replaced!</p>
 <p>The VDR can be hosted/based on any platform (e.g. on distributed <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchains</a> or just hosted files on GitHub)</p>
-<p>A DID Document can have arbitrary content. It contains references to &ldquo;controllers&rdquo; which are entities that have permission to make changes to a DID Document. It can also contain various cryptographic data delated to the DID subject (e.g. RSA, keys, etc.)</p>
+<p>A DID Document can have arbitrary content. It contains references to &ldquo;controllers&rdquo; which are entities that have permission to make changes to a DID Document. It can also contain various cryptographic data delated to the DID subject (e.g. <a href="/thoughts/RSA" rel="noopener" class="internal-link" data-src="/thoughts/RSA">RSA</a>, keys, etc.)</p>
 <a href="#what-it-enables"><h2 id="what-it-enables"><span class="hanchor" ariaLabel="Anchor"># </span>What it enables</h2></a>
 <ul>
 <li>Login without usernames or passwords</li>
@@ -613,13 +681,13 @@ May 28, 2022
       
       
       <li>
-        <a href="/posts/open-source-and-politics/" data-ctx="Decentralized Identifiers (DID) specification" data-src="/posts/open-source-and-politics" class="internal-link">Open Source and Politics</a>
+        <a href="/posts/digital-identity/" data-ctx="decentralized identity" data-src="/posts/digital-identity" class="internal-link">On Digital Identity</a>
       </li>
       
       
       
       <li>
-        <a href="/posts/relational-identity/" data-ctx="decentralized identity" data-src="/posts/relational-identity" class="internal-link">On Digital Identity</a>
+        <a href="/posts/open-source-and-politics/" data-ctx="Decentralized Identifiers (DID) specification" data-src="/posts/open-source-and-politics" class="internal-link">Open Source and Politics</a>
       </li>
       
       

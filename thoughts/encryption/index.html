@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="An encryption algorithm comprises
- a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Trapdoor: a mathematical function that is easy to go one way but hard to go the other way (an effectively one-way function)"
+    content="A process of converting the original representation of the information (plaintext) into an alternative form (ciphertext). Ideally, only authorized parties can decipher a ciphertext back to plaintext and access the original information."
   />
   <title>
     Encryption
@@ -116,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -264,7 +263,7 @@ if (!doNotTrack) {
       <h1>Encryption</h1>
       <p class="meta">
           Last updated 
-Apr 7, 2022
+Aug 8, 2022
 
  
           
@@ -276,8 +275,6 @@ Apr 7, 2022
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
-    <li><a href="https://jzhao.xyz/tags/CPSC317/">CPSC317</a></li>
-    
 </ul>
 
       
@@ -318,6 +315,93 @@ Apr 7, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -325,16 +409,25 @@ Apr 7, 2022
 
 
 
+
+<blockquote>
+<p>A process of converting the original representation of the information (plaintext) into an alternative form (ciphertext). Ideally, only authorized parties can decipher a ciphertext back to plaintext and access the original information.</p>
+</blockquote>
 <p>An encryption algorithm comprises</p>
 <ul>
 <li>a method for encrypting data</li>
 <li>a method for decrypting data</li>
 <li>a secret key used in the decryption/encryption method</li>
 </ul>
+<p>The two types of encryption are</p>
+<ol>
+<li><a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">Asymmetric Key Cryptography</a> (sometimes called public-key cryptography)</li>
+<li><a href="/thoughts/Symmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Symmetric-Key-Cryptography">Symmetric Key Cryptography</a></li>
+</ol>
 <p>Trapdoor: a mathematical function that is easy to go one way but hard to go the other way (an effectively one-way function)</p>
 <ul>
-<li>Common functions include RSA (prime factorization) and ECC</li>
-<li>RSA for example, is a trapdoor because multiplying primes is easy but factoring the result back into its component primes is hard.</li>
+<li>Common functions include <a href="/thoughts/RSA" rel="noopener" class="internal-link" data-src="/thoughts/RSA">RSA</a> (prime factorization) and <a href="/thoughts/Elliptic-curve-Cryptography-ECC" rel="noopener" class="internal-link" data-src="/thoughts/Elliptic-curve-Cryptography-ECC">ECC</a></li>
+<li><a href="/thoughts/RSA" rel="noopener" class="internal-link" data-src="/thoughts/RSA">RSA</a> for example, is a trapdoor because multiplying primes is easy but factoring the result back into its component primes is hard.</li>
 <li>The bigger the spread between the difficulty of going one direction in a Trapdoor Function and going the other, the more secure a cryptographic system based on it will be</li>
 </ul>
 <p>Language</p>
@@ -353,77 +446,6 @@ Apr 7, 2022
 <li>Known-plaintext attack: for some $m$ knows $K_A(m)$</li>
 <li>Chosen-plaintext attack: knows $K_A$ but not $K_B$</li>
 </ol>
-<a href="#key-sharing-problem"><h2 id="key-sharing-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Key Sharing Problem</h2></a>
-<ul>
-<li>Alice locks the box with her lock and sends it to Bob</li>
-<li>Bob locks the box with his lock and sends it back to Alice</li>
-<li>Alice removes her lock and sends it back to Bob</li>
-<li>Bob removes his lock</li>
-<li>Double Encryption Transfer
-<ul>
-<li>Both parties generate random keys $K_A$ and $K_B$</li>
-<li>Sender sends encrypted message $K_A(m)$</li>
-<li>Receiver encrypts received message and sends it back $K_B(K_A(m))$</li>
-<li>Sender decrypts message and sends it again $K^-<em>{A}(K_B(K_A(m))) = K_B(K^+</em>{A}(K_A(m))) = K_B(m)$ (only valid if operation is associative!)</li>
-<li>Receiver decrypts final message $K^-_{B}(K_B(m)) = m$</li>
-</ul>
-</li>
-</ul>
-<a href="#asymmetric-cryptography"><h2 id="asymmetric-cryptography"><span class="hanchor" ariaLabel="Anchor"># </span>Asymmetric Cryptography</h2></a>
-<ul>
-<li>Pair of keys, one for encrypting (public) another for decrypting (private). One is private ($K^-$), the other is public ($K^+$)
-<ul>
-<li>Key property, one key cannot be obtained from the other in reasonable computation time</li>
-</ul>
-</li>
-<li>Two use cases
-<ul>
-<li>Sender encrypts with public key
-<ul>
-<li>Only private key can decrypt it</li>
-<li>Used for confidentiality</li>
-</ul>
-</li>
-<li>Owner encrypts with private key
-<ul>
-<li>Anyone can decrypt as public key is public</li>
-<li>Used for authentication/proof of ownership</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Can theoretically encrypt using private key but anyone with public key can decrypt!</li>
-<li>RSA (Rivest, Shamir, Adelson) Algorithm
-<ul>
-<li>Relies on modular arithmetic
-<ul>
-<li>Unfortunately, also really slow :((</li>
-<li>Encryption/decryption are computation-heavy. Ok for occasional communication but too slow for extensive data transfer</li>
-<li>Good for establishing initial secure connection</li>
-</ul>
-</li>
-<li>Hard to crack because to determine $d$ from $(n, e)$ requires computing factors of $n$ which is a hard problem</li>
-<li>Choose two large primes $p$ and $q$ (1024-bits each)</li>
-<li>Compute $n = pq, z = (p-1)(q-1)$</li>
-<li>Choose $e &lt; n$ that has no common factors with $z$ (commonly 3)</li>
-<li>Choose $d &lt; n$ such that $ed \mod z = 1$</li>
-<li>Public key: $K^+_B=(n,e)$</li>
-<li>Private key: $K^-_B = (n,d)$</li>
-<li>Encrypting is then $encrypt(m) = m^e \mod n$</li>
-<li>Decrypting is then $decrypt(c) = c^d\mod n$</li>
-</ul>
-</li>
-<li>Key exchange using RSA
-<ul>
-<li>If Alice and Bob both know the other&rsquo;s public key, how can they agree on a shared &ldquo;session&rdquo; key?</li>
-<li>Alice chooses key $K_S$ and encrypts it with Bob&rsquo;s public key and Alice&rsquo;s private key $K_A^-(K_B^+(K_S))$</li>
-<li>Bob decrypt&rsquo;s the message using his private key and Alice&rsquo;s public key $K_B^-(K_A^+(K_A^-(K_B^+(K_S)))) = K_S$</li>
-</ul>
-</li>
-</ul>
-<a href="#diffie-hellman"><h2 id="diffie-hellman"><span class="hanchor" ariaLabel="Anchor"># </span>Diffie Hellman</h2></a>
-<p>A way of performing key exchange over an insecure channel.</p>
-<p>See also: <a href="/thoughts/Elliptic-curve-Cryptography-ECC" rel="noopener" class="internal-link" data-src="/thoughts/Elliptic-curve-Cryptography-ECC">elliptic curve cryptography</a></p>
 
 
     </article>
@@ -465,20 +487,6 @@ Apr 7, 2022
     
       
       
-      
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/posts/relational-identity/" data-ctx="public-key cryptography" data-src="/posts/relational-identity" class="internal-link">On Digital Identity</a>
-      </li>
-      
-      
-      
       <li>
         <a href="/thoughts/Application-Layer/" data-ctx="encryption" data-src="/thoughts/Application-Layer" class="internal-link">Application Layer (Networking)</a>
       </li>
@@ -486,31 +494,25 @@ Apr 7, 2022
       
       
       <li>
-        <a href="/thoughts/PBFT/" data-ctx="public-key cryptography" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="encryption" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/Public-key-Infrastructure/" data-ctx="encryption" data-src="/thoughts/Public-key-Infrastructure" class="internal-link">Public-key Infrastructure</a>
+        <a href="/thoughts/Self-sovereign-Identity-SSI/" data-ctx="encryption" data-src="/thoughts/Self-sovereign-Identity-SSI" class="internal-link">Self-sovereign Identity (SSI)</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/Self-sovereign-Identity-SSI/" data-ctx="public-key cryptography" data-src="/thoughts/Self-sovereign-Identity-SSI" class="internal-link">Self-sovereign Identity (SSI)</a>
+        <a href="/thoughts/cryptography/" data-ctx="Encryption" data-src="/thoughts/cryptography" class="internal-link">Cryptography</a>
       </li>
       
       
       
       <li>
         <a href="/thoughts/security/" data-ctx="Encryption" data-src="/thoughts/security" class="internal-link">Security</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/signed-messages/" data-ctx="encryption" data-src="/thoughts/signed-messages" class="internal-link">Signed messages</a>
       </li>
       
       

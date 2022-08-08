@@ -116,13 +116,13 @@ Integrity of information is critical to relationships of trust as we saw in the 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -362,6 +362,28 @@ Oct 14, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -427,11 +449,6 @@ Oct 14, 2021
 </li>
 <li>Given that Trudy can see all the data, how do we provide confidentiality? <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">Encryption</a>!</li>
 </ul>
-<a href="#symmetric-key-cryptography"><h2 id="symmetric-key-cryptography"><span class="hanchor" ariaLabel="Anchor"># </span>Symmetric Key Cryptography</h2></a>
-<ul>
-<li>Bob and Alice share same key $K_S$</li>
-<li>Method/algorithm maybe be different (opposite) for decryption but same key is used</li>
-</ul>
 <a href="#block-ciphers"><h2 id="block-ciphers"><span class="hanchor" ariaLabel="Anchor"># </span>Block Ciphers</h2></a>
 <ul>
 <li>Message is broken into blocks (e.g. 64-bits of data)</li>
@@ -486,17 +503,7 @@ Oct 14, 2021
 <li>A sort of challenge, Alice wants Bob to prove they have received the nonce by sending them back that same nonce</li>
 <li>Ensures this is a new conversation between Alice and Bob</li>
 </ul>
-<a href="#hash-functions"><h2 id="hash-functions"><span class="hanchor" ariaLabel="Anchor"># </span>Hash Functions</h2></a>
-<ol>
-<li>Order should matter, should be very unlikely for two messages two have a hash collision</li>
-<li>Examples of good hash functions
-<ol>
-<li>MD5: compute a 128-bit message digest in a 4-step process</li>
-<li>SHA-1: US NIST standard, 160-bit digest</li>
-<li>SHA-256 and SHA-512 are more secure</li>
-</ol>
-</li>
-</ol>
+<p>See also: <a href="/thoughts/hash-function" rel="noopener" class="internal-link" data-src="/thoughts/hash-function">hash functions</a></p>
 
 
     </article>

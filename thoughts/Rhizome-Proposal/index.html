@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -681,7 +681,7 @@ Mar 14, 2022
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">&lt;1kloc Raft Implementation</a></li>
 </ul>
 </li>
-<li><a href="/posts/relational-identity" rel="noopener" class="internal-link" data-src="/posts/relational-identity">From legibility to identity</a></li>
+<li><a href="/posts/digital-identity" rel="noopener" class="internal-link" data-src="/posts/digital-identity">From legibility to identity</a></li>
 <li>&hellip;more to come</li>
 </ul>
 <a href="#root"><h3 id="root"><span class="hanchor" ariaLabel="Anchor"># </span>Root</h3></a>

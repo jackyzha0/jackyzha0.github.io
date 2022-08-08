@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -381,6 +381,28 @@ Aug 4, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -389,7 +411,7 @@ Aug 4, 2022
 
 
 <blockquote>
-<p>Holochain is an open-source application development framework and peer-to-peer networking protocol. It allows you to create truly serverless applications with high levels of security, reliability, and performance. Every user runs the application on their own device, creates and stores their own data, and talks directly to other users. The security of the application is supported by both cryptography and peer accountability.</p>
+<p>Holochain is an open-source application development framework and peer-to-peer networking protocol. It allows you to create truly serverless applications with high levels of security, reliability, and performance. Every user runs the application on their own device, creates and stores their own data, and talks directly to other users. The security of the application is supported by both <a href="/thoughts/cryptography" rel="noopener" class="internal-link" data-src="/thoughts/cryptography">cryptography</a> and peer accountability.</p>
 </blockquote>
 <p>Summarized from 
 

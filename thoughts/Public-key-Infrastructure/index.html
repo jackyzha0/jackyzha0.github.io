@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]
-For example, it can help ensure that all peers in the network know each other&rsquo;s public keys (i."
+    content="Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage [[thoughts/Asymmetric Key Cryptography|public key cryptography]]. Related is the [[thoughts/Key Sharing Problem|key sharing problem]]."
   />
   <title>
     Public-key Infrastructure
@@ -116,13 +115,13 @@ For example, it can help ensure that all peers in the network know each other&rs
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -316,6 +315,27 @@ Jul 1, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -323,7 +343,8 @@ Jul 1, 2022
 
 
 
-<p>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a></p>
+
+<p>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public key cryptography</a>. Related is the <a href="/thoughts/Key-Sharing-Problem" rel="noopener" class="internal-link" data-src="/thoughts/Key-Sharing-Problem">key sharing problem</a>.</p>
 <p>For example, it can help ensure that all peers in the network know each other&rsquo;s public keys (i.e. that public keys are&hellip; public knowledge)</p>
 <table>
 <thead>

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -369,14 +369,14 @@ May 25, 2022
 <p>Authorization is the process of verifying what a user has access to (whereas authentication is the process of verifying who someone is)</p>
 <a href="#jwt"><h2 id="jwt"><span class="hanchor" ariaLabel="Anchor"># </span>JWT</h2></a>
 <blockquote>
-<p>Each JWT contains encoded JSON objects, including a set of claims. JWTs are <a href="/thoughts/signed-messages" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">signed</a> using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
+<p>Each JWT contains encoded JSON objects, including a set of claims. JWTs are <a href="/thoughts/digital-signatures" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed</a> using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
 **
 Three components (looks something like this: xxxxx.yyyyy.zzzzz.)</p>
 </blockquote>
 <ol>
 <li>Header: contains the type of token and signing algorithm</li>
 <li>Payload: contains the claims</li>
-<li><a href="/thoughts/signed-messages" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">Signature</a>: ensures the token hasn&rsquo;t been altered</li>
+<li><a href="/thoughts/digital-signatures" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">Signature</a>: ensures the token hasn&rsquo;t been altered</li>
 </ol>
 <p>The party that creates the JWT signs the header and payload with</p>
 <ul>

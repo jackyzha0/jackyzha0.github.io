@@ -8,12 +8,12 @@
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/fruit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Digital Identity</title>
-      <link>https://jzhao.xyz/posts/relational-identity/</link>
+      <link>https://jzhao.xyz/posts/digital-identity/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/posts/relational-identity/</guid>
+      <guid>https://jzhao.xyz/posts/digital-identity/</guid>
       <description>What is identity? Who defines it? Who controls it? What is its relationship to software?
-Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines.</description>
+Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines.</description>
     </item>
     
     <item>

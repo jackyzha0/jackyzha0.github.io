@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="What is identity? Who defines it? Who controls it? What is its relationship to software?
-Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines."
+Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines."
   />
   <title>
     On Digital Identity
@@ -116,13 +116,13 @@ Software developers and computer scientists have been tackling identity for almo
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -268,7 +268,7 @@ Jul 16, 2022
 
  
           
-<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/posts/relational-identity.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/posts/digital-identity.md" rel="noopener">Edit Source</a>
 
 
       </p>
@@ -295,6 +295,32 @@ Jul 16, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -583,7 +609,7 @@ Jul 16, 2022
 
 
 <p><em>What is identity? Who defines it? Who controls it? What is its relationship to software?</em></p>
-<p>Software developers and computer scientists have been tackling identity for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.</p>
+<p>Software developers and computer scientists have been tackling <a href="/thoughts/identity" rel="noopener" class="internal-link" data-src="/thoughts/identity">identity</a> for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.</p>
 <p>But for engineers building these digital identities, the primary focus is on legibility: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <p>Legibility on its own is not a bad thing. It’s how Google assembles droves of information on the web so we can search through it easily. It’s how we have transparency into the progress of publicly funded projects and initiatives by our governments.</p>
 <p>But this process of legibility becomes dangerous when it forcefully shapes users. When legibility becomes the lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This systemized legibility of the world is an interpretive and transformational force that changes how we perceive others<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
@@ -636,7 +662,7 @@ Our digital representations consist of:</p>
 <p><img src="/thoughts/images/identity-capability.png" width="auto" /></p>
 <p>When I think about what digital identity ultimately feels useful for, it is to gesture at <em>capabilities</em> rather than attributes. My identity can also be represented by how I act and what I have permission to do. Gordon Brander suggests similarly: &ldquo;digital identity should not be about who you are, but what you are authorized to do.&rdquo; <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <blockquote>
-<p>&ldquo;[A model of identity as capabilities] considers it to be dynamic, multiple, informational, temporary, contextual. Whereas the [model of identity as attributes] attach actions and interactions to actors, the [capability model] recognises that identity is co-emergent with actions and interactions in contexts.&rdquo; (AKASHA and Kernel<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>)</p>
+<p>&ldquo;[A model of identity as capabilities] considers it to be dynamic, multiple, informational, temporary, contextual. Whereas the [model of identity] as attributes] attach actions and interactions to actors, the [capability model] recognises that identity is co-emergent with actions and interactions in contexts.&rdquo; (AKASHA and Kernel<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>)</p>
 </blockquote>
 <p>From a software perspective, this isn&rsquo;t a new representation of digital identity either. <a href="/thoughts/UCAN" rel="noopener" class="internal-link" data-src="/thoughts/UCAN">UCAN</a> serves to be a promising way to delegate permissions and actions through a <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">decentralized identity</a>. JWTs have been granting permissions to users for a decade. New forms of token-based access using NFTs are being experimented with.</p>
 <blockquote>
@@ -644,7 +670,7 @@ Our digital representations consist of:</p>
 
 <a href="https://ucan.xyz/" rel="noopener">ucan.xyz</a>)</em></p>
 </blockquote>
-<p>There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">public-key cryptography</a> means that we can prove the same person you issued the access token to is now requesting access <em>without</em> revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.</p>
+<p>There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> means that we can prove the same person you issued the access token to is now requesting access <em>without</em> revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.</p>
 <p>This feels promising. A token that grants access isn’t making legible any information that doesn’t need to be, it just grants access to whoever has it. It grants a basic level of illegibility to those who prefer to keep real-world identities and digital ones separate.</p>
 <p>Yet, I think there is still room for improvement here. Identities based off of tokens and keys aren&rsquo;t human-meaningful. In gaining the option for illegibility, we&rsquo;ve lost any resemblance of a human identity. I want to know that I&rsquo;m talking to my friend Kevin and not just a key like <code>0x8ff6b283368b5f149f1de2005d763243</code> or a phone number like <code>323-594-1604</code>.</p>
 <a href="#identity-as-relationships"><h2 id="identity-as-relationships"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Relationships</h2></a>
@@ -764,7 +790,7 @@ Our digital representations consist of:</p>
       
       
       <li>
-        <a href="/thoughts/identity/" data-ctx="a post on verb-based identity" data-src="/thoughts/identity" class="internal-link">Identity</a>
+        <a href="/thoughts/identity/" data-ctx="relational identity" data-src="/thoughts/identity" class="internal-link">Identity</a>
       </li>
       
       

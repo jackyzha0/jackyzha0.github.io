@@ -6,7 +6,66 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptography</title>
+      <link>https://jzhao.xyz/thoughts/cryptography/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/cryptography/</guid>
+      <description>Cryptography is the practice and study of techniques for secure communication in the presence of adversarial behaviour.
+ The following is a list of primitives one may want to accomplish using cryptography</description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://jzhao.xyz/thoughts/encryption/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/encryption/</guid>
+      <description>A process of converting the original representation of the information (plaintext) into an alternative form (ciphertext). Ideally, only authorized parties can decipher a ciphertext back to plaintext and access the original information.</description>
+    </item>
+    
+    <item>
+      <title>Hash function</title>
+      <link>https://jzhao.xyz/thoughts/hash-function/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/hash-function/</guid>
+      <description>A hash function is any function that can be used to map data of arbitrary size to fixed-size values.</description>
+    </item>
+    
+    <item>
+      <title>Key Sharing Problem</title>
+      <link>https://jzhao.xyz/thoughts/Key-Sharing-Problem/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Key-Sharing-Problem/</guid>
+      <description>The key exchange problem describes ways to exchange whatever keys or other information are needed for establishing a secure communication channel so that no one else can obtain a copy.</description>
+    </item>
+    
+    <item>
+      <title>MAC</title>
+      <link>https://jzhao.xyz/thoughts/MAC/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/MAC/</guid>
+      <description>Message authentication code
+ Not to be confused with MAC addresses.
+ Add a secret to the end of each message that is also hashed.</description>
+    </item>
+    
+    <item>
+      <title>RSA</title>
+      <link>https://jzhao.xyz/thoughts/RSA/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/RSA/</guid>
+      <description>A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]].
+Full name is the Rivest, Shamir, Adelson Algorithm
+ Relies on modular arithmetic  Unfortunately, also really slow :(( Encryption/decryption are computation-heavy.</description>
+    </item>
+    
     <item>
       <title>Byzantine Agreement</title>
       <link>https://jzhao.xyz/thoughts/Byzantine-Agreement/</link>
@@ -155,7 +214,8 @@ Quotes On throwing away early work:
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/identity/</guid>
-      <description>On Website Redesigns  There are endless possibilities as to what a website could be. What kind of room is a website?</description>
+      <description>See also: [[thoughts/self-knowledge|self-knowledge]], [[thoughts/the Self|the self]]
+On Website Redesigns  There are endless possibilities as to what a website could be.</description>
     </item>
     
     <item>
@@ -339,8 +399,7 @@ A &amp;lsquo;meta&amp;rsquo;/Layer 2 protocol that can be applied to any target 
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Public-key-Infrastructure/</guid>
-      <description>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage public key [[thoughts/encryption|encryption]]
-For example, it can help ensure that all peers in the network know each other&amp;rsquo;s public keys (i.</description>
+      <description>Public key infrastructure (PKI) is a catch-all term for everything used to establish and manage [[thoughts/Asymmetric Key Cryptography|public key cryptography]]. Related is the [[thoughts/Key Sharing Problem|key sharing problem]].</description>
     </item>
     
     <item>
@@ -450,7 +509,7 @@ Provides:
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/</guid>
-      <description>A form of asymmetric cryptography Much smaller key-sizes than RSA Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 + ax + b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &amp;ldquo;dot&amp;rdquo; function -&amp;gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B.</description>
+      <description>A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] Much smaller key-sizes than [[thoughts/RSA|RSA]] Elliptic Curve properties (specifically looking at Ed25519)  Formula follows something like $y^2 = x^3 + ax + b$ Symmetric about the x-axis Drawing a straight line through the curve will intersect no more than 3 points  A line between any two points will also intersect the curve at another place   Starting point on the curve point: A &amp;ldquo;dot&amp;rdquo; function -&amp;gt; kind of like a game of billiards  In this game of billiards, you take a ball at point A, shoot it towards point B.</description>
     </item>
     
     <item>
@@ -505,6 +564,16 @@ Bluesky is building a protocol for large-scale distributed social applications, 
     </item>
     
     <item>
+      <title>Digital signatures</title>
+      <link>https://jzhao.xyz/thoughts/digital-signatures/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/digital-signatures/</guid>
+      <description>Signatures are cryptographic functions that attest to the origin of a particular message.
+ It is infeasible for Alice to generate a signed message that appears to have been generated by Bob.</description>
+    </item>
+    
+    <item>
       <title>Farcaster</title>
       <link>https://jzhao.xyz/thoughts/Farcaster/</link>
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
@@ -524,16 +593,6 @@ Bluesky is building a protocol for large-scale distributed social applications, 
       <description>An open network for secure, decentralized communication
   Website
 Mainly for messaging + voice + video but theoretically can handle any type of real-time data.</description>
-    </item>
-    
-    <item>
-      <title>Signed messages</title>
-      <link>https://jzhao.xyz/thoughts/signed-messages/</link>
-      <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/signed-messages/</guid>
-      <description>Signatures are cryptographic functions that attest to the origin of a particular message.
- It is infeasible for Alice to generate a signed message that appears to have been generated by Bob.</description>
     </item>
     
     <item>
@@ -702,7 +761,7 @@ Similar to [[thoughts/DID|DIDs]].
       
       <guid>https://jzhao.xyz/thoughts/DID/</guid>
       <description>Summarized from W3C Proposal
- Decentralized identifiers (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of cryptography.</description>
+ Decentralized identifiers (DIDs) are a new type of [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] that enables verifiable, decentralized digital identity through the use of [[thoughts/cryptography|cryptography]].</description>
     </item>
     
     <item>
@@ -1023,13 +1082,12 @@ The paperclip maximizer is the canonical thought experiment showing how an artif
     </item>
     
     <item>
-      <title>Encryption</title>
-      <link>https://jzhao.xyz/thoughts/encryption/</link>
+      <title>Public-key Cryptography</title>
+      <link>https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/</link>
       <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/encryption/</guid>
-      <description>An encryption algorithm comprises
- a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Trapdoor: a mathematical function that is easy to go one way but hard to go the other way (an effectively one-way function)</description>
+      <guid>https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/</guid>
+      <description>Asymmetric cryptography involves a pair of keys, one for encrypting (public) another for decrypting (private). One is private ($K^-$), the other is public ($K^+$).</description>
     </item>
     
     <item>
@@ -3664,7 +3722,7 @@ Can we create associations between digital/physical space and concept space? Cre
       
       <guid>https://jzhao.xyz/thoughts/web3/</guid>
       <description>Web3 is the open-source ethic extended beyond code as static artifacts but rather as live organisms.
- Crypto systems are interesting, they are &amp;ldquo;decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of cryptography, economics and social consensus&amp;rdquo; However, blockchain as a technology only enables decentralization, it doesn&amp;rsquo;t guarantee it.</description>
+ Crypto systems are interesting, they are &amp;ldquo;decentralized, jurisdictionless entities that exist entirely in cyberspace, maintained by a combination of [[thoughts/cryptography|cryptography]], economics and social consensus&amp;rdquo; However, blockchain as a technology only enables decentralization, it doesn&amp;rsquo;t guarantee it.</description>
     </item>
     
     <item>
@@ -4210,6 +4268,15 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       
       <guid>https://jzhao.xyz/thoughts/language-development/</guid>
       <description>Approaches to study of language development  Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible &amp;ndash; this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG) Learnability approach: focuses on explaining the fact that language is acquired (i.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</guid>
+      <description>Symmetric Key Cryptography  Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  </description>
     </item>
     
   </channel>

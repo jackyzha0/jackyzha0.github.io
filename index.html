@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -270,10 +270,10 @@ if (!doNotTrack) {
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/posts/relational-identity/">On Digital Identity</a></h3>
+                                <h3><a href="https://jzhao.xyz/posts/digital-identity/">On Digital Identity</a></h3>
                             </div>
                             <p class="meta">
-                            1722 words on 
+                            1724 words on 
 Jul 16, 2022
 
  
@@ -342,10 +342,10 @@ Jun 29, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Byzantine-Agreement/">Byzantine Agreement</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/cryptography/">Cryptography</a></h3>
                             </div>
                             <p class="meta">
-                                27 words on Aug 5, 2022
+                                330 words on Aug 8, 2022
                             </p>
                             <ul class="tags">
     
@@ -359,10 +359,10 @@ Jun 29, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/PBFT/">PBFT</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/encryption/">Encryption</a></h3>
                             </div>
                             <p class="meta">
-                                1091 words on Aug 8, 2022
+                                207 words on Aug 8, 2022
                             </p>
                             <ul class="tags">
     
@@ -374,7 +374,7 @@ Jun 29, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 428 more →</a>
+                <a href="/thoughts">See 435 more →</a>
             </div>
         </div>
         <article>

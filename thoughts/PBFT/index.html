@@ -116,13 +116,13 @@ tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2db13450da375fc1a887ddd5d4da996.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.063d29e7168edd8ddda4d93d2b45428b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b3378048c6a66ef86c68868bd7481d22.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a8f6cd5e7c437ee0ac55bd2abebf3297.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -516,7 +516,7 @@ Aug 5, 2022
 <p><em>
 
 <a href="http://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf" rel="noopener">Practical Byzantine Fault Tolerance</a></em> by Miguel Castro and Barbara Liskov</p>
-<p>tldr; one of the first <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> algorithms with a partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> that can tolerate <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine faults</a>. It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/signed-messages#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/signed-messages">signed message digests</a>).</p>
+<p>tldr; one of the first <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> algorithms with a partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> that can tolerate <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine faults</a>. It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/digital-signatures#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed message digests</a>).</p>
 <p>The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this <em>explicitly allows for faulty primaries</em> while the algorithm properly handles.</p>
 <p>The algorithm works as follows</p>
 <ol>

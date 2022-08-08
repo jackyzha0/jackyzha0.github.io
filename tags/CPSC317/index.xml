@@ -8,13 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC317/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Encryption</title>
-      <link>https://jzhao.xyz/thoughts/encryption/</link>
+      <title>Public-key Cryptography</title>
+      <link>https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/</link>
       <pubDate>Thu, 07 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/encryption/</guid>
-      <description>An encryption algorithm comprises
- a method for encrypting data a method for decrypting data a secret key used in the decryption/encryption method  Trapdoor: a mathematical function that is easy to go one way but hard to go the other way (an effectively one-way function)</description>
+      <guid>https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/</guid>
+      <description>Asymmetric cryptography involves a pair of keys, one for encrypting (public) another for decrypting (private). One is private ($K^-$), the other is public ($K^+$).</description>
     </item>
     
     <item>
