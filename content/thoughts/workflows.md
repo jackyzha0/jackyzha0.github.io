@@ -5,8 +5,6 @@ tags:
 - seed
 ---
 
-https://uxdesign.cc/introducing-mercury-os-f4de45a04289
-
 Creating modular tools for users to [build their own workflows](https://thesephist.com/posts/tools/) and [interactions](thoughts/interaction%20design.md)
 
 > "Each person’s mind works a little differently, and each person remembers and processes information a little differently. I think we all work at our best when we work with tools that fit how our minds work."
@@ -22,8 +20,7 @@ Are our tools extensions of who we are? At what point does it just become a part
 Can we kill the [desktop metaphor](thoughts/desktop%20metaphor.md)?
 
 ## Cool Approaches
-### Mercury
-https://uxdesign.cc/introducing-mercury-os-f4de45a04289
+### [Mercury](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)
 
 Defining everything around workflows rather than applications.
 

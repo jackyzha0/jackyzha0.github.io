@@ -7,9 +7,11 @@ tags:
 
 > Tendermint is most useful as an analog of Paxos/[[thoughts/Raft Consensus Algorithm|Raft]] but in a multi-stakeholder, or otherwise more adversarial, setting. However, the performance may not be as high due to the overhead of cryptographic operations
 
-Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.
+[Source Paper](https://tendermint.com/static/docs/tendermint.pdf), authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.
 
-A [[thoughts/consensus#State Machine Replication|state machine replication]] protocol that, when $f < \frac n 3$, satisfies always [[thoughts/consistency|consistency]] and eventually satisfies [[thoughts/liveness|liveness]] (under the presence of an attack)
+A [[thoughts/consensus#State Machine Replication|state machine replication]] protocol with a partially synchronous [[thoughts/system model|system model]] that, when $f < \frac n 3$, satisfies always [[thoughts/consistency|consistency]] and eventually satisfies [[thoughts/liveness|liveness]] (under the presence of an attack). Unfortunately, the time to obtain a supermajority increases linearly with the number of nodes in the network.[^1]
+
+[^1]: "There is a practical limit to how decentralized a blockchain with [[thoughts/PBFT|PBFT]]-based consensus can be. For instance, most Tendermint based blockchains only have 100-150 validators; this is done to strike a balance between time to finality and decentralization" (from Scott's *[Guide to Finality](https://www.smsunarto.com/blog/guide-to-finality)*)
 
 High-level ideas:
 1. Iterated single-shot consensus (something that looks like [[thoughts/consensus#Byzantine Agreement|Byzantine Agreement]]) where the output of each single-shot consensus instance outputs a block (ordered list of transactions)

@@ -14,7 +14,7 @@ A distilled version of the [Raft paper](https://raft.github.io/raft.pdf). For a 
 
 A really good [video review of the algorithm by Martin Kleppmann](https://www.youtube.com/watch?v=uXEYuDwm7e4&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&index=18)
 
-For a [[thoughts/Byzantine Faults|BFT]]-resilient
+For a [[thoughts/Byzantine Faults|BFT]]-resilient version of Raft, see [[thoughts/Tangaroa|Tangaroa]]
 
 ## Distributed Consensus
 When you only have one machine, it is easy to figure out what the state of that machine is in. But what happens when you have multiple machines that need to agree on some value or state?

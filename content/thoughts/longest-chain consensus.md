@@ -3,6 +3,8 @@ title: "Longest-chain consensus"
 date: 2022-07-05
 tags:
 - seed
+aliases:
+- Nakamoto Consensus
 ---
 
 See also: [[thoughts/consensus|consensus]]
@@ -19,7 +21,6 @@ Pseudocode properties (all implementations should satisfy these!):
 2. In each round $r = 1,2,3, \dots$
 	1. One node is chosen as a leader. This leader can prove itself as leader to other nodes, non-leaders cannot pretend to be a leader or manipulate their chances of becoming a leader.
 	2. Leader can create a set of round-$r$ blocks where all of there predecessors are strictly created in some previous round, each with a predecessor block. Blocks form an in-tree rooted at the genesis block.
-
 
 Honest behaviour
 1. Form block $B$ using all known pending pending transactions

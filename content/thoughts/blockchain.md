@@ -22,12 +22,11 @@ On a technical level, blockchain is just a linked list that is replicated.
 Each block contains the hash of the previous block header and the [Merkle root](https://www.investopedia.com/terms/m/merkle-tree.asp) representing the hash of all the transactions in that block.
 
 Transactions happen as follows:
-1. A transaction is initiated
-2. Data is packaged into a block
-3. Block is sent to members of the chain
+1. A transaction is initiated by a client
+2. Transactions are checked for validity to see if the state transition is legal (validation)
+3. Multiple transactions are packaged into a block and sent to members of the chain (block proposal)
 4. Consensus and approval by rest of network (either [proof of work](thoughts/proof%20of%20work.md) or [proof of stake](thoughts/proof%20of%20stake.md))
-5. Block is added to chain
-6. Chain update is distributed to members
+5. Block is added to chain and distributed to members
 
 ## Why it Matters
 It feels like the level of change which blockchain impacts is huge but at the same time latent.
@@ -36,7 +35,7 @@ After going through a bunch of Kernel modules, Austin came upon a name for the c
 
 "The "new world" seems to look very similar to the old. i.e. *isn't a DAO just voting on how to donate money, which we could do today?*"
 
-In actuality, the *layer* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
+In actuality, the *[[thoughts/pace layers|layer]]* at which change is happening is much deeper (more [infrastructure](thoughts/infrastructure.md) level than solution/product level)
 
 ## Data
 [Source: Ethereal Dreamers by *Kernel*](https://kernel.community/en/learn/module-1/promise-blockchains)

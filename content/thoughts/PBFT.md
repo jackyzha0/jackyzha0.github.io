@@ -7,7 +7,13 @@ tags:
 
 *[Practical Byzantine Fault Tolerance](http://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf)* by Miguel Castro and Barbara Liskov
 
-tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/Byzantine Faults|Byzantine faults]]. It offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/Asymmetric Key Cryptography|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/digital signatures#Signed Message Digest|signed message digests]]).
+TLDR; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with an asynchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/Byzantine Faults|Byzantine faults]] (although it has a weak synchrony assumption where all messages are guaranteed to be delivered after a certain time bound by using timeouts).
+
+It offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/Asymmetric Key Cryptography|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/digital signatures#Signed Message Digest|signed message digests]]).
+
+This circumvents the [[thoughts/FLP Result|FLP Result]] because it relies on a synchrony assumption to guarantee liveness, not safety.
+
+For a faster alternative, consider [[thoughts/SBFT|SBFT]] (which provides a reduction from $O(n^2)$ to $O(n)$ normal-case communication and a best-case latency of only a single round of communication)
 
 The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this *explicitly allows for faulty primaries* while the algorithm properly handles.
 
@@ -42,8 +48,7 @@ The algorithm works as follows
 ![[thoughts/images/3pc-pbft.png]]*Replica 0 is the primary, replica 3 is faulty, and C is the client*
 
 ## Garbage Collection
-
-As we assume only partially synchronous model, we can't assume any unresponsive node won't rejoin at some later point. So either, we need to keep all log entries around potentially forever (not idea), or have some way to transfer state between nodes (which requires nodes to prove correctness of state).
+As we assume only asynchronous model, we can't assume any unresponsive node won't rejoin at some later point. So either, we need to keep all log entries around potentially forever (not idea), or have some way to transfer state between nodes (which requires nodes to prove correctness of state).
 
 Generate state correctness proofs are expensive so only happen once every 100 sequence numbers (a stable checkpoint).
 

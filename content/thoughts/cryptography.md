@@ -26,7 +26,7 @@ Mostly accomplished using
 ### Message integrity and Authentication
 1. Integrity: can the recipient be confident that the message has not been accidentally modified?
 2. Authentication: can the recipient be confident that the message originates from the sender?
-3. Non-repudiation: can any third-party be confident that a message received is from the original sender and not forged by the recipient? (i.e. can it prevent the recipient from forging arbitrary messages)
+3. Non-repudiation: can the message's authenticity be unchallengeable?  (i.e. if I send a message, I can't later  maintain I did not)
 
 There are multiple ways of accomplishing this:
 1. [[thoughts/hash function|Hash functions]]

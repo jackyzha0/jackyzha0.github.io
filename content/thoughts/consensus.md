@@ -11,6 +11,8 @@ A difficult problem for [governance](thoughts/governance.md) within [communities
 
 Note that this is inherently *different* from collaboration methods like [[thoughts/CRDT|CRDTs]]. Collaboration involves keeping *all* edits and merging them. Consensus involves picking one of several proposed values and agreeing on it.
 
+Example applications include: [[thoughts/State Machine Replication (SMR)|SMR]], [[thoughts/Byzantine Agreement|Byzantine Agreement]]
+
 ## Consensus and Humming in the IETF
 [Source: IETF](https://datatracker.ietf.org/doc/html/rfc7282)
 
@@ -28,15 +30,38 @@ There are four requirements to such an algorithm:
 4. Termination. Also known as progress, every node must eventually reach a decision.
 
 There are two main protocol paradigms for achieving consensus in the presence of Byzantine nodes:
-1. [[thoughts/Byzantine Faults|BFT]]-type protocols
-	1. typically use multiple rounds of voting to ensure [[thoughts/consistency|consistency]]
-	2. favour [[thoughts/consistency|consistency]] in the face of an attack (assuming <33% Byzantine as per)
-	3. very difficult to resolve forks in-protocol (Tendermint literally says to communicate out-of-band to resolve this lol)
-	4. includes [[thoughts/Tendermint|Tendermint]]
-3. longest-chain protocols
-	1. embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct
-	2. favour [[thoughts/liveness|liveness]] in the face of an attack
-	3. at risk of potentially large chain reorganizations and double-spend attacks
-	4. includes [[thoughts/bitcoin|Bitcoin]], [[thoughts/ethereum|Ethereum]]
+1. Classic [[thoughts/Byzantine Faults|BFT]] protocols: typically uses two voting rounds to ensure [[thoughts/consistency|consistency]]
+	1. One phase to guarantee proposal uniqueness using a quorum certificate of $n-f$ votes
+	2. The other phase is to convince replicas that the leader is safe to propose new entries
+	3. Examples include: [[thoughts/Tendermint|Tendermint]], [[thoughts/Tangaroa|Tangaroa]], [[thoughts/HotStuff|HotStuff]], [[thoughts/PBFT|PBFT]]
+2. [[thoughts/longest-chain consensus|Longest-chain consensus]]
+	1. Examples include: most consensus mechanisms for cryptocurrencies like [[thoughts/bitcoin|Bitcoin]], [[thoughts/ethereum|Ethereum]]
 
-Examples include: [[thoughts/State Machine Replication (SMR)|SMR]], [[thoughts/Byzantine Agreement|Byzantine Agreement]]
+| |Classic BFT|Longest-chain Consensus|
+|--|--|--|
+|Safety/Liveness tradeoff|Favours [safety](/thoughts/safety) in the face of an attack|Favour [liveness](/thoughts/liveness) in the face of an attack|
+|Finality|Instant and deterministic|Probabilistic (at risk of potentially large chain reorganizations and double-spend attacks)|
+|Fork behaviour|Rare but difficult to recover from|Embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct|
+|[FLP Result](/thoughts/FLP%20Result) Behaviour|sacrifice either liveness or consistency in the face of an attack (assuming <33% Byzantine as per FLP Result)|Does not apply as longest-chain consensus is non-deterministic|
+
+### Comparisons between different BFT SMR protocols
+All protocols are of the following:
+1.  protocols for [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|SMR]]
+2.  All work in the partially synchronous [[thoughts/system model|system model]] and obtain safety (always) and liveness (after GST) in the face of an adversary that controls $f$ replicas out of a total of $n=3f+1$ replicas (per [[thoughts/FLP Result|FLP Result]])
+3.  All these protocols are based on the classic leader-based primary-backup approach where leaders are replaced in a _view-change_ (or election to use [[thoughts/Raft Consensus Algorithm|Raft]] terminology) protocol.
+
+Below is a comparison of a few top protocols and their tradeoffs
+
+| |Best-case Latency (rounds)|Normal-case Communication|View-change Communication|Leader Rotation|
+|--|--|--|--|--|
+|[PBFT](/thoughts/PBFT)|2|$O(n^2)$|$O(n^2)$|On suspected fault|
+|[Tendermint](/thoughts/Tendermint)|2|$O(n)$|$O(n)$|Every round|
+|[SBFT](/thoughts/SBFT)|1|$O(n)$|$O(n^2)$|On suspected fault|
+|[HotStuff](/thoughts/HotStuff)|3|$O(n)$|$O(n)$|Every round|
+
+Leader rotation tradeoff:
+- maintaining a stable leader means less overhead and better performance due to stability when the leader is honest and trusted
+- constantly rotating the leader provides a stronger fairness guarantee against stable malicious leaders
+
+### Pipelining
+In [[thoughts/PBFT|PBFT]] and [[thoughts/SBFT|SBFT]], the leader maintains a _window_ of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like [[thoughts/TCP|TCP]] where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can *significantly increase throughput* by allowing the leader to concurrently coordinate several actions of slot commitments.
