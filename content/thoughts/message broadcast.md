@@ -6,10 +6,12 @@ tags:
 ---
 
 ## Ordering
-### Total order broadcast
+### Total order broadcast or Atomic broadcast
 Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!)
 
 In [[thoughts/State Machine Replication (SMR)|state machine replication]], total order broadcast assumes the state update function is **deterministic**. That is, whenever two replicas are in the same state, giving them the same input, they will transition to the same next state. The main limitation is that total order broadcast cannot update state immediately, have to wait for delivery through broadcast
+
+Examples: [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]]
 
 ### Causal Broadcast
 Obeys happens-before ([[thoughts/causality|causal]]) relationships.

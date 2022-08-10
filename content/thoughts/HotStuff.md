@@ -38,3 +38,15 @@ During the protocol, a monotonically growing branch becomes committed. To become
 Note that each of the three-phases have very similar structure and that the protocol isn't doing "useful" work except collecting votes from replicas. To optimize this, we can pipeline the phases, similar to what [[thoughts/Casper FFG|Casper FFG]] does.
 
 ![[thoughts/images/chained-hotstuff.png]]
+
+### Commit Rule
+HotStuff uses the concept of chains which maps nicely onto Chained HotStuff.
+
+The decision when a block is considered committed rests purely on a simple graph structure, a three-chain.
+
+![[thoughts/images/hotstuff-3-chain.png]]
+
+The three-chain commit rule provides the following guarantee.
+1. The first link (corresponding to prepare) in the chain `QC|B' -> QC|B` guarantees $n-f$ votes on a unique block `B`.
+2. The second link (corresponding to pre-commit) in the chain `QC|B'' -> QC|B'` guarantees $n-f$ replicas have a QC on a unique block.
+3. The last link (corresponding to commit) `QC|B''' -> QC|B''` guarantees that $n-f$ replicas have the highest QC of any two-chain that has a vote.

@@ -9,7 +9,7 @@ tags:
 
 [Source Paper](https://tendermint.com/static/docs/tendermint.pdf), authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.
 
-A [[thoughts/consensus#State Machine Replication|state machine replication]] protocol with a partially synchronous [[thoughts/system model|system model]] that, when $f < \frac n 3$, satisfies always [[thoughts/consistency|consistency]] and eventually satisfies [[thoughts/liveness|liveness]] (under the presence of an attack). Unfortunately, the time to obtain a supermajority increases linearly with the number of nodes in the network.[^1]
+A [[thoughts/consensus#State Machine Replication|state machine replication]] protocol with a partially synchronous [[thoughts/system model|system model]] that, when $f < \frac n 3$, satisfies always [[thoughts/consistency|consistency]] and eventually satisfies [[thoughts/liveness|liveness]] (under the presence of an attack). However, the time to obtain a supermajority increases linearly with the number of nodes in the network.[^1]
 
 [^1]: "There is a practical limit to how decentralized a blockchain with [[thoughts/PBFT|PBFT]]-based consensus can be. For instance, most Tendermint based blockchains only have 100-150 validators; this is done to strike a balance between time to finality and decentralization" (from Scott's *[Guide to Finality](https://www.smsunarto.com/blog/guide-to-finality)*)
 

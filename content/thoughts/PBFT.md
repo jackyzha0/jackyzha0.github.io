@@ -9,7 +9,9 @@ tags:
 
 TLDR; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with an asynchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/Byzantine Faults|Byzantine faults]] (although it has a weak synchrony assumption where all messages are guaranteed to be delivered after a certain time bound by using timeouts).
 
-It can drive a consensus decision in two rounds of message exchanges. The first phase guarantees proposal uniqueness through the formation of a quorum certificate (QC) consisting of $(n − f)$ votes. The second phase guarantees that the next leader can convince replicas to vote for a safe proposal.
+It can drive a consensus decision in two rounds of message exchanges.
+1. The first phase guarantees proposal uniqueness through the formation of a quorum certificate (QC) consisting of $(n − f)$ votes.
+2. The second phase guarantees that the next leader can convince replicas to vote for a safe proposal.
 
 It offers both [[thoughts/liveness|liveness]] and [[thoughts/safety|safety]] under the [[thoughts/33% Impossibility Result|33% Impossibility Result]] and only uses [[thoughts/Asymmetric Key Cryptography|public-key cryptography]] during faults to prevent major speed bottlenecks (typically just uses [[thoughts/digital signatures#Signed Message Digest|signed message digests]]). This circumvents the [[thoughts/FLP Result|FLP Result]] because it relies on a synchrony assumption to guarantee liveness, not safety.
 

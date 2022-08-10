@@ -45,7 +45,7 @@ There are two main protocol paradigms for achieving consensus in the presence of
 |[FLP Result](/thoughts/FLP%20Result) Behaviour|sacrifice either liveness or consistency in the face of an attack (assuming <33% Byzantine as per FLP Result)|Does not apply as longest-chain consensus is non-deterministic|
 |Permission model|Permissioned|Permissionless|
 
-Note that there have been attempts to bridge Classic BFT models with [[thoughts/longest-chain consensus|Nakamoto-style consensus]] ones with hybrid consensu models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.
+Note that there have been attempts to bridge Classic BFT models with [[thoughts/longest-chain consensus|Nakamoto-style consensus]] ones with hybrid consensus models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.
 
 ### Comparisons between different BFT SMR protocols
 All protocols are of the following:
@@ -69,4 +69,4 @@ Leader rotation tradeoff:
 - constantly rotating the leader provides a stronger fairness guarantee against stable malicious leaders
 
 ### Pipelining
-In [[thoughts/PBFT|PBFT]] and [[thoughts/SBFT|SBFT]], the leader maintains a _window_ of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like [[thoughts/TCP|TCP]] where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can *significantly increase throughput* by allowing the leader to concurrently coordinate several actions of slot commitments.
+In [[thoughts/PBFT|PBFT]], [[thoughts/SBFT|SBFT]], and [[thoughts/HotStuff|HotStuff]] the leader maintains a _window_ of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like [[thoughts/TCP|TCP]] where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can *significantly increase throughput* by allowing the leader to concurrently coordinate several actions of slot commitments.

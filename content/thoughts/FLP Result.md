@@ -14,4 +14,4 @@ Similar to tradeoffs made in the [[thoughts/CAP Theorem|CAP Theorem]], when unde
 - consistency
 - [[thoughts/liveness|liveness]]/availability
 
-This can somewhat be abated by randomized protocols
+This can somewhat be abated by randomized protocols (see: [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]])
