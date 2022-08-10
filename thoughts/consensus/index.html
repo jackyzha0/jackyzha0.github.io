@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -733,6 +733,50 @@ Aug 9, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -867,6 +911,7 @@ Aug 9, 2021
 </tr>
 </tbody>
 </table>
+<p>Note that there have been attempts to bridge Classic BFT models with <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">Nakamoto-style consensus</a> ones with hybrid consensu models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.</p>
 <a href="#comparisons-between-different-bft-smr-protocols"><h3 id="comparisons-between-different-bft-smr-protocols"><span class="hanchor" ariaLabel="Anchor"># </span>Comparisons between different BFT SMR protocols</h3></a>
 <p>All protocols are of the following:</p>
 <ol>
@@ -874,7 +919,7 @@ Aug 9, 2021
 <li>All work in the partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> and obtain safety (always) and liveness (after GST) in the face of an adversary that controls $f$ replicas out of a total of $n=3f+1$ replicas (per <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a>)</li>
 <li>All these protocols are based on the classic leader-based primary-backup approach where leaders are replaced in a <em>view-change</em> (or election to use <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> terminology) protocol.</li>
 </ol>
-<p>Below is a comparison of a few top protocols and their tradeoffs</p>
+<p>Below is a comparison of a few top protocols and their tradeoffs in <a href="/thoughts/authenticator-complexity" rel="noopener" class="internal-link" data-src="/thoughts/authenticator-complexity">authenticator complexity</a></p>
 <table>
 <thead>
 <tr>
@@ -1054,6 +1099,10 @@ Aug 9, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/new-words/" data-ctx="consensus" data-src="/posts/new-words" class="internal-link">A New Glossary of Words</a>
       </li>
@@ -1098,6 +1147,12 @@ Aug 9, 2021
       
       <li>
         <a href="/thoughts/Vanilla-Ice-Cream-effect/" data-ctx="consensus" data-src="/thoughts/Vanilla-Ice-Cream-effect" class="internal-link">Vanilla Ice Cream effect</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/authenticator-complexity/" data-ctx="consensus" data-src="/thoughts/authenticator-complexity" class="internal-link">Authenticator complexity</a>
       </li>
       
       

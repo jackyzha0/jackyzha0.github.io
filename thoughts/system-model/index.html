@@ -116,13 +116,13 @@ Network behaviour (e.g. message loss)  Reliable: message is received if and only
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -446,6 +446,14 @@ May 5, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/33-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
@@ -490,6 +498,18 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/Tendermint/" data-ctx="system model" data-src="/thoughts/Tendermint" class="internal-link">Tendermint</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/authenticator-complexity/" data-ctx="system model" data-src="/thoughts/authenticator-complexity" class="internal-link">Authenticator complexity</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/blockchain/" data-ctx="system model" data-src="/thoughts/blockchain" class="internal-link">Blockchain</a>
       </li>
       
       

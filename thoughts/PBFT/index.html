@@ -116,13 +116,13 @@ TLDR; one of the first [[thoughts/State Machine Replication (SMR)|state machine 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -561,8 +561,8 @@ Aug 5, 2022
 
 <a href="http://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf" rel="noopener">Practical Byzantine Fault Tolerance</a></em> by Miguel Castro and Barbara Liskov</p>
 <p>TLDR; one of the first <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> algorithms with an asynchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> that can tolerate <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine faults</a> (although it has a weak synchrony assumption where all messages are guaranteed to be delivered after a certain time bound by using timeouts).</p>
-<p>It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/digital-signatures#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed message digests</a>).</p>
-<p>This circumvents the <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> because it relies on a synchrony assumption to guarantee liveness, not safety.</p>
+<p>It can drive a consensus decision in two rounds of message exchanges. The first phase guarantees proposal uniqueness through the formation of a quorum certificate (QC) consisting of $(n − f)$ votes. The second phase guarantees that the next leader can convince replicas to vote for a safe proposal.</p>
+<p>It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/digital-signatures#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed message digests</a>). This circumvents the <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> because it relies on a synchrony assumption to guarantee liveness, not safety.</p>
 <p>For a faster alternative, consider <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a> (which provides a reduction from $O(n^2)$ to $O(n)$ normal-case communication and a best-case latency of only a single round of communication)</p>
 <p>The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this <em>explicitly allows for faulty primaries</em> while the algorithm properly handles.</p>
 <p>The algorithm works as follows</p>

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -447,6 +447,130 @@ Aug 9, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
 
 
 
@@ -468,7 +592,20 @@ Aug 9, 2022
 <li><strong>Linear view change:</strong> After GST, any correct leader, once designated, sends only $O(n)$ authenticators to drive a consensus decision in the best-case. In the worst-case, communication costs to reach consensus after GST is $O(n^2)$ authenticators in the worst case of cascading leader failures</li>
 <li><strong>Optimistic Responsiveness</strong>: : After GST, any correct leader, once designated, needs to wait just for the first $n − f$ responses to guarantee that it can create a proposal that will make progress</li>
 </ol>
-<p>HotStuff does this by adding another phase to each view, with the assumption that the network delay is less than the $\Delta$ required to wait for GST.</p>
+<p>HotStuff does this by adding another phase to each view, with the assumption that the network delay is less than the $\Delta$ required to wait for GST. This solves the hidden QC problem.</p>
+<blockquote>
+<p>If a leader doesn&rsquo;t wait for the $\Delta$ expiration time of a round. Simply receiving $n-f$ replies from participants (up to $f$ of which may be Byzantine) is not sufficient to ensure that the leader gets to see the highest QC</p>
+</blockquote>
+<p>Such an impatient leader may propose a lower QC value than what is accepted and this may lead to a liveness violation. In order not to wait the maximum  Δ  expiration time of a round, HotStuff introduces another round, Pre-commit, before the actual Commit round.</p>
+<p>Both <a href="/thoughts/Casper-FFG" rel="noopener" class="internal-link" data-src="/thoughts/Casper-FFG">Casper</a> and <a href="/thoughts/Tendermint" rel="noopener" class="internal-link" data-src="/thoughts/Tendermint">Tendermint</a> wait the full $\Delta$ period instead of incurring the cost of a new round.</p>
+<a href="#cryptographic-primitives"><h2 id="cryptographic-primitives"><span class="hanchor" ariaLabel="Anchor"># </span>Cryptographic Primitives</h2></a>
+<p>Uses <a href="/thoughts/digital-signatures" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">thresholded signatures</a> with a threshold of $k = 2f+1$</p>
+<a href="#three-phase-protocol"><h2 id="three-phase-protocol"><span class="hanchor" ariaLabel="Anchor"># </span>Three-phase Protocol</h2></a>
+<p>HotStuff is a view-based protocol. Each view $v$ has a unique leader known to all. Each replicas has a tree of pending commands (as opposed to a list used by more classical <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a> protocols).</p>
+<p>During the protocol, a monotonically growing branch becomes committed. To become committed, the leader of a particular view proposing the branch must collect votes from a quorum of $(n − f)$ replicas (the QC) in three phases: prepare, pre-commit, and commit.</p>
+<a href="#chained-hotstuff"><h2 id="chained-hotstuff"><span class="hanchor" ariaLabel="Anchor"># </span>Chained HotStuff</h2></a>
+<p>Note that each of the three-phases have very similar structure and that the protocol isn&rsquo;t doing &ldquo;useful&rdquo; work except collecting votes from replicas. To optimize this, we can pipeline the phases, similar to what <a href="/thoughts/Casper-FFG" rel="noopener" class="internal-link" data-src="/thoughts/Casper-FFG">Casper FFG</a> does.</p>
+<p><img src="/thoughts/images/chained-hotstuff.png" width="auto" /></p>
 
 
     </article>

@@ -116,13 +116,13 @@ A Byzantine fault is any fault presenting different symptoms to different observ
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -427,6 +427,14 @@ Aug 8, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/posts/towards-data-neutrality/" data-ctx="byzantine actors" data-src="/posts/towards-data-neutrality" class="internal-link">Towards Data Neutrality</a>
       </li>
@@ -434,7 +442,7 @@ Aug 8, 2022
       
       
       <li>
-        <a href="/thoughts/HotStuff/" data-ctx="byzantine fault-tolerant" data-src="/thoughts/HotStuff" class="internal-link">HotStuff</a>
+        <a href="/thoughts/HotStuff/" data-ctx="BFT" data-src="/thoughts/HotStuff" class="internal-link">HotStuff</a>
       </li>
       
       
@@ -459,6 +467,12 @@ Aug 8, 2022
       
       <li>
         <a href="/thoughts/Tangaroa/" data-ctx="Byzantine fault-tolerant" data-src="/thoughts/Tangaroa" class="internal-link">Tangaroa</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/blockchain/" data-ctx="byzantine fault-tolerant" data-src="/thoughts/blockchain" class="internal-link">Blockchain</a>
       </li>
       
       

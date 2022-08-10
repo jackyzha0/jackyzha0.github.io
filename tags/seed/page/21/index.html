@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -266,6 +266,24 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 25, 2021
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/information-foraging/">Information Foraging</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -419,24 +437,6 @@ Dec 25, 2021
             </p>
             <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/Twin-Earth-Argument/">Twin Earth Argument</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 24, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Algorithms-of-Oppression/">Algorithms of Oppression</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

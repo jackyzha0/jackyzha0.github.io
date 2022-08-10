@@ -116,13 +116,13 @@ The universal message bus. An immutable, digital, distributed ledger that connec
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a10bbafd3cb3f873e36a179e09410a09.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -338,6 +338,138 @@ Oct 8, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -367,25 +499,12 @@ Oct 8, 2021
   href="/thoughts/ethereum/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/ethereum/">Ethereum</a>.</p>
-<p>Like symbolic systems, meaning needs to be derived through 
-
-
-
-
-
-<a
-  href="/thoughts/intentionality/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/intentionality/">intentionality</a>. Run into problems of agreement on meaning of symbols and the 
-
-
-
-
-
-<a
-  href="/thoughts/Degraded-Blockchain-problem/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/Degraded-Blockchain-problem/">Degraded Blockchain problem</a></p>
+<p>A blockchain is a <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a> protocol that has a 3-layer architecture.</p>
+<ol>
+<li>Consensus core: forms agreement over an immutable sequence of updates to a shared state: <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine fault-tolerant</a>. The consensus algorithm most commonly used are <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">longest-chain consensus algorithms</a> and solve BFT for a <em>permissionless</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></li>
+<li>State-machine API:  <a href="/thoughts/bitcoin" rel="noopener" class="internal-link" data-src="/thoughts/bitcoin">Bitcoin</a>’s state-machine and state-updates use a limited scripting language; <a href="/thoughts/ethereum" rel="noopener" class="internal-link" data-src="/thoughts/ethereum">Ethereum</a> expands the state-machine and state-updates with a Turing complete abstraction (whose resources are bounded using gas).</li>
+<li>Application Layer: In Bitcoin is the shared provenance tracking of digital assets, and in Ethereum, could be anything decentralized.</li>
+</ol>
 <p>Characteristics:</p>
 <ol>
 <li>Distributed: data is stored by and updates are broadcasted to everyone</li>

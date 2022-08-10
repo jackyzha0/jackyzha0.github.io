@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authenticator complexity</title>
+      <link>https://jzhao.xyz/thoughts/authenticator-complexity/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/authenticator-complexity/</guid>
+      <description>A measure of complexity (lower is better) for distributed [[thoughts/consensus|consensus]] mechanisms in partially synchronous [[thoughts/system model|system model]].
+Definition: The sum, over all replicas $i \in [ n ]$, of the number of authenticators received by replica $i$ in the protocol to reach a consensus decision after GST.</description>
+    </item>
+    
     <item>
       <title>Casper FFG</title>
       <link>https://jzhao.xyz/thoughts/Casper-FFG/</link>
