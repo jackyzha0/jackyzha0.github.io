@@ -27,7 +27,7 @@ When working with our hands, touch does the driving, and vision helps out from t
 
 New representations of thought — written [[thoughts/language|language]], numerals, mathematical notation, data graphics — have been responsible for some of the most significant leaps in the progress of civilization, by expanding humanity’s collectively-thinkable territory. Why then, have we been trapped using the desktop/paper metaphor for the last few centuries? Why have we essentially bottle-necked our [bandwidth](thoughts/bandwidth.md) for interaction design?
 
-Ted Nelson, the guy who coined the terms hypertext and hypermedia, called the continued use of paper simulations as "like tearing the wings off a 747 and driving it as a bus on a highway."
+Ted Nelson, the guy who coined the terms [[thoughts/hypertext|hypertext]] and hypermedia, called the continued use of paper simulations as "like tearing the wings off a 747 and driving it as a bus on a highway."
 
 > And what about screens as a whole? Is the future of computation really just sliding fingers around slabs of glass? -- [Jason Yuan](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)
 

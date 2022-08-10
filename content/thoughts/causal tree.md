@@ -8,7 +8,7 @@ aliases:
 - CT
 ---
 
-> Towards real-time read-write hypertext
+> Towards real-time read-write [[thoughts/hypertext|hypertext]]
 
 TLDR; a simpler and more understandable form of [[thoughts/CRDT#Operation-based|CvRDT]] that relies on a strong notion of happens-before [[thoughts/causality|causal relationships]] and unique identifiers.
 

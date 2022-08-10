@@ -43,6 +43,7 @@ There are two main protocol paradigms for achieving consensus in the presence of
 |Finality|Instant and deterministic|Probabilistic (at risk of potentially large chain reorganizations and double-spend attacks)|
 |Fork behaviour|Rare but difficult to recover from|Embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct|
 |[FLP Result](/thoughts/FLP%20Result) Behaviour|sacrifice either liveness or consistency in the face of an attack (assuming <33% Byzantine as per FLP Result)|Does not apply as longest-chain consensus is non-deterministic|
+|Permission model|Permissioned|Permissionless|
 
 ### Comparisons between different BFT SMR protocols
 All protocols are of the following:
@@ -52,12 +53,14 @@ All protocols are of the following:
 
 Below is a comparison of a few top protocols and their tradeoffs
 
-| |Best-case Latency (rounds)|Normal-case Communication|View-change Communication|Leader Rotation|
-|--|--|--|--|--|
-|[PBFT](/thoughts/PBFT)|2|$O(n^2)$|$O(n^2)$|On suspected fault|
-|[Tendermint](/thoughts/Tendermint)|2|$O(n)$|$O(n)$|Every round|
-|[SBFT](/thoughts/SBFT)|1|$O(n)$|$O(n^2)$|On suspected fault|
-|[HotStuff](/thoughts/HotStuff)|3|$O(n)$|$O(n)$|Every round|
+| |Best-case Latency (rounds)|Normal-case Communication|View-change Communication|Leader Rotation|Responsiveness|
+|--|--|--|--|--|--|
+|[PBFT](/thoughts/PBFT)|2|$O(n^2)$|$O(n^3)$|On suspected fault|Yes|
+|[Tendermint](/thoughts/Tendermint)|2|$O(n)$ using thresholded signatures, $O(n^2)$ otherwise|$O(n)$|Every round|No|
+|[SBFT](/thoughts/SBFT)|1|$O(n)$|$O(n^2)$|On suspected fault|Yes|
+|[HotStuff](/thoughts/HotStuff)|3|$O(n)$|$O(n)$|Every round|Yes|
+
+Responsiveness here refers to the property that a non-faulty leader can drive the protocol to consensus in a time depending on *actual message delays* and not the theoretical upper bound on message transmission delays. In partially synchronous models, we use *optimistic responsiveness*, which requires responsiveness only after GST is reached.
 
 Leader rotation tradeoff:
 - maintaining a stable leader means less overhead and better performance due to stability when the leader is honest and trusted

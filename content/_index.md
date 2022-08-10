@@ -1,5 +1,7 @@
 ---
 title: "jzhao.xyz"
+tags:
+- evergreen
 ---
 
 Welcome to my little [garden](posts/networked-thought.md) on the [internet](thoughts/Internet.md) -- I'm Jacky! I spend a lot of time here [playing](posts/play.md), [[thoughts/writing|writing]], and [building out in the open](thoughts/building%20in%20public.md). It's a little unkempt in places, but I think it gives it a little charm.
@@ -10,7 +12,7 @@ I'm curious about how we can better [incentivize](thoughts/incentives.md) [publi
 
 In this era of my life, I’m working towards being someone who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun).
 
-Though I can't quite yet provide you a guided tour of this digital garden, I can leave you a handful of links to places as suggestions.
+Though I can't quite yet provide you a guided tour of this digital garden, I can leave you a list of places to explore as suggestions.
 
 - [The fruit garden out back](/posts): a collection of my favourite writing;
 - [The hand-crafted oak workbench](thoughts/Projects.md): a collection of projects I've hacked on;

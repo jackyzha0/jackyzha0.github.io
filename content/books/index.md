@@ -24,10 +24,10 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Current
 * **Seeing Like A State** by James C. Scott
-* **Weaving the Web** by Tim Berners-Lee
 
 ## Past
 2022
+* **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
 - **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
 - **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
 - **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte

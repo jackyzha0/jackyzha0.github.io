@@ -14,7 +14,7 @@ A distilled version of the [Raft paper](https://raft.github.io/raft.pdf). For a 
 
 A really good [video review of the algorithm by Martin Kleppmann](https://www.youtube.com/watch?v=uXEYuDwm7e4&list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&index=18)
 
-For a [[thoughts/Byzantine Faults|BFT]]-resilient version of Raft, see [[thoughts/Tangaroa|Tangaroa]]
+For a [[thoughts/Byzantine Faults|BFT]]-resilient version of Raft, see [[thoughts/Tangaroa|Tangaroa]].
 
 ## Distributed Consensus
 When you only have one machine, it is easy to figure out what the state of that machine is in. But what happens when you have multiple machines that need to agree on some value or state?
@@ -114,6 +114,11 @@ Other options like log cleaning and log-structured merge trees are also possible
 
 ## RPCs
 All Raft RPCs are idempotent so sending multiple RPCs causes no harms (e.g. telling a follower to AppendEntries it already has does nothing). 
+
+## Liveness Guarantees
+Additionally, note that Raft (in its current specification) is *not resilient to omission faults*. This can be resolved with two additional RPCs however:
+1. PreVote: requires potential candidates to run a trial election to test if they can win an election before incrementing their term and running a normal election using RequestVote
+2. QuorumCheck: requiring leaders to actively step down if they do not receive AppendEntries responses from a majority of servers
 
 ## Implementation
 You can find a reference implementation on GitHub

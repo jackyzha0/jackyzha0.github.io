@@ -19,7 +19,7 @@ I think research logs tend to generally focus too much on what one did rather th
 ### August 5th - 7th
 - Went to [Hackclub Assemble](https://assemble.hackclub.com/) and was just inspired by the magnitude of talent of the next generation of hackers and builders. Zach (+ Sam and rest of the HC team) really blew it out of the park this time. The theme was to build something completely useless and the kids went wild with it. I still strongly believe that one of the best signals for someone who *deeply* and intrinsically cares about technology is one who can still play and tinker for the hell of it.
 	- In a similar vain, I'm organizing a Hack Day at [The SF Commons](https://www.thesfcommons.com/) on August 14th! A little callback to my hackathon organizing days :)) Really hoping to bring this new space to life with this event
-- Reading **Weaving the Web** by Tim Berners-Lee. More thoughts on this coming soon, but tldr; it is reassuring to hear that it took almost 13 years to combine the Internet and hypertext together to conceptually create the Web. Even then, it took a lot of trying over many years to bring adoption for something that many didn't really see as potentially revolutionary
+- Reading **Weaving the Web** by Tim Berners-Lee. More thoughts on this coming soon, but tldr; it is reassuring to hear that it took almost 13 years to combine the Internet and [[thoughts/hypertext|hypertext]] together to conceptually create the Web. Even then, it took a lot of trying over many years to bring adoption for something that many didn't really see as potentially revolutionary
 - Reading through [[thoughts/PBFT|PBFT]] paper, really trying to understand the correctness and [[thoughts/liveness|liveness]] proofs
 
 ### August 4th

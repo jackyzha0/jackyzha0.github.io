@@ -34,7 +34,7 @@ Our tools of memory should be democratized and public. These tools are a [public
 
 > device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.
 
-Bush envisioned the memex behaving like an “intricate web of trails” similar to the function of the human mind, which he believed works by a method of “association” and not via an alphabetical index. According to Levy (2008, 508), the most “innovative feature” of Bush’s memex system was the establishing of associative indices between portions of microfilmed text—what we now call hypertext links—so that researchers could follow trails of useful information through masses of literature.
+Bush envisioned the memex behaving like an “intricate web of trails” similar to the function of the human mind, which he believed works by a method of “association” and not via an alphabetical index. According to Levy (2008, 508), the most “innovative feature” of Bush’s memex system was the establishing of associative indices between portions of microfilmed text—what we now call [[thoughts/hypertext|hypertext]] links—so that researchers could follow trails of useful information through masses of literature.
 
 > Tapping a few keys projects the head of the trail. A lever runs through it at will, stopping at interesting items, going off on side excursions. It is an interesting trail, pertinent to the discussion.
 
