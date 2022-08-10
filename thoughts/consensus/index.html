@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -513,6 +513,226 @@ Aug 9, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -550,6 +770,7 @@ Aug 9, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/communities/">communities</a></p>
 <p>Note that this is inherently <em>different</em> from collaboration methods like <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>. Collaboration involves keeping <em>all</em> edits and merging them. Consensus involves picking one of several proposed values and agreeing on it.</p>
+<p>Example applications include: <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a>, <a href="/thoughts/Byzantine-Agreement" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Agreement">Byzantine Agreement</a></p>
 <a href="#consensus-and-humming-in-the-ietf"><h2 id="consensus-and-humming-in-the-ietf"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus and Humming in the IETF</h2></a>
 <p>
 
@@ -570,24 +791,180 @@ Aug 9, 2021
 </ol>
 <p>There are two main protocol paradigms for achieving consensus in the presence of Byzantine nodes:</p>
 <ol>
-<li><a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">BFT</a>-type protocols
+<li>Classic <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a> protocols: typically uses two voting rounds to ensure <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a>
 <ol>
-<li>typically use multiple rounds of voting to ensure <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a></li>
-<li>favour <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a> in the face of an attack (assuming &lt;33% Byzantine as per)</li>
-<li>very difficult to resolve forks in-protocol (Tendermint literally says to communicate out-of-band to resolve this lol)</li>
-<li>includes <a href="/thoughts/Tendermint" rel="noopener" class="internal-link" data-src="/thoughts/Tendermint">Tendermint</a></li>
+<li>One phase to guarantee proposal uniqueness using a quorum certificate of $n-f$ votes</li>
+<li>The other phase is to convince replicas that the leader is safe to propose new entries</li>
+<li>Examples include: <a href="/thoughts/Tendermint" rel="noopener" class="internal-link" data-src="/thoughts/Tendermint">Tendermint</a>, <a href="/thoughts/Tangaroa" rel="noopener" class="internal-link" data-src="/thoughts/Tangaroa">Tangaroa</a>, <a href="/thoughts/HotStuff" rel="noopener" class="internal-link" data-src="/thoughts/HotStuff">HotStuff</a>, <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a></li>
 </ol>
 </li>
-<li>longest-chain protocols
+<li><a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">Longest-chain consensus</a>
 <ol>
-<li>embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct</li>
-<li>favour <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> in the face of an attack</li>
-<li>at risk of potentially large chain reorganizations and double-spend attacks</li>
-<li>includes <a href="/thoughts/bitcoin" rel="noopener" class="internal-link" data-src="/thoughts/bitcoin">Bitcoin</a>, <a href="/thoughts/ethereum" rel="noopener" class="internal-link" data-src="/thoughts/ethereum">Ethereum</a></li>
+<li>Examples include: most consensus mechanisms for cryptocurrencies like <a href="/thoughts/bitcoin" rel="noopener" class="internal-link" data-src="/thoughts/bitcoin">Bitcoin</a>, <a href="/thoughts/ethereum" rel="noopener" class="internal-link" data-src="/thoughts/ethereum">Ethereum</a></li>
 </ol>
 </li>
 </ol>
-<p>Examples include: <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a>, <a href="/thoughts/Byzantine-Agreement" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Agreement">Byzantine Agreement</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Classic BFT</th>
+<th>Longest-chain Consensus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Safety/Liveness tradeoff</td>
+<td>Favours 
+
+
+
+
+
+<a
+  href="/thoughts/safety/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/safety/">safety</a> in the face of an attack</td>
+<td>Favour 
+
+
+
+
+
+<a
+  href="/thoughts/liveness/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/liveness/">liveness</a> in the face of an attack</td>
+</tr>
+<tr>
+<td>Finality</td>
+<td>Instant and deterministic</td>
+<td>Probabilistic (at risk of potentially large chain reorganizations and double-spend attacks)</td>
+</tr>
+<tr>
+<td>Fork behaviour</td>
+<td>Rare but difficult to recover from</td>
+<td>Embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct</td>
+</tr>
+<tr>
+<td>
+
+
+
+
+
+<a
+  href="/thoughts/FLP-Result/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/FLP-Result/">FLP Result</a> Behaviour</td>
+<td>sacrifice either liveness or consistency in the face of an attack (assuming &lt;33% Byzantine as per FLP Result)</td>
+<td>Does not apply as longest-chain consensus is non-deterministic</td>
+</tr>
+<tr>
+<td>Permission model</td>
+<td>Permissioned</td>
+<td>Permissionless</td>
+</tr>
+</tbody>
+</table>
+<a href="#comparisons-between-different-bft-smr-protocols"><h3 id="comparisons-between-different-bft-smr-protocols"><span class="hanchor" ariaLabel="Anchor"># </span>Comparisons between different BFT SMR protocols</h3></a>
+<p>All protocols are of the following:</p>
+<ol>
+<li>protocols for <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine fault-tolerant</a> <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a></li>
+<li>All work in the partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> and obtain safety (always) and liveness (after GST) in the face of an adversary that controls $f$ replicas out of a total of $n=3f+1$ replicas (per <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a>)</li>
+<li>All these protocols are based on the classic leader-based primary-backup approach where leaders are replaced in a <em>view-change</em> (or election to use <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> terminology) protocol.</li>
+</ol>
+<p>Below is a comparison of a few top protocols and their tradeoffs</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Best-case Latency (rounds)</th>
+<th>Normal-case Communication</th>
+<th>View-change Communication</th>
+<th>Leader Rotation</th>
+<th>Responsiveness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+
+
+
+
+<a
+  href="/thoughts/PBFT/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/PBFT/">PBFT</a></td>
+<td>2</td>
+<td>$O(n^2)$</td>
+<td>$O(n^3)$</td>
+<td>On suspected fault</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>
+
+
+
+
+
+<a
+  href="/thoughts/Tendermint/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/Tendermint/">Tendermint</a></td>
+<td>2</td>
+<td>$O(n)$ using thresholded signatures, $O(n^2)$ otherwise</td>
+<td>$O(n)$</td>
+<td>Every round</td>
+<td>No</td>
+</tr>
+<tr>
+<td>
+
+
+
+
+
+<a
+  href="/thoughts/SBFT/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/SBFT/">SBFT</a></td>
+<td>1</td>
+<td>$O(n)$</td>
+<td>$O(n^2)$</td>
+<td>On suspected fault</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>
+
+
+
+
+
+<a
+  href="/thoughts/HotStuff/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/HotStuff/">HotStuff</a></td>
+<td>3</td>
+<td>$O(n)$</td>
+<td>$O(n)$</td>
+<td>Every round</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Responsiveness here refers to the property that a non-faulty leader can drive the protocol to consensus in a time depending on <em>actual message delays</em> and not the theoretical upper bound on message transmission delays. In partially synchronous models, we use <em>optimistic responsiveness</em>, which requires responsiveness only after GST is reached.</p>
+<p>Leader rotation tradeoff:</p>
+<ul>
+<li>maintaining a stable leader means less overhead and better performance due to stability when the leader is honest and trusted</li>
+<li>constantly rotating the leader provides a stronger fairness guarantee against stable malicious leaders</li>
+</ul>
+<a href="#pipelining"><h3 id="pipelining"><span class="hanchor" ariaLabel="Anchor"># </span>Pipelining</h3></a>
+<p>In <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a> and <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a>, the leader maintains a <em>window</em> of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like <a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a> where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can <em>significantly increase throughput</em> by allowing the leader to concurrently coordinate several actions of slot commitments.</p>
 
 
     </article>
@@ -669,6 +1046,14 @@ Aug 9, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/posts/new-words/" data-ctx="consensus" data-src="/posts/new-words" class="internal-link">A New Glossary of Words</a>
       </li>
@@ -676,7 +1061,19 @@ Aug 9, 2021
       
       
       <li>
+        <a href="/thoughts/Byzantine-Faults/" data-ctx="consensus" data-src="/thoughts/Byzantine-Faults" class="internal-link">Byzantine Faults</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/CRDT/" data-ctx="consensus" data-src="/thoughts/CRDT" class="internal-link">Conflict-free Replicated Data Type (CRDT)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Casper-FFG/" data-ctx="consensus" data-src="/thoughts/Casper-FFG" class="internal-link">Casper FFG</a>
       </li>
       
       
@@ -694,6 +1091,12 @@ Aug 9, 2021
       
       
       <li>
+        <a href="/thoughts/State-Machine-Replication-SMR/" data-ctx="consensus" data-src="/thoughts/State-Machine-Replication-SMR" class="internal-link">State Machine Replication (SMR)</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Vanilla-Ice-Cream-effect/" data-ctx="consensus" data-src="/thoughts/Vanilla-Ice-Cream-effect" class="internal-link">Vanilla Ice Cream effect</a>
       </li>
       
@@ -701,12 +1104,6 @@ Aug 9, 2021
       
       <li>
         <a href="/thoughts/decentralization/" data-ctx="Consensus" data-src="/thoughts/decentralization" class="internal-link">Decentralization</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/fault-tolerance/" data-ctx="consensus" data-src="/thoughts/fault-tolerance" class="internal-link">Fault Tolerance</a>
       </li>
       
       

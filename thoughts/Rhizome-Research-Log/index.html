@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,6 +294,72 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -6621,7 +6687,7 @@ May 3, 2022
 <a href="https://www.thesfcommons.com/" rel="noopener">The SF Commons</a> on August 14th! A little callback to my hackathon organizing days :)) Really hoping to bring this new space to life with this event</li>
 </ul>
 </li>
-<li>Reading <strong>Weaving the Web</strong> by Tim Berners-Lee. More thoughts on this coming soon, but tldr; it is reassuring to hear that it took almost 13 years to combine the Internet and hypertext together to conceptually create the Web. Even then, it took a lot of trying over many years to bring adoption for something that many didn&rsquo;t really see as potentially revolutionary</li>
+<li>Reading <strong>Weaving the Web</strong> by Tim Berners-Lee. More thoughts on this coming soon, but tldr; it is reassuring to hear that it took almost 13 years to combine the Internet and <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a> together to conceptually create the Web. Even then, it took a lot of trying over many years to bring adoption for something that many didn&rsquo;t really see as potentially revolutionary</li>
 <li>Reading through <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a> paper, really trying to understand the correctness and <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> proofs</li>
 </ul>
 <a href="#august-4th"><h3 id="august-4th"><span class="hanchor" ariaLabel="Anchor"># </span>August 4th</h3></a>
@@ -7097,7 +7163,7 @@ youtube:
 <img src="https://jzhao.xyz//thoughts/images/IMG_1805.png" width="auto" alt="???"  /></p>
 <a href="#july-5th"><h3 id="july-5th"><span class="hanchor" ariaLabel="Anchor"># </span>July 5th</h3></a>
 <ul>
-<li>Finalizing notes on <a href="/thoughts/Tendermint" rel="noopener" class="internal-link" data-src="/thoughts/Tendermint">Tendermint</a> and wondering if I should switch out <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> for it. How valuable is <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">BFT</a> anyways? Do we assume nodes are prone to potentially malicious takeover?</li>
+<li>Finalizing notes on <a href="/thoughts/Tendermint" rel="noopener" class="internal-link" data-src="/thoughts/Tendermint">Tendermint</a> and wondering if I should switch out <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> for it. How valuable is <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a> anyways? Do we assume nodes are prone to potentially malicious takeover?</li>
 </ul>
 <a href="#july-2-4th"><h3 id="july-2-4th"><span class="hanchor" ariaLabel="Anchor"># </span>July 2-4th</h3></a>
 <ul>
@@ -7670,7 +7736,7 @@ youtube:
 <ul>
 <li>Mostly reading about <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> consensus algorithm today and understanding how it works
 <ul>
-<li>Always wondered how these consensus algorithms deal with bad actors &ndash; turn out they don&rsquo;t! That&rsquo;s where <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">BFT</a> comes in</li>
+<li>Always wondered how these consensus algorithms deal with bad actors &ndash; turn out they don&rsquo;t! That&rsquo;s where <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a> comes in</li>
 <li>Seems to be promising for replicating between trusted peers (potentially applicable)</li>
 </ul>
 </li>

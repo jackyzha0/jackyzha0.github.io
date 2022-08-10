@@ -6,7 +6,74 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Casper FFG</title>
+      <link>https://jzhao.xyz/thoughts/Casper-FFG/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Casper-FFG/</guid>
+      <description>Partial [[thoughts/consensus|consensus]] mechanism is an overlay on top of proposal mechanisms to finalize blocks (selecting a unique chain that represents the canonical history of the chain)</description>
+    </item>
+    
+    <item>
+      <title>HotStuff</title>
+      <link>https://jzhao.xyz/thoughts/HotStuff/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/HotStuff/</guid>
+      <description>A [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|state machine replication]] protocol for the partially synchronous [[thoughts/system model|system model]]. It can express other known protocols (e.</description>
+    </item>
+    
+    <item>
+      <title>Hypertext</title>
+      <link>https://jzhao.xyz/thoughts/hypertext/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/hypertext/</guid>
+      <description>Coined by Ted Nelson in 1965 in &amp;ldquo;Literary Machines&amp;rdquo;
+He envisioned a world where computers would enable people to write and publish in a new, nonlinear format, which he called hypertext.</description>
+    </item>
+    
+    <item>
+      <title>SBFT</title>
+      <link>https://jzhao.xyz/thoughts/SBFT/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/SBFT/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weaving the Web</title>
+      <link>https://jzhao.xyz/thoughts/Weaving-the-Web/</link>
+      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Weaving-the-Web/</guid>
+      <description>The original design and ultimate destiny of the world wide web.
+ Written by Tim Berners-Lee
+A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965.</description>
+    </item>
+    
+    <item>
+      <title>BitTorrent</title>
+      <link>https://jzhao.xyz/thoughts/BitTorrent/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/BitTorrent/</guid>
+      <description>Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</description>
+    </item>
+    
+    <item>
+      <title>Byzantine Faults</title>
+      <link>https://jzhao.xyz/thoughts/Byzantine-Faults/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Byzantine-Faults/</guid>
+      <description>Sources: Byzantine Faults on Wikipedia and Paper on the Byzantine Generals Problem
+A Byzantine fault is any fault presenting different symptoms to different observers.</description>
+    </item>
+    
     <item>
       <title>Cryptography</title>
       <link>https://jzhao.xyz/thoughts/cryptography/</link>
@@ -67,6 +134,17 @@ Full name is the Rivest, Shamir, Adelson Algorithm
     </item>
     
     <item>
+      <title>Tangaroa</title>
+      <link>https://jzhao.xyz/thoughts/Tangaroa/</link>
+      <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Tangaroa/</guid>
+      <description>A [[thoughts/Byzantine Faults|Byzantine fault-tolerant]] [[thoughts/Raft Consensus Algorithm|Raft]] algorithm inspired by [[thoughts/PBFT|PBFT]]
+  Source Paper
+Byzantine nodes are problematic for Raft:</description>
+    </item>
+    
+    <item>
       <title>Byzantine Agreement</title>
       <link>https://jzhao.xyz/thoughts/Byzantine-Agreement/</link>
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
@@ -83,7 +161,7 @@ Every node has a private input, there is no distinguished sender. All non-Byzant
       
       <guid>https://jzhao.xyz/thoughts/PBFT/</guid>
       <description>Practical Byzantine Fault Tolerance by Miguel Castro and Barbara Liskov
-tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with a partially synchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/fault tolerance#Byzantine Faults|Byzantine faults]].</description>
+TLDR; one of the first [[thoughts/State Machine Replication (SMR)|state machine replication]] algorithms with an asynchronous [[thoughts/system model|system model]] that can tolerate [[thoughts/Byzantine Faults|Byzantine faults]] (although it has a weak synchrony assumption where all messages are guaranteed to be delivered after a certain time bound by using timeouts).</description>
     </item>
     
     <item>
@@ -92,8 +170,8 @@ tldr; one of the first [[thoughts/State Machine Replication (SMR)|state machine 
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/State-Machine-Replication-SMR/</guid>
-      <description>A subset of the algorithmic consensus problem about agreeing on the same state
- Consistency: all notes agree on the same history [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node&amp;rsquo;s histories  SMR can be reduced to [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]</description>
+      <description>A subset of the algorithmic [[thoughts/consensus|consensus]] problem about agreeing on the same state
+ [[thoughts/consistency|Consistency]]: all notes agree on the same history [[thoughts/liveness|Liveness]]: every transaction submitted eventually added to all node&amp;rsquo;s histories  SMR can be reduced to [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]</description>
     </item>
     
     <item>
@@ -224,7 +302,7 @@ On Website Redesigns  There are endless possibilities as to what a website could
       <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/causal-tree/</guid>
-      <description>Towards real-time read-write hypertext
+      <description>Towards real-time read-write [[thoughts/hypertext|hypertext]]
  TLDR; a simpler and more understandable form of [[thoughts/CRDT#Operation-based|CvRDT]] that relies on a strong notion of happens-before [[thoughts/causality|causal relationships]] and unique identifiers.</description>
     </item>
     
@@ -990,7 +1068,7 @@ Mechanism design asks how one can design systems so that agents’ selfish behav
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Raft-Consensus-Algorithm/</guid>
-      <description>An understandable [[thoughts/consensus|consensus]] algorithm.
+      <description>An understandable [[thoughts/consensus|consensus]] algorithm
  A distilled version of the Raft paper. For a more graphic version, see this visualization of Raft by The Secret Lives of Data.</description>
     </item>
     
@@ -3741,8 +3819,7 @@ Podcast Interview with Margaret O’Mara, the author of  The Code: Silicon Valle
       <pubDate>Sun, 25 Jul 2021 17:03:18 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/workflows/</guid>
-      <description>https://uxdesign.cc/introducing-mercury-os-f4de45a04289
-Creating modular tools for users to build their own workflows and interactions
+      <description>Creating modular tools for users to build their own workflows and interactions
  &amp;ldquo;Each person’s mind works a little differently, and each person remembers and processes information a little differently.</description>
     </item>
     
@@ -4259,15 +4336,6 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       
       <guid>https://jzhao.xyz/thoughts/move-fast-and-break-things/</guid>
       <description>To slow down is to end up default dead; the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/BitTorrent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/BitTorrent/</guid>
-      <description>BitTorrent Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.</description>
     </item>
     
     <item>

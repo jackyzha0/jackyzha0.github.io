@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -337,6 +337,28 @@ Jul 1, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -372,6 +394,13 @@ Jul 1, 2022
 </tr>
 </tbody>
 </table>
+<a href="#pgp"><h2 id="pgp"><span class="hanchor" ariaLabel="Anchor"># </span>PGP</h2></a>
+<p>Pretty Good Privacy</p>
+<p>A sort of web of <a href="/thoughts/trust" rel="noopener" class="internal-link" data-src="/thoughts/trust">trust</a> protocol where you determine whether to trust another party based on who else you know has trusted that party.</p>
+<blockquote>
+<p>As time goes on, you will accumulate keys from other people that you may want to designate as trusted introducers. Everyone else will each choose their own trusted introducers. And everyone will gradually accumulate and distribute with their key a collection of certifying signatures from other people, with the expectation that anyone receiving it will trust at least one or two of the signatures. This will cause the emergence of a decentralized fault-tolerant web of confidence for all public keys.</p>
+</blockquote>
+<p>The web of trust mechanism has advantages over a centrally managed public key infrastructure scheme</p>
 
 
     </article>

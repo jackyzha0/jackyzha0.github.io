@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -458,6 +458,50 @@ Jul 3, 2022
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
 
@@ -537,8 +581,10 @@ Jul 3, 2022
 <blockquote>
 <p>Tendermint is most useful as an analog of Paxos/<a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> but in a multi-stakeholder, or otherwise more adversarial, setting. However, the performance may not be as high due to the overhead of cryptographic operations</p>
 </blockquote>
-<p>Authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.</p>
-<p>A <a href="/thoughts/consensus#state-machine-replication" rel="noopener" class="internal-link" data-src="/thoughts/consensus">state machine replication</a> protocol that, when $f &lt; \frac n 3$, satisfies always <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a> and eventually satisfies <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> (under the presence of an attack)</p>
+<p>
+
+<a href="https://tendermint.com/static/docs/tendermint.pdf" rel="noopener">Source Paper</a>, authored by Buchman, Kwon, Milosevic in 2018, stabilized in 2019.</p>
+<p>A <a href="/thoughts/consensus#state-machine-replication" rel="noopener" class="internal-link" data-src="/thoughts/consensus">state machine replication</a> protocol with a partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a> that, when $f &lt; \frac n 3$, satisfies always <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistency</a> and eventually satisfies <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> (under the presence of an attack). Unfortunately, the time to obtain a supermajority increases linearly with the number of nodes in the network.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>High-level ideas:</p>
 <ol>
 <li>Iterated single-shot consensus (something that looks like <a href="/thoughts/consensus#byzantine-agreement" rel="noopener" class="internal-link" data-src="/thoughts/consensus">Byzantine Agreement</a>) where the output of each single-shot consensus instance outputs a block (ordered list of transactions)</li>
@@ -662,6 +708,16 @@ Jul 3, 2022
 </ul>
 </li>
 </ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>&ldquo;There is a practical limit to how decentralized a blockchain with <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a>-based consensus can be. For instance, most Tendermint based blockchains only have 100-150 validators; this is done to strike a balance between time to finality and decentralization&rdquo; (from Scott&rsquo;s <em>
+
+<a href="https://www.smsunarto.com/blog/guide-to-finality" rel="noopener">Guide to Finality</a></em>)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
 
     </article>
@@ -693,6 +749,30 @@ Jul 3, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Casper-FFG/" data-ctx="Tendermint" data-src="/thoughts/Casper-FFG" class="internal-link">Casper FFG</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/HotStuff/" data-ctx="Tendermint" data-src="/thoughts/HotStuff" class="internal-link">HotStuff</a>
+      </li>
+      
       
       
       <li>

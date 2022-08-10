@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -325,9 +325,9 @@ Jan 7, 2022
 <p><em>
 
 <a href="https://dougengelbart.org/content/view/154/86/" rel="noopener">Engelbart on HyperScope</a></em></p>
-<p><em>Hyperscope is a browsing tool that enables most of the viewing and navigating features called for in Doug Engelbart&rsquo;s <em>open hyperdocument system</em> framework (
+<p><em>Hyperscope is a browsing tool that enables most of the viewing and navigating features called for in Doug Engelbart&rsquo;s open hyperdocument system framework (
 
-<a href="https://www.dougengelbart.org/about/ohs.html" rel="noopener">OHS</a>) to support <em>dynamic knowledge repositories</em></em></p>
+<a href="https://www.dougengelbart.org/about/ohs.html" rel="noopener">OHS</a>) to support dynamic knowledge repositories</em></p>
 <p><img src="/thoughts/images/hyperscope.png" width="300" /></p>
 
 

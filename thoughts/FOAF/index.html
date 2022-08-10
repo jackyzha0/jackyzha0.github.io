@@ -117,13 +117,13 @@ FOAF stands for &lsquo;friend of a friend&rsquo;
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,6 +319,30 @@ Jun 8, 2022
     
   
 
+  
+  
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -331,7 +355,7 @@ Jun 8, 2022
 <a href="http://xmlns.com/foaf/spec/" rel="noopener">the xmlns FOAF specs</a></p>
 <p>FOAF stands for &lsquo;friend of a friend&rsquo;</p>
 <blockquote>
-<p>FOAF is a project devoted to linking people and information using the Web&hellip; If people publish information in the FOAF document format, machines will be able to make use of that information. If those files contain &ldquo;see also&rdquo; references to other such documents in the Web, we will have a machine-friendly version of today&rsquo;s hypertext Web.</p>
+<p>FOAF is a project devoted to linking people and information using the Web&hellip; If people publish information in the FOAF document format, machines will be able to make use of that information. If those files contain &ldquo;see also&rdquo; references to other such documents in the Web, we will have a machine-friendly version of today&rsquo;s <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a> Web.</p>
 </blockquote>
 <p>It is a way of creating a semantically meaningful network of objects, useful for enabling the Semantic Web.</p>
 <ul>

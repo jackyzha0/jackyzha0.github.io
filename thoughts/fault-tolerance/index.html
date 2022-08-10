@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -424,28 +424,6 @@ Jun 23, 2021
     
   
 
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
 
 
 
@@ -472,25 +450,7 @@ Jun 23, 2021
 <a
   href="/thoughts/game-theory/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/game-theory/">game theory</a>, <a class="internal-link broken">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a>, <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a></p>
-<a href="#byzantine-faults"><h2 id="byzantine-faults"><span class="hanchor" ariaLabel="Anchor"># </span>Byzantine Faults</h2></a>
-<p>Sources: 
-
-<a href="https://en.wikipedia.org/wiki/Byzantine_fault" rel="noopener">Byzantine Faults on <em>Wikipedia</em></a> and 
-
-<a href="https://lamport.azurewebsites.net/pubs/byz.pdf" rel="noopener">Paper on the Byzantine Generals Problem</a></p>
-<p>A <strong>Byzantine fault</strong> is any fault presenting different symptoms to different observers. A <strong>Byzantine failure</strong> is the loss of a system service due to a Byzantine fault in systems that require 
-
-
-
-
-
-<a
-  href="/thoughts/consensus/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/consensus/">consensus</a> between nodes.</p>
-<p>Byzantine fault tolerance (BFT) is the property of a system that is able to resist the class of failures derived from the Byzantine Generals’ Problem. This means that a BFT system is able to continue operating even if some of the nodes fail or act maliciously.</p>
-<p>See also: <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a>, <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a></p>
+  data-src="/thoughts/game-theory/">game theory</a>, <a class="internal-link broken">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a>, <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a>, <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine Faults</a></p>
 <a href="#two-generals-problem"><h3 id="two-generals-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Two Generals Problem</h3></a>
 <p>This thought experiment meant to illustrate the pitfalls and design challenges of attempting to coordinate an action by communicating over an unreliable link. In the experiment, two generals are only able to communicate with one another by sending a messenger through enemy territory. The experiment asks how they might reach an agreement on the time to launch an attack, while knowing that any messenger they send could be captured. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying.</p>
 <p>Because acknowledgement of message receipt can be lost as easily as the original message, a potentially infinite series of messages is required to come to consensus.</p>

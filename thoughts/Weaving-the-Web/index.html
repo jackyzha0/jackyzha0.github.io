@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="The original design and ultimate destiny of the world wide web.
+ Written by Tim Berners-Lee
+A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965."
+  />
+  <title>
+    Weaving the Web
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.20d42b17cb9edb3aa5644847edf23ef1.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+
+      
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(render)
+      
+      container.textContent = ""
+
+      const drawGlobal = isHome &&  false ;
+      drawGraph(
+          "https://jzhao.xyz",
+          drawGlobal,
+          [{"/moc":"#4388cc"}],
+          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+        );
+
+      
+
+
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something...">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Weaving the Web</h1>
+      <p class="meta">
+          Last updated 
+Aug 9, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/thoughts/Weaving%20the%20Web.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+<blockquote>
+<p>The original design and ultimate destiny of the world wide web.</p>
+</blockquote>
+<p>Written by Tim Berners-Lee</p>
+<a href="#a-brief-history-of-the-web"><h2 id="a-brief-history-of-the-web"><span class="hanchor" ariaLabel="Anchor"># </span>A Brief History of the Web</h2></a>
+<p><a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">Hypertext</a> was invented by Ted Nelson in 1965. The <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a>, as worked on by Donald Davis, Paul Barran, Vint Cerf, and Bob Kahn, were already becoming pervasive by the 1970s. Tim Berners-Lee came at the right time to marry them together into the Web.</p>
+<p>The Web was a slow process &ndash; there was no &ldquo;Eureka!&rdquo; moment. He described the process like getting a bobsled down the hill &ndash; something you needed to put a lot of upfront effort into getting moving, but once you did, you needed to get in and steer.</p>
+<p>He first wrote a proposal for the Web at CERN in March of 1989 and began work on it with Robert Cailliau. On Christmas Day 1990, the first <em>WorldWideWeb</em> browser/editor was working, communicating with the info.cern.ch server, a full 20 years after the existence of both hypertext and the Internet. Not only was it able to view web pages, it could edit them collaboratively with others.</p>
+<p>Even still, people at CERN &ldquo;didn&rsquo;t seem to see how it would be useful.&rdquo; This created a lot of tension between Robert and Tim about how to deploy their resources effectively.</p>
+<blockquote>
+<p>Should we develop it further on the NeXT? Should we reprogram it for the Mac or the PC or Unix, because even though the NeXT was an efficient machine, few other people had them? After all, what good was a &ldquo;worldwide&rdquo; web if there were only a few users? Should we tailor the Web to the high-energy physics community, so they&rsquo;d have a tool that was theirs and would support it, since CERN was paying our salaries? Or should we generalize the Web and really address the global community, at the risk of being personally disenfranchised by CERN? &hellip; My gut told me I had to pursue my larger vision of creating a global system.</p>
+</blockquote>
+<p>At the same time, several other Internet-based information systems were surfacing too, namely WAIS and Gopher. Both systems took off much more quickly and he was concerned that they would suffocate the Web. Nonetheless, they put their heads down and kept working at it.</p>
+<p>As browsers started to spread, no one working on them really focused on writing or editing functions for the web. Browsers were just that &ndash; things to browse the web. This was one of the first major divergences between the vision that Tim had for the web and what actually happened. He wanted the web to be collaborative, citing that &ldquo;without a hypertext editor, people would not have the tools to really use [it] as an intimate collaborative medium. Browsers would let them find and share information, but they could not work together intuitively.&rdquo; This was a concern that would come back to continuously haunt him.</p>
+<p>But by the summer of 1992, the bobsled had started to move. The logs showed a dramatic exponential curve over the past twelve months, doubling every three to four. After a single year, the load had grown by a factor of ten.</p>
+<p>Now, companies and individuals were starting to eye the Web as a way to make profit. With the rise of Mosaic (which would later become Netscape), they tried to make the web &rsquo;theirs&rsquo;. It wasn&rsquo;t &ldquo;on the Web&rdquo;, it was &ldquo;on Mosaic.&rdquo; The media started to portray Mosaic as if it were equivalent to the Web.</p>
+<p>As technologists and entrepreneurs were launching or merging companies to exploit the Web, they seemed fixated on one question: &ldquo;How can I make the Web mine?&rdquo; Tim was asking, &ldquo;How can I make the Web yours?&rdquo; Gopher, one of two most popular Internet information systems at the time, decided to charge an annual fee for access and just as quickly as people flocked to it, they dropped it like a hot potato. Many asked if the Web would suffer the same fate. His response? On April 30th, 1993, Tim and Robert signed a declaration saying that the Web protocol and code was free to use and anyone could create a server or a browser to give away or sell without royalty or other constraint.</p>
+<p>More than ever, this experience convinced Tim that it was time to stop pushing the bobsled and instead to jump in and steer it. With yet another factor of 10 growth since the previous year, he decided to start the World Wide Web Consortium, the W3C. It wasn&rsquo;t a standards body, but rather an international organization to help developers of servers and browsers alike reach consensus on how the Web should operate. With everyone trying to pick up the Web and run with it in different directions, Tim thought the W3C would help unify their pursuits in creating a single, universal, accessible, hypertext medium for sharing information. It would develop open technical specifications and have a small full-time staff<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> to design and develop the code wherever necessary. With members open to any organization, regardless of commercial, educational or governmental, for-profit or non-profit, W3C would represent the power and authority of millions of developers, researchers, and users.</p>
+<p>Of course, the W3C was not meant to be a point of control. Tim made it clear that he had designed the Web so there should be no centralized place where someone would have to &ldquo;register&rdquo; a new server, or get approval of its contents. Anyone could build a server and put anything on it. Philosophically, if the Web was the be a universal resource, it had to be able to grow in an unlimited way.</p>
+<p>The international telephone system offers a great analogy. It defines what it has to (i.e. the voltages and signals), but then leaves how it is used up to the devices. That&rsquo;s what we needed for computers on the web. Universality.</p>
+<p>Quietly, under the noise of all the companies trying to make a fortune off the web, the W3C has been steering the web and leading the web to its full potential. Today, Tim currently sits as Director of the W3C. He was knighted by Queen Elizabeth in 2007. Now, Sir Tim promotes open government data globally and spends time fighting for rights such as net neutrality, privacy and the openness of the Web.</p>
+<p>But there is still work left to be done. A slow <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">recentralization of the Web</a> is happening, and users lack agency over their own privacy. Of course, there have been many proposals to address this, including Tim&rsquo;s own <a href="/thoughts/Solid" rel="noopener" class="internal-link" data-src="/thoughts/Solid">Solid project</a> as well as my research on <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizhome</a>. We are still early.</p>
+<blockquote>
+<p>When I try to explain the architecture now, I get the same distant look in people&rsquo;s eyes as I did in 1989, when I tried to explain how global hypertext would work. But I&rsquo;ve found a few individuals who share the vision; I can see it from the way they gesticulate and talk rapidly.</p>
+</blockquote>
+<a href="#quotes"><h2 id="quotes"><span class="hanchor" ariaLabel="Anchor"># </span>Quotes</h2></a>
+<a href="#relational-theories-of-the-world"><h3 id="relational-theories-of-the-world"><span class="hanchor" ariaLabel="Anchor"># </span>Relational Theories of the World</h3></a>
+<p>Enquire was a very early <a href="/thoughts/RDF#rdf-triple" rel="noopener" class="internal-link" data-src="/thoughts/RDF">triple-store</a> like <a href="/posts/networked-thought" rel="noopener" class="internal-link" data-src="/posts/networked-thought">networked thought</a> note-taking tool developed by Tim Berners-Lee. He made it to stored information without using structures like matrices or trees. After all, the human mind uses the organizing structures all the time, but can also break out of them and make intuitive leaps across the boundaries &ndash; those coveted random associations.</p>
+<p>In an extreme view, the world can be seen as only connections, nothing else. We think of a dictionary as the repository of meaning, but it defines words only in terms of other words.</p>
+<a href="#separation-of-layers-of-the-web"><h3 id="separation-of-layers-of-the-web"><span class="hanchor" ariaLabel="Anchor"># </span>Separation of layers of the Web</h3></a>
+<p>The web&rsquo;s infrastructure can be thought of as composed of four horizontal layers; from bottom to top they are the</p>
+<ol>
+<li>transmission medium: connecting computers together</li>
+<li>computer hardware</li>
+<li>software: runs web access</li>
+<li>content: the Web itself</li>
+</ol>
+<p>The independence of these layers is important. From the software engineering point of view, this is the basic principle of modularity. From the point of view of economics, it is the separation of horizontal competitive markets from anticompetitive vertical integration. From the information point of view, think of editorial independence, the neutrality of the medium.</p>
+<p>I am more concern about companies trying to take a vertical slice through the layers than creating a monopoly in any one layer. Keeping the medium and the content separate is a good rule in most media. When I turn on the television, I don&rsquo;t expect it to deliberately jump to a particular channel, I expect my television to be an impartial box.</p>
+<p>I also expect the same neutrality of software. When I ask a search engine to find the information it can on a topic, I don&rsquo;t expect it to return just the sites of companies that happen to advertise with or make payments to the search company.</p>
+<p>If a company claims to give access to the world of information, then presents a filtered view, the Web loses its credibility. That is why hardware, software, and transmission companies must remain unbiased toward content. I would like to keep the conduit separate from the content. I would like there always to be a choice of the unbiased way, combined carefully with the freedom to make commercial partnerships. And when other people are making a choice for me, I would like this to be made absolutely clear to me.</p>
+<p>See also: <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">inevitability of centralization</a></p>
+<a href="#privacy"><h3 id="privacy"><span class="hanchor" ariaLabel="Anchor"># </span>Privacy</h3></a>
+<p>People should be able to surf the Web anonymously, or as a well-defined entity, and should be able to control the difference between the two. I would like to be able to decide who I will allow to use my personal information and for what.</p>
+<p>The W3C is creating a technology that will allow automatic negotiation between a user&rsquo;s browser and store&rsquo;s server, leading to an agreement about privacy. The Platform for Privacy Preferences Project (P3P) will give a computer a way of describing its owner&rsquo;s privacy preferences and demands and give servers a way of describing their privacy policies.</p>
+<a href="#annotations"><h3 id="annotations"><span class="hanchor" ariaLabel="Anchor"># </span>Annotations</h3></a>
+<p>I would like annotation servers to exist where groups could add links to documents they want to comment on. Annotation servers are third-party services allowing a group to share each others&rsquo; comments on documents anywhere else on the Web. The browser gets the original page and then separately checks annotation servers for comments which are then superimposed on the page.</p>
+<p>Imagine having servers for comments in different forums, perhaps family, school, and company. Again, the theme is human beings doing the thinking and machines helping it work on a larger scale, but nothing replacing wisdom in the end.</p>
+<a href="#technology-and-policy"><h3 id="technology-and-policy"><span class="hanchor" ariaLabel="Anchor"># </span>Technology and Policy</h3></a>
+<p>[The W3C] defines mechanism, not policy. That said, it is essential that policy and technology be designed with a good understanding of each other. As I noted in closing the first International World Wide Web Conference at CERN in May 1994, technologists cannot simply leave the social and ethical questions to other people, because technology directly affects these matters. (see: <a href="/thoughts/software-and-politics" rel="noopener" class="internal-link" data-src="/thoughts/software-and-politics">software and politics</a>)</p>
+<a href="#the-webs-achilles-heel-dns"><h3 id="the-webs-achilles-heel-dns"><span class="hanchor" ariaLabel="Anchor"># </span>The Web&rsquo;s Achilles&rsquo; Heel: DNS</h3></a>
+<p>At the top of the <a href="/thoughts/DNS" rel="noopener" class="internal-link" data-src="/thoughts/DNS">DNS</a> hierarchy sits 13 root servers. An operator error at this level can black out huge portions of the web. However, that technical weakness is itself less of a concern than the social centralization that parallels it.</p>
+<p>All domain names are given out in a delegated fashion. To set up the name 
+
+<a href="https://www.lcs.mit.edu" rel="noopener">www.lcs.mit.edu</a>, one registers it with the Lab for Computer Science, which is owner of the lcs.mit.edu domain, LCS got its domain in turn from MIT, which is the registered owner of mit.edu. MIT got its domain from the owner of edu. Control over these &rsquo;top-level&rsquo; domains gives control over all domain names and so is something of great power. Who should exercise that power?</p>
+<a href="#semantic-web-and-data-lensing"><h3 id="semantic-web-and-data-lensing"><span class="hanchor" ariaLabel="Anchor"># </span>Semantic Web and Data Lensing</h3></a>
+<p>To build understanding, we need to be able to link terms. This will be made possible by <em>inference languages</em>, which work one level above the schema languages. Inference languages allow computers to explain to each other that two terms that may seem different are in some way the same &ndash; a little like an English-French dictionary. Inference languages will allow computers to convert data from one format to another.</p>
+<a href="#social"><h3 id="social"><span class="hanchor" ariaLabel="Anchor"># </span>Social</h3></a>
+<p>A person who&rsquo;s completely turned inward, who spends all his or her time alone, is someone who has trouble making balanced decisions and is unhappy. Someone who is completely turned outward, who&rsquo;s worried about the environment and international diplomacy and spends no time sitting at home or in their local community, also has trouble making balanced decisions and is also unhappy. It seems a person&rsquo;s happiness depends on having a balance of connections at different levels. We seem to have built into us what it takes in a person to be part of a fractal society.</p>
+<a href="#teaching"><h3 id="teaching"><span class="hanchor" ariaLabel="Anchor"># </span>Teaching</h3></a>
+<p>Having to work with someone else&rsquo;s definitions is difficult. An awe-inspiring talent of my physics tutor, Professor John Moffat, was that when I brought him a problem I had worked out incorrectly, using a strange technique and symbols different from the well-established ones, he not only would follow my weird reasoning to find out where it went wrong, but would then use my own strange notation to explain the right answer.</p>
+<p>This great feat involved looking at the world using my definitions, comparing them with his, and translating his knowledge and experience into my language. It was a mathematical version of the art of listening.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This full time staff team was paid through the membership fee for the W3C, which was $50k for full-membership and $5k for non-profit or governmental entities. Members had to commit to a three-year term of membership, after which they could renew annually. Members were free to attend any meeting, and sit on any working group. They would also get exclusive access to in-depth information on all activities under way, much like how the Xerox Parc membership worked.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/books/" data-ctx="Weaving the Web" data-src="/books" class="internal-link">Booklist</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+<div id="contact_buttons">
+    <footer>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+
+</html>

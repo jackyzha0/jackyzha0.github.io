@@ -116,13 +116,13 @@ Network behaviour (e.g. message loss)  Reliable: message is received if and only
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,18 @@ May 5, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/33-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
@@ -453,6 +465,12 @@ May 5, 2022
       
       
       <li>
+        <a href="/thoughts/HotStuff/" data-ctx="system model" data-src="/thoughts/HotStuff" class="internal-link">HotStuff</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/PBFT/" data-ctx="system model" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
       </li>
       
@@ -466,6 +484,18 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="system models" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Tendermint/" data-ctx="system model" data-src="/thoughts/Tendermint" class="internal-link">Tendermint</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/consensus/" data-ctx="system model" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
       </li>
       
       

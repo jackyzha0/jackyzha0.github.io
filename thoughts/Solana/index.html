@@ -117,13 +117,13 @@ Proof of History For a blockchain to work, participant nodes need to reach an ag
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -510,7 +510,7 @@ May 3, 2022
 </ul>
 <p>This guarantees that when an output is valid for an input, some time has passed for producing that output.</p>
 <a href="#tower-bft"><h2 id="tower-bft"><span class="hanchor" ariaLabel="Anchor"># </span>Tower BFT</h2></a>
-<p>Practical <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Fault Tolerance</a> which uses proof of history as a reliable source of time.</p>
+<p><a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a> which uses proof of history as a reliable source of time.</p>
 <p>From 
 
 <a href="https://docs.solana.com/implemented-proposals/tower-bft" rel="noopener">Solana Documentation</a></p>

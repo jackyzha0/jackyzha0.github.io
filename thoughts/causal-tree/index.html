@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Towards real-time read-write hypertext
+    content="Towards real-time read-write [[thoughts/hypertext|hypertext]]
  TLDR; a simpler and more understandable form of [[thoughts/CRDT#Operation-based|CvRDT]] that relies on a strong notion of happens-before [[thoughts/causality|causal relationships]] and unique identifiers."
   />
   <title>
@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -395,6 +395,34 @@ Jul 14, 2022
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -426,7 +454,7 @@ Jul 14, 2022
 
 
 <blockquote>
-<p>Towards real-time read-write hypertext</p>
+<p>Towards real-time read-write <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a></p>
 </blockquote>
 <p>TLDR; a simpler and more understandable form of <a href="/thoughts/CRDT#operation-based" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CvRDT</a> that relies on a strong notion of happens-before <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal relationships</a> and unique identifiers.</p>
 <p>

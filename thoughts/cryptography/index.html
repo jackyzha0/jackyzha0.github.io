@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -605,7 +605,7 @@ Aug 8, 2022
 <ol>
 <li>Integrity: can the recipient be confident that the message has not been accidentally modified?</li>
 <li>Authentication: can the recipient be confident that the message originates from the sender?</li>
-<li>Non-repudiation: can any third-party be confident that a message received is from the original sender and not forged by the recipient? (i.e. can it prevent the recipient from forging arbitrary messages)</li>
+<li>Non-repudiation: can the message&rsquo;s authenticity be unchallengeable?  (i.e. if I send a message, I can&rsquo;t later  maintain I did not)</li>
 </ol>
 <p>There are multiple ways of accomplishing this:</p>
 <ol>

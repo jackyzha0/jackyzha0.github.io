@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -629,7 +629,7 @@ Jul 14, 2022
 <li>Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
 <li>High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)</li>
 </ul>
-<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without <em>aggressive</em> application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine</a> actors) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.</p>
+<p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without <em>aggressive</em> application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine actors</a>) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.</p>
 <p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
 <a href="#the-personal-cloud"><h2 id="the-personal-cloud"><span class="hanchor" ariaLabel="Anchor"># </span>The personal cloud</h2></a>
 <p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable <em>data-neutrality</em> by separating data from applications.</p>

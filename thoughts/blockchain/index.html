@@ -116,13 +116,13 @@ The universal message bus. An immutable, digital, distributed ledger that connec
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -316,6 +316,28 @@ Oct 8, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -386,9 +408,9 @@ Oct 8, 2021
 <a href="https://www.investopedia.com/terms/m/merkle-tree.asp" rel="noopener">Merkle root</a> representing the hash of all the transactions in that block.</p>
 <p>Transactions happen as follows:</p>
 <ol>
-<li>A transaction is initiated</li>
-<li>Data is packaged into a block</li>
-<li>Block is sent to members of the chain</li>
+<li>A transaction is initiated by a client</li>
+<li>Transactions are checked for validity to see if the state transition is legal (validation)</li>
+<li>Multiple transactions are packaged into a block and sent to members of the chain (block proposal)</li>
 <li>Consensus and approval by rest of network (either 
 
 
@@ -408,14 +430,13 @@ Oct 8, 2021
   href="/thoughts/proof-of-stake/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/proof-of-stake/">proof of stake</a>)</li>
-<li>Block is added to chain</li>
-<li>Chain update is distributed to members</li>
+<li>Block is added to chain and distributed to members</li>
 </ol>
 <a href="#why-it-matters"><h2 id="why-it-matters"><span class="hanchor" ariaLabel="Anchor"># </span>Why it Matters</h2></a>
 <p>It feels like the level of change which blockchain impacts is huge but at the same time latent.</p>
 <p>After going through a bunch of Kernel modules, Austin came upon a name for the concept: &ldquo;blockchain changes what soil is&rdquo;</p>
 <p>&ldquo;The &ldquo;new world&rdquo; seems to look very similar to the old. i.e. <em>isn&rsquo;t a DAO just voting on how to donate money, which we could do today?</em>&rdquo;</p>
-<p>In actuality, the <em>layer</em> at which change is happening is much deeper (more 
+<p>In actuality, the <em><a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">layer</a></em> at which change is happening is much deeper (more 
 
 
 
@@ -562,6 +583,10 @@ Oct 8, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/towards-data-neutrality/" data-ctx="blockchain" data-src="/posts/towards-data-neutrality" class="internal-link">Towards Data Neutrality</a>
       </li>
@@ -576,6 +601,12 @@ Oct 8, 2021
       
       <li>
         <a href="/thoughts/DID/" data-ctx="blockchains" data-src="/thoughts/DID" class="internal-link">DID</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/HotStuff/" data-ctx="blockchains" data-src="/thoughts/HotStuff" class="internal-link">HotStuff</a>
       </li>
       
       

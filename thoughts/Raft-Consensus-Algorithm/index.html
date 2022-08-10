@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="An understandable [[thoughts/consensus|consensus]] algorithm.
+    content="An understandable [[thoughts/consensus|consensus]] algorithm
  A distilled version of the Raft paper. For a more graphic version, see this visualization of Raft by The Secret Lives of Data."
   />
   <title>
@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.63a417acb9d485084ca3cf147f7d5a36.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fb2613de67b51618655092ff4a31be90.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.44722f496b94040ac5ef2e846dfcc059.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b855a40d35e45e13b73e71bfa4a6a4e3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -295,6 +295,66 @@ May 1, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -708,7 +768,7 @@ May 1, 2022
 
 
 <blockquote>
-<p>An understandable <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> algorithm.</p>
+<p>An understandable <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> algorithm</p>
 </blockquote>
 <p>A distilled version of the 
 
@@ -718,6 +778,7 @@ May 1, 2022
 <p>A really good 
 
 <a href="https://www.youtube.com/watch?v=uXEYuDwm7e4&amp;list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&amp;index=18" rel="noopener">video review of the algorithm by Martin Kleppmann</a></p>
+<p>For a <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a>-resilient version of Raft, see <a href="/thoughts/Tangaroa" rel="noopener" class="internal-link" data-src="/thoughts/Tangaroa">Tangaroa</a>.</p>
 <a href="#distributed-consensus"><h2 id="distributed-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Consensus</h2></a>
 <p>When you only have one machine, it is easy to figure out what the state of that machine is in. But what happens when you have multiple machines that need to agree on some value or state?</p>
 <p>How do we arrive at a shared set of state across multiple machines that can be as far as opposite sides of the world? How do we handle machines crashing and become unable to respond to incoming requests?</p>
@@ -726,7 +787,7 @@ May 1, 2022
 <p>Generally, this is done using a log of actions that are <em>replicated</em> across all machines. Keeping this replicated log consistent between all the machines is the job of the <em>consensus algorithm</em>. They allow a collection of machines to agree on some shared state which still make sense even when there is latency or unavailability.</p>
 <p>In more formal language, consensus algorithms should typically have the following properties:</p>
 <ol>
-<li><a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">Safety</a> in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. <a href="/thoughts/fault-tolerance#byzantine-faults" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">Byzantine Faults</a>)</li>
+<li><a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">Safety</a> in the face of network delays, partitions, packet loss, duplication, and reordering (except under certain cases where there are no known solutions, e.g. <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine Fault Tolerance</a>)</li>
 <li>Functional (available) as long as the majority of servers are operational and can communicate</li>
 <li>Latency resilient and does not depend on timing of messages to ensure consistency</li>
 </ol>
@@ -794,6 +855,12 @@ May 1, 2022
 <p>Other options like log cleaning and log-structured merge trees are also possible.</p>
 <a href="#rpcs"><h2 id="rpcs"><span class="hanchor" ariaLabel="Anchor"># </span>RPCs</h2></a>
 <p>All Raft RPCs are idempotent so sending multiple RPCs causes no harms (e.g. telling a follower to AppendEntries it already has does nothing).</p>
+<a href="#liveness-guarantees"><h2 id="liveness-guarantees"><span class="hanchor" ariaLabel="Anchor"># </span>Liveness Guarantees</h2></a>
+<p>Additionally, note that Raft (in its current specification) is <em>not resilient to omission faults</em>. This can be resolved with two additional RPCs however:</p>
+<ol>
+<li>PreVote: requires potential candidates to run a trial election to test if they can win an election before incrementing their term and running a normal election using RequestVote</li>
+<li>QuorumCheck: requiring leaders to actively step down if they do not receive AppendEntries responses from a majority of servers</li>
+</ol>
 <a href="#implementation"><h2 id="implementation"><span class="hanchor" ariaLabel="Anchor"># </span>Implementation</h2></a>
 <p>You can find a reference implementation on GitHub</p>
 <ul>
@@ -822,6 +889,14 @@ May 1, 2022
     
     
     
+    
+      
+      
+      
+    
+      
+      
+      
     
       
       
@@ -918,7 +993,19 @@ May 1, 2022
       
       
       <li>
+        <a href="/thoughts/Tangaroa/" data-ctx="Raft" data-src="/thoughts/Tangaroa" class="internal-link">Tangaroa</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Tendermint/" data-ctx="Raft" data-src="/thoughts/Tendermint" class="internal-link">Tendermint</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/consensus/" data-ctx="Raft" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
       </li>
       
       
