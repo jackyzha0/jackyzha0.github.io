@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4efcf64d05e3339f9cdf97f5078ed8cb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2b58c8dc35d1e327dbd715cac45deddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -777,6 +777,28 @@ Aug 9, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -911,7 +933,7 @@ Aug 9, 2021
 </tr>
 </tbody>
 </table>
-<p>Note that there have been attempts to bridge Classic BFT models with <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">Nakamoto-style consensus</a> ones with hybrid consensu models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.</p>
+<p>Note that there have been attempts to bridge Classic BFT models with <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">Nakamoto-style consensus</a> ones with hybrid consensus models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.</p>
 <a href="#comparisons-between-different-bft-smr-protocols"><h3 id="comparisons-between-different-bft-smr-protocols"><span class="hanchor" ariaLabel="Anchor"># </span>Comparisons between different BFT SMR protocols</h3></a>
 <p>All protocols are of the following:</p>
 <ol>
@@ -1009,7 +1031,7 @@ Aug 9, 2021
 <li>constantly rotating the leader provides a stronger fairness guarantee against stable malicious leaders</li>
 </ul>
 <a href="#pipelining"><h3 id="pipelining"><span class="hanchor" ariaLabel="Anchor"># </span>Pipelining</h3></a>
-<p>In <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a> and <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a>, the leader maintains a <em>window</em> of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like <a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a> where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can <em>significantly increase throughput</em> by allowing the leader to concurrently coordinate several actions of slot commitments.</p>
+<p>In <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a>, <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a>, and <a href="/thoughts/HotStuff" rel="noopener" class="internal-link" data-src="/thoughts/HotStuff">HotStuff</a> the leader maintains a <em>window</em> of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like <a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a> where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can <em>significantly increase throughput</em> by allowing the leader to concurrently coordinate several actions of slot commitments.</p>
 
 
     </article>

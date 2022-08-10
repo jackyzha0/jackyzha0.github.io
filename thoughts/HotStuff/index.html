@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4efcf64d05e3339f9cdf97f5078ed8cb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2b58c8dc35d1e327dbd715cac45deddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -296,49 +296,13 @@ Aug 9, 2022
   
   
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
-  
+    
   
   
     
@@ -362,49 +326,13 @@ Aug 9, 2022
   
   
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
-  
+    
   
   
     
@@ -428,49 +356,13 @@ Aug 9, 2022
   
   
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
   
-
+    
   
-  
+    
   
   
     
@@ -494,6 +386,14 @@ Aug 9, 2022
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -516,6 +416,14 @@ Aug 9, 2022
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -538,6 +446,14 @@ Aug 9, 2022
   
   
   
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -559,6 +475,216 @@ Aug 9, 2022
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
   
   
     
@@ -606,6 +732,16 @@ Aug 9, 2022
 <a href="#chained-hotstuff"><h2 id="chained-hotstuff"><span class="hanchor" ariaLabel="Anchor"># </span>Chained HotStuff</h2></a>
 <p>Note that each of the three-phases have very similar structure and that the protocol isn&rsquo;t doing &ldquo;useful&rdquo; work except collecting votes from replicas. To optimize this, we can pipeline the phases, similar to what <a href="/thoughts/Casper-FFG" rel="noopener" class="internal-link" data-src="/thoughts/Casper-FFG">Casper FFG</a> does.</p>
 <p><img src="/thoughts/images/chained-hotstuff.png" width="auto" /></p>
+<a href="#commit-rule"><h3 id="commit-rule"><span class="hanchor" ariaLabel="Anchor"># </span>Commit Rule</h3></a>
+<p>HotStuff uses the concept of chains which maps nicely onto Chained HotStuff.</p>
+<p>The decision when a block is considered committed rests purely on a simple graph structure, a three-chain.</p>
+<p><img src="/thoughts/images/hotstuff-3-chain.png" width="auto" /></p>
+<p>The three-chain commit rule provides the following guarantee.</p>
+<ol>
+<li>The first link (corresponding to prepare) in the chain <code>QC|B' -&gt; QC|B</code> guarantees $n-f$ votes on a unique block <code>B</code>.</li>
+<li>The second link (corresponding to pre-commit) in the chain <code>QC|B'' -&gt; QC|B'</code> guarantees $n-f$ replicas have a QC on a unique block.</li>
+<li>The last link (corresponding to commit) <code>QC|B''' -&gt; QC|B''</code> guarantees that $n-f$ replicas have the highest QC of any two-chain that has a vote.</li>
+</ol>
 
 
     </article>
@@ -624,6 +760,10 @@ Aug 9, 2022
     
     
     
+    
+      
+      
+      
     
       
       

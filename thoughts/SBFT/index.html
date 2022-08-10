@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="A [[thoughts/Byzantine Faults|Byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|state machine replication]] system that improves upon the scalability of [[thoughts/PBFT|PBFT]].
+To achieve this performance improvement, SBFT uses a combination of four ingredients: using collectors and threshold [[thoughts/digital signatures|signatures]] to reduce communication to linear, using an optimistic fast path, reducing client communication and utilizing redundant servers for the fast path"
   />
   <title>
     SBFT
@@ -115,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.adbd2147f312c8fc6ada74afde6ee334.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4efcf64d05e3339f9cdf97f5078ed8cb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.64831fb46162c37aa0bc3a1fb5d98ac9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2b58c8dc35d1e327dbd715cac45deddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,6 +294,93 @@ Aug 9, 2022
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -300,6 +388,9 @@ Aug 9, 2022
 
 
 
+
+<p>A <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine fault-tolerant</a> <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">state machine replication</a> system that improves upon the scalability of <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a>.</p>
+<p>To achieve this performance improvement, SBFT uses a combination of four ingredients: using collectors and threshold <a href="/thoughts/digital-signatures" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signatures</a> to reduce communication to linear, using an optimistic fast path, reducing client communication and utilizing redundant servers for the fast path</p>
 
 
     </article>

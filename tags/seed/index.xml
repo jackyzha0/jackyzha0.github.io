@@ -17,6 +17,17 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
     </item>
     
     <item>
+      <title>HoneyBadgerBFT</title>
+      <link>https://jzhao.xyz/thoughts/HoneyBadgerBFT/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/HoneyBadgerBFT/</guid>
+      <description>An asynchronous [[thoughts/system model|system model]] total-order [[thoughts/message broadcast|message broadcast]] protocol
+ Key features:
+ Asynchrony: no timing assumptions. Messages can arrive at any time, and network speed determines the transaction rate Leaderless consensus: every node is a proposer.</description>
+    </item>
+    
+    <item>
       <title>Casper FFG</title>
       <link>https://jzhao.xyz/thoughts/Casper-FFG/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
@@ -50,7 +61,8 @@ He envisioned a world where computers would enable people to write and publish i
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/SBFT/</guid>
-      <description></description>
+      <description>A [[thoughts/Byzantine Faults|Byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|state machine replication]] system that improves upon the scalability of [[thoughts/PBFT|PBFT]].
+To achieve this performance improvement, SBFT uses a combination of four ingredients: using collectors and threshold [[thoughts/digital signatures|signatures]] to reduce communication to linear, using an optimistic fast path, reducing client communication and utilizing redundant servers for the fast path</description>
     </item>
     
     <item>
@@ -959,7 +971,7 @@ Physical Time Two types of clock
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/message-broadcast/</guid>
-      <description>Ordering Total order broadcast Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!</description>
+      <description>Ordering Total order broadcast or Atomic broadcast Globally consistent broadcast, agreement from all nodes (hard but can be done with consensus algorithms like [[thoughts/Raft Consensus Algorithm|Raft]]!</description>
     </item>
     
     <item>
