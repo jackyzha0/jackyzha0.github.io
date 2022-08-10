@@ -13,6 +13,7 @@ It is infeasible for Alice to generate a signed message that appears to have bee
 
 - Aggregating signatures: have multiple signatures signed by various people and then you can aggregate it into a single signature, which makes it more efficient in terms of size
 - Thresholding signatures: multiple people split a key into multiple parts, and you require some fixed number of people to agree to sign a message to be able to actually sign it with the full key
+	- In a $(k,n)$-threshold signature scheme, there is a single public key held by all replicas, and each of the $n$ replicas holds a distinct private key.
 
 ## Signatures Schemes
 Require 3 algorithms

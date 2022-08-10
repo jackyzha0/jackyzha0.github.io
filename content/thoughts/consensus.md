@@ -45,13 +45,15 @@ There are two main protocol paradigms for achieving consensus in the presence of
 |[FLP Result](/thoughts/FLP%20Result) Behaviour|sacrifice either liveness or consistency in the face of an attack (assuming <33% Byzantine as per FLP Result)|Does not apply as longest-chain consensus is non-deterministic|
 |Permission model|Permissioned|Permissionless|
 
+Note that there have been attempts to bridge Classic BFT models with [[thoughts/longest-chain consensus|Nakamoto-style consensus]] ones with hybrid consensu models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.
+
 ### Comparisons between different BFT SMR protocols
 All protocols are of the following:
 1.  protocols for [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|SMR]]
 2.  All work in the partially synchronous [[thoughts/system model|system model]] and obtain safety (always) and liveness (after GST) in the face of an adversary that controls $f$ replicas out of a total of $n=3f+1$ replicas (per [[thoughts/FLP Result|FLP Result]])
 3.  All these protocols are based on the classic leader-based primary-backup approach where leaders are replaced in a _view-change_ (or election to use [[thoughts/Raft Consensus Algorithm|Raft]] terminology) protocol.
 
-Below is a comparison of a few top protocols and their tradeoffs
+Below is a comparison of a few top protocols and their tradeoffs in [[thoughts/authenticator complexity|authenticator complexity]]
 
 | |Best-case Latency (rounds)|Normal-case Communication|View-change Communication|Leader Rotation|Responsiveness|
 |--|--|--|--|--|--|

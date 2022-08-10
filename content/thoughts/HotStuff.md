@@ -18,4 +18,23 @@ The first BFT SMR protocol with the following properties:
 1. **Linear view change:** After GST, any correct leader, once designated, sends only $O(n)$ authenticators to drive a consensus decision in the best-case. In the worst-case, communication costs to reach consensus after GST is $O(n^2)$ authenticators in the worst case of cascading leader failures
 2. **Optimistic Responsiveness**: : After GST, any correct leader, once designated, needs to wait just for the first $n − f$ responses to guarantee that it can create a proposal that will make progress
 
-HotStuff does this by adding another phase to each view, with the assumption that the network delay is less than the $\Delta$ required to wait for GST.
+HotStuff does this by adding another phase to each view, with the assumption that the network delay is less than the $\Delta$ required to wait for GST. This solves the hidden QC problem.
+
+> If a leader doesn't wait for the $\Delta$ expiration time of a round. Simply receiving $n-f$ replies from participants (up to $f$ of which may be Byzantine) is not sufficient to ensure that the leader gets to see the highest QC
+
+Such an impatient leader may propose a lower QC value than what is accepted and this may lead to a liveness violation. In order not to wait the maximum  Δ  expiration time of a round, HotStuff introduces another round, Pre-commit, before the actual Commit round.
+
+Both [[thoughts/Casper FFG|Casper]] and [[thoughts/Tendermint|Tendermint]] wait the full $\Delta$ period instead of incurring the cost of a new round.
+
+## Cryptographic Primitives
+Uses [[thoughts/digital signatures|thresholded signatures]] with a threshold of $k = 2f+1$
+
+## Three-phase Protocol
+HotStuff is a view-based protocol. Each view $v$ has a unique leader known to all. Each replicas has a tree of pending commands (as opposed to a list used by more classical [[thoughts/Byzantine Faults|BFT]] protocols).
+
+During the protocol, a monotonically growing branch becomes committed. To become committed, the leader of a particular view proposing the branch must collect votes from a quorum of $(n − f)$ replicas (the QC) in three phases: prepare, pre-commit, and commit.
+
+## Chained HotStuff
+Note that each of the three-phases have very similar structure and that the protocol isn't doing "useful" work except collecting votes from replicas. To optimize this, we can pipeline the phases, similar to what [[thoughts/Casper FFG|Casper FFG]] does.
+
+![[thoughts/images/chained-hotstuff.png]]

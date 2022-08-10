@@ -9,7 +9,10 @@ tags:
 
 The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like [Bitcoin](thoughts/bitcoin.md), [[thoughts/Solana|Solana]], and [Ethereum](thoughts/ethereum.md).
 
-Like symbolic systems, meaning needs to be derived through [intentionality](thoughts/intentionality.md). Run into problems of agreement on meaning of symbols and the [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
+A blockchain is a [[thoughts/State Machine Replication (SMR)|SMR]] protocol that has a 3-layer architecture.
+1. Consensus core: forms agreement over an immutable sequence of updates to a shared state: [[thoughts/Byzantine Faults|byzantine fault-tolerant]]. The consensus algorithm most commonly used are [[thoughts/longest-chain consensus|longest-chain consensus algorithms]] and solve BFT for a _permissionless_ [[thoughts/system model|system model]]
+2. State-machine API:  [[thoughts/bitcoin|Bitcoin]]’s state-machine and state-updates use a limited scripting language; [[thoughts/ethereum|Ethereum]] expands the state-machine and state-updates with a Turing complete abstraction (whose resources are bounded using gas).
+3. Application Layer: In Bitcoin is the shared provenance tracking of digital assets, and in Ethereum, could be anything decentralized.
 
 Characteristics:
 1. Distributed: data is stored by and updates are broadcasted to everyone

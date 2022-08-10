@@ -4,7 +4,8 @@ date: 2022-07-05
 tags:
 - seed
 aliases:
-- Nakamoto Consensus
+- Nakamoto consensus
+- Nakamoto-style consensus
 ---
 
 See also: [[thoughts/consensus|consensus]]
