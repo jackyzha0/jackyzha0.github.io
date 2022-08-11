@@ -9,6 +9,29 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 10th
+- Notes on [[thoughts/HotStuff|HotStuff]], [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]]. HotStuff seems to be a really useful lens to analyze future protocols as it is a general framework for expressing [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|SMR]].
+- Lots of paper reading... I feel a little burnt out. I've been spending almost 15h days just trying to mental sponge as much as this as I can.
+	- I think I'm getting enough sleep and my eating habits aren't terrible but my body seems to disagree. My eye sometimes just twitches randomly and my stomach has a certain tightness to it that I can't really describe well.
+- A bit of a slump day. Really spent the last month just reading about consensus protocols in *partially synchronous system models* only to discovery that what I was really looking for was consensus protocols in *completely asynchronous system models* (which handle cases where potentially majority replicas are offline).
+	- I realized this as I was digging into the very last PDF I had in my browser tab on consensus algorithms -- the last of 50 or 60 odd papers I made my way through.
+	- In this last paper, I found out about the [[thoughts/LR Permissionless Result|LR Permissionless Result]] which was derived earlier this year in February. It rules out the possibility for deterministic consensus in a Byzantine, permissionless model, which voids my current assumptions about the right type of consensus model for Rhizome.
+	- I don't think the research and learning went to waste per-se, I feel like I really learned a lot, but it sure feels like that whole month went to waste -- none of the protocols are of any direct use to the project. I just feel incredibly frustrated.
+- A summer retrospective. Anson encouraged me to write a more in-depth reflection on my research processes. I mentioned on a call that I felt unhappy with my progress this summer. I think the bulk of it comes down to doing way too much reading and not enough building and producing things.
+	- A large part of this I think comes down to underestimating just how much I didn't know about the space to begin with
+		- Every paper I read opened 2-4 new ones. An unknown concept or definition meant another day or two to get familiar with the literature surrounding it. It wasn't until a month ago that the number of tabs I had open started to go down.
+	- It feels like the attitude I'm taking towards research is one of bumping around in the dark. For the most part its enjoyable and exhilarating, finding things out for the first time.
+		- There's a certain joy to putting yourself in an environment where you can discover things for yourself. I can ask for help when I need it, but most of the time I'm puttering along at my own pace.
+		- This is roughly what my self-satisfaction curve looks like for self-motivated exploration: ![[thoughts/images/self-exploration-satisfaction.jpeg|400]]
+		- This is usually fine, but when I look at it *instrumentally*, just from a perspective of how much I've actually got done, I'm a little disappointed in myself.
+		- I've decided that I'm okay with it. I'm not trying to any% speedrun my work. I want to be able to enjoy research for what it is, to visit unexpected results and learn what I find intriguing about it.
+
+### August 9th
+- Finished reading [[thoughts/Weaving the Web|Weaving the Web]]! Probably my favourite non-fiction read so far this year. Was supposed to just write up quotes but instead wrote a 1.2k word History of the Web piece instead :')
+	- It gives me hope!! Trying to change deeply intrenched habits is hard. Getting people to see the potential is hard. But there are so many people working on this and putting their whole hearts and souls into the projects they believe in that I can't help but believe it'll work out.
+	- To quote from Tim Berners-Lee: "When I try to explain the architecture now, I get the same distant look in people's eyes as I did in 1989, when I tried to explain how global hypertext would work. But I've found a few individuals who share the vision; I can see it from the way they gesticulate and talk rapidly."
+- Rough notes on [[thoughts/Casper FFG|Casper FFG]], [[thoughts/SBFT|SBFT]]. Revising notes on [[thoughts/PBFT|PBFT]]
+
 ### August 8th
 - I want to target 60 updates per second (~16ms budget) for local and 10 updates per second (~100ms budget) for global updates
 	- This is a good target to aim for but also wary of premature optimization

@@ -43,7 +43,7 @@ There are two main protocol paradigms for achieving consensus in the presence of
 |Finality|Instant and deterministic|Probabilistic (at risk of potentially large chain reorganizations and double-spend attacks)|
 |Fork behaviour|Rare but difficult to recover from|Embrace forks, uses in-protocol methods for resolving ambiguity as to which fork is correct|
 |[FLP Result](/thoughts/FLP%20Result) Behaviour|sacrifice either liveness or consistency in the face of an attack (assuming <33% Byzantine as per FLP Result)|Does not apply as longest-chain consensus is non-deterministic|
-|Permission model|Permissioned|Permissionless|
+|Permission model|Generally permissioned (see [Sandglass](/thoughts/Sandglass))|Permissionless|
 
 Note that there have been attempts to bridge Classic BFT models with [[thoughts/longest-chain consensus|Nakamoto-style consensus]] ones with hybrid consensus models which use a permissionless chain to determine a participant/proposer rotation in a reconfigurable BFT engine.
 
@@ -70,3 +70,10 @@ Leader rotation tradeoff:
 
 ### Pipelining
 In [[thoughts/PBFT|PBFT]], [[thoughts/SBFT|SBFT]], and [[thoughts/HotStuff|HotStuff]] the leader maintains a _window_ of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like [[thoughts/TCP|TCP]] where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can *significantly increase throughput* by allowing the leader to concurrently coordinate several actions of slot commitments.
+
+## Impossibility Results
+When consensus is impossible to achieve:
+1. [[thoughts/33% Impossibility Result|33% Impossibility Result]]
+2. [[thoughts/PSL-FLM Impossibility Result|PSL-FLM Impossibility Result]]
+3. [[thoughts/FLP Result|FLP Result]]
+4. [[thoughts/LR Permissionless Result|LR Permissionless Result]]
