@@ -6,7 +6,7 @@ tags:
 - CPSC317
 ---
 
-Main method of communication at the [Application Layer](thoughts/Application%20Layer.md) for the web
+Main method of communication at the [Application Layer](thoughts/Application%20Layer.md) for the web. A state-transfer protocol.
 
 ## Connections
 1. Non-persistent HTTP (v1.0)

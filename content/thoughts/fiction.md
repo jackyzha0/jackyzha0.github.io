@@ -29,3 +29,8 @@ The act of imagining something makes it real. Art as processes or the seeds for 
 
 ## Fiction as shared visions
  _Visions matter_. Visions give people a direction and inspire people to act, and _a group of inspired people is the most powerful force in the world_. If you're a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.
+
+## Protocol Fiction
+> But we don’t need just design fictions. We need business model fictions, engineering feasibility study fictions, interop protocol specification fictions, investment return fictions.
+
+[Speculative Infrastructure](https://interconnected.org/home/2022/08/11/casi)
