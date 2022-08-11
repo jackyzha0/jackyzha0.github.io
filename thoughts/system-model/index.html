@@ -116,13 +116,13 @@ Network behaviour (e.g. message loss)  Reliable: message is received if and only
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4efcf64d05e3339f9cdf97f5078ed8cb.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2b58c8dc35d1e327dbd715cac45deddd.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -458,6 +458,14 @@ May 5, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/33-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
@@ -489,6 +497,12 @@ May 5, 2022
       
       
       <li>
+        <a href="/thoughts/LR-Permissionless-Result/" data-ctx="system model" data-src="/thoughts/LR-Permissionless-Result" class="internal-link">LR Permissionless Result</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/PBFT/" data-ctx="system model" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
       </li>
       
@@ -502,6 +516,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="system models" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Sandglass/" data-ctx="system model" data-src="/thoughts/Sandglass" class="internal-link">Sandglass</a>
       </li>
       
       

@@ -29,6 +29,27 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
     </item>
     
     <item>
+      <title>LR Permissionless Result</title>
+      <link>https://jzhao.xyz/thoughts/LR-Permissionless-Result/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/LR-Permissionless-Result/</guid>
+      <description>Shown by Lewis-Pye and Roughgarden in 2022
+Deterministic [[thoughts/consensus|consensus]] is not possible for decentralized protocols with a Byzantine, permissionless [[thoughts/system model|system model]].</description>
+    </item>
+    
+    <item>
+      <title>Sandglass</title>
+      <link>https://jzhao.xyz/thoughts/Sandglass/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Sandglass/</guid>
+      <description>A permissionless [[thoughts/consensus|consensus]] algorithm that guarantees deterministic agreement and termination under a crash-stop [[thoughts/system model|system model]].
+ Source Writeup
+Sandglass proceeds in virtual rounds.</description>
+    </item>
+    
+    <item>
       <title>Casper FFG</title>
       <link>https://jzhao.xyz/thoughts/Casper-FFG/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>

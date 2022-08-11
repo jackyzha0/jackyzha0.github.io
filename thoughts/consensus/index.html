@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4efcf64d05e3339f9cdf97f5078ed8cb.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2b58c8dc35d1e327dbd715cac45deddd.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -799,6 +799,94 @@ Aug 9, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -928,7 +1016,16 @@ Aug 9, 2021
 </tr>
 <tr>
 <td>Permission model</td>
-<td>Permissioned</td>
+<td>Generally permissioned (see 
+
+
+
+
+
+<a
+  href="/thoughts/Sandglass/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/Sandglass/">Sandglass</a>)</td>
 <td>Permissionless</td>
 </tr>
 </tbody>
@@ -1032,6 +1129,14 @@ Aug 9, 2021
 </ul>
 <a href="#pipelining"><h3 id="pipelining"><span class="hanchor" ariaLabel="Anchor"># </span>Pipelining</h3></a>
 <p>In <a href="/thoughts/PBFT" rel="noopener" class="internal-link" data-src="/thoughts/PBFT">PBFT</a>, <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a>, and <a href="/thoughts/HotStuff" rel="noopener" class="internal-link" data-src="/thoughts/HotStuff">HotStuff</a> the leader maintains a <em>window</em> of open slots and is allowed to concurrently work on committing all open slots in his active window. Conceptually, this is like <a href="/thoughts/TCP" rel="noopener" class="internal-link" data-src="/thoughts/TCP">TCP</a> where a sender does not have to wait for the ACK of packet $i$ before sending message $i+1$. This window can <em>significantly increase throughput</em> by allowing the leader to concurrently coordinate several actions of slot commitments.</p>
+<a href="#impossibility-results"><h2 id="impossibility-results"><span class="hanchor" ariaLabel="Anchor"># </span>Impossibility Results</h2></a>
+<p>When consensus is impossible to achieve:</p>
+<ol>
+<li><a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a></li>
+<li><a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM Impossibility Result</a></li>
+<li><a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a></li>
+<li><a href="/thoughts/LR-Permissionless-Result" rel="noopener" class="internal-link" data-src="/thoughts/LR-Permissionless-Result">LR Permissionless Result</a></li>
+</ol>
 
 
     </article>
@@ -1050,6 +1155,14 @@ Aug 9, 2021
     
     
     
+    
+      
+      
+      
+    
+      
+      
+      
     
       
       
@@ -1150,6 +1263,12 @@ Aug 9, 2021
       
       
       <li>
+        <a href="/thoughts/LR-Permissionless-Result/" data-ctx="consensus" data-src="/thoughts/LR-Permissionless-Result" class="internal-link">LR Permissionless Result</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Raft-Consensus-Algorithm/" data-ctx="consensus" data-src="/thoughts/Raft-Consensus-Algorithm" class="internal-link">Raft Consensus Algorithm</a>
       </li>
       
@@ -1157,6 +1276,12 @@ Aug 9, 2021
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="consensus" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Sandglass/" data-ctx="consensus" data-src="/thoughts/Sandglass" class="internal-link">Sandglass</a>
       </li>
       
       
