@@ -75,7 +75,7 @@ Yet, I think there is still room for improvement here. Identities based off of t
 
 > "Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects."[^7]
 
-You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these [[thoughts/Zooko's Triangle#Petnames|petname systems]].
+You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these [[thoughts/petname|petname]] systems.
 
 > For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). *([Backchannel](https://www.inkandswitch.com/backchannel/), Ink & Switch)*
 

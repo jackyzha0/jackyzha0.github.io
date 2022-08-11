@@ -9,6 +9,9 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 11th
+- Notes on [[thoughts/Braid HTTP|Braid HTTP]], [[thoughts/Yjs|Yjs]], [[thoughts/Secure Scuttlebutt|SSB]], [[thoughts/OrbitDB|OrbitDB]]
+
 ### August 10th
 - Notes on [[thoughts/HotStuff|HotStuff]], [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]]. HotStuff seems to be a really useful lens to analyze future protocols as it is a general framework for expressing [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|SMR]].
 - Lots of paper reading... I feel a little burnt out. I've been spending almost 15h days just trying to mental sponge as much as this as I can.
@@ -453,7 +456,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - More meditations on identity and data
 	- Thinking about how data exists only as *relations* between things... how do we preserve this?
 	- 'Data' is data in the context of that user (or group of users) using that specific application
-	- Learned about the concept of [[thoughts/Zooko's Triangle#Petnames|petnames]] in more depth today and there's a really cool way of thinking about identity here perhaps
+	- Learned about the concept of [[thoughts/petname|petnames]] in more depth today and there's a really cool way of thinking about identity here perhaps
 		- Almost all of the contexts in which we collaborate are not global. The *you* I know is likely different from the you your family knows. Identity should be relational rather than standalone?
 
 ### May 18th

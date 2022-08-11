@@ -74,7 +74,7 @@ When Root and Trunk are combined, its properties handily solve or avert the thre
 	- Use of DIDs is incredibly smart, potentially enabling [[thoughts/Self-sovereign Identity (SSI)|self-sovereign identity]] down the line.
 	- Doesn't seem to support multi-writer documents right out of the box, seems to be an ongoing area of work/research.
 	- Great principles and solid work already. Seems to have gained some adoption from people in [[thoughts/web3|web3]] already.
-- Hypercore/Dat Protocol:
+- [[thoughts/Hypercore|Hypercore/Dat Protocol]]:
 	- Extremely values aligned! Streaming based append-only log that aims to be the lego-block of distributed applications.
 	- Great developer experience.
 	- Use of [[thoughts/DHT|DHT]] means that it doesn't need a signalling server for peer discovery.
