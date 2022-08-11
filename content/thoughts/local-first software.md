@@ -46,7 +46,7 @@ From [Cloudpeers](https://cloudpeers.co/)
 
 The Local-First SDK offers a stack to write applications as productively as when using state-of-the-art cloud-based architectures. It enables building serverless apps that traditionally require backend engineers to build, scale and maintain.
 
-Really great SDK but unsure how this differs from existing platforms like Yjs or Hypercore (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.
+Really great SDK but unsure how this differs from existing platforms like [[thoughts/Yjs|Yjs]] or [[thoughts/Hypercore|Hypercore]] (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.
 
 Actually uses a Cambria-like system for data lensing which is cool.
 

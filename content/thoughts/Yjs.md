@@ -13,7 +13,7 @@ Yjs supports many different transport layers:
 1. WebRTC
 2. Websockets
 3. Libp2p + GossipSub
-4. Dat
+4. [[thoughts/Hypercore|Dat]]
 5. [[thoughts/Matrix|Matrix]]
 
 At its heart, Yjs is a list-based CRDT:

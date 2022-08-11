@@ -80,7 +80,7 @@ When Root and Trunk are combined, its properties handily solve or avert the thre
 	- Use of [[thoughts/DHT|DHT]] means that it doesn't need a signalling server for peer discovery.
 	- Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system).
 	- Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously.
-	- Hypercore also does not guarantee long-term write-once storage.
+	- [[thoughts/Hypercore|Hypercore]] also does not guarantee long-term write-once storage.
 	- Multi-writer support is still being worked on.
 
 ## Output

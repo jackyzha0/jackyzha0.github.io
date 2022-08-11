@@ -37,7 +37,7 @@ I've been thinking a lot about creating a browsable store of knowledge that prov
 
 Portal is a command line tool that syncs folders between multiple devices. Perfect for syncing photos/videos/code between many devices without using a 3P tool like GitHub, Email, or Google Photos. Built on top of the Hypercore protocol with Ink for the CLI.
 
-Built with: Hypercore, React, Ink, and Typescript
+Built with: [[thoughts/Hypercore|Hypercore]], React, Ink, and Typescript
 
 ## Quartz -- create and publish digital gardens for free
 
