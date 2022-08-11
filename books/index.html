@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aeb17fa51c078c25781cba5e4640ca07.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -263,7 +263,7 @@ if (!doNotTrack) {
       <h1>Booklist</h1>
       <p class="meta">
           Last updated 
-Aug 9, 2022
+Aug 11, 2022
 
  
           
@@ -413,11 +413,11 @@ Aug 9, 2022
   rel="noopener" class="internal-link"
   data-src="/thoughts/Mutual-Aid/">Mutual Aid</a></strong> by Dean Spade</li>
 <li><strong>Creation: Life and How to Make it</strong> by Steve Grand</li>
-<li><strong>What Money Can&rsquo;t Buy</strong> by Michael Sandel</li>
 <li><strong>The Alignment Problem</strong> by Brian Christian</li>
 <li><strong>The Utopia of Rules</strong> by David Graeber</li>
 <li><strong>Where Is My Flying Car?</strong> by J. Storrs Hall</li>
 <li><strong>Games: Agency as Art</strong> by C. Thi Nguyen</li>
+<li><strong>The Dream Machine</strong> by M. Mitchell Waldrop</li>
 </ul>
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>

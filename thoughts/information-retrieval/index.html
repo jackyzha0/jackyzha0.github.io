@@ -116,13 +116,13 @@ A &lsquo;closed stack&rsquo; library facilitates information transfer from colle
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aeb17fa51c078c25781cba5e4640ca07.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

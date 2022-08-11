@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aeb17fa51c078c25781cba5e4640ca07.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -354,6 +354,13 @@ Oct 24, 2021
 <p>The act of imagining something makes it real. Art as processes or the seeds for processes - things that exist and change in time, things that are never finished.</p>
 <a href="#fiction-as-shared-visions"><h2 id="fiction-as-shared-visions"><span class="hanchor" ariaLabel="Anchor"># </span>Fiction as shared visions</h2></a>
 <p><em>Visions matter</em>. Visions give people a direction and inspire people to act, and <em>a group of inspired people is the most powerful force in the world</em>. If you&rsquo;re a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.</p>
+<a href="#protocol-fiction"><h2 id="protocol-fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Protocol Fiction</h2></a>
+<blockquote>
+<p>But we don’t need just design fictions. We need business model fictions, engineering feasibility study fictions, interop protocol specification fictions, investment return fictions.</p>
+</blockquote>
+<p>
+
+<a href="https://interconnected.org/home/2022/08/11/casi" rel="noopener">Speculative Infrastructure</a></p>
 
 
     </article>

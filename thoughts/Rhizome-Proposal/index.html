@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aeb17fa51c078c25781cba5e4640ca07.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -565,6 +565,28 @@ Mar 14, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -663,7 +685,7 @@ Mar 14, 2022
 <li>Use of <a href="/thoughts/DHT" rel="noopener" class="internal-link" data-src="/thoughts/DHT">DHT</a> means that it doesn&rsquo;t need a signalling server for peer discovery.</li>
 <li>Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system).</li>
 <li>Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously.</li>
-<li>Hypercore also does not guarantee long-term write-once storage.</li>
+<li><a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a> also does not guarantee long-term write-once storage.</li>
 <li>Multi-writer support is still being worked on.</li>
 </ul>
 </li>

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.660417665a6d509799fd19c631c0e3ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d1177c5930c55960c30011862fb5af0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aeb17fa51c078c25781cba5e4640ca07.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -359,6 +359,50 @@ Apr 25, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -423,7 +467,7 @@ Apr 25, 2022
 
 <a href="https://cloudpeers.co/" rel="noopener">Cloudpeers</a></p>
 <p>The Local-First SDK offers a stack to write applications as productively as when using state-of-the-art cloud-based architectures. It enables building serverless apps that traditionally require backend engineers to build, scale and maintain.</p>
-<p>Really great SDK but unsure how this differs from existing platforms like Yjs or Hypercore (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.</p>
+<p>Really great SDK but unsure how this differs from existing platforms like <a href="/thoughts/Yjs" rel="noopener" class="internal-link" data-src="/thoughts/Yjs">Yjs</a> or <a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a> (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.</p>
 <p>Actually uses a Cambria-like system for data lensing which is cool.</p>
 <a href="#locutus"><h2 id="locutus"><span class="hanchor" ariaLabel="Anchor"># </span>Locutus</h2></a>
 <p>Locutus is a decentralized key-value database. It uses the same 
@@ -464,6 +508,10 @@ Apr 25, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/digital-identity/" data-ctx="local-first" data-src="/posts/digital-identity" class="internal-link">On Digital Identity</a>
       </li>
@@ -472,6 +520,12 @@ Apr 25, 2022
       
       <li>
         <a href="/posts/towards-data-neutrality/" data-ctx="local-first software" data-src="/posts/towards-data-neutrality" class="internal-link">Towards Data Neutrality</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Braid-HTTP/" data-ctx="local-first" data-src="/thoughts/Braid-HTTP" class="internal-link">Braid HTTP</a>
       </li>
       
       

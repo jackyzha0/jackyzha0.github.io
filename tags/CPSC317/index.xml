@@ -31,7 +31,7 @@
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/HTTP/</guid>
-      <description>Main method of communication at the Application Layer for the web
+      <description>Main method of communication at the Application Layer for the web. A state-transfer protocol.
 Connections  Non-persistent HTTP (v1.0)  At most one object is sent over each TCP connection Connection is closed as soon as data is transferred Include an additional round trip for the TCP handshake for each object = $2n$ RTTs where $n$ is number of resources   Persistent HTTP (v1.</description>
     </item>
     
