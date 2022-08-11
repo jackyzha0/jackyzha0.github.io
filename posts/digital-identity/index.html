@@ -116,13 +116,13 @@ Software developers and computer scientists have been tackling [[thoughts/identi
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca4d5c107bec21a6917270384ac96159.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f33d220c88b60e6ff2c661f37578415a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -545,6 +545,7 @@ Jul 16, 2022
       
         
         
+        
       
     
   
@@ -678,7 +679,7 @@ Our digital representations consist of:</p>
 <blockquote>
 <p>&ldquo;Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.&rdquo;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
 </blockquote>
-<p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these <a class="internal-link broken">petname systems</a>.</p>
+<p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these <a href="/thoughts/petname" rel="noopener" class="internal-link" data-src="/thoughts/petname">petname</a> systems.</p>
 <blockquote>
 <p>For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). <em>(
 

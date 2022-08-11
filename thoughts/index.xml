@@ -22,7 +22,36 @@
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Hypercore/</guid>
-      <description></description>
+      <description>Streaming based append-only log that aims to be the lego-block of distributed applications.
+ Hypercore Protocol is a [[thoughts/peer-to-peer|peer-to-peer]] data network built on the Hypercore logs.</description>
+    </item>
+    
+    <item>
+      <title>OrbitDB</title>
+      <link>https://jzhao.xyz/thoughts/OrbitDB/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/OrbitDB/</guid>
+      <description>OrbitDB is a distributed, [[thoughts/peer-to-peer|peer-to-peer]] database with [[thoughts/IPFS|IPFS]] as its data storage and IPFS Pubsub to automatically sync databases with peers.</description>
+    </item>
+    
+    <item>
+      <title>Petname</title>
+      <link>https://jzhao.xyz/thoughts/petname/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/petname/</guid>
+      <description>Petnames are potentially a method of achieving all 3 properties by having &amp;ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.</description>
+    </item>
+    
+    <item>
+      <title>Secure Scuttlebutt (SSB)</title>
+      <link>https://jzhao.xyz/thoughts/Secure-Scuttlebutt/</link>
+      <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Secure-Scuttlebutt/</guid>
+      <description>SSB Secure Scuttlebutt is a database protocol for unforgeable (read: [[thoughts/digital signatures|digitally signed]]) append-only message feeds.
+Scuttlebot Scuttlebot forms a global cryptographic social network with its peers.</description>
     </item>
     
     <item>

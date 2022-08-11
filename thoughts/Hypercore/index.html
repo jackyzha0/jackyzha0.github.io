@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="Streaming based append-only log that aims to be the lego-block of distributed applications.
+ Hypercore Protocol is a [[thoughts/peer-to-peer|peer-to-peer]] data network built on the Hypercore logs."
   />
   <title>
     Hypercore
@@ -115,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca4d5c107bec21a6917270384ac96159.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f33d220c88b60e6ff2c661f37578415a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,6 +294,115 @@ Aug 11, 2022
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -300,6 +410,21 @@ Aug 11, 2022
 
 
 
+
+<blockquote>
+<p>Streaming based append-only log that aims to be the lego-block of distributed applications.</p>
+</blockquote>
+<p>Hypercore Protocol is a <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> data network built on the Hypercore logs. Hypercores are signed, append-only logs. They&rsquo;re like lightweight blockchains without the <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> algorithm</p>
+<p>Connects peers using the Hyperswarm <a href="/thoughts/DHT" rel="noopener" class="internal-link" data-src="/thoughts/DHT">DHT</a> which is based off of <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia</a></p>
+<a href="#thoughts"><h2 id="thoughts"><span class="hanchor" ariaLabel="Anchor"># </span>Thoughts</h2></a>
+<ul>
+<li>Great developer experience, super simple to understand and use</li>
+<li>Comprehensive library of data structures</li>
+<li>Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system)</li>
+<li>Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously</li>
+<li><a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a> also does not guarantee long-term write-once storage</li>
+<li>Multi-writer support is still being worked on</li>
+</ul>
 
 
     </article>
@@ -335,6 +460,20 @@ Aug 11, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Hypercore/" data-ctx="Hypercore" data-src="/thoughts/Hypercore" class="internal-link">Hypercore</a>
+      </li>
+      
       
       
       <li>

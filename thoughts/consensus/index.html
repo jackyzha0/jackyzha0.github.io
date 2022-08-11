@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca4d5c107bec21a6917270384ac96159.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f33d220c88b60e6ff2c661f37578415a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1238,6 +1238,10 @@ Aug 9, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/new-words/" data-ctx="consensus" data-src="/posts/new-words" class="internal-link">A New Glossary of Words</a>
       </li>
@@ -1258,6 +1262,12 @@ Aug 9, 2021
       
       <li>
         <a href="/thoughts/Casper-FFG/" data-ctx="consensus" data-src="/thoughts/Casper-FFG" class="internal-link">Casper FFG</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Hypercore/" data-ctx="consensus" data-src="/thoughts/Hypercore" class="internal-link">Hypercore</a>
       </li>
       
       

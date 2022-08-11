@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ee8b661b24171fe6960d559c783a481.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ca4d5c107bec21a6917270384ac96159.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f33d220c88b60e6ff2c661f37578415a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -680,8 +680,272 @@ May 3, 2022
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
 
   
   
@@ -5998,6 +6262,7 @@ May 3, 2022
       
       
       
+        
         
         
       
@@ -7317,6 +7582,10 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</p>
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
+<a href="#august-11th"><h3 id="august-11th"><span class="hanchor" ariaLabel="Anchor"># </span>August 11th</h3></a>
+<ul>
+<li>Notes on <a href="/thoughts/Braid-HTTP" rel="noopener" class="internal-link" data-src="/thoughts/Braid-HTTP">Braid HTTP</a>, <a href="/thoughts/Yjs" rel="noopener" class="internal-link" data-src="/thoughts/Yjs">Yjs</a>, <a href="/thoughts/Secure-Scuttlebutt" rel="noopener" class="internal-link" data-src="/thoughts/Secure-Scuttlebutt">SSB</a>, <a href="/thoughts/OrbitDB" rel="noopener" class="internal-link" data-src="/thoughts/OrbitDB">OrbitDB</a></li>
+</ul>
 <a href="#august-10th"><h3 id="august-10th"><span class="hanchor" ariaLabel="Anchor"># </span>August 10th</h3></a>
 <ul>
 <li>Notes on <a href="/thoughts/HotStuff" rel="noopener" class="internal-link" data-src="/thoughts/HotStuff">HotStuff</a>, <a href="/thoughts/HoneyBadgerBFT" rel="noopener" class="internal-link" data-src="/thoughts/HoneyBadgerBFT">HoneyBadgerBFT</a>. HotStuff seems to be a really useful lens to analyze future protocols as it is a general framework for expressing <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine fault-tolerant</a> <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a>.</li>
@@ -8174,7 +8443,7 @@ youtube:
 <ul>
 <li>Thinking about how data exists only as <em>relations</em> between things&hellip; how do we preserve this?</li>
 <li>&lsquo;Data&rsquo; is data in the context of that user (or group of users) using that specific application</li>
-<li>Learned about the concept of <a class="internal-link broken">petnames</a> in more depth today and there&rsquo;s a really cool way of thinking about identity here perhaps
+<li>Learned about the concept of <a href="/thoughts/petname" rel="noopener" class="internal-link" data-src="/thoughts/petname">petnames</a> in more depth today and there&rsquo;s a really cool way of thinking about identity here perhaps
 <ul>
 <li>Almost all of the contexts in which we collaborate are not global. The <em>you</em> I know is likely different from the you your family knows. Identity should be relational rather than standalone?</li>
 </ul>
