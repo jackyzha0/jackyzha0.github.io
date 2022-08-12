@@ -9,8 +9,7 @@ tags:
 
 > There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)
 
-[Source: Just ask for Generalization]([Source](https://evjang.com/2021/10/23/generalization.html)
-)
+[Source: Just ask for Generalization](https://evjang.com/2021/10/23/generalization.html)
 
 My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that "we need better algorithms". People pay lip service to "simple ideas" but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas. 
 

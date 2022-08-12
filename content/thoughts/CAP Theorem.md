@@ -7,7 +7,7 @@ tags:
 
 When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:
 
-1. **C**onsistency: a system operates fully or not at all, all nodes agree (the system's behaviour is indistinguishable from a centralized system)
+1. [[thoughts/consistency|Consistency]]: a system operates fully or not at all, all nodes agree (the system's behaviour is indistinguishable from a centralized system)
 2. **A**vailability: system is always able to answer a request
 3. **P**artition Tolerance: if data is distributed and some nodes fail, the whole system and continue to function
 

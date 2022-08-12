@@ -43,4 +43,3 @@ jobs:
         with:
           machine_key: ${{ secrets.FISSION_MACHINE_KEY }}
           build_dir: ./public
-          verbose: true

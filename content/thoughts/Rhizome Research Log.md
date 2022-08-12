@@ -9,8 +9,17 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 12th
+- [[thoughts/CALM Theorem|CALM Theorem]] and [[thoughts/CRON Theorem|CRON Theorem]]: Basically, avoid coordination where possible, it makes things slow. When we can avoid or reduce the need for coordination things tend to get simpler and faster. This theorem tell us when it is safe to avoid coordination.
+	- I wonder if there's possibility here to write a DSL (perhaps similar to BLOOM) that compiles to JS/Rust/etc. but also checks for monotonicity properties.
+	- Similar to that Quilt piece on why hiding network complexity in APIs is bad, perhaps baking in these inefficiency warnings (i.e. warning on 'accidental' coordination, is there a way to refactor this program to use a different set of data structures which don't require coordination) into the language
+
 ### August 11th
 - Notes on [[thoughts/Braid HTTP|Braid HTTP]], [[thoughts/Yjs|Yjs]], [[thoughts/Secure Scuttlebutt|SSB]], [[thoughts/OrbitDB|OrbitDB]]
+- Quilt has a [great piece](https://writings.quilt.org/2014/05/12/distributed-systems-and-the-end-of-the-api/) arguing for more CRDTs and why APIs are lacking and what the next logical step is
+	- Put more simply, going back to picking on APIs, what will complete this analogy? `assembly/C : Java/Python/Clojure :: APIs : ???`
+	- To quote Leslie Lamport: "Most people view concurrency as a programming problem or a language problem. I regard it as a physics problem."
+	- Sadly, looks like the project is no longer maintained
 
 ### August 10th
 - Notes on [[thoughts/HotStuff|HotStuff]], [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]]. HotStuff seems to be a really useful lens to analyze future protocols as it is a general framework for expressing [[thoughts/Byzantine Faults|byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|SMR]].
