@@ -118,13 +118,13 @@ Why graphs instead of trees Both the tree and the semilattice are ways of thinki
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a2ae75701123e9d8e7bfb0f2f847640b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

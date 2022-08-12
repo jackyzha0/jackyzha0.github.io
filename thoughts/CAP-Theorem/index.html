@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d32807553859f8107bd5bfd94be862a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a2ae75701123e9d8e7bfb0f2f847640b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,6 +293,36 @@ Apr 26, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -302,7 +332,7 @@ Apr 26, 2022
 
 <p>When designing and deploying applications in distributed environments, you can only optimize for 2 out of the following 3 properties:</p>
 <ol>
-<li><strong>C</strong>onsistency: a system operates fully or not at all, all nodes agree (the system&rsquo;s behaviour is indistinguishable from a centralized system)</li>
+<li><a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">Consistency</a>: a system operates fully or not at all, all nodes agree (the system&rsquo;s behaviour is indistinguishable from a centralized system)</li>
 <li><strong>A</strong>vailability: system is always able to answer a request</li>
 <li><strong>P</strong>artition Tolerance: if data is distributed and some nodes fail, the whole system and continue to function</li>
 </ol>
