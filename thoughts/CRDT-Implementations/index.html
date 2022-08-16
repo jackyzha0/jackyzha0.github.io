@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1109,7 +1109,14 @@ Jul 11, 2022
 </span></span></code></pre></td></tr></table>
 </div>
 </div><a href="#replicated-growable-array-rga"><h3 id="replicated-growable-array-rga"><span class="hanchor" ariaLabel="Anchor"># </span>Replicated Growable Array (RGA)</h3></a>
+<p>Automerge the library uses this!</p>
 <p>Represented as a 2P-Set of vertices in a linked list.</p>
+<p>Essentially,</p>
+<ul>
+<li>Build the tree, connecting each item to its parent</li>
+<li>When an item has multiple children, sort them by sequence number then by their ID.</li>
+<li>The resulting list (or text document) can be made by flattening the tree with a depth-first traversal.</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

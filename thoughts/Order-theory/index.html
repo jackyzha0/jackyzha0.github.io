@@ -116,13 +116,13 @@ An order is a binary relation $\leq$ on a set $S$, written $&lt;S,\leq&gt;$
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -404,6 +404,20 @@ Jul 8, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
 
 
 
@@ -432,6 +446,8 @@ Jul 8, 2022
 </ol>
 <p>When it comes to <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>, what we’re looking for is the ability to apply an operation in any order and as many times as we want without corrupting the result. The laws obeyed by joins give us exactly this.</p>
 <p>A join <a href="/thoughts/A-City-is-not-a-Tree#semilattices" rel="noopener" class="internal-link" data-src="/thoughts/A-City-is-not-a-Tree">semi-lattice</a> then essentially does a topological sort or <a href="/thoughts/causality#causal-order" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal ordering</a> of its elements except all of the elements can be joined (i.e. have a single shared ancestor)</p>
+<p>We can illustrate the semi-lattice using a Hasse Diagram</p>
+<p><img src="/thoughts/images/hasse diagram.png" width="300" /></p>
 
 
     </article>
@@ -477,8 +493,18 @@ Jul 8, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/CALM-Theorem/" data-ctx="join semi-lattice" data-src="/thoughts/CALM-Theorem" class="internal-link">CALM Theorem</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/CRDT/" data-ctx="order" data-src="/thoughts/CRDT" class="internal-link">Conflict-free Replicated Data Type (CRDT)</a>
       </li>
       
       

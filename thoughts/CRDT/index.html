@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -553,6 +553,110 @@ May 5, 2022
     
   
 
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -638,16 +742,30 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 </ul>
 <a href="#undo"><h3 id="undo"><span class="hanchor" ariaLabel="Anchor"># </span>Undo</h3></a>
 <ul>
-<li>[tk, look at Logoot-Undo]</li>
+<li>tk, look at Logoot-Undo</li>
 <li>does this conflict with potential storage optimizations like state compaction?</li>
 </ul>
 <a href="#secure-crdts"><h3 id="secure-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Secure CRDTs</h3></a>
 <ul>
-<li>[tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]</li>
+<li>tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example</li>
 <li>
 
 <a href="https://martin.kleppmann.com/papers/snapdoc-pets19.pdf" rel="noopener">https://martin.kleppmann.com/papers/snapdoc-pets19.pdf</a></li>
+<li>
+
+<a href="http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf" rel="noopener">http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf</a></li>
 </ul>
+<a href="#fault-tolerance"><h3 id="fault-tolerance"><span class="hanchor" ariaLabel="Anchor"># </span>Fault Tolerance</h3></a>
+<p>How can we make CRDTs <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine fault-tolerant</a>?</p>
+<p>
+
+<a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Kleppmann shows</a> that is possible to guarantee the standard CRDT consistency properties even in systems in which <em>arbitrarily many</em> nodes are Byzantine.</p>
+<p>CRDTs can become BFT by ensuring eventual delivery and convergence even in the presence of Byzantine nodes.</p>
+<p>The main construct here is constructing a hash graph (aka a <a href="/thoughts/Merkle-DAG" rel="noopener" class="internal-link" data-src="/thoughts/Merkle-DAG">Merkle-DAG</a>): The graph is essentially the Hasse diagram of the partial <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order</a> representing the <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a> relation among the updates. The ID of an operation is the hash of the update containing that operation. A &lsquo;head&rsquo; is just an operation which is not a dependency of another operation.</p>
+<ol>
+<li>This hash graph helps to ensure eventual consistency as two nodes $p$ and $q$ can exchange the hashes of their currents heads and if they are identical, they can ensure the set of updates they have observed is also identical.</li>
+<li>If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</li>
+</ol>
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Practical experience with CRDTs shows that they tend to become inefficient over time,

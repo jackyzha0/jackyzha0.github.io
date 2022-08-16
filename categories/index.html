@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -274,12 +274,12 @@ if (!doNotTrack) {
         <div class="section">
             <p class="meta">
                 
-Mar 15, 2022
+May 5, 2022
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Moderation/">Moderation</a></h3>
+                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -292,12 +292,48 @@ Mar 15, 2022
         <div class="section">
             <p class="meta">
                 
-May 5, 2022
+Jul 8, 2022
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
+                <h3><a href="https://jzhao.xyz/thoughts/Order-theory/">Order theory</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jul 11, 2022
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/CRDT-Implementations/">CRDT Implementations</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Mar 15, 2022
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/Moderation/">Moderation</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -406,42 +442,6 @@ May 19, 2022
             </p>
             <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/Zookos-Triangle/">Zooko&#39;s Triangle</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 11, 2022
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Secure-Scuttlebutt/">Secure Scuttlebutt (SSB)</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 11, 2022
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/petname/">Petname</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
