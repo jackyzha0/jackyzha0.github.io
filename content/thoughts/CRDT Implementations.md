@@ -372,7 +372,14 @@ type Vertex = (Atom, T)
 
 
 ### Replicated Growable Array (RGA)
-Represented as a 2P-Set of vertices in a linked list.  
+Automerge the library uses this!
+
+Represented as a 2P-Set of vertices in a linked list. 
+
+Essentially,
+-   Build the tree, connecting each item to its parent
+-   When an item has multiple children, sort them by sequence number then by their ID.
+-   The resulting list (or text document) can be made by flattening the tree with a depth-first traversal.
 
 ```ts
 type State = {

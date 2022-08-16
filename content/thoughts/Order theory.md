@@ -28,3 +28,7 @@ Join has
 When it comes to [[thoughts/CRDT|CRDTs]], what we’re looking for is the ability to apply an operation in any order and as many times as we want without corrupting the result. The laws obeyed by joins give us exactly this.
 
 A join [[thoughts/A City is not a Tree#Semilattices|semi-lattice]] then essentially does a topological sort or [[thoughts/causality#Causal Order|causal ordering]] of its elements except all of the elements can be joined (i.e. have a single shared ancestor)
+
+We can illustrate the semi-lattice using a Hasse Diagram
+
+![[thoughts/images/hasse diagram.png|300]]

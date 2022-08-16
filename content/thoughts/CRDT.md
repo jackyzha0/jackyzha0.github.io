@@ -81,12 +81,24 @@ A query can be specified as a function that uses this information and the value 
 - Last-writer-wins
 
 ### Undo
-- [tk, look at Logoot-Undo]
+- tk, look at Logoot-Undo
 - does this conflict with potential storage optimizations like state compaction?
 
 ### Secure CRDTs
-- [tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]
+- tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example
 - https://martin.kleppmann.com/papers/snapdoc-pets19.pdf
+- http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf
+
+### Fault Tolerance
+How can we make CRDTs [[thoughts/Byzantine Faults|Byzantine fault-tolerant]]?
+
+[Kleppmann shows](https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf) that is possible to guarantee the standard CRDT consistency properties even in systems in which *arbitrarily many* nodes are Byzantine.
+
+CRDTs can become BFT by ensuring eventual delivery and convergence even in the presence of Byzantine nodes.
+
+The main construct here is constructing a hash graph (aka a [[thoughts/Merkle-DAG|Merkle-DAG]]): The graph is essentially the Hasse diagram of the partial [[thoughts/Order theory|order]] representing the [[thoughts/causality|causality]] relation among the updates. The ID of an operation is the hash of the update containing that operation. A 'head' is just an operation which is not a dependency of another operation.
+1. This hash graph helps to ensure eventual consistency as two nodes $p$ and $q$ can exchange the hashes of their currents heads and if they are identical, they can ensure the set of updates they have observed is also identical.
+2. If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.
 
 ## Performance
 ### Storage + State Compaction
