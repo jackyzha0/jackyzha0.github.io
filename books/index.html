@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -263,7 +263,7 @@ if (!doNotTrack) {
       <h1>Booklist</h1>
       <p class="meta">
           Last updated 
-Aug 11, 2022
+Aug 16, 2022
 
  
           
@@ -395,7 +395,6 @@ Aug 11, 2022
 </blockquote>
 <a href="#fiction"><h3 id="fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Fiction</h3></a>
 <ul>
-<li><strong>The Book of Difficult Fruit</strong> by Kate Lebo</li>
 <li><strong>Project Hail Mary</strong> by Andy Weir</li>
 <li><strong>Permutation City</strong> by Greg Egan</li>
 <li><strong>Homo Ludens</strong> by Johan Huizinga</li>
@@ -413,7 +412,6 @@ Aug 11, 2022
   rel="noopener" class="internal-link"
   data-src="/thoughts/Mutual-Aid/">Mutual Aid</a></strong> by Dean Spade</li>
 <li><strong>Creation: Life and How to Make it</strong> by Steve Grand</li>
-<li><strong>The Alignment Problem</strong> by Brian Christian</li>
 <li><strong>The Utopia of Rules</strong> by David Graeber</li>
 <li><strong>Where Is My Flying Car?</strong> by J. Storrs Hall</li>
 <li><strong>Games: Agency as Art</strong> by C. Thi Nguyen</li>

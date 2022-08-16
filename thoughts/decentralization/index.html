@@ -117,13 +117,13 @@ See also: [[thoughts/inevitability of centralization|inevitability of centraliza
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

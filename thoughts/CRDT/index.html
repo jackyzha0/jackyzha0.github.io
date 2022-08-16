@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -637,12 +637,17 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <li>Last-writer-wins</li>
 </ul>
 <a href="#undo"><h3 id="undo"><span class="hanchor" ariaLabel="Anchor"># </span>Undo</h3></a>
-<p>[tk, look at Logoot-Undo]</p>
 <ul>
+<li>[tk, look at Logoot-Undo]</li>
 <li>does this conflict with potential storage optimizations like state compaction?</li>
 </ul>
 <a href="#secure-crdts"><h3 id="secure-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Secure CRDTs</h3></a>
-<p>[tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]</p>
+<ul>
+<li>[tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]</li>
+<li>
+
+<a href="https://martin.kleppmann.com/papers/snapdoc-pets19.pdf" rel="noopener">https://martin.kleppmann.com/papers/snapdoc-pets19.pdf</a></li>
+</ul>
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Practical experience with CRDTs shows that they tend to become inefficient over time,

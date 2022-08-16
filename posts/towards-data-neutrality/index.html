@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0c956789c2b0e3c11865f34b4bd25a86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.80b45e6f3ab5b35a4062312fcf850117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7c9957c9f781187ec6c1ac728b720a0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.45927ba6c3fe116f3287b7de03cad113.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -566,6 +566,28 @@ Jul 14, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -641,7 +663,11 @@ Jul 14, 2022
 <p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.</p>
 <ul>
 <li>Single purpose apps backed by general-purpose data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
-<li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.</li>
+<li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
+<ul>
+<li>Additionally, this means that existing platforms to relieve themselves of the impossible burden of being the steward of <a href="/thoughts/Moderation" rel="noopener" class="internal-link" data-src="/thoughts/Moderation">moderating</a> what every person on their platform is doing.</li>
+</ul>
+</li>
 <li>Local-first means interaction times are measured in <em>microseconds</em> not seconds, resulting in more responsive-feeling applications and no loading spinners.</li>
 <li>Two users can collaborate by simply &lsquo;inviting&rsquo; another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.</li>
 <li>As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.</li>
