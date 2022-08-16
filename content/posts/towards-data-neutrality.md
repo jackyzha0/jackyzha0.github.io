@@ -91,6 +91,7 @@ As a whole, it forms the basis for a new model of the internet where first and f
 
 - Single purpose apps backed by general-purpose data[^4]. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*.
 - Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
+	- Additionally, this means that existing platforms to relieve themselves of the impossible burden of being the steward of [[thoughts/Moderation|moderating]] what every person on their platform is doing.
 - Local-first means interaction times are measured in *microseconds* not seconds, resulting in more responsive-feeling applications and no loading spinners.
 - Two users can collaborate by simply 'inviting' another to temporarily synchronize a subset of their data. Developers no longer have to worry about building out separate infrastructure for live editing or collaboration.
 - As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership.

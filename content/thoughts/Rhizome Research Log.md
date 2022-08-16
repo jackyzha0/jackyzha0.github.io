@@ -9,6 +9,24 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 14th - 15th
+- Organized The SF Commons: Hack Day #0 with Athena! 
+	- A non-zero number of people were like "Hey! I've read your blog before" or "I love the work you do" and it was a little surreal
+	- I mean... I make my work public so I should expect it to be perceived but it still felt out-of-norm to hear those things
+
+### August 13th
+- Visited the Computer History Museum today! Lots of interesting tidbits on how we got to where we are today
+	- If economies of scale favoured large consolidated computer systems how did the personal computing revolution happen?
+		- One reason is that the main bottleneck to adoption back then was the price. But as Moore's Law continued to hold, hardware became exponentially cheaper due to innovations in chip design, manufacturing, storage, etc.
+		- People started buying it because companies like Apple started branding personal computing devices not as something reserved for only programmers and geeks:
+			- "Since computers are so smart, wouldn't it make sense to teach computers about people, instead of teaching people about computers?"
+		- There were magnitude level improvements over existing technology. The census for example, took 10x-100x less time using computers
+	- How can this be applied to the moving away from large, consolidated, monolithic applications to the personal application era?
+		- "Why is it so hard to own my own hardware?" roughly translates today to "Why is it so hard to own my own data?"
+	- Explaining data availability like the differences between calling versus texting someone
+		- Calling means that the other person needs to pickup
+		- Texting means that you can still communicate without both being on a call
+
 ### August 12th
 - [[thoughts/CALM Theorem|CALM Theorem]] and [[thoughts/CRON Theorem|CRON Theorem]]: Basically, avoid coordination where possible, it makes things slow. When we can avoid or reduce the need for coordination things tend to get simpler and faster. This theorem tell us when it is safe to avoid coordination.
 	- I wonder if there's possibility here to write a DSL (perhaps similar to BLOOM) that compiles to JS/Rust/etc. but also checks for monotonicity properties.

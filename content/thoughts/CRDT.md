@@ -81,11 +81,12 @@ A query can be specified as a function that uses this information and the value 
 - Last-writer-wins
 
 ### Undo
-[tk, look at Logoot-Undo]
+- [tk, look at Logoot-Undo]
 - does this conflict with potential storage optimizations like state compaction?
 
 ### Secure CRDTs
-[tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]
+- [tk what does encryption in CRDTs look like? homomorphic encryption for merge operations for example]
+- https://martin.kleppmann.com/papers/snapdoc-pets19.pdf
 
 ## Performance
 ### Storage + State Compaction

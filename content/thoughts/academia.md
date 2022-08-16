@@ -13,6 +13,10 @@ tags:
 
 My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that "we need better algorithms". People pay lip service to "simple ideas" but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas. 
 
+---
+
+The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects
+
 ## Tunnel Vision
 [Source: Mimetic by *Brian Timar*](https://www.briantimar.com/notes/mimetic/mimetic/), see also [mimetic](thoughts/mimetic.md)
 

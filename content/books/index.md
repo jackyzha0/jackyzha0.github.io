@@ -8,7 +8,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
-* **The Book of Difficult Fruit** by Kate Lebo
 * **Project Hail Mary** by Andy Weir
 * **Permutation City** by Greg Egan
 * **Homo Ludens** by Johan Huizinga
@@ -16,7 +15,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Non-fiction
 * **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
 * **Creation: Life and How to Make it** by Steve Grand
-* **The Alignment Problem** by Brian Christian
 * **The Utopia of Rules** by David Graeber
 * **Where Is My Flying Car?** by J. Storrs Hall
 * **Games: Agency as Art** by C. Thi Nguyen

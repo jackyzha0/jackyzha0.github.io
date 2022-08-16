@@ -6,6 +6,7 @@ tags:
 - technical
 ---
 
+- recreate barcode battler but irl
 - IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
 	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
