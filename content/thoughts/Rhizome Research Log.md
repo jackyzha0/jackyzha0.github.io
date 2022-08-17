@@ -9,10 +9,48 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
 
 ## August
+### August 16th
+- Finally made my way through all my research papers. There's a weird peace to have no open browser tabs, down from around ~75 open
+- Thinking about [[thoughts/access control|access control]] and revocation. Especially for add-only data structures, how can we prove data has been deleted or removed?
+- What is the base metaphor we should use when building applications?
+	- A chat except the base unit is not text but structured data. Call this the 'event history'
+	- This implies a certain causal history and a partial ordering
+- Root
+	- Identity
+		- A `did:key` is generated for every history
+		- One root IPFS document tracks all active `did:key`s associated with a root DID
+	- The [[thoughts/Merkle-DAG|Merkle-DAG]] will be anchored using IPLD, this means that hopping cloud providers is easy as everything is [[thoughts/content addressed storage|content-addressed]]
+	- Storage Providers
+		- Providers should pass a suite of unit tests for correctness in terms of satisfying certain behaviour.
+		- With this model, all a storage provider needs to do is pin a few CIDs
+	- This takes care of data availability... but what about liveness? This is where SMR comes in
+- Trunk
+	- User defines
+		- `data Op = ...`: All possible operations of the app
+		- `data State = ...`: Application state
+		- `r :: State -> Op -> State `: The reducer function
+		- `s0 :: State`: The initial state
+- Ideal [[thoughts/State Machine Replication (SMR)|SMR]] algorithm properties
+	- Favour liveness over consistency when potentially majority replicas are offline (i.e. handle all cases $f < n$ in asynchronous crash-stop model)
+	- Should scale well with number of participants
+	- Synchronization should *not* be on the critical path
+	- Collaboration over consensus (i.e. try to preserve user intent where possible)
+	- Things to figure out
+		- When is it safe to GC?
+		- Is it worth writing a DSL that compiles down to different host languages? This could be really useful to provide helpful compile-time checks
+			- Basically to adhere to [[thoughts/CALM Theorem|CALM]], we want to make it easy to write synchronization free code (similar to Rust and how it makes it easy to write GC-free code)
+			- Generate the appropriate boilerplate for code that requires synchronization
+			- Have a good standard library of data structures that are primarily synchronization-free
+- Potential demo apps
+	- Basic chat app
+	- Google drive/Dropbox clone (testing large op/diff sizes)
+		- Tool for thought, Google Docs-like writing primitive (testing permissioned access and collaboration)
+	- Semantic diffing, live `git`
+	- Minecraft or other real-time game (testing latency)
+	- EVM (testing expressiveness)
+
 ### August 14th - 15th
-- Organized The SF Commons: Hack Day #0 with Athena! 
-	- A non-zero number of people were like "Hey! I've read your blog before" or "I love the work you do" and it was a little surreal
-	- I mean... I make my work public so I should expect it to be perceived but it still felt out-of-norm to hear those things
+- Organized The SF Commons: Hack Day #0 with Athena! A non-zero number of people were like "Hey! I've read your blog before" or "I love the work you do" and it was a little surreal
 
 ### August 13th
 - Visited the Computer History Museum today! Lots of interesting tidbits on how we got to where we are today
@@ -351,7 +389,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Append-only log or append-only [[thoughts/Merkle-DAG|Merkle-DAG]]? Leaning more towards log still for easy understandability + debug even though Merkle-DAGs are more expressive (and battletested in [[thoughts/blockchain|blockchains]] and `git`)
 
 ### June 20th - 23rd
-- Reading about [[thoughts/file system#Virtual Distributed File System|VDFS']] (specifically Alluxio) and 
+- Reading about [[thoughts/file system#Virtual Distributed File System|VDFS's]] (specifically Alluxio) and 
 - Open Questions
 	- Handling cases where data > storage availability
 	- Checkpoint heuristics: when to checkpoint? especially important if Rhizome is to run indefinitely
