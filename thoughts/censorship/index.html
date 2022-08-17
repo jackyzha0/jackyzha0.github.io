@@ -116,13 +116,13 @@ How do we draw the line between an end product and infrastructure? How should in
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.49f7a2b4842e01f77f4410a33baa3167.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2e9aa1ec5157c70baf42fc0366f75236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bd8df019fabfe9742431cee9156a4afb.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.49f7a2b4842e01f77f4410a33baa3167.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88f44679ebb526bd6cc0f0f60496bd6f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2e9aa1ec5157c70baf42fc0366f75236.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -266,6 +266,24 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 25, 2021
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/Social-Bias-in-Information-Retrieval/">Social Bias in Information Retrieval</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -419,24 +437,6 @@ Dec 24, 2021
             </p>
             <div class="desc">
                 <h3><a href="https://jzhao.xyz/thoughts/library/">Libraries</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 24, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/niche-at-scale/">Niche at scale</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
