@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both."
+    content="I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both."
   />
   <title>
     Rhizome Research Log
@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.49f7a2b4842e01f77f4410a33baa3167.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2e9aa1ec5157c70baf42fc0366f75236.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1610,6 +1610,84 @@ May 3, 2022
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -9458,8 +9536,57 @@ May 3, 2022
 
 
 
-<p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.</p>
+<p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
+<a href="#august-17th"><h3 id="august-17th"><span class="hanchor" ariaLabel="Anchor"># </span>August 17th</h3></a>
+<ul>
+<li>Really diving into whether a dual optimistic replication (CRDT) + transactional replication (Raft SMR) approach is needed or if one will do
+<ul>
+<li>Optimistic replication
+<ul>
+<li>Best for global collaboration. Local nodes can still be speedy even with collaborators from across the world</li>
+<li>Can lead to inconsistent states if not careful (again, can use a DSL to help catch these types of errors but it just becomes difficult to write and will require extra research time)
+<ul>
+<li>Alternatively, have no global invariants. JSON-style data structure</li>
+</ul>
+</li>
+<li>Strong eventual consistency data stores (e.g. CRDTs) will hit a few million TPS per second locally for sticky writes with actual TPS being roughly $\frac 1 {RTT}$ (where RTT is ~500ms at worst, ~150ms usually)</li>
+<li>Bandwidth use is $2 r n$</li>
+</ul>
+</li>
+<li>Transactional replication
+<ul>
+<li>Easier to reason about for application developers</li>
+<li>Atomic commit-type data stores (e.g. SQL, CockroachDB) still achieve upwards of 28k TPS in a single-region zone. In a global environment, TPS will be roughly $\frac 1 {2RTT}$. This means that if you have a very global team working on something, synchronously collaborating something will still be quite laggy (~1TPS). Doesn&rsquo;t work on an &lsquo;inter-planetary scale&rsquo;!</li>
+<li>Bandwidth use is $n$ (just send to all nodes)</li>
+<li>Latency is $\frac 1 2 RTT$</li>
+</ul>
+</li>
+<li>Hybrid
+<ul>
+<li>Best of both worlds, but the most complex to reason about and write programs for</li>
+<li>Alternatively&hellip; what if we expose a simple KV store using CRDTs to exchange routing info? This would open it to easily layering real-time applications on top (e.g. video calls, WebRTC). This eliminates the need for a signalling server
+<ul>
+<li>This can technically be done already by the user in transactional replication model if they want</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Addendum: the <a href="/thoughts/CALM-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/CALM-Theorem">CALM Theorem</a> conjectures that if program state can be expressed in monotonic Datalog, it can safely use optimistic replication. If we can always express something using an immutable Merkle-DAG with occasional consensus for GC, shouldn&rsquo;t this work?</li>
+<li>Have one SMR instantiation of the SMR algorithm per application</li>
+<li>How do we do live reconfiguration of cluster quorum size?
+<ul>
+<li>
+
+<a href="https://users.ece.cmu.edu/~reiter/papers/2000/DSN.pdf" rel="noopener">https://users.ece.cmu.edu/~reiter/papers/2000/DSN.pdf</a></li>
+<li>
+
+<a href="https://www.alibabacloud.com/blog/raft-engineering-practices-and-the-cluster-membership-change_597742" rel="noopener">https://www.alibabacloud.com/blog/raft-engineering-practices-and-the-cluster-membership-change_597742</a></li>
+</ul>
+</li>
+</ul>
 <a href="#august-16th"><h3 id="august-16th"><span class="hanchor" ariaLabel="Anchor"># </span>August 16th</h3></a>
 <ul>
 <li>Finally made my way through all my research papers. There&rsquo;s a weird peace to have no open browser tabs, down from around ~75 open</li>
@@ -9468,6 +9595,19 @@ May 3, 2022
 <ul>
 <li>A chat except the base unit is not text but structured data. Call this the &rsquo;event history'</li>
 <li>This implies a certain causal history and a partial ordering</li>
+</ul>
+</li>
+<li>Trunk
+<ul>
+<li>User defines
+<ul>
+<li><code>data Op = ...</code>: All possible operations of the app</li>
+<li><code>data State = ...</code>: Application state</li>
+<li><code>r :: State -&gt; Op -&gt; State </code>: The reducer function</li>
+<li><code>s0 :: State</code>: The initial state</li>
+</ul>
+</li>
+<li>How is state persisted?</li>
 </ul>
 </li>
 <li>Root
@@ -9488,23 +9628,11 @@ May 3, 2022
 <li>This takes care of data availability&hellip; but what about liveness? This is where SMR comes in</li>
 </ul>
 </li>
-<li>Trunk
-<ul>
-<li>User defines
-<ul>
-<li><code>data Op = ...</code>: All possible operations of the app</li>
-<li><code>data State = ...</code>: Application state</li>
-<li><code>r :: State -&gt; Op -&gt; State </code>: The reducer function</li>
-<li><code>s0 :: State</code>: The initial state</li>
-</ul>
-</li>
-</ul>
-</li>
 <li>Ideal <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a> algorithm properties
 <ul>
 <li>Favour liveness over consistency when potentially majority replicas are offline (i.e. handle all cases $f &lt; n$ in asynchronous crash-stop model)</li>
 <li>Should scale well with number of participants</li>
-<li>Synchronization should <em>not</em> be on the critical path</li>
+<li>Synchronization should <em>not</em> be on the critical path (read: CRDTs where possible, consensus otherwise)</li>
 <li>Collaboration over consensus (i.e. try to preserve user intent where possible)</li>
 <li>Things to figure out
 <ul>

@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.49f7a2b4842e01f77f4410a33baa3167.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2e9aa1ec5157c70baf42fc0366f75236.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -477,10 +477,6 @@ Jan 30, 2021
     
       
       
-      
-    
-      
-      
       <li>
         <a href="/newsletters/issue-1/" data-ctx="here" data-src="/newsletters/issue-1" class="internal-link">A request for coffee chats</a>
       </li>
@@ -489,12 +485,6 @@ Jan 30, 2021
       
       <li>
         <a href="/posts/collaborative-thinking/" data-ctx="my digital garden" data-src="/posts/collaborative-thinking" class="internal-link">Collaborative Thinking</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/posts/networked-thought/" data-ctx="Digital Gardening" data-src="/posts/networked-thought" class="internal-link">Networked Thought</a>
       </li>
       
       

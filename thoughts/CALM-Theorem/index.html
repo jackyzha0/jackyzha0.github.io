@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.49f7a2b4842e01f77f4410a33baa3167.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2e9aa1ec5157c70baf42fc0366f75236.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -424,6 +424,10 @@ Aug 12, 2022
     
     
     
+    
+      
+      
+      
     
       
       
