@@ -6,15 +6,45 @@ tags:
 - rhizome
 ---
 
-I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspired to have a healthy mix of both.
+I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 17th
+- Really diving into whether a dual optimistic replication (CRDT) + transactional replication (Raft SMR) approach is needed or if one will do
+	- Optimistic replication
+		- Best for global collaboration. Local nodes can still be speedy even with collaborators from across the world
+		- Can lead to inconsistent states if not careful (again, can use a DSL to help catch these types of errors but it just becomes difficult to write and will require extra research time)
+			- Alternatively, have no global invariants. JSON-style data structure
+		- Strong eventual consistency data stores (e.g. CRDTs) will hit a few million TPS per second locally for sticky writes with actual TPS being roughly $\frac 1 {RTT}$ (where RTT is ~500ms at worst, ~150ms usually)
+		- Bandwidth use is $2 r n$
+	- Transactional replication
+		- Easier to reason about for application developers
+		- Atomic commit-type data stores (e.g. SQL, CockroachDB) still achieve upwards of 28k TPS in a single-region zone. In a global environment, TPS will be roughly $\frac 1 {2RTT}$. This means that if you have a very global team working on something, synchronously collaborating something will still be quite laggy (~1TPS). Doesn't work on an 'inter-planetary scale'!
+		- Bandwidth use is $n$ (just send to all nodes)
+		- Latency is $\frac 1 2 RTT$
+	- Hybrid
+		- Best of both worlds, but the most complex to reason about and write programs for
+		- Alternatively... what if we expose a simple KV store using CRDTs to exchange routing info? This would open it to easily layering real-time applications on top (e.g. video calls, WebRTC). This eliminates the need for a signalling server
+			- This can technically be done already by the user in transactional replication model if they want
+- Addendum: the [[thoughts/CALM Theorem|CALM Theorem]] conjectures that if program state can be expressed in monotonic Datalog, it can safely use optimistic replication. If we can always express something using an immutable Merkle-DAG with occasional consensus for GC, shouldn't this work? 
+- Have one SMR instantiation of the SMR algorithm per application
+- How do we do live reconfiguration of cluster quorum size?
+	- https://users.ece.cmu.edu/~reiter/papers/2000/DSN.pdf
+	- https://www.alibabacloud.com/blog/raft-engineering-practices-and-the-cluster-membership-change_597742
+
 ### August 16th
 - Finally made my way through all my research papers. There's a weird peace to have no open browser tabs, down from around ~75 open
 - Thinking about [[thoughts/access control|access control]] and revocation. Especially for add-only data structures, how can we prove data has been deleted or removed?
 - What is the base metaphor we should use when building applications?
 	- A chat except the base unit is not text but structured data. Call this the 'event history'
 	- This implies a certain causal history and a partial ordering
+- Trunk
+	- User defines
+		- `data Op = ...`: All possible operations of the app
+		- `data State = ...`: Application state
+		- `r :: State -> Op -> State `: The reducer function
+		- `s0 :: State`: The initial state
+	- How is state persisted?
 - Root
 	- Identity
 		- A `did:key` is generated for every history
@@ -24,16 +54,10 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Providers should pass a suite of unit tests for correctness in terms of satisfying certain behaviour.
 		- With this model, all a storage provider needs to do is pin a few CIDs
 	- This takes care of data availability... but what about liveness? This is where SMR comes in
-- Trunk
-	- User defines
-		- `data Op = ...`: All possible operations of the app
-		- `data State = ...`: Application state
-		- `r :: State -> Op -> State `: The reducer function
-		- `s0 :: State`: The initial state
 - Ideal [[thoughts/State Machine Replication (SMR)|SMR]] algorithm properties
 	- Favour liveness over consistency when potentially majority replicas are offline (i.e. handle all cases $f < n$ in asynchronous crash-stop model)
 	- Should scale well with number of participants
-	- Synchronization should *not* be on the critical path
+	- Synchronization should *not* be on the critical path (read: CRDTs where possible, consensus otherwise)
 	- Collaboration over consensus (i.e. try to preserve user intent where possible)
 	- Things to figure out
 		- When is it safe to GC?

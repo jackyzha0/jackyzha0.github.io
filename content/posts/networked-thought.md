@@ -9,9 +9,7 @@ tags:
 
 We live in an information age. The amount of data we produce far outweighs what we consume, so much so that it has extended far beyond our ability to make meaningful use of it. Even our modern day [search](thoughts/search.md) systems seem to be falling apart under the stress of today's overwhelming flow of data with the quality of our search engines degrading from all of the SEO hacks, paid advertiser content, and clickbait headlines.
 
-Over the past year, I've slowly found processes that have worked well in creating a little curated corner of the [Internet](thoughts/Internet.md), rich with wonderfully curious people exploring exciting ideas. You may have noticed I merged my blog and digital garden under my main site. A lot has changed since I last wrote about processes in my [Digital Gardening](posts/digital-gardening.md) post and some are no longer accurate. 
-
-This is a v2.
+Over the past year, I've slowly found processes that have worked well in creating a little curated corner of the [Internet](thoughts/Internet.md), rich with wonderfully curious people exploring exciting ideas.
 
 ## What is digital gardening?
 A digital garden is not a file cabinet, nor is it fully an index. A digital garden, in fact, is less so a well-kempt plot for farming and more so a mess of entangled growth. It is a network of interconnected ideas and thoughts, clustered by how they are associated with each other.
@@ -21,6 +19,8 @@ This is not because I don't like order, but because I think **a dash of chaos an
 > But there is also a philosophical basis for this which to me is quite practical. A pretty good master analogy is that it’s an attempt to make a big stew pot out of my brain – there is tremendous value in allowing all of these notes and ideas and observations to stew and ferment in there. For me, the real power comes when ideas intermingle and I’m able to discover connections that I truly could never have dreamed of under normal conditions. ([Robin Sloan](https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085)on [[thoughts/rhizomatic vs arborescent|rhizomatic]] notetaking)
 
 My goal with a digital garden is not purely as an [organizing system](thoughts/organizing%20system.md) and information store, thought it works nicely for that. I want my digital garden to be a playground for new ways ideas can connect together. As a result, existing formal organizing systems like Zettelkasten or the hierarchical folder structures of Notion don't work well for me. There is way too much upfront friction that by the time I think about how to organize my thought into categories, I've lost it. [[thoughts/rhizomatic vs arborescent|Rhizomatic, not arboresecent.]]
+
+Many try to organize their lives through note taking. There is a classic "top down" vs "bottom up" design tension projected onto how people take notes. Some people trust their ability to predict the future, they want top-down, they want to pave the paths in the garden. Others (normally those that have tried and failed) don't trust their own ability to predict the future, they want to make it possible for the cows to roam safely, then pave the [[thoughts/desire paths|desire paths]] after they form.
 
 This is the problem with the file cabinet: it focuses on efficiency of access and [interoperability](thoughts/interoperability.md) rather than generativity and creativity. Thinking is not linear, nor is it [hierarchical](thoughts/A%20City%20is%20not%20a%20Tree.md). In fact, not many things are linear or hierarchical at all. Then why is it that most tools and thinking strategies assume a nice chronological or hierarchical order for my thought processes? The ideal tool for thought for me would embrace the messiness of my mind, and organically help insights emerge from chaos instead of forcing an artificial order.
 
