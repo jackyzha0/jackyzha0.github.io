@@ -9,6 +9,16 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 18th
+- Preparing workshop notes to talk about [[posts/computer-networking|computer networking + P2P]]
+- Feelings rant -- I feel an odd and unusually heavy sense of impostor syndrome today. Going to write out more stuff in [[posts/the-fools-who-dream|this blog post]] I'm going to flesh out
+- Frustrated by https://www.youtube.com/watch?v=v0160IirdL4
+	- conflating local-first with not connected to the internet
+	- want to be able to not lug around a laptop, you can do that!!
+	- a happy middle between completely offline and completely online
+	- people aren't making desktop apps because its hard to make things interop across it
+	- a digital dark age in the anthropocene (more thoughts in [[thoughts/local-first software|local-first software]])
+
 ### August 17th
 - Really diving into whether a dual optimistic replication (CRDT) + transactional replication (Raft SMR) approach is needed or if one will do
 	- Optimistic replication
@@ -16,12 +26,14 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Can lead to inconsistent states if not careful (again, can use a DSL to help catch these types of errors but it just becomes difficult to write and will require extra research time)
 			- Alternatively, have no global invariants. JSON-style data structure
 		- Strong eventual consistency data stores (e.g. CRDTs) will hit a few million TPS per second locally for sticky writes with actual TPS being roughly $\frac 1 {RTT}$ (where RTT is ~500ms at worst, ~150ms usually)
-		- Bandwidth use is $2 r n$
+		- Bandwidth use is $n$ (just send to all nodes)
+		- Latency is $\frac 1 2 RTT$ (don't need to wait for reply)
 	- Transactional replication
 		- Easier to reason about for application developers
 		- Atomic commit-type data stores (e.g. SQL, CockroachDB) still achieve upwards of 28k TPS in a single-region zone. In a global environment, TPS will be roughly $\frac 1 {2RTT}$. This means that if you have a very global team working on something, synchronously collaborating something will still be quite laggy (~1TPS). Doesn't work on an 'inter-planetary scale'!
-		- Bandwidth use is $n$ (just send to all nodes)
-		- Latency is $\frac 1 2 RTT$
+		- Bandwidth use is $r n^2 + 1$ where $r$ is number of rounds of the consensus mechanism
+			- $1$ for initial request and $r$ rounds of $n^2$ communication between all nodes (overhead can be reduced to $rn + 1$ if normal state is $O(n)$)
+		- Latency is 
 	- Hybrid
 		- Best of both worlds, but the most complex to reason about and write programs for
 		- Alternatively... what if we expose a simple KV store using CRDTs to exchange routing info? This would open it to easily layering real-time applications on top (e.g. video calls, WebRTC). This eliminates the need for a signalling server
@@ -72,6 +84,8 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Semantic diffing, live `git`
 	- Minecraft or other real-time game (testing latency)
 	- EVM (testing expressiveness)
+	- A browser... with editing and hosting of local-files baked in
+		- co-creating websites live, similar to [Beaker Browser](https://docs.beakerbrowser.com/)
 
 ### August 14th - 15th
 - Organized The SF Commons: Hack Day #0 with Athena! A non-zero number of people were like "Hey! I've read your blog before" or "I love the work you do" and it was a little surreal
@@ -367,7 +381,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- So thank you for your trust, thank you for dreaming with me
 	- Today's soundtrack is from [La La Land -- Audition (The Fools Who Dream)](https://open.spotify.com/track/6j0wBBAP3hMe4t1Ymj7GIe?si=ef50241abfe04ac2)
 
-![???](thoughts/images/IMG_1805.png)
+![[thoughts/images/IMG_1805.png|???]]
 
 ### July 5th
 - Finalizing notes on [[thoughts/Tendermint|Tendermint]] and wondering if I should switch out [[thoughts/Raft Consensus Algorithm|Raft]] for it. How valuable is [[thoughts/Byzantine Faults|BFT]] anyways? Do we assume nodes are prone to potentially malicious takeover?

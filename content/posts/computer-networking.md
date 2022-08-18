@@ -1,0 +1,84 @@
+---
+title: "Intro to Computer Networking & P2P"
+date: 2022-08-18
+tags:
+- fruit
+- technical
+draft: true
+---
+
+> This post is in Draft Mode! A lot of thoughts here have not been refined. Please regard this with care and a healthy amount of suspicion
+
+- we've always communicated -- transmitting data between two different places through a radio or an electric wire pre-dates the introduction of the first computers
+- it was only a certain amount of time before we tried to get our computers to do it too
+- circuit switched networks
+- worked fine and dandy but there was a slight problem: the possibility of nuclear war
+	- To be efficient is to be fragile, to be fragile is to go extinct.
+- In 1959 RAND, a Californian think-tank, assigned Paul Baran, a young engineer at that time, to develop a communication system that can survive a Soviet nuclear attack.
+	- [distributed network diagram]
+	- r and K selection
+- thus packet switching was adopted as the norm
+	- the physical network of the internet became decentralized. its where individual little bits of information called packets, get routed around the internet
+- lets zoom out a bit to see how this fits into the grander vision of the internet
+- our modern internet has got layers to make sure all those little packets get to the right place
+	- application layer -> where applications can access the network services using things like HTTP
+	- transport layer -> ensures data arrives in order, recovers lost data by retrying, sends data to the right process
+	- network layer -> routes packet through routers to destination machine
+	- physical/link layer (wires) -> connecting individual machines together, transferring the actual bits
+- when you request a website or make an API call, you go down all these layers and then back up at the other end
+- but if you've ever made an API or an app you'll notice that all of our HTTP is not between each other, but with servers
+- [insert server diagram]
+- when you message a friend on FB, it doesnt go directly to them. instead, it goes to facebooks servers and it forwards it to your friends device
+- does that earlier diagram seem familiar?
+- [distributed network diagram]
+- although the underlying protocol layers of our web are decentralized, we see that centralization has re-emerged on the web once again
+- when we say p2p today, we don't mean the underlying networking stack, but rather on the application level -- bypassing going through servers to facilitate all of our actions and instead directly connecting with our peers
+- why would one directly do p2p
+- To be efficient is to be fragile, to be fragile is to go extinct -- resilience and long-term functioning
+	- facebook going down or aws going down incapacitates like half the web
+	- platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention
+- as a developer
+	- dont need to run databases or application servers or pay for cloud hosting fees (all computation happens between peers)
+	- end-to-end (direct) connection between peers means a more efficient path for data and less energy is needed -- lower latency!
+- of course, there are still tradeoffs to make. not arguing that everything should be p2p, but that it should be a lot easier to make p2p software
+	- client-server
+		- better for 'persistent' applications that need to store data for a long time
+		- easier to make applications that are mostly the user interacting with data
+		- servers waits for requests from clients and responds to them
+	- peer-to-peer
+		- good for low-latency applications like games and video calling
+		- better for apps that are 'live' (for client-server, you need to 'poll' the server for updates)
+		- easier to make applications that are mostly users interacting with each other
+		- no privileged 'servers', all participants are equal! its a conversation, anyone can send each other anything
+	- a lot of my research is around how to make it easier to do p2p things! and addressing some of those negatives (e.g. data persistence)
+- pt2: how do we achieve p2p today?
+	- thinking about p2p
+		- like talking with a friend
+		- you need to know how to find where they are to initialize a conversation
+		- you need a shared language and shared purpose to understand each other
+	- initializing a conversation
+		- the p2p networking stack
+		- turns out we can reuse the whole internet stack actually
+		- BUT today's web is p2p hostile
+			- funny lil indirect story, we were supposed to run out of IPv4 addresses
+				- 4,294,967,296 total addresses
+				- all addresses were technically assigned in 2011
+				- NAT exists so that instead of every computer getting a public unique address, every home router gets a single public unique address. computers then only get private addresses assigned to them by the router and it *translates* the address so that to anyone external to the network, it looks like all the traffic is coming from and goes to the router
+				- additional NAT protection rules
+			- cant directly connect to another computer most of the time because of NAT
+			- NAT 'disguises' 
+		- ok, so where do we find our peers? 
+			- we need a figure out a way to do hole-punching!
+				- signalling servers can use websockets to help exchange information
+					- use a collection of methods like STUN and TURN
+						- STUN is traversing NATs
+						- TURN is the media relay fallback for if STUN fails
+				- DHT is a newer method that p2p networks rely on so it can do so without privileged servers (this is what IPFS does!)
+			- this allows us to get a direct connection to the other user
+			- now, how do we actually talk about things?
+	- having a shared language
+		- underlying medium is not perfect, messages can get lost or reordered
+		- conversations can have different purposes
+			- state transfer: telling someone about your day, they acknowledge it
+			- state synchronization: coming to an agreement about what to get for dinner
+- recreating cursor-chat
