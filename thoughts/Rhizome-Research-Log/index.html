@@ -121,7 +121,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7736cd0e88ba4554bb5e13bf4ea2d0d4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -9851,13 +9851,39 @@ May 3, 2022
 <li>Feelings rant &ndash; I feel an odd and unusually heavy sense of impostor syndrome today. Going to write out more stuff in <a class="internal-link broken">this blog post</a> I&rsquo;m going to flesh out</li>
 <li>Frustrated by 
 
-<a href="https://www.youtube.com/watch?v=v0160IirdL4" rel="noopener">https://www.youtube.com/watch?v=v0160IirdL4</a>
+<a href="https://www.youtube.com/watch?v=v0160IirdL4" rel="noopener">this video by one of the founders of the Browser Company</a>
 <ul>
-<li>conflating local-first with not connected to the internet</li>
-<li>want to be able to not lug around a laptop, you can do that!!</li>
-<li>a happy middle between completely offline and completely online</li>
-<li>people aren&rsquo;t making desktop apps because its hard to make things interop across it</li>
-<li>a digital dark age in the anthropocene (more thoughts in <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a>)</li>
+<li>Their vision is that the &rsquo;next generation&rsquo; of computers &ndash; after the mainframes and personal computers &ndash; is the <em>internet computer</em>, where everything we do happens in the cloud and our machines are just dumb portals to access these
+<ul>
+<li>We can&rsquo;t be going back to time-sharing! Time-sharing was only a thing because we didn&rsquo;t have access to powerful enough consumer hardware &ndash; this is no longer the case</li>
+<li>Not only do you need to always be connected to the internet to use it, it is also incredibly Orwellian except with all-powerful companies instead of states which have detailed metrics into how you conduct every moment of your digital lives</li>
+</ul>
+</li>
+<li>Josh seems to be conflating <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a> with software that is not connected to the internet
+<ul>
+<li>Just because our data lives locally on our device, does not mean your work is trapped on one device</li>
+<li>I think the future is a happy middle between completely offline and completely online &ndash; we&rsquo;ve pendulum-ed to both sides of the spectrum and are perhaps settling on the reasonable option
+<ul>
+<li>Servers have a role to play in the local-first world — not as central authorities, but as “cloud peers” that support client applications without being on the critical path. For example, a cloud peer that stores a copy of the document, and forwards it to other peers when they come online, could solve the closed-laptop problem.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&ldquo;Nobody makes native apps anymore&rdquo;
+<ul>
+<li>People want the <em>performance</em> of native apps without having to maintain many codebases across them.</li>
+<li>As more and more apps become &lsquo;internet-first&rsquo;, libraries for storing things locally and reconciling them with remote copies of that data have not made nearly enough progress.</li>
+<li>As a result, many &rsquo;native apps&rsquo; are just wrappers for a single source of truth that lives on a remote server. This is not ideal in terms of many things but mostly performance and data ownership.</li>
+</ul>
+</li>
+<li>In a million years time when they dig back down in the archive history of our digital footprint, they won&rsquo;t see vibrant replicas of the web but rather a digital dark age.
+<ul>
+<li>The documents created in cloud apps are destined to disappear when the creators of those services cease to maintain them.</li>
+<li>Cloud services defy long-term preservation.</li>
+<li>No Wayback Machine can restore a sunsetted web application.</li>
+<li>The Internet Archive cannot preserve your Google Docs.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -9921,7 +9947,7 @@ May 3, 2022
 <li>Thinking about <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a> and revocation. Especially for add-only data structures, how can we prove data has been deleted or removed?</li>
 <li>What is the base metaphor we should use when building applications?
 <ul>
-<li>A chat except the base unit is not text but structured data. Call this the &rsquo;event history'</li>
+<li>A chat except the base unit is not text but structured data. Call this the &rsquo;event history&rsquo;</li>
 <li>This implies a certain causal history and a partial ordering</li>
 </ul>
 </li>

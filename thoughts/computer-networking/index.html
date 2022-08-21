@@ -121,7 +121,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7736cd0e88ba4554bb5e13bf4ea2d0d4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -742,7 +742,7 @@ Aug 18, 2022
 <p>When we talk about making a request to a server, we normally think about this at the Application Layer. If we make a HTTP request to Twitter to get the latest posts, we think of our request as going directly to Twitters&rsquo;s servers, not hopping around from router to router, snaking its way through various networks to get to its destination and back.</p>
 <p>Once we look at the web from the Application Layer, we see something curious. Although the underlying Transport, Network, and Physical layers of our web are decentralized, centralization has re-emerged on the web once again. When you message a friend on Facebook, it doesn&rsquo;t go directly to them. Instead, it goes to Facebook&rsquo;s servers and it forwards it to your friends device</p>
 <p><img src="/thoughts/images/facebook communication.png" width="auto" /></p>
-<p>Does that earlier diagram seem familiar? This is the exact centralizing behaviour that we were worried about before.</p>
+<p>This is the exact centralizing behaviour that we were worried about before.</p>
 <blockquote>
 <p>To be efficient is to be fragile, to be fragile is to go extinct.</p>
 </blockquote>
