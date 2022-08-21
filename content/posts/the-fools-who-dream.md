@@ -15,6 +15,8 @@ draft: true
 
 we take our computers and internet for what it is -- why can't we reimagine it too?
 
+octavia butler: there's nothing new under the sun, but there are new suns — you can believe in the new suns
+
 
 > She told me  
 > "A bit of madness is key  

@@ -54,7 +54,7 @@ Once we look at the web from the Application Layer, we see something curious. Al
 
 ![[thoughts/images/facebook communication.png]]
 
-Does that earlier diagram seem familiar? This is the exact centralizing behaviour that we were worried about before.
+This is the exact centralizing behaviour that we were worried about before.
 
 > To be efficient is to be fragile, to be fragile is to go extinct.
 

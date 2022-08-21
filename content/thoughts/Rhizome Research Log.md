@@ -15,12 +15,23 @@ I think research logs tend to generally focus too much on what one did rather th
 ### August 18th
 - Preparing workshop notes to talk about [[thoughts/computer networking|computer networking + P2P]]
 - Feelings rant -- I feel an odd and unusually heavy sense of impostor syndrome today. Going to write out more stuff in [[posts/the-fools-who-dream|this blog post]] I'm going to flesh out
-- Frustrated by https://www.youtube.com/watch?v=v0160IirdL4
-	- conflating local-first with not connected to the internet
-	- want to be able to not lug around a laptop, you can do that!!
-	- a happy middle between completely offline and completely online
-	- people aren't making desktop apps because its hard to make things interop across it
-	- a digital dark age in the anthropocene (more thoughts in [[thoughts/local-first software|local-first software]])
+- Frustrated by [this video by one of the founders of the Browser Company](https://www.youtube.com/watch?v=v0160IirdL4)
+	- Their vision is that the 'next generation' of computers -- after the mainframes and personal computers -- is the *internet computer*, where everything we do happens in the cloud and our machines are just dumb portals to access these
+		- We can't be going back to time-sharing! Time-sharing was only a thing because we didn't have access to powerful enough consumer hardware -- this is no longer the case
+		- Not only do you need to always be connected to the internet to use it, it is also incredibly Orwellian except with all-powerful companies instead of states which have detailed metrics into how you conduct every moment of your digital lives
+	- Josh seems to be conflating [[thoughts/local-first software|local-first software]] with software that is not connected to the internet
+		- Just because our data lives locally on our device, does not mean your work is trapped on one device
+		- I think the future is a happy middle between completely offline and completely online -- we've pendulum-ed to both sides of the spectrum and are perhaps settling on the reasonable option
+			- Servers have a role to play in the local-first world — not as central authorities, but as “cloud peers” that support client applications without being on the critical path. For example, a cloud peer that stores a copy of the document, and forwards it to other peers when they come online, could solve the closed-laptop problem.
+	- "Nobody makes native apps anymore"
+		- People want the *performance* of native apps without having to maintain many codebases across them.
+		- As more and more apps become 'internet-first', libraries for storing things locally and reconciling them with remote copies of that data have not made nearly enough progress.
+		- As a result, many 'native apps' are just wrappers for a single source of truth that lives on a remote server. This is not ideal in terms of many things but mostly performance and data ownership.
+	- In a million years time when they dig back down in the archive history of our digital footprint, they won't see vibrant replicas of the web but rather a digital dark age.
+		- The documents created in cloud apps are destined to disappear when the creators of those services cease to maintain them.
+		- Cloud services defy long-term preservation.
+		- No Wayback Machine can restore a sunsetted web application.
+		- The Internet Archive cannot preserve your Google Docs.
 
 ### August 17th
 - Really diving into whether a dual optimistic replication (CRDT) + transactional replication (Raft SMR) approach is needed or if one will do

@@ -44,3 +44,12 @@ _The squad economy primarily yields non-monetary forms of value_
 
 ## [Mutual Aid](thoughts/Mutual%20Aid.md)
 [Chama](https://en.wikipedia.org/wiki/Chama_(investment))'s for the modern age, [Communities of Fate](thoughts/Community%20of%20Fate.md)
+
+## Small Group
+[Source: James Mulholland](https://jmulholland.com/small-group/)
+
+> The SMALL GROUP offers a private, close-knit environment in which members can share ideas freely.
+
+Benjamin Franklin had the Junto Club, Tolkien and C.S. Lewis had The Inklings, Jobs and Wozniak had Homebrew. The Bloomsbury Group was integral to the success of Virginia Woolf, Clive Bell, and John Maynard Keynes, while MIT’s Model Railroad Club spawned much of modern hacker culture.
+
+Around a dozen members is the sweet spot of social motivation: small enough to know everyone, yet large enough that the group won’t collapse if one or two members’ enthusiasm wanes; small enough that you are not daunted by competing with the whole world, yet large enough that you still need to be on your toes to keep up.
