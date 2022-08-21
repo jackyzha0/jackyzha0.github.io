@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -266,6 +266,26 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Aug 18, 2022
+
+
+            </p>
+            <div class="desc">
+                <h3><a href="https://jzhao.xyz/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -445,29 +465,29 @@ Jul 22, 2020
                 
             </ul>
         </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 10, 2020
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/reflect/">reflect: NLP Model Explained</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
-                
-            </ul>
-        </div>
     </li></ul>
 
         
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/technical/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/technical/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/technical/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
     </article>
     
 <div id="contact_buttons">

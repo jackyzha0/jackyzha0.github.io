@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -342,6 +342,25 @@ Jun 29, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
+                            </div>
+                            <p class="meta">
+                                1807 words on Aug 20, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/access-control/">Access control</a></h3>
                             </div>
                             <p class="meta">
@@ -356,25 +375,8 @@ Jun 29, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/r-K-Selection-theory/">r/K Selection theory</a></h3>
-                            </div>
-                            <p class="meta">
-                                128 words on Aug 16, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 458 more →</a>
+                <a href="/thoughts">See 459 more →</a>
             </div>
         </div>
         <article>

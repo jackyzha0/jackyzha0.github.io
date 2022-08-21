@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -306,8 +306,8 @@ Aug 16, 2022
 <table>
 <thead>
 <tr>
-<th>r-selection</th>
-<th>K-selection</th>
+<th>r-selected</th>
+<th>K-selected</th>
 </tr>
 </thead>
 <tbody>
@@ -354,8 +354,18 @@ Aug 16, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Moderation/" data-ctx="r-selected" data-src="/thoughts/Moderation" class="internal-link">Moderation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-networking/" data-ctx="r-K Selection Theory" data-src="/thoughts/computer-networking" class="internal-link">Intro to Computer Networking &amp; P2P</a>
       </li>
       
       

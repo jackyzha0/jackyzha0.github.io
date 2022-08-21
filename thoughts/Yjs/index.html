@@ -117,13 +117,13 @@ Yjs supports many different transport layers:"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -505,8 +505,18 @@ This is quite similar to <a href="/thoughts/CRDT-Implementations#replicated-grow
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Yjs" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-networking/" data-ctx="Yjs" data-src="/thoughts/computer-networking" class="internal-link">Intro to Computer Networking &amp; P2P</a>
       </li>
       
       

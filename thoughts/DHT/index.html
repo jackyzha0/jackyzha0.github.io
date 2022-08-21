@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="The big hash table in the sky
- One solution for &lsquo;decentralized&rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent."
+ One solution for &lsquo;decentralized&rsquo; registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent."
   />
   <title>
     DHT
@@ -116,13 +116,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -348,7 +348,7 @@ Jun 7, 2022
 <blockquote>
 <p>The big hash table in the sky</p>
 </blockquote>
-<p>One solution for &lsquo;decentralized&rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.</p>
+<p>One solution for &lsquo;decentralized&rsquo; registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.</p>
 <p>Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.</p>
 <p>Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)</p>
 <p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT.</p>
@@ -424,6 +424,10 @@ Jun 7, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Holochain/" data-ctx="DHT" data-src="/thoughts/Holochain" class="internal-link">Holochain</a>
       </li>
@@ -456,6 +460,12 @@ Jun 7, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="DHTs" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-networking/" data-ctx="DHT" data-src="/thoughts/computer-networking" class="internal-link">Intro to Computer Networking &amp; P2P</a>
       </li>
       
       

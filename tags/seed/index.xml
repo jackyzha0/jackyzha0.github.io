@@ -857,7 +857,7 @@ FOAF stands for &amp;lsquo;friend of a friend&amp;rsquo;
       
       <guid>https://jzhao.xyz/thoughts/DHT/</guid>
       <description>The big hash table in the sky
- One solution for &amp;lsquo;decentralized&amp;rsquo; registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent.</description>
+ One solution for &amp;lsquo;decentralized&amp;rsquo; registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent.</description>
     </item>
     
     <item>

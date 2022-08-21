@@ -115,13 +115,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7f44767853c651f9cc439990fefd764b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.56c9ffaa21a8028a74a5fc8ee4860c0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4a84b476a30463135a9cb9b68962bda9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -649,7 +649,7 @@ Mar 14, 2022
 <p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data.</p>
 <p><em>This is a summarized version of the full vision of Rhizome. Read the full essay on <a href="/posts/towards-data-neutrality" rel="noopener" class="internal-link" data-src="/posts/towards-data-neutrality">data neutrality</a>.</em></p>
 <a href="#technical-details"><h2 id="technical-details"><span class="hanchor" ariaLabel="Anchor"># </span>Technical Details</h2></a>
-<p>Rhizhome is a set of abstractions on top of DIDs, IPFS (specifically 
+<p>Rhizome is a set of abstractions on top of DIDs, IPFS (specifically 
 
 <a href="https://ipld.io/" rel="noopener">IPLD</a>), <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">Filecoin</a>, and the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft consensus protocol</a>. It can be analogized to a generalized implementation of <a href="/thoughts/state-channels" rel="noopener" class="internal-link" data-src="/thoughts/state-channels">state channels</a> which don&rsquo;t need to be anchored to a chain.</p>
 <ul>
@@ -816,6 +816,10 @@ Mar 14, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/" data-ctx="data" data-src="/" class="internal-link">jzhao.xyz</a>
       </li>
@@ -848,6 +852,12 @@ Mar 14, 2022
       
       <li>
         <a href="/thoughts/Weaving-the-Web/" data-ctx="Rhizhome" data-src="/thoughts/Weaving-the-Web" class="internal-link">Weaving the Web</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-networking/" data-ctx="independent research" data-src="/thoughts/computer-networking" class="internal-link">Intro to Computer Networking &amp; P2P</a>
       </li>
       
       
