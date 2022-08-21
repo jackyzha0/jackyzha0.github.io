@@ -633,8 +633,6 @@ Hopefully this leaves you in a really good position to becoming more comfortable
 * [React Intro to Hooks](https://reactjs.org/docs/hooks-intro.html)
 * [10 React Hooks Explained by Fireship.io](https://www.youtube.com/watch?v=TNhaISOUy6Q)
 
-If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it) [here](https://github.com/jackyzha0/jackyzha0.github.io/blob/hugo/content/posts/react.md)!
-
 ![Our working todo tracker!](/posts/images/react/todo-fin.gif)*Our working todo tracker!*
 
 ```jsx

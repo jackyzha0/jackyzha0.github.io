@@ -7,7 +7,7 @@ tags:
 
 > The big hash table in the sky
 
-One solution for 'decentralized' registry of peers. Additionally, each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.
+One solution for 'decentralized' registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.
 
 Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.
 

@@ -45,7 +45,7 @@ As a whole, it forms the basis for a new model of the internet where first and f
 *This is a summarized version of the full vision of Rhizome. Read the full essay on [[posts/towards-data-neutrality|data neutrality]].*
 
 ## Technical Details
-Rhizhome is a set of abstractions on top of DIDs, IPFS (specifically [IPLD](https://ipld.io/)), [[thoughts/Filecoin|Filecoin]], and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]]. It can be analogized to a generalized implementation of [[thoughts/state channels|state channels]] which don't need to be anchored to a chain.
+Rhizome is a set of abstractions on top of DIDs, IPFS (specifically [IPLD](https://ipld.io/)), [[thoughts/Filecoin|Filecoin]], and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]]. It can be analogized to a generalized implementation of [[thoughts/state channels|state channels]] which don't need to be anchored to a chain.
 
 - Root is a local-first data replication and synchronization service much like iCloud/Dropbox. Root will be implemented as a DID method which uses IPFS as a VDR. The pinned state snapshot is the DID Document.
 - All application data is stored in the form of an append-only event log for each app they interact with. This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.

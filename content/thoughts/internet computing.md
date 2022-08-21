@@ -66,7 +66,6 @@ Each layer takes data from above adds header information to create new data unit
 4. [Link Layer](thoughts/Link%20Layer.md)
 5. [Physical Layer](thoughts/Physical%20Layer.md)
 
-
 ## Hubs, Switches, and Routers
 1. Hub - broadcasting through cloning bits ([physical layer](thoughts/Physical%20Layer.md))
 	1. Simplest and cheapest way to create a network

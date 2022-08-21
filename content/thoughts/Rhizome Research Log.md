@@ -9,8 +9,11 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 19th
+- Packing and flying back to NY for HackLodge!
+
 ### August 18th
-- Preparing workshop notes to talk about [[posts/computer-networking|computer networking + P2P]]
+- Preparing workshop notes to talk about [[thoughts/computer networking|computer networking + P2P]]
 - Feelings rant -- I feel an odd and unusually heavy sense of impostor syndrome today. Going to write out more stuff in [[posts/the-fools-who-dream|this blog post]] I'm going to flesh out
 - Frustrated by https://www.youtube.com/watch?v=v0160IirdL4
 	- conflating local-first with not connected to the internet

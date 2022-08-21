@@ -10,7 +10,7 @@ aliases:
 
 > In ecology, r/K selection theory relates to the selection of combinations of traits in an organism that trade off between quantity and quality of offspring
 
-|r-selection|K-selection|
+|r-selected|K-selected|
 |--|--|
 |many offspring, low investment| few offspring, high investment|
 |thrive in unstable habitats|thrive in stable habitats|
