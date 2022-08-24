@@ -41,5 +41,7 @@ From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmad
 > I evoke the term 'handmade web' to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or [[thoughts/identity|identity]].
 
 ## Fun Sites
-- [p2p sunsets](https://old.mark-beasley.com/peer-peer-sunset/index.html)
+- [[posts/casual magic|fun experiments with sunsets]]
+	- [p2p sunsets](https://old.mark-beasley.com/peer-peer-sunset/index.html)
+	- [animated digital sunset](https://tiffanyq.github.io/sunrise/)
 - [Little towns of people's plots :))](https://tilde.town/~troido/cadastre/town.html)

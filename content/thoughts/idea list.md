@@ -1,11 +1,11 @@
 ---
-title: "Project Idea List"
+title: "Idea List"
 date: 2021-06-17T00:33:42-04:00
 tags:
 - evergreen
-- technical
 ---
 
+## Technical
 - recreate barcode battler but irl
 - IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
@@ -148,3 +148,18 @@ tags:
 	- [https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
 	-   listen on any email server
 -  deep foveal VR rendering
+
+## Writing
+- Short stories/speculative fiction
+	- [[thoughts/CID|CID]] as the library of babel
+	- Packet switched electricity
+	- Cloud transport fiction
+		- What if we lived in a world where water was incredibly scarce? People would pay huge amounts of money to ship clouds around and 'mine' them for their crops
+- Poetry
+	- We like sunset because it's the only time we see the cosmos move
+- Essays
+	- Analog software: software by analogy and by atomic building blocks that interface with each other
+		- We should be able to directly manipulate them, like files, rather than only indirectly work with them, like layer activations in a neural network.
+		- Software representations for similar ideas should be obviously similar in some way – they should click together, or look similar, or feel similar to the touch.
+		- Ideas should remember where they came from – what blog I copied it from, which author I quoted it from, and so on.
+	- Good [[thoughts/search|search]] turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])

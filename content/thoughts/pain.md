@@ -12,7 +12,7 @@ Source: [alkjash on LessWrong](https://www.lesswrong.com/posts/bx3gkHJehRCYZAF3r
 
 People with this belief optimize for the appearance of suffering. Wait until you meet someone for whom _telling them about opportunities actively hurts them_, because you've just created another knife they feel pressured to cut themselves with.
 
-Antitodes
+Antidotes
 1. If it hurts, you're probably doing it wrong. That's just bad form.
 	1. So much of this applies to the physical (e.g. working out) why don't we apply this to our emotional and mental selves?
 2. You're not trying your best if you're not happy.

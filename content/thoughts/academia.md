@@ -23,7 +23,7 @@ The typical research project might last 4 years at the longest because that is t
 "Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute."
 
 ## Incentive Structure
-Academia feels more pure, more [playful](thoughts/play.md), than academia? More of a '[constructionist](thoughts/constructionist.md)' approach, freedom to ask your own questions
+Academia feels more pure, more [playful](thoughts/play.md), than industry? More of a '[constructionist](thoughts/constructionist.md)' approach, freedom to ask your own questions
 
 Can we create the energy of DARPA outside of government [funding](thoughts/funding.md)? A modern day Xerox Parc or Bell Labs? A [research institutions](thoughts/research%20institutions.md) perhaps?
 

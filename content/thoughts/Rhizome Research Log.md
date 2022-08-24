@@ -9,8 +9,34 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 23rd
+- Phillip Wang's talk -- related to [[posts/the-fools-who-dream|reflection post]]
+	- tldr; We should leave space in our lives for finding conviction in things we work on
+	- How do we enable the "other" path for high achievers? Not the one where they can just work at a big company, get paid lots of money, life a cozy life, but the harder path in which they truly question the *why* and ask themselves what they find truly fulfilling
+	- Fully commit to one thing -- deep beauty in choosing, against [[thoughts/optionality|optionality]]
+		- How does this fit into the [[thoughts/exploit explore|exploit-explore]] tradeoff?
+		- Feels like there's a necessary balance between
+			1. being deeply invested in something to be able to have a level of almost unwavering conviction
+			2. not being so deeply invested that you are oblivious to exploring better potential options
+	- Leaving space to have conviction is inherently a privilege, how might we enable local spaces of abundance (places for [[posts/play#A re-worked definition|play]]) so that more people have that privilege?
+		- This also feels like a generational thing. My parents first immigrated to Canada when I was around 3. They've spent a big chunk of their lives worrying about how to meet basic survival needs
+		- I grew up with enough resources around me that I've begun looking for what I have conviction in; what I feel invigorated by 
+
+### August 22nd
+- Justin Glibert's talk
+	- tldr; composability + permissionlessness enable novel affordances we haven't seen before in digital systems
+	- Coordination in the universe is limited by how much you can observe. That means a globally consistent *anything* will be limited by the speed of light
+		- Problematic for global (and potentially inter-planetary) communication
+		- Great thing about local-first is that you don't need to know anything about the other side of the world when doing stuff locally
+	- What if... [[thoughts/Kademlia DHT|Kademlia-like]] XOR distance metric but for [[thoughts/State Machine Replication (SMR)|SMR]]
+	- Permissionlessness is an important characteristic to enable innovation and [[thoughts/emergent behaviour|emergent behaviour]]
+		- See also: [Simon Harris on the same topic](https://simonsarris.substack.com/p/welcome-ghosts)
+		- "Many tales exist of [the origin of the bistro]. Some say it was working-class landlords opening their kitchens for extra income. Others say it was the Auvergnats, immigrating to Paris from what is today central-south France, who first worked as rag-pickers, then wood and coal sellers, then metalworkers, who created small working-class restaurants to supplement their income. Either way, it was not planned or engineered, but simply not-disallowed. There were no rules in place to stop this invention."
+		- Same with YouTube which started out as a dating app but then let people upload anything. The _users_, not the website creators, found its real uses
+		- Does this conflict with the fact that good DX/UX comes with strongly opinionated use cases?
+
 ### August 19th
-- Packing and flying back to NY for HackLodge!
+- Packing and flying back to NY for Hack Lodge! Will be posting an ongoing thought stream :))
 
 ### August 18th
 - Preparing workshop notes to talk about [[thoughts/computer networking|computer networking + P2P]]
@@ -142,7 +168,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Every paper I read opened 2-4 new ones. An unknown concept or definition meant another day or two to get familiar with the literature surrounding it. It wasn't until a month ago that the number of tabs I had open started to go down.
 	- It feels like the attitude I'm taking towards research is one of bumping around in the dark. For the most part its enjoyable and exhilarating, finding things out for the first time.
 		- There's a certain joy to putting yourself in an environment where you can discover things for yourself. I can ask for help when I need it, but most of the time I'm puttering along at my own pace.
-		- This is roughly what my self-satisfaction curve looks like for self-motivated exploration: ![[thoughts/images/self-exploration-satisfaction.jpeg|400]]
+		- This is roughly what my self-satisfaction curve looks like for self-motivated exploration:  ![[thoughts/images/self-exploration-satisfaction.jpeg|400]]
 		- This is usually fine, but when I look at it *instrumentally*, just from a perspective of how much I've actually got done, I'm a little disappointed in myself.
 		- I've decided that I'm okay with it. I'm not trying to any% speedrun my work. I want to be able to enjoy research for what it is, to visit unexpected results and learn what I find intriguing about it.
 
@@ -227,7 +253,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Never thought I'd *actually* take a gap semester but here I am... looks like I might graduate late now LOL
 - I want to spend some time thinking about how to create effective learning and research communities. I know that since I started working in the public hackerspace at Incepto, my productivity has gone up something like 5x. How do I *geographically* surround myself with people that constantly inspire me to work on ambitious things?
 - On a whim, read this awesome [Patreon post](https://www.patreon.com/posts/ratcheting-in-47976114) by Andy Matuschak
-	- *Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in _The New ABCs of Research_. He calls it the “two parents, three children” pattern.*
+	- *Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in The New ABCs of Research. He calls it the “two parents, three children” pattern.*
 	  ![[thoughts/images/research project pattern.png|500]]
 	  - I've been thinking more about how research seems to come in two layers
 		  1. The ideas
@@ -417,7 +443,7 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ### June 29th
 - Finally wrapped up school! Anson is headed back to Arizona today too :((
-	- Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I'm really glad I chose to prioritize relationship, truly some moments over the past month where I was like "wow, is this real". It feels like I'm selectively giving deep attention in-turn to the things I care most about.
+	- Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I'm really glad I chose to prioritize relationship, truly some moments over the past month where I was like "wow, is this real." It feels like I'm selectively giving deep attention in-turn to the things I care most about.
 	- Now is the era to just fully focus my attention on research and this project though
 - I think this finally means that the vast majority of my waking hours will be on research. Uninstalled a game I was spending way too much time playing :')' it is grind time
 

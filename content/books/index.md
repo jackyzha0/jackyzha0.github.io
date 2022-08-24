@@ -13,6 +13,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Homo Ludens** by Johan Huizinga
 
 ### Non-fiction
+- **Dealers of Lighting** by Michael A. Hiltzik
 * **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
 * **Creation: Life and How to Make it** by Steve Grand
 * **The Utopia of Rules** by David Graeber
@@ -25,7 +26,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Past
 2022
-* **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
+- **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
 - **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
 - **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
 - **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
