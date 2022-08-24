@@ -3,6 +3,7 @@ title: "Here's to the fools who dream"
 date: 2022-08-21
 tags:
 - seed
+draft: true
 ---
 
 *Alternatively: A hitchhiker's guide to independent research*
