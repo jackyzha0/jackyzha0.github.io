@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
   
   <meta charset="UTF-8" />
@@ -56,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.20d42b17cb9edb3aa5644847edf23ef1.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.a9c503a3d2ad0056468513b68eb9c133.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -70,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -82,7 +85,7 @@
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
 
   
   
@@ -115,13 +118,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7736cd0e88ba4554bb5e13bf4ea2d0d4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -145,31 +148,33 @@
       
 
       
-
-      
-      const container = document.getElementById("graph-container")
-      
-      if (!container) return requestAnimationFrame(render)
-      
-      container.textContent = ""
-
-      const drawGlobal = isHome &&  false ;
-      drawGraph(
-          "https://jzhao.xyz",
-          drawGlobal,
-          [{"/moc":"#4388cc"}],
-          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
-        );
-
-      
-
-
+     
       
       initPopover(
         "https://jzhao.xyz",
          true ,
          true 
       )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
       
     }
 
@@ -215,7 +220,7 @@ if (!doNotTrack) {
 <div id="search-container">
   <div id="search-space">
     <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
-      placeholder="Search for something...">
+      placeholder="Search for something..." dir="">
     <div id="results-container">
     </div>
   </div>
@@ -262,7 +267,7 @@ if (!doNotTrack) {
     <article>
       <h1>Rhizome Research Log</h1>
       <p class="meta">
-          Last updated 
+        Last updated 
 May 3, 2022
 
  
@@ -294,6 +299,551 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -9841,9 +10391,60 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
+<a href="#august-23rd"><h3 id="august-23rd"><span class="hanchor" ariaLabel="Anchor"># </span>August 23rd</h3></a>
+<ul>
+<li>Phillip Wang&rsquo;s talk &ndash; related to <a class="internal-link broken">reflection post</a>
+<ul>
+<li>tldr; We should leave space in our lives for finding conviction in things we work on</li>
+<li>How do we enable the &ldquo;other&rdquo; path for high achievers? Not the one where they can just work at a big company, get paid lots of money, life a cozy life, but the harder path in which they truly question the <em>why</em> and ask themselves what they find truly fulfilling</li>
+<li>Fully commit to one thing &ndash; deep beauty in choosing, against <a href="/thoughts/optionality" rel="noopener" class="internal-link" data-src="/thoughts/optionality">optionality</a>
+<ul>
+<li>How does this fit into the <a href="/thoughts/exploit-explore" rel="noopener" class="internal-link" data-src="/thoughts/exploit-explore">exploit-explore</a> tradeoff?</li>
+<li>Feels like there&rsquo;s a necessary balance between
+<ol>
+<li>being deeply invested in something to be able to have a level of almost unwavering conviction</li>
+<li>not being so deeply invested that you are oblivious to exploring better potential options</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Leaving space to have conviction is inherently a privilege, how might we enable local spaces of abundance (places for <a href="/posts/play#a-re-worked-definition" rel="noopener" class="internal-link" data-src="/posts/play">play</a>) so that more people have that privilege?
+<ul>
+<li>This also feels like a generational thing. My parents first immigrated to Canada when I was around 3. They&rsquo;ve spent a big chunk of their lives worrying about how to meet basic survival needs</li>
+<li>I grew up with enough resources around me that I&rsquo;ve begun looking for what I have conviction in; what I feel invigorated by</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="#august-22nd"><h3 id="august-22nd"><span class="hanchor" ariaLabel="Anchor"># </span>August 22nd</h3></a>
+<ul>
+<li>Justin Glibert&rsquo;s talk
+<ul>
+<li>tldr; composability + permissionlessness enable novel affordances we haven&rsquo;t seen before in digital systems</li>
+<li>Coordination in the universe is limited by how much you can observe. That means a globally consistent <em>anything</em> will be limited by the speed of light
+<ul>
+<li>Problematic for global (and potentially inter-planetary) communication</li>
+<li>Great thing about local-first is that you don&rsquo;t need to know anything about the other side of the world when doing stuff locally</li>
+</ul>
+</li>
+<li>What if&hellip; <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia-like</a> XOR distance metric but for <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a></li>
+<li>Permissionlessness is an important characteristic to enable innovation and <a href="/thoughts/emergent-behaviour" rel="noopener" class="internal-link" data-src="/thoughts/emergent-behaviour">emergent behaviour</a>
+<ul>
+<li>See also: 
+
+<a href="https://simonsarris.substack.com/p/welcome-ghosts" rel="noopener">Simon Harris on the same topic</a></li>
+<li>&ldquo;Many tales exist of [the origin of the bistro]. Some say it was working-class landlords opening their kitchens for extra income. Others say it was the Auvergnats, immigrating to Paris from what is today central-south France, who first worked as rag-pickers, then wood and coal sellers, then metalworkers, who created small working-class restaurants to supplement their income. Either way, it was not planned or engineered, but simply not-disallowed. There were no rules in place to stop this invention.&rdquo;</li>
+<li>Same with YouTube which started out as a dating app but then let people upload anything. The <em>users</em>, not the website creators, found its real uses</li>
+<li>Does this conflict with the fact that good DX/UX comes with strongly opinionated use cases?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <a href="#august-19th"><h3 id="august-19th"><span class="hanchor" ariaLabel="Anchor"># </span>August 19th</h3></a>
 <ul>
-<li>Packing and flying back to NY for HackLodge!</li>
+<li>Packing and flying back to NY for Hack Lodge! Will be posting an ongoing thought stream :))</li>
 </ul>
 <a href="#august-18th"><h3 id="august-18th"><span class="hanchor" ariaLabel="Anchor"># </span>August 18th</h3></a>
 <ul>
@@ -10103,7 +10704,7 @@ May 3, 2022
 <li>It feels like the attitude I&rsquo;m taking towards research is one of bumping around in the dark. For the most part its enjoyable and exhilarating, finding things out for the first time.
 <ul>
 <li>There&rsquo;s a certain joy to putting yourself in an environment where you can discover things for yourself. I can ask for help when I need it, but most of the time I&rsquo;m puttering along at my own pace.</li>
-<li>This is roughly what my self-satisfaction curve looks like for self-motivated exploration: <img src="/thoughts/images/self-exploration-satisfaction.jpeg" width="400" /></li>
+<li>This is roughly what my self-satisfaction curve looks like for self-motivated exploration:  <img src="/thoughts/images/self-exploration-satisfaction.jpeg" width="400" /></li>
 <li>This is usually fine, but when I look at it <em>instrumentally</em>, just from a perspective of how much I&rsquo;ve actually got done, I&rsquo;m a little disappointed in myself.</li>
 <li>I&rsquo;ve decided that I&rsquo;m okay with it. I&rsquo;m not trying to any% speedrun my work. I want to be able to enjoy research for what it is, to visit unexpected results and learn what I find intriguing about it.</li>
 </ul>
@@ -10277,7 +10878,7 @@ May 3, 2022
 
 <a href="https://www.patreon.com/posts/ratcheting-in-47976114" rel="noopener">Patreon post</a> by Andy Matuschak
 <ul>
-<li><em>Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in <em>The New ABCs of Research</em>. He calls it the “two parents, three children” pattern.</em>
+<li><em>Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in The New ABCs of Research. He calls it the “two parents, three children” pattern.</em>
 <img src="/thoughts/images/research project pattern.png" width="500" />
 <ul>
 <li>I&rsquo;ve been thinking more about how research seems to come in two layers
@@ -10648,7 +11249,7 @@ youtube:
 <ul>
 <li>Finally wrapped up school! Anson is headed back to Arizona today too :((
 <ul>
-<li>Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I&rsquo;m really glad I chose to prioritize relationship, truly some moments over the past month where I was like &ldquo;wow, is this real&rdquo;. It feels like I&rsquo;m selectively giving deep attention in-turn to the things I care most about.</li>
+<li>Living together has been a fun dance of trying to balance our energy levels, but felt very much like a team throughout. I&rsquo;m really glad I chose to prioritize relationship, truly some moments over the past month where I was like &ldquo;wow, is this real.&rdquo; It feels like I&rsquo;m selectively giving deep attention in-turn to the things I care most about.</li>
 <li>Now is the era to just fully focus my attention on research and this project though</li>
 </ul>
 </li>
@@ -11215,7 +11816,7 @@ youtube:
     <hr/>
 
 
-<div class="page-end">
+<div class="page-end" id="footer">
     <div class="backlinks-container">
         <h3>Backlinks</h3>
 <ul class="backlinks">
@@ -11308,8 +11909,13 @@ youtube:
 
 
 
+
+
+
 <div id="contact_buttons">
     <footer>
+        
+        
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
         <ul>
             
@@ -11321,5 +11927,4 @@ youtube:
 
 </div>
 </body>
-
 </html>

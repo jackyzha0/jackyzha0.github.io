@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
   
   <meta charset="UTF-8" />
@@ -56,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.20d42b17cb9edb3aa5644847edf23ef1.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.a9c503a3d2ad0056468513b68eb9c133.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -70,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -82,7 +85,7 @@
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
 
   
   
@@ -115,13 +118,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7736cd0e88ba4554bb5e13bf4ea2d0d4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -145,31 +148,33 @@
       
 
       
-
-      
-      const container = document.getElementById("graph-container")
-      
-      if (!container) return requestAnimationFrame(render)
-      
-      container.textContent = ""
-
-      const drawGlobal = isHome &&  false ;
-      drawGraph(
-          "https://jzhao.xyz",
-          drawGlobal,
-          [{"/moc":"#4388cc"}],
-          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
-        );
-
-      
-
-
+     
       
       initPopover(
         "https://jzhao.xyz",
          true ,
          true 
       )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
       
     }
 
@@ -215,7 +220,7 @@ if (!doNotTrack) {
 <div id="search-container">
   <div id="search-space">
     <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
-      placeholder="Search for something...">
+      placeholder="Search for something..." dir="">
     <div id="results-container">
     </div>
   </div>
@@ -267,10 +272,46 @@ if (!doNotTrack) {
             <div class="meta">
                 <h1><a href="https://jzhao.xyz/tags/seed/">Seed</a></h1>
                 <p>I tend to generally bookmark things for later then revisit them when I have time. These are collections of notes on articles, books, and readings. They are the seeds that form the basis of my ideas and thoughts.</p>
-                <p><b>312</b> notes with this tag (showing first 10 results)</p>
+                <p><b>313</b> notes with this tag (showing first 10 results)</p>
             </div>
             
             <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Mar 4, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/pain/" class="internal-link" data-src="/thoughts/pain/">Pain</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Aug 22, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Bluetooth/" class="internal-link" data-src="/thoughts/Bluetooth/">Bluetooth</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -279,7 +320,7 @@ Jun 7, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/DHT/">DHT</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/DHT/" class="internal-link" data-src="/thoughts/DHT/">DHT</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -297,7 +338,7 @@ Aug 16, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/r-K-Selection-theory/">r/K Selection theory</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/r-K-Selection-theory/" class="internal-link" data-src="/thoughts/r-K-Selection-theory/">r/K Selection theory</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -315,7 +356,7 @@ Aug 16, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/access-control/">Access control</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/access-control/" class="internal-link" data-src="/thoughts/access-control/">Access control</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -333,7 +374,7 @@ May 5, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/CRDT/" class="internal-link" data-src="/thoughts/CRDT/">Conflict-free Replicated Data Type (CRDT)</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -351,7 +392,7 @@ Jul 8, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Order-theory/">Order theory</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Order-theory/" class="internal-link" data-src="/thoughts/Order-theory/">Order theory</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -369,7 +410,7 @@ Jul 11, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRDT-Implementations/">CRDT Implementations</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/CRDT-Implementations/" class="internal-link" data-src="/thoughts/CRDT-Implementations/">CRDT Implementations</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -387,7 +428,7 @@ Mar 15, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Moderation/">Moderation</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Moderation/" class="internal-link" data-src="/thoughts/Moderation/">Moderation</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -405,43 +446,7 @@ Aug 13, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/disrupting-routine/">Disrupting routine</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Apr 26, 2022
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CAP-Theorem/">CAP Theorem</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 12, 2022
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/CRON-Theorem/">CRON Theorem</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/disrupting-routine/" class="internal-link" data-src="/thoughts/disrupting-routine/">Disrupting routine</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -464,12 +469,66 @@ Aug 12, 2022
         <div class="section">
             <p class="meta">
                 
+Jun 18, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/academia/" class="internal-link" data-src="/thoughts/academia/">Academia</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Feb 20, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/cozy-software/" class="internal-link" data-src="/thoughts/cozy-software/">Cozy software</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 7, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/writing/" class="internal-link" data-src="/thoughts/writing/">Writing</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Dec 10, 2021
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/tribe-flourishing/">Tribe Flourishing</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/tribe-flourishing/" class="internal-link" data-src="/thoughts/tribe-flourishing/">Tribe Flourishing</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -487,7 +546,7 @@ Jan 17, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/internet-computing/">Internet Computing</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/internet-computing/" class="internal-link" data-src="/thoughts/internet-computing/">Internet Computing</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -502,30 +561,12 @@ Jan 17, 2022
         <div class="section">
             <p class="meta">
                 
-Jun 18, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/academia/">Academia</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
 Dec 25, 2021
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/hedonic-treadmill/">Hedonic Treadmill</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/hedonic-treadmill/" class="internal-link" data-src="/thoughts/hedonic-treadmill/">Hedonic Treadmill</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -543,7 +584,7 @@ Oct 24, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/fiction/">Fiction</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/fiction/" class="internal-link" data-src="/thoughts/fiction/">Fiction</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -561,7 +602,7 @@ Aug 9, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/consensus/">Consensus</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/consensus/" class="internal-link" data-src="/thoughts/consensus/">Consensus</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -579,7 +620,7 @@ Oct 8, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/blockchain/">Blockchain</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/blockchain/" class="internal-link" data-src="/thoughts/blockchain/">Blockchain</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -597,43 +638,7 @@ Aug 9, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Weaving-the-Web/">Weaving the Web</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jul 25, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/interaction-design/">Interaction Design</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 30, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/tools-for-thought/">Tools for Thought</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Weaving-the-Web/" class="internal-link" data-src="/thoughts/Weaving-the-Web/">Weaving the Web</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -661,7 +666,7 @@ Aug 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/computer-networking/" class="internal-link" data-src="/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -681,7 +686,7 @@ Aug 7, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/react/">React in 30 minutes</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/react/" class="internal-link" data-src="/posts/react/">React in 30 minutes</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -701,7 +706,7 @@ Jul 22, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/networked-thought/">Networked Thought</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/networked-thought/" class="internal-link" data-src="/posts/networked-thought/">Networked Thought</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -719,7 +724,7 @@ Jul 14, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/towards-data-neutrality/">Towards Data Neutrality</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/towards-data-neutrality/" class="internal-link" data-src="/posts/towards-data-neutrality/">Towards Data Neutrality</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -739,7 +744,7 @@ Jul 16, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/digital-identity/">On Digital Identity</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/digital-identity/" class="internal-link" data-src="/posts/digital-identity/">On Digital Identity</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -759,7 +764,7 @@ May 8, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/context-collapse/">Framing and Context Collapse</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/context-collapse/" class="internal-link" data-src="/posts/context-collapse/">Framing and Context Collapse</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -777,7 +782,7 @@ Jun 29, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/open-source-and-politics/">Open Source and Politics</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/open-source-and-politics/" class="internal-link" data-src="/posts/open-source-and-politics/">Open Source and Politics</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -795,7 +800,7 @@ Jan 17, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/" class="internal-link" data-src="/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -817,7 +822,7 @@ Mar 20, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/nothing-stops/">Nothing stops</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/nothing-stops/" class="internal-link" data-src="/posts/nothing-stops/">Nothing stops</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -837,7 +842,7 @@ Apr 7, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/primacy-of-consciousness/">On Consciousness</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/primacy-of-consciousness/" class="internal-link" data-src="/posts/primacy-of-consciousness/">On Consciousness</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -867,7 +872,7 @@ Mar 11, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/the-Self/">The self</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/the-Self/" class="internal-link" data-src="/thoughts/the-Self/">The self</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -887,7 +892,7 @@ Feb 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/self-knowledge/">Self-knowledge</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/self-knowledge/" class="internal-link" data-src="/thoughts/self-knowledge/">Self-knowledge</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -909,7 +914,7 @@ Apr 7, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/primacy-of-consciousness/">On Consciousness</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/primacy-of-consciousness/" class="internal-link" data-src="/posts/primacy-of-consciousness/">On Consciousness</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -929,7 +934,7 @@ Aug 12, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/consciousness/">Consciousness</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/consciousness/" class="internal-link" data-src="/thoughts/consciousness/">Consciousness</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -949,7 +954,7 @@ Feb 1, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Knowledge-Argument/">Knowledge Argument</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Knowledge-Argument/" class="internal-link" data-src="/thoughts/Knowledge-Argument/">Knowledge Argument</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -971,7 +976,7 @@ Jan 12, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/philosophy-of-mind/">Philosophy of Mind</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/philosophy-of-mind/" class="internal-link" data-src="/thoughts/philosophy-of-mind/">Philosophy of Mind</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -991,7 +996,7 @@ Jan 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Materialism/">Materialism/Physicalism</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Materialism/" class="internal-link" data-src="/thoughts/Materialism/">Materialism/Physicalism</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1011,7 +1016,7 @@ Jan 28, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/philosophical-realism/">Philosophical Realism</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/philosophical-realism/" class="internal-link" data-src="/thoughts/philosophical-realism/">Philosophical Realism</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1031,7 +1036,7 @@ Feb 1, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/meditation/">Meditation</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/meditation/" class="internal-link" data-src="/thoughts/meditation/">Meditation</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1051,7 +1056,7 @@ Mar 4, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Stream-of-Consciousness/">Stream of Consciousness</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Stream-of-Consciousness/" class="internal-link" data-src="/thoughts/Stream-of-Consciousness/">Stream of Consciousness</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1081,7 +1086,7 @@ Feb 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/self-knowledge/">Self-knowledge</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/self-knowledge/" class="internal-link" data-src="/thoughts/self-knowledge/">Self-knowledge</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1103,7 +1108,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/hermeneutical-injustice/">Hermeneutical injustice</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/hermeneutical-injustice/" class="internal-link" data-src="/thoughts/hermeneutical-injustice/">Hermeneutical injustice</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1123,7 +1128,7 @@ Feb 1, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Knowledge-Argument/">Knowledge Argument</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Knowledge-Argument/" class="internal-link" data-src="/thoughts/Knowledge-Argument/">Knowledge Argument</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1145,7 +1150,7 @@ Feb 4, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/The-Dragon-and-the-bridge/">The Dragon and the Bridge</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/The-Dragon-and-the-bridge/" class="internal-link" data-src="/thoughts/The-Dragon-and-the-bridge/">The Dragon and the Bridge</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1165,7 +1170,7 @@ Jan 12, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Descartes-Meditations/">Descartes&#39; Meditations</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Descartes-Meditations/" class="internal-link" data-src="/thoughts/Descartes-Meditations/">Descartes&#39; Meditations</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1185,7 +1190,7 @@ Jan 28, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/indeterminant/">Indeterminacy</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/indeterminant/" class="internal-link" data-src="/thoughts/indeterminant/">Indeterminacy</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1205,7 +1210,7 @@ Apr 5, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/idealism/">Idealism</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/idealism/" class="internal-link" data-src="/thoughts/idealism/">Idealism</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1227,7 +1232,7 @@ Jan 12, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/The-Upanisads/">The Upanisads</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/The-Upanisads/" class="internal-link" data-src="/thoughts/The-Upanisads/">The Upanisads</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1247,7 +1252,7 @@ Jan 14, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Trust-as-Unquestioning-Attitude/">Trust as Unquestioning Attitude</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Trust-as-Unquestioning-Attitude/" class="internal-link" data-src="/thoughts/Trust-as-Unquestioning-Attitude/">Trust as Unquestioning Attitude</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1267,7 +1272,7 @@ Jan 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/epistemology/">Epistemology</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/epistemology/" class="internal-link" data-src="/thoughts/epistemology/">Epistemology</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1297,7 +1302,7 @@ Jan 17, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/internet-computing/">Internet Computing</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/internet-computing/" class="internal-link" data-src="/thoughts/internet-computing/">Internet Computing</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1317,7 +1322,7 @@ Mar 21, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/HTTP/">HTTP</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/HTTP/" class="internal-link" data-src="/thoughts/HTTP/">HTTP</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1337,7 +1342,7 @@ Mar 30, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/peer-to-peer/">Peer to peer</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/peer-to-peer/" class="internal-link" data-src="/thoughts/peer-to-peer/">Peer to peer</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1357,7 +1362,7 @@ Oct 14, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/security/">Security</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/security/" class="internal-link" data-src="/thoughts/security/">Security</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1377,7 +1382,7 @@ Apr 7, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/">Public-key Cryptography</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Asymmetric-Key-Cryptography/" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography/">Public-key Cryptography</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1397,7 +1402,7 @@ Feb 26, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/NAT/">NAT</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/NAT/" class="internal-link" data-src="/thoughts/NAT/">NAT</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1417,7 +1422,7 @@ Feb 26, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Network-Layer/">Network Layer (IP)</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Network-Layer/" class="internal-link" data-src="/thoughts/Network-Layer/">Network Layer (IP)</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1437,7 +1442,7 @@ Feb 26, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/IP-Addresses/">IP Addresses</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/IP-Addresses/" class="internal-link" data-src="/thoughts/IP-Addresses/">IP Addresses</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1457,7 +1462,7 @@ Feb 26, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/DNS/">DNS</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/DNS/" class="internal-link" data-src="/thoughts/DNS/">DNS</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1477,7 +1482,7 @@ Feb 26, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/VPN/">VPN</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/VPN/" class="internal-link" data-src="/thoughts/VPN/">VPN</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1495,7 +1500,7 @@ Feb 26, 2022
             <div class="meta">
                 <h1><a href="https://jzhao.xyz/tags/technical/">Technical</a></h1>
                 <p>Notes and blog posts on technical subjects. Though there are a lot of technical notes in this garden, these ones are generally ready for public consumption.</p>
-                <p><b>11</b> notes with this tag (showing first 10 results)</p>
+                <p><b>10</b> notes with this tag </p>
             </div>
             
             <ul class="section-ul"><li class="section-li">
@@ -1507,7 +1512,7 @@ Aug 18, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/computer-networking/" class="internal-link" data-src="/thoughts/computer-networking/">Intro to Computer Networking &amp; P2P</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1527,7 +1532,7 @@ Aug 7, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/react/">React in 30 minutes</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/react/" class="internal-link" data-src="/posts/react/">React in 30 minutes</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1542,32 +1547,12 @@ Aug 7, 2021
         <div class="section">
             <p class="meta">
                 
-Jun 17, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/idea-list/">Project Idea List</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
 Dec 27, 2021
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Projects/">Projects</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Projects/" class="internal-link" data-src="/thoughts/Projects/">Projects</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1587,7 +1572,7 @@ May 1, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Raft-Consensus-Algorithm/">Raft Consensus Algorithm</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Raft-Consensus-Algorithm/" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm/">Raft Consensus Algorithm</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1607,7 +1592,7 @@ Jul 24, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/NVIM-Cheatsheet/">NVIM Cheatsheet</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/NVIM-Cheatsheet/" class="internal-link" data-src="/thoughts/NVIM-Cheatsheet/">NVIM Cheatsheet</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1627,7 +1612,7 @@ Feb 21, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/functional-programming/">Functional Programming</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/functional-programming/" class="internal-link" data-src="/thoughts/functional-programming/">Functional Programming</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1647,7 +1632,7 @@ May 10, 2020
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/reflect/">reflect: NLP Model Explained</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/reflect/" class="internal-link" data-src="/posts/reflect/">reflect: NLP Model Explained</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1667,7 +1652,7 @@ Sep 15, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/computer-vision/">Computer Vision</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/computer-vision/" class="internal-link" data-src="/thoughts/computer-vision/">Computer Vision</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1687,7 +1672,27 @@ Jul 22, 2020
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/docker/">Docker Explained</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/docker/" class="internal-link" data-src="/posts/docker/">Docker Explained</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Apr 11, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/posts/ctrlv-next/" class="internal-link" data-src="/posts/ctrlv-next/">Rewriting ctrl-v using Next.js</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1712,12 +1717,30 @@ Jul 22, 2020
         <div class="section">
             <p class="meta">
                 
+Jun 17, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/idea-list/" class="internal-link" data-src="/thoughts/idea-list/">Idea List</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 May 3, 2022
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log/">Rhizome Research Log</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log/" class="internal-link" data-src="/thoughts/Rhizome-Research-Log/">Rhizome Research Log</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1737,7 +1760,7 @@ Mar 14, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Proposal/">Rhizome Proposal</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Proposal/" class="internal-link" data-src="/thoughts/Rhizome-Proposal/">Rhizome Proposal</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1752,32 +1775,12 @@ Mar 14, 2022
         <div class="section">
             <p class="meta">
                 
-Jun 17, 2021
-
-
-            </p>
-            <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/idea-list/">Project Idea List</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
 Dec 27, 2021
 
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Projects/">Projects</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Projects/" class="internal-link" data-src="/thoughts/Projects/">Projects</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1797,7 +1800,7 @@ Aug 9, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/">jzhao.xyz</a></h3>
+              <h3><a href="https://jzhao.xyz/" class="internal-link" data-src="/">jzhao.xyz</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1815,7 +1818,7 @@ Dec 28, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Experience/">Experience</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Experience/" class="internal-link" data-src="/thoughts/Experience/">Experience</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1835,7 +1838,7 @@ Aug 21, 2020
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/a-failure-resume/">A Failure Resume</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/a-failure-resume/" class="internal-link" data-src="/posts/a-failure-resume/">A Failure Resume</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1855,7 +1858,7 @@ Dec 15, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/quotes/">Quotes</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/quotes/" class="internal-link" data-src="/thoughts/quotes/">Quotes</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1883,7 +1886,7 @@ Dec 28, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Experience/">Experience</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Experience/" class="internal-link" data-src="/thoughts/Experience/">Experience</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1903,7 +1906,7 @@ Aug 21, 2020
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/a-failure-resume/">A Failure Resume</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/a-failure-resume/" class="internal-link" data-src="/posts/a-failure-resume/">A Failure Resume</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1923,7 +1926,7 @@ Jan 17, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/" class="internal-link" data-src="/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1945,7 +1948,7 @@ Dec 30, 2020
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/2020/">2020: An Imperfect Palindrome</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/2020/" class="internal-link" data-src="/posts/2020/">2020: An Imperfect Palindrome</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1965,7 +1968,7 @@ Dec 30, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/2021/">A Letter to my Past and Future selves</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/2021/" class="internal-link" data-src="/posts/2021/">A Letter to my Past and Future selves</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1985,7 +1988,7 @@ Aug 30, 2019
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/hootsuite/">Interning at Hootsuite in Highschool</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/hootsuite/" class="internal-link" data-src="/posts/hootsuite/">Interning at Hootsuite in Highschool</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2015,7 +2018,7 @@ May 3, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log/">Rhizome Research Log</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log/" class="internal-link" data-src="/thoughts/Rhizome-Research-Log/">Rhizome Research Log</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2035,7 +2038,7 @@ Mar 14, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Proposal/">Rhizome Proposal</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Proposal/" class="internal-link" data-src="/thoughts/Rhizome-Proposal/">Rhizome Proposal</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2055,7 +2058,7 @@ Jul 14, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/towards-data-neutrality/">Towards Data Neutrality</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/towards-data-neutrality/" class="internal-link" data-src="/posts/towards-data-neutrality/">Towards Data Neutrality</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2075,7 +2078,7 @@ Jul 16, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/digital-identity/">On Digital Identity</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/digital-identity/" class="internal-link" data-src="/posts/digital-identity/">On Digital Identity</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2095,7 +2098,7 @@ Apr 28, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Specification/">Rhizome Specification</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Specification/" class="internal-link" data-src="/thoughts/Rhizome-Specification/">Rhizome Specification</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2115,7 +2118,7 @@ May 6, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Philosophy/">Rhizome Philosophy</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Rhizome-Philosophy/" class="internal-link" data-src="/thoughts/Rhizome-Philosophy/">Rhizome Philosophy</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2145,7 +2148,7 @@ Jan 17, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/me-myselves-and-i/" class="internal-link" data-src="/posts/me-myselves-and-i/">Me, my selves, and I</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2167,7 +2170,7 @@ Mar 20, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/nothing-stops/">Nothing stops</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/nothing-stops/" class="internal-link" data-src="/posts/nothing-stops/">Nothing stops</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2187,7 +2190,7 @@ Jun 8, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/posts/casual-magic/">Casual Magic</a></h3>
+              <h3><a href="https://jzhao.xyz/posts/casual-magic/" class="internal-link" data-src="/posts/casual-magic/">Casual Magic</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2207,7 +2210,7 @@ Jun 22, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Hold-the-Fries/">Hold the Fries</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Hold-the-Fries/" class="internal-link" data-src="/thoughts/Hold-the-Fries/">Hold the Fries</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2227,7 +2230,7 @@ May 30, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/The-Secret-Life-of-Books/">The Secret Life of Books</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/The-Secret-Life-of-Books/" class="internal-link" data-src="/thoughts/The-Secret-Life-of-Books/">The Secret Life of Books</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2247,7 +2250,7 @@ Feb 19, 2022
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Indras-Paradox/">Indra&#39;s Paradox</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Indras-Paradox/" class="internal-link" data-src="/thoughts/Indras-Paradox/">Indra&#39;s Paradox</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2265,8 +2268,13 @@ Feb 19, 2022
         </div>
     </article>
     
+
+
+
 <div id="contact_buttons">
     <footer>
+        
+        
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
         <ul>
             
@@ -2277,5 +2285,4 @@ Feb 19, 2022
 
 </div>
 </body>
-
 </html>

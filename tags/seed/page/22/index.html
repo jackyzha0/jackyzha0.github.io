@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
   
   <meta charset="UTF-8" />
@@ -56,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.20d42b17cb9edb3aa5644847edf23ef1.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.a9c503a3d2ad0056468513b68eb9c133.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -70,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.39f53d45cb9520bdaf946bd063598b19.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -82,7 +85,7 @@
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.37b1455b8f0603154072b9467132c659.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
 
   
   
@@ -115,13 +118,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ea24714906f74c941374dca065986696.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7736cd0e88ba4554bb5e13bf4ea2d0d4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -145,31 +148,33 @@
       
 
       
-
-      
-      const container = document.getElementById("graph-container")
-      
-      if (!container) return requestAnimationFrame(render)
-      
-      container.textContent = ""
-
-      const drawGlobal = isHome &&  false ;
-      drawGraph(
-          "https://jzhao.xyz",
-          drawGlobal,
-          [{"/moc":"#4388cc"}],
-          drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
-        );
-
-      
-
-
+     
       
       initPopover(
         "https://jzhao.xyz",
          true ,
          true 
       )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
       
     }
 
@@ -215,7 +220,7 @@ if (!doNotTrack) {
 <div id="search-container">
   <div id="search-space">
     <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
-      placeholder="Search for something...">
+      placeholder="Search for something..." dir="">
     <div id="results-container">
     </div>
   </div>
@@ -274,7 +279,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/connectionist-networks/">Connectionist networks</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/colour/" class="internal-link" data-src="/thoughts/colour/">Colour</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -292,7 +297,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/constructionist/">Constructionism</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/connectionist-networks/" class="internal-link" data-src="/thoughts/connectionist-networks/">Connectionist networks</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -310,7 +315,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/crutch-and-shoe-metaphor/">Crutch and Shoe metaphor</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/constructionist/" class="internal-link" data-src="/thoughts/constructionist/">Constructionism</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -328,7 +333,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Goodharts-Law/">Goodhart&#39;s Law</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/crutch-and-shoe-metaphor/" class="internal-link" data-src="/thoughts/crutch-and-shoe-metaphor/">Crutch and Shoe metaphor</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -346,7 +351,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/information-foraging/">Information Foraging</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Goodharts-Law/" class="internal-link" data-src="/thoughts/Goodharts-Law/">Goodhart&#39;s Law</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -364,7 +369,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/interpretive-labour/">Interpretive Labour</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/information-foraging/" class="internal-link" data-src="/thoughts/information-foraging/">Information Foraging</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -382,7 +387,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/philosophy-of-science/">Philosophy of science</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/interpretive-labour/" class="internal-link" data-src="/thoughts/interpretive-labour/">Interpretive Labour</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -400,7 +405,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Platos-Ship-of-State/">Plato&#39;s Ship of State</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/philosophy-of-science/" class="internal-link" data-src="/thoughts/philosophy-of-science/">Philosophy of science</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -418,7 +423,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Putnams-Ant-Argument/">Putnam&#39;s Ant Argument</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Platos-Ship-of-State/" class="internal-link" data-src="/thoughts/Platos-Ship-of-State/">Plato&#39;s Ship of State</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -436,7 +441,7 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
-                <h3><a href="https://jzhao.xyz/thoughts/Chinese-room-argument/">Searle&#39;s Chinese room argument</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/Putnams-Ant-Argument/" class="internal-link" data-src="/thoughts/Putnams-Ant-Argument/">Putnam&#39;s Ant Argument</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -479,8 +484,13 @@ Dec 25, 2021
     </ul>
     </article>
     
+
+
+
 <div id="contact_buttons">
     <footer>
+        
+        
         <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
         <ul>
             
@@ -491,5 +501,4 @@ Dec 25, 2021
 
 </div>
 </body>
-
 </html>

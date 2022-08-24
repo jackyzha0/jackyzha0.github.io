@@ -6,7 +6,18 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bluetooth</title>
+      <link>https://jzhao.xyz/thoughts/Bluetooth/</link>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Bluetooth/</guid>
+      <description>![[thoughts/images/BLE communication workflow.png]]
+Classes:
+ CBCentralManager &amp;amp; CBCentralManagerDelegate  Are responsible to check that Bluetooth is ON and then to scan, discover, connect, and manage peripherals.</description>
+    </item>
+    
     <item>
       <title>Intro to Computer Networking &amp; P2P</title>
       <link>https://jzhao.xyz/thoughts/computer-networking/</link>
@@ -4302,12 +4313,12 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
     </item>
     
     <item>
-      <title>Project Idea List</title>
+      <title>Idea List</title>
       <link>https://jzhao.xyz/thoughts/idea-list/</link>
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>recreate barcode battler but irl IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
+      <description>Technical  recreate barcode battler but irl IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
     </item>
     
     <item>
