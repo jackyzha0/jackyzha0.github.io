@@ -115,5 +115,5 @@ The application-level event log management and collaboration
 You can find the ongoing [[thoughts/Rhizome Research Log|research log here]].
 
 ## Acknowledgements
-Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for your continued support. This project wouldn't be possible without all of you :))
+Thank you to Anson Yu, Spencer Chang, Sebastien Zany, Jamie Wang, Raymond Zhong, Vincent Huang, Justin Glibert, Morgan Gallant, Ryan Johnson, David Zhou, Aadil Ali, JZ, Nishant Medicharla, Anh Pham, Farzaa Majeed, Amir Bolous, Aaron Pham, Rishi Kothari, Jasmine Sun, and Athena Leong for your continued support. This project wouldn't be possible without all of you.
 

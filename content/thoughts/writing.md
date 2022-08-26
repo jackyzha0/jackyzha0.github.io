@@ -21,6 +21,8 @@ It is the contribution of the radical intellectual, a sort of gift and offering.
 
 > One obvious role for a radical intellectual is to do precisely that: to look at those who are creating viable alternatives, try to figure out what might be the larger implications of what they are (already) doing, and then offer those ideas back, not as prescriptions, but as contributions, possibilities — as gifts [...] Such a project would have to have two aspects: one ethnographic, one utopian, suspended in a [constant dialogue](https://kernel.community/en/learn/module-0/conversation/#old-gifts-anew).
 
+Writing is a form of autonomous knowledge, something that is [[thoughts/autopoiesis|autopoetic]], self-contained, and self-spreading.
+
 See also: [[thoughts/idea list#Writing|writing idea list]]
 
 ## Art
