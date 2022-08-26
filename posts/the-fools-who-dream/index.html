@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Alternatively: A hitchhiker&rsquo;s guide to independent research
+![[thoughts/images/IMG_2146.jpg]]
+ Here&rsquo;s to the ones who dream
+Foolish as they may seem"
+  />
+  <title>
+    Here&#39;s to the fools who dream
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.a9c503a3d2ad0056468513b68eb9c133.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.604032f41253185862df105bedb983db.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e3aef74a6100b114948ad41555b89eef.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Here&#39;s to the fools who dream</h1>
+      <p class="meta">
+        Last updated 
+Aug 21, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/posts/the-fools-who-dream.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+<p><em>Alternatively: A hitchhiker&rsquo;s guide to independent research</em></p>
+<p><img src="/thoughts/images/IMG_2146.jpg" width="auto" /></p>
+<blockquote>
+<p><em>Here&rsquo;s to the ones who dream</em><br>
+<em>Foolish as they may seem</em></p>
+<p>La La Land - &ldquo;Audition (the fools who dream)&rdquo;</p>
+</blockquote>
+<p>A year ago, I wrote myself a <a href="/posts/2021" rel="noopener" class="internal-link" data-src="/posts/2021">letter</a>. In it, I told myself that if I ever found an idea I had high conviction in, I would drop everything to give it a fair shot. I hoped that I would be ambitious in my dreams and to embody a 
+
+<a href="https://www.spencerchang.me/experiments/100posts/quiet-confidence/" rel="noopener">quiet confidence</a> in my own abilities and interests.</p>
+<p><a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a> turned out to be project that would let me do all of that. I spent this past summer doing independent research focused on how we can enable <a href="/posts/towards-data-neutrality" rel="noopener" class="internal-link" data-src="/posts/towards-data-neutrality">data neutrality</a> on a web dominated by data moats. I had no academic research experience, barely knew anything about distributed systems, and didn&rsquo;t personally know anyone else doing independent research. At the time, I had no idea this was even <em>called</em> independent research.</p>
+<p>I&rsquo;m not sure what about it drew me in exactly. The project started out with a smattering of thoughts around peer-to-peer networking and what I found frustrating about it. Yet, the project took up latent headspace, simmering away quietly only to surface mid-scrub in the shower or on a walk to the bus stop.</p>
+<p>I knew that &lsquo;good&rsquo; research practice usually involved writing a detailed research statement or proposal to present exactly what one would work on. I also knew that I had no clue how I would manifest the stirring pot of concepts into something legible. I spent the months leading up to summer bumping around in the dark, trying to phrase and form what exactly about this interested me so much. In my head it felt clear, but each time I tried to force those ideas through my fingers and onto the page they seemed to flit away and vanish, refusing to be expressing any precise form.</p>
+<p>At the time this felt like useless floundering. After all, what kind of researcher doesn&rsquo;t even know what they&rsquo;re researching?  Later on, I would find that this floundering was sense-making hard at work. Researching to figure out what you are researching&hellip; is still research. There is a certain amount of looking around and orienting yourself you need to do before you know what direction to head. I spent hours cautiously broaching the idea with friends over late night transit rides home. In most of those conversations, my friends nodded blankly, happy to see me obviously deeply invested into an idea but not really understanding what I was blabbing on about.</p>
+<p>In these early days, I was often dejected. I felt incredibly foolish for pursuing something I had absolutely no reason to be so deeply invested in, and I felt foolish that I couldn&rsquo;t explain <em>why</em> it felt so compelling to me. I felt terrible about my inability to get any grant money to sustainably work on this project. I felt a deep need to <em>prove myself</em>. Maybe it was to prove to myself that I wasn&rsquo;t wasting my time. Maybe it was to prove to others around me that I was doing something just as valid as their internships, startups, or academic research.</p>
+<p>Over the span of a month period, I had 3 separate emotional breakdowns</p>
+<ol>
+<li>On May 11th: &ldquo;I can&rsquo;t help but sometimes feel like I&rsquo;m wasting my time &ndash; there are so many smart people working on the same problem, what makes me feel like I can be the one to make a meaningful contribution to it?&rdquo;</li>
+<li>On May 16th: &ldquo;I&rsquo;m often spending 12+ hour days writing grants and I just feel so behind. And I don&rsquo;t get why!!!! I&rsquo;ve been looking forward to this summer for so long.&rdquo;</li>
+<li>On May 27th: &ldquo;Once again had a breakdown :)) Constantly feel like I&rsquo;m not doing enough and that time is slipping between my fingertips&hellip;&rdquo;</li>
+</ol>
+<p>I was in the middle of the midwit bellcurve. When I started with the project, I had a healthy dose of naivete, a belief that <em>anyone</em> could make a change and make their project work if they tried hard enough. But now, I started to believe that hard things are hard for a reason; I should leave hard problems to people who are actually skilled and have spent decades of their lives working on these problems. Who was I to think that I, an undergrad student who had still yet to take a distributed system course, would be able to contribute anything meaningful to this decades-old field?</p>
+<p>In mid-conversation with someone who&rsquo;s opinion I cared deeply about, I realized that I strongly needed to figure out how to untie my self-worth from my project.</p>
+<p>Midsummer, on a whim, I picked up Annie Dillard&rsquo;s <em><a href="/thoughts/The-Writing-Life" rel="noopener" class="internal-link" data-src="/thoughts/The-Writing-Life">The Writing Life</a></em>  from a local bookstore and read it cover to cover. In it, she mentions that the greatest teacher of writing is the blank page.</p>
+<blockquote>
+<p>Who will teach me to write? a reader wanted to know.</p>
+<p>The page, the page, that eternal blankness, the blankness of eternity which you cover slowly, affirming time’s scrawl as a right and your daring as necessity; the page, which you cover woodenly, ruining it, but asserting your freedom and power to act, acknowledging that you ruin everything you touch but touching it nevertheless, because acting is better than being here in mere opacity; the page, which you cover slowly with the crabbed thread of your gut; the page in the purity of its possibilities; the page of your death, against which you pit such flawed excellences as you can muster with all your life’s strength: that page will teach you to write.</p>
+</blockquote>
+<p>I think it was this lone paragraph that was the turning point where I started to believe that this applied to my work too.</p>
+<p>To do independent research is to learn how to confront the infinite possibility of a blank canvas. To not be intimidated by the possibility of making a fool of yourself, but to embrace the courage to even put brush to canvas, pen to paper. <strong>To assert your freedom and power to act.</strong></p>
+<p>The midwit would think it truly silly to try and change something as entrenched in our society as the very computing fabric we tap into everyday. But those who do not submit to this status quo recognize there is merit to trying regardless. Octavia E. Butler gestures to this tension between optimism and pessimism, and the possibility of actually breaking through to something new:</p>
+<blockquote>
+<p><em>There is nothing new</em></p>
+<p><em>under the sun,</em></p>
+<p><em>but there are new suns.</em></p>
+<p>&ndash; Octavia E. Butler, <em>Trickster</em></p>
+</blockquote>
+<p>The less beaten path is often less beaten for a reason. But if it feels right to take it &ndash; pushing aside the debris and brush and walk the trail because something, a bird or perhaps a ray of light, caught your eye &ndash; then take it.</p>
+<p>This realization dawned on me slowly for me over the span of about a month. I wasn&rsquo;t pursuing it because society deemed my research useful or that I knew it would eventually make me heaps of money or make me incredibly famous. At the end of the day, it was enough that this research is something that I <em>wanted</em> to spend time pursuing.</p>
+<p><img src="/posts/images/play/agency.png" width="auto" /></p>
+<blockquote>
+<p>People will impose their limiting beliefs onto your world because it’s what governs theirs. They will tell you to stay in something you want to leave, will tell you to keep pushing toward something that feels wrong, feels misaligned. You always have a choice. You can yield to expectation, pessimism, set structures, or [you can take the other path].</p>
+<p>&ndash; Nicole, 
+
+<a href="https://nicoles.substack.com/p/internal-confidence" rel="noopener"><em>internal confidence</em></a></p>
+</blockquote>
+<p>I didn&rsquo;t need to prove to anyone that what I painted on this metaphorical canvas was &lsquo;worth&rsquo; the space that it took up. Instead of claiming to be some sort of expert who had all the requisite skills and knowledge, I began to see myself as an explorer, excited to share what I found with others. I let more people in to see what I was working on because I was excited to share what I found rather than afraid of what they thought of what I knew.</p>
+<p>In early June, I had my first call with people who were as equally excited about the idea as I was. I saw seasoned veterans who have worked decades on related problems ask careful questions and gave my ideas serious consideration.  These people who I had thought would likely shun or ridicule my pursuit turned instead to close collaborators and thought partners. This was refreshing. I was no longer pursuing it alone but also sharing this vision with others, seeing their eyes light up at the potential or future of it.</p>
+<p>I found it invaluable to surround myself with people like this. I lived with others who were also incredibly intellectually curious about the world. They would ask &ldquo;tell me more&rdquo; instead of offering blank stares of ambivalence. Their close consideration and generous imagination enabled my work to truly blossom.</p>
+<hr>
+<p>When people ask about where I am working this summer, I often laugh and reply &ldquo;I&rsquo;m &lsquo;funemployed&rsquo;! But  what I&rsquo;m <em>really</em> doing is independent research.&rdquo;</p>
+<p>Nine times out of ten, the follow up question they ask is &ldquo;With who?&rdquo; Usually, I laugh again and say that &ldquo;that&rsquo;s the fun part about independent research, I get to do it on my own!&rdquo;</p>
+<p>What I often find gets confusing for people is that <strong>independent research doesn&rsquo;t mean I do it by myself</strong>. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they <em>actually</em> want to do with their life. Neither leaves space for individual sense-making.</p>
+<p>Every few months, I&rsquo;ll get an email or two along the lines of: &ldquo;Help, I&rsquo;m stuck in Leetcode hell, how do I escape and do other things?&rdquo; I love these emails because I know these are people who have started that introspection process, an internal questioning of &ldquo;what do I <em>actually</em> care about and why?&rdquo; and are looking for containers and institutions for their work.</p>
+<p>Sooner or later, that line of questioning leads to a question of hypothetical <a href="/thoughts/utopia" rel="noopener" class="internal-link" data-src="/thoughts/utopia">utopia</a>. In a world where you don&rsquo;t need to work to stay alive, what would you do? What gives you excitement and joy? Completely ignoring what other people tell you is useful or good, what do you find intrinsically beautiful and good to do in the world?</p>
+<p>To most, the answer as to what they want is clear but the difficult question is <em>how</em>. Having dreams and working to make them a reality is a privilege in this world. I truly think it’s one of the greatest gifts of life but unfortunately not a gift very many get to have.</p>
+<p>How might we create spaces for abundance so that more people have this sort of privilege? Édouard Glissant&rsquo;s <em><a href="/thoughts/Archipelago" rel="noopener" class="internal-link" data-src="/thoughts/Archipelago">Archipelago</a></em> gives a glimpse into a &ldquo;future [which] lies not with the great powers, but with the little islands, lands, and cities.&rdquo; Not all research needs to happen within the monolithic institutions in <a href="/thoughts/academia" rel="noopener" class="internal-link" data-src="/thoughts/academia">academia</a> or profit-hungry companies. Perhaps the next generation of innovation and discoveries that advance society will be made through <a href="/thoughts/tribe-flourishing" rel="noopener" class="internal-link" data-src="/thoughts/tribe-flourishing">small squads</a> banding together to build things, live together, and create something more intricate, comprehensive, and wonderful than any one individual could have achieved on their own.</p>
+<blockquote>
+<p>Benjamin Franklin had the Junto Club, Tolkien and C.S. Lewis had The Inklings, Jobs and Wozniak had Homebrew. The Bloomsbury Group was integral to the success of Virginia Woolf, Clive Bell, and John Maynard Keynes, while MIT’s Model Railroad Club spawned much of modern hacker culture.</p>
+<p>&ndash; James Mulholland, <em>
+
+<a href="https://jmulholland.com/small-group/" rel="noopener">Small Group</a></em></p>
+</blockquote>
+<hr>
+<p>To those who don&rsquo;t take this path, parents included, what I&rsquo;m doing seems a little foolish. But that&rsquo;s not necessarily a bad thing. The fool is often characterized as naive, a beggar, a hedonist.</p>
+<p><img src="/thoughts/images/the fool.png" width="200" /></p>
+<p>But the fool also has qualities I think more people should have. The fool is the <a href="/thoughts/Jestermaxxing" rel="noopener" class="internal-link" data-src="/thoughts/Jestermaxxing">jester</a>, daring to challenge what other people wouldn&rsquo;t. The fool is the blazer of new trails, happily taking the less beaten path because he does not know better.</p>
+<p>The fool is the one who does things because they think it is worth doing, not for coin or status. And that, I think is truly special. I leave this as an invitation to you. Be a little foolish. Come dream a little.</p>
+<blockquote>
+<p>She told me<br>
+&ldquo;A bit of madness is key<br>
+To give us new colors to see<br>
+Who knows where it will lead us?<br>
+And that&rsquo;s why they need us&rdquo;</p>
+</blockquote>
+<hr>
+<a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
+<p>It is with the generosity of my sponsors of GitHub, close friends, and you, kind reader, that I&rsquo;m able to continue to do this type of work.</p>
+<p>Thank you to Anson Yu, Spencer Chang, Sebastien Zany, Jamie Wang, Raymond Zhong, Vincent Huang, Justin Glibert, Morgan Gallant, Ryan Johnson, David Zhou, Aadil Ali, JZ, Nishant Medicharla, Anh Pham, Farzaa Majeed, Amir Bolous, Aaron Pham, Rishi Kothari, Jasmine Sun, and Athena Leong for your continued support. This project wouldn&rsquo;t be possible without all of you.</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="this blog post" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

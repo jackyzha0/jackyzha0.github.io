@@ -119,13 +119,13 @@ Sometimes called a remote function call, it is a call to a function whose implem
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.604032f41253185862df105bedb983db.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e3aef74a6100b114948ad41555b89eef.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

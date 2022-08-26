@@ -118,13 +118,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.604032f41253185862df105bedb983db.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e3aef74a6100b114948ad41555b89eef.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -755,7 +755,7 @@ Mar 14, 2022
 <hr>
 <p>You can find the ongoing <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log here</a>.</p>
 <a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
-<p>Thank you to Anson, Sebastien, Jamie, Raymond, Morgan, David, Aadil, JZ, Nishant, Anh, Farzaa, Amir, Aaron, Spencer, Rishi, Jasmine, and Pranav for your continued support. This project wouldn&rsquo;t be possible without all of you :))</p>
+<p>Thank you to Anson Yu, Spencer Chang, Sebastien Zany, Jamie Wang, Raymond Zhong, Vincent Huang, Justin Glibert, Morgan Gallant, Ryan Johnson, David Zhou, Aadil Ali, JZ, Nishant Medicharla, Anh Pham, Farzaa Majeed, Amir Bolous, Aaron Pham, Rishi Kothari, Jasmine Sun, and Athena Leong for your continued support. This project wouldn&rsquo;t be possible without all of you.</p>
 
 
     </article>
@@ -825,8 +825,18 @@ Mar 14, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/" data-ctx="data" data-src="/" class="internal-link">jzhao.xyz</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/posts/the-fools-who-dream/" data-ctx="Rhizome" data-src="/posts/the-fools-who-dream" class="internal-link">Here&#39;s to the fools who dream</a>
       </li>
       
       

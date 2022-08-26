@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b29f53e5658e0d0e14c49060fdd612a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.604032f41253185862df105bedb983db.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d849371524c8b0b7af8dc44812722e68.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e3aef74a6100b114948ad41555b89eef.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -275,6 +275,26 @@ if (!doNotTrack) {
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/posts/the-fools-who-dream/">Here&#39;s to the fools who dream</a></h3>
+                            </div>
+                            <p class="meta">
+                            2204 words on 
+Aug 21, 2022
+
+ 
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/posts/digital-identity/">On Digital Identity</a></h3>
                             </div>
                             <p class="meta">
@@ -316,28 +336,8 @@ Jul 14, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/posts/open-source-and-politics/">Open Source and Politics</a></h3>
-                            </div>
-                            <p class="meta">
-                            4179 words on 
-Jun 29, 2022
-
- 
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/posts">See 22 more →</a>
+                <a href="/posts">See 23 more →</a>
             </div>
             <div class="delay t-4">
                 <h2>Recent Notes</h2>
