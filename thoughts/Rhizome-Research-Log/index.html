@@ -118,13 +118,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.604032f41253185862df105bedb983db.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.5530a6126dabd9ba5c94a184f9a0cb84.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.df229ac332c5983397fe1cb8c0da9e55.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d7a920bbe1ece8912b0b5b95ae8cb6c2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -299,6 +299,154 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -10393,6 +10541,30 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#august"><h2 id="august"><span class="hanchor" ariaLabel="Anchor"># </span>August</h2></a>
+<a href="#august-30th"><h3 id="august-30th"><span class="hanchor" ariaLabel="Anchor"># </span>August 30th</h3></a>
+<ul>
+<li>
+
+<a href="https://stopa.io/post/296" rel="noopener">A Graph-Based Firebase</a>
+<ul>
+<li>Turns out most modern real-time applications look something like this:<img src="/thoughts/images/modern-app-architecture.png" width="auto" /></li>
+<li>SQL seems to be too complex. The common request for data in front end is a complex case to express to SQL. &ldquo;We shouldn’t need advanced features for common cases.&rdquo;
+<ul>
+<li>The most common query is our “fetch nested relations”. This should be supported first class</li>
+</ul>
+</li>
+<li>We can potentially emulate this using triple stores built on top of an append-only CRDT. Datalog and triple stores have been around for decades. This also means that people have built reactive implementations.</li>
+<li>Unsure if we can leverage <a href="/thoughts/CALM-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/CALM-Theorem">CALM</a> as its Datalog but <em>not</em> monotonic (facts can be retracted)</li>
+</ul>
+</li>
+<li>DAG instead of append-only log
+<ul>
+<li>&ldquo;Both of these abilities follow directly from the explicit embedding of causality into a DAG, with time travel being analogous to a traversal over that graph&rdquo; 
+
+<a href="https://fission.codes/blog/fission-reactor-dialog-first-look/" rel="noopener">Dialog</a></li>
+</ul>
+</li>
+</ul>
 <a href="#august-23rd"><h3 id="august-23rd"><span class="hanchor" ariaLabel="Anchor"># </span>August 23rd</h3></a>
 <ul>
 <li>Phillip Wang&rsquo;s talk &ndash; related to <a href="/posts/the-fools-who-dream" rel="noopener" class="internal-link" data-src="/posts/the-fools-who-dream">reflection post</a>
