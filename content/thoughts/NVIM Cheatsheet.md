@@ -18,10 +18,10 @@ tags:
 	- `" or '` - quoted string
 
 ## Mappings
-- `<enter>` - leave insert mode
+- `<Ctrl>c` - leave insert mode
 - `<leader>o` - find files
 - `<leader>g` - live grep
-- `ff` - format file
+- `<leader>f` - format file
 - `f` - hop by 2 chars
 - `<ctrl+/>` - comment line or block
 - Window Navigation

@@ -9,6 +9,16 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 30th
+- [A Graph-Based Firebase](https://stopa.io/post/296)
+	- Turns out most modern real-time applications look something like this:![[thoughts/images/modern-app-architecture.png]]
+	- SQL seems to be too complex. The common request for data in front end is a complex case to express to SQL. "We shouldn’t need advanced features for common cases."
+		- The most common query is our “fetch nested relations”. This should be supported first class
+	- We can potentially emulate this using triple stores built on top of an append-only CRDT. Datalog and triple stores have been around for decades. This also means that people have built reactive implementations.
+	- Unsure if we can leverage [[thoughts/CALM Theorem|CALM]] as its Datalog but *not* monotonic (facts can be retracted)
+- DAG instead of append-only log
+	- "Both of these abilities follow directly from the explicit embedding of causality into a DAG, with time travel being analogous to a traversal over that graph" [Dialog](https://fission.codes/blog/fission-reactor-dialog-first-look/)
+
 ### August 23rd
 - Phillip Wang's talk -- related to [[posts/the-fools-who-dream|reflection post]]
 	- tldr; We should leave space in our lives for finding conviction in things we work on
