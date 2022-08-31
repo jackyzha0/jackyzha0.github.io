@@ -6,12 +6,18 @@ tags:
 - rhizome
 ---
 
-*Alternatively: A hitchhiker's guide to independent research*
-
 ![[thoughts/images/IMG_2146.jpg]]
+
+*Alternatively: A hitchhiker's guide to independent research*
 
 > *Here's to the ones who dream*  
 > *Foolish as they may seem*  
+> 
+> *She told me*  
+> *"A bit of madness is key*  
+> *To give us new colors to see*  
+> *Who knows where it will lead us?*  
+> *And that's why they need us"*
 > 
 > La La Land - "Audition (the fools who dream)"
 
@@ -94,23 +100,21 @@ How might we create spaces for abundance so that more people have this sort of p
 
 ---
 
-To those who don't take this path, parents included, what I'm doing seems a little foolish. But that's not necessarily a bad thing. The fool is often characterized as naive, a beggar, a hedonist.
+To those who don't take this path -- parents included -- what I'm doing seems a little foolish. But that's not necessarily a bad thing. The fool is often characterized as naive, a beggar, a hedonist. But the fool is also many other things that more people should be.
+
+The fool is the [[thoughts/Jestermaxxing|jester]], daring to challenge what other people wouldn't. The fool is the blazer of new trails, happily taking the less beaten path because he does not know better. The fool is the one who does things because they think it is worth doing, not for coin or status. 
 
 ![[thoughts/images/the fool.png|200]]
 
-But the fool also has qualities I think more people should have. The fool is the [[thoughts/Jestermaxxing|jester]], daring to challenge what other people wouldn't. The fool is the blazer of new trails, happily taking the less beaten path because he does not know better.
+I leave this as an invitation to you. Ask yourself: "what do you *really* want?" Be honest with yourself. Get your hopes up a little bit; let yourself be a little foolish.
 
-The fool is the one who does things because they think it is worth doing, not for coin or status. And that, I think is truly special. I leave this as an invitation to you. Be a little foolish. Come dream a little.
-
-> She told me  
-> "A bit of madness is key  
-> To give us new colors to see  
-> Who knows where it will lead us?  
-> And that's why they need us"
+> I know I'm naive; I'm a dreamer. But maybe we should get our hopes up for things sometimes. Maybe we shouldn't dampen how we feel to avoid the possibility of disappointment. Maybe we should hope for and demand everything—ask for the world, the stars, and the ever-expanding universe for ourselves. Maybe naïveté is how we keep imagining in vivid colors, connecting with rich feelings, dreaming of diverse characters.
+> 
+> -- Spencer Chang, *[quarter life commitment](https://spencerchang.substack.com/p/quarter-life-commitment?s=r)*
 
 ---
 
 ## Acknowledgements
 It is with the generosity of my sponsors of GitHub, close friends, and you, kind reader, that I'm able to continue to do this type of work.
 
-Thank you to Anson Yu, Spencer Chang, Sebastien Zany, Jamie Wang, Raymond Zhong, Vincent Huang, Justin Glibert, Morgan Gallant, Ryan Johnson, David Zhou, Aadil Ali, JZ, Nishant Medicharla, Anh Pham, Farzaa Majeed, Amir Bolous, Aaron Pham, Rishi Kothari, Jasmine Sun, and Athena Leong for your continued support. This project wouldn't be possible without all of you.
+Thank you to Anson Yu, Spencer Chang, Sebastien Zany, Jamie Wang, Raymond Zhong, Vincent Huang, Justin Glibert, Morgan Gallant, Ryan Johnson, David Zhou, Aadil Ali, JZ, Nishant Medicharla, Anh Pham, Farzaa Majeed, Amir Bolous, Aaron Pham, Rishi Kothari, Jasmine Sun, and Athena Leong for your continued support. This independent research wouldn't be possible without all of you.

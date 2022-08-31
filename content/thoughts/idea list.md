@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- calvin and hobbes semantic image search
 - recreate barcode battler but irl
 - IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
