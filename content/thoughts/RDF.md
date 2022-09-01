@@ -3,6 +3,8 @@ title: "RDF"
 date: 2022-06-09
 tags:
 - seed
+aliases:
+- triple store
 ---
 
 > RDF is a standard model for data interchange on the Web
