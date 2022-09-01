@@ -119,13 +119,13 @@ Guess Culture  High social cost in asking for things  Often guess at the reactio
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.5530a6126dabd9ba5c94a184f9a0cb84.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.67f4df3677cf5c36ef22e1ef646acfd5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f54c1eeccf195de81c3410b5a794d896.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.84cac564941026045f70f42f58d5cf84.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
