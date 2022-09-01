@@ -153,6 +153,7 @@ tags:
 ## Writing
 - Short stories/speculative fiction
 	- [[thoughts/CID|CID]] as the library of babel
+	- Interplanetary communication / state machine
 	- Packet switched electricity
 	- Cloud transport fiction
 		- What if we lived in a world where water was incredibly scarce? People would pay huge amounts of money to ship clouds around and 'mine' them for their crops
@@ -163,4 +164,5 @@ tags:
 		- We should be able to directly manipulate them, like files, rather than only indirectly work with them, like layer activations in a neural network.
 		- Software representations for similar ideas should be obviously similar in some way – they should click together, or look similar, or feel similar to the touch.
 		- Ideas should remember where they came from – what blog I copied it from, which author I quoted it from, and so on.
-	- Good [[thoughts/search|search]] turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
+	- Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
+		- Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.

@@ -9,6 +9,15 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## August
+### August 31st
+- What would it be like to build in interpolation into the state replication level?
+	- e.g. similar to [Quake 3's Networking](https://www.jfedor.org/quake3/) or [perfect-cursors](https://github.com/steveruizok/perfect-cursors/) both do 3 types of smoothing:
+	1. **Interpolation**: If it knows the state of the world at time _t_ and at time _t+50 ms_ and it needs to render additional frames between those points in time, it interpolates the positions of all visible objects between their known two states.
+		- That means that when the client is rendering the frame at _t+16 ms_, it already needs to have received the information about the server frame from _t+50 ms_!
+		- The only way that is possible is if the client intentionally delays its view of the world in relation to what it’s receiving from the server.
+	2. **Extrapolation**: What happens when the network packet containing the next snapshot is delayed or lost and the client runs out of states to interpolate between? Then it’s forced to do what it normally tries to avoid: extrapolate or guess where the objects will be if they keep moving the same way they’re currently moving.
+	3. **Prediction**: The only exception here is player input. Instead of waiting for the server to do that and send back a snapshot containing that information, the client also immediately performs the same player movement locally. In this case there’s no interpolation - the move commands are applied onto the latest snapshot received from the server and the results can be seen on the screen immediately. In a way this means that each player lives in the future on their own machine, when compared to the rest of the world, which is behind because of the network latency and the delay needed for interpolation.
+
 ### August 30th
 - [A Graph-Based Firebase](https://stopa.io/post/296)
 	- Turns out most modern real-time applications look something like this:![[thoughts/images/modern-app-architecture.png]]
