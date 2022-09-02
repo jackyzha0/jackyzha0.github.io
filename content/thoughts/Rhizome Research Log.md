@@ -33,13 +33,18 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Data framework layer: distributed triple store
 			- rust → compiled to WASM for web
 			- each node has its own [[thoughts/RDF|triple store]] that is created from an append-only data log
-			- each triple is created in a specific application context
+			- each triple contains ID, relation, and value
+				- how do we do realllyyy fast triple search? on multiple relations?
+				- how do we pack memory efficiently for this?
+				- we can 'subdomain' relations (e.g. it belongs to a certain set of schemas or application) using a trie
+				- how does prolog do this?
+					- 
 			- optional `author_id` field to link to Root
 		- Query layer: turns the triple store into live views that are interpolated
 		- Display layer: uses the views to perform calculations and display things
 		- Bring your own data: an application has a specific fingerprint
 			- Defines exactly which types of triples it reads/writes
-			- API enables you to invite another user to 'bind' to your current application state (similar to 'invite' to collaborate on a document or something)
+			- Enables you to invite another user to 'bind' to your current application state (similar to 'invite' to collaborate on a document or something)
 	- Ditto: publicly contributable schema and API definitions
 
 ## August

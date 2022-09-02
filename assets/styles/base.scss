@@ -524,10 +524,10 @@ header {
       margin: 0;
     }
     
-    & p {
+    & > p {
       margin: 0;
       padding-right: 1em;
-      width: clamp(6em, 6em, 6em); 
+      width: clamp(6rem, 6rem, 6rem); 
     }
   }
 
