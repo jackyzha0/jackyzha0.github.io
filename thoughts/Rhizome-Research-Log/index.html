@@ -59,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.a9c503a3d2ad0056468513b68eb9c133.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.2cc2a0611ab67faaac603753b1e44b46.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -124,7 +124,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.84cac564941026045f70f42f58d5cf84.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fab06347fcbc410e68ff35801cfea21c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -11439,7 +11439,16 @@ May 3, 2022
 <ul>
 <li>rust → compiled to WASM for web</li>
 <li>each node has its own <a href="/thoughts/RDF" rel="noopener" class="internal-link" data-src="/thoughts/RDF">triple store</a> that is created from an append-only data log</li>
-<li>each triple is created in a specific application context</li>
+<li>each triple contains ID, relation, and value
+<ul>
+<li>how do we do realllyyy fast triple search? on multiple relations?</li>
+<li>how do we pack memory efficiently for this?</li>
+<li>we can &lsquo;subdomain&rsquo; relations (e.g. it belongs to a certain set of schemas or application) using a trie</li>
+<li>
+<a href="#how-does-prolog-do-this"><h2 id="how-does-prolog-do-this"><span class="hanchor" ariaLabel="Anchor"># </span>how does prolog do this?</h2></a>
+</li>
+</ul>
+</li>
 <li>optional <code>author_id</code> field to link to Root</li>
 </ul>
 </li>
@@ -11448,7 +11457,7 @@ May 3, 2022
 <li>Bring your own data: an application has a specific fingerprint
 <ul>
 <li>Defines exactly which types of triples it reads/writes</li>
-<li>API enables you to invite another user to &lsquo;bind&rsquo; to your current application state (similar to &lsquo;invite&rsquo; to collaborate on a document or something)</li>
+<li>Enables you to invite another user to &lsquo;bind&rsquo; to your current application state (similar to &lsquo;invite&rsquo; to collaborate on a document or something)</li>
 </ul>
 </li>
 </ul>
