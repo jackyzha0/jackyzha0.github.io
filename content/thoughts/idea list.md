@@ -18,6 +18,7 @@ tags:
 - what does entropy + erosion of data look like
 	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
 - treesitter based CRDT for smart git merges
+	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - big touchscreen desk
 	- what if i just got a huge old flatscreen tv
 	- mounted 4 pressure sensors on each corner and then got a big sheet of thin glass
@@ -41,8 +42,7 @@ tags:
 		- https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings
 		- https://github.com/ryankiros/skip-thoughts
 		- https://github.com/pytorch/fairseq/tree/main/examples/data2vec
-- hand position to gesture toolkit
--   baba is you but for browser interactions
+- baba is you but for browser interactions
 	-   data plane is main source of truth
 		- optionally replicated using [[thoughts/Rhizome Proposal|Rhizome]]
 	-   data inputs like webcam, keyboard, mouse, window size, etc.

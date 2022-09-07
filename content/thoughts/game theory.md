@@ -3,8 +3,15 @@ title: "Game Theory"
 date: 2021-08-12T10:18:31-04:00
 tags:
 - sapling
+- PHIL321A
 ---
 
+## Induction, Decision, and Game Theory
+Course notes on PHIL321A
+
+
+
+## Trust and Game Theory
 [Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)
 
 For [trust](thoughts/trust.md) to evolve:
@@ -26,7 +33,7 @@ See also [[thoughts/evaporative cooling#Geeks MOPs and sociopaths in subculture 
 
 A classification of types of actors in video games based on character theory
 
-![[thoughts/images/Bartle taxonomy of player types.png]]
+![[thoughts/images/Bartle taxonomy of player types.png|400]]
 
 1. Achievers: prefer to optimize metrics or other concrete measurements of 'succeeding' in a game
 	1. Single-player appeal: Every game that can be "beaten" are appealing to Achievers.

@@ -9,6 +9,15 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## September
+### September 3rd
+- Bunch of weird Rust things today
+	- Generally, use `.take()` on `Option<Box<T>>` and `.clone()` on `Option<Rc<T>>`
+		- We can also `.take()` on `Option<Rc<T>>` if we flat out just want to 
+	- `.as_ref()` is like `&` but generally acts on the internal reference (i.e. on an `Option<T>`, `&` gives you `&Option<T>` whereas `.as_ref()` gives you `Option<&T>`)
+		- Additionally, `.as_deref()` basically is just `.as_ref()` with an additional `.deref()` on the unboxed value (effectively performing deref coercion)
+		- `<option>.map(|node| &**node)` is equivalent to `<option>.as_deref():`
+	- `Rc::try_unwrap` which moves out the contents of an `Rc` if its ref count is 1
+
 ### September 1st
 - [[thoughts/CAP Theorem|CAP Theorem Tradeoffs]] and *[A Certain Tendency Of The Database Community](https://arxiv.org/pdf/1510.08473.pdf)*
 	- Weaker consistency models that offer fewer guarantees about when the effect of an update might be observed by other members in the system, can offer higher availability, allowing the system to continue to operate while components of the system are offline, where stronger models might prohibit updates when nodes can not communicate
@@ -37,8 +46,6 @@ I think research logs tend to generally focus too much on what one did rather th
 				- how do we do realllyyy fast triple search? on multiple relations?
 				- how do we pack memory efficiently for this?
 				- we can 'subdomain' relations (e.g. it belongs to a certain set of schemas or application) using a trie
-				- how does prolog do this?
-					- 
 			- optional `author_id` field to link to Root
 		- Query layer: turns the triple store into live views that are interpolated
 		- Display layer: uses the views to perform calculations and display things
