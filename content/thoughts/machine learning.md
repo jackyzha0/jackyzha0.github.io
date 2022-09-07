@@ -3,9 +3,28 @@ title: "Machine Learning"
 date: 2021-07-02T14:03:17-04:00
 tags:
 - sapling
+- CPSC340
 ---
 
-## GOFAI (good old-fashioned AI)
+## Theory
+Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+
+- Data mining: automatically extract useful knowledge from large datasets
+- Machine learning: automatically detect patterns in data and use these to make predictions or decisions
+	- Typically, AI $\subset$ ML $\subset$ Deep Learning
+- Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general
+- Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models
+
+Healthy skepticism is good though:
+
+> "The combination of some data and an aching desire for an answer does not ensure that reasonable answer can be extracted from a given body of data"
+> 
+> - John Tukey
+
+## Philosophy
+### GOFAI (good old-fashioned AI)
 -   this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning
 -   finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern
 -   problem solvers often use canny, methodical exploration
@@ -14,7 +33,7 @@ tags:
 		-   "if only i could get that, then I could nail this down; but in order to get that, I would need such and such"
 -   GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given
 -   grounded in the possibility of translation — semantic interpretation
-## NFAI (new-fangled AI)
+### NFAI (new-fangled AI)
 -   falls under connectionism and [connectionist networks](thoughts/connectionist%20networks.md)
 	- relies on computers the same way a weather service does, to simulate digitally systems that are not in themselves digital
 -   adept at finding various sort of similarities among patterns, at recognizing repeated (or almost repeated) patterns and filling in missing parts of incomplete patterns
@@ -25,7 +44,7 @@ tags:
 -   e.g. through the design of tools like hammers, our architecture, etc.
 -   definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself
 
-## Deep Learning: a philosophical introduction
+### Deep Learning: a philosophical introduction
 -   no universally accepted explanation as to why they work so well, just really a form of [classification](thoughts/object%20classification.md)
 -   "golden age network"
     -   3 properties
@@ -59,7 +78,7 @@ tags:
     -   dropout
     -   L1 regularization → favours simpler/sparser solutions by causing weights to fall to 0 if a large gradient is not maintained
 
-## So why are they so effective?
+### So why are they so effective?
 -   hierarchical feature composition
 -   vector space separation
 	-   input can be realized as a feature space
@@ -69,10 +88,10 @@ tags:
 -   self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
     -   counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)
 
-## Cognition and [Intelligence](/thoughts/intelligence)
+### Cognition and [Intelligence](/thoughts/intelligence)
 [Potemkin village](thoughts/potemkin%20village.md) analogy for approximating intelligence.
 
-## Brain-like networks
+### Brain-like networks
 -   biological similarities
 	-   CNNs have high sensitivity to spots, edges, and bars in specific orientations
 	-   echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex
@@ -87,7 +106,7 @@ tags:
 -   neural networks have decently high [[thoughts/fault tolerance|fault tolerance]] (some redundant neurons)
 	-   may help to explain functional persistence of brains in the face of minor damage
 	-   in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade
-## Differences
+### Differences
 -   real neural networks arent fully connected like ANNs
 -   real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs
 -   real brains don't use backprop via generalized delta rule

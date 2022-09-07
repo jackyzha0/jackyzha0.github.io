@@ -7,9 +7,39 @@ tags:
 ---
 
 ## Induction, Decision, and Game Theory
-Course notes on PHIL321A
+Course notes on PHIL321A with Paul Bartha
 
+> Philosophical underpinnings of rational decision making
 
+Covers
+1. [[thoughts/Decision theory|Decision Theory]]
+2. Game Theory: choices by two or more agents who all play a role in determining the outcome.
+	1. Each player wants to maximize utility
+	2. May or may not be collaboration, may or may not be deception
+3. [[thoughts/Evolutionary game theory|Evolutionary Game Theory]]
+
+Two ways to look at game theory
+1. Normative tool: how to make rational choices
+2. Descriptive/explanatory tool: help explain social behaviour
+
+Some social practices don't appear rational in normative game theory but can be explained using descriptive game theory
+
+### Risk, Ignorance, and Uncertainty
+- Decisions under risk: the probability of each outcome is known
+- Decisions under ignorance: the agent is ignorant of all probabilities
+- Decisions under uncertainty: includes risk, ignorance, and intermediate cases
+
+## Game Tables
+Similar to decision tables in [[thoughts/Decision theory|decision theory]] but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.
+
+e.g. Stag Hunt where A and B are hunters and the numbers represent amount of food acquired
+
+| |A|B|
+|-|-|-|
+|A|25,25|0,5|
+|B|5,0|5,5|
+
+The solution is a set of "profile" of choices that are rational for each agent
 
 ## Trust and Game Theory
 [Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)
