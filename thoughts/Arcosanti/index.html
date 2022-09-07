@@ -119,13 +119,13 @@ Designed and established by Paolo Soleri, around same time as the [[thoughts/Fro
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.67f4df3677cf5c36ef22e1ef646acfd5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fab06347fcbc410e68ff35801cfea21c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

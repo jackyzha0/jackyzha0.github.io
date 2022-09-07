@@ -8,7 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="GOFAI (good old-fashioned AI)  this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern problem solvers often use canny, methodical exploration  neither algorithmic nor random a familiar sort of articulate reasoning or thinking a problem out  &ldquo;if only i could get that, then I could nail this down; but in order to get that, I would need such and such&rdquo;     GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given grounded in the possibility of translation — semantic interpretation  NFAI (new-fangled AI)  falls under connectionism and connectionist networks  relies on computers the same way a weather service does, to simulate digitally systems that are not in themselves digital   adept at finding various sort of similarities among patterns, at recognizing repeated (or almost repeated) patterns and filling in missing parts of incomplete patterns NFAI learns from examples (but not in the same way humans do) inspired by the structure of the brain, but more deeply, by the importance and ubiquity of non-formal pattern reasoning very grab-bag term → anything that isn&rsquo;t GOFAI argument that a lot of human intelligence is not embodied in anyone, its a part of the world: Extended Mind Hypothesis e."
+    content="Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
   />
   <title>
     Machine Learning
@@ -118,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.67f4df3677cf5c36ef22e1ef646acfd5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fab06347fcbc410e68ff35801cfea21c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -280,6 +281,8 @@ Jul 2, 2021
     
     <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+    
 </ul>
 
       
@@ -320,6 +323,27 @@ Jul 2, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -327,7 +351,29 @@ Jul 2, 2021
 
 
 
-<a href="#gofai-good-old-fashioned-ai"><h2 id="gofai-good-old-fashioned-ai"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI (good old-fashioned AI)</h2></a>
+
+<a href="#theory"><h2 id="theory"><span class="hanchor" ariaLabel="Anchor"># </span>Theory</h2></a>
+<p>Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</p>
+<p>We produce a lot of data (see: <a href="/thoughts/Data-Capitalism" rel="noopener" class="internal-link" data-src="/thoughts/Data-Capitalism">data capitalism</a>)</p>
+<ul>
+<li>Data mining: automatically extract useful knowledge from large datasets</li>
+<li>Machine learning: automatically detect patterns in data and use these to make predictions or decisions
+<ul>
+<li>Typically, AI $\subset$ ML $\subset$ Deep Learning</li>
+</ul>
+</li>
+<li>Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general</li>
+<li>Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models</li>
+</ul>
+<p>Healthy skepticism is good though:</p>
+<blockquote>
+<p>&ldquo;The combination of some data and an aching desire for an answer does not ensure that reasonable answer can be extracted from a given body of data&rdquo;</p>
+<ul>
+<li>John Tukey</li>
+</ul>
+</blockquote>
+<a href="#philosophy"><h2 id="philosophy"><span class="hanchor" ariaLabel="Anchor"># </span>Philosophy</h2></a>
+<a href="#gofai-good-old-fashioned-ai"><h3 id="gofai-good-old-fashioned-ai"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI (good old-fashioned AI)</h3></a>
 <ul>
 <li>this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning</li>
 <li>finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern</li>
@@ -344,7 +390,7 @@ Jul 2, 2021
 <li>GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given</li>
 <li>grounded in the possibility of translation — semantic interpretation</li>
 </ul>
-<a href="#nfai-new-fangled-ai"><h2 id="nfai-new-fangled-ai"><span class="hanchor" ariaLabel="Anchor"># </span>NFAI (new-fangled AI)</h2></a>
+<a href="#nfai-new-fangled-ai"><h3 id="nfai-new-fangled-ai"><span class="hanchor" ariaLabel="Anchor"># </span>NFAI (new-fangled AI)</h3></a>
 <ul>
 <li>falls under connectionism and 
 
@@ -377,7 +423,7 @@ Jul 2, 2021
 <li>e.g. through the design of tools like hammers, our architecture, etc.</li>
 <li>definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself</li>
 </ul>
-<a href="#deep-learning-a-philosophical-introduction"><h2 id="deep-learning-a-philosophical-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning: a philosophical introduction</h2></a>
+<a href="#deep-learning-a-philosophical-introduction"><h3 id="deep-learning-a-philosophical-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning: a philosophical introduction</h3></a>
 <ul>
 <li>no universally accepted explanation as to why they work so well, just really a form of 
 
@@ -460,7 +506,7 @@ Jul 2, 2021
 </ul>
 </li>
 </ul>
-<a href="#so-why-are-they-so-effective"><h2 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h2></a>
+<a href="#so-why-are-they-so-effective"><h3 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h3></a>
 <ul>
 <li>hierarchical feature composition</li>
 <li>vector space separation
@@ -486,7 +532,7 @@ Jul 2, 2021
 </ul>
 </li>
 </ul>
-<h2 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
+<h3 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
 
 
 
@@ -495,7 +541,7 @@ Jul 2, 2021
 <a
   href="/thoughts/intelligence/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/intelligence/">Intelligence</a></h2>
+  data-src="/thoughts/intelligence/">Intelligence</a></h3>
 <p>
 
 
@@ -506,7 +552,7 @@ Jul 2, 2021
   href="/thoughts/potemkin-village/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/potemkin-village/">Potemkin village</a> analogy for approximating intelligence.</p>
-<a href="#brain-like-networks"><h2 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h2></a>
+<a href="#brain-like-networks"><h3 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h3></a>
 <ul>
 <li>biological similarities
 <ul>
@@ -532,7 +578,7 @@ Jul 2, 2021
 </ul>
 </li>
 </ul>
-<a href="#differences"><h2 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h2></a>
+<a href="#differences"><h3 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h3></a>
 <ul>
 <li>real neural networks arent fully connected like ANNs</li>
 <li>real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs</li>

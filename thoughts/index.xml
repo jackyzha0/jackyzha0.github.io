@@ -6,7 +6,26 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision theory</title>
+      <link>https://jzhao.xyz/thoughts/Decision-theory/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Decision-theory/</guid>
+      <description>Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table</description>
+    </item>
+    
+    <item>
+      <title>Evolutionary game theory</title>
+      <link>https://jzhao.xyz/thoughts/Evolutionary-game-theory/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Evolutionary-game-theory/</guid>
+      <description>Focuses on the dynamics of strategy change by agents over time.
+Evolutionary game theory has helped to explain the basis of altruistic behaviours in Darwinian evolution.</description>
+    </item>
+    
     <item>
       <title>Bluetooth</title>
       <link>https://jzhao.xyz/thoughts/Bluetooth/</link>
@@ -3784,9 +3803,9 @@ Heavily linked with research debt. What makes for effective teaching and knowled
       <pubDate>Thu, 12 Aug 2021 10:18:31 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/game-theory/</guid>
-      <description>Source: The Evolution of Trust by Nicky Case
-For trust to evolve:
- Repeat interactions must happen. Trust keeps a relationship going, but you need the knowledge of possible future interactions before trust can evolve Possible win-win situations.</description>
+      <description>Induction, Decision, and Game Theory Course notes on PHIL321A with Paul Bartha
+ Philosophical underpinnings of rational decision making
+ Covers</description>
     </item>
     
     <item>
@@ -4162,7 +4181,8 @@ Dreyfus Dreyfus believed that, for any AI system to achieve any sort of general 
       <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>GOFAI (good old-fashioned AI)  this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern problem solvers often use canny, methodical exploration  neither algorithmic nor random a familiar sort of articulate reasoning or thinking a problem out  &amp;ldquo;if only i could get that, then I could nail this down; but in order to get that, I would need such and such&amp;rdquo;     GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given grounded in the possibility of translation — semantic interpretation  NFAI (new-fangled AI)  falls under connectionism and connectionist networks  relies on computers the same way a weather service does, to simulate digitally systems that are not in themselves digital   adept at finding various sort of similarities among patterns, at recognizing repeated (or almost repeated) patterns and filling in missing parts of incomplete patterns NFAI learns from examples (but not in the same way humans do) inspired by the structure of the brain, but more deeply, by the importance and ubiquity of non-formal pattern reasoning very grab-bag term → anything that isn&amp;rsquo;t GOFAI argument that a lot of human intelligence is not embodied in anyone, its a part of the world: Extended Mind Hypothesis e.</description>
+      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
     </item>
     
     <item>

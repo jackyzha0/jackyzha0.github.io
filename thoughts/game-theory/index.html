@@ -8,9 +8,9 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Source: The Evolution of Trust by Nicky Case
-For trust to evolve:
- Repeat interactions must happen. Trust keeps a relationship going, but you need the knowledge of possible future interactions before trust can evolve Possible win-win situations."
+    content="Induction, Decision, and Game Theory Course notes on PHIL321A with Paul Bartha
+ Philosophical underpinnings of rational decision making
+ Covers"
   />
   <title>
     Game Theory
@@ -120,13 +120,13 @@ For trust to evolve:
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.67f4df3677cf5c36ef22e1ef646acfd5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fab06347fcbc410e68ff35801cfea21c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -282,6 +282,8 @@ Aug 12, 2021
     
     <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
+    <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
+    
 </ul>
 
       
@@ -333,6 +335,72 @@ Aug 12, 2021
       
       
       
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -343,6 +411,60 @@ Aug 12, 2021
 
 
 
+<a href="#induction-decision-and-game-theory"><h2 id="induction-decision-and-game-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Induction, Decision, and Game Theory</h2></a>
+<p>Course notes on PHIL321A with Paul Bartha</p>
+<blockquote>
+<p>Philosophical underpinnings of rational decision making</p>
+</blockquote>
+<p>Covers</p>
+<ol>
+<li><a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">Decision Theory</a></li>
+<li>Game Theory: choices by two or more agents who all play a role in determining the outcome.
+<ol>
+<li>Each player wants to maximize utility</li>
+<li>May or may not be collaboration, may or may not be deception</li>
+</ol>
+</li>
+<li><a href="/thoughts/Evolutionary-game-theory" rel="noopener" class="internal-link" data-src="/thoughts/Evolutionary-game-theory">Evolutionary Game Theory</a></li>
+</ol>
+<p>Two ways to look at game theory</p>
+<ol>
+<li>Normative tool: how to make rational choices</li>
+<li>Descriptive/explanatory tool: help explain social behaviour</li>
+</ol>
+<p>Some social practices don&rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</p>
+<a href="#risk-ignorance-and-uncertainty"><h3 id="risk-ignorance-and-uncertainty"><span class="hanchor" ariaLabel="Anchor"># </span>Risk, Ignorance, and Uncertainty</h3></a>
+<ul>
+<li>Decisions under risk: the probability of each outcome is known</li>
+<li>Decisions under ignorance: the agent is ignorant of all probabilities</li>
+<li>Decisions under uncertainty: includes risk, ignorance, and intermediate cases</li>
+</ul>
+<a href="#game-tables"><h2 id="game-tables"><span class="hanchor" ariaLabel="Anchor"># </span>Game Tables</h2></a>
+<p>Similar to decision tables in <a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">decision theory</a> but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.</p>
+<p>e.g. Stag Hunt where A and B are hunters and the numbers represent amount of food acquired</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>25,25</td>
+<td>0,5</td>
+</tr>
+<tr>
+<td>B</td>
+<td>5,0</td>
+<td>5,5</td>
+</tr>
+</tbody>
+</table>
+<p>The solution is a set of &ldquo;profile&rdquo; of choices that are rational for each agent</p>
+<a href="#trust-and-game-theory"><h2 id="trust-and-game-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Trust and Game Theory</h2></a>
 <p>
 
 <a href="https://ncase.me/trust/" rel="noopener">Source: The Evolution of Trust by <em>Nicky Case</em></a></p>
@@ -396,7 +518,7 @@ Aug 12, 2021
 <a href="#bartle-taxonomy-of-player-types"><h2 id="bartle-taxonomy-of-player-types"><span class="hanchor" ariaLabel="Anchor"># </span>Bartle Taxonomy of Player Types</h2></a>
 <p>See also <a href="/thoughts/evaporative-cooling#geeks-mops-and-sociopaths-in-subculture-evolution" rel="noopener" class="internal-link" data-src="/thoughts/evaporative-cooling">Geeks, Mops, and sociopaths</a></p>
 <p>A classification of types of actors in video games based on character theory</p>
-<p><img src="/thoughts/images/Bartle taxonomy of player types.png" width="auto" /></p>
+<p><img src="/thoughts/images/Bartle taxonomy of player types.png" width="400" /></p>
 <ol>
 <li>Achievers: prefer to optimize metrics or other concrete measurements of &lsquo;succeeding&rsquo; in a game
 <ol>
@@ -468,8 +590,18 @@ Aug 12, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/credible-exit/" data-ctx="game theory" data-src="/thoughts/credible-exit" class="internal-link">Credible exit</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/decentralization/" data-ctx="game theory" data-src="/thoughts/decentralization" class="internal-link">Decentralization</a>
       </li>
       
       
