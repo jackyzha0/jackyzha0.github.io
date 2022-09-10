@@ -119,13 +119,13 @@ Intelligence can only be contextually based on information available."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b1a1b7cd48b1f6475d6f41efb9c986ef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.122060bb0e94a8586b4fb3ada490d582.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

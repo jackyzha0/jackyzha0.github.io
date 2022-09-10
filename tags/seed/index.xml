@@ -7,6 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Data mining</title>
+      <link>https://jzhao.xyz/thoughts/data-mining/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/data-mining/</guid>
+      <description>Typical steps of data mining
+ Learn about the application Identify data mining task Collect data Clean and preprocess the data Transform data or select useful subsets Choose data mining algorithm Data mining Evaluate visualize and interpret results Use results for profit or other goals  In a table</description>
+    </item>
+    
+    <item>
+      <title>Exploratory data analysis (EDA)</title>
+      <link>https://jzhao.xyz/thoughts/exploratory-data-analysis/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/exploratory-data-analysis/</guid>
+      <description>How do you &amp;ldquo;look&amp;rdquo; at features and high-dimensional examples?
+ Summary statistics  Categorical Features  Frequencies Mode Quantiles   Numerical Features  Location  Mean Median Quantiles   Spread  Range Variance Interquartile ranges     Entropy: measured &amp;ldquo;randomness&amp;rdquo; of a set of variables where entropy is $- \Sigma_{c=1}^k p_c \log p_c$ and $p_c$ is the proportion of times you have value $c$, range from $[0, \log k]$  Low entropy means it is very predictable whereas high entropy means it is very unpredictable (roughly, spread) Normal distribution has the highest entropy    Not always representative!</description>
+    </item>
+    
+    <item>
+      <title>Supervised learning</title>
+      <link>https://jzhao.xyz/thoughts/supervised-learning/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/supervised-learning/</guid>
+      <description>Input: take features of examples and corresponding labels as inputs Output: a model that can accurately predict the labels of new examples  Generally, the most successful machine learning technique (with the exception of games)</description>
+    </item>
+    
+    <item>
       <title>Decision theory</title>
       <link>https://jzhao.xyz/thoughts/Decision-theory/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>

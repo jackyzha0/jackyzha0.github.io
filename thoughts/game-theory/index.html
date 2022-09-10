@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b1a1b7cd48b1f6475d6f41efb9c986ef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.122060bb0e94a8586b4fb3ada490d582.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -435,9 +435,14 @@ Aug 12, 2021
 <p>Some social practices don&rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</p>
 <a href="#risk-ignorance-and-uncertainty"><h3 id="risk-ignorance-and-uncertainty"><span class="hanchor" ariaLabel="Anchor"># </span>Risk, Ignorance, and Uncertainty</h3></a>
 <ul>
-<li>Decisions under risk: the probability of each outcome is known</li>
-<li>Decisions under ignorance: the agent is ignorant of all probabilities</li>
-<li>Decisions under uncertainty: includes risk, ignorance, and intermediate cases</li>
+<li>Decisions under ignorance (DUI): the agent is ignorant of all probabilities</li>
+<li>Decisions under risk (DUR): the probability of each outcome is known
+<ul>
+<li>We can maximize expected value to figure out what decision to make</li>
+<li>Generally need to know utility <em>and</em> risk values</li>
+</ul>
+</li>
+<li>Decisions under uncertainty (DUU): includes risk, ignorance, and intermediate cases</li>
 </ul>
 <a href="#game-tables"><h2 id="game-tables"><span class="hanchor" ariaLabel="Anchor"># </span>Game Tables</h2></a>
 <p>Similar to decision tables in <a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">decision theory</a> but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.</p>

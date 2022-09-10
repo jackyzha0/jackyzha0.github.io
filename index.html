@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.52e23f2d53c45be1a63d5f73c4a863f1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b1a1b7cd48b1f6475d6f41efb9c986ef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3cc5bafbeee6520dca4bee23d301ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.122060bb0e94a8586b4fb3ada490d582.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,10 +349,10 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Decision-theory/">Decision theory</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/data-mining/">Data mining</a></h3>
                             </div>
                             <p class="meta">
-                                73 words on Sep 7, 2022
+                                135 words on Sep 9, 2022
                             </p>
                             <ul class="tags">
     
@@ -366,10 +366,10 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Evolutionary-game-theory/">Evolutionary game theory</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/exploratory-data-analysis/">Exploratory data analysis (EDA)</a></h3>
                             </div>
                             <p class="meta">
-                                26 words on Sep 7, 2022
+                                169 words on Sep 9, 2022
                             </p>
                             <ul class="tags">
     
@@ -381,7 +381,7 @@ Jul 14, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 462 more →</a>
+                <a href="/thoughts">See 465 more →</a>
             </div>
         </div>
         <article>
