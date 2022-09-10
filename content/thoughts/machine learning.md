@@ -11,7 +11,7 @@ Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
 
 We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
 
-- Data mining: automatically extract useful knowledge from large datasets
+- [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets
 - Machine learning: automatically detect patterns in data and use these to make predictions or decisions
 	- Typically, AI $\subset$ ML $\subset$ Deep Learning
 - Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general
@@ -22,6 +22,10 @@ Healthy skepticism is good though:
 > "The combination of some data and an aching desire for an answer does not ensure that reasonable answer can be extracted from a given body of data"
 > 
 > - John Tukey
+
+Main topics:
+- [[thoughts/exploratory data analysis|EDA]]
+- [[thoughts/supervised learning|Supervised learning]]
 
 ## Philosophy
 ### GOFAI (good old-fashioned AI)

@@ -25,9 +25,11 @@ Two ways to look at game theory
 Some social practices don't appear rational in normative game theory but can be explained using descriptive game theory
 
 ### Risk, Ignorance, and Uncertainty
-- Decisions under risk: the probability of each outcome is known
-- Decisions under ignorance: the agent is ignorant of all probabilities
-- Decisions under uncertainty: includes risk, ignorance, and intermediate cases
+- Decisions under ignorance (DUI): the agent is ignorant of all probabilities
+- Decisions under risk (DUR): the probability of each outcome is known
+	- We can maximize expected value to figure out what decision to make
+	- Generally need to know utility *and* risk values
+- Decisions under uncertainty (DUU): includes risk, ignorance, and intermediate cases
 
 ## Game Tables
 Similar to decision tables in [[thoughts/Decision theory|decision theory]] but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.

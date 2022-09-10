@@ -14,4 +14,29 @@ e.g. Pascal's Wager
 |Believe|Infinite reward|Status quo|
 |Don't believe|Infinite loss|Status quo|
 
-Where rows are possible acts, columns are possible states of the world. Each cell is an outcome. They can also be represented using decision trees
+Components:
+- Rows are possible acts
+	- Acts are *functions* that map states to outcomes
+- Columns are possible states of the world
+	- Probabilities are sometimes included for decisions under risk.
+	- Should *not* depend on agent action
+	- States should be
+		- **Mutually exclusive**
+		- **Exhaustive**: no possibility is left out
+		- **Relevant partition**: distinctions that actually have impact on probability or utility of outcomes
+		- **Independence**: (optional) each state should be [[thoughts/causality|causally]] and probabilistically independent of the *acts*
+			- Dominance principle only holds if independent holds
+- Cells are outcomes.
+	- Can be described using
+		- Verbal description
+		- Preference ranking on an ordinal scale
+			- Defines a [[thoughts/Order theory|partial ordering]] of outcomes
+		- Utility (numerical value) using an interval scale
+			- Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$
+			- Called an ordinal transformation
+
+There is an art and science to decision tables
+1. Art: providing a good formalization of a decision into a table
+2. providing a justified recommendation based off of the formalization
+
+They can also be represented using decision trees
