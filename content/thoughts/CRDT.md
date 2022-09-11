@@ -107,7 +107,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 
 However, GC + rebalancing technically requires achieving [[thoughts/consensus|consensus]] on nodes in order to do this.
 
-
 > So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. [(#2)](https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2)
 
 One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.

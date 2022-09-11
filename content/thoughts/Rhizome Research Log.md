@@ -12,7 +12,6 @@ I think research logs tend to generally focus too much on what one did rather th
 ### September 3rd
 - Bunch of weird Rust things today
 	- Generally, use `.take()` on `Option<Box<T>>` and `.clone()` on `Option<Rc<T>>`
-		- We can also `.take()` on `Option<Rc<T>>` if we flat out just want to 
 	- `.as_ref()` is like `&` but generally acts on the internal reference (i.e. on an `Option<T>`, `&` gives you `&Option<T>` whereas `.as_ref()` gives you `Option<&T>`)
 		- Additionally, `.as_deref()` basically is just `.as_ref()` with an additional `.deref()` on the unboxed value (effectively performing deref coercion)
 		- `<option>.map(|node| &**node)` is equivalent to `<option>.as_deref():`
