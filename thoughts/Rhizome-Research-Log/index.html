@@ -124,7 +124,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.122060bb0e94a8586b4fb3ada490d582.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.125e2faf372e60f84cac7c142f687887.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -15481,11 +15481,7 @@ May 3, 2022
 <ul>
 <li>Bunch of weird Rust things today
 <ul>
-<li>Generally, use <code>.take()</code> on <code>Option&lt;Box&lt;T&gt;&gt;</code> and <code>.clone()</code> on <code>Option&lt;Rc&lt;T&gt;&gt;</code>
-<ul>
-<li>We can also <code>.take()</code> on <code>Option&lt;Rc&lt;T&gt;&gt;</code> if we flat out just want to</li>
-</ul>
-</li>
+<li>Generally, use <code>.take()</code> on <code>Option&lt;Box&lt;T&gt;&gt;</code> and <code>.clone()</code> on <code>Option&lt;Rc&lt;T&gt;&gt;</code></li>
 <li><code>.as_ref()</code> is like <code>&amp;</code> but generally acts on the internal reference (i.e. on an <code>Option&lt;T&gt;</code>, <code>&amp;</code> gives you <code>&amp;Option&lt;T&gt;</code> whereas <code>.as_ref()</code> gives you <code>Option&lt;&amp;T&gt;</code>)
 <ul>
 <li>Additionally, <code>.as_deref()</code> basically is just <code>.as_ref()</code> with an additional <code>.deref()</code> on the unboxed value (effectively performing deref coercion)</li>

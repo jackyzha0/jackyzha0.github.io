@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Linear Algebra</title>
+      <link>https://jzhao.xyz/thoughts/linear-algebra/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/linear-algebra/</guid>
+      <description>A lot of content summarized from Mark Schmidt&amp;rsquo;s notes on Linear Algebra
+Notation Generally column major
+ Scalar (1,1): $\alpha$ Column Vector (m, 1): $\begin{bmatrix}a_1 \ a_2 \end{bmatrix}$ Row Vector (1, n): $\begin{bmatrix}a_1 &amp;amp; a_2\end{bmatrix}$ Matrix (m, n): $\begin{bmatrix}a_{1,1} &amp;amp; a_{2,1} \ a_{1,2} &amp;amp; a_{2,2}\end{bmatrix}$  Operations Transpose $(A^T){ij} = (A){ji}$</description>
+    </item>
+    
+    <item>
       <title>Data mining</title>
       <link>https://jzhao.xyz/thoughts/data-mining/</link>
       <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
