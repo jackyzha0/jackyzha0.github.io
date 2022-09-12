@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Decision Tree</title>
+      <link>https://jzhao.xyz/thoughts/decision-tree/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/decision-tree/</guid>
+      <description>A simple program consisting of if-else decisions (decision stumps) based on the features.
+ We can create a bunch of decision stumps and define a &amp;ldquo;score&amp;rdquo; for each possible rule.</description>
+    </item>
+    
+    <item>
+      <title>Decisions under ignorance (DUI)</title>
+      <link>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</guid>
+      <description>Decision rules when the agent is ignorant of all probabilities
+Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance Maximin/Leximin Optimism/Pessimism and &amp;ldquo;Best Average&amp;rdquo; Minimax regret Principle of Insufficient Reason  </description>
+    </item>
+    
+    <item>
       <title>Logical fallacies</title>
       <link>https://jzhao.xyz/thoughts/logical-fallacies/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>

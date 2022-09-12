@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2d4e6351d801db749faf9e299569f44d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c29f28fe29bcaf48c83a2a20e3c261da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -496,29 +496,6 @@ Dec 24, 2021
   
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
 
 
 
@@ -526,6 +503,65 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -599,6 +635,7 @@ Disadvantages:</li>
 
 
 <img src="https://jzhao.xyz//thoughts/images/bayes-risk.png" width="auto" alt=""  /></p>
+<p>See also: <a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">probability</a></p>
 <a href="#roc-curve"><h3 id="roc-curve"><span class="hanchor" ariaLabel="Anchor"># </span>ROC Curve</h3></a>
 <p>Trade-off between true positive rate and false positive rate. A random classifier will always have 1:1 true positive and false positive rate</p>
 <p>
@@ -641,12 +678,8 @@ Disadvantages:</li>
 <a href="#vlad-vector-of-locally-aggregated-descriptors"><h3 id="vlad-vector-of-locally-aggregated-descriptors"><span class="hanchor" ariaLabel="Anchor"># </span>VLAD (Vector of Locally Aggregated Descriptors)</h3></a>
 <p>Instead of incrementing the histogram bin by a single count, we increment it by the residual vector $x - c(x)$ (diff between cluster center and feature vector)</p>
 <p>Dimensionality is $Kd$ where $K$ is number of codewords and $d$ is the dimensionality of the local descriptor (128 for SIFT)</p>
-<a href="#decision-tree"><h3 id="decision-tree"><span class="hanchor" ariaLabel="Anchor"># </span>Decision Tree</h3></a>
-<p>Entropy of set $S$ of data samples is defined as</p>
-<p>$$H(s) = - \sum_{c \in C}p(c)\log(p(c))$$</p>
-<p>Where $C$ is the set of classes represented in $S$ and $p(c)$ is the empirical distribution of class $c$ in $S$.</p>
-<p>Generally, select feature test that maximizes information gain</p>
-<p>$$I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$$</p>
+<a href="#decision-tree"><h2 id="decision-tree"><span class="hanchor" ariaLabel="Anchor"># </span>Decision Tree</h2></a>
+<p>See notes on <a href="/thoughts/decision-tree" rel="noopener" class="internal-link" data-src="/thoughts/decision-tree">decision trees</a></p>
 <a href="#classifier-boosting"><h3 id="classifier-boosting"><span class="hanchor" ariaLabel="Anchor"># </span>Classifier Boosting</h3></a>
 <ul>
 <li>Train an ensemble of classifiers sequentially</li>

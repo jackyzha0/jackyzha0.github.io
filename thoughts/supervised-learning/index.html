@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2d4e6351d801db749faf9e299569f44d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c29f28fe29bcaf48c83a2a20e3c261da.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -295,12 +295,57 @@ Sep 9, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -314,6 +359,18 @@ Sep 9, 2022
 <li>Output: a model that can accurately predict the labels of new examples</li>
 </ul>
 <p>Generally, the most successful machine learning technique (with the exception of games)</p>
+<p>Examples:</p>
+<ul>
+<li><a href="/thoughts/decision-tree" rel="noopener" class="internal-link" data-src="/thoughts/decision-tree">Decision trees</a></li>
+</ul>
+<a href="#notation"><h2 id="notation"><span class="hanchor" ariaLabel="Anchor"># </span>Notation</h2></a>
+<ul>
+<li>$X$ is the input</li>
+<li>$y$ are the class labels</li>
+<li>$n$ is the number of examples (generally idnex is denoted by subscript)</li>
+<li>$d$ is the number of features (generally index is denoted by superscript)</li>
+<li>$\hat y$ are the predictions</li>
+</ul>
 
 
     </article>

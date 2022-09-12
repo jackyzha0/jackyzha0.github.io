@@ -6,7 +6,36 @@
     <description>Recent content in PHIL321A on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Aug 2021 10:18:31 -0400</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decisions under ignorance (DUI)</title>
+      <link>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</guid>
+      <description>Decision rules when the agent is ignorant of all probabilities
+Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance Maximin/Leximin Optimism/Pessimism and &amp;ldquo;Best Average&amp;rdquo; Minimax regret Principle of Insufficient Reason  </description>
+    </item>
+    
+    <item>
+      <title>Decision theory</title>
+      <link>https://jzhao.xyz/thoughts/Decision-theory/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Decision-theory/</guid>
+      <description>Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table</description>
+    </item>
+    
+    <item>
+      <title>Evolutionary game theory</title>
+      <link>https://jzhao.xyz/thoughts/Evolutionary-game-theory/</link>
+      <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Evolutionary-game-theory/</guid>
+      <description>Focuses on the dynamics of strategy change by agents over time.
+Evolutionary game theory has helped to explain the basis of altruistic behaviours in Darwinian evolution.</description>
+    </item>
+    
     <item>
       <title>Game Theory</title>
       <link>https://jzhao.xyz/thoughts/game-theory/</link>
