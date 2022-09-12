@@ -36,3 +36,20 @@ Writing as [[thoughts/art|art]]
 Ted Chiang on the power of written language in *Truth of Fact, Truth of Feeling*:
 
 > Writing was not just a way to record what someone said; it could help you decide what you would say before you said it. And words were not just the pieces of speaking; they were the pieces of thinking. When you wrote them down, you could grasp your thoughts like bricks in your hands and push them into different arrangements. Writing let you look at your thoughts in a way you couldn’t if you were just talking, and having seen them, you could improve them, make them stronger and more elaborate.
+
+## As Claims
+> We write not only to state what we have think but also to show why others might agree with it and why it matters. We also know that whatever it is we think, it is never the entire truth. Our conclusions are partial, incomplete, and always subject to challenge. So we write in a way that allows others to test our reasoning: we present our best thinking as a series of claims, reasons, and responses to imagined challenges, so that readers can see not only what we think, but whether they ought to agree.
+> 
+> -- *Writing in College*, by Joseph M. Williams and Lawrence McEnerney
+
+Thesis can contain 4 main types of claims
+1. Claims of fact or definition: argue about what the definition of something is or whether something is a settled fact
+2. Claims of cause and effect: argue that one person, thing, or event caused another thing or event to occur
+3. Claims about value: what something is worth, whether we value it or not, how we would rate or categorize something
+4. Claims about solutions or policies: argue for or against a certain solution or policy approach to a problem
+
+These aim to get the reader to say "that's interesting, I'd like to know more"
+
+1. Logos: logic (See also: list of [[thoughts/logical fallacies]])
+2. Ethos: reputational appeal of the writer
+3. Pathos: emotional appeal

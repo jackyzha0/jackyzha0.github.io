@@ -31,11 +31,14 @@ Components:
 		- Verbal description
 		- Preference ranking on an ordinal scale
 			- Defines a [[thoughts/Order theory|partial ordering]] of outcomes
+				- $x \succcurlyeq y$ is a weak preference
+				- $x \succ y$ is a strong preference
+				- $x \sim y$ is indifference between $x$ and $y$
 		- Utility (numerical value) using an interval scale
 			- Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$
 			- Called an ordinal transformation
 
-There is an art and science to decision tables
+sion tables
 1. Art: providing a good formalization of a decision into a table
 2. providing a justified recommendation based off of the formalization
 

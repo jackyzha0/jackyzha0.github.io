@@ -68,9 +68,9 @@ If A is (m, n) and B is (n, p), then AB is (m, p)
 ### Vector Norm
 A scalar measure of a vector's length
 
-- $\| x \| \geq 0$ 
-- Euclidean Norm: $\|x\|_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)
-- $\| x \|_2^2 = x^Tx$ 
+- $\Vert x \Vert \geq 0$ 
+- Euclidean Norm: $\Vert x \Vert_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)
+- $\Vert x \Vert_2^2 = x^Tx$ 
 
 ### Rank
 - The dimension of the vector space generated (or spanned) by its columns.
@@ -79,8 +79,8 @@ A scalar measure of a vector's length
 
 ### Orthogonal
 If for some set of vectors $q$:
-- $q_i^Tq_j = 0$, we call $q_i$ and $q_j$ **orthogonal**
-- $q_i^Tq_j = 1$, we call $q_i$ and $q_j$ **orthonormal**
+- $q_i^Tq_j = 0$, we call $q_i$ and $q_j$ orthogonal
+- $q_i^Tq_j = 1$, we call $q_i$ and $q_j$ orthonormal
 
 Inner product of square orthogonal matrices is the identity matrix: $Q^TQ = I = QQ^T$
 
