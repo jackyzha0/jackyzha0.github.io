@@ -16,10 +16,11 @@ tags:
 	- `t` - html tag
 	- `{ or [ or < or {`
 	- `" or '` - quoted string
+	- `m` show possible LSP-based jump locations
 
 ## Mappings
 - `<Ctrl>c` - leave insert mode
-- `<leader>o` - find files
+- `<leader>o` - open file by name
 - `<leader>g` - live grep
 - `<leader>f` - format file
 - `f` - hop by 2 chars
@@ -40,16 +41,15 @@ tags:
 	- `<shift>K` - show type hint
 	- `<space>rn` - rename
 - Moving
-	- press `m` mid operation to select jump point
 	- `%` to jump to matching paren
 - Surrounds
 	- `ys[text-object][char]` - surround with `char`
 	- `ds[text-object][char]` - delete surrounding `char`
 	- `cs[char1][char2]` - change surrounding `char1` to `char2`
 - Git conflicts
-	- `co` - choose ours
-	- `ct` - choose theirs
-	- `cb` - choose both
-	- `c0` - choose none
+	- `<leader>co` - choose ours
+	- `<leader>ct` - choose theirs
+	- `<leader>cb` - choose both
+	- `<leader>c0` - choose none
 	- `]x` - move to previous conflict
 	-  `[x` - move to next conflict

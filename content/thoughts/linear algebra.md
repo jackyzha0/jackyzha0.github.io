@@ -3,6 +3,7 @@ title: "Linear Algebra"
 date: 2022-09-11
 tags:
 - seed
+- CPSC340
 ---
 
 A lot of content summarized from [Mark Schmidt's notes on Linear Algebra](https://www.cs.ubc.ca/~schmidtm/Documents/2009_Notes_LinearAlgebra.pdf)
@@ -61,13 +62,14 @@ If A is (m, n) and B is (n, p), then AB is (m, p)
 - Generally not commutative: $AB \neq BA$
 - Transposing reverses order: $(AB)^T = B^TA^T$
 - Matrix powers don't change order: $(AB)^2 = ABAB$
+- Matrix-vector multiplication always yields a vector: $x^TAy = x^T(Ay) = (Ay)^Tx = y^TA^Tx$
 
 ## Properties
 ### Vector Norm
 A scalar measure of a vector's length
 
 - $\| x \| \geq 0$ 
-- Euclidean Norm: $\| x \|_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)
+- Euclidean Norm: $\|x\|_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)
 - $\| x \|_2^2 = x^Tx$ 
 
 ### Rank
@@ -149,12 +151,14 @@ Given A and b, we want to solve for x in $Ax = b$
 Say, $\begin{bmatrix}2 & -1 \\ 1 & 1\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}1 \\ 5\end{bmatrix}$.
 
 We can interpret this multiple ways:
-1. By rows: $x$ is the intersection of the hyerplanes $2x-y=1$ and $x+y=5$
+1. By rows: $x$ is the intersection of the hyperplanes $2x-y=1$ and $x+y=5$
 2. By columns: $x$ is the linear combination that yields the RHS in $x\begin{bmatrix}2 \\ 5\end{bmatrix} + y \begin{bmatrix}-1 \\ 1\end{bmatrix} = \begin{bmatrix}1 \\ 5 \end{bmatrix}$
 3. Transformation
 
 $Ax=b$ generally has a solution when $b$ is in the column-space of A. It has a single unique solution if the columns of A are linearly independent.
 
 If $Ax=b$ has as solution we say it is consistent.
+
+Basically, $x = A^{-1}b$
 
 We can solve using Gaussian Elimination
