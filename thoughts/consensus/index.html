@@ -79,13 +79,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
 
 
     
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.53ad9a087e3feeaaa12b63bfd02d923b.min.js"></script>
 
   
   
@@ -118,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b1a1b7cd48b1f6475d6f41efb9c986ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fd5dc9b1fe3b655f3edd858eb77f9a87.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.125e2faf372e60f84cac7c142f687887.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eb996ebd1a3964591ac5e54d122fe7d3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -189,6 +190,9 @@
           {left: '$$', right: '$$', display: true},
           {left: '$', right: '$', display: false},
         ],
+        macros: {
+          '’': "'"
+        },
         throwOnError : false
       });
       
@@ -291,6 +295,47 @@ Aug 9, 2021
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -298,49 +343,6 @@ Aug 9, 2021
 
 
 
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
 
   
   
@@ -355,20 +357,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -401,20 +389,6 @@ Aug 9, 2021
       
       
       
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
       
       
       
@@ -443,20 +417,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -489,20 +449,6 @@ Aug 9, 2021
       
       
       
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
       
       
       
@@ -531,20 +477,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -577,20 +509,6 @@ Aug 9, 2021
       
       
       
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
       
       
       
@@ -619,20 +537,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -665,20 +569,6 @@ Aug 9, 2021
       
       
       
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
       
       
       
@@ -707,20 +597,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -753,20 +629,6 @@ Aug 9, 2021
       
       
       
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
       
       
       
@@ -795,20 +657,6 @@ Aug 9, 2021
       
       
       
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-  
-    
       
       
       
@@ -841,6 +689,44 @@ Aug 9, 2021
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
         
         
         
@@ -863,6 +749,14 @@ Aug 9, 2021
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
         
         
         
@@ -875,6 +769,374 @@ Aug 9, 2021
   
   
     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -1251,6 +1513,18 @@ Aug 9, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/posts/new-words/" data-ctx="consensus" data-src="/posts/new-words" class="internal-link">A New Glossary of Words</a>
       </li>
@@ -1318,6 +1592,12 @@ Aug 9, 2021
       
       
       <li>
+        <a href="/thoughts/Tendermint/" data-ctx="Byzantine Agreement" data-src="/thoughts/Tendermint" class="internal-link">Tendermint</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Vanilla-Ice-Cream-effect/" data-ctx="consensus" data-src="/thoughts/Vanilla-Ice-Cream-effect" class="internal-link">Vanilla Ice Cream effect</a>
       </li>
       
@@ -1331,6 +1611,12 @@ Aug 9, 2021
       
       <li>
         <a href="/thoughts/decentralization/" data-ctx="Consensus" data-src="/thoughts/decentralization" class="internal-link">Decentralization</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/distributed-systems/" data-ctx="Consensus" data-src="/thoughts/distributed-systems" class="internal-link">Distributed Systems</a>
       </li>
       
       

@@ -81,13 +81,14 @@ Notation Generally column major
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
 
 
     
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.abe6a51cc7138c5dff00f151dd627ad1.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.53ad9a087e3feeaaa12b63bfd02d923b.min.js"></script>
 
   
   
@@ -120,13 +121,13 @@ Notation Generally column major
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b1a1b7cd48b1f6475d6f41efb9c986ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fd5dc9b1fe3b655f3edd858eb77f9a87.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.125e2faf372e60f84cac7c142f687887.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eb996ebd1a3964591ac5e54d122fe7d3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -191,6 +192,9 @@ Notation Generally column major
           {left: '$$', right: '$$', display: true},
           {left: '$', right: '$', display: false},
         ],
+        macros: {
+          '’': "'"
+        },
         throwOnError : false
       });
       
@@ -282,6 +286,8 @@ Sep 11, 2022
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+    
 </ul>
 
       
@@ -292,6 +298,180 @@ Sep 11, 2022
 
 
 
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
   
   
@@ -352,9 +532,9 @@ Sep 11, 2022
 <p>Generally column major</p>
 <ul>
 <li>Scalar (1,1): $\alpha$</li>
-<li>Column Vector (m, 1): $\begin{bmatrix}a_1 \ a_2 \end{bmatrix}$</li>
+<li>Column Vector (m, 1): $\begin{bmatrix}a_1 \\ a_2 \end{bmatrix}$</li>
 <li>Row Vector (1, n): $\begin{bmatrix}a_1 &amp; a_2\end{bmatrix}$</li>
-<li>Matrix (m, n): $\begin{bmatrix}a_{1,1} &amp; a_{2,1} \ a_{1,2} &amp; a_{2,2}\end{bmatrix}$</li>
+<li>Matrix (m, n): $\begin{bmatrix}a_{1,1} &amp; a_{2,1} \\ a_{1,2} &amp; a_{2,2}\end{bmatrix}$</li>
 </ul>
 <a href="#operations"><h2 id="operations"><span class="hanchor" ariaLabel="Anchor"># </span>Operations</h2></a>
 <a href="#transpose"><h3 id="transpose"><span class="hanchor" ariaLabel="Anchor"># </span>Transpose</h3></a>
@@ -362,10 +542,10 @@ Sep 11, 2022
 <p>A matrix is <strong>symmetric</strong> if $A = A^T$</p>
 <a href="#vector-addition"><h3 id="vector-addition"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Addition</h3></a>
 <p>Associative (brackets don&rsquo;t matter) and commutative (order independent)</p>
-<p>$$a + b = \begin{bmatrix}a_1 \\a_2 \end{bmatrix} + \begin{bmatrix}b_1 \\b_2 \end{bmatrix} = \begin{bmatrix}a_1 + b_1 \\a_2 + b_2 \end{bmatrix}$$</p>
+<p>$$a + b = \begin{bmatrix}a_1 \\ a_2 \end{bmatrix} + \begin{bmatrix}b_1 \\ b_2 \end{bmatrix} = \begin{bmatrix}a_1 + b_1 \\ a_2 + b_2 \end{bmatrix}$$</p>
 <a href="#scalar-multiplication"><h3 id="scalar-multiplication"><span class="hanchor" ariaLabel="Anchor"># </span>Scalar Multiplication</h3></a>
 <p>Associative (brackets don&rsquo;t matter) and commutative (order independent)</p>
-<p>$$\alpha b = \alpha \begin{bmatrix}b_1 \\b_2\end{bmatrix} = \begin{bmatrix}\alpha b_1 \\\alpha b_2\end{bmatrix}$$</p>
+<p>$$\alpha b = \alpha \begin{bmatrix}b_1 \\ b_2\end{bmatrix} = \begin{bmatrix}\alpha b_1 \\ \alpha b_2\end{bmatrix}$$</p>
 <a href="#inner-product"><h3 id="inner-product"><span class="hanchor" ariaLabel="Anchor"># </span>Inner Product</h3></a>
 <p>Between two vectors of the same length, multiply each element together to get a scalar result</p>
 <p>$$a^Tb = \sum_{i = 1}^{n}a_ib_i = \gamma$$</p>
@@ -376,8 +556,8 @@ Sep 11, 2022
 </ul>
 <a href="#outer-product"><h3 id="outer-product"><span class="hanchor" ariaLabel="Anchor"># </span>Outer Product</h3></a>
 <p>Between two vectors of the same length, create a matrix multiplying each combination of elements in each vector.</p>
-<p>Given two vectors $u = \begin{bmatrix}u_1 \ u_2 \ \vdots \ u_m \end{bmatrix}$ and $v = \begin{bmatrix}v_1 \ v_2 \ \vdots \ v_n \end{bmatrix}$,</p>
-<p>$$u \otimes v = A = \begin{bmatrix}u_1v_1 &amp; u_1v_2 &amp; \dots &amp; u_1v_n\\u_2v_1 &amp; u_2v_2 &amp; \dots &amp; u_2v_n \\\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\u_mv_1 &amp; u_mv_2 &amp; \dots &amp; u_mv_n \end{bmatrix}$$</p>
+<p>Given two vectors $u = \begin{bmatrix}u_1 \\ u_2 \\ \vdots \\ u_m \end{bmatrix}$ and $v = \begin{bmatrix}v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}$,</p>
+<p>$$u \otimes v = A = \begin{bmatrix}u_1v_1 &amp; u_1v_2 &amp; \dots &amp; u_1v_n\\ u_2v_1 &amp; u_2v_2 &amp; \dots &amp; u_2v_n \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ u_mv_1 &amp; u_mv_2 &amp; \dots &amp; u_mv_n \end{bmatrix}$$</p>
 <p>The resulting matrix $A$ is always rank-1.</p>
 <a href="#multiplication"><h3 id="multiplication"><span class="hanchor" ariaLabel="Anchor"># </span>Multiplication</h3></a>
 <p>In general, we can multiply matrices A and B when the number of columns in A matches the number of rows in B</p>
@@ -389,13 +569,14 @@ Sep 11, 2022
 <li>Generally not commutative: $AB \neq BA$</li>
 <li>Transposing reverses order: $(AB)^T = B^TA^T$</li>
 <li>Matrix powers don&rsquo;t change order: $(AB)^2 = ABAB$</li>
+<li>Matrix-vector multiplication always yields a vector: $x^TAy = x^T(Ay) = (Ay)^Tx = y^TA^Tx$</li>
 </ul>
 <a href="#properties"><h2 id="properties"><span class="hanchor" ariaLabel="Anchor"># </span>Properties</h2></a>
 <a href="#vector-norm"><h3 id="vector-norm"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Norm</h3></a>
 <p>A scalar measure of a vector&rsquo;s length</p>
 <ul>
 <li>$| x | \geq 0$</li>
-<li>Euclidean Norm: $| x |<em>2 = \sqrt{\sum</em>{i=1}^n x_i^2}$  (this is also called the L-2 Norm)</li>
+<li>Euclidean Norm: $|x|<em>2 = \sqrt{\sum</em>{i=1}^n x_i^2}$  (this is also called the L-2 Norm)</li>
 <li>$| x |_2^2 = x^Tx$</li>
 </ul>
 <a href="#rank"><h3 id="rank"><span class="hanchor" ariaLabel="Anchor"># </span>Rank</h3></a>
@@ -424,7 +605,7 @@ Sep 11, 2022
 <p>1&rsquo;s on the diagonal and 0&rsquo;s otherwise. $I_n$ denotes an (n,n) identity matrix.</p>
 <p>Multiplication by the identity matrix yields the original matrix. Columns of the identity matrix are called elementary vectors.</p>
 <a href="#diagonal-matrix"><h3 id="diagonal-matrix"><span class="hanchor" ariaLabel="Anchor"># </span>Diagonal Matrix</h3></a>
-<p>$$D = \begin{bmatrix}d_1 &amp; 0 &amp; 0 \\0 &amp; d_2 &amp; 0 \\0 &amp; 0 &amp; d_3 \end{bmatrix}$$</p>
+<p>$$D = \begin{bmatrix}d_1 &amp; 0 &amp; 0 \\ 0 &amp; d_2 &amp; 0 \\ 0 &amp; 0 &amp; d_3 \end{bmatrix}$$</p>
 <a href="#spaces"><h2 id="spaces"><span class="hanchor" ariaLabel="Anchor"># </span>Spaces</h2></a>
 <a href="#range-column-space"><h3 id="range-column-space"><span class="hanchor" ariaLabel="Anchor"># </span>Range (Column-space)</h3></a>
 <p>Subspace spanned by the columns of a matrix.</p>
@@ -457,19 +638,20 @@ Sep 11, 2022
 <li>Assuming both $A^{-1}$ and $B^{-1}$ exist, $(AB)^{-1} = B^{-1}A^{-1}$</li>
 </ul>
 <p>Special inverses of diagonal matrices</p>
-<p>$$D=\begin{bmatrix}d_1 &amp; 0 &amp; 0 \\0 &amp; d_2 &amp; 0 \\0 &amp; 0 &amp; d_3 \end{bmatrix}$$</p>
-<p>$$D^{^-1}=\begin{bmatrix}1/d_1 &amp; 0 &amp; 0 \\0 &amp; 1/d_2 &amp; 0 \\0 &amp; 0 &amp; 1/d_3 \end{bmatrix}$$</p>
+<p>$$D=\begin{bmatrix}d_1 &amp; 0 &amp; 0 \\ 0 &amp; d_2 &amp; 0 \\ 0 &amp; 0 &amp; d_3 \end{bmatrix}$$</p>
+<p>$$D^{^-1}=\begin{bmatrix}1/d_1 &amp; 0 &amp; 0 \\ 0 &amp; 1/d_2 &amp; 0 \\ 0 &amp; 0 &amp; 1/d_3 \end{bmatrix}$$</p>
 <a href="#solving-linear-equations"><h2 id="solving-linear-equations"><span class="hanchor" ariaLabel="Anchor"># </span>Solving Linear Equations</h2></a>
 <p>Given A and b, we want to solve for x in $Ax = b$</p>
-<p>Say, $\begin{bmatrix}2 &amp; -1 \ 1 &amp; 1\end{bmatrix}\begin{bmatrix}x \ y\end{bmatrix} = \begin{bmatrix}1 \ 5\end{bmatrix}$.</p>
+<p>Say, $\begin{bmatrix}2 &amp; -1 \\ 1 &amp; 1\end{bmatrix}\begin{bmatrix}x \\ y\end{bmatrix} = \begin{bmatrix}1 \\ 5\end{bmatrix}$.</p>
 <p>We can interpret this multiple ways:</p>
 <ol>
-<li>By rows: $x$ is the intersection of the hyerplanes $2x-y=1$ and $x+y=5$</li>
-<li>By columns: $x$ is the linear combination that yields the RHS in $x\begin{bmatrix}2 \ 5\end{bmatrix} + y \begin{bmatrix}-1 \ 1\end{bmatrix} = \begin{bmatrix}1 \ 5 \end{bmatrix}$</li>
+<li>By rows: $x$ is the intersection of the hyperplanes $2x-y=1$ and $x+y=5$</li>
+<li>By columns: $x$ is the linear combination that yields the RHS in $x\begin{bmatrix}2 \\ 5\end{bmatrix} + y \begin{bmatrix}-1 \\ 1\end{bmatrix} = \begin{bmatrix}1 \\ 5 \end{bmatrix}$</li>
 <li>Transformation</li>
 </ol>
 <p>$Ax=b$ generally has a solution when $b$ is in the column-space of A. It has a single unique solution if the columns of A are linearly independent.</p>
 <p>If $Ax=b$ has as solution we say it is consistent.</p>
+<p>Basically, $x = A^{-1}b$</p>
 <p>We can solve using Gaussian Elimination</p>
 
 
