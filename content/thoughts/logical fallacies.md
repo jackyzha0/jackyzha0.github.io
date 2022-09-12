@@ -17,3 +17,4 @@ aliases:
 8. Ad hominem: attack on the character of a person rather than their opinions or arguments
 9. Ad populum: eoptional appeal to speak to positive/negative concepts rather than the real issue at hand (e.g. if you were a *true* x)
 10. Red herring: diversionary tactic that avoids key issues by diverting it to another argument
+11. Straw man: oversimplifies an opposing viewpoint and attacks weakened argument

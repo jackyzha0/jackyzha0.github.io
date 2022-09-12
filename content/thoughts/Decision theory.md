@@ -3,9 +3,14 @@ title: "Decision theory"
 date: 2022-09-07
 tags:
 - seed
+- PHIL321A
 ---
 
 Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table
+
+Relatived view of Decision theory:
+
+> Prescriptions in decision  theory are always relative to the formal problem specifications
 
 e.g. Pascal's Wager
 
@@ -36,10 +41,15 @@ Components:
 				- $x \sim y$ is indifference between $x$ and $y$
 		- Utility (numerical value) using an interval scale
 			- Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$
+			- Transformation is linear
 			- Called an ordinal transformation
 
-sion tables
+Decision tables
 1. Art: providing a good formalization of a decision into a table
 2. providing a justified recommendation based off of the formalization
 
-They can also be represented using decision trees
+They can also be represented using [[thoughts/decision tree|decision trees]]
+
+We can transform decision tables between each other using "reasonable transformations"
+1. PIR: assign equal probabilities to all states (if we have no knowledge of probabilities, aka [[thoughts/Decisions under ignorance|DUI]])
+2. Merger: if two states yield identical columns, then we can merge them into one state and add probabilities if we know them

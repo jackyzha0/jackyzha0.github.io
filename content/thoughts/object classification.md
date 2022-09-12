@@ -66,6 +66,8 @@ The Bayes' risk is the shaded region where one class's probability is still non-
 
 ![](/thoughts/images/bayes-risk.png)
 
+See also: [[thoughts/probability|probability]]
+
 ### ROC Curve
 Trade-off between true positive rate and false positive rate. A random classifier will always have 1:1 true positive and false positive rate
 
@@ -103,16 +105,8 @@ Instead of incrementing the histogram bin by a single count, we increment it by 
 
 Dimensionality is $Kd$ where $K$ is number of codewords and $d$ is the dimensionality of the local descriptor (128 for SIFT)
 
-### Decision Tree
-Entropy of set $S$ of data samples is defined as
-
-$$H(s) = - \sum_{c \in C}p(c)\log(p(c))$$
-
-Where $C$ is the set of classes represented in $S$ and $p(c)$ is the empirical distribution of class $c$ in $S$.
-
-Generally, select feature test that maximizes information gain
-
-$$I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$$
+## Decision Tree
+See notes on [[thoughts/decision tree|decision trees]]
 
 ### Classifier Boosting
 - Train an ensemble of classifiers sequentially

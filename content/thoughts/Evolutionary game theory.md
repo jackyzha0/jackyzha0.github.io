@@ -3,6 +3,7 @@ title: "Evolutionary game theory"
 date: 2022-09-07
 tags:
 - seed
+- PHIL321A
 ---
 
 Focuses on the dynamics of strategy change by agents over time.
