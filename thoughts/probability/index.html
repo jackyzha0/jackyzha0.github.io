@@ -59,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.2cc2a0611ab67faaac603753b1e44b46.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.3f792f95b046b8a6c4dbf66a4412e3d0.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fd5dc9b1fe3b655f3edd858eb77f9a87.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2d4e6351d801db749faf9e299569f44d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eb996ebd1a3964591ac5e54d122fe7d3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c29f28fe29bcaf48c83a2a20e3c261da.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -307,6 +307,48 @@ Sep 11, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -329,10 +371,35 @@ Sep 11, 2022
 <p>Probability of both A and B happening. Intersection of the areas of the two events.</p>
 <a href="#marginalization-rule"><h3 id="marginalization-rule"><span class="hanchor" ariaLabel="Anchor"># </span>Marginalization Rule</h3></a>
 <p>For some random variable X</p>
-<p>$$P(A) = \sum_{x \in \mathcal{X}}P(A, X = x)$$</p>
+<p>$$P(A) = \sum_{x \in \mathcal{X}}P(A \cap X = x)$$</p>
 <p>For example, to roll some even number,</p>
-<p>$$P(\textrm{even}) = \sum_{i=1}^6 P(i, \textrm{even}) = 0 + \frac 1 6 + 0 + \frac 1 6 + 0 + \frac 1 6$$</p>
+<p>$$P(\textrm{even}) = \sum_{i=1}^6 P(i \cap \textrm{even}) = 0 + \frac 1 6 + 0 + \frac 1 6 + 0 + \frac 1 6$$</p>
 <a href="#union-of-events"><h2 id="union-of-events"><span class="hanchor" ariaLabel="Anchor"># </span>Union of Events</h2></a>
+<p>Given an event A and B, the probability of both occurring is</p>
+<p>$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$</p>
+<a href="#conditional-probability"><h2 id="conditional-probability"><span class="hanchor" ariaLabel="Anchor"># </span>Conditional Probability</h2></a>
+<p>The probability of A given B has occurred is</p>
+<p>$$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{P(B|A)P(A)}{P(B)}$$</p>
+<p>Deriving from this, we get,</p>
+<ol>
+<li>$P(A \cap B) = P(A|B) P(B)$</li>
+<li>$P(A \cap B) = P(B|A) P(A)$</li>
+</ol>
+<a href="#independence"><h2 id="independence"><span class="hanchor" ariaLabel="Anchor"># </span>Independence</h2></a>
+<p>$$P(A \cap B) = P(A)P(B)$$</p>
+<p>or</p>
+<p>$$P(A|B) = P(A)$$</p>
+<a href="#expected-values"><h2 id="expected-values"><span class="hanchor" ariaLabel="Anchor"># </span>Expected Values</h2></a>
+<p>If we have a random variable $X$ that can takes values $x \in \mathcal{X}$, we define the expectation of X:</p>
+<p>$$\mathbb{E}[X] = \sum_{x \in \mathcal{X}} P(X=x)x$$</p>
+<p>Additionally,</p>
+<ol>
+<li>For functions that depend on a random variable: $\mathbb{E}[f(X)] = \sum_{x \in \mathcal{X}} P(X=x)f(X)$</li>
+<li>$\mathbb{E}[\alpha f(X) + \beta g(X)] = \alpha \mathbb{E}[f(X)] + \beta \mathbb{E}[g(X)]$</li>
+<li>$\mathbb{E}[f(X)g(X)] \neq \mathbb{E}[f(X)] \mathbb{E}[g(X)]$</li>
+<li>$\mathbb{E}[X|Y=y] = \sum_{x \in \mathcal{X}} P(X=x|Y=y)f(X)$</li>
+<li>$\mathbb{E}[\mathbb{E}[X =x | Y=y]] = \mathbb{E}<input checked="" disabled="" type="checkbox"> $ (tower property, law of total expectation, iterated expectation rule)</li>
+</ol>
 
 
     </article>

@@ -61,7 +61,7 @@ Notation Generally column major
   
   
   
-  <link href="https://jzhao.xyz/styles.2cc2a0611ab67faaac603753b1e44b46.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.3f792f95b046b8a6c4dbf66a4412e3d0.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
@@ -121,13 +121,13 @@ Notation Generally column major
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fd5dc9b1fe3b655f3edd858eb77f9a87.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2d4e6351d801db749faf9e299569f44d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.eb996ebd1a3964591ac5e54d122fe7d3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c29f28fe29bcaf48c83a2a20e3c261da.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -575,9 +575,9 @@ Sep 11, 2022
 <a href="#vector-norm"><h3 id="vector-norm"><span class="hanchor" ariaLabel="Anchor"># </span>Vector Norm</h3></a>
 <p>A scalar measure of a vector&rsquo;s length</p>
 <ul>
-<li>$| x | \geq 0$</li>
-<li>Euclidean Norm: $|x|<em>2 = \sqrt{\sum</em>{i=1}^n x_i^2}$  (this is also called the L-2 Norm)</li>
-<li>$| x |_2^2 = x^Tx$</li>
+<li>$\Vert x \Vert \geq 0$</li>
+<li>Euclidean Norm: $\Vert x \Vert_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)</li>
+<li>$\Vert x \Vert_2^2 = x^Tx$</li>
 </ul>
 <a href="#rank"><h3 id="rank"><span class="hanchor" ariaLabel="Anchor"># </span>Rank</h3></a>
 <ul>
@@ -591,8 +591,8 @@ Sep 11, 2022
 <a href="#orthogonal"><h3 id="orthogonal"><span class="hanchor" ariaLabel="Anchor"># </span>Orthogonal</h3></a>
 <p>If for some set of vectors $q$:</p>
 <ul>
-<li>$q_i^Tq_j = 0$, we call $q_i$ and $q_j$ <strong>orthogonal</strong></li>
-<li>$q_i^Tq_j = 1$, we call $q_i$ and $q_j$ <strong>orthonormal</strong></li>
+<li>$q_i^Tq_j = 0$, we call $q_i$ and $q_j$ orthogonal</li>
+<li>$q_i^Tq_j = 1$, we call $q_i$ and $q_j$ orthonormal</li>
 </ul>
 <p>Inner product of square orthogonal matrices is the identity matrix: $Q^TQ = I = QQ^T$</p>
 <a href="#linear-dependence"><h3 id="linear-dependence"><span class="hanchor" ariaLabel="Anchor"># </span>Linear Dependence</h3></a>
