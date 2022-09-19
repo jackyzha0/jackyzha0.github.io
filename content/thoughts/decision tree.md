@@ -3,15 +3,29 @@ title: "Decision Tree"
 date: 2022-09-12
 tags:
 - seed
+- CPSC340
 ---
 
 A simple program consisting of if-else decisions (decision stumps) based on the features.
 
 - We can create a bunch of decision stumps and define a "score" for each possible rule.
 	- An intuitive way of thinking about this is as classification accuracy: "if we use this rule, how many examples do we label correctly?"
+	- We can create a tree using *greedy recursive splitting*: using a sequence of stumps to fit a tree
 - However, accuracy isn't perfect. Sometimes splitting doesn't immediately improve accuracy. We can get around this by generally selecting feature test that maximizes information gain
 	- Entropy of set $S$ of data samples is defined as $H(s) = - \sum_{c \in C}p(c)\log(p(c))$, where $C$ is the set of classes represented in $S$ and $p(c)$ is the empirical distribution of class $c$ in $S$.
 	- Generally, select feature test that maximizes information gain: $I = H(S) - \sum_{i \in {children}}\frac{|S^i|}{|S|}H(S^i)$
+
+```julia
+Input: Vector y of length n with numbers {1,2,..k}
+counts = zeros(k)
+for i in 1:n
+  counts[y[i]] += 1
+entropy = 0
+for c in 1:k
+  prob = counts[c] / n
+  entropy -= prob * log(prob)
+return entropy
+```
 
 ## Tradeoffs
 Advantages

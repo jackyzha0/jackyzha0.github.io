@@ -1,4 +1,4 @@
----
+\---
 title: "Machine Learning"
 date: 2021-07-02T14:03:17-04:00
 tags:
@@ -26,6 +26,12 @@ Healthy skepticism is good though:
 Main topics:
 - [[thoughts/exploratory data analysis|EDA]]
 - [[thoughts/supervised learning|Supervised learning]]
+- [[thoughts/No Free Lunch Theorem]]
+
+Related background:
+- [[thoughts/linear algebra|Linear Algebra]]
+- [[thoughts/probability|Probability]]
+- [[thoughts/calculus|Calculus]]
 
 ## Philosophy
 ### GOFAI (good old-fashioned AI)

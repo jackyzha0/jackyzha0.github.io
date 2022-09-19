@@ -3,6 +3,7 @@ title: "Exploratory data analysis (EDA)"
 date: 2022-09-09
 tags:
 - seed
+- CPSC340
 aliases:
 - EDA
 ---

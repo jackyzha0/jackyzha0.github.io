@@ -50,5 +50,5 @@ Now, let’s imagine you leave your doctor’s office and fire up Instagram to t
 See also: [[thoughts/GDPR|GDPR]]
 
 ### Web3
-- Web2: considers identity public but data private
+- Web2**: considers identity public but data private
 - Web3: identity is private, but data public
