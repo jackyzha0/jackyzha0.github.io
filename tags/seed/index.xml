@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>No Free Lunch Theorem</title>
+      <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</guid>
+      <description>All optimization algorithms perform equally well when their performance is averaged across all possible problems.
+ There is no &amp;ldquo;best&amp;rdquo; machine learning model.</description>
+    </item>
+    
+    <item>
+      <title>Calculus</title>
+      <link>https://jzhao.xyz/thoughts/calculus/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/calculus/</guid>
+      <description>Partial Derivatives Linear Functions with more than one variable. e.g. $f(x)$ where $x \in \mathbb{R}^3$ the following multivariate linear
+$$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp;amp; = a_1x_1 + a_2x_2 + a_3x_3 + b \ &amp;amp; = \sum_{i=1}^3 a_ix_i + b \ &amp;amp; = a^Tx + b \end{split} \end{equation} $$</description>
+    </item>
+    
+    <item>
       <title>Decision Tree</title>
       <link>https://jzhao.xyz/thoughts/decision-tree/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
@@ -23,7 +43,7 @@
       
       <guid>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</guid>
       <description>Decision rules when the agent is ignorant of all probabilities
-Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance Maximin/Leximin Optimism/Pessimism and &amp;ldquo;Best Average&amp;rdquo; Minimax regret Principle of Insufficient Reason  </description>
+Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states Principle:  Avoid dominated acts and prefer dominant acts Can only use dominance principle if states are independent of acts Gold standard, use this whenever possible     Maximin/Leximin  Find the minimum value of each act Choose the act with the least bad worst-case outcome Note: can violate dominance if there are rows with the same minimum Leximin can help resolves ties by removing the minimum value in case of ties.</description>
     </item>
     
     <item>

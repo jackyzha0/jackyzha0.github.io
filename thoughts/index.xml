@@ -6,7 +6,27 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Free Lunch Theorem</title>
+      <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</guid>
+      <description>All optimization algorithms perform equally well when their performance is averaged across all possible problems.
+ There is no &amp;ldquo;best&amp;rdquo; machine learning model.</description>
+    </item>
+    
+    <item>
+      <title>Calculus</title>
+      <link>https://jzhao.xyz/thoughts/calculus/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/calculus/</guid>
+      <description>Partial Derivatives Linear Functions with more than one variable. e.g. $f(x)$ where $x \in \mathbb{R}^3$ the following multivariate linear
+$$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp;amp; = a_1x_1 + a_2x_2 + a_3x_3 + b \ &amp;amp; = \sum_{i=1}^3 a_ix_i + b \ &amp;amp; = a^Tx + b \end{split} \end{equation} $$</description>
+    </item>
+    
     <item>
       <title>Decision Tree</title>
       <link>https://jzhao.xyz/thoughts/decision-tree/</link>
@@ -24,7 +44,7 @@
       
       <guid>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</guid>
       <description>Decision rules when the agent is ignorant of all probabilities
-Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance Maximin/Leximin Optimism/Pessimism and &amp;ldquo;Best Average&amp;rdquo; Minimax regret Principle of Insufficient Reason  </description>
+Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states Principle:  Avoid dominated acts and prefer dominant acts Can only use dominance principle if states are independent of acts Gold standard, use this whenever possible     Maximin/Leximin  Find the minimum value of each act Choose the act with the least bad worst-case outcome Note: can violate dominance if there are rows with the same minimum Leximin can help resolves ties by removing the minimum value in case of ties.</description>
     </item>
     
     <item>
@@ -4254,16 +4274,6 @@ Dreyfus Dreyfus believed that, for any AI system to achieve any sort of general 
     </item>
     
     <item>
-      <title>Machine Learning</title>
-      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
-      <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
-    </item>
-    
-    <item>
       <title>Semantics</title>
       <link>https://jzhao.xyz/thoughts/semantics/</link>
       <pubDate>Fri, 02 Jul 2021 13:49:27 -0400</pubDate>
@@ -4612,6 +4622,16 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       
       <guid>https://jzhao.xyz/thoughts/language-development/</guid>
       <description>Approaches to study of language development  Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible &amp;ndash; this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG) Learnability approach: focuses on explaining the fact that language is acquired (i.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
+      <description>-&amp;ndash; title: &amp;ldquo;Machine Learning&amp;rdquo; date: 2021-07-02T14:03:17-04:00 tags:
+ sapling CPSC340   Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</description>
     </item>
     
     <item>

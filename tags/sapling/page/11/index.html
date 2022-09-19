@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.3db09b58e3c6f21eb16c7509f0e4f2c4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fbaca7274f47b05ccd10d60fc1153ddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -427,14 +427,12 @@ Jul 2, 2021
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/machine-learning/" class="internal-link" data-src="/thoughts/machine-learning/">Machine Learning</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/frame-problem/" class="internal-link" data-src="/thoughts/frame-problem/">Frame Problem</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
                 
             </ul>
         </div>
@@ -447,7 +445,7 @@ Jul 2, 2021
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/frame-problem/" class="internal-link" data-src="/thoughts/frame-problem/">Frame Problem</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/intelligence/" class="internal-link" data-src="/thoughts/intelligence/">Can Machines Think?</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.3db09b58e3c6f21eb16c7509f0e4f2c4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fbaca7274f47b05ccd10d60fc1153ddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -285,6 +285,8 @@ Sep 12, 2022
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+    
 </ul>
 
       
@@ -339,6 +341,7 @@ Sep 12, 2022
 <li>We can create a bunch of decision stumps and define a &ldquo;score&rdquo; for each possible rule.
 <ul>
 <li>An intuitive way of thinking about this is as classification accuracy: &ldquo;if we use this rule, how many examples do we label correctly?&rdquo;</li>
+<li>We can create a tree using <em>greedy recursive splitting</em>: using a sequence of stumps to fit a tree</li>
 </ul>
 </li>
 <li>However, accuracy isn&rsquo;t perfect. Sometimes splitting doesn&rsquo;t immediately improve accuracy. We can get around this by generally selecting feature test that maximizes information gain
@@ -348,7 +351,31 @@ Sep 12, 2022
 </ul>
 </li>
 </ul>
-<a href="#tradeoffs"><h2 id="tradeoffs"><span class="hanchor" ariaLabel="Anchor"># </span>Tradeoffs</h2></a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-julia" data-lang="julia"><span class="line"><span class="cl"><span class="n">Input</span><span class="o">:</span> <span class="kt">Vector</span> <span class="n">y</span> <span class="n">of</span> <span class="n">length</span> <span class="n">n</span> <span class="n">with</span> <span class="n">numbers</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">..</span><span class="kt">k</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">counts</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">:</span><span class="n">n</span>
+</span></span><span class="line"><span class="cl">  <span class="n">counts</span><span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">entropy</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="k">in</span> <span class="mi">1</span><span class="o">:</span><span class="n">k</span>
+</span></span><span class="line"><span class="cl">  <span class="n">prob</span> <span class="o">=</span> <span class="n">counts</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">/</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">  <span class="n">entropy</span> <span class="o">-=</span> <span class="n">prob</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">prob</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">entropy</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#tradeoffs"><h2 id="tradeoffs"><span class="hanchor" ariaLabel="Anchor"># </span>Tradeoffs</h2></a>
 <p>Advantages</p>
 <ul>
 <li>Easy to implement</li>

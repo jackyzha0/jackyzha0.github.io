@@ -8,11 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
+    content="-&ndash; title: &ldquo;Machine Learning&rdquo; date: 2021-07-02T14:03:17-04:00 tags:
+ sapling CPSC340   Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt"
   />
   <title>
-    Machine Learning
+    jzhao.xyz
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -120,13 +120,13 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.3db09b58e3c6f21eb16c7509f0e4f2c4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fbaca7274f47b05ccd10d60fc1153ddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -270,10 +270,10 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Machine Learning</h1>
+      
       <p class="meta">
         Last updated 
-Jul 2, 2021
+Sep 19, 2022
 
  
           
@@ -282,10 +282,6 @@ Jul 2, 2021
 
       </p>
       <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
     
 </ul>
 
@@ -461,6 +457,125 @@ Jul 2, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -468,6 +583,16 @@ Jul 2, 2021
 
 
 
+
+<p>-&ndash;
+title: &ldquo;Machine Learning&rdquo;
+date: 2021-07-02T14:03:17-04:00
+tags:</p>
+<ul>
+<li>sapling</li>
+<li>CPSC340</li>
+</ul>
+<hr>
 <a href="#theory"><h2 id="theory"><span class="hanchor" ariaLabel="Anchor"># </span>Theory</h2></a>
 <p>Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</p>
 <p>We produce a lot of data (see: <a href="/thoughts/Data-Capitalism" rel="noopener" class="internal-link" data-src="/thoughts/Data-Capitalism">data capitalism</a>)</p>
@@ -492,6 +617,13 @@ Jul 2, 2021
 <ul>
 <li><a href="/thoughts/exploratory-data-analysis" rel="noopener" class="internal-link" data-src="/thoughts/exploratory-data-analysis">EDA</a></li>
 <li><a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">Supervised learning</a></li>
+<li><a href="/thoughts/No-Free-Lunch-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/No-Free-Lunch-Theorem">No Free Lunch Theorem</a></li>
+</ul>
+<p>Related background:</p>
+<ul>
+<li><a href="/thoughts/linear-algebra" rel="noopener" class="internal-link" data-src="/thoughts/linear-algebra">Linear Algebra</a></li>
+<li><a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">Probability</a></li>
+<li><a href="/thoughts/calculus" rel="noopener" class="internal-link" data-src="/thoughts/calculus">Calculus</a></li>
 </ul>
 <a href="#philosophy"><h2 id="philosophy"><span class="hanchor" ariaLabel="Anchor"># </span>Philosophy</h2></a>
 <a href="#gofai-good-old-fashioned-ai"><h3 id="gofai-good-old-fashioned-ai"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI (good old-fashioned AI)</h3></a>

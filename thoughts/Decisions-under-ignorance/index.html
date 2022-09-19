@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="Decision rules when the agent is ignorant of all probabilities
-Background Points  No information about probabilities A value function on outcomes a&amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance Maximin/Leximin Optimism/Pessimism and &ldquo;Best Average&rdquo; Minimax regret Principle of Insufficient Reason  "
+Background Points  No information about probabilities A value function on outcomes a&amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states Principle:  Avoid dominated acts and prefer dominant acts Can only use dominance principle if states are independent of acts Gold standard, use this whenever possible     Maximin/Leximin  Find the minimum value of each act Choose the act with the least bad worst-case outcome Note: can violate dominance if there are rows with the same minimum Leximin can help resolves ties by removing the minimum value in case of ties."
   />
   <title>
     Decisions under ignorance (DUI)
@@ -120,13 +120,13 @@ Background Points  No information about probabilities A value function on outcom
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2003264cf1c736cc947cc237142f219f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.3db09b58e3c6f21eb16c7509f0e4f2c4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf8fdb95a9c9da9fc53f7f315fc1b8f0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fbaca7274f47b05ccd10d60fc1153ddd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -298,6 +298,27 @@ Sep 12, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -321,9 +342,40 @@ Sep 12, 2022
 </ol>
 <a href="#rules"><h2 id="rules"><span class="hanchor" ariaLabel="Anchor"># </span>Rules</h2></a>
 <ol>
-<li>Dominance</li>
-<li>Maximin/Leximin</li>
-<li>Optimism/Pessimism and &ldquo;Best Average&rdquo;</li>
+<li>Dominance
+<ol>
+<li>Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better</li>
+<li>Strong Dominance: act $a$ is strictly better than $b$ for all possible states</li>
+<li>Principle:
+<ol>
+<li>Avoid dominated acts and prefer dominant acts</li>
+<li>Can only use dominance principle if states are independent of acts</li>
+<li>Gold standard, use this whenever possible</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Maximin/Leximin
+<ol>
+<li>Find the minimum value of each act</li>
+<li>Choose the act with the least bad worst-case outcome</li>
+<li>Note: can violate dominance if there are rows with the same minimum</li>
+<li>Leximin can help resolves ties by removing the minimum value in case of ties. Note that this violates dominance!</li>
+<li>Leximin* only strikes out a <em>single</em> minimum value in case of ties. This does <em>not</em> violate dominance</li>
+<li>Extremely conservative, avoids the worst-case scenario</li>
+</ol>
+</li>
+<li>Optimism/Pessimism and &ldquo;Best Average&rdquo;
+<ol>
+<li>Maximax (pick the best of the best-case outcomes)</li>
+<li>Best Average: take the best of each row and worst of each row and average it, pick the act with best average</li>
+<li>Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$
+<ol>
+<li>Requires interval scale instead of ordinal scale</li>
+</ol>
+</li>
+</ol>
+</li>
 <li>Minimax regret</li>
 <li>Principle of Insufficient Reason</li>
 </ol>

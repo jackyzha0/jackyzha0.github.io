@@ -2,26 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/tags/CPSC340/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/calculus/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/decision-tree/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/logical-fallacies/</loc>
     <lastmod>2022-09-12T12:49:00-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/PHIL321A/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/CPSC340/</loc>
-    <lastmod>2022-09-12T11:08:25-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/linear-algebra/</loc>
     <lastmod>2022-09-12T11:08:25-07:00</lastmod>
@@ -33,10 +39,10 @@
     <lastmod>2022-09-09T19:45:43-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/exploratory-data-analysis/</loc>
-    <lastmod>2022-09-09T19:45:43-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/supervised-learning/</loc>
-    <lastmod>2022-09-12T12:49:00-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Decision-theory/</loc>
     <lastmod>2022-09-12T12:49:00-07:00</lastmod>
@@ -204,7 +210,7 @@
     <lastmod>2022-08-16T14:44:36-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/privacy/</loc>
-    <lastmod>2022-08-01T22:11:57-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/visualization/</loc>
     <lastmod>2022-07-12T12:39:42-07:00</lastmod>
@@ -660,7 +666,7 @@
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/functional-programming/</loc>
-    <lastmod>2022-07-19T20:49:51-07:00</lastmod>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ask-vs-guess-culture/</loc>
     <lastmod>2022-02-21T15:50:05-05:00</lastmod>
@@ -1361,9 +1367,6 @@
     <loc>https://jzhao.xyz/thoughts/embedded-AI/</loc>
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/thoughts/machine-learning/</loc>
-    <lastmod>2022-09-09T19:45:43-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/semantics/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
   </url><url>
@@ -1528,6 +1531,9 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/language-development/</loc>
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/machine-learning/</loc>
+    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</loc>
     <lastmod>2022-08-08T13:42:43-07:00</lastmod>

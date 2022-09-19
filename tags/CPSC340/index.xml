@@ -6,7 +6,27 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Free Lunch Theorem</title>
+      <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</guid>
+      <description>All optimization algorithms perform equally well when their performance is averaged across all possible problems.
+ There is no &amp;ldquo;best&amp;rdquo; machine learning model.</description>
+    </item>
+    
+    <item>
+      <title>Decision Tree</title>
+      <link>https://jzhao.xyz/thoughts/decision-tree/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/decision-tree/</guid>
+      <description>A simple program consisting of if-else decisions (decision stumps) based on the features.
+ We can create a bunch of decision stumps and define a &amp;ldquo;score&amp;rdquo; for each possible rule.</description>
+    </item>
+    
     <item>
       <title>Linear Algebra</title>
       <link>https://jzhao.xyz/thoughts/linear-algebra/</link>
@@ -19,13 +39,22 @@ Notation Generally column major
     </item>
     
     <item>
-      <title>Machine Learning</title>
-      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
-      <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
+      <title>Exploratory data analysis (EDA)</title>
+      <link>https://jzhao.xyz/thoughts/exploratory-data-analysis/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
+      <guid>https://jzhao.xyz/thoughts/exploratory-data-analysis/</guid>
+      <description>How do you &amp;ldquo;look&amp;rdquo; at features and high-dimensional examples?
+ Summary statistics  Categorical Features  Frequencies Mode Quantiles   Numerical Features  Location  Mean Median Quantiles   Spread  Range Variance Interquartile ranges     Entropy: measured &amp;ldquo;randomness&amp;rdquo; of a set of variables where entropy is $- \Sigma_{c=1}^k p_c \log p_c$ and $p_c$ is the proportion of times you have value $c$, range from $[0, \log k]$  Low entropy means it is very predictable whereas high entropy means it is very unpredictable (roughly, spread) Normal distribution has the highest entropy    Not always representative!</description>
+    </item>
+    
+    <item>
+      <title>Supervised learning</title>
+      <link>https://jzhao.xyz/thoughts/supervised-learning/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/supervised-learning/</guid>
+      <description>Input: take features of examples and corresponding labels as inputs Output: a model that can accurately predict the labels of new examples  Generally, the most successful machine learning technique (with the exception of games)</description>
     </item>
     
   </channel>
