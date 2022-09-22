@@ -6,7 +6,35 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Domain Specific Language (DSL)</title>
+      <link>https://jzhao.xyz/thoughts/DSL/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DSL/</guid>
+      <description>Implementation Stages
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST Evaluate AST -&amp;gt; Result  (optional) Dynamic Checks    Grammar Rules e.</description>
+    </item>
+    
+    <item>
+      <title>Ethics</title>
+      <link>https://jzhao.xyz/thoughts/ethics/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes</title>
+      <link>https://jzhao.xyz/thoughts/Naive-Bayes/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Naive-Bayes/</guid>
+      <description>An example of a [[thoughts/probability|probabilistic]] classifier. Commonly used in spam filters (classifies as spam if the probability of spam is higher than not spam)</description>
+    </item>
+    
     <item>
       <title>No Free Lunch Theorem</title>
       <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
@@ -4426,7 +4454,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  calvin and hobbes semantic image search recreate barcode battler but irl IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
+      <description>Technical  something with https://openai.com/blog/whisper/ calvin and hobbes semantic image search recreate barcode battler but irl IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
     </item>
     
     <item>

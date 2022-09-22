@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Naive Bayes</title>
+      <link>https://jzhao.xyz/thoughts/Naive-Bayes/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Naive-Bayes/</guid>
+      <description>An example of a [[thoughts/probability|probabilistic]] classifier. Commonly used in spam filters (classifies as spam if the probability of spam is higher than not spam)</description>
+    </item>
+    
+    <item>
       <title>No Free Lunch Theorem</title>
       <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>

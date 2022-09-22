@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Implementation Stages
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST Evaluate AST -&gt; Result  (optional) Dynamic Checks    Grammar Rules e."
+  />
+  <title>
+    Domain Specific Language (DSL)
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.3f792f95b046b8a6c4dbf66a4412e3d0.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.53ad9a087e3feeaaa12b63bfd02d923b.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script src="https://unpkg.com/cursor-chat"></script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Domain Specific Language (DSL)</h1>
+      <p class="meta">
+        Last updated 
+Sep 22, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/thoughts/DSL.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+
+
+
+
+
+
+
+<p>Implementation Stages</p>
+<ol>
+<li>Tokenization <code>String -&gt; [Token]</code>
+<ol>
+<li>Makes defining and recognizing correct sequences easier</li>
+<li>Sometimes called lexing</li>
+</ol>
+</li>
+<li>Parsing <code>[Token] -&gt; ParseTree</code>
+<ol>
+<li>A tree that represents a successful parsing of a sequence of tokens</li>
+</ol>
+</li>
+<li>(optional) AST Conversion <code>ParseTree -&gt; AST</code></li>
+<li>(optional) Static Checks <code>AST -&gt; AST</code></li>
+<li>Evaluate <code>AST -&gt; Result</code>
+<ol>
+<li>(optional) Dynamic Checks</li>
+</ol>
+</li>
+</ol>
+<a href="#grammar-rules"><h2 id="grammar-rules"><span class="hanchor" ariaLabel="Anchor"># </span>Grammar Rules</h2></a>
+<p>e.g. for BNF, EBNF</p>
+<ul>
+<li>Generally matches left to right</li>
+<li>Single-quoted strings are literal</li>
+<li>Grammar rules end with semicolons</li>
+</ul>
+<a href="#antlr-lexer"><h3 id="antlr-lexer"><span class="hanchor" ariaLabel="Anchor"># </span>ANTLR Lexer</h3></a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-antlr" data-lang="antlr"><span class="line"><span class="cl"><span class="k">lexer</span><span class="w"> </span><span class="k">grammar</span><span class="w"> </span><span class="nc">TinyHTMLLexer</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">// DEFAULT_MODE is the implicit defualt</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">TITLE_START</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Title:&#39;</span><span class="w"> </span><span class="no">WS</span><span class="o">*</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">mode</span><span class="o">(</span><span class="no">TEXT_MODE</span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">TABLE_START</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Table:&#39;</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">ROW_START</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="s">&#39;[&#39;</span><span class="w"> </span><span class="no">WS</span><span class="o">*</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">mode</span><span class="o">(</span><span class="no">TEXT_MODE</span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">ROW_END</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="s">&#39;]&#39;</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">SEP</span><span class="w">        </span><span class="p">:</span><span class="w"> </span><span class="s">&#39;|&#39;</span><span class="w"> </span><span class="no">WS</span><span class="o">*</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">mode</span><span class="o">(</span><span class="no">TEXT_MODE</span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">WS</span><span class="w">         </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="x">\r\n\t</span><span class="p">]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">channel</span><span class="o">(</span><span class="no">HIDDEN</span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">mode</span><span class="w"> </span><span class="err">TEXT_MODE;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">TEXT</span><span class="w">       </span><span class="p">:</span><span class="w"> </span><span class="o">~</span><span class="p">[[</span><span class="x">|\</span><span class="p">]</span><span class="x">\r\n</span><span class="p">]</span><span class="o">*</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">mode</span><span class="o">(</span><span class="no">DEFAULT_MODE</span><span class="o">)</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">// cant infinite match because as soon as we match, we exist TEXT_MODE</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><a href="#antlr-parser"><h3 id="antlr-parser"><span class="hanchor" ariaLabel="Anchor"># </span>ANTLR Parser</h3></a>
+<ul>
+<li>Parser grammar rules have lower-case non-terminal symbols</li>
+<li>Parser rule bodies can use both parser non-terminals and lexer ones
+<ul>
+<li>Though, we should avoid doing this and keep parser and lexer rules separate</li>
+</ul>
+</li>
+<li>Parser rule bodies may not include regex character classes (e.g. <code>[0-9]</code> or <code>\d</code>)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-antlr" data-lang="antlr"><span class="line"><span class="cl"><span class="k">parser</span><span class="w"> </span><span class="k">grammar</span><span class="w"> </span><span class="nc">TinyHTMLParser</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">options</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">tokenVocab</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>TionyHTMLLexer<span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">program</span><span class="p">:</span><span class="w"> </span><span class="nv">title</span><span class="w"> </span><span class="nv">table</span><span class="o">+</span><span class="w"> </span><span class="no">EOF</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">title</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="no">TITLE_START</span><span class="w"> </span><span class="no">TEXT</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">table</span><span class="w">  </span><span class="p">:</span><span class="w"> </span><span class="no">TABLE_START</span><span class="w"> </span><span class="nv">boldrow</span><span class="w"> </span><span class="nv">row</span><span class="o">+</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">boldrow</span><span class="p">:</span><span class="w"> </span><span class="nv">row</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">row</span><span class="w">    </span><span class="p">:</span><span class="w"> </span><span class="no">ROW_START</span><span class="w"> </span><span class="o">(</span><span class="nv">item</span><span class="w"> </span><span class="o">(</span><span class="no">SEP</span><span class="w"> </span><span class="nv">item</span><span class="o">)*)?</span><span class="w"> </span><span class="no">ROW_END</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nl">item</span><span class="w">   </span><span class="p">:</span><span class="w"> </span><span class="no">TEXT</span><span class="w"> </span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>3 Parsing Guidelines</p>
+<ol>
+<li>The grammar cannot be ambiguous: any given input string has at most one parse tree that accepts it</li>
+<li>No left recursion: each rule cannot start with itself (even indirect)
+<ol>
+<li>Should not allow <code>T ::= T ...</code></li>
+</ol>
+</li>
+<li>Grammar must be locally deterministic: for each choice, we must be able to choose between them based only on the next token (avoid common prefixes, factor them out into separate rules)</li>
+</ol>
+<a href="#language-principles"><h2 id="language-principles"><span class="hanchor" ariaLabel="Anchor"># </span>Language Principles</h2></a>
+<ul>
+<li>Maximize information hiding
+<ul>
+<li>Make classes, members as private as possible</li>
+<li>Public classes should have no public fields (with the exception of constants)</li>
+</ul>
+</li>
+<li>Don&rsquo;t confuse users
+<ul>
+<li>Keep things simple</li>
+<li>Name things well</li>
+<li>Keep things consistent</li>
+<li>Have good documentation</li>
+<li>Avoid unnecessary boilerplate</li>
+<li>Make it boring (intuitive, expected)</li>
+</ul>
+</li>
+</ul>
+<p>What is the purpose of a language?</p>
+<ul>
+<li>We think in a particular language and it determines how you think (see: <a href="/thoughts/linguistic-relativism" rel="noopener" class="internal-link" data-src="/thoughts/linguistic-relativism">Sapir-Whorf</a>)</li>
+<li>Languages should help us think better</li>
+</ul>
+<a href="#cognitive-dimensions-of-notations"><h2 id="cognitive-dimensions-of-notations"><span class="hanchor" ariaLabel="Anchor"># </span>Cognitive Dimensions of Notations</h2></a>
+<ol>
+<li>Abstraction Gradient
+<ul>
+<li>Abstractions make it hard for first-time programmers to understand it</li>
+<li>Abstractions are powerful for professional software developers to make easy to write, read, and maintain software</li>
+<li>There should be a <strong>gradual</strong> increase in complexity <img src="/thoughts/images/abstraction-gradient.png" width="500" /></li>
+<li>Languages with a high abstraction floor are called abstraction-hungry</li>
+<li>Languages with a low abstraction ceiling are called abstraction-hating</li>
+</ul>
+</li>
+<li>Consistency
+<ul>
+<li>Coherence across the features of a language. It is easier to learn something if there are few exceptions to learn</li>
+</ul>
+</li>
+<li>Diffuseness
+<ul>
+<li>How many things there are to learn about a language</li>
+<li>Number of keywords is a good approximation for diffuseness</li>
+</ul>
+</li>
+<li>Error-proneness
+<ul>
+<li>Bloch: make it <em>easy to do it right, hard to do it wrong</em></li>
+<li>The more guarantees you want to make about the program at compile time, the more work the programmer needs to do to get something running</li>
+</ul>
+</li>
+<li>Secondary Notation
+<ul>
+<li>Anything that is only there to help the programmer but does not affect what the code actually does</li>
+</ul>
+</li>
+</ol>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

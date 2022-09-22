@@ -7,6 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Domain Specific Language (DSL)</title>
+      <link>https://jzhao.xyz/thoughts/DSL/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DSL/</guid>
+      <description>Implementation Stages
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST Evaluate AST -&amp;gt; Result  (optional) Dynamic Checks    Grammar Rules e.</description>
+    </item>
+    
+    <item>
+      <title>Ethics</title>
+      <link>https://jzhao.xyz/thoughts/ethics/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes</title>
+      <link>https://jzhao.xyz/thoughts/Naive-Bayes/</link>
+      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Naive-Bayes/</guid>
+      <description>An example of a [[thoughts/probability|probabilistic]] classifier. Commonly used in spam filters (classifies as spam if the probability of spam is higher than not spam)</description>
+    </item>
+    
+    <item>
       <title>No Free Lunch Theorem</title>
       <link>https://jzhao.xyz/thoughts/No-Free-Lunch-Theorem/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>

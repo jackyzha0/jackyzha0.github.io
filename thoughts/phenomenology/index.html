@@ -120,13 +120,13 @@ This is the argument against independent origination or svabhāva, the very thin
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.3db09b58e3c6f21eb16c7509f0e4f2c4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fbaca7274f47b05ccd10d60fc1153ddd.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
