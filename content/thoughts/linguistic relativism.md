@@ -3,6 +3,8 @@ title: "Linguistic Relativism"
 date: 2021-12-23
 tags:
 - sapling
+aliases:
+- Sapir-Whorf
 ---
 
 See: [[thoughts/language|linguistics]]

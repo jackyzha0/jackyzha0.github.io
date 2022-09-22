@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- something with https://openai.com/blog/whisper/
 - calvin and hobbes semantic image search
 - recreate barcode battler but irl
 - IPFS as a versioned package manager for all software

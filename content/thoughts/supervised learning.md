@@ -13,6 +13,7 @@ Generally, the most successful machine learning technique (with the exception of
 
 Examples:
 - [[thoughts/decision tree|Decision trees]]
+- [[thoughts/Naive Bayes]]
 
 ## Notation
 - $X$ is the input
