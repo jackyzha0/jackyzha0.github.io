@@ -154,7 +154,7 @@ Organizers should pay attention to participants as whole human beings. For examp
 Key elements
 * Teach data science in a way that honours context, respects situated knowledge, and makes it clear that data is never "raw".
 * Emphasize the user of data to create shared meaning over individual mastery.
-* Teach data science that values not only reason, but ethics and emotions as well
+* Teach data science that values not only reason, but [[thoughts/ethics|ethics]] and emotions as well
 
 ### Critiques
 "Design by committee produces mediocrity" or "we don't want to end up with the lowest-common-denominator design!"

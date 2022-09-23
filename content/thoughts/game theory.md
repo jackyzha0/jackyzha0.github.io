@@ -26,7 +26,7 @@ Some social practices don't appear rational in normative game theory but can be 
 
 ### Risk, Ignorance, and Uncertainty
 - Decisions under ignorance ([[thoughts/Decisions under ignorance|DUI]]): the agent is ignorant of all probabilities
-- Decisions under risk (DUR): the probability of each outcome is known
+- Decisions under risk ([[thoughts/Decisions under risk|DUR]]): the probability of each outcome is known
 	- We can maximize expected value to figure out what decision to make
 	- Generally need to know utility *and* risk values
 - Decisions under uncertainty (DUU): includes risk, ignorance, and intermediate cases

@@ -48,7 +48,7 @@ Classifier is a procedure that accepts as input a set of features and outputs a 
 ### Standard Bag-of-Words pipeline
 1. Dictionary Learning: learn visual words using clustering
 2. Encode: build Bags-of-words vectors for each image
-3. Classify: train and test data using BOW (KNN, naive Bayes, SVM)
+3. Classify: train and test data using BOW ([[thoughts/KNN|KNN]], [[thoughts/Naive Bayes|naive Bayes]], SVM)
 
 ### Bayes Rule
 Let $c$ be the class label and $x$ be the measurement (evidence)

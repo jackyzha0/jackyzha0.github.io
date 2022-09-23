@@ -16,7 +16,7 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 ## Stages of Adult Development
 ### Stage 2: Self
 - the subject (self) is a collection of short-term practical interests
-- ethics in this mode is “instrumental”: aimed at satisfying your own needs, while working with or around other people’s. Relationships are “transactional”: transient alliances for mutual benefit.
+- [[thoughts/ethics|ethics]] in this mode is “instrumental”: aimed at satisfying your own needs, while working with or around other people’s. Relationships are “transactional”: transient alliances for mutual benefit.
 ### Stage 3: Communal
 - no longer a collection of interests but you *have* interests
 - you are *in* relationships and find yourself defined by them
