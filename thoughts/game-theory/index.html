@@ -121,13 +121,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -467,6 +467,36 @@ Aug 12, 2021
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -502,7 +532,7 @@ Aug 12, 2021
 <a href="#risk-ignorance-and-uncertainty"><h3 id="risk-ignorance-and-uncertainty"><span class="hanchor" ariaLabel="Anchor"># </span>Risk, Ignorance, and Uncertainty</h3></a>
 <ul>
 <li>Decisions under ignorance (<a href="/thoughts/Decisions-under-ignorance" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-ignorance">DUI</a>): the agent is ignorant of all probabilities</li>
-<li>Decisions under risk (DUR): the probability of each outcome is known
+<li>Decisions under risk (<a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a>): the probability of each outcome is known
 <ul>
 <li>We can maximize expected value to figure out what decision to make</li>
 <li>Generally need to know utility <em>and</em> risk values</li>

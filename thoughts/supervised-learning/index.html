@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -324,12 +324,129 @@ Sep 9, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -407,7 +524,46 @@ Sep 9, 2022
 <ul>
 <li><a href="/thoughts/decision-tree" rel="noopener" class="internal-link" data-src="/thoughts/decision-tree">Decision trees</a></li>
 <li><a href="/thoughts/Naive-Bayes" rel="noopener" class="internal-link" data-src="/thoughts/Naive-Bayes">Naive Bayes</a></li>
+<li><a href="/thoughts/KNN" rel="noopener" class="internal-link" data-src="/thoughts/KNN">KNN</a> (to fit an appropriate $k$)</li>
+<li><a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble Methods</a></li>
 </ul>
+<p>Tradeoffs:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Decision trees</th>
+<th>Naive Bayes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># Features used</td>
+<td>Sequences of rules based on 1 feature</td>
+<td>All features</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>$O(dn)$, one pass per depth</td>
+<td>$O(n)$, just counting</td>
+</tr>
+<tr>
+<td>New data</td>
+<td>May need to recompute tree</td>
+<td>Just update counts</td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>Good if simple rules based on individual features work</td>
+<td>Good if features almost independent given label</td>
+</tr>
+<tr>
+<td>Interpretability</td>
+<td>easy to see how decisions are made</td>
+<td>easy to see how each feature influences decision</td>
+</tr>
+</tbody>
+</table>
 <a href="#notation"><h2 id="notation"><span class="hanchor" ariaLabel="Anchor"># </span>Notation</h2></a>
 <ul>
 <li>$X$ is the input</li>
@@ -415,6 +571,11 @@ Sep 9, 2022
 <li>$n$ is the number of examples (generally idnex is denoted by subscript)</li>
 <li>$d$ is the number of features (generally index is denoted by superscript)</li>
 <li>$\hat y$ are the predictions</li>
+</ul>
+<a href="#parametric-vs-non-parametric"><h2 id="parametric-vs-non-parametric"><span class="hanchor" ariaLabel="Anchor"># </span>Parametric vs Non-parametric</h2></a>
+<ul>
+<li>Parametric models: have fixed number of parameters w.r.t. $n$</li>
+<li>Non-parametric models: number of parameters grows with $n$</li>
 </ul>
 <a href="#general-rules"><h2 id="general-rules"><span class="hanchor" ariaLabel="Anchor"># </span>General Rules</h2></a>
 <ul>
@@ -436,6 +597,17 @@ Sep 9, 2022
 <li>Is large if you compare lots of different models, small if you only compare a few.</li>
 </ul>
 </li>
+</ul>
+<a href="#decision-theory"><h2 id="decision-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Decision Theory</h2></a>
+<p>Are we equally concerned about each potential outcome? Usually not! Sometimes, false negatives or false positives have outsized impact &ndash; the cost of mistakes might be different</p>
+<ul>
+<li>Letting a spam message through (false negative) is not a big deal.</li>
+<li>Filtering a not spam (false positive) message will make users mad</li>
+</ul>
+<p>We can look to <a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">decision theory</a> to help us here. Denote $cost(\hat y_i, \tilde y_i)$ as the cost of predicting $\hat y_i$ instead of the actual label $\tilde y_i$.</p>
+<p>Then, instead of predicting the most probable label, compute all possible actions and take the action with the lowest expected cost: $\mathbb E [cost(\hat y_i, \tilde y_i)]$</p>
+<ul>
+<li>We assign the probability of each state to be the confidence of the predicted class (e.g. predicting &lsquo;spam&rsquo; with 0.6 likelihood means we set the probability of true &lsquo;spam&rsquo; to 0.6)</li>
 </ul>
 
 

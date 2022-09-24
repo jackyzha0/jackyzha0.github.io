@@ -120,13 +120,13 @@ Background Points  No information about probabilities A value function on outcom
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,12 +319,110 @@ Sep 12, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -369,16 +467,72 @@ Sep 12, 2022
 <ol>
 <li>Maximax (pick the best of the best-case outcomes)</li>
 <li>Best Average: take the best of each row and worst of each row and average it, pick the act with best average</li>
-<li>Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$
+<li>Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$</li>
+<li>Objections
 <ol>
 <li>Requires interval scale instead of ordinal scale</li>
 </ol>
 </li>
 </ol>
 </li>
-<li>Minimax regret</li>
-<li>Principle of Insufficient Reason</li>
+<li>Minimax regret
+<ol>
+<li>Irrational to reject an act with a chance of a great gain, where the cost is slight.</li>
+<li>Regret value for each outcome = value of the outcome - maximum value in that column</li>
+<li>Max regret for each act is the most negative regret for each row A</li>
+<li>Choose the act with the minimum max regret</li>
+<li>Objections
+<ol>
+<li>Requires interval scale instead of ordinal scale</li>
+<li>Adding irrelevant alternative acts potentially affects recommended acts</li>
 </ol>
+</li>
+</ol>
+</li>
+<li>Principle of Insufficient Reason (PIR)
+<ol>
+<li>If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)</li>
+<li>So, we assign each of the $n$ states probability $1/n$ and maximize the expected value</li>
+<li>For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} value(A, S_i)$</li>
+<li>This turns the problem into a <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a></li>
+<li>Objections
+<ol>
+<li>Requires interval scale instead of ordinal scale</li>
+<li>Arbitrary partitions of states (can result in incoherence)</li>
+<li>Doesn&rsquo;t apply outside games of chance (e.g. Pascal&rsquo;s Wager)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<a href="#rationality-constraints"><h2 id="rationality-constraints"><span class="hanchor" ariaLabel="Anchor"># </span>Rationality Constraints</h2></a>
+<p>Find criteria that any rational decision rule should satisfy. Use these to rule out one or more decision principles</p>
+<p>Milnor proposes a few axioms for rules under DUI:</p>
+<ol>
+<li>Mixture condition (randomization)
+<ol>
+<li>If a rational agent is indifferent between A1 and A2, then the agent must be indifferent between A1, A2 and the mixed strategy $[\frac 1 2 A1, \frac 1 2 A2]$
+<ol>
+<li>Presupposition that the agent has a neutral attitude to risk</li>
+</ol>
+</li>
+<li>Eliminates Maximin (as above)</li>
+<li>Eliminates Minimax Regret (as above)</li>
+<li>Eliminates Optimism-pessimism rule with $\alpha \neq \frac 1 2$</li>
+<li>Eliminates Best Avg if we allow other mixtures</li>
+<li>Only PIR survives</li>
+</ol>
+</li>
+<li>Independence of Irrelevant Alternatives
+<ol>
+<li>A rational agent’s choice will be invariant under an irrelevant expansion B: if $A1 \geq A2$ before adding option B, then $A1 \geq A2$ after adding B.</li>
+<li>Eliminates Minimax Regret</li>
+</ol>
+</li>
+</ol>
+<p>Perhaps we should use different rules for DUI in different situations. Can we be systematic?</p>
+<p><img src="/thoughts/images/dui-situtations.png" width="500" /></p>
+<p>For decisions under partial ignorance, see: <a href="/thoughts/Precautionary-Principle" rel="noopener" class="internal-link" data-src="/thoughts/Precautionary-Principle">Precautionary Principle</a></p>
 
 
     </article>

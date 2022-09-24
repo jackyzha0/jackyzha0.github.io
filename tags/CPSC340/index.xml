@@ -6,7 +6,47 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curse of Dimensionality</title>
+      <link>https://jzhao.xyz/thoughts/Curse-of-Dimensionality/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Curse-of-Dimensionality/</guid>
+      <description>Volume grows exponentially with dimension
+Example If want every location on to have a “neighbor” with distance $\epsilon$,
+ In 1D, we need $O(1 / \epsilon)$ points In 2D, we need $O(1 / \epsilon^2)$ points In DD, we need $O(1 / \epsilon^3)$ points  Our nearest neighbour in high-dimensions might be really really far away</description>
+    </item>
+    
+    <item>
+      <title>Ensemble method</title>
+      <link>https://jzhao.xyz/thoughts/Ensemble-method/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Ensemble-method/</guid>
+      <description>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)
+ Also called “meta-learning”.</description>
+    </item>
+    
+    <item>
+      <title>k-Nearest Neighbours (KNN)</title>
+      <link>https://jzhao.xyz/thoughts/KNN/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/KNN/</guid>
+      <description>To classify an example, we find the $k$ examples closest to the example and take the mode of the $k$ examples.</description>
+    </item>
+    
+    <item>
+      <title>Random Forest</title>
+      <link>https://jzhao.xyz/thoughts/Random-Forest/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Random-Forest/</guid>
+      <description>Example of an [[thoughts/Ensemble method|Ensemble method]]
+They work by taking a vote from a set of deep [[thoughts/decision tree|decision trees]]. Two key ingredients to help ensure the deep decision trees make independent errors</description>
+    </item>
+    
     <item>
       <title>Naive Bayes</title>
       <link>https://jzhao.xyz/thoughts/Naive-Bayes/</link>

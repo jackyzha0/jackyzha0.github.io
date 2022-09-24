@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6c20ceaf3f66a5e9e205c4ff45da8c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f1f5ea546779a4d94d3ef123e354f2e9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,6 +330,42 @@ Sep 19, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -376,100 +412,31 @@ Sep 19, 2022
 
 <p>An example of a <a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">probabilistic</a> classifier. Commonly used in spam filters (classifies as spam if the probability of spam is higher than not spam)</p>
 <p>To model this, it uses Bayes rule:</p>
-<p>$$P(y_i = \textrm{&lsquo;spam&rsquo;} | x_i) = \frac{P(x_i | y_i = \textrm{&lsquo;spam&rsquo;})P(y_i = \textrm{&lsquo;spam&rsquo;})}{P(x_i)}$$</p>
+<p>$$P(y_i = \textrm{spam} | x_i) = \frac{P(x_i | y_i = \textrm{spam})P(y_i = \textrm{spam})}{P(x_i)}$$</p>
 <p>Where</p>
 <ul>
-<li>$P(y_i = \textrm{&lsquo;spam&rsquo;})$ is the marginal probability that an e-mail is spam</li>
+<li>$P(y_i = \textrm{spam})$ is the marginal probability that an e-mail is spam</li>
 <li>$P(x_i)$ is the marginal probability than an e-mail has the set of words $x_i$
 <ul>
 <li>Hard to approximate (lots of ways to combine words)</li>
 </ul>
 </li>
-<li>$P(x_i | y_i = \textrm{&lsquo;spam&rsquo;})$ is the conditional probability that a spam e-mail has the words $x_i$</li>
+<li>$P(x_i | y_i = \textrm{spam})$ is the conditional probability that a spam e-mail has the words $x_i$</li>
 </ul>
-<p>We can actually reframe this to avoid calculating $P(x_i)$ as Naive Bayes just returns spam if $P(y_i = \textrm{&lsquo;spam&rsquo;} | x_i) &gt; P(y_i = \textrm{&rsquo;not spam&rsquo;} | x_i)$</p>
-<p>$$P(x_i | y_i = \textrm{&lsquo;spam&rsquo;}) P(y_i = \textrm{&lsquo;spam&rsquo;}) &gt; P(x_i | y_i = \textrm{&rsquo;not spam&rsquo;}) P(y_i = \textrm{&rsquo;not spam&rsquo;})$$</p>
+<a href="#optimizations"><h2 id="optimizations"><span class="hanchor" ariaLabel="Anchor"># </span>Optimizations</h2></a>
+<a href="#denominator-doesnt-matter"><h3 id="denominator-doesnt-matter"><span class="hanchor" ariaLabel="Anchor"># </span>Denominator doesn&rsquo;t matter</h3></a>
+<p>We can actually reframe this to avoid calculating $P(x_i)$ as Naive Bayes just returns spam if $P(y_i = \textrm{spam} | x_i) &gt; P(y_i = \textrm{not spam} | x_i)$</p>
+<p>Roughly, denominator doesn&rsquo;t matter</p>
+<p>$$\propto P(x_i | y_i = \textrm{spam})P(y_i = \textrm{spam})$$</p>
+<a href="#conditional-independent-assumptions"><h3 id="conditional-independent-assumptions"><span class="hanchor" ariaLabel="Anchor"># </span>Conditional Independent Assumptions</h3></a>
 <p>Additionally, we assume that <em>all</em> features $x_i$ are conditionally independent given label $y_i$ so we can decompose it.</p>
-<hr>
-<blockquote>
-<p><strong>Choose joy.</strong></p>
-<p>Choose it like a child chooses the shoe to put on the right foot, the crayon to paint a sky. Choose it at first consciously, effortfully, pressing against the weight of a world heavy with reasons for sorrow, restless with need for action.</p>
-</blockquote>
-<ul>
-<li>
-<p>cpsc 430</p>
-</li>
-<li>
-<p>cpsc 410</p>
-</li>
-<li>
-<p>milestone 1</p>
-</li>
-<li>
-<p>cpsc 340</p>
-</li>
-<li>
-<p>phil 321a</p>
-</li>
-<li>
-<p>pset 1 → oct 30</p>
-</li>
-</ul>
-<hr>
-<p>non-fungibility of things is good actually (?)</p>
-<ul>
-<li>
-<p>re: tools for conviviality</p>
-</li>
-<li>
-<p>commodities improve trade. interchangeability improves trade and allows for replaceable parts, standardization, and scale.</p>
-</li>
-<li>
-<p>BUT when finished objects becle commodities they break too, but they are easily replaced</p>
-</li>
-<li>
-<p>when the unique breaks, we might mend. we&rsquo;ve lost the art of maintenance because all we do is built what we know how to build what the system requires of us and to conform to what it works with</p>
-</li>
-<li>
-<p>the ability to mass-produce removes the opportunity for the great many to learn to produce at all</p>
-</li>
-</ul>
-<p>thoughts to address:</p>
-<ul>
-<li>
-<p>how does this fit in re: interoperability as a desirable characteristic in systems?</p>
-</li>
-<li>
-<p>do interoperability and commodification always coexist in a system? can we have one without the other?</p>
-</li>
-<li>
-<p>perhaps we as complex beings are composed of fungible things in a way that makes us nonfungible</p>
-</li>
-<li>
-<p>(anson) my blood can be ur blood (same with organs, etc.) which is why organ trade exists i guess</p>
-</li>
-<li>
-<p>complexity as giving rise to non-fungibility through obscurity/inscrutibility</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>optimization bias leads to publication bias</p>
-</li>
-<li>
-<p>supposed that 20 researchers perform the exact same experiment</p>
-</li>
-<li>
-<p>each test p &lt; 0.05, if 1 group finds its significant, it publishes the paper</p>
-</li>
-<li>
-<p>need to publicize failures too</p>
-</li>
-<li>
-<p>contributes to reproducibility crisis</p>
-</li>
-</ul>
+<p>$$\approx \prod_{j=1}^d P(x_{ij}|y_i)P(y_i)$$</p>
+<a href="#laplace-smoothing"><h2 id="laplace-smoothing"><span class="hanchor" ariaLabel="Anchor"># </span>Laplace Smoothing</h2></a>
+<p>If we have no spam messages with lactase, then $P(lactase | spam) = 0$ so spam messages with lactase automatically get through!</p>
+<p>Our estimate of $P(lactase | spam) = 0$ is $\frac{\textrm{# spam messages with lactase}}{\textrm{# spam messages}} = \frac{0}{\textrm{# spam messages}}$</p>
+<p>We can add $\beta$ to the numerator and $\beta k$ to the denominator, which effectively adds $\beta k$ fake examples: $\beta$ for each $k$ where $k$ is a possible class (2 for a binary classifier)</p>
+<p>So for our binary spam classifier (with $\beta = 1$):</p>
+<p>$$\frac{\textrm{# spam messages with lactase} + 1}{\textrm{# spam messages} + 2}$$</p>
 
 
     </article>
@@ -493,6 +460,16 @@ Sep 19, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/object-classification/" data-ctx="naive Bayes" data-src="/thoughts/object-classification" class="internal-link">Object Classification</a>
+      </li>
+      
       
       
       <li>
