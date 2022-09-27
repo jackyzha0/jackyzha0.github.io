@@ -158,6 +158,8 @@ tags:
 	- Packet switched electricity
 	- Cloud transport fiction
 		- What if we lived in a world where water was incredibly scarce? People would pay huge amounts of money to ship clouds around and 'mine' them for their crops
+	- saving sun for later
+		- make something we take for granted extremely scarce
 - Poetry
 	- We like sunset because it's the only time we see the cosmos move
 - Essays

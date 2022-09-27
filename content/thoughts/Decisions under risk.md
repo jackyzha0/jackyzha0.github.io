@@ -38,3 +38,49 @@ Utility theory allows for outcomes without monetary value, or whose value can’
 Note that generally, there is a diminishing marginal utility of money
 
 For example, in a lottery where you win $1M for sure (A) or 50% chance to win $3M and 50% chance to get nothing (B), most people would choose A. The change in utility from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.
+
+## Paradoxes and Puzzles
+### Allais Paradox
+1. Situation A: Choose between
+	1. $1 million for sure
+	2. A lottery:
+		1. 10% for $5  million
+		2. 89% for $1 million,
+		3. 1% for nothing.
+2. Situation B: Choose between
+	1. 10% for $5 million
+	2. 11% for $1million
+
+Paradox arrises if you choose a) over b) in situation A and d) over c) in situation B. But, we can show that these two situations are equivalent.
+
+Solutions:
+1. Savage: fix irrational preferences of people!
+2. Revise the table: utilities of the same amount of money is not the same in the two situations (not very plausible)
+3. Priority heuristics (Gigerenzer): people have a hierarchy of goals and avoiding uncertainty is high on the list (hard to defend as a normative principle)
+
+### Ellsberg Paradox
+Same idea as Allais Paradox but shifts probabilities instead of values
+
+Urn with 90 balls
+- 30 red balls (R), 60 black (B) or yellow balls (Y)
+- Let $p * 60$ be the number of black and $(1-p)*60$ is the number of yellow balls
+- A ball will be draw and you make a bet on its colour
+
+1. Situation A: Bet R or B. Receive $100 if right, $0 if wrong
+2. Situation B: Bet (R or Y) or (B or Y). Receive $100 if right, $0 if wrong
+
+Many people bet R in Situation A but bet (B or Y) kin situation B. People like to avoid uncertainty! However, this is inconsistent with EU Max
+
+### St. Petersburg Paradox
+A fair coin is tossed until it comes up Heads. If Heads appears for the first time on toss $n$, you are paid $\$n$
+
+What is the EMV of this game? Technically, the St. Petersburg game involves infinitely many states
+
+$$EMV = (1/2)\$2 + (1/2)^2\$2 + \dots = 1 + 1 + \dots = \infty$$
+You should be willing to pay any price to play!
+
+Solutions
+1. Bernoulli: diminishing marginal utility of money
+	1. Refutation: change payout to $\$2^n$
+2. Buffon: *de minimis condition*
+	1. Ignore tiny probabilities

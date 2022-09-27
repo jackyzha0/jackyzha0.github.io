@@ -27,6 +27,7 @@ Main topics:
 - [[thoughts/exploratory data analysis|EDA]]
 - [[thoughts/supervised learning|Supervised learning]]
 - [[thoughts/No Free Lunch Theorem]]
+- [[thoughts/unsupervised learning]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]
