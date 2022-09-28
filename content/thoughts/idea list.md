@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
 - something with https://openai.com/blog/whisper/
 - calvin and hobbes semantic image search
 - recreate barcode battler but irl

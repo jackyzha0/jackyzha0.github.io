@@ -8,7 +8,7 @@ aliases:
 - PP
 ---
 
-- Ordinary scenarios: maximize expected utility (EU Max)
+- Ordinary scenarios: maximize expected [[thoughts/utility|utility]] (EU Max)
 - Precautionary scenarios: avoid catastrophic harm (Precautionary Principle)
 
 ## Tripod Framework

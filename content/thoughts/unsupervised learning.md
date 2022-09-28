@@ -17,4 +17,4 @@ In **unsupervised learning**, we only have $x_i$ values, but no explicit target 
 - Ranking: what are the most important $x_i$?
 
 Examples:
-- [[thoughts/clustering|Clustering (K-means)]]
+- [[thoughts/clustering|Clustering]]

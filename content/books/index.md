@@ -9,7 +9,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Fiction
 * **Project Hail Mary** by Andy Weir
-* **Permutation City** by Greg Egan
+
 * **Homo Ludens** by Johan Huizinga
 
 ### Non-fiction
@@ -23,6 +23,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Current
 * **Seeing Like A State** by James C. Scott
+* **Permutation City** by Greg Egan
 
 ## Past
 2022

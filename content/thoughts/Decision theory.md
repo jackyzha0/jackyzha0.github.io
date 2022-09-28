@@ -28,7 +28,7 @@ Components:
 	- States should be
 		- **Mutually exclusive**
 		- **Exhaustive**: no possibility is left out
-		- **Relevant partition**: distinctions that actually have impact on probability or utility of outcomes
+		- **Relevant partition**: distinctions that actually have impact on probability or [[thoughts/utility|utility]] of outcomes
 		- **Independence**: (optional) each state should be [[thoughts/causality|causally]] and probabilistically independent of the *acts*
 			- Dominance principle only holds if independent holds
 - Cells are outcomes.
@@ -39,7 +39,7 @@ Components:
 				- $x \succcurlyeq y$ is a weak preference
 				- $x \succ y$ is a strong preference
 				- $x \sim y$ is indifference between $x$ and $y$
-		- Utility (numerical value) using an interval scale
+		- [[thoughts/utility|Utility]] (numerical value) using an interval scale
 			- Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$
 			- Transformation is linear
 			- Called an ordinal transformation

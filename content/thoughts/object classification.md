@@ -81,21 +81,7 @@ Trade-off between true positive rate and false positive rate. A random classifie
 	- slow
 	- highly flexible decision boundaries 
 
-### K-Means
-Assumption that we know how many clusters there are as a prior ($k$ in K-Means)
-
-Minimize $\sum_{i \in \textrm{clusters}} \{ \sum_{j \in i^{th} \textrm{cluster}} ||x_j - \mu_i||^2 \}$
-
-1.  pick some k
-2.  assign data to k different clusters randomly
-3.  iterate
-    1.  center update → calculate average for each cluster (using euclidian distance)
-    2.  label update → re-assign the data to the closest cluster center
-    3.  if no labels changed, finish (model has converged)
-
-Warning: the clustering is initialization dependent and converges to a local minimum. Often requires some amount of random runs to approximate a good solution, pick best one.
-
-Limited to compact/spherical clusters in high-dimensions (which is poor for modeling clusters with the same mean but different distributions)
+See: [[K]]
 
 ### Spatial Pyramid
 Have multiple scales of the input image to compute histograms across. Train a classifier for each scale along with a combined weight to combine each classifier.

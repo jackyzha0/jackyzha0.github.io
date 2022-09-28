@@ -98,3 +98,42 @@ What is the purpose of a language?
 	- The more guarantees you want to make about the program at compile time, the more work the programmer needs to do to get something running
 5. Secondary Notation
 	- Anything that is only there to help the programmer but does not affect what the code actually does
+
+## Visitor Pattern
+The visitor design pattern is a way of separating an algorithm from an object structure on which it operates
+
+We could just evaluate each AST node, but this places the responsibility on the nodes for how to do this.
+
+1. Support multiple kinds of "evaluation" for our AST without having to edit every node every node every time
+2. Evaluation is in a separate file from the AST implementation
+
+```typescript
+export class Client() {
+	nodes: Element
+	doSomething() {
+		const visitor: Visitor<T, U> = // idk some visitor to do something
+		for (node in this.nodes) {
+			node.accept(visitor)
+		}
+	}
+}
+
+export interface Element {
+	accept: (visitor: Visitor<T, U>, param: T): void,
+}
+
+class ConcreteA implements Element {
+	accept(visitor: Visitor<T, U>, param: T) {
+		visitor.visit(this, param)
+	}
+}
+
+// same for ConcreteB
+
+export interface Visitor<T, U> {
+	// where ConreteA and ConcreteB both inherit from Element
+	visit: (a: ConcreteA, param: T): void,
+	visit: (b: ConcreteB, param: T): void,
+	...
+}
+```

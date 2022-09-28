@@ -34,7 +34,7 @@ Like joining a club, it's not about how many times you've attending meetings but
 ### Code as Content
 Code, like any other type of content available online today, is **trending toward modularity**: a mille-feuille layer cake of little libraries instead of one big, jiggling, Jell-O mold.
 
-"Like a book or video, code is just a bunch of information, packaged up for distribution. But its role as a utility is more explicit."
+"Like a book or video, code is just a bunch of information, packaged up for distribution. But its role as a [[thoughts/utility|utility]] is more explicit."
 
 Today, "content" is better understood not as a thing we set out to make -- as an automaker might exist solely to produce cars -- but as "an externality from [our] existing social systems." Content is a snapshot of our civilization.
 

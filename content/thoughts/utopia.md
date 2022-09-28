@@ -6,7 +6,7 @@ tags:
 ---
 
 ## What is a utopia?
-Utilitarian perspective: a society where everyone can fully maximize their utility function
+[[thoughts/Utilitarianism|Utilitarian]] perspective: a society where everyone can fully maximize their [[thoughts/utility|utility]] function
 
 ## Is one even possible?
 In a scarce world with infinite wants, no. Our concept of utopia is related to our concept of abundance, and most believable forms of utopia depend on being able to leave Earth, thereby providing us with near-infinite resources.
