@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,10 +353,27 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Curse-of-Dimensionality/">Curse of Dimensionality</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/convex/">Convex</a></h3>
                             </div>
                             <p class="meta">
-                                53 words on Sep 23, 2022
+                                17 words on Sep 28, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/density-based-clustering/">Density-based clustering</a></h3>
+                            </div>
+                            <p class="meta">
+                                174 words on Sep 28, 2022
                             </p>
                             <ul class="tags">
     
@@ -369,27 +386,8 @@ Jul 14, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Decisions-under-risk/">Decisions under risk (DUR)</a></h3>
-                            </div>
-                            <p class="meta">
-                                233 words on Sep 23, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 481 more →</a>
+                <a href="/thoughts">See 489 more →</a>
             </div>
         </div>
         <article>

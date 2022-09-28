@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -522,6 +522,14 @@ More on this in
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/A-City-is-not-a-Computer/" data-ctx="quantized" data-src="/thoughts/A-City-is-not-a-Computer" class="internal-link">A City is not a Computer</a>
       </li>
@@ -535,6 +543,12 @@ More on this in
       
       
       <li>
+        <a href="/thoughts/K-means/" data-ctx="quantization" data-src="/thoughts/K-means" class="internal-link">K-means</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Post-It-Note-City/" data-ctx="label and quantize everything" data-src="/thoughts/Post-It-Note-City" class="internal-link">Post-It Note City</a>
       </li>
       
@@ -542,6 +556,12 @@ More on this in
       
       <li>
         <a href="/thoughts/To-Live-in-their-Utopia/" data-ctx="quantization" data-src="/thoughts/To-Live-in-their-Utopia" class="internal-link">To Live in their Utopia</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Utilitarianism/" data-ctx="quantization" data-src="/thoughts/Utilitarianism" class="internal-link">Utilitarianism</a>
       </li>
       
       

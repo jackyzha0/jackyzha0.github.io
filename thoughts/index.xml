@@ -6,7 +6,84 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convex</title>
+      <link>https://jzhao.xyz/thoughts/convex/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/convex/</guid>
+      <description>A set is convex if line between two points in the set stays in the set.
+![[thoughts/images/convexity.png]]</description>
+    </item>
+    
+    <item>
+      <title>Density-based clustering</title>
+      <link>https://jzhao.xyz/thoughts/density-based-clustering/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/density-based-clustering/</guid>
+      <description>Clusters are defined by “dense” regions. Examples in non-dense regions don’t get clustered Clusters can be non-convex  It is non-parametric (there is no fixed number of clusters $k$)</description>
+    </item>
+    
+    <item>
+      <title>K-means</title>
+      <link>https://jzhao.xyz/thoughts/K-means/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/K-means/</guid>
+      <description>Assumption that we know how many clusters there are as a prior ($k$ in K-Means). Designed for vector [[thoughts/quantization|quantization]]: replacing examples with the mean of their cluster (collapsing a bunch of examples of a class down to a single example)</description>
+    </item>
+    
+    <item>
+      <title>Utility</title>
+      <link>https://jzhao.xyz/thoughts/utility/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/utility/</guid>
+      <description>Utility is the tendency of an object to produce happiness or prevent unhappiness for an individual or a community.
+How can we assign utilities to represent preferences?</description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>https://jzhao.xyz/thoughts/clustering/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/clustering/</guid>
+      <description>We want to assign examples to &amp;ldquo;groups&amp;rdquo;.
+Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]]  </description>
+    </item>
+    
+    <item>
+      <title>Kant</title>
+      <link>https://jzhao.xyz/thoughts/Kant/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Kant/</guid>
+      <description>The [[thoughts/ethics|ethical]] theory of the German philosopher Immanuel Kant
+Good will and the Categorical Imperative  &amp;ldquo;What is always good without qualification?</description>
+    </item>
+    
+    <item>
+      <title>Unsupervised learning</title>
+      <link>https://jzhao.xyz/thoughts/unsupervised-learning/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/unsupervised-learning/</guid>
+      <description>In [[thoughts/supervised learning|supervised learning]], we have features $x_i$ and class labels $y_i$. Write a program that produces $y_i$ form $x_i$</description>
+    </item>
+    
+    <item>
+      <title>Utilitarianism</title>
+      <link>https://jzhao.xyz/thoughts/Utilitarianism/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Utilitarianism/</guid>
+      <description>Act Utilitarianism Also called the Greatest Happiness Principle.
+An action is good if its benefits exceed its harms, and an action is bad if its harms exceed its benefits.</description>
+    </item>
+    
     <item>
       <title>Curse of Dimensionality</title>
       <link>https://jzhao.xyz/thoughts/Curse-of-Dimensionality/</link>
@@ -54,7 +131,7 @@ When evaluating, we often need to quantify what outcomes are more [[thoughts/val
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Precautionary-Principle/</guid>
-      <description>Ordinary scenarios: maximize expected utility (EU Max) Precautionary scenarios: avoid catastrophic harm (Precautionary Principle)  Tripod Framework Manson&amp;rsquo;s Framework for when to use the precautionary principle</description>
+      <description>Ordinary scenarios: maximize expected [[thoughts/utility|utility]] (EU Max) Precautionary scenarios: avoid catastrophic harm (Precautionary Principle)  Tripod Framework Manson&amp;rsquo;s Framework for when to use the precautionary principle</description>
     </item>
     
     <item>
@@ -83,7 +160,7 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/ethics/</guid>
-      <description>Ethics is the rational systematic analysis of morality. Morality is the compass of what people ought to or ought not to do.</description>
+      <description>Ethics is the rational systematic analysis of morality. Morality is the compass of what people ought to or ought not to do, especially when it can cause benefit or harm to other people.</description>
     </item>
     
     <item>
@@ -2886,7 +2963,7 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
       <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/utopia/</guid>
-      <description>What is a utopia? Utilitarian perspective: a society where everyone can fully maximize their utility function
+      <description>What is a utopia? [[thoughts/Utilitarianism|Utilitarian]] perspective: a society where everyone can fully maximize their [[thoughts/utility|utility]] function
 Is one even possible? In a scarce world with infinite wants, no.</description>
     </item>
     
@@ -3107,7 +3184,7 @@ Right for individuals to &amp;ldquo;determine the development of their life in a
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Rokos-Basilisk/</guid>
-      <description>A form of arithmetical utilitarianism (see: effective altruism), assuming that one can meaningfully calculate the utility of actions as a numerical value.</description>
+      <description>A form of arithmetical [[thoughts/Utilitarianism|utilitarianism]] (see: effective altruism), assuming that one can meaningfully calculate the [[thoughts/utility|utility]] of actions as a numerical value.</description>
     </item>
     
     <item>
@@ -4514,7 +4591,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  something with https://openai.com/blog/whisper/ calvin and hobbes semantic image search recreate barcode battler but irl IPFS as a versioned package manager for all software  webgpt but its for tools for thought  &amp;ldquo;A reader-generated essay is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.</description>
+      <description>Technical  latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
     </item>
     
     <item>

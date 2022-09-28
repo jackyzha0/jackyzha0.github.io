@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -326,6 +326,8 @@ Sep 22, 2022
   
     
   
+    
+  
   
     
       
@@ -355,6 +357,8 @@ Sep 22, 2022
 
   
   
+  
+    
   
     
   
@@ -555,7 +559,76 @@ Sep 22, 2022
 </ul>
 </li>
 </ol>
-
+<a href="#visitor-pattern"><h2 id="visitor-pattern"><span class="hanchor" ariaLabel="Anchor"># </span>Visitor Pattern</h2></a>
+<p>The visitor design pattern is a way of separating an algorithm from an object structure on which it operates</p>
+<p>We could just evaluate each AST node, but this places the responsibility on the nodes for how to do this.</p>
+<ol>
+<li>Support multiple kinds of &ldquo;evaluation&rdquo; for our AST without having to edit every node every node every time</li>
+<li>Evaluation is in a separate file from the AST implementation</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">Client() {</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">nodes</span>: <span class="kt">Element</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">doSomething() {</span>
+</span></span><span class="line"><span class="cl">		<span class="kr">const</span> <span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;</span> <span class="o">=</span> <span class="c1">// idk some visitor to do something
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">for</span> <span class="p">(</span><span class="nx">node</span> <span class="k">in</span> <span class="k">this</span><span class="p">.</span><span class="nx">nodes</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nx">node</span><span class="p">.</span><span class="nx">accept</span><span class="p">(</span><span class="nx">visitor</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="o">:</span> <span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">ConcreteA</span> <span class="kr">implements</span> <span class="nx">Element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">visitor</span><span class="p">.</span><span class="nx">visit</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">param</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// same for ConcreteB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// where ConreteA and ConcreteB both inherit from Element
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">a</span>: <span class="kt">ConcreteA</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">b</span>: <span class="kt">ConcreteB</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
     </article>
     <hr/>

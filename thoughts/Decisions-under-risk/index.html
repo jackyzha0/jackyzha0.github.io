@@ -121,13 +121,13 @@ When evaluating, we often need to quantify what outcomes are more [[thoughts/val
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -305,12 +305,318 @@ Sep 23, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -355,12 +661,12 @@ Sep 23, 2022
 <ol>
 <li>Expected Value (EV)</li>
 <li>Expected Monetary Value (EMV)</li>
-<li>Expected Utility (EU)</li>
+<li>Expected <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> (EU)</li>
 </ol>
-<p>Typically, we use EU. Sometimes we use EMV under the assumption that it is equivalent to EU in a free market (utility is a positive linear transformation of monetary value)</p>
+<p>Typically, we use EU. Sometimes we use EMV under the assumption that it is equivalent to EU in a free market (<a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> is a positive linear transformation of monetary value)</p>
 <p>Two arguments for why EU Max:</p>
 <ol>
-<li>In the long run, no strategy can be expected to do better than maximizing expected utility.
+<li>In the long run, no strategy can be expected to do better than maximizing expected <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a>.
 <ul>
 <li>Objections
 <ul>
@@ -374,12 +680,73 @@ Sep 23, 2022
 </li>
 </ol>
 <a href="#maximizing-expected-utility"><h2 id="maximizing-expected-utility"><span class="hanchor" ariaLabel="Anchor"># </span>Maximizing Expected Utility</h2></a>
-<p>Utility is a numerical representation of the agent’s preference ranking</p>
-<p>Generally, we prefer using EU over EMV</p>
-<p>Utility theory allows for outcomes without monetary value, or whose value can’t be measured solely in terms of monetary payoff.</p>
+<p><a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> is a numerical representation of the agent’s preference ranking</p>
+<p>Generally, we prefer using EU over EMV.</p>
+<p>See also: <a href="/thoughts/Utilitarianism" rel="noopener" class="internal-link" data-src="/thoughts/Utilitarianism">utilitarianism</a></p>
+<p><a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> theory allows for outcomes without monetary value, or whose value can’t be measured solely in terms of monetary payoff.</p>
 <a href="#utility-of-money"><h3 id="utility-of-money"><span class="hanchor" ariaLabel="Anchor"># </span>Utility of Money</h3></a>
-<p>Note that generally, there is a diminishing marginal utility of money</p>
-<p>For example, in a lottery where you win $1M for sure (A) or 50% chance to win $3M and 50% chance to get nothing (B), most people would choose A. The change in utility from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.</p>
+<p>Note that generally, there is a diminishing marginal <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> of money</p>
+<p>For example, in a lottery where you win $1M for sure (A) or 50% chance to win $3M and 50% chance to get nothing (B), most people would choose A. The change in <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.</p>
+<a href="#paradoxes-and-puzzles"><h2 id="paradoxes-and-puzzles"><span class="hanchor" ariaLabel="Anchor"># </span>Paradoxes and Puzzles</h2></a>
+<a href="#allais-paradox"><h3 id="allais-paradox"><span class="hanchor" ariaLabel="Anchor"># </span>Allais Paradox</h3></a>
+<ol>
+<li>Situation A: Choose between
+<ol>
+<li>$1 million for sure</li>
+<li>A lottery:
+<ol>
+<li>10% for $5  million</li>
+<li>89% for $1 million,</li>
+<li>1% for nothing.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Situation B: Choose between
+<ol>
+<li>10% for $5 million</li>
+<li>11% for $1million</li>
+</ol>
+</li>
+</ol>
+<p>Paradox arrises if you choose a) over b) in situation A and d) over c) in situation B. But, we can show that these two situations are equivalent.</p>
+<p>Solutions:</p>
+<ol>
+<li>Savage: fix irrational preferences of people!</li>
+<li>Revise the table: utilities of the same amount of money is not the same in the two situations (not very plausible)</li>
+<li>Priority heuristics (Gigerenzer): people have a hierarchy of goals and avoiding uncertainty is high on the list (hard to defend as a normative principle)</li>
+</ol>
+<a href="#ellsberg-paradox"><h3 id="ellsberg-paradox"><span class="hanchor" ariaLabel="Anchor"># </span>Ellsberg Paradox</h3></a>
+<p>Same idea as Allais Paradox but shifts probabilities instead of values</p>
+<p>Urn with 90 balls</p>
+<ul>
+<li>30 red balls (R), 60 black (B) or yellow balls (Y)</li>
+<li>Let $p * 60$ be the number of black and $(1-p)*60$ is the number of yellow balls</li>
+<li>A ball will be draw and you make a bet on its colour</li>
+</ul>
+<ol>
+<li>Situation A: Bet R or B. Receive $100 if right, $0 if wrong</li>
+<li>Situation B: Bet (R or Y) or (B or Y). Receive $100 if right, $0 if wrong</li>
+</ol>
+<p>Many people bet R in Situation A but bet (B or Y) kin situation B. People like to avoid uncertainty! However, this is inconsistent with EU Max</p>
+<a href="#st-petersburg-paradox"><h3 id="st-petersburg-paradox"><span class="hanchor" ariaLabel="Anchor"># </span>St. Petersburg Paradox</h3></a>
+<p>A fair coin is tossed until it comes up Heads. If Heads appears for the first time on toss $n$, you are paid $$n$</p>
+<p>What is the EMV of this game? Technically, the St. Petersburg game involves infinitely many states</p>
+<p>$$EMV = (1/2)$2 + (1/2)^2$2 + \dots = 1 + 1 + \dots = \infty$$
+You should be willing to pay any price to play!</p>
+<p>Solutions</p>
+<ol>
+<li>Bernoulli: diminishing marginal <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> of money
+<ol>
+<li>Refutation: change payout to $$2^n$</li>
+</ol>
+</li>
+<li>Buffon: <em>de minimis condition</em>
+<ol>
+<li>Ignore tiny probabilities</li>
+</ol>
+</li>
+</ol>
 
 
     </article>
@@ -409,8 +776,18 @@ Sep 23, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Decisions-under-ignorance/" data-ctx="DUR" data-src="/thoughts/Decisions-under-ignorance" class="internal-link">Decisions under ignorance (DUI)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Utilitarianism/" data-ctx="DUR" data-src="/thoughts/Utilitarianism" class="internal-link">Utilitarianism</a>
       </li>
       
       

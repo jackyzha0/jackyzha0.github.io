@@ -6,7 +6,44 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Density-based clustering</title>
+      <link>https://jzhao.xyz/thoughts/density-based-clustering/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/density-based-clustering/</guid>
+      <description>Clusters are defined by “dense” regions. Examples in non-dense regions don’t get clustered Clusters can be non-convex  It is non-parametric (there is no fixed number of clusters $k$)</description>
+    </item>
+    
+    <item>
+      <title>K-means</title>
+      <link>https://jzhao.xyz/thoughts/K-means/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/K-means/</guid>
+      <description>Assumption that we know how many clusters there are as a prior ($k$ in K-Means). Designed for vector [[thoughts/quantization|quantization]]: replacing examples with the mean of their cluster (collapsing a bunch of examples of a class down to a single example)</description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>https://jzhao.xyz/thoughts/clustering/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/clustering/</guid>
+      <description>We want to assign examples to &amp;ldquo;groups&amp;rdquo;.
+Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]]  </description>
+    </item>
+    
+    <item>
+      <title>Unsupervised learning</title>
+      <link>https://jzhao.xyz/thoughts/unsupervised-learning/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/unsupervised-learning/</guid>
+      <description>In [[thoughts/supervised learning|supervised learning]], we have features $x_i$ and class labels $y_i$. Write a program that produces $y_i$ form $x_i$</description>
+    </item>
+    
     <item>
       <title>Curse of Dimensionality</title>
       <link>https://jzhao.xyz/thoughts/Curse-of-Dimensionality/</link>

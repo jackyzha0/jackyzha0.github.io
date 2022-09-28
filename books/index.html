@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -272,7 +272,7 @@ if (!doNotTrack) {
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Aug 24, 2022
+Sep 28, 2022
 
  
           
@@ -436,9 +436,12 @@ Aug 24, 2022
 </blockquote>
 <a href="#fiction"><h3 id="fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Fiction</h3></a>
 <ul>
-<li><strong>Project Hail Mary</strong> by Andy Weir</li>
-<li><strong>Permutation City</strong> by Greg Egan</li>
-<li><strong>Homo Ludens</strong> by Johan Huizinga</li>
+<li>
+<p><strong>Project Hail Mary</strong> by Andy Weir</p>
+</li>
+<li>
+<p><strong>Homo Ludens</strong> by Johan Huizinga</p>
+</li>
 </ul>
 <a href="#non-fiction"><h3 id="non-fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Non-fiction</h3></a>
 <ul>
@@ -464,6 +467,7 @@ Aug 24, 2022
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>
 <li><strong>Seeing Like A State</strong> by James C. Scott</li>
+<li><strong>Permutation City</strong> by Greg Egan</li>
 </ul>
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <p>2022</p>

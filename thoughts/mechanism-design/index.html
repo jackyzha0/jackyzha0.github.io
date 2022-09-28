@@ -120,13 +120,13 @@ Mechanism design asks how one can design systems so that agents’ selfish behav
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -333,6 +333,36 @@ May 1, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -343,7 +373,7 @@ May 1, 2022
 <p><em>Distributed Algorithmic Mechanism Design: Recent Results and Future Directions</em>. Joan Feigenbaum and Scott Shenker</p>
 <p>Mechanism design asks how one can design systems so that agents’ selfish behavior results in the desired system-wide goals (similar to <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentive</a> design)</p>
 <p>The mechanism designer’s task is to find a formula for the payments that causes agents to be no worse off by revealing their true costs than they would be by lying about their costs</p>
-<p>Mechanisms in which agents are asked to directly reveal their utility functions are call direct mechanisms</p>
+<p>Mechanisms in which agents are asked to directly reveal their <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> functions are call direct mechanisms</p>
 <p>A <em>dominant strategy</em> is one where agents only choose strategies that regardless of how other agents play, never result in lower payoffs than any other strategy.</p>
 
 

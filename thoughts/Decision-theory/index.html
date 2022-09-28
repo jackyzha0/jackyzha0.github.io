@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -451,6 +451,66 @@ Sep 7, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -500,7 +560,7 @@ Sep 7, 2022
 <ul>
 <li><strong>Mutually exclusive</strong></li>
 <li><strong>Exhaustive</strong>: no possibility is left out</li>
-<li><strong>Relevant partition</strong>: distinctions that actually have impact on probability or utility of outcomes</li>
+<li><strong>Relevant partition</strong>: distinctions that actually have impact on probability or <a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a> of outcomes</li>
 <li><strong>Independence</strong>: (optional) each state should be <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causally</a> and probabilistically independent of the <em>acts</em>
 <ul>
 <li>Dominance principle only holds if independent holds</li>
@@ -526,7 +586,7 @@ Sep 7, 2022
 </li>
 </ul>
 </li>
-<li>Utility (numerical value) using an interval scale
+<li><a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> (numerical value) using an interval scale
 <ul>
 <li>Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$</li>
 <li>Transformation is linear</li>

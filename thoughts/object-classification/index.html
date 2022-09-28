@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.532a02e79c474c4297e141729c993957.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b234687d11b01d491771a46aea98fd3e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,12 +294,6 @@ Dec 24, 2021
 
 
 
-
-  
-  
-
-  
-  
 
   
   
@@ -717,22 +711,7 @@ Disadvantages:</li>
 </ul>
 </li>
 </ul>
-<a href="#k-means"><h3 id="k-means"><span class="hanchor" ariaLabel="Anchor"># </span>K-Means</h3></a>
-<p>Assumption that we know how many clusters there are as a prior ($k$ in K-Means)</p>
-<p>Minimize $\sum_{i \in \textrm{clusters}} { \sum_{j \in i^{th} \textrm{cluster}} ||x_j - \mu_i||^2 }$</p>
-<ol>
-<li>pick some k</li>
-<li>assign data to k different clusters randomly</li>
-<li>iterate
-<ol>
-<li>center update → calculate average for each cluster (using euclidian distance)</li>
-<li>label update → re-assign the data to the closest cluster center</li>
-<li>if no labels changed, finish (model has converged)</li>
-</ol>
-</li>
-</ol>
-<p>Warning: the clustering is initialization dependent and converges to a local minimum. Often requires some amount of random runs to approximate a good solution, pick best one.</p>
-<p>Limited to compact/spherical clusters in high-dimensions (which is poor for modeling clusters with the same mean but different distributions)</p>
+<p>See: [[K]]</p>
 <a href="#spatial-pyramid"><h3 id="spatial-pyramid"><span class="hanchor" ariaLabel="Anchor"># </span>Spatial Pyramid</h3></a>
 <p>Have multiple scales of the input image to compute histograms across. Train a classifier for each scale along with a combined weight to combine each classifier.</p>
 <a href="#vlad-vector-of-locally-aggregated-descriptors"><h3 id="vlad-vector-of-locally-aggregated-descriptors"><span class="hanchor" ariaLabel="Anchor"># </span>VLAD (Vector of Locally Aggregated Descriptors)</h3></a>
