@@ -17,6 +17,16 @@
     </item>
     
     <item>
+      <title>Hierarchical Clustering</title>
+      <link>https://jzhao.xyz/thoughts/hierarchical-clustering/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/hierarchical-clustering/</guid>
+      <description>Hierarchical clustering produces a tree of clusterings
+ Each node in the tree splits the data into 2 or more clusters.</description>
+    </item>
+    
+    <item>
       <title>K-means</title>
       <link>https://jzhao.xyz/thoughts/K-means/</link>
       <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
@@ -32,7 +42,7 @@
       
       <guid>https://jzhao.xyz/thoughts/clustering/</guid>
       <description>We want to assign examples to &amp;ldquo;groups&amp;rdquo;.
-Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]]  </description>
+Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]] Ensemble Clustering  Like [[thoughts/Random Forest|random forest]] but for voting for clustering This is problematic because of the label switching problem &amp;ndash; we can get clustering with permuted labels on each initialisation  Don&amp;rsquo;t vote on what specific class each cluster is Instead, vote on whether points are in the same cluster (label independent) Then, come up with labels after voting     [[thoughts/hierarchical clustering]]  </description>
     </item>
     
     <item>
@@ -80,8 +90,8 @@ Example If want every location on to have a “neighbor” with distance $\epsil
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Random-Forest/</guid>
-      <description>Example of an [[thoughts/Ensemble method|Ensemble method]]
-They work by taking a vote from a set of deep [[thoughts/decision tree|decision trees]]. Two key ingredients to help ensure the deep decision trees make independent errors</description>
+      <description>Example of an [[thoughts/Ensemble method|Ensemble method]]. They are non-parametric
+They work by taking a vote from a set of deep [[thoughts/decision tree|decision trees]].</description>
     </item>
     
     <item>

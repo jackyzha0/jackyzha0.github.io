@@ -8,8 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Example of an [[thoughts/Ensemble method|Ensemble method]]
-They work by taking a vote from a set of deep [[thoughts/decision tree|decision trees]]. Two key ingredients to help ensure the deep decision trees make independent errors"
+    content="Example of an [[thoughts/Ensemble method|Ensemble method]]. They are non-parametric
+They work by taking a vote from a set of deep [[thoughts/decision tree|decision trees]]."
   />
   <title>
     Random Forest
@@ -120,13 +120,13 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -301,6 +301,9 @@ Sep 23, 2022
   
   
 
+  
+  
+
 
 
 
@@ -375,7 +378,7 @@ Sep 23, 2022
 
 
 
-<p>Example of an <a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble method</a></p>
+<p>Example of an <a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble method</a>. They are non-parametric</p>
 <p>They work by taking a vote from a set of deep <a href="/thoughts/decision-tree" rel="noopener" class="internal-link" data-src="/thoughts/decision-tree">decision trees</a>. Two key ingredients to help ensure the deep decision trees make independent errors</p>
 <ol>
 <li>Bootstrapping: generate different &ldquo;versions&rdquo; of your dataset
@@ -384,7 +387,12 @@ Sep 23, 2022
 <li>On average, this maintains roughly the same distribution as the original</li>
 </ul>
 </li>
-<li>Random Trees: grow decision trees that incorporates some randomness</li>
+<li>Random Trees: grow decision trees that incorporates some randomness
+<ul>
+<li>Randomly sample a small number of possible features (typically $\sqrt d$)</li>
+<li>Only consider these random features when searching for the optimal rule so splits will tend to use different features in different trees</li>
+</ul>
+</li>
 </ol>
 
 
@@ -411,8 +419,18 @@ Sep 23, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Ensemble-method/" data-ctx="Random Forest" data-src="/thoughts/Ensemble-method" class="internal-link">Ensemble method</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/clustering/" data-ctx="random forest" data-src="/thoughts/clustering" class="internal-link">Clustering</a>
       </li>
       
       

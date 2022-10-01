@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="We want to assign examples to &ldquo;groups&rdquo;.
-Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]]  "
+Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]] Ensemble Clustering  Like [[thoughts/Random Forest|random forest]] but for voting for clustering This is problematic because of the label switching problem &ndash; we can get clustering with permuted labels on each initialisation  Don&rsquo;t vote on what specific class each cluster is Instead, vote on whether points are in the same cluster (label independent) Then, come up with labels after voting     [[thoughts/hierarchical clustering]]  "
   />
   <title>
     Clustering
@@ -120,13 +120,13 @@ Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based cl
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ce5aa29c9520c5aa32a5138da399368e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b344e212864d8539dc9263c16a0f7f13.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -365,6 +365,66 @@ Sep 26, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -377,6 +437,19 @@ Sep 26, 2022
 <ul>
 <li><a href="/thoughts/K-means" rel="noopener" class="internal-link" data-src="/thoughts/K-means">K-means</a> (most popular)</li>
 <li><a href="/thoughts/density-based-clustering" rel="noopener" class="internal-link" data-src="/thoughts/density-based-clustering">density-based clustering</a></li>
+<li>Ensemble Clustering
+<ul>
+<li>Like <a href="/thoughts/Random-Forest" rel="noopener" class="internal-link" data-src="/thoughts/Random-Forest">random forest</a> but for voting for clustering</li>
+<li>This is problematic because of the label switching problem &ndash; we can get clustering with permuted labels on each initialisation
+<ul>
+<li>Don&rsquo;t vote on what specific class each cluster is</li>
+<li>Instead, vote on whether points are in the same cluster (label independent)</li>
+<li>Then, come up with labels after voting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/thoughts/hierarchical-clustering" rel="noopener" class="internal-link" data-src="/thoughts/hierarchical-clustering">hierarchical clustering</a></li>
 </ul>
 
 
