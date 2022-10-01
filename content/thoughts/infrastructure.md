@@ -16,6 +16,7 @@ Infrastructure should be
 
 ## What is infrastructure even?
 -  which came first, the infrastructure or the applications that depend on it?
+	- "You can’t build railroads before it is railroad time. _(Chuck Thacker)_"
 -   things that use infrastructure or technology
     -   in the beginning not much of a distinction
     -   first tech → [[thoughts/language|language]]

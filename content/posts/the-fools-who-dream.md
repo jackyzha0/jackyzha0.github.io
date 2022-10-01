@@ -84,6 +84,10 @@ When people ask about where I am working this summer, I often laugh and reply "I
 
 Nine times out of ten, the follow up question they ask is "With who?" Usually, I laugh again and say that "that's the fun part about independent research, I get to do it on my own!"
 
+> These days, if you say you work in research, most people assume you work in academia. But it’s sort of odd that we assume you need someone’s permission to do research. There’s no reason that universities need to be the gatekeepers of exploring and developing new ideas.
+> 
+> Nadia Asparouhova, *[The independent researcher](https://nadia.xyz/independent-research)*
+
 What I often find gets confusing for people is that **independent research doesn't mean I do it by myself**. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they *actually* want to do with their life. Neither leaves space for individual sense-making.
 
 Every few months, I'll get an email or two along the lines of: "Help, I'm stuck in Leetcode hell, how do I escape and do other things?" I love these emails because I know these are people who have started that introspection process, an internal questioning of "what do I *actually* care about and why?" and are looking for containers and institutions for their work.

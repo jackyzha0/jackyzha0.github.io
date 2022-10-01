@@ -9,6 +9,29 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## September
+### September 30th
+- Been slowly but surely working away at this BFT CRDT implementation in Rust
+	- Figuring out some tradeoffs, I already rewrote the crate from using doubly-linked lists to using a splay tree but maybe this isn't the right data structure either
+	- Desired attributes
+		- Fast insert at arbitrary location
+			- A decent chunk of edits happen in places that are not the start or end of edits!
+			- Ideally less than $O(n)$
+		- Ordering in list is a local property
+			- It should be easy to figure out location of a node given its ID
+			- 
+		- Calculate insert time for integrate
+    - Candidates
+		- BTree
+		- SplayTree
+		- Doubly Linked List
+		- Vector
+		- HashTable
+- Catching up today on a bunch of talks + reading
+	- Wonderful [talk by Brooklyn Zelenka](https://www.youtube.com/watch?v=mxkAAtTvcEE&t=10656s) (CTO of Fission)
+		- "The limitation of local knowledge is the fundamental fact about the setting in which we work, and it is a very powerful limitation" -- Nancy Lynch, A Hundred Impossibility Proofs for Distributed Computing
+		- [[thoughts/CID|CIDs]] give us **global pointers** that we can all agree on (these are hard links, unbreakable)
+			- Compared to URLs (soft links, kind of like symlinks, can break). Point to a latest something
+
 ### September 3rd
 - Bunch of weird Rust things today
 	- Generally, use `.take()` on `Option<Box<T>>` and `.clone()` on `Option<Rc<T>>`

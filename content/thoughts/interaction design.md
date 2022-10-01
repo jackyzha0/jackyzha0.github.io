@@ -93,6 +93,14 @@ Can we create dynamic tactile mediums?
 
 > Playfair’s invention of data graphics was transformative because it tapped into capabilities of the human visual system which had gone unused in intellectual work. It may be similarly transformative to tap into the profound capabilities that enable a person to tie a shoelace or make a sandwich, and bring them to bear on more abstract thinking.
 
+## Webstrates
+[Source](https://pure.au.dk/portal/files/91047333/webstrates.pdf)
+
+In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs”
+
+Two decades later, Mark Weiser envisioned a future of ubiquitous computing, where heterogenous devices of varying sizes and capabilities interact easily with each other and technology disappears into the background.
+
+Substrates are software artifacts that embody content, computation and interaction, effectively blurring the distinction between documents and applications.
 
 ## Cool Experiments
 1. https://www.robertxiao.ca/research/lumitrack/

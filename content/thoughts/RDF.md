@@ -18,6 +18,18 @@ RDF extends the linking structure of the Web to use URIs to name the relationshi
 
 A store of RDF Triples is called a triplestore.
 
+## Search
+From [Intertwingle](https://www.jwz.org/doc/intertwingle.html)
+
+Following a link only gives you one dimension of mobility. A [[thoughts/search|search]] can be seen as following multiple links, and finding the intersection (or union) of the results of those links.
+
+Any link-relationship should be searchable. For example:
+-   All messages from _person_ between _date_ and _date_ that have _pattern_ in the body.
+-   All messages from _person_ which contain a message from _person_.
+-   All messages to _mailing-list_ which refer to _URL_.
+-   All messages containing _text_ in the main body, but not in an attachment.
+-   All messages with an attachment whose file name contains _string_.
+
 ## Turtle
 [Source: W3](https://www.w3.org/TR/turtle/)
 
