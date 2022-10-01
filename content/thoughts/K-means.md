@@ -13,7 +13,7 @@ K-means partitions the space into [[thoughts/convex|convex]] regions, *but* clus
 Minimize $\sum_{i \in \textrm{clusters}} \{ \sum_{j \in i^{th} \textrm{cluster}} ||x_j - \mu_i||^2 \}$
 
 1.  Pick some $k$
-2.  Assign data to $k$ different clusters randomly
+2.  Assign a cluster to $k$ different points randomly
 3.  Iterate
     1.  Center update → calculate average for each cluster (using euclidian distance)
     2.  Label update → re-assign the data to the closest cluster center

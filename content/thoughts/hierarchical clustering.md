@@ -1,0 +1,26 @@
+---
+title: "Hierarchical Clustering"
+date: 2022-09-28
+tags:
+- seed
+- CPSC340
+---
+
+Hierarchical clustering produces a tree of clusterings
+- Each node in the tree splits the data into 2 or more clusters.
+- Much more information than using a fixed clustering.
+- Often have individual data points as leaves.
+
+Often applied in phylogenetics
+
+## Agglomerative Clustering (Bottom up)
+Requires a "distance" measure between two clusters. A standard choice is to use distance between means of the clusters
+
+1. Starts with each point in its own cluster.
+2. Each step merges the two “closest” clusters.
+3. Stop with one big cluster that has all points.
+
+Naive implementation cost is $O(n^3d)$
+
+## Divisive Clustering (Top-down)
+Start with all examples in one cluster, then start dividing. (e.g., run [[thoughts/K-means]] on a cluster, then run again on resulting clusters)

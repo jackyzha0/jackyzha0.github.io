@@ -81,8 +81,6 @@ Trade-off between true positive rate and false positive rate. A random classifie
 	- slow
 	- highly flexible decision boundaries 
 
-See: [[K]]
-
 ### Spatial Pyramid
 Have multiple scales of the input image to compute histograms across. Train a classifier for each scale along with a combined weight to combine each classifier.
 

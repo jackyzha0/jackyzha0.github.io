@@ -25,7 +25,8 @@ Two arguments for why EU Max:
 		- There is no long run for humans
 		- Gambler's Ruin: a gambler with finite wealth, playing a fair game, eventually goes broke with probability 1
 		- How is the long-run argument relevant to unique decisions that can't be repeated?
-	- 
+2. Axiomatic Approach. You should maximize expected utility, because you are also maximizing utility.
+	- This conclusion does not depend on the long run argument, so it applies even to the single case.
 
 ## Maximizing Expected Utility
 [[thoughts/utility|Utility]] is a numerical representation of the agent’s preference ranking
