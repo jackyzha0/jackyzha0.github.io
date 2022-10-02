@@ -13,19 +13,47 @@ I think research logs tend to generally focus too much on what one did rather th
 - Been slowly but surely working away at this BFT CRDT implementation in Rust
 	- Figuring out some tradeoffs, I already rewrote the crate from using doubly-linked lists to using a splay tree but maybe this isn't the right data structure either
 	- Desired attributes
-		- Fast insert at arbitrary location
+		1. Fast insert at arbitrary location
 			- A decent chunk of edits happen in places that are not the start or end of edits!
 			- Ideally less than $O(n)$
-		- Ordering in list is a local property
+		2. Ordering in list is a local property
 			- It should be easy to figure out location of a node given its ID
-			- 
-		- Calculate insert time for integrate
+		3. Insert time for integrate
+			1. Find right position to insert
+				- Comparison involves looking up position of parent
+			2. Insert
+		5. Update should be considerably faster than render (which realistically doesn't need to happen that often)
     - Candidates
-		- BTree
+		- Modified RangeTree (Diamond Types uses this)
+			- Node location is **not** local (worst case $O(\log n)$ indirections)
+			- Insert time for integrate
+				1. Find right position: $O(\log n)$ amortized
+					1. Finding parent is $O(\log n)$ amortized
+					2. Overall is $O(\log(n \log n))$ amortized
+				3. Insert: $O(\log n)$ (need to recount up the tree)
+			- Note: avoids the rebalancing step
 		- SplayTree
-		- Doubly Linked List
+			- Node location is **not** local (average case $O(\log n)$ levels of indirection and potentially $O(n)$ worst case)
+			- Insert time for integrate
+				1. Find right position: $O(\log n)$ amortized
+					1. Find parent is $O(\log n)$ amortized (we can use a binary encoding of the search path as an index)
+					2. Overall is $O(\log(n \log n))$ amortized
+				2. Insert: $O(\log n)$ (need to rebalance up the tree)
+			- Note: rebalancing may not be bad in terms of time complexity but sucks because of memory locality
+		- Doubly Linked List (Yjs uses this)
+			- Node location is not local
+			- Insert time for integrate
+				1. Find right position: $O(n)$
+					1. Find parent is $O(n)$
+					2. Overall is $O(n^2)$ which is slow on many concurrent inserts
+				2. Insert: $O(1)$
 		- Vector
-		- HashTable
+			- Node location is local
+			- Insert time for integrate
+				1. Find right position: $O(n)$
+					1. Find parent is $O(n)$
+					2. Overall is $O(n^2)$ which is slow on many concurrent inserts
+				2. Insert: $O(n)$
 - Catching up today on a bunch of talks + reading
 	- Wonderful [talk by Brooklyn Zelenka](https://www.youtube.com/watch?v=mxkAAtTvcEE&t=10656s) (CTO of Fission)
 		- "The limitation of local knowledge is the fundamental fact about the setting in which we work, and it is a very powerful limitation" -- Nancy Lynch, A Hundred Impossibility Proofs for Distributed Computing

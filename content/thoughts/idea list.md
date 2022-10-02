@@ -14,8 +14,6 @@ tags:
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
 	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
 	- turning a graph traversal into a beautiful essay
-- todo app where items are objects whose scale corresponds to urgency
-	- helps focus on clearing things out, satisfying to see it 'clear out'
 - a text experience where latency increases as more texts are sent
 - what does entropy + erosion of data look like
 	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
