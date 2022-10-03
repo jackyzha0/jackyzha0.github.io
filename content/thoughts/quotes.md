@@ -24,4 +24,5 @@ Some quotes to live by.
 15. "Anything new is by nature without precedent — meaning, without data to know whether it will work or not. So when we approach building new things, we don’t optimize for metrics. We optimize for feelings." [Source](https://browsercompany.substack.com/p/optimizing-for-feelings?s=r)
 16. "Yet I live earnestly, building the most beautiful sandcastles I can, knowing they will be washed away. And getting others on the beach to build with me, at times even suspending our belief of the fact that it will disappear; letting ourselves be fooled for a moment that it will last." [Source](https://altered.substack.com/p/dust)
 17. "Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree. We are comprised also of every person we were in the years leading up to today, even if those layers have compressed into the past." [Source](https://katiewav.substack.com/p/a-personal-syllabus-2022)
-18. You can’t build railroads before it is railroad time. _(Chuck Thacker)_
+18. "You can’t build railroads before it is railroad time." _(Chuck Thacker)_
+19. “Genius is no more than childhood recaptured at will.” *(Charles Baudelaire)*

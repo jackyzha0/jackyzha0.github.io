@@ -10,7 +10,7 @@ aliases:
 
 Decision rules when the probability of each outcome is known.
 
-Requires an interval scale
+Requires an [[thoughts/interval scale|interval scale]]
 
 When evaluating, we often need to quantify what outcomes are more [[thoughts/value|valuable]] than others
 1. Expected Value (EV)

@@ -35,14 +35,14 @@ Decision rules when the agent is ignorant of all probabilities
 	2. Best Average: take the best of each row and worst of each row and average it, pick the act with best average
 	3. Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$
 	4. Objections
-		1. Requires interval scale instead of ordinal scale
+		1. Requires [[thoughts/interval scale|interval scale]] instead of ordinal scale
 4. Minimax regret
 	1. Irrational to reject an act with a chance of a great gain, where the cost is slight.
 	2. Regret value for each outcome = value of the outcome - maximum value in that column
 	3. Max regret for each act is the most negative regret for each row A
 	4. Choose the act with the minimum max regret
 	5. Objections
-		1. Requires interval scale instead of ordinal scale
+		1. Requires [[thoughts/interval scale|interval scale]] instead of ordinal scale
 		2. Adding irrelevant alternative acts potentially affects recommended acts
 5. Principle of Insufficient Reason (PIR)
 	1. If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)
@@ -50,7 +50,7 @@ Decision rules when the agent is ignorant of all probabilities
 	3. For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} value(A, S_i)$
 	4. This turns the problem into a [[thoughts/Decisions under risk|DUR]]
 	5. Objections
-		1. Requires interval scale instead of ordinal scale
+		1. Requires [[thoughts/interval scale|interval scale]] instead of ordinal scale
 		2. Arbitrary partitions of states (can result in incoherence)
 		3. Doesn't apply outside games of chance (e.g. Pascal's Wager)
 

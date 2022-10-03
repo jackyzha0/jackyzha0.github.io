@@ -10,6 +10,7 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## September
 ### September 30th
+- I think decision is that going down splay tree route is not worth and I'll just do this using a simple vector LOL
 - Been slowly but surely working away at this BFT CRDT implementation in Rust
 	- Figuring out some tradeoffs, I already rewrote the crate from using doubly-linked lists to using a splay tree but maybe this isn't the right data structure either
 	- Desired attributes
@@ -24,14 +25,15 @@ I think research logs tend to generally focus too much on what one did rather th
 			2. Insert
 		5. Update should be considerably faster than render (which realistically doesn't need to happen that often)
     - Candidates
-		- Modified RangeTree (Diamond Types uses this)
+		- B-Tree (Diamond Types uses this)
 			- Node location is **not** local (worst case $O(\log n)$ indirections)
 			- Insert time for integrate
 				1. Find right position: $O(\log n)$ amortized
 					1. Finding parent is $O(\log n)$ amortized
 					2. Overall is $O(\log(n \log n))$ amortized
 				3. Insert: $O(\log n)$ (need to recount up the tree)
-			- Note: avoids the rebalancing step
+			- Note: has pretty good cache locality because you can read entire lines of nodes into memory
+			- Requires indexing by character position which is not ideal
 		- SplayTree
 			- Node location is **not** local (average case $O(\log n)$ levels of indirection and potentially $O(n)$ worst case)
 			- Insert time for integrate
@@ -40,6 +42,8 @@ I think research logs tend to generally focus too much on what one did rather th
 					2. Overall is $O(\log(n \log n))$ amortized
 				2. Insert: $O(\log n)$ (need to rebalance up the tree)
 			- Note: rebalancing may not be bad in terms of time complexity but sucks because of memory locality
+				- SplayTrees are binary search trees which can lead to some deep trees which require many pointer dereferences
+				- Are there $m$-ary SplayTrees??
 		- Doubly Linked List (Yjs uses this)
 			- Node location is not local
 			- Insert time for integrate

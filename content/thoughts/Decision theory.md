@@ -39,10 +39,8 @@ Components:
 				- $x \succcurlyeq y$ is a weak preference
 				- $x \succ y$ is a strong preference
 				- $x \sim y$ is indifference between $x$ and $y$
-		- [[thoughts/utility|Utility]] (numerical value) using an interval scale
-			- Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$
-			- Transformation is linear
-			- Called an ordinal transformation
+		- [[thoughts/utility|Utility]] (numerical value) using an [[thoughts/interval scale|interval scale]]
+
 
 Decision tables
 1. Art: providing a good formalization of a decision into a table
