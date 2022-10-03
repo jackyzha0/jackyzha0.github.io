@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -312,24 +312,42 @@ Sep 7, 2022
   
   
 
+
+
+
+
+
+
+
   
   
-
   
   
-
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
   
-  
-
-  
-  
-
-
-
-
-
-
-
 
   
   
@@ -586,13 +604,7 @@ Sep 7, 2022
 </li>
 </ul>
 </li>
-<li><a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> (numerical value) using an interval scale
-<ul>
-<li>Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq y$ and $v(x) = v(y) \iff x \sim y$</li>
-<li>Transformation is linear</li>
-<li>Called an ordinal transformation</li>
-</ul>
-</li>
+<li><a href="/thoughts/utility" rel="noopener" class="internal-link" data-src="/thoughts/utility">Utility</a> (numerical value) using an <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a></li>
 </ul>
 </li>
 </ul>

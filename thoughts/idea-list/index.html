@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -686,11 +686,6 @@ Jun 17, 2021
 
 <a href="https://escapingflatland.substack.com/p/reader-generated-essays" rel="noopener">reader-generated essay</a> is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.&rdquo;</li>
 <li>turning a graph traversal into a beautiful essay</li>
-</ul>
-</li>
-<li>todo app where items are objects whose scale corresponds to urgency
-<ul>
-<li>helps focus on clearing things out, satisfying to see it &lsquo;clear out&rsquo;</li>
 </ul>
 </li>
 <li>a text experience where latency increases as more texts are sent</li>

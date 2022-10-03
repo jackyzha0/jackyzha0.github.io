@@ -122,13 +122,13 @@ Foolish as they may seem"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -683,6 +683,12 @@ Aug 21, 2022
 <hr>
 <p>When people ask about where I am working this summer, I often laugh and reply &ldquo;I&rsquo;m &lsquo;funemployed&rsquo;! But  what I&rsquo;m <em>really</em> doing is independent research.&rdquo;</p>
 <p>Nine times out of ten, the follow up question they ask is &ldquo;With who?&rdquo; Usually, I laugh again and say that &ldquo;that&rsquo;s the fun part about independent research, I get to do it on my own!&rdquo;</p>
+<blockquote>
+<p>These days, if you say you work in research, most people assume you work in academia. But it’s sort of odd that we assume you need someone’s permission to do research. There’s no reason that universities need to be the gatekeepers of exploring and developing new ideas.</p>
+<p>Nadia Asparouhova, <em>
+
+<a href="https://nadia.xyz/independent-research" rel="noopener">The independent researcher</a></em></p>
+</blockquote>
 <p>What I often find gets confusing for people is that <strong>independent research doesn&rsquo;t mean I do it by myself</strong>. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they <em>actually</em> want to do with their life. Neither leaves space for individual sense-making.</p>
 <p>Every few months, I&rsquo;ll get an email or two along the lines of: &ldquo;Help, I&rsquo;m stuck in Leetcode hell, how do I escape and do other things?&rdquo; I love these emails because I know these are people who have started that introspection process, an internal questioning of &ldquo;what do I <em>actually</em> care about and why?&rdquo; and are looking for containers and institutions for their work.</p>
 <p>Sooner or later, that line of questioning leads to a question of hypothetical <a href="/thoughts/utopia" rel="noopener" class="internal-link" data-src="/thoughts/utopia">utopia</a>. In a world where you don&rsquo;t need to work to stay alive, what would you do? What gives you excitement and joy? Completely ignoring what other people tell you is useful or good, what do you find intrinsically beautiful and good to do in the world?</p>

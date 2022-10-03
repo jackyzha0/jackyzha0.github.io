@@ -120,13 +120,13 @@ Background Points  No information about probabilities A value function on outcom
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -391,6 +391,96 @@ Sep 12, 2022
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -470,7 +560,7 @@ Sep 12, 2022
 <li>Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$</li>
 <li>Objections
 <ol>
-<li>Requires interval scale instead of ordinal scale</li>
+<li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 </ol>
 </li>
 </ol>
@@ -483,7 +573,7 @@ Sep 12, 2022
 <li>Choose the act with the minimum max regret</li>
 <li>Objections
 <ol>
-<li>Requires interval scale instead of ordinal scale</li>
+<li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 <li>Adding irrelevant alternative acts potentially affects recommended acts</li>
 </ol>
 </li>
@@ -497,7 +587,7 @@ Sep 12, 2022
 <li>This turns the problem into a <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a></li>
 <li>Objections
 <ol>
-<li>Requires interval scale instead of ordinal scale</li>
+<li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 <li>Arbitrary partitions of states (can result in incoherence)</li>
 <li>Doesn&rsquo;t apply outside games of chance (e.g. Pascal&rsquo;s Wager)</li>
 </ol>
@@ -562,6 +652,10 @@ Sep 12, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Decision-theory/" data-ctx="DUI" data-src="/thoughts/Decision-theory" class="internal-link">Decision theory</a>
       </li>
@@ -570,6 +664,12 @@ Sep 12, 2022
       
       <li>
         <a href="/thoughts/game-theory/" data-ctx="DUI" data-src="/thoughts/game-theory" class="internal-link">Game Theory</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/interval-scale/" data-ctx="DUI" data-src="/thoughts/interval-scale" class="internal-link">Interval scale</a>
       </li>
       
       

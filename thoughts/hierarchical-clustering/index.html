@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -301,6 +301,12 @@ Sep 28, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -362,6 +368,12 @@ Sep 28, 2022
 <p>Naive implementation cost is $O(n^3d)$</p>
 <a href="#divisive-clustering-top-down"><h2 id="divisive-clustering-top-down"><span class="hanchor" ariaLabel="Anchor"># </span>Divisive Clustering (Top-down)</h2></a>
 <p>Start with all examples in one cluster, then start dividing. (e.g., run <a href="/thoughts/K-means" rel="noopener" class="internal-link" data-src="/thoughts/K-means">K-means</a> on a cluster, then run again on resulting clusters)</p>
+<a href="#biclustering"><h2 id="biclustering"><span class="hanchor" ariaLabel="Anchor"># </span>Biclustering</h2></a>
+<p>Cluster the training examples and features. Helps to figure out the &lsquo;why&rsquo; on why things are clustered together</p>
+<ul>
+<li>Run clustering method on $X$</li>
+<li>Run clustering method on $X^T$</li>
+</ul>
 
 
     </article>

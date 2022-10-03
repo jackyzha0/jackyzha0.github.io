@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -336,12 +336,195 @@ May 3, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -16544,6 +16727,133 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#september"><h2 id="september"><span class="hanchor" ariaLabel="Anchor"># </span>September</h2></a>
+<a href="#september-30th"><h3 id="september-30th"><span class="hanchor" ariaLabel="Anchor"># </span>September 30th</h3></a>
+<ul>
+<li>I think decision is that going down splay tree route is not worth and I&rsquo;ll just do this using a simple vector LOL</li>
+<li>Been slowly but surely working away at this BFT CRDT implementation in Rust
+<ul>
+<li>Figuring out some tradeoffs, I already rewrote the crate from using doubly-linked lists to using a splay tree but maybe this isn&rsquo;t the right data structure either</li>
+<li>Desired attributes
+<ol>
+<li>Fast insert at arbitrary location
+<ul>
+<li>A decent chunk of edits happen in places that are not the start or end of edits!</li>
+<li>Ideally less than $O(n)$</li>
+</ul>
+</li>
+<li>Ordering in list is a local property
+<ul>
+<li>It should be easy to figure out location of a node given its ID</li>
+</ul>
+</li>
+<li>Insert time for integrate
+<ol>
+<li>Find right position to insert
+<ul>
+<li>Comparison involves looking up position of parent</li>
+</ul>
+</li>
+<li>Insert</li>
+</ol>
+</li>
+<li>Update should be considerably faster than render (which realistically doesn&rsquo;t need to happen that often)</li>
+</ol>
+</li>
+<li>Candidates
+<ul>
+<li>B-Tree (Diamond Types uses this)
+<ul>
+<li>Node location is <strong>not</strong> local (worst case $O(\log n)$ indirections)</li>
+<li>Insert time for integrate
+<ol>
+<li>Find right position: $O(\log n)$ amortized
+<ol>
+<li>Finding parent is $O(\log n)$ amortized</li>
+<li>Overall is $O(\log(n \log n))$ amortized</li>
+</ol>
+</li>
+<li>Insert: $O(\log n)$ (need to recount up the tree)</li>
+</ol>
+</li>
+<li>Note: has pretty good cache locality because you can read entire lines of nodes into memory</li>
+<li>Requires indexing by character position which is not ideal</li>
+</ul>
+</li>
+<li>SplayTree
+<ul>
+<li>Node location is <strong>not</strong> local (average case $O(\log n)$ levels of indirection and potentially $O(n)$ worst case)</li>
+<li>Insert time for integrate
+<ol>
+<li>Find right position: $O(\log n)$ amortized
+<ol>
+<li>Find parent is $O(\log n)$ amortized (we can use a binary encoding of the search path as an index)</li>
+<li>Overall is $O(\log(n \log n))$ amortized</li>
+</ol>
+</li>
+<li>Insert: $O(\log n)$ (need to rebalance up the tree)</li>
+</ol>
+</li>
+<li>Note: rebalancing may not be bad in terms of time complexity but sucks because of memory locality
+<ul>
+<li>SplayTrees are binary search trees which can lead to some deep trees which require many pointer dereferences</li>
+<li>Are there $m$-ary SplayTrees??</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Doubly Linked List (Yjs uses this)
+<ul>
+<li>Node location is not local</li>
+<li>Insert time for integrate
+<ol>
+<li>Find right position: $O(n)$
+<ol>
+<li>Find parent is $O(n)$</li>
+<li>Overall is $O(n^2)$ which is slow on many concurrent inserts</li>
+</ol>
+</li>
+<li>Insert: $O(1)$</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Vector
+<ul>
+<li>Node location is local</li>
+<li>Insert time for integrate
+<ol>
+<li>Find right position: $O(n)$
+<ol>
+<li>Find parent is $O(n)$</li>
+<li>Overall is $O(n^2)$ which is slow on many concurrent inserts</li>
+</ol>
+</li>
+<li>Insert: $O(n)$</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Catching up today on a bunch of talks + reading
+<ul>
+<li>Wonderful 
+
+<a href="https://www.youtube.com/watch?v=mxkAAtTvcEE&amp;t=10656s" rel="noopener">talk by Brooklyn Zelenka</a> (CTO of Fission)
+<ul>
+<li>&ldquo;The limitation of local knowledge is the fundamental fact about the setting in which we work, and it is a very powerful limitation&rdquo; &ndash; Nancy Lynch, A Hundred Impossibility Proofs for Distributed Computing</li>
+<li><a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> give us <strong>global pointers</strong> that we can all agree on (these are hard links, unbreakable)
+<ul>
+<li>Compared to URLs (soft links, kind of like symlinks, can break). Point to a latest something</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <a href="#september-3rd"><h3 id="september-3rd"><span class="hanchor" ariaLabel="Anchor"># </span>September 3rd</h3></a>
 <ul>
 <li>Bunch of weird Rust things today

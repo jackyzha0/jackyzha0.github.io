@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7767d7ddacf73642ebd36d59be18fb3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f260f2889f4ace055d9e3372adedebf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -397,6 +397,36 @@ Sep 26, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -407,16 +437,12 @@ Sep 26, 2022
 <p>In <a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">supervised learning</a>, we have features $x_i$ and class labels $y_i$. Write a program that produces $y_i$ form $x_i$</p>
 <p>In <strong>unsupervised learning</strong>, we only have $x_i$ values, but no explicit target labels. We can</p>
 <ul>
-<li>Outlier detection: is this a normal $x_i$?</li>
-<li>Similarity: which examples look like this $x_i$</li>
+<li><a href="/thoughts/outlier-detection" rel="noopener" class="internal-link" data-src="/thoughts/outlier-detection">Outlier detection</a>: is this a normal $x_i$?</li>
+<li>Similarity/<a href="/thoughts/clustering" rel="noopener" class="internal-link" data-src="/thoughts/clustering">Clustering</a>: which examples look like this $x_i$</li>
 <li>Which $x_i$ occur together</li>
 <li>Latent-factors: what &lsquo;parts&rsquo; are the $x_i$ made from</li>
 <li>Data visualization: what does the high-dimension $X$ feature space look like?</li>
 <li>Ranking: what are the most important $x_i$?</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li><a href="/thoughts/clustering" rel="noopener" class="internal-link" data-src="/thoughts/clustering">Clustering</a></li>
 </ul>
 
 
