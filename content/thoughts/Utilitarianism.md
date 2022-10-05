@@ -20,7 +20,7 @@ Calculating the utility to make a decision falls under [[thoughts/Decisions unde
 ## Rule Utilitarianism
 We ought to adopt those moral rules that, if followed by everyone, lead to the greatest increase in total happiness over all affected parties
 
-Different between rule utilitarianism and [[thoughts/Kant|Kantiasm]]:
+Difference between rule utilitarianism and [[thoughts/Kant|Kantiasm]]:
 - A rule utilitarian looks at the consequences of the action
 - A Kantian looks at the will motivating the action
 

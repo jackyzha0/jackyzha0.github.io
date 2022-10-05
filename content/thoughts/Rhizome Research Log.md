@@ -8,6 +8,10 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## October
+### October 3rd
+- 
+
 ## September
 ### September 30th
 - I think decision is that going down splay tree route is not worth and I'll just do this using a simple vector LOL

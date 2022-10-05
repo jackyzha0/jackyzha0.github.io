@@ -35,3 +35,7 @@ Especially important for technologists to grapple with as common wisdom may not 
 ## Workable Theories
 1. [[thoughts/Kant|Kantianism]]
 2. [[thoughts/Utilitarianism|Utilitarianism]]
+3. [[thoughts/Social Contract Theory|Social Contract Theory]]
+4. [[thoughts/virtue ethics|Virtue Ethics]]
+
+![[thoughts/images/ethical theories.png]]

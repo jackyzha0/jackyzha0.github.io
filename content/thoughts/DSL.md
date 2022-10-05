@@ -16,7 +16,8 @@ Implementation Stages
 3. (optional) AST Conversion `ParseTree -> AST`
 4. (optional) Static Checks `AST -> AST`
 6. Evaluate `AST -> Result`
-	1. (optional) Dynamic Checks
+	1. Run the input or generate code for it
+	2. (optional) Dynamic Checks
 
 ## Grammar Rules
 e.g. for BNF, EBNF
@@ -99,8 +100,24 @@ What is the purpose of a language?
 5. Secondary Notation
 	- Anything that is only there to help the programmer but does not affect what the code actually does
 
-## Visitor Pattern
-The visitor design pattern is a way of separating an algorithm from an object structure on which it operates
+## Evaluation
+### Recursive Evaluation
+Each node has an evaluate method. Recursively traverse the tree and evaluate each node.
+
+But this only supports a single type of traversing the AST. What if we want to support other types of checkers? We have many different operations that traverse the AST
+
+Putting all functionality into AST methods violates SRP. We can instead, implement the visitor pattern.
+
+### Visitor Pattern
+The visitor design pattern is a way of separating an algorithm from an object structure on which it operates.
+
+Basically, you are passing this visitor object to a node's accept function.
+- Visitor defines a `visit` for each concrete node type to detail how to visit that node + its children (functionality depends on visitor)
+- If it needs to visit another node, it calls `accept` on itself (functionality also depends on the node type)
+
+We perform double dispatch as the functionality depends on two things:
+1. the type of AST object (via the `accept` call) and
+2. the type of visitor object (via the `visit` call)
 
 We could just evaluate each AST node, but this places the responsibility on the nodes for how to do this.
 
@@ -122,18 +139,22 @@ export interface Element {
 	accept: (visitor: Visitor<T, U>, param: T): void,
 }
 
+// same for ConcreteB
 class ConcreteA implements Element {
 	accept(visitor: Visitor<T, U>, param: T) {
 		visitor.visit(this, param)
 	}
 }
 
-// same for ConcreteB
-
 export interface Visitor<T, U> {
 	// where ConreteA and ConcreteB both inherit from Element
+	// error checks here are runtime checks
 	visit: (a: ConcreteA, param: T): void,
 	visit: (b: ConcreteB, param: T): void,
 	...
 }
 ```
+
+1. Create a `Visitor` interface under AST and define a bunch of visit methods for each concrete node type
+2. Under the abstract `Node` class, create an abstract `accept` method
+3. Create a new visitor class that implements the `Visitor` interface

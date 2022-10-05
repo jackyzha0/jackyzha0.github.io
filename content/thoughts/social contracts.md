@@ -11,6 +11,8 @@ Social contracts are implicit agreements among members of social  groups to coop
 
 e.g. most democracies today, citizens agree to pay taxes in their shared currencies to fund and maintain basic [infrastructure](thoughts/infrastructure.md) like roads, bridges, and electrical grids
 
+See also: [[thoughts/Social Contract Theory]]
+
 ## Social Rules for [learning](thoughts/learning.md)
 [From Recurse Center's Social Rules](https://www.recurse.com/social-rules?curius=30)
 
