@@ -120,13 +120,13 @@ An action is good if its benefits exceed its harms, and an action is bad if its 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -472,7 +472,7 @@ Sep 26, 2022
 <p>Calculating the utility to make a decision falls under <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a> (specifically, EU Max)</p>
 <a href="#rule-utilitarianism"><h2 id="rule-utilitarianism"><span class="hanchor" ariaLabel="Anchor"># </span>Rule Utilitarianism</h2></a>
 <p>We ought to adopt those moral rules that, if followed by everyone, lead to the greatest increase in total happiness over all affected parties</p>
-<p>Different between rule utilitarianism and <a href="/thoughts/Kant" rel="noopener" class="internal-link" data-src="/thoughts/Kant">Kantiasm</a>:</p>
+<p>Difference between rule utilitarianism and <a href="/thoughts/Kant" rel="noopener" class="internal-link" data-src="/thoughts/Kant">Kantiasm</a>:</p>
 <ul>
 <li>A rule utilitarian looks at the consequences of the action</li>
 <li>A Kantian looks at the will motivating the action</li>

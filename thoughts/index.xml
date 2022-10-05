@@ -28,6 +28,24 @@ Why? We may want to remove outliers, or be interested in the outliers themselves
     </item>
     
     <item>
+      <title>Social Contract Theory</title>
+      <link>https://jzhao.xyz/thoughts/Social-Contract-Theory/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Social-Contract-Theory/</guid>
+      <description>In his book Leviathan, Thomas Hobbes argues that without rules and a means of enforcing them, people would not bother to create anything of value, because nobody could be sure of keeping what they created</description>
+    </item>
+    
+    <item>
+      <title>Virtue ethics</title>
+      <link>https://jzhao.xyz/thoughts/virtue-ethics/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/virtue-ethics/</guid>
+      <description>The notion of virtue or excellence refers to reaching one&amp;rsquo;s highest potential. According to Aristotle, happiness derives from living a life of virtue.</description>
+    </item>
+    
+    <item>
       <title>Convex</title>
       <link>https://jzhao.xyz/thoughts/convex/</link>
       <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
@@ -181,7 +199,7 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
       
       <guid>https://jzhao.xyz/thoughts/DSL/</guid>
       <description>Implementation Stages
- Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST Evaluate AST -&amp;gt; Result  (optional) Dynamic Checks    Grammar Rules e.</description>
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
     </item>
     
     <item>

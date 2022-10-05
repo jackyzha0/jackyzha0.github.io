@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="Implementation Stages
- Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST Evaluate AST -&gt; Result  (optional) Dynamic Checks    Grammar Rules e."
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
   />
   <title>
     Domain Specific Language (DSL)
@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -328,6 +328,14 @@ Sep 22, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -357,6 +365,14 @@ Sep 22, 2022
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -415,6 +431,7 @@ Sep 22, 2022
 <li>(optional) Static Checks <code>AST -&gt; AST</code></li>
 <li>Evaluate <code>AST -&gt; Result</code>
 <ol>
+<li>Run the input or generate code for it</li>
 <li>(optional) Dynamic Checks</li>
 </ol>
 </li>
@@ -559,8 +576,23 @@ Sep 22, 2022
 </ul>
 </li>
 </ol>
-<a href="#visitor-pattern"><h2 id="visitor-pattern"><span class="hanchor" ariaLabel="Anchor"># </span>Visitor Pattern</h2></a>
-<p>The visitor design pattern is a way of separating an algorithm from an object structure on which it operates</p>
+<a href="#evaluation"><h2 id="evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Evaluation</h2></a>
+<a href="#recursive-evaluation"><h3 id="recursive-evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Recursive Evaluation</h3></a>
+<p>Each node has an evaluate method. Recursively traverse the tree and evaluate each node.</p>
+<p>But this only supports a single type of traversing the AST. What if we want to support other types of checkers? We have many different operations that traverse the AST</p>
+<p>Putting all functionality into AST methods violates SRP. We can instead, implement the visitor pattern.</p>
+<a href="#visitor-pattern"><h3 id="visitor-pattern"><span class="hanchor" ariaLabel="Anchor"># </span>Visitor Pattern</h3></a>
+<p>The visitor design pattern is a way of separating an algorithm from an object structure on which it operates.</p>
+<p>Basically, you are passing this visitor object to a node&rsquo;s accept function.</p>
+<ul>
+<li>Visitor defines a <code>visit</code> for each concrete node type to detail how to visit that node + its children (functionality depends on visitor)</li>
+<li>If it needs to visit another node, it calls <code>accept</code> on itself (functionality also depends on the node type)</li>
+</ul>
+<p>We perform double dispatch as the functionality depends on two things:</p>
+<ol>
+<li>the type of AST object (via the <code>accept</code> call) and</li>
+<li>the type of visitor object (via the <code>visit</code> call)</li>
+</ol>
 <p>We could just evaluate each AST node, but this places the responsibility on the nodes for how to do this.</p>
 <ol>
 <li>Support multiple kinds of &ldquo;evaluation&rdquo; for our AST without having to edit every node every node every time</li>
@@ -612,23 +644,28 @@ Sep 22, 2022
 </span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="o">:</span> <span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">ConcreteA</span> <span class="kr">implements</span> <span class="nx">Element</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// same for ConcreteB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">class</span> <span class="nx">ConcreteA</span> <span class="kr">implements</span> <span class="nx">Element</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="nx">visitor</span><span class="p">.</span><span class="nx">visit</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">param</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// same for ConcreteB
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">// where ConreteA and ConcreteB both inherit from Element
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// error checks here are runtime checks
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">a</span>: <span class="kt">ConcreteA</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">b</span>: <span class="kt">ConcreteB</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="p">...</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><ol>
+<li>Create a <code>Visitor</code> interface under AST and define a bunch of visit methods for each concrete node type</li>
+<li>Under the abstract <code>Node</code> class, create an abstract <code>accept</code> method</li>
+<li>Create a new visitor class that implements the <code>Visitor</code> interface</li>
+</ol>
+
 
     </article>
     <hr/>

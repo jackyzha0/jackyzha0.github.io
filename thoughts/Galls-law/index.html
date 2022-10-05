@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9983e63f70df6262c75b162d5cf96714.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.535d1eda4f60e7d9f2d9261f92c04bf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -325,6 +325,12 @@ Dec 24, 2021
   data-src="/thoughts/complexity/">complexity</a> system design: simple alphabets produce complex behaviors, complex alphabets produce stupid behaviors</p>
 <blockquote>
 <p>A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system**</p>
+</blockquote>
+<a href="#gall-meadows-ladder"><h2 id="gall-meadows-ladder"><span class="hanchor" ariaLabel="Anchor"># </span>Gall-Meadows Ladder</h2></a>
+<p>Adewale Oshineye coins the concept of a Gall-Meadows ladder</p>
+<blockquote>
+<p>Success needs what I think of as a Gall-Meadows ladder: a mechanism for jumping from one stable system to another &hellip; in order to evolve your project</p>
+<p>The Gall-Meadows ladder suggests that to get from a simple working system to a complex working system you have to find a sequence of working systems that increase the level of complexity.</p>
 </blockquote>
 
 
