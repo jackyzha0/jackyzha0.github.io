@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -275,6 +275,24 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jan 30, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Matthew-Effect/" class="internal-link" data-src="/thoughts/Matthew-Effect/">Matthew Effect</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -447,26 +465,6 @@ Jan 12, 2022
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jan 12, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Descartes-Meditations/" class="internal-link" data-src="/thoughts/Descartes-Meditations/">Descartes&#39; Meditations</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/PHIL240A/">PHIL240A</a></li>
                 
             </ul>
         </div>

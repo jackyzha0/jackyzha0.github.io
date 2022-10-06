@@ -120,13 +120,13 @@ Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -406,6 +406,36 @@ Oct 3, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -428,6 +458,8 @@ Oct 3, 2022
 </li>
 </ul>
 <p><img src="/thoughts/images/vNM.png" width="auto" /></p>
+<p>Peterson argues that vNM is ok for descriptive <a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">decision theory</a> but not normative decision theory (vNM does not distinguish the meaning of utility from the measurement of utility)</p>
+<p>Normative decision theory involves prescribing actions which needs a strong version of EU max: acts are rational because they maximize expected utility. This demands a concept of utility that is independent from the measurement of utility itself (or we get a circular argument)</p>
 
 
     </article>

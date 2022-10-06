@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -519,6 +519,13 @@ Sep 22, 2022
 <li>Grammar must be locally deterministic: for each choice, we must be able to choose between them based only on the next token (avoid common prefixes, factor them out into separate rules)</li>
 </ol>
 <a href="#language-principles"><h2 id="language-principles"><span class="hanchor" ariaLabel="Anchor"># </span>Language Principles</h2></a>
+<ol>
+<li>Learnability (how quickly can you pick it up; feels like “common sense”?)</li>
+<li>Efficiency (once you’ve learned it, how efficiently can you perform tasks)</li>
+<li>Memorability (coming back to the language, how easy to regain proficiency)</li>
+<li>Errors (how many do users make, how severe, how easily can they recover)</li>
+<li>Satisfaction (subjective, but very important for perseverance and adoption)</li>
+</ol>
 <ul>
 <li>Maximize information hiding
 <ul>
@@ -544,7 +551,7 @@ Sep 22, 2022
 </ul>
 <a href="#cognitive-dimensions-of-notations"><h2 id="cognitive-dimensions-of-notations"><span class="hanchor" ariaLabel="Anchor"># </span>Cognitive Dimensions of Notations</h2></a>
 <ol>
-<li>Abstraction Gradient
+<li>Abstraction Gradient (Efficiency)
 <ul>
 <li>Abstractions make it hard for first-time programmers to understand it</li>
 <li>Abstractions are powerful for professional software developers to make easy to write, read, and maintain software</li>
@@ -558,7 +565,7 @@ Sep 22, 2022
 <li>Coherence across the features of a language. It is easier to learn something if there are few exceptions to learn</li>
 </ul>
 </li>
-<li>Diffuseness
+<li>Diffuseness (Learnability)
 <ul>
 <li>How many things there are to learn about a language</li>
 <li>Number of keywords is a good approximation for diffuseness</li>

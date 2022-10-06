@@ -120,13 +120,13 @@ How can we assign utilities to represent preferences?"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -310,6 +310,12 @@ Sep 28, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -332,6 +338,9 @@ Sep 28, 2022
 <li>Transformation is linear</li>
 <li>Called an ordinal transformation</li>
 </ul>
+<a href="#infinite-utility"><h2 id="infinite-utility"><span class="hanchor" ariaLabel="Anchor"># </span>Infinite Utility</h2></a>
+<p>An agent values A infinitely relative to B and C if we deny Continuity: $[\lambda A, (1-\lambda)C] \succ B$ for any $\lambda &gt; 0$</p>
+<p>The agent is willing to trade B for any gamble that offers a positive chance of A, when the ‘losing outcome’ is C.)</p>
 
 
     </article>

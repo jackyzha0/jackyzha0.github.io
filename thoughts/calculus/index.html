@@ -120,13 +120,13 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -388,6 +388,16 @@ $$</p>
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Linear-Regression/" data-ctx="calculus" data-src="/thoughts/Linear-Regression" class="internal-link">Linear Regression</a>
+      </li>
+      
       
       
       <li>

@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression</title>
+      <link>https://jzhao.xyz/thoughts/Linear-Regression/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Linear-Regression/</guid>
+      <description>Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = wx_i$
+We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y_i)^2$</description>
+    </item>
+    
     <item>
       <title>Interval scale</title>
       <link>https://jzhao.xyz/thoughts/interval-scale/</link>

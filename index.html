@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e142ebdac9bb78b30f80baf6f2949e60.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8e1c6bf4b143c1881ef35f902336d06d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,10 +353,27 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/Linear-Regression/">Linear Regression</a></h3>
+                            </div>
+                            <p class="meta">
+                                160 words on Oct 6, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/interval-scale/">Interval scale</a></h3>
                             </div>
                             <p class="meta">
-                                137 words on Oct 3, 2022
+                                209 words on Oct 6, 2022
                             </p>
                             <ul class="tags">
     
@@ -369,25 +386,8 @@ Jul 14, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/outlier-detection/">Outlier detection</a></h3>
-                            </div>
-                            <p class="meta">
-                                230 words on Oct 3, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 494 more →</a>
+                <a href="/thoughts">See 495 more →</a>
             </div>
         </div>
         <article>
