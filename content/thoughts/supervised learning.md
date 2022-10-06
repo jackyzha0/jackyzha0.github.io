@@ -16,6 +16,7 @@ Examples:
 - [[thoughts/Naive Bayes]]
 - [[thoughts/KNN|KNN]] (to fit an appropriate $k$)
 - [[thoughts/Ensemble method|Ensemble Methods]]
+- [[thoughts/Linear Regression]]
 
 Tradeoffs:
 | |Decision trees|Naive Bayes|

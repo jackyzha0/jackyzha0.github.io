@@ -66,7 +66,14 @@ item   : TEXT ;
 	1. Should not allow `T ::= T ...`
 3. Grammar must be locally deterministic: for each choice, we must be able to choose between them based only on the next token (avoid common prefixes, factor them out into separate rules)
 
+
 ## Language Principles
+1.  Learnability (how quickly can you pick it up; feels like “common sense”?)
+2.  Efficiency (once you’ve learned it, how efficiently can you perform tasks)
+3.  Memorability (coming back to the language, how easy to regain proficiency)
+4.  Errors (how many do users make, how severe, how easily can they recover)
+5.  Satisfaction (subjective, but very important for perseverance and adoption)
+
 - Maximize information hiding
 	- Make classes, members as private as possible
 	- Public classes should have no public fields (with the exception of constants)
@@ -83,7 +90,7 @@ What is the purpose of a language?
 - Languages should help us think better
 
 ## Cognitive Dimensions of Notations
-1. Abstraction Gradient
+1. Abstraction Gradient (Efficiency)
 	- Abstractions make it hard for first-time programmers to understand it
 	- Abstractions are powerful for professional software developers to make easy to write, read, and maintain software
 	- There should be a **gradual** increase in complexity ![[thoughts/images/abstraction-gradient.png|500]]
@@ -91,7 +98,7 @@ What is the purpose of a language?
 	- Languages with a low abstraction ceiling are called abstraction-hating
 2. Consistency
 	- Coherence across the features of a language. It is easier to learn something if there are few exceptions to learn
-3. Diffuseness
+3. Diffuseness (Learnability)
 	- How many things there are to learn about a language
 	- Number of keywords is a good approximation for diffuseness
 4. Error-proneness
