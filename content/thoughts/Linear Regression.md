@@ -5,30 +5,81 @@ tags:
 - seed
 ---
 
-Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = wx_i$
+Vector dimensions:
+- $w$ is $(d, 1)$ (weights)
+- $y$ is $(n,1)$ (targets)
+- $x_i$ is $(d, 1)$ (features)
+- $X$ is $(n,d)$ each row is $x_i^T$
 
-We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y_i)^2$
+Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$
+
+We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (w^Tx_i - y_i)^2$
 
 1. Take the derivative of $f$ and set it equal to 0 $f'(w) = 0$ gives us $w = \frac{\sum_{i=1}^n x_iy_i}{\sum_{i=1}^n x_i^2}$
 2. Check to second derivative to make sure we have a minimizer (if double derivative is positive). $f''(w) = \sum_{i=1}^n x_i^2$. As $x_i^2$ by definition must always be positive, this is a minimizer.
 
 In d-dimensions, we minimize
 
-$$f(w) = \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2$$
+$$\begin{equation}
+\begin{split}
+f(w) &= \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2 \\
+ & = \frac 1 2 \lVert Xw - y \rVert^2 \\
+ & = \frac 1 2 w^TX^TXw - w^TX^Ty + \frac 1 2 y^T y \\
+ & = \frac 1 2 w^TAw - w^Tb + c
+\end{split}
+\end{equation}$$
+
+where $A$ is a matrix, $b$ is a vector, and $c$ is a scalar
 
 The generalized version of “set the derivative to 0 and solve” in d-dimensions is to find where the gradient is zero (see [[thoughts/calculus|calculus]]). We get
 
-$$\nabla f(w) = \begin{bmatrix}
+$$
+\begin{equation}
+\begin{split}
+\nabla f(w) &= \begin{bmatrix}
 \frac{\partial f}{\partial w_1} \\
 \frac{\partial f}{\partial w_2} \\
 \vdots\\\
 \frac{\partial f}{\partial w_d}
-\end{bmatrix} = 
+\end{bmatrix}  \\ \\
+
+&= 
 
 \begin{bmatrix}
 \sum_{i=1}^n (w^Tx_i - yi)x_{i,1}  \\
 \sum_{i=1}^n (w^Tx_i - yi)x_{i,2}  \\
 \vdots\\\
 \sum_{i=1}^n (w^Tx_i - yi)x_{i,d}  \\
+\end{bmatrix} \\ \\
+
+&=
+
+Aw - b \\
+
+&= X^TXw - X^Ty
+\end{split}
+\end{equation}
+$$
+
+## Cost
+Of solving equations in the form $Aw = b$
+1. $O(nd)$ to form vector $b$
+2. $O(nd^2)$ to form matrix A
+3. Solving a $(d,d)$ system of equations is $O(d^3)$
+
+Overall cost is $O(nd^2+d^3)$
+
+## Change of Basis
+Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1. We can fit polynomials of degree $p$ by raising other powers:
+
+$$
+Z =
+\begin{bmatrix}
+1 & x_1 & x_1^2 & \dots & x_1^p \\
+1 & x_2 & x_2^2 & \dots & x_2^p \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & x_n & x_n^2 & \dots & x_n^p
 \end{bmatrix}
 $$
+
+As the polynomial degree increases, the training error goes down but the approximation error goes up.

@@ -37,7 +37,6 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 	- https://nette.io/
 	- https://www.kosmik.app/
 	- https://sprout.place/
-	- 
 
 ## Handmade Web
 From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)

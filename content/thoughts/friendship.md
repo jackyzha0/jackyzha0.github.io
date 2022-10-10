@@ -17,6 +17,13 @@ adrienne maree brown described relationships like a spiderweb—diaphanous yet s
 
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)
 
+## Acceptance Prophecy
+[Source](https://www.theatlantic.com/family/archive/2022/08/making-keeping-friends-attachment-theory-styles/671222/)
+
+> “If people expect acceptance, they will behave warmly, which in turn will lead other people to accept them; if they expect rejection, they will behave coldly, which will lead to less acceptance.”
+
+Assume that people like you. Tempted to ask a gym friend if they want to become a happy-hour friend? Assume they do. Want to reconnect with a friend you’ve fallen out of touch with? Assume they’re in. When we make this assumption, initiative feels less scary. We’re more likely to take some leaps of faith—and eventually navigate the friendship-making process, and life, with more peace, pleasure, and security.
+
 ## Commitment
 Commit to some great loves; falling in love with something and building a structure of behaviour for when love falters. Who would they care about if nobody knew?
 

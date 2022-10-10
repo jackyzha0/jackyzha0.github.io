@@ -23,6 +23,7 @@ tags:
 - `<leader>o` - open file by name
 - `<leader>g` - live grep
 - `<leader>f` - format file
+- `<leader>ca` - code actions
 - `f` - hop by 2 chars
 - `<ctrl+/>` - comment line or block
 - Window Navigation
@@ -53,3 +54,6 @@ tags:
 	- `<leader>c0` - choose none
 	- `]x` - move to previous conflict
 	-  `[x` - move to next conflict
+	- `<leader>m` - open diff view
+- Show Keybindings
+	- `:Telescope keymaps`
