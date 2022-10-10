@@ -12,8 +12,8 @@
       <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Linear-Regression/</guid>
-      <description>Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = wx_i$
-We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y_i)^2$</description>
+      <description>Vector dimensions:
+ $w$ is $(d, 1)$ (weights) $y$ is $(n,1)$ (targets) $x_i$ is $(d, 1)$ (features) $X$ is $(n,d)$ each row is $x_i^T$  Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ Why? We may want to remove outliers, or be interested in the outliers themselves
       <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Social-Contract-Theory/</guid>
-      <description>In his book Leviathan, Thomas Hobbes argues that without rules and a means of enforcing them, people would not bother to create anything of value, because nobody could be sure of keeping what they created</description>
+      <description>Social contract theory is the view that persons’ moral and/or political obligations are dependent upon a contract or agreement among them to form the society in which they live.</description>
     </item>
     
     <item>
@@ -793,7 +793,7 @@ Quotes On throwing away early work:
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/NVIM-Cheatsheet/</guid>
-      <description>Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &amp;lt; or { &amp;quot; or &#39; - quoted string m show possible LSP-based jump locations    Mappings  &amp;lt;Ctrl&amp;gt;c - leave insert mode &amp;lt;leader&amp;gt;o - open file by name &amp;lt;leader&amp;gt;g - live grep &amp;lt;leader&amp;gt;f - format file f - hop by 2 chars &amp;lt;ctrl+/&amp;gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &amp;lt;leader&amp;gt;&amp;lt;direction&amp;gt; - move to window in that direction (one of wasd)   Tabs  &amp;lt;alt-&amp;lt;&amp;gt; - previous tab &amp;lt;alt-&amp;gt;&amp;gt; - previous tab &amp;lt;alt-q&amp;gt; - close tab &amp;lt;alt-#&amp;gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &amp;lt;shift&amp;gt;K - show type hint &amp;lt;space&amp;gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &amp;lt;leader&amp;gt;co - choose ours &amp;lt;leader&amp;gt;ct - choose theirs &amp;lt;leader&amp;gt;cb - choose both &amp;lt;leader&amp;gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict    </description>
+      <description>Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &amp;lt; or { &amp;quot; or &#39; - quoted string m show possible LSP-based jump locations    Mappings  &amp;lt;Ctrl&amp;gt;c - leave insert mode &amp;lt;leader&amp;gt;o - open file by name &amp;lt;leader&amp;gt;g - live grep &amp;lt;leader&amp;gt;f - format file &amp;lt;leader&amp;gt;ca - code actions f - hop by 2 chars &amp;lt;ctrl+/&amp;gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &amp;lt;leader&amp;gt;&amp;lt;direction&amp;gt; - move to window in that direction (one of wasd)   Tabs  &amp;lt;alt-&amp;lt;&amp;gt; - previous tab &amp;lt;alt-&amp;gt;&amp;gt; - previous tab &amp;lt;alt-q&amp;gt; - close tab &amp;lt;alt-#&amp;gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &amp;lt;shift&amp;gt;K - show type hint &amp;lt;space&amp;gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &amp;lt;leader&amp;gt;co - choose ours &amp;lt;leader&amp;gt;ct - choose theirs &amp;lt;leader&amp;gt;cb - choose both &amp;lt;leader&amp;gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &amp;lt;leader&amp;gt;m - open diff view   Show Keybindings  :Telescope keymaps    </description>
     </item>
     
     <item>

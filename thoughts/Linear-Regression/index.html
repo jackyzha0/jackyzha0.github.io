@@ -8,8 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = wx_i$
-We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y_i)^2$"
+    content="Vector dimensions:
+ $w$ is $(d, 1)$ (weights) $y$ is $(n,1)$ (targets) $x_i$ is $(d, 1)$ (features) $X$ is $(n,d)$ each row is $x_i^T$  Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$"
   />
   <title>
     Linear Regression
@@ -126,7 +126,7 @@ We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.295a5991c28f2cf5060f4f93165e445e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.551733df78f6c7bc6a85cec36252626e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -332,6 +332,72 @@ Oct 5, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -376,21 +442,59 @@ Oct 5, 2022
 
 
 
-<p>Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = wx_i$</p>
-<p>We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (wx_i - y_i)^2$</p>
+<p>Vector dimensions:</p>
+<ul>
+<li>$w$ is $(d, 1)$ (weights)</li>
+<li>$y$ is $(n,1)$ (targets)</li>
+<li>$x_i$ is $(d, 1)$ (features)</li>
+<li>$X$ is $(n,d)$ each row is $x_i^T$</li>
+</ul>
+<p>Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$</p>
+<p>We set $w$ to minimize the sum of squared errors: $f(w) = \sum_{i=1}^n (w^Tx_i - y_i)^2$</p>
 <ol>
 <li>Take the derivative of $f$ and set it equal to 0 $f&rsquo;(w) = 0$ gives us $w = \frac{\sum_{i=1}^n x_iy_i}{\sum_{i=1}^n x_i^2}$</li>
 <li>Check to second derivative to make sure we have a minimizer (if double derivative is positive). $f&rsquo;&rsquo;(w) = \sum_{i=1}^n x_i^2$. As $x_i^2$ by definition must always be positive, this is a minimizer.</li>
 </ol>
 <p>In d-dimensions, we minimize</p>
-<p>$$f(w) = \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2$$</p>
+<p>$$\begin{equation}
+\begin{split}
+f(w) &amp;= \frac 1 2 \sum_{i=1}^n (w^Tx_i - y_i)^2 \\ &amp; = \frac 1 2 \lVert Xw - y \rVert^2 \\ &amp; = \frac 1 2 w^TX^TXw - w^TX^Ty + \frac 1 2 y^T y \\ &amp; = \frac 1 2 w^TAw - w^Tb + c
+\end{split}
+\end{equation}$$</p>
+<p>where $A$ is a matrix, $b$ is a vector, and $c$ is a scalar</p>
 <p>The generalized version of “set the derivative to 0 and solve” in d-dimensions is to find where the gradient is zero (see <a href="/thoughts/calculus" rel="noopener" class="internal-link" data-src="/thoughts/calculus">calculus</a>). We get</p>
-<p>$$\nabla f(w) = \begin{bmatrix}
+<p>$$
+\begin{equation}
+\begin{split}
+\nabla f(w) &amp;= \begin{bmatrix}
 \frac{\partial f}{\partial w_1} \\ \frac{\partial f}{\partial w_2} \\ \vdots\\\ \frac{\partial f}{\partial w_d}
-\end{bmatrix} =</p>
+\end{bmatrix}  \\ \</p>
+<p>&amp;=</p>
 <p>\begin{bmatrix}
-\sum_{i=1}^n (w^Tx_i - yi)x_{i,1}  \\ \sum_{i=1}^n (w^Tx_i - yi)x_{i,2}  \\ \vdots\\\ \sum_{i=1}^n (w^Tx_i - yi)x_{i,d}  \\ \end{bmatrix}
+\sum_{i=1}^n (w^Tx_i - yi)x_{i,1}  \\ \sum_{i=1}^n (w^Tx_i - yi)x_{i,2}  \\ \vdots\\\ \sum_{i=1}^n (w^Tx_i - yi)x_{i,d}  \\ \end{bmatrix} \\ \</p>
+<p>&amp;=</p>
+<p>Aw - b \</p>
+<p>&amp;= X^TXw - X^Ty
+\end{split}
+\end{equation}
 $$</p>
+<a href="#cost"><h2 id="cost"><span class="hanchor" ariaLabel="Anchor"># </span>Cost</h2></a>
+<p>Of solving equations in the form $Aw = b$</p>
+<ol>
+<li>$O(nd)$ to form vector $b$</li>
+<li>$O(nd^2)$ to form matrix A</li>
+<li>Solving a $(d,d)$ system of equations is $O(d^3)$</li>
+</ol>
+<p>Overall cost is $O(nd^2+d^3)$</p>
+<a href="#change-of-basis"><h2 id="change-of-basis"><span class="hanchor" ariaLabel="Anchor"># </span>Change of Basis</h2></a>
+<p>Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1. We can fit polynomials of degree $p$ by raising other powers:</p>
+<p>$$
+Z =
+\begin{bmatrix}
+1 &amp; x_1 &amp; x_1^2 &amp; \dots &amp; x_1^p \\ 1 &amp; x_2 &amp; x_2^2 &amp; \dots &amp; x_2^p \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ 1 &amp; x_n &amp; x_n^2 &amp; \dots &amp; x_n^p
+\end{bmatrix}
+$$</p>
+<p>As the polynomial degree increases, the training error goes down but the approximation error goes up.</p>
 
 
     </article>
