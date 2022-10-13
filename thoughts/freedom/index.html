@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.551733df78f6c7bc6a85cec36252626e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,6 +330,9 @@ Oct 30, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/web3/">web3</a> allows us to codify and define these boundaries for ourselves. By itself, it is not a technology that makes us &lsquo;more free,&rsquo; but by explicitly stating the boundaries we create, we can create the freedom.</p>
 <p>&ldquo;This is a critical point: the products we create should not aim to make people &lsquo;more free&rsquo; - that way lies false marketing campaigns and disappointment. Our products should be conscious of, and communicate clearly, how they constrain the people who use them.&rdquo;</p>
+<a href="#free-speech"><h2 id="free-speech"><span class="hanchor" ariaLabel="Anchor"># </span>Free Speech</h2></a>
+<p>In the US, protection is not given to “libel, reckless or calculated lies, slander, misrepresentation, perjury, false advertising, obscenity and profanity, solicitation of crime,</p>
+<p>and personal abuse or ‘fighting’ words,” because these actions do not serve the ends of the First Amendment</p>
 
 
     </article>

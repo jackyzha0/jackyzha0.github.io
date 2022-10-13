@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.551733df78f6c7bc6a85cec36252626e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -273,7 +273,7 @@ if (!doNotTrack) {
       
       <p class="meta">
         Last updated 
-Sep 26, 2022
+Oct 12, 2022
 
  
           
@@ -306,6 +306,36 @@ Sep 26, 2022
 
 
 
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -649,6 +679,7 @@ tags:</p>
 <li><a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">Supervised learning</a></li>
 <li><a href="/thoughts/No-Free-Lunch-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/No-Free-Lunch-Theorem">No Free Lunch Theorem</a></li>
 <li><a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">unsupervised learning</a></li>
+<li><a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a></li>
 </ul>
 <p>Related background:</p>
 <ul>

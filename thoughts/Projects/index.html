@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca4f903209a9651fab00b0b48d5d7da8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.551733df78f6c7bc6a85cec36252626e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -394,6 +394,36 @@ Dec 27, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -411,6 +441,13 @@ Dec 27, 2021
   href="/thoughts/idea-list/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/idea-list/">here</a>.</p>
+<a href="#tabspace---a-scratchspace-for-your-new-tab-page"><h2 id="tabspace---a-scratchspace-for-your-new-tab-page"><span class="hanchor" ariaLabel="Anchor"># </span>Tabspace - a scratchspace for your new tab page</h2></a>
+<p>A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with low-friction note taking and integrating <a href="/thoughts/game-design" rel="noopener" class="internal-link" data-src="/thoughts/game-design">game design</a> principles of &lsquo;juiciness&rsquo; into UI/UX.</p>
+<p>
+
+<a href="https://github.com/jackyzha0/tabspace" rel="noopener">GitHub</a>, 
+
+<a href="https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha" rel="noopener">Chrome Webstore</a></p>
 <a href="#miniraft---1kloc-raft-consensus-algorithm-implementation"><h2 id="miniraft---1kloc-raft-consensus-algorithm-implementation"><span class="hanchor" ariaLabel="Anchor"># </span>miniraft - &lt;1kloc Raft consensus algorithm implementation</h2></a>
 <p>A minimal implementation of the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">raft Consensus Algorithm</a> with a focus on readability/understandability.</p>
 <p>This project was created as an exercise in implementing and learning about distributed systems. Do NOT use this in production.</p>
