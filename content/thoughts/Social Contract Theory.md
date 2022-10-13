@@ -40,3 +40,4 @@ Rawl proposes that rational people behind the veil of ignorance would decide on 
 - Social contract implies agreement. None of us agreed to it when we were born!
 -  Social contract theory does not explain how to solve a moral problem when the analysis reveals conflicting rights
 - Classifying those who deliberately break moral rules and those who cannot understand a rule can be difficult
+

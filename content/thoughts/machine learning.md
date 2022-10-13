@@ -28,6 +28,7 @@ Main topics:
 - [[thoughts/supervised learning|Supervised learning]]
 - [[thoughts/No Free Lunch Theorem]]
 - [[thoughts/unsupervised learning]]
+- [[thoughts/gradient descent]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]

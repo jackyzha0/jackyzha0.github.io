@@ -9,8 +9,14 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
-### October 3rd
-- 
+### October 12th
+- Ok well... it's been 3 weeks since I last wrote an update. School has been busy!
+- I got really stuck with Rhizome work so I took a week and a bit off to work on [Tabspace](https://github.com/jackyzha0/tabspace) and launched it. It felt good to launch something and 'unstick myself'
+- Got more motivation to work on `bft-json-crdt` and started a more methodical approach to debugging (rather than just changing index offsets and rerunning LOL).
+	- Eventually pinpointed two bugs:
+		- Not accounting for repeated delete elements
+		- Not properly updating the internal sequence number
+	- Once these were fixed, it kind of just worked! Of course, the performance isn't great but it still happens to be ~4x faster than the base Automerge implementation B))
 
 ## September
 ### September 30th

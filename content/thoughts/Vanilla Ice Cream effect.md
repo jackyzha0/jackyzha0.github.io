@@ -10,8 +10,7 @@ Ask everyone to vote on their favourite ice cream, you'll most likely end up wit
 Similar to design by committee → a project that has many designers involved but no unifying plan or vision
 
 ## Coordination Headwind
-[Source: How Organizations are like Slime Molds by 
-*Alex Komoroske*](https://komoroske.com/slime-mold/)
+[Source: How Organizations are like Slime Molds by *Alex Komoroske*](https://komoroske.com/slime-mold/)
 
 In small orgs, individuals matter a lot, but when the org gets larger the system (structure + dynamics) dominate. [Consensus](thoughts/consensus.md) is especially difficult in larger groups.
 
