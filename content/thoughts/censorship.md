@@ -11,6 +11,8 @@ How do we draw the line between an end product and infrastructure? How should [i
 
 The benefit of retroactive correction in some instances—imagine fixing a typographical error in the proportions of a recipe, or blocking out someone’s phone number shared for the purposes of harassment—should be contextualized against the prospect of systemic, chronic demands for revisions by aggrieved people or companies single-mindedly demanding changes that serve to eat away at the public record.
 
+Is there a difference between censorship at the broadcast level and receiving level? People should choose what they want to see but have no overarching rules over what is 'illegal' content to create/broadcast. States can still mandate for example, required filters for receiving content.
+
 ## 3 Types
 1. Government monopolization (e.g. former Soviet union owned all the media outlets)
 2. Prepublication Review (e.g. government prevents information from being revealed, like nuclear weapons program details)

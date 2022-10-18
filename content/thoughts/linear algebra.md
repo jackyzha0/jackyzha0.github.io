@@ -69,8 +69,13 @@ If A is (m, n) and B is (n, p), then AB is (m, p)
 A scalar measure of a vector's length
 
 - $\Vert x \Vert \geq 0$ 
-- Euclidean Norm: $\Vert x \Vert_2 = \sqrt{\sum_{i=1}^n x_i^2}$  (this is also called the L-2 Norm)
 - $\Vert x \Vert_2^2 = x^Tx$ 
+
+- Euclidean Norm (L2-Norm): $\Vert x \Vert_2 = \sqrt{\sum_{i=1}^n x_i^2}$
+- Manhattan Distance (L1-Norm): $\Vert x \Vert_1 = |r_1| + |r_2|$
+	- How many 'blocks' you need to traverse
+- L$\infty$-Norm: $\Vert x \Vert_\infty = \max(|r_1|, |r_2|)$
+	- How many blocks you have to walk in any one dimensions
 
 ### Rank
 - The dimension of the vector space generated (or spanned) by its columns.

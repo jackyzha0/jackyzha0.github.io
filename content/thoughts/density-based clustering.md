@@ -4,6 +4,8 @@ date: 2022-09-28
 tags:
 - seed
 - CPSC340
+aliases:
+- "density based clustering"
 ---
 
 - Clusters are defined by “dense” regions.

@@ -37,3 +37,13 @@ f(x)& = \frac 1 2 x^TAx + b^Tx + c \\
 $$
 
 If $A$ is symmetric, $\nabla f(x) = Ax+b$. In the non-symmetric case, $\nabla f(x) = \frac 1 2 (A + A^T)x + b$
+
+Generalizations of gradients for $d$ dimensions given:
+1. $A = X^TX$ 
+2. $b$ = $X^Ty$
+3. $c = \frac 1 2 y^Ty$
+
+So
+1. $\nabla \frac 1 2 w^T A w = Aw$ (if A is symmetric)
+2. $\nabla w^Tb = b$
+3. $\nabla c = 0$

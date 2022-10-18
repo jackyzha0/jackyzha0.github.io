@@ -83,3 +83,31 @@ Z =
 $$
 
 As the polynomial degree increases, the training error goes down but the approximation error goes up.
+
+## Robust Regression
+We minimize the L1-norm of residuals instead of L2-norm
+
+$$f(w) = \lVert Xw - y \rVert_1$$
+
+However, as the L1-norm uses the absolute function, it is non-differentiable at 0. We can use a smooth approximation of the L1-norm instead, like Huber loss:
+
+$$
+h(r_i) = 
+\begin{cases} 
+      \frac 1 2 r_i^2 & |r_i| \leq \epsilon \\
+      \epsilon (|r_i| - \frac 1 2 \epsilon) & \textrm{otherwise}
+   \end{cases}
+$$
+
+Absolute error is more robust and non-convex errors are the most robust.
+- Generally not influenced by outlier groups
+- But it is non-convex so finding global minimum is hard
+
+## Brittle Regression
+You want to minimize size of worst error across examples. For example, if in worst case the plane can crash or you perform badly on a group.
+
+We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This effectively minimizes the highest error.
+
+The smooth approximation to the max function is the log-sum-exp function:
+
+$$\max_i \{ z_i \} \approx \log( \sum_i \exp(z_i))$$

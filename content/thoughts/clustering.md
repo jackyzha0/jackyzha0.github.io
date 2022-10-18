@@ -9,7 +9,7 @@ tags:
 We want to assign examples to "groups".
 
 ## Methods
--  [[thoughts/K-means|K-means]] (most popular)
+- [[thoughts/K-means|K-means]] (most popular)
 - [[thoughts/density-based clustering]]
 - Ensemble Clustering
 	- Like [[thoughts/Random Forest|random forest]] but for voting for clustering

@@ -51,14 +51,7 @@ Classifier is a procedure that accepts as input a set of features and outputs a 
 3. Classify: train and test data using BOW ([[thoughts/KNN|KNN]], [[thoughts/Naive Bayes|naive Bayes]], SVM)
 
 ### Bayes Rule
-Let $c$ be the class label and $x$ be the measurement (evidence)
-
-$$P(c|x) = \frac{P(x|c)p(c)}{P(x)}$$
-
-- $P(c|x)$: the posterior probability is the probability of $c$ given $x$ (after the measurement). 
-- $p(c)$: prior probability
-- $P(x|c)$: class-conditional probability (likelihood)
-- $P(x)$: unconditional probability (a.k.a. marginal likelihood)
+See: [[thoughts/probability#Bayes' Theorem|Bayes' Theorem]]
 
 Decision boundary, the location where one class becomes more probable than the other (e.g the point where the probability classes are equal). 
 

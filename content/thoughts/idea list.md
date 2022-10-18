@@ -6,6 +6,14 @@ tags:
 ---
 
 ## Technical
+- video editor with auto-generated snap points
+- rotmg but actually good lol
+	- dodge mechanic
+	- no instakill, should be iframes and way less health (similar to EtG)
+	- keep soulbound mechanic
+	- no screen rotation
+	- multi-floor dungeons, take more inspo from rogue-lites
+	- should have one free key a day
 - latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
 - something with https://openai.com/blog/whisper/
 - calvin and hobbes semantic image search
