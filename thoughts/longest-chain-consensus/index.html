@@ -122,13 +122,13 @@ Primarily studied in the synchronous [[thoughts/system model|system model]]. Thr
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

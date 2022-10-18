@@ -120,13 +120,13 @@ How do we draw the line between an end product and infrastructure? How should in
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -333,6 +333,7 @@ Dec 25, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/public-goods/">public good</a>&rsquo;? As more and more of our digital infrastructure is built out under private companies, does it change how we govern content on top of it?</p>
 <p>The benefit of retroactive correction in some instances—imagine fixing a typographical error in the proportions of a recipe, or blocking out someone’s phone number shared for the purposes of harassment—should be contextualized against the prospect of systemic, chronic demands for revisions by aggrieved people or companies single-mindedly demanding changes that serve to eat away at the public record.</p>
+<p>Is there a difference between censorship at the broadcast level and receiving level? People should choose what they want to see but have no overarching rules over what is &lsquo;illegal&rsquo; content to create/broadcast. States can still mandate for example, required filters for receiving content.</p>
 <a href="#3-types"><h2 id="3-types"><span class="hanchor" ariaLabel="Anchor"># </span>3 Types</h2></a>
 <ol>
 <li>Government monopolization (e.g. former Soviet union owned all the media outlets)</li>

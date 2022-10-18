@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -398,6 +398,18 @@ Oct 5, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -495,6 +507,26 @@ Z =
 \end{bmatrix}
 $$</p>
 <p>As the polynomial degree increases, the training error goes down but the approximation error goes up.</p>
+<a href="#robust-regression"><h2 id="robust-regression"><span class="hanchor" ariaLabel="Anchor"># </span>Robust Regression</h2></a>
+<p>We minimize the L1-norm of residuals instead of L2-norm</p>
+<p>$$f(w) = \lVert Xw - y \rVert_1$$</p>
+<p>However, as the L1-norm uses the absolute function, it is non-differentiable at 0. We can use a smooth approximation of the L1-norm instead, like Huber loss:</p>
+<p>$$
+h(r_i) =
+\begin{cases}
+\frac 1 2 r_i^2 &amp; |r_i| \leq \epsilon \\ \epsilon (|r_i| - \frac 1 2 \epsilon) &amp; \textrm{otherwise}
+\end{cases}
+$$</p>
+<p>Absolute error is more robust and non-convex errors are the most robust.</p>
+<ul>
+<li>Generally not influenced by outlier groups</li>
+<li>But it is non-convex so finding global minimum is hard</li>
+</ul>
+<a href="#brittle-regression"><h2 id="brittle-regression"><span class="hanchor" ariaLabel="Anchor"># </span>Brittle Regression</h2></a>
+<p>You want to minimize size of worst error across examples. For example, if in worst case the plane can crash or you perform badly on a group.</p>
+<p>We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This effectively minimizes the highest error.</p>
+<p>The smooth approximation to the max function is the log-sum-exp function:</p>
+<p>$$\max_i { z_i } \approx \log( \sum_i \exp(z_i))$$</p>
 
 
     </article>

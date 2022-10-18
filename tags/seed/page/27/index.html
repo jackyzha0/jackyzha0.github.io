@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -283,6 +283,24 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Turing-Test/" class="internal-link" data-src="/thoughts/Turing-Test/">Turing Test</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 25, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/Twin-Earth-Argument/" class="internal-link" data-src="/thoughts/Twin-Earth-Argument/">Twin Earth Argument</a></h3>
             </div>
             <div class="spacer"></div>
@@ -428,24 +446,6 @@ Dec 24, 2021
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/object-classification/" class="internal-link" data-src="/thoughts/object-classification/">Object Classification</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 24, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/object-detection/" class="internal-link" data-src="/thoughts/object-detection/">Object Detection</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

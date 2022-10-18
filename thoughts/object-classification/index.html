@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -463,32 +463,6 @@ Dec 24, 2021
   
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
 
 
 
@@ -496,6 +470,35 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -675,14 +678,7 @@ Disadvantages:</li>
 <li>Classify: train and test data using BOW (<a href="/thoughts/KNN" rel="noopener" class="internal-link" data-src="/thoughts/KNN">KNN</a>, <a href="/thoughts/Naive-Bayes" rel="noopener" class="internal-link" data-src="/thoughts/Naive-Bayes">naive Bayes</a>, SVM)</li>
 </ol>
 <a href="#bayes-rule"><h3 id="bayes-rule"><span class="hanchor" ariaLabel="Anchor"># </span>Bayes Rule</h3></a>
-<p>Let $c$ be the class label and $x$ be the measurement (evidence)</p>
-<p>$$P(c|x) = \frac{P(x|c)p(c)}{P(x)}$$</p>
-<ul>
-<li>$P(c|x)$: the posterior probability is the probability of $c$ given $x$ (after the measurement).</li>
-<li>$p(c)$: prior probability</li>
-<li>$P(x|c)$: class-conditional probability (likelihood)</li>
-<li>$P(x)$: unconditional probability (a.k.a. marginal likelihood)</li>
-</ul>
+<p>See: <a href="/thoughts/probability#bayesrsquo-theorem" rel="noopener" class="internal-link" data-src="/thoughts/probability">Bayes&rsquo; Theorem</a></p>
 <p>Decision boundary, the location where one class becomes more probable than the other (e.g the point where the probability classes are equal).</p>
 <p>The Bayes&rsquo; risk is the shaded region where one class&rsquo;s probability is still non-zero beyond its decision boundary.</p>
 <p>

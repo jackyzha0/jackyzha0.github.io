@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -404,6 +404,126 @@ Sep 22, 2022
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
     
   
 
@@ -526,6 +646,7 @@ Sep 22, 2022
 <li>Errors (how many do users make, how severe, how easily can they recover)</li>
 <li>Satisfaction (subjective, but very important for perseverance and adoption)</li>
 </ol>
+<p>See also: <a href="/thoughts/software-principles" rel="noopener" class="internal-link" data-src="/thoughts/software-principles">software principles</a></p>
 <ul>
 <li>Maximize information hiding
 <ul>
@@ -672,6 +793,31 @@ Sep 22, 2022
 <li>Under the abstract <code>Node</code> class, create an abstract <code>accept</code> method</li>
 <li>Create a new visitor class that implements the <code>Visitor</code> interface</li>
 </ol>
+<a href="#empirical-studies"><h2 id="empirical-studies"><span class="hanchor" ariaLabel="Anchor"># </span>Empirical Studies</h2></a>
+<p>We ask general research questions about all users, all tasks of a certain kind&hellip; e.g. do types help developers of large projects?</p>
+<p>We usually can&rsquo;t measure these directly, but we can gather empirical evidence through:</p>
+<ol>
+<li>Observational/Exploratory Studies</li>
+<li>Controlled Experiments</li>
+<li>Historical Data Collection and Analysis</li>
+<li>Surveys</li>
+</ol>
+<p>Potential way conclusions can be flawed:</p>
+<ol>
+<li>Construct validity: are we measuring the right thing? Is this clearly connected to our research question? Did we misunderstand the concepts we are working with?</li>
+<li>Internal validity: What are alternative explanations for the results? Other bias, confounding factors, etc.</li>
+<li>External Validity: To what extent are our results and conclusions of our experiment generalizable to our original research question? (how representative are our tasks and users?)</li>
+<li>Empirical Reliability / Reproducibility: Can the study be reproduced?</li>
+</ol>
+<p>Risks and Consent:</p>
+<ol>
+<li>In what ways could your participants could be harmed by the study or its results?</li>
+<li>Could be physical harm (less likely in CS), emotional harm (stress, reputation, etc.)</li>
+<li>Evaluate the likelihood of each potential risk (including unlikely cases)</li>
+<li>Are there ways to mitigate these risks? Potentially: adjust your study design</li>
+<li>What would you do if a participant were harmed? e.g. correction, compensation?</li>
+</ol>
+<p>To run a study ethically, we need to get informed consent (see: <a href="/thoughts/interviews-and-data-recording" rel="noopener" class="internal-link" data-src="/thoughts/interviews-and-data-recording">interviews and data recording</a>)</p>
 
 
     </article>

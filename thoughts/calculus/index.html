@@ -120,13 +120,13 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -329,6 +329,30 @@ Sep 12, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -365,6 +389,18 @@ f(x)&amp; = \frac 1 2 x^TAx + b^Tx + c \\ &amp; = \sum_{i=1}^2 \sum_{j=1}^2 a_{i
 \end{equation}
 $$</p>
 <p>If $A$ is symmetric, $\nabla f(x) = Ax+b$. In the non-symmetric case, $\nabla f(x) = \frac 1 2 (A + A^T)x + b$</p>
+<p>Generalizations of gradients for $d$ dimensions given:</p>
+<ol>
+<li>$A = X^TX$</li>
+<li>$b$ = $X^Ty$</li>
+<li>$c = \frac 1 2 y^Ty$</li>
+</ol>
+<p>So</p>
+<ol>
+<li>$\nabla \frac 1 2 w^T A w = Aw$ (if A is symmetric)</li>
+<li>$\nabla w^Tb = b$</li>
+<li>$\nabla c = 0$</li>
+</ol>
 
 
     </article>

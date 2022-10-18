@@ -6,7 +6,16 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>intellectual property</title>
+      <link>https://jzhao.xyz/thoughts/intellectual-property/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/intellectual-property/</guid>
+      <description>According to the World Intellectual Property Organization, intellectual property &amp;ldquo;refers to creations of the mind: inventions; literary and artistic works; and symbols, names and images used in commerce&amp;rdquo;</description>
+    </item>
+    
     <item>
       <title>Gradient descent</title>
       <link>https://jzhao.xyz/thoughts/gradient-descent/</link>
@@ -72,7 +81,8 @@ Why? We may want to remove outliers, or be interested in the outliers themselves
       
       <guid>https://jzhao.xyz/thoughts/convex/</guid>
       <description>A set is convex if line between two points in the set stays in the set.
-![[thoughts/images/convexity.png]]</description>
+![[thoughts/images/convexity.png]]
+A function $f$ is convex if all the points above $f$ form a convex set.</description>
     </item>
     
     <item>
@@ -306,7 +316,7 @@ Notation Generally column major
       <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/probability/</guid>
-      <description>$0 \leq P(A) \leq 1$ $P(\lnot A) = 1 - P(A)$  Joint probability Probability of both A and B happening.</description>
+      <description>Kolmogorov Axioms  The probability of an event is a non-negative real number The probability that at least one of the possible events happen is 1 Given a set of mutually exclusive events, the probability of all of them happening is the probability of each event happening summed up  Consequences  $0 \leq P(A) \leq 1$ $P(\lnot A) = 1 - P(A)$  Joint probability Probability of both A and B happening.</description>
     </item>
     
     <item>
@@ -4659,7 +4669,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
+      <description>Technical  video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from rogue-lites should have one free key a day   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
     </item>
     
     <item>

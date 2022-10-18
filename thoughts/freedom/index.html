@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -332,7 +332,7 @@ Oct 30, 2021
 <p>&ldquo;This is a critical point: the products we create should not aim to make people &lsquo;more free&rsquo; - that way lies false marketing campaigns and disappointment. Our products should be conscious of, and communicate clearly, how they constrain the people who use them.&rdquo;</p>
 <a href="#free-speech"><h2 id="free-speech"><span class="hanchor" ariaLabel="Anchor"># </span>Free Speech</h2></a>
 <p>In the US, protection is not given to “libel, reckless or calculated lies, slander, misrepresentation, perjury, false advertising, obscenity and profanity, solicitation of crime,</p>
-<p>and personal abuse or ‘fighting’ words,” because these actions do not serve the ends of the First Amendment</p>
+<p>And personal abuse or ‘fighting’ words,” because these actions do not serve the ends of the First Amendment</p>
 
 
     </article>

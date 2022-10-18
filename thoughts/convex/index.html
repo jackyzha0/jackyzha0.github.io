@@ -9,7 +9,8 @@
   <meta
     name="description"
     content="A set is convex if line between two points in the set stays in the set.
-![[thoughts/images/convexity.png]]"
+![[thoughts/images/convexity.png]]
+A function $f$ is convex if all the points above $f$ form a convex set."
   />
   <title>
     Convex
@@ -120,13 +121,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -296,6 +297,24 @@ Sep 28, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -326,6 +345,15 @@ Sep 28, 2022
 
 <p>A set is convex if line between two points in the set stays in the set.</p>
 <p><img src="/thoughts/images/convexity.png" width="auto" /></p>
+<p>A function $f$ is convex if all the points above $f$ form a convex set. That is,</p>
+<ul>
+<li>If $f&rsquo;&rsquo;(w) \geq 0, \forall w$</li>
+<li>A convex function multiplied by a non-negative constant is convex</li>
+<li>Norms and squared norms are always convex</li>
+<li>The sum of convex functions is convex</li>
+<li>The max of convex functions is a convex function</li>
+<li>The composition of a convex function $g$ and linear function $h$, $g \circ h$ is convex</li>
+</ul>
 
 
     </article>

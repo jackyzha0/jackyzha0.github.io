@@ -120,13 +120,13 @@ Gradient descent is essentially an iterative optimization algorithm that takes a
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.04e39fe11afa61af14fa55bea59d77d6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f97c2652ab8d78e3f24a9a4d08d75f78.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -316,6 +316,15 @@ Oct 12, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -332,7 +341,8 @@ Oct 12, 2022
 
 <p>When we minimize or maximize a function, we call it optimization.</p>
 <p>Gradient descent is essentially an iterative optimization algorithm that takes a guess and refines it using the gradient to make a better guess.</p>
-<p>If the objective function is a convex function, then it will converge to a <em>global optimum</em></p>
+<p>If the objective function is a convex function, then it will converge to a <em>global optimum</em>.</p>
+<p>Gradient descent finds critical point of differentiable function. Which can be faster than normal equations for large ‘d’ values. It takes $O(nd)$ per iteration so $O(tnd)$ for $t$ iterations.</p>
 <p>Formally,</p>
 <ol>
 <li>We start with an initial guess: $w^0$</li>
