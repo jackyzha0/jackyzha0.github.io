@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a30df0e089a30f02f415c8dc2b289449.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d53814be10debab44a739b48ef9b3d27.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -280,6 +280,24 @@ Oct 9, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/ethereum/" class="internal-link" data-src="/thoughts/ethereum/">Ethereum</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 9, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/task-centered-design/" class="internal-link" data-src="/thoughts/task-centered-design/">Task-Centered System Design</a></h3>
             </div>
             <div class="spacer"></div>
@@ -425,24 +443,6 @@ Oct 2, 2021
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/design-requirements/" class="internal-link" data-src="/thoughts/design-requirements/">Double Diamond Model of Design</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 2, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/human-centered-design/" class="internal-link" data-src="/thoughts/human-centered-design/">Human Centered Design (HCD)</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

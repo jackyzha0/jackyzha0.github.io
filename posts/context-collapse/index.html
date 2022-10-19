@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a30df0e089a30f02f415c8dc2b289449.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d53814be10debab44a739b48ef9b3d27.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -514,6 +514,10 @@ May 8, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/newsletters/issue-2/" data-ctx="metaphorical &#39;frame&#39;" data-src="/newsletters/issue-2" class="internal-link">Spider-man neurons, hearing fractals, and fulfilment</a>
       </li>
@@ -522,6 +526,12 @@ May 8, 2021
       
       <li>
         <a href="/newsletters/issue-3/" data-ctx="&#39;What&#39;s not in the frame&#39;" data-src="/newsletters/issue-3" class="internal-link">Sun sneezing, infrastructure moderation, and why bikes are better than tricycles</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="context collapse" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       

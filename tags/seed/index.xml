@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Feature Selection</title>
+      <link>https://jzhao.xyz/thoughts/feature-selection/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
+      <description>Find the features (columns) of ‘X’ that are important for predicting ‘y’.
+ What are the relevant factors? Which basis functions should I use among these choices?</description>
+    </item>
+    
+    <item>
       <title>intellectual property</title>
       <link>https://jzhao.xyz/thoughts/intellectual-property/</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>

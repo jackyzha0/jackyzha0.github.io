@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.efa99fc23e91c5dd3ed94f616383b1ae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a30df0e089a30f02f415c8dc2b289449.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4c4210ab76c2fe5c0e1b9aab20c4b4ea.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d53814be10debab44a739b48ef9b3d27.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -275,6 +275,24 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 2, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/human-centered-design/" class="internal-link" data-src="/thoughts/human-centered-design/">Human Centered Design (HCD)</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -438,24 +456,6 @@ Aug 17, 2021
                 
             </ul>
         </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 9, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Post-It-Note-City/" class="internal-link" data-src="/thoughts/Post-It-Note-City/">Post-It Note City</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
     </li></ul>
 
         
@@ -485,7 +485,7 @@ Aug 9, 2021
         <a href="/tags/seed/page/33/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/tags/seed/page/35/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/tags/seed/page/36/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </article>
