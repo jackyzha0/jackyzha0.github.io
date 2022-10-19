@@ -93,12 +93,33 @@ We can evaluate these interpretations as follows (Wesley Salmon)
 2. Ascertainable. Probability values must be values that we can determine (or else they are useless).
 3. Applicable. Probability values must be reliable as a “guide to life”. They must be values that we can justifiably use to make decisions.
 
-1. Classical: number of B over number of A is 3/13.
+1. Classical: number of B over number of A is 3/13
+	1. Problem: assumes cases of A are equipossible (equal probability)
+	2. This seems circular
+	3. Fails ascertainability, admissibility, and applicability
 2. Finite frequency: The proportion of B in a long series of draws is exactly 3/13.
+	1. Is admissible and ascertainable
+	2. Not applicable: how does this work for single case probabilities?
 3. Limiting frequency: The limiting frequency in an infinite series of draws would be 3/13.
+	1. Is admissible and applicable
+	2. Not ascertainable: there may be no limiting frequency
+	3. Again, does not work for single case probabilities
 4. Long-run propensity: The set-up A has a disposition to produce long sequences in which B happens with frequency 3/13.
+	1. Assumes that long-run frequencies have an underlying cause through an experimental arrangement/set-up
+	2. Not ascertainable: no improvement on the limiting frequency interpretation
+	3. Not explanatory: the tendency or disposition adds nothing to our udnerstanding
+	4. Not all probabilities can be interpreted as propensities. (no causal relation)
 5. Logical: B partially entails A, with degree of entailment 3/13.
+	1. P(B/A) measures the “proportion” of A that overlaps with B
 6. Epistemic: The evidence that A happened provides objective support of degree 3/13 that B happened.
+	1. Logical and epistemic probabilities might only exist in some cases
+	2. Very unlikely that we know some of the priors/likelihoods can be computed a priori (from pure logic)
 7. Subjective (actual degree of belief):  Somebody believes with degree 3/13 that A will produce B.
+	1. Credences can be measured (or even defined) by studying your actions, especially your betting behaviour
+	2. Problem: actual degree of belief is not admissable, people commit probabilistic fallacies all the time
+	3. This can lead to bad betting combinations (see [[thoughts/Dutch Book|Dutch Book]] examples) in which you are guaranteed to lose money
+	4. Key assumption: EU and EMV are equivalent for small but non-trivial amounts of money
 8. Subjective (idealized credence): An idealized version of someone – with coherent probabilities – believes with degree 3/13 that A will produce B.
+	1. Fixes admissibility as we require it
+	2. Not applicable: how can we justify using personal probabilities to make decisions if there are no constraints on one’s prior probabilities? 
 
