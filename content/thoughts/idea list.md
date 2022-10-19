@@ -79,6 +79,8 @@ tags:
 	- misc
 		- https://shapefarm.net/
 		- https://kernel-mag.vercel.app/post/take-back-the-future
+		- https://rauno.me/
+		- https://www.thesolarmonk.com/posts/a-spacebar-for-the-web
 	- 3d
 		- https://chartogne-taillet.com/en
 		- https://flowersforsociety.com/
@@ -176,3 +178,4 @@ tags:
 		- Ideas should remember where they came from – what blog I copied it from, which author I quoted it from, and so on.
 	- Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
 		- Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.
+	- essay on epistemic play + jestermaxxing + mill’s take on why censorship is unethical

@@ -58,7 +58,7 @@ The economist Elinor Ostrom identified 8 design principles that contribute to a 
 
 Main types of goods
 
-||Excludable|Non-excludable|
+| |Excludable|Non-excludable|
 |---|---|---|
 |Rivalrous|Private Goods (e.g. cars, domain names)|Commons (e.g. forests, online privacy)|
 |Non-rivalrous|Club Goods (e.g. cable, subscriptions like Netflix or Spotify)|Public Goods (e.g. air, open source code)|

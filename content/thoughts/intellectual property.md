@@ -35,6 +35,13 @@ Proposed by John Locke
 	4. The right to perform the work in public  
 	5. The right to produce new works derived from the copyrighted work
 
+#### Software
+Copyright protects the original expression of an idea, not the idea itself
+
+Copyright usually protects the executable program, not the source program. Typically, the source code to a program is confidential, in other words, a trade secret of the enterprise that developed it.
+
+Patent-holding companies aggressively use the courts to enforce their patent rights; these companies are sometimes referred to by their detractors as patent trolls. The *Williamson v. Citrix Online* decision sets a precedent for other courts to strike down software patents that are determined to be “too broad and indefinite”
+
 ## Limits to IP Protection
 There is a tension between the need to reward the creators of intellectual property by giving them exclusive rights to their ideas and the need to disseminate these ideas as widely as possible.
 

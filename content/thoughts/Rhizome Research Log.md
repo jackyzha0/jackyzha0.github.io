@@ -9,6 +9,26 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 19th
+- Picked up *Seeing Like A State* again, it feels a lot more relevant to my research now for some reason
+	-  We can think of a [[thoughts/RDF|triple store]] as a distributed and fragmented SQL database, where instead of tables with rows and value, we have entities with attributes and values.
+		- Any application can declare new attributes or alias an attribute to a more common one
+		- The most important part is that applications that share attributes can automatically interoperate their data
+			- The harder question is how to build good indices so that when the number of triples grows really large, we still get fast queries
+			- I suspect there's a lot to learn from decades of SQL index/query optimizations
+			- Would like the syntax to borrow from GraphQL
+		- This type of 'decentralized' database means there is no canonical schema. You can't mistake the map for the territory because everyone has their own map and can't force others to view the 'truth' of the world through your map
+	- Forcing ourselves into schemas make it hard to innovate
+		- To make new things requires us to provide migration paths forward or just accept stagnation
+		- It inadvertently shapes what people build -- leads to easily legible/classifiable applications (see: [[posts/digital-identity|post on digital identity and legibility]])
+		- It is treading outside the map that gives us innovation
+	- This would give us contextual data for app specific data
+		- We can see this as analogous to context dependent personalities (again, [[posts/context-collapse|context collapse]] bad)
+- Spent a lot of time trying to optimize `bft-json-crdt` to squeeze more performance out of the base list CRDT but to no avail
+	- Realizing this was kind of a waste of time as I was just using this is a proof-of-concept
+	- Especially if I want to focus on something that's more like a [[thoughts/RDF|triple store]], a list is kind of useless lol
+	- Going to focus more on the [[thoughts/Byzantine Faults|BFT]] and JSON-aspects of this project
+
 ### October 12th
 - Ok well... it's been 3 weeks since I last wrote an update. School has been busy!
 - I got really stuck with Rhizome work so I took a week and a bit off to work on [Tabspace](https://github.com/jackyzha0/tabspace) and launched it. It felt good to launch something and 'unstick myself'

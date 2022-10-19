@@ -111,3 +111,10 @@ We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This
 The smooth approximation to the max function is the log-sum-exp function:
 
 $$\max_i \{ z_i \} \approx \log( \sum_i \exp(z_i))$$
+
+## Penalizing Model Complexity
+Optimize $score(p) = \frac 1 2 \lVert Z_p v - y \rVert^2 + p$ where $p$ is the degree of the polynomial.
+
+Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.
+
+$\lambda = 1$ is called the Akaike information criterion (AIC)
