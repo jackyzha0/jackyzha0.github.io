@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dutch Book</title>
+      <link>https://jzhao.xyz/thoughts/Dutch-Book/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Dutch-Book/</guid>
+      <description>A Dutch Book is a set of bets that you consider individually fair, but which collectively guarantee a loss
+This usually happens when people commit probabilistic fallacies (e.</description>
+    </item>
+    
     <item>
       <title>Feature Selection</title>
       <link>https://jzhao.xyz/thoughts/feature-selection/</link>

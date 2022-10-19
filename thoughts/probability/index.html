@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a30df0e089a30f02f415c8dc2b289449.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.6d3b4e2f6fa9df8a0cbabdb91020e5cf.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d53814be10debab44a739b48ef9b3d27.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c5e31d80e93e9161b39e09b8708cce3c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -431,6 +431,36 @@ Sep 11, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -515,28 +545,65 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 <p>Applicable. Probability values must be reliable as a “guide to life”. They must be values that we can justifiably use to make decisions.</p>
 </li>
 <li>
-<p>Classical: number of B over number of A is 3/13.</p>
+<p>Classical: number of B over number of A is 3/13</p>
+<ol>
+<li>Problem: assumes cases of A are equipossible (equal probability)</li>
+<li>This seems circular</li>
+<li>Fails ascertainability, admissibility, and applicability</li>
+</ol>
 </li>
 <li>
 <p>Finite frequency: The proportion of B in a long series of draws is exactly 3/13.</p>
+<ol>
+<li>Is admissible and ascertainable</li>
+<li>Not applicable: how does this work for single case probabilities?</li>
+</ol>
 </li>
 <li>
 <p>Limiting frequency: The limiting frequency in an infinite series of draws would be 3/13.</p>
+<ol>
+<li>Is admissible and applicable</li>
+<li>Not ascertainable: there may be no limiting frequency</li>
+<li>Again, does not work for single case probabilities</li>
+</ol>
 </li>
 <li>
 <p>Long-run propensity: The set-up A has a disposition to produce long sequences in which B happens with frequency 3/13.</p>
+<ol>
+<li>Assumes that long-run frequencies have an underlying cause through an experimental arrangement/set-up</li>
+<li>Not ascertainable: no improvement on the limiting frequency interpretation</li>
+<li>Not explanatory: the tendency or disposition adds nothing to our udnerstanding</li>
+<li>Not all probabilities can be interpreted as propensities. (no causal relation)</li>
+</ol>
 </li>
 <li>
 <p>Logical: B partially entails A, with degree of entailment 3/13.</p>
+<ol>
+<li>P(B/A) measures the “proportion” of A that overlaps with B</li>
+</ol>
 </li>
 <li>
 <p>Epistemic: The evidence that A happened provides objective support of degree 3/13 that B happened.</p>
+<ol>
+<li>Logical and epistemic probabilities might only exist in some cases</li>
+<li>Very unlikely that we know some of the priors/likelihoods can be computed a priori (from pure logic)</li>
+</ol>
 </li>
 <li>
 <p>Subjective (actual degree of belief):  Somebody believes with degree 3/13 that A will produce B.</p>
+<ol>
+<li>Credences can be measured (or even defined) by studying your actions, especially your betting behaviour</li>
+<li>Problem: actual degree of belief is not admissable, people commit probabilistic fallacies all the time</li>
+<li>This can lead to bad betting combinations (see <a href="/thoughts/Dutch-Book" rel="noopener" class="internal-link" data-src="/thoughts/Dutch-Book">Dutch Book</a> examples) in which you are guaranteed to lose money</li>
+<li>Key assumption: EU and EMV are equivalent for small but non-trivial amounts of money</li>
+</ol>
 </li>
 <li>
 <p>Subjective (idealized credence): An idealized version of someone – with coherent probabilities – believes with degree 3/13 that A will produce B.</p>
+<ol>
+<li>Fixes admissibility as we require it</li>
+<li>Not applicable: how can we justify using personal probabilities to make decisions if there are no constraints on one’s prior probabilities?</li>
+</ol>
 </li>
 </ol>
 
@@ -574,6 +641,16 @@ $P(B | A) = \frac 3 {13}$ means:</p>
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Dutch-Book/" data-ctx="probability" data-src="/thoughts/Dutch-Book" class="internal-link">Dutch Book</a>
+      </li>
+      
       
       
       <li>
