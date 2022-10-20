@@ -1,5 +1,5 @@
 ---
-title: "intellectual property"
+title: "Intellectual Property"
 date: 2022-10-16
 tags:
 - seed

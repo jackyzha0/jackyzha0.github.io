@@ -118,3 +118,10 @@ Optimize $score(p) = \frac 1 2 \lVert Z_p v - y \rVert^2 + p$ where $p$ is the d
 Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.
 
 $\lambda = 1$ is called the Akaike information criterion (AIC)
+
+### L2-Regularization
+$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$
+
+This *almost always* decreases test error. Bigger $\lambda$ also means gradient descent converges faster.
+
+To help with this, we can standardize continuous feature by replacing it with its z-score.

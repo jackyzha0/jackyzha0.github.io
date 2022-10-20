@@ -9,6 +9,15 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 20th
+- Started writing post on [[posts/bft-json-crdt|a BFT JSON CRDT]]
+- Ran into a potential problem with message forgery...
+	- Seems like [Kleppmanns's Paper](https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf) doesn't address cases where, say a Byzantine node tries to send a message *on behalf* of another node (as it knows the unique IDs of other nodes) and forges an update.
+	- This is possible as the unique ID doesn't have any other properties that guarantee that only that the node with the ID can send that message.
+	- We would potentially need some sort of [[thoughts/Public-key Infrastructure|PKI]] assumption where the unique ID of a node is its public key and the ID is the signed digest of the message
+- This is (sort of) confirmed in [Kleppmann's 2020 paper](https://arxiv.org/pdf/2012.00472.pdf)
+	- "We assume that each replica has a distinct private key that can be used for digital signatures, and that the corresponding public key is known to all replicas. We assume that no replica knows the private key of another replica, and thus signatures cannot be forged"
+
 ### October 19th
 - Picked up *Seeing Like A State* again, it feels a lot more relevant to my research now for some reason
 	-  We can think of a [[thoughts/RDF|triple store]] as a distributed and fragmented SQL database, where instead of tables with rows and value, we have entities with attributes and values.

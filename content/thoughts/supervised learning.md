@@ -46,6 +46,7 @@ Tradeoffs:
 	- $E_{test} = (E_{test} - E_{train}) + E_{train}$ where $E_{test} - E_{train} = E_{approx}$ is the approximation error or the amount of overfitting
 		- As the model gets complicated, $E_{train}$ goes down but $E_{approx}$ goes up
 	- We can mitigate this by penalizing model complexity (e.g. for [[thoughts/Linear Regression#Penalizing Model Complexity]])
+	- See also: [[thoughts/regularization]]
 - Optimization bias
 	- How biased is an "error" that we optimized over many possibilities?
 	- Is large if you compare lots of different models, small if you only compare a few.
