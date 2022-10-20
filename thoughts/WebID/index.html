@@ -121,13 +121,13 @@ Similar to [[thoughts/DID|DIDs]].
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.6d3b4e2f6fa9df8a0cbabdb91020e5cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c5e31d80e93e9161b39e09b8708cce3c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>I-Confluence</title>
+      <link>https://jzhao.xyz/thoughts/I-Confluence/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/I-Confluence/</guid>
+      <description>Martin Kleppmann and Heidi Howard:  Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases
+Kleppmann and Howard prove an equivalent result which states that $\mathcal I$-confluence is a necessary and sufficient condition for the existence of a Byzantine eventual consistency replication algorithm</description>
+    </item>
+    
+    <item>
       <title>Dutch Book</title>
       <link>https://jzhao.xyz/thoughts/Dutch-Book/</link>
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
@@ -14,6 +24,16 @@
       <guid>https://jzhao.xyz/thoughts/Dutch-Book/</guid>
       <description>A Dutch Book is a set of bets that you consider individually fair, but which collectively guarantee a loss
 This usually happens when people commit probabilistic fallacies (e.</description>
+    </item>
+    
+    <item>
+      <title>Regularization</title>
+      <link>https://jzhao.xyz/thoughts/regularization/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/regularization/</guid>
+      <description>A method for controlling [[thoughts/complexity|complexity]]. Our main tools:
+ Model averaging (e.g. [[thoughts/Ensemble method|ensemble methods]]) Regularization (this)  When we have multiple models with the same training models, we should pick models that are more conservative (e.</description>
     </item>
     
     <item>
@@ -27,7 +47,7 @@ This usually happens when people commit probabilistic fallacies (e.</description
     </item>
     
     <item>
-      <title>intellectual property</title>
+      <title>Intellectual Property</title>
       <link>https://jzhao.xyz/thoughts/intellectual-property/</link>
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       

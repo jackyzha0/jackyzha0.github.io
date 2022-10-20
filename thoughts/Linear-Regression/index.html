@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.6d3b4e2f6fa9df8a0cbabdb91020e5cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c5e31d80e93e9161b39e09b8708cce3c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,12 @@ Oct 5, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -555,6 +561,10 @@ $$</p>
 <p>Optimize $score(p) = \frac 1 2 \lVert Z_p v - y \rVert^2 + p$ where $p$ is the degree of the polynomial.</p>
 <p>Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.</p>
 <p>$\lambda = 1$ is called the Akaike information criterion (AIC)</p>
+<a href="#l2-regularization"><h3 id="l2-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularization</h3></a>
+<p>$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$</p>
+<p>This <em>almost always</em> decreases test error. Bigger $\lambda$ also means gradient descent converges faster.</p>
+<p>To help with this, we can standardize continuous feature by replacing it with its z-score.</p>
 
 
     </article>
@@ -588,8 +598,18 @@ $$</p>
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/feature-selection/" data-ctx="linear regression" data-src="/thoughts/feature-selection" class="internal-link">Feature Selection</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/regularization/" data-ctx="linear regression" data-src="/thoughts/regularization" class="internal-link">Regularization</a>
       </li>
       
       

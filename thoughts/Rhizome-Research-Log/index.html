@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.6d3b4e2f6fa9df8a0cbabdb91020e5cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c5e31d80e93e9161b39e09b8708cce3c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -405,6 +405,249 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -17611,6 +17854,26 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#october"><h2 id="october"><span class="hanchor" ariaLabel="Anchor"># </span>October</h2></a>
+<a href="#october-20th"><h3 id="october-20th"><span class="hanchor" ariaLabel="Anchor"># </span>October 20th</h3></a>
+<ul>
+<li>Started writing post on <a class="internal-link broken">a BFT JSON CRDT</a></li>
+<li>Ran into a potential problem with message forgery&hellip;
+<ul>
+<li>Seems like 
+
+<a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Kleppmanns&rsquo;s Paper</a> doesn&rsquo;t address cases where, say a Byzantine node tries to send a message <em>on behalf</em> of another node (as it knows the unique IDs of other nodes) and forges an update.</li>
+<li>This is possible as the unique ID doesn&rsquo;t have any other properties that guarantee that only that the node with the ID can send that message.</li>
+<li>We would potentially need some sort of <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> assumption where the unique ID of a node is its public key and the ID is the signed digest of the message</li>
+</ul>
+</li>
+<li>This is (sort of) confirmed in 
+
+<a href="https://arxiv.org/pdf/2012.00472.pdf" rel="noopener">Kleppmann&rsquo;s 2020 paper</a>
+<ul>
+<li>&ldquo;We assume that each replica has a distinct private key that can be used for digital signatures, and that the corresponding public key is known to all replicas. We assume that no replica knows the private key of another replica, and thus signatures cannot be forged&rdquo;</li>
+</ul>
+</li>
+</ul>
 <a href="#october-19th"><h3 id="october-19th"><span class="hanchor" ariaLabel="Anchor"># </span>October 19th</h3></a>
 <ul>
 <li>Picked up <em>Seeing Like A State</em> again, it feels a lot more relevant to my research now for some reason
