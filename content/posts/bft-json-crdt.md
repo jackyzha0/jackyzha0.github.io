@@ -38,10 +38,15 @@ draft: true
 			- as a result, no garbage collection
 		- byzantine fault tolerance ... up until now
 - adding byzantine fault tolerance
-	- hash graph -> can no longer fake operations
+	- hash graph + signed message digests -> can no longer fake operations
 	- ensuring eventual delivery (basically, [[thoughts/message broadcast#Causal Broadcast]])
 		- [[thoughts/Byzantine Broadcast]] (we can actually get away with weaker requirements here)
-		- Eager reliable broadcast: first time a node receives a message, re-broadcast to each other node (reliable but expensive! $O(n^2)$ messages for $n$ nodes)
+			- dont need total order broadcast, just causal broadcast
 		- Assumptions: we assume that in the graph of replicas and network links, the correct replicas form a single connected component
 			- If two correct replicas can only communicate via faulty replicas, then no algorithm can guarantee data exchange between those replicas, as the adversary can always block communication (this is known as an eclipse attack)
+		- Eager reliable broadcast: first time a node receives a message, re-broadcast to each other node
+			- Reliable but expensive! $O(n^2)$ messages for $n$ nodes
+		- we need to figure out a fast way of reconciling updates between nodes
+			- we can do this using a hash graph
+		- To ensure eventual delivery, we assume that replicas periodically attempt to reconnect to each other and reconcile their sets of messages to discover any missing messages
 - so it turns out we can turn this bft list crdt into arbitrary JSON

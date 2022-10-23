@@ -19,6 +19,9 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
 ## 2022
 
 - Finding it extremely difficult to apply for grants for my independent research. Got rejected from Emergent Ventures which I thought I was most likely to get funding from which is extremely dejecting. More thoughts in my [[thoughts/Rhizome Research Log|research log]].
+- Rejected from [Thinking Microgrants](https://twitter.com/sariazout/status/1571871089713680386)
+	- *Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked.*
+	- There are just so many other similar people looking for grants !! Feels more luck of the draw than anything with this volume of applicants
 
 ## 2021
 

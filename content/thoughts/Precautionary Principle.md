@@ -19,7 +19,7 @@ Manson's Framework for when to use the precautionary principle
 	- Scope: local, global
 2. Uncertainty (knowledge condition): some outcomes meet a required threshold of evidence to count as a serious threat
 	- Probability: possible, non-negligible probability, predicted by a model, predicted by a well-understood scientific mechanism
-1. Proportional remedy: response should correspond to the plausibility and severity of the threat
+3. Proportional remedy: response should correspond to the plausibility and severity of the threat
 	- Prohibition/ban, further research, moratorium, mitigation/restriction
 
 However, could potentially lead to irrational outcomes or outcomes that are contradictory. e.g.

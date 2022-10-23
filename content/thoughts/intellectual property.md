@@ -8,6 +8,8 @@ tags:
 
 According to the World Intellectual Property Organization, intellectual property "refers to creations of the mind: inventions; literary and artistic works; and symbols, names and images used in commerce"
 
+Perhaps can also be called intellectually monopoly
+
 ## Property Rights
 Proposed by John Locke
 

@@ -16,6 +16,8 @@ We need interval scales for most of the rules for [[thoughts/Decisions under ign
 
 We find your utility for $x$ by measuring the risks that you are willing to take to get $x$. vNM shows that your utility for a lottery is equal to its expected utility.
 
+> If your preferences have enough structure (i.e., if they satisfy the vNM conditions), then they can be represented by a utility function u (unique up to positive linear transformation) which has the expected utility property.
+
 ### Lotteries
 - We have a set of basic prizes/outcomes
 - We can compose lotteries (if $L_1$ and $L_2$ are lotteries, then so is $[pL_1, (1-p)L_2]$)

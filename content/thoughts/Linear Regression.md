@@ -84,6 +84,8 @@ $$
 
 As the polynomial degree increases, the training error goes down but the approximation error goes up.
 
+Choosing a basis is hard! We can do something like [[thoughts/Gaussian RBF|Gaussian radial basis functions]] (RBFs) or polynomial basis as these are both universal approximators given enough data.
+
 ## Robust Regression
 We minimize the L1-norm of residuals instead of L2-norm
 
@@ -119,9 +121,4 @@ Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is t
 
 $\lambda = 1$ is called the Akaike information criterion (AIC)
 
-### L2-Regularization
-$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$
-
-This *almost always* decreases test error. Bigger $\lambda$ also means gradient descent converges faster.
-
-To help with this, we can standardize continuous feature by replacing it with its z-score.
+See also: [[thoughts/regularization]]

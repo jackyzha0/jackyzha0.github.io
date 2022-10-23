@@ -12,8 +12,9 @@ tags:
 	- no instakill, should be iframes and way less health (similar to EtG)
 	- keep soulbound mechanic
 	- no screen rotation
-	- multi-floor dungeons, take more inspo from rogue-lites
+	- multi-floor dungeons, take more inspo from roguelites
 	- should have one free key a day
+	- actual good graveyard mechanics to look at past runs/chars
 - latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
 - something with https://openai.com/blog/whisper/
 - calvin and hobbes semantic image search

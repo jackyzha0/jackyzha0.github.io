@@ -10,7 +10,7 @@ Choices by one agent in which background conditions are independent of what othe
 
 Relatived view of Decision theory:
 
-> Prescriptions in decision  theory are always relative to the formal problem specifications
+> Prescriptions in decision theory are always relative to the formal problem specifications
 
 e.g. Pascal's Wager
 

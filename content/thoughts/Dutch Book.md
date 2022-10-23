@@ -16,6 +16,8 @@ For example, if J believes that $P(heads) = P(tails) = \frac 2 3$, we can propos
 
 Both bets make sense for J. However, if J takes *both* bets, then he faces a guaranteed loss of $1
 
+Have the agent bet for propositions with credences (or [[thoughts/fair betting quotient|FBQs]]) that are too high, and against propositions with credences (or [[thoughts/fair betting quotient|FBQs]]) that are too low
+
 ## Dutch Book Theorem
 Based on the Kolmogorov [[thoughts/probability|probability]] axioms,
 

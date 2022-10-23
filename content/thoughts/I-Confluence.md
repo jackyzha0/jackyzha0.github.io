@@ -2,7 +2,7 @@
 title: "I-Confluence"
 date: 2022-10-20
 tags:
-- seed
+- sapling
 ---
 
 Martin Kleppmann and Heidi Howard: *[Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases](https://arxiv.org/pdf/2012.00472.pdf)*
@@ -27,6 +27,6 @@ A few examples:
 	- If $T_1$ and $T_2$ are both transactions that create data items with the same value in that attribute, each of transaction preserves the constraint
 	- However the combination of the two does not
 
-I conjecture that if a data structure is $\mathcal I$-confluent, then it can be expressed in monotonic Datalog. That is, $\mathcal I$-confluence holds if and only if it can be represented as a join semilattice.
+I conjecture that if a data structure is $\mathcal I$-confluent, then it can be expressed in monotonic Datalog. That is, $\mathcal I$-confluence holds if and only if states $S$ can be represented as a join semilattice.
 
 This shows equivalence with the [[thoughts/CALM Theorem|CALM]] conjecture (proof left as an exercise for the reader).

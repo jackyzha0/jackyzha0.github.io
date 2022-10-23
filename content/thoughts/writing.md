@@ -53,3 +53,18 @@ These aim to get the reader to say "that's interesting, I'd like to know more"
 1. Logos: logic (See also: list of [[thoughts/logical fallacies]])
 2. Ethos: reputational appeal of the writer
 3. Pathos: emotional appeal
+
+## As query
+[Source](https://escapingflatland.substack.com/p/search-query)
+
+**A blog post is _a search query_. You write to find your tribe; you write so they will know what kind of fascinating things they should route to your inbox.**
+
+See also: [[thoughts/Internet|niche at scale and the internet]]
+
+> Writing for a general public, you need to be broad and a bit bland. I didn’t want a general public. I wanted a specific set of people, the people who could help me along as a human being obsessed with certain intellectual problems. I didn’t know who these people _were_. I only knew that they existed. Hence my writing was a search query. It needed to be phrased in such a way that it found these people and, if necessary, filtered others.
+
+Two opposing forces to this:
+1. Having idiosyncratic interests that grow in complexity means that _if you pursue_ _them too far you will end up obsessed with things that no one else around you cares about_.
+2.  Humans tend to mimic the interests of those around them (see: [[thoughts/mimetic|memetic thinking]])
+
+We can reach a sort of equilibrium by writing and doing [[thoughts/building in public|things in public]].
