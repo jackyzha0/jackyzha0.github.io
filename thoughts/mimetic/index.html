@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -377,6 +377,10 @@ Dec 24, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/academia/" data-ctx="mimetic" data-src="/thoughts/academia" class="internal-link">Academia</a>
       </li>
@@ -385,6 +389,12 @@ Dec 24, 2021
       
       <li>
         <a href="/thoughts/feedback-loops/" data-ctx="Mimetic" data-src="/thoughts/feedback-loops" class="internal-link">Feedback Loops</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/writing/" data-ctx="memetic thinking" data-src="/thoughts/writing" class="internal-link">Writing</a>
       </li>
       
       

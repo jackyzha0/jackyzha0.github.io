@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -299,42 +299,27 @@ Oct 19, 2022
   
   
 
-
-
-
-
-
-
+  
+  
 
   
   
+
   
   
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
+
   
+  
+
+  
+  
+
+
+
+
+
+
+
 
   
   
@@ -392,6 +377,50 @@ Oct 19, 2022
         
         
         
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
       
     
   
@@ -410,6 +439,21 @@ Oct 19, 2022
 </ol>
 <p>When we have multiple models with the same training models, we should pick models that are <em>more conservative</em> (e.g. in <a href="/thoughts/Linear-Regression" rel="noopener" class="internal-link" data-src="/thoughts/Linear-Regression">linear regression</a>, pick smaller slope)</p>
 <p>We should regularize $w_j$ so that they don&rsquo;t explode.</p>
+<p>Makes the tangent to the level curves of the gradient point towards the global minimum</p>
+<p><img src="/thoughts/images/l1-vs-l2-regularization.png" width="auto" /></p>
+<a href="#l2-regularization"><h3 id="l2-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularization</h3></a>
+<p>$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$</p>
+<p>This <em>almost always</em> decreases test error. Bigger $\lambda$ also means gradient descent converges faster.</p>
+<p>To help with this, we can standardize continuous feature by replacing it with its z-score.</p>
+<a href="#l1-regularization"><h3 id="l1-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L1-Regularization</h3></a>
+<ul>
+<li>Like L2-norm, it’s convex and improves our test error</li>
+<li>Like L0-norm, it encourages elements of $w$ to be exactly zero</li>
+</ul>
+<a href="#how-is-this-different-from-l2"><h4 id="how-is-this-different-from-l2"><span class="hanchor" ariaLabel="Anchor"># </span>How is this different from L2?</h4></a>
+<p>The penalty stays is proportional to how far away $w_j$ is from zero. There is still something to be gained from making a tiny value exactly equal to 0.</p>
+<p>With L2, the penalty gets smaller as you get closer to zero. The penalty asymptotically vanishes as $w_j$ approaches 0 (no incentive for “exact” zeroes).</p>
+<p>L1-Regularization sets values to exactly 0, basically removing features from the model</p>
 
 
     </article>
@@ -439,8 +483,22 @@ Oct 19, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
-        <a href="/thoughts/machine-learning/" data-ctx="thoughts/regularization" data-src="/thoughts/machine-learning" class="internal-link"></a>
+        <a href="/thoughts/Linear-Regression/" data-ctx="thoughts/regularization" data-src="/thoughts/Linear-Regression" class="internal-link">Linear Regression</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="thoughts/regularization" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
       </li>
       
       

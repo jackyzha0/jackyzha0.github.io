@@ -120,13 +120,13 @@ Kleppmann and Howard prove an equivalent result which states that $\mathcal I$-c
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -283,7 +283,7 @@ Oct 20, 2022
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
 </ul>
 
@@ -295,6 +295,9 @@ Oct 20, 2022
 
 
 
+
+  
+  
 
   
   
@@ -453,7 +456,7 @@ Oct 20, 2022
 </ul>
 </li>
 </ul>
-<p>I conjecture that if a data structure is $\mathcal I$-confluent, then it can be expressed in monotonic Datalog. That is, $\mathcal I$-confluence holds if and only if it can be represented as a join semilattice.</p>
+<p>I conjecture that if a data structure is $\mathcal I$-confluent, then it can be expressed in monotonic Datalog. That is, $\mathcal I$-confluence holds if and only if states $S$ can be represented as a join semilattice.</p>
 <p>This shows equivalence with the <a href="/thoughts/CALM-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/CALM-Theorem">CALM</a> conjecture (proof left as an exercise for the reader).</p>
 
 

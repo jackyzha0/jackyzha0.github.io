@@ -7,13 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>I-Confluence</title>
-      <link>https://jzhao.xyz/thoughts/I-Confluence/</link>
-      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      <title>Fair Betting Quotient (FBQ)</title>
+      <link>https://jzhao.xyz/thoughts/fair-betting-quotient/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/I-Confluence/</guid>
-      <description>Martin Kleppmann and Heidi Howard:  Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases
-Kleppmann and Howard prove an equivalent result which states that $\mathcal I$-confluence is a necessary and sufficient condition for the existence of a Byzantine eventual consistency replication algorithm</description>
+      <guid>https://jzhao.xyz/thoughts/fair-betting-quotient/</guid>
+      <description>Your fair betting quotient (FBQ) for A is p if you think that the following is a fair bet (you are willing to take either side):</description>
+    </item>
+    
+    <item>
+      <title>Gaussian RBFs</title>
+      <link>https://jzhao.xyz/thoughts/Gaussian-RBF/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Gaussian-RBF/</guid>
+      <description>Non-parametric basis. Can think about it as a sum of gaussian &amp;lsquo;bumps&amp;rsquo;.
+Replace $x_i = (x_{i1}, x_{i2}, \dots, x_{in})$ with</description>
+    </item>
+    
+    <item>
+      <title>Hyper-parameter Optimization</title>
+      <link>https://jzhao.xyz/thoughts/hyper-parameter-optimization/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/hyper-parameter-optimization/</guid>
+      <description>How do we efficiently find the “best” hyper-parameters?
+More complicated models have even more hyper-parameters. This makes searching all values expensive (increases over-fitting risk)</description>
     </item>
     
     <item>
@@ -2966,7 +2985,8 @@ The traditional view of disciplines is that they lie on a spectrum where the stu
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/rationality/</guid>
-      <description>Bounded rationality: the choices that people make attempt to maximize benefit and minimize cost are imperfect: humans have a hard time precisely estimating benefit and cost and thus use imperfect heuristics to pick the most promising choices.</description>
+      <description>An act is rational (roughly) if it is most likely to maximize satisfaction of the agent’s preferences or [[thoughts/utility|utility]].
+Bounded rationality: the choices that people make attempt to maximize benefit and minimize cost are imperfect: humans have a hard time precisely estimating benefit and cost and thus use imperfect heuristics to pick the most promising choices.</description>
     </item>
     
     <item>

@@ -8,11 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="-&ndash; title: &ldquo;Machine Learning&rdquo; date: 2021-07-02T14:03:17-04:00 tags:
- sapling CPSC340   Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt"
+    content="Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
   />
   <title>
-    jzhao.xyz
+    Machine Learning
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -270,10 +270,10 @@ if (!doNotTrack) {
 
 
     <article>
-      
+      <h1>Machine Learning</h1>
       <p class="meta">
         Last updated 
-Oct 20, 2022
+Jul 2, 2021
 
  
           
@@ -283,6 +283,10 @@ Oct 20, 2022
       </p>
       <ul class="tags">
     
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+    
 </ul>
 
       
@@ -667,6 +671,35 @@ Oct 20, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -674,15 +707,7 @@ Oct 20, 2022
 
 
 
-<p>-&ndash;
-title: &ldquo;Machine Learning&rdquo;
-date: 2021-07-02T14:03:17-04:00
-tags:</p>
-<ul>
-<li>sapling</li>
-<li>CPSC340</li>
-</ul>
-<hr>
+
 <a href="#theory"><h2 id="theory"><span class="hanchor" ariaLabel="Anchor"># </span>Theory</h2></a>
 <p>Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</p>
 <p>We produce a lot of data (see: <a href="/thoughts/Data-Capitalism" rel="noopener" class="internal-link" data-src="/thoughts/Data-Capitalism">data capitalism</a>)</p>
@@ -839,7 +864,7 @@ tags:</p>
 <li>dramatically reduces number of learned parameters</li>
 </ul>
 </li>
-<li>regularization
+<li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a>
 <ul>
 <li>input preturbations
 <ul>

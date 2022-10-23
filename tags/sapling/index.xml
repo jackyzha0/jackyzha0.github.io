@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>I-Confluence</title>
+      <link>https://jzhao.xyz/thoughts/I-Confluence/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/I-Confluence/</guid>
+      <description>Martin Kleppmann and Heidi Howard:  Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases
+Kleppmann and Howard prove an equivalent result which states that $\mathcal I$-confluence is a necessary and sufficient condition for the existence of a Byzantine eventual consistency replication algorithm</description>
+    </item>
+    
+    <item>
       <title>Weaving the Web</title>
       <link>https://jzhao.xyz/thoughts/Weaving-the-Web/</link>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
@@ -1061,6 +1071,16 @@ Online Parks  Eli Pariser in Wired</description>
       <guid>https://jzhao.xyz/thoughts/mind-body-problem/</guid>
       <description>Concerned with how the mind and body are connected to one another
  are we just entirely made up of matter or is there something more?</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
+      <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
+      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
     </item>
     
     <item>

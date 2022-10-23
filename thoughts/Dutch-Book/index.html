@@ -120,13 +120,13 @@ This usually happens when people commit probabilistic fallacies (e."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -350,6 +350,66 @@ Oct 19, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -365,6 +425,7 @@ Oct 19, 2022
 <li>Pay $2; win $3 if tails, $0 if heads</li>
 </ol>
 <p>Both bets make sense for J. However, if J takes <em>both</em> bets, then he faces a guaranteed loss of $1</p>
+<p>Have the agent bet for propositions with credences (or <a href="/thoughts/fair-betting-quotient" rel="noopener" class="internal-link" data-src="/thoughts/fair-betting-quotient">FBQs</a>) that are too high, and against propositions with credences (or <a href="/thoughts/fair-betting-quotient" rel="noopener" class="internal-link" data-src="/thoughts/fair-betting-quotient">FBQs</a>) that are too low</p>
 <a href="#dutch-book-theorem"><h2 id="dutch-book-theorem"><span class="hanchor" ariaLabel="Anchor"># </span>Dutch Book Theorem</h2></a>
 <p>Based on the Kolmogorov <a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">probability</a> axioms,</p>
 <ol>
@@ -394,6 +455,16 @@ Oct 19, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/fair-betting-quotient/" data-ctx="thoughts/Dutch Book" data-src="/thoughts/fair-betting-quotient" class="internal-link">Fair Betting Quotient (FBQ)</a>
+      </li>
+      
       
       
       <li>

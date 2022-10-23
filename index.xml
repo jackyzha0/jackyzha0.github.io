@@ -7,6 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fair Betting Quotient (FBQ)</title>
+      <link>https://jzhao.xyz/thoughts/fair-betting-quotient/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/fair-betting-quotient/</guid>
+      <description>Your fair betting quotient (FBQ) for A is p if you think that the following is a fair bet (you are willing to take either side):</description>
+    </item>
+    
+    <item>
+      <title>Gaussian RBFs</title>
+      <link>https://jzhao.xyz/thoughts/Gaussian-RBF/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Gaussian-RBF/</guid>
+      <description>Non-parametric basis. Can think about it as a sum of gaussian &amp;lsquo;bumps&amp;rsquo;.
+Replace $x_i = (x_{i1}, x_{i2}, \dots, x_{in})$ with</description>
+    </item>
+    
+    <item>
+      <title>Hyper-parameter Optimization</title>
+      <link>https://jzhao.xyz/thoughts/hyper-parameter-optimization/</link>
+      <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/hyper-parameter-optimization/</guid>
+      <description>How do we efficiently find the “best” hyper-parameters?
+More complicated models have even more hyper-parameters. This makes searching all values expensive (increases over-fitting risk)</description>
+    </item>
+    
+    <item>
       <title>I-Confluence</title>
       <link>https://jzhao.xyz/thoughts/I-Confluence/</link>
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
@@ -3850,7 +3879,8 @@ How do we prevent the tragedy of the commons, help fund public goods, and incent
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/rationality/</guid>
-      <description>Bounded rationality: the choices that people make attempt to maximize benefit and minimize cost are imperfect: humans have a hard time precisely estimating benefit and cost and thus use imperfect heuristics to pick the most promising choices.</description>
+      <description>An act is rational (roughly) if it is most likely to maximize satisfaction of the agent’s preferences or [[thoughts/utility|utility]].
+Bounded rationality: the choices that people make attempt to maximize benefit and minimize cost are imperfect: humans have a hard time precisely estimating benefit and cost and thus use imperfect heuristics to pick the most promising choices.</description>
     </item>
     
     <item>
@@ -4685,6 +4715,16 @@ Dreyfus Dreyfus believed that, for any AI system to achieve any sort of general 
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
+      <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
+      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
+We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
+    </item>
+    
+    <item>
       <title>Semantics</title>
       <link>https://jzhao.xyz/thoughts/semantics/</link>
       <pubDate>Fri, 02 Jul 2021 13:49:27 -0400</pubDate>
@@ -4847,7 +4887,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from rogue-lites should have one free key a day   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
+      <description>Technical  video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from roguelites should have one free key a day actual good graveyard mechanics to look at past runs/chars   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
     </item>
     
     <item>
@@ -5202,16 +5242,6 @@ Since I’ve started at Hootsuite, I have
       
       <guid>https://jzhao.xyz/thoughts/language-development/</guid>
       <description>Approaches to study of language development  Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible &amp;ndash; this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG) Learnability approach: focuses on explaining the fact that language is acquired (i.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/machine-learning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>-&amp;ndash; title: &amp;ldquo;Machine Learning&amp;rdquo; date: 2021-07-02T14:03:17-04:00 tags:
- sapling CPSC340   Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</description>
     </item>
     
     <item>

@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,18 +434,72 @@ Oct 5, 2022
   
   
 
+
+
+
+
+
+
+
   
   
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
-
-
-
-
-
-
-
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -537,6 +591,7 @@ Z =
 \end{bmatrix}
 $$</p>
 <p>As the polynomial degree increases, the training error goes down but the approximation error goes up.</p>
+<p>Choosing a basis is hard! We can do something like <a href="/thoughts/Gaussian-RBF" rel="noopener" class="internal-link" data-src="/thoughts/Gaussian-RBF">Gaussian radial basis functions</a> (RBFs) or polynomial basis as these are both universal approximators given enough data.</p>
 <a href="#robust-regression"><h2 id="robust-regression"><span class="hanchor" ariaLabel="Anchor"># </span>Robust Regression</h2></a>
 <p>We minimize the L1-norm of residuals instead of L2-norm</p>
 <p>$$f(w) = \lVert Xw - y \rVert_1$$</p>
@@ -561,10 +616,7 @@ $$</p>
 <p>Optimize $score(p) = \frac 1 2 \lVert Z_p v - y \rVert^2 + p$ where $p$ is the degree of the polynomial.</p>
 <p>Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.</p>
 <p>$\lambda = 1$ is called the Akaike information criterion (AIC)</p>
-<a href="#l2-regularization"><h3 id="l2-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularization</h3></a>
-<p>$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$</p>
-<p>This <em>almost always</em> decreases test error. Bigger $\lambda$ also means gradient descent converges faster.</p>
-<p>To help with this, we can standardize continuous feature by replacing it with its z-score.</p>
+<p>See also: <a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a></p>
 
 
     </article>

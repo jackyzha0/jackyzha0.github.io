@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1a325936c9039a566bb5289f1d979ee7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.60fae3805117b16aaaaf1d7a78903bc2.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -539,7 +539,7 @@ Sep 7, 2022
 <p>Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table</p>
 <p>Relatived view of Decision theory:</p>
 <blockquote>
-<p>Prescriptions in decision  theory are always relative to the formal problem specifications</p>
+<p>Prescriptions in decision theory are always relative to the formal problem specifications</p>
 </blockquote>
 <p>e.g. Pascal&rsquo;s Wager</p>
 <table>
@@ -656,6 +656,16 @@ Sep 7, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/fair-betting-quotient/" data-ctx="decision tables" data-src="/thoughts/fair-betting-quotient" class="internal-link">Fair Betting Quotient (FBQ)</a>
+      </li>
+      
       
       
       <li>
