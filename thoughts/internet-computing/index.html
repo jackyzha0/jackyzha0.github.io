@@ -120,13 +120,13 @@ The Internet is a network of networks. The main goals was to integrate a number 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

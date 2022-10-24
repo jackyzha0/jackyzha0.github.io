@@ -97,10 +97,10 @@ Gradient descent is essentially an iterative optimization algorithm that takes a
     
     <item>
       <title>Linear Regression</title>
-      <link>https://jzhao.xyz/thoughts/Linear-Regression/</link>
+      <link>https://jzhao.xyz/thoughts/linear-regression/</link>
       <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/Linear-Regression/</guid>
+      <guid>https://jzhao.xyz/thoughts/linear-regression/</guid>
       <description>Vector dimensions:
  $w$ is $(d, 1)$ (weights) $y$ is $(n,1)$ (targets) $x_i$ is $(d, 1)$ (features) $X$ is $(n,d)$ each row is $x_i^T$  Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$</description>
     </item>

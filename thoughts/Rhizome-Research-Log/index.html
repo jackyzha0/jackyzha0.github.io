@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -18098,6 +18098,32 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#october"><h2 id="october"><span class="hanchor" ariaLabel="Anchor"># </span>October</h2></a>
+<a href="#october-24th"><h3 id="october-24th"><span class="hanchor" ariaLabel="Anchor"># </span>October 24th</h3></a>
+<ul>
+<li>privacy preserving crdts??</li>
+<li>turns out automerge is actually fast now</li>
+<li>ed25519 should be able to sign + verify upwards of 100k/s on a 1 GHz processor so i need to make some improvements</li>
+<li>improve predecessor check</li>
+</ul>
+<a href="#october-23rd"><h3 id="october-23rd"><span class="hanchor" ariaLabel="Anchor"># </span>October 23rd</h3></a>
+<ul>
+<li>
+
+<a href="https://www.youtube.com/watch?v=-f4cH_HQU4U" rel="noopener">Another great talk on WNFS</a> by Brooklyn Zelenka
+<ul>
+<li>The whole &lsquo;ask for permission&rsquo; thing isn&rsquo;t actually new!</li>
+<li>Our phones already do this: &ldquo;Google Photos is asking permission to access your camera roll&rdquo;</li>
+</ul>
+</li>
+<li>
+
+<a href="https://www.cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf" rel="noopener">New Directions in Cloud Programming</a>
+<ul>
+<li>The way we write distributed systems today is like writing assembly by hand &ndash; incredibly error prone</li>
+<li>We need projects like Bloom/Hydro that help with &lsquo;compiling away&rsquo; those concurrency semantics</li>
+</ul>
+</li>
+</ul>
 <a href="#october-22nd"><h3 id="october-22nd"><span class="hanchor" ariaLabel="Anchor"># </span>October 22nd</h3></a>
 <ul>
 <li>Had a random question about a paper that Kleppmann wrote and just straight up messaged him on Twitter LOL totally not expecting him to respond

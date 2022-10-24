@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -436,7 +436,7 @@ Oct 18, 2022
 <p>For each feature $j$, compute correlation between feature values $x_j$ and $y$.</p>
 <p>Usually gives unsatisfactory results as it ignores variable interactions (e.g. if tacos make you sick, and you often eat tacos on Tuesdays, it will say “Tuesday” is relevant.)</p>
 <a href="#regression-weight"><h2 id="regression-weight"><span class="hanchor" ariaLabel="Anchor"># </span>Regression Weight</h2></a>
-<p>Fit <a href="/thoughts/Linear-Regression" rel="noopener" class="internal-link" data-src="/thoughts/Linear-Regression">linear regression</a> weights $w$ based on all features.</p>
+<p>Fit <a href="/thoughts/linear-regression" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">linear regression</a> weights $w$ based on all features.</p>
 <p>Take all features $j$ where weight $|w_j|$ is greater than a threshold</p>
 <p>Has major problems with collinearity</p>
 <p>$\hat y_i = w_1 \textrm{taco} + w_2 \textrm{tuesday} = 0\textrm{taco} + (w_1 + w_2) \textrm{tuesday}$</p>

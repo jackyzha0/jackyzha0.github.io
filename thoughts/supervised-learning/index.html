@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -616,7 +616,7 @@ Sep 9, 2022
 <li><a href="/thoughts/Naive-Bayes" rel="noopener" class="internal-link" data-src="/thoughts/Naive-Bayes">Naive Bayes</a></li>
 <li><a href="/thoughts/KNN" rel="noopener" class="internal-link" data-src="/thoughts/KNN">KNN</a> (to fit an appropriate $k$)</li>
 <li><a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble Methods</a></li>
-<li><a href="/thoughts/Linear-Regression" rel="noopener" class="internal-link" data-src="/thoughts/Linear-Regression">Linear Regression</a></li>
+<li><a href="/thoughts/linear-regression" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">linear regression</a></li>
 </ul>
 <p>Tradeoffs:</p>
 <table>
@@ -680,7 +680,7 @@ Sep 9, 2022
 <li>As the model gets complicated, $E_{train}$ goes down but $E_{approx}$ goes up</li>
 </ul>
 </li>
-<li>We can mitigate this by penalizing model complexity (e.g. for <a href="/thoughts/Linear-Regression#penalizing-model-complexity" rel="noopener" class="internal-link" data-src="/thoughts/Linear-Regression">Linear Regression</a>)</li>
+<li>We can mitigate this by penalizing model complexity (e.g. for <a href="/thoughts/linear-regression#penalizing-model-complexity" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">linear regression</a>)</li>
 <li>See also: <a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a></li>
 </ul>
 </li>

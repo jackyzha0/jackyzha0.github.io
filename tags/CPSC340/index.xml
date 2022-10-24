@@ -28,6 +28,16 @@ More complicated models have even more hyper-parameters. This makes searching al
     </item>
     
     <item>
+      <title>Regularization</title>
+      <link>https://jzhao.xyz/thoughts/regularization/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/regularization/</guid>
+      <description>A method for controlling [[thoughts/complexity|complexity]]. Our main tools:
+ Model averaging (e.g. [[thoughts/Ensemble method|ensemble methods]]) Regularization (this)  When we have multiple models with the same training models, we should pick models that are more conservative (e.</description>
+    </item>
+    
+    <item>
       <title>Feature Selection</title>
       <link>https://jzhao.xyz/thoughts/feature-selection/</link>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
@@ -45,6 +55,26 @@ More complicated models have even more hyper-parameters. This makes searching al
       <guid>https://jzhao.xyz/thoughts/gradient-descent/</guid>
       <description>When we minimize or maximize a function, we call it optimization.
 Gradient descent is essentially an iterative optimization algorithm that takes a guess and refines it using the gradient to make a better guess.</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression</title>
+      <link>https://jzhao.xyz/thoughts/linear-regression/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/linear-regression/</guid>
+      <description>Vector dimensions:
+ $w$ is $(d, 1)$ (weights) $y$ is $(n,1)$ (targets) $x_i$ is $(d, 1)$ (features) $X$ is $(n,d)$ each row is $x_i^T$  Linear regression makes predictions $\hat y_i$ using a linear function of $x_i$: $\hat y_i = w^Tx_i$</description>
+    </item>
+    
+    <item>
+      <title>Outlier detection</title>
+      <link>https://jzhao.xyz/thoughts/outlier-detection/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/outlier-detection/</guid>
+      <description>Find observations that are unusually different from the others (aka anomaly detection).
+Why? We may want to remove outliers, or be interested in the outliers themselves (security)</description>
     </item>
     
     <item>

@@ -120,13 +120,13 @@ Background Points  No information about probabilities A value function on outcom
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -660,14 +660,12 @@ Sep 12, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Decision-theory/" data-ctx="DUI" data-src="/thoughts/Decision-theory" class="internal-link">Decision theory</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/Linear-Regression/" data-ctx="DUI" data-src="/thoughts/Linear-Regression" class="internal-link">Linear Regression</a>
       </li>
       
       
@@ -680,6 +678,12 @@ Sep 12, 2022
       
       <li>
         <a href="/thoughts/interval-scale/" data-ctx="DUI" data-src="/thoughts/interval-scale" class="internal-link">Interval scale</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/linear-regression/" data-ctx="DUI" data-src="/thoughts/linear-regression" class="internal-link">Linear Regression</a>
       </li>
       
       
