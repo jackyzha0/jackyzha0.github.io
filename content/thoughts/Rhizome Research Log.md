@@ -9,6 +9,15 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 22nd
+- Had a random question about a paper that Kleppmann wrote and just straight up messaged him on Twitter LOL totally not expecting him to respond
+	- He did! Within just a few hours and helped to confirm that I did in fact need to sign messages using [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] to prevent forgery
+- Also, Nalin helped to clarify a lot of my understanding for cryptography which was super nice of him :))
+- Finally finished implementing tests for BFT and... it seems to work?? Kinda bonkers that I've been working on this project for almost 2 months now. Probably the most technically involved project I've done that integrates so much stuff I've learned in the past few months in systems design, networking, cryptography, and information theory
+	- Just need to finish up hashgraph reconciliation and the JSON aspect of the CRDT and should be good to go
+- Thinking about a potential sharded/partitioned design for a triple store DB
+	- Using distance metrics like [[thoughts/Kademlia DHT]] does?
+
 ### October 20th
 - Started writing post on [[posts/bft-json-crdt|a BFT JSON CRDT]]
 - Ran into a potential problem with message forgery...
@@ -156,6 +165,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- The only way that is possible is if the client intentionally delays its view of the world in relation to what it’s receiving from the server.
 	2. **Extrapolation**: What happens when the network packet containing the next snapshot is delayed or lost and the client runs out of states to interpolate between? Then it’s forced to do what it normally tries to avoid: extrapolate or guess where the objects will be if they keep moving the same way they’re currently moving.
 	3. **Prediction**: The only exception here is player input. Instead of waiting for the server to do that and send back a snapshot containing that information, the client also immediately performs the same player movement locally. In this case there’s no interpolation - the move commands are applied onto the latest snapshot received from the server and the results can be seen on the screen immediately. In a way this means that each player lives in the future on their own machine, when compared to the rest of the world, which is behind because of the network latency and the delay needed for interpolation.
+- See also: [GGPO](https://en.wikipedia.org/wiki/GGPO) which is heavily used in real-time fighting games
 
 ### August 30th
 - [A Graph-Based Firebase](https://stopa.io/post/296)

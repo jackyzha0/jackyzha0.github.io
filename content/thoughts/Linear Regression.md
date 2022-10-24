@@ -108,7 +108,7 @@ Absolute error is more robust and non-convex errors are the most robust.
 ## Brittle Regression
 You want to minimize size of worst error across examples. For example, if in worst case the plane can crash or you perform badly on a group.
 
-We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This effectively minimizes the highest error.
+We can instead minimize the $L_\infty$ norm which is convex but non-smooth. This effectively minimizes the highest error (effectively Minimax regret in [[thoughts/Decisions under ignorance|DUI]]).
 
 The smooth approximation to the max function is the log-sum-exp function:
 

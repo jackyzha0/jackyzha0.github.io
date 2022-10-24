@@ -18,3 +18,8 @@ Where
 - `<multicodec-cidv1>` is a multicodec representing the version of CID, here for upgradability purposes.
 - `<multicodec-content-type>` is a multicodec code representing the content type or format of the data being addressed.
 - `<multihash-content-address>` is a multihash value, representing the cryptographic hash of the content being addressed. Multihash enables CIDs to use many different cryptographic hash function, for upgradability and protocol agility purposes.
+
+## IPVM
+[Brooklyn Zelenka from Fission Codes on IPVM](https://fission.codes/blog/ipfs-thing-breaking-down-ipvm/)
+
+CID-based computation also means that we can use [memoization](https://en.wikipedia.org/wiki/Memoization) to inform us if an operation has been run before so we can optimize our efforts and copy the CIDs of those outputs into our work, saving time and compute power.
