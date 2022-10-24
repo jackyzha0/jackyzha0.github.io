@@ -121,13 +121,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -366,6 +366,13 @@ Jun 5, 2022
 <li><code>&lt;multicodec-content-type&gt;</code> is a multicodec code representing the content type or format of the data being addressed.</li>
 <li><code>&lt;multihash-content-address&gt;</code> is a multihash value, representing the cryptographic hash of the content being addressed. Multihash enables CIDs to use many different cryptographic hash function, for upgradability and protocol agility purposes.</li>
 </ul>
+<a href="#ipvm"><h2 id="ipvm"><span class="hanchor" ariaLabel="Anchor"># </span>IPVM</h2></a>
+<p>
+
+<a href="https://fission.codes/blog/ipfs-thing-breaking-down-ipvm/" rel="noopener">Brooklyn Zelenka from Fission Codes on IPVM</a></p>
+<p>CID-based computation also means that we can use 
+
+<a href="https://en.wikipedia.org/wiki/Memoization" rel="noopener">memoization</a> to inform us if an operation has been run before so we can optimize our efforts and copy the CIDs of those outputs into our work, saving time and compute power.</p>
 
 
     </article>

@@ -120,13 +120,13 @@ Replace $x_i = (x_{i1}, x_{i2}, \dots, x_{in})$ with"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.645ffbfa80e14eab4851b8c756646f0a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a597362e6480736f060fdf9bde2ffa8b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b9e16c7e8db3236bd8ea5ba758d8c616.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2dfed40e41328c1651a3f607e2133dc7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
