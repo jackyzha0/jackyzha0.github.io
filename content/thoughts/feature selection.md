@@ -22,7 +22,7 @@ For each feature $j$, compute correlation between feature values $x_j$ and $y$.
 Usually gives unsatisfactory results as it ignores variable interactions (e.g. if tacos make you sick, and you often eat tacos on Tuesdays, it will say “Tuesday” is relevant.)
 
 ## Regression Weight
-Fit [[thoughts/Linear Regression|linear regression]] weights $w$ based on all features.
+Fit [[thoughts/linear regression|linear regression]] weights $w$ based on all features.
 
 Take all features $j$ where weight $|w_j|$ is greater than a threshold
 

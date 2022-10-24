@@ -9,7 +9,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Fiction
 * **Project Hail Mary** by Andy Weir
-
+- **Accelerando** by Charles Stross
 * **Homo Ludens** by Johan Huizinga
 
 ### Non-fiction

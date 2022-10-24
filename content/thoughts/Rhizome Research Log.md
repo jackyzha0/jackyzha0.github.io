@@ -9,6 +9,12 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 24th
+- privacy preserving crdts??
+- turns out automerge is actually fast now
+- ed25519 should be able to sign + verify upwards of 100k/s on a 1 GHz processor so i need to make some improvements
+- improve predecessor check
+
 ### October 23rd
 - [Another great talk on WNFS](https://www.youtube.com/watch?v=-f4cH_HQU4U) by Brooklyn Zelenka
 	- The whole 'ask for permission' thing isn't actually new!

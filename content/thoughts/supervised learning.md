@@ -16,7 +16,7 @@ Examples:
 - [[thoughts/Naive Bayes]]
 - [[thoughts/KNN|KNN]] (to fit an appropriate $k$)
 - [[thoughts/Ensemble method|Ensemble Methods]]
-- [[thoughts/Linear Regression]]
+- [[thoughts/linear regression]]
 
 Tradeoffs:
 | |Decision trees|Naive Bayes|
@@ -45,7 +45,7 @@ Tradeoffs:
 - Fundamental trade-off between getting low training error and having training error approximate test error
 	- $E_{test} = (E_{test} - E_{train}) + E_{train}$ where $E_{test} - E_{train} = E_{approx}$ is the approximation error or the amount of overfitting
 		- As the model gets complicated, $E_{train}$ goes down but $E_{approx}$ goes up
-	- We can mitigate this by penalizing model complexity (e.g. for [[thoughts/Linear Regression#Penalizing Model Complexity]])
+	- We can mitigate this by penalizing model complexity (e.g. for [[thoughts/linear regression#Penalizing Model Complexity]])
 	- See also: [[thoughts/regularization]]
 - Optimization bias
 	- How biased is an "error" that we optimized over many possibilities?
