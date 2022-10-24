@@ -9,6 +9,14 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 23rd
+- [Another great talk on WNFS](https://www.youtube.com/watch?v=-f4cH_HQU4U) by Brooklyn Zelenka
+	- The whole 'ask for permission' thing isn't actually new!
+	- Our phones already do this: "Google Photos is asking permission to access your camera roll"
+- [New Directions in Cloud Programming](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf)
+	- The way we write distributed systems today is like writing assembly by hand -- incredibly error prone
+	- We need projects like Bloom/Hydro that help with 'compiling away' those concurrency semantics
+
 ### October 22nd
 - Had a random question about a paper that Kleppmann wrote and just straight up messaged him on Twitter LOL totally not expecting him to respond
 	- He did! Within just a few hours and helped to confirm that I did in fact need to sign messages using [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] to prevent forgery

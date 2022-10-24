@@ -3,6 +3,7 @@ title: "Outlier detection"
 date: 2022-10-03
 tags:
 - seed
+- CPSC340
 ---
 
 Find observations that are unusually different from the others (aka anomaly detection).

@@ -3,6 +3,7 @@ title: "Linear Regression"
 date: 2022-10-05
 tags:
 - seed
+- CPSC340
 ---
 
 Vector dimensions:

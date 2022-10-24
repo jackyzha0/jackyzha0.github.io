@@ -3,6 +3,7 @@ title: "Virtue ethics"
 date: 2022-10-03
 tags:
 - seed
+- CPSC430
 ---
 
 The notion of virtue or excellence refers to reaching one's highest potential. According to Aristotle, happiness derives from living a life of virtue.

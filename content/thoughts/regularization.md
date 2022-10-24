@@ -3,6 +3,7 @@ title: "Regularization"
 date: 2022-10-19
 tags:
 - seed
+- CPSC340
 ---
 
 A method for controlling [[thoughts/complexity|complexity]]. Our main tools:
