@@ -15,7 +15,8 @@ Implementation Stages
 	1. A tree that represents a successful parsing of a sequence of tokens
 3. (optional) AST Conversion `ParseTree -> AST`
 4. (optional) Static Checks `AST -> AST`
-6. Evaluate `AST -> Result`
+	1. See also: [[thoughts/program analysis]]
+5. Evaluate `AST -> Result`
 	1. Run the input or generate code for it
 	2. (optional) Dynamic Checks
 

@@ -6,6 +6,7 @@ tags:
 ---
 
 ## Technical
+- https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - video editor with auto-generated snap points
 - rotmg but actually good lol
 	- dodge mechanic

@@ -19,7 +19,7 @@ In a life like the one we live in where cause and consequence is extremely hard 
 
 > Tinkering and experimenting is a more efficient investment of your time than following a set path of learning which assumes an intrinsic value in specific skills and ignores the non-linear way life works.
 
- "Accumulate optionality through differentiation, not conformity" [recommends](https://twitter.com/eriktorenberg/status/1244857973383421954) Torenberg
+"Accumulate optionality through differentiation, not conformity" [recommends](https://twitter.com/eriktorenberg/status/1244857973383421954) Torenberg
 
 Maybe why humans constantly chase [prestige](thoughts/prestige.md): to keep doors open as a means of cross-disciplinary recognition.
 
@@ -32,3 +32,12 @@ Individuals are *more* likely to be stressed from a larger number of options as 
 “I’ve hired a lot of very talented programmers, and one of the things I discovered was that the people who didn’t graduate from college couldn’t finish projects,” his father says. “Because when you go to college, there’s all sorts of stupid stuff you have to do in order to get through.”
 
 > It is a vertiginous thing to have so much freedom—to be always self-skeptical, always testing the reasons for your beliefs, always prepared to abandon them for something better. If you can do anything you want, then every day becomes an existential problem—an empty space of possibility that has no ceiling but also no walls and no floor.
+
+## Making the Decision Right
+[Sarah on Substack](https://limminal.substack.com/p/making-the-decision-right)
+
+What I’ve come to learn over the past year is that there are two types of people: people who make the right decision and people who make the decision right.
+
+*Optimizing for optionality seems like the rational thing to do, until I really looked at my life. I had all these “options,” but I hadn’t done any of them.*
+
+I choose the next thing and make it the best.

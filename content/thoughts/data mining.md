@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+Data mining is a way to generate new information by combining facts found in multiple transactions, and it can also be a way to predict future events.
+
 Typical steps of data mining
 1. Learn about the application
 2. Identify data mining task
