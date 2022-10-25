@@ -8,8 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Typical steps of data mining
- Learn about the application Identify data mining task Collect data Clean and preprocess the data Transform data or select useful subsets Choose data mining algorithm Data mining Evaluate visualize and interpret results Use results for profit or other goals  In a table"
+    content="Data mining is a way to generate new information by combining facts found in multiple transactions, and it can also be a way to predict future events."
   />
   <title>
     Data mining
@@ -120,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9699113ae0feb0cec09f43d3526f7de3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -313,6 +312,7 @@ Sep 9, 2022
 
 
 
+<p>Data mining is a way to generate new information by combining facts found in multiple transactions, and it can also be a way to predict future events.</p>
 <p>Typical steps of data mining</p>
 <ol>
 <li>Learn about the application</li>

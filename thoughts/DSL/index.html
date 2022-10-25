@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="Implementation Stages
- Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
   />
   <title>
     Domain Specific Language (DSL)
@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9699113ae0feb0cec09f43d3526f7de3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -464,6 +464,66 @@ Sep 22, 2022
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -548,7 +608,11 @@ Sep 22, 2022
 </ol>
 </li>
 <li>(optional) AST Conversion <code>ParseTree -&gt; AST</code></li>
-<li>(optional) Static Checks <code>AST -&gt; AST</code></li>
+<li>(optional) Static Checks <code>AST -&gt; AST</code>
+<ol>
+<li>See also: <a href="/thoughts/program-analysis" rel="noopener" class="internal-link" data-src="/thoughts/program-analysis">program analysis</a></li>
+</ol>
+</li>
 <li>Evaluate <code>AST -&gt; Result</code>
 <ol>
 <li>Run the input or generate code for it</li>

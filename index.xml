@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>program analysis</title>
+      <link>https://jzhao.xyz/thoughts/program-analysis/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/program-analysis/</guid>
+      <description> Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  </description>
+    </item>
+    
+    <item>
       <title>Fair Betting Quotient (FBQ)</title>
       <link>https://jzhao.xyz/thoughts/fair-betting-quotient/</link>
       <pubDate>Fri, 21 Oct 2022 00:00:00 +0000</pubDate>
@@ -297,7 +306,7 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
       
       <guid>https://jzhao.xyz/thoughts/DSL/</guid>
       <description>Implementation Stages
- Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
     </item>
     
     <item>
@@ -393,8 +402,7 @@ Notation Generally column major
       <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/data-mining/</guid>
-      <description>Typical steps of data mining
- Learn about the application Identify data mining task Collect data Clean and preprocess the data Transform data or select useful subsets Choose data mining algorithm Data mining Evaluate visualize and interpret results Use results for profit or other goals  In a table</description>
+      <description>Data mining is a way to generate new information by combining facts found in multiple transactions, and it can also be a way to predict future events.</description>
     </item>
     
     <item>
@@ -960,8 +968,7 @@ Each node has an identifier which is the result of hashing the node&amp;rsquo;s 
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/privacy/</guid>
-      <description>Conflicting need between companies and users
- Companies want to use data to improve their products Users want to protect their privacy  Data anonymization isn&amp;rsquo;t enough.</description>
+      <description>Definitions  Restricting access to information or property to what you wouldn&amp;rsquo;t willingly give away in a particular context  Specifically, recognizing that privacy is contextual (Nissembaum) The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</description>
     </item>
     
     <item>
@@ -4887,7 +4894,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from roguelites should have one free key a day actual good graveyard mechanics to look at past runs/chars   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
+      <description>Technical   https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from roguelites should have one free key a day actual good graveyard mechanics to look at past runs/chars   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai.</description>
     </item>
     
     <item>

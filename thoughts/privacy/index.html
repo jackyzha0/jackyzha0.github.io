@@ -8,8 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Conflicting need between companies and users
- Companies want to use data to improve their products Users want to protect their privacy  Data anonymization isn&rsquo;t enough."
+    content="Definitions  Restricting access to information or property to what you wouldn&rsquo;t willingly give away in a particular context  Specifically, recognizing that privacy is contextual (Nissembaum) The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it."
   />
   <title>
     Privacy
@@ -120,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9699113ae0feb0cec09f43d3526f7de3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -333,6 +332,35 @@ Jul 10, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -340,7 +368,20 @@ Jul 10, 2022
 
 
 
-<p>Conflicting need between companies and users</p>
+
+<a href="#definitions"><h2 id="definitions"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
+<ul>
+<li>Restricting access to information or property to what you wouldn&rsquo;t willingly give away in a particular context
+<ul>
+<li>Specifically, recognizing that privacy is contextual (Nissembaum)</li>
+<li>The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</li>
+</ul>
+</li>
+<li>From the point of view of an individual restricting access: privacy is a “zone of inaccessibility” that surrounds a person</li>
+<li>From the perspective of outsiders seeking access: violating someone’s privacy is an affront to that person’s dignity</li>
+</ul>
+<p>However, some people take advantage of privacy to plan and carry out illegal or immoral activities</p>
+<p>There is also conflicting needs between companies and users</p>
 <ul>
 <li>Companies want to use data to improve their products</li>
 <li>Users want to protect their privacy</li>
@@ -352,6 +393,9 @@ Jul 10, 2022
 <li>birthday</li>
 <li>gender</li>
 </ol>
+<a href="#privacy-for-independent-development"><h2 id="privacy-for-independent-development"><span class="hanchor" ariaLabel="Anchor"># </span>Privacy for independent development</h2></a>
+<p>Privacy is the way in which a social group recognizes and communicates to the individual that he is responsible for his development as a unique person, a separate moral agent</p>
+<p>It&rsquo;s valuable because it lets us be ourselves. In order to have different kinds of social relationships with different people, we need to have some kind of control over who knows what about us (see: <a href="/posts/context-collapse" rel="noopener" class="internal-link" data-src="/posts/context-collapse">context collapse</a>)</p>
 <a href="#differential-privacy"><h2 id="differential-privacy"><span class="hanchor" ariaLabel="Anchor"># </span>Differential Privacy</h2></a>
 <p>tldr; add randomized noise that maintains distribution of data</p>
 <p>When submitting a piece of data:</p>
@@ -381,6 +425,29 @@ Jul 10, 2022
 <ul>
 <li>Web2: considers identity public but data private</li>
 <li>Web3: identity is private, but data public</li>
+</ul>
+<a href="#rights-to-privacy"><h2 id="rights-to-privacy"><span class="hanchor" ariaLabel="Anchor"># </span>Rights to privacy</h2></a>
+<p>Differing opinions on the status of privacy as a right. General consensus is that privacy is a prudential right. That is, rational agents would agree to recognize some privacy rights because granting these rights is to the benefit of society</p>
+<ul>
+<li>Warren and Brandeis
+<ul>
+<li>People in modern society have a right to privacy and that this right ought to be respected</li>
+<li>&ldquo;The intensity and complexity of life, attendant upon advancing civilization, have rendered necessary some retreat from the world, and man, under the refining influence of culture, has become more sensitive to publicity, so that solitude and privacy have become more essential to the individual&rdquo;</li>
+<li>Warren and Brandeis argue, there are no adequate legal remedies available to the victims. Laws against libel and slander are not sufficient because they do not address the situation where malicious but true stories about someone are circulated (especially in cases where consent was not attained ahead of time, like through cameras)</li>
+</ul>
+</li>
+<li>Thomson
+<ul>
+<li>Every “privacy right” violation is a violation of another right</li>
+</ul>
+</li>
+<li>Reiman
+<ul>
+<li>Privacy is needed if people are to be autonomous moral agents able to develop healthy personal relationships and act as free citizens in a democratic society</li>
+<li>Our personal information is private to the extent that we can control who has access to it</li>
+<li>He does not argue that privacy is a natural right, nor does he suggest that a person has complete control over what is held private.</li>
+</ul>
+</li>
 </ul>
 
 

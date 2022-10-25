@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9699113ae0feb0cec09f43d3526f7de3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +353,23 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/program-analysis/">program analysis</a></h3>
+                            </div>
+                            <p class="meta">
+                                32 words on Oct 25, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/thoughts/fair-betting-quotient/">Fair Betting Quotient (FBQ)</a></h3>
                             </div>
                             <p class="meta">
@@ -369,27 +386,8 @@ Jul 14, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Gaussian-RBF/">Gaussian RBFs</a></h3>
-                            </div>
-                            <p class="meta">
-                                67 words on Oct 22, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 504 more →</a>
+                <a href="/thoughts">See 505 more →</a>
             </div>
         </div>
         <article>

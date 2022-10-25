@@ -121,13 +121,13 @@ IIT  Consciousness is integrated information"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ca81da56c0668bba53b836d5ab3be111.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ffa1192cc3e0358458645f9401b0f602.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9699113ae0feb0cec09f43d3526f7de3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
