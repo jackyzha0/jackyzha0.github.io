@@ -9,11 +9,17 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## October
+### October 27th
+- Adding JSON support is harder than I expected!
+	- Mostly taking inspiration from yet another [Kleppmann paper](https://arxiv.org/pdf/1608.03960.pdf)
+- Probabilistic decay mechanism for CRDTs
+	- 'Remind me...' mechanism
+
 ### October 24th
-- privacy preserving crdts??
-- turns out automerge is actually fast now
-- ed25519 should be able to sign + verify upwards of 100k/s on a 1 GHz processor so i need to make some improvements
-- improve predecessor check
+- Privacy preserving CRDTs??
+- Turns out Automerge is actually fast now
+	- They've refactored their codebase significantly and use a b-tree similar to Diamond Types
+	- Ed25519 should be able to sign + verify upwards of 100k signatures/s on a 1 GHz processor so I need to make some improvements here
 
 ### October 23rd
 - [Another great talk on WNFS](https://www.youtube.com/watch?v=-f4cH_HQU4U) by Brooklyn Zelenka

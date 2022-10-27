@@ -6,13 +6,13 @@ tags:
 - evergreen
 ---
 
-Sometimes, I feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to feel like I deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago. It's a list of things that didn't exactly go according to plan, and the lessons learned.
+Sometimes, I feel like I don't deserve a lot of my current accomplishments and that I need to work even harder just to deserve what I have right now. I came across the concept of a **failure resume**[^1] a while ago. It's a list of things that didn't exactly go according to plan, and the lessons learned.
 
-The more I think about it, the more I realize that a failure resume is a great way to document all the spectacular ways you've worked hard towards your own goals and accomplishments. In some ways, it validates your struggle and your effort.
+The more I think about it, the more I realize that a failure resume a showcase of failure in and of itself, but also a document of all the spectacular ways you've worked hard towards your own goals and accomplishments. In many ways, it *validates* your struggle and your effort.
 
 I've recently been inspired by both Kate Huang[^2] and Joice Tang's[^3] failure resumes and decided to make my own. Rather than focusing on the individual failures themselves, I want to focus on what I learned from each of them. 
 
-Hopefully, it'll serve as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.
+This document has served as a powerful reminder to myself of how much I've struggled to get to where I am and why I deserve to be here. And more importantly, it serves as a place to reflect and learn from the past and be less scared of failure in the future.
 
 Keeping a failure resume has let me be so much more ambitious in trying new things and applying for things I would otherwise think I'm unqualified to apply for.
 
@@ -22,6 +22,12 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
 - Rejected from [Thinking Microgrants](https://twitter.com/sariazout/status/1571871089713680386)
 	- *Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked.*
 	- There are just so many other similar people looking for grants !! Feels more luck of the draw than anything with this volume of applicants
+- Questioning my own self-worth as a writer and engineer
+	- The more time I spend in school, the more I feel that I am actually very average in terms of writing/engineering, especially amongst my peers. I think I'm able to still achieve a lot that others find impressive is because things that come easy to me -- like working on projects or writing in my spare time -- are things that others find difficult/hard to commit to.
+	- Especially with grading, I feel like I'm consistently being told my thoughts/words are not good by different people and it gets in my head sometimes. I wonder if I am just bad at writing/thinking about these things!
+	- But on the other hand, there are clearly a handful of people who *do* like my writing and how I think about these things, conduct my work, etc.
+	- I know the rational brain take is to accept that there is and always will be people better and that it's *completely okay* to not excel in everything but my emotional overthinking brain can't help but to feed the negative self-talk
+		- For now, what is keeping it at bay is reassuring myself that the work I am doing is significantly better than it was in the past. I am improving and the work I am doing is fulfilling.
 
 ## 2021
 

@@ -1,5 +1,5 @@
 ---
-title: "program analysis"
+title: "Program Analysis"
 date: 2022-10-25
 tags:
 - seed
