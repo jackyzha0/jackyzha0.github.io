@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,14 +353,16 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/program-analysis/">Program Analysis</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/linear-classification/">Linear Classification</a></h3>
                             </div>
                             <p class="meta">
-                                32 words on Oct 27, 2022
+                                262 words on Oct 28, 2022
                             </p>
                             <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
     
 </ul>
 
@@ -370,16 +372,16 @@ Jul 14, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/fair-betting-quotient/">Fair Betting Quotient (FBQ)</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/multi-class-classification/">Multi-class Classification</a></h3>
                             </div>
                             <p class="meta">
-                                109 words on Oct 22, 2022
+                                251 words on Oct 28, 2022
                             </p>
                             <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
-    <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
     
 </ul>
 
@@ -387,7 +389,7 @@ Jul 14, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 505 more →</a>
+                <a href="/thoughts">See 509 more →</a>
             </div>
         </div>
         <article>

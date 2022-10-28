@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -451,6 +451,10 @@ Sep 28, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/clustering/" data-ctx="K-means" data-src="/thoughts/clustering" class="internal-link">Clustering</a>
       </li>
@@ -459,6 +463,12 @@ Sep 28, 2022
       
       <li>
         <a href="/thoughts/hierarchical-clustering/" data-ctx="thoughts/K-means" data-src="/thoughts/hierarchical-clustering" class="internal-link">Hierarchical Clustering</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/multi-class-classification/" data-ctx="thoughts/K-means" data-src="/thoughts/multi-class-classification" class="internal-link">Multi-class Classification</a>
       </li>
       
       

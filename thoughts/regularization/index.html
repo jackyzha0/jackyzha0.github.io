@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -316,6 +316,12 @@ Oct 19, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -473,15 +479,24 @@ Oct 19, 2022
 <p>We should regularize $w_j$ so that they don&rsquo;t explode.</p>
 <p>Makes the tangent to the level curves of the gradient point towards the global minimum</p>
 <p><img src="/thoughts/images/l1-vs-l2-regularization.png" width="auto" /></p>
-<a href="#l2-regularization"><h3 id="l2-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularization</h3></a>
-<p>$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$</p>
+<a href="#l0-regularization"><h3 id="l0-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>L0-Regularization</h3></a>
+<ul>
+<li>Adds penalty on number of non-zeros to select features</li>
+</ul>
+<p>$$f(w) = \mathcal L + \lambda \lVert w \rVert _0$$</p>
+<a href="#l2-regularization-ridge-regression"><h3 id="l2-regularization-ridge-regression"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularization (Ridge Regression)</h3></a>
+<ul>
+<li>Generally decreases overfitting</li>
+</ul>
+<p>$$f(w) = \mathcal L + \frac{\lambda}{2} \lVert w \rVert ^2$$</p>
 <p>This <em>almost always</em> decreases test error. Bigger $\lambda$ also means gradient descent converges faster.</p>
 <p>To help with this, we can standardize continuous feature by replacing it with its z-score.</p>
 <a href="#l1-regularization-lasso"><h3 id="l1-regularization-lasso"><span class="hanchor" ariaLabel="Anchor"># </span>L1-Regularization (LASSO)</h3></a>
 <ul>
 <li>Like L2-regularization, it’s convex and improves our test error</li>
-<li>Like L0-regularization, it encourages elements of $w$ to be exactly zero</li>
+<li>Like L0-regularization, it encourages elements of $w$ to be exactly zero (though not as sparse)</li>
 </ul>
+<p>$$f(w) = \mathcal L + \lambda \lVert w \rVert _1$$</p>
 <p>We can actually combine this using an <a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble method</a> + bootstrapping (BoLASSO):</p>
 <ul>
 <li>Create bootstrap samples</li>
@@ -534,6 +549,10 @@ Oct 19, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/linear-regression/" data-ctx="thoughts/regularization" data-src="/thoughts/linear-regression" class="internal-link">Linear Regression</a>
       </li>
@@ -542,6 +561,12 @@ Oct 19, 2022
       
       <li>
         <a href="/thoughts/machine-learning/" data-ctx="thoughts/regularization" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/multi-class-classification/" data-ctx="regularization" data-src="/thoughts/multi-class-classification" class="internal-link">Multi-class Classification</a>
       </li>
       
       

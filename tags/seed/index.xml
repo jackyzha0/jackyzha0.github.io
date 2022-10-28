@@ -7,6 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Linear Classification</title>
+      <link>https://jzhao.xyz/thoughts/linear-classification/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/linear-classification/</guid>
+      <description>Binary Classification  Set $y_i = +1$ for one class (“important”) Set $y_i = -1$ for the other class (“not important”) To predict, we look at whether $w^Tx_i$ is closer to +1 or -1  $\hat y_i = \textrm{sign} (w^Tx_i)$    Least squares error may overpenalize.</description>
+    </item>
+    
+    <item>
+      <title>Multi-class Classification</title>
+      <link>https://jzhao.xyz/thoughts/multi-class-classification/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/multi-class-classification/</guid>
+      <description>One vs All Suppose we only know how to do [[thoughts/probabilistic classifier|probabilistic binary classification]]. But we have $k$ classes we want to distinguish between.</description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Classifier</title>
+      <link>https://jzhao.xyz/thoughts/probabilistic-classifier/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/probabilistic-classifier/</guid>
+      <description>We want a model of $P(y_i = \textrm{important} | x_i )$ for use in [[thoughts/Decision theory|decision theory]].
+ Predictions generally map $w^Tx_i$ to labels for classes (for binary prediction, we used $\textrm{sign}(x)$) Probabilities we want to map $w^Tx_i$ to the range $[0,1]$  The most common choice is to use the sigmoid function:</description>
+    </item>
+    
+    <item>
+      <title>Support Vector Machine</title>
+      <link>https://jzhao.xyz/thoughts/SVM/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/SVM/</guid>
+      <description>An SVM is just Hinge loss with L2-regularization
+$$f(w) = \sum_{i=1}^n \max{0, 1-y_iw^Tx_i}$$
+They can also be viewed as &amp;lsquo;maximizing the margin&amp;rsquo;:</description>
+    </item>
+    
+    <item>
       <title>Program Analysis</title>
       <link>https://jzhao.xyz/thoughts/program-analysis/</link>
       <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
@@ -196,8 +235,8 @@ How can we assign utilities to represent preferences?</description>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/clustering/</guid>
-      <description>We want to assign examples to &amp;ldquo;groups&amp;rdquo;.
-Methods  [[thoughts/K-means|K-means]] (most popular) [[thoughts/density-based clustering]] Ensemble Clustering  Like [[thoughts/Random Forest|random forest]] but for voting for clustering This is problematic because of the label switching problem &amp;ndash; we can get clustering with permuted labels on each initialisation  Don&amp;rsquo;t vote on what specific class each cluster is Instead, vote on whether points are in the same cluster (label independent) Then, come up with labels after voting     [[thoughts/hierarchical clustering]]  </description>
+      <description>Set of techniques to find components that belong together.
+Note: Grouping is how the human visual system perceives things and clustering is the actual algorithm itself.</description>
     </item>
     
     <item>

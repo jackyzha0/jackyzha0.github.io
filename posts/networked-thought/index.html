@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -576,12 +576,12 @@ Jul 22, 2021
 <p>I&rsquo;ve started developing a process to better manage my process for information intake.</p>
 <a href="#seeds"><h3 id="seeds"><span class="hanchor" ariaLabel="Anchor"># </span>Seeds</h3></a>
 <p>I am a person who needs a very low friction way to dump new ideas and things to look at in the future.</p>
-<p>I use 
+<p>I built 
 
-<a href="https://chrome.google.com/webstore/detail/draft-by-slite/ljkidlijlaapmiilabpldhmhekeionfh?hl=en" rel="noopener">Draft</a> by Slite to have a &lsquo;scratch space&rsquo; in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It&rsquo;s my Apple Notes for my laptop. I use 
+<a href="https://github.com/jackyzha0/tabspace" rel="noopener">TabSpace</a> to be a &lsquo;scratch space&rsquo; in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It&rsquo;s the Apple Notes for my laptop. I use 
 
 <a href="https://curius.app/" rel="noopener">Curius</a> to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.</p>
-<p>Actually, on reflection, I tend to generally bookmark things for later then revisit them when I have time. For 
+<p>I tend to generally bookmark things for later then revisit them when I have time. For 
 
 
 

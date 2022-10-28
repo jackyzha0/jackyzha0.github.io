@@ -120,13 +120,13 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -701,6 +701,66 @@ Jul 2, 2021
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -736,6 +796,8 @@ Jul 2, 2021
 <li><a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">unsupervised learning</a></li>
 <li><a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a></li>
 <li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a></li>
+<li><a href="/thoughts/linear-classification" rel="noopener" class="internal-link" data-src="/thoughts/linear-classification">linear classification</a></li>
+<li><a href="/thoughts/multi-class-classification" rel="noopener" class="internal-link" data-src="/thoughts/multi-class-classification">multi-class classification</a></li>
 </ul>
 <p>Related background:</p>
 <ul>

@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.fe10b2b431448cee9f62c6dbf748ed54.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.21e6bd9429ad8a728785b5ce6eb285aa.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -436,45 +436,6 @@ Oct 5, 2022
   
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
 
 
 
@@ -598,20 +559,6 @@ Oct 5, 2022
         
         
         
-      
-    
-  
-
-  
-  
-  
-  
-    
-      
-      
-      
-      
-      
       
     
   
@@ -702,38 +649,6 @@ $$</p>
 <p>Other ones also exist which replace the $p$ term with $\lambda k$ where $k$ is the estimated degrees of freedom (for polynomials, $k = p + 1$). $\lambda$ controls how strongly we penalize complexity.</p>
 <p>$\lambda = 1$ is called the Akaike information criterion (AIC)</p>
 <p>See also: <a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a></p>
-<a href="#binary-classification-with-linear-regression"><h2 id="binary-classification-with-linear-regression"><span class="hanchor" ariaLabel="Anchor"># </span>Binary Classification with Linear Regression</h2></a>
-<ul>
-<li>Set $y_i = +1$ for one class (“important”)</li>
-<li>Set $y_i = -1$ for the other class (“not important”)</li>
-<li>To predict, we look at whether $w^Tx_i$ is closer to +1 or -1
-<ul>
-<li>$\hat y_i = \textrm{sign} (w^Tx_i)$</li>
-</ul>
-</li>
-</ul>
-<p>Least squares error may overpenalize. Only thing we care about is the sign, not how far away it is from the decision boundary.</p>
-<p>Could we instead minimize number of classification errors? This is called the 0-1 loss function: you either get the classification wrong (1) or right (0).</p>
-<p>$$\mathcal L(i,j) = \begin{cases}
-0 &amp; i = j \\ 1 &amp; i \neq j
-\end{cases}
-$$</p>
-<p><img src="/thoughts/images/0-1-loss.png" width="500" /></p>
-<p>Illustration above is if $y_i = 1$. Flip for $y_i = -1$</p>
-<p>Unfortunately, 0-1 Loss is non-convex. We can, once again, use a convex approximation:</p>
-<p>$$\mathcal L(i,j) = max(0, 1 - y_iw^Tx_i) $$</p>
-<a href="#perceptron"><h3 id="perceptron"><span class="hanchor" ariaLabel="Anchor"># </span>Perceptron</h3></a>
-<ul>
-<li>Searches for a $w$ such that $\textrm{sign}(w^Tx_i ) = y_i, \forall i$</li>
-<li>Intuition is that you search for the ledge</li>
-<li>Start with $w^0 = 0$</li>
-<li>Classify each example until we reach a mistake
-<ul>
-<li>Then, update $w$ to $w^{t+1} = w^t + y_ix_i$</li>
-</ul>
-</li>
-<li>If a perfect classifier exists, this algorithm finds one in finite number of steps</li>
-</ul>
 
 
     </article>
