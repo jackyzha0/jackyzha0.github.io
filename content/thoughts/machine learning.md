@@ -30,6 +30,8 @@ Main topics:
 - [[thoughts/unsupervised learning]]
 - [[thoughts/gradient descent]]
 - [[thoughts/regularization]]
+- [[thoughts/linear classification]]
+- [[thoughts/multi-class classification]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]

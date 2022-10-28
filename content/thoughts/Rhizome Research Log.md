@@ -12,6 +12,13 @@ I think research logs tend to generally focus too much on what one did rather th
 ### October 27th
 - Adding JSON support is harder than I expected!
 	- Mostly taking inspiration from yet another [Kleppmann paper](https://arxiv.org/pdf/1608.03960.pdf)
+	- Insert
+		- Ignore if we have it already
+		- Create new entry in table with hashed `OpID` with `is_deleted = false` 
+	- Update
+		- All the steps of delete and insert
+	- Delete
+		- Lookup prev `OpID` and mark it as deleted
 - Probabilistic decay mechanism for CRDTs
 	- 'Remind me...' mechanism
 

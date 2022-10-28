@@ -18,8 +18,15 @@ Makes the tangent to the level curves of the gradient point towards the global m
 
 ![[thoughts/images/l1-vs-l2-regularization.png]]
 
-### L2-Regularization
-$$f(w) = \frac 1 2 \lVert Xw - y \rVert^2 + \frac{\lambda}{2} \lVert w \rVert ^2$$
+### L0-Regularization
+- Adds penalty on number of non-zeros to select features
+
+$$f(w) = \mathcal L + \lambda \lVert w \rVert _0$$
+
+### L2-Regularization (Ridge Regression)
+- Generally decreases overfitting
+
+$$f(w) = \mathcal L + \frac{\lambda}{2} \lVert w \rVert ^2$$
 
 This *almost always* decreases test error. Bigger $\lambda$ also means gradient descent converges faster.
 
@@ -27,7 +34,11 @@ To help with this, we can standardize continuous feature by replacing it with it
 
 ### L1-Regularization (LASSO)
 - Like L2-regularization, it’s convex and improves our test error
-- Like L0-regularization, it encourages elements of $w$ to be exactly zero
+- Like L0-regularization, it encourages elements of $w$ to be exactly zero (though not as sparse)
+
+$$f(w) = \mathcal L + \lambda \lVert w \rVert _1$$
+
+
 
 We can actually combine this using an [[thoughts/Ensemble method]] + bootstrapping (BoLASSO):
 - Create bootstrap samples
