@@ -120,13 +120,13 @@ This usually happens when people commit probabilistic fallacies (e."
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.720c02d7ec43061c234dc4214ab61902.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -313,6 +313,18 @@ Oct 19, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -426,6 +438,21 @@ Oct 19, 2022
 </ol>
 <p>Both bets make sense for J. However, if J takes <em>both</em> bets, then he faces a guaranteed loss of $1</p>
 <p>Have the agent bet for propositions with credences (or <a href="/thoughts/fair-betting-quotient" rel="noopener" class="internal-link" data-src="/thoughts/fair-betting-quotient">FBQs</a>) that are too high, and against propositions with credences (or <a href="/thoughts/fair-betting-quotient" rel="noopener" class="internal-link" data-src="/thoughts/fair-betting-quotient">FBQs</a>) that are too low</p>
+<p>For any given bet (set $p$ to be $1-p$ for the against case):</p>
+<table>
+<thead>
+<tr>
+<th>Player wins bet</th>
+<th>Player loses bet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S-pS$</td>
+<td>$-pS$</td>
+</tr>
+</tbody>
+</table>
 <a href="#dutch-book-theorem"><h2 id="dutch-book-theorem"><span class="hanchor" ariaLabel="Anchor"># </span>Dutch Book Theorem</h2></a>
 <p>Based on the Kolmogorov <a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">probability</a> axioms,</p>
 <ol>

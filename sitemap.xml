@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/causal-decision-theory/</loc>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/CPSC340/</loc>
     <lastmod>2022-10-28T13:26:46-07:00</lastmod>
   </url><url>
@@ -11,6 +14,12 @@
     <loc>https://jzhao.xyz/thoughts/multi-class-classification/</loc>
     <lastmod>2022-10-28T13:26:46-07:00</lastmod>
   </url><url>
+    <loc>https://jzhao.xyz/thoughts/Newcombs-Problem/</loc>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/PHIL321A/</loc>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/probabilistic-classifier/</loc>
     <lastmod>2022-10-28T13:26:46-07:00</lastmod>
   </url><url>
@@ -18,16 +27,16 @@
     <lastmod>2022-10-28T13:26:46-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-10-28T13:26:46-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-10-28T13:26:46-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/program-analysis/</loc>
     <lastmod>2022-10-27T16:01:36-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/fair-betting-quotient/</loc>
-    <lastmod>2022-10-22T20:36:43-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Gaussian-RBF/</loc>
     <lastmod>2022-10-22T20:36:43-07:00</lastmod>
@@ -35,14 +44,11 @@
     <loc>https://jzhao.xyz/thoughts/hyper-parameter-optimization/</loc>
     <lastmod>2022-10-22T20:36:43-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/tags/PHIL321A/</loc>
-    <lastmod>2022-10-22T20:36:43-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/I-Confluence/</loc>
     <lastmod>2022-10-22T20:36:43-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Dutch-Book/</loc>
-    <lastmod>2022-10-22T20:36:43-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/regularization/</loc>
     <lastmod>2022-10-28T13:26:46-07:00</lastmod>
@@ -105,7 +111,7 @@
     <lastmod>2022-09-23T14:12:18-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Decisions-under-risk/</loc>
-    <lastmod>2022-10-03T14:55:09-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Ensemble-method/</loc>
     <lastmod>2022-09-23T14:12:18-07:00</lastmod>
@@ -147,10 +153,10 @@
     <lastmod>2022-10-17T18:46:08-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/probability/</loc>
-    <lastmod>2022-10-19T11:50:15-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/data-mining/</loc>
-    <lastmod>2022-10-25T13:11:11-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/exploratory-data-analysis/</loc>
     <lastmod>2022-09-19T11:50:44-04:00</lastmod>
@@ -159,7 +165,7 @@
     <lastmod>2022-10-24T13:34:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Decision-theory/</loc>
-    <lastmod>2022-10-22T20:36:43-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Evolutionary-game-theory/</loc>
     <lastmod>2022-09-12T12:49:00-07:00</lastmod>
@@ -306,7 +312,7 @@
     <lastmod>2022-07-17T12:49:24-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/identity/</loc>
-    <lastmod>2022-08-08T16:06:38-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/digital-identity/</loc>
     <lastmod>2022-08-11T15:40:38-07:00</lastmod>
@@ -324,7 +330,7 @@
     <lastmod>2022-08-16T14:44:36-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/privacy/</loc>
-    <lastmod>2022-10-25T13:11:11-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/visualization/</loc>
     <lastmod>2022-07-12T12:39:42-07:00</lastmod>
@@ -510,7 +516,7 @@
     <lastmod>2022-05-06T20:24:04-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/causality/</loc>
-    <lastmod>2022-07-10T11:26:57-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
     <lastmod>2022-07-16T15:36:23-07:00</lastmod>
@@ -1359,7 +1365,7 @@
     <lastmod>2022-06-29T12:23:47-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/game-theory/</loc>
-    <lastmod>2022-09-23T14:12:18-07:00</lastmod>
+    <lastmod>2022-10-29T16:55:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Post-It-Note-City/</loc>
     <lastmod>2022-02-15T13:30:45-05:00</lastmod>

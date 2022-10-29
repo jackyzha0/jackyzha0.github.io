@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.720c02d7ec43061c234dc4214ab61902.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -603,6 +603,13 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 <ol>
 <li>Fixes admissibility as we require it</li>
 <li>Not applicable: how can we justify using personal probabilities to make decisions if there are no constraints on one’s prior probabilities?</li>
+<li>Another problem
+<ol>
+<li>The meaning or concept of probability does not essentially involve desires or preferences</li>
+<li>For example, an enlightened Zen Buddhist monk can have probabilities but no desires</li>
+<li>Thus, by Peterson, any theory that creates a necessary (definitional) link between probability and preference/desire must be wrong.</li>
+</ol>
+</li>
 </ol>
 </li>
 </ol>

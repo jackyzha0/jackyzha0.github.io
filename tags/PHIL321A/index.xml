@@ -6,7 +6,16 @@
     <description>Recent content in PHIL321A on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newcomb&#39;s Problem</title>
+      <link>https://jzhao.xyz/thoughts/Newcombs-Problem/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Newcombs-Problem/</guid>
+      <description>$1M in Box 2 $0 in Box 2     Take only box 2 $1M $0   Take both boxes $1M + $1000 $1000    Background There is a predictor that is 99% accurate is predicting whether people will only take box 2 or both boxes</description>
+    </item>
+    
     <item>
       <title>Fair Betting Quotient (FBQ)</title>
       <link>https://jzhao.xyz/thoughts/fair-betting-quotient/</link>
@@ -101,9 +110,8 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
       <pubDate>Thu, 12 Aug 2021 10:18:31 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/game-theory/</guid>
-      <description>Induction, Decision, and Game Theory Course notes on PHIL321A with Paul Bartha
- Philosophical underpinnings of rational decision making
- Covers</description>
+      <description>Two ways to look at game theory
+ Normative tool: how to make rational choices Descriptive/explanatory tool: help explain social behaviour  Some social practices don&amp;rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</description>
     </item>
     
   </channel>

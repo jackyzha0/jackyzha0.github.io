@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Causal decision theory</title>
+      <link>https://jzhao.xyz/thoughts/causal-decision-theory/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/causal-decision-theory/</guid>
+      <description>See also: [[thoughts/Decision theory|evidential decision theory]]
+Choose the act that is most effective in bringing about the best result. Use [[thoughts/causality|causal]] conditional probabilities instead of evidential probabilities to compute expected utility.</description>
+    </item>
+    
+    <item>
       <title>Linear Classification</title>
       <link>https://jzhao.xyz/thoughts/linear-classification/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
@@ -23,6 +33,15 @@
       
       <guid>https://jzhao.xyz/thoughts/multi-class-classification/</guid>
       <description>One vs All Suppose we only know how to do [[thoughts/probabilistic classifier|probabilistic binary classification]]. But we have $k$ classes we want to distinguish between.</description>
+    </item>
+    
+    <item>
+      <title>Newcomb&#39;s Problem</title>
+      <link>https://jzhao.xyz/thoughts/Newcombs-Problem/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Newcombs-Problem/</guid>
+      <description>$1M in Box 2 $0 in Box 2     Take only box 2 $1M $0   Take both boxes $1M + $1000 $1000    Background There is a predictor that is 99% accurate is predicting whether people will only take box 2 or both boxes</description>
     </item>
     
     <item>
@@ -4260,9 +4279,8 @@ Heavily linked with research debt. What makes for effective teaching and knowled
       <pubDate>Thu, 12 Aug 2021 10:18:31 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/game-theory/</guid>
-      <description>Induction, Decision, and Game Theory Course notes on PHIL321A with Paul Bartha
- Philosophical underpinnings of rational decision making
- Covers</description>
+      <description>Two ways to look at game theory
+ Normative tool: how to make rational choices Descriptive/explanatory tool: help explain social behaviour  Some social practices don&amp;rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</description>
     </item>
     
     <item>

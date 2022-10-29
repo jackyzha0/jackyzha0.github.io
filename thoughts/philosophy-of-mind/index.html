@@ -121,13 +121,13 @@ Guiding Questions
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.720c02d7ec43061c234dc4214ab61902.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

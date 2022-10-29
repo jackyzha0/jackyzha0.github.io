@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.928d200c30cc90c424ee79cefbccf07c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ac5d2cf6a5d031f66c001b3f5f40b0d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.720c02d7ec43061c234dc4214ab61902.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -361,6 +361,12 @@ May 5, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -432,6 +438,18 @@ May 5, 2022
 <ul>
 <li>$\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the &lsquo;happens-before&rsquo; relation</li>
 </ul>
+<a href="#causal-dependence"><h2 id="causal-dependence"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Dependence</h2></a>
+<p>Three cases</p>
+<ol>
+<li>Act A causes of influences state S</li>
+<li>State S causes or influences act A</li>
+<li>Some common C causes or influences both S and A</li>
+</ol>
+<p>Note some properties:</p>
+<ul>
+<li>In all cases, $P(S | A) &gt; P(S | \lnot A)$</li>
+<li>In cases 2 and 3 $P(A \rightarrow S) = P(\lnot A \rightarrow S) = P(S)$ in other words, A has no effect on S</li>
+</ul>
 
 
     </article>
@@ -450,6 +468,10 @@ May 5, 2022
     
     
     
+    
+      
+      
+      
     
       
       
@@ -605,6 +627,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="causal order" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/causal-decision-theory/" data-ctx="causal" data-src="/thoughts/causal-decision-theory" class="internal-link">Causal decision theory</a>
       </li>
       
       
