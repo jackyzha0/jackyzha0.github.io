@@ -36,3 +36,5 @@ Extensions on [[posts/digital-identity|relational identity]]
 - digital identity should enable novel interactions, not try to simplify existing ones
 - identity systems rely on the concentration of power in the hands of operators who cannot possibly be fully aligned (financially, socially, or morally) with all of their users—for example, private social media companies with diverse global audiences must often [make decisions](https://blog.twitter.com/en_us/topics/company/2020/suspension) about what constitutes an act of unjustified censorship versus an act in the interest of public safety, though they are often ill-equipped to do so
 	- from 0xPARC on zk-identity
+
+## National Identity

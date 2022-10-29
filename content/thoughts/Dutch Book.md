@@ -18,6 +18,12 @@ Both bets make sense for J. However, if J takes *both* bets, then he faces a gua
 
 Have the agent bet for propositions with credences (or [[thoughts/fair betting quotient|FBQs]]) that are too high, and against propositions with credences (or [[thoughts/fair betting quotient|FBQs]]) that are too low
 
+For any given bet (set $p$ to be $1-p$ for the against case):
+
+|Player wins bet|Player loses bet|
+|--|--|
+|$S-pS$|$-pS$|
+
 ## Dutch Book Theorem
 Based on the Kolmogorov [[thoughts/probability|probability]] axioms,
 

@@ -22,3 +22,13 @@ aliases:
 
 ## Causal Order
 - $\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the 'happens-before' relation
+
+## Causal Dependence
+Three cases
+1. Act A causes of influences state S
+2. State S causes or influences act A
+3. Some common C causes or influences both S and A
+
+Note some properties:
+- In all cases, $P(S | A) > P(S | \lnot A)$
+- In cases 2 and 3 $P(A \rightarrow S) = P(\lnot A \rightarrow S) = P(S)$ in other words, A has no effect on S

@@ -87,3 +87,14 @@ Solutions
 	1. Refutation: change payout to $\$2^n$
 2. Buffon: *de minimis condition*
 	1. Ignore tiny probabilities
+
+### Two-Envelope Paradox
+A trustworthy informant tells you that one of the envelopes contains exactly twice as much as the other, but the informant does not tell you which is which. Since this is all you know, you decide to pick an envelope at random. Let us say you pick envelope A. Just before you open envelope A you are offered to swap and take envelope B instead.
+
+Given what you know, both possibilities are equally likely. Hence, the expected monetary value of swapping to B is $\frac 1 2 2x + \frac 1 2 \frac x 2 = \frac 5 4 x$. Since $\frac 5 4 x > x$, it is rational to take B instead of A. But you can apply the same argument to arrive at a contradictory claim that you should take A instead of B.
+
+Limit Counterargument
+- The present formulation of the paradox presupposes that there is no upper limit to how much money there is in the world
+- Suppose that there indeed is some upper limit L to how much money there is in the world.
+	- It then follows that no envelope can contain more than (2/3)L
+	- The other envelope would be certain to contain (1/3)L

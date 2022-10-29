@@ -4,6 +4,8 @@ date: 2022-09-07
 tags:
 - seed
 - PHIL321A
+aliases:
+- Evidential decision theory
 ---
 
 Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table
@@ -11,6 +13,8 @@ Choices by one agent in which background conditions are independent of what othe
 Relatived view of Decision theory:
 
 > Prescriptions in decision theory are always relative to the formal problem specifications
+
+See also: [[thoughts/causal decision theory|causal decision theory]]
 
 e.g. Pascal's Wager
 

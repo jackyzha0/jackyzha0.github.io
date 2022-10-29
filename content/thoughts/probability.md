@@ -122,4 +122,8 @@ We can evaluate these interpretations as follows (Wesley Salmon)
 8. Subjective (idealized credence): An idealized version of someone – with coherent probabilities – believes with degree 3/13 that A will produce B.
 	1. Fixes admissibility as we require it
 	2. Not applicable: how can we justify using personal probabilities to make decisions if there are no constraints on one’s prior probabilities? 
+	3. Another problem
+		1. The meaning or concept of probability does not essentially involve desires or preferences
+		2. For example, an enlightened Zen Buddhist monk can have probabilities but no desires
+		3. Thus, by Peterson, any theory that creates a necessary (definitional) link between probability and preference/desire must be wrong.
 
