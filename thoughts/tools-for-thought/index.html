@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4bbe0b73c29e88deabfc13412760605c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -605,6 +605,10 @@ Oct 30, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/networked-thought/" data-ctx="tools for thought" data-src="/posts/networked-thought" class="internal-link">Networked Thought</a>
       </li>
@@ -613,6 +617,12 @@ Oct 30, 2021
       
       <li>
         <a href="/thoughts/Lattice-Proposal/" data-ctx="tools for thought" data-src="/thoughts/Lattice-Proposal" class="internal-link">Lattice Proposal</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/formality-considered-harmful/" data-ctx="Tools for thought" data-src="/thoughts/formality-considered-harmful" class="internal-link">Formality considered harmful</a>
       </li>
       
       

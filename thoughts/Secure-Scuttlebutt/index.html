@@ -120,13 +120,13 @@ Scuttlebot Scuttlebot forms a global cryptographic social network with its peers
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b19bc1ad6d166639a231ac2eec761e1d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4bbe0b73c29e88deabfc13412760605c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
