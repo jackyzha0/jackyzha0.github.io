@@ -1,17 +1,22 @@
 ---
-title: "Building a Byzantine Fault Tolerant CRDT"
+title: "Building a Byzantine Fault Tolerant JSON CRDT"
 date: 2022-07-11
 tags:
 - seed
 draft: true
 ---
 
+- reliable causal broadcast
+-  This doesn't mean that conflict doesn't ever occur, but we are able to always determine the output up front, based on a metadata contained within the structure itself.
+
 - [[thoughts/State Machine Replication (SMR)|state machine replication]] is hard
 	- traditional consensus needs (tbd) rounds of communication, making it infeasible for real-time communication
-	- [[thoughts/CRDT]]s allow us to achieve that
+		- "When application state is replicated across the globe, developers often face stark choices regarding replica consistency. Strong consistency can be enforced in a general-purpose way at the storage or memory layer via classical distributed coordination (consensus, transactions, etc.), but this is often unattractive for latency and availability reasons. Alternatively, application developers can build on “weakly” consistent storage models that do not use coordination; in this case developers must reason about consistency at the application level"
+	- acid vs base
+	- [[thoughts/CRDT]]s allow us to achieve that (with some caveats)
 - understanding crdts
 	- we know that most transport algorithms guarantee ordering, so why do we need CRDTs?
-	- well, imagine a list
+	- well, imagine a TCP connection
 		- it works for two people communicating directly with each other
 		- but as soon as you have 3 people, 
 	- why we need them
@@ -20,6 +25,7 @@ draft: true
 	- we can encode causal dependencies by tracking causal parent (origin field)
 	- another problem: how do you order things with the same origin? we need a sense of time. we need clocks!
 		- lamport clocks to the rescue
+		- not time in the traditional sense, but logical sense
 	- imagine a 'time frontier'
 		- fancy terminology: hasse diagram
 		- if we receive anything that isn't the very next update we are expecting, we can queue it up for later
@@ -83,14 +89,20 @@ draft: true
 		- potential optimizations
 			- Reliable but expensive! $O(n^2)$ messages for $n$ nodes
 			- consider the worst case scenario where all the honest nodes are in a line
-			- we can reformulate this problem as hashgraph reconciliation!
-				- quite similar to `git fetch` and merge
+			- we can reformulate this problem kind of like pull requests where nodes ask for updates from other nodes periodically
+			- 
 	- the cool part is that we don't need to modify the underlying CRDT itself, it can be fully retrofit on top of it
 		- we can create a 'bft adapter' layer between the transport and application layer that is responsible
-- so it turns out we can turn this bft list crdt into arbitrary JSON
-	- a string
-	- a number
-	- an object (JSON object)
-	- an array
-	- a boolean
-	- null
+		- modify two places
+			- generating IDs for operations
+			- checking if an operation is valid
+- finally, a word of warning on the safety of building applications on top of CRDTs
+	- difference between view and the model
+	- One might say that CRDTs provide Schrödinger consistency guarantees: they are guaranteed to be consistent only if they are not viewed.
+		- https://arxiv.org/pdf/2210.12605.pdf
+- making it JSON
+	- difficult because data types can change
+	- example
+		- think about A assigning a key a as a list and adds b as an element
+		- B assigns a key as a map and adds an entry c
+		- how do we resolve this?

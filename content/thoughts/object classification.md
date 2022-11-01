@@ -93,7 +93,7 @@ See notes on [[thoughts/decision tree|decision trees]]
 Standard is DxWxH
 
 ### Convolutional Layer
-$K$ is the number of filters, $F$ is the spatial extend of filters (kernel size), $S$ is the stride, and $P$ is the padding
+$K$ is the number of filters, $F$ is the spatial extent of filters (kernel size), $S$ is the stride, and $P$ is the padding
 
 - $W_{out} = (W_{input} - F + 2P)/S + 1$
 - $H_{out} = (H_{input} - F + 2P)/S + 1$
