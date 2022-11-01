@@ -125,7 +125,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.720c02d7ec43061c234dc4214ab61902.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4bbe0b73c29e88deabfc13412760605c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -716,7 +716,7 @@ Disadvantages:</li>
 <a href="#cnns"><h2 id="cnns"><span class="hanchor" ariaLabel="Anchor"># </span>CNNs</h2></a>
 <p>Standard is DxWxH</p>
 <a href="#convolutional-layer"><h3 id="convolutional-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Convolutional Layer</h3></a>
-<p>$K$ is the number of filters, $F$ is the spatial extend of filters (kernel size), $S$ is the stride, and $P$ is the padding</p>
+<p>$K$ is the number of filters, $F$ is the spatial extent of filters (kernel size), $S$ is the stride, and $P$ is the padding</p>
 <ul>
 <li>$W_{out} = (W_{input} - F + 2P)/S + 1$</li>
 <li>$H_{out} = (H_{input} - F + 2P)/S + 1$</li>
