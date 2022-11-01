@@ -9,7 +9,7 @@ tags:
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
 ## Tabspace - a scratchspace for your new tab page
-A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with low-friction note taking and integrating [[thoughts/game design|game design]] principles of 'juiciness' into UI/UX.
+A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with [[thoughts/formality considered harmful|low-friction]] note taking and integrating [[thoughts/game design|game design]] principles of 'juiciness' into UI/UX.
 
 [GitHub](https://github.com/jackyzha0/tabspace), [Chrome Webstore](https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha)
 

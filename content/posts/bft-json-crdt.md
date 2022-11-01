@@ -80,6 +80,7 @@ draft: true
 		- A hash-chained directed acyclic graph as described in, is the only operation-based CRDT with non-commutative operations that provides SEC for any number of Byzantine faults, i.e., has fault tolerance n > f.
 	- hash graph + signed message digests -> can no longer fake operations
 		- technically this is enough if every node is connected to each other
+		- essentially [[thoughts/content addressed storage]] for our operations
 	- ensuring eventual delivery (basically, [[thoughts/message broadcast#Causal Broadcast]])
 		- [[thoughts/Byzantine Broadcast]] (we can actually get away with weaker requirements here)
 			- dont need total order broadcast, just causal broadcast
@@ -106,3 +107,7 @@ draft: true
 		- think about A assigning a key a as a list and adds b as an element
 		- B assigns a key as a map and adds an entry c
 		- how do we resolve this?
+	- using a fixed schema JSON-like datatype
+	- caveat: can't update schema easily!
+		- imagine we have an outdate peer on v1 and everyone else is on v2
+		- will not diverge because of bft but all changes from v1 will likely be rejected
