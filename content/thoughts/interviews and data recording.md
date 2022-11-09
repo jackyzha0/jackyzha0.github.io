@@ -155,7 +155,7 @@ Questions
 	-  triangulation (ask multiple questions about the same matter)
 	-  piloting
 
-#### Types of questions**
+#### Types of questions
 - Open-ended (hard to analyze rigorously)
 - Closed (easily analyzed but can be hard to interpret if not well-designed)
 	-  checkboxes and ranges

@@ -29,3 +29,11 @@ We find your utility for $x$ by measuring the risks that you are willing to take
 Peterson argues that vNM is ok for descriptive [[thoughts/Decision theory|decision theory]] but not normative decision theory (vNM does not distinguish the meaning of utility from the measurement of utility)
 
 Normative decision theory involves prescribing actions which needs a strong version of EU max: acts are rational because they maximize expected utility. This demands a concept of utility that is independent from the measurement of utility itself (or we get a circular argument)
+
+### Axioms
+1. vNM 1, Completeness: $A \succ B$ or $A \sim B$ or $B \succ A$
+2. vNM 2, Transitivity: if $A \succ B$ and $B \succ C$ then $A \succ C$
+3. vNM 3, Independence: $A \succ B$ if and only if $ApC \succ BpC$
+4. vNM 4, Continuity: if $A \succ B \succ C$ there $\exists p, q$ such that $ApC \succ B \succ AqC$
+5. vNM 5, Probability: it does not matter if you are awarded prize A if you first roll a die and then roll it again, or make a double roll, provided that you only get the prize if you get two sixes
+	1. If $pq + (1-p)r = s$ then $(AqB)p(ArB) \sim AsB$

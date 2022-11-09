@@ -16,4 +16,4 @@ Commons in the modern economic context is any open-access and unregulated resour
 
 Does this impact [digital commons](thoughts/digital%20commons.md) too? What about for [climate tech](thoughts/climate%20tech.md)?
 
-Would be solved if people acted according Kant's Categorical Imperative (tldr; only act in a certain way if it is possible and desirable for everyone in the world to act in that way)
+Would be solved if people acted according [[thoughts/Kant]]'s Categorical Imperative (tldr; only act in a certain way if it is possible and desirable for everyone in the world to act in that way)

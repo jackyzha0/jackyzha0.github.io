@@ -67,7 +67,6 @@ item   : TEXT ;
 	1. Should not allow `T ::= T ...`
 3. Grammar must be locally deterministic: for each choice, we must be able to choose between them based only on the next token (avoid common prefixes, factor them out into separate rules)
 
-
 ## Language Principles
 1.  Learnability (how quickly can you pick it up; feels like “common sense”?)
 2.  Efficiency (once you’ve learned it, how efficiently can you perform tasks)

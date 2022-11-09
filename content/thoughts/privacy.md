@@ -138,6 +138,8 @@ Covert Surveillance in the States
 	- The Council of the American Library Association was the first of many to pass anti-Patriot Act resolutions: "urg[ing] librarians everywhere to defend and support user privacy and free and open access to knowledge and information"
 - US Department of Defence created the Threat and Local Observation Notices (TALON) database in 2003. The purpose of the database was to collect reports of suspicious activities or terrorist threats near military bases. The TALON database was shut down on September 17, 2007
 - In 2013, Snowden leaked PRISM, which is a program that allowed the NSA gained access to the servers of Microsoft in 2007; Yahoo in 2008; Google and Facebook in 2009; YouTube in 2010; Skype and AOL in 2011; and Apple in 2012. It enabled the NSA to access stored information without obtaining search warrants when the NSA had reasonable suspicion that the person being investigated is a foreigner outside the US
+	- Edward Snowden and Glenn Greenwald explained XKeyscore as being a system which enables almost unlimited surveillance of anyone anywhere in the world
+	- "You could read anyone's email in the world, anybody you've got an email address for. Any website: You can watch traffic to and from it. Any computer that an individual sits at: You can watch it. Any laptop that you're tracking: you can follow it as it moves from place to place throughout the world. It's a one-stop-shop for access to the NSA's information. ..."
 
 ## Code of Fair Information Practices
 In the early 1970s, a group convened to recommend a set of policies often dubbed the "bill of rights" for the Information Age
@@ -153,3 +155,30 @@ The Privacy Act of 1974 represents Congress’s attempt to codify the principles
 2. The Privacy Act only covers records indexed by a personal identifier.
 3. No one in the federal government is in charge of enforcing the provisions of the Privacy Act. Federal agencies have taken it upon themselves to determine which databases they can exempt.
 4. The Privacy Act allows one agency to share records with another agency as long as they are for a “routine use.”
+
+## Against Predictive Policing
+Social contract theory posits that we have surrendered some of our natural rights in order to form a society, with the understanding that this society will protect our remaining rights[^1]. One of the key rights we have surrendered is the right to use violence, as we have delegated this authority to the state through law enforcement so that they may afford us the right to privacy and safety. Using social contract theory, I argue that Canada should enact a total ban on predicting policing algorithms. The use of these algorithms is ineffective at affording us the right to safety and actively harms countless marginalized groups.
+
+Those who advocate for the use of these algorithms argue that they enable law enforcement to better prevent terrorist incidents and crimes. For example, the Chicago police force used these algorithms to identify shooters. Yet, the reality is that these systems have a very negligible impact on improving public safety. In the wake of the 9/11 attacks in the United States the government introduced mass surveillance programs in the name of public safety. However, a study by the New America Foundation found that these programs had neither prevented acts of terrorism nor found evidence of planned terrorist acts. [^6]
+
+The use of these algorithms also violates the social contract which states that we should impose only as many rules as we need in order to have a functioning society. In a proper social contract, no community members would want to put unfair burdens on others because that would mean putting unfair burdens on themselves. In other words, we would like a minimum viable set of rules that the government is able to enforce.
+
+Imagine an extreme world where you are guaranteed all of your absolute rights but have no rights of any other kind (e.g. freedom of speech, freedom of free media, etc.). While this may be a perfectly safe society, you literally cannot do anything but exist. This example serves to illustrate the tradeoff between personal liberties and personal rights; you cannot have your cake and eat it too. It is a basic expectation that individuals have a right to privacy and trading that for a negligible increase in personal safety is not one that most people would make.
+
+When we delegate the role of enforcing these roles to the government, we assume that they act impartially on our behalf, without bias or discrimination. However, predictive policing algorithms do not adhere to this standard: they are biased against marginalized groups, and their use often leads to police violence against these groups.
+
+Predictive policing algorithms rely on historical data from police databases, which contain disproportionately high numbers of interactions with people from marginalized groups. As a result, these algorithms are likely to label members of these groups as “high risk” and target them for extra surveillance even when they have not done anything wrong. Under Rawl’s theory of justice, we quickly see that its use is unfair. 
+
+In a study from 2016, ProPublica found that COMPAS, a policing algorithm, overestimated the rate of reoffending for Black individuals by almost twice as much as those for Caucasians [^4]. This meant that Black individuals were disproportionately given longer and harsher sentences. Race isn’t the only feature that these algorithms discriminate on. Any category of people who have been unfairly represented historically (e.g. gender minorities, PoC, immigrants) continue to be systematically harmed by these systems[^3]. This can lead to a self-fulfilling prophecy where people from marginalized groups are more likely to be arrested and jailed because they are being targeted by predictive policing algorithms[^2]. Clearly, this is a system that does not benefit those who are the least-advantaged in this society.
+
+Lastly, we have an expectation for the right to explanation in any social contract. Especially when we delegate the responsibility for upholding and reforming rules to the government we expect explanations decisions that significantly affect an individual. Most predictive policing algorithms operate using large troves of data and in a way which is opaque to its operators[^2]. If governments use these policing algorithms, they cannot explain how they made the decisions they did. The public will be left without much recourse to challenge the decisions of automated systems. Alkhatib[^3] explains that these systems without explanation or feedback loops quickly diverge from reality and can lead to increasingly unfair and discriminatory decisions.
+
+In light of all this evidence, I believe that Canada should enact a total ban on predictive policing algorithms. The social contract theory dictates that we have a responsibility to protect the rights of all individuals in our society equally; predictive policing violates this principle by discriminating against already marginalized groups[^1].
+
+[^0]: Ethics for the Information Age, 8th Edition., Quinn, Michael
+[^1]: https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/
+[^2]: https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm
+[^3]: https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf
+[^4]: https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm
+[^5]: https://www.science.org/doi/10.1126/sciadv.aao5580
+[^6]: https://www.newamerica.org/international-security/reports/terrorism-america-18-years-after-911/what-is-the-threat-to-the-united-states/

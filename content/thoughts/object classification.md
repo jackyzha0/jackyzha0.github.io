@@ -90,29 +90,4 @@ See notes on [[thoughts/decision tree|decision trees]]
 - Bias subsequent classifiers to correctly predict training examples that previous classifiers got wrong
 
 ## CNNs
-Standard is DxWxH
-
-### Convolutional Layer
-$K$ is the number of filters, $F$ is the spatial extent of filters (kernel size), $S$ is the stride, and $P$ is the padding
-
-- $W_{out} = (W_{input} - F + 2P)/S + 1$
-- $H_{out} = (H_{input} - F + 2P)/S + 1$
-- $D_{out} = K$
-
-Total number of learnable parameters: $(F \times F \times D_{input}) \times K + K$.
-
-### Pooling Layer
-Makes representation smaller, more manageable and spatially invariant. 
-
-- $W_{out} = (W_{input} - F)/S + 1$
-- $H_{out} = (H_{input} - F)/S + 1$
-- $D_{out} = D_{input}$
-
-Total number of learnable parameters: 0.
-
-### Layer Summary
-- Convolutional Layer: applies a set of learnable filters
-- Pooling Layer: performs spatial downsampling
-- Fully-connected Layer: same as any regular neural network
-
-A CNN then just learns a hierarchy of filters
+See notes on [[thoughts/convolutional neural networks|CNNs]]

@@ -62,6 +62,8 @@ Aw - b \\
 \end{equation}
 $$
 
+We can fit to polynomial equations using a [[thoughts/change of basis]]
+
 ## Cost
 Of solving equations in the form $Aw = b$
 1. $O(nd)$ to form vector $b$
@@ -69,23 +71,6 @@ Of solving equations in the form $Aw = b$
 3. Solving a $(d,d)$ system of equations is $O(d^3)$
 
 Overall cost is $O(nd^2+d^3)$
-
-## Change of Basis
-Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1. We can fit polynomials of degree $p$ by raising other powers:
-
-$$
-Z =
-\begin{bmatrix}
-1 & x_1 & x_1^2 & \dots & x_1^p \\
-1 & x_2 & x_2^2 & \dots & x_2^p \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-1 & x_n & x_n^2 & \dots & x_n^p
-\end{bmatrix}
-$$
-
-As the polynomial degree increases, the training error goes down but the approximation error goes up.
-
-Choosing a basis is hard! We can do something like [[thoughts/Gaussian RBF|Gaussian radial basis functions]] (RBFs) or polynomial basis as these are both universal approximators given enough data.
 
 ## Robust Regression
 We minimize the L1-norm of residuals instead of L2-norm

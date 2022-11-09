@@ -559,6 +559,8 @@ I think research logs tend to generally focus too much on what one did rather th
 	- But as a counterpoint, if you ask anyone on the street whether they would be comfortable sharing their entire browsing history right there on the spot, my bet is that ~95% of people will say no
 		- This could be a really fun social experiment: incrementally increase the amount you offer strangers to look at their browsing history
 		- How much does the average person value their [[thoughts/privacy|privacy]]?
+			- Yes, companies and the government have a lot of data/info on us
+			- But what has come out of it? For the average consumer, nothing! There is a definitely anxiety of *but what if* with no real bad cases (that we know of)
 	- Another question is why having a *real person* snoop on your data feels so different than large companies snooping and *profiting* off of your data
 		- I suspect a large part of this is due to learned helplessness
 		- We haven't ever really known what it is like for companies *not* to be doing that

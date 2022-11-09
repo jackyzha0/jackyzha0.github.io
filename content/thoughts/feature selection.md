@@ -6,13 +6,18 @@ tags:
 - CPSC340
 ---
 
+Better features usually help more than a better model. Good features would ideally:
+- Allow learning with few examples, be hard to overfit with many examples
+- Capture most important aspects of problem
+- Reflects invariances (generalize to new scenarios)
+
 Find the features (columns) of ‘X’ that are important for predicting ‘y’.
 - What are the relevant factors?
 - Which basis functions should I use among these choices?
 - What types of new data should I collect?
 - How can I speed up computation?
 
-This can help us to remove features. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results.
+This can help us to remove features. Feature complexity is also correlated with the fundamental tradeoff. Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results. 
 
 Generally, there are no right answers but there are wrong answers.
 
@@ -54,3 +59,15 @@ $O(d^2)$ runtime
 We can again use complexity penalties and penalize the number of features used. This can also be called the $L_0$-norm which is the number of non-zero values.
 
 $$\lVert w \rVert_0 = size(S)$$
+
+## Text Features
+1. Bag of Words: represents sentences/documents by word counts:
+2. Bigram: an ordered set of two words
+3. Trigram: an ordered set of three words
+
+## Global vs Local
+Global vs. local features allow for “personalized” predictions.
+
+We add a feature for each 'person' in the system.
+
+![[thoughts/images/global-vs-local-features.png]]

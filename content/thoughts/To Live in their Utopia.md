@@ -56,4 +56,4 @@ Metis is more than constructing any number of "rules of thumb". Rather, knowing 
 
 "A person without the lived experience of disabilities can never truly understand what it means to be 'like' someone who experiences it." [Disability simulation](thoughts/Design%20Justice.md) doesn't work; why do we let ML systems do it then, let alone systems without *metis*? 
 
-Important in the context [traditional knowledge (TK)](thoughts/traditional%20knowledge.md)
+Important in the context of [traditional knowledge (TK)](thoughts/traditional%20knowledge.md)
