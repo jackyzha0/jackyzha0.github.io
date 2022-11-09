@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -238,7 +238,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     
@@ -276,19 +279,37 @@ if (!doNotTrack) {
             <div class="meta">
                 <h1><a href="https://jzhao.xyz/tags/seed/">Seed</a></h1>
                 <p>I tend to generally bookmark things for later then revisit them when I have time. These are collections of notes on articles, books, and readings. They are the seeds that form the basis of my ideas and thoughts.</p>
-                <p><b>364</b> notes with this tag (showing first 10 results)</p>
+                <p><b>366</b> notes with this tag (showing first 10 results)</p>
             </div>
             
             <ul class="section-ul"><li class="section-li">
         <div class="section">
             <p class="meta">
                 
-Nov 1, 2022
+Jun 23, 2021
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/formality-considered-harmful/" class="internal-link" data-src="/thoughts/formality-considered-harmful/">Formality considered harmful</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/To-Live-in-their-Utopia/" class="internal-link" data-src="/thoughts/To-Live-in-their-Utopia/">To Live in their Utopia</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 5, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/interviews-and-data-recording/" class="internal-link" data-src="/thoughts/interviews-and-data-recording/">Interviews and Data Recording</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -319,12 +340,12 @@ Dec 24, 2021
         <div class="section">
             <p class="meta">
                 
-May 5, 2022
+Dec 24, 2021
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/causality/" class="internal-link" data-src="/thoughts/causality/">Causality</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/imaging/" class="internal-link" data-src="/thoughts/imaging/">Imaging</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -355,12 +376,12 @@ Jul 10, 2022
         <div class="section">
             <p class="meta">
                 
-Jul 16, 2022
+Sep 22, 2022
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/identity/" class="internal-link" data-src="/thoughts/identity/">Identity</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/DSL/" class="internal-link" data-src="/thoughts/DSL/">Domain Specific Language (DSL)</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -373,12 +394,12 @@ Jul 16, 2022
         <div class="section">
             <p class="meta">
                 
-Sep 7, 2022
+Oct 3, 2022
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Decision-theory/" class="internal-link" data-src="/thoughts/Decision-theory/">Decision theory</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/interval-scale/" class="internal-link" data-src="/thoughts/interval-scale/">Interval scale</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -393,17 +414,19 @@ Sep 7, 2022
         <div class="section">
             <p class="meta">
                 
-Sep 9, 2022
+Oct 5, 2022
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/data-mining/" class="internal-link" data-src="/thoughts/data-mining/">Data mining</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/linear-regression/" class="internal-link" data-src="/thoughts/linear-regression/">Linear Regression</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
                 
             </ul>
         </div>
@@ -411,17 +434,19 @@ Sep 9, 2022
         <div class="section">
             <p class="meta">
                 
-Sep 11, 2022
+Oct 18, 2022
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/probability/" class="internal-link" data-src="/thoughts/probability/">Probability</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/feature-selection/" class="internal-link" data-src="/thoughts/feature-selection/">Feature Selection</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
                 
             </ul>
         </div>
@@ -429,39 +454,17 @@ Sep 11, 2022
         <div class="section">
             <p class="meta">
                 
-Sep 23, 2022
+Oct 25, 2022
 
 
             </p>
             <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Decisions-under-risk/" class="internal-link" data-src="/thoughts/Decisions-under-risk/">Decisions under risk (DUR)</a></h3>
+              <h3><a href="https://jzhao.xyz/thoughts/program-analysis/" class="internal-link" data-src="/thoughts/program-analysis/">Program Analysis</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 19, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Dutch-Book/" class="internal-link" data-src="/thoughts/Dutch-Book/">Dutch Book</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
                 
             </ul>
         </div>
@@ -476,6 +479,24 @@ Oct 19, 2022
             </div>
             
             <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jul 28, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/tragedy-of-the-commons/" class="internal-link" data-src="/thoughts/tragedy-of-the-commons/">Tragedy of the Commons</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -633,24 +654,6 @@ Jul 28, 2021
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/social-contracts/" class="internal-link" data-src="/thoughts/social-contracts/">Social Contracts</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jun 16, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/infrastructure/" class="internal-link" data-src="/thoughts/infrastructure/">Infrastructure</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -872,10 +875,92 @@ Mar 20, 2022
             <div class="meta">
                 <h1><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></h1>
                 <p></p>
-                <p><b>27</b> notes with this tag (showing first 10 results)</p>
+                <p><b>29</b> notes with this tag (showing first 10 results)</p>
             </div>
             
             <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 5, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/linear-regression/" class="internal-link" data-src="/thoughts/linear-regression/">Linear Regression</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 18, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/feature-selection/" class="internal-link" data-src="/thoughts/feature-selection/">Feature Selection</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Nov 3, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/convolutional-neural-networks/" class="internal-link" data-src="/thoughts/convolutional-neural-networks/">convolutional neural networks</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC425/">CPSC425</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Nov 3, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/change-of-basis/" class="internal-link" data-src="/thoughts/change-of-basis/">Change of basis</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -939,26 +1024,6 @@ Sep 28, 2022
         <div class="section">
             <p class="meta">
                 
-Oct 5, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/linear-regression/" class="internal-link" data-src="/thoughts/linear-regression/">Linear Regression</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
 Oct 19, 2022
 
 
@@ -1005,66 +1070,6 @@ Oct 28, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/probabilistic-classifier/" class="internal-link" data-src="/thoughts/probabilistic-classifier/">Probabilistic Classifier</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 28, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/multi-class-classification/" class="internal-link" data-src="/thoughts/multi-class-classification/">Multi-class Classification</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 28, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/linear-classification/" class="internal-link" data-src="/thoughts/linear-classification/">Linear Classification</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Sep 9, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/supervised-learning/" class="internal-link" data-src="/thoughts/supervised-learning/">Supervised learning</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -1729,6 +1734,26 @@ Feb 26, 2022
         <div class="section">
             <p class="meta">
                 
+Oct 3, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/interval-scale/" class="internal-link" data-src="/thoughts/interval-scale/">Interval scale</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Aug 12, 2021
 
 
@@ -1855,26 +1880,6 @@ Sep 23, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/Precautionary-Principle/" class="internal-link" data-src="/thoughts/Precautionary-Principle/">Precautionary Principle (PP)</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 3, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/interval-scale/" class="internal-link" data-src="/thoughts/interval-scale/">Interval scale</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
@@ -2149,26 +2154,6 @@ Apr 11, 2021
         <div class="section">
             <p class="meta">
                 
-Dec 27, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Projects/" class="internal-link" data-src="/thoughts/Projects/">Projects</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
 May 3, 2022
 
 
@@ -2182,6 +2167,26 @@ May 3, 2022
                 <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 27, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Projects/" class="internal-link" data-src="/thoughts/Projects/">Projects</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/evergreen/">Evergreen</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
                 
             </ul>
         </div>
@@ -2840,6 +2845,38 @@ Feb 19, 2022
                 <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/writing/">Writing</a></li>
+                
+            </ul>
+        </div>
+    </li></ul>
+
+            
+            
+            <div class="meta">
+                <h1><a href="https://jzhao.xyz/tags/CPSC425/">CPSC425</a></h1>
+                <p></p>
+                <p><b>1</b> notes with this tag </p>
+            </div>
+            
+            <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Nov 3, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/convolutional-neural-networks/" class="internal-link" data-src="/thoughts/convolutional-neural-networks/">convolutional neural networks</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC425/">CPSC425</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
                 
             </ul>
         </div>

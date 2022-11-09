@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -238,7 +238,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     
@@ -364,38 +367,6 @@ Dec 24, 2021
   
   
 
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
 
 
 
@@ -403,6 +374,35 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -714,30 +714,7 @@ Disadvantages:</li>
 <li>Bias subsequent classifiers to correctly predict training examples that previous classifiers got wrong</li>
 </ul>
 <a href="#cnns"><h2 id="cnns"><span class="hanchor" ariaLabel="Anchor"># </span>CNNs</h2></a>
-<p>Standard is DxWxH</p>
-<a href="#convolutional-layer"><h3 id="convolutional-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Convolutional Layer</h3></a>
-<p>$K$ is the number of filters, $F$ is the spatial extent of filters (kernel size), $S$ is the stride, and $P$ is the padding</p>
-<ul>
-<li>$W_{out} = (W_{input} - F + 2P)/S + 1$</li>
-<li>$H_{out} = (H_{input} - F + 2P)/S + 1$</li>
-<li>$D_{out} = K$</li>
-</ul>
-<p>Total number of learnable parameters: $(F \times F \times D_{input}) \times K + K$.</p>
-<a href="#pooling-layer"><h3 id="pooling-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Pooling Layer</h3></a>
-<p>Makes representation smaller, more manageable and spatially invariant.</p>
-<ul>
-<li>$W_{out} = (W_{input} - F)/S + 1$</li>
-<li>$H_{out} = (H_{input} - F)/S + 1$</li>
-<li>$D_{out} = D_{input}$</li>
-</ul>
-<p>Total number of learnable parameters: 0.</p>
-<a href="#layer-summary"><h3 id="layer-summary"><span class="hanchor" ariaLabel="Anchor"># </span>Layer Summary</h3></a>
-<ul>
-<li>Convolutional Layer: applies a set of learnable filters</li>
-<li>Pooling Layer: performs spatial downsampling</li>
-<li>Fully-connected Layer: same as any regular neural network</li>
-</ul>
-<p>A CNN then just learns a hierarchy of filters</p>
+<p>See notes on <a href="/thoughts/convolutional-neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/convolutional-neural-networks">CNNs</a></p>
 
 
     </article>

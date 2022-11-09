@@ -121,13 +121,13 @@ At 1:00, the sun streamed at just the right angle through the patterned glass, s
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -240,7 +240,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     

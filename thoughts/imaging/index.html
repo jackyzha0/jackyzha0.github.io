@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -239,7 +239,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     
@@ -295,105 +298,6 @@ Dec 24, 2021
 
 
 
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
 
   
   
@@ -677,59 +581,6 @@ $$I&rsquo;(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x - i, y - j)$$</p>
 <li>Shift invariance: output is local (doesn&rsquo;t depend on absolute position in image)</li>
 </ol>
 <p><strong>Characterization Theorem</strong>: Any operation is linear if it satisfies both superposition and scaling. Any linear, shift-invariant operation can be expressed as a convolution.</p>
-<a href="#properties-of-convolution"><h4 id="properties-of-convolution"><span class="hanchor" ariaLabel="Anchor"># </span>Properties of Convolution</h4></a>
-<ol>
-<li>Associative. $G \otimes (F \otimes I(x,y)) = (G \otimes F) \otimes I(x,y)$</li>
-<li>Symmetric. $(G \otimes F) \otimes I(x,y) = (F \otimes G) \otimes I(x,y)$</li>
-</ol>
-<p>Correlation, on the other hand, is generally not associative.</p>
-<p>For 1D Gaussians, we note $G_{\sigma_1}(x) \otimes G_{\sigma_2}(x) = G_{\sqrt{\sigma_1^2 + \sigma_2^2}}(x)$. Convolving with $G_\sigma(x) \otimes G_\sigma(x) = G_{\sqrt 2 \sigma}(x)$</p>
-<a href="#boundary-effects"><h3 id="boundary-effects"><span class="hanchor" ariaLabel="Anchor"># </span>Boundary Effects</h3></a>
-<ol>
-<li>Ignore these locations: make the computation undefined for the outsize $k$ rows/columns</li>
-<li>Pad with zeroes: return zero whenever of value of $I$ is required at some position outside the image</li>
-<li>Assume periodicity: wrap image around</li>
-<li>Reflect border</li>
-</ol>
-<a href="#pillbox"><h3 id="pillbox"><span class="hanchor" ariaLabel="Anchor"># </span>Pillbox</h3></a>
-<p>A 2D pillbox is rotationally invariant but not separable</p>
-<p>$$f(x,y) = \frac{1}{\pi r^2}
-\begin{cases}
-1 &amp; \textrm{if} x^2 + y^2 \leq r^2 \\ 0 &amp; \textrm{otherwise}
-\end{cases}
-$$</p>
-<p>An efficient implementation would represent a 2D box filter as the sum of a 2D pillbox and some &ldquo;extra corner bits&rdquo;</p>
-<a href="#gaussian-filters"><h3 id="gaussian-filters"><span class="hanchor" ariaLabel="Anchor"># </span>Gaussian Filters</h3></a>
-<ul>
-<li>Box filter doesn&rsquo;t apply well for lens defocus. A circular pillbox is a much better model for defocus</li>
-<li>Gaussian is a good general smoothing model
-<ul>
-<li>for phenomena</li>
-<li>whenever the CLT applies</li>
-</ul>
-</li>
-</ul>
-<p>Gaussian filters are rotationally invariant.</p>
-<p>We get $G_\sigma(x,y) = \frac{1}{2\pi\sigma^2}\exp^{-\frac{x^2+y^2}{2\sigma^2}}$ where $\sigma$ is the standard deviation</p>
-<p>For a 3x3, we then need to quantize and truncate it, evaluating $G_\sigma(x,y)$ wherever in the filter. Increasing $\sigma$ means more blur. Problem with 3x3 is that it truncates too much of the distribution (does not sum up to one), this can cause unintentional darkening.</p>
-<p>In general, the Gaussian filter should capture $\pm3\sigma$ for $\sigma = 1$ which gives us a 7x7 filter.</p>
-<a href="#efficiency"><h4 id="efficiency"><span class="hanchor" ariaLabel="Anchor"># </span>Efficiency</h4></a>
-<p>As both the 2D box filter and 2D Gaussian filter are separable, it can be implemented as two 1D convolutions which convolve each row and then each column separately.</p>
-<p>A 2D filter is separable if it can be expressed as an outer product of two 1D filters</p>
-<p>A seperable 2D Gaussian only does $2m$ multiplications at each pixel (one for each 1D filter). Considering the image has $n \times n$ pixels, then this is a $2m \times n^2$ multiplications. Assuming $m \approx n$, this is $\mathcal{O}(n^3)$</p>
-<a href="#fourier-transform"><h4 id="fourier-transform"><span class="hanchor" ariaLabel="Anchor"># </span>Fourier Transform</h4></a>
-<p>The basic building block of the fourier transform is the periodic function.</p>
-<p>$$Asin(\omega x + \phi)$$</p>
-<p>where $A$ is the amplitude, $\omega$ is the angular frequency and $\phi$ is the phase. Fourier&rsquo;s claim was that you could add enough of these to get any periodic signal!</p>
-<a href="#the-convolution-theorem"><h3 id="the-convolution-theorem"><span class="hanchor" ariaLabel="Anchor"># </span>The Convolution Theorem</h3></a>
-<p>Let $i&rsquo;(x,y) = f(x,y) \otimes i(x,y)$ be the convolution.</p>
-<p>Then, $\mathcal{I}&rsquo;(w_x,w_y) = \mathcal{F}(w_x,w_y)\mathcal{I}(w_x,w_y)$ which is just a simple element-wise multiplication after applying a Fourier transform to each.</p>
-<p>At the expense of two Fourier transforms and one inverse Fourier transform, convolution can be reduced to (complex) multiplication. This speeds up the cost of FFT/IFFT for the image and filter to $\mathcal{O}(n^2\log n)$ and $\mathcal{O}(m^2\log m)$ respectively, dropping the total cost of convolution to $\mathcal{O}(n^2)$</p>
-<a href="#convolution-sizing"><h3 id="convolution-sizing"><span class="hanchor" ariaLabel="Anchor"># </span>Convolution Sizing</h3></a>
-<p>Convolving two filters of size $m \times m$ and $n \times n$ results in a filter of size</p>
-<p>$$(n + 2 \lfloor \frac m 2 \rfloor) \times (n + 2 \lfloor \frac m 2 \rfloor)$$</p>
-<p>More broadly for a set of $K$ filters of sizes $m_k \times m_k$ the resulting filter will have size</p>
-<p>$$(m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor) \times (m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor)$$</p>
 <a href="#non-linear-filters"><h2 id="non-linear-filters"><span class="hanchor" ariaLabel="Anchor"># </span>Non-linear filters</h2></a>
 <ul>
 <li>Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of noise, such as impulse noise (&lsquo;salt and pepper&rsquo; noise or &lsquo;shot&rsquo; noise)</li>
@@ -796,8 +647,18 @@ $$</p>
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/computer-vision/" data-ctx="Images, Cameras, Lenses, Filters, Sampling" data-src="/thoughts/computer-vision" class="internal-link">Computer Vision</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/convolutional-neural-networks/" data-ctx="linear filters" data-src="/thoughts/convolutional-neural-networks" class="internal-link">convolutional neural networks</a>
       </li>
       
       

@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=" Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  "
+    content="Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  Software analysis falls into many categories"
   />
   <title>
     Program Analysis
@@ -119,13 +119,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -238,7 +238,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     
@@ -295,6 +298,24 @@ Oct 25, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -312,6 +333,68 @@ Oct 25, 2022
 <ol>
 <li>Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours</li>
 <li>Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program</li>
+</ol>
+<p>Software analysis falls into many categories</p>
+<ol>
+<li>Metaproperty analysis: anything else except for what the code actually does (e.g. style checkers)</li>
+<li>Program analysis: analysing what a (part of a) program will do / does / can do
+<ol>
+<li>Static program analysis: without running the program. This requires considering all executions of the code of interest which requires context about the execution up to this point
+<ol>
+<li>Value-agnostic</li>
+<li>Value-sensitive (symbolic execution)</li>
+</ol>
+</li>
+<li>Dynamic program analysis: analyzes the program while running it</li>
+<li>Automatic (Concolic) test-case generation</li>
+</ol>
+</li>
+</ol>
+<p>3 main properties about code</p>
+<ol>
+<li>How the code is written (fairly simple static meta-property analysis)</li>
+<li>What the code does (program analysis - cannot be done precisely)</li>
+<li>What the author intended (impossible for fully automatic analysis, not available from the code)</li>
+</ol>
+<p>Rice&rsquo;s Theorem: All program analysis problems that are non-trivial are undecidable. There is no program analysis that achieves all of the following for all input problems:</p>
+<ol>
+<li>Is fully automatic (no user input/interaction other than the program)</li>
+<li>Always terminates (the analysis itself, not program being analysed)</li>
+<li>On termination: always says “yes” when the answer should be “yes”</li>
+<li>On termination: always says “no” when the answer should be “no”</li>
+</ol>
+<a href="#designing-a-static-analysis"><h2 id="designing-a-static-analysis"><span class="hanchor" ariaLabel="Anchor"># </span>Designing a Static Analysis</h2></a>
+<ol>
+<li>Define the goal: what is the property (of all executions) of a program? What problem is the analysis supposed to help?</li>
+<li>Abstract states $\sigma$: type of information analysis tracks through program</li>
+<li>Error/output information $E$: type of information returned by analysis</li>
+<li>Analysis function: define a function $\textrm{analyze}(\sigma,s)$ for analysis steps where
+<ol>
+<li>$\sigma$ is an abstract state</li>
+<li>$s$ is a program state</li>
+<li>returns a pair $(\sigma&rsquo;,E)$ of resulting abstract state plus any errors</li>
+<li>typically defined per-case of type of (supported) statement s</li>
+</ol>
+</li>
+<li>Concretisation function: maps abstract states to sets of program states  or sets of program executions - this defines what abstract states mean. What does the analysis &ldquo;think&rdquo; is a possible state at this point?
+<ol>
+<li>(D, A) maps to set of all states in which at least D are declared and A are initialized</li>
+<li>(D, A) maps to set of all states in which at most D are declared and A are initialized</li>
+<li>(D, A) maps to set of all states in which exactly D are declared and A are initialized</li>
+</ol>
+</li>
+<li>(Optionally) termination strategy: for recursive control flow (e.g. loops)</li>
+</ol>
+<p>We can do this by instrumenting (changing) the program. We have two places where this can happen</p>
+<ol>
+<li>Instrumenting source code (e.g. grab AST and modify it)</li>
+<li>Instrumenting executable (e.g. grab bytecode and modify it)</li>
+<li>Instrumenting runtime (e.g. modify JVM)</li>
+</ol>
+<p>There&rsquo;s also a choice to be made about how/when to perform the analysis</p>
+<ol>
+<li>Online dynamic analysis: run the analysis as part of / alongside the program</li>
+<li>Offline dynamic analysis: make the program produce a log; analyse it separately</li>
 </ol>
 
 

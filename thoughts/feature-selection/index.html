@@ -8,8 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Find the features (columns) of ‘X’ that are important for predicting ‘y’.
- What are the relevant factors? Which basis functions should I use among these choices?"
+    content="Better features usually help more than a better model. Good features would ideally:
+ Allow learning with few examples, be hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’."
   />
   <title>
     Feature Selection
@@ -120,13 +120,13 @@
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.dee05ef2994797ecc81100d497220c53.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f7416f7c1bc3168ae9dd6d48beacf1c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -239,7 +239,10 @@ if (!doNotTrack) {
 <div id="cursor-chat-layer">
   <input type="text" id="cursor-chat-box">
 </div>
-<script src="https://unpkg.com/cursor-chat"></script>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
 
 <div class="singlePage">
     
@@ -416,6 +419,19 @@ Oct 18, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
 
 
 
@@ -423,6 +439,13 @@ Oct 18, 2022
 
 
 
+
+<p>Better features usually help more than a better model. Good features would ideally:</p>
+<ul>
+<li>Allow learning with few examples, be hard to overfit with many examples</li>
+<li>Capture most important aspects of problem</li>
+<li>Reflects invariances (generalize to new scenarios)</li>
+</ul>
 <p>Find the features (columns) of ‘X’ that are important for predicting ‘y’.</p>
 <ul>
 <li>What are the relevant factors?</li>
@@ -430,7 +453,7 @@ Oct 18, 2022
 <li>What types of new data should I collect?</li>
 <li>How can I speed up computation?</li>
 </ul>
-<p>This can help us to remove features. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results.</p>
+<p>This can help us to remove features. Feature complexity is also correlated with the fundamental tradeoff. Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results.</p>
 <p>Generally, there are no right answers but there are wrong answers.</p>
 <a href="#association"><h2 id="association"><span class="hanchor" ariaLabel="Anchor"># </span>Association</h2></a>
 <p>For each feature $j$, compute correlation between feature values $x_j$ and $y$.</p>
@@ -464,6 +487,16 @@ Oct 18, 2022
 <a href="#number-of-features-penalties"><h2 id="number-of-features-penalties"><span class="hanchor" ariaLabel="Anchor"># </span>Number of Features Penalties</h2></a>
 <p>We can again use complexity penalties and penalize the number of features used. This can also be called the $L_0$-norm which is the number of non-zero values.</p>
 <p>$$\lVert w \rVert_0 = size(S)$$</p>
+<a href="#text-features"><h2 id="text-features"><span class="hanchor" ariaLabel="Anchor"># </span>Text Features</h2></a>
+<ol>
+<li>Bag of Words: represents sentences/documents by word counts:</li>
+<li>Bigram: an ordered set of two words</li>
+<li>Trigram: an ordered set of three words</li>
+</ol>
+<a href="#global-vs-local"><h2 id="global-vs-local"><span class="hanchor" ariaLabel="Anchor"># </span>Global vs Local</h2></a>
+<p>Global vs. local features allow for “personalized” predictions.</p>
+<p>We add a feature for each &lsquo;person&rsquo; in the system.</p>
+<p><img src="/thoughts/images/global-vs-local-features.png" width="auto" /></p>
 
 
     </article>

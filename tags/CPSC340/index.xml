@@ -6,7 +6,26 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change of basis</title>
+      <link>https://jzhao.xyz/thoughts/change-of-basis/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/change-of-basis/</guid>
+      <description>Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1.</description>
+    </item>
+    
+    <item>
+      <title>convolutional neural networks</title>
+      <link>https://jzhao.xyz/thoughts/convolutional-neural-networks/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
+      <description>A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
+If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</description>
+    </item>
+    
     <item>
       <title>Linear Classification</title>
       <link>https://jzhao.xyz/thoughts/linear-classification/</link>
@@ -82,8 +101,8 @@ More complicated models have even more hyper-parameters. This makes searching al
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
-      <description>Find the features (columns) of ‘X’ that are important for predicting ‘y’.
- What are the relevant factors? Which basis functions should I use among these choices?</description>
+      <description>Better features usually help more than a better model. Good features would ideally:
+ Allow learning with few examples, be hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
     </item>
     
     <item>

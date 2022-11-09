@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPSC425 on jzhao.xyz</title>
+    <link>https://jzhao.xyz/tags/CPSC425/</link>
+    <description>Recent content in CPSC425 on jzhao.xyz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC425/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convolutional neural networks</title>
+      <link>https://jzhao.xyz/thoughts/convolutional-neural-networks/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
+      <description>A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
+If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</description>
+    </item>
+    
+  </channel>
+</rss>

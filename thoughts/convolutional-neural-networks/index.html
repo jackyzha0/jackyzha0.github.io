@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
+If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m&#43;1, 2m&#43;1)$ filter, then the 2D convolution is given by"
+  />
+  <title>
+    convolutional neural networks
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.3f792f95b046b8a6c4dbf66a4412e3d0.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.53ad9a087e3feeaaa12b63bfd02d923b.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b58a27f945b0a8c7ee6f7268ce53989a.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>convolutional neural networks</h1>
+      <p class="meta">
+        Last updated 
+Nov 3, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/thoughts/convolutional%20neural%20networks.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC425/">CPSC425</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+<p>A convolution is a <a href="/thoughts/imaging#linear-filters" rel="noopener" class="internal-link" data-src="/thoughts/imaging">linear filters</a> that measures the effect one signal has on another signal.</p>
+<p>If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</p>
+<p>$$z[i_1,i_2] = \sum_{j_1=-m}^m \sum_{j_2=-m}^m w[j_1,j_2] x[i_1+j_1,i_2+j_2]$$</p>
+<a href="#convolutional-layer"><h3 id="convolutional-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Convolutional Layer</h3></a>
+<p>Standard is DxWxH</p>
+<p>$K$ is the number of filters, $F$ is the spatial extent of filters (kernel size), $S$ is the stride, and $P$ is the padding</p>
+<ul>
+<li>$W_{out} = (W_{input} - F + 2P)/S + 1$</li>
+<li>$H_{out} = (H_{input} - F + 2P)/S + 1$</li>
+<li>$D_{out} = K$</li>
+</ul>
+<p>Total number of learnable parameters: $(F \times F \times D_{input}) \times K + K$.</p>
+<a href="#pooling-layer"><h3 id="pooling-layer"><span class="hanchor" ariaLabel="Anchor"># </span>Pooling Layer</h3></a>
+<p>Makes representation smaller, more manageable and spatially invariant.</p>
+<ul>
+<li>$W_{out} = (W_{input} - F)/S + 1$</li>
+<li>$H_{out} = (H_{input} - F)/S + 1$</li>
+<li>$D_{out} = D_{input}$</li>
+</ul>
+<p>Total number of learnable parameters: 0.</p>
+<a href="#layer-summary"><h3 id="layer-summary"><span class="hanchor" ariaLabel="Anchor"># </span>Layer Summary</h3></a>
+<ul>
+<li>Convolutional Layer: applies a set of learnable filters</li>
+<li>Pooling Layer: performs spatial downsampling</li>
+<li>Fully-connected Layer: same as any regular neural network</li>
+</ul>
+<p>A CNN then just learns a hierarchy of filters</p>
+<a href="#properties-of-convolution"><h3 id="properties-of-convolution"><span class="hanchor" ariaLabel="Anchor"># </span>Properties of Convolution</h3></a>
+<ol>
+<li>Associative. $G \otimes (F \otimes I(x,y)) = (G \otimes F) \otimes I(x,y)$</li>
+<li>Symmetric. $(G \otimes F) \otimes I(x,y) = (F \otimes G) \otimes I(x,y)$</li>
+</ol>
+<p>Correlation, on the other hand, is generally not associative.</p>
+<p>For 1D Gaussians, we note $G_{\sigma_1}(x) \otimes G_{\sigma_2}(x) = G_{\sqrt{\sigma_1^2 + \sigma_2^2}}(x)$. Convolving with $G_\sigma(x) \otimes G_\sigma(x) = G_{\sqrt 2 \sigma}(x)$</p>
+<a href="#boundary-effects"><h3 id="boundary-effects"><span class="hanchor" ariaLabel="Anchor"># </span>Boundary Effects</h3></a>
+<ol>
+<li>Ignore these locations: make the computation undefined for the outsize $k$ rows/columns</li>
+<li>Pad with zeroes: return zero whenever of value of $I$ is required at some position outside the image</li>
+<li>Assume periodicity: wrap image around</li>
+<li>Reflect border</li>
+</ol>
+<a href="#pillbox"><h3 id="pillbox"><span class="hanchor" ariaLabel="Anchor"># </span>Pillbox</h3></a>
+<p>A 2D pillbox is rotationally invariant but not separable</p>
+<p>$$f(x,y) = \frac{1}{\pi r^2}
+\begin{cases}
+1 &amp; \textrm{if} x^2 + y^2 \leq r^2 \\ 0 &amp; \textrm{otherwise}
+\end{cases}
+$$</p>
+<p>An efficient implementation would represent a 2D box filter as the sum of a 2D pillbox and some &ldquo;extra corner bits&rdquo;</p>
+<a href="#gaussian-filters"><h3 id="gaussian-filters"><span class="hanchor" ariaLabel="Anchor"># </span>Gaussian Filters</h3></a>
+<ul>
+<li>Box filter doesn&rsquo;t apply well for lens defocus. A circular pillbox is a much better model for defocus</li>
+<li>Gaussian is a good general smoothing model
+<ul>
+<li>for phenomena</li>
+<li>whenever the CLT applies</li>
+</ul>
+</li>
+</ul>
+<p>Gaussian filters are rotationally invariant.</p>
+<p>We get $G_\sigma(x,y) = \frac{1}{2\pi\sigma^2}\exp^{-\frac{x^2+y^2}{2\sigma^2}}$ where $\sigma$ is the standard deviation</p>
+<p>For a 3x3, we then need to quantize and truncate it, evaluating $G_\sigma(x,y)$ wherever in the filter. Increasing $\sigma$ means more blur. Problem with 3x3 is that it truncates too much of the distribution (does not sum up to one), this can cause unintentional darkening.</p>
+<p>In general, the Gaussian filter should capture $\pm3\sigma$ for $\sigma = 1$ which gives us a 7x7 filter.</p>
+<a href="#efficiency"><h4 id="efficiency"><span class="hanchor" ariaLabel="Anchor"># </span>Efficiency</h4></a>
+<p>As both the 2D box filter and 2D Gaussian filter are separable, it can be implemented as two 1D convolutions which convolve each row and then each column separately.</p>
+<p>A 2D filter is separable if it can be expressed as an outer product of two 1D filters</p>
+<p>A seperable 2D Gaussian only does $2m$ multiplications at each pixel (one for each 1D filter). Considering the image has $n \times n$ pixels, then this is a $2m \times n^2$ multiplications. Assuming $m \approx n$, this is $\mathcal{O}(n^3)$</p>
+<a href="#fourier-transform"><h4 id="fourier-transform"><span class="hanchor" ariaLabel="Anchor"># </span>Fourier Transform</h4></a>
+<p>The basic building block of the fourier transform is the periodic function.</p>
+<p>$$Asin(\omega x + \phi)$$</p>
+<p>where $A$ is the amplitude, $\omega$ is the angular frequency and $\phi$ is the phase. Fourier&rsquo;s claim was that you could add enough of these to get any periodic signal!</p>
+<a href="#the-convolution-theorem"><h3 id="the-convolution-theorem"><span class="hanchor" ariaLabel="Anchor"># </span>The Convolution Theorem</h3></a>
+<p>Let $i&rsquo;(x,y) = f(x,y) \otimes i(x,y)$ be the convolution.</p>
+<p>Then, $\mathcal{I}&rsquo;(w_x,w_y) = \mathcal{F}(w_x,w_y)\mathcal{I}(w_x,w_y)$ which is just a simple element-wise multiplication after applying a Fourier transform to each.</p>
+<p>At the expense of two Fourier transforms and one inverse Fourier transform, convolution can be reduced to (complex) multiplication. This speeds up the cost of FFT/IFFT for the image and filter to $\mathcal{O}(n^2\log n)$ and $\mathcal{O}(m^2\log m)$ respectively, dropping the total cost of convolution to $\mathcal{O}(n^2)$</p>
+<a href="#convolution-sizing"><h3 id="convolution-sizing"><span class="hanchor" ariaLabel="Anchor"># </span>Convolution Sizing</h3></a>
+<p>Convolving two filters of size $m \times m$ and $n \times n$ results in a filter of size</p>
+<p>$$(n + 2 \lfloor \frac m 2 \rfloor) \times (n + 2 \lfloor \frac m 2 \rfloor)$$</p>
+<p>More broadly for a set of $K$ filters of sizes $m_k \times m_k$ the resulting filter will have size</p>
+<p>$$(m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor) \times (m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor)$$</p>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/object-classification/" data-ctx="CNNs" data-src="/thoughts/object-classification" class="internal-link">Object Classification</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

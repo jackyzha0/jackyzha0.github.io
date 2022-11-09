@@ -6,7 +6,26 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change of basis</title>
+      <link>https://jzhao.xyz/thoughts/change-of-basis/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/change-of-basis/</guid>
+      <description>Effectively by constructing new features that take the variable to certain powers. To get a y-intercept (bias), we just raise $x$ to the 0th power to get 1.</description>
+    </item>
+    
+    <item>
+      <title>convolutional neural networks</title>
+      <link>https://jzhao.xyz/thoughts/convolutional-neural-networks/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
+      <description>A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
+If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</description>
+    </item>
+    
     <item>
       <title>Formality considered harmful</title>
       <link>https://jzhao.xyz/thoughts/formality-considered-harmful/</link>
@@ -81,7 +100,7 @@ They can also be viewed as &amp;lsquo;maximizing the margin&amp;rsquo;:</descrip
       <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/program-analysis/</guid>
-      <description> Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  </description>
+      <description>Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  Software analysis falls into many categories</description>
     </item>
     
     <item>
@@ -149,8 +168,8 @@ This usually happens when people commit probabilistic fallacies (e.</description
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
-      <description>Find the features (columns) of ‘X’ that are important for predicting ‘y’.
- What are the relevant factors? Which basis functions should I use among these choices?</description>
+      <description>Better features usually help more than a better model. Good features would ideally:
+ Allow learning with few examples, be hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
     </item>
     
     <item>
