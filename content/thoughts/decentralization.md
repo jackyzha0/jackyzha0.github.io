@@ -68,7 +68,7 @@ From a purely mathematical and [[thoughts/game theory|game theory]] perspective,
 However, after considering coercion, decentralization becomes much more important. It's much harder to threaten 100 people than 1.
 
 #### Collusion Resistance
-> Collusion is "coorindation that we don't like"
+> Collusion is "coordination that we don't like"
 
 [Consensus](thoughts/consensus.md) model relies on **uncoordinated choice model**, the assumption that the game consists of many small actors that make decisions independently
 
