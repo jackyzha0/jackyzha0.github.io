@@ -23,3 +23,5 @@ draft: true
 7. external advice as a silly dog
 8. Don’t surround yourself with people ‘smarter’ than you. **Surround yourself with people who are free in ways you are not**
 9. What I’ve come to learn over the past year is that there are two types of people: people who make the right decision and people who make the decision right.
+10. Take compliments in stride: “aw, thank you that means a lot” instead of “nahhh”
+11. 

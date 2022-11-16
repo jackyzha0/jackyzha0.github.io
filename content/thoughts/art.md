@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+> An activity in which perfection can be pursued
+
 [Source: An artist in Crypto by *Wendi Yan*](https://reboothq.substack.com/p/crypto-artists) and in discussion with Wendi
 
 What makes something “art” comes from its _intention_. How did the artist create the work? What is the personal experience or historical question their art responds to? Or did they seek to evoke certain emotions through their work?
