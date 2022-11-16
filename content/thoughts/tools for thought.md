@@ -10,12 +10,20 @@ tags:
 Related: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)
 
 Questions:
-1. How can we create tools that aid our thinking?
+1. How can we create tools that aid our thinking? How can we extend the range of thoughts we can think?
 2. As an extension, how do we organize the abundance of [information](thoughts/information.md) we have today so that it is both accessible and useful?
 3. How do we distill all the [research debt](thoughts/research%20debt.md) so that our ideas are easily useful to others?
 4. How can we make mixed media first-class? Allow drawing, images, and video? Bring back the overhead projector!
 
 Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching
+
+## Thought as a technology
+[Source](https://cognitivemedium.com/tat/index.html)
+
+- How can we invent new elements of cognition?
+- How can we reify internal mental models?
+- Not all visualization is good
+	- There is a cargo cult mentality which embraces visualization for the sake of visualization. In fact, there is no _a priori_ reason a visual approach is superior
 
 ## Word Charcuterie Board
 Is there any way to rearrange the fuzzy cloud of ideas in our head easily on paper/screens?
