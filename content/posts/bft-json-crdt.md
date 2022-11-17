@@ -1,29 +1,28 @@
 ---
-title: "Building a Byzantine Fault Tolerant JSON CRDT"
-date: 2022-07-11
+title: "Building a BFT JSON CRDT"
+date: 2022-11-16
 tags:
-- seed
-draft: true
+- fruit
+- technical
+- Rhizome
+enableToc: true
 ---
 
-longest (and probably most technically challenging) project I've worked on
-wanted to write a technical project breaking it down, detailing what CRDTs are, how they work, and how i built this project
+CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about resolving conflicts. If you've ever had to deal with a nasty `git` merge conflict, you know how painful these can be to resolve.
 
-CRDTs are cool hailing them as the [future of collaborative applications](https://josephg.com/blog/crdts-are-the-future/)
-but everyone makes them sound very very complicated (and to be fair they kind of are)
+We can mathematically guarantee that an application can *safely* update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties which means they work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).
 
-a lot of the literature is really complex and requires a thorough understanding of order theory, distributed systems, etc
+Over the past few years, really cool open source CRDT libraries like [Automerge](https://github.com/automerge) and [Yjs](https://github.com/yjs/yjs) have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.
 
-only recently have libraries like Automerge and Yjs exist to abstract away a lot of it (which is good!) but they only work in trusted setups
+What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels default-multiplayer, more cozy, and alive with life.
 
-interests me in particular because i can see a future where 
-- we use CRDTs to enable real-time collaborative software 
-- but also use them in fully peer-to-peer UNTRUSTED situations
-to my knowledge, nothing exists for this so far!
+I learn best through building so I set out to write my own CRDT from scratch to really grok what was going on under the hood. A lot of the literature I spent a good few months scratching my head over took a really long time for me to understand and required me to learn a non-trivial amount about [[thoughts/Order theory|order theory]] and [[thoughts/distributed systems|distributed systems]].
 
-that is a lot so we're going to be spending most of this blog post building up to understanding what that really means
+I write this blog post mostly as a note to my past self, distilling a lot of what I've learned since into a blog post I wish I had read before going in.
 
-## Embracing subjectivity
+This post will be rather long so use the Table of Contents at the top to jump to whatever section interests you the most.
+
+## How CRDTs differ from traditional databases
 - first need to understand how this is different from databases, the normal way of achieving distributed state
 - traditional databases focus on linearizability -> basically strong consistency, every read returns a globally up to date value
 	- Simultaneous n-way [[thoughts/consensus]]
@@ -47,7 +46,7 @@ that is a lot so we're going to be spending most of this blog post building up t
 	- allow each peer to have its subjective view of the world but mathematically guarantee that when exchanging messages, they'll all still eventually see the same thing
 	- This doesn't mean that conflict doesn't ever occur, but we are able to always determine the output up front (without user intervention), based on a metadata contained within the structure itself
 
-## CRDTs
+## What actually is a CRDT
 - ok wtf is a CRDT
 	- actually turns out there is no consensus (pun intended) on what the C actually stands for
 	- Conflict-free
@@ -189,7 +188,7 @@ NB: performance enthusiasts will be quick to point out how to make this go faste
 	- assumes that editing patterns are *not* random (which is true for most applications due)
 - diamond-types (josephg) and the new automerge uses a b-tree for even faster insert + find
 
-## Adding Byzantine fault tolerance
+## Adding Byzantine Fault Tolerance for free (almost)
 - what does bft mean?
 	- https://arxiv.org/abs/2012.00472 
 	- Citation: Martin Kleppmann and Heidi Howard. 2020. Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases
@@ -255,7 +254,7 @@ NB: performance enthusiasts will be quick to point out how to make this go faste
 			- this is fine because delete can't be a causal origin for something else at an individual CRDT level (but we can do this at a document-level by tracking what messages we've received so far)
 - technically this is enough if every node is connected to each other
 
-## Causal Broadcast and Retries
+### Causal Broadcast and Retries
 - we just need to make sure that there is a way to get messages between honest nodes such that byzantine faulty nodes cant block it
 - (diagram of connected component)
 - the easiest way is an eager reliable causal broadcast
@@ -311,7 +310,7 @@ NB: performance enthusiasts will be quick to point out how to make this go faste
 		- additionally, anything a real user could plausibly do, a byzantine actor can do
 		- if you have a google doc, they can delete the doc
 
-## To come...?
+## Future directions for CRDTs
 - theres a lot more to explore in the realm of CRDTs
 - really think they are promising
 - CALM conjecture

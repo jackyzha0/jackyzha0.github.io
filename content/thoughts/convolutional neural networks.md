@@ -1,5 +1,5 @@
 ---
-title: "convolutional neural networks"
+title: "Convolutional Neural Networks"
 date: 2022-11-03
 tags:
 - seed

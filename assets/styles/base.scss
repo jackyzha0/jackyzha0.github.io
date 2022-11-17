@@ -230,7 +230,7 @@ article {
 
   & > li {
     display: inline-block;
-    margin: 0.4em 0.2em;
+    margin: 0.2em 0.2em;
   }
 
   & > li > a {
@@ -513,6 +513,14 @@ header {
     display: flex;
     align-items: center;
 
+    & > .desc {
+      text-overflow: ellipsis;
+    }
+
+    & > .tags {
+      text-align: right;
+    }
+
     @media all and (max-width: 600px) {
       & .tags {
         display: none;
@@ -527,7 +535,8 @@ header {
     & > p {
       margin: 0;
       padding-right: 1em;
-      width: clamp(6rem, 6rem, 6rem); 
+      flex: 0 0 6rem;
+      white-space: nowrap;
     }
   }
 
