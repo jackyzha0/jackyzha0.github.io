@@ -9,7 +9,7 @@ tags:
 
 Logically monotonic distributed code is [[thoughts/consistency|eventually consistent]] without any need for [[thoughts/consensus|consensus]] protocols (distributed locks, two-phase commit, etc.)
 
-See also: [[thoughts/CRON Theorem|CRON Theorem]]
+See also: [[thoughts/CRON Theorem|CRON Theorem]], [[thoughts/I-Confluence]]
 
 Logically monotonic state is something that can be represented using [[thoughts/Order theory|join semi-lattice]].
 

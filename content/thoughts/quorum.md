@@ -5,7 +5,6 @@ tags:
 - seed
 ---
 
-
 ## Read/Write Quorum
 In a system with $n$ replicas, we can ensure [[thoughts/consistency|consistent]]
 - writes if a write is acknowledged by $w$ replicas (write quorum)

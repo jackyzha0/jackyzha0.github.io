@@ -137,5 +137,3 @@ Result Methods
 6. `a.to(b)` marks result of `a` as type `b`
 7. `a.labelled(b)` label result of a with `b`
 8. `a.end()` indicate end of parser
-
-## Julia
