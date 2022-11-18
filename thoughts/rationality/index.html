@@ -60,17 +60,17 @@ Bounded rationality: the choices that people make attempt to maximize benefit an
   
   
   
-  <link href="https://jzhao.xyz/styles.3f792f95b046b8a6c4dbf66a4412e3d0.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.164de2083631c32efa38e74b2b08d621.min.css" rel="stylesheet" />
 
   
-  <link href="https://jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
 
    
   
   
   
   
-  <script src="https://jzhao.xyz/js/darkmode.f421222dbcb0e89bea7c9ed1d7659d3e.min.js"></script>
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
   
   
   
@@ -120,13 +120,13 @@ Bounded rationality: the choices that people make attempt to maximize benefit an
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.89c253d160078f36eb67a037f53ccd1a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8a133944afc895f2f889aadb67a028a4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b549c32eec062b1578422c6691326b51.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a22f44f8c5b10048e3e107988e575b3d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

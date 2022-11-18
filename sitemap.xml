@@ -2,23 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/distributed-web/</loc>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/</loc>
+    <lastmod>2022-11-16T15:40:56-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/posts/bft-json-crdt/</loc>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/posts/</loc>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/change-of-basis/</loc>
     <lastmod>2022-11-09T14:39:15-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/convolutional-neural-networks/</loc>
-    <lastmod>2022-11-09T14:39:15-08:00</lastmod>
+    <lastmod>2022-11-16T23:17:46-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/CPSC340/</loc>
-    <lastmod>2022-11-09T14:39:15-08:00</lastmod>
+    <lastmod>2022-11-16T23:17:46-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/CPSC425/</loc>
-    <lastmod>2022-11-09T14:39:15-08:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2022-11-16T15:03:38-08:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2022-11-16T15:03:38-08:00</lastmod>
+    <lastmod>2022-11-16T23:17:46-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/formality-considered-harmful/</loc>
     <lastmod>2022-11-01T15:07:06-07:00</lastmod>
@@ -188,9 +200,6 @@
     <loc>https://jzhao.xyz/posts/the-fools-who-dream/</loc>
     <lastmod>2022-10-01T15:10:39-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/posts/</loc>
-    <lastmod>2022-10-28T13:26:46-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/computer-networking/</loc>
     <lastmod>2022-08-21T09:08:12-04:00</lastmod>
   </url><url>
@@ -204,7 +213,7 @@
     <lastmod>2022-08-16T12:06:15-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CALM-Theorem/</loc>
-    <lastmod>2022-08-12T16:01:52-07:00</lastmod>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRON-Theorem/</loc>
     <lastmod>2022-08-12T16:01:52-07:00</lastmod>
@@ -534,7 +543,7 @@
     <lastmod>2022-07-16T15:36:23-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
-    <lastmod>2022-07-07T15:30:17-07:00</lastmod>
+    <lastmod>2022-11-16T23:17:46-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
     <lastmod>2022-09-11T14:59:28-07:00</lastmod>
@@ -549,7 +558,7 @@
     <lastmod>2022-08-10T15:19:11-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/quorum/</loc>
-    <lastmod>2022-05-05T19:05:58-04:00</lastmod>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/replication/</loc>
     <lastmod>2022-05-05T19:04:17-04:00</lastmod>
@@ -564,7 +573,7 @@
     <lastmod>2022-07-07T15:30:17-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rhizome-Research-Log/</loc>
-    <lastmod>2022-11-09T14:39:15-08:00</lastmod>
+    <lastmod>2022-11-16T15:40:56-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Solana/</loc>
     <lastmod>2022-08-08T16:19:02-07:00</lastmod>
@@ -798,7 +807,7 @@
     <lastmod>2022-04-18T21:51:19-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/functional-programming/</loc>
-    <lastmod>2022-09-19T11:50:44-04:00</lastmod>
+    <lastmod>2022-11-18T13:21:13-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ask-vs-guess-culture/</loc>
     <lastmod>2022-02-21T15:50:05-05:00</lastmod>
@@ -1191,7 +1200,7 @@
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/tools-for-thought/</loc>
-    <lastmod>2022-08-09T18:36:21-07:00</lastmod>
+    <lastmod>2022-11-16T15:40:56-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/transparency/</loc>
     <lastmod>2022-04-18T14:41:54-07:00</lastmod>

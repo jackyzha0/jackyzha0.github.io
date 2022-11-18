@@ -7,6 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Distributed Web</title>
+      <link>https://jzhao.xyz/thoughts/distributed-web/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/distributed-web/</guid>
+      <description>New web technologies and communities seeking to reduce or eliminate central points of control on the web
+Distributed Press  Source</description>
+    </item>
+    
+    <item>
+      <title>A Certain Tendency Of The Database Community</title>
+      <link>https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/</guid>
+      <description>Source
+[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/consistency|linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world</description>
+    </item>
+    
+    <item>
+      <title>Building a BFT JSON CRDT</title>
+      <link>https://jzhao.xyz/posts/bft-json-crdt/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/bft-json-crdt/</guid>
+      <description>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place.</description>
+    </item>
+    
+    <item>
       <title>Change of basis</title>
       <link>https://jzhao.xyz/thoughts/change-of-basis/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
@@ -16,7 +45,7 @@
     </item>
     
     <item>
-      <title>convolutional neural networks</title>
+      <title>Convolutional Neural Networks</title>
       <link>https://jzhao.xyz/thoughts/convolutional-neural-networks/</link>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       

@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place."
+  />
+  <title>
+    Building a BFT JSON CRDT
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.164de2083631c32efa38e74b2b08d621.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.53ad9a087e3feeaaa12b63bfd02d923b.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8a133944afc895f2f889aadb67a028a4.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a22f44f8c5b10048e3e107988e575b3d.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Building a BFT JSON CRDT</h1>
+      <p class="meta">
+        Last updated 
+Nov 16, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/posts/bft-json-crdt.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
+    
+</ul>
+
+      
+
+      
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+<p>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you&rsquo;ve ever had to deal with a nasty <code>git</code> merge conflict, you know how painful these can be to resolve.</p>
+<p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties which means they work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
+<p>Over the past few years, really cool open source CRDT libraries like 
+
+<a href="https://github.com/automerge" rel="noopener">Automerge</a> and 
+
+<a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.</p>
+<p>What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels default-multiplayer, more cozy, and alive with life.</p>
+<p>I learn best through building so I set out to write my own CRDT from scratch to really grok what was going on under the hood. A lot of the literature I spent a good few months scratching my head over took a really long time for me to understand and required me to learn a non-trivial amount about <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a> and <a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a>.</p>
+<p>I write this blog post mostly as a note to my past self, distilling a lot of what I&rsquo;ve learned since into a blog post I wish I had read before going in.</p>
+<p>See the 
+
+<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">accompanying Github repository</a></p>
+<p><em>This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most.</em></p>
+<a href="#how-crdts-differ-from-traditional-databases"><h2 id="how-crdts-differ-from-traditional-databases"><span class="hanchor" ariaLabel="Anchor"># </span>How CRDTs differ from traditional databases</h2></a>
+<p>Before we really dive into CRDT internals, we first need to understand how they are different from databases. When you normally think of shared state, you normally think of databases.</p>
+<p>However, the guarantees that databases provide are <em>really</em> different than the ones CRDTs provide.</p>
+<p>Traditional databases focus on a property called <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>, which guarantees that all operations behave as if executed on a <em>single copy of the data</em>. We call this canonical view the <strong>primary site</strong>. Every read in a linearizable system, no matter what node you read from, gives you an up to date value.</p>
+<p>[diagram showing linearizability]</p>
+<p>This is great for allowing developers to reason about distributed applications more easily (you just treat your distributed database like a single database). There are no conflicts by definition because there is only one authoritative view on what the right state is.</p>
+<p>However it isn&rsquo;t without downsides either. Achieving this property adds a lot of overhead because both writes <em>and reads</em> need to coordinate across all peers to ensure consistency. This creates an availability problem as if you can&rsquo;t reach a majority of your nodes, you can&rsquo;t process any operations.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>CRDTs kind of throw all of that out the window and embrace the eventual nature of the real world. In an often cited essay titled <em><a href="/thoughts/A-Certain-Tendency-Of-The-Database-Community" rel="noopener" class="internal-link" data-src="/thoughts/A-Certain-Tendency-Of-The-Database-Community">A Certain Tendency Of The Database Community</a></em>, the author argues that trying to provide “single system image” semantics (read: <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>) is fundamentally flawed and at odds with how systems operate in the physical world.</p>
+<p>In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.</p>
+<p>We allow peers to actually have different states as long as they <em>eventually</em> converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for <strong>strong eventual consistency</strong>:</p>
+<ul>
+<li>All updates will <em>eventually</em> reach every node</li>
+<li>Every node that has received the same updates will have the same state</li>
+</ul>
+<p>[diagram showing strong eventual consistency]</p>
+<a href="#when-should-we-use-strong-eventual-consistency-over-linearizability"><h3 id="when-should-we-use-strong-eventual-consistency-over-linearizability"><span class="hanchor" ariaLabel="Anchor"># </span>When should we use strong eventual consistency over linearizability?</h3></a>
+<p>It turns out that this is good enough most of the time. 
+
+<a href="https://databeta.wordpress.com/2010/10/28/the-calm-conjecture-reasoning-about-consistency/" rel="noopener">Conventional wisdom</a> in the database world would agree that perfect data consistency is way too expensive in terms of both latency and bandwidth if changes happen frequently. Using eventually consistent approaches generally work better as temporary inconsistencies work out in most cases.</p>
+<blockquote>
+<p>Two users might simultaneously withdraw money from an account and end up with more money than the account ever held. Would a bank ever want this behavior? In practice, yes. An ATM&rsquo;s ability to dispense money (availability) outweighs the cost of temporary inconsistency in the event that an ATM is partitioned from the master bank branch&rsquo;s servers. In the event of overdrawing an account, banks have a well-defined system of external compensating actions: for example, overdraft fees charged to the user.</p>
+<p>from <em>
+
+<a href="https://queue.acm.org/detail.cfm?id=2462076" rel="noopener">Eventual Consistency Today: Limitations, Extensions, and Beyond</a></em></p>
+</blockquote>
+<a href="#what-actually-is-a-crdt"><h2 id="what-actually-is-a-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>What actually is a CRDT</h2></a>
+<p>Ok so after about 1000 words, you&rsquo;re probably asking &ldquo;wtf is a CRDT??&rdquo;. Maybe we should do that now.</p>
+<p>CRDT stands for conflict-free/commutative/convergent replicated data type. Funnily enough, there is no strong consensus on what the C actually stands for<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Regardless of the name, the tldr; is the same:</p>
+<ul>
+<li>You can write and read from your local copy of the data without needing to coordinate with other peers</li>
+<li>Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
+<ul>
+<li>Because of the eventual nature of message delivery, there is no guarantee the state being exactly the same across actors at any given moment</li>
+<li><strong>If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect</strong></li>
+</ul>
+</li>
+<li>Each operation contains the necessary metadata to figure out a deterministic way to order any operations that may happen concurrently
+<ul>
+<li>I&rsquo;ll note here that the term &lsquo;conflict-free&rsquo; is a little misleading. <strong>It&rsquo;s not that conflict doesn&rsquo;t ever occur, but rather that CRDTs are always able to determine the ordering up front</strong> (without user intervention)</li>
+</ul>
+</li>
+<li>CRDTs always try to preserve user intent and try not to lose data whenever possible
+<ul>
+<li>If two people insert a character into a string at the same spot, it will try to keep both edits</li>
+<li>Note that these is inherently <em>different</em> from consensus methods. Collaboration involves keeping <em>all</em> edits and merging them. Consensus involves picking one of several proposed values and agreeing on it</li>
+</ul>
+</li>
+</ul>
+<p>Again, CRDTs are a <em>family</em> of data structures. There is no one single CRDT. You can make CRDTs that produce single values (registers), lists, maps, graphs, JSON, and many more I haven&rsquo;t listed here. However, a fundamental limitation here is that there are certain types of data structures (like sets) that <em>cannot</em> be made into CRDTs<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>Now equipped with a 30,000ft overview of CRDTs, let&rsquo;s dive into how they resolve conflicts.</p>
+<a href="#ordering-messages"><h3 id="ordering-messages"><span class="hanchor" ariaLabel="Anchor"># </span>Ordering Messages</h3></a>
+<blockquote>
+<p>A small note that this part will be pretty heavy on theory. If that&rsquo;s not your cup of tea, you can just assume that there exists a way to order operations and skip to the section titled &lsquo;Intuition behind CRDTs&rsquo;</p>
+</blockquote>
+<p>[diagram of conflicting operations]</p>
+<p>There is a whole branch of math focused on how to order things called, you guessed it, <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a>. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we&rsquo;ve mathematically avoided conflicts. So how do we do that?</p>
+<p>Your first intuition may be to just use clocks. However, there is no way to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Time keeping is famously hard.</p>
+<p>If we can&rsquo;t trust actual clocks, what can we do? Well, we can use Lamport timestamps. These track <em>logical time</em> rather than actual wall time, meaning we count number of events that have occurred rather than seconds elapsed.</p>
+<p>This timestamp is just a simple counter. For the rest of the blog post, we refer to this counter as a sequence number <code>seq</code>.</p>
+<ul>
+<li>All nodes start their counter at 0</li>
+<li>Everytime we perform an operation locally, we increment our counter by one</li>
+<li>Everytime we broadcast a message to our peers, we attach this counter</li>
+<li>Everytime we receive a message, we set our timer as <code>max(self.seq, incoming.seq) + 1</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// The sequence number of this node
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">our_seq</span>: <span class="nc">SequenceNumber</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// other fields omitted
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">impl</span><span class="w"> </span><span class="n">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">pub</span><span class="w"> </span><span class="n">new</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nc">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">our_seq</span>: <span class="mi">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>This timestamp gives us a very powerful relationship. If <code>a.seq &gt;= b.seq</code> then $a$ cannot have happened before $b$. Note that fortunately we cannot make the stronger claim that $a$ must have happened after $b$. It&rsquo;s a good thought exercise to see if you can figure out why :)</p>
+<p>However, Lamport timestamps only give us a <em>partial ordering</em>, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events!</p>
+<p>[diagram illustrating above case]</p>
+<p>Thankfully, we can actually create a total ordering of events in a distributed system by using some arbitrary mechanism to break ties. For CRDTs, we give each node a unique ID, we can actually tie-break on this ID to provide a deterministic way to order concurrent events.</p>
+<p>In pseudocode, we can create a comparison operation that looks something like the following:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// We assume this is unique for every node
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">type</span> <span class="nc">AuthorID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">u8</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// A lamport timestamp
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">type</span> <span class="nc">SequenceNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">u8</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// A CRDT Operation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">struct</span> <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">author</span>: <span class="nc">AuthorID</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">seq</span>: <span class="nc">SequenceNumber</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">content</span>: <span class="nb">Option</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Compare based off of sequence number
+</span></span></span><span class="line"><span class="cl"><span class="c1">// If there&#39;s a tie, tie-break on unique author ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">happens_before</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">op1</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">op2</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">op1</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">||</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">(</span><span class="n">op1</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">op1</span><span class="p">.</span><span class="n">author</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">author</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ordering solved!</p>
+<a href="#causality"><h3 id="causality"><span class="hanchor" ariaLabel="Anchor"># </span>Causality</h3></a>
+<p>Or so we thought&hellip; Let&rsquo;s think about when it is safe for us to apply an operation that we have received locally.</p>
+<p>[diagram]</p>
+<p>Say that the largest sequencer number we know of is 5. We receive an operation with sequence number 7. We know that we are missing the operation with sequence number 6. Can we still deliver it?</p>
+<p>The naive answer would be no, we should wait for the message with sequence number of 6 because we don&rsquo;t know if 7 depends on 6 or not.</p>
+<p>[diagram showing why the above it problematic]</p>
+<p>But we can&rsquo;t figure out this causality information from just sequence numbers alone. If an event A causes another event B to happen, then <code>a.seq &lt; b.seq</code>. However, we <strong>don&rsquo;t know the converse</strong>. That is, if <code>a.seq &lt; b.seq</code>, we cannot say that A caused B to happen.</p>
+<p>It turns out the fix for this is actually quite easy. As long as we have a unique way of identifying each operation, each operation can just send along a list of operations it depends on being delivered first. That way, if we receive a message and we know we&rsquo;ve received all of its causal dependencies, it should be safe to deliver.</p>
+<p>If we receive a message where we <em>haven&rsquo;t</em> received all of its causal dependencies, then we can add it to a queue so that when the message does get delivered, we can apply it afterwards.</p>
+<p>This means that as long as we declare the right causal dependencies, we can actually make certain things that don&rsquo;t seem commutative (like list operations) actually commute.</p>
+<a href="#intuition-behind-crdts"><h3 id="intuition-behind-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Intuition behind CRDTs</h3></a>
+<p>Okay enough about theory, how do we actually go about making a CRDT?</p>
+<p>Let&rsquo;s survey what we have at our disposal so far (our assumptions):</p>
+<ul>
+<li>We can reliably send messages that contain our operation between peers</li>
+<li>We have a total ordering on the messages so we don&rsquo;t get any conflicts</li>
+<li>We have some way of indicating causality</li>
+</ul>
+<p>[diagram of a pile of operations]</p>
+<p>This gives us an ever-growing pile of messages that are deemed &lsquo;safe&rsquo; to apply. Here is probably a good time to make a distinction between the data in the CRDT itself and the view of that data.</p>
+<ul>
+<li>The data itself are the operations that are coming in</li>
+<li>The view is the data structure we compute from it (and what applications end up seeing)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">CRDT</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">data</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="n">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">impl</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="n">CRDT</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// modify self.data to include op
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="k">fn</span> <span class="nf">apply</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">op</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// traverse self.data to produce the data structure
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// we&#39;re actually interested in (a list in this example)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="k">fn</span> <span class="nf">view</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nb">Vec</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>[diagram]</p>
+<p>Specifically, we never<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> delete any operations from the internal data representation. The best we can do is mark them as deleted using a 
+
+<a href="https://en.wikipedia.org/wiki/Tombstone_%28data_store%29" rel="noopener">tombstone</a>. Because a peer could technically reference any past operation as a causal dependency, we need to keep that metadata around.</p>
+<p>Of course, we can&rsquo;t go about willy-nilly trying to model every data structure this way. We can only have CRDTs of data structures which have invariants that <strong>do not depend on knowing the most up to date version of the data structure</strong>. From before, CRDTs are always guaranteed to have a correct state, but they may not have the most up-to-date value. This means that receiving any new operations should never break a CRDTs invariants.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p>An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend $70 on your laptop and another $40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining <strong>global invariants</strong>.</p>
+<a href="#list-crdts-rga-explained"><h3 id="list-crdts-rga-explained"><span class="hanchor" ariaLabel="Anchor"># </span>List CRDTs (RGA Explained)</h3></a>
+<p>This seems to lead us to the biggest problem in the room: list CRDTs.</p>
+<p>When you think of the API for a list, most operations are normally done by indexing. But isn&rsquo;t this a global invariant? Don&rsquo;t we need to know what other operations have been done to the list to figure out what the index of each character is?</p>
+<p>This is not an easy problem to solve. It may also be a contributing reason to why the vast majority of CRDT projects focus on lists or text editing (which is essentially a list of characters). Luckily some smart people have figured it out for us so we can look to what they&rsquo;ve done for inspiration.</p>
+<p>The key insight here is that instead of using relative addressing (e.g. positional indexing), we can use absolute addressing (e.g. using IDs). Imagine an infinitely divisible number line.</p>
+<p>[diagram]</p>
+<p>Every time we insert an element into the list, we need to know the ID of the character we are inserting after. Then, we just place it somewhere between that element and the element following it.</p>
+<p>So instead of saying “insert ‘A’ after the character at position 4” we say “insert ‘A’, with ID <code>5</code>, and insert it after the character with ID <code>4</code>”. This matches our intuition for how text editing happens anyways. When we imagine inserting text, we are inserting it <em>after</em> something. It wouldn&rsquo;t make sense to insert the character &ldquo;a&rdquo; of &ldquo;cat&rdquo; before we insert the character &ldquo;c&rdquo;.</p>
+<p>We can imagine saying that &ldquo;c&rdquo; <em>caused</em> &ldquo;a&rdquo; which caused &ldquo;t&rdquo;. Conveniently, we can encode this causality by making the causal parent of each item the character it was inserted after. Remember causal dependencies? Yeah those.</p>
+<p>[rga diagram]</p>
+<p>This forms a sort of <em>causal tree</em> and this is effectively how RGA, a list CRDT, structures its data internally. Let&rsquo;s modify our <code>Op</code> to match that:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">type</span> <span class="nc">OpID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">AuthorID</span><span class="p">,</span><span class="w"> </span><span class="n">SequenceNumber</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">id</span>: <span class="nc">OpID</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">origin</span>: <span class="nc">OpID</span><span class="p">,</span><span class="w"> </span><span class="c1">// causal dependency
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="n">author</span>: <span class="nc">AuthorID</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">seq</span>: <span class="nc">SequenceNumber</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">content</span>: <span class="nb">Option</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">is_deleted</span>: <span class="kt">bool</span> <span class="c1">// tombstone as we can&#39;t actually remove items
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>When inserting a character we</p>
+<ol>
+<li>Find the origin (causal dependency). If it doesn&rsquo;t exist, we queue it up for later.</li>
+<li>Starting at this node, all of its siblings were inserted concurrently. We look through the list of siblings until we reach a node that we are greater than as defined by the happens-before comparison we defined<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Recall that we sort operations first by their sequence number then tie break by the author ID.</li>
+</ol>
+<p>[diagram]</p>
+<p>To get the actual list this CRDT represents, we perform a depth-first traversal over the tree and only keep nodes that are not marked as deleted.</p>
+<a href="#adding-byzantine-fault-tolerance-for-free-almost"><h2 id="adding-byzantine-fault-tolerance-for-free-almost"><span class="hanchor" ariaLabel="Anchor"># </span>Adding Byzantine Fault Tolerance for free (almost)</h2></a>
+<p>Up to this point, the CRDTs we&rsquo;ve covered all work in trusted scenarios. These are scenarios in which you <em>know</em> all of the people participating and you trust them to not screw up the system for everyone else. For example, in a collaborative text document, you may limit collaborators to immediate colleagues who you trust to run the CRDT algorithm correctly and not attempt any funny business.</p>
+<p>However, most of the interactions we have are not in trusted scenarios. Luckily, we have servers to help mediate these interactions, dictate what is and what isn&rsquo;t possible. Peer-to-peer systems, on the other hand, cannot rely on nodes always behaving the way the designers of the system intended. Here, we would like to be able to guarantee that the system continues functioning correctly even in the face of some nodes crashing, failing, and even acting maliciously.</p>
+<p>The CRDTs we have been exploring so far do not work in these untrusted scenarios. That is, any one node can do something bad and cause state to diverge permanently. Not good.</p>
+<p>[diagram of bft node]</p>
+<p>To be more concrete, here are some examples of what a malicious actor can do:</p>
+<ul>
+<li>Send malformed updates</li>
+<li>Not forward information from honest nodes (an eclipse attack)</li>
+<li>Send invalid updates
+<ul>
+<li>Messages that have duplicate IDs</li>
+<li>Send incorrect sequence numbers (an equivocation attack)</li>
+<li>Claim to be another user</li>
+</ul>
+</li>
+</ul>
+<p>Ideally, we want to adapt our existing CRDT algorithms to be resistant to these attacks while still allowing honest nodes to continue business as normal. This would allow us to use CRDTs in untrusted environments which opens up the door to lots of cool applications like games, social, and more.</p>
+<p>To borrow a term from distributed systems, we want to make our CRDTs <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine fault-tolerant</a>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> The &lsquo;Byzantine&rsquo; part of the name comes from the Byzantine Generals Problem, a situation where, in order to avoid catastrophic failure of the system, the system&rsquo;s actors must agree on a concerted strategy, but some of these actors are unreliable and potentially malicious.</p>
+<p>[diagram byzantine generals problem]</p>
+<p>Notation wise, we denote the total number of nodes in the system $n$. We denote the number of faulty/Byzantine nodes $f$. Most consensus algorithms that you see (probably in the realm of crypto) claim a tolerance of up to $f &lt; \frac n 3$, which means they can tolerate up to <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a>. However, CRDTs require an even weaker bound. Remember that we are not consensus! All we really need to do is make sure that Byzantine actors can&rsquo;t interrupt honest nodes from functioning properly.</p>
+<p>In fact, in literature, this is called <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a>. Dolev-Strong, back in 1983, showed that it was possible to tolerate up to $f &lt; n$ faulty nodes! This means that, as long as there are honest nodes and they are connected to each other, they can still function properly.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>Kleppmann detailed an approach in his paper <em>
+
+<a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Making CRDTs Byzantine Fault Tolerant</a></em> that works without changing the internals of most CRDTs; it can be fully retrofit on top of it. We can create a &lsquo;BFT adapter&rsquo; layer between the transport and application layer that is responsible for filtering out any Byzantine operations.</p>
+<p>[diagram of the adapter layer and CRDT layer]</p>
+<p>This approach has two major components we need to grasp:</p>
+<ul>
+<li>How we ensure Byzantine nodes don&rsquo;t tamper with messages and pretend to be someone else (hashes + signed message digests)</li>
+<li>How we ensure messages don&rsquo;t get blocked from reaching honest nodes (eager reliable causal broadcast with retries)</li>
+</ul>
+<a href="#hashes-as-ids-and-signed-message-digests"><h3 id="hashes-as-ids-and-signed-message-digests"><span class="hanchor" ariaLabel="Anchor"># </span>Hashes as IDs and Signed Message Digests</h3></a>
+<p>So here&rsquo;s a little trick we can do. Our only requirement for operation IDs is that they uniquely identify a node.</p>
+<p>We can generate this ID by SHA256 hashing parts of the operation:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// Set the ID to the hash of its contents
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">set_id</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="bp">self</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">hash_to_id</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// SHA256 computation over an operation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">hash_to_id</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nc">OpID</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">let</span><span class="w"> </span><span class="n">fmt_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="s">&#34;{},{},{},{},{}&#34;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="bp">self</span><span class="p">.</span><span class="n">origin</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">author</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">seq</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">is_deleted</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">content</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sha256</span><span class="p">(</span><span class="n">fmt_str</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then, to check if an operation is valid, we can just hash the contents again and see if it matches the ID. If a Byzantine actor tries to change any of these properties while trying to pass it off as a different ID, there will be a hash mismatch.</p>
+<p>However, how can we be sure that a Byzantine actor hasn&rsquo;t just pretended to be someone else? After all, they could just create an operation, set the author field to someone else, then hash the content so that there is no mismatch between hash and ID.</p>
+<p>Luckily, we can use <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public key cryptography</a> to help us out here. Each node has a private key they keep to themselves. Earlier, we also mentioned that each node should have a unique identifier. We can actually use the public key of each node as its <code>AuthorID</code>.</p>
+<p>Then, whenever we send a message to another peer, we hash <code>op.id</code> to create a digest, and then sign it with our private key. This way, we can verify that the person who signed the message is the actual author.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// Create a digest to be signed
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">digest</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">[</span><span class="kt">u8</span><span class="p">;</span><span class="w"> </span><span class="mi">32</span><span class="p">]</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sha256</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Sign this digest with the given keypair
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">sign_digest</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">keypair</span>: <span class="kp">&amp;</span><span class="nc">Ed25519KeyPair</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="bp">self</span><span class="p">.</span><span class="n">signed_digest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sign</span><span class="p">(</span><span class="n">keypair</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">digest</span><span class="p">()).</span><span class="n">sig</span><span class="p">.</span><span class="n">to_bytes</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Ensure digest was actually signed by the author it claims to be signed by
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">is_valid_digest</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">op</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">let</span><span class="w"> </span><span class="n">digest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Ed25519Signature</span>::<span class="n">from_bytes</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">signed_digest</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">let</span><span class="w"> </span><span class="n">pubkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Ed25519PublicKey</span>::<span class="n">from_bytes</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">author</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">match</span><span class="w"> </span><span class="p">(</span><span class="n">digest</span><span class="p">,</span><span class="w"> </span><span class="n">pubkey</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">(</span><span class="nb">Ok</span><span class="p">(</span><span class="n">digest</span><span class="p">),</span><span class="w"> </span><span class="nb">Ok</span><span class="p">(</span><span class="n">pubkey</span><span class="p">))</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">pubkey</span><span class="p">.</span><span class="n">verify</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">.</span><span class="n">digest</span><span class="p">(),</span><span class="w"> </span><span class="o">&amp;</span><span class="n">digest</span><span class="p">).</span><span class="n">is_ok</span><span class="p">(),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">(</span><span class="n">_</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>[diagram showing Op -&gt; Hash -&gt; Digest]</p>
+<p>Ok great! We now have a unique way to identify both peers and operations. But there is one thing here that is a little pesky to deal with: mutability.</p>
+<p>Here I really want to emphasize that the inner representation of CRDT is usually just a collection of operations. When we create references to operations in this internal representation (e.g. we need to declare a causal dependency), we expect that the <code>OpID</code> of an operation stays <em>static</em> throughout its lifetime. However, because we now set <code>OpID</code> to be the hash of the content, updating a node would change its <code>OpID</code> all the time!</p>
+<p>Does this mean we have to give up hashing the message content for fault tolerance? Fortunately not! There is one tiny hack that allows us to still use this hashing approach.</p>
+<p>Instead of making a copy of the original operation and just changing the content (which would cause the operation to be considered invalid by our hash check!), we can produce an <em>entirely new</em> operation that has the original ID as a causal dependency. These &lsquo;modification&rsquo; operations don&rsquo;t actually get included in the internal representation of the CRDT, rather they modify it directly.</p>
+<p>We can look to our list CRDT for an example. This <code>delete</code> function produces an entirely valid operation. This also makes sense from a causality perspective, we need to have delivered the original before trying to delete it!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="sd">/// Mark a node as deleted
+</span></span></span><span class="line"><span class="cl"><span class="sd"></span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">delete</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">id</span>: <span class="nc">OpID</span><span class="p">,</span><span class="w"> </span><span class="n">keypair</span>: <span class="kp">&amp;</span><span class="nc">Ed25519Keypair</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Op</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">id</span>: <span class="nc">PLACEHOLDER_ID</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">origin</span>: <span class="nc">id</span><span class="p">,</span><span class="w"> </span><span class="c1">// the actual operation we are deleting
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">		</span><span class="n">author</span>: <span class="nc">self</span><span class="p">.</span><span class="n">our_id</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">seq</span>: <span class="nc">self</span><span class="p">.</span><span class="n">our_seq</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">is_deleted</span>: <span class="nc">true</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">content</span>: <span class="nb">None</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">signed_digest</span>: <span class="nc">PLACEHOLDER_DIGEST</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">op</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">op</span><span class="p">.</span><span class="n">hash_to_id</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">op</span><span class="p">.</span><span class="n">signed_digest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">op</span><span class="p">.</span><span class="n">sign_digest</span><span class="p">(</span><span class="o">&amp;</span><span class="n">keypair</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="bp">self</span><span class="p">.</span><span class="n">apply</span><span class="p">(</span><span class="n">op</span><span class="p">.</span><span class="n">clone</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">op</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>When we apply it, we treat these modification events differently from insertion events. We look for the origin and just update its deleted field.</p>
+<p>With that small problem solved, we know that our operations are now tamper resistant!</p>
+<a href="#eager-reliable-causal-broadcast-and-retries"><h3 id="eager-reliable-causal-broadcast-and-retries"><span class="hanchor" ariaLabel="Anchor"># </span>Eager Reliable Causal Broadcast and Retries</h3></a>
+<p>Now, we just need to make sure that there is a way to get messages between honest nodes such that Byzantine faulty nodes can&rsquo;t block it.</p>
+<p>[diagram of byzantine faulty node blocking communication]</p>
+<p>The easiest (and probably most naive) way to do this is through eager reliable broadcast:</p>
+<ol>
+<li>Each time a node receives a message with an <code>OpID</code> it has never seen before, it re-broadcasts that message to all its peers it knows about</li>
+<li>If we have been missing a causal dependency for a while, occasionally ask our peers if they have it</li>
+</ol>
+<p>This makes sure that as long there is a connected subgraph of honest nodes, they can all still communicate.</p>
+<p>[connected components]</p>
+<p>However, there are a lot of potential optimizations to make here. It may be reliable but we broadcast $O(n^2)$ messages for each actual operation. This is really expensive and may flood the network!</p>
+<p>Thankfully, we can take inspiration from <code>git</code> to figure out how to do this more efficiently. Kleppmann, again, mentions this approach in <em>Making CRDTs Byzantine Fault Tolerant</em>.</p>
+<blockquote>
+<p>Using cryptographic hashes of updates has several appealing properties. One is that if two nodes p and q exchange the hashes of their current heads, and find them to be identical, then they can be sure that the set of updates they have observed is also identical, because the hashes of the heads indirectly cover all updates. If the heads of p and q are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</p>
+</blockquote>
+<p>This project does not include this more advanced hash graph reconciliation but it is a direction for future work.</p>
+<a href="#a-json-crdt"><h2 id="a-json-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>A JSON CRDT</h2></a>
+<p>Ok, we&rsquo;ve seen now how we can create a Byzantine Fault Tolerant list CRDT. How can we make a JSON CRDT out of this?</p>
+<p>Normally with JSON CRDTs, we just have a bunch of nested CRDTs.</p>
+<ul>
+<li>Values are LWW registers</li>
+<li>Lists are RGA lists</li>
+<li>Maps are lists of key-value pairs</li>
+</ul>
+<p>Each nested CRDT also keeps track of its path (e.g. <code>inventory[0].properties.damage</code>) so that when CRDTs produce an event, this information is also included. This ensures that peers know which CRDT to actually deliver a message to.</p>
+<p>[diagram of nested CRDTs]</p>
+<p>However, we have to be careful about how we store this path. We can&rsquo;t naively just use the index into the list as we saw earlier how this is unstable. A small workaround here is having the <code>OpID</code> be the index.</p>
+<p>There is one last challenge to account for: JSON has no schema; data types can change! For example,</p>
+<ul>
+<li>A sets <code>&quot;a&quot;: [&quot;b&quot;]</code></li>
+<li>B sets `&ldquo;a&rdquo;: {&ldquo;c&rdquo;: &ldquo;d&rdquo;}``</li>
+</ul>
+<p>How do we resolve this? The way Automerge and Yjs resolve this is by essentially using a multi-value register: they keep both values and punts the responsibility to the application choose the right answer.</p>
+<p>But wasn&rsquo;t the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this.</p>
+<a href="#putting-it-all-together-into-a-crate"><h3 id="putting-it-all-together-into-a-crate"><span class="hanchor" ariaLabel="Anchor"># </span>Putting it all together into a crate</h3></a>
+<p>What if we took advantage of the type-safety and metaprogramming abilities of a language like Rust to automatically derive these strict-schema BFT CRDTs from programmer-defined data structures?</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="cp">#[add_crdt_fields]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cp">#[derive(Clone, CRDTNode)]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Player</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">inventory</span>: <span class="nc">ListCRDT</span><span class="o">&lt;</span><span class="n">Item</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">x</span>: <span class="nc">LWWRegisterCRDT</span><span class="o">&lt;</span><span class="kt">f64</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">y</span>: <span class="nc">LWWRegisterCRDT</span><span class="o">&lt;</span><span class="kt">f64</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cp">#[add_crdt_fields]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cp">#[derive(Clone, CRDTNode)]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">struct</span> <span class="nc">Item</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">name</span>: <span class="nc">LWWRegisterCRDT</span><span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">soulbound</span>: <span class="nc">LWWRegisterCRDT</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>After 5000 words of writing, I present to you the <code>bft-json-crdt</code> Rust crate. By using the provided CRDT types, programmers can instantly add CRDT functionality to their project.</p>
+<p>There is a clear boundary between BFT and non-BFT operations as distinguished by data types to make sure that you don&rsquo;t accidentally apply an operation to the wrong place.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// initialize a new CRDT with a new keypair
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span><span class="w"> </span><span class="n">keypair</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_keypair</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BaseCRDT</span>::<span class="o">&lt;</span><span class="n">Player</span><span class="o">&gt;</span>::<span class="n">new</span><span class="p">(</span><span class="o">&amp;</span><span class="n">keypair</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">_add_money</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base</span><span class="p">.</span><span class="n">doc</span><span class="p">.</span><span class="n">balance</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">5000.0</span><span class="p">).</span><span class="n">sign</span><span class="p">(</span><span class="o">&amp;</span><span class="n">keypair</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">_initial_balance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">doc</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">balance</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mf">3000.0</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">sign</span><span class="p">(</span><span class="o">&amp;</span><span class="n">keypair</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">sword</span>: <span class="nc">Value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">json</span><span class="o">!</span><span class="p">({</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="s">&#34;name&#34;</span>: <span class="s">&#34;Sword&#34;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="s">&#34;soulbound&#34;</span>: <span class="nc">true</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}).</span><span class="n">into</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">_new_inventory_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">doc</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">inventory</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">insert_idx</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">sword</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">.</span><span class="n">sign_with_dependencies</span><span class="p">(</span><span class="o">&amp;</span><span class="n">kp1</span><span class="p">,</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="o">&amp;</span><span class="n">_initial_balance</span><span class="p">]);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// do something here to send _new_inventory_item to our peers
+</span></span></span><span class="line"><span class="cl"><span class="c1">// and on a remote peer...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">base</span><span class="p">.</span><span class="n">apply</span><span class="p">(</span><span class="n">_new_inventory_item</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Finally, I want to leave a word of warning. This is <strong>not a production ready library by any means</strong>. Although I do think this is a very solid proof of concept to demonstrate the potential of BFT CRDTs, it was still first and foremost for educational purposes.</p>
+<p>I do not consider myself to be proficient at Rust so there have lots of bad code smells/mistakes sprinkled throughout (please do 
+
+<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">PR</a> if you have any fixes/suggestions!)</p>
+<a href="#future-directions-for-crdts"><h2 id="future-directions-for-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Future directions for CRDTs</h2></a>
+<p>The field of CRDTs is still quite young. I really think there is a lot of promising work being done in exploring how CRDTs can be used to enable collaboration on the web.</p>
+<p>James Addison has been working on creating a 
+
+<a href="https://twitter.com/JungleSilicon/status/1592022670044205058" rel="noopener">real-time 3D engine using CRDTs</a>. Projects like 
+
+<a href="http://bloom-lang.net/" rel="noopener">BLOOM</a> work on trying to figure out at compile time what parts of program state require coordination and what parts don&rsquo;t.</p>
+<p>I&rsquo;d love to see more exploration of CRDTs applied to games and other real-time things. I think there&rsquo;s a lot of really cool work to be done with interpolation <em>between</em> operations. Think 
+
+<a href="https://www.ggpo.net/" rel="noopener">GGPO</a> or 
+
+<a href="https://github.com/steveruizok/perfect-cursors/" rel="noopener">perfect-cursors</a> but for general CRDTs.</p>
+<p>I hope that this blog post is a jumping point for new people interested in the space to really get their hands dirty and see what they can do with this technology.</p>
+<p>Again, checkout the codebase if you are interested in the internals and feel free to try to tackle anything under the &lsquo;Further Work&rsquo; heading in the 
+
+<a href="https://github.com/jackyzha0/bft-json-crdt/tree/main" rel="noopener">README</a>!</p>
+<a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
+<p>If you are still reading by this point, I want to give you a huge thank you.</p>
+<p>This was probably the most technically difficult project I&rsquo;ve ever attempted, let alone finished. I felt like my conviction in my own abilities was tested multiple times and I can say I came out of the other side a better engineer. Thank you to the people who supported me as I struggled and stumbled around while trying to figure this project out.</p>
+<p>There are a few people I&rsquo;d like to thank individually. Thank you to 
+
+<a href="https://www.ansonyu.me/" rel="noopener">Anson</a> for listening to my long and incoherent rambles and celebrating my small wins. Thank you to 
+
+<a href="https://nibnalin.me/" rel="noopener">Nalin Bhardwaj</a> for helping me with my cryptography questions and 
+
+<a href="https://martin.kleppmann.com/" rel="noopener">Martin Kleppmann</a> for his teaching materials and lectures which taught me a significant portion of what I&rsquo;ve learned about distributed systems and CRDTs.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>There are ways you can mitigate this by &lsquo;predicting&rsquo; a successful outcome. However, if the actual write/read fails, we may need to rollback what the user sees which is not ideal from a user experience perspective&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>NB: there is actually two main subtypes of CRDTs. <a href="/thoughts/CRDT#operation-based" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CmRDTs</a> or commutative replicated data types are based off of exchanging messages which contain single operations. <a href="/thoughts/CRDT#state-based" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CvRDTs</a> or convergent replicated data types send their whole state. They are also sometimes called operation-based and state-based CRDTs respectively. The rest of this blog post assumes CRDT to mean operation-based CRDTs.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>The <a href="/thoughts/CALM-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/CALM-Theorem">CALM Theorem</a> states that anything that is logically monotonic (read: append-only) can be made into a CRDT.  Non-monotonic things may &lsquo;retract&rsquo; previous statements.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Garbage collection + rebalancing technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this. &ldquo;So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction.&rdquo; 
+
+<a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>This is formulated in a more formal manner in  <a href="/thoughts/I-Confluence" rel="noopener" class="internal-link" data-src="/thoughts/I-Confluence">I-Confluence</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>NB: performance enthusiasts will be quick to point out how to make this go faster. This is a terribly unbalanced tree. On average, it takes $O(n)$ to find the origin and another $O(n)$ to insert into the tree. There are clear optimizations to be made here. 
+
+<a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> uses a doubly-linked list for a faster insert. They also use a cursor to track the last ~5-10 visited positions. It makes the assumption that editing patterns are <em>not</em> random (which is true for most applications). 
+
+<a href="https://github.com/josephg/diamond-types" rel="noopener">Diamond Types</a> and the new 
+
+<a href="https://github.com/automerge/automerge-rs" rel="noopener">Automerge</a> use a range-tree to achieve $O(\log n)$ find and $O(\log n)$ insert&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>For those coming from a more traditional distributed systems context, I will clarify that BFT means something different from a consensus context. Traditionally, this means getting some $n-f$ nodes to agree on a particular value. However, because CRDTs focus more on collaboration than consensus, we just want to prevent Byzantine actors from disrupting the <em>functioning</em> of the system. Byzantine actors can still send a bunch of &lsquo;valid&rsquo; updates that may be unwanted. Imagine you sent a Google Docs link to a group of people and one of them is mucking around and inserting a bunch of images and removing information from the document. These would all be considered &lsquo;valid&rsquo; operations in the sense that a &lsquo;correctly&rsquo; functioning node could have done the same thing.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>See notes on the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM Impossibility Result</a>. We use a <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> assumption to get around this result.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="a BFT JSON CRDT" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>
