@@ -121,13 +121,13 @@ More familiar forms of monism:
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8a133944afc895f2f889aadb67a028a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9e90e8f1508a729bff4581158c7f67b3.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.510ed37b74808e6e7c6fe229523e56ce.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a20dfdbea618657c9eb7e0f0117f4c4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
