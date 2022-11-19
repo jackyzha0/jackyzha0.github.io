@@ -126,7 +126,7 @@ CRDTs are a family of data structures that are designed to be replicated across 
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a20dfdbea618657c9eb7e0f0117f4c4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.b0adc9244e36ca61fa567aa3e658bea2.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -338,9 +338,6 @@ Nov 16, 2022
 
 
 
-
-  
-  
 
   
   
@@ -3129,7 +3126,7 @@ Nov 16, 2022
 
 <a href="https://en.wikipedia.org/wiki/Tombstone_%28data_store%29" rel="noopener">tombstone</a>. Because a peer could technically reference any past operation as a causal dependency, we need to keep that metadata around.</p>
 <p>Of course, we can&rsquo;t go about willy-nilly trying to model every data structure this way. We can only have CRDTs of data structures which have invariants that <strong>do not depend on knowing the most up to date version of the data structure</strong>. From before, CRDTs are always guaranteed to have a correct state, but they may not have the most up-to-date value. This means that receiving any new operations should never break a CRDTs invariants.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
-<p>An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend $70 on your laptop and another $40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining <strong>global invariants</strong>.</p>
+<p>An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend 70 on your laptop and another 40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining <strong>global invariants</strong>.</p>
 <a href="#list-crdts-rga-explained"><h3 id="list-crdts-rga-explained"><span class="hanchor" ariaLabel="Anchor"># </span>List CRDTs (RGA Explained)</h3></a>
 <p>This seems to lead us to the biggest problem in the room: list CRDTs.</p>
 <p>When you think of the API for a list, most operations are normally done by indexing. But isn&rsquo;t this a global invariant? Don&rsquo;t we need to know what other operations have been done to the list to figure out what the index of each character is?</p>
@@ -3367,7 +3364,7 @@ Nov 16, 2022
 <p>There is one last challenge to account for: JSON has no schema; data types can change! For example,</p>
 <ul>
 <li>A sets <code>&quot;a&quot;: [&quot;b&quot;]</code></li>
-<li>B sets `&ldquo;a&rdquo;: {&ldquo;c&rdquo;: &ldquo;d&rdquo;}``</li>
+<li>B sets <code>&quot;a&quot;: {&quot;c&quot;: &quot;d&quot;}</code></li>
 </ul>
 <p>How do we resolve this? The way Automerge and Yjs resolve this is by essentially using a multi-value register: they keep both values and punts the responsibility to the application choose the right answer.</p>
 <p>But wasn&rsquo;t the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this.</p>
