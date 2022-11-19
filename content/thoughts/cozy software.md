@@ -37,11 +37,24 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 	- https://nette.io/
 	- https://www.kosmik.app/
 	- https://sprout.place/
+- https://twitter.com/azlenelza/status/1418749070336684034
+- https://twitter.com/raunofreiberg/status/1450479522609090562
 
 ## Handmade Web
 From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)
 
 > I evoke the term 'handmade web' to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or [[thoughts/identity|identity]].
+
+## Folk Software
+[Source](https://maggieappleton.com/folk-interfaces)
+
+> People reappropriating existing software to solve their own unique problems
+
+Folksonomies are informal taxonomies developed by users on social sharing platforms. Usually in the form of tags on sites like Flickr, Tumblr, or Instagram.
+
+Folk creations fill a gap. They solve problems for individuals and small communities in a way that that centralised, top-down, industrial creations never can. They are informal, distributed practices that emerge from real world contexts.
+
+Related to [[thoughts/Tools for Conviviality]]
 
 ## Fun Sites
 - [[posts/casual magic|fun experiments with sunsets]]

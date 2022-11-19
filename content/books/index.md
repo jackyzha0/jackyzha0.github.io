@@ -18,11 +18,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Creation: Life and How to Make it** by Steve Grand
 * **The Utopia of Rules** by David Graeber
 * **Where Is My Flying Car?** by J. Storrs Hall
-* **Games: Agency as Art** by C. Thi Nguyen
 * **The Dream Machine** by M. Mitchell Waldrop
 
 ## Current
 * **Seeing Like A State** by James C. Scott
+* **Games: Agency as Art** by C. Thi Nguyen
 
 ## Past
 2022

@@ -1,5 +1,5 @@
 ---
-title: "21 Learnings from 21 Years"
+title: "22 Learnings from 22 Years"
 date: 2022-04-16
 tags:
 - seed
@@ -13,8 +13,7 @@ draft: true
 	1. you can choose joy
 		1. my phone lockscreen has been this
 		2. nothing stops! the nihilist probably doesn't build any sandcastles. They leave the beach and drown themselves, or sit grumpily in the car. But I want to have fun _now_ and _play_.
-	2. you can choose people
-	3. you can choose how you spend you hours because how you spend your hours is how you spend your life
+	2. you can choose how you spend you hours because how you spend your hours is how you spend your life
 3. a yes means nothing if you never say no
 4. unabashed excitement is Good (tm)
 5. learning is learning
@@ -24,4 +23,8 @@ draft: true
 8. Don’t surround yourself with people ‘smarter’ than you. **Surround yourself with people who are free in ways you are not**
 9. What I’ve come to learn over the past year is that there are two types of people: people who make the right decision and people who make the decision right.
 10. Take compliments in stride: “aw, thank you that means a lot” instead of “nahhh”
-11. 
+11. “Genius is no more than childhood recaptured at will.” *(Charles Baudelaire)*
+12. There is a very fine line between doing something too easy, too difficult, just right (see: [[thoughts/game design]])
+13. software abstractions that are difficult to learn are transformative because they make you think about it in an entirely new mental model
+	1. e.g. rust or vim
+14. 
