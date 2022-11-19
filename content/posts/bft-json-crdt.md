@@ -185,7 +185,7 @@ Of course, we can't go about willy-nilly trying to model every data structure th
 
 [^5]: This is formulated in a more formal manner in  [[thoughts/I-Confluence]]
 
-An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend $70 on your laptop and another $40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining **global invariants**.
+An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend 70 on your laptop and another 40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining **global invariants**.
 
 ### List CRDTs (RGA Explained)
 This seems to lead us to the biggest problem in the room: list CRDTs.
@@ -394,7 +394,7 @@ Additionally, in addition to the `origin` field, we added a `dependencies` field
 There is one last challenge to account for: JSON has no schema; data types can change! For example,
 
 - A sets `"a": ["b"]`
-- B sets `"a": {"c": "d"}``
+- B sets `"a": {"c": "d"}`
 
 How do we resolve this? The way Automerge and Yjs resolve this is by essentially using a multi-value register: they keep both values and punts the responsibility to the application choose the right answer.
 
