@@ -66,8 +66,8 @@ CRDT stands for conflict-free/commutative/convergent replicated data type. Funni
 - Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
 	- Because of the eventual nature of message delivery, there is no guarantee that the state across all the actors are consistent at any given moment
 	- **If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect**
-- Each operation contains the necessary metadata to figure out a deterministic way to order any operations that may happen concurrently
-	- I'll note here that the term 'conflict-free' is a little misleading. **It's not that conflict doesn't ever occur, but rather that CRDTs are always able to determine the ordering up front** (without user intervention)
+- Each operation contains the necessary metadata to figure out a deterministic way to merge any operations that may happen concurrently
+	- I'll note here that the term 'conflict-free' is a little misleading. **It's not that conflict doesn't ever occur, but rather that CRDTs are always able to determine how to resolve the conflict up front** (without user intervention)
 - CRDTs always try to preserve user intent and try not to lose data whenever possible
 	- If two people insert a character into a string at the same spot, it will try to keep both edits
 	- Note that these is inherently *different* from consensus methods. Collaboration involves keeping *all* edits and merging them. Consensus involves picking one of several proposed values and agreeing on it
@@ -96,9 +96,7 @@ This timestamp is just a simple counter. For the rest of the blog post, we refer
 - Everytime we broadcast a message to our peers, we attach this counter
 - Everytime we receive a message, we set our timer to `max(self.seq, incoming.seq) + 1`
 
-This timestamp gives us a very powerful relationship. If `a.seq >= b.seq` then $a$ cannot have happened before $b$. Note that unfortunately we cannot make the stronger claim that $a$ must have happened after $b$. It's a good thought exercise to see if you can figure out why :)
-
-However, Lamport timestamps only give us a *partial ordering*, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with `seq = 1` even though they are different events.
+If `a.seq > b.seq` then event $a$ must have happened after event $b$. However, if `a.seq == b.seq`, we cannot be sure which event came first. This means that Lamport timestamps only give us a partial ordering, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with `seq = 1` even though they are different events.
 
 ![[thoughts/images/duplicate-seq.jpg]]
 
