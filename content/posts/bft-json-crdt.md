@@ -1,41 +1,41 @@
 ---
 title: "Building a BFT JSON CRDT"
 date: 2022-11-16
+enableToc: true
 tags:
 - fruit
 - technical
 - Rhizome
-enableToc: true
 ---
+
+![[thoughts/images/bft-crdt-cover.jpg]]
 
 CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you've ever had to deal with a nasty `git` merge conflict, you know how painful these can be to resolve.
 
-CRDTs mathematically guarantee that an application can *safely* update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties which means they work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).
+CRDTs mathematically guarantee that an application can *safely* update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).
 
 Over the past few years, really cool open source CRDT libraries like [Automerge](https://github.com/automerge) and [Yjs](https://github.com/yjs/yjs) have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.
 
-What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels default-multiplayer, more cozy, and alive with life.
+What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels more default-multiplayer, cozy, and alive with life.
 
-I learn best through building so I set out to write my own CRDT from scratch to really grok what was going on under the hood. A lot of the literature I spent a good few months scratching my head over took a really long time for me to understand and required me to learn a non-trivial amount about [[thoughts/Order theory|order theory]] and [[thoughts/distributed systems|distributed systems]].
+I learn best through building so I set out to write [my own CRDT library from scratch](https://github.com/jackyzha0/bft-json-crdt) to grok what was going on under the hood. When I was first learning about it, I spent a good few months scratching my head trying to read the papers. A lot of the literature took a long time for me to understand and required me to learn a non-trivial amount about [[thoughts/Order theory|order theory]] and [[thoughts/distributed systems|distributed systems]].
 
-I write this blog post mostly as a note to my past self, distilling a lot of what I've learned since into a blog post I wish I had read before going in.
+I write this blog post mostly as a note to my past self, distilling a lot of what I've learned since into a blog post I wish I had read before going in. I hope you find this useful too.
 
-See the [accompanying Github repository](https://github.com/jackyzha0/bft-json-crdt) 
+As a brief warning, the target audience of this blog post are people who have worked with a bit distributed systems in the past and is curious about the realm of CRDTs. I try my best to explain any relevant terminology when it comes up but familiarity with the topics helps a lot!
 
-*This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most.*
+*This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most!*
 
 ## How CRDTs differ from traditional databases
-Before we really dive into CRDT internals, we first need to understand how they are different from databases. When you normally think of shared state, you normally think of databases.
+Before we really dive into CRDT internals, we first need to understand how they are different from databases. When I normally think of shared state, I think of databases. However, the guarantees that databases provide are *really* different than the ones CRDTs provide.
 
-However, the guarantees that databases provide are *really* different than the ones CRDTs provide.
+Traditional databases focus on a property called [[thoughts/consistency|linearizability]], which guarantees that all operations behave as if executed on a *single copy of the data*. We call this canonical view the **primary site**. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.
 
-Traditional databases focus on a property called [[thoughts/consistency|linearizability]], which guarantees that all operations behave as if executed on a *single copy of the data*. We call this canonical view the **primary site**. Every read in a linearizable system, no matter what node you read from, gives you an up to date value.
-
-[diagram showing linearizability]
+![[thoughts/images/linearizability.jpg]]
 
 This is great for allowing developers to reason about distributed applications more easily (you just treat your distributed database like a single database). There are no conflicts by definition because there is only one authoritative view on what the right state is.
 
-However it isn't without downsides either. Achieving this property adds a lot of overhead because both writes *and reads* need to coordinate across all peers to ensure consistency. This creates an availability problem as if you can't reach a majority of your nodes, you can't process any operations.[^1]
+However it isn't without downsides either. Achieving this property adds a lot of overhead because both writes *and reads* need to coordinate (the dashed lines in the diagram above) across all database nodes to ensure consistency. This creates an availability problem: if you can't reach a majority of your nodes, you can't process any operations.[^1]
 
 [^1]: There are ways you can mitigate this by 'predicting' a successful outcome. However, if the actual write/read fails, we may need to rollback what the user sees which is not ideal from a user experience perspective
 
@@ -43,12 +43,10 @@ CRDTs kind of throw all of that out the window and embrace the eventual nature o
 
 In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.
 
-We allow peers to actually have different states as long as they *eventually* converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for **strong eventual consistency**:
+This means we allow peers to actually have different states as long as they *eventually* converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for a property called **strong eventual consistency**:
 
 - All updates will *eventually* reach every node
 - Every node that has received the same updates will have the same state
-
-[diagram showing strong eventual consistency]
 
 ### When should we use strong eventual consistency over linearizability?
 It turns out that this is good enough most of the time. [Conventional wisdom](https://databeta.wordpress.com/2010/10/28/the-calm-conjecture-reasoning-about-consistency/) in the database world would agree that perfect data consistency is way too expensive in terms of both latency and bandwidth if changes happen frequently. Using eventually consistent approaches generally work better as temporary inconsistencies work out in most cases.
@@ -58,7 +56,7 @@ It turns out that this is good enough most of the time. [Conventional wisdom](ht
 > from *[Eventual Consistency Today: Limitations, Extensions, and Beyond](https://queue.acm.org/detail.cfm?id=2462076)*
 
 ## What actually is a CRDT
-Ok so after about 1000 words, you're probably asking "wtf is a CRDT??". Maybe we should do that now.
+Ok so after about 1000 words, you're probably asking "wtf is a CRDT??". Maybe we should define that now.
 
 CRDT stands for conflict-free/commutative/convergent replicated data type. Funnily enough, there is no strong consensus on what the C actually stands for[^2]. Regardless of the name, the tldr; is the same:
 
@@ -66,7 +64,7 @@ CRDT stands for conflict-free/commutative/convergent replicated data type. Funni
 
 - You can write and read from your local copy of the data without needing to coordinate with other peers
 - Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
-	- Because of the eventual nature of message delivery, there is no guarantee the state being exactly the same across actors at any given moment
+	- Because of the eventual nature of message delivery, there is no guarantee that the state across all the actors are consistent at any given moment
 	- **If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect**
 - Each operation contains the necessary metadata to figure out a deterministic way to order any operations that may happen concurrently
 	- I'll note here that the term 'conflict-free' is a little misleading. **It's not that conflict doesn't ever occur, but rather that CRDTs are always able to determine the ordering up front** (without user intervention)
@@ -74,16 +72,16 @@ CRDT stands for conflict-free/commutative/convergent replicated data type. Funni
 	- If two people insert a character into a string at the same spot, it will try to keep both edits
 	- Note that these is inherently *different* from consensus methods. Collaboration involves keeping *all* edits and merging them. Consensus involves picking one of several proposed values and agreeing on it
 
-Again, CRDTs are a *family* of data structures. There is no one single CRDT. You can make CRDTs that produce single values (registers), lists, maps, graphs, JSON, and many more I haven't listed here. However, a fundamental limitation here is that there are certain types of data structures (like sets) that *cannot* be made into CRDTs[^3].
+Again, CRDTs are a *family* of data structures. There is no one single CRDT. You can make CRDTs that produce single values (registers), lists, maps, graphs, JSON, and many more I haven't listed here. However, they can't represent everything. A fundamental limitation here is that there are certain types of data structures (like sets) that *cannot* be made into CRDTs[^3].
 
 [^3]: The [[thoughts/CALM Theorem|CALM Theorem]] states that anything that is logically monotonic (read: append-only) can be made into a CRDT.  Non-monotonic things may 'retract' previous statements.
 
 Now equipped with a 30,000ft overview of CRDTs, let's dive into how they resolve conflicts.
 
 ### Ordering Messages
-> A small note that this part will be pretty heavy on theory. If that's not your cup of tea, you can just assume that there exists a way to order operations and skip to the section titled 'Intuition behind CRDTs'
+> A small note: this part will be pretty heavy on theory. If that's not your cup of tea, you can just assume that there exists a way to order operations and skip to the section titled 'Intuition behind CRDTs'
 
-[diagram of conflicting operations]
+![[thoughts/images/message-ordering.jpg]]
 
 There is a whole branch of math focused on how to order things called, you guessed it, [[thoughts/Order theory|order theory]]. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we've mathematically avoided conflicts. So how do we do that?
 
@@ -98,27 +96,11 @@ This timestamp is just a simple counter. For the rest of the blog post, we refer
 - Everytime we broadcast a message to our peers, we attach this counter
 - Everytime we receive a message, we set our timer as `max(self.seq, incoming.seq) + 1`
 
-```rust
-struct CRDT {
-    // The sequence number of this node
-    our_seq: SequenceNumber,
-    // other fields omitted
-}
-
-impl CRDT {
-	pub new() -> Self {
-		CRDT {
-			our_seq: 0
-		}
-	}
-}
-```
-
 This timestamp gives us a very powerful relationship. If `a.seq >= b.seq` then $a$ cannot have happened before $b$. Note that fortunately we cannot make the stronger claim that $a$ must have happened after $b$. It's a good thought exercise to see if you can figure out why :)
 
 However, Lamport timestamps only give us a *partial ordering*, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with `seq = 1` even though they are different events!
 
-[diagram illustrating above case]
+![[thoughts/images/duplicate-seq.jpg]]
 
 Thankfully, we can actually create a total ordering of events in a distributed system by using some arbitrary mechanism to break ties. For CRDTs, we give each node a unique ID, we can actually tie-break on this ID to provide a deterministic way to order concurrent events.
 
@@ -151,19 +133,17 @@ Ordering solved!
 ### Causality
 Or so we thought... Let's think about when it is safe for us to apply an operation that we have received locally.
 
-[diagram]
+![[thoughts/images/safe-operation.jpg]]
 
-Say that the largest sequencer number we know of is 5. We receive an operation with sequence number 7. We know that we are missing the operation with sequence number 6. Can we still deliver it?
+Say that the largest sequence number we know of is 3. We receive an operation with sequence number 5. We know that we are missing the operation with sequence number 4. Can we still deliver it?
 
-The naive answer would be no, we should wait for the message with sequence number of 6 because we don't know if 7 depends on 6 or not.
-
-[diagram showing why the above it problematic]
+The naive answer would be no, we should wait for the message with sequence number of 4 because we don't know if 5 depends on 4 or not.
 
 But we can't figure out this causality information from just sequence numbers alone. If an event A causes another event B to happen, then `a.seq < b.seq`. However, we **don't know the converse**. That is, if `a.seq < b.seq`, we cannot say that A caused B to happen.
 
-It turns out the fix for this is actually quite easy. As long as we have a unique way of identifying each operation, each operation can just send along a list of operations it depends on being delivered first. That way, if we receive a message and we know we've received all of its causal dependencies, it should be safe to deliver.
+It turns out the fix for this is actually quite easy. As long as we have a unique way of identifying each operation, we can just send along a list of operations it causally depends on. That way, if we receive a message and we know we've received all of its causal dependencies, it should be safe to deliver.
 
-If we receive a message where we *haven't* received all of its causal dependencies, then we can add it to a queue so that when the message does get delivered, we can apply it afterwards.
+If we receive a message where we *haven't* received all of its causal dependencies, then we can add it to a queue so that when the message does get delivered, we can apply it afterwards. In the above example, if message 5 marked 4 as a causal dependency, it would wait until 4 was delivered before also applying 5.
 
 This means that as long as we declare the right causal dependencies, we can actually make certain things that don't seem commutative (like list operations) actually commute.
 
@@ -174,8 +154,6 @@ Let's survey what we have at our disposal so far (our assumptions):
 - We can reliably send messages that contain our operation between peers
 - We have a total ordering on the messages so we don't get any conflicts
 - We have some way of indicating causality
-
-[diagram of a pile of operations]
 
 This gives us an ever-growing pile of messages that are deemed 'safe' to apply. Here is probably a good time to make a distinction between the data in the CRDT itself and the view of that data.
 
@@ -197,7 +175,7 @@ impl<T> CRDT<T> {
 }
 ```
 
-[diagram]
+![[thoughts/images/crdt-apply-view.jpg]]
 
 Specifically, we never[^4] delete any operations from the internal data representation. The best we can do is mark them as deleted using a [tombstone](https://en.wikipedia.org/wiki/Tombstone_(data_store)). Because a peer could technically reference any past operation as a causal dependency, we need to keep that metadata around.
 
@@ -216,9 +194,7 @@ When you think of the API for a list, most operations are normally done by index
 
 This is not an easy problem to solve. It may also be a contributing reason to why the vast majority of CRDT projects focus on lists or text editing (which is essentially a list of characters). Luckily some smart people have figured it out for us so we can look to what they've done for inspiration.
 
-The key insight here is that instead of using relative addressing (e.g. positional indexing), we can use absolute addressing (e.g. using IDs). Imagine an infinitely divisible number line.
-
-[diagram]
+The key insight here is that instead of using relative addressing (e.g. positional indexing), we can use absolute addressing (e.g. using IDs).
 
 Every time we insert an element into the list, we need to know the ID of the character we are inserting after. Then, we just place it somewhere between that element and the element following it.
 
@@ -226,7 +202,7 @@ So instead of saying “insert ‘A’ after the character at position 4” we s
 
 We can imagine saying that "c" *caused* "a" which caused "t". Conveniently, we can encode this causality by making the causal parent of each item the character it was inserted after. Remember causal dependencies? Yeah those. 
 
-[rga diagram]
+![[thoughts/images/rga-explained.jpg]]
 
 This forms a sort of *causal tree* and this is effectively how RGA, a list CRDT, structures its data internally. Let's modify our `Op` to match that:
 
@@ -245,11 +221,13 @@ struct Op<T> {
 When inserting a character we
 
 1. Find the origin (causal dependency). If it doesn't exist, we queue it up for later.
-2. Starting at this node, all of its siblings were inserted concurrently. We look through the list of siblings until we reach a node that we are greater than as defined by the happens-before comparison we defined[^6]. Recall that we sort operations first by their sequence number then tie break by the author ID.
+2. Starting at this node, all of its siblings were inserted concurrently. We look through the list of siblings until we reach a node that we are greater determined by the happens-before comparison we defined[^6]. Recall that we sort operations first by their sequence number then tie break by the author ID.
 
-[diagram]
+![[thoughts/images/rga-insert.jpg]]
 
-To get the actual list this CRDT represents, we perform a depth-first traversal over the tree and only keep nodes that are not marked as deleted.
+In the example above, `'s'` has `'a'` as its causal origin. Thus, we look at where to insert it in the list of children of `'a'`. As `'t'` and `'b'` both have smaller sequence numbers, we skip past these. Both `'s'` and `'p'` have a sequence number of 5 so we tie-break on the `AuthorID`. As 1 < 2, we insert `'s'` between `'b'` and `'p'`.
+
+To get the actual list this CRDT represents, we perform an in-order traversal over the tree and only keep nodes that are not marked as deleted.
 
 [^6]: NB: performance enthusiasts will be quick to point out how to make this go faster. This is a terribly unbalanced tree. On average, it takes $O(n)$ to find the origin and another $O(n)$ to insert into the tree. There are clear optimizations to be made here. [Yjs](https://github.com/yjs/yjs) uses a doubly-linked list for a faster insert. They also use a cursor to track the last ~5-10 visited positions. It makes the assumption that editing patterns are *not* random (which is true for most applications). [Diamond Types](https://github.com/josephg/diamond-types) and the new [Automerge](https://github.com/automerge/automerge-rs) use a range-tree to achieve $O(\log n)$ find and $O(\log n)$ insert
 
@@ -260,7 +238,7 @@ However, most of the interactions we have are not in trusted scenarios. Luckily,
 
 The CRDTs we have been exploring so far do not work in these untrusted scenarios. That is, any one node can do something bad and cause state to diverge permanently. Not good.
 
-[diagram of bft node]
+![[thoughts/images/byzantine-node.jpg]]
 
 To be more concrete, here are some examples of what a malicious actor can do:
 - Send malformed updates
@@ -274,8 +252,6 @@ Ideally, we want to adapt our existing CRDT algorithms to be resistant to these 
 
 To borrow a term from distributed systems, we want to make our CRDTs [[thoughts/Byzantine Faults|Byzantine fault-tolerant]].[^7] The 'Byzantine' part of the name comes from the Byzantine Generals Problem, a situation where, in order to avoid catastrophic failure of the system, the system's actors must agree on a concerted strategy, but some of these actors are unreliable and potentially malicious.
 
-[diagram byzantine generals problem]
-
 [^7]: For those coming from a more traditional distributed systems context, I will clarify that BFT means something different from a consensus context. Traditionally, this means getting some $n-f$ nodes to agree on a particular value. However, because CRDTs focus more on collaboration than consensus, we just want to prevent Byzantine actors from disrupting the *functioning* of the system. Byzantine actors can still send a bunch of 'valid' updates that may be unwanted. Imagine you sent a Google Docs link to a group of people and one of them is mucking around and inserting a bunch of images and removing information from the document. These would all be considered 'valid' operations in the sense that a 'correctly' functioning node could have done the same thing.
 
 Notation wise, we denote the total number of nodes in the system $n$. We denote the number of faulty/Byzantine nodes $f$. Most consensus algorithms that you see (probably in the realm of crypto) claim a tolerance of up to $f < \frac n 3$, which means they can tolerate up to [[thoughts/33% Impossibility Result||33% of the nodes being faulty]]. However, CRDTs require an even weaker bound. Remember that we are not consensus! All we really need to do is make sure that Byzantine actors can't interrupt honest nodes from functioning properly.
@@ -286,7 +262,7 @@ In fact, in literature, this is called [[thoughts/Byzantine Broadcast|Byzantine 
 
 Kleppmann detailed an approach in his paper *[Making CRDTs Byzantine Fault Tolerant](https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf)* that works without changing the internals of most CRDTs; it can be fully retrofit on top of it. We can create a 'BFT adapter' layer between the transport and application layer that is responsible for filtering out any Byzantine operations.
 
-[diagram of the adapter layer and CRDT layer]
+![[thoughts/images/bft-layer.jpg]]
 
 This approach has two major components we need to grasp:
 - How we ensure Byzantine nodes don't tamper with messages and pretend to be someone else (hashes + signed message digests)
@@ -321,10 +297,16 @@ Luckily, we can use [[thoughts/Asymmetric Key Cryptography|public key cryptograp
 
 Then, whenever we send a message to another peer, we hash `op.id` to create a digest, and then sign it with our private key. This way, we can verify that the person who signed the message is the actual author. 
 
+![[thoughts/images/op-hashing-process.jpg]]
+
 ```rust
 // Create a digest to be signed
 fn digest(&self) -> [u8; 32] {
-	sha256(self.id)
+	// note that self.dependencies here is *different* from self.origin
+	// this will allow us to indicate causal dependencies *across* CRDTs
+	// which we will cover in more detail later
+	let fmt_str = format!("{},{},{}", self.id(), self.path, self.dependencies);
+	sha256(fmt_str)
 }
 
 // Sign this digest with the given keypair
@@ -342,8 +324,6 @@ pub fn is_valid_digest<T>(op: Op<T>) -> bool {
 	}
 }
 ```
-
-[diagram showing Op -> Hash -> Digest]
 
 Ok great! We now have a unique way to identify both peers and operations. But there is one thing here that is a little pesky to deal with: mutability.
 
@@ -381,8 +361,6 @@ With that small problem solved, we know that our operations are now tamper resis
 ### Eager Reliable Causal Broadcast and Retries
 Now, we just need to make sure that there is a way to get messages between honest nodes such that Byzantine faulty nodes can't block it.
 
-[diagram of byzantine faulty node blocking communication]
-
 The easiest (and probably most naive) way to do this is through eager reliable broadcast:
 
 1. Each time a node receives a message with an `OpID` it has never seen before, it re-broadcasts that message to all its peers it knows about
@@ -390,7 +368,7 @@ The easiest (and probably most naive) way to do this is through eager reliable b
 
 This makes sure that as long there is a connected subgraph of honest nodes, they can all still communicate.
 
-[connected components]
+![[thoughts/images/connected-components.jpg]]
 
 However, there are a lot of potential optimizations to make here. It may be reliable but we broadcast $O(n^2)$ messages for each actual operation. This is really expensive and may flood the network!
 
@@ -411,9 +389,9 @@ Normally with JSON CRDTs, we just have a bunch of nested CRDTs.
 
 Each nested CRDT also keeps track of its path (e.g. `inventory[0].properties.damage`) so that when CRDTs produce an event, this information is also included. This ensures that peers know which CRDT to actually deliver a message to.
 
-[diagram of nested CRDTs]
-
 However, we have to be careful about how we store this path. We can't naively just use the index into the list as we saw earlier how this is unstable. A small workaround here is having the `OpID` be the index.
+
+Additionally, you may have noticed earlier that in addition to the `origin` field, we added a `dependencies` field. The distinction between the two is that the `origin` field is for same-CRDT causal dependencies whereas the `dependencies` field allows for cross-CRDT dependencies. This is important if we want, for example, an inventory update to be causally dependent on a LWW register CRDT update.
 
 There is one last challenge to account for: JSON has no schema; data types can change! For example,
 
