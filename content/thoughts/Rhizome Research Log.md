@@ -8,6 +8,15 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## November
+### November 18th
+- I know I've been neglecting this research log a little bit...
+- I've been squeezing time wherever I can to work on this silly little project. As of 11:59pm tonight, I have finished the project and fully written out a 6.2k word blog post ([[posts/bft-json-crdt|read it here]]) on it to pair
+	- This project realllyyy pushed me to my limits in terms of my engineering ability
+	- So many times I doubted if something was even possible or not and many late nights of pushing off other responsibilities to get more hours on this silly little thing
+	- I always knew I'd finish but to be honest, I can't really believe its over
+	- There's still more projects I want to work on but in the meanwhile... time to take a small break : )
+
 ## October
 ### October 27th
 - Adding JSON support is harder than I expected!
