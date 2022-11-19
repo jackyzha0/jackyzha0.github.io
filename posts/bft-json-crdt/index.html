@@ -8,7 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place."
+    content="![[thoughts/images/bft-crdt-cover.jpg]]
+CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place."
   />
   <title>
     Building a BFT JSON CRDT
@@ -125,7 +126,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a22f44f8c5b10048e3e107988e575b3d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.510ed37b74808e6e7c6fe229523e56ce.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,6 +295,42 @@ Nov 16, 2022
 </ul>
 
       
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#how-crdts-differ-from-traditional-databases">How CRDTs differ from traditional databases</a>
+      <ol>
+        <li><a href="#when-should-we-use-strong-eventual-consistency-over-linearizability">When should we use strong eventual consistency over linearizability?</a></li>
+      </ol>
+    </li>
+    <li><a href="#what-actually-is-a-crdt">What actually is a CRDT</a>
+      <ol>
+        <li><a href="#ordering-messages">Ordering Messages</a></li>
+        <li><a href="#causality">Causality</a></li>
+        <li><a href="#intuition-behind-crdts">Intuition behind CRDTs</a></li>
+        <li><a href="#list-crdts-rga-explained">List CRDTs (RGA Explained)</a></li>
+      </ol>
+    </li>
+    <li><a href="#adding-byzantine-fault-tolerance-for-free-almost">Adding Byzantine Fault Tolerance for free (almost)</a>
+      <ol>
+        <li><a href="#hashes-as-ids-and-signed-message-digests">Hashes as IDs and Signed Message Digests</a></li>
+        <li><a href="#eager-reliable-causal-broadcast-and-retries">Eager Reliable Causal Broadcast and Retries</a></li>
+      </ol>
+    </li>
+    <li><a href="#a-json-crdt">A JSON CRDT</a>
+      <ol>
+        <li><a href="#putting-it-all-together-into-a-crate">Putting it all together into a crate</a></li>
+      </ol>
+    </li>
+    <li><a href="#future-directions-for-crdts">Future directions for CRDTs</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -347,6 +384,18 @@ Nov 16, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -356,6 +405,96 @@ Nov 16, 2022
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -491,76 +630,6 @@ Nov 16, 2022
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
     
   
     
@@ -602,6 +671,18 @@ Nov 16, 2022
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -737,6 +818,18 @@ Nov 16, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -744,22 +837,6 @@ Nov 16, 2022
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
       
     
   
@@ -778,76 +855,6 @@ Nov 16, 2022
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
   
     
   
@@ -983,76 +990,6 @@ Nov 16, 2022
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
     
   
     
@@ -1147,6 +1084,18 @@ Nov 16, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -1154,28 +1103,24 @@ Nov 16, 2022
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
       
     
   
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1311,6 +1256,486 @@ Nov 16, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -1393,76 +1818,6 @@ Nov 16, 2022
   
     
   
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
     
   
     
@@ -1504,6 +1859,18 @@ Nov 16, 2022
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1639,6 +2006,96 @@ Nov 16, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -1721,6 +2178,738 @@ Nov 16, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
     
       
@@ -1755,35 +2944,34 @@ Nov 16, 2022
 
 
 
+<p><img src="/thoughts/images/bft-crdt-cover.jpg" width="auto" /></p>
 <p>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you&rsquo;ve ever had to deal with a nasty <code>git</code> merge conflict, you know how painful these can be to resolve.</p>
-<p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties which means they work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
+<p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
 <p>Over the past few years, really cool open source CRDT libraries like 
 
 <a href="https://github.com/automerge" rel="noopener">Automerge</a> and 
 
 <a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.</p>
-<p>What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels default-multiplayer, more cozy, and alive with life.</p>
-<p>I learn best through building so I set out to write my own CRDT from scratch to really grok what was going on under the hood. A lot of the literature I spent a good few months scratching my head over took a really long time for me to understand and required me to learn a non-trivial amount about <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a> and <a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a>.</p>
-<p>I write this blog post mostly as a note to my past self, distilling a lot of what I&rsquo;ve learned since into a blog post I wish I had read before going in.</p>
-<p>See the 
+<p>What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels more default-multiplayer, cozy, and alive with life.</p>
+<p>I learn best through building so I set out to write 
 
-<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">accompanying Github repository</a></p>
-<p><em>This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most.</em></p>
+<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">my own CRDT library from scratch</a> to grok what was going on under the hood. When I was first learning about it, I spent a good few months scratching my head trying to read the papers. A lot of the literature took a long time for me to understand and required me to learn a non-trivial amount about <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a> and <a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a>.</p>
+<p>I write this blog post mostly as a note to my past self, distilling a lot of what I&rsquo;ve learned since into a blog post I wish I had read before going in. I hope you find this useful too.</p>
+<p>As a brief warning, the target audience of this blog post are people who have worked with a bit distributed systems in the past and is curious about the realm of CRDTs. I try my best to explain any relevant terminology when it comes up but familiarity with the topics helps a lot!</p>
+<p><em>This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most!</em></p>
 <a href="#how-crdts-differ-from-traditional-databases"><h2 id="how-crdts-differ-from-traditional-databases"><span class="hanchor" ariaLabel="Anchor"># </span>How CRDTs differ from traditional databases</h2></a>
-<p>Before we really dive into CRDT internals, we first need to understand how they are different from databases. When you normally think of shared state, you normally think of databases.</p>
-<p>However, the guarantees that databases provide are <em>really</em> different than the ones CRDTs provide.</p>
-<p>Traditional databases focus on a property called <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>, which guarantees that all operations behave as if executed on a <em>single copy of the data</em>. We call this canonical view the <strong>primary site</strong>. Every read in a linearizable system, no matter what node you read from, gives you an up to date value.</p>
-<p>[diagram showing linearizability]</p>
+<p>Before we really dive into CRDT internals, we first need to understand how they are different from databases. When I normally think of shared state, I think of databases. However, the guarantees that databases provide are <em>really</em> different than the ones CRDTs provide.</p>
+<p>Traditional databases focus on a property called <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>, which guarantees that all operations behave as if executed on a <em>single copy of the data</em>. We call this canonical view the <strong>primary site</strong>. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.</p>
+<p><img src="/thoughts/images/linearizability.jpg" width="auto" /></p>
 <p>This is great for allowing developers to reason about distributed applications more easily (you just treat your distributed database like a single database). There are no conflicts by definition because there is only one authoritative view on what the right state is.</p>
-<p>However it isn&rsquo;t without downsides either. Achieving this property adds a lot of overhead because both writes <em>and reads</em> need to coordinate across all peers to ensure consistency. This creates an availability problem as if you can&rsquo;t reach a majority of your nodes, you can&rsquo;t process any operations.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>However it isn&rsquo;t without downsides either. Achieving this property adds a lot of overhead because both writes <em>and reads</em> need to coordinate (the dashed lines in the diagram above) across all database nodes to ensure consistency. This creates an availability problem: if you can&rsquo;t reach a majority of your nodes, you can&rsquo;t process any operations.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>CRDTs kind of throw all of that out the window and embrace the eventual nature of the real world. In an often cited essay titled <em><a href="/thoughts/A-Certain-Tendency-Of-The-Database-Community" rel="noopener" class="internal-link" data-src="/thoughts/A-Certain-Tendency-Of-The-Database-Community">A Certain Tendency Of The Database Community</a></em>, the author argues that trying to provide “single system image” semantics (read: <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>) is fundamentally flawed and at odds with how systems operate in the physical world.</p>
 <p>In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.</p>
-<p>We allow peers to actually have different states as long as they <em>eventually</em> converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for <strong>strong eventual consistency</strong>:</p>
+<p>This means we allow peers to actually have different states as long as they <em>eventually</em> converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for a property called <strong>strong eventual consistency</strong>:</p>
 <ul>
 <li>All updates will <em>eventually</em> reach every node</li>
 <li>Every node that has received the same updates will have the same state</li>
 </ul>
-<p>[diagram showing strong eventual consistency]</p>
 <a href="#when-should-we-use-strong-eventual-consistency-over-linearizability"><h3 id="when-should-we-use-strong-eventual-consistency-over-linearizability"><span class="hanchor" ariaLabel="Anchor"># </span>When should we use strong eventual consistency over linearizability?</h3></a>
 <p>It turns out that this is good enough most of the time. 
 
@@ -1795,13 +2983,13 @@ Nov 16, 2022
 <a href="https://queue.acm.org/detail.cfm?id=2462076" rel="noopener">Eventual Consistency Today: Limitations, Extensions, and Beyond</a></em></p>
 </blockquote>
 <a href="#what-actually-is-a-crdt"><h2 id="what-actually-is-a-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>What actually is a CRDT</h2></a>
-<p>Ok so after about 1000 words, you&rsquo;re probably asking &ldquo;wtf is a CRDT??&rdquo;. Maybe we should do that now.</p>
+<p>Ok so after about 1000 words, you&rsquo;re probably asking &ldquo;wtf is a CRDT??&rdquo;. Maybe we should define that now.</p>
 <p>CRDT stands for conflict-free/commutative/convergent replicated data type. Funnily enough, there is no strong consensus on what the C actually stands for<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Regardless of the name, the tldr; is the same:</p>
 <ul>
 <li>You can write and read from your local copy of the data without needing to coordinate with other peers</li>
 <li>Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
 <ul>
-<li>Because of the eventual nature of message delivery, there is no guarantee the state being exactly the same across actors at any given moment</li>
+<li>Because of the eventual nature of message delivery, there is no guarantee that the state across all the actors are consistent at any given moment</li>
 <li><strong>If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect</strong></li>
 </ul>
 </li>
@@ -1817,59 +3005,27 @@ Nov 16, 2022
 </ul>
 </li>
 </ul>
-<p>Again, CRDTs are a <em>family</em> of data structures. There is no one single CRDT. You can make CRDTs that produce single values (registers), lists, maps, graphs, JSON, and many more I haven&rsquo;t listed here. However, a fundamental limitation here is that there are certain types of data structures (like sets) that <em>cannot</em> be made into CRDTs<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>Again, CRDTs are a <em>family</em> of data structures. There is no one single CRDT. You can make CRDTs that produce single values (registers), lists, maps, graphs, JSON, and many more I haven&rsquo;t listed here. However, they can&rsquo;t represent everything. A fundamental limitation here is that there are certain types of data structures (like sets) that <em>cannot</em> be made into CRDTs<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. We&rsquo;ll talk more about these limitations later.</p>
 <p>Now equipped with a 30,000ft overview of CRDTs, let&rsquo;s dive into how they resolve conflicts.</p>
 <a href="#ordering-messages"><h3 id="ordering-messages"><span class="hanchor" ariaLabel="Anchor"># </span>Ordering Messages</h3></a>
 <blockquote>
-<p>A small note that this part will be pretty heavy on theory. If that&rsquo;s not your cup of tea, you can just assume that there exists a way to order operations and skip to the section titled &lsquo;Intuition behind CRDTs&rsquo;</p>
+<p>A small note: this part will be pretty heavy on theory. If that&rsquo;s not your cup of tea, you can just assume that there exists a way to order operations and skip to the section titled <em>Intuition behind CRDTs</em></p>
 </blockquote>
-<p>[diagram of conflicting operations]</p>
-<p>There is a whole branch of math focused on how to order things called, you guessed it, <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a>. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we&rsquo;ve mathematically avoided conflicts. So how do we do that?</p>
-<p>Your first intuition may be to just use clocks. However, there is no way to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Time keeping is famously hard.</p>
+<p><img src="/thoughts/images/message-ordering.jpg" width="auto" /></p>
+<p>There is a whole branch of math focused on how to order things called <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a>. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we&rsquo;ve mathematically avoided conflicts. So how do we do that?</p>
+<p>Your first intuition may be to just use clocks. However, it would be naive to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Keeping time is famously hard.</p>
 <p>If we can&rsquo;t trust actual clocks, what can we do? Well, we can use Lamport timestamps. These track <em>logical time</em> rather than actual wall time, meaning we count number of events that have occurred rather than seconds elapsed.</p>
-<p>This timestamp is just a simple counter. For the rest of the blog post, we refer to this counter as a sequence number <code>seq</code>.</p>
+<p>This timestamp is just a simple counter. For the rest of the blog post, we refer to this counter as the sequence number <code>seq</code>.</p>
 <ul>
 <li>All nodes start their counter at 0</li>
 <li>Everytime we perform an operation locally, we increment our counter by one</li>
 <li>Everytime we broadcast a message to our peers, we attach this counter</li>
-<li>Everytime we receive a message, we set our timer as <code>max(self.seq, incoming.seq) + 1</code></li>
+<li>Everytime we receive a message, we set our timer to <code>max(self.seq, incoming.seq) + 1</code></li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// The sequence number of this node
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">our_seq</span>: <span class="nc">SequenceNumber</span><span class="p">,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// other fields omitted
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">impl</span><span class="w"> </span><span class="n">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="k">pub</span><span class="w"> </span><span class="n">new</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nc">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="n">CRDT</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">			</span><span class="n">our_seq</span>: <span class="mi">0</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>This timestamp gives us a very powerful relationship. If <code>a.seq &gt;= b.seq</code> then $a$ cannot have happened before $b$. Note that fortunately we cannot make the stronger claim that $a$ must have happened after $b$. It&rsquo;s a good thought exercise to see if you can figure out why :)</p>
-<p>However, Lamport timestamps only give us a <em>partial ordering</em>, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events!</p>
-<p>[diagram illustrating above case]</p>
-<p>Thankfully, we can actually create a total ordering of events in a distributed system by using some arbitrary mechanism to break ties. For CRDTs, we give each node a unique ID, we can actually tie-break on this ID to provide a deterministic way to order concurrent events.</p>
+<p>This timestamp gives us a very powerful relationship. If <code>a.seq &gt;= b.seq</code> then $a$ cannot have happened before $b$. Note that unfortunately we cannot make the stronger claim that $a$ must have happened after $b$. It&rsquo;s a good thought exercise to see if you can figure out why :)</p>
+<p>However, Lamport timestamps only give us a <em>partial ordering</em>, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events.</p>
+<p><img src="/thoughts/images/duplicate-seq.jpg" width="auto" /></p>
+<p>Thankfully, we can actually create a total ordering of events in a distributed system by using some arbitrary (but deterministic) mechanism to break ties. For CRDTs, if we give each node a unique ID, we can actually tie-break on this ID to provide a deterministic way to order concurrent events.</p>
 <p>In pseudocode, we can create a comparison operation that looks something like the following:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1918,23 +3074,21 @@ Nov 16, 2022
 </div><p>Ordering solved!</p>
 <a href="#causality"><h3 id="causality"><span class="hanchor" ariaLabel="Anchor"># </span>Causality</h3></a>
 <p>Or so we thought&hellip; Let&rsquo;s think about when it is safe for us to apply an operation that we have received locally.</p>
-<p>[diagram]</p>
-<p>Say that the largest sequencer number we know of is 5. We receive an operation with sequence number 7. We know that we are missing the operation with sequence number 6. Can we still deliver it?</p>
-<p>The naive answer would be no, we should wait for the message with sequence number of 6 because we don&rsquo;t know if 7 depends on 6 or not.</p>
-<p>[diagram showing why the above it problematic]</p>
+<p><img src="/thoughts/images/safe-operation.jpg" width="auto" /></p>
+<p>Say that the largest sequence number we know of is 3. We receive an operation with sequence number 5. We know that we are missing the operation with sequence number 4. Can we still deliver 5?</p>
+<p>If 5 does not causally depend on 4, then we actually can still safely apply this operation.</p>
 <p>But we can&rsquo;t figure out this causality information from just sequence numbers alone. If an event A causes another event B to happen, then <code>a.seq &lt; b.seq</code>. However, we <strong>don&rsquo;t know the converse</strong>. That is, if <code>a.seq &lt; b.seq</code>, we cannot say that A caused B to happen.</p>
-<p>It turns out the fix for this is actually quite easy. As long as we have a unique way of identifying each operation, each operation can just send along a list of operations it depends on being delivered first. That way, if we receive a message and we know we&rsquo;ve received all of its causal dependencies, it should be safe to deliver.</p>
-<p>If we receive a message where we <em>haven&rsquo;t</em> received all of its causal dependencies, then we can add it to a queue so that when the message does get delivered, we can apply it afterwards.</p>
-<p>This means that as long as we declare the right causal dependencies, we can actually make certain things that don&rsquo;t seem commutative (like list operations) actually commute.</p>
+<p>It turns out the fix for this is actually quite easy. As we have a unique way of identifying each operation, we can just send along a list of operations it causally depends on. That way, if we receive a message and we know we&rsquo;ve received all of its causal dependencies, it should be safe to deliver.</p>
+<p>If we receive a message where we <em>haven&rsquo;t</em> received all of its causal dependencies, then we can add it to a queue so that when the message does get delivered, we can apply it afterwards. In the above example, if message 5 marked 4 as a causal dependency, it would wait until 4 was delivered before also applying 5.</p>
+<p>This means that as long as we declare the right causal dependencies, we can make certain things that don&rsquo;t seem commutative (like list operations) actually commute.</p>
 <a href="#intuition-behind-crdts"><h3 id="intuition-behind-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Intuition behind CRDTs</h3></a>
 <p>Okay enough about theory, how do we actually go about making a CRDT?</p>
 <p>Let&rsquo;s survey what we have at our disposal so far (our assumptions):</p>
 <ul>
-<li>We can reliably send messages that contain our operation between peers</li>
+<li>We can reliably send messages between peers</li>
 <li>We have a total ordering on the messages so we don&rsquo;t get any conflicts</li>
-<li>We have some way of indicating causality</li>
+<li>We have some way of indicating causal dependencies</li>
 </ul>
-<p>[diagram of a pile of operations]</p>
 <p>This gives us an ever-growing pile of messages that are deemed &lsquo;safe&rsquo; to apply. Here is probably a good time to make a distinction between the data in the CRDT itself and the view of that data.</p>
 <ul>
 <li>The data itself are the operations that are coming in</li>
@@ -1970,7 +3124,7 @@ Nov 16, 2022
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>[diagram]</p>
+</div><p><img src="/thoughts/images/crdt-apply-view.jpg" width="auto" /></p>
 <p>Specifically, we never<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> delete any operations from the internal data representation. The best we can do is mark them as deleted using a 
 
 <a href="https://en.wikipedia.org/wiki/Tombstone_%28data_store%29" rel="noopener">tombstone</a>. Because a peer could technically reference any past operation as a causal dependency, we need to keep that metadata around.</p>
@@ -1979,13 +3133,12 @@ Nov 16, 2022
 <a href="#list-crdts-rga-explained"><h3 id="list-crdts-rga-explained"><span class="hanchor" ariaLabel="Anchor"># </span>List CRDTs (RGA Explained)</h3></a>
 <p>This seems to lead us to the biggest problem in the room: list CRDTs.</p>
 <p>When you think of the API for a list, most operations are normally done by indexing. But isn&rsquo;t this a global invariant? Don&rsquo;t we need to know what other operations have been done to the list to figure out what the index of each character is?</p>
-<p>This is not an easy problem to solve. It may also be a contributing reason to why the vast majority of CRDT projects focus on lists or text editing (which is essentially a list of characters). Luckily some smart people have figured it out for us so we can look to what they&rsquo;ve done for inspiration.</p>
-<p>The key insight here is that instead of using relative addressing (e.g. positional indexing), we can use absolute addressing (e.g. using IDs). Imagine an infinitely divisible number line.</p>
-<p>[diagram]</p>
+<p>This is not an easy problem to solve. It may also be a reason as to why the vast majority of CRDT projects focus on lists or text editing (which is essentially a list of characters). Luckily for us, some smart people have figured it out for us so we can look to what they&rsquo;ve done for inspiration.</p>
+<p>The key insight here is that instead of using relative addressing (e.g. positional indexing), we can use absolute addressing (e.g. using IDs).</p>
 <p>Every time we insert an element into the list, we need to know the ID of the character we are inserting after. Then, we just place it somewhere between that element and the element following it.</p>
 <p>So instead of saying “insert ‘A’ after the character at position 4” we say “insert ‘A’, with ID <code>5</code>, and insert it after the character with ID <code>4</code>”. This matches our intuition for how text editing happens anyways. When we imagine inserting text, we are inserting it <em>after</em> something. It wouldn&rsquo;t make sense to insert the character &ldquo;a&rdquo; of &ldquo;cat&rdquo; before we insert the character &ldquo;c&rdquo;.</p>
 <p>We can imagine saying that &ldquo;c&rdquo; <em>caused</em> &ldquo;a&rdquo; which caused &ldquo;t&rdquo;. Conveniently, we can encode this causality by making the causal parent of each item the character it was inserted after. Remember causal dependencies? Yeah those.</p>
-<p>[rga diagram]</p>
+<p><img src="/thoughts/images/rga-explained.jpg" width="auto" /></p>
 <p>This forms a sort of <em>causal tree</em> and this is effectively how RGA, a list CRDT, structures its data internally. Let&rsquo;s modify our <code>Op</code> to match that:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2014,15 +3167,16 @@ Nov 16, 2022
 </div><p>When inserting a character we</p>
 <ol>
 <li>Find the origin (causal dependency). If it doesn&rsquo;t exist, we queue it up for later.</li>
-<li>Starting at this node, all of its siblings were inserted concurrently. We look through the list of siblings until we reach a node that we are greater than as defined by the happens-before comparison we defined<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Recall that we sort operations first by their sequence number then tie break by the author ID.</li>
+<li>Starting at this node, all of its siblings were inserted concurrently. We look through the list of siblings until we reach a node that we are greater determined by the happens-before comparison we defined<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Recall that we sort operations first by their sequence number then tie break by the author ID.</li>
 </ol>
-<p>[diagram]</p>
-<p>To get the actual list this CRDT represents, we perform a depth-first traversal over the tree and only keep nodes that are not marked as deleted.</p>
+<p><img src="/thoughts/images/rga-insert.jpg" width="auto" /></p>
+<p>In the example above, <code>'s'</code> has <code>'a'</code> as its causal origin. Thus, we look at where to insert it in the list of children of <code>'a'</code>. As <code>'t'</code> and <code>'b'</code> both have smaller sequence numbers, we skip past these. Both <code>'s'</code> and <code>'p'</code> have a sequence number of 5 so we tie-break on the <code>AuthorID</code>. As 1 &lt; 2, we insert <code>'s'</code> between <code>'b'</code> and <code>'p'</code>.</p>
+<p>To get the actual list this CRDT represents, we perform an in-order traversal over the tree and only keep nodes that are not marked as deleted.</p>
 <a href="#adding-byzantine-fault-tolerance-for-free-almost"><h2 id="adding-byzantine-fault-tolerance-for-free-almost"><span class="hanchor" ariaLabel="Anchor"># </span>Adding Byzantine Fault Tolerance for free (almost)</h2></a>
 <p>Up to this point, the CRDTs we&rsquo;ve covered all work in trusted scenarios. These are scenarios in which you <em>know</em> all of the people participating and you trust them to not screw up the system for everyone else. For example, in a collaborative text document, you may limit collaborators to immediate colleagues who you trust to run the CRDT algorithm correctly and not attempt any funny business.</p>
-<p>However, most of the interactions we have are not in trusted scenarios. Luckily, we have servers to help mediate these interactions, dictate what is and what isn&rsquo;t possible. Peer-to-peer systems, on the other hand, cannot rely on nodes always behaving the way the designers of the system intended. Here, we would like to be able to guarantee that the system continues functioning correctly even in the face of some nodes crashing, failing, and even acting maliciously.</p>
+<p>However, most of the interactions we have online are not in trusted scenarios. Luckily, we have servers to help mediate these interactions, dictate what is and what isn&rsquo;t possible. Peer-to-peer systems, on the other hand, cannot rely on nodes always behaving the way the designers of the system intended. Here, we would like to be able to guarantee that the system continues functioning correctly even in the face of some nodes crashing, failing, and even acting maliciously.</p>
+<p><img src="/thoughts/images/byzantine-node.jpg" width="auto" /></p>
 <p>The CRDTs we have been exploring so far do not work in these untrusted scenarios. That is, any one node can do something bad and cause state to diverge permanently. Not good.</p>
-<p>[diagram of bft node]</p>
 <p>To be more concrete, here are some examples of what a malicious actor can do:</p>
 <ul>
 <li>Send malformed updates</li>
@@ -2037,21 +3191,19 @@ Nov 16, 2022
 </ul>
 <p>Ideally, we want to adapt our existing CRDT algorithms to be resistant to these attacks while still allowing honest nodes to continue business as normal. This would allow us to use CRDTs in untrusted environments which opens up the door to lots of cool applications like games, social, and more.</p>
 <p>To borrow a term from distributed systems, we want to make our CRDTs <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine fault-tolerant</a>.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> The &lsquo;Byzantine&rsquo; part of the name comes from the Byzantine Generals Problem, a situation where, in order to avoid catastrophic failure of the system, the system&rsquo;s actors must agree on a concerted strategy, but some of these actors are unreliable and potentially malicious.</p>
-<p>[diagram byzantine generals problem]</p>
-<p>Notation wise, we denote the total number of nodes in the system $n$. We denote the number of faulty/Byzantine nodes $f$. Most consensus algorithms that you see (probably in the realm of crypto) claim a tolerance of up to $f &lt; \frac n 3$, which means they can tolerate up to <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a>. However, CRDTs require an even weaker bound. Remember that we are not consensus! All we really need to do is make sure that Byzantine actors can&rsquo;t interrupt honest nodes from functioning properly.</p>
-<p>In fact, in literature, this is called <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a>. Dolev-Strong, back in 1983, showed that it was possible to tolerate up to $f &lt; n$ faulty nodes! This means that, as long as there are honest nodes and they are connected to each other, they can still function properly.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
+<p>Notation wise, we denote the total number of nodes in the system $n$. We denote the number of faulty/Byzantine nodes $f$. Most consensus algorithms claim a tolerance of up to $f &lt; \frac n 3$, which means they can tolerate up to <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a>. However, CRDTs require an even weaker bound. Remember that we are not trying to achieve consensus! All we really need to do is make sure that Byzantine actors can&rsquo;t interrupt honest nodes from functioning properly.</p>
+<p>In fact, we can reduce this to a problem called <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a>. Dolev-Strong, back in 1983, showed that it was possible to tolerate up to $f &lt; n$ faulty nodes! This means that, as long as there are honest nodes and they are connected to each other, they can still function properly.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
 <p>Kleppmann detailed an approach in his paper <em>
 
 <a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Making CRDTs Byzantine Fault Tolerant</a></em> that works without changing the internals of most CRDTs; it can be fully retrofit on top of it. We can create a &lsquo;BFT adapter&rsquo; layer between the transport and application layer that is responsible for filtering out any Byzantine operations.</p>
-<p>[diagram of the adapter layer and CRDT layer]</p>
+<p><img src="/thoughts/images/bft-layer.jpg" width="auto" /></p>
 <p>This approach has two major components we need to grasp:</p>
 <ul>
 <li>How we ensure Byzantine nodes don&rsquo;t tamper with messages and pretend to be someone else (hashes + signed message digests)</li>
 <li>How we ensure messages don&rsquo;t get blocked from reaching honest nodes (eager reliable causal broadcast with retries)</li>
 </ul>
 <a href="#hashes-as-ids-and-signed-message-digests"><h3 id="hashes-as-ids-and-signed-message-digests"><span class="hanchor" ariaLabel="Anchor"># </span>Hashes as IDs and Signed Message Digests</h3></a>
-<p>So here&rsquo;s a little trick we can do. Our only requirement for operation IDs is that they uniquely identify a node.</p>
-<p>We can generate this ID by SHA256 hashing parts of the operation:</p>
+<p>So here&rsquo;s a little trick we can do. Our only requirement for operation IDs is that they uniquely identify a node. We can generate this ID by SHA256 hashing parts of the operation:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2088,6 +3240,7 @@ Nov 16, 2022
 <p>However, how can we be sure that a Byzantine actor hasn&rsquo;t just pretended to be someone else? After all, they could just create an operation, set the author field to someone else, then hash the content so that there is no mismatch between hash and ID.</p>
 <p>Luckily, we can use <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public key cryptography</a> to help us out here. Each node has a private key they keep to themselves. Earlier, we also mentioned that each node should have a unique identifier. We can actually use the public key of each node as its <code>AuthorID</code>.</p>
 <p>Then, whenever we send a message to another peer, we hash <code>op.id</code> to create a digest, and then sign it with our private key. This way, we can verify that the person who signed the message is the actual author.</p>
+<p><img src="/thoughts/images/op-hashing-process.jpg" width="auto" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2109,11 +3262,19 @@ Nov 16, 2022
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// Create a digest to be signed
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">digest</span><span class="p">(</span><span class="o">&amp;</span><span class="bp">self</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="p">[</span><span class="kt">u8</span><span class="p">;</span><span class="w"> </span><span class="mi">32</span><span class="p">]</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sha256</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="c1">// note that self.dependencies here is *different* from self.origin
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// this will allow us to indicate causal dependencies *across* CRDTs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="c1">// which we will cover in more detail later
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">	</span><span class="kd">let</span><span class="w"> </span><span class="n">fmt_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">format!</span><span class="p">(</span><span class="s">&#34;{},{},{}&#34;</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">id</span><span class="p">(),</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="bp">self</span><span class="p">.</span><span class="n">dependencies</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">sha256</span><span class="p">(</span><span class="n">fmt_str</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// Sign this digest with the given keypair
@@ -2132,9 +3293,8 @@ Nov 16, 2022
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>[diagram showing Op -&gt; Hash -&gt; Digest]</p>
-<p>Ok great! We now have a unique way to identify both peers and operations. But there is one thing here that is a little pesky to deal with: mutability.</p>
-<p>Here I really want to emphasize that the inner representation of CRDT is usually just a collection of operations. When we create references to operations in this internal representation (e.g. we need to declare a causal dependency), we expect that the <code>OpID</code> of an operation stays <em>static</em> throughout its lifetime. However, because we now set <code>OpID</code> to be the hash of the content, updating a node would change its <code>OpID</code> all the time!</p>
+</div><p>Ok great! We now have a unique way to identify both peers and operations. But there is one more thing here that is a little pesky to deal with: mutability.</p>
+<p>When we create references to operations in this internal representation (e.g. we need to declare a causal dependency), we expect that the <code>OpID</code> of an operation stays <em>static</em> throughout its lifetime. However, because we now set <code>OpID</code> to be the hash of the content, updating a node would change its <code>OpID</code> all the time!</p>
 <p>Does this mean we have to give up hashing the message content for fault tolerance? Fortunately not! There is one tiny hack that allows us to still use this hashing approach.</p>
 <p>Instead of making a copy of the original operation and just changing the content (which would cause the operation to be considered invalid by our hash check!), we can produce an <em>entirely new</em> operation that has the original ID as a causal dependency. These &lsquo;modification&rsquo; operations don&rsquo;t actually get included in the internal representation of the CRDT, rather they modify it directly.</p>
 <p>We can look to our list CRDT for an example. This <code>delete</code> function produces an entirely valid operation. This also makes sense from a causality perspective, we need to have delivered the original before trying to delete it!</p>
@@ -2180,18 +3340,17 @@ Nov 16, 2022
 <p>With that small problem solved, we know that our operations are now tamper resistant!</p>
 <a href="#eager-reliable-causal-broadcast-and-retries"><h3 id="eager-reliable-causal-broadcast-and-retries"><span class="hanchor" ariaLabel="Anchor"># </span>Eager Reliable Causal Broadcast and Retries</h3></a>
 <p>Now, we just need to make sure that there is a way to get messages between honest nodes such that Byzantine faulty nodes can&rsquo;t block it.</p>
-<p>[diagram of byzantine faulty node blocking communication]</p>
 <p>The easiest (and probably most naive) way to do this is through eager reliable broadcast:</p>
 <ol>
-<li>Each time a node receives a message with an <code>OpID</code> it has never seen before, it re-broadcasts that message to all its peers it knows about</li>
+<li>Each time a node receives a message with an <code>OpID</code> it has never seen before, it re-broadcasts that message to all its peers it is connected to</li>
 <li>If we have been missing a causal dependency for a while, occasionally ask our peers if they have it</li>
 </ol>
 <p>This makes sure that as long there is a connected subgraph of honest nodes, they can all still communicate.</p>
-<p>[connected components]</p>
+<p><img src="/thoughts/images/connected-components.jpg" width="auto" /></p>
 <p>However, there are a lot of potential optimizations to make here. It may be reliable but we broadcast $O(n^2)$ messages for each actual operation. This is really expensive and may flood the network!</p>
 <p>Thankfully, we can take inspiration from <code>git</code> to figure out how to do this more efficiently. Kleppmann, again, mentions this approach in <em>Making CRDTs Byzantine Fault Tolerant</em>.</p>
 <blockquote>
-<p>Using cryptographic hashes of updates has several appealing properties. One is that if two nodes p and q exchange the hashes of their current heads, and find them to be identical, then they can be sure that the set of updates they have observed is also identical, because the hashes of the heads indirectly cover all updates. If the heads of p and q are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</p>
+<p>Using cryptographic hashes of updates has several appealing properties. One is that if two nodes $p$ and $q$ exchange the hashes of their current heads, and find them to be identical, then they can be sure that the set of updates they have observed is also identical, because the hashes of the heads indirectly cover all updates. If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</p>
 </blockquote>
 <p>This project does not include this more advanced hash graph reconciliation but it is a direction for future work.</p>
 <a href="#a-json-crdt"><h2 id="a-json-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>A JSON CRDT</h2></a>
@@ -2202,9 +3361,9 @@ Nov 16, 2022
 <li>Lists are RGA lists</li>
 <li>Maps are lists of key-value pairs</li>
 </ul>
-<p>Each nested CRDT also keeps track of its path (e.g. <code>inventory[0].properties.damage</code>) so that when CRDTs produce an event, this information is also included. This ensures that peers know which CRDT to actually deliver a message to.</p>
-<p>[diagram of nested CRDTs]</p>
+<p>Each nested CRDT also keeps track of its path (e.g. <code>inventory[0].properties.damage</code>) so that when CRDTs produce an event, this information is also included. This ensures that peers know how to route a message to the right CRDT.</p>
 <p>However, we have to be careful about how we store this path. We can&rsquo;t naively just use the index into the list as we saw earlier how this is unstable. A small workaround here is having the <code>OpID</code> be the index.</p>
+<p>Additionally, in addition to the <code>origin</code> field, we added a <code>dependencies</code> field. The distinction between the two is that the <code>origin</code> field is for same-CRDT causal dependencies whereas the <code>dependencies</code> field allows for cross-CRDT dependencies. This is important if we want, for example, an inventory update to be causally dependent on a LWW register CRDT update.</p>
 <p>There is one last challenge to account for: JSON has no schema; data types can change! For example,</p>
 <ul>
 <li>A sets <code>&quot;a&quot;: [&quot;b&quot;]</code></li>
@@ -2305,9 +3464,9 @@ Nov 16, 2022
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Finally, I want to leave a word of warning. This is <strong>not a production ready library by any means</strong>. Although I do think this is a very solid proof of concept to demonstrate the potential of BFT CRDTs, it was still first and foremost for educational purposes.</p>
-<p>I do not consider myself to be proficient at Rust so there have lots of bad code smells/mistakes sprinkled throughout (please do 
+<p>I do not consider myself to be proficient at Rust so there might be lots of bad code smells/mistakes sprinkled throughout (please do 
 
-<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">PR</a> if you have any fixes/suggestions!)</p>
+<a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">PR</a> if you have any fixes/suggestions)!</p>
 <a href="#future-directions-for-crdts"><h2 id="future-directions-for-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Future directions for CRDTs</h2></a>
 <p>The field of CRDTs is still quite young. I really think there is a lot of promising work being done in exploring how CRDTs can be used to enable collaboration on the web.</p>
 <p>James Addison has been working on creating a 
@@ -2320,8 +3479,7 @@ Nov 16, 2022
 <a href="https://www.ggpo.net/" rel="noopener">GGPO</a> or 
 
 <a href="https://github.com/steveruizok/perfect-cursors/" rel="noopener">perfect-cursors</a> but for general CRDTs.</p>
-<p>I hope that this blog post is a jumping point for new people interested in the space to really get their hands dirty and see what they can do with this technology.</p>
-<p>Again, checkout the codebase if you are interested in the internals and feel free to try to tackle anything under the &lsquo;Further Work&rsquo; heading in the 
+<p>I hope that this blog post is a jumping point for new people interested in the space to really get their hands dirty and see what they can do with this technology. Again, checkout the codebase if you are interested in the internals and feel free to try to tackle anything under the &lsquo;Further Work&rsquo; heading in the 
 
 <a href="https://github.com/jackyzha0/bft-json-crdt/tree/main" rel="noopener">README</a>!</p>
 <a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>

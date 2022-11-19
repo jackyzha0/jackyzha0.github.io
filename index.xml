@@ -32,7 +32,8 @@ Distributed Press  Source</description>
       <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/posts/bft-json-crdt/</guid>
-      <description>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place.</description>
+      <description>![[thoughts/images/bft-crdt-cover.jpg]]
+CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place.</description>
     </item>
     
     <item>
