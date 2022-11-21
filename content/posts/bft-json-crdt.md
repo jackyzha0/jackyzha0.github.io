@@ -332,8 +332,7 @@ Instead of making a copy of the original operation and just changing the content
 We can look to our list CRDT for an example. This `delete` function produces an entirely valid operation. This also makes sense from a causality perspective, we need to have delivered the original before trying to delete it!
 
 ```rust
-/// Mark a node as deleted
-pub fn delete<T>(&mut self, id: OpID, keypair: &Ed25519Keypair) -> Op<T> {
+  fn delete<T>(&mut self, id: OpID, keypair: &Ed25519Keypair) -> Op<T> {
 	let mut op = Op {
 		id: PLACEHOLDER_ID,
 		origin: id, // the actual operation we are deleting
@@ -467,4 +466,4 @@ If you are still reading by this point, I want to give you a huge thank you.
 
 This was probably the most technically difficult project I've ever attempted, let alone finished. I felt like my conviction in my own abilities was tested multiple times and I can say I came out of the other side a better engineer. Thank you to the people who supported me as I struggled and stumbled around while trying to figure this project out.
 
-There are a few people I'd like to thank individually. Thank you to [Anson](https://www.ansonyu.me/) for listening to my long and incoherent rambles and celebrating my small wins. Thank you to [Nalin Bhardwaj](https://nibnalin.me/) for helping me with my cryptography questions and [Martin Kleppmann](https://martin.kleppmann.com/) for his teaching materials and lectures which taught me a significant portion of what I've learned about distributed systems and CRDTs.
+There are a few people I'd like to thank individually. Thank you to [Anson](https://www.ansonyu.me/) for listening to my long and incoherent rambles and celebrating my small wins. Thank you to [Scott Sunarto](https://twitter.com/smsunarto) and [James Addison](https://twitter.com/JungleSilicon) for proofreading. Thank you to [Nalin Bhardwaj](https://nibnalin.me/) for helping me with my cryptography questions and [Martin Kleppmann](https://martin.kleppmann.com/) for his teaching materials and lectures which taught me a significant portion of what I've learned about distributed systems and CRDTs.

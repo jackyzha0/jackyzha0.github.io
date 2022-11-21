@@ -25,6 +25,8 @@ draft: true
 10. Take compliments in stride: “aw, thank you that means a lot” instead of “nahhh”
 11. “Genius is no more than childhood recaptured at will.” *(Charles Baudelaire)*
 12. There is a very fine line between doing something too easy, too difficult, just right (see: [[thoughts/game design]])
-13. software abstractions that are difficult to learn are transformative because they make you think about it in an entirely new mental model
-	1. e.g. rust or vim
-14. 
+14. the game feel of doing things is incredibly important
+	1. vim tbh does not make me more productive but its more fun
+	2. designing good software should feel like a game
+15. be an [expander](https://twitter.com/startingfromnix/status/1594052283834064896) show other people whats possible
+	1. same reason as why world records come in rushes
