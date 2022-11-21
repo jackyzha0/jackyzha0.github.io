@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Preview Changes</title>
+      <link>https://jzhao.xyz/notes/preview-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/notes/preview-changes/</guid>
+      <description>If you&amp;rsquo;d like to preview what your Quartz site looks like before deploying it to the internet, the following instructions guide you through installing the proper dependencies to run it locally.</description>
+    </item>
+    
+    <item>
+      <title>Deploying Quartz to the Web</title>
+      <link>https://jzhao.xyz/notes/hosting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/notes/hosting/</guid>
+      <description>Hosting on GitHub Pages Quartz is designed to be effortless to deploy. If you forked and cloned Quartz directly from the repository, everything should already be good to go!</description>
+    </item>
+    
+    <item>
       <title>Distributed Web</title>
       <link>https://jzhao.xyz/thoughts/distributed-web/</link>
       <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
@@ -5383,6 +5401,34 @@ Since I’ve started at Hootsuite, I have
       
       <guid>https://jzhao.xyz/books/</guid>
       <description>A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that&amp;rsquo;s linked!</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://jzhao.xyz/notes/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/notes/config/</guid>
+      <description>Configuration Quartz is designed to be extremely configurable. You can find the bulk of the configuration scattered throughout the repository depending on how in-depth you&amp;rsquo;d like to get.</description>
+    </item>
+    
+    <item>
+      <title>Hosting with Docker</title>
+      <link>https://jzhao.xyz/notes/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/notes/docker/</guid>
+      <description>If you want to host Quartz on a machine without using a webpage hosting service, it may be easier to install Docker Compose and follow the instructions below than to install Quartz&amp;rsquo;s dependencies manually.</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://jzhao.xyz/notes/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/notes/search/</guid>
+      <description>Quartz supports two modes of searching through content.
+Full-text Full-text search is the default in Quartz. It produces results that exactly match the search query.</description>
     </item>
     
   </channel>

@@ -61,7 +61,7 @@ Physical Time Two types of clock
   
   
   
-  <link href="https://jzhao.xyz/styles.854de26537a524f2200c79f22e63f3af.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -121,13 +121,13 @@ Physical Time Two types of clock
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2929504973585489e670ad1261a47f58.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d922fa5855206b8cb17321083bd33fdf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
 
 
 
@@ -281,7 +281,7 @@ May 5, 2022
 
  
           
-<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/thoughts/clocks.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/clocks.md" rel="noopener">Edit Source</a>
 
 
       </p>
@@ -923,6 +923,16 @@ May 5, 2022
 
 
 
+
+
+
+  
+  
+
+  
+  
+
+
 <p>Measuring time in the context of computer systems</p>
 <a href="#physical-time"><h2 id="physical-time"><span class="hanchor" ariaLabel="Anchor"># </span>Physical Time</h2></a>
 <p>Two types of clock</p>
@@ -1041,7 +1051,7 @@ May 5, 2022
 <ul>
 <li><code>l' := l</code></li>
 <li><code>l := max(l', pt)</code> update <code>l</code> to <code>pt</code> if applicable</li>
-<li>if <code>pt</code> is the same (<code>l == l'</code>):
+<li>if <code>pt</code> is the same (<code>l <mark> l'</code>):
 <ul>
 <li><code>c += 1</code> increment causality as logical time is the same</li>
 </ul>
@@ -1058,12 +1068,12 @@ May 5, 2022
 <ul>
 <li><code>l' := l</code></li>
 <li><code>l := max(l', m.l, pt)</code></li>
-<li>if all logical clocks are the same <code>l == l' == m.l</code>:
+<li>if all logical clocks are the same <code>l </mark> l' <mark> m.l</code>:
 <ul>
 <li><code>c := max(c, m.c) + 1</code> set to max causality known</li>
 </ul>
 </li>
-<li>if our logic clocks are the same but message logical clock is behind <code>l == l'</code>:
+<li>if our logic clocks are the same but message logical clock is behind <code>l </mark> l'</code>:
 <ul>
 <li><code>c += 1</code> (ignore as message clock is behind)</li>
 </ul>

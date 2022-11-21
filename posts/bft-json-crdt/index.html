@@ -60,7 +60,7 @@ CRDTs are a family of data structures that are designed to be replicated across 
   
   
   
-  <link href="https://jzhao.xyz/styles.854de26537a524f2200c79f22e63f3af.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -120,13 +120,13 @@ CRDTs are a family of data structures that are designed to be replicated across 
 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2929504973585489e670ad1261a47f58.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d922fa5855206b8cb17321083bd33fdf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +232,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer src="https://jzhao.xyz/js/semantic-search.9c4f636c1b2bfe1cfc3536d5e1d675f6.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
 
 
 
@@ -280,7 +280,7 @@ Nov 16, 2022
 
  
           
-<a href="https://github.com/jackyzha0/jackyzha0.github.io/tree/hugo/content/posts/bft-json-crdt.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/posts/bft-json-crdt.md" rel="noopener">Edit Source</a>
 
 
       </p>
@@ -2994,6 +2994,13 @@ Nov 16, 2022
 
 
 
+
+
+
+  
+  
+
+
 <p><img src="/thoughts/images/bft-crdt-cover.jpg" width="auto" /></p>
 <p>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you&rsquo;ve ever had to deal with a nasty <code>git</code> merge conflict, you know how painful these can be to resolve.</p>
 <p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
@@ -3072,7 +3079,7 @@ Nov 16, 2022
 <li>Everytime we broadcast a message to our peers, we attach this counter</li>
 <li>Everytime we receive a message, we set our timer to <code>max(self.seq, incoming.seq) + 1</code></li>
 </ul>
-<p>If <code>a.seq &gt; b.seq</code> then event $a$ must have happened after event $b$. However, if <code>a.seq == b.seq</code>, we cannot be sure which event came first. This means that Lamport timestamps only give us a partial ordering, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events.</p>
+<p>If <code>a.seq &gt; b.seq</code> then event $a$ must have happened after event $b$. However, if <code>a.seq <mark> b.seq</code>, we cannot be sure which event came first. This means that Lamport timestamps only give us a partial ordering, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events.</p>
 <p><img src="/thoughts/images/duplicate-seq.jpg" width="auto" /></p>
 <p>Thankfully, we can actually create a total ordering of events in a distributed system by using some arbitrary (but deterministic) mechanism to break ties. For CRDTs, if we give each node a unique ID, we can actually tie-break on this ID to provide a deterministic way to order concurrent events.</p>
 <p>In pseudocode, we can create a comparison operation that looks something like the following:</p>
@@ -3116,7 +3123,7 @@ Nov 16, 2022
 </span></span></span><span class="line"><span class="cl"><span class="c1">// If there&#39;s a tie, tie-break on unique author ID
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">happens_before</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">op1</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">op2</span>: <span class="nc">Op</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">bool</span> <span class="p">{</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="n">op1</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">||</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">(</span><span class="n">op1</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">op1</span><span class="p">.</span><span class="n">author</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">author</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">(</span><span class="n">op1</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o"></mark></span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">seq</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">op1</span><span class="p">.</span><span class="n">author</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">op2</span><span class="p">.</span><span class="n">author</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>

@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/notes/preview-changes/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/notes/hosting/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/distributed-web/</loc>
     <lastmod>2022-11-18T13:21:13-08:00</lastmod>
   </url><url>
@@ -1684,14 +1690,23 @@
   </url><url>
     <loc>https://jzhao.xyz/categories/</loc>
   </url><url>
+    <loc>https://jzhao.xyz/notes/config/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/evergreen/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/fruit/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
   </url><url>
+    <loc>https://jzhao.xyz/notes/docker/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/</loc>
     <lastmod>2022-09-23T10:17:28-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/notes/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/personal/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
@@ -1708,8 +1723,14 @@
     <loc>https://jzhao.xyz/tags/sapling/</loc>
     <lastmod>2022-09-07T11:03:05-07:00</lastmod>
   </url><url>
+    <loc>https://jzhao.xyz/notes/search/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/tags/seed/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/setup/</loc>
+    <lastmod>2022-11-20T15:09:58-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/technical/</loc>
     <lastmod>2022-07-14T12:34:57-07:00</lastmod>
