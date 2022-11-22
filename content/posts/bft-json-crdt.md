@@ -63,7 +63,7 @@ CRDT stands for conflict-free/commutative/convergent replicated data type. Funni
 [^2]: NB: there is actually two main subtypes of CRDTs. [[thoughts/CRDT#Operation-based|CmRDTs]] or commutative replicated data types are based off of exchanging messages which contain single operations. [[thoughts/CRDT#State-based|CvRDTs]] or convergent replicated data types send their whole state. They are also sometimes called operation-based and state-based CRDTs respectively. The rest of this blog post assumes CRDT to mean operation-based CRDTs.
 
 - You can write and read from your local copy of the data without needing to coordinate with other peers
-- Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
+- Over time, all nodes converge to the same state by sending each other state modifications/updates they have performed on their local data
 	- Because of the eventual nature of message delivery, there is no guarantee that the state across all the actors are consistent at any given moment
 	- **If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect**
 - Each operation contains the necessary metadata to figure out a deterministic way to merge any operations that may happen concurrently
@@ -395,7 +395,9 @@ There is one last challenge to account for: JSON has no schema; data types can c
 
 How do we resolve this? The way Automerge and Yjs resolve this is by essentially using a multi-value register: they keep both values and punts the responsibility to the application choose the right answer.
 
-But wasn't the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this.
+But wasn't the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this[^9].
+
+[^9]: As pointed out by [Bartosz Sypytkowski](https://twitter.com/Horusiath), this assumes that the schema is static and never changes, which may be not the case in many practical scenarios. Additionally, because of the nature of CRDTs, schema updates may be acknowledged by peers in different points in time. This is an ongoing area of research
 
 ### Putting it all together into a crate
 What if we took advantage of the type-safety and metaprogramming abilities of a language like Rust to automatically derive these strict-schema BFT CRDTs from programmer-defined data structures?

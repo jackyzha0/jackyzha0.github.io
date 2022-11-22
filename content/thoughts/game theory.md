@@ -6,11 +6,38 @@ tags:
 - PHIL321A
 ---
 
+Modelling decisions where the outcome partially depends upon choices made by other rational agents. Assumes:
+1. Individual Rationality: each player maximizes their own utility and knows the full game tree/table
+2. Common Knowledge of Rationality: each player knows that all other players are rational
+
 Two ways to look at game theory
 1. Normative tool: how to make rational choices
 2. Descriptive/explanatory tool: help explain social behaviour
 
 Some social practices don't appear rational in normative game theory but can be explained using descriptive game theory
+
+Some distinctions:
+1. [[thoughts/zero sum|Zero-sum]] vs non-zero sum games (e.g. [[thoughts/positive sum]])
+	- In a zero sum game, the payoffs always sum to 0
+2. Simultaneous vs [[thoughts/sequential games]]
+	- In simultaneous games, all players choose independent at the same time
+3. Perfect information vs imperfect information games
+4. Symmetric vs non-symmetric games
+	-  In symmetric games, all actors have the same set of actions to choose from
+5. Two-person vs n-person games
+6. Cooperative vs non-cooperative games
+	- In cooperative games, players get to choose the outcome together (i.e. form binding agreements in the form of 'if I do A, then you must do B')
+7. Non-iterated vs iterated games
+	- A non-iterated game is only played once. Iterated games can be played several times.
+	- A "supergame" is a specified # of iterations of a game. Strategies:
+		- C: Always cooperate
+		- D: Always defect
+		- TT: tit-for-tat
+			- Cooperate on round 1 and then take same action as opponent in previous round
+	- Upshot is that the case for cooperation (e.g. TT or C) is strong when the number of games is not known in advance
+		- We can always construct a strategy where D or some version of TT dominates when we know how many games there will be
+1. Finite vs infinite games
+	- Not to be confused with the James Carse definition of infinite games
 
 ### Risk, Ignorance, and Uncertainty
 - Decisions under ignorance ([[thoughts/Decisions under ignorance|DUI]]): the agent is ignorant of all probabilities
@@ -20,6 +47,8 @@ Some social practices don't appear rational in normative game theory but can be 
 - Decisions under uncertainty (DUU): includes risk, ignorance, and intermediate cases
 
 ## Game Tables
+Used to represent simultaneous games
+
 Similar to decision tables in [[thoughts/Decision theory|decision theory]] but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.
 
 e.g. Stag Hunt where A and B are hunters and the numbers represent amount of food acquired
@@ -29,8 +58,32 @@ e.g. Stag Hunt where A and B are hunters and the numbers represent amount of foo
 |A|25,25|0,5|
 |B|5,0|5,5|
 
+(In [[thoughts/zero sum]] games, it is sufficient to only represent the utility of each of the Rows)
+
 - The solution is a set of "profile" of choices that are rational for each agent
 - Each cell is a profile which leads to an outcome for both players
+
+## Solutions to games
+### Dominance and admissibility
+S1 dominates S2 iff:
+1. S1 is at least as good as S2 regardless of what other players do.
+2. S1 is superior to S2 in at least one case.
+
+If there is a dominant strategy, it will be part of the solution profile. If there is no dominant strategy, we eliminate all dominated strategies as inadmissible.
+
+### Equilibrium
+This rule subsumes the rules for Dominance and Admissibility. Any solution using Dominance or Admissibility is also a [[thoughts/Nash equilibrium]].
+
+For two-person zero-sum games in particular, a pair of (pure) strategies is an equilibrium if and only if its payoff is the minimum on its row and the maximum on its column
+
+There may not always be an equilibrium with pure strategies. However,
+
+## Mixed Strategies
+In a two-person zero-sum game with mixed strategies, there is always an equilibirum. Moreover all equilibria have the same (expected) value
+
+If a player has options $R_1, \dots, R_n$, then a mixed strategy selecting $R_i$ with probability $p_i$ written as $[p_1R_1, \dots, p_nR_n]$ where the probabilities add up to 1.
+
+$[pA, (1-p)B]$ where $0 \leq p \leq 1$. This means: choose A with probability $p$ and B with probability $1 - p$.
 
 ## Trust and Game Theory
 [Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)
@@ -43,6 +96,8 @@ For [trust](thoughts/trust.md) to evolve:
 In the short run, the rules of the game define what the players do. In the long run, players define the rules. Incentive for us to build the environment and rules we want to play in.
 
 Unfortunately, modern day social media means we have less 'close-friends' and thus repeat interactions than ever. With algorithmic news feeds, miscommunication breeds and win-win situations become scarce.
+
+See also: [[thoughts/Evolutionary game theory]]
 
 ## Applied Game Theory
 Game theory feels hard to apply to the real world due to properties like the [Collingridge Dilemma](thoughts/catch%2022.md)
