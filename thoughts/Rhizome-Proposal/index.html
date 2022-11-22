@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -757,7 +759,6 @@ Mar 14, 2022
 </blockquote>
 <p><img src="/thoughts/images/Rhizome.png" width="auto" /><em>How can we imagine more rhizomatic structures instead of arborescent systems?</em></p>
 <p><em>DISCLAIMER: To borrow words from 
-
 <a href="https://www.robinsloan.com/lab/specifying-spring-83/" rel="noopener">Robin Sloan</a>: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.</em></p>
 <p>The competitive advantage of the vast majority of today’s centralized platforms are in their data moats and network effects. The major reason why these platforms remain so dominant is because of their data and users, not because of how good the service quality is.</p>
 <p>As a result, apps have become inseparable from data. In an ideal world, there is data-neutrality. Much like how net neutrality strives to maintain separation of provider and content markets, data neutrality strives to maintain the separation of data and application markets.</p>
@@ -786,7 +787,6 @@ Mar 14, 2022
 <p><em>This is a summarized version of the full vision of Rhizome. Read the full essay on <a href="/posts/towards-data-neutrality" rel="noopener" class="internal-link" data-src="/posts/towards-data-neutrality">data neutrality</a>.</em></p>
 <a href="#technical-details"><h2 id="technical-details"><span class="hanchor" ariaLabel="Anchor"># </span>Technical Details</h2></a>
 <p>Rhizome is a set of abstractions on top of DIDs, IPFS (specifically 
-
 <a href="https://ipld.io/" rel="noopener">IPLD</a>), <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">Filecoin</a>, and the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft consensus protocol</a>. It can be analogized to a generalized implementation of <a href="/thoughts/state-channels" rel="noopener" class="internal-link" data-src="/thoughts/state-channels">state channels</a> which don&rsquo;t need to be anchored to a chain.</p>
 <ul>
 <li>Root is a local-first data replication and synchronization service much like iCloud/Dropbox. Root will be implemented as a DID method which uses IPFS as a VDR. The pinned state snapshot is the DID Document.</li>
@@ -794,7 +794,6 @@ Mar 14, 2022
 <ul>
 <li>Data availability is achieved with an always-available <em>cloud peer</em>, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.</li>
 <li>A public marketplace where people can buy and sell compute/storage. Reliability of service is ensured using a modified version of <a href="/thoughts/Filecoin" rel="noopener" class="internal-link" data-src="/thoughts/Filecoin">FileCoin</a>&rsquo;s 
-
 <a href="https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/" rel="noopener">Proof of Replication</a>and providers can advertise storage/compute specification so purchasers can choose whether to optimize for space or performance.</li>
 </ul>
 </li>
@@ -812,21 +811,17 @@ Mar 14, 2022
 <a href="#differentiation-from-existing-work"><h3 id="differentiation-from-existing-work"><span class="hanchor" ariaLabel="Anchor"># </span>Differentiation from existing work</h3></a>
 <ul>
 <li>
-
 <a href="https://urbit.org/" rel="noopener">Urbit</a>
 <ul>
 <li>Claims to be an overlay OS and networking layer</li>
 <li>A bad case of 
-
 <a href="https://en.wikipedia.org/wiki/Not_invented_here" rel="noopener">NIH</a>, pretty much reinvented everything from scratch in a language that nobody really understands. Very vaporwavy, not much of their tech lives up to their promises. Good summary 
-
 <a href="https://wejn.org/2021/02/urbit-good-bad-insane/" rel="noopener">here</a> but TLDR; good in principle, didn&rsquo;t work out in practice.</li>
 <li>No real applications built on top of it.</li>
 <li>Modular collaborative yes, no on everything else.</li>
 </ul>
 </li>
 <li>
-
 <a href="https://blog.ceramic.network/what-is-ceramic/" rel="noopener">Ceramic</a>
 <ul>
 <li>Provides a universal document graph (Ceramic Documents) which by default are interoperable, scalable, and permissionless.</li>
@@ -857,7 +852,6 @@ Mar 14, 2022
 <li>Modelling distributed systems
 <ul>
 <li>
-
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">&lt;1kloc Raft Implementation</a></li>
 </ul>
 </li>

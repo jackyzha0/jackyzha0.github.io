@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -362,7 +364,6 @@ Oct 15, 2021
 <p>Play: the intentional activity of doing the thing you would want to do.</p>
 </blockquote>
 <p>
-
 <a href="https://kernel.community/en/learn/module-1/joyful-subversion" rel="noopener">Source: Joyful Subversion in <em>Kernel</em></a></p>
 <p>&ldquo;Play allows us to create and share ownership of spaces in ways which competition cannot. Have as much fun as possible along the way. Turn life into a canvas, rather than a graph with checkpoints. Welcome everyone.&rdquo;</p>
 <p>In a world were we seem to be locked behind these little rectangles, how can we escape? Embedded computing experiments like DynamicLand by Bret Victor (more in 
@@ -418,13 +419,11 @@ Oct 15, 2021
   data-src="/thoughts/constructionist/">constructionist</a> view on education.</p>
 <a href="#magic-circles"><h2 id="magic-circles"><span class="hanchor" ariaLabel="Anchor"># </span>Magic Circles</h2></a>
 <p>
-
 <a href="https://subconscious.substack.com/p/magic-circles" rel="noopener">Source: Magic circles by <em>Gordon Brandler</em></a></p>
 <p>A “magic circle” is the space in which a game takes place. When we step into the magic circle, the we suspend the rules of ordinary life, and allow the rules of the game to mediate our interactions.</p>
 <p>We often mark the boundaries of a magic circle through ceremonies:</p>
 <ul>
 <li>Playing the 
-
 <a href="https://www.youtube.com/watch?v=uYMpMcmpfkI" rel="noopener">THX deep note</a> before a movie</li>
 <li>Singing the national anthem before a game</li>
 <li>Ringing a gong before yoga practice</li>
@@ -451,7 +450,6 @@ Oct 15, 2021
   data-src="/thoughts/boundary-object/">boundary</a></p>
 <a href="#animals-and-play"><h2 id="animals-and-play"><span class="hanchor" ariaLabel="Anchor"># </span>Animals and Play</h2></a>
 <p>
-
 <a href="https://davidgraeber.org/articles/whats-the-point-if-we-cant-have-fun/" rel="noopener">Graeber on <em>What&rsquo;s the point if we can&rsquo;t have fun?</em></a></p>
 <blockquote>
 <p>Why does the existence of action carried out for the sheer pleasure of acting, the exertion of powers for the sheer pleasure of exerting them, strike us as mysterious? What does it tell us about ourselves that we instinctively assume that it is?</p>

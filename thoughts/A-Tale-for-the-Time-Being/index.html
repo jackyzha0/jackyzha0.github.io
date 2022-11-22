@@ -74,7 +74,7 @@ i think tale for the time being has really got me thinking about time and time d
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ i think tale for the time being has really got me thinking about time and time d
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -327,14 +329,12 @@ Dec 21, 2021
 <li>the Māori word for autism is takiwatanga: &ldquo;in his/her own time and space&rdquo;</li>
 </ul>
 <p>
-
 <a href="https://clarkesworldmagazine.com/chen_08_11/" rel="noopener">https://clarkesworldmagazine.com/chen_08_11/</a></p>
 <ul>
 <li>&ldquo;They discovered that those suffering from the side effects of time sense dilation and those suffering from the side effects of time sense compression can help each other, be each other’s cure.&rdquo;</li>
 <li>&ldquo;time flies past the laborer, the poor, the “third world”; time crawls for the rich, the idle, the “developed world”; time stays still for those in charge, the idols, the gods . . .&rdquo;</li>
 </ul>
 <p>
-
 <a href="https://griefbacon.substack.com/p/nothing-stops?utm_source=url&amp;curius=1299&amp;s=r" rel="noopener">https://griefbacon.substack.com/p/nothing-stops?utm_source=url&curius=1299&s=r</a></p>
 <ul>
 <li>This is the process of history, and of crisis, of disease and of love. We may try sometimes to stand still, but we are standing on a moving walkway.</li>

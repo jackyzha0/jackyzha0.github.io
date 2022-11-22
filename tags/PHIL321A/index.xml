@@ -6,7 +6,35 @@
     <description>Recent content in PHIL321A on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nash equilibrium</title>
+      <link>https://jzhao.xyz/thoughts/Nash-equilibrium/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Nash-equilibrium/</guid>
+      <description>If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual rationality (see [[thoughts/Pareto optimality]] for group rationality)</description>
+    </item>
+    
+    <item>
+      <title>Pareto optimality</title>
+      <link>https://jzhao.xyz/thoughts/Pareto-optimality/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Pareto-optimality/</guid>
+      <description>If there is no profile where one player’s payoff is better but no player’s payoff is worse. Pareto optimality is a criterion of ‘group rationality’, not a criterion for individual rationality (see: [[thoughts/Nash equilibrium]])</description>
+    </item>
+    
+    <item>
+      <title>Sequential Games</title>
+      <link>https://jzhao.xyz/thoughts/sequential-games/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/sequential-games/</guid>
+      <description>Represented with a game tree consisting of nodes (representing choices by players) and branches (representing different options)
+A player has perfect information if her information set has just one node (e.</description>
+    </item>
+    
     <item>
       <title>Newcomb&#39;s Problem</title>
       <link>https://jzhao.xyz/thoughts/Newcombs-Problem/</link>
@@ -110,8 +138,8 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
       <pubDate>Thu, 12 Aug 2021 10:18:31 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/game-theory/</guid>
-      <description>Two ways to look at game theory
- Normative tool: how to make rational choices Descriptive/explanatory tool: help explain social behaviour  Some social practices don&amp;rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</description>
+      <description>Modelling decisions where the outcome partially depends upon choices made by other rational agents. Assumes:
+ Individual Rationality: each player maximizes their own utility and knows the full game tree/table Common Knowledge of Rationality: each player knows that all other players are rational  Two ways to look at game theory</description>
     </item>
     
   </channel>

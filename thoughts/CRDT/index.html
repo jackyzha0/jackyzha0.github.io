@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -944,16 +946,13 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <ul>
 <li>tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example</li>
 <li>
-
 <a href="https://martin.kleppmann.com/papers/snapdoc-pets19.pdf" rel="noopener">https://martin.kleppmann.com/papers/snapdoc-pets19.pdf</a></li>
 <li>
-
 <a href="http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf" rel="noopener">http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf</a></li>
 </ul>
 <a href="#fault-tolerance"><h3 id="fault-tolerance"><span class="hanchor" ariaLabel="Anchor"># </span>Fault Tolerance</h3></a>
 <p>How can we make CRDTs <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine fault-tolerant</a>?</p>
 <p>
-
 <a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Kleppmann shows</a> that is possible to guarantee the standard CRDT consistency properties even in systems in which <em>arbitrarily many</em> nodes are Byzantine.</p>
 <p>CRDTs can become BFT by ensuring eventual delivery and convergence even in the presence of Byzantine nodes.</p>
 <p>The main construct here is constructing a hash graph (aka a <a href="/thoughts/Merkle-DAG" rel="noopener" class="internal-link" data-src="/thoughts/Merkle-DAG">Merkle-DAG</a>): The graph is essentially the Hasse diagram of the partial <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order</a> representing the <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a> relation among the updates. The ID of an operation is the hash of the update containing that operation. A &lsquo;head&rsquo; is just an operation which is not a dependency of another operation.</p>
@@ -968,7 +967,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <p>However, GC + rebalancing technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this.</p>
 <blockquote>
 <p>So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. 
-
 <a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a></p>
 </blockquote>
 <p>One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.</p>
@@ -985,10 +983,8 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <a href="#readings"><h2 id="readings"><span class="hanchor" ariaLabel="Anchor"># </span>Readings</h2></a>
 <ul>
 <li>
-
 <a href="https://hal.inria.fr/inria-00555588/document" rel="noopener">A comprehensive study of CRDTs</a></li>
 <li>
-
 <a href="https://arxiv.org/pdf/1806.10254.pdf" rel="noopener">Conflict-free Replicated Data Types: An Overview</a></li>
 </ul>
 

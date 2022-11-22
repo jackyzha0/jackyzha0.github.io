@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -366,7 +368,6 @@ Dec 7, 2021
   href="/thoughts/consensus/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/consensus/">consensus</a> problem: agreeing on what we mean. You can view the full artifact 
-
 <a href="https://play.jzhao.xyz/new-words" rel="noopener">here</a>.</em></p>
 <hr>
 <p><strong>Characters</strong></p>
@@ -424,7 +425,6 @@ Dec 7, 2021
 <p><strong>W:</strong> I concede that you have a good point. However, we can take a leaf out of Karl Popper&rsquo;s <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> book: the <em>lie-to-children</em>. We can create simple glossaries and terminological definitions as some abstraction for the larger, more nuanced concepts of the real world.</p>
 <p><strong>P:</strong> Wait&hellip; lying is categorically bad is it not?</p>
 <p><strong>W:</strong> Hold on and let me finish my thought. According to Pratchett<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, &ldquo;a lie-to-children is a statement that is false, but which nevertheless leads the child&rsquo;s mind towards a more accurate explanation.&rdquo; I think what I&rsquo;m trying to get at is this concept of 
-
 <a href="https://en.wikipedia.org/wiki/Verisimilitude" rel="noopener">verisimilitude</a>: that there is no binary true or false, 
 
 
@@ -477,7 +477,6 @@ need to be collectively forgotten. As we concluded earlier, this is incredibly d
 <p><strong>W:</strong> The only way to overwrite an existing definition is to either hard-fork it within a subcommunity or to create entirely new words. Hard-forking involves an agreement from a subcommunity to use an alternative definition for specific terms.</p>
 <p><strong>P:</strong> Well, what words need to start anew? Clearly there are words that could benefit from redefinition.</p>
 <p><strong>W:</strong> The &lsquo;metaverse&rsquo; for one could use a lot of redefinition. Meta has put a lot of effort into claiming and defining this term for their own benefit &ndash; a closed, profit-driven, and attention-farming dystopia. A few groups have cropped up around reclaiming some of this terminology, including one forking John Perry Barlow’s 1996 
-
 <a href="https://www.eff.org/cyberspace-independence" rel="noopener">Declaration for the Independence of Cyberspace</a> as a reaction to Facebook&rsquo;s recent rebranding as Meta.</p>
 <p>Likewise, many groups across the world have tried to redefine and hard-fork the definition of &lsquo;hacker&rsquo; for quite some time. Hacking, as known by the general public, generally refers to gaining unauthorized access to technology. Yet within this local hacker subcommunity, a hacker is widely defined as one who builds and creates for the sake of creating.</p>
 <p><strong>P:</strong> I am increasingly convinced by your argument against centralized definitions. I think, as a society, we need to think more critically about language and terminology and how they carry power. We want to enable evolution and creation of new terminology to enable others to have the language to speak of their lived experiences and complex ideas.</p>

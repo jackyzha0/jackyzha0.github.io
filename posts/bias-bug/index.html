@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -366,7 +368,6 @@ How about the trolley problem? Should a self-driving car — given no other opti
   rel="noopener" class="internal-link"
   data-src="/thoughts/data-distributions/">data diversity</a> — or rather the lack of it. I think the best way to explain this is through a metaphor. Imagine the AI as a small child. It likes to learn from its environment. If this child were to be raised in a racist family, it will almost undoubtedly hold similar views in the future. This is a very similar case for AI. It learns from the environment and data it&rsquo;s given.</p>
 <p>One case of this is the very first iteration of Google Photo’s image classification feature back in 2015. This feature claimed to be able to identify people, places, and things with high accuracy. Twitter user 
-
 <a href="https://twitter.com/jackyalcine/" rel="noopener">@jackyalcine</a> found that the algorithm identified people with darker skin as gorillas<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Google quickly was able to work and manually ‘patch’ the issue, but the actual issue was much deeper – and it had to do with the data used. In this case, the dataset that Google used to train their algorithm had an over proportional amount of middle-aged Caucasian people under the category of ‘people.’ This meant that while the recognition accuracy was really high for that select group of people, the accuracy for people of colour was significantly worse.</p>
 <p>From both cases, we can see that an over-focus on results and accuracy can cause these companies to ignore these 
 
@@ -444,22 +445,18 @@ How about the trolley problem? Should a self-driving car — given no other opti
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>
-
 <a href="https://www.businessinsider.com/amazon-built-ai-to-hire-people-discriminated-against-women-2018-10" rel="noopener">News coverage on Amazon Hiring case</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>
-
 <a href="https://www.forbes.com/sites/mzhang/2015/07/01/google-photos-tags-two-african-americans-as-gorillas-through-facial-recognition-software/#2842682a713d" rel="noopener">News coverage on the Google Photos case</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>
-
 <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm" rel="noopener">ProPublica Analysis</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>
-
 <a href="https://advances.sciencemag.org/content/4/1/eaao5580" rel="noopener">Dartmouth Study on COMPAS accuracy</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>

@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -327,25 +329,20 @@ Feb 1, 2021
   href="/books/"
   rel="noopener" class="internal-link"
   data-src="/books/">reading</a>, having 1:1s with some pretty rad people, 
-
 <a href="https://github.com/jackyzha0/rs-openai/" rel="noopener">learning Rust</a>, and of course surviving school. Surviving, in this case, is a questionable word choice.</p>
 <a href="#3-things-ive-found-interesting"><h2 id="3-things-ive-found-interesting"><span class="hanchor" ariaLabel="Anchor"># </span>3 things I’ve found interesting</h2></a>
 <ol>
 <li>
-
 <a href="https://openai.com/blog/multimodal-neurons/" rel="noopener">Multimodal Neurons in Neural Networks</a>. First off, Spider-Man neuron. This paper is an interesting exploration on how neural networks can appear to have an understanding of abstract higher-level concepts that are <em>composable</em>. A lot of really interesting potential here.</li>
 <li>
-
 <a href="https://www.youtube.com/watch?v=GiAj9WW1OfQ" rel="noopener">Sounds of the Mandelbrot Set</a>. Is mayonaisse an instrument? Yes, and fractals are too. A really cool look into doing an auditory visualization of things we wouldn&rsquo;t normally associate with sound.</li>
 <li>
-
 <a href="https://jazzkeys.plan8.co/?msg=-MVYtMespmT9iNLyKnqO" rel="noopener">Jazz Messages</a>. Send notes to your friends in style with <strong>j a z z</strong>.</li>
 </ol>
 <a href="#2-things-ive-been-wondering-about"><h2 id="2-things-ive-been-wondering-about"><span class="hanchor" ariaLabel="Anchor"># </span>2 things I’ve been wondering about</h2></a>
 <ol>
 <li>What does it mean to find fulfilment in what you do? I&rsquo;ve found myself involved with an overabundance of projects in the past year and only a select handful have truly been fulfilling to work on. I&rsquo;m doing a bit of introspection in hopes of maybe figuring out why I love doing the things I love and maybe an answer to who I am.</li>
 <li>
-
 <a href="https://www.youtube.com/watch?v=ZRZuEGuU_es" rel="noopener">What&rsquo;s not in the frame</a>. In which Hank talks about the 
 
 
@@ -359,7 +356,6 @@ Feb 1, 2021
 </ol>
 <a href="#1-thing-ive-done"><h2 id="1-thing-ive-done"><span class="hanchor" ariaLabel="Anchor"># </span>1 thing I’ve done</h2></a>
 <p>Pretty slow month in terms of personal projects/pieces, mostly either working on patching up older projects (finally got around to updating 
-
 <a href="https://github.com/jackyzha0/docker-explained" rel="noopener">Docker Explained</a>). I did end up finishing Working in Public: The Making and Maintenance of Open Source Software by Nadia Eghbal and found some really interesting ideas that I wanted to explore and flesh out a bit. I had a few convos with a friend on Twitter and ended up writing a piece on 
 
 

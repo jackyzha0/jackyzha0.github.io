@@ -74,7 +74,7 @@ Defining play I&rsquo;ve spent a lot of the past few months reminiscing on the c
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Defining play I&rsquo;ve spent a lot of the past few months reminiscing on the c
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -364,7 +366,6 @@ Nov 14, 2021
 
 <img src="https://jzhao.xyz//posts/images/play/agency.png" width="auto" alt=""  /></p>
 <p>Play is the act of enjoying the process, the means to the end. To have as much fun as possible along the way. Quoting 
-
 <a href="https://kernel.community/en/learn/module-1/joyful-subversion" rel="noopener">Kernel</a>, to &ldquo;turn life into a canvas, rather than a graph with checkpoints&rdquo;.</p>
 <p>Yet this definition still seems inadequate. What separates work from play? Are they mutually exclusive? What about those who cannot afford time out of their day to do anything <em>but work</em>? Those who play games professionally?</p>
 <p>Here, I turn to Jenny Odell&rsquo;s 
@@ -430,7 +431,6 @@ Nov 14, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/games/">games</a>?</em></p>
 <p><em>The Grasshopper</em> was a book unlike any I&rsquo;ve ever read before. A talking grasshopper and his insect disciples convinced me, through 
-
 <a href="https://www.thoughtco.com/socratic-dialogue-argumentation-1691972" rel="noopener">Socratic dialogue</a> nonetheless, that &ldquo;refusing to work and insisting upon devoting himself exclusively to play&rdquo; is a perfectly acceptable thing to embody.</p>
 <p>Whereas Odell focused on how to get to a post-work society, Suit&rsquo;s approach to play and games focuses on what to do <em>in</em> a post-work society. A utopia of doing absolutely nothing feels dreadfully boring. What is there left to do? To play games, obviously!</p>
 <p>When I say &lsquo;game&rsquo;, I don’t just mean chess, basketball, or a video game. I mean a more holistic one that includes climbing mountains, the pursuit of knowledge, and the creation of art itself.</p>

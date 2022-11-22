@@ -74,7 +74,7 @@ CRDTs are a family of data structures that are designed to be replicated across 
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ CRDTs are a family of data structures that are designed to be replicated across 
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -3005,13 +3007,10 @@ Nov 16, 2022
 <p>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you&rsquo;ve ever had to deal with a nasty <code>git</code> merge conflict, you know how painful these can be to resolve.</p>
 <p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
 <p>Over the past few years, really cool open source CRDT libraries like 
-
 <a href="https://github.com/automerge" rel="noopener">Automerge</a> and 
-
 <a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.</p>
 <p>What normally would have taken weeks or months of engineering to setup infrastructure for a collaborative web experience can be done in a day, bringing us one step closer to a future where the internet feels more default-multiplayer, cozy, and alive with life.</p>
 <p>I learn best through building so I set out to write 
-
 <a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">my own CRDT library from scratch</a> to grok what was going on under the hood. When I was first learning about it, I spent a good few months scratching my head trying to read the papers. A lot of the literature took a long time for me to understand and required me to learn a non-trivial amount about <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a> and <a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a>.</p>
 <p>I write this blog post mostly as a note to my past self, distilling a lot of what I&rsquo;ve learned since into a blog post I wish I had read before going in. I hope you find this useful too.</p>
 <p>As a brief warning, the target audience of this blog post are people who have worked with a bit distributed systems in the past and is curious about the realm of CRDTs. I try my best to explain any relevant terminology when it comes up but familiarity with the topics helps a lot!</p>
@@ -3031,12 +3030,10 @@ Nov 16, 2022
 </ul>
 <a href="#when-should-we-use-strong-eventual-consistency-over-linearizability"><h3 id="when-should-we-use-strong-eventual-consistency-over-linearizability"><span class="hanchor" ariaLabel="Anchor"># </span>When should we use strong eventual consistency over linearizability?</h3></a>
 <p>It turns out that this is good enough most of the time. 
-
 <a href="https://databeta.wordpress.com/2010/10/28/the-calm-conjecture-reasoning-about-consistency/" rel="noopener">Conventional wisdom</a> in the database world would agree that perfect data consistency is way too expensive in terms of both latency and bandwidth if changes happen frequently. Using eventually consistent approaches generally work better as temporary inconsistencies work out in most cases.</p>
 <blockquote>
 <p>Two users might simultaneously withdraw money from an account and end up with more money than the account ever held. Would a bank ever want this behavior? In practice, yes. An ATM&rsquo;s ability to dispense money (availability) outweighs the cost of temporary inconsistency in the event that an ATM is partitioned from the master bank branch&rsquo;s servers. In the event of overdrawing an account, banks have a well-defined system of external compensating actions: for example, overdraft fees charged to the user.</p>
 <p>from <em>
-
 <a href="https://queue.acm.org/detail.cfm?id=2462076" rel="noopener">Eventual Consistency Today: Limitations, Extensions, and Beyond</a></em></p>
 </blockquote>
 <a href="#what-actually-is-a-crdt"><h2 id="what-actually-is-a-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>What actually is a CRDT</h2></a>
@@ -3044,7 +3041,7 @@ Nov 16, 2022
 <p>CRDT stands for conflict-free/commutative/convergent replicated data type. Funnily enough, there is no strong consensus on what the C actually stands for<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Regardless of the name, the tldr; is the same:</p>
 <ul>
 <li>You can write and read from your local copy of the data without needing to coordinate with other peers</li>
-<li>Over time, all nodes converge to the same state by sending each other messages about operations they have performed on their local data
+<li>Over time, all nodes converge to the same state by sending each other state modifications/updates they have performed on their local data
 <ul>
 <li>Because of the eventual nature of message delivery, there is no guarantee that the state across all the actors are consistent at any given moment</li>
 <li><strong>If the CRDT is written properly, a view of a CRDT can only ever be out-of-date, but never incorrect</strong></li>
@@ -3182,7 +3179,6 @@ Nov 16, 2022
 </div>
 </div><p><img src="/thoughts/images/crdt-apply-view.jpg" width="auto" /></p>
 <p>Specifically, we never<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> delete any operations from the internal data representation. The best we can do is mark them as deleted using a 
-
 <a href="https://en.wikipedia.org/wiki/Tombstone_%28data_store%29" rel="noopener">tombstone</a>. Because a peer could technically reference any past operation as a causal dependency, we need to keep that metadata around.</p>
 <p>Of course, we can&rsquo;t go about willy-nilly trying to model every data structure this way. We can only have CRDTs of data structures which have invariants that <strong>do not depend on knowing the most up to date version of the data structure</strong>. From before, CRDTs are always guaranteed to have a correct state, but they may not have the most up-to-date value. This means that receiving any new operations should never break a CRDTs invariants.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>An example of something that CRDTs cannot model is an account balance that never decreases below zero. Say that you have $100 in an account. You spend 70 on your laptop and another 40 on your phone at the same time. Without waiting on the other transaction to arrive, there is no way for the CRDT to know whether these are valid! Even though both transactions are valid on their own, when done concurrently, they decrease the value to a negative value. Thus, CRDTs cannot model anything that requires maintaining <strong>global invariants</strong>.</p>
@@ -3250,7 +3246,6 @@ Nov 16, 2022
 <p>Notation wise, we denote the total number of nodes in the system $n$. We denote the number of faulty/Byzantine nodes $f$. Most consensus algorithms claim a tolerance of up to $f &lt; \frac n 3$, which means they can tolerate up to <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a>. However, CRDTs require an even weaker bound. Remember that we are not trying to achieve consensus! All we really need to do is make sure that Byzantine actors can&rsquo;t interrupt honest nodes from functioning properly.</p>
 <p>In fact, we can reduce this to a problem called <a href="/thoughts/Byzantine-Broadcast" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Broadcast">Byzantine Broadcast</a>. Dolev-Strong, back in 1983, showed that it was possible to tolerate up to $f &lt; n$ faulty nodes! This means that, as long as there are honest nodes and they are connected to each other, they can still function properly.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup></p>
 <p>Kleppmann detailed an approach in his paper <em>
-
 <a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Making CRDTs Byzantine Fault Tolerant</a></em> that works without changing the internals of most CRDTs; it can be fully retrofit on top of it. We can create a &lsquo;BFT adapter&rsquo; layer between the transport and application layer that is responsible for filtering out any Byzantine operations.</p>
 <p><img src="/thoughts/images/bft-layer.jpg" width="auto" /></p>
 <p>This approach has two major components we need to grasp:</p>
@@ -3424,7 +3419,7 @@ Nov 16, 2022
 <li>B sets <code>&quot;a&quot;: {&quot;c&quot;: &quot;d&quot;}</code></li>
 </ul>
 <p>How do we resolve this? The way Automerge and Yjs resolve this is by essentially using a multi-value register: they keep both values and punts the responsibility to the application choose the right answer.</p>
-<p>But wasn&rsquo;t the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this.</p>
+<p>But wasn&rsquo;t the whole point of CRDTs that there is no conflict? With most applications, allowing users to set arbitrary JSON is not actually desirable. We can somewhat mitigate these problems by allowing the application developers to define a fixed schema ahead of time and validating all operations through this<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>.</p>
 <a href="#putting-it-all-together-into-a-crate"><h3 id="putting-it-all-together-into-a-crate"><span class="hanchor" ariaLabel="Anchor"># </span>Putting it all together into a crate</h3></a>
 <p>What if we took advantage of the type-safety and metaprogramming abilities of a language like Rust to automatically derive these strict-schema BFT CRDTs from programmer-defined data structures?</p>
 <div class="highlight"><div class="chroma">
@@ -3519,36 +3514,25 @@ Nov 16, 2022
 </div>
 </div><p>Finally, I want to leave a word of warning. This is <strong>not a production ready library by any means</strong>. Although I do think this is a very solid proof of concept to demonstrate the potential of BFT CRDTs, it was still first and foremost for educational purposes.</p>
 <p>I do not consider myself to be proficient at Rust so there might be lots of bad code smells/mistakes sprinkled throughout (please do 
-
 <a href="https://github.com/jackyzha0/bft-json-crdt" rel="noopener">PR</a> if you have any fixes/suggestions)!</p>
 <a href="#future-directions-for-crdts"><h2 id="future-directions-for-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Future directions for CRDTs</h2></a>
 <p>The field of CRDTs is still quite young. I really think there is a lot of promising work being done in exploring how CRDTs can be used to enable collaboration on the web.</p>
 <p>James Addison has been working on creating a 
-
 <a href="https://twitter.com/JungleSilicon/status/1592022670044205058" rel="noopener">real-time 3D engine using CRDTs</a>. Projects like 
-
 <a href="http://bloom-lang.net/" rel="noopener">BLOOM</a> work on trying to figure out at compile time what parts of program state require coordination and what parts don&rsquo;t.</p>
 <p>I&rsquo;d love to see more exploration of CRDTs applied to games and other real-time things. I think there&rsquo;s a lot of really cool work to be done with interpolation <em>between</em> operations. Think 
-
 <a href="https://www.ggpo.net/" rel="noopener">GGPO</a> or 
-
 <a href="https://github.com/steveruizok/perfect-cursors/" rel="noopener">perfect-cursors</a> but for general CRDTs.</p>
 <p>I hope that this blog post is a jumping point for new people interested in the space to really get their hands dirty and see what they can do with this technology. Again, checkout the codebase if you are interested in the internals and feel free to try to tackle anything under the &lsquo;Further Work&rsquo; heading in the 
-
 <a href="https://github.com/jackyzha0/bft-json-crdt/tree/main" rel="noopener">README</a>!</p>
 <a href="#acknowledgements"><h2 id="acknowledgements"><span class="hanchor" ariaLabel="Anchor"># </span>Acknowledgements</h2></a>
 <p>If you are still reading by this point, I want to give you a huge thank you.</p>
 <p>This was probably the most technically difficult project I&rsquo;ve ever attempted, let alone finished. I felt like my conviction in my own abilities was tested multiple times and I can say I came out of the other side a better engineer. Thank you to the people who supported me as I struggled and stumbled around while trying to figure this project out.</p>
 <p>There are a few people I&rsquo;d like to thank individually. Thank you to 
-
 <a href="https://www.ansonyu.me/" rel="noopener">Anson</a> for listening to my long and incoherent rambles and celebrating my small wins. Thank you to 
-
 <a href="https://twitter.com/smsunarto" rel="noopener">Scott Sunarto</a> and 
-
 <a href="https://twitter.com/JungleSilicon" rel="noopener">James Addison</a> for proofreading. Thank you to 
-
 <a href="https://nibnalin.me/" rel="noopener">Nalin Bhardwaj</a> for helping me with my cryptography questions and 
-
 <a href="https://martin.kleppmann.com/" rel="noopener">Martin Kleppmann</a> for his teaching materials and lectures which taught me a significant portion of what I&rsquo;ve learned about distributed systems and CRDTs.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -3564,7 +3548,6 @@ Nov 16, 2022
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>Garbage collection + rebalancing technically requires achieving <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> on nodes in order to do this. &ldquo;So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction.&rdquo; 
-
 <a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
@@ -3572,11 +3555,8 @@ Nov 16, 2022
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>NB: performance enthusiasts will be quick to point out how to make this go faster. This is a terribly unbalanced tree. On average, it takes $O(n)$ to find the origin and another $O(n)$ to insert into the tree. There are clear optimizations to be made here. 
-
 <a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> uses a doubly-linked list for a faster insert. They also use a cursor to track the last ~5-10 visited positions. It makes the assumption that editing patterns are <em>not</em> random (which is true for most applications). 
-
 <a href="https://github.com/josephg/diamond-types" rel="noopener">Diamond Types</a> and the new 
-
 <a href="https://github.com/automerge/automerge-rs" rel="noopener">Automerge</a> use a range-tree to achieve $O(\log n)$ find and $O(\log n)$ insert&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
@@ -3584,6 +3564,10 @@ Nov 16, 2022
 </li>
 <li id="fn:8" role="doc-endnote">
 <p>See notes on the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM Impossibility Result</a>. We use a <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> assumption to get around this result.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>As pointed out by 
+<a href="https://twitter.com/Horusiath" rel="noopener">Bartosz Sypytkowski</a>, this assumes that the schema is static and never changes, which may be not the case in many practical scenarios. Additionally, because of the nature of CRDTs, schema updates may be acknowledged by peers in different points in time. This is an ongoing area of research&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

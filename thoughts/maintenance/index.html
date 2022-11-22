@@ -74,7 +74,7 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -358,7 +360,6 @@ Dec 24, 2021
   href="/thoughts/tragedy-of-the-commons/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/tragedy-of-the-commons/">tragedy of the commons</a>? &ldquo;Fundamentally, digital infrastructure has a free rider problem. Resources are offered for free, and everybody (whether individual developer or large software company) uses them, so nobody is incentivized to contribute back, figuring that somebody else will step in.&rdquo; 
-
 <a href="https://techcrunch.com/2018/06/23/open-source-sustainability" rel="noopener">Source</a></p>
 <p>Who are all the maintainers behind the thousands of libraries we depend on each day? Is maintenance a form of Ghost Work?</p>
 <p>Can we use 
@@ -391,12 +392,9 @@ Dec 24, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/innovation/">Innovation</a> is overvalued</h2>
 <p>
-
 <a href="https://aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more" rel="noopener">Source: Hail the maintainers by *Andrew Russell and *</a></p>
 <p>
-
 <a href="https://themaintainers.org/" rel="noopener">The Maintainers Organization</a> and their 
-
 <a href="https://themaintainers.org/summer-fellow" rel="noopener">fellowship</a></p>
 <p>&ldquo;What happens <em>after</em> innovation, they argue, is more important. Maintenance and repair, the building of infrastructures, the mundane labour that goes into sustaining functioning and efficient infrastructures, simply has more impact on people’s daily lives than the vast majority of technological innovations.&rdquo;</p>
 <p>&ldquo;These shuttles brought high-tech employees from hip, pricey urban homes to their lush suburban campuses, without exposing them to the inconvenience of public transportation or to the vast populations of the poor and homeless who also call Silicon Valley their home.&rdquo; -&gt; similar to some concepts in 
@@ -443,7 +441,6 @@ Dec 24, 2021
 <p>&ldquo;Feminist theorists have long argued that obsessions with technological novelty obscures all of the labour, including housework, that women, disproportionately, do to keep life on track.&rdquo;</p>
 <a href="#maintenance-and-care"><h2 id="maintenance-and-care"><span class="hanchor" ariaLabel="Anchor"># </span>Maintenance and Care</h2></a>
 <p>
-
 <a href="https://placesjournal.org/article/maintenance-and-care" rel="noopener">Shannon Mattern in Places Journal</a></p>
 <blockquote>
 <p>“All of the incentives for all the actors are against maintenance. Nobody ever named a maintenance project, nobody ever got recognized for a maintenance project, nobody ever much got blamed for deferring maintenance during the time while they were in office.”</p>

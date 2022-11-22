@@ -74,7 +74,7 @@ Games are interesting when the underlying rules are simple (see: [[thoughts/Gall
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Games are interesting when the underlying rules are simple (see: [[thoughts/Gall
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -499,7 +501,6 @@ Mar 3, 2022
 <p>The more I think about it the more I think I eventually want to build games. All of my <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">p2p</a> infrastructure work now is to build up the tools possible to explore that space of potential games. Games as explorations in <a href="/thoughts/interaction-design" rel="noopener" class="internal-link" data-src="/thoughts/interaction-design">interaction design</a>.</p>
 <a href="#a-philosophy-of-games"><h2 id="a-philosophy-of-games"><span class="hanchor" ariaLabel="Anchor"># </span>A Philosophy of Games</h2></a>
 <p>
-
 <a href="https://overcast.fm/&#43;oiPXNKQBw" rel="noopener">A Philosophy of Games that is really a Philosophy of Life with C. Thi Nguyen</a></p>
 <h2 id="quantizationthoughtsquantizationmd">
 
@@ -581,7 +582,6 @@ Mar 3, 2022
 <ul>
 <li>&ldquo;&lsquo;Train&rsquo; &hellip; looks like, in many ways, a standard European board game. You’re building a railway network. You’re trying to optimize it. And over time the game reveals to you that what you’re actually doing is it’s Nazi Germany and you’re building the railway network to move people to concentration camps.&rdquo;</li>
 <li>
-
 <a href="https://buriedwithoutceremony.com/the-quiet-year" rel="noopener">https://buriedwithoutceremony.com/the-quiet-year</a></li>
 </ul>
 

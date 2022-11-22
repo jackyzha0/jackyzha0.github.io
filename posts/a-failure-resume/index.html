@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -388,7 +390,6 @@ Aug 21, 2020
 <ul>
 <li>Finding it extremely difficult to apply for grants for my independent research. Got rejected from Emergent Ventures which I thought I was most likely to get funding from which is extremely dejecting. More thoughts in my <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log</a>.</li>
 <li>Rejected from 
-
 <a href="https://twitter.com/sariazout/status/1571871089713680386" rel="noopener">Thinking Microgrants</a>
 <ul>
 <li><em>Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked.</em></li>
@@ -413,7 +414,6 @@ Aug 21, 2020
 <li>Stopped sending out newsletter issues :(( Ended up focusing more on longer form <a href="/thoughts/writing" rel="noopener" class="internal-link" data-src="/thoughts/writing">writing</a> instead</li>
 <li>Ghosted by both Contrary Build and Contrary Fellowship</li>
 <li>Couldn&rsquo;t work up the courage to apply to the 
-
 <a href="https://themaintainers.org/summer-fellow" rel="noopener">Maintainers Summer Fellowship</a>
 <ul>
 <li>I really love the work that the Maintainers org is doing and this internship would have combined so many things that I&rsquo;m interested in and passionate about: maintenance, writing, software, infrastructure, etc. I just couldn&rsquo;t convince myself that I wouldn&rsquo;t have made a fool of myself by applying :(</li>
@@ -504,17 +504,14 @@ Aug 21, 2020
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>
-
 <a href="https://www.nytimes.com/2019/02/03/smarter-living/failure-resume.html" rel="noopener">New York Times</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>
-
 <a href="https://www.katmh.com/fail/" rel="noopener">Kat Huang&rsquo;s</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>
-
 <a href="https://www.notion.so/failure-resume-5e67efb72dfe4f4896bc812ed94dc098" rel="noopener">Joice Tang&rsquo;s</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>

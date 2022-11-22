@@ -76,7 +76,7 @@ Foolish as they may seem"
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -120,15 +120,17 @@ Foolish as they may seem"
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -234,7 +236,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -647,7 +649,6 @@ Aug 21, 2022
 <p>La La Land - &ldquo;Audition (the fools who dream)&rdquo;</p>
 </blockquote>
 <p>A year ago, I wrote myself a <a href="/posts/2021" rel="noopener" class="internal-link" data-src="/posts/2021">letter</a>. In it, I told myself that if I ever found an idea I had high conviction in, I would drop everything to give it a fair shot. I hoped that I would be ambitious in my dreams and to embody a 
-
 <a href="https://www.spencerchang.me/experiments/100posts/quiet-confidence/" rel="noopener">quiet confidence</a> in my own abilities and interests.</p>
 <p><a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a> turned out to be project that would let me do all of that. I spent this past summer doing independent research focused on how we can enable <a href="/posts/towards-data-neutrality" rel="noopener" class="internal-link" data-src="/posts/towards-data-neutrality">data neutrality</a> on a web dominated by data moats. I had no academic research experience, barely knew anything about distributed systems, and didn&rsquo;t personally know anyone else doing independent research. At the time, I had no idea this was even <em>called</em> independent research.</p>
 <p>I&rsquo;m not sure what about it drew me in exactly. The project started out with a smattering of thoughts around peer-to-peer networking and what I found frustrating about it. Yet, the project took up latent headspace, simmering away quietly only to surface mid-scrub in the shower or on a walk to the bus stop.</p>
@@ -682,7 +683,6 @@ Aug 21, 2022
 <blockquote>
 <p>People will impose their limiting beliefs onto your world because it’s what governs theirs. They will tell you to stay in something you want to leave, will tell you to keep pushing toward something that feels wrong, feels misaligned. You always have a choice. You can yield to expectation, pessimism, set structures, or [you can take the other path].</p>
 <p>&ndash; Nicole, 
-
 <a href="https://nicoles.substack.com/p/internal-confidence" rel="noopener"><em>internal confidence</em></a></p>
 </blockquote>
 <p>I didn&rsquo;t need to prove to anyone that what I painted on this metaphorical canvas was &lsquo;worth&rsquo; the space that it took up. Instead of claiming to be some sort of expert who had all the requisite skills and knowledge, I began to see myself as an explorer, excited to share what I found with others. I let more people in to see what I was working on because I was excited to share what I found rather than afraid of what they thought of what I knew.</p>
@@ -694,7 +694,6 @@ Aug 21, 2022
 <blockquote>
 <p>These days, if you say you work in research, most people assume you work in academia. But it’s sort of odd that we assume you need someone’s permission to do research. There’s no reason that universities need to be the gatekeepers of exploring and developing new ideas.</p>
 <p>Nadia Asparouhova, <em>
-
 <a href="https://nadia.xyz/independent-research" rel="noopener">The independent researcher</a></em></p>
 </blockquote>
 <p>What I often find gets confusing for people is that <strong>independent research doesn&rsquo;t mean I do it by myself</strong>. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they <em>actually</em> want to do with their life. Neither leaves space for individual sense-making.</p>
@@ -705,7 +704,6 @@ Aug 21, 2022
 <blockquote>
 <p>Benjamin Franklin had the Junto Club, Tolkien and C.S. Lewis had The Inklings, Jobs and Wozniak had Homebrew. The Bloomsbury Group was integral to the success of Virginia Woolf, Clive Bell, and John Maynard Keynes, while MIT’s Model Railroad Club spawned much of modern hacker culture.</p>
 <p>&ndash; James Mulholland, <em>
-
 <a href="https://jmulholland.com/small-group/" rel="noopener">Small Group</a></em></p>
 </blockquote>
 <hr>
@@ -716,7 +714,6 @@ Aug 21, 2022
 <blockquote>
 <p>I know I&rsquo;m naive; I&rsquo;m a dreamer. But maybe we should get our hopes up for things sometimes. Maybe we shouldn&rsquo;t dampen how we feel to avoid the possibility of disappointment. Maybe we should hope for and demand everything—ask for the world, the stars, and the ever-expanding universe for ourselves. Maybe naïveté is how we keep imagining in vivid colors, connecting with rich feelings, dreaming of diverse characters.</p>
 <p>&ndash; Spencer Chang, <em>
-
 <a href="https://spencerchang.substack.com/p/quarter-life-commitment?s=r" rel="noopener">quarter life commitment</a></em></p>
 </blockquote>
 <hr>

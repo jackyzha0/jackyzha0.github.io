@@ -7,6 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Nash equilibrium</title>
+      <link>https://jzhao.xyz/thoughts/Nash-equilibrium/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Nash-equilibrium/</guid>
+      <description>If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual rationality (see [[thoughts/Pareto optimality]] for group rationality)</description>
+    </item>
+    
+    <item>
+      <title>Pareto optimality</title>
+      <link>https://jzhao.xyz/thoughts/Pareto-optimality/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Pareto-optimality/</guid>
+      <description>If there is no profile where one player’s payoff is better but no player’s payoff is worse. Pareto optimality is a criterion of ‘group rationality’, not a criterion for individual rationality (see: [[thoughts/Nash equilibrium]])</description>
+    </item>
+    
+    <item>
+      <title>Sequential Games</title>
+      <link>https://jzhao.xyz/thoughts/sequential-games/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/sequential-games/</guid>
+      <description>Represented with a game tree consisting of nodes (representing choices by players) and branches (representing different options)
+A player has perfect information if her information set has just one node (e.</description>
+    </item>
+    
+    <item>
       <title>Distributed Web</title>
       <link>https://jzhao.xyz/thoughts/distributed-web/</link>
       <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>

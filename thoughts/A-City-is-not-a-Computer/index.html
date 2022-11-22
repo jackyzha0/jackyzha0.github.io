@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -378,11 +380,9 @@ Aug 17, 2021
 
 
 <p>Reboot event with Shannon Mattern on her new book <em>A City Is Not A Computer</em>. Main summary and introduction on the 
-
 <a href="https://reboothq.substack.com/p/mattern" rel="noopener">Substack here</a>.</p>
 <a href="#article-notes"><h2 id="article-notes"><span class="hanchor" ariaLabel="Anchor"># </span>Article Notes</h2></a>
 <p>
-
 <a href="https://placesjournal.org/article/a-city-is-not-a-computer/" rel="noopener">Source: A City is not a Computer</a></p>
 <a href="#sidewalk-labs"><h3 id="sidewalk-labs"><span class="hanchor" ariaLabel="Anchor"># </span>Sidewalk Labs</h3></a>
 <p>Doctoroff, the founder of Sidewalk Labs: &ldquo;What would a city look like if you started from scratch in the internet era — if you built a city &lsquo;from the 
@@ -585,7 +585,6 @@ Aug 17, 2021
 <li>When you&rsquo;re trying to optimize for &lsquo;hits&rsquo; or &lsquo;clicks&rsquo; feels very opposite to how libraries value knowledge</li>
 <li>What knowledge needs to be protected? What knowledge <strong>shouldn&rsquo;t</strong> be universally accessible?</li>
 <li>Alternative networks: what could the internet have looked like? A writing on the bit: 
-
 <a href="http://joyrankin.com/phcus" rel="noopener">A People&rsquo;s History of Computing in the US</a></li>
 </ul>
 </li>
@@ -614,7 +613,6 @@ Aug 17, 2021
   href="/thoughts/Design-Justice/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/Design-Justice/">Design Justice</a> approach, specifically acknowledge this bias and try to compensate (e.g. 
-
 <a href="https://d4bl.org/" rel="noopener">Data for Black Lives</a>)</li>
 <li>We may not always be able to prevent &lsquo;data harvesting&rsquo;, and it sometimes might not all be bad! How do we fairly represent everyone?</li>
 <li>How do we control our own data and how we are presented within algorithms? Data sovereignty (e.g. <a href="/thoughts/GDPR" rel="noopener" class="internal-link" data-src="/thoughts/GDPR">GDPR</a>?)</li>

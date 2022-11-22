@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -465,22 +467,16 @@ Aug 1, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/funding/">funding</a> models</h2>
 <p>
-
 <a href="https://benjaminreinhardt.com/parpa" rel="noopener">https://benjaminreinhardt.com/parpa</a> / 
-
 <a href="https://benjaminreinhardt.com/wddw" rel="noopener">https://benjaminreinhardt.com/wddw</a> / 
-
 <a href="https://www.nber.org/system/files/working_papers/w24674/w24674.pdf" rel="noopener">https://www.nber.org/system/files/working_papers/w24674/w24674.pdf</a></p>
 <p>From the 
-
 <a href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/" rel="noopener">Atlantic</a>: &ldquo;In a recent paper, Pierre Azoulay and co-authors 
-
 <a href="https://www.nber.org/papers/w15466" rel="noopener">concluded</a> that Howard Hughes Medical Institute’s long-term grants to high-potential scientists made those scientists 96 percent more likely to produce breakthrough work. If this finding is borne out, it suggests that present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.&rdquo;</p>
 <p>Another potential method is research labs becoming sustainable by bringing products to market</p>
 <a href="#orgs"><h2 id="orgs"><span class="hanchor" ariaLabel="Anchor"># </span>Orgs</h2></a>
 <a href="#new-science"><h3 id="new-science"><span class="hanchor" ariaLabel="Anchor"># </span>New Science</h3></a>
 <p>
-
 <a href="https://newscience.org/" rel="noopener">https://newscience.org/</a></p>
 <blockquote>
 <p>New Science will create a network of new scientific institutes pursuing basic research while not being dependent on universities, the NIH, and the rest of traditional academia and, importantly, not being dominated culturally by academia.</p>
@@ -488,7 +484,6 @@ Aug 1, 2021
 <p>Their plan is to not replace traditional academic institutions, but to develop alternative/complementary ones to provide &lsquo;competitive pressures&rsquo; on existing ones. New Science is to research as Silicon Valley was to entrepreneurship.</p>
 <p>Incentive and organizational structures are not everything.  You can copy all of the US’s laws and structures of government and this will absolutely not lead to your country’s GDP per capita suddenly (or ever) jumping to $60k/year. Similar things can be said about research organizations.</p>
 <p>&ldquo;Instead, I believe that the most promising way to achieve large-scale improvement in the way basic scientific research is organized is to start small, help individual scientists, and to make 
-
 <a href="https://marginalrevolution.com/" rel="noopener">small steps towards a much better world</a>.&rdquo; Is this potentially good justification for 
 
 
@@ -501,10 +496,8 @@ Aug 1, 2021
   data-src="/thoughts/idea-list/">minigrants</a>?</p>
 <a href="#santa-fe"><h3 id="santa-fe"><span class="hanchor" ariaLabel="Anchor"># </span>Santa Fe</h3></a>
 <p>
-
 <a href="https://www.santafe.edu/" rel="noopener">https://www.santafe.edu/</a></p>
 <p>Themes of research generally surround complex systems and a more system-based approach to analyzing and learning about the world: 
-
 <a href="https://www.santafe.edu/research/themes" rel="noopener">https://www.santafe.edu/research/themes</a></p>
 <blockquote>
 <p>Computers were becoming more powerful, and some scientists began to dream of a day when they might simulate highly complex systems, even living systems, in silico.</p>

@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -319,13 +321,10 @@ Feb 27, 2021
 
 <blockquote>
 <p>To slow down is to end up 
-
 <a href="http://www.paulgraham.com/aord.html" rel="noopener">default dead</a>; the rhythm and pace of how technology is supposed to be built does not allow for consideration of social consequences. (Jasmine Wang)</p>
 </blockquote>
 <p>
-
 <a href="https://www.samsonzhang.com/2021/01/19/how-to-innovate-and-create-a-culture-of-innovation.html" rel="noopener">Samson</a> and 
-
 <a href="https://www.dougengelbart.org/content/view/348/000/" rel="noopener">Engelbart</a></p>
 <p>Moving fast but not breaking things</p>
 <p>A activity -&gt; core business activity (actual value producing activities)
@@ -334,7 +333,6 @@ C activity -&gt; reduce improvement-cycle time, make faster, smarter, higher-qua
 <p>This is exactly what I mean when I talk about &ldquo;bootstrapping.&rdquo; It is a very American term – the image is of someone able to perform the wonderful, impossible trick of pulling himself up by pulling up on his own bootstraps – but the idea is one that we put into practice every time that we &ldquo;boot up&rdquo; a computer. A small bit of code in a permanent read only memory knows how to go out to the disk to get more instructions, that in turn know how do to even more things, such as getting even more instructions. Eventually, this process of using successive steps to lead to ever bigger steps, building on each other, get the whole machine up and running. You start small, and keep leveraging what you know at each stage to solve a bigger and bigger problem.</p>
 <a href="#the-coming-software-apocalypse"><h2 id="the-coming-software-apocalypse"><span class="hanchor" ariaLabel="Anchor"># </span>The Coming Software Apocalypse</h2></a>
 <p>
-
 <a href="https://outline.com/AKHJUv" rel="noopener">Source: The Coming Software Apocalypse by James Somers</a></p>
 <ul>
 <li>occasionally shift the pile of sand so it settles in a more stable configuration</li>

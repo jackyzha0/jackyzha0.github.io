@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -358,7 +360,6 @@ Oct 20, 2021
 <p>The catch is that I just really enjoy helping others in pretty much all situations (with a few exceptions, like when my own personal well-being is in jeopardy or the person I just an asshole)</p>
 <p>How do I unlearn the negative connotations associated with being selfish?</p>
 <p>&ldquo;We tend to wear our ability to get by on little sleep as some sort of badge of honor that validates our work ethic. But what it really is is a profound failure of self-respect and of priorities. What could possibly be more important than your health and your sanity, from which all else springs?&rdquo; 
-
 <a href="https://www.themarginalian.org/2019/10/23/13-learnings-13-years/" rel="noopener">Source</a></p>
 <p>See also: 
 
@@ -372,13 +373,11 @@ Oct 20, 2021
   data-src="/thoughts/pain/">pain</a></p>
 <a href="#in-tech"><h2 id="in-tech"><span class="hanchor" ariaLabel="Anchor"># </span>In Tech</h2></a>
 <p>
-
 <a href="https://priyaghose.io/2021-09-03-the-technofuturists-oath/" rel="noopener">Source: the technofuturist&rsquo;s oath by <em>Priya</em></a></p>
 <p><em>If we don’t make our numbers, we won’t get the next round of funding. And without that funding, we won’t ever fulfill on our positive-sum, idealistic mission that will benefit everyone.</em> is a very common thing to hear people working at startups scrounging at money say.</p>
 <p>Does competition always kill positive-sum worlds?</p>
 <a href="#intelligently-selfish"><h2 id="intelligently-selfish"><span class="hanchor" ariaLabel="Anchor"># </span>Intelligently Selfish</h2></a>
 <p>
-
 <a href="https://www.skepticspath.org/blog/how-to-be-intelligently-selfish-dalai-lama/" rel="noopener">Source: How to be Intelligently Selfish &ndash; <em>Dalai Lama</em></a></p>
 <p>His Holiness skillfully <em>redefines</em> selfishness to mean the healthy pursuit of what’s best for yourself: what would bring you genuine happiness &ndash; caring about others.</p>
 <h2 id="porousness-of-the-selfthoughtsthe20selfmd">Porousness of 
@@ -394,10 +393,8 @@ Oct 20, 2021
 <p>Selfishness depends on what the definition of the self is. Expansions on the concept of &lsquo;self&rsquo;:</p>
 <ul>
 <li>
-
 <a href="https://en.wikipedia.org/wiki/Noosphere" rel="noopener">noosphere</a> as the extended self</li>
 <li>
-
 <a href="https://www.youtube.com/watch?v=h6fcK_fRYaI" rel="noopener">The Egg</a> by Andy Weir + Kurzgesagt</li>
 <li>
 

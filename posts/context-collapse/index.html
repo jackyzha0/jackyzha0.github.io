@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -354,11 +356,9 @@ May 8, 2021
 <p>The content I throw on Twitter is not something I would readily post on LinkedIn. I also wouldn&rsquo;t post LinkedIn-style business content to my Facebook timeline. To an extent, my social presence across these platforms is <em>incongruent</em>. The core tenet is that different apps curate different types of communities and thus social contexts. As a result, we try to separate these contexts in the best way we know how to: by acting differently, <strong>and that&rsquo;s ok.</strong></p>
 <p>It is not &lsquo;inconsistent&rsquo; for us to want to frame ourselves differently on Twitter than on Facebook, and in fact, a lot of key aspects of human behaviour point to why we default to doing so.</p>
 <p>The problem comes when these spaces start bleeding into each other, and the boundaries between the different audiences on each of them start amalgamating. The <em>overlap</em> in target audience between these spaces then becomes very large and all of these different social contexts 
-
 <a href="https://www.rewire.org/context-collapse-online/" rel="noopener">&lsquo;collapse&rsquo;</a> and it becomes increasingly difficult to maintain these separate personalities.</p>
 <a href="#whats-not-in-the-frame"><h2 id="whats-not-in-the-frame"><span class="hanchor" ariaLabel="Anchor"># </span>What&rsquo;s (not) in the frame</h2></a>
 <p>In this 
-
 <a href="https://www.youtube.com/watch?v=ZRZuEGuU_es" rel="noopener">vlogbrothers video from March</a>, John Green talks about the metaphorical frame in which people present themselves. We tailor and adjust our behaviour depending on the environment we&rsquo;re in, or the audience we find ourselves in front of. However, in doing so, we inadvertently portray an incomplete picture – we frame only the parts we want them to see.</p>
 <blockquote>
 <p>&ldquo;I mean of course the central trick of the social internet, is that whenever you make something, you choose what&rsquo;s inside the frame, but as viewers the rest of us can&rsquo;t help but believe what&rsquo;s inside the frame, because it&rsquo;s literally all we can see&rdquo;</p>
@@ -387,7 +387,6 @@ May 8, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/social-contracts/">group norms</a></h3>
 <p>In 1951, Solomon Asch conducted 
-
 <a href="https://en.wikipedia.org/wiki/Asch_conformity_experiments" rel="noopener">an experiment</a> to investigate the extent of which social pressures can affect a person&rsquo;s behaviour. In this experiment, he asked, &ldquo;Which line is the longest out of the three given?&rdquo;. In an individual setting, 99% of people answered correctly. However, when put in a room of actors instructed to answer incorrectly, nearly 75% of all participants gave at least one incorrect answer throughout 12 trials.</p>
 <p>People conform for two main reasons:</p>
 <ol>
@@ -466,9 +465,7 @@ May 8, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/bandwidth/">bandwidth</a> &ndash; there&rsquo;s only so much attention we can give to everyone. By increasing the breadth of our audience, we reduce the depth at which we can communicate with each individual. As app developers rush to combine all of these platforms into one, maybe we should step back and think whether this is really necessary.</p>
 <p>On these larger social media apps where I&rsquo;m &lsquo;connected&rsquo; to hundreds of people, I don&rsquo;t feel like I can have very insightful conversations or thoughts. Those conversations almost exclusively happen in communities like 
-
 <a href="http://nwplus.io/" rel="noopener">nwPlus</a> and 
-
 <a href="https://twitter.com/reboot_hq/" rel="noopener">Reboot</a> where there is enough alignment of values and interests that we can scrape past the surface level chit chat and get to really exploring ideas and knowing people.</p>
 <p>Because we&rsquo;re so actively a part of all of these different contexts, we are forced to be excessively general on these platforms to try to cater to everyone. We should have platforms where it&rsquo;s ok to engage with different elements of who you are. We have different groups of friends to cater to different aspects of who we are, so why should social media platforms be any different?</p>
 <p>Different social contexts call for different social behaviours, and that&rsquo;s ok.</p>

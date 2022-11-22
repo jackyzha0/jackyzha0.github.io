@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -322,7 +324,6 @@ May 4, 2021
 <p>&ldquo;Where is the knowledge we have lost in the information?&rdquo; &ndash; T.S. Eliot&rsquo;s &ldquo;The Rock&rdquo;</p>
 </blockquote>
 <p>Our obsession of applying labels to everything extends to even whether a 
-
 <a href="https://www.hot-dog.org/culture/hot-dog-sandwich" rel="noopener">hot dog is a sandwhich or not</a></p>
 <p>&ldquo;Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder.&rdquo;</p>
 <p>Why do we have labels in the first place?</p>
@@ -417,7 +418,6 @@ More on this in
 </ul>
 <ul>
 <li>McNamara Fallacy: Also known as the quantitative fallacy: making a decision involving purely quantitative observations (ignoring all others) is often wrong. 
-
 <a href="https://en.wikipedia.org/wiki/McNamara_fallacy" rel="noopener">Source</a></li>
 <li>Procrustean: an arbitrary standard is used to measure success, while completely disregarding obvious harm that results from the effort</li>
 </ul>
@@ -426,7 +426,6 @@ More on this in
 <p>Some metrics that are inherently v difficult to quantize (e.g. quality of engagement) and others that are more easy to quantize and thus optimize for (like engagement)</p>
 <a href="#on-algorithmic-decision-making"><h2 id="on-algorithmic-decision-making"><span class="hanchor" ariaLabel="Anchor"># </span>On Algorithmic decision making</h2></a>
 <p>
-
 <a href="https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/amp/" rel="noopener">Source: Can you make AI fairer than a judge? Play our courtroom algorithm game in <em>MIT Technology Review</em></a></p>
 <p>No matter how much data we collect, two people who look the same to the algorithm can always end up making different choices.</p>
 <p>We gave you two definitions of fairness: keep the error rates comparable between groups, and treat people with the same risk scores in the same way. Both of these definitions are totally defensible! But satisfying both at the same time is impossible.</p>

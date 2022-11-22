@@ -74,7 +74,7 @@ On Website Redesigns  There are endless possibilities as to what a website could
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ On Website Redesigns  There are endless possibilities as to what a website could
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -487,7 +489,6 @@ Jul 16, 2022
 <blockquote>
 <p>There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle?</p>
 <p>Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.&quot; &ndash;
-
 <a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" rel="noopener">Laurel Schwulst</a></p>
 </blockquote>
 <p>About every half a year, I get an intense urge to redesign my website. Some years I overhaul everything, ripping out the content and gutting the divs and p tags. Other years, I make only minor changes, giving it a fresh coat of paint and changing out old typography for new ones.</p>
@@ -497,7 +498,6 @@ Jul 16, 2022
 <p><img src="/thoughts/images/call for hand made tech.png" width="500" /></p>
 <blockquote>
 <p>Think about it: there’s no way to make a web page or a blog that is not an act of playing with its form at the same time as you&rsquo;re creating its content. So it just seemed natural: the world was always telling me that you worked on those two things – the container and its contents – together. (
-
 <a href="https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085" rel="noopener">Robin Sloan on websites and notes</a>)</p>
 </blockquote>
 <p>See also: <a href="/thoughts/cozy-software" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">cozy software</a></p>
@@ -510,7 +510,6 @@ Jul 16, 2022
 <li>identity should be the principles of your experience -&gt; applicable across contexts</li>
 <li>digital identity should enable novel interactions, not try to simplify existing ones</li>
 <li>identity systems rely on the concentration of power in the hands of operators who cannot possibly be fully aligned (financially, socially, or morally) with all of their users—for example, private social media companies with diverse global audiences must often 
-
 <a href="https://blog.twitter.com/en_us/topics/company/2020/suspension" rel="noopener">make decisions</a> about what constitutes an act of unjustified censorship versus an act in the interest of public safety, though they are often ill-equipped to do so
 <ul>
 <li>from 0xPARC on zk-identity</li>

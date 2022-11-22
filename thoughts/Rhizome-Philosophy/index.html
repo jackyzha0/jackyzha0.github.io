@@ -74,7 +74,7 @@ Interoperable Data on the web today is mostly treated as second-class to applica
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Interoperable Data on the web today is mostly treated as second-class to applica
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -474,7 +476,6 @@ May 6, 2022
 <a href="#interoperable"><h3 id="interoperable"><span class="hanchor" ariaLabel="Anchor"># </span>Interoperable</h3></a>
 <p>Data on the web today is mostly treated as second-class to applications. In this form, data is contextual &ndash; it only makes sense in the context of what you can do in an application. At its best, developers and companies expose this data in the form of an API, not allowing you to actually access the underlying data but rather only giving you a limited range of actions or verbs that you can perform on it.</p>
 <p>This is known as <em>verb-based interoperability</em> and it 
-
 <a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate. Data exported in this form rarely makes sense on its own outside of the application and often requires a lot of glue code in order to make the data the right format so that you can pass it off to the next application. In fact, companies are <em>incentivized</em> to not provide an easily understandable format that users can easily export. Why would they make it easier for people to leave their product?</p>
 <p>Users shouldn&rsquo;t have to keep using platforms they don&rsquo;t like just because it&rsquo;s impossible to move all the data they have to another. Instead, users should <em>want</em> to use platforms because it fits the needs they have.</p>
 <p>This might be possible if we treat data like a <strong>noun</strong>. How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated? Data-based interoperability can use the shared data directly. Once an app knows how to read a data format, it can read that data regardless of which app produced it.</p>
@@ -493,7 +494,6 @@ May 6, 2022
 <p>It was a dream of the early internet to be able to make spaces anyone can inhabit and enjoy, little pockets of <a href="/thoughts/digital-commons" rel="noopener" class="internal-link" data-src="/thoughts/digital-commons">digital commons</a> that are tended to by many.</p>
 <p>Apps should have the freedom to create new mediums of being digitally present with others. Apps should easily be able to have a digital indication that a space is lived in and occupied.</p>
 <p>As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital 
-
 <a href="https://twitter.com/samihusseni/status/1329499588982575104" rel="noopener">gardens</a> to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces. Places where people can consume the firehose of information through a feed or slowly and lazily through dialogue (see: 
 
 

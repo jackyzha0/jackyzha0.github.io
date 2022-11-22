@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -349,7 +351,6 @@ Feb 12, 2022
 
 
 <p>
-
 <a href="https://so-far.online/weekly/moving-castles-modular-and-portable-multiplayer-miniverses/" rel="noopener">Source: Moving Castles: Modular and Portable Multiplayer Miniverses by <em>ARB and GVN908</em></a></p>
 <blockquote>
 <p>“With a last squeak the castle lifted, the crew cheered as we could see across the dark forest for the first time, our eyes locked on the arid wastelands on the horizon. Now back to chat, this machine won’t move itself.”</p>
@@ -366,7 +367,6 @@ Feb 12, 2022
   href="/thoughts/design-goals/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/design-goals/">design goals</a> described in 
-
 <a href="https://arxiv.org/abs/2005.13701" rel="noopener">Modular Politics</a>)</p>
 <ol>
 <li>Collective: many contributors share control through transparent and real-time governance mechanisms. (see: 
@@ -403,7 +403,6 @@ Feb 12, 2022
 </ol>
 <a href="#the-story-of-all-powerful-wizards"><h2 id="the-story-of-all-powerful-wizards"><span class="hanchor" ariaLabel="Anchor"># </span>The Story of All Powerful Wizards</h2></a>
 <p>
-
 <a href="https://www.youtube.com/watch?v=aFKy6QsbBz4" rel="noopener">Source: A story of all powerful wizards - 20th of Nov 2021 @ 0xPARC Boston by <em>Justin Glibert</em></a></p>
 <p>Early internet: individual gardens linked by hyperlinks, tended to by all-powerful wizards who could build any worlds they wanted. Very libertarian</p>
 <p>Proposing: a bazaar, no access control and everybody plays by the same rules. Where each visitor has the power to change the world around them, as long as they respect the physics of the world.</p>

@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -319,7 +321,6 @@ Aug 9, 2021
 
 
 <p>
-
 <a href="https://placesjournal.org/article/post-it-note-city/" rel="noopener">Source: Post-It Note City by Shannon Mattern</a></p>
 <blockquote>
 <p>Alphabet has the tools to design, build, fund, power, connect, monitor, and monetize a city, and that prospect scares people.</p>
@@ -339,12 +340,10 @@ Aug 9, 2021
   href="/thoughts/dao/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/dao/">DAO</a>? Turns out this is 
-
 <a href="https://city.mirror.xyz/fpjVcNlEkW6md2aDgoc6YVXbaGquNop3AJnOyQSurbw" rel="noopener">already a thing.</a></p>
 <a href="#maps"><h2 id="maps"><span class="hanchor" ariaLabel="Anchor"># </span>Maps</h2></a>
 <p>Mapping as a way to &ldquo;hold governments accountable … fill gaps when infrastructural and municipal services are fragmented … [and] make visible social and political processes and events that might be otherwise hidden or overlooked.&rdquo; (from Crowdsourcing, Constructing, and Collaborating: Methods and Social Impacts of Mapping the World Today)</p>
 <p>More on participatory mapping and politics: 
-
 <a href="https://www.researchgate.net/publication/296431763_Mapping_Politics_inof_the_City_Cartography_as_representation" rel="noopener">Mapping Politics in/of the Modern City: Cartography as Representation</a></p>
 <p>&lsquo;Participation&rsquo; as public performance to &lsquo;signal&rsquo; democratic processes without providing the real thing.</p>
 <p>Mapwashing: &ldquo;a disingenuous use of maps, apps, and other tools of participatory planning&rdquo;</p>
@@ -406,7 +405,6 @@ Aug 9, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/feedback-loops/">feedback loop</a>, the ideas are just self-reinforcing in an echo chamber. The problem is that large corporations like Alphabet present already-fleshed-out ideas with little room for debate so that &lsquo;conversations&rsquo; and &lsquo;feedback&rsquo; are largely performative.</p>
 <p>The use of &ldquo;cheerful minimalism to mask the insidiousness of multinational tech corporations with friendliness and approachability,&rdquo; feels very similar to the weird vibe of the 
-
 <a href="https://www.youtube.com/watch?v=lFb7BOI_QFc" rel="noopener">signature corporate art style</a> and why it feels so fake</p>
 <p>From Jasmine: With software, you can <strong>find</strong> product market fit, ignore edge cases and people who won&rsquo;t make you money, etc. But with cities, you are democratically obligated to build for everyone (or at least the majority)</p>
 <a href="#labels-and-quantization"><h2 id="labels-and-quantization"><span class="hanchor" ariaLabel="Anchor"># </span>Labels and Quantization</h2></a>

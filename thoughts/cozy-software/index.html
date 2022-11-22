@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -462,7 +464,6 @@ Feb 20, 2022
   data-src="/thoughts/instrumentalism/">instrumental</a> technology</p>
 <a href="#an-app-can-be-a-home-cooked-meal"><h2 id="an-app-can-be-a-home-cooked-meal"><span class="hanchor" ariaLabel="Anchor"># </span>An app can be a home-cooked meal</h2></a>
 <p>Source: 
-
 <a href="https://www.robinsloan.com/notes/home-cooked-app/" rel="noopener">Robin Sloan</a></p>
 <p>Clay Shirky: “Situated software, by contrast, doesn’t need to be personalized — it is personal from its inception.”</p>
 <p>I can, at this point, make the things happen on computers that I want to make happen. At the same time, I would not last a day as a professional software engineer. Leave me in charge of a critical database and you will return to a smoldering crater.</p>
@@ -470,7 +471,6 @@ Feb 20, 2022
 <a href="#personal-software"><h2 id="personal-software"><span class="hanchor" ariaLabel="Anchor"># </span>Personal Software</h2></a>
 <a href="#spring-83"><h3 id="spring-83"><span class="hanchor" ariaLabel="Anchor"># </span>Spring &lsquo;83</h3></a>
 <p>
-
 <a href="https://www.robinsloan.com/lab/specifying-spring-83/" rel="noopener">Source</a></p>
 <p>I love the disclaimer at the top: &ldquo;It’s okay to share this link, but I want to underscore that I am sending it specifically to you with the hope that you will … really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.&rdquo;</p>
 <ul>
@@ -479,7 +479,6 @@ Feb 20, 2022
 </ul>
 <a href="#spatial-computing"><h3 id="spatial-computing"><span class="hanchor" ariaLabel="Anchor"># </span>Spatial Computing</h3></a>
 <p>
-
 <a href="https://www.figma.com/file/OYg9sU8nNTpOczssb2A4BH/Scrapchat-with-Rebane" rel="noopener">Source</a></p>
 <blockquote>
 <p>fuck responsive layouts, all my homies hate responsive layouts</p>
@@ -487,37 +486,29 @@ Feb 20, 2022
 <ul>
 <li>There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.</li>
 <li>The 
-
 <a href="https://maggieappleton.com/spatial-web?curius=1573" rel="noopener">spatial web</a>
 <ul>
 <li>
-
 <a href="https://nette.io/" rel="noopener">https://nette.io/</a></li>
 <li>
-
 <a href="https://www.kosmik.app/" rel="noopener">https://www.kosmik.app/</a></li>
 <li>
-
 <a href="https://sprout.place/" rel="noopener">https://sprout.place/</a></li>
 </ul>
 </li>
 <li>
-
 <a href="https://twitter.com/azlenelza/status/1418749070336684034" rel="noopener">https://twitter.com/azlenelza/status/1418749070336684034</a></li>
 <li>
-
 <a href="https://twitter.com/raunofreiberg/status/1450479522609090562" rel="noopener">https://twitter.com/raunofreiberg/status/1450479522609090562</a></li>
 </ul>
 <a href="#handmade-web"><h2 id="handmade-web"><span class="hanchor" ariaLabel="Anchor"># </span>Handmade Web</h2></a>
 <p>From J.R. Carpenter&rsquo;s 
-
 <a href="http://luckysoap.com/statements/handmadeweb.html" rel="noopener"><em>A Handmade Web</em></a></p>
 <blockquote>
 <p>I evoke the term &lsquo;handmade web&rsquo; to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or <a href="/thoughts/identity" rel="noopener" class="internal-link" data-src="/thoughts/identity">identity</a>.</p>
 </blockquote>
 <a href="#folk-software"><h2 id="folk-software"><span class="hanchor" ariaLabel="Anchor"># </span>Folk Software</h2></a>
 <p>
-
 <a href="https://maggieappleton.com/folk-interfaces" rel="noopener">Source</a></p>
 <blockquote>
 <p>People reappropriating existing software to solve their own unique problems</p>
@@ -530,15 +521,12 @@ Feb 20, 2022
 <li><a href="/posts/casual-magic" rel="noopener" class="internal-link" data-src="/posts/casual-magic">fun experiments with sunsets</a>
 <ul>
 <li>
-
 <a href="https://old.mark-beasley.com/peer-peer-sunset/index.html" rel="noopener">p2p sunsets</a></li>
 <li>
-
 <a href="https://tiffanyq.github.io/sunrise/" rel="noopener">animated digital sunset</a></li>
 </ul>
 </li>
 <li>
-
 <a href="https://tilde.town/~troido/cadastre/town.html" rel="noopener">Little towns of people&rsquo;s plots :))</a></li>
 </ul>
 

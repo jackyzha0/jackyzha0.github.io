@@ -74,7 +74,7 @@ Introduction What is Docker? Docker is a tool that makes it really easy to packa
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Introduction What is Docker? Docker is a tool that makes it really easy to packa
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -321,7 +323,6 @@ Jul 22, 2020
 
 
 <p>Content from my own 
-
 <a href="https://github.com/jackyzha0/docker-explained" rel="noopener">&lsquo;Docker Explained&rsquo; repo</a>. Check out the repository for example code!</p>
 <a href="#introduction"><h2 id="introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Introduction</h2></a>
 <a href="#what-is-docker"><h3 id="what-is-docker"><span class="hanchor" ariaLabel="Anchor"># </span>What is Docker?</h3></a>
@@ -334,7 +335,6 @@ Jul 22, 2020
 <p>Docker makes it super easy to work with these containers and, by proxy, you can get all the cool benefits of containers easily too! It also allows you to programmatically define a container through code, meaning you can collaborate and work on Docker containers just as you would with a regular piece of code through version control like <code>git</code>.</p>
 <a href="#installing-docker"><h2 id="installing-docker"><span class="hanchor" ariaLabel="Anchor"># </span>Installing Docker</h2></a>
 <p>More detailed instructions can be found 
-
 <a href="https://docs.docker.com/get-docker/" rel="noopener">here</a>.</p>
 <a href="#parts-of-docker"><h2 id="parts-of-docker"><span class="hanchor" ariaLabel="Anchor"># </span>Parts of Docker</h2></a>
 <a href="#docker-containers"><h3 id="docker-containers"><span class="hanchor" ariaLabel="Anchor"># </span>Docker Containers</h3></a>
@@ -354,7 +354,6 @@ Jul 22, 2020
 <a href="#dockerfile"><h3 id="dockerfile"><span class="hanchor" ariaLabel="Anchor"># </span>Dockerfile</h3></a>
 <p>The Dockerfile are the actual specific instructions for how to create the actual image or &rsquo;template&rsquo;. The Dockerfile starts off by defining a &lsquo;base-layer&rsquo;, which serve as the basis for your actual image. Some common base layers are <code>ubuntu</code> (which contains a minimal install of the actual Ubuntu operating system) and <code>python</code> (which contains everything needed to run a basic Python app).</p>
 <p>I won&rsquo;t dive into too much details about each command you can use as these will be described more in-depth within the examples. You can find detailed documentation on the commands you can use in a Dockerfile here: 
-
 <a href="https://docs.docker.com/engine/reference/builder/" rel="noopener">https://docs.docker.com/engine/reference/builder/</a></p>
 <a href="#docker-cli"><h2 id="docker-cli"><span class="hanchor" ariaLabel="Anchor"># </span>Docker CLI</h2></a>
 <p>Great, so now I know a little bit about how Docker actually works, how do I get started? First, let&rsquo;s make sure our Docker install works correctly. You can do this by opening your favourite terminal and entering <code>docker run hello-world</code>. You should get something that looks like:</p>
@@ -381,7 +380,6 @@ Jul 22, 2020
 </blockquote>
 <p>To built an image, you can do <code>docker build . -t &lt;name-of-image&gt;</code> which tells Docker to look in the current directory for a file called <code>Dockerfile</code> and to follow the instructions inside to build an image. After doing so, tag the image so we can easily find it later. Docker image tags let you version your images as well. Say you wanted to build a v1 for your image, you would do <code>docker build . -t &lt;name-of-image&gt;:v1</code>. If you have a different name for your Dockerfile, you can also refer to it using the <code>-f</code> flag like so: <code>docker build . -t &lt;name-of-image&gt; -f &lt;name-of-dockerfile&gt;</code></p>
 <p>More info can be found here: 
-
 <a href="https://docs.docker.com/engine/reference/commandline/build/" rel="noopener">https://docs.docker.com/engine/reference/commandline/build/</a></p>
 <a href="#docker-image-ls"><h3 id="docker-image-ls"><span class="hanchor" ariaLabel="Anchor"># </span><code>docker image ls</code></h3></a>
 <blockquote>
@@ -403,7 +401,6 @@ Jul 22, 2020
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>More info can be found here: 
-
 <a href="https://docs.docker.com/engine/reference/commandline/image_ls/" rel="noopener">https://docs.docker.com/engine/reference/commandline/image_ls/</a></p>
 <a href="#docker-run"><h3 id="docker-run"><span class="hanchor" ariaLabel="Anchor"># </span><code>docker run</code></h3></a>
 <blockquote>
@@ -412,7 +409,6 @@ Jul 22, 2020
 <p>Now that you&rsquo;ve built an image, you can just run it by doing <code>docker run &lt;name-of-container&gt;:&lt;version&gt;</code>. More often than not, you can just use the latest version of the image, <code>docker run &lt;name-of-container&gt;:latest</code>. However, certain applications (like servers) need to listen on specific ports. By default, Docker doesn&rsquo;t allow containers to use ports on your local machine, but you can allow this by specifying ports using the <code>-p</code> flag, <code>docker run -p &lt;host-port&gt;:&lt;container-port&gt; &lt;name-of-container&gt;</code>. If your container listens on port 3000, but you want it to appear as port 5000 on your local machine, it would look like <code>docker run -p 5000:3000 &lt;name-of-container&gt;</code></p>
 <p>If you want to run your container in the background in a detached manner, you can just add the <code>-d</code> flag.</p>
 <p>More info can be found here: 
-
 <a href="https://docs.docker.com/engine/reference/commandline/run/" rel="noopener">https://docs.docker.com/engine/reference/commandline/run/</a></p>
 <a href="#docker-ps"><h3 id="docker-ps"><span class="hanchor" ariaLabel="Anchor"># </span><code>docker ps</code></h3></a>
 <blockquote>
@@ -427,13 +423,10 @@ Jul 22, 2020
 <a href="#docker-examples"><h2 id="docker-examples"><span class="hanchor" ariaLabel="Anchor"># </span>Docker Examples</h2></a>
 <ol>
 <li>
-
 <a href="https://github.com/jackyzha0/docker-explained/tree/master/1-basic-python/" rel="noopener">Basic Python app with dependencies</a></li>
 <li>
-
 <a href="https://github.com/jackyzha0/docker-explained/tree/master/2-basic-node" rel="noopener">Node.js and Express app</a></li>
 <li>
-
 <a href="https://github.com/jackyzha0/docker-explained/tree/master/3-multi-stage-go" rel="noopener">Multi-stage Go app</a></li>
 </ol>
 <a href="#further-reading"><h2 id="further-reading"><span class="hanchor" ariaLabel="Anchor"># </span>Further reading</h2></a>
@@ -442,31 +435,23 @@ Jul 22, 2020
 <p>Docker Compose is a tool that lets you start multiple Docker containers together and configure how they interact.</p>
 <ul>
 <li>
-
 <a href="https://docs.docker.com/compose/" rel="noopener">https://docs.docker.com/compose/</a></li>
 <li>
-
 <a href="https://github.com/docker/compose" rel="noopener">https://github.com/docker/compose</a></li>
 </ul>
 <a href="#kubernetes-and-microservices"><h2 id="kubernetes-and-microservices"><span class="hanchor" ariaLabel="Anchor"># </span>Kubernetes and Microservices</h2></a>
 <p>mIcRoSerViCeS you may hear them say. What&rsquo;s all the hype about? Basically, its the 
-
 <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle" rel="noopener">single responsibility principle</a> but applied to services. This means that each responsibility should, ideally, be split out into its own service and be completely responsible for that one thing. This lends itself really easily to Docker and containers. Kubernetes is a system that makes it really easy to deploy, scale, and manage a bunch of containers, making it near ideal in creating a microservices architecture using Docker.</p>
 <ul>
 <li>
-
 <a href="https://microservices.io/" rel="noopener">https://microservices.io/</a></li>
 <li>
-
 <a href="https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9" rel="noopener">https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9</a></li>
 <li>
-
 <a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/" rel="noopener">https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/</a></li>
 <li>
-
 <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" rel="noopener">https://kubernetes.io/docs/tutorials/kubernetes-basics/</a></li>
 <li>
-
 <a href="https://opensource.com/article/17/11/getting-started-kubernetes" rel="noopener">https://opensource.com/article/17/11/getting-started-kubernetes</a></li>
 </ul>
 <a href="#deploying-to-the-cloud"><h2 id="deploying-to-the-cloud"><span class="hanchor" ariaLabel="Anchor"># </span>Deploying to the Cloud</h2></a>
@@ -474,35 +459,29 @@ Jul 22, 2020
 <a href="#google-cloud-run-gcr"><h3 id="google-cloud-run-gcr"><span class="hanchor" ariaLabel="Anchor"># </span>Google Cloud Run (GCR)</h3></a>
 <blockquote>
 <p>
-
 <a href="https://cloud.google.com/run" rel="noopener">https://cloud.google.com/run</a></p>
 </blockquote>
 <p>GCR completely manages scaling and deploying your containers for you so you don&rsquo;t need to worry about server management (yay serverless)! Simply upload your images to Google Container Registry, and create a new Cloud Run deployment.</p>
 <ul>
 <li>
-
 <a href="https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy" rel="noopener">https://cloud.google.com/run/docs/quickstarts/prebuilt-deploy</a></li>
 <li>
-
 <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy" rel="noopener">https://cloud.google.com/run/docs/quickstarts/build-and-deploy</a></li>
 </ul>
 <a href="#google-kubernetes-engine-gke"><h3 id="google-kubernetes-engine-gke"><span class="hanchor" ariaLabel="Anchor"># </span>Google Kubernetes Engine (GKE)</h3></a>
 <blockquote>
 <p>
-
 <a href="https://cloud.google.com/kubernetes-engine" rel="noopener">https://cloud.google.com/kubernetes-engine</a></p>
 </blockquote>
 <p>Want to run your own Kubernetes cluster and have a lot of money to burn? GKE may be right for you! Other than the price, GKE is super user friendly and makes it really easy to manage and visualize your deployments.</p>
 <a href="#amazon-fargate"><h3 id="amazon-fargate"><span class="hanchor" ariaLabel="Anchor"># </span>Amazon Fargate</h3></a>
 <blockquote>
 <p>
-
 <a href="https://aws.amazon.com/fargate/" rel="noopener">https://aws.amazon.com/fargate/</a></p>
 </blockquote>
 <p>Think GCR but Bezos.</p>
 <ul>
 <li>
-
 <a href="https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361" rel="noopener">https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361</a></li>
 </ul>
 <a href="#closing"><h1 id="closing"><span class="hanchor" ariaLabel="Anchor"># </span>Closing</h1></a>

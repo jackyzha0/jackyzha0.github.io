@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -472,7 +474,6 @@ Apr 25, 2022
 </blockquote>
 <a href="#ink-and-switch"><h2 id="ink-and-switch"><span class="hanchor" ariaLabel="Anchor"># </span>Ink and Switch</h2></a>
 <p>
-
 <a href="https://www.inkandswitch.com/local-first/" rel="noopener">You own your data, in spite of the cloud</a></p>
 <p>To sum up: the cloud gives us collaboration, but old-fashioned apps give us ownership. Can’t we have the best of both worlds?</p>
 <ul>
@@ -521,14 +522,12 @@ Apr 25, 2022
 </ol>
 <a href="#tlfs"><h2 id="tlfs"><span class="hanchor" ariaLabel="Anchor"># </span>TLFS</h2></a>
 <p>From 
-
 <a href="https://cloudpeers.co/" rel="noopener">Cloudpeers</a></p>
 <p>The Local-First SDK offers a stack to write applications as productively as when using state-of-the-art cloud-based architectures. It enables building serverless apps that traditionally require backend engineers to build, scale and maintain.</p>
 <p>Really great SDK but unsure how this differs from existing platforms like <a href="/thoughts/Yjs" rel="noopener" class="internal-link" data-src="/thoughts/Yjs">Yjs</a> or <a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a> (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.</p>
 <p>Actually uses a Cambria-like system for data lensing which is cool.</p>
 <a href="#locutus"><h2 id="locutus"><span class="hanchor" ariaLabel="Anchor"># </span>Locutus</h2></a>
 <p>Locutus is a decentralized key-value database. It uses the same 
-
 <a href="https://freenetproject.org/assets/papers/lic.pdf" rel="noopener">small world</a> routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.</p>
 <p>Locutus is <em>not</em> append-only and has mutable state.</p>
 <p>Splits are merged using <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a></p>

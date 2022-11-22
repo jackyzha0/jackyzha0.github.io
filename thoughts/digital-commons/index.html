@@ -74,7 +74,7 @@ Online Parks  Eli Pariser in Wired"
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Online Parks  Eli Pariser in Wired"
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -418,11 +420,9 @@ Jul 15, 2021
   href="/thoughts/urban-planning/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/urban-planning/">urban planning</a> to social media and digital spaces? -&gt; 
-
 <a href="https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12" rel="noopener">https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12</a></p>
 <a href="#online-parks"><h2 id="online-parks"><span class="hanchor" ariaLabel="Anchor"># </span>Online Parks</h2></a>
 <p>
-
 <a href="https://www.wired.com/story/to-mend-a-broken-internet-create-online-parks/" rel="noopener">Eli Pariser in Wired</a></p>
 <blockquote>
 <p>When technologists refer to platforms like Facebook and Twitter as “walled gardens”—environments where the corporate owner has total control—they’re literally referring to those same private pleasure gardens that Whitman was reacting to. And while Facebook and Twitter may be open to all, as in those gardens, their owners determine the rules.</p>
@@ -442,7 +442,6 @@ Jul 15, 2021
 </ul>
 <a href="#internet-studio-gardens"><h2 id="internet-studio-gardens"><span class="hanchor" ariaLabel="Anchor"># </span>Internet Studio Gardens</h2></a>
 <p>By 
-
 <a href="https://jon.bo/posts/internet-studio-gardens/" rel="noopener">Jon Borichevskiy</a></p>
 <p><a href="/thoughts/software-principles" rel="noopener" class="internal-link" data-src="/thoughts/software-principles">Principles for Internet Spaces</a></p>
 <ol>
@@ -490,7 +489,6 @@ Jul 15, 2021
 <p>Can we create digital common spaces like parks and things without everyone online needing to be exceedingly intentioned?</p>
 <p>Commons should be safe, low pressure contexts for random interaction. They are public spaces where a lot of people coincidentally share the same space for a short period in time. It has the same energy as commuting &ndash; a familiar yet ever-changing context.</p>
 <p>The park and the trees may stay the same most times you visit yet the people on the benches and walking on the paved paths are always different. One can sit and observe all the people moving by, 
-
 <a href="https://en.wikipedia.org/wiki/People-watching" rel="noopener">wondering what their life is like.</a>.</p>
 <blockquote>
 <p>&ldquo;What would it look like to do that with your favourite internet neighbourhoods?&rdquo;</p>
@@ -542,7 +540,6 @@ Jul 15, 2021
   data-src="/thoughts/ephemereal-content/">real time</a> in an effort to replicate the fleeting nature of face-to-face conversation; vanishing messages, video chats, and audio rooms. Yet, rarely do any of these platforms leave any indication whether a conversation ever happened between two people.</p>
 <p>Is there any way we can create shared <em>artifacts</em> that are permanent and can be grown over time? A digital indication that a space is lived in and occupied?</p>
 <p>As of now, most platforms keep a primative chat log or history but thats it. What if there was a way to create digital 
-
 <a href="https://twitter.com/samihusseni/status/1329499588982575104" rel="noopener">gardens</a> to foster and maintain existing relationships? A commonspace you could both take care of, share, and contribute to. Completely private common spaces often allow users to put whatever and allow people can construct their own digital nooks and cozy spaces.</p>
 <p>Maybe this involves having a shared calendar, todo list, books. Or even just a space to co-live and co-exist in 
 
@@ -557,12 +554,10 @@ Jul 15, 2021
 <p>Can we create permanence of artifacts without sacrificing ephemerality in medium?</p>
 <a href="#tools-for-digital-spaces"><h2 id="tools-for-digital-spaces"><span class="hanchor" ariaLabel="Anchor"># </span>Tools for Digital Spaces</h2></a>
 <p>Given that there are so many different types of digital spaces, I wanted to explore how different tools are supporting and facilitating different sorts of digital human interaction. Can we use urban planning to help us 
-
 <a href="https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12" rel="noopener">plan digital spaces</a>?</p>
 <p>The hope is to be able to move away from the &lsquo;feed&rsquo;-based model of browsing the social internet and to create safe spaces to interact at different scales.</p>
 <blockquote>
 <p>The “feed”–an archaic form of content consumption that is effectively just a direct visual manifestation of the data structure that powers it – is a medium that is effectively designed to be consumed alone.  &ndash;
-
 <a href="https://www.somewheregood.com/garden/trust-and-safety/" rel="noopener">Humphrey Obuobi</a></p>
 </blockquote>
 <a href="#town-square"><h3 id="town-square"><span class="hanchor" ariaLabel="Anchor"># </span>Town Square</h3></a>

@@ -74,7 +74,7 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -302,12 +304,123 @@ Sep 7, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -322,6 +435,29 @@ Sep 7, 2022
 
 <p>Focuses on the dynamics of strategy change by agents over time.</p>
 <p>Evolutionary game theory has helped to explain the basis of altruistic behaviours in Darwinian evolution.</p>
+<p>Compute the fitness of each group. Watch how each group fares in indefinitely repeated interactions. Fitness of a strategy is $Fitness(S) = \frac{EU(S)}{\textrm{Avg } EU }$</p>
+<a href="#evolutionarily-stable-strategy-ess"><h2 id="evolutionarily-stable-strategy-ess"><span class="hanchor" ariaLabel="Anchor"># </span>Evolutionarily Stable Strategy (ESS)</h2></a>
+<p>An evolutionarily stable strategy is one that, once fixed in a population, has higher fitness than any other available strategy</p>
+<p>In formal terms, $x$ is an ESS iff</p>
+<ol>
+<li>$EU(x,x) \geq EU(y,y)$ for any strategy $y$</li>
+<li>$EU(x,x) &gt; EU(y,x)$ or $EU(x,y) &gt; EU(y,y)$ for any $y$</li>
+</ol>
+<a href="#ethics"><h2 id="ethics"><span class="hanchor" ariaLabel="Anchor"># </span>Ethics</h2></a>
+<p>Can game theory give us substantive <a href="/thoughts/ethics" rel="noopener" class="internal-link" data-src="/thoughts/ethics">ethical</a>/political recommendations?</p>
+<a href="#gauthiers-theory"><h3 id="gauthiers-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Gauthier&rsquo;s Theory</h3></a>
+<ul>
+<li>The Nash bargaining solution provides a solution to the problem of fair division, based entirely on assumptions about rationality.
+<ul>
+<li>Objection: Hume&rsquo;s Principle, we can&rsquo;t derive what we <em>ought</em> to do from what <em>is</em> true</li>
+</ul>
+</li>
+<li>Include a &lsquo;bridge-premise&rsquo; that whatever a <a href="/thoughts/rationality" rel="noopener" class="internal-link" data-src="/thoughts/rationality">rational</a> group of people agree upon should be implemented (similar to <a href="/thoughts/Social-Contract-Theory#rawlrsquos-theory-of-justice" rel="noopener" class="internal-link" data-src="/thoughts/Social-Contract-Theory">Rawl&rsquo;s Theory of Justice</a>)
+<ul>
+<li>Objection: Exploitation may be beneficial&hellip; but is it moral</li>
+</ul>
+</li>
+</ul>
 
 
     </article>
@@ -339,10 +475,20 @@ Sep 7, 2022
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/game-theory/" data-ctx="thoughts/Evolutionary game theory" data-src="/thoughts/game-theory" class="internal-link">Game Theory</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

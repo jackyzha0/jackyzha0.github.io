@@ -75,7 +75,7 @@ See also: [[thoughts/inevitability of centralization|inevitability of centraliza
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -119,15 +119,17 @@ See also: [[thoughts/inevitability of centralization|inevitability of centraliza
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -470,7 +472,6 @@ Aug 6, 2021
 </ul>
 <a href="#centralization"><h2 id="centralization"><span class="hanchor" ariaLabel="Anchor"># </span>Centralization</h2></a>
 <p>
-
 <a href="https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e" rel="noopener">Source: Why Decentralization Matters by <em>Chris Dixon</em></a></p>
 <p>Follow a predictable life cycle along the S-shaped adoption curve.</p>
 <p>At the beginning, will do everything they can to garner usage and appear more valuable as platforms with multi-sided positive network effects. However, when they move up the S-curve, their power grows. Eventually, the relationships turn from 
@@ -497,7 +498,6 @@ Aug 6, 2021
 </blockquote>
 <a href="#types-of-centralization"><h3 id="types-of-centralization"><span class="hanchor" ariaLabel="Anchor"># </span>Types of Centralization</h3></a>
 <p>
-
 <a href="https://www.ietf.org/archive/id/draft-nottingham-avoiding-internet-centralization-03.html#name-authors-address" rel="noopener">From IETF Draft</a></p>
 <ol>
 <li>Proprietary Centralization: creation of a protocol/application with a fixed role for a specific party (e.g. making a protocol for streaming on Zoom). Generally undesirable as it most often reflect commercial goals (strong desire to capture financial benefits by &ldquo;locking in&rdquo; users to a proprietary service)</li>
@@ -523,7 +523,6 @@ Aug 6, 2021
 </ol>
 <a href="#decentralization-as-activism"><h3 id="decentralization-as-activism"><span class="hanchor" ariaLabel="Anchor"># </span>Decentralization as Activism</h3></a>
 <p>
-
 <a href="https://www.gwern.net/docs/technology/2018-07-25-johnbackus-howdecentralizationevolves.html" rel="noopener">Source: Resistant protocols: How decentralization evolves by <em>John Backus</em></a></p>
 <blockquote>
 <p>Decentralization doesn&rsquo;t work in a vacuum, mainstream decentralized systems require a degree of activism to keep the system working</p>

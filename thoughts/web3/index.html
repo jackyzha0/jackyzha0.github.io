@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -432,11 +434,9 @@ Jul 28, 2021
   data-src="/thoughts/decentralization/">decentralization</a>, it doesn&rsquo;t guarantee it.</p>
 <blockquote>
 <p>“The point isn’t ‘web3’, it isn’t ‘decentralization’ for the word’s sake. The point is developing tools that allow us to leverage computers to collaborate more effectively. It’s about accountability and choosing for ourselves what to trust. It’s about withholding trust from strangers on the internet but holding out the belief that we can build a better way.” (
-
 <a href="https://medium.com/@danfinlay/what-moxie-missed-on-web3-wallets-8dc572e7f39b" rel="noopener">Dan Finlay</a>)</p>
 </blockquote>
 <p>The cyberpunk spirit: the basic property of which adversarial conflict continues to heavily favour the defender. <strong>It should be much more expensive to destroy or disrupt than they are to use and maintain</strong> &ndash; 
-
 <a href="https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51" rel="noopener">Vitalkik Buterin</a></p>
 <p>Of course, this is not perfect technology. I do have a few 
 
@@ -562,7 +562,6 @@ Jul 28, 2021
   data-src="/thoughts/Arweave/">Arweave</a></li>
 </ul>
 <p>Notes on 
-
 <a href="https://kernel.community/en/" rel="noopener">Kernel</a> curriculum: 
 
 
@@ -575,7 +574,6 @@ Jul 28, 2021
   data-src="/thoughts/kernel/">Kernel</a></p>
 <a href="#web-history"><h2 id="web-history"><span class="hanchor" ariaLabel="Anchor"># </span>Web History</h2></a>
 <p>
-
 <a href="https://ethereum.org/en/developers/docs/web2-vs-web3/" rel="noopener">Ethereum article</a></p>
 <p>We are in the process from changing platforms to <em>protocols</em>; the difference being that, in protocols, there is no central appeal.</p>
 <a href="#web1--information-economy-1980s-to-2000s"><h3 id="web1--information-economy-1980s-to-2000s"><span class="hanchor" ariaLabel="Anchor"># </span>Web1,  Information Economy [1980s to 2000s]</h3></a>
@@ -611,7 +609,6 @@ Jul 28, 2021
   data-src="/thoughts/peer-to-peer/">P2P</a> interactions on a global scale, but always with a middleman: a platform acting as a trusted intermediary between two people who do not know or trust each other.</p>
 <p>General migration from open services to more sophisticated, centralized services</p>
 <p>Effects include frequent incursions on personal <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">privacy</a>, the spread of misinformation, and the ‘attention economy,’ all of which have fundamentally changed how we relate to one another, and destabilized civic engagement and labor across industries. 
-
 <a href="https://gitcoin.co/blog/seeking-a-new-kind-of-public-good/" rel="noopener">Source</a></p>
 <a href="#web3-token-economy-2020s-to-present"><h3 id="web3-token-economy-2020s-to-present"><span class="hanchor" ariaLabel="Anchor"># </span>Web3, Token Economy [2020s to present]</h3></a>
 <p>Decentralized apps (usually running on the blockchain).</p>
@@ -642,7 +639,6 @@ Jul 28, 2021
 <p>Verifiability is the atom of web3. It is what the hyperlink was for Web1.</p>
 <a href="#cool-applications"><h2 id="cool-applications"><span class="hanchor" ariaLabel="Anchor"># </span>Cool Applications</h2></a>
 <h3 id="gitcoinhttpsgitcoinco">
-
 <a href="https://gitcoin.co/" rel="noopener">Gitcoin</a></h3>
 <p>How do we incentivize 
 

@@ -74,7 +74,7 @@ The process of identifying users is how social media platforms monetize their op
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ The process of identifying users is how social media platforms monetize their op
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -319,14 +321,12 @@ Oct 30, 2021
 
 
 <p>
-
 <a href="https://digitaltattoo.ubc.ca/2020/03/30/guest-post-whats-in-a-category-definitions-of-authenticity-transparency-and-the-social-bot/" rel="noopener">Source: What’s in a Category: Definitions of Authenticity, Transparency, and the Social-Bot by <em>Eseohe Ojo</em></a></p>
 <p>The process of identifying users is how social media platforms monetize their operations</p>
 <p>Big companies avoid fully detailing how they identify and categorize uses, claiming that the information is &ldquo;proprietary&rdquo;.</p>
 <p>&ldquo;They argue, this surveillance allows them ways to minimize the gamification of the social media system by disruptive actors, and by segmentation and differentiation, they may better protect the authentic user from the inauthentic.&rdquo;</p>
 <a href="#algorithmic-transparency-in-the-news-media"><h2 id="algorithmic-transparency-in-the-news-media"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Transparency in the News Media</h2></a>
 <p>
-
 <a href="http://www.nickdiakopoulos.com/wp-content/uploads/2016/07/Algorithmic-Transparency-in-the-News-Media-Final.pdf" rel="noopener">PDF in Digital Journalism</a></p>
 <ul>
 <li>Deuze (2005, 455) defines transparency as the “ways in which people both inside and external to journalism are given a chance to monitor, check, criticize and even intervene in the journalistic process.”</li>
@@ -351,7 +351,6 @@ Oct 30, 2021
 </blockquote>
 <a href="#explanations-as-mechanisms-for-supporting-algorithmic-transparency"><h2 id="explanations-as-mechanisms-for-supporting-algorithmic-transparency"><span class="hanchor" ariaLabel="Anchor"># </span>Explanations as Mechanisms for Supporting Algorithmic Transparency</h2></a>
 <p>
-
 <a href="https://dl.acm.org/doi/pdf/10.1145/3173574.3173677" rel="noopener">PDF in CHI 2018</a></p>
 <ul>
 <li>Transparency involves encountering non-obvious information that is difficult for an individual to learn or experience directly, about how and why a system works the way it does and what this means for the system’s outputs.</li>

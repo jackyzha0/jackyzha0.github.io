@@ -74,7 +74,7 @@ Trusting the word of others is necessary to expand knowledge beyond perception, 
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Trusting the word of others is necessary to expand knowledge beyond perception, 
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -357,7 +359,6 @@ Mar 9, 2022
   data-src="/thoughts/Nagels-Bat-Argument/">Nagel&rsquo;s Bat Argument</a>)</p>
 <a href="#epistemic-authority-with-anand-vaidya"><h2 id="epistemic-authority-with-anand-vaidya"><span class="hanchor" ariaLabel="Anchor"># </span>Epistemic Authority with Anand Vaidya</h2></a>
 <p>
-
 <a href="https://www.youtube.com/watch?v=oPUbuLUiK5Y" rel="noopener">YouTube talk</a></p>
 <ul>
 <li>How do we distinguish between appeals to authority that are rationally/ethically problematic and appeals to authority that are morally and rationally wholesome and skillful</li>
@@ -497,7 +498,6 @@ Mar 9, 2022
 <ul>
 <li>From a purely mathematical perspective, this is factual. Achieving consensus is difficult, especially among a wide net of epistemic agents. In fact, without formal processes like voting or delegation, just peer-based discussion leads to a factorial explosion in time-taken to reach consensus.</li>
 <li>Thus in most cases, rough consensus (I found this proposal particularly interesting: 
-
 <a href="https://datatracker.ietf.org/doc/html/rfc7282" rel="noopener">https://datatracker.ietf.org/doc/html/rfc7282</a>) or trusting delegates (e.g. authorities like the CDC) to not be biased and accurately evaluate other authorities (e.g. scientists and pharmaceutical companies responsible for inventing/deploying the vaccine) is usually suitable when balancing tradeoffs between speed (for example when timeliness during a pandemic is important) and correctness (making sure vaccines are safe to the general public).</li>
 </ul>
 </li>

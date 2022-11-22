@@ -8,8 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Two ways to look at game theory
- Normative tool: how to make rational choices Descriptive/explanatory tool: help explain social behaviour  Some social practices don&rsquo;t appear rational in normative game theory but can be explained using descriptive game theory"
+    content="Modelling decisions where the outcome partially depends upon choices made by other rational agents. Assumes:
+ Individual Rationality: each player maximizes their own utility and knows the full game tree/table Common Knowledge of Rationality: each player knows that all other players are rational  Two ways to look at game theory"
   />
   <title>
     Game Theory
@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -302,6 +304,30 @@ Aug 12, 2021
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -440,6 +466,186 @@ Aug 12, 2021
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
     
   
 
@@ -454,12 +660,68 @@ Aug 12, 2021
 
 
 
+<p>Modelling decisions where the outcome partially depends upon choices made by other rational agents. Assumes:</p>
+<ol>
+<li>Individual Rationality: each player maximizes their own utility and knows the full game tree/table</li>
+<li>Common Knowledge of Rationality: each player knows that all other players are rational</li>
+</ol>
 <p>Two ways to look at game theory</p>
 <ol>
 <li>Normative tool: how to make rational choices</li>
 <li>Descriptive/explanatory tool: help explain social behaviour</li>
 </ol>
 <p>Some social practices don&rsquo;t appear rational in normative game theory but can be explained using descriptive game theory</p>
+<p>Some distinctions:</p>
+<ol>
+<li><a href="/thoughts/zero-sum" rel="noopener" class="internal-link" data-src="/thoughts/zero-sum">Zero-sum</a> vs non-zero sum games (e.g. <a href="/thoughts/positive-sum" rel="noopener" class="internal-link" data-src="/thoughts/positive-sum">positive sum</a>)
+<ul>
+<li>In a zero sum game, the payoffs always sum to 0</li>
+</ul>
+</li>
+<li>Simultaneous vs <a href="/thoughts/sequential-games" rel="noopener" class="internal-link" data-src="/thoughts/sequential-games">sequential games</a>
+<ul>
+<li>In simultaneous games, all players choose independent at the same time</li>
+</ul>
+</li>
+<li>Perfect information vs imperfect information games</li>
+<li>Symmetric vs non-symmetric games
+<ul>
+<li>In symmetric games, all actors have the same set of actions to choose from</li>
+</ul>
+</li>
+<li>Two-person vs n-person games</li>
+<li>Cooperative vs non-cooperative games
+<ul>
+<li>In cooperative games, players get to choose the outcome together (i.e. form binding agreements in the form of &lsquo;if I do A, then you must do B&rsquo;)</li>
+</ul>
+</li>
+<li>Non-iterated vs iterated games
+<ul>
+<li>A non-iterated game is only played once. Iterated games can be played several times.</li>
+<li>A &ldquo;supergame&rdquo; is a specified # of iterations of a game. Strategies:
+<ul>
+<li>C: Always cooperate</li>
+<li>D: Always defect</li>
+<li>TT: tit-for-tat
+<ul>
+<li>Cooperate on round 1 and then take same action as opponent in previous round</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Upshot is that the case for cooperation (e.g. TT or C) is strong when the number of games is not known in advance
+<ul>
+<li>We can always construct a strategy where D or some version of TT dominates when we know how many games there will be</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Finite vs infinite games
+<ul>
+<li>Not to be confused with the James Carse definition of infinite games</li>
+</ul>
+</li>
+</ol>
 <a href="#risk-ignorance-and-uncertainty"><h3 id="risk-ignorance-and-uncertainty"><span class="hanchor" ariaLabel="Anchor"># </span>Risk, Ignorance, and Uncertainty</h3></a>
 <ul>
 <li>Decisions under ignorance (<a href="/thoughts/Decisions-under-ignorance" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-ignorance">DUI</a>): the agent is ignorant of all probabilities</li>
@@ -472,6 +734,7 @@ Aug 12, 2021
 <li>Decisions under uncertainty (DUU): includes risk, ignorance, and intermediate cases</li>
 </ul>
 <a href="#game-tables"><h2 id="game-tables"><span class="hanchor" ariaLabel="Anchor"># </span>Game Tables</h2></a>
+<p>Used to represent simultaneous games</p>
 <p>Similar to decision tables in <a href="/thoughts/Decision-theory" rel="noopener" class="internal-link" data-src="/thoughts/Decision-theory">decision theory</a> but the column is the action of the other agent, and cells are the outcomes for each agent represented as a tuple of numbers.</p>
 <p>e.g. Stag Hunt where A and B are hunters and the numbers represent amount of food acquired</p>
 <table>
@@ -495,13 +758,29 @@ Aug 12, 2021
 </tr>
 </tbody>
 </table>
+<p>(In <a href="/thoughts/zero-sum" rel="noopener" class="internal-link" data-src="/thoughts/zero-sum">zero sum</a> games, it is sufficient to only represent the utility of each of the Rows)</p>
 <ul>
 <li>The solution is a set of &ldquo;profile&rdquo; of choices that are rational for each agent</li>
 <li>Each cell is a profile which leads to an outcome for both players</li>
 </ul>
+<a href="#solutions-to-games"><h2 id="solutions-to-games"><span class="hanchor" ariaLabel="Anchor"># </span>Solutions to games</h2></a>
+<a href="#dominance-and-admissibility"><h3 id="dominance-and-admissibility"><span class="hanchor" ariaLabel="Anchor"># </span>Dominance and admissibility</h3></a>
+<p>S1 dominates S2 iff:</p>
+<ol>
+<li>S1 is at least as good as S2 regardless of what other players do.</li>
+<li>S1 is superior to S2 in at least one case.</li>
+</ol>
+<p>If there is a dominant strategy, it will be part of the solution profile. If there is no dominant strategy, we eliminate all dominated strategies as inadmissible.</p>
+<a href="#equilibrium"><h3 id="equilibrium"><span class="hanchor" ariaLabel="Anchor"># </span>Equilibrium</h3></a>
+<p>This rule subsumes the rules for Dominance and Admissibility. Any solution using Dominance or Admissibility is also a <a href="/thoughts/Nash-equilibrium" rel="noopener" class="internal-link" data-src="/thoughts/Nash-equilibrium">Nash equilibrium</a>.</p>
+<p>For two-person zero-sum games in particular, a pair of (pure) strategies is an equilibrium if and only if its payoff is the minimum on its row and the maximum on its column</p>
+<p>There may not always be an equilibrium with pure strategies. However,</p>
+<a href="#mixed-strategies"><h2 id="mixed-strategies"><span class="hanchor" ariaLabel="Anchor"># </span>Mixed Strategies</h2></a>
+<p>In a two-person zero-sum game with mixed strategies, there is always an equilibirum. Moreover all equilibria have the same (expected) value</p>
+<p>If a player has options $R_1, \dots, R_n$, then a mixed strategy selecting $R_i$ with probability $p_i$ written as $[p_1R_1, \dots, p_nR_n]$ where the probabilities add up to 1.</p>
+<p>$[pA, (1-p)B]$ where $0 \leq p \leq 1$. This means: choose A with probability $p$ and B with probability $1 - p$.</p>
 <a href="#trust-and-game-theory"><h2 id="trust-and-game-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Trust and Game Theory</h2></a>
 <p>
-
 <a href="https://ncase.me/trust/" rel="noopener">Source: The Evolution of Trust by <em>Nicky Case</em></a></p>
 <p>For 
 
@@ -529,6 +808,7 @@ Aug 12, 2021
 </ol>
 <p>In the short run, the rules of the game define what the players do. In the long run, players define the rules. Incentive for us to build the environment and rules we want to play in.</p>
 <p>Unfortunately, modern day social media means we have less &lsquo;close-friends&rsquo; and thus repeat interactions than ever. With algorithmic news feeds, miscommunication breeds and win-win situations become scarce.</p>
+<p>See also: <a href="/thoughts/Evolutionary-game-theory" rel="noopener" class="internal-link" data-src="/thoughts/Evolutionary-game-theory">Evolutionary game theory</a></p>
 <a href="#applied-game-theory"><h2 id="applied-game-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Applied Game Theory</h2></a>
 <p>Game theory feels hard to apply to the real world due to properties like the 
 

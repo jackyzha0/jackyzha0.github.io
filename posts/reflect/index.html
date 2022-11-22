@@ -74,7 +74,7 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -802,7 +804,6 @@ May 10, 2020
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Here’s how we define it in our 
-
 <a href="https://github.com/jackyzha0/reflect-nlp/blob/master/nlp/net.py" rel="noopener">Keras code</a>, don’t worry if you don’t understand it just yet! We’ll explain it in the next few paragraphs.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -835,7 +836,6 @@ May 10, 2020
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now, we get into the meat of the neural network: the LSTM layer. As stated before, these LSTM networks are really good at modelling time series data like language. In this case, our LSTM network has 64 hidden units per cell, and that we’d like to pass these hidden states to the next layer. If you’d like to learn more about the inner workings of the LSTM model, theres a really good resource 
-
 <a href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21" rel="noopener">here</a>!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -955,13 +955,11 @@ May 10, 2020
 <a href="#training-pipeline"><h2 id="training-pipeline"><span class="hanchor" ariaLabel="Anchor"># </span>Training pipeline</h2></a>
 <p>So, how does the data we got earlier play a role in helping our machine learning model learn and improve?</p>
 <p>The first component is the <strong>loss function.</strong> This component tells the neural network how ‘correct’ its prediction was. In this model, we will use something called 
-
 <a href="https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a" rel="noopener">binary cross entropy</a>, which is basically a fancy word for log-based error. If the true label is 1, we can then show what the log-loss would be for some given prediction probability.</p>
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/2000/0*8rd4ho_3Y6zrtra-.png" width="auto" alt=""  /></p>
 <p>Next, we need to pick an <strong>optimizer</strong>. This component tells the neural network how to change its parameters to improve or ‘optimize’ itself. In this model, we chose to use an optimizer called 
-
 <a href="https://towardsdatascience.com/understanding-rmsprop-faster-neural-network-learning-62e116fcf29a" rel="noopener">RMSProp</a> with a learning rate of 1e-3 . We aren’t going to cover all the technical details of this optimizer in this blog post, but just know that it is a very fast and effective optimizer.</p>
 <p>
 
@@ -973,7 +971,6 @@ May 10, 2020
 
 <img src="https://cdn-images-1.medium.com/max/2000/0*6XoMgZUd3SxXgqBj.png" width="auto" alt="credit: Raheel Shaikh"  /><em>credit: Raheel Shaikh</em></p>
 <p>By seeing when this validation accuracy goes down, we can get a pretty good idea of when our model begins to overfit on our data, and stop the training before this happens. In training our model, we will use 5-fold 
-
 <a href="https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85" rel="noopener">cross-validation</a>.</p>
 <p>After all of this, we end with a training accuracy of 93.60% and test accuracy of 85.95%. Not bad at all!</p>
 <a href="#serving-the-model"><h2 id="serving-the-model"><span class="hanchor" ariaLabel="Anchor"># </span>Serving the model</h2></a>
@@ -981,7 +978,6 @@ May 10, 2020
 <p>Our model was written and trained with Keras (a Python Deep Learning library). Our Chrome extension is written in TypeScript. How do we get these two to work together?</p>
 <p>Luckily for us, Tensorflow.js exists! This library allows us to run Tensorflow models from within JavaScript. Tensorflow has released a script that lets us to convert a Keras model into something that Tensorflow.js understands, so we can run that to convert our models.</p>
 <p>However, we can’t just directly plug-and-play. You may remember that we did all of that data preprocessing before we trained our model. Tensorflow.js doesn’t have any of this built in, so we made our own implementation of it. You can check it out 
-
 <a href="https://github.com/jackyzha0/reflect-chrome/blob/master/src/nn.ts" rel="noopener">here</a>.</p>
 <p>We’ll leave all the technical code out (if you’re interested, feel free to peek around the source code!), but we’ve abstracted it enough that classifying an intent is a breeze.</p>
 <div class="highlight"><div class="chroma">
@@ -1013,18 +1009,15 @@ May 10, 2020
 </div><a href="#future-improvement"><h2 id="future-improvement"><span class="hanchor" ariaLabel="Anchor"># </span>Future improvement</h2></a>
 <a href="#possible-models"><h3 id="possible-models"><span class="hanchor" ariaLabel="Anchor"># </span>Possible models</h3></a>
 <p>We have thought about using something more established and complex like 
-
 <a href="https://arxiv.org/abs/1810.04805" rel="noopener">BERT</a> and retraining it on our dataset, however then comes the problem of runtime and memory usage.</p>
 <p>BERT is a huge model. If you thought 150 thousand parameters was a lot, wait till you see BERT’s 110 <em>million</em> parameters. This bad boy takes a few hundred times longer and many times more memory than our current model. While yes BERT may perform really well, we just don’t think it has a place inside of a Chrome extension.</p>
 <p>Our model is decently robust as it is, especially considering the entire model is &lt;2MB and takes less than 200ms to run in browser. For now, we will stick with lightweight models, but we may switch if we find a better match in the future :)</p>
 <a href="#misclassifications"><h3 id="misclassifications"><span class="hanchor" ariaLabel="Anchor"># </span>Misclassifications</h3></a>
 <p>Of course, this algorithm isn’t perfect. It does have a lot of flaws and weaknesses that we find every day, and we’re working to fix those! If there are any misclassifications that you find in the algorithm, we love to hear about it on our feedback form: 
-
 <a href="https://forms.gle/ctypb6FmDT9RQqjv6" rel="noopener">https://forms.gle/ctypb6FmDT9RQqjv6</a>.</p>
 <a href="#closing"><h2 id="closing"><span class="hanchor" ariaLabel="Anchor"># </span>Closing</h2></a>
 <p>This NLP model is at the core of reflect. It is this model’s goal to predict whether user intents are valid or not. As a result, we need to make sure this algorithm is accurate, fast, and lightweight. Hopefully, through this blog post, you’ve learned a little about how we went about building a model to fulfill those requirements.</p>
 <p>Learn more about us on our website! ✨ 
-
 <a href="http://getreflect.app/" rel="noopener">http://getreflect.app/</a></p>
 <p>If you have any further questions about reflect or this NLP model, feel free to shoot us an email at 
 

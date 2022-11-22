@@ -75,7 +75,7 @@ Photo showing setting of the search: No photo, but was sitting at a desk with a 
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -119,15 +119,17 @@ Photo showing setting of the search: No photo, but was sitting at a desk with a 
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -324,7 +326,6 @@ Feb 7, 2022
 <p><strong>How long did the search take?</strong> ~10 seconds</p>
 <p><strong>Photo showing setting of the search:</strong> No photo, but was sitting at a desk with a couple of friends! Casual co-working time.</p>
 <p><strong>Motivation for the search</strong>: A group of us were chatting and one of my friends mentioned her undergraduate thesis on the concept of vibes as applied to fundamental essences of objects. I was curious if she had heard of the term &lsquo;qualia&rsquo; before as the concepts seemed related. I keep a personal online archive of notes on my website and wanted to surface a relevant link that I read but couldn&rsquo;t remember off of the top of my head. Specifically, looking for this article from 
-
 <a href="https://reallifemag.com/nameless-feeling/?curius=1294" rel="noopener">Real Life Mag</a>.</p>
 <p><strong>Details of the search</strong>: Search term: <em>qualia</em>, result was in the first three surfaced</p>
 <p><strong>Device type and Search Engine</strong>: Mobile, site-specific search on my personal site (jzhao.xyz)</p>
@@ -365,9 +366,7 @@ Feb 7, 2022
 <p><strong>Photo showing setting of the search:</strong> No photo. Sitting at desk with a laptop, slightly groggy.</p>
 <p><strong>Motivation for the search</strong>: I am currently working on a digital version of an essay that a collective of technologists I&rsquo;m a part of is publishing soon. We are doing last minute polish around performance for lower-end devices that may not be able to handle a lot of the more performance-intensive graphics we have.</p>
 <p><strong>Details of the search</strong>: A collection of searches with queries like &ldquo;three js gradient skybox&rdquo;, &ldquo;ScissorCanvas effectcomposer&rdquo;, and a huge string of other searches. Most results led me to issues on GitHub like 
-
 <a href="https://github.com/mrdoob/three.js/issues/6022" rel="noopener">https://github.com/mrdoob/three.js/issues/6022</a> and 
-
 <a href="https://github.com/mrdoob/three.js/issues/5979" rel="noopener">https://github.com/mrdoob/three.js/issues/5979</a>.</p>
 <p><strong>Device type and Search Engine</strong>: Laptop, Google + GitHub code search.</p>
 <p><strong>Was the search successful?</strong> None of the search results were able to give me an exact answer but helped provide context into the history of the issue. For example, the second search result let me know that shaderpasses will use the wrong viewport/scissor for rendering if used in conjunction. I ended up using a slightly hacky workaround to achieve the same effect.</p>
@@ -389,7 +388,6 @@ Feb 7, 2022
 <p><strong>Motivation for the search</strong>: We were trying to find a fitting banner image for our community Discord we were setting up! I had remembered seeing a very nice solarpunk-themed video commercial on YouTube somewhere but couldn&rsquo;t quite remember the right combination of search times to find it. I <em>did</em> remember that it was somehow a yoghurt commercial.</p>
 <p><strong>Details of the search</strong>: Initial search was for &ldquo;yoghurt commercial&rdquo;. After immediately realizing this was not specific enough, I asked in the Discord call if people remember the name of the company and then modified it to &ldquo;Chobani commercial solarpunk&rdquo; and finally &ldquo;Chobani commercial solarpunk but no product placement&rdquo; to remove all the product placement.</p>
 <p><strong>Was the search successful?</strong> Eventually found the &ldquo;Dear Alice&rdquo; video that I was looking for! 
-
 <a href="https://www.youtube.com/watch?v=UqJJktxCY9U" rel="noopener">Video here</a></p>
 <p><strong>Reflection on the search</strong>: This was a really interesting example of search in a more &lsquo;collaborative&rsquo; fashion. A lot of my information recall happens via association and the more people to help fill in gaps in memory, the faster I am able to find the thing I am looking for. This search in particular took two &lsquo;hops&rsquo; of refinement.</p>
 <a href="#entry-4"><h1 id="entry-4"><span class="hanchor" ariaLabel="Anchor"># </span>Entry 4</h1></a>
@@ -397,16 +395,12 @@ Feb 7, 2022
 <p><strong>How long did the search take?</strong> ~1 minute</p>
 <p><strong>Photo showing setting of the search:</strong> No photo. At desk, messaging people on Facebook while eating a meal.</p>
 <p><strong>Motivation for the search</strong>: One of my close friends has been experimenting with the concept of telescopic text (an example: 
-
 <a href="https://www.telescopictext.org/text/KPx0nlXlKTciC%29" rel="noopener">https://www.telescopictext.org/text/KPx0nlXlKTciC)</a>. There was a really interesting interaction design experiment that one of my mutual friends on Twitter has been experimenting with that I wanted to share (this one in particular: 
-
 <a href="https://twitter.com/azlenelza/status/1487153246531579905" rel="noopener">https://twitter.com/azlenelza/status/1487153246531579905</a>)</p>
 <p><strong>Details of the search</strong>: I had remembered that I bookmarked this tweet reply at some point so the first place I looked was my Bookmarks tab in Twitter. Twitter&rsquo;s search is notoriously bad so I just scrolled chronologically and used cmd+f liberally until I found the tweet.</p>
 <p><strong>Was the search successful?</strong> Yes! I found what I was looking for relatively quickly. It also &lsquo;mentally&rsquo; refreshed a few ideas I had forgotten I had bookmarked like this really cool scoping interaction (
-
 <a href="https://twitter.com/wcrichton/status/1487223891751694339%29" rel="noopener">https://twitter.com/wcrichton/status/1487223891751694339)</a>.</p>
 <p><strong>Reflection on the search</strong>: I think this interaction is really interesting because it is often representative of behaviour on sites where the search system is either non-existent or poorly designed. In these cases, I rely heavily on interaction enrichments like using in-browser search and F-scanning (more on F-scanning: 
-
 <a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" rel="noopener">https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/</a>) of the tweet profile pictures to quickly comb through content. Of course, if this was much further back in time than a few weeks, this would have been a monumentally more difficult search to make.</p>
 
 

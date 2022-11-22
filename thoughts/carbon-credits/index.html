@@ -74,7 +74,7 @@ Can we create &lsquo;credits&rsquo; that companies can buy to offset their emiss
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Can we create &lsquo;credits&rsquo; that companies can buy to offset their emiss
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -319,7 +321,6 @@ Dec 24, 2021
 
 
 <p>
-
 <a href="https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia" rel="noopener">Source: An Even More Inconvenient Truth from <em>ProPublica</em></a></p>
 <p>Can we create &lsquo;credits&rsquo; that companies can buy to offset their emissions by &lsquo;proving&rsquo; that a forest is sequestering a certain amount of carbon?</p>
 <p>Yet, in most of these cases, these carbon offsets don&rsquo;t actually work. They either</p>
@@ -366,11 +367,9 @@ Dec 24, 2021
 </blockquote>
 <p>Gerrymandering but for trees? A lot of the offset calculations are based off of regional averages for carbon, projects can then take advantage of &lsquo;unusually high&rsquo; concentration areas with certain types of trees to game the system and gain more credits than they should have.</p>
 <p>This could actually benefit indigenous tribes because of their more conservative approach to logging &ndash; in fact, offsets can enable tribes to reduce logging. However, &ldquo;some tribal members are 
-
 <a href="https://www.newyorker.com/news/dispatch/how-carbon-trading-became-a-way-of-life-for-californias-yurok-tribe" rel="noopener">deeply uncomfortable</a> with the idea of selling offsets to companies like this even if they are legitimate, fearing they’re effectively profiting from pollution.&rdquo;</p>
 <a href="#good-offsets"><h3 id="good-offsets"><span class="hanchor" ariaLabel="Anchor"># </span>Good Offsets?</h3></a>
 <p>
-
 <a href="https://negative.sanctuary.computer/offsetting" rel="noopener">Source: Buying Offsets</a></p>
 <ol>
 <li>Transparency: any individual credits can not be purchased more than once</li>

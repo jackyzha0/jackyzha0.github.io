@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -392,11 +394,9 @@ Jan 30, 2021
 <p>The first image that comes to my head when I hear the word &lsquo;gardening&rsquo; is of a small plot with some leafy greens sprouting their heads from an earthy bed. A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn&rsquo;t too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.</p>
 <p>A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.</p>
 <p>When I talk about digital gardening, I don&rsquo;t mean digital gardening in the Stardew Valley or FarmVille sense. I mean gardening as in the tending and growth of my own ideas and projects on my own little plot of the world wide web &ndash; namely through my <a href="/thoughts/writing" rel="noopener" class="internal-link" data-src="/thoughts/writing">writing</a>, notes, and projects. After reading Joel Hook&rsquo;s blog post on his own 
-
 <a href="https://joelhooks.com/digital-garden" rel="noopener">digital garden</a>, I&rsquo;ve been thinking and reflecting on my own processes for managing my own digital garden (which you are on right now).</p>
 <a href="#the-garden-plot"><h2 id="the-garden-plot"><span class="hanchor" ariaLabel="Anchor"># </span>The garden plot</h2></a>
 <p>According to 
-
 <a href="https://github.com/jackyzha0/blog/commit/74f7460c49a7c56acfadf3f8f1cdd892005ebed4" rel="noopener">GitHub</a>, I first created this blog in late August of 
 
 

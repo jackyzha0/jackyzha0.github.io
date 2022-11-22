@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -322,7 +324,6 @@ Jan 31, 2021
 <a href="#3-things-ive-found-interesting"><h2 id="3-things-ive-found-interesting"><span class="hanchor" ariaLabel="Anchor"># </span>3 things I’ve found interesting</h2></a>
 <ol>
 <li>
-
 <a href="https://www.samsonzhang.com/2021/01/19/how-to-innovate-and-create-a-culture-of-innovation.html" rel="noopener">Velocity vs Acceleration based execution</a>. Insightful read on how orgs can be 
 
 
@@ -334,10 +335,8 @@ Jan 31, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/move-fast-and-break-things/">moving fast but not be innovating</a>. How do we have a high acceleration org rather than just a high velocity one?</li>
 <li>
-
 <a href="https://venturebeat.com/2021/01/12/google-trained-a-trillion-parameter-ai-language-model" rel="noopener">Switch Transformers: Larger than GPT-3</a>.  An interesting approach to deal with huge language models by &lsquo;sparsly&rsquo; activating certain subsets of the network. Interesting to see modern ML techniques going back to expert systems of the early 90&rsquo;s.</li>
 <li>
-
 <a href="https://blog.cloudflare.com/uganda-january-13-2021-internet-shut-down/" rel="noopener">Suspension of Internet in Uganda</a>. During an election at that. Curious how something of this scale was orchestrated, let alone agreed to. Something that feels so close to 
 
 
@@ -352,12 +351,9 @@ Jan 31, 2021
 <a href="#2-things-ive-been-wondering-about"><h2 id="2-things-ive-been-wondering-about"><span class="hanchor" ariaLabel="Anchor"># </span>2 things I’ve been wondering about</h2></a>
 <ol>
 <li>How can we make policy more accessible? Idea has been festering in my head after reading Eva Zhang&rsquo;s post on &lsquo;
-
 <a href="https://evaz.substack.com/p/rfs" rel="noopener">Request for Startups</a>&rsquo;. Is there a better way we can track what policy makers are up to during non-election years? Maybe some sort of data mesh or platform that simplifies policy or makes it easier to view updates? Decided to take a stab at this problem during HTN2020++ this year. 
-
 <a href="https://devpost.com/software/legist" rel="noopener">Devpost</a>.</li>
 <li>Digital Gardening. After reading Joel Hook&rsquo;s blog post on his own 
-
 <a href="https://joelhooks.com/digital-garden" rel="noopener">digital garden</a>, I&rsquo;ve been thinking and reflecting on my own processes for managing my garden. It&rsquo;s culminated into a blog post which you can read 
 
 
@@ -371,7 +367,6 @@ Jan 31, 2021
 </ol>
 <a href="#1-thing-ive-done"><h2 id="1-thing-ive-done"><span class="hanchor" ariaLabel="Anchor"># </span>1 thing I’ve done</h2></a>
 <p>I presented a technical workshop for the first time at Hack the North 2020++! I&rsquo;ve always been a little spooked of public speaking but it was really empowering to be able to go up in front of so many people (albeit virtually) and talk about something I&rsquo;m passionate about. My workshop was on a gentle introduction to Docker and you can view the recording 
-
 <a href="https://www.youtube.com/watch?v=ONNQ5EDhXUk" rel="noopener">here</a> (it&rsquo;s not a Rick Roll, I promise).</p>
 
 

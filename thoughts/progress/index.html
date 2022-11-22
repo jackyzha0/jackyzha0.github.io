@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -349,7 +351,6 @@ Aug 3, 2021
 
 <p>From <em>21 Lesson for the 21st Century</em> by Yuval Noah Harari:  &ldquo;Did we domesticate wheat or did wheat domesticate us?&rdquo; So much of technological progress is conflated as a good thing. Is it necessarily so?</p>
 <p>Progress, loosely defined by 
-
 <a href="https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/" rel="noopener">Tyler Cowen and Patrick Collison</a>, is &ldquo;the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries&rdquo;</p>
 <p><strong>Progress implies direction. Progress towards what?</strong> Does this require alignment of values? Is progress enabling us to better express our 
 
@@ -362,7 +363,6 @@ Aug 3, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/introductions/">identities</a>?</p>
 <p>Progress isn&rsquo;t equal, it&rsquo;s multiplicative. It&rsquo;s &ldquo;a mixed blessing—one that resulted in technologies that have allowed many people to live longer, safer lives, but that has, simultaneously, destroyed global ecosystems, caused the extinction of many living species, facilitated rampant population growth, and wreaked havoc on climate systems, the effects of which will be an increase in droughts, floods, storms, and erratic weather patterns that threaten most global societies.&rdquo; 
-
 <a href="https://www.theatlantic.com/business/archive/2014/09/the-industrial-revolution-and-its-discontents/379781/" rel="noopener">Source</a></p>
 <p>There are no &rsquo;thought leaders&rsquo; in bleeding tech, only in established fields. Everyone at the edge of a field is a &lsquo;pioneer&rsquo; in a sense.</p>
 <p>After a subject gets established, how do we continue to make progress through research? 
@@ -377,7 +377,6 @@ Aug 3, 2021
   data-src="/thoughts/research-institutions/">A new DARPA</a> perhaps?</p>
 <a href="#history-of-progress"><h2 id="history-of-progress"><span class="hanchor" ariaLabel="Anchor"># </span>History of Progress</h2></a>
 <p>
-
 <a href="https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/" rel="noopener">https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/</a></p>
 <blockquote>
 <p>Why might people in the past have been hesitant to embrace the idea of progress? The main argument against it was that it implies a disrespect of previous generations.</p>
@@ -453,7 +452,6 @@ Aug 3, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/research-institutions/">a new DARPA</a> to catalyze progress?</p>
 <p>Jasmine has a really good 
-
 <a href="https://jasminew.me/post/progress" rel="noopener">potential curriculum outline</a>:</p>
 <ol>
 <li>History and causes: How do we make progress?
@@ -530,7 +528,6 @@ Aug 3, 2021
 </ol>
 <a href="#what-type-of-progress"><h2 id="what-type-of-progress"><span class="hanchor" ariaLabel="Anchor"># </span>What type of Progress?</h2></a>
 <p>Do we care more about technological progress or social progress? We can measure social progress via, maybe, 
-
 <a href="https://en.wikipedia.org/wiki/Gini_coefficient" rel="noopener">Gini coefficient</a> (measuring income/wealth inequality). Technological progress might be measured by our ability to impact the universe, the physical world around us.</p>
 <a href="#happiness"><h3 id="happiness"><span class="hanchor" ariaLabel="Anchor"># </span>Happiness</h3></a>
 <p>Happiness isn’t necessarily highest in the places with the most technological progress</p>
@@ -546,7 +543,6 @@ Aug 3, 2021
   data-src="/thoughts/hedonic-treadmill/">hedonic treadmill</a>, will we eventually just regress to a new &rsquo;normal&rsquo;?</p>
 <a href="#a-humanistic-take"><h2 id="a-humanistic-take"><span class="hanchor" ariaLabel="Anchor"># </span>A humanistic take</h2></a>
 <p>
-
 <a href="https://www.vox.com/future-perfect/22652782/roots-of-progress-jason-crawford" rel="noopener">Source: How does progress happen? by <em>Kelsey Piper</em></a></p>
 <blockquote>
 <p>Progress is anything that helps human beings live better lives: longer, happier, healthier, in mind, body, and spirit. And more choices about how we want to live our lives: our careers; where we live; if, when, and who we marry; whether to have kids or not. Fundamentally, I judge progress by humanistic standards.</p>

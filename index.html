@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -285,7 +287,7 @@ if (!doNotTrack) {
                                 <h3><a href="https://jzhao.xyz/posts/bft-json-crdt/">Building a BFT JSON CRDT</a></h3>
                             </div>
                             <p class="meta">
-                            5686 words on 
+                            5737 words on 
 Nov 16, 2022
 
  
@@ -358,14 +360,16 @@ Jul 16, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/distributed-web/">Distributed Web</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/Nash-equilibrium/">Nash equilibrium</a></h3>
                             </div>
                             <p class="meta">
-                                67 words on Nov 18, 2022
+                                28 words on Nov 21, 2022
                             </p>
                             <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
     
 </ul>
 
@@ -375,14 +379,16 @@ Jul 16, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/">A Certain Tendency Of The Database Community</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/Pareto-optimality/">Pareto optimality</a></h3>
                             </div>
                             <p class="meta">
-                                538 words on Nov 16, 2022
+                                41 words on Nov 21, 2022
                             </p>
                             <ul class="tags">
     
     <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
     
 </ul>
 
@@ -390,7 +396,7 @@ Jul 16, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 516 more →</a>
+                <a href="/thoughts">See 519 more →</a>
             </div>
         </div>
         <article>
@@ -656,7 +662,6 @@ Jul 16, 2022
   rel="noopener" class="internal-link"
   data-src="/thoughts/interaction-design/">interactions</a> with computers and <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">data</a>, and be more responsible stewards of technology.</p>
 <p>In this era of my life, I’m working towards being someone who is 
-
 <a href="https://www.youtube.com/watch?v=Khfe3jBuq8c&amp;list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun" rel="noopener">unabashedly excited and curious about the world</a>.</p>
 <p>Though I can&rsquo;t quite yet provide you a guided tour of this digital garden, I can leave you a list of places to explore as suggestions.</p>
 <ul>

@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -900,12 +902,9 @@ May 1, 2022
 <p>An understandable <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> algorithm</p>
 </blockquote>
 <p>A distilled version of the 
-
 <a href="https://raft.github.io/raft.pdf" rel="noopener">Raft paper</a>. For a more graphic version, see this 
-
 <a href="http://thesecretlivesofdata.com/raft/" rel="noopener">visualization of Raft by The Secret Lives of Data</a>.</p>
 <p>A really good 
-
 <a href="https://www.youtube.com/watch?v=uXEYuDwm7e4&amp;list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB&amp;index=18" rel="noopener">video review of the algorithm by Martin Kleppmann</a></p>
 <p>For a <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a>-resilient version of Raft, see <a href="/thoughts/Tangaroa" rel="noopener" class="internal-link" data-src="/thoughts/Tangaroa">Tangaroa</a>.</p>
 <a href="#distributed-consensus"><h2 id="distributed-consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Consensus</h2></a>
@@ -921,10 +920,8 @@ May 1, 2022
 <li>Latency resilient and does not depend on timing of messages to ensure consistency</li>
 </ol>
 <p>Raft is one such consensus algorithm for managing a replicated log. It is an alternative to 
-
 <a href="https://en.wikipedia.org/wiki/Paxos_%28computer_science%29" rel="noopener">Paxos</a> which is the main consensus algorithm in use over the last decade. The main aim is to make it <em>understandable</em> to builders and students alike.</p>
 <p>It is important to note that Raft assumes that all messages have been authenticated/authourized. It hands this responsibility to the <a href="/thoughts/Transport-Layer" rel="noopener" class="internal-link" data-src="/thoughts/Transport-Layer">transport layer</a> to deal with. As such, Raft <em>does not have any protection against malicious actors</em>. More discussion in this 
-
 <a href="https://groups.google.com/g/raft-dev/c/8WIrWfzIkvM" rel="noopener">Google Groups conversation</a>.</p>
 <a href="#consensus"><h2 id="consensus"><span class="hanchor" ariaLabel="Anchor"># </span>Consensus</h2></a>
 <p>Raft implements consensus by first electing a <em>leader</em>, then giving that leader temporary but complete responsibility for managing the replicated log. When a leader fails or becomes disconnected, a new leader is elected.</p>
@@ -994,10 +991,8 @@ May 1, 2022
 <p>You can find a reference implementation on GitHub</p>
 <ul>
 <li>
-
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">Miniraft Github Repository</a></li>
 <li>
-
 <a href="https://jzhao.xyz/miniraft/miniraft/" rel="noopener">Miniraft Crate Documentation</a></li>
 </ul>
 

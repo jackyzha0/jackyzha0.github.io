@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -463,7 +465,6 @@ Jul 22, 2021
 
 <blockquote>
 <p>&ldquo;Gardens … lie between farmland and wilderness &hellip; The garden is farmland that delights the senses, designed for delight rather than commodity.&rdquo; &ndash; 
-
 <a href="http://www.eastgate.com/garden/Gardens.html" rel="noopener">Bernstein</a></p>
 </blockquote>
 <p>We live in an information age. The amount of data we produce far outweighs what we consume, so much so that it has extended far beyond our ability to make meaningful use of it. Even our modern day 
@@ -491,7 +492,6 @@ Jul 22, 2021
 <p>This is not because I don&rsquo;t like order, but because I think <strong>a dash of chaos and entropy is good for new ideas</strong>. They help connect two separate ideas that you normally would not have associated with each other, and to imagine the &lsquo;what if&rsquo; more frequently.</p>
 <blockquote>
 <p>But there is also a philosophical basis for this which to me is quite practical. A pretty good master analogy is that it’s an attempt to make a big stew pot out of my brain – there is tremendous value in allowing all of these notes and ideas and observations to stew and ferment in there. For me, the real power comes when ideas intermingle and I’m able to discover connections that I truly could never have dreamed of under normal conditions. (
-
 <a href="https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085" rel="noopener">Robin Sloan</a>on <a href="/thoughts/rhizomatic-vs-arborescent" rel="noopener" class="internal-link" data-src="/thoughts/rhizomatic-vs-arborescent">rhizomatic</a> notetaking)</p>
 </blockquote>
 <p>My goal with a digital garden is not purely as an 
@@ -585,9 +585,7 @@ Jul 22, 2021
 <a href="#seeds"><h3 id="seeds"><span class="hanchor" ariaLabel="Anchor"># </span>Seeds</h3></a>
 <p>I am a person who needs a very low friction way to dump new ideas and things to look at in the future.</p>
 <p>I built 
-
 <a href="https://github.com/jackyzha0/tabspace" rel="noopener">TabSpace</a> to be a &lsquo;scratch space&rsquo; in my new tab page where I have my running list of todos, temporary thoughts, and things to read in the next little bit. It&rsquo;s the Apple Notes for my laptop. I use 
-
 <a href="https://curius.app/" rel="noopener">Curius</a> to keep a backlog of things that are interesting but not interesting enough for me to read at this exact moment.</p>
 <p>I tend to generally bookmark things for later then revisit them when I have time. For 
 
@@ -660,7 +658,6 @@ Jul 22, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/epistemology/">epistemological</a>&rsquo; garden, growing ideas from seed and sharing them with anyone who comes by.</em></p>
 <p>
-
 <a href="https://www.are.na/block/2175982" rel="noopener">Image Source</a></p>
 
 

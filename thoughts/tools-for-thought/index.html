@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -406,7 +408,6 @@ Oct 30, 2021
 <p>Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching</p>
 <a href="#thought-as-a-technology"><h2 id="thought-as-a-technology"><span class="hanchor" ariaLabel="Anchor"># </span>Thought as a technology</h2></a>
 <p>
-
 <a href="https://cognitivemedium.com/tat/index.html" rel="noopener">Source</a></p>
 <ul>
 <li>How can we invent new elements of cognition?</li>
@@ -455,7 +456,6 @@ Oct 30, 2021
   data-src="/thoughts/infrastructure/">infrastructure</a> for mental representations and operations. These are the patterns the dictate our very mental processes.</p>
 <a href="#memex"><h2 id="memex"><span class="hanchor" ariaLabel="Anchor"># </span>Memex</h2></a>
 <p>
-
 <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881" rel="noopener">Source</a> by Vannevar Bush</p>
 <blockquote>
 <p>device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.</p>
@@ -466,7 +466,6 @@ Oct 30, 2021
 </blockquote>
 <a href="#kernel"><h2 id="kernel"><span class="hanchor" ariaLabel="Anchor"># </span>Kernel</h2></a>
 <p>
-
 <a href="https://kernel.community/en/learn/module-3/remember" rel="noopener">Source: Remember in <em>Kernel</em></a></p>
 <p>We live in an 
 
@@ -540,7 +539,6 @@ Oct 30, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/context/">context</a> with other concepts.</p>
 <p>
-
 <a href="https://www.researchgate.net/publication/220363565_Automated_knowledge_discovery_in_advanced_knowledge_management" rel="noopener">Source: Automated knowledge discovery in advanced knowledge management</a></p>
 <p>Are there ways to &lsquo;breadcrumb&rsquo; how we navigate? Even something as simple as option+click to leave a crumb and when finishing a session, you can save parts of the trail as a flow.</p>
 <a href="#spatial"><h3 id="spatial"><span class="hanchor" ariaLabel="Anchor"># </span>Spatial</h3></a>
@@ -554,7 +552,6 @@ Oct 30, 2021
   href="/thoughts/memory-palace/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/memory-palace/">memory palaces</a>? Spatial representations of information? (See 
-
 <a href="https://nototo.app/" rel="noopener">https://nototo.app/</a>)</p>
 <a href="#emotion"><h3 id="emotion"><span class="hanchor" ariaLabel="Anchor"># </span>Emotion</h3></a>
 <p>Video is incredibly expressive. You can <em>feel</em> the passion of people who really care about the things they study, build, and work on.</p>
@@ -563,13 +560,11 @@ Oct 30, 2021
 <p>Can we embed computation into our notes? Create APIs out of our thoughts and concepts? Compose theorems just as easily as we chain function calls?</p>
 <a href="#activism"><h2 id="activism"><span class="hanchor" ariaLabel="Anchor"># </span>Activism</h2></a>
 <p>
-
 <a href="https://www.shiftspace.pub/on-gathering-mindy-seu" rel="noopener">Source: On Gathering, <em>Mindy Seu</em></a></p>
 <p>Memory work of this sort is also a form of activism. Whose memories are saved and retold to future generations?</p>
 <p>After a conversation, all parties maintain ownership of what transpired, and they continue to hold ties to one another. This form of storytelling is not predetermined, but develops through its unfolding.</p>
 <a href="#mediums-versus-tools"><h2 id="mediums-versus-tools"><span class="hanchor" ariaLabel="Anchor"># </span>Mediums versus Tools</h2></a>
 <p>Linus Lee on 
-
 <a href="https://thesephist.com/posts/browser/" rel="noopener">Browsers as Tools of Thought</a></p>
 <blockquote>
 <p>A tool is something that takes an existing workflow, and makes it more efficient. A nail is an efficient way of holding pieces of wood together; a to-do app is an efficient way of remembering your responsibilities. A medium, on the other hand, gives us new agency or power by which we can do something we couldn’t do before.</p>
@@ -577,7 +572,6 @@ Oct 30, 2021
 <p><strong>The best mediums are instead collections of generic, multi-purpose <em>components</em> that mesh together well</strong></p>
 <a href="#tasting-notes"><h2 id="tasting-notes"><span class="hanchor" ariaLabel="Anchor"># </span>Tasting Notes</h2></a>
 <p>
-
 <a href="https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085" rel="noopener">Robin Sloan shares his recipe for taking notes that spark novels</a></p>
 <blockquote>
 <p>But the interesting thing about Robin is he doesn’t look at these things as bricks exactly. They don’t combine together in predictable, linear ways.</p>

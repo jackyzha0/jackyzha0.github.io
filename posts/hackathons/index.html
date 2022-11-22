@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -393,7 +395,6 @@ Jul 1, 2021
 <a href="#prize-incentives"><h3 id="prize-incentives"><span class="hanchor" ariaLabel="Anchor"># </span>Prize Incentives</h3></a>
 <blockquote>
 <p>&ldquo;People are now prioritizing their projects for the dollar value of prizes and the clout of awards. There is a trend where more and more attendees no longer come in to learn and make memories. Teams are now arriving to hackathons fully formed, with an idea in hand, and a checklist of the prizes they want to win.&rdquo; &ndash; 
-
 <a href="https://jonathanxu.com/blog/2020-07-25-on-hackathons" rel="noopener">Jonathon Xu</a></p>
 </blockquote>
 <p>Increasingly so, hackathons have placed more emphasis on prizes rather than building. They prominently display the total value of prizes available to entice hackers to attend, tout the available prizes again at opening ceremonies, and repeatedly blast announcements on them during hacking hours. Even DevPost, the &lsquo;homepage&rsquo; for hackathons, organizes hackathons by how much there is to reap. Then again, who wouldn&rsquo;t want a free iPad and tens of thousands in cash prizes and online subscriptions?</p>
@@ -417,7 +418,6 @@ Jul 1, 2021
 <p>&ldquo;A one day hack for homelessness takes away from the complexity of social justice issues… you can&rsquo;t just come up with an app that solve the world&rsquo;s problems&rdquo; &ndash; Design Justice<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 </blockquote>
 <p>Most hackathon projects are unsustainable and are unlikely to be used or continued to be worked on outside of the hackathon. A lot of this practice arises out of the Silicon Valley 
-
 <a href="https://www.stanforddaily.com/2018/02/16/silicon-valleys-saviorism-problem/" rel="noopener">saviorism problem</a> and &ldquo;
 
 
@@ -440,21 +440,17 @@ Jul 1, 2021
 <a href="#work-is-play"><h3 id="work-is-play"><span class="hanchor" ariaLabel="Anchor"># </span>Work is Play</h3></a>
 <blockquote>
 <p>&ldquo;Forget about work-life balance. It&rsquo;s all about work-life <em>integration.</em> Why else would the office have on-site acupuncture, nap pods, and free dinner after 7 pm?&rdquo; &ndash; 
-
 <a href="https://www.wired.com/story/how-silicon-valley-ruined-work-culture" rel="noopener">Arielle Pardes, WIRED</a></p>
 </blockquote>
 <p>The initial hacker ethos of wanting to &lsquo;innovate&rsquo; was evident in how vehemently startups disowned the 9-to-5 cubicle life. Walk into any tech company office building and you&rsquo;d barely be able to tell if it was supposed to be a corporate office or adult playground with all the ping pong tables and colourful decor. The expectation was for employees to treat coworkers as family, office as home, and work as play.</p>
 <p>But this playful front is not exactly as it seems. A 
-
 <a href="https://businessresearcher.sagepub.com/sbr-1863-102641-2779724/20170508/more-companies-offering-unlimited-time-off" rel="noopener">2017 study</a> by Sage Business Researcher found that employees who work in offices with these benefits tend to stay in the office longer after work, pushing individuals to spend more and more of their lives in the office. Corporations frame events like hackathons as fun events to attend in an effort to appeal to the hacker ethos and to maintain their public image of &lsquo;coolness&rsquo;. Disguised under the nerf gun fights, ping pong tables, and free food is a more sinister intent to treat work as play. Is it wrong to love what you do and treat it as play? No, but corporations shouldn&rsquo;t conflate the hacker ethos with a willingness to &lsquo;play&rsquo; at work.</p>
 <a href="#exhaustion-is-effervescent"><h3 id="exhaustion-is-effervescent"><span class="hanchor" ariaLabel="Anchor"># </span>Exhaustion is Effervescent</h3></a>
 <blockquote>
 <p>&ldquo;There are way easier places to work, but nobody ever changed the world on 40 hours a week&rdquo; &ndash; 
-
 <a href="https://twitter.com/elonmusk/status/1067173497909141504" rel="noopener">Elon Musk</a></p>
 </blockquote>
 <p>100 hour work weeks and &lsquo;hustle culture&rsquo; are becoming increasingly normalized by tech moguls like Elon Musk. Being constantly tired is somewhat of a 
-
 <a href="https://www.youtube.com/watch?v=_o7qjN3KF8U" rel="noopener">status icon</a> as individuals boast about how little sleep they got.</p>
 <p>It has been disturbingly normalized and even celebrated that 
 
@@ -466,7 +462,6 @@ Jul 1, 2021
   href="/thoughts/pain/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/pain/">exhaustion is a sign of strength</a>. Among a 
-
 <a href="https://www.theguardian.com/business-to-business/2017/dec/04/clocking-off-the-companies-introducing-nap-time-to-the-workplace" rel="noopener">global sleep-loss pandemic</a>, events like hackathons which push for attendees to stay up for lengths of 24 to 36 hours are particularly worrisome.</p>
 <p>I am viscerally reminded of sharing a hard gym floor with dozens of other sleep-deprived hackers, taking shifts to sleep so some people can stay up to work on the hack. Despite the timeboxed nature of hackathons, there is no reason purposefully staying up all night should be quintessential to the hackathon experience.</p>
 <p>Physical and mental health should not be &ldquo;instrumentalized in service of being useful to a startup mission, or even a life philosophy.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> These events set the precedence of what the next generation of engineers, builders, and designers consider as &rsquo;normal&rsquo; for the industry. Why are we saying that it&rsquo;s okay to prioritize &lsquo;success&rsquo; above personal wellbeing?</p>
@@ -481,7 +476,6 @@ Jul 1, 2021
 
 <img src="https://jzhao.xyz//posts/images/hackathons/liminal_space.jpg" width="auto" alt="Liminal spaces: The morning after nwHacks 2020"  /><em>Liminal spaces: The morning after nwHacks 2020</em></p>
 <p>Maybe this is the 
-
 <a href="https://jonathanxu.com/blog/2020-07-25-on-hackathons" rel="noopener">death of the hackathon</a> as we know it, and that might not necessarily be a bad thing. Maybe we can throw away the focus on prizes, winning, and short-term projects and replace it with something better.</p>
 <a href="#sustainable-learning"><h3 id="sustainable-learning"><span class="hanchor" ariaLabel="Anchor"># </span>Sustainable Learning</h3></a>
 <blockquote>
@@ -489,17 +483,11 @@ Jul 1, 2021
 </blockquote>
 <p>The &lsquo;finish a complete project in two days&rsquo; mindset of hackathons rarely transfers well into the real world. Realistically, most projects are complex in scope and attempting to reduce complex problems down to a one-weekend hack omits a lot of context and nuance that is often important.</p>
 <p>Work done at hackathons should be toward long-term sustainable processes instead of short term precarious work. During the past year, there has been a noticeable uptick in design spaces intended to facilitate longer term work like coliving houses, incubators, and fellowships. Hacker houses like 
-
 <a href="http://edyfi.org/" rel="noopener">Edyfi</a> and 
-
 <a href="https://school2point0.com/" rel="noopener">School 2.0</a> give individuals the option to work on existing projects or scale new ones in a supportive community. A few organizations like the Cal Hacks Foundation are pioneering initiatives in this space with programs like the 
-
 <a href="https://fellowship.calhacks.io/" rel="noopener">Cal Hacks Fellowship</a> (a semester-long idea accelerator that invites teams to build beyond their side-projects) and 
-
 <a href="https://hackmonth.calhacks.io/" rel="noopener">Hack Month</a> (which is a month-long build-a-thon focused on recentering the fun of building). MLH is also working on non-hackathon initiatives like the 
-
 <a href="https://fellowship.mlh.io/" rel="noopener">MLH Fellowship</a> and the 
-
 <a href="https://localhackday.mlh.io/" rel="noopener">Local Hack Day</a> workshops that refocus learning and maintenance rather than just blind creation. I&rsquo;ve even noticed more individuals starting larger-scale personal projects that happen on the order of weeks to months rather than single days.</p>
 <p>Encouraging the growth of more sustainable skill building enables individuals to take into account a more holistic view of problems. Hopefully, this leads to building longer term, larger scope, and bigger impact projects and skills.</p>
 <h3 id="places-of-playthoughtsplaymd">Places of 
@@ -514,13 +502,9 @@ Jul 1, 2021
   data-src="/thoughts/play/">play</a></h3>
 <p>Do we so necessarily need to tie rituals of play in building and tinkering to the recruiting and product testing pipeline for large corporations? Hopefully the answer to that question is no.</p>
 <p>Yet even today, a majority of communities focused around building like 
-
 <a href="https://www.ycombinator.com/" rel="noopener">YCombinator</a> or 
-
 <a href="https://www.beondeck.com/" rel="noopener">OnDeck</a> are ultimately not places of play – they have external outcomes they&rsquo;d like to achieve. We should create dedicated spaces for exploration and learning <em>without</em> needing to justify it via some specific outcome. This is not to say that spaces with those goals in mind are bad, but giving individuals the option to have a space for unfettered exploration can give them the freedom to explore ideas that may not have clear monetary value in the short term. Communities like 
-
 <a href="https://hackclub.com/" rel="noopener">Hack Club</a> and 
-
 <a href="https://reboothq.substack.com/" rel="noopener">Reboot</a> do this particularly well. There is no central &lsquo;goal&rsquo; of trying to launch a product or anything, but rather it&rsquo;s a group of individuals that are intellectually curious and want to learn and build cool things.</p>
 <p>The goal is to provide the infrastructure so that <em>everyone</em> can play, not just those privileged enough to throw spare income and time at it. Hackathon organizers shouldn&rsquo;t assume that everyone is able and willing to stay up the entire event and barely set aside enough time for meals. It is important to consider food, bio breaks, accessible bathrooms that are friendly to all body types and genders, comfortable spaces to nap or relax, and decent lighting, etc.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <a href="#moving-forward"><h2 id="moving-forward"><span class="hanchor" ariaLabel="Anchor"># </span>Moving Forward</h2></a>
@@ -533,7 +517,6 @@ Jul 1, 2021
 <p>What might the future of the hackathon look like, if not what it is now?</p>
 <ul>
 <li><strong>Emphasis on sustainable learning</strong>. Realistically, hackers will not <em>learn</em> if all they did was copy tutorials off the internet. Most learning happens through sharing between individuals and teams. Hopefully, we can bake this into the hackathon structure by creating cohorts of hackers for 
-
 <a href="https://en.wikipedia.org/wiki/Parallel_play" rel="noopener">parallel play</a> and refocus the hackathon as a means to 
 
 
@@ -564,7 +547,6 @@ Jul 1, 2021
 
 <img src="https://jzhao.xyz//posts/images/2020/post-hc.png" width="auto" alt="After HackCamp 2020"  /><em>After HackCamp 2020</em></p>
 <p>This year, I was responsible for leading logistics at our beginner-focused hackathon called 
-
 <a href="https://hackcamp.nwplus.io/" rel="noopener">HackCamp</a>. To recentre hackathons around learning and to rebuild a healthier hacker culture, we decided to restructure our event into a virtual conference weekend. Here are a few things we changed:</p>
 <ol>
 <li>We separated learning and workshops from building and hacking and turned it into a two-day hackathon. This allowed hackers to attend workshops and learn without fear of missing out on precious hacking time and to have scheduled sleeping time between the Learn and Build days.</li>
@@ -591,37 +573,30 @@ Jul 1, 2021
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>
-
 <a href="https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=1575&amp;context=gc_pubs" rel="noopener">Hackathons as Co-optation Ritual: Socializing Workers and Institutionalizing Innovation in the &ldquo;New&rdquo; Economy</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>
-
 <a href="https://fredturner.stanford.edu/books/from-counterculture-to-cyberculture/" rel="noopener">From Counterculture to Cyberculture</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>
-
 <a href="https://mitpress.mit.edu/books/design-justice" rel="noopener">Design Justice: Community-Led Practices To Build the Worlds We Need</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>
-
 <a href="https://letterstoayoungtechnologist.com/Value-Beyond-Instrumentalization" rel="noopener">Beyond Instrumentalization</a> by Jamie Wang&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
 <p>
-
 <a href="https://placesjournal.org/article/post-it-note-city" rel="noopener">Post-it Note City</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>
-
 <a href="https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2018/06/29/the-real-problem-with-tech-professionals-high-turnover" rel="noopener"><em>Forbes</em> on High Turnover Rate in Tech</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
 <p>
-
 <a href="https://www.wired.com/story/sociologists-examine-hackathons-and-see-exploitation/" rel="noopener"><em>Wired</em> on Hackathons and Exploitation</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>

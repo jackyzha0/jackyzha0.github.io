@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -324,23 +326,18 @@ Apr 11, 2021
 
 <img src="https://jzhao.xyz//posts/images/ctrlv-next/title.png" width="auto" alt="Rewriting ctrl-v using Next.js"  /></p>
 <p>Ever since I released 
-
 <a href="https://github.com/jackyzha0/ctrl-v/" rel="noopener">ctrl-v</a>, friends from HackClub have kept bugging me about switching my current React code over to use Next.js. I wanted to see what all the fuss was about, so I finally set aside some time this weekend to rewrite the frontend using Next.js and deployed it on Vercel instead of Firebase Hosting. I thought it would take the whole weekend, but I managed to go from zero knowledge about Next.js to a fully finished refactor in just under 6 hours!</p>
 <p>This will be more of a technical blog post walking through my process in converting ctrl-v from using React Router and Firebase Hosting to Next.js and Firebase.</p>
 <p>Source code: 
-
 <a href="https://github.com/jackyzha0/ctrl-v" rel="noopener">https://github.com/jackyzha0/ctrl-v</a></p>
 <a href="#learning-nextjs"><h2 id="learning-nextjs"><span class="hanchor" ariaLabel="Anchor"># </span>Learning Next.js</h2></a>
 <p>I&rsquo;m a very hands-on learner. I learn the fastest stumbling my way through a project with a framework I barely know my way around than watching multiple video examples or reading blog posts. Having a tangible project to work with and break as I learned things really helped speed up the learning process for me. That being said, here are a few other resources I found really helpful in my journey!</p>
 <ul>
 <li>
-
 <a href="https://www.youtube.com/watch?v=Sklc_fQBmcs" rel="noopener">Next.js in 100 seconds + good beginner tutorial</a></li>
 <li>
-
 <a href="https://nextjs.org/docs/api-reference/create-next-app" rel="noopener">Twiddling around with <code>create-next-app</code></a></li>
 <li>
-
 <a href="https://nextjs.org/docs/migrating/from-react-router" rel="noopener">Next.js official documentation for migrating from React Router</a></li>
 </ul>
 <a href="#why-nextjs"><h2 id="why-nextjs"><span class="hanchor" ariaLabel="Anchor"># </span>Why Next.js</h2></a>
@@ -427,14 +424,11 @@ Apr 11, 2021
 </div>
 </div><p>The biggest part I needed to wrap my head around was the <code>getServerSideProps</code> async function. I didn&rsquo;t realize that the only job that <code>getServerSideProps</code> actually does, is fetch data and pass that data as props to your actual component. Once that clicked, the rest of the refactoring went relatively smoothly.</p>
 <p>I had to refactor my <code>useFetchPaste</code> hook to just fetch data and then delegated the responsibility of state and password validation shenanigans to whatever component. I ended up changing the name to <code>resolvePaste</code> as it no longer followed the 
-
 <a href="https://reactjs.org/docs/hooks-rules.html" rel="noopener">Rules of Hooks</a>.</p>
 <p>In hindsight, I probably should&rsquo;ve done this step incrementally using something like 
-
 <a href="https://nextjs.org/docs/api-reference/next.config.js/rewrites" rel="noopener">Next.js&rsquo;s rewrite rules</a> to gradually transition ctrl-v from React Router to Next.js. Luckily I didn&rsquo;t have that many pages to migrate but this is good to know for the future.</p>
 <a href="#styled-components-and-theme-provider"><h3 id="styled-components-and-theme-provider"><span class="hanchor" ariaLabel="Anchor"># </span><code>styled-components</code> and theme provider</h3></a>
 <p>From what I&rsquo;ve seen, Next.js doesn&rsquo;t play nicely with <code>styled-components</code> out of the box. Throughout the entire previous step, I was looking at painfully broken CSS. Turns out you need to 
-
 <a href="https://styled-components.com/docs/tooling#babel-plugin" rel="noopener">install an additional Babel plugin</a> to add SSR support to <code>styled-components</code>. Then, I added a custom <code>Document</code> to <code>pages/_document.js</code>. This code augments the root <code>&lt;html&gt;</code> tag of our application which will allow us to inline our CSS styles.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -557,7 +551,6 @@ Apr 11, 2021
 </div>
 </div><a href="#state-caching-for-password-pastes"><h3 id="state-caching-for-password-pastes"><span class="hanchor" ariaLabel="Anchor"># </span>State caching for password pastes</h3></a>
 <p>This part stumped me for a good bit. I needed to find a way to do an initial data fetch, check to see if the paste has a password, prompt the user for a password, then reload the page data. I contemplated using 
-
 <a href="https://swr.vercel.app/" rel="noopener">SWR</a> for data fetching but realized in the shower that it wouldn&rsquo;t really make sense as the initial load is handled in the <code>getServerSideProps</code> function anyways. I realized the best way forward was to fetch the initial state in <code>getServerSideProps</code> then store it as a React State so I can update it when a password is entered and data is re-fetched. This way there are no page reloads to disrupt user experience and keeps code change minimal.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -646,7 +639,6 @@ Apr 11, 2021
 </div><a href="#deployment"><h3 id="deployment"><span class="hanchor" ariaLabel="Anchor"># </span>Deployment</h3></a>
 <p>Great! At this point, everything was working great &ndash; locally. Every developer knows just how much of a leap it is to go from local machine to hosted and on the cloud. Right?</p>
 <p>My first thought was to see how difficult it would be to port my existing frontend on Firebase Hosting to run using Next.js instead. Turns out I would&rsquo;ve needed to enable Firebase Functions and to do that I needed to enable the Blaze plan (pay as you go). Seeing just 
-
 <a href="https://dev.to/rowaxl/what-i-struggled-with-next-js-using-firebase-hosting-and-enable-ssr-4e67" rel="noopener">how much of a hassle the process was</a> made me look for other alternatives.</p>
 <p>Vercel really surprised me with how easy it was to get setup. All I had to do was signup for Vercel using my GitHub account and select a repository to import. It took a total of 5 minutes to go from GitHub repo to deployed website which was a first.</p>
 <p>Funnily enough, the hardest part of this entire deployment process was deleting the old frontend off of Firebase. I accidentally deleted the entire project (including my Cloud Run deployed backend) twice and quite nearly misconfigured my domain.</p>
@@ -658,17 +650,12 @@ Apr 11, 2021
 <li>Better link previews (sending links to friends)</li>
 </ul>
 <p>If you haven&rsquo;t had the chance to try Next.js out for yourself and you&rsquo;ve made it this far, you owe it to yourself to at least give it a shot. Thanks to the HackClub community (specifically 
-
 <a href="https://rishi.cx/" rel="noopener">Rishi</a>, 
-
 <a href="https://safin.dev/" rel="noopener">Safin</a>, and 
-
 <a href="https://anirudhb.github.io/" rel="noopener">Ani</a>) for their constant encouragement and criticism of my &lsquo;outdated&rsquo; tech stack.</p>
 <p><strong>Source Code</strong>: 
-
 <a href="https://github.com/jackyzha0/ctrl-v" rel="noopener">https://github.com/jackyzha0/ctrl-v</a></p>
 <p><strong>Try it out for yourself</strong>: 
-
 <a href="https://ctrl-v.app/" rel="noopener">https://ctrl-v.app/</a></p>
 
 

@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -530,7 +532,6 @@ Aug 2, 2022
 
 <a href="#playfulness-vs-epistemic-traps"><h2 id="playfulness-vs-epistemic-traps"><span class="hanchor" ariaLabel="Anchor"># </span>Playfulness vs Epistemic Traps</h2></a>
 <p>C. Thi Nguyen on 
-
 <a href="https://philpapers.org/archive/NGUPVE.pdf" rel="noopener">Playfulness vs Epistemic Traps</a></p>
 <p><a href="/thoughts/play" rel="noopener" class="internal-link" data-src="/thoughts/play">Play</a> is done for its own sake. We play because playing is fun, pleasurable, or satisfying, not because we want some kind of product or outcome (<a href="/thoughts/The-Grasshopper#terminology" rel="noopener" class="internal-link" data-src="/thoughts/The-Grasshopper">autotelic behaviour</a>). It involves a sort of shifting of perspectives, or stepping outside one&rsquo;s normal rules and roles &ndash; and stepping into other ones.</p>
 <p>Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it (autotelic). It is a disposition to explore ideas for the value of exploration itself.</p>
@@ -552,7 +553,6 @@ Aug 2, 2022
 <p>In the <a href="/thoughts/exploit-explore" rel="noopener" class="internal-link" data-src="/thoughts/exploit-explore">exploit-explore tradeoff</a>, random walks are <em>actually good</em>. Surely, one may argue, that if going on occasional random walks is the best path for rationality, then wouldn&rsquo;t the rational person go on random walks? Yet, one cannot take a truly random walk without being guided by prior beliefs.</p>
 <a href="#idealogical-turing-test"><h2 id="idealogical-turing-test"><span class="hanchor" ariaLabel="Anchor"># </span>Idealogical Turing Test</h2></a>
 <p>
-
 <a href="https://twitter.com/liron/status/1551205692152975360" rel="noopener">https://twitter.com/liron/status/1551205692152975360</a></p>
 <blockquote>
 <p>The Ideological Turing Test is an exercise where you try to pretend to hold an opposing ideology convincingly enough that outside observers can&rsquo;t reliably distinguish you from a true believer.</p>

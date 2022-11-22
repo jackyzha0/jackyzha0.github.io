@@ -74,7 +74,7 @@ Writing as crystallized thought, a way of expressing the labyrinth of interconne
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Writing as crystallized thought, a way of expressing the labyrinth of interconne
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -772,20 +774,17 @@ Apr 7, 2022
 <p>Writing as crystallized thought, a way of expressing the labyrinth of interconnected, messy, and many time incoherent ideas in my mind. It is a form of <a href="/thoughts/knowledge-distillation" rel="noopener" class="internal-link" data-src="/thoughts/knowledge-distillation">knowledge distillation</a>.</p>
 <blockquote>
 <p>The thing I like about writing is that it’s quite literally <em>thinking</em>—a way for me access my own interiority and construct something from it. What I write is all mine, it’s a living thing, it’s an extension of me that wanders out into the world. (Ava in 
-
 <a href="https://ava.substack.com/p/how-to-avoid-half-heartedness" rel="noopener">How To Avoid Half-Heartedness</a>)</p>
 </blockquote>
 <p>It is a form of <a href="/thoughts/bandwidth#lossiness-as-mutation" rel="noopener" class="internal-link" data-src="/thoughts/bandwidth">lossiness as mutation</a>, a way to re-interpret and adapt the thoughts into a new form &ndash; to breathe it new life. Whether <a href="/posts/networked-thought" rel="noopener" class="internal-link" data-src="/posts/networked-thought">networked</a> or linear, molding it into new forms through <a href="/thoughts/language" rel="noopener" class="internal-link" data-src="/thoughts/language">language</a> and <a href="/thoughts/terminology" rel="noopener" class="internal-link" data-src="/thoughts/terminology">terminology</a> can give it a new perspective. A mental unflattening.</p>
 <blockquote>
 <p>What I am doing right now, writing this essay, is, technically, a linear walk through the network of my ideas. That is what writing is: turning a net into a line. (Henrik Karlsson, 
-
 <a href="https://www.lesswrong.com/posts/ZtMsyMP5F7zzP8Gvc/reader-generated-essays" rel="noopener">Reader-generated Essays</a>)</p>
 </blockquote>
 <p>It is the form almost universally understood by all, a sort of <a href="/thoughts/contact-language" rel="noopener" class="internal-link" data-src="/thoughts/contact-language">contact language</a> that enables people from vastly different backgrounds and <a href="/thoughts/context" rel="noopener" class="internal-link" data-src="/thoughts/context">contexts</a> to build <a href="/thoughts/fiction#fiction-as-shared-visions" rel="noopener" class="internal-link" data-src="/thoughts/fiction">shared fictions</a>.</p>
 <p>It is the contribution of the radical intellectual, a sort of gift and offering. From David Graeber, ‘Fragments of an Anarchist Anthropology’:</p>
 <blockquote>
 <p>One obvious role for a radical intellectual is to do precisely that: to look at those who are creating viable alternatives, try to figure out what might be the larger implications of what they are (already) doing, and then offer those ideas back, not as prescriptions, but as contributions, possibilities — as gifts [&hellip;] Such a project would have to have two aspects: one ethnographic, one utopian, suspended in a 
-
 <a href="https://kernel.community/en/learn/module-0/conversation/#old-gifts-anew" rel="noopener">constant dialogue</a>.</p>
 </blockquote>
 <p>Writing is a form of autonomous knowledge, something that is <a href="/thoughts/autopoiesis" rel="noopener" class="internal-link" data-src="/thoughts/autopoiesis">autopoetic</a>, self-contained, and self-spreading.</p>
@@ -794,7 +793,6 @@ Apr 7, 2022
 <p>Writing as <a href="/thoughts/art" rel="noopener" class="internal-link" data-src="/thoughts/art">art</a></p>
 <blockquote>
 <p>I write like the 12 dollar desk salad, the bar that packs 20 grams of protein and plastic into one 200-calorie brick. But good writing, like a good meal, needs fat. It should indulge readers, is meant to be chewed and enjoyed, affording a generous escape from the prosaic and mundane. &ndash; 
-
 <a href="https://jasmine.substack.com/p/audience-of-one" rel="noopener">Jasmine Sun</a></p>
 </blockquote>
 <p><em>How much time should we spend producing great writing, and how much trying to prove it to the world?</em> Can we write as if we were Hanya Yanagihara in &ldquo;A Little Life&rdquo;? To please only ourselves?</p>
@@ -823,7 +821,6 @@ Apr 7, 2022
 </ol>
 <a href="#as-query"><h2 id="as-query"><span class="hanchor" ariaLabel="Anchor"># </span>As query</h2></a>
 <p>
-
 <a href="https://escapingflatland.substack.com/p/search-query" rel="noopener">Source</a></p>
 <p><strong>A blog post is <em>a search query</em>. You write to find your tribe; you write so they will know what kind of fascinating things they should route to your inbox.</strong></p>
 <p>See also: <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">niche at scale and the internet</a></p>

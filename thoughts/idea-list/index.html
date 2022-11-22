@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -680,7 +682,6 @@ Jun 17, 2021
 <a href="#technical"><h2 id="technical"><span class="hanchor" ariaLabel="Anchor"># </span>Technical</h2></a>
 <ul>
 <li>
-
 <a href="https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/" rel="noopener">https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/</a> but with vim gutters and program slicing</li>
 <li>video editor with auto-generated snap points</li>
 <li>rotmg but actually good lol
@@ -696,17 +697,14 @@ Jun 17, 2021
 </li>
 <li>latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active</li>
 <li>something with 
-
 <a href="https://openai.com/blog/whisper/" rel="noopener">https://openai.com/blog/whisper/</a></li>
 <li>calvin and hobbes semantic image search</li>
 <li>recreate barcode battler but irl</li>
 <li>IPFS as a versioned package manager for all software</li>
 <li>
-
 <a href="https://openai.com/blog/webgpt/" rel="noopener">webgpt</a> but its for tools for thought
 <ul>
 <li>&ldquo;A 
-
 <a href="https://escapingflatland.substack.com/p/reader-generated-essays" rel="noopener">reader-generated essay</a> is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable.&rdquo;</li>
 <li>turning a graph traversal into a beautiful essay</li>
 </ul>
@@ -720,7 +718,6 @@ Jun 17, 2021
 <li>treesitter based CRDT for smart git merges
 <ul>
 <li>
-
 <a href="https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/" rel="noopener">https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/</a></li>
 </ul>
 </li>
@@ -736,7 +733,6 @@ Jun 17, 2021
 <ul>
 <li>bringing shape-shifting text to its most literal form</li>
 <li>
-
 <a href="https://oskarstalberg.com/Townscaper/" rel="noopener">https://oskarstalberg.com/Townscaper/</a> for words</li>
 <li>base representation is word vectors
 <ul>
@@ -759,20 +755,16 @@ Jun 17, 2021
 <li>(no clue if this would work) integral images but applied to vector similarity search in text documents</li>
 <li>viola-jones for text embeddings</li>
 <li>
-
 <a href="https://github.com/facebookresearch/faiss" rel="noopener">https://github.com/facebookresearch/faiss</a></li>
 </ul>
 </li>
 <li>how do we encode sentences/paragraphs/documents as vectors?
 <ul>
 <li>
-
 <a href="https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings" rel="noopener">https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings</a></li>
 <li>
-
 <a href="https://github.com/ryankiros/skip-thoughts" rel="noopener">https://github.com/ryankiros/skip-thoughts</a></li>
 <li>
-
 <a href="https://github.com/pytorch/fairseq/tree/main/examples/data2vec" rel="noopener">https://github.com/pytorch/fairseq/tree/main/examples/data2vec</a></li>
 </ul>
 </li>
@@ -797,14 +789,12 @@ Jun 17, 2021
 <li>data provenance
 <ul>
 <li>
-
 <a href="https://www.cs.cmu.edu/~NatProg/whyline.html" rel="noopener">https://www.cs.cmu.edu/~NatProg/whyline.html</a></li>
 </ul>
 </li>
 <li>how do we design better UI that reflects true application state?
 <ul>
 <li>
-
 <a href="https://www.scattered-thoughts.net/writing/relational-ui/" rel="noopener">https://www.scattered-thoughts.net/writing/relational-ui/</a></li>
 <li>CRDTs as reducers over event-logs&hellip; that produce a view?</li>
 </ul>
@@ -812,7 +802,6 @@ Jun 17, 2021
 <li>data lensing for databases
 <ul>
 <li>using 
-
 <a href="https://www.inkandswitch.com/cambria/" rel="noopener">https://www.inkandswitch.com/cambria/</a> maybe?</li>
 <li>some cool 
 
@@ -825,11 +814,9 @@ Jun 17, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/interoperability/">interoperability</a> things</li>
 <li>CRDTs for databases? 
-
 <a href="https://archive.jlongster.com/using-crdts-in-the-wild" rel="noopener">https://archive.jlongster.com/using-crdts-in-the-wild</a>
 <ul>
 <li>
-
 <a href="https://cse.buffalo.edu/tech-reports/2014-04.pdf" rel="noopener">https://cse.buffalo.edu/tech-reports/2014-04.pdf</a></li>
 </ul>
 </li>
@@ -846,57 +833,42 @@ Jun 17, 2021
 <li>fun interactions
 <ul>
 <li>
-
 <a href="https://victoiredouy.com/about" rel="noopener">https://victoiredouy.com/about</a></li>
 <li>
-
 <a href="http://www.narrowdesign.com/" rel="noopener">http://www.narrowdesign.com/</a></li>
 <li>
-
 <a href="https://thebrowser.company/" rel="noopener">https://thebrowser.company/</a></li>
 <li>
-
 <a href="http://lynnecarty.info/" rel="noopener">http://lynnecarty.info/</a></li>
 </ul>
 </li>
 <li>misc
 <ul>
 <li>
-
 <a href="https://shapefarm.net/" rel="noopener">https://shapefarm.net/</a></li>
 <li>
-
 <a href="https://kernel-mag.vercel.app/post/take-back-the-future" rel="noopener">https://kernel-mag.vercel.app/post/take-back-the-future</a></li>
 <li>
-
 <a href="https://rauno.me/" rel="noopener">https://rauno.me/</a></li>
 <li>
-
 <a href="https://www.thesolarmonk.com/posts/a-spacebar-for-the-web" rel="noopener">https://www.thesolarmonk.com/posts/a-spacebar-for-the-web</a></li>
 </ul>
 </li>
 <li>3d
 <ul>
 <li>
-
 <a href="https://chartogne-taillet.com/en" rel="noopener">https://chartogne-taillet.com/en</a></li>
 <li>
-
 <a href="https://flowersforsociety.com/" rel="noopener">https://flowersforsociety.com/</a></li>
 <li>
-
 <a href="https://bruno-simon.com/" rel="noopener">https://bruno-simon.com/</a></li>
 <li>
-
 <a href="https://danny-garcia.com/" rel="noopener">https://danny-garcia.com/</a></li>
 <li>
-
 <a href="http://richardmattka.com/prototypes/red-shift" rel="noopener">http://richardmattka.com/prototypes/red-shift</a></li>
 <li>
-
 <a href="https://ventureworks.io/" rel="noopener">https://ventureworks.io/</a></li>
 <li>
-
 <a href="https://henryheffernan.com/" rel="noopener">https://henryheffernan.com/</a></li>
 </ul>
 </li>
@@ -905,11 +877,9 @@ Jun 17, 2021
 <li>LayoutLM + screenshots → auto-categorization of knowledge
 <ul>
 <li>
-
 <a href="https://screenotate.com/" rel="noopener">https://screenotate.com/</a> but with atlas recall</li>
 <li>maybe turn this into an app which auto-extracts semantic info from screenshots/images on webpages and does something w it idk</li>
 <li>how do we prevent 
-
 <a href="https://twitter.com/rsnous/status/1130910375795277824" rel="noopener">https://twitter.com/rsnous/status/1130910375795277824</a></li>
 </ul>
 </li>
@@ -974,10 +944,8 @@ Jun 17, 2021
 <li>Background:
 <ul>
 <li>
-
 <a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem" rel="noopener">https://en.wikipedia.org/wiki/Boolean_satisfiability_problem</a></li>
 <li>
-
 <a href="https://searchworks.stanford.edu/view/13250178" rel="noopener">https://searchworks.stanford.edu/view/13250178</a></li>
 </ul>
 </li>
@@ -986,17 +954,14 @@ Jun 17, 2021
 <li>NeuroSAT Paper:
 <ul>
 <li>
-
 <a href="https://arxiv.org/pdf/1802.03685.pdf" rel="noopener">https://arxiv.org/pdf/1802.03685.pdf</a></li>
 </ul>
 </li>
 <li>DreamCoder Paper:
 <ul>
 <li>
-
 <a href="https://arxiv.org/pdf/2006.08381.pdf" rel="noopener">https://arxiv.org/pdf/2006.08381.pdf</a></li>
 <li>
-
 <a href="https://www.youtube.com/watch?v=qtu0aSTDE2I" rel="noopener">https://www.youtube.com/watch?v=qtu0aSTDE2I</a></li>
 </ul>
 </li>
@@ -1098,12 +1063,10 @@ Jun 17, 2021
 <li>tabfs but for emails
 <ul>
 <li>
-
 <a href="https://bazil.org/fuse/" rel="noopener">https://bazil.org/fuse/</a></li>
 </ul>
 <ul>
 <li>
-
 <a href="https://blog.gopheracademy.com/advent-2014/fuse-zipfs/" rel="noopener">https://blog.gopheracademy.com/advent-2014/fuse-zipfs/</a></li>
 <li>listen on any email server</li>
 </ul>

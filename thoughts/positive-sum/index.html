@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -329,9 +331,7 @@ Oct 26, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/zero-sum/">zero sum</a></p>
 <p>
-
 <a href="https://otherinter.net/research/positive-sum-worlds/" rel="noopener">Positive Sum Worlds: Remaking Public Goods in <em>Other Internet</em></a>and 
-
 <a href="https://gitcoin.co/blog/seeking-a-new-kind-of-public-good/" rel="noopener">Gitcoin on Seeking a New Kind of Public Good: Open Call for Proposals</a></p>
 <p>We govern, share, and maintain 
 
@@ -366,7 +366,6 @@ Oct 26, 2021
 <p>Economics is the study of the allocation of scarce goods. We need a new paradigm, and a new field of study. What we need is agalmics.</p>
 <blockquote>
 <p>The study and practice of the production and allocation of non-scarce goods. 
-
 <a href="https://wiki.p2pfoundation.net/Agalmics" rel="noopener">Source</a></p>
 </blockquote>
 
@@ -434,8 +433,22 @@ Oct 26, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Making-and-Maintenance-of-OSS/" data-ctx="positive sum" data-src="/thoughts/Making-and-Maintenance-of-OSS" class="internal-link">The Making and Maintenance of Open Source Software</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Pareto-optimality/" data-ctx="thoughts/positive sum" data-src="/thoughts/Pareto-optimality" class="internal-link">Pareto optimality</a>
       </li>
       
       

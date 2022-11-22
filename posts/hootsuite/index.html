@@ -75,7 +75,7 @@ Since I’ve started at Hootsuite, I have
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -119,15 +119,17 @@ Since I’ve started at Hootsuite, I have
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -344,9 +346,7 @@ Aug 30, 2019
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/2000/0*uK2cNprrvSGsaECM.jpg" width="auto" alt="
-
 &lt;a href=&#34;https://www.gocomics.com/calvinandhobbes/2015/10/18&#34; rel=&#34;noopener&#34;&gt;October 18th, 2015&lt;/a&gt;"  /><em>
-
 <a href="https://www.gocomics.com/calvinandhobbes/2015/10/18" rel="noopener">October 18th, 2015</a></em></p>
 <p>Over these short 8 weeks, I’ve learned a lot. Everything at Hootsuite has served to be a once-in-a-lifetime learning opportunity, from learning to build complex services in languages that I’ve never even heard to doing technical demos in front of the entire Product Development team. Despite being a ‘software development’ position, I found myself learning to be a better technical communicator, to have better personal confidence, and so much more.</p>
 <p>Yet among everything, two big lessons stood out to me:</p>
@@ -368,16 +368,13 @@ Aug 30, 2019
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/2000/0*Psh-fqFgVeQegGay.jpg" width="auto" alt="
-
 &lt;a href=&#34;https://www.gocomics.com/calvinandhobbes/1985/12/27&#34; rel=&#34;noopener&#34;&gt;December 27th, 1985&lt;/a&gt;"  /><em>
-
 <a href="https://www.gocomics.com/calvinandhobbes/1985/12/27" rel="noopener">December 27th, 1985</a></em></p>
 <p>Becomes sometimes, you just gotta go for it. You probably shouldn’t be going around and ruining nice coffee tables, but it works as a metaphor I guess? The point is: take necessary risks. Don’t say “nah, that’s not possible” before someone else tells you it is. At the start of summer, if someone told me I was going to be doing a demo on a proposal for a massive re-architecture of one of Hootsuite’s core services, I would have told you that you were insane. Yet here I am, doing just that:</p>
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/3488/1*P8WSSl993SYILSfw9EfCwg.png" width="auto" alt=""  /></p>
 <p>If your brain is anything like mine, you often get these nagging self-doubts about whether you’re capable of doing something. The first time I was assigned to help define Service Level Objectives (
-
 <a href="https://landing.google.com/sre/sre-book/chapters/service-level-objectives/" rel="noopener">SLOs</a>) for some of Hootsuite’s core services, I was shocked.</p>
 <blockquote>
 <p>They’re letting a high schooler do this? How am I even close to being qualified?</p>

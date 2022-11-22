@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -482,23 +484,17 @@ Dec 27, 2021
 <a href="#tabspace---a-scratchspace-for-your-new-tab-page"><h2 id="tabspace---a-scratchspace-for-your-new-tab-page"><span class="hanchor" ariaLabel="Anchor"># </span>Tabspace - a scratchspace for your new tab page</h2></a>
 <p>A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with <a href="/thoughts/formality-considered-harmful" rel="noopener" class="internal-link" data-src="/thoughts/formality-considered-harmful">low-friction</a> note taking and integrating <a href="/thoughts/game-design" rel="noopener" class="internal-link" data-src="/thoughts/game-design">game design</a> principles of &lsquo;juiciness&rsquo; into UI/UX.</p>
 <p>
-
 <a href="https://github.com/jackyzha0/tabspace" rel="noopener">GitHub</a>, 
-
 <a href="https://chrome.google.com/webstore/detail/tabspace/kcinhoikngobhiikicnpahoanenlnlha" rel="noopener">Chrome Webstore</a></p>
 <a href="#miniraft---1kloc-raft-consensus-algorithm-implementation"><h2 id="miniraft---1kloc-raft-consensus-algorithm-implementation"><span class="hanchor" ariaLabel="Anchor"># </span>miniraft - &lt;1kloc Raft consensus algorithm implementation</h2></a>
 <p>A minimal implementation of the <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">raft Consensus Algorithm</a> with a focus on readability/understandability.</p>
 <p>This project was created as an exercise in implementing and learning about distributed systems. Do NOT use this in production.</p>
 <p>
-
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">GitHub</a>, 
-
 <a href="https://jzhao.xyz/miniraft/miniraft/" rel="noopener">Documentation</a></p>
 <a href="#cursor-chat----open-source-library-for-digital-presence"><h2 id="cursor-chat----open-source-library-for-digital-presence"><span class="hanchor" ariaLabel="Anchor"># </span>Cursor Chat &ndash; open source library for digital presence</h2></a>
 <p>
-
 <a href="https://github.com/jackyzha0/cursor-chat" rel="noopener">GitHub</a>, 
-
 <a href="https://jzhao.xyz/cursor-chat/" rel="noopener">Demo</a></p>
 <p>A lightweight (31.8kB) cursor chat à la Figma for digital co-existing + presence. An experiment in spatial software, 
 
@@ -520,20 +516,14 @@ Dec 27, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/digital-commons/">digital commons</a>.</p>
 <p>Built on top of 
-
 <a href="https://github.com/yjs/yjs" rel="noopener">yjs</a> and 
-
 <a href="https://github.com/steveruizok/perfect-cursors" rel="noopener">perfect-cursors</a>.</p>
 <a href="#telescopic-text----open-source-library-for-expandable-text"><h2 id="telescopic-text----open-source-library-for-expandable-text"><span class="hanchor" ariaLabel="Anchor"># </span>Telescopic Text &ndash; open source library for expandable text</h2></a>
 <p>
-
 <a href="https://github.com/jackyzha0/telescopic-text" rel="noopener">GitHub</a>, 
-
 <a href="https://jzhao.xyz/telescopic-text/demo/" rel="noopener">Demo</a></p>
 <p>An open-source library to help with creating expandable text, inspired by 
-
 <a href="https://en.wikipedia.org/wiki/StretchText" rel="noopener">StretchText</a> and 
-
 <a href="https://www.telescopictext.org/text/KPx0nlXlKTciC" rel="noopener">TelescopicText</a>.</p>
 <p>I&rsquo;ve been thinking a lot about creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.) and concepts like Telescopic Text are a first step in creating more information scales than just a single document level.</p>
 <h2 id="portal----zero-config-p2pthoughtspeer-to-peermd-encrypted-folder-syncing">Portal &ndash; zero-config 
@@ -547,17 +537,13 @@ Dec 27, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/peer-to-peer/">P2P</a> encrypted folder syncing</h2>
 <p>
-
 <a href="https://www.producthunt.com/posts/portal-11" rel="noopener">Producthunt</a>, 
-
 <a href="https://github.com/jackyzha0/portal" rel="noopener">GitHub</a></p>
 <p>Portal is a command line tool that syncs folders between multiple devices. Perfect for syncing photos/videos/code between many devices without using a 3P tool like GitHub, Email, or Google Photos. Built on top of the Hypercore protocol with Ink for the CLI.</p>
 <p>Built with: <a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a>, React, Ink, and Typescript</p>
 <a href="#quartz----create-and-publish-digital-gardens-for-free"><h2 id="quartz----create-and-publish-digital-gardens-for-free"><span class="hanchor" ariaLabel="Anchor"># </span>Quartz &ndash; create and publish digital gardens for free</h2></a>
 <p>
-
 <a href="https://quartz.jzhao.xyz/" rel="noopener">Site</a>, 
-
 <a href="https://github.com/jackyzha0/quartz" rel="noopener">GitHub</a></p>
 <p>Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a JSON file to be rendered by Hugo.</p>
 <p>Over 1.2k monthly users and 300+ forks on GitHub.</p>
@@ -573,49 +559,37 @@ Dec 27, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/democracy/">democracy</a></h2>
 <p>
-
 <a href="https://devpost.com/software/legist" rel="noopener">DevPost (Finalists at HTN 2020++)</a>, 
-
 <a href="https://github.com/htn2020plusplus" rel="noopener">GitHub</a></p>
 <p>Legist is a web platform that allows users to digest policies in an efficient and accessible manner. Legist allows users view automagically summarize pieces of policy + legislation while still maintaining the key takeaways, view and filter policies by category, and subscribe to periodic rollups on updates. Frontend was built with React + Typescript + Chakra UI. Text summarization was done using DistilBART, Named-entity recognition with BERT, and zero-shot text categorization using BART. All models were served with BentoML. Built at Hack the North 2020++, winning the Founder Institute Fellowship Prize and finalist among over 3000+ participants</p>
 <p>Built with: React, Firebase, GraphQL, CockroachDB, Node.js, Flask, Docker, MailGun, BentoML, HuggingFace, TypeScript, Python, JavaScript</p>
 <a href="#ctrl-v----a-modern-open-source-pastebin"><h2 id="ctrl-v----a-modern-open-source-pastebin"><span class="hanchor" ariaLabel="Anchor"># </span>ctrl-v &ndash; a modern, open-source pastebin</h2></a>
 <p>
-
 <a href="https://ctrl-v.app/" rel="noopener">App</a>, 
-
 <a href="https://github.com/jackyzha0/ctrl-v" rel="noopener">GitHub</a></p>
 <p>ctrl-v is a modern, open-source pastebin with LaTeX and Markdown rendering support. Any user can create a paste without an account, with the ability to protect it with a password and set an expiry date. Additionally, ctrl-v does code highlighting as well as LaTeX and Markdown rendering. Pastes are stored in a MongoDB Atlas instance. Backend is a containerized Go service deployed on Google Cloud Run. Frontend is a SSR Next.js app hosted on Vercel.</p>
 <p>Built with: React, Next.js, Vercel, styled-components, MongoDB, Cloud Run, GCR, JavaScript, Go, Docker</p>
 <a href="#reflect----a-mindful-website-blocker-for-the-productive"><h2 id="reflect----a-mindful-website-blocker-for-the-productive"><span class="hanchor" ariaLabel="Anchor"># </span>reflect &ndash; a mindful website blocker for the productive</h2></a>
 <p>
-
 <a href="https://getreflect.app/" rel="noopener">Site</a>, 
-
 <a href="https://github.com/jackyzha0/reflect-chrome" rel="noopener">GitHub</a></p>
 <p>reflect is a browser extension with 800+ active users focused around asking users to reflect before visiting distracting sites, helping to reduce mindless scrolling while still being able to get work done. During closed-beta, we created a Go service that logged user intents to a Cloud SQL database and did intent classification by serving a basic Flask API. We then trained an LSTM network in Keras on the closed-beta data and augmented it using <a href="/thoughts/NLP" rel="noopener" class="internal-link" data-src="/thoughts/NLP">NLP</a> data augmentation techniques, reaching ~86% classification accuracy. Finally, the model was ported to Tensorflow.js where it runs in-browser within the extension which is written in Typescript.</p>
 <p>Built with: Kubernetes, Docker, GKE, Cloud SQL, Keras, Tensorflow.js, Flask, CircleCI, TypeScript, Python, Go</p>
 <a href="#nanodb----a-simple-easy-and-debuggable-document-database"><h2 id="nanodb----a-simple-easy-and-debuggable-document-database"><span class="hanchor" ariaLabel="Anchor"># </span>nanoDB &ndash; a simple, easy, and debuggable document database</h2></a>
 <p>
-
 <a href="https://godoc.org/github.com/jackyzha0/nanoDB" rel="noopener">GoDoc</a>, 
-
 <a href="https://github.com/jackyzha0/nanodb" rel="noopener">GitHub</a></p>
 <p>nanoDB arose out of many frustrations I&rsquo;ve personally come across while prototyping, namely 1) difficulty of debugging data 2) faffing around with language specific drivers and 3) reference resolution. As a result, nanoDB stores everything on disk as a JSON document, has built-in reference resolution, and can be used fully through a REST API. Think of it like Redis but with MongoDB style documents — all of which is on-disk, human-readable, and through a REST API. The project is fully written in Go and is thoroughly unit-tested. It features a standalone server binary which creates a nanoDB server, as well as a shell which allows you to do some basic document inspection.</p>
 <p>Built with: Docker, Go</p>
 <a href="#readar----an-ar-app-to-help-those-with-learning-disabilities"><h2 id="readar----an-ar-app-to-help-those-with-learning-disabilities"><span class="hanchor" ariaLabel="Anchor"># </span>readAR &ndash; an AR app to help those with learning disabilities</h2></a>
 <p>
-
 <a href="https://devpost.com/software/readar-twh41m" rel="noopener">DevPost (TreeHacks 2020, Microsoft Azure Champ Prize - Hack for Good)</a>, 
-
 <a href="https://github.com/jackyzha0/treehacks2020-backend" rel="noopener">GitHub</a></p>
 <p>readAR is a mobile AR app re-renders text to be more dyslexic-friendly, and adds context-dependent word definitions and images. A custom BERT model was created and trained for word sense disambiguation (WSD), achieving a 76.6% F1% score on the test dataset which is only ~5% away from state-of-the-art. This model is served through Flask on an Oracle VM Instance. The API is also responsible for our image processing pipeline, which is a conglomerate of different Azure APIs (OCR, Text Analytics, Bing Search).</p>
 <p>Built with: PyTorch, Flask, Docker, Azure, Oracle Cloud, Python, Bash</p>
 <a href="#impostor----group-pomodoro-timer-with-a-twist"><h2 id="impostor----group-pomodoro-timer-with-a-twist"><span class="hanchor" ariaLabel="Anchor"># </span>Impostor &ndash; group pomodoro timer with a twist</h2></a>
 <p>
-
 <a href="https://devpost.com/software/impostor" rel="noopener">Devpost (Finalist at DubHacks 2020, Disney Prize)</a>, 
-
 <a href="https://github.com/h4ckh0use" rel="noopener">GitHub</a></p>
 <p>Imposter is a productivity timer designed to keep friends on task together even when working remotely. The Chrome extension monitors your browser tabs, checking against a blocklist of unproductive sites. If one of those websites is visited, the backend will be notified via Firebase and will notify all users in the room through a WebSocket connection. Chat and character customization is also supported.</p>
 <p>Built with: Firestore, WebSockets, Node.js, Heroku, JavaScript</p>
@@ -630,7 +604,6 @@ Dec 27, 2021
   
   rel="noopener" class="internal-link broken"
   data-src="res/gvrsf_report.pdf">Paper (Silver + 10k in awards at Canada Wide Science Fair)</a>, 
-
 <a href="https://github.com/jackyzha0/Speech2Braille" rel="noopener">GitHub</a></p>
 <p>Speech2Braille was created to help the over 360 million people in the world who have debilitating hearing loss. This project entailed creating an end-to-end speech recognition system using an Deep LSTM and a portable device to display braille. The device is able to recognize audio and transcribe it into Braille through the haptic feedback device via a novel neural network architecture. The feedback device is a self-made GPIO hat, consisting of 6 solenoids. The neural network itself is 2 layered LSTM-CTC network with 256 hidden cells in each layer, achieving 92% state-of-the-art word error rate on the TIMIT dataset.</p>
 <p>Built with: Tensorflow, numpy, Raspberry Pi, Python, Bash</p>
@@ -645,9 +618,7 @@ Dec 27, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/Internet/">Internet</a></h2>
 <p>
-
 <a href="https://devpost.com/software/packetbook" rel="noopener">Devpost (nwHacks 2018 SAP Prize, Top 30)</a>, 
-
 <a href="https://github.com/jackyzha0/PacketBook" rel="noopener">GitHub</a></p>
 <p>PacketBook is a financial accessibility chatbot, fully accessible through the SMS (text messaging) protocol. Users are able to issue simple commands to register, check their balance, deposit, withdraw, and send money. These commands are secured with two-factor authentication through a Flask server on Heroku with Twilio. The backend that handles transaction is written with Node and Express and deployed on stdlib. PacketBook is unique in that it leverages the Stellar blockchain and tokens (XLM) for its transactions which greatly reduces operating overhead with its minimal transaction costs (around 1/100 of a cent per transaction).</p>
 <p>Built with: MongoDB, Node.js, Express, Flask, Stellar, Heroku, JavaScript, Python</p>

@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -18835,7 +18837,6 @@ May 3, 2022
 <li>Adding JSON support is harder than I expected!
 <ul>
 <li>Mostly taking inspiration from yet another 
-
 <a href="https://arxiv.org/pdf/1608.03960.pdf" rel="noopener">Kleppmann paper</a></li>
 <li>Insert
 <ul>
@@ -18874,7 +18875,6 @@ May 3, 2022
 <a href="#october-23rd"><h3 id="october-23rd"><span class="hanchor" ariaLabel="Anchor"># </span>October 23rd</h3></a>
 <ul>
 <li>
-
 <a href="https://www.youtube.com/watch?v=-f4cH_HQU4U" rel="noopener">Another great talk on WNFS</a> by Brooklyn Zelenka
 <ul>
 <li>The whole &lsquo;ask for permission&rsquo; thing isn&rsquo;t actually new!</li>
@@ -18882,7 +18882,6 @@ May 3, 2022
 </ul>
 </li>
 <li>
-
 <a href="https://www.cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf" rel="noopener">New Directions in Cloud Programming</a>
 <ul>
 <li>The way we write distributed systems today is like writing assembly by hand &ndash; incredibly error prone</li>
@@ -18915,14 +18914,12 @@ May 3, 2022
 <li>Ran into a potential problem with message forgery&hellip;
 <ul>
 <li>Seems like 
-
 <a href="https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf" rel="noopener">Kleppmanns&rsquo;s Paper</a> doesn&rsquo;t address cases where, say a Byzantine node tries to send a message <em>on behalf</em> of another node (as it knows the unique IDs of other nodes) and forges an update.</li>
 <li>This is possible as the unique ID doesn&rsquo;t have any other properties that guarantee that only that the node with the ID can send that message.</li>
 <li>We would potentially need some sort of <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> assumption where the unique ID of a node is its public key and the ID is the signed digest of the message</li>
 </ul>
 </li>
 <li>This is (sort of) confirmed in 
-
 <a href="https://arxiv.org/pdf/2012.00472.pdf" rel="noopener">Kleppmann&rsquo;s 2020 paper</a>
 <ul>
 <li>&ldquo;We assume that each replica has a distinct private key that can be used for digital signatures, and that the corresponding public key is known to all replicas. We assume that no replica knows the private key of another replica, and thus signatures cannot be forged&rdquo;</li>
@@ -18972,7 +18969,6 @@ May 3, 2022
 <ul>
 <li>Ok well&hellip; it&rsquo;s been 3 weeks since I last wrote an update. School has been busy!</li>
 <li>I got really stuck with Rhizome work so I took a week and a bit off to work on 
-
 <a href="https://github.com/jackyzha0/tabspace" rel="noopener">Tabspace</a> and launched it. It felt good to launch something and &lsquo;unstick myself&rsquo;</li>
 <li>Got more motivation to work on <code>bft-json-crdt</code> and started a more methodical approach to debugging (rather than just changing index offsets and rerunning LOL).
 <ul>
@@ -19100,7 +19096,6 @@ May 3, 2022
 <li>Catching up today on a bunch of talks + reading
 <ul>
 <li>Wonderful 
-
 <a href="https://www.youtube.com/watch?v=mxkAAtTvcEE&amp;t=10656s" rel="noopener">talk by Brooklyn Zelenka</a> (CTO of Fission)
 <ul>
 <li>&ldquo;The limitation of local knowledge is the fundamental fact about the setting in which we work, and it is a very powerful limitation&rdquo; &ndash; Nancy Lynch, A Hundred Impossibility Proofs for Distributed Computing</li>
@@ -19178,9 +19173,7 @@ May 3, 2022
 <li>What would it be like to build in interpolation into the state replication level?
 <ul>
 <li>e.g. similar to 
-
 <a href="https://www.jfedor.org/quake3/" rel="noopener">Quake 3&rsquo;s Networking</a> or 
-
 <a href="https://github.com/steveruizok/perfect-cursors/" rel="noopener">perfect-cursors</a> both do 3 types of smoothing:</li>
 </ul>
 <ol>
@@ -19195,13 +19188,11 @@ May 3, 2022
 </ol>
 </li>
 <li>See also: 
-
 <a href="https://en.wikipedia.org/wiki/GGPO" rel="noopener">GGPO</a> which is heavily used in real-time fighting games</li>
 </ul>
 <a href="#august-30th"><h3 id="august-30th"><span class="hanchor" ariaLabel="Anchor"># </span>August 30th</h3></a>
 <ul>
 <li>
-
 <a href="https://stopa.io/post/296" rel="noopener">A Graph-Based Firebase</a>
 <ul>
 <li>Turns out most modern real-time applications look something like this:<img src="/thoughts/images/modern-app-architecture.png" width="auto" /></li>
@@ -19217,7 +19208,6 @@ May 3, 2022
 <li>DAG instead of append-only log
 <ul>
 <li>&ldquo;Both of these abilities follow directly from the explicit embedding of causality into a DAG, with time travel being analogous to a traversal over that graph&rdquo; 
-
 <a href="https://fission.codes/blog/fission-reactor-dialog-first-look/" rel="noopener">Dialog</a></li>
 </ul>
 </li>
@@ -19257,7 +19247,6 @@ May 3, 2022
 <li>Permissionlessness is an important characteristic to enable innovation and <a href="/thoughts/emergent-behaviour" rel="noopener" class="internal-link" data-src="/thoughts/emergent-behaviour">emergent behaviour</a>
 <ul>
 <li>See also: 
-
 <a href="https://simonsarris.substack.com/p/welcome-ghosts" rel="noopener">Simon Harris on the same topic</a></li>
 <li>&ldquo;Many tales exist of [the origin of the bistro]. Some say it was working-class landlords opening their kitchens for extra income. Others say it was the Auvergnats, immigrating to Paris from what is today central-south France, who first worked as rag-pickers, then wood and coal sellers, then metalworkers, who created small working-class restaurants to supplement their income. Either way, it was not planned or engineered, but simply not-disallowed. There were no rules in place to stop this invention.&rdquo;</li>
 <li>Same with YouTube which started out as a dating app but then let people upload anything. The <em>users</em>, not the website creators, found its real uses</li>
@@ -19276,7 +19265,6 @@ May 3, 2022
 <li>Preparing workshop notes to talk about <a href="/thoughts/computer-networking" rel="noopener" class="internal-link" data-src="/thoughts/computer-networking">computer networking + P2P</a></li>
 <li>Feelings rant &ndash; I feel an odd and unusually heavy sense of impostor syndrome today. Going to write out more stuff in <a href="/posts/the-fools-who-dream" rel="noopener" class="internal-link" data-src="/posts/the-fools-who-dream">this blog post</a> I&rsquo;m going to flesh out</li>
 <li>Frustrated by 
-
 <a href="https://www.youtube.com/watch?v=v0160IirdL4" rel="noopener">this video by one of the founders of the Browser Company</a>
 <ul>
 <li>Their vision is that the &rsquo;next generation&rsquo; of computers &ndash; after the mainframes and personal computers &ndash; is the <em>internet computer</em>, where everything we do happens in the cloud and our machines are just dumb portals to access these
@@ -19359,10 +19347,8 @@ May 3, 2022
 <li>How do we do live reconfiguration of cluster quorum size?
 <ul>
 <li>
-
 <a href="https://users.ece.cmu.edu/~reiter/papers/2000/DSN.pdf" rel="noopener">https://users.ece.cmu.edu/~reiter/papers/2000/DSN.pdf</a></li>
 <li>
-
 <a href="https://www.alibabacloud.com/blog/raft-engineering-practices-and-the-cluster-membership-change_597742" rel="noopener">https://www.alibabacloud.com/blog/raft-engineering-practices-and-the-cluster-membership-change_597742</a></li>
 </ul>
 </li>
@@ -19442,7 +19428,6 @@ May 3, 2022
 <li>A browser&hellip; with editing and hosting of local-files baked in
 <ul>
 <li>co-creating websites live, similar to 
-
 <a href="https://docs.beakerbrowser.com/" rel="noopener">Beaker Browser</a></li>
 </ul>
 </li>
@@ -19495,7 +19480,6 @@ May 3, 2022
 <ul>
 <li>Notes on <a href="/thoughts/Braid-HTTP" rel="noopener" class="internal-link" data-src="/thoughts/Braid-HTTP">Braid HTTP</a>, <a href="/thoughts/Yjs" rel="noopener" class="internal-link" data-src="/thoughts/Yjs">Yjs</a>, <a href="/thoughts/Secure-Scuttlebutt" rel="noopener" class="internal-link" data-src="/thoughts/Secure-Scuttlebutt">SSB</a>, <a href="/thoughts/OrbitDB" rel="noopener" class="internal-link" data-src="/thoughts/OrbitDB">OrbitDB</a></li>
 <li>Quilt has a 
-
 <a href="https://writings.quilt.org/2014/05/12/distributed-systems-and-the-end-of-the-api/" rel="noopener">great piece</a> arguing for more CRDTs and why APIs are lacking and what the next logical step is
 <ul>
 <li>Put more simply, going back to picking on APIs, what will complete this analogy? <code>assembly/C : Java/Python/Clojure :: APIs : ???</code></li>
@@ -19561,11 +19545,9 @@ May 3, 2022
 <a href="#august-5th---7th"><h3 id="august-5th---7th"><span class="hanchor" ariaLabel="Anchor"># </span>August 5th - 7th</h3></a>
 <ul>
 <li>Went to 
-
 <a href="https://assemble.hackclub.com/" rel="noopener">Hackclub Assemble</a> and was just inspired by the magnitude of talent of the next generation of hackers and builders. Zach (+ Sam and rest of the HC team) really blew it out of the park this time. The theme was to build something completely useless and the kids went wild with it. I still strongly believe that one of the best signals for someone who <em>deeply</em> and intrinsically cares about technology is one who can still play and tinker for the hell of it.
 <ul>
 <li>In a similar vain, I&rsquo;m organizing a Hack Day at 
-
 <a href="https://www.thesfcommons.com/" rel="noopener">The SF Commons</a> on August 14th! A little callback to my hackathon organizing days :)) Really hoping to bring this new space to life with this event</li>
 </ul>
 </li>
@@ -19613,7 +19595,6 @@ May 3, 2022
 </li>
 <li>Problem of getting people to migrate off of existing platforms remains unsolved</li>
 <li>Developer experience is difficult to set up and get started (see 
-
 <a href="https://developer.holochain.org/happ-setup/" rel="noopener">HApp setup docs</a>) &ndash; heavy use of technical terminology</li>
 </ul>
 </li>
@@ -19700,7 +19681,6 @@ May 3, 2022
 </li>
 <li>I want to spend some time thinking about how to create effective learning and research communities. I know that since I started working in the public hackerspace at Incepto, my productivity has gone up something like 5x. How do I <em>geographically</em> surround myself with people that constantly inspire me to work on ambitious things?</li>
 <li>On a whim, read this awesome 
-
 <a href="https://www.patreon.com/posts/ratcheting-in-47976114" rel="noopener">Patreon post</a> by Andy Matuschak
 <ul>
 <li><em>Ben Shneiderman, a pioneering human-computer interaction researcher, offers this charming schematic for research project design in The New ABCs of Research. He calls it the “two parents, three children” pattern.</em>
@@ -19731,7 +19711,6 @@ May 3, 2022
 <li>An open-source code library with good documentation</li>
 <li>A recorded, shareable presentation of the work, preferably as part of our research talk series (!! this is really exciting).</li>
 <li>A blog post describing the impact of your work to be featured it their 
-
 <a href="https://research.protocol.ai/posts/" rel="noopener">research blog</a>.</li>
 </ul>
 </li>
@@ -19801,7 +19780,6 @@ May 3, 2022
 <ul>
 <li>I&rsquo;ve been trying to write down some more cohesive thoughts around <a href="/thoughts/identity" rel="noopener" class="internal-link" data-src="/thoughts/identity">identity</a> for the past two days and running into a block where I&rsquo;m struggling to articulate why and how real world identity and digital identity differ</li>
 <li>Just read this blog post on 
-
 <a href="https://rosano.hmm.garden/01evv3hq1ak4b6ng1jzppx5n2j" rel="noopener">Going Doorless</a> that really resonated and gave new language to ideas and concepts that have been floating around in my head for a while
 <ul>
 <li>Public commons like parks and libraries feel public because moving around in them is effortless
@@ -19829,7 +19807,6 @@ May 3, 2022
 <li>Part of the nail of my left pinkie ripped off today argH it is now painful to type :((</li>
 <li>Realized that when doing site redesign, I lost a commit&rsquo;s worth of notes (sad) but also Obsidian Sync which I normally use for backup <em>also</em> expired today (double sad). Not as bad as it could have been though! Thankfully I commit often :)</li>
 <li>Spent a lot of time just reading today, a lot of different scattered blogs that I&rsquo;ve been meaning to get to. 
-
 <a href="https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/?curius=1294" rel="noopener">One link that was sent</a> in the Metagov Slack particularly stood out to me though. It was on human identity and, more specifically, a critique of specifically <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">SSI</a>
 <ul>
 <li>Long read but I think it captures a lot of my thinking around why I think <a href="/thoughts/digital-permanence" rel="noopener" class="internal-link" data-src="/thoughts/digital-permanence">digital permanence</a> is scary (and why I&rsquo;ve been thinking about relational notions of identity!) TLDR;
@@ -19850,17 +19827,14 @@ May 3, 2022
 <li>Reboot published my research proposal / manifesto / essay on Rhizome and data-neutrality today!
 <ul>
 <li>
-
 <a href="https://reboothq.substack.com/p/rhizome" rel="noopener">Check it out on Substack</a></li>
 <li>Ben Tarnoff, the guy who cofounded Logic, actually read and 
-
 <a href="https://twitter.com/bentarnoff/status/1547619611796914179" rel="noopener">tweeted about it</a> and readers seemed to resonate a lot with the post!</li>
 <li>Two general sentiments:
 <ol>
 <li>This project seems really exciting and I appreciate it recognizes existing work. What will get people to use this though? The social difficulty with &ldquo;apps as a view over data&rdquo; is that it requires users to understand data models and this consensus over data models has proven difficult
 <ul>
 <li>I agree with this evaluation and so far, feels unsolved. I think a promising solution is to think about it like how community-sourced types for TypeScript work. There&rsquo;s a whole open-source project that wildly popular that provides TypeScript definitions for plain JS libraries called 
-
 <a href="https://github.com/DefinitelyTyped/DefinitelyTyped" rel="noopener">DefinitelyTyped</a> (with over 12.6 million usages!). I think there&rsquo;s a potential for this to work with data schemas as well</li>
 </ul>
 </li>
@@ -19876,7 +19850,6 @@ May 3, 2022
 </li>
 <li>nobody: &hellip;
 youtube: 
-
 <a href="https://www.youtube.com/watch?v=g7MSfHEdxXs" rel="noopener">https://www.youtube.com/watch?v=g7MSfHEdxXs</a></li>
 <li>Going to read more about <a href="/thoughts/causal-tree" rel="noopener" class="internal-link" data-src="/thoughts/causal-tree">causal trees</a> as a way of understanding more basic forms of <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a> that value readability over correctness</li>
 </ul>
@@ -20014,19 +19987,14 @@ youtube:
 </ul>
 </li>
 <li>Read a really good paper on <a href="/thoughts/neutrality" rel="noopener" class="internal-link" data-src="/thoughts/neutrality">neutrality</a> and learned about the 
-
 <a href="https://datatransferproject.dev/" rel="noopener">Data Transfer Project</a></li>
 </ul>
 <a href="#july-6th"><h3 id="july-6th"><span class="hanchor" ariaLabel="Anchor"># </span>July 6th</h3></a>
 <ul>
 <li>Holy shit 
-
 <a href="https://twitter.com/morgallant" rel="noopener">Morgan</a>, 
-
 <a href="https://twitter.com/aadillpickle" rel="noopener">Aadil</a>, 
-
 <a href="https://twitter.com/TheDavidZhou" rel="noopener">David</a>, and 
-
 <a href="https://twitter.com/jzlegion" rel="noopener">JZ</a> just sponsored me for ~$400/mo for this research project and &hellip; I am genuinely just speechless??
 <ul>
 <li>It&rsquo;s just so wild to me that this little project that I’ve just felt so strongly about because of reasons that still seem to evade words is something that other people are interested in seeing come to life too.</li>
@@ -20039,7 +20007,6 @@ youtube:
 <li>I felt really silly for asking people to help financially on a project that I sometimes had trouble believing in too.</li>
 <li>So thank you for your trust, thank you for dreaming with me</li>
 <li>Today&rsquo;s soundtrack is from 
-
 <a href="https://open.spotify.com/track/6j0wBBAP3hMe4t1Ymj7GIe?si=ef50241abfe04ac2" rel="noopener">La La Land &ndash; Audition (The Fools Who Dream)</a></li>
 </ul>
 </li>
@@ -20072,7 +20039,6 @@ youtube:
 </li>
 <li>Have a sudden urge to work on my personal site but I will ignore that for the time being&hellip;</li>
 <li>Sebastien sent a 
-
 <a href="https://www.youtube.com/watch?v=KNJGPI0fuFA&amp;list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA&amp;index=1" rel="noopener">YouTube playlist</a> on the foundations of <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchains</a> that have some sections which seem highly relevant. Slowly making my way through these</li>
 </ul>
 <a href="#june-29th"><h3 id="june-29th"><span class="hanchor" ariaLabel="Anchor"># </span>June 29th</h3></a>
@@ -20155,18 +20121,15 @@ youtube:
 <li>Raw → only data + descriptor</li>
 <li>Signed → data + descriptor + attestation (JSON web signature/JWS)</li>
 <li>more details: 
-
 <a href="https://identity.foundation/decentralized-web-node/spec/#message-descriptors" rel="noopener">https://identity.foundation/decentralized-web-node/spec/#message-descriptors</a></li>
 </ul>
 </li>
 <li>Storing data relative to a schema
 <ul>
 <li>
-
 <a href="https://identity.foundation/decentralized-web-node/spec/#query" rel="noopener">https://identity.foundation/decentralized-web-node/spec/#query</a></li>
 <li>schema field in descriptor</li>
 <li>JSON-LD + 
-
 <a href="https://schema.org" rel="noopener">https://schema.org</a> ?</li>
 <li>or&hellip; openzepellin style, vetted schemas</li>
 <li>data lensing should fit into this</li>
@@ -20175,7 +20138,6 @@ youtube:
 <li>Permissions request
 <ul>
 <li>
-
 <a href="https://identity.foundation/decentralized-web-node/spec/#request" rel="noopener">https://identity.foundation/decentralized-web-node/spec/#request</a></li>
 <li>signed message</li>
 <li>define scope</li>
@@ -20201,7 +20163,6 @@ youtube:
 <a href="#june-10th"><h3 id="june-10th"><span class="hanchor" ariaLabel="Anchor"># </span>June 10th</h3></a>
 <ul>
 <li>Spicy day today&hellip; Jack Dorsey just announced TBD working on Web5, supposedly an extra decentralized web platform (
-
 <a href="https://twitter.com/jack/status/1535314738078486533" rel="noopener">https://twitter.com/jack/status/1535314738078486533</a>)
 <ul>
 <li>web5 seems to focus on the philosophy side a lot more than actual usability</li>
@@ -20262,7 +20223,6 @@ youtube:
 <a href="#may-27th"><h3 id="may-27th"><span class="hanchor" ariaLabel="Anchor"># </span>May 27th</h3></a>
 <ul>
 <li>Finishing up <code>miniraft</code>, added tests for voting and fixed up some workflow stuff to auto-test and publish documentation!!! It&rsquo;s 
-
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">published now on GitHub :))</a></li>
 <li>Notes on <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">DID</a> which seems particularly applicable to the notion of identity + identity documents</li>
 <li>Once again had a breakdown :)) Constantly feel like I&rsquo;m not doing enough and that time is slipping between my fingertips&hellip;</li>
@@ -20273,17 +20233,12 @@ youtube:
 <li>More reading + notes in <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralization</a>, <a href="/thoughts/authorization" rel="noopener" class="internal-link" data-src="/thoughts/authorization">authorization</a>, and <a href="/thoughts/federation" rel="noopener" class="internal-link" data-src="/thoughts/federation">federation</a>. Notable readings:
 <ul>
 <li>
-
 <a href="https://www.ietf.org/archive/id/draft-nottingham-avoiding-internet-centralization-03.html?curius=1294" rel="noopener">IETF Draft on Centralization and Internet Standards</a></li>
 <li>Gordon Brander on 
-
 <a href="https://subconscious.substack.com/p/modularity?s=r&amp;curius=1294" rel="noopener">Modularity</a>, 
-
 <a href="https://subconscious.substack.com/p/weblike-things?s=r&amp;curius=1294" rel="noopener">weblike things</a>, and 
-
 <a href="https://subconscious.substack.com/p/web3?s=r&amp;curius=1294" rel="noopener">feudal metaphors for the web</a></li>
 <li>
-
 <a href="https://fission.codes/blog/auth-without-backend/?curius=1294" rel="noopener">Fission on UCAN for serverless authorization</a></li>
 </ul>
 </li>
@@ -20328,7 +20283,6 @@ youtube:
 <ul>
 <li>EVM + Solidity on top of little chains between people</li>
 <li>Minecraft on top of this to build engines like 
-
 <a href="https://www.worldql.com/" rel="noopener">https://www.worldql.com/</a></li>
 </ul>
 </li>
@@ -20465,7 +20419,6 @@ youtube:
 <p>I could just go out and bullshit investors and build a company. And I think too many people actually do that. Myself included. I managed to resist for a while and I spent a lot of time learning different, difficult things, but it&rsquo;s very hard not to have ADD in this world. It&rsquo;s very hard to stay focused on important things that take a while to be learned.</p>
 <ul>
 <li>
-
 <a href="https://masterplan.substack.com/p/master-plan-justin-glibert-foundation?curius=1294&amp;s=r" rel="noopener">Justin Glibert on doing hard things</a></li>
 </ul>
 </blockquote>
@@ -20499,7 +20452,6 @@ youtube:
 </ul>
 </li>
 <li>Finally caved and watched an hour long video on closures, <code>Fn</code>, <code>FnOnce</code>, <code>FnMut</code>, boxed closures, and function pointers (
-
 <a href="https://www.youtube.com/watch?v=dHkzSZnYXmk&amp;t=3005s" rel="noopener">Jon Gjengset, I owe you my life</a>)
 <ul>
 <li>Feels really stupid but it was literally a change from <code>&amp;'s mut dyn App&lt;'s, T, S&gt;</code> to <code>Box&lt;dyn App&lt;T, S&gt;</code></li>
@@ -20564,7 +20516,6 @@ youtube:
 </ul>
 </li>
 <li>Agreeing on what operations a <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a> can perform still seems to be difficult (
-
 <a href="https://youtu.be/Qytg0Ibet2E?t=3665" rel="noopener">see 1hr into this talk</a>)
 <ul>
 <li>Possible room for data lensing on public schemas to be useful here</li>
@@ -20625,7 +20576,6 @@ youtube:
 </ul>
 </li>
 <li>Starting a very minimal stripped down implementation of <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> in Rust I am nicknaming <code>miniraft</code>. Code 
-
 <a href="https://github.com/jackyzha0/miniraft" rel="noopener">here</a> (but will most likely be private until it is done).</li>
 </ul>
 <a href="#may-1st"><h3 id="may-1st"><span class="hanchor" ariaLabel="Anchor"># </span>May 1st</h3></a>

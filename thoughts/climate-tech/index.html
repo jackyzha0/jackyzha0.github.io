@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -331,7 +333,6 @@ Jul 15, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/infrastructure/">infrastructure</a> to make it possible.</p>
 <p>
-
 <a href="https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf" rel="noopener">The Land Ethic</a> simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the land community to plain member and citizen of it.</p>
 <p>Related: 
 
@@ -365,7 +366,6 @@ Jul 15, 2021
   data-src="/thoughts/carbon-credits/">carbon credits</a></p>
 <a href="#investment-facts"><h2 id="investment-facts"><span class="hanchor" ariaLabel="Anchor"># </span>Investment Facts!</h2></a>
 <p>
-
 <a href="https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment" rel="noopener">Source: Climate tech $16b mid-year investment action report</a></p>
 <ul>
 <li>Compared to just a year before, there were <strong>~50% more climate deals</strong> in Q2’21 vs Q2’20</li>
@@ -377,9 +377,7 @@ Jul 15, 2021
 <img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff4c664b-816c-45ef-9e5d-720d1b279c2f_861x475.png" width="auto" alt="Investment Diversity across sectors"  /><em>Investment Diversity across sectors</em></p>
 <a href="#neutral-infrastructure"><h2 id="neutral-infrastructure"><span class="hanchor" ariaLabel="Anchor"># </span>Neutral Infrastructure</h2></a>
 <p>Source: 
-
 <a href="https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical" rel="noopener">Microsoft Finds Underwater Data Centers Practical</a> and 
-
 <a href="https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html" rel="noopener">Power, Pollution and the Internet, NYT</a>.</p>
 <p>Might be software infrastructure but it has lots of 
 
@@ -408,16 +406,12 @@ Jul 15, 2021
 <a href="#company-initiatives"><h2 id="company-initiatives"><span class="hanchor" ariaLabel="Anchor"># </span>Company Initiatives</h2></a>
 <a href="#stripe"><h3 id="stripe"><span class="hanchor" ariaLabel="Anchor"># </span>Stripe</h3></a>
 <p>
-
 <a href="https://stripe.com/climate" rel="noopener">https://stripe.com/climate</a></p>
 <p>tldr; we need to develop new carbon removal tech, the ones we have right now are 
-
 <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aabf9f" rel="noopener">unlikely to scale to well enough</a> to tackle the problem as it stands right now</p>
 <p>&ldquo;Today, carbon removal solutions face a chicken-and-egg problem. As early technologies, they’re more expensive, so don’t attract a critical mass of customers. But without wider adoption, they can’t scale production to 
-
 <a href="https://en.wikipedia.org/wiki/Experience_curve_effects" rel="noopener">become cheaper</a>.&rdquo;</p>
 <p>&ldquo;Early purchasers can help new carbon removal technologies get down the cost curve and up the volume curve. Experience with manufacturing learning and experience curves has shown repeatedly that deployment and scale beget improvement, a 
-
 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0052669" rel="noopener">phenomenon</a> seen across DNA sequencing, hard drive capacity, and solar panels.&rdquo;</p>
 <a href="#shopify"><h3 id="shopify"><span class="hanchor" ariaLabel="Anchor"># </span>Shopify</h3></a>
 <p>General ethos: we don&rsquo;t know what works so let&rsquo;s invest in a little bit of everything</p>
@@ -425,7 +419,6 @@ Jul 15, 2021
 <p>There’s no easy fix for climate change, and no solution that will singlehandedly solve the problem. We have to try every possible nature-based and engineered option.</p>
 </blockquote>
 <p>Mix of solutions that make a difference now (evergreen tech: 24%) but also emerging tech with big impact down the line (frontier portfolio: 76%) 
-
 <a href="https://cdn.shopify.com/static/sustainability/How-to-Kick-Start-the-Carbon-Removal-Market_Shopifys-Playbook.pdf" rel="noopener">Rationale</a></p>
 <p>Frontier</p>
 <ol>

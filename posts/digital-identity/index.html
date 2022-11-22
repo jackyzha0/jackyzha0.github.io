@@ -74,7 +74,7 @@ Software developers and computer scientists have been tackling [[thoughts/identi
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Software developers and computer scientists have been tackling [[thoughts/identi
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -757,7 +759,6 @@ Our digital representations consist of:</p>
 <p>From a software perspective, this isn&rsquo;t a new representation of digital identity either. <a href="/thoughts/UCAN" rel="noopener" class="internal-link" data-src="/thoughts/UCAN">UCAN</a> serves to be a promising way to delegate permissions and actions through a <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">decentralized identity</a>. JWTs have been granting permissions to users for a decade. New forms of token-based access using NFTs are being experimented with.</p>
 <blockquote>
 <p>Everything that a user is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format. <em>(
-
 <a href="https://ucan.xyz/" rel="noopener">ucan.xyz</a>)</em></p>
 </blockquote>
 <p>There is no ‘identity’ to be managed but rather a set of capabilities to be possessed. Signable messages using <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> means that we can prove the same person you issued the access token to is now requesting access <em>without</em> revealing who it is. As there is no global registry of who has what permissions, this is by default illegible unless a user wants to manually publish their key to make it known.</p>
@@ -771,7 +772,6 @@ Our digital representations consist of:</p>
 <p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these <a href="/thoughts/petname" rel="noopener" class="internal-link" data-src="/thoughts/petname">petname</a> systems.</p>
 <blockquote>
 <p>For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). <em>(
-
 <a href="https://www.inkandswitch.com/backchannel/" rel="noopener">Backchannel</a>, Ink &amp; Switch)</em></p>
 </blockquote>
 <p>In this way, the petname doesn’t just represent the person you are referring to, but also the relationship between the two of you. The <em>real identity</em> is neither the phone number nor the petname. Rather, the real identity is the <em>intersection</em> of all of the relationships they have with others. Just as we have many ‘alt accounts’ that exist to approximate the many facets of our being, each identity in this model is specific to each relationship. Even if data gets leaked, it is extremely difficult to trace back to the original author because there is no ‘global’ identity to trace it back to — all of it is contextual.</p>
@@ -779,7 +779,6 @@ Our digital representations consist of:</p>
 <p><strong>Perhaps the new atom of identity is not a single entity but a set of relationships: <em>a group chat.</em></strong></p>
 <p>Identity may be a difficult thing to model, but it is worth thinking about deeply. Our models for identity will impact how many future generations of internet users are categorized and made legible. It makes sense to ensure it best serves the people it represents.</p>
 <p>As <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a>, <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first</a>, and 
-
 <a href="https://rosano.hmm.garden/01evv3hq1ak4b6ng1jzppx5n2j" rel="noopener">doorless</a> apps slowly make a resurgence, I hope that agency is the value at the forefront of new applications and protocols, enabling users to choose which parts of themselves to make legible.</p>
 <p><em>Thank you to Anson Yu, B Cavello, Cent Hosten, Saffron Huang, Shrey Jain for reading earlier drafts and providing clarifying feedback.</em></p>
 <section class="footnotes" role="doc-endnotes">
@@ -787,37 +786,30 @@ Our digital representations consist of:</p>
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>Source: 
-
 <a href="https://www.iso.org/standard/77582.html" rel="noopener">ISO Standard</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>Source: 
-
 <a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Is &ldquo;acceptably non-dystopian&rdquo; self-sovereign identity even possible?</a>, Molly White&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>Source: 
-
 <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445740" rel="noopener">To Live in Their Utopia</a>, Ali Alkhatib&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>&ldquo;Scott details a pattern of disaster that repeatedly manifests around legibility. His opening example is from the late-18th century discipline of “scientific forestry”. A natural forest is illegible. A tangle of plants. This is inconvenient from the standpoint of harvesting lumber. How do you quantify yield? Can you even make a meaningful map of this mess? Much easier to clear the forest and plant a legible “scientific” forest. Uniform rows of trees that produce good lumber. Now we can count the trees, make a map, track sustainable yield. What’s missing from our map? Everything else. The forest has been <em>made legible</em> to lumber production. In the process, the entire ecological web of trees, shrubs, birds, bugs, moss, soil microbiota are stripped away. They didn’t fit into our map. By the second generation of planting, there is a noticeable decline in forest health. Within one century: <em>Waldsterben</em>, forest death, ecological collapse.&rdquo; Quote from 
-
 <a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
 <p>Source: 
-
 <a href="https://github.com/WebOfTrustInfo/rwot7-toronto/blob/master/final-documents/mental-models.pdf" rel="noopener">Five Mental Models of Identity</a>, presented in <em>Rebooting the Web of Trust VII</em> by Joe Andrieu, Nathan George, Andrew Hughes, Christophe MacIntosh, and Antoine Rondelet&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>Source: 
-
 <a href="https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/" rel="noopener">Human identity: the number one challenge in computer science</a>, AKASHA Foundation and Kernel&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:7" role="doc-endnote">
 <p>Source: 
-
 <a href="http://www.erights.org/elib/capability/pnml.html" rel="noopener">PetName Markup Language</a> by Mark S. Miller et. al&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>

@@ -74,7 +74,7 @@ Tools address human needs by amplifying human capabilities."
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Tools address human needs by amplifying human capabilities."
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -379,7 +381,6 @@ Jul 25, 2021
 
 
 <p>
-
 <a href="http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign" rel="noopener">Source: A Brief Rant On The Future of Interaction Design by <em>Bret Victor</em></a></p>
 <p>Tools address human needs by amplifying human capabilities. Great tools have parts that fit the problem as well as fit the person.</p>
 <p>We need new mediums for exchange of ideas and active construction of thoughts (
@@ -438,7 +439,6 @@ Jul 25, 2021
 <p>Ted Nelson, the guy who coined the terms <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a> and hypermedia, called the continued use of paper simulations as &ldquo;like tearing the wings off a 747 and driving it as a bus on a highway.&rdquo;</p>
 <blockquote>
 <p>And what about screens as a whole? Is the future of computation really just sliding fingers around slabs of glass? &ndash; 
-
 <a href="https://uxdesign.cc/introducing-mercury-os-f4de45a04289" rel="noopener">Jason Yuan</a></p>
 </blockquote>
 <p>
@@ -452,13 +452,10 @@ Jul 25, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/desktop-metaphor/">Desktop metaphor</a> was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)</p>
 <p>Premise of a lot of the work behind 
-
 <a href="http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf" rel="noopener">DynamicLand</a> and 
-
 <a href="http://www.leejinha.com/home.html" rel="noopener">Jinha Lee</a></p>
 <a href="#computers-in-friendlier-forms"><h2 id="computers-in-friendlier-forms"><span class="hanchor" ariaLabel="Anchor"># </span>Computers in Friendlier Forms</h2></a>
 <p>Source: 
-
 <a href="https://www.notion.so/blog/omar" rel="noopener">Omar Rizwan on Notion Blog</a></p>
 <blockquote>
 <p>If you have objects on your computer, you can have holographic projected versions of them on your desk and then you can suck them into physical objects if you want to physicalize them. Or you can turn them back into holographic objects if you have the physical object</p>
@@ -613,7 +610,6 @@ Jul 25, 2021
 </blockquote>
 <a href="#webstrates"><h2 id="webstrates"><span class="hanchor" ariaLabel="Anchor"># </span>Webstrates</h2></a>
 <p>
-
 <a href="https://pure.au.dk/portal/files/91047333/webstrates.pdf" rel="noopener">Source</a></p>
 <p>In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs”</p>
 <p>Two decades later, Mark Weiser envisioned a future of ubiquitous computing, where heterogenous devices of varying sizes and capabilities interact easily with each other and technology disappears into the background.</p>
@@ -621,10 +617,8 @@ Jul 25, 2021
 <a href="#cool-experiments"><h2 id="cool-experiments"><span class="hanchor" ariaLabel="Anchor"># </span>Cool Experiments</h2></a>
 <ol>
 <li>
-
 <a href="https://www.robertxiao.ca/research/lumitrack/" rel="noopener">https://www.robertxiao.ca/research/lumitrack/</a></li>
 <li>
-
 <a href="https://www.robertxiao.ca/research/desktopography/" rel="noopener">https://www.robertxiao.ca/research/desktopography/</a></li>
 </ol>
 

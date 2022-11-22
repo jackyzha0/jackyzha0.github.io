@@ -74,7 +74,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -722,11 +724,9 @@ Jul 14, 2022
 
 <blockquote>
 <p>This essay was originally published in 
-
 <a href="https://reboothq.substack.com/p/rhizome" rel="noopener">Reboot</a>.</p>
 </blockquote>
 <p><em>DISCLAIMER: To borrow words from 
-
 <a href="https://www.robinsloan.com/lab/specifying-spring-83/" rel="noopener">Robin Sloan</a>: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination.</em></p>
 <p>The competitive advantage of the vast majority of today&rsquo;s centralized platforms are in their data moats and network effects. Services like Facebook, Twitter, and Reddit conceptually aren&rsquo;t difficult to replicate &ndash; in fact, your average computer science graduate could probably recreate the functionality of these apps without much difficulty. Rather, the major reason why these platforms remain so dominant is because of their data and users: Facebook has all of our childhood friends, Twitter is the go-to place for unhinged humour and political discourse, and Reddit has millions of niche micro-communities found nowhere else on the internet.</p>
 <p>These platforms, especially aggregators, are <em>incentivized</em> to resist <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralization</a> and <a href="/thoughts/interoperability" rel="noopener" class="internal-link" data-src="/thoughts/interoperability">interoperability</a>. After all, &lsquo;data is the new oil&rsquo;. These services almost entirely depend on making sure that only they have access to that valuable data. Interoperability, on the other hand, means you no longer have a data moat, or a privileged hub position in the network.</p>
@@ -756,14 +756,11 @@ Jul 14, 2022
 <p>This means that <em>asynchronous collaboration isn&rsquo;t possible</em> in most peer-to-peer apps. Platforms usually get around this by storing the state of a user on one of their many servers who make it available on your behalf but peer-to-peer apps do not have this luxury &ndash; most people do not have a device that is “always-on” like a server is.</p>
 <a href="#3-existing-network-effects"><h3 id="3-existing-network-effects"><span class="hanchor" ariaLabel="Anchor"># </span>3. Existing network effects</h3></a>
 <p>Migrating data off of existing platforms is extremely difficult as this is something large platforms are disincentivized from supporting. Even if there are &rsquo;export&rsquo; tools on platforms, they are the worst they can be while still meeting 
-
 <a href="https://gdpr-info.eu/art-20-gdpr/" rel="noopener">GDPR Requirements</a>. New platforms almost never have &lsquo;import&rsquo; tools because each platform has their own data format and that format changes unpredictably. This 
-
 <a href="https://twitter.com/andy_matuschak/status/1452438198668328960" rel="noopener">creates a form of n-to-n problem</a> where every app needs to know what the APIs of another app are to even begin to interoperate.</p>
 <blockquote>
 <p>&ldquo;But usually you don&rsquo;t want a dead snapshot; you want to &ldquo;use this data elsewhere&rdquo;—which requires repeatedly exporting &amp; reconciling.&rdquo;</p>
 <p>
-
 <a href="https://twitter.com/andy_matuschak/status/1452438176996347907" rel="noopener">Andy Matuschak on Twitter</a></p>
 </blockquote>
 <p>This means that, even if an alternative platform offers a better service, switching is often impossible.</p>
@@ -804,8 +801,7 @@ Jul 14, 2022
 <a href="#q--a"><h2 id="q--a"><span class="hanchor" ariaLabel="Anchor"># </span>Q &amp; A</h2></a>
 <p><strong>This proposal has seen a lot of evolution. How does this current version differ from your initial proposal? What shaped your ideas?</strong> </p>
 <p>The 
-
-<a href="https://github.com/jackyzha0/jackyzha0.github.io/blob/bd194ffe671e6ff51b0d79f11a40aa595da17e7f/content/thoughts/Rhizome-Research-Proposal" rel="noopener">early proposal</a> contained very lofty goals for the future but I don’t think it critically thought about how to get there or why people would want a future like it. It had very scattered technical ideas and lacked conviction in the vision.</p>
+<a href="https://github.com/jackyzha0/jackyzha0.github.io/blob/bd194ffe671e6ff51b0d79f11a40aa595da17e7f/content/thoughts/Rhizome-Research-Proposal.md" rel="noopener">early proposal</a> contained very lofty goals for the future but I don’t think it critically thought about how to get there or why people would want a future like it. It had very scattered technical ideas and lacked conviction in the vision.</p>
 <p>I found it really odd that this type of technology has existed for a while but there were no widespread examples of usage. I spent about a month and a bit looking at retrospectives of peer-to-peer protocols and applications to get a good foundation for what’s been done and what hasn’t been done.</p>
 <p>This literature review era led me to revise the proposal to go a lot more in-depth about the why of the research, placing heavier emphasis on adoption and why the average internet user should care. The internal metric I had was whether my Mom, who doesn’t work in technology and mostly uses the internet to look at articles, would be able to understand why what I was working on was important.</p>
 <p><strong>What’s something that surprised you in your work so far this summer?</strong></p>
@@ -820,22 +816,18 @@ Jul 14, 2022
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>Divya Siddarth, Danielle Allen, E. Glen Weyl, <em>The Web3 Decentralization Debate is Focused on the Wrong Question</em> in Wired Magazine (
-
 <a href="https://www.wired.com/story/web3-blockchain-decentralization-governance/" rel="noopener">Source</a>)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, Mark McGranaghan, <em>Local-first software</em> in Ink &amp; Switch (
-
 <a href="https://www.inkandswitch.com/local-first/" rel="noopener">Source</a>)&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>Moxie Marlinspike, <em>My first impression of web3</em> (
-
 <a href="https://moxie.org/2022/01/07/web3-first-impressions.html" rel="noopener">Source</a>)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>Spencer Chang on 
-
 <a href="https://twitter.com/spencerc99/status/1544420768137740288" rel="noopener">Twitter</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>

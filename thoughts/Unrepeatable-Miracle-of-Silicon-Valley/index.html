@@ -74,7 +74,7 @@ Podcast Interview with Margaret O’Mara, the author of  The Code: Silicon Valle
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -118,15 +118,17 @@ Podcast Interview with Margaret O’Mara, the author of  The Code: Silicon Valle
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -232,7 +234,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -319,10 +321,8 @@ Jul 28, 2021
 
 
 <p>
-
 <a href="https://www.aei.org/economics/silicon-valley-an-unrepeatable-miracle-a-long-read-qa-with-margaret-omara/" rel="noopener">Source: Silicon Valley: An unrepeatable miracle? with <em>Margaret O’Mara</em></a></p>
 <p>Podcast Interview with Margaret O’Mara, the author of <em>
-
 <a href="https://www.amazon.com/Code-Silicon-Valley-Remaking-America/dp/0399562184" rel="noopener">The Code: Silicon Valley and the Remaking of America</a></em></p>
 <p>Touches on a lot of similar topics to 
 
@@ -342,7 +342,6 @@ Jul 28, 2021
 <p>To have such mobilization around this massive effort, you do probably need some sort of geopolitical catalyst. It’s hard for it to be purely commercial&hellip;  <strong>That’s the thing that can catalyze people, government, and resources into doing these big things.</strong></p>
 </blockquote>
 <p>Problem is that this &lsquo;urgency&rsquo; needs to be bipartisan &ndash; this was very difficult when the Soviet Union was widely feared. As a result, anything even mildly centrist is perceived as socialist -&gt; 
-
 <a href="https://www.youtube.com/watch?v=ULYWIDcUOY4" rel="noopener">https://www.youtube.com/watch?v=ULYWIDcUOY4</a></p>
 <p>Abstraction of the problem</p>
 <p>Antipathy that the Valley has had towards the government is kind of like, &ldquo;Well it doesn’t have anything to do with us, if they could stay as far away as possible it would be good.&rdquo; &ndash; tech is political</p>

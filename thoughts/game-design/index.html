@@ -75,7 +75,7 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -119,15 +119,17 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -340,14 +342,12 @@ Oct 26, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/teaching/">Teaching</a></h2>
 <p>
-
 <a href="https://klr.tumblr.com/post/159583871898/game-designers-vs-education-researchers-on" rel="noopener">Source: Game designers vs. education researchers on unguided instruction by <em>Andy Matuschak</em></a></p>
 <blockquote>
 <p>A mistake we made early on was looking primarily at metrics like retention and monetization. These simply don’t tell us much about what motivates players to play. If I were to build the game again, I would have implemented the togetherness metric for the very first private alpha.</p>
 </blockquote>
 <p>A lot of pedagogy is covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?</p>
 <p>The &ldquo;
-
 <a href="https://www.youtube.com/watch?v=xrDZ--AuiL8" rel="noopener">vow of silence</a>&rdquo;: to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through 
 
 
@@ -401,7 +401,6 @@ Oct 26, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/game-theory/">Game Theory</a></h2>
 <p>
-
 <a href="https://lostgarden.home.blog/2020/01/11/prosocial-economics-for-game-design-%EF%BB%BF/" rel="noopener">Source: Prosocial economics for game design by <em>Daniel Cook</em></a></p>
 <blockquote>
 <p>Multiplayer games can help build a player’s social support network. What would game design look like if our goals included <strong>reducing loneliness</strong>, <strong>decreasing toxicity</strong> and boosting a player’s <strong>positive connections</strong> with others?</p>

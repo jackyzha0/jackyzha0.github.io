@@ -75,7 +75,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -119,15 +119,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,7 +235,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -383,7 +385,6 @@ Feb 20, 2022
 <p>A Pattern Language for developing software</p>
 </blockquote>
 <p>Inspired by 
-
 <a href="https://urbit.org/docs/development/precepts" rel="noopener">Urbit Precepts</a></p>
 <ol>
 <li><a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">Local first</a>. Decentralized/<a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a> second. Avoid hosting like the plague. Make self-hosting easy</li>
@@ -404,13 +405,10 @@ Feb 20, 2022
 </ol>
 <a href="#on-programming-advice"><h2 id="on-programming-advice"><span class="hanchor" ariaLabel="Anchor"># </span>On programming advice</h2></a>
 <p>Jamie Brandon&rsquo;s 
-
 <a href="https://www.scattered-thoughts.net/writing/reflections-on-a-decade-of-coding" rel="noopener">Reflections on a Decade of Coding</a></p>
 <p>Programming practices are mostly tacit knowledge. Tacit knowledge isn&rsquo;t easy to share. An expert will relate some simple-sounding rule of thumb, but then grilling them on specific cases will quickly uncover a huge collection of exceptions and caveats that vary depending on the specific details of the situation.</p>
 <p>It&rsquo;s so easy to think that simple solutions exist. But if you look at the history of ideas that actually worked, they tend to only be simple from a distance. The closer you get, the more you notice that the working idea is surrounding by a huge number of almost identical ideas that don&rsquo;t work. Take bicycles, for example. They seem simple and obvious, but it took 
-
 <a href="https://en.wikipedia.org/wiki/History_of_the_bicycle" rel="noopener">two centuries</a> to figure out all the details and most people today 
-
 <a href="https://link.springer.com/content/pdf/10.3758/BF03195929.pdf" rel="noopener">can&rsquo;t actually locate the working idea</a> amongst its neighbours. Even when old niche ideas make a comeback (eg neural networks) it&rsquo;s not because they were right all along but because someone recognized the limitations and found a new variation on the idea that overcame them (eg deep learning). Finding the idea that actually works amidst the sea of very similar ideas that don&rsquo;t work requires staying curious long enough to encounter the fine-grained detail of reality and humble enough to recognize and learn from each failure.</p>
 <p>Mainstream is mainstream for a reason. The frontier is the place to go mining for new ideas, but it&rsquo;s 1% gold and 99% mud.</p>
 

@@ -73,7 +73,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -117,15 +117,17 @@
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ef1653d584761e6124aaddfc27d25d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.cf77cb834e5b97def77c09d2f5b12045.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -231,7 +233,7 @@ if (!doNotTrack) {
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.950bfe06d06fb7c248cf4e5c2f02c625.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
 
 
 
@@ -343,7 +345,6 @@ Jan 18, 2022
 </blockquote>
 <p>No one person experiences red, the smell of garlic, or the warmth of the sun in the same way.</p>
 <p>Yet, it feels like consciousness is in intrinsic property. We don&rsquo;t know if someone or something is consciousness unless we ask them. However, the inability to <em>report</em> a subjective experience is not the same thing as <em>not having one</em>. (
-
 <a href="https://en.wikipedia.org/wiki/Locked-in_syndrome" rel="noopener">locked-in syndrome</a>). For all we know, that rock could be conscious.</p>
 <p>As an extended thought experiment, how similar do minds have to be to human ones to be considered conscious?</p>
 <a href="#on-why-physicalism-is-a-poor-theory1"><h2 id="on-why-physicalism-is-a-poor-theory1"><span class="hanchor" ariaLabel="Anchor"># </span>On why physicalism is a poor theory<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2></a>
@@ -365,7 +366,6 @@ Jan 18, 2022
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>This content is sourced from Professor 
-
 <a href="https://evanthompson.me/" rel="noopener">Evan Thompson</a>&rsquo;s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
