@@ -32,6 +32,7 @@ Main topics:
 - [[thoughts/regularization]]
 - [[thoughts/linear classification]]
 - [[thoughts/multi-class classification]]
+- [[thoughts/maximum likelihood estimation|MLE]]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]

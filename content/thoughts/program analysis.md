@@ -53,3 +53,42 @@ We can do this by instrumenting (changing) the program. We have two places where
 There's also a choice to be made about how/when to perform the analysis
 1. Online dynamic analysis: run the analysis as part of / alongside the program
 2. Offline dynamic analysis: make the program produce a log; analyse it separately
+
+## Program Slicing Example
+NB: We never delete variable declarations, just their initializations. Similarly, we keep flow constructs if they have at least one line inside of them.
+
+### Static
+1. Define abstract state $\sigma$ as $(M, L)$ where
+	1. $M$ is a map from variable names to what line numbers may have affect that variable at that point
+	2. $L$ is a list of control flow dependencies at that point
+2. For assignment of `x=e` at line $n$ where `e` is an expression that can contain multiple variables
+	1. `M[x]` becomes the union of
+		1. The line number `n`
+		2. `M[y]` for every `y` in the expression `e`
+		3. Unions of all sets in `L`
+	2. `L` remains unchanged
+3. For if-then-else statements
+	1. Push to `L`: the union of `M[y]` for every `y` in the if-condition check
+	2. Copy the map `M` to start of the then and else blocks
+	3. Continue normally...
+	4. At the end of each block, union the `M`s at the end of each block
+	5. Pop from `L`
+4. For loops
+	1. Add loop variable to `M`
+	2. Push to `L`: the union of `M[y]` for every y in the loop condition
+	3. Continue normally...
+	4. When we hit end of loop body, we go back to start of the loop and rewrite. Stop when neither `M` nor `L` update
+		1. Each variable in `M` to be union of its old value and the value at the end of the loop
+		2. Head of `L` is the union of itself and `M[y]` for every y in the loop condition
+	5. Pop from `L`
+
+### Dynamic
+1. We add two extra objects to the program state, `m` and `l` which are functionally equivalent to $M$ and $L$ from previously
+2. For assignment of `x=e` at line $n$, we update `m` to store
+	1. $n$
+	2. `m[y]` for each `y` in `e`
+	3. `l` flattened
+3. For if-then-else statements
+	1. Before the statement, we calculate `s` by taking union of all the dependencies in the condition and push this to `l`
+	2. We pop `l` after the statement
+4. Loops are the same as if-then-else statements but we do steps 1. and 2. inside the loop instead of outside the statement

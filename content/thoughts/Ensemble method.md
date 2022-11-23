@@ -6,14 +6,20 @@ tags:
 - CPSC340
 ---
 
-Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)
-- Also called “meta-learning”.
+Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it **only works if the individual classifiers make independent errors**
 
-Only works if the individual classifiers make independent errors
+## Boosting
+Improves training error of classifiers with high $E_{train}$
 
-Models that uses the ensemble method:
+Models that use the boosting ensemble method:
+1. [[thoughts/XGBoost]] (regularized regression trees)
+
+## Averaging
+Improves approximation error of classifiers with high $E_{approx}$
+
+Models that uses the averaging ensemble method:
 1. [[thoughts/Random Forest|Random Forest]]
 
-## Methods
+### Methods
 1. Voting: take the mode of the predictions across the classifiers
 2. Stacking: fit another classifier that uses the predictions as features
