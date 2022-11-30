@@ -1,4 +1,3 @@
- 
 ---
 title: "Change of basis"
 date: 2022-11-03
@@ -54,3 +53,6 @@ Thus, computing $K$ is $O(n^2d + n^3)$:
 2. Inverting $K+\lambda I$ which is a $(n,n)$ takes $O(n^3)$
 
 All of our distance-based methods have kernel versions
+
+## Learned Basis
+We can also learn basis from data as well. See [[thoughts/latent-factor model]]

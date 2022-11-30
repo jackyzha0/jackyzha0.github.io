@@ -16,4 +16,4 @@ Supposes that we have three names:
 
 Then, keys and petnames are interchangeable with each other. Nicknames are suggestions by users for petnames that others can set for them.
 
-Maybe another version of [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)?
+Maybe another version of [[thoughts/Arrow's Impossibility Theorem]]?

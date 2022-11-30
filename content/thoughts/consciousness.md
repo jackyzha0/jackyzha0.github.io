@@ -127,4 +127,6 @@ We do not consciously think (construct this virtual reality) all the time. Consc
 
 Essay 2 for PHIL451A: [Consciousness is not Information](thoughts/Consciousness%20is%20not%20Information.md)
 
+
+
 [^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

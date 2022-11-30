@@ -74,7 +74,7 @@ If there is a dominant strategy, it will be part of the solution profile. If the
 ### Equilibrium
 This rule subsumes the rules for Dominance and Admissibility. Any solution using Dominance or Admissibility is also a [[thoughts/Nash equilibrium]].
 
-For two-person zero-sum games in particular, a pair of (pure) strategies is an equilibrium if and only if its payoff is the minimum on its row and the maximum on its column
+Minimax condition: For two-person zero-sum games in particular, a pair of (pure) strategies is an equilibrium if and only if its payoff is the minimum on its row and the maximum on its column
 
 There may not always be an equilibrium with pure strategies. However,
 
@@ -84,6 +84,24 @@ In a two-person zero-sum game with mixed strategies, there is always an equilibi
 If a player has options $R_1, \dots, R_n$, then a mixed strategy selecting $R_i$ with probability $p_i$ written as $[p_1R_1, \dots, p_nR_n]$ where the probabilities add up to 1.
 
 $[pA, (1-p)B]$ where $0 \leq p \leq 1$. This means: choose A with probability $p$ and B with probability $1 - p$.
+
+Given a table in Standard Form:
+
+| |C1|C2|
+|-|-|-|
+|R1|a|b|
+|R2|c|d|
+
+Steps:
+1. We calculate the EU for the actor represented by Row, EU(Row) = $p(qa + (1-q)b) + (1-p)(qc + (1-q)d)$
+2. We find a $p$ such that EU(Row) only depends on $p$ (by making the coefficient for $q$ zero). To do this normally:
+	1. $p = (d-c)/(a-b-c+d)$
+	2. $q = (d-b)/(a-b-c+d)$
+	3. If $a-b-c+d = 0$ then there are pure-strategy equilibria so use those
+3. We do the same but with $q$
+4. Now set EU(Row) to 0. We essentially want to make EU(Row) constant so there is no incentive to switch
+
+
 
 ## Trust and Game Theory
 [Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)

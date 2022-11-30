@@ -30,3 +30,4 @@ draft: true
 	2. designing good software should feel like a game
 15. be an [expander](https://twitter.com/startingfromnix/status/1594052283834064896) show other people whats possible
 	1. same reason as why world records come in rushes
+16. [[thoughts/50 pounds of pots]], Quantity is the journey to quality

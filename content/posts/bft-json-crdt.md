@@ -39,7 +39,7 @@ However it isn't without downsides either. Achieving this property adds a lot of
 
 [^1]: There are ways you can mitigate this by 'predicting' a successful outcome. However, if the actual write/read fails, we may need to rollback what the user sees which is not ideal from a user experience perspective
 
-CRDTs kind of throw all of that out the window and embrace the eventual nature of the real world. In an often cited essay titled *[[thoughts/A Certain Tendency Of The Database Community|A Certain Tendency Of The Database Community]]*, the author argues that trying to provide “single system image” semantics (read: [[thoughts/consistency|linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world.
+CRDTs kind of throw all of that out the window and embrace the eventual nature of the real world. In an often cited essay titled *[[thoughts/A Certain Tendency Of The Database Community|A Certain Tendency Of The Database Community]]*, the author argues that trying to provide “single system image” semantics (read: [[thoughts/consistency|linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world. [[thoughts/the garden and the stream|The garden and the stream.]]
 
 In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.
 

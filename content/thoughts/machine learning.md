@@ -32,7 +32,9 @@ Main topics:
 - [[thoughts/regularization]]
 - [[thoughts/linear classification]]
 - [[thoughts/multi-class classification]]
-- [[thoughts/maximum likelihood estimation|MLE]]]
+- [[thoughts/maximum likelihood estimation|MLE]]
+- [[thoughts/latent-factor model]]
+- [[thoughts/recommendation system|Recommender System]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]

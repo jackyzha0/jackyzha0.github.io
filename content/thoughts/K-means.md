@@ -8,6 +8,8 @@ tags:
 
 Assumption that we know how many clusters there are as a prior ($k$ in K-Means). Designed for vector [[thoughts/quantization|quantization]]: replacing examples with the mean of their cluster (collapsing a bunch of examples of a class down to a single example)
 
+Can also be seen as a really bad [[thoughts/latent-factor model]]
+
 K-means partitions the space into [[thoughts/convex|convex]] regions, *but* clusters in the data might not be convex
 
 Minimize $\sum_{i \in \textrm{clusters}} \{ \sum_{j \in i^{th} \textrm{cluster}} ||x_j - \mu_i||^2 \}$

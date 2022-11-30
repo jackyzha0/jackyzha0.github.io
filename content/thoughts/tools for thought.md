@@ -7,7 +7,7 @@ tags:
 
 > "When designing new tools for thought, let’s think not just in terms of features, but materials – _what software laws of physics do we want embodiments of our thoughts to obey?_"
 
-Related: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md)
+Related: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md), [Networked thought](posts/networked-thought.md), [interaction design](thoughts/interaction%20design.md), [[thoughts/memex]]
 
 Questions:
 1. How can we create tools that aid our thinking? How can we extend the range of thoughts we can think?
@@ -36,15 +36,6 @@ How can we 'cut' text without being afraid of it being lost forever? Even with t
 Very 1984-line-of-thought but those who control the past, how we remember and what history is, controls the present and thus controls the future.
 
 Our tools of memory should be democratized and public. These tools are a [public good](thoughts/public%20goods.md). They are, quite literally, the [infrastructure](thoughts/infrastructure.md) for mental representations and operations. These are the patterns the dictate our very mental processes.
-
-## Memex
-[Source](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881) by Vannevar Bush
-
-> device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.
-
-Bush envisioned the memex behaving like an “intricate web of trails” similar to the function of the human mind, which he believed works by a method of “association” and not via an alphabetical index. According to Levy (2008, 508), the most “innovative feature” of Bush’s memex system was the establishing of associative indices between portions of microfilmed text—what we now call [[thoughts/hypertext|hypertext]] links—so that researchers could follow trails of useful information through masses of literature.
-
-> Tapping a few keys projects the head of the trail. A lever runs through it at will, stopping at interesting items, going off on side excursions. It is an interesting trail, pertinent to the discussion.
 
 ## Kernel
 [Source: Remember in *Kernel*](https://kernel.community/en/learn/module-3/remember)

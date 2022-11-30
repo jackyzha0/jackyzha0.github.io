@@ -22,6 +22,8 @@ Is there a difference between censorship at the broadcast level and receiving le
 Publishers know that if they offend the government, their reporters may not be given access to as much information as reporters for rival publications, putting them at a competitive disadvantage. This knowledge can lead a “free” press to censor itself.
 
 ## John Stuart Mill
+A famous expression of liberalism
+
 1. All of us are capable of error. If we prevent someone from voicing their opinion, we may actually be silencing the voice of truth.
 2. Erroneous opinions may contain kernels of truth. We ought to let all opinions be voiced so that all parts of the truth are heard
 3. The whole truth left untested is simply a prejudice.
