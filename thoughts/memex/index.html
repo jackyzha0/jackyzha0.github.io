@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Hosting on GitHub Pages Quartz is designed to be effortless to deploy. If you forked and cloned Quartz directly from the repository, everything should already be good to go!"
+    content="Source by Vannevar Bush
+ device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility."
   />
   <title>
-    Deploying Quartz to the Web
+    Memex
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -121,13 +122,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -274,20 +275,20 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Deploying Quartz to the Web</h1>
+      <h1>Memex</h1>
       <p class="meta">
         Last updated 
-Nov 20, 2022
+Nov 29, 2022
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/notes/hosting.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/memex.md" rel="noopener">Edit Source</a>
 
 
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
 
@@ -308,167 +309,93 @@ Nov 20, 2022
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<a href="#hosting-on-github-pages"><h2 id="hosting-on-github-pages"><span class="hanchor" ariaLabel="Anchor"># </span>Hosting on GitHub Pages</h2></a>
-<p>Quartz is designed to be effortless to deploy. If you forked and cloned Quartz directly from the repository, everything should already be good to go! Follow the steps below.</p>
-<a href="#enable-github-actions"><h3 id="enable-github-actions"><span class="hanchor" ariaLabel="Anchor"># </span>Enable GitHub Actions</h3></a>
-<p>By default, GitHub disables workflows from running automatically on Forked Repostories. Head to the &lsquo;Actions&rsquo; tab of your forked repository and Enable Workflows to setup deploying your Quartz site!</p>
-<p>
-
-
-<img src="https://jzhao.xyz//notes/images/github-actions.png" width="auto" alt="Enable GitHub Actions"  /><em>Enable GitHub Actions</em></p>
-<a href="#enable-github-pages"><h3 id="enable-github-pages"><span class="hanchor" ariaLabel="Anchor"># </span>Enable GitHub Pages</h3></a>
-<p>Head to the &lsquo;Settings&rsquo; tab of your forked repository and go to the &lsquo;Pages&rsquo; tab.</p>
-<ol>
-<li>(IMPORTANT) Set the source to deploy from <code>master</code> (and not <code>hugo</code>) using <code>/ (root)</code></li>
-<li>Set a custom domain here if you have one!</li>
-</ol>
-<p>
-
-
-<img src="https://jzhao.xyz//notes/images/github-pages.png" width="auto" alt="Enable GitHub Pages"  /><em>Enable GitHub Pages</em></p>
-<a href="#pushing-changes"><h3 id="pushing-changes"><span class="hanchor" ariaLabel="Anchor"># </span>Pushing Changes</h3></a>
-<p>To see your changes on the internet, we need to push it them to GitHub. Quartz is a <code>git</code> repository so updating it is the same workflow as you would follow as if it were just a regular software project.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># Navigate to Quartz folder</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> &lt;path-to-quartz&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Commit all changes</span>
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;message describing changes&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Push to GitHub to update site</span>
-</span></span><span class="line"><span class="cl">git push origin hugo
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Note: we specifically push to the <code>hugo</code> branch here. Our GitHub action automatically runs everytime a push to is detected to that branch and then updates the <code>master</code> branch for redeployment.</p>
-<a href="#setting-up-the-site"><h3 id="setting-up-the-site"><span class="hanchor" ariaLabel="Anchor"># </span>Setting up the Site</h3></a>
-<p>Now let&rsquo;s get this site up and running. Never hosted a site before? No problem. Have a fancy custom domain you already own or want to subdomain your Quartz? That&rsquo;s easy too.</p>
-<p>Here, we take advantage of GitHub&rsquo;s free page hosting to deploy our site. Change <code>baseURL</code> in <code>/config.toml</code>.</p>
-<p>Make sure that your <code>baseURL</code> has a trailing <code>/</code>!</p>
-<p>
-<a href="https://github.com/jackyzha0/quartz/blob/hugo/config.toml" rel="noopener">Reference <code>config.toml</code> here</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://&lt;YOUR-DOMAIN&gt;/&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>If you are using this under a subdomain (e.g. <code>&lt;YOUR-GITHUB-USERNAME&gt;.github.io/quartz</code>), include the trailing <code>/</code>. <strong>You need to do this especially if you are using GitHub!</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://&lt;YOUR-GITHUB-USERNAME&gt;.github.io/quartz/&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Change <code>cname</code> in <code>/.github/workflows/deploy.yaml</code>. Again, if you don&rsquo;t have a custom domain to use, you can use <code>&lt;YOUR-USERNAME&gt;.github.io</code>.</p>
-<p>Please note that the <code>cname</code> field should <em>not</em> have any path <code>e.g. end with /quartz</code> or have a trailing <code>/</code>.</p>
-<p>
-<a href="https://github.com/jackyzha0/quartz/blob/hugo/.github/workflows/deploy.yaml" rel="noopener">Reference <code>deploy.yaml</code> here</a></p>
-<div class="highlight" title=".github/workflows/deploy.yaml"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy  </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3  </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w">  
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.GITHUB_TOKEN }}</span><span class="w"> </span><span class="c"># this can stay as is, GitHub fills this in for us!</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l">./public  </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">publish_branch</span><span class="p">:</span><span class="w"> </span><span class="l">master</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">cname</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;YOUR-DOMAIN&gt;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>Have a custom domain? 
-
-
-
-
-
-<a
   
-  rel="noopener" class="internal-link broken"
-  data-src="notes/custom%20Domain">Learn how to set it up with Quartz </a>.</p>
-<a href="#ignoring-files"><h3 id="ignoring-files"><span class="hanchor" ariaLabel="Anchor"># </span>Ignoring Files</h3></a>
-<p>Only want to publish a subset of all of your notes? Don&rsquo;t worry, Quartz makes this a simple two-step process.</p>
-<p>❌ 
-
-
-
-
-
-<a
   
-  rel="noopener" class="internal-link broken"
-  data-src="notes/ignore%20notes">Excluding pages from being published</a></p>
-<a href="#docker-support"><h2 id="docker-support"><span class="hanchor" ariaLabel="Anchor"># </span>Docker Support</h2></a>
-<p>If you don&rsquo;t want to use a hosting service, you can host using 
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
 
 
-<a
-  href="/notes/docker/"
-  rel="noopener" class="internal-link"
-  data-src="/notes/docker/">Docker</a> instead!
-I would <em>not use this method</em> unless you know what you are doing.</p>
-<hr>
-<p>Now that your Quartz is live, let&rsquo;s figure out how to make Quartz really <em>yours</em>!</p>
+
+
+
+
+
+
+
+<p>
+<a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881" rel="noopener">Source</a> by Vannevar Bush</p>
 <blockquote>
-<p>Step 6: 🎨 
-
-
-
-
-
-<a
-  href="/notes/config/"
-  rel="noopener" class="internal-link"
-  data-src="/notes/config/">Customizing Quartz</a></p>
+<p>device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.</p>
 </blockquote>
-<p>Having problems? Checkout our 
-
-
-
-
-
-<a
-  
-  rel="noopener" class="internal-link broken"
-  data-src="notes/troubleshooting">FAQ and Troubleshooting guide</a>.</p>
+<p>Bush envisioned the memex behaving like an “intricate web of trails” similar to the function of the human mind, which he believed works by a method of “association” and not via an alphabetical index. According to Levy (2008, 508), the most “innovative feature” of Bush’s memex system was the establishing of associative indices between portions of microfilmed text—what we now call <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a> links—so that researchers could follow trails of useful information through masses of literature.</p>
+<blockquote>
+<p>Tapping a few keys projects the head of the trail. A lever runs through it at will, stopping at interesting items, going off on side excursions. It is an interesting trail, pertinent to the discussion.</p>
+</blockquote>
+<a href="#the-web-is-not-the-memex"><h2 id="the-web-is-not-the-memex"><span class="hanchor" ariaLabel="Anchor"># </span>The web is not the memex</h2></a>
+<p>See also: <a href="/thoughts/the-garden-and-the-stream" rel="noopener" class="internal-link" data-src="/thoughts/the-garden-and-the-stream">the garden and the stream</a></p>
+<ol>
+<li>A memex contains both original materials and the materials. Unlike the web, there is no read-only version of the memex. Anything you read you can link and annotate. Not just reply, but change</li>
+<li>Links are associative (read: backlinks)</li>
+<li>Links and annotations are made by readers as well as writers. A stunning thing that we forget, but the link here is not part of the author’s intent, but of the reader’s analysis. On the world wide web of course, only an author gets to determine links. What would it be like to have Curius-like annotations by default?</li>
+</ol>
 
 
     </article>
@@ -495,7 +422,7 @@ I would <em>not use this method</em> unless you know what you are doing.</p>
       
       
       <li>
-        <a href="/notes/preview-changes/" data-ctx="Hosting Quartz online!" data-src="/notes/preview-changes" class="internal-link">Preview Changes</a>
+        <a href="/thoughts/tools-for-thought/" data-ctx="thoughts/memex" data-src="/thoughts/tools-for-thought" class="internal-link">Tools for Thought</a>
       </li>
       
       

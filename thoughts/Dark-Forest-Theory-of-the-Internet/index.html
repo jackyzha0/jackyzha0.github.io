@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Related: Moving Castles
+    content="Related: Moving Castles, [[thoughts/cozy software]]
  Source: The Dark Forest Theory of the Internet by Yancey Strickler
  Imagine a dark forest at night."
   />
@@ -123,13 +123,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -310,6 +310,50 @@ Feb 12, 2022
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
 
 
 
@@ -330,12 +374,13 @@ Feb 12, 2022
 <a
   href="/thoughts/Moving-Castles/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/Moving-Castles/">Moving Castles</a></p>
+  data-src="/thoughts/Moving-Castles/">Moving Castles</a>, <a href="/thoughts/cozy-software" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">cozy software</a></p>
 <p>
 <a href="https://onezero.medium.com/the-dark-forest-theory-of-the-internet-7dc3e68a7cb1" rel="noopener">Source: The Dark Forest Theory of the Internet by <em>Yancey Strickler</em></a></p>
 <blockquote>
 <p>Imagine a dark forest at night. It’s deathly quiet. Nothing moves. Nothing stirs. This could lead one to assume that the forest is devoid of life. But of course, it’s not. The dark forest is full of life. It’s quiet because night is when the predators come out. To survive, the animals stay silent.</p>
 </blockquote>
+<p>It&rsquo;s unsafe to reveal yourself to them in any authentic way. So we retreat into private spaces. We hide in the cozy web.</p>
 <p>Ephemeral content is the content in the dark forest. Fireflies not lamps.</p>
 <p>&ldquo;These are all spaces where depressurized conversation is possible because of their non-indexed, non-optimized, and non-gamified environments.&rdquo;</p>
 <p>Creating 
@@ -348,6 +393,8 @@ Feb 12, 2022
   href="/thoughts/digital-mindfulness/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/digital-mindfulness/">digital mindfulness</a> in communication and conversation?</p>
+<p><img src="/thoughts/images/dark-forest.png" width="700" /><em>Illustration from Maggie Appleton&rsquo;s 
+<a href="https://maggieappleton.com/cozy-web" rel="noopener">Cozy Web</a></em></p>
 
 
     </article>

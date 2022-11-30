@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="If you want to host Quartz on a machine without using a webpage hosting service, it may be easier to install Docker Compose and follow the instructions below than to install Quartz&rsquo;s dependencies manually."
+    content="Maximizes $\hat w \in \arg \max_w { P(D|w) }$
+Suppose we have a dataset $D$ with parameters $w$. For example,"
   />
   <title>
-    Hosting with Docker
+    Maximum Likelihood Estimation (MLE)
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -121,13 +122,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -274,20 +275,22 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Hosting with Docker</h1>
+      <h1>Maximum Likelihood Estimation (MLE)</h1>
       <p class="meta">
         Last updated 
-Nov 20, 2022
+Nov 23, 2022
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/notes/docker.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/maximum%20likelihood%20estimation.md" rel="noopener">Edit Source</a>
 
 
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
     
 </ul>
 
@@ -301,6 +304,245 @@ Nov 20, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -313,87 +555,56 @@ Nov 20, 2022
 
 
 
-
-
-
-
-
-
-<p>If you want to host Quartz on a machine without using a webpage hosting service, it may be easier to 
-<a href="https://docs.docker.com/compose/install/" rel="noopener">install Docker Compose</a> and follow the instructions below than to 
-
-
-
-
-
-<a
-  href="/notes/preview-changes/"
-  rel="noopener" class="internal-link"
-  data-src="/notes/preview-changes/">install Quartz&rsquo;s dependencies manually</a>.</p>
-<a href="#hosting-quartz-locally"><h2 id="hosting-quartz-locally"><span class="hanchor" ariaLabel="Anchor"># </span>Hosting Quartz Locally</h2></a>
-<p>You can serve Quartz locally at <code>http://localhost:1313</code> with the following script, replacing <code>/path/to/quartz</code> with the
-actual path to your Quartz folder.</p>
-<p>docker-compose.yml</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">services:
-</span></span><span class="line"><span class="cl">  quartz-hugo:
-</span></span><span class="line"><span class="cl">    image: ghcr.io/jackyzha0/quartz:hugo
-</span></span><span class="line"><span class="cl">    container_name: quartz-hugo
-</span></span><span class="line"><span class="cl">    volumes:
-</span></span><span class="line"><span class="cl">      - /path/to/quartz:/quartz
-</span></span><span class="line"><span class="cl">    ports:
-</span></span><span class="line"><span class="cl">      - 1313:1313
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    # optional
-</span></span><span class="line"><span class="cl">    environment:
-</span></span><span class="line"><span class="cl">      - HUGO_BIND=0.0.0.0
-</span></span><span class="line"><span class="cl">      - HUGO_BASEURL=http://localhost
-</span></span><span class="line"><span class="cl">      - HUGO_PORT=1313
-</span></span><span class="line"><span class="cl">      - HUGO_APPENDPORT=true
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Then run with: <code>docker-compose up -d</code> in the same directory as your <code>docker-compose.yml</code> file.</p>
-<p>While the container is running, you can update the <code>quartz</code> fork with: <code>docker exec -it quartz-hugo make update</code>.</p>
-<a href="#exposing-your-container-to-the-internet"><h2 id="exposing-your-container-to-the-internet"><span class="hanchor" ariaLabel="Anchor"># </span>Exposing Your Container to the Internet</h2></a>
-<a href="#to-your-public-ip-address-with-port-forwarding-insecure"><h3 id="to-your-public-ip-address-with-port-forwarding-insecure"><span class="hanchor" ariaLabel="Anchor"># </span>To Your Public IP Address with Port Forwarding (insecure)</h3></a>
-<p>Assuming you are already familiar with 
-<a href="https://en.wikipedia.org/wiki/Port_forwarding" rel="noopener">port forwarding</a> and 
-<a href="https://portforward.com" rel="noopener">setting it up with your router model</a>:</p>
+<p>Maximizes $\hat w \in \arg \max_w { P(D|w) }$</p>
+<p>Suppose we have a dataset $D$ with parameters $w$. For example,</p>
 <ol>
-<li>You should set the environment variable <code>HUGO_BASEURL=http://your-public-ip</code> and then start your container.</li>
-<li>Set up port forwarding on your router from port <code>p</code> to <code>your-local-ip:1313</code>.</li>
-<li>You should now be able to access Quartz from outside your local network at <code>http://your-public-ip:p</code>.</li>
+<li>We flip a coin three times and get $D = { \textrm{H}, \textrm{H}, \textrm{T} }$</li>
+<li>The parameter $w$ is the probability that this coin lands heads</li>
 </ol>
-<p>However, your HTTP connection will be unencrypted and <strong>this method is not secure</strong>.</p>
-<a href="#to-a-domain-using-cloudflare-proxy"><h3 id="to-a-domain-using-cloudflare-proxy"><span class="hanchor" ariaLabel="Anchor"># </span>To a Domain using Cloudflare Proxy</h3></a>
-<ol>
-<li>Port forward 443 (HTTPS) from your machine.</li>
-<li>Buy a custom domain (say, <code>your-domain.com</code>) from 
-<a href="https://www.cloudflare.com/products/registrar/" rel="noopener">Cloudflare</a>. Point a DNS A record from <code>your-domain.com</code> to your public IP address and enable the proxy.</li>
-<li>Set the environment variables <code>HUGO_BASEURL=https://your-domain.com</code>, <code>HUGO_PORT=443</code>, and <code>HUGO_APPENDPORT=false</code>. Change <code>1313:1313</code> to <code>443:443</code> for the <code>ports</code> in <code>docker-compose.yml</code>.</li>
-<li>Spin up your Quartz container and enjoy it at <code>https://your-domain.com</code>!</li>
-</ol>
-<a href="#to-a-domain-using-a-reverse-proxy"><h3 id="to-a-domain-using-a-reverse-proxy"><span class="hanchor" ariaLabel="Anchor"># </span>To a Domain using a Reverse Proxy</h3></a>
-<p>If you want to serve more than just Quartz to the internet on this machine (or don&rsquo;t want to use the Cloudflare registrar and proxy), you should follow the steps in the section above (as appropriate) and also set up a reverse proxy, like 
-<a href="https://doc.traefik.io/traefik" rel="noopener">Traefik</a>. Be sure to configure your TLS certificates too!</p>
+<p>The likelihood as a probability mass function $P(D|w)$. MLE is choosing a $\hat w$ that maximizes the likelihood ($\hat w \in \arg \max_w { P(D|w) }$)</p>
+<p><img src="/thoughts/images/mle-example.png" width="auto" /></p>
+<p>In the case above, $\hat w$ is $\frac 2 3$</p>
+<a href="#notation"><h2 id="notation"><span class="hanchor" ariaLabel="Anchor"># </span>Notation</h2></a>
+<p>argmin and argmax return the set of parameter values achieving the minimum and maximum values respectively. For example:</p>
+<p>$$\arg \min_{w} { (w-1)^2 } \equiv { 1 }$$</p>
+<p>$$\arg \min_{w} { cos(w) } \equiv { \dots, -2\pi, 0, 2\pi, \dots }$$</p>
+<p>We can also show that maximizing the MLE is equivalent to minimizing the negative log-likelihood. That is,</p>
+<p>$$\hat w \in \arg\max_w { \prod_{i=1}^n P(D_i|w) } \equiv \arg\min_w { - \sum_{i=1}^n \log(P(D_i|w)) }$$</p>
+<p>This is true because logarithm is strictly monotonic so the location of the maximum doesn&rsquo;t change if we take the logarithm. Changing the sign flips the max to the min.</p>
+<p>This is typically easier to compute as it turns a product of probability into a sum.</p>
+<a href="#generative-vs-discriminative"><h2 id="generative-vs-discriminative"><span class="hanchor" ariaLabel="Anchor"># </span>Generative vs Discriminative</h2></a>
+<ul>
+<li>Discriminative maximizes $P(y|X,w)$
+<ul>
+<li>Least squares, robust <a href="/thoughts/linear-regression" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">linear regression</a>, logistic regression fall under this category</li>
+<li>We don&rsquo;t model X so we can use complicated features</li>
+</ul>
+</li>
+<li>Generative maximizes $P(y,X | w)$
+<ul>
+<li><a href="/thoughts/Naive-Bayes" rel="noopener" class="internal-link" data-src="/thoughts/Naive-Bayes">Naive Bayes</a></li>
+<li>Needs to model X</li>
+</ul>
+</li>
+</ul>
+<a href="#relation-between-loss-functions"><h2 id="relation-between-loss-functions"><span class="hanchor" ariaLabel="Anchor"># </span>Relation between loss functions</h2></a>
+<a href="#least-squares-squared-l2-loss-of-residuals"><h3 id="least-squares-squared-l2-loss-of-residuals"><span class="hanchor" ariaLabel="Anchor"># </span>Least squares (squared L2-loss of residuals)</h3></a>
+<p>If we let the likelihood function of the labels be Gaussian:</p>
+<p>$$P(y_i|x_iw) = \frac{1}{\sqrt{2\pi}}\exp\left(-\frac{(w^Tx_i-y_i)^2}{2}\right)$$</p>
+<p>Then the MLE of $w$ is the minimum of $f(w) = \frac{1}{2} \lVert Xw-y \rVert^2$</p>
+<a href="#absolute-error-l1-loss-of-residuals"><h3 id="absolute-error-l1-loss-of-residuals"><span class="hanchor" ariaLabel="Anchor"># </span>Absolute error (L1-loss of residuals)</h3></a>
+<p>If we let the likelihood function of the labels be Laplacian:</p>
+<p>$$P(y_i|x_iw) = \frac 1 2 \exp(-\vert x^Tx_i-y_i \vert)$$</p>
+<p>Then the MLE of $w$ is the minimum of $f(w) = \lVert Xw-y \rVert_1$</p>
+<a href="#logistic-loss"><h3 id="logistic-loss"><span class="hanchor" ariaLabel="Anchor"># </span>Logistic loss</h3></a>
+<p>$h$ is the sigmoid function $\frac{1}{1+\exp(-x)}$. If we let the likelihood function of the labels be</p>
+<p>$$P(y_i|w,x_i) = h(y_iw^Tx_i) = \frac{1}{1+\exp(-y_iw^Tx_i)}$$</p>
+<p>Then the MLE of $w$ is the NLL, which we can show to be equivalent to the logistic loss</p>
+<p>$$NLL(w) = \sum_{i=1}^n\log \left( \frac{1}{1+\exp(-y_iw^Tx_i)} \right) = \sum_{i=1}^n \log(1 + \exp(-y_iw^Tx_i))$$</p>
+<p>Last part is true because of log rules ($-\log(\frac{1}{x}) = \log(x)$).</p>
+<a href="#overfitting"><h2 id="overfitting"><span class="hanchor" ariaLabel="Anchor"># </span>Overfitting</h2></a>
+<p>Conceptually, MLE is saying that we should find the $w$ that makes $D$ have the highest probability given $w$. From <a href="/thoughts/No-Free-Lunch-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/No-Free-Lunch-Theorem">No Free Lunch Theorem</a>, we know that there is always a model that performs well for some unlikely $w$. This is overfitting!</p>
+<p>We actually want to find the $w$ that has the highest probability given the data $D$. For this, we need <a href="/thoughts/maximum-a-posteriori-estimation" rel="noopener" class="internal-link" data-src="/thoughts/maximum-a-posteriori-estimation">MAP</a></p>
 
 
     </article>
@@ -419,8 +630,18 @@ actual path to your Quartz folder.</p>
     
       
       
+      
+    
+      
+      
       <li>
-        <a href="/notes/hosting/" data-ctx="Docker" data-src="/notes/hosting" class="internal-link">Deploying Quartz to the Web</a>
+        <a href="/thoughts/machine-learning/" data-ctx="MLE" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/maximum-a-posteriori-estimation/" data-ctx="MLE" data-src="/thoughts/maximum-a-posteriori-estimation" class="internal-link">Maximum a Posteriori (MAP) Estimation</a>
       </li>
       
       

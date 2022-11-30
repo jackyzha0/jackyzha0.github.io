@@ -7,21 +7,83 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Preview Changes</title>
-      <link>https://jzhao.xyz/notes/preview-changes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>50 pounds of pots</title>
+      <link>https://jzhao.xyz/thoughts/50-pounds-of-pots/</link>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/notes/preview-changes/</guid>
-      <description>If you&amp;rsquo;d like to preview what your Quartz site looks like before deploying it to the internet, the following instructions guide you through installing the proper dependencies to run it locally.</description>
+      <guid>https://jzhao.xyz/thoughts/50-pounds-of-pots/</guid>
+      <description>Quantity is the journey to quality
+The ceramics teacher announced on opening day that he was dividing the class into two groups.</description>
     </item>
     
     <item>
-      <title>Deploying Quartz to the Web</title>
-      <link>https://jzhao.xyz/notes/hosting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Memex</title>
+      <link>https://jzhao.xyz/thoughts/memex/</link>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/notes/hosting/</guid>
-      <description>Hosting on GitHub Pages Quartz is designed to be effortless to deploy. If you forked and cloned Quartz directly from the repository, everything should already be good to go!</description>
+      <guid>https://jzhao.xyz/thoughts/memex/</guid>
+      <description>Source by Vannevar Bush
+ device in which an individual stores all his books, records, and communications, and which is mechanized so that it can be consulted with exceeding speed and flexibility.</description>
+    </item>
+    
+    <item>
+      <title>The Garden and the Stream</title>
+      <link>https://jzhao.xyz/thoughts/the-garden-and-the-stream/</link>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/the-garden-and-the-stream/</guid>
+      <description>Source
+The Garden A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.</description>
+    </item>
+    
+    <item>
+      <title>Arrow&#39;s Impossibility Theorem</title>
+      <link>https://jzhao.xyz/thoughts/Arrows-Impossibility-Theorem/</link>
+      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Arrows-Impossibility-Theorem/</guid>
+      <description>Related: [[thoughts/Social Contract Theory#Social Choice|social choice]]
+Assume there is more than one individual, and there are at least three distinct social states.</description>
+    </item>
+    
+    <item>
+      <title>Latent-Factor Models</title>
+      <link>https://jzhao.xyz/thoughts/latent-factor-model/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/latent-factor-model/</guid>
+      <description>Like [[thoughts/change of basis]] but instead of hand-picking the features, we learn them from data.
+Part weights are a change of basis from $x_i$ to some $z_i$.</description>
+    </item>
+    
+    <item>
+      <title>Maximum a Posteriori (MAP) Estimation</title>
+      <link>https://jzhao.xyz/thoughts/maximum-a-posteriori-estimation/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/maximum-a-posteriori-estimation/</guid>
+      <description>Maximizes $\hat w \in \arg\max_w { P(w|D) }$
+Given our data, what is the model $w$ is the best model?</description>
+    </item>
+    
+    <item>
+      <title>Maximum Likelihood Estimation (MLE)</title>
+      <link>https://jzhao.xyz/thoughts/maximum-likelihood-estimation/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/maximum-likelihood-estimation/</guid>
+      <description>Maximizes $\hat w \in \arg \max_w { P(D|w) }$
+Suppose we have a dataset $D$ with parameters $w$. For example,</description>
+    </item>
+    
+    <item>
+      <title>XGBoost</title>
+      <link>https://jzhao.xyz/thoughts/XGBoost/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/XGBoost/</guid>
+      <description>Uses [[thoughts/regularization|regularized]] regression trees. These are like [[thoughts/decision tree|decision trees]] where each split is
+ based on a single feature each leaf gives a real-valued prediction  Fitting a regression tree  Train: set each weight $w_L$ at leaf $L$ by minimizing squared error $\sum_{i=1}^n (w_{L_i}-y_i)^2$  We use using greedy recursive splitting for growing the tree   Prediction: At each leaf, the prediction $\hat y_i$ is the mean of all $y_i$ that fall under that leaf node  Ensemble and Boosting We create a series of trees that are trained on the residual of the previous tree.</description>
     </item>
     
     <item>
@@ -430,8 +492,7 @@ When evaluating, we often need to quantify what outcomes are more [[thoughts/val
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Ensemble-method/</guid>
-      <description>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)
- Also called “meta-learning”.</description>
+      <description>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it only works if the individual classifiers make independent errors</description>
     </item>
     
     <item>
@@ -2723,7 +2784,7 @@ A really good fiction read on optionality, the meaning of life and what it means
       <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Dark-Forest-Theory-of-the-Internet/</guid>
-      <description>Related: Moving Castles
+      <description>Related: Moving Castles, [[thoughts/cozy software]]
  Source: The Dark Forest Theory of the Internet by Yancey Strickler
  Imagine a dark forest at night.</description>
     </item>
@@ -5314,7 +5375,7 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       <pubDate>Sat, 30 Jan 2021 16:53:01 -0800</pubDate>
       
       <guid>https://jzhao.xyz/posts/digital-gardening/</guid>
-      <description>As of 2021, this process is no longer accurate. I&amp;rsquo;ve embraced a much more networked form of note taking which I&amp;rsquo;ve written about here.</description>
+      <description>As of 2021, this process is no longer accurate. I&amp;rsquo;ve embraced a much more networked form of note taking which I&amp;rsquo;ve written about here and [[thoughts/the garden and the stream|here]].</description>
     </item>
     
     <item>
@@ -5429,34 +5490,6 @@ Since I’ve started at Hootsuite, I have
       
       <guid>https://jzhao.xyz/books/</guid>
       <description>A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that&amp;rsquo;s linked!</description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
-      <link>https://jzhao.xyz/notes/config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/notes/config/</guid>
-      <description>Configuration Quartz is designed to be extremely configurable. You can find the bulk of the configuration scattered throughout the repository depending on how in-depth you&amp;rsquo;d like to get.</description>
-    </item>
-    
-    <item>
-      <title>Hosting with Docker</title>
-      <link>https://jzhao.xyz/notes/docker/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/notes/docker/</guid>
-      <description>If you want to host Quartz on a machine without using a webpage hosting service, it may be easier to install Docker Compose and follow the instructions below than to install Quartz&amp;rsquo;s dependencies manually.</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://jzhao.xyz/notes/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/notes/search/</guid>
-      <description>Quartz supports two modes of searching through content.
-Full-text Full-text search is the default in Quartz. It produces results that exactly match the search query.</description>
     </item>
     
   </channel>

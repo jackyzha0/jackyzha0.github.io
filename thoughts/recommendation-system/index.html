@@ -121,13 +121,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -301,12 +301,108 @@ Dec 24, 2021
 
 
 
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -377,20 +473,21 @@ inducing animals to commit incarceration, self-arrest, or suicide’ (p. 657) &n
 </li>
 </ol>
 <a href="#approaches"><h2 id="approaches"><span class="hanchor" ariaLabel="Anchor"># </span>Approaches</h2></a>
-<ol>
-<li>Content-based Recommendation
+<a href="#content-based-recommendation"><h3 id="content-based-recommendation"><span class="hanchor" ariaLabel="Anchor"># </span>Content-based Recommendation</h3></a>
 <ol>
 <li>&ldquo;more things like this&hellip;&rdquo;</li>
 <li>Compare the content of an item to user&rsquo;s preferred items</li>
+<li>A form of <a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">supervised learning</a></li>
 </ol>
-</li>
-<li>Collaborative Filtering
+<a href="#collaborative-filtering"><h3 id="collaborative-filtering"><span class="hanchor" ariaLabel="Anchor"># </span>Collaborative filtering</h3></a>
 <ol>
 <li>&ldquo;users like you looked for&hellip;&rdquo;</li>
 <li>Based on identification of similar users and their patterns of activity</li>
+<li>A form of <a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">unsupervised learning</a></li>
 </ol>
-</li>
-</ol>
+<p>One way of doing this is using a technique called matrix factorization, which is a <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">latent-factor model</a> for entries in matrix $Y$.</p>
+<p>Loss function:
+$$f(Z,W) = \lVert ZW - Y \rVert_F^2 + \frac{\lambda_1}{2}\lVert Z \rVert_F^2 + \frac{\lambda_2}{2}\lVert W \rVert_F^2$$</p>
 
 
     </article>
@@ -420,8 +517,18 @@ inducing animals to commit incarceration, self-arrest, or suicide’ (p. 657) &n
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/instrumentalism/" data-ctx="recommendation systems" data-src="/thoughts/instrumentalism" class="internal-link">Instrumentalism</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="Recommender System" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
       </li>
       
       

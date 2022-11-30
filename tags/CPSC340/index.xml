@@ -6,7 +6,47 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latent-Factor Models</title>
+      <link>https://jzhao.xyz/thoughts/latent-factor-model/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/latent-factor-model/</guid>
+      <description>Like [[thoughts/change of basis]] but instead of hand-picking the features, we learn them from data.
+Part weights are a change of basis from $x_i$ to some $z_i$.</description>
+    </item>
+    
+    <item>
+      <title>Maximum a Posteriori (MAP) Estimation</title>
+      <link>https://jzhao.xyz/thoughts/maximum-a-posteriori-estimation/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/maximum-a-posteriori-estimation/</guid>
+      <description>Maximizes $\hat w \in \arg\max_w { P(w|D) }$
+Given our data, what is the model $w$ is the best model?</description>
+    </item>
+    
+    <item>
+      <title>Maximum Likelihood Estimation (MLE)</title>
+      <link>https://jzhao.xyz/thoughts/maximum-likelihood-estimation/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/maximum-likelihood-estimation/</guid>
+      <description>Maximizes $\hat w \in \arg \max_w { P(D|w) }$
+Suppose we have a dataset $D$ with parameters $w$. For example,</description>
+    </item>
+    
+    <item>
+      <title>XGBoost</title>
+      <link>https://jzhao.xyz/thoughts/XGBoost/</link>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/XGBoost/</guid>
+      <description>Uses [[thoughts/regularization|regularized]] regression trees. These are like [[thoughts/decision tree|decision trees]] where each split is
+ based on a single feature each leaf gives a real-valued prediction  Fitting a regression tree  Train: set each weight $w_L$ at leaf $L$ by minimizing squared error $\sum_{i=1}^n (w_{L_i}-y_i)^2$  We use using greedy recursive splitting for growing the tree   Prediction: At each leaf, the prediction $\hat y_i$ is the mean of all $y_i$ that fall under that leaf node  Ensemble and Boosting We create a series of trees that are trained on the residual of the previous tree.</description>
+    </item>
+    
     <item>
       <title>Change of basis</title>
       <link>https://jzhao.xyz/thoughts/change-of-basis/</link>
@@ -199,8 +239,7 @@ Example If want every location on to have a “neighbor” with distance $\epsil
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Ensemble-method/</guid>
-      <description>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)
- Also called “meta-learning”.</description>
+      <description>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it only works if the individual classifiers make independent errors</description>
     </item>
     
     <item>

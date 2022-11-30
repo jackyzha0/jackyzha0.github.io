@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="Source
+The Garden A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy."
   />
   <title>
-    setup
+    The Garden and the Stream
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -121,13 +122,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -274,85 +275,208 @@ if (!doNotTrack) {
 
 
     <article>
-        <h1>Tag: setup</h1>
-        
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 20, 2022
+      <h1>The Garden and the Stream</h1>
+      <p class="meta">
+        Last updated 
+Nov 29, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/the%20garden%20and%20the%20stream.md" rel="noopener">Edit Source</a>
 
 
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/notes/preview-changes/" class="internal-link" data-src="/notes/preview-changes/">Preview Changes</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 20, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/notes/hosting/" class="internal-link" data-src="/notes/hosting/">Deploying Quartz to the Web</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 20, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/notes/config/" class="internal-link" data-src="/notes/config/">Configuration</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 20, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/notes/docker/" class="internal-link" data-src="/notes/docker/">Hosting with Docker</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
-                
-            </ul>
-        </div>
-    </li></ul>
-
-        
-    </article>
+      </p>
+      <ul class="tags">
     
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/" rel="noopener">Source</a></p>
+<a href="#the-garden"><h2 id="the-garden"><span class="hanchor" ariaLabel="Anchor"># </span>The Garden</h2></a>
+<p>A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.</p>
+<p>The Garden is an old metaphor associated with <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a>.</p>
+<blockquote>
+<p>The Garden of Forking Paths from the mid-20th century. The concept of the Wiki Gardener from the 1990s. Mark Bernstein’s 1998 essay Hypertext Gardens.</p>
+</blockquote>
+<p>The Garden is the web as <a href="/thoughts/search#internet-topology-as-shaped-by-search-engines" rel="noopener" class="internal-link" data-src="/thoughts/search">topology</a>. Every walk through the garden creates new paths, new meanings, and when we add things to the garden we add them in a way that allows many future, unpredicted relationships.</p>
+<p>There is no <em>right</em> or canonical way to view it</p>
+<p>A hard part of this is The Navigation Problem: how do we give web users just enough guidance to freely explore the web, without forcing them into pre-defined browsing experiences?</p>
+<a href="#the-stream"><h2 id="the-stream"><span class="hanchor" ariaLabel="Anchor"># </span>The Stream</h2></a>
+<p>In the stream metaphor you don’t experience the Stream by walking around it and looking at it, or following it to its end. You jump in and let it flow past. You feel the force of it hit you as things float by.</p>
+<p>In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, time ordered path with our experience (and only our experience) at the center.</p>
+<p>We live in a shallow web. Not of actual trails, but of sign posts.</p>
+<blockquote>
+<p>A web of “hey this is cool” one-hop links. A web where where links are used to create a conversational trail (a sort of “read this if you want to understand what I am riffing on” link) instead of associations of ideas&hellip; A web seen as a tool for self-expression rather than a tool for thought.</p>
+</blockquote>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/posts/bft-json-crdt/" data-ctx="The garden and the stream." data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/posts/digital-gardening/" data-ctx="here" data-src="/posts/digital-gardening" class="internal-link">Digital Gardening</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/memex/" data-ctx="thoughts/the garden and the stream" data-src="/thoughts/memex" class="internal-link">Memex</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
 
 
 
@@ -367,6 +491,7 @@ Nov 20, 2022
             <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
     </footer>
 </div>
+
 
 </div>
 </body>

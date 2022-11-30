@@ -8,10 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="If you&rsquo;d like to preview what your Quartz site looks like before deploying it to the internet, the following instructions guide you through installing the proper dependencies to run it locally."
+    content="Related: [[thoughts/Social Contract Theory#Social Choice|social choice]]
+Assume there is more than one individual, and there are at least three distinct social states."
   />
   <title>
-    Preview Changes
+    Arrow&#39;s Impossibility Theorem
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -121,13 +122,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -274,20 +275,20 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Preview Changes</h1>
+      <h1>Arrow&#39;s Impossibility Theorem</h1>
       <p class="meta">
         Last updated 
-Nov 20, 2022
+Nov 25, 2022
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/notes/preview%20changes.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/Arrow%27s%20Impossibility%20Theorem.md" rel="noopener">Edit Source</a>
 
 
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/setup/">Setup</a></li>
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
 
@@ -308,6 +309,95 @@ Nov 20, 2022
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -319,63 +409,29 @@ Nov 20, 2022
 
 
 
-<p>If you&rsquo;d like to preview what your Quartz site looks like before deploying it to the internet, the following
-instructions guide you through installing the proper dependencies to run it locally.</p>
-<a href="#install-hugo-obsidian"><h2 id="install-hugo-obsidian"><span class="hanchor" ariaLabel="Anchor"># </span>Install <code>hugo-obsidian</code></h2></a>
-<p>This step will generate the list of backlinks for Hugo to parse. Ensure you have 
-<a href="https://golang.org/doc/install" rel="noopener">Go</a> (&gt;= 1.16) installed.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Install and link `hugo-obsidian` locally</span>
-</span></span><span class="line"><span class="cl">go install github.com/jackyzha0/hugo-obsidian@latest
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>If you are running into an error saying that <code>command not found: hugo-obsidian</code>, make sure you set your <code>GOPATH</code> correctly! This will allow your terminal to correctly recognize hugo-obsidian as an executable.</p>
-<p>Afterwards, start the Hugo server as shown above and your local backlinks and interactive graph should be populated!</p>
-<a href="#installing-hugo"><h2 id="installing-hugo"><span class="hanchor" ariaLabel="Anchor"># </span>Installing Hugo</h2></a>
-<p>Hugo is the static site generator that powers Quartz. 
-<a href="https://gohugo.io/getting-started/installing/" rel="noopener">Install Hugo with &ldquo;extended&rdquo; Sass/SCSS version</a> first. Then,</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Navigate to your local Quartz folder</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> &lt;location-of-your-local-quartz&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Start local server</span>
-</span></span><span class="line"><span class="cl">make serve
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># View your site in a browser at http://localhost:1313/</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>[!INFO] Docker Support</p>
-<p>If you have Docker installed already, open your terminal, navigate to your folder with Quartz and run <code>make docker</code></p>
-</blockquote>
-<p>Now that you are happy with how your Quartz instance looks, let&rsquo;s get it hosted!</p>
-<blockquote>
-<p>🌍 Step 5: 
 
-
-
-
-
-<a
-  href="/notes/hosting/"
-  rel="noopener" class="internal-link"
-  data-src="/notes/hosting/">Hosting Quartz online!</a></p>
-</blockquote>
+<p>Related: <a href="/thoughts/Social-Contract-Theory#social-choice" rel="noopener" class="internal-link" data-src="/thoughts/Social-Contract-Theory">social choice</a></p>
+<p>Assume there is more than one individual, and there are at least three distinct social states. Then there is no SWF that meets the following four conditions:</p>
+<ol>
+<li>Non-dictatorial: no individual is decisive</li>
+<li>Ordering: The SWF must produce social preference orderings that satisfy the basic <a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">probability axioms</a></li>
+<li><a href="/thoughts/Pareto-optimality" rel="noopener" class="internal-link" data-src="/thoughts/Pareto-optimality">Pareto condition</a>: If every voter prefers alternative X over alternative Y, then the group prefers X over Y.</li>
+<li>Independence of Irrelevant Alternatives (IIA): If every voter&rsquo;s preference between X and Y remains unchanged, then the group&rsquo;s preference between X and Y will also remain unchanged</li>
+</ol>
+<p>Unstated: Arrow also requires the unrestricted domain assumption (U)</p>
+<p>How can we get around this?</p>
+<ol>
+<li>Sen: give up liberalism (Pareto)
+<ol>
+<li>Argues that liberalism + Pareto leads to a contradiction in ordering axioms</li>
+<li>Nozick&rsquo;s solution: give up the unrestricted domain assumption (U)
+<ol>
+<li>Liberalism excludes certain kinds of states (‘private’ alternatives) from social scrutiny in advance.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
 
     </article>
@@ -401,8 +457,18 @@ instructions guide you through installing the proper dependencies to run it loca
     
       
       
+      
+    
+      
+      
       <li>
-        <a href="/notes/docker/" data-ctx="install Quartz&#39;s dependencies manually" data-src="/notes/docker" class="internal-link">Hosting with Docker</a>
+        <a href="/thoughts/Social-Contract-Theory/" data-ctx="thoughts/Arrow&#39;s Impossibility Theorem" data-src="/thoughts/Social-Contract-Theory" class="internal-link">Social Contract Theory</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/petname/" data-ctx="thoughts/Arrow&#39;s Impossibility Theorem" data-src="/thoughts/petname" class="internal-link">Petname</a>
       </li>
       
       

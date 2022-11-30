@@ -121,13 +121,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -438,6 +438,36 @@ Nov 3, 2022
     
   
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -478,6 +508,8 @@ $$</p>
 <li>Inverting $K+\lambda I$ which is a $(n,n)$ takes $O(n^3)$</li>
 </ol>
 <p>All of our distance-based methods have kernel versions</p>
+<a href="#learned-basis"><h2 id="learned-basis"><span class="hanchor" ariaLabel="Anchor"># </span>Learned Basis</h2></a>
+<p>We can also learn basis from data as well. See <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">latent-factor model</a></p>
 
 
     </article>
@@ -505,6 +537,16 @@ $$</p>
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/latent-factor-model/" data-ctx="thoughts/change of basis" data-src="/thoughts/latent-factor-model" class="internal-link">Latent-Factor Models</a>
+      </li>
+      
       
       
       <li>

@@ -121,13 +121,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,6 +319,33 @@ Oct 25, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -402,6 +429,70 @@ Oct 25, 2022
 <ol>
 <li>Online dynamic analysis: run the analysis as part of / alongside the program</li>
 <li>Offline dynamic analysis: make the program produce a log; analyse it separately</li>
+</ol>
+<a href="#program-slicing-example"><h2 id="program-slicing-example"><span class="hanchor" ariaLabel="Anchor"># </span>Program Slicing Example</h2></a>
+<p>NB: We never delete variable declarations, just their initializations. Similarly, we keep flow constructs if they have at least one line inside of them.</p>
+<a href="#static"><h3 id="static"><span class="hanchor" ariaLabel="Anchor"># </span>Static</h3></a>
+<ol>
+<li>Define abstract state $\sigma$ as $(M, L)$ where
+<ol>
+<li>$M$ is a map from variable names to what line numbers may have affect that variable at that point</li>
+<li>$L$ is a list of control flow dependencies at that point</li>
+</ol>
+</li>
+<li>For assignment of <code>x=e</code> at line $n$ where <code>e</code> is an expression that can contain multiple variables
+<ol>
+<li><code>M[x]</code> becomes the union of
+<ol>
+<li>The line number <code>n</code></li>
+<li><code>M[y]</code> for every <code>y</code> in the expression <code>e</code></li>
+<li>Unions of all sets in <code>L</code></li>
+</ol>
+</li>
+<li><code>L</code> remains unchanged</li>
+</ol>
+</li>
+<li>For if-then-else statements
+<ol>
+<li>Push to <code>L</code>: the union of <code>M[y]</code> for every <code>y</code> in the if-condition check</li>
+<li>Copy the map <code>M</code> to start of the then and else blocks</li>
+<li>Continue normally&hellip;</li>
+<li>At the end of each block, union the <code>M</code>s at the end of each block</li>
+<li>Pop from <code>L</code></li>
+</ol>
+</li>
+<li>For loops
+<ol>
+<li>Add loop variable to <code>M</code></li>
+<li>Push to <code>L</code>: the union of <code>M[y]</code> for every y in the loop condition</li>
+<li>Continue normally&hellip;</li>
+<li>When we hit end of loop body, we go back to start of the loop and rewrite. Stop when neither <code>M</code> nor <code>L</code> update
+<ol>
+<li>Each variable in <code>M</code> to be union of its old value and the value at the end of the loop</li>
+<li>Head of <code>L</code> is the union of itself and <code>M[y]</code> for every y in the loop condition</li>
+</ol>
+</li>
+<li>Pop from <code>L</code></li>
+</ol>
+</li>
+</ol>
+<a href="#dynamic"><h3 id="dynamic"><span class="hanchor" ariaLabel="Anchor"># </span>Dynamic</h3></a>
+<ol>
+<li>We add two extra objects to the program state, <code>m</code> and <code>l</code> which are functionally equivalent to $M$ and $L$ from previously</li>
+<li>For assignment of <code>x=e</code> at line $n$, we update <code>m</code> to store
+<ol>
+<li>$n$</li>
+<li><code>m[y]</code> for each <code>y</code> in <code>e</code></li>
+<li><code>l</code> flattened</li>
+</ol>
+</li>
+<li>For if-then-else statements
+<ol>
+<li>Before the statement, we calculate <code>s</code> by taking union of all the dependencies in the condition and push this to <code>l</code></li>
+<li>We pop <code>l</code> after the statement</li>
+</ol>
+</li>
+<li>Loops are the same as if-then-else statements but we do steps 1. and 2. inside the loop instead of outside the statement</li>
 </ol>
 
 

@@ -8,8 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)
- Also called “meta-learning”."
+    content="Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it only works if the individual classifiers make independent errors"
   />
   <title>
     Ensemble method
@@ -122,13 +121,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,12 +303,48 @@ Sep 23, 2022
 
 
 
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
   
   
@@ -352,16 +387,20 @@ Sep 23, 2022
 
 
 
-<p>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers)</p>
-<ul>
-<li>Also called “meta-learning”.</li>
-</ul>
-<p>Only works if the individual classifiers make independent errors</p>
-<p>Models that uses the ensemble method:</p>
+<p>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it <strong>only works if the individual classifiers make independent errors</strong></p>
+<a href="#boosting"><h2 id="boosting"><span class="hanchor" ariaLabel="Anchor"># </span>Boosting</h2></a>
+<p>Improves training error of classifiers with high $E_{train}$</p>
+<p>Models that use the boosting ensemble method:</p>
+<ol>
+<li><a href="/thoughts/XGBoost" rel="noopener" class="internal-link" data-src="/thoughts/XGBoost">XGBoost</a> (regularized regression trees)</li>
+</ol>
+<a href="#averaging"><h2 id="averaging"><span class="hanchor" ariaLabel="Anchor"># </span>Averaging</h2></a>
+<p>Improves approximation error of classifiers with high $E_{approx}$</p>
+<p>Models that uses the averaging ensemble method:</p>
 <ol>
 <li><a href="/thoughts/Random-Forest" rel="noopener" class="internal-link" data-src="/thoughts/Random-Forest">Random Forest</a></li>
 </ol>
-<a href="#methods"><h2 id="methods"><span class="hanchor" ariaLabel="Anchor"># </span>Methods</h2></a>
+<a href="#methods"><h3 id="methods"><span class="hanchor" ariaLabel="Anchor"># </span>Methods</h3></a>
 <ol>
 <li>Voting: take the mode of the predictions across the classifiers</li>
 <li>Stacking: fit another classifier that uses the predictions as features</li>

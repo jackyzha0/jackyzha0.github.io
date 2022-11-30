@@ -121,13 +121,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -303,12 +303,89 @@ Oct 3, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
 
 
 
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
 
 
 
@@ -357,6 +434,35 @@ Oct 3, 2022
 <li>Social contract theory does not explain how to solve a moral problem when the analysis reveals conflicting rights</li>
 <li>Classifying those who deliberately break moral rules and those who cannot understand a rule can be difficult</li>
 </ul>
+<a href="#social-choice"><h2 id="social-choice"><span class="hanchor" ariaLabel="Anchor"># </span>Social Choice</h2></a>
+<ol>
+<li>How to aggregate many individual preference orderings into a single group or social preference ordering; or,</li>
+<li>How to have rational individuals make rational choices as a group</li>
+</ol>
+<p>We can define a Social welfare function (SWF) combining individual preference orderings (over social states) into a social preference ordering (over those same states).</p>
+<p>Suggestions</p>
+<ol>
+<li>Use majority rule to aggregate individual preferences into group preferences.
+<ol>
+<li>Problem: The voting paradox. Individual preferences may be transitive but the group preference <em>can</em> be cyclic when we do a majority vote. The violates <a href="/thoughts/probability#kolmogorov-axioms" rel="noopener" class="internal-link" data-src="/thoughts/probability">a Klmogorov Axiom</a> about ordering</li>
+</ol>
+</li>
+<li>Use maximum total utility to determine group preference
+<ol>
+<li>Different scales (equivalent vNM scales) yield a different social preference ordering</li>
+</ol>
+</li>
+<li>Just use ordinal rankings
+<ol>
+<li><a class="internal-link broken">Arrow&rsquo;s Impossibility Theorem</a></li>
+</ol>
+</li>
+</ol>
+<p>Definitions:</p>
+<ol>
+<li>A group $D \in G$ is decisive with respect to some pair of social states $(a,b)$ iff $a \succ b$ by the whole group $G$ whenever everyone in $D$ prefers $a \succ b$</li>
+<li>A group is decisive if it is decisive over all pairs of social states</li>
+</ol>
 
 
     </article>
@@ -388,6 +494,16 @@ Oct 3, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Arrows-Impossibility-Theorem/" data-ctx="social choice" data-src="/thoughts/Arrows-Impossibility-Theorem" class="internal-link">Arrow&#39;s Impossibility Theorem</a>
+      </li>
+      
       
       
       <li>

@@ -8,11 +8,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Quartz supports two modes of searching through content.
-Full-text Full-text search is the default in Quartz. It produces results that exactly match the search query."
+    content="Like [[thoughts/change of basis]] but instead of hand-picking the features, we learn them from data.
+Part weights are a change of basis from $x_i$ to some $z_i$."
   />
   <title>
-    Search
+    Latent-Factor Models
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -122,13 +122,13 @@ Full-text Full-text search is the default in Quartz. It produces results that ex
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.0775b4e8e4d70573cfa1b87690b6c590.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.22cb29948dce845596fb3a343a017654.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f506a975e4164a3144807d455921749a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -275,18 +275,22 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Search</h1>
+      <h1>Latent-Factor Models</h1>
       <p class="meta">
         Last updated 
-Nov 20, 2022
+Nov 23, 2022
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/notes/search.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/latent-factor%20model.md" rel="noopener">Edit Source</a>
 
 
       </p>
       <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
     
 </ul>
 
@@ -300,6 +304,240 @@ Nov 20, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
 
 
 
@@ -312,57 +550,65 @@ Nov 20, 2022
 
 
 
-
-
-
-
-
-
-<p>Quartz supports two modes of searching through content.</p>
-<a href="#full-text"><h2 id="full-text"><span class="hanchor" ariaLabel="Anchor"># </span>Full-text</h2></a>
-<p>Full-text search is the default in Quartz. It produces results that <em>exactly</em> match the search query. This is easier to setup but usually produces lower quality matches.</p>
-<div class="highlight" title="data/config.yaml"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># the default option</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">enableSemanticSearch</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><a href="#natural-language"><h2 id="natural-language"><span class="hanchor" ariaLabel="Anchor"># </span>Natural Language</h2></a>
-<p>Natural language search is powered by 
-<a href="https://beta.operand.ai/" rel="noopener">Operand</a>. It understands language like a person does and finds results that best match user intent. In this sense, it is closer to how Google Search works.</p>
-<p>Natural language search tends to produce higher quality results than full-text search.</p>
-<p>Here&rsquo;s how to set it up.</p>
+<p>Like <a href="/thoughts/change-of-basis" rel="noopener" class="internal-link" data-src="/thoughts/change-of-basis">change of basis</a> but instead of hand-picking the features, we learn them from data.</p>
+<p><em>Part weights</em> are a change of basis from $x_i$ to some $z_i$. The canonical example is Principal Component Analysis (PCA)</p>
+<a href="#pca"><h2 id="pca"><span class="hanchor" ariaLabel="Anchor"># </span>PCA</h2></a>
+<p>PCA is parametric and does <em>not</em> provide unique global optimum.</p>
+<p>Takes in a matrix $X$ and an input $k$ and outputs two matrices such that $X \approx ZW$:</p>
+<ul>
+<li>$Z$ is a (n,k) matrix. Each row $z_i$ is a set of features/part weights</li>
+<li>W is a (k,d) matrix. Each row $w_c$ is a part/factor/principle component
+<ul>
+<li>We can think of $W$ as <em>rotating</em> data so that the slope is zero</li>
+</ul>
+</li>
+<li>Approximation of one $\hat x_{ij}$ is $(w^{j^T}z_i) = \langle w^j, z_i \rangle$
+<ul>
+<li>Each $x_i$ can be thought of as a linear combination of all the factors</li>
+</ul>
+</li>
+</ul>
+<p>Assumptions:</p>
+<ul>
+<li>Assumes $X$ is centered (each column of $X$ has a mean of zero)</li>
+</ul>
+<p>Use cases:</p>
+<ul>
+<li>Dimension reductionality: Effectively allows us to reduce the dimensionality of X if $k &lt; d$
+<ul>
+<li>Actually, it only ever makes sense if $k \leq d$</li>
+</ul>
+</li>
+<li><a href="/thoughts/outlier-detection" rel="noopener" class="internal-link" data-src="/thoughts/outlier-detection">Outlier detection</a>: if PCA gives a poor approximation, $x_i$ could be an outlier</li>
+<li><a href="/thoughts/visualization" rel="noopener" class="internal-link" data-src="/thoughts/visualization">Data visualization</a>: $k=2$ to visualize high-dimensional objects</li>
+</ul>
+<p>We minimize</p>
+<p>$$\begin{flalign}
+f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\ &amp;= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 \\ &amp;= \lVert ZW - X \rVert_F^2
+\end{flalign}$$</p>
+<p>If we do alternating minimization,</p>
 <ol>
-<li>Login or Register for a new Operand account. Click the verification link sent to your email, and you&rsquo;ll be redirected to the dashboard. (Note) You do not need to enter a credit card to create an account, or get started with the Operand API. The first $10 of usage each month is free. To learn more, see pricing. If you go over your free quota, we&rsquo;ll (politely) reach out and ask you to configure billing.</li>
-<li>Create your first index. On the dashboard, under &ldquo;Indexes&rdquo;, enter the name and description of your index, and click &ldquo;Create Index&rdquo;. Note down the ID of the index (obtained by clicking on the index name in the list of indexes), as you&rsquo;ll need it in the next step. IDs are unique to each index, and look something like <code>uqv1duxxbdxu</code>.</li>
-<li>Click into the index you&rsquo;ve created. Under &ldquo;Index Something&rdquo;, select &ldquo;SITEMAP&rdquo; from the dropdown and click &ldquo;Add Source&rdquo;.</li>
-<li>For the &ldquo;Sitemap.xml URL&rdquo;, put your deployed site&rsquo;s base URL followed by <code>sitemap.xml</code>. For example, for <code>quartz.jzhao.xyz</code>, put <code>https://quartz.jzhao.xyz/sitemap.xml</code>. Leave the URL Regex empty.</li>
-<li>Get your API key. On the dashboard, under &ldquo;API Keys&rdquo;, you can manage your API keys. If you don&rsquo;t already have an API key, click &ldquo;Create API Key&rdquo;. You&rsquo;ll need this for the next step.</li>
-<li>Open <code>data/config.yaml</code>. Set <code>enableSemanticSearch</code> to <code>true</code>, <code>operandApiKey</code> to your copied key, and <code>operandIndexId</code> to the ID of the index we created from earlier..</li>
+<li>Fix Z and optimize W: $\nabla_wf(W,Z)=Z^TZW-Z^TX$</li>
+<li>Fix W and optimize Z: $\nabla_wf(W,Z)=ZWW^T-XW^T$</li>
 </ol>
-<div class="highlight" title="data/config.yaml"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># the default option</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">search</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enableSemanticSearch</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">operandApiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;jp9k5hudse2a828z98kxd6z3payi8u90rnjf&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">operandIndexId</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;s0kf3bd6tldw&#34;</span><span class="w">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="7">
-<li>Push your changes to the site and wait for it to deploy.</li>
-<li>Check the Operand dashboard and wait for your site to index. Enjoy natural language search powered by Operand!</li>
+<p>We converge to a local optimum which will be a global optimum if W and Z are randomly initialized (if you don&rsquo;t pick a saddle point)</p>
+<p>For large X, we can also just use <a href="/thoughts/gradient-descent#stochastic-gradient-descent-sgd" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">SGD</a> and cost per iteration is only $O(k)$</p>
+<a href="#choose-k-by-variance-explained"><h3 id="choose-k-by-variance-explained"><span class="hanchor" ariaLabel="Anchor"># </span>Choose $k$ by variance explained</h3></a>
+<p>How much of the variance can be explained by the choice of factors?</p>
+<p>For a given $k$, we compute the variance of the errors over the variable of each given $x_{ij}$</p>
+<p>$$\frac{\lVert ZW-X \rVert_F^2}{\lVert X \rVert_F^2}$$</p>
+<a href="#uniqueness"><h3 id="uniqueness"><span class="hanchor" ariaLabel="Anchor"># </span>Uniqueness</h3></a>
+<p>Optimal $W$ is non-unique:</p>
+<ol>
+<li>Scaling problem: Can multiply any $w_c$ by any non-zero $\alpha$</li>
+<li>Rotation problem: Can rotate any $w_c$ within the span</li>
+<li>Label switching problem: Can switch any $w_c$ with any other $w_c$</li>
+</ol>
+<p>To help with uniqueness,</p>
+<ol>
+<li>Normalization: We ensure $\lVert w_c \rVert = 1$</li>
+<li>Orthogonality: We enforce $w_c^Tw_{c&rsquo;}=0$ for all $c \neq c'$</li>
+<li>Sequential fitting, we fit each $w_i$ in sequence</li>
 </ol>
 
 
@@ -381,10 +627,50 @@ Nov 20, 2022
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/K-means/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/K-means" class="internal-link">K-means</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/change-of-basis/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/change-of-basis" class="internal-link">Change of basis</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/recommendation-system/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/recommendation-system" class="internal-link">Recommendation System</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
