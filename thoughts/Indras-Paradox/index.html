@@ -83,6 +83,11 @@ Disclaimer: This piece touches on suicidal ideation. My intention was to explore
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
 
 
+
+  
+  
+
+
     
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
@@ -122,13 +127,13 @@ Disclaimer: This piece touches on suicidal ideation. My intention was to explore
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.78e7b972a4ad3a1255f19eb9589ea6bb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c3ceeda251cc2feeb8070108989a4e6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.42675ed752c9929dd991205eb269ea98.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -178,6 +183,19 @@ Disclaimer: This piece touches on suicidal ideation. My intention was to explore
             drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
           );
 
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
         }
       
     }
@@ -298,6 +316,7 @@ Feb 19, 2022
 
 
       
+
 
 
 

@@ -82,6 +82,11 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
 
 
+
+  
+  
+
+
     
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
@@ -121,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2a21036c369ef708f34b8a6dd242b58f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.78e7b972a4ad3a1255f19eb9589ea6bb.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c3ceeda251cc2feeb8070108989a4e6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.42675ed752c9929dd991205eb269ea98.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -177,6 +182,19 @@
             drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
           );
 
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
         }
       
     }
@@ -323,6 +341,7 @@ Jul 11, 2022
 
 
 
+
   
   
   
@@ -382,31 +401,38 @@ Jul 11, 2022
   
     
   
+
   
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
     
       
       
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
+    
+
   
 
   
@@ -468,51 +494,49 @@ Jul 11, 2022
   
     
   
+
   
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
     
       
       
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-      
     
-  
-
-
-
-
-
-
-
-
-
-
+    
 
   
-  
 
-  
-  
 
-  
-  
+
+
+
+
+
+
+
+
 
 
 <p>All examples below are written in pseudocode that happens to carry a lot of syntax from Typescript. Syntax liberties are taken where intention is clear</p>
@@ -1121,7 +1145,7 @@ Jul 11, 2022
 </span></span><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">OpCRDT</span><span class="p">&lt;</span><span class="nt">State</span><span class="p">&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">has</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="kr">boolean</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="kt">any</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">val</span> <span class="o"><mark>=</span> <span class="nx">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="kt">any</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">val</span> <span class="o">===</span> <span class="nx">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
@@ -1133,7 +1157,7 @@ Jul 11, 2022
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">remove</span><span class="p">(</span><span class="nx">x</span>: <span class="kt">X</span><span class="p">)</span><span class="o">:</span> <span class="nx">Closure</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">vals_to_delete</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o"></mark>=</span> <span class="nx">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">vals_to_delete</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">values</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">val</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">===</span> <span class="nx">val</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="p">(</span><span class="nx">node</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">node</span><span class="p">.</span><span class="kr">set</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">vals_to_delete</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">		<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
@@ -1288,13 +1312,13 @@ Jul 11, 2022
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="kr">const</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[</span><span class="nx">u</span><span class="p">]</span>			
 </span></span><span class="line"><span class="cl">			<span class="k">while</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">				<span class="kr">const</span> <span class="nx">cur</span> <span class="o">=</span> <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">				<span class="k">if</span> <span class="nx">cur</span> <span class="o"><mark>=</span> <span class="nx">v</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span> <span class="nx">cur</span> <span class="o">===</span> <span class="nx">v</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">					<span class="k">return</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl">				<span class="p">}</span>
 </span></span><span class="line"><span class="cl">				
 </span></span><span class="line"><span class="cl">				<span class="kr">const</span> <span class="nx">outgoing_vertices</span> <span class="o">=</span> <span class="k">this</span>
 </span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">edges</span>
-</span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o"></mark>=</span> <span class="nx">_u</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o">===</span> <span class="nx">_u</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">					<span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">_</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">v</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">					
 </span></span><span class="line"><span class="cl">				<span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">outgoing_vertices</span><span class="p">)</span>
@@ -1306,14 +1330,14 @@ Jul 11, 2022
 </span></span><span class="line"><span class="cl">	<span class="kd">@query</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">successor</span><span class="p">(</span><span class="nx">u</span>: <span class="kt">Vertex</span><span class="p">)</span><span class="o">:</span> <span class="nx">Vertex</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="nx">lookup</span><span class="p">(</span><span class="nx">u</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o"><mark>=</span> <span class="nx">_u</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">edges</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">_u</span><span class="p">,</span> <span class="nx">_v</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">u</span> <span class="o">===</span> <span class="nx">_u</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">		<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	<span class="kd">@update</span>
 </span></span><span class="line"><span class="cl">	<span class="kd">function</span> <span class="nx">addRight</span><span class="p">(</span><span class="nx">v</span>: <span class="kt">Vertex</span><span class="p">,</span> <span class="nx">x</span>: <span class="kt">Atom</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">		<span class="c1">// ensure valid insert
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span> <span class="nx">v</span> <span class="o">!</mark></span> <span class="nx">__RIGHT</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">v_added</span><span class="p">.</span><span class="nx">sub</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">v_rmved</span><span class="p">).</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">if</span> <span class="nx">v</span> <span class="o">!==</span> <span class="nx">__RIGHT</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">v_added</span><span class="p">.</span><span class="nx">sub</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">v_rmved</span><span class="p">).</span><span class="nx">has</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">t</span> <span class="o">=</span> <span class="nx">now</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">			<span class="kr">const</span> <span class="nx">w</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">			

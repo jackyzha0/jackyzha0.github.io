@@ -6,7 +6,25 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Information Scaling Threshold</title>
+      <link>https://jzhao.xyz/thoughts/information-scaling-threshold/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/information-scaling-threshold/</guid>
+      <description>Throughout the Holocene, societies developed additional layers of administration and more information-rich instruments for managing and recording transactions and events as they grew in population and territory</description>
+    </item>
+    
+    <item>
+      <title>Prolly Trees</title>
+      <link>https://jzhao.xyz/thoughts/Prolly-Trees/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Prolly-Trees/</guid>
+      <description>Why not just B-Trees? Data structures with hysteresis have path dependency, in the case of B-trees the actual tree structure depends on the order of inserts and removes.</description>
+    </item>
+    
     <item>
       <title>50 pounds of pots</title>
       <link>https://jzhao.xyz/thoughts/50-pounds-of-pots/</link>
