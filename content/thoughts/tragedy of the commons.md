@@ -17,3 +17,16 @@ Commons in the modern economic context is any open-access and unregulated resour
 Does this impact [digital commons](thoughts/digital%20commons.md) too? What about for [climate tech](thoughts/climate%20tech.md)?
 
 Would be solved if people acted according [[thoughts/Kant]]'s Categorical Imperative (tldr; only act in a certain way if it is possible and desirable for everyone in the world to act in that way)
+
+## Without Tragedy
+Elinor Ostrom defines 7 requirements to govern a commons without tragedy:
+
+-   Clear boundaries (private)
+-   Managed by locals
+-   Community makes its own rules
+-   Community can monitor behavior
+-   Graduated sanctions for those who violate community rules
+-   Cheap, accessible means of conflict resolution
+-   Self-determination
+
+In a small community, everybody knows everybody, and can keep track of what they do. This makes small groups [[thoughts/game theory|iterated games]] which rewards trust and penalizes sociopathic behaviour

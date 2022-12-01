@@ -37,5 +37,8 @@ draft: true
 		- unix philosophy
 	- as easy to use as user interfaces
 	- This kind of accessible end-user programming on the web feels like something we've been dancing around for a decade
+- protocols vs platforms
+	- platforms enable you to do existing things more efficiently
+	- protocols enable you to do entirely new things
 - i should be able to design and program agents that can walk around the canvas and interact with the things i make and different websites like its an ecosystem to physically explore. every piece of media is a different data type that can be fed into different programs and apps that all talk to each other
 - triple stores as a universally composable data store
