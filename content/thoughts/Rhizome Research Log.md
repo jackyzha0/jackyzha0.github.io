@@ -8,6 +8,23 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## December
+### December 1st
+- Well would you look at that... it's December
+- It's been a week but the hype from [[posts/bft-json-crdt|my BFT JSON CRDT project]] has finally started to cool
+	- Over 10k people viewed the blog post for meaningful length of time and HN was surprisingly nice about it :'))
+	- A bunch of people reached out asking to chat more about CRDTs (some even asked if I was open to contracting!) Super cool to find more people working in this space and who are as equally excited about it as I am
+	- Most importantly, Kleppmann reached out! I had messaged him to schedule a call at some point but we never found the time. But he saw (and even retweeted!) my blog post and really thought it was solid work. 
+		- He asked if I would be interested in doing a PhD with him at Munich University. Unfortunately, visa problems combined with the requirement that I get a Masters first mean that I probably won't be taking him up on this offer.
+		- However, we *are* still going to be formally collaborating on some papers regardless which I am still kind of in shock over. This felt so full circle for me! I quite literally started this summer with *zero* distributed systems knowledge and now I get the chance to collaborate with one of the people on the bleeding edge of distributed systems knowledge and research. Bonkers!!
+- Today, I spent a lot of time thinking about the technical architecture of Rhizome now that I have the experience of the project behind me. Updated some diagrams in [[thoughts/Rhizome Proposal]] but TLDR;
+	- EAV tuple store not append-only log
+	- [[thoughts/UCAN]] good
+	- [[thoughts/CRDT|CRDTs]] instead of Raft for most things, [[thoughts/CALM Theorem]] may be useful to figure out when coordination is necessary
+- Open questions
+	- How will we mark state as requiring coordination?
+	- How do we efficiently reconcile big tuple stores?
+
 ## November
 ### November 18th
 - I know I've been neglecting this research log a little bit...

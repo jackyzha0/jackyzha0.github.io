@@ -45,22 +45,23 @@ As a whole, it forms the basis for a new model of the internet where first and f
 *This is a summarized version of the full vision of Rhizome. Read the full essay on [[posts/towards-data-neutrality|data neutrality]].*
 
 ## Technical Details
-Rhizome is a set of abstractions on top of DIDs, IPFS (specifically [IPLD](https://ipld.io/)), [[thoughts/Filecoin|Filecoin]], and the [[thoughts/Raft Consensus Algorithm|Raft consensus protocol]]. It can be analogized to a generalized implementation of [[thoughts/state channels|state channels]] which don't need to be anchored to a chain.
+Rhizome is a set of abstractions on top of [[thoughts/DID|DIDs]], [[thoughts/UCAN|UCANs]], [[posts/bft-json-crdt|BFT CRDTs]], and a [[thoughts/RDF|tuple store]]. It is a local-first data replication and synchronization service much like iCloud/Dropbox.
 
-- Root is a local-first data replication and synchronization service much like iCloud/Dropbox. Root will be implemented as a DID method which uses IPFS as a VDR. The pinned state snapshot is the DID Document.
-- All application data is stored in the form of an append-only event log for each app they interact with. This log is compacted and stored as a state snapshot on IPFS that is pinned by an IPFS node running on each device.
+- All application data is stored in the form of an EAV Tuple store. This is fully replicated between devices.
 	- Data availability is achieved with an always-available *cloud peer*, a companion add-on to the sometimes-available personal devices we have. A cloud peer is not a hosting provider, it is rather a different type of a personal device. It does not have a screen, but it is capable in a different way, it complements our personal devices with its high availability, storage, and compute.
 	- A public marketplace where people can buy and sell compute/storage. Reliability of service is ensured using a modified version of [[thoughts/Filecoin|FileCoin]]'s [Proof of Replication](https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/)and providers can advertise storage/compute specification so purchasers can choose whether to optimize for space or performance.
-- Users can then 'bind' streams belonging to the same application together temporarily to collaborate live like in Google Docs
-- All apps are deterministic state transition functions (functions that transform the state from $x$ at some time $t$ to state $y$ at some time $t+1$). These state transition functions are run over the event log to arrive at some application state.
-- All of this will be exposed in the form a single replicated data structure (similar to Firestore or yjs) so that developers can easily build collaborative apps without needing to relearn everything from scratch
+- Users can collaborate with others by creating a [[thoughts/UCAN]] which gives another user permission to read/write a portion of their data
+	- For example, if I were to share a photo album with a friend, I might create a UCAN that allows read/write access to any tuple that matches the following: `is-photo: true && photo-album: garibaldi-camping-trip`
+	- This allows live collaboration both in asynchronous and synchronous modes (more notes on this in [[thoughts/collaborative software]])
+- All of this will be exposed in the form an SDK in general programming languages like JavaScript, Python, and Rust so that developers can easily build collaborative and interoperable apps without needing to relearn everything from scratch
 
-When Root and Trunk are combined, its properties handily solve or avert the three problems listed above:
+Rhizome's properties handily solve or avert the three problems listed above:
 1. Data replication is considered solved as devices under a single DID sync with each other. Data availability is solved with a cloud peer which can be bought from a distributed and decentralized network of providers.
 2. Users no longer need to run their own server infrastructure as compute happens natively on a users device rather than on some remote sever. When a user needs more compute, they can utilize a cloud peer which is like renting compute from a neutral provider.
-3. As all apps have a public schema which describe what type of events it adds to the append-only event log, interoperability and data lensing is zero-cost to developers. To interoperate with outside apps, anyone can publish a schema file for the output of a data export of API call for example.
+3. As all apps have a public schema which describe what types of tuple attributes they use (e.g. `friend` and `chat-message` attributes for a social media application). To interoperate with outside apps, anyone can publish a schema file for the output of a data export of API call for example.
 
-![[thoughts/images/rhizome-may-6.jpeg]]*Rough architecture diagram as of June 1st*
+![[thoughts/images/rhizome-dec-6.jpg]]
+*Rough architecture diagram as of Dec 1st*
 
 ### Differentiation from existing work
 - [Urbit](https://urbit.org/)
@@ -88,27 +89,11 @@ When Root and Trunk are combined, its properties handily solve or avert the thre
 Blog posts explaining distributed systems concepts as I learn and become more familiar with them
 
 - [[thoughts/Raft Consensus Algorithm|Explainer on the Raft Consensus Algorithm]]
-- Explainer on CRDTs
+- Explainer on [[posts/bft-json-crdt|BFT CRDTs]]
 - Modelling distributed systems
 	- [<1kloc Raft Implementation](https://github.com/jackyzha0/miniraft)
 - [[posts/digital-identity|From legibility to identity]]
 - ...more to come
-
-### Root
-The data replication and identity part of Rhizome
-
-- Build a modified version of the Raft consensus algorithm that supports no-downtime cluster membership changes. This will be the 'backbone' that allows devices under an identity to replicate application state amongst each other, even in the case of network partitions and device failure.
-- Build in the ability for a Raft cluster to snapshot state to disk and to a more permanent layer like IPFS
-- Build an abstraction layer on top of IPFS, Filecoin for the persistence and incentive layer
-
-### Trunk
-The application-level event log management and collaboration
-
-- Develop a mechanism to optimize event log snapshot frequency to prevent event log from getting too long
-- Prototype and test event log reducers that take in $n \geq 1$ event streams and combine them to arrive at a consistent state
-- Build an algorithm to 'bind' event logs at different 'streams' of asynchronicity, supporting completely synchronous collaboration and asynchronous pull-request-style collaboration
-- Create client libraries to abstract logic into a single replicated data structure (similar to Firestore) for easy consumption by application developers
-	- Target environments: Web, Node.js, Rust
 
 ---
 

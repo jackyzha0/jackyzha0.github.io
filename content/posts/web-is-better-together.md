@@ -42,3 +42,6 @@ draft: true
 	- protocols enable you to do entirely new things
 - i should be able to design and program agents that can walk around the canvas and interact with the things i make and different websites like its an ecosystem to physically explore. every piece of media is a different data type that can be fed into different programs and apps that all talk to each other
 - triple stores as a universally composable data store
+-   mixed used development for internet
+    -   tokyo run shops out of your basement but internet
+-   cursors as embodiment of attention
