@@ -11,4 +11,4 @@ As AI systems become more influential in their power and incorporated into more 
 
 For now though, the current advances in deep learning mean that most representations of the neural network state have a distributed [representation](thoughts/representation.md) of content, meaning that there is no 'single-neuron' for certain decisions as semantic symbols do not arise here.
 
-Semantic meaning only arises in neural networks because we inject them or through inductive proding (e.g. LIME for explainability)
+Semantic meaning only arises in [[thoughts/neural networks|neural networks]] because we inject them or through inductive proding (e.g. LIME for explainability)

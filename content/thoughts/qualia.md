@@ -18,7 +18,7 @@ Traditionally have second-order properties
 ## Vibes
 [Source: Nameless Feeling in *Real Life Mag*](https://reallifemag.com/nameless-feeling/)
 
-Neural networks just assess vibes, they are the literal technical implementation of "no thoughts, just vibes".
+[[thoughts/neural networks|Neural networks]] just assess vibes, they are the literal technical implementation of "no thoughts, just vibes".
 
 Vibes are very similar to the approximations [machine learning systems](thoughts/machine%20learning.md) use. Both suffer from [Goodhart's Law](thoughts/Goodhart's%20Law.md)
 

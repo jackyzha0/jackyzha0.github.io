@@ -1,12 +1,11 @@
 ---
-title: "Linear Classification"
+title: "Binary Classification"
 date: 2022-10-28
 tags:
 - seed
 - CPSC340
 ---
 
-## Binary Classification
 - Set $y_i = +1$ for one class (“important”)
 - Set $y_i = -1$ for the other class (“not important”)
 - To predict, we look at whether $w^Tx_i$ is closer to +1 or -1

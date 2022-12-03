@@ -14,7 +14,7 @@ Historically, development of AI has taken a very specific approach &mdash; syste
 
 This worked well up until around 1984 when the field entered an 'AI Winter', a long plateau in progress that was most likely due cynicism in the AI research community that trickled to media and [funding](thoughts/funding.md) bodies, halting research and development[^2].
 
-However, with the rise of Moore's Law and the insane amount of compute and data available, a new approach to the development of AI arose &mdash; one that focused on statistical methods and connectionist networks like artificial neural networks[^2]. Haugeland[^1] dubbed this approach to AI design New Fangled AI (NFAI).
+However, with the rise of Moore's Law and the insane amount of compute and data available, a new approach to the development of AI arose &mdash; one that focused on statistical methods and connectionist networks like artificial [[thoughts/neural networks|neural networks]][^2]. Haugeland[^1] dubbed this approach to AI design New Fangled AI (NFAI).
 
 This paper will examine factors that differentiate GOFAI and NFAI systems, such as their ability to adapt to changes in input, and the explainability of their outputs and internal representations. It will also examine current work in integrating the two approaches to Artificial Intelligence to create an artificial general intelligence.
 
@@ -28,7 +28,7 @@ However, just being able to solve a problem shouldn't be sufficient for intellig
 ### NFAI Systems
 NFAI, on the other hand, is a diverse and still rapidly evolving set of systems and algorithms. It is more of a grab-bag term, roughly meaning any sort of scientific mind design that is not GOFAI[^1]. Under this umbrella are connectionist networks, which are networks composed of lots of simple units that are interconnected with various strengths. This paper will mostly focus on connectionism as a synecdoche for the greater umbrella of NFAI.
 
-Some classic examples of connectionist networks include convolutional neural networks (CNNs), which are a form of image classifiers[^4]. These networks operate by applying filters or kernels to an input between layers of the network. Each of those filters have their own set of strengths that will learn and evolve over time to identify certain 'features' from the input. Similar to cell assemblies in animal perceptual systems, these filters assemble more complex patterns using smaller and simpler patterns[^5].
+Some classic examples of connectionist networks include convolutional [[thoughts/neural networks|neural networks]] (CNNs), which are a form of image classifiers[^4]. These networks operate by applying filters or kernels to an input between layers of the network. Each of those filters have their own set of strengths that will learn and evolve over time to identify certain 'features' from the input. Similar to cell assemblies in animal perceptual systems, these filters assemble more complex patterns using smaller and simpler patterns[^5].
 
 These connectionist networks are very inspired by the structure of the brain, with its hierarchical patterns and compositional nature[^6], rather than the rational manipulation of symbols that is observed in GOFAI.
 
@@ -84,7 +84,7 @@ AI is already capable of learning, adaptation, and basic Being-in-the-world. Thu
 [^2]: Hendler, J. (2008). *Avoiding another AI winter.* IEEE Intelligent Systems, (2), pp. 2-4.
 [^3]: Jackson, Peter (1998). *Introduction To Expert Systems* (3 ed.). Addison Wesley. p. 2. ISBN 978-0-201-87686-4.
 [^4]: Buckner, C. (2019). *Deep learning: A philosophical introduction.* Philosophy Compass, 14(10), e12625.
-[^5]: Zhang, Q., Nian Wu, Y., & Zhu, S. C. (2018). *Interpretable convolutional neural networks.* In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 8827-8836).
+[^5]: Zhang, Q., Nian Wu, Y., & Zhu, S. C. (2018). *Interpretable convolutional [[thoughts/neural networks|neural networks]].* In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 8827-8836).
 [^6]: Churchland, P. (1990). *Thinking: An invitation to cognitive science.* Vol. 3., pp. 199-228.
 [^7]: Goodfellow, I., Shlens, J., & Szegedy, C. (2014) *Explaining and harnessing adversarial examples.* ArXiv Preprint ArXiv: 1412.6572.
 [^8]: Crane, Tim. (2003). *The Mechanical Mind.* doi:10.4324/9780203426319. 

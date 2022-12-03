@@ -11,4 +11,4 @@ Can we use [[thoughts/language|language]] as the method of querying memory?
 - proposes thinking occurs in a mental language, this is called mentalese
     -   computations in a classical way
     -   classical computational architecture distinguishes between data-structures and rules/programs which operate on said structures
--  neural networks or [connectionist networks](thoughts/connectionist%20networks.md) challenges any argument for mentalese (as they don't fall under the GOFAI/classical computation category)
+-  [[thoughts/neural networks|neural networks]] or [connectionist networks](thoughts/connectionist%20networks.md) challenges any argument for mentalese (as they don't fall under the GOFAI/classical computation category)

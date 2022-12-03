@@ -20,7 +20,7 @@ Some distinctions:
 1. [[thoughts/zero sum|Zero-sum]] vs non-zero sum games (e.g. [[thoughts/positive sum]])
 	- In a zero sum game, the payoffs always sum to 0
 2. Simultaneous vs [[thoughts/sequential games]]
-	- In simultaneous games, all players choose independent at the same time
+	- In simultaneous games, all players choose independently at the same time without knowing what other players will do
 3. Perfect information vs imperfect information games
 4. Symmetric vs non-symmetric games
 	-  In symmetric games, all actors have the same set of actions to choose from

@@ -33,6 +33,7 @@ How do you "look" at features and high-dimensional examples?
 	- Correlation
 	- Jaccard coefficient: set distance, intersection over union
 	- Edit distance: for strings, how many characters do I need to change to go from one to the other
+	- [[thoughts/latent-factor model|Distance in latent space]]
 3. Visualizations
 	- Basic line plots
 	- Matrix plot: visualize two features as an image

@@ -16,6 +16,8 @@ The most common choice is to use the sigmoid function:
 $$h(z_i) = \frac{1}{1+\exp(-z_i)}$$
 
 ## Multi-class Probabilities
+See also: [[thoughts/multi-class classification]]
+
 The softmax function allows us to map $k$ real numbers $z_i = w_c^Tx_i$ to probabilities
 
 $$P(y | z_1, z_2, \dots, z_k) = \frac{\exp(z_y)}{\sum_{c=1}^k \exp(z_c))}$$

@@ -10,7 +10,7 @@ Related: [[thoughts/Social Contract Theory#Social Choice|social choice]]
 Assume there is more than one individual, and there are at least three distinct social states. Then there is no SWF that meets the following four conditions:
 
 1. Non-dictatorial: no individual is decisive
-2. Ordering: The SWF must produce social preference orderings that satisfy the basic [[thoughts/probability|probability axioms]]
+2. Ordering: must produce social preference orderings must be complete, asymmetric and transitive (see also: [[thoughts/utility#Interval Scales]])
 3. [[thoughts/Pareto optimality|Pareto condition]]: If every voter prefers alternative X over alternative Y, then the group prefers X over Y.
 4. Independence of Irrelevant Alternatives (IIA): If every voter's preference between X and Y remains unchanged, then the group's preference between X and Y will also remain unchanged
 

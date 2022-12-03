@@ -248,7 +248,7 @@ Next up, we have the Embedding layer. We could get into a really technical discu
 
 ![credit: Rutger Ruizendaal, 2017](https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD)*credit: Rutger Ruizendaal, 2017*
 
-Essentially, it embeds tokens in a higher dimension vector space, where distance between tokens represents its similarity.
+Essentially, it embeds tokens in a [[thoughts/latent-factor model|higher dimension vector space]], where distance between tokens represents its similarity.
 
 ```python
 layer = LSTM(64, return_sequences = True)(layer)

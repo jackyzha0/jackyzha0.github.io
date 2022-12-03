@@ -6,6 +6,7 @@ tags:
 - CPSC340
 aliases:
 - PCA
+- embeddings
 ---
 
 Like [[thoughts/change of basis]] but instead of hand-picking the features, we learn them from data.
@@ -34,9 +35,9 @@ Use cases:
 We minimize
 
 $$\begin{flalign}
-f(W,Z)&= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\
-&= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 \\
-&= \lVert ZW - X \rVert_F^2
+f(W,Z)&= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 & \textrm{Approximating } x_{ij} \textrm{ by } \langle w^j, z_i \rangle \\
+&= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 & \textrm{Approximating } x_i \textrm{ by } W^Tz_i\\
+&= \lVert ZW - X \rVert_F^2 & \textrm{Approximating } X \textrm{ by } ZW
 \end{flalign}$$
 
 If we do alternating minimization,
@@ -63,3 +64,34 @@ To help with uniqueness,
 1. Normalization: We ensure $\lVert w_c \rVert = 1$
 2. Orthogonality: We enforce $w_c^Tw_{c'}=0$ for all $c \neq c'$
 3. Sequential fitting, we fit each $w_i$ in sequence
+
+## Multi-Dimensional Scaling
+Gradient descent on points on a scatter point; try to make scatterplot distances match high-dimensional distances
+
+$$f(Z) = \sum_{i=1}^n\sum_{j=i+1}^n (\lVert z_i - z_j \rVert - \lVert x_i - x_j \rVert)^2$$
+
+No $W$ matrix needed! However, cannot be done using singular value decomposition (a matrix factoring technique). We need [[thoughts/gradient descent]].
+
+- Non convex
+- Sensitive to initialization
+- Unfortunately, MDS often does not work well in practice; MDS tends to “crowd/squash” all the data points together like PCA.
+
+## t-SNE
+> t-Distributed Stochastic Neighbour Embedding
+
+However, using Euclidean (L2-norm) may not be a great representation of data that lives on low-dimensional manifolds. In these cases, Euclidean distances make sense “locally” but Euclidean distances may not make sense “globally”.
+
+![[thoughts/images/manifold distance example.png]]
+
+t-SNE is actually a special case of [[#Multi-Dimensional Scaling]]. The key idea is to focus on distance to “neighbours”, allowing gaps between distances to grow
+
+## Word2Vec
+Each word $i$ is represented by a vector of real numbers $z_i$
+
+Trained using a masking technique.
+- Takes sentence fragments and hides/masks a middle word
+- Train so that $z_i$ of hidden word is similar to $z_i$ of surrounding words
+
+$$p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{\# words} \exp(z_c^Tz_j)}$$
+
+Gradient descent on for $-\log(p(z_i))$

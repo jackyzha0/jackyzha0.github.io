@@ -46,7 +46,7 @@ tags:
 - better search
 	- searching through vectors
 		- (no clue if this would work) integral images but applied to vector similarity search in text documents
-		- viola-jones for text embeddings
+		- viola-jones for text [[thoughts/latent-factor model|embeddings]]
 		- https://github.com/facebookresearch/faiss
 	- how do we encode sentences/paragraphs/documents as vectors?
 		- https://beta.openai.com/docs/guides/embeddings/text-search-using-embeddings

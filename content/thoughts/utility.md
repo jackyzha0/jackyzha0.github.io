@@ -15,6 +15,11 @@ How can we assign utilities to represent preferences?
 - Transformation is linear
 - Called an ordinal transformation
 
+Ordinal Scales must satisfy the following properties:
+1. Completeness: $x \succ y$ or $x \sim y$ or $y \succ x$
+2. Asymmetry: if $x \succ y$ then it is false that $y \succ x$
+3. Transitivity: if $x \succ y$ and $y \succ z$ then $x \succ z$
+
 ## Infinite Utility
 An agent values A infinitely relative to B and C if we deny Continuity: $[\lambda A, (1-\lambda)C] \succ B$ for any $\lambda > 0$
 
