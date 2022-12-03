@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="See also: [[thoughts/convolutional neural networks]]
+Motivation and Theory Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use."
+  />
+  <title>
+    Neural networks
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+
+
+
+  
+  
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.9b72b70bd35617d0635e9d15463662b2.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED =  true 
+    const PRODUCTION =  true 
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true ,
+         true 
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Neural networks</h1>
+      <p class="meta">
+        Last updated 
+Dec 3, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/neural%20networks.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/CPSC430/">CPSC430</a></li>
+    
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>See also: <a href="/thoughts/convolutional-neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/convolutional-neural-networks">convolutional neural networks</a></p>
+<a href="#motivation-and-theory"><h2 id="motivation-and-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Motivation and Theory</h2></a>
+<p>Many domains require non-linear transforms of the features (see: <a href="/thoughts/change-of-basis" rel="noopener" class="internal-link" data-src="/thoughts/change-of-basis">change of basis</a>). Usually not obvious which transform to use.</p>
+<p><strong>Neural network models try to learn good transformations</strong>. Whereas <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">latent-factor model</a>s train the embedding and model separately, neural networks learn both features and the model at the same time.</p>
+<p>Let $k$ be the number of hidden units. Generally, $\hat y_i = v^Th(Wx_i)$ (or, with bias, $\hat y_i = \sum_{c=1}^k v_ch(w_c^Tx_i + \beta_c) + \beta$)</p>
+<p><img src="/thoughts/images/single-layer-ann-diagram.jpg" width="500" /></p>
+<p>Artificial neural network:</p>
+<ul>
+<li>$x_i$ is measurement of the world</li>
+<li>$z_i$ is internal representation of world
+<ul>
+<li>Each $h(z_i)$ can be viewed as binary feature: do we care about it or not?</li>
+<li>Use sigmoid as a smooth approximation</li>
+</ul>
+</li>
+<li>$y_i$ is output of neuron for classification/regression</li>
+</ul>
+<p>Parameters: the (k,d) matrix $W$, and (k) vector $v$. To turn this into <a href="/thoughts/multi-class-classification" rel="noopener" class="internal-link" data-src="/thoughts/multi-class-classification">multi-class classification</a>, we modify $v$ into a (k&rsquo;, k) matrix (where k&rsquo; is the number of classes) and convert to probabilities by computing the softmax of the $\hat y_c$ values</p>
+<p>Losses:</p>
+<ul>
+<li><a href="/thoughts/binary-classification" rel="noopener" class="internal-link" data-src="/thoughts/binary-classification">Binary Classification</a>: $f(W,v) = \sum_{i=1}^n \log(1+\exp(-y_iv^Th(Wx_i)))$</li>
+<li><a href="/thoughts/linear-regression" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">Regression</a>: $f(W,v) = \frac{1}{2} \sum_{i=1}^n (v^Th(Wx_i)-y_i)^2$</li>
+</ul>
+<a href="#training"><h3 id="training"><span class="hanchor" ariaLabel="Anchor"># </span>Training</h3></a>
+<p>Generally non-convex as W and v are both variables. As such, finding the global optimum is NP-Hard. We can use <a href="/thoughts/gradient-descent#stochastic-gradient-descent-sgd" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a> but this is not guaranteed to reach a global optimum due to non-convexity.</p>
+<a href="#implicit-regularization"><h3 id="implicit-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>Implicit Regularization</h3></a>
+<a href="#deep-learning-a-philosophical-introduction"><h2 id="deep-learning-a-philosophical-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning: a philosophical introduction</h2></a>
+<ul>
+<li>no universally accepted explanation as to why they work so well, just really a form of 
+
+
+
+
+
+<a
+  href="/thoughts/object-classification/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/object-classification/">classification</a></li>
+<li>&ldquo;golden age network&rdquo;
+<ul>
+<li>3 properties
+<ol>
+<li>shallow → no more than three or four layers between input and output</li>
+<li>uniform → only one type of node deploying a sigmoidal activation</li>
+<li>fully connected → each node from a lower layer connected to each other in the next layer</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>depth
+<ul>
+<li>analogy of assembly line mass production of automobiles
+<ul>
+<li>one person is skeptical of the significance of assembly lines → &ldquo;any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists&rdquo;</li>
+<li>other person believes that the assembly line is more efficient, specialized, and reusable
+<ul>
+<li>each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently</li>
+<li>standardization of units across automobiles</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sum-product network example
+<ul>
+<li>simple device for computing polynomial functions</li>
+<li>shallow networks → must compute the expanded expressions of that function (skilled but inefficient machinists)</li>
+<li>deep networks → can compute the factorized expression of the polynomial function
+<ul>
+<li>show that they can compose simple operations</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>heterogeneity
+<ul>
+<li>different types of operations composed together</li>
+<li>dccns → conv layer followed by relu followed by max pooling
+<ul>
+<li>good at detecting features in a variety of different locations/poses</li>
+</ul>
+</li>
+<li>combining all three operations means we can product a simplified, transformed representation of the source image
+<ul>
+<li>can get more complex/abstract as you move deeper through the layers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sparse connectivity
+<ul>
+<li>heuristic → only local pixels matter</li>
+<li>dramatically reduces number of learned parameters</li>
+</ul>
+</li>
+<li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a>
+<ul>
+<li>input preturbations
+<ul>
+<li>rotations/scaling/transformations</li>
+<li>noise</li>
+</ul>
+</li>
+<li>dropout</li>
+<li>L1 regularization → favours simpler/sparser solutions by causing weights to fall to 0 if a large gradient is not maintained</li>
+</ul>
+</li>
+</ul>
+<a href="#so-why-are-they-so-effective"><h3 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h3></a>
+<ul>
+<li>hierarchical feature composition</li>
+<li>vector space separation
+<ul>
+<li>input can be realized as a feature space</li>
+<li>output can be realized as manifolds or regions in the feature space</li>
+<li>training is just then learning the manifolds/regions that create desired categories</li>
+</ul>
+</li>
+<li>most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so -&gt; question of 
+
+
+
+
+
+<a
+  href="/thoughts/intelligence/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/intelligence/">intelligence</a></li>
+<li>self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
+<ul>
+<li>counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)</li>
+</ul>
+</li>
+</ul>
+<h3 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
+
+
+
+
+
+<a
+  href="/thoughts/intelligence/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/intelligence/">Intelligence</a></h3>
+<p>
+
+
+
+
+
+<a
+  href="/thoughts/potemkin-village/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/potemkin-village/">Potemkin village</a> analogy for approximating intelligence.</p>
+<a href="#brain-like-networks"><h3 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h3></a>
+<ul>
+<li>biological similarities
+<ul>
+<li>CNNs have high sensitivity to spots, edges, and bars in specific orientations</li>
+<li>echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex</li>
+</ul>
+</li>
+<li>can record a single neuron but very difficult to record patterns</li>
+<li>functional vector → vector that corresponds to one of the output classes</li>
+<li>speech example, network managed to recover phonetic hierarchical information</li>
+<li>both systems have created a system of internal representations that corresponds to important distinctions and structures in the outside world</li>
+<li>theories → representations that allow networks to &ldquo;make sense&rdquo; of their corpus and respond in a fashion that reduces error</li>
+<li>how do we explain &lsquo;conceptual change&rsquo;?
+<ul>
+<li>knowing a creature&rsquo;s vector-space partitions may suffice for short-term prediction of behaviour but inadequate to predict or explain the evolution of those partitions over the course of time</li>
+<li>just knowing output space partitions is not enough, but connection weights seems to provide a level that meets all of these conditions</li>
+</ul>
+</li>
+<li>neural networks have decently high <a href="/thoughts/fault-tolerance" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">fault tolerance</a> (some redundant neurons)
+<ul>
+<li>may help to explain functional persistence of brains in the face of minor damage</li>
+<li>in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade</li>
+</ul>
+</li>
+</ul>
+<a href="#differences"><h3 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h3></a>
+<ul>
+<li>real neural networks arent fully connected like ANNs</li>
+<li>real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs</li>
+<li>real brains don&rsquo;t use backprop via generalized delta rule
+<ul>
+<li>back prop requires
+<ol>
+<li>computing partial derivates to minimize error</li>
+<li>propagating deltas through the network back to relevant connections</li>
+</ol>
+</li>
+<li>little empirical evidence for this in biological brains</li>
+</ul>
+</li>
+<li>real brains show a progressive reduct in reaction time as one learns
+<ul>
+<li>not seen in ANNs where error decreases but prediction time remains constant</li>
+</ul>
+</li>
+<li>ANNs require a &lsquo;global truth&rsquo; or teacher
+<ul>
+<li>these &lsquo;perfect&rsquo; signals are not present in the real world</li>
+</ul>
+</li>
+<li>Hebbian learning
+<ul>
+<li>those who &lsquo;vote with winners, become winners&rsquo;</li>
+<li>can be used to produce learning in ANNs but not nearly as effective as backprop</li>
+</ul>
+</li>
+</ul>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/posts/ai-systems/" data-ctx="neural networks" data-src="/posts/ai-systems" class="internal-link">Machines and Intelligence</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Neural-Correlates-of-Consciousness-NCC/" data-ctx="neural networks" data-src="/thoughts/Neural-Correlates-of-Consciousness-NCC" class="internal-link">Neural Correlates of Consciousness (NCC)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/explainability/" data-ctx="neural networks" data-src="/thoughts/explainability" class="internal-link">Explainability</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/language-of-thought/" data-ctx="neural networks" data-src="/thoughts/language-of-thought" class="internal-link">Language of Thought</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="thoughts/neural networks" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/qualia/" data-ctx="Neural networks" data-src="/thoughts/qualia" class="internal-link">Qualia</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/software-principles/" data-ctx="neural networks" data-src="/thoughts/software-principles" class="internal-link">Software Principles</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

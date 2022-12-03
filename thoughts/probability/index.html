@@ -126,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -705,16 +705,6 @@ $P(B | A) = \frac 3 {13}$ means:</p>
     
       
       
-      
-    
-      
-      
-      <li>
-        <a href="/thoughts/Arrows-Impossibility-Theorem/" data-ctx="probability axioms" data-src="/thoughts/Arrows-Impossibility-Theorem" class="internal-link">Arrow&#39;s Impossibility Theorem</a>
-      </li>
-      
-      
-      
       <li>
         <a href="/thoughts/Dutch-Book/" data-ctx="probability" data-src="/thoughts/Dutch-Book" class="internal-link">Dutch Book</a>
       </li>
@@ -728,7 +718,7 @@ $P(B | A) = \frac 3 {13}$ means:</p>
       
       
       <li>
-        <a href="/thoughts/Social-Contract-Theory/" data-ctx="a Klmogorov Axiom" data-src="/thoughts/Social-Contract-Theory" class="internal-link">Social Contract Theory</a>
+        <a href="/thoughts/Social-Choice-Problem/" data-ctx="a Klmogorov Axiom" data-src="/thoughts/Social-Choice-Problem" class="internal-link">Social Choice Problem</a>
       </li>
       
       

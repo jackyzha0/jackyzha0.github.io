@@ -126,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -327,6 +327,117 @@ Nov 2, 2020
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -352,7 +463,7 @@ Nov 2, 2020
   href="/thoughts/funding/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/funding/">funding</a> bodies, halting research and development<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<p>However, with the rise of Moore&rsquo;s Law and the insane amount of compute and data available, a new approach to the development of AI arose — one that focused on statistical methods and connectionist networks like artificial neural networks<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Haugeland<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> dubbed this approach to AI design New Fangled AI (NFAI).</p>
+<p>However, with the rise of Moore&rsquo;s Law and the insane amount of compute and data available, a new approach to the development of AI arose — one that focused on statistical methods and connectionist networks like artificial <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Haugeland<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> dubbed this approach to AI design New Fangled AI (NFAI).</p>
 <p>This paper will examine factors that differentiate GOFAI and NFAI systems, such as their ability to adapt to changes in input, and the explainability of their outputs and internal representations. It will also examine current work in integrating the two approaches to Artificial Intelligence to create an artificial general intelligence.</p>
 <a href="#gofai-systems"><h3 id="gofai-systems"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI Systems</h3></a>
 <p>Since the inception of the term GOFAI, the basic idea has remained unchanged: thinking as internal symbol manipulation. Within these GOFAI systems, symbols are representative of aspects of our world. These symbols are manipulated in a systematic and logical matter, performing a series of deterministic steps that results in another sequence of symbols<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
@@ -360,7 +471,7 @@ Nov 2, 2020
 <p>However, just being able to solve a problem shouldn&rsquo;t be sufficient for intelligence. So what qualifies it? At its core, GOFAI can be considered &lsquo;artificially intelligent&rsquo; because of semantic interpretation. If the symbols represent aspects of our world, the result, which is also a symbol sequence, can be <em>translated</em> back into aspects of our world. This is called semantic interpretation, which &ldquo;seeks to construe a body of symbols so that what they mean (&lsquo;say&rsquo;) turns out to be consistently reasonable and sensible, given the situation&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <a href="#nfai-systems"><h3 id="nfai-systems"><span class="hanchor" ariaLabel="Anchor"># </span>NFAI Systems</h3></a>
 <p>NFAI, on the other hand, is a diverse and still rapidly evolving set of systems and algorithms. It is more of a grab-bag term, roughly meaning any sort of scientific mind design that is not GOFAI<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Under this umbrella are connectionist networks, which are networks composed of lots of simple units that are interconnected with various strengths. This paper will mostly focus on connectionism as a synecdoche for the greater umbrella of NFAI.</p>
-<p>Some classic examples of connectionist networks include convolutional neural networks (CNNs), which are a form of image classifiers<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. These networks operate by applying filters or kernels to an input between layers of the network. Each of those filters have their own set of strengths that will learn and evolve over time to identify certain &lsquo;features&rsquo; from the input. Similar to cell assemblies in animal perceptual systems, these filters assemble more complex patterns using smaller and simpler patterns<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Some classic examples of connectionist networks include convolutional <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a> (CNNs), which are a form of image classifiers<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. These networks operate by applying filters or kernels to an input between layers of the network. Each of those filters have their own set of strengths that will learn and evolve over time to identify certain &lsquo;features&rsquo; from the input. Similar to cell assemblies in animal perceptual systems, these filters assemble more complex patterns using smaller and simpler patterns<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <p>These connectionist networks are very inspired by the structure of the brain, with its hierarchical patterns and compositional nature<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, rather than the rational manipulation of symbols that is observed in GOFAI.</p>
 <a href="#the-potemkin-village-analogy"><h2 id="the-potemkin-village-analogy"><span class="hanchor" ariaLabel="Anchor"># </span>The Potemkin Village Analogy</h2></a>
 <p>While it is obvious that GOFAI and NFAI are very different approaches to constructing AI systems, how do they differ in their resilience to failure? An analogy that may be useful in visualizing this is a 
@@ -487,7 +598,7 @@ the Heideggerian concept of Dasein, which literally means &lsquo;Being-there&rsq
 <p>Buckner, C. (2019). <em>Deep learning: A philosophical introduction.</em> Philosophy Compass, 14(10), e12625.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
-<p>Zhang, Q., Nian Wu, Y., &amp; Zhu, S. C. (2018). <em>Interpretable convolutional neural networks.</em> In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 8827-8836).&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Zhang, Q., Nian Wu, Y., &amp; Zhu, S. C. (2018). <em>Interpretable convolutional <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a>.</em> In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 8827-8836).&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:6" role="doc-endnote">
 <p>Churchland, P. (1990). <em>Thinking: An invitation to cognitive science.</em> Vol. 3., pp. 199-228.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>

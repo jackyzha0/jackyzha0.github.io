@@ -7,6 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Neural networks</title>
+      <link>https://jzhao.xyz/thoughts/neural-networks/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/neural-networks/</guid>
+      <description>See also: [[thoughts/convolutional neural networks]]
+Motivation and Theory Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use.</description>
+    </item>
+    
+    <item>
+      <title>Social Choice Problem</title>
+      <link>https://jzhao.xyz/thoughts/Social-Choice-Problem/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Social-Choice-Problem/</guid>
+      <description>How to aggregate many individual preference orderings into a single group or social preference ordering; or, How to have rational individuals make rational choices as a group  We can define a Social welfare function (SWF) combining individual preference orderings (over social states) into a social preference ordering (over those same states).</description>
+    </item>
+    
+    <item>
       <title>Information Scaling Threshold</title>
       <link>https://jzhao.xyz/thoughts/information-scaling-threshold/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
@@ -192,6 +211,15 @@ If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter,
     </item>
     
     <item>
+      <title>Binary Classification</title>
+      <link>https://jzhao.xyz/thoughts/binary-classification/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/binary-classification/</guid>
+      <description>Set $y_i = +1$ for one class (“important”) Set $y_i = -1$ for the other class (“not important”) To predict, we look at whether $w^Tx_i$ is closer to +1 or -1  $\hat y_i = \textrm{sign} (w^Tx_i)$    Least squares error may overpenalize.</description>
+    </item>
+    
+    <item>
       <title>Causal decision theory</title>
       <link>https://jzhao.xyz/thoughts/causal-decision-theory/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
@@ -199,15 +227,6 @@ If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter,
       <guid>https://jzhao.xyz/thoughts/causal-decision-theory/</guid>
       <description>See also: [[thoughts/Decision theory|evidential decision theory]]
 Choose the act that is most effective in bringing about the best result. Use [[thoughts/causality|causal]] conditional probabilities instead of evidential probabilities to compute expected utility.</description>
-    </item>
-    
-    <item>
-      <title>Linear Classification</title>
-      <link>https://jzhao.xyz/thoughts/linear-classification/</link>
-      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/linear-classification/</guid>
-      <description>Binary Classification  Set $y_i = +1$ for one class (“important”) Set $y_i = -1$ for the other class (“not important”) To predict, we look at whether $w^Tx_i$ is closer to +1 or -1  $\hat y_i = \textrm{sign} (w^Tx_i)$    Least squares error may overpenalize.</description>
     </item>
     
     <item>
@@ -2236,7 +2255,7 @@ Freudenberger (who first coined the term burnout): &amp;ldquo;almost always an i
       <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Mutual-Aid/</guid>
-      <description>Book by Dean Spade</description>
+      <description>The puzzle: A Darwinian explanation can only account for behaviour that promotes the survival and reproductive success of the individual organism.</description>
     </item>
     
     <item>
@@ -2491,7 +2510,7 @@ IIT  Consciousness is integrated information</description>
       <pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Neural-Correlates-of-Consciousness-NCC/</guid>
-      <description>Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.  Similar to probing for network activation in neural networks / AI systems   The full NCC is the union of all content-specific NCCs.</description>
+      <description>Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.  Similar to probing for network activation in [[thoughts/neural networks|neural networks]] / AI systems   The full NCC is the union of all content-specific NCCs.</description>
     </item>
     
     <item>
@@ -4931,7 +4950,7 @@ Every individual thing has conatus: it strives to persevere in its existence.</d
       
       <guid>https://jzhao.xyz/thoughts/language-of-thought/</guid>
       <description>Can we use [[thoughts/language|language]] as the method of querying memory?
-Language of thought hypothesis  proposes thinking occurs in a mental language, this is called mentalese  computations in a classical way classical computational architecture distinguishes between data-structures and rules/programs which operate on said structures   neural networks or connectionist networks challenges any argument for mentalese (as they don&amp;rsquo;t fall under the GOFAI/classical computation category)  </description>
+Language of thought hypothesis  proposes thinking occurs in a mental language, this is called mentalese  computations in a classical way classical computational architecture distinguishes between data-structures and rules/programs which operate on said structures   [[thoughts/neural networks|neural networks]] or connectionist networks challenges any argument for mentalese (as they don&amp;rsquo;t fall under the GOFAI/classical computation category)  </description>
     </item>
     
     <item>

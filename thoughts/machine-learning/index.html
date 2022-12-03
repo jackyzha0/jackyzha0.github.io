@@ -127,13 +127,13 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1002,6 +1002,43 @@ Jul 2, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1038,14 +1075,20 @@ Jul 2, 2021
 <li><a href="/thoughts/exploratory-data-analysis" rel="noopener" class="internal-link" data-src="/thoughts/exploratory-data-analysis">EDA</a></li>
 <li><a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">Supervised learning</a></li>
 <li><a href="/thoughts/No-Free-Lunch-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/No-Free-Lunch-Theorem">No Free Lunch Theorem</a></li>
-<li><a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">unsupervised learning</a></li>
-<li><a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a></li>
-<li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a></li>
-<li><a href="/thoughts/linear-classification" rel="noopener" class="internal-link" data-src="/thoughts/linear-classification">linear classification</a></li>
-<li><a href="/thoughts/multi-class-classification" rel="noopener" class="internal-link" data-src="/thoughts/multi-class-classification">multi-class classification</a></li>
+<li><a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">Unsupervised Learning</a></li>
+<li><a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">Gradient Descent</a></li>
+<li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">Regularization</a></li>
+<li>Regression
+<ul>
+<li><a href="/thoughts/linear-regression" rel="noopener" class="internal-link" data-src="/thoughts/linear-regression">Linear Regression</a></li>
+<li><a href="/thoughts/multi-class-classification" rel="noopener" class="internal-link" data-src="/thoughts/multi-class-classification">Multi-class classification</a></li>
+</ul>
+</li>
+<li><a href="/thoughts/binary-classification" rel="noopener" class="internal-link" data-src="/thoughts/binary-classification">Binary classification</a></li>
 <li><a href="/thoughts/maximum-likelihood-estimation" rel="noopener" class="internal-link" data-src="/thoughts/maximum-likelihood-estimation">MLE</a></li>
-<li><a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">latent-factor model</a></li>
+<li><a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">Latent-factor models</a></li>
 <li><a href="/thoughts/recommendation-system" rel="noopener" class="internal-link" data-src="/thoughts/recommendation-system">Recommender System</a></li>
+<li><a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">Neural Networks</a></li>
 </ul>
 <p>Related background:</p>
 <ul>
@@ -1073,6 +1116,7 @@ Jul 2, 2021
 </ul>
 <a href="#nfai-new-fangled-ai"><h3 id="nfai-new-fangled-ai"><span class="hanchor" ariaLabel="Anchor"># </span>NFAI (new-fangled AI)</h3></a>
 <ul>
+<li>see also: <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a></li>
 <li>falls under connectionism and 
 
 
@@ -1103,194 +1147,6 @@ Jul 2, 2021
   data-src="/thoughts/Extended-Mind-Hypothesis/">Extended Mind Hypothesis</a></li>
 <li>e.g. through the design of tools like hammers, our architecture, etc.</li>
 <li>definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself</li>
-</ul>
-<a href="#deep-learning-a-philosophical-introduction"><h3 id="deep-learning-a-philosophical-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning: a philosophical introduction</h3></a>
-<ul>
-<li>no universally accepted explanation as to why they work so well, just really a form of 
-
-
-
-
-
-<a
-  href="/thoughts/object-classification/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/object-classification/">classification</a></li>
-<li>&ldquo;golden age network&rdquo;
-<ul>
-<li>3 properties
-<ol>
-<li>shallow → no more than three or four layers between input and output</li>
-<li>uniform → only one type of node deploying a sigmoidal activation</li>
-<li>fully connected → each node from a lower layer connected to each other in the next layer</li>
-</ol>
-</li>
-</ul>
-</li>
-<li>depth
-<ul>
-<li>analogy of assembly line mass production of automobiles
-<ul>
-<li>one person is skeptical of the significance of assembly lines → &ldquo;any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists&rdquo;</li>
-<li>other person believes that the assembly line is more efficient, specialized, and reusable
-<ul>
-<li>each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently</li>
-<li>standardization of units across automobiles</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>sum-product network example
-<ul>
-<li>simple device for computing polynomial functions</li>
-<li>shallow networks → must compute the expanded expressions of that function (skilled but inefficient machinists)</li>
-<li>deep networks → can compute the factorized expression of the polynomial function
-<ul>
-<li>show that they can compose simple operations</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>heterogeneity
-<ul>
-<li>different types of operations composed together</li>
-<li>dccns → conv layer followed by relu followed by max pooling
-<ul>
-<li>good at detecting features in a variety of different locations/poses</li>
-</ul>
-</li>
-<li>combining all three operations means we can product a simplified, transformed representation of the source image
-<ul>
-<li>can get more complex/abstract as you move deeper through the layers</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>sparse connectivity
-<ul>
-<li>heuristic → only local pixels matter</li>
-<li>dramatically reduces number of learned parameters</li>
-</ul>
-</li>
-<li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">regularization</a>
-<ul>
-<li>input preturbations
-<ul>
-<li>rotations/scaling/transformations</li>
-<li>noise</li>
-</ul>
-</li>
-<li>dropout</li>
-<li>L1 regularization → favours simpler/sparser solutions by causing weights to fall to 0 if a large gradient is not maintained</li>
-</ul>
-</li>
-</ul>
-<a href="#so-why-are-they-so-effective"><h3 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h3></a>
-<ul>
-<li>hierarchical feature composition</li>
-<li>vector space separation
-<ul>
-<li>input can be realized as a feature space</li>
-<li>output can be realized as manifolds or regions in the feature space</li>
-<li>training is just then learning the manifolds/regions that create desired categories</li>
-</ul>
-</li>
-<li>most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so -&gt; question of 
-
-
-
-
-
-<a
-  href="/thoughts/intelligence/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/intelligence/">intelligence</a></li>
-<li>self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
-<ul>
-<li>counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)</li>
-</ul>
-</li>
-</ul>
-<h3 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
-
-
-
-
-
-<a
-  href="/thoughts/intelligence/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/intelligence/">Intelligence</a></h3>
-<p>
-
-
-
-
-
-<a
-  href="/thoughts/potemkin-village/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/potemkin-village/">Potemkin village</a> analogy for approximating intelligence.</p>
-<a href="#brain-like-networks"><h3 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h3></a>
-<ul>
-<li>biological similarities
-<ul>
-<li>CNNs have high sensitivity to spots, edges, and bars in specific orientations</li>
-<li>echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex</li>
-</ul>
-</li>
-<li>can record a single neuron but very difficult to record patterns</li>
-<li>functional vector → vector that corresponds to one of the output classes</li>
-<li>speech example, network managed to recover phonetic hierarchical information</li>
-<li>both systems have created a system of internal representations that corresponds to important distinctions and structures in the outside world</li>
-<li>theories → representations that allow networks to &ldquo;make sense&rdquo; of their corpus and respond in a fashion that reduces error</li>
-<li>how do we explain &lsquo;conceptual change&rsquo;?
-<ul>
-<li>knowing a creature&rsquo;s vector-space partitions may suffice for short-term prediction of behaviour but inadequate to predict or explain the evolution of those partitions over the course of time</li>
-<li>just knowing output space partitions is not enough, but connection weights seems to provide a level that meets all of these conditions</li>
-</ul>
-</li>
-<li>neural networks have decently high <a href="/thoughts/fault-tolerance" rel="noopener" class="internal-link" data-src="/thoughts/fault-tolerance">fault tolerance</a> (some redundant neurons)
-<ul>
-<li>may help to explain functional persistence of brains in the face of minor damage</li>
-<li>in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade</li>
-</ul>
-</li>
-</ul>
-<a href="#differences"><h3 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h3></a>
-<ul>
-<li>real neural networks arent fully connected like ANNs</li>
-<li>real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs</li>
-<li>real brains don&rsquo;t use backprop via generalized delta rule
-<ul>
-<li>back prop requires</li>
-</ul>
-<ol>
-<li>computing partial derivates to minimize error</li>
-<li>propagating deltas through the network back to relevant connections</li>
-</ol>
-<ul>
-<li>little empirical evidence for this in biological brains</li>
-</ul>
-</li>
-<li>real brains show a progressive reduct in reaction time as one learns
-<ul>
-<li>not seen in ANNs where error decreases but prediction time remains constant</li>
-</ul>
-</li>
-<li>anns require a &lsquo;global truth&rsquo; or teacher
-<ul>
-<li>these &lsquo;perfect&rsquo; signals are not present in the real world</li>
-</ul>
-</li>
-<li>hebbian learning
-<ul>
-<li>those who &lsquo;vote with winners, become winners&rsquo;</li>
-<li>can be used to produce learning in ANNs but not nearly as effective as backprop</li>
-</ul>
-</li>
 </ul>
 
 

@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -394,6 +394,43 @@ Oct 28, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -413,6 +450,7 @@ Oct 28, 2022
 <p>The most common choice is to use the sigmoid function:</p>
 <p>$$h(z_i) = \frac{1}{1+\exp(-z_i)}$$</p>
 <a href="#multi-class-probabilities"><h2 id="multi-class-probabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Multi-class Probabilities</h2></a>
+<p>See also: <a href="/thoughts/multi-class-classification" rel="noopener" class="internal-link" data-src="/thoughts/multi-class-classification">multi-class classification</a></p>
 <p>The softmax function allows us to map $k$ real numbers $z_i = w_c^Tx_i$ to probabilities</p>
 <p>$$P(y | z_1, z_2, \dots, z_k) = \frac{\exp(z_y)}{\sum_{c=1}^k \exp(z_c))}$$</p>
 

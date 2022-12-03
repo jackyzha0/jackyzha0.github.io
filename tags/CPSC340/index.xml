@@ -67,12 +67,12 @@ If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter,
     </item>
     
     <item>
-      <title>Linear Classification</title>
-      <link>https://jzhao.xyz/thoughts/linear-classification/</link>
+      <title>Binary Classification</title>
+      <link>https://jzhao.xyz/thoughts/binary-classification/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/linear-classification/</guid>
-      <description>Binary Classification  Set $y_i = +1$ for one class (“important”) Set $y_i = -1$ for the other class (“not important”) To predict, we look at whether $w^Tx_i$ is closer to +1 or -1  $\hat y_i = \textrm{sign} (w^Tx_i)$    Least squares error may overpenalize.</description>
+      <guid>https://jzhao.xyz/thoughts/binary-classification/</guid>
+      <description>Set $y_i = +1$ for one class (“important”) Set $y_i = -1$ for the other class (“not important”) To predict, we look at whether $w^Tx_i$ is closer to +1 or -1  $\hat y_i = \textrm{sign} (w^Tx_i)$    Least squares error may overpenalize.</description>
     </item>
     
     <item>

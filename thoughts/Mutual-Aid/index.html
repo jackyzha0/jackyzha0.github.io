@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Book by Dean Spade"
+    content="The puzzle: A Darwinian explanation can only account for behaviour that promotes the survival and reproductive success of the individual organism."
   />
   <title>
     Mutual Aid
@@ -126,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -338,7 +338,8 @@ Mar 23, 2022
 
 
 
-<p>Book by Dean Spade</p>
+<p>The puzzle: A Darwinian explanation can only account for behaviour that promotes the survival and reproductive success of the individual organism. How do we account for altruism and cooperation given this constraint?</p>
+<p>One explanation is gene selection. The unit of selection is the gene rather than the individual. That is, altruism and cooperation promote the survival of your genes.</p>
 
 
     </article>

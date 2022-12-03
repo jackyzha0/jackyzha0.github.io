@@ -127,13 +127,13 @@ Part weights are a change of basis from $x_i$ to some $z_i$."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -430,6 +430,30 @@ Nov 23, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -543,6 +567,122 @@ Nov 23, 2022
       
       
       
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
       
     
     
@@ -631,7 +771,7 @@ Nov 23, 2022
 </ul>
 <p>We minimize</p>
 <p>$$\begin{flalign}
-f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\ &amp;= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 \\ &amp;= \lVert ZW - X \rVert_F^2
+f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 &amp; \textrm{Approximating } x_{ij} \textrm{ by } \langle w^j, z_i \rangle \\ &amp;= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 &amp; \textrm{Approximating } x_i \textrm{ by } W^Tz_i\\ &amp;= \lVert ZW - X \rVert_F^2 &amp; \textrm{Approximating } X \textrm{ by } ZW
 \end{flalign}$$</p>
 <p>If we do alternating minimization,</p>
 <ol>
@@ -657,6 +797,31 @@ f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\ 
 <li>Orthogonality: We enforce $w_c^Tw_{c&rsquo;}=0$ for all $c \neq c'$</li>
 <li>Sequential fitting, we fit each $w_i$ in sequence</li>
 </ol>
+<a href="#multi-dimensional-scaling"><h2 id="multi-dimensional-scaling"><span class="hanchor" ariaLabel="Anchor"># </span>Multi-Dimensional Scaling</h2></a>
+<p>Gradient descent on points on a scatter point; try to make scatterplot distances match high-dimensional distances</p>
+<p>$$f(Z) = \sum_{i=1}^n\sum_{j=i+1}^n (\lVert z_i - z_j \rVert - \lVert x_i - x_j \rVert)^2$$</p>
+<p>No $W$ matrix needed! However, cannot be done using singular value decomposition (a matrix factoring technique). We need <a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a>.</p>
+<ul>
+<li>Non convex</li>
+<li>Sensitive to initialization</li>
+<li>Unfortunately, MDS often does not work well in practice; MDS tends to “crowd/squash” all the data points together like PCA.</li>
+</ul>
+<a href="#t-sne"><h2 id="t-sne"><span class="hanchor" ariaLabel="Anchor"># </span>t-SNE</h2></a>
+<blockquote>
+<p>t-Distributed Stochastic Neighbour Embedding</p>
+</blockquote>
+<p>However, using Euclidean (L2-norm) may not be a great representation of data that lives on low-dimensional manifolds. In these cases, Euclidean distances make sense “locally” but Euclidean distances may not make sense “globally”.</p>
+<p><img src="/thoughts/images/manifold distance example.png" width="auto" /></p>
+<p>t-SNE is actually a special case of <a href="#multi-dimensional-scaling" rel="noopener" class="internal-link" data-src=""></a>. The key idea is to focus on distance to “neighbours”, allowing gaps between distances to grow</p>
+<a href="#word2vec"><h2 id="word2vec"><span class="hanchor" ariaLabel="Anchor"># </span>Word2Vec</h2></a>
+<p>Each word $i$ is represented by a vector of real numbers $z_i$</p>
+<p>Trained using a masking technique.</p>
+<ul>
+<li>Takes sentence fragments and hides/masks a middle word</li>
+<li>Train so that $z_i$ of hidden word is similar to $z_i$ of surrounding words</li>
+</ul>
+<p>$$p(z_i) = \prod_{j \in \textrm{surrounding}} \frac{\exp(z_i^Tz_j)}{\sum_{c=1}^\textrm{# words} \exp(z_c^Tz_j)}$$</p>
+<p>Gradient descent on for $-\log(p(z_i))$</p>
 
 
     </article>
@@ -694,6 +859,28 @@ f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\ 
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/posts/reflect/" data-ctx="higher dimension vector space" data-src="/posts/reflect" class="internal-link">reflect: NLP Model Explained</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/K-means/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/K-means" class="internal-link">K-means</a>
       </li>
@@ -707,7 +894,25 @@ f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 \\ 
       
       
       <li>
-        <a href="/thoughts/machine-learning/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+        <a href="/thoughts/exploratory-data-analysis/" data-ctx="Distance in latent space" data-src="/thoughts/exploratory-data-analysis" class="internal-link">Exploratory data analysis (EDA)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/idea-list/" data-ctx="embeddings" data-src="/thoughts/idea-list" class="internal-link">Idea List</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="Latent-factor models" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/neural-networks/" data-ctx="thoughts/latent-factor model" data-src="/thoughts/neural-networks" class="internal-link">Neural networks</a>
       </li>
       
       

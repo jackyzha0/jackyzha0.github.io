@@ -127,13 +127,13 @@ How can we assign utilities to represent preferences?"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -340,6 +340,30 @@ Sep 28, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -367,6 +391,12 @@ Sep 28, 2022
 <li>Transformation is linear</li>
 <li>Called an ordinal transformation</li>
 </ul>
+<p>Ordinal Scales must satisfy the following properties:</p>
+<ol>
+<li>Completeness: $x \succ y$ or $x \sim y$ or $y \succ x$</li>
+<li>Asymmetry: if $x \succ y$ then it is false that $y \succ x$</li>
+<li>Transitivity: if $x \succ y$ and $y \succ z$ then $x \succ z$</li>
+</ol>
 <a href="#infinite-utility"><h2 id="infinite-utility"><span class="hanchor" ariaLabel="Anchor"># </span>Infinite Utility</h2></a>
 <p>An agent values A infinitely relative to B and C if we deny Continuity: $[\lambda A, (1-\lambda)C] \succ B$ for any $\lambda &gt; 0$</p>
 <p>The agent is willing to trade B for any gamble that offers a positive chance of A, when the ‘losing outcome’ is C.)</p>
@@ -461,6 +491,16 @@ Sep 28, 2022
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Arrows-Impossibility-Theorem/" data-ctx="thoughts/utility#Interval Scales" data-src="/thoughts/Arrows-Impossibility-Theorem" class="internal-link">Arrow&#39;s Impossibility Theorem</a>
+      </li>
+      
       
       
       <li>

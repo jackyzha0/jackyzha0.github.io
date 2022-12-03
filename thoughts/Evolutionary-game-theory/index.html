@@ -127,13 +127,13 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -343,6 +343,20 @@ Sep 7, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -350,6 +364,44 @@ Sep 7, 2022
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -482,6 +534,21 @@ Sep 7, 2022
 <ol>
 <li>$EU(x,x) \geq EU(y,y)$ for any strategy $y$</li>
 <li>$EU(x,x) &gt; EU(y,x)$ or $EU(x,y) &gt; EU(y,y)$ for any $y$</li>
+</ol>
+<a href="#cake-division-problem"><h3 id="cake-division-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Cake Division Problem</h3></a>
+<p>Whereas <a href="/thoughts/game-theory" rel="noopener" class="internal-link" data-src="/thoughts/game-theory">rational choice theory</a> has multiple pure equilibrium strategies here, there is only one evolutionarily stable pure strategy: share equally</p>
+<a href="#polymorphic-state"><h3 id="polymorphic-state"><span class="hanchor" ariaLabel="Anchor"># </span>Polymorphic state</h3></a>
+<p>Different strategies are played by different proportions of the population; however, these equilibria are not commonly found</p>
+<a href="#sequential-rationality-and-trembling-hand"><h3 id="sequential-rationality-and-trembling-hand"><span class="hanchor" ariaLabel="Anchor"># </span>Sequential Rationality and Trembling Hand</h3></a>
+<p>A plan involving a sequence of choices exhibits sequential rationality if it specifies a rational (i.e., utility-maximizing) choice at each point, relative to the choice situation at that point.</p>
+<p>Trembling Hand: sequential rationality is necessary and sufficient for optimality if we allow a small probability of error by other players. In picking a strategy, we should take “mistakes” into account — errors that occasionally lead an opponent to choose a dominated strategy</p>
+<p>Evolutionary analogue: mutation and recombination are analogues of the trembling hand. Both allow for new strategies to emerge</p>
+<a href="#replicator-dynamics"><h3 id="replicator-dynamics"><span class="hanchor" ariaLabel="Anchor"># </span>Replicator Dynamics</h3></a>
+<ol>
+<li>Compute expected payoff (fitness) for each strategy. A weighted average of payoff against each other strategy in play: $U(A) = u(A \textrm{ vs } A_1)p(A_1) + \dots + u(A \textrm{ vs } A_n)p(A_n)$</li>
+<li>Compute the average fitness of the whole population, $U$. This is the weighted average of the individual fitnesses: $U = u(A_1)p(A_1) + \dots + u(A_n)p(A_n)$</li>
+<li>Compute the relative fitness of each strategy. Relative fitness of A is just $U(A) / U$</li>
+<li>Compute the new proportion of the population using each strategy (for the next round). $p&rsquo;(A) = p(A) \cdot [U(A) / U]$</li>
 </ol>
 <a href="#ethics"><h2 id="ethics"><span class="hanchor" ariaLabel="Anchor"># </span>Ethics</h2></a>
 <p>Can game theory give us substantive <a href="/thoughts/ethics" rel="noopener" class="internal-link" data-src="/thoughts/ethics">ethical</a>/political recommendations?</p>

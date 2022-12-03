@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -403,6 +403,43 @@ Feb 20, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -442,7 +479,7 @@ Feb 20, 2022
 <p>Programming practices are mostly tacit knowledge. Tacit knowledge isn&rsquo;t easy to share. An expert will relate some simple-sounding rule of thumb, but then grilling them on specific cases will quickly uncover a huge collection of exceptions and caveats that vary depending on the specific details of the situation.</p>
 <p>It&rsquo;s so easy to think that simple solutions exist. But if you look at the history of ideas that actually worked, they tend to only be simple from a distance. The closer you get, the more you notice that the working idea is surrounding by a huge number of almost identical ideas that don&rsquo;t work. Take bicycles, for example. They seem simple and obvious, but it took 
 <a href="https://en.wikipedia.org/wiki/History_of_the_bicycle" rel="noopener">two centuries</a> to figure out all the details and most people today 
-<a href="https://link.springer.com/content/pdf/10.3758/BF03195929.pdf" rel="noopener">can&rsquo;t actually locate the working idea</a> amongst its neighbours. Even when old niche ideas make a comeback (eg neural networks) it&rsquo;s not because they were right all along but because someone recognized the limitations and found a new variation on the idea that overcame them (eg deep learning). Finding the idea that actually works amidst the sea of very similar ideas that don&rsquo;t work requires staying curious long enough to encounter the fine-grained detail of reality and humble enough to recognize and learn from each failure.</p>
+<a href="https://link.springer.com/content/pdf/10.3758/BF03195929.pdf" rel="noopener">can&rsquo;t actually locate the working idea</a> amongst its neighbours. Even when old niche ideas make a comeback (eg <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a>) it&rsquo;s not because they were right all along but because someone recognized the limitations and found a new variation on the idea that overcame them (eg deep learning). Finding the idea that actually works amidst the sea of very similar ideas that don&rsquo;t work requires staying curious long enough to encounter the fine-grained detail of reality and humble enough to recognize and learn from each failure.</p>
 <p>Mainstream is mainstream for a reason. The frontier is the place to go mining for new ideas, but it&rsquo;s 1% gold and 99% mud.</p>
 
 

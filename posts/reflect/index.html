@@ -127,13 +127,13 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -329,6 +329,77 @@ May 10, 2020
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -774,7 +845,7 @@ May 10, 2020
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD" width="auto" alt="credit: Rutger Ruizendaal, 2017"  /><em>credit: Rutger Ruizendaal, 2017</em></p>
-<p>Essentially, it embeds tokens in a higher dimension vector space, where distance between tokens represents its similarity.</p>
+<p>Essentially, it embeds tokens in a <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">higher dimension vector space</a>, where distance between tokens represents its similarity.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

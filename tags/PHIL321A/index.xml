@@ -6,7 +6,16 @@
     <description>Recent content in PHIL321A on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/PHIL321A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Choice Problem</title>
+      <link>https://jzhao.xyz/thoughts/Social-Choice-Problem/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Social-Choice-Problem/</guid>
+      <description>How to aggregate many individual preference orderings into a single group or social preference ordering; or, How to have rational individuals make rational choices as a group  We can define a Social welfare function (SWF) combining individual preference orderings (over social states) into a social preference ordering (over those same states).</description>
+    </item>
+    
     <item>
       <title>Nash equilibrium</title>
       <link>https://jzhao.xyz/thoughts/Nash-equilibrium/</link>

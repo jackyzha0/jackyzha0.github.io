@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e6e199bd767bc72247900f55dda6a2ef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0c2c75aaab1e7639e5056d42a2b25e50.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -821,7 +821,7 @@ Aug 12, 2021
 </li>
 <li>Simultaneous vs <a href="/thoughts/sequential-games" rel="noopener" class="internal-link" data-src="/thoughts/sequential-games">sequential games</a>
 <ul>
-<li>In simultaneous games, all players choose independent at the same time</li>
+<li>In simultaneous games, all players choose independently at the same time without knowing what other players will do</li>
 </ul>
 </li>
 <li>Perfect information vs imperfect information games</li>
@@ -1087,6 +1087,16 @@ Aug 12, 2021
       
       
     
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Evolutionary-game-theory/" data-ctx="rational choice theory" data-src="/thoughts/Evolutionary-game-theory" class="internal-link">Evolutionary game theory</a>
+      </li>
+      
       
       
       <li>
