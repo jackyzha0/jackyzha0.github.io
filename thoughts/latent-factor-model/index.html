@@ -127,13 +127,13 @@ Part weights are a change of basis from $x_i$ to some $z_i$."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -770,9 +770,9 @@ Nov 23, 2022
 <li><a href="/thoughts/visualization" rel="noopener" class="internal-link" data-src="/thoughts/visualization">Data visualization</a>: $k=2$ to visualize high-dimensional objects</li>
 </ul>
 <p>We minimize</p>
-<p>$$\begin{flalign}
+<p>$$\begin{aligned}
 f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 &amp; \textrm{Approximating } x_{ij} \textrm{ by } \langle w^j, z_i \rangle \\ &amp;= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 &amp; \textrm{Approximating } x_i \textrm{ by } W^Tz_i\\ &amp;= \lVert ZW - X \rVert_F^2 &amp; \textrm{Approximating } X \textrm{ by } ZW
-\end{flalign}$$</p>
+\end{aligned}$$</p>
 <p>If we do alternating minimization,</p>
 <ol>
 <li>Fix Z and optimize W: $\nabla_wf(W,Z)=Z^TZW-Z^TX$</li>

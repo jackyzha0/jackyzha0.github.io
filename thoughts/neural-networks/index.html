@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="See also: [[thoughts/convolutional neural networks]]
-Motivation and Theory Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use."
+Shallow Networks Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use."
   />
   <title>
     Neural networks
@@ -127,13 +127,13 @@ Motivation and Theory Many domains require non-linear transforms of the features
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -361,6 +361,12 @@ Dec 3, 2022
   
   
 
+  
+  
+
+  
+  
+
 
 
 
@@ -627,6 +633,85 @@ Dec 3, 2022
       
       
       
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
       
     
     
@@ -756,7 +841,7 @@ Dec 3, 2022
 
 
 <p>See also: <a href="/thoughts/convolutional-neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/convolutional-neural-networks">convolutional neural networks</a></p>
-<a href="#motivation-and-theory"><h2 id="motivation-and-theory"><span class="hanchor" ariaLabel="Anchor"># </span>Motivation and Theory</h2></a>
+<a href="#shallow-networks"><h2 id="shallow-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Shallow Networks</h2></a>
 <p>Many domains require non-linear transforms of the features (see: <a href="/thoughts/change-of-basis" rel="noopener" class="internal-link" data-src="/thoughts/change-of-basis">change of basis</a>). Usually not obvious which transform to use.</p>
 <p><strong>Neural network models try to learn good transformations</strong>. Whereas <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">latent-factor model</a>s train the embedding and model separately, neural networks learn both features and the model at the same time.</p>
 <p>Let $k$ be the number of hidden units. Generally, $\hat y_i = v^Th(Wx_i)$ (or, with bias, $\hat y_i = \sum_{c=1}^k v_ch(w_c^Tx_i + \beta_c) + \beta$)</p>
@@ -781,9 +866,23 @@ Dec 3, 2022
 <a href="#training"><h3 id="training"><span class="hanchor" ariaLabel="Anchor"># </span>Training</h3></a>
 <p>Generally non-convex as W and v are both variables. As such, finding the global optimum is NP-Hard. We can use <a href="/thoughts/gradient-descent#stochastic-gradient-descent-sgd" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a> but this is not guaranteed to reach a global optimum due to non-convexity.</p>
 <a href="#implicit-regularization"><h3 id="implicit-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>Implicit Regularization</h3></a>
-<a href="#deep-learning-a-philosophical-introduction"><h2 id="deep-learning-a-philosophical-introduction"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning: a philosophical introduction</h2></a>
+<p>Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the fundamental tradeoff, doesn&rsquo;t it?</p>
+<p>However, learning theory (trade-off) results analyze global min with worst test error. The actual test error for different global minima will be better than worst case bound. Among the global minima, SGD is somehow converging to “good” ones! Empirically, using SGD is like using L2-Regularization, but the regularization is “implicit”.</p>
+<p>With small models, “minimize training error” leads to unique (or similar) global mins. With larger models, there is a lot of flexibility in the space of global mins (gap between best/worst).</p>
+<p>We get results that look like the following:</p>
+<p><img src="/thoughts/images/double-descent curves.png" width="auto" /></p>
+<a href="#deep-learning"><h2 id="deep-learning"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning</h2></a>
+<p>Instead of a single layer of hidden units, we can stack them.</p>
+<p>$$\begin{aligned}
+\hat y_i &amp;= v^Th(W^{(m)}h(W^{(m-1)}h(\dots W^{(1)}x_i))) \\ &amp;= v^T(I_{l=1}^mh(W^{(l)}x_i)) &amp; \textrm{Where } I \textrm{ is repeated function composition}
+\end{aligned}$$</p>
+<a href="#vanishing-gradient-problem"><h3 id="vanishing-gradient-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Vanishing Gradient Problem</h3></a>
+<p>The gradient of the sigmoid function away from the origin is nearly zero. This is worse when you take the sigmoid of a sigmoid of a sigmoid&hellip;</p>
+<p>If these are numerically set to 0 because of how small they are, <a href="/thoughts/gradient-descent#stochastic-gradient-descent-sgd" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a> will not make progress</p>
+<p>This is partially solved by replacing the sigmoid activation with the ReLU activation. Alternatively, can also use skip connections that &lsquo;shortcuts&rsquo; between layers</p>
+<a href="#philosophy-of-deep-learning"><h3 id="philosophy-of-deep-learning"><span class="hanchor" ariaLabel="Anchor"># </span>Philosophy of Deep Learning</h3></a>
 <ul>
-<li>no universally accepted explanation as to why they work so well, just really a form of 
+<li>No universally accepted explanation as to why they work so well, just really a form of 
 
 
 
@@ -793,26 +892,22 @@ Dec 3, 2022
   href="/thoughts/object-classification/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/object-classification/">classification</a></li>
-<li>&ldquo;golden age network&rdquo;
-<ul>
-<li>3 properties
+<li>The &ldquo;Golden age network&rdquo; had 3 main properties
 <ol>
 <li>shallow → no more than three or four layers between input and output</li>
 <li>uniform → only one type of node deploying a sigmoidal activation</li>
 <li>fully connected → each node from a lower layer connected to each other in the next layer</li>
 </ol>
 </li>
-</ul>
-</li>
-<li>depth
+<li>Depth, hierarchy of parts intuition
 <ul>
-<li>analogy of assembly line mass production of automobiles
+<li>Analogy of assembly line mass production of automobiles
 <ul>
-<li>one person is skeptical of the significance of assembly lines → &ldquo;any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists&rdquo;</li>
-<li>other person believes that the assembly line is more efficient, specialized, and reusable
+<li>One person is skeptical of the significance of assembly lines → &ldquo;any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists&rdquo;</li>
+<li>Other person believes that the assembly line is more efficient, specialized, and reusable
 <ul>
-<li>each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently</li>
-<li>standardization of units across automobiles</li>
+<li>Each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently</li>
+<li>Standardization of units across automobiles</li>
 </ul>
 </li>
 </ul>
@@ -864,7 +959,7 @@ Dec 3, 2022
 </ul>
 </li>
 </ul>
-<a href="#so-why-are-they-so-effective"><h3 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h3></a>
+<a href="#so-why-are-they-so-effective"><h4 id="so-why-are-they-so-effective"><span class="hanchor" ariaLabel="Anchor"># </span>So why are they so effective?</h4></a>
 <ul>
 <li>hierarchical feature composition</li>
 <li>vector space separation
@@ -890,7 +985,7 @@ Dec 3, 2022
 </ul>
 </li>
 </ul>
-<h3 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
+<h4 id="cognition-and-intelligencethoughtsintelligence">Cognition and 
 
 
 
@@ -899,7 +994,7 @@ Dec 3, 2022
 <a
   href="/thoughts/intelligence/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/intelligence/">Intelligence</a></h3>
+  data-src="/thoughts/intelligence/">Intelligence</a></h4>
 <p>
 
 
@@ -910,7 +1005,7 @@ Dec 3, 2022
   href="/thoughts/potemkin-village/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/potemkin-village/">Potemkin village</a> analogy for approximating intelligence.</p>
-<a href="#brain-like-networks"><h3 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h3></a>
+<a href="#brain-like-networks"><h4 id="brain-like-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Brain-like networks</h4></a>
 <ul>
 <li>biological similarities
 <ul>
@@ -936,7 +1031,7 @@ Dec 3, 2022
 </ul>
 </li>
 </ul>
-<a href="#differences"><h3 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h3></a>
+<a href="#differences"><h4 id="differences"><span class="hanchor" ariaLabel="Anchor"># </span>Differences</h4></a>
 <ul>
 <li>real neural networks arent fully connected like ANNs</li>
 <li>real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs</li>

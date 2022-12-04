@@ -127,13 +127,13 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1039,6 +1039,43 @@ Jul 2, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1094,7 +1131,11 @@ Jul 2, 2021
 <ul>
 <li><a href="/thoughts/linear-algebra" rel="noopener" class="internal-link" data-src="/thoughts/linear-algebra">Linear Algebra</a></li>
 <li><a href="/thoughts/probability" rel="noopener" class="internal-link" data-src="/thoughts/probability">Probability</a></li>
-<li><a href="/thoughts/calculus" rel="noopener" class="internal-link" data-src="/thoughts/calculus">Calculus</a></li>
+<li><a href="/thoughts/calculus" rel="noopener" class="internal-link" data-src="/thoughts/calculus">Calculus</a>
+<ul>
+<li><a href="/thoughts/automatic-differentiation" rel="noopener" class="internal-link" data-src="/thoughts/automatic-differentiation">Automatic Differentiation</a></li>
+</ul>
+</li>
 </ul>
 <a href="#philosophy"><h2 id="philosophy"><span class="hanchor" ariaLabel="Anchor"># </span>Philosophy</h2></a>
 <a href="#gofai-good-old-fashioned-ai"><h3 id="gofai-good-old-fashioned-ai"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI (good old-fashioned AI)</h3></a>

@@ -126,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -303,6 +303,24 @@ Dec 25, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/stone-soup-metaphor/" class="internal-link" data-src="/thoughts/stone-soup-metaphor/">Stone Soup metaphor</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 25, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/Turing-Test/" class="internal-link" data-src="/thoughts/Turing-Test/">Turing Test</a></h3>
             </div>
             <div class="spacer"></div>
@@ -453,24 +471,6 @@ Dec 24, 2021
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 24, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/desktop-metaphor/" class="internal-link" data-src="/thoughts/desktop-metaphor/">Desktop Metaphor</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
                 
             </ul>
         </div>

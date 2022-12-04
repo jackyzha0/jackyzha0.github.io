@@ -8,13 +8,22 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Automatic Differentiation (AD)</title>
+      <link>https://jzhao.xyz/thoughts/automatic-differentiation/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/automatic-differentiation/</guid>
+      <description>Input: code computing a function Output: code to compute one or more derivatives of the function.  AD writes functions as a sequence of simple compositions $$f_5(f_4(f_3(f_2(f_1(x)))))$$</description>
+    </item>
+    
+    <item>
       <title>Neural networks</title>
       <link>https://jzhao.xyz/thoughts/neural-networks/</link>
       <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/neural-networks/</guid>
       <description>See also: [[thoughts/convolutional neural networks]]
-Motivation and Theory Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use.</description>
+Shallow Networks Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use.</description>
     </item>
     
     <item>

@@ -127,13 +127,13 @@ Given our data, what is the model $w$ is the best model?"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -444,9 +444,9 @@ Nov 23, 2022
 <p>This is connected to <a href="/thoughts/maximum-likelihood-estimation" rel="noopener" class="internal-link" data-src="/thoughts/maximum-likelihood-estimation">MLE</a> through <a href="/thoughts/probability#bayesrsquo-theorem" rel="noopener" class="internal-link" data-src="/thoughts/probability">Bayes&rsquo; Rule</a>:</p>
 <p>$$P(w|D) = \frac{P(D|w)P(w)}{P(D)} \propto P(D|w)P(w)$$</p>
 <p>Intuitively, $P(w)$ is accounting for how &rsquo;likely&rsquo; this model is. We can also treat this as a regularizer.</p>
-<p>$$\begin{flalign}
+<p>$$\begin{aligned}
 \hat w \in \arg\max_w { P(w|D) } &amp;\equiv \arg\max_w { \prod_{i=1}^n P(D_i|w)P(w)} \\ &amp;\equiv \arg\min_w { -\sum_{i=1}^n\log(P(D_i|w)) - \log(P(w)) }
-\end{flalign}$$</p>
+\end{aligned}$$</p>
 <p>Where $-\log(P(w))$ acts like the regularizing term. In fact, many regularizers are equivalent to negative log-priors.</p>
 <a href="#relation-between-regularized-loss-functions"><h2 id="relation-between-regularized-loss-functions"><span class="hanchor" ariaLabel="Anchor"># </span>Relation between regularized loss functions</h2></a>
 <a href="#l2-regularized-least-squares"><h3 id="l2-regularized-least-squares"><span class="hanchor" ariaLabel="Anchor"># </span>L2-Regularized Least Squares</h3></a>

@@ -6,7 +6,16 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatic Differentiation (AD)</title>
+      <link>https://jzhao.xyz/thoughts/automatic-differentiation/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/automatic-differentiation/</guid>
+      <description>Input: code computing a function Output: code to compute one or more derivatives of the function.  AD writes functions as a sequence of simple compositions $$f_5(f_4(f_3(f_2(f_1(x)))))$$</description>
+    </item>
+    
     <item>
       <title>Latent-Factor Models</title>
       <link>https://jzhao.xyz/thoughts/latent-factor-model/</link>

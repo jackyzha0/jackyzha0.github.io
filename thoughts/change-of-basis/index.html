@@ -126,13 +126,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.76e6c01d637b68a8c443dd9439ebec8f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5f7e21c930564f520253448158ba16b1.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -556,9 +556,9 @@ $$</p>
 <p>We compute $u = (K + \lambda I)^{-1}y$</p>
 <p>and for testing:</p>
 <p>$$
-\begin{flalign}
+\begin{aligned}
 \hat y &amp;= \tilde Z v \\ &amp;= \tilde Z Z^T (ZZ^T + \lambda I)^{-1} y &amp; \textrm{minimum of L2-regularized least squares: } v = Z^T(ZZ^T + \lambda I)^{-1}y \\ &amp;= \tilde K (K + \lambda I)^{-1} y \\ &amp;= \tilde K u &amp; u \textrm{ is a (n,1) of kernel weights we learn}
-\end{flalign}
+\end{aligned}
 $$</p>
 <p>The key idea behind “kernel trick” for certain bases (like polynomials) is that we <strong>can</strong> efficiently compute $K$ and $\tilde K$ even though forming $Z$ and $\tilde Z$ is intractable.</p>
 <p>We call $K = ZZ^T$ the Gram Matrix.</p>
