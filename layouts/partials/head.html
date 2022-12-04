@@ -149,8 +149,8 @@
       {{if $data.enableLinkPreview | default $.Site.Data.config.enableLinkPreview}}
       initPopover(
         {{strings.TrimRight "/" .Site.BaseURL }},
-        {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}},
-        LATEX_ENABLED 
+        {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}}
+
       )
       {{end}}
 

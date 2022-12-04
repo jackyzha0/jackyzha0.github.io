@@ -211,6 +211,7 @@ const displayResults = (term, finalResults, extractHighlight = false) => {
         throwOnError: false
       })
     }
+
     const anchors = [...document.getElementsByClassName("result-card")]
     anchors.forEach((anchor) => {
       anchor.onclick = () => redir(anchor.id, term)
