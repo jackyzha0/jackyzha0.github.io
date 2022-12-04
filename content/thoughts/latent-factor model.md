@@ -34,11 +34,11 @@ Use cases:
 
 We minimize
 
-$$\begin{flalign}
+$$\begin{aligned}
 f(W,Z)&= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 & \textrm{Approximating } x_{ij} \textrm{ by } \langle w^j, z_i \rangle \\
 &= \sum_{i=1}^n \lVert W^Tz_i - x_i \rVert^2 & \textrm{Approximating } x_i \textrm{ by } W^Tz_i\\
 &= \lVert ZW - X \rVert_F^2 & \textrm{Approximating } X \textrm{ by } ZW
-\end{flalign}$$
+\end{aligned}$$
 
 If we do alternating minimization,
 1. Fix Z and optimize W: $\nabla_wf(W,Z)=Z^TZW-Z^TX$

@@ -18,9 +18,9 @@ $$P(w|D) = \frac{P(D|w)P(w)}{P(D)} \propto P(D|w)P(w)$$
 
 Intuitively, $P(w)$ is accounting for how 'likely' this model is. We can also treat this as a regularizer.
 
-$$\begin{flalign}
+$$\begin{aligned}
 \hat w \in \arg\max_w \{ P(w|D) \} &\equiv \arg\max_w \{ \prod_{i=1}^n P(D_i|w)P(w)\} \\ &\equiv \arg\min_w \{ -\sum_{i=1}^n\log(P(D_i|w)) - \log(P(w)) \}
-\end{flalign}$$
+\end{aligned}$$
 
 Where $-\log(P(w))$ acts like the regularizing term. In fact, many regularizers are equivalent to negative log-priors.
 

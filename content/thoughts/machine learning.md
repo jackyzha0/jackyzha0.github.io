@@ -43,6 +43,7 @@ Related background:
 - [[thoughts/linear algebra|Linear Algebra]]
 - [[thoughts/probability|Probability]]
 - [[thoughts/calculus|Calculus]]
+	- [[thoughts/automatic differentiation|Automatic Differentiation]]
 
 ## Philosophy
 ### GOFAI (good old-fashioned AI)

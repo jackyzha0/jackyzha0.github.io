@@ -8,7 +8,7 @@ tags:
 
 See also: [[thoughts/convolutional neural networks]]
 
-## Motivation and Theory
+## Shallow Networks
 Many domains require non-linear transforms of the features (see: [[thoughts/change of basis]]). Usually not obvious which transform to use.
 
 **Neural network models try to learn good transformations**. Whereas [[thoughts/latent-factor model]]s train the embedding and model separately, neural networks learn both features and the model at the same time.
@@ -34,21 +34,44 @@ Losses:
 Generally non-convex as W and v are both variables. As such, finding the global optimum is NP-Hard. We can use [[thoughts/gradient descent#Stochastic Gradient Descent (SGD)]] but this is not guaranteed to reach a global optimum due to non-convexity.
 
 ### Implicit Regularization
+Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the fundamental tradeoff, doesn't it?
 
 
-## Deep Learning: a philosophical introduction
--   no universally accepted explanation as to why they work so well, just really a form of [classification](thoughts/object%20classification.md)
--   "golden age network"
-    -   3 properties
-        1.  shallow → no more than three or four layers between input and output
-        2.  uniform → only one type of node deploying a sigmoidal activation
-        3.  fully connected → each node from a lower layer connected to each other in the next layer
--   depth
-    -   analogy of assembly line mass production of automobiles
-        -   one person is skeptical of the significance of assembly lines → "any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists"
-        -   other person believes that the assembly line is more efficient, specialized, and reusable
-            -   each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently
-            -   standardization of units across automobiles
+However, learning theory (trade-off) results analyze global min with worst test error. The actual test error for different global minima will be better than worst case bound. Among the global minima, SGD is somehow converging to “good” ones! Empirically, using SGD is like using L2-Regularization, but the regularization is “implicit”.
+
+With small models, “minimize training error” leads to unique (or similar) global mins. With larger models, there is a lot of flexibility in the space of global mins (gap between best/worst).
+
+We get results that look like the following: 
+
+![[thoughts/images/double-descent curves.png]]
+
+## Deep Learning
+Instead of a single layer of hidden units, we can stack them.
+
+$$\begin{aligned}
+\hat y_i &= v^Th(W^{(m)}h(W^{(m-1)}h(\dots W^{(1)}x_i))) \\
+&= v^T(I_{l=1}^mh(W^{(l)}x_i)) & \textrm{Where } I \textrm{ is repeated function composition}
+\end{aligned}$$
+
+### Vanishing Gradient Problem
+The gradient of the sigmoid function away from the origin is nearly zero. This is worse when you take the sigmoid of a sigmoid of a sigmoid...
+
+If these are numerically set to 0 because of how small they are, [[thoughts/gradient descent#Stochastic Gradient Descent (SGD)]] will not make progress
+
+This is partially solved by replacing the sigmoid activation with the ReLU activation. Alternatively, can also use skip connections that 'shortcuts' between layers
+
+### Philosophy of Deep Learning
+-  No universally accepted explanation as to why they work so well, just really a form of [classification](thoughts/object%20classification.md)
+-  The "Golden age network" had 3 main properties
+	1.  shallow → no more than three or four layers between input and output
+	2.  uniform → only one type of node deploying a sigmoidal activation
+	3.  fully connected → each node from a lower layer connected to each other in the next layer
+-   Depth, hierarchy of parts intuition
+    -   Analogy of assembly line mass production of automobiles
+        -   One person is skeptical of the significance of assembly lines → "any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists"
+        -   Other person believes that the assembly line is more efficient, specialized, and reusable
+            -   Each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently
+            -   Standardization of units across automobiles
     -   sum-product network example
         -   simple device for computing polynomial functions
         -   shallow networks → must compute the expanded expressions of that function (skilled but inefficient machinists)
@@ -70,7 +93,7 @@ Generally non-convex as W and v are both variables. As such, finding the global 
     -   dropout
     -   L1 regularization → favours simpler/sparser solutions by causing weights to fall to 0 if a large gradient is not maintained
 
-### So why are they so effective?
+#### So why are they so effective?
 -   hierarchical feature composition
 -   vector space separation
 	-   input can be realized as a feature space
@@ -80,10 +103,10 @@ Generally non-convex as W and v are both variables. As such, finding the global 
 -   self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
     -   counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)
 
-### Cognition and [Intelligence](/thoughts/intelligence)
+#### Cognition and [Intelligence](/thoughts/intelligence)
 [Potemkin village](thoughts/potemkin%20village.md) analogy for approximating intelligence.
 
-### Brain-like networks
+#### Brain-like networks
 -   biological similarities
 	-   CNNs have high sensitivity to spots, edges, and bars in specific orientations
 	-   echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex
@@ -99,7 +122,7 @@ Generally non-convex as W and v are both variables. As such, finding the global 
 	-   may help to explain functional persistence of brains in the face of minor damage
 	-   in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade
 
-### Differences
+#### Differences
 -   real neural networks arent fully connected like ANNs
 -   real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs
 -   real brains don't use backprop via generalized delta rule

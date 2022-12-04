@@ -34,12 +34,12 @@ We compute $u = (K + \lambda I)^{-1}y$
 and for testing:
 
 $$
-\begin{flalign}
+\begin{aligned}
 \hat y &= \tilde Z v \\
 &= \tilde Z Z^T (ZZ^T + \lambda I)^{-1} y & \textrm{minimum of L2-regularized least squares: } v = Z^T(ZZ^T + \lambda I)^{-1}y \\
 &= \tilde K (K + \lambda I)^{-1} y \\
 &= \tilde K u & u \textrm{ is a (n,1) of kernel weights we learn}
-\end{flalign}
+\end{aligned}
 $$
 
 The key idea behind “kernel trick” for certain bases (like polynomials) is that we **can** efficiently compute $K$ and $\tilde K$ even though forming $Z$ and $\tilde Z$ is intractable.
