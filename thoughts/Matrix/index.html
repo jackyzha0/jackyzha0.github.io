@@ -75,7 +75,7 @@ Mainly for messaging &#43; voice &#43; video but theoretically can handle any ty
   
   
   
-  <script src="https://jzhao.xyz/js/util.fa8e74b4065b97e6980a72cc472e436f.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.e48d3a3640b20984a244ec38e7d97219.min.js"></script>
   
   
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
@@ -93,7 +93,7 @@ Mainly for messaging &#43; voice &#43; video but theoretically can handle any ty
   <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script src="https://jzhao.xyz/js/popover.9b72b70bd35617d0635e9d15463662b2.min.js"></script>
+  <script src="https://jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js"></script>
 
   
   
@@ -125,6 +125,7 @@ Mainly for messaging &#43; voice &#43; video but theoretically can handle any ty
     localStorage.setItem('lastVisitTime', `${now}`)
 
     const SEARCH_ENABLED =  true 
+    const LATEX_ENABLED =  true 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
@@ -134,7 +135,7 @@ Mainly for messaging &#43; voice &#43; video but theoretically can handle any ty
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.96777805ac3637f1b725c111dbd02442.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -162,8 +163,8 @@ Mainly for messaging &#43; voice &#43; video but theoretically can handle any ty
       
       initPopover(
         "https://jzhao.xyz",
-         true ,
          true 
+
       )
       
 
