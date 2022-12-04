@@ -107,6 +107,7 @@
     localStorage.setItem('lastVisitTime', `${now}`)
 
     const SEARCH_ENABLED = {{.Site.Data.config.search.enableSemanticSearch}}
+    const LATEX_ENABLED = {{.Site.Data.config.enableLatex}}
     const PRODUCTION = {{ hugo.IsProduction }}
     const BASE_URL = {{.Site.BaseURL}}
     const fetchData = Promise.all([
@@ -149,7 +150,7 @@
       initPopover(
         {{strings.TrimRight "/" .Site.BaseURL }},
         {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}},
-        {{$data.enableLatex | default $.Site.Data.config.enableLatex}}
+        LATEX_ENABLED 
       )
       {{end}}
 
