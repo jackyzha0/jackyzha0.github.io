@@ -128,13 +128,13 @@ Evolutionary game theory has helped to explain the basis of altruistic behaviour
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

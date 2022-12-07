@@ -128,13 +128,13 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,6 +330,77 @@ May 10, 2020
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -782,7 +853,7 @@ May 10, 2020
 </div><a href="#whats-next"><h2 id="whats-next"><span class="hanchor" ariaLabel="Anchor"># </span>What’s next?</h2></a>
 <p>Now that we have something ready to feed into our neural network, let’s dive into how the actual model itself works! How do we tell that this is a “valid” intent?</p>
 <a href="#the-model"><h2 id="the-model"><span class="hanchor" ariaLabel="Anchor"># </span>The model</h2></a>
-<p>The type of neural network that we’ll be using is called Long Short-Term Memory (LSTM).</p>
+<p>The type of neural network that we’ll be using is called Long Short-Term Memory (<a href="/thoughts/LSTM" rel="noopener" class="internal-link" data-src="/thoughts/LSTM">LSTM</a>).</p>
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC" width="auto" alt="credit: Christopher Olah, 2015"  /><em>credit: Christopher Olah, 2015</em></p>

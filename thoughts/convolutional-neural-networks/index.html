@@ -8,8 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
-If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m&#43;1, 2m&#43;1)$ filter, then the 2D convolution is given by"
+    content="Rather than picking from fixed convolutions, we learn the elements of the filters.
+A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal."
   />
   <title>
     Convolutional Neural Networks
@@ -128,13 +128,13 @@ If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m&#43;1, 2m&#43;1)$
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -528,6 +528,7 @@ Nov 3, 2022
 
 
 
+<p>Rather than picking from fixed convolutions, we learn the elements of the filters.</p>
 <p>A convolution is a <a href="/thoughts/imaging#linear-filters" rel="noopener" class="internal-link" data-src="/thoughts/imaging">linear filters</a> that measures the effect one signal has on another signal.</p>
 <p>If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</p>
 <p>$$z[i_1,i_2] = \sum_{j_1=-m}^m \sum_{j_2=-m}^m w[j_1,j_2] x[i_1+j_1,i_2+j_2]$$</p>
@@ -637,6 +638,30 @@ $$</p>
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/LSTM/" data-ctx="thoughts/convolutional neural networks" data-src="/thoughts/LSTM" class="internal-link">LSTM</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="CNNs" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/neural-networks/" data-ctx="thoughts/convolutional neural networks" data-src="/thoughts/neural-networks" class="internal-link">Neural networks</a>
       </li>
@@ -645,6 +670,12 @@ $$</p>
       
       <li>
         <a href="/thoughts/object-classification/" data-ctx="CNNs" data-src="/thoughts/object-classification" class="internal-link">Object Classification</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/semantics/" data-ctx="thoughts/convolutional neural networks" data-src="/thoughts/semantics" class="internal-link">Semantics</a>
       </li>
       
       

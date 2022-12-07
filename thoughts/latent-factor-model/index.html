@@ -128,13 +128,13 @@ Part weights are a change of basis from $x_i$ to some $z_i$."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -876,8 +876,18 @@ f(W,Z)&amp;= \sum_{i=1}^n \sum_{j=1}^d (\langle w^j, z_i \rangle - x_{ij})^2 &am
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/reflect/" data-ctx="higher dimension vector space" data-src="/posts/reflect" class="internal-link">reflect: NLP Model Explained</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Autoencoders/" data-ctx="PCA" data-src="/thoughts/Autoencoders" class="internal-link">Autoencoders</a>
       </li>
       
       

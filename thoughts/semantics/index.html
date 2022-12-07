@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eeffb74aca9c53168d74357809236a03.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ab6eabf104b5cb79a493d8fd0551ea8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -354,6 +354,26 @@ Jul 2, 2021
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -361,6 +381,81 @@ Jul 2, 2021
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -595,6 +690,41 @@ Jul 2, 2021
 </ul>
 </li>
 </ul>
+<a href="#deep-learning-semantics"><h2 id="deep-learning-semantics"><span class="hanchor" ariaLabel="Anchor"># </span>Deep Learning Semantics</h2></a>
+<a href="#images"><h3 id="images"><span class="hanchor" ariaLabel="Anchor"># </span>Images</h3></a>
+<p>Semantics in <a href="/thoughts/convolutional-neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/convolutional-neural-networks">convolutional neural networks</a></p>
+<p>Hidden units often correlate semantically-meaningful concepts.</p>
+<p>Inceptionism: what about, instead of weights, use backpropagation to take gradient with respect to $x_i$. i.e., show me what you think a banana looks like</p>
+<p>Style Transfer: loss function matches deep latent representation of content image $C$:</p>
+<ul>
+<li>
+<p>Difference between $z_i^{(m)}$ for deepest $m$ between $x_i$ and $C$</p>
+</li>
+<li>
+<p>Intuition, deep layers $z_i^{(m)}$ capture the semantics/concepts in an image, invariant to actual style</p>
+</li>
+<li>
+<p>Adversarial Examples: imperceptible noise that changes label/prediction.</p>
+<ul>
+<li>Potentially dangerous! We could repaint a stop sign and fool self-driving cars</li>
+</ul>
+</li>
+<li>
+<p>It can learn bad correlations (e.g. correlating grass with cows so when it sees a cow by a beach it has no idea what it is)</p>
+<ul>
+<li>Related: does the prediction change real-world outcomes?</li>
+<li>i.e., does the doctor <em>actually</em> care?</li>
+<li>Does “not trying to overfit” mean we perform badly on some groups?
+<ul>
+<li>If you have 99% “Group A” in your dataset, model can do well on average by only focusing on Group A</li>
+<li>Treat the other 1% as outliers</li>
+<li>Doing well at test-time might mean ignoring outliers and minorities</li>
+</ul>
+</li>
+<li>See also: <a href="/posts/bias-bug" rel="noopener" class="internal-link" data-src="/posts/bias-bug">bias bug</a></li>
+</ul>
+</li>
+</ul>
 
 
     </article>
@@ -613,6 +743,10 @@ Jul 2, 2021
     
     
     
+    
+      
+      
+      
     
       
       
@@ -668,6 +802,12 @@ Jul 2, 2021
       
       <li>
         <a href="/thoughts/language/" data-ctx="Semantics" data-src="/thoughts/language" class="internal-link">Language</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/machine-learning/" data-ctx="Deep learning Semantics" data-src="/thoughts/machine-learning" class="internal-link">Machine Learning</a>
       </li>
       
       

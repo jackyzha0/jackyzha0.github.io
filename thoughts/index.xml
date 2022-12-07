@@ -6,7 +6,55 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autoencoders</title>
+      <link>https://jzhao.xyz/thoughts/Autoencoders/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Autoencoders/</guid>
+      <description>Autoencoders are neural networks with same input and output.
+ Includes a bottleneck layer: with dimension $k$ smaller than input $d$.</description>
+    </item>
+    
+    <item>
+      <title>Generative Models</title>
+      <link>https://jzhao.xyz/thoughts/generative-models/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/generative-models/</guid>
+      <description>Given data, we want to make more data that look like it
+Last 10 years have seen a variety of new deep generative models:</description>
+    </item>
+    
+    <item>
+      <title>LSTM</title>
+      <link>https://jzhao.xyz/thoughts/LSTM/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/LSTM/</guid>
+      <description>Long short term memory (LSTM) models are variant of RNNs. They are modified to try to remember short-term $z$ and long-term dependencies $c$.</description>
+    </item>
+    
+    <item>
+      <title>Transformer Models</title>
+      <link>https://jzhao.xyz/thoughts/transformers/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/transformers/</guid>
+      <description>![[thoughts/images/transformer supremacy.png]]
+Attention Each decoding can use hidden state from each encoding step. Used to re-weight during decoding to emphasize important parts.</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Execution</title>
+      <link>https://jzhao.xyz/thoughts/symbolic-execution/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/symbolic-execution/</guid>
+      <description>Helps with analysis where there are infinitely many initial states / executions. A (terminating) [[thoughts/program analysis]] can’t precisely explore them all!</description>
+    </item>
+    
     <item>
       <title>Automatic Differentiation (AD)</title>
       <link>https://jzhao.xyz/thoughts/automatic-differentiation/</link>
@@ -196,8 +244,8 @@ Distributed Press  Source</description>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
-      <description>A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
-If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by</description>
+      <description>Rather than picking from fixed convolutions, we learn the elements of the filters.
+A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.</description>
     </item>
     
     <item>
