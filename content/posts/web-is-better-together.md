@@ -6,6 +6,11 @@ tags:
 draft: true
 ---
 
+- all good web is together
+- productivity tools
+- game worlds
+- etc
+
 > They hint at possibilities for technologies that we could use in our everyday life, not to accomplish well-defined tasks, but to expand in undefined directions. Open-ended and personal, they encourage us to play – seriously – with experiences, ideas and other people
 > 
 > (Designing for Homo Ludens, William W. Gaver)

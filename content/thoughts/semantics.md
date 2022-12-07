@@ -74,3 +74,26 @@ Meanings are public property: the same meaning be grasped by more than one perso
 		- Processing speed
 		- Phonological memory
 		- Personality and temperament
+
+## Deep Learning Semantics
+### Images
+Semantics in [[thoughts/convolutional neural networks]]
+
+Hidden units often correlate semantically-meaningful concepts.
+
+Inceptionism: what about, instead of weights, use backpropagation to take gradient with respect to $x_i$. i.e., show me what you think a banana looks like
+
+Style Transfer: loss function matches deep latent representation of content image $C$:
+- Difference between $z_i^{(m)}$ for deepest $m$ between $x_i$ and $C$
+- Intuition, deep layers $z_i^{(m)}$ capture the semantics/concepts in an image, invariant to actual style
+
+- Adversarial Examples: imperceptible noise that changes label/prediction.
+	- Potentially dangerous! We could repaint a stop sign and fool self-driving cars
+- It can learn bad correlations (e.g. correlating grass with cows so when it sees a cow by a beach it has no idea what it is)
+	- Related: does the prediction change real-world outcomes?
+	- i.e., does the doctor *actually* care?
+	- Does “not trying to overfit” mean we perform badly on some groups?
+		- If you have 99% “Group A” in your dataset, model can do well on average by only focusing on Group A
+		- Treat the other 1% as outliers
+		- Doing well at test-time might mean ignoring outliers and minorities
+	- See also: [[posts/bias-bug|bias bug]]

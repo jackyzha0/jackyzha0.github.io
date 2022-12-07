@@ -24,7 +24,7 @@ Healthy skepticism is good though:
 > - John Tukey
 
 Main topics:
-- [[thoughts/exploratory data analysis|EDA]]
+- [[thoughts/exploratory data analysis|Exploratory Data Analysis]]
 - [[thoughts/supervised learning|Supervised learning]]
 - [[thoughts/No Free Lunch Theorem]]
 - [[thoughts/unsupervised learning|Unsupervised Learning]]
@@ -38,6 +38,11 @@ Main topics:
 - [[thoughts/latent-factor model|Latent-factor models]]
 - [[thoughts/recommendation system|Recommender System]]
 - [[thoughts/neural networks|Neural Networks]]
+- [[thoughts/convolutional neural networks|CNNs]]
+- [[thoughts/Autoencoders]]
+- [[thoughts/semantics#Deep Learning Semantics|Deep learning Semantics]]
+- [[thoughts/transformers|Transformers]]
+- [[thoughts/generative models|Generative Models]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]

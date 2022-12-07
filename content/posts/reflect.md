@@ -208,7 +208,7 @@ Now that we have something ready to feed into our neural network, let’s dive i
 
 ## The model
 
-The type of neural network that we’ll be using is called Long Short-Term Memory (LSTM).
+The type of neural network that we’ll be using is called Long Short-Term Memory ([[thoughts/LSTM|LSTM]]).
 
 ![credit: Christopher Olah, 2015](https://cdn-images-1.medium.com/max/4000/0*HyoZq6fOfsnn2YOC)*credit: Christopher Olah, 2015*
 

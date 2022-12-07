@@ -15,7 +15,7 @@ Software analysis falls into many categories
 2. Program analysis: analysing what a (part of a) program will do / does / can do
 	1. Static program analysis: without running the program. This requires considering all executions of the code of interest which requires context about the execution up to this point
 		1. Value-agnostic
-		2. Value-sensitive (symbolic execution)
+		2. Value-sensitive ([[thoughts/symbolic execution]])
 	2. Dynamic program analysis: analyzes the program while running it
 	3. Automatic (Concolic) test-case generation
 

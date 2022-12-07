@@ -17,7 +17,11 @@ Find the features (columns) of ‘X’ that are important for predicting ‘y’
 - What types of new data should I collect?
 - How can I speed up computation?
 
-This can help us to remove features. Feature complexity is also correlated with the fundamental tradeoff. Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results. 
+This can help us to remove features. Feature complexity is also correlated with the fundamental tradeoff. Generally, the fundamental tradeoff comes with two parts
+1. How small you can make the training error
+2. How well training error approximates the test error.
+
+Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results. 
 
 Generally, there are no right answers but there are wrong answers.
 
