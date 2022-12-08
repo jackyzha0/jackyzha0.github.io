@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,24 @@ Jun 7, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Solid/" class="internal-link" data-src="/thoughts/Solid/">Solid</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jun 7, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/Sybil-Attack/" class="internal-link" data-src="/thoughts/Sybil-Attack/">Sybil Attack</a></h3>
             </div>
             <div class="spacer"></div>
@@ -451,24 +469,6 @@ May 28, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/state-channels/" class="internal-link" data-src="/thoughts/state-channels/">State Channels</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-May 26, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/federation/" class="internal-link" data-src="/thoughts/federation/">Federation</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

@@ -129,13 +129,13 @@ Physical Time Two types of clock
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1fadd538ffea24c72a815d61506c47ea.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.954f387de2077a681b249e98cd02a646.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1074,9 +1074,13 @@ May 5, 2022
 <p>Logic</p>
 <ul>
 <li>On initialization , set <code>t := [0] * n</code></li>
-<li>On any event on node $N_i$, <code>fn tick() -&gt; t[i] += 1</code></li>
+<li>On any event on node $N_i$, <code>fn tick() -&gt; t[i] += 1</code>
+<ul>
+<li>Each time a process experiences an internal event, it increments its own clock in the vector by one</li>
+</ul>
+</li>
 <li>On sending message $m$ from node $N_i$, <code>fn send(m) -&gt; tick(); actually_send(t, m)</code></li>
-<li>On receiving <code>fn receive(t', m) -&gt; t = zip(t, t').map(max); tick(); do_something(m)</code></li>
+<li>On receiving <code>fn receive(t', m) -&gt; t = tick(); zip(t, t').map(max); do_something(m)</code></li>
 </ul>
 <p>Thus, a vector timestamp of an event $e$ actually represents all of its <em><a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> dependencies</em>: ${ e } \cup {a | a \rightarrow e }$</p>
 <p>E.g. $\langle 2, 2, 0 \rangle$ represents first two events from $N_1$, first two events from $N_2$, and no events from $N_3$</p>

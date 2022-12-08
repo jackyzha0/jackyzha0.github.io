@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Alignment</title>
+      <link>https://jzhao.xyz/thoughts/AI-alignment/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/AI-alignment/</guid>
+      <description>How do we get [[posts/ai-systems|AI systems]] to align with real human [[thoughts/social contracts|social contracts and values]]?
+Mostly sourced from OpenAI&amp;rsquo;s approach to alignment</description>
+    </item>
+    
     <item>
       <title>Autoencoders</title>
       <link>https://jzhao.xyz/thoughts/Autoencoders/</link>
