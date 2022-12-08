@@ -6,7 +6,6 @@ tags:
 - CPSC340
 ---
 
-
 Autoencoders are neural networks with same input and output.
 - Includes a bottleneck layer: with dimension $k$ smaller than input $d$.
 - First layers “encode” the input into bottleneck.

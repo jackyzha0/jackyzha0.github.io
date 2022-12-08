@@ -75,8 +75,9 @@ Each node has a current vector timestamp $T$, on an event on node $N_i$, increme
 Logic
 - On initialization , set `t := [0] * n`
 - On any event on node $N_i$, `fn tick() -> t[i] += 1`
+	- Each time a process experiences an internal event, it increments its own clock in the vector by one
 - On sending message $m$ from node $N_i$, `fn send(m) -> tick(); actually_send(t, m)`
-- On receiving `fn receive(t', m) -> t = zip(t, t').map(max); tick(); do_something(m)`
+- On receiving `fn receive(t', m) -> t = tick(); zip(t, t').map(max); do_something(m)`
 
 Thus, a vector timestamp of an event $e$ actually represents all of its *[[thoughts/causality|causal]] dependencies*: $\{ e \} \cup \{a | a \rightarrow e \}$
 

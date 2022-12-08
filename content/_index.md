@@ -6,7 +6,7 @@ tags:
 
 Welcome to my little [garden](posts/networked-thought.md) on the [internet](thoughts/Internet.md) -- I'm Jacky! I spend a lot of time here [playing](posts/play.md), [[thoughts/writing|writing]], and [building out in the open](thoughts/building%20in%20public.md). It's a little unkempt in places, but I think it gives it a little charm.
 
-Currently, I do [[thoughts/Rhizome Research Log|independent research]] focused on how we can enable [[posts/towards-data-neutrality|data neutrality]] on a web dominated by data moats. In my spare time, I create and [[thoughts/maintenance|maintain]] a number of widely used open-source [projects](thoughts/Projects.md).
+Currently, I do [[thoughts/Rhizome Research Log|independent research]] focused on better ways of relating and coexisting on the web; [[posts/towards-data-neutrality|one without platform lock-in]]. In my spare time, I create and [[thoughts/maintenance|maintain]] a number of widely used open-source [projects](thoughts/Projects.md).
 
 I'm curious about how we can better [incentivize](thoughts/incentives.md) [public goods](thoughts/public%20goods.md) [funding](thoughts/funding.md), support better [interactions](thoughts/interaction%20design.md) with computers and [[thoughts/Rhizome Proposal|data]], and be more responsible stewards of technology.
 
