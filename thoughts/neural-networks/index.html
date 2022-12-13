@@ -128,13 +128,13 @@ Shallow Networks Many domains require non-linear transforms of the features (see
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -709,6 +709,43 @@ Dec 3, 2022
       
       
       
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
       
         
         
@@ -867,7 +904,7 @@ Dec 3, 2022
 <a href="#training"><h3 id="training"><span class="hanchor" ariaLabel="Anchor"># </span>Training</h3></a>
 <p>Generally non-convex as W and v are both variables. As such, finding the global optimum is NP-Hard. We can use <a href="/thoughts/gradient-descent#stochastic-gradient-descent-sgd" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">gradient descent</a> but this is not guaranteed to reach a global optimum due to non-convexity.</p>
 <a href="#implicit-regularization"><h3 id="implicit-regularization"><span class="hanchor" ariaLabel="Anchor"># </span>Implicit Regularization</h3></a>
-<p>Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the fundamental tradeoff, doesn&rsquo;t it?</p>
+<p>Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the <a href="/thoughts/fundamental-tradeoff" rel="noopener" class="internal-link" data-src="/thoughts/fundamental-tradeoff">fundamental tradeoff</a>, doesn&rsquo;t it?</p>
 <p>However, learning theory (trade-off) results analyze global min with worst test error. The actual test error for different global minima will be better than worst case bound. Among the global minima, SGD is somehow converging to “good” ones! Empirically, using SGD is like using L2-Regularization, but the regularization is “implicit”.</p>
 <p>With small models, “minimize training error” leads to unique (or similar) global mins. With larger models, there is a lot of flexibility in the space of global mins (gap between best/worst).</p>
 <p>We get results that look like the following:</p>

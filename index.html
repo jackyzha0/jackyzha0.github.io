@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -303,6 +303,28 @@ if (!doNotTrack) {
                     <li>
                         <div class="section">
                             <div class="desc">
+                                <h3><a href="https://jzhao.xyz/posts/web-is-better-together/">LAN the Internet again</a></h3>
+                            </div>
+                            <p class="meta">
+                            3838 words on 
+Nov 29, 2022
+
+ 
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
+    
+    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
                                 <h3><a href="https://jzhao.xyz/posts/bft-json-crdt/">Building a BFT JSON CRDT</a></h3>
                             </div>
                             <p class="meta">
@@ -346,35 +368,30 @@ Aug 21, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/posts/digital-identity/">On Digital Identity</a></h3>
-                            </div>
-                            <p class="meta">
-                            1723 words on 
-Jul 16, 2022
-
- 
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/rhizome/">Rhizome</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/posts">See 24 more →</a>
+                <a href="/posts">See 25 more →</a>
             </div>
             <div class="delay t-4">
                 <h2>Recent Notes</h2>
                 
                 <ul class="delay stagger">
+                    
+                    <li>
+                        <div class="section">
+                            <div class="desc">
+                                <h3><a href="https://jzhao.xyz/thoughts/systems-design/">Systems Design</a></h3>
+                            </div>
+                            <p class="meta">
+                                91 words on Dec 13, 2022
+                            </p>
+                            <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+                        </div>
+                    </li>
                     
                     <li>
                         <div class="section">
@@ -393,27 +410,8 @@ Jul 16, 2022
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="section">
-                            <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Autoencoders/">Autoencoders</a></h3>
-                            </div>
-                            <p class="meta">
-                                81 words on Dec 8, 2022
-                            </p>
-                            <ul class="tags">
-    
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-    
-    <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-    
-</ul>
-
-                        </div>
-                    </li>
-                    
                 </ul>
-                <a href="/thoughts">See 538 more →</a>
+                <a href="/thoughts">See 540 more →</a>
             </div>
         </div>
         <article>

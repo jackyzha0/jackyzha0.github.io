@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -629,6 +629,10 @@ Mar 30, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/digital-identity/" data-ctx="peer-to-peer" data-src="/posts/digital-identity" class="internal-link">On Digital Identity</a>
       </li>
@@ -637,6 +641,12 @@ Mar 30, 2022
       
       <li>
         <a href="/posts/hackathons/" data-ctx="peer-to-peer" data-src="/posts/hackathons" class="internal-link">Hacking the Hackathon</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/posts/web-is-better-together/" data-ctx="thoughts/peer-to-peer" data-src="/posts/web-is-better-together" class="internal-link">LAN the Internet again</a>
       </li>
       
       

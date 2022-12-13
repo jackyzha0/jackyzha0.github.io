@@ -6,7 +6,17 @@
     <description>Recent content in CPSC340 on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/tags/CPSC340/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fundamental Tradeoff</title>
+      <link>https://jzhao.xyz/thoughts/fundamental-tradeoff/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/fundamental-tradeoff/</guid>
+      <description>The fundamental tradeoff has two parts:
+ How small you can make the training error How well training error approximates the test error.</description>
+    </item>
+    
     <item>
       <title>Autoencoders</title>
       <link>https://jzhao.xyz/thoughts/Autoencoders/</link>
@@ -180,7 +190,7 @@ More complicated models have even more hyper-parameters. This makes searching al
       
       <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
       <description>Better features usually help more than a better model. Good features would ideally:
- Allow learning with few examples, be hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
+ Allow learning with few examples, hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
     </item>
     
     <item>

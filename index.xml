@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Systems Design</title>
+      <link>https://jzhao.xyz/thoughts/systems-design/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/systems-design/</guid>
+      <description>Software Systems System design in this context means defining the architecture, product design, modules, interfaces, and data for a system according to given requirements.</description>
+    </item>
+    
+    <item>
       <title>AI Alignment</title>
       <link>https://jzhao.xyz/thoughts/AI-alignment/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
@@ -14,6 +23,16 @@
       <guid>https://jzhao.xyz/thoughts/AI-alignment/</guid>
       <description>How do we get [[posts/ai-systems|AI systems]] to align with real human [[thoughts/social contracts|social contracts and values]]?
 Mostly sourced from OpenAI&amp;rsquo;s approach to alignment</description>
+    </item>
+    
+    <item>
+      <title>Fundamental Tradeoff</title>
+      <link>https://jzhao.xyz/thoughts/fundamental-tradeoff/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/fundamental-tradeoff/</guid>
+      <description>The fundamental tradeoff has two parts:
+ How small you can make the training error How well training error approximates the test error.</description>
     </item>
     
     <item>
@@ -118,6 +137,15 @@ Shallow Networks Many domains require non-linear transforms of the features (see
       <guid>https://jzhao.xyz/thoughts/50-pounds-of-pots/</guid>
       <description>Quantity is the journey to quality
 The ceramics teacher announced on opening day that he was dividing the class into two groups.</description>
+    </item>
+    
+    <item>
+      <title>LAN the Internet again</title>
+      <link>https://jzhao.xyz/posts/web-is-better-together/</link>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/posts/web-is-better-together/</guid>
+      <description>This post is part of an ongoing letter series with Spencer and some other internet friends about what we think the future of the Internet could look like.</description>
     </item>
     
     <item>
@@ -410,7 +438,7 @@ This usually happens when people commit probabilistic fallacies (e.</description
       
       <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
       <description>Better features usually help more than a better model. Good features would ideally:
- Allow learning with few examples, be hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
+ Allow learning with few examples, hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
     </item>
     
     <item>
@@ -5172,7 +5200,7 @@ Thinking about understanding knowledge as climbing a mountain.</description>
       <pubDate>Fri, 18 Jun 2021 10:13:33 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/academia/</guid>
-      <description>The &amp;lsquo;rat race&amp;rsquo;  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
+      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
     </item>
     
     <item>

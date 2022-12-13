@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -346,6 +346,8 @@ Sep 23, 2022
   
   
 
+  
+  
 
 
 
@@ -353,6 +355,44 @@ Sep 23, 2022
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -441,7 +481,11 @@ Sep 23, 2022
 
 <p>To classify an example, we find the $k$ examples closest to the example and take the mode of the $k$ examples.</p>
 <p>Works based off of the assumption that similar features are likely to have similar labels</p>
-<p>As $k$ grows, training error increases and approximation error decreases.</p>
+<p>Effects on <a href="/thoughts/fundamental-tradeoff" rel="noopener" class="internal-link" data-src="/thoughts/fundamental-tradeoff">fundamental tradeoff</a>:</p>
+<ul>
+<li>As $k$ grows, training error increases and approximation error decreases.</li>
+<li>As $n$ grows, model complexity increases</li>
+</ul>
 <p>We measure distance using the &ldquo;norm&rdquo; between feature vectors. The most common norm is the L2-Norm or <a href="/thoughts/linear-algebra#vector-norm" rel="noopener" class="internal-link" data-src="/thoughts/linear-algebra">Euclidean Norm</a></p>
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <ul>

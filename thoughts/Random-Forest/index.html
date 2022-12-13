@@ -128,13 +128,13 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -425,7 +425,7 @@ Sep 23, 2022
 <p>Example of an <a href="/thoughts/Ensemble-method" rel="noopener" class="internal-link" data-src="/thoughts/Ensemble-method">Ensemble method</a>. They are non-parametric</p>
 <p>They work by taking a vote from a set of deep <a href="/thoughts/decision-tree" rel="noopener" class="internal-link" data-src="/thoughts/decision-tree">decision trees</a>. Two key ingredients to help ensure the deep decision trees make independent errors</p>
 <ol>
-<li>Bootstrapping: generate different &ldquo;versions&rdquo; of your dataset
+<li>Bootstrap sampling: generate different &ldquo;versions&rdquo; of your dataset
 <ul>
 <li>Usually done by sampling with replacement $n$ times, this creates a bootstrap sample</li>
 <li>On average, this maintains roughly the same distribution as the original</li>

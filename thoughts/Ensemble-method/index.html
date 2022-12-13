@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -422,13 +422,13 @@ Sep 23, 2022
 
 
 <p>Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it <strong>only works if the individual classifiers make independent errors</strong></p>
-<a href="#boosting"><h2 id="boosting"><span class="hanchor" ariaLabel="Anchor"># </span>Boosting</h2></a>
+<a href="#boostingstacking"><h2 id="boostingstacking"><span class="hanchor" ariaLabel="Anchor"># </span>Boosting/Stacking</h2></a>
 <p>Improves training error of classifiers with high $E_{train}$</p>
 <p>Models that use the boosting ensemble method:</p>
 <ol>
 <li><a href="/thoughts/XGBoost" rel="noopener" class="internal-link" data-src="/thoughts/XGBoost">XGBoost</a> (regularized regression trees)</li>
 </ol>
-<a href="#averaging"><h2 id="averaging"><span class="hanchor" ariaLabel="Anchor"># </span>Averaging</h2></a>
+<a href="#averagingvoting"><h2 id="averagingvoting"><span class="hanchor" ariaLabel="Anchor"># </span>Averaging/Voting</h2></a>
 <p>Improves approximation error of classifiers with high $E_{approx}$</p>
 <p>Models that uses the averaging ensemble method:</p>
 <ol>

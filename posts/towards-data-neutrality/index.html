@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1033,6 +1033,14 @@ Jul 14, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/" data-ctx="one without platform lock-in" data-src="/" class="internal-link">jzhao.xyz</a>
       </li>
@@ -1047,6 +1055,12 @@ Jul 14, 2022
       
       <li>
         <a href="/posts/the-fools-who-dream/" data-ctx="data neutrality" data-src="/posts/the-fools-who-dream" class="internal-link">Here&#39;s to the fools who dream</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/posts/web-is-better-together/" data-ctx="no longer the case on the web today" data-src="/posts/web-is-better-together" class="internal-link">LAN the Internet again</a>
       </li>
       
       

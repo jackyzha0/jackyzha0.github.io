@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="The &lsquo;rat race&rsquo;  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&rsquo; work."
+    content="The &lsquo;rat race&rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&rsquo; work."
   />
   <title>
     Academia
@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -339,7 +339,7 @@ Jun 18, 2021
 
 
 
-<a href="#the-rat-race"><h2 id="the-rat-race"><span class="hanchor" ariaLabel="Anchor"># </span>The &lsquo;rat race&rsquo;</h2></a>
+<a href="#the-rat-race-of-computer-science-academia"><h2 id="the-rat-race-of-computer-science-academia"><span class="hanchor" ariaLabel="Anchor"># </span>The &lsquo;rat race&rsquo; of Computer Science Academia</h2></a>
 <blockquote>
 <p>There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers&rsquo; work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. 
 <a href="https://twitter.com/shreydjain13" rel="noopener">Shrey Jain</a></p>
@@ -348,7 +348,7 @@ Jun 18, 2021
 <a href="https://evjang.com/2021/10/23/generalization.html" rel="noopener">Source: Just ask for Generalization</a></p>
 <p>My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that &ldquo;we need better algorithms&rdquo;. People pay lip service to &ldquo;simple ideas&rdquo; but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas.</p>
 <hr>
-<p>The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects</p>
+<p>The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <a href="#tunnel-vision"><h2 id="tunnel-vision"><span class="hanchor" ariaLabel="Anchor"># </span>Tunnel Vision</h2></a>
 <p>
 <a href="https://www.briantimar.com/notes/mimetic/mimetic/" rel="noopener">Source: Mimetic by <em>Brian Timar</em></a>, see also 
@@ -437,6 +437,15 @@ Jun 18, 2021
 <li>MSR Labs: Long term basic research</li>
 <li>MSR NExT: New experiences and technologies</li>
 </ol>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>From 
+<a href="https://stephenfay.xyz/" rel="noopener">Stephen Fay</a>: &ldquo;I don&rsquo;t really understand where this claim comes from. In physics there are many huge international collaborations spanning decades (e.g. large radio arrays in poles+south africa+Canada, LIGO + LISA, CERN, James Webb, building quantum computers is going to take large collaborations even if research goes underground). I can&rsquo;t really speak to other fields but it would be nice to have a bit more context to this claim.&rdquo; I&rsquo;ve now clarified this critique to mostly target computer science/theoretical fields. I think any research field with sufficient barrier entry/requirements for access to infrastructure/hardware/physical resources does necessarily require pooling of resources on an institutional and often multi-year/decade long timespan&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
 
 
     </article>

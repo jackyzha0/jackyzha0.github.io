@@ -128,13 +128,13 @@ Online Parks  Eli Pariser in Wired"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a4192133794b6f104d68130de80233e8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.fe32a7b20897b3a27757edf601164649.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -524,7 +524,7 @@ Jul 15, 2021
   href="/thoughts/exploit-explore/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/exploit-explore/">exploit explore</a>)</li>
-<li>Just permeable enough to be discovered by those curious enough to add their own drawings and words. Details just hidden enough to be carefully unearthed by the intentional visitor</li>
+<li>Just permeable enough to be discovered by those curious enough to add their own drawings and words. <strong>Details just hidden enough to be carefully unearthed by the intentional visitor</strong></li>
 </ol>
 <a href="#creating-digital-spaces"><h2 id="creating-digital-spaces"><span class="hanchor" ariaLabel="Anchor"># </span>Creating Digital Spaces</h2></a>
 <p>Can we create digital common spaces like parks and things without everyone online needing to be exceedingly intentioned?</p>
