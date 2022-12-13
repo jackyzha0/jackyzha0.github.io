@@ -31,7 +31,7 @@ $$\mathcal L(i,j) = \max(0, 1 - y_iw^Tx_i)$$
 
 See also: [[thoughts/SVM]]
 
-This is an upper bound on the 0-1 loss (as illustrated by the picture). For example, if the hingle loss is 18.3, then the number of training errors is at most 18.
+This is an upper bound on the 0-1 loss (as illustrated by the picture). For example, if the hinge loss is 18.3, then the number of training errors is at most 18.
 
 Similarly, we can use the log-sum-exp trick to get the logistic loss which is convex *and* differentiable.
 

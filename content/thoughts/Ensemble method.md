@@ -8,13 +8,13 @@ tags:
 
 Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it **only works if the individual classifiers make independent errors**
 
-## Boosting
+## Boosting/Stacking
 Improves training error of classifiers with high $E_{train}$
 
 Models that use the boosting ensemble method:
 1. [[thoughts/XGBoost]] (regularized regression trees)
 
-## Averaging
+## Averaging/Voting
 Improves approximation error of classifiers with high $E_{approx}$
 
 Models that uses the averaging ensemble method:

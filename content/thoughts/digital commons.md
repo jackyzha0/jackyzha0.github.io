@@ -24,7 +24,7 @@ By [Jon Borichevskiy](https://jon.bo/posts/internet-studio-gardens/)
 [[thoughts/software principles|Principles for Internet Spaces]]
 1. Places where they might drift over to peers in adjacent spaces for the chance – but not the obligation – to respond or otherwise reflect upon, completing the loop at the speed of a lazy river instead of a light circuit (see: [friction](thoughts/friction.md), [pace layers](thoughts/pace%20layers.md))
 2. There might even be different seasons of [play](thoughts/play.md): periods of divergent planting and nurturing followed by collective harvesting and pruning (see: [exploit explore](thoughts/exploit%20explore.md))
-3. Just permeable enough to be discovered by those curious enough to add their own drawings and words. Details just hidden enough to be carefully unearthed by the intentional visitor
+3. Just permeable enough to be discovered by those curious enough to add their own drawings and words. **Details just hidden enough to be carefully unearthed by the intentional visitor**
 
 ## Creating Digital Spaces
 Can we create digital common spaces like parks and things without everyone online needing to be exceedingly intentioned?

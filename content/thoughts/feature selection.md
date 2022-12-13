@@ -7,7 +7,7 @@ tags:
 ---
 
 Better features usually help more than a better model. Good features would ideally:
-- Allow learning with few examples, be hard to overfit with many examples
+- Allow learning with few examples, hard to overfit with many examples
 - Capture most important aspects of problem
 - Reflects invariances (generalize to new scenarios)
 
@@ -17,11 +17,7 @@ Find the features (columns) of ‘X’ that are important for predicting ‘y’
 - What types of new data should I collect?
 - How can I speed up computation?
 
-This can help us to remove features. Feature complexity is also correlated with the fundamental tradeoff. Generally, the fundamental tradeoff comes with two parts
-1. How small you can make the training error
-2. How well training error approximates the test error.
-
-Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results. 
+This can help us to remove features. Feature complexity is also correlated with the [[thoughts/fundamental tradeoff|fundamental tradeoff]]. Increased complexity leads to increased overfitting risk. Models (like linear regression) can overfit with large $d$ so reducing $d$ to only useful factors may improve results. 
 
 Generally, there are no right answers but there are wrong answers.
 

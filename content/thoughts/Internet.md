@@ -64,3 +64,13 @@ Gap of responsibility: Their designs naturally create gaps of responsibility for
 "Indeed, Wikipedia suffers from vandalism, and over time, its sustaining community has developed tools and practices for dealing with it that didn’t exist when Wikipedia was created. If they’d been implemented too soon, the extra hurdles to starting and editing pages might have deterred many of the contributions that got Wikipedia going to begin with."
 
 Curious about how this relates to [ephemereal content](thoughts/ephemereal%20content.md). Is moderation and managing rot thereby a form of [maintenance](thoughts/creation%20vs%20maintenance.md)?
+
+## Fire as a Metaphor for the web
+
+> Fire is a chief metaphor for the Internet: it is metaorganic; it extends the range of (informational) food; it empowers people to explore new time zones (the night) and territories of knowledge; it increases some kinds of sociability, demands ongoing maintenance, and produces dangers and externalities that did not exist before. Fire was the first World Wide Web, a fragile system for contagious spreads. Young people now stay up late looking at flickering firelights—TV screens, computer monitors, smart phones—as they once tended the communal well of flames. (Television has always been compared to the family hearth.)
+> 
+> ...
+> 
+> Internet videos for restoring the power of the embodied voice speaking around the campfire. We “burn” discs on our computers. Memes and themes tear through the Internet like prairie fires, or are retarded by censorship “firewalls” such as those of the Chinese government. The server farms that are key to the material infrastructure of the Internet generate vast amounts of heat, requiring air conditioning in addition to the electricity their processing takes up. (Data centers are often built in cold climates to save on cooling costs.) Touchscreen technologies fulfill a certain fantasy of touching flame. As Paul Frosh notes, “Television and computer screens (including iPads etc.) have some of the qualities of fire, especially self-illumination; unlike cinema and print, they are lit from within.” Information is irreducibly connected with heat and burning.
+> 
+> *(The Marvelous Clouds: Toward a Philosophy of Elemental Media)*

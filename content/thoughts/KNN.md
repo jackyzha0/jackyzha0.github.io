@@ -12,7 +12,9 @@ To classify an example, we find the $k$ examples closest to the example and take
 
 Works based off of the assumption that similar features are likely to have similar labels
 
-As $k$ grows, training error increases and approximation error decreases.
+Effects on [[thoughts/fundamental tradeoff]]:
+- As $k$ grows, training error increases and approximation error decreases.
+- As $n$ grows, model complexity increases
 
 We measure distance using the "norm" between feature vectors. The most common norm is the L2-Norm or [[thoughts/linear algebra#Vector Norm|Euclidean Norm]]
 

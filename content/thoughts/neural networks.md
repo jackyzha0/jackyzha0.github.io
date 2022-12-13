@@ -34,7 +34,7 @@ Losses:
 Generally non-convex as W and v are both variables. As such, finding the global optimum is NP-Hard. We can use [[thoughts/gradient descent#Stochastic Gradient Descent (SGD)]] but this is not guaranteed to reach a global optimum due to non-convexity.
 
 ### Implicit Regularization
-Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the fundamental tradeoff, doesn't it?
+Often, increasing $k$, the number of hidden units, improves test error. This seems at odds with the [[thoughts/fundamental tradeoff|fundamental tradeoff]], doesn't it?
 
 
 However, learning theory (trade-off) results analyze global min with worst test error. The actual test error for different global minima will be better than worst case bound. Among the global minima, SGD is somehow converging to “good” ones! Empirically, using SGD is like using L2-Regularization, but the regularization is “implicit”.

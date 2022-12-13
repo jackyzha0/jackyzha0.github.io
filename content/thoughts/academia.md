@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-## The 'rat race'
+## The 'rat race' of Computer Science Academia
 
 > There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers' work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. [Shrey Jain](https://twitter.com/shreydjain13)
 
@@ -15,7 +15,9 @@ My guess is that the research community tends to reward narratives that increase
 
 ---
 
-The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects
+The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects[^1]
+
+[^1]: From [Stephen Fay](https://stephenfay.xyz/): "I don't really understand where this claim comes from. In physics there are many huge international collaborations spanning decades (e.g. large radio arrays in poles+south africa+Canada, LIGO + LISA, CERN, James Webb, building quantum computers is going to take large collaborations even if research goes underground). I can't really speak to other fields but it would be nice to have a bit more context to this claim." I've now clarified this critique to mostly target computer science/theoretical fields. I think any research field with sufficient barrier entry/requirements for access to infrastructure/hardware/physical resources does necessarily require pooling of resources on an institutional and often multi-year/decade long timespan
 
 ## Tunnel Vision
 [Source: Mimetic by *Brian Timar*](https://www.briantimar.com/notes/mimetic/mimetic/), see also [mimetic](thoughts/mimetic.md)

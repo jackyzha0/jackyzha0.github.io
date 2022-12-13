@@ -113,3 +113,4 @@ $$(n + 2 \lfloor \frac m 2 \rfloor) \times (n + 2 \lfloor \frac m 2 \rfloor)$$
 More broadly for a set of $K$ filters of sizes $m_k \times m_k$ the resulting filter will have size 
 
 $$(m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor) \times (m_1 + 2 \sum_{k=2}^K \lfloor \frac{m_k}{2} \rfloor)$$
+
