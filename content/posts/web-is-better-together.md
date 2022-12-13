@@ -26,9 +26,9 @@ In 7th grade, our home room teacher showed us [Scratch](https://scratch.mit.edu/
 
 But the real spark of Scratch came from just how easy it was to make shared state. In Scratch, you can create a [globally consistent variable](https://en.scratch-wiki.info/wiki/Cloud_Data) that is synced across every one who ran my game just as easily as a piece of local state. Adding a leaderboard to my game was just as easy to replacing my variable with a Cloud Variable. Magic.
 
----
-
 With years of hindsight, I realize how much I took these experiences for granted. I took for granted how easy it was to make collaborative and multiplayer software.
+
+---
 
 These were my early days of being together in digital space.
 
@@ -86,9 +86,9 @@ How might we enable more people to become the software equivalent of a home cook
 
 We need to reduce the burden of building software. Not all tools need to be complex power tools that require degrees to operate. Progress can mean simplifying tools to enable the layman to shape his immediate environment to his taste. 
 
->  I hope this mode can paint the picture of software, not as a teleological instrument careening towards automation and ease, but as a medium for intimacy with the matter of our time (images, audio, video), yielding a sense of agency with what, to most, feels like an indelible substrate.
+> I hope this mode can paint the picture of software, not as a teleological instrument careening towards automation and ease, but as a medium for intimacy with the matter of our time (images, audio, video), yielding a sense of agency with what, to most, feels like an indelible substrate.
 >  
->  (Cristóbal Sciutto, *[Folk (Browser) Interfaces](https://cristobal.space/writing/folk)*)
+> (Cristóbal Sciutto, *[Folk (Browser) Interfaces](https://cristobal.space/writing/folk)*)
 
 The first step to this seems to be to dispel the myth that the internet and the web as a whole is something so vast and monolithic that it is unchangeable. I know we talked about this briefly on a walk this past summer, but it has been living rent-free in my head ever since.
 
@@ -122,11 +122,7 @@ It has become so difficult that running your own server is no longer the default
 
 Which, to be completely fair, is a valid approach to take. Security is a hard problem to solve and there are a lot of malicious people out on the web. But going down this path closes a lot of doors for what we *could* be doing with the internet.
 
-Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we've lost the ability to listen for others and serve services of our own.
-
-> "Computers with the ability to listen on the internet are called “hosts”, and there’s an interesting etymological implication there. Today, as home internet users, we are not hosts; and perhaps we are missing out, therefore, on a degree of etiquette, and conviviality, and satisfaction."
-> 
-> (Robin Sloan, *[Bad Hosts](https://www.robinsloan.com/lab/bad-hosts/)*)
+Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we've lost the ability to [listen for others and serve services of our own](https://www.robinsloan.com/lab/bad-hosts/).
 
 Centralized providers aren't necessarily better or worse than decentralized approaches, but its the path we take because it is easy and well-worn. Instead of saying that this is the *only* way to make a secure web, let us think about how we make a multiplayer, peer-to-peer web just as secure and easy to build on top of.
 
