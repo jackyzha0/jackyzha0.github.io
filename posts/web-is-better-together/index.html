@@ -133,7 +133,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b08cd4cc2747a48fb89c9879c401306.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f37e55fb5880c8bce20eb576b9991b4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1113,8 +1113,8 @@ Nov 29, 2022
 <a href="https://scratch.mit.edu/" rel="noopener">Scratch</a> for the first time. The majority of fun with Scratch was sharing. Posting graphics on the walls, modifying and experimenting with each other&rsquo;s work, and bringing the &ldquo;new&rdquo; products back to the original inventors.</p>
 <p>But the real spark of Scratch came from just how easy it was to make shared state. In Scratch, you can create a 
 <a href="https://en.scratch-wiki.info/wiki/Cloud_Data" rel="noopener">globally consistent variable</a> that is synced across every one who ran my game just as easily as a piece of local state. Adding a leaderboard to my game was just as easy to replacing my variable with a Cloud Variable. Magic.</p>
-<hr>
 <p>With years of hindsight, I realize how much I took these experiences for granted. I took for granted how easy it was to make collaborative and multiplayer software.</p>
+<hr>
 <p>These were my early days of being together in digital space.</p>
 <p>When I look at the web today, it feels like an abandoned mall. All I see are the echoes and ephemeral traces of strangers and friends, occasionally bumping into someone as they type a message in response to a post.</p>
 <p>Unfortunately the way the web is designed, it makes it pretty difficult to do all the collaborative software I dreamed would be possible when I was a kid. I&rsquo;m left wondering how we can make these sorts of experiences not just exclusive to video games and children&rsquo;s programming languages but to the software we use everyday.</p>
@@ -1156,9 +1156,9 @@ Nov 29, 2022
 <p>How might we enable more people to become the software equivalent of a home cook? To make software not just the tools of the elite but the layfolks as well. Just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and give it to the masses.</p>
 <p>We need to reduce the burden of building software. Not all tools need to be complex power tools that require degrees to operate. Progress can mean simplifying tools to enable the layman to shape his immediate environment to his taste.</p>
 <blockquote>
-<p> I hope this mode can paint the picture of software, not as a teleological instrument careening towards automation and ease, but as a medium for intimacy with the matter of our time (images, audio, video), yielding a sense of agency with what, to most, feels like an indelible substrate.
+<p>I hope this mode can paint the picture of software, not as a teleological instrument careening towards automation and ease, but as a medium for intimacy with the matter of our time (images, audio, video), yielding a sense of agency with what, to most, feels like an indelible substrate.
  
- (Cristóbal Sciutto, <em>
+(Cristóbal Sciutto, <em>
 <a href="https://cristobal.space/writing/folk" rel="noopener">Folk (Browser) Interfaces</a></em>)</p>
 </blockquote>
 <p>The first step to this seems to be to dispel the myth that the internet and the web as a whole is something so vast and monolithic that it is unchangeable. I know we talked about this briefly on a walk this past summer, but it has been living rent-free in my head ever since.</p>
@@ -1186,12 +1186,8 @@ Nov 29, 2022
 <p>It has become so difficult that running your own server is no longer the default, but rather hallmark of the &rsquo;low-tech movement&rsquo;. Indie game developers rarely make globally multiplayer games because running the servers to make it happen is way too expensive and complex to justify. Moxie Marlinspike 
 <a href="https://moxie.org/2022/01/07/web3-first-impressions.html" rel="noopener">once said</a> that &ldquo;Nobody wants to run their own servers.&rdquo; I think this is true given the current state of how hostile the web is to any sort of homebrew hosting</p>
 <p>Which, to be completely fair, is a valid approach to take. Security is a hard problem to solve and there are a lot of malicious people out on the web. But going down this path closes a lot of doors for what we <em>could</em> be doing with the internet.</p>
-<p>Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we&rsquo;ve lost the ability to listen for others and serve services of our own.</p>
-<blockquote>
-<p>&ldquo;Computers with the ability to listen on the internet are called “hosts”, and there’s an interesting etymological implication there. Today, as home internet users, we are not hosts; and perhaps we are missing out, therefore, on a degree of etiquette, and conviviality, and satisfaction.&rdquo;</p>
-<p>(Robin Sloan, <em>
-<a href="https://www.robinsloan.com/lab/bad-hosts/" rel="noopener">Bad Hosts</a></em>)</p>
-</blockquote>
+<p>Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we&rsquo;ve lost the ability to 
+<a href="https://www.robinsloan.com/lab/bad-hosts/" rel="noopener">listen for others and serve services of our own</a>.</p>
 <p>Centralized providers aren&rsquo;t necessarily better or worse than decentralized approaches, but its the path we take because it is easy and well-worn. Instead of saying that this is the <em>only</em> way to make a secure web, let us think about how we make a multiplayer, peer-to-peer web just as secure and easy to build on top of.</p>
 <blockquote>
 <p>I am starting to think 50% of the ease and power of centralization is just a stable, public IPv4 address.</p>
