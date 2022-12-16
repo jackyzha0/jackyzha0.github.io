@@ -133,7 +133,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7f37e55fb5880c8bce20eb576b9991b4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -380,6 +380,12 @@ Dec 10, 2022
 <p>System design in this context means defining the architecture, product design, modules, interfaces, and data for a system according to given requirements. The purpose of system design is to architect a system that can effectively support the functionality of a product or service.</p>
 <p>See also: <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></p>
 <ul>
+<li>Requirements
+<ul>
+<li>Functional: what does the system need to do?</li>
+<li>Non-functional: what properties does it need?</li>
+</ul>
+</li>
 <li>4 things to ask clarifications on
 <ol>
 <li>Users: who will use the system? how will they use it?</li>
