@@ -6,7 +6,7 @@ tags:
 - CPSC430
 ---
 
-**Social contract theory is the view that persons’ moral and/or political obligations are dependent upon a contract or agreement among them to form the society in which they live.**
+**Social contract theory is the view that persons’ moral and/or political obligations are dependent upon a contract or agreement among them to form the society in which they live.** It focuses on the individual and collective benefits of protecting certain human rights, such as the right to life, liberty, and property
 
 In his book *Leviathan*, Thomas Hobbes argues that without rules and a means of enforcing them, people would not bother to create anything of value, because nobody could be sure of keeping what they created. Collaboration (and thus society) is possible only when people mutually agree to follow certain guidelines
 

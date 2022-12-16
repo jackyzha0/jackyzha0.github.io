@@ -9,6 +9,14 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## December
+### December 14th
+- had a chat with brooklyn from Fission
+- more research direction refinement
+- released some unfinished work and asked people close to me to read it
+	- mmm ok been sitting on the feeling again
+	- i think it stems around sharing inherently incomplete/vague/in-progress work
+	- like a very weird frustration that comes from mismatches between my mental model <-> the work itself <-> the readers mental model
+
 ### December 1st
 - Well would you look at that... it's December
 - It's been a week but the hype from [[posts/bft-json-crdt|my BFT JSON CRDT project]] has finally started to cool

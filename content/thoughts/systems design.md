@@ -10,6 +10,9 @@ System design in this context means defining the architecture, product design, m
 
 See also: [[thoughts/system model]]
 
+- Requirements
+	- Functional: what does the system need to do?
+	- Non-functional: what properties does it need?
 - 4 things to ask clarifications on
 	1. Users: who will use the system? how will they use it?
 	2. Scale: how will our system will handle a growing amount of data?
