@@ -1,4 +1,12 @@
 ---
+title: "DSL"
+date: 2022-12-20
+tags:
+- seed
+---
+
+
+---
 title: "Domain Specific Language (DSL)"
 date: 2022-09-22
 tags:
@@ -135,7 +143,7 @@ We could just evaluate each AST node, but this places the responsibility on the 
 
 ```typescript
 export class Client() {
-	nodes: Element
+	nodes: Element[]
 	doSomething() {
 		const visitor: Visitor<T, U> = // idk some visitor to do something
 		for (node in this.nodes) {
@@ -145,21 +153,21 @@ export class Client() {
 }
 
 export interface Element {
-	accept: (visitor: Visitor<T, U>, param: T): void,
+	accept: (visitor: Visitor<T, U>, param: T): U,
 }
 
 // same for ConcreteB
 class ConcreteA implements Element {
-	accept(visitor: Visitor<T, U>, param: T) {
-		visitor.visit(this, param)
+	accept(visitor: Visitor<T, U>, param: T): U {
+		return visitor.visit(this, param)
 	}
 }
 
 export interface Visitor<T, U> {
 	// where ConreteA and ConcreteB both inherit from Element
 	// error checks here are runtime checks
-	visit: (a: ConcreteA, param: T): void,
-	visit: (b: ConcreteB, param: T): void,
+	visit: (a: ConcreteA, param: T): U,
+	visit: (b: ConcreteB, param: T): U,
 	...
 }
 ```

@@ -1,5 +1,5 @@
 ---
-title: "A case for the Precautionary Principle"
+title: "A Pragmatic Precautionary Principle"
 date: 2022-11-29
 tags:
 - fruit

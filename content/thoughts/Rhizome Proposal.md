@@ -93,6 +93,7 @@ Blog posts explaining distributed systems concepts as I learn and become more fa
 - Modelling distributed systems
 	- [<1kloc Raft Implementation](https://github.com/jackyzha0/miniraft)
 - [[posts/digital-identity|From legibility to identity]]
+- [[posts/web-is-better-together|LAN the Internet Again]]
 - ...more to come
 
 ---

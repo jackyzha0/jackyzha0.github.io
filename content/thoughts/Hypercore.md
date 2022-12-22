@@ -20,3 +20,4 @@ Connects peers using the Hyperswarm [[thoughts/DHT|DHT]] which is based off of [
 - Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously
 - [[thoughts/Hypercore|Hypercore]] also does not guarantee long-term write-once storage
 - Multi-writer support is still being worked on
+	- Hypercore is inherently single-writer due to it's append only log structure, and while they have some work on multiwriter it's very tied to the data model

@@ -104,6 +104,10 @@ I encourage you to imagine with me what a world like this could look like. I mis
 
 Think of this project as a [[thoughts/skyhooks|skyhook]]: a dream about a future so that we may build towards it.
 
+> We live in capitalism, its power seems inescapable – but then, so did the divine right of kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art.
+> 
+> (Ursula K. Le Guin)
+
 ## Q & A
 **This proposal has seen a lot of evolution. How does this current version differ from your initial proposal? What shaped your ideas?** 
 
