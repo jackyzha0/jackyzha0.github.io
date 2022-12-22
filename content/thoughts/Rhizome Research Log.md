@@ -10,12 +10,15 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## December
 ### December 14th
-- had a chat with brooklyn from Fission
-- more research direction refinement
-- released some unfinished work and asked people close to me to read it
-	- mmm ok been sitting on the feeling again
-	- i think it stems around sharing inherently incomplete/vague/in-progress work
-	- like a very weird frustration that comes from mismatches between my mental model <-> the work itself <-> the readers mental model
+- Had a wonderful chat with Brooklyn from Fission. We nerded out a lot about capabilities, lot's more reading for me to go through:
+	- *[Capability Myths Demolished](https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf)* 
+	- *Recovering from key compromise in decentralised access control systems* by Kleppmann and Bieniusa
+	- *[Robust Composition: Towards a Unified Approach to Access Control and Concurrency Control](http://erights.org/talks/thesis/markm-thesis.pdf)*
+- More research direction refinement!!
+- Released some unfinished work and asked people close to me to read it
+	- A lot of feelings stewing around feeling not confident in my own work after the average sentiment was lukewarm at best
+	- I think it stems around sharing inherently incomplete/vague/in-progress work. It's a very weird frustration that comes from mismatches between my mental model, the work itself, and the readers mental model
+	- But this is the great part of feedback!! Even though emotional brain says that "oh no, harsh feedback scary", it is actually really constructive and helps me articulate my thoughts better. I'm going to try to make a piece of writing I'm fully proud of when I finish exams (soon!)
 
 ### December 1st
 - Well would you look at that... it's December
