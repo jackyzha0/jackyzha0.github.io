@@ -16,7 +16,7 @@ When people use computer systems, their interaction is usually mediated by abstr
 
 At the formal end of the spectrum, knowledge-based systems require people to encode materials in a representation that can be fully interpreted by a computer program.
 
-A la Seeing like a State: excessive formalization may cause people to lose information that falls outside the prescribed structure, and in general require people to make knowledge explicit that may be difficult or undesirable to articulate
+A la [[thoughts/Seeing like a State|Seeing like a State]]: excessive formalization may cause people to lose information that falls outside the prescribed structure, and in general require people to make knowledge explicit that may be difficult or undesirable to articulate
 
 ## Examples
 - Experiences training information analysts to use NoteCards revealed that they had difficulties

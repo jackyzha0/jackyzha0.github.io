@@ -92,7 +92,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- "We assume that each replica has a distinct private key that can be used for digital signatures, and that the corresponding public key is known to all replicas. We assume that no replica knows the private key of another replica, and thus signatures cannot be forged"
 
 ### October 19th
-- Picked up *Seeing Like A State* again, it feels a lot more relevant to my research now for some reason
+- Picked up *[[thoughts/Seeing like a State|Seeing Like A State]]* again, it feels a lot more relevant to my research now for some reason
 	-  We can think of a [[thoughts/RDF|triple store]] as a distributed and fragmented SQL database, where instead of tables with rows and value, we have entities with attributes and values.
 		- Any application can declare new attributes or alias an attribute to a more common one
 		- The most important part is that applications that share attributes can automatically interoperate their data

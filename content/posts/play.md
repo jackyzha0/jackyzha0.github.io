@@ -20,7 +20,7 @@ Play is the act of enjoying the process, the means to the end. To have as much f
 
 Yet this definition still seems inadequate. What separates work from play? Are they mutually exclusive? What about those who cannot afford time out of their day to do anything *but work*? Those who play games professionally?
 
-Here, I turn to Jenny Odell's [*How to Do Nothing*](thoughts/How%20to%20do%20Nothing.md) and Bernard Herbert Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/The%20Grasshopper.md) to further explore this definition.
+Here, I turn to Jenny Odell's [*How to Do Nothing*](thoughts/How%20to%20do%20Nothing.md) and Bernard Herbert Suit's [*The Grasshopper: Games, Life, and Utopia*](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md) to further explore this definition.
 
 ## How to Do Nothing
 Odell’s book *How to Do Nothing* focuses on resisting the current attention economy. Doing ‘nothing’ within a productivity-obsessed environment can, in fact, help to restore communities, both locally and beyond.

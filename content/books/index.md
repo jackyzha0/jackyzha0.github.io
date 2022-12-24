@@ -21,11 +21,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Dream Machine** by M. Mitchell Waldrop
 
 ## Current
-* **Seeing Like A State** by James C. Scott
-* **Games: Agency as Art** by C. Thi Nguyen
+* **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 
 ## Past
 2022
+* **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 * **Permutation City** by Greg Egan
 - **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
 - **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
@@ -44,7 +44,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**A Tale for the Time Being**](thoughts/A%20Tale%20for%20the%20Time%20Being.md) by Ruth Ozeki
 * [**Atlas of AI**](thoughts/Atlas%20of%20AI.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro
-* [**The Grasshopper: Games, Life and Utopia**](thoughts/The%20Grasshopper.md) by Bernard Suits
+* [**The Grasshopper: Games, Life and Utopia**](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md) by Bernard Suits
 * **The Anthropocene Reviewed** by John Green
 * **Never Let Me Go** by Kazuo Ishiguro
 * [**From Counterculture to Cyberculture**](thoughts/From%20Counterculture%20to%20Cyberculture.md) by Fred Turner

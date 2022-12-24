@@ -7,7 +7,7 @@ tags:
 
 > The original design and ultimate destiny of the world wide web.
 
-Written by Tim Berners-Lee
+Book, written by Tim Berners-Lee
 
 ## A Brief History of the Web
 [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965. The [[thoughts/Internet|Internet]], as worked on by Donald Davis, Paul Barran, Vint Cerf, and Bob Kahn, were already becoming pervasive by the 1970s. Tim Berners-Lee came at the right time to marry them together into the Web.

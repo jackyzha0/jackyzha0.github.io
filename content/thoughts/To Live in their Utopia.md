@@ -50,7 +50,7 @@ There's no dataset in the world that adequately conveys white supremacy, or slav
 So at best these systems generate a facsimile of a world with the shadows of history cast on the ground skewed, flattened, and always lacking depth that only living these experiences can bring. Once again, creating a potemkin village of what the true problem is: an incredibly reductionist view on complex problems.
 
 ## Metis
-James C. Scott in Seeing like a State desribes *metis*, which he translates substantively as the intelligence required to adapt to new and changing circumstances.
+James C. Scott in [[thoughts/Seeing like a State|Seeing like a State]] desribes *metis*, which he translates substantively as the intelligence required to adapt to new and changing circumstances.
 
 Metis is more than constructing any number of "rules of thumb". Rather, knowing how and when to apply those rules in a concrete situtation is the essense of *metis*. Isn't *metis* then just the [frame problem](thoughts/frame%20problem.md)?
 

@@ -34,7 +34,7 @@ We often mark the boundaries of a magic circle through ceremonies:
 -   Ringing a gong before yoga practice
 -   Walking down the aisle at a wedding
 
-A lot of concepts similar to [The Grasshopper](thoughts/The%20Grasshopper.md), the lusory attitude as a [boundary](thoughts/boundary%20object.md)
+A lot of concepts similar to [The Grasshopper, Games, Life and Utopia](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md), the lusory attitude as a [boundary](thoughts/boundary%20object.md)
 
 ## Animals and Play
 [Graeber on *What's the point if we can't have fun?*](https://davidgraeber.org/articles/whats-the-point-if-we-cant-have-fun/)
