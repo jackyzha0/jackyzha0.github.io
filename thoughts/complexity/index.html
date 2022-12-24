@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,11 +352,32 @@ Dec 24, 2021
 
     
     
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
 
     
     
       
       
+      
+      
+      
+    
     
 
   
@@ -372,12 +393,29 @@ Dec 24, 2021
 
 
 
-<a href="#measures-of-complexity"><h3 id="measures-of-complexity"><span class="hanchor" ariaLabel="Anchor"># </span>Measures of Complexity</h3></a>
+<a href="#measures-of-complexity"><h2 id="measures-of-complexity"><span class="hanchor" ariaLabel="Anchor"># </span>Measures of Complexity</h2></a>
 <ul>
 <li>
 <a href="https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_dimension" rel="noopener">Vapnik–Chervonenkis dimension</a>: cardinality of the largest set of points that a binary classification algorithm can learn.</li>
 <li>
-<a href="https://en.wikipedia.org/wiki/Kolmogorov_complexity" rel="noopener">Kolmogorov complexity</a>: length of the shortest computer program that produces the object as output. (see also <a class="internal-link broken">Gall&rsquo;s Law</a>)</li>
+<a href="https://en.wikipedia.org/wiki/Kolmogorov_complexity" rel="noopener">Kolmogorov complexity</a>: length of the shortest computer program that produces the object as output. (see also <a href="/thoughts/Galls-law" rel="noopener" class="internal-link" data-src="/thoughts/Galls-law">Gall&rsquo;s Law</a>)</li>
+<li>Essential Complexity: irreducible, non-eliminable part of the system</li>
+<li>Accidental Complexity: everything else to make it work</li>
+</ul>
+<a href="#making-simple-software"><h2 id="making-simple-software"><span class="hanchor" ariaLabel="Anchor"># </span>Making Simple Software</h2></a>
+<p>
+<a href="https://vimeo.com/780013486" rel="noopener">Source talk by pvh</a></p>
+<ul>
+<li>Why is example code normally so simple? Well, it lives in an ideal world. It only cares about the happy path
+<ul>
+<li><strong>Defensive code is complex</strong></li>
+</ul>
+</li>
+<li>Vigilance works for small systems&hellip; but not large complex ones!
+<ul>
+<li>Type systems off-load mental state and assumptions about the code and make it explicit</li>
+</ul>
+</li>
 </ul>
 
 
@@ -469,7 +507,7 @@ Dec 24, 2021
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

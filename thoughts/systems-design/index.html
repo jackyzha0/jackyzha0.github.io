@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -331,6 +331,8 @@ Dec 10, 2022
   
   
   
+    
+  
 
   
 
@@ -350,6 +352,12 @@ Dec 10, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -393,6 +401,97 @@ Dec 10, 2022
 <li>Performance: how fast must our system be?</li>
 <li>Cost: what are our budget constraints?</li>
 </ol>
+</li>
+</ul>
+<a href="#latency-numbers"><h2 id="latency-numbers"><span class="hanchor" ariaLabel="Anchor"># </span>Latency Numbers</h2></a>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Latency Comparison Numbers
+</span></span><span class="line"><span class="cl">--------------------------
+</span></span><span class="line"><span class="cl">L1 cache reference                           0.5 ns
+</span></span><span class="line"><span class="cl">Branch mispredict                            5   ns
+</span></span><span class="line"><span class="cl">L2 cache reference                           7   ns                      14x L1 cache
+</span></span><span class="line"><span class="cl">Mutex lock/unlock                           25   ns
+</span></span><span class="line"><span class="cl">Main memory reference                      100   ns                      20x L2 cache, 200x L1 cache
+</span></span><span class="line"><span class="cl">Compress 1K bytes with Zippy            10,000   ns       10 us
+</span></span><span class="line"><span class="cl">Send 1 KB bytes over 1 Gbps network     10,000   ns       10 us
+</span></span><span class="line"><span class="cl">Read 4 KB randomly from SSD*           150,000   ns      150 us          ~1GB/sec SSD
+</span></span><span class="line"><span class="cl">Read 1 MB sequentially from memory     250,000   ns      250 us
+</span></span><span class="line"><span class="cl">Round trip within same datacenter      500,000   ns      500 us
+</span></span><span class="line"><span class="cl">Read 1 MB sequentially from SSD*     1,000,000   ns    1,000 us    1 ms  ~1GB/sec SSD, 4X memory
+</span></span><span class="line"><span class="cl">HDD seek                            10,000,000   ns   10,000 us   10 ms  20x datacenter roundtrip
+</span></span><span class="line"><span class="cl">Read 1 MB sequentially from 1 Gbps  10,000,000   ns   10,000 us   10 ms  40x memory, 10X SSD
+</span></span><span class="line"><span class="cl">Read 1 MB sequentially from HDD     30,000,000   ns   30,000 us   30 ms 120x memory, 30X SSD
+</span></span><span class="line"><span class="cl">Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Notes
+</span></span><span class="line"><span class="cl">-----
+</span></span><span class="line"><span class="cl">1 ns = 10^-9 seconds
+</span></span><span class="line"><span class="cl">1 us = 10^-6 seconds = 1,000 ns
+</span></span><span class="line"><span class="cl">1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Based off of the above:</p>
+<ul>
+<li>Read sequentially from HDD at 30 MB/s</li>
+<li>Read sequentially from 1 Gbps Ethernet at 100 MB/s</li>
+<li>Read sequentially from SSD at 1 GB/s</li>
+<li>Read sequentially from main memory at 4 GB/s</li>
+<li>6-7 world-wide round trips per second</li>
+<li>2,000 round trips per second within a data center</li>
+</ul>
+<a href="#real-time"><h2 id="real-time"><span class="hanchor" ariaLabel="Anchor"># </span>Real-time</h2></a>
+<ul>
+<li>WebRTC
+<ul>
+<li>Fast message propagation (no relaying)</li>
+<li>Encryption and authorization over untrusted signaling servers</li>
+<li>No setup required, public signaling servers are available</li>
+<li>Not suitable for a large number of peers (quadratic explosion of complexity)
+<ul>
+<li>Browser have a max on connectivity: ~100 diff connections but varies per browser</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WebSockets
+<ul>
+<li>Clients connect to a single endpoint over Websocket. The server distributes document updates and awareness information among clients.</li>
+<li>Solid choice if you want a central source that handles authentication and authorization</li>
+<li>Also send header information and cookies, so you can use existing authentication mechanisms with this server</li>
+</ul>
+</li>
+<li>Hypercore/Dat
+<ul>
+<li>Uses a DHT + NAT traversal utilities</li>
+<li>Low latency</li>
+<li>Medium reliability</li>
+</ul>
 </li>
 </ul>
 
@@ -455,7 +554,7 @@ Dec 10, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

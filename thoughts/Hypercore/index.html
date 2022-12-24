@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,78 +353,10 @@ Aug 11, 2022
 
     
     
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
     
     
     
     
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 
@@ -464,6 +396,12 @@ Aug 11, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -499,6 +437,98 @@ Aug 11, 2022
     
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
 
@@ -537,7 +567,11 @@ Aug 11, 2022
 <li>Not amazing availability, no incentive system for people to run nodes (though Dat is working on this using a blockchain-based reward system)</li>
 <li>Not exactly great local first support. Continues working locally without an internet connection but new users cannot connect or get an up-to-date version of your data. If the user wants to send data to someone else, both devices need to be online simultaneously</li>
 <li><a href="/thoughts/Hypercore" rel="noopener" class="internal-link" data-src="/thoughts/Hypercore">Hypercore</a> also does not guarantee long-term write-once storage</li>
-<li>Multi-writer support is still being worked on</li>
+<li>Multi-writer support is still being worked on
+<ul>
+<li>Hypercore is inherently single-writer due to it&rsquo;s append only log structure, and while they have some work on multiwriter it&rsquo;s very tied to the data model</li>
+</ul>
+</li>
 </ul>
 
 
@@ -673,7 +707,7 @@ Aug 11, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

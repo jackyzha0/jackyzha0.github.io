@@ -129,13 +129,13 @@ FOAF stands for &lsquo;friend of a friend&rsquo;
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -356,6 +356,12 @@ Jun 8, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -393,6 +399,12 @@ Jun 8, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -456,6 +468,19 @@ Jun 8, 2022
 <a href="http://xmlns.com/foaf/spec/#term_openid" rel="noopener">foaf:openid</a> relationship to a thing called 
 <a href="http://danbri.org/" rel="noopener">http://danbri.org/</a> and a 
 <a href="http://xmlns.com/foaf/spec/#term_img" rel="noopener">foaf:img</a> relationship to a thing referenced by a relative URI of /images/me.jpg</p>
+<a href="#adoption"><h2 id="adoption"><span class="hanchor" ariaLabel="Anchor"># </span>Adoption</h2></a>
+<p>
+<a href="https://www.joelonsoftware.com/2022/12/19/progress-on-the-block-protocol/" rel="noopener">Source</a></p>
+<blockquote>
+<p><strong>people will only add semantic markup to their web pages if doing so is easier than not.</strong></p>
+</blockquote>
+<p>Now imagine this world for a second:</p>
+<ul>
+<li>I want to insert a book into my blog post</li>
+<li>I type <strong>/book</strong></li>
+<li>A search box appears where I start typing in the title of my book and choose from an autocomplete list.</li>
+<li>Once I find the book, a block gets inserted in my blog post showing details of the book in a format I like, <em>with nice semantic markup behind the scenes</em>.</li>
+</ul>
 
 
     </article>
@@ -536,7 +561,7 @@ Jun 8, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

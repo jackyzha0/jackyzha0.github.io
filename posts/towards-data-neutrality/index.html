@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -367,6 +367,12 @@ Jul 14, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -404,6 +410,12 @@ Jul 14, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -441,7 +453,12 @@ Jul 14, 2022
 
     
     
-
+    
+    
+    
+      
+      
+    
     
     
       
@@ -450,74 +467,7 @@ Jul 14, 2022
       
       
       
-        
-        
-        
       
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 
@@ -562,78 +512,10 @@ Jul 14, 2022
 
     
     
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
     
     
     
     
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 
@@ -673,7 +555,12 @@ Jul 14, 2022
 
     
     
-
+    
+    
+    
+      
+      
+    
     
     
       
@@ -681,33 +568,8 @@ Jul 14, 2022
       
       
       
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
+      
+      
     
     
 
@@ -717,6 +579,11 @@ Jul 14, 2022
       
       
       
+      
+      
+        
+        
+        
       
     
     
@@ -747,41 +614,10 @@ Jul 14, 2022
 
     
     
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
     
     
     
     
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 
@@ -821,6 +657,12 @@ Jul 14, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -856,6 +698,270 @@ Jul 14, 2022
     
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
 
@@ -958,6 +1064,10 @@ Jul 14, 2022
 <p>You can find more technical details <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">in the proposal</a>, and rough notes from my day-to-day in my <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log</a>.</p>
 <p>I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.</p>
 <p>Think of this project as a <a href="/thoughts/skyhooks" rel="noopener" class="internal-link" data-src="/thoughts/skyhooks">skyhook</a>: a dream about a future so that we may build towards it.</p>
+<blockquote>
+<p>We live in capitalism, its power seems inescapable – but then, so did the divine right of kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art.</p>
+<p>(Ursula K. Le Guin)</p>
+</blockquote>
 <a href="#q--a"><h2 id="q--a"><span class="hanchor" ariaLabel="Anchor"># </span>Q &amp; A</h2></a>
 <p><strong>This proposal has seen a lot of evolution. How does this current version differ from your initial proposal? What shaped your ideas?</strong> </p>
 <p>The 
@@ -1116,7 +1226,7 @@ Jul 14, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

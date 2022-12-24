@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -379,74 +379,10 @@ Jun 23, 2021
 
     
     
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-
-  
-
     
     
     
     
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-      
-      
-    
-
-  
-
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
     
     
 
@@ -486,6 +422,23 @@ Jun 23, 2021
 
     
     
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
 
     
     
@@ -523,6 +476,12 @@ Jun 23, 2021
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -558,6 +517,98 @@ Jun 23, 2021
     
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
 
@@ -603,7 +654,7 @@ Jun 23, 2021
 <a
   href="/thoughts/game-theory/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/game-theory/">game theory</a>, <a class="internal-link broken">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a>, <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a>, <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine Faults</a></p>
+  data-src="/thoughts/game-theory/">game theory</a>, <a href="/thoughts/Zookos-Triangle" rel="noopener" class="internal-link" data-src="/thoughts/Zookos-Triangle">Zooko&rsquo;s Triangle</a>, <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a>, <a href="/thoughts/cascading-failures" rel="noopener" class="internal-link" data-src="/thoughts/cascading-failures">cascading failures</a>, <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine Faults</a></p>
 <a href="#two-generals-problem"><h3 id="two-generals-problem"><span class="hanchor" ariaLabel="Anchor"># </span>Two Generals Problem</h3></a>
 <p>This thought experiment meant to illustrate the pitfalls and design challenges of attempting to coordinate an action by communicating over an unreliable link. In the experiment, two generals are only able to communicate with one another by sending a messenger through enemy territory. The experiment asks how they might reach an agreement on the time to launch an attack, while knowing that any messenger they send could be captured. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying.</p>
 <p>Because acknowledgement of message receipt can be lost as easily as the original message, a potentially infinite series of messages is required to come to consensus.</p>
@@ -790,7 +841,7 @@ Jun 23, 2021
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

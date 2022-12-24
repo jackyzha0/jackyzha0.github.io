@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,6 +352,12 @@ Aug 16, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -387,6 +393,12 @@ Aug 16, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -417,6 +429,10 @@ Aug 16, 2022
 <p>Access control systems guarantee that every action performed adheres to a set of rules, which can be dynamically changed at runtime.</p>
 </blockquote>
 <p>In traditional systems, this guarantee can be enforced by relying on a central server. But this becomes a lot more difficult for eventually <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistent</a> systems (e.g. <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>)</p>
+<a href="#access-control-lists"><h3 id="access-control-lists"><span class="hanchor" ariaLabel="Anchor"># </span>Access Control Lists</h3></a>
+<p>An Access Control list is a data structure containing entries that specify an individual user or group’s rights to specific system objects</p>
+<a href="#capabilities"><h3 id="capabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Capabilities</h3></a>
+<p>The capability list of a user or a process or domain is a list of rights that it has on the various objects</p>
 
 
     </article>
@@ -487,7 +503,7 @@ Aug 16, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -333,6 +333,8 @@ Mar 30, 2022
   
   
   
+    
+  
 
   
 
@@ -352,6 +354,12 @@ Mar 30, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -370,6 +378,8 @@ Mar 30, 2022
   
   
   
+    
+  
 
   
 
@@ -389,6 +399,12 @@ Mar 30, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -407,6 +423,8 @@ Mar 30, 2022
   
   
   
+    
+  
 
   
 
@@ -426,6 +444,12 @@ Mar 30, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -444,6 +468,8 @@ Mar 30, 2022
   
   
   
+    
+  
 
   
 
@@ -463,6 +489,12 @@ Mar 30, 2022
     
     
 
+    
+    
+    
+    
+    
+    
     
     
 
@@ -481,6 +513,8 @@ Mar 30, 2022
   
   
   
+    
+  
 
   
 
@@ -500,6 +534,147 @@ Mar 30, 2022
     
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
 
@@ -528,6 +703,43 @@ Mar 30, 2022
 
 <p>In contrast to client-server models, peer-to-peer systems are <a href="/thoughts/decentralization" rel="noopener" class="internal-link" data-src="/thoughts/decentralization">decentralized</a> <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">networks</a> with no privileged nodes. Each node performs the same roles as any other.</p>
 <p>Examples include <a href="/thoughts/BitTorrent" rel="noopener" class="internal-link" data-src="/thoughts/BitTorrent">BitTorrent</a>, <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchains</a>, <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a></p>
+<a href="#databases"><h2 id="databases"><span class="hanchor" ariaLabel="Anchor"># </span>Databases</h2></a>
+<p>
+<a href="https://blog.mauve.moe/posts/peer-to-peer-databases" rel="noopener">Source</a></p>
+<ul>
+<li>Limitations of Operation logs
+<ul>
+<li>&ldquo;&hellip; scenarios where somebody is following a lot of users with a lot of history in SSB and needing to wait for all the logs to be processed, or when a new database replica is added and needs to fetch all the existing state (whether it&rsquo;s a regular DB or a blockchain full node).&rdquo;</li>
+<li>&ldquo;One way to get around needing to &lsquo;catch up&rsquo; with a writer is to get &lsquo;snapshots&rsquo; of the current state of the data from trusted peers&rdquo;
+<ul>
+<li>However, the naive approach does not work in peer-to-peer situations as we can&rsquo;t verify the legitimacy of the whole snapshot</li>
+<li>Can we utilize ZK proofs here?</li>
+</ul>
+</li>
+<li>Overall, unsolved. All of this together leads to either a <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">centralization</a> of power in long-lived nodes that do the replication for you due to preferential attachment</li>
+</ul>
+</li>
+<li>Actual databases use indices
+<ul>
+<li>&ldquo;For example, instead of an application getting a list of every single post in a database and filtering based on the &rsquo;tags&rsquo;, they can say <code>Get me the first 32 posts with the tag #cats</code> and the database engine will figure out how to do that for them.&rdquo;</li>
+<li>This can heavily optimize reads for client applications</li>
+</ul>
+</li>
+<li>Mauve suggests that we can actually solve these using <a href="/thoughts/Prolly-Trees" rel="noopener" class="internal-link" data-src="/thoughts/Prolly-Trees">Prolly Trees</a>
+<ul>
+<li>&ldquo;Everything that can apply to B+ Trees and database indexes, can now apply to Prolly Trees with the added ability of it being p2p, sparsely loaded, and mergable. In particular, when merging two datasets, you can easily skip over blocks that are the same on both sides without having to traverse into a tree, you can also insert entire ranges that are new into your tree withut having to fully traverse the individual items within.&rdquo;</li>
+<li>&ldquo;If these apps instead used p2p databases, they could drastically improve the initial load times. Instead of waiting for all of the history to sync, a client can focus on getting the set of most recently active users, and query their indexes for just the messages that are needed to render the current view. Detecting notifications like mentions or &ldquo;new messages&rdquo; can also be done by comparing your last seen state of somebody&rsquo;s index with the latest one. The app can then pull just the notifications since the last load (or last &ldquo;marked read&rdquo;) or ignore those indexes entirely if a user has notifications turned off for that channel.&rdquo;</li>
+</ul>
+</li>
+<li>This enables multi-tenant peer-to-peer <a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">search</a>
+<ul>
+<li>&ldquo;Another place where p2p search indexes would be useful is for indexing institutional data for text search. Specifically, it could be useful for projects doing archiving of data using 
+<a href="https://webrecorder.net/" rel="noopener">WebRecorder</a> to build up large datasets of crawled data. At the moment, it&rsquo;s possible to index data from these sources using traditional centralized databases like 
+<a href="https://www.elastic.co/elasticsearch/" rel="noopener">Elasticsearch</a>, but this requires running centralized infrastructure and doesn&rsquo;t allow for sharing indexes between groups easily.&rdquo;</li>
+<li>&ldquo;With p2p databases we can begin to build up search indexes collaboratively with community members, where individuals or smaller groups can participate in generating indexed data, and larger indexes being formed from combining the smaller ones.&rdquo;</li>
+</ul>
+</li>
+</ul>
 
 
     </article>
@@ -546,6 +758,10 @@ Mar 30, 2022
     
     
     
+    
+      
+      
+      
     
       
       
@@ -748,6 +964,12 @@ Mar 30, 2022
       
       
       <li>
+        <a href="/thoughts/small-technology/" data-ctx="thoughts/peer-to-peer" data-src="/thoughts/small-technology" class="internal-link">Small Technology</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/web3/" data-ctx="P2P" data-src="/thoughts/web3" class="internal-link">Web3</a>
       </li>
       
@@ -798,7 +1020,7 @@ Mar 30, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

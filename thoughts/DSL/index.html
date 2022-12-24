@@ -8,11 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Implementation Stages
+    content="title: &ldquo;Domain Specific Language (DSL)&rdquo; date: 2022-09-22 tags:
+ seed aliases: DSL   Implementation Stages
  Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
   />
   <title>
-    Domain Specific Language (DSL)
+    DSL
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -128,13 +129,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.eb41cc063c44881ef1d1b674d1e35cb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c55cbebb382235d9eefdcb79b8fb5a01.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -294,10 +295,10 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>Domain Specific Language (DSL)</h1>
+      <h1>DSL</h1>
       <p class="meta">
         Last updated 
-Sep 22, 2022
+Dec 20, 2022
 
  
           
@@ -383,6 +384,12 @@ Sep 22, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -450,6 +457,12 @@ Sep 22, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -517,6 +530,12 @@ Sep 22, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -582,6 +601,23 @@ Sep 22, 2022
     
     
 
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
     
     
 
@@ -656,6 +692,12 @@ Sep 22, 2022
 
     
     
+    
+    
+    
+    
+    
+    
 
     
     
@@ -680,6 +722,16 @@ Sep 22, 2022
 
 
 
+<hr>
+<p>title: &ldquo;Domain Specific Language (DSL)&rdquo;
+date: 2022-09-22
+tags:</p>
+<ul>
+<li>seed
+aliases:</li>
+<li>DSL</li>
+</ul>
+<hr>
 <p>Implementation Stages</p>
 <ol>
 <li>Tokenization <code>String -&gt; [Token]</code>
@@ -909,7 +961,7 @@ Sep 22, 2022
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">class</span> <span class="nx">Client() {</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">nodes</span>: <span class="kt">Element</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">nodes</span>: <span class="kt">Element</span><span class="p">[]</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">doSomething() {</span>
 </span></span><span class="line"><span class="cl">		<span class="kr">const</span> <span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;</span> <span class="o">=</span> <span class="c1">// idk some visitor to do something
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">for</span> <span class="p">(</span><span class="nx">node</span> <span class="k">in</span> <span class="k">this</span><span class="p">.</span><span class="nx">nodes</span><span class="p">)</span> <span class="p">{</span>
@@ -919,21 +971,21 @@ Sep 22, 2022
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Element</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="o">:</span> <span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="o">:</span> <span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">U</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// same for ConcreteB
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">class</span> <span class="nx">ConcreteA</span> <span class="kr">implements</span> <span class="nx">Element</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="nx">visitor</span><span class="p">.</span><span class="nx">visit</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">param</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">accept</span><span class="p">(</span><span class="nx">visitor</span>: <span class="kt">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">U</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="nx">visitor</span><span class="p">.</span><span class="nx">visit</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">param</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">Visitor</span><span class="p">&lt;</span><span class="nt">T</span><span class="err">,</span> <span class="na">U</span><span class="p">&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">// where ConreteA and ConcreteB both inherit from Element
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="c1">// error checks here are runtime checks
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">a</span>: <span class="kt">ConcreteA</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">b</span>: <span class="kt">ConcreteB</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span><span class="p">,</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">a</span>: <span class="kt">ConcreteA</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">U</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">visit</span><span class="o">:</span> <span class="p">(</span><span class="nx">b</span>: <span class="kt">ConcreteB</span><span class="p">,</span> <span class="nx">param</span>: <span class="kt">T</span><span class="p">)</span><span class="o">:</span> <span class="nx">U</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">	<span class="p">...</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
@@ -1028,7 +1080,7 @@ Sep 22, 2022
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
-            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">Github</a></li></ul>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
     </footer>
 </div>
 

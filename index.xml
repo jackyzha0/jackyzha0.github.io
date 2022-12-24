@@ -7,6 +7,67 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Games: Agency as Art</title>
+      <link>https://jzhao.xyz/thoughts/Games-Agency-as-Art/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Games-Agency-as-Art/</guid>
+      <description>See also: [[thoughts/games]], [[thoughts/The Grasshopper, Games, Life and Utopia]]
+Book Book, written by C. Thi Nguyen
+ Painting lets us record sights, music lets us record sounds, stories let us record narratives and games let us record agencies</description>
+    </item>
+    
+    <item>
+      <title>Small Technology</title>
+      <link>https://jzhao.xyz/thoughts/small-technology/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/small-technology/</guid>
+      <description>Source
+ Small Technology is everyday tools for everyday people designed to increase human welfare, not corporate profits.
+ Principles of small technology:</description>
+    </item>
+    
+    <item>
+      <title>Syndication</title>
+      <link>https://jzhao.xyz/thoughts/Syndication/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Syndication/</guid>
+      <description>POSSE  Source
+POSSE is an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere, the practice of posting content on your own site first, then publishing copies or sharing links to third parties (like social media silos) with original post links to provide viewers a path to directly interacting with your content.</description>
+    </item>
+    
+    <item>
+      <title>DSL</title>
+      <link>https://jzhao.xyz/thoughts/DSL/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/DSL/</guid>
+      <description>title: &amp;ldquo;Domain Specific Language (DSL)&amp;rdquo; date: 2022-09-22 tags:
+ seed aliases: DSL   Implementation Stages
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
+    </item>
+    
+    <item>
+      <title>Gordian Knot</title>
+      <link>https://jzhao.xyz/thoughts/Gordian-Knot/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Gordian-Knot/</guid>
+      <description>It is often used as a metaphor for an intractable problem (untying an impossibly tangled knot) solved easily by finding an approach to the problem that renders the perceived constraints of the problem moot</description>
+    </item>
+    
+    <item>
+      <title>Risk Homeostasis</title>
+      <link>https://jzhao.xyz/thoughts/Risk-Homeostasis/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Risk-Homeostasis/</guid>
+      <description>Did you know that when seatbelts were made mandatory, the number of deaths on the road actually didn&amp;rsquo;t decrease, they stayed roughly the same!</description>
+    </item>
+    
+    <item>
       <title>Systems Design</title>
       <link>https://jzhao.xyz/thoughts/systems-design/</link>
       <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
@@ -656,16 +717,6 @@ They work by taking a vote from a set of deep [[thoughts/decision tree|decision 
     </item>
     
     <item>
-      <title>Domain Specific Language (DSL)</title>
-      <link>https://jzhao.xyz/thoughts/DSL/</link>
-      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/DSL/</guid>
-      <description>Implementation Stages
- Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
-    </item>
-    
-    <item>
       <title>Ethics</title>
       <link>https://jzhao.xyz/thoughts/ethics/</link>
       <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
@@ -1024,7 +1075,7 @@ To achieve this performance improvement, SBFT uses a combination of four ingredi
       
       <guid>https://jzhao.xyz/thoughts/Weaving-the-Web/</guid>
       <description>The original design and ultimate destiny of the world wide web.
- Written by Tim Berners-Lee
+ Book, written by Tim Berners-Lee
 A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965.</description>
     </item>
     
@@ -1194,7 +1245,7 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
       
       <guid>https://jzhao.xyz/thoughts/Jestermaxxing/</guid>
       <description>Playfulness vs Epistemic Traps C. Thi Nguyen on Playfulness vs Epistemic Traps
-[[thoughts/play|Play]] is done for its own sake. We play because playing is fun, pleasurable, or satisfying, not because we want some kind of product or outcome ([[thoughts/The Grasshopper#Terminology|autotelic behaviour]]).</description>
+[[thoughts/play|Play]] is done for its own sake. We play because playing is fun, pleasurable, or satisfying, not because we want some kind of product or outcome ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]).</description>
     </item>
     
     <item>
@@ -2645,7 +2696,7 @@ In the context of marginalized knowers needing to model how their actions are pe
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/games/</guid>
-      <description>Related: game theory, game design, The Grasshopper, [[thoughts/Moving Castles|Moving Castles]]
+      <description>Related: game theory, game design, The Grasshopper, Games, Life and Utopia, [[thoughts/Moving Castles|Moving Castles]]
 Games are interesting when the underlying rules are simple (see: [[thoughts/Gall&amp;rsquo;s law|Gall&amp;rsquo;s Law]], low [[thoughts/complexity|Kolmogorov Complexity]]) but exhibit complex behaviour.</description>
     </item>
     
@@ -4041,10 +4092,10 @@ Reflections I did not think I would ever be this excited about meeting people at
     
     <item>
       <title>The Grasshopper: Games, Life and Utopia</title>
-      <link>https://jzhao.xyz/thoughts/The-Grasshopper/</link>
+      <link>https://jzhao.xyz/thoughts/The-Grasshopper-Games-Life-and-Utopia/</link>
       <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/The-Grasshopper/</guid>
+      <guid>https://jzhao.xyz/thoughts/The-Grasshopper-Games-Life-and-Utopia/</guid>
       <description>&amp;ldquo;It is the attempt to discover and formulate a definition, and to follow the implications of that discovery even when they lead in surprisingly, and sometimes disconcerting, directions.</description>
     </item>
     

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="See also: [[thoughts/games]], [[thoughts/The Grasshopper, Games, Life and Utopia]]
+Book Book, written by C. Thi Nguyen
+ Painting lets us record sights, music lets us record sounds, stories let us record narratives and games let us record agencies"
+  />
+  <title>
+    Games: Agency as Art
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.e48d3a3640b20984a244ec38e7d97219.min.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+
+
+
+  
+  
+
+
+    
+  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script src="https://jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js"></script>
+
+  
+  
+  
+  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  
+
+  
+  
+  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED =  true 
+    const LATEX_ENABLED =  true 
+    const PRODUCTION =  true 
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+     
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true 
+
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
+        }
+      
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Games: Agency as Art</h1>
+      <p class="meta">
+        Last updated 
+Dec 24, 2022
+
+ 
+          
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/Games%20Agency%20as%20Art.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>See also: <a href="/thoughts/games" rel="noopener" class="internal-link" data-src="/thoughts/games">games</a>, <a href="/thoughts/The-Grasshopper-Games-Life-and-Utopia" rel="noopener" class="internal-link" data-src="/thoughts/The-Grasshopper-Games-Life-and-Utopia">The Grasshopper, Games, Life and Utopia</a></p>
+<a href="#book"><h2 id="book"><span class="hanchor" ariaLabel="Anchor"># </span>Book</h2></a>
+<p>Book, written by C. Thi Nguyen</p>
+<blockquote>
+<p>Painting lets us record sights, music lets us record sounds, stories let us record narratives and games let us record <strong>agencies</strong></p>
+</blockquote>
+<ul>
+<li>Achievement play: pursuing winning for the sake of winning or the sake of something that follows from winning such as fame, goods, or money</li>
+<li>Striving play: pursuing winning for the sake of the struggle and the intrinsic act of playing the game itself.
+<ul>
+<li>Two clear parts:
+<ol>
+<li>In order to engage ourselves in striving play, I must be able to take on a <em>disposable end</em> that is treated as final. It builds the capacity to submerge ourselves in narrowed agential modes.
+<ul>
+<li>Being unable to do this leads to the diffident player, who can&rsquo;t bring themselves top care about the game &ldquo;What&rsquo;s the point? It&rsquo;s just a game&rdquo;</li>
+</ul>
+</li>
+<li>I must be able to bring myself to temporarily care about an end, and for that end to appear to me as final. But I must also be able to dispose of that end afterwards. This disposal helps build the capacity to step back and reflect on the value of these narrower states from a wider, less artificially clarified perspective. This turns out to be protective against the stickiness of narrowed agential modes and ends</li>
+</ol>
+</li>
+<li>A successful striving player is able to do both of the above</li>
+<li>Suits calls this the <a href="/thoughts/The-Grasshopper-Games-Life-and-Utopia#lusory-attitude-ndash-the-game-attitude" rel="noopener" class="internal-link" data-src="/thoughts/The-Grasshopper-Games-Life-and-Utopia">lusory attitude</a></li>
+<li>Stenros builds on Salen and Zimmerman&rsquo;s &lsquo;magic circle&rsquo;, arguing that this game state is an explicitly negotiated <a href="/thoughts/social-contracts" rel="noopener" class="internal-link" data-src="/thoughts/social-contracts">social contract</a> &ndash; an agreement to treat the in-game events as separated from the world</li>
+</ul>
+</li>
+<li>Aesthetics of games
+<ul>
+<li>Climbers praise particular climbs for having interesting movement or beautiful flow</li>
+<li>We can justify our pursuit of an arbitrary-seeming goal in terms of the aesthetic value of that struggle.</li>
+<li>Aesthetics of harmony: 3 levels
+<ol>
+<li>Harmony of solution: strictly a harmony between the solution and the obstacle. e.g. wow, what a brilliant and beautiful Chess move</li>
+<li>Harmony of action: your agency and action fitting the demands of the environment. e.g. during a difficult climb, figuring out you need to slide your hips over just enough to balance on a tiny foothold
+<ul>
+<li>This is a strict superset of the harmony of solution. It concerns not only how the solution fits the problem, but how my decision making and action generation were just right to generate the harmony of solution</li>
+</ul>
+</li>
+<li>Harmony of capacity: the experience of engaging your abilities to their fullest potential. Arises from a fit between one&rsquo;s maximum skill level (their limit) and the demands of the task
+<ul>
+<li>We want to hit this in <a href="/thoughts/game-design" rel="noopener" class="internal-link" data-src="/thoughts/game-design">game design</a> as much as possible</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Crafting Agency
+<ul>
+<li>A game designer crafts for players a very particular form of struggle, and does so by crafting both a temporary practical agency for us to inhabit and a practical environment for us to struggle against. Games are the art of agency</li>
+<li>Whatever is created has to be open, flexible, and malleable to allow players to appropriate, express, act and interact, make and become part of the form itself (Sicart 2014)</li>
+<li>Games are as interesting as their constraints. On a smaller scale, restrictions can actually help constitute entirely new actions. The action of &ldquo;making a basket&rdquo; in basketball is only meaningful because of the constraint of the game of basketball</li>
+<li>Its important to consider the &ldquo;ludic loop&rdquo; when designing games. A continuous stream of gentle challenges and in-game rewards, offered at the right pacing and tempo, seems to produce something of an addictive response</li>
+</ul>
+</li>
+<li>Agential Fluidity
+<ul>
+<li>We need to have final ends to avoid being bored. However, having final ends is no insurance against being bored. Instead, to remain interested in the world, we must be able to fluidly be able to change our interests</li>
+<li>I acquire my ends from my experience of value in an activity</li>
+<li>Game playing is a way to practical agential fluidity. Game playing builds familiarity with different agential modes &ndash; to help us build our inventory and know which one to pic &ndash; and the fluidity to shift easily in and out of our chosen mode</li>
+</ul>
+</li>
+<li>Self-effacing Ends
+<ul>
+<li>An end that cannot be achieved through direct pursuit, but only through pursuit of some other end. For example, meditation and achieving an empty mind, loving another, etc.</li>
+<li>Paradox of hedonism: one cannot achieve pleasure by pursuing it directly, but only by devoting oneself to some other send (Sidgwick, 1907)</li>
+</ul>
+</li>
+<li>The value contradiction that makes games valuable
+<ul>
+<li>When we succeed in games, we treat them as normal contexts in which success matters. But when we fail at games, we treat them as deflated contexts, telling ourselves that success and failure in games doesn&rsquo;t really matter anyway (Juul, 2013)</li>
+</ul>
+</li>
+<li>Learning new modes of agency
+<ul>
+<li>Shouldn&rsquo;t we develop autonomy on our own? How can games help with this?</li>
+<li>The counter argument is that any genuinely plausible view of autonomy and freedom must make room for the fact that we learn from others and using a variety of techniques at that</li>
+<li>Learning from others involves temporarily giving up our own agencies in a controlled and consensual way. When I take an art class, I put my attention in another&rsquo;s hands for a while. I look where they tell me to look, attend to the features they tell me to.</li>
+<li>Similarly, games are a temporary constriction of our own agencies leads us to develop more flexible agencies in the future</li>
+<li>Rigidity in the short term is sometimes crucial for flexibility in the long term.</li>
+</ul>
+</li>
+<li>Agential Distance
+<ul>
+<li>The gap that the game designer explicitly leaves for the player to occupy. This gap is shaped by the rules/constraints of the game</li>
+<li>Creative/sandbox games like Minecraft have a big agential distance whereas strict games like osu! have very little agential distance.</li>
+</ul>
+</li>
+<li>Gamification and Value Capture
+<ul>
+<li>A la <a class="internal-link broken">Seeing like a State</a>, metrics arose from the bureaucratic need to collate information. They also foster game-like motivations. They look a lot like points! But if we are too eager to recapture the pleasures of games in ordinary life, we may be excessively drawn to using such simplified measured in our practical reasoning.</li>
+<li>This is the danger of exporting back to the world a false expectation: that values should be clear, well-delineated, and uniform in all circumstances. Games threaten us with a fantasy of moral clarity.</li>
+<li>The right values may not be the clearest values. The false clarity of values that games provide may seduce us into oversimplifying our own values</li>
+<li>Consider a phenomenon I call <em>value capture</em>
+<ol>
+<li>Our values are, at first, rich and subtle (e.g. we value the happiness of a country&rsquo;s citizens)</li>
+<li>We encounter simplified (often <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">quantified</a>) versions of those values (e.g. we use GDP as a measure of its capacity to satisfy its citizen&rsquo;s desires)</li>
+<li>Those simplified versions take the place of our richer values in our reasoning and motivation (e.g. we begin valuing GDP itself and try to increase it in whatever way we can)</li>
+<li>Our lives get worse</li>
+</ol>
+</li>
+<li>Again, abstractions and simplifcations are not necessarily a bad thing
+<ul>
+<li>The arts, Dewey suggests, reach into the welter of practical life and create crystallized versions of practical experience. The arts create little unities. The value clarity and harmonious agency of game life is, in a sense, no worse than the unnatural harmoniousness of music, or the narrative clarity and unity of fictions. But value clarity becomes problematic when we export a need for it outside the game.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<a href="#podcast"><h2 id="podcast"><span class="hanchor" ariaLabel="Anchor"># </span>Podcast</h2></a>
+<p>On The Ezra Klein Show: 
+<a href="https://overcast.fm/&#43;oiPXNKQBw" rel="noopener">A Philosophy of Games that is really a Philosophy of Life with C. Thi Nguyen</a></p>
+<a href="#quantization"><h3 id="quantization"><span class="hanchor" ariaLabel="Anchor"># </span>Quantization</h3></a>
+<ul>
+<li>“The most important thing in my game designer toolbox is the point system because the point system tells the players what to care about.” &ndash; Reiner Knizia</li>
+<li>&ldquo;Quantified measures are extremely good tools for large-scale bureaucracies to organize themselves&rdquo;</li>
+<li>Metrics and quantities carve out all of the subtle nuance and all the weird little information that needs a lot of shared context to understand <em>so</em> that it can travel and be transported between contexts and let it aggregate easily
+<ul>
+<li>&ldquo;So if you have large-scale bureaucracies that need to be organized and function coherently, then you need these kind of simple, nuance-free packets of 
+
+
+
+
+
+<a
+  href="/thoughts/information/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/information/">information</a>&rdquo;</li>
+</ul>
+</li>
+<li>&ldquo;if you spend your life playing games, you’ll expect that value systems will be crisp, clear, well-defined, and quantified. And then you leave games, you’ll start looking around for— I don’t know— things to do, or institutions to be a part of, or jobs to do where the outcomes are clear, crystallized, quantified, and shared between people&rdquo;</li>
+</ul>
+<a href="#on-social-media"><h3 id="on-social-media"><span class="hanchor" ariaLabel="Anchor"># </span>On social media</h3></a>
+<ul>
+<li>A lot of times people click like because something made them laugh for a second, not because it moved them two weeks later.</li>
+</ul>
+<a href="#aesthetics"><h3 id="aesthetics"><span class="hanchor" ariaLabel="Anchor"># </span>Aesthetics</h3></a>
+<ul>
+<li>Object aesthetics: when an artist makes a thing like a painting. And you look at the thing and the thing is beautiful</li>
+<li>Process aesthetics: the artist makes a thing and you interact with the thing and you’re beautiful. Your actions are beautiful, or comic, or thrilling. (I think games fall under this later category)</li>
+</ul>
+<a href="#games-are-the-crystallization-of-doing"><h3 id="games-are-the-crystallization-of-doing"><span class="hanchor" ariaLabel="Anchor"># </span>Games are the crystallization of doing</h3></a>
+<ul>
+<li>The visual arts are the crystallization of seeing&hellip; music is a crystallization of hearing&hellip; fiction is a crystallization of story telling&hellip; games are the crystallization of doing.
+<ul>
+<li>The game designer tells you what abilities you have and what obstacles you’ll face, but most importantly, what goals you’ll have: games are the art form that works in the medium of agency itself</li>
+</ul>
+</li>
+<li>Follows Bernard&rsquo;s definition of a game in 
+
+
+
+
+
+<a
+  href="/thoughts/The-Grasshopper-Games-Life-and-Utopia/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/The-Grasshopper-Games-Life-and-Utopia/">The Grasshopper, Games, Life and Utopia</a>: to play a game is to voluntarily take on unnecessary obstacles for the sake of making possible the activity of overcoming them</li>
+</ul>
+<a href="#agency"><h3 id="agency"><span class="hanchor" ariaLabel="Anchor"># </span>Agency</h3></a>
+<ul>
+<li>I feel like games are like an existential balm for the horror of life. A lot of life is you don’t fit. You have to do things. And it sucks and it’s horrible and it’s boring. And in games, for once in your life, you know exactly what you’re doing and you know exactly that you can do it. And then you have just the right amount of ability to do it. It’s a feeling of concentrated, crystallized action</li>
+<li>Game designers have sculpted these little <strong>action universes</strong> so that we can step into them and just have this ecstasy over and over again.</li>
+<li>“I’m more worried about games breeding more Wall Street profiteers than I am about their breeding serial killers.”
+<ul>
+<li>The greatest power of games is that you can explore this landscape of different agencies. The greatest danger of games is that you can get sucked into this experience of just craving and wanting to be in a clear, crisp and gentle universe where you know exactly what to do and exactly how well it’s measured (similar concerns to 
+
+
+
+
+
+<a
+  href="/thoughts/Goodharts-Law/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/Goodharts-Law/">Goodhart&rsquo;s Law</a>).</li>
+<li>So I think that the body of games is a kind of library of agencies. The real promise of games, if you take them seriously, is that by playing a ton of them, you can traverse all the different possibilities of agency.</li>
+</ul>
+</li>
+</ul>
+<a href="#misc"><h3 id="misc"><span class="hanchor" ariaLabel="Anchor"># </span>Misc</h3></a>
+<ul>
+<li>&ldquo;&lsquo;Train&rsquo; &hellip; looks like, in many ways, a standard European board game. You’re building a railway network. You’re trying to optimize it. And over time the game reveals to you that what you’re actually doing is it’s Nazi Germany and you’re building the railway network to move people to concentration camps.&rdquo;</li>
+<li>
+<a href="https://buriedwithoutceremony.com/the-quiet-year" rel="noopener">https://buriedwithoutceremony.com/the-quiet-year</a></li>
+</ul>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/books/" data-ctx="thoughts/Games Agency as Art" data-src="/books" class="internal-link">Booklist</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/games/" data-ctx="thoughts/Games Agency as Art" data-src="/thoughts/games" class="internal-link">Games</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>
