@@ -3,6 +3,7 @@ title: "The Midnight Library"
 date: 2022-02-17
 tags:
 - seed
+- book
 ---
 
 *by Matthew Haig*

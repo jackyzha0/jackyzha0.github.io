@@ -119,7 +119,7 @@ Methods for [fault tolerance](thoughts/fault%20tolerance.md) in data transmissio
 		2. If so, give up
 	3. "Try again later" uses binary exponential backoff
 		1. Random backoff between 0 and power of 2 (n increases each time)
-	4. Turn-based access control
+	4. Turn-based [[thoughts/access control|access control]]
 		1. Controlled by centralized party - polls everyone
 		2. Controlled in a decentralized manner - passes a token between senders
 2. Full-duplex - both sides can transmit at the same time without interference/[NAT](thoughts/NAT.md)

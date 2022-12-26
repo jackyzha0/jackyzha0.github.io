@@ -3,6 +3,7 @@ title: "Games: Agency as Art"
 date: 2022-12-24
 tags:
 - seed
+- book
 ---
 
 See also: [[thoughts/games]], [[thoughts/The Grasshopper, Games, Life and Utopia]]
@@ -16,7 +17,7 @@ Book, written by C. Thi Nguyen
 - Striving play: pursuing winning for the sake of the struggle and the intrinsic act of playing the game itself.
 	- Two clear parts:
 		1. In order to engage ourselves in striving play, I must be able to take on a *disposable end* that is treated as final. It builds the capacity to submerge ourselves in narrowed agential modes.
-			- Being unable to do this leads to the diffident player, who can't bring themselves top care about the game "What's the point? It's just a game"
+			- Being unable to do this leads to the diffident player, who can't bring themselves to care about the game "What's the point? It's just a game"
 		2. I must be able to bring myself to temporarily care about an end, and for that end to appear to me as final. But I must also be able to dispose of that end afterwards. This disposal helps build the capacity to step back and reflect on the value of these narrower states from a wider, less artificially clarified perspective. This turns out to be protective against the stickiness of narrowed agential modes and ends
 	- A successful striving player is able to do both of the above
 	- Suits calls this the [[thoughts/The Grasshopper, Games, Life and Utopia#Lusory Attitude -- the game attitude|lusory attitude]]
@@ -41,7 +42,7 @@ Book, written by C. Thi Nguyen
 	- Game playing is a way to practical agential fluidity. Game playing builds familiarity with different agential modes -- to help us build our inventory and know which one to pic -- and the fluidity to shift easily in and out of our chosen mode
 - Self-effacing Ends
 	- An end that cannot be achieved through direct pursuit, but only through pursuit of some other end. For example, meditation and achieving an empty mind, loving another, etc.
-	- Paradox of hedonism: one cannot achieve pleasure by pursuing it directly, but only by devoting oneself to some other send (Sidgwick, 1907)
+	- Paradox of hedonism: one cannot achieve pleasure by pursuing it directly, but only by devoting oneself to some other end (Sidgwick, 1907)
 - The value contradiction that makes games valuable
 	- When we succeed in games, we treat them as normal contexts in which success matters. But when we fail at games, we treat them as deflated contexts, telling ourselves that success and failure in games doesn't really matter anyway (Juul, 2013)
 - Learning new modes of agency
@@ -64,7 +65,6 @@ Book, written by C. Thi Nguyen
 		4. Our lives get worse
 	 - Again, abstractions and simplifcations are not necessarily a bad thing
 		 - The arts, Dewey suggests, reach into the welter of practical life and create crystallized versions of practical experience. The arts create little unities. The value clarity and harmonious agency of game life is, in a sense, no worse than the unnatural harmoniousness of music, or the narrative clarity and unity of fictions. But value clarity becomes problematic when we export a need for it outside the game.
-
 
 ## Podcast
 On The Ezra Klein Show: [A Philosophy of Games that is really a Philosophy of Life with C. Thi Nguyen](https://overcast.fm/+oiPXNKQBw)

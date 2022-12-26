@@ -24,7 +24,7 @@ Moving Castles should reflect the following principles (adapted from the [design
 
 Early internet: individual gardens linked by hyperlinks, tended to by all-powerful wizards who could build any worlds they wanted. Very libertarian
 
-Proposing: a bazaar, no access control and everybody plays by the same rules. Where each visitor has the power to change the world around them, as long as they respect the physics of the world.
+Proposing: a bazaar, no [[thoughts/access control|access control]] and everybody plays by the same rules. Where each visitor has the power to change the world around them, as long as they respect the physics of the world.
 
 You could visit these other gardens that wizards built but in doing so, you lose all of your wizardly powers in their domain.
 

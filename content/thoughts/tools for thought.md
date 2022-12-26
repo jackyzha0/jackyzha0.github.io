@@ -17,6 +17,15 @@ Questions:
 
 Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching
 
+## Capture-organize-synthesize loop
+[Source](https://subconscious.substack.com/p/unconscious-r-and-d)
+
+-  Why do file systems force you to name a file (_synthesize_), and place it in a folder (_organize_) before you can write in it (_capture_)?
+-  Why do Word Processors present you with a blank page (_synthesize_) instead of offering scratch notes (_capture_) that are relevant (_organize_) to your writing goals?
+-  Why do we expect ourselves to create good ideas from nothing (_synthesize_)? It’s much easier to generate ideas when you have lots of material (_capture_) clustered by themes and relationships (_organize_)
+
+Mixing up the order of _capture-organize-synthesize_ causes friction. It forces us to make decisions before we’re ready.
+
 ## Thought as a technology
 [Source](https://cognitivemedium.com/tat/index.html)
 

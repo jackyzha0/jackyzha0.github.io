@@ -3,6 +3,7 @@ title: "Archipelago"
 date: 2022-02-18
 tags:
 - seed
+- book
 ---
 
 *by Édouard Glissant*

@@ -3,6 +3,7 @@ title: "The Grasshopper: Games, Life and Utopia"
 date: 2021-11-07
 tags:
 - seed
+- book
 ---
 
 "It is the attempt to discover and formulate a definition, and to follow the implications of that discovery even when they lead in surprisingly, and sometimes disconcerting, directions."

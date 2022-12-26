@@ -3,6 +3,7 @@ title: "Atlas of AI"
 date: 2021-11-14
 tags:
 - seed
+- book
 ---
 
 "It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world." -- they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.

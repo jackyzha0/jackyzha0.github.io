@@ -3,6 +3,7 @@ title: "Mindstorms"
 date: 2021-06-16T08:59:11-04:00
 tags:
 - seed
+- book
 ---
 
 Lots of really good [constructionist](thoughts/constructionist.md) theory here :))

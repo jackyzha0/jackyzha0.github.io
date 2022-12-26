@@ -7,6 +7,13 @@ tags:
 
 Not to be confused for the web. While the terms web and Internet are often used interchangeably in the media, they refer to different systems. The web is an information network, whose nodes are documents. In contrast the Internet is an infrastructural network, whose nodes are routers.
 
+## Capital I Internet
+[Source](https://apenwarr.ca/log/?m=202007)
+
+> When I first joined the Internet in the 1990s, I found some now-long-lost introductory tutorial. It talked about the difference between an internet (lowercase i) and the Internet (capital I). An internet is "any network that connects smaller networks together." The Internet is... well... it turns out that you don't need more than one internet. If you have two internets, it is nearly unavoidable that someone will soon figure out how to connect them together. All you need is one person to build that one link, and your two internets become one. By induction then, the Internet is the end result when you make it easy enough for a single motivated individual to join one internet to another, however badly.
+
+See: [[thoughts/Postel's Law]]
+
 ## [Niche at scale](thoughts/niche%20at%20scale.md)
 
 > **The Internet allows you to scale any niche obsession**

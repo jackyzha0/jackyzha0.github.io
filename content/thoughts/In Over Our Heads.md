@@ -3,6 +3,7 @@ title: "In Over Our Heads: The Mental Demands of Modern Life"
 date: 2022-03-07
 tags:
 - seed
+- book
 ---
 
 In Over Our Heads is about the societal expectations of higher orders of consciousness that most of us do not have. 

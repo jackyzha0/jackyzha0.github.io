@@ -3,6 +3,7 @@ title: "Visualization"
 date: 2022-07-10
 tags:
 - seed
+- book
 ---
 
 Mostly from *Envisioning Information* by Edward R. Tufte

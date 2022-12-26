@@ -3,6 +3,7 @@ title: "A Tale for the Time Being"
 date: 2021-12-21
 tags:
 - sapling
+- book
 ---
 
 the amount of depth being slowly unravelled over time is astounding

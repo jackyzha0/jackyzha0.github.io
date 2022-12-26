@@ -3,6 +3,7 @@ title: "Tools for Conviviality"
 date: 2022-07-17
 tags:
 - seed
+- book
 ---
 
 Ivan Illich on the proper use of technology to reclaim agency and practical knowledge for the average citizen.

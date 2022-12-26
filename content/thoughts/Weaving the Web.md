@@ -3,6 +3,7 @@ title: "Weaving the Web"
 date: 2022-08-09
 tags:
 - sapling
+- book
 ---
 
 > The original design and ultimate destiny of the world wide web.

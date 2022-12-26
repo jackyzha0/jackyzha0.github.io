@@ -3,6 +3,7 @@ title: "The Making and Maintenance of Open Source Software"
 date: 2021-10-25
 tags:
 - seed
+- book
 ---
 
 Full post: [A case for funding Open Source](posts/paid-open-source.md)
