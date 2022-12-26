@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9fe76560798ca9b98a9bfd1609231457.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a260f55def14ad668c4a79252d8f7a7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,26 @@ Nov 21, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Pareto-optimality/" class="internal-link" data-src="/thoughts/Pareto-optimality/">Pareto optimality</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Nov 21, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/sequential-games/" class="internal-link" data-src="/thoughts/sequential-games/">Sequential Games</a></h3>
             </div>
             <div class="spacer"></div>
@@ -466,26 +486,6 @@ Oct 28, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 28, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Newcombs-Problem/" class="internal-link" data-src="/thoughts/Newcombs-Problem/">Newcomb&#39;s Problem</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
                 
             </ul>
         </div>

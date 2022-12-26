@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9fe76560798ca9b98a9bfd1609231457.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a260f55def14ad668c4a79252d8f7a7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -485,18 +485,7 @@ Nov 1, 2022
     
     
     
-      
-      
     
-    
-    
-      
-      
-      
-      
-      
-      
-      
     
     
 
@@ -504,6 +493,10 @@ Nov 1, 2022
     
       
       
+      
+      
+      
+    
     
 
   
@@ -710,7 +703,7 @@ Nov 1, 2022
 </blockquote>
 <p>When people use computer systems, their interaction is usually mediated by abstract representations that describe and constrain some aspect of their work or its content. Computer systems use these abstract representations to support their users’ activities in a variety of ways, like for <a href="/thoughts/information-retrieval" rel="noopener" class="internal-link" data-src="/thoughts/information-retrieval">information retrieval</a>. These abstractions are frequently referred to as formalisms.</p>
 <p>At the formal end of the spectrum, knowledge-based systems require people to encode materials in a representation that can be fully interpreted by a computer program.</p>
-<p>A la <a class="internal-link broken">Seeing like a State</a>: excessive formalization may cause people to lose information that falls outside the prescribed structure, and in general require people to make knowledge explicit that may be difficult or undesirable to articulate</p>
+<p>A la <a href="/thoughts/Seeing-like-a-State" rel="noopener" class="internal-link" data-src="/thoughts/Seeing-like-a-State">Seeing like a State</a>: excessive formalization may cause people to lose information that falls outside the prescribed structure, and in general require people to make knowledge explicit that may be difficult or undesirable to articulate</p>
 <a href="#examples"><h2 id="examples"><span class="hanchor" ariaLabel="Anchor"># </span>Examples</h2></a>
 <ul>
 <li>Experiences training information analysts to use NoteCards revealed that they had difficulties
