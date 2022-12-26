@@ -183,3 +183,5 @@ Let's make the web feel local and multi-player again. Let's LAN the internet aga
 Hello stranger! If you're still reading by this point, then you've probably been thinking about similar things for a while. I want to extend [an open invite](https://we-b.site/) to you to lend your thoughts too.
 
 Join us as we write about what it would be like to make these fictions become reality because the way these ideas become powerful and revolutionary is to have more people contribute to them.
+
+*Thanks again to [Anson](https://www.ansonyu.me/), [Spencer](https://www.spencerchang.me/), and [Vivian](https://vivianmeng.com/) for some really clarrifying feedback.*

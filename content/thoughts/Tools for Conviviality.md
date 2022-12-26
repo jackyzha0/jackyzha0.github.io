@@ -24,7 +24,7 @@ Illich seems to advocate for a world where we consume less, depend less on syste
 ### Acceleration and law
 "Speed is one of the means by which an efficiency-oriented society is stratified... Fostered addiction to speed is also a means of social control."
 
-"Society can be destroyed when ... cancerous acceleration enforces social change at a rate that rules out legal, cultural, and political precedents as formal guidelines to present behaviour."
+"Society can be destroyed when ... cancerous acceleration enforces social change at a rate that rules out legal, cultural, and political precedents as formal guidelines to pres**ent behaviour."
 
 "Convivial reconstruction requires limits on the rate of compulsory change. An unlimited rate of change makes lawful community meaningless. Law is based on the retrospective judgement of peers about circumstances that occur ordinarily and are likely to occur again. If the rate of change which affects all circumstances accelerates beyond some point, such judgements cease to be valid. Lawful society breaks down. Social control does not accommodate community participation and becomes the function of experts and the elite."
 
