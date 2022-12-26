@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -439,6 +439,15 @@ Oct 30, 2021
 <li>How can we make mixed media first-class? Allow drawing, images, and video? Bring back the overhead projector!</li>
 </ol>
 <p>Can we do this on a browser-level rather than just a standalone app? Building in curius.app-esque support, annotations, note-taking, etc. Minimize context switching</p>
+<a href="#capture-organize-synthesize-loop"><h2 id="capture-organize-synthesize-loop"><span class="hanchor" ariaLabel="Anchor"># </span>Capture-organize-synthesize loop</h2></a>
+<p>
+<a href="https://subconscious.substack.com/p/unconscious-r-and-d" rel="noopener">Source</a></p>
+<ul>
+<li>Why do file systems force you to name a file (<em>synthesize</em>), and place it in a folder (<em>organize</em>) before you can write in it (<em>capture</em>)?</li>
+<li>Why do Word Processors present you with a blank page (<em>synthesize</em>) instead of offering scratch notes (<em>capture</em>) that are relevant (<em>organize</em>) to your writing goals?</li>
+<li>Why do we expect ourselves to create good ideas from nothing (<em>synthesize</em>)? It’s much easier to generate ideas when you have lots of material (<em>capture</em>) clustered by themes and relationships (<em>organize</em>)</li>
+</ul>
+<p>Mixing up the order of <em>capture-organize-synthesize</em> causes friction. It forces us to make decisions before we’re ready.</p>
 <a href="#thought-as-a-technology"><h2 id="thought-as-a-technology"><span class="hanchor" ariaLabel="Anchor"># </span>Thought as a technology</h2></a>
 <p>
 <a href="https://cognitivemedium.com/tat/index.html" rel="noopener">Source</a></p>

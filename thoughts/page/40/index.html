@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,24 @@ Dec 12, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/mental-model/" class="internal-link" data-src="/thoughts/mental-model/">Mental Models</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 12, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/page-layout/" class="internal-link" data-src="/thoughts/page-layout/">Page Layout</a></h3>
             </div>
             <div class="spacer"></div>
@@ -449,24 +467,6 @@ Nov 24, 2021
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/evaporative-cooling/" class="internal-link" data-src="/thoughts/evaporative-cooling/">Evaporative Cooling Effect</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Nov 23, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Do-Artifacts-Have-Politics/" class="internal-link" data-src="/thoughts/Do-Artifacts-Have-Politics/">Do Artifacts Have Politics</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

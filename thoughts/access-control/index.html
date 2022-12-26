@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -429,10 +429,48 @@ Aug 16, 2022
 <p>Access control systems guarantee that every action performed adheres to a set of rules, which can be dynamically changed at runtime.</p>
 </blockquote>
 <p>In traditional systems, this guarantee can be enforced by relying on a central server. But this becomes a lot more difficult for eventually <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistent</a> systems (e.g. <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>)</p>
+<p>There is a  common perception of ACL systems and capability systems as merely alternative perspectives on Lampson’s access matrix</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Asset 1</th>
+<th>Asset 2</th>
+<th>File</th>
+<th>Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Role 1</td>
+<td>read, write, execute, own</td>
+<td>execute</td>
+<td>read</td>
+<td>write</td>
+</tr>
+<tr>
+<td>Role 2</td>
+<td>read</td>
+<td>read, write, execute, own</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <a href="#access-control-lists"><h3 id="access-control-lists"><span class="hanchor" ariaLabel="Anchor"># </span>Access Control Lists</h3></a>
 <p>An Access Control list is a data structure containing entries that specify an individual user or group’s rights to specific system objects</p>
+<p>In the Lampson&rsquo;s access matrix, they are normally seen as the columns.</p>
 <a href="#capabilities"><h3 id="capabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Capabilities</h3></a>
-<p>The capability list of a user or a process or domain is a list of rights that it has on the various objects</p>
+<p>The capability list of a user or a process or domain is a list of rights that it has on the various objects.</p>
+<p>In the Lampson&rsquo;s access matrix, they are normally seen as the rows.</p>
+<p>Capabilities provide much better support for least-privilege operation and for avoiding confused deputy problems</p>
+<p>From <em>
+<a href="https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf" rel="noopener">Capability Myths Demolished</a></em>:</p>
+<ol>
+<li>Equivalence Myth: access control list systems and capability systems are formally equivalent</li>
+<li>Confinement Myth: capability systems cannot enforce confinement</li>
+<li>Irrevocability Myth: capability-based access cannot be revoked</li>
+</ol>
 
 
     </article>
@@ -458,8 +496,58 @@ Aug 16, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/posts/digital-identity/" data-ctx="access control" data-src="/posts/digital-identity" class="internal-link">On Digital Identity</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/LR-Permissionless-Result/" data-ctx="access control" data-src="/thoughts/LR-Permissionless-Result" class="internal-link">LR Permissionless Result</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Moving-Castles/" data-ctx="access control" data-src="/thoughts/Moving-Castles" class="internal-link">Moving Castles</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="access control" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Solid/" data-ctx="access control" data-src="/thoughts/Solid" class="internal-link">Solid</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/internet-computing/" data-ctx="access control" data-src="/thoughts/internet-computing" class="internal-link">Internet Computing</a>
       </li>
       
       

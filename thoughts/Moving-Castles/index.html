@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -372,6 +372,49 @@ Feb 12, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -438,7 +481,7 @@ Feb 12, 2022
 <p>
 <a href="https://www.youtube.com/watch?v=aFKy6QsbBz4" rel="noopener">Source: A story of all powerful wizards - 20th of Nov 2021 @ 0xPARC Boston by <em>Justin Glibert</em></a></p>
 <p>Early internet: individual gardens linked by hyperlinks, tended to by all-powerful wizards who could build any worlds they wanted. Very libertarian</p>
-<p>Proposing: a bazaar, no access control and everybody plays by the same rules. Where each visitor has the power to change the world around them, as long as they respect the physics of the world.</p>
+<p>Proposing: a bazaar, no <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a> and everybody plays by the same rules. Where each visitor has the power to change the world around them, as long as they respect the physics of the world.</p>
 <p>You could visit these other gardens that wizards built but in doing so, you lose all of your wizardly powers in their domain.</p>
 <p>Are there any ways we can remove the distinction between all-powerful hosts and powerless guests?</p>
 <ul>
@@ -500,16 +543,6 @@ Feb 12, 2022
       
       
     
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/posts/web-is-better-together/" data-ctx="wizardly powers" data-src="/posts/web-is-better-together" class="internal-link">LAN the Internet again</a>
-      </li>
-      
       
       
       <li>

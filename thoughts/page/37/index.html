@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,24 @@ Dec 24, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/cancel-culture/" class="internal-link" data-src="/thoughts/cancel-culture/">Cancel Culture</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 24, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/carbon-credits/" class="internal-link" data-src="/thoughts/carbon-credits/">Carbon Credits</a></h3>
             </div>
             <div class="spacer"></div>
@@ -454,24 +472,6 @@ Dec 24, 2021
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Dec 24, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/innovation/" class="internal-link" data-src="/thoughts/innovation/">Innovation</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
                 
             </ul>
         </div>

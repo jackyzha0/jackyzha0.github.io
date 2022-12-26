@@ -128,13 +128,13 @@ Software developers and computer scientists have been tackling [[thoughts/identi
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -435,6 +435,53 @@ Jul 16, 2022
         
         
         
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
       
     
     
@@ -1025,7 +1072,7 @@ Jul 16, 2022
 <p>In the process of being made legible, nuance is excluded. Legibility means that ‘only what matters’ and can be quantified is kept; all else is discarded. This is especially dangerous when that legibility happens without the choice of the users.</p>
 <p><img src="/thoughts/images/forest death.png" width="auto" /><em>Illegible natural forest vs legible &ldquo;scientific&rdquo; forest (James C. Scott in Gordon Brander)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></em></p>
 <p>Forced legibility may look like a set of failing grades on a report card without an accompanying note explaining how you missed finals week because you needed to grieve for the death of a loved one. Forced legibility may look like a conviction charge without the context behind how the officer was racially motivated. Forced legibility may look like having to choose between identifying as a man or a woman on the national census when neither describes you well, erasing their lived experience. When legibility is forced upon people, it only serves to widen the gulf that already exists in society and disproportionately impacts marginalized groups<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This legibility is beneficial for companies and governments seeking to better model user-data, but it doesn’t serve humans who seek to govern their own identities and control who accesses their information.</p>
-<p>If we want to flip access control back to the users, we need to consider other representations of identity. Clearly, it doesn&rsquo;t make sense to try to make every part of our digital identities legible. <strong>Can we develop alternate systems that provide similarly rich models of identity that also allow people to be illegible? Or at least self-selectively legible?</strong></p>
+<p>If we want to flip <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a> back to the users, we need to consider other representations of identity. Clearly, it doesn&rsquo;t make sense to try to make every part of our digital identities legible. <strong>Can we develop alternate systems that provide similarly rich models of identity that also allow people to be illegible? Or at least self-selectively legible?</strong></p>
 <p>This essay seeks to explore alternate abstractions for identity to better resolve the identity needs of <em>all</em> relevant stakeholders, not just centralized providers. We can categorize digital identity models based on the primary representation of identity along with the locus of control (managed versus self-sovereign).</p>
 <table>
 <thead>

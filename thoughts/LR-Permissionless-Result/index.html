@@ -128,13 +128,13 @@ Deterministic [[thoughts/consensus|consensus]] is not possible for decentralized
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -418,6 +418,49 @@ Aug 10, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -432,7 +475,7 @@ Aug 10, 2022
 <p>Shown by 
 <a href="https://arxiv.org/pdf/2101.07095.pdf" rel="noopener">Lewis-Pye and Roughgarden in 2022</a></p>
 <p>Deterministic <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> is not possible for decentralized protocols with a Byzantine, permissionless <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
-<p>Permissionless means that it does not enforce access control and allows the number and identity of participants to change without notice (under some number of participants bounded by $N$).</p>
+<p>Permissionless means that it does not enforce <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a> and allows the number and identity of participants to change without notice (under some number of participants bounded by $N$).</p>
 
 
     </article>

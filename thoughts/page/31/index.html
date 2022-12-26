@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,28 @@ Feb 1, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Knowledge-Argument/" class="internal-link" data-src="/thoughts/Knowledge-Argument/">Knowledge Argument</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL240A/">PHIL240A</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Feb 1, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/meditation/" class="internal-link" data-src="/thoughts/meditation/">Meditation</a></h3>
             </div>
             <div class="spacer"></div>
@@ -462,24 +484,6 @@ Jan 20, 2022
             <ul class="tags">
                 
                 <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jan 20, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/pace-layers/" class="internal-link" data-src="/thoughts/pace-layers/">Pace Layers</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/fruit/">Fruit</a></li>
                 
             </ul>
         </div>

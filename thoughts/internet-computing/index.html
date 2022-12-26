@@ -128,13 +128,13 @@ The Internet is a network of networks. The main goals was to integrate a number 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d2f2c5a9a3b9520fcbeffb60fc292426.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8d6be93e32ae15848fa760c785fdd246.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.31c96f98c4fc1c048df96f5e4610950d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d25ae5634c13c33491556c4b2176b3c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -381,6 +381,49 @@ Jan 17, 2022
 
 
 
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -864,7 +907,7 @@ administrated entities into a common entity</p>
 <li>Random backoff between 0 and power of 2 (n increases each time)</li>
 </ol>
 </li>
-<li>Turn-based access control
+<li>Turn-based <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a>
 <ol>
 <li>Controlled by centralized party - polls everyone</li>
 <li>Controlled in a decentralized manner - passes a token between senders</li>
