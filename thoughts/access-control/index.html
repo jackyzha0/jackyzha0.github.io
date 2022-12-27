@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9fe76560798ca9b98a9bfd1609231457.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c29ede528c404954476b807d0103637a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a260f55def14ad668c4a79252d8f7a7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b90947d19538faa206f6d86f665a296.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -414,6 +414,124 @@ Aug 16, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+    
+
+  
+
 
 
 
@@ -457,20 +575,60 @@ Aug 16, 2022
 </tr>
 </tbody>
 </table>
+<p><img src="/thoughts/images/acl vs capability.png" width="auto" /></p>
 <a href="#access-control-lists"><h3 id="access-control-lists"><span class="hanchor" ariaLabel="Anchor"># </span>Access Control Lists</h3></a>
-<p>An Access Control list is a data structure containing entries that specify an individual user or group’s rights to specific system objects</p>
+<p>An Access Control list (sometimes called ACL) is a data structure containing entries that specify an individual user or group’s rights to specific system objects. Generally good when the groups of individuals remains relatively static and objects change a lot.</p>
 <p>In the Lampson&rsquo;s access matrix, they are normally seen as the columns.</p>
 <a href="#capabilities"><h3 id="capabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Capabilities</h3></a>
-<p>The capability list of a user or a process or domain is a list of rights that it has on the various objects.</p>
+<p>The capability list (sometimes called C-list) of a user or a process or domain is a list of rights that it has on the various objects. Generally good when groups of individuals changes a lot and objects remain relatively static.</p>
 <p>In the Lampson&rsquo;s access matrix, they are normally seen as the rows.</p>
 <p>Capabilities provide much better support for least-privilege operation and for avoiding confused deputy problems</p>
 <p>From <em>
 <a href="https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf" rel="noopener">Capability Myths Demolished</a></em>:</p>
 <ol>
-<li>Equivalence Myth: access control list systems and capability systems are formally equivalent</li>
-<li>Confinement Myth: capability systems cannot enforce confinement</li>
-<li>Irrevocability Myth: capability-based access cannot be revoked</li>
+<li>Equivalence Myth: access control list systems and capability systems are formally equivalent
+<ul>
+<li>No description of any security mechanism is complete without a specification of how access relationships are allowed to evolve over time</li>
+<li>False as shown in descriptions above</li>
+</ul>
+</li>
+<li>Confinement Myth: capability systems cannot enforce confinement
+<ul>
+<li>The argument assumes that subjects can transmit capabilities anywhere they can transmit data, which is not the case in most capability systems.</li>
+<li>We can get around this by limiting connections between objects
+<ul>
+<li>In partitioned or type-enforced capability systems such as KeyKOS, W7, EROS, or E, capabilities and data are distinguished by the kernel or runtime</li>
+</ul>
+</li>
+<li>No capability transfer can introduce a new connection between two objects that were not already connected by some path</li>
+<li>Suppose, for example, we decide not to trust Bob. To prevent Alice from delegating to Bob, we simply refrain from giving Alice access to Bob.</li>
+</ul>
+</li>
+<li>Irrevocability Myth: capability-based access cannot be revoked
+<ul>
+<li>It is true that capabilities themselves are not literally revocable.</li>
+<li>Further, we know that the capability alone is sufficient to establish access to the resource.</li>
+<li>However, we can create a pair of forwarders, F and R to get around this. Of this pair, we may call F the forwarding facet, and R the revoking facet. Any messages sent to F get forwarded through R to Carol, so Bob may use F as if it were Carol. This works as long as inter-object interactions are mediated by messages, and messages are handled generically, so that a reusable mechanism can forward any message.  <img src="/thoughts/images/capabilityrevokation.png" width="auto" /></li>
+<li>When Alice wants to revoke Bob’s access to Carol, she invokes R, telling it to stop forwarding. R then drops its pointer to Carol, and F becomes useless to Bob.</li>
+</ul>
+</li>
 </ol>
+<p>Ambient Authority:</p>
+<ul>
+<li>We will use the term ambient authority to describe authority that is exercised, but not selected, by its user.</li>
+<li>The corresponding analogy is to imagine a world with doors but without keys. When a person walks up to a door, the door magically opens if it deems the person worthy.</li>
+<li>For example, Unix filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as open() does not choose any credentials to present with the request; the request merely succeeds or fails</li>
+</ul>
+<p>Confused Deputy Problems:</p>
+<ul>
+<li>A deputy is a program that must manage authorities coming from multiple sources.</li>
+<li>A confused deputy is a deputy that has been manipulated into wielding its authority inappropriately.</li>
+<li>A big part of preventing confused deputy problems is by removing ambient authority
+<ul>
+<li>If the authority to write to BILL were not ambient, then the compiler could hold one key to BILL for the purpose of writing billing information, and accept another key from the user for the purpose of writing debugging information. Then, as long as the compiler uses each key for its intended purpose, the confused deputy problem cannot occur.</li>
+</ul>
+</li>
+</ul>
 
 
     </article>

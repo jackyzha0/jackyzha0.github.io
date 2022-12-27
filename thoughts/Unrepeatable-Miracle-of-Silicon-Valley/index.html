@@ -128,13 +128,13 @@ Podcast Interview with Margaret O’Mara, the author of  The Code: Silicon Valle
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9fe76560798ca9b98a9bfd1609231457.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c29ede528c404954476b807d0103637a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a260f55def14ad668c4a79252d8f7a7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b90947d19538faa206f6d86f665a296.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

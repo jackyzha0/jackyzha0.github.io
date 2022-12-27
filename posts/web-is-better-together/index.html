@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9fe76560798ca9b98a9bfd1609231457.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c29ede528c404954476b807d0103637a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9a260f55def14ad668c4a79252d8f7a7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b90947d19538faa206f6d86f665a296.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1243,8 +1243,8 @@ Nov 29, 2022
 <a href="https://www.spencerchang.me/" rel="noopener">Spencer</a> and some other internet friends about what we think the future of the Internet could look like. This is my first letter that articulates what I think the future of the internet could look like. Find more letters over on our 
 <a href="https://we-b.site/" rel="noopener">(we)bsite</a></p>
 </blockquote>
-<p>I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the wall clock as each minute by agonizing minute ticked by slowly. The lunch bell would ring and we&rsquo;d rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents drove to pick us up to go home.</p>
 <p><img src="/thoughts/images/minecraft.png" width="auto" /></p>
+<p>I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the wall clock as each minute by agonizing minute ticked by slowly. The lunch bell would ring and we&rsquo;d rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents drove to pick us up to go home.</p>
 <p>At some point, school IT blocked the port ranges that Minecraft uses to establish local multiplayer worlds. No more lunch-time Minecraft. I remember asking the school if we could run a Minecraft server using the school computers and they said no.</p>
 <p>As any stubborn middle schooler would do, I spent the next few weeks figuring out how to host my own Minecraft server on a laptop at home because who was the school administration to tell me what I could do on my lunch break. Running this server meant that us gathering in our virtual blocky world didn&rsquo;t need to stop as soon as we left the school perimeter.</p>
 <p>Sometimes, I would get up at 2am and sneak downstairs to my laptop to figure out which cool new plugins and mods we could add and combine without completely crashing the game. I sneaked because I was only allowed 45 minutes of computer time after school.</p>
@@ -1339,7 +1339,7 @@ Nov 29, 2022
 </blockquote>
 <p>It didn&rsquo;t always used to be like this. In fact, the internet used to be pretty flexible. In the days when 
 <a href="https://en.wikipedia.org/wiki/IPv4_address_exhaustion" rel="noopener">we still had plenty of IPv4 addresses to hand out to computers</a>, when  
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="noopener">CORS</a> and <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> hadn&rsquo;t made the web <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a> hostile, LANs meant it was easy to just learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="noopener">CORS</a> and <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> hadn&rsquo;t made the web <a href="/thoughts/computer-networking#peer-to-peer-today" rel="noopener" class="internal-link" data-src="/thoughts/computer-networking">peer-to-peer hostile</a>, LANs meant it was easy to just learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.</p>
 <p>Unfortunately, we can&rsquo;t just naively revert back to this. It is no secret that our modern internet is peer-to-peer hostile. Almost all of the communication we do on the web is fully client-server because that was the easiest way to make things secure and work.</p>
 <p>Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we&rsquo;ve lost the ability to 
 <a href="https://www.robinsloan.com/lab/bad-hosts/" rel="noopener">listen for others and serve services of our own</a>. Security is a hard problem to solve and there are a lot of malicious people out on the web. But going down this path closes a lot of doors for what we <em>could</em> be doing with the internet.</p>
