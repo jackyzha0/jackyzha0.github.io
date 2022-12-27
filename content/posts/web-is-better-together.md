@@ -8,9 +8,9 @@ tags:
 
 > This post is part of an ongoing letter series with [Spencer](https://www.spencerchang.me/) and some other internet friends about what we think the future of the Internet could look like. This is my first letter that articulates what I think the future of the internet could look like. Find more letters over on our [(we)bsite](https://we-b.site/)
 
-I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the wall clock as each minute by agonizing minute ticked by slowly. The lunch bell would ring and we'd rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents drove to pick us up to go home.
-
 ![[thoughts/images/minecraft.png]]
+
+I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the wall clock as each minute by agonizing minute ticked by slowly. The lunch bell would ring and we'd rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents drove to pick us up to go home.
 
 At some point, school IT blocked the port ranges that Minecraft uses to establish local multiplayer worlds. No more lunch-time Minecraft. I remember asking the school if we could run a Minecraft server using the school computers and they said no.
 
@@ -121,7 +121,7 @@ It has become so difficult to learn that it has almost killed software's viabili
 > 
 >  (David Crawshaw, *[Remembering the LAN](https://tailscale.com/blog/remembering-the-lan/)*)
 
-It didn't always used to be like this. In fact, the internet used to be pretty flexible. In the days when [we still had plenty of IPv4 addresses to hand out to computers](https://en.wikipedia.org/wiki/IPv4_address_exhaustion), when  [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [[thoughts/NAT|NAT]] hadn't made the web [[thoughts/peer-to-peer]] hostile, LANs meant it was easy to just learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.
+It didn't always used to be like this. In fact, the internet used to be pretty flexible. In the days when [we still had plenty of IPv4 addresses to hand out to computers](https://en.wikipedia.org/wiki/IPv4_address_exhaustion), when  [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [[thoughts/NAT|NAT]] hadn't made the web [[thoughts/computer networking#Peer-to-peer today|peer-to-peer hostile]], LANs meant it was easy to just learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.
 
 Unfortunately, we can't just naively revert back to this. It is no secret that our modern internet is peer-to-peer hostile. Almost all of the communication we do on the web is fully client-server because that was the easiest way to make things secure and work.
 
