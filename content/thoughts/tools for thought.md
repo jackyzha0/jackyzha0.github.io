@@ -37,7 +37,7 @@ Mixing up the order of _capture-organize-synthesize_ causes friction. It force
 ## Word Charcuterie Board
 Is there any way to rearrange the fuzzy cloud of ideas in our head easily on paper/screens?
 
-How can we 'cut' text without being afraid of it being lost forever? Even with tools like the undo button and Git revision history, the actions of the past are by default hidden. Time is not first class.
+How can we 'cut' text without being afraid of it being lost forever? Even with tools like the undo button and [[thoughts/git|Git]] revision history, the actions of the past are by default hidden. Time is not first class.
 
 ## On memory and [lost knowledge](thoughts/lost%20knowledge.md)
 > If a tree fell and nobody remembered, did it really happen?

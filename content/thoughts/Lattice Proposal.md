@@ -24,7 +24,7 @@ Potential exploration on my gripes with existing [[thoughts/tools for thought|to
 * graph view
 	* i wanted to have the option for 3d graphs too
 * timeline view
-	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a git history) if ur brain works better that way
+	* each note will come with a date so you can chronologically order notes and view them that way (kind of like a [[thoughts/git|git]] history) if ur brain works better that way
 * good global search
 	* being able to index content fast and effectively
 * [interoperability](thoughts/interoperability.md) of data, easy export

@@ -16,7 +16,7 @@ Two main families of algorithms
 [Source](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous)
 
 -   full async - no collaboration ever - has to be completely disconnected
--   async branching - git flow, working in parallel universes temporarily, then merging back together
+-   async branching - [[thoughts/git|git]] flow, working in parallel universes temporarily, then merging back together
 -   peripheral awareness - working in the same space while working separately (parallel play)
 -   fully sync - pair programming  
 

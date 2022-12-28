@@ -7,7 +7,7 @@ tags:
 
 IPFS is a decentralized storage and delivery network which builds on fundamental principles of [[thoughts/peer-to-peer|p2p]] networking and content-based addressing (see [[thoughts/CID|CID]])
 
-> Can seen as a single BitTorrent swarm, exchanging objects within one big Git repository
+> Can seen as a single BitTorrent swarm, exchanging objects within one big [[thoughts/git|Git]] repository
 
 Much like how we look up sites on the internet using URIs, we can look for specific pieces of content by their [[thoughts/content addressed storage|content-address]]. 
 

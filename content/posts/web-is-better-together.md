@@ -146,7 +146,7 @@ In fact, this is how the Internet today evolved. It was bootstrapped on top of e
 
 We can do the same, with a new web. Here's what I'm thinking.
 
-Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in **social and trust space**?
+Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in **social and trust space**? What about [Personal Computing Networks](https://alexanderobenauer.com/labnotes/027/)?
 
 The internet is a network of networks. This is true at the hardware and infrastructure level, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?
 
