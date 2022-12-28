@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -299,6 +299,26 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Jan 31, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Hard-problem-of-consciousness/" class="internal-link" data-src="/thoughts/Hard-problem-of-consciousness/">Hard problem of consciousness</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -471,24 +491,6 @@ Jan 18, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/PHIL451A/">PHIL451A</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jan 18, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Reductionism/" class="internal-link" data-src="/thoughts/Reductionism/">Reductionism</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
             </ul>
         </div>

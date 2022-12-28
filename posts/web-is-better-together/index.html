@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1357,7 +1357,8 @@ Nov 29, 2022
 <a href="https://subconscious.substack.com/p/evolution-adjacent-possible" rel="noopener">adjacent possible</a>, figuring out how we can improve the existing condition of those trapped by these systems without uprooting them.</p>
 <p>In fact, this is how the Internet today evolved. It was bootstrapped on top of existing telephone networks, exapting existing phone hardware to get it off the ground. It didn&rsquo;t need to deploy expensive new hardware or lay down new cables, it just conformed to existing infrastructure. The internet is based on <a href="/thoughts/Postels-Law" rel="noopener" class="internal-link" data-src="/thoughts/Postels-Law">Postel&rsquo;s Law</a>: work the world as it already is, not as you wish it were. When something didn&rsquo;t connect, someone hacked on it until it worked.</p>
 <p>We can do the same, with a new web. Here&rsquo;s what I&rsquo;m thinking.</p>
-<p>Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in <strong>social and trust space</strong>?</p>
+<p>Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in <strong>social and trust space</strong>? What about 
+<a href="https://alexanderobenauer.com/labnotes/027/" rel="noopener">Personal Computing Networks</a>?</p>
 <p>The internet is a network of networks. This is true at the hardware and infrastructure level, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?</p>
 <p>What if I could make a LAN with all my friends who are interested in poetic computation? I could host a copy of my website on the LAN where they can freely leave comments, drawings, annotations, like getting handed a marked up book with all the marginalia meant for you to read.</p>
 <p><img src="/thoughts/images/digital community gardens.png" width="500" /></p>

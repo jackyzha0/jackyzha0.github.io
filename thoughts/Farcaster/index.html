@@ -129,13 +129,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -379,6 +379,55 @@ Jun 15, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -400,7 +449,7 @@ Jun 15, 2022
 </ol>
 <a href="#distributed-host-architecture"><h2 id="distributed-host-architecture"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Host Architecture</h2></a>
 <p>Farcaster allows users to host their content on any web server as long as they sign everything with their private key.</p>
-<p>There are two options for hosting: self-hosting and using a managed host (Gmail does for email and Github does for Git).</p>
+<p>There are two options for hosting: self-hosting and using a managed host (Gmail does for email and Github does for <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">Git</a>).</p>
 
 
     </article>

@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -757,6 +757,53 @@ Jun 5, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -770,7 +817,7 @@ Jun 5, 2022
 
 <p>IPFS is a decentralized storage and delivery network which builds on fundamental principles of <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">p2p</a> networking and content-based addressing (see <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CID</a>)</p>
 <blockquote>
-<p>Can seen as a single BitTorrent swarm, exchanging objects within one big Git repository</p>
+<p>Can seen as a single BitTorrent swarm, exchanging objects within one big <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">Git</a> repository</p>
 </blockquote>
 <p>Much like how we look up sites on the internet using URIs, we can look for specific pieces of content by their <a href="/thoughts/content-addressed-storage" rel="noopener" class="internal-link" data-src="/thoughts/content-addressed-storage">content-address</a>.</p>
 <p>Under the hood, IPFS uses</p>

@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -371,6 +371,49 @@ May 5, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -394,7 +437,7 @@ Challenge: how do we reconcile concurrent updates?</p>
 <a href="https://publish.obsidian.md/jessmartin/Collaboration&#43;is&#43;a&#43;spectrum&#43;from&#43;asynchronous&#43;to&#43;fully&#43;synchronous" rel="noopener">Source</a></p>
 <ul>
 <li>full async - no collaboration ever - has to be completely disconnected</li>
-<li>async branching - git flow, working in parallel universes temporarily, then merging back together</li>
+<li>async branching - <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">git</a> flow, working in parallel universes temporarily, then merging back together</li>
 <li>peripheral awareness - working in the same space while working separately (parallel play)</li>
 <li>fully sync - pair programming</li>
 </ul>
