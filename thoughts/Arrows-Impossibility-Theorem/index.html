@@ -128,13 +128,13 @@ Assume there is more than one individual, and there are at least three distinct 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c29ede528c404954476b807d0103637a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b90947d19538faa206f6d86f665a296.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -321,6 +321,29 @@ Nov 25, 2022
 
 
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -328,6 +351,50 @@ Nov 25, 2022
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -473,7 +540,7 @@ Nov 25, 2022
 <p>Assume there is more than one individual, and there are at least three distinct social states. Then there is no SWF that meets the following four conditions:</p>
 <ol>
 <li>Non-dictatorial: no individual is decisive</li>
-<li>Ordering: must produce social preference orderings must be complete, asymmetric and transitive (see also: <a href="/thoughts/utility#interval-scales" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a>)</li>
+<li>Ordering: must produce social preference orderings which are complete, asymmetric and transitive (see also: <a href="/thoughts/utility#interval-scales" rel="noopener" class="internal-link" data-src="/thoughts/utility">utility</a>)</li>
 <li><a href="/thoughts/Pareto-optimality" rel="noopener" class="internal-link" data-src="/thoughts/Pareto-optimality">Pareto condition</a>: If every voter prefers alternative X over alternative Y, then the group prefers X over Y.</li>
 <li>Independence of Irrelevant Alternatives (IIA): If every voter&rsquo;s preference between X and Y remains unchanged, then the group&rsquo;s preference between X and Y will also remain unchanged</li>
 </ol>
@@ -491,6 +558,23 @@ Nov 25, 2022
 </ol>
 </li>
 </ol>
+<a href="#similarities-to-group-membership"><h2 id="similarities-to-group-membership"><span class="hanchor" ariaLabel="Anchor"># </span>Similarities to Group Membership</h2></a>
+<p>See also: <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a></p>
+<p>Suppose we encode access in terms of some function $A_{i,j}$ where $A_{i,j}$ is true if subject $i$ considers $j$ to be in the group and false otherwise.</p>
+<p>A social state $S$ for some collection of individuals $G$ is $i \in G$ such that $A_{j,i} \forall j \in G$.</p>
+<p>We suppose there is some function that takes in individual preference orderings (what it thinks the group membership currently looks like) and produces a group preference ordering (what the true group membership is). This is normally called the SWF.</p>
+<p>Some properties of said SWF:</p>
+<ul>
+<li>Non-dictatorial: we don&rsquo;t want a single admin who has power to dictate who is in the group. If this were to happen, we couldn&rsquo;t remove the admin if they were compromised</li>
+<li>Intention-preserving: If every voter prefers alternative X over alternative Y, then the group prefers X over Y.
+<ul>
+<li>Strong requirement is needed. Consider a weaker version: If the majority of voters prefers alternative X over alternative Y, then the group prefers X over Y</li>
+<li>This may not work when we have a Sybil actor that can add new accounts to overwhelm the majority</li>
+</ul>
+</li>
+<li>&hellip;anything else I&rsquo;m missing?</li>
+</ul>
+<p>If we can show that these properties are equivalent to the Arrow Axioms, then there may be no way to come to a singular group where all members agree.</p>
 
 
     </article>

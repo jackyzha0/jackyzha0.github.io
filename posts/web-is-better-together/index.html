@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c29ede528c404954476b807d0103637a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2ff0c4fa1598520dfa73d238f802b869.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8b90947d19538faa206f6d86f665a296.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6ce41aab7d9aa17f788fa99cc9e40e95.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1244,19 +1244,19 @@ Nov 29, 2022
 <a href="https://we-b.site/" rel="noopener">(we)bsite</a></p>
 </blockquote>
 <p><img src="/thoughts/images/minecraft.png" width="auto" /></p>
-<p>I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the wall clock as each minute by agonizing minute ticked by slowly. The lunch bell would ring and we&rsquo;d rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents drove to pick us up to go home.</p>
+<p>I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the clock as each minute by agonizing minute ticked by. The lunch bell would ring and we&rsquo;d rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents picked us up.</p>
 <p>At some point, school IT blocked the port ranges that Minecraft uses to establish local multiplayer worlds. No more lunch-time Minecraft. I remember asking the school if we could run a Minecraft server using the school computers and they said no.</p>
 <p>As any stubborn middle schooler would do, I spent the next few weeks figuring out how to host my own Minecraft server on a laptop at home because who was the school administration to tell me what I could do on my lunch break. Running this server meant that us gathering in our virtual blocky world didn&rsquo;t need to stop as soon as we left the school perimeter.</p>
 <p>Sometimes, I would get up at 2am and sneak downstairs to my laptop to figure out which cool new plugins and mods we could add and combine without completely crashing the game. I sneaked because I was only allowed 45 minutes of computer time after school.</p>
-<p>I cried because in the last week before winter break, some random person joined and completely blew up the server with TNT and we didn&rsquo;t know backups were a thing.</p>
+<p>I cried because in the last week before winter break, some random person joined and completely blew up the server with TNT. We didn&rsquo;t know backups were a thing.</p>
 <hr>
 <p>In 7th grade, our home room teacher showed us 
-<a href="https://scratch.mit.edu/" rel="noopener">Scratch</a> for the first time. The majority of fun with Scratch was sharing. Posting graphics on the walls, modifying and experimenting with each other&rsquo;s work, and bringing the &ldquo;new&rdquo; products back to the original inventors.</p>
+<a href="https://scratch.mit.edu/" rel="noopener">Scratch</a> for the first time. The majority of fun with Scratch was sharing. Posting graphics on the walls, modifying and experimenting with each other&rsquo;s work, and bringing the &ldquo;new&rdquo; products back to their original inventors.</p>
 <p>But the real spark of Scratch came from just how easy it was to make shared state. In Scratch, you can create a 
 <a href="https://en.scratch-wiki.info/wiki/Cloud_Data" rel="noopener">globally consistent variable</a> that is synced across every one who ran my game just as easily as any other variable. Adding a leaderboard to my game was just as easy as replacing my variable with a Cloud Variable.</p>
 <p><img src="/thoughts/images/cloud-variable.png" width="300" />
 <em>Making a shared variable is as easy as clicking a checkbox</em></p>
-<p>This was the last era of the internet where it felt personal, multiplayer, distributed, and evolvable. It was easy to build stuff on your own and remix the work of others. It felt like a clearing in the woods, a safe gathering space for those who knew about it.</p>
+<p>This was the last era of the internet where it felt personal, multiplayer, distributed, and evolvable. It was easy to build stuff on your own and remix other work. It felt like a clearing in the woods, a safe gathering space for those who knew about it.</p>
 <hr>
 <p><img src="/thoughts/images/house-from-up.jpg" width="auto" />
 <em>The house from Up (2009)</em></p>
@@ -1268,12 +1268,12 @@ Nov 29, 2022
 <p>Imagine a dark forest at night. It’s deathly quiet. Nothing moves. Nothing stirs. This could lead one to assume that the forest is devoid of life. But of course, it’s not. The dark forest is full of life. It’s quiet because night is when the predators come out. To survive, the animals stay silent.</p>
 <p>This is also what the internet is becoming: a dark forest. In response to the ads, the tracking, the trolling, the hype, and other predatory behaviors, we’re retreating to our dark forests of the internet, and away from the mainstream.</p>
 </blockquote>
-<p>Our web has turned into a relentless competition for our attention. As corporations and influencers grasp for power, an increasing number of the web have retreated to the underground burrows of the cozy web to avoid the fallout. Hidden away from a hostile public web filled with spam, AI marketing, and malware, we find respite in our group chats, Discord servers, and forums.</p>
+<p>Our web has turned into a relentless competition for our attention. As corporations and influencers grasp for power, an increasing number of the web&rsquo;s citizens have retreated to the underground burrows of the cozy web to avoid the fallout. Hidden away from a hostile public web filled with spam, AI marketing, and malware, we find respite in our group chats, Discord servers, and forums.</p>
 <p><img src="/thoughts/images/dark-forest.png" width="500" />
 <em>Maggie Appleton in 
 <a href="https://maggieappleton.com/cozy-web" rel="noopener">The Dark Forest and the Cozy Web</a></em></p>
-<p>But we&rsquo;ve fallen into a very narrow set of design patterns. In the name of profit, platforms optimize for views, hours spent, and clicks. They &lsquo;accidentally&rsquo; boost provocative and incendiary behaviour because they know that it draws people to their platform, healthy or not. Each additional app on the web increasingly competes for increasing scarce <a href="/thoughts/attention-economy" rel="noopener" class="internal-link" data-src="/thoughts/attention-economy">attention</a>. Who has space for authentic connection anymore? That doesn&rsquo;t make profit numbers go up.</p>
-<p>It seems that we&rsquo;ve reached the inevitable conclusion of optimizing &ldquo;connecting with each other&rdquo; to the extreme. With no feedback system for users to have a say or improve the conditions, the web is quickly spiralling into something that doesn&rsquo;t do all that good of a job. The thing that the web originally was meant to do &ndash; enable people to meaningfully meet and worth with each other &ndash; is harder than ever. Perhaps we might carve out a bit of space for those again?</p>
+<p>But we&rsquo;ve fallen into a very narrow set of design patterns. In the name of profit, platforms optimize for views, hours spent, and clicks. They &lsquo;accidentally&rsquo; boost provocative and incendiary behaviour because they know that it draws people to their platform, healthy or not. Each additional app on the web increasingly competes for increasingly scarce <a href="/thoughts/attention-economy" rel="noopener" class="internal-link" data-src="/thoughts/attention-economy">attention</a>. Who has space for authentic connection anymore? That doesn&rsquo;t make profit numbers go up.</p>
+<p>It seems that we&rsquo;ve reached the inevitable conclusion of optimizing &ldquo;connecting with each other&rdquo; to the extreme. With no feedback system for users to have a say or improve the conditions, the web is quickly spiralling into something that doesn&rsquo;t do all that good of a job. The thing that the web originally was meant to do &ndash; enable people to meaningfully meet and collaborate with each other &ndash; is harder than ever. Perhaps we might carve out a bit of space for those again?</p>
 <p>In design, there is a technique 
 <a href="https://www.nngroup.com/articles/diverge-converge/" rel="noopener">diverge-converge</a>, which as the name suggests, has two stages:</p>
 <ol>
@@ -1285,16 +1285,16 @@ Nov 29, 2022
 <hr>
 <p>The first step to this seems to be to dispel the myth that the internet and the web as a whole is something so vast and monolithic that it is unchangeable. We look at these entrenched protocols and take them as a given.</p>
 <p>But here&rsquo;s the wonderful bit about software (and specifically the web) that feels uniquely special: you don&rsquo;t need permission to make things.</p>
-<p>The internet is the first place people got to build real things without needing to ask someone if they could. This is powerful. We should give people the ability to own technology, to bring it into their own complex life stories. The <em>real</em> use cases may be the ones waiting to be discovered. One of my favourite examples is of the French bistro.</p>
+<p>The internet is the first place people got to build real things without needing to ask someone if they could. This is powerful. We should give people the ability to own technology, to bring it into their own complex life stories. The <em>real</em> use cases may be the ones waiting to be discovered. One of my favourite examples is the French bistro.</p>
 <blockquote>
 <p>The small Parisian restaurants serving home-cooked meals in very modest settings—like the cafe before it, was an invention. Many tales exist of its origin. Some say it was working-class landlords opening their kitchens for extra income. Others say it was the Auvergnats, immigrating to Paris from what is today central-south France, who first worked as rag-pickers, then wood and coal sellers, then metalworkers, who created small working-class restaurants to supplement their income. <strong>Either way, it was not planned or engineered, but simply not-disallowed.</strong> There were no rules in place to stop this invention.</p>
 <p>(Simon Sarris, <em>
 <a href="https://simonsarris.substack.com/p/welcome-ghosts" rel="noopener">Welcome, ghosts</a></em>, emphasis added)</p>
 </blockquote>
-<p>The best pieces of software I&rsquo;ve had the pleasure of using are ones that are agentic. Examples like Minecraft and Scratch let me fully construct a world for myself in which I operate. They set the rules, but <em>I</em> am the once who decides how I want to play.</p>
+<p>The best pieces of software I&rsquo;ve had the pleasure of using are ones that are agentic. Examples like Minecraft and Scratch let me fully construct a world for myself in which I operate. They set the rules, but <em>I</em> am the one who decides how I want to play.</p>
 <p>Agentic software designs for and explicitly allows user-made <a href="/thoughts/desire-paths" rel="noopener" class="internal-link" data-src="/thoughts/desire-paths">desire paths</a> and <a href="/thoughts/cozy-software#folk-software" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">folk-usages of software</a>. People will use software in whatever informal, distributed ways that emerge from real world contexts. Folksonomies are a great example of these informal taxonomies developed by users on social sharing platforms. Tumblr tags, for example, have adapted to become not just a form of tagging or organizing, but also metacommentary, memes, and other comedic content.</p>
 <p><img src="/thoughts/images/yokocho-alley.png" width="auto" />
-<em>An alleyway in Yokochō, Japan. There is an inherent smallness to the design that fosters communication and character. Owners say that the smallness enables genuine communication between staff and customers as well as among characters, much unlike the homogenization of shopping malls and chain stores (paraphrased from Emergent Tokyo: Designing the Spontaneous City). How might we create Yokochō alleys of the internet?</em></p>
+<em>An Yokochō alleyway in Tokyo, Japan. There is an inherent smallness to the design that fosters communication and character. Owners say that the smallness encourages genuine communication between staff and customers as well as among characters, much unlike the homogenization of shopping malls and chain stores (paraphrased from Emergent Tokyo: Designing the Spontaneous City). How might we create Yokochō alleys of the internet?</em></p>
 <p>Agentic software embodies a 
 <a href="https://hundertwasser.com/en/texts/verschimmelungsmanifest_gegen_den_rationalismus_in_der_architektur" rel="noopener">Hundertwasser flavour of design</a> where:</p>
 <ul>
@@ -1308,9 +1308,9 @@ Nov 29, 2022
 <p>(Chia, <em>
 <a href="https://chias.blog/2022/there-is-an-internet-that-is-mine" rel="noopener">There is an internet that is mine &amp; I would like you to live in it with me</a></em>)</p>
 </blockquote>
-<p>We must make it possible for the average layperson to be able to change and adapt software for their own needs; for them to treat creating software not like a professional chef, but <a href="/thoughts/cozy-software" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">a home cook</a>.</p>
+<p>We must make it possible for the average layperson to be able to change and adapt software for their own needs; for them to experience creating software not like a professional chef, but <a href="/thoughts/cozy-software" rel="noopener" class="internal-link" data-src="/thoughts/cozy-software">a home cook</a>.</p>
 <hr>
-<p>First, we need to address the double-edged sword that is scale. Scale, of course, can be a good thing. Economies of scale enable us to have cheap hosting, comprehensive web search, and many more luxuries we enjoy on the web today. But also, the Silicon Valley mindset of always asking what the billion-dollar version of your idea is and how you can get <em>everyone</em> using it is slowly poisoning how we think about software.</p>
+<p>First, we need to address the double-edged sword that is scale. Scale, of course, can be a good thing. Economies of scale enable us to have cheap hosting, comprehensive web search, and many more luxuries we enjoy on the web today. However, the Silicon Valley mindset of always asking what the billion-dollar version of your idea is and how you can get <em>everyone</em> using it is slowly poisoning how we think about software.</p>
 <p>Because realistically, when most of us want to create software, the intention isn&rsquo;t to release something that the whole world will end up using. Yet, with all the knowledge you end up needing to be able to do it, it seems like everything we release into the world needs to be production ready!</p>
 <p>For someone to make a web service today, they need to know</p>
 <ul>
@@ -1337,12 +1337,12 @@ Nov 29, 2022
 <p>(David Crawshaw, <em>
 <a href="https://tailscale.com/blog/remembering-the-lan/" rel="noopener">Remembering the LAN</a></em>)</p>
 </blockquote>
-<p>It didn&rsquo;t always used to be like this. In fact, the internet used to be pretty flexible. In the days when 
+<p>It wasn&rsquo;t always like this. In fact, the internet used to be pretty flexible. In the days when 
 <a href="https://en.wikipedia.org/wiki/IPv4_address_exhaustion" rel="noopener">we still had plenty of IPv4 addresses to hand out to computers</a>, when  
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="noopener">CORS</a> and <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> hadn&rsquo;t made the web <a href="/thoughts/computer-networking#peer-to-peer-today" rel="noopener" class="internal-link" data-src="/thoughts/computer-networking">peer-to-peer hostile</a>, LANs meant it was easy to just learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="noopener">CORS</a> and <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> hadn&rsquo;t made the web <a href="/thoughts/computer-networking#peer-to-peer-today" rel="noopener" class="internal-link" data-src="/thoughts/computer-networking">peer-to-peer hostile</a>, LANs meant it was easy to learn about computers and experiment with things. I could just run something on my machine and open the port to my computer from my router and anyone in the world could see it.</p>
 <p>Unfortunately, we can&rsquo;t just naively revert back to this. It is no secret that our modern internet is peer-to-peer hostile. Almost all of the communication we do on the web is fully client-server because that was the easiest way to make things secure and work.</p>
 <p>Part of this comes down to the entrenched nature of how the web is structured. Our browsers and home computers can only speak and request from services, but we&rsquo;ve lost the ability to 
-<a href="https://www.robinsloan.com/lab/bad-hosts/" rel="noopener">listen for others and serve services of our own</a>. Security is a hard problem to solve and there are a lot of malicious people out on the web. But going down this path closes a lot of doors for what we <em>could</em> be doing with the internet.</p>
+<a href="https://www.robinsloan.com/lab/bad-hosts/" rel="noopener">listen for others and serve services of our own</a>. Security is a hard problem to solve and there are a lot of malicious people on the web. But going down this path closes many doors for what we <em>could</em> be doing with the internet.</p>
 <p>How do we make <em>making</em> on the web easy and fun again?</p>
 <p><img src="/thoughts/images/just make learning fun.png" width="300" />
 <em>From the blogpost introducing 
@@ -1350,15 +1350,15 @@ Nov 29, 2022
 <hr>
 <p>It&rsquo;s true that networks are 
 <a href="https://apenwarr.ca/log/?m=202007#:~:text=Internets-are-fundamentally-sloppy" rel="noopener">fundamentally sloppy and all sorts of broken.</a> But broken does not mean unmendable.</p>
-<p>This later point is one that Chia talks a lot about in her articulation 
+<p>This latter point is one that Chia talks about in her articulation 
 <a href="https://chias.blog/2022/there-is-an-internet-that-is-mine/" rel="noopener">for a future of the internet</a>.  To declare it unmendable or unfixable is to abandon the many people that still need these deeply broken technologies.</p>
 <p>Starting a new system from scratch with a grand vision is not the way to do this either. History has shown us that trying to purge everything and build out a totalizing vision can have <a href="/thoughts/Seeing-like-a-State" rel="noopener" class="internal-link" data-src="/thoughts/Seeing-like-a-State">terrible implications</a>, regardless of whether they succeeded or not.</p>
-<p>To try to reform the web is not to wipe everything and start over <em>tabula rasa</em>, but rather to move through the 
+<p>To reform the web is not to wipe everything and start over <em>tabula rasa</em>, but rather to move through the 
 <a href="https://subconscious.substack.com/p/evolution-adjacent-possible" rel="noopener">adjacent possible</a>, figuring out how we can improve the existing condition of those trapped by these systems without uprooting them.</p>
-<p>In fact, this is how the Internet today evolved. It was bootstrapped on top of existing telephone networks, exapting existing phone hardware to get it off the ground. It didn&rsquo;t need to deploy expensive new hardware or lay down new cables, it just conformed to existing infrastructure. The internet is based off of <a href="/thoughts/Postels-Law" rel="noopener" class="internal-link" data-src="/thoughts/Postels-Law">Postel&rsquo;s Law</a>: work the world as it already is, not as you wish it were. When something didn&rsquo;t connect, someone hacked on it until it worked.</p>
+<p>In fact, this is how the Internet today evolved. It was bootstrapped on top of existing telephone networks, exapting existing phone hardware to get it off the ground. It didn&rsquo;t need to deploy expensive new hardware or lay down new cables, it just conformed to existing infrastructure. The internet is based on <a href="/thoughts/Postels-Law" rel="noopener" class="internal-link" data-src="/thoughts/Postels-Law">Postel&rsquo;s Law</a>: work the world as it already is, not as you wish it were. When something didn&rsquo;t connect, someone hacked on it until it worked.</p>
 <p>We can do the same, with a new web. Here&rsquo;s what I&rsquo;m thinking.</p>
-<p>Maybe we bring back the philosophy of LANs, but rather than networks be based on closeness in physical distance bounded by routers, what about LANs in <strong>social and trust space</strong>?</p>
-<p>The internet is a network of networks. This is true at the level of hardware and infrastructure, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?</p>
+<p>Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in <strong>social and trust space</strong>?</p>
+<p>The internet is a network of networks. This is true at the hardware and infrastructure level, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?</p>
 <p>What if I could make a LAN with all my friends who are interested in poetic computation? I could host a copy of my website on the LAN where they can freely leave comments, drawings, annotations, like getting handed a marked up book with all the marginalia meant for you to read.</p>
 <p><img src="/thoughts/images/digital community gardens.png" width="500" /></p>
 <p>We could have:</p>
@@ -1366,14 +1366,14 @@ Nov 29, 2022
 <li>Countless local networks, many overlapping with each other.</li>
 <li>A larger network of networks. This allows cross-network collaboration to happen.</li>
 </ol>
-<p>In fact, this <em>is</em> a design pattern we have seen work well in the past with subreddits, Facebook groups, and forums. Many platforms are effectively just networks of networks. Within these local networks, communities of people have complete agency over their own little networks.</p>
-<p>Usually, platforms reinvent this infrastructure from scratch every time. But what if we baked this in at a network infrastructure level? I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. <strong>A safe small space of people we trust, where we can go and rest, a safe harbour from the multi-billion-person internet for when we want to feel cozy and safe.</strong></p>
+<p>In fact, this <em>is</em> a design pattern we have seen work well in the past with subreddits, Facebook groups, and forums. These platforms often function as networks of networks, allowing communities within them to have control over their own smaller networks.</p>
+<p>Usually, platforms reinvent this infrastructure from scratch every time. But what if we baked this in at a network infrastructure level? I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. <strong>A safe small space of people we trust, where we can go and rest. A safe harbour from the multi-billion-person internet for when we want to feel cozy and safe.</strong></p>
 <hr>
 <p>Of course, I&rsquo;m not exactly sure what this looks like quite yet. I&rsquo;ve sketched some lines and said some words, but nothing really concrete.</p>
-<p>What I do know is <em>why</em> this is important for more people to think about and work on. In times of stability, <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">centralization is great</a>. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and showing its age.</p>
-<p>As we spend increasing amount of time on the web, it’s clear what may have worked for a smaller web no longer works today. In this web, the powerful become more powerful, the rich become richer. The day-to-day users have no say over the terms of service we are served. We live in a feudal.</p>
-<p>Yet&hellip; the web remains powerful. It lets us collaborate and coordinate on scales we&rsquo;ve never seen before. As global issues like climate change become increasingly prominent, it&rsquo;s critical to also work on the coordination fabric that enables us to work on these problems.We need to give agency back to the everyday users so they can craft networks that work for them in supporting how they exist in the world and on the web.</p>
-<p>It used to be the case you needed to train to become a scribe to write words for any reason. But just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and give it to the masses.</p>
+<p>What I do know is <em>why</em> this is important for more people to think about and work on. In times of stability, <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">centralization is great</a>. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and showing their age.</p>
+<p>As we spend more time on the web, it’s clear what may have worked for a smaller web no longer works today. In today&rsquo;s web, the powerful become more powerful, the rich become richer. The day-to-day users have no say over the terms of service we are served. We live in a feudal web.</p>
+<p>Yet&hellip; the web remains powerful. It lets us collaborate and coordinate on scales we&rsquo;ve never seen before. As global issues like climate change become increasingly prominent, it&rsquo;s critical to mend the coordination fabric that enables us to work on these problems. We need to give agency back to the everyday users so they can craft networks that work for them in supporting how they exist in the world and on the web.</p>
+<p>It used to be the case that you needed to train to become a scribe to write words for any reason. But just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and share it with the masses.</p>
 <p>Writing software shouldn’t take a degree and many years of training, it should be as simple as making a meal at home or writing a letter to a friend. Doing so will lead to a more diverse and resilient internet, with a greater variety of voices and perspectives represented so we may build an internet that works for us.</p>
 <p>Let&rsquo;s make the web feel local and multi-player again. Let&rsquo;s LAN the internet again.</p>
 <hr>
