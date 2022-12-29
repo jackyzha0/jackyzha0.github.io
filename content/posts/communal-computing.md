@@ -1,5 +1,5 @@
 ---
-title: "LAN the Internet again"
+title: "Communal Computing Networks"
 date: 2022-11-29
 tags:
 - fruit
@@ -146,7 +146,7 @@ In fact, this is how the Internet today evolved. It was bootstrapped on top of e
 
 We can do the same, with a new web. Here's what I'm thinking.
 
-Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in **social and trust space**? What about [Personal Computing Networks](https://alexanderobenauer.com/labnotes/027/)?
+Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in **social and trust space**? What about [Communal Computing Networks](https://alexanderobenauer.com/labnotes/027/)?
 
 The internet is a network of networks. This is true at the hardware and infrastructure level, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?
 
@@ -176,7 +176,7 @@ It used to be the case that you needed to train to become a scribe to write word
 
 Writing software shouldn’t take a degree and many years of training, it should be as simple as making a meal at home or writing a letter to a friend. Doing so will lead to a more diverse and resilient internet, with a greater variety of voices and perspectives represented so we may build an internet that works for us.
 
-Let's make the web feel local and multi-player again. Let's LAN the internet again.
+Let's make the web feel local and multi-player again.
 
 ---
 

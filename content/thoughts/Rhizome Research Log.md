@@ -9,6 +9,39 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## December
+### December 28th
+- Finally finished up my blog post on [[posts/communal-computing|Communal Computing]]! It turns out, sharp feedback leads to better writing, who would have ever thought :')
+- Did a bit more thinking about Kleppmann's *Recovering from key compromise in decentralised access control systems*
+	- I feel like there is a close connection to be made with [[thoughts/Arrow's Impossibility Theorem]] but haven't been able to formally show it
+	- Perhaps using Quorum Certificates for group membership voting?
+		- These can be built offline (and even allows for receiving updates offline) and sent when a user is back online.
+		- A membership change is then considered stable when it receives 2 unique supporting QCs. Of course, this only works with $f<\frac n 3$.
+		- Voting members: all members of the group which were members prior to the membership change
+		- Mutual removal: going with something that is intent-preserving feels important here. One potential way to resolve this is to restrict membership changes to at most one removal per round. Requiring 2 QCs would mean that we have consensus on which group member to remove and removing a single member cannot possibly cause a conflict. (this may not be ideal for situations where a large number of group members are removed but I suspect these cases are very rare)
+- Found out that [Beaker Browser](https://github.com/beakerbrowser/beaker/blob/master/archive-notice.md) is now archived :(( A really interesting retro that has a lot of good reflections and learnings for anyone working on p2p tech
+	- Major challenges:
+		- Without some logically centralized repository of data or router of messages, you struggle with discovery and delivery.
+		- Users don't stay consistently online and connections will randomly fail, so you stuggle with availability and performance.
+		- Initial connections and thus time-to-first-paints are slow, which is very bad news for web browsing.
+		- Debugging is quite hard.
+		- Managing resource usage on the device is hard.
+		- Scaling a user's view of the network past (say) 100k users is pretty much out the window because you're not sharing indexes; rather, you're having each device build the indexes locally.
+			- Is this fixable with [[thoughts/Prolly Trees]]?
+	- "As decentralizers we may be pursuing a mission, but our work only wins in the market, and to win in the market we need to think like entrepreneurs. Ultimately, my lesson learned is that mission needs PMF."
+- Coordination in CRDTs? Inspiration from the [TreeDoc paper](https://pages.lip6.fr/Marc.Shapiro/papers/RR-6956.pdf)
+	- TreeDoc is occasionally flattened from a tree into an array to cleanup tombstones and balancing issues
+	- However, this is *not* commutative. TreeDoc solves this by using an update-wins approach in a two-phase commit protocol
+		- The site that initiates a flatten acts as the coordinator and collects the votes of all other sites. Any site that detects a concurrent update to the flatten votes "no". The coordinator aborts the flatten if any site voted "no" or it never received a response
+	- Supporting large groups of replicas
+		- Uses hubs to help scale -- see [[thoughts/Network Theory]]
+		- Core: well-known nodes that are well-connected
+		- Nebula: all other nodes
+	- Epoch-based flattens
+		- Each flatten – each change of epoch – changes the frame of reference for TID
+		- A core site maintains a buffer of updates messages it needs to send to the nebula, some in old epoch some in the new one
+		- A nebula site maintains a buffer of update messages to be sent to the core; these are all in the old epoch
+		- The nebula must first bring the out of date messages into the new epoch to replay them
+
 ### December 14th
 - Had a wonderful chat with Brooklyn from Fission. We nerded out a lot about capabilities, lot's more reading for me to go through:
 	- *[Capability Myths Demolished](https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf)* 

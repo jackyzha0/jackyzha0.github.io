@@ -26,3 +26,19 @@ Yet, this new form of 'art' still carries the burden of its past. Crypto art sti
 > Most of what the crypto world calls art is entertainment. They snatch your attention. They care more about making a tweet or a headline declaring they SOLD OUT, they set a HISTORICAL RECORD, and they tell you this is the art’s value.
 
 Situated at the top of the [pace layers](thoughts/pace%20layers.md), true art should be much lower.
+
+## On AI Art
+[Source](https://theconvivialsociety.substack.com/p/lonely-surfaces-on-ai-generated-images)
+
+Horning [observes](https://substack.com/app-link/post?publication_id=1073994&post_id=89481239&utm_source=post-email-title&isFreemail=true&token=eyJ1c2VyX2lkIjoxODEwNDM3LCJwb3N0X2lkIjo4OTQ4MTIzOSwiaWF0IjoxNjcwNjI2Njc4LCJleHAiOjE2NzMyMTg2NzgsImlzcyI6InB1Yi0xMDczOTk0Iiwic3ViIjoicG9zdC1yZWFjdGlvbiJ9.hI3UELLqNg32fmQndpVpsRKJuzSV8f_RUYpiPbfpVGU), "presume that thought is entirely a matter of pattern recognition, and these patterns, already inscribed in the corpus of the internet, can [be] mapped once and for all, with human ‘thinkers’ always already trapped within them. The possibility that thought could consist of pattern breaking is eliminated."
+
+“The best art isn’t about pleasing or meeting expectations,” as Dan Cohen has put it in a recent [essay](https://buttondown.email/dancohen/archive/humane-ingenuity-45-what-ai-tells-us-about-art/) about generative AI. “Instead, it often confronts us with nuance, contradictions, and complexity.”
+
+On the contrary, Cohen concluded, “The desire of AI tools to meet expectations, to align with genres and familiar usage as their machine-learning array informs pixels and characters, is in tension with the human ability to coax new perspectives and meaning from the unusual, unique lives we each live.”
+
+In other words, AI produces what it *thinks we want to see*
+
+This is one way of thinking about what it means for a work of art to have depth. You can press in, and it won’t dissolve under a more attentive gaze. AI art *does* dissolve under deep [[thoughts/attention economy|attention]]. Questions to ask:
+1. How will AI-generated images train our vision?
+2. What habit of attention does it encourage?
+3. What modes of engagement do they sustain?

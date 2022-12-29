@@ -26,3 +26,6 @@ Some quotes to live by.
 17. "Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree. We are comprised also of every person we were in the years leading up to today, even if those layers have compressed into the past." [Source](https://katiewav.substack.com/p/a-personal-syllabus-2022)
 18. "You can’t build railroads before it is railroad time." _(Chuck Thacker)_
 19. “Genius is no more than childhood recaptured at will.” *(Charles Baudelaire)*
+20. “In place of occasional experiences of depth that renew and satisfy us, we are simply given an infinite surface upon which to skim indefinitely.” ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
+21. "Many a failure of love follows on the—usually false—opinion that we have exhausted the other person’s inside, that there is no further promise of depth." ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
+	- Deep attention as diversification: gaining access to a bit more of the world.
