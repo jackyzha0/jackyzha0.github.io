@@ -128,13 +128,13 @@ Assign to each outcome $x$ a value $v(x)$ such that $v(x) \geq v(y) \iff x \geq 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.933efbbed7fedc3c28e68effb7d9c539.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0443f678e03e9a2bfeb11d2cd0c0b0a3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
