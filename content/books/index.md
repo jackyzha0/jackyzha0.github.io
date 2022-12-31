@@ -21,10 +21,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Dream Machine** by M. Mitchell Waldrop
 
 ## Current
-* **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
+- none for now :)
 
 ## Past
 2022
+- **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 * **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 * **Permutation City** by Greg Egan
 - **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee

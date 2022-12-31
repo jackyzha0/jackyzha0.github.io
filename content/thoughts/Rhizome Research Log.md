@@ -9,6 +9,10 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## December
+### December 30th
+- Reading about [[thoughts/Datalog]]
+	- 
+
 ### December 28th
 - Finally finished up my blog post on [[posts/communal-computing|Communal Computing]]! It turns out, sharp feedback leads to better writing, who would have ever thought :')
 - Did a bit more thinking about Kleppmann's *Recovering from key compromise in decentralised access control systems*
@@ -257,7 +261,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Turns out most modern real-time applications look something like this:![[thoughts/images/modern-app-architecture.png]]
 	- SQL seems to be too complex. The common request for data in front end is a complex case to express to SQL. "We shouldn’t need advanced features for common cases."
 		- The most common query is our “fetch nested relations”. This should be supported first class
-	- We can potentially emulate this using triple stores built on top of an append-only CRDT. Datalog and triple stores have been around for decades. This also means that people have built reactive implementations.
+	- We can potentially emulate this using triple stores built on top of an append-only CRDT. [[thoughts/Datalog|Datalog]] and triple stores have been around for decades. This also means that people have built reactive implementations.
 	- Unsure if we can leverage [[thoughts/CALM Theorem|CALM]] as its Datalog but *not* monotonic (facts can be retracted)
 - DAG instead of append-only log
 	- "Both of these abilities follow directly from the explicit embedding of causality into a DAG, with time travel being analogous to a traversal over that graph" [Dialog](https://fission.codes/blog/fission-reactor-dialog-first-look/)

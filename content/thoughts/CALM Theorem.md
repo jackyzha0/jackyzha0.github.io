@@ -20,7 +20,7 @@ Monotonic properties arise from things in the form of a $\exists$ question (the 
 
 What we’ve learned from these examples is that negation and universal quantification mess with monotonicity.
 
-Thus, we can also express CALM in terms of a programming language like Datalog: 
+Thus, we can also express CALM in terms of a programming language like [[thoughts/Datalog|Datalog]]: 
 
 > A program has an eventually consistent, coordination-free execution strategy if and only if it is expressible in (monotonic) Datalog.
 
