@@ -128,13 +128,13 @@ Similar to design by committee → a project that has many designers involved bu
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

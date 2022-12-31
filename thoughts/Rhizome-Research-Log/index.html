@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -697,6 +697,145 @@ May 3, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -4070,6 +4209,145 @@ May 3, 2022
         
         
         
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
       
     
     
@@ -22410,6 +22688,12 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#december"><h2 id="december"><span class="hanchor" ariaLabel="Anchor"># </span>December</h2></a>
+<a href="#december-30th"><h3 id="december-30th"><span class="hanchor" ariaLabel="Anchor"># </span>December 30th</h3></a>
+<ul>
+<li>
+<a href="#reading-about-thoughtsdatalog"><h2 id="reading-about-thoughtsdatalog"><span class="hanchor" ariaLabel="Anchor"># </span>Reading about <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a></h2></a>
+</li>
+</ul>
 <a href="#december-28th"><h3 id="december-28th"><span class="hanchor" ariaLabel="Anchor"># </span>December 28th</h3></a>
 <ul>
 <li>Finally finished up my blog post on <a href="/posts/communal-computing" rel="noopener" class="internal-link" data-src="/posts/communal-computing">Communal Computing</a>! It turns out, sharp feedback leads to better writing, who would have ever thought :')</li>
@@ -22905,7 +23189,7 @@ May 3, 2022
 <li>The most common query is our “fetch nested relations”. This should be supported first class</li>
 </ul>
 </li>
-<li>We can potentially emulate this using triple stores built on top of an append-only CRDT. Datalog and triple stores have been around for decades. This also means that people have built reactive implementations.</li>
+<li>We can potentially emulate this using triple stores built on top of an append-only CRDT. <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a> and triple stores have been around for decades. This also means that people have built reactive implementations.</li>
 <li>Unsure if we can leverage <a href="/thoughts/CALM-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/CALM-Theorem">CALM</a> as its Datalog but <em>not</em> monotonic (facts can be retracted)</li>
 </ul>
 </li>

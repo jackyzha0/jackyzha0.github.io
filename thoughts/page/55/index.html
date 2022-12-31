@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -299,6 +299,26 @@ if (!doNotTrack) {
         <div class="section">
             <p class="meta">
                 
+Jun 16, 2021
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Design-Justice/" class="internal-link" data-src="/thoughts/Design-Justice/">Design Justice</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/book/">Book</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Jun 5, 2021
 
 
@@ -455,22 +475,6 @@ Jun 29, 2022
                 
             </ul>
         </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 8, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/" class="internal-link" data-src="/thoughts/Symmetric-Key-Cryptography/"></a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-            </ul>
-        </div>
     </li></ul>
 
         
@@ -480,9 +484,6 @@ Aug 8, 2022
       </li>
       <li class="page-item">
         <a href="/thoughts/page/54/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/thoughts/page/51/" aria-label="Page 51" class="page-link" role="button">51</a>
       </li>
       <li class="page-item">
         <a href="/thoughts/page/52/" aria-label="Page 52" class="page-link" role="button">52</a>
@@ -496,11 +497,14 @@ Aug 8, 2022
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 55" class="page-link" role="button">55</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/thoughts/page/56/" aria-label="Page 56" class="page-link" role="button">56</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/thoughts/page/56/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/thoughts/page/56/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </article>

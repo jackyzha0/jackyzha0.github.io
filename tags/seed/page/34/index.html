@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -307,6 +307,24 @@ Dec 12, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/page-layout/" class="internal-link" data-src="/thoughts/page-layout/">Page Layout</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Dec 12, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/prototyping/" class="internal-link" data-src="/thoughts/prototyping/">Prototyping</a></h3>
             </div>
             <div class="spacer"></div>
@@ -466,24 +484,6 @@ Oct 30, 2021
                 
             </ul>
         </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 27, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/Lindy-effect/" class="internal-link" data-src="/thoughts/Lindy-effect/">Lindy Effect</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
     </li></ul>
 
         
@@ -513,7 +513,7 @@ Oct 27, 2021
         <a href="/tags/seed/page/35/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/tags/seed/page/40/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/tags/seed/page/41/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </article>

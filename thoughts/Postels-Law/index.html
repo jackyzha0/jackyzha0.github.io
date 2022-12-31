@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -372,6 +372,49 @@ Dec 26, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -389,6 +432,9 @@ Dec 26, 2022
 <p>The principle is also known as Postel&rsquo;s law, after Jon Postel, who used the wording in an early specification of TCP.</p>
 <p>&ldquo;It takes two to miscommunicate.&rdquo; A great listener, <em>or</em> a skilled speaker, can resolve a lot of conflicts.</p>
 <p>Postel&rsquo;s Law is the principle the <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a> is based on. Not because Jon Postel was such a great salesperson and talked everyone into it, but because that is the only winning evolutionary strategy when internets are competing.</p>
+<a href="#structure-from-structurelessness"><h2 id="structure-from-structurelessness"><span class="hanchor" ariaLabel="Anchor"># </span>Structure from Structurelessness</h2></a>
+<p><em>Allow all, bless some</em> is an important general principle for building evolvable systems. Allowing all means new use-cases can evolve from the bottom-up, while blessed fields provide a stable API which multiple clients can count on</p>
+<p>This is how <a href="/thoughts/Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Protocol">protocols</a> evolve</p>
 
 
     </article>

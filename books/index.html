@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.600d8b8c78aed34c618228a8a7c6be1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.6c60699527f76d57edd0e9e1636ec439.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82164abca40bd6532afdf1ec7f67d0ab.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -296,7 +296,7 @@ if (!doNotTrack) {
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Dec 24, 2022
+Dec 30, 2022
 
  
           
@@ -633,10 +633,13 @@ Dec 24, 2022
 </ul>
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>
-<li><strong><a href="/thoughts/Seeing-like-a-State" rel="noopener" class="internal-link" data-src="/thoughts/Seeing-like-a-State">Seeing Like A State</a></strong> by James C. Scott</li>
+<li>none for now :)</li>
 </ul>
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <p>2022</p>
+<ul>
+<li><strong><a href="/thoughts/Seeing-like-a-State" rel="noopener" class="internal-link" data-src="/thoughts/Seeing-like-a-State">Seeing Like A State</a></strong> by James C. Scott</li>
+</ul>
 <ul>
 <li><strong><a href="/thoughts/Games-Agency-as-Art" rel="noopener" class="internal-link" data-src="/thoughts/Games-Agency-as-Art">Games Agency as Art</a></strong> by C. Thi Nguyen</li>
 <li><strong>Permutation City</strong> by Greg Egan</li>

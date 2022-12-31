@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Datalog</title>
+      <link>https://jzhao.xyz/thoughts/Datalog/</link>
+      <pubDate>Thu, 29 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Datalog/</guid>
+      <description>Sources:
+ What You Always Wanted to Know About Datalog (And Never Dared to Ask)   Datalog is basically a simplified version of general Logic Programming.</description>
+    </item>
+    
+    <item>
       <title>git</title>
       <link>https://jzhao.xyz/thoughts/git/</link>
       <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
