@@ -8,6 +8,37 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## January
+### January 1st
+- More thoughts on access control
+- *[Distributed Access Control for Collaborative Applications using CRDTs](https://hal.inria.fr/hal-03584553/file/papoc.pdf)* uses a total ordering of roles in order to resolve access conflicts
+	- However, in the case of two top-level administrators revoking access, the same problem occurs
+	- Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 1 and another person with access to file 2 but not file 1.
+	- "Combining CRDTs for data with CRDTs for policies raises several challenges. Conflicts between two concurrent operations based on diverging policies cannot be safely resolved."
+		- They resolve this by attaching an epoch to each policy change 
+		- This implies that each CRDT requires the ability to undo and redo operations between epochs
+		- This also limited 'effective' commutativity to the range of epochs. The assumption here is that policy changes are rare so this doesn't happen very often
+- Garbage Collection
+	- Two part series ([pt1](http://web.archive.org/web/20200621012528/http://composition.al/CMPS290S-2018-09/2018/11/12/implementing-a-garbage-collected-graph-crdt-part-1-of-2.html) and [pt2](http://web.archive.org/web/20200214095630/http://composition.al/CMPS290S-2018-09/2018/12/08/implementing-a-garbage-collected-graph-crdt-part-2-of-2.html))
+	- Why GC is hard:
+		- First, establishing the stability of an update as described in the paper assumes that the set of all replicas is known and that they do not crash permanently.
+	- Inspiration from Delta-CRDTs
+		- In the causal-consistency-ensuring anti-entropy algorithm. When a node sends a delta-interval to another, the receiving node replies with an acknowledgment after merging the interval into its local state. A delta that has been acknowledged by all of a node’s neighbours is then garbage-collected
+	- Synchronized GC
+		- Under two-phase commit, each replica will vote on whether each tombstone is still necessary.
+	- QCs for GC?
+- Type-level consistency guarantees?
+	- [Source](http://web.archive.org/web/20200225212322/http://composition.al/CMPS290S-2018-09/2018/11/21/mixing-consistency-in-a-programmable-storage-system.html)
+	- Just as 'function colouring' exists as a way of distinguishing async and non-async functions, what if we could colour other sorts of [[thoughts/system model|system models]]?
+		- [IPA](http://web.archive.org/web/20220121204308/https://homes.cs.washington.edu/~luisceze/publications/ipa-socc16.pdf) does this
+		- [RedBlue](http://web.archive.org/web/20200910163620/https://www.usenix.org/system/files/conference/osdi12/osdi12-final-162.pdf) consistency?
+- CockroachDB Layers
+	- SQL Layer: translates high-level SQL statements to low-level read and write requests to the underlying key-value store
+	- Transactional KV: Requests from the SQL layer are passed to the Transactional KV layer that ensures atomicity of changes spanning multiple KV pairs
+	- Distribution: monolithic key space. Range-partitioning on the keys to divide the data into contiguous ordered chunks of size ~64 MiB, that are stored across the cluster. We call these chunks Ranges
+	- Replication: consensus replication using [[thoughts/Raft Consensus Algorithm|Raft]] across replicas
+	- Storage: KV-store, use RocksDB
+
 ## December
 ### December 30th
 - Reading about [[thoughts/Datalog]] as a way of expressing CRDTs... some promising work in this direction
