@@ -129,13 +129,13 @@ In the context of marginalized knowers needing to model how their actions are pe
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.480b7b0636cd862eee4a8fa96f61fe86.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.12ff2e8e9cf4c42993558076ed5e60ca.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

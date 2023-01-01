@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.480b7b0636cd862eee4a8fa96f61fe86.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.12ff2e8e9cf4c42993558076ed5e60ca.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,284 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -22687,6 +22965,71 @@ May 3, 2022
 
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
+<a href="#january"><h2 id="january"><span class="hanchor" ariaLabel="Anchor"># </span>January</h2></a>
+<a href="#january-1st"><h3 id="january-1st"><span class="hanchor" ariaLabel="Anchor"># </span>January 1st</h3></a>
+<ul>
+<li>More thoughts on access control</li>
+<li><em>
+<a href="https://hal.inria.fr/hal-03584553/file/papoc.pdf" rel="noopener">Distributed Access Control for Collaborative Applications using CRDTs</a></em> uses a total ordering of roles in order to resolve access conflicts
+<ul>
+<li>However, in the case of two top-level administrators revoking access, the same problem occurs</li>
+<li>Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 1 and another person with access to file 2 but not file 1.</li>
+<li>&ldquo;Combining CRDTs for data with CRDTs for policies raises several challenges. Conflicts between two concurrent operations based on diverging policies cannot be safely resolved.&rdquo;
+<ul>
+<li>They resolve this by attaching an epoch to each policy change</li>
+<li>This implies that each CRDT requires the ability to undo and redo operations between epochs</li>
+<li>This also limited &rsquo;effective&rsquo; commutativity to the range of epochs. The assumption here is that policy changes are rare so this doesn&rsquo;t happen very often</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Garbage Collection
+<ul>
+<li>Two part series (
+<a href="http://web.archive.org/web/20200621012528/http://composition.al/CMPS290S-2018-09/2018/11/12/implementing-a-garbage-collected-graph-crdt-part-1-of-2.html" rel="noopener">pt1</a> and 
+<a href="http://web.archive.org/web/20200214095630/http://composition.al/CMPS290S-2018-09/2018/12/08/implementing-a-garbage-collected-graph-crdt-part-2-of-2.html" rel="noopener">pt2</a>)</li>
+<li>Why GC is hard:
+<ul>
+<li>First, establishing the stability of an update as described in the paper assumes that the set of all replicas is known and that they do not crash permanently.</li>
+</ul>
+</li>
+<li>Inspiration from Delta-CRDTs
+<ul>
+<li>In the causal-consistency-ensuring anti-entropy algorithm. When a node sends a delta-interval to another, the receiving node replies with an acknowledgment after merging the interval into its local state. A delta that has been acknowledged by all of a node’s neighbours is then garbage-collected</li>
+</ul>
+</li>
+<li>Synchronized GC
+<ul>
+<li>Under two-phase commit, each replica will vote on whether each tombstone is still necessary.</li>
+</ul>
+</li>
+<li>QCs for GC?</li>
+</ul>
+</li>
+<li>Type-level consistency guarantees?
+<ul>
+<li>
+<a href="http://web.archive.org/web/20200225212322/http://composition.al/CMPS290S-2018-09/2018/11/21/mixing-consistency-in-a-programmable-storage-system.html" rel="noopener">Source</a></li>
+<li>Just as &lsquo;function colouring&rsquo; exists as a way of distinguishing async and non-async functions, what if we could colour other sorts of <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system models</a>?
+<ul>
+<li>
+<a href="http://web.archive.org/web/20220121204308/https://homes.cs.washington.edu/~luisceze/publications/ipa-socc16.pdf" rel="noopener">IPA</a> does this</li>
+<li>
+<a href="http://web.archive.org/web/20200910163620/https://www.usenix.org/system/files/conference/osdi12/osdi12-final-162.pdf" rel="noopener">RedBlue</a> consistency?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CockroachDB Layers
+<ul>
+<li>SQL Layer: translates high-level SQL statements to low-level read and write requests to the underlying key-value store</li>
+<li>Transactional KV: Requests from the SQL layer are passed to the Transactional KV layer that ensures atomicity of changes spanning multiple KV pairs</li>
+<li>Distribution: monolithic key space. Range-partitioning on the keys to divide the data into contiguous ordered chunks of size ~64 MiB, that are stored across the cluster. We call these chunks Ranges</li>
+<li>Replication: consensus replication using <a href="/thoughts/Raft-Consensus-Algorithm" rel="noopener" class="internal-link" data-src="/thoughts/Raft-Consensus-Algorithm">Raft</a> across replicas</li>
+<li>Storage: KV-store, use RocksDB</li>
+</ul>
+</li>
+</ul>
 <a href="#december"><h2 id="december"><span class="hanchor" ariaLabel="Anchor"># </span>December</h2></a>
 <a href="#december-30th"><h3 id="december-30th"><span class="hanchor" ariaLabel="Anchor"># </span>December 30th</h3></a>
 <ul>
@@ -22699,7 +23042,7 @@ May 3, 2022
 </ul>
 <a href="#december-28th"><h3 id="december-28th"><span class="hanchor" ariaLabel="Anchor"># </span>December 28th</h3></a>
 <ul>
-<li>Finally finished up my blog post on <a href="/posts/communal-computing" rel="noopener" class="internal-link" data-src="/posts/communal-computing">Communal Computing</a>! It turns out, sharp feedback leads to better writing, who would have ever thought :')</li>
+<li>Finally finished up my blog post on <a href="/posts/communal-computing" rel="noopener" class="internal-link" data-src="/posts/communal-computing">Communal Computing</a>! It turns out, sharp feedback leads to better writing, who would have ever thought :&rsquo;)</li>
 <li>Did a bit more thinking about Kleppmann&rsquo;s <em>Recovering from key compromise in decentralised access control systems</em>
 <ul>
 <li>I feel like there is a close connection to be made with <a href="/thoughts/Arrows-Impossibility-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/Arrows-Impossibility-Theorem">Arrow&rsquo;s Impossibility Theorem</a> but haven&rsquo;t been able to formally show it</li>

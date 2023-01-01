@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.480b7b0636cd862eee4a8fa96f61fe86.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.12ff2e8e9cf4c42993558076ed5e60ca.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,24 @@ Oct 26, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/teaching/" class="internal-link" data-src="/thoughts/teaching/">Teaching</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 26, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/zero-sum/" class="internal-link" data-src="/thoughts/zero-sum/">Zero-sum</a></h3>
             </div>
             <div class="spacer"></div>
@@ -451,24 +469,6 @@ Oct 20, 2021
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/information-behaviour/" class="internal-link" data-src="/thoughts/information-behaviour/">Information Behaviour</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Oct 20, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/rationality/" class="internal-link" data-src="/thoughts/rationality/">Rationality</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">
