@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1294,6 +1294,10 @@ as tombstones accumulate and internal data structures become unbalanced. The com
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bft-json-crdt/" data-ctx="CvRDTs" data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
       </li>
@@ -1308,6 +1312,12 @@ as tombstones accumulate and internal data structures become unbalanced. The com
       
       <li>
         <a href="/thoughts/CRDT-Implementations/" data-ctx="state-based CRDTs" data-src="/thoughts/CRDT-Implementations" class="internal-link">CRDT Implementations</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Datalog/" data-ctx="CRDTs" data-src="/thoughts/Datalog" class="internal-link">Datalog</a>
       </li>
       
       

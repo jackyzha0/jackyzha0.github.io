@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -336,6 +336,50 @@ Dec 29, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -343,6 +387,102 @@ Dec 29, 2022
 
 
 
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -379,6 +519,7 @@ Dec 29, 2022
 <ul>
 <li>Herbrand base (HB) is the set of all facts we can express in the language of Datalog</li>
 <li>If <code>S</code> is a finite set of Datalog clauses, we denote <code>cons(S)</code> the set of all logical consequences of <code>S</code></li>
+<li>A fixpoint is a state of the evaluation process in which no more rules can be applied and all of the predicates in the program have reached their final, &ldquo;fixed&rdquo; values.</li>
 </ul>
 <a href="#inference-rules"><h2 id="inference-rules"><span class="hanchor" ariaLabel="Anchor"># </span>Inference Rules</h2></a>
 <a href="#bottom-up-evaluation"><h3 id="bottom-up-evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Bottom-up Evaluation</h3></a>
@@ -392,7 +533,45 @@ Dec 29, 2022
 <p>Using this to derive <code>cons(S)</code> is also sometimes called forward-chaining (it follows the logical implication sign from premises to conclusions</p>
 <a href="#top-down-evaluation"><h3 id="top-down-evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Top-down Evaluation</h3></a>
 <p>Sometimes called backward-chaining. This method is particularly appropriate when a goal is specified together with a Datalog program.</p>
-<p>One example of this is called the Query-Subquery (QSQ) Approach. Prolog uses this!</p>
+<p>Rules are seen as problem generators. Each goal is considered as a problem that must be solved. The initial goal is matched with the left hand side of some rule, and generates other problems corresponding to the right-hand side predicates of that rule; this process is continued until no new problems are generated.</p>
+<p>One example of this is called the Query-Subquery (QSQ) Approach (this feels quite similar to chained currying in Haskell). Prolog uses this!</p>
+<p>Datalog goals seem more naturally executed through breadth-first techniques, as the result of the computation is neither affected by the order of predicates within the right-hand sides (RHS) of rules, nor by the order of rules within the program.</p>
+<a href="#table-of-methods"><h3 id="table-of-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Table of Methods</h3></a>
+<ul>
+<li>Evaluation methods: effective evaluation strategies (improvements at runtime)
+<ul>
+<li>Bottom-up
+<ul>
+<li>Naive</li>
+<li>Semi-naive</li>
+<li>Henschen-Naqvi</li>
+</ul>
+</li>
+<li>Top-down
+<ul>
+<li>Query-subquery (QSQ)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Rewriting method: program transformation which yields a more efficient computation (improvements at compile time)
+<ul>
+<li>Logic
+<ul>
+<li>Magic sets</li>
+<li>Counting</li>
+<li>Magic Counting</li>
+<li>Static Filtering</li>
+</ul>
+</li>
+<li>Algebraic
+<ul>
+<li>Variable reduction and constant reduction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <a href="#expressivity"><h2 id="expressivity"><span class="hanchor" ariaLabel="Anchor"># </span>Expressivity</h2></a>
 <ul>
 <li>Positive relational algebra (RA+) is equivalent to non-recursive Datalog</li>
@@ -402,6 +581,63 @@ Dec 29, 2022
 <li>However, Datalog can be enriched to support logical negation $\lnot$</li>
 </ul>
 </li>
+</ul>
+<a href="#negation"><h2 id="negation"><span class="hanchor" ariaLabel="Anchor"># </span>Negation</h2></a>
+<p>Incorporating negation can be allowed by adopting the Closed World Assumption (CWA). That is, if a fact does not logically follow from a set of Datalog clauses, then we conclude that the negation of this fact is true.</p>
+<p>That is, we assume our facts <em>completely</em> describe the domain we are interested. For the purposes of <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>, this unfortunately is not true.</p>
+<p>Even with negation in Datalog, we can&rsquo;t derive new facts from these negations. That is, we can&rsquo;t express premises that contain a negative in the formulation (e.g. &ldquo;if X is a student and X is not a graduate student, then X is an undergraduate student&rdquo;).</p>
+<p>This is possible in relational algebra using the set-difference operator.</p>
+<p>We <em>can</em> extend Datalog to support negated literals in rule bodies using stratified Datalog</p>
+<a href="#stratification"><h2 id="stratification"><span class="hanchor" ariaLabel="Anchor"># </span>Stratification</h2></a>
+<p>Consider a rule such as <code>boring(chess) :- !interesting(chess)</code></p>
+<p>We try to <em>stratify</em> the clauses of the program such that when evaluating a predicate in a rule head, it is always possible to completely evaluate all the predicates which occur negatively in the rule body or in the bodies of some subsequent rules.</p>
+<p>In the above case, it is always possible to fully evaluate the <code>interesting(chess)</code> predicate before evaluating <code>bording(chess)</code>. Formally, a stratified program $P$ can be partitioned into disjoint sets of clauses $P = P^1 \cup \dots \cup P^n$</p>
+<p>Let&rsquo;s consider an example program $P$ where <code>d</code> is the only EDB-predicate:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-prolog" data-lang="prolog"><span class="line"><span class="cl"><span class="s">r1:</span> <span class="nf">p</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="p">!</span><span class="nf">q</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">),</span> <span class="nf">s</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">).</span>
+</span></span><span class="line"><span class="cl"><span class="s">r2:</span> <span class="nf">q</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">q</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Z</span><span class="p">),</span> <span class="nf">q</span><span class="p">(</span><span class="nv">Z</span><span class="p">,</span><span class="nv">Y</span><span class="p">).</span>
+</span></span><span class="line"><span class="cl"><span class="s">r3:</span> <span class="nf">q</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">d</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">),</span> <span class="p">!</span><span class="nf">r</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">).</span>
+</span></span><span class="line"><span class="cl"><span class="s">r4:</span> <span class="nf">r</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">d</span><span class="p">(</span><span class="nv">Y</span><span class="p">,</span><span class="nv">X</span><span class="p">).</span>
+</span></span><span class="line"><span class="cl"><span class="s">r5:</span> <span class="nf">s</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Y</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">q</span><span class="p">(</span><span class="nv">X</span><span class="p">,</span><span class="nv">Z</span><span class="p">),</span><span class="nf">q</span><span class="p">(</span><span class="nv">Y</span><span class="p">,</span><span class="nv">T</span><span class="p">),</span> <span class="nv">X</span> <span class="p">!</span><span class="o">=</span> <span class="nv">Y</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We can turn these statements into an extended dependency graph (EDG) by</p>
+<ul>
+<li>Making nodes of the IDB-predicate symbols in $P$</li>
+<li>Create a directed edge $\langle p, q \rangle$ iff the predicate symbol $q$ occurs positively or negatively in a body of a rule with head predicate $p$
+<ul>
+<li>If the symbol $q$ occurs negatively, we mark the edge with $\lnot$ (that is, an edge is marked $\lnot$ if there is at least one rule with head predicate $p$ such that $q$ occurs negatively in the body)</li>
+</ul>
+</li>
+</ul>
+<p>The program can be stratified iff the EDG does not contain any cycle involving an edge labeled $\lnot$.</p>
+<p>We can then stratify $P$ into 3 layers by doing a topological sort on the dependency graph:</p>
+<ol>
+<li><code>r4</code></li>
+<li><code>r2</code>, <code>r3</code>, <code>r5</code></li>
+<li><code>r1</code></li>
+</ol>
+<p>This is one of many possible stratifications (however, they are all equivalent).</p>
+<a href="#misc"><h3 id="misc"><span class="hanchor" ariaLabel="Anchor"># </span>Misc</h3></a>
+<ul>
+<li>Three-valued logic? A fact can be true, false, or undefined</li>
+<li>Complex objects
+<ul>
+<li>$NF^2$ model (Jaeschke and Schek)</li>
+<li>Nested Relations (Fisher and Thomas)</li>
+<li>Model of Abiteboul and Beeri</li>
+<li>ALGRES</li>
+</ul>
+</li>
+<li>Modularization and structure types?</li>
 </ul>
 
 

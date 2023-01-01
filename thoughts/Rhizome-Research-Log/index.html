@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -22690,8 +22690,11 @@ May 3, 2022
 <a href="#december"><h2 id="december"><span class="hanchor" ariaLabel="Anchor"># </span>December</h2></a>
 <a href="#december-30th"><h3 id="december-30th"><span class="hanchor" ariaLabel="Anchor"># </span>December 30th</h3></a>
 <ul>
-<li>
-<a href="#reading-about-thoughtsdatalog"><h2 id="reading-about-thoughtsdatalog"><span class="hanchor" ariaLabel="Anchor"># </span>Reading about <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a></h2></a>
+<li>Reading about <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a> as a way of expressing CRDTs&hellip; some promising work in this direction
+<ul>
+<li>I think there&rsquo;s a pretty clear articulation of this over SQL as this allows us to separate data representation from data views in a more clear way</li>
+<li>This also means we can do away (?) with SQL migrations</li>
+</ul>
 </li>
 </ul>
 <a href="#december-28th"><h3 id="december-28th"><span class="hanchor" ariaLabel="Anchor"># </span>December 28th</h3></a>

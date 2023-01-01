@@ -128,13 +128,13 @@ Multi-master replication (you can write to any server, even if it cannot see any
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b051261d52009edaa77d6d5835cd8435.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2ef11884db826fbcb00337c2f171c569.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
