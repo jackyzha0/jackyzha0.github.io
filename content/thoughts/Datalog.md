@@ -7,7 +7,6 @@ tags:
 
 Sources:
 - *What You Always Wanted to Know About Datalog (And Never Dared to Ask)*
-- 
 
 Datalog is basically a simplified version of general Logic Programming.
 
@@ -55,4 +54,3 @@ One example of this is called the Query-Subquery (QSQ) Approach. Prolog uses thi
 - Datalog can express recursive queries which RA can't express
 - Full relational algebra (RA) can express negation which Datalog can't express
 	- However, Datalog can be enriched to support logical negation $\lnot$
-- 
