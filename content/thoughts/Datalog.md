@@ -31,6 +31,7 @@ A program `P` might produce a large number of intermediate IDB-relations. Howeve
 More notation/terminology:
 - Herbrand base (HB) is the set of all facts we can express in the language of Datalog
 - If `S` is a finite set of Datalog clauses, we denote `cons(S)` the set of all logical consequences of `S`
+- A fixpoint is a state of the evaluation process in which no more rules can be applied and all of the predicates in the program have reached their final, "fixed" values.
 
 ## Inference Rules
 ### Bottom-up Evaluation
@@ -47,10 +48,82 @@ Using this to derive `cons(S)` is also sometimes called forward-chaining (it fol
 ### Top-down Evaluation
 Sometimes called backward-chaining. This method is particularly appropriate when a goal is specified together with a Datalog program.
 
-One example of this is called the Query-Subquery (QSQ) Approach. Prolog uses this!
+Rules are seen as problem generators. Each goal is considered as a problem that must be solved. The initial goal is matched with the left hand side of some rule, and generates other problems corresponding to the right-hand side predicates of that rule; this process is continued until no new problems are generated.
+
+One example of this is called the Query-Subquery (QSQ) Approach (this feels quite similar to chained currying in Haskell). Prolog uses this!
+
+Datalog goals seem more naturally executed through breadth-first techniques, as the result of the computation is neither affected by the order of predicates within the right-hand sides (RHS) of rules, nor by the order of rules within the program.
+
+### Table of Methods
+- Evaluation methods: effective evaluation strategies (improvements at runtime)
+	- Bottom-up
+		- Naive
+		- Semi-naive
+		- Henschen-Naqvi
+	- Top-down
+		- Query-subquery (QSQ)
+- Rewriting method: program transformation which yields a more efficient computation (improvements at compile time)
+	- Logic
+		- Magic sets
+		- Counting
+		- Magic Counting
+		- Static Filtering
+	- Algebraic
+		- Variable reduction and constant reduction
 
 ## Expressivity
 - Positive relational algebra (RA+) is equivalent to non-recursive Datalog
 - Datalog can express recursive queries which RA can't express
 - Full relational algebra (RA) can express negation which Datalog can't express
 	- However, Datalog can be enriched to support logical negation $\lnot$
+
+## Negation
+Incorporating negation can be allowed by adopting the Closed World Assumption (CWA). That is, if a fact does not logically follow from a set of Datalog clauses, then we conclude that the negation of this fact is true.
+
+That is, we assume our facts *completely* describe the domain we are interested. For the purposes of [[thoughts/CRDT|CRDTs]], this unfortunately is not true.
+
+Even with negation in Datalog, we can't derive new facts from these negations. That is, we can't express premises that contain a negative in the formulation (e.g. "if X is a student and X is not a graduate student, then X is an undergraduate student").
+
+This is possible in relational algebra using the set-difference operator.
+
+We *can* extend Datalog to support negated literals in rule bodies using stratified Datalog
+
+## Stratification
+Consider a rule such as `boring(chess) :- !interesting(chess)`
+
+We try to *stratify* the clauses of the program such that when evaluating a predicate in a rule head, it is always possible to completely evaluate all the predicates which occur negatively in the rule body or in the bodies of some subsequent rules.
+
+In the above case, it is always possible to fully evaluate the `interesting(chess)` predicate before evaluating `bording(chess)`. Formally, a stratified program $P$ can be partitioned into disjoint sets of clauses $P = P^1 \cup \dots \cup P^n$
+
+Let's consider an example program $P$ where `d` is the only EDB-predicate:
+
+```prolog
+r1: p(X,Y) :- !q(X,Y), s(X,Y).
+r2: q(X,Y) :- q(X,Z), q(Z,Y).
+r3: q(X,Y) :- d(X,Y), !r(X,Y).
+r4: r(X,Y) :- d(Y,X).
+r5: s(X,Y) :- q(X,Z),q(Y,T), X != Y
+```
+
+We can turn these statements into an extended dependency graph (EDG) by
+- Making nodes of the IDB-predicate symbols in $P$
+- Create a directed edge $\langle p, q \rangle$ iff the predicate symbol $q$ occurs positively or negatively in a body of a rule with head predicate $p$
+	- If the symbol $q$ occurs negatively, we mark the edge with $\lnot$ (that is, an edge is marked $\lnot$ if there is at least one rule with head predicate $p$ such that $q$ occurs negatively in the body)
+
+The program can be stratified iff the EDG does not contain any cycle involving an edge labeled $\lnot$.
+
+We can then stratify $P$ into 3 layers by doing a topological sort on the dependency graph:
+1. `r4`
+2. `r2`, `r3`, `r5`
+3. `r1`
+
+This is one of many possible stratifications (however, they are all equivalent).
+
+### Misc
+- Three-valued logic? A fact can be true, false, or undefined
+- Complex objects
+	- $NF^2$ model (Jaeschke and Schek)
+	- Nested Relations (Fisher and Thomas)
+	- Model of Abiteboul and Beeri
+	- ALGRES
+- Modularization and structure types?

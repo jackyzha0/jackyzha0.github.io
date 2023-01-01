@@ -10,8 +10,9 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## December
 ### December 30th
-- Reading about [[thoughts/Datalog]]
-	- 
+- Reading about [[thoughts/Datalog]] as a way of expressing CRDTs... some promising work in this direction
+	- I think there's a pretty clear articulation of this over SQL as this allows us to separate data representation from data views in a more clear way
+	- This also means we can do away (?) with SQL migrations
 
 ### December 28th
 - Finally finished up my blog post on [[posts/communal-computing|Communal Computing]]! It turns out, sharp feedback leads to better writing, who would have ever thought :')
