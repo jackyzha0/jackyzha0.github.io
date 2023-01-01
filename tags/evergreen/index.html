@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a0fc873f16ee7da222da116c44f494e5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -464,7 +464,7 @@ Dec 8, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -11,7 +11,7 @@
     content="Have you been writing those letters to yourself? &ldquo;Dear Evan Hansen, This is gonna be a good day and here’s why."
   />
   <title>
-    A Letter to my Past and Future selves
+    2021: A Letter to my Past and Future selves
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a0fc873f16ee7da222da116c44f494e5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -293,7 +293,7 @@ if (!doNotTrack) {
 
 
     <article>
-      <h1>A Letter to my Past and Future selves</h1>
+      <h1>2021: A Letter to my Past and Future selves</h1>
       <p class="meta">
         Last updated 
 Dec 30, 2021
@@ -631,6 +631,16 @@ Dec 30, 2021
     
       
       
+      
+    
+      
+      
+      <li>
+        <a href="/posts/2022/" data-ctx="letters" data-src="/posts/2022" class="internal-link">2022: A year lived earnestly</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/posts/the-fools-who-dream/" data-ctx="letter" data-src="/posts/the-fools-who-dream" class="internal-link">Here&#39;s to the fools who dream</a>
       </li>
@@ -678,7 +688,7 @@ Dec 30, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

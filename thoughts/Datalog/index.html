@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="Sources:
- What You Always Wanted to Know About Datalog (And Never Dared to Ask)   Datalog is basically a simplified version of general Logic Programming."
+ What You Always Wanted to Know About Datalog (And Never Dared to Ask)  Datalog is basically a simplified version of general Logic Programming."
   />
   <title>
     Datalog
@@ -128,13 +128,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1af86b0509bb37e6da458c9b5752e155.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.27b9eded027491136c6a358fa232693f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a0fc873f16ee7da222da116c44f494e5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7968d19e5e98f5dfd3b09b2f28724841.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -358,7 +358,6 @@ Dec 29, 2022
 <p>Sources:</p>
 <ul>
 <li><em>What You Always Wanted to Know About Datalog (And Never Dared to Ask)</em></li>
-<li></li>
 </ul>
 <p>Datalog is basically a simplified version of general Logic Programming.</p>
 <p>In the formalism of Datalog, both facts and rules are represented as Horn clauses of the general shape <code>L0 :- L1, ..., Ln</code>. Each <code>L</code> is a predicate symbol <code>p(t1, ..., ti)</code> where <code>t</code> are the terms. A term can either be a constant or a variable.</p>
@@ -403,7 +402,6 @@ Dec 29, 2022
 <li>However, Datalog can be enriched to support logical negation $\lnot$</li>
 </ul>
 </li>
-<li></li>
 </ul>
 
 
@@ -495,7 +493,7 @@ Dec 29, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
