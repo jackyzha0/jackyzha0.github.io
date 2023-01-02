@@ -9,6 +9,29 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 2nd
+- An idea: Hashgraphs + safety-certificates for non-commutative operations
+- This solves Garbage Collection and Access Control
+- Eager mode (similar to Delta-CRDTs)
+	- Flood communication
+	- Assumes unique ID for each operation
+	- We track a list of all peers who we have received messages from (a list of `AuthorID` for each neighbour)
+	- Each time we receive an operation with ID `OpId` we haven't seen before and successfully apply it, we broadcast an `ACK(OpId)` message to all neighbouring peers
+	- For each op `OpId`, we locally track the set of all peers who have acknowledged `OpId`
+	- Once we have received an acknowledgement from each of our neighbours for a single operation (call this the safety-certificate), it is safe to apply a non-commutative operation on it (we can now delete it or deliver any causal dependents)
+		- This works for applications with explicit causal dependencies (e.g. text editing)
+		- However, it is a bit more difficult to reason about for implicit causal dependencies (e.g. access control) 
+		- Consider two admins A and B who are accessing the same document.
+			- Concurrently:
+				- `op1`: Admin A types the letter 'a' in the document
+				- `op2`: Admin B revokes A's access to the document
+			- The problem is that the algorithm treats these as operations that commute when the clearly don't! Some peers may see 'a' (if they receive `op1` ahead of `op2`) and others will not (`op2` ahead of `op1` so `op1` becomes invalidated)
+		- This is solved with the epoch-based approach below
+	- However this requires fixed membership as it seems to completely mishandle cases where members leave the group (can no longer get a whole safety-certificate)
+		- This is potentially solved by signalling departure and setting an inactivity timeout for nodes
+			- Thought using heartbeats to refresh inactivity timeout feels counter to the whole CRDT ethos of offline support
+- Epoch-based mode
+
 ### January 1st
 - More thoughts on access control
 - *[Distributed Access Control for Collaborative Applications using CRDTs](https://hal.inria.fr/hal-03584553/file/papoc.pdf)* uses a total ordering of roles in order to resolve access conflicts
