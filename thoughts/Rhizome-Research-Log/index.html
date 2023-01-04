@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.480b7b0636cd862eee4a8fa96f61fe86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f17bd6e63ba672c10f0dbab06955fc73.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c21eaaec4d3128256fb7268a5eebaae9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,155 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -24576,10 +24725,69 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#january"><h2 id="january"><span class="hanchor" ariaLabel="Anchor"># </span>January</h2></a>
+<a href="#january-3rd"><h3 id="january-3rd"><span class="hanchor" ariaLabel="Anchor"># </span>January 3rd</h3></a>
+<ul>
+<li>Rollback-based mode more thoughts
+<ul>
+<li>Attaching an epoch to each non-commutative operation (this is effectively making the implicit causal dependency explicit)
+<ul>
+<li>Separates non-commutative and commutative sequence numbers</li>
+</ul>
+</li>
+<li>Ordered so epoch numbers are treated as <em>earlier</em> (opposite to sequence numbers)
+<ul>
+<li>Then, if we add rules to deal with conflicting actions add a query/view level</li>
+<li>e.g. how to deal with an insert op by author A if author A&rsquo;s access to the document is revoked</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>I think the research direction I want to explore further is expressing CRDTs as queries over an ever-growing fact-base (Represented as a )
+<ul>
+<li>Commutativity is trivial using the set union operator</li>
+<li>Fact-base is a 6-tuple
+<ul>
+<li>Entity ID (E)</li>
+<li>Attribute (A)
+<ul>
+<li>Cardinality of one or many</li>
+</ul>
+</li>
+<li>Value (V)</li>
+<li>OpID (Id)</li>
+<li>CausalOrigin (Origin)</li>
+<li>Retracted (Del)
+<ul>
+<li>This is equivalent to a delete operation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Incremental View Maintenance
+<ul>
+<li>
+<a href="https://www.researchgate.net/publication/213883593_Maintaining_views_incrementally" rel="noopener">DRed</a></li>
+</ul>
+</li>
+<li>Building indexes using <a href="/thoughts/Prolly-Trees" rel="noopener" class="internal-link" data-src="/thoughts/Prolly-Trees">Prolly Trees</a> for optimized lookups</li>
+<li>Questions
+<ul>
+<li>How might capabilities be modelled? And private data?</li>
+<li>Autocodec for translating attributes between applications?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Another possible route&hellip;. exploring UI/UX of CRDTs as time travel
+<ul>
+<li>More suited as a short, term-long project (and potentially a project I can do with Ink &amp; Switch)</li>
+<li>Visual drag-and-drop interface</li>
+</ul>
+</li>
+</ul>
 <a href="#january-2nd"><h3 id="january-2nd"><span class="hanchor" ariaLabel="Anchor"># </span>January 2nd</h3></a>
 <ul>
 <li>An idea: Hashgraphs + safety-certificates for non-commutative operations</li>
-<li>This solves Garbage Collection and Access Control</li>
 <li>Eager mode (similar to Delta-CRDTs)
 <ul>
 <li>Flood communication</li>
@@ -24609,14 +24817,24 @@ May 3, 2022
 <ul>
 <li>This is potentially solved by signalling departure and setting an inactivity timeout for nodes
 <ul>
-<li>Thought using heartbeats to refresh inactivity timeout feels counter to the whole CRDT ethos of offline support</li>
+<li>Though using heartbeats to refresh inactivity timeout feels counter to the whole CRDT ethos of offline support</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Epoch-based mode</li>
+<li>Rollback-based mode
+<ul>
+<li>Attaching an epoch to each non-commutative operation (this is effectively making the implicit causal dependency explicit)</li>
+<li>This implies that each CRDT requires the ability to undo and redo operations between non-commutative operations
+<ul>
+<li>Not all computation is reversible though (e.g. entropy increasing operations like blurring), how do we reconcile this?</li>
+<li>Can we utilize the hashgraph to do git-like rebasing to avoid having to implement a redo?</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <a href="#january-1st"><h3 id="january-1st"><span class="hanchor" ariaLabel="Anchor"># </span>January 1st</h3></a>
 <ul>
@@ -24625,12 +24843,16 @@ May 3, 2022
 <a href="https://hal.inria.fr/hal-03584553/file/papoc.pdf" rel="noopener">Distributed Access Control for Collaborative Applications using CRDTs</a></em> uses a total ordering of roles in order to resolve access conflicts
 <ul>
 <li>However, in the case of two top-level administrators revoking access, the same problem occurs</li>
-<li>Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 1 and another person with access to file 2 but not file 1.</li>
+<li>Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 2 and another person with access to file 2 but not file 1.</li>
 <li>&ldquo;Combining CRDTs for data with CRDTs for policies raises several challenges. Conflicts between two concurrent operations based on diverging policies cannot be safely resolved.&rdquo;
 <ul>
-<li>They resolve this by attaching an epoch to each policy change</li>
+<li>They resolve this by attaching an epoch to each policy change
+<ul>
+<li>The epoch doesn’t grow in size, but merely refers to a parent operation that last changed the policy.</li>
+</ul>
+</li>
 <li>This implies that each CRDT requires the ability to undo and redo operations between epochs</li>
-<li>This also limited &rsquo;effective&rsquo; commutativity to the range of epochs. The assumption here is that policy changes are rare so this doesn&rsquo;t happen very often</li>
+<li>Undo-redo may be expensive if it happens a lot! The assumption here is that policy changes are rare so this doesn&rsquo;t happen very often</li>
 </ul>
 </li>
 </ul>

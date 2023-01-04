@@ -128,13 +128,13 @@ Heavily linked with research debt. What makes for effective teaching and knowled
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.480b7b0636cd862eee4a8fa96f61fe86.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f17bd6e63ba672c10f0dbab06955fc73.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c21eaaec4d3128256fb7268a5eebaae9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
