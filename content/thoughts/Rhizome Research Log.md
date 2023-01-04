@@ -9,9 +9,36 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 3rd
+- Rollback-based mode more thoughts
+	- Attaching an epoch to each non-commutative operation (this is effectively making the implicit causal dependency explicit)
+		- Separates non-commutative and commutative sequence numbers
+	- Ordered so epoch numbers are treated as *earlier* (opposite to sequence numbers)
+		- Then, if we add rules to deal with conflicting actions add a query/view level
+		- e.g. how to deal with an insert op by author A if author A's access to the document is revoked
+- I think the research direction I want to explore further is expressing CRDTs as queries over an ever-growing fact-base (Represented as a )
+	- Commutativity is trivial using the set union operator
+	- Fact-base is a 6-tuple
+		- Entity ID (E)
+		- Attribute (A)
+			- Cardinality of one or many
+		- Value (V)
+		- OpID (Id)
+		- CausalOrigin (Origin)
+		- Retracted (Del)
+			- This is equivalent to a delete operation
+	- Incremental View Maintenance
+		- [DRed](https://www.researchgate.net/publication/213883593_Maintaining_views_incrementally)
+	- Building indexes using [[thoughts/Prolly Trees]] for optimized lookups
+	- Questions
+		- How might capabilities be modelled? And private data?
+		- Autocodec for translating attributes between applications?
+- Another possible route.... exploring UI/UX of CRDTs as time travel
+	- More suited as a short, term-long project (and potentially a project I can do with Ink & Switch)
+	- Visual drag-and-drop interface
+
 ### January 2nd
 - An idea: Hashgraphs + safety-certificates for non-commutative operations
-- This solves Garbage Collection and Access Control
 - Eager mode (similar to Delta-CRDTs)
 	- Flood communication
 	- Assumes unique ID for each operation
@@ -29,18 +56,23 @@ I think research logs tend to generally focus too much on what one did rather th
 		- This is solved with the epoch-based approach below
 	- However this requires fixed membership as it seems to completely mishandle cases where members leave the group (can no longer get a whole safety-certificate)
 		- This is potentially solved by signalling departure and setting an inactivity timeout for nodes
-			- Thought using heartbeats to refresh inactivity timeout feels counter to the whole CRDT ethos of offline support
-- Epoch-based mode
+			- Though using heartbeats to refresh inactivity timeout feels counter to the whole CRDT ethos of offline support
+- Rollback-based mode
+	- Attaching an epoch to each non-commutative operation (this is effectively making the implicit causal dependency explicit)
+	- This implies that each CRDT requires the ability to undo and redo operations between non-commutative operations
+		- Not all computation is reversible though (e.g. entropy increasing operations like blurring), how do we reconcile this?
+		- Can we utilize the hashgraph to do git-like rebasing to avoid having to implement a redo?
 
 ### January 1st
 - More thoughts on access control
 - *[Distributed Access Control for Collaborative Applications using CRDTs](https://hal.inria.fr/hal-03584553/file/papoc.pdf)* uses a total ordering of roles in order to resolve access conflicts
 	- However, in the case of two top-level administrators revoking access, the same problem occurs
-	- Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 1 and another person with access to file 2 but not file 1.
+	- Additionally, it is not not always possible to totally order a set of permissions. Consider one person with access to file 1 but not file 2 and another person with access to file 2 but not file 1.
 	- "Combining CRDTs for data with CRDTs for policies raises several challenges. Conflicts between two concurrent operations based on diverging policies cannot be safely resolved."
 		- They resolve this by attaching an epoch to each policy change 
+			- The epoch doesn’t grow in size, but merely refers to a parent operation that last changed the policy.
 		- This implies that each CRDT requires the ability to undo and redo operations between epochs
-		- This also limited 'effective' commutativity to the range of epochs. The assumption here is that policy changes are rare so this doesn't happen very often
+		- Undo-redo may be expensive if it happens a lot! The assumption here is that policy changes are rare so this doesn't happen very often
 - Garbage Collection
 	- Two part series ([pt1](http://web.archive.org/web/20200621012528/http://composition.al/CMPS290S-2018-09/2018/11/12/implementing-a-garbage-collected-graph-crdt-part-1-of-2.html) and [pt2](http://web.archive.org/web/20200214095630/http://composition.al/CMPS290S-2018-09/2018/12/08/implementing-a-garbage-collected-graph-crdt-part-2-of-2.html))
 	- Why GC is hard:
