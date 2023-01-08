@@ -8,12 +8,11 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 > What is an [antilibrary](https://nesslabs.com/antilibrary)? To put it simply, an antilibrary is a private collection of unread books. Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.
 
 ### Fiction
-* **Project Hail Mary** by Andy Weir
-- **Accelerando** by Charles Stross
+* **Accelerando** by Charles Stross
 * **Homo Ludens** by Johan Huizinga
 
 ### Non-fiction
-- **Dealers of Lighting** by Michael A. Hiltzik
+* **Dealers of Lighting** by Michael A. Hiltzik
 * **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
 * **Creation: Life and How to Make it** by Steve Grand
 * **The Utopia of Rules** by David Graeber
@@ -21,24 +20,26 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Dream Machine** by M. Mitchell Waldrop
 
 ## Current
-- none for now :)
+* none for now :)
 
 ## Past
-2022
-- **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
+### 2023
+* **Project Hail Mary** by Andy Weir
+### 2022
+* **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 * **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
 * **Permutation City** by Greg Egan
-- **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
-- **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
-- **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
-- **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
-- **The Book of Form and Emptiness** by Ruth Ozeki
-- **Walden Two** by B. F. Skinner
-- **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
-- **Ghost Work** by Mary L. Gray and Siddharth Suri
-- [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
-- [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant
-- **Unflattening** by Nick Sousanis
+* **[[thoughts/Weaving the Web|Weaving the Web]]** by Tim Berners-Lee
+* **[[thoughts/The Writing Life|The Writing Life]]** by Annie Dillard
+* **[[thoughts/Tools for Conviviality|Tools for Conviviality]]** by Ivan Illich
+* **[[thoughts/visualization|Envisioning Information]]** by Edward R. Tufte
+* **The Book of Form and Emptiness** by Ruth Ozeki
+* **Walden Two** by B. F. Skinner
+* **[In Over Our Heads: The Mental Demands of Modern Life](thoughts/In%20Over%20Our%20Heads.md)** by Robert Kegan
+* **Ghost Work** by Mary L. Gray and Siddharth Suri
+* [**The Midnight Library**](thoughts/The%20Midnight%20Library.md) by Matt Haig
+* [**Archipelago**](thoughts/Archipelago.md) by Édouard Glissant
+* **Unflattening** by Nick Sousanis
 
 ### 2021
 * [**How to Do Nothing**](thoughts/How%20to%20do%20Nothing.md) by Jenny Odell
