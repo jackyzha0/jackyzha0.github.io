@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string m show possible LSP-based jump locations    Mappings  &lt;Ctrl&gt;c - leave insert mode &lt;leader&gt;o - open file by name &lt;leader&gt;g - live grep &lt;leader&gt;f - format file &lt;leader&gt;ca - code actions f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &lt;leader&gt;co - choose ours &lt;leader&gt;ct - choose theirs &lt;leader&gt;cb - choose both &lt;leader&gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &lt;leader&gt;m - open diff view   Show Keybindings  :Telescope keymaps    "
+    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string m show possible LSP-based jump locations q - parameter    Mappings  &lt;Ctrl&gt;c - leave insert mode &lt;leader&gt;o - open file by name &lt;leader&gt;g - live grep &lt;leader&gt;f - format file &lt;leader&gt;ca - code actions f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block [[ jump to previous parameter, ]] jump to next parameter Moving Lines  &lt;Option-Down&gt;: move line/selection down &lt;Option-Up&gt;: move line/selection up   Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &lt;leader&gt;co - choose ours &lt;leader&gt;ct - choose theirs &lt;leader&gt;cb - choose both &lt;leader&gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &lt;leader&gt;m - open diff view   Show Keybindings  :Telescope keymaps    "
   />
   <title>
     NVIM Cheatsheet
@@ -133,7 +133,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0eae313bcdd71de78cfad24afa837542.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.bb996c6b4277a9ee6138915e291bfba6.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,6 +330,154 @@ Jul 24, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+    
+
+  
+
 
 
 
@@ -357,6 +505,7 @@ Jul 24, 2022
 <li><code>{ or [ or &lt; or {</code></li>
 <li><code>&quot; or '</code> - quoted string</li>
 <li><code>m</code> show possible LSP-based jump locations</li>
+<li><code>q</code> - parameter</li>
 </ul>
 </li>
 </ul>
@@ -369,6 +518,13 @@ Jul 24, 2022
 <li><code>&lt;leader&gt;ca</code> - code actions</li>
 <li><code>f</code> - hop by 2 chars</li>
 <li><code>&lt;ctrl+/&gt;</code> - comment line or block</li>
+<li><code><a class="internal-link broken">code> jump to previous parameter, <code></a></code> jump to next parameter</li>
+<li>Moving Lines
+<ul>
+<li><code>&lt;Option-Down&gt;</code>: move line/selection down</li>
+<li><code>&lt;Option-Up&gt;</code>: move line/selection up</li>
+</ul>
+</li>
 <li>Window Navigation
 <ul>
 <li><code>:vsp</code> - vertical split</li>
