@@ -1,5 +1,5 @@
 ---
-title: "Interopability"
+title: "Interoperability"
 date: 2021-12-01
 tags:
 - sapling
@@ -7,7 +7,7 @@ tags:
 
 > Portability implies switching platforms, but true interoperability is platform-agnostic.
 
-I think interopability in the context of the web means being able to transparently understand and share data, agnostic of platform. Closed platforms disallow this as they curate the information they present to end-users/devs rather than letting users control their own data.
+I think interoperability in the context of the web means being able to transparently understand and share data, agnostic of platform. Closed platforms disallow this as they curate the information they present to end-users/devs rather than letting users control their own data.
 
 A good standard is if I can hit 'export all data' on a platform and I can completely and freely use that elsewhere -- no vendor lock-in. I think this is esp hard for [social graphs](thoughts/social%20graphs.md), there is no common/accepted standard for identity let alone connectedness between individuals
 
