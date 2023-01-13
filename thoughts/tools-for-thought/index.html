@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.bb996c6b4277a9ee6138915e291bfba6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -491,6 +491,8 @@ Oct 30, 2021
 <li>Why do we expect ourselves to create good ideas from nothing (<em>synthesize</em>)? It’s much easier to generate ideas when you have lots of material (<em>capture</em>) clustered by themes and relationships (<em>organize</em>)</li>
 </ul>
 <p>Mixing up the order of <em>capture-organize-synthesize</em> causes friction. It forces us to make decisions before we’re ready.</p>
+<p>See also: 
+<a href="https://maggieappleton.com/reverse-outline" rel="noopener">reverse outlining</a></p>
 <a href="#thought-as-a-technology"><h2 id="thought-as-a-technology"><span class="hanchor" ariaLabel="Anchor"># </span>Thought as a technology</h2></a>
 <p>
 <a href="https://cognitivemedium.com/tat/index.html" rel="noopener">Source</a></p>

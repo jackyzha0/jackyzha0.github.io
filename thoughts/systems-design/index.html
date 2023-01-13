@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.bb996c6b4277a9ee6138915e291bfba6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -494,6 +494,14 @@ Dec 10, 2022
 </ul>
 </li>
 </ul>
+<a href="#41-architectural-model"><h2 id="41-architectural-model"><span class="hanchor" ariaLabel="Anchor"># </span>4+1 Architectural Model</h2></a>
+<ol>
+<li>Logical view: The logical view is concerned with the functionality that the system provides to end-users (usually uses UML)</li>
+<li>Process view: The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behaviour of the system (usually sequence diagram, communication diagram, activity diagram)</li>
+<li>Development/Implementation view: The development view illustrates a system from a programmer&rsquo;s perspective and is concerned with software management. (usually package/component diagram)</li>
+<li>Physical/Deployment view: The physical view depicts the system from a system engineer&rsquo;s point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components</li>
+<li>(+1) Scenarios: The description of an architecture is illustrated using a small set of use cases, or scenarios. They also serve as a starting point for tests of an architecture prototype</li>
+</ol>
 
 
     </article>

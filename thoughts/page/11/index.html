@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.bb996c6b4277a9ee6138915e291bfba6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -304,6 +304,24 @@ Aug 11, 2022
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/Hypercore/" class="internal-link" data-src="/thoughts/Hypercore/">Hypercore</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Aug 11, 2022
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/OrbitDB/" class="internal-link" data-src="/thoughts/OrbitDB/">OrbitDB</a></h3>
             </div>
             <div class="spacer"></div>
@@ -449,24 +467,6 @@ Aug 9, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/Casper-FFG/" class="internal-link" data-src="/thoughts/Casper-FFG/">Casper FFG</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Aug 9, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/HotStuff/" class="internal-link" data-src="/thoughts/HotStuff/">HotStuff</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

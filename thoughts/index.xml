@@ -6,7 +6,16 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rendering</title>
+      <link>https://jzhao.xyz/thoughts/rendering/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/rendering/</guid>
+      <description>Projective Rendering  For each triangle of the object/mesh  Project its vertices onto the screen For each pixel in the triangle on the screen  Compute the colour      Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!</description>
+    </item>
+    
     <item>
       <title>Ostrich Algorithm</title>
       <link>https://jzhao.xyz/thoughts/Ostrich-Algorithm/</link>

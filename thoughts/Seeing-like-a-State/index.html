@@ -128,13 +128,13 @@ An account of the logic behind the failure of some of the great utopian social e
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d5431f12b2c7e31de7da479a7834feef.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.bb996c6b4277a9ee6138915e291bfba6.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
