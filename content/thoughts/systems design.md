@@ -69,3 +69,10 @@ Based off of the above:
 	- Uses a DHT + NAT traversal utilities
 	- Low latency
 	- Medium reliability
+
+## 4+1 Architectural Model
+1. Logical view: The logical view is concerned with the functionality that the system provides to end-users (usually uses UML)
+2. Process view: The process view deals with the dynamic aspects of the system, explains the system processes and how they communicate, and focuses on the run time behaviour of the system (usually sequence diagram, communication diagram, activity diagram)
+3. Development/Implementation view: The development view illustrates a system from a programmer's perspective and is concerned with software management. (usually package/component diagram)
+4. Physical/Deployment view: The physical view depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer as well as the physical connections between these components
+5. (+1) Scenarios: The description of an architecture is illustrated using a small set of use cases, or scenarios. They also serve as a starting point for tests of an architecture prototype

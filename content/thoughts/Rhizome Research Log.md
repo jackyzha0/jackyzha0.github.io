@@ -9,6 +9,27 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 12th
+- More on Datomic!
+	- Why immutability actually makes sense when representing real-world things:
+	- "Facts don't go away. If the princess's tastes change so that she prefers sriracha, it's still useful to know that in the past she preferred mustard. More importantly, new facts don't obliterate old facts."
+	- That's because time only works in one direction in the universe (that we know of): forward
+		- So by encoding causal dependencies, we get this for free
+- Merging reallly old changes ([localfirst/auth discussion](https://github.com/local-first-web/auth/discussions/35))
+	- Big usability problem for distributed apps. If a long-dormant device can come online and introduce a single operation that overturns months' worth of activity, people will perceive the app as unstable — even if there's no malice and no security issues involved.
+	- Can we set limit `L` on how far out of date a device can be before we require it to catch up before submitting changes? The idea would be that you couldn't base a change on a head that's older than that. Instead you'd have to catch up with the latest information, and then rebase your change onto the current head.
+		- `L` is a wall-clock timestamp
+		- `L` is a logical timestamp
+
+### January 11th
+- [Deconstructing the Database](https://www.youtube.com/watch?v=Cym4TZwTCNU), talk by Rich Hickey, author of Clojure, and designer of Datomic
+	- "I think one of the questions we have in revisiting the architecture of a database is, what's possible? How much of the value propositions of databases can we retain while tapping into some of the new value propositions of distributed systems, in particular, their arbitrary scalability and elasticity?"
+	- "Other problems we have in general when we talk about traditional databases are flexibility problems. Everyone knows the rigidity of relational databases and the big rectangles. We also have the artifice of having to form intersection record tables and things like that"
+	- I love (and strongly agree with) Datomics approach to thinking about databases
+- Had a brief chat with [pvh](https://twitter.com/pvh) about this same topic and he interestingly disagreed. Speaking from empirical evidence, [[thoughts/RDF]] and tuples have never really worked. It's *hard* for people to wrap their heads around
+- [Disk-locality considered irrelevant](https://people.eecs.berkeley.edu/~alig/papers/disk-locality-irrelevant.pdf)
+	- Reading from local disk is only about 8% faster than reading from the disk of another node in the same rack
+
 ### January 3rd
 - Rollback-based mode more thoughts
 	- Attaching an epoch to each non-commutative operation (this is effectively making the implicit causal dependency explicit)

@@ -26,6 +26,8 @@ Can we do this on a browser-level rather than just a standalone app? Building in
 
 Mixing up the order of _capture-organize-synthesize_ causes friction. It forces us to make decisions before we’re ready.
 
+See also: [reverse outlining](https://maggieappleton.com/reverse-outline)
+
 ## Thought as a technology
 [Source](https://cognitivemedium.com/tat/index.html)
 
