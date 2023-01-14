@@ -9,6 +9,30 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 14th
+- Upwelling pre-print
+	- Fishbowl effect of real-time collaboration
+		- Real-time collaboration like in Google Docs creates stress as writers feel watched by their co-authors
+			- “Writers don’t want first drafts visible to the editor.” — Journalist
+		- Writers often need to initially ideate or experiment with new ideas in private, and then share the new material with their collaborators when they are ready to do so.
+			- Support diverge-converge workflows
+		- See also: [[thoughts/collaborative software#A spectrum]]
+	- File-based collaboration creates problems of versioning and merging edits from different co-authors.
+	- Reviewing changes
+		- Carefully reviewing a document is important in many professional contexts, but existing software makes it difficult to visualize and review the changes that have been made to a document.
+- Presence affordance that is not intrusive? (“I’m working on the introduction today, please don’t touch that section”)
+- Making cherry picking easy
+- I want to prototype a collaborative writing tool as a testing ground for the version control stuff
+	- Also had the change to give feedback to a few friends on writing and one big pain point is just finding the best way to comment/give feedback. We always just paste in Google Docs and pepper the document with comments and suggestions but there needs to be a better way than this
+
+### January 13th
+- Had a lovely chat with Quinn from Fission and wow that was amazing
+	- For more context, Quinn has been working on Dialog which has recently been renamed to Rhizome (!!!)
+	- Feel like its a case of convergent evolution that we are separately coming to roughly the same conclusions about what a 'post-modern' database should look like
+	- We talked about pvh's thoughts on RDFs and realized that actually, we don't necessarily need to expose this complexity to the user! We can have *Datalog as a compilation target*
+- Also caught up with Kleppmann for the first time in a while. He seemed really excited by the interface stuff I'm thinking about for CRDTs and version control in a collaborative setting!
+
+
 ### January 12th
 - More on Datomic!
 	- Why immutability actually makes sense when representing real-world things:
