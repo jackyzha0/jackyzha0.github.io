@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Technical   https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from roguelites should have one free key a day actual good graveyard mechanics to look at past runs/chars   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai."
+    content="Technical  WASM-based npm with [[thoughts/CID|CIDs]]  https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing video editor with auto-generated snap points rotmg but actually good lol  dodge mechanic no instakill, should be iframes and way less health (similar to EtG) keep soulbound mechanic no screen rotation multi-floor dungeons, take more inspo from roguelites should have one free key a day actual good graveyard mechanics to look at past runs/chars   latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active something with https://openai."
   />
   <title>
     Idea List
@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d5cc1c8c970759992b63524e65b352e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -361,77 +361,6 @@ Jun 17, 2021
   
     
   
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
     
   
 
@@ -476,6 +405,8 @@ Jun 17, 2021
 
   
   
+  
+    
   
     
   
@@ -580,77 +511,6 @@ Jun 17, 2021
   
     
   
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
     
   
 
@@ -695,6 +555,8 @@ Jun 17, 2021
 
   
   
+  
+    
   
     
   
@@ -799,6 +661,83 @@ Jun 17, 2021
   
     
   
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -841,6 +780,158 @@ Jun 17, 2021
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
   
     
   
@@ -925,6 +1016,7 @@ Jun 17, 2021
 
 <a href="#technical"><h2 id="technical"><span class="hanchor" ariaLabel="Anchor"># </span>Technical</h2></a>
 <ul>
+<li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a></li>
 <li>
 <a href="https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/" rel="noopener">https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/</a> but with vim gutters and program slicing</li>
 <li>video editor with auto-generated snap points</li>

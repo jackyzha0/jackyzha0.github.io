@@ -127,13 +127,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d5cc1c8c970759992b63524e65b352e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -434,6 +434,157 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -25200,6 +25351,52 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#january"><h2 id="january"><span class="hanchor" ariaLabel="Anchor"># </span>January</h2></a>
+<a href="#january-14th"><h3 id="january-14th"><span class="hanchor" ariaLabel="Anchor"># </span>January 14th</h3></a>
+<ul>
+<li>Upwelling pre-print
+<ul>
+<li>Fishbowl effect of real-time collaboration
+<ul>
+<li>Real-time collaboration like in Google Docs creates stress as writers feel watched by their co-authors
+<ul>
+<li>“Writers don’t want first drafts visible to the editor.” — Journalist</li>
+</ul>
+</li>
+<li>Writers often need to initially ideate or experiment with new ideas in private, and then share the new material with their collaborators when they are ready to do so.
+<ul>
+<li>Support diverge-converge workflows</li>
+</ul>
+</li>
+<li>See also: <a href="/thoughts/collaborative-software#a-spectrum" rel="noopener" class="internal-link" data-src="/thoughts/collaborative-software">collaborative software</a></li>
+</ul>
+</li>
+<li>File-based collaboration creates problems of versioning and merging edits from different co-authors.</li>
+<li>Reviewing changes
+<ul>
+<li>Carefully reviewing a document is important in many professional contexts, but existing software makes it difficult to visualize and review the changes that have been made to a document.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Presence affordance that is not intrusive? (“I’m working on the introduction today, please don’t touch that section”)</li>
+<li>Making cherry picking easy</li>
+<li>I want to prototype a collaborative writing tool as a testing ground for the version control stuff
+<ul>
+<li>Also had the change to give feedback to a few friends on writing and one big pain point is just finding the best way to comment/give feedback. We always just paste in Google Docs and pepper the document with comments and suggestions but there needs to be a better way than this</li>
+</ul>
+</li>
+</ul>
+<a href="#january-13th"><h3 id="january-13th"><span class="hanchor" ariaLabel="Anchor"># </span>January 13th</h3></a>
+<ul>
+<li>Had a lovely chat with Quinn from Fission and wow that was amazing
+<ul>
+<li>For more context, Quinn has been working on Dialog which has recently been renamed to Rhizome (!!!)</li>
+<li>Feel like its a case of convergent evolution that we are separately coming to roughly the same conclusions about what a &lsquo;post-modern&rsquo; database should look like</li>
+<li>We talked about pvh&rsquo;s thoughts on RDFs and realized that actually, we don&rsquo;t necessarily need to expose this complexity to the user! We can have <em>Datalog as a compilation target</em></li>
+</ul>
+</li>
+<li>Also caught up with Kleppmann for the first time in a while. He seemed really excited by the interface stuff I&rsquo;m thinking about for CRDTs and version control in a collaborative setting!</li>
+</ul>
 <a href="#january-12th"><h3 id="january-12th"><span class="hanchor" ariaLabel="Anchor"># </span>January 12th</h3></a>
 <ul>
 <li>More on Datomic!

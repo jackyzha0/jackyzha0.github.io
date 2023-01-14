@@ -128,13 +128,13 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.7bbd6f0071ca05daf8c6cf048f398bb8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.8f4a4fe7496fe2aa3d3e5e2cec986fb7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d5cc1c8c970759992b63524e65b352e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
