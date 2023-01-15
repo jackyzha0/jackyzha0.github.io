@@ -133,7 +133,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5d5cc1c8c970759992b63524e65b352e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c96446717c8da40dc6ad9fba5296ebf5.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -25353,6 +25353,25 @@ May 3, 2022
 <a href="#january"><h2 id="january"><span class="hanchor" ariaLabel="Anchor"># </span>January</h2></a>
 <a href="#january-14th"><h3 id="january-14th"><span class="hanchor" ariaLabel="Anchor"># </span>January 14th</h3></a>
 <ul>
+<li>Query Guarantees in <em>
+<a href="https://www.vldb.org/pvldb/vol16/p856-power.pdf" rel="noopener">Keep CALM and CRDT On</a></em>
+<ul>
+<li>&ldquo;The soundness of state convergence does not translate to predictable guarantees for computations that examine them. One might say that CRDTs provide Schrodinger consistency guarantees: they are guaranteed to be consistent only if they are not viewed&rdquo;</li>
+<li>&ldquo;Can we develop a query model that makes it possible to precisely define when execution on a single replica yields consistent results?&rdquo;</li>
+<li>Querying over something monotonic would be nice but computer time is non-monotonic? What about entropy?</li>
+<li>&ldquo;The space of monotone queries is quite large; for example, four of the five operators of relational algebra are monotone: selection, projection, union, and intersection. Only set difference is non-monotone.&rdquo;
+<ul>
+<li>&ldquo;A pipeline composing monotone functions will always give a monotone function end-to-end, but if the pipeline contains any non-monotone function then the end-to-end-computation will be non-monotone&rdquo;</li>
+<li>^ this is quite similar to earlier observations about RedBlue consistency</li>
+</ul>
+</li>
+<li>&ldquo;With apologies, potentially-inconsistent observations are accompanied by compensating actions, which are intended to clean up any negative effects of weak consistency. By leveraging lineage tracing, a CRDT-enabled database could automatically determine when such apologies are necessary, prompting the application accordingly&rdquo;
+<ul>
+<li>How does this compare with netcode rollback techniques?</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Upwelling pre-print
 <ul>
 <li>Fishbowl effect of real-time collaboration
@@ -25809,7 +25828,11 @@ May 3, 2022
 <li>
 <a href="https://www.cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf" rel="noopener">New Directions in Cloud Programming</a>
 <ul>
-<li>The way we write distributed systems today is like writing assembly by hand &ndash; incredibly error prone</li>
+<li>The way we write distributed systems today is like writing assembly by hand &ndash; incredibly error prone
+<ul>
+<li>Creative programmers are held back by the need to account for these complexities using legacy sequential programming models originally designed for single-processor machines.</li>
+</ul>
+</li>
 <li>We need projects like Bloom/Hydro that help with &lsquo;compiling away&rsquo; those concurrency semantics</li>
 </ul>
 </li>
