@@ -10,6 +10,15 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## January
 ### January 14th
+- Query Guarantees in *[Keep CALM and CRDT On](https://www.vldb.org/pvldb/vol16/p856-power.pdf)*
+	- "The soundness of state convergence does not translate to predictable guarantees for computations that examine them. One might say that CRDTs provide Schrodinger consistency guarantees: they are guaranteed to be consistent only if they are not viewed"
+	- "Can we develop a query model that makes it possible to precisely define when execution on a single replica yields consistent results?"
+	- Querying over something monotonic would be nice but computer time is non-monotonic? What about entropy?
+	- "The space of monotone queries is quite large; for example, four of the five operators of relational algebra are monotone: selection, projection, union, and intersection. Only set difference is non-monotone."
+		- "A pipeline composing monotone functions will always give a monotone function end-to-end, but if the pipeline contains any non-monotone function then the end-to-end-computation will be non-monotone"
+		- ^ this is quite similar to earlier observations about RedBlue consistency
+	- "With apologies, potentially-inconsistent observations are accompanied by compensating actions, which are intended to clean up any negative effects of weak consistency. By leveraging lineage tracing, a CRDT-enabled database could automatically determine when such apologies are necessary, prompting the application accordingly"
+		- How does this compare with netcode rollback techniques?
 - Upwelling pre-print
 	- Fishbowl effect of real-time collaboration
 		- Real-time collaboration like in Google Docs creates stress as writers feel watched by their co-authors
@@ -240,6 +249,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Our phones already do this: "Google Photos is asking permission to access your camera roll"
 - [New Directions in Cloud Programming](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper16.pdf)
 	- The way we write distributed systems today is like writing assembly by hand -- incredibly error prone
+		- Creative programmers are held back by the need to account for these complexities using legacy sequential programming models originally designed for single-processor machines.
 	- We need projects like Bloom/Hydro that help with 'compiling away' those concurrency semantics
 
 ### October 22nd

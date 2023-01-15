@@ -6,6 +6,8 @@ tags:
 ---
 
 ## Technical
+- markup any site with a webcrawler + yjs + tldraw
+	- markupthis.site is not taken!!
 - WASM-based `npm` with [[thoughts/CID|CIDs]]
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - video editor with auto-generated snap points
