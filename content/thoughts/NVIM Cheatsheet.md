@@ -27,10 +27,8 @@ tags:
 - `<leader>ca` - code actions
 - `f` - hop by 2 chars
 - `<ctrl+/>` - comment line or block
-- `[[` jump to previous parameter, `]]` jump to next parameter
-- Moving Lines
-	- `<Option-Down>`: move line/selection down
-	- `<Option-Up>`: move line/selection up
+- `[[` - jump to previous parameter
+- `]]` - jump to next parameter
 - Window Navigation
 	- `:vsp` - vertical split
 	- `:hsp` - horizontal split
