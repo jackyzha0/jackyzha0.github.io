@@ -9,7 +9,13 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 15th
+- *[Declarative Programming over Eventually Consistent Data Stores](https://www.cs.purdue.edu/homes/suresh/papers/pldi15.pdf)*
+	- "geo-distribution does not come for free; application developers have to contend with weak consistency behaviors, and the lack of abstractions to composably construct high-level replicated data types, necessitating the need for complex application logic and invariably exposing inconsistencies to the user"
+
 ### January 14th
+- Ladder of Abstraction
+	- A designer needs direct, interactive control over the independent variables of the system. We must not be slaves to real time.
 - Query Guarantees in *[Keep CALM and CRDT On](https://www.vldb.org/pvldb/vol16/p856-power.pdf)*
 	- "The soundness of state convergence does not translate to predictable guarantees for computations that examine them. One might say that CRDTs provide Schrodinger consistency guarantees: they are guaranteed to be consistent only if they are not viewed"
 	- "Can we develop a query model that makes it possible to precisely define when execution on a single replica yields consistent results?"
