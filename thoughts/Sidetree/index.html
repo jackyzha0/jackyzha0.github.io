@@ -60,7 +60,7 @@ A &lsquo;meta&rsquo;/Layer 2 protocol that can be applied to any target trust la
   
   
   
-  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,35 +74,42 @@ A &lsquo;meta&rsquo;/Layer 2 protocol that can be applied to any target trust la
   
   
   
-  <script src="https://jzhao.xyz/js/util.e48d3a3640b20984a244ec38e7d97219.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.11a148dc4b75ccc921417309683947e2.min.js"></script>
   
   
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+
+  
+  
 
 
 
+  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  
-
-
-    
-  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
-  
-  <script src="https://jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js"></script>
+  <script async src="https://jzhao.xyz/js/popover.f03552ccb84d99ca615d1cfb9abde59e.min.js"></script>
 
   
   
   
-  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
   
 
   
   
-  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
   
 
   
@@ -134,7 +141,7 @@ A &lsquo;meta&rsquo;/Layer 2 protocol that can be applied to any target trust la
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c96446717c8da40dc6ad9fba5296ebf5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ded5b99dec9c546b9802a002aee13aae.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -158,7 +165,7 @@ A &lsquo;meta&rsquo;/Layer 2 protocol that can be applied to any target trust la
       
 
       
-     
+
       
       initPopover(
         "https://jzhao.xyz",
@@ -445,6 +452,7 @@ Jul 3, 2022
     </div>
     <div>
         <script
+  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -461,7 +469,7 @@ Jul 3, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
 
     </div>
 </div>

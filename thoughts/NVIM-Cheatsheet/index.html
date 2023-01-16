@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string m show possible LSP-based jump locations q - parameter    Mappings  &lt;Ctrl&gt;c - leave insert mode &lt;leader&gt;o - open file by name &lt;leader&gt;g - live grep &lt;leader&gt;f - format file &lt;leader&gt;ca - code actions f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block [[ jump to previous parameter, ]] jump to next parameter Moving Lines  &lt;Option-Down&gt;: move line/selection down &lt;Option-Up&gt;: move line/selection up   Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &lt;leader&gt;co - choose ours &lt;leader&gt;ct - choose theirs &lt;leader&gt;cb - choose both &lt;leader&gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &lt;leader&gt;m - open diff view   Show Keybindings  :Telescope keymaps    "
+    content="Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &lt; or { &quot; or &#39; - quoted string m show possible LSP-based jump locations q - parameter    Mappings  &lt;Ctrl&gt;c - leave insert mode &lt;leader&gt;o - open file by name &lt;leader&gt;g - live grep &lt;leader&gt;f - format file &lt;leader&gt;ca - code actions f - hop by 2 chars &lt;ctrl&#43;/&gt; - comment line or block [[ - jump to previous parameter ]] - jump to next parameter Window Navigation  :vsp - vertical split :hsp - horizontal split &lt;leader&gt;&lt;direction&gt; - move to window in that direction (one of wasd)   Tabs  &lt;alt-&lt;&gt; - previous tab &lt;alt-&gt;&gt; - previous tab &lt;alt-q&gt; - close tab &lt;alt-#&gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &lt;shift&gt;K - show type hint &lt;space&gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &lt;leader&gt;co - choose ours &lt;leader&gt;ct - choose theirs &lt;leader&gt;cb - choose both &lt;leader&gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &lt;leader&gt;m - open diff view   Show Keybindings  :Telescope keymaps    "
   />
   <title>
     NVIM Cheatsheet
@@ -59,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.e31d5446645b0874bef4b0dafebf9f04.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,35 +73,42 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.e48d3a3640b20984a244ec38e7d97219.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.11a148dc4b75ccc921417309683947e2.min.js"></script>
   
   
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+
+  
+  
 
 
 
+  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  
-
-
-    
-  <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
-  
-  <script src="https://jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js"></script>
+  <script async src="https://jzhao.xyz/js/popover.f03552ccb84d99ca615d1cfb9abde59e.min.js"></script>
 
   
   
   
-  <script src="https://jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
   
 
   
   
-  <script src="https://jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
   
 
   
@@ -133,7 +140,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c96446717c8da40dc6ad9fba5296ebf5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ded5b99dec9c546b9802a002aee13aae.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -157,7 +164,7 @@
       
 
       
-     
+
       
       initPopover(
         "https://jzhao.xyz",
@@ -427,10 +434,6 @@ Jul 24, 2022
   
     
   
-    
-  
-    
-  
 
   
 
@@ -518,13 +521,8 @@ Jul 24, 2022
 <li><code>&lt;leader&gt;ca</code> - code actions</li>
 <li><code>f</code> - hop by 2 chars</li>
 <li><code>&lt;ctrl+/&gt;</code> - comment line or block</li>
-<li><code><a class="internal-link broken">code> jump to previous parameter, <code></a></code> jump to next parameter</li>
-<li>Moving Lines
-<ul>
-<li><code>&lt;Option-Down&gt;</code>: move line/selection down</li>
-<li><code>&lt;Option-Up&gt;</code>: move line/selection up</li>
-</ul>
-</li>
+<li><code><a class="internal-link broken">li>
+<li><code></a></code> - jump to next parameter</li>
 <li>Window Navigation
 <ul>
 <li><code>:vsp</code> - vertical split</li>
@@ -604,6 +602,7 @@ Jul 24, 2022
     </div>
     <div>
         <script
+  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -620,7 +619,7 @@ Jul 24, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js"></script>
+<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
 
     </div>
 </div>
