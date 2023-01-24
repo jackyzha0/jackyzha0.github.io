@@ -20,7 +20,7 @@ Typically, texture is a property of a region, not a point. But, then we run into
 
 ### Synthesis
 1. Inpainting (filling in holes)
-2. Produce large quantities of texture for computer graphics
+2. Produce large quantities of texture for [[thoughts/computer graphics|computer graphics]]
 
 Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)
 

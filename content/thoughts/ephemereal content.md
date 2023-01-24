@@ -38,3 +38,13 @@ Modern content is sometimes actually assembled on the fly through the likes of R
 The data may exist but not the in the format it was originally delivered in
 
 Related: [Mangrove Theory of the Internet](thoughts/Mangrove%20Theory%20of%20the%20Internet.md) and slowness, [Dark Forest Theory of the Internet](thoughts/Dark%20Forest%20Theory%20of%20the%20Internet.md)
+
+## Ephemeral vs Accretive Content
+[Source](https://interconnected.org/home/2023/01/20/map_room)
+
+See also: [[thoughts/digital permanence]]
+
+- Ephemeral tools are about the conversation. Slack is one. Zoom is another.
+	- Memory resides in the users
+- Accretive tools build over time. Developer tools tend to work like this: platform-as-code. Wikis are the main one: Notion is accretive.
+	- Memory resides in the tool

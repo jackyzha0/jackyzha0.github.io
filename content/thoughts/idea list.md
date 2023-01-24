@@ -37,6 +37,9 @@ tags:
 	- mounted 4 pressure sensors on each corner and then got a big sheet of thin glass
 	- 4 points is enough to pinpoint single-point touch accurately for dragging
 	- what if you could use it like a scratch space? like an always available figjam/muse board that also supports linking and trails a la [[thoughts/tools for thought#Memex|memex]]
+		- a vision of [communal computing](https://interconnected.org/home/2021/12/21/sage) perhaps
+		- a shared screen which anyone can 'connect' to as an external display
+		- anyone can drag windows/files to and from it
 - wave function collapse for poetry
 	- bringing shape-shifting text to its most literal form
 	- [https://oskarstalberg.com/Townscaper/](https://oskarstalberg.com/Townscaper/ "https://oskarstalberg.com/Townscaper/") for words

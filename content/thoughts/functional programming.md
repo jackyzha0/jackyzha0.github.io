@@ -137,3 +137,37 @@ Result Methods
 6. `a.to(b)` marks result of `a` as type `b`
 7. `a.labelled(b)` label result of a with `b`
 8. `a.end()` indicate end of parser
+
+## Racket
+```scheme
+; Quotes are 
+` -> quasiquote
+, -> unquote
+' -> quote
+```
+
+```scheme
+; Example program that iterates a program p
+(define (compiler-sub p)
+  (define (process-p p)
+    (match p
+	  ; match 'begin atom
+      [`(begin ,s ...)
+       ; process-s for each s
+       (TODO process-s s)]))
+  (define (process-s s)
+    (match s
+      [`(set! ,loc ,int64)
+       #:when (and (location? loc) (int64? int64))
+       (TODO)]
+      [`(set! ,loc1 ,loc2)
+       #:when (and (location? loc1) (location? loc2))
+       (TODO)]
+      [`(set! ,loc1 (,binop ,loc2 ,loc3))
+       #:when (and (location? loc1)
+                   (Paren-asm-sub-binop? binop)
+                   (location? loc2)
+                   (location? loc3))
+       (TODO)]))
+  (process-p p))
+```

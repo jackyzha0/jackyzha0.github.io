@@ -11,4 +11,4 @@ Games are interesting when the underlying rules are simple (see: [[thoughts/Gall
 
 The more I think about it the more I think I eventually want to build games. All of my [[thoughts/peer-to-peer|p2p]] infrastructure work now is to build up the tools possible to explore that space of potential games. Games as explorations in [[thoughts/interaction design|interaction design]].
 
-See: [[thoughts/Games Agency as Art]]
+See: [[thoughts/Games Agency as Art]], [[thoughts/game writing]]
