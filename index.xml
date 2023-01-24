@@ -7,6 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Computer Graphics</title>
+      <link>https://jzhao.xyz/thoughts/computer-graphics/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/computer-graphics/</guid>
+      <description>Coordinate Frames Let $A$ be the original coordinate frame and $B$ be the target coordinate frame
+$$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp;amp; b &amp;amp; c \ d &amp;amp; e &amp;amp; f \ 0 &amp;amp; 0 &amp;amp; 1\end{bmatrix}\begin{bmatrix}x \ y \ 1\end{bmatrix}_A$$</description>
+    </item>
+    
+    <item>
+      <title>Game Writing</title>
+      <link>https://jzhao.xyz/thoughts/game-writing/</link>
+      <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/game-writing/</guid>
+      <description>See also: [[thoughts/games]], [[thoughts/creative writing]], [[thoughts/game design]]
+Loops and Episodes  Games are interesting to write for because of the concept of agential distance (see: [[thoughts/Games Agency as Art]])  The agency of the player shapes their own experience of the game   Tension  When the playing strives to fulfil and objective or goal and the game pushes back External to the narrative   Conflict  When a character strives to fulfil an objective or goal and an antagonist pushes back Internal to the narrative   Gameplay loops (called ludic loops by Nguyen)  A cycle in which the player uses the core mechanics to resolve tension These may occur at different [[thoughts/pace layers]] and serve to anchor the player in the game  The narrative should support the gameplay loops to be effective     Episodes  Can be split into more manageable pieces Can be released episodically (e.</description>
+    </item>
+    
+    <item>
       <title>Rendering</title>
       <link>https://jzhao.xyz/thoughts/rendering/</link>
       <pubDate>Wed, 11 Jan 2023 00:00:00 +0000</pubDate>

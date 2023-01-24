@@ -136,13 +136,13 @@ Book Book, written by C. Thi Nguyen
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.473a4b28d918e146a79e3b46c7392c62.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ded5b99dec9c546b9802a002aee13aae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7e45586df66896e123eaae9befcfdd7e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -864,8 +864,18 @@ Dec 24, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="thoughts/Games Agency as Art" data-src="/books" class="internal-link">Booklist</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/game-writing/" data-ctx="thoughts/Games Agency as Art" data-src="/thoughts/game-writing" class="internal-link">Game Writing</a>
       </li>
       
       

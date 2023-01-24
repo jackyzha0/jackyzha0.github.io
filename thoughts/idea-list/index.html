@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.473a4b28d918e146a79e3b46c7392c62.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ded5b99dec9c546b9802a002aee13aae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7e45586df66896e123eaae9befcfdd7e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1074,7 +1074,14 @@ Jun 17, 2021
 <li>what if i just got a huge old flatscreen tv</li>
 <li>mounted 4 pressure sensors on each corner and then got a big sheet of thin glass</li>
 <li>4 points is enough to pinpoint single-point touch accurately for dragging</li>
-<li>what if you could use it like a scratch space? like an always available figjam/muse board that also supports linking and trails a la <a href="/thoughts/tools-for-thought#memex" rel="noopener" class="internal-link" data-src="/thoughts/tools-for-thought">memex</a></li>
+<li>what if you could use it like a scratch space? like an always available figjam/muse board that also supports linking and trails a la <a href="/thoughts/tools-for-thought#memex" rel="noopener" class="internal-link" data-src="/thoughts/tools-for-thought">memex</a>
+<ul>
+<li>a vision of 
+<a href="https://interconnected.org/home/2021/12/21/sage" rel="noopener">communal computing</a> perhaps</li>
+<li>a shared screen which anyone can &lsquo;connect&rsquo; to as an external display</li>
+<li>anyone can drag windows/files to and from it</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>wave function collapse for poetry

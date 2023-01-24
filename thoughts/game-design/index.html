@@ -136,13 +136,13 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.cfd36eccef11bd8a11c8d1488cd8f3f8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.473a4b28d918e146a79e3b46c7392c62.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ded5b99dec9c546b9802a002aee13aae.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7e45586df66896e123eaae9befcfdd7e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -659,6 +659,10 @@ Oct 26, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Games-Agency-as-Art/" data-ctx="thoughts/game design" data-src="/thoughts/Games-Agency-as-Art" class="internal-link">Games: Agency as Art</a>
       </li>
@@ -673,6 +677,12 @@ Oct 26, 2021
       
       <li>
         <a href="/thoughts/game-theory/" data-ctx="game design" data-src="/thoughts/game-theory" class="internal-link">Game Theory</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/game-writing/" data-ctx="thoughts/game design" data-src="/thoughts/game-writing" class="internal-link">Game Writing</a>
       </li>
       
       
