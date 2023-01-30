@@ -9,6 +9,76 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 29th
+- I hosted a session in Andy Matuschak's unconference! It turns out a lot of people are thinking about collaborative software. It was super causal and we just chatted about ideas for 30 minutes but wow I felt so energized afterwards.
+	- [Full FigJam file](https://www.figma.com/file/fHnlhboanqVVE4IOp7zqR0/New-interfaces-for-new-thoughts-in-the-new-year?node-id=0%3A1&t=PBIeeb2LlMLj9ySZ-0)
+- Some ideas I found particularly insightful:
+	- "What is the *handwriting* for digital spaces? Something that passively conveys ownership for a particular unit of work" (Gus Rasch)
+		- "Someone just surfaced the idea of personal fonts and some other avenues are 1. color, and 2. hand-drawn image" (Spencer)
+		- "Imbuing digital spaces with personality feels more powerful than you might expect. Makes it easier to remember where things live because they’re “emotionally” different." (Amelia Wattenberger)
+	- Effective diff interfaces: "one of the most important factors here is being able to quickly understand the difference between versions." (Amelia Wattenberger)
+		- "Domain-specific merge flows: "How do you enable people to manage many copies and forks of the same document and recombine? Is this going to be the same for prose and digital gardening as it will be for coding? Could we use LLMs to describe differences semantically?" (Rob Haisfield)
+
+![[thoughts/images/beyond-cursors-gather-town.png]]
+
+![[thoughts/images/beyond-cursors-screenshot.png]]
+
+### January 28th
+- Started thinking about this Git for writing idea which I think will be a good vehicle for thinking about version control systems in general
+- Prototype Sketch
+	- Question: what feels good about a collaborative medium?
+	- Objects that have affordances we can interact with and manipulate in intuitive ways
+		- Documents are made up of paragraphs which are made up of characters
+			- Block-based editing allows us to manipulate at the paragraph level in addition to the character level editing we get in normal text editors
+			- Networked note taking apps allow us to transclude text which is a very primitive form of document level editing
+				- But what about manipulating documents through time?
+				- Time as an object we can interact with and control? Similar to what Bret Victor says in *[Up and Down the Ladder of Abstraction](http://worrydream.com/LadderOfAbstraction/)*: A designer needs direct, interactive control over the independent variables of the system. 
+				- See notes below on version control
+	- Supports a spectrum of collaboration
+		- When we're collaborating with others, there's a natural human tendency to desire some privacy while working through something, the freedom to take a piece of the creative work and play out different ideas, move things around, edit and refactor, without fear of judgement or the burden of having to explain or communicate our thinking or concern for overhauling sections where another is actively reading or working. ([Jess Martin on Collaboration](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous))
+			- Also sometimes called the fish-bowl effect. Some studies have found that real-time collaboration like in Google Docs creates stress as writers feel watched by their co-authors
+		- It's not just a binary of either *working on your own* or *working with others*
+			- Normally binded together on a single document (fully sync editing)
+				- This is the typical Google Docs or Figma editing experience
+			- Obvious button to “make a new version of this document” (async branching)
+				- What if we did 'implicit' branching where any change makes a new branch?
+					- Open question: Could we utilize LLMs to bundle these into “commits”?
+				- Each copy has an obvious flow of “merge back into original document”
+		- Presence (peripheral awareness of others)
+			- Important so people don't step on each others toes when working across versions
+			- Useful information at every scale
+				- Coin this the *Engelbart Zoom* which Engelbart explored in [HyperScope](https://dougengelbart.org/content/view/154/86/)
+				- TKTK: what type of peripheral information is actually useful?
+					- e.g. see what paragraphs other people are editing with a scroll bar minimap?
+	- Version control
+		- Not only across time (edits to the same document) but also managing parallel versions by different authors
+		- Version *control* implies agency over how merge and conflict resolution processes occur
+			- 'Best-effort' merge using traditional merge techniques (borrowing from CRDTs or `git` merge strategies)
+		- When working with physical objects, holding areas are very normal
+			- `git stash` is a really handy tool, but using it through a CLI makes it confusing
+			- Imagine the railroad track metaphor that `git` uses but each individual commit is an object you can manipulate (iirc GitKraken does this in their GUI but haven't had the chance to play with it yet)
+				- Drag the tips of branches together to merge
+				- Select multiple commits and drag them off of a branch
+					- This 'detaches' them into free space
+					- You can then 're-attach' these commits anywhere
+						- This is effectively what `git stash` does
+	- Flexible [[thoughts/access control|Access Control]]
+		- It feels important to know who has access to your work (and what kind of access?)
+			- Users should feel empowered to have agency over whether their work is public- or private-facing
+			- These should also be flexible and dynamic
+			- Open questions: what are good ways to deal with derivative works where the permissions over the source material changes
+				- e.g. Say I make a private document public by accident
+				- If someone makes a copy of the public document before I make it private it again, what should happen? Should the user no longer be able to access the document because the source document is no longer public? Should the user still be able to access the document because the fact that it *was* public at the time it was copied mean they should still have access to it? 
+				- Is this something that should even be reinforced at a technical level? Or social level (e.g. bump the responsibility up to users)? 
+	- Modular and customizable workspaces
+		- It is important for people to customize the spaces they work in
+			- Why force everyone to use the same interface and tools?
+			- We all have differing needs for knowledge and collaborative workspaces
+		- End-user scripting like Smalltalk for HyperCard
+		- Subconscious calls this concept 'geist': programs that may work in concert with users
+			- Little agents that crawl over your notes and help suggest things
+			- Each one specialized for its own thing, e.g. a geist that fixes grammar, a geist to suggest common themes between notes that you may have missed
+
 ### January 15th
 - *[Declarative Programming over Eventually Consistent Data Stores](https://www.cs.purdue.edu/homes/suresh/papers/pldi15.pdf)*
 	- "geo-distribution does not come for free; application developers have to contend with weak consistency behaviors, and the lack of abstractions to composably construct high-level replicated data types, necessitating the need for complex application logic and invariably exposing inconsistencies to the user"
@@ -831,7 +901,9 @@ I think research logs tend to generally focus too much on what one did rather th
 - Finalizing notes on [[thoughts/Tendermint|Tendermint]] and wondering if I should switch out [[thoughts/Raft Consensus Algorithm|Raft]] for it. How valuable is [[thoughts/Byzantine Faults|BFT]] anyways? Do we assume nodes are prone to potentially malicious takeover?
 
 ### July 2-4th
-- An 'aha' moment caught in 4k... watch me try to figure out why asynchronous and partially synchronous [[thoughts/system model|system models]] aren't the same thing (s/o Sebastien for being so kind and patient). This was super satisfying! ![[thoughts/images/on-async-partially-sync-models.png]]
+- An 'aha' moment caught in 4k... watch me try to figure out why asynchronous and partially synchronous [[thoughts/system model|system models]] aren't the same thing (s/o Sebastien for being so kind and patient). This was super satisfying!
+
+![[thoughts/images/on-async-partially-sync-models.png]]
 
 ### July 1st
 - Internet went out today halfway through watching lectures :(( 
