@@ -135,13 +135,13 @@ If prior patterns are essential for making sense of things, how can we avoid fal
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.473a4b28d918e146a79e3b46c7392c62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7e45586df66896e123eaae9befcfdd7e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
