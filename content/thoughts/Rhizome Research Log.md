@@ -9,6 +9,11 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## January
+### January 30th
+- [Alan Kay on "Should web browsers have stuck to being document viewers"](https://donhopkins.medium.com/alan-kay-on-should-web-browsers-have-stuck-to-being-document-viewers-and-a-discussion-of-news-5cb92c7b3445)
+	- This led to a “sad realization” that sending a data structure to a server is a terrible idea if the degrees of freedom needed on the sending side are large.
+	- And eventually, this led to a “happy realization”, that sending a program to a server is a very good idea if the degrees of freedom needed on the sending side are large.
+
 ### January 29th
 - I hosted a session in Andy Matuschak's unconference! It turns out a lot of people are thinking about collaborative software. It was super causal and we just chatted about ideas for 30 minutes but wow I felt so energized afterwards.
 	- [Full FigJam file](https://www.figma.com/file/fHnlhboanqVVE4IOp7zqR0/New-interfaces-for-new-thoughts-in-the-new-year?node-id=0%3A1&t=PBIeeb2LlMLj9ySZ-0)
@@ -17,7 +22,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- "Someone just surfaced the idea of personal fonts and some other avenues are 1. color, and 2. hand-drawn image" (Spencer)
 		- "Imbuing digital spaces with personality feels more powerful than you might expect. Makes it easier to remember where things live because they’re “emotionally” different." (Amelia Wattenberger)
 	- Effective diff interfaces: "one of the most important factors here is being able to quickly understand the difference between versions." (Amelia Wattenberger)
-		- "Domain-specific merge flows: "How do you enable people to manage many copies and forks of the same document and recombine? Is this going to be the same for prose and digital gardening as it will be for coding? Could we use LLMs to describe differences semantically?" (Rob Haisfield)
+		- Domain-specific merge flows: "How do you enable people to manage many copies and forks of the same document and recombine? Is this going to be the same for prose and digital gardening as it will be for coding? Could we use LLMs to describe differences semantically?" (Rob Haisfield)
 
 ![[thoughts/images/beyond-cursors-gather-town.png]]
 
