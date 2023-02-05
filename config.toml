@@ -1,6 +1,5 @@
 baseURL = "https://jzhao.xyz/"
 languageCode = "en-us"
-googleAnalytics = "G-WDD4K02HML"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [

@@ -8,6 +8,28 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## February
+### February 4th
+- A* path search for DHTs?
+- [Delightful apps](https://stopa.io/post/296)
+	- What makes an app feel delightful? Optimistic Updates, Multiplayer, and Offline-Mode
+	- Optimistic Updates
+		- "Interaction time changes how you use an application. Get fast enough, and your fingertips become your primary constraint. I think this is the key to unlocking flow"
+		- To do this well, we need to support undo. We need to maintain order, and we need to be able to cancel dependent mutations.
+	- Offline-mode
+		- "When we know that an app will work no _matter what,_ we use it differently."
+	- Good permissions models
+		- User-defined functions for whether a user can modify a resource
+	- Why not SQL? "The frontend’s common case is SQL’s advanced case. We shouldn’t need advanced features for common cases."
+		- Facebook runs on a graph database! So does Bytedance (so all of TikTok)! 
+
+### February 3rd
+- In response to Spencer's [creative seeing](https://spencerchang.substack.com/p/creative-seeing) and provocation "what does the internet look like in 5 years?"
+	- On developing taste
+	- Agentic software and how current software makes it hard for people to make their own things
+
+![[thoughts/images/spencer-internet-provocation.png|400]]
+
 ## January
 ### January 30th
 - [Alan Kay on "Should web browsers have stuck to being document viewers"](https://donhopkins.medium.com/alan-kay-on-should-web-browsers-have-stuck-to-being-document-viewers-and-a-discussion-of-news-5cb92c7b3445)

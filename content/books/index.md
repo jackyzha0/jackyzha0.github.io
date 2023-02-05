@@ -13,14 +13,14 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ### Non-fiction
 * **Dealers of Lighting** by Michael A. Hiltzik
-* **[Mutual Aid](thoughts/Mutual%20Aid.md)** by Dean Spade
 * **Creation: Life and How to Make it** by Steve Grand
 * **The Utopia of Rules** by David Graeber
 * **Where Is My Flying Car?** by J. Storrs Hall
 * **The Dream Machine** by M. Mitchell Waldrop
+* **The Limits to Capital** by David Harvey
 
 ## Current
-* none for now :)
+- **Tomorrow, and Tomorrow, and Tomorrow** by Gabrielle Zevin
 
 ## Past
 ### 2023

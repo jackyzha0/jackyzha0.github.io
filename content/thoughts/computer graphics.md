@@ -30,3 +30,23 @@ The translation from $P_A$ to $P_B$ can be represented as $P_B = O_A + x_Ai_A + 
 	- $$\begin{bmatrix}x' \\ y' \\ z' \\ 1 \end{bmatrix} = \begin{bmatrix}\cos \theta & -\sin \theta & \\ \sin \theta & \cos \theta & \\ & & 1 & \\ & & & 1 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$
 - `Scale(x,y,z)`
 	- $$\begin{bmatrix}x' \\ y' \\ z' \\ 1 \end{bmatrix} = \begin{bmatrix}a & & & \\ & b & & \\ & & c & \\ & & & 1\end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$
+## Viewing Transformation
+- Defined using
+	- eye point
+	- target point
+	- up vector
+
+$$\vec k = \frac{P_{eye}-P_{ref}}{\lVert P_{eye}-P_{ref} \rVert}$$
+
+$$\vec i = \frac{V_{up} \times \vec k}{\lVert V_{up} \times \vec k \rVert}$$
+
+$$\vec j = \vec k \times \vec i$$
+
+$$M_{cam} = \begin{bmatrix}
+i_1 & j_1 & k_1 & P_{eye1} \\ 
+i_2 & j_2 & k_2 & P_{eye2} \\
+i_3 & j_3 & k_3 & P_{eye3} \\
+0 & 0 & 0 & 1
+\end{bmatrix}$$
+
+$$M_{view} = M_{cam}^{-1}$$

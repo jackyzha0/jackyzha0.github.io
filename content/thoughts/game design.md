@@ -16,6 +16,8 @@ A lot of pedagogy is covers the same questions as game design (especially tutori
 
 The "[vow of silence](https://www.youtube.com/watch?v=xrDZ--AuiL8)": to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through [play](thoughts/play.md). An approach very similar to the [constructionist](thoughts/constructionist.md) ones found in [Mindstorms](thoughts/Mindstorms.md)
 
+**We can teach stuff using mechanics and level design** instead of words.
+
 The goal is to give users/players the freedom to manage their own position relative to their own intellectual "sweet spot"
 
 ![](/thoughts/images/flow.png)
