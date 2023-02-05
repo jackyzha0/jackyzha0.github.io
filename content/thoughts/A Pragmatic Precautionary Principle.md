@@ -4,18 +4,9 @@ date: 2022-11-29
 tags:
 - fruit
 - PHIL321A
-draft: true
 ---
 
 > *Final paper for PHIL321*
-> 
-> How should we make decisions about the environment, or any other issue that combines large negative utilities (e.g., potential catastrophe) with probabilities that are either small or uncertain? The theory of decisions under ignorance offers possible answers (e.g., Maximin or Minimax Regret). A second answer is to use the theory of decisions under risk: we should postpone any decision until we have more information about the probabilities and utilities. A third option is the [[thoughts/Precautionary Principle]]: in cases where there is a potential for catastrophic harm, we should take appropriate precautionary measures to prevent such harm without waiting for more knowledge.
-
-a) Using one of the texts below (or another source of your choosing), explain how the author interprets the precautionary principle.
-
-b) Is the precautionary principle incoherent or irrational? Each of the readings below examines this question. Consider one or at most two of these readings. Explain and evaluate the arguments both for and against the claim that the precautionary principle is incoherent (it may both recommend and prohibit the same action) or irrational (its recommendations are extreme: it proposes disaster-preventing measures that are unjustifiably expensive or harmful).
-
----
 
 The Precautionary Principle has had many different interpretations across game theory; there is no single accepted formulation. In general, the Precautionary Principle suggests that we should take appropriate measures to prevent potential harm, even if the likelihood or severity of that harm is uncertain. However, part of the reason why there has been such heavy debate around Precautionary Principle is because many terms are already meaning-laden: it is not always clear what constitutes appropriate precautionary measures, and different stakeholders may have different ideas about what is appropriate in a given situation.
 
@@ -53,8 +44,7 @@ What if, for example, there are other gods aside from God that also promise an i
 
 Although many have pointed out flaws to the many-gods objection, it still brings to light the following general point regarding the catastrophe principle: "even if an e-effect is catastrophic, that fact cannot rationally compel us to impose an e-remedy unless we also know that the e-remedy itself does not lead to catastrophic results"[^2] (Manson 2002, pp. 272-3).
 
-A proponent of the Catastrophe Principle may then try to strengthen the principle by adding an extra clause stating that it should only be applied if imposing the given e-remedy will not cause another catastrophic e-effect. However, we quickly see that even with this clause, the Catastrophe Principle is still incoherent. Earlier, when we formulated both Pascal's Wager and the Precautionary Principle, we assumed that any rational decision maker would assign non-zero probabilities to any imaginable outcome (whether that be a belief in God or the knowledge condition being satisfied). Thus, we also cannot ever rule out the fact that a given e-remedy will not cause another catastrophic effect. The e-remedy could bring about an outcome which also
-leads to human extinction and we couldn't rule it out!
+A proponent of the Catastrophe Principle may then try to strengthen the principle by adding an extra clause stating that it should only be applied if imposing the given e-remedy will not cause another catastrophic e-effect. However, we quickly see that even with this clause, the Catastrophe Principle is still incoherent. Earlier, when we formulated both Pascal's Wager and the Precautionary Principle, we assumed that any rational decision maker would assign non-zero probabilities to any imaginable outcome (whether that be a belief in God or the knowledge condition being satisfied). Thus, we also cannot ever rule out the fact that a given e-remedy will not cause another catastrophic effect. The e-remedy could bring about an outcome which also leads to human extinction and we couldn't rule it out!
 
 The upshot here is that even well-intentioned safety measures can lead to damaging consequences if we use the Catastrophe Principle. Note specifically, that this isn't a fatal blow for the weak formulation of the Precautionary Principle but rather just the Catastrophe Principle. 
 

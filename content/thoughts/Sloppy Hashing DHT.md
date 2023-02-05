@@ -15,6 +15,12 @@ Main problems with [[thoughts/Kademlia DHT]] is that it has poor locality. A pee
 
 Choral achieves locality through clustering! It creates self-organizing clusters of nodes that fetch information from each other to avoid communicating with more distant or heavily-loaded servers.
 
+Notes
+- 'Sloppiness' comes from the fact that a `set(key, nodeaddr)` operation doesn't just store the pointer `nodeaddr` on one node
+	- It stores pointers along the lookup path for popular keys (this is called "spilling-over")
+	- Helps to balance load while inserting pointers, retrieving pointers, and downloading data
+- Generally set a TTL for records to expire quickly enough to keep the fraction of stale pointers below 50%
+
 ## Network Layers
 In order to restrict queries to nearby machines, each Coral node is a member of several DSHTs, which we call clusters, of increasing network diameter.
 
@@ -28,10 +34,8 @@ Similar concept to isochrone maps
 
 ![[thoughts/images/isochrone.png|500]]
 
-## Distributed Sloppy Hash Table (DSHT)
-The DSHT abstraction is specifically suited to locating replicated resources.
-
 ## Downsides
 - The privacy sucks sucks: nodes publish not only their [[thoughts/IP Addresses]] but the path to get there too!
 - Requires network size estimation which is hard to do if the number of nodes are small (i.e. requires a large deployment to be effective)
+	- Can be done using [[thoughts/Network Theory]] as lookups are on average $O(\log n)$ hops
 - Not [[thoughts/Byzantine Faults|BFT]]: a malicious actor could pollute the DHT and cause really poor routing

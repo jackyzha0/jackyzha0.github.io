@@ -187,3 +187,8 @@ tags:
 	- Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
 		- Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.
 	- essay on epistemic play + jestermaxxing + mill’s take on why censorship is unethical
+	- limits to [[thoughts/Byzantine Faults|BFT]]
+		- some malicious activity is indistinguishable from legitimate activity (e.g. deleting a document)
+			- *semantic* byzantine fault tolerance vs protocol byzantine fault tolerance
+		- Making distributed systems reliable is inherently impossible; we cling to Byzantine fault tolerance like Charlton Heston clings to his guns, hoping that a series of complex software protocols will somehow protect us from the oncoming storm of furious apes who have somehow learned how to wear pants and maliciously tamper with our network packets. (*[The Saddest Moment](https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf)* by James Mickens)
+		- "I have never had a real-life experience that resembled a Byzantine fault tolerant protocol."

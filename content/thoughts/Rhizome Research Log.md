@@ -9,8 +9,30 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
+### February 5th
+- Why continually *doing* matters
+	- People talk about 'momentum' when it comes to projects a lot
+	- I get told by people looking to do more projects/research that they *think* about it a lot but rarely spend much time actually *doing it*
+	- [Robin Sloan captures this well](https://www.robinsloan.com/newsletters/sunshine-skyway/):
+		- "When you start a creative project but don’t finish, the experience drags you down. Worst of all is when you never decisively abandon a project, instead allowing it to fade into forgetfulness. The fades add up; they become a gloomy haze that whispers, *you’re not the kind of person who DOES things.*"
+		- "When you start and finish, by contrast — and it can be a project of any scope: a 24-hour comic, a one-page short story, truly anything — it is powerful fuel that goes straight back into the tank."
+		- "Unfinished work drags and depresses; finished work redoubles and accelerates."
+	- Truly doing something that is creative and agentic *gives* you energy. It doesn't drain it
+- A* path search for DHTs? Locality mapping?
+	- This [video explainer of Meridian](https://www.youtube.com/watch?v=O7dyCDE-lw0) is really cool too! Taking account earth curvature when working with distance estimations
+	- Optimizing geographical coverage through hypervolumes
+		- Say you have a set of K servers in your cluster
+		- And a set of L servers that are candidates
+		- Iteratively sub out servers in K for servers in L to find the set that maximizes the hypervolume to maximize the geographical coverage
+	- This of course assumes laying wires that follow the curvature of the earth. Does this assumption hold for interplanetary systems? Probably not but eh we'll think about it when we get there
+- [Rewind in Braid](https://www.youtube.com/watch?v=8dinUbg2h70), a talk by Jonathan Blow
+	- Implementation options
+		- Deterministic Simulation; record and play back user input. However, things break and it's not robust across revisions
+		- Reversible sim. `tick()` and also `reversetick()`. However, this makes gameplay code really complex
+		- Record full world state; drop frames and interpolate. However, this isn't exact and can lead to exploits.
+	- 40MB rewind data gives 30-60m of recording time
+
 ### February 4th
-- A* path search for DHTs?
 - [Delightful apps](https://stopa.io/post/296)
 	- What makes an app feel delightful? Optimistic Updates, Multiplayer, and Offline-Mode
 	- Optimistic Updates

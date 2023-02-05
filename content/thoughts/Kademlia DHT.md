@@ -9,7 +9,9 @@ Summarization of the [Kademlia paper](https://pdos.csail.mit.edu/~petar/papers/m
 
 > A [[thoughts/peer-to-peer|peer-to-peer]] distributed hash table ([[thoughts/DHT|DHT]])
 
-Participating computers each have a node ID in the 160-bit key space. Key-value pairs are stored on nodes with IDs "close" to the key for some notion of closeness. A node-ID-based routing algorithm lets anyone efficiently locate servers near any given target key.
+Participating computers each have a node ID in the 160-bit key space. Key-value pairs are stored on nodes with IDs "close" to the key for some notion of closeness. A node-ID-based routing algorithm lets anyone efficiently locate servers near any given target key
+
+A `get(key)` operation traverses the identifier space and, upon hitting a node storing key, returns the key’s corresponding contact list. Then, the requesting node can contact these nodes, in parallel or in some application-specific way, to download the stored data.
 
 Core ideas
 - Uniform ID Space: names for both data and nodes share the same ID space
