@@ -74,7 +74,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
   
   
   
-  <script src="https://jzhao.xyz/js/util.11a148dc4b75ccc921417309683947e2.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -99,7 +99,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
   <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
   <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.f03552ccb84d99ca615d1cfb9abde59e.min.js"></script>
+  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -141,7 +141,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.24390ab56e0cda3742f6bd79bb6a215f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -206,6 +206,29 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
           )
         }
       
+      
+      
+      function clickHandler(evt) {
+        const target = evt.target 
+        const classNames = target.className.split(" ")
+        const broken = classNames.includes("broken")
+        const internal = classNames.includes("internal-link")
+        plausible("Link Click", {
+          props: {
+            href: target.href,
+            broken,
+            internal,
+            graph: false,
+          }
+        })
+      }
+
+      const links = document.querySelectorAll("a")
+      for (link of links) {
+        if (link.className.includes("root-title")) {
+          link.addEventListener('click', clickHandler, {once: true})
+        }
+      }
     }
 
     const init = (doc = document) => {
@@ -230,12 +253,13 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
   
   
   <script type="module">
-    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
     attachSPARouting(init, render)
   </script>
   
   
   <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 
 
@@ -265,7 +289,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
 <div class="singlePage">
     
     <header class="delay t-3">
-    <h1 id="page-title"><a href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <h1 id="page-title"><a class="root-title" href="https://jzhao.xyz/">jzhao.xyz</a></h1>
     <div class="spacer"></div>
     <div id="search-icon">
       <p>Search</p>
@@ -638,7 +662,7 @@ Aug 5, 2021
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.6421b50adba269f8b1f5b3e0dc679564.js"></script>
+<script src="https://jzhao.xyz/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
 
     </div>
 </div>
