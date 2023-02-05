@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Coordinate Frames Let $A$ be the original coordinate frame and $B$ be the target coordinate frame
+    content="Coordinate Frames Let $A$ be the original basis and $B$ be the new basis
 $$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp; b &amp; c \ d &amp; e &amp; f \ 0 &amp; 0 &amp; 1\end{bmatrix}\begin{bmatrix}x \ y \ 1\end{bmatrix}_A$$"
   />
   <title>
@@ -135,13 +135,13 @@ $$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp; b &amp; c \ 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -234,19 +234,9 @@ $$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp; b &amp; c \ 
     attachSPARouting(init, render)
   </script>
   
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
-}
-</script>
-
 
 
 <body>
@@ -376,6 +366,84 @@ Jan 23, 2023
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -396,20 +464,65 @@ Jan 23, 2023
 
 
 <a href="#coordinate-frames"><h2 id="coordinate-frames"><span class="hanchor" ariaLabel="Anchor"># </span>Coordinate Frames</h2></a>
-<p>Let $A$ be the original coordinate frame and $B$ be the target coordinate frame</p>
+<p>Let $A$ be the original basis and $B$ be the new basis</p>
 <p>$$\begin{bmatrix}x \\ y \\ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp; b &amp; c \\ d &amp; e &amp; f \\ 0 &amp; 0 &amp; 1\end{bmatrix}\begin{bmatrix}x \\ y \\ 1\end{bmatrix}_A$$</p>
 <p>Then:</p>
 <ul>
-<li>$\begin{bmatrix}a \\ d\end{bmatrix}$ is $i_A$, how to transform the $x$ coordinate</li>
-<li>$\begin{bmatrix}b \\ e\end{bmatrix}$ is $j_A$, how to transform the $y$ coordinate</li>
-<li>$\begin{bmatrix}c \\ f\end{bmatrix}$ is $O_A$, the translation of the entire frame</li>
-</ul>
-<p>Overall,</p>
+<li>$\begin{bmatrix}a \\ d\end{bmatrix}$ is $i_A$, how to transform the $x$ coordinate
 <ul>
-<li>$x_B = x_A * a + y_A * b + c$</li>
-<li>$y_B = x_A * d + y_A * e + f$</li>
+<li>$a$ is how much of $i_B$ we need to make one $i_A$</li>
+<li>$d$ is how much of $j_B$ we need to make one $i_A$</li>
+</ul>
+</li>
+<li>$\begin{bmatrix}b \\ e\end{bmatrix}$ is $j_A$, how to transform the $y$ coordinate
+<ul>
+<li>$b$ is how much of $i_B$ we need to make one $j_A$</li>
+<li>$e$ is how much of $j_B$ we need to make one $j_A$</li>
+</ul>
+</li>
+<li>$\begin{bmatrix}c \\ f\end{bmatrix}$ is $O_A$, the translation of the entire frame
+<ul>
+<li>$c$ is how much of $i_B$ we need to get from $O_B$ to $O_A$</li>
+<li>$f$ is how much of $j_B$ we need to get from $O_B$ to $O_A$</li>
+</ul>
+</li>
 </ul>
 <p>The translation from $P_A$ to $P_B$ can be represented as $P_B = O_A + x_Ai_A + y_Aj_A$</p>
+<a href="#transformation-matrices"><h2 id="transformation-matrices"><span class="hanchor" ariaLabel="Anchor"># </span>Transformation Matrices</h2></a>
+<ul>
+<li><code>Translate(x,y,z)</code>
+<ul>
+<li>$$\begin{bmatrix}x&rsquo; \\ y&rsquo; \\ z&rsquo; \\ 1 \end{bmatrix} = \begin{bmatrix}1 &amp; &amp; &amp; a \\ &amp; 1 &amp; &amp; b \\ &amp; &amp; 1 &amp; c \\ &amp; &amp; &amp; 1\end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$</li>
+</ul>
+</li>
+<li><code>Rotate(z,theta)</code>
+<ul>
+<li>$$\begin{bmatrix}x&rsquo; \\ y&rsquo; \\ z&rsquo; \\ 1 \end{bmatrix} = \begin{bmatrix}\cos \theta &amp; -\sin \theta &amp; \\ \sin \theta &amp; \cos \theta &amp; \\ &amp; &amp; 1 &amp; \\ &amp; &amp; &amp; 1 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$</li>
+</ul>
+</li>
+<li><code>Scale(x,y,z)</code>
+<ul>
+<li>$$\begin{bmatrix}x&rsquo; \\ y&rsquo; \\ z&rsquo; \\ 1 \end{bmatrix} = \begin{bmatrix}a &amp; &amp; &amp; \\ &amp; b &amp; &amp; \\ &amp; &amp; c &amp; \\ &amp; &amp; &amp; 1\end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$</li>
+</ul>
+</li>
+</ul>
+<a href="#viewing-transformation"><h2 id="viewing-transformation"><span class="hanchor" ariaLabel="Anchor"># </span>Viewing Transformation</h2></a>
+<ul>
+<li>Defined using
+<ul>
+<li>eye point</li>
+<li>target point</li>
+<li>up vector</li>
+</ul>
+</li>
+</ul>
+<p>$$\vec k = \frac{P_{eye}-P_{ref}}{\lVert P_{eye}-P_{ref} \rVert}$$</p>
+<p>$$\vec i = \frac{V_{up} \times \vec k}{\lVert V_{up} \times \vec k \rVert}$$</p>
+<p>$$\vec j = \vec k \times \vec i$$</p>
+<p>$$M_{cam} = \begin{bmatrix}
+i_1 &amp; j_1 &amp; k_1 &amp; P_{eye1} \\ i_2 &amp; j_2 &amp; k_2 &amp; P_{eye2} \\ i_3 &amp; j_3 &amp; k_3 &amp; P_{eye3} \\ 0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}$$</p>
+<p>$$M_{view} = M_{cam}^{-1}$$</p>
 
 
     </article>
@@ -463,7 +576,7 @@ Jan 23, 2023
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
+<script src="https://jzhao.xyz/js/graph.6421b50adba269f8b1f5b3e0dc679564.js"></script>
 
     </div>
 </div>

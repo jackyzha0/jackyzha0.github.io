@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,19 +233,9 @@
     attachSPARouting(init, render)
   </script>
   
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
-}
-</script>
-
 
 
 <body>
@@ -306,6 +296,26 @@ if (!doNotTrack) {
             <a href="/tags">See all tags →</a>
         
         <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 5, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/linear-regression/" class="internal-link" data-src="/thoughts/linear-regression/">Linear Regression</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
         <div class="section">
             <p class="meta">
                 
@@ -480,26 +490,6 @@ Sep 28, 2022
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/PHIL321A/">PHIL321A</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Sep 26, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/clustering/" class="internal-link" data-src="/thoughts/clustering/">Clustering</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-                <li><a href="https://jzhao.xyz/tags/CPSC340/">CPSC340</a></li>
                 
             </ul>
         </div>

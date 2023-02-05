@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -234,19 +234,9 @@
     attachSPARouting(init, render)
   </script>
   
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
-}
-</script>
-
 
 
 <body>
@@ -422,6 +412,49 @@ Jun 7, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -439,7 +472,7 @@ Jun 7, 2022
 <p>One solution for &lsquo;decentralized&rsquo; registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.</p>
 <p>Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.</p>
 <p>Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)</p>
-<p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT.</p>
+<p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT. Also see <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></p>
 <a href="#applications-to-torrent-software"><h3 id="applications-to-torrent-software"><span class="hanchor" ariaLabel="Anchor"># </span>Applications to Torrent Software</h3></a>
 <p>Old way was to use a tracker, you announce which file you are going to download to the tracker and the trackers sends back a list of peers. However, these trackers tend to go down easily (get sued)</p>
 <p>DHT proves to be a more reliable way of replicating this behaviour.</p>
@@ -450,6 +483,7 @@ Jun 7, 2022
 <li>Perform a <a href="/thoughts/Sybil-Attack" rel="noopener" class="internal-link" data-src="/thoughts/Sybil-Attack">Sybil attack</a> by simulating 1000+ clients and just wait for values to come in, cheaply capturing 90%-99% of the DHT</li>
 </ul>
 </li>
+<li>How do we make DHTs work where member count is low?</li>
 </ul>
 
 
@@ -580,7 +614,7 @@ Jun 7, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
+<script src="https://jzhao.xyz/js/graph.6421b50adba269f8b1f5b3e0dc679564.js"></script>
 
     </div>
 </div>

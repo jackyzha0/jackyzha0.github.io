@@ -7,12 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Coral: Sloppy Hashing DHT</title>
+      <link>https://jzhao.xyz/thoughts/Sloppy-Hashing-DHT/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Sloppy-Hashing-DHT/</guid>
+      <description>Source
+Main problems with [[thoughts/Kademlia DHT]] is that it has poor locality. A peer could make requests that hop all the way around the globe when the information they are looking for is in their local network!</description>
+    </item>
+    
+    <item>
       <title>Computer Graphics</title>
       <link>https://jzhao.xyz/thoughts/computer-graphics/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/computer-graphics/</guid>
-      <description>Coordinate Frames Let $A$ be the original coordinate frame and $B$ be the target coordinate frame
+      <description>Coordinate Frames Let $A$ be the original basis and $B$ be the new basis
 $$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp;amp; b &amp;amp; c \ d &amp;amp; e &amp;amp; f \ 0 &amp;amp; 0 &amp;amp; 1\end{bmatrix}\begin{bmatrix}x \ y \ 1\end{bmatrix}_A$$</description>
     </item>
     
@@ -5389,7 +5399,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  markup any site with a webcrawler + yjs + tldraw  markupthis.site is not taken!!   WASM-based npm with [[thoughts/CID|CIDs]]  https://blog.</description>
+      <description>Technical  markup any site with a webcrawler + yjs + tldraw  markupthis.site is not taken!!   WASM-based npm with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]  https://blog.</description>
     </item>
     
     <item>

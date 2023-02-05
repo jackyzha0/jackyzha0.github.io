@@ -135,13 +135,13 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -234,19 +234,9 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
     attachSPARouting(init, render)
   </script>
   
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
-}
-</script>
-
 
 
 <body>
@@ -471,6 +461,70 @@ Aug 10, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
 
 
 
@@ -485,6 +539,8 @@ Aug 10, 2022
 <p>A measure of complexity (lower is better) for distributed <a href="/thoughts/consensus" rel="noopener" class="internal-link" data-src="/thoughts/consensus">consensus</a> mechanisms in partially synchronous <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
 <p>Definition: The sum, over all replicas $i \in [ n ]$, of the number of authenticators received by replica $i$ in the protocol to reach a consensus decision after GST.</p>
 <p>An authenticator is either a partial signature or a <a href="/thoughts/digital-signatures" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signature</a>.</p>
+<p><img src="/thoughts/images/authenticator-complexity-meme.png" width="auto" /><em>Figure 2: Our Network Protocol (from 
+<a href="https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf" rel="noopener">The Saddest Moment</a>)</em></p>
 
 
     </article>
@@ -538,7 +594,7 @@ Aug 10, 2022
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
+<script src="https://jzhao.xyz/js/graph.6421b50adba269f8b1f5b3e0dc679564.js"></script>
 
     </div>
 </div>

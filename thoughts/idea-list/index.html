@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Technical  markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis.site is not taken!!   WASM-based npm with [[thoughts/CID|CIDs]]  https://blog."
+    content="Technical  markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis.site is not taken!!   WASM-based npm with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]  https://blog."
   />
   <title>
     Idea List
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a19c65e62438adb1b236b729906cc564.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.e729519c8278d8af42e78f51c5b84a89.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.162808ef04341568a3db0c4d02993a97.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -233,19 +233,9 @@
     attachSPARouting(init, render)
   </script>
   
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDD4K02HML"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-WDD4K02HML', { 'anonymize_ip': false });
-}
-</script>
-
 
 
 <body>
@@ -1010,6 +1000,156 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1028,10 +1168,9 @@ Jun 17, 2021
 <li>markupthis.site is not taken!!</li>
 </ul>
 </li>
-<li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a></li>
+<li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> distributed using a <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
 <li>
 <a href="https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/" rel="noopener">https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/</a> but with vim gutters and program slicing</li>
-<li>video editor with auto-generated snap points</li>
 <li>rotmg but actually good lol
 <ul>
 <li>dodge mechanic</li>
@@ -1043,7 +1182,11 @@ Jun 17, 2021
 <li>actual good graveyard mechanics to look at past runs/chars</li>
 </ul>
 </li>
-<li>latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active</li>
+<li>latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
+<ul>
+<li>see also: <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
+</ul>
+</li>
 <li>something with 
 <a href="https://openai.com/blog/whisper/" rel="noopener">https://openai.com/blog/whisper/</a></li>
 <li>calvin and hobbes semantic image search</li>
@@ -1603,7 +1746,7 @@ Jun 17, 2021
   }
 </style>
 
-<script src="https://jzhao.xyz/js/graph.2d9e48dbe7ea47c0ef1c58296ce14448.js"></script>
+<script src="https://jzhao.xyz/js/graph.6421b50adba269f8b1f5b3e0dc679564.js"></script>
 
     </div>
 </div>
