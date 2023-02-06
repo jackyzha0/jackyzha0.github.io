@@ -59,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.ef844fb5ddeda9409f3fe73de6df9e21.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.24390ab56e0cda3742f6bd79bb6a215f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.417b33fef01632a0bcb2fabc49ab7b94.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1174,6 +1174,81 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1369,23 +1444,21 @@ Jun 17, 2021
 <li>
 <a href="https://shapefarm.net/" rel="noopener">https://shapefarm.net/</a></li>
 <li>
+<a href="https://www.epic.net/" rel="noopener">https://www.epic.net/</a></li>
+<li>
 <a href="https://kernel-mag.vercel.app/post/take-back-the-future" rel="noopener">https://kernel-mag.vercel.app/post/take-back-the-future</a></li>
 <li>
 <a href="https://rauno.me/" rel="noopener">https://rauno.me/</a></li>
 <li>
 <a href="https://www.thesolarmonk.com/posts/a-spacebar-for-the-web" rel="noopener">https://www.thesolarmonk.com/posts/a-spacebar-for-the-web</a></li>
+<li>
+<a href="https://linear.app/change" rel="noopener">https://linear.app/change</a></li>
 </ul>
 </li>
 <li>3d
 <ul>
 <li>
 <a href="https://chartogne-taillet.com/en" rel="noopener">https://chartogne-taillet.com/en</a></li>
-<li>
-<a href="https://flowersforsociety.com/" rel="noopener">https://flowersforsociety.com/</a></li>
-<li>
-<a href="https://bruno-simon.com/" rel="noopener">https://bruno-simon.com/</a></li>
-<li>
-<a href="https://danny-garcia.com/" rel="noopener">https://danny-garcia.com/</a></li>
 <li>
 <a href="http://richardmattka.com/prototypes/red-shift" rel="noopener">http://richardmattka.com/prototypes/red-shift</a></li>
 <li>
@@ -1634,6 +1707,18 @@ Jun 17, 2021
 </ul>
 </li>
 <li>essay on epistemic play + jestermaxxing + mill’s take on why censorship is unethical</li>
+<li>limits to <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a>
+<ul>
+<li>some malicious activity is indistinguishable from legitimate activity (e.g. deleting a document)
+<ul>
+<li><em>semantic</em> byzantine fault tolerance vs protocol byzantine fault tolerance</li>
+</ul>
+</li>
+<li>Making distributed systems reliable is inherently impossible; we cling to Byzantine fault tolerance like Charlton Heston clings to his guns, hoping that a series of complex software protocols will somehow protect us from the oncoming storm of furious apes who have somehow learned how to wear pants and maliciously tamper with our network packets. (<em>
+<a href="https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf" rel="noopener">The Saddest Moment</a></em> by James Mickens)</li>
+<li>&ldquo;I have never had a real-life experience that resembled a Byzantine fault tolerant protocol.&rdquo;</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

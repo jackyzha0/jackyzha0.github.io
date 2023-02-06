@@ -60,7 +60,7 @@ Main problems with [[thoughts/Kademlia DHT]] is that it has poor locality. A pee
   
   
   
-  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.ef844fb5ddeda9409f3fe73de6df9e21.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -135,13 +135,13 @@ Main problems with [[thoughts/Kademlia DHT]] is that it has poor locality. A pee
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.24390ab56e0cda3742f6bd79bb6a215f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.417b33fef01632a0bcb2fabc49ab7b94.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -345,6 +345,9 @@ Jan 29, 2023
   
   
 
+  
+  
+
 
 
 
@@ -355,6 +358,10 @@ Jan 29, 2023
 
   
   
+  
+    
+  
+    
   
 
   
@@ -398,6 +405,10 @@ Jan 29, 2023
 
   
   
+  
+    
+  
+    
   
 
   
@@ -463,6 +474,57 @@ Jan 29, 2023
   
   
   
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
 
   
 
@@ -505,6 +567,10 @@ Jan 29, 2023
 
   
   
+  
+    
+  
+    
   
 
   
@@ -564,6 +630,16 @@ Jan 29, 2023
 <p>Though some DHTs make an effort to route requests through nodes with low network latency, the last few hops in any lookup request are essentially random. Thus, a node might need to send a query half way around the world to learn that its neighbor is caching a particular web page.</p>
 </blockquote>
 <p>Choral achieves locality through clustering! It creates self-organizing clusters of nodes that fetch information from each other to avoid communicating with more distant or heavily-loaded servers.</p>
+<p>Notes</p>
+<ul>
+<li>&lsquo;Sloppiness&rsquo; comes from the fact that a <code>set(key, nodeaddr)</code> operation doesn&rsquo;t just store the pointer <code>nodeaddr</code> on one node
+<ul>
+<li>It stores pointers along the lookup path for popular keys (this is called &ldquo;spilling-over&rdquo;)</li>
+<li>Helps to balance load while inserting pointers, retrieving pointers, and downloading data</li>
+</ul>
+</li>
+<li>Generally set a TTL for records to expire quickly enough to keep the fraction of stale pointers below 50%</li>
+</ul>
 <a href="#network-layers"><h2 id="network-layers"><span class="hanchor" ariaLabel="Anchor"># </span>Network Layers</h2></a>
 <p>In order to restrict queries to nearby machines, each Coral node is a member of several DSHTs, which we call clusters, of increasing network diameter.</p>
 <p>The diameter of a cluster is the maximum desired round-trip time between any two nodes it contains.</p>
@@ -574,12 +650,14 @@ Jan 29, 2023
 </ul>
 <p>Similar concept to isochrone maps</p>
 <p><img src="/thoughts/images/isochrone.png" width="500" /></p>
-<a href="#distributed-sloppy-hash-table-dsht"><h2 id="distributed-sloppy-hash-table-dsht"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Sloppy Hash Table (DSHT)</h2></a>
-<p>The DSHT abstraction is specifically suited to locating replicated resources.</p>
 <a href="#downsides"><h2 id="downsides"><span class="hanchor" ariaLabel="Anchor"># </span>Downsides</h2></a>
 <ul>
 <li>The privacy sucks sucks: nodes publish not only their <a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP Addresses</a> but the path to get there too!</li>
-<li>Requires network size estimation which is hard to do if the number of nodes are small (i.e. requires a large deployment to be effective)</li>
+<li>Requires network size estimation which is hard to do if the number of nodes are small (i.e. requires a large deployment to be effective)
+<ul>
+<li>Can be done using <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">Network Theory</a> as lookups are on average $O(\log n)$ hops</li>
+</ul>
+</li>
 <li>Not <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a>: a malicious actor could pollute the DHT and cause really poor routing</li>
 </ul>
 

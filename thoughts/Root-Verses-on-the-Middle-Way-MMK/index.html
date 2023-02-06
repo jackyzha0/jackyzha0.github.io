@@ -60,7 +60,7 @@ A key text in Buddhist religious texts. Use of reductio ad absurdum (proof by co
   
   
   
-  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.ef844fb5ddeda9409f3fe73de6df9e21.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -135,13 +135,13 @@ A key text in Buddhist religious texts. Use of reductio ad absurdum (proof by co
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.24390ab56e0cda3742f6bd79bb6a215f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.417b33fef01632a0bcb2fabc49ab7b94.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

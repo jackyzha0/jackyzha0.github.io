@@ -59,7 +59,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.2e5fb6b0e9a17668b3becc1b28199536.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.ef844fb5ddeda9409f3fe73de6df9e21.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.86e511da03d4a29c271cff3ea6743440.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.24390ab56e0cda3742f6bd79bb6a215f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.417b33fef01632a0bcb2fabc49ab7b94.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1073,6 +1073,100 @@ May 5, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1160,11 +1254,6 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <li>Remove-wins</li>
 <li>Last-writer-wins</li>
 </ul>
-<a href="#undo"><h3 id="undo"><span class="hanchor" ariaLabel="Anchor"># </span>Undo</h3></a>
-<ul>
-<li>tk, look at Logoot-Undo</li>
-<li>does this conflict with potential storage optimizations like state compaction?</li>
-</ul>
 <a href="#secure-crdts"><h3 id="secure-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Secure CRDTs</h3></a>
 <ul>
 <li>tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example</li>
@@ -1183,6 +1272,7 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <li>This hash graph helps to ensure eventual consistency as two nodes $p$ and $q$ can exchange the hashes of their currents heads and if they are identical, they can ensure the set of updates they have observed is also identical.</li>
 <li>If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</li>
 </ol>
+<p>See: <a href="/posts/bft-json-crdt" rel="noopener" class="internal-link" data-src="/posts/bft-json-crdt">bft-json-crdt</a></p>
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Practical experience with CRDTs shows that they tend to become inefficient over time,
@@ -1193,6 +1283,7 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <a href="https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2" rel="noopener">(#2)</a></p>
 </blockquote>
 <p>One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.</p>
+<p>See also: <a href="/thoughts/Antimatter" rel="noopener" class="internal-link" data-src="/thoughts/Antimatter">Antimatter</a></p>
 <a href="#exploiting-good-connectivity-for-stronger-consistency"><h3 id="exploiting-good-connectivity-for-stronger-consistency"><span class="hanchor" ariaLabel="Anchor"># </span>Exploiting good connectivity for stronger consistency</h3></a>
 <p>Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define <em>weak operations</em> which only <em>eventually</em> need to be linearized.</p>
 <a href="#unsolved-problems"><h2 id="unsolved-problems"><span class="hanchor" ariaLabel="Anchor"># </span>Unsolved Problems</h2></a>
