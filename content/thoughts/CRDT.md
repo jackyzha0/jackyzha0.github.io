@@ -80,10 +80,6 @@ A query can be specified as a function that uses this information and the value 
 - Remove-wins
 - Last-writer-wins
 
-### Undo
-- tk, look at Logoot-Undo
-- does this conflict with potential storage optimizations like state compaction?
-
 ### Secure CRDTs
 - tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example
 - https://martin.kleppmann.com/papers/snapdoc-pets19.pdf
@@ -100,6 +96,8 @@ The main construct here is constructing a hash graph (aka a [[thoughts/Merkle-DA
 1. This hash graph helps to ensure eventual consistency as two nodes $p$ and $q$ can exchange the hashes of their currents heads and if they are identical, they can ensure the set of updates they have observed is also identical.
 2. If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.
 
+See: [[posts/bft-json-crdt]]
+
 ## Performance
 ### Storage + State Compaction
 Practical experience with CRDTs shows that they tend to become inefficient over time,
@@ -110,6 +108,8 @@ However, GC + rebalancing technically requires achieving [[thoughts/consensus|co
 > So, as far as I know, we would need a consensus protocol attached to the CRDT in order to get garbage collection / compaction. [(#2)](https://github.com/ipfs-inactive/dynamic-data-and-capabilities/issues/2)
 
 One potential way of overcoming this is to have a small, stable subset of replicas called the core which achieve consensus amongst each other. The other replicas asynchronously reconcile their state with core replicas.
+
+See also: [[thoughts/Antimatter]]
 
 ### Exploiting good connectivity for stronger consistency
 Upgrading network assumption from asynchronous to partially synchronous enables us to potentially define *weak operations* which only *eventually* need to be linearized.

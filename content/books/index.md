@@ -10,6 +10,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Fiction
 * **Accelerando** by Charles Stross
 * **Homo Ludens** by Johan Huizinga
+* **Foundation** Series by Isaac Asimov
 
 ### Non-fiction
 * **Dealers of Lighting** by Michael A. Hiltzik
@@ -18,6 +19,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Where Is My Flying Car?** by J. Storrs Hall
 * **The Dream Machine** by M. Mitchell Waldrop
 * **The Limits to Capital** by David Harvey
+* **Inventing the Medium** by Janet J. Murray
+* **Designing an Internet** by David D. Clark
 
 ## Current
 - **Tomorrow, and Tomorrow, and Tomorrow** by Gabrielle Zevin

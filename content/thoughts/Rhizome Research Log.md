@@ -10,6 +10,8 @@ I think research logs tend to generally focus too much on what one did rather th
 
 ## February
 ### February 5th
+- Notes on Braid research
+	- [[thoughts/Antimatter|Antimatter]]
 - Why continually *doing* matters
 	- People talk about 'momentum' when it comes to projects a lot
 	- I get told by people looking to do more projects/research that they *think* about it a lot but rarely spend much time actually *doing it*

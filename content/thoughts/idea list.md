@@ -86,14 +86,13 @@ tags:
 		- http://lynnecarty.info/
 	- misc
 		- https://shapefarm.net/
+		- https://www.epic.net/
 		- https://kernel-mag.vercel.app/post/take-back-the-future
 		- https://rauno.me/
 		- https://www.thesolarmonk.com/posts/a-spacebar-for-the-web
+		- https://linear.app/change
 	- 3d
 		- https://chartogne-taillet.com/en
-		- https://flowersforsociety.com/
-		- https://bruno-simon.com/
-		- https://danny-garcia.com/
 		- http://richardmattka.com/prototypes/red-shift
 		- https://ventureworks.io/
 		- https://henryheffernan.com/
