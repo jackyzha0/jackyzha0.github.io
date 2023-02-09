@@ -9,9 +9,28 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
-### February 5th
+### February 8th
+- [Types, not tables](https://github.com/edgedb/edgedb): I agree! What if we had a similar format for types as a sequence of map, filter, and reduce statements?
+- Fact stores with schemas as queries
+- Product : Product Market Fit :: Protocol : Protocol Platform Fit
+	- Products derive value from benefiting end-users directly
+	- Protocols derive value by expanding the horizons for what can be build
+		- That is, the value is not reified into people build on top of it
+		- Thus, part of the work of the protocol is figuring out the right platforms/applications that can be built on top of it and providing the right incentives for those to exist
+		- I suspect this is partially why so much of [[thoughts/web3]] seems like vaporware: you necessarily need to promise things to attract people to build
+			- But anyone who treats a protocol like a product is bound to find it suspect
+- Had a chat with Spencer and Raymond about the future of data / folk forums which was really energizing
+	- Everything is pub-sub
+		- What does a protocol level inbox/outbox system for the web look like?
+	- Now, directly addressing people or applications is super hard because of [[thoughts/distributed systems]], [[thoughts/NAT]], and a bunch of other nasty things
+	- See also: [[posts/communal-computing|communal computing]]
+	- What if we had Docker-namespace- or [val.town](http://val.town)-style application network addressing?
 - Notes on Braid research
 	- [[thoughts/Antimatter|Antimatter]]
+	- RhizomeDB (Fission renamed WebnativeDB)
+		- 
+
+### February 5th
 - Why continually *doing* matters
 	- People talk about 'momentum' when it comes to projects a lot
 	- I get told by people looking to do more projects/research that they *think* about it a lot but rarely spend much time actually *doing it*
@@ -22,10 +41,12 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Truly doing something that is creative and agentic *gives* you energy. It doesn't drain it
 - A* path search for DHTs? Locality mapping?
 	- This [video explainer of Meridian](https://www.youtube.com/watch?v=O7dyCDE-lw0) is really cool too! Taking account earth curvature when working with distance estimations
+		- Essentially, the idea is for each node-to-node query hand-off to "zoom in" to the solution space, reducing the necessary state requirement on each node to only logarithmic of the system size
 	- Optimizing geographical coverage through hypervolumes
 		- Say you have a set of K servers in your cluster
 		- And a set of L servers that are candidates
 		- Iteratively sub out servers in K for servers in L to find the set that maximizes the hypervolume to maximize the geographical coverage
+			- The ring members are diverse within the enclosed space by looking at the three dimensional case, which selects the three nodes from each ring that form the largest triangle
 	- This of course assumes laying wires that follow the curvature of the earth. Does this assumption hold for interplanetary systems? Probably not but eh we'll think about it when we get there
 - [Rewind in Braid](https://www.youtube.com/watch?v=8dinUbg2h70), a talk by Jonathan Blow
 	- Implementation options

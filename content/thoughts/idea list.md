@@ -191,3 +191,13 @@ tags:
 			- *semantic* byzantine fault tolerance vs protocol byzantine fault tolerance
 		- Making distributed systems reliable is inherently impossible; we cling to Byzantine fault tolerance like Charlton Heston clings to his guns, hoping that a series of complex software protocols will somehow protect us from the oncoming storm of furious apes who have somehow learned how to wear pants and maliciously tamper with our network packets. (*[The Saddest Moment](https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf)* by James Mickens)
 		- "I have never had a real-life experience that resembled a Byzantine fault tolerant protocol."
+	- against recipes
+		-   recipes are for reproducibility, determinism → and thus fungibility
+		-   bad for creatives? or anything that is high flux
+		-   how does this differ for rules, traditions, social norms, algorithms
+		-   redistributes the interestingness into the hands of a few
+			- [[thoughts/Seeing like a State]]: similarly concentrates the autonomy and agency of decision making around city planning
+	- life is different modes of seeing
+		- what you see is what you get
+		- As Thoreau wrote, “It’s not what you look at that matters, it’s what you see.”
+		- [https://nicoles.substack.com/p/you-find-what-you-look-for](https://nicoles.substack.com/p/you-find-what-you-look-for)

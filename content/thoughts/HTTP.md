@@ -6,7 +6,9 @@ tags:
 - CPSC317
 ---
 
-Main method of communication at the [Application Layer](thoughts/Application%20Layer.md) for the web. A state-transfer protocol.
+Main method of communication at the [Application Layer](thoughts/Application%20Layer.md) for the web. A state-transfer protocol. See also: [[thoughts/Braid HTTP]] for HTTP as state-synchronization
+
+Sometimes called the second waist of the Internet (after [[thoughts/IP Addresses]])
 
 ## Connections
 1. Non-persistent HTTP (v1.0)

@@ -9,6 +9,10 @@ tags:
 
 One solution for 'decentralized' registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.
 
+Any good implementation tries to answer 2 questions:
+1. Which nodes take which part of the hash map
+2. If a key is not on a node, how does it go and get it?
+
 Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.
 
 Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)

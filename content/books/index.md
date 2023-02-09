@@ -1,5 +1,7 @@
 ---
 title: "Booklist"
+aliases:
+- Reading list
 ---
 
 A (mostly) up-to-date list of books I at some point, have wanted to read, am reading, or finished reading. Links are to pages/blog posts/ideas that were inspired by the book that's linked!
@@ -21,6 +23,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Limits to Capital** by David Harvey
 * **Inventing the Medium** by Janet J. Murray
 * **Designing an Internet** by David D. Clark
+* **Playing Software** by Miguel Sicart
 
 ## Current
 - **Tomorrow, and Tomorrow, and Tomorrow** by Gabrielle Zevin
