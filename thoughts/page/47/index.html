@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -325,6 +325,24 @@ Oct 2, 2021
 
             </p>
             <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/human-centered-design/" class="internal-link" data-src="/thoughts/human-centered-design/">Human Centered Design (HCD)</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
+Oct 2, 2021
+
+
+            </p>
+            <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/The-Psychopathology-of-Everyday-Things/" class="internal-link" data-src="/thoughts/The-Psychopathology-of-Everyday-Things/">The Psychopathology of Everyday Things</a></h3>
             </div>
             <div class="spacer"></div>
@@ -477,24 +495,6 @@ Sep 15, 2021
                 <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
                 
                 <li><a href="https://jzhao.xyz/tags/technical/">Technical</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Sep 14, 2021
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/human-computer-interaction/" class="internal-link" data-src="/thoughts/human-computer-interaction/">Human Computer Interaction (HCI)</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
                 
             </ul>
         </div>

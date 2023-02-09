@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -494,6 +494,11 @@ Jun 7, 2022
 <p>The big hash table in the sky</p>
 </blockquote>
 <p>One solution for &lsquo;decentralized&rsquo; registry of peers. Each node holds a small shard of the DHT, so the burden of participation isn’t painful for any one agent. The DHT stores multiple redundant copies of each entry so that the information is available even when the author and a portion of the authorities are offline.</p>
+<p>Any good implementation tries to answer 2 questions:</p>
+<ol>
+<li>Which nodes take which part of the hash map</li>
+<li>If a key is not on a node, how does it go and get it?</li>
+</ol>
 <p>Keys are opaque, 160-bit quantities (e.g. an SHA-1 hash). Peers store data with similar IDs.</p>
 <p>Joining a DHT requires knowledge about at least one member of the DHT (the bootstrap node)</p>
 <p>Common implementations include <a href="/thoughts/Kademlia-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Kademlia-DHT">Kademlia DHT</a> and Chord DHT. Also see <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></p>

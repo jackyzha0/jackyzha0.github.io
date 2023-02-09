@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

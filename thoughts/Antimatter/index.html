@@ -8,7 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history."
   />
   <title>
     Antimatter
@@ -134,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -349,6 +350,198 @@ Feb 5, 2023
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
 
 
 
@@ -360,6 +553,23 @@ Feb 5, 2023
 
 
 
+
+<p>A <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a> + OT text editing algorithm with history pruning (read: GC). Permissionless <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
+<a href="#components"><h2 id="components"><span class="hanchor" ariaLabel="Anchor"># </span>Components</h2></a>
+<ul>
+<li>Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop</li>
+<li>Blooping: collapsing history. This is kind of like span-merging which <a href="/thoughts/Yjs" rel="noopener" class="internal-link" data-src="/thoughts/Yjs">Yjs</a> implements
+<ul>
+<li>When we get acknowledgement from all peers up to a certain point, we can then &lsquo;bloop&rsquo;/flatten all history that is not used in producing the current state</li>
+<li><img src="/thoughts/images/antimatter-bloop.png" width="400" /></li>
+</ul>
+</li>
+<li>Fissures: keeps track of disconnections and network partitions
+<ul>
+<li>During a fissure/disconnect, all events concurrent with that disconnect are marked to prevent from being blooped</li>
+</ul>
+</li>
+</ul>
 
 
     </article>

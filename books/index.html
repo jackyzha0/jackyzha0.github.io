@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,7 +317,7 @@
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Feb 6, 2023
+Feb 9, 2023
 
  
           
@@ -638,6 +638,7 @@ Feb 6, 2023
 <li><strong>The Limits to Capital</strong> by David Harvey</li>
 <li><strong>Inventing the Medium</strong> by Janet J. Murray</li>
 <li><strong>Designing an Internet</strong> by David D. Clark</li>
+<li><strong>Playing Software</strong> by Miguel Sicart</li>
 </ul>
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>

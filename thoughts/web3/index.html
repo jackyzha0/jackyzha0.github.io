@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -832,6 +832,10 @@ Jul 28, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/A-City-is-not-a-Computer/" data-ctx="web3" data-src="/thoughts/A-City-is-not-a-Computer" class="internal-link">A City is not a Computer</a>
       </li>
@@ -852,6 +856,12 @@ Jul 28, 2021
       
       <li>
         <a href="/thoughts/Rhizome-Proposal/" data-ctx="web3" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Research-Log/" data-ctx="thoughts/web3" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
       

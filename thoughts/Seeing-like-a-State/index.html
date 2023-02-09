@@ -135,13 +135,13 @@ An account of the logic behind the failure of some of the great utopian social e
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -763,6 +763,14 @@ Dec 24, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="Seeing Like A State" data-src="/books" class="internal-link">Booklist</a>
       </li>
@@ -794,7 +802,19 @@ Dec 24, 2022
       
       
       <li>
+        <a href="/thoughts/Transformative-Technology-Trilemma/" data-ctx="thoughts/Seeing like a State" data-src="/thoughts/Transformative-Technology-Trilemma" class="internal-link">Transformative Technology Trilemma</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/formality-considered-harmful/" data-ctx="Seeing like a State" data-src="/thoughts/formality-considered-harmful" class="internal-link">Formality considered harmful</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/idea-list/" data-ctx="thoughts/Seeing like a State" data-src="/thoughts/idea-list" class="internal-link">Idea List</a>
       </li>
       
       

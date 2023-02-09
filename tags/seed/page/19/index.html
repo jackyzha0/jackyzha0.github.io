@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -323,6 +323,24 @@
         <div class="section">
             <p class="meta">
                 
+Jun 9, 2022
+
+
+            </p>
+            <div class="desc">
+              <h3><a href="https://jzhao.xyz/thoughts/RDF/" class="internal-link" data-src="/thoughts/RDF/">RDF</a></h3>
+            </div>
+            <div class="spacer"></div>
+            <ul class="tags">
+                
+                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+                
+            </ul>
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <p class="meta">
+                
 Jun 8, 2022
 
 
@@ -473,24 +491,6 @@ Jun 5, 2022
             </p>
             <div class="desc">
               <h3><a href="https://jzhao.xyz/thoughts/content-addressed-storage/" class="internal-link" data-src="/thoughts/content-addressed-storage/">Content addressed storage</a></h3>
-            </div>
-            <div class="spacer"></div>
-            <ul class="tags">
-                
-                <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
-                
-            </ul>
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <p class="meta">
-                
-Jun 5, 2022
-
-
-            </p>
-            <div class="desc">
-              <h3><a href="https://jzhao.xyz/thoughts/IPFS/" class="internal-link" data-src="/thoughts/IPFS/">IPFS</a></h3>
             </div>
             <div class="spacer"></div>
             <ul class="tags">

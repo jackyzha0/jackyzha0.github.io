@@ -7,12 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Transformative Technology Trilemma</title>
+      <link>https://jzhao.xyz/thoughts/Transformative-Technology-Trilemma/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Transformative-Technology-Trilemma/</guid>
+      <description>Source
+Transformative technologies (TTs) refer to technological advances with a high likelihood of significantly altering society. Specifically, among TTs, there are significant trade-offs between</description>
+    </item>
+    
+    <item>
       <title>Antimatter</title>
       <link>https://jzhao.xyz/thoughts/Antimatter/</link>
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Antimatter/</guid>
-      <description></description>
+      <description>A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history.</description>
     </item>
     
     <item>
@@ -2358,8 +2369,7 @@ Debates from Classical South Asia  Right and wrong aren’t directly perceptible
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/HTTP/</guid>
-      <description>Main method of communication at the Application Layer for the web. A state-transfer protocol.
-Connections  Non-persistent HTTP (v1.0)  At most one object is sent over each TCP connection Connection is closed as soon as data is transferred Include an additional round trip for the TCP handshake for each object = $2n$ RTTs where $n$ is number of resources   Persistent HTTP (v1.</description>
+      <description>Main method of communication at the Application Layer for the web. A state-transfer protocol. See also: [[thoughts/Braid HTTP]] for HTTP as state-synchronization</description>
     </item>
     
     <item>

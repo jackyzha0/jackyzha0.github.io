@@ -8,8 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Main method of communication at the Application Layer for the web. A state-transfer protocol.
-Connections  Non-persistent HTTP (v1.0)  At most one object is sent over each TCP connection Connection is closed as soon as data is transferred Include an additional round trip for the TCP handshake for each object = $2n$ RTTs where $n$ is number of resources   Persistent HTTP (v1."
+    content="Main method of communication at the Application Layer for the web. A state-transfer protocol. See also: [[thoughts/Braid HTTP]] for HTTP as state-synchronization"
   />
   <title>
     HTTP
@@ -135,13 +134,13 @@ Connections  Non-persistent HTTP (v1.0)  At most one object is sent over each TC
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.067a5ed143de6c40463ba790087d41a9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d8a4c91d52f0c13989983f887bae42be.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -370,6 +369,116 @@ Mar 21, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -390,7 +499,8 @@ Mar 21, 2022
 <a
   href="/thoughts/Application-Layer/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/Application-Layer/">Application Layer</a> for the web. A state-transfer protocol.</p>
+  data-src="/thoughts/Application-Layer/">Application Layer</a> for the web. A state-transfer protocol. See also: <a href="/thoughts/Braid-HTTP" rel="noopener" class="internal-link" data-src="/thoughts/Braid-HTTP">Braid HTTP</a> for HTTP as state-synchronization</p>
+<p>Sometimes called the second waist of the Internet (after <a href="/thoughts/IP-Addresses" rel="noopener" class="internal-link" data-src="/thoughts/IP-Addresses">IP Addresses</a>)</p>
 <a href="#connections"><h2 id="connections"><span class="hanchor" ariaLabel="Anchor"># </span>Connections</h2></a>
 <ol>
 <li>Non-persistent HTTP (v1.0)
