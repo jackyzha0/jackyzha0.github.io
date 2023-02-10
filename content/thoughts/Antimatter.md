@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+[Source](https://braid.org/antimatter)
+
 A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 
 ## Components

@@ -9,6 +9,28 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
+### February 10th
+- Things to tie together:
+	- Identity backed by `did:key`
+		- OAuth
+		- wallet
+		- `did:key` on the fly
+	- Persistence
+		- Make it easy to spin up personal databases
+		- Connect personal databases to applications
+		- Pub-sub: subscribe to other databases
+	- Folk programming
+	- Easy application networking
+	- Query over fact store
+	- Merge semantics and CRDTs
+- I feel like there is a large common ground between `git`, [[thoughts/CRDT|CRDTs]] and room for cross-pollination across both
+	- Both basically focus on version control and collaboration
+	- However, both aren't perfect
+		- The railroad metaphor for `git` is powerful but the affordances of how to manipulate it aren't made clear to the end-user. CRDTs don't explicitly expose version control to the end-user
+		- CRDTs have great conflict-free merge semantics that `git` (relatively) sucks at
+	- Both are also pretty bad in terms of operation efficiency
+- Found out about [Ditto](https://www.ditto.live/), I guess local-first/offline-first applications make a lot of sense for aviation LOL
+
 ### February 8th
 - [Types, not tables](https://github.com/edgedb/edgedb): I agree! What if we had a similar format for types as a sequence of map, filter, and reduce statements?
 - Fact stores with schemas as queries
@@ -28,7 +50,6 @@ I think research logs tend to generally focus too much on what one did rather th
 - Notes on Braid research
 	- [[thoughts/Antimatter|Antimatter]]
 	- RhizomeDB (Fission renamed WebnativeDB)
-		- 
 
 ### February 5th
 - Why continually *doing* matters
@@ -668,8 +689,8 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Semantic diffing, live `git`
 	- Minecraft or other real-time game (testing latency)
 	- EVM (testing expressiveness)
-	- A browser... with editing and hosting of local-files baked in
-		- co-creating websites live, similar to [Beaker Browser](https://docs.beakerbrowser.com/)
+	- Synced file system.. with editing and hosting of local-files baked in
+		- co-creating w ebsites live, similar to [Beaker Browser](https://docs.beakerbrowser.com/)
 
 ### August 14th - 15th
 - Organized The SF Commons: Hack Day #0 with Athena! A non-zero number of people were like "Hey! I've read your blog before" or "I love the work you do" and it was a little surreal

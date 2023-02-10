@@ -9,8 +9,8 @@ Each user device has a local replica of the data and this local replica can be u
 Challenge: how do we reconcile concurrent updates?
 
 Two main families of algorithms
-- Conflict-free Replicated Data Types ([[thoughts/CRDT|CRDTs]])
-- Operational Transformation
+- Conflict-free Replicated Data Types ([[thoughts/CRDT|CRDTs]]) -- persists the causal order of operations
+- Operational Transformation -- persists the final output of operations
 
 ## A spectrum
 [Source](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous)
