@@ -135,13 +135,13 @@ Each node has an identifier which is the result of hashing the node&rsquo;s cont
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,18 +353,6 @@ Jul 14, 2022
   
   
   
-    
-      
-    
-  
-
-  
-
-  
-  
-  
-    
-  
 
   
 
@@ -408,7 +396,48 @@ Jul 14, 2022
   
   
   
+
+  
+
     
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
   
 
   
@@ -466,7 +495,7 @@ Jul 14, 2022
 <p>Merkle DAG nodes are <em>immutable</em>. Any change in a node would alter its identifier and thus affect all the ascendants in the DAG, essentially creating a different DAG</p>
 <p>Examples of DAGs include:</p>
 <ul>
-<li><code>[[thoughts/git|git]]</code></li>
+<li><a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">git</a></li>
 <li><a href="/thoughts/IPFS" rel="noopener" class="internal-link" data-src="/thoughts/IPFS">IPFS</a></li>
 <li><a href="/posts/docker" rel="noopener" class="internal-link" data-src="/posts/docker">Docker</a> images</li>
 </ul>

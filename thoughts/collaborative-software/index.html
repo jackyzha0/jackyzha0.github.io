@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -450,8 +450,8 @@ May 5, 2022
 Challenge: how do we reconcile concurrent updates?</p>
 <p>Two main families of algorithms</p>
 <ul>
-<li>Conflict-free Replicated Data Types (<a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>)</li>
-<li>Operational Transformation</li>
+<li>Conflict-free Replicated Data Types (<a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>) &ndash; persists the causal order of operations</li>
+<li>Operational Transformation &ndash; persists the final output of operations</li>
 </ul>
 <a href="#a-spectrum"><h2 id="a-spectrum"><span class="hanchor" ariaLabel="Anchor"># </span>A spectrum</h2></a>
 <p>

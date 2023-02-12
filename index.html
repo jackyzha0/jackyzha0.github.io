@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -420,7 +420,7 @@ Aug 21, 2022
                                 <h3><a href="https://jzhao.xyz/thoughts/Antimatter/">Antimatter</a></h3>
                             </div>
                             <p class="meta">
-                                96 words on Feb 9, 2023
+                                97 words on Feb 10, 2023
                             </p>
                             <ul class="tags">
     
@@ -432,7 +432,7 @@ Aug 21, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 558 more →</a>
+                <a href="/thoughts">See 559 more →</a>
             </div>
         </div>
         <article>

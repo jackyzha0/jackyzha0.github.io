@@ -22,7 +22,8 @@ Transformative technologies (TTs) refer to technological advances with a high li
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Antimatter/</guid>
-      <description>A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+      <description>Source
+A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history.</description>
     </item>
     
@@ -193,6 +194,15 @@ POSSE is an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere
       
       <guid>https://jzhao.xyz/thoughts/systems-design/</guid>
       <description>Software Systems System design in this context means defining the architecture, product design, modules, interfaces, and data for a system according to given requirements.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on ChatGPT</title>
+      <link>https://jzhao.xyz/thoughts/beyond-chat-gpt/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/beyond-chat-gpt/</guid>
+      <description>[[thoughts/teaching|pedagogy]] → how do we assess thinking?  I suspect ChatGPT will do to writing what calculators did to math Made it much more accessible to the masses but in the process of doing so, lost the value in the actual process of doing math  We do math by hand to help internalize it in our minds, to naturalize and practice the mind to thinking in that manner &amp;ldquo;The hours spent choosing the right word and rearranging sentences to better follow one another are what teach you how meaning is conveyed by prose.</description>
     </item>
     
     <item>

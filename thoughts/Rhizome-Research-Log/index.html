@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -455,6 +455,634 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -27872,6 +28500,103 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#february"><h2 id="february"><span class="hanchor" ariaLabel="Anchor"># </span>February</h2></a>
+<a href="#february-11th"><h3 id="february-11th"><span class="hanchor" ariaLabel="Anchor"># </span>February 11th</h3></a>
+<ul>
+<li>I really like how both Matrix and Email allow for people to host separately and still interop with each other</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/De-perimeterisation" rel="noopener">De-premeterizing</a> the walled gardens of the web</li>
+<li>I feel like each of the components of this project on their own could be full-fledge companies on their own&hellip; I can easily see how I could sink my entire life into this line of work</li>
+</ul>
+<a href="#february-10th"><h3 id="february-10th"><span class="hanchor" ariaLabel="Anchor"># </span>February 10th</h3></a>
+<ul>
+<li>How do we make a <a href="/thoughts/DHT" rel="noopener" class="internal-link" data-src="/thoughts/DHT">DHT</a> that works in a sparsely connected world?</li>
+<li>Things to tie together (how do these pieces fit together?)
+<ul>
+<li>Overlay Network Layer
+<ul>
+<li>Make it easy to address each other on the open web by creating a virtual private network</li>
+</ul>
+</li>
+<li>Identity and Permissions Layer
+<ul>
+<li>Basically key management software</li>
+<li>OAuth / wallet / <code>did:key</code></li>
+<li>User friendly interface on top of persistence and data layer which embeds the persistence and data layer</li>
+<li>Manage which applications have access to your data/indices</li>
+<li>Like most other databases, includes role/access information in the underlying persistence layer</li>
+</ul>
+</li>
+<li>Persistence and Data Layer
+<ul>
+<li>Make it easy to spin up personal databases</li>
+<li>Ingestion endpoint? Converting objects to tuples
+<ul>
+<li>Namespaced subscription to remote databases</li>
+<li>
+<a href="https://arxiv.org/abs/2212.13567" rel="noopener">Efficient set reconciliation</a></li>
+<li>Logically monotonic</li>
+</ul>
+</li>
+<li>Merge semantics and CRDTs
+<ul>
+<li>Trivial merge for fact tuples is the set union operator (maybe use <a href="/thoughts/clocks#hybrid-logical-clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">clocks</a> here too)</li>
+</ul>
+</li>
+<li>Blob storage like <code>git</code> LFS</li>
+<li>User-managed garbage collection, mark fact as retracted to update dependent indices</li>
+<li>Once all index nodes have ack&rsquo;d the deletion, we can actually delete it (similar to <a href="/thoughts/Antimatter" rel="noopener" class="internal-link" data-src="/thoughts/Antimatter">Antimatter</a>)</li>
+</ul>
+</li>
+<li>Index Layer
+<ul>
+<li>Query over fact store (data layer) with materialized view maintenance</li>
+<li>Prolly Tree data structure</li>
+<li>Peers are incentivized to &lsquo;pin&rsquo; and help index data for indices they are interested in</li>
+</ul>
+</li>
+<li>Application
+<ul>
+<li>Folk programming</li>
+<li>Enables programming &lsquo;agents&rsquo; and crawlers (like geists)</li>
+<li>Reads from index layer through subscriptions</li>
+<li>Write to persistence layer easily</li>
+</ul>
+</li>
+<li>Hosting
+<ul>
+<li>Network: hosted Wireguard or 
+<a href="https://github.com/juanfont/headscale" rel="noopener">Headscale</a></li>
+<li>Data: On providers of the user&rsquo;s choice (also managed option)</li>
+<li>Identity and Permissions: self-hosted application run on a user&rsquo;s devices
+<ul>
+<li>Each of these maintains a shallow clone of the indexes it&rsquo;s interested in</li>
+</ul>
+</li>
+<li>Applications: run on user&rsquo;s devices</li>
+<li>Communal Clusters: an organizational unit, co-owning data and compute (think : a single Mastodon server)
+<ul>
+<li>Index: On providers of the user&rsquo;s choice (also managed option)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>I feel like there is a large common ground between <code>git</code>, <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a> and room for cross-pollination across both
+<ul>
+<li>Both basically focus on version control and collaboration</li>
+<li>However, both aren&rsquo;t perfect
+<ul>
+<li>The railroad metaphor for <code>git</code> is powerful but the affordances of how to manipulate it aren&rsquo;t made clear to the end-user. CRDTs don&rsquo;t explicitly expose version control to the end-user</li>
+<li>CRDTs have great conflict-free merge semantics that <code>git</code> (relatively) sucks at</li>
+</ul>
+</li>
+<li>Both are also pretty bad in terms of operation efficiency</li>
+</ul>
+</li>
+<li>Found out about 
+<a href="https://www.ditto.live/" rel="noopener">Ditto</a>, I guess local-first/offline-first applications make a lot of sense for aviation LOL</li>
+</ul>
 <a href="#february-8th"><h3 id="february-8th"><span class="hanchor" ariaLabel="Anchor"># </span>February 8th</h3></a>
 <ul>
 <li>
@@ -27909,9 +28634,7 @@ May 3, 2022
 <li>Notes on Braid research
 <ul>
 <li><a href="/thoughts/Antimatter" rel="noopener" class="internal-link" data-src="/thoughts/Antimatter">Antimatter</a></li>
-<li>
-<a href="#rhizomedb-fission-renamed-webnativedb"><h2 id="rhizomedb-fission-renamed-webnativedb"><span class="hanchor" ariaLabel="Anchor"># </span>RhizomeDB (Fission renamed WebnativeDB)</h2></a>
-</li>
+<li>RhizomeDB (Fission renamed WebnativeDB)</li>
 </ul>
 </li>
 </ul>
@@ -29217,9 +29940,9 @@ May 3, 2022
 <li>Semantic diffing, live <code>git</code></li>
 <li>Minecraft or other real-time game (testing latency)</li>
 <li>EVM (testing expressiveness)</li>
-<li>A browser&hellip; with editing and hosting of local-files baked in
+<li>Synced file system.. with editing and hosting of local-files baked in
 <ul>
-<li>co-creating websites live, similar to 
+<li>co-creating w ebsites live, similar to 
 <a href="https://docs.beakerbrowser.com/" rel="noopener">Beaker Browser</a></li>
 </ul>
 </li>

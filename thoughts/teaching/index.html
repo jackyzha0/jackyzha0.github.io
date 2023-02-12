@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -446,6 +446,10 @@ Oct 26, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/In-Over-Our-Heads/" data-ctx="teaching" data-src="/thoughts/In-Over-Our-Heads" class="internal-link">In Over Our Heads: The Mental Demands of Modern Life</a>
       </li>
@@ -454,6 +458,12 @@ Oct 26, 2021
       
       <li>
         <a href="/thoughts/Mindstorms/" data-ctx="teaching" data-src="/thoughts/Mindstorms" class="internal-link">Mindstorms</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/beyond-chat-gpt/" data-ctx="pedagogy" data-src="/thoughts/beyond-chat-gpt" class="internal-link">Thoughts on ChatGPT</a>
       </li>
       
       

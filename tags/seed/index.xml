@@ -22,7 +22,8 @@ Transformative technologies (TTs) refer to technological advances with a high li
       <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Antimatter/</guid>
-      <description>A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+      <description>Source
+A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history.</description>
     </item>
     

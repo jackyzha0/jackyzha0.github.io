@@ -8,7 +8,8 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+    content="Source
+A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history."
   />
   <title>
@@ -135,13 +136,13 @@ Components  Acknowledgements: require all peers to have acknowledged up to a cer
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -554,6 +555,8 @@ Feb 5, 2023
 
 
 
+<p>
+<a href="https://braid.org/antimatter" rel="noopener">Source</a></p>
 <p>A <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a> + OT text editing algorithm with history pruning (read: GC). Permissionless <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
 <a href="#components"><h2 id="components"><span class="hanchor" ariaLabel="Anchor"># </span>Components</h2></a>
 <ul>
@@ -588,6 +591,10 @@ Feb 5, 2023
     
     
     
+    
+      
+      
+      
     
       
       

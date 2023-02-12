@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.bda9fab334860b5eefcd1968b3d4e785.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.f159ace0623664ae2c062ec19c724703.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -511,6 +511,12 @@ Jun 15, 2022
 
 
 <p>At a high level, User Controlled Authorization Networks (UCANs) are a way of doing <a href="/thoughts/authorization" rel="noopener" class="internal-link" data-src="/thoughts/authorization">authorization</a> (&ldquo;what you can do&rdquo;) where users are fully in control. There&rsquo;s no all-powerful authorization server, or server of any kind required. Everything that a users is allowed to do is captured directly in a key or token, and can be sent to anyone that knows how to interpret this format.</p>
+<blockquote>
+<p>UCANs work more like 
+<a href="http://www.erights.org/elib/capability/duals/myths.html#caps-as-keys" rel="noopener">movie tickets</a> or a festival pass between multiple venues. No one needs to check your ID; who you are is irrelevant. For example, if you have a ticket to see Citizen Kane, you are admitted to Theater 3. If you cannot attend an event, you can hand this ticket to a friend who wants to see the film instead, and there is no coordination required with the theater ahead of time.</p>
+<p>from the <em>
+<a href="https://github.com/ucan-wg/spec/" rel="noopener">UCAN working group spec</a></em></p>
+</blockquote>
 <p><img src="/thoughts/images/UCAN hierarchy.png" width="auto" /></p>
 <blockquote>
 <p>The master keypair requires strong security and should not be duplicated to multiple locations or enter low-security environments such as the browser. This makes it difficult to access every time a new repository commit needs to be produced. Therefore we issue child keypairs from the master keypair in the form of 
