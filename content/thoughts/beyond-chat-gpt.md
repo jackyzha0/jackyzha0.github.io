@@ -26,7 +26,5 @@ tags:
 - AI for ‘good enough’ code/art/writing
 	-   [https://twitter.com/gordonbrander/status/1600469469419036675](https://twitter.com/gordonbrander/status/1600469469419036675)
 	-   [https://twitter.com/jachiam0/status/1598448668537155586](https://twitter.com/jachiam0/status/1598448668537155586)
-	- 
 -  Can we solve the problem data provenance?
 	-   [https://openai.com/blog/webgpt/](https://openai.com/blog/webgpt/)
-- 

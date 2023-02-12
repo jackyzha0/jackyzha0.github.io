@@ -66,7 +66,7 @@ Based off of the above:
 	- Solid choice if you want a central source that handles authentication and authorization
 	- Also send header information and cookies, so you can use existing authentication mechanisms with this server
 - Hypercore/Dat
-	- Uses a DHT + NAT traversal utilities
+	- Uses a [[thoughts/DHT]] + [[thoughts/NAT]] traversal utilities
 	- Low latency
 	- Medium reliability
 

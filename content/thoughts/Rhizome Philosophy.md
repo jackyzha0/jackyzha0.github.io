@@ -51,7 +51,7 @@ Last but not least, the experience should feel pleasant to both build and use.
 
 There are clearly social problems when it comes to making collaborative apps (e.g. [[thoughts/tragedy of the commons|tragedy of the commons]], [[thoughts/evaporative cooling|evaporative cooling]]), but even *enabling* this collaboration on a technical level to happen in the first place is already really difficult.
 
-The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is *actually* happening in the code. Networking quirks like NAT traversal make direct connections 
+The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is *actually* happening in the code. Networking quirks like [[thoughts/NAT|NAT]] traversal make direct connections 
 
 People tend to lean towards client-server models because nobody has made it easy to make P2P software. Almost everything today requires users to still setup their own signalling servers, STUN servers, ICE servers, and a bunch of other infrastructure that makes client-server applications seem like child play.
 

@@ -32,8 +32,10 @@ Both network and [transport layer](thoughts/Transport%20Layer.md) (violation of 
 
 ![](thoughts/images/NAT.jpeg)
 
-## Hole-punching
+## Hole-punching and NAT Traversal
 > Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).
+
+Generally done using [[thoughts/UDP]]. You _can_ do NAT traversal with TCP, but it adds another layer of complexity
 
 Mostly used in [decentralized](thoughts/decentralization.md) or [peer-to-peer](thoughts/peer-to-peer.md) communication as the latency incurred by relaying through a central server is prohibitively expensive for real-time activity like voice calling, file syncing, etc.
 
@@ -81,6 +83,14 @@ Possible explanations for a non-100% connection rate even in EIM-EIF to EIM-EIF 
 - Routers stop functioning when mapping tables are full (not out of the realm of possibilies, only 65535 entries)
 - Use of [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) (NAT at the ISP level instead of home-router)
 
+### Terminology Translation Table
+[NAT Cone Types](https://tailscale.com/blog/how-nat-traversal-works/)
+
+| |Endpoint-Independent NAT Mapping (EIM)|Endpoint-Dependent NAT Mapping (ADM/EDM)|
+|-|-|-|
+|Endpoint-Independent Firewall (EIF)|Full cone NAT|n/a|
+|Endpoint IP-Dependent Firewall (ADF)|Restricted Cone NAT|n/a|
+|Endpoint IP and Port-Dependent Firewall (APDF)|Port-restricted Cone NAT|Symmetric NAT|
 
 ### Flow
 Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.

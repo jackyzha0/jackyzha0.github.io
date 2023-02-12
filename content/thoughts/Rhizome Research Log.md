@@ -12,12 +12,13 @@ I think research logs tend to generally focus too much on what one did rather th
 ### February 11th
 - I really like how both Matrix and Email allow for people to host separately and still interop with each other
 - [De-premeterizing](https://en.wikipedia.org/wiki/De-perimeterisation) the walled gardens of the web
-- I feel like each of the components of this project on their own could be full-fledge companies on their own... I can easily see how I could sink my entire life into this line of work
+- Lots of reading about networks today...
+- I feel like each of the components of this project on their own could be full-fledged companies on their own. I can easily see how I could sink my entire life into this line of work
 
 ### February 10th
 - How do we make a [[thoughts/DHT]] that works in a sparsely connected world?
 - Things to tie together (how do these pieces fit together?)
-	- Overlay Network Layer
+	- [[thoughts/Overlay Network|Overlay Network]] Layer
 		- Make it easy to address each other on the open web by creating a virtual private network
 	- Identity and Permissions Layer
 		- Basically key management software

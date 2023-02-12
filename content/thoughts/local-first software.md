@@ -38,7 +38,7 @@ The key difference between traditional systems and local-first systems is not an
 
 Active questions:
 1. CRDTs accumulate a large change history, which creates performance problems. These pile up, but can’t easily be truncated because it’s impossible to know when someone might reconnect to your shared document after six months away and need to merge changes from that point forward.
-2. Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: NAT traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.
+2. Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: [[thoughts/NAT|NAT]] traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.
 3. Visualizing document history is important and difficult. How do we communicate this version history to users? How should users think about versioning, share and accept changes, and understand how their documents came to be a certain way when there is no central source of truth?
 
 ## TLFS
