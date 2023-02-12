@@ -3,6 +3,8 @@ title: "Teaching"
 date: 2021-10-26
 tags:
 - seed
+aliases:
+- pedagogy
 ---
 
 Kierkegaard's instructional advice in his *Journals* (from [In Over Our Heads](thoughts/In%20Over%20Our%20Heads.md))

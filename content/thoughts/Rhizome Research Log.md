@@ -9,20 +9,50 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
+### February 11th
+- I really like how both Matrix and Email allow for people to host separately and still interop with each other
+- [De-premeterizing](https://en.wikipedia.org/wiki/De-perimeterisation) the walled gardens of the web
+- I feel like each of the components of this project on their own could be full-fledge companies on their own... I can easily see how I could sink my entire life into this line of work
+
 ### February 10th
-- Things to tie together:
-	- Identity backed by `did:key`
-		- OAuth
-		- wallet
-		- `did:key` on the fly
-	- Persistence
+- How do we make a [[thoughts/DHT]] that works in a sparsely connected world?
+- Things to tie together (how do these pieces fit together?)
+	- Overlay Network Layer
+		- Make it easy to address each other on the open web by creating a virtual private network
+	- Identity and Permissions Layer
+		- Basically key management software
+		- OAuth / wallet / `did:key`
+		- User friendly interface on top of persistence and data layer which embeds the persistence and data layer
+		- Manage which applications have access to your data/indices
+		- Like most other databases, includes role/access information in the underlying persistence layer
+	- Persistence and Data Layer
 		- Make it easy to spin up personal databases
-		- Connect personal databases to applications
-		- Pub-sub: subscribe to other databases
-	- Folk programming
-	- Easy application networking
-	- Query over fact store
-	- Merge semantics and CRDTs
+		- Ingestion endpoint? Converting objects to tuples
+			- Namespaced subscription to remote databases
+			- [Efficient set reconciliation](https://arxiv.org/abs/2212.13567)
+			- Logically monotonic
+		- Merge semantics and CRDTs
+			- Trivial merge for fact tuples is the set union operator (maybe use [[thoughts/clocks#Hybrid Logical Clocks]] here too)
+		- Blob storage like `git` LFS
+		- User-managed garbage collection, mark fact as retracted to update dependent indices
+		- Once all index nodes have ack'd the deletion, we can actually delete it (similar to [[thoughts/Antimatter]])
+	- Index Layer
+		- Query over fact store (data layer) with materialized view maintenance
+		- Prolly Tree data structure
+		- Peers are incentivized to 'pin' and help index data for indices they are interested in
+	- Application
+		- Folk programming
+		- Enables programming 'agents' and crawlers (like geists)
+		- Reads from index layer through subscriptions
+		- Write to persistence layer easily
+	- Hosting
+		- Network: hosted Wireguard or [Headscale](https://github.com/juanfont/headscale)
+		- Data: On providers of the user's choice (also managed option)
+		- Identity and Permissions: self-hosted application run on a user's devices
+			- Each of these maintains a shallow clone of the indexes it's interested in
+		- Applications: run on user's devices
+		- Communal Clusters: an organizational unit, co-owning data and compute (think : a single Mastodon server)
+			- Index: On providers of the user's choice (also managed option)
 - I feel like there is a large common ground between `git`, [[thoughts/CRDT|CRDTs]] and room for cross-pollination across both
 	- Both basically focus on version control and collaboration
 	- However, both aren't perfect
