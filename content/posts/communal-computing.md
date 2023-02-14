@@ -59,7 +59,9 @@ In design, there is a technique [diverge-converge](https://www.nngroup.com/artic
 1. Diverge: come up with many independent solutions to the problem
 2. Converge: narrow down and refine a small number of solutions to the problem
 
-The early days of the internet exemplified the diverge cycle of design. We tried a lot of ways to connect people and things on the web. Over time, some things stuck and others didn't. Evolutionarily, we've guided ourselves to this unfortunate set of web design practices and it's not clear that these will continue to serve us well.
+
+
+The early days of the internet exemplified the diverge cycle of design. We tried a lot of ways to connect people and things on the web. Over time, some things stuck and others didn't.  Evolutionarily, we've guided ourselves to this unfortunate set of web design practices and it's not clear that these will continue to serve us well. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and dilapidated.
 
 How might we broaden the design space again?
 
@@ -106,7 +108,7 @@ For someone to make a web service today, they need to know
 - How to pick and choose a hosting provider to put their service on the web
 - Basics of [[thoughts/DNS|DNS]] so they can use a custom domain
 - Choosing a database, host it, and figure out how to safely talk to their database from their service
-- How to safely talk to APIs without leaking secrets
+- How to talk to APIs without leaking secrets
 - ... and many more I'm not mentioning here (especially if they choose to make something [[thoughts/peer-to-peer]])
 
 I spent a lot of time around university-aged students first learning software engineering and there is a *really* large gap between how easy it is to get a static website on the web and how difficult it is to add a database to it. This, for most people, is where they decide that software is too difficult and give up.
@@ -140,37 +142,37 @@ Starting a new system from scratch with a grand vision is not the way to do this
 
 To reform the web is not to wipe everything and start over *tabula rasa*, but rather to move through the [adjacent possible](https://subconscious.substack.com/p/evolution-adjacent-possible), figuring out how we can improve the existing condition of those trapped by these systems without uprooting them.
 
-In fact, this is how the Internet today evolved. It was bootstrapped on top of existing telephone networks, exapting existing phone hardware to get it off the ground. It didn't need to deploy expensive new hardware or lay down new cables, it just conformed to existing infrastructure. The internet is based on [[thoughts/Postel's Law]]: work the world as it already is, not as you wish it were. When something didn't connect, someone hacked on it until it worked.
+The internet is based on [[thoughts/Postel's Law]]: work the world as it already is, not as you wish it were. In fact, this is how the Internet today evolved. It was bootstrapped on top of existing telephone networks, exapting existing phone hardware to get it off the ground. It didn't need to deploy expensive new hardware or lay down new cables, it just conformed to existing infrastructure.
 
-We can do the same, with a new web. Here's what I'm thinking.
+Just as the early internet was built on top of telephone networks, we can build a new set of cozier, smaller networks on top of an internet that is showing its age.
 
-Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, what about LANs in **social and trust space**? What about [Communal Computing Networks](https://alexanderobenauer.com/labnotes/027/)?
+Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, we created networks based around closeness in **social and trust space**? What about [Communal Computing Networks](https://alexanderobenauer.com/labnotes/027/)? What if I could make an [[thoughts/Overlay Network|overlay network]] with all my friends who are interested in poetic computation?[^1] 
 
-The internet is a network of networks. This is true at the hardware and infrastructure level, but less so for the applications we depend so heavily on. What if we also made the web a network of networks? And users could be a part of multiple networks at once?
-
-What if I could make a LAN with all my friends who are interested in poetic computation? I could host a copy of my website on the LAN where they can freely leave comments, drawings, annotations, like getting handed a marked up book with all the marginalia meant for you to read.
+[^1]: In a magic world where IPv6 was adopted by everyone, every computer and device would have a unique address to send and receive things from. It would enable people to host things again, to have their own little home dinner parties instead of always going out to the restaurant. Unfortunately, IPv6 adoption has been really slow and we're stuck in a world where IPv6 isn't widespread enough to assume that most users have an IPv6 address as of yet.
 
 ![[thoughts/images/trust-overlay-network.png|500]]
 
 We could have:
 1. Countless local networks, many overlapping with each other. 
-2. A larger network of networks. This allows cross-network collaboration to happen.
+2. A larger network of networks to allow for cross-network collaboration.
 
-In fact, this *is* a design pattern we have seen work well in the past with subreddits, Facebook groups, and forums. These platforms often function as networks of networks, allowing communities within them to have control over their own smaller networks.
+This *is* a design pattern we have seen work well in the past with email and Matrix. These platforms often function as networks of networks, allowing communities within them to have control over their own smaller networks but still allowing users on different providers to interact with each other seamlessly.
 
-Usually, platforms reinvent this infrastructure from scratch every time. But what if we baked this in at a network infrastructure level? I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. **A safe small space of people we trust, where we can go and rest. A safe harbour from the multi-billion-person internet for when we want to feel cozy and safe.**
+With this infrastructure in place, we can also think about what *community owned applications* may look like. Perhaps this is infrastructure that will allow us to not necessarily decentralize but decenter servers, moving them from the source of truth to a supporting role.
+
+Perhaps this looks like people having [[posts/towards-data-neutrality|ownership of their own data]]. They could use servers to help make it available to their peers when they are offline but they are never essential to people accessing their own data.
+
+Your peers, friends, and colleagues could help replicate, host, and process indexes for data they are also interested in. A big community corkboard of all the things the group may be interested in. In this magic world, anyone could write applications that pull in data from these indexes, making it easy to experiment and just *make* things that work on the web.
 
 ---
-
-Of course, I'm not exactly sure what this looks like quite yet. I've sketched some lines and said some words, but nothing really concrete.
-
-What I do know is *why* this is important for more people to think about and work on. In times of stability, [[thoughts/inevitability of centralization|centralization is great]]. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and showing their age.
 
 As we spend more time on the web, it’s clear what may have worked for a smaller web no longer works today. In today's web, the powerful become more powerful, the rich become richer. The day-to-day users have no say over the terms of service we are served. We live in a feudal web.
 
 It used to be the case that you needed to train to become a scribe to write words for any reason. But just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and share it with the masses.
 
 Writing software shouldn’t take a degree and many years of training, it should be as simple as making a meal at home or writing a letter to a friend. Doing so will lead to a more diverse and resilient internet, with a greater variety of voices and perspectives represented so we may build an internet that works for us.
+
+I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. A safe small space of people we trust, where we can go, rest, and look out for each other. A harbour from the multi-billion-person internet for when we want to feel cozy and safe.
 
 Let's make the web feel local and multi-player again.
 
