@@ -103,13 +103,11 @@ Because realistically, when most of us want to create software, the intention is
 
 For someone to make a web service today, they need to know
 - HTML, CSS, and JavaScript
-	- If they want to use a framework like [[posts/react|React]], multiple these by 2-3x
 - How to pick and choose a hosting provider to put their service on the web
 - Basics of [[thoughts/DNS|DNS]] so they can use a custom domain
-- Choosing between SQL and NoSQL
-	- How to safely talk to their database to their service
+- Choosing a database, host it, and figure out how to safely talk to their database from their service
 - How to safely talk to APIs without leaking secrets
-- ... and many more I'm not mentioning here
+- ... and many more I'm not mentioning here (especially if they choose to make something [[thoughts/peer-to-peer]])
 
 I spent a lot of time around university-aged students first learning software engineering and there is a *really* large gap between how easy it is to get a static website on the web and how difficult it is to add a database to it. This, for most people, is where they decide that software is too difficult and give up.
 
@@ -152,7 +150,7 @@ The internet is a network of networks. This is true at the hardware and infrastr
 
 What if I could make a LAN with all my friends who are interested in poetic computation? I could host a copy of my website on the LAN where they can freely leave comments, drawings, annotations, like getting handed a marked up book with all the marginalia meant for you to read.
 
-![[thoughts/images/digital community gardens.png|500]]
+![[thoughts/images/trust-overlay-network.png|500]]
 
 We could have:
 1. Countless local networks, many overlapping with each other. 
@@ -169,8 +167,6 @@ Of course, I'm not exactly sure what this looks like quite yet. I've sketched so
 What I do know is *why* this is important for more people to think about and work on. In times of stability, [[thoughts/inevitability of centralization|centralization is great]]. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and showing their age.
 
 As we spend more time on the web, it’s clear what may have worked for a smaller web no longer works today. In today's web, the powerful become more powerful, the rich become richer. The day-to-day users have no say over the terms of service we are served. We live in a feudal web.
-
-Yet... the web remains powerful. It lets us collaborate and coordinate on scales we've never seen before. As global issues like climate change become increasingly prominent, it's critical to mend the coordination fabric that enables us to work on these problems. We need to give agency back to the everyday users so they can craft networks that work for them in supporting how they exist in the world and on the web.
 
 It used to be the case that you needed to train to become a scribe to write words for any reason. But just as pens were taken out of the hands of the scribe during the Reformation of Europe, we must take the code out of the hands of software engineers and share it with the masses.
 

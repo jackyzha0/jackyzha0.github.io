@@ -106,6 +106,27 @@ Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_
 6. Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$
 7. At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been "punched" in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$
 
+## Strategies for Robust NAT Traversal
+From [Tailscale](https://tailscale.com/blog/how-nat-traversal-works/)
+
+- A UDP-based protocol to augment
+- Direct access to a socket in your program
+- A communication side channel with your peers
+- A couple of STUN servers
+- A network of fallback relays (optional, but highly recommended)
+
+Then, you need to:
+- Enumerate all the `ip:ports` for your socket on your directly connected interfaces
+- Query STUN servers to discover WAN `ip:ports` and the “difficulty” of your NAT, if any
+- Try using the port mapping protocols to find more WAN `ip:ports`
+- Check for NAT64 and discover a WAN `ip:port` through that as well, if applicable
+- Exchange all those `ip:ports` with your peer through your side channel, along with some cryptographic keys to secure everything.
+- Begin communicating with your peer through fallback relays (optional, for quick connection establishment)
+- Probe all of your peer’s `ip:ports` for connectivity and if necessary/desired, also execute birthday attacks to get through harder NATs
+- As you discover connectivity paths that are better than the one you’re currently using, transparently upgrade away from the previous paths.
+- If the active path stops working, downgrade as needed to maintain connectivity.
+- Make sure everything is encrypted and authenticated end-to-end.
+
 ### Peer Discovery in a purely distributed manner
 1.  Peer A sends an introduction-request to peer B. Peer B is chosen from an existing pool of neighboring peers.
 2.  Peer B sends an introduction-response to peer A containing the address of peer C.

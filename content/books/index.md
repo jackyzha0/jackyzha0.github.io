@@ -12,7 +12,6 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Fiction
 * **Accelerando** by Charles Stross
 * **Homo Ludens** by Johan Huizinga
-* **Foundation** Series by Isaac Asimov
 
 ### Non-fiction
 * **Dealers of Lighting** by Michael A. Hiltzik
@@ -26,11 +25,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Playing Software** by Miguel Sicart
 
 ## Current
-- **Tomorrow, and Tomorrow, and Tomorrow** by Gabrielle Zevin
+- **Foundation** Series by Isaac Asimov
 
 ## Past
 ### 2023
+- **[[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]** by Gabrielle Zevin
 * **Project Hail Mary** by Andy Weir
+
 ### 2022
 * **[[thoughts/Seeing like a State|Seeing Like A State]]** by James C. Scott
 * **[[thoughts/Games Agency as Art]]** by C. Thi Nguyen
