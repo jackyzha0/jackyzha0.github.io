@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -583,6 +583,14 @@ Jun 7, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Holochain/" data-ctx="DHT" data-src="/thoughts/Holochain" class="internal-link">Holochain</a>
       </li>
@@ -608,6 +616,12 @@ Jun 7, 2022
       
       
       <li>
+        <a href="/thoughts/Overlay-Network/" data-ctx="DHTs" data-src="/thoughts/Overlay-Network" class="internal-link">Overlay Network</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Rhizome-Proposal/" data-ctx="DHT" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
       </li>
       
@@ -621,6 +635,12 @@ Jun 7, 2022
       
       <li>
         <a href="/thoughts/computer-networking/" data-ctx="DHT" data-src="/thoughts/computer-networking" class="internal-link">Intro to Computer Networking &amp; P2P</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/systems-design/" data-ctx="thoughts/DHT" data-src="/thoughts/systems-design" class="internal-link">Systems Design</a>
       </li>
       
       

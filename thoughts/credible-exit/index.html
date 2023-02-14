@@ -135,13 +135,13 @@ Exit, Voice, and Loyalty There are two agents."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

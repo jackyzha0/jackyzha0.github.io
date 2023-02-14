@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,7 +317,7 @@
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Feb 9, 2023
+Feb 13, 2023
 
  
           
@@ -605,6 +605,49 @@ Feb 9, 2023
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -626,7 +669,6 @@ Feb 9, 2023
 <ul>
 <li><strong>Accelerando</strong> by Charles Stross</li>
 <li><strong>Homo Ludens</strong> by Johan Huizinga</li>
-<li><strong>Foundation</strong> Series by Isaac Asimov</li>
 </ul>
 <a href="#non-fiction"><h3 id="non-fiction"><span class="hanchor" ariaLabel="Anchor"># </span>Non-fiction</h3></a>
 <ul>
@@ -642,10 +684,13 @@ Feb 9, 2023
 </ul>
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>
-<li><strong>Tomorrow, and Tomorrow, and Tomorrow</strong> by Gabrielle Zevin</li>
+<li><strong>Foundation</strong> Series by Isaac Asimov</li>
 </ul>
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <a href="#2023"><h3 id="2023"><span class="hanchor" ariaLabel="Anchor"># </span>2023</h3></a>
+<ul>
+<li><strong><a href="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow" rel="noopener" class="internal-link" data-src="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow">Tomorrow, and Tomorrow, and Tomorrow</a></strong> by Gabrielle Zevin</li>
+</ul>
 <ul>
 <li><strong>Project Hail Mary</strong> by Andy Weir</li>
 </ul>

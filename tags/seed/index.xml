@@ -7,6 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tomorrow, and Tomorrow, and Tomorrow</title>
+      <link>https://jzhao.xyz/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow/</guid>
+      <description>On [[thoughts/games]], [[thoughts/friendship]], grief, and the creative process.
+by Gabrielle Zevin
+ &amp;ldquo;You&amp;rsquo;re incredibly gifted, Sam. But it is worth noting that to be good at something is not quite the same as loving it.</description>
+    </item>
+    
+    <item>
+      <title>Overlay Network</title>
+      <link>https://jzhao.xyz/thoughts/Overlay-Network/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Overlay-Network/</guid>
+      <description>A network that is layered on top of another network
+ Normally on top of [[thoughts/HTTP]]. Fun fact! The [[thoughts/Internet]] was originally built as an overlay upon the telephone network</description>
+    </item>
+    
+    <item>
       <title>Transformative Technology Trilemma</title>
       <link>https://jzhao.xyz/thoughts/Transformative-Technology-Trilemma/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
@@ -2677,7 +2698,7 @@ DNS currently has ~300 million DNS registrations.</description>
       
       <guid>https://jzhao.xyz/thoughts/Link-Layer/</guid>
       <description>Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]
- Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection).</description>
+ Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection) on a local area network (LAN).</description>
     </item>
     
     <item>

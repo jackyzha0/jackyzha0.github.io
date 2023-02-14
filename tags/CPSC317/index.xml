@@ -100,7 +100,7 @@ DNS currently has ~300 million DNS registrations.</description>
       
       <guid>https://jzhao.xyz/thoughts/Link-Layer/</guid>
       <description>Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]
- Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection).</description>
+ Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection) on a local area network (LAN).</description>
     </item>
     
     <item>

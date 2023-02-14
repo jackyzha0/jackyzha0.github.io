@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -564,6 +564,49 @@ Apr 25, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -623,7 +666,7 @@ Apr 25, 2022
 <p>Active questions:</p>
 <ol>
 <li>CRDTs accumulate a large change history, which creates performance problems. These pile up, but can’t easily be truncated because it’s impossible to know when someone might reconnect to your shared document after six months away and need to merge changes from that point forward.</li>
-<li>Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: NAT traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.</li>
+<li>Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.</li>
 <li>Visualizing document history is important and difficult. How do we communicate this version history to users? How should users think about versioning, share and accept changes, and understand how their documents came to be a certain way when there is no central source of truth?</li>
 </ol>
 <a href="#tlfs"><h2 id="tlfs"><span class="hanchor" ariaLabel="Anchor"># </span>TLFS</h2></a>

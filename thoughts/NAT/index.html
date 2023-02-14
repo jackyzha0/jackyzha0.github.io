@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -506,6 +506,61 @@ Feb 26, 2022
   
     
   
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -569,6 +624,10 @@ Feb 26, 2022
 
   
   
+  
+    
+  
+    
   
     
   
@@ -713,10 +772,11 @@ Feb 26, 2022
 
 
 <img src="https://jzhao.xyz//thoughts/images/NAT.jpeg" width="auto" alt=""  /></p>
-<a href="#hole-punching"><h2 id="hole-punching"><span class="hanchor" ariaLabel="Anchor"># </span>Hole-punching</h2></a>
+<a href="#hole-punching-and-nat-traversal"><h2 id="hole-punching-and-nat-traversal"><span class="hanchor" ariaLabel="Anchor"># </span>Hole-punching and NAT Traversal</h2></a>
 <blockquote>
 <p>Hole punching (or sometimes punch-through) is a technique in computer networking for establishing a direct connection between two parties in which one or both are behind firewalls or behind routers that use network address translation (NAT).</p>
 </blockquote>
+<p>Generally done using <a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a>. You <em>can</em> do NAT traversal with TCP, but it adds another layer of complexity</p>
 <p>Mostly used in 
 
 
@@ -801,6 +861,35 @@ Feb 26, 2022
 <li>Use of 
 <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" rel="noopener">CGNAT</a> (NAT at the ISP level instead of home-router)</li>
 </ul>
+<a href="#terminology-translation-table"><h3 id="terminology-translation-table"><span class="hanchor" ariaLabel="Anchor"># </span>Terminology Translation Table</h3></a>
+<p>
+<a href="https://tailscale.com/blog/how-nat-traversal-works/" rel="noopener">NAT Cone Types</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Endpoint-Independent NAT Mapping (EIM)</th>
+<th>Endpoint-Dependent NAT Mapping (ADM/EDM)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endpoint-Independent Firewall (EIF)</td>
+<td>Full cone NAT</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Endpoint IP-Dependent Firewall (ADF)</td>
+<td>Restricted Cone NAT</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Endpoint IP and Port-Dependent Firewall (APDF)</td>
+<td>Port-restricted Cone NAT</td>
+<td>Symmetric NAT</td>
+</tr>
+</tbody>
+</table>
 <a href="#flow"><h3 id="flow"><span class="hanchor" ariaLabel="Anchor"># </span>Flow</h3></a>
 <p>Let $A$ and $B$ be the two hosts, each in its own private network; $N_A$ and $N_B$ are the two NAT devices with globally reachable IP addresses $EIP_A$ and $EIP_B$ respectively. $S$ is a public server with a well-known, globally reachable IP address.</p>
 <ol>
@@ -828,6 +917,29 @@ Feb 26, 2022
 <li>Best case scenario $N_A$ and $N_B$ should have made the entry in the translation. Worst case, both NAT devices have not yet made the entry and drop the first packet sent from $B$</li>
 <li>At worst, the second packet from both $A$ and $B$ make it to each other. Holes have been &ldquo;punched&rdquo; in the NAT and both hosts can directly communicate through $N_A$ and $N_B$ without needing $S$</li>
 </ol>
+<a href="#strategies-for-robust-nat-traversal"><h2 id="strategies-for-robust-nat-traversal"><span class="hanchor" ariaLabel="Anchor"># </span>Strategies for Robust NAT Traversal</h2></a>
+<p>From 
+<a href="https://tailscale.com/blog/how-nat-traversal-works/" rel="noopener">Tailscale</a></p>
+<ul>
+<li>A UDP-based protocol to augment</li>
+<li>Direct access to a socket in your program</li>
+<li>A communication side channel with your peers</li>
+<li>A couple of STUN servers</li>
+<li>A network of fallback relays (optional, but highly recommended)</li>
+</ul>
+<p>Then, you need to:</p>
+<ul>
+<li>Enumerate all the <code>ip:ports</code> for your socket on your directly connected interfaces</li>
+<li>Query STUN servers to discover WAN <code>ip:ports</code> and the “difficulty” of your NAT, if any</li>
+<li>Try using the port mapping protocols to find more WAN <code>ip:ports</code></li>
+<li>Check for NAT64 and discover a WAN <code>ip:port</code> through that as well, if applicable</li>
+<li>Exchange all those <code>ip:ports</code> with your peer through your side channel, along with some cryptographic keys to secure everything.</li>
+<li>Begin communicating with your peer through fallback relays (optional, for quick connection establishment)</li>
+<li>Probe all of your peer’s <code>ip:ports</code> for connectivity and if necessary/desired, also execute birthday attacks to get through harder NATs</li>
+<li>As you discover connectivity paths that are better than the one you’re currently using, transparently upgrade away from the previous paths.</li>
+<li>If the active path stops working, downgrade as needed to maintain connectivity.</li>
+<li>Make sure everything is encrypted and authenticated end-to-end.</li>
+</ul>
 <a href="#peer-discovery-in-a-purely-distributed-manner"><h3 id="peer-discovery-in-a-purely-distributed-manner"><span class="hanchor" ariaLabel="Anchor"># </span>Peer Discovery in a purely distributed manner</h3></a>
 <ol>
 <li>Peer A sends an introduction-request to peer B. Peer B is chosen from an existing pool of neighboring peers.</li>
@@ -888,8 +1000,26 @@ Feb 26, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/posts/communal-computing/" data-ctx="NAT" data-src="/posts/communal-computing" class="internal-link">Communal Computing Networks</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Rhizome-Philosophy/" data-ctx="NAT" data-src="/thoughts/Rhizome-Philosophy" class="internal-link">Rhizome Philosophy</a>
       </li>
       
       
@@ -908,6 +1038,18 @@ Feb 26, 2022
       
       <li>
         <a href="/thoughts/internet-computing/" data-ctx="NAT" data-src="/thoughts/internet-computing" class="internal-link">Internet Computing</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/local-first-software/" data-ctx="NAT" data-src="/thoughts/local-first-software" class="internal-link">Local-first software</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/systems-design/" data-ctx="thoughts/NAT" data-src="/thoughts/systems-design" class="internal-link">Systems Design</a>
       </li>
       
       

@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -455,6 +455,163 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -28505,14 +28662,15 @@ May 3, 2022
 <li>I really like how both Matrix and Email allow for people to host separately and still interop with each other</li>
 <li>
 <a href="https://en.wikipedia.org/wiki/De-perimeterisation" rel="noopener">De-premeterizing</a> the walled gardens of the web</li>
-<li>I feel like each of the components of this project on their own could be full-fledge companies on their own&hellip; I can easily see how I could sink my entire life into this line of work</li>
+<li>Lots of reading about networks today&hellip;</li>
+<li>I feel like each of the components of this project on their own could be full-fledged companies on their own. I can easily see how I could sink my entire life into this line of work</li>
 </ul>
 <a href="#february-10th"><h3 id="february-10th"><span class="hanchor" ariaLabel="Anchor"># </span>February 10th</h3></a>
 <ul>
 <li>How do we make a <a href="/thoughts/DHT" rel="noopener" class="internal-link" data-src="/thoughts/DHT">DHT</a> that works in a sparsely connected world?</li>
 <li>Things to tie together (how do these pieces fit together?)
 <ul>
-<li>Overlay Network Layer
+<li><a href="/thoughts/Overlay-Network" rel="noopener" class="internal-link" data-src="/thoughts/Overlay-Network">Overlay Network</a> Layer
 <ul>
 <li>Make it easy to address each other on the open web by creating a virtual private network</li>
 </ul>

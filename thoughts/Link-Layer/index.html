@@ -9,7 +9,7 @@
   <meta
     name="description"
     content="Layer 4, the layer below the Network Layer and layer above the [[Physical Layer]]
- Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection)."
+ Hardware Unit: Frame Responsibilities: Routes frames to adjacent machines (“direct” connection) on a local area network (LAN)."
   />
   <title>
     Link Layer
@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -395,6 +395,135 @@ Feb 26, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -419,7 +548,7 @@ Feb 26, 2022
 <ol>
 <li>Hardware</li>
 <li>Unit: Frame</li>
-<li>Responsibilities: Routes frames to adjacent machines (“direct” connection). Defines the format of data on the network</li>
+<li>Responsibilities: Routes frames to adjacent machines (“direct” connection) on a local area network (LAN). Defines the format of data on the network</li>
 <li>Details
 <ul>
 <li>Breaks up chunks into frames, contains some metadata</li>
@@ -427,6 +556,9 @@ Feb 26, 2022
 </ul>
 </li>
 </ol>
+<a href="#vxlan"><h2 id="vxlan"><span class="hanchor" ariaLabel="Anchor"># </span>VXLAN</h2></a>
+<p>LAN but across local networks&hellip; spooky</p>
+<p>It encapsulates the <a href="/thoughts/MAC" rel="noopener" class="internal-link" data-src="/thoughts/MAC">MAC</a> frame into a <a href="/thoughts/UDP" rel="noopener" class="internal-link" data-src="/thoughts/UDP">UDP</a> datagram for transport across an IP network. This creates an <a href="/thoughts/Overlay-Network" rel="noopener" class="internal-link" data-src="/thoughts/Overlay-Network">overlay network</a></p>
 
 
     </article>

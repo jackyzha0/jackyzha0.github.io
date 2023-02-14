@@ -135,13 +135,13 @@ Interoperable Data on the web today is mostly treated as second-class to applica
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.353dec70481379242074cb718ca79027.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2041fa87a2f2ad0290ddfe25de2c83f4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -567,6 +567,49 @@ May 6, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -623,7 +666,7 @@ May 6, 2022
 <a href="#simple-developer-experience"><h3 id="simple-developer-experience"><span class="hanchor" ariaLabel="Anchor"># </span>Simple Developer Experience</h3></a>
 <p>Last but not least, the experience should feel pleasant to both build and use.</p>
 <p>There are clearly social problems when it comes to making collaborative apps (e.g. <a href="/thoughts/tragedy-of-the-commons" rel="noopener" class="internal-link" data-src="/thoughts/tragedy-of-the-commons">tragedy of the commons</a>, <a href="/thoughts/evaporative-cooling" rel="noopener" class="internal-link" data-src="/thoughts/evaporative-cooling">evaporative cooling</a>), but even <em>enabling</em> this collaboration on a technical level to happen in the first place is already really difficult.</p>
-<p>The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is <em>actually</em> happening in the code. Networking quirks like NAT traversal make direct connections</p>
+<p>The reason why client-server is so much easier to develop is because of ACID properties. Everything is atomic, things are easy to reason about. P2P and distributed technologies generally are much more difficult to reason about with things like eventual consistency making it hard to understand what is <em>actually</em> happening in the code. Networking quirks like <a href="/thoughts/NAT" rel="noopener" class="internal-link" data-src="/thoughts/NAT">NAT</a> traversal make direct connections</p>
 <p>People tend to lean towards client-server models because nobody has made it easy to make P2P software. Almost everything today requires users to still setup their own signalling servers, STUN servers, ICE servers, and a bunch of other infrastructure that makes client-server applications seem like child play.</p>
 <p>But what if developers didn&rsquo;t have to worry about server hosting <em>or</em> complexities of eventual consistency? Can we make the tech really easy to build so even hobbyists can quickly spin up a chat app for their own friends that suits their own needs?</p>
 <p>The libraries that enable this form of P2P software should be able to plug and play into existing applications. The experience should be simple enough that your average CS student should be able to write a simple P2P chat app just as easily (if not easier) as if they wrote it as a client-server application.</p>
