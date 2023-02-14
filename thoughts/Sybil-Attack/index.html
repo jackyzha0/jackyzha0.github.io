@@ -136,13 +136,13 @@ Creating a large number of pseudonymous identities and uses them to gain a dispr
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c937af104df73ab01b811b04433e154b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c604c4c934401998c41d0bfdca8a7c2a.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.35a3af41c58a145e5b7b6a9e556ca967.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.af947b1e6b512de3d2e503a1ebba2a4c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
