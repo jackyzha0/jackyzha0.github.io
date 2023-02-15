@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c604c4c934401998c41d0bfdca8a7c2a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.da3e80384562de8f06a4c69058b9e827.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.af947b1e6b512de3d2e503a1ebba2a4c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.5b1f77967b5f613a531cd9f06b7c47f8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -566,6 +566,49 @@ Dec 27, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -587,6 +630,11 @@ Dec 27, 2021
   href="/thoughts/idea-list/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/idea-list/">here</a>.</p>
+<a href="#bft-json-crdt"><h2 id="bft-json-crdt"><span class="hanchor" ariaLabel="Anchor"># </span>bft-json-crdt</h2></a>
+<p>The first public implementation of a JSON-like Byzantine Fault Tolerant CRDT. The project implements a simplified Automerge-like CRDT as well as the ideas in Martin Kleppmann&rsquo;s 2022 paper on <em>Making CRDTs Byzantine Fault Tolerant</em>. The blog post also 
+<a href="https://news.ycombinator.com/item?id=33694568" rel="noopener">hit #3 on Hacker News</a> the day it was released and has been 
+<a href="https://crdt.tech/" rel="noopener">featured in go-to resources for CRDTs</a>.</p>
+<p>GitHub, <a href="/posts/bft-json-crdt" rel="noopener" class="internal-link" data-src="/posts/bft-json-crdt">blog post</a></p>
 <a href="#tabspace---a-scratchspace-for-your-new-tab-page"><h2 id="tabspace---a-scratchspace-for-your-new-tab-page"><span class="hanchor" ariaLabel="Anchor"># </span>Tabspace - a scratchspace for your new tab page</h2></a>
 <p>A beautiful new tab replacement that gives you your very own scratch space to help you stay organized and focused. Wanted to experiment with <a href="/thoughts/formality-considered-harmful" rel="noopener" class="internal-link" data-src="/thoughts/formality-considered-harmful">low-friction</a> note taking and integrating <a href="/thoughts/game-design" rel="noopener" class="internal-link" data-src="/thoughts/game-design">game design</a> principles of &lsquo;juiciness&rsquo; into UI/UX.</p>
 <p>
