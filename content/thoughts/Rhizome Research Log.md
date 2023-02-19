@@ -9,6 +9,12 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
+### February 15th
+- Gave a talk about [[posts/communal-computing|communal computing]] at the [DWeb YVR node](https://dwebyvr.org/) that went really well
+	- At first, I was really nervous that people would just dismiss what I had to say because I was so young with statements like "oh he's so naive" or "what does *he* know about how the internet works"
+	- But really, people seemed to really resonate with the talk
+	- If anything, it felt like it renewed their confidence that there was still young people worried about and thinking about problems like these
+
 ### February 11th
 - I really like how both Matrix and Email allow for people to host separately and still interop with each other
 - [De-premeterizing](https://en.wikipedia.org/wiki/De-perimeterisation) the walled gardens of the web
