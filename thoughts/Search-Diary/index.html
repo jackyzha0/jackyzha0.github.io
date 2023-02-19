@@ -136,13 +136,13 @@ Photo showing setting of the search: No photo, but was sitting at a desk with a 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.da3e80384562de8f06a4c69058b9e827.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2a8f5f0fb6d625d6685f97d461e0341a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -275,7 +275,7 @@ Photo showing setting of the search: No photo, but was sitting at a desk with a 
 </div>
 
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.928ff7841d5bd97b1043546587762cf5.min.js"></script>
+<script defer type="module" src="https://jzhao.xyz/js/semantic-search.1b53b032e1463be6c4eb98c8c69afd89.min.js"></script>
 
 
 
