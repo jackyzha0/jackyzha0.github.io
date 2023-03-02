@@ -7,6 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Attention</title>
+      <link>https://jzhao.xyz/thoughts/attention/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/attention/</guid>
+      <description>See also [[thoughts/attention economy]], [[thoughts/taste]]
+ Attention is the stuff of manifestation. In the same way that looking at something while you’re driving takes you there, paying attention to anything (a field, an attitude, a person), will drive you uncontrollably toward it.</description>
+    </item>
+    
+    <item>
+      <title>Iconic Space</title>
+      <link>https://jzhao.xyz/thoughts/iconic-space/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/iconic-space/</guid>
+      <description>Writer George Saunders coined the term &amp;ldquo;iconic space&amp;rdquo; to refer to a space one uniquely occupies because of their set of skills; to do work only they can do.</description>
+    </item>
+    
+    <item>
+      <title>Self-directed Growth</title>
+      <link>https://jzhao.xyz/thoughts/self-directed-growth/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/self-directed-growth/</guid>
+      <description>See also: [[posts/the-fools-who-dream]]
+How do we give the tools to people so learn for themselves? To treat growth as if it was play?</description>
+    </item>
+    
+    <item>
       <title>Tomorrow, and Tomorrow, and Tomorrow</title>
       <link>https://jzhao.xyz/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow/</link>
       <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
@@ -553,6 +582,15 @@ They can also be viewed as &amp;lsquo;maximizing the margin&amp;rsquo;:</descrip
       
       <guid>https://jzhao.xyz/thoughts/program-analysis/</guid>
       <description>Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  Software analysis falls into many categories</description>
+    </item>
+    
+    <item>
+      <title>Symmetric Key Cryptography</title>
+      <link>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</guid>
+      <description> Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  </description>
     </item>
     
     <item>

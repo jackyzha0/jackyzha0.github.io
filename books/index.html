@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,7 +317,7 @@
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Feb 13, 2023
+Mar 2, 2023
 
  
           
@@ -679,16 +679,17 @@ Feb 13, 2023
 <li><strong>The Dream Machine</strong> by M. Mitchell Waldrop</li>
 <li><strong>The Limits to Capital</strong> by David Harvey</li>
 <li><strong>Inventing the Medium</strong> by Janet J. Murray</li>
-<li><strong>Designing an Internet</strong> by David D. Clark</li>
-<li><strong>Playing Software</strong> by Miguel Sicart</li>
+<li><strong>Upstream: Selected Essays</strong> by Mary Oliver</li>
 </ul>
 <a href="#current"><h2 id="current"><span class="hanchor" ariaLabel="Anchor"># </span>Current</h2></a>
 <ul>
-<li><strong>Foundation</strong> Series by Isaac Asimov</li>
+<li><strong>Designing an Internet</strong> by David D. Clark</li>
+<li><strong>Playing Software</strong> by Miguel Sicart</li>
 </ul>
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <a href="#2023"><h3 id="2023"><span class="hanchor" ariaLabel="Anchor"># </span>2023</h3></a>
 <ul>
+<li><strong>Foundation</strong> by Isaac Asimov</li>
 <li><strong><a href="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow" rel="noopener" class="internal-link" data-src="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow">Tomorrow, and Tomorrow, and Tomorrow</a></strong> by Gabrielle Zevin</li>
 </ul>
 <ul>

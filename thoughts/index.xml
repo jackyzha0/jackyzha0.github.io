@@ -6,7 +6,46 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention</title>
+      <link>https://jzhao.xyz/thoughts/attention/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/attention/</guid>
+      <description>See also [[thoughts/attention economy]], [[thoughts/taste]]
+ Attention is the stuff of manifestation. In the same way that looking at something while you’re driving takes you there, paying attention to anything (a field, an attitude, a person), will drive you uncontrollably toward it.</description>
+    </item>
+    
+    <item>
+      <title>Iconic Space</title>
+      <link>https://jzhao.xyz/thoughts/iconic-space/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/iconic-space/</guid>
+      <description>Writer George Saunders coined the term &amp;ldquo;iconic space&amp;rdquo; to refer to a space one uniquely occupies because of their set of skills; to do work only they can do.</description>
+    </item>
+    
+    <item>
+      <title>Self-directed Growth</title>
+      <link>https://jzhao.xyz/thoughts/self-directed-growth/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/self-directed-growth/</guid>
+      <description>See also: [[posts/the-fools-who-dream]]
+How do we give the tools to people so learn for themselves? To treat growth as if it was play?</description>
+    </item>
+    
+    <item>
+      <title>Taste</title>
+      <link>https://jzhao.xyz/thoughts/taste/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/taste/</guid>
+      <description>![[thoughts/images/developing taste.png]]
+Taste is built over time through repeated applications. It requires intention, focus, and care. Taste is a commitment to a state of [[thoughts/attention|attention]].</description>
+    </item>
+    
     <item>
       <title>Tomorrow, and Tomorrow, and Tomorrow</title>
       <link>https://jzhao.xyz/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow/</link>
@@ -573,6 +612,15 @@ They can also be viewed as &amp;lsquo;maximizing the margin&amp;rsquo;:</descrip
       
       <guid>https://jzhao.xyz/thoughts/program-analysis/</guid>
       <description>Concerns what a program does: analysis aim is to check statically/dynamically something about execution behaviours Is flow-sensitive: what the analysis does with a statement is dependent on control flow of the program  Software analysis falls into many categories</description>
+    </item>
+    
+    <item>
+      <title>Symmetric Key Cryptography</title>
+      <link>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</guid>
+      <description> Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  </description>
     </item>
     
     <item>
@@ -3343,7 +3391,7 @@ Guiding Questions
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/web3-critique/</guid>
-      <description>Really good piece by Moxie on web3.
+      <description>Really good piece by Moxie on web3
  Web3 lacks infrastructure  By definition, infrastructure does not need to be rebuilt every time they are used.</description>
     </item>
     
@@ -5248,15 +5296,6 @@ Thinking about understanding knowledge as climbing a mountain.</description>
     </item>
     
     <item>
-      <title>Academia</title>
-      <link>https://jzhao.xyz/thoughts/academia/</link>
-      <pubDate>Fri, 18 Jun 2021 10:13:33 -0400</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/academia/</guid>
-      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
-    </item>
-    
-    <item>
       <title>Exploit Explore Problem</title>
       <link>https://jzhao.xyz/thoughts/exploit-explore/</link>
       <pubDate>Wed, 16 Jun 2021 23:32:09 -0700</pubDate>
@@ -5492,20 +5531,20 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
     
     <item>
       <title></title>
+      <link>https://jzhao.xyz/thoughts/academia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/academia/</guid>
+      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://jzhao.xyz/thoughts/language-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/language-development/</guid>
       <description>Approaches to study of language development  Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible &amp;ndash; this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG) Learnability approach: focuses on explaining the fact that language is acquired (i.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Symmetric-Key-Cryptography/</guid>
-      <description>Symmetric Key Cryptography  Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  </description>
     </item>
     
   </channel>

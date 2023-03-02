@@ -8,10 +8,10 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Symmetric Key Cryptography  Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  "
+    content=" Bob and Alice share same key $K_S$ Method/algorithm maybe be different (opposite) for decryption but same key is used  "
   />
   <title>
-    jzhao.xyz
+    Symmetric Key Cryptography
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -314,10 +314,10 @@
 
 
     <article>
-      
+      <h1>Symmetric Key Cryptography</h1>
       <p class="meta">
         Last updated 
-Aug 8, 2022
+Oct 25, 2022
 
  
           
@@ -326,6 +326,8 @@ Aug 8, 2022
 
       </p>
       <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
     
 </ul>
 
@@ -361,7 +363,6 @@ Aug 8, 2022
 
 
 
-<a href="#symmetric-key-cryptography"><h2 id="symmetric-key-cryptography"><span class="hanchor" ariaLabel="Anchor"># </span>Symmetric Key Cryptography</h2></a>
 <ul>
 <li>Bob and Alice share same key $K_S$</li>
 <li>Method/algorithm maybe be different (opposite) for decryption but same key is used</li>

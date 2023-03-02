@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -497,7 +497,33 @@ Jul 10, 2022
 <p>Now, let’s imagine you leave your doctor’s office and fire up Instagram to take your mind off the diagnosis he just gave you, which is that you don’t have brain cancer but you simply suffer from chronic migraines and will just have to deal. Scrolling past pictures of friends and celebrities, you see an advertisement for a migraine medication, specifically for the vestibular migraines you suffer from. While two seconds ago you were willing to send images of your brain across the world for medical advice, you now feel horribly violated knowing that everyone from Facebook to a pharma marketing team know about your condition.</p>
 <p><strong>The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</strong></p>
 <p>See also: <a href="/thoughts/GDPR" rel="noopener" class="internal-link" data-src="/thoughts/GDPR">GDPR</a></p>
-<a href="#web3"><h3 id="web3"><span class="hanchor" ariaLabel="Anchor"># </span>Web3</h3></a>
+<a href="#proxemics"><h2 id="proxemics"><span class="hanchor" ariaLabel="Anchor"># </span>Proxemics</h2></a>
+<p>Proxemics, a term coined by anthropologist Edward T. Hall, defines the relationships between a person and their identity, their surroundings, and the social norms of the community around a person or individual.</p>
+<p>
+<a href="https://www.are.na/blog/reimagining-privacy-online-through-gradients-of-intimacy" rel="noopener">Gradients of Intimacy</a></p>
+<p>There are four zones in proxemics</p>
+<ol>
+<li>the intimate, the &ldquo;bedroom&rdquo;
+<ul>
+<li>The “bedroom,” an equally intimate space where only a few people are invited in. This is like a private DM or a text message between one or two friends or family members. It is a space to share your thoughts. Secrets are welcomed, and comfortably kept.</li>
+</ul>
+</li>
+<li>the personal, the &ldquo;living room&rdquo;
+<ul>
+<li>It’s semi-private, but can also host large groups and conversations that are designed to be public, private, or in-between. This setting allows for more intimacy because it allows for a smaller group. This design functions much like a salon or a group gathered for lively debate. The living room is a metaphor for a closed Facebook group or a WhatsApp chat group.</li>
+</ul>
+</li>
+<li>the social, the &ldquo;park bench&rdquo;
+<ul>
+<li>It’s like walking down the street and engaging in conversation with a coworker or friend, or having a discussion on the tube or in a pub—is a space where anyone can have a conversation between two or a few people, but that conversation takes place in public. Those in the conversation can control who hears it by lowering their voice or walking to a less populated area.</li>
+</ul>
+</li>
+<li>and the public space, the &ldquo;town hall&rdquo;
+<ul>
+<li>This is where we shout our thoughts or share things we don’t mind thousands of people seeing. The town hall is a public square for speaking loudly and deliberately. Your thoughts can spread virally; They will be heard, amplified and sometimes misinterpreted.</li>
+</ul>
+</li>
+</ol>
 <ul>
 <li>Web2: considers identity public but data private</li>
 <li>Web3: identity is private, but data public</li>

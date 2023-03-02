@@ -135,13 +135,13 @@ The universal message bus. An immutable, digital, distributed ledger that connec
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -694,6 +694,49 @@ Oct 8, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -818,6 +861,16 @@ Oct 8, 2021
   href="/thoughts/truth/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/truth/">truth</a>, specifically how different people have different views on &lsquo;reality&rsquo; and &rsquo;truth&rsquo;. How do we reconcile that at a global scale?</p>
+<a href="#critique"><h2 id="critique"><span class="hanchor" ariaLabel="Anchor"># </span>Critique</h2></a>
+<p>Blockchains only really make sense for a very narrow subset of applications where</p>
+<ol>
+<li>Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them</li>
+<li>Strict global consensus: all peers must agree on exactly the same results</li>
+</ol>
+<p>Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not <em>strictly</em> necessary either)</p>
+<p>More in 
+<a href="https://polynya.mirror.xyz/ARsT1Anpqrj88LRGRE5n5gNpb_CeG9Azy8mvDBv8deE" rel="noopener">Polynya on Blockchain Apps</a></p>
+<p>See also: <a href="/thoughts/web3-critique" rel="noopener" class="internal-link" data-src="/thoughts/web3-critique">web3 critique</a></p>
 
 
     </article>

@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -28814,6 +28814,30 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#february"><h2 id="february"><span class="hanchor" ariaLabel="Anchor"># </span>February</h2></a>
+<a href="#february-24th"><h3 id="february-24th"><span class="hanchor" ariaLabel="Anchor"># </span>February 24th</h3></a>
+<ul>
+<li>An economically sustainable model for local-first software from the 
+<a href="https://lo-fi.gfor.rest/docs/manifesto" rel="noopener">lo-fi manifesto</a>
+<ol>
+<li>Users can use the product for free on their own device, and free users don&rsquo;t cost anything (or next to nothing) to &ldquo;host.&rdquo;</li>
+<li>Only paying subscribers utilize paid server infrastructure. Meaning, every server request and megabyte of database storage has associated revenue.</li>
+</ol>
+</li>
+<li>I <em>like</em> having technical principles like &ldquo;local-first,&rdquo; but I&rsquo;m even more excited by what these concepts can enable in terms of building more authentic, sustainable, and personable software products online.</li>
+<li>The hard problem of schema migration:
+<ul>
+<li>&ldquo;In a traditional cloud-hosted model, you&rsquo;d do some diagramming, tweak your database schema to support the new system, and then schedule some time to deploy a migration. Users wake up the next day, update the app, and find their data has already been massaged into a new shape, ready for 2.0&rdquo;</li>
+<li>&ldquo;We don&rsquo;t get that in local-first world. There&rsquo;s no magic spell you can utter overnight to change your app&rsquo;s data across everyone&rsquo;s devices. You can update your own server, but the clients who connect will still be running 1.0 when they do.&rdquo;</li>
+</ul>
+</li>
+<li>Oasis Builders 
+<a href="https://oasis.builders/founding-essay" rel="noopener">Founding Essay</a>
+<ul>
+<li>The physical frontiers of our world are largely mapped and tamed. But the digital frontier is endless, and it&rsquo;s always open to settlers seeking better ways forward. We are all free to venture forth, follow our curiosity and aliveness, direct our attention in new ways, and find the others. We are free to trust our intuition when it says &ldquo;<em>things can be so much better than this.</em>&rdquo;</li>
+<li>Local spaces of abundance: &ldquo;Oases give us the breathing room to experience the fullness and richness of our humanity. In an oasis, we have the safety, space, and resources to begin blossoming into more fully realized versions of ourselves.&rdquo;</li>
+</ul>
+</li>
+</ul>
 <a href="#february-15th"><h3 id="february-15th"><span class="hanchor" ariaLabel="Anchor"># </span>February 15th</h3></a>
 <ul>
 <li>Gave a talk about <a href="/posts/communal-computing" rel="noopener" class="internal-link" data-src="/posts/communal-computing">communal computing</a> at the 

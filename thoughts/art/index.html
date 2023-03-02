@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -459,7 +459,8 @@ Jan 20, 2022
 <a href="https://buttondown.email/dancohen/archive/humane-ingenuity-45-what-ai-tells-us-about-art/" rel="noopener">essay</a> about generative AI. “Instead, it often confronts us with nuance, contradictions, and complexity.”</p>
 <p>On the contrary, Cohen concluded, “The desire of AI tools to meet expectations, to align with genres and familiar usage as their machine-learning array informs pixels and characters, is in tension with the human ability to coax new perspectives and meaning from the unusual, unique lives we each live.”</p>
 <p>In other words, AI produces what it <em>thinks we want to see</em></p>
-<p>This is one way of thinking about what it means for a work of art to have depth. You can press in, and it won’t dissolve under a more attentive gaze. AI art <em>does</em> dissolve under deep <a href="/thoughts/attention-economy" rel="noopener" class="internal-link" data-src="/thoughts/attention-economy">attention</a>. Questions to ask:</p>
+<p>This is one way of thinking about what it means for a work of art to have depth. You can press in, and it won’t dissolve under a more attentive gaze. AI art <em>does</em> dissolve under deep <a href="/thoughts/attention" rel="noopener" class="internal-link" data-src="/thoughts/attention">attention</a></p>
+<p>Questions to ask:</p>
 <ol>
 <li>How will AI-generated images train our vision?</li>
 <li>What habit of attention does it encourage?</li>

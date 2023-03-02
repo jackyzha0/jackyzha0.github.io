@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -571,6 +571,7 @@ Feb 20, 2022
 <li>When you operate a server, you get a universe for free (see also: <a href="/thoughts/World-Building#world-seed" rel="noopener" class="internal-link" data-src="/thoughts/World-Building">world seed</a>).</li>
 </ul>
 <a href="#spatial-computing"><h3 id="spatial-computing"><span class="hanchor" ariaLabel="Anchor"># </span>Spatial Computing</h3></a>
+<p>An infinite canvas perhaps?</p>
 <p>
 <a href="https://www.figma.com/file/OYg9sU8nNTpOczssb2A4BH/Scrapchat-with-Rebane" rel="noopener">Source</a></p>
 <blockquote>
@@ -587,6 +588,8 @@ Feb 20, 2022
 <a href="https://www.kosmik.app/" rel="noopener">https://www.kosmik.app/</a></li>
 <li>
 <a href="https://sprout.place/" rel="noopener">https://sprout.place/</a></li>
+<li>
+<a href="https://www.platz.ooo/" rel="noopener">https://www.platz.ooo/</a></li>
 </ul>
 </li>
 <li>

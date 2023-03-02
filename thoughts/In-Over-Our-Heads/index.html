@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.65e6b3bd839f3f76670b069cc05eb37e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.3616787e35165058f1afe269a6d9a9df.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -633,6 +633,10 @@ Mar 7, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="In Over Our Heads: The Mental Demands of Modern Life" data-src="/books" class="internal-link">Booklist</a>
       </li>
@@ -653,6 +657,12 @@ Mar 7, 2022
       
       <li>
         <a href="/thoughts/burnout/" data-ctx="In Over Our Heads" data-src="/thoughts/burnout" class="internal-link">Burnout</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/self-directed-growth/" data-ctx="thoughts/In Over Our Heads" data-src="/thoughts/self-directed-growth" class="internal-link">Self-directed Growth</a>
       </li>
       
       

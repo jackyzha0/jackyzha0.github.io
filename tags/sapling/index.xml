@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Taste</title>
+      <link>https://jzhao.xyz/thoughts/taste/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/taste/</guid>
+      <description>![[thoughts/images/developing taste.png]]
+Taste is built over time through repeated applications. It requires intention, focus, and care. Taste is a commitment to a state of [[thoughts/attention|attention]].</description>
+    </item>
+    
+    <item>
       <title>Thoughts on ChatGPT</title>
       <link>https://jzhao.xyz/thoughts/beyond-chat-gpt/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
@@ -204,7 +214,7 @@ Guiding Questions
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/web3-critique/</guid>
-      <description>Really good piece by Moxie on web3.
+      <description>Really good piece by Moxie on web3
  Web3 lacks infrastructure  By definition, infrastructure does not need to be rebuilt every time they are used.</description>
     </item>
     
@@ -1146,15 +1156,6 @@ Intelligence can only be contextually based on information available.</descripti
       <description>Source: Research Debt in Distill Pub
 Partly works because we can utilize collaborative thinking. Related: knowledge distillation, teaching
 Thinking about understanding knowledge as climbing a mountain.</description>
-    </item>
-    
-    <item>
-      <title>Academia</title>
-      <link>https://jzhao.xyz/thoughts/academia/</link>
-      <pubDate>Fri, 18 Jun 2021 10:13:33 -0400</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/academia/</guid>
-      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
     </item>
     
     <item>
