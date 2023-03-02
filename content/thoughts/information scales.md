@@ -10,6 +10,8 @@ Creating a browsable store of knowledge that provides something useful at all di
 
 Create a spatially-anchored overview of the different 'branches' of knowledge
 
+Dictionaries cut [indentations](http://www.thefreedictionary.com/thumb+index) into the pages to help you find the neighborhood of your entry then let you flip along glancing at guide words to finish your search.
+
 ## Engelbart Zoom
 *[Engelbart on HyperScope](https://dougengelbart.org/content/view/154/86/)*
 

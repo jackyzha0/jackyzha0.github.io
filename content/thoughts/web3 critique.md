@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
-Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-impressions.html?curius=1294).
+Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-impressions.html?curius=1294)
 
 - Web3 lacks [infrastructure](thoughts/infrastructure.md)
 	- By definition, infrastructure does not need to be rebuilt every time they are used. To ask people to throw away their infrastructure is rather stupid.

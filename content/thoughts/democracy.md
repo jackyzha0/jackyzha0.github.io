@@ -23,7 +23,7 @@ By Susanna Siegel
 - To make something salient is to put it forward as both demanding attention and deserving it. In can be distinct from actual uptake (as the receiving end can experience it as demanding of attention but not classify it as deserving it)
 - Accountability/watchdog journalism: reporting on the working of government or political campaigns
 	- Product in the leaders a fear of public embarrassment or public discrediting, public controversy, or fear of losing an election
-- Problem of democratic [attention](thoughts/attention%20economy.md)
+- Problem of democratic [[thoughts/attention]]
 	- The library is full of good books, and the sad fact is that none of us will ever read them all. 
 	- Arises from a combination of three points
 		1. Professional journalism is governed by an importance principle of salience

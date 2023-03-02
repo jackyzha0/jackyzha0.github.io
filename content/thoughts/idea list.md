@@ -83,6 +83,8 @@ tags:
 		- http://www.narrowdesign.com/
 		- https://thebrowser.company/
 		- http://lynnecarty.info/
+		- https://www.boboland.xyz/
+		- https://lfe.org/
 	- misc
 		- https://shapefarm.net/
 		- https://www.epic.net/
@@ -171,8 +173,6 @@ tags:
 	- [[thoughts/CID|CID]] as the library of babel
 	- Interplanetary communication / state machine
 	- Packet switched electricity
-	- Cloud transport fiction
-		- What if we lived in a world where water was incredibly scarce? People would pay huge amounts of money to ship clouds around and 'mine' them for their crops
 	- saving sun for later
 		- make something we take for granted extremely scarce
 - Poetry
@@ -196,7 +196,4 @@ tags:
 		-   how does this differ for rules, traditions, social norms, algorithms
 		-   redistributes the interestingness into the hands of a few
 			- [[thoughts/Seeing like a State]]: similarly concentrates the autonomy and agency of decision making around city planning
-	- life is different modes of seeing
-		- what you see is what you get
-		- As Thoreau wrote, “It’s not what you look at that matters, it’s what you see.”
-		- [https://nicoles.substack.com/p/you-find-what-you-look-for](https://nicoles.substack.com/p/you-find-what-you-look-for)
+	- independent research is applied [[thoughts/taste]]

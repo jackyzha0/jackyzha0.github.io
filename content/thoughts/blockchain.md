@@ -65,3 +65,15 @@ The 'scaled blockchain'
 Ideally we get to a point where we have a 'global computing service' (very Asiimov's Last Question-esque) through which we can embed IOT devices. This would turn all the sensors and bits of computing power into a global unified knowledge resources that manages the infrastructure of our society
 
 I'm curious how this relates to [truth](thoughts/truth.md), specifically how different people have different views on 'reality' and 'truth'. How do we reconcile that at a global scale?
+
+## Critique
+Blockchains only really make sense for a very narrow subset of applications where
+
+1. Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them
+2. Strict global consensus: all peers must agree on exactly the same results
+
+Till date, there are only two applications where both criteria are necessary: money & identity (and technically not *strictly* necessary either)
+
+More in [Polynya on Blockchain Apps](https://polynya.mirror.xyz/ARsT1Anpqrj88LRGRE5n5gNpb_CeG9Azy8mvDBv8deE)
+
+See also: [[thoughts/web3 critique]]

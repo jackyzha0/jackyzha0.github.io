@@ -9,6 +9,18 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## February
+### February 24th
+- An economically sustainable model for local-first software from the [lo-fi manifesto](https://lo-fi.gfor.rest/docs/manifesto)
+	1. Users can use the product for free on their own device, and free users don't cost anything (or next to nothing) to "host."
+	2. Only paying subscribers utilize paid server infrastructure. Meaning, every server request and megabyte of database storage has associated revenue.
+- I _like_ having technical principles like "local-first," but I'm even more excited by what these concepts can enable in terms of building more authentic, sustainable, and personable software products online.
+- The hard problem of schema migration:
+	- "In a traditional cloud-hosted model, you'd do some diagramming, tweak your database schema to support the new system, and then schedule some time to deploy a migration. Users wake up the next day, update the app, and find their data has already been massaged into a new shape, ready for 2.0"
+	- "We don't get that in local-first world. There's no magic spell you can utter overnight to change your app's data across everyone's devices. You can update your own server, but the clients who connect will still be running 1.0 when they do."
+- Oasis Builders [Founding Essay](https://oasis.builders/founding-essay)
+	- The physical frontiers of our world are largely mapped and tamed. But the digital frontier is endless, and it's always open to settlers seeking better ways forward. We are all free to venture forth, follow our curiosity and aliveness, direct our attention in new ways, and find the others. We are free to trust our intuition when it says "_things can be so much better than this._"
+	- Local spaces of abundance: "Oases give us the breathing room to experience the fullness and richness of our humanity. In an oasis, we have the safety, space, and resources to begin blossoming into more fully realized versions of ourselves."
+
 ### February 15th
 - Gave a talk about [[posts/communal-computing|communal computing]] at the [DWeb YVR node](https://dwebyvr.org/) that went really well
 	- At first, I was really nervous that people would just dismiss what I had to say because I was so young with statements like "oh he's so naive" or "what does *he* know about how the internet works"

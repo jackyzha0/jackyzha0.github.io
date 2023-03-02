@@ -38,7 +38,9 @@ On the contrary, Cohen concluded, “The desire of AI tools to meet expectations
 
 In other words, AI produces what it *thinks we want to see*
 
-This is one way of thinking about what it means for a work of art to have depth. You can press in, and it won’t dissolve under a more attentive gaze. AI art *does* dissolve under deep [[thoughts/attention economy|attention]]. Questions to ask:
+This is one way of thinking about what it means for a work of art to have depth. You can press in, and it won’t dissolve under a more attentive gaze. AI art *does* dissolve under deep [[thoughts/attention]]
+
+Questions to ask:
 1. How will AI-generated images train our vision?
 2. What habit of attention does it encourage?
 3. What modes of engagement do they sustain?

@@ -8,7 +8,7 @@ tags:
 Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of goods and services. “Ours is not truly an information economy,”
 
 ## As a commodity
-Attention as a commodity, it is increasingly competitive to compete for everyone's attention
+[[thoughts/attention|Attention]] as a commodity, it is increasingly competitive to compete for everyone's attention
 * shortening of attention spans? not sure if this is an actual thing
 * 'digital detox'
 people not just as the products, but as the producers of the product (data)

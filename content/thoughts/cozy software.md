@@ -28,6 +28,8 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 - When you operate a server, you get a universe for free (see also: [[thoughts/World Building#World Seed|world seed]]).
 
 ### Spatial Computing
+An infinite canvas perhaps?
+
 [Source](https://www.figma.com/file/OYg9sU8nNTpOczssb2A4BH/Scrapchat-with-Rebane)
 
 > fuck responsive layouts, all my homies hate responsive layouts
@@ -37,6 +39,7 @@ I love the disclaimer at the top: "It’s okay to share this link, but I want t
 	- https://nette.io/
 	- https://www.kosmik.app/
 	- https://sprout.place/
+	- https://www.platz.ooo/
 - https://twitter.com/azlenelza/status/1418749070336684034
 - https://twitter.com/raunofreiberg/status/1450479522609090562
 
