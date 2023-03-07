@@ -135,13 +135,13 @@ $$\begin{bmatrix}x \ y \ 1 \end{bmatrix}_B = \begin{bmatrix}a &amp; b &amp; c \ 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -468,6 +468,9 @@ Jan 23, 2023
   
   
 
+  
+  
+
 
 
 
@@ -530,6 +533,17 @@ Jan 23, 2023
 </ul>
 </li>
 </ul>
+<a href="#transformations"><h3 id="transformations"><span class="hanchor" ariaLabel="Anchor"># </span>Transformations</h3></a>
+<ol>
+<li>Object Coordinate System: modeling transformation</li>
+<li>World Coordinate System: viewing transformation</li>
+<li>Viewing Coordinate System (Camera): projection transformation</li>
+<li>Clipping Coordinate System: /h</li>
+<li>Normalized Device Coordinate System (NDCS): viewport transformation</li>
+<li>Device Coordinate System</li>
+</ol>
+<p>In a scene hierarchy, the Camera Coordinate Frame ($F_{VCS}$) is generally the root.</p>
+<p>Transformations in scene graphs are written right to left, starting with source frame and ending with target frame.</p>
 <a href="#viewing-transformation"><h2 id="viewing-transformation"><span class="hanchor" ariaLabel="Anchor"># </span>Viewing Transformation</h2></a>
 <ul>
 <li>Defined using

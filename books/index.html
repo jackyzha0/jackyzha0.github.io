@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -317,7 +317,7 @@
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Mar 2, 2023
+Mar 7, 2023
 
  
           
@@ -691,8 +691,6 @@ Mar 2, 2023
 <ul>
 <li><strong>Foundation</strong> by Isaac Asimov</li>
 <li><strong><a href="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow" rel="noopener" class="internal-link" data-src="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow">Tomorrow, and Tomorrow, and Tomorrow</a></strong> by Gabrielle Zevin</li>
-</ul>
-<ul>
 <li><strong>Project Hail Mary</strong> by Andy Weir</li>
 </ul>
 <a href="#2022"><h3 id="2022"><span class="hanchor" ariaLabel="Anchor"># </span>2022</h3></a>

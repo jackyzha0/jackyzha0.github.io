@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.d94375c00c0552ce3b6b055829e7ead7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.87de974a4107ebe1dd4410854a7f6ec7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1606,6 +1606,8 @@ Jun 17, 2021
 <a href="https://www.thesolarmonk.com/posts/a-spacebar-for-the-web" rel="noopener">https://www.thesolarmonk.com/posts/a-spacebar-for-the-web</a></li>
 <li>
 <a href="https://linear.app/change" rel="noopener">https://linear.app/change</a></li>
+<li>good sidenotes 
+<a href="https://christophlabacher.com/notes/ethnographic-research-on-dynamicland" rel="noopener">https://christophlabacher.com/notes/ethnographic-research-on-dynamicland</a></li>
 </ul>
 </li>
 <li>3d
@@ -1849,11 +1851,6 @@ Jun 17, 2021
 <li>Ideas should remember where they came from – what blog I copied it from, which author I quoted it from, and so on.</li>
 </ul>
 </li>
-<li>Good <a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">search</a> (aggregators) turns random networks into scale-free networks (see: <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">network theory</a>)
-<ul>
-<li>Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.</li>
-</ul>
-</li>
 <li>essay on epistemic play + jestermaxxing + mill’s take on why censorship is unethical</li>
 <li>limits to <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a>
 <ul>
@@ -1880,6 +1877,11 @@ Jun 17, 2021
 </ul>
 </li>
 <li>independent research is applied <a href="/thoughts/taste" rel="noopener" class="internal-link" data-src="/thoughts/taste">taste</a></li>
+<li>Good <a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">search</a> (aggregators) turns random networks into scale-free networks (see: <a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">network theory</a>)
+<ul>
+<li>Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
