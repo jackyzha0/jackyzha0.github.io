@@ -30,6 +30,19 @@ The translation from $P_A$ to $P_B$ can be represented as $P_B = O_A + x_Ai_A + 
 	- $$\begin{bmatrix}x' \\ y' \\ z' \\ 1 \end{bmatrix} = \begin{bmatrix}\cos \theta & -\sin \theta & \\ \sin \theta & \cos \theta & \\ & & 1 & \\ & & & 1 \end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$
 - `Scale(x,y,z)`
 	- $$\begin{bmatrix}x' \\ y' \\ z' \\ 1 \end{bmatrix} = \begin{bmatrix}a & & & \\ & b & & \\ & & c & \\ & & & 1\end{bmatrix}\begin{bmatrix}x \\ y \\ z \\ 1\end{bmatrix}$$
+
+### Transformations
+1. Object Coordinate System: modeling transformation
+2. World Coordinate System: viewing transformation
+3. Viewing Coordinate System (Camera): projection transformation
+4. Clipping Coordinate System: /h
+5. Normalized Device Coordinate System (NDCS): viewport transformation
+6. Device Coordinate System
+
+In a scene hierarchy, the Camera Coordinate Frame ($F_{VCS}$) is generally the root. 
+
+Transformations in scene graphs are written right to left, starting with source frame and ending with target frame.
+
 ## Viewing Transformation
 - Defined using
 	- eye point

@@ -29,8 +29,8 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 
 ## Past
 ### 2023
-- **Foundation** by Isaac Asimov
-- **[[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]** by Gabrielle Zevin
+* **Foundation** by Isaac Asimov
+* **[[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]** by Gabrielle Zevin
 * **Project Hail Mary** by Andy Weir
 
 ### 2022
