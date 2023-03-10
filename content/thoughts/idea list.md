@@ -6,8 +6,15 @@ tags:
 ---
 
 ## Technical
+- quartz
+	- side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
+	- voice over support
+	- rewrite for v4 to make it a CLI tool that is a one-line install
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
+	- daily link share
+		- inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
+		- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
 - WASM-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
@@ -16,11 +23,14 @@ tags:
 	- keep soulbound mechanic
 	- no screen rotation
 	- multi-floor dungeons, take more inspo from roguelites
+	- crowdsources levels + bossfights - community rating system like how Geometry Dash does it
 	- should have one free key a day
 	- actual good graveyard mechanics to look at past runs/chars
 - latency based quorum sensing, similar to how bacteria release a particular molecule and behave differently if sensors of the molecule are particularly active
 	- see also: [[thoughts/Sloppy Hashing DHT]]
-- something with https://openai.com/blog/whisper/
+- [duplex](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html) and [whisper](https://openai.com/research/whisper) to interact with notes
+	- automatically identify and converse about outdated notes
+	- update notes in place
 - calvin and hobbes semantic image search
 - IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
@@ -93,6 +103,7 @@ tags:
 		- https://www.thesolarmonk.com/posts/a-spacebar-for-the-web
 		- https://linear.app/change
 		- good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
+		- http://feral.earth/
 	- 3d
 		- https://chartogne-taillet.com/en
 		- http://richardmattka.com/prototypes/red-shift

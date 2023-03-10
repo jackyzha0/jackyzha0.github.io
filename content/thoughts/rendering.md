@@ -15,6 +15,15 @@ Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!)
 - Vertex shader: run for every vertex to transform it to normalized screen space
 - Fragment Shader: run for every pixel to compute the pixel colour
 
+### Visibility Methods
+How do we avoid rendering things that don't contribute to the final image?
+1. View volume culling, vertex level: Cull iff all vertices are outside w.r.t to a single view volume plane
+2. View volume culling, object level: Cull iff distance between center of bounding sphere and any view volume plane is greater than the radius of the bounding sphere
+3. View volume clipping:
+4. Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon
+5. Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer
+6. Occlusion culling, object level
+
 ## Raytracing
 1. For each pixel in the image
 	1. Generate a ray
@@ -30,3 +39,4 @@ Which way is up?
 Can also either be (imagine both of the following where X is thumb, Y is pointer, Z is middle)
 1. Left-handed
 2. Right-handed
+
