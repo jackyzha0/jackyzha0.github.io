@@ -135,13 +135,13 @@ Has the scientific culture of being wrong now vs a few hundred years ago changed
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

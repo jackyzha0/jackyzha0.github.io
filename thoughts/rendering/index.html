@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -341,6 +341,9 @@ Jan 11, 2023
 
 
 
+  
+  
+
 
 
 
@@ -378,6 +381,16 @@ Jan 11, 2023
 <li>Vertex shader: run for every vertex to transform it to normalized screen space</li>
 <li>Fragment Shader: run for every pixel to compute the pixel colour</li>
 </ul>
+<a href="#visibility-methods"><h3 id="visibility-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Visibility Methods</h3></a>
+<p>How do we avoid rendering things that don&rsquo;t contribute to the final image?</p>
+<ol>
+<li>View volume culling, vertex level: Cull iff all vertices are outside w.r.t to a single view volume plane</li>
+<li>View volume culling, object level: Cull iff distance between center of bounding sphere and any view volume plane is greater than the radius of the bounding sphere</li>
+<li>View volume clipping:</li>
+<li>Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon</li>
+<li>Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer</li>
+<li>Occlusion culling, object level</li>
+</ol>
 <a href="#raytracing"><h2 id="raytracing"><span class="hanchor" ariaLabel="Anchor"># </span>Raytracing</h2></a>
 <ol>
 <li>For each pixel in the image

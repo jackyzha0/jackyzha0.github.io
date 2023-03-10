@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Technical  markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis.site is not taken!!   WASM-based npm with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]  https://blog."
+    content="Technical  quartz  side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland voice over support rewrite for v4 to make it a CLI tool that is a one-line install   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis."
   />
   <title>
     Idea List
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1412,9 +1412,23 @@ Jun 17, 2021
 
 <a href="#technical"><h2 id="technical"><span class="hanchor" ariaLabel="Anchor"># </span>Technical</h2></a>
 <ul>
+<li>quartz
+<ul>
+<li>side notes 
+<a href="https://christophlabacher.com/notes/ethnographic-research-on-dynamicland" rel="noopener">https://christophlabacher.com/notes/ethnographic-research-on-dynamicland</a></li>
+<li>voice over support</li>
+<li>rewrite for v4 to make it a CLI tool that is a one-line install</li>
+</ul>
+</li>
 <li>markup any site with a webcrawler + yjs + tldraw
 <ul>
 <li>markupthis.site is not taken!!</li>
+<li>daily link share
+<ul>
+<li>inventory packing simulator but its with tabs&hellip; what would affect tab size? length of article == perceived weight in bag?</li>
+<li>what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> distributed using a <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
@@ -1427,6 +1441,7 @@ Jun 17, 2021
 <li>keep soulbound mechanic</li>
 <li>no screen rotation</li>
 <li>multi-floor dungeons, take more inspo from roguelites</li>
+<li>crowdsources levels + bossfights - community rating system like how Geometry Dash does it</li>
 <li>should have one free key a day</li>
 <li>actual good graveyard mechanics to look at past runs/chars</li>
 </ul>
@@ -1436,8 +1451,14 @@ Jun 17, 2021
 <li>see also: <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
 </ul>
 </li>
-<li>something with 
-<a href="https://openai.com/blog/whisper/" rel="noopener">https://openai.com/blog/whisper/</a></li>
+<li>
+<a href="https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html" rel="noopener">duplex</a> and 
+<a href="https://openai.com/research/whisper" rel="noopener">whisper</a> to interact with notes
+<ul>
+<li>automatically identify and converse about outdated notes</li>
+<li>update notes in place</li>
+</ul>
+</li>
 <li>calvin and hobbes semantic image search</li>
 <li>IPFS as a versioned package manager for all software</li>
 <li>
@@ -1608,6 +1629,8 @@ Jun 17, 2021
 <a href="https://linear.app/change" rel="noopener">https://linear.app/change</a></li>
 <li>good sidenotes 
 <a href="https://christophlabacher.com/notes/ethnographic-research-on-dynamicland" rel="noopener">https://christophlabacher.com/notes/ethnographic-research-on-dynamicland</a></li>
+<li>
+<a href="http://feral.earth/" rel="noopener">http://feral.earth/</a></li>
 </ul>
 </li>
 <li>3d

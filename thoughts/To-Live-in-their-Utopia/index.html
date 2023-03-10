@@ -136,13 +136,13 @@ Design and Development of Systems  Creation vs Maintenance view of developing AI
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -601,6 +601,10 @@ Jun 23, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/open-source-and-politics/" data-ctx="To Live in Their Utopia" data-src="/posts/open-source-and-politics" class="internal-link">Open Source and Politics</a>
       </li>
@@ -627,6 +631,12 @@ Jun 23, 2021
       
       <li>
         <a href="/thoughts/data-distributions/" data-ctx="To live in their Utopia" data-src="/thoughts/data-distributions" class="internal-link">Data Distributions</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/map-as-territory/" data-ctx="abridged maps (To Live in their Utopia)" data-src="/thoughts/map-as-territory" class="internal-link">Map as territory</a>
       </li>
       
       

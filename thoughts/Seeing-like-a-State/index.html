@@ -135,13 +135,13 @@ An account of the logic behind the failure of some of the great utopian social e
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f6cf9373cf8b8c907c002ad377a7ade4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.82e57982e244e896345b0b7bbdff0cf8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -771,6 +771,10 @@ Dec 24, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="Seeing Like A State" data-src="/books" class="internal-link">Booklist</a>
       </li>
@@ -815,6 +819,12 @@ Dec 24, 2022
       
       <li>
         <a href="/thoughts/idea-list/" data-ctx="thoughts/Seeing like a State" data-src="/thoughts/idea-list" class="internal-link">Idea List</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/map-as-territory/" data-ctx="thoughts/Seeing like a State" data-src="/thoughts/map-as-territory" class="internal-link">Map as territory</a>
       </li>
       
       
