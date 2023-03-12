@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f3b1e07bac7c11dc2884f96d477ae117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.efaff1475953580f26459ce6a6857341.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -519,6 +519,15 @@ Nov 30, 2022
 <li><strong>The modern/postmodern era</strong>, when most information was broadcast by a small number of information “sellers”, and consumed by a large number of information “buyers”.</li>
 <li><strong>The user-generated content era</strong>, where most information is produced/consumed by users, in a tight feedback loop between attention allocation and content production/consumption.</li>
 </ul>
+<a href="#as-we-may-think"><h2 id="as-we-may-think"><span class="hanchor" ariaLabel="Anchor"># </span>As We May Think</h2></a>
+<p>The 1945 essay by Vannevar Bush</p>
+<blockquote>
+<p>&ldquo;The difficulty seems to be, not so much that we publish unduly in view of the extent and variety of present day interests, but rather that publication has been extended far beyond our present ability to make real use of the record. The summation of human experience is being expanded at a prodigious rate, and the means we use for threading through the consequent maze to the momentarily important item is the same as was used in the days of square-rigged ships.&rdquo;</p>
+</blockquote>
+<p>He stresses, as many of us believe today, that mechanization — or, algorithms in the contemporary equivalent — will never be a proper substitute for human judgment and creative thought in the filtration process:</p>
+<blockquote>
+<p>Much needs to occur, however, between the collection of data and observations, the extraction of parallel material from the existing record, and the final insertion of new material into the general body of the common record. For mature thought there is no mechanical substitute. But creative thought and essentially repetitive thought are very different things. For the latter there are, and may be, powerful mechanical aids.</p>
+</blockquote>
 
 
     </article>

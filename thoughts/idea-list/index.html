@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Technical  quartz  side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland voice over support rewrite for v4 to make it a CLI tool that is a one-line install   markup any site with a webcrawler &#43; yjs &#43; tldraw  markupthis."
+    content="Technical  quartz v4  side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland voice over support, similar to substack rewrite for v4 to make it a CLI binary that is a one-line install  quartz new: make a fresh, empty quartz with CLI prompts for setup  walks through all steps with dialog prompts for confirmation at each step should make onboarding significantly easier   quartz import: import an existing folder  Can write custom parsers for different flavours of Markdown."
   />
   <title>
     Idea List
@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f3b1e07bac7c11dc2884f96d477ae117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.efaff1475953580f26459ce6a6857341.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -384,6 +384,16 @@ Jun 17, 2021
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -424,8 +434,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -499,8 +519,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
   
+    
+  
+    
   
+    
   
     
   
@@ -574,8 +604,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -649,8 +689,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -724,8 +774,18 @@ Jun 17, 2021
 
   
 
+  
+  
   
+    
+  
+    
+  
+    
+  
+    
   
+    
   
     
   
@@ -799,8 +859,18 @@ Jun 17, 2021
 
   
 
+  
   
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -909,6 +979,16 @@ Jun 17, 2021
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -949,8 +1029,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -1024,8 +1114,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
   
+    
+  
+    
   
+    
   
     
   
@@ -1099,8 +1199,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -1174,8 +1284,18 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
   
+    
   
+    
   
     
   
@@ -1249,8 +1369,18 @@ Jun 17, 2021
 
   
 
+  
+  
   
+    
+  
+    
+  
+    
+  
+    
   
+    
   
     
   
@@ -1324,8 +1454,18 @@ Jun 17, 2021
 
   
 
+  
   
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1412,12 +1552,53 @@ Jun 17, 2021
 
 <a href="#technical"><h2 id="technical"><span class="hanchor" ariaLabel="Anchor"># </span>Technical</h2></a>
 <ul>
-<li>quartz
+<li>quartz v4
 <ul>
 <li>side notes 
 <a href="https://christophlabacher.com/notes/ethnographic-research-on-dynamicland" rel="noopener">https://christophlabacher.com/notes/ethnographic-research-on-dynamicland</a></li>
-<li>voice over support</li>
-<li>rewrite for v4 to make it a CLI tool that is a one-line install</li>
+<li>voice over support, similar to substack</li>
+<li>rewrite for v4 to make it a CLI binary that is a one-line install
+<ul>
+<li><code>quartz new</code>: make a fresh, empty quartz with CLI prompts for setup
+<ul>
+<li>walks through all steps with dialog prompts for confirmation at each step</li>
+<li>should make onboarding significantly easier</li>
+</ul>
+</li>
+<li><code>quartz import</code>: import an existing folder
+<ul>
+<li>Can write custom parsers for different flavours of Markdown. Default will only support Obsidian but would be trivial to add parsers for Roam, Logseq, Notion, etc.</li>
+</ul>
+</li>
+<li><code>quartz update</code>: update Quartz binary using upstream</li>
+<li><code>quartz preview</code>: local preview</li>
+<li><code>quartz push</code>: push changes to remote</li>
+</ul>
+</li>
+<li>ingest (rewrite of hugo-obsidian)
+<ul>
+<li>base Markdown processor using remark (this should solve a bunch of the hacky markdown textprocessing that is currently being done)</li>
+</ul>
+</li>
+<li>output: HTML + indices
+<ul>
+<li>replace Hugo with 
+<a href="https://docs.astro.build/en/guides/markdown-content/" rel="noopener">astro</a></li>
+<li>astro allows passing indices to each page so building plugins is pretty trivial</li>
+</ul>
+</li>
+<li>custom plugin system for configuration
+<ul>
+<li>latex</li>
+<li>graph</li>
+<li>contextual backlinks</li>
+<li>command bar</li>
+<li>search</li>
+<li>admonition callouts</li>
+<li>light/dark mode</li>
+<li>clipboard + title for codeblocks</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>markup any site with a webcrawler + yjs + tldraw
@@ -1457,6 +1638,8 @@ Jun 17, 2021
 <ul>
 <li>automatically identify and converse about outdated notes</li>
 <li>update notes in place</li>
+<li>
+<a href="https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features" rel="noopener">https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features</a></li>
 </ul>
 </li>
 <li>calvin and hobbes semantic image search</li>

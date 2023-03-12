@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f3b1e07bac7c11dc2884f96d477ae117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.efaff1475953580f26459ce6a6857341.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -455,6 +455,163 @@ May 3, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -28813,6 +28970,36 @@ May 3, 2022
 
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
+<a href="#march"><h2 id="march"><span class="hanchor" ariaLabel="Anchor"># </span>March</h2></a>
+<a href="#march-9th"><h3 id="march-9th"><span class="hanchor" ariaLabel="Anchor"># </span>March 9th</h3></a>
+<ul>
+<li>Thick vs Thin clients
+<ul>
+<li>thin clients are terminals for a centralized computer (cloud-first, internet-first)</li>
+<li>thick clients are computers in their own right, that sync (<a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a>)</li>
+</ul>
+</li>
+<li>
+<a href="https://prabros.com/readings-on-time" rel="noopener">Readings on time</a>
+<ul>
+<li>John McCarthy, inventor of LISP on logical time
+<ul>
+<li>&ldquo;John started thinking about modal logics, but then realized that simply keeping histories of changes and indexing them with a “pseudo-time” when a “fact” was asserted to hold, could allow functional and logical reasoning and processing. He termed “situations” all the “facts” that held at a particular time — a kind of a “layer” that cuts through the world lines of the histories.&rdquo;</li>
+</ul>
+</li>
+<li>NAMOS by David Patrick Reed: versions have two component names consisting of the name of an object and a pseudo-time, the name of the system state to which the version belongs
+<ul>
+<li>Synchronization is then treated as a mechanism for naming version to be read and for defining where in the sequence of versions the version resulting from some update should be placed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How is schema evolution addressed in tuple stores?
+<ul>
+<li>TODO</li>
+</ul>
+</li>
+</ul>
 <a href="#february"><h2 id="february"><span class="hanchor" ariaLabel="Anchor"># </span>February</h2></a>
 <a href="#february-24th"><h3 id="february-24th"><span class="hanchor" ariaLabel="Anchor"># </span>February 24th</h3></a>
 <ul>

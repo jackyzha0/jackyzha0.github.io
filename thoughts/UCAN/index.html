@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9516cd56c621f26bcc3d51b746176f5e.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f3b1e07bac7c11dc2884f96d477ae117.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7017b0d18eafddc3bda8faff705a641c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.efaff1475953580f26459ce6a6857341.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -499,6 +499,49 @@ Jun 15, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -523,6 +566,7 @@ Jun 15, 2022
 <a href="https://fission.codes/blog/auth-without-backend/" rel="noopener">UCANs</a>, a JWT-style token that contains a permission description. UCANs can prove the authority of some key to undertake a given action, <em>or</em> produce new UCANs with a subset of their authority. Through this mechanism, a user is actually associated with <em>many</em> (likely hundreds) of keys, each belonging to a given context (a device or an application). These keys are granted only the authority they require from the root signing key.</p>
 <p>from <a href="/thoughts/Bluesky" rel="noopener" class="internal-link" data-src="/thoughts/Bluesky">Bluesky&rsquo;s ADX</a></p>
 </blockquote>
+<p>Since anything with a private-public keypair can generate a <a href="/thoughts/DID" rel="noopener" class="internal-link" data-src="/thoughts/DID">DID</a>, UCANs can be an auth layer that <strong>naturally plugs into existing identity primitives and services</strong></p>
 <p>See 
 <a href="https://fission.codes/blog/auth-without-backend/" rel="noopener">source 1</a> and 
 <a href="https://fission.codes/blog/verifying-ucans/" rel="noopener">source 2</a></p>
