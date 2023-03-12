@@ -6,10 +6,32 @@ tags:
 ---
 
 ## Technical
-- quartz
+- quartz v4
 	- side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
-	- voice over support
-	- rewrite for v4 to make it a CLI tool that is a one-line install
+	- voice over support, similar to substack
+	- rewrite for v4 to make it a CLI binary that is a one-line install
+		- `quartz new`: make a fresh, empty quartz with CLI prompts for setup
+			- walks through all steps with dialog prompts for confirmation at each step
+			- should make onboarding significantly easier
+		- `quartz import`: import an existing folder
+			- Can write custom parsers for different flavours of Markdown. Default will only support Obsidian but would be trivial to add parsers for Roam, Logseq, Notion, etc.
+		- `quartz update`: update Quartz binary using upstream
+		- `quartz preview`: local preview
+		- `quartz push`: push changes to remote
+	- ingest (rewrite of hugo-obsidian)
+		- base Markdown processor using remark (this should solve a bunch of the hacky markdown textprocessing that is currently being done)
+	- output: HTML + indices
+		- replace Hugo with [astro](https://docs.astro.build/en/guides/markdown-content/)
+		- astro allows passing indices to each page so building plugins is pretty trivial
+	- custom plugin system for configuration
+		- latex
+		- graph
+		- contextual backlinks
+		- command bar
+		- search
+		- admonition callouts
+		- light/dark mode
+		- clipboard + title for codeblocks
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
 	- daily link share
@@ -31,6 +53,7 @@ tags:
 - [duplex](https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html) and [whisper](https://openai.com/research/whisper) to interact with notes
 	- automatically identify and converse about outdated notes
 	- update notes in place
+	- https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
 - calvin and hobbes semantic image search
 - IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought

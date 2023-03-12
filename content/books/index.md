@@ -21,11 +21,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Dream Machine** by M. Mitchell Waldrop
 * **The Limits to Capital** by David Harvey
 * **Inventing the Medium** by Janet J. Murray
-* **Upstream: Selected Essays** by Mary Oliver
+* **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
 
 ## Current
 * **Designing an Internet** by David D. Clark
 * **Playing Software** by Miguel Sicart
+* **Upstream: Selected Essays** by Mary Oliver
 
 ## Past
 ### 2023

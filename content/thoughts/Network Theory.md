@@ -39,6 +39,8 @@ An almost universal property of most real-world networks. For example:
 
 However, the scale free property is absent in systems that limit the number of links a node can have, effectively restricting the maximum size of the hubs.
 
+See also: *[On the Power of (even a little) Centralization in Distributed Processing](https://storage.googleapis.com/zt-web-large-files/2011__A_Little_Centralization__Tsitsiklis_Xu.pdf)*
+
 ## Distances in Networks
 The dependence of the average distance $\langle d \rangle$ on the system size $N$ and the degree exponent $\gamma$ are captured by the formula
 

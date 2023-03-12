@@ -8,6 +8,19 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## March
+### March 9th
+- Thick vs Thin clients
+	- thin clients are terminals for a centralized computer (cloud-first, internet-first)
+	- thick clients are computers in their own right, that sync ([[thoughts/local-first software]])
+- [Readings on time](https://prabros.com/readings-on-time)
+	- John McCarthy, inventor of LISP on logical time
+		- "John started thinking about modal logics, but then realized that simply keeping histories of changes and indexing them with a “pseudo-time” when a “fact” was asserted to hold, could allow functional and logical reasoning and processing. He termed “situations” all the “facts” that held at a particular time — a kind of a “layer” that cuts through the world lines of the histories."
+	- NAMOS by David Patrick Reed: versions have two component names consisting of the name of an object and a pseudo-time, the name of the system state to which the version belongs
+		- Synchronization is then treated as a mechanism for naming version to be read and for defining where in the sequence of versions the version resulting from some update should be placed
+- How is schema evolution addressed in tuple stores?
+	- TODO
+
 ## February
 ### February 24th
 - An economically sustainable model for local-first software from the [lo-fi manifesto](https://lo-fi.gfor.rest/docs/manifesto)
