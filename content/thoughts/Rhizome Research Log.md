@@ -9,6 +9,27 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## March
+### March 13th
+- Tools for development feel important to focus on for a good DX, [LiveBlocks](https://liveblocks.io/devtools) does a great job at this
+
+### March 12th
+- [Virtual Time](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.6637&rep=rep1&type=pdf) (Jefferson, 1985)
+	- Similar to [[thoughts/Antimatter]] and netcode rollback
+		- Programmers can write correct software without paying any attention to late-arriving messages,and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.
+		- For every message there exists an antimessage that is exactly like it in format and content except in one field, its sign. Whenever a message and its antimessage occur in the same queue, they immediately annihilate one another.
+	- Uses a global virtual time (GVT) watermark
+		- Similar to GST in [[thoughts/system model#Timing behaviour (e.g. latency)|timing behaviours in system models]]
+		- Min of
+			1. all virtual times in all virtual clocks at time $r$
+			2.  the virtual send times of all messages that have been sent but not yet processed at time $r$
+		- Avoids indefinite queue/buffer growth by trimming all messages with virtual times less than GVT
+		- However, this algorithm is bounded by the slowest connection, which makes it infeasible for an asynchronous latency model (e.g. local first)
+- [Incremental Maintenance of Externally Materialized Views](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=07ee87dc4e964f696a57010d9ea829c558871b94)
+	- Wide-area access to database servers by autonomous clients (which may or may not have local databases) is becoming more and more popular
+	- Define monitoring service: not only request the initial answer to a certain query but also notifications about changes in this answer over an extended period of time
+	- Expressed in [[thoughts/Datalog]] , 3-step consensus procedure that computes view differentials
+		1. 
+
 ### March 9th
 - Thick vs Thin clients
 	- thin clients are terminals for a centralized computer (cloud-first, internet-first)
