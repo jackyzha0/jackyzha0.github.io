@@ -130,7 +130,7 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
     document.documentElement.setAttribute('show-animation', show)
     localStorage.setItem('lastVisitTime', `${now}`)
 
-    const SEARCH_ENABLED =  true 
+    const SEARCH_ENABLED =  false 
     const LATEX_ENABLED =  true 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
@@ -141,7 +141,7 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c276591f1b9f9a0de808cab117356413.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.74af86e8676e0524be005b72e52f624c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -273,8 +273,10 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script defer type="module" src="https://jzhao.xyz/js/semantic-search.1b53b032e1463be6c4eb98c8c69afd89.min.js"></script>
+<script defer src="https://jzhao.xyz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
 
 
 
