@@ -135,13 +135,13 @@ The way to &lsquo;scale intimacy,&rsquo; if possible, is to scale horizontally r
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.f3b1e07bac7c11dc2884f96d477ae117.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.841bb342195949d2193e141737b12926.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.efaff1475953580f26459ce6a6857341.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c276591f1b9f9a0de808cab117356413.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
