@@ -23,6 +23,7 @@ tags:
 	- output: HTML + indices
 		- replace Hugo with [astro](https://docs.astro.build/en/guides/markdown-content/)
 		- astro allows passing indices to each page so building plugins is pretty trivial
+		- rss feed
 	- custom plugin system for configuration
 		- latex
 		- graph
