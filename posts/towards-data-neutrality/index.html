@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.841bb342195949d2193e141737b12926.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.74af86e8676e0524be005b72e52f624c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1010,6 +1010,49 @@ Jul 14, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1108,7 +1151,7 @@ Jul 14, 2022
 <p>I found it really odd that this type of technology has existed for a while but there were no widespread examples of usage. I spent about a month and a bit looking at retrospectives of peer-to-peer protocols and applications to get a good foundation for what’s been done and what hasn’t been done.</p>
 <p>This literature review era led me to revise the proposal to go a lot more in-depth about the why of the research, placing heavier emphasis on adoption and why the average internet user should care. The internal metric I had was whether my Mom, who doesn’t work in technology and mostly uses the internet to look at articles, would be able to understand why what I was working on was important.</p>
 <p><strong>What’s something that surprised you in your work so far this summer?</strong></p>
-<p>People say independent research is a lonely journey. I disagree. I don’t think being independent means you need to do it alone. Rather, it means without being attached to any particular institution or label.</p>
+<p>People say <a href="/thoughts/independent-research" rel="noopener" class="internal-link" data-src="/thoughts/independent-research">independent research</a> is a lonely journey. I disagree. I don’t think being independent means you need to do it alone. Rather, it means without being attached to any particular institution or label.</p>
 <p>I’ve been very surprised at just the number of people who have been thought partners, collaborators, and supporters throughout the whole process.</p>
 <p><strong>Rhizome is very much in early stages right now from a research perspective. Let’s say the research phase fully succeeds — what do you think would come next? What would it take for this to shape how individuals interact with the internet?</strong> </p>
 <p>I honestly don’t think the technical part or the research will be the hard part of this project! Getting people to build on top of it and to imagine possible futures using this technology is the hard part.</p>

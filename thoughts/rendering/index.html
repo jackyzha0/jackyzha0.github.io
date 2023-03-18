@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.841bb342195949d2193e141737b12926.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.74af86e8676e0524be005b72e52f624c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -391,7 +391,7 @@ Jan 11, 2023
 <li>View volume clipping:</li>
 <li>Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon</li>
 <li>Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer</li>
-<li>Occlusion culling, object level</li>
+<li>Occlusion culling, object level: build a bounding box and do a &ldquo;virtual render&rdquo; of the box. If no pixels passed the z-buffer then cull the whole object</li>
 </ol>
 <a href="#raytracing"><h2 id="raytracing"><span class="hanchor" ariaLabel="Anchor"># </span>Raytracing</h2></a>
 <ol>

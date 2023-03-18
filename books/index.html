@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.841bb342195949d2193e141737b12926.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.74af86e8676e0524be005b72e52f624c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -319,7 +319,7 @@
       <h1>Booklist</h1>
       <p class="meta">
         Last updated 
-Mar 12, 2023
+Mar 18, 2023
 
  
           
@@ -687,11 +687,11 @@ Mar 12, 2023
 <ul>
 <li><strong>Designing an Internet</strong> by David D. Clark</li>
 <li><strong>Playing Software</strong> by Miguel Sicart</li>
-<li><strong>Upstream: Selected Essays</strong> by Mary Oliver</li>
 </ul>
 <a href="#past"><h2 id="past"><span class="hanchor" ariaLabel="Anchor"># </span>Past</h2></a>
 <a href="#2023"><h3 id="2023"><span class="hanchor" ariaLabel="Anchor"># </span>2023</h3></a>
 <ul>
+<li><strong>Upstream: Selected Essays</strong> by Mary Oliver</li>
 <li><strong>Foundation</strong> by Isaac Asimov</li>
 <li><strong><a href="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow" rel="noopener" class="internal-link" data-src="/thoughts/Tomorrow-and-Tomorrow-and-Tomorrow">Tomorrow, and Tomorrow, and Tomorrow</a></strong> by Gabrielle Zevin</li>
 <li><strong>Project Hail Mary</strong> by Andy Weir</li>

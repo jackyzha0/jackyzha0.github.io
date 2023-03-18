@@ -137,13 +137,13 @@ Foolish as they may seem"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.841bb342195949d2193e141737b12926.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.74af86e8676e0524be005b72e52f624c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1071,6 +1071,10 @@ Aug 21, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/2022/" data-ctx="foolish and new" data-src="/posts/2022" class="internal-link">2022: A year lived earnestly</a>
       </li>
@@ -1084,13 +1088,13 @@ Aug 21, 2022
       
       
       <li>
-        <a href="/thoughts/self-directed-growth/" data-ctx="posts/the-fools-who-dream" data-src="/thoughts/self-directed-growth" class="internal-link">Self-directed Growth</a>
+        <a href="/thoughts/independent-research/" data-ctx="foolishness" data-src="/thoughts/independent-research" class="internal-link">Independent Research</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/taste/" data-ctx="independent research" data-src="/thoughts/taste" class="internal-link">Taste</a>
+        <a href="/thoughts/self-directed-growth/" data-ctx="posts/the-fools-who-dream" data-src="/thoughts/self-directed-growth" class="internal-link">Self-directed Growth</a>
       </li>
       
       
