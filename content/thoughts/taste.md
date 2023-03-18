@@ -14,8 +14,11 @@ Curiosity and an inherent observatory nature toward the world serve as constant 
 > “The way I revise is: I read my own text and imagine a little meter in my head, with “P” on one side (“Positive”) and “N” on the other (“Negative”)... This involves making thousands of what I’ve come to think of as “micro-decisions.” These are instantaneous, intuitive – I just prefer this to that… I just have a feeling and react to that feeling, in the form of a cut phrase, or an added word, or an urge to move this whole section, and so on. And then I do that over and over, for months, sometimes years, until that needle stays up in the “P” zone for the whole length of the text…With each choice, even the smallest ones, the story becomes more and more…well, it becomes more her, you could say. There’s more of her essential nature in it, more of what will distinguish her from all of those other writers out there. And gradually, the story starts to become something she couldn’t have foreseen when she started out – bigger, more complex, smarter, funnier, whatever.”
 
 ## Creation and Research
-It is this taste that is so important in [[posts/the-fools-who-dream|independent research]]. Without taste, one cannot carve out their own [[thoughts/iconic space]].
+It is this taste that is so important in [[thoughts/independent research]]. Without taste, one cannot carve out their own [[thoughts/iconic space]].
 
 > Creation is the act of bringing something nonexistent into reality. You have to have strong opinions about how the world should work. You have to think that things should be a certain way, that you prefer this color over that, this form of walking over another, this sense of beauty over theirs, this way of approaching the world over some other. Taste gives you the capability and the urgency to imagine.
 > 
 > (Spencer, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*)
+
+## On people and communities
+https://anson.substack.com/p/recognizing-sparkly-people-without

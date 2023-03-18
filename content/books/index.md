@@ -26,10 +26,10 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ## Current
 * **Designing an Internet** by David D. Clark
 * **Playing Software** by Miguel Sicart
-* **Upstream: Selected Essays** by Mary Oliver
 
 ## Past
 ### 2023
+* **Upstream: Selected Essays** by Mary Oliver
 * **Foundation** by Isaac Asimov
 * **[[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]** by Gabrielle Zevin
 * **Project Hail Mary** by Andy Weir

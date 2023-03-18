@@ -22,7 +22,7 @@ How do we avoid rendering things that don't contribute to the final image?
 3. View volume clipping:
 4. Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon
 5. Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer
-6. Occlusion culling, object level
+6. Occlusion culling, object level: build a bounding box and do a "virtual render" of the box. If no pixels passed the z-buffer then cull the whole object
 
 ## Raytracing
 1. For each pixel in the image

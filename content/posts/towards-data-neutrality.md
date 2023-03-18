@@ -119,7 +119,7 @@ This literature review era led me to revise the proposal to go a lot more in-dep
 
 **What’s something that surprised you in your work so far this summer?**
 
-People say independent research is a lonely journey. I disagree. I don’t think being independent means you need to do it alone. Rather, it means without being attached to any particular institution or label.
+People say [[thoughts/independent research|independent research]] is a lonely journey. I disagree. I don’t think being independent means you need to do it alone. Rather, it means without being attached to any particular institution or label.
 
 I’ve been very surprised at just the number of people who have been thought partners, collaborators, and supporters throughout the whole process.
 

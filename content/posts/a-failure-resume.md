@@ -16,10 +16,12 @@ This document has served as a powerful reminder to myself of how much I've strug
 
 Keeping a failure resume has let me be so much more ambitious in trying new things and applying for things I would otherwise think I'm unqualified to apply for.
 
-## 2022
+## 2023
+- Wasn't selected to speak at the Causal Islands conference this year :(( Was really looking forward to this one as a lot of people whose work I really admire were also going to be there and this would be my first time 'formally' speaking at a conference. 
 
+## 2022
 - Rejected from Agency Fund's Social Impact Fellowship
-- Finding it extremely difficult to apply for grants for my independent research. Got rejected from Emergent Ventures which I thought I was most likely to get funding from which is extremely dejecting. More thoughts in my [[thoughts/Rhizome Research Log|research log]].
+- Finding it extremely difficult to apply for grants for my [[thoughts/independent research|independent research]]. Got rejected from Emergent Ventures which I thought I was most likely to get funding from which is extremely dejecting. More thoughts in my [[thoughts/Rhizome Research Log|research log]].
 - Rejected from [Thinking Microgrants](https://twitter.com/sariazout/status/1571871089713680386)
 	- *Candidly, given the volume of applications I was not able to spend more than 30 seconds on each. I am certain there were many wonderful candidates that were overlooked.*
 	- There are just so many other similar people looking for grants !! Feels more luck of the draw than anything with this volume of applicants
@@ -31,7 +33,6 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
 		- For now, what is keeping it at bay is reassuring myself that the work I am doing is significantly better than it was in the past. I am improving and the work I am doing is fulfilling.
 
 ## 2021
-
 * Stopped sending out newsletter issues :(( Ended up focusing more on longer form [[thoughts/writing|writing]] instead
 * Ghosted by both Contrary Build and Contrary Fellowship
 * Couldn't work up the courage to apply to the [Maintainers Summer Fellowship](https://themaintainers.org/summer-fellow)
@@ -44,7 +45,6 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
   * This scholarship is awarded to someone who demonstrates outstanding academic performance and is involved with community activities. I thought that, despite my slightly-above-average grades, I had a decent shot at this award given my involvement with the CS community at UBC but things didn't turn out the way I wanted. This award would've helped alleviate the financial stress that comes with having to pay tuition out-of-pocket, so I'll need to work a bit more for that money.
 
 ## 2020
-
 * Rejected from an undergraduate TA position for a CS course
   * I really wanted to give TA-ing a shot, especially after hearing almost all friends' positive experiences with it, so I decided to apply to TA a class I had done well in. It was a good reality check to realize that there's more to being a TA than just good grades and the title. Next time I apply, I'll find a course that I'm really passionate about and get to know the prof better.
 * Didn't finish 3 of the projects I wanted to finish over the summer
@@ -56,7 +56,6 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
   * This position rejection hurt more than most &mdash; even if it was swift and abrupt. DeepMind is a company that has played a huge part in shaping my interest of the intersection of machine learning, ethics, and philosophy, so you can imagine that the rejection email was not a pleasant sight to see in my inbox.
 
 ## 2019
-
 * Rejected by 46 of the 47 companies I applied to
 * Practiced data structures/algorithms for a few months only to completely blank on final round phone interviews
   * Though I agree that the technical interview process is broken, I think there are still some lessons that can be learned. I suck at thinking under pressure so I'm going to learn to improve this by trying to keep my practice environment as similar to the real thing as possible. In this case, doing mock interviews with friends rather than just blindly grinding away at LeetCode.
@@ -68,7 +67,6 @@ Keeping a failure resume has let me be so much more ambitious in trying new thin
   * Ouch, this one really hurt the wallet. Learn to estimate costs in advance, and don't overengineer if you don't need to! Keep it to the simplest and most minimal viable product possible until you're ready to scale it. If it doesn't need huge infrastructure, don't design it that way!
 
 ## 2018
-
 * Rejected by 16 of the 17 universities I applied to
   * This was a good reality check &mdash; the real world is difficult. Sometimes, what you offer may not be what the universities are looking for and thats ok! I think what matters more is what you do, not where you do it.
 * Rejected from a bunch of scholarships

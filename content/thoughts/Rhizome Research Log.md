@@ -1268,19 +1268,7 @@ I think research logs tend to generally focus too much on what one did rather th
 - Went to NYC to work at the Thrive Capital office with some Interact folks and wow... the difference being outside and in a good working environment makes is ridiculous.
 - Migrated all the tracing stuff out of `server.rs` and `log.rs` into its own file. Makes the code a lot cleaner to work with.
 - Deleted `transport.rs` (and moved the contents into `tests/common.rs`) now that it is no longer a part of the server. Realizing now I'll probably need to do another refactor of the transport layer to support simulating network partitions, dropping packets, etc. so I have more surface area to test with.
-- Talked with Sebastien who has been doing independent research for almost a decade now. Mentioned that I was really feeling like I was in the depths of the Valley of Despair and he just laughed and said "that was me 10 years ago and I still feel that way." Horrifying but also weirdly comforting? He gave me some advice and thoughts (mostly with regards to independent research but honestly a lot of sage life advice too):
-	- In independent research, one often pendulums between two brains that drive your day-to-day
-		1. Brain 1: I want to make change in the world, I want to ship and build
-		2. Brain 2: I want to *understand* why this works the way it does
-		- It is almost always Brain 2 thinking that leads to incredibly high payoffs in clarity and increased conviction.
-	- Still, breaking things into legible pieces is important. If not for other people, for yourself to have small wins.
-		- Don't build for the sake of building, build as a by-product of understanding
-		- Don't get trapped in the mindset of having every little thing you do fit perfectly in your grand master plan.
-		- It is sufficient to do things to learn and to understand (even if just about yourself)
-	- Don't have conviction that you are right because that will lead to disappointment. Have conviction that you will learn regardless.
-		- He flew out every weekend from SF to San Diego just to attend a lecture from a professor he really liked and he said it was worth every flight.
-	- Often times, it is one core principle that if followed to its natural conclusion/end will result in a fundamental perspective shift (e.g. quantum mechanics).
-		- What is that core principle that sits at the heart of everything you find interesting? The connection between the dots is only evident in hindsight so don't spend too long thinking about it. But just follow your gut, it right more often than not.
+- Talked with Sebastien who has been doing independent research for almost a decade now. Mentioned that I was really feeling like I was in the depths of the Valley of Despair and he just laughed and said "that was me 10 years ago and I still feel that way." Horrifying but also weirdly comforting? He gave me some advice and thoughts (mostly with regards to independent research but honestly a lot of sage life advice too) which I wrote down in this page on [[thoughts/independent research]]
 - To be honest, I don't really understand all of this advice yet and I don't pretend to but at the moment, it gives me comfort that even if there isn't light at the end of the tunnel, the darkness will still be enjoyable
 
 ### May 16th
