@@ -15,6 +15,13 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Elm programs may have state, even though all functions are pure. The runtime stores this state, not your program.
 	- The Elm runtime combines the previous state and new inputs to make the current state.
 	- To avoid replaying the universe from the start, Elm uses snapshotting
+- [Live, Rich, and Composable: Qualities for Programming Beyond Static Text](https://arxiv.org/pdf/2303.06777.pdf)
+	- We hypothesize that by combining liveness, richness, and composability, programming systems can meaningfully extend the capabilities of static text without losing its characteristic expressivity.
+	- Liveness: providing programmers with in-depth feedback about a program’s dynamic behaviour as the program is edited.
+		- Normally accomplished through some sort of live/hot reload that preserves the state of the system, however this only reflects the final output of the program without revealing any information on the *internal model* of the program that led to that output
+	- Richness: allowing programmers to work with domain-specific visualizations and interactions
+	- Composability: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
+		- Unlike liveness and richness, this is not a quality static text lacks, which interactive programming systems strive to add to it. Rather, it is a familiar quality of static text which new programming systems must work hard to maintain.
 
 ### March 13th
 - Tools for development feel important to focus on for a good DX, [LiveBlocks](https://liveblocks.io/devtools) does a great job at this

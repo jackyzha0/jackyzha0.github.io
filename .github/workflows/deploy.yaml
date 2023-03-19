@@ -38,8 +38,8 @@ jobs:
           publish_branch: master  # deploying branch
           cname: jzhao.xyz
 
-      - name: Deploy on fission.codes
-        uses: fission-suite/publish-action@v1
-        with:
-          machine_key: ${{ secrets.FISSION_MACHINE_KEY }}
-          build_dir: ./public
+      # - name: Deploy on fission.codes
+      #   uses: fission-suite/publish-action@v1
+      #   with:
+      #     machine_key: ${{ secrets.FISSION_MACHINE_KEY }}
+      #     build_dir: ./public
