@@ -20,7 +20,7 @@ How do we reduce [interpretive labour](thoughts/interpretive%20labour.md) for le
 ## Debt in research
 * Poor exposition -> no good explanation of ideas and concepts
 * Undigested ideas -> it takes effort to polish ideas, developing the right analogies, language, and ways of thinking
-* Bad abstractions and notation -> abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge
+* Bad abstractions and [[thoughts/notation|notation]] -> abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge
 * Noise -> there's *too* much new progress being made each day. How do we choose what to focus on?
 
 Not just about poorly explained ideas, but rather the lack of ideas being digested and worked through in public (communal messiness of thought). How can we create better abstractions, notations, and visualizations to improve how we interact and interface with ideas?

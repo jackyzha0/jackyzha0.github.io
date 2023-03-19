@@ -13,6 +13,7 @@ tags:
 - https://www.boboland.xyz/
 - https://lfe.org/
 - good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
+- https://tomasp.net/techdims
 
 ## Aesthetics
 - https://shapefarm.net/
@@ -25,6 +26,8 @@ tags:
 
 ## Conceptual
 - http://feral.earth/
+- https://elliott.computer/
+- https://chia.design/
 
 ## 3D graphics
 - https://chartogne-taillet.com/en

@@ -12,6 +12,7 @@ why i always dislike introductions
     * a bad amount of [idolization](thoughts/idolization.md)
     * as a side note, same reason why calling yourself a writer vs someone who writes are two very different vibes (i *dabble*)
 * first of many experiences → why do we feel the need to get it right at the start?
+* When people are prompted, _“describe yourself”_, shouldn’t we be a little alarmed when they routinely describe something else?
 
 ## Intersectional Identities
 > "A man may be regarded as the point of intersection of an indefinite number of circles representing social groups" -- -   Cooley, Human Nature and the Social Order (1922)

@@ -23,3 +23,6 @@ Related: [exploit explore](thoughts/exploit%20explore.md) as a metaphor for opti
 
 [Mimetic](thoughts/mimetic.md) behaviour as a form of feedback loop
 
+## Interaction Design
+- **Gulf of execution**: the difference between the intentions and allowable actions
+- **Gulf of evaluation**: the difference between the actual system state and user's understanding

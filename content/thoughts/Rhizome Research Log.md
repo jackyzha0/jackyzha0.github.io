@@ -9,6 +9,13 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## March
+### March 18th
+- [Elm time-travel debugging](https://elm-lang.org/news/time-travel-made-easy)
+	- Gives me very similar vibes to how Braid does their rewind mechanism
+	- Elm programs may have state, even though all functions are pure. The runtime stores this state, not your program.
+	- The Elm runtime combines the previous state and new inputs to make the current state.
+	- To avoid replaying the universe from the start, Elm uses snapshotting
+
 ### March 13th
 - Tools for development feel important to focus on for a good DX, [LiveBlocks](https://liveblocks.io/devtools) does a great job at this
 
