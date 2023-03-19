@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="[[thoughts/system model|System models]] for programming.
+Technical Dimensions of Programming Systems  Source
+![[thoughts/images/tech-dims.png|500]]
+7 clusters
+ Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?"
+  />
+  <title>
+    Programming Models
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  
+  
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+
+  
+  
+
+
+
+  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
+  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  
+  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+
+  
+  
+  
+  <script defer src="https://jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
+  
+
+  
+  
+  <script defer src="https://jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED =  false 
+    const LATEX_ENABLED =  true 
+    const PRODUCTION =  true 
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true 
+
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
+        }
+      
+      
+      
+      function clickHandler(evt) {
+        const target = evt.target 
+        const classNames = target.className.split(" ")
+        const broken = classNames.includes("broken")
+        const internal = classNames.includes("internal-link")
+        plausible("Link Click", {
+          props: {
+            href: target.href,
+            broken,
+            internal,
+            graph: false,
+          }
+        })
+      }
+
+      const links = document.querySelectorAll("a")
+      for (link of links) {
+        if (link.className.includes("root-title")) {
+          link.addEventListener('click', clickHandler, {once: true})
+        }
+      }
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://jzhao.xyz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-3">
+    <h1 id="page-title"><a class="root-title" href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Programming Models</h1>
+      <p class="meta">
+        Last updated 
+Mar 18, 2023
+
+ 
+          
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/programming%20models.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p><a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">System models</a> for programming.</p>
+<a href="#technical-dimensions-of-programming-systems"><h2 id="technical-dimensions-of-programming-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Technical Dimensions of Programming Systems</h2></a>
+<p>
+<a href="https://tomasp.net/techdims/" rel="noopener">Source</a></p>
+<p><img src="/thoughts/images/tech-dims.png" width="500" /></p>
+<p>7 clusters</p>
+<ol>
+<li>Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?
+<ul>
+<li>How many layers of <a href="/thoughts/feedback-loops" rel="noopener" class="internal-link" data-src="/thoughts/feedback-loops">feedback loops</a> are present when translating a user&rsquo;s intention to getting a response?
+<ul>
+<li>For example, statically typed languages have three layers of feedback loops that are nested within each other
+<ol>
+<li>Translating ideas into code</li>
+<li>Satisfying the type checker. Errors here will send programmers back to the first feedback loop (i.e. there is a mismatch between what user thinks the program does and what it actually does)</li>
+<li>Running the program and evaluates the run time behaviour.</li>
+</ol>
+</li>
+<li>The idea is that static checks can push bugs from cycle 3 to cycle 2, reducing the evaluation gulf at cycle 3 at the cost of increasing the total execution gulf in cycle 2 (and thus cycle 3 as well)</li>
+<li>When the total evaluation gulf across all the cycles is minimized as to be imperceptible, we call this <em>immediate feedback</em>. Once the user has caused some change to the system, its effects (including errors) are immediately visible (automatically demanded).
+<ul>
+<li>Direct manipulation is a special case of an immediate feedback loop. The user sees and interacts with an artefact in a way that is as similar as possible to real life; this typically includes dragging with a cursor or finger in order to physically move a visual item, and is limited by the particular haptic technology in use.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>How does the system facilitate the construction of abstractions?
+<ul>
+<li>A first principles approach involves thinking ahead of time about what the required abstraction will be (in the case of a programming language, perhaps an interface) and then encoding it in the system</li>
+<li>Other systems may actually limit the construction of abstractions in order to encourage end users to work with concrete objects (direct manipulation)
+<ul>
+<li>Examples of this are Jupyter notebooks (previews after individual cells discourage creating abstractions, because then you would not be able to look inside your execution such a fine grained level) and spreadsheets</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>See also: <a href="/thoughts/mental-model" rel="noopener" class="internal-link" data-src="/thoughts/mental-model">mental model</a>, <a href="/thoughts/feedback-loops#interaction-design" rel="noopener" class="internal-link" data-src="/thoughts/feedback-loops">feedback loops in interaction design</a></li>
+</ul>
+</li>
+<li>Notation: how are the different textual and visual programming notations related?
+<ul>
+<li>What notations are used to program the system and how are they related?</li>
+<li>Surface vs internal notation
+<ul>
+<li>All programming systems build up structures in memory, which we can consider as an <em>internal notation</em> not usually visible to the user</li>
+<li>What the user interacts with instead is the <em>surface notation</em>, typically one of text or shapes on a screen. Every interaction with the surface notation alters the internal notation in some way</li>
+</ul>
+</li>
+<li>Notational geography: do <em>similar expressions</em> in a particular notation represent <em>similar behavior</em>?</li>
+<li>Is it good to have overlapping notations to do the same thing in an application? e.g. a keyboard shortcut and GUI menu?
+<ul>
+<li>For programming systems that use <em>overlapping notations</em>, we need to describe how the notations are synchronized.</li>
+</ul>
+</li>
+<li>See also: <a href="/thoughts/notation" rel="noopener" class="internal-link" data-src="/thoughts/notation">notation</a></li>
+</ul>
+</li>
+<li>Conceptual structure: how do the parts fit together?
+<ul>
+<li>Composability: There exist building blocks which span a range of useful combinations. Composability is, in a sense, key to the notion of &ldquo;programmability&rdquo; and every programmable system will have some level of composability</li>
+<li>Convenience: are there ready-made solutions to specific problems? i.e. what is the &lsquo;standard library&rsquo; of the system?</li>
+<li>Composability vs Convenience
+<ul>
+<li>Composability without convenience is a set of atoms or gears; theoretically, anything one wants could be built out of them, but one must do that work</li>
+<li>Convenience without Composability is a bunch of standalone tools, none of which work with each other. You can do anything that each individual tool but nothing that combines them together. A lot of modern web applications are like this</li>
+</ul>
+</li>
+<li>Conceptual integrity: a drive exists in the Python programming language, which follows the principle that “There should be one—and preferably only one—obvious way to do it” in order to promote community consensus on a single coherent style.
+<ul>
+<li>The apotheosis of this approach can be found in early Smalltalk and Lisp machines, which were complete programming systems built around a single language.</li>
+<li>Everything was done in one language, and so everything was represented with the datatypes of that language.</li>
+</ul>
+</li>
+<li>Conceptual openness: can be seen as championing the values of <em>pluralism</em>, <em>compatibility</em>, or <em>conceptual openness</em> over conceptual integrity</li>
+<li>See also: <a href="/thoughts/Galls-law" rel="noopener" class="internal-link" data-src="/thoughts/Galls-law">Gall&rsquo;s law</a></li>
+</ul>
+</li>
+<li>Customizability: once a program exists in the system, how can it be extended and modified?
+<ul>
+<li>There are a number of interesting questions related to staging of customization. First, what is the notation used for customization? This may be the notation in which a program was initially created, but a system may also use a secondary notation for customization (consider Emacs using Emacs Lisp).</li>
+<li><em>Additive authoring</em> requires that system behaviours can be <em>changed</em> by simply <em>adding</em> a new expression containing addresses—in other words, anything can be <em>overriden</em> without being <em>erased</em>.
+<ul>
+<li>One example of this is CSS on the web. Given a web page, it is possible to modify almost any aspect of its appearance by simply <em>adding</em> additional rules to a CSS file.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Complexity: how does the system structure complexity and what level of detail is required?
+<ul>
+<li>There is a massive gap between the level of detail required by a computer, which executes a sequence of low-level instructions, and the human description of a program in higher-level terms.</li>
+<li>Declarative vs imperative programming systems
+<ul>
+<li>Declarative programming systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.</li>
+<li>Whereas imperative programming systems rely on the programmer explicitly defining the steps and using the right abstractions</li>
+</ul>
+</li>
+<li>See also: <a href="/thoughts/complexity" rel="noopener" class="internal-link" data-src="/thoughts/complexity">complexity</a></li>
+</ul>
+</li>
+<li>Errors: what does the system consider to be an error? How are they prevented and handled?
+<ul>
+<li>Distinguish between 4 types of errors
+<ol>
+<li>Slip: transient human attention failure (e.g. typos)</li>
+<li>Lapse: caused by memory failure (e.g. incorrectly remembered method name)</li>
+<li>Mistake: logical error (e.g. bad design of an algorithm)</li>
+<li>Failure: system error caused by the system itself that the programmer has no control over (e.g. a hardware or a virtual machine failure)</li>
+</ol>
+</li>
+<li>Normally, error detection occurs in the feedback loops that the system implements.
+<ul>
+<li>What errors can be detected in which feedback loops and how?</li>
+<li>How does the system respond when an error is detected?
+<ul>
+<li>The system may try to automatically recover from the error as best as possible (<a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a> take this approach)</li>
+<li>The system may proceed as if the error did not happen</li>
+<li>The system may ask a human to resolve the issue. This is common for errors that occur on a <a href="/thoughts/semantics" rel="noopener" class="internal-link" data-src="/thoughts/semantics">semantic</a> level</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Adoptability: how does the system facilitate or obstruct adoption by both individuals and communities?
+<ul>
+<li>Learnability: systems can be made easier to learn in several ways:
+<ul>
+<li>Specializing to a specific application domain</li>
+<li>Specializing to simple small-scale needs</li>
+<li>Leveraging the background knowledge, skills, and terminologies of specific communities</li>
+<li>Supporting learning with staged levels of complexity and assistive development tools</li>
+<li>Collapsing heterogeneous technology stacks into simpler unified systems.</li>
+</ul>
+</li>
+<li>Adopting a technology is a costly investment in terms of time, money, and foregone opportunities. Can people be assured that the programming system will still be there in 5 years? A century?</li>
+<li>See also: <a href="/thoughts/design-goals" rel="noopener" class="internal-link" data-src="/thoughts/design-goals">design goals</a>, <a href="/thoughts/notation" rel="noopener" class="internal-link" data-src="/thoughts/notation">notation</a></li>
+</ul>
+</li>
+</ol>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      No backlinks found
+    </li>
+    
+</ul>
+
+    </div>
+    <div>
+        <script
+  async
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

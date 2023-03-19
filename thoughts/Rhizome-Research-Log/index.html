@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -29607,6 +29607,18 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#march"><h2 id="march"><span class="hanchor" ariaLabel="Anchor"># </span>March</h2></a>
+<a href="#march-18th"><h3 id="march-18th"><span class="hanchor" ariaLabel="Anchor"># </span>March 18th</h3></a>
+<ul>
+<li>
+<a href="https://elm-lang.org/news/time-travel-made-easy" rel="noopener">Elm time-travel debugging</a>
+<ul>
+<li>Gives me very similar vibes to how Braid does their rewind mechanism</li>
+<li>Elm programs may have state, even though all functions are pure. The runtime stores this state, not your program.</li>
+<li>The Elm runtime combines the previous state and new inputs to make the current state.</li>
+<li>To avoid replaying the universe from the start, Elm uses snapshotting</li>
+</ul>
+</li>
+</ul>
 <a href="#march-13th"><h3 id="march-13th"><span class="hanchor" ariaLabel="Anchor"># </span>March 13th</h3></a>
 <ul>
 <li>Tools for development feel important to focus on for a good DX, 

@@ -135,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -401,6 +401,11 @@ Jun 16, 2021
   href="/thoughts/mimetic/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/mimetic/">Mimetic</a> behaviour as a form of feedback loop</p>
+<a href="#interaction-design"><h2 id="interaction-design"><span class="hanchor" ariaLabel="Anchor"># </span>Interaction Design</h2></a>
+<ul>
+<li><strong>Gulf of execution</strong>: the difference between the intentions and allowable actions</li>
+<li><strong>Gulf of evaluation</strong>: the difference between the actual system state and user&rsquo;s understanding</li>
+</ul>
 
 
     </article>
@@ -419,6 +424,18 @@ Jun 16, 2021
     
     
     
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
     
       
       
@@ -514,6 +531,18 @@ Jun 16, 2021
       
       <li>
         <a href="/thoughts/game-design/" data-ctx="feedback loops" data-src="/thoughts/game-design" class="internal-link">Game Design</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/mental-model/" data-ctx="thoughts/feedback loops" data-src="/thoughts/mental-model" class="internal-link">Mental Models</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/programming-models/" data-ctx="feedback loops in interaction design" data-src="/thoughts/programming-models" class="internal-link">Programming Models</a>
       </li>
       
       

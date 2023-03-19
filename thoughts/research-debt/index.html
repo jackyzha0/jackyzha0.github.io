@@ -136,13 +136,13 @@ Thinking about understanding knowledge as climbing a mountain."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +353,49 @@ Jun 18, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -413,7 +456,7 @@ Jun 18, 2021
 <ul>
 <li>Poor exposition -&gt; no good explanation of ideas and concepts</li>
 <li>Undigested ideas -&gt; it takes effort to polish ideas, developing the right analogies, language, and ways of thinking</li>
-<li>Bad abstractions and notation -&gt; abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge</li>
+<li>Bad abstractions and <a href="/thoughts/notation" rel="noopener" class="internal-link" data-src="/thoughts/notation">notation</a> -&gt; abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge</li>
 <li>Noise -&gt; there&rsquo;s <em>too</em> much new progress being made each day. How do we choose what to focus on?</li>
 </ul>
 <p>Not just about poorly explained ideas, but rather the lack of ideas being digested and worked through in public (communal messiness of thought). How can we create better abstractions, notations, and visualizations to improve how we interact and interface with ideas?</p>

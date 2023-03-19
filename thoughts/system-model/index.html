@@ -135,13 +135,13 @@ Network behaviour (e.g. message loss)  Reliable: message is received if and only
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -587,6 +587,10 @@ May 5, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/33-Impossibility-Result/" data-ctx="system model" data-src="/thoughts/33-Impossibility-Result" class="internal-link">33% Impossibility Result</a>
       </li>
@@ -691,6 +695,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/longest-chain-consensus/" data-ctx="system model" data-src="/thoughts/longest-chain-consensus" class="internal-link">Longest-chain consensus</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/programming-models/" data-ctx="System models" data-src="/thoughts/programming-models" class="internal-link">Programming Models</a>
       </li>
       
       

@@ -7,6 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Notation</title>
+      <link>https://jzhao.xyz/thoughts/notation/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/notation/</guid>
+      <description>Cognitive Dimensions of Notations  Abstraction Gradient (Efficiency)  Abstractions make it hard for first-time programmers to understand it Abstractions are powerful for professional software developers to make easy to write, read, and maintain software There should be a gradual increase in complexity !</description>
+    </item>
+    
+    <item>
+      <title>OODA</title>
+      <link>https://jzhao.xyz/thoughts/OODA/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/OODA/</guid>
+      <description>OODA stands for observe, orient, decide, act. Initially developed by a military strategist, it is now applied to understand commercial operations and [[thoughts/information behaviour]]</description>
+    </item>
+    
+    <item>
+      <title>Programming Models</title>
+      <link>https://jzhao.xyz/thoughts/programming-models/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/programming-models/</guid>
+      <description>[[thoughts/system model|System models]] for programming.
+Technical Dimensions of Programming Systems  Source
+![[thoughts/images/tech-dims.png|500]]
+7 clusters
+ Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?</description>
+    </item>
+    
+    <item>
       <title>Map as territory</title>
       <link>https://jzhao.xyz/thoughts/map-as-territory/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
@@ -234,8 +265,7 @@ POSSE is an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere
       <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/DSL/</guid>
-      <description>title: &amp;ldquo;Domain Specific Language (DSL)&amp;rdquo; date: 2022-09-22 tags:
- seed aliases: DSL   Implementation Stages
+      <description>Implementation Stages
  Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
     </item>
     

@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -351,6 +351,49 @@ Dec 12, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -406,6 +449,7 @@ Dec 12, 2021
 <p>(realistically, this model is only good for exploratory learning when a user is learning a system for the first time or for encountering error cases)</p>
 <p>If a breakdown occurs on the <strong>left</strong> (2-4), we call that the <strong>gulf of execution</strong>: the difference between the intentions and allowable actions</p>
 <p>If a breakdown occurs on the <strong>right</strong> (5-7), we call that the <strong>gulf of evaluation</strong>: the difference between the actual system state and user&rsquo;s understanding</p>
+<p>See also: <a href="/thoughts/feedback-loops" rel="noopener" class="internal-link" data-src="/thoughts/feedback-loops">feedback loops</a></p>
 <a href="#mental-model-vs-conceptual-model"><h2 id="mental-model-vs-conceptual-model"><span class="hanchor" ariaLabel="Anchor"># </span>Mental model vs Conceptual model</h2></a>
 <ul>
 <li>mental models: something the <strong>user has (forms)</strong>
@@ -485,6 +529,10 @@ Dec 12, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/conceptual-model/" data-ctx="mental model" data-src="/thoughts/conceptual-model" class="internal-link">Conceptual models</a>
       </li>
@@ -493,6 +541,12 @@ Dec 12, 2021
       
       <li>
         <a href="/thoughts/human-computer-interaction/" data-ctx="Mental Models" data-src="/thoughts/human-computer-interaction" class="internal-link">Human Computer Interaction (HCI)</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/programming-models/" data-ctx="thoughts/mental model" data-src="/thoughts/programming-models" class="internal-link">Programming Models</a>
       </li>
       
       

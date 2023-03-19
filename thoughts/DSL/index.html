@@ -8,8 +8,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="title: &ldquo;Domain Specific Language (DSL)&rdquo; date: 2022-09-22 tags:
- seed aliases: DSL   Implementation Stages
+    content="Implementation Stages
  Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
   />
   <title>
@@ -136,13 +135,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e8d894c8327542c507230b5789b55831.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7c70858363a8c4dad4c9b956d60001a8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -629,18 +628,7 @@ Dec 20, 2022
     
     
     
-      
-      
     
-    
-    
-      
-      
-      
-      
-      
-      
-      
     
     
 
@@ -650,16 +638,6 @@ Dec 20, 2022
       
       
       
-      
-      
-        
-        
-        
-          
-          
-          
-        
-        
       
     
     
@@ -750,16 +728,6 @@ Dec 20, 2022
 
 
 
-<hr>
-<p>title: &ldquo;Domain Specific Language (DSL)&rdquo;
-date: 2022-09-22
-tags:</p>
-<ul>
-<li>seed
-aliases:</li>
-<li>DSL</li>
-</ul>
-<hr>
 <p>Implementation Stages</p>
 <ol>
 <li>Tokenization <code>String -&gt; [Token]</code>
@@ -900,40 +868,7 @@ aliases:</li>
 <li>We think in a particular language and it determines how you think (see: <a href="/thoughts/linguistic-relativism" rel="noopener" class="internal-link" data-src="/thoughts/linguistic-relativism">Sapir-Whorf</a>)</li>
 <li>Languages should help us think better</li>
 </ul>
-<a href="#cognitive-dimensions-of-notations"><h2 id="cognitive-dimensions-of-notations"><span class="hanchor" ariaLabel="Anchor"># </span>Cognitive Dimensions of Notations</h2></a>
-<ol>
-<li>Abstraction Gradient (Efficiency)
-<ul>
-<li>Abstractions make it hard for first-time programmers to understand it</li>
-<li>Abstractions are powerful for professional software developers to make easy to write, read, and maintain software</li>
-<li>There should be a <strong>gradual</strong> increase in complexity <img src="/thoughts/images/abstraction-gradient.png" width="500" /></li>
-<li>Languages with a high abstraction floor are called abstraction-hungry</li>
-<li>Languages with a low abstraction ceiling are called abstraction-hating</li>
-</ul>
-</li>
-<li>Consistency
-<ul>
-<li>Coherence across the features of a language. It is easier to learn something if there are few exceptions to learn</li>
-</ul>
-</li>
-<li>Diffuseness (Learnability)
-<ul>
-<li>How many things there are to learn about a language</li>
-<li>Number of keywords is a good approximation for diffuseness</li>
-</ul>
-</li>
-<li>Error-proneness
-<ul>
-<li>Bloch: make it <em>easy to do it right, hard to do it wrong</em></li>
-<li>The more guarantees you want to make about the program at compile time, the more work the programmer needs to do to get something running</li>
-</ul>
-</li>
-<li>Secondary Notation
-<ul>
-<li>Anything that is only there to help the programmer but does not affect what the code actually does</li>
-</ul>
-</li>
-</ol>
+<p>See also: <a href="/thoughts/notation" rel="noopener" class="internal-link" data-src="/thoughts/notation">notation</a></p>
 <a href="#evaluation"><h2 id="evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Evaluation</h2></a>
 <a href="#recursive-evaluation"><h3 id="recursive-evaluation"><span class="hanchor" ariaLabel="Anchor"># </span>Recursive Evaluation</h3></a>
 <p>Each node has an evaluate method. Recursively traverse the tree and evaluate each node.</p>
