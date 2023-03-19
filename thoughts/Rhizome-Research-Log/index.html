@@ -140,7 +140,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.817598f140a9ceac945cc2ec3829db7a.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ed13f564ce12cb376f27e70ec1ee5c9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -29616,6 +29616,23 @@ May 3, 2022
 <li>Elm programs may have state, even though all functions are pure. The runtime stores this state, not your program.</li>
 <li>The Elm runtime combines the previous state and new inputs to make the current state.</li>
 <li>To avoid replaying the universe from the start, Elm uses snapshotting</li>
+</ul>
+</li>
+<li>
+<a href="https://arxiv.org/pdf/2303.06777.pdf" rel="noopener">Live, Rich, and Composable: Qualities for Programming Beyond Static Text</a>
+<ul>
+<li>We hypothesize that by combining liveness, richness, and composability, programming systems can meaningfully extend the capabilities of static text without losing its characteristic expressivity.</li>
+<li>Liveness: providing programmers with in-depth feedback about a program’s dynamic behaviour as the program is edited.
+<ul>
+<li>Normally accomplished through some sort of live/hot reload that preserves the state of the system, however this only reflects the final output of the program without revealing any information on the <em>internal model</em> of the program that led to that output</li>
+</ul>
+</li>
+<li>Richness: allowing programmers to work with domain-specific visualizations and interactions</li>
+<li>Composability: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
+<ul>
+<li>Unlike liveness and richness, this is not a quality static text lacks, which interactive programming systems strive to add to it. Rather, it is a familiar quality of static text which new programming systems must work hard to maintain.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
