@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Academia</title>
+      <link>https://jzhao.xyz/thoughts/academia/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/academia/</guid>
+      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
+    </item>
+    
+    <item>
       <title>Independent Research</title>
       <link>https://jzhao.xyz/thoughts/independent-research/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
@@ -1652,7 +1661,7 @@ Each node has an identifier which is the result of hashing the node&amp;rsquo;s 
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/privacy/</guid>
-      <description>Definitions  Restricting access to information or property to what you wouldn&amp;rsquo;t willingly give away in a particular context  Specifically, recognizing that privacy is contextual (Nissembaum) The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</description>
+      <description>Privacy isn&amp;rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to choose what and with whom you&amp;rsquo;ll share.</description>
     </item>
     
     <item>
@@ -5912,15 +5921,6 @@ A (not so) brief exploration of how we tackle classifying intents in reflect.</d
       <description>(with insights from Calvin and Hobbes)
 Since I’ve started at Hootsuite, I have
   added and/or changed 6223 lines of code in 16 different repos</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/academia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/academia/</guid>
-      <description>The &amp;lsquo;rat race&amp;rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&amp;rsquo; work.</description>
     </item>
     
     <item>

@@ -134,13 +134,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.ab9ac724758a8fe808afc2a32f7e1c5c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.7ed13f564ce12cb376f27e70ec1ee5c9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -456,6 +456,17 @@ May 3, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -463,6 +474,321 @@ May 3, 2022
 
 
 
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -29607,6 +29933,16 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#march"><h2 id="march"><span class="hanchor" ariaLabel="Anchor"># </span>March</h2></a>
+<a href="#march-19th"><h3 id="march-19th"><span class="hanchor" ariaLabel="Anchor"># </span>March 19th</h3></a>
+<ul>
+<li>More notes on <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">privacy</a> and what a pluralistic interpretation of &lsquo;public&rsquo; means</li>
+<li>Noticing some common themes between a lot of papers I&rsquo;m reading lately
+<ul>
+<li>Antimatter/inverse operations for undo and/or time-travel mechanisms</li>
+<li>Snapshotting to bound the time complexity of rewind</li>
+</ul>
+</li>
+</ul>
 <a href="#march-18th"><h3 id="march-18th"><span class="hanchor" ariaLabel="Anchor"># </span>March 18th</h3></a>
 <ul>
 <li>
@@ -29627,10 +29963,32 @@ May 3, 2022
 <li>Normally accomplished through some sort of live/hot reload that preserves the state of the system, however this only reflects the final output of the program without revealing any information on the <em>internal model</em> of the program that led to that output</li>
 </ul>
 </li>
-<li>Richness: allowing programmers to work with domain-specific visualizations and interactions</li>
+<li>Richness: allowing programmers to work with domain-specific visualizations and interactions
+<ul>
+<li>[W]riting code means articulating thoughts as precisely as possible… Often these thoughts involve geometrical relationships: tables, nests of objects, graphs, etc. Furthermore, the geometry differs from problem domain to problem domain. To this day, though, programmers articulate their thoughts as linear text.</li>
+</ul>
+</li>
 <li>Composability: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
 <ul>
 <li>Unlike liveness and richness, this is not a quality static text lacks, which interactive programming systems strive to add to it. Rather, it is a familiar quality of static text which new programming systems must work hard to maintain.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>More notes on <a href="/thoughts/programming-models" rel="noopener" class="internal-link" data-src="/thoughts/programming-models">programming models</a></li>
+<li>
+<a href="https://hal.inria.fr/hal-02983557/document" rel="noopener">CRDTs and Relational Databases (RDBs)</a>
+<ul>
+<li>Defines multisynchronous access which is composed of two modes of accessing data on edge devices:
+<ol>
+<li>asynchronous mode—the user can always access (read and write) the data on the device, even when the device is off-line, and</li>
+<li>synchronous mode—the data on the device is kept synchronous with the data stored in the cloud, as long as the device is online</li>
+</ol>
+</li>
+<li>Synchronizes tuples using causal-length set CRDT (CLSet CRDT)</li>
+<li>Creates a two-layer relational database system where the top layer is the Application Relation (AR) Layer and the bottom is the Conflict-free Replication Relation (CRR) Layer.
+<ul>
+<li>Any violation of integrity constraint is caught at the AR layer. A local update of $\tilde r_i$ and refresh of $r_i$ are wrapped in an atomic transaction: a violation would cause the rollback of the transaction. A merge at $\tilde r_i$ and a refresh at $r_i$ is also wrapped in a transaction: a failed merge would cause some compensation updates.</li>
 </ul>
 </li>
 </ul>
@@ -29648,7 +30006,7 @@ May 3, 2022
 <ul>
 <li>Similar to <a href="/thoughts/Antimatter" rel="noopener" class="internal-link" data-src="/thoughts/Antimatter">Antimatter</a> and netcode rollback
 <ul>
-<li>Programmers can write correct software without paying any attention to late-arriving messages,and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.</li>
+<li>Programmers can write correct software without paying any attention to late-arriving messages, and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.</li>
 <li>For every message there exists an antimessage that is exactly like it in format and content except in one field, its sign. Whenever a message and its antimessage occur in the same queue, they immediately annihilate one another.</li>
 </ul>
 </li>
@@ -29672,8 +30030,7 @@ May 3, 2022
 <ul>
 <li>Wide-area access to database servers by autonomous clients (which may or may not have local databases) is becoming more and more popular</li>
 <li>Define monitoring service: not only request the initial answer to a certain query but also notifications about changes in this answer over an extended period of time</li>
-<li>Expressed in <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a> , 3-step consensus procedure that computes view differentials
-1.</li>
+<li>Expressed in <a href="/thoughts/Datalog" rel="noopener" class="internal-link" data-src="/thoughts/Datalog">Datalog</a> , 3-step consensus procedure that computes view differentials</li>
 </ul>
 </li>
 </ul>
@@ -32194,7 +32551,6 @@ youtube:
 <li>Sketching out grant proposals to Emergent Ventures + Protocol Labs</li>
 <li>Had a chat with Sebastien about research institutes and what long-term support for work like this could look like in the context of Verses</li>
 <li>More implementation work for <code>miniraft</code>, about halfway done I think?</li>
-<li>More of a slower day to spend time with family for Mothers Day :)</li>
 </ul>
 <a href="#may-7th"><h3 id="may-7th"><span class="hanchor" ariaLabel="Anchor"># </span>May 7th</h3></a>
 <ul>
