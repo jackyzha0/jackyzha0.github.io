@@ -37,9 +37,9 @@ How do we estimate time over a network?
 - If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)
 
 ## Logical Time
-Problem is that *even with synced clocks* we can have $t_2 < t_1$ with a message A at $t_1$ with a response B at $t_2$. Here, the timestamp [[thoughts/Order theory|order]] is inconsistent with expected order! This can happen when the clock skew is *less* than the one way network latency.
+The known problem with this mechanism is that it can drift away from the actual time of the day, based on how fast or slow the crystals oscillate. To fix this, computers typically have a service like NTP which synchronizes computer clocks with well known time sources on the internet. Because of this, two consecutive readings of the system time on a given server can have time going backwards. As there is no upper bound on clock drift across servers, it is impossible to trust timestamps on two different servers as a way to infer causality!
 
-So we use logical clocks to work based off of *the number of events that have occurred rather than actual time passed.*
+We use logical clocks to work based off of the number of events that have occurred rather than actual time passed.
 
 ### Lamport Clocks
 Provides a **partial order** on events

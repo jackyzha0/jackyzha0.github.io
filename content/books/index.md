@@ -12,6 +12,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 ### Fiction
 * **Accelerando** by Charles Stross
 * **Homo Ludens** by Johan Huizinga
+* **The Ministry for the Future** by Kim Stanley Robinson
 
 ### Non-fiction
 * **Dealers of Lighting** by Michael A. Hiltzik
@@ -22,10 +23,13 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **The Limits to Capital** by David Harvey
 * **Inventing the Medium** by Janet J. Murray
 * **Saving Time, Discovering a Life Beyond the Clock** by Jenny Odell
-
-## Current
 * **Designing an Internet** by David D. Clark
 * **Playing Software** by Miguel Sicart
+* **Designs for the Pluriverse** by Arturo Escobar
+* **New Media Art** by Mark Tribe/Reena Jana
+
+## Current
+- None
 
 ## Past
 ### 2023

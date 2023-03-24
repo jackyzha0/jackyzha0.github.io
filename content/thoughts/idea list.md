@@ -211,3 +211,4 @@ tags:
 	- [[thoughts/independent research|independent research]] is applied [[thoughts/taste]]
 	- Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
 		- Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.
+	- a brief history of time

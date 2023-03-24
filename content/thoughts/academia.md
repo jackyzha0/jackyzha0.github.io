@@ -1,4 +1,9 @@
-
+---
+title: "Academia"
+date: 2023-03-24
+tags:
+- seed
+---
 
 ## The 'rat race' of Computer Science Academia
 

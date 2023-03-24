@@ -2,10 +2,16 @@
 title: "Privacy"
 date: 2022-07-10
 tags:
-- seed
+- sapling
 aliases:
 - data privacy
 ---
+
+Privacy isn't about shutting out everyone and everything. Instead, privacy gives you the power to choose what and with whom you'll share. It provides safety, control and the right to grant access.
+
+Privacy gives you the ability to express yourself, to be creative, to spend your time and your money in whatever manner you like, without the scrutiny of others. It protects our intimate moments, our most embarrassing ambitions, our radical ideas and the ability to be our true selves.
+
+Privacy is freedom, consent, dignity and security.
 
 ## Definitions
 - Restricting access to information or property to what you wouldn't willingly give away in a particular context
@@ -62,6 +68,12 @@ Now, let’s imagine you leave your doctor’s office and fire up Instagram to t
 **The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.**
 
 See also: [[thoughts/GDPR|GDPR]]
+
+## Pluralistic Publics
+*[Plural Publics](https://gettingplurality.org/wp-content/uploads/2023/03/Plural-Publics-1.pdf)* by Shrey Jain, Divya Siddarth, and E. Glen Weyl
+
+> Instead of focusing on “private” v. “public,” we seek to protect and enable the emergence of a rich diversity of “publics.
+
 
 ## Proxemics
 Proxemics, a term coined by anthropologist Edward T. Hall, defines the relationships between a person and their identity, their surroundings, and the social norms of the community around a person or individual.

@@ -9,6 +9,12 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## March
+### March 19th
+- More notes on [[thoughts/privacy]] and what a pluralistic interpretation of 'public' means
+- Noticing some common themes between a lot of papers I'm reading lately
+	- Antimatter/inverse operations for undo and/or time-travel mechanisms
+	- Snapshotting to bound the time complexity of rewind
+
 ### March 18th
 - [Elm time-travel debugging](https://elm-lang.org/news/time-travel-made-easy)
 	- Gives me very similar vibes to how Braid does their rewind mechanism
@@ -20,8 +26,17 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Liveness: providing programmers with in-depth feedback about a program’s dynamic behaviour as the program is edited.
 		- Normally accomplished through some sort of live/hot reload that preserves the state of the system, however this only reflects the final output of the program without revealing any information on the *internal model* of the program that led to that output
 	- Richness: allowing programmers to work with domain-specific visualizations and interactions
+		- [W]riting code means articulating thoughts as precisely as possible… Often these thoughts involve geometrical relationships: tables, nests of objects, graphs, etc. Furthermore, the geometry differs from problem domain to problem domain. To this day, though, programmers articulate their thoughts as linear text.
 	- Composability: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
 		- Unlike liveness and richness, this is not a quality static text lacks, which interactive programming systems strive to add to it. Rather, it is a familiar quality of static text which new programming systems must work hard to maintain.
+- More notes on [[thoughts/programming models]]
+- [CRDTs and Relational Databases (RDBs)](https://hal.inria.fr/hal-02983557/document)
+	- Defines multisynchronous access which is composed of two modes of accessing data on edge devices:
+		1. asynchronous mode—the user can always access (read and write) the data on the device, even when the device is off-line, and 
+		2. synchronous mode—the data on the device is kept synchronous with the data stored in the cloud, as long as the device is online
+	- Synchronizes tuples using causal-length set CRDT (CLSet CRDT)
+	- Creates a two-layer relational database system where the top layer is the Application Relation (AR) Layer and the bottom is the Conflict-free Replication Relation (CRR) Layer.
+		- Any violation of integrity constraint is caught at the AR layer. A local update of $\tilde r_i$ and refresh of $r_i$ are wrapped in an atomic transaction: a violation would cause the rollback of the transaction. A merge at $\tilde r_i$ and a refresh at $r_i$ is also wrapped in a transaction: a failed merge would cause some compensation updates.
 
 ### March 13th
 - Tools for development feel important to focus on for a good DX, [LiveBlocks](https://liveblocks.io/devtools) does a great job at this
@@ -29,7 +44,7 @@ I think research logs tend to generally focus too much on what one did rather th
 ### March 12th
 - [Virtual Time](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.6637&rep=rep1&type=pdf) (Jefferson, 1985)
 	- Similar to [[thoughts/Antimatter]] and netcode rollback
-		- Programmers can write correct software without paying any attention to late-arriving messages,and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.
+		- Programmers can write correct software without paying any attention to late-arriving messages, and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.
 		- For every message there exists an antimessage that is exactly like it in format and content except in one field, its sign. Whenever a message and its antimessage occur in the same queue, they immediately annihilate one another.
 	- Uses a global virtual time (GVT) watermark
 		- Similar to GST in [[thoughts/system model#Timing behaviour (e.g. latency)|timing behaviours in system models]]
@@ -42,7 +57,6 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Wide-area access to database servers by autonomous clients (which may or may not have local databases) is becoming more and more popular
 	- Define monitoring service: not only request the initial answer to a certain query but also notifications about changes in this answer over an extended period of time
 	- Expressed in [[thoughts/Datalog]] , 3-step consensus procedure that computes view differentials
-		1. 
 
 ### March 9th
 - Thick vs Thin clients
@@ -1340,7 +1354,6 @@ I think research logs tend to generally focus too much on what one did rather th
 - Sketching out grant proposals to Emergent Ventures + Protocol Labs
 - Had a chat with Sebastien about research institutes and what long-term support for work like this could look like in the context of Verses
 - More implementation work for `miniraft`, about halfway done I think?
-- More of a slower day to spend time with family for Mothers Day :)
 
 ### May 7th
 - Does not seem promising that my research work will be support by Verses this summer...
