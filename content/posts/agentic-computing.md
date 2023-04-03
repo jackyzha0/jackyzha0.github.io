@@ -1,26 +1,16 @@
 ---
-title: "Communal Computing Networks"
+title: "Agentic Computing"
 date: 2022-11-29
 tags:
 - fruit
 - Rhizome
+aliases:
+- communal-computing
 ---
 
 > This post is part of an ongoing letter series with [Spencer](https://www.spencerchang.me/) and some other internet friends about what we think the future of the Internet could look like. Find more letters over on our [(we)bsite](https://we-b.site/)
 
 ![[thoughts/images/minecraft.png]]
-
-I vividly remember the Minecraft LAN parties we would have during middle school lunch breaks. Our eyes, glued to the clock as each minute by agonizing minute ticked by. The lunch bell would ring and we'd rush out into the hallway to set up our laptops. We spent the next 55 minutes tapping at our keys, yelling about how somebody stole all the diamonds we spent the last week collecting and how there was a village just over the hill. After school, we retreated to the computer lab to play more Minecraft before our parents picked us up.
-
-At some point, school IT blocked the port ranges that Minecraft uses to establish local multiplayer worlds. No more lunch-time Minecraft. I remember asking the school if we could run a Minecraft server using the school computers and they said no.
-
-As any stubborn middle schooler would do, I spent the next few weeks figuring out how to host my own Minecraft server on a laptop at home because who was the school administration to tell me what I could do on my lunch break. Running this server meant that us gathering in our virtual blocky world didn't need to stop as soon as we left the school perimeter.
-
-Sometimes, I would get up at 2am and sneak downstairs to my laptop to figure out which cool new plugins and mods we could add and combine without completely crashing the game. I sneaked because I was only allowed 45 minutes of computer time after school.
-
-I cried because in the last week before winter break, some random person joined and completely blew up the server with TNT. We didn't know backups were a thing.
-
----
 
 In 7th grade, our home room teacher showed us [Scratch](https://scratch.mit.edu/) for the first time. The majority of fun with Scratch was sharing. Posting graphics on the walls, modifying and experimenting with each other's work, and bringing the "new" products back to their original inventors.
 
@@ -29,7 +19,7 @@ But the real spark of Scratch came from just how easy it was to make shared stat
 ![[thoughts/images/cloud-variable.png|300]]
 *Making a shared variable is as easy as clicking a checkbox*
 
-This was the last era of the internet where it felt personal, multiplayer, distributed, and evolvable. It was easy to build stuff on your own and remix other work. It felt like a clearing in the woods, a safe gathering space for those who knew about it.
+This was the last era of the internet, to me, felt personal, multiplayer, distributed, and evolvable. It was easy to build stuff on your own and remix other work. It felt like a clearing in the woods, a safe gathering space for those who knew about it.
 
 ---
 
@@ -46,7 +36,7 @@ In 2019, Yancey Strickler illustrated this in what he called the *[Dark Forest T
 > 
 > This is also what the internet is becoming: a dark forest. In response to the ads, the tracking, the trolling, the hype, and other predatory behaviors, we’re retreating to our dark forests of the internet, and away from the mainstream.
 
-Our web has turned into a relentless competition for our attention. As corporations and influencers grasp for power, an increasing number of the web's citizens have retreated to the underground burrows of the cozy web to avoid the fallout. Hidden away from a hostile public web filled with spam, AI marketing, and malware, we find respite in our group chats, Discord servers, and forums.
+Our web has turned into a relentless competition for our attention. As corporations and influencers grasp for power, an increasing number of the web's citizens have retreated to the underground burrows of the [[thoughts/Dark Forest Theory of the Internet|cozy web]] to avoid the fallout. Hidden away from a hostile public web filled with spam, AI marketing, and malware, we find respite in our group chats, Discord servers, and forums.
 
 ![[thoughts/images/dark-forest.png|500]]
 *Maggie Appleton in [The Dark Forest and the Cozy Web](https://maggieappleton.com/cozy-web)*
@@ -58,8 +48,6 @@ It seems that we've reached the inevitable conclusion of optimizing "connecting 
 In design, there is a technique [diverge-converge](https://www.nngroup.com/articles/diverge-converge/), which as the name suggests, has two stages:
 1. Diverge: come up with many independent solutions to the problem
 2. Converge: narrow down and refine a small number of solutions to the problem
-
-
 
 The early days of the internet exemplified the diverge cycle of design. We tried a lot of ways to connect people and things on the web. Over time, some things stuck and others didn't.  Evolutionarily, we've guided ourselves to this unfortunate set of web design practices and it's not clear that these will continue to serve us well. We’ve converged on a state of the internet that worked great for the first 15 or so years, but now parts are creaking and dilapidated.
 
@@ -146,7 +134,7 @@ The internet is based on [[thoughts/Postel's Law]]: work the world as it already
 
 Just as the early internet was built on top of telephone networks, we can build a new set of cozier, smaller networks on top of an internet that is showing its age.
 
-Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, we created networks based around closeness in **social and trust space**? What about [Communal Computing Networks](https://alexanderobenauer.com/labnotes/027/)? What if I could make an [[thoughts/Overlay Network|overlay network]] with all my friends who are interested in poetic computation?[^1] 
+Maybe we bring back the philosophy of LANs, but rather than networks based around closeness in physical distance bounded by routers, we created networks based around closeness in **social and trust space**[^1]? What about [Communal Computing Networks](https://alexanderobenauer.com/labnotes/027/)?
 
 [^1]: In a magic world where IPv6 was adopted by everyone, every computer and device would have a unique address to send and receive things from. It would enable people to host things again, to have their own little home dinner parties instead of always going out to the restaurant. Unfortunately, IPv6 adoption has been really slow and we're stuck in a world where IPv6 isn't widespread enough to assume that most users have an IPv6 address as of yet.
 
@@ -174,7 +162,7 @@ Writing software shouldn’t take a degree and many years of training, it should
 
 I dream of a future where we have this LAN-like experience back again with all the best parts of the 21st century internet. A safe small space of people we trust, where we can go, rest, and look out for each other. A harbour from the multi-billion-person internet for when we want to feel cozy and safe.
 
-Let's make the web feel local and multi-player again.
+Let's make the web feel agentic again.
 
 ---
 

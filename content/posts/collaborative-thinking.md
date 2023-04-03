@@ -12,7 +12,7 @@ Recently, I've been reading **21 Lessons for the 21st Century** written by none 
 
 It is no secret that the key to the rise of *Homo Sapiens* and the anthropocene wasn't due to the rationality of any individual human, but rather our collective unparalleled ability to think and share knowledge in large groups. This concept has arisen in the form of *specialization of labour*.
 
-As a society, we consistently rely on the knowledge of others to live our own comfortable lives. I may not know how to grow my very own russet potatoes, but a farmer in Alberta might. Similarly, a plumber in Massachusetts may not know how to build their own website, but I might. Through being able to supplement each other's knowledge of the world, our *collective* knowledge is much greater.
+As a society, we consistently rely on the knowledge of others to live our own comfortable lives. I may not know how to grow my very own russet potatoes, but a farmer in Alberta might. Similarly, a plumber in Massachusetts may not know how to build their own website, but I might. Through being able to supplement each other's knowledge of the world, our [[thoughts/collective intelligence]] is much greater.
 
 ![Left: Collective knowledge of the group. Right: My subset of knowledge](/posts/images/collaborative-thinking/knowledge.png)*Left: Collective knowledge of the group. Right: My subset of knowledge*
 
@@ -48,10 +48,10 @@ The important part of learning communities like colleges is not necessarily the 
 ## Wiggle room
 > If you want to go deeply into any subject, you need a lot of time, and in particular, you need the privilege of wasting time. You need to experiment with unproductive paths, explore dead ends, make space for doubts and boredom, and allow little seeds of insight to slowly grow and blossom
 
-For me, learning is very close to a [zero sum](thoughts/zero%20sum.md) game. I can only expand the area of my knowledge blob so fast. If I want to broaden my foundational knowledge base, I need to reign in the amount of time spent growing purely technical strengths and to stop saying 'yes' to any and every opportunity that comes up.
+For me, learning is very close to a [zero sum](thoughts/zero%20sum.md) game with my time. I can only expand the area of my knowledge blob so fast. If I want to broaden my foundational knowledge base, I need to reign in the amount of time spent growing purely technical strengths and to stop saying 'yes' to any and every opportunity that comes up.
 
 Slowly but surely, I'm learning to value my own time and to set it aside to just absorb more about the world and to extend the reaches of my knowledge just a little bit further. To dilly-dally among the Wikipedia rabbit holes, cultivate [my digital garden](/posts/digital-gardening), and faff among the ridiculously long list of side projects I planned to start. I'm experimenting with what I previously thought were deadends and little seeds of insight are starting to grow. Maybe I'll find something interesting to share among the construction of this broader foundation.
 
 **Acknowledgements**
 
-A big thank yu to [Anson](https://twitter.com/ansonyuu) for always being a sounding board for fresh dough (half-baked ideas would be too generous of a description for these). Thanks to [Anne](https://www.linkedin.com/in/anneguo3/) and [Joice](https://twitter.com/y1huen) for also giving feedback on rough drafts :))
+A big thank you to [Anson](https://twitter.com/ansonyuu) for always being a sounding board for fresh dough (half-baked ideas would be too generous of a description for these). Thanks to [Anne](https://www.linkedin.com/in/anneguo3/) and [Joice](https://twitter.com/y1huen) for also giving feedback on rough drafts :))

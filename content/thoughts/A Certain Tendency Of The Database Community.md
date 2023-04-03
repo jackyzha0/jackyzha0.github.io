@@ -2,7 +2,7 @@
 title: "A Certain Tendency Of The Database Community"
 date: 2022-11-16
 tags:
-- seed
+- sapling
 ---
 
 [Source](https://arxiv.org/pdf/1510.08473.pdf)

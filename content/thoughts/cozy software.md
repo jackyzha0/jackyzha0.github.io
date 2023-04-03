@@ -43,11 +43,6 @@ An infinite canvas perhaps?
 - https://twitter.com/azlenelza/status/1418749070336684034
 - https://twitter.com/raunofreiberg/status/1450479522609090562
 
-## Handmade Web
-From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)
-
-> I evoke the term 'handmade web' to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or [[thoughts/identity|identity]].
-
 ## Folk Software
 [Source](https://maggieappleton.com/folk-interfaces)
 

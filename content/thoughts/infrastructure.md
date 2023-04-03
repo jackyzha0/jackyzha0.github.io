@@ -78,3 +78,8 @@ A new form of utopianism in science [fiction](thoughts/fiction.md): "if present 
 > The common usually refers to an orientation toward life and value unbound by concepts and divisions of property, and points to the world both as a finite resource that is running out and an inexhaustible fund of human consciousness or creativity
 
 *Sensus communis*: "'common sense' is merely the bourgeois order of truth standing in for the universal, what Stoler calls ‘‘a folk [epistemology](thoughts/epistemology.md).’’"
+
+## Moderation
+[Source](https://stratechery.com/2021/moderation-in-infrastructure/)
+
+I've been thinking a lot about [infrastructure](/thoughts/infrastructure). How do we draw the line between an end product and infrastructure? How should infrastructure regulate usage on its platform (if at all)? Been thinking about AWS's decision to remove Parler recently and whether it was warranted for AWS to do so. At what level of infrastructure should something become a '[public good](thoughts/public%20goods.md)'? As more and more of our digital infrastructure is built out under private companies, does it change how we govern content on top of it?

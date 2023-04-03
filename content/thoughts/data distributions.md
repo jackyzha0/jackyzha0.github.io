@@ -5,7 +5,7 @@ tags:
 - sapling
 ---
 
--   Machine Learning and [AI Systems](posts/ai-systems.md) excludes the tail ends of the distributions
+-   Machine Learning and [AI Systems](posts/agi.md) excludes the tail ends of the distributions
 	-   this is where minorities live, ends up reproducing existing systems of power (re: [To live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Matthew Effect](thoughts/Matthew%20Effect.md))
 	-   synthetic/generative/federated models suck at these
 	-   most interesting cases ARE outliers (esp. in medical AI)

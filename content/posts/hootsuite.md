@@ -11,13 +11,9 @@ tags:
 Since I’ve started at Hootsuite, I have
 
 * added and/or changed 6223 lines of code in 16 different repos
-
 * closed 24 tickets
-
 * made 4 new Slack emotes
-
 * listened to almost 10,000 minutes of lofi
-
 * had 1 amazing summer at Hootsuite
 
 Including the amount of money I’ve spent on lunch this past summer, everything has been so much more than I expected it to be. This short but sweet experience is something that I definitely will remember for a very long time.
@@ -48,19 +44,18 @@ I know that this has probably been repeated countless times already, but I canno
 
 ![[December 27th, 1985](https://www.gocomics.com/calvinandhobbes/1985/12/27)](https://cdn-images-1.medium.com/max/2000/0*Psh-fqFgVeQegGay.jpg)*[December 27th, 1985](https://www.gocomics.com/calvinandhobbes/1985/12/27)*
 
-Becomes sometimes, you just gotta go for it. You probably shouldn’t be going around and ruining nice coffee tables, but it works as a metaphor I guess? The point is: take necessary risks. Don’t say “nah, that’s not possible” before someone else tells you it is. At the start of summer, if someone told me I was going to be doing a demo on a proposal for a massive re-architecture of one of Hootsuite’s core services, I would have told you that you were insane. Yet here I am, doing just that:
+Becomes sometimes, you just gotta go for it. You probably shouldn’t be going around and ruining nice coffee tables, but it works as a metaphor I guess? The point is: take necessary risks. Don’t say “nah, that’s not possible” before someone else tells you it is. At the start of summer, if someone told me I was going to be doing a demo on a proposal for a massive re-architecture of one of Hootsuite’s core services, I would have told you that you were bonkers. Yet here I am, doing just that:
 
 ![](https://cdn-images-1.medium.com/max/3488/1*P8WSSl993SYILSfw9EfCwg.png)
 
 If your brain is anything like mine, you often get these nagging self-doubts about whether you’re capable of doing something. The first time I was assigned to help define Service Level Objectives ([SLOs](https://landing.google.com/sre/sre-book/chapters/service-level-objectives/)) for some of Hootsuite’s core services, I was shocked.
+
 > They’re letting a high schooler do this? How am I even close to being qualified?
 
 Not wanting to miss the opportunity, I took it. But as I began work, it became clear that I was the biggest critic in the room. They wouldn’t have asked me to do it if they didn’t trust me to do it and to do it well. Moving forward, I tried to trust myself more and to put myself out there, eventually taking on projects that I never thought would’ve been possible:
 
 * Designing prototype service meshes
-
 * Adding endpoints and writing scripts to cleanup user data
-
 * And other crazy things that I probably can’t publicly disclose
 
 If an opportunity presents itself, jump on it! You don’t know where it might take you.
@@ -68,11 +63,8 @@ If an opportunity presents itself, jump on it! You don’t know where it might t
 It’s really hard to put in words how much I’ve learned from the Owls here at Hootsuite. To the Owls: hopefully I’ve added something of value to all of you too.
 
 * Thanks to my manager and team lead Imtiaz and Shaun for being absolutely amazing in supporting my whole journey from start to finish.
-
 * Thanks to our team — team Golden Hammer — for helping me realize that yes, work can still be done while having fun. (:harold:)
-
 * Thanks to the co-ops (most notably Kevin, Andy, and Albert) for being so welcoming and having such a wholesome community.
-
 * Thanks to the other high school interns (Chloe, Kai, and Scarlet) for making sure that I wasn’t the only high school student that was being made fun of at board game night.
 
 And finally, thanks to Hootsuite for showing this little owl the world!
@@ -80,6 +72,7 @@ And finally, thanks to Hootsuite for showing this little owl the world!
 ![](https://cdn-images-1.medium.com/max/9312/1*RwlvNswSg95J253WHq2zbQ.jpeg)
 
 Hootsuite has changed my attitude on how I see the world and it’s beautifully captured in one quote from Waterson —
+
 > “It’s a magical world, Hobbes, ol’ buddy ... let’s go exploring!”
 
 ![](https://cdn-images-1.medium.com/max/2000/0*aq1RW9_3MViZBV0b.png)

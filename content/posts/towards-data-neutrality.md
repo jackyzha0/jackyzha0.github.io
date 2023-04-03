@@ -25,7 +25,7 @@ As a result, apps have become inseparable from data. They are extractive, asking
 Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.
 
 ## An Ideal World
-Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts[^1]. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. **Decentralization is about agency**: we get choice about where we _store_ our data, who we give _access_ to which parts of that data, which _services_ we want on top of it, and how we _pay_ for those.
+Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts[^1]. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. **Decentralization is about [[thoughts/agency]]**: we get choice about where we _store_ our data, who we give _access_ to which parts of that data, which _services_ we want on top of it, and how we _pay_ for those.
 
 In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable [[thoughts/local-first software|local-first software]][^2] which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego "dot" that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.
 
@@ -71,7 +71,7 @@ The important question is: can applications on top of decentralized data **beha
 ## Why not use blockchains?
 I admit that it is true that [[thoughts/blockchain|blockchain]] actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token [[thoughts/incentives|incentive]] mechanisms. Yet, they solve it in a way that leaves much to be desired.
 
-Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include
+Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include:
 - Lack of ability to store large files on-chain in a cost-effective manner
 - Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)
 - High latency for transactions and finality (not to mention transaction + gas fees but I am assuming these will be negligible at some point down the line)
@@ -87,7 +87,7 @@ It is made up of two layers
 1. Root: a personal data pod that *you* own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.
 2. Trunk: a framework for easily developing cohesive peer-to-peer applications on top of data from Root
 
-As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.
+As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and [[thoughts/collaborative software|collaboration]] on the web.
 
 - Single purpose apps backed by general-purpose data[^4]. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update *both apps*.
 - Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
@@ -100,9 +100,7 @@ With Rhizome, we get the convenience of a single centralized platform without th
 
 You can find more technical details [[thoughts/Rhizome Proposal|in the proposal]], and rough notes from my day-to-day in my [[thoughts/Rhizome Research Log|research log]].
 
-I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.
-
-Think of this project as a [[thoughts/skyhooks|skyhook]]: a dream about a future so that we may build towards it.
+I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. Think of this project as a [[thoughts/skyhooks|skyhook]]: a dream about a future so that we may build towards it.
 
 > We live in capitalism, its power seems inescapable – but then, so did the divine right of kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art.
 > 

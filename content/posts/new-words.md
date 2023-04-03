@@ -13,21 +13,21 @@ tags:
 - **W:** a wordsmith, a poet, a pluralist 
 - **P:** a pedantic
 
-**P:** Why do we need all these words? 
+**P:** W, have you ever wondered we need so many words?
 
-**W:** Ah, a question much asked throughout much of history.
+**W:** I can't say I have. The whole point of [[thoughts/language|language]] is to have shared mental models to enable us to communicate complex ideas more easily. We have complex ideas so having the right materials to express those thoughts feels important.
 
-**P:** Well no one seems to have a good answer at least. Don't we have enough words to express all we want to express already? There are innumerable ways to combine the words we already do have.
+**P:** Well, don't we have enough words to express all we want to express already? There are innumerable ways to combine the words we already do have.
 
-**W:** The whole point of [[thoughts/language|language]] is to have shared mental models to enable us to communicate complex ideas more easily. There is a form of epistemic injustice known as [hermeneutical injustice](thoughts/hermeneutical%20injustice.md) where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
+**W:** There is a form of epistemic injustice known as [hermeneutical injustice](thoughts/hermeneutical%20injustice.md) where one has no labels or common [terminology](thoughts/terminology.md) to describe or explain experiences to others. Clearly, there are not enough words to express the human experience.
 
-**P:** Okay, I admit that new words are useful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
+**P:** Okay, well I can admit that having more words can be helpful. But who is to say what each word means? Who is to say that the word 'apple' even refers to the fruit I just ate, or that 'metaverse' is even a real word?
 
 **W:** Language is logically [decentralized](thoughts/decentralization.md), is it not? There is no governing body that determines what a word means. The meaning of a word lies in its use[^1], and that is decided by those who speak the language.
 
 **P:** That is not necessarily true though. The language of the law sets out centralized definitions for words *so* that definitions cannot be swayed or morphed to fit the needs of its wielders. Similarly, at the start of a mathematical proof, one should *always* define the axioms or givens to be agreed upon before attempting to use them in any capacity.
 
-**W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **plurality**. [context](thoughts/context.md) modifies meaning.
+**W:** There seems to be a flaw in your argument. Yes, I agree that a consistent set of definitions is required for any sort of productive knowledge sharing. But you fail to account for **[[thoughts/plurality]]**. [Context](thoughts/context.md) modifies meaning.
 
 **P:** Plurality as in a multitude of definitions?
 
@@ -39,7 +39,7 @@ tags:
 
 **P:** Wait... lying is categorically bad is it not?
 
-**W:** Hold on and let me finish my thought. According to Pratchett[^2], "a lie-to-children is a statement that is false, but which nevertheless leads the child's mind towards a more accurate explanation." I think what I'm trying to get at is this concept of [verisimilitude](https://en.wikipedia.org/wiki/Verisimilitude): that there is no binary true or false, [some propositions are more true](thoughts/philosophy%20of%20science.md) than others, especially in context.
+**W:** Hold on and let me finish my thought. According to Pratchett[^2], "a lie-to-children is a statement that is false, but which nevertheless leads the child's mind towards a more accurate explanation." I think what I'm trying to get at is this concept of [[thoughts/verisimilitude]]: that there is no binary true or false, [some propositions are more true](thoughts/philosophy%20of%20science.md) than others, especially in context.
 
 **P:** Okay, I accept that taking a toy-model approach to new terminology makes sense. But I still don't understand why we couldn't just have a single definition for each word in this model.
 
@@ -47,7 +47,7 @@ tags:
 
 Of course, this is not to say that definitions are not important. In fact, quite the opposite. Definitions hold immense power in shaping how we talk and think about the world writ large. What I am saying is that language needs the ability to evolve on its own. Individuals and groups should have the agency to 'reclaim' harmful and outdated definitions.
 
-**P:** Isn't this exactly *why* we need centralization? This is like Plato's Ship of State[^4]. Any large vessel by their very nature needs to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
+**P:** Isn't this exactly *why* we need centralization? This is like [[thoughts/Plato's Ship of State|Plato's Ship of State]][^4]. Any large vessel by their very nature needs to be steered firmly. Those aboard must yield to their captain's commands; no reasonable person believes that a ship can be run democratically.
 
 **W:** Would sailors want to obey a captain who takes them somewhere they don't want to be? No. I imagine language like multiple small ships, each one with its own crew (crew of course, meaning an agreed meaning for a set of definitions). Let me reiterate without the ship metaphor: language requires **localized** [consensus](thoughts/consensus.md) for it to function.
 
@@ -59,7 +59,7 @@ Of course, this is not to say that definitions are not important. In fact, quite
 
 **W:** Yes, exactly! Let us imagine definitions of words as metal nodules. After a nodule is heated to a high temperature, it is workable. Similarly, when new terminology is coined, it has a period where it is malleable and adaptive and achieving local consensus is relatively easy.
 
-Of course, over the course of the annealing process, meaning can drift. Centralizing then, is a form of metal hardening and shaping. It anchors meaning and prevents it from being easily modified. Just as one should not have metals be load bearing until they've hardened and been shaped for their specific use case, semantically fluid terms should not be epistemelogically load bearing.
+Of course, over the course of the annealing process, meaning can drift. Centralizing then, is a form of metal hardening and shaping. It anchors meaning and prevents it from being easily modified. Just as one should not have metals be load bearing until they've hardened and been shaped for their specific use case, semantically fluid terms should not be epistemologically load bearing.
 
 We imagine new words as small nodules. The size correlates with the number of individuals that agree with the definition. Smaller nodules reach the right temperature for annealing more easily. As the definition becomes more widely accepted, it gains mass and becomes harder to work.
 
@@ -67,14 +67,14 @@ We imagine new words as small nodules. The size correlates with the number of in
 
 **W:** I hope you excuse my thinking out loud, but this metaphor has given me the clarity to better express this idea in terms of regular language.
 
-Early on, achieving local consensus on a definition is rather easy; there are only a handful of people who then know about the term, let alone use it regularly. As the term grows more popular, it becomes increasingly difficult to maneuver and adapt in such a way that the meaning of the term cannot shift very much without causing fracturing.
+Early on, achieving local consensus on a definition is rather easy; there are only a handful of people who then know about the term, let alone use it regularly. As the term grows more popular, it becomes increasingly difficult to manoeuvre and adapt in such a way that the meaning of the term cannot shift very much without causing fracturing.
 
 **P:** Ah that makes a lot more sense. Hmm. This covers the initial semantic definitions for a word but is there any way to change the meaning of a definition after it's been concretized?
 
 **W:** This seems quite difficult for terminology already ingrained within society. Especially as meaning is not dictated by some central organization, any old definitions
 need to be collectively forgotten. As we concluded earlier, this is incredibly difficult for widely used terms.
 
-As we enter an age of digital permanency, we should normalize the right to be forgotten for terminology. It should be normal for terminology to be forgotten -- for it to slip through the hands of time like sand.
+As we enter an age of digital permanency, we should normalize the [[thoughts/right to be forgotten|right to be forgotten]] for terminology. It should be normal for terminology to be forgotten -- for it to slip through the hands of time like sand.
 
 **P:** This ignores a lot of history, does it not? "By changing what we were, you change what we are and what we are going to be."[^5] This is a form of erasure through terminology change. By 'forgetting' terminology, you deny its existence.
 
@@ -88,7 +88,7 @@ As we enter an age of digital permanency, we should normalize the right to be fo
 
 **W:** The 'metaverse' for one could use a lot of redefinition. Meta has put a lot of effort into claiming and defining this term for their own benefit -- a closed, profit-driven, and attention-farming dystopia. A few groups have cropped up around reclaiming some of this terminology, including one forking John Perry Barlow’s 1996 [Declaration for the Independence of Cyberspace](https://www.eff.org/cyberspace-independence) as a reaction to Facebook's recent rebranding as Meta.
 
-Likewise, many groups across the world have tried to redefine and hard-fork the definition of 'hacker' for quite some time. Hacking, as known by the general public, generally refers to gaining unauthorized access to technology. Yet within this local hacker subcommunity, a hacker is widely defined as one who builds and creates for the sake of creating.
+Likewise, many groups across the world have tried to redefine and hard-fork the definition of '[[thoughts/Hackers|hackers]]' for quite some time. Hacking, as known by the general public, generally refers to gaining unauthorized access to technology. Yet within this local hacker subcommunity, a hacker is widely defined as one who builds and creates for the sake of creating.
 
 **P:** I am increasingly convinced by your argument against centralized definitions. I think, as a society, we need to think more critically about language and terminology and how they carry power. We want to enable evolution and creation of new terminology to enable others to have the language to speak of their lived experiences and complex ideas.
 
@@ -96,7 +96,7 @@ Likewise, many groups across the world have tried to redefine and hard-fork the 
 
 **P:** What sort of alternative are you proposing?
 
-**W:** A collectively curated glossary of sorts. One which involves a rich history and [context](thoughts/context.md) of terms, pluralist in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
+**W:** A collectively curated glossary of sorts. One which involves a rich history and [context](thoughts/context.md) of terms, [[thoughts/plurality|pluralist]] in nature, and always ongoing. If meaning is a negotiation, then the history of that negotiation needs to be a crucial part of achieving consensus on the meaning.
 
 Let us create a new glossary of terminology. May it be *a* source of [truth](thoughts/truth.md) rather than *the* source of truth.
 

@@ -8,11 +8,9 @@ tags:
 *Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/Interact%20Circle%20W21.md) on [Hackathon Culture](posts/hackathons.md) and Play.*
 
 ## Defining play
-I've spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals.
+I've spent so much time thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about *what play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but putting it into words feels difficult.
 
-I've spent so much time thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about *what play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but to put words to it feels difficult.
-
-The most intuitive definition is one that comes from Bill Watterson: play is anything that you do on your own volition or agency just for its own sake. It is an *intrinsically* motivated activity.
+The most intuitive definition is one that comes from Bill Watterson: play is anything that you do on your own volition or agency just for its own sake. It is an *intrinsically* motivated, [[thoughts/paratelic action|paratelic]] activity.
 
 ![](/posts/images/play/agency.png)
 
@@ -106,7 +104,7 @@ Obviously, this is an exaggeration of the argument I'm hoping to make -- we clea
 
 Language is one of the only logically [decentralized](thoughts/decentralization.md) aspects of humanity. It is also one that has considerable effects on [how we think](posts/new-words.md) about ourselves and the world.
 
-We started off this journey by asserting that our current accepted definition of play was inadequate. In its place, we offer a plurality of alternatives:
+We started off this journey by asserting that our current accepted definition of play was inadequate. In its place, we offer a [[thoughts/plurality]] of alternatives:
 
 - Play is an *intrinsically* motivated activity. 
 - Play is labour which is non-instrumental.

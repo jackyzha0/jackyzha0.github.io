@@ -6,7 +6,7 @@ tags:
 - technical
 ---
 
-## Syntax Quirks
+## Haskell Syntax Quirks
 - `$ :: (a -> b) -> a -> b` is function application (adds implicit parentheses and makes it right associative instead of left associative)
 	1. Normally, `sort "abc" ++ "def"` would be interpreted as `(sort "abc") ++ "def"`
 	2. If we use the `$` operator, we can do `sort $ "abc" ++ "def"` which is interpreted as `sort ("abc" ++ "def")` as intended.

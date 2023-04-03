@@ -10,7 +10,7 @@ tags:
 
 Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.
 
-But for engineers building these digital identities, the primary focus is on legibility: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed[^1]. 
+But for engineers building these digital identities, the primary focus is on [[thoughts/quantization|legibility]]: the process of simplifying, labelling, and modelling.
 
 Legibility on its own is not a bad thing. It’s how Google assembles droves of information on the web so we can search through it easily. It’s how we have transparency into the progress of publicly funded projects and initiatives by our governments.
 
@@ -39,13 +39,14 @@ What are ways we can lean towards self-sovereign models of identity? How do we g
 ## Identity as Attributes
 
 ![[thoughts/images/identity-attribute.png]]
+
 Our digital representations consist of:
 -   What we bought last time we visited Amazon;
 -   All the files you’ve uploaded to Google Drive;
 -   Google Analytics data points about what pages we visited and when;
 -   What type of videos we watched on TikTok over the past week.
 
-Most data models default to this assumption of identity as objects with attributes. Almost all programming languages model things, including people, this way. Databases are similar, either being documents with attributes or rows in a table. Relations are encoded as references to other documents, not as things in and of themselves.
+Most data models default to this assumption of identity as objects with attributes. Almost all programming languages model things, including people, this way. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed[^1]. Databases are similar, either being documents with attributes or rows in a table. Relations are encoded as references to other documents, not as things in and of themselves.
 
 When we model identity as a collection of attributes, all aspects of identity are, by default, quantifiable and measurable.
 
@@ -75,7 +76,7 @@ Yet, I think there is still room for improvement here. Identities based off of t
 
 > "Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects."[^7]
 
-You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these [[thoughts/petname|petname]] systems.
+You are already most likely familiar with a system for 'memorizing' these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names. HCI researchers call systems like these [[thoughts/petname|petname]] systems.
 
 > For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). *([Backchannel](https://www.inkandswitch.com/backchannel/), Ink & Switch)*
 

@@ -24,7 +24,7 @@ As metaphysical questions about consciousness faded slowly, behaviourism found i
 
 To give them credit, many scientists found success through this approach. Scientists figured out how to correlate brain states with solving problems and even feelings of pain and pleasure. They figured out how activations in the V1 area of the cortex react to certain colours like the redness of an apple. Further physiological work discovered the existence of the V4-V8 areas which had an even stronger correlation with shapes, motion, and lighting conditions. The moonshot goal was to build up to a full **neural correlate of consciousness** or [[thoughts/Neural Correlates of Consciousness (NCC)|NCC]] -- some way of explaining what physical brain states correlate to mental ones.
 
-Yet, at the end of the day, all of this work only proved *correlation*. Behaviourist approaches were no closer to answering the question of how physical brain states *produce* mental ones. **Any theory that attempted to explain consciousness in terms of the physical is forced to take no less than a leap of faith from the objectively physical to the subjectively mental.** This leap is across what is known as the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]].
+Yet, at the end of the day, all of this work only proved *correlation*. Behaviourist approaches were no closer to answering the causal question of how physical brain states *produce* mental ones. **Any theory that attempted to explain consciousness in terms of the physical is forced to take no less than a leap of faith from the objectively physical to the subjectively mental.** This leap is across what is known as the [[thoughts/Hard problem of consciousness#Explanatory Gap|explanatory gap]].
 
 > "The mind-body problem is not just a local problem having to do with the relation between mind, brain, and behaviour in living animal organisms ... it invades our understanding of the entire cosmos and its history." (Thomas Nagel, *Mind and Cosmos*)
 
@@ -44,7 +44,7 @@ It is tempting to say at this point that perhaps a relational view all there is 
 
 Yet intuitively, a world held up purely through relations does not make sense. As Hedda Hassel Mørch pointed out in her critique of physics for ignoring consciousness, "for there to be a relation there must be two things being related." [^3] Otherwise, the relationship is empty -- "a show that goes on without performers, or a castle constructed out of thin air." Mørch argues that all physical relations should be made real by some substance that itself is not purely relational or else there would be no difference between mere mathematical abstraction and the concrete universe.
 
-Clearly, if we wish to poke beyond this veil of pure abstractions, our current explanations of our reality will not do: intrinsic natures simply cannot be captured through a purely physical approach. [[thoughts/Materialism|Materialism]] as given so far does not seem to stand. Taking its physical description as the totality is like **confusing the map with the territory.** It may be fine if you just need the map to navigate the world, but to open one's eyes to the real world, we must dig deeper.
+Clearly, if we wish to poke beyond this veil of pure abstractions, our current explanations of our reality will not do: intrinsic natures simply cannot be captured through a purely physical approach. [[thoughts/Materialism|Materialism]] as given so far does not seem to stand. Taking its physical description as the totality is like **confusing the [[thoughts/map as territory|map as the territory]].** It may be fine if you just need the map to navigate the world, but to open one's eyes to the real world, we must dig deeper.
 
 We thus try to **bridge the explanatory gap from the other side**. Perhaps consciousness is fundamental to reality, not the other way around.
 
@@ -72,8 +72,8 @@ In Husserl's horizon metaphor, the horizon is not possible without a world to be
 
 Francisco Varela's notion of "mutually generative constraints,"[^14] points toward a possibility where both physicalism and idealism work together towards reciprocal enrichment:
 
-1.  Phenomenological reports may help to pick out and ascribe meaning to previously unnoticed neural configurations
-2.  Neurological findings may become an incentive for re-categorization and further development in phenomenological research
+1. Phenomenological reports may help to pick out and ascribe meaning to previously unnoticed neural configurations
+2. Neurological findings may become an incentive for re-categorization and further development in phenomenological research
 
 This neutrally monistic view of consciousness does not "solve" the hard problem. Rather, the problem never even arises because the physical world is no longer the standard for being, and objectivity is no longer the ultimate standard of being. 
 

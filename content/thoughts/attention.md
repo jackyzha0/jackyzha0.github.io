@@ -5,10 +5,17 @@ tags:
 - seed
 ---
 
-See also [[thoughts/attention economy]], [[thoughts/taste]]
-
 > Attention is the stuff of manifestation. In the same way that looking at something while you’re driving takes you there, paying attention to anything (a field, an attitude, a person), will drive you uncontrollably toward it.
 > 
 > (Spencer, *[secret places](https://spencerchang.substack.com/p/secret-places)*)
 
 A Thoreau quote: “It’s not what you look at that matters, it’s what you see.” William Shaw: "we make things holy by the kind of attention we give them."
+
+See also [[thoughts/attention economy]]
+
+## Deep Attention
+[The bookstore with a single book.](https://www.takram.com/projects/a-single-room-with-a-single-book-morioka-shoten/) This is a tiny bookstore in Tokyo that sells a single book at a time in a small room. I really love the emphasis on getting to know a single book and author intimately -- especially in an age of [digital consumerism](thoughts/attention%20economy.md).
+
+Heraclitus said, "No man steps in the same river twice." The second time around, both man and river are different than they were before. The paints and books are the same, but we change between reads and brushstrokes. The world changes, too.
+
+See also: [[thoughts/friendship]]

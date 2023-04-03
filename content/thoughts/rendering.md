@@ -25,11 +25,34 @@ How do we avoid rendering things that don't contribute to the final image?
 6. Occlusion culling, object level: build a bounding box and do a "virtual render" of the box. If no pixels passed the z-buffer then cull the whole object
 
 ## Raytracing
+### Classical
 1. For each pixel in the image
-	1. Generate a ray
-	2. For each triangle
-		1. Test intersection of triangle and ray
-	3. Compute colour based on closest object
+	1. Generate a single ray from eye to the pixel
+	2. `P :=` Intersection of closest triangle with ray
+	3. `colour_local :=` 
+		1. `shadow` if not visible
+		2. `Phong(N, L, rayDir)` if visible
+	4. `colour_reflect := raytrace(R)` if reflective
+	5. `colour_transmit = raytrace(T)` if refractive
+	6. `colour = k_local * colour_local + k_reflect * colour_reflect + k_transmit * colour_transmit`
+
+We stop ray tracing if
+- Ray hits a diffuse object
+- Ray exits the scene
+- Exceeding some maximum recursion depth
+- Contribution to final pixel colour will be too small
+
+Because it only uses a single ray, most shadows are pretty hard.
+
+This is noticeably different from *path* tracing, which produces incredibly realistic looking renders that look indistinguishable from photos. Path tracing uses many rays per pixel with the colour averaged across them. At each interaction (bounce/reflection/etc.), the ray direction changes randomly with some distribution. However, this is significantly more expensive to compute.
+
+### Distributed Ray Tracing
+We can get more effects by adding more rays
+- Anti-aliasing: multiple samples per pixel
+- Motion blur: multiple samples over time
+- Depth-of-field (lens blur): multiple samples over lens aperture
+- Glossy reflections: multiple reflected rays with random distribution
+- Soft shadows: multiple shadow rays for area light sources
 
 ## Coordinate Systems
 Which way is up?

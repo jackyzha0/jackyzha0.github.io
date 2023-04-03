@@ -115,6 +115,7 @@ Docker Compose is a tool that lets you start multiple Docker containers together
 
 ## Kubernetes and Microservices
 mIcRoSerViCeS you may hear them say. What's all the hype about? Basically, its the [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) but applied to services. This means that each responsibility should, ideally, be split out into its own service and be completely responsible for that one thing. This lends itself really easily to Docker and containers. Kubernetes is a system that makes it really easy to deploy, scale, and manage a bunch of containers, making it near ideal in creating a microservices architecture using Docker.
+
 * https://microservices.io/
 * https://medium.com/hashmapinc/the-what-why-and-how-of-a-microservices-architecture-4179579423a9
 * https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
@@ -143,6 +144,3 @@ Want to run your own Kubernetes cluster and have a lot of money to burn? GKE may
 Think GCR but Bezos.
 
 * https://medium.com/@ariklevliber/aws-fargate-from-start-to-finish-for-a-nodejs-app-9a0e5fbf6361
-
-# Closing
-I hope you learned a thing or two about Docker! If you found anything the be incomplete, poorly explained, or just garbage, feel free to open an issue about it (and maybe even make a PR improving it)! If you liked it, feel free to give it a ⭐ so both you and I can feel fuzzy inside.

@@ -5,10 +5,10 @@ tags:
 - seed
 ---
 
-More in [post on AI systems](posts/ai-systems.md)
+More in [post on AI systems](posts/agi.md)
 
 ## Dreyfus
-Dreyfus believed that, for any AI system to achieve any sort of general intelligence, it must also exhibit Dasein (being in the world). Thus, "a successful Heideggerian AI would need a perfect model of the human body – and by implication, that Dasein must be expressed as a human being, organically as well as existentially".
+Dreyfus believed that, for any AI system to achieve any sort of general intelligence, it must also exhibit Dasein (being in the world). Thus, "a successful [[thoughts/Heidegger|Heideggerian]] AI would need a perfect model of the human body – and by implication, that Dasein must be expressed as a human being, organically as well as existentially".
 
 Dreyfus's critique of the [frame](thoughts/frame%20problem.md) approach → descriptions of typical situations like going to a birthday party
 -   however, this quickly grows out of hand once again as any AI program using frames to organize millions of meaningless facts so as to retrieve the relevant frames is going to be caught in a cycle of finding frames for recognizing relevant frames for recognizing relvant facts
@@ -54,4 +54,4 @@ Problems
 -   each new attractor does not represent a thing, rather, the brain's current state is the result of the sum of the animal's past experience with the thing
 	-   constantly updated landscape of attractors is correlated with the agent's experience of the changing significance of things in the world (intentional arc)
 -   no fixed representations, when an animal learns to respond to a new odor, there is a shift in all other patterns (even those not directly involved with the learning)
-	-  different from GOFAI, memory stores in computers in which each item is positioned by a discrete address or branch of search tree
+	-  different from [[thoughts/GOFAI|GOFAI]], memory stores in computers in which each item is positioned by a discrete address or branch of search tree

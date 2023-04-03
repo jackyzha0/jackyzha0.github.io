@@ -29,7 +29,7 @@ Thank you.
 
 **[And they sat there for a while. The sun inched downwards, setting the sky ablaze.]**
 
-What do you think it means to take on an identity?
+What do you think it means to commit to an identity?
 
 *Hmm. I think there is an element of trust -- that the ground below them will hold, that tomorrow will come again, and that the ocean will continue to rise and fall. Trust is an unquestioning attitude, an absence of deliberation over reliability. To commit is to believe it as a truth about oneself.*
 
@@ -51,7 +51,7 @@ Well. What does it mean to responsible to a commitment that a past self has made
 
 Is is possible? With all the time flowing through my hands, I am afraid that I am reaching for too much and end up not catching any at all.
 
-*Well let's see. What do you like so much about [y]?*
+*Well, let's see. What do you like so much about [y]?*
 
 I think recently, I've been able to better articulate the questions I want to spend my life answering. I think I've grown as a person and [y] aligns much more with what I want in the future, both in terms of myself and and the people I surround myself with. [x] feels like the trappings of the past, the remnants of a self I'm not sure I still consider my own. Yet, I am scared to let go of [x].
 

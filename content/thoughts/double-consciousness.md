@@ -10,7 +10,7 @@ Term from DuBois, 1989
 
 Related: [hermeneutical injustice](thoughts/hermeneutical%20injustice.md), [epistemic injustice](thoughts/epistemic%20injustice.md)
 
-In the context of marginalized knowers needing to model how their actions are perceived by dominantly situated kn owers.
+In the context of marginalized knowers needing to model how their actions are perceived by dominantly situated knowers.
 
 Tom Robinson exhibits this in *To Kill a Mockingbird*, when he recognizes his 'mistake' in saying he felt sorry for Ewell.
 

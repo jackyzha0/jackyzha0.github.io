@@ -15,9 +15,7 @@ Emptiness thus does not mean nothingness (0 is not null), emptiness is the base 
 
 > In order for a glass to even be empty, it should first and foremost be there.
 
-Emptiness means empty of independent existence -- all things are [interdependent](thoughts/interdependence.md)
-
-Thus, form is emptiness but emptiness is form (existence is to depend on others).
+Emptiness means empty of independent existence -- all things are [interdependent](thoughts/interdependence.md). Thus, form is emptiness but emptiness is form (existence is to depend on others). This is sometimes referred to as dependent origination.
 
 ## Indra's Net
 [Source: Indra's net on *Wikipedia*](https://en.wikipedia.org/wiki/Indra%27s_net)

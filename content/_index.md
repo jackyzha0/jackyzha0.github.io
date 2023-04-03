@@ -4,17 +4,16 @@ tags:
 - evergreen
 ---
 
-Welcome to my little [garden](posts/networked-thought.md) on the [internet](thoughts/Internet.md) -- I'm Jacky! I spend a lot of time here [playing](posts/play.md), [[thoughts/writing|writing]], and [building out in the open](thoughts/building%20in%20public.md). It's a little unkempt in places, but I think it gives it a little charm.
+I'm Jacky. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-thought|garden]] on the [[thoughts/Internet|Internet]] -- make yourself at home!
 
-Currently, I do [[thoughts/Rhizome Research Log|independent research]] focused on better ways of relating and coexisting on the web; [[posts/towards-data-neutrality|one without platform lock-in]]. In my spare time, I create and [[thoughts/maintenance|maintain]] a number of widely used open-source [projects](thoughts/Projects.md).
+Currently, I'm exploring what agentic, [[thoughts/interoperability|interoperable]], and [[posts/agentic-computing|communal]] technology looks like in my [independent research practice](/tags/rhizome). How might we create infrastructures and technologies that empower the residents of the web to have access to the same tools as the architect?
 
-I'm curious about how we can better [incentivize](thoughts/incentives.md) [public goods](thoughts/public%20goods.md) [funding](thoughts/funding.md), support better [interactions](thoughts/interaction%20design.md) with computers and [[thoughts/Rhizome Proposal|data]], and be more responsible stewards of technology.
+On a broader level, I care deeply about creating spaces that enable others to have more *agency*: agency to ask questions without judgement; to do what they are intrinsically drawn toward; and to [[thoughts/play|play]] (because what's the point if we can't have a bit of fun?).
 
-In this era of my life, I’m working towards being someone who is [unabashedly excited and curious about the world](https://www.youtube.com/watch?v=Khfe3jBuq8c&list=PLMs_JcuNozJbxC91R5skgPpL7cnJuICun).
+As far as 'about' pages go, most try to reduce the vast complexity of a person into a couple of sentences. Here, I hope it acts as an open invitation into the many winding paths throughout this garden.
 
-Though I can't quite yet provide you a guided tour of this digital garden, I can leave you a list of places to explore as suggestions.
-
-- [The fruit garden out back](/posts): a collection of my favourite writing;
-- [The hand-crafted oak workbench](thoughts/Projects.md): a collection of projects I've hacked on;
+Here are some places you may want to visit:
+- [The oak letter desk](/posts): a collection of my favourite [[thoughts/writing|writing]];
+- [The hand-crafted workbench](thoughts/Projects.md): a selection of projects I've worked on;
 - [The crumpled pages in the recycling bin](posts/a-failure-resume.md): my failure resume;
-- [The bookshelf on the far wall](/books): books that are in some state of read, reading, or want to read.
+- [The bookshelf on the far wall](/books): books that are in some state of read, being read, or to be read.

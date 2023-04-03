@@ -5,17 +5,15 @@ tags:
 - sapling
 ---
 
-Content only has meaning if it has context
--   [emptiness](thoughts/emptiness.md)/dependent-origination: does this connect to context as potentially an [epistemic](thoughts/epistemology.md) instrument?
+Content only has meaning if it has context. Content thus must be empty of independent origination (it cannot exist on its own, see also: [[thoughts/emptiness]]).
 
-### Context on the web and in articles
--   footnotes as dynamic context → layers of context maybe?
--   hover cards < footnotes/marginalia < summary of article < article
--   on data
-	-   for data in web2, application is the context
-	-   how do we make data as first class citizens?
-	-   https://solidproject.org/
+See also: [[posts/context-collapse]]
 
-The context in [context collapse](posts/context-collapse.md)
+## Context in writing
+Footnotes and marginalia are layers of context on top of the original media. These annotations situate the original media in new contexts.
 
+## Context of Data
+For most data in web2, the application *is the context*. How do we make data as first class citizens?
+
+Does [[thoughts/interoperability|interoperable]] data mean context-free data? I don't think so. I think [[thoughts/interoperability|interoperable]] data is data that can be *translated* across contexts
 

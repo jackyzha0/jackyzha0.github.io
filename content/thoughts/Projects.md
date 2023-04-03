@@ -8,7 +8,7 @@ tags:
 
 This is a list of notable projects that I've finished and or currently maintaining. My (considerably longer) list of unfinished ideas can be found [here](thoughts/idea%20list.md).
 
-## bft-json-crdt
+## `bft-json-crdt`
 
 The first public implementation of a JSON-like Byzantine Fault Tolerant CRDT. The project implements a simplified Automerge-like CRDT as well as the ideas in Martin Kleppmann's 2022 paper on _Making CRDTs Byzantine Fault Tolerant_. The blog post also [hit #3 on Hacker News](https://news.ycombinator.com/item?id=33694568) the day it was released and has been [featured in go-to resources for CRDTs](https://crdt.tech/).
 

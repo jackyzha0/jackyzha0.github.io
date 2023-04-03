@@ -63,3 +63,6 @@ i_3 & j_3 & k_3 & P_{eye3} \\
 \end{bmatrix}$$
 
 $$M_{view} = M_{cam}^{-1}$$
+
+
+See also: [[thoughts/rendering]], [[thoughts/imaging]], [[thoughts/illumination]], [[thoughts/colour]]

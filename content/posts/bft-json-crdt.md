@@ -12,7 +12,7 @@ tags:
 
 CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you've ever had to deal with a nasty `git` merge conflict, you know how painful these can be to resolve.
 
-CRDTs mathematically guarantee that an application can *safely* update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).
+CRDTs mathematically guarantee that an application can *safely* update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time [[thoughts/collaborative software|collaboration]] is needed (e.g. text editing, presence, chat, etc.).
 
 Over the past few years, really cool open source CRDT libraries like [Automerge](https://github.com/automerge) and [Yjs](https://github.com/yjs/yjs) have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.
 
@@ -85,16 +85,16 @@ Now equipped with a 30,000ft overview of CRDTs, let's dive into how they resolve
 
 There is a whole branch of math focused on how to order things called [[thoughts/Order theory|order theory]]. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we've mathematically avoided conflicts. So how do we do that?
 
-Your first intuition may be to just use clocks. However, it would be naive to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Keeping time is famously hard.
+Your first intuition may be to just use [[thoughts/clocks]]. However, it would be naive to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Keeping time is famously hard.
 
 If we can't trust actual clocks, what can we do? Well, we can use Lamport timestamps. These track *logical time* rather than actual wall time, meaning we count number of events that have occurred rather than seconds elapsed.
 
 This timestamp is just a simple counter. For the rest of the blog post, we refer to this counter as the sequence number `seq`.
 
 - All nodes start their counter at 0
-- Everytime we perform an operation locally, we increment our counter by one
-- Everytime we broadcast a message to our peers, we attach this counter
-- Everytime we receive a message, we set our timer to `max(self.seq, incoming.seq) + 1`
+- Every time we perform an operation locally, we increment our counter by one
+- Every time we broadcast a message to our peers, we attach this counter
+- Every time we receive a message, we set our timer to `max(self.seq, incoming.seq) + 1`
 
 If `a.seq > b.seq` then event $a$ must have happened after event $b$. However, if `a.seq == b.seq`, we cannot be sure which event came first. This means that Lamport timestamps only give us a partial ordering, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with `seq = 1` even though they are different events.
 

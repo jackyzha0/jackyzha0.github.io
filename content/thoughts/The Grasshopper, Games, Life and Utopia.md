@@ -53,7 +53,7 @@ Then, to play a game is to attempt to achieve a specific state of affairs [prelu
 
 "In anything but a game the gratuitous introduction of unnecessary obstacles to the achievement of an end is regarded as a decidedly irrational thing to do, whereas in games it appears to be an absolutely essential thing to do."
 
-Games which are competitive (read: telic) involve winning and losing -- that is the aim or end of the game in the first place. The win of one implies the loss of another, a [zero sum](thoughts/zero%20sum.md) world. Playing, though, are the means which are ends themselves; the act of playing is enough and paratelic in nature. Thus, someone who plays games as an end is autotelic.
+Games which are competitive (read: [[thoughts/telic action|telic]]) involve winning and losing -- that is the aim or end of the game in the first place. The win of one implies the loss of another, a [zero sum](thoughts/zero%20sum.md) world. Playing, though, are the means which are ends themselves; the act of playing is enough and [[thoughts/paratelic action|paratelic]] in nature. Thus, someone who plays games as an end is autotelic.
 
 > Do you like the act of climbing the mountain or just being at the top? Because the latter doesn't require the first.
 

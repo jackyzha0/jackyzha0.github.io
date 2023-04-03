@@ -10,7 +10,7 @@ tags:
 
 ![](thoughts/images/Nothing%20Stops.png)
 
-None of it. The good times, nor the bad. There is no "until this is over", or "when I'm done this." There is no "when I get less busy" or "after this term." *Nothing stops.*
+Nothing stops. None of it. The good times, nor the bad. There is no "until this is over", or "when I'm done this." There is no "when I get less busy" or "after this term." *Nothing stops.*
 
 There is one Annie Dillard [quote](thoughts/quotes.md) I hold central to my 'consciousness cannon',
 
@@ -24,19 +24,17 @@ There is no permanence to this universe. If we could stop time, we would. Bill W
 
 We build and craft the most beautiful sandcastles we can, knowing they will be washed away. We get others to build with us, suspending the knowledge that this will all eventually disappear.
 
-I think that's what gives life its beauty.
+I think that's what gives life its beauty -- its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
 
-What gives life meaning is its scarcity. If one could live forever and do everything they could ever want, why wouldn't they choose it[^1]? We value the time of others because we know that is finite. Life has meaning because it is finite.
-
-Love then, is *knowingly* choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? Loving one another is always the process of deluding ourselves into believing in a better world. What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
+Love then, of the world, is *knowingly* choosing the losing side. What is love but the constant battle against entropy that drives everything apart and strips it of its salience? What greater project is there, in an unbearable time, in a perpetual future, where nothing stops? In a society that never stops, isn't loving the ultimate form of protest? To be able to be whole in your existence, to share your time on this little piece of rock drifting through space together?
 
 Companionship is valuable because it affords the opportunity to feel 'seen' by another. We can only, according to Nathaniel Braden, view ourselves conceptually but we need others to view ourselves perceptually. Other consciousnesses function like a mirror -- being seen in this way is recognition of personhood. The feeling of being seen is psychological visibility. Love then, is witness through it all.
 
-Witness is deep attention[^5]. To witness is not to tether or to pop their balloon, but to hold their strings carefully. adrienne maree brown described relationships like a spiderweb—diaphanous yet strong, thick yet porous. “A web allows things to fall through, like a sieve,” she said. “Some things are not meant to be caught.” David Whyte believed that the ultimate touchstone of a relationship is not improvement, neither of the other nor of the self. 
+Witness is deep attention[^5]. To witness is not to tether or to pop their balloon, but to hold their strings carefully. adrienne maree brown described [[thoughts/friendship|relationships]] like a spiderweb—diaphanous yet strong, thick yet porous. “A web allows things to fall through, like a sieve,” she said. “Some things are not meant to be caught.” David Whyte believed that the ultimate touchstone of a relationship is not improvement, neither of the other nor of the self. 
 
 > "The ultimate touchstone is witness, the privilege of having been seen by someone, and the equal privilege of being granted the sight of the essence of another, to have walked with them, and to have believed in them, and sometimes, just to have accompanied them, for however brief a span, on a journey impossible to accomplish alone" -- David Whyte
 
-*Nothing stops* isn't a statement about how nothing matters. Rather, it is a call to spent time on what does matter. As Patti Smith said when discussing William Blake and her creative influences, "Who are the people, ideas, and books that magnify your spirit? Find them, hold on to them, and visit them often."[^3]
+*Nothing stops* isn't a statement about how nothing matters. Rather, it is a call to reroute time on what does matter. As Patti Smith said when discussing William Blake and her creative influences, "Who are the people, ideas, and books that magnify your spirit? Find them, hold on to them, and visit them often."[^3]
 
 In the lifespan of the universe, how lucky are we to share our lives together? 
 

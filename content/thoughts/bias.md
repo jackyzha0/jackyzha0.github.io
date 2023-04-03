@@ -5,9 +5,9 @@ tags:
 - sapling
 ---
 
-More detailed post on [Bias in AI](posts/bias-bug.md). Related readings: [Design Justice](thoughts/Design%20Justice.md), [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md)
-
 Bias: a slant or preference
+
+More detailed post on [Bias in AI](posts/bias-bug.md). Related readings: [Design Justice](thoughts/Design%20Justice.md), [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md)
 
 ## Captchas
 How do you distinguish between human and non-human without discriminating against certain types of people (e.g. ethnicity, cultural background)? How does one prove their humanity without betraying anything else about them?

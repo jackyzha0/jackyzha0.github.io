@@ -15,7 +15,7 @@ why i always dislike introductions
 * When people are prompted, _“describe yourself”_, shouldn’t we be a little alarmed when they routinely describe something else?
 
 ## Intersectional Identities
-> "A man may be regarded as the point of intersection of an indefinite number of circles representing social groups" -- -   Cooley, Human Nature and the Social Order (1922)
+> "A man may be regarded as the point of intersection of an indefinite number of circles representing social groups" -- Cooley, Human Nature and the Social Order (1922)
 
 Cooley imagined affiliations and interests as a system of coordinates, with each additional group determining one's individuality and identity more accurately.
 

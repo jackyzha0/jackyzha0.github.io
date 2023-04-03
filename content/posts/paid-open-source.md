@@ -23,8 +23,7 @@ As it stands, there are two primary schools of thought about how open source sof
 
 Traditionally, software has been seen as a product of firms. Open source developers were often treated as hobbyists and the projects they made trivialized as toys. The assumption was that only companies could make ‘real’ software. However, the rise of [Internet computing](thoughts/internet%20computing.md) and collaboration tools like [[thoughts/git|Git]] have decreased the barrier to entry enough that producing software through a commons is now feasible and very much alive. The success of projects like Apache, Linux, and FreeBSD proved just how successful a commons-based method of production could be.
 
-Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then money, an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.
-
+Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then [[thoughts/money]], an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.
 
 ## Creation vs Maintenance
 > "Creation is an intrinsic motivator, maintenance usually requires extrinsic motivation"
@@ -37,7 +36,7 @@ Creating a project is fun. It’s a wild exploration into a new idea, a frivolou
 
 Just a few clicks and a few taps of your keyboard and your project is readily available to any of the 4.66 billion people around the world with [Internet](thoughts/Internet.md) access. This adrenaline rush of finally releasing the labour of your work onto the world is the moment developers are constantly chasing. For most developers, the process of creation and distribution is intrinsically motivated; it’s an enjoyable process.
 
-[Maintenance is less so.](thoughts/maintenance.md). This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
+[Maintenance is less so](thoughts/maintenance.md). This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.
 
 Code may be nearly free to create and distribute, but maintenance is still expensive.
 
@@ -50,15 +49,15 @@ This type of code is a pool resource or [public good](thoughts/public%20goods.md
 2. **Non-excludable.** If someone has a copy of the code, it is very difficult to prevent them from sharing that code with others.
 
 Any code that is in this state is easy to share, copy, and distribute. This is the type of code that lives dormant on Github, on StackOverflow answers, and in GitHub’s Arctic Vault[^2]. However, the main purpose of consuming code is not to simply read and study it, but to actually use it and to let it interact with other code.
-In doing so, we bring it to life.
 
+In doing so, we bring it to life.
 
 ### Code as an organism
 > "Open source code derives its value not from its static qualities but from its living ones."[^1]
 
-As soon as you hit CTRL-V on that snippet of code, as soon as that static code is inserted into your own, that code comes to life. It might surface  ridiculous amounts of red squigglies, break other code, or force you to rewrite your previous code just to make it work. When code transitions from a resting static state to an active living state, it starts to incur a set of hidden costs.
+As soon as you hit CTRL-V on that snippet of code, as soon as that static code is inserted into your own, that code comes to life. Immediately, it might surface ridiculous amounts of red squigglies, break other code, or force you to rewrite your previous code just to make it work. But when code transitions from a resting static state to an active living state, it starts to also incur a set of hidden costs.
 
-Like a living organism in a symbiotic relationship, there is a mutual interdependence between it and others in the software ‘ecosystem’ in order to survive. As a result, this ecosystem requires constant upkeep to ensure that components don’t fall out of balance: dependency bumps, documentation updates, and infrastructure changes.
+Like a living organism in a symbiotic relationship, there is a mutual [[thoughts/interdependence]]  between it and others in the software ‘ecosystem’ in order to survive. As a result, this ecosystem requires constant upkeep to ensure that components don’t fall out of balance: dependency bumps, documentation updates, and infrastructure changes.
 
 ## Free as in speech, not as in beer
 ‘Free’ software doesn’t refer to its price. In fact, ‘free’ software is often extremely expensive. As Richard Stallman first described free software, it’s “free as in speech, not free as in beer.” The point Stallman was trying to make was that ‘free’ refers to what one could do with the software, rather than the price tag.
@@ -66,7 +65,7 @@ Like a living organism in a symbiotic relationship, there is a mutual interdepen
 ### Latent cost of software
 In reality, code in its alive state is more like a free puppy. In the beginning, it’s a great and wonderful thing! Super fun and super cute. As it grows and gets older, you realize “geez, it actually takes a lot of my own time to take care of this thing.” Unlike a piece of inanimate furniture, bringing a living creature into one’s home comes with bringing in a new set of responsibilities too.
 
-**Marginal costs** are costs increase on a per-user basis. I mentioned earlier that these costs mean that software is actually rivalrous, meaning that at some point, the project won’t be able to support the n+1th user. Some of this cost comes from physical infrastructure like code hosting and infrastructure. However, the majority of the cost comes from user support. Say you have a billion users and only 0.1% of them require support. If it takes you roughly 10 minutes to resolve each issue, you would still need 20,833 people working 8-hour shifts a day just to be able to keep up with the support volume. Maintainers are constantly wrestling with keeping their issue volume low and questions answered. Eventually, it just becomes a hindrance preventing them from working on the core product.
+**Marginal costs** are costs increase on a per-user basis. I mentioned earlier that these costs mean that software is actually rivalrous, meaning that at some point, the project won’t be able to support the $n+1$th user. Some of this cost comes from physical infrastructure like code hosting and infrastructure. However, the majority of the cost comes from user support. Say you have a billion users and only 0.1% of them require support. If it takes you roughly 10 minutes to resolve each issue, you would still need 20,833 people working 8-hour shifts a day just to be able to keep up with the support volume. Maintainers are constantly wrestling with keeping their issue volume low and questions answered. Eventually, it just becomes a hindrance preventing them from working on the core product.
 
 **Temporal costs** are those which build up and compound over time. Most of it comes from technical debt, choices that are easier today at the expense of time and money in the future. This is the eternal battle against entropy: the inevitable decay of systems over time. When code changes, all the supporting knowledge that surrounds it must be updated too. Documentation, tutorials, programming books, videos, and more slowly become obsolete.
 
@@ -75,8 +74,7 @@ Paying off these latent costs is seldom intrinsically motivated. When people tal
 ## Funding Open Source
 I first started on BentoML[^3] as a casual contributor last summer, submitting a few decently sized PRs. It was almost all intrinsically motivated; I found issues that I enjoyed working on and that I knew I would learn lots from. Satisfied with my experience, I decided to join the team as a paid contractor expecting to just continue the type of work I was doing in the summer. As issue after issue piled on, I slowly started to realize just how much extra work being a maintainer meant and why it was a paid position. Making proposals, triaging issues, adding tests, and writing documentation took up the majority of my time. While I recognized it was important work, it was not work I was intrinsically motivated to do. Thus, to motivate people like me to get that work done, an extrinsic motivator -- in this case, money -- needed to be applied.
 
-How do we best incentivize maintainers to work tasks stripped of the very excitement and promise of creation that initially drew them to the project in the first place? There is a jarring disconnect between work that is needed versus work that is intrinsically motivated. This is where I believe open source funding should play a role. There are two main potential avenues to go about this.
-
+How do we best incentivize maintainers to work tasks stripped of the very excitement and promise of creation that initially drew them to the project in the first place? There is a jarring disconnect between work that is needed versus work that is intrinsically motivated. This is where I believe open source funding should play a role.
 
 ### Funding projects
 One possibility is to fund projects directly. This route builds a brand around the project. The status of the project then transcends any single person’s contributions and becomes a tangible entity that has the brand recognition and reputation that comes with becoming an independent entity.

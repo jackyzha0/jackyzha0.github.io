@@ -57,14 +57,10 @@ The economist Elinor Ostrom identified 8 design principles that contribute to a 
 
 "At a company, only employees can do the work, limited by their job function. But in a commons, anyone can stumble upon an advertised task and volunteer themselves. By removing 'property and contract', the commons will theoretically select for the best person for the job at a lower cost."
 
-Main types of goods
-
-| |Excludable|Non-excludable|
-|---|---|---|
-|Rivalrous|Private Goods (e.g. cars, domain names)|Commons (e.g. forests, online privacy)|
-|Non-rivalrous|Club Goods (e.g. cable, subscriptions like Netflix or Spotify)|Public Goods (e.g. air, open source code)|
+See also: [[thoughts/types of goods]]
 
 Non-rivalry: If I download code from GitHub, my decision doesn't diminish your ability to download that same code. (By contrast, if I bite into an apple and hand it to you, there is now less apple for you to eat) -- a key point here is that open source software isn't necessarily non-rivalrous especially when it comes to marginal increase in maintenance for each additional user
+
 Non-excludability: If someone owns my copy of my code, it is difficult for me to prevent them from sharing it with others. (By contrast, if I build a theme park, I can prevent people from entering by putting up a turnstile or charging admission)
 
 The implication is that support can be handled in a fully decentralized manner that will distribute its costs among users -- but someone still needs to review, manage, and process these reports. This maintenance cost is referred to as the "servicing costs" of software, noting the "asymmetry between the low cost of community participation and the high cost that others' participation places on the leaders of the community." She compares the problem to traffic congestion, where each person wants to drive their own car, but in doing so increases the congestion experienced by others, and, eventually, themself.

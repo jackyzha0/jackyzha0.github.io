@@ -220,7 +220,7 @@
 hr {
   overflow: visible; /* For IE */
   padding: 0;
-  margin: 5em auto;
+  margin: 4em auto;
   border: none;
   color: var(--gray);
   text-align: center;
@@ -237,4 +237,9 @@ hr {
     background: var(--light);
     transform: translateY(-0.1em);
   }
+}
+
+.bio > article hr {
+  margin: 3em auto;
+  width: 60%;
 }

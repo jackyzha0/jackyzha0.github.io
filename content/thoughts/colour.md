@@ -68,3 +68,18 @@ RGB is additive whereas CMY is subtractive.
 RGB and CIE are linear.
 
 McAdam ellipses are regions where colour differences are imperceptible to the average human eye.
+
+- CIE is defined with 3 imaginary lights X, Y, Z
+	- Any wavelength $\lambda$ can be matched perceptually by positive combinations
+	- X is approximately R, Y is approximately G, Z is approximately B
+	- Each monitor has its own RGB-to-XYZ transformation matrix
+
+### Physiology 
+Retina contains an uneven distribution (clustered around fovea) of rods and cones
+- Rods: sense in black and white, mainly for edge detection
+- Cones: 3 types, mostly for colour sensing
+
+Colour blindness results from missing cone types
+- Deuteranope (green deficiency)
+- Protanope (red deficiency)
+- Tritanope (blue deficiency)

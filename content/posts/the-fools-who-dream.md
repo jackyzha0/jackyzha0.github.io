@@ -23,13 +23,13 @@ tags:
 
 A year ago, I wrote myself a [[posts/2021|letter]]. In it, I told myself that if I ever found an idea I had high conviction in, I would drop everything to give it a fair shot. I hoped that I would be ambitious in my dreams and to embody a [quiet confidence](https://www.spencerchang.me/experiments/100posts/quiet-confidence/) in my own abilities and interests.
 
-[[thoughts/Rhizome Proposal|Rhizome]] turned out to be project that would let me do all of that. I spent this past summer doing independent research focused on how we can enable [[posts/towards-data-neutrality|data neutrality]] on a web dominated by data moats. I had no academic research experience, barely knew anything about distributed systems, and didn't personally know anyone else doing independent research. At the time, I had no idea this was even *called* independent research.
+[[thoughts/Rhizome Proposal|Rhizome]] turned out to be project that would let me do all of that. I spent this past summer doing independent research focused on how we can enable [[posts/towards-data-neutrality|data neutrality]] on a web dominated by data moats. I had no academic research experience, barely knew anything about [[thoughts/distributed systems]], and didn't personally know anyone else doing independent research. At the time, I had no idea this was even *called* independent research.
 
-I'm not sure what about it drew me in exactly. The project started out with a smattering of thoughts around peer-to-peer networking and what I found frustrating about it. Yet, the project took up latent headspace, simmering away quietly only to surface mid-scrub in the shower or on a walk to the bus stop. 
+I'm not sure what about it drew me in exactly. The project started out with a smattering of thoughts around [[thoughts/peer-to-peer]] networking and what I found frustrating about it. Yet, the project took up latent headspace, simmering away quietly only to surface mid-scrub in the shower or on a walk to the bus stop. 
 
 I knew that 'good' research practice usually involved writing a detailed research statement or proposal to present exactly what one would work on. I also knew that I had no clue how I would manifest the stirring pot of concepts into something legible. I spent the months leading up to summer bumping around in the dark, trying to phrase and form what exactly about this interested me so much. In my head it felt clear, but each time I tried to force those ideas through my fingers and onto the page they seemed to flit away and vanish, refusing to be expressed in any precise form.
 
-At the time, this felt like useless floundering. After all, what kind of researcher doesn't even know what they're researching?  Later on, I would find that this floundering was sense-making hard at work. Researching to figure out what you are researching... is still research. There is a certain amount of looking around and orienting yourself you need to do before you know what direction to head. I spent hours cautiously broaching the idea with friends over late night transit rides home. In most of those conversations, my friends nodded blankly, happy to see me obviously deeply invested into an idea but not really understanding what I was blabbing on about.
+At the time, this felt like useless floundering. After all, what kind of researcher doesn't even know what they're researching? Later on, I would find that this floundering was sense-making hard at work. Researching to figure out what you are researching... is still research. There is a certain amount of looking around and orienting yourself you need to do before you know what direction to head. I spent hours cautiously broaching the idea with friends over late night transit rides home. In most of those conversations, my friends nodded blankly, happy to see me obviously deeply invested into an idea but not really understanding what I was blabbing on about.
 
 In these early days, I was often dejected. I felt incredibly foolish for pursuing something I had absolutely no reason to be so deeply invested in, and I felt foolish that I couldn't explain *why* it felt so compelling to me. I felt terrible about my inability to get any grant money to sustainably work on this project. I felt a deep need to *prove myself*. Maybe it was to prove to myself that I wasn't wasting my time. Maybe it was to prove to others around me that I was doing something just as valid as their internships, startups, or academic research.
 
@@ -38,7 +38,7 @@ Over the span of a month period, I had 3 separate emotional breakdowns
 2. On May 16th: "I'm often spending 12+ hour days writing grants and I just feel so behind. And I don't get why!!!! I've been looking forward to this summer for so long."
 3. On May 27th: "Once again had a breakdown :)) Constantly feel like I'm not doing enough and that time is slipping between my fingertips..."
 
-I was in the middle of the midwit bellcurve. When I started with the project, I had a healthy dose of naivete, a belief that *anyone* could make a change and make their project work if they tried hard enough. But now, I started to believe that hard things are hard for a reason; I should leave hard problems to people who are actually skilled and have spent decades of their lives working on these problems. Who was I to think that I, an undergrad student who had still yet to take a distributed system course, would be able to contribute anything meaningful to this decades-old field?
+When I started with the project, I had a healthy dose of naivete, a belief that *anyone* could make a change and make their project work if they tried hard enough. But now, I started to believe that hard things are hard for a reason; I should leave hard problems to people who are actually skilled and have spent decades of their lives working on these problems. Who was I to think that I, an undergrad student who had still yet to take a distributed system course, would be able to contribute anything meaningful to this decades-old field?
 
 In mid-conversation with someone who's opinion I cared deeply about, I realized that I strongly needed to figure out how to untie my self-worth from my project. 
 
@@ -74,13 +74,13 @@ This realization dawned on me slowly for me over the span of about a month. I wa
 
 I didn't need to prove to anyone that what I painted on this metaphorical canvas was 'worth' the space that it took up. Instead of claiming to be some sort of expert who had all the requisite skills and knowledge, I began to see myself as an explorer, excited to share what I found with others. I let more people in to see what I was working on because I was excited to share what I found rather than afraid of what they thought of what I knew.
 
-In early June, I had my first call with people who were as equally excited about the idea as I was. I saw seasoned veterans who have worked decades on related problems ask careful questions and gave my ideas serious consideration.  These people who I had thought would likely shun or ridicule my pursuit turned instead to close collaborators and thought partners. This was refreshing. I was no longer pursuing it alone but also sharing this vision with others, seeing their eyes light up at the potential or future of it.
+In early June, I had my first call with people who were as equally excited about the idea as I was. I saw seasoned veterans who have worked decades on related problems ask careful questions and gave my ideas serious consideration.  These people, who I had thought would likely shun or ridicule my pursuit, turned instead to close collaborators and thought partners. This was refreshing. I was no longer pursuing it alone but also sharing this vision with others, seeing their eyes light up at the potential or future of it.
 
 I found it invaluable to surround myself with people like this. I lived with others who were also incredibly intellectually curious about the world. They would ask "tell me more" instead of offering blank stares of ambivalence. Their close consideration and generous imagination enabled my work to truly blossom.
 
 ---
 
-When people ask about where I am working this summer, I often laugh and reply "I'm 'funemployed'! But  what I'm *really* doing is independent research."
+When people ask about where I am working this summer, I often laugh and reply "I'm 'funemployed'! But what I'm *really* doing is independent research."
 
 Nine times out of ten, the follow up question they ask is "With who?" Usually, I laugh again and say that "that's the fun part about independent research, I get to do it on my own!"
 
@@ -88,7 +88,7 @@ Nine times out of ten, the follow up question they ask is "With who?" Usually, I
 > 
 > Nadia Asparouhova, *[The independent researcher](https://nadia.xyz/independent-research)*
 
-What I often find gets confusing for people is that **independent research doesn't mean I do it by myself**. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they *actually* want to do with their life. Neither leaves space for individual sense-making.
+What people often find confusing is that **independent research doesn't mean I do it by myself**. Rather, it refers to how my work is not tied to any particular institution. I think the whole career advice of doing internships at big companies and academic research being the two main options is incredibly flawed. Neither leaves much space for individuals to have time or space to figure out what they *actually* want to do with their life. Neither leaves space for individual sense-making.
 
 Every few months, I'll get an email or two along the lines of: "Help, I'm stuck in Leetcode hell, how do I escape and do other things?" I love these emails because I know these are people who have started that introspection process, an internal questioning of "what do I *actually* care about and why?" and are looking for containers and institutions for their work.
 

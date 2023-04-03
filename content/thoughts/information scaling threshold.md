@@ -13,7 +13,7 @@ When a society hits this information threshold, it stops functioning until it ca
 
 The [[thoughts/attention economy]] is a symptom human society hitting this information scaling threshold. Philosopher Paul Tillich [posits](https://archive.org/details/couragetobe100till) that when social sensemaking fails to keep up with reality, we experience it as a kind of mass neurosis. Everybody has a crisis of meaning at the same time. Life stops making sense.
 
-We've tried to cope through [[thoughts/Dunbar's Number|Dunbar-scale]] spaces and the [[thoughts/cozy software|cozy web]]
+We've tried to cope through [[thoughts/Dunbar's Number|Dunbar-scale]] spaces and the [[thoughts/Dark Forest Theory of the Internet|cozy web]]
 
 More in Gordon Brander's *[Thinking Together](https://subconscious.substack.com/p/thinking-together)*
 

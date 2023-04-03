@@ -11,10 +11,10 @@ The content I throw on Twitter is not something I would readily post on LinkedIn
 
 It is not 'inconsistent' for us to want to frame ourselves differently on Twitter than on Facebook, and in fact, a lot of key aspects of human behaviour point to why we default to doing so.
 
-The problem comes when these spaces start bleeding into each other, and the boundaries between the different audiences on each of them start amalgamating. The *overlap* in target audience between these spaces then becomes very large and all of these different social contexts ['collapse'](https://www.rewire.org/context-collapse-online/) and it becomes increasingly difficult to maintain these separate personalities.
+The problem comes when these spaces start bleeding into each other without our control, and the boundaries between the different audiences on each of them start amalgamating. The *overlap* in target audience between these spaces then becomes very large and all of these different social contexts ['collapse'](https://www.rewire.org/context-collapse-online/) and it becomes increasingly difficult to maintain these separate personalities.
 
 ## What's (not) in the frame
-In this [vlogbrothers video from March](https://www.youtube.com/watch?v=ZRZuEGuU_es), John Green talks about the metaphorical frame in which people present themselves. We tailor and adjust our behaviour depending on the environment we're in, or the audience we find ourselves in front of. However, in doing so, we inadvertently portray an incomplete picture – we frame only the parts we want them to see.
+In this [vlogbrothers video from March](https://www.youtube.com/watch?v=ZRZuEGuU_es), John Green talks about the metaphorical frame in which people present themselves. We tailor and adjust our behaviour depending on the environment we're in, or the audience we find ourselves in front of. However, in doing so, we inadvertently portray an incomplete picture – we frame only the parts we want them to see (see also: [[thoughts/introductions]]).
 
 > "I mean of course the central trick of the social internet, is that whenever you make something, you choose what's inside the frame, but as viewers the rest of us can't help but believe what's inside the frame, because it's literally all we can see"
 
@@ -28,7 +28,7 @@ If we're expected to keep growing as people, these thoughts and opinions will ob
 In order to answer that question, let us make a brief foray into the realm of psychology. Why do humans tend to act differently in different environments? I think three key aspects of behaviour play a role here:
 
 ### People are unique
-No one individual has the exact same interests, goals, values, and [[thoughts/identity|identity]] as you. We have different friends and environments, so we create different contexts in which we can exercise different aspects of ourselves. People find spaces where they can authentically express all the dimensions of themselves. If a situation only exercises one axis of our self-identity, we will actively seek out places to exercise other axes.
+No one individual has the exact same interests, goals, values, and [[thoughts/identity|identity]] as you. People find spaces where they can authentically express all the dimensions of themselves. If a situation only exercises one axis of our self-identity, we will actively seek out places to exercise other axes.
 
 ### Behaviour is sticky
 It is easier to travel along a path well-travelled than one covered in weeds and bush -- if you do something once, it becomes easier to do it again. Similarly, doing something with a certain context once means it becomes easier to repeat that same behaviour in that context again. If I use Twitter as my social media of choice to post memes, I'm likely to continue using it like so.
@@ -36,7 +36,7 @@ It is easier to travel along a path well-travelled than one covered in weeds and
 In some ways, this is Newton's First Law but applied to behaviour: if you do something one way, you are likely to keep doing things in that way unless encouraged to do otherwise.
 
 ### Individuals tend to conform to [group norms](thoughts/social%20contracts.md)
-In 1951, Solomon Asch conducted [an experiment](https://en.wikipedia.org/wiki/Asch_conformity_experiments) to investigate the extent of which social pressures can affect a person's behaviour. In this experiment, he asked, "Which line is the longest out of the three given?". In an individual setting, 99% of people answered correctly. However, when put in a room of actors instructed to answer incorrectly, nearly 75% of all participants gave at least one incorrect answer throughout 12 trials.
+In 1951, Solomon Asch conducted [[thoughts/Asch conformity experiments|an experiment]] to investigate the extent of which social pressures can affect a person's behaviour. In this experiment, he asked, "Which line is the longest out of the three given?". In an individual setting, 99% of people answered correctly. However, when put in a room of actors instructed to answer incorrectly, nearly 75% of all participants gave at least one incorrect answer throughout 12 trials.
 
 People conform for two main reasons:
 1. They want to fit in with the [group](/thoughts/communities) **(normative influence)**
@@ -47,7 +47,6 @@ Historically, having different behaviours in different contexts may have been ev
 Even as children, when we get hurt, we look to authority figures around us to see how to react. If our mother comes to us expressing worry and concern, we cry. If everyone around us continues to play as if everything is normal, we will brush aside the injury and continue to play with the group.
 
 Our ability to 'frame' ourselves different depending on the social situation likely stemmed from this behaviour too.
-
 
 ## Why context collapse is bad
 ![Abstract illustration of a blob framed by two picture frames](/posts/images/framing/context-collapse.png)
@@ -61,9 +60,9 @@ I’ve noticed three main strategies individuals, companies, and platforms have 
 
 1. **Lowest Common Denominator** ([Vanilla Ice Cream effect](thoughts/Vanilla%20Ice%20Cream%20effect.md)). Only making posts that anybody will be able to understand and relate to, staying away from controversial or overly personal topics. This approach places an emphasis on quantity of impressions over quality of impressions.
 
-2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](thoughts/ephemereal%20content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter feedback loop with the audience.
+2. **Realtime**. Platforms and individuals are leaning more towards [ephemereal content](thoughts/ephemereal%20content.md), like stories or streaming. The 'live' aspect of it means that the audience is encouraged to interact immediately, creating a tighter [[thoughts/feedback loops|feedback loop]] with the audience.
 
-3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages, or small closed communities. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public [internet](thoughts/Internet.md)r.
+3. **Fragmentation**. Purposefully having conversations in places where your audience is smaller, like group chats, direct messages in the [[thoughts/Dark Forest Theory of the Internet|cozy web]]. In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public [internet](thoughts/Internet.md).
 
 I don’t think there is a single 'right' approach, and in part that's why so many types of social networks exist today: they each have their own merits that incentive different approaches to communication. But one part I do want to emphasize is the tradeoff of depth and breadth in these approaches.
 
@@ -76,4 +75,4 @@ Because we're so actively a part of all of these different contexts, we are forc
 
 Different social contexts call for different social behaviours, and that's ok.
 
-*Special thanks to Anson, Ivan, Rishi, Joss, Jasmine, Kat, and Anh for helping read over and edit this piece! Wouldn't be possible without y'all :)*
+*Special thanks to Anson, Ivan, Rishi, Joss, Jasmine, Kat, and Anh for helping read over and edit this piece!

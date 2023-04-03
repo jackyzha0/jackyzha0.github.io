@@ -8,7 +8,7 @@ tags:
 
 
 - Experimentally, content-specific NCCs are identified by comparing conditions where specific conscious contents are present versus absent.
-	- Similar to probing for network activation in [[thoughts/neural networks|neural networks]] / [AI systems](posts/ai-systems.md)
+	- Similar to probing for network activation in [[thoughts/neural networks|neural networks]] / [AI systems](posts/agi.md)
 - The full NCC is the union of all content-specific NCCs.
 - Even for ambiguous figures (those weird visual illusions that have differing things depending on how you perceive it), there is a rivalry for a dominant interpretation
 	- When faced with ambiguous visual information, you don’t normally experience a combination of the different interpretations. Rather, you only see one at a time, often switching back and forth between the two.

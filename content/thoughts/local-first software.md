@@ -7,6 +7,14 @@ tags:
 
 > By centralizing data storage on servers, cloud apps also take away ownership and agency from users. If a service shuts down, the software stops functioning, and data created with that software is lost.
 
+Why local first?
+
+-   1-5yr time scale: access benefits, computing literacy
+    -   [http://viznut.fi/texts-en/permacomputing.html](http://viznut.fi/texts-en/permacomputing.html)
+    -   Any community that uses computers would have the ability to create its own software. A local software would address local needs better than the generic "one size fits all" solutions would.
+-   50yr time scale: change in how we view computing (interop, intersubjective, etc)
+-   5000yr time scale: enable interplanetary collaboration
+
 ## Ink and Switch
 [You own your data, in spite of the cloud](https://www.inkandswitch.com/local-first/)
 

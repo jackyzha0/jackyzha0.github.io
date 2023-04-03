@@ -36,7 +36,7 @@ Discovery cannot be a setup; invention cannot be scheduled
 
 People often fear that using computer models for people will lead to mechanical or linear thinking: They worry about people losing respect for their intuitions, sense of values, powers of judgement. They worry about instrumental reason becoming a model for good thinking. I take these fears seriously but do not see them as fears about computers themselves but rather as fears about hwo culture will assimilate the computer presence.
 
-Relevant to [AI systems](/posts/ai-systems)
+Relevant to [AI systems](posts/agi.md)
 The definition of artificial intelligence can be narrow or broad. In the narrow sense, AI is concerned with extending the capacity of machines to perform functions that would be considered intelligent if performed by people. Its goal is to construct machines, and, in doing so, it can be thought of as a branch of advanced engineering... In order to make a machine capable of learning, we have to probe deeply into the nature of learning. And from this kind of research comes the broader definition of artificial intelligence: that of cognitive science.
 
 "The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of 'being wrong.'"

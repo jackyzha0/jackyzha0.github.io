@@ -84,14 +84,14 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Local spaces of abundance: "Oases give us the breathing room to experience the fullness and richness of our humanity. In an oasis, we have the safety, space, and resources to begin blossoming into more fully realized versions of ourselves."
 
 ### February 15th
-- Gave a talk about [[posts/communal-computing|communal computing]] at the [DWeb YVR node](https://dwebyvr.org/) that went really well
+- Gave a talk about [[posts/agentic-computing|communal computing]] at the [DWeb YVR node](https://dwebyvr.org/) that went really well
 	- At first, I was really nervous that people would just dismiss what I had to say because I was so young with statements like "oh he's so naive" or "what does *he* know about how the internet works"
 	- But really, people seemed to really resonate with the talk
 	- If anything, it felt like it renewed their confidence that there was still young people worried about and thinking about problems like these
 
 ### February 11th
 - I really like how both Matrix and Email allow for people to host separately and still interop with each other
-- [De-premeterizing](https://en.wikipedia.org/wiki/De-perimeterisation) the walled gardens of the web
+- [De-perimeterizing](https://en.wikipedia.org/wiki/De-perimeterisation) the walled gardens of the web
 - Lots of reading about networks today...
 - I feel like each of the components of this project on their own could be full-fledged companies on their own. I can easily see how I could sink my entire life into this line of work
 
@@ -156,7 +156,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- Everything is pub-sub
 		- What does a protocol level inbox/outbox system for the web look like?
 	- Now, directly addressing people or applications is super hard because of [[thoughts/distributed systems]], [[thoughts/NAT]], and a bunch of other nasty things
-	- See also: [[posts/communal-computing|communal computing]]
+	- See also: [[posts/agentic-computing|communal computing]]
 	- What if we had Docker-namespace- or [val.town](http://val.town)-style application network addressing?
 - Notes on Braid research
 	- [[thoughts/Antimatter|Antimatter]]
@@ -435,7 +435,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- This also means we can do away (?) with SQL migrations
 
 ### December 28th
-- Finally finished up my blog post on [[posts/communal-computing|Communal Computing]]! It turns out, sharp feedback leads to better writing, who would have ever thought :')
+- Finally finished up my blog post on [[posts/agentic-computing|Communal Computing]]! It turns out, sharp feedback leads to better writing, who would have ever thought :')
 - Did a bit more thinking about Kleppmann's *Recovering from key compromise in decentralised access control systems*
 	- I feel like there is a close connection to be made with [[thoughts/Arrow's Impossibility Theorem]] but haven't been able to formally show it
 	- Perhaps using Quorum Certificates for group membership voting?

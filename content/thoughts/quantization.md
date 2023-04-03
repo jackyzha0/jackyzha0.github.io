@@ -1,13 +1,26 @@
 ---
-title: "Labels and Quantization"
+title: "Labels, quantization, and legibility"
 date: 2021-05-04T22:22:23-04:00
 tags:
 - sapling
+aliases:
+- legibility
 ---
 
-> "Where is the knowledge we have lost in the information?" -- T.S. Eliot's "The Rock"
+> "Legibility is a condition of manipulation. Any substantial state intervention in society -- to vaccinate a population, produce goods, mobilize labour, tax people and their property, conduct literacy campaigns, conscript soldiers, enforce sanitation standards, catch criminals start universal schooling -- requires the invention of units that are visible"
+> 
+> "The great advantage of such tunnel vision is that it brings into sharp focus certain limited aspects of an otherwise far more complex and unwieldy reality."
+> 
+> ([[thoughts/Seeing like a State]])
 
-Our obsession of applying labels to everything extends to even whether a [hot dog is a sandwhich or not](https://www.hot-dog.org/culture/hot-dog-sandwich)
+But yet, most complexities of human life fail to be marshalled into a single regulatory code; any codification would be partly arbitrary and artificially static. To codify local practices was thus a profoundly [[thoughts/Do Artifacts Have Politics|political]] act.
+
+This process of legibility becomes dangerous when it forcefully shapes users. In the process of being made legible, nuance is excluded. Legibility means that ‘only what matters’ and can be quantified is kept; all else is discarded. This is especially dangerous when that legibility happens without the choice of the users.
+
+See also: [[thoughts/To Live in their Utopia]], [[thoughts/Seeing like a State]]
+
+## Labels
+Our obsession of applying labels to everything extends to even whether a [hot dog is a sandwhich or not](https://www.hot-dog.org/culture/hot-dog-sandwich).
 
 "Accuracy is more useful in entry-level jobs and for novices, because as skill increases, quantification of skill becomes harder."
 
@@ -15,35 +28,10 @@ Why do we have labels in the first place?
 - they help us to communicate complex ideas between each other without having to explain our entire mental models
 - they are attached to societal connotations and perceptions of certain concepts
 - they give legitimacy in the form of social proof to concepts
-More on this in [terminology](thoughts/terminology.md)
 
-Are overloaded terms still useful? (e.g. [hacker](thoughts/Hackers.md) has so many connotations attached to it) At that point, do we need to create new [terminology](thoughts/terminology.md)? See: [hermeneutical injustice](thoughts/hermeneutical%20injustice.md)
-
-## [Qualia](thoughts/qualia.md)
-Is there any anyway to label or quantify the subjective human experience? Probably not.
-
-If the same apple sends two very different signals to two different people's brains, how is it that we decipher it to be [semantically](thoughts/semantics.md) identical?
-
-Not sure if there's any way to easily do this
-
-## Non-semantic Information
-"[the] shadows, wind, rust, in the signs of wear on a well-trodden staircase, the creaks of a battered bridge — all the indexical messages of our material environments" From [A city is not a computer](thoughts/A%20City%20is%20not%20a%20Computer.md)
+See also: [[thoughts/terminology]], [[thoughts/ontology]]
 
 ## Concepts
 - [Goodhart's Law](thoughts/Goodhart's%20Law.md)
 * McNamara Fallacy: Also known as the quantitative fallacy: making a decision involving purely quantitative observations (ignoring all others) is often wrong. [Source](https://en.wikipedia.org/wiki/McNamara_fallacy)
 * Procrustean: an arbitrary standard is used to measure success, while completely disregarding obvious harm that results from the effort
-
-## Are labels helpful? 
-In a data-driven world, can we and should we try to quantize everything?
-
-Some metrics that are inherently v difficult to quantize (e.g. quality of engagement) and others that are more easy to quantize and thus optimize for (like engagement)
-
-## On Algorithmic decision making
-[Source: Can you make AI fairer than a judge? Play our courtroom algorithm game in *MIT Technology Review*](https://www.technologyreview.com/2019/10/17/75285/ai-fairer-than-judge-criminal-risk-assessment-algorithm/amp/)
-
-No matter how much data we collect, two people who look the same to the algorithm can always end up making different choices.
-
-We gave you two definitions of fairness: keep the error rates comparable between groups, and treat people with the same risk scores in the same way. Both of these definitions are totally defensible! But satisfying both at the same time is impossible.
-
-relevant bit on algorithms and algorithmic decision making -> [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md)

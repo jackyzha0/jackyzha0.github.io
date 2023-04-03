@@ -3,6 +3,8 @@ title: "Explainability"
 date: 2021-10-11
 tags:
 - sapling
+aliases:
+- interpretability
 ---
 
 [European Union adopted new data-protection rules](https://arxiv.org/abs/1606.08813) in 2016 that include a legal right to an explanation of decisions made by algorithms.

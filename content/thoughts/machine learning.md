@@ -7,8 +7,6 @@ tags:
 ---
 
 ## Theory
-Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-
 We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
 
 - [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets
@@ -43,33 +41,12 @@ Main topics:
 - [[thoughts/semantics#Deep Learning Semantics|Deep learning Semantics]]
 - [[thoughts/transformers|Transformers]]
 - [[thoughts/generative models|Generative Models]]
+- Philosophy
+	- [[thoughts/GOFAI]]
+	- [[thoughts/NFAI]]
 
 Related background:
 - [[thoughts/linear algebra|Linear Algebra]]
 - [[thoughts/probability|Probability]]
 - [[thoughts/calculus|Calculus]]
 	- [[thoughts/automatic differentiation|Automatic Differentiation]]
-
-## Philosophy
-### GOFAI (good old-fashioned AI)
--   this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning
--   finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern
--   problem solvers often use canny, methodical exploration
-	-   neither algorithmic nor random
-	-   a familiar sort of articulate reasoning or thinking a problem out
-		-   "if only i could get that, then I could nail this down; but in order to get that, I would need such and such"
--   GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given
--   grounded in the possibility of translation — semantic interpretation
-
-### NFAI (new-fangled AI)
-- see also: [[thoughts/neural networks]]
--   falls under connectionism and [connectionist networks](thoughts/connectionist%20networks.md)
-	- relies on computers the same way a weather service does, to simulate digitally systems that are not in themselves digital
--   adept at finding various sort of similarities among patterns, at recognizing repeated (or almost repeated) patterns and filling in missing parts of incomplete patterns
--   NFAI learns from examples (but not in the same way humans do)
--   inspired by the structure of the brain, but more deeply, by the importance and ubiquity of non-formal pattern reasoning
--   very grab-bag term → anything that isn't GOFAI
--   argument that a lot of human intelligence is not embodied in anyone, its a part of the world: [Extended Mind Hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
--   e.g. through the design of tools like hammers, our architecture, etc.
--   definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself
-

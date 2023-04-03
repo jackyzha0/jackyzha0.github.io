@@ -22,7 +22,7 @@ A lot of it comes down to the fact that natural language processing ([[thoughts/
 
 We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.
 
-Specifically, the form of machine learning we will be using is called **supervised learning,** in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.
+Specifically, the form of machine learning we will be using is called **[[thoughts/supervised learning]],** in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.
 
 ## The data
 
@@ -33,15 +33,12 @@ Of course, if we want to perform supervised learning, we’re going to need a lo
 Our team sent out an interest survey in early January in which we asked 3 questions:
 
 1. How would you answer if you were trying to visit a distracting site while trying to focus? (eg. youtube, facebook, etc)
-
-1. How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)
-
-1. How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)
+2. How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)
+3. How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)
 
 We used these answers to form the basis of our very first dataset. We ended up getting a surprising amount of entries, ending with 148 responses to 3 questions and totalling 444 different observations. Here’s what some of that data looks like after tidying it up:
 
 > We classified any answer to Q1 as invalid and Q2 + Q3 as valid
-
 
 | intent | valid |
 |-|-|
@@ -59,7 +56,7 @@ We used these answers to form the basis of our very first dataset. We ended up g
 
 ### Closed Beta (790 entries)
 
-After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a .csv file. A few examples are show below:
+After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a `.csv` file. A few examples are show below:
 
 | intent | url |
 |-|-|
@@ -81,7 +78,6 @@ These were then hand-labelled by our reflect team in a similar format as the sur
 
 Finally, we created a Google Forms through which we directly asked beta testers if a decision made by reflect’s intent classifier was faulty. Specifically, we asked what they input, and what they expected. Here are a few examples:
 
-
 | input | valid |
 |-|-|
 | reply to a friend about a lab | yes |
@@ -94,14 +90,12 @@ This entire section of the dataset was only 37 observations, but it drastically 
 
 After aggregating and combing all our data into one common format, we ended up with a grand total of 1271 observations. They looked something like this:
 
-
 | input | expected |
 |-|-|
 | fail school by watching youtube | no |
 | sdlkjasd | no |
 | making a quick product post (should take <10 min) | yes |
 | ... | ... |
-
 
 ### So?
 
@@ -238,7 +232,7 @@ Here’s how we define it in our [Keras code](https://github.com/jackyzha0/refle
 inputs = Input(name='inputs', shape=[max_seq_len])
 ```
 
-Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is max_seq_len units long. When we trained our model, this was set to 75.
+Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is `max_seq_len` units long. When we trained our model, this was set to 75.
 
 ```python
 layer = Embedding(vocab_size, 64, input_length=max_seq_len)(inputs)
@@ -248,7 +242,7 @@ Next up, we have the Embedding layer. We could get into a really technical discu
 
 ![credit: Rutger Ruizendaal, 2017](https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD)*credit: Rutger Ruizendaal, 2017*
 
-Essentially, it embeds tokens in a [[thoughts/latent-factor model|higher dimension vector space]], where distance between tokens represents its similarity.
+Essentially, it [[thoughts/latent-factor model|embeds]] tokens in a [[thoughts/latent-factor model|higher dimension vector space]], where distance between tokens represents its similarity.
 
 ```python
 layer = LSTM(64, return_sequences = True)(layer)

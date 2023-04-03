@@ -34,3 +34,8 @@ Mental properties belong only to genuine individuals, not to mere aggregates
 Then, what is the boundary of the genuine individual? This is a problem of embodiment. To be a genuine individual is not simply to be a particular (as opposed to a conglomerate or universal) but also a system that has some kind of bounded organizational unity through [autopoiesis](thoughts/autopoiesis.md) -- this is a body
 
 Their own emergence problem: how do genuine individuals emerge from particular that aren't individuals/subjects of experience? It doesn't solve the problem of accounting for the place of consciousness in nature, it just relocates it
+
+## Cellular Automata
+[Source](https://www.youtube.com/watch?v=X-iSQQgOd1A)
+
+Mesmerizing video by [Sebastian Lague](https://www.youtube.com/user/Cercopithecan) on [how complex (and beautiful) behaviour can arise out of simple rules.](thoughts/emergent%20behaviour.md) I've been wanting to get into experimenting with shaders and graphics stuff and this *might* just be the slight nudge I needed.

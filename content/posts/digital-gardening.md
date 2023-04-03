@@ -7,7 +7,7 @@ tags:
 
 > As of 2021, this process is no longer accurate. I've embraced a much more networked form of note taking which I've written about [here](posts/networked-thought.md) and [[thoughts/the garden and the stream|here]].
 
-The first image that comes to my head when I hear the word 'gardening' is of a small plot with some leafy greens sprouting their heads from an earthy bed. A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn't too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.
+A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn't too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.
 
 A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.
 
@@ -36,13 +36,13 @@ These are the seeds I plant in my garden, but these seeds will stay seeds unless
 
 ## Watering the plants
 
-I have a Notion page of random thoughts and ideas. Whenever I come across something interesting in a conversation or book or article, I file it away in this Notion page. Slowly, categories have appeared as blog posts, articles, and papers coalesce and self-organize.
+I keep a bunch of random thoughts and ideas in my new tab page. Whenever I come across something interesting in a conversation or book or article, I file it away here. Slowly, categories have appeared as blog posts, articles, and papers coalesce and self-organize.
 
 This input of information -- the water -- is what allows the ideas to grow. Just as it's not enough to just water a plant once and forget about it, I've found that in-taking information inconsistently is about as good as not doing it at all. To be an effective watering can, I need to be intentional and consistent with my watering.
 
-My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I'd always just read a cool post, follow a few hyperlinks, nod to myself and say "huh", and maybe forward it to a friend or two. While it may have been entertaining to read, I got no value out of it. Now that I've started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I'm actually taking away from each piece. [[thoughts/writing|Writing]], specifically on this blog and on my newsletter (which you can subscribe to at the bottom of this page), has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others -- quite literally picking the fruit of my labour. 
+My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I'd always just read a cool post, follow a few hyperlinks, nod to myself and say "huh", and maybe forward it to a friend or two. While it may have been entertaining to read, I got no real value out of it. Now that I've started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I'm actually taking away from each piece. [[thoughts/writing|Writing]], specifically on this blog, has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others -- quite literally picking the fruit of my labour. 
 
-> We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. &mdash; Joel Hooks
+> We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. -- Joel Hooks
 
 Now that I have all of these new-found ideas and tidbits of information, what do I do with them? Keep growing them forever? At some point on the [exploit explore](thoughts/exploit%20explore.md) tradeoff, this knowledge should be applied to something in order to manifest it into something useful. The problem is, which ideas get priority of my time and effort?
 
@@ -50,7 +50,7 @@ Now that I have all of these new-found ideas and tidbits of information, what do
 
 ## Pulling weeds
 
-No garden has unlimited space or nutrition to go around. Maybe you have a bigger garden than most, but that doesn't mean you can grow whatever you want silly-willy. Some will need more space than others and others you simply just cannot grow in the same garden plot.
+No garden has unlimited space or nutrition to go around. Maybe some have a bigger garden than most, but that doesn't mean you can grow whatever you want in it without abandon. Some will need more space than others and others you simply just cannot grow in the same garden plot.
 
 Similarly, no one has unlimited time and energy they can put into projects and learning. I, unfortunately, have yet to fully learn this lesson. After having an empty plot for so long, having a little greenery show up has inspired me into a planting frenzy, trying to cram as much into the garden as possible.
 

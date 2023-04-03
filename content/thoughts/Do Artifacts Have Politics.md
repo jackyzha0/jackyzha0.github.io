@@ -3,6 +3,8 @@ title: "Do Artifacts Have Politics"
 date: 2021-11-23
 tags:
 - seed
+aliases:
+- political
 ---
 
 by *Langdon Winner*

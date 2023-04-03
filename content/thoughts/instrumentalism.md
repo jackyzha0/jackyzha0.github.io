@@ -9,7 +9,7 @@ tags:
 
 Reminiscent of the [move fast and break things](thoughts/move%20fast%20and%20break%20things.md) Silicon Valley ethic.
 
-"This tendency to instrumentalize, or to treat something as a means or resource for achieving some end goal, shows up in the personal lives of many technologists. Many types of “fun” are made [telic](https://en.wikipedia.org/wiki/Reversal_theory#Serious/Playful_(Telic/Paratelic))."
+"This tendency to instrumentalize, or to treat something as a means or resource for achieving some end goal, shows up in the personal lives of many technologists. Many types of “fun” are made [[thoughts/telic action|telic]])."
 
 > _“All that was good becomes data. All that was beautiful is now efficient.”_ (_Jacques Ellul, in The Technological Society_)
 

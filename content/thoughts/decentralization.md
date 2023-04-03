@@ -5,6 +5,8 @@ tags:
 - sapling
 ---
 
+The value of decentralization is in empowering people to act decisively within their social contexts
+
 ![[thoughts/images/decentralization.png]]
 
 See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
