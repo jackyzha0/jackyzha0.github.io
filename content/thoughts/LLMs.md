@@ -39,3 +39,10 @@ AI is helpful in situations where you need ‘good enough’ code/art/writing wh
 
 I don't think it's ready to replace anything that requires rigorous thought or reasoning quite yet because it is still very prone to confidently hallucinating wrong answers. LLMs should acts as an atlas and not a map (see: [[thoughts/plurality]])
 
+## End-user programming
+See also: [[thoughts/cozy software|personal software]]
+
+[Source](https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html)
+
+> **I think it’s likely that soon all computer users will have the ability to develop small software tools from scratch, and to describe modifications they’d like made to software they’re already using**
+

@@ -11,6 +11,8 @@ According to the World Intellectual Property Organization, intellectual property
 Perhaps can also be called intellectually monopoly
 
 ## Property Rights
+See also: [[thoughts/rights]]
+
 Proposed by John Locke
 
 - people have a right to property in their own person.

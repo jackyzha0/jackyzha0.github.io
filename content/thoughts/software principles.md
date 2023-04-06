@@ -6,7 +6,7 @@ tags:
 - sapling
 ---
 
-> A Pattern Language for developing software
+> [[thoughts/A Pattern Language|A Pattern Language]] for developing software
 
 Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts)
 

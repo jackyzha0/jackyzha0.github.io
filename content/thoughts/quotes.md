@@ -30,3 +30,4 @@ Some quotes to live by.
 21. "Many a failure of love follows on the—usually false—opinion that we have exhausted the other person’s inside, that there is no further promise of depth." ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
 	- Deep attention as diversification: gaining access to a bit more of the world.
 22. "exhaling does not take valuable time away from inhaling"
+23. "When the winds of change blow — some people build walls, others build windmills." — Chinese Proverb

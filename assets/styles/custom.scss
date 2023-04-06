@@ -209,7 +209,7 @@
     animation: fadeIn ease 0.5s;
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-delay: #{$i * .08 + 2.2}s;
+    animation-delay: #{$i * .08 + 0.5}s;
     z-index: #{-$i + 10 * ($j+1)};
     position: relative;
   }

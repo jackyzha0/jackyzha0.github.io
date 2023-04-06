@@ -18,7 +18,7 @@ She guides the reader into how the 'unmarked user' and universal design erases c
 Design Justice is a book that invites us to "center people who are too often marginalized by design". More importantly, it urges us to work towards an equitable world for everyone: one which treats design justice not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.
 
 ## Reflection
-Design sites are valorized as places of learning, making, and building and the intersection of social movements and the counterculture. Why then, have they become increasingly corporate places of extraction of free labour?
+Design sites are valorized as places of learning, making, and building and the intersection of social movements and the [[thoughts/counterculture|counterculture]]. Why then, have they become increasingly corporate places of extraction of free labour?
 
 This cooptation of [hacker](thoughts/Hackers.md) culture, hackathons as design sites in particular, by neoliberalism has been on the back of my mind ever since reading the chapter on design sites in Design Justice. As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time, moving from safe spaces for idea exploration to increasingly corporate, time-bound, events where hackers spin up apps to test company products in exchange for the slim chance of winning prizes and recognition.
 

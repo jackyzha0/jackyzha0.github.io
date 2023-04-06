@@ -14,7 +14,7 @@ Thinking about it in terms of technology as a multiplicative tool. Is it then mo
 Follow up: is there any way we can use tech as a [running shoe instead of a crutch](thoughts/crutch%20and%20shoe%20metaphor.md)?
 
 ## What does it mean to walk away from Omelas?
-Joining the counterculture rather than feeding into the status quo: [From Counterculture to Cyberculture](thoughts/From%20Counterculture%20to%20Cyberculture.md). Rejecting the capitalist society and 'returning to the land'
+Joining the [[thoughts/counterculture|counterculture]] rather than feeding into the status quo: [From Counterculture to Cyberculture](thoughts/From%20Counterculture%20to%20Cyberculture.md). Rejecting the capitalist society and 'returning to the land'
 
 Immersion in the [virtual worlds](thoughts/virtual%20worlds.md) rather than reality?
 

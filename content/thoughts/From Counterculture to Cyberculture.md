@@ -6,6 +6,8 @@ tags:
 - book
 ---
 
+See also: [[thoughts/counterculture]]
+
 ## Quotes
 ### Digital Communalism
 See: [[thoughts/tribe flourishing]]

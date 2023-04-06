@@ -85,7 +85,7 @@ Thus, we avoid storing duplicate files!
 Text can be very efficiently compressed using something like the LZW or DEFLATE compression algorithms. If you compress every blob before computing its SHA1 and saving it to disk you can reduce the total storage size of the project history significantly.
 
 ## Handy Commands
-Think about `git` like a file time machine -- it allows you to traverse and manage an entire multiverse of files
+Think about `git` like a file time machine -- it allows you to traverse and manage an entire multiverse of files (see: [[thoughts/bitemporal]])
 - Unstaged files: anything you've done to your current branch of the world that hasn't been staged or committed
 - Staged files: things that you've marked as things you want to commit to a snapshot
 - A commit: a snapshot in time

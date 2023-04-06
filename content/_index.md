@@ -8,7 +8,7 @@ I'm Jacky. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-
 
 Currently, I'm exploring what agentic, [[thoughts/interoperability|interoperable]], and [[posts/agentic-computing|communal]] technology looks like in my [independent research practice](/tags/rhizome). How might we create infrastructures and technologies that empower the residents of the web to have access to the same tools as the architect?
 
-On a broader level, I care deeply about creating spaces that enable others to have more *[[thoughts/agency]]*: agency to ask questions without judgement; to do what they are intrinsically drawn toward; and to [[thoughts/play|play]] (because what's the point if we can't have a bit of fun?).
+On a broader level, I care deeply about creating spaces that enable others to have more [[thoughts/agency]]: agency to ask questions without judgement; to do what they are intrinsically drawn toward; and to [[thoughts/play|play]] (because what's the point if we can't have a bit of fun?).
 
 As far as 'about' pages go, most try to reduce the vast complexity of a person into a couple of sentences. Here, I hope it acts as an open invitation into the many winding paths throughout this garden.
 

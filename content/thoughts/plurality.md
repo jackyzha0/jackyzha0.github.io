@@ -8,6 +8,12 @@ aliases:
 - pluralism
 ---
 
+[Source: pluriverse.world](https://pluriverse.world/)
+
+Plurality refers to a state in which multiple alternatives co-exist. Classical pluralism in a political science context takes this and applies it to the distribution of power within a political system.
+
+See also: [[thoughts/Archipelago]]
+
 ## Globality versus Globalization
 From *[[thoughts/Archipelago]]*
 
@@ -27,3 +33,10 @@ It is a collection of different ways of viewing, one that acknowledges many spec
 > Instead of focusing on “private” v. “public,” we seek to protect and enable the emergence of a rich diversity of “publics.
 
 See also: [[thoughts/privacy]]
+
+## Polycultures
+In agriculture, monoculture refers to the cultivation of a singular crop in an area. Though monocultures may be efficient, they are more susceptible to disease and pests.
+
+Three Sisters, a gardening style of Native peoples, refers to the interdependent relationship between species of corn, squash, and beans. Although each of the species have different needs and growth patterns, they work alongside each other in a holistic ecosystem of growth
+
+See also: [[thoughts/Seeing like a State]]

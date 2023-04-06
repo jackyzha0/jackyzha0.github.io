@@ -10,7 +10,7 @@
     <img id="banner" src="/banner.svg" />
     <div class="bio">
         <div class="writing-sidebar">
-            <div class="delay t-3">
+            <div class="delay t-2">
                 <h2>Recent Writing</h2>
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
                 <ul class="delay stagger">
@@ -30,7 +30,7 @@
                 </ul>
                 <a href="/posts">See {{sub (len $writing) 3}} more →</a>
             </div>
-            <div class="delay t-4">
+            <div class="delay t-3">
                 <h2>Recent Notes</h2>
                 {{$notes := where .Site.RegularPages "Section" "thoughts"}}
                 <ul class="delay stagger">
