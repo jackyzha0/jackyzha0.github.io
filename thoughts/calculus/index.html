@@ -11,6 +11,28 @@
     content="Partial Derivatives Linear Functions with more than one variable. e.g. $f(x)$ where $x \in \mathbb{R}^3$ the following multivariate linear
 $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#43; a_3x_3 &#43; b \ &amp; = \sum_{i=1}^3 a_ix_i &#43; b \ &amp; = a^Tx &#43; b \end{split} \end{equation} $$"
   />
+  <meta property="og:title" content="Calculus">
+  <meta property="og:description" content="Partial Derivatives Linear Functions with more than one variable. e.g. $f(x)$ where $x \in \mathbb{R}^3$ the following multivariate linear
+$$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#43; a_3x_3 &#43; b \ &amp; = \sum_{i=1}^3 a_ix_i &#43; b \ &amp; = a^Tx &#43; b \end{split} \end{equation} $$">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/calculus/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Calculus" />
+  <meta name="twitter:description" content="Partial Derivatives Linear Functions with more than one variable. e.g. $f(x)$ where $x \in \mathbb{R}^3$ the following multivariate linear
+$$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#43; a_3x_3 &#43; b \ &amp; = \sum_{i=1}^3 a_ix_i &#43; b \ &amp; = a^Tx &#43; b \end{split} \end{equation} $$" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Calculus
   </title>
@@ -60,7 +82,7 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ $$ \begin{equation} \begin{split} f(x_1, x_2, x_3)&amp; = a_1x_1 &#43; a_2x_2 &#
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -442,7 +464,7 @@ f(x)&amp; = \frac 1 2 x^TAx + b^Tx + c \\ &amp; = \sum_{i=1}^2 \sum_{j=1}^2 a_{i
 \end{equation}
 $$</p>
 <p>If $A$ is symmetric, $\nabla f(x) = Ax+b$. In the non-symmetric case, $\nabla f(x) = \frac 1 2 (A + A^T)x + b$</p>
-<p>Generalizations of gradients for $d$ dimensions given:</p>
+<p>Generalizations of gradients for $d$ dimensions given (expressed as matrices and vectors):</p>
 <ol>
 <li>$A = X^TX$</li>
 <li>$b$ = $X^Ty$</li>
@@ -504,7 +526,6 @@ $$</p>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -535,7 +556,7 @@ $$</p>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

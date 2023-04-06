@@ -60,7 +60,8 @@ CRDTs are a family of data structures that are designed to be replicated across 
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/functional-programming/</guid>
-      <description>Syntax Quirks  $ :: (a -&amp;gt; b) -&amp;gt; a -&amp;gt; b is function application (adds implicit parentheses and makes it right associative instead of left associative)  Normally, sort &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; would be interpreted as (sort &amp;quot;abc&amp;quot;) ++ &amp;quot;def&amp;quot; If we use the $ operator, we can do sort $ &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; which is interpreted as sort (&amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot;) as intended.</description>
+      <description>Terminology ![[thoughts/images/Haskell typeclasses.png]]
+Category Theory In essence, a simple collection which can be thought of as a graph. Three components</description>
     </item>
     
     <item>

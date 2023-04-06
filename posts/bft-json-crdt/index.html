@@ -11,6 +11,28 @@
     content="![[thoughts/images/bft-crdt-cover.jpg]]
 CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place."
   />
+  <meta property="og:title" content="Building a BFT JSON CRDT">
+  <meta property="og:description" content="![[thoughts/images/bft-crdt-cover.jpg]]
+CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/bft-json-crdt/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Building a BFT JSON CRDT" />
+  <meta name="twitter:description" content="![[thoughts/images/bft-crdt-cover.jpg]]
+CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Building a BFT JSON CRDT
   </title>
@@ -60,7 +82,7 @@ CRDTs are a family of data structures that are designed to be replicated across 
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ CRDTs are a family of data structures that are designed to be replicated across 
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ CRDTs are a family of data structures that are designed to be replicated across 
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ CRDTs are a family of data structures that are designed to be replicated across 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -990,6 +1012,115 @@ Nov 16, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -1447,6 +1578,115 @@ Nov 16, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -1478,6 +1718,115 @@ Nov 16, 2022
           
         
         
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
       
     
     
@@ -3975,7 +4324,7 @@ Nov 16, 2022
 
 <p><img src="/thoughts/images/bft-crdt-cover.jpg" width="auto" /></p>
 <p>CRDTs are a family of data structures that are designed to be replicated across multiple computers without needing to worry about conflicts when people write data to the same place. If you&rsquo;ve ever had to deal with a nasty <code>git</code> merge conflict, you know how painful these can be to resolve.</p>
-<p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time collaboration is needed (e.g. text editing, presence, chat, etc.).</p>
+<p>CRDTs mathematically guarantee that an application can <em>safely</em> update their local state without needing to coordinate with all of its peers. By avoiding the extra coordination overhead, they have very good latency properties and work well in scenarios where real-time <a href="/thoughts/collaborative-software" rel="noopener" class="internal-link" data-src="/thoughts/collaborative-software">collaboration</a> is needed (e.g. text editing, presence, chat, etc.).</p>
 <p>Over the past few years, really cool open source CRDT libraries like 
 <a href="https://github.com/automerge" rel="noopener">Automerge</a> and 
 <a href="https://github.com/yjs/yjs" rel="noopener">Yjs</a> have emerged that enable developers to easily add these replicated data types to their own applications. Their support for JSON means that most web-applications can just plug-and-play, enabling collaborative experiences to be created easily.</p>
@@ -3987,13 +4336,13 @@ Nov 16, 2022
 <p><em>This blog post is really long so use the Table of Contents at the top to jump to whatever section interests you the most!</em></p>
 <a href="#how-crdts-differ-from-traditional-databases"><h2 id="how-crdts-differ-from-traditional-databases"><span class="hanchor" ariaLabel="Anchor"># </span>How CRDTs differ from traditional databases</h2></a>
 <p>Before we really dive into CRDT internals, we first need to understand how they are different from databases. When I normally think of shared state, I think of databases. However, the guarantees that databases provide are <em>really</em> different than the ones CRDTs provide.</p>
-<p>Traditional databases focus on a property called <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>, which guarantees that all operations behave as if executed on a <em>single copy of the data</em>. We call this canonical view the <strong>primary site</strong>. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.</p>
+<p>Traditional databases focus on a property called <a href="/thoughts/linearizability" rel="noopener" class="internal-link" data-src="/thoughts/linearizability">linearizability</a>, which guarantees that all operations behave as if executed on a <em>single copy of the data</em>. We call this canonical view the <strong>primary site</strong>. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.</p>
 <p><img src="/thoughts/images/linearizability.jpg" width="auto" /></p>
 <p>This is great for allowing developers to reason about distributed applications more easily (you just treat your distributed database like a single database). There are no conflicts by definition because there is only one authoritative view on what the right state is.</p>
 <p>However it isn&rsquo;t without downsides either. Achieving this property adds a lot of overhead because both writes <em>and reads</em> need to coordinate (the dashed lines in the diagram above) across all database nodes to ensure consistency. This creates an availability problem: if you can&rsquo;t reach a majority of your nodes, you can&rsquo;t process any operations.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 <p>CRDTs kind of throw all of that out the window and embrace the eventual nature of the real world. In an often cited essay titled <em><a href="/thoughts/A-Certain-Tendency-Of-The-Database-Community" rel="noopener" class="internal-link" data-src="/thoughts/A-Certain-Tendency-Of-The-Database-Community">A Certain Tendency Of The Database Community</a></em>, the author argues that trying to provide “single system image” semantics (read: <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>) is fundamentally flawed and at odds with how systems operate in the physical world. <a href="/thoughts/the-garden-and-the-stream" rel="noopener" class="internal-link" data-src="/thoughts/the-garden-and-the-stream">The garden and the stream.</a></p>
 <p>In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.</p>
-<p>This means we allow peers to actually have different states as long as they <em>eventually</em> converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for a property called <strong>strong eventual consistency</strong>:</p>
+<p>This means we allow peers to actually have different states as long as they <em>eventually</em> converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade <a href="/thoughts/linearizability" rel="noopener" class="internal-link" data-src="/thoughts/linearizability">linearizability</a> for a property called <strong>strong eventual consistency</strong>:</p>
 <ul>
 <li>All updates will <em>eventually</em> reach every node</li>
 <li>Every node that has received the same updates will have the same state</li>
@@ -4037,14 +4386,14 @@ Nov 16, 2022
 </blockquote>
 <p><img src="/thoughts/images/message-ordering.jpg" width="auto" /></p>
 <p>There is a whole branch of math focused on how to order things called <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">order theory</a>. In the case of message ordering, we want to define some way to compare messages such that no two messages are considered chronologically equal (in academic terms, we define a total ordering). If we can do so, we&rsquo;ve mathematically avoided conflicts. So how do we do that?</p>
-<p>Your first intuition may be to just use clocks. However, it would be naive to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Keeping time is famously hard.</p>
+<p>Your first intuition may be to just use <a href="/thoughts/clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">clocks</a>. However, it would be naive to just randomly trust two different clocks from two different machines. Clocks can drift out of sync, leap seconds happen, and users can change their system time. Keeping time is famously hard.</p>
 <p>If we can&rsquo;t trust actual clocks, what can we do? Well, we can use Lamport timestamps. These track <em>logical time</em> rather than actual wall time, meaning we count number of events that have occurred rather than seconds elapsed.</p>
 <p>This timestamp is just a simple counter. For the rest of the blog post, we refer to this counter as the sequence number <code>seq</code>.</p>
 <ul>
 <li>All nodes start their counter at 0</li>
-<li>Everytime we perform an operation locally, we increment our counter by one</li>
-<li>Everytime we broadcast a message to our peers, we attach this counter</li>
-<li>Everytime we receive a message, we set our timer to <code>max(self.seq, incoming.seq) + 1</code></li>
+<li>Every time we perform an operation locally, we increment our counter by one</li>
+<li>Every time we broadcast a message to our peers, we attach this counter</li>
+<li>Every time we receive a message, we set our timer to <code>max(self.seq, incoming.seq) + 1</code></li>
 </ul>
 <p>If <code>a.seq &gt; b.seq</code> then event $a$ must have happened after event $b$. However, if <code>a.seq == b.seq</code>, we cannot be sure which event came first. This means that Lamport timestamps only give us a partial ordering, which means two identical sequence numbers might not correspond to the same unique event. For example, both nodes could emit an event with <code>seq = 1</code> even though they are different events.</p>
 <p><img src="/thoughts/images/duplicate-seq.jpg" width="auto" /></p>
@@ -4619,7 +4968,6 @@ Nov 16, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -4650,7 +4998,7 @@ Nov 16, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

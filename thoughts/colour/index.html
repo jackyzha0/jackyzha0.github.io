@@ -8,8 +8,34 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Texture Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements"
+    content="See also: [[thoughts/texture]]
+Colour Two lights whose spectral power distributions appear identical to most observers are called metamers
+Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time"
   />
+  <meta property="og:title" content="Colour">
+  <meta property="og:description" content="See also: [[thoughts/texture]]
+Colour Two lights whose spectral power distributions appear identical to most observers are called metamers
+Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/colour/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Colour" />
+  <meta name="twitter:description" content="See also: [[thoughts/texture]]
+Colour Two lights whose spectral power distributions appear identical to most observers are called metamers
+Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Colour
   </title>
@@ -59,7 +85,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +99,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +121,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +160,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -364,6 +390,9 @@ Dec 25, 2021
   
   
 
+  
+  
+
 
 
 
@@ -426,22 +455,7 @@ Dec 25, 2021
 
 
 
-<a href="#texture"><h2 id="texture"><span class="hanchor" ariaLabel="Anchor"># </span>Texture</h2></a>
-<p>Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements</p>
-<p>Sometimes thought of as patterns composed of repeated instances of one or more identifiable elements called <em>textons</em></p>
-<p>Can be used for</p>
-<ul>
-<li>object identity (tell what it is from the textures)</li>
-<li>object&rsquo;s shape (based on spatial deformation of texture)</li>
-</ul>
-<p><strong>Shape from texture</strong>: Estimating surface orientation or shape from texture</p>
-<p>Typically, texture is a property of a region, not a point. But, then we run into a boundary segmentation problem. We comproimise by using a local window to compute a texture and assign it to a point.</p>
-<a href="#synthesis"><h3 id="synthesis"><span class="hanchor" ariaLabel="Anchor"># </span>Synthesis</h3></a>
-<ol>
-<li>Inpainting (filling in holes)</li>
-<li>Produce large quantities of texture for <a href="/thoughts/computer-graphics" rel="noopener" class="internal-link" data-src="/thoughts/computer-graphics">computer graphics</a></li>
-</ol>
-<p>Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)</p>
+<p>See also: <a href="/thoughts/texture" rel="noopener" class="internal-link" data-src="/thoughts/texture">texture</a></p>
 <a href="#colour"><h2 id="colour"><span class="hanchor" ariaLabel="Anchor"># </span>Colour</h2></a>
 <p>Two lights whose spectral power distributions appear identical to most observers are called metamers</p>
 <p>Chromatic Adaptation: colour perception starts to skew if exposed to a certain colour light for an extended period of time</p>
@@ -465,7 +479,7 @@ Dec 25, 2021
 <ul>
 <li>Bilinear Interpolation: average your 4 neighbours</li>
 <li>Bicubic Interpolation -&gt; needs more neighbours, may overblur</li>
-<li>Edge-aware interpolatin</li>
+<li>Edge-aware interpolation</li>
 </ul>
 <a href="#grassmans-law"><h3 id="grassmans-law"><span class="hanchor" ariaLabel="Anchor"># </span>Grassman&rsquo;s Law</h3></a>
 <p>TL;DR, colour matching is, to an accurate approximation, linear</p>
@@ -481,6 +495,27 @@ Dec 25, 2021
 <p>RGB is additive whereas CMY is subtractive.</p>
 <p>RGB and CIE are linear.</p>
 <p>McAdam ellipses are regions where colour differences are imperceptible to the average human eye.</p>
+<ul>
+<li>CIE is defined with 3 imaginary lights X, Y, Z
+<ul>
+<li>Any wavelength $\lambda$ can be matched perceptually by positive combinations</li>
+<li>X is approximately R, Y is approximately G, Z is approximately B</li>
+<li>Each monitor has its own RGB-to-XYZ transformation matrix</li>
+</ul>
+</li>
+</ul>
+<a href="#physiology"><h3 id="physiology"><span class="hanchor" ariaLabel="Anchor"># </span>Physiology</h3></a>
+<p>Retina contains an uneven distribution (clustered around fovea) of rods and cones</p>
+<ul>
+<li>Rods: sense in black and white, mainly for edge detection</li>
+<li>Cones: 3 types, mostly for colour sensing</li>
+</ul>
+<p>Colour blindness results from missing cone types</p>
+<ul>
+<li>Deuteranope (green deficiency)</li>
+<li>Protanope (red deficiency)</li>
+<li>Tritanope (blue deficiency)</li>
+</ul>
 
 
     </article>
@@ -506,8 +541,28 @@ Dec 25, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
-        <a href="/thoughts/computer-vision/" data-ctx="Colour and Texture" data-src="/thoughts/computer-vision" class="internal-link">Computer Vision</a>
+        <a href="/thoughts/computer-graphics/" data-ctx="thoughts/colour" data-src="/thoughts/computer-graphics" class="internal-link">Computer Graphics</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/computer-vision/" data-ctx="Colour" data-src="/thoughts/computer-vision" class="internal-link">Computer Vision</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/visualization/" data-ctx="thoughts/colour" data-src="/thoughts/visualization" class="internal-link">Visualization</a>
       </li>
       
       
@@ -517,7 +572,6 @@ Dec 25, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -548,7 +602,7 @@ Dec 25, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

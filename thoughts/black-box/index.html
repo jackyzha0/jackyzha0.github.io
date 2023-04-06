@@ -11,6 +11,28 @@
     content="See also: [[thoughts/paperclip optimizer|paperclip optimizer]]
  Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity."
   />
+  <meta property="og:title" content="Black boxes">
+  <meta property="og:description" content="See also: [[thoughts/paperclip optimizer|paperclip optimizer]]
+ Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/black-box/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Black boxes" />
+  <meta name="twitter:description" content="See also: [[thoughts/paperclip optimizer|paperclip optimizer]]
+ Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Black boxes
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -539,7 +561,6 @@ Oct 5, 2021
 <blockquote>
 <p>Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity. Thus, paradoxically, the more science and technology succeed, the more opaque and obscure they become</p>
 </blockquote>
-<p>In the context of systems, actors are anyone, human or nonhuman, who engages in intentional action shaped by internalized expectations of how it will be perceived</p>
 <p>If we start to disect the black box and understand that it</p>
 <ul>
 <li>is made by people</li>
@@ -598,31 +619,17 @@ Oct 5, 2021
 </ul>
 <p>Responsibility gaps</p>
 <ul>
-<li>a physician cannot be held responsible for results of algorithms they don&rsquo;t understand
-<ul>
-<li>though, we do generally accept ex-post explanations and deem these sufficient of human actors in decision making</li>
+<li>a physician cannot be held responsible for results of algorithms they don&rsquo;t understand though, we do generally accept ex-post explanations and deem these sufficient of human actors in decision making</li>
 <li>physicians typically operate other technologies and machinery which they do not fully understand or cannot fully explain the inner working of (e.g. MRI scans)
 <ul>
 <li>Debatable; because they are not making decisions, just presenting information. Additionally, these other technologies generally <em>can</em> be understood by an expert. This is not the case for AI systems</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <p>Counterpoints raised:</p>
 <ul>
-<li>automation complacency: tendency to overestimate the reliability of decision support systems</li>
-<li>black box algorithms can hide normative assumptions
-<ul>
-<li>epistemic and normative considerations often blur into each other in the medical setting</li>
-<li>we know nothing about the priors of the black box algorithm</li>
-</ul>
-</li>
-<li>model and data drift
-<ul>
-<li>computationally reliable black box algorithms can be reliable in one setting and time and not everywhere and forever</li>
-</ul>
-</li>
+<li>Black box algorithms can hide normative assumptions: we often know nothing about the priors of the black box algorithm</li>
+<li>Model and data drift: computationally reliable black box algorithms can be reliable in one setting and time and not everywhere and forever</li>
 </ul>
 
 
@@ -649,8 +656,38 @@ Oct 5, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/posts/bias-bug/" data-ctx="black box" data-src="/posts/bias-bug" class="internal-link">On AI&#39;s &#39;Bias Bug&#39;</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Bias-in-Search/" data-ctx="black box" data-src="/thoughts/Bias-in-Search" class="internal-link">Bias in Search</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/game-design/" data-ctx="Black Box" data-src="/thoughts/game-design" class="internal-link">Game Design</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/transparency/" data-ctx="black box" data-src="/thoughts/transparency" class="internal-link">Transparency</a>
       </li>
       
       
@@ -660,7 +697,6 @@ Oct 5, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -691,7 +727,7 @@ Oct 5, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

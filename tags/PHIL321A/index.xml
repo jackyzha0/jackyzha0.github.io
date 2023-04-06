@@ -13,7 +13,7 @@
       <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Social-Choice-Problem/</guid>
-      <description>How to aggregate many individual preference orderings into a single group or social preference ordering; or, How to have rational individuals make rational choices as a group  We can define a Social welfare function (SWF) combining individual preference orderings (over social states) into a social preference ordering (over those same states).</description>
+      <description>How do we aggregate many individual preference orderings into a single group or social preference ordering; or, How can rational individuals make rational choices as a group  We can define a Social welfare function (SWF) combining individual preference orderings (over social states) into a social preference ordering (over those same states).</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       
       <guid>https://jzhao.xyz/thoughts/A-Pragmatic-Precautionary-Principle/</guid>
       <description>Final paper for PHIL321
- The Precautionary Principle has had many different interpretations across game theory; there is no single accepted formulation.</description>
+ The [[thoughts/Precautionary Principle|Precautionary Principle]] has had many different interpretations across [[thoughts/game theory]]; there is no single accepted formulation.</description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Nash-equilibrium/</guid>
-      <description>If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual rationality (see [[thoughts/Pareto optimality]] for group rationality)</description>
+      <description>If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual [[thoughts/rationality]] (see [[thoughts/Pareto optimality]] for group rationality)</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Pareto-optimality/</guid>
-      <description>If there is no profile where one player’s payoff is better but no player’s payoff is worse. Pareto optimality is a criterion of ‘group rationality’, not a criterion for individual rationality (see: [[thoughts/Nash equilibrium]])</description>
+      <description>If there is no profile where one player’s payoff is better but no player’s payoff is worse. Pareto optimality is a criterion of ‘group [[thoughts/rationality]]’, not a criterion for individual rationality (see: [[thoughts/Nash equilibrium]])</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@
       
       <guid>https://jzhao.xyz/thoughts/sequential-games/</guid>
       <description>Represented with a game tree consisting of nodes (representing choices by players) and branches (representing different options)
-A player has perfect information if her information set has just one node (e.</description>
+A player has perfect information if their information set has just one node (e.</description>
     </item>
     
     <item>
@@ -119,7 +119,7 @@ When evaluating, we often need to quantify what outcomes are more [[thoughts/val
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Precautionary-Principle/</guid>
-      <description>Ordinary scenarios: maximize expected [[thoughts/utility|utility]] (EU Max) Precautionary scenarios: avoid catastrophic harm (Precautionary Principle)  Tripod Framework Manson&amp;rsquo;s Framework for when to use the precautionary principle</description>
+      <description>In ordinary scenarios, we maximize expected [[thoughts/utility|utility]] (EU Max). However in precautionary scenarios, we want to avoid catastrophic harm (Precautionary Principle)</description>
     </item>
     
     <item>
@@ -129,7 +129,7 @@ When evaluating, we often need to quantify what outcomes are more [[thoughts/val
       
       <guid>https://jzhao.xyz/thoughts/Decisions-under-ignorance/</guid>
       <description>Decision rules when the agent is ignorant of all probabilities
-Background Points  No information about probabilities A value function on outcomes a&amp;amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states Principle:  Avoid dominated acts and prefer dominant acts Can only use dominance principle if states are independent of acts Gold standard, use this whenever possible     Maximin/Leximin  Find the minimum value of each act Choose the act with the least bad worst-case outcome Note: can violate dominance if there are rows with the same minimum Leximin can help resolves ties by removing the minimum value in case of ties.</description>
+Rules Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states  Principle: 1.</description>
     </item>
     
     <item>
@@ -138,7 +138,7 @@ Background Points  No information about probabilities A value function on outcom
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Decision-theory/</guid>
-      <description>Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table</description>
+      <description>Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table.</description>
     </item>
     
     <item>

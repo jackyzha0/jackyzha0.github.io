@@ -23,7 +23,8 @@
       <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Autoencoders/</guid>
-      <description>Autoencoders are neural networks with same input and output.
+      <description>Autoencoders are neural networks with same input and output. They are [[thoughts/latent-factor model|latent-factor models]]
+Architecture:
  Includes a bottleneck layer: with dimension $k$ smaller than input $d$.</description>
     </item>
     
@@ -110,8 +111,7 @@ Suppose we have a dataset $D$ with parameters $w$. For example,</description>
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
-      <description>Rather than picking from fixed convolutions, we learn the elements of the filters.
-A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.</description>
+      <description>Rather than picking from fixed convolutions, we learn the elements of the filters. A convolution is a [[thoughts/imaging#Linear Filters|linear filter]] that measures the effect one signal has on another signal.</description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@ More complicated models have even more hyper-parameters. This makes searching al
       
       <guid>https://jzhao.xyz/thoughts/feature-selection/</guid>
       <description>Better features usually help more than a better model. Good features would ideally:
- Allow learning with few examples, hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of ‘X’ that are important for predicting ‘y’.</description>
+ Allow learning with few examples, hard to overfit with many examples Capture most important aspects of problem Reflects invariances (generalize to new scenarios)  Find the features (columns) of $X$ that are important for predicting $y$</description>
     </item>
     
     <item>
@@ -276,9 +276,8 @@ Note: Grouping is how the human visual system perceives things and clustering is
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Curse-of-Dimensionality/</guid>
-      <description>Volume grows exponentially with dimension
-Example If want every location on to have a “neighbor” with distance $\epsilon$,
- In 1D, we need $O(1 / \epsilon)$ points In 2D, we need $O(1 / \epsilon^2)$ points In DD, we need $O(1 / \epsilon^3)$ points  Our nearest neighbour in high-dimensions might be really really far away</description>
+      <description>Volume grows exponentially with dimension. Our nearest neighbour in high-dimensions might be really really far away
+If want every location on to have a “neighbor” with distance $\epsilon$,</description>
     </item>
     
     <item>
@@ -355,7 +354,7 @@ Notation Generally column major
       <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/exploratory-data-analysis/</guid>
-      <description>How do you &amp;ldquo;look&amp;rdquo; at features and high-dimensional examples?
+      <description>How do we &amp;ldquo;look&amp;rdquo; at features and high-dimensional examples?
  Summary statistics  Categorical Features  Frequencies Mode Quantiles   Numerical Features  Location  Mean Median Quantiles   Spread  Range Variance Interquartile ranges     Entropy: measured &amp;ldquo;randomness&amp;rdquo; of a set of variables where entropy is $- \Sigma_{c=1}^k p_c \log p_c$ and $p_c$ is the proportion of times you have value $c$, range from $[0, \log k]$  Low entropy means it is very predictable whereas high entropy means it is very unpredictable (roughly, spread) Normal distribution has the highest entropy    Not always representative!</description>
     </item>
     
@@ -374,8 +373,8 @@ Notation Generally column major
       <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
+      <description>Theory We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+ [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets Machine learning: automatically detect patterns in data and use these to make predictions or decisions  Typically, AI $\subset$ ML $\subset$ Deep Learning   Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models  Healthy skepticism is good though:</description>
     </item>
     
   </channel>

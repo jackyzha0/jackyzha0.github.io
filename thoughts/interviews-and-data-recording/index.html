@@ -8,8 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour. What does it mean to collect user data?"
+    content="Five Key Issues
+ Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed."
   />
+  <meta property="og:title" content="Interviews and Data Recording">
+  <meta property="og:description" content="Five Key Issues
+ Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/interviews-and-data-recording/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Interviews and Data Recording" />
+  <meta name="twitter:description" content="Five Key Issues
+ Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Interviews and Data Recording
   </title>
@@ -59,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -362,10 +385,6 @@ Oct 5, 2021
 
 
 
-<ul>
-<li>What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.</li>
-<li>What does it mean to collect user data? What techniques can be used, and how useful and reliable is the data that is collected?</li>
-</ul>
 <p>Five Key Issues</p>
 <ol>
 <li>Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed.</li>
@@ -389,34 +408,17 @@ Oct 5, 2021
 <li>Triangulation of theories: use of different theoretical frameworks through which to view data</li>
 <li>Methodological triangulation: employ different data gathering techniques</li>
 </ol>
-<a href="#3-methods-for-data-recording"><h2 id="3-methods-for-data-recording"><span class="hanchor" ariaLabel="Anchor"># </span>3 Methods for Data Recording</h2></a>
-<ol>
-<li>Notes + Photographs -&gt; least technical and most flexible way of recording data, but can be difficult to capture the right highlights.</li>
-<li>Audio + Photographs -&gt; less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.</li>
-<li>Video -&gt; highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants</li>
-</ol>
 <a href="#interviews"><h2 id="interviews"><span class="hanchor" ariaLabel="Anchor"># </span>Interviews</h2></a>
 <blockquote>
 <p>A conversation with a purpose</p>
 </blockquote>
 <p>Good for exploring issues, learning more about tasks, and getting inside user&rsquo;s head.</p>
-<p>Criteria for good interview:
--   Before:
--   get questions right → should support goals, should be easy to understand/answer
--   be organized → check equipment, have necessary docs
--   run pilots
--   During:
--   structure time
--   give participants context
--   use props and visuals → easier to show than tell
--   Listen well throughout!</p>
 <ol>
 <li>Open-ended/unstructured -&gt; exploratory and similar to conversation. Can be time-consuming but can also produce rich insights</li>
 <li>Semi-structured -&gt; plans basic script with both closed and open questions but probes interviewee until no new relevants info is there</li>
 <li>Structured -&gt; predetermined questions like a questionnaire, study is standardized (same questions with each participant)</li>
 <li>Group interviews -&gt; 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences</li>
 </ol>
-<p>Asking questions like &ldquo;Can you tell me a bit more about&hellip;&rdquo; is called probing</p>
 <a href="#planning"><h3 id="planning"><span class="hanchor" ariaLabel="Anchor"># </span>Planning</h3></a>
 <p>When developing Interview Questions, keep in mind open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions</p>
 <p>A lot of decisions to make:</p>
@@ -699,6 +701,22 @@ Oct 5, 2021
 <a href="#critical-incident-analysis"><h3 id="critical-incident-analysis"><span class="hanchor" ariaLabel="Anchor"># </span>Critical Incident Analysis</h3></a>
 <p>Helps identify significant subsets of data for more detailed analysis.</p>
 <p>This is not about summarizing all incidients, more like finding gold nuggets. Incidents need not be bad all the time, can be either desirable or undesirable.</p>
+<a href="#risks-and-consent"><h2 id="risks-and-consent"><span class="hanchor" ariaLabel="Anchor"># </span>Risks and Consent</h2></a>
+<p>Potential way conclusions can be flawed:</p>
+<ol>
+<li>Construct validity: are we measuring the right thing? Is this clearly connected to our research question? Did we misunderstand the concepts we are working with?</li>
+<li>Internal validity: What are alternative explanations for the results? Other bias, confounding factors, etc.</li>
+<li>External Validity: To what extent are our results and conclusions of our experiment generalizable to our original research question? (how representative are our tasks and users?)</li>
+<li>Empirical Reliability / Reproducibility: Can the study be reproduced?</li>
+</ol>
+<p>Risks and Consent:</p>
+<ol>
+<li>In what ways could your participants could be harmed by the study or its results?</li>
+<li>Could be physical harm (less likely in CS), emotional harm (stress, reputation, etc.)</li>
+<li>Evaluate the likelihood of each potential risk (including unlikely cases)</li>
+<li>Are there ways to mitigate these risks? Potentially: adjust your study design</li>
+<li>What would you do if a participant were harmed? e.g. correction, compensation?</li>
+</ol>
 
 
     </article>
@@ -729,13 +747,13 @@ Oct 5, 2021
       
       
       <li>
-        <a href="/thoughts/DSL/" data-ctx="thoughts/interviews and data recording" data-src="/thoughts/DSL" class="internal-link">DSL</a>
+        <a href="/thoughts/human-computer-interaction/" data-ctx="Interviews and data recording" data-src="/thoughts/human-computer-interaction" class="internal-link">Human Computer Interaction (HCI)</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/human-computer-interaction/" data-ctx="Interviews and data recording" data-src="/thoughts/human-computer-interaction" class="internal-link">Human Computer Interaction (HCI)</a>
+        <a href="/thoughts/task-centered-design/" data-ctx="thoughts/interviews and data recording" data-src="/thoughts/task-centered-design" class="internal-link">Task-Centered System Design</a>
       </li>
       
       
@@ -745,7 +763,6 @@ Oct 5, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -776,7 +793,7 @@ Oct 5, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

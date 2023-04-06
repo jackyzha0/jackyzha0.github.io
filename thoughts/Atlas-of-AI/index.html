@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="&ldquo;It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world."
+    content="&ldquo;To understand how AI is fundamentally [[thoughts/Do Artifacts Have Politics|political]], we need to go beyond neural nets and statistical pattern recognition to instead ask what is being optimized, and for whom, and who gets to decide."
   />
+  <meta property="og:title" content="Atlas of AI">
+  <meta property="og:description" content="&ldquo;To understand how AI is fundamentally [[thoughts/Do Artifacts Have Politics|political]], we need to go beyond neural nets and statistical pattern recognition to instead ask what is being optimized, and for whom, and who gets to decide.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Atlas-of-AI/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Atlas of AI" />
+  <meta name="twitter:description" content="&ldquo;To understand how AI is fundamentally [[thoughts/Do Artifacts Have Politics|political]], we need to go beyond neural nets and statistical pattern recognition to instead ask what is being optimized, and for whom, and who gets to decide." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Atlas of AI
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +373,220 @@ Nov 14, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -364,54 +598,31 @@ Nov 14, 2021
 
 
 
-<p>&ldquo;It is the idealogy of Cartesian dualism in AI: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo; &ndash; they absorb and produce knowledge independently from their creators, infrastructures, and the world at large.</p>
-<p>&ldquo;To understand how AI is fundamentally political, we need to go beyond neural nets and statistical pattern recognition to instead ask <em>what</em> is being optimized, and <em>for whom</em>, and <em>who</em> gets to decide.&rdquo;</p>
+
+<blockquote>
+<p>&ldquo;To understand how AI is fundamentally <a href="/thoughts/Do-Artifacts-Have-Politics" rel="noopener" class="internal-link" data-src="/thoughts/Do-Artifacts-Have-Politics">political</a>, we need to go beyond neural nets and statistical pattern recognition to instead ask <em>what</em> is being optimized, and <em>for whom</em>, and <em>who</em> gets to decide.&rdquo;</p>
+</blockquote>
 <p>&ldquo;As author and engineer Ellen Ullman puts it, this belief that the mind is like a computer, and vice versa, has infected decades of thinking in the computer and cognitive sciences,&rsquo; creating a kind of original sin for the field. It is the idealogy of Cartesian dualism in artificial intelligence: where AI is narrowly understood as disembodied intelligence, removed from any relation to the material world.&rdquo;</p>
 <p>&ldquo;An atlas is an unusual type of book. It is a collection of disparate parts, with maps that very in resolution from a satellite view of the planet to a zoomed-in detail of an archipelago. When you open an atlas, you may be seeking specific information about a particular place &ndash; or perhaps you are wandering, following your curiosity, and finding unexpected pathways and new perspectives.&rdquo;</p>
 <p>AI is an attempt to be <em>the</em> atlas &ndash; the dominant way of seeing the world. We should instead try to construct &ldquo;humble geography&rdquo; that acknowledges one&rsquo;s specific perspectives rather than claiming objectivity or mastery.</p>
-<p>&ldquo;In this sense, artificial intelligence is a registry of power&hellip; Computational reason and embodied work are deeply interlinked: AI systems both reflect and produce social relations and understanding of the world.&rdquo;</p>
-<a href="#hans-observer-expectancy-effect"><h2 id="hans-observer-expectancy-effect"><span class="hanchor" ariaLabel="Anchor"># </span>Hans: Observer-expectancy effect</h2></a>
-<p>&ldquo;Their intuition was right: the questioner&rsquo;s posture, breathing, and facial expression would subtly change around the moment Hans reached the right answer, prompting Hans to stop there.&rdquo;</p>
-<p>&ldquo;The story of Clever Hans is compelling from many angles: the relationship between desire, illusion, and action, the business of spectacles, how we anthropomorphize the nonhuman, how biases emerge, and the politics of intelligence.&rdquo;</p>
-<p>&ldquo;Even a system that appears to perform spectacularly in training can make terrible predictions when presented with novel data in the world.&rdquo;</p>
 <a href="#earth"><h2 id="earth"><span class="hanchor" ariaLabel="Anchor"># </span>Earth</h2></a>
 <p>&ldquo;Commerce follows the flag, but the flag follows the pick.&rdquo;</p>
-<p>&ldquo;Those who profit from mining do so only because the costsd must be sustained by others, those living and those not yet born. It is easy to put a price on precious metals, but what is the exact value of a wilderness, a clean stream, breathable air, the health of local communities?&rdquo;</p>
-<p>&ldquo;It was the &lsquo;move fast and break things&rsquo; of a different time&rdquo;</p>
+<p>&ldquo;Those who profit from mining do so only because the costs must be sustained by others, those living and those not yet born. It is easy to put a price on precious metals, but what is the exact value of a wilderness, a clean stream, breathable air, the health of local communities?&rdquo;</p>
+<p>&ldquo;It was the &lsquo;<a href="/thoughts/move-fast-and-break-things" rel="noopener" class="internal-link" data-src="/thoughts/move-fast-and-break-things">move fast and break things</a>&rsquo; of a different time&rdquo;</p>
 <p>&ldquo;The mines were located far from the city they enriched, and this remoteness allowed city dwellers to remain ignorant of what was happening to the mountains, rivers, and laborers that fed their fortunes.&rdquo;</p>
 <a href="#labour"><h2 id="labour"><span class="hanchor" ariaLabel="Anchor"># </span>Labour</h2></a>
 <p><em>Megamachine</em>: illustration of how all systems, no matter how immense, consist of the work of many individual human actors.</p>
 <p>Humans are increasingly treated like robots or the connective tissue between robots.</p>
-<p>
-
-
-
-
-
-<a
-  href="/thoughts/potemkin-village/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/potemkin-village/">Potemkin AI</a> systems are a form of deception perpetrated by technology vendors eager to stake a claim in the lucrative tech space. The difference between &lsquo;perceived&rsquo; ability and &lsquo;real&rsquo; ability of these AI system are augmented by human piecework.</p>
 <a href="#data"><h2 id="data"><span class="hanchor" ariaLabel="Anchor"># </span>Data</h2></a>
 <p>There is a new pervasive belief that everything is data and is there for the taking.</p>
-<p>Data, when aggregated, become 
-
-
-
-
-
-<a
-  href="/thoughts/infrastructure/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/infrastructure/">infrastructure</a>. &ldquo;The meaning or care that might be given to the image of an individual person, or the context behind a scene, is presumed to be erased at the moment it becomes part of an aggregate mass that will drive a broader system.&rdquo;</p>
-<p>ML systems work based on <em>inductive inference</em>. Any person who has taken a first-year course on logic will know the false conclusions that this can draw (e.g. all swans are white). Can we create systems that operate on <em>deductive inference</em>, which follows logically from a premise?</p>
-<p>&ldquo;Even the largest troves of data cannot escape the fundamental slippages that occur when an infinitely complex world is simplified and slices into categories.&rdquo; This is a process that requires inherently political, cultural, and social choices.</p>
+<p>&ldquo;The meaning or care that might be given to the image of an individual person, or the context behind a scene, is presumed to be erased at the moment it becomes part of an aggregate mass that will drive a broader system.&rdquo;</p>
+<p>&ldquo;Even the largest troves of data cannot escape the fundamental slippages that occur when an infinitely complex world is simplified and slices into categories.&rdquo; (see also: <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">quantization</a>)</p>
 <p>&ldquo;Data systems allowed scientists during wartime to operate at a psychological distance from the people &lsquo;who would be maimed and killed by the weapons systems that would result from the ideas they communicated&rsquo;.&rdquo;</p>
 <a href="#recognition-systems"><h2 id="recognition-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Recognition Systems</h2></a>
-<p>&ldquo;This is the danger of affect recognition tools. As we&rsquo;ve seen, they take us back to the phrenological past, where spurious claims were made, allowed to stand, and deployed to support existing systems of power.&rdquo;</p>
+<p>&ldquo;This is the danger of affect recognition tools. As we&rsquo;ve seen, they take us back to the phrenological past, where spurious claims were made, allowed to stand, and deployed to support existing systems of power.&rdquo; (again: <a href="/thoughts/observer-expectancy-effect" rel="noopener" class="internal-link" data-src="/thoughts/observer-expectancy-effect">observer-expectancy effect</a>)</p>
 <a href="#accountability"><h2 id="accountability"><span class="hanchor" ariaLabel="Anchor"># </span>Accountability</h2></a>
 <p>Andrew Ferguson: &ldquo;We are moving to a state where prosecutors and police are going to say &rsquo;the algorithm told me to do it, so I did, I had no idea what I was doing&rsquo;.&rdquo;</p>
-<p>A false objectivity, &ldquo;it&rsquo;s just math, math can&rsquo;t be biased, right?&rdquo; &ndash; where&rsquo;s the 
+<p>AI and algorithms create a false objectivity, &ldquo;it&rsquo;s just math, math can&rsquo;t be biased, right?&rdquo; &ndash; where&rsquo;s the 
 
 
 
@@ -420,7 +631,7 @@ Nov 14, 2021
 <a
   href="/thoughts/accountability/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/accountability/">accountability</a>?</p>
+  data-src="/thoughts/accountability/">accountability</a>? (see also: <a href="/posts/bias-bug" rel="noopener" class="internal-link" data-src="/posts/bias-bug">bias bug</a>)</p>
 <p>The historian of technology Alex Campolo calls this <em>enchanted determinism</em>: &ldquo;AI systems are seen as enchanted, beyond the known world, yet deterministic in that they discover patterns that can be applied with predictive certainty to everyday life.&rdquo;</p>
 
 
@@ -447,8 +658,18 @@ Nov 14, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="Atlas of AI" data-src="/books" class="internal-link">Booklist</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/observer-expectancy-effect/" data-ctx="thoughts/Atlas of AI" data-src="/thoughts/observer-expectancy-effect" class="internal-link">Observer-expectancy Effect</a>
       </li>
       
       
@@ -458,7 +679,6 @@ Nov 14, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -489,7 +709,7 @@ Nov 14, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

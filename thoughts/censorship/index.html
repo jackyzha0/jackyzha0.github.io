@@ -11,6 +11,28 @@
     content="Source: Moderation in Infrastructure
 How do we draw the line between an end product and infrastructure? How should infrastructure regulate usage on its platform (if at all)?"
   />
+  <meta property="og:title" content="Censorship">
+  <meta property="og:description" content="Source: Moderation in Infrastructure
+How do we draw the line between an end product and infrastructure? How should infrastructure regulate usage on its platform (if at all)?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/censorship/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Censorship" />
+  <meta name="twitter:description" content="Source: Moderation in Infrastructure
+How do we draw the line between an end product and infrastructure? How should infrastructure regulate usage on its platform (if at all)?" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Censorship
   </title>
@@ -60,7 +82,7 @@ How do we draw the line between an end product and infrastructure? How should in
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ How do we draw the line between an end product and infrastructure? How should in
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ How do we draw the line between an end product and infrastructure? How should in
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ How do we draw the line between an end product and infrastructure? How should in
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,6 +374,92 @@ Dec 25, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -374,7 +482,7 @@ Dec 25, 2021
 <a
   href="/thoughts/infrastructure/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/infrastructure/">infrastructure</a> regulate usage on its platform (if at all)? Been thinking about AWS&rsquo;s decision to remove Parler recently and whether it was warranted for AWS to do so. At what level of infrastructure should something become a &lsquo;
+  data-src="/thoughts/infrastructure/">infrastructure</a> regulate usage on its platform (if at all)? I&rsquo;ve been thinking about AWS&rsquo;s decision to remove Parler recently and whether it was warranted for AWS to do so. At what level of infrastructure should something become a &lsquo;
 
 
 
@@ -386,7 +494,7 @@ Dec 25, 2021
   data-src="/thoughts/public-goods/">public good</a>&rsquo;? As more and more of our digital infrastructure is built out under private companies, does it change how we govern content on top of it?</p>
 <p>The benefit of retroactive correction in some instances—imagine fixing a typographical error in the proportions of a recipe, or blocking out someone’s phone number shared for the purposes of harassment—should be contextualized against the prospect of systemic, chronic demands for revisions by aggrieved people or companies single-mindedly demanding changes that serve to eat away at the public record.</p>
 <p>Is there a difference between censorship at the broadcast level and receiving level? People should choose what they want to see but have no overarching rules over what is &lsquo;illegal&rsquo; content to create/broadcast. States can still mandate for example, required filters for receiving content.</p>
-<a href="#3-types"><h2 id="3-types"><span class="hanchor" ariaLabel="Anchor"># </span>3 Types</h2></a>
+<a href="#3-types-of-censorship"><h2 id="3-types-of-censorship"><span class="hanchor" ariaLabel="Anchor"># </span>3 Types of censorship</h2></a>
 <ol>
 <li>Government monopolization (e.g. former Soviet union owned all the media outlets)</li>
 <li>Prepublication Review (e.g. government prevents information from being revealed, like nuclear weapons program details)</li>
@@ -394,8 +502,8 @@ Dec 25, 2021
 </ol>
 <a href="#self-censorship-of-press"><h2 id="self-censorship-of-press"><span class="hanchor" ariaLabel="Anchor"># </span>Self-censorship of press</h2></a>
 <p>Publishers know that if they offend the government, their reporters may not be given access to as much information as reporters for rival publications, putting them at a competitive disadvantage. This knowledge can lead a “free” press to censor itself.</p>
-<a href="#john-stuart-mill"><h2 id="john-stuart-mill"><span class="hanchor" ariaLabel="Anchor"># </span>John Stuart Mill</h2></a>
-<p>A famous expression of liberalism</p>
+<a href="#liberalism"><h2 id="liberalism"><span class="hanchor" ariaLabel="Anchor"># </span>Liberalism</h2></a>
+<p>John Stuart Mill&rsquo;s argument for <a href="/thoughts/freedom#free-speech" rel="noopener" class="internal-link" data-src="/thoughts/freedom">free speech</a> and that censorship should never be justified (arguing for liberalism)</p>
 <ol>
 <li>All of us are capable of error. If we prevent someone from voicing their opinion, we may actually be silencing the voice of truth.</li>
 <li>Erroneous opinions may contain kernels of truth. We ought to let all opinions be voiced so that all parts of the truth are heard</li>
@@ -403,6 +511,14 @@ Dec 25, 2021
 <li>An opinion that has been tested in the fire of a free and open discourse is more likely to have a “vital effect on the character and conduct”</li>
 </ol>
 <p>When should intervention happen? Mill&rsquo;s Principle of Harm states that the only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others.</p>
+<a href="#self-censorship"><h2 id="self-censorship"><span class="hanchor" ariaLabel="Anchor"># </span>Self-censorship</h2></a>
+<p>Librex and the <a href="/thoughts/freedom" rel="noopener" class="internal-link" data-src="/thoughts/freedom">free</a> exchange of ideas on college campuses</p>
+<p>People go to colleges not to just read textbooks but to talk to professors who&rsquo;ve studied it deeply and get their opinions on it.</p>
+<p>But what happens when those professors feel like their can&rsquo;t express their opinions? What happens when a student is offended by that opinion and the professor is at risk of losing their job?</p>
+<blockquote>
+<p>&ldquo;61% of students on Ivy League campuses are afraid to speak their minds because of campus culture&rdquo;</p>
+</blockquote>
+<p>It is much more emotional labour to separate the public and private selves; one needs to remember what parts of yourself to portray to what people</p>
 
 
     </article>
@@ -440,6 +556,16 @@ Dec 25, 2021
     
       
       
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/How-to-do-Nothing/" data-ctx="thoughts/censorship" data-src="/thoughts/How-to-do-Nothing" class="internal-link">How to do Nothing</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Internet/" data-ctx="censor" data-src="/thoughts/Internet" class="internal-link">Internet</a>
       </li>
@@ -469,7 +595,6 @@ Dec 25, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -500,7 +625,7 @@ Dec 25, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -8,9 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Chapter 1 Moving the focus away from &lsquo;problematic users and data&rsquo; to search architecture itself.
+    content="Chapter 1 Focuses on moving the blame away from &lsquo;problematic users and data&rsquo; and towards [[thoughts/search]] architecture itself.
  If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?"
   />
+  <meta property="og:title" content="Algorithms of Oppression">
+  <meta property="og:description" content="Chapter 1 Focuses on moving the blame away from &lsquo;problematic users and data&rsquo; and towards [[thoughts/search]] architecture itself.
+ If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Algorithms-of-Oppression/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Algorithms of Oppression" />
+  <meta name="twitter:description" content="Chapter 1 Focuses on moving the blame away from &lsquo;problematic users and data&rsquo; and towards [[thoughts/search]] architecture itself.
+ If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Algorithms of Oppression
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,6 +374,135 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -364,7 +515,7 @@ Dec 24, 2021
 
 
 <a href="#chapter-1"><h2 id="chapter-1"><span class="hanchor" ariaLabel="Anchor"># </span>Chapter 1</h2></a>
-<p>Moving the focus away from &lsquo;problematic users and data&rsquo; to search architecture itself.</p>
+<p>Focuses on moving the blame away from &lsquo;problematic users and data&rsquo; and towards <a href="/thoughts/search" rel="noopener" class="internal-link" data-src="/thoughts/search">search</a> architecture itself.</p>
 <blockquote>
 <p>If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?</p>
 </blockquote>
@@ -400,28 +551,8 @@ Dec 24, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/search/">Search</a> is a symbiotic process that both informs and is informed in part by users.</p>
 </blockquote>
-<p>&ldquo;Google directs web traffic to mainstream corporate news conglomerates, which increases their ability to shape the political discourse.&rdquo; This is the 
-
-
-
-
-
-<a
-  href="/thoughts/zero-sum/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/zero-sum/">zero sum</a> 
-
-
-
-
-
-<a
-  href="/thoughts/attention-economy/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/attention-economy/">attention economy</a>.</p>
-<blockquote>
-<p>Decreases in funding for public information institutions such as libraries and educational institutions and shifts of responsibility to individuals and the private sector have reframed the ways that the public conceives of what can and should be in the public domain.</p>
-</blockquote>
+<p>Additionally, decreases in funding for public information institutions such as <a href="/thoughts/library" rel="noopener" class="internal-link" data-src="/thoughts/library">libraries</a> and educational institutions and shifts of responsibility to individuals and the private sector have reframed the ways that the public conceives of what can and should be in the public domain.</p>
+<p>Perhaps to reduce the raw amounts of power search aggregators have, we should focus on funding and empowering <a href="/thoughts/small-technology" rel="noopener" class="internal-link" data-src="/thoughts/small-technology">small software</a> like libraries that act as boutique search engines.</p>
 
 
     </article>
@@ -459,6 +590,16 @@ Dec 24, 2021
     
       
       
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Bias-in-Search/" data-ctx="thoughts/Algorithms of Oppression" data-src="/thoughts/Bias-in-Search" class="internal-link">Bias in Search</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Social-Bias-in-Information-Retrieval/" data-ctx="Algorithms of Oppression" data-src="/thoughts/Social-Bias-in-Information-Retrieval" class="internal-link">Social Bias in Information Retrieval</a>
       </li>
@@ -478,7 +619,7 @@ Dec 24, 2021
       
       
       <li>
-        <a href="/thoughts/quantization/" data-ctx="Algorithms of Oppression" data-src="/thoughts/quantization" class="internal-link">Labels and Quantization</a>
+        <a href="/thoughts/fairness/" data-ctx="Algorithms of Oppression" data-src="/thoughts/fairness" class="internal-link">Fairness</a>
       </li>
       
       
@@ -488,7 +629,6 @@ Dec 24, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -519,7 +659,7 @@ Dec 24, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

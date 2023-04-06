@@ -9,9 +9,30 @@
   <meta
     name="description"
     content="Are there multiple ways of realizing intelligence?
- The bitter lesson
- a bitter lesson  reframing data?  speech data → audio features / mfcc inadvertently taking away the ability to make new insights based of restrictions   how do we explore more of the solution space  feedforward → linear relationships sigmoid → non-linear what other solution spaces are we missing     do we necessarily need human intelligence for machine intelligence?"
+ The bitter lesson: the less human heuristics we insert and the more we improve the learning capacity of the network, the better they seem to perform."
   />
+  <meta property="og:title" content="Multiple Realization">
+  <meta property="og:description" content="Are there multiple ways of realizing intelligence?
+ The bitter lesson: the less human heuristics we insert and the more we improve the learning capacity of the network, the better they seem to perform.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/multiple-realization/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Multiple Realization" />
+  <meta name="twitter:description" content="Are there multiple ways of realizing intelligence?
+ The bitter lesson: the less human heuristics we insert and the more we improve the learning capacity of the network, the better they seem to perform." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Multiple Realization
   </title>
@@ -61,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -75,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -97,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -136,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +374,49 @@ Jul 13, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -366,30 +430,11 @@ Jul 13, 2021
 
 <p>Are there multiple ways of realizing intelligence?</p>
 <p>
-<a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html" rel="noopener">The bitter lesson</a></p>
-<ul>
-<li>a bitter lesson
-<ul>
-<li>reframing data?
-<ul>
-<li>speech data → audio features / mfcc</li>
-<li>inadvertently taking away the ability to make new insights based of restrictions</li>
-</ul>
-</li>
-<li>how do we explore more of the solution space
-<ul>
-<li>feedforward → linear relationships</li>
-<li>sigmoid → non-linear</li>
-<li>what other solution spaces are we missing</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>do we necessarily need human intelligence for machine intelligence?</li>
-</ul>
-<ul>
-<li>Are we constraining solution space with human heuristics?</li>
-</ul>
+<a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html" rel="noopener">The bitter lesson</a>: the less human heuristics we insert and the more we improve the learning capacity of the network, the better they seem to perform.</p>
+<p>Do we necessarily need human intelligence for machine intelligence? Are we constraining solution space with human heuristics? (see: <a href="/posts/agi" rel="noopener" class="internal-link" data-src="/posts/agi">agi</a>)</p>
+<a href="#flying"><h2 id="flying"><span class="hanchor" ariaLabel="Anchor"># </span>Flying</h2></a>
+<p>Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird&rsquo;s wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.</p>
+<p>&ldquo;You have no reason to suppose that airplanes and birds work the same way &ndash; birds have no propellors, airplanes have no feathers&rdquo;</p>
 
 
     </article>
@@ -424,7 +469,7 @@ Jul 13, 2021
       
       
       <li>
-        <a href="/posts/ai-systems/" data-ctx="bitter lesson of AI" data-src="/posts/ai-systems" class="internal-link">Machines and Intelligence</a>
+        <a href="/posts/agi/" data-ctx="bitter lesson of AI" data-src="/posts/agi" class="internal-link">Generally Artificial Intelligence</a>
       </li>
       
       
@@ -440,7 +485,6 @@ Jul 13, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -471,7 +515,7 @@ Jul 13, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -8,10 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Full Post
-Discussion  &ldquo;I want hackathons to embody a starting point not a set timeframe&rdquo;
- How do we push for hackathons to be the &lsquo;start&rsquo; of the journey rather than saying its the entirety of a short, not super comprehensive event?"
+    content="As Steven Levy defines it, &lsquo;hacks&rsquo; were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it."
   />
+  <meta property="og:title" content="Hackathons">
+  <meta property="og:description" content="As Steven Levy defines it, &lsquo;hacks&rsquo; were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/hackathons/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hackathons" />
+  <meta name="twitter:description" content="As Steven Levy defines it, &lsquo;hacks&rsquo; were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Hackathons
   </title>
@@ -61,7 +79,7 @@ Discussion  &ldquo;I want hackathons to embody a starting point not a set timefr
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -75,7 +93,7 @@ Discussion  &ldquo;I want hackathons to embody a starting point not a set timefr
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -97,10 +115,10 @@ Discussion  &ldquo;I want hackathons to embody a starting point not a set timefr
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -136,13 +154,13 @@ Discussion  &ldquo;I want hackathons to embody a starting point not a set timefr
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -364,6 +382,7 @@ Feb 27, 2021
 
 
 
+<p>As Steven Levy defines it, &lsquo;hacks&rsquo; were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it. A <em>hackathon</em> is an event where a bunch of people gather to hack on things together for a short duration (usually a weekend).</p>
 <p>
 
 
@@ -373,7 +392,7 @@ Feb 27, 2021
 <a
   href="/posts/hackathons/"
   rel="noopener" class="internal-link"
-  data-src="/posts/hackathons/">Full Post</a></p>
+  data-src="/posts/hackathons/">More thoughts on why hackathons have gone downhill and what&rsquo;s next.</a></p>
 <a href="#discussion"><h2 id="discussion"><span class="hanchor" ariaLabel="Anchor"># </span>Discussion</h2></a>
 <blockquote>
 <p>&ldquo;I want hackathons to embody a starting point not a set timeframe&rdquo;</p>
@@ -390,34 +409,14 @@ Feb 27, 2021
 <p>
 <a href="https://academicworks.cuny.edu/gc_pubs/490/" rel="noopener">Source: Hackathons as Co-optation Ritual: Socializing Workers and Institutionalizing Innovation in the “New” Economy</a></p>
 <p>[Hackathons] reshape unpaid and precarious work. Writing code and building apps for free becomes an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all.</p>
-<p>Hackathons ask much of their participants but promise little in return. Why, then, have they become so popular?</p>
 <p>Many prototypes that are developed during hackathons, even winning projects, are not really usable.</p>
-<p>[Hackathons] translate the values of longstanding hacker subculture into new work norms&hellip; using rituals of play and pleasure to co-opt a wide range of talent into the service of corporations and the state without offering participants full-time jobs.</p>
-<p>Coding at hackathons as self-expolitation and self-investment&hellip; Motivation to participate in hackathons relies on complementary forms of social capital and emotional ties, from networking with potential employers and investors to interacting with old friends.</p>
-<p>Quasi-Orwellian precepts:</p>
-<ol>
-<li>Work is Play</li>
-<li>Exhaustion is Effervescent</li>
-<li>Precarity is Opportunity</li>
-</ol>
-<p>Hacker Subculture -&gt; Work is Play
-Informal meetings and clubs of young amateur hackers were energized by the collaborative (and competitive) tinkering of a DIY ethic relating to 1960s 
-
-
-
-
-
-<a
-  href="/thoughts/From-Counterculture-to-Cyberculture/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/From-Counterculture-to-Cyberculture/">counter-culture</a>.</p>
+<p>[Hackathons] translate the values of longstanding hacker subculture into new work norms&hellip; using rituals of play and pleasure to co-opt a wide range of talent into the service of corporations and the state without offering participants full-time jobs. As one participant says:</p>
+<blockquote>
+<p>&ldquo;[Hackathons] are also perfect for my creative spur. I work as a corporate consultant and sometimes miss the research thing, the building of things. Hackathons allow me to do this.&rdquo;</p>
+</blockquote>
 <p>Hackathons are a multi-site mechanism for both &ldquo;manufacturing&rdquo; innovation and &ldquo;manufacturing consent&rdquo;</p>
 <p>The hackathon acts a a multimodal platform for building social capital as well as facilitating and institutionalizing innovation. Yet the hackathon&rsquo;s corporate sponsors are front and center in control of the event.</p>
-<p>Sponsors fuel the romance of digital innovation by appealing to hackers&rsquo; apsiration to be multi-dimensional agents of chance. &ldquo;Doers, makers &amp; disruptors,&rdquo; one announcement goes</p>
-<p>Balance of Recreation and Career
-&ldquo;[Hackathons] are also perfect for my creative spur. I work as a corporate consultant and sometimes miss the research thing, the building of things. Hackathons allow me to do this.&rdquo;</p>
-<p>Sponsors don&rsquo;t really think hackathons are a good recruitment tool. Performance on a hackathon team doesn&rsquo;t give an adequate indication of ability to work on a &ldquo;real&rdquo; team.</p>
-<p>Hackathons are more important for companies because they need to maintain their &lsquo;cool&rsquo; profile.</p>
+<p>Sponsors fuel the romance of digital innovation by appealing to hackers&rsquo; apsiration to be multi-dimensional agents of chance. &ldquo;Doers, makers &amp; disruptors,&rdquo; one announcement goes. Sponsors don&rsquo;t really think hackathons are a good recruitment tool. Performance on a hackathon team doesn&rsquo;t give an adequate indication of ability to work on a &ldquo;real&rdquo; team. Hackathons are more important for companies because they need to maintain their &lsquo;cool&rsquo; profile.</p>
 
 
     </article>
@@ -435,36 +434,15 @@ Informal meetings and clubs of young amateur hackers were energized by the colla
     
     
     
+    <li>
+      No backlinks found
+    </li>
     
-    
-      
-      
-      
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/newsletters/issue-0/" data-ctx="hacking culture" data-src="/newsletters/issue-0" class="internal-link">Hello world!</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/funding/" data-ctx="hackathons" data-src="/thoughts/funding" class="internal-link">Funding</a>
-      </li>
-      
-      
-      
 </ul>
 
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -495,7 +473,7 @@ Informal meetings and clubs of young amateur hackers were energized by the colla
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

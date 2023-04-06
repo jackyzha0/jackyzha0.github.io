@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Communal Computing Networks</title>
-      <link>https://jzhao.xyz/posts/communal-computing/</link>
+      <title>Agentic Computing</title>
+      <link>https://jzhao.xyz/posts/agentic-computing/</link>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/posts/communal-computing/</guid>
+      <guid>https://jzhao.xyz/posts/agentic-computing/</guid>
       <description>This post is part of an ongoing letter series with Spencer and some other internet friends about what we think the future of the Internet could look like.</description>
     </item>
     
@@ -64,7 +64,7 @@ Software developers and computer scientists have been tackling [[thoughts/identi
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/posts/open-source-and-politics/</guid>
-      <description>[[thoughts/Coraline Ada Ehmke|Coraline Ada Ehmke]] is an acclaimed speaker, writer, engineer, and activist with over 25 years of experience in software and almost 20 years in open source.</description>
+      <description>Coraline Ada Ehmke is an acclaimed speaker, writer, engineer, and activist with over 25 years of experience in software and almost 20 years in open source.</description>
     </item>
     
     <item>
@@ -134,7 +134,7 @@ At 1:00, the sun streamed at just the right angle through the patterned glass, s
       
       <guid>https://jzhao.xyz/posts/play/</guid>
       <description>Extension of my thoughts about play and discussions from our Interact Circle on Hackathon Culture and Play.
-Defining play I&amp;rsquo;ve spent a lot of the past few months reminiscing on the childhood days of finding funny looking patterns in the rocks in my backyard and building LEGOs without instruction manuals.</description>
+Defining play I&amp;rsquo;ve spent so much time thinking about how to &amp;lsquo;bring back play&amp;rsquo;, yet not a lot of thinking about what play is.</description>
     </item>
     
     <item>
@@ -189,7 +189,7 @@ Defining play I&amp;rsquo;ve spent a lot of the past few months reminiscing on t
       <pubDate>Sat, 27 Feb 2021 12:03:33 -0800</pubDate>
       
       <guid>https://jzhao.xyz/posts/paid-open-source/</guid>
-      <description>Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Eghbal.</description>
+      <description>Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Asparouhova.</description>
     </item>
     
     <item>
@@ -221,12 +221,13 @@ Defining play I&amp;rsquo;ve spent a lot of the past few months reminiscing on t
     </item>
     
     <item>
-      <title>Machines and Intelligence</title>
-      <link>https://jzhao.xyz/posts/ai-systems/</link>
+      <title>Generally Artificial Intelligence</title>
+      <link>https://jzhao.xyz/posts/agi/</link>
       <pubDate>Mon, 02 Nov 2020 16:17:37 -0800</pubDate>
       
-      <guid>https://jzhao.xyz/posts/ai-systems/</guid>
-      <description>This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC. I hope you enjoy the post and learn as much as I did in writing it!</description>
+      <guid>https://jzhao.xyz/posts/agi/</guid>
+      <description>This blog post is adapted from a term paper I wrote for PHIL250: Minds and Machines at UBC.
+ Introduction Historically, development of AI has taken a very specific approach &amp;ndash; systems that represent the world through symbols and manipulate those tokens in a systematic way to arrive at a result.</description>
     </item>
     
     <item>
@@ -244,7 +245,7 @@ Defining play I&amp;rsquo;ve spent a lot of the past few months reminiscing on t
       <pubDate>Fri, 21 Aug 2020 14:02:48 -0700</pubDate>
       
       <guid>https://jzhao.xyz/posts/a-failure-resume/</guid>
-      <description>Sometimes, I feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to deserve what I have right now.</description>
+      <description>The nature of resumes means that most people only choose to highlight their successes and wins, but rarely the work, effort, and failures on the way.</description>
     </item>
     
     <item>
@@ -275,7 +276,7 @@ A (not so) brief exploration of how we tackle classifying intents in reflect.</d
       <guid>https://jzhao.xyz/posts/hootsuite/</guid>
       <description>(with insights from Calvin and Hobbes)
 Since I’ve started at Hootsuite, I have
-  added and/or changed 6223 lines of code in 16 different repos</description>
+ added and/or changed 6223 lines of code in 16 different repos closed 24 tickets made 4 new Slack emotes listened to almost 10,000 minutes of lofi had 1 amazing summer at Hootsuite  Including the amount of money I’ve spent on lunch this past summer, everything has been so much more than I expected it to be.</description>
     </item>
     
     <item>

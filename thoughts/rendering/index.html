@@ -10,6 +10,26 @@
     name="description"
     content="Projective Rendering  For each triangle of the object/mesh  Project its vertices onto the screen For each pixel in the triangle on the screen  Compute the colour      Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!"
   />
+  <meta property="og:title" content="Rendering">
+  <meta property="og:description" content="Projective Rendering  For each triangle of the object/mesh  Project its vertices onto the screen For each pixel in the triangle on the screen  Compute the colour      Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/rendering/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Rendering" />
+  <meta name="twitter:description" content="Projective Rendering  For each triangle of the object/mesh  Project its vertices onto the screen For each pixel in the triangle on the screen  Compute the colour      Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Rendering
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -394,19 +414,42 @@ Jan 11, 2023
 <li>Occlusion culling, object level: build a bounding box and do a &ldquo;virtual render&rdquo; of the box. If no pixels passed the z-buffer then cull the whole object</li>
 </ol>
 <a href="#raytracing"><h2 id="raytracing"><span class="hanchor" ariaLabel="Anchor"># </span>Raytracing</h2></a>
+<a href="#classical"><h3 id="classical"><span class="hanchor" ariaLabel="Anchor"># </span>Classical</h3></a>
 <ol>
 <li>For each pixel in the image
 <ol>
-<li>Generate a ray</li>
-<li>For each triangle
+<li>Generate a single ray from eye to the pixel</li>
+<li><code>P :=</code> Intersection of closest triangle with ray</li>
+<li><code>colour_local :=</code>
 <ol>
-<li>Test intersection of triangle and ray</li>
+<li><code>shadow</code> if not visible</li>
+<li><code>Phong(N, L, rayDir)</code> if visible</li>
 </ol>
 </li>
-<li>Compute colour based on closest object</li>
+<li><code>colour_reflect := raytrace(R)</code> if reflective</li>
+<li><code>colour_transmit = raytrace(T)</code> if refractive</li>
+<li><code>colour = k_local * colour_local + k_reflect * colour_reflect + k_transmit * colour_transmit</code></li>
 </ol>
 </li>
 </ol>
+<p>We stop ray tracing if</p>
+<ul>
+<li>Ray hits a diffuse object</li>
+<li>Ray exits the scene</li>
+<li>Exceeding some maximum recursion depth</li>
+<li>Contribution to final pixel colour will be too small</li>
+</ul>
+<p>Because it only uses a single ray, most shadows are pretty hard.</p>
+<p>This is noticeably different from <em>path</em> tracing, which produces incredibly realistic looking renders that look indistinguishable from photos. Path tracing uses many rays per pixel with the colour averaged across them. At each interaction (bounce/reflection/etc.), the ray direction changes randomly with some distribution. However, this is significantly more expensive to compute.</p>
+<a href="#distributed-ray-tracing"><h3 id="distributed-ray-tracing"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Ray Tracing</h3></a>
+<p>We can get more effects by adding more rays</p>
+<ul>
+<li>Anti-aliasing: multiple samples per pixel</li>
+<li>Motion blur: multiple samples over time</li>
+<li>Depth-of-field (lens blur): multiple samples over lens aperture</li>
+<li>Glossy reflections: multiple reflected rays with random distribution</li>
+<li>Soft shadows: multiple shadow rays for area light sources</li>
+</ul>
 <a href="#coordinate-systems"><h2 id="coordinate-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Coordinate Systems</h2></a>
 <p>Which way is up?</p>
 <ol>
@@ -435,16 +478,25 @@ Jan 11, 2023
     
     
     
-    <li>
-      No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/computer-graphics/" data-ctx="thoughts/rendering" data-src="/thoughts/computer-graphics" class="internal-link">Computer Graphics</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -475,7 +527,7 @@ Jan 11, 2023
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

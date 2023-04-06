@@ -8,9 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Really good piece by Moxie on web3
- Web3 lacks infrastructure  By definition, infrastructure does not need to be rebuilt every time they are used."
+    content="Blockchains only really make sense for a very narrow subset of applications where
+ Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them Strict global consensus: all peers must agree on exactly the same results  Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not strictly necessary either)"
   />
+  <meta property="og:title" content="Web3 Critique">
+  <meta property="og:description" content="Blockchains only really make sense for a very narrow subset of applications where
+ Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them Strict global consensus: all peers must agree on exactly the same results  Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not strictly necessary either)">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/web3-critique/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Web3 Critique" />
+  <meta name="twitter:description" content="Blockchains only really make sense for a very narrow subset of applications where
+ Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them Strict global consensus: all peers must agree on exactly the same results  Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not strictly necessary either)" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Web3 Critique
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -363,6 +385,15 @@ Jan 8, 2022
 
 
 
+<p>Blockchains only really make sense for a very narrow subset of applications where</p>
+<ol>
+<li>Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them</li>
+<li>Strict global consensus: all peers must agree on exactly the same results</li>
+</ol>
+<p>Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not <em>strictly</em> necessary either)</p>
+<p>More in 
+<a href="https://polynya.mirror.xyz/ARsT1Anpqrj88LRGRE5n5gNpb_CeG9Azy8mvDBv8deE" rel="noopener">Polynya on Blockchain Apps</a></p>
+<a href="#moxie"><h2 id="moxie"><span class="hanchor" ariaLabel="Anchor"># </span>Moxie</h2></a>
 <p>Really good piece by 
 <a href="https://moxie.org/2022/01/07/web3-first-impressions.html?curius=1294" rel="noopener">Moxie on web3</a></p>
 <ul>
@@ -468,30 +499,9 @@ Jan 8, 2022
   rel="noopener" class="internal-link"
   data-src="/thoughts/Degraded-Blockchain-problem/">Degraded Blockchain problem</a></li>
 </ul>
-<a href="#vitalik-response"><h3 id="vitalik-response"><span class="hanchor" ariaLabel="Anchor"># </span>Vitalik Response</h3></a>
-<p>
-<a href="https://www.reddit.com/r/ethereum/comments/ryk3it/my_first_impressions_of_web3/hrrz15r/" rel="noopener">Source: Vitalki&rsquo;s Reddit Response</a></p>
-<p>Levels of connecting to the blockcahin</p>
-<ol>
-<li>Use a Binance account.</li>
-<li>Run a piece of code that asks the Infura API endpoint what the blockchain state is, trust the answer. However, keys are still kept locally; the code signs transactions locally and sends them to the Infura API endpoint to be re-broadcasted.</li>
-<li>Same as (2), but the code also runs a 
-<a href="https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-protocol.md" rel="noopener">light client</a> to verify the signatures on the block headers and uses Merkle proofs to verify individual account and storage data.</li>
-<li>Same as (3), but the code talks to N different API endpoints run by N different companies, so only 1 of them need to be providing honest answers for the connection to be reliable.</li>
-<li>Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a 
-
-
-
-
-
-<a
-  href="/thoughts/peer-to-peer/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/peer-to-peer/">p2p</a> network</li>
-<li>Same as (5), but the code also does data availability sampling and accepts fraud proofs, so it can detect and refuse to accept blocks that are invalid.</li>
-<li>Run a fully verifying node.</li>
-<li>Run a fully verifying node that also participates in mining/staking.</li>
-</ol>
+<a href="#obessions-with-profit"><h2 id="obessions-with-profit"><span class="hanchor" ariaLabel="Anchor"># </span>Obessions with profit</h2></a>
+<p>Web3 supposed allows us to &lsquo;codify&rsquo; the set of values that a public goods represents. Yet, in practice in web3, &ldquo;little space has been made for different values to be discussed or enacted. Which is why, in the absence of ways to enact our shared values, we default to the lowest common denominator: profit.&rdquo;</p>
+<p>The United States Dollar does not have a responsibility to profit its holders. A cryptocurrency is a monetary instrument, not a business.</p>
 
 
     </article>
@@ -538,7 +548,6 @@ Jan 8, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -569,7 +578,7 @@ Jan 8, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

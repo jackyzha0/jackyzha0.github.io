@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Summary Design Justice focuses not just on design in the visual and aesthetic sense, but also on the design of systems."
+    content="Summary Design Justice focuses not just on design in the visual and aesthetic sense, but also on the [[thoughts/systems design|design of systems]]."
   />
+  <meta property="og:title" content="Design Justice">
+  <meta property="og:description" content="Summary Design Justice focuses not just on design in the visual and aesthetic sense, but also on the [[thoughts/systems design|design of systems]].">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Design-Justice/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Design Justice" />
+  <meta name="twitter:description" content="Summary Design Justice focuses not just on design in the visual and aesthetic sense, but also on the [[thoughts/systems design|design of systems]]." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Design Justice
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -396,6 +416,221 @@ Jun 16, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -408,9 +643,9 @@ Jun 16, 2021
 
 
 <a href="#summary"><h2 id="summary"><span class="hanchor" ariaLabel="Anchor"># </span>Summary</h2></a>
-<p>Design Justice focuses not just on design in the visual and aesthetic sense, but also on the design of systems.</p>
+<p>Design Justice focuses not just on design in the visual and aesthetic sense, but also on the <a href="/thoughts/systems-design" rel="noopener" class="internal-link" data-src="/thoughts/systems-design">design of systems</a>.</p>
 <p>To quote from the book, &ldquo;Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face.&rdquo; The norms, values, and assumptions that are encoded and reproduced in the <em>design</em> of systems can be changed by rethinking our design processes.</p>
-<p>In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and technosolutionism &ndash; all through detailed case studies of real-world design practices and social movements.</p>
+<p>In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and <a href="/thoughts/Technosolutionism" rel="noopener" class="internal-link" data-src="/thoughts/Technosolutionism">technosolutionism</a> &ndash; all through detailed case studies of real-world design practices and social movements.</p>
 <p>She guides the reader into how the &lsquo;unmarked user&rsquo; and universal design erases certain groups of people within the matrix of domination (through ableist, eurocentric, and classist assumptions) and refutes the argument that &lsquo;design by committee produces mediocrity.&rsquo;</p>
 <p>Design Justice is a book that invites us to &ldquo;center people who are too often marginalized by design&rdquo;. More importantly, it urges us to work towards an equitable world for everyone: one which treats design justice not as a funnel that we use to limit ourselves to a minimal set of supposedly universal design choices, but rather as a prism through which to generate a far wider rainbow of possible choices, each better tailored to reflect the needs of a specific group of people.</p>
 <a href="#reflection"><h2 id="reflection"><span class="hanchor" ariaLabel="Anchor"># </span>Reflection</h2></a>
@@ -427,6 +662,7 @@ Jun 16, 2021
   data-src="/thoughts/Hackers/">hacker</a> culture, hackathons as design sites in particular, by neoliberalism has been on the back of my mind ever since reading the chapter on design sites in Design Justice. As someone who first got their footing in computer science through hackathons, it pains me to see that this is the rep that hackathons have slowly gotten over time, moving from safe spaces for idea exploration to increasingly corporate, time-bound, events where hackers spin up apps to test company products in exchange for the slim chance of winning prizes and recognition.</p>
 <p>Hackathons reshape precarious and unpaid work. Writing code and building apps for free becomes an extraordinary opportunity and a collective imagination for fictional expectations of innovation that benefits all. Do we so necessarily need to tie these rituals of play in building and tinkering to the recruiting and product testing pipeline for large corporations?</p>
 <p>As a hackathon organizer, Design Justice has helped me to more actively think about what hackathons are trying to motivate. Having more of the tools to articulate and locate exactly why hackathons have felt increasingly corporate is the first step to reinstate hackathons as third spaces not as places of creation or competition, but as places of play and exploration.</p>
+<p>Read more: <a href="/posts/hackathons" rel="noopener" class="internal-link" data-src="/posts/hackathons">hackathons</a></p>
 <a href="#quotes"><h2 id="quotes"><span class="hanchor" ariaLabel="Anchor"># </span>Quotes</h2></a>
 <a href="#defining-design-justice"><h3 id="defining-design-justice"><span class="hanchor" ariaLabel="Anchor"># </span>Defining Design Justice</h3></a>
 <p>How larger systems &ndash; including norms, values, and assumptions &ndash; are encoded in and reproduced through the design of sociotechnical systems. (
@@ -443,26 +679,6 @@ Jun 16, 2021
 <p>Design justice is a framework for analysis of how design distributes benefits and bridges between various groups of people.</p>
 <p>Design (noun): A plan or scheme conceived in the mind and intended for subsequent execution; the preliminary conception of an idea that is to carried into effect by action; a project. (Oxford English Dictionary)</p>
 <p>True, everyone designs, but only certain kinds of design work are acknowledged, valorized, remunerated, and credited. Though all humans design, not everyone gets paid to do so.</p>
-<p><em>Affordance</em> refers to &ldquo;the perceived and actual properties of the thing, primarily those fundamental properties that determine just how the thing could possibly be used.&rdquo; &hellip; An object&rsquo;s affordances are never equally perceptible to all, and never equally available to all.</p>
-<a href="#on-intersectionality"><h3 id="on-intersectionality"><span class="hanchor" ariaLabel="Anchor"># </span>On Intersectionality</h3></a>
-<p>Black women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.</p>
-<p>The concept of intersectionality provided the grounds for a long, slow paradigm shift that is still unfolding in the social sciences, in legal scholarship, and in other domains of research and practice.</p>
-<p>While there is rapidly growing interest in algorithmic bias audits, especially in the fairness, accountability, and transparency in machine learning (FAT*) community, most are single-axis: they look for a biased distribution of error rates only according to a single variable, such as race or gender.</p>
-<p>One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.</p>
-<a href="#universal-design"><h3 id="universal-design"><span class="hanchor" ariaLabel="Anchor"># </span>Universal Design</h3></a>
-<p>Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design</p>
-<p>At least in the digital domain, adaptive design that enables personalization and flexible configuration of shared core objects, tools, platforms, and systems provides a path out of the tension between the diverse needs of individual users and the economic advantages of a large-scale user base.</p>
-<p>Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adaptive systems too often are deployed in ways that reinforce 
-
-
-
-
-
-<a
-  href="/thoughts/Data-Capitalism/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/Data-Capitalism/">surveillance capitalism</a>.</p>
-<p>We should destabilize the underlying assumption that what is best for the majority of users is best for <em>all</em> users.</p>
 <a href="#the-unmarked-user"><h3 id="the-unmarked-user"><span class="hanchor" ariaLabel="Anchor"># </span>The Unmarked User</h3></a>
 <p>Designers most frequently assume that the unmarked user has access to several very powerful privileges, such as US citizenship, English language proficiency, access to broadband internet, a smartphone, a normatively abled body, and so on.</p>
 <p>For broader reasons of structural inequality, the universe of real-world users falls within a limited range compared to the full breadth of <em>potential</em> users, then 
@@ -481,8 +697,7 @@ Jun 16, 2021
 <a href="#dismantling-existing-systems"><h3 id="dismantling-existing-systems"><span class="hanchor" ariaLabel="Anchor"># </span>Dismantling Existing Systems</h3></a>
 <p>i.e. what&rsquo;s wrong with colour blindness</p>
 <p>&ldquo;Under this new rhetoric of colour-blindness, equality means treating all individuals the same, regardless of differences they brought with them due to the effects of past discrimination or even discrimination in other venues&rdquo;</p>
-<p>New Jim Code
-Algorithmic decision systems based on historical data sets reinforce white supremacy and discrimination even as they are positioned by their designers as &ldquo;fair&rdquo;</p>
+<p>New Jim Code: Algorithmic decision systems based on historical data sets reinforce white supremacy and discrimination even as they are positioned by their designers as &ldquo;fair&rdquo;</p>
 <p>Racial hierarchies can only be dismantled by actively antiracist systems design, not by pretending they don&rsquo;t exist.</p>
 <p>Far too often, user personas are created out of thin air by members of the design team, based on their own assumption or stereotypes about groups of people. When this happens, user personas are literally objectified assumptions about end users.</p>
 <a href="#maintenance"><h3 id="maintenance"><span class="hanchor" ariaLabel="Anchor"># </span>Maintenance</h3></a>
@@ -510,13 +725,9 @@ Algorithmic decision systems based on historical data sets reinforce white supre
   data-src="/thoughts/maintenance/">Maintenance</a>, not just &ldquo;innovation.&rdquo; Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.</li>
 </ul>
 <p>&ldquo;Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenance&rdquo;</p>
-<a href="#technosolutionismtechnochauvinism"><h3 id="technosolutionismtechnochauvinism"><span class="hanchor" ariaLabel="Anchor"># </span>Technosolutionism/Technochauvinism</h3></a>
-<p>New technology will save us!!</p>
-<p>An exclusionary and elitist understanding of what technology is and where it comes from and a lack of interest in preexisting, community-based design practices.</p>
-<p>&ldquo;&hellip; where we are wholly dependent on a handful of extraordinarily gifted entrepreneurs to lead us out of the dark ages. This is a myth.&rdquo;</p>
-<p>First, it contains a somewhat masked normative assumption that &ldquo;technology adoption&rdquo; is always a good thing.</p>
+<a href="#technosolutionism"><h3 id="technosolutionism"><span class="hanchor" ariaLabel="Anchor"># </span>Technosolutionism</h3></a>
 <p>Neoliberal, technocentric ideas about the city as a machine or as a software system waiting to be optimized have become increasingly prominent. Citizens should not be reduced to users through the lens of neoliberal governmentality.</p>
-<p>First consider what already works at the community level, and to steer students away from the pitfalls of tech solutionism and technochauvanism</p>
+<p>First consider what already works at the community level, and to steer students away from the pitfalls of <a href="/thoughts/Technosolutionism" rel="noopener" class="internal-link" data-src="/thoughts/Technosolutionism">technosolutionism</a> and technochauvanism</p>
 <a href="#attention"><h3 id="attention"><span class="hanchor" ariaLabel="Anchor"># </span>Attention</h3></a>
 <p>Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts (this is the 
 
@@ -569,12 +780,12 @@ Algorithmic decision systems based on historical data sets reinforce white supre
 <p>Such hackathons push hackers to reflect on why they are doing the work they do, push for the ideas and welfare of marginalized communities in the tech sphere, and do so on the terms of their wellbeing and safety.</p>
 <p>Organizers should pay attention to participants as whole human beings. For example, this means that it is important to consider food, bio breaks, accessible bathrooms that are friendly to all body types and genders, comfortable spaces to nap or relax, and decent lighting, etc.</p>
 <a href="#design-justice-pedagogies"><h3 id="design-justice-pedagogies"><span class="hanchor" ariaLabel="Anchor"># </span>Design Justice Pedagogies</h3></a>
-<p>&ldquo;Critical pedagogy, where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners&rdquo;</p>
+<p>&ldquo;Critical <a href="/thoughts/teaching" rel="noopener" class="internal-link" data-src="/thoughts/teaching">pedagogy</a>, where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners&rdquo;</p>
 <p>&ldquo;No one knows everything, but together we know a lot, if we listen to each other&rdquo;</p>
 <p>Key elements</p>
 <ul>
 <li>Teach data science in a way that honours context, respects situated knowledge, and makes it clear that data is never &ldquo;raw&rdquo;.</li>
-<li>Emphasize the user of data to create shared meaning over individual mastery.</li>
+<li>Emphasize the use of data to create shared meaning over individual mastery.</li>
 <li>Teach data science that values not only reason, but <a href="/thoughts/ethics" rel="noopener" class="internal-link" data-src="/thoughts/ethics">ethics</a> and emotions as well</li>
 </ul>
 <a href="#critiques"><h3 id="critiques"><span class="hanchor" ariaLabel="Anchor"># </span>Critiques</h3></a>
@@ -670,6 +881,18 @@ Algorithmic decision systems based on historical data sets reinforce white supre
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/books/" data-ctx="Design Justice" data-src="/books" class="internal-link">Booklist</a>
       </li>
@@ -677,7 +900,7 @@ Algorithmic decision systems based on historical data sets reinforce white supre
       
       
       <li>
-        <a href="/posts/bias-bug/" data-ctx="design for everyone" data-src="/posts/bias-bug" class="internal-link">On AI&#39;s &#39;Bias Bug&#39;</a>
+        <a href="/posts/bias-bug/" data-ctx="design for all" data-src="/posts/bias-bug" class="internal-link">On AI&#39;s &#39;Bias Bug&#39;</a>
       </li>
       
       
@@ -701,6 +924,12 @@ Algorithmic decision systems based on historical data sets reinforce white supre
       
       
       <li>
+        <a href="/thoughts/Technosolutionism/" data-ctx="thoughts/Design Justice" data-src="/thoughts/Technosolutionism" class="internal-link">Technosolutionism</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/To-Live-in-their-Utopia/" data-ctx="Disability simulation" data-src="/thoughts/To-Live-in-their-Utopia" class="internal-link">To Live in their Utopia</a>
       </li>
       
@@ -713,25 +942,37 @@ Algorithmic decision systems based on historical data sets reinforce white supre
       
       
       <li>
+        <a href="/thoughts/affordance/" data-ctx="thoughts/Design Justice" data-src="/thoughts/affordance" class="internal-link">Affordance</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/bias/" data-ctx="Design Justice" data-src="/thoughts/bias" class="internal-link">Bias</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/constructionist/" data-ctx="Design Justice" data-src="/thoughts/constructionist" class="internal-link">Constructionism</a>
+        <a href="/thoughts/constructionist/" data-ctx="book" data-src="/thoughts/constructionist" class="internal-link">Constructionism</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/desktop-metaphor/" data-ctx="design justice" data-src="/thoughts/desktop-metaphor" class="internal-link">Desktop Metaphor</a>
+        <a href="/thoughts/cozy-software/" data-ctx="thoughts/Design Justice" data-src="/thoughts/cozy-software" class="internal-link">Personal and cozy software</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/introductions/" data-ctx="Design Justice" data-src="/thoughts/introductions" class="internal-link">Introductions</a>
+        <a href="/thoughts/hermeneutical-injustice/" data-ctx="disability simulation" data-src="/thoughts/hermeneutical-injustice" class="internal-link">Hermeneutical injustice</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/intersectionality/" data-ctx="thoughts/Design Justice" data-src="/thoughts/intersectionality" class="internal-link">Intersectionality</a>
       </li>
       
       
@@ -765,7 +1006,6 @@ Algorithmic decision systems based on historical data sets reinforce white supre
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -796,7 +1036,7 @@ Algorithmic decision systems based on historical data sets reinforce white supre
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

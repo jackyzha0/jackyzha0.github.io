@@ -10,6 +10,26 @@
     name="description"
     content="Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]"
   />
+  <meta property="og:title" content="Lattice Proposal">
+  <meta property="og:description" content="Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Lattice-Proposal/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lattice Proposal" />
+  <meta name="twitter:description" content="Potential exploration on my gripes with existing [[thoughts/tools for thought|tools for thought]] using principles from [[thoughts/Rhizome Proposal|Rhizome]]. Extracted from my [[thoughts/idea list|idea list]]" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Lattice Proposal
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -523,6 +543,49 @@ Apr 26, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -536,28 +599,22 @@ Apr 26, 2022
 
 <p>Potential exploration on my gripes with existing <a href="/thoughts/tools-for-thought" rel="noopener" class="internal-link" data-src="/thoughts/tools-for-thought">tools for thought</a> using principles from <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">Rhizome</a>. Extracted from my <a href="/thoughts/idea-list" rel="noopener" class="internal-link" data-src="/thoughts/idea-list">idea list</a></p>
 <ul>
-<li>transclusion of blocks supported by default</li>
-<li>full revision history w granularity of single operations</li>
-<li>write first, organize later: always-on &lsquo;default note&rsquo;
+<li>Transclusion of blocks supported by default</li>
+<li>Full revision history with the granularity of single operations</li>
+<li>Write first, organize later: always-on &lsquo;default note&rsquo;
 <ul>
-<li>make it super easy to split out content into a new note</li>
+<li>Make it super easy to split out content into a new note</li>
 </ul>
 <ul>
-<li>good daily notes, choose what to carry over from the previous day</li>
-<li>
-<a href="https://www.inkandswitch.com/crosscut/" rel="noopener">https://www.inkandswitch.com/crosscut/</a> -&gt; Thoughts move quickly, so the tools we use to make our models must be fast to use and readily available
-<ul>
-<li>should be even easier than just pen and paper</li>
-</ul>
-</li>
+<li>Good daily notes, choose what to carry over from the previous day</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>block based editors are neat cause i can move stuff around really easily
+<li>Block based editors are neat, it allows more drafting/moving stuff around really easily
 <ul>
-<li>if u drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes</li>
-<li>spatially consistent? 
+<li>If you drag outside the page it makes a new note, super easy to break down big complex topics into more granular/atomic notes</li>
+<li>Spatially consistent? 
 
 
 
@@ -566,32 +623,23 @@ Apr 26, 2022
 <a
   href="/thoughts/memory-palace/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/memory-palace/">memory palace</a> vibes -&gt; 
+  data-src="/thoughts/memory-palace/">Memory palace</a> vibes -&gt; 
 <a href="https://twitter.com/jordanmoore/status/1418942880941477891" rel="noopener">https://twitter.com/jordanmoore/status/1418942880941477891</a></li>
 </ul>
 </li>
-<li>card based backlinks/outgoing links
+<li>Card based backlinks/outgoing links
 <ul>
-<li>on the left, you can see all the notes that link to the current page</li>
-<li>on the right, you can see all outgoing links</li>
-<li>hovering on each card will reveal another layer which those ones are connected to</li>
+<li>On the left, you can see all the notes that link to the current page</li>
+<li>On the right, you can see all outgoing links</li>
+<li>Hovering on each card will reveal another layer which those ones are connected to</li>
 </ul>
 </li>
-<li>graph view
+<li>Timeline view
 <ul>
-<li>i wanted to have the option for 3d graphs too</li>
+<li>each note will come with a date so you can chronologically order notes and view them that way (kind of like a <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">git</a> history) if you brain works better that way</li>
 </ul>
 </li>
-<li>timeline view
-<ul>
-<li>each note will come with a date so you can chronologically order notes and view them that way (kind of like a <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">git</a> history) if ur brain works better that way</li>
-</ul>
-</li>
-<li>good global search
-<ul>
-<li>being able to index content fast and effectively</li>
-</ul>
-</li>
+<li>Good global search (see: <a href="/thoughts/information-retrieval" rel="noopener" class="internal-link" data-src="/thoughts/information-retrieval">information retrieval</a>)</li>
 <li>
 
 
@@ -601,7 +649,7 @@ Apr 26, 2022
 <a
   href="/thoughts/interoperability/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/interoperability/">interoperability</a> of data, easy export</li>
+  data-src="/thoughts/interoperability/">Interoperability</a> of data, easy export</li>
 </ul>
 
 
@@ -629,7 +677,6 @@ Apr 26, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -660,7 +707,7 @@ Apr 26, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Kolmogorov Axioms  The probability of an event is a non-negative real number The probability that at least one of the possible events happen is 1 Given a set of mutually exclusive events, the probability of all of them happening is the probability of each event happening summed up  Consequences  $0 \leq P(A) \leq 1$ $P(\lnot A) = 1 - P(A)$  Joint probability Probability of both A and B happening."
+    content="Interpreting small probabilities I suspect that there is a human limit to the size of a probability we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless."
   />
+  <meta property="og:title" content="Probability">
+  <meta property="og:description" content="Interpreting small probabilities I suspect that there is a human limit to the size of a probability we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/probability/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Probability" />
+  <meta name="twitter:description" content="Interpreting small probabilities I suspect that there is a human limit to the size of a probability we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Probability
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -442,6 +462,30 @@ Sep 11, 2022
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 
@@ -547,13 +591,18 @@ Sep 11, 2022
 
 
 
+<a href="#interpreting-small-probabilities"><h2 id="interpreting-small-probabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Interpreting small probabilities</h2></a>
+<p>I suspect that there is a human limit to the size of a probability we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless. Similarly, Bernoulli conjectured that people neglect small probability events.</p>
+<blockquote>
+<p>Nicholas Bernoulli who can be held liable as the creator of the Petersburg gamble suggested that more than five tosses of heads are morally impossible. This proposition is experimentally tested through the elicitation of subjects‘ willingness-to-pay for various truncated versions of the Petersburg gamble that differ in the maximum payoff. In fact, the experimental data show that all versions of the Petersburg gamble which allow for more than six repeated tosses of tails elicit the same willingness-to-pay. From this evidence it is concluded that subjects neglect those outcomes in the Petersburg gamble which occur with a probability smaller than or equal to one in sixty-four, because, given this level, the alternative explanations seem implausible. (Neugebauer 2010, p. 3)</p>
+</blockquote>
 <a href="#kolmogorov-axioms"><h2 id="kolmogorov-axioms"><span class="hanchor" ariaLabel="Anchor"># </span>Kolmogorov Axioms</h2></a>
 <ol>
 <li>The probability of an event is a non-negative real number</li>
 <li>The probability that at least one of the possible events happen is 1</li>
 <li>Given a set of mutually exclusive events, the probability of all of them happening is the probability of each event happening summed up</li>
 </ol>
-<a href="#consequences"><h3 id="consequences"><span class="hanchor" ariaLabel="Anchor"># </span>Consequences</h3></a>
+<p>As a result, we get:</p>
 <ul>
 <li>$0 \leq P(A) \leq 1$</li>
 <li>$P(\lnot A) = 1 - P(A)$</li>
@@ -624,7 +673,7 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 <p>Applicable. Probability values must be reliable as a “guide to life”. They must be values that we can justifiably use to make decisions.</p>
 </li>
 <li>
-<p>Classical: number of B over number of A is 3/13</p>
+<p>Classical: number of B over number of A is $3/13$</p>
 <ol>
 <li>Problem: assumes cases of A are equipossible (equal probability)</li>
 <li>This seems circular</li>
@@ -632,14 +681,14 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 </ol>
 </li>
 <li>
-<p>Finite frequency: The proportion of B in a long series of draws is exactly 3/13.</p>
+<p>Finite frequency: The proportion of B in a long series of draws is exactly $3/13$.</p>
 <ol>
 <li>Is admissible and ascertainable</li>
 <li>Not applicable: how does this work for single case probabilities?</li>
 </ol>
 </li>
 <li>
-<p>Limiting frequency: The limiting frequency in an infinite series of draws would be 3/13.</p>
+<p>Limiting frequency: The limiting frequency in an infinite series of draws would be $3/13$.</p>
 <ol>
 <li>Is admissible and applicable</li>
 <li>Not ascertainable: there may be no limiting frequency</li>
@@ -647,7 +696,7 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 </ol>
 </li>
 <li>
-<p>Long-run propensity: The set-up A has a disposition to produce long sequences in which B happens with frequency 3/13.</p>
+<p>Long-run propensity: The set-up A has a disposition to produce long sequences in which B happens with frequency $3/13$.</p>
 <ol>
 <li>Assumes that long-run frequencies have an underlying cause through an experimental arrangement/set-up</li>
 <li>Not ascertainable: no improvement on the limiting frequency interpretation</li>
@@ -656,20 +705,20 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 </ol>
 </li>
 <li>
-<p>Logical: B partially entails A, with degree of entailment 3/13.</p>
+<p>Logical: B partially entails A, with degree of entailment $3/13$.</p>
 <ol>
 <li>P(B/A) measures the “proportion” of A that overlaps with B</li>
 </ol>
 </li>
 <li>
-<p>Epistemic: The evidence that A happened provides objective support of degree 3/13 that B happened.</p>
+<p>Epistemic: The evidence that A happened provides objective support of degree $3/13$ that B happened.</p>
 <ol>
 <li>Logical and epistemic probabilities might only exist in some cases</li>
 <li>Very unlikely that we know some of the priors/likelihoods can be computed a priori (from pure logic)</li>
 </ol>
 </li>
 <li>
-<p>Subjective (actual degree of belief):  Somebody believes with degree 3/13 that A will produce B.</p>
+<p>Subjective (actual degree of belief):  Somebody believes with degree $3/13$ that A will produce B.</p>
 <ol>
 <li>Credences can be measured (or even defined) by studying your actions, especially your betting behaviour</li>
 <li>Problem: actual degree of belief is not admissable, people commit probabilistic fallacies all the time</li>
@@ -678,7 +727,7 @@ $P(B | A) = \frac 3 {13}$ means:</p>
 </ol>
 </li>
 <li>
-<p>Subjective (idealized credence): An idealized version of someone – with coherent probabilities – believes with degree 3/13 that A will produce B.</p>
+<p>Subjective (idealized credence): An idealized version of someone – with coherent probabilities – believes with degree $3/13$ that A will produce B.</p>
 <ol>
 <li>Fixes admissibility as we require it</li>
 <li>Not applicable: how can we justify using personal probabilities to make decisions if there are no constraints on one’s prior probabilities?</li>
@@ -741,6 +790,24 @@ $P(B | A) = \frac 3 {13}$ means:</p>
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/A-Pragmatic-Precautionary-Principle/" data-ctx="thoughts/probability" data-src="/thoughts/A-Pragmatic-Precautionary-Principle" class="internal-link">A Pragmatic Precautionary Principle</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Dutch-Book/" data-ctx="probability" data-src="/thoughts/Dutch-Book" class="internal-link">Dutch Book</a>
       </li>
@@ -754,7 +821,19 @@ $P(B | A) = \frac 3 {13}$ means:</p>
       
       
       <li>
+        <a href="/thoughts/Rokos-Basilisk/" data-ctx="probabilities" data-src="/thoughts/Rokos-Basilisk" class="internal-link">Roko&#39;s Basilisk</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Social-Choice-Problem/" data-ctx="a Klmogorov Axiom" data-src="/thoughts/Social-Choice-Problem" class="internal-link">Social Choice Problem</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/effective-altruism/" data-ctx="interpreting small probabilities" data-src="/thoughts/effective-altruism" class="internal-link">Effective Altruism</a>
       </li>
       
       
@@ -782,7 +861,6 @@ $P(B | A) = \frac 3 {13}$ means:</p>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -813,7 +891,7 @@ $P(B | A) = \frac 3 {13}$ means:</p>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

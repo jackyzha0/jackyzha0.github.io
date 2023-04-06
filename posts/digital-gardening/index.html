@@ -10,6 +10,26 @@
     name="description"
     content="As of 2021, this process is no longer accurate. I&rsquo;ve embraced a much more networked form of note taking which I&rsquo;ve written about here and [[thoughts/the garden and the stream|here]]."
   />
+  <meta property="og:title" content="Digital Gardening">
+  <meta property="og:description" content="As of 2021, this process is no longer accurate. I&rsquo;ve embraced a much more networked form of note taking which I&rsquo;ve written about here and [[thoughts/the garden and the stream|here]].">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/digital-gardening/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Digital Gardening" />
+  <meta name="twitter:description" content="As of 2021, this process is no longer accurate. I&rsquo;ve embraced a much more networked form of note taking which I&rsquo;ve written about here and [[thoughts/the garden and the stream|here]]." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Digital Gardening
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -503,7 +523,7 @@ Jan 30, 2021
   rel="noopener" class="internal-link"
   data-src="/posts/networked-thought/">here</a> and <a href="/thoughts/the-garden-and-the-stream" rel="noopener" class="internal-link" data-src="/thoughts/the-garden-and-the-stream">here</a>.</p>
 </blockquote>
-<p>The first image that comes to my head when I hear the word &lsquo;gardening&rsquo; is of a small plot with some leafy greens sprouting their heads from an earthy bed. A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn&rsquo;t too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.</p>
+<p>A gardener tenderly shovels and removes unwanted weeds and pours water to nourish the plants he wants to grow. He takes care to make sure the soil isn&rsquo;t too wet and that each plant has ample space to grow. When the time comes, he harvests each fruit and vegetable and makes sure to plant seeds so that he can repeat the process anew in a few weeks time.</p>
 <p>A garden is a metaphor for a lot of things: growth, persistence, and the constant battle against entropy.</p>
 <p>When I talk about digital gardening, I don&rsquo;t mean digital gardening in the Stardew Valley or FarmVille sense. I mean gardening as in the tending and growth of my own ideas and projects on my own little plot of the world wide web &ndash; namely through my <a href="/thoughts/writing" rel="noopener" class="internal-link" data-src="/thoughts/writing">writing</a>, notes, and projects. After reading Joel Hook&rsquo;s blog post on his own 
 <a href="https://joelhooks.com/digital-garden" rel="noopener">digital garden</a>, I&rsquo;ve been thinking and reflecting on my own processes for managing my own digital garden (which you are on right now).</p>
@@ -544,11 +564,11 @@ Jan 30, 2021
 
 <img src="https://jzhao.xyz//posts/images/digital-gardening/seeds.png" width="auto" alt="Planting the seeds"  /></p>
 <a href="#watering-the-plants"><h2 id="watering-the-plants"><span class="hanchor" ariaLabel="Anchor"># </span>Watering the plants</h2></a>
-<p>I have a Notion page of random thoughts and ideas. Whenever I come across something interesting in a conversation or book or article, I file it away in this Notion page. Slowly, categories have appeared as blog posts, articles, and papers coalesce and self-organize.</p>
+<p>I keep a bunch of random thoughts and ideas in my new tab page. Whenever I come across something interesting in a conversation or book or article, I file it away here. Slowly, categories have appeared as blog posts, articles, and papers coalesce and self-organize.</p>
 <p>This input of information &ndash; the water &ndash; is what allows the ideas to grow. Just as it&rsquo;s not enough to just water a plant once and forget about it, I&rsquo;ve found that in-taking information inconsistently is about as good as not doing it at all. To be an effective watering can, I need to be intentional and consistent with my watering.</p>
-<p>My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I&rsquo;d always just read a cool post, follow a few hyperlinks, nod to myself and say &ldquo;huh&rdquo;, and maybe forward it to a friend or two. While it may have been entertaining to read, I got no value out of it. Now that I&rsquo;ve started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I&rsquo;m actually taking away from each piece. <a href="/thoughts/writing" rel="noopener" class="internal-link" data-src="/thoughts/writing">Writing</a>, specifically on this blog and on my newsletter (which you can subscribe to at the bottom of this page), has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others &ndash; quite literally picking the fruit of my labour.</p>
+<p>My process of collecting random scraps of information first sprung up from coming across interesting blog posts on Reddit. I&rsquo;d always just read a cool post, follow a few hyperlinks, nod to myself and say &ldquo;huh&rdquo;, and maybe forward it to a friend or two. While it may have been entertaining to read, I got no real value out of it. Now that I&rsquo;ve started cultivating this garden of ideas, I have a reason to be more intentional in how I sift through the information and be more mindful of what I&rsquo;m actually taking away from each piece. <a href="/thoughts/writing" rel="noopener" class="internal-link" data-src="/thoughts/writing">Writing</a>, specifically on this blog, has helped me to go back to more mature ideas and condense and refine them into something presentable and legible to others &ndash; quite literally picking the fruit of my labour.</p>
 <blockquote>
-<p>We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. — Joel Hooks</p>
+<p>We are all constantly bombarded with information, a lot of it is really good information too, but the challenge is absorbing it and applying it to the context of our lives and careers. &ndash; Joel Hooks</p>
 </blockquote>
 <p>Now that I have all of these new-found ideas and tidbits of information, what do I do with them? Keep growing them forever? At some point on the 
 
@@ -565,7 +585,7 @@ Jan 30, 2021
 
 <img src="https://jzhao.xyz//posts/images/digital-gardening/watering.png" width="auto" alt="Watering the plants"  /></p>
 <a href="#pulling-weeds"><h2 id="pulling-weeds"><span class="hanchor" ariaLabel="Anchor"># </span>Pulling weeds</h2></a>
-<p>No garden has unlimited space or nutrition to go around. Maybe you have a bigger garden than most, but that doesn&rsquo;t mean you can grow whatever you want silly-willy. Some will need more space than others and others you simply just cannot grow in the same garden plot.</p>
+<p>No garden has unlimited space or nutrition to go around. Maybe some have a bigger garden than most, but that doesn&rsquo;t mean you can grow whatever you want in it without abandon. Some will need more space than others and others you simply just cannot grow in the same garden plot.</p>
 <p>Similarly, no one has unlimited time and energy they can put into projects and learning. I, unfortunately, have yet to fully learn this lesson. After having an empty plot for so long, having a little greenery show up has inspired me into a planting frenzy, trying to cram as much into the garden as possible.</p>
 <p>I&rsquo;m starting to step back and reflect on my current commitments and deciding to either to step down from things that I&rsquo;m less passionate about to make more time and room to double down on the things I&rsquo;m truly passionate about.</p>
 <p>
@@ -618,16 +638,6 @@ Jan 30, 2021
     
       
       
-      
-    
-      
-      
-      <li>
-        <a href="/newsletters/issue-1/" data-ctx="here" data-src="/newsletters/issue-1" class="internal-link">A request for coffee chats</a>
-      </li>
-      
-      
-      
       <li>
         <a href="/posts/collaborative-thinking/" data-ctx="my digital garden" data-src="/posts/collaborative-thinking" class="internal-link">Collaborative Thinking</a>
       </li>
@@ -651,7 +661,6 @@ Jan 30, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -682,7 +691,7 @@ Jan 30, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

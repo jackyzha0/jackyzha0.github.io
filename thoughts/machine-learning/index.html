@@ -8,9 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
+    content="Theory We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+ [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets Machine learning: automatically detect patterns in data and use these to make predictions or decisions  Typically, AI $\subset$ ML $\subset$ Deep Learning   Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models  Healthy skepticism is good though:"
   />
+  <meta property="og:title" content="Machine Learning">
+  <meta property="og:description" content="Theory We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+ [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets Machine learning: automatically detect patterns in data and use these to make predictions or decisions  Typically, AI $\subset$ ML $\subset$ Deep Learning   Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models  Healthy skepticism is good though:">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/machine-learning/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Machine Learning" />
+  <meta name="twitter:description" content="Theory We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+ [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets Machine learning: automatically detect patterns in data and use these to make predictions or decisions  Typically, AI $\subset$ ML $\subset$ Deep Learning   Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models  Healthy skepticism is good though:" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Machine Learning
   </title>
@@ -60,7 +82,7 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])"
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1435,6 +1457,92 @@ Jul 2, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1447,7 +1555,6 @@ Jul 2, 2021
 
 
 <a href="#theory"><h2 id="theory"><span class="hanchor" ariaLabel="Anchor"># </span>Theory</h2></a>
-<p>Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt</p>
 <p>We produce a lot of data (see: <a href="/thoughts/Data-Capitalism" rel="noopener" class="internal-link" data-src="/thoughts/Data-Capitalism">data capitalism</a>)</p>
 <ul>
 <li><a href="/thoughts/data-mining" rel="noopener" class="internal-link" data-src="/thoughts/data-mining">Data mining</a>: automatically extract useful knowledge from large datasets</li>
@@ -1472,7 +1579,12 @@ Jul 2, 2021
 <li><a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">Supervised learning</a></li>
 <li><a href="/thoughts/No-Free-Lunch-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/No-Free-Lunch-Theorem">No Free Lunch Theorem</a></li>
 <li><a href="/thoughts/unsupervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/unsupervised-learning">Unsupervised Learning</a></li>
+<li>Optimization
+<ul>
 <li><a href="/thoughts/gradient-descent" rel="noopener" class="internal-link" data-src="/thoughts/gradient-descent">Gradient Descent</a></li>
+<li><a href="/thoughts/hyper-parameter-optimization" rel="noopener" class="internal-link" data-src="/thoughts/hyper-parameter-optimization">hyper-parameter optimization</a></li>
+</ul>
+</li>
 <li><a href="/thoughts/regularization" rel="noopener" class="internal-link" data-src="/thoughts/regularization">Regularization</a></li>
 <li>Regression
 <ul>
@@ -1490,6 +1602,12 @@ Jul 2, 2021
 <li><a href="/thoughts/semantics#deep-learning-semantics" rel="noopener" class="internal-link" data-src="/thoughts/semantics">Deep learning Semantics</a></li>
 <li><a href="/thoughts/transformers" rel="noopener" class="internal-link" data-src="/thoughts/transformers">Transformers</a></li>
 <li><a href="/thoughts/generative-models" rel="noopener" class="internal-link" data-src="/thoughts/generative-models">Generative Models</a></li>
+<li>Philosophy
+<ul>
+<li><a href="/thoughts/GOFAI" rel="noopener" class="internal-link" data-src="/thoughts/GOFAI">GOFAI</a></li>
+<li><a href="/thoughts/NFAI" rel="noopener" class="internal-link" data-src="/thoughts/NFAI">NFAI</a></li>
+</ul>
+</li>
 </ul>
 <p>Related background:</p>
 <ul>
@@ -1500,58 +1618,6 @@ Jul 2, 2021
 <li><a href="/thoughts/automatic-differentiation" rel="noopener" class="internal-link" data-src="/thoughts/automatic-differentiation">Automatic Differentiation</a></li>
 </ul>
 </li>
-</ul>
-<a href="#philosophy"><h2 id="philosophy"><span class="hanchor" ariaLabel="Anchor"># </span>Philosophy</h2></a>
-<a href="#gofai-good-old-fashioned-ai"><h3 id="gofai-good-old-fashioned-ai"><span class="hanchor" ariaLabel="Anchor"># </span>GOFAI (good old-fashioned AI)</h3></a>
-<ul>
-<li>this view believes that the mind is a computer with certain special characteristics — namely the fact that its internal states and processes can be regarded as thinking or reasoning</li>
-<li>finding meaning in a body of symbols, like finding rationality in a body of behaviour, is finding a certain kind of consistent, reliable pattern</li>
-<li>problem solvers often use canny, methodical exploration
-<ul>
-<li>neither algorithmic nor random</li>
-<li>a familiar sort of articulate reasoning or thinking a problem out
-<ul>
-<li>&ldquo;if only i could get that, then I could nail this down; but in order to get that, I would need such and such&rdquo;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>GOFAI is very narrow-minded and vulnerable to unexpected variations and oddities in the problems and information they were given</li>
-<li>grounded in the possibility of translation — semantic interpretation</li>
-</ul>
-<a href="#nfai-new-fangled-ai"><h3 id="nfai-new-fangled-ai"><span class="hanchor" ariaLabel="Anchor"># </span>NFAI (new-fangled AI)</h3></a>
-<ul>
-<li>see also: <a href="/thoughts/neural-networks" rel="noopener" class="internal-link" data-src="/thoughts/neural-networks">neural networks</a></li>
-<li>falls under connectionism and 
-
-
-
-
-
-<a
-  href="/thoughts/connectionist-networks/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/connectionist-networks/">connectionist networks</a>
-<ul>
-<li>relies on computers the same way a weather service does, to simulate digitally systems that are not in themselves digital</li>
-</ul>
-</li>
-<li>adept at finding various sort of similarities among patterns, at recognizing repeated (or almost repeated) patterns and filling in missing parts of incomplete patterns</li>
-<li>NFAI learns from examples (but not in the same way humans do)</li>
-<li>inspired by the structure of the brain, but more deeply, by the importance and ubiquity of non-formal pattern reasoning</li>
-<li>very grab-bag term → anything that isn&rsquo;t GOFAI</li>
-<li>argument that a lot of human intelligence is not embodied in anyone, its a part of the world: 
-
-
-
-
-
-<a
-  href="/thoughts/Extended-Mind-Hypothesis/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/Extended-Mind-Hypothesis/">Extended Mind Hypothesis</a></li>
-<li>e.g. through the design of tools like hammers, our architecture, etc.</li>
-<li>definition of understanding → appropriates and takes charge of its own conceptual resources and grasps the point of them for itself</li>
 </ul>
 
 
@@ -1582,8 +1648,28 @@ Jul 2, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
-        <a href="/thoughts/exploit-explore/" data-ctx="Machine learning" data-src="/thoughts/exploit-explore" class="internal-link">Exploit Explore Problem</a>
+        <a href="/thoughts/LLMs/" data-ctx="thoughts/machine learning" data-src="/thoughts/LLMs" class="internal-link">LLMs</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/data-distributions/" data-ctx="Machine Learning" data-src="/thoughts/data-distributions" class="internal-link">Data Distributions</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/exploit-explore/" data-ctx="thoughts/machine learning" data-src="/thoughts/exploit-explore" class="internal-link">Exploit Explore Problem</a>
       </li>
       
       
@@ -1599,7 +1685,6 @@ Jul 2, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1630,7 +1715,7 @@ Jul 2, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

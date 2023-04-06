@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Convergence of CS and Philosophy  newell and simon claimed that both digital computers and the human mind could be understood as physical symbol systems  using strings of bits or streams of neuron pulses as symbols representing the external world (formal symbol manipulation)   intelligence (as claimed by newell and simon) required making the appropriate inference from these internal representations  &ldquo;a physical symbol system has the necessary and sufficient means for general intelligent action&rdquo;   turning rationalist philosophy into a research program  hobbes → reasoning was calculating descartes → mental representations leibniz → &ldquo;universal characteristic&rdquo; — a set of primitives in which all knowledge could be expresse kant → concepts are rules russell → logical atoms as the building blocks of reality    Symbolic AI as a degenerating research program  problem of representing significance and relevance → how do you transfer the learnings to the real world  Heidegger  values are just meaningless facts (hammer is for hammering), leaves out information defining the relation of hammers to nails and the rest of the environment (readiness-to-hand)   Commonsense knowledge problem → how do we represent &lsquo;common sense&rsquo; in a way that is accessible to AI systems that use natural language  problem isnt curating those facts, it&rsquo;s knowing which facts are relevant in any given situations (the frame problem)  should be able to ignore something without having to figure out that it should ignore it   if the computer is running a representation of the current state of the world and something in the world chances, how does the program determine which of its represented facts can be assumed to have stayed the same, and which would have to be updated?"
+    content="Convergence of CS and Philosophy Newell and Simon claimed that both digital computers and the human mind could be understood as physical symbol systems."
   />
+  <meta property="og:title" content="Symbolic Systems">
+  <meta property="og:description" content="Convergence of CS and Philosophy Newell and Simon claimed that both digital computers and the human mind could be understood as physical symbol systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/symbolic-system/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Symbolic Systems" />
+  <meta name="twitter:description" content="Convergence of CS and Philosophy Newell and Simon claimed that both digital computers and the human mind could be understood as physical symbol systems." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Symbolic Systems
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -351,6 +371,92 @@ Jul 2, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -363,47 +469,20 @@ Jul 2, 2021
 
 
 <a href="#convergence-of-cs-and-philosophy"><h2 id="convergence-of-cs-and-philosophy"><span class="hanchor" ariaLabel="Anchor"># </span>Convergence of CS and Philosophy</h2></a>
+<p>Newell and Simon claimed that both digital computers and the human mind could be understood as physical symbol systems. They both use strings of bits or streams of neuron pulses as symbols representing the external world (formal symbol manipulation)</p>
+<p><a href="/thoughts/intelligence" rel="noopener" class="internal-link" data-src="/thoughts/intelligence">Intelligence</a> (as claimed by Newell and Simon) requires making the appropriate inference from these internal representations</p>
+<p>Turning rationalist philosophy into a research program</p>
 <ul>
-<li>newell and simon claimed that both digital computers and the human mind could be understood as physical symbol systems
-<ul>
-<li>using strings of bits or streams of neuron pulses as symbols representing the external world (formal symbol manipulation)</li>
-</ul>
-</li>
-<li>intelligence (as claimed by newell and simon) required making the appropriate inference from these internal representations
-<ul>
-<li>&ldquo;a physical symbol system has the necessary and sufficient means for general intelligent action&rdquo;</li>
-</ul>
-</li>
-<li>turning rationalist philosophy into a research program
-<ul>
-<li>hobbes → reasoning was calculating</li>
-<li>descartes → mental representations</li>
-<li>leibniz → &ldquo;universal characteristic&rdquo; — a set of primitives in which all knowledge could be expresse</li>
-<li>kant → concepts are rules</li>
-<li>russell → logical atoms as the building blocks of reality</li>
-</ul>
-</li>
+<li>Hobbes → reasoning was calculating</li>
+<li>Descartes → mental representations</li>
+<li>Leibniz → &ldquo;universal characteristic&rdquo; — a set of primitives in which all knowledge could be expressed</li>
+<li>Kant → concepts are rules</li>
+<li>Russell → logical atoms as the building blocks of reality</li>
 </ul>
 <a href="#symbolic-ai-as-a-degenerating-research-program"><h2 id="symbolic-ai-as-a-degenerating-research-program"><span class="hanchor" ariaLabel="Anchor"># </span>Symbolic AI as a degenerating research program</h2></a>
-<ul>
-<li>problem of representing significance and relevance → how do you transfer the learnings to the real world</li>
-<li>
-
-
-
-
-
-<a
-  href="/thoughts/embedded-AI/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/embedded-AI/">Heidegger</a>
-<ul>
-<li>values are just meaningless facts (hammer is for hammering), leaves out information defining the relation of hammers to nails and the rest of the environment (readiness-to-hand)</li>
-</ul>
-</li>
-<li>Commonsense knowledge problem → how do we represent &lsquo;common sense&rsquo; in a way that is accessible to AI systems that use natural language
-<ul>
-<li>problem isnt curating those facts, it&rsquo;s knowing which facts are relevant in any given situations (the 
+<p>Problem of representing significance and relevance → how do you transfer the learnings to the real world</p>
+<p>Commonsense knowledge problem: how do we represent &lsquo;common sense&rsquo; in a way that is accessible to AI systems that use natural language</p>
+<p>The problem isnt curating those facts, it&rsquo;s knowing which facts are relevant in any given situations (the 
 
 
 
@@ -412,19 +491,10 @@ Jul 2, 2021
 <a
   href="/thoughts/frame-problem/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/frame-problem/">frame problem</a>)
-<ul>
-<li>should be able to ignore something without having to figure out that it should ignore it</li>
-</ul>
-</li>
-<li>if the computer is running a representation of the current state of the world and something in the world chances, how does the program determine which of its represented facts can be assumed to have stayed the same, and which would have to be updated?
-<ul>
-<li>if a certain proposition is true (e.g. there are no empty spots in a parking lot) will it stay true? for how long?</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+  data-src="/thoughts/frame-problem/">frame problem</a>). We should be able to ignore something without having to figure out that it should ignore it</p>
+<p>If the computer is running a representation of the current state of the world and something in the world changes, how does the program determine which of its represented facts can be assumed to have stayed the same, and which would have to be updated?</p>
+<p>If a certain proposition is true (e.g. there are no empty spots in a parking lot) will it stay true? for how long?</p>
+<p>See also: <a href="/thoughts/incremental-view-maintenance" rel="noopener" class="internal-link" data-src="/thoughts/incremental-view-maintenance">incremental view maintenance</a></p>
 
 
     </article>
@@ -450,6 +520,16 @@ Jul 2, 2021
     
       
       
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/GOFAI/" data-ctx="thoughts/symbolic system" data-src="/thoughts/GOFAI" class="internal-link">GOFAI</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/interaction-design/" data-ctx="symbolic systems" data-src="/thoughts/interaction-design" class="internal-link">Interaction Design</a>
       </li>
@@ -461,7 +541,6 @@ Jul 2, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -492,7 +571,7 @@ Jul 2, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

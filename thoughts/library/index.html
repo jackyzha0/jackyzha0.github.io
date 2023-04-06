@@ -8,9 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Source: Fugitive Libraries by Shannon Mattern
-Libraries are not universally welcoming spaces. At least 87% of librarians are white, and stories of discrimination/hostility for their race/class/sexual identity/disability are not uncommon."
+    content="The Great Library of Alexandria is one of the largest information systems in modern history. It was built in Alexandria, Egypt, and part of a larger research institution called the Mouseion."
   />
+  <meta property="og:title" content="Libraries">
+  <meta property="og:description" content="The Great Library of Alexandria is one of the largest information systems in modern history. It was built in Alexandria, Egypt, and part of a larger research institution called the Mouseion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/library/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Libraries" />
+  <meta name="twitter:description" content="The Great Library of Alexandria is one of the largest information systems in modern history. It was built in Alexandria, Egypt, and part of a larger research institution called the Mouseion." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Libraries
   </title>
@@ -60,7 +79,7 @@ Libraries are not universally welcoming spaces. At least 87% of librarians are w
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +93,7 @@ Libraries are not universally welcoming spaces. At least 87% of librarians are w
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +115,10 @@ Libraries are not universally welcoming spaces. At least 87% of librarians are w
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +154,13 @@ Libraries are not universally welcoming spaces. At least 87% of librarians are w
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,6 +371,177 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -363,6 +553,24 @@ Dec 24, 2021
 
 
 
+
+<p><strong>The Great Library of Alexandria</strong> is one of the largest information systems in modern history. It was built in Alexandria, Egypt, and part of a larger research institution called the Mouseion. The idea behind the library was to be a universal collection of knowledge.</p>
+<p>Many influential philosophers worked at the library in the 2nd and 3rd centuries BC, including Euclid (founder of geometry), Homer (author of epic Greek poems), Plato (founder of the first Western university), and Socrates (founder of Western moral philosophy).</p>
+<p>Public <a href="/thoughts/library" rel="noopener" class="internal-link" data-src="/thoughts/library">libraries</a> are great examples of where knowledge goes beyond data and information. They are centers for civic knowledge, trusted knowledge broker, community archives, public digital infrastructure, rather than just a place to borrow books</p>
+<p>Do we need bookstores and libraries anymore? Yes!</p>
+<ul>
+<li>They are the primary point of internet access for underprivileged communities.</li>
+<li>Not just about search and delivery of content, but about curation and serving the body not just the mind</li>
+</ul>
+<p>How can digital communities learn from libraries and librarians to prevent a Library of Alexandria moment?</p>
+<ul>
+<li>When you&rsquo;re trying to optimize for &lsquo;hits&rsquo; or &lsquo;clicks&rsquo; feels very opposite to how libraries value knowledge</li>
+<li>What knowledge needs to be protected? What knowledge <strong>shouldn&rsquo;t</strong> be universally accessible?</li>
+<li>Alternative networks: what could the <a href="/thoughts/Internet" rel="noopener" class="internal-link" data-src="/thoughts/Internet">Internet</a> have looked like if it was designed by librarians? A writing on the bit: 
+<a href="http://joyrankin.com/phcus" rel="noopener">A People&rsquo;s History of Computing in the US</a></li>
+</ul>
+<p>See also: <a href="/thoughts/information-system" rel="noopener" class="internal-link" data-src="/thoughts/information-system">information system</a></p>
+<a href="#fugitive-libraries"><h2 id="fugitive-libraries"><span class="hanchor" ariaLabel="Anchor"># </span>Fugitive Libraries</h2></a>
 <p>
 <a href="https://placesjournal.org/article/fugitive-libraries" rel="noopener">Source: Fugitive Libraries by <em>Shannon Mattern</em></a></p>
 <p>Libraries are not universally welcoming spaces. At least 87% of librarians are white, and stories of discrimination/hostility for their race/class/sexual identity/disability are not uncommon. There is a lot of reinforcement of outdated values embedded in classification.</p>
@@ -379,6 +587,12 @@ Dec 24, 2021
 <p>How neutral should libraries be? Historically, neutrality has been a core value for a lot of librarians, but has often been used to justify &ldquo;disengagement from crises in urban communities.&rdquo;</p>
 <p>Undercommons: a place allowing for &ldquo;ongoing experiment&rdquo; with informal ways of learning together, of building futures together</p>
 <p>Fugitivity then, is the mode of being other than settled, especially recognizing that there are spaces and modalities that exist separate from the logical, the logistical, the housed and the positioned.</p>
+<a href="#the-permanent-library"><h2 id="the-permanent-library"><span class="hanchor" ariaLabel="Anchor"># </span>The permanent library</h2></a>
+<p>Archive nesting in <a href="/thoughts/Arweave" rel="noopener" class="internal-link" data-src="/thoughts/Arweave">Arweave</a></p>
+<ul>
+<li>It is our expectation that when eventually a permanent information storage system more suited to the challenges of the time emerges, the Arweave’s data will be ‘subsumed’ into this network.</li>
+<li>This pattern of ‘nesting’ of archives when they are retired is common across human history. An archive of Gopherspace (a ‘knowledge web’, prior to the HTTP-based web) can be found inside the Arweave’s permaweb. In-side the Gopherspace archive, one can find archives of earlier Telnet and bulletin board-based discussion systems</li>
+</ul>
 
 
     </article>
@@ -416,6 +630,24 @@ Dec 24, 2021
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/Algorithms-of-Oppression/" data-ctx="libraries" data-src="/thoughts/Algorithms-of-Oppression" class="internal-link">Algorithms of Oppression</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/collections/" data-ctx="library" data-src="/thoughts/collections" class="internal-link">Collections</a>
       </li>
@@ -429,7 +661,19 @@ Dec 24, 2021
       
       
       <li>
-        <a href="/thoughts/information-system/" data-ctx="library" data-src="/thoughts/information-system" class="internal-link">Information Systems</a>
+        <a href="/thoughts/information-system/" data-ctx="thoughts/library" data-src="/thoughts/information-system" class="internal-link">Information Systems</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/intentional-arrangement/" data-ctx="libraries" data-src="/thoughts/intentional-arrangement" class="internal-link">Intentional Arrangement</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/library/" data-ctx="libraries" data-src="/thoughts/library" class="internal-link">Libraries</a>
       </li>
       
       
@@ -445,7 +689,6 @@ Dec 24, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -476,7 +719,7 @@ Dec 24, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -11,6 +11,28 @@
     content="Term paper for INFO303
  One of the critiques of search engines is a lack of transparency and potential for bias in their algorithms."
   />
+  <meta property="og:title" content="Bias in Search">
+  <meta property="og:description" content="Term paper for INFO303
+ One of the critiques of search engines is a lack of transparency and potential for bias in their algorithms.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Bias-in-Search/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bias in Search" />
+  <meta name="twitter:description" content="Term paper for INFO303
+ One of the critiques of search engines is a lack of transparency and potential for bias in their algorithms." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Bias in Search
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -352,6 +374,479 @@ Mar 15, 2022
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -369,32 +864,32 @@ Mar 15, 2022
 </blockquote>
 <a href="#part-i-a-detailed-description-of-the-topic-or-issue"><h2 id="part-i-a-detailed-description-of-the-topic-or-issue"><span class="hanchor" ariaLabel="Anchor"># </span>Part I: a detailed description of the topic or issue</h2></a>
 <p>The scale of the web is huge, spanning many billions of web pages with a wide range of modalities (Teevan &amp; Dumais in Ruthven &amp; Kelly, 2011, p. 189). It is obvious that search is important for people to find what they need amidst the sprawling web we call the internet. Search engines connect its users with information resources that meet their information needs (Teevan &amp; Dumais in Ruthven &amp; Kelly, 2011, p. 192).</p>
-<p>Search engines, then, are like gateways to the information on the web, allowing easy and universal access to online information to all of its users, and defining what is relevant, knowable, and authoritative. On the other hand, these arbiters of digital information can also create embedded biases that cause knowledge disparity and allow for ill-informed decision making for information-seekers (Gao &amp; Shah, 2021, p. 2643; Friedman &amp; Nissenbaum, 1996).</p>
+<p>Search engines, then, are like gateways to the information on the web, allowing easy and universal access to online information to all of its users, and defining what is relevant, knowable, and authoritative. On the other hand, these arbiters of digital information can also create embedded <a href="/thoughts/bias" rel="noopener" class="internal-link" data-src="/thoughts/bias">biases</a> that cause knowledge disparity and allow for ill-informed decision making for information-seekers (Gao &amp; Shah, 2021, p. 2643; Friedman &amp; Nissenbaum, 1996).</p>
 <p>This paper seeks to critically examine some critique leveraged at these search engines around lack of transparency and potential for bias in their indexing, search, and ranking algorithms and conducts a brief survey over different methods of mitigating or addressing these issues.</p>
 <p>First, let us cover some basic terminology around what lack of transparency and bias mean in the context of this paper.</p>
-<p>In conjunction with the rise of large language models for understanding queries, search has become very difficult to &rsquo;explain&rsquo;. The problem is no longer understanding a transparent algorithm (like PageRank), but rather finding out exactly <em>why</em> the search engine result gave the result it did. Current search engines lack any indication of how they use your personal data to personalize the results, how the language model understands your query, or what determines search ranking. Diakopoulos and Koliska refer to this phenomena as a lack of <em>algorithmic transparency</em>. Transparency itself is the disclosure of information about algorithms to enable monitoring, checking, criticism, or intervention by interested parties (Diakopoulos &amp; Koliska, 2017).</p>
+<p>In conjunction with the rise of <a href="/thoughts/LLMs" rel="noopener" class="internal-link" data-src="/thoughts/LLMs">large language models</a> for understanding queries, search has become very difficult to &rsquo;explain&rsquo;. The problem is no longer understanding a transparent algorithm (like PageRank), but rather finding out exactly <em>why</em> the search engine result gave the result it did. Current search engines lack any indication of how they use your personal data to personalize the results, how the language model understands your query, or what determines search ranking. Diakopoulos and Koliska refer to this phenomena as a lack of <em>algorithmic transparency</em>. <a href="/thoughts/transparency" rel="noopener" class="internal-link" data-src="/thoughts/transparency">Transparency</a> itself is the disclosure of information about algorithms to enable monitoring, checking, criticism, or intervention by interested parties (Diakopoulos &amp; Koliska, 2017).</p>
 <p>Additionally, search engines are not the fully neutral, mathematically absolute systems they sometimes claim to be. Instead, they have embedded biases that inherently favour some values over others, for example favouring some types of sites over others in query results. Here, we use Friedman and Nissenbaum&rsquo;s definition of bias from their influential work <em>Bias in computer systems</em>: &ldquo;[bias refers] to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others&hellip; A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate&rdquo; (1996, p. 332). For example, the orderings of results themselves can create exposure bias due to their considerable impacts on relevance and click-through rates. It is clear that biases that are woven in search systems are becoming increasing threats to information seeking and sense-making processes (Friedman &amp; Nissenbaum, 1996).</p>
 <a href="#part-2-an-analysis-of-the-associated-societal-benefitsharms-and-ethical-issues"><h2 id="part-2-an-analysis-of-the-associated-societal-benefitsharms-and-ethical-issues"><span class="hanchor" ariaLabel="Anchor"># </span>Part 2: an analysis of the associated societal benefits/harms and ethical issues</h2></a>
-<p>However, the impact of these search systems go much deeper than making it hard to find what you are looking for. If these search engines are gatekeepers, then they also influence the values that surround what is being searched for. This means that minority groups often have their own values and identities influenced by the majority: a form of double-consciousness that Safiya Umoja Noble describes in her seminal work <em>Algorithms of Oppression</em> (Noble, 2018). If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?</p>
-<p>Furthermore, Ali Alkhatib&rsquo;s work paints an even grimmer possible future where algorithmic systems live in a sort of potemkin village or pseudo-reality of their own construction that they see the world as (Alkhatib, 2021). Large search engine companies like Google have massive stores of personal data in the attempts of modelling and predicting who we are and what we will do next (Pariser in Alkhatib, 2021). In doing so, these algorithmic systems produce a simplified yet inaccurate view of the world. However, the problem is not in creating these models, but from projecting the models onto the world to try and create change. These systems become more actively dangerous when they go from &ldquo;making sense of the world&rdquo; to &ldquo;making the world make sense&rdquo; (Alkhatib, 2021).</p>
+<p>However, the impact of these search systems go much deeper than making it hard to find what you are looking for. If these search engines are gatekeepers, then they also influence the values that surround what is being searched for. This means that minority groups often have their own values and identities influenced by the majority: a form of <a href="/thoughts/double-consciousness" rel="noopener" class="internal-link" data-src="/thoughts/double-consciousness">double-consciousness</a> that Safiya Umoja Noble describes in her seminal work <em>Algorithms of Oppression</em> (Noble, 2018). If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?</p>
+<p>Furthermore, Ali Alkhatib&rsquo;s work paints an even grimmer possible future where algorithmic systems live in a sort of <a href="/thoughts/potemkin-village" rel="noopener" class="internal-link" data-src="/thoughts/potemkin-village">potemkin village</a> or pseudo-reality of their own construction that they see the world as (Alkhatib, 2021). Large search engine companies like Google have massive stores of personal data in the attempts of modelling and predicting who we are and what we will do next (Pariser in Alkhatib, 2021). In doing so, these algorithmic systems produce a simplified yet inaccurate view of the world. However, the problem is not in creating these models, but from projecting the models onto the world to try and create change. These systems become more actively dangerous when they go from &ldquo;making sense of the world&rdquo; to &ldquo;making the world make sense&rdquo; (Alkhatib, 2021).</p>
 <p>Of course, this is exactly what these search engines are doing. They attempt to use these models to alter what information they feed to us, which in turn shapes our information seeking behaviour and what we know. Pariser (2011) points out that &ldquo;[search personalization] serves up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the unknown&rdquo;.</p>
-<p>The problem is exacerbated when these &lsquo;abridged maps&rsquo; of the world start diverging from reality and people can&rsquo;t override the delusions baked into those imaginations. Echoing Noble&rsquo;s earlier work, this creates vicious cycles of unfairness where users frequently only click on the top results, a ranking or recommendation algorithm that takes user feedback into account will continue putting those same items at the top, reinforcing what the algorithm <em>believes</em> to be true about the world. As the power dynamics unfold and play out, the system drifts further and further away from reality (Gao, Ge, &amp; Shah, 2021). This is why data and power monopolies are so dangerous. These bureaucracies that have no power to self-correct (or allow themselves to be corrected) leads to a world where people cannot freely walk away or reject the bureaucracy&rsquo;s nonsense model of the world (Alkhatib, 2021). If there is no way for the users to speak up and to demand change, then it becomes an Orwellian nightmare where these search engines become sources that dictate <em>truth</em>.</p>
+<p>The problem is exacerbated when these &lsquo;abridged maps&rsquo; of the world start diverging from reality and people can&rsquo;t override the delusions baked into those imaginations. Echoing Noble&rsquo;s earlier work, this creates vicious cycles of unfairness where users frequently only click on the top results and a ranking or recommendation algorithm that takes user feedback into account will continue putting those same items at the top, reinforcing what the algorithm <em>believes</em> to be true about the world. As the power dynamics unfold and play out, the system drifts further and further away from reality (Gao, Ge, &amp; Shah, 2021). This is why data and power monopolies are so dangerous. These bureaucracies that have no power to self-correct (or allow themselves to be corrected) leads to a world where people cannot freely walk away or reject the bureaucracy&rsquo;s nonsense model of the world (Alkhatib, 2021). If there is no way for the users to speak up and to demand change, then it becomes an Orwellian nightmare where these search engines become sources that dictate <em>truth</em>.</p>
 <p>The large scale usage of these search engines have now changed their positions in society from aggregators of information to arbiters and oracles of truth. Historically, search algorithms relied on perhaps complex algorithms but all they did was rank literally whats relevant and ask the user to determine what info they actually need with respect to their query. Now, more search engines are leaning into trying to tell you the &lsquo;right&rsquo; answer in an effort to reduce the number of clicks it takes for the average user to find the answer they are looking for. Yet none of these results are actually <em>objective.</em> These engines freely provide &ldquo;a sorting of the wheat from the chaff, and answer our most profound and most trivial questions&rdquo; and in doing so, become an object of faith (Noble, 2018). Cathy O&rsquo;Neil likens search engines to objects of faith: &ldquo;Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists&rdquo; (2016). Many searchers view the results of these searches as objective truth.</p>
 <p>This misconception of search engines as sources of truth leads to epistemologically irrational behaviour where searchers take the answer of these algorithms without critically examining them or performing their own further research.</p>
 <a href="#part-3-a-discussion-of-how-the-issue-can-or-should-be-addressed-to-minimize-negative-impacts-and-increase-benefits"><h2 id="part-3-a-discussion-of-how-the-issue-can-or-should-be-addressed-to-minimize-negative-impacts-and-increase-benefits"><span class="hanchor" ariaLabel="Anchor"># </span>Part 3: a discussion of how the issue can or should be addressed to minimize negative impacts and increase benefits.</h2></a>
 <p>With such a significant problem with one of the most critical pieces of our modern day information seeking, many have attempted to try to mitigate some of the negative impacts of these search systems. The following section briefly surveys a variety of different methods for addressing these problems.</p>
 <a href="#fairness-aware-algorithms"><h3 id="fairness-aware-algorithms"><span class="hanchor" ariaLabel="Anchor"># </span>Fairness-aware Algorithms</h3></a>
-<p>One such approach are fairness-aware algorithms which aim to integrate metrics of diversity and fairness along with more traditional IR metrics like relevance and novelty. We look to Gao, Ge, and Shah&rsquo;s 2021 work on <em>FAIR: Fairness-aware information retrieval evaluation</em> as a case study.</p>
+<p>One such approach are fairness-aware algorithms which aim to integrate metrics of diversity and fairness along with more traditional <a href="/thoughts/information-retrieval" rel="noopener" class="internal-link" data-src="/thoughts/information-retrieval">information retrieval</a> metrics like relevance and novelty. We look to Gao, Ge, and Shah&rsquo;s 2021 work on <em>FAIR: Fairness-aware information retrieval evaluation</em> as a case study.</p>
 <p>They define fairness as the subjective moderation of the ratio between different groups (p. 1). This approach to fairness comes from a more social perspective which attempts to moderate the exposure of information so that &ldquo;different information and resources get fair chances to receive users&rsquo; attention&rdquo; (p. 2).  They argue that search currently does a poor job of distributing attention across a diverse set of results and that we should look to fairness-aware algorithms where &ldquo;different items should receive equal exposure, or exposure proportional to their utilities or impacts&rdquo; (p. 3).</p>
 <p>To do so, they propose to optimize directly for an <em>integrated</em> metric &ndash; arguing that fairness and utility are not necessarily orthogonal and optimizing for one does not necessarily lead to a decline in quality in another.</p>
 <p>Of course, this is not without limitations either. Fairness-aware algorithms like FAIR seem promising but have yet to see more mainstream adoption from large search companies. Additionally, FAIR is designed with a focus on group fairness rather than individual fairness (p. 11), which makes it much more difficult to adapt to the standard of personalized search we see today.</p>
 <a href="#algorithmic-transparency"><h3 id="algorithmic-transparency"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Transparency</h3></a>
-<p>Another method is to vie for more explainable search systems. Explainable recommendation and search, as defined by Zhang, Zhang, and Zhang, are &ldquo;models or methods that not only generate high-quality recommendation or search results, but also intuitive explanations of the results for users or system designers, which can help to improve the system transparency, persuasiveness, trustworthiness, and effectiveness, etc.&rdquo; (p. 1411).</p>
+<p>Another method is to vie for more <a href="/thoughts/explainability" rel="noopener" class="internal-link" data-src="/thoughts/explainability">explainable</a> search systems. Explainable recommendation and search, as defined by Zhang, Zhang, and Zhang, are &ldquo;models or methods that not only generate high-quality recommendation or search results, but also intuitive explanations of the results for users or system designers, which can help to improve the system transparency, persuasiveness, trustworthiness, and effectiveness, etc.&rdquo; (p. 1411).</p>
 <p>Work done by Rader, Cotter, and Cho show potential for including <em>explanations</em> in search rankings and feed as ways of improving algorithmic transparency about how the search engine result arrived at its answer (2018), citing what factors contributed to why certain results appear to users.</p>
 <p>However, this method is not without critique either. Some mention that revealing the ranking algorithm would lead to catastrophe, given the adversarial stance between search and spammers and SEOs. Granados and Gupta agree, citing that while transparency can be seen as beneficial to engendering trust, &ldquo;seeing the inner workings of a government, business, or newsroom can result in negative implications such as undermining competitive advantages or creating costs without concomitant gains&rdquo; (Granados &amp; Gupta cited in Diakopoulos &amp; Koliska, 2017).</p>
 <p>Diakopoulos and Koliska noted that participants in their study recognized this issue but still found it did not detract from the necessity of transparent systems, citing that &ldquo;people will game the system no matter what, and that by disclosing information publicly it would level the playing field&rdquo; (2017). Leveling the playing field, in this context likely refers to healthy competitive advantage that prevents the same monopolies of power that Alkhatib&rsquo;s work mentioned.</p>
 <a href="#algorithmic-accountability"><h3 id="algorithmic-accountability"><span class="hanchor" ariaLabel="Anchor"># </span>Algorithmic Accountability</h3></a>
-<p>Another potential approach is to better hold search engine companies accountable for the results of search rather than making the algorithms themselves explicitly transparent.</p>
+<p>Another potential approach is to better hold search engine companies <a href="/thoughts/accountability" rel="noopener" class="internal-link" data-src="/thoughts/accountability">accountable</a> for the results of search rather than making the algorithms themselves explicitly transparent.</p>
 <p>Krafft, Reber, Krafft, Coutrier, and Zweig define the concept of algorithmic accountability, which focuses on the behavior of the algorithm or the algorithmic system in question which has to be justified and explained by the person or company who puts it in use (Krafft &amp; Reber, et al. 2021).</p>
 <p>This approach is more of a &lsquo;black-box&rsquo; approach which doesn&rsquo;t require a transparent understanding of how the algorithmic system works for it to be held accountable, only for the effects to be known. Krafft et. al. specifically note this advantage over approaches that focus on transparency, citing that with accountability approaches, the workings of the algorithms themselves usually &ldquo;remain undisclosed or obfuscated by design as they constitute trade secrets whose disclosure would allow gaming the system&rdquo; (p. 2).</p>
 <p>The ACM similarly outlines 7 principles for algorithmic transparency and accountability (ACM, 2017): awareness, access and redress, accountability, explanation, data provenance, auditability, and validation and testing. The main focus that the ACM is trying to drive is that groups affected by these algorithmic systems should be able to 1) be aware of biases + risks, 2) have enough context and data to have informed feedback, and 3) have a way to give feedback and hold the systems and their creators accountable.</p>
@@ -407,7 +902,7 @@ Mar 15, 2022
 <p>In this model of search, search engines are not oracles but rather another opinion for you to consider you in your information-seeking journey.</p>
 <a href="#conclusion"><h3 id="conclusion"><span class="hanchor" ariaLabel="Anchor"># </span>Conclusion</h3></a>
 <p>It does not feel like there is a single &lsquo;silver bullet&rsquo; solution to bias and lack of transparency in the search space. If it was that easy, I&rsquo;m sure it would have been developed and implemented already. This is clearly a nuanced space with a lot of interplaying factors that make it hard to find any one &lsquo;objectively good&rsquo; solution to these problems.</p>
-<p>Like Krafft and Reber mention in their paper analyzing challenges in black box analyses, &ldquo;search engines, like most other algorithmic systems embedded in a complex socio-technical system, are not a stable research subject&rdquo; (Krafft &amp; Reber, et al. 2021). The search experience is constantly changing due to companies running A/B tests to optimize their advertisement conversion numbers and user engagement, world events that affect what is popular and searched for, previous search behaviour that affects the engine&rsquo;s model of you and the world (Krafft &amp; Reber, et al. 2021). These are just a few of the many problems search engine researchers come across when trying to be exact in their science of dissecting and probing these algorithmic systems.</p>
+<p>Like Krafft and Reber mention in their paper analyzing challenges in <a href="/thoughts/black-box" rel="noopener" class="internal-link" data-src="/thoughts/black-box">black box</a> analyses, &ldquo;search engines, like most other algorithmic systems embedded in a complex socio-technical system, are not a stable research subject&rdquo; (Krafft &amp; Reber, et al. 2021). The search experience is constantly changing due to companies running A/B tests to optimize their advertisement conversion numbers and user engagement, world events that affect what is popular and searched for, previous search behaviour that affects the engine&rsquo;s model of you and the world (Krafft &amp; Reber, et al. 2021). These are just a few of the many problems search engine researchers come across when trying to be exact in their science of dissecting and probing these algorithmic systems.</p>
 <p>These systems are so deeply entrenched within our society that there is no way to &lsquo;isolate&rsquo; changes in any one part of the system. It is incredibly hard to prod and fix these issues when they are constantly changing and adapting, but that doesn&rsquo;t mean there hasn&rsquo;t been good attempts in the space to address it. At the end of the day, web search is integral to how we conduct increasingly online portions of our lives. The least we can do is to make sure that it works equitably and well for everyone who needs to use it.</p>
 <a href="#citations"><h2 id="citations"><span class="hanchor" ariaLabel="Anchor"># </span>Citations</h2></a>
 <ol>
@@ -416,8 +911,8 @@ Mar 15, 2022
 <li>Friedman, B., &amp; Nissenbaum, H. (1996). Bias in computer systems. <em>ACM Transactions on Information Systems (TOIS)</em>, <em>14</em>(3), 330-347.</li>
 <li>Diakopoulos, N., &amp; Koliska, M. (2017). Algorithmic transparency in the news media. <em>Digital journalism</em>, <em>5</em>(7), 809-828.</li>
 <li>Rader, E., Cotter, K., &amp; Cho, J. (2018, April). Explanations as mechanisms for supporting algorithmic transparency. In <em>Proceedings of the 2018 CHI conference on human factors in computing systems</em> (pp. 1-13).</li>
-<li>Noble, S. U. (2018). Algorithms of oppression. In <em>Algorithms of Oppression</em>. New York University Press.</li>
-<li>Alkhatib, A. (2021, May). To live in their utopia: Why algorithmic systems create absurd outcomes. In <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em> (pp. 1-9).</li>
+<li>Noble, S. U. (2018). <a href="/thoughts/Algorithms-of-Oppression" rel="noopener" class="internal-link" data-src="/thoughts/Algorithms-of-Oppression">Algorithms of Oppression</a>. In <em>Algorithms of Oppression</em>. New York University Press.</li>
+<li>Alkhatib, A. (2021, May). <a href="/thoughts/To-Live-in-their-Utopia" rel="noopener" class="internal-link" data-src="/thoughts/To-Live-in-their-Utopia">To Live in their Utopia</a>: Why algorithmic systems create absurd outcomes. In <em>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</em> (pp. 1-9).</li>
 <li>Pariser, E. (2011). <em>The filter bubble: How the new personalized web is changing what we read and how we think</em>. Penguin.</li>
 <li>Gao, R., Ge, Y., &amp; Shah, C. (2021). FAIR: Fairness-Aware Information Retrieval Evaluation. <em>arXiv preprint arXiv:2106.08527</em>.</li>
 <li>O&rsquo;neil, C. (2016). <em>Weapons of math destruction: How big data increases inequality and threatens democracy</em>. Broadway Books.</li>
@@ -464,7 +959,6 @@ Mar 15, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -495,7 +989,7 @@ Mar 15, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

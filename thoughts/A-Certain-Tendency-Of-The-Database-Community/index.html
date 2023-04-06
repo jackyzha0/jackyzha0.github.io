@@ -9,8 +9,30 @@
   <meta
     name="description"
     content="Source
-[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/consistency|linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world"
+[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world"
   />
+  <meta property="og:title" content="A Certain Tendency Of The Database Community">
+  <meta property="og:description" content="Source
+[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Certain Tendency Of The Database Community" />
+  <meta name="twitter:description" content="Source
+[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     A Certain Tendency Of The Database Community
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -330,7 +352,7 @@ Nov 16, 2022
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
 </ul>
 
@@ -351,6 +373,92 @@ Nov 16, 2022
 
 
 
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -580,34 +688,28 @@ Nov 16, 2022
 
 <p>
 <a href="https://arxiv.org/pdf/1510.08473.pdf" rel="noopener">Source</a></p>
-<p><a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">Distributed Systems</a> that provide “single system image” semantics (read: <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">linearizability</a>) is fundamentally flawed and at odds with how systems operate in the physical world</p>
+<p><a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">Distributed Systems</a> that provide “single system image” semantics (read: <a href="/thoughts/linearizability" rel="noopener" class="internal-link" data-src="/thoughts/linearizability">linearizability</a>) is fundamentally flawed and at odds with how systems operate in the physical world</p>
 <a href="#there-is-no-authoritative-copy"><h2 id="there-is-no-authoritative-copy"><span class="hanchor" ariaLabel="Anchor"># </span>There is no authoritative copy</h2></a>
+<p>A lot of engineers attempt to treat distributed state as <strong>a single system image</strong> where there is a single primary site (main source of truth)</p>
+<p>But in reality, the world is eventually <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistent</a> and <a href="/thoughts/plurality" rel="noopener" class="internal-link" data-src="/thoughts/plurality">pluriversal</a></p>
+<blockquote>
+<p>Members of the same system exchange information by “interacting”, or sending messages containing information to each other. These messages between members of the system can be arbitrarily dropped and delayed, just like in traditional, unreliable, asynchronous networks.</p>
+</blockquote>
+<p>The web was able to scale to the scale it did because there is no <em>authoritative</em> copy of the web.</p>
+<p>In fact, truly global applications can only achieve some sense of responsiveness through having multiple primary sites. This is because at a global scale, having only one primary site just doesn&rsquo;t work:</p>
 <ul>
-<li>Weaker consistency models that offer fewer guarantees about when the effect of an update might be observed by other members in the system, can offer higher availability, allowing the system to continue to operate while components of the system are offline, where stronger models might prohibit updates when nodes can not communicate</li>
-<li>A lot of software systems attempt to treat distributed state as <strong>a single system image</strong></li>
-<li>But in reality, the world is eventually <a href="/thoughts/consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">consistent</a>
-<ul>
-<li>Members of the same system exchange information by “interacting”, or sending messages containing information to each other. These messages between members of the system can be arbitrarily dropped and delayed, just like in traditional, unreliable, asynchronous networks.</li>
+<li>Supporting any non-trivial application at global scale requires a lot of compute which often can&rsquo;t be colocated on the same machine for performance reasons</li>
+<li>Having a single primary site means that every read or write needs to be done through it. As a result, latency for users that are on the other side of the world may have latencies that make the application frustrating or unusable.</li>
 </ul>
-</li>
-<li>Similarly, the web was able to scale to the scale it did because there is no <em>authoritative</em> copy of the web</li>
-<li>Primary site: main source of truth</li>
-<li>Designs such as this are very familiar in practice. For instance, Facebook, a large social-network application on the web, has a single user profile for each user that is active in the system. Each of these profiles is replicated across several of their data centers for performance; however, only one data center is deemed the primary site where all updates are performed.</li>
-<li>However, it would be extremely impractical to have to hear information directly from the primary site every time you needed information. This is why we partially <a href="/thoughts/replication" rel="noopener" class="internal-link" data-src="/thoughts/replication">replicate</a> data across databases. Databases are optimizations which makes for extremely efficient distribution of information (scale-free rather than random)</li>
-</ul>
+<p>Take Facebook for example. It has a single user profile for each user that is active in the system. It would be extremely impractical to have to hear information directly from the primary site every time you needed information. Each of these profiles is replicated across several of their data centers for performance. Distributed databases are optimizations which makes for extremely efficient distribution of information (<a href="/thoughts/Network-Theory" rel="noopener" class="internal-link" data-src="/thoughts/Network-Theory">scale-free</a> rather than random)</p>
 <a href="#each-node-is-primary"><h2 id="each-node-is-primary"><span class="hanchor" ariaLabel="Anchor"># </span>Each node is primary</h2></a>
-<ul>
-<li>What is another model of databases or state machine replication we can come up with? What about one which places each node as its own <strong>primary site?</strong></li>
-<li>In this model, each member of the system has some partially-replicated knowledge and some knowledge that they are the primary site for. This information is exchanged between members of the system and merged with each member’s local information: this provides both fault-tolerance, and lower latency in servicing requests for information from peers.</li>
-<li>As we continue to increase the number of globally connected devices, we must embrace a design that considers every single member in the system as the primary site for the data that it is generates. It is completely impractical that we can look at a single, or a small number, of globally distributed data centers as the primary site for all global information that we desire to perform computations with.</li>
-<li>Can we build abstractions that allow devices to communicate <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a>, acknowledging the true primary site for a particular piece of information and scale to the amount of information that exists, not only between all computers in a planetary-scale distributed system, but all entities in the universe?</li>
-</ul>
+<p>What is another model of databases or state machine replication we can come up with? What about one which places each node as its own <strong>primary site?</strong></p>
+<p>In this model, each member of the system has some partially-replicated knowledge and some knowledge that they are the primary site for. This information is exchanged between members of the system and merged with each member’s local information: this provides both fault-tolerance, and lower latency in servicing requests for information from peers.</p>
+<p>As we continue to increase the number of globally connected devices, we must embrace a design that considers every single member in the system as the primary site for the data that it is generates. It is completely impractical that we can look at a single, or a small number, of globally distributed data centers as the primary site for all global information that we desire to perform computations with.</p>
+<p>Can we build abstractions that allow devices to communicate <a href="/thoughts/peer-to-peer" rel="noopener" class="internal-link" data-src="/thoughts/peer-to-peer">peer-to-peer</a>, acknowledging the true primary site for a particular piece of information and scale to the amount of information that exists, not only between all computers in a planetary-scale distributed system, but all entities in the universe?</p>
 <a href="#limits-of-the-speed-of-light"><h2 id="limits-of-the-speed-of-light"><span class="hanchor" ariaLabel="Anchor"># </span>Limits of the speed of light</h2></a>
-<ul>
-<li>Coordination in the universe is limited by how much you can observe. That means a globally consistent <em>anything</em> will be limited by the speed of light</li>
-<li>Problematic for global (and potentially inter-planetary) communication</li>
-<li>Great thing about local-first is that you don&rsquo;t need to know anything about the other side of the world when doing stuff locally</li>
-</ul>
+<p>Coordination in the universe is limited by how much you can observe. That means a globally consistent <em>anything</em> will be limited by the speed of light</p>
+<p>This is problematic for global (and potentially inter-planetary) communication. The great thing about <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a> is that you don&rsquo;t need to know anything about the other side of the world when doing stuff locally :)</p>
 
 
     </article>
@@ -637,6 +739,14 @@ Nov 16, 2022
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
       <li>
         <a href="/posts/bft-json-crdt/" data-ctx="A Certain Tendency Of The Database Community" data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
       </li>
@@ -649,12 +759,23 @@ Nov 16, 2022
       
       
       
+      <li>
+        <a href="/thoughts/peer-to-peer/" data-ctx="thoughts/A Certain Tendency Of The Database Community" data-src="/thoughts/peer-to-peer" class="internal-link">Peer to peer</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/plurality/" data-ctx="thoughts/A Certain Tendency Of The Database Community" data-src="/thoughts/plurality" class="internal-link">Plurality</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -685,7 +806,7 @@ Nov 16, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

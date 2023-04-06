@@ -8,9 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities
+    content="Self-sovereign identity (SSI) is an approach to digital identity that gives individuals [[thoughts/agency]] over their digital identities
  &ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders."
   />
+  <meta property="og:title" content="Self-sovereign Identity (SSI)">
+  <meta property="og:description" content="Self-sovereign identity (SSI) is an approach to digital identity that gives individuals [[thoughts/agency]] over their digital identities
+ &ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Self-sovereign-Identity-SSI/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Self-sovereign Identity (SSI)" />
+  <meta name="twitter:description" content="Self-sovereign identity (SSI) is an approach to digital identity that gives individuals [[thoughts/agency]] over their digital identities
+ &ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Self-sovereign Identity (SSI)
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -567,6 +589,134 @@ Apr 28, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -578,7 +728,8 @@ Apr 28, 2022
 
 
 
-<p>Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities</p>
+
+<p>Self-sovereign identity (SSI) is an approach to digital identity that gives individuals <a href="/thoughts/agency" rel="noopener" class="internal-link" data-src="/thoughts/agency">agency</a> over their digital identities</p>
 <blockquote>
 <p>&ldquo;Identity is a uniquely human concept; however modern society view this concept of identity as state-issued credentials as driver&rsquo;s license and social security cards, which suggests a person can lose his very identity if a state revokes his credentials or even if he just crosses state borders.&rdquo; (Christopher Allen)</p>
 </blockquote>
@@ -587,11 +738,7 @@ Apr 28, 2022
 <p>In SSI systems, holders have control over unique identifiers (decentralized identifiers). These can be verified using <a href="/thoughts/encryption" rel="noopener" class="internal-link" data-src="/thoughts/encryption">encryption</a> and anchored on some sort of distributed ledger (e.g. <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a>)</p>
 <a href="#why-ssi-matters-to-the-average-citizen"><h2 id="why-ssi-matters-to-the-average-citizen"><span class="hanchor" ariaLabel="Anchor"># </span>Why SSI matters to the average citizen</h2></a>
 <ul>
-<li>Avoid a million accounts to log into
-<ul>
-<li>SSI federates logins to various services and applications</li>
-</ul>
-</li>
+<li>Avoid a million accounts to log into. SSI federates logins to various services and applications</li>
 <li>Granular access permissions for content</li>
 <li>Data provenance through signatures, can request takedowns as proving ownership is trivial</li>
 </ul>
@@ -599,20 +746,9 @@ Apr 28, 2022
 <p>
 <a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Source: Molly White</a></p>
 <p>Mostly critiques about certain implementations of <a href="/thoughts/soulbound" rel="noopener" class="internal-link" data-src="/thoughts/soulbound">SBTs</a> or <a href="/thoughts/Verifiable-Credential" rel="noopener" class="internal-link" data-src="/thoughts/Verifiable-Credential">VCs</a> (which she refers to as Verifiable attestations)</p>
-<ul>
-<li>people are able to send soulbound tokens without the consent of the recipient—given that it is unlikely people would consent to police departments recording their crimes for others to later use against them if they had the choice</li>
-<li>against a world where relationships are front-run by a deluge of data rather than formed more organically between individuals
-<ul>
-<li>&ldquo;An acquaintance now quits those ‘old-fashioned’ relationship-building niceties and gets straight to the SSI point. Where do you work? Which college did you go to? Which college did your parents go to? Republican or Democrat? What’s your gender? Your ethnic origins? Do you have this gene or the other one? If you fail to offer up the requisite verifiable claims then you fail to get to ‘trust building’ first base in the SSI century.&rdquo;</li>
-<li>similar to Black Mirror&rsquo;s Nosedive Episode (S3E1)</li>
-</ul>
-</li>
-<li>people suck at security: the average person is shit at securing their data
-<ul>
-<li>though, is this just bad ui/ux or is it just fundamentally hard (tm) to make it easy for people to be secure? i feel like VPNs for example have made &lsquo;good security&rsquo; practice pretty easy for the average consumer</li>
-</ul>
-</li>
-</ul>
+<p>People are able to send soulbound tokens without the consent of the recipient—given that it is unlikely people would consent to police departments recording their crimes for others to later use against them if they had the choice</p>
+<p>She is against a world where relationships are front-run by a deluge of data rather than formed more organically between individuals: &ldquo;An acquaintance now quits those ‘old-fashioned’ relationship-building niceties and gets straight to the SSI point. Where do you work? Which college did you go to? Which college did your parents go to? Republican or Democrat? What’s your gender? Your ethnic origins? Do you have this gene or the other one? If you fail to offer up the requisite verifiable claims then you fail to get to ‘trust building’ first base in the SSI century.&rdquo; (see also: <a href="/thoughts/introductions" rel="noopener" class="internal-link" data-src="/thoughts/introductions">introductions</a>). Similar to Black Mirror&rsquo;s Nosedive Episode (S3E1)</p>
+<p>People suck at <a href="/thoughts/security" rel="noopener" class="internal-link" data-src="/thoughts/security">security</a>: the average person is shit at securing their data. Although, I wonder if this is just bad UI/UX or is it just fundamentally hard (tm) to make it easy for people to be secure? I feel like VPNs for example have made &lsquo;good security&rsquo; practice pretty easy for the average consumer</p>
 
 
     </article>
@@ -683,7 +819,6 @@ Apr 28, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -714,7 +849,7 @@ Apr 28, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

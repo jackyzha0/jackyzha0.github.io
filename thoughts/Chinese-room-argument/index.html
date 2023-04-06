@@ -11,6 +11,28 @@
     content="Source: Stanford Encyclopedia of Philosophy
 Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand [[thoughts/language|language]] but could not produce real understanding."
   />
+  <meta property="og:title" content="Searle&#39;s Chinese room argument">
+  <meta property="og:description" content="Source: Stanford Encyclopedia of Philosophy
+Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand [[thoughts/language|language]] but could not produce real understanding.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Chinese-room-argument/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Searle&#39;s Chinese room argument" />
+  <meta name="twitter:description" content="Source: Stanford Encyclopedia of Philosophy
+Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand [[thoughts/language|language]] but could not produce real understanding." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Searle&#39;s Chinese room argument
   </title>
@@ -60,7 +82,7 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ Mainly a refutation against the Turing test as a means for measuring intelligenc
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -438,49 +460,6 @@ Dec 25, 2021
 
   
 
-  
-  
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
 
 
 
@@ -496,94 +475,7 @@ Dec 25, 2021
 <a href="https://plato.stanford.edu/entries/chinese-room/" rel="noopener">Source: Stanford Encyclopedia of Philosophy</a></p>
 <p>Mainly a refutation against the Turing test as a means for measuring intelligence. The narrow conclusion of the argument is that programming a digital computer may make it appear to understand <a href="/thoughts/language" rel="noopener" class="internal-link" data-src="/thoughts/language">language</a> but could not produce real understanding.</p>
 <p>&ldquo;Searle imagines himself alone in a room following a computer program for responding to Chinese characters slipped under the door. Searle understands nothing of Chinese, and yet, by following the program for manipulating symbols and numerals just as a computer does, he sends appropriate strings of Chinese characters back out under the door, and this leads those outside to mistakenly suppose there is a Chinese speaker in the room.&rdquo;</p>
-<p>We often attribute &ldquo;understanding&rdquo; and other cognitive predicates by metaphor and analogy to things that can&rsquo;t be intentioned like cars and adding machines — we make these attributions as we extend our own intentionality onto them (derived intentionality)</p>
-<ul>
-<li>replies
-<ol>
-<li>systems reply
-<ul>
-<li>the symbol manipulator is merely a part of a whole system and the system does understand the story</li>
-<li>understanding is not being ascribed to the mere individual, rather it is being ascribed to this whole system of which he is a part</li>
-<li>response
-<ul>
-<li>individual incorporates the entire system, nullifies the argument</li>
-</ul>
-</li>
-<li>exposing the fault of the turing tests:
-<ul>
-<li>two &ldquo;systems&rdquo; both of which pass the Turing test, but only one of which understands</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>robot reply
-<ul>
-<li>put a computer inside a robot, this computer would just operate the robot in such a way that the robot does something very much like perceiving, walking, moving about, hammering nails, eating, etc.</li>
-<li>embedded ai argument</li>
-<li>response
-<ul>
-<li>i know none of these other facts. i am receiving information from the robots perceptual apparatus and I am giving out instructions to its motor apparatus without knowing either of these facts</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>brain simulator reply
-<ul>
-<li>the machine takes in Chinese stories and questions about them as input, it simulates the formal structure of actual Chinese brains in processing these stories, and it gives out Chinese answers as outputs</li>
-<li>what this is saying
-<ul>
-<li>strong ai assumption: the mind is to the brain as the program is to the hardware, thus we can understand the mind without doing neurophysiology</li>
-<li>if we actually knew how the brain worked, we wouldn&rsquo;t bother with neurophysiology</li>
-</ul>
-</li>
-<li>response
-<ul>
-<li>water valves as synapse connections
-<ul>
-<li>where is the understanding in this system? operator certainly doesn&rsquo;t understand Chinese and neither do the pipes</li>
-<li>absurd to think that the operator in conjunction with the pipes understands it (operator can internalize the pipes)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>combination reply
-<ul>
-<li>imagine a robot with a brain-shaped computer lodged in its cranial cavity, computer programmed with all the synapses of the human brain, whole behaviour of the robot is indistinguishable from human behaviour, and now think of the whole thing as a unified system and not just a computer with inputs and outputs</li>
-<li>as long as you knew nothing about it, it would be rational to ascribe 
-
-
-
-
-
-<a
-  href="/thoughts/intentionality/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/intentionality/">intentionality</a> to the robot</li>
-<li>response: doesn&rsquo;t help the claims of strong AI
-<ul>
-<li>the attributions of intentionality that we make to the robot in this example have nothing to do with formal programs</li>
-<li>if the robot looks and behaves sufficiently like us, then we would suppose until proven otherwise, that is must have mental states like ours that cause and are expressed by its behaviour and it must have an inner mechanism capable of producing such mental states</li>
-<li>however, as soon as we knew that the behaviour was the result of a formal program, and that the actual <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> properties of the physical substance were irrelevant, we would abandon the assumption of intentionality</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>The many mansion reply</li>
-</ol>
-<ul>
-<li>will eventually build devices that have these <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> processes and that will be artificial intelligence</li>
-<li>avoids the original thesis: mental processes are computational processes over formally defined elements</li>
-<li>say we gave a machine the capacity to understand English or Chinese
-<ul>
-<li>this is possible as our bodies with our brains are precisely such machines</li>
-</ul>
-</li>
-<li>no purely formal model will ever be sufficient by itself for intentionality</li>
-</ul>
-</li>
-</ul>
+<p>We often attribute &ldquo;understanding&rdquo; and other cognitive predicates by metaphor and analogy to things that can&rsquo;t be intentioned like cars and adding machines — we make these attributions as we extend our own <a href="/thoughts/intentionality" rel="noopener" class="internal-link" data-src="/thoughts/intentionality">intentionality</a> onto them (derived intentionality)</p>
 
 
     </article>
@@ -617,6 +509,10 @@ Dec 25, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Knowledge-Argument/" data-ctx="Chinese room argument" data-src="/thoughts/Knowledge-Argument" class="internal-link">Knowledge Argument</a>
       </li>
@@ -624,7 +520,13 @@ Dec 25, 2021
       
       
       <li>
-        <a href="/thoughts/intelligence/" data-ctx="Chinese room argument" data-src="/thoughts/intelligence" class="internal-link">Can Machines Think?</a>
+        <a href="/thoughts/embedded-AI/" data-ctx="thoughts/Chinese room argument" data-src="/thoughts/embedded-AI" class="internal-link">Embedded AI</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/intelligence/" data-ctx="thoughts/Chinese room argument" data-src="/thoughts/intelligence" class="internal-link">Can Machines Think?</a>
       </li>
       
       
@@ -640,7 +542,6 @@ Dec 25, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -671,7 +572,7 @@ Dec 25, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

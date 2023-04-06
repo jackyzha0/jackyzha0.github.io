@@ -11,6 +11,28 @@
     content="Source
 Valve is a company is one that I respect a lot for the agency they give their employees. Feels very much like a [[thoughts/metalabel|metalabel]] where you have a bunch of highly agentic people working on things they wanna work on rather than a company."
   />
+  <meta property="og:title" content="Valve Handbook">
+  <meta property="og:description" content="Source
+Valve is a company is one that I respect a lot for the agency they give their employees. Feels very much like a [[thoughts/metalabel|metalabel]] where you have a bunch of highly agentic people working on things they wanna work on rather than a company.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Valve-Handbook/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Valve Handbook" />
+  <meta name="twitter:description" content="Source
+Valve is a company is one that I respect a lot for the agency they give their employees. Feels very much like a [[thoughts/metalabel|metalabel]] where you have a bunch of highly agentic people working on things they wanna work on rather than a company." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Valve Handbook
   </title>
@@ -60,7 +82,7 @@ Valve is a company is one that I respect a lot for the agency they give their em
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ Valve is a company is one that I respect a lot for the agency they give their em
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ Valve is a company is one that I respect a lot for the agency they give their em
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ Valve is a company is one that I respect a lot for the agency they give their em
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -487,7 +509,7 @@ Apr 25, 2022
 <blockquote>
 <p>Lots of people at Valve want and need to know what you care about, what you’re good at, what you’re worried about, what you’ve got experience with, and so on. And the way to get the word out is to start telling people all of those things.</p>
 </blockquote>
-<p>People first <a href="/thoughts/friction" rel="noopener" class="internal-link" data-src="/thoughts/friction">friction-ful</a> onboarding!</p>
+<p>People first <a href="/thoughts/friction" rel="noopener" class="internal-link" data-src="/thoughts/friction">frictionful</a> onboarding!</p>
 <a href="#structure"><h3 id="structure"><span class="hanchor" ariaLabel="Anchor"># </span>Structure</h3></a>
 <ol>
 <li>Team leads
@@ -541,7 +563,7 @@ Apr 25, 2022
 </li>
 </ol>
 <a href="#risk"><h2 id="risk"><span class="hanchor" ariaLabel="Anchor"># </span>Risk</h2></a>
-<p>Providing the freedom to fail is an important trait of the company— we couldn’t expect so much of individuals if we also penal- ized people for errors.</p>
+<p>Providing the freedom to fail is an important trait of the company— we couldn’t expect so much of individuals if we also penalized people for errors.</p>
 <p>There are still some bad ways to fail.</p>
 <ul>
 <li>Repeating the same mistake over and over is one.</li>
@@ -568,8 +590,7 @@ Apr 25, 2022
 <li>simultaneously being inventive, iterative, creative, talkative, and reactive</li>
 </ul>
 <a href="#t-shaped-people"><h3 id="t-shaped-people"><span class="hanchor" ariaLabel="Anchor"># </span>T-Shaped People</h3></a>
-<p>We care about T-shaped people: people who are both generalists (highly skilled at<br>
-a broad set of valuable things—the top of the T) and also experts (among the best in their field within a narrow discipline—the vertical leg of the T).</p>
+<p>We care about T-shaped people: people who are both generalists (highly skilled at a broad set of valuable things—the top of the T) and also experts (among the best in their field within a narrow discipline—the vertical leg of the T).</p>
 <p>An expert who is too narrow has difficulty collaborating. A generalist who doesn’t go deep enough in a single area ends up on the margins, not really contributing as an individual.</p>
 <a href="#things-to-improve"><h2 id="things-to-improve"><span class="hanchor" ariaLabel="Anchor"># </span>Things to improve</h2></a>
 <p>Things Valve wishes they were better at</p>
@@ -607,7 +628,6 @@ a broad set of valuable things—the top of the T) and also experts (among the b
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -638,7 +658,7 @@ a broad set of valuable things—the top of the T) and also experts (among the b
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

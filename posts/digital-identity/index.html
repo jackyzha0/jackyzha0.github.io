@@ -11,6 +11,28 @@
     content="What is identity? Who defines it? Who controls it? What is its relationship to software?
 Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines."
   />
+  <meta property="og:title" content="On Digital Identity">
+  <meta property="og:description" content="What is identity? Who defines it? Who controls it? What is its relationship to software?
+Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/digital-identity/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="On Digital Identity" />
+  <meta name="twitter:description" content="What is identity? Who defines it? Who controls it? What is its relationship to software?
+Software developers and computer scientists have been tackling [[thoughts/identity|identity]] for almost half a century now, trying to model identity in ways that are understandable to machines." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     On Digital Identity
   </title>
@@ -60,7 +82,7 @@ Software developers and computer scientists have been tackling [[thoughts/identi
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ Software developers and computer scientists have been tackling [[thoughts/identi
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ Software developers and computer scientists have been tackling [[thoughts/identi
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ Software developers and computer scientists have been tackling [[thoughts/identi
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +375,53 @@ Jul 16, 2022
 
 
 
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -1109,12 +1178,12 @@ Jul 16, 2022
 
 <p><em>What is identity? Who defines it? Who controls it? What is its relationship to software?</em></p>
 <p>Software developers and computer scientists have been tackling <a href="/thoughts/identity" rel="noopener" class="internal-link" data-src="/thoughts/identity">identity</a> for almost half a century now, trying to model identity in ways that are understandable to machines. Different models seek to emulate different aspects of the identity.</p>
-<p>But for engineers building these digital identities, the primary focus is on legibility: the process of simplifying, labelling, and modelling. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>But for engineers building these digital identities, the primary focus is on <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">legibility</a>: the process of simplifying, labelling, and modelling.</p>
 <p>Legibility on its own is not a bad thing. It’s how Google assembles droves of information on the web so we can search through it easily. It’s how we have transparency into the progress of publicly funded projects and initiatives by our governments.</p>
-<p>But this process of legibility becomes dangerous when it forcefully shapes users. When legibility becomes the lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This systemized legibility of the world is an interpretive and transformational force that changes how we perceive others<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>But this process of legibility becomes dangerous when it forcefully shapes users. When legibility becomes the lens you view the world through, relationships are front-run by a deluge of data rather than formed more organically between individuals<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This systemized legibility of the world is an interpretive and transformational force that changes how we perceive others<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
 <p>In the process of being made legible, nuance is excluded. Legibility means that ‘only what matters’ and can be quantified is kept; all else is discarded. This is especially dangerous when that legibility happens without the choice of the users.</p>
-<p><img src="/thoughts/images/forest death.png" width="auto" /><em>Illegible natural forest vs legible &ldquo;scientific&rdquo; forest (James C. Scott in Gordon Brander)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></em></p>
-<p>Forced legibility may look like a set of failing grades on a report card without an accompanying note explaining how you missed finals week because you needed to grieve for the death of a loved one. Forced legibility may look like a conviction charge without the context behind how the officer was racially motivated. Forced legibility may look like having to choose between identifying as a man or a woman on the national census when neither describes you well, erasing their lived experience. When legibility is forced upon people, it only serves to widen the gulf that already exists in society and disproportionately impacts marginalized groups<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. This legibility is beneficial for companies and governments seeking to better model user-data, but it doesn’t serve humans who seek to govern their own identities and control who accesses their information.</p>
+<p><img src="/thoughts/images/forest death.png" width="auto" /><em>Illegible natural forest vs legible &ldquo;scientific&rdquo; forest (James C. Scott in Gordon Brander)<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></em></p>
+<p>Forced legibility may look like a set of failing grades on a report card without an accompanying note explaining how you missed finals week because you needed to grieve for the death of a loved one. Forced legibility may look like a conviction charge without the context behind how the officer was racially motivated. Forced legibility may look like having to choose between identifying as a man or a woman on the national census when neither describes you well, erasing their lived experience. When legibility is forced upon people, it only serves to widen the gulf that already exists in society and disproportionately impacts marginalized groups<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. This legibility is beneficial for companies and governments seeking to better model user-data, but it doesn’t serve humans who seek to govern their own identities and control who accesses their information.</p>
 <p>If we want to flip <a href="/thoughts/access-control" rel="noopener" class="internal-link" data-src="/thoughts/access-control">access control</a> back to the users, we need to consider other representations of identity. Clearly, it doesn&rsquo;t make sense to try to make every part of our digital identities legible. <strong>Can we develop alternate systems that provide similarly rich models of identity that also allow people to be illegible? Or at least self-selectively legible?</strong></p>
 <p>This essay seeks to explore alternate abstractions for identity to better resolve the identity needs of <em>all</em> relevant stakeholders, not just centralized providers. We can categorize digital identity models based on the primary representation of identity along with the locus of control (managed versus self-sovereign).</p>
 <table>
@@ -1146,15 +1215,15 @@ Jul 16, 2022
 <p><em>Fig 1: Different models of digital identity.</em></p>
 <p>What are ways we can lean towards self-sovereign models of identity? How do we give users freedom to choose how legible they are online?</p>
 <a href="#identity-as-attributes"><h2 id="identity-as-attributes"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Attributes</h2></a>
-<p><img src="/thoughts/images/identity-attribute.png" width="auto" />
-Our digital representations consist of:</p>
+<p><img src="/thoughts/images/identity-attribute.png" width="auto" /></p>
+<p>Our digital representations consist of:</p>
 <ul>
 <li>What we bought last time we visited Amazon;</li>
 <li>All the files you’ve uploaded to Google Drive;</li>
 <li>Google Analytics data points about what pages we visited and when;</li>
 <li>What type of videos we watched on TikTok over the past week.</li>
 </ul>
-<p>Most data models default to this assumption of identity as objects with attributes. Almost all programming languages model things, including people, this way. Databases are similar, either being documents with attributes or rows in a table. Relations are encoded as references to other documents, not as things in and of themselves.</p>
+<p>Most data models default to this assumption of identity as objects with attributes. Almost all programming languages model things, including people, this way. ISO/IEC 24760-1, the only formal international standard for identity, sees identity as a set of attributes to be managed<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Databases are similar, either being documents with attributes or rows in a table. Relations are encoded as references to other documents, not as things in and of themselves.</p>
 <p>When we model identity as a collection of attributes, all aspects of identity are, by default, quantifiable and measurable.</p>
 <p>Having individuals completely own their identities (e.g. <a href="/thoughts/Self-sovereign-Identity-SSI" rel="noopener" class="internal-link" data-src="/thoughts/Self-sovereign-Identity-SSI">Self-sovereign Identity (SSI)</a> and <a href="/thoughts/Verifiable-Credential" rel="noopener" class="internal-link" data-src="/thoughts/Verifiable-Credential">Verifiable Credentials (VCs)</a>) gives agency to people to control these representations but the main function of these identities is still to make the bearer legible.</p>
 <a href="#identity-as-capabilities"><h2 id="identity-as-capabilities"><span class="hanchor" ariaLabel="Anchor"># </span>Identity as Capabilities</h2></a>
@@ -1176,7 +1245,7 @@ Our digital representations consist of:</p>
 <blockquote>
 <p>&ldquo;Unfortunately, due to their peculiar nature, humans are unable to memorize large numbers of keys, and use them as names for a multitude of objects.&rdquo;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup></p>
 </blockquote>
-<p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names.HCI researchers call systems like these <a href="/thoughts/petname" rel="noopener" class="internal-link" data-src="/thoughts/petname">petname</a> systems.</p>
+<p>You are already most likely familiar with a system for &lsquo;memorizing&rsquo; these large keys already. All of our phones have a personal address book that we use to map meaningless phone numbers to human-meaningful names. HCI researchers call systems like these <a href="/thoughts/petname" rel="noopener" class="internal-link" data-src="/thoughts/petname">petname</a> systems.</p>
 <blockquote>
 <p>For example, if you meet someone named Becky who plays trombone, you could name her “Becky Trombone” and someone else could name her “Becky 101B.” This personal relationship is more recognizable to each individual than a single, self-described user profile named “Becky Smith.” Instead of a single global contact list (like Facebook), we want many personal contact lists (like phonebooks). <em>(
 <a href="https://www.inkandswitch.com/backchannel/" rel="noopener">Backchannel</a>, Ink &amp; Switch)</em></p>
@@ -1193,19 +1262,19 @@ Our digital representations consist of:</p>
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>Source: 
-<a href="https://www.iso.org/standard/77582.html" rel="noopener">ISO Standard</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Is &ldquo;acceptably non-dystopian&rdquo; self-sovereign identity even possible?</a>, Molly White&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>Source: 
-<a href="https://blog.mollywhite.net/is-acceptably-non-dystopian-self-sovereign-identity-even-possible/" rel="noopener">Is &ldquo;acceptably non-dystopian&rdquo; self-sovereign identity even possible?</a>, Molly White&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445740" rel="noopener">To Live in Their Utopia</a>, Ali Alkhatib&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Source: 
-<a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445740" rel="noopener">To Live in Their Utopia</a>, Ali Alkhatib&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>&ldquo;Scott details a pattern of disaster that repeatedly manifests around legibility. His opening example is from the late-18th century discipline of “scientific forestry”. A natural forest is illegible. A tangle of plants. This is inconvenient from the standpoint of harvesting lumber. How do you quantify yield? Can you even make a meaningful map of this mess? Much easier to clear the forest and plant a legible “scientific” forest. Uniform rows of trees that produce good lumber. Now we can count the trees, make a map, track sustainable yield. What’s missing from our map? Everything else. The forest has been <em>made legible</em> to lumber production. In the process, the entire ecological web of trees, shrubs, birds, bugs, moss, soil microbiota are stripped away. They didn’t fit into our map. By the second generation of planting, there is a noticeable decline in forest health. Within one century: <em>Waldsterben</em>, forest death, ecological collapse.&rdquo; Quote from 
+<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>&ldquo;Scott details a pattern of disaster that repeatedly manifests around legibility. His opening example is from the late-18th century discipline of “scientific forestry”. A natural forest is illegible. A tangle of plants. This is inconvenient from the standpoint of harvesting lumber. How do you quantify yield? Can you even make a meaningful map of this mess? Much easier to clear the forest and plant a legible “scientific” forest. Uniform rows of trees that produce good lumber. Now we can count the trees, make a map, track sustainable yield. What’s missing from our map? Everything else. The forest has been <em>made legible</em> to lumber production. In the process, the entire ecological web of trees, shrubs, birds, bugs, moss, soil microbiota are stripped away. They didn’t fit into our map. By the second generation of planting, there is a noticeable decline in forest health. Within one century: <em>Waldsterben</em>, forest death, ecological collapse.&rdquo; Quote from 
-<a href="https://subconscious.substack.com/p/soulbinding-like-a-state" rel="noopener">Soulbinding Like a State</a>, Gordon Brander&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Source: 
+<a href="https://www.iso.org/standard/77582.html" rel="noopener">ISO Standard</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5" role="doc-endnote">
 <p>Source: 
@@ -1270,6 +1339,10 @@ Our digital representations consist of:</p>
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Proposal/" data-ctx="From legibility to identity" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
       </li>
@@ -1283,7 +1356,7 @@ Our digital representations consist of:</p>
       
       
       <li>
-        <a href="/thoughts/identity/" data-ctx="relational identity" data-src="/thoughts/identity" class="internal-link">Identity</a>
+        <a href="/thoughts/identity/" data-ctx="digital identity" data-src="/thoughts/identity" class="internal-link">Identity</a>
       </li>
       
       
@@ -1293,7 +1366,6 @@ Our digital representations consist of:</p>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1324,7 +1396,7 @@ Our digital representations consist of:</p>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

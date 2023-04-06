@@ -11,6 +11,28 @@
     content="Source: A Brief Rant On The Future of Interaction Design by Bret Victor
 Tools address human needs by amplifying human capabilities."
   />
+  <meta property="og:title" content="Interaction Design">
+  <meta property="og:description" content="Source: A Brief Rant On The Future of Interaction Design by Bret Victor
+Tools address human needs by amplifying human capabilities.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/interaction-design/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Interaction Design" />
+  <meta name="twitter:description" content="Source: A Brief Rant On The Future of Interaction Design by Bret Victor
+Tools address human needs by amplifying human capabilities." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Interaction Design
   </title>
@@ -60,7 +82,7 @@ Tools address human needs by amplifying human capabilities."
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ Tools address human needs by amplifying human capabilities."
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ Tools address human needs by amplifying human capabilities."
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ Tools address human needs by amplifying human capabilities."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -481,6 +503,49 @@ Jul 25, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -511,6 +576,7 @@ Jul 25, 2021
 <blockquote>
 <p>Take a moment to pick up the objects around you. Use them as you normally would, and sense their tactile response — their texture, pliability, temperature; their distribution of weight; their edges, curves, and ridges; how they <em>respond</em> in your hand as you use them.</p>
 </blockquote>
+<a href="#beyond-touch"><h2 id="beyond-touch"><span class="hanchor" ariaLabel="Anchor"># </span>Beyond Touch</h2></a>
 <p>Current technology is very much just <em>Pictures Under Glass</em>. All interaction are glassy and feel like they have no connection with whatever task you were performing. Almost as if it was just under a pane of glass. List of interactions you can do with <em>Picture Under Glass</em>:</p>
 <ol>
 <li>Slide</li>
@@ -534,7 +600,6 @@ Jul 25, 2021
   href="/thoughts/interaction-failure/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/interaction-failure/">interaction failure</a></p>
-<a href="#beyond-touch"><h2 id="beyond-touch"><span class="hanchor" ariaLabel="Anchor"># </span>Beyond Touch</h2></a>
 <blockquote>
 <p>Humanity is using the dynamic medium merely to emulate and extend static representations from the era of paper.</p>
 </blockquote>
@@ -704,7 +769,7 @@ Jul 25, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/representation/">representations</a></p>
 <p>Can we show multiple representations of dynamic behaviour? Can we transform between different representations easily?</p>
-<p>The goal is to have manipulation of the behaviour and data itself rather than a structure or set of symbols that &lsquo;represents&rsquo; that behaviour/data -&gt; related to the idea of turtles and the LOGO language in 
+<p>The goal is to have manipulation of the behaviour and data itself rather than a structure or set of symbols that &lsquo;represents&rsquo; that behaviour/data: related to the idea of turtles and the LOGO language in 
 
 
 
@@ -723,7 +788,7 @@ Jul 25, 2021
 <a href="#webstrates"><h2 id="webstrates"><span class="hanchor" ariaLabel="Anchor"># </span>Webstrates</h2></a>
 <p>
 <a href="https://pure.au.dk/portal/files/91047333/webstrates.pdf" rel="noopener">Source</a></p>
-<p>In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs”</p>
+<p>In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs” (see: <a href="/posts/agentic-computing" rel="noopener" class="internal-link" data-src="/posts/agentic-computing">agentic computing</a>)</p>
 <p>Two decades later, Mark Weiser envisioned a future of ubiquitous computing, where heterogenous devices of varying sizes and capabilities interact easily with each other and technology disappears into the background.</p>
 <p>Substrates are software artifacts that embody content, computation and interaction, effectively blurring the distinction between documents and applications.</p>
 <a href="#cool-experiments"><h2 id="cool-experiments"><span class="hanchor" ariaLabel="Anchor"># </span>Cool Experiments</h2></a>
@@ -815,12 +880,6 @@ Jul 25, 2021
       
       
       <li>
-        <a href="/" data-ctx="interactions" data-src="/" class="internal-link">jzhao.xyz</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/posts/2021/" data-ctx="interaction design" data-src="/posts/2021" class="internal-link">2021: A Letter to my Past and Future selves</a>
       </li>
       
@@ -840,6 +899,12 @@ Jul 25, 2021
       
       <li>
         <a href="/thoughts/desktop-metaphor/" data-ctx="interaction design" data-src="/thoughts/desktop-metaphor" class="internal-link">Desktop Metaphor</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/feedback-loops/" data-ctx="thoughts/interaction design" data-src="/thoughts/feedback-loops" class="internal-link">Feedback Loops</a>
       </li>
       
       
@@ -909,7 +974,6 @@ Jul 25, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -940,7 +1004,7 @@ Jul 25, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

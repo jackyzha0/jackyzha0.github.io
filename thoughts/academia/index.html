@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="The &lsquo;rat race&rsquo; of Computer Science Academia  There is no mechanism today, other than time, donations, and personal social platforms, for researchers to support other researchers&rsquo; work."
+    content="Academia feels more pure, more playful, than industry? More of a &lsquo; constructionist&rsquo; approach, freedom to ask your own questions. But it also has its fair share of perverse/dated [[thoughts/incentives]]"
   />
+  <meta property="og:title" content="Academia">
+  <meta property="og:description" content="Academia feels more pure, more playful, than industry? More of a &lsquo; constructionist&rsquo; approach, freedom to ask your own questions. But it also has its fair share of perverse/dated [[thoughts/incentives]]">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/academia/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Academia" />
+  <meta name="twitter:description" content="Academia feels more pure, more playful, than industry? More of a &lsquo; constructionist&rsquo; approach, freedom to ask your own questions. But it also has its fair share of perverse/dated [[thoughts/incentives]]" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Academia
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -351,6 +371,177 @@ Mar 24, 2023
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -362,30 +553,7 @@ Mar 24, 2023
 
 
 
-<a href="#the-rat-race-of-computer-science-academia"><h2 id="the-rat-race-of-computer-science-academia"><span class="hanchor" ariaLabel="Anchor"># </span>The &lsquo;rat race&rsquo; of Computer Science Academia</h2></a>
-<blockquote>
-<p>There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers&rsquo; work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. 
-<a href="https://twitter.com/shreydjain13" rel="noopener">Shrey Jain</a></p>
-</blockquote>
-<p>
-<a href="https://evjang.com/2021/10/23/generalization.html" rel="noopener">Source: Just ask for Generalization</a></p>
-<p>My guess is that the research community tends to reward narratives that increase intellectual complexity and argue that &ldquo;we need better algorithms&rdquo;. People pay lip service to &ldquo;simple ideas&rdquo; but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas.</p>
-<hr>
-<p>The typical research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<a href="#tunnel-vision"><h2 id="tunnel-vision"><span class="hanchor" ariaLabel="Anchor"># </span>Tunnel Vision</h2></a>
-<p>
-<a href="https://www.briantimar.com/notes/mimetic/mimetic/" rel="noopener">Source: Mimetic by <em>Brian Timar</em></a>, see also 
 
-
-
-
-
-<a
-  href="/thoughts/mimetic/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/mimetic/">mimetic</a></p>
-<p>&ldquo;Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.&rdquo;</p>
-<a href="#incentive-structure"><h2 id="incentive-structure"><span class="hanchor" ariaLabel="Anchor"># </span>Incentive Structure</h2></a>
 <p>Academia feels more pure, more 
 
 
@@ -404,71 +572,39 @@ Mar 24, 2023
 <a
   href="/thoughts/constructionist/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/constructionist/">constructionist</a>&rsquo; approach, freedom to ask your own questions</p>
-<p>Can we create the energy of DARPA outside of government 
+  data-src="/thoughts/constructionist/">constructionist</a>&rsquo; approach, freedom to ask your own questions. But it also has its fair share of perverse/dated <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentives</a></p>
+<p>See also: <a href="/thoughts/independent-research" rel="noopener" class="internal-link" data-src="/thoughts/independent-research">independent research</a></p>
+<a href="#research-incentives"><h2 id="research-incentives"><span class="hanchor" ariaLabel="Anchor"># </span>Research Incentives</h2></a>
+<ol>
+<li>Research must be original &ndash; this drives people to stake out a piece of ground no one wants</li>
+<li>Research must be substantial &ndash; awkward problems mean more substance to write about and solve, discouraging elegant solutions</li>
+</ol>
+<p>Academics and scientists start good and get original. <a href="/thoughts/Hackers" rel="noopener" class="internal-link" data-src="/thoughts/Hackers">Hackers</a>, from the start, are doing original work; it&rsquo;s just very bad. They start original, and get good.</p>
+<a href="#the-rat-race-of-theoretical-academia"><h2 id="the-rat-race-of-theoretical-academia"><span class="hanchor" ariaLabel="Anchor"># </span>The &lsquo;rat race&rsquo; of theoretical academia</h2></a>
+<blockquote>
+<p>There is no mechanism today, other than time, donations, and personal social platforms,  for researchers to support other researchers&rsquo; work. Every act of support is out of selflessness and there is a lack of incentive for cross collaboration other than having your name on another paper. The reward system in this community is highly dependent on your ability to make your research well known and marketed. 
+<a href="https://twitter.com/shreydjain13" rel="noopener">Shrey Jain</a></p>
+</blockquote>
+<p>
+<a href="https://evjang.com/2021/10/23/generalization.html" rel="noopener">Source: Just ask for Generalization</a></p>
+<p>My guess is that the theoretical research community (e.g. computer science, math) tends to reward narratives that increase intellectual complexity and argue that &ldquo;we need better algorithms&rdquo;. People pay lip service to &ldquo;simple ideas&rdquo; but few are willing to truly pursue simplicity to its limit and simply scale up existing ideas.</p>
+<p>The typical computer science research project might last 4 years at the longest because that is the max duration of a PhD and post-doc. An average PhD candidate wants their own unique project; they don’t want to continue someone else’s project. So the academic world is a rapid succession of short-lived projects</p>
+<p>Had a talk with 
+<a href="https://stephenfay.xyz/" rel="noopener">Stephen Fay</a> about this and he mentioned that this isn&rsquo;t necessarily true for &lsquo;hard&rsquo; or &lsquo;physical&rsquo; sciences. &ldquo;In physics there are many huge international collaborations spanning decades (e.g. large radio arrays in poles+south africa+Canada, LIGO + LISA, CERN, James Webb, building quantum computers is going to take large collaborations even if research goes underground)&rdquo;</p>
+<p>I think any research field with sufficient barrier entry/requirements for access to infrastructure/hardware/physical resources does necessarily require pooling of resources on an institutional and often multi-year/decade long timespan. But now the question is how we can encourage this sort of <a href="/thoughts/generational-learning" rel="noopener" class="internal-link" data-src="/thoughts/generational-learning">intergenerational research</a> in theoretical fields?</p>
+<a href="#tunnel-vision"><h2 id="tunnel-vision"><span class="hanchor" ariaLabel="Anchor"># </span>Tunnel Vision</h2></a>
+<p>
+<a href="https://www.briantimar.com/notes/mimetic/mimetic/" rel="noopener">Source: Mimetic by <em>Brian Timar</em></a>, see also 
 
 
 
 
 
 <a
-  href="/thoughts/funding/"
+  href="/thoughts/mimetic/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/funding/">funding</a>? A modern day Xerox Parc or Bell Labs? A 
-
-
-
-
-
-<a
-  href="/thoughts/research-institutions/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/research-institutions/">research institutions</a> perhaps?</p>
-<p>More on 
-
-
-
-
-
-<a
-  href="/thoughts/incentives/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/incentives/">incentives</a></p>
-<a href="#research-at-microsoft"><h2 id="research-at-microsoft"><span class="hanchor" ariaLabel="Anchor"># </span>Research at Microsoft</h2></a>
-<p>Session w/ Jim Pinkelman, Ph.D. Been at MS for 19 years, 11 years in Microsoft Research</p>
-<p>Most of MS research is not necessarily driven by a technical challenge that a product group faces. Very driven by research interests of new hires.</p>
-<p>Missions</p>
-<ol>
-<li>Advance the state-of-the-art in CS</li>
-<li>Rapidly transfer technologies to Microsoft products and services</li>
-<li>Incubate disruptive technologies and new business</li>
-</ol>
-<p>95% of internal research is peer-reviewed + published</p>
-<p>1990 memo</p>
-<ul>
-<li>&ldquo;We have some unique potential to productize research&rdquo;</li>
-<li>&ldquo;We should still listen to external research, but in some areas there is a big benefit in owning the tech&rdquo;</li>
-</ul>
-<p>Horizons</p>
-<ul>
-<li>Horizon 1: Near term, ~6mo-1yr, what technical challenges do we need to overcome?</li>
-<li>Horizon 2: Medium term, 1-4yrs, idea of general challenge needed to be solved</li>
-<li>Horizon 3: Long term, 5-10yrs, advancement in the field</li>
-</ul>
-<p>MSR sub-groups</p>
-<ol>
-<li>MSR Labs: Long term basic research</li>
-<li>MSR NExT: New experiences and technologies</li>
-</ol>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>From 
-<a href="https://stephenfay.xyz/" rel="noopener">Stephen Fay</a>: &ldquo;I don&rsquo;t really understand where this claim comes from. In physics there are many huge international collaborations spanning decades (e.g. large radio arrays in poles+south africa+Canada, LIGO + LISA, CERN, James Webb, building quantum computers is going to take large collaborations even if research goes underground). I can&rsquo;t really speak to other fields but it would be nice to have a bit more context to this claim.&rdquo; I&rsquo;ve now clarified this critique to mostly target computer science/theoretical fields. I think any research field with sufficient barrier entry/requirements for access to infrastructure/hardware/physical resources does necessarily require pooling of resources on an institutional and often multi-year/decade long timespan&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
+  data-src="/thoughts/mimetic/">mimetic</a></p>
+<p>&ldquo;Graduate programs select for intensely competitive individuals with highly specific skills, often with negligible market value outside of universities. A strong desire for publications on esoteric topics is inherited from senior postdocs and professors, making tunnel vision especially acute.&rdquo;</p>
 
 
     </article>
@@ -548,12 +684,17 @@ Mar 24, 2023
       
       
       
+      <li>
+        <a href="/thoughts/scientific-progress/" data-ctx="thoughts/academia" data-src="/thoughts/scientific-progress" class="internal-link">Scientific Progress</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -584,7 +725,7 @@ Mar 24, 2023
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -11,6 +11,28 @@
     content="This essay was originally published in Reboot.
  DISCLAIMER: To borrow words from Robin Sloan: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it!"
   />
+  <meta property="og:title" content="Towards Data Neutrality">
+  <meta property="og:description" content="This essay was originally published in Reboot.
+ DISCLAIMER: To borrow words from Robin Sloan: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/towards-data-neutrality/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Towards Data Neutrality" />
+  <meta name="twitter:description" content="This essay was originally published in Reboot.
+ DISCLAIMER: To borrow words from Robin Sloan: While it is okay to share this link, I want to underscore that I am sending it specifically to you with the hope that you will really think about it!" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Towards Data Neutrality
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1053,6 +1075,135 @@ Jul 14, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1077,7 +1228,7 @@ Jul 14, 2022
 <p><img src="/thoughts/images/data moat.png" width="auto" /></p>
 <p>Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.</p>
 <a href="#an-ideal-world"><h2 id="an-ideal-world"><span class="hanchor" ariaLabel="Anchor"># </span>An Ideal World</h2></a>
-<p>Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. <strong>Decentralization is about agency</strong>: we get choice about where we <em>store</em> our data, who we give <em>access</em> to which parts of that data, which <em>services</em> we want on top of it, and how we <em>pay</em> for those.</p>
+<p>Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. <strong>Decentralization is about <a href="/thoughts/agency" rel="noopener" class="internal-link" data-src="/thoughts/agency">agency</a></strong>: we get choice about where we <em>store</em> our data, who we give <em>access</em> to which parts of that data, which <em>services</em> we want on top of it, and how we <em>pay</em> for those.</p>
 <p>In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego &ldquo;dot&rdquo; that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.</p>
 <p>In an ideal world, there is <em>data-neutrality</em>. Much like how the Net <a href="/thoughts/neutrality" rel="noopener" class="internal-link" data-src="/thoughts/neutrality">Neutrality</a> debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.</p>
 <p>In an ideal world, we focus on local-first software that works independently of large platforms &ndash; at the end of the day <strong>platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.</strong></p>
@@ -1109,7 +1260,7 @@ Jul 14, 2022
 <p>The important question is: can applications on top of decentralized data <strong>behave the same way as centralized apps</strong>? Can we still aggregate information into feeds and present a cohesive user experience even if all of our friends&rsquo; data is stored in different places?</p>
 <a href="#why-not-use-blockchains"><h2 id="why-not-use-blockchains"><span class="hanchor" ariaLabel="Anchor"># </span>Why not use blockchains?</h2></a>
 <p>I admit that it is true that <a href="/thoughts/blockchain" rel="noopener" class="internal-link" data-src="/thoughts/blockchain">blockchain</a> actually solves most of these problems. Blockchain approaches have great approaches to solving both identity and availability through a combination of wallet addresses and token <a href="/thoughts/incentives" rel="noopener" class="internal-link" data-src="/thoughts/incentives">incentive</a> mechanisms. Yet, they solve it in a way that leaves much to be desired.</p>
-<p>Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include</p>
+<p>Blockchain causes a whole new set of problems that makes it quite cumbersome to build on top of it. Some of the core problems that I have personally seen include:</p>
 <ul>
 <li>Lack of ability to store large files on-chain in a cost-effective manner</li>
 <li>Massively reduced speed and efficiency (the global Ethereum computer operates at roughly the speed of a Raspberry Pi)</li>
@@ -1118,13 +1269,13 @@ Jul 14, 2022
 <p>All of these make it incredibly unfeasible for data-intensive or real-time applications (e.g. file sharing, games, collaborative text editing) without <em>aggressive</em> application of blockchain scaling ideas. Of course, there are certain applications that benefit from the unique properties that blockchains possess (namely strong guarantees about consistency and message ordering among the presence of <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine actors</a>) that make it worthwhile for certain applications like cryptocurrencies, but for most applications these tradeoffs make it hard for end users to adopt.</p>
 <p>Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?</p>
 <a href="#the-personal-cloud"><h2 id="the-personal-cloud"><span class="hanchor" ariaLabel="Anchor"># </span>The personal cloud</h2></a>
-<p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable <em>data-neutrality</em> by separating data from applications.</p>
+<p><strong>Rhizome</strong> aims to be a data-persistence and identity layer for the <a href="/thoughts/distributed-web" rel="noopener" class="internal-link" data-src="/thoughts/distributed-web">distributed web</a>. The goal of Rhizome is to enable <em>data-neutrality</em> by separating data from applications.</p>
 <p>It is made up of two layers</p>
 <ol>
 <li>Root: a personal data pod that <em>you</em> own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.</li>
 <li>Trunk: a framework for easily developing cohesive peer-to-peer applications on top of data from Root</li>
 </ol>
-<p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and collaboration on the web.</p>
+<p>As a whole, it forms the basis for a new model of the internet where first and foremost, people own their own data. This enables entirely new dimensions of computation and <a href="/thoughts/collaborative-software" rel="noopener" class="internal-link" data-src="/thoughts/collaborative-software">collaboration</a> on the web.</p>
 <ul>
 <li>Single purpose apps backed by general-purpose data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. Apps in this new model are now just views on top of data rather than a tight coupling of data and logic. If two apps are views on the same data, any change to the underlying data will instantly update <em>both apps</em>.</li>
 <li>Applications ask for access rather than store their own data. Instead of maintaining a separate log-in for each app, you give apps permission to read or write specific parts of your data.
@@ -1138,8 +1289,7 @@ Jul 14, 2022
 </ul>
 <p>With Rhizome, we get the convenience of a single centralized platform without the lack of agency that comes with it.</p>
 <p>You can find more technical details <a href="/thoughts/Rhizome-Proposal" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Proposal">in the proposal</a>, and rough notes from my day-to-day in my <a href="/thoughts/Rhizome-Research-Log" rel="noopener" class="internal-link" data-src="/thoughts/Rhizome-Research-Log">research log</a>.</p>
-<p>I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.</p>
-<p>Think of this project as a <a href="/thoughts/skyhooks" rel="noopener" class="internal-link" data-src="/thoughts/skyhooks">skyhook</a>: a dream about a future so that we may build towards it.</p>
+<p>I encourage you to imagine with me what a world like this could look like. I miss when we would dream of worlds to come, filled with exciting possibilities and hopeful futures. Think of this project as a <a href="/thoughts/skyhooks" rel="noopener" class="internal-link" data-src="/thoughts/skyhooks">skyhook</a>: a dream about a future so that we may build towards it.</p>
 <blockquote>
 <p>We live in capitalism, its power seems inescapable – but then, so did the divine right of kings. Any human power can be resisted and changed by human beings. Resistance and change often begin in art.</p>
 <p>(Ursula K. Le Guin)</p>
@@ -1223,14 +1373,12 @@ Jul 14, 2022
     
       
       
-      <li>
-        <a href="/" data-ctx="one without platform lock-in" data-src="/" class="internal-link">jzhao.xyz</a>
-      </li>
       
+    
       
       
       <li>
-        <a href="/posts/communal-computing/" data-ctx="ownership of their own data" data-src="/posts/communal-computing" class="internal-link">Communal Computing Networks</a>
+        <a href="/posts/agentic-computing/" data-ctx="ownership of their own data" data-src="/posts/agentic-computing" class="internal-link">Agentic Computing</a>
       </li>
       
       
@@ -1248,7 +1396,19 @@ Jul 14, 2022
       
       
       <li>
+        <a href="/thoughts/A-City-is-not-a-Computer/" data-ctx="data neutrality" data-src="/thoughts/A-City-is-not-a-Computer" class="internal-link">A City is not a Computer</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Rhizome-Proposal/" data-ctx="data neutrality" data-src="/thoughts/Rhizome-Proposal" class="internal-link">Rhizome Proposal</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/data-changes-the-application/" data-ctx="data neutrality" data-src="/thoughts/data-changes-the-application" class="internal-link">Data changes the application</a>
       </li>
       
       
@@ -1264,7 +1424,6 @@ Jul 14, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1295,7 +1454,7 @@ Jul 14, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

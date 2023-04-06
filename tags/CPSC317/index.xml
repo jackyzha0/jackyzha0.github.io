@@ -31,7 +31,7 @@
       <pubDate>Mon, 21 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/HTTP/</guid>
-      <description>Main method of communication at the Application Layer for the web. A state-transfer protocol. See also: [[thoughts/Braid HTTP]] for HTTP as state-synchronization</description>
+      <description>Main method of communication at the Application Layer for the web. A state-transfer protocol. Sometimes called the second waist of the Internet (after [[thoughts/IP Address]])</description>
     </item>
     
     <item>
@@ -45,7 +45,17 @@ When a host requires assurance that the remote end has actually received the dat
     </item>
     
     <item>
-      <title>Application Layer (Networking)</title>
+      <title>Address Resolution Protocol (ARP)</title>
+      <link>https://jzhao.xyz/thoughts/ARP/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ARP/</guid>
+      <description>Purpose: links the Network Layer (IP address) with the link layer (MAC address)
+Case: A wants to send a datagram to B, but A doesn&amp;rsquo;t know B&amp;rsquo;s MAC address</description>
+    </item>
+    
+    <item>
+      <title>Application Layer</title>
       <link>https://jzhao.xyz/thoughts/Application-Layer/</link>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -53,16 +63,6 @@ When a host requires assurance that the remote end has actually received the dat
       <description>Layer 1, the layer above the Transport Layer
 Application/Presentation/Session layer
  Unit: Data Responsibilities: human-computer interaction layer, where applications can access the network services (includes [[thoughts/encryption|encryption]], connection, port, and session management)  </description>
-    </item>
-    
-    <item>
-      <title>ARP</title>
-      <link>https://jzhao.xyz/thoughts/ARP/</link>
-      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/ARP/</guid>
-      <description>Address Resolution Protocol (ARP) Purpose: links the Network Layer (IP address) with the link layer (MAC address)
-Case: A wants tot send a datagram to B, but A doesn&amp;rsquo;t know B&amp;rsquo;s MAC address</description>
     </item>
     
     <item>
@@ -85,11 +85,11 @@ DNS currently has ~300 million DNS registrations.</description>
     </item>
     
     <item>
-      <title>IP Addresses</title>
-      <link>https://jzhao.xyz/thoughts/IP-Addresses/</link>
+      <title>IP Address</title>
+      <link>https://jzhao.xyz/thoughts/IP-Address/</link>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/IP-Addresses/</guid>
+      <guid>https://jzhao.xyz/thoughts/IP-Address/</guid>
       <description>IP addresses are 32 bits (4 bytes) split into 4 chunks. Obviously $2^{32}$ is an incredibly large address space so we compress the table using IP prefixes.</description>
     </item>
     
@@ -104,13 +104,12 @@ DNS currently has ~300 million DNS registrations.</description>
     </item>
     
     <item>
-      <title>NAT</title>
+      <title>Network Address Translation (NAT)</title>
       <link>https://jzhao.xyz/thoughts/NAT/</link>
       <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/NAT/</guid>
-      <description>Network Address Translation Both network and transport layer (violation of abstraction/layering)
- More devices than IP addresses! What do we do?</description>
+      <description>Network Address Translation Both network and transport layer (violation of abstraction/layering) More devices than IP addresses! What do we do?</description>
     </item>
     
     <item>
@@ -180,7 +179,7 @@ Motivation:
       
       <guid>https://jzhao.xyz/thoughts/internet-computing/</guid>
       <description>Notes for CPSC 317 (see all notes)
-The Internet is a network of networks. The main goals was to integrate a number of separately</description>
+The Internet is a network of networks. The main goal was to integrate a number of separately administrated entities into a common entity</description>
     </item>
     
     <item>

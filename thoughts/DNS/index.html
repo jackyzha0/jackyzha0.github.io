@@ -11,6 +11,28 @@
     content="Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the Internet.
 DNS currently has ~300 million DNS registrations."
   />
+  <meta property="og:title" content="DNS">
+  <meta property="og:description" content="Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the Internet.
+DNS currently has ~300 million DNS registrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/DNS/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DNS" />
+  <meta name="twitter:description" content="Domain name: an identification string that defines a realm of administrative autonomy, authority, or control within the Internet.
+DNS currently has ~300 million DNS registrations." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     DNS
   </title>
@@ -60,7 +82,7 @@ DNS currently has ~300 million DNS registrations."
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ DNS currently has ~300 million DNS registrations."
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ DNS currently has ~300 million DNS registrations."
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ DNS currently has ~300 million DNS registrations."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -354,6 +376,128 @@ Feb 26, 2022
 
 
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -383,13 +527,13 @@ Feb 26, 2022
 
 
 <a
-  href="/thoughts/IP-Addresses/"
+  href="/thoughts/IP-Address/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/IP-Addresses/">IP addresses</a>? Resolves starting from the root and makes it way down the network hierarchy</p>
+  data-src="/thoughts/IP-Address/">IP addresses</a>? Resolves starting from the root and makes it way down the network hierarchy</p>
 <ol>
 <li>Root (13 of these worldwide)</li>
 <li>Top-level Domains (e.g. .com, .net, .org, etc.)</li>
-<li>Second-level Domains (e.g. Microsoft, UBC)</li>
+<li>Second-level Domains (e.g. UBC)</li>
 <li>Subdomains (e.g. www)</li>
 <li>Individual machines</li>
 <li>Local DNS Servers (not actually a part of the hierarchy, just caches data)</li>
@@ -433,6 +577,12 @@ Types:</p>
 <li>value: canonical name (e.g. foo.com)</li>
 </ol>
 </li>
+<li>TXT (just plain text)
+<ol>
+<li>name: domain</li>
+<li>value: plain text in the format of <code>attribute=value</code>. The TXT record was originally intended as a place for human-readable notes but now often used for domain ownership verification (see: dnslink and <a href="/thoughts/Bluesky" rel="noopener" class="internal-link" data-src="/thoughts/Bluesky">Bluesky</a>)</li>
+</ol>
+</li>
 </ol>
 <p>Inserting records into DNS</p>
 <ol>
@@ -454,7 +604,22 @@ Types:</p>
 </ol>
 </li>
 </ol>
-
+<a href="#dnslink"><h2 id="dnslink"><span class="hanchor" ariaLabel="Anchor"># </span>DNSLink</h2></a>
+<p>
+<a href="https://dnslink.dev/" rel="noopener">Documentation</a></p>
+<p>DNSLink uses DNS TXT records to map a DNS name, like en.wikipedia-on-ipfs.org, to an <a href="/thoughts/IPFS" rel="noopener" class="internal-link" data-src="/thoughts/IPFS">IPFS</a> address</p>
+<p>Because you can edit your DNS records, you can use them to always point to the latest version of an object in IPFS.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ dig +noall +answer TXT _dnslink.docs.ipfs.tech
+</span></span><span class="line"><span class="cl">_dnslink.docs.ipfs.tech.  <span class="m">34</span>  IN  TXT <span class="s2">&#34;dnslink=/ipfs/QmVMxjouRQCA2QykL5Rc77DvjfaX6m8NL6RyHXRTaZ9iya&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 
     </article>
     <hr/>
@@ -487,8 +652,18 @@ Types:</p>
     
       
       
+      
+    
+      
+      
       <li>
-        <a href="/posts/communal-computing/" data-ctx="DNS" data-src="/posts/communal-computing" class="internal-link">Communal Computing Networks</a>
+        <a href="/posts/agentic-computing/" data-ctx="DNS" data-src="/posts/agentic-computing" class="internal-link">Agentic Computing</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Arweave/" data-ctx="thoughts/DNS" data-src="/thoughts/Arweave" class="internal-link">Arweave</a>
       </li>
       
       
@@ -500,7 +675,7 @@ Types:</p>
       
       
       <li>
-        <a href="/thoughts/aperture-problem/" data-ctx="DNS" data-src="/thoughts/aperture-problem" class="internal-link">Aperture Problem</a>
+        <a href="/thoughts/context/" data-ctx="DNS" data-src="/thoughts/context" class="internal-link">Context</a>
       </li>
       
       
@@ -510,7 +685,6 @@ Types:</p>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -541,7 +715,7 @@ Types:</p>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

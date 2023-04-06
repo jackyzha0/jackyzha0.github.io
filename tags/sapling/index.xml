@@ -7,6 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Data changes the application</title>
+      <link>https://jzhao.xyz/thoughts/data-changes-the-application/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/data-changes-the-application/</guid>
+      <description>Existing large owners of data won&amp;rsquo;t innovate because they have monopoly over data, new innovators cant enter because they lack data</description>
+    </item>
+    
+    <item>
+      <title>Agency</title>
+      <link>https://jzhao.xyz/thoughts/agency/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/agency/</guid>
+      <description>Agency is the ability and freedom for an individual to act in their immediate context or environment.
+See also: [[thoughts/Tools for Conviviality]], [[posts/agentic-computing|agentic computing]]</description>
+    </item>
+    
+    <item>
+      <title>Plurality</title>
+      <link>https://jzhao.xyz/thoughts/plurality/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/plurality/</guid>
+      <description>Globality versus Globalization From [[thoughts/Archipelago]]
+ Globality does not homogenize culture. It produces a difference from which new things can emerge.</description>
+    </item>
+    
+    <item>
       <title>Independent Research</title>
       <link>https://jzhao.xyz/thoughts/independent-research/</link>
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
@@ -36,12 +65,22 @@ Taste is built over time through repeated applications. It requires intention, f
     </item>
     
     <item>
-      <title>Thoughts on ChatGPT</title>
-      <link>https://jzhao.xyz/thoughts/beyond-chat-gpt/</link>
+      <title>LLMs</title>
+      <link>https://jzhao.xyz/thoughts/LLMs/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/beyond-chat-gpt/</guid>
-      <description>[[thoughts/teaching|pedagogy]] → how do we assess thinking?  I suspect ChatGPT will do to writing what calculators did to math Made it much more accessible to the masses but in the process of doing so, lost the value in the actual process of doing math  We do math by hand to help internalize it in our minds, to naturalize and practice the mind to thinking in that manner &amp;ldquo;The hours spent choosing the right word and rearranging sentences to better follow one another are what teach you how meaning is conveyed by prose.</description>
+      <guid>https://jzhao.xyz/thoughts/LLMs/</guid>
+      <description>Large Language Models (LLMs) are foundational machine learning models that use [[thoughts/machine learning]] to process and [[thoughts/NLP|understand natural language]]. They seem to have [[thoughts/emergent behaviour|emergent properties]] of [[thoughts/intelligence]], though this could just be the [[thoughts/observer-expectancy effect]]</description>
+    </item>
+    
+    <item>
+      <title>A Certain Tendency Of The Database Community</title>
+      <link>https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/A-Certain-Tendency-Of-The-Database-Community/</guid>
+      <description>Source
+[[thoughts/distributed systems|Distributed Systems]] that provide “single system image” semantics (read: [[thoughts/linearizability]]) is fundamentally flawed and at odds with how systems operate in the physical world</description>
     </item>
     
     <item>
@@ -51,7 +90,7 @@ Taste is built over time through repeated applications. It requires intention, f
       
       <guid>https://jzhao.xyz/thoughts/I-Confluence/</guid>
       <description>Martin Kleppmann and Heidi Howard:  Byzantine Eventual Consistency and the Fundamental Limits of Peer-to-Peer Databases
-Kleppmann and Howard prove an equivalent result which states that $\mathcal I$-confluence is a necessary and sufficient condition for the existence of a Byzantine eventual consistency replication algorithm</description>
+$\mathcal I$-confluence is a necessary and sufficient condition for the existence of a [[thoughts/Byzantine Faults|byzantine fault-tolerant]] eventual consistency replication algorithm</description>
     </item>
     
     <item>
@@ -81,7 +120,16 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
       <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/privacy/</guid>
-      <description>Privacy isn&amp;rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to choose what and with whom you&amp;rsquo;ll share.</description>
+      <description>Privacy isn&amp;rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to [[thoughts/agency|choose]] what and with whom you&amp;rsquo;ll share.</description>
+    </item>
+    
+    <item>
+      <title>Conflict-free Replicated Data Type (CRDT)</title>
+      <link>https://jzhao.xyz/thoughts/CRDT/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
+      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>
@@ -130,17 +178,8 @@ Games are interesting when the underlying rules are simple (see: [[thoughts/Gall
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/functional-programming/</guid>
-      <description>Syntax Quirks  $ :: (a -&amp;gt; b) -&amp;gt; a -&amp;gt; b is function application (adds implicit parentheses and makes it right associative instead of left associative)  Normally, sort &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; would be interpreted as (sort &amp;quot;abc&amp;quot;) ++ &amp;quot;def&amp;quot; If we use the $ operator, we can do sort $ &amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot; which is interpreted as sort (&amp;quot;abc&amp;quot; ++ &amp;quot;def&amp;quot;) as intended.</description>
-    </item>
-    
-    <item>
-      <title>Cozy software</title>
-      <link>https://jzhao.xyz/thoughts/cozy-software/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/cozy-software/</guid>
-      <description>cozy eternal beta test mode
- re: digital mindfulness! Not everything needs to be built at scale &amp;ndash; sometimes it can just be for family and friends :)) Normalize creating playful and non- instrumental technology</description>
+      <description>Terminology ![[thoughts/images/Haskell typeclasses.png]]
+Category Theory In essence, a simple collection which can be thought of as a graph. Three components</description>
     </item>
     
     <item>
@@ -153,6 +192,16 @@ Games are interesting when the underlying rules are simple (see: [[thoughts/Gall
 Similar to A love letter to virtual community care by Theresa Gao
 Related: [[thoughts/friendship|friendship]]
 Community Care Lighthouses are beacons for ships at night, identifying the shoreline when everyone else in the town is sleeping.</description>
+    </item>
+    
+    <item>
+      <title>Personal and cozy software</title>
+      <link>https://jzhao.xyz/thoughts/cozy-software/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/cozy-software/</guid>
+      <description>cozy eternal beta test mode
+ Not everything needs to be built at scale &amp;ndash; sometimes it can just be for family and friends :)) Normalize creating playful and non- instrumental technology</description>
     </item>
     
     <item>
@@ -172,7 +221,7 @@ Community Care Lighthouses are beacons for ships at night, identifying the shore
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/self-knowledge/</guid>
-      <description>Reflexivity vs Reflectivity Self-illumination/reflexivity
+      <description>Reflexivity Self-illumination/reflexivity
  Every conscious experience is directly revealed to itself. &amp;ldquo;In seeing blue, you experience seeing&amp;rdquo; Problems: Reflexivity as a concept is weird though  &amp;ldquo;A knife cannot cut itself, an acrobat can’t stand on their own shoulders.</description>
     </item>
     
@@ -192,7 +241,8 @@ Non-transferability  A soulbound item, once picked up, cannot be transferred or 
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Knowledge-Argument/</guid>
-      <description>Frank Jackson&amp;rsquo;s Knowledge Argument1  Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV.</description>
+      <description>One cannot learn what it is like to subjectively experience something without actually experiencing it
+Frank Jackson&amp;rsquo;s Knowledge Argument1  Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV.</description>
     </item>
     
     <item>
@@ -201,8 +251,7 @@ Non-transferability  A soulbound item, once picked up, cannot be transferred or 
       <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/context/</guid>
-      <description>Content only has meaning if it has context
-  emptiness/dependent-origination: does this connect to context as potentially an epistemic instrument?</description>
+      <description>Content only has meaning if it has context. Content thus must be empty of independent origination (it cannot exist on its own, see also: [[thoughts/emptiness]]).</description>
     </item>
     
     <item>
@@ -212,7 +261,8 @@ Non-transferability  A soulbound item, once picked up, cannot be transferred or 
       
       <guid>https://jzhao.xyz/thoughts/art/</guid>
       <description>An activity in which perfection can be pursued
-  Source: An artist in Crypto by Wendi Yan and in discussion with Wendi</description>
+ In discussion with Wendi Yan
+What makes something “art” comes from its [[thoughts/intentionality|intention]].</description>
     </item>
     
     <item>
@@ -222,7 +272,7 @@ Non-transferability  A soulbound item, once picked up, cannot be transferred or 
       
       <guid>https://jzhao.xyz/thoughts/internet-computing/</guid>
       <description>Notes for CPSC 317 (see all notes)
-The Internet is a network of networks. The main goals was to integrate a number of separately</description>
+The Internet is a network of networks. The main goal was to integrate a number of separately administrated entities into a common entity</description>
     </item>
     
     <item>
@@ -242,8 +292,8 @@ Guiding Questions
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/web3-critique/</guid>
-      <description>Really good piece by Moxie on web3
- Web3 lacks infrastructure  By definition, infrastructure does not need to be rebuilt every time they are used.</description>
+      <description>Blockchains only really make sense for a very narrow subset of applications where
+ Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them Strict global consensus: all peers must agree on exactly the same results  Till date, there are only two applications where both criteria are necessary: money &amp;amp; identity (and technically not strictly necessary either)</description>
     </item>
     
     <item>
@@ -252,7 +302,8 @@ Guiding Questions
       <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/aperture-problem/</guid>
-      <description>Aperture Problem in Computer Vision  Without distinct features to track, the true visual motion is ambiguous Locally, one can compute only the component of the visual motion in the direction perpendicular to the contour  In relation to the Internet: our browsing is also very static and in a small window.</description>
+      <description>A problem in computer vision that arises when there is limited spatial [[thoughts/context]].
+ Without distinct features to track, the true visual motion is ambiguous Locally, one can compute only the component of the visual motion in the direction perpendicular to the contour  </description>
     </item>
     
     <item>
@@ -318,7 +369,7 @@ How do we draw the line between an end product and infrastructure? How should in
       <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/hermeneutical-injustice/</guid>
-      <description>The powerful tend to have appropriate understandings of their experiences ready to draw on as they make sense of their social experiences, whereas the powerless are more likely to find themselves having some social experiences through a glass darkly, with a best ill-fitting meanings to draw on in the effort to render them intelligible</description>
+      <description>It is the injustice of having some significant area of one&amp;rsquo;s social experience obscured from collective understanding owing to a structural identity prejudice in the collective hermeneutical resource</description>
     </item>
     
     <item>
@@ -348,7 +399,8 @@ Reminiscent of the move fast and break things Silicon Valley ethic.
       <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Nozicks-Experience-Machine/</guid>
-      <description>Experience machine  suppose there was a machine that would give you any experience you desired would you plug in?    If &amp;ldquo;how things seem to be&amp;rdquo; is the only thing that matters to us, we have no reason to refuse this offer</description>
+      <description>Experience machine Suppose there was a machine that would give you any experience you desired. Would you plug in?
+ If &amp;ldquo;how things seem to be&amp;rdquo; is the only thing that matters to us, we have no reason to refuse this offer We are hesitant to take up this offer (we have reasons to refuse it)  “We want to do certain things, and not just have the experience of doing them.</description>
     </item>
     
     <item>
@@ -357,7 +409,7 @@ Reminiscent of the move fast and break things Silicon Valley ethic.
       <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/potemkin-village/</guid>
-      <description>The &amp;ldquo;potemkin village that works well on naturally occurring data, but is exposed as fake when one visits points in space that do not have high probability&amp;rdquo;</description>
+      <description>A &amp;ldquo;Potemkin village&amp;rdquo; signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside.</description>
     </item>
     
     <item>
@@ -381,24 +433,6 @@ Is one even possible? In a scarce world with infinite wants, no.</description>
     </item>
     
     <item>
-      <title>Broken world thinking</title>
-      <link>https://jzhao.xyz/thoughts/broken-world-thinking/</link>
-      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/broken-world-thinking/</guid>
-      <description>&amp;lsquo;Broken world thinking&amp;rsquo; -&amp;gt; focus on constant process of entropy and undoing of work and what we can do to slow/halt this process rather than introducing new things.</description>
-    </item>
-    
-    <item>
-      <title>Cancel Culture</title>
-      <link>https://jzhao.xyz/thoughts/cancel-culture/</link>
-      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/cancel-culture/</guid>
-      <description>Cancel culture and healthy debate i think being inclusive and mindful of the opinions is really important but there also needs to be a balance between the weight of creating an unsafe place for ideas vs unsafe places for people</description>
-    </item>
-    
-    <item>
       <title>Carbon Credits</title>
       <link>https://jzhao.xyz/thoughts/carbon-credits/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
@@ -414,7 +448,8 @@ Can we create &amp;lsquo;credits&amp;rsquo; that companies can buy to offset the
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/desktop-metaphor/</guid>
-      <description>Beyond the Desktop Metaphor An interface that intentionally exploits the vulnerability of human beings for financial or otherwise selfish gain is inhumane and also despicable.</description>
+      <description>The representation of familiar desktop items in a user interface to help make the capabilities of a computer clear
+Beyond the Desktop Metaphor An interface that intentionally exploits the vulnerability of human beings for financial or otherwise selfish gain is inhumane and also despicable.</description>
     </item>
     
     <item>
@@ -434,7 +469,7 @@ Can we create &amp;lsquo;credits&amp;rsquo; that companies can buy to offset the
       
       <guid>https://jzhao.xyz/thoughts/generational-learning/</guid>
       <description>Related: Theory of Niche Construction and Extended Mind Hypothesis
-Intergenerational social learning  intergenerational transmission of ecological and technical expertise parental acts bias the environment explored by trial and error learning trials are guided — social/observational learning  partially complete and failed exemplars of the target artefact aid of tools that initially chosen by others access to raw materials in various stages of preparation   natural bargain  Skilled practitioners ease their own burdens by having apprentices do low to medium skilled work.</description>
+Intergenerational social learning In intergenerational transmission of ecological and technical expertise, parental acts bias the environment explored by trial and error learning.</description>
     </item>
     
     <item>
@@ -444,7 +479,8 @@ Intergenerational social learning  intergenerational transmission of ecological 
       
       <guid>https://jzhao.xyz/thoughts/governance/</guid>
       <description>Related: Moderation
-Community Governance  bottom-up emergent properties vs top-down governance homeostasis of communities  mix of internal and external influence secluded vs public: digital commons conforming to labels self-fulfilling prophecies   sanctity of natural interactions  monetizing human interaction (ondeck) how do we screen for value alignment?</description>
+Community Governance Homeostasis of communities
+ Important to have a healthy mix of internal and external influence  How do the people within the community conform to the community?</description>
     </item>
     
     <item>
@@ -463,7 +499,7 @@ Community Governance  bottom-up emergent properties vs top-down governance homeo
       
       <guid>https://jzhao.xyz/thoughts/maintenance/</guid>
       <description>Maintenance: the gritty upkeep work that keeps the infrastructure of the world running.
-Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordinary existence going rather than introducing novel things.</description>
+One of my favourite examples is the constant rebuilding of the Ise Grand Shrine.</description>
     </item>
     
     <item>
@@ -473,7 +509,7 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
       
       <guid>https://jzhao.xyz/thoughts/mimetic/</guid>
       <description>Source: Mimetic by Brian Timar
-[&amp;hellip;There was a] positive feedback loop that encouraged me to spend ever-increasing amounts of time on my work.</description>
+Humans inherit convictions mimetically from each other — we learn what to value by imitating our peers.</description>
     </item>
     
     <item>
@@ -482,7 +518,7 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/skyhooks/</guid>
-      <description>We should have nondystopian science fiction &amp;ndash; there&amp;rsquo;s value in reclaiming an optimistic and hopeful future (very Reboot vibes). I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.</description>
+      <description>We should have nondystopian science fiction &amp;ndash; there&amp;rsquo;s value in reclaiming an optimistic and hopeful future. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.</description>
     </item>
     
     <item>
@@ -491,7 +527,7 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Theory-of-Niche-Construction/</guid>
-      <description>Theory of Niche Construction  many animals intervene in their environment, shaping it in ways that improve the adaptive fit between the agent and its world such animals in part adapt to their niche, in part construct their own the niche construction perspective focuses our attention on the common features of this whole range of cases whereas the extended mind model does not  human capacities, cognitive and non-cognitive alike, turn out to depend on the fact that humans engineer their environment to support their activities   extended digestion example  some animals do the hard digestion stuff on-board, powerful jaws, large mouths, lots of time chewing we cook lmao also, we selectively breed livestock which improves the food value of domestic stock    Extended Phenotypes Concept  things animals build are part of their phenotype (physical exhibited traits that are determined genetically)  developmentally stable, as heritable and predictable in their ecological effects as other traits   e.</description>
+      <description>Theory of Niche Construction Many animals intervene in their environment, shaping it in ways that improve the adaptive fit between the agent and its world</description>
     </item>
     
     <item>
@@ -510,7 +546,7 @@ Incentivizing Maintenance The Maintainers: the individuals whose work keeps ordi
       
       <guid>https://jzhao.xyz/thoughts/linguistic-relativism/</guid>
       <description>See: [[thoughts/language|linguistics]]
-Does language dictate how we think about the world?  importance of vocabulary do we need labels and terminology to discuss things false dichotomies Sapir-Whorf hypothesis is true &amp;ndash; but the effects are far more pronounced for programming languages than for spoken languages.</description>
+Does language dictate how we think about the world? Do we need labels and terminology to discuss things? Yes!</description>
     </item>
     
     <item>
@@ -519,8 +555,7 @@ Does language dictate how we think about the world?  importance of vocabulary do
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/A-Tale-for-the-Time-Being/</guid>
-      <description>the amount of depth being slowly unravelled over time is astounding
-i think tale for the time being has really got me thinking about time and time differences</description>
+      <description>The amount of depth to the story being slowly unravelled over time is astounding; it keeps me on edge and always wanting to read more.</description>
     </item>
     
     <item>
@@ -559,7 +594,7 @@ Why are we more ourselves in small group chats than our posts? Why are we more c
       
       <guid>https://jzhao.xyz/thoughts/automation/</guid>
       <description>Source: What Tech Futurists Get Wrong About Human Autonomy by Divya Siddarth and Kelsi Nabben
- AI systems and blockchain both means to achieve the same &amp;ldquo;underlying desire: to implicitly or explicitly abstract away human fallibility in service of a fully automated vision of perfection.</description>
+ AI systems and blockchain are both means to achieve the same &amp;ldquo;underlying desire: to implicitly or explicitly abstract away human fallibility in service of a fully automated vision of perfection.</description>
     </item>
     
     <item>
@@ -583,22 +618,13 @@ Why are we more ourselves in small group chats than our posts? Why are we more c
     </item>
     
     <item>
-      <title>Interact: Hackathon Culture &#43; Play</title>
-      <link>https://jzhao.xyz/thoughts/Interact-Circle-W21/</link>
-      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Interact-Circle-W21/</guid>
-      <description>View artifact. Contains writings on play and new-words/ terminology
-Reflections I did not think I would ever be this excited about meeting people at 9AM on a Monday ever.</description>
-    </item>
-    
-    <item>
       <title>Bandwidth</title>
       <link>https://jzhao.xyz/thoughts/bandwidth/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/bandwidth/</guid>
-      <description>When we talk together, we flatten our N-dimensional thoughts into 1D linear narratives, in order to fit them through the 1D bottleneck of words.</description>
+      <description>Hypertext  Source: Hypertext Montage by Gordon Brander
+ When we talk together, we flatten our N-dimensional thoughts into 1D linear narratives, in order to fit them through the 1D bottleneck of words.</description>
     </item>
     
     <item>
@@ -607,7 +633,8 @@ Reflections I did not think I would ever be this excited about meeting people at
       <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/bias/</guid>
-      <description>More detailed post on Bias in AI. Related readings: Design Justice, To Live in their Utopia, Social Bias in Information Retrieval, Algorithms of Oppression</description>
+      <description>Bias: a slant or preference
+ &amp;ldquo;We use the term bias to refer to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others&amp;hellip; A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate&amp;rdquo; (Friedman and Nissenbaum, 1996)</description>
     </item>
     
     <item>
@@ -667,7 +694,7 @@ Group Limits In a local context, relationships may be positive sum. But in the c
       
       <guid>https://jzhao.xyz/thoughts/questions/</guid>
       <description>Source: Asking Better Questions in Kernel
- Good questions must come from a sincere desire to learn, rather than as a veiled means of stating your own opinion.</description>
+ Good questions must come from a sincere desire to [[thoughts/learning|learn]], rather than as a veiled means of stating your own opinion.</description>
     </item>
     
     <item>
@@ -696,8 +723,8 @@ The most common interactions are</description>
       <pubDate>Wed, 20 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/selfish/</guid>
-      <description>Are selfishness and selfcare the same thing?
- To be able to provide care, you need to take care of yourself</description>
+      <description>To be able to provide care, you need to take care of yourself
+ Selfcare → more altruism → create a better environment for self → betterment of the self</description>
     </item>
     
     <item>
@@ -756,8 +783,9 @@ Interesting approach to taking a negative-space approach to defining values: the
       <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/blockchain/</guid>
-      <description>Source: A Primer to Web3
-The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like Bitcoin, [[thoughts/Solana|Solana]], and Ethereum.</description>
+      <description>See also: [[thoughts/web3 critique]]
+ Source: A Primer to Web3
+On a technical level, blockchain is just a linked list or graph that is replicated.</description>
     </item>
     
     <item>
@@ -806,7 +834,8 @@ Has the scientific culture of being wrong now vs a few hundred years ago changed
       <pubDate>Tue, 21 Sep 2021 09:51:49 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/intentionality/</guid>
-      <description>intentions exhibit cognitive inertia ( self-trust) intentionality is derived  same reason why computer-generated art or AI-assisted [[thoughts/writing|writing]] would not be considered &amp;rsquo;novel&amp;rsquo; or &amp;lsquo;intelligent&amp;rsquo;.</description>
+      <description>Intentionality is the ability to be about something.
+Derived Intentionality Intentionality is derived. The same reason why computer-generated art or AI-assisted [[thoughts/writing|writing]] would not be considered &amp;rsquo;novel&amp;rsquo; or &amp;lsquo;intelligent&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -845,7 +874,8 @@ If we interpret &amp;ldquo;degrowth&amp;rdquo; as the decision to fix global GDP
       <pubDate>Mon, 30 Aug 2021 14:45:13 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/truth/</guid>
-      <description>Is there a hard truth to anything in the universe? Can we truly know anything?
+      <description>See also: [[thoughts/verisimilitude]]
+Is there a hard truth to anything in the universe? Can we truly know anything?
 &amp;ldquo;The word “axiom” means self evident truth.</description>
     </item>
     
@@ -865,8 +895,8 @@ If we interpret &amp;ldquo;degrowth&amp;rdquo; as the decision to fix global GDP
       
       <guid>https://jzhao.xyz/thoughts/learning/</guid>
       <description>Learning as an act of becoming really good at exploring terrain &amp;ndash; Shaun Martin
- Framework for knowledge
- Sensing → info intake, active reading Reasoning → asking questions, applying knowledge, critical thinking Acting → learning by doing  How does this tie with academia and whether individuals are scared to try new things?</description>
+ See also: [[thoughts/teaching]]
+Framework for knowledge</description>
     </item>
     
     <item>
@@ -903,7 +933,7 @@ Heavily linked with research debt. What makes for effective teaching and knowled
       <pubDate>Wed, 18 Aug 2021 20:19:51 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/data-distributions/</guid>
-      <description>Machine Learning and AI Systems excludes the tail ends of the distributions  this is where minorities live, ends up reproducing existing systems of power (re: To live in their Utopia, Matthew Effect) synthetic/generative/federated models suck at these most interesting cases ARE outliers (esp.</description>
+      <description>[[thoughts/machine learning|Machine Learning]] and AI Systems excludes the tail ends of the distributions. Synthetic/generative/federated models suck at these. And, for a lot of industries, the most interesting cases are outliers (esp.</description>
     </item>
     
     <item>
@@ -932,7 +962,7 @@ Heavily linked with research debt. What makes for effective teaching and knowled
       <pubDate>Mon, 09 Aug 2021 21:41:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/consensus/</guid>
-      <description>Consensus in human systems is actually usually pretty easy because of the social layer of society. This fault tolerance against 51% attacks is due to the fact that convincing the community that any engineered &amp;rsquo;truth&amp;rsquo; is the real on requires subverting every trusted member in the community, most notably media and news sources (also why systems of authoritarian power are so scary).</description>
+      <description>Consensus in human systems is actually usually pretty easy because of the social layer of society. This fault tolerance against 51% attacks is due to the fact that convincing the community that any engineered &amp;lsquo;[[thoughts/truth]]&amp;rsquo; is the real on requires subverting every trusted member in the community, most notably media and news sources (also why systems of authoritarian power are so scary).</description>
     </item>
     
     <item>
@@ -941,9 +971,9 @@ Heavily linked with research debt. What makes for effective teaching and knowled
       <pubDate>Fri, 06 Aug 2021 23:12:28 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/decentralization/</guid>
-      <description>![[thoughts/images/decentralization.png]]
-See also: [[thoughts/inevitability of centralization|inevitability of centralization]]
-3 Axes of Decentralizatiaon  Architectural Decentralization: how many physical computers is a system made of?</description>
+      <description>The value of decentralization is in empowering people to act decisively within their social contexts
+![[thoughts/images/decentralization.png]]
+See also: [[thoughts/inevitability of centralization|inevitability of centralization]]</description>
     </item>
     
     <item>
@@ -962,8 +992,7 @@ See also: [[thoughts/inevitability of centralization|inevitability of centraliza
       <pubDate>Thu, 05 Aug 2021 23:52:21 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/effective-altruism/</guid>
-      <description>Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits?
-Related: The ones who walk away from Omelas, [[thoughts/quantization|quantization]]</description>
+      <description>The suffering of a few is okay as long as the greater good benefits? A [[thoughts/Utilitarianism|utilitarian]] way of doing good.</description>
     </item>
     
     <item>
@@ -972,7 +1001,8 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
       <pubDate>Thu, 05 Aug 2021 23:27:54 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/accountability/</guid>
-      <description>reparations and reconciliation can only occur after both parties have acknowledged it  how does this work if one party &amp;lsquo; ghosts&amp;rsquo; or otherwise leaves the conversation?</description>
+      <description>How are parties (human and non-human) held accountable for their actions?
+Reparations and reconciliation can only occur after both parties have acknowledged it.</description>
     </item>
     
     <item>
@@ -990,7 +1020,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
       <pubDate>Tue, 03 Aug 2021 15:26:24 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/progress/</guid>
-      <description>From 21 Lesson for the 21st Century by Yuval Noah Harari: &amp;ldquo;Did we domesticate wheat or did wheat domesticate us?&amp;rdquo; So much of technological progress is conflated as a good thing.</description>
+      <description>Progress, loosely defined by Tyler Cowen and Patrick Collison, is &amp;ldquo;the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries&amp;rdquo;</description>
     </item>
     
     <item>
@@ -1029,7 +1059,7 @@ Can we create associations between digital/physical space and concept space? Cre
       <pubDate>Wed, 28 Jul 2021 18:49:45 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/public-goods/</guid>
-      <description>One important advantage of startups over public goods is the possibility of an exit. Exits create incentives for upfront funding, hiring, motivation and alignment through equity, a share in the exit.</description>
+      <description>Definitions Defining &amp;lsquo;public&amp;rsquo;  The vernacular term &amp;ldquo;public&amp;rdquo; is understood to be something of the people, freely available for use—such as parks, roads, and common lands.</description>
     </item>
     
     <item>
@@ -1087,8 +1117,9 @@ The way to &amp;lsquo;scale intimacy,&amp;rsquo; if possible, is to scale horizo
       <pubDate>Thu, 15 Jul 2021 17:51:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/digital-commons/</guid>
-      <description>How might we analogize urban planning to social media and digital spaces? -&amp;gt; https://medium.com/@jasminewsun/jane-jacobs-social-media-83b4265a1d12
-Online Parks  Eli Pariser in Wired</description>
+      <description>How might we analogize urban planning to social media and digital spaces?
+Online Parks  Eli Pariser in Wired
+ When technologists refer to platforms like Facebook and Twitter as “walled gardens”—environments where the corporate owner has total control—they’re literally referring to those same private pleasure gardens that Whitman was reacting to.</description>
     </item>
     
     <item>
@@ -1097,7 +1128,7 @@ Online Parks  Eli Pariser in Wired</description>
       <pubDate>Wed, 14 Jul 2021 15:22:10 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/communities/</guid>
-      <description>Types of Communities  Interest-based → same interests/passions Location-based → same geographical location, place of work, etc. Vibe-based → group energy Circumstance-based → external influence, put into the same group  Can we ever have fully digital commons?</description>
+      <description>Types of Communities  Interest-based → same interests/passions Location-based → same geographical location, place of work, etc. Vibe-based → group energy Circumstance-based → external influence, put into the same group  How large can communities get before they decay?</description>
     </item>
     
     <item>
@@ -1106,7 +1137,7 @@ Online Parks  Eli Pariser in Wired</description>
       <pubDate>Fri, 02 Jul 2021 16:23:05 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/virtual-worlds/</guid>
-      <description>Bridging the real and the virtual  moving away from personal computing  started off with timeshare personal computing now streaming EVERYTHING to the cloud devices will just be viewing places    No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves.</description>
+      <description>Bridging the real and the virtual No matter how hard we try, our virtual selves will inevitably be tethered to our physical selves.</description>
     </item>
     
     <item>
@@ -1115,8 +1146,7 @@ Online Parks  Eli Pariser in Wired</description>
       <pubDate>Fri, 02 Jul 2021 15:43:59 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/mind-body-problem/</guid>
-      <description>Concerned with how the mind and body are connected to one another
- are we just entirely made up of matter or is there something more?</description>
+      <description>Concerned with how the mind and body are connected to one another. Are we just entirely made up of matter or is there something more?</description>
     </item>
     
     <item>
@@ -1125,8 +1155,8 @@ Online Parks  Eli Pariser in Wired</description>
       <pubDate>Fri, 02 Jul 2021 14:03:17 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/machine-learning/</guid>
-      <description>Theory Course notes on CPSC340 with Andreas Lehrmann and Mark Schmidt
-We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])</description>
+      <description>Theory We produce a lot of data (see: [[thoughts/Data Capitalism|data capitalism]])
+ [[thoughts/data mining|Data mining]]: automatically extract useful knowledge from large datasets Machine learning: automatically detect patterns in data and use these to make predictions or decisions  Typically, AI $\subset$ ML $\subset$ Deep Learning   Typically, data mining is more human-in-the-loop and more application specific whereas machine learning is more hands-off and general Both similar to statistics but more emphasis on larger datasets, predictions instead of descriptions, and more general models  Healthy skepticism is good though:</description>
     </item>
     
     <item>
@@ -1154,7 +1184,7 @@ Intelligence can only be contextually based on information available.</descripti
       <pubDate>Fri, 02 Jul 2021 13:18:45 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Extended-Mind-Hypothesis/</guid>
-      <description>Extended view of the mind  not an internal control system, enclosed in the human body, receiving data from human sensory system and directing human action instead, as systems that extend far beyond the body of the human organism, systems that include extra-somatic resources: environmental fuels for adaptive action suggest that human cognitive systems include those resources that are importantly, robustly, reliably, or persistently supportive of decisions making  Environmentally Supported Cognition  derives from niche construction, helps to emphasize the active role of the agent in explaining the adaptive fit of agent and environment over time, agents adapt to environments but also adapt their environment to them ( Theory of Niche Construction)  &amp;ldquo;Animals construct nests, burrows and dams, thus protecting themselves from predators and from the violence of the world.</description>
+      <description>Extended view of the mind Not an internal control system, enclosed in the human body, receiving data from human sensory system and directing human action.</description>
     </item>
     
     <item>
@@ -1183,7 +1213,7 @@ Intelligence can only be contextually based on information available.</descripti
       <guid>https://jzhao.xyz/thoughts/research-debt/</guid>
       <description>Source: Research Debt in Distill Pub
 Partly works because we can utilize collaborative thinking. Related: knowledge distillation, teaching
-Thinking about understanding knowledge as climbing a mountain.</description>
+Thinking about accumulated societal knowledge as a mountain and understanding knowledge as climbing a mountain.</description>
     </item>
     
     <item>
@@ -1192,19 +1222,9 @@ Thinking about understanding knowledge as climbing a mountain.</description>
       <pubDate>Wed, 16 Jun 2021 23:32:09 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/exploit-explore/</guid>
-      <description>Saying yes requires saying no
- Machine learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
- exploit-explore tradeoff in ML  hill climbing/optimization problem always jump to next step up → greedy search   optimizing to find one&amp;rsquo;s true values  Pendulum of life  Source: The Joy of Wasting Time by Samson Zhang</description>
-    </item>
-    
-    <item>
-      <title>Cities and Programming</title>
-      <link>https://jzhao.xyz/thoughts/Cities-and-Programming/</link>
-      <pubDate>Thu, 17 Jun 2021 00:53:30 -0400</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Cities-and-Programming/</guid>
-      <description>Source: On architecture, urban planning and software construction by Tomas Petricek
-Mostly about maintenance of cities and parallels with maintaining software.</description>
+      <description>Saying yes requires saying no]
+ Machine Learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
+Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/optimization problem (see: [[thoughts/gradient descent]]).</description>
     </item>
     
     <item>
@@ -1213,7 +1233,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Thu, 17 Jun 2021 00:27:02 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/attention-economy/</guid>
-      <description>Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of goods and services.</description>
+      <description>Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services.</description>
     </item>
     
     <item>
@@ -1223,7 +1243,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       
       <guid>https://jzhao.xyz/thoughts/emergent-behaviour/</guid>
       <description>How complex behaviour can arise out of seemingly simple rules? Is there anything special that causes emergent behaviour?
- Ant simulations Mold simulations  Community dynamics  Interesting to think about in context of single agents in multi-agent systems.</description>
+We see examples like</description>
     </item>
     
     <item>
@@ -1251,7 +1271,8 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Wed, 16 Jun 2021 09:05:37 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/social-graphs/</guid>
-      <description>Questions  How do social graphs work if users are pseudonymous? If cities are not top-down hierarchies, then are social graphs a better way to think about them?</description>
+      <description>Social graph: who&amp;rsquo;s connected to who
+ How do social graphs work if users are pseudonymous? If cities are not top-down hierarchies, then are social graphs a better way to think about them?</description>
     </item>
     
     <item>
@@ -1260,8 +1281,7 @@ Mostly about maintenance of cities and parallels with maintaining software.</des
       <pubDate>Sat, 05 Jun 2021 19:47:49 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/introductions/</guid>
-      <description>why i always dislike introductions
- apply labels to things too early people have expectations (oh so you&amp;rsquo;re an artist? show me your work)  self-imposed as well a bad amount of idolization as a side note, same reason why calling yourself a writer vs someone who writes are two very different vibes (i dabble)   first of many experiences → why do we feel the need to get it right at the start?</description>
+      <description>I always dislike introductions because it feels like applying labels to things too early. People have expectations (oh so you&amp;rsquo;re an artist?</description>
     </item>
     
     <item>
@@ -1275,13 +1295,12 @@ What do we lose when we lose deletion?</description>
     </item>
     
     <item>
-      <title>Labels and Quantization</title>
+      <title>Labels, quantization, and legibility</title>
       <link>https://jzhao.xyz/thoughts/quantization/</link>
       <pubDate>Tue, 04 May 2021 22:22:23 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/quantization/</guid>
-      <description>&amp;ldquo;Where is the knowledge we have lost in the information?&amp;rdquo; &amp;ndash; T.S. Eliot&amp;rsquo;s &amp;ldquo;The Rock&amp;rdquo;
- Our obsession of applying labels to everything extends to even whether a hot dog is a sandwhich or not</description>
+      <description>&amp;ldquo;Legibility is a condition of manipulation. Any substantial state intervention in society &amp;ndash; to vaccinate a population, produce goods, mobilize labour, tax people and their property, conduct literacy campaigns, conscript soldiers, enforce sanitation standards, catch criminals start universal schooling &amp;ndash; requires the invention of units that are visible&amp;rdquo;</description>
     </item>
     
     <item>
@@ -1299,9 +1318,7 @@ What do we lose when we lose deletion?</description>
       <pubDate>Sat, 27 Feb 2021 12:01:16 -0800</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/hackathons/</guid>
-      <description>Full Post
-Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set timeframe&amp;rdquo;
- How do we push for hackathons to be the &amp;lsquo;start&amp;rsquo; of the journey rather than saying its the entirety of a short, not super comprehensive event?</description>
+      <description>As Steven Levy defines it, &amp;lsquo;hacks&amp;rsquo; were projects undertaken by these hackers not to fulfill any sort of end goal other than to take pleasure from working on it.</description>
     </item>
     
     <item>
@@ -1310,7 +1327,7 @@ Discussion  &amp;ldquo;I want hackathons to embody a starting point not a set ti
       <pubDate>Sat, 27 Feb 2021 11:59:49 -0800</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/reading/</guid>
-      <description>getting back into reading Books, with some effort, can help you learn to walk, but only people can help you orient where to walk.</description>
+      <description>Books, with some effort, can help you learn to walk, but only people can help you orient where to walk.</description>
     </item>
     
     <item>

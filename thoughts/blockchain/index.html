@@ -8,9 +8,34 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Source: A Primer to Web3
-The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like Bitcoin, [[thoughts/Solana|Solana]], and Ethereum."
+    content="See also: [[thoughts/web3 critique]]
+ Source: A Primer to Web3
+On a technical level, blockchain is just a linked list or graph that is replicated."
   />
+  <meta property="og:title" content="Blockchain">
+  <meta property="og:description" content="See also: [[thoughts/web3 critique]]
+ Source: A Primer to Web3
+On a technical level, blockchain is just a linked list or graph that is replicated.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/blockchain/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Blockchain" />
+  <meta name="twitter:description" content="See also: [[thoughts/web3 critique]]
+ Source: A Primer to Web3
+On a technical level, blockchain is just a linked list or graph that is replicated." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Blockchain
   </title>
@@ -60,7 +85,7 @@ The universal message bus. An immutable, digital, distributed ledger that connec
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +99,7 @@ The universal message bus. An immutable, digital, distributed ledger that connec
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +121,10 @@ The universal message bus. An immutable, digital, distributed ledger that connec
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +160,13 @@ The universal message bus. An immutable, digital, distributed ledger that connec
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -739,6 +764,91 @@ Oct 8, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -750,9 +860,11 @@ Oct 8, 2021
 
 
 
+
+<p>See also: <a href="/thoughts/web3-critique" rel="noopener" class="internal-link" data-src="/thoughts/web3-critique">web3 critique</a></p>
 <p>
 <a href="https://docs.google.com/presentation/d/1aIjYKKM64Eyp497-j6wkDjCsHBA3CbbWg25UQ9Why3g/mobilepresent?slide=id.gefbf959b67_0_58" rel="noopener">Source: A Primer to Web3</a></p>
-<p>The universal message bus. An immutable, digital, distributed ledger that connects a decentralized network. Can be used to build cryptocurrencies like 
+<p>On a technical level, blockchain is just a linked list or graph that is replicated. Can be used to build cryptocurrencies like 
 
 
 
@@ -773,9 +885,9 @@ Oct 8, 2021
   data-src="/thoughts/ethereum/">Ethereum</a>.</p>
 <p>A blockchain is a <a href="/thoughts/State-Machine-Replication-SMR" rel="noopener" class="internal-link" data-src="/thoughts/State-Machine-Replication-SMR">SMR</a> protocol that has a 3-layer architecture.</p>
 <ol>
-<li>Consensus core: forms agreement over an immutable sequence of updates to a shared state: <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine fault-tolerant</a>. The consensus algorithm most commonly used are <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">longest-chain consensus algorithms</a> and solve BFT for a <em>permissionless</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></li>
+<li>Consensus core: forms agreement over an immutable sequence of updates to a shared state: <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">byzantine fault-tolerant</a>. The consensus algorithm most commonly used are <a href="/thoughts/longest-chain-consensus" rel="noopener" class="internal-link" data-src="/thoughts/longest-chain-consensus">longest-chain consensus algorithms</a> and solve <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">BFT</a> for a <em>permissionless</em> <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a></li>
 <li>State-machine API:  <a href="/thoughts/bitcoin" rel="noopener" class="internal-link" data-src="/thoughts/bitcoin">Bitcoin</a>’s state-machine and state-updates use a limited scripting language; <a href="/thoughts/ethereum" rel="noopener" class="internal-link" data-src="/thoughts/ethereum">Ethereum</a> expands the state-machine and state-updates with a Turing complete abstraction (whose resources are bounded using gas).</li>
-<li>Application Layer: In Bitcoin is the shared provenance tracking of digital assets, and in Ethereum, could be anything decentralized.</li>
+<li>Application Layer: In Bitcoin the application is the shared provenance tracking of digital assets, and in Ethereum, could be anything decentralized.</li>
 </ol>
 <p>Characteristics:</p>
 <ol>
@@ -793,7 +905,6 @@ Oct 8, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/decentralization/">Decentralized</a>: communal consensus rather than one party&rsquo;s decisions determines access/update to the chain</li>
 </ol>
-<p>On a technical level, blockchain is just a linked list that is replicated.</p>
 <p>Each block contains the hash of the previous block header and the 
 <a href="https://www.investopedia.com/terms/m/merkle-tree.asp" rel="noopener">Merkle root</a> representing the hash of all the transactions in that block.</p>
 <p>Transactions happen as follows:</p>
@@ -823,8 +934,7 @@ Oct 8, 2021
 <li>Block is added to chain and distributed to members</li>
 </ol>
 <a href="#why-it-matters"><h2 id="why-it-matters"><span class="hanchor" ariaLabel="Anchor"># </span>Why it Matters</h2></a>
-<p>It feels like the level of change which blockchain impacts is huge but at the same time latent.</p>
-<p>After going through a bunch of Kernel modules, Austin came upon a name for the concept: &ldquo;blockchain changes what soil is&rdquo;</p>
+<p>It feels like the level of change which blockchain impacts is huge but at the same time latent. After going through a bunch of Kernel modules, Austin came upon a name for the concept: &ldquo;blockchain changes what soil is&rdquo;</p>
 <p>&ldquo;The &ldquo;new world&rdquo; seems to look very similar to the old. i.e. <em>isn&rsquo;t a DAO just voting on how to donate money, which we could do today?</em>&rdquo;</p>
 <p>In actuality, the <em><a href="/thoughts/pace-layers" rel="noopener" class="internal-link" data-src="/thoughts/pace-layers">layer</a></em> at which change is happening is much deeper (more 
 
@@ -846,7 +956,6 @@ Oct 8, 2021
 </blockquote>
 <p>The goal is to build a single, shared story of reality, spread across all the machines simultaneously. And when it changes in one place, it changes everywhere.</p>
 <a href="#thoughts"><h3 id="thoughts"><span class="hanchor" ariaLabel="Anchor"># </span>Thoughts</h3></a>
-<p>The part about no more &lsquo;storing stuff&rsquo; and &lsquo;sending stuff&rsquo; I always find interesting because &lsquo;storing&rsquo; stuff still happens to be on the public ledger. The only difference now is that there is a distinction between sending metadata (which you tell someone to just refer to a piece of data on chain) and sending information (transferring ownership).</p>
 <p>Waiting for the day web3 projects get large enough to amortize and offset the gas fees that consumers pay now (much like centralized orgs nowadays front hosting costs for &lsquo;free&rsquo; tier or the average consumer).</p>
 <a href="#act-ii----smart-contracts"><h3 id="act-ii----smart-contracts"><span class="hanchor" ariaLabel="Anchor"># </span>Act II &ndash; Smart Contracts</h3></a>
 <p>&ldquo;First we merged the network and the database in a blockchain. Then, we take computer software and put it into the shared database. That means everyone that is connected has a copy of exactly the same program: same data, same code, same result&rdquo;</p>
@@ -862,17 +971,7 @@ Oct 8, 2021
 <a
   href="/thoughts/truth/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/truth/">truth</a>, specifically how different people have different views on &lsquo;reality&rsquo; and &rsquo;truth&rsquo;. How do we reconcile that at a global scale?</p>
-<a href="#critique"><h2 id="critique"><span class="hanchor" ariaLabel="Anchor"># </span>Critique</h2></a>
-<p>Blockchains only really make sense for a very narrow subset of applications where</p>
-<ol>
-<li>Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them</li>
-<li>Strict global consensus: all peers must agree on exactly the same results</li>
-</ol>
-<p>Till date, there are only two applications where both criteria are necessary: money &amp; identity (and technically not <em>strictly</em> necessary either)</p>
-<p>More in 
-<a href="https://polynya.mirror.xyz/ARsT1Anpqrj88LRGRE5n5gNpb_CeG9Azy8mvDBv8deE" rel="noopener">Polynya on Blockchain Apps</a></p>
-<p>See also: <a href="/thoughts/web3-critique" rel="noopener" class="internal-link" data-src="/thoughts/web3-critique">web3 critique</a></p>
+  data-src="/thoughts/truth/">truth</a>, specifically how different people have different views on &lsquo;reality&rsquo; and &rsquo;truth&rsquo;. How do we reconcile that at a global scale? What might <a href="/thoughts/plurality" rel="noopener" class="internal-link" data-src="/thoughts/plurality">pluriversal</a> computing look like?</p>
 
 
     </article>
@@ -891,10 +990,6 @@ Oct 8, 2021
     
     
     
-    
-      
-      
-      
     
       
       
@@ -1011,6 +1106,12 @@ Oct 8, 2021
       
       
       <li>
+        <a href="/thoughts/Kernel-Curriculum/" data-ctx="The promise of the Blockchain" data-src="/thoughts/Kernel-Curriculum" class="internal-link">Kernel Curriculum</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="blockchains" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
       </li>
       
@@ -1053,12 +1154,6 @@ Oct 8, 2021
       
       
       <li>
-        <a href="/thoughts/kernel/" data-ctx="The promise of the Blockchain" data-src="/thoughts/kernel" class="internal-link">Kernel Curriculum</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/thoughts/pace-layers/" data-ctx="blockchain" data-src="/thoughts/pace-layers" class="internal-link">Pace Layers</a>
       </li>
       
@@ -1095,12 +1190,6 @@ Oct 8, 2021
       
       
       <li>
-        <a href="/thoughts/value/" data-ctx="blockchain" data-src="/thoughts/value" class="internal-link">Value</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/thoughts/web3/" data-ctx="Blockchain" data-src="/thoughts/web3" class="internal-link">Web3</a>
       </li>
       
@@ -1117,7 +1206,6 @@ Oct 8, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1148,7 +1236,7 @@ Oct 8, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

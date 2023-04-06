@@ -10,6 +10,26 @@
     name="description"
     content="In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f &#43; 1$ (equivalently, $f &lt; \frac n 3$)"
   />
+  <meta property="og:title" content="33% Impossibility Result">
+  <meta property="og:description" content="In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f &#43; 1$ (equivalently, $f &lt; \frac n 3$)">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/33-Impossibility-Result/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="33% Impossibility Result" />
+  <meta name="twitter:description" content="In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f &#43; 1$ (equivalently, $f &lt; \frac n 3$)" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     33% Impossibility Result
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -587,6 +607,49 @@ Jul 3, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -602,7 +665,7 @@ Jul 3, 2022
 <p>This result holds despite the assumption of <a href="/thoughts/Public-key-Infrastructure" rel="noopener" class="internal-link" data-src="/thoughts/Public-key-Infrastructure">PKI</a> (unlike the <a href="/thoughts/PSL-FLM-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/PSL-FLM-Impossibility-Result">PSL-FLM result</a>), so this bound must be driven by the possibility of unbounded message delays.</p>
 <p>Intuition:</p>
 <ol>
-<li>We can&rsquo;t wait indefinitely for all nodes to respond (one valid strategy for Byzantine nodes is to never respond, even after GST) so realistically we can only wait to hear from $n - f$ nodes before deciding on the next possible action</li>
+<li>We can&rsquo;t wait indefinitely for all nodes to respond (one valid strategy for <a href="/thoughts/Byzantine-Faults" rel="noopener" class="internal-link" data-src="/thoughts/Byzantine-Faults">Byzantine</a> nodes is to never respond, even after GST) so realistically we can only wait to hear from $n - f$ nodes before deciding on the next possible action</li>
 <li>But we can&rsquo;t say for certain the $f$ nodes are actually Byzantine (they could be honest nodes that are congested), thus of the $n - f$ nodes, more than half should be honest, $f &lt; \frac 1 2 (n -f)$ or equivalently $f &lt; \frac n 3$</li>
 </ol>
 
@@ -661,7 +724,6 @@ Jul 3, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -692,7 +754,7 @@ Jul 3, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

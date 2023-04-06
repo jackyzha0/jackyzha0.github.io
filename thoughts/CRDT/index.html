@@ -10,6 +10,26 @@
     name="description"
     content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])."
   />
+  <meta property="og:title" content="Conflict-free Replicated Data Type (CRDT)">
+  <meta property="og:description" content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/CRDT/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Conflict-free Replicated Data Type (CRDT)" />
+  <meta name="twitter:description" content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Conflict-free Replicated Data Type (CRDT)
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -329,7 +349,7 @@ May 5, 2022
       </p>
       <ul class="tags">
     
-    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
     
 </ul>
 
@@ -1240,8 +1260,6 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <a href="#delta-based-hybrid"><h2 id="delta-based-hybrid"><span class="hanchor" ariaLabel="Anchor"># </span>Delta-based (hybrid)</h2></a>
 <p>Delta-based CRDTs propagate delta-mutators that encode the changes that have been made to a replica since the last communication.</p>
 <p>For efficiency, CRDT implementations can &lsquo;hold on&rsquo; to outbound events and compact/compress the log by rewriting operations (e.g. turning two <code>add(1)</code> operations into a single <code>add(2)</code> operation)</p>
-<p>[tk: Big delta state CRDTs]
-[tk: Join-decompositions]</p>
 <a href="#strategies-for-designing-crdts"><h2 id="strategies-for-designing-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Strategies for Designing CRDTs</h2></a>
 <p>A CRDT can be specified by relying on:</p>
 <ol>
@@ -1250,15 +1268,9 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <li>an arbitration relation among updates (when necessary)</li>
 </ol>
 <p>A query can be specified as a function that uses this information and the value of parameters to compute the result (i.e. goes from the state to a value).</p>
-<a href="#conflict-resolution"><h3 id="conflict-resolution"><span class="hanchor" ariaLabel="Anchor"># </span>Conflict Resolution</h3></a>
-<ul>
-<li>Add-wins</li>
-<li>Remove-wins</li>
-<li>Last-writer-wins</li>
-</ul>
 <a href="#secure-crdts"><h3 id="secure-crdts"><span class="hanchor" ariaLabel="Anchor"># </span>Secure CRDTs</h3></a>
 <ul>
-<li>tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example</li>
+<li>What does encryption in CRDTs look like? homomorphic encryption for merge operations for example</li>
 <li>
 <a href="https://martin.kleppmann.com/papers/snapdoc-pets19.pdf" rel="noopener">https://martin.kleppmann.com/papers/snapdoc-pets19.pdf</a></li>
 <li>
@@ -1461,6 +1473,12 @@ as tombstones accumulate and internal data structures become unbalanced. The com
       
       
       <li>
+        <a href="/thoughts/Locutus/" data-ctx="CRDTs" data-src="/thoughts/Locutus" class="internal-link">Locutus</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/OrbitDB/" data-ctx="CRDTs" data-src="/thoughts/OrbitDB" class="internal-link">OrbitDB</a>
       </li>
       
@@ -1515,7 +1533,7 @@ as tombstones accumulate and internal data structures become unbalanced. The com
       
       
       <li>
-        <a href="/thoughts/local-first-software/" data-ctx="CRDTs" data-src="/thoughts/local-first-software" class="internal-link">Local-first software</a>
+        <a href="/thoughts/local-first-software/" data-ctx="CRDT" data-src="/thoughts/local-first-software" class="internal-link">Local-first software</a>
       </li>
       
       
@@ -1531,7 +1549,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1562,7 +1579,7 @@ as tombstones accumulate and internal data structures become unbalanced. The com
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -8,9 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits?
-Related: The ones who walk away from Omelas, [[thoughts/quantization|quantization]]"
+    content="The suffering of a few is okay as long as the greater good benefits? A [[thoughts/Utilitarianism|utilitarian]] way of doing good."
   />
+  <meta property="og:title" content="Effective Altruism">
+  <meta property="og:description" content="The suffering of a few is okay as long as the greater good benefits? A [[thoughts/Utilitarianism|utilitarian]] way of doing good.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/effective-altruism/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Effective Altruism" />
+  <meta name="twitter:description" content="The suffering of a few is okay as long as the greater good benefits? A [[thoughts/Utilitarianism|utilitarian]] way of doing good." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Effective Altruism
   </title>
@@ -60,7 +79,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +93,7 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +115,10 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +154,13 @@ Related: The ones who walk away from Omelas, [[thoughts/quantization|quantizatio
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -527,6 +546,134 @@ Aug 5, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -538,7 +685,8 @@ Aug 5, 2021
 
 
 
-<p>Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits?</p>
+
+<p>The suffering of a few is okay as long as the greater good benefits? A <a href="/thoughts/Utilitarianism" rel="noopener" class="internal-link" data-src="/thoughts/Utilitarianism">utilitarian</a> way of doing good.</p>
 <p>Related: 
 
 
@@ -549,19 +697,8 @@ Aug 5, 2021
   href="/thoughts/The-ones-who-walk-away-from-Omelas/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/The-ones-who-walk-away-from-Omelas/">The ones who walk away from Omelas</a>, <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">quantization</a></p>
-<p>What about self-care? How does the self fit into the greater whole? Is it 
-
-
-
-
-
-<a
-  href="/thoughts/selfish/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/selfish/">selfish</a> to take care of oneself?</p>
 <a href="#what-is-ea"><h2 id="what-is-ea"><span class="hanchor" ariaLabel="Anchor"># </span>What is EA?</h2></a>
-<p>Earning to give. How do we reduce the stigma around wealth?</p>
-<p>Work can have huge impacts on the type of change we can make in the world. We spend ~80k hours, makes sense to spend atleast 1% of it thinking about what to dedicate the other 99% to.</p>
+<p>Earning to give. Work can have huge impacts on the type of change we can make in the world. We spend ~80k hours, it makes sense to spend atleast 1% of it thinking about what to dedicate the other 99% to.</p>
 <p>How do we time donations to maximize impact? Turns out there&rsquo;s no &lsquo;goldilocks zone&rsquo; in the continuum.</p>
 <ul>
 <li>When you&rsquo;re young: justify putting it off by saying &ldquo;oh I&rsquo;ll donate when I have more money&rdquo;</li>
@@ -580,12 +717,11 @@ Aug 5, 2021
 <blockquote>
 <p>Strengthening community is also important for our shared future, even if it isn’t measurable.</p>
 </blockquote>
-<p>As an ideology of allocating resources, it is recognized as explicitly political, rather than cloaking itself in the discourse of science and rationality.</p>
 <p>What is the best we can do as a collective and community rather than at the individual level?</p>
-<p>I&rsquo;m curious if there <em>has</em> been attempts to <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">quantize</a> efforts of mutual aid and solidarity? If so how what does that computation come out to. Thinking about it, don&rsquo;t most quantizations of these things have huge error bars? How do EA folks choose between prioritizing something that is almost certainly good vs something that could have a very small change of huge upside? Seems to me they are basing it off of expected value of the distribution which&hellip;. isn&rsquo;t reasonable in most cases I feel (especially in cases when the long tail for these distributions can explode as $t \rightarrow \infty$)</p>
+<p>I&rsquo;m curious if there <em>has</em> been attempts to <a href="/thoughts/quantization" rel="noopener" class="internal-link" data-src="/thoughts/quantization">quantize</a> efforts of <a href="/thoughts/Mutual-Aid" rel="noopener" class="internal-link" data-src="/thoughts/Mutual-Aid">mutual aid</a> and solidarity? If so how what does that computation come out to? Thinking about it, don&rsquo;t most quantizations have huge error bars? How do EA folks choose between prioritizing something that is almost certainly good vs something that could have a very small change of huge upside? Seems to me they are basing it off of expected value of the distribution which&hellip;. isn&rsquo;t reasonable in most cases I feel (especially in cases when the long tail for these distributions can explode as $t \rightarrow \infty$) (see: <a href="/thoughts/probability#interpreting-small-probabilities" rel="noopener" class="internal-link" data-src="/thoughts/probability">interpreting small probabilities</a>)</p>
 <p>Potentials include capping tail end of distribution?</p>
 <blockquote>
-<p>Seventh-generation decision making, for example, is an indigenous principle that is enshrined in the Constitution of the Iroquois Nation. It mandates Iroquois leaders to consider the effects of their actions over seven generations, encompassing hundreds of years. Seven generations is a long time, but it is also a finite amount of time. (a form of <a href="/thoughts/traditional-knowledge" rel="noopener" class="internal-link" data-src="/thoughts/traditional-knowledge">traditional knowledge</a>)</p>
+<p>Seventh-generation decision making, for example, is an indigenous principle that is enshrined in the Constitution of the Iroquois Nation. It mandates Iroquois leaders to consider the effects of their actions over seven generations, encompassing hundreds of years. Seven generations is a long time, but it is also a finite amount of time. (see: <a href="/thoughts/traditional-knowledge" rel="noopener" class="internal-link" data-src="/thoughts/traditional-knowledge">traditional knowledge</a>)</p>
 </blockquote>
 <p>Karl Popper had a really good way of putting this, which now sides him very solidly on the side which would choose to save the child in <a href="/thoughts/The-ones-who-walk-away-from-Omelas" rel="noopener" class="internal-link" data-src="/thoughts/The-ones-who-walk-away-from-Omelas">The Ones Who Walk Away From Omelas</a></p>
 <blockquote>
@@ -647,7 +783,6 @@ Aug 5, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -678,7 +813,7 @@ Aug 5, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

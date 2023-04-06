@@ -25,15 +25,6 @@
     </item>
     
     <item>
-      <title>Experience</title>
-      <link>https://jzhao.xyz/thoughts/Experience/</link>
-      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/Experience/</guid>
-      <description>2022: Verses Technical Lead Led engineering for pluriverse.world and interdependence.online artifacts, building technical infrastructure to support over 10,000+ signatures across both.</description>
-    </item>
-    
-    <item>
       <title>Projects</title>
       <link>https://jzhao.xyz/thoughts/Projects/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
@@ -67,7 +58,7 @@
       <pubDate>Fri, 21 Aug 2020 14:02:48 -0700</pubDate>
       
       <guid>https://jzhao.xyz/posts/a-failure-resume/</guid>
-      <description>Sometimes, I feel like I don&amp;rsquo;t deserve a lot of my current accomplishments and that I need to work even harder just to deserve what I have right now.</description>
+      <description>The nature of resumes means that most people only choose to highlight their successes and wins, but rarely the work, effort, and failures on the way.</description>
     </item>
     
     <item>
@@ -76,7 +67,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/</guid>
-      <description>Welcome to my little garden on the internet &amp;ndash; I&amp;rsquo;m Jacky! I spend a lot of time here playing, [[thoughts/writing|writing]], and building out in the open.</description>
+      <description>I&amp;rsquo;m Jacky. This is my little [[thoughts/hypertext|hypertext]] [[posts/networked-thought|garden]] on the [[thoughts/Internet|Internet]] &amp;ndash; make yourself at home!
+Currently, I&amp;rsquo;m exploring what agentic, [[thoughts/interoperability|interoperable]], and [[posts/agentic-computing|communal]] technology looks like in my independent research practice.</description>
     </item>
     
   </channel>

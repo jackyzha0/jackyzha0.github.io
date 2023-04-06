@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Eghbal."
+    content="Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Asparouhova."
   />
+  <meta property="og:title" content="A case for funding Open Source">
+  <meta property="og:description" content="Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Asparouhova.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/paid-open-source/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A case for funding Open Source" />
+  <meta name="twitter:description" content="Making of Open Source software I’ve recently made my way through Working in Public: The Making and Maintenance of Open Source Software by Nadia Asparouhova." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     A case for funding Open Source
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -343,6 +363,8 @@ Feb 27, 2021
 
 
 
+  
+  
 
 
 
@@ -350,6 +372,93 @@ Feb 27, 2021
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -415,7 +524,7 @@ Feb 27, 2021
 <a
   href="/thoughts/Making-and-Maintenance-of-OSS/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/Making-and-Maintenance-of-OSS/"><em>Working in Public: The Making and Maintenance of Open Source Software</em></a> by Nadia Eghbal. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and 
+  data-src="/thoughts/Making-and-Maintenance-of-OSS/"><em>Working in Public: The Making and Maintenance of Open Source Software</em></a> by Nadia Asparouhova. Not only does it have some absolutely stunning cover art, it also touches on some thoughts that have been marinating in my head about the intersection of open source and 
 
 
 
@@ -453,7 +562,7 @@ Feb 27, 2021
   href="/thoughts/internet-computing/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/internet-computing/">Internet computing</a> and collaboration tools like <a href="/thoughts/git" rel="noopener" class="internal-link" data-src="/thoughts/git">Git</a> have decreased the barrier to entry enough that producing software through a commons is now feasible and very much alive. The success of projects like Apache, Linux, and FreeBSD proved just how successful a commons-based method of production could be.</p>
-<p>Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then money, an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.</p>
+<p>Surprisingly, this may also help to explain why some developers view open source and money as completely separate. If the commons-based method of production is rooted in intrinsic motivation, then <a href="/thoughts/money" rel="noopener" class="internal-link" data-src="/thoughts/money">money</a>, an extrinsic motivator, will be seen as opposite to core ideals that open source stands for.</p>
 <a href="#creation-vs-maintenance"><h2 id="creation-vs-maintenance"><span class="hanchor" ariaLabel="Anchor"># </span>Creation vs Maintenance</h2></a>
 <blockquote>
 <p>&ldquo;Creation is an intrinsic motivator, maintenance usually requires extrinsic motivation&rdquo;</p>
@@ -481,7 +590,7 @@ Feb 27, 2021
 <a
   href="/thoughts/maintenance/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/maintenance/">Maintenance is less so.</a>. This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.</p>
+  data-src="/thoughts/maintenance/">Maintenance is less so</a>. This is akin to a writer that’s been asked to edit and revise the same book day in and day out, long after they’ve reaped the initial financial and reputational rewards from its creation. Even when the creator wants to leave the project to work on something else, they can’t. They’re tightly shackled by the fact that hundreds of thousands of other organizations, companies, and tools rely on their code to keep their operations running. Bringing on additional developers may not help either, as they still require onboarding, code reviews, and general guidance.</p>
 <p>Code may be nearly free to create and distribute, but maintenance is still expensive.</p>
 <a href="#types-of-code"><h2 id="types-of-code"><span class="hanchor" ariaLabel="Anchor"># </span>Types of code</h2></a>
 <a href="#code-as-an-artifact"><h3 id="code-as-an-artifact"><span class="hanchor" ariaLabel="Anchor"># </span>Code as an artifact</h3></a>
@@ -500,24 +609,24 @@ Feb 27, 2021
 <li><strong>Non-rivalrous.</strong> My ability to copy the code doesn’t affect your ability to copy it. (This isn’t exactly true due to some marginal costs but I’ll discuss this later)</li>
 <li><strong>Non-excludable.</strong> If someone has a copy of the code, it is very difficult to prevent them from sharing that code with others.</li>
 </ol>
-<p>Any code that is in this state is easy to share, copy, and distribute. This is the type of code that lives dormant on Github, on StackOverflow answers, and in GitHub’s Arctic Vault<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. However, the main purpose of consuming code is not to simply read and study it, but to actually use it and to let it interact with other code.
-In doing so, we bring it to life.</p>
+<p>Any code that is in this state is easy to share, copy, and distribute. This is the type of code that lives dormant on Github, on StackOverflow answers, and in GitHub’s Arctic Vault<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. However, the main purpose of consuming code is not to simply read and study it, but to actually use it and to let it interact with other code.</p>
+<p>In doing so, we bring it to life.</p>
 <a href="#code-as-an-organism"><h3 id="code-as-an-organism"><span class="hanchor" ariaLabel="Anchor"># </span>Code as an organism</h3></a>
 <blockquote>
 <p>&ldquo;Open source code derives its value not from its static qualities but from its living ones.&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
-<p>As soon as you hit CTRL-V on that snippet of code, as soon as that static code is inserted into your own, that code comes to life. It might surface  ridiculous amounts of red squigglies, break other code, or force you to rewrite your previous code just to make it work. When code transitions from a resting static state to an active living state, it starts to incur a set of hidden costs.</p>
-<p>Like a living organism in a symbiotic relationship, there is a mutual interdependence between it and others in the software ‘ecosystem’ in order to survive. As a result, this ecosystem requires constant upkeep to ensure that components don’t fall out of balance: dependency bumps, documentation updates, and infrastructure changes.</p>
+<p>As soon as you hit CTRL-V on that snippet of code, as soon as that static code is inserted into your own, that code comes to life. Immediately, it might surface ridiculous amounts of red squigglies, break other code, or force you to rewrite your previous code just to make it work. But when code transitions from a resting static state to an active living state, it starts to also incur a set of hidden costs.</p>
+<p>Like a living organism in a symbiotic relationship, there is a mutual <a href="/thoughts/interdependence" rel="noopener" class="internal-link" data-src="/thoughts/interdependence">interdependence</a>  between it and others in the software ‘ecosystem’ in order to survive. As a result, this ecosystem requires constant upkeep to ensure that components don’t fall out of balance: dependency bumps, documentation updates, and infrastructure changes.</p>
 <a href="#free-as-in-speech-not-as-in-beer"><h2 id="free-as-in-speech-not-as-in-beer"><span class="hanchor" ariaLabel="Anchor"># </span>Free as in speech, not as in beer</h2></a>
 <p>‘Free’ software doesn’t refer to its price. In fact, ‘free’ software is often extremely expensive. As Richard Stallman first described free software, it’s “free as in speech, not free as in beer.” The point Stallman was trying to make was that ‘free’ refers to what one could do with the software, rather than the price tag.</p>
 <a href="#latent-cost-of-software"><h3 id="latent-cost-of-software"><span class="hanchor" ariaLabel="Anchor"># </span>Latent cost of software</h3></a>
 <p>In reality, code in its alive state is more like a free puppy. In the beginning, it’s a great and wonderful thing! Super fun and super cute. As it grows and gets older, you realize “geez, it actually takes a lot of my own time to take care of this thing.” Unlike a piece of inanimate furniture, bringing a living creature into one’s home comes with bringing in a new set of responsibilities too.</p>
-<p><strong>Marginal costs</strong> are costs increase on a per-user basis. I mentioned earlier that these costs mean that software is actually rivalrous, meaning that at some point, the project won’t be able to support the n+1th user. Some of this cost comes from physical infrastructure like code hosting and infrastructure. However, the majority of the cost comes from user support. Say you have a billion users and only 0.1% of them require support. If it takes you roughly 10 minutes to resolve each issue, you would still need 20,833 people working 8-hour shifts a day just to be able to keep up with the support volume. Maintainers are constantly wrestling with keeping their issue volume low and questions answered. Eventually, it just becomes a hindrance preventing them from working on the core product.</p>
+<p><strong>Marginal costs</strong> are costs increase on a per-user basis. I mentioned earlier that these costs mean that software is actually rivalrous, meaning that at some point, the project won’t be able to support the $n+1$th user. Some of this cost comes from physical infrastructure like code hosting and infrastructure. However, the majority of the cost comes from user support. Say you have a billion users and only 0.1% of them require support. If it takes you roughly 10 minutes to resolve each issue, you would still need 20,833 people working 8-hour shifts a day just to be able to keep up with the support volume. Maintainers are constantly wrestling with keeping their issue volume low and questions answered. Eventually, it just becomes a hindrance preventing them from working on the core product.</p>
 <p><strong>Temporal costs</strong> are those which build up and compound over time. Most of it comes from technical debt, choices that are easier today at the expense of time and money in the future. This is the eternal battle against entropy: the inevitable decay of systems over time. When code changes, all the supporting knowledge that surrounds it must be updated too. Documentation, tutorials, programming books, videos, and more slowly become obsolete.</p>
 <p>Paying off these latent costs is seldom intrinsically motivated. When people talk about how fun making new projects is or contributing to open source, it’s never referring to writing documentation or refactoring code. This isn’t the ‘fun’ part of writing software. This is the nasty upkeep that goes into maintaining a building from the 1850s that’s had new rooms, plumbing, and electric wiring frankenstein-ed into it over the years.</p>
 <a href="#funding-open-source"><h2 id="funding-open-source"><span class="hanchor" ariaLabel="Anchor"># </span>Funding Open Source</h2></a>
 <p>I first started on BentoML<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> as a casual contributor last summer, submitting a few decently sized PRs. It was almost all intrinsically motivated; I found issues that I enjoyed working on and that I knew I would learn lots from. Satisfied with my experience, I decided to join the team as a paid contractor expecting to just continue the type of work I was doing in the summer. As issue after issue piled on, I slowly started to realize just how much extra work being a maintainer meant and why it was a paid position. Making proposals, triaging issues, adding tests, and writing documentation took up the majority of my time. While I recognized it was important work, it was not work I was intrinsically motivated to do. Thus, to motivate people like me to get that work done, an extrinsic motivator &ndash; in this case, money &ndash; needed to be applied.</p>
-<p>How do we best incentivize maintainers to work tasks stripped of the very excitement and promise of creation that initially drew them to the project in the first place? There is a jarring disconnect between work that is needed versus work that is intrinsically motivated. This is where I believe open source funding should play a role. There are two main potential avenues to go about this.</p>
+<p>How do we best incentivize maintainers to work tasks stripped of the very excitement and promise of creation that initially drew them to the project in the first place? There is a jarring disconnect between work that is needed versus work that is intrinsically motivated. This is where I believe open source funding should play a role.</p>
 <a href="#funding-projects"><h3 id="funding-projects"><span class="hanchor" ariaLabel="Anchor"># </span>Funding projects</h3></a>
 <p>One possibility is to fund projects directly. This route builds a brand around the project. The status of the project then transcends any single person’s contributions and becomes a tangible entity that has the brand recognition and reputation that comes with becoming an independent entity.</p>
 <p>Projects also tend to attract corporate/government funding much better than individuals can since companies are more comfortable paying for a product (code) than for a one off contract (talent). As part of the transaction, companies are typically promised service availability, influence in decision making, or technical support. However, this tradeoff also means that projects lose a bit of their freedom. Not only do maintainers have to worry about the future of the project, they need to make sure that the agreements laid out between the project and the companies are met too.</p>
@@ -624,16 +733,6 @@ In doing so, we bring it to life.</p>
     
       
       
-      
-    
-      
-      
-      <li>
-        <a href="/newsletters/issue-2/" data-ctx="why Open Source should be funded" data-src="/newsletters/issue-2" class="internal-link">Spider-man neurons, hearing fractals, and fulfilment</a>
-      </li>
-      
-      
-      
       <li>
         <a href="/thoughts/Making-and-Maintenance-of-OSS/" data-ctx="A case for funding Open Source" data-src="/thoughts/Making-and-Maintenance-of-OSS" class="internal-link">The Making and Maintenance of Open Source Software</a>
       </li>
@@ -675,7 +774,6 @@ In doing so, we bring it to life.</p>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -706,7 +804,7 @@ In doing so, we bring it to life.</p>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

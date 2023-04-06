@@ -14,6 +14,34 @@ Technical Dimensions of Programming Systems  Source
 7 clusters
  Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?"
   />
+  <meta property="og:title" content="Programming Models">
+  <meta property="og:description" content="[[thoughts/system model|System models]] for programming.
+Technical Dimensions of Programming Systems  Source
+![[thoughts/images/tech-dims.png|500]]
+7 clusters
+ Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/programming-models/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Programming Models" />
+  <meta name="twitter:description" content="[[thoughts/system model|System models]] for programming.
+Technical Dimensions of Programming Systems  Source
+![[thoughts/images/tech-dims.png|500]]
+7 clusters
+ Interaction: how do users manifest their ideas, use the system to get a result, and generate new ideas in response?" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Programming Models
   </title>
@@ -63,7 +91,7 @@ Technical Dimensions of Programming Systems  Source
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -77,7 +105,7 @@ Technical Dimensions of Programming Systems  Source
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -99,10 +127,10 @@ Technical Dimensions of Programming Systems  Source
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -138,13 +166,13 @@ Technical Dimensions of Programming Systems  Source
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -456,6 +484,92 @@ Mar 18, 2023
           
         
         
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
       
     
     
@@ -973,7 +1087,7 @@ Mar 18, 2023
 </li>
 <li>Conceptual structure: how do the parts fit together?
 <ul>
-<li>Composability: There exist building blocks which span a range of useful combinations. Composability is, in a sense, key to the notion of &ldquo;programmability&rdquo; and every programmable system will have some level of composability</li>
+<li><a href="/thoughts/composable" rel="noopener" class="internal-link" data-src="/thoughts/composable">Composability</a>: There exist building blocks which span a range of useful combinations. Composability is, in a sense, key to the notion of &ldquo;programmability&rdquo; and every programmable system will have some level of composability</li>
 <li>Convenience: are there ready-made solutions to specific problems? i.e. what is the &lsquo;standard library&rsquo; of the system?</li>
 <li>Composability vs Convenience
 <ul>
@@ -987,7 +1101,7 @@ Mar 18, 2023
 <li>Everything was done in one language, and so everything was represented with the datatypes of that language.</li>
 </ul>
 </li>
-<li>Conceptual openness: can be seen as championing the values of <em>pluralism</em>, <em>compatibility</em>, or <em>conceptual openness</em> over conceptual integrity</li>
+<li>Conceptual openness: can be seen as championing the values of <em><a href="/thoughts/plurality" rel="noopener" class="internal-link" data-src="/thoughts/plurality">pluralism</a></em>, <em>compatibility</em>, or <em>conceptual openness</em> over conceptual integrity</li>
 <li>See also: <a href="/thoughts/Galls-law" rel="noopener" class="internal-link" data-src="/thoughts/Galls-law">Gall&rsquo;s law</a></li>
 </ul>
 </li>
@@ -1078,8 +1192,28 @@ Mar 18, 2023
     
       
       
+      
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/DSL/" data-ctx="thoughts/programming models" data-src="/thoughts/DSL" class="internal-link">DSL</a>
+      </li>
+      
+      
+      
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="thoughts/programming models" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/software-principles/" data-ctx="thoughts/programming models" data-src="/thoughts/software-principles" class="internal-link">Software Principles</a>
       </li>
       
       
@@ -1089,7 +1223,6 @@ Mar 18, 2023
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1120,7 +1253,7 @@ Mar 18, 2023
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

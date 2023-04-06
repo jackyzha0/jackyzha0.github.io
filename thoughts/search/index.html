@@ -11,6 +11,28 @@
     content="Search has co-opted the citation, vis-à-vis the hyperlink
  The post-WWII &lsquo;information explosion&rsquo; meant that we have a lot of info and not great means of looking through it to find what we want."
   />
+  <meta property="og:title" content="Search">
+  <meta property="og:description" content="Search has co-opted the citation, vis-à-vis the hyperlink
+ The post-WWII &lsquo;information explosion&rsquo; meant that we have a lot of info and not great means of looking through it to find what we want.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/search/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Search" />
+  <meta name="twitter:description" content="Search has co-opted the citation, vis-à-vis the hyperlink
+ The post-WWII &lsquo;information explosion&rsquo; meant that we have a lot of info and not great means of looking through it to find what we want." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Search
   </title>
@@ -60,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -444,6 +466,220 @@ Oct 12, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -510,16 +746,6 @@ Oct 12, 2021
   href="/thoughts/recommendation-system/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/recommendation-system/">recommendation system</a></p>
-<p>A diary of searches: 
-
-
-
-
-
-<a
-  href="/thoughts/Search-Diary/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/Search-Diary/">Search Diary</a></p>
 <p>Essay on 
 
 
@@ -544,28 +770,27 @@ Oct 12, 2021
 <p>Increasing number of words that describe an item will increase recall at the cost of precision.</p>
 <a href="#precisionrecall-trade-off"><h4 id="precisionrecall-trade-off"><span class="hanchor" ariaLabel="Anchor"># </span>Precision/recall trade-off</h4></a>
 <p>The trade-off between recall and precision decides whether a search finds all relevant documents (high recall) or only relevant documents (high precision).</p>
-<h3 id="infrastructurethoughtsinfrastructuremd-is-a-trap">
+<a href="#on-ads"><h3 id="on-ads"><span class="hanchor" ariaLabel="Anchor"># </span>On Ads</h3></a>
+<p>When you monetize via ads, curation takes a backseat to featuring advertisers - there is just less digital real estate available to curate your own recommendations. This creates 
 
 
 
 
 
 <a
-  href="/thoughts/infrastructure/"
+  href="/thoughts/trust/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/infrastructure/">Infrastructure</a> is a trap</h3>
+  data-src="/thoughts/trust/">trust</a> gaps between users and search engines.</p>
+<p>The search box versus the feed; intentional browsing vs being served by an algorithm</p>
+<p>Is it possible to move away from the ‘feed’-based model of browsing the social internet?</p>
 <blockquote>
-<p>Algorithmic recommendation has settled deep into the infrastructure of online cultural life, where it has become practically unavoidable.</p>
+<p>The “feed”–an archaic form of content consumption that is effectively just a direct visual manifestation of the data structure that powers it – is a medium that is effectively designed to be consumed alone. –Humphrey Obuobi</p>
 </blockquote>
-<p>So used to digital extractivism and data mining that it has become hidden to us now.</p>
-<p>&ldquo;An infrastructure is a trap in slow motion. Slowed down and spread out, we can see how traps are not just devices of momentary violence, but agents of ‘environmentalization’&rdquo;</p>
-<p>The boiling frog problem &ndash; we don&rsquo;t notice we&rsquo;re dying until it&rsquo;s too late.</p>
+<p>&ldquo;I realized that the experience of research is exactly opposite to the way I usually often encounter information online. When you research a subject, you make a series of important decisions, not least what it is you want to research, and you make a commitment to spend time finding information that doesn’t immediately present itself. You seek out different sources that you understand may be biased for various reasons. The very structure of the library… allows for browsing and close attention. Nothing could be more different from the news feed, where these aspects of information—provenance, trustworthiness, or what the hell it’s even about—are neither internally coherent nor subject to my judgment. Instead this information throws itself at me in no particular order, auto-playing videos and grabbing me with headlines. And behind the scenes, it’s me who’s being researched.&rdquo;</p>
 <a href="#boutique-search-engines"><h2 id="boutique-search-engines"><span class="hanchor" ariaLabel="Anchor"># </span>Boutique Search Engines</h2></a>
 <p>
 <a href="https://sariazout.mirror.xyz/7gSSTJ96SEyvXeljymglO3zN4H6DCgVnrNZq8_2NX1A" rel="noopener">Source: Re-Organizing the World’s Information: Why we need more Boutique Search Engines by <em>Sari Azout</em></a></p>
-<p>We&rsquo;ve returned to the <em>curated web</em> with Notion, Airtable, and Readwise collections, yet we haven&rsquo;t found good ways to make them multiplayer.</p>
-<p>Still thinking about this in the context of collaborative digital gardens (e.g. 
-<a href="http://quartz.jzhao.xyz/" rel="noopener">Quartz</a>)</p>
+<p>We&rsquo;ve returned to the <em>curated web</em> with Notion, Airtable, and Readwise collections.</p>
 <blockquote>
 <p>What started as a well-intentioned way to organize the world’s information has turned into a business focusing most of its resources on monetizing clicks to support advertisers rather than focusing on the search experience for people.</p>
 </blockquote>
@@ -582,81 +807,30 @@ Oct 12, 2021
   data-src="/thoughts/attention-economy/">attention economy</a>?</strong></p>
 <p>But if we curate, who curates the curators? We then run into a meta-governance problem. Mirror&rsquo;s 
 <a href="https://dev.mirror.xyz/dLLIq4Iebg5DLWJbOWa3sU6oQuwbogkmqPnz-ZbzPUg" rel="noopener">Token Race</a> appears to be a good start to answering this question.</p>
-<a href="#on-ads"><h3 id="on-ads"><span class="hanchor" ariaLabel="Anchor"># </span>On Ads</h3></a>
-<p>When you monetize via ads, curation takes a backseat to featuring advertisers - there is just less digital real estate available to curate your own recommendations. This creates 
-
-
-
-
-
-<a
-  href="/thoughts/trust/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/trust/">trust</a> gaps between users and search engines.</p>
-<p>The search box versus the feed
-intentional browsing vs being served by an algorithm</p>
-<p>Is it possible to move away from the ‘feed’-based model of browsing the social internet?</p>
-<blockquote>
-<p>The “feed”–an archaic form of content consumption that is effectively just a direct visual manifestation of the data structure that powers it – is a medium that is effectively designed to be consumed alone. –Humphrey Obuobi</p>
-</blockquote>
-<p>&ldquo;I realized that the experience of research is exactly opposite to the way I usually often encounter information online. When you research a subject, you make a series of important decisions, not least what it is you want to research, and you make a commitment to spend time finding information that doesn’t immediately present itself. You seek out different sources that you understand may be biased for various reasons. The very structure of the library… allows for browsing and close attention. Nothing could be more different from the news feed, where these aspects of information—provenance, trustworthiness, or what the hell it’s even about—are neither internally coherent nor subject to my judgment. Instead this information throws itself at me in no particular order, auto-playing videos and grabbing me with headlines. And behind the scenes, it’s me who’s being researched.&rdquo;</p>
 <a href="#search-engine-to-oracle"><h2 id="search-engine-to-oracle"><span class="hanchor" ariaLabel="Anchor"># </span>Search Engine to Oracle</h2></a>
 <p>
 <a href="https://outline.com/ZhCArb" rel="noopener">Source: Language models like GPT-3 could herald a new type of search engine in <em>MIT Technology Review</em></a></p>
-<p>transition from aggregator of information to oracle</p>
-<p>pagerank -&gt; rank literally whats relevant, asks the user to determine what info they wanna actually use</p>
-<p>oracle -&gt; tells you the &lsquo;right&rsquo; answer</p>
+<p>Transition from aggregator of information to oracle</p>
+<ul>
+<li>Pagerank: rank literally whats relevant, asks the user to determine what info they want to actually use</li>
+<li>Oracle: just tells you the &lsquo;right&rsquo; answer</li>
+</ul>
 <p>&ldquo;The idea is that instead of searching for information in a vast list of web pages, users would ask questions and have a language model trained on those pages answer them directly. The approach could change not only how search engines work, but what they do—and how we interact with them&rdquo;</p>
-<p>
-
-
-
-
-
-<a
-  href="/thoughts/epistemology/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/epistemology/">epistemological</a> question: Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.</p>
+<p>Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.</p>
+<p>See also: <a href="/thoughts/LLMs" rel="noopener" class="internal-link" data-src="/thoughts/LLMs">LLMs</a></p>
 <a href="#search-engines-as-faith"><h2 id="search-engines-as-faith"><span class="hanchor" ariaLabel="Anchor"># </span>Search Engines as Faith</h2></a>
-<p>They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.</p>
+<p>They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as <em>objective</em>.</p>
 <p>&ldquo;Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists.&rdquo; (Cathy O&rsquo;Neil)</p>
 <p>They are the database of our intentions. We search for things we are hoping to know, hoping to do, and hoping to become</p>
-<a href="#library-search"><h2 id="library-search"><span class="hanchor" ariaLabel="Anchor"># </span>Library Search</h2></a>
-<ul>
-<li>first catalogue was 4000 years ago</li>
-<li>card catalogue: &ldquo;indexing&rdquo; each book listed alphabetically by title, author, and subject</li>
-<li>computerization: online public access catalogues (OPACs) in 1970s, 1980s</li>
-<li>catalogues move online in 1990s - &ldquo;web OPAC&rdquo;
-<ul>
-<li>downsides: locked libraries into traditional models of search</li>
-</ul>
-</li>
-<li>second generation OPACs - incorporate interactive features and simplified interfaces
-<ul>
-<li>competition from search engines pushed redesign</li>
-</ul>
-</li>
-<li>library &ldquo;discovery layers&rdquo; implemented
-<ul>
-<li>expansion of online collections: articles, ebooks, digital library collections</li>
-<li>gives a search engine appearance and functionality</li>
-</ul>
-</li>
-<li>mainly relies on metadata as opposed to internet search engines which rely on full text content and keywords</li>
-</ul>
 <a href="#federated-search"><h2 id="federated-search"><span class="hanchor" ariaLabel="Anchor"># </span>Federated Search</h2></a>
 <p>Federated search is a technique used to search multiple data sources at once. With federated search, you can retrieve information from many different content locations with just one query and one search interface.</p>
+<p>See: <a href="/thoughts/Prolly-Trees" rel="noopener" class="internal-link" data-src="/thoughts/Prolly-Trees">Prolly Trees</a></p>
 <a href="#internet-topology-as-shaped-by-search-engines"><h2 id="internet-topology-as-shaped-by-search-engines"><span class="hanchor" ariaLabel="Anchor"># </span>Internet topology as shaped by search engines</h2></a>
 <p>
 <a href="https://louisedrulhe.fr/internet-atlas/" rel="noopener">Source: Critical Atlas of the Internet</a></p>
-<p>
-
-
-<img src="https://jzhao.xyz//thoughts/images/internet-atlas.png" width="auto" alt=""  /></p>
-<p>
-
-
-<img src="https://jzhao.xyz//thoughts/images/search%20engine%20space.png" width="auto" alt=""  /><em>The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.</em></p>
+<p><img src="/thoughts/images/internet-atlas.png" width="600" /></p>
+<p><img src="/thoughts/images/search engine space.png" width="400" /></p>
+<p><em>The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.</em></p>
 <p>See also: 
 
 
@@ -834,24 +1008,15 @@ intentional browsing vs being served by an algorithm</p>
 </li>
 <li>Competition policies
 <ul>
-<li>Sherman Act (1890): outlaws &ldquo;monopolization, attempted monopolization, or conspiracy or combination to monopolize&rdquo;
-
-<a href="https://en.wikipedia.org/wiki/Aaron_Swartz" rel="noopener">Aaron Swartz</a></li>
+<li>Sherman Act (1890): outlaws &ldquo;monopolization, attempted monopolization, or conspiracy or combination to monopolize&rdquo;</li>
 </ul>
 </li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Aaron_Swartz" rel="noopener">Aaron Swartz</a>
+<ul>
 <li>In 2011, Swartz was arrested MIT police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR in the hopes of freer access of information</li>
 <li>Federal prosecutors, led by Carmen Ortiz, later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act</li>
-<li>Swartz was found dead supposedly by suicide in his Brooklyn apartment, though this is still disputed
-EU Digital Markets Act</li>
-<li>Applies to &ldquo;gate-keeper platforms&rdquo;; fines up to 20% of annual revenue</li>
-<li>e.g.
-<ul>
-<li>Prohibits use of personal data mined from one service to benefit another service they offer</li>
-<li>Prohibition on requiring users to subscribe to one&rsquo;s service</li>
-<li>Requirements for transparency on advertising prices</li>
-<li>Prohibitions on self-preferencing</li>
-<li>Restrictions on targeted advertising without consent</li>
-<li>Requirements for interoperability with third-party software</li>
+<li>Swartz was found dead supposedly by suicide in his Brooklyn apartment, though this is still disputed</li>
 </ul>
 </li>
 </ul>
@@ -928,6 +1093,10 @@ EU Digital Markets Act</li>
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/networked-thought/" data-ctx="search" data-src="/posts/networked-thought" class="internal-link">Networked Thought</a>
       </li>
@@ -941,13 +1110,13 @@ EU Digital Markets Act</li>
       
       
       <li>
-        <a href="/thoughts/RDF/" data-ctx="search" data-src="/thoughts/RDF" class="internal-link">RDF</a>
+        <a href="/thoughts/Prolly-Trees/" data-ctx="thoughts/search" data-src="/thoughts/Prolly-Trees" class="internal-link">Prolly Trees</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/beyond-chat-gpt/" data-ctx="Search as oracle" data-src="/thoughts/beyond-chat-gpt" class="internal-link">Thoughts on ChatGPT</a>
+        <a href="/thoughts/RDF/" data-ctx="search" data-src="/thoughts/RDF" class="internal-link">RDF</a>
       </li>
       
       
@@ -983,13 +1152,7 @@ EU Digital Markets Act</li>
       
       
       <li>
-        <a href="/thoughts/peer-to-peer/" data-ctx="thoughts/search" data-src="/thoughts/peer-to-peer" class="internal-link">Peer to peer</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/social-graphs/" data-ctx="search" data-src="/thoughts/social-graphs" class="internal-link">Social Graphs</a>
+        <a href="/thoughts/organizing-system/" data-ctx="thoughts/search" data-src="/thoughts/organizing-system" class="internal-link">Organizing Systems</a>
       </li>
       
       
@@ -1005,7 +1168,6 @@ EU Digital Markets Act</li>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1036,7 +1198,7 @@ EU Digital Markets Act</li>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

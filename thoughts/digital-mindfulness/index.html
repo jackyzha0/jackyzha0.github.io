@@ -10,6 +10,26 @@
     name="description"
     content="On methods to reclaim ourselves from the attention economy. How do we enable friction to give people the space to think and reflect?"
   />
+  <meta property="og:title" content="Digital Mindfulness">
+  <meta property="og:description" content="On methods to reclaim ourselves from the attention economy. How do we enable friction to give people the space to think and reflect?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/digital-mindfulness/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Digital Mindfulness" />
+  <meta name="twitter:description" content="On methods to reclaim ourselves from the attention economy. How do we enable friction to give people the space to think and reflect?" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Digital Mindfulness
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -381,16 +401,6 @@ Dec 23, 2021
   href="/thoughts/friction/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/friction/">friction</a> to give people the space to think and reflect?</p>
-<p>
-
-
-
-
-
-<a
-  href="/posts/reflect/"
-  rel="noopener" class="internal-link"
-  data-src="/posts/reflect/">reflect</a> tries to do this a little</p>
 <a href="#time"><h2 id="time"><span class="hanchor" ariaLabel="Anchor"># </span>Time</h2></a>
 <p>
 <a href="https://kernel.community/en/learn/module-3/time" rel="noopener">Source: The present time by <em>Kernel</em></a></p>
@@ -408,16 +418,6 @@ Dec 23, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/ephemereal-content/">ephemereal content</a> we&rsquo;re so used to now.</p>
 <p>&ldquo;I don&rsquo;t want a job - I want my basic needs fulfilled and a degree of comfort and security which will enable me to make a meaningful contribution. Jobs are an artifact of the industrial age and a certain way of existing in time.&rdquo; Jobs are just the societally accepted norm for fulfilling basic needs. (Bullshit Jobs)</p>
-<p>Side note: people who 
-
-
-
-
-
-<a
-  href="/thoughts/introductions/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/introductions/">introduce</a> themselves by talking about their job make me feel really weird. You&rsquo;re just describing the means you take the keep yourself alive &ndash; what are the ends? What makes you <em>feel</em> alive?</p>
 <a href="#designing-for-slowness"><h2 id="designing-for-slowness"><span class="hanchor" ariaLabel="Anchor"># </span>Designing for slowness</h2></a>
 <blockquote>
 <p>&ldquo;what if you had to commute to websites&rdquo;
@@ -425,19 +425,23 @@ Dec 23, 2021
 <a href="https://twitter.com/spencerc99/status/1401320086183366657" rel="noopener">https://twitter.com/spencerc99/status/1401320086183366657</a></p>
 </blockquote>
 <p><em>Exploring the Reflective Potentialities of Personal Data with Different Temporal Modalities: A Field Study of Olo Radio</em></p>
-<p>This feels so magical to me; being able to create technology that evokes and recalls, creating spaces for reflection and a chance to reincorporate rather than gogogogopleasefocusonme all the time.</p>
-<ul>
-<li>&ldquo;There are also growing calls in the 
+<p>Rather than organizing music through name or playlist (inherent or user groupings), Olo Radio chooses to organize information through data residue (unintentional data generated through regular usage). Allows the user to browse music by time of day listened to, how long ago you listened to it, or when in the year you listened to it.</p>
+<p>Incentivizes revisiting of the past rather than the constant discovery of the new. (w the exception of once-a-year recaps like Spotify Wrapped)
+- How do we introduce temporality into objects to appreciate their inner processes?
+- Water fountain display of number of water bottles saved in lifetime
+- Transit time between websites? (bring back 
 
 
 
 
 
 <a
-  href="/thoughts/human-computer-interaction/"
+  href="/thoughts/friction/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/human-computer-interaction/">HCI</a> community to develop alternative approaches to designing interactions with personal data that better support experiences of contemplation, interpretation, and slowness&rdquo;</li>
-<li>Slowness as a form of reflection. Key features of the Olo Radio:
+  data-src="/thoughts/friction/">friction</a>)
+- &ldquo;Natural decay&rdquo; of physical objects &ndash; how do we transfer this into the digital realm?
+- Dispo as a way to fake &lsquo;scarcity&rsquo; in digital photos</p>
+<p>Slowness as a form of reflection. Key features of the Olo Radio:</p>
 <ul>
 <li>takes time to understand</li>
 <li>manifests change through time (big 
@@ -452,29 +456,20 @@ Dec 23, 2021
   data-src="/thoughts/A-Tale-for-the-Time-Being/"><em>A Tale for the Time Being</em></a> energy)</li>
 <li>leverages different forms of time to prompt reflection by manifesting their presence in everyday life</li>
 </ul>
-</li>
-<li>Rather than organizing music through name or playlist (inherent or user groupings), Olo Radio chooses to organize information through data residue (unintentional data generated through regular usage). Allows the user to browse music by time of day listened to, how long ago you listened to it, or when in the year you listened to it.
-<ul>
-<li>Incentivizes revisiting of the past rather than the constant discovery of the new. (w the exception of once-a-year recaps like Spotify Wrapped)</li>
-<li>How do we introduce temporality into objects to appreciate their inner processes?
-<ul>
-<li>Water fountain display of number of water bottles saved in lifetime</li>
-<li>Transit time between websites? (bring back 
+<p>This feels so magical to me; being able to create technology that evokes and recalls, creating spaces for reflection and a chance to reincorporate rather than gogogogopleasefocusonme all the time.</p>
+<blockquote>
+<p>&ldquo;There are also growing calls in the 
 
 
 
 
 
 <a
-  href="/thoughts/friction/"
+  href="/thoughts/human-computer-interaction/"
   rel="noopener" class="internal-link"
-  data-src="/thoughts/friction/">friction</a>)</li>
-<li>&ldquo;Natural decay&rdquo; of physical objects &ndash; how do we transfer this into the digital realm?</li>
-<li>Dispo as a way to fake &lsquo;scarcity&rsquo; in digital photos</li>
-</ul>
-</li>
-</ul>
-</li>
+  data-src="/thoughts/human-computer-interaction/">HCI</a> community to develop alternative approaches to designing interactions with personal data that better support experiences of contemplation, interpretation, and slowness&rdquo;</p>
+</blockquote>
+<ul>
 <li>Temporal seeking of memory and the element of surprise/anticipation
 <ul>
 <li>“I took to blocking off time to use it. It was less of a casual thing for me. …I’d start with Life mode. I’d pick a position, turn [the volume] up, lie on the couch, and close my eyes. …I’d get a vague idea of where I was [in time]. A pattern would eventually emerge. [Songs would] sometimes spark a flash of a specific memory, like a date I was on years ago or visions of my parents’ home. …I’d start to get these tense feelings about what the next song would be. Where would it bring me back to? …When I was in the zone, time flew by. I could listen for an hour without really noticing.”</li>
@@ -543,10 +538,6 @@ Dec 23, 2021
     
       
       
-      
-    
-      
-      
       <li>
         <a href="/thoughts/Dark-Forest-Theory-of-the-Internet/" data-ctx="digital mindfulness" data-src="/thoughts/Dark-Forest-Theory-of-the-Internet" class="internal-link">Dark Forest Theory of the Internet</a>
       </li>
@@ -561,12 +552,6 @@ Dec 23, 2021
       
       <li>
         <a href="/thoughts/attention-economy/" data-ctx="designing for slowness" data-src="/thoughts/attention-economy" class="internal-link">Attention Economy</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/cozy-software/" data-ctx="digital mindfulness" data-src="/thoughts/cozy-software" class="internal-link">Cozy software</a>
       </li>
       
       
@@ -594,7 +579,6 @@ Dec 23, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -625,7 +609,7 @@ Dec 23, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

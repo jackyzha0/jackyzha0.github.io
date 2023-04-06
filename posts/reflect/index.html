@@ -11,6 +11,28 @@
     content="How do we tell that this is a “valid” intent?
 A (not so) brief exploration of how we tackle classifying intents in reflect."
   />
+  <meta property="og:title" content="reflect: NLP Model Explained">
+  <meta property="og:description" content="How do we tell that this is a “valid” intent?
+A (not so) brief exploration of how we tackle classifying intents in reflect.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/posts/reflect/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="reflect: NLP Model Explained" />
+  <meta name="twitter:description" content="How do we tell that this is a “valid” intent?
+A (not so) brief exploration of how we tackle classifying intents in reflect." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     reflect: NLP Model Explained
   </title>
@@ -60,7 +82,7 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ A (not so) brief exploration of how we tackle classifying intents in reflect."
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -391,6 +413,91 @@ May 10, 2020
   
     
   
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -468,6 +575,91 @@ May 10, 2020
   
     
   
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -510,6 +702,10 @@ May 10, 2020
 
   
   
+  
+    
+  
+    
   
     
   
@@ -608,21 +804,15 @@ May 10, 2020
 <a href="#why-its-so-difficult"><h2 id="why-its-so-difficult"><span class="hanchor" ariaLabel="Anchor"># </span>Why it’s so difficult</h2></a>
 <p>A lot of it comes down to the fact that natural language processing (<a href="/thoughts/NLP" rel="noopener" class="internal-link" data-src="/thoughts/NLP">NLP</a>) is a very difficult task. What does the sentence “learn about physics” mean, and how is it semantically different from “asdflkj I can’t do work”?</p>
 <p>We can’t just parse for keywords and just allow a user in if we see the word “work” because that word can mean different things in different contexts. For example, “I’m not doing any work right now” would have otherwise been classified as valid. Thus, we can employ the help of a machine learning algorithm to help us capture this deeper meaning.</p>
-<p>Specifically, the form of machine learning we will be using is called <strong>supervised learning,</strong> in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.</p>
+<p>Specifically, the form of machine learning we will be using is called <strong><a href="/thoughts/supervised-learning" rel="noopener" class="internal-link" data-src="/thoughts/supervised-learning">supervised learning</a>,</strong> in which we give an algorithm a bunch of labelled data, tell it what it’s doing wrong, and let it ‘learn.’ Through doing this, hopefully the algorithm will be able to generalize and make predictions on unseen data too.</p>
 <a href="#the-data"><h2 id="the-data"><span class="hanchor" ariaLabel="Anchor"># </span>The data</h2></a>
 <p>Of course, if we want to perform supervised learning, we’re going to need a lot of data. Where are we going to get all of it? Luckily, we were able to get it through 3 different sources.</p>
 <a href="#survey-data-444-entries"><h3 id="survey-data-444-entries"><span class="hanchor" ariaLabel="Anchor"># </span>Survey data (444 entries)</h3></a>
 <p>Our team sent out an interest survey in early January in which we asked 3 questions:</p>
 <ol>
-<li>
-<p>How would you answer if you were trying to visit a distracting site while trying to focus? (eg. youtube, facebook, etc)</p>
-</li>
-<li>
-<p>How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)</p>
-</li>
-<li>
-<p>How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)</p>
-</li>
+<li>How would you answer if you were trying to visit a distracting site while trying to focus? (eg. youtube, facebook, etc)</li>
+<li>How would you answer if you were trying to visit a distracting site to take a quick break from your work? (eg. youtube, facebook, etc)</li>
+<li>How would you answer if you were trying to visit a distracting site like Facebook but to do work? (e.g. make a marketing post)</li>
 </ol>
 <p>We used these answers to form the basis of our very first dataset. We ended up getting a surprising amount of entries, ending with 148 responses to 3 questions and totalling 444 different observations. Here’s what some of that data looks like after tidying it up:</p>
 <blockquote>
@@ -679,7 +869,7 @@ May 10, 2020
 </tbody>
 </table>
 <a href="#closed-beta-790-entries"><h3 id="closed-beta-790-entries"><span class="hanchor" ariaLabel="Anchor"># </span>Closed Beta (790 entries)</h3></a>
-<p>After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a .csv file. A few examples are show below:</p>
+<p>After we made a basic dataset, we were able to make our first (admittedly not great) model. But in doing so, this let us create an MVP to which we could use to actually test with. We then deployed this model for use to our closed beta testers and collected their responses (with consent of course!) along with the website it was input on. This was then converted into a <code>.csv</code> file. A few examples are show below:</p>
 <table>
 <thead>
 <tr>
@@ -945,7 +1135,7 @@ May 10, 2020
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">inputs</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputs&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="n">max_seq_len</span><span class="p">])</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is max_seq_len units long. When we trained our model, this was set to 75.</p>
+</div><p>Right off the bat, you’ll notice that the first layer is the Input layer. Basically, this tells Keras to instantiate a new tensor (a multi-dimensional vector) with a given shape. In this case, we’re creating a one-dimensional tensor that is <code>max_seq_len</code> units long. When we trained our model, this was set to 75.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -958,7 +1148,7 @@ May 10, 2020
 <p>
 
 <img src="https://cdn-images-1.medium.com/max/3010/0*YOZ_CfmtgpUbJ9BD" width="auto" alt="credit: Rutger Ruizendaal, 2017"  /><em>credit: Rutger Ruizendaal, 2017</em></p>
-<p>Essentially, it embeds tokens in a <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">higher dimension vector space</a>, where distance between tokens represents its similarity.</p>
+<p>Essentially, it <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">embeds</a> tokens in a <a href="/thoughts/latent-factor-model" rel="noopener" class="internal-link" data-src="/thoughts/latent-factor-model">higher dimension vector space</a>, where distance between tokens represents its similarity.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1186,16 +1376,6 @@ May 10, 2020
     
       
       
-      
-    
-      
-      
-      <li>
-        <a href="/thoughts/digital-mindfulness/" data-ctx="reflect" data-src="/thoughts/digital-mindfulness" class="internal-link">Digital Mindfulness</a>
-      </li>
-      
-      
-      
       <li>
         <a href="/thoughts/search/" data-ctx="reflect" data-src="/thoughts/search" class="internal-link">Search</a>
       </li>
@@ -1207,7 +1387,6 @@ May 10, 2020
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -1238,7 +1417,7 @@ May 10, 2020
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

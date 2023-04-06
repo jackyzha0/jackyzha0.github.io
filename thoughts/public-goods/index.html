@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="One important advantage of startups over public goods is the possibility of an exit. Exits create incentives for upfront funding, hiring, motivation and alignment through equity, a share in the exit."
+    content="Definitions Defining &lsquo;public&rsquo;  The vernacular term &ldquo;public&rdquo; is understood to be something of the people, freely available for use—such as parks, roads, and common lands."
   />
+  <meta property="og:title" content="Public Goods">
+  <meta property="og:description" content="Definitions Defining &lsquo;public&rsquo;  The vernacular term &ldquo;public&rdquo; is understood to be something of the people, freely available for use—such as parks, roads, and common lands.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/public-goods/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Public Goods" />
+  <meta name="twitter:description" content="Definitions Defining &lsquo;public&rsquo;  The vernacular term &ldquo;public&rdquo; is understood to be something of the people, freely available for use—such as parks, roads, and common lands." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Public Goods
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -362,37 +382,6 @@ Jul 28, 2021
 
 
 
-<p>One important advantage of startups over public goods is the possibility of an <em>exit</em>. Exits create 
-
-
-
-
-
-<a
-  href="/thoughts/incentives/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/incentives/">incentives</a> for upfront funding, hiring, motivation and alignment through equity, a share in the exit. However, for nonprofits, FOSS, and public goods projects, this “light at the end of the tunnel” does not exist.</p>
-<p>
-<a href="https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c" rel="noopener">Source: Retroactive Public Goods Funding by <em>Optimism</em></a></p>
-<p>How do we incentivize people to contribute to the 
-
-
-
-
-
-<a
-  href="/thoughts/stone-soup-metaphor/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/stone-soup-metaphor/">stone soup</a> that is public goods 
-
-
-
-
-
-<a
-  href="/thoughts/funding/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/funding/">funding</a>?</p>
 <a href="#definitions"><h2 id="definitions"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
 <a href="#defining-public"><h3 id="defining-public"><span class="hanchor" ariaLabel="Anchor"># </span>Defining &lsquo;public&rsquo;</h3></a>
 <blockquote>
@@ -500,6 +489,38 @@ Jul 28, 2021
   href="/thoughts/positive-sum/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/positive-sum/">positive sum worlds</a></p>
+<a href="#incentives"><h2 id="incentives"><span class="hanchor" ariaLabel="Anchor"># </span>Incentives</h2></a>
+<p>
+<a href="https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c" rel="noopener">Source: Retroactive Public Goods Funding by <em>Optimism</em></a></p>
+<p>How do we incentivize people to contribute to the 
+
+
+
+
+
+<a
+  href="/thoughts/stone-soup-metaphor/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/stone-soup-metaphor/">stone soup</a> that is public goods 
+
+
+
+
+
+<a
+  href="/thoughts/funding/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/funding/">funding</a>?</p>
+<p>One important advantage of startups over public goods is the possibility of an <em>exit</em>. Exits create 
+
+
+
+
+
+<a
+  href="/thoughts/incentives/"
+  rel="noopener" class="internal-link"
+  data-src="/thoughts/incentives/">incentives</a> for upfront funding, hiring, motivation and alignment through equity, a share in the exit. However, for nonprofits, FOSS, and public goods projects, this “light at the end of the tunnel” does not exist. What do exits for public goods look like?</p>
 <h2 id="web3thoughtsweb3md">
 
 
@@ -511,19 +532,19 @@ Jul 28, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/web3/">Web3</a></h2>
 <p>
-<a href="https://otherinter.net/research/positive-sum-worlds/" rel="noopener">https://otherinter.net/research/positive-sum-worlds/</a></p>
+<a href="https://otherinter.net/research/positive-sum-worlds/" rel="noopener">Source</a></p>
 <p>Crypto protocols are one of the most compelling novel institutional forms, specifically deriving from their &ldquo;public&rdquo; qualities</p>
 <ol>
 <li>unrestricted membership + participation</li>
 <li>open APIs</li>
-<li>transparent allocation of resources and pwoer</li>
+<li>transparent allocation of resources and power</li>
 </ol>
 <p>Yet not perfect</p>
 <ul>
 <li>Ownership of these resources are concentrated in a precious few (whales)</li>
-<li>The &lsquo;public&rsquo; that this infrastructure serves is mostly decentralized finance
-Both of these main tokeholders share one common concern: price</li>
+<li>The &lsquo;public&rsquo; that this infrastructure serves is mostly decentralized finance</li>
 </ul>
+<p>Both of these main tokeholders share one common concern: price</p>
 <a href="#voice-in-web3"><h3 id="voice-in-web3"><span class="hanchor" ariaLabel="Anchor"># </span>&lsquo;Voice&rsquo; in web3</h3></a>
 <p>&ldquo;The equivalence of stake and voice in crypto is reminiscent of early American democracy, in which political representation was conditioned on property ownership. Under this regime, only 6% of the total US population was eligible to vote—a laughably exclusionary idea of the body politic by today&rsquo;s standards (Ratcliffe, 2013)&rdquo;</p>
 <p>&ldquo;The most consequential members of the crypto-public today are those who hold the most tokens, meaning even small holders are effectively removed from the conversation about what&rsquo;s in their benefit.&rdquo; Same concepts as 
@@ -536,9 +557,6 @@ Both of these main tokeholders share one common concern: price</li>
   href="/thoughts/Design-Justice/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/Design-Justice/">design justice</a>, we need to talk with and consider the marginalized peoples under existing systems of power so we can gain a deeper understanding of the public that we are building for and how to best serve them.</p>
-<a href="#obessions-with-profit"><h2 id="obessions-with-profit"><span class="hanchor" ariaLabel="Anchor"># </span>Obessions with profit</h2></a>
-<p>Web3 supposed allows us to &lsquo;codify&rsquo; the set of values that a public goods represents. Yet, in practice in web3, &ldquo;little space has been made for different values to be discussed or enacted. Which is why, in the absence of ways to enact our shared values, we default to the lowest common denominator: profit.&rdquo;</p>
-<p>The United States Dollar does not have a responsibility to profit its holders. A cryptocurrency is a monetary instrument, not a business.</p>
 
 
     </article>
@@ -605,18 +623,6 @@ Both of these main tokeholders share one common concern: price</li>
       
       
       <li>
-        <a href="/" data-ctx="public goods" data-src="/" class="internal-link">jzhao.xyz</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/newsletters/issue-3/" data-ctx="public good" data-src="/newsletters/issue-3" class="internal-link">Sun sneezing, infrastructure moderation, and why bikes are better than tricycles</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/posts/paid-open-source/" data-ctx="public good" data-src="/posts/paid-open-source" class="internal-link">A case for funding Open Source</a>
       </li>
       
@@ -630,6 +636,12 @@ Both of these main tokeholders share one common concern: price</li>
       
       <li>
         <a href="/thoughts/incentives/" data-ctx="public goods" data-src="/thoughts/incentives" class="internal-link">Incentives</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/infrastructure/" data-ctx="public good" data-src="/thoughts/infrastructure" class="internal-link">Infrastructure</a>
       </li>
       
       
@@ -665,6 +677,12 @@ Both of these main tokeholders share one common concern: price</li>
       
       
       <li>
+        <a href="/thoughts/types-of-goods/" data-ctx="thoughts/public goods" data-src="/thoughts/types-of-goods" class="internal-link">Types of goods</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/web3/" data-ctx="Public Goods" data-src="/thoughts/web3" class="internal-link">Web3</a>
       </li>
       
@@ -675,7 +693,6 @@ Both of these main tokeholders share one common concern: price</li>
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -706,7 +723,7 @@ Both of these main tokeholders share one common concern: price</li>
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

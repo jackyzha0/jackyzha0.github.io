@@ -13,8 +13,7 @@
       <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/convolutional-neural-networks/</guid>
-      <description>Rather than picking from fixed convolutions, we learn the elements of the filters.
-A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.</description>
+      <description>Rather than picking from fixed convolutions, we learn the elements of the filters. A convolution is a [[thoughts/imaging#Linear Filters|linear filter]] that measures the effect one signal has on another signal.</description>
     </item>
     
   </channel>

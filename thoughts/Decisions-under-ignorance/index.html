@@ -9,8 +9,30 @@
   <meta
     name="description"
     content="Decision rules when the agent is ignorant of all probabilities
-Background Points  No information about probabilities A value function on outcomes a&amp;s where a is an act and s is a state Most of the rules respect dominance  Rules  Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states Principle:  Avoid dominated acts and prefer dominant acts Can only use dominance principle if states are independent of acts Gold standard, use this whenever possible     Maximin/Leximin  Find the minimum value of each act Choose the act with the least bad worst-case outcome Note: can violate dominance if there are rows with the same minimum Leximin can help resolves ties by removing the minimum value in case of ties."
+Rules Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states  Principle: 1."
   />
+  <meta property="og:title" content="Decisions under ignorance (DUI)">
+  <meta property="og:description" content="Decision rules when the agent is ignorant of all probabilities
+Rules Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states  Principle: 1.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Decisions-under-ignorance/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Decisions under ignorance (DUI)" />
+  <meta name="twitter:description" content="Decision rules when the agent is ignorant of all probabilities
+Rules Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better Strong Dominance: act $a$ is strictly better than $b$ for all possible states  Principle: 1." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Decisions under ignorance (DUI)
   </title>
@@ -60,7 +82,7 @@ Background Points  No information about probabilities A value function on outcom
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ Background Points  No information about probabilities A value function on outcom
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ Background Points  No information about probabilities A value function on outcom
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ Background Points  No information about probabilities A value function on outcom
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -620,6 +642,60 @@ Sep 12, 2022
       
       
       
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
       
         
         
@@ -690,78 +766,61 @@ Sep 12, 2022
 
 
 <p>Decision rules when the agent is ignorant of all probabilities</p>
-<a href="#background-points"><h2 id="background-points"><span class="hanchor" ariaLabel="Anchor"># </span>Background Points</h2></a>
-<ol>
-<li>No information about probabilities</li>
-<li>A value function on outcomes a&amp;s where a is an act and s is a state</li>
-<li>Most of the rules respect dominance</li>
-</ol>
 <a href="#rules"><h2 id="rules"><span class="hanchor" ariaLabel="Anchor"># </span>Rules</h2></a>
-<ol>
-<li>Dominance
-<ol>
+<a href="#dominance"><h3 id="dominance"><span class="hanchor" ariaLabel="Anchor"># </span>Dominance</h3></a>
+<ul>
 <li>Weak Dominance: act $a$ is as good or better than $b$ for each possible state and there is at least one state where it is strictly better</li>
 <li>Strong Dominance: act $a$ is strictly better than $b$ for all possible states</li>
-<li>Principle:
-<ol>
-<li>Avoid dominated acts and prefer dominant acts</li>
-<li>Can only use dominance principle if states are independent of acts</li>
-<li>Gold standard, use this whenever possible</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Maximin/Leximin
+</ul>
+<p>Principle:
+1. Avoid dominated acts and prefer dominant acts
+2. Can only use dominance principle if states are independent of acts
+3. Gold standard, use this whenever possible</p>
+<a href="#maximinleximin"><h3 id="maximinleximin"><span class="hanchor" ariaLabel="Anchor"># </span>Maximin/Leximin</h3></a>
 <ol>
 <li>Find the minimum value of each act</li>
 <li>Choose the act with the least bad worst-case outcome</li>
-<li>Note: can violate dominance if there are rows with the same minimum</li>
+</ol>
+<p>Note: can violate dominance if there are rows with the same minimum</p>
+<ul>
 <li>Leximin can help resolves ties by removing the minimum value in case of ties. Note that this violates dominance!</li>
 <li>Leximin* only strikes out a <em>single</em> minimum value in case of ties. This does <em>not</em> violate dominance</li>
-<li>Extremely conservative, avoids the worst-case scenario</li>
-</ol>
-</li>
-<li>Optimism/Pessimism and &ldquo;Best Average&rdquo;
-<ol>
+</ul>
+<p>This rule is extremely conservative, avoids the worst-case scenario</p>
+<a href="#optimismpessimism-and-best-average"><h3 id="optimismpessimism-and-best-average"><span class="hanchor" ariaLabel="Anchor"># </span>Optimism/Pessimism and &ldquo;Best Average&rdquo;</h3></a>
+<ul>
 <li>Maximax (pick the best of the best-case outcomes)</li>
 <li>Best Average: take the best of each row and worst of each row and average it, pick the act with best average</li>
 <li>Optimism/Pessimism: Uses a weighted average (a linear combination) of the minimum and maximum values ($\alpha = 0$ is pessimistic, $\alpha = 1$ is optimistic): $V_\alpha(A) = \alpha \max(A) + (1-\alpha) \min(A)$</li>
-<li>Objections
+</ul>
+<p>Objections:</p>
 <ol>
 <li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 </ol>
-</li>
-</ol>
-</li>
-<li>Minimax regret
-<ol>
-<li>Irrational to reject an act with a chance of a great gain, where the cost is slight.</li>
+<a href="#minimax-regret"><h3 id="minimax-regret"><span class="hanchor" ariaLabel="Anchor"># </span>Minimax regret</h3></a>
+<p>Basis: it is irrational to reject an act with a chance of a great gain, where the cost is slight.</p>
+<ul>
 <li>Regret value for each outcome = value of the outcome - maximum value in that column</li>
 <li>Max regret for each act is the most negative regret for each row A</li>
 <li>Choose the act with the minimum max regret</li>
-<li>Objections
+</ul>
+<p>Objections</p>
 <ol>
 <li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 <li>Adding irrelevant alternative acts potentially affects recommended acts</li>
 </ol>
-</li>
-</ol>
-</li>
-<li>Principle of Insufficient Reason (PIR)
-<ol>
-<li>If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)</li>
-<li>So, we assign each of the $n$ states probability $1/n$ and maximize the expected value</li>
+<a href="#principle-of-insufficient-reason-pir"><h3 id="principle-of-insufficient-reason-pir"><span class="hanchor" ariaLabel="Anchor"># </span>Principle of Insufficient Reason (PIR)</h3></a>
+<p>If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)</p>
+<ul>
+<li>Assign each of the $n$ states probability $1/n$ and maximize the expected value</li>
 <li>For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} value(A, S_i)$</li>
-<li>This turns the problem into a <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a></li>
-<li>Objections
+</ul>
+<p>This turns the problem into a <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a></p>
+<p>Objections</p>
 <ol>
 <li>Requires <a href="/thoughts/interval-scale" rel="noopener" class="internal-link" data-src="/thoughts/interval-scale">interval scale</a> instead of ordinal scale</li>
 <li>Arbitrary partitions of states (can result in incoherence)</li>
-<li>Doesn&rsquo;t apply outside games of chance (e.g. Pascal&rsquo;s Wager)</li>
-</ol>
-</li>
-</ol>
-</li>
+<li>Doesn&rsquo;t apply outside games of chance (e.g. <a href="/thoughts/Pascals-Wager" rel="noopener" class="internal-link" data-src="/thoughts/Pascals-Wager">Pascal&rsquo;s Wager</a>)</li>
 </ol>
 <a href="#rationality-constraints"><h2 id="rationality-constraints"><span class="hanchor" ariaLabel="Anchor"># </span>Rationality Constraints</h2></a>
 <p>Find criteria that any rational decision rule should satisfy. Use these to rule out one or more decision principles</p>
@@ -871,7 +930,6 @@ Sep 12, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -902,7 +960,7 @@ Sep 12, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -12,6 +12,30 @@
 Game Design and Teaching  Source: Game designers vs. education researchers on unguided instruction by Andy Matuschak
  A mistake we made early on was looking primarily at metrics like retention and monetization."
   />
+  <meta property="og:title" content="Game Design">
+  <meta property="og:description" content="Related: games
+Game Design and Teaching  Source: Game designers vs. education researchers on unguided instruction by Andy Matuschak
+ A mistake we made early on was looking primarily at metrics like retention and monetization.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/game-design/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Game Design" />
+  <meta name="twitter:description" content="Related: games
+Game Design and Teaching  Source: Game designers vs. education researchers on unguided instruction by Andy Matuschak
+ A mistake we made early on was looking primarily at metrics like retention and monetization." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Game Design
   </title>
@@ -61,7 +85,7 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -75,7 +99,7 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -97,10 +121,10 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -136,13 +160,13 @@ Game Design and Teaching  Source: Game designers vs. education researchers on un
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -353,6 +377,135 @@ Oct 26, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -389,7 +542,7 @@ Oct 26, 2021
 <blockquote>
 <p>A mistake we made early on was looking primarily at metrics like retention and monetization. These simply don’t tell us much about what motivates players to play. If I were to build the game again, I would have implemented the togetherness metric for the very first private alpha.</p>
 </blockquote>
-<p>A lot of pedagogy is covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?</p>
+<p>A lot of pedagogy covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?</p>
 <p>The &ldquo;
 <a href="https://www.youtube.com/watch?v=xrDZ--AuiL8" rel="noopener">vow of silence</a>&rdquo;: to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through 
 
@@ -475,12 +628,12 @@ Oct 26, 2021
 <blockquote>
 <p>At the root of much toxicity is the misdirection of our human need to belong</p>
 </blockquote>
-<p>When humans feel like they lack membership in healthy, eudaimonic, organizations, they experience stress and seek to rapidly remedy the situation (e.g. lashing out at others in hopes that putting others down helps them rise in status).</p>
+<p>When humans feel like they lack membership in healthy, eudaimonic organizations, they experience stress and seek to rapidly remedy the situation (e.g. lashing out at others in hopes that putting others down helps them rise in status).</p>
 <p>In toxic systems every new user is potentially rewarded if they adopt toxic behaviours.</p>
 <a href="#prosocial-game-design"><h3 id="prosocial-game-design"><span class="hanchor" ariaLabel="Anchor"># </span>Prosocial Game Design</h3></a>
 <p>Three main pitfalls</p>
 <ol>
-<li>Psychology: there are a lot of requirements to build friendships, like right sized groups of people, correct density, and engagement in mutually dependent reciprocal activities.</li>
+<li>Psychology: there are a lot of requirements to build <a href="/thoughts/friendship" rel="noopener" class="internal-link" data-src="/thoughts/friendship">friendships</a>, like right sized groups of people, correct density, and engagement in mutually dependent reciprocal activities.</li>
 <li>Logistics: rigid human limits on how many relationships they can maintain and how long it takes them to form new ones (see: 
 
 
@@ -491,19 +644,8 @@ Oct 26, 2021
   href="/thoughts/group-limits/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/group-limits/">group limits</a>)</li>
-<li>Economics: games are built on an economic foundation of resources (creation, transformation, trade, and consumption). However, it is hard to get economic incentives to align with those of social behaviour. &ldquo;In particular, many of the key elements required by the psychological and logistical aspects of friendship formation are systematically undervalued within common economic practices.&rdquo;</li>
+<li><a href="/thoughts/economics" rel="noopener" class="internal-link" data-src="/thoughts/economics">Economics</a>: games are built on an economic foundation of resources (creation, transformation, trade, and consumption). However, it is hard to get economic incentives to align with those of social behaviour. &ldquo;In particular, many of the key elements required by the psychological and logistical aspects of friendship formation are systematically undervalued within common economic practices.&rdquo;</li>
 </ol>
-<h3 id="boundaries-between-the-real-world-and-the-virtual-worldthoughtsvirtual20worldsmd">Boundaries between the real world and the 
-
-
-
-
-
-<a
-  href="/thoughts/virtual-worlds/"
-  rel="noopener" class="internal-link"
-  data-src="/thoughts/virtual-worlds/">virtual world</a></h3>
-<p>There’s limited permeability of the boundary between the real world and the cartoon world. You can think of this as the designer writing out the import / export laws for their bubble of play</p>
 <a href="#elements-of-the-internal-economy"><h3 id="elements-of-the-internal-economy"><span class="hanchor" ariaLabel="Anchor"># </span>Elements of the internal economy</h3></a>
 <ul>
 <li>Tokens: base units of quantity (can represent attention, time, or value). They act as goods, products, or currencies</li>
@@ -594,8 +736,8 @@ Oct 26, 2021
   rel="noopener" class="internal-link"
   data-src="/thoughts/Goodharts-Law/">Goodhart&rsquo;s Law</a>. Doing so may transform relationships into ones which are transactional in nature with clear extrinsic motivators in the form of your willingness to make that number go up or down. (This is also one of the reasons why ‘likes’ in social media end up being a source of toxicity and in general a very poor practice.)</p>
 <p>One also needs to keep in mind that trust differs across social contexts</p>
-<p>For new players, one of the scariest things is requirement to engage in specialized, high coordination group performances. Building towards high trust using a ladder:
-
+<p>For new players, one of the scariest things is requirement to engage in specialized, high coordination group performances. Building towards high trust using a ladder:</p>
+<p>
 
 
 <img src="https://jzhao.xyz//thoughts/images/trust-ladder.png" width="auto" alt=""  /></p>
@@ -620,7 +762,7 @@ Oct 26, 2021
   href="/thoughts/virtual-worlds/"
   rel="noopener" class="internal-link"
   data-src="/thoughts/virtual-worlds/">virtual worlds</a>, we can make almost any resource positive sum. When a monster drops loot for one player, it can also drop loot for any other player that did damage.</p>
-<p>However, truly abundant worlds are not super fun to play in. How can we design for infinite source and imbalanced economies?</p>
+<p>However, truly abundant worlds are not super fun to play in (constraints are what make <a href="/thoughts/games" rel="noopener" class="internal-link" data-src="/thoughts/games">games</a> interesting). How can we design for infinite source and imbalanced economies?</p>
 <ul>
 <li>Per players caps: cap number of harvestable positive sum resources per player</li>
 <li>Per group caps: cap total number of harvestable items per group of players</li>
@@ -711,7 +853,7 @@ Oct 26, 2021
       
       
       <li>
-        <a href="/thoughts/knowledge-distillation/" data-ctx="games" data-src="/thoughts/knowledge-distillation" class="internal-link">Knowledge Distillation &#43; Teaching</a>
+        <a href="/thoughts/knowledge-distillation/" data-ctx="Games" data-src="/thoughts/knowledge-distillation" class="internal-link">Knowledge Distillation &#43; Teaching</a>
       </li>
       
       
@@ -733,7 +875,6 @@ Oct 26, 2021
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -764,7 +905,7 @@ Oct 26, 2021
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

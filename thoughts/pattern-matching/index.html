@@ -11,6 +11,28 @@
     content="Science as Seeing in Aeon
 If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception?"
   />
+  <meta property="og:title" content="Pattern Matching">
+  <meta property="og:description" content="Science as Seeing in Aeon
+If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception?">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/pattern-matching/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pattern Matching" />
+  <meta name="twitter:description" content="Science as Seeing in Aeon
+If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception?" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Pattern Matching
   </title>
@@ -60,7 +82,7 @@ If prior patterns are essential for making sense of things, how can we avoid fal
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -74,7 +96,7 @@ If prior patterns are essential for making sense of things, how can we avoid fal
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -96,10 +118,10 @@ If prior patterns are essential for making sense of things, how can we avoid fal
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -135,13 +157,13 @@ If prior patterns are essential for making sense of things, how can we avoid fal
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -496,7 +518,7 @@ Apr 3, 2022
 <a href="https://aeon.co/essays/seeing-is-not-simple-you-need-to-be-both-knowing-and-naive" rel="noopener"><em>Science as Seeing</em> in Aeon</a></p>
 <p>If prior patterns are essential for making sense of things, how can we avoid falling into well-worn channels of perception? And most importantly, how can we learn to see in genuinely new ways?</p>
 <p>To say that we construct idealised categories is not to say that patterns in the world don’t already exist, but that we must learn how to see them in the world around us.</p>
-<p>If the brain is a taxonomising (see: <a href="/thoughts/terminology#terminological-anchoring" rel="noopener" class="internal-link" data-src="/thoughts/terminology">terminological anchoring</a> and <a href="/thoughts/language-of-thought" rel="noopener" class="internal-link" data-src="/thoughts/language-of-thought">Language of thought</a>) engine, anxious to map the things and people we experience into familiar categories, then true learning must always be disorienting. Learning shifts the internal constellation of the firings of our nerves, the star by which we set our course, the spark of thought itself.</p>
+<p>If the brain is a taxonomising (see: <a href="/thoughts/terminology#terminological-anchoring" rel="noopener" class="internal-link" data-src="/thoughts/terminology">terminological anchoring</a> and <a href="/thoughts/ontology" rel="noopener" class="internal-link" data-src="/thoughts/ontology">ontology</a>) engine, anxious to map the things and people we experience into familiar categories, then true learning must always be disorienting. Learning shifts the internal constellation of the firings of our nerves, the star by which we set our course, the spark of thought itself.</p>
 <p>Seeing is a multipartite process, requiring a comparison between noisy signals and <a href="/thoughts/conceptual-model" rel="noopener" class="internal-link" data-src="/thoughts/conceptual-model">idealised models</a>.</p>
 
 
@@ -524,7 +546,6 @@ Apr 3, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -555,7 +576,7 @@ Apr 3, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

@@ -12,6 +12,30 @@
  Book, written by Tim Berners-Lee
 A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965."
   />
+  <meta property="og:title" content="Weaving the Web">
+  <meta property="og:description" content="The original design and ultimate destiny of the world wide web.
+ Book, written by Tim Berners-Lee
+A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/Weaving-the-Web/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Weaving the Web" />
+  <meta name="twitter:description" content="The original design and ultimate destiny of the world wide web.
+ Book, written by Tim Berners-Lee
+A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted Nelson in 1965." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Weaving the Web
   </title>
@@ -61,7 +85,7 @@ A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted 
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -75,7 +99,7 @@ A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted 
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -97,10 +121,10 @@ A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted 
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -136,13 +160,13 @@ A Brief History of the Web [[thoughts/hypertext|Hypertext]] was invented by Ted 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -828,6 +852,92 @@ Aug 9, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -877,18 +987,20 @@ Aug 9, 2022
 <li>content: the Web itself</li>
 </ol>
 <p>The independence of these layers is important. From the software engineering point of view, this is the basic principle of modularity. From the point of view of economics, it is the separation of horizontal competitive markets from anticompetitive vertical integration. From the information point of view, think of editorial independence, the neutrality of the medium.</p>
-<p>I am more concern about companies trying to take a vertical slice through the layers than creating a monopoly in any one layer. Keeping the medium and the content separate is a good rule in most media. When I turn on the television, I don&rsquo;t expect it to deliberately jump to a particular channel, I expect my television to be an impartial box.</p>
+<p>I am more concerned about companies trying to take a vertical slice through the layers than creating a monopoly in any one layer. Keeping the medium and the content separate is a good rule in most media. When I turn on the television, I don&rsquo;t expect it to deliberately jump to a particular channel, I expect my television to be an impartial box.</p>
 <p>I also expect the same neutrality of software. When I ask a search engine to find the information it can on a topic, I don&rsquo;t expect it to return just the sites of companies that happen to advertise with or make payments to the search company.</p>
 <p>If a company claims to give access to the world of information, then presents a filtered view, the Web loses its credibility. That is why hardware, software, and transmission companies must remain unbiased toward content. I would like to keep the conduit separate from the content. I would like there always to be a choice of the unbiased way, combined carefully with the freedom to make commercial partnerships. And when other people are making a choice for me, I would like this to be made absolutely clear to me.</p>
 <p>See also: <a href="/thoughts/inevitability-of-centralization" rel="noopener" class="internal-link" data-src="/thoughts/inevitability-of-centralization">inevitability of centralization</a></p>
 <a href="#privacy"><h3 id="privacy"><span class="hanchor" ariaLabel="Anchor"># </span>Privacy</h3></a>
 <p>People should be able to surf the Web anonymously, or as a well-defined entity, and should be able to control the difference between the two. I would like to be able to decide who I will allow to use my personal information and for what.</p>
 <p>The W3C is creating a technology that will allow automatic negotiation between a user&rsquo;s browser and store&rsquo;s server, leading to an agreement about privacy. The Platform for Privacy Preferences Project (P3P) will give a computer a way of describing its owner&rsquo;s privacy preferences and demands and give servers a way of describing their privacy policies.</p>
+<p>See also: <a href="/thoughts/privacy" rel="noopener" class="internal-link" data-src="/thoughts/privacy">privacy</a></p>
 <a href="#annotations"><h3 id="annotations"><span class="hanchor" ariaLabel="Anchor"># </span>Annotations</h3></a>
 <p>I would like annotation servers to exist where groups could add links to documents they want to comment on. Annotation servers are third-party services allowing a group to share each others&rsquo; comments on documents anywhere else on the Web. The browser gets the original page and then separately checks annotation servers for comments which are then superimposed on the page.</p>
 <p>Imagine having servers for comments in different forums, perhaps family, school, and company. Again, the theme is human beings doing the thinking and machines helping it work on a larger scale, but nothing replacing wisdom in the end.</p>
 <a href="#technology-and-policy"><h3 id="technology-and-policy"><span class="hanchor" ariaLabel="Anchor"># </span>Technology and Policy</h3></a>
-<p>[The W3C] defines mechanism, not policy. That said, it is essential that policy and technology be designed with a good understanding of each other. As I noted in closing the first International World Wide Web Conference at CERN in May 1994, technologists cannot simply leave the social and ethical questions to other people, because technology directly affects these matters. (see: <a href="/thoughts/software-and-politics" rel="noopener" class="internal-link" data-src="/thoughts/software-and-politics">software and politics</a>)</p>
+<p>[The W3C] defines mechanism, not policy. That said, it is essential that policy and technology be designed with a good understanding of each other. As I noted in closing the first International World Wide Web Conference at CERN in May 1994, technologists cannot simply leave the social and ethical questions to other people, because technology directly affects these matters.</p>
+<p>See: <a href="/thoughts/software-and-politics" rel="noopener" class="internal-link" data-src="/thoughts/software-and-politics">software and politics</a></p>
 <a href="#the-webs-achilles-heel-dns"><h3 id="the-webs-achilles-heel-dns"><span class="hanchor" ariaLabel="Anchor"># </span>The Web&rsquo;s Achilles&rsquo; Heel: DNS</h3></a>
 <p>At the top of the <a href="/thoughts/DNS" rel="noopener" class="internal-link" data-src="/thoughts/DNS">DNS</a> hierarchy sits 13 root servers. An operator error at this level can black out huge portions of the web. However, that technical weakness is itself less of a concern than the social centralization that parallels it.</p>
 <p>All domain names are given out in a delegated fashion. To set up the name 
@@ -900,6 +1012,7 @@ Aug 9, 2022
 <a href="#teaching"><h3 id="teaching"><span class="hanchor" ariaLabel="Anchor"># </span>Teaching</h3></a>
 <p>Having to work with someone else&rsquo;s definitions is difficult. An awe-inspiring talent of my physics tutor, Professor John Moffat, was that when I brought him a problem I had worked out incorrectly, using a strange technique and symbols different from the well-established ones, he not only would follow my weird reasoning to find out where it went wrong, but would then use my own strange <a href="/thoughts/notation" rel="noopener" class="internal-link" data-src="/thoughts/notation">notation</a> to explain the right answer.</p>
 <p>This great feat involved looking at the world using my definitions, comparing them with his, and translating his knowledge and experience into my language. It was a mathematical version of the art of listening.</p>
+<p>See: <a href="/thoughts/teaching" rel="noopener" class="internal-link" data-src="/thoughts/teaching">teaching</a></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -954,7 +1067,6 @@ Aug 9, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -985,7 +1097,7 @@ Aug 9, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

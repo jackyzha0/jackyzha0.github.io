@@ -8,8 +8,31 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Causality  When $a \rightarrow b$ then $a$ might have caused $b$  We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:  $a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order $a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique) there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$      Concurrency  When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)  Concurrent does not mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$) Similar notation to [[thoughts/Order theory|Order theory]]    Causal Order  $\prec$ is a causal order, it is consistent with causality, a strict total order on events."
+    content="Causality When $a \rightarrow b$ then $a$ might have caused $b$
+We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:"
   />
+  <meta property="og:title" content="Causality">
+  <meta property="og:description" content="Causality When $a \rightarrow b$ then $a$ might have caused $b$
+We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/causality/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Causality" />
+  <meta name="twitter:description" content="Causality When $a \rightarrow b$ then $a$ might have caused $b$
+We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:" />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Causality
   </title>
@@ -59,7 +82,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +96,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +118,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +157,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -409,12 +432,6 @@ May 5, 2022
   
   
 
-  
-  
-
-  
-  
-
 
 
 
@@ -478,44 +495,19 @@ May 5, 2022
 
 
 <a href="#causality"><h2 id="causality"><span class="hanchor" ariaLabel="Anchor"># </span>Causality</h2></a>
-<ul>
-<li>When $a \rightarrow b$ then $a$ might have caused $b$
-<ul>
-<li>We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:
+<p>When $a \rightarrow b$ then $a$ might have caused $b$</p>
+<p>We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:</p>
 <ul>
 <li>$a$ and $b$ occurred at the same node, and $a$ occurred before $b$ in that node&rsquo;s local execution order</li>
 <li>$a$ is the sending of some message $m$ and $b$ is the receipt of that same message $m$ (assuming sent messages are unique)</li>
 <li>there exists some $c$ such that $a \rightarrow c$ and $c \rightarrow b$</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
 <a href="#concurrency"><h2 id="concurrency"><span class="hanchor" ariaLabel="Anchor"># </span>Concurrency</h2></a>
-<ul>
-<li>When $a \parallel b$ then $a$ cannot have cause $b$ (and vice versa)
-<ul>
-<li>Concurrent does <em>not</em> mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)</li>
-<li>Similar notation to <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a></li>
-</ul>
-</li>
-</ul>
+<p>When $a \parallel b$ then $a$ cannot have caused $b$ (and vice versa)</p>
+<p>Concurrent does <em>not</em> mean simultaneous, it means two things did not know about each other when they occurred (a is concurrent with b is written as $a \parallel b$)</p>
 <a href="#causal-order"><h2 id="causal-order"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Order</h2></a>
-<ul>
-<li>$\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the &lsquo;happens-before&rsquo; relation</li>
-</ul>
-<a href="#causal-dependence"><h2 id="causal-dependence"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Dependence</h2></a>
-<p>Three cases</p>
-<ol>
-<li>Act A causes of influences state S</li>
-<li>State S causes or influences act A</li>
-<li>Some common C causes or influences both S and A</li>
-</ol>
-<p>Note some properties:</p>
-<ul>
-<li>In all cases, $P(S | A) &gt; P(S | \lnot A)$</li>
-<li>In cases 2 and 3 $P(A \rightarrow S) = P(\lnot A \rightarrow S) = P(S)$ in other words, A has no effect on S</li>
-</ul>
+<p>$\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the &lsquo;happens-before&rsquo; relation</p>
+<p>See also: <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a></p>
 
 
     </article>
@@ -662,12 +654,6 @@ May 5, 2022
       
       
       <li>
-        <a href="/thoughts/Chinese-room-argument/" data-ctx="causal" data-src="/thoughts/Chinese-room-argument" class="internal-link">Searle&#39;s Chinese room argument</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/thoughts/Decision-theory/" data-ctx="causally" data-src="/thoughts/Decision-theory" class="internal-link">Decision theory</a>
       </li>
       
@@ -687,6 +673,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/Order-theory/" data-ctx="causal ordering" data-src="/thoughts/Order-theory" class="internal-link">Order theory</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Putnams-Ant-Argument/" data-ctx="causal" data-src="/thoughts/Putnams-Ant-Argument" class="internal-link">Putnam&#39;s Ant Argument</a>
       </li>
       
       
@@ -728,7 +720,13 @@ May 5, 2022
       
       
       <li>
-        <a href="/thoughts/indeterminant/" data-ctx="causal" data-src="/thoughts/indeterminant" class="internal-link">Indeterminacy</a>
+        <a href="/thoughts/downward-causation/" data-ctx="causation" data-src="/thoughts/downward-causation" class="internal-link">Downward Causation</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/doxastic-partiality/" data-ctx="causal" data-src="/thoughts/doxastic-partiality" class="internal-link">Doxastic partiality</a>
       </li>
       
       
@@ -746,13 +744,19 @@ May 5, 2022
       
       
       <li>
+        <a href="/thoughts/linearizability/" data-ctx="causal" data-src="/thoughts/linearizability" class="internal-link">Linearizability</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/message-broadcast/" data-ctx="causal" data-src="/thoughts/message-broadcast" class="internal-link">Message broadcast</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/trust/" data-ctx="causal" data-src="/thoughts/trust" class="internal-link">Trust</a>
+        <a href="/thoughts/semilattice/" data-ctx="causal ordering" data-src="/thoughts/semilattice" class="internal-link">Semilattice</a>
       </li>
       
       
@@ -762,7 +766,6 @@ May 5, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -793,7 +796,7 @@ May 5, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>

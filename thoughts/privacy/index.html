@@ -8,8 +8,28 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to choose what and with whom you&rsquo;ll share."
+    content="Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to [[thoughts/agency|choose]] what and with whom you&rsquo;ll share."
   />
+  <meta property="og:title" content="Privacy">
+  <meta property="og:description" content="Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to [[thoughts/agency|choose]] what and with whom you&rsquo;ll share.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jzhao.xyz/icon.png">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/privacy/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Privacy" />
+  <meta name="twitter:description" content="Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to [[thoughts/agency|choose]] what and with whom you&rsquo;ll share." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
   <title>
     Privacy
   </title>
@@ -59,7 +79,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.45e048fafd0b345cd4760fbcfdf81beb.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.5da9564cde0a2a1fafcc817e0da03ca9.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -73,7 +93,7 @@
   
   
   
-  <script src="https://jzhao.xyz/js/util.ba89ec55faeebabb6b4bf288cd40f6da.min.js"></script>
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
   
   
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
@@ -95,10 +115,10 @@
 
 
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   
-  <script async src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
 
   
   
@@ -134,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.2588c8004300e134a5ace82afb777264.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.8fb3e492f30e6531bd126b692301419f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c77430ac0abe9351418ea4b0a5feee99.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c7c870b8e1a55114196be8cd405f222d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -437,6 +457,134 @@ Jul 10, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -448,7 +596,8 @@ Jul 10, 2022
 
 
 
-<p>Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to choose what and with whom you&rsquo;ll share. It provides safety, control and the right to grant access.</p>
+
+<p>Privacy isn&rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to <a href="/thoughts/agency" rel="noopener" class="internal-link" data-src="/thoughts/agency">choose</a> what and with whom you&rsquo;ll share. It provides safety, control and the right to grant access.</p>
 <p>Privacy gives you the ability to express yourself, to be creative, to spend your time and your money in whatever manner you like, without the scrutiny of others. It protects our intimate moments, our most embarrassing ambitions, our radical ideas and the ability to be our true selves.</p>
 <p>Privacy is freedom, consent, dignity and security.</p>
 <a href="#definitions"><h2 id="definitions"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
@@ -477,7 +626,7 @@ Jul 10, 2022
 </ol>
 <a href="#privacy-for-independent-development"><h2 id="privacy-for-independent-development"><span class="hanchor" ariaLabel="Anchor"># </span>Privacy for independent development</h2></a>
 <p>Privacy is the way in which a social group recognizes and communicates to the individual that he is responsible for his development as a unique person, a separate moral agent</p>
-<p>It&rsquo;s valuable because it lets us be ourselves. In order to have different kinds of social relationships with different people, we need to have some kind of control over who knows what about us (see: <a href="/posts/context-collapse" rel="noopener" class="internal-link" data-src="/posts/context-collapse">context collapse</a>)</p>
+<p>It&rsquo;s valuable because it lets us be ourselves. In order to have different kinds of social relationships with different people, we need to have some kind of control over who knows what about us (see: <a href="/posts/context-collapse" rel="noopener" class="internal-link" data-src="/posts/context-collapse">context collapse</a>, <a href="/thoughts/Fishbowl-effect" rel="noopener" class="internal-link" data-src="/thoughts/Fishbowl-effect">Fishbowl effect</a>)</p>
 <a href="#differential-privacy"><h2 id="differential-privacy"><span class="hanchor" ariaLabel="Anchor"># </span>Differential Privacy</h2></a>
 <p>tldr; add randomized noise that maintains distribution of data</p>
 <p>When submitting a piece of data:</p>
@@ -500,14 +649,8 @@ Jul 10, 2022
 <p>Helene Nissenbaum’s ‘contextual privacy’</p>
 <p>An example she draws in her work is imagining your interactions with your physician when dealing with a medical issue. Even in a world where the right to live as a stranger among strangers reigns supreme, we unquestioningly turn over the most intimate medical details to people we barely know.</p>
 <p>Now, let’s imagine you leave your doctor’s office and fire up Instagram to take your mind off the diagnosis he just gave you, which is that you don’t have brain cancer but you simply suffer from chronic migraines and will just have to deal. Scrolling past pictures of friends and celebrities, you see an advertisement for a migraine medication, specifically for the vestibular migraines you suffer from. While two seconds ago you were willing to send images of your brain across the world for medical advice, you now feel horribly violated knowing that everyone from Facebook to a pharma marketing team know about your condition.</p>
-<p><strong>The context of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</strong></p>
+<p><strong>The <a href="/thoughts/context" rel="noopener" class="internal-link" data-src="/thoughts/context">context</a> of your privacy—what’s being revealed to whom and for what reason—utterly changed and you had no say in it.</strong></p>
 <p>See also: <a href="/thoughts/GDPR" rel="noopener" class="internal-link" data-src="/thoughts/GDPR">GDPR</a></p>
-<a href="#pluralistic-publics"><h2 id="pluralistic-publics"><span class="hanchor" ariaLabel="Anchor"># </span>Pluralistic Publics</h2></a>
-<p><em>
-<a href="https://gettingplurality.org/wp-content/uploads/2023/03/Plural-Publics-1.pdf" rel="noopener">Plural Publics</a></em> by Shrey Jain, Divya Siddarth, and E. Glen Weyl</p>
-<blockquote>
-<p>Instead of focusing on “private” v. “public,” we seek to protect and enable the emergence of a rich diversity of “publics.</p>
-</blockquote>
 <a href="#proxemics"><h2 id="proxemics"><span class="hanchor" ariaLabel="Anchor"># </span>Proxemics</h2></a>
 <p>Proxemics, a term coined by anthropologist Edward T. Hall, defines the relationships between a person and their identity, their surroundings, and the social norms of the community around a person or individual.</p>
 <p>
@@ -665,41 +808,6 @@ Jul 10, 2022
 <li>No one in the federal government is in charge of enforcing the provisions of the Privacy Act. Federal agencies have taken it upon themselves to determine which databases they can exempt.</li>
 <li>The Privacy Act allows one agency to share records with another agency as long as they are for a “routine use.”</li>
 </ol>
-<a href="#against-predictive-policing"><h2 id="against-predictive-policing"><span class="hanchor" ariaLabel="Anchor"># </span>Against Predictive Policing</h2></a>
-<p>Social contract theory posits that we have surrendered some of our natural rights in order to form a society, with the understanding that this society will protect our remaining rights<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. One of the key rights we have surrendered is the right to use violence, as we have delegated this authority to the state through law enforcement so that they may afford us the right to privacy and safety. Using social contract theory, I argue that Canada should enact a total ban on predicting policing algorithms. The use of these algorithms is ineffective at affording us the right to safety and actively harms countless marginalized groups.</p>
-<p>Those who advocate for the use of these algorithms argue that they enable law enforcement to better prevent terrorist incidents and crimes. For example, the Chicago police force used these algorithms to identify shooters. Yet, the reality is that these systems have a very negligible impact on improving public safety. In the wake of the 9/11 attacks in the United States the government introduced mass surveillance programs in the name of public safety. However, a study by the New America Foundation found that these programs had neither prevented acts of terrorism nor found evidence of planned terrorist acts. <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<p>The use of these algorithms also violates the social contract which states that we should impose only as many rules as we need in order to have a functioning society. In a proper social contract, no community members would want to put unfair burdens on others because that would mean putting unfair burdens on themselves. In other words, we would like a minimum viable set of rules that the government is able to enforce.</p>
-<p>Imagine an extreme world where you are guaranteed all of your absolute rights but have no rights of any other kind (e.g. freedom of speech, freedom of free media, etc.). While this may be a perfectly safe society, you literally cannot do anything but exist. This example serves to illustrate the tradeoff between personal liberties and personal rights; you cannot have your cake and eat it too. It is a basic expectation that individuals have a right to privacy and trading that for a negligible increase in personal safety is not one that most people would make.</p>
-<p>When we delegate the role of enforcing these roles to the government, we assume that they act impartially on our behalf, without bias or discrimination. However, predictive policing algorithms do not adhere to this standard: they are biased against marginalized groups, and their use often leads to police violence against these groups.</p>
-<p>Predictive policing algorithms rely on historical data from police databases, which contain disproportionately high numbers of interactions with people from marginalized groups. As a result, these algorithms are likely to label members of these groups as “high risk” and target them for extra surveillance even when they have not done anything wrong. Under Rawl’s theory of justice, we quickly see that its use is unfair.</p>
-<p>In a study from 2016, ProPublica found that COMPAS, a policing algorithm, overestimated the rate of reoffending for Black individuals by almost twice as much as those for Caucasians <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. This meant that Black individuals were disproportionately given longer and harsher sentences. Race isn’t the only feature that these algorithms discriminate on. Any category of people who have been unfairly represented historically (e.g. gender minorities, PoC, immigrants) continue to be systematically harmed by these systems<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. This can lead to a self-fulfilling prophecy where people from marginalized groups are more likely to be arrested and jailed because they are being targeted by predictive policing algorithms<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. Clearly, this is a system that does not benefit those who are the least-advantaged in this society.</p>
-<p>Lastly, we have an expectation for the right to explanation in any social contract. Especially when we delegate the responsibility for upholding and reforming rules to the government we expect explanations decisions that significantly affect an individual. Most predictive policing algorithms operate using large troves of data and in a way which is opaque to its operators<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. If governments use these policing algorithms, they cannot explain how they made the decisions they did. The public will be left without much recourse to challenge the decisions of automated systems. Alkhatib<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> explains that these systems without explanation or feedback loops quickly diverge from reality and can lead to increasingly unfair and discriminatory decisions.</p>
-<p>In light of all this evidence, I believe that Canada should enact a total ban on predictive policing algorithms. The social contract theory dictates that we have a responsibility to protect the rights of all individuals in our society equally; predictive policing violates this principle by discriminating against already marginalized groups<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>
-<a href="https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/" rel="noopener">https://www.wired.com/2017/04/courts-using-ai-sentence-criminals-must-stop-now/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p>
-<a href="https://www.newamerica.org/international-security/reports/terrorism-america-18-years-after-911/what-is-the-threat-to-the-united-states/" rel="noopener">https://www.newamerica.org/international-security/reports/terrorism-america-18-years-after-911/what-is-the-threat-to-the-united-states/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3" role="doc-endnote">
-<p>
-<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm" rel="noopener">https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:4" role="doc-endnote">
-<p>
-<a href="https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf" rel="noopener">https://ali-alkhatib.com/papers/chi/utopia/utopia.pdf</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:5" role="doc-endnote">
-<p>
-<a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm" rel="noopener">https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
 
 
     </article>
@@ -718,6 +826,18 @@ Jul 10, 2022
     
     
     
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
     
       
       
@@ -796,7 +916,19 @@ Jul 10, 2022
       
       
       <li>
+        <a href="/thoughts/Weaving-the-Web/" data-ctx="thoughts/privacy" data-src="/thoughts/Weaving-the-Web" class="internal-link">Weaving the Web</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/local-first-software/" data-ctx="privacy" data-src="/thoughts/local-first-software" class="internal-link">Local-first software</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/plurality/" data-ctx="thoughts/privacy" data-src="/thoughts/plurality" class="internal-link">Plurality</a>
       </li>
       
       
@@ -814,6 +946,12 @@ Jul 10, 2022
       
       
       <li>
+        <a href="/thoughts/state-channels/" data-ctx="thoughts/privacy" data-src="/thoughts/state-channels" class="internal-link">State Channels</a>
+      </li>
+      
+      
+      
+      <li>
         <a href="/thoughts/web3/" data-ctx="privacy" data-src="/thoughts/web3" class="internal-link">Web3</a>
       </li>
       
@@ -824,7 +962,6 @@ Jul 10, 2022
     </div>
     <div>
         <script
-  async
   src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
   integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
   crossorigin="anonymous"
@@ -855,7 +992,7 @@ Jul 10, 2022
     <footer>
         
         
-        <p>Made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
         <ul>
             
             <li><a href="https://jzhao.xyz/">Home</a></li>
