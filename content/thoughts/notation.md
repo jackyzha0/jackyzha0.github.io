@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+See also: [[thoughts/design goals]]
+
 ## Cognitive Dimensions of Notations
 1. Abstraction Gradient (Efficiency)
 	- Abstractions make it hard for first-time programmers to understand it

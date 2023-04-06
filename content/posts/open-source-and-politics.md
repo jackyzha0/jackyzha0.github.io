@@ -5,7 +5,7 @@ tags:
 - fruit
 ---
 
-**[[thoughts/Coraline Ada Ehmke|Coraline Ada Ehmke]]** is an acclaimed speaker, writer, engineer, and activist with over 25 years of experience in software and almost 20 years in open source. She works to promote diversity, equity, and justice in open source communities and the tech industry as a whole. She created the Contributor Covenant, the very first code of conduct for open source communities, as well as the Hippocratic License, which legally prohibits an open source project from being used for human rights violations. 
+**Coraline Ada Ehmke** is an acclaimed speaker, writer, engineer, and activist with over 25 years of experience in software and almost 20 years in open source. She works to promote diversity, equity, and justice in open source communities and the tech industry as a whole. She created the Contributor Covenant, the very first code of conduct for open source communities, as well as the Hippocratic License, which legally prohibits an open source project from being used for human rights violations. 
 
 **Jacky Zhao** is studying computer science and philosophy at the University of British Columbia. He thinks a lot about how we can better incentivize public goods funding, support better interactions with computers, and be more responsible stewards of technology. He has built and maintains many widely used open source projects like Quartz, which enables users to host their digital gardens online for free, and cursor-chat, which is a library to add Figma-like cursor chat to websites.
 

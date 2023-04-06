@@ -46,8 +46,7 @@ How do people discover new projects? There is no central 'board', but the best w
 
 > Lots of people at Valve want and need to know what you care about, what you’re good at, what you’re worried about, what you’ve got experience with, and so on. And the way to get the word out is to start telling people all of those things.
 
-People first [[thoughts/friction|friction-ful]] onboarding!
-
+People first [[thoughts/friction|frictionful]] onboarding!
 
 ### Structure
 1. Team leads
@@ -75,7 +74,7 @@ People first [[thoughts/friction|friction-ful]] onboarding!
 		2. Start talking to all the people who you think might be working on it already and find out how to best be valuable
 
 ## Risk
-Providing the freedom to fail is an important trait of the company— we couldn’t expect so much of individuals if we also penal- ized people for errors.
+Providing the freedom to fail is an important trait of the company— we couldn’t expect so much of individuals if we also penalized people for errors.
 
 There are still some bad ways to fail.
 - Repeating the same mistake over and over is one.
@@ -102,8 +101,7 @@ We want people who are integral to *high-bandwidth collaboration*. People who ca
 - simultaneously being inventive, iterative, creative, talkative, and reactive
 
 ### T-Shaped People
-We care about T-shaped people: people who are both generalists (highly skilled at  
-a broad set of valuable things—the top of the T) and also experts (among the best in their field within a narrow discipline—the vertical leg of the T).
+We care about T-shaped people: people who are both generalists (highly skilled at a broad set of valuable things—the top of the T) and also experts (among the best in their field within a narrow discipline—the vertical leg of the T).
 
 An expert who is too narrow has difficulty collaborating. A generalist who doesn’t go deep enough in a single area ends up on the margins, not really contributing as an individual.
 

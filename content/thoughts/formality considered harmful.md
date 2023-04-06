@@ -7,7 +7,6 @@ tags:
 
 See also: [[thoughts/cozy software|cozy software]]
 
-
 [Paper](https://www.csdl.tamu.edu/~shipman/papers/cscw.pdf) by Frank M. Shipman III and Catherine C. Marshall with the same name. On experiences, emerging themes, and directions on the use of formal representations in [[thoughts/interaction design|interactive designs]]
 
 > The cause of a number of unexpected difficulties in human-computer interaction lies in users’ unwillingness or inability to make structure, content, or procedures explicit

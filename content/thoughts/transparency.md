@@ -23,7 +23,7 @@ Big companies avoid fully detailing how they identify and categorize uses, claim
 - Transparency is generally considered a means to see the truth and motives behind people’s actions (Balkin 1999) and to ensure social accountability and trust (Breton 2006). On a very basic level, transparency allows access to more information which can influence power relationships between governments and citizens, business and customers, and in our case between news outlets and audiences (Bennis 2013). The access to more information also reduces uncertainty in social relations and theoretically increases trust (Cotterrell 1999), which is crucial in the maintenance of a functional society (Fukuyama 1995).
 - But while transparency can be seen as beneficial to engendering trust, seeing the inner workings of a government, business, or newsroom can result in negative implications such as undermining competitive advantages or creating costs without concomitant gains (Granados and Gupta 2013).
 - Challenges
-	- what would motivate a news or media organization to disclose details about their algorithms? Costs identified in producing transparency information included: data preparation, documentation writing, source code polishing, and benchmark testing. “How does being transparent offset loss of revenue?"
+	- What would motivate a news or media organization to disclose details about their algorithms? Costs identified in producing transparency information included: data preparation, documentation writing, source code polishing, and benchmark testing. “How does being transparent offset loss of revenue?"
 	- Participants also suggested that disclosing aspects of how a proprietary algorithmic system works may hurt an organization’s technological competitive advantage, or open the system to manipulation by third parties. Yet it was recognized that people will game the system no matter what, and that by disclosing information publicly it would level the playing field or, as one participant (CS2) put it, “everybody has the same chance now because we all know the rules of the game.”
 
 Cited as:
@@ -41,7 +41,7 @@ Cited as:
 	* providing explanations, a common approach in recommender systems that may help solve problems caused by lack of transparency in algorithmic decision-making systems
 * How explanations are "white box descriptions"
 	* They provide information about how a system produces a recommendation, particularly focusing on the system’s reasoning and data source
-* Why explanations are "black box descriptions"
+* Why explanations are "[[thoughts/black box|black box]] descriptions"
 	* providing justifications for a system and its outcomes and explaining the motivations behind the system, but not disclosing how the system works.
 	* These explanations fill an intention gap between a user’s needs and interests and the system’s goals, but do not provide any visibility into how the system works
 * Transparency of mechanism vs outcome

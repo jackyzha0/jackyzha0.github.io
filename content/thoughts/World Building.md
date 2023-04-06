@@ -28,7 +28,7 @@ Four different kinds of people (masks) required to World
 4. The Emissary: serves the World by ensuring its continuation
 	- “A world wants to emerge as an infinite game: one that keeps on going, invites new agents to keep it in play, is fertile with surprises, and continues to generate unexpected meanings”
 
-Crucially, each of these masks are worn by a single person: the Artist
+Crucially, each of these masks can be worn by a single person: the Artist
 
 > “It requires the Artist to abandon any sense of a coherent self and take on a different kind of psychology. One that moves between the artistic masks that already exist unevenly inside us, letting each contribute to the creation of a World.”
 

@@ -27,7 +27,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- Normally accomplished through some sort of live/hot reload that preserves the state of the system, however this only reflects the final output of the program without revealing any information on the *internal model* of the program that led to that output
 	- Richness: allowing programmers to work with domain-specific visualizations and interactions
 		- [W]riting code means articulating thoughts as precisely as possible… Often these thoughts involve geometrical relationships: tables, nests of objects, graphs, etc. Furthermore, the geometry differs from problem domain to problem domain. To this day, though, programmers articulate their thoughts as linear text.
-	- Composability: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
+	- [[thoughts/composable|Composability]]: the ability to freely combine smaller programmed artifacts into larger ones, to accomplish larger goals
 		- Unlike liveness and richness, this is not a quality static text lacks, which interactive programming systems strive to add to it. Rather, it is a familiar quality of static text which new programming systems must work hard to maintain.
 - More notes on [[thoughts/programming models]]
 - [CRDTs and Relational Databases (RDBs)](https://hal.inria.fr/hal-02983557/document)
@@ -246,12 +246,12 @@ I think research logs tend to generally focus too much on what one did rather th
 				- This is the typical Google Docs or Figma editing experience
 			- Obvious button to “make a new version of this document” (async branching)
 				- What if we did 'implicit' branching where any change makes a new branch?
-					- Open question: Could we utilize LLMs to bundle these into “commits”?
+					- Open question: Could we utilize [[thoughts/LLMs|LLMs]] to bundle these into “commits”?
 				- Each copy has an obvious flow of “merge back into original document”
 		- Presence (peripheral awareness of others)
 			- Important so people don't step on each others toes when working across versions
 			- Useful information at every scale
-				- Coin this the *Engelbart Zoom* which Engelbart explored in [HyperScope](https://dougengelbart.org/content/view/154/86/)
+				- Coin this the *[[thoughts/information scales|Engelbart Zoom]]* which Engelbart explored in [HyperScope](https://dougengelbart.org/content/view/154/86/)
 				- TKTK: what type of peripheral information is actually useful?
 					- e.g. see what paragraphs other people are editing with a scroll bar minimap?
 	- Version control
@@ -300,12 +300,7 @@ I think research logs tend to generally focus too much on what one did rather th
 	- "With apologies, potentially-inconsistent observations are accompanied by compensating actions, which are intended to clean up any negative effects of weak consistency. By leveraging lineage tracing, a CRDT-enabled database could automatically determine when such apologies are necessary, prompting the application accordingly"
 		- How does this compare with netcode rollback techniques?
 - Upwelling pre-print
-	- Fishbowl effect of real-time collaboration
-		- Real-time collaboration like in Google Docs creates stress as writers feel watched by their co-authors
-			- “Writers don’t want first drafts visible to the editor.” — Journalist
-		- Writers often need to initially ideate or experiment with new ideas in private, and then share the new material with their collaborators when they are ready to do so.
-			- Support diverge-converge workflows
-		- See also: [[thoughts/collaborative software#A spectrum]]
+	- [[thoughts/Fishbowl effect|Fishbowl effect]] of real-time collaboration
 	- File-based collaboration creates problems of versioning and merging edits from different co-authors.
 	- Reviewing changes
 		- Carefully reviewing a document is important in many professional contexts, but existing software makes it difficult to visualize and review the changes that have been made to a document.
@@ -361,7 +356,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- CausalOrigin (Origin)
 		- Retracted (Del)
 			- This is equivalent to a delete operation
-	- Incremental View Maintenance
+	- [[thoughts/incremental view maintenance|Incremental View Maintenance]]
 		- [DRed](https://www.researchgate.net/publication/213883593_Maintaining_views_incrementally)
 	- Building indexes using [[thoughts/Prolly Trees]] for optimized lookups
 	- Questions

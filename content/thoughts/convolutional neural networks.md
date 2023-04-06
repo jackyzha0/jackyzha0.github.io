@@ -9,9 +9,7 @@ aliases:
 - CNNs
 ---
 
-Rather than picking from fixed convolutions, we learn the elements of the filters.
-
-A convolution is a [[thoughts/imaging#Linear Filters|linear filters]] that measures the effect one signal has on another signal.
+Rather than picking from fixed convolutions, we learn the elements of the filters. A convolution is a [[thoughts/imaging#Linear Filters|linear filter]] that measures the effect one signal has on another signal.
 
 If $x$ is the $(n,n)$ input signal (image) and $w$ is the $(2m+1, 2m+1)$ filter, then the 2D convolution is given by
 

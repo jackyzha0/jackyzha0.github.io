@@ -12,7 +12,6 @@ tags:
 > 
 > The villager, who anticipates enjoying a share of the soup, does not mind parting with a few carrots, so these are added to the soup. Another villager walks by, inquiring about the pot, and the travelers again mention their stone soup which has not yet reached its full potential. More and more villagers walk by, each adding another ingredient, like potatoes, onions, cabbages, peas, celery, tomatoes, sweetcorn, meat, milk, butter, salt, and pepper. Finally, the stone (being inedible) is removed from the pot, and a delicious and nourishing pot of soup is enjoyed by travelers and villagers alike. Although the travelers have thus tricked the villagers into sharing their food with them, they have successfully transformed it into a tasty meal which they share with the donors.
 
-
 Properly seeding new initiatives to set the expectations for future potential contributors.
 
 Preventing the [cold-start problem](https://en.wikipedia.org/wiki/Cold_start_(recommender_systems))

@@ -11,7 +11,7 @@ tags:
 
 It's important to be aware of the incentive structures in place wherever you work (e.g. academia, industry): 80k hours of work in your life, it matters a lot where that goes (voting with labour). 
 
-One of the reasons we're not seeing another Xerox Parc/Bell Labs, it feels like there is too *much* [perception in globalized communities](thoughts/communities.md). Intimacy is destroyed when the balance of internal/external balance skews too far towards external. Without intimacy, there is no [trust](thoughts/trust.md). Without trust, there is no exploration. (rel: [group limits](thoughts/group%20limits.md))
+One of the reasons we're not seeing another Xerox Parc/Bell Labs, it feels like there is too *much* [perception in globalized communities](thoughts/communities.md). Intimacy is destroyed when the balance of internal/external balance skews too far towards external ([[thoughts/Fishbowl effect]]). Without intimacy, there is no [trust](thoughts/trust.md). Without trust, there is no exploration
 
 As of now, there are no good spaces to work on long-term (think 10+ years in the future) research to enable the visions of the future. Also, is long-term innovation just [infrastructure](thoughts/infrastructure.md)?
 
@@ -34,7 +34,7 @@ For people wanting to create change, why do we choose to do that through innovat
 
 Procurement services: finding a business application of research (specifically government funded)
 
-We're not building a utopia of research, this is more about finding a relationship/group of people you can be yourself with. It doesn't need to be permanent, recognizing people have different stages in their lives. Once youre done, you can move on.
+We're not building a utopia of research, this is more about finding a relationship/group of people you can be yourself with. It doesn't need to be permanent, recognizing people have different stages in their lives. Once you're done, you can move on.
 
 Related: reinventing [hackathons](posts/hackathons.md) as 3rd spaces
 

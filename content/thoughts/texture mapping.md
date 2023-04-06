@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Hides geometric simplicity by using images convey illusion of geometry. Usually maps points on a 3D surface to a 2D point on a texture to modify some property of the 3D surface (e.g. displacement, colour, reflectance, etc.)
+Hides geometric simplicity by using images convey illusion of geometry. Usually maps points on a 3D surface to a 2D point on a [[thoughts/texture|texture]] to modify some property of the 3D surface (e.g. displacement, colour, reflectance, etc.)
 
 ## Mipmapping
 Similar to [[thoughts/object detection#Gaussian Image Pyramid|Gaussian Image Pyramids]]

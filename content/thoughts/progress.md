@@ -5,8 +5,6 @@ tags:
 - sapling
 ---
 
-From *21 Lesson for the 21st Century* by Yuval Noah Harari:  "Did we domesticate wheat or did wheat domesticate us?" So much of technological progress is conflated as a good thing. Is it necessarily so?
-
 Progress, loosely defined by [Tyler Cowen and Patrick Collison](https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/), is "the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries"
 
 **Progress implies direction. Progress towards what?** Does this require alignment of values? Is progress enabling us to better express our [identities](thoughts/introductions.md)?
@@ -18,7 +16,7 @@ There are no 'thought leaders' in bleeding tech, only in established fields. Eve
 After a subject gets established, how do we continue to make progress through research? [A new DARPA](thoughts/research%20institutions.md) perhaps?
 
 ## History of Progress
-https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/
+[Source](https://www.theatlantic.com/business/archive/2016/11/progress-isnt-natural-mokyr/507740/)
 
 >   Why might people in the past have been hesitant to embrace the idea of progress? The main argument against it was that it implies a disrespect of previous generations.
 
@@ -40,16 +38,18 @@ What enables progress? "Why did Silicon Valley happen in California rather than 
 How can we enable useful progress in the future? 
 
 From a more epistemlogical standpoint, how much of progress just comes down to good:
-1. pedagogy (re: [Mindstorms](thoughts/Mindstorms.md))
+1. [[thoughts/teaching|pedagogy]]
 2. networks (re: [social graphs](thoughts/social%20graphs.md))
 3. chance and circumstance
 
-"Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably." -> [a new DARPA](thoughts/research%20institutions.md) to catalyze progress?
+"Organizations as varied as Y Combinator, MIT’s Radiation Lab, and ARPA have astonishing track records in catalyzing progress far beyond their confines. While research exists on all of these fronts, we’re underinvesting considerably."
+
+What might a [a new DARPA](thoughts/research%20institutions.md) to catalyze progress look like?
 
 Jasmine has a really good [potential curriculum outline](https://jasminew.me/post/progress):
 1. History and causes: How do we make progress?
-	1. History of science and technology: How were useful discoveries made? What was the relationship between [funding](thoughts/funding.md) and knowledge?
-	2. Philosophy of technology / technological progress: How, why, and when do particular technologies emerge?
+	1. History of science and technology: How were useful discoveries made? What was the relationship between [funding](thoughts/funding.md) and knowledge? 
+	2. [[thoughts/philosophy of science|Philosophy of technology ]]/ technological progress: How, why, and when do particular technologies emerge?
 	3. Meta-science / science of science / social [epistemology](thoughts/epistemology.md) of science: How do we educate, train, and incentivize scientists?
 	4. Mechanism design + incentive design: How do we design [incentives](thoughts/incentives.md) to elicit certain behaviours and aggregate specific information?
 	5. Cultural components of change-making: How have humans organized change in the past around ideas and processes?
@@ -60,7 +60,7 @@ Jasmine has a really good [potential curriculum outline](https://jasminew.me/pos
 3. Drawbacks of progress: What are the risks incurred by progress? How do we make differential progress?
 	1. Costs of progress: Can progress be too fast? How do we mitigate risks (esp those that are irreversible and existential)?
 	2. Robust decision-making and better prediction under uncertainty: How can we better predict the impacts of our actions?
-		1. (re: [catch 22](thoughts/catch%2022.md) and the collingridge dilemma)
+		1. (re: [catch 22](thoughts/catch%2022.md) and the [[thoughts/Collingridge dilemma]])
 
 ## What type of Progress?
 

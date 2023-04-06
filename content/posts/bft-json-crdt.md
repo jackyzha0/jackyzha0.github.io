@@ -29,7 +29,7 @@ As a brief warning, the target audience of this blog post are people who have wo
 ## How CRDTs differ from traditional databases
 Before we really dive into CRDT internals, we first need to understand how they are different from databases. When I normally think of shared state, I think of databases. However, the guarantees that databases provide are *really* different than the ones CRDTs provide.
 
-Traditional databases focus on a property called [[thoughts/consistency|linearizability]], which guarantees that all operations behave as if executed on a *single copy of the data*. We call this canonical view the **primary site**. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.
+Traditional databases focus on a property called [[thoughts/linearizability]], which guarantees that all operations behave as if executed on a *single copy of the data*. We call this canonical view the **primary site**. Every read in a linearizable system, no matter what database node you read from, gives you an up to date value.
 
 ![[thoughts/images/linearizability.jpg]]
 
@@ -43,7 +43,7 @@ CRDTs kind of throw all of that out the window and embrace the eventual nature o
 
 In the real world, it takes time for us to learn about things that are happening around us and around the world. It takes time for our mail to send, calls to go through, and light to travel between servers across the world. We can take inspiration from the real world and embrace a design that considers every member in the system as the primary site for the data that it generates.
 
-This means we allow peers to actually have different states as long as they *eventually* converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade linearizability for a property called **strong eventual consistency**:
+This means we allow peers to actually have different states as long as they *eventually* converge to a correct result. By relaxing the constraint on needing a globally consistent result, we remove the need to wait for all of our replicas to agree. In more formal distributed systems language, we trade [[thoughts/linearizability|linearizability]] for a property called **strong eventual consistency**:
 
 - All updates will *eventually* reach every node
 - Every node that has received the same updates will have the same state

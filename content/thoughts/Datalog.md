@@ -5,8 +5,7 @@ tags:
 - seed
 ---
 
-Sources:
-- *What You Always Wanted to Know About Datalog (And Never Dared to Ask)*
+Source: *What You Always Wanted to Know About Datalog (And Never Dared to Ask)*
 
 Datalog is basically a simplified version of general Logic Programming.
 

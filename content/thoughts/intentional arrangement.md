@@ -11,9 +11,9 @@ Source: [The Discipline of Organizing by *Glushko*](https://berkeley.pressbooks.
 
 The intentional arrangements of resources in an [organizing system](thoughts/organizing%20system.md) are the result of design decisions about what is organized, why it is organized, how much it is organized, when it is organized, and how or by whom it is organized.
 
-Can be created by top-down authoritative institutions like libraries, museums, businesses, and governments or bottom-up self-organizing systems composed of aggregated interactions of actors with resource or with each other.
+Can be created by top-down authoritative institutions like [[thoughts/library|libraries]], museums, businesses, and governments or bottom-up self-organizing systems composed of aggregated interactions of actors with resource or with each other.
 
-Examples of emergent organization are [desire paths](thoughts/desire%20paths.md), swarm intelligence in local interactions (e.g. ants, bees, fish, etc.), or crowdsourcing. rel: [emergent behaviour](thoughts/emergent%20behaviour.md)
+Examples of emergent organization are [desire paths](thoughts/desire%20paths.md), swarm intelligence in local interactions (e.g. ants, bees, fish, etc.), or crowdsourcing (see: [emergent behaviour](thoughts/emergent%20behaviour.md))
 
 Similarly, Adam Smith's "invisible hand" is another example where individuals collectively generate an outcome they did not directly intend but that arose from their separate self-interested actions as they respond to price signals in the marketplace. This is the basis of a lot of multi-agent system reasoning and economics.
 
@@ -30,3 +30,4 @@ Putting the resources into a set without any specification of any properties the
 #### Collocation
 Putting resources in the same location without any additional organization. For a small collection, the proximity-to-use organizing principle is the easiest way to satisfy a requirement to minimize the time to find frequently used resources.
 
+Same concept for [[thoughts/latent-factor model]]

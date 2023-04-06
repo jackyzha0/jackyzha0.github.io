@@ -5,7 +5,6 @@ tags:
 - sapling
 ---
 
-
 > The more accessible a good is, the less people want to pay for it. --[Scott Moore](https://scott.mirror.xyz/7nKKV4x17rVkZL9_C0vVL3Vax2rv1H1ciigleEgBAOw)
 
 A government only has interest in [funding](thoughts/funding.md) its own roads, companies like Facebook only have interest in funding their own infrastructure. Very prevalent in [open-source](posts/paid-open-source.md), some of the most used software in the world often goes unpaid and unfunded.
@@ -14,9 +13,8 @@ Commons in the modern economic context is any open-access and unregulated resour
 
 > How we might focus less on speculation and more on participation?
 
-Does this impact [digital commons](thoughts/digital%20commons.md) too? What about for [climate tech](thoughts/climate%20tech.md)?
 
-Would be solved if people acted according [[thoughts/Kant]]'s Categorical Imperative (tldr; only act in a certain way if it is possible and desirable for everyone in the world to act in that way)
+Would be solved if people acted according [[thoughts/Kant]]'s Categorical Imperative
 
 ## Without Tragedy
 Elinor Ostrom defines 7 requirements to govern a commons without tragedy:

@@ -53,8 +53,3 @@ Argument
 10. Since there is no other viable candidate for the cause of this differentiation, the nature of reality is ultimate consciousness that inherently contains the capacity for the expression of all differentiated awarenesses
 
 'Ill-taught' people satisfy themselves with conventional reality call it 'inert', failing to see it is a subset of Śiva. "Only consciousness can present itself as precisely what it’s not while still remaining itself"
-
-### The memory argument against Vijñānavādin Buddhists in Utpaladeva’s Pratyabhijñā Corpus
-1. Utpaladeva does not believe that awareness can become an object of another distinct awareness
-2. Memory involves an awareness-event being the object of another awareness-event
-3. Memory thus is impossible unless they're actually part of the same overall awareness (e.g. Śiva)

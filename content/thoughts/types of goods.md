@@ -3,6 +3,8 @@ title: "Types of goods"
 date: 2023-04-02
 tags:
 - seed
+aliases:
+- goods
 ---
 
 Main types of goods

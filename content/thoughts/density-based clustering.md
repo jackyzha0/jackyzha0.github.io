@@ -22,7 +22,7 @@ Defines
 - MinNeighbours: number of neighbours needed to say a region is “dense”
 	- If you have at least minNeighbours “neighbours”, you are called a “core” point
 
-Psuedocode
+Pseudocode;
 - For each example $x_i$ :
 	- If $x_i$ is already assigned to a cluster, do nothing.
 	- Test whether $x_i$ is a ‘core’ point ($\geq$ minNeighbours examples within $\epsilon$).

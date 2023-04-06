@@ -21,7 +21,7 @@ Does power always need to function top down?
 
 > "The enormity of this restriction is difficult to grasp. It is a little as though the members of a family were not free to make friends outside the family, except when the family as a whole made a friendship."
 
-The structure of a [[thoughts/blockchain|blockchain]] follows this very closely.
+The structure of a [[thoughts/blockchain|blockchain]] follows this very closely. See also: [[thoughts/semilattice]]
 
 ## Rhizomatic
 >  "a rhizome has no beginning or end; it is always in the middle, between things, interbeing, intermezzo." (Deleuze and Guattari in *A Thousand Plateaus*)

@@ -9,11 +9,9 @@ tags:
 
 Pushing for universalization at the data level: just as any website can be viewed on any browser and any internet provider, any data should be accessible by any application under people's control.
 
-Existing large owners of data wont innovate because they have monopoly over data, new innovators cant enter because they lack data
-
 [[thoughts/GDPR|GDPR]] technically does all of this, Solid is just technology that ensure it actually happens.
 
-Solid is essentially a glue between HTTP, [[thoughts/LDP|LDP]], and LDN
+Solid is essentially a glue between [[thoughts/HTTP]], [[thoughts/LDP|LDP]], and LDN
 
 ## Pods
 - Pods are like secure personal web servers for your data. You can think of it like a website with data.

@@ -5,16 +5,12 @@ tags:
 - sapling
 ---
 
-Very utilitarian, approach that the suffering of a few is okay as long as the greater good benefits?
+The suffering of a few is okay as long as the greater good benefits? A [[thoughts/Utilitarianism|utilitarian]] way of doing good.
 
 Related: [The ones who walk away from Omelas](thoughts/The%20ones%20who%20walk%20away%20from%20Omelas.md), [[thoughts/quantization|quantization]]
 
-What about self-care? How does the self fit into the greater whole? Is it [selfish](thoughts/selfish.md) to take care of oneself?
-
 ## What is EA?
-Earning to give. How do we reduce the stigma around wealth?
-
-Work can have huge impacts on the type of change we can make in the world. We spend ~80k hours, makes sense to spend atleast 1% of it thinking about what to dedicate the other 99% to.
+Earning to give. Work can have huge impacts on the type of change we can make in the world. We spend ~80k hours, it makes sense to spend atleast 1% of it thinking about what to dedicate the other 99% to.
 
 How do we time donations to maximize impact? Turns out there's no 'goldilocks zone' in the continuum.
 * When you're young: justify putting it off by saying "oh I'll donate when I have more money"
@@ -36,15 +32,13 @@ Ineffective altruism eschews metrics, because “What does doing good look like?
 
 > Strengthening community is also important for our shared future, even if it isn’t measurable. 
 
-As an ideology of allocating resources, it is recognized as explicitly political, rather than cloaking itself in the discourse of science and rationality.
-
 What is the best we can do as a collective and community rather than at the individual level?
 
-I'm curious if there *has* been attempts to [[thoughts/quantization|quantize]] efforts of mutual aid and solidarity? If so how what does that computation come out to. Thinking about it, don't most quantizations of these things have huge error bars? How do EA folks choose between prioritizing something that is almost certainly good vs something that could have a very small change of huge upside? Seems to me they are basing it off of expected value of the distribution which.... isn't reasonable in most cases I feel (especially in cases when the long tail for these distributions can explode as $t \rightarrow \infty$)
+I'm curious if there *has* been attempts to [[thoughts/quantization|quantize]] efforts of [[thoughts/Mutual Aid|mutual aid]] and solidarity? If so how what does that computation come out to? Thinking about it, don't most quantizations have huge error bars? How do EA folks choose between prioritizing something that is almost certainly good vs something that could have a very small change of huge upside? Seems to me they are basing it off of expected value of the distribution which.... isn't reasonable in most cases I feel (especially in cases when the long tail for these distributions can explode as $t \rightarrow \infty$) (see: [[thoughts/probability#Interpreting small probabilities|interpreting small probabilities]])
 
 Potentials include capping tail end of distribution?
 
-> Seventh-generation decision making, for example, is an indigenous principle that is enshrined in the Constitution of the Iroquois Nation. It mandates Iroquois leaders to consider the effects of their actions over seven generations, encompassing hundreds of years. Seven generations is a long time, but it is also a finite amount of time. (a form of [[thoughts/traditional knowledge|traditional knowledge]])
+> Seventh-generation decision making, for example, is an indigenous principle that is enshrined in the Constitution of the Iroquois Nation. It mandates Iroquois leaders to consider the effects of their actions over seven generations, encompassing hundreds of years. Seven generations is a long time, but it is also a finite amount of time. (see: [[thoughts/traditional knowledge|traditional knowledge]])
 
 Karl Popper had a really good way of putting this, which now sides him very solidly on the side which would choose to save the child in [[thoughts/The ones who walk away from Omelas|The Ones Who Walk Away From Omelas]]
 

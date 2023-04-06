@@ -22,27 +22,15 @@ Time is hard! So many different ways of measuring time
 - Unix Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds
 - ISO8601: year, month, day, hour, minute, second, and timezone offset relative to UTC
 
-Periodically adjust local clock with a server with a more accurate time source using Network Time Protocol (NTP) or Precision Time Protocol (PTP)
-
-How do we estimate time over a network?
-- NTP Client sends out a request at $t_1$
-- NTP Server receives request at $t_2$
-- NTP Server sends a response at $t_3$
-- NTP Client receives a request at $t_4$
-- Round-trip network delay = $\delta = (t_4-t_1) - (t_3-t_2)$
-- **Estimated** single-trip network delay = $\delta / 2$
-- Estimated server time when client receives response, so clock skew is $\theta = (t_3 + \delta / 2) - t_4$
-- If $\theta < 125ms$, slew the clock: speed it up/slow it down by 500ppm until clocks are in sync
-- If $125ms \leq \theta < 1000s$, step the clock: suddenly reset client clock to estimated server timestamp
-- If $\theta \geq 1000s$, panic and do nothing (leave it to the humans!)
+We periodically adjust our local clocks with a server that has a more accurate time source using [[thoughts/Network Time Protocol|Network Time Protocol]] (NTP) or Precision Time Protocol (PTP)
 
 ## Logical Time
-The known problem with this mechanism is that it can drift away from the actual time of the day, based on how fast or slow the crystals oscillate. To fix this, computers typically have a service like NTP which synchronizes computer clocks with well known time sources on the internet. Because of this, two consecutive readings of the system time on a given server can have time going backwards. As there is no upper bound on clock drift across servers, it is impossible to trust timestamps on two different servers as a way to infer causality!
+Computers typically have a service like NTP which synchronizes computer clocks with well known time sources on the internet. Because of this, two consecutive readings of the system time on a given server can have time going backwards. As there is no upper bound on clock drift across servers, it is impossible to trust timestamps on two different servers as a way to infer causality!
 
 We use logical clocks to work based off of the number of events that have occurred rather than actual time passed.
 
 ### Lamport Clocks
-Provides a **partial order** on events
+Provides a **[[thoughts/Order theory|partial order]]** on events
 
 Logic
 - On initialization, set `t := 0` for each node

@@ -5,9 +5,9 @@ tags:
 - sapling
 ---
 
-1. getting back into reading
-2. Books, with some effort, can help you learn to walk, but only people can help you orient where to walk. In other (equally vague yet obvious) words, I can’t know (through books), if I don’t know what to know (through people). (quote from eva)
-3. organizing thoughts
+> Books, with some effort, can help you learn to walk, but only people can help you orient where to walk. In other (equally vague yet obvious) words, I can’t know (through books), if I don’t know what to know (through people)
+
+See also: [[thoughts/taste]]
 
 I used to think that to be a productive member of society, one just had to put their head down and try to churn out as much output as possible. I very much subscribed to the belief that if I just kept constantly producing new things, I would eventually learn from my mistakes and improve rapidly. I found that while, yes, this approach allowed me to build my technical skills really quickly, I applied it to everything — even things that didn't need it. I held a metaphorical hammer in my hands and everything seemed like a nail.
 

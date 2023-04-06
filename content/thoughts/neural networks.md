@@ -61,79 +61,28 @@ If these are numerically set to 0 because of how small they are, [[thoughts/grad
 This is partially solved by replacing the sigmoid activation with the ReLU activation. Alternatively, can also use skip connections that 'shortcuts' between layers
 
 ### Philosophy of Deep Learning
--  No universally accepted explanation as to why they work so well, just really a form of [classification](thoughts/object%20classification.md)
--  The "Golden age network" had 3 main properties
-	1.  shallow → no more than three or four layers between input and output
-	2.  uniform → only one type of node deploying a sigmoidal activation
-	3.  fully connected → each node from a lower layer connected to each other in the next layer
--   Depth, hierarchy of parts intuition
-    -   Analogy of assembly line mass production of automobiles
-        -   One person is skeptical of the significance of assembly lines → "any thing that can be made by the assembly line could, in theory, be made by a team of skilled machinists"
-        -   Other person believes that the assembly line is more efficient, specialized, and reusable
-            -   Each unit can grow increasingly specialized and better at a small range of simpler tasks reliably and efficiently
-            -   Standardization of units across automobiles
-    -   sum-product network example
-        -   simple device for computing polynomial functions
-        -   shallow networks → must compute the expanded expressions of that function (skilled but inefficient machinists)
-        -   deep networks → can compute the factorized expression of the polynomial function
-            -   show that they can compose simple operations
--   heterogeneity
-    -   different types of operations composed together
-    -   dccns → conv layer followed by relu followed by max pooling
-        -   good at detecting features in a variety of different locations/poses
-    -   combining all three operations means we can product a simplified, transformed representation of the source image
-        -   can get more complex/abstract as you move deeper through the layers
--   sparse connectivity
-    -   heuristic → only local pixels matter
-    -   dramatically reduces number of learned parameters
--   [[thoughts/regularization]]
-    -   input preturbations
-        -   rotations/scaling/transformations
-        -   noise
-    -   dropout
-    -   L1 regularization → favours simpler/sparser solutions by causing weights to fall to 0 if a large gradient is not maintained
+Most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so (more of a question of [intelligence](/thoughts/intelligence))
 
-#### So why are they so effective?
--   hierarchical feature composition
--   vector space separation
-	-   input can be realized as a feature space
-	-   output can be realized as manifolds or regions in the feature space
-	-   training is just then learning the manifolds/regions that create desired categories
--   most commentators agree that current deep learning methods fall short of implementing general intelligence, and it remains an open question as to whether some modification of current deep learning methods will be able to do so -> question of [intelligence](/thoughts/intelligence)
--   self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
-    -   counterargument is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)
-
-#### Cognition and [Intelligence](/thoughts/intelligence)
-[Potemkin village](thoughts/potemkin%20village.md) analogy for approximating intelligence.
+Self-learning algorithms like AlphaZero (which learns from self-play) seem to disprove/vindicate the empiricist approach (need real world experience to learn)
+. The counterargument here is that systems like AlphaGo have built in knowledge about the rules of Go and mechanisms to explore possible outcomes one at a time (e.g. Monte Carlo Tree Search for the solution space)
 
 #### Brain-like networks
--   biological similarities
-	-   CNNs have high sensitivity to spots, edges, and bars in specific orientations
-	-   echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex
--   can record a single neuron but very difficult to record patterns
--   functional vector → vector that corresponds to one of the output classes
--   speech example, network managed to recover phonetic hierarchical information
--   both systems have created a system of internal representations that corresponds to important distinctions and structures in the outside world
--   theories → representations that allow networks to "make sense" of their corpus and respond in a fashion that reduces error
--   how do we explain 'conceptual change'?
-	-   knowing a creature's vector-space partitions may suffice for short-term prediction of behaviour but inadequate to predict or explain the evolution of those partitions over the course of time
-	-   just knowing output space partitions is not enough, but connection weights seems to provide a level that meets all of these conditions
--   neural networks have decently high [[thoughts/fault tolerance|fault tolerance]] (some redundant neurons)
-	-   may help to explain functional persistence of brains in the face of minor damage
-	-   in a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade
+-  Biological similarities
+	-   [[thoughts/convolutional neural networks|CNNs]] have high sensitivity to spots, edges, and bars in specific orientations
+	-  This echoes the work of hubel and wiesle (1962) which found similar patterns in the feline visual cortex
+-  Both systems have created a system of internal [[thoughts/representation|representations]] that corresponds to important distinctions and structures in the outside world
+-  Neural networks have decently high [[thoughts/fault tolerance|fault tolerance]] (some redundant neurons)
+	-   May help to explain functional persistence of brains in the face of minor damage. In a large network, a loss of a few neurons will not make a huge impact, but the quality of its computations will progressively degrade (this is why network distillation still works)
 
 #### Differences
--   real neural networks arent fully connected like ANNs
--   real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs
--   real brains don't use backprop via generalized delta rule
-	-   back prop requires
+-   Real neural networks aren't fully connected like ANNs
+-   Real neural networks have horizontal cell-to-cell connections within a given layer which are not present in ANNs
+-   Real brains don't use backprop via generalized delta rule
+	-   Back prop requires
 		1.  computing partial derivates to minimize error
 		2.  propagating deltas through the network back to relevant connections
-	-   little empirical evidence for this in biological brains
--   real brains show a progressive reduct in reaction time as one learns
-	-   not seen in ANNs where error decreases but prediction time remains constant
--   ANNs require a 'global truth' or teacher
-	-   these 'perfect' signals are not present in the real world
--   Hebbian learning
-	-   those who 'vote with winners, become winners'
-	-   can be used to produce learning in ANNs but not nearly as effective as backprop
+	-   There is little empirical evidence for this in biological brains
+-   Real brains show a progressive reduction in reaction time as one learns
+	-   Not seen in ANNs where error decreases but prediction time remains constant
+-   [[thoughts/supervised learning|Supervised]] require a 'global truth' or teacher. These 'perfect' signals are not present in the real world
+	- So far, [[thoughts/unsupervised learning]] has been vastly inferior to supervised approaches

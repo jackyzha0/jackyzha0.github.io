@@ -4,12 +4,9 @@ date: 2022-09-23
 tags:
 - seed
 - PHIL321A
-aliases:
-- PP
 ---
 
-- Ordinary scenarios: maximize expected [[thoughts/utility|utility]] (EU Max)
-- Precautionary scenarios: avoid catastrophic harm (Precautionary Principle)
+In ordinary scenarios, we maximize expected [[thoughts/utility|utility]] (EU Max). However in precautionary scenarios, we want to avoid catastrophic harm (Precautionary Principle)
 
 ## Tripod Framework
 Manson's Framework for when to use the precautionary principle

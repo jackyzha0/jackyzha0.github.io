@@ -3,7 +3,11 @@ title: "NLP"
 date: 2022-04-11
 tags:
 - seed
+aliases
+- natural language processing
 ---
+
+See also: [[thoughts/LLMs]]
 
 ## Chain of Thought Prompting
 [ArXiv Link](https://arxiv.org/pdf/2201.11903.pdf)
@@ -15,3 +19,5 @@ tags:
 	- Notably, chain of thought prompting only does better than standard prompting only at the scale of ~100B params
 - Really cool side-effect is more [[thoughts/explainability|explainable]] decision making processes
 	- Fully characterizing a model's computations that support an answer remains an open question
+
+See: [[thoughts/OODA]]

@@ -78,7 +78,7 @@ Even more interestingly, a study done at Dartmouth[^2] showed that random volunt
 This is interesting. This means that either COMPAS is accurate or holds the exact same biases as we do as a society. Unfortunately, this is a problem that I don’t think we can solve, so we don’t have a solid definition as to what makes an algorithm [[thoughts/fairness|fair]]. But what is clear, is that there is bias in play here, whether that be through the police, the companies, the actual algorithm, or society itself. This bias is what causes that “subjectivity” and “garbage in.” This is what is preventing us from making ‘fairer’ AI and applying AI to more tasks.
 
 ### The inevitability of bias
-The point is, unless we work to prevent, catch, and deter bias, it will inevitably occur. One of the biggest problems in the field of AI is that so many of the models exist in a black box, meaning that its inner workings are only known by a select few. This makes it near impossible to identify and train out bias. Machine intelligence will become almost integral to our lives, becoming less visible in the process, and AI’s bias bug will get harder to beat. Our time to act is now.
+The point is, unless we work to prevent, catch, and deter bias, it will inevitably occur. One of the biggest problems in the field of AI is that so many of the models exist in a [[thoughts/black box|black box]], meaning that its inner workings are only known by a select few. This makes it near impossible to identify and train out bias. Machine intelligence will become almost integral to our lives, becoming less visible in the process, and AI’s bias bug will get harder to beat. Our time to act is now.
 
 ## What we can do
 > So? What can we, as the next generation, do to help?

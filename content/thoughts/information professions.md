@@ -13,16 +13,14 @@ Bates proposes *meta-disciplines* which study the entire spectrum and how they f
 
 Examples of these include information disciplines, communication/journalism, and education.
 
-The fundamental engine of development of this field of information professions is need. 
+The fundamental engine of development of this field of information professions is need (see: [[thoughts/information scaling threshold]]). 
 
 > Human beings want to retain informational resources, and, after a very short time, these resources collect at such a rate that some principles of selection, organization, etc., need to be brought to bear, in order for the resources to continue to be available for effective use.
 
 3 information flow lineages through the history of life on Earth
 1. Genetic, information about the history of life on Earth is literally encoded in your DNA
-2. Neural-cultural, information is passed down between generations through [[thoughts/language|language]], storytelling, and sharing
-3. Exosomatic, information is embedded into the world around us through [[thoughts/writing|writing]], digital systems, [desire paths](thoughts/desire%20paths.md), etc.
+2. Neural-cultural, information is passed down between generations through [[thoughts/language|language]], storytelling, and sharing (see: [[thoughts/generational learning|intergenerational learning]])
+3. Exosomatic, information is embedded into the world around us through [[thoughts/writing|writing]], digital systems, [desire paths](thoughts/desire%20paths.md), etc. (see: [[thoughts/Extended Mind Hypothesis]])
 4. Residue, trace/abandoned information degrading back into nature
 
 > The storage and management of exosomatic information was one of the major contributors to the exponential growth of human knowledge and power over nature.
-
-Related, [information transfer between and within generations](thoughts/A%20City%20is%20not%20a%20Computer.md)

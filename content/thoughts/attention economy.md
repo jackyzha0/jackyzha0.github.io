@@ -5,13 +5,10 @@ tags:
 - sapling
 ---
 
-Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of goods and services. “Ours is not truly an information economy,”
+Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services. “Ours is not truly an information economy,”
 
 ## As a commodity
-[[thoughts/attention|Attention]] as a commodity, it is increasingly competitive to compete for everyone's attention
-* shortening of attention spans? not sure if this is an actual thing
-* 'digital detox'
-people not just as the products, but as the producers of the product (data)
+[[thoughts/attention|Attention]] as a commodity, it is increasingly competitive to compete for everyone's attention. People are not just the products but also the producers of the product (data).
 
 Attention is the main currency of production -- what limits you from doing everything at once. Attention, then, is a common pool resource. It is non-excludable (anyone can bid for their attention) and rivalrous (limited attention).
 

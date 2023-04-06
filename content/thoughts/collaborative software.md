@@ -6,13 +6,14 @@ tags:
 ---
 
 Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available
+
 Challenge: how do we reconcile concurrent updates?
 
 Two main families of algorithms
 - Conflict-free Replicated Data Types ([[thoughts/CRDT|CRDTs]]) -- persists the causal order of operations
 - Operational Transformation -- persists the final output of operations
 
-## A spectrum
+## A spectrum of collaboration
 [Source](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous)
 
 -   full async - no collaboration ever - has to be completely disconnected

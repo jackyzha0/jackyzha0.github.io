@@ -38,7 +38,7 @@ $$
 
 If $A$ is symmetric, $\nabla f(x) = Ax+b$. In the non-symmetric case, $\nabla f(x) = \frac 1 2 (A + A^T)x + b$
 
-Generalizations of gradients for $d$ dimensions given:
+Generalizations of gradients for $d$ dimensions given (expressed as matrices and vectors):
 1. $A = X^TX$ 
 2. $b$ = $X^Ty$
 3. $c = \frac 1 2 y^Ty$

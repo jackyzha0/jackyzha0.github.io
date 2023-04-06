@@ -21,5 +21,5 @@ Core ideas
 	- XOR distance between $x$ and some arbitrary $y$ will *always* be unique
 - Each node only needs information about its neighbours.
 	- If the structure of the network is correctly chosen, then global properties apply to the whole network
-	- Nested routing similar to [[thoughts/IP Addresses|IP]] routing
+	- Nested routing similar to [[thoughts/IP Address|IP]] routing
 	- Each machine has a lot of info about machines closest to it, less about machines far away from it

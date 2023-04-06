@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+See also: [[thoughts/object classification]]
+
 ## Template Matching
 Linear filtering is also known as template matching. Convolution/correlation can be thought of as comparing a template (the kernel) with each section of the image.
 - Consider the filter and image section as vectors
@@ -130,7 +132,7 @@ Example features include
 - Orientation Energy
 - Brightness Gradient
 - Color Gradient
-- Texture gradient
+- [[thoughts/texture|Texture]] gradient
 
 For this implementation, we consider 8 discrete orientations ($\theta$) and 3 scales ($r$)
 

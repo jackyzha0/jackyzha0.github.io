@@ -5,6 +5,10 @@ tags:
 - seed
 ---
 
+Everything that can apply to B+ Trees and database indexes, can now apply to Prolly Trees with the added ability of it being [[thoughts/peer-to-peer]], sparsely loaded, and mergeable.
+
+This enables multi-tenant peer-to-peer [[thoughts/search]]. With p2p databases we can begin to build up search indexes collaboratively with community members, where individuals or smaller groups can participate in generating indexed data, and larger indexes being formed from combining the smaller ones.
+
 ## Why not just B-Trees?
 Data structures with hysteresis have path dependency, in the case of B-trees the actual tree structure depends on the order of inserts and removes.
 

@@ -5,48 +5,30 @@ tags:
 - seed
 ---
 
-## Dennett's 1981 "where am I" story
--   Secret experiment, Dennett's brain is remove, kept alive in a tank of nutrients, and equipped with a multitude of radio links by means of which it executes all of its normal bodily control functions (very related to [Brains in a Vat](thoughts/Brains%20in%20a%20Vat.md) example)
--   Dennet's body is then equipped with receivers and transmitters so that it can use its built-in sensors (eyes, ears, etc.) to relay info back to Dennet's brain
--   stretching of the nerves
--   “here I am, suspended in a bubbly fluid, being stared at by my own eyes …” — still can't manage to convince himself to place himself in the tank
--   dennetts body is then trapped under a rockslide, as radio links slowly give away, a shift in point-of-view occurs
-	-   Is Dennett really in the tank of nutrient, really trapped beneath the soil, or really no-place at all (or both places at once)?
--   point of view is a construct grounded in the brain's experiences of control, communication, and feedback
-    -   this leaves it open to rapid and radical reconfiguration
+See also: [[thoughts/telepresence]]
 
-## Telepresence
-- literally remote presence
--   telephone line → thin, narrow [bandwidth](thoughts/bandwidth.md) of aural telepresence
--   far end, dennets experiment → leave brain and body joined and intact, but wrap the body in a kind of additional sensory cocoon
--   if this is achievable, would seemingly require a high-[bandwidth](thoughts/bandwidth.md) multi-sensory bath of information with local sensory stimulation
--   "But as soon as a distant camera responds to your controls, and especially if the mode of control is either ‘natural’ (the helmet rig) or highly practiced (a video-gamer with a joystick), you begin to feel relocated, as if you are in the distant scene"
--   human vision involves a complex process of intelligent search and just-in-time information retrieval
--   upside-down world example
-    -   people can readapt to upside-down world after a period of sustained use
-    -   however, if it is passive (wheeled around in a wheelchair), the adaption does not occur
--   the notion that our perceptual experience is determined by the passive receipt of information is misleading
-    -   the whole point of seeing and perceiving our world is so that we can intervene and act upon it
+## Dennett's 1981 "where am I" story
+Secret experiment, Dennett's brain is removed, kept alive in a tank of nutrients, and equipped with a multitude of radio links by means of which it executes all of its normal bodily control functions (very related to [Brains in a Vat](thoughts/Brains%20in%20a%20Vat.md) example)
+
+Dennett's body is then equipped with receivers and transmitters so that it can use its built-in sensors (eyes, ears, etc.) to relay info back to Dennett's brain. This is effectively a stretching of the nerves.
+
+> “here I am, suspended in a bubbly fluid, being stared at by my own eyes …” — still can't manage to convince himself to place himself in the tank
+
+Dennett's body is then trapped under a rockslide and as the radio links slowly give away, a shift in point-of-view occurs.
+
+Is Dennett really in the tank of nutrient, really trapped beneath the soil, or really no-place at all (or both places at once)?
+
+Point of view is a construct grounded in the brain's experiences of control, communication, and feedback. This leaves it open to rapid and radical reconfiguration
 
 ## Telerobotics
-- communication on a higher level of abstraction in which the human communicates goals and the robot comes up with the plan to achieve it
--   diagnosis that telerobotics are unlikely to generate any real shift in perspective
-    -   example of going to a shop
-        -   never think of each individual muscle movement or thought
-        -   more of a general "i need a soda, i'm gonna go to the store"
-        -   most of what ‘I’ did, ‘I’ seemed to have very little to do with
-        -   The vast bulk of neural activity leading both to, and away from, this tip of the metaphorical 'I'berg is unconscious.
-    -   example of picking up tichener circles (circle size illusion but with poker chips)
-        -   it is the conscious (illusory) perception of one circle as larger than the other that causes the autopilot-like subsystem to reach for a specific disc
-        -   Our conscious high-level decisions thus serve as the impetus for the other systems to do their stuff, while still devolving substantial sub-problems to other internal agencies.
-        -   this is what T. Sheridan (1992) originally dubbed “Supervisory Control”: a type of control in which only goals and high level commands are communicated to the slave robot.
-        -   how is this different from telerobotics?
-    -   in principle, telerobotics systems need not feel more alien than teleoperated systems to the conscious users, however this is not the case in practice. closely coupled teleoperated systems seem to much better induce the feeling of actual telepresense more effectively
-        -   what seems to be important is the presense of some kind of local, circular [feedback loop](thoughts/feedback%20loops.md) in which neural commands, motor actions, and sensory feedback are closely and continuously correlated
-            -   temporal disruptions (like lag) may break this 'illusion'
-    -   the brain uses a special piece of neural circuitry known as a motor emulator
-        -   This is a little circuit that takes a copy of the motor signal to the hand (say) and feeds it into a neural system which has learned about the typical responses from the bodily peripheries which are likely to ensue. The emulator is thus like a little local scale model of the real circuit. It rapidly outputs a prediction of the signals that should soon be arriving from the bodily peripheries, and these are then used instead of the real thing. This emulator-based feedback is then used for ongoing error-connection and smoothing
-    -   explaining why the apparent telerobotics that we as humans actually perform seem to not suffer from the sensation that our body, while performing the action sequences, we are somehow less than fully in control of ourselves
-        -   one possible explanation is that own detailed bodily motions retain a sense of unfolding and possible intervention
-            -   unfolding → rich array of sensory feedback as the action is ongoing
-            -   potential intervention → i can just consciously stop
+Communication on a higher level of abstraction in which the human communicates goals and the robot comes up with the plan to achieve it
+
+Example of going to a shop:
+-  We never think of each individual muscle movement or thought
+-  It's more of a general "I need a soda, I'm gonna go to the store"
+-  Most of what ‘I’ did, ‘I’ seemed to have very little to do with the vast bulk of neural activity leading both to, and away from, this tip of the metaphorical 'I'berg is unconscious.
+
+Our conscious high-level decisions thus serve as the impetus for the other systems to do their stuff, while still devolving substantial sub-problems to other internal agencies.
+
+This is what T. Sheridan (1992) originally dubbed “Supervisory Control”: a type of control in which only goals and high level commands are communicated to the slave robot.
+

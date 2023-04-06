@@ -5,6 +5,6 @@ tags:
 - seed
 ---
 
-Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]
+All non-Byzantine nodes need to agree on a single common value. There is no distinguished sender.  
 
-Every node has a private input, there is no distinguished sender.  All non-Byzantine nodes need to agree on a single common value.
+Differs from [[thoughts/Byzantine Broadcast|Byzantine Broadcast]]

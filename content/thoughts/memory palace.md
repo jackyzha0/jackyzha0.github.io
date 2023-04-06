@@ -13,11 +13,7 @@ Can we create associations between digital/physical space and concept space? Cre
 ## Better ways to browse/discover ideas and concepts
 [More from Bret Victor and DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf)
 
-Related to better [interaction design](thoughts/interaction%20design.md). How do we better browse [information at different scales](thoughts/information%20scales.md)
-
-Material is dynamic and multi-medium
-
-Conceptual connections between pieces of knowledge and branches can be visually seen and explored
+Related to better [interaction design](thoughts/interaction%20design.md). How do we better browse [information at different scales](thoughts/information%20scales.md). One where conceptual connections between pieces of knowledge and branches can be visually seen and explored
 
 Can we bring together representations *across fields* so ideas can cross-pollinate?
 

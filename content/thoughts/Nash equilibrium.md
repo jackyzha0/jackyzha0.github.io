@@ -6,4 +6,4 @@ tags:
 - PHIL321A
 ---
 
-If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual rationality (see [[thoughts/Pareto optimality]] for group rationality)
+If no player can do better by unilaterally changing strategy, given the other players’ strategies. This is a criterion of individual [[thoughts/rationality]] (see [[thoughts/Pareto optimality]] for group rationality)

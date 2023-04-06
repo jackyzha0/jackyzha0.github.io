@@ -5,22 +5,19 @@ tags:
 - seed
 ---
 
-> constructed by the child using inborn mental equipment but operating on information provided by the environment
+> "As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."
 
-## [Mindstorms](thoughts/Mindstorms.md)
-"As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."
-
-"I never met anyone who was, at once, so playful and so serious about ideas."
+## Mindstorms
+From the [[thoughts/Mindstorms|book]]
 
 Piaget has demonstrated that children learn fundamental mathematical ideas by first building their own, very much different (for example, preconservationist) mathematics. And children [[thoughts/language development|learn language]] by first learning their own ("baby-talk") dialects. So, when we think of microworlds as incubators for powerful ideas, we are trying to draw upon this effective strategy: We allow learners to learn the "official" physics by allowing them the freedom to invent many that will work in as many invented worlds.
 
-Why there is no good answer to "how do I learn CS" 
-"I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching... But 'teaching without curriculum' does not mean spontaneous, free-form classrooms or simply 'leaving the child alone.' It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture"
+Why there is no good answer to "how do I learn CS": "I see Piaget as the theorist of learning without curriculum and the theorist of the kind of learning that happens without deliberate teaching... But 'teaching without curriculum' does not mean spontaneous, free-form classrooms or simply 'leaving the child alone.' It means supporting children as they build their own intellectual structures with materials drawn from the surrounding culture"
 
 > "They'll handle the details. Indeed, they insist on it. For a project to feel like your own, you must have sufficient autonomy. You can't be working to order, or slowed down by bureaucracy." -- [Paul Graham](http://paulgraham.com/own.html)
 
-## [Design Justice](thoughts/Design%20Justice.md)
-Pedagogical approach that centers [context](thoughts/context.md), situated knowledge, and learning by doing.
+## Design Justice
+From the [book](thoughts/Design%20Justice.md)
 
 Papert rejected the banking method of education: educator transmits a piece of information to the learner's brain
 

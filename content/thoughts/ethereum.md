@@ -5,11 +5,11 @@ tags:
 - seed
 ---
 
-[Blockchain](thoughts/blockchain.md) with a built-in Turing-complete programming language to allow individuals to write smart contracts and decentralized applications (dApps) which dictate their own rules around ownership, trasnaction formats, and state transition functions.
+[Blockchain](thoughts/blockchain.md) with a built-in Turing-complete programming language to allow individuals to write smart contracts and decentralized applications (dApps) which dictate their own rules around ownership, transaction formats, and state transition functions.
 
 Ether (ETH) is the actual currency. All transactions (sending ETH, using a dApp, executing a smart contract) cost a gas fee to disincentivize bad actors from spamming.
 
-Currently uses [proof of work](thoughts/proof%20of%20work.md) but soon to switch to [proof of stake](thoughts/proof%20of%20stake.md).
+Used to use [proof of work](thoughts/proof%20of%20work.md) but switched to [proof of stake](thoughts/proof%20of%20stake.md).
 
 ## Understanding
 - Has a built-in Turing-complete scripting language built on top of the Ethereum VM that perform transactions and send them to the [blockchain](thoughts/blockchain.md)

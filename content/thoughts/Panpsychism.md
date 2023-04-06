@@ -14,7 +14,7 @@ In other words, everything is slightly conscious.
 
 See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 
-## Eddington, Russell, Strawson's argument for panpsychism[^1]
+## Eddington, Russell, Strawson's argument for panpsychism
 1. Physical science tells us about only the structural and relational properties of physical phenomena.
 2. Relational properties are determined by intrinsic properties
 	1. Potentially problematic
@@ -28,7 +28,7 @@ See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 6. Phenomenality is the only intrinsic property we know of
 7. So phenomenality must be an intrinsic property of physical phenomena, or at least of certain organized physical systems
 
-## Strawson's Panpsychism[^1]
+## Strawson's Panpsychism
 [Physicalism](thoughts/Materialism.md) actually entails panpsychism
 
 1. [[thoughts/monism|Monism]] is true (there is only one kind of 'stuff' in the universe)
@@ -39,5 +39,3 @@ See [[thoughts/emergent behaviour#Combination Problem|the Combination Problem]]
 6. So, at least some elementary physical phenomenal must also be experiential (micropsychism)
 7. If at least some elementary physical phenomena must also be experiential, it's far more likely that all of them are (otherwise there would be radical heterogeneity edging on dualism and we are assuming that monism is true)
 8. Therefore, panpsychism is true
-
-[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

@@ -27,7 +27,7 @@ However, this 'theory' no longer matches up with empirical observation. In fact,
 
 Infrastructure is recursively defined by public consensus. It's the set of structures that we've collectively decided are most valuable *in any given moment,* and, therefore, its boundaries and definitions are expected to change over time.
 
-Like a bridge that needs to support more traffic that it was built for, every social platform is scramlbing to upgrade its infrastructure to accommodate the volume of social interactions we're dealing with today. Platforms need to build skyscrapers where there were once villages.
+Like a bridge that needs to support more traffic that it was built for, every social platform is scrambling to upgrade its infrastructure to accommodate the volume of social interactions we're dealing with today. Platforms need to build skyscrapers where there were once villages.
 
 ### Identity
 Like joining a club, it's not about how many times you've attending meetings but how you self-identify, and how others identify you, that makes you a 'member'. Some attendees might come every week for years and still not be considered part of the group.
@@ -39,22 +39,12 @@ Code, like any other type of content available online today, is **trending towar
 
 Today, "content" is better understood not as a thing we set out to make -- as an automaker might exist solely to produce cars -- but as "an externality from [our] existing social systems." Content is a snapshot of our civilization.
 
-### Platforms and Governance
+### Platforms and [[thoughts/governance]]
 A "Benevolent Dictator for Life" or BDFL for short, describes authors of open source projects who retain control even as the project grows. A great example of this is Linus Torvalds, who even after 14,000 unique contributors to the Linux kernel, still is the only person allowed to merge contributions into the main branch.
 
 "Like a talent agency, platforms add value to creators by first improving their *distribution*, exposing them to potentially millions of people. ... This [feedback loop](thoughts/feedback%20loops.md) is [positive sum](thoughts/positive%20sum.md), encouraging more creators to join. So long as more people keep using the platform, there's no sense that any one creator will ever suck up all the oxygen in the room."
 
 ###  Commons-based Peer Production
-The economist Elinor Ostrom identified 8 design principles that contribute to a well-managed, succesful commons:
-1. Membership boundaries are clearly defined
-2. The rules that govern the commons should match the actual conditions
-3. Those who are affected by these rules can participate in modifying them
-4. Those who monitor the rules are either community members or are accountable to the community, rather than outsiders
-5. Those who violate the rules are subject to *graduated sanctions*, which vary depending on the seriousness and context of the offense
-6. Conflicts should be resolved within the community, using low-cost methods
-7. External authorities recognize the right of community members to devise their own institutions
-8. If the commons is part of a larger system, its governing rules are organized into multiple 'nested' layers of authority
-
 "At a company, only employees can do the work, limited by their job function. But in a commons, anyone can stumble upon an advertised task and volunteer themselves. By removing 'property and contract', the commons will theoretically select for the best person for the job at a lower cost."
 
 See also: [[thoughts/types of goods]]
@@ -79,13 +69,13 @@ There are two types of funders that care enough to spend money on open source:
 2. Individuals: usually developers who are direct users. Politicians who fund their campaigns from grassroots donations are generally viewed more favorably by the public than are those who are funded by corporate donations. I'm not sure that open source is so different.
 
 ### Projects and Production Models
-Similar to governance models in [governance](thoughts/governance.md)
+Similar to [[thoughts/governance]] models
 
 "While some open source developers write code in public from the very beginning, many prefer to do their initial creative work in private, so they can properly articulate their ideas before opening the project up for feedback. Even if developers do publish their code early on, they may not advertise it widely until they have something ready for release."
 
 Based off of arelationship between contributors and users, we can think of projects in terms of their contributor growth and user growth.
 
-||High user growth|Low User Growth|
+| |High user growth|Low User Growth|
 |---|---|---|
 |High contributor growth| Federations (e.g. Rust) | Clubs (e.g. Astropy) |
 |Low contributor growth| Stadiums (e.g. Babel) | Toys (e.g. ssh-chat) |
@@ -94,5 +84,3 @@ Based off of arelationship between contributors and users, we can think of proje
 - Clubs: roughly overlapping group of contributors and users. May not have huge reach, but loved and built by a group of enthusiasts.
 - Stadiums: powered by a few main contributors, generally widely-depended upon packages. Centralized structure.
 - Toys: effectively personal projects
-
-Jonathan Zdziarski (aka @NerveGas) on user demands: "There is definitely a place for users and. their demands, however that's not inside the community (unless they're also contributing devs); the community, as in practicing any art form, is vulnerable; you wouldn't sit and criticize a painter while they're still painting their piece. The user base needs to be moved outside of the artistic realm and into the museum, where you software is on display."

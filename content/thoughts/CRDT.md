@@ -2,7 +2,7 @@
 title: "Conflict-free Replicated Data Type (CRDT)"
 date: 2022-05-05
 tags:
-- seed
+- sapling
 aliases:
 - conflict-free replicated data type
 - CvRDT
@@ -64,9 +64,6 @@ Delta-based CRDTs propagate delta-mutators that encode the changes that have bee
 
 For efficiency, CRDT implementations can 'hold on' to outbound events and compact/compress the log by rewriting operations (e.g. turning two `add(1)` operations into a single `add(2)` operation)
 
-[tk: Big delta state CRDTs]
-[tk: Join-decompositions]
-
 ## Strategies for Designing CRDTs
 A CRDT can be specified by relying on:
 1. the full history of updates executed;
@@ -75,13 +72,8 @@ A CRDT can be specified by relying on:
 
 A query can be specified as a function that uses this information and the value of parameters to compute the result (i.e. goes from the state to a value).
 
-### Conflict Resolution
-- Add-wins
-- Remove-wins
-- Last-writer-wins
-
 ### Secure CRDTs
-- tk: what does encryption in CRDTs look like? homomorphic encryption for merge operations for example
+- What does encryption in CRDTs look like? homomorphic encryption for merge operations for example
 - https://martin.kleppmann.com/papers/snapdoc-pets19.pdf
 - http://www.complang.tuwien.ac.at/kps2015/proceedings/KPS_2015_submission_25.pdf
 

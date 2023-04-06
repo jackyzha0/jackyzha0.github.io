@@ -8,7 +8,8 @@ aliases:
 - EDA
 ---
 
-How do you "look" at features and high-dimensional examples?
+How do we "look" at features and high-dimensional examples?
+
 1. Summary statistics
 	- Categorical Features
 		- Frequencies

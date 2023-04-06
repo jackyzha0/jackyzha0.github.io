@@ -13,25 +13,20 @@ Three main positions of validity of knowledge gained through testimony
 2. [Reductionism](thoughts/Reductionism.md): one can gain knowledge through testimony, but only if one has independent, inductive reason for believing that the speaker is reliable
 3. Non-reductionism (e.g. [Nyāya](thoughts/Nyāya.md)): one can gain knowledge through testimony simply by trusting the speaker (provided that the speaker knows what they assert). Testimony is a trust-worthy [epistemic](thoughts/epistemology.md) instrument, knowledge is communal
 
-Related: [consensus](thoughts/consensus.md)
+Related: [consensus](thoughts/consensus.md), [[thoughts/epistemic authority]]
 
-## Experts: Which Ones Should You Trust?
-*by Alvin I. Goldman (2001)*
+## Testimonial Injustice
+Two main kinds of testimonial injustice
+- Receiving more credibility than they otherwise would have (credibility excess)
+- Receiving less credibility than they otherwise would have (credibility deficit)
+	- E.g. speaker's accent -- indicating certain educational/class/regional background
+	- Although can be beneficial in some cases, see the [[thoughts/Jestermaxxing]]
+- Specifically, this is in the context of the *knower* being wrongly judged in their capacity to be accurate
+	- Injustice means it must be harmful but also wrongful
+	- Injustice also carries a connotation of [intentionality](thoughts/intentionality.md) to it: it is very hard to believe that one who accidentally misjudges another is committing an injustice against someone (personal belief of Fricker here)
 
-Central Question: the Novice/2-Expert Problem
-- An expert
-	- Knows a lot about the domain (first order material)
-	- Knows about the literature concerning the domain (second order material)
-	- Able to draw on this knowledge to produce answers about the domain
-- Two experts disagree, as a novice, which expert do you trust as more credible? 5 kinds of evidence
-	1. Arguments presented by the contending to support their own views and critique their rival's views
-	2. Agreement from additional putative experts on one side or other of the subject in question
-		1. Counterpoint: Copernican heliocentrism, most 'experts' believed that the Earth was the middle of the solar system, not the sun
-		2. Goldman steel-mans his argument through Bayesian analysis, experts should think for themselves and should be 'conditionally independent' -- they will not invariably parrot the claims of others when those claims are wrong
-		3. What about discoverability of experts? If a tree falls but nobody hears it, did it still happen?
-	3. Appraisals by "meta-experts" of the experts' expertise
-	4. Evidence of the expert's interests and biases vis-a-vis the question at issue
-	5. Evidence of the expert's past track-records
-- Important to note that all of these depend on *human* knowledge, not [religious authority](thoughts/religious%20authority.md)
-- Not fool-proof either, e.g. differences in communication medium, language, smooth-talking, etc.
-- How does the novice avoid cognitive [biases](thoughts/bias.md) of their own?
+Two modifiers for testimonial injustice
+- Persistent: repeated frequently, for example when the injustices occur in the context of their professional life
+- Systematic: centered within a system of [power](thoughts/power.md), fundamental to the predominant social, economic, or political practice
+
+See also: [[thoughts/epistemic injustice]]

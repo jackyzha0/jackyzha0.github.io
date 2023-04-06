@@ -7,11 +7,11 @@ tags:
 ---
 
 ## Summary
-Design Justice focuses not just on design in the visual and aesthetic sense, but also on the design of systems.
+Design Justice focuses not just on design in the visual and aesthetic sense, but also on the [[thoughts/systems design|design of systems]].
 
 To quote from the book, "Design justice rethinks design processes, centers people who are normally marginalized by design, and uses collaborative, creative practices to address the deepest challenges our communities face." The norms, values, and assumptions that are encoded and reproduced in the *design* of systems can be changed by rethinking our design processes.
 
-In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and technosolutionism -- all through detailed case studies of real-world design practices and social movements.
+In less than 400 short pages, Sasha Costanza-Chock covers a breadth of topics ranging from intersectionality, bias, and universal design to maintenance, design sites, and [[thoughts/Technosolutionism|technosolutionism]] -- all through detailed case studies of real-world design practices and social movements.
 
 She guides the reader into how the 'unmarked user' and universal design erases certain groups of people within the matrix of domination (through ableist, eurocentric, and classist assumptions) and refutes the argument that 'design by committee produces mediocrity.'
 
@@ -26,6 +26,8 @@ Hackathons reshape precarious and unpaid work. Writing code and building apps fo
 
 As a hackathon organizer, Design Justice has helped me to more actively think about what hackathons are trying to motivate. Having more of the tools to articulate and locate exactly why hackathons have felt increasingly corporate is the first step to reinstate hackathons as third spaces not as places of creation or competition, but as places of play and exploration.
 
+Read more: [[posts/hackathons]]
+
 ## Quotes
 ### Defining Design Justice
 How larger systems -- including norms, values, and assumptions -- are encoded in and reproduced through the design of sociotechnical systems. ([Do Artifacts Have Politics](thoughts/Do%20Artifacts%20Have%20Politics.md))
@@ -37,26 +39,6 @@ Design justice is a framework for analysis of how design distributes benefits an
 Design (noun): A plan or scheme conceived in the mind and intended for subsequent execution; the preliminary conception of an idea that is to carried into effect by action; a project. (Oxford English Dictionary)
 
 True, everyone designs, but only certain kinds of design work are acknowledged, valorized, remunerated, and credited. Though all humans design, not everyone gets paid to do so.
-
-*Affordance* refers to "the perceived and actual properties of the thing, primarily those fundamental properties that determine just how the thing could possibly be used." ... An object's affordances are never equally perceptible to all, and never equally available to all.
-
-### On Intersectionality
-Black women workers at GM were told they had no legal grounds for a discrimination case against their employer because antidiscrimination law only protected single-identity categories.
-
-The concept of intersectionality provided the grounds for a long, slow paradigm shift that is still unfolding in the social sciences, in legal scholarship, and in other domains of research and practice.
-
-While there is rapidly growing interest in algorithmic bias audits, especially in the fairness, accountability, and transparency in machine learning (FAT*) community, most are single-axis: they look for a biased distribution of error rates only according to a single variable, such as race or gender.
-
-One question about [intersectional approaches] is how many identity variables to include because each adds complexity (and, in many situations, time and cost) to audits.
-
-### Universal Design
-Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design
-
-At least in the digital domain, adaptive design that enables personalization and flexible configuration of shared core objects, tools, platforms, and systems provides a path out of the tension between the diverse needs of individual users and the economic advantages of a large-scale user base.
-
-Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adaptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
-
-We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
 
 ### The Unmarked User
 Designers most frequently assume that the unmarked user has access to several very powerful privileges, such as US citizenship, English language proficiency, access to broadband internet, a smartphone, a normatively abled body, and so on.
@@ -73,36 +55,25 @@ i.e. what's wrong with colour blindness
 
 "Under this new rhetoric of colour-blindness, equality means treating all individuals the same, regardless of differences they brought with them due to the effects of past discrimination or even discrimination in other venues"
 
-New Jim Code
-Algorithmic decision systems based on historical data sets reinforce white supremacy and discrimination even as they are positioned by their designers as "fair"
+New Jim Code: Algorithmic decision systems based on historical data sets reinforce white supremacy and discrimination even as they are positioned by their designers as "fair"
 
 Racial hierarchies can only be dismantled by actively antiracist systems design, not by pretending they don't exist.
 
 Far too often, user personas are created out of thin air by members of the design team, based on their own assumption or stereotypes about groups of people. When this happens, user personas are literally objectified assumptions about end users.
 
 ### Maintenance
-
 [Creating new vs maintaining old](thoughts/creation%20vs%20maintenance.md)
 - Contributing to an existing project requires contacting and negotiating with the existing developers, maintainers, and community. Creating something new produces attribution, credit, and visibility for its developers, whereas attribution, credit, and visibility for participating in an existing project must, at the very least, be shared.
 - Support [Maintenance](thoughts/maintenance.md), not just "innovation." Significant resources are necessary to maintain and improve existing movement tech, but most focus is on the creation of new projects.
 
 "Those of us working to promote universal access to clean water and sanitation must keep our eyes not just on the competition and prizes, but on the less glamorous work of encouraging adoption, usage, and maintenance"
 
-### Technosolutionism/Technochauvinism
-New technology will save us!!
-
-An exclusionary and elitist understanding of what technology is and where it comes from and a lack of interest in preexisting, community-based design practices.
-
-"... where we are wholly dependent on a handful of extraordinarily gifted entrepreneurs to lead us out of the dark ages. This is a myth."
-
-First, it contains a somewhat masked normative assumption that "technology adoption" is always a good thing.
-
+### Technosolutionism
 Neoliberal, technocentric ideas about the city as a machine or as a software system waiting to be optimized have become increasingly prominent. Citizens should not be reduced to users through the lens of neoliberal governmentality.
 
-First consider what already works at the community level, and to steer students away from the pitfalls of tech solutionism and technochauvanism
+First consider what already works at the community level, and to steer students away from the pitfalls of [[thoughts/Technosolutionism|technosolutionism]] and technochauvanism
 
 ### Attention
-
 Mediated visibility has become an important form of capital. Attention (time) is a scarce resource within late-stage informational capitalism, and its allocation has significant symbolic and material impacts (this is the [Attention economy](thoughts/attention%20economy.md)).
 
 "Design challenges" in which dozens, sometimes hundreds, of people do free labour and submit ideas in hopes that they'll be the lucky one chosen to receive visibility, recognition, and possibly even compensation.
@@ -125,7 +96,6 @@ Without intentional intervention, these spaces find it very difficult to fulfil 
 More on hackathons: [hackathons](posts/hackathons.md)
 
 #### Hackathons: The Bad
-
 Hackathons are understood by corporate managers as potentially effective ways to identify new talent, and therefore as a possible mechanism in the tech sector hiring pipeline. 
 
 "Hackathons, time-bounded events where participants write computer code and build apps, have become a popular means of socializing tech students and workers to produce 'innovation' despite little promise of material reward... [they] reshape unpaid and precarious work as an extraordinary opportunity, a ritual of ecstatic labour, and a collective imaginary for fictional expectations of innovation that benefits all, a powerful strategy for manufacturing works' consent in the 'new' economy." (Sharon Zukin and Max Papadantonakis)
@@ -148,13 +118,13 @@ Such hackathons push hackers to reflect on why they are doing the work they do, 
 Organizers should pay attention to participants as whole human beings. For example, this means that it is important to consider food, bio breaks, accessible bathrooms that are friendly to all body types and genders, comfortable spaces to nap or relax, and decent lighting, etc.
 
 ### Design Justice Pedagogies
-"Critical pedagogy, where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners"
+"Critical [[thoughts/teaching|pedagogy]], where the role of the educator is to pose problems, create spaces for the collective development of critical consciousness, help to develop plans for action to make the world a better place, and develop a sense of agency among learners"
 
 "No one knows everything, but together we know a lot, if we listen to each other"
 
 Key elements
 * Teach data science in a way that honours context, respects situated knowledge, and makes it clear that data is never "raw".
-* Emphasize the user of data to create shared meaning over individual mastery.
+* Emphasize the use of data to create shared meaning over individual mastery.
 * Teach data science that values not only reason, but [[thoughts/ethics|ethics]] and emotions as well
 
 ### Critiques

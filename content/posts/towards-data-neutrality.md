@@ -81,7 +81,7 @@ All of these make it incredibly unfeasible for data-intensive or real-time appli
 Blockchain is suitable for a very small subset of use-cases. Is there a more general purpose technology that still addresses these main problems?
 
 ## The personal cloud
-**Rhizome** aims to be a data-persistence and identity layer for the distributed web. The goal of Rhizome is to enable *data-neutrality* by separating data from applications.
+**Rhizome** aims to be a data-persistence and identity layer for the [[thoughts/distributed web|distributed web]]. The goal of Rhizome is to enable *data-neutrality* by separating data from applications.
 
 It is made up of two layers
 1. Root: a personal data pod that *you* own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.

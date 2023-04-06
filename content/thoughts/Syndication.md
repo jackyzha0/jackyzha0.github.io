@@ -7,6 +7,8 @@ aliases:
 - syndicate
 ---
 
+Important [[thoughts/distributed web]] concept
+
 ## POSSE
 [Source](https://indieweb.org/POSSE)
 

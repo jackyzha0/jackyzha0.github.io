@@ -7,8 +7,6 @@ tags:
 
 On methods to reclaim ourselves from the [attention economy](thoughts/attention%20economy.md). How do we enable [friction](thoughts/friction.md) to give people the space to think and reflect?
 
-[reflect](posts/reflect.md) tries to do this a little
-
 ## Time
 [Source: The present time by *Kernel*](https://kernel.community/en/learn/module-3/time)
 
@@ -18,8 +16,6 @@ This is an opportunity for us to reclaim our attention, to *properly* build out 
 
 "I don't want a job - I want my basic needs fulfilled and a degree of comfort and security which will enable me to make a meaningful contribution. Jobs are an artifact of the industrial age and a certain way of existing in time." Jobs are just the societally accepted norm for fulfilling basic needs. (Bullshit Jobs)
 
-Side note: people who [introduce](thoughts/introductions.md) themselves by talking about their job make me feel really weird. You're just describing the means you take the keep yourself alive -- what are the ends? What makes you *feel* alive?
-
 ## Designing for slowness
 
 > "what if you had to commute to websites"
@@ -27,20 +23,24 @@ Side note: people who [introduce](thoughts/introductions.md) themselves by talki
 
 *Exploring the Reflective Potentialities of Personal Data with Different Temporal Modalities: A Field Study of Olo Radio*
 
-This feels so magical to me; being able to create technology that evokes and recalls, creating spaces for reflection and a chance to reincorporate rather than gogogogopleasefocusonme all the time.
+Rather than organizing music through name or playlist (inherent or user groupings), Olo Radio chooses to organize information through data residue (unintentional data generated through regular usage). Allows the user to browse music by time of day listened to, how long ago you listened to it, or when in the year you listened to it.
 
-- "There are also growing calls in the [HCI](thoughts/human%20computer%20interaction.md) community to develop alternative approaches to designing interactions with personal data that better support experiences of contemplation, interpretation, and slowness"
-- Slowness as a form of reflection. Key features of the Olo Radio:
-	- takes time to understand
-	- manifests change through time (big [*A Tale for the Time Being*](thoughts/A%20Tale%20for%20the%20Time%20Being.md) energy)
-	- leverages different forms of time to prompt reflection by manifesting their presence in everyday life
-- Rather than organizing music through name or playlist (inherent or user groupings), Olo Radio chooses to organize information through data residue (unintentional data generated through regular usage). Allows the user to browse music by time of day listened to, how long ago you listened to it, or when in the year you listened to it.
-	- Incentivizes revisiting of the past rather than the constant discovery of the new. (w the exception of once-a-year recaps like Spotify Wrapped)
+Incentivizes revisiting of the past rather than the constant discovery of the new. (w the exception of once-a-year recaps like Spotify Wrapped)
 	- How do we introduce temporality into objects to appreciate their inner processes?
 		- Water fountain display of number of water bottles saved in lifetime
 		- Transit time between websites? (bring back [friction](thoughts/friction.md))
 		- "Natural decay" of physical objects -- how do we transfer this into the digital realm?
 		- Dispo as a way to fake 'scarcity' in digital photos
+
+Slowness as a form of reflection. Key features of the Olo Radio:
+- takes time to understand
+- manifests change through time (big [*A Tale for the Time Being*](thoughts/A%20Tale%20for%20the%20Time%20Being.md) energy)
+- leverages different forms of time to prompt reflection by manifesting their presence in everyday life
+
+This feels so magical to me; being able to create technology that evokes and recalls, creating spaces for reflection and a chance to reincorporate rather than gogogogopleasefocusonme all the time.
+
+ > "There are also growing calls in the [HCI](thoughts/human%20computer%20interaction.md) community to develop alternative approaches to designing interactions with personal data that better support experiences of contemplation, interpretation, and slowness"
+
 - Temporal seeking of memory and the element of surprise/anticipation
 	- “I took to blocking off time to use it. It was less of a casual thing for me. …I’d start with Life mode. I’d pick a position, turn [the volume] up, lie on the couch, and close my eyes. …I’d get a vague idea of where I was [in time]. A pattern would eventually emerge. [Songs would] sometimes spark a flash of a specific memory, like a date I was on years ago or visions of my parents’ home. …I’d start to get these tense feelings about what the next song would be. Where would it bring me back to? …When I was in the zone, time flew by. I could listen for an hour without really noticing.”
 	- “It was playing on Day, just in the background. …This Daft Punk song came on. That caught my ear. I sensed it could’ve been on a playlist I’d listen to before my [ski] competitions when I was younger. …I switched to Life and the slider shot back to the start [of my Last.FM]. This was years ago, so it would’ve been around the right time. …I anticipated Year would put [the slider] somewhere in the winter months. And, it did! I put it back to Life. …The next one in the queue was a Chemical Brothers song. And that’s when I knew I was in my old playlist.”

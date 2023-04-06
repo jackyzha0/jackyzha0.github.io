@@ -28,9 +28,16 @@ Where are our futures with no famine and disease? With a clean and healthy plane
 The act of imagining something makes it real. Art as processes or the seeds for processes - things that exist and change in time, things that are never finished.
 
 ## Fiction as shared visions
- _Visions matter_. Visions give people a direction and inspire people to act, and _a group of inspired people is the most powerful force in the world_. If you're a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.
+_Visions matter_. Visions give people a direction and inspire people to act, and _a group of inspired people is the most powerful force in the world_. If you're a young person setting off to realize a vision, or an old person setting off to fund one, I really want it to be something worthwhile.
 
 ## Protocol Fiction
 > But we don’t need just design fictions. We need business model fictions, engineering feasibility study fictions, interop protocol specification fictions, investment return fictions.
 
 [Speculative Infrastructure](https://interconnected.org/home/2022/08/11/casi)
+
+## Shared [truth](thoughts/truth.md)
+Creating shared truth *through [fiction](thoughts/fiction.md)* by dreaming the world we want to see come to fruition. I really like this, helps to explain why we need a collective vision. Reminds me of a big reason [contests like this exist](https://medium.com/@yishan/solarpunk-art-contest-2021-da9474c9722e).
+
+In essence, these are just [social contracts](thoughts/social%20contracts.md) (which are just shared truths that we all believe in)
+
+Legal fiction is one that has huge influence today (enforced by the threat of violence which relies on the asymmetric power of a nation state). But it feels like we can create other fictions that we as a society can believe in

@@ -48,19 +48,3 @@ Active questions:
 1. CRDTs accumulate a large change history, which creates performance problems. These pile up, but can’t easily be truncated because it’s impossible to know when someone might reconnect to your shared document after six months away and need to merge changes from that point forward.
 2. Network communication remains an unsolved problem. The use of P2P technologies in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: [[thoughts/NAT|NAT]] traversal, in particular, is unreliable depending on the particular router or network topology where the user is currently connected.
 3. Visualizing document history is important and difficult. How do we communicate this version history to users? How should users think about versioning, share and accept changes, and understand how their documents came to be a certain way when there is no central source of truth?
-
-## TLFS
-From [Cloudpeers](https://cloudpeers.co/)
-
-The Local-First SDK offers a stack to write applications as productively as when using state-of-the-art cloud-based architectures. It enables building serverless apps that traditionally require backend engineers to build, scale and maintain.
-
-Really great SDK but unsure how this differs from existing platforms like [[thoughts/Yjs|Yjs]] or [[thoughts/Hypercore|Hypercore]] (aside from being non-JS native). Could see this being useful for cross-platform live collaboration.
-
-Actually uses a Cambria-like system for data lensing which is cool.
-
-## Locutus
-Locutus is a decentralized key-value database. It uses the same [small world](https://freenetproject.org/assets/papers/lic.pdf) routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.
-
-Locutus is *not* append-only and has mutable state.
-
-Splits are merged using [[thoughts/CRDT|CRDTs]]

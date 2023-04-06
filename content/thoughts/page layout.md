@@ -9,23 +9,22 @@ Page layout is the art of manipulating a user's attention on a page to convey me
 
 ## Visual 
 Mechanisms
--   upper-left-corner preference
--   whitespace
--   contrasting fonts
-    -   the bigger and bolder, the more important the info
--   contrasting foreground and background colours
+-  Upper-left-corner preference
+-  Whitespace
+-  Contrasting fonts
+	- the bigger and bolder, the more important the info
+-  Contrasting foreground and background colours
     -   eg. putting white text on a black background
--   positioning, alignment, and indenting
+-  Positioning, alignment, and indenting
     -   indented text is subordinate to whatever's above it
--   graphics like lines, boxes, coloured bars
+-  Graphics like lines, boxes, coloured bars
     -   things in a box or group go together
-
-Flow
--   remember tendency to read top-to-bottom and left-to-right (at least, in the west)
--   **focal point:** spots your eyes can't resist going to
-    -   tend to follow them from strongest to weakest
-    -   better pages only have a few — having too many dilutes the importance
--   meaning and context play a big part in visual flow → perceived meaning of page content will change where the user chooses to look
+- Flow
+	-   remember tendency to read top-to-bottom and left-to-right (at least, in the west)
+	-   **focal point:** spots your eyes can't resist going to
+	    -   tend to follow them from strongest to weakest
+	    -   better pages only have a few — having too many dilutes the importance
+	-   meaning and context play a big part in visual flow → perceived meaning of page content will change where the user chooses to look
 
 ## Placement
 -   **proximity:** put things close together, and viewers will associate them with one another

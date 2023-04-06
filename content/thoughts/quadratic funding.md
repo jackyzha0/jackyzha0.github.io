@@ -11,11 +11,11 @@ tags:
 
 Matching funding is where governments or other institutions match individual contributions to a project. 
 
-In the QF model, the total funding is the square square root of each contribution summed and then squared. This empowers smaller individual contribution and make sure that a broad public benefits. This supposedly solves the [tragedy of the commons](thoughts/tragedy%20of%20the%20commons.md) problem.
+In the QF model, the total funding is the square root of each contribution summed and then squared. This empowers smaller individual contribution and make sure that a broad public benefits. This supposedly solves the [tragedy of the commons](thoughts/tragedy%20of%20the%20commons.md) problem.
 
 > _Your $N$-th unit of influence costs you $N$_
 
-How do we get around anonymous identities (or rapid creation of new identities) that abuse the system? Similar with collusion or vote-buying? How dowe get around collusion (if we don't, QF just collapses into one-dollar-one-vote)? "Quadratic payments do not solve every problem. They solve the problem of governing resources that affect large numbers of people, but they do not solve many other kinds of problems."
+How do we get around anonymous identities (or rapid creation of new identities) that abuse the system? Similar with collusion or vote-buying? How do we get around collusion (if we don't, QF just collapses into one-dollar-one-vote)? "Quadratic payments do not solve every problem. They solve the problem of governing resources that affect large numbers of people, but they do not solve many other kinds of problems."
 
 ## Pairwise QF
 [Pairwise-bounded QF](https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553) is a partial solution to collusion.

@@ -5,9 +5,7 @@ tags:
 - sapling
 ---
 
-_Organizing System_: an [intentionally](thoughts/intentional%20arrangement.md) arranged collection of resources and the interactions they support. It has authoritative description and standard classification. 
-
-It should enable interactions that allow users to achieve their [goals](thoughts/design%20goals.md).
+_Organizing System_: an [intentionally](thoughts/intentional%20arrangement.md) arranged collection of resources and the interactions they support. It has authoritative description and standard classification.
 
 We organize
 - physical things (objects/artefacts)
@@ -16,9 +14,9 @@ We organize
 - information about digital things (metadata)
 
 Good organizing systems are
-1. Skimmable at different levels. Is there a 5s version? A 60s version?
+1. Skimmable at different levels. Is there a 5s version? A 60s version? (see: [[thoughts/information scales]])
 2. Transformable. Can the user transform the data into different representations without having to explicitly define these ahead of time?
-3. Context-sensitive. Not one size fits all, can we create unique content for every reader/reading depending on their prior understanding and current needs?
+3. [[thoughts/context|Context]]-sensitive. Not one size fits all, can we create unique content for every reader/reading depending on their prior understanding and current needs? (see: [[thoughts/cozy software|personal software]])
 4. Interrogable. Can we get clarifications and answers from the text without having the author having to anticipate those questions?
 
 The document as an 'information container', but also a 'thing' which documents a thing. Data can be seen as 'elementary observations about properties of objects, events, and their environments'
@@ -50,12 +48,12 @@ Not all users have the same goals! How do we address this?
 Sensemaking: organizing to derive meaning from experience by fitting new events of observations into what they already know
 
 Questions to ask
-1. What? What is orgnaized, what type of resource or information object?
+1. What? What is organized, what type of resource or information object?
 2. Why? What are the goals of the system?
 3. How Much? How many different organization schemes are used?
 4. When? When is the organization of the resource imposed? At the creation of the resource?
-5. How, and by whom? Who is doing the organizaiton? Professional indexers? Algorithms?
-6. Where? Can be abstract ideas like the cloud or physical loike infrastructures and build environments.
+5. How, and by whom? Who is doing the organization? Professional indexers? Algorithms?
+6. Where? Can be abstract ideas like the cloud or physical like infrastructures and build environments.
 
 Similar to the questions in the HCI [design requirements](thoughts/design%20requirements.md). When designing an organizing system, it is important to consider domain, scope, and scale.
 
@@ -67,7 +65,7 @@ Similar to the questions in the HCI [design requirements](thoughts/design%20requ
 5.  the relationship of the organizing system to other ones that overlap with it in domain or scope
 
 ### General organizing principles
-1. We organize collections of resources using the properties that are easiest to perceive, or whose values vary the most among the items in the collection
+1. We organize [[thoughts/collections|collections]] of resources using the properties that are easiest to perceive, or whose values vary the most among the items in the collection
 2. We group together resources that we often use together
 3. We put rare or unique resources where we can protect them
 
@@ -92,4 +90,4 @@ Now though, the filing cabinet is "no longer an exemplar of productivity and spe
 
 Curiously enough, piles of paper on a desktop can be both symbols of "overwhelmed white collar worker confronted with information processing long coded as clerical" but also "exemplary information management practice". In fact, a well-kept pile of papers can be more efficient than a linear index (very similar to the ethic of grab what you need and rely on internal organization than some explicit organizational system). Does this apply to the [Desktop Metaphor](thoughts/interaction%20design.md)?
 
-Is Google search the 21st century filing cabinet?
+Is Google [[thoughts/search]] the 21st century filing cabinet?

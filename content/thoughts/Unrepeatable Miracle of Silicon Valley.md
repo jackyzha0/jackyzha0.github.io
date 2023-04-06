@@ -7,8 +7,6 @@ tags:
 
 [Source: Silicon Valley: An unrepeatable miracle? with *Margaret O’Mara*](https://www.aei.org/economics/silicon-valley-an-unrepeatable-miracle-a-long-read-qa-with-margaret-omara/)
 
-Podcast Interview with Margaret O’Mara, the author of _[The Code: Silicon Valley and the Remaking of America](https://www.amazon.com/Code-Silicon-Valley-Remaking-America/dp/0399562184)_
-
 Touches on a lot of similar topics to [*From Counterculture to Cyberculture*](thoughts/From%20Counterculture%20to%20Cyberculture.md)
 
 What caused the big influx of extraordinary opportunity in Northern California, despite mostly being another sleepy fruit-growing region? Mostly the result of the Cold War and the military-industrial complex and the power of Stanford -- these two were not completely separate.
@@ -23,9 +21,7 @@ Government wasn't the sole reason this explosion happened, rather more of "a cus
 
 Problem is that this 'urgency' needs to be bipartisan -- this was very difficult when the Soviet Union was widely feared. As a result, anything even mildly centrist is perceived as socialist -> https://www.youtube.com/watch?v=ULYWIDcUOY4
 
-Abstraction of the problem
-
-Antipathy that the Valley has had towards the government is kind of like, "Well it doesn’t have anything to do with us, if they could stay as far away as possible it would be good." -- tech is political
+Antipathy that the Valley has had towards the government is kind of like, "Well it doesn’t have anything to do with us, if they could stay as far away as possible it would be good."
 
 ## Democratic Capitalism
 Democratic capitalism and the ability for people to protest what their government is doing.
@@ -39,9 +35,9 @@ So much of the technical expertise that used to be distributed across industry a
 
 Examples like DARPA, investing in technology that is at least a few decades away from being commercializable or being something the military could possibly use.
 
-Personal Computing? Moving away from establishments having all the computing power and giving power back to the individual user. "We’re going to create these devices, take them, and build computers of our own that are apart from this corporate military-industrial business."
-
 To tell a company that is accountable to shareholders and quarterly earnings calls, “Okay, the moonshot’s on you guys,” is not so great.
+
+See: [[thoughts/skyhooks]]
 
 ### Sandbox Model
 "Throw a lot of money in its direction and get out of the way" Create the sandbox, an incredible container with lots of resources in it, and allow creative people to play around in the sand and see what they develop. Naturally very incompatible with political traditions in other places.

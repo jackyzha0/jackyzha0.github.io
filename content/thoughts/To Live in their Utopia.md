@@ -49,6 +49,8 @@ There's no dataset in the world that adequately conveys white supremacy, or slav
 
 So at best these systems generate a facsimile of a world with the shadows of history cast on the ground skewed, flattened, and always lacking depth that only living these experiences can bring. Once again, creating a potemkin village of what the true problem is: an incredibly reductionist view on complex problems.
 
+See also: [[thoughts/map as territory]]
+
 ## Metis
 James C. Scott in [[thoughts/Seeing like a State|Seeing like a State]] desribes *metis*, which he translates substantively as the intelligence required to adapt to new and changing circumstances.
 

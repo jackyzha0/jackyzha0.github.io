@@ -9,11 +9,9 @@ A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]].
 
 Full name is the Rivest, Shamir, Adelson Algorithm
 
-- Relies on modular arithmetic
-	- Unfortunately, also really slow :((
-	- Encryption/decryption are computation-heavy. Ok for occasional communication but too slow for extensive data transfer
-	- Good for establishing initial secure connection
-- Hard to crack because to determine $d$ from $(n, e)$ requires computing factors of $n$ which is a hard problem
+It relies on modular arithmetic which, unfortunately, is really slow :((. Encryption/decryption are computation-heavy. Ok for occasional communication but too slow for extensive data transfer. It's good for establishing initial secure connection. Hard to crack because to determine $d$ from $(n, e)$ requires computing factors of $n$ which is a hard problem
+
+Steps:
 - Choose two large primes $p$ and $q$ (1024-bits each)
 - Compute $n = pq, z = (p-1)(q-1)$
 - Choose $e < n$ that has no common factors with $z$ (commonly 3)

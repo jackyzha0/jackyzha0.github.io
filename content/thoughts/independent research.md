@@ -14,7 +14,6 @@ See also: [[posts/the-fools-who-dream]]
 	2. Brain 2: I want to *understand* why this works the way it does
 		- It is almost always Brain 2 thinking that leads to incredibly high payoffs in clarity and increased conviction.
 - Don't have conviction that you are right because that will lead to disappointment. Have conviction that you will learn regardless. It is sufficient to do things to learn and to understand (even if just about yourself)
-	- Don't build for the sake of building, build as a by-product of understanding
 	- This comes with a certain level of self-confidence and/or [[posts/the-fools-who-dream|foolishness]]
 	- “Who am I to even try to solve this problem, when so many people smarter than me have tried and failed in the past?”
 		- The people who succeeded had a healthy smidge of arrogance: a belief, perhaps irrational, that while they were not _guaranteed_ to succeed, they had a fair shot.

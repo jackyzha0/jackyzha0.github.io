@@ -9,6 +9,8 @@ tags:
 
 > A group of people using a collective identity to communicate a perspective through a series of distinct releases that contribute to a greater whole
 
+See also: [[thoughts/idea machine]]
+
 ## Elements
 1.  A core perspective or mission. That could be advocating for a certain perspective, aesthetic, region, idea, or about solving a problem and changing the world.
 2.  A principle (or group of principles) curating the output. Labels are ultimately trying to communicate an idea, incrementally, with each release. That means they need a consistent vision to successfully put an idea in the mind of the public. This means a level of creative leadership is required to curate what releases and artists are invited to be a part of the project.

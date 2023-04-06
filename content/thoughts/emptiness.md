@@ -7,6 +7,8 @@ tags:
 - PHIL451A
 ---
 
+> Emptiness is not nothingness. Emptiness is form.
+
 Emptiness is like the mathematical concept of 0.
 - It seems to have no value, yet is it the foundation of mathematics.
 - Without 0, you cannot have 1, 2, 3, so forth.

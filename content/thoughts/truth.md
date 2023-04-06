@@ -11,10 +11,7 @@ Is there a hard truth to anything in the universe? Can we truly know anything?
 
 "The word “axiom” means self evident truth. All of mathematics are models based on frameworks of axioms and postulates. We develop proofs and theorems from these. All facts and axioms in mathematics are fundamentally flawed.
 
-are ideas inherently different from facts?
-what are the universal axioms of the universe?
-descartes
-* solipsism -> we can only know that we exist
+What are the universal axioms of the universe? [[thoughts/Descartes' Meditations|Descartes]] for example believes in solipsism (we can only know that we exist)
 
 ## Gödel's incompleteness theorem
 [A great explanation video](https://www.youtube.com/watch?v=HeQX2HjkcNo)

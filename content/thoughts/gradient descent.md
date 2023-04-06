@@ -10,7 +10,7 @@ When we minimize or maximize a function, we call it optimization.
 
 Gradient descent is essentially an iterative optimization algorithm that takes a guess and refines it using the gradient to make a better guess.
 
-If the objective function is a convex function, then it will converge to a *global optimum*.
+If the objective function is a [[thoughts/convex]] function, then it will converge to a *global optimum*.
 
 Gradient descent finds critical point of differentiable function. Which can be faster than normal equations for large ‘d’ values. It takes $O(nd)$ per iteration so $O(tnd)$ for $t$ iterations.
 
@@ -46,5 +46,5 @@ A common option is to use $\alpha^t = O(\frac{1}{\sqrt t})$
 ### Minibatches
 We can train on a 'mini-batch' $B^t$ of examples. Radius of region of confusion is inversely proportional to $B^t$
 
-### Early  Stopping
+### Early Stopping
 Normally, we stop GD when gradient is close to zero. However, we never know this when doing SGD (as we cannot see the full gradient). We just stop early if the validation set error is not improving (this also reduces overfitting)

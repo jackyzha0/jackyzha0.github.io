@@ -10,12 +10,9 @@ tags:
 The nature of being and structures of objects. Ontology seeks the classification and explanation of things. A branch of [[thoughts/metaphysics|metaphysics]].
 
 ## Technology
-Technology as it relates to ontology.
-- technology is not just neutral: [[thoughts/Do Artifacts Have Politics|artifacts have politics]]
-- artifacts shape and create ways of being
-- "design is ontological"
-	- civic design + [[thoughts/urban planning|urban planning]] are also importantly ontological
-	- designing spaces of dwelling + being
+Technology as it relates to ontology. Artifacts shape and create ways of being. Thus, "design is ontological"
+
+Civic design + [[thoughts/urban planning|urban planning]] are also importantly ontological as they are designing spaces of dwelling + being (see: [[thoughts/Heidegger]])
 
 The train changed the way we exist -- it expands the vista of existence. We are betting on new means of technology for new ways of being, ones attuned to interdependence, mutuality, etc. Emphasizing the ontology of interdependence over the ontology of separation.
 

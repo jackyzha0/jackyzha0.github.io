@@ -9,7 +9,7 @@ tags:
 
 Can we create 'credits' that companies can buy to offset their emissions by 'proving' that a forest is sequestering a certain amount of carbon?
 
-Yet, in most of these cases, these carbon offsets don't actually work. They either
+In most of these cases, these carbon offsets don't actually work. They either
 1. don't offset the amount they were supposed to do
 2. bought gains that were quickly offset
 3. amount of carbon couldn't be measured accurately
@@ -27,7 +27,7 @@ On paper, this seemed perfect: if it cost too much to reduce emissions in one ar
 
 In practice doesn't work super well
 1. Clean Development Mechanism: 85% of offsets had a 'low likelihood' of creating real impacts
-2. Join Implementation: 75%
+2. Joint Implementation: 75% of the credits issued were unlikely to represent real reductions
 
 Leakage: protecting one patch of land could lead to deforestation somewhere else as loggers work to try and meet quotas
 
@@ -41,10 +41,6 @@ But there's not a lot of incentive for local residents
 - Government subsidies don't consider enough things
 	- Digging fish ponds but they don't produce enough
 	- Rubber-tapping tries but can't afford fertilizer for the poor Amazon soil
-
-> “Cattle is a secure market. You can get a good income selling a calf, an ox,” Silva said.
-
-> “Who is willing to rubber tap nowadays?” Brito said. “Nobody, practically nobody. We want an easier way to live.”
 
 Gerrymandering but for trees? A lot of the offset calculations are based off of regional averages for carbon, projects can then take advantage of 'unusually high' concentration areas with certain types of trees to game the system and gain more credits than they should have.
 

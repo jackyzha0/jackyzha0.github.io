@@ -7,16 +7,17 @@ aliases:
 - Surveillance Capitalism
 ---
 
-"Currently, the predominant business model for commercial search engines is advertising. The goals of the advertising business model do not always correspond to providing quality search to users."
+A form of capitalism (sometimes also known as surveillance capitalism) where the selling and exchange of data is the source of economic benefit. It is Associated with rise of Internet and Web 2.0; post 9/11.
 
-"We believe the issue of advertising causes enough mixed incentives that it is crucial to have a competitive search engine that is transparent and in the academic realm"
+## Search
 
-Almost ironic that Sergey Brin & Lawrence Page (founders of Google) said this when writing the paper on what would become PageRank and Google Search.
+> "Currently, the predominant business model for commercial search engines is advertising. The goals of the advertising business model do not always correspond to providing quality search to users."
+> 
+> "We believe the issue of advertising causes enough mixed incentives that it is crucial to have a competitive search engine that is transparent and in the academic realm"
+> 
+> (Sergey Brin & Lawrence Page, Google cofounders)
 
-- A form of capitalism where the selling and exchange of data is the source of economic benefit
-- Associated with rise of Internet and Web 2.0; post 9/11
-- Also known as surveillance capitalism
-- Economic system in which personal data is seen and conceived as a source of profit
+Almost ironic that they said this when writing the paper on what would become PageRank and Google Search.
 
 ## Thieves of Experience: How Google and Facebook Corrupted Capitalism
 [By Nicholas Carr in LARB](https://lareviewofbooks.org/article/thieves-of-experience-how-google-and-facebook-corrupted-capitalism/)

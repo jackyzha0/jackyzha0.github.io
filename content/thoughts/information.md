@@ -52,7 +52,7 @@ Aaron Swartz in the *“Guerrilla Open Access Manifesto”*
 > Information is power. But like all power, there are those who want to keep it for themselves. The world’s entire scientific and cultural heritage, published over centuries in books and journals, is increasingly being digitized and locked up by a handful of private corporations. . . . Providing scientific articles to those at elite universities in the First World, but not to children in the Global South? It’s outrageous and unacceptable. . . . We can fight back. Those with access to these resources—students, librarians, scientists—you have been given a privilege. You get to feed at this banquet of knowledge while the rest of the world is locked out. But you need not—indeed, morally, you cannot—keep this privilege for yourselves. You have a duty to share it with the world.
 
 ## Information [Representation](thoughts/representation.md)
-How do we represent documents and information in our databases and collections?
+How do we represent documents and information in our databases and [[thoughts/collections|collections]]?
 
 See also: [[thoughts/visualization|visualization]]
 
@@ -62,9 +62,9 @@ Index features
 - number of words (numerical, length description)
 - etc
 
-When indexing, we want to
-1. features that make document easy to find given some similarity measure between query and document (if a term is too broad, it would apply to too many documents)
-2. have high discriminatory power so different documents are sufficiently distinct
+When indexing, we want
+1. features that make a document easy to find given some similarity measure between query and document (if a term is too broad, it would apply to too many documents)
+2. high discriminatory power so different documents are sufficiently distinct
 
 Specificity: degree to which a term is broad or narrow
 
@@ -80,8 +80,3 @@ Automatic indexing uses a set of algorithms to convert a document into a set of 
 Catalogs allow for retrieval by simple matching whereby the user has an index term in mind and can then find all items that are indexed by that term.
 
 By its nature, the catalog is divided, and the subject catalog is on its own. The classification scheme typically mirrors the scheme used to organize the physical items in the library.
-
-e.g.
-- Universal Decimal Classification (UDC)
-- Dewey Decimal Classification (DDC) 
-- Library of Congress (LC)

@@ -15,13 +15,12 @@ We need new mediums for exchange of ideas and active construction of thoughts ([
 
 > Take a moment to pick up the objects around you. Use them as you normally would, and sense their tactile response — their texture, pliability, temperature; their distribution of weight; their edges, curves, and ridges; how they _respond_ in your hand as you use them.
 
+## Beyond Touch
 Current technology is very much just *Pictures Under Glass*. All interaction are glassy and feel like they have no connection with whatever task you were performing. Almost as if it was just under a pane of glass. List of interactions you can do with *Picture Under Glass*:
 
 1. Slide
 
 When working with our hands, touch does the driving, and vision helps out from the back seat. Moving our limbs and bodies is so well choreographed, its just [telerobotics](thoughts/telerobotics.md) for us. Why should we limit our interactions to a single finger or two? This quite literally just [interaction failure](thoughts/interaction%20failure.md)
-
-## Beyond Touch
 
 > Humanity is using the dynamic medium merely to emulate and extend static representations from the era of paper.
 
@@ -34,7 +33,6 @@ Ted Nelson, the guy who coined the terms [[thoughts/hypertext|hypertext]] and hy
 [Desktop metaphor](thoughts/desktop%20metaphor.md) was originally designed in 1973 to suit a very different need in computation—the need to mirror digital content with its physical equivalent (thus, the need for folders an documents)
 
 Premise of a lot of the work behind [DynamicLand](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf) and [Jinha Lee](http://www.leejinha.com/home.html)
-
 
 ## Computers in Friendlier Forms
 Source: [Omar Rizwan on Notion Blog](https://www.notion.so/blog/omar)
@@ -84,7 +82,7 @@ As it stands, writing is just manipulation of symbols. Even for static materials
 
 Can we show multiple representations of dynamic behaviour? Can we transform between different representations easily?
 
-The goal is to have manipulation of the behaviour and data itself rather than a structure or set of symbols that 'represents' that behaviour/data -> related to the idea of turtles and the LOGO language in [Mindstorms](thoughts/Mindstorms.md)
+The goal is to have manipulation of the behaviour and data itself rather than a structure or set of symbols that 'represents' that behaviour/data: related to the idea of turtles and the LOGO language in [Mindstorms](thoughts/Mindstorms.md)
 
 ### Thinking (person-to-self)
 Why are almost all representations used in intelletual work (both final product and intermediate scratch work) mostly 2D? Mostly paper or pixels
@@ -96,7 +94,7 @@ Can we create dynamic tactile mediums?
 ## Webstrates
 [Source](https://pure.au.dk/portal/files/91047333/webstrates.pdf)
 
-In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs”
+In the seventies, Alan Kay introduced the concept of Personal Dynamic Media that let a user “mold and channel its power to his own needs” (see: [[posts/agentic-computing|agentic computing]])
 
 Two decades later, Mark Weiser envisioned a future of ubiquitous computing, where heterogenous devices of varying sizes and capabilities interact easily with each other and technology disappears into the background.
 

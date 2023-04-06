@@ -7,7 +7,7 @@ tags:
 
 [Source: Asking Better Questions in *Kernel*](https://kernel.community/en/learn/module-2/better-questions)
 
-> Good questions must come from a sincere desire to learn, rather than as a veiled means of stating your own opinion.
+> Good questions must come from a sincere desire to [[thoughts/learning|learn]], rather than as a veiled means of stating your own opinion.
 
 Asking better questions is a skill, which means it can be honed and practiced.
 

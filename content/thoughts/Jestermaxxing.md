@@ -8,9 +8,7 @@ tags:
 ## Playfulness vs Epistemic Traps
 C. Thi Nguyen on [Playfulness vs Epistemic Traps](https://philpapers.org/archive/NGUPVE.pdf)
 
-[[thoughts/play|Play]] is done for its own sake. We play because playing is fun, pleasurable, or satisfying, not because we want some kind of product or outcome ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]). It involves a sort of shifting of perspectives, or stepping outside one's normal rules and roles -- and stepping into other ones.
-
-Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it (autotelic). It is a disposition to explore ideas for the value of exploration itself.
+Intellectual playfulness, loosely, is the disposition to try out new ideas, perspectives and systems of thought (involves perspective shifting) for the sheer joy of it ([[thoughts/The Grasshopper, Games, Life and Utopia#Terminology|autotelic behaviour]]). It is a disposition to explore ideas for the value of exploration itself.
 
 Intellectual playfulness also has some clear epistemic functionality for us
 - intellectually playful exploration sometimes can better serve the goal of finding the truth, than will exploration that is strictly aimed at finding the truth

@@ -28,7 +28,7 @@ Of course, this is not perfect technology. I do have a few [hesitations/critique
 - [NFTs](thoughts/NFT.md)
 - [Arweave](thoughts/Arweave.md)
 
-Notes on [Kernel](https://kernel.community/en/) curriculum: [Kernel](thoughts/kernel.md)
+Notes on [Kernel](https://kernel.community/en/) curriculum: [Kernel](thoughts/Kernel%20Curriculum.md)
 
 ## Web History
 [Ethereum article](https://ethereum.org/en/developers/docs/web2-vs-web3/ )
@@ -63,9 +63,8 @@ Limitations
 
 Verifiability is the atom of web3. It is what the hyperlink was for Web1.
 
-## Cool Applications
-### [Gitcoin](https://gitcoin.co/)
-How do we incentivize [open source software](posts/paid-open-source.md)? Gitcoin approaches this through decentralizing [funding](thoughts/funding.md) (away from corporations and toward individuals).
+## Gitcoin
+How do we incentivize [open source software](posts/paid-open-source.md)? [Gitcoin](https://gitcoin.co/) approaches this through decentralizing [funding](thoughts/funding.md) (away from corporations and toward individuals).
 
 Not just providing funding, 4 main value adds
 1. Earn -> get paid to do maintenance work and upkeep of public goods!

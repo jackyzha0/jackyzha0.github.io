@@ -42,6 +42,3 @@ Data can not be clean when data is
 - noisy
 
 Coupon collector problem: you generally need to see $O(n \log n)$ samples to see all n possible values which have equal probabilities
-
-## Predictive Policing
-The use of data mining to deploy police officers to areas where crimes are more likely to occur. It is based on the observation that individual criminals act in a predictable way.

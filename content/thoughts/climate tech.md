@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Not just about investing in carbon removal or carbon offsets also about investing in the [infrastructure](/thoughts/infrastructure) to make it possible. 
+Not just about investing in carbon removal or [[thoughts/carbon credits]] also about investing in the [infrastructure](/thoughts/infrastructure) to make it possible. 
 
 [The Land Ethic](https://www.cooperative-individualism.org/leopold-aldo_land-ethic-1949.pdf) simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. It changes the role of Homo sapiens from conqueror of the land community to plain member and citizen of it.
 
@@ -18,23 +18,12 @@ The Greenhouse Gas (GHG) Protocol consists of "Scopes", each of which has multip
 
 - Scope 1: Direction Emissions. These are the business activities the company performs that directly create emissions.
 - Scope 2: Indirect Emissions. These consist of the purchased electricity, steam, heating, and cooling for own use.
-- Scope 3: Indirect Emissions. Includes goods and services, goods, fuel, transportation distribution, and business travel.
-
-Attempting to pay people to offset carbon through [carbon credits](thoughts/carbon%20credits.md)
-
-## Investment Facts!
-[Source: Climate tech $16b mid-year investment action report](https://climatetechvc.substack.com/p/-climate-tech-16b-mid-year-investment)
-
-* Compared to just a year before, there were **~50% more climate deals** in Q2’21 vs Q2’20
-* In the first half of 2021, climate tech startups raised **~$16b across ~250 venture deals**
-* Mobility sector deals are the largest on average (~50% of total H1 2021 funding) whereas Food & Water and Mobility attract the greatest diversity across investment firms (>50% of investors are active in these sectors)
-
-![Investment Diversity across sectors](https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fff4c664b-816c-45ef-9e5d-720d1b279c2f_861x475.png)*Investment Diversity across sectors*
+- Scope 3: Indirect Emissions. Includes [[thoughts/types of goods|goods]] and services, goods, fuel, transportation distribution, and business travel.
 
 ## Neutral Infrastructure
 Source: [Microsoft Finds Underwater Data Centers Practical](https://www.datacenterknowledge.com/microsoft/microsoft-finds-underwater-data-centers-practical) and [Power, Pollution and the Internet, NYT](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html).
 
-Might be software infrastructure but it has lots of [political](thoughts/Do%20Artifacts%20Have%20Politics.md) implications (e.g. climate impact, territory disputes, etc.). It's 'reduced cost' does not factor in long-term negative externalities like warming the ocean. (also: [software and politics](thoughts/software%20and%20politics.md))
+Might be software infrastructure but it has lots of [political](thoughts/Do%20Artifacts%20Have%20Politics.md) implications (e.g. climate impact, territory disputes, etc.). It's 'reduced cost' does not factor in long-term negative externalities like warming the ocean.
 
 "Many of these solutions are readily available, but in a risk-averse industry, most companies have been reluctant to make wholesale change." This is largely due to the anonymity involved in the industry where even the federal government was unable to determine how much energy its own data centres consume.
 
@@ -60,14 +49,14 @@ General ethos: we don't know what works so let's invest in a little bit of every
 Mix of solutions that make a difference now (evergreen tech: 24%) but also emerging tech with big impact down the line (frontier portfolio: 76%) [Rationale](https://cdn.shopify.com/static/sustainability/How-to-Kick-Start-the-Carbon-Removal-Market_Shopifys-Playbook.pdf)
 
 Frontier
-1. Direct Air Capture -> directly pulling carbon out of the air and storying it permanently
-2. Product -> storing carbon into usable products (e.g. concrete)
-3. Ocean -> large bodies of water as carbon sinks while also reducing ocean acidification
-4. Biomass -> sequester carbon in organic material, using organic material for energy
-5. Mineralization -> turning carbon into a mineral to store
+1. Direct Air Capture: directly pulling carbon out of the air and storying it permanently
+2. Product: storing carbon into usable products (e.g. concrete)
+3. Ocean: large bodies of water as carbon sinks while also reducing ocean acidification
+4. Biomass: sequester carbon in organic material, using organic material for energy
+5. Mineralization: turning carbon into a mineral to store
 
 Evergreen (creating a buffer against climate change until we figure out how to unscrew ourselves)
-1. Forest -> planting, restoring, and protecting forests
-2. Soil -> farming techniques that improve soil health and carbon storage
-3. Renewable Energy -> investing in fossil fuel alternatives
-4. Transportation -> reducing emissions from transportation
+1. Forest: planting, restoring, and protecting forests
+2. Soil: farming techniques that improve soil health and carbon storage
+3. Renewable Energy: investing in fossil fuel alternatives
+4. Transportation: reducing emissions from transportation

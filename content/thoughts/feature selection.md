@@ -11,7 +11,7 @@ Better features usually help more than a better model. Good features would ideal
 - Capture most important aspects of problem
 - Reflects invariances (generalize to new scenarios)
 
-Find the features (columns) of ‘X’ that are important for predicting ‘y’.
+Find the features (columns) of $X$ that are important for predicting $y$
 - What are the relevant factors?
 - Which basis functions should I use among these choices?
 - What types of new data should I collect?

@@ -72,7 +72,7 @@ item   : TEXT ;
 4.  Errors (how many do users make, how severe, how easily can they recover)
 5.  Satisfaction (subjective, but very important for perseverance and adoption)
 
-See also: [[thoughts/software principles]]
+See also: [[thoughts/software principles]], [[thoughts/design goals]], [[thoughts/programming models]]
 
 - Maximize information hiding
 	- Make classes, members as private as possible
@@ -149,27 +149,3 @@ export interface Visitor<T, U> {
 1. Create a `Visitor` interface under AST and define a bunch of visit methods for each concrete node type
 2. Under the abstract `Node` class, create an abstract `accept` method
 3. Create a new visitor class that implements the `Visitor` interface
-
-## Empirical Studies
-We ask general research questions about all users, all tasks of a certain kind... e.g. do types help developers of large projects?
-
-We usually can't measure these directly, but we can gather empirical evidence through:
-1. Observational/Exploratory Studies
-2. Controlled Experiments
-3. Historical Data Collection and Analysis
-4. Surveys
-
-Potential way conclusions can be flawed:
-1. Construct validity: are we measuring the right thing? Is this clearly connected to our research question? Did we misunderstand the concepts we are working with?
-2. Internal validity: What are alternative explanations for the results? Other bias, confounding factors, etc.
-3. External Validity: To what extent are our results and conclusions of our experiment generalizable to our original research question? (how representative are our tasks and users?)
-4. Empirical Reliability / Reproducibility: Can the study be reproduced?
-
-Risks and Consent:
-1. In what ways could your participants could be harmed by the study or its results?
-2. Could be physical harm (less likely in CS), emotional harm (stress, reputation, etc.)
-3. Evaluate the likelihood of each potential risk (including unlikely cases)
-4. Are there ways to mitigate these risks? Potentially: adjust your study design
-5. What would you do if a participant were harmed? e.g. correction, compensation?
-
-To run a study ethically, we need to get informed consent (see: [[thoughts/interviews and data recording]])

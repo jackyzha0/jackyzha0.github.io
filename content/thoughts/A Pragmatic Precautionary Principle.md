@@ -8,7 +8,7 @@ tags:
 
 > *Final paper for PHIL321*
 
-The Precautionary Principle has had many different interpretations across game theory; there is no single accepted formulation. In general, the Precautionary Principle suggests that we should take appropriate measures to prevent potential harm, even if the likelihood or severity of that harm is uncertain. However, part of the reason why there has been such heavy debate around Precautionary Principle is because many terms are already meaning-laden: it is not always clear what constitutes appropriate precautionary measures, and different stakeholders may have different ideas about what is appropriate in a given situation.
+The [[thoughts/Precautionary Principle|Precautionary Principle]] has had many different interpretations across [[thoughts/game theory]]; there is no single accepted formulation. In general, the Precautionary Principle suggests that we should take appropriate measures to prevent potential harm, even if the likelihood or severity of that harm is uncertain. However, part of the reason why there has been such heavy debate around Precautionary Principle is because many terms are already [[thoughts/meaning-laden]]: it is not always clear what constitutes appropriate precautionary measures, and different stakeholders may have different ideas about what is appropriate in a given situation.
 
 If the principle is to be useful in policy-making, we must make it more concrete. The real meat of the matter comes down to how we characterize what constitutes a relevant thread and what threshold of certainty is necessary to enact action.
 
@@ -22,14 +22,7 @@ In the second part of the paper, he distinguishes a stronger formulation of the 
 
 Specifically, Manson argues that the stronger Catastrophe Principle is self-defeating but leaves the earlier formulation of the Precautionary Principle intact. Strong versions of the Precautionary Principle, if applied consistently, lead to paradoxical outcomes.
 
-The careful reader will notice the similarities between the Catastrophe Principle and Pascal's Wager. In Pascal's *Pensées* (1623-1662), he outlines an argument that one should always believe in God so long as the probability that God exists is nonzero.
-
-| |God exists|God does not exist|
-|--|--|--|
-|Believe|$\infty$|Finite|
-|Don't believe|$-\infty$|Finite|
-
-As there is dominance of the action of believing in God over not believing in God, any rational decision maker must believe in God, no matter how low the probability of 'God does not exist' is. 
+The careful reader will notice the similarities between the Catastrophe Principle and [[thoughts/Pascal's Wager|Pascal's Wager]]. As there is dominance of the action of believing in God over not believing in God, any rational decision maker must believe in God, no matter how low the probability of 'God does not exist' is. 
 
 Similarly, if we draw a decision table for the Catastrophe Principle, we see they follow a similar structure. Any rational decision maker should always enact the e-remedy given that there is a nonzero possibility that the e-activity leads to the e-effect.
 
@@ -39,8 +32,6 @@ Similarly, if we draw a decision table for the Catastrophe Principle, we see the
 |Do nothing|$-\infty$|Finite|
 
 Of course, Pascal’s Wager has been subjected to a number of philosophical criticisms. Manson specifically focuses on the “many gods” objection as a way to dismantle both Pascal's Wager and the Catastrophe Principle.
-
-What if, for example, there are other gods aside from God that also promise an infinite payout? If you chose to believe in God and He does not exist but the other god does, it is plausible (non-zero possibility) that they could sentence you to eternal damnation (infinite punishment). As a result, this would make believing in God a risk not worth taking. That is, Pascal's Wager recommends a remedy (believing in God) that itself could lead to a catastrophic result (infinite punishment from a jealous god).
 
 Although many have pointed out flaws to the many-gods objection, it still brings to light the following general point regarding the catastrophe principle: "even if an e-effect is catastrophic, that fact cannot rationally compel us to impose an e-remedy unless we also know that the e-remedy itself does not lead to catastrophic results"[^2] (Manson 2002, pp. 272-3).
 
@@ -64,11 +55,9 @@ I argue that this argument depends heavily on the definition of 'possible.' Gard
 
 This begs the question, what makes a circumstance realistic? This is a question Gardiner explicitly leaves out of his argumentation and assumes that such a criterion exists and does not take a position on what it would be.
 
-I suspect that there is a human limit to the size of a probability we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless. Bernoulli conjectured that people neglect small probability events.
+I suspect that there is a human limit to the size of a [[thoughts/probability]] we find meaningful. Just like how the size of certain numbers are incomprehensible to humans, some probabilities are so unlikely that they are nearly meaningless.
 
-> Nicholas Bernoulli who can be held liable as the creator of the Petersburg gamble suggested that more than five tosses of heads are morally impossible. This proposition is experimentally tested through the elicitation of subjects‘ willingness-to-pay for various truncated versions of the Petersburg gamble that differ in the maximum payoff. In fact, the experimental data show that all versions of the Petersburg gamble which allow for more than six repeated tosses of tails elicit the same willingness-to-pay. From this evidence it is concluded that subjects neglect those outcomes in the Petersburg gamble which occur with a probability smaller than or equal to one in sixty-four, because, given this level, the alternative explanations seem implausible. (Neugebauer 2010, p. 3)
-
-Especially as we want this to serve as a framework to make practical decisions, we should discard  probabilities that people implicitly discard. A good lower bound on if a probability event could feasibly happen is if it could have reasonably occurred within the timespan of the entire universe. This is effectively strengthening the knowledge condition by placing a lower bound on the conceivable range of probabilities we consider. Anything below this bound is considered negligible and assigned a probability of 0. As a result, this makes much more robust the conditions under which it is coherent to apply the Precautionary Principle.
+Especially as we want this to serve as a framework to make practical decisions, we should discard probabilities that people implicitly discard. A good lower bound on if a probability event could feasibly happen is if it could have reasonably occurred within the timespan of the entire universe. This is effectively strengthening the knowledge condition by placing a lower bound on the conceivable range of probabilities we consider. Anything below this bound is considered negligible and assigned a probability of 0. As a result, this makes much more robust the conditions under which it is coherent to apply the Precautionary Principle.
 
 In conclusion, I have illustrated how the Precautionary Principle itself, if carefully constructed, can come to coherent and rational decisions. By resolving issues with ill-defined terms or self-contradiction in the principle's formulation, we can create a more robust Precautionary Principle that is more suitable to pragmatic use cases like in environment decision making.
 

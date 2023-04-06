@@ -24,6 +24,8 @@ Old way was to use a tracker, you announce which file you are going to download 
 
 DHT proves to be a more reliable way of replicating this behaviour.
 
+See also: [[thoughts/BitTorrent]]
+
 ## Problems
 - DHTs can be crawled and mined for profit
 	- Perform a [[thoughts/Sybil Attack|Sybil attack]] by simulating 1000+ clients and just wait for values to come in, cheaply capturing 90%-99% of the DHT

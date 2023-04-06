@@ -4,7 +4,8 @@ date: 2022-08-11
 tags:
 - seed
 ---
-Braid's goal is to extend [[thoughts/HTTP|HTTP]] from a state transfer protocol to a state sync protocol, in order to do away with custom sync protocols and make state across the web more interoperable.
+
+Braid's goal is to extend [[thoughts/HTTP|HTTP]] from a state transfer protocol to a state sync protocol, in order to do away with custom sync protocols and make state across the web more [[thoughts/interoperability|interoperable]].
 
 Braid puts the power of operational transforms and [[thoughts/CRDT|CRDTs]] on the web, improving network performance and enabling natively [[thoughts/peer-to-peer|p2p]], collaboratively-editable, [[thoughts/local-first software|local-first]] web applications.
 

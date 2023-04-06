@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-How do we get [[posts/agi|AI systems]] to align with real human [[thoughts/social contracts|social contracts and values]]?
+How do we get [[posts/agi|AI systems]] to align with real human [[thoughts/social contracts|social contracts and values]]? Or, in more mathematical terms, how do we make [[thoughts/quantization|legible]] our soft and squishy human values into hard mathematical formula and policy?
 
 Mostly sourced from [OpenAI's approach to alignment](https://aligned.substack.com/p/alignment-optimism)
 

@@ -10,10 +10,10 @@ Domain name: an identification string that defines a realm of administrative aut
 
 DNS currently has ~300 million DNS registrations. Both query and reply messages follow the same message format. Both always include Name, Type, Class tuples -- Class is usually `IN`. Names cannot be wildcarded but type and class can
 
-How do we resolve domain names to [IP addresses](thoughts/IP%20Addresses.md)? Resolves starting from the root and makes it way down the network hierarchy
+How do we resolve domain names to [IP addresses](thoughts/IP%20Address.md)? Resolves starting from the root and makes it way down the network hierarchy
 1. Root (13 of these worldwide)
 2. Top-level Domains (e.g. .com, .net, .org, etc.)
-3. Second-level Domains (e.g. Microsoft, UBC)
+3. Second-level Domains (e.g. UBC)
 4. Subdomains (e.g. www)
 5. Individual machines
 6. Local DNS Servers (not actually a part of the hierarchy, just caches data)
@@ -41,6 +41,9 @@ Types:
 5. CNAME (canonical name)
 	1. name: alias
 	2. value: canonical name (e.g. foo.com)
+6. TXT (just plain text)
+	1. name: domain
+	2. value: plain text in the format of `attribute=value`. The TXT record was originally intended as a place for human-readable notes but now often used for domain ownership verification (see: dnslink and [[thoughts/Bluesky]])
 
 Inserting records into DNS
 1. Register name with a registrar
@@ -51,3 +54,16 @@ Inserting records into DNS
 2. Add appropriate records into our own authoritative name server
 	1. `(www.example.com, <server-ip>, A)`
 	2. `(www.example.com, <server-ip>, MX)`
+
+## DNSLink
+[Documentation](https://dnslink.dev/)
+
+DNSLink uses DNS TXT records to map a DNS name, like en.wikipedia-on-ipfs.org, to an [[thoughts/IPFS]] address
+
+Because you can edit your DNS records, you can use them to always point to the latest version of an object in IPFS.
+
+
+```bash
+$ dig +noall +answer TXT _dnslink.docs.ipfs.tech
+_dnslink.docs.ipfs.tech.  34  IN  TXT "dnslink=/ipfs/QmVMxjouRQCA2QykL5Rc77DvjfaX6m8NL6RyHXRTaZ9iya"
+```

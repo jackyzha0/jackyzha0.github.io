@@ -21,5 +21,3 @@ Within it, heavy use of the tetralemma form of argument that is composed of 4 fo
 Objection posed that [emptiness](thoughts/emptiness.md) is nihilistic and would lead to the non-existend of the Four Noble Truths, Three Jewels, and Buddha. Yet, Nāgārjuna shows this not to be the case.
 
 > "Like a poisonous snake when held incorrectly or a magic spell when improperly used, emptiness, when incorrectly understood, devastates the simple minded"
-
-Emptiness is not nothingness. Emptiness is form.

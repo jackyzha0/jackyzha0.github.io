@@ -12,6 +12,8 @@ The key to the rise of *Homo Sapiens* and the anthropocene wasn't due to the rat
 
 _Collective intelligence capabilities_: decision-making technologies, processes, and institutions that expand a group’s capacity to construct and cooperate towards shared goals.
 
+See also: [[thoughts/Transformative Technology Trilemma]]
+
 ## Knowledge Illusion
 Humans also have this 'knowledge illusion' where we think we know a lot, even though individually we know very little.
 

@@ -5,7 +5,7 @@ tags:
 - fruit
 ---
 
-*Extension of my thoughts about [play](thoughts/play.md) and discussions from our [Interact Circle](thoughts/Interact%20Circle%20W21.md) on [Hackathon Culture](posts/hackathons.md) and Play.*
+*Extension of my thoughts about [play](thoughts/play.md) and discussions from our Interact Circle on [Hackathon Culture](posts/hackathons.md) and Play.*
 
 ## Defining play
 I've spent so much time thinking about how to ['bring back play'](posts/hackathons.md), yet not a lot of thinking about *what play is*. The more I think about it, the more nebulous it feels to define. I know examples of it when I see it -- the building of blanket forts during sleepovers, the joy of beating Minecraft for the first time with your friends -- but putting it into words feels difficult.

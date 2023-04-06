@@ -26,7 +26,9 @@ Main topics:
 - [[thoughts/supervised learning|Supervised learning]]
 - [[thoughts/No Free Lunch Theorem]]
 - [[thoughts/unsupervised learning|Unsupervised Learning]]
-- [[thoughts/gradient descent|Gradient Descent]]
+- Optimization
+	- [[thoughts/gradient descent|Gradient Descent]]
+	- [[thoughts/hyper-parameter optimization]]
 - [[thoughts/regularization|Regularization]]
 - Regression
 	- [[thoughts/linear regression|Linear Regression]]

@@ -7,6 +7,8 @@ tags:
 - PHIL451A
 ---
 
+One cannot learn what it is like to subjectively experience something without actually experiencing it
+
 ## Frank Jackson's Knowledge Argument[^1]
 - Mary is confined to a black-and-white room, is educated through black-and-white books and through lectures relayed on black-and-white TV. Through this, she learns everything there is to know about the physical nature of the world, including all there is to know about the causal and relational facts consequent upon all this, including of course functional roles.
 - If physicalism is true, she knows all there is to know.
@@ -24,7 +26,7 @@ The implication here is that Mary cannot learn what it is like to subjectively e
 	- There is no further conversion of neural signals into a qualitative medium
 - No Cartesian theatre in the brain
 	- There is no central place where all things 'come together' and [consciousness](thoughts/consciousness.md) happens
-	- Point of view of the observer is smeared over a large volumen of the brain with different networks (distributed model of representation)
+	- Point of view of the observer is smeared over a large volume of the brain with different networks (distributed model of representation)
 - Consciousness is like fame
 	- “Just as becoming famous is not a precisely datable event like being transduced into a medium (like being televised), so achieving consciousness in the brain is not a precisely datable transition in the brain.
 - No qualia if intrinsic properties are *instantiated by* rather than *represented by* neural activity

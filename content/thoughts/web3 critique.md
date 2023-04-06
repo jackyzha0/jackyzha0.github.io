@@ -5,6 +5,16 @@ tags:
 - sapling
 ---
 
+Blockchains only really make sense for a very narrow subset of applications where
+
+1. Peer-to-peer operation: software that can be run by anyone, and messages are passed directly between them
+2. Strict global consensus: all peers must agree on exactly the same results
+
+Till date, there are only two applications where both criteria are necessary: money & identity (and technically not *strictly* necessary either)
+
+More in [Polynya on Blockchain Apps](https://polynya.mirror.xyz/ARsT1Anpqrj88LRGRE5n5gNpb_CeG9Azy8mvDBv8deE)
+
+## Moxie
 Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-impressions.html?curius=1294)
 
 - Web3 lacks [infrastructure](thoughts/infrastructure.md)
@@ -19,15 +29,7 @@ Really good piece by [Moxie on web3](https://moxie.org/2022/01/07/web3-first-imp
 	- We just rely on these two pieces of critical (centralized!) pieces of infrastructure to produce the correct results and not be bad actors.
 - [Degraded Blockchain problem](thoughts/Degraded%20Blockchain%20problem.md)
 
-### Vitalik Response
-[Source: Vitalki's Reddit Response](https://www.reddit.com/r/ethereum/comments/ryk3it/my_first_impressions_of_web3/hrrz15r/)
+## Obessions with profit
+Web3 supposed allows us to 'codify' the set of values that a public goods represents. Yet, in practice in web3, "little space has been made for different values to be discussed or enacted. Which is why, in the absence of ways to enact our shared values, we default to the lowest common denominator: profit."
 
-Levels of connecting to the blockcahin
-1.  Use a Binance account.
-2.  Run a piece of code that asks the Infura API endpoint what the blockchain state is, trust the answer. However, keys are still kept locally; the code signs transactions locally and sends them to the Infura API endpoint to be re-broadcasted.
-3.  Same as (2), but the code also runs a [light client](https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-protocol.md) to verify the signatures on the block headers and uses Merkle proofs to verify individual account and storage data.
-4.  Same as (3), but the code talks to N different API endpoints run by N different companies, so only 1 of them need to be providing honest answers for the connection to be reliable.
-5.  Same as (4), but instead of pre-specifying N API endpoints the code connects directly to a [p2p](thoughts/peer-to-peer.md) network
-6.  Same as (5), but the code also does data availability sampling and accepts fraud proofs, so it can detect and refuse to accept blocks that are invalid.
-7.  Run a fully verifying node.
-8.  Run a fully verifying node that also participates in mining/staking.
+The United States Dollar does not have a responsibility to profit its holders. A cryptocurrency is a monetary instrument, not a business.

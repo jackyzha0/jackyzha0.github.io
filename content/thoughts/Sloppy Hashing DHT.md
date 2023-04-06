@@ -35,7 +35,7 @@ Similar concept to isochrone maps
 ![[thoughts/images/isochrone.png|500]]
 
 ## Downsides
-- The privacy sucks sucks: nodes publish not only their [[thoughts/IP Addresses]] but the path to get there too!
+- The privacy sucks sucks: nodes publish not only their [[thoughts/IP Address]] but the path to get there too!
 - Requires network size estimation which is hard to do if the number of nodes are small (i.e. requires a large deployment to be effective)
 	- Can be done using [[thoughts/Network Theory]] as lookups are on average $O(\log n)$ hops
 - Not [[thoughts/Byzantine Faults|BFT]]: a malicious actor could pollute the DHT and cause really poor routing

@@ -34,6 +34,7 @@ tags:
 - http://richardmattka.com/prototypes/red-shift
 - https://ventureworks.io/
 - https://henryheffernan.com/
+- https://pouria.dev/unknown-pleasures
 
 ## Resources
 - https://www.logo-archive.org/

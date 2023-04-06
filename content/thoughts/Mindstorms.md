@@ -18,34 +18,25 @@ When knowledge can be broken up into "mind-size bites," it is more communicable,
 ### Computing as a medium/language
 "Seymour saw the computer not just as a problem-solving tool but as an expressive medium. He believed that learning to program was analogous to learning to write, providing children with new ways of organizing and expressing their ideas."
 
-Does language matter when programming?
-"A programming language is like a natural, human language in that it favors certain metaphors, images, and ways of thinking. The language used strongly colors the computer culture" ([linguistic relativism](thoughts/linguistic%20relativism.md))
+Does language matter when programming? "A programming language is like a natural, human language in that it favors certain metaphors, images, and ways of thinking. The language used strongly colors the computer culture" ([linguistic relativism](thoughts/linguistic%20relativism.md))
 
 ### Microworlds and simplification
 Newton "understood" the universe by reducing whole planets to points that move according to a fixed set of laws of motion. Is this grasping the essence of the real world or hiding its complexities?
 
-restricted microworlds give students the freedom to explore, without needing to ask for permission or reassurance from teachers
+Restricted microworlds give students the freedom to explore, without needing to ask for permission or reassurance from teachers
 
 In school, false theories are no longer tolerated. Our educational system rejects the "false theories" of children, thereby rejecting the way children really learn.
 
-Danger of 'simplicity': [Design Justice](thoughts/Design%20Justice.md)
-"Imagine a suggestion that we invent a special language to help children learn to speak. This language would have a small vocabulary of just fifty words, but fifty words so well chosen that all ideas could be expressed using them. Would this language be easier to learn? Perhaps the vocabulary might be easy to learn, but the use of the vocabulary to express what one wanted to say would be so contorted that only the most motivated and brilliant children would learn to say more than 'hi'."
+Danger of 'simplicity': [Design Justice](thoughts/Design%20Justice.md): "Imagine a suggestion that we invent a special language to help children learn to speak. This language would have a small vocabulary of just fifty words, but fifty words so well chosen that all ideas could be expressed using them. Would this language be easier to learn? Perhaps the vocabulary might be easy to learn, but the use of the vocabulary to express what one wanted to say would be so contorted that only the most motivated and brilliant children would learn to say more than 'hi'."
 
 ### On mechanical thinking
-Discovery cannot be a setup; invention cannot be scheduled
+People often fear that using computer models for people will lead to mechanical or linear thinking: They worry about people losing respect for their intuitions, sense of values, powers of judgement. They worry about instrumental reason becoming a model for good thinking. I take these fears seriously but do not see them as fears about computers themselves but rather as fears about how culture will assimilate the computer presence.
 
-People often fear that using computer models for people will lead to mechanical or linear thinking: They worry about people losing respect for their intuitions, sense of values, powers of judgement. They worry about instrumental reason becoming a model for good thinking. I take these fears seriously but do not see them as fears about computers themselves but rather as fears about hwo culture will assimilate the computer presence.
-
-Relevant to [AI systems](posts/agi.md)
-The definition of artificial intelligence can be narrow or broad. In the narrow sense, AI is concerned with extending the capacity of machines to perform functions that would be considered intelligent if performed by people. Its goal is to construct machines, and, in doing so, it can be thought of as a branch of advanced engineering... In order to make a machine capable of learning, we have to probe deeply into the nature of learning. And from this kind of research comes the broader definition of artificial intelligence: that of cognitive science.
+Relevant to [AI systems](posts/agi.md): The definition of artificial intelligence can be narrow or broad. In the narrow sense, AI is concerned with extending the capacity of machines to perform functions that would be considered intelligent if performed by people. Its goal is to construct machines, and, in doing so, it can be thought of as a branch of advanced engineering... In order to make a machine capable of learning, we have to probe deeply into the nature of learning. And from this kind of research comes the broader definition of artificial intelligence: that of cognitive science.
 
 "The question to ask about the program is not whether it is right of wrong, but if it is fixable. If this way of looking at intellectual products were generalized to how the larger culture thinks about knowledge and its acquisition, we all might be less intimidated by our fears of 'being wrong.'"
 
 ### [Multiple realization](thoughts/multiple%20realization.md)
-Men have always been interested in flying. Once upon a time, scientists determined to understand how birds fly. First they watched them, hoping to correlate the motion of a bird's wings with its upward movement. Then they proceeded to experiment and found that when its feathers were plucked, a bird could no longer fly. Having thus determined that feathers were the organ of flight, the scientists then focused their efforts on microscopic and ultramicroscopic investigation of feathers in order to discover the nature of their flight-giving power.
-
-"You have no reason to suppose that airplanes and birds work the same way -- birds have no propellors, airplanes have no feathers"
-
 "If we had to base our opinions on observation of how poorly children learned French in American schools, we would have to conclude that most people were incapable of mastering it. But we know that all normal children would learn it easily if they lived in France."
 
 In retrospect, we know that the road that led from nineteenth-century transportation was quite different. The invention of the automobile and the airplane did not come from a detailed study of how their predecessors, such as horse-drawn carriages, worked or did not work.

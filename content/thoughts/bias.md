@@ -7,36 +7,25 @@ tags:
 
 Bias: a slant or preference
 
-More detailed post on [Bias in AI](posts/bias-bug.md). Related readings: [Design Justice](thoughts/Design%20Justice.md), [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md)
+> "We use the term bias to refer to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others... A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate" (Friedman and Nissenbaum, 1996)
+
+More detailed post on [Bias in AI](posts/bias-bug.md). Related readings: [Design Justice](thoughts/Design%20Justice.md), [To Live in their Utopia](thoughts/To%20Live%20in%20their%20Utopia.md), [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md), [Algorithms of Oppression](thoughts/Algorithms%20of%20Oppression.md), [[thoughts/data distributions]]
 
 ## Captchas
 How do you distinguish between human and non-human without discriminating against certain types of people (e.g. ethnicity, cultural background)? How does one prove their humanity without betraying anything else about them?
 
-"What is the universal human quality that can be demonstrated to a machine, but that no machine can mimic? What is it to be human?"
-
+> "What is the universal human quality that can be demonstrated to a machine, but that no machine can mimic? What is it to be human?"
+> 
 > "You need something that’s easy for an average human, it shouldn’t be bound to a specific subgroup of people, and it should be hard for computers at the same time. That’s very limiting in what you can actually do. And it has to be something that a human can do fast, and isn’t too annoying."
 
 Possibility of reverse CAPTCHAs where you can only pass if you get it wrong in the 'right' way? (e.g. optical illusions)
 
-## Ethical Matrices
-Who cares about my algorithm? Who are the stakeholders? Why do they care? What are their goals?
-
-## Search Engine Bias
-From [Social Bias in Information Retrieval](thoughts/Social%20Bias%20in%20Information%20Retrieval.md)
-
-Related: [data distributions](thoughts/data%20distributions.md)
-
-> "We use the term bias to refer to computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals in favour of others... A system discriminates unfairly if it denies an opportunity or a good or if it assigns an undesirable outcome to an individual or group of individuals on grounds that are unreasonable or inappropriate" (Friedman and Nissenbaum, 1996)
-
 ## 3 groups of study
 from [Design Justice](thoughts/Design%20Justice.md) and Friedman
 
-1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers.
-	- e.g. Notions of quality and authority bias embedded in the web content itself
-2. Technical Bias: some underlying aspect of the technology reproduces bias
-	- e.g. Design of crawlers/aggregate/surfacing algorithms for content, ranking features
-3. Emergent Bias: may not have been biased given its original [context](thoughts/context.md) of use or original user base but comes to exhibit bias when the context shifts or when new users arrive
-	- e.g. Responses to spam, content moderation, search suggestions
+1. Preexisting Bias: bias that exists in broader society, culture, and/or institutions is reproduced in the computer system, either intentionally or unintentionally, by systems developers. (e.g. notions of quality and authority bias embedded in the web content itself)
+2. Technical Bias: some underlying aspect of the technology reproduces bias (e.g. design of crawlers/aggregate/surfacing algorithms for content, ranking features)
+3. Emergent Bias: may not have been biased given its original [context](thoughts/context.md) of use or original user base but comes to exhibit bias when the context shifts or when new users arrive (e.g. responses to spam, content moderation, search suggestions)
 
 Cathy O’Neil: algorithms are “opinions embedded in code” -- [artifacts do indeed have politics](thoughts/Do%20Artifacts%20Have%20Politics.md)
 

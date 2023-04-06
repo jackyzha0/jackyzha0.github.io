@@ -14,7 +14,6 @@ tags:
 ## Making Simple Software
 [Source talk by pvh](https://vimeo.com/780013486)
 
-- Why is example code normally so simple? Well, it lives in an ideal world. It only cares about the happy path
-	- **Defensive code is complex**
+- Why is example code normally so simple? Well, it lives in an ideal world. It only cares about the happy path. **Defensive code is complex**
 - Vigilance works for small systems... but not large complex ones!
 	- Type systems off-load mental state and assumptions about the code and make it explicit

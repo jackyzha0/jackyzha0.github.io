@@ -5,7 +5,6 @@ tags:
 - seed
 ---
 
-
 ## Social Bias in Information Retrieval
 Source: Addressing Social Bias in Information Retrieval in *In Experimental IR Meets Multilinguality, Multimodality, and Interaction*
 

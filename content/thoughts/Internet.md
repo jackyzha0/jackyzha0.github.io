@@ -14,9 +14,9 @@ Not to be confused for the web. While the terms web and Internet are often used 
 
 See: [[thoughts/Postel's Law]]
 
-## [Niche at scale](thoughts/niche%20at%20scale.md)
+## Niche at scale
 
-> **The Internet allows you to scale any niche obsession**
+> **The Internet allows you to [[thoughts/niche at scale|scale any niche obsession]]**
 
 Location-based scaling before usually meant smaller audiences. Now, larger cities (and the internet at large) has allowed audience sizes to grow to ridiculous amounts.
 
@@ -60,7 +60,7 @@ Internet
 
 > "So the internet was a recipe for mortar, with an invitation for anyone, and everyone, to bring their own bricks."
 
-This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots [democracy](thoughts/democracy.md) and freedom. -> did this arise out of the [counterculture](thoughts/From%20Counterculture%20to%20Cyberculture.md)?
+This absence of central control, or even easy central monitoring, has long been celebrated as an instrument of grassroots [democracy](thoughts/democracy.md) and freedom.
 
 Gap of responsibility: Their designs naturally create gaps of responsibility for maintaining valuable content that others rely on.
 

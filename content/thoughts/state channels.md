@@ -16,7 +16,7 @@ Work by
 
 Properties
 - Near-instant finality: after all parties sign a state update, it can be considered final. Not instant because of dispute window
-- Strong privacy properties: every intermediate transaction happens 'within' the channel and doesn't need to be published to chain (which isn't true for sidechains for example)
+- Strong [[thoughts/privacy]] properties: every intermediate transaction happens 'within' the channel and doesn't need to be published to chain (which isn't true for sidechains for example)
 - Requires all parties to be available
 - Requires all participants to be hardcoded in the contract
 

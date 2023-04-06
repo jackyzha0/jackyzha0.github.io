@@ -29,7 +29,7 @@ See also: [[thoughts/clocks|clocks]]
 
 Uses the concept of epochs where $epoch = \lfloor \frac{(current \ time - genesis \ time)}{epoch \ time} \rfloor$
 
-Clocks used as part of the Filecoin protocol should be kept in sync, with offset less than 1 second so as to enable appropriate validation. Nodes SHOULD run an NTP daemon (e.g. timesyncd, ntpd, chronyd) to keep their clocks synchronized to one or more reliable external references.
+Clocks used as part of the Filecoin protocol should be kept in sync, with offset less than 1 second so as to enable appropriate validation. Nodes SHOULD run an [[thoughts/Network Time Protocol|NTP]] daemon (e.g. timesyncd, ntpd, chronyd) to keep their clocks synchronized to one or more reliable external references.
 
 Nodes have strong incentive to prevent their clock skewing ahead more than one epoch to keep their block submissions from being rejected. Similarly have a strong incentive to prevent their clocks skewing behind more than one epoch to avoid partitioning themselves off from the synchronized nodes in the network.
 

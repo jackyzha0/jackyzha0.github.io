@@ -9,7 +9,7 @@ tags:
 
 Partly works because we can utilize [collaborative thinking](/posts/collaborative-thinking). Related: [knowledge distillation](thoughts/knowledge%20distillation.md), [teaching](thoughts/teaching.md)
 
-Thinking about understanding knowledge as climbing a mountain. Every time novel work happens, the mountain gets a little bit taller.
+Thinking about accumulated societal knowledge as a mountain and understanding knowledge as climbing a mountain. Every time novel work happens, the mountain gets a little bit taller.
 
 > Mathematics is a striking example of this. For centuries, countless minds have climbed the mountain range of mathematics and laid new boulders at the top. Over time, different peaks formed, built on top of particularly beautiful results. Now the peaks of mathematics are so numerous and steep that no person can climb them all.
 
@@ -18,10 +18,10 @@ Yes, the climb is hard but it could be easier. Let's build staircases for the mo
 How do we reduce [interpretive labour](thoughts/interpretive%20labour.md) for learners?
 
 ## Debt in research
-* Poor exposition -> no good explanation of ideas and concepts
-* Undigested ideas -> it takes effort to polish ideas, developing the right analogies, language, and ways of thinking
-* Bad abstractions and [[thoughts/notation|notation]] -> abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge
-* Noise -> there's *too* much new progress being made each day. How do we choose what to focus on?
+* Poor exposition: no good explanation of ideas and concepts
+* Undigested ideas: it takes effort to polish ideas, developing the right analogies, language, and ways of thinking
+* Bad abstractions and [[thoughts/notation|notation]] : abstractions and notation are the user interface of research. To have bad notation is to have bad ways to interact with the underlying knowledge
+* Noise: there's *too* much new progress being made each day. How do we choose what to focus on? (see also: [[thoughts/attention]] scarcity)
 
 Not just about poorly explained ideas, but rather the lack of ideas being digested and worked through in public (communal messiness of thought). How can we create better abstractions, notations, and visualizations to improve how we interact and interface with ideas?
 

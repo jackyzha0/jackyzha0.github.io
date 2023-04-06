@@ -3,14 +3,15 @@ title: "Information Scales"
 date: 2022-01-07
 tags:
 - sapling
+aliases:
+- Engelbart Zoom
 ---
 
 Creating a browsable store of knowledge that provides something useful at all distance scales (e.g. viewing the entire library, just a subcategory, a single file, etc.)
-- can we create skimmable views on data? see https://twitter.com/kirkbyo_/status/1475523898238197771
 
-Create a spatially-anchored overview of the different 'branches' of knowledge
+For example, dictionaries cut [indentations](http://www.thefreedictionary.com/thumb+index) into the pages to help you find the neighborhood of your entry then let you flip along glancing at guide words to finish your search.
 
-Dictionaries cut [indentations](http://www.thefreedictionary.com/thumb+index) into the pages to help you find the neighborhood of your entry then let you flip along glancing at guide words to finish your search.
+Can we create [skimmable views on data](https://twitter.com/kirkbyo_/status/1475523898238197771)? Perhaps a spatially-anchored overview of the different 'branches' of knowledge
 
 ## Engelbart Zoom
 *[Engelbart on HyperScope](https://dougengelbart.org/content/view/154/86/)*

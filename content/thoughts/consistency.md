@@ -11,6 +11,8 @@ aliases:
 ### ACID Consistency
 The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time
 
+See also: [[thoughts/CAP Theorem]]
+
 ### Replication Consistency
 Many models to choose from! Most common being read-after-write consistency
 
@@ -33,24 +35,8 @@ Usually done through two-phase commit (2PC)
 
 But what if the coordinator crashes? The algorithm is blocked until coordinator recovers. We can use a fault-tolerant two-phase commit (uses [[thoughts/message broadcast#Total order broadcast|total order broadcast]])
 
-## Linearizability
-Defined as consistency in the face of concurrent reads/writes.
-
-Informally: every operation takes effect atomically sometime after it started and before it finished. All operations behave as if executed on a *single copy of the data*
-
-Not to be confused with serializability: transactions having the same effect as if they were run in some serial order. Also contrasting with [[thoughts/causality|causal]] relationships, linearizability is defined in terms of real-time whereas [[thoughts/causality|causal]] is defined in terms of message sending and receiving.
-
-The consequence/desired property of linearizability is that every operation returns an "up-to-date" value, sometimes called "strong consistency"
-
-We can guarantee linearizability of get (quorum read + read repair) and set (blind write to quorum). If events overlap, either order could happen and is ok.
-
-Not without downsides
-- Performance costs: lots of messages and waiting for responses
-- Scalability limits: leader can be a bottleneck
-- Availability problems: if you can't contact a quorum of nodes, you can't process any operations
-
 ## Eventual Consistency
-Alternative to linearizability is eventual consistency.
+Alternative to [[thoughts/linearizability|linearizability]] is eventual consistency.
 
 If there are no more updates, **eventually** all replicas will be in the same state.
 

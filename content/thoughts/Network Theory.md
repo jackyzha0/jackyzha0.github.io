@@ -57,7 +57,10 @@ $$\langle d \rangle = \begin{cases}
 4. $\gamma > 3$: Small-world and random networks. Extremely unlikely to have large hubs, traversal time is on the order of $\ln N$
 
 ![[thoughts/images/distances in networks.png]]
+
 ## Network Robustness
+See also: [[thoughts/cascading failures]]
+
 ### Percolation Theory
 How many nodes do we have to delete to fragment a network into isolated components, assuming deletion is random?
 

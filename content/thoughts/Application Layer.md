@@ -1,5 +1,5 @@
 ---
-title: "Application Layer (Networking)"
+title: "Application Layer"
 date: 2022-02-26
 tags:
 - seed

@@ -16,14 +16,12 @@ Assume there is more than one individual, and there are at least three distinct 
 
 Unstated: Arrow also requires the unrestricted domain assumption (U)
 
-How can we get around this?
-1. Sen: give up liberalism (Pareto)
-	1. Argues that liberalism + Pareto leads to a contradiction in ordering axioms
-	2. Nozick's solution: give up the unrestricted domain assumption (U)
-		1. Liberalism excludes certain kinds of states (‘private’ alternatives) from social scrutiny in advance.
+How can we get around this? 
+- Sen says that we should give up liberalism (the Pareto condition). He argues that liberalism + Pareto leads to a contradiction in ordering axioms
+- Nozick's solution is to give up the unrestricted domain assumption (U). Liberalism excludes certain kinds of states (‘private’ alternatives) from social scrutiny in advance.
 
 ## Similarities to Group Membership
-See also: [[thoughts/access control]]
+Rough thoughts on how we might prove decentralized [[thoughts/access control]] to be impossible.
 
 Suppose we encode access in terms of some function $A_{i,j}$ where $A_{i,j}$ is true if subject $i$ considers $j$ to be in the group and false otherwise.
 

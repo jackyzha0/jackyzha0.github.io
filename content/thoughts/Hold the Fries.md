@@ -12,13 +12,13 @@ A fog seemed to lift from Shaun's brain and he realized he had been staring at t
 
 "Same as usual I guess. Deluxe Burger, hold the fries. I just want the coke."
 
-"You haven't changed a smidge, huh" Cassidy chuckled. "I got'cha. On me this time."
+"You haven't changed a smidge, huh" Cassidy chuckled. "I gotcha. On me this time."
 
-"Nah, Cass you really don't need to..." he hesitated because he know it wasn't true. The tattered, oil covered t-shirt and beat up Nikes with the sole on the left shoe coming loose told Cassidy otherwise.
+"Nah, Cass you really don't need to..." he hesitated because he know it wasn't true. The tattered, oil covered t-shirt and beat up Nikes told Cassidy otherwise.
 
 "Two Deluxe Burger Combos, no fries please!"
 
-Shaun shuffled his shoes a little bit, almost as if he suddenly became a little more conscious of how he looked beside her neatly pressed blazer and slightly waxed hair. After all, *she* was the one who looked out of place, a stark contrast to the greasy dinge of the burger shop and the unearthly pale glow of fluorescent lights. Sometimes, you could see a mouse scamper by but Cassidy seemed unfazed.
+Shaun shuffled his shoes a little bit, almost as if he suddenly became a little more conscious of how he looked beside her neatly pressed blazer and slightly waxed hair. After all, *she* was the one who looked out of place, a stark contrast to the greasy dinge of the burger shop and the unearthly pale glow of fluorescent lights.
 
 "So, uh. You been up to much?" Cassidy asked.
 
@@ -78,7 +78,7 @@ They both sat, facing each other, a world of understanding apart. Both not under
 
 "You are treating time spent with me like some sort of fucking charity. *Oh I'll go spend some time with poor old Shauney so I can rub it in his face how successful and cool I am*"
 
-"-that really wasn't my intention!" Cassidy butted in, her voice faltering. "I just wanted to catch up with old times."
+"-that really wasn't my intention!" Cassidy butted in, her voice faltering. "I just wanted to catch up like old times."
 
 "Old times are old times. They're gone. You shouldn't dig them up. They're just going to make you feel sad. And you don't need that, do you? You're happy now. You have no problems. You're doing great." Shaun said, staring at the empty plates.
 
@@ -88,7 +88,7 @@ They both sat, facing each other, a world of understanding apart. Both not under
 
 "You're sorry! You're sorry!" Shaun stood up and shouted, his voice echoing throughout the restaurant. If anyone else had been around, they would have turned to look at them too.
 
-"Things will never be the same again, Cass. Y'know, I used to think we would end up together one day. We would take two different paths to get there, but the destination would be the same." Shaun said, his voice trembling. "But I realize now that things just won't be the same. I mean, *look* at us. I'm a druggie and you're a 'professional'. What could we possibly have in common? Things just aren't what they used to be. They can't be."
+"Things will never be the same again, Cass. Y'know, I used to think we would end up together one day. We would take two different paths to get there, but the destination would be the same." Shaun said, his voice trembling. "But I realize now that things just won't be the same. I mean, *look* at us. I'm a *me* and you're a 'professional'. What could we possibly have in common? Things just aren't what they used to be. They can't be."
   
 Shaun stood up and began to walk away, but Cassidy grabbed his arm. "Wait, Shaun. Please don't go. I know you are going through a lot. But we can figure this out together. We always have."
 

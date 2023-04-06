@@ -21,9 +21,8 @@ Mass media communications theory
 
 ## Personalization as a form of gatekeeping
 - Information flow and filtering is based on individual and/or group profiles
-- Bozdag( 2013): personalization leads to more [bias](thoughts/bias.md) rather than less
+- Bozdag (2013): personalization leads to more [bias](thoughts/bias.md) rather than less
 - Cass Sunstein: "information cocoons"
 - Serves a sort of invisible auto propaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar
 
-## Governmental
-[Google Takedown Requests](https://transparencyreport.google.com/government-removals/government-requests)
+Potential dangers of [[thoughts/cozy software|personal software]]

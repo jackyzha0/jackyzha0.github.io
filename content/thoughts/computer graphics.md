@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+See also: [[thoughts/rendering]], [[thoughts/imaging]], [[thoughts/illumination]], [[thoughts/colour]], [[thoughts/GLSL]]
+
 ## Coordinate Frames
 Let $A$ be the original basis and $B$ be the new basis
 
@@ -64,5 +66,3 @@ i_3 & j_3 & k_3 & P_{eye3} \\
 
 $$M_{view} = M_{cam}^{-1}$$
 
-
-See also: [[thoughts/rendering]], [[thoughts/imaging]], [[thoughts/illumination]], [[thoughts/colour]]

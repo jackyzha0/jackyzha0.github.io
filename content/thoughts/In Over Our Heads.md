@@ -18,16 +18,19 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 ### Stage 2: Self
 - the subject (self) is a collection of short-term practical interests
 - [[thoughts/ethics|ethics]] in this mode is “instrumental”: aimed at satisfying your own needs, while working with or around other people’s. Relationships are “transactional”: transient alliances for mutual benefit.
+
 ### Stage 3: Communal
 - no longer a collection of interests but you *have* interests
 - you are *in* relationships and find yourself defined by them
 - the other’s point of view matters to us intrinsically, not just extrinsically as a means of satisfying our more egocentric purposes -- one gains the ability to put oneself in the other person's shoes
 - stage 3’s limitation is that it cannot resolve conflicts between responsibilities to different relationships. If one person wants you to do something, and another person wants you to do something different, there is no good basis for decision
 - it’s impossible to base a large-scale society on the communal mode, because it’s so ineffective at coordinating complex group activities. (If individuals frequently fail to do their specific, agreed tasks, nothing can get done.) Modern societies are based on the systematic mode -- see [group limits](thoughts/group%20limits.md) and [social contracts](thoughts/social%20contracts.md)
+
 ### Stage 4: Systematic
 - you no longer are in relationships that define you; you have relationships
 - you are “self-authored”: you choose your own principles, projects, and commitments
 - it means seeing the other person for who they really are. Emotions are just something people have, from time to time. Those need to be dealt with, but should not be taken too seriously. Relating to the other person’s principles, projects, and commitments means supporting what they most care about in the longer run
+
 ### Stage 5: Fluid
 - systems are relativized. They move from subject to object, and are subordinated to, and organized by, the process of meaning-making itself
 - you are no longer defined as a system of principles, projects, and commitments. You have several such systems, “multiple selves,” none of them entirely coherent, and which have different values—and this is no longer a problem, because you respect all of them
@@ -54,20 +57,6 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 	- "Suppose you have a dog. A big-hearted, high-energy dog who begins to bark, and won't shut up, every time someone approaches your door. Now one day your dog starts into howling something first. He sounds a terrible alarm. You look out the window and it's just your friendly neighbourhood mailman. So what do you do? You aren't going to shoot your dog dead. He's a pain but you wouldn't think of it. Your dog loves you. He barks to warn you when *anyone* approaches. He wants nothing bad to happen to you. That's just how he is. Problem is, he's completely indiscriminate. He thinks everyone's a danger, barks at anyone who approaches... You're *going to have a look for yourself*. You're going to bend over and stroke your dog. 'Down boy,' you say. 'It's just the postman. No harm here, silly guy'"
 	- This is very much a metaphor for many familial relationships (especially in Asian-Canadian/Asian-American families) in which family is incredibly overprotective of their children, despite the pleas of the children to have their own independence and to not be constantly told of what to do (I am guilty of this as well)
 	- Here it is noteworthy that suggested way of navigating this relationship is one that puts you the *relation* between you and the parents as an object rather than the subject -- to realize that you no longer are in relationships that define you; you *have* relationships (A stage 3 to stage 4 development)
-
-## [Burnout](thoughts/burnout.md)
-Maslach describes the "burnout prone individual" as one who mostly yield to the other without adapting to their own capacity: "is often unable to exert control over a situation and will passively yield to its demands rather than actively limiting them to his capacity to give... faced with self-doubt this person tries to establish a sense of self-worth by winning the approval and acceptance of other people"
-
-This is a very fourth-order consciousness of viewing burnout when in fact most people are not even fourth-order (majority is third-order!)
-
-Culture-as-school: the poor school (our society) whose favourite students are the ones it does not have to teach
-- this sort of psychological assimilation amounts to a process by which difference and diversity are systematically removed
-
-## [Constructivism](thoughts/constructionist.md)
-Our capacity to select, regulate, act upon, and make decisions about raw data
-
-- We select in, but we also select out. Having an active way of hearing also meant that we were deaf to other perfectly "good" sound in the room. We just didn't hear it. For us it wasn't happening.
-- Having put our world together, are we awake to the fact that it is an *invented* reality? Do we tend to take our construction of reality as Reality, as the fact of "how it is out there?"
 
 ## On [the Self](thoughts/the%20Self.md) and being whole
 

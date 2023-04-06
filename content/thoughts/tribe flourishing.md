@@ -25,10 +25,7 @@ It’s [[trust|trusting]] everyone else in the group is committed to upholding a
 
 Takeaways
 - Shared knowledge graph tooling is a common pain point and one no one has solved well
-- Frictionful onboarding can be good! "What does work is having people join our open calls, playing with ideas and tasks they resonate with, and progressively getting more involved"
-
-## 'Back to the Land'
-A lot of similar concepts to [FCTC](thoughts/From%20Counterculture%20to%20Cyberculture.md) around digital communalism and back-to-the-land movements
+- [[thoughts/friction|Friction-ful]] onboarding can be good! "What does work is having people join our open calls, playing with ideas and tasks they resonate with, and progressively getting more involved"
 
 ## Squad Wealth
 [Source: *Other Internet* on Squad Wealth](https://otherinter.net/research/squad-wealth/)
@@ -36,14 +33,6 @@ A lot of similar concepts to [FCTC](thoughts/From%20Counterculture%20to%20Cyberc
 "Squad culture is the antithesis of neoliberal individualism. Millennials are healing from decades of irony poisoning, rediscovering what it's like to have generative, exploratory relationships with one another."
 
 _The squad economy primarily yields non-monetary forms of value_
-
-## Friends > Communities
-[Source: friends > communities, *Sari Azout*](https://sariazout.substack.com/p/58-friends-communities)
-
-"This is about building the picks and shovels for intimate, intentionally small groups of friends and Internet friends to build things together, live together, and create wealth together. Unlike the Discord communities you’re part of, the small groups I’m thinking of have to stay small to survive — they’re small by design. Can you really be yourself in group chats with 50+ people?"
-
-## [Mutual Aid](thoughts/Mutual%20Aid.md)
-[Chama](https://en.wikipedia.org/wiki/Chama_(investment))'s for the modern age, [Communities of Fate](thoughts/Community%20of%20Fate.md)
 
 ## Small Group
 [Source: James Mulholland](https://jmulholland.com/small-group/)

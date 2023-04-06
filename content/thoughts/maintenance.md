@@ -7,6 +7,8 @@ tags:
 
 Maintenance: the gritty upkeep work that keeps the [infrastructure](thoughts/infrastructure.md) of the world running.
 
+One of my favourite examples is the [constant rebuilding of the Ise Grand Shrine](https://en.wikipedia.org/wiki/Ise_Grand_Shrine). Retaining knowledge through constant revision
+
 ## [Incentivizing](thoughts/incentives.md) Maintenance
 *The Maintainers*: the individuals whose work keeps ordinary existence going rather than introducing novel things. Related to [paid open source](posts/paid-open-source.md), how do we incentivize maintenance?
 
@@ -29,7 +31,7 @@ Can we use [web3](thoughts/web3.md) to 'codify' maintenance as a value? Is maint
 
 The stalest innovation stories focus on well-to-do white guys sitting in garages in a small region of California, but human beings in the Global South live with technologies too. Which ones? Where do they come from? How are they produced, used, repaired?
 
-Related: [Lindy Effect](thoughts/Lindy%20effect.md), [broken world thinking](thoughts/broken%20world%20thinking.md)
+Related: [Lindy Effect](thoughts/Lindy%20effect.md)
 
 Third, focusing on [infrastructure](thoughts/infrastructure.md) or on old, existing things rather than novel ones reminds us of the absolute centrality of the work that goes into keeping the entire world going. We need to acknowledge and attribute where we are today to the shoulders of the giants we stand on.
 
@@ -67,3 +69,4 @@ Aryn Martin, Natasha Myers, and Ana Viseu propose that a critical practice of ca
 Historian Nathan Ensmenger reports that “from the early 1960s to the present, software maintenance costs have represented between 50 and 70 percent of all total expenditures on software development.”
 
 The internal maintenance work isn’t supposed to be visible to end users, who tend to like the idea that they’re working with “raw” data. Yet “data never come as raw,” Plantin observes. “Multiple interventions are always needed before data can be reused.”
+

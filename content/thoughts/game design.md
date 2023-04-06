@@ -12,7 +12,7 @@ Related: [games](thoughts/games.md)
 
 > A mistake we made early on was looking primarily at metrics like retention and monetization. These simply don’t tell us much about what motivates players to play. If I were to build the game again, I would have implemented the togetherness metric for the very first private alpha.
 
-A lot of pedagogy is covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?
+A lot of pedagogy covers the same questions as game design (especially tutorials): how much explicit guidance should a student/player get in an activity?
 
 The "[vow of silence](https://www.youtube.com/watch?v=xrDZ--AuiL8)": to preserve the joy of discovery, games should carefully structure their activities so that players will learn what they need through [play](thoughts/play.md). An approach very similar to the [constructionist](thoughts/constructionist.md) ones found in [Mindstorms](thoughts/Mindstorms.md)
 
@@ -37,18 +37,15 @@ The best games are designed to be played with [friends](thoughts/friendship.md).
 ### Toxicity
 > At the root of much toxicity is the misdirection of our human need to belong
 
-When humans feel like they lack membership in healthy, eudaimonic, organizations, they experience stress and seek to rapidly remedy the situation (e.g. lashing out at others in hopes that putting others down helps them rise in status).
+When humans feel like they lack membership in healthy, eudaimonic organizations, they experience stress and seek to rapidly remedy the situation (e.g. lashing out at others in hopes that putting others down helps them rise in status).
 
 In toxic systems every new user is potentially rewarded if they adopt toxic behaviours.
 
 ### Prosocial Game Design
 Three main pitfalls
-1. Psychology: there are a lot of requirements to build friendships, like right sized groups of people, correct density, and engagement in mutually dependent reciprocal activities.
+1. Psychology: there are a lot of requirements to build [[thoughts/friendship|friendships]], like right sized groups of people, correct density, and engagement in mutually dependent reciprocal activities.
 2. Logistics: rigid human limits on how many relationships they can maintain and how long it takes them to form new ones (see: [group limits](thoughts/group%20limits.md))
-3. Economics: games are built on an economic foundation of resources (creation, transformation, trade, and consumption). However, it is hard to get economic incentives to align with those of social behaviour. "In particular, many of the key elements required by the psychological and logistical aspects of friendship formation are systematically undervalued within common economic practices."
-
-### Boundaries between the real world and the [virtual world](thoughts/virtual%20worlds.md)
-There’s limited permeability of the boundary between the real world and the cartoon world. You can think of this as the designer writing out the import / export laws for their bubble of play
+3. [[thoughts/economics|Economics]]: games are built on an economic foundation of resources (creation, transformation, trade, and consumption). However, it is hard to get economic incentives to align with those of social behaviour. "In particular, many of the key elements required by the psychological and logistical aspects of friendship formation are systematically undervalued within common economic practices."
 
 ### Elements of the internal economy
 - Tokens: base units of quantity (can represent attention, time, or value). They act as goods, products, or currencies
@@ -94,6 +91,7 @@ However, this 'trust value' should not be public for the sake of avoiding conver
 One also needs to keep in mind that trust differs across social contexts
 
 For new players, one of the scariest things is requirement to engage in specialized, high coordination group performances. Building towards high trust using a ladder:
+
 ![](/thoughts/images/trust-ladder.png)
 
 ### [Positive Sum](thoughts/positive%20sum.md) Resources
@@ -101,7 +99,8 @@ An economy of zero sum resources is a world of scarcity. The challenge economics
 
 In [virtual worlds](thoughts/virtual%20worlds.md), we can make almost any resource positive sum. When a monster drops loot for one player, it can also drop loot for any other player that did damage.
 
-However, truly abundant worlds are not super fun to play in. How can we design for infinite source and imbalanced economies?
+However, truly abundant worlds are not super fun to play in (constraints are what make [[thoughts/games]] interesting). How can we design for infinite source and imbalanced economies?
+
 - Per players caps: cap number of harvestable positive sum resources per player
 - Per group caps: cap total number of harvestable items per group of players
 - Transaction costs: can prevent global pooling with large transaction taxes. This encourages local resource use

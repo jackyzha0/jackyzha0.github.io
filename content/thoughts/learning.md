@@ -7,6 +7,8 @@ tags:
 
 > Learning as an act of becoming really good at exploring terrain -- Shaun Martin
 
+See also: [[thoughts/teaching]]
+
 Framework for knowledge
 1.  Sensing → info intake, active reading
 2.  Reasoning → asking questions, applying knowledge, critical thinking

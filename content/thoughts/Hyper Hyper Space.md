@@ -25,5 +25,5 @@ To preserve operation commutativity, these untimely capability uses would need t
 Lack of finality is worrying for vast majority of applications. They resolve this in a weird manner by introducing causal relationships (e.g. this action is only valid if this previous one is valid). Even then, this weird form of [[thoughts/causality|causality]] doesn't actually solve finality.
 
 ## Connection
-WebRTC as underlying transport layer. Uses a signalling server that each peer runs. Not ideal, doesn't run a DHT so requires users to know address of other's signalling server.
+WebRTC as underlying transport layer. Uses a signalling server that each peer runs. Not ideal, doesn't run a [[thoughts/DHT]] so requires users to know address of other's signalling server.
 

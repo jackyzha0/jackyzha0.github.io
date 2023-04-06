@@ -18,9 +18,6 @@ Common forms of Asymmetric Cryptography are [[thoughts/RSA|RSA]] and [[thoughts/
 1. Sender encrypts with public key
 	- Only private key can decrypt it
 	- Used for confidentiality
-1. Owner encrypts with private key
+2. Owner encrypts with private key
 	- Anyone can decrypt as public key is public
 	- Used for authentication/proof of ownership
-
-Can theoretically encrypt using private key but anyone with public key can decrypt!
-

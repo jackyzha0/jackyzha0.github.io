@@ -13,11 +13,9 @@ When other people build tools for us to use, they either design tools after thei
 
 Building tools for others usually means the creator builds for their own workflow/mental models: [universal design](thoughts/Design%20Justice.md). We create tools that work OK for the majority, but great for no one.
 
-tools you build yourself can grow and change as your workflow changes over time: less of a sense of [digital permanence](thoughts/digital%20permanence.md)
+Tools you build yourself can grow and change as your workflow changes over time: less of a sense of [digital permanence](thoughts/digital%20permanence.md)
 
 Are our tools extensions of who we are? At what point does it just become a part of our mind? Relevant: [the extended mind hypothesis](thoughts/Extended%20Mind%20Hypothesis.md)
-
-Can we kill the [desktop metaphor](thoughts/desktop%20metaphor.md)?
 
 ## Cool Approaches
 ### [Mercury](https://uxdesign.cc/introducing-mercury-os-f4de45a04289)

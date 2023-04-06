@@ -35,7 +35,7 @@ While I hope these will be mitigated in the future, I wanted to spend time explo
 3. As there are separate markets for data and applications, it creates competition based on service quality rather than on data ownership
 4. We can get the convenience of a single centralized platform without the lack of agency that typically comes with it.
 
-I’m tentatively calling this project Rhizome. It aims to be a data-persistence and identity layer for the distributed web.
+I’m tentatively calling this project Rhizome. It aims to be a data-persistence and identity layer for the [[thoughts/distributed web|distributed web]].
 
 1. A personal data pod that *you* own. Think iCloud or Dropbox but you have agency over how much storage you want, who has access to it, and what you want to do with it.
 2. A framework for easily developing cohesive peer-to-peer applications on top of data from the prev layer

@@ -7,6 +7,7 @@ tags:
 ---
 
 Modelling decisions where the outcome partially depends upon choices made by other rational agents. Assumes:
+
 1. Individual Rationality: each player maximizes their own utility and knows the full game tree/table
 2. Common Knowledge of Rationality: each player knows that all other players are rational
 
@@ -36,7 +37,7 @@ Some distinctions:
 			- Cooperate on round 1 and then take same action as opponent in previous round
 	- Upshot is that the case for cooperation (e.g. TT or C) is strong when the number of games is not known in advance
 		- We can always construct a strategy where D or some version of TT dominates when we know how many games there will be
-1. Finite vs infinite games
+8. Finite vs infinite games
 	- Not to be confused with the James Carse definition of infinite games
 
 ### Risk, Ignorance, and Uncertainty
@@ -100,8 +101,6 @@ Steps:
 	3. If $a-b-c+d = 0$ then there are pure-strategy equilibria so use those
 3. We do the same but with $q$
 4. Now set EU(Row) to 0. We essentially want to make EU(Row) constant so there is no incentive to switch
-
-
 
 ## Trust and Game Theory
 [Source: The Evolution of Trust by *Nicky Case*](https://ncase.me/trust/)

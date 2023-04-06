@@ -24,12 +24,12 @@ Does social capacity differ across different types of social interactions? e.g. 
 
 "Modern Loneliness" by Lauv covers a lot of similar topics
 
-Related: [tribe flourishing](thoughts/tribe%20flourishing.md)
+Related: [tribe flourishing](thoughts/tribe%20flourishing.md), [[thoughts/Dunbar's Number]]
 
 ## Research
-I feel there are dangers of large groups, especially within research. Larger groups lead to more bureaucracy and being ok with the average -- an effect of too many cooks in the kitchen. This leads to ideas that are at the middle of the [distribution](thoughts/data%20distributions.md) ([Vanilla Ice Cream effect](thoughts/Vanilla%20Ice%20Cream%20effect.md)) and tends to discourage more radical, out-of-distribution thinking and research.
+I feel there are dangers of large groups, especially within research. Larger groups lead to more bureaucracy and being ok with the average -- an effect of too many cooks in the kitchen. This leads to ideas that are at the middle of the distribution ([Vanilla Ice Cream effect](thoughts/Vanilla%20Ice%20Cream%20effect.md)) and tends to discourage more radical, out-of-distribution thinking and research.
 
-Related: [a new DARPA](thoughts/research%20institutions.md), [community perception](thoughts/communities.md)
+Related: [a new DARPA](thoughts/research%20institutions.md), [community perception](thoughts/communities.md), [[thoughts/independent research]]
 
 ## Scalability
 Why do we feel the need to find the billion-person version of communities? Is this just the [Silicon Valley](thoughts/Unrepeatable%20Miracle%20of%20Silicon%20Valley.md) question of scale?

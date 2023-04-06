@@ -12,14 +12,14 @@ tags:
 AD writes functions as a sequence of simple compositions
 $$f_5(f_4(f_3(f_2(f_1(x)))))$$
 
-And  writes derivatives using chain rule:
+And writes derivatives using the chain rule:
 
-$$f'(x) = f_5'(f_4(f_3(f_2(f_1(x)))))*f_4'(f_3(f_2(f_1(x))))*f_3'(f_2(f1 (x)))*f_2'(f_1(x))f_1'(x)$$
+$$f'(x) = f_5'(f_4(f_3(f_2(f_1(x)))))*f_4'(f_3(f_2(f_1(x))))*f_3'(f_2(f1 (x)))*f_2'(f_1(x))*f_1'(x)$$
 
 We decompose code using the chain rule to make derivative code. This can lead to a lot of redundant computations. We can use dynamic programming to avoid redundant calculations.
 
 ## Multi-variable AD
-We define a computation graph as a DAG. 
+We define a computation graph as a DAG
 - Root nodes are the parameters (and inputs).
 - Branch nodes are computed values (𝛼 values).
 - Leaf node is the function value.

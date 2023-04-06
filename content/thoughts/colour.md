@@ -5,24 +5,7 @@ tags:
 - seed
 ---
 
-## Texture
-Detail in an image that is at a scale too small to be resolved into its constituent elements and at a scale large enough to be apparent in the spatial distribution of image measurements
-
-Sometimes thought of as patterns composed of repeated instances of one or more identifiable elements called *textons*
-
-Can be used for
-- object identity (tell what it is from the textures)
-- object's shape (based on spatial deformation of texture)
-
-**Shape from texture**: Estimating surface orientation or shape from texture
-
-Typically, texture is a property of a region, not a point. But, then we run into a boundary segmentation problem. We comproimise by using a local window to compute a texture and assign it to a point.
-
-### Synthesis
-1. Inpainting (filling in holes)
-2. Produce large quantities of texture for [[thoughts/computer graphics|computer graphics]]
-
-Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)
+See also: [[thoughts/texture]]
 
 ## Colour
 Two lights whose spectral power distributions appear identical to most observers are called metamers
@@ -49,7 +32,7 @@ How do we produce the full RGB image from mosaiced sensor output?
 
 - Bilinear Interpolation: average your 4 neighbours
 - Bicubic Interpolation -> needs more neighbours, may overblur
-- Edge-aware interpolatin 
+- Edge-aware interpolation 
 
 ### Grassman's Law
 TL;DR, colour matching is, to an accurate approximation, linear
@@ -83,3 +66,4 @@ Colour blindness results from missing cone types
 - Deuteranope (green deficiency)
 - Protanope (red deficiency)
 - Tritanope (blue deficiency)
+

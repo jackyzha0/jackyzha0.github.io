@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-A directed acyclic graph where nodes correspond to versions of the content and arcs correspond to changes (diffs).
+A directed acyclic graph where nodes correspond to versions of the content and edges correspond to changes (diffs).
 
 Each node has an identifier which is the result of hashing the node's content.
 

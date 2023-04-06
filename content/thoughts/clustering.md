@@ -6,12 +6,11 @@ tags:
 - CPSC340
 ---
 
-
 Set of techniques to find components that belong together.
 
 Note: Grouping is how the human visual system perceives things and clustering is the actual algorithm itself.
 
-We want to assign examples to "groups".
+We want to assign examples to "groups"
 
 ## Methods
 - [[thoughts/K-means|K-means]] (most popular)

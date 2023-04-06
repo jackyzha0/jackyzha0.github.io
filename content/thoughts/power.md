@@ -25,7 +25,7 @@ Types of social power
 
 Power only exists due to social relations and inherent [trust](thoughts/trust.md) in the other to uphold the expectations we place of their role.
 
-## Identity Power
+## [[thoughts/identity|Identity]] Power
 Social stickiness of identities, people tend to do what is expected of their social roles and [norms](thoughts/social%20contracts.md)
 
 e.g. ‘People like us aren’t political’; and so they do not vote. Conversely, part of what encourages many of us to vote is a social self-conception in the collective imagination such that ‘People like us are politically engaged’.

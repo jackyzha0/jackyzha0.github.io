@@ -11,11 +11,7 @@ tags:
 
 DAOs give us structured ways to [collect](https://foundation.app/blog/pleasrdao), [invest](https://metacartel.xyz/), and [build](https://raidguild.org/) together.
 
-Inherently transparent, every aspect of the org is public.
-
-The most infamous DAO, [The DAO](https://en.wikipedia.org/wiki/The_DAO_(organization)), was a decentralized VC fund. Eventually raised $150M but had $60M hacked, leaving a negative impression/skepticism around DAOs for a while.
-
-Stable employment is possible through DAOs, Empty Set Dollar DAO is paying a $180k salary to their community manager
+Inherently transparent, every aspect of the org is public. The most infamous DAO, [The DAO](https://en.wikipedia.org/wiki/The_DAO_(organization)), was a decentralized VC fund. Eventually raised $150M but had $60M hacked, leaving a negative impression/skepticism around DAOs for a while.
 
 All members can still be anonymous and built reputations attached to their [pseudonym](thoughts/pseudonymity.md) rather than real [[thoughts/identity|identity]], hopefully helps to create a more even playing field
 

@@ -6,8 +6,3 @@ tags:
 ---
 
 There’s a timeless saying “garbage in, garbage out” in the field of Computer Science which essentially states that bad data or bad input will produce an output that’s of equal quality. This holds true for almost all the tech we use today, from trading algorithms to search results. If what we put into the system is inherently unclear or flawed, then the output will also give back something that’s ‘wrong’ or doesn’t align with our objectives.
-
-## On GPT
-Don't shit where you eat
-
-When it comes time to train GPTx it risks drinking from a dry riverbed. Because programmers won't be asking many questions on StackOverflow. GPT4 will have answered them in private. So while GPT4 was trained on all of the questions asked before 2021 what will GPT6 train on?

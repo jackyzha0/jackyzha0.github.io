@@ -8,24 +8,22 @@ tags:
 Related: [Moderation](thoughts/Moderation.md)
 
 ## Community Governance
--   bottom-up emergent properties vs top-down governance
--   homeostasis of communities
-    -   mix of internal and external influence
-    -   secluded vs public: [digital commons](thoughts/digital%20commons.md)
-    -   conforming to labels
-    -   self-fulfilling prophecies
--   sanctity of natural interactions
-    -   monetizing human interaction (ondeck)
-    -   how do we screen for value alignment?
-        -   interviews? (two-way vibe check)
-        -   publishing list of values
-        -   why introductions are hard: [introductions](/thoughts/introductions)
-            -   can never fully/properly frame yourself
+Homeostasis of communities
+- Important to have a healthy mix of internal and external influence
+	- How do the people within the community conform to the community? Or to external labels of people in the community
+-  Secluded vs public: [digital commons](thoughts/digital%20commons.md)
+
+Preserving the sanctity of natural interactions
+-   Not monetizing human interaction
+-   Screen for value alignment
+	-   Interviews (two-way vibe check)
+	-   Publishing list of values
+	-   Resonance with a large body of [[thoughts/writing]]
 
 ## The Art of Online Governance
 [Source: The Yak Online Governance Primer](https://mirhub.xyz/post/0x3b894393fbd9c879dc8d16d4d18277831bff9fa1/ajdo_so3gw34cltwbwnc2od3s0yt3us9c-c2nnpq_us/)
 
-![](/thoughts/images/online-governance-regimes.png)
+![[thoughts/images/online-governance-regimes.png|500]]
 
 See also: [[thoughts/games#Bartle Taxonomy of Player Types|Bartle Taxonomy of Player Types]]
 
@@ -39,7 +37,7 @@ Four Online Governance Regimes:
 
 ### Traps
 1. Techno Utopia trap
-	- an attempt 'to build it better' from tabula rasa (v ['move fast and break things'](thoughts/move%20fast%20and%20break%20things.md))
+	- an attempt 'to build it better' from tabula rasa (very ['move fast and break things'](thoughts/move%20fast%20and%20break%20things.md))
 	- "While this blend of tabula rasa thinking and romantic cherrypicking of reference points can occasionally lead to refreshing new insights and much-needed shedding of historical baggage, it can also lead to naive idealism and utopian, wishful thinking, and governance attempts that fail through inevitable disillusionment."
 2. Grand Old Institution trap
 	- opposite of the Techno Utopia trap
@@ -52,6 +50,5 @@ Four Online Governance Regimes:
 - Skeptical about normalizing airdrops as reward for early investors
 	- "Imagine if we had airdrops for more decisions relevant to the off-chain world, like participating in local council" 
 	- Wouldn't this just lead to optimizing for airdrops? This happened with ENS ([Goodhart's Law](thoughts/Goodhart's%20Law.md))
-- "Turing-Complete governance shouldn’t be advocated as a way to make the most complex algorithm possible. The point is that we can have any inputs we want, and any computational transformation of those inputs to produce some output. Vitalik has pointed out that [simple social systems with](https://vitalik.ca/general/2018/11/25/central_planning.html) more predictable outcomes and understandable processes for tweaking the outcome are more desirable"
-	- [Gall's law](thoughts/Gall's%20law.md)
+- "Turing-Complete governance shouldn’t be advocated as a way to make the most complex algorithm possible. The point is that we can have any inputs we want, and any computational transformation of those inputs to produce some output. Vitalik has pointed out that [simple social systems with](https://vitalik.ca/general/2018/11/25/central_planning.html) more predictable outcomes and understandable processes for tweaking the outcome are more desirable" (see: [Gall's law](thoughts/Gall's%20law.md))
 - "Imagine if every application on the [Internet](thoughts/Internet.md) by default had a zero-downtime, publicly exposed API"

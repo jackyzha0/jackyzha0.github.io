@@ -21,7 +21,7 @@ It's unsafe to reveal yourself to them in any authentic way. So we retreat into 
 In these cases, the specific context and audience is well-defined. More users are also turning to 'finstas' which are accounts focused for a closed group of friends and family rather than the entire public [internet](thoughts/Internet.md).
 
 How can we create [digital mindfulness](thoughts/digital%20mindfulness.md) in communication and conversation?
-![[thoughts/images/dark-forest.png|700]]*Illustration from Maggie Appleton's [Cozy Web](https://maggieappleton.com/cozy-web)*
+![[thoughts/images/dark-forest.png|600]]*Illustration from Maggie Appleton's [Cozy Web](https://maggieappleton.com/cozy-web)*
 
 ## Handmade Web
 From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)

@@ -35,7 +35,7 @@ tags:
 
 **P:** Well that is almost certainly problematic as well, is it not? Too many competing definitions cannot be a good thing. We have dictionaries for a reason. How would anyone new to learning English be able to grasp the nuances of all of the meaning and history behind each term? It would get overwhelming incredibly quickly.
 
-**W:** I concede that you have a good point. However, we can take a leaf out of Karl Popper's [^3] book: the *lie-to-children*. We can create simple glossaries and terminological definitions as some abstraction for the larger, more nuanced concepts of the real world.
+**W:** I concede that you have a good point. However, we can take a leaf out of Karl Popper's [^3] book: the *[[thoughts/Microworld|lie-to-children]]*. We can create simple glossaries and terminological definitions as some abstraction for the larger, more nuanced concepts of the real world.
 
 **P:** Wait... lying is categorically bad is it not?
 

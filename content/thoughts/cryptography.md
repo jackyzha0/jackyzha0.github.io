@@ -35,7 +35,6 @@ There are multiple ways of accomplishing this:
 
 ### Guarantees
 
-
 | |Hash|MAC|Digital Signature|
 |---|---|---|---|
 |Integrity|Yes|Yes|Yes|

@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-[Post by Nadia Asparouhova (she got married!)](https://nadia.xyz/idea-machines)
+[Post by Nadia Asparouhova](https://nadia.xyz/idea-machines)
 
 > Idea Machine: a network of operators, thinkers, and funders, centered around an ideology, that’s designed to turn ideas into outcomes.
 

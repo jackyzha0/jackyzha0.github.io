@@ -16,10 +16,10 @@ Scuttlebot forms a global cryptographic social network with its peers. Each user
 ### Identity
 Web-of-Trust style (see: [[thoughts/Public-key Infrastructure#PGP|PGP]]). There is no global registry of usernames. Instead, users name themselves, and share [[thoughts/petname|petnames]] for each other.
 
-Identities are ed25519 key pairs.
+Identities are Ed25519 key pairs.
 
 ### Pub Servers
-To get over the data availability problem and because Scuttlebot has no DHT or NAT-traversal utilities, users must "join" a Pub to distribute their messages on the WAN.
+To get over the data availability problem and because Scuttlebot has no [[thoughts/DHT]] or NAT-traversal utilities, users must "join" a Pub to distribute their messages on the WAN.
 
 Pubs are bots that follow users and rehost the messages to other peers, ensuring good uptime and no firewall blockage.
 

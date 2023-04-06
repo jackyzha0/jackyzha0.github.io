@@ -14,4 +14,4 @@ Two main components:
 ## Distributed Host Architecture
 Farcaster allows users to host their content on any web server as long as they sign everything with their private key.
 
-There are two options for hosting: self-hosting and using a managed host (Gmail does for email and Github does for [[thoughts/git|Git]]).
+There are two options for hosting: self-hosting and using a managed host (like Gmail does for email and Github does for [[thoughts/git|Git]]).

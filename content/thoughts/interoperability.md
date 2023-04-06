@@ -37,7 +37,7 @@ Apps in this operating system then declare 'default' apps for certain data types
 
 Ability to not only source local data but remote data too -> fetching from URLs, feeds, etc. 
 
-UNIX-level composability -- apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??). 
+UNIX-level [[thoughts/composable|composability]] -- apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??). 
 
 Auto-grouping of similar data? Set-theory for data?
 
@@ -69,7 +69,7 @@ However, in practice, most interoperability requires a tradeoff between
 - Predictability: the local intent of every operation is preserved
 
 ### Cambria
-Over time, a project using Cambria will accumulate many lenses, each describing the relationship between two versions. Migrations between distant versions are created by composing lenses into a graph where each node is a schema, and each edge is a lens. To translate data between two schemas, Cambria sends it through the shortest available path in the lens graph. These lenses must be kept in a place where even old versions of the program can retrieve them, such as in a database, at a well-known URL, or else as part of the document itself.
+Over time, a project using Cambria will accumulate many lenses, each describing the relationship between two versions. Migrations between distant versions are created by [[thoughts/composable|composing]] lenses into a graph where each node is a schema, and each edge is a lens. To translate data between two schemas, Cambria sends it through the shortest available path in the lens graph. These lenses must be kept in a place where even old versions of the program can retrieve them, such as in a database, at a well-known URL, or else as part of the document itself.
 
 ![](https://www.inkandswitch.com/cambria/static/lens-graph.svg)
 Caveats:

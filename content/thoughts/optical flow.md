@@ -5,9 +5,7 @@ tags:
 - seed
 ---
 
-Determine how objects (and/or the camera itself) move in the 3D world
-
-Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)
+How do we determine how objects (and/or the camera itself) move in the 3D world? Difficulty comes as motion is geometric whereas optical flow is radiometric (about an origin)
 
 See also: [aperture problem](thoughts/aperture%20problem.md)
 

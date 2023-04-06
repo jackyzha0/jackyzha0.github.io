@@ -17,4 +17,4 @@ An inherent [quantization](thoughts/quantization.md) and optimization of everyth
 
 "Creation of spaces of local abundance (as opposed to, say, a space like YCombinator, where the space is meant to help you reach a specific external outcome under time-bounded pressure) where technologists can [play](thoughts/play.md) with ideas and think freely, similar to parks and urban forests in a bustling city"
 
->  Decide carefully what to pay attention to out of an infinity of possible ends to apply your time and resources, and what worlds you wish to bring about. This is a call to build a beautiful and deeply good future.
+>  Decide carefully what to pay [[thoughts/attention]] to out of an infinity of possible ends to apply your time and resources, and what worlds you wish to bring about. This is a call to build a beautiful and deeply good future.

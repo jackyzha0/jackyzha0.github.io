@@ -17,8 +17,8 @@ An important concept in replication (and [[thoughts/message broadcast|message br
 
 This can be done by ensuring [[thoughts/idempotence|idempotence]] in our actions.
 
-## [[thoughts/State Machine Replication (SMR)|State machine replication]]
-Can be done by FIFO-[[thoughts/message broadcast#Total order broadcast|total order broadcasting]] every update to all replicas. Whenever a replica delivers an update message, it applies it to its own state
+## SMR
+[[thoughts/State Machine Replication (SMR)|State machine replication]]cCan be done by FIFO-[[thoughts/message broadcast#Total order broadcast|total order broadcasting]] every update to all replicas. Whenever a replica delivers an update message, it applies it to its own state
 
 This is what underlies a lot of [[thoughts/blockchain|blockchains]], distributed ledgers, smart contracts, etc. ([[thoughts/ethereum|Ethereum]] is just one big state machine)
 

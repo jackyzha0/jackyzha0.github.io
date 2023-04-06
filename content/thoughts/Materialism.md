@@ -18,11 +18,9 @@ Yet, it feels like consciousness is in intrinsic property. We don't know if some
 
 As an extended thought experiment, how similar do minds have to be to human ones to be considered conscious? 
 
-## On why physicalism is a poor theory[^1]
-- "Physical" is not well-defined
-	- Attempts to define it make physicalism either false, empty, or non-naturalist (which is contrary to the original motivation for the thesis)
-- Hempel's Dilemma
-	- If we define “physical” as what contemporary physics tells us is the physical, then physicalism is likely to be false
-	- If we define “physical” by what the ideal, completed physics tells us is the physical, then physicalism is empty (because don’t know what that physics will be)
+## On why physicalism is a poor theory
+"Physical" is not well-defined
 
-[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.
+Hempel's Dilemma:
+- If we define “physical” as what contemporary physics tells us is the physical, then physicalism is likely to be false
+- If we define “physical” by what the ideal, completed physics tells us is the physical, then physicalism is empty (because don’t know what that physics will be)

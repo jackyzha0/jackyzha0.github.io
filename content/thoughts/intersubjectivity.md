@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Related: [[thoughts/interdependence|interdependence]], [[thoughts/phenomenology|phenomenology]]
+Related: [[thoughts/interdependence|interdependence]], [[thoughts/phenomenology|phenomenology]], [[thoughts/double-consciousness]]
 
 Subjectivity is the perception or experience of reality from within one's own perspective
 

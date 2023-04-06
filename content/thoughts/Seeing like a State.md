@@ -13,7 +13,7 @@ Book by James C. Scott
 Lessons:
 1. Take small steps: In an experimental approach to social change, presume that we cannot know the consequences of our interventions in advance. Given this postulate of ignorance, prefer wherever possible to take a small step back, observe, and then plan the next small move (see also: [[thoughts/Collingridge dilemma]])
 2. Favour reversibility: prefer interventions that can easily be undone if they turn out to be mistakes. Irreversible interventions have irreversible consequences. Interventions into ecosystems require particular care in this respect, given our great ignorance about how they interact. Aldo Leopold captured the spirit of caution required: "The first rule of intelligent tinkering is to keep all the parts" (see also: [[thoughts/Chesterton's Fence]])
-3. Plan on surprises: in agricultural schemes, this may mean choosing and preparing land so that it can grow any of several crops. In planning housing, it would mean "designing in" flexibility for accommodating changes in family structures or living styles.
+3. Plan on surprises: in agricultural schemes, this may mean choosing and preparing land so that it can grow any of several crops. In planning [[thoughts/housing|housing]], it would mean "designing in" flexibility for accommodating changes in family structures or living styles.
 4. Plan on human inventiveness: always plan under the assumption that those who become involved in the project later will have or will develop the experience and insight to improve on the design
 
 These, unsurprisingly, have heavy overlap with the design of [[thoughts/software principles|software]]

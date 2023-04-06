@@ -1,8 +1,10 @@
 ---
-title: "LDP"
+title: "Linked Data Platform (LDP)"
 date: 2022-06-09
 tags:
 - seed
+aliases:
+- LDP
 ---
 
 Think of an LDP as a way of interacting with [[thoughts/RDF|RDF]] resources in a way that is similar to a web site with folders and documents in a RESTful manner.
@@ -11,7 +13,7 @@ The term "Linked Data" refers to an approach to publishing data that puts linkin
 
 Rules of LDP:
 1.  Use URIs as names for things
-2.  Use HTTP URIs so that people can look up those names
+2.  Use [[thoughts/HTTP]] URIs so that people can look up those names
 3.  When someone looks up a URI, provide useful information, using the standards (RDF, SPARQL)
 4.  Include links to other URIs, so that they can discover more things
 

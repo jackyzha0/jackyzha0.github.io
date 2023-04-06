@@ -16,3 +16,8 @@ Literally means 'Being-there'. Through the use of this expression, Heidegger cal
 Heidegger observes that because of technology, “all distances in time and space are shrinking” and “yet the hasty setting aside of all distances brings no nearness; for nearness does not consist in a small amount of distance.”
 
 See also [[thoughts/Tools for Conviviality|Tools for Conviviality]], [[thoughts/small technology]]
+
+## Context
+Values are just meaningless facts (hammer is for hammering). It leaves out information defining the *relation* of hammers to nails and the rest of the environment (readiness-to-hand)
+
+See also: [[thoughts/convex]]

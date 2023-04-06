@@ -11,5 +11,4 @@ Definition: The sum, over all replicas $i \in [ n ]$, of the number of authentic
 
 An authenticator is either a partial signature or a [[thoughts/digital signatures|signature]].
 
-
 ![[thoughts/images/authenticator-complexity-meme.png]]*Figure 2: Our Network Protocol (from [The Saddest Moment](https://scholar.harvard.edu/files/mickens/files/thesaddestmoment.pdf))*

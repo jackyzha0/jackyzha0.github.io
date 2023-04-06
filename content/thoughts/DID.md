@@ -23,8 +23,6 @@ Goals:
 ## High level overview
 A DID is a unique string that has a specific syntax. It can be resolved to a *DID Document* (also called a DDO - DID descriptor object) in a global, decentralized, key-value database (Verifiable Data Registry).
 
-It can be on any and multiple personal device that you own!
-
 Format: `did:xyz:abcde123456`
 1. `did`: fixed string, this is a DID
 2. `xyz`: method name (e.g. `btcr` which is built on top of [[thoughts/bitcoin|Bitcoin]], acts sort of like a namespace)
@@ -32,7 +30,7 @@ Format: `did:xyz:abcde123456`
 
 Can be thought of like a public decentralized keychain. It binds a public/private key pair to an identity, even when those keys are rotated out and replaced!
 
-The VDR can be hosted/based on any platform (e.g. on distributed [[thoughts/blockchain|blockchains]] or just hosted files on GitHub)
+The VDR can be hosted/based on any platform (e.g. on distributed [[thoughts/blockchain|blockchains]], [[thoughts/DHT|DHTs]], or just hosted files on GitHub)
 
 A DID Document can have arbitrary content. It contains references to "controllers" which are entities that have permission to make changes to a DID Document. It can also contain various cryptographic data delated to the DID subject (e.g. [[thoughts/RSA|RSA]], keys, etc.)
 

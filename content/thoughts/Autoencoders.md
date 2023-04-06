@@ -6,7 +6,9 @@ tags:
 - CPSC340
 ---
 
-Autoencoders are neural networks with same input and output.
+Autoencoders are neural networks with same input and output. They are [[thoughts/latent-factor model|latent-factor models]]
+
+Architecture:
 - Includes a bottleneck layer: with dimension $k$ smaller than input $d$.
 - First layers “encode” the input into bottleneck.
 - Last layers “decode” the bottleneck into a (hopefully valid) input

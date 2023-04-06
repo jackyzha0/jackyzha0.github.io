@@ -12,7 +12,7 @@ I've found regular mindfulness sessions to be extremely helpful in easing my 'al
 Related: how can we be more [digitally mindful?](thoughts/digital%20mindfulness.md)
 
 ## Self-guided Mindfulness
-I've tried guided meditions like the ones on YouTube and Headspace and such but find they don't work super well for me. I really like being intentional with what I want out of the meditation session and I find it helps me focus and stay present. Here is the process I find works best for me:
+I've tried guided [[thoughts/meditation|meditations]] like the ones on YouTube and Headspace and such but find they don't work super well for me. I really like being intentional with what I want out of the meditation session and I find it helps me focus and stay present. Here is the process I find works best for me:
 
 1.  Start with focusing on breathing and bodily sensations. Are you comfortable? Is your head clear? Is your breath and heartbeat regular and relaxed?
 2. Ask an additional level of 'why's if anything feels out of the ordinary. Reflect on life situation + most current feelings.
@@ -20,7 +20,6 @@ I've tried guided meditions like the ones on YouTube and Headspace and such but 
 Then, if I am feeling stressed/anxious about anything in particular:
 1. Perspective and timescales. How will current events play out a month from now? A year? A decade?
 2. What doors can this open? We can choose to believe everything happens for a reason when looking back on it. Everything will play out regardless of what failures happens your way. The best I can do is make the most of my hand and make that the best possible future.
-3. How can I minimize regret? How do I avoid the [optionality](thoughts/optionality.md) fallacy?
 
 Or if things are going well:
 1. What is going well right now?

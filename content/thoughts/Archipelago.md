@@ -10,8 +10,6 @@ tags:
 
 A beautiful dialogue between Glissand and the curator Hans Ulrish Obrist.
 
-> I can change through exchanging with others, without losing or diluting my sense of self.
-
 > I still believe that the future lies not with the great powers, but with the little islands, lands, and cities.
 
 ## Globality versus Globalization
@@ -24,7 +22,7 @@ A beautiful dialogue between Glissand and the curator Hans Ulrish Obrist.
 - Creolization is the means by which several distinct cultures or their elements, come into contact in a particular place in the world ([contact languages](thoughts/contact%20language.md) enable this)
 - Distinction between multiethnic (where many cultures exist but are distinct) and creole (where many cultures mix and form new ones)
 
-[Digital gardening](posts/digital-gardening.md) and [networked thought](posts/networked-thought.md) as tending to free isles? The reader is free. This freedom produces chance, it produces the unexpected.
+[Digital gardening](posts/digital-gardening.md) and [networked thought](posts/networked-thought.md) as tending to free isles? The reader is a free [[thoughts/agency|agent]]. This freedom produces chance, it produces the unexpected.
 
 ## On [utopias](thoughts/utopia.md)
 > Utopia is what is missing to us in the world -- and thus it is never complete

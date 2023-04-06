@@ -17,7 +17,7 @@ Layer 3, the layer below the [Transport Layer](thoughts/Transport%20Layer.md) an
 Contains information about the packet itself (metadata) and the body/content
 
 ### BGP Advertisement
-1. [IP Addresses](thoughts/IP%20Addresses.md): the one they are advertising they can reach
+1. [IP Address](thoughts/IP%20Address.md): the one they are advertising they can reach
 2. Gateway Next Hop: address of the entry point
 3. AS Path: Sequence of AS's a packet would need to travel through
 

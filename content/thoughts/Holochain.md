@@ -37,4 +37,3 @@ Each user in a Holochain network creates and stores their own data in a journal 
 Identifiers are based off of a public/private key pair. All messages posted to the source chain are signed so they are tamper-proof. Each message refers the previous one in the order so it order can't be tampered with either.
 
 But unfortunately anyone can modify their own source chain, regenerate the hashes and signatures, and create a perfectly valid, but wrong, alternate history for themselves. The [[thoughts/DHT|DHT]] resolves this sharing your source chain actions and public entries with a random selection of your peers, who witness, validate, and hold copies of them.
-

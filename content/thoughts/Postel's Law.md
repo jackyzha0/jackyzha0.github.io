@@ -7,7 +7,7 @@ tags:
 
 > Be conservative in what you send, be liberal in what you accept
 
-The principle is also known as Postel's law, after Jon Postel, who used the wording in an early specification of TCP.
+The principle is also known as Postel's law, after Jon Postel, who used the wording in an early specification of [[thoughts/TCP]].
 
 "It takes two to miscommunicate." A great listener, _or_ a skilled speaker, can resolve a lot of conflicts.
 

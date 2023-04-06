@@ -7,7 +7,7 @@ tags:
 
 Developed at XEROX PARC in the late 1990s and was inspired by biomimicry (specifically, animal behaviour theories) 
 
-||Animal Foraging|Information Foraging|
+| |Animal Foraging|Information Foraging|
 |---|---|---|
 |Goal|Food|Information|
 |Patch|Site containing one or more potential sources for food|A source of information (e.g. website)|

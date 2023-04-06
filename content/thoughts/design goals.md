@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-Goals in the context of HCI are things that can be defined in a given context, then evaluated.
+Goals in the context of HCI are things that can be defined in a given [[thoughts/context]], then evaluated.
 
 Human task involves the steps to do something, whereas human needs are general wants of the user, what they want to get accomplished. Usability goals are primarily objective, user experience goals are more subjective.
 
@@ -51,6 +51,6 @@ Concerned with what users should see and do when carrying out their tasks using 
 2. Feedback: time sensitive information about what actions has been done and what has been accomplished.
 3. Constraints: ways of restricting the user interaction to those which are valid in any given moment.
 4. Consistency: an interface which follows rules, such as using the same operation to select all objects.
-5. Affordance: attributes should obviously signal what they can use it for. Afford means "to give a clue"
+5. [[thoughts/affordance]]: attributes should obviously signal what they can use it for.
 
 The problem when applying these to real world is that trade-offs can arise between principles (e.g. increased constraint might mean less visibility).

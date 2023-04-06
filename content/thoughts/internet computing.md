@@ -8,17 +8,16 @@ tags:
 
 *Notes for CPSC 317* [(see all notes)](/tags/CPSC317)
 
-The [Internet](thoughts/Internet.md) is a network of networks. The main goals was to integrate a number of separately  
-administrated entities into a common entity
+The [Internet](thoughts/Internet.md) is a network of networks. The main goal was to integrate a number of separately  administrated entities into a common entity
 
-See also: [peer-to-peer](thoughts/peer-to-peer.md), [[thoughts/security|security]]
+See also: [peer-to-peer](thoughts/peer-to-peer.md), [[thoughts/security|security]], [[thoughts/Postel's Law]]
 
 ## Changing an entrenched internet 
 [*Enabling a Permanent Revolution in Internet Architecture* by McCauley, Harchol, Panda, Raghavan, and Shenker](https://dl.acm.org/doi/pdf/10.1145/3341302.3342075)
 
 The current Internet architecture is both inherently flawed (so we should explore radically different alternative designs) and deeply entrenched (so we should restrict ourselves to backwards-compatible and therefore incrementally deployable improvements).
 
-For example, the decades-long migration effort from [[thoughts/IP Addresses|IPv4 to IPv6]]
+For example, the decades-long migration effort from [[thoughts/IP Address|IPv4 to IPv6]]
 
 TLDR;
 1. Internet architecture is, and will remain, difficult to change -- clean-slate research and projects seem increasingly impossible
@@ -62,7 +61,7 @@ Each layer takes data from above adds header information to create new data unit
 
 1. [Application Layer](thoughts/Application%20Layer.md) ([HTTP](thoughts/HTTP.md))
 2. [Transport Layer](thoughts/Transport%20Layer.md) ([TCP](thoughts/TCP.md), [UDP](thoughts/UDP.md))
-3. [Network Layer](thoughts/Network%20Layer.md) ([IP Addresses](thoughts/IP%20Addresses.md)) -- this is the 'thinnest' part of the network stack!
+3. [Network Layer](thoughts/Network%20Layer.md) ([IP Address](thoughts/IP%20Address.md)) -- this is the 'thinnest' part of the network stack!
 4. [Link Layer](thoughts/Link%20Layer.md)
 5. [Physical Layer](thoughts/Physical%20Layer.md)
 
@@ -82,7 +81,7 @@ Each layer takes data from above adds header information to create new data unit
 	2. Serves as a bridge between private home network and the network of the internet provider (which can reach the rest of the internet)
 	3. Modern routers can also perform
 		1. Network address translation ([NAT](thoughts/NAT.md))
-		2. Assigning [IP addresses](thoughts/IP%20Addresses.md) to hosts using [DHCP](thoughts/DHCP.md)
+		2. Assigning [IP addresses](thoughts/IP%20Address.md) to hosts using [DHCP](thoughts/DHCP.md)
 		3. Broadcast WiFi signal
 
 ## Error Correction
@@ -136,7 +135,6 @@ Methods for [fault tolerance](thoughts/fault%20tolerance.md) in data transmissio
 - Jitter: variation in latency -- interpacket variance
 - Throughput: amount of data moved from one place to another in a given time
 	- Usually measured in bytes not bits
-	- 
 - Goodput: rate at which *useful* data arrives
 	- Does not include headers, encoding costs, etc.
 

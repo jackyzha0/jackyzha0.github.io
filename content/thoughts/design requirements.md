@@ -17,7 +17,7 @@ The 4 basic activities for interaction design are as follows:
 3. Prototyping alternative designs to be communicated and assessed (develop phase). The process of designing behaviour of interactive products as well as look and feel. Doesn't necessarily need working software!
 4. Evaluating the product and the UX it offers (develop phase). Determine the usability and acceptability of the product or design measured in terms of a variety of usability and user-experience criteria.
 
-Here are a few good questions to ask to better understand the problem:
+A few good questions to ask to better understand the problem:
 -   what are the human needs?
 -   who are the stakeholders?
 -   what are the central tasks?

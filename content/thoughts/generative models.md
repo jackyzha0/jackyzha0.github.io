@@ -6,7 +6,7 @@ tags:
 - CPSC340
 ---
 
-Given data, we want to make more data that look like it
+*Given data, we want to make more data that look like it*
 
 Last 10 years have seen a variety of new deep generative models:
 - Variational autoencoders (VAEs)

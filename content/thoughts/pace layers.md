@@ -13,8 +13,6 @@ See: [[thoughts/Mangrove Theory of the Internet|Mangrove Theory of the Internet]
 
 You can't have a healthy forest of all old-growth and towering canopies. You can't have a healthy forest of only weeds, bushes, and saplings.
 
-Diversity is resilience.
-
 All complex systems have different 'paces' at which they operate. Some near the top are faster changing, learning with the trends and the movements of the day to day, others are slow and methodical, remembering and holding power. 
 
 The six Pace Layer levels in descending order from the highest & fastest to the lowest & slowest are Fashion, Commerce, Infrastructure, Governance, Culture, Nature.

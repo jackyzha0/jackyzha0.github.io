@@ -6,19 +6,6 @@ tags:
 - technical
 ---
 
-## Haskell Syntax Quirks
-- `$ :: (a -> b) -> a -> b` is function application (adds implicit parentheses and makes it right associative instead of left associative)
-	1. Normally, `sort "abc" ++ "def"` would be interpreted as `(sort "abc") ++ "def"`
-	2. If we use the `$` operator, we can do `sort $ "abc" ++ "def"` which is interpreted as `sort ("abc" ++ "def")` as intended.
-- `.` is function composition. Read the dot as the little dot in $f \circ g$
-- `<>` is a synonym for `mappend :: Monoid m => m -> m -> m` or the monoidal append
-- `<$>` is a synonym for `fmap :: (a -> b) -> f a -> f b`
-	- Intuitively like applying a function to a container
-- `<*>` is like `<$>` but for wrapped functions `(<*>) :: Applicative f => f (a -> b) -> f a -> f b`
-	- Intuitively like applying a function in a container to another container
-- Remember that `(<$)` and `($>)` point towards the value that will be kept
-- `void :: Functor f => f a -> f ()` is implemented as `void x = () <$ x`. Read as: whatever you give me, I will return the unit value
-
 ## Terminology
 ![[thoughts/images/Haskell typeclasses.png]]
 
@@ -137,6 +124,19 @@ Result Methods
 6. `a.to(b)` marks result of `a` as type `b`
 7. `a.labelled(b)` label result of a with `b`
 8. `a.end()` indicate end of parser
+
+## Haskell Syntax Quirks
+- `$ :: (a -> b) -> a -> b` is function application (adds implicit parentheses and makes it right associative instead of left associative)
+	1. Normally, `sort "abc" ++ "def"` would be interpreted as `(sort "abc") ++ "def"`
+	2. If we use the `$` operator, we can do `sort $ "abc" ++ "def"` which is interpreted as `sort ("abc" ++ "def")` as intended.
+- `.` is function composition. Read the dot as the little dot in $f \circ g$
+- `<>` is a synonym for `mappend :: Monoid m => m -> m -> m` or the monoidal append
+- `<$>` is a synonym for `fmap :: (a -> b) -> f a -> f b`
+	- Intuitively like applying a function to a container
+- `<*>` is like `<$>` but for wrapped functions `(<*>) :: Applicative f => f (a -> b) -> f a -> f b`
+	- Intuitively like applying a function in a container to another container
+- Remember that `(<$)` and `($>)` point towards the value that will be kept
+- `void :: Functor f => f a -> f ()` is implemented as `void x = () <$ x`. Read as: whatever you give me, I will return the unit value
 
 ## Racket
 ```scheme

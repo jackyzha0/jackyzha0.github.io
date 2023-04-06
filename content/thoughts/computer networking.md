@@ -15,7 +15,7 @@ A hallmark of the modern day human is the ability to communicate with each other
 
 Early computer networks looked pretty similar to landline telephone connections. There is a physical wire directly connecting you from point A to point B for the duration of the connection. This was called **circuit switching**.
 
-Of course, during the early days when you could still count the number of computers connected to the internet on your fingers, this was not problematic. But as the size of the internet grew, telecommunication networks created huge hubs to be able to handle the volume of traffic. The problem was, this hierarchical network -- like all hierarchical networks -- was vulnerable to targeted attack. Knock out a single node and you cut off lots of users, even whole regions.
+Of course, during the early days when you could still count the number of computers connected to the [[thoughts/Internet]] on your fingers, this was not problematic. But as the size of the internet grew, telecommunication networks created huge hubs to be able to handle the volume of traffic. The problem was, this hierarchical network -- like all hierarchical networks -- was vulnerable to targeted attack. Knock out a single node and you cut off lots of users, even whole regions.
 
 This was not a comfortable position to be in during the height of the Cold War. There was a demand for a resilient and fault-tolerant network topology that would adapt to changing configurations and load on the fly.
 

@@ -1,13 +1,17 @@
 ---
-title: "Cozy software"
+title: "Personal and cozy software"
 date: 2022-02-20
 tags:
 - sapling
+aliases:
+- personal software
 ---
 
 >cozy eternal beta test mode
 
-re: [digital mindfulness](thoughts/digital%20mindfulness.md)! Not everything needs to be built at scale -- sometimes it can just be for family and friends :)) Normalize creating playful and non-[instrumental](thoughts/instrumentalism.md) technology
+Not everything needs to be built at scale -- sometimes it can just be for family and friends :)) Normalize creating playful and non-[instrumental](thoughts/instrumentalism.md) technology
+
+See: [[thoughts/small technology]]
 
 ## An app can be a home-cooked meal
 Source: [Robin Sloan](https://www.robinsloan.com/notes/home-cooked-app/)
@@ -18,30 +22,13 @@ I can, at this point, make the things happen on computers that I want to make 
 
 I am the programming equivalent of a home cook.
 
-## Personal Software
-### Spring '83
+## Spring '83
 [Source](https://www.robinsloan.com/lab/specifying-spring-83/)
 
 I love the disclaimer at the top: "It’s okay to share this link, but I want to underscore that I am sending it specifically to you with the hope that you will … really think about it! At such a primordial stage, a proposal like this doesn’t need diffuse, drive-by attention. It needs, instead, close consideration and generous imagination."
 
 - "There are no analytics, obviously. Nothing is counted. Boards can’t load tracking pixels, and they can’t ping remote analytics APIs. Sorry, folks … you’ve got to let go of the numbers. In 2022, they are not helpful feedback, but rather a clear warning you are in the wrong place."
 - When you operate a server, you get a universe for free (see also: [[thoughts/World Building#World Seed|world seed]]).
-
-### Spatial Computing
-An infinite canvas perhaps?
-
-[Source](https://www.figma.com/file/OYg9sU8nNTpOczssb2A4BH/Scrapchat-with-Rebane)
-
-> fuck responsive layouts, all my homies hate responsive layouts
-
-- There’s unexpected energy in the space of “being able to lay out elements visually on a 2d plane and know that the browser isn’t going to wrap them somewhere you didn’t mean”.
-- The [spatial web](https://maggieappleton.com/spatial-web?curius=1573)
-	- https://nette.io/
-	- https://www.kosmik.app/
-	- https://sprout.place/
-	- https://www.platz.ooo/
-- https://twitter.com/azlenelza/status/1418749070336684034
-- https://twitter.com/raunofreiberg/status/1450479522609090562
 
 ## Folk Software
 [Source](https://maggieappleton.com/folk-interfaces)
@@ -54,8 +41,20 @@ Folk creations fill a gap. They solve problems for individuals and small communi
 
 Related to [[thoughts/Tools for Conviviality]]
 
+## Against universal design
+In [[thoughts/Design Justice]]
+
+Universal Design (UD) as defined by Center for UD at North Carolina State University: The design of products and environment to be usable by all people, to the greatest extent possible, without the need for adaptation or specialized design
+
+At least in the digital domain, adaptive design that enables [[thoughts/cozy software|personalization]] and flexible configuration of shared core objects, tools, platforms, and systems provides a path out of the tension between the diverse needs of individual users and the economic advantages of a large-scale user base.
+
+Universalization erases difference and produces self-reinforcing spirals of exclusion, but personalized and culturally adaptive systems too often are deployed in ways that reinforce [surveillance capitalism](thoughts/Data%20Capitalism.md).
+
+We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
+
 ## Fun Sites
-- [[posts/casual magic|fun experiments with sunsets]]
-	- [p2p sunsets](https://old.mark-beasley.com/peer-peer-sunset/index.html)
-	- [animated digital sunset](https://tiffanyq.github.io/sunrise/)
+Digital placemaking
+
+- [p2p sunsets](https://old.mark-beasley.com/peer-peer-sunset/index.html)
+- [animated digital sunset](https://tiffanyq.github.io/sunrise/)
 - [Little towns of people's plots :))](https://tilde.town/~troido/cadastre/town.html)

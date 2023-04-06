@@ -10,7 +10,6 @@ How do we efficiently find the  “best” hyper-parameters?
 
 More complicated models have even more hyper-parameters. This makes searching all values expensive (increases over-fitting risk)
 
-
 Simplest approaches:
 - Exhaustive search: try all combinations among a fixed set of $\sigma$ and $\lambda$ values.
 - Random search: try random values

@@ -19,4 +19,3 @@ See also: [[thoughts/the garden and the stream]]
 1. A memex contains both original materials and the materials. Unlike the web, there is no read-only version of the memex. Anything you read you can link and annotate. Not just reply, but change
 2. Links are associative (read: backlinks)
 3. Links and annotations are made by readers as well as writers. A stunning thing that we forget, but the link here is not part of the author’s intent, but of the reader’s analysis. On the world wide web of course, only an author gets to determine links. What would it be like to have Curius-like annotations by default?
-

@@ -45,7 +45,7 @@ Another things that React tackles really well is that regular HTML and JS makes 
 
 ![What if you wanted to reuse this 'product card' component?](/posts/images/react/component-reuse.png)*What if you wanted to reuse this 'product card' component?*
 
-The main philosophy of functional React is that you shouldn't override and inherit behaviour. Instead, get the behaviour you want by creating and composing reusable *components*. Each of these components can hold some sort of data of its own, called its **state**. Each component can also take in a few arguments or parameters called **properties** or **props** for short. Each component is composed up of either primative HTML elements (e.g. `<div>` or `<h1>`) or other React components. The elements that a component is made up of are called its **children**.
+The main philosophy of functional React is that you shouldn't override and inherit behaviour. Instead, get the behaviour you want by creating and [[thoughts/composable|composing]] reusable *components*. Each of these components can hold some sort of data of its own, called its **state**. Each component can also take in a few arguments or parameters called **properties** or **props** for short. Each component is composed up of either primative HTML elements (e.g. `<div>` or `<h1>`) or other React components. The elements that a component is made up of are called its **children**.
 
 ![React Component Diagram](/posts/images/react/component-diagram.png)*React Component Diagram*
 

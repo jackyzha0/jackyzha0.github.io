@@ -19,6 +19,16 @@ Systems that display some sort of cascading failure are generally characterized 
 2. Each component has a local breakdown rule that determines when it contributes to a cascade, either by failing (power grid, earthquakes) or by choosing to pass on a piece of information (Twitter).
 3. Each system has a mechanism to redistribute the traffic to other nodes upon the failure or the activation of a component.
 
+## Halting Cascading Failures
+Two approaches come to mind
+1. Adding new links to increase connectivity and thus $f_c$. However, in most real systems the time needed to establish a new link is much larger than the timescale of a cascading failure.
+2. Removing redundant links and nodes. The size of a cascade can be reduced if we intentionally remove additional nodes right after the initial failure (i), but before the failure could propagate.
+
+The mechanism of 2. is similar to the method used by firefighters, who set a controlled fire in the fireline to consume the fuel in the path of a wildfire. In a counterintuitive fashion, controlled damage can be beneficial to a network: the Lazarus Effect
+
+The growth rate of a bacteria is determined by its ability to generate biomass, the molecules it needs to build its cell wall, DNA and other cellular components. If some key genes are missing, the bacteria is unable to generate the necessary biomass. Scientists can *revive* these dead bacteria by removing five additional genes.
+
+## Examples
 Examples from the [*Network Science Book*'s Chapter on Network Robustness](http://networksciencebook.com/chapter/8#cascading): 
 
 ### Blackouts (Power Grid)

@@ -14,3 +14,4 @@ In all honesty, I think that the only way to incentivize things is to pull at wh
 ### Libertarian Paternalism
 The goal of encouraging the design of [organizing systems](thoughts/organizing%20system.md) and policies that maintain or increase freedom of choice but which at the same time influence people to make choices that they would judge as good ones
 
+See also: [[thoughts/social contracts]]

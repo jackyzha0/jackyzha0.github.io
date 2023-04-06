@@ -7,7 +7,9 @@ tags:
 
 [Source: Banking in the Shadows, *Kernel*](https://kernel.community/en/learn/module-2/banking)
 
-T account or balance sheet-style thinking is a banker's way of being able to hold complementary opposites and demand in mind.
+Account or balance sheet-style thinking is a banker's way of being able to hold complementary opposites and demand in mind.
+
+See also: [[thoughts/money]]
 
 ### Printing Money
 It's often not correct to say that when the Fed is 'printing money' they are straight up just injecting into one side. Most times, it expands *both sides of the balance sheet*.

@@ -6,16 +6,7 @@ tags:
 - PHIL451A
 ---
 
-## A Traditional Account[^1]
-- bhāvanā = “bringing into being” certain types of mental states, qualities, and traits through repeated practice
-- śamatha(calm, tranquility): a state of sustained and stable attention, concentration.
-- Classical [mindfulness](thoughts/mindfulness.md), attempting to achieve states of
-	- Remembering/recollecting (smṛti): holds an object in mind so as to prevent the mind from drifting away from it.
-	- Clear comprehension (samprajanya): clear knowing through alert awareness of experience.
-- Nondual mindfulness
-	- present-centred open awareness with "mere nondistraction"
-
-## A Cognitive Science Approach[^1]
+## A Cognitive Science Approach
 - Focused Attention
 	- Directing attention towards an object (e.g. breathing)
 	- Detecting mind wandering/distractions
@@ -26,5 +17,3 @@ tags:
 	- No explicit focus on objects
 	- Nonreactive
 	- Leads to acute awareness of phenomenal qualities of experience without ‘grasping’ (approach/avoidance).
-
-[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

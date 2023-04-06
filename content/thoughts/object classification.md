@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+See also: [[thoughts/object detection]]
+
 ## Data to Model
 ### Random Sample Consensus (RANSAC)
 1. randomly choose minimal subset of data points necessary to fit model

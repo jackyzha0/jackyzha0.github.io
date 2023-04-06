@@ -37,7 +37,7 @@ tags:
 		- For programming systems that use _overlapping notations_, we need to describe how the notations are synchronized.
 	- See also: [[thoughts/notation]]
 3. Conceptual structure: how do the parts fit together? 
-	- Composability: There exist building blocks which span a range of useful combinations. Composability is, in a sense, key to the notion of "programmability" and every programmable system will have some level of composability
+	- [[thoughts/composable|Composability]]: There exist building blocks which span a range of useful combinations. Composability is, in a sense, key to the notion of "programmability" and every programmable system will have some level of composability
 	- Convenience: are there ready-made solutions to specific problems? i.e. what is the 'standard library' of the system?
 	- Composability vs Convenience
 		- Composability without convenience is a set of atoms or gears; theoretically, anything one wants could be built out of them, but one must do that work
@@ -45,7 +45,7 @@ tags:
 	- Conceptual integrity: a drive exists in the Python programming language, which follows the principle that “There should be one—and preferably only one—obvious way to do it” in order to promote community consensus on a single coherent style.
 		- The apotheosis of this approach can be found in early Smalltalk and Lisp machines, which were complete programming systems built around a single language.
 		- Everything was done in one language, and so everything was represented with the datatypes of that language.
-	- Conceptual openness: can be seen as championing the values of _pluralism_, _compatibility_, or _conceptual openness_ over conceptual integrity
+	- Conceptual openness: can be seen as championing the values of _[[thoughts/plurality|pluralism]]_, _compatibility_, or _conceptual openness_ over conceptual integrity
 	- See also: [[thoughts/Gall's law]]
 4. Customizability: once a program exists in the system, how can it be extended and modified?
 	- There are a number of interesting questions related to staging of customization. First, what is the notation used for customization? This may be the notation in which a program was initially created, but a system may also use a secondary notation for customization (consider Emacs using Emacs Lisp).

@@ -11,7 +11,7 @@ This holds even if $f = 1$
 
 Similar to tradeoffs made in the [[thoughts/CAP Theorem|CAP Theorem]], when under attack, we need to choose between
 - [[thoughts/safety|safety]]
-- consistency
+- [[thoughts/consistency]]
 - [[thoughts/liveness|liveness]]/availability
 
-This can somewhat be abated by randomized protocols (see: [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]])
+This can somewhat be abated by randomized protocols (see: [[thoughts/HoneyBadgerBFT|HoneyBadgerBFT]], [[thoughts/longest-chain consensus|Nakamoto consensus]])

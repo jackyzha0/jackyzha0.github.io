@@ -16,17 +16,11 @@ Thus, the more truths a theory entails, the closer it is to the truth.
 
 > Even two true theories can have differing degrees of verisimilitude, depending on how much true information they deliver. For example, the claim "it will be raining on Thursday next week," if true, seems closer to the truth than the true yet logically weaker claim "it will either be raining next Thursday or it will be sunny".
 
-Similarly, the concept of a [lie-to-children](https://en.wikipedia.org/wiki/Lie-to-children): creating a simplified world model to explain a system because the real one is too complex to grasp
+Similarly, the concept of a [[thoughts/Microworld|lie-to-children]]: creating a simplified world model to explain a system because the real one is too complex to grasp
 
 ## Verificationist View
-- rejecting that the idea of certain facts are objective
-    -   For example, a verificationist about height would say that how tall you are depends on what evidence there is about how tall you are.
-    -   The only height you can have is a height that in principle, discoverable or verifiable that you have
-    -   if its true from one's perspective, its their truth → "If all my evidence says that there is a tall mountain there, then in my personal picture of the world there is a tall mountain there. That's all it can mean, for me, to say that there's a tall mountain there. The mountain really is there, for me, so long as it appears real, and fits my conception of a tall mountain."
-    -   "if tree falls and nobody hears it, did it really fall?"
--   "pursuing our own ends, and trying to satisfy our own desires" ≠ "acting for a selfish motive."
-    -   psychological egoism (PE) → people always act in their own self-interest
-    -   If my motive is to make me better off, then my motive is a selfish one. If my motive is to make you better off, then my motive is not selfish.
--   are bad things bad if you don't know about it?
-    -   most people would agree yes
-    -   why is that?
+Rejecting that the idea of certain facts are objective
+
+For example, a verificationist about height would say that how tall you are depends on what evidence there is about how tall you are. The only height you can have is a height that in principle, discoverable or verifiable that you have
+
+I its true from one's perspective, its their truth → "If all my evidence says that there is a tall mountain there, then in my personal picture of the world there is a tall mountain there. That's all it can mean, for me, to say that there's a tall mountain there. The mountain really is there, for me, so long as it appears real, and fits my conception of a tall mountain."

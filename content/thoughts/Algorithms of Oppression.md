@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Chapter 1
-Moving the focus away from 'problematic users and data' to search architecture itself.
+Focuses on moving the blame away from 'problematic users and data' and towards [[thoughts/search]] architecture itself.
 
 > If the majority rules in search engine results, then how might those who are in the minority ever be able to influence or control the way they are represented in a search engine?
 
@@ -16,6 +16,6 @@ Why have we become so reliant on search? Is it a part of our [Extended Mind Hypo
 
 > [Search](thoughts/search.md) is a symbiotic process that both informs and is informed in part by users.  
 
-"Google directs web traffic to mainstream corporate news conglomerates, which increases their ability to shape the political discourse." This is the [zero sum](thoughts/zero%20sum.md) [attention economy](thoughts/attention%20economy.md).
+Additionally, decreases in funding for public information institutions such as [[thoughts/library|libraries]] and educational institutions and shifts of responsibility to individuals and the private sector have reframed the ways that the public conceives of what can and should be in the public domain.
 
-> Decreases in funding for public information institutions such as libraries and educational institutions and shifts of responsibility to individuals and the private sector have reframed the ways that the public conceives of what can and should be in the public domain.  
+Perhaps to reduce the raw amounts of power search aggregators have, we should focus on funding and empowering [[thoughts/small technology|small software]] like libraries that act as boutique search engines.

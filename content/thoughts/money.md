@@ -21,12 +21,11 @@ What money is, how it is created, and who gets to distribute it goes to the very
 
 Money allows specialization, allowing goods and services to be transformed into a intermediary representation that is accepted by society.
 
-## Master-slave vs [Peer-to-peer](thoughts/peer-to-peer.md)
-Difference between hierarchical and [decentralized](thoughts/decentralization.md) methods.
+## Amassing Capital
+Unfortunately, billionaries don't actually do anything. Even if they start with good intentions, they get cynical the more they progress and 'make it to the top'. After having huge amounts of capital, they are scared to give it out as the people who make their way in front of these people are the fakes. Because of the competition, the people who successfully can present are the ones who spent the time polishing the pitch rather than doing fundamental research and important breakthroughs.
 
-Question is "who is the slave"? Supposedly the those that need to follow the interfaces that the master dictates, there is no 'ownership'.
-
-What does this mean in the context of efficiency in systems? [Consensus](thoughts/consensus.md) takes a long time. Decentralized methods are hard to get right. Is the tradeoff worth it? At what point do we trade good user experience with rights of data ownership?
+## Money and Imagination
+"I have a theory, which has not let me down so far, that there is an inverse relationship between imagination and money. Because the more money and technology that is available to [create] a work, the less imagination there will be in it." Alan Moore
 
 ## Money and Speech
 

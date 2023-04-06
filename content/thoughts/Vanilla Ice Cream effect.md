@@ -7,7 +7,7 @@ tags:
 
 Ask everyone to vote on their favourite ice cream, you'll most likely end up with vanilla.
 
-Similar to design by committee → a project that has many designers involved but no unifying plan or vision
+Similar to design by committee: a project that has many designers involved but no unifying plan or vision
 
 ## Coordination Headwind
 [Source: How Organizations are like Slime Molds by *Alex Komoroske*](https://komoroske.com/slime-mold/)

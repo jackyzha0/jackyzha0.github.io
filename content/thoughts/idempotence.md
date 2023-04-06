@@ -5,9 +5,7 @@ tags:
 - seed
 ---
 
-> How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e.g. pressing the like button)?
-
-Idempotence!
+> How do we avoid cases where losing an ACK could lead to users doing an action multiple times (e.g. pressing the like button)? Idempotence!
 
 $f$ is idempotent if $f(x) = f(f(x))$
 

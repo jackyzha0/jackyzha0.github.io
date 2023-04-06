@@ -6,9 +6,7 @@ tags:
 - CPSC317
 ---
 
-Dynamic Host Configuration [Protocol](thoughts/Protocol.md) so they can join a network. Assigns [IP addresses](thoughts/IP%20Addresses.md) to hosts. Main reason was when people started moving devices across networks
-
-Client-server model
+Dynamic Host Configuration [Protocol](thoughts/Protocol.md) so they can join a network. Assigns [IP addresses](thoughts/IP%20Address.md) to hosts. Main reason was when people started moving devices across networks
 
 Basic Messages
 1. Discovery, host looks for a DHCP server
@@ -27,6 +25,7 @@ Basic Messages
 		4. Routing information
 		5. Host name, domain name (optional)
 		6. Name (DNS) Server
+
 Fields (all [UDP](thoughts/UDP.md))
 - `src`: source IP address (usually 0.0.0.0 for no meaningful IP)
 - `dest`: destination IP address

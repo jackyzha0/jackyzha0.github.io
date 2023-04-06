@@ -19,3 +19,13 @@ $X \rightarrow Y$ means that if I were to do X, then Y.
 	- Then determine how your choice of X or not X influences the probability of Y
 	- Normally, this is equivalent to $P(Y|X)$ but not true for [[thoughts/Newcomb's Problem]]
 - $P(Y | X)$ is the evidential conditional probability of Y given X
+
+## Causal Dependence
+Three cases
+1. Act A causes of influences state S
+2. State S causes or influences act A
+3. Some common C causes or influences both S and A
+
+Note some properties:
+- In all cases, $P(S | A) > P(S | \lnot A)$
+- In cases 2 and 3 $P(A \rightarrow S) = P(\lnot A \rightarrow S) = P(S)$ in other words, A has no effect on S

@@ -31,8 +31,6 @@ Good way to prototype search system is to analyze the typical dimensions that us
 
 Search is a form of [recommendation system](thoughts/recommendation%20system.md)
 
-A diary of searches: [Search Diary](thoughts/Search%20Diary.md)
-
 Essay on [Bias in Search](thoughts/Bias%20in%20Search.md)
 
 ### Queries on [information](thoughts/information.md)
@@ -43,22 +41,21 @@ Increasing number of words that describe an item will increase recall at the cos
 #### Precision/recall trade-off
 The trade-off between recall and precision decides whether a search finds all relevant documents (high recall) or only relevant documents (high precision).
 
-### [Infrastructure](thoughts/infrastructure.md) is a trap
+### On Ads
+When you monetize via ads, curation takes a backseat to featuring advertisers - there is just less digital real estate available to curate your own recommendations. This creates [trust](thoughts/trust.md) gaps between users and search engines.
 
-> Algorithmic recommendation has settled deep into the infrastructure of online cultural life, where it has become practically unavoidable.
+The search box versus the feed; intentional browsing vs being served by an algorithm
 
-So used to digital extractivism and data mining that it has become hidden to us now.
+Is it possible to move away from the ‘feed’-based model of browsing the social internet?
 
-"An infrastructure is a trap in slow motion. Slowed down and spread out, we can see how traps are not just devices of momentary violence, but agents of ‘environmentalization’"
+> The “feed”–an archaic form of content consumption that is effectively just a direct visual manifestation of the data structure that powers it – is a medium that is effectively designed to be consumed alone. –Humphrey Obuobi
 
-The boiling frog problem -- we don't notice we're dying until it's too late.
+"I realized that the experience of research is exactly opposite to the way I usually often encounter information online. When you research a subject, you make a series of important decisions, not least what it is you want to research, and you make a commitment to spend time finding information that doesn’t immediately present itself. You seek out different sources that you understand may be biased for various reasons. The very structure of the library… allows for browsing and close attention. Nothing could be more different from the news feed, where these aspects of information—provenance, trustworthiness, or what the hell it’s even about—are neither internally coherent nor subject to my judgment. Instead this information throws itself at me in no particular order, auto-playing videos and grabbing me with headlines. And behind the scenes, it’s me who’s being researched."
 
 ## Boutique Search Engines
 [Source: Re-Organizing the World’s Information: Why we need more Boutique Search Engines by *Sari Azout*](https://sariazout.mirror.xyz/7gSSTJ96SEyvXeljymglO3zN4H6DCgVnrNZq8_2NX1A)
 
-We've returned to the *curated web* with Notion, Airtable, and Readwise collections, yet we haven't found good ways to make them multiplayer.
-
-Still thinking about this in the context of collaborative digital gardens (e.g. [Quartz](http://quartz.jzhao.xyz/))
+We've returned to the *curated web* with Notion, Airtable, and Readwise collections.
 
 > What started as a well-intentioned way to organize the world’s information has turned into a business focusing most of its resources on monetizing clicks to support advertisers rather than focusing on the search experience for people.
 
@@ -68,60 +65,40 @@ Curation, when thought of in the context of sharing bite-sized, isolated bits in
 
 But if we curate, who curates the curators? We then run into a meta-governance problem. Mirror's [Token Race](https://dev.mirror.xyz/dLLIq4Iebg5DLWJbOWa3sU6oQuwbogkmqPnz-ZbzPUg) appears to be a good start to answering this question.
 
-### On Ads
-When you monetize via ads, curation takes a backseat to featuring advertisers - there is just less digital real estate available to curate your own recommendations. This creates [trust](thoughts/trust.md) gaps between users and search engines.
-
-The search box versus the feed
-intentional browsing vs being served by an algorithm
-
-Is it possible to move away from the ‘feed’-based model of browsing the social internet?
-
-> The “feed”–an archaic form of content consumption that is effectively just a direct visual manifestation of the data structure that powers it – is a medium that is effectively designed to be consumed alone. –Humphrey Obuobi
-
-"I realized that the experience of research is exactly opposite to the way I usually often encounter information online. When you research a subject, you make a series of important decisions, not least what it is you want to research, and you make a commitment to spend time finding information that doesn’t immediately present itself. You seek out different sources that you understand may be biased for various reasons. The very structure of the library… allows for browsing and close attention. Nothing could be more different from the news feed, where these aspects of information—provenance, trustworthiness, or what the hell it’s even about—are neither internally coherent nor subject to my judgment. Instead this information throws itself at me in no particular order, auto-playing videos and grabbing me with headlines. And behind the scenes, it’s me who’s being researched."
-
 ## Search Engine to Oracle
 [Source: Language models like GPT-3 could herald a new type of search engine in *MIT Technology Review*](https://outline.com/ZhCArb)
 
-transition from aggregator of information to oracle
+Transition from aggregator of information to oracle
 
-pagerank -> rank literally whats relevant, asks the user to determine what info they wanna actually use
-
-oracle -> tells you the 'right' answer
+- Pagerank: rank literally whats relevant, asks the user to determine what info they want to actually use
+- Oracle: just tells you the 'right' answer
 
 "The idea is that instead of searching for information in a vast list of web pages, users would ask questions and have a language model trained on those pages answer them directly. The approach could change not only how search engines work, but what they do—and how we interact with them"
 
-[epistemological](thoughts/epistemology.md) question: Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.
+Metzler and his colleagues are interested in a search engine that behaves like a human expert. It should produce answers in natural language, synthesized from more than one document, and back up its answers with references to supporting evidence, as Wikipedia articles aim to do.
+
+See also: [[thoughts/LLMs]]
 
 ## Search Engines as Faith
-They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as objective.
+They freely provide, it seems, a sorting of the wheat from the chaff, and answer our most profound and most trivial questions. They have become an object of faith. Many view the results of search as *objective*.
 
 "Like gods, these mathematical models were opaque, their workings invisible to all but the highest priests in their domain: mathematicians and computer scientists." (Cathy O'Neil)
 
 They are the database of our intentions. We search for things we are hoping to know, hoping to do, and hoping to become
 
-## Library Search
-- first catalogue was 4000 years ago
-- card catalogue: "indexing" each book listed alphabetically by title, author, and subject
-- computerization: online public access catalogues (OPACs) in 1970s, 1980s
-- catalogues move online in 1990s - "web OPAC"
-	- downsides: locked libraries into traditional models of search
-- second generation OPACs - incorporate interactive features and simplified interfaces
-	- competition from search engines pushed redesign
-- library "discovery layers" implemented
-	- expansion of online collections: articles, ebooks, digital library collections
-	- gives a search engine appearance and functionality
-- mainly relies on metadata as opposed to internet search engines which rely on full text content and keywords
-
 ## Federated Search
 Federated search is a technique used to search multiple data sources at once. With federated search, you can retrieve information from many different content locations with just one query and one search interface.
+
+See: [[thoughts/Prolly Trees]]
 
 ## Internet topology as shaped by search engines
 [Source: Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/)
 
-![](thoughts/images/internet-atlas.png)
+![[thoughts/images/internet-atlas.png|600]]
 
-![](/thoughts/images/search%20engine%20space.png)*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
+![[thoughts/images/search engine space.png|400]]
+
+*The first cone represents the loss of distance. As shown in the picture previous hypothesis, terrestrial space converges at a specific point. On Internet, distance is not relevant. Everything is potentially one click away. The second cone reintroduces the notion of non-physical distances. On the Internet, distance has no relevance, but the notion of space nevertheless remains.*
 
 See also: [internet computing](thoughts/internet%20computing.md), [Internet](thoughts/Internet.md)
 
@@ -186,16 +163,7 @@ Search is a form of [data capitalism](thoughts/Data%20Capitalism.md)
 	- 2016 Supreme Court of US ruled that Google Books was legal under the Fair Use exception (claiming it expands public knowledge and understanding)
 - Competition policies
 	- Sherman Act (1890): outlaws "monopolization, attempted monopolization, or conspiracy or combination to monopolize"
-[Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz)
-- In 2011, Swartz was arrested MIT police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR in the hopes of freer access of information
-- Federal prosecutors, led by Carmen Ortiz, later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act
-- Swartz was found dead supposedly by suicide in his Brooklyn apartment, though this is still disputed 
-EU Digital Markets Act
-- Applies to "gate-keeper platforms"; fines up to 20% of annual revenue
-- e.g.
-	- Prohibits use of personal data mined from one service to benefit another service they offer
-	- Prohibition on requiring users to subscribe to one's service
-	- Requirements for transparency on advertising prices
-	- Prohibitions on self-preferencing
-	- Restrictions on targeted advertising without consent
-	- Requirements for interoperability with third-party software
+- [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz)
+	- In 2011, Swartz was arrested MIT police on state breaking-and-entering charges, after connecting a computer to the MIT network in an unmarked and unlocked closet, and setting it to download academic journal articles systematically from JSTOR in the hopes of freer access of information
+	- Federal prosecutors, led by Carmen Ortiz, later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act
+	- Swartz was found dead supposedly by suicide in his Brooklyn apartment, though this is still disputed 

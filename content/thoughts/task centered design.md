@@ -5,10 +5,9 @@ tags:
 - seed
 ---
 
--   articulate concrete descriptions of real-world people doing their real-world tasks
--   use these description to determine which users and what tasks the system should support
--   prototype an interface that satisfy these requirements
--   evaluate the interface by performing a task-centred walkthrough
+Articulate concrete descriptions of real-world people doing their real-world tasks and use these description to determine which users and what tasks the system should support
+
+[[thoughts/prototyping|Prototype]]an interface that satisfies these requirements and then evaluate the interface by performing a task-centred walkthrough (see: [[thoughts/interviews and data recording]])
 
 Strengths
 -   practical way to ground designs to real user tasks

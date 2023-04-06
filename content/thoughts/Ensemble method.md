@@ -8,6 +8,8 @@ tags:
 
 Ensemble methods are classifiers that have classifiers as input (and often have higher accuracy than regular input classifiers). This is also called “meta-learning” and it **only works if the individual classifiers make independent errors**
 
+See also: [[thoughts/emergent behaviour]]
+
 ## Boosting/Stacking
 Improves training error of classifiers with high $E_{train}$
 

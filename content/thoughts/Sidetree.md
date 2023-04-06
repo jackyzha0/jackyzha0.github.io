@@ -7,7 +7,7 @@ tags:
 
 [Source Spec](https://identity.foundation/sidetree/spec)
 
-A 'meta'/Layer 2 protocol that can be applied to any target trust layer to create a scalable DID method (batteries *almost* included)
+A 'meta'/Layer 2 protocol that can be applied to any target trust layer to create a scalable [[thoughts/DID]] method (batteries *almost* included)
 
 A bunch of DID methods work fine at lab scales (~100 DIDs) but how do we scale to billions?
 

@@ -9,7 +9,7 @@ tags:
 
 In traditional systems, this guarantee can be enforced by relying on a central server. But this becomes a lot more difficult for eventually [[thoughts/consistency|consistent]] systems (e.g. [[thoughts/CRDT|CRDTs]])
 
-There is a  common perception of ACL systems and capability systems as merely alternative perspectives on Lampson’s access matrix
+There is a  common perception of ACL systems and capability systems as merely alternative perspectives on Lampson’s access matrix:
 
 | |Asset 1|Asset 2|File|Device|
 |-|-|-|-|-|
@@ -49,7 +49,7 @@ From *[Capability Myths Demolished](https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf)*
 Ambient Authority:
 - We will use the term ambient authority to describe authority that is exercised, but not selected, by its user.
 - The corresponding analogy is to imagine a world with doors but without keys. When a person walks up to a door, the door magically opens if it deems the person worthy.
-- For example, Unix filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as open() does not choose any credentials to present with the request; the request merely succeeds or fails
+- For example, Unix filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as `open()` does not choose any credentials to present with the request; the request merely succeeds or fails
 
 Confused Deputy Problems:
 - A deputy is a program that must manage authorities coming from multiple sources.

@@ -6,7 +6,7 @@ tags:
 - CPSC430
 ---
 
-Ethics is the rational systematic analysis of **morality**. Morality is the compass of what people ought to or ought not to do, especially when it can cause benefit or harm to other people.
+Ethics is the rational systematic analysis of [[thoughts/morality]].
 
 Ethics is focused on the voluntary, moral choices. Ethics is *not* concerned about involuntary choices or choices outside the moral realm.
 

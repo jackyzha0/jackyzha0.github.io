@@ -12,10 +12,10 @@ Sketching for [interaction design](thoughts/interaction%20design.md)
 ![](/thoughts/images/prototype.png)
 
 ### Why prototype?
--   **save time and money** → don't waste time coding/building the wrong thing
--   **communication** → discuss ideas with stakeholders
--   **evaluate** interface effectiveness for communicating conceptual model
--   further develop **conceptual and physical design**
+-  **Saves time and money**: don't waste time coding/building the wrong thing
+-  **Communication**: discuss ideas with stakeholders
+-  **Evaluate**: interface effectiveness for communicating conceptual model
+-  Further develop **conceptual and physical design**
 
 ### Before prototyping
 Identify:
@@ -75,12 +75,11 @@ Increasing in **completeness** and **detail**
 ### Wizard of Oz
 Method of testing a system that does not yet exist
 
--   human simulates system's intelligence and interacts with user
--   user
-    -   uses real or mock interface as expected
-    -   "Pay no attention to the man behind the curtain"
+-  Human simulates system's intelligence and interacts with user
+-  User
+    -  Uses real or mock interface as expected and is told "pay no attention to the man behind the curtain"
 -   "wizard" (sometimes hidden):
-    -   interprets subject's input according to a **preset algorithm**
-    -   has computer/screen behave in appropriate manner
+    -  Interprets subject's input according to a **preset algorithm**
+    -  Has computer/screen behave in appropriate manner
 
 Possible downside is that the human can over-/under-estimate the quality of the actual technology being simulated.

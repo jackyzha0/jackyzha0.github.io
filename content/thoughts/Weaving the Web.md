@@ -60,7 +60,7 @@ The web's infrastructure can be thought of as composed of four horizontal layers
 
 The independence of these layers is important. From the software engineering point of view, this is the basic principle of modularity. From the point of view of economics, it is the separation of horizontal competitive markets from anticompetitive vertical integration. From the information point of view, think of editorial independence, the neutrality of the medium.
 
-I am more concern about companies trying to take a vertical slice through the layers than creating a monopoly in any one layer. Keeping the medium and the content separate is a good rule in most media. When I turn on the television, I don't expect it to deliberately jump to a particular channel, I expect my television to be an impartial box.
+I am more concerned about companies trying to take a vertical slice through the layers than creating a monopoly in any one layer. Keeping the medium and the content separate is a good rule in most media. When I turn on the television, I don't expect it to deliberately jump to a particular channel, I expect my television to be an impartial box.
 
 I also expect the same neutrality of software. When I ask a search engine to find the information it can on a topic, I don't expect it to return just the sites of companies that happen to advertise with or make payments to the search company.
 
@@ -73,13 +73,17 @@ People should be able to surf the Web anonymously, or as a well-defined entity, 
 
 The W3C is creating a technology that will allow automatic negotiation between a user's browser and store's server, leading to an agreement about privacy. The Platform for Privacy Preferences Project (P3P) will give a computer a way of describing its owner's privacy preferences and demands and give servers a way of describing their privacy policies.
 
+See also: [[thoughts/privacy]]
+
 ### Annotations
 I would like annotation servers to exist where groups could add links to documents they want to comment on. Annotation servers are third-party services allowing a group to share each others' comments on documents anywhere else on the Web. The browser gets the original page and then separately checks annotation servers for comments which are then superimposed on the page.
 
 Imagine having servers for comments in different forums, perhaps family, school, and company. Again, the theme is human beings doing the thinking and machines helping it work on a larger scale, but nothing replacing wisdom in the end.
 
 ### Technology and Policy
-[The W3C] defines mechanism, not policy. That said, it is essential that policy and technology be designed with a good understanding of each other. As I noted in closing the first International World Wide Web Conference at CERN in May 1994, technologists cannot simply leave the social and ethical questions to other people, because technology directly affects these matters. (see: [[thoughts/software and politics|software and politics]])
+[The W3C] defines mechanism, not policy. That said, it is essential that policy and technology be designed with a good understanding of each other. As I noted in closing the first International World Wide Web Conference at CERN in May 1994, technologists cannot simply leave the social and ethical questions to other people, because technology directly affects these matters. 
+
+See: [[thoughts/software and politics|software and politics]]
 
 ### The Web's Achilles' Heel: DNS
 At the top of the [[thoughts/DNS|DNS]] hierarchy sits 13 root servers. An operator error at this level can black out huge portions of the web. However, that technical weakness is itself less of a concern than the social centralization that parallels it.
@@ -96,3 +100,5 @@ A person who's completely turned inward, who spends all his or her time alone, i
 Having to work with someone else's definitions is difficult. An awe-inspiring talent of my physics tutor, Professor John Moffat, was that when I brought him a problem I had worked out incorrectly, using a strange technique and symbols different from the well-established ones, he not only would follow my weird reasoning to find out where it went wrong, but would then use my own strange [[thoughts/notation|notation]] to explain the right answer.
 
 This great feat involved looking at the world using my definitions, comparing them with his, and translating his knowledge and experience into my language. It was a mathematical version of the art of listening.
+
+See: [[thoughts/teaching]]

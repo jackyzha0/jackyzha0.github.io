@@ -9,8 +9,6 @@ See also: [[thoughts/paperclip optimizer|paperclip optimizer]]
 
 > Scientific and technical work is made invisible by its own success. When a machine runs efficiently, one need only to focus on its inputs and outputs and not on its internal complexity. Thus, paradoxically, the more science and technology succeed, the more opaque and obscure they become
 
-In the context of systems, actors are anyone, human or nonhuman, who engages in intentional action shaped by internalized expectations of how it will be perceived
-
 If we start to disect the black box and understand that it
 - is made by people
 - substitutes their actions
@@ -50,15 +48,10 @@ Computational reliabilism (CR)
 	4. expert knowledge: experts' judgements, evaluations, and sanctioning
 
 Responsibility gaps
-- a physician cannot be held responsible for results of algorithms they don't understand
-	- though, we do generally accept ex-post explanations and deem these sufficient of human actors in decision making
-	- physicians typically operate other technologies and machinery which they do not fully understand or cannot fully explain the inner working of (e.g. MRI scans)
-		- Debatable; because they are not making decisions, just presenting information. Additionally, these other technologies generally *can* be understood by an expert. This is not the case for AI systems
+- a physician cannot be held responsible for results of algorithms they don't understand though, we do generally accept ex-post explanations and deem these sufficient of human actors in decision making
+- physicians typically operate other technologies and machinery which they do not fully understand or cannot fully explain the inner working of (e.g. MRI scans)
+	- Debatable; because they are not making decisions, just presenting information. Additionally, these other technologies generally *can* be understood by an expert. This is not the case for AI systems
 
 Counterpoints raised:
-- automation complacency: tendency to overestimate the reliability of decision support systems
-- black box algorithms can hide normative assumptions
-	- epistemic and normative considerations often blur into each other in the medical setting
-	- we know nothing about the priors of the black box algorithm
-- model and data drift
-	- computationally reliable black box algorithms can be reliable in one setting and time and not everywhere and forever
+- Black box algorithms can hide normative assumptions: we often know nothing about the priors of the black box algorithm
+- Model and data drift: computationally reliable black box algorithms can be reliable in one setting and time and not everywhere and forever

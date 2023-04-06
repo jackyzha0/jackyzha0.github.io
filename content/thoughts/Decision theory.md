@@ -8,20 +8,11 @@ aliases:
 - Evidential decision theory
 ---
 
-Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table
-
-Relatived view of Decision theory:
-
-> Prescriptions in decision theory are always relative to the formal problem specifications
+Choices by one agent in which background conditions are independent of what other agents are doing. We usually represent these decisions with a decision matrix or decision table. Sometimes called evidential decision theory.
 
 See also: [[thoughts/causal decision theory|causal decision theory]]
 
-e.g. Pascal's Wager
-
-| |God exists|God does not exist|
-|--|--|--|
-|Believe|Infinite reward|Status quo|
-|Don't believe|Infinite loss|Status quo|
+e.g. [[thoughts/Pascal's Wager|Pascal's Wager]]
 
 Components:
 - Rows are possible acts

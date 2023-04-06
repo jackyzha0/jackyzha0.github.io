@@ -5,9 +5,6 @@ tags:
 - seed
 ---
 
-- What is data? Anything that is useful for understanding a particular design, user needs, and user behaviour.
-- What does it mean to collect user data? What techniques can be used, and how useful and reliable is the data that is collected?
-
 Five Key Issues
 1. Settings Goals. Goals will influence the nature of data gathering sessions, the data gathering techniques to be used, and the analysis to be performed.
 2. Identifying Participants. Those who fit the profile of types of people from whom data can be gathered are called the study population. Types of sampling are as follows:
@@ -22,33 +19,15 @@ Triangulation: the investigation of a phenomenon from at least two different per
 3. Triangulation of theories: use of different theoretical frameworks through which to view data
 4. Methodological triangulation: employ different data gathering techniques
 
-## 3 Methods for Data Recording
-1. Notes + Photographs -> least technical and most flexible way of recording data, but can be difficult to capture the right highlights.
-2. Audio + Photographs -> less intrusive than video, allows observers to focus on the activity rather than on trying to capture every spoken word.
-3. Video -> highest fidelity. Things to keep in mind: 1) whether to fix cam position or use a roving recorder 2) where to point the camera 3) understanding the imapct of the recording on the participants
-
 ## Interviews
 > A conversation with a purpose
 
 Good for exploring issues, learning more about tasks, and getting inside user's head.
 
-Criteria for good interview:
-    -   Before:
-        -   get questions right → should support goals, should be easy to understand/answer
-        -   be organized → check equipment, have necessary docs
-        -   run pilots
-    -   During:
-        -   structure time
-        -   give participants context
-        -   use props and visuals → easier to show than tell
-    -   Listen well throughout!
-
 1. Open-ended/unstructured -> exploratory and similar to conversation. Can be time-consuming but can also produce rich insights
 2. Semi-structured -> plans basic script with both closed and open questions but probes interviewee until no new relevants info is there
 3. Structured -> predetermined questions like a questionnaire, study is standardized (same questions with each participant)
 4. Group interviews -> 3-10 people selected to provide a representative sample of the target population. Useful for investigating shared issues rather than individual experiences
-
-Asking questions like "Can you tell me a bit more about..." is called probing
 
 ### Planning
 When developing Interview Questions, keep in mind open questions are best suited where the goal of the session is exploratory; closed questions are best suited where the possible answers are known in advance. Break long or compound questions into separate questions
@@ -230,3 +209,16 @@ Helps identify significant subsets of data for more detailed analysis.
 
 This is not about summarizing all incidients, more like finding gold nuggets. Incidents need not be bad all the time, can be either desirable or undesirable.
 
+## Risks and Consent
+Potential way conclusions can be flawed:
+1. Construct validity: are we measuring the right thing? Is this clearly connected to our research question? Did we misunderstand the concepts we are working with?
+2. Internal validity: What are alternative explanations for the results? Other bias, confounding factors, etc.
+3. External Validity: To what extent are our results and conclusions of our experiment generalizable to our original research question? (how representative are our tasks and users?)
+4. Empirical Reliability / Reproducibility: Can the study be reproduced?
+
+Risks and Consent:
+1. In what ways could your participants could be harmed by the study or its results?
+2. Could be physical harm (less likely in CS), emotional harm (stress, reputation, etc.)
+3. Evaluate the likelihood of each potential risk (including unlikely cases)
+4. Are there ways to mitigate these risks? Potentially: adjust your study design
+5. What would you do if a participant were harmed? e.g. correction, compensation?

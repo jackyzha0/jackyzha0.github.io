@@ -1,24 +1,30 @@
+---
+title: "Language development"
+date: 2023-04-03
+tags:
+- seed
+---
+
 ## Approaches to study of language development
 - Language socialization: A description of children’s language use in social contexts and an account of the social processes by which children come to use language in the manner of their culture
 - Linguistic: the Language Acquisition Device (LAD) must contain some knowledge of the structure of language in order for language acquisition to be possible -- this innate knowledge cannot be specific to any particular language thus it is a Universal Grammar (UG)
 - Learnability approach: focuses on explaining the fact that language is acquired (i.e., that language is learnable).
 - Developmental approach: focuses on explaining the course of language development.
+
 ### Nature vs Nurture
 - Is the development of language in children the result of human innate knowledge (e.g. walking upright) or is it the result of the experiences of children and how they are raised (e.g. learning calculus)?
 - Empiricism: the mind at birth is like a blank slate; all knowledge and reason come from experience
 - Nativism: knowledge cannot come from experience alone. The mind must have some preexisting structure in order to organize and interpret experience 
 - Interactionism/[[thoughts/constructionist|constructivist]]: acknowledges there must be some innate characteristics of the mind that allow it to develop language based on experience but places greater emphasis on accounting for children's language-learning experiences
+
 ### Cognitivism vs Behaviourism
 - Behaviourism: change in behaviour occurs in response to the consequences of prior behaviour; behaviour can be fully accounted for in terms of things external to the mind
 - Cognitivism: we cannot understand behaviour without understanding what is going on inside the mind of the organism producing the behaviour
-### Nature vs. Nurture
-- Nativism (nature): innate knowledge underlies language, focus on the ease/speed  
-that children learn language without formal instruction (maturation)  
-- Empiricism (nurture): everything comes from experience (learning)
-	- We know that human children who are not exposed to language early in their lives do not reach the same proficiency in adulthood
+
 ### Critical Period
 - Critical period hypothesis: language must be learned within a biologically determined window (comparable to birds and imprinting)
 - Sometimes also called the sensitive period or optimal period (less sensitive than critical period)
+
 ### Measuring sound discrimination
 - Prosody: includes learning about the intonation, stress, pitch of a language.
 - Categorical perception: when a range of stimuli that differ continuously are perceived as belonging to only a few categories 
@@ -28,6 +34,7 @@ that children learn language without formal instruction (maturation)
 - Rule learning: a stronger claim than statistical learning, claims that babies can learn a pattern that must be described in terms of symbols (or variables) that stand for any sound. Babies learn algebraic rules, not just statistical regularities
 - Phonological bootstrapping hypothesis: children use phonological cues (e.g. nouns tend to have first-syllable stress whereas verbs have second-syllable stress) to break into grammatical structure 
 - Prosodic bootstrapping hypothesis: pauses and changes in intonation at phrase boundaries
+
 ### 5 stages in early speech production
 1. Reflexive Crying and Vegetative Sounds
 	1. Burps, sneezes, anything that accompanies biological functions
@@ -42,6 +49,7 @@ that children learn language without formal instruction (maturation)
 	- Input from adults – affects sounds and prosody in babbling. This is also influenced by the language that they hear (babbling drift)
 	- Vocal feedback from own productions  
 	- Social feedback
+
 ### Phoneme Acquisition Time
 - Why are some phonemes acquired later than others?  
 	- Ease of articulation  
@@ -51,6 +59,7 @@ that children learn language without formal instruction (maturation)
 - Early: /p/, /b/, /d/, /m/, /n/, /j/, /w/, /h/
 - Middle: /t/, /k/, /g/, /f/, /v/, /tʃ/, /ŋ/, /dʒ/
 - Late: /θ/, /ð/, /s/, /z/, /ʃ/, /ʒ/, /l/, /r/
+
 ### Experimental approaches for studying infant's perception
 - Cross-language speech perception: see Werker & Tees
 - High-amplitude Sucking Technique

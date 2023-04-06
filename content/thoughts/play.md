@@ -39,13 +39,10 @@ A lot of concepts similar to [The Grasshopper, Games, Life and Utopia](thoughts/
 
 > Why does the existence of action carried out for the sheer pleasure of acting, the exertion of powers for the sheer pleasure of exerting them, strike us as mysterious? What does it tell us about ourselves that we instinctively assume that it is?
 
-- the neo-Darwinists assumed not just a struggle for survival, but a universe of rational calculation driven by an apparently irrational imperative to unlimited growth.
-	- neo-Darwinism: the view that animals were simply trying to maximize the propagation of their own genetic codes
-	- However, once you reduce all living things to the equivalent of market actors, rationally calculating and optimizing machines trying to propagate their own genetic code, how do we understand how anything even remotely like self-[consciousness](thoughts/consciousness.md), freedom, or moral life arises?
-- animal cooperation often has nothing to do with survival or reproduction, but is a form of pleasure in itself
+- Animal cooperation often has nothing to do with survival or reproduction, but is a form of pleasure in itself
 - "Man plays only when he is in the full sense of the word a man" (Friedrich Schiller, 1795)
-- but what would happen if we agreed to treat play not as some peculiar anomaly, but as our starting point, a principle already present not just in lobsters and all living creatures, but also on every level of [emergent behaviour](thoughts/emergent%20behaviour.md) of self-organizing systems?
-- free will of electrons maybe?
+- But what would happen if we agreed to treat play not as some peculiar anomaly, but as our starting point, a principle already present not just in lobsters and all living creatures, but also on every level of [emergent behaviour](thoughts/emergent%20behaviour.md) of self-organizing systems? 
+- Free will of electrons (a [[thoughts/Panpsychism|panpsychist]]-flavoured approach to play)?
 	- "Is it meaningful to say an electron “chooses” to jump the way it does? Obviously, there’s no way to prove it. The only evidence we _could_ have (that we can’t predict what it’s going to do), we do have. But it’s hardly decisive."
 	-  "If an electron is acting freely—if it, as Richard Feynman is supposed to have said, “does anything it likes”—it can only be acting freely as an end in itself. Which would mean that at the very foundations of physical reality, we encounter freedom for its own sake—which also means we encounter the most rudimentary form of play."
 	- Interesting implications for [materialism](thoughts/Materialism.md) -- consciousness does not *arise* as it is already present? Potential application of [Gall's law](thoughts/Gall's%20law.md)

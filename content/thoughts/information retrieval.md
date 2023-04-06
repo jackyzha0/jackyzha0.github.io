@@ -38,16 +38,6 @@ Why it may be faulty:
 
 The dominance of the SMART (very technical and computational approach to information retrieval) means the research in the field of information retrieval was split into two disciplines: information retrieval (mainly CS/computational, study of formal models of information retrieval) and information seeking/use (mainly library/information science, study of people's information-seeking behaviours and uses of and interactions with information systems). As a result, 'interactiveness' was more of an afterthought and relegated to the peripheral.
 
-### Cranfield experiments
-#### Cranfield 1
-Featured
-- Universal Decimal Classification (UDC): mostly empirically derived for what works best
-- Alphabetical
-- Faceted classification
-- Uniterm system of co-ordinate indexing (allowed boolean AND queries)
-
-In failure analysis, only 1 in 20 failures were the result of the indexing systems themselves. Majority was human error in either the indexing, searching, or clerical processes of preparing the catalogues. Cleverdon then concluded what then must matter is the underlying document representation.
-
 ## Early information retrieval systems
 Mostly 'batch', non-interactive 'closed stack' systems.
 

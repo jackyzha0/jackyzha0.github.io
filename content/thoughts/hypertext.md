@@ -11,6 +11,8 @@ He envisioned a world where computers would enable people to write and publish i
 
 Hypertext was "nonsequential" text, in which a reader was not constrained to read in any particular order, but could follow links and delve into the original document from a short quotation.
 
+See also: [[thoughts/the garden and the stream]]
+
 ## Xanadu
 He also described a project called Xanadu, in which all the world's information could be published in hypertext. He had the dream of a utopian society in which all information could be shared among people who communicated as equals.
 

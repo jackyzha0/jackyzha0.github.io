@@ -78,7 +78,7 @@ The focus of modern information systems is moving from "data-processing" towards
 Are there ways to 'breadcrumb' how we navigate? Even something as simple as option+click to leave a crumb and when finishing a session, you can save parts of the trail as a flow.
 
 ### Spatial
-Can we create spatial reminders that adhere to their contexts? Sticky notes for our mind? A reminder in certain notes to come back later and add to it, etc. Can we build [memory palaces](thoughts/memory%20palace.md)? Spatial representations of information? (See https://nototo.app/)
+Can we create spatial reminders that adhere to their contexts? Sticky notes for our mind? A reminder in certain notes to come back later and add to it, etc. Can we build [memory palaces](thoughts/memory%20palace.md)? [[thoughts/spatial computing|Spatial]] representations of information?
 
 ### Emotion
 Video is incredibly expressive. You can *feel* the passion of people who really care about the things they study, build, and work on.
@@ -95,20 +95,9 @@ Memory work of this sort is also a form of activism. Whose memories are saved an
 
 After a conversation, all parties maintain ownership of what transpired, and they continue to hold ties to one another. This form of storytelling is not predetermined, but develops through its unfolding.
 
-## Mediums versus Tools
-Linus Lee on [Browsers as Tools of Thought](https://thesephist.com/posts/browser/)
-
-> A tool is something that takes an existing workflow, and makes it more efficient. A nail is an efficient way of holding pieces of wood together; a to-do app is an efficient way of remembering your responsibilities. A medium, on the other hand, gives us new agency or power by which we can do something we couldn’t do before.
-
-**The best mediums are instead collections of generic, multi-purpose _components_ that mesh together well**
-
-
 ## Tasting Notes
 [Robin Sloan shares his recipe for taking notes that spark novels](https://every.to/superorganizers/tasting-notes-with-robin-sloan-25629085)
 
 > But the interesting thing about Robin is he doesn’t look at these things as bricks exactly. They don’t combine together in predictable, linear ways.
 > 
 > Instead, Robin’s notes are more like ingredients—deep yellow saffron, Ceylon cinnamon, black garlic, and white truffle—bits of the world that he throws together into a pot and covers with a heavy lid. He turns up the heat, he adds salt to taste—until out comes a story. 
-
-### On inventing new containers
-I describe myself as a ‘media inventor’, which I know sounds like a strange label. To me, it means that a lot of my work – not really my novels, but almost everything else – involves inventing a format or container at the same time that I’m writing or imagining what goes into it.

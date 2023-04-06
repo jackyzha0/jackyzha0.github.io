@@ -26,8 +26,10 @@ This situation can be expressed abstractly in terms of a group of generals of th
 
 It is shown that, using only oral messages, this problem is solvable if and only if more than two-thirds of the generals are loyal; so a single traitor can confound two loyal generals. With unforgeable written messages, the problem is solvable for any number of generals and possible traitors.
 
+See: [[thoughts/Byzantine Faults]]
+
 ## Designing Robust Networks
-See also: [[thoughts/Network Theory|Network theory]]
+See also: [[thoughts/Network Theory|Network theory]], [[thoughts/cascading failures]]
 
 Designing networks that are simultaneously robust to attacks _and_ random failures appears to be a conflicting desire
 
@@ -37,15 +39,6 @@ Designing networks that are simultaneously robust to attacks _and_ random fail
 To maximize robustness, we want to maximize the 'breakdown' or critical threshold: $f_c^{tot} = f_c^{rand} + f_c^{targ}$
 
 This is maximized by having a bimodal degree distribution where an $r$ fraction of nodes have degree $k_{max}$ and the remaining $1-r$ fraction have degree $k_{min}$
-
-### Halting Cascading Failures
-Two approaches come to mind
-1. Adding new links to increase connectivity and thus $f_c$. However, in most real systems the time needed to establish a new link is much larger than the timescale of a cascading failure.
-2. Removing redundant links and nodes. The size of a cascade can be reduced if we intentionally remove additional nodes right after the initial failure (i), but before the failure could propagate.
-
-The mechanism of 2. is similar to the method used by firefighters, who set a controlled fire in the fireline to consume the fuel in the path of a wildfire. In a counterintuitive fashion, controlled damage can be beneficial to a network: the Lazarus Effect
-
-The growth rate of a bacteria is determined by its ability to generate biomass, the molecules it needs to build its cell wall, DNA and other cellular components. If some key genes are missing, the bacteria is unable to generate the necessary biomass. Scientists can *revive* these dead bacteria by removing five additional genes.
 
 ### Robustness vs Resilience vs Redundancy
 - Robustness: able to maintain basic functions in the presence of internal and external errors (static).

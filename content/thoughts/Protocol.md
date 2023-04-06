@@ -19,8 +19,8 @@ Each interaction can have its own state machine.
 
 ## Open vs Closed Protocols
 - Open Protocols
-	- Examples: HTTP, SMTP, SSH
-	- Usually defined in RFC documents
+	- Examples: [[thoughts/HTTP]], SMTP, SSH
+	- Usually defined in RFC documents (normally via some sort of working group or task force)
 	- Different implementations
 	- Allows a community, generally good!
 - Proprietary Protocols

@@ -9,7 +9,7 @@ tags:
 
 Transformative technologies (TTs) refer to technological advances with a high likelihood of significantly altering society. Specifically, among TTs, there are significant trade-offs between
 
-1. **progress**: advancing technological capabilities
+1. **[[thoughts/progress]]**: advancing technological capabilities
 2. **participation**: enabling public input and self-determination
 3. **safety**: avoiding disproportionate risks
 

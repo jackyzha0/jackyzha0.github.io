@@ -6,7 +6,7 @@ tags:
 - book
 ---
 
-Ivan Illich on the proper use of technology to reclaim agency and practical knowledge for the average citizen.
+Ivan Illich on the proper use of technology to reclaim [[thoughts/agency]] and practical knowledge for the average citizen.
 
 ---
 
@@ -43,7 +43,7 @@ It has taken almost a century to pass from an era served by motorized vehicles t
 **Medicine**
 
 1. 1913, we reached the point in Western medicine where a patient had a better than 50-50 chance that trained doctors would provide better treatment than anyone else. Medicine and our expanding knowledge grew in leaps and bounds, and improvements resulted in corresponding improvements in health.
-2. The point at which we shifted to keeping people alive longer, without worrying about quality. Treatment has become further and further professionalised, removed from the control of patients and their families and communities. Multiple studies in health argue this exact point — that medical knowledge can solve only a portion of health issues, the others are interconnected with society, environment, employment, housing, inequality, etc.
+2. The point at which we shifted to keeping people alive longer, without worrying about quality. Treatment has become further and further professionalised, removed from the control of patients and their families and communities. Multiple studies in health argue this exact point — that medical knowledge can solve only a portion of health issues, the others are interconnected with society, environment, employment, [[thoughts/housing|housing]], inequality, etc.
 
 ### Agency and Conviviality
 "I choose the term 'conviviality' to designate the opposite of industrial productivity ... I consider conviviality to be individual freedom realized in personal interdependence and, as such, an intrinsic ethical value. I believe that, in any society, as conviviality is reduced below a certain level, no amount of industrial productivity can effectively satisfy the needs it creates among society's members" (Illich seems to be very against of a 'utopia' like the one imagine in B.F. Skinner's *Walden Two*)
@@ -58,12 +58,14 @@ Tools foster conviviality to the extent that
 - the use of such tools by one person does not restrain another from using them equally (non-rivalrous)
 - their existence does not impose any obligation to use them
 
+See also: [[thoughts/agency]]
+
 ### Radical monopoly
 "By 'radical monopoly' I mean the dominance of one type of product rather than the dominance of one brand... Cars can thus monopolize traffic. They can shape a city into their image--practically ruling out locomotion on foot or by bicycle in Los Angeles. That motor traffic curtails the right to walk... constitutes radical monopoly."
 
 "People will face a danger that threatens their own self-interest but not one that threatens society as a whole. Many more people are against cars than are against driving them. They are against cars because they pollute and because they monopolize traffic. They drive cars because they consider the pollution created by one car insignificant, and because they do not feel personally deprived of freedom when they drive. It is also difficult to be protected against monopoly when a society is already littered with roads, schools, or hospitals, when independent action has been paralyzed for so long that the ability for it seems to have atrophied, and when simple alternatives seem beyond the reach of the imagination. Monopoly is hard to get rid of when it has frozen not only the shape of the physical world but also the range of behaviour and of imagination."
 
-"The attempt to make a better environment has turned out to be a presumptuous as the attempt to create better health, education, or communication .As a result there are now more people, most of them less at home in the world. This large population can survive because of new tools. In turn, it spurs the search for even more powerful tools, and thereby demands more radical monopoly; this monopoly, in its turn, calls for more and more education."
+"The attempt to make a better environment has turned out to be a presumptuous as the attempt to create better health, education, or communication. As a result there are now more people, most of them less at home in the world. This large population can survive because of new tools. In turn, it spurs the search for even more powerful tools, and thereby demands more radical monopoly; this monopoly, in its turn, calls for more and more education."
 
 ### Degrowth
 See also: [[thoughts/degrowth|thoughts on degrowth]]

@@ -5,9 +5,9 @@ tags:
 - seed
 ---
 
-Suppose some N (could be 1) machines have one file and another M (could be very large) machines want the file.
+Suppose some $N$ (could be 1) machines have one file and another $M$ (could be very large) machines want the file.
 
-Could be very slow: limited by the throughput possible by those N machines. Peer to peer could speed this up!
+This could be very slow! The speed is limited by the throughput possible by those $N$ machines. Peer to peer could speed this up!
 
 - N hosts are called 'seeds'
 - Hosts are called peers
@@ -32,7 +32,7 @@ Basic operation
 	- Each peer shares the identity of the pieces they own with its peers
 	- A peer asks a peer who has the file to share it
 
-Generally
+## Strategy
 - A peer asks for the 'rarest' piece which increases the overall 'health' of the file
 - Prioritize ones that are sending the most data to it (preferred peers) -- tit-for-tat
 	- Discourages 'selfish' behaviour where peers accept pieces but don't share many pieces
