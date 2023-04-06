@@ -3,7 +3,7 @@ title: "NLP"
 date: 2022-04-11
 tags:
 - seed
-aliases
+aliases:
 - natural language processing
 ---
 

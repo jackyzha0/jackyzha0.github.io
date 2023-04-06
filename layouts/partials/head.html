@@ -8,6 +8,24 @@
     name="description"
     content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}"
   />
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{.Site.BaseURL}}icon.png">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}" />
+  <meta name="twitter:image" content="{{.Site.BaseURL}}icon.png">
+  {{ range $data.links }}
+    {{ if strings.Contains .link "twitter.com" }}
+      {{ $twitter_handle := index (split .link "/") (sub (len (split .link "/")) 1) }}
+      <meta name="twitter:site" content="{{ $twitter_handle }}" />
+    {{ end }}
+  {{ end }}
+
   <title>
     {{ if .Title }}{{ .Title }}{{ else }}{{ $data.page_title | default $.Site.Data.config.page_title }}{{
     end }}
@@ -65,11 +83,11 @@
 
   {{partial "mermaid.html" .}}
 
-  <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-  <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
-  <script async src="{{$popover.Permalink}}"></script>
+  <script defer src="{{$popover.Permalink}}"></script>
 
   <!-- Optional scripts -->
   {{ if $data.enableCodeBlockTitle | default $.Site.Data.config.enableCallouts }}
