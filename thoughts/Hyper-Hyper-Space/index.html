@@ -19,7 +19,6 @@ Provides:
 Provides:
  a local data store, both in-browser using IndexedDB and server-side a data representation format, based on Merkle-DAGs and [[thoughts/CRDT|CRDTs]] a secure data sync protocol over WebRTC and WebSockets  The Hyper Hyper Space project proposes a framework for universal information access">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jzhao.xyz/icon.png">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Hyper-Hyper-Space/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
@@ -169,7 +168,7 @@ Provides:
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.67b3035eb5134e01711727466ef046c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

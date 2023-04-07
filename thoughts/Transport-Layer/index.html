@@ -15,7 +15,6 @@
   <meta property="og:description" content="Layer 2, the layer below the Application Layer and layer above the Network Layer
  Unit: Segment Responsibilities: Ensures data arrives in order (if required), Recovers lost data (if required), Identifies process on machine, flow control Adds an additional addressing space at the port level (historically a 16 bit uint from 0 to 65535) Can be either be either packet or stream based  Packet - best effort, no established connection, no transport level delay/waiting (e.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jzhao.xyz/icon.png">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Transport-Layer/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
@@ -163,7 +162,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.67b3035eb5134e01711727466ef046c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

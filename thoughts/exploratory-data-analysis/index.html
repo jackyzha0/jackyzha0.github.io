@@ -15,7 +15,6 @@
   <meta property="og:description" content="How do we &ldquo;look&rdquo; at features and high-dimensional examples?
  Summary statistics  Categorical Features  Frequencies Mode Quantiles   Numerical Features  Location  Mean Median Quantiles   Spread  Range Variance Interquartile ranges     Entropy: measured &ldquo;randomness&rdquo; of a set of variables where entropy is $- \Sigma_{c=1}^k p_c \log p_c$ and $p_c$ is the proportion of times you have value $c$, range from $[0, \log k]$  Low entropy means it is very predictable whereas high entropy means it is very unpredictable (roughly, spread) Normal distribution has the highest entropy    Not always representative!">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jzhao.xyz/icon.png">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/exploratory-data-analysis/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
@@ -163,7 +162,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.67b3035eb5134e01711727466ef046c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

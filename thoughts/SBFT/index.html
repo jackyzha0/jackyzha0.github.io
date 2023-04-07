@@ -15,7 +15,6 @@ To achieve this performance improvement, SBFT uses a combination of four ingredi
   <meta property="og:description" content="A [[thoughts/Byzantine Faults|Byzantine fault-tolerant]] [[thoughts/State Machine Replication (SMR)|state machine replication]] system that improves upon the scalability of [[thoughts/PBFT|PBFT]].
 To achieve this performance improvement, SBFT uses a combination of four ingredients: using collectors and threshold [[thoughts/digital signatures|signatures]] to reduce communication to linear, using an optimistic fast path, reducing client communication and utilizing redundant servers for the fast path">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jzhao.xyz/icon.png">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/SBFT/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
@@ -163,7 +162,7 @@ To achieve this performance improvement, SBFT uses a combination of four ingredi
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.67b3035eb5134e01711727466ef046c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

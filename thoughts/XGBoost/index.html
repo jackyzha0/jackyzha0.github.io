@@ -15,7 +15,6 @@
   <meta property="og:description" content="Uses [[thoughts/regularization|regularized]] regression trees. These are like [[thoughts/decision tree|decision trees]] where each split is
  based on a single feature each leaf gives a real-valued prediction  Fitting a regression tree  Train: set each weight $w_L$ at leaf $L$ by minimizing squared error $\sum_{i=1}^n (w_{L_i}-y_i)^2$  We use using greedy recursive splitting for growing the tree   Prediction: At each leaf, the prediction $\hat y_i$ is the mean of all $y_i$ that fall under that leaf node  Ensemble and Boosting We create a series of trees that are trained on the residual of the previous tree.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://jzhao.xyz/icon.png">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/XGBoost/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
@@ -163,7 +162,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.67b3035eb5134e01711727466ef046c5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
