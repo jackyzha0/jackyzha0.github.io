@@ -31,8 +31,8 @@ See also: [[thoughts/Tools for Conviviality]], [[posts/agentic-computing|agentic
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/plurality/</guid>
-      <description>Globality versus Globalization From [[thoughts/Archipelago]]
- Globality does not homogenize culture. It produces a difference from which new things can emerge.</description>
+      <description>Source: pluriverse.world
+Plurality refers to a state in which multiple alternatives co-exist. Classical pluralism in a political science context takes this and applies it to the distribution of power within a political system.</description>
     </item>
     
     <item>
@@ -43,15 +43,6 @@ See also: [[thoughts/Tools for Conviviality]], [[posts/agentic-computing|agentic
       <guid>https://jzhao.xyz/thoughts/independent-research/</guid>
       <description>See also: [[posts/the-fools-who-dream]]
  In independent research, one often pendulums between two brains that drive your day-to-day  Brain 1: I want to make change in the world, I want to ship and build  This is the beginners mind, it helps you escape the conceptual walls of today&amp;rsquo;s dogma.</description>
-    </item>
-    
-    <item>
-      <title>Website Inspiration</title>
-      <link>https://jzhao.xyz/thoughts/website-inspiration/</link>
-      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/website-inspiration/</guid>
-      <description>Fun interactions   https://victoiredouy.com/about  http://www.narrowdesign.com/  https://thebrowser.company/  http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  Aesthetics   https://shapefarm.</description>
     </item>
     
     <item>
@@ -210,9 +201,9 @@ Community Care Lighthouses are beacons for ships at night, identifying the shore
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/software-principles/</guid>
-      <description>A Pattern Language for developing software
+      <description>[[thoughts/A Pattern Language|A Pattern Language]] for developing software
  Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Avoid hosting like the plague.</description>
+ [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second.</description>
     </item>
     
     <item>
@@ -1222,7 +1213,7 @@ Thinking about accumulated societal knowledge as a mountain and understanding kn
       <pubDate>Wed, 16 Jun 2021 23:32:09 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/exploit-explore/</guid>
-      <description>Saying yes requires saying no]
+      <description>Saying yes requires saying no
  Machine Learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
 Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/optimization problem (see: [[thoughts/gradient descent]]).</description>
     </item>

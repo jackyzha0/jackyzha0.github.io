@@ -7,6 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Pattern Language</title>
+      <link>https://jzhao.xyz/thoughts/A-Pattern-Language/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/A-Pattern-Language/</guid>
+      <description>“every individual in such a society will have a unique language, shared in part, but which as a totality is unique to the mind of the person who has it.</description>
+    </item>
+    
+    <item>
+      <title>Bitemporal</title>
+      <link>https://jzhao.xyz/thoughts/bitemporal/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/bitemporal/</guid>
+      <description>Bitemporality is a technique for modeling time in databases and data structures such that&amp;hellip;
+ The state at any point in history can be recovered Alternative timelines can be forked  It&amp;rsquo;s basically time travel!</description>
+    </item>
+    
+    <item>
       <title>Composable</title>
       <link>https://jzhao.xyz/thoughts/composable/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
@@ -70,6 +89,17 @@ There exist building blocks which span a range of useful combinations.</descript
       <guid>https://jzhao.xyz/thoughts/telepresence/</guid>
       <description>Means remote presence
 One example is the telephone line, a thin, narrow bandwidth of aural telepresence. The far end is Dennet&amp;rsquo;s experiment which leaves the brain and body joined and intact, but wrap the body in a kind of additional sensory cocoon</description>
+    </item>
+    
+    <item>
+      <title>Three Legged Stool</title>
+      <link>https://jzhao.xyz/thoughts/Three-Legged-Stool/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Three-Legged-Stool/</guid>
+      <description>Source
+A Manifesto for a Smaller, Denser Internet
+ A truly sustainable and resilient digital public sphere consists of [[thoughts/plurality|many different platforms]] with a wide variety of sizes and purposes, that users can navigate with a loyal client that aggregates, [[thoughts/Syndication|cross-posts]], and curates, all supported by cross-cutting services rooted in [[thoughts/interoperability|interoperable]] data</description>
     </item>
     
     <item>
@@ -391,8 +421,8 @@ Dasein Literally means &amp;lsquo;Being-there&amp;rsquo;. Through the use of thi
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/plurality/</guid>
-      <description>Globality versus Globalization From [[thoughts/Archipelago]]
- Globality does not homogenize culture. It produces a difference from which new things can emerge.</description>
+      <description>Source: pluriverse.world
+Plurality refers to a state in which multiple alternatives co-exist. Classical pluralism in a political science context takes this and applies it to the distribution of power within a political system.</description>
     </item>
     
     <item>
@@ -3078,7 +3108,7 @@ A way of planning with a wider view of interests than just what we want right no
       
       <guid>https://jzhao.xyz/thoughts/Community-of-Fate/</guid>
       <description>Margaret Levi in Noema Magazine
- The keystone is generating an “expanded [[community]] of fate.” For societies to survive and thrive, a significant proportion of their members must engage in reciprocal altruism</description>
+ The keystone is generating an “expanded [[thoughts/communities|community]] of fate.” For societies to survive and thrive, a significant proportion of their members must engage in reciprocal altruism</description>
     </item>
     
     <item>
@@ -3580,9 +3610,9 @@ Community Care Lighthouses are beacons for ships at night, identifying the shore
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/software-principles/</guid>
-      <description>A Pattern Language for developing software
+      <description>[[thoughts/A Pattern Language|A Pattern Language]] for developing software
  Inspired by Urbit Precepts
- [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Avoid hosting like the plague.</description>
+ [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second.</description>
     </item>
     
     <item>
@@ -5871,7 +5901,7 @@ Thinking about accumulated societal knowledge as a mountain and understanding kn
       <pubDate>Wed, 16 Jun 2021 23:32:09 -0700</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/exploit-explore/</guid>
-      <description>Saying yes requires saying no]
+      <description>Saying yes requires saying no
  Machine Learning  Source: Intro to Reinforcement Learning: The Explore-Exploit Dilemma
 Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/optimization problem (see: [[thoughts/gradient descent]]).</description>
     </item>
@@ -5997,7 +6027,8 @@ Quotes Composition When knowledge can be broken up into &amp;ldquo;mind-size bit
       <pubDate>Wed, 16 Jun 2021 08:59:04 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/From-Counterculture-to-Cyberculture/</guid>
-      <description>Quotes Digital Communalism See: [[thoughts/tribe flourishing]]
+      <description>See also: [[thoughts/counterculture]]
+Quotes Digital Communalism See: [[thoughts/tribe flourishing]]
 &amp;ldquo;Ubiquitous networked computing had arrived, and in its shiny array of interlinked devices, pundits, scholars, and investors alike saw the image of an ideal society: decentralized, egalitarian, harmonious, and free&amp;rdquo;</description>
     </item>
     
