@@ -3,6 +3,7 @@ title: "Gall's law"
 date: 2021-12-24
 tags:
 - seed
+- pattern
 ---
 
 > “One day I will find the right words, and they will be simple.” ― **Jack Kerouac, The Dharma Bums**
