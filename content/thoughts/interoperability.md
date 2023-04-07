@@ -3,6 +3,7 @@ title: "Interoperability"
 date: 2021-12-01
 tags:
 - sapling
+- pattern
 ---
 
 > Portability implies switching platforms, but true interoperability is platform-agnostic.
@@ -55,6 +56,8 @@ What data was created a few days ago? etc.
 [Source: Adversarial Interoperability by *Cory Doctorow*](https://www.eff.org/deeplinks/2019/10/adversarial-interoperability)
 
 > When you create a new product or service that plugs into the existing ones _without the permission_ of the companies that make them. Think of third-party printer ink, alternative app stores, or independent repair shops that use compatible parts from rival manufacturers to fix your car or your phone or your tractor.
+
+If a platform chooses to not make a well documented API available, for example, a loyal client could still interoperate with them, taking more adversarial approaches such as reverse engineering their API or downloading content and storing it locally.
 
 ## Data Lenses
 Source: [Ink and Switch on Cambria](https://www.inkandswitch.com/cambria/)

@@ -3,6 +3,7 @@ title: "Chesterton's Fence"
 date: 2022-01-30
 tags:
 - seed
+- pattern
 ---
 
 > "Don't ever take a fence down until you truly know the reason why it was put up" -- G.K. Chesterton

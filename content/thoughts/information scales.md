@@ -3,6 +3,7 @@ title: "Information Scales"
 date: 2022-01-07
 tags:
 - sapling
+- pattern
 aliases:
 - Engelbart Zoom
 ---

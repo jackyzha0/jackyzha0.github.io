@@ -3,6 +3,7 @@ title: "Collaborative software"
 date: 2022-05-05
 tags:
 - seed
+- pattern
 ---
 
 Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available

@@ -3,6 +3,7 @@ title: "Labels, quantization, and legibility"
 date: 2021-05-04T22:22:23-04:00
 tags:
 - sapling
+- pattern
 aliases:
 - legibility
 ---

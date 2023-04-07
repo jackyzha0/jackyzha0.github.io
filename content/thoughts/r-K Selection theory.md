@@ -3,6 +3,7 @@ title: "r/K Selection theory"
 date: 2022-08-16
 tags:
 - seed
+- pattern
 aliases:
 - r-selected
 - K-selected

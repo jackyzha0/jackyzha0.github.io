@@ -3,6 +3,7 @@ title: "Do Artifacts Have Politics"
 date: 2021-11-23
 tags:
 - seed
+- pattern
 aliases:
 - political
 ---

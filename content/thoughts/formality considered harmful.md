@@ -3,6 +3,7 @@ title: "Formality considered harmful"
 date: 2022-11-01
 tags:
 - seed
+- pattern
 ---
 
 See also: [[thoughts/cozy software|cozy software]]

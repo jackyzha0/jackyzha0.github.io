@@ -3,6 +3,7 @@ title: "Easy is not always better"
 date: 2023-04-01
 tags:
 - seed
+- pattern
 ---
 
 [Are 'easy-to-use' products always better?](https://www.dougengelbart.org/content/view/348/000/)

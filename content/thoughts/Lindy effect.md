@@ -3,6 +3,7 @@ title: "Lindy Effect"
 date: 2021-10-27
 tags:
 - seed
+- pattern
 aliases:
 - Lindy
 ---

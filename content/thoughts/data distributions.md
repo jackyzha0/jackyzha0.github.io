@@ -3,6 +3,7 @@ title: "Data Distributions"
 date: 2021-08-18T20:19:51-07:00
 tags:
 - sapling
+- pattern
 ---
 
 [[thoughts/machine learning|Machine Learning]] and [AI Systems](posts/agi.md) excludes the tail ends of the distributions. Synthetic/generative/federated models suck at these. And, for a lot of industries, the most interesting cases *are* outliers (esp. in medical AI)

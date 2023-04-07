@@ -3,6 +3,7 @@ title: "Self-directed Growth"
 date: 2023-03-02
 tags:
 - seed
+- pattern
 ---
 
 See also: [[posts/the-fools-who-dream]], [[thoughts/independent research]]

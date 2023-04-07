@@ -3,6 +3,7 @@ title: "Attention"
 date: 2023-03-02
 tags:
 - seed
+- pattern
 ---
 
 > Attention is the stuff of manifestation. In the same way that looking at something while you’re driving takes you there, paying attention to anything (a field, an attitude, a person), will drive you uncontrollably toward it.

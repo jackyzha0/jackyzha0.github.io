@@ -3,6 +3,7 @@ title: "Credible exit"
 date: 2022-08-02
 tags:
 - seed
+- pattern
 ---
 
 One sub-branch of the Exit, Voice, and Loyalty model (based on [[thoughts/game theory|game theory]]).

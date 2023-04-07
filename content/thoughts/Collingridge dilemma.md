@@ -3,6 +3,7 @@ title: "Collingridge Dilemma"
 date: 2021-12-24
 tags:
 - seed
+- pattern
 ---
 
 Efforts to influence or control the further development of technology face a [[thoughts/catch 22|double-bind]] problem

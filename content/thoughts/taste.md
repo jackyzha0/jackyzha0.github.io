@@ -3,6 +3,7 @@ title: "Taste"
 date: 2023-03-02
 tags:
 - sapling
+- pattern
 ---
 
 ![[thoughts/images/developing taste.png]]

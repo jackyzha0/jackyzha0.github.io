@@ -3,6 +3,7 @@ title: "Pace Layers"
 date: 2022-01-20
 tags:
 - fruit
+- pattern
 ---
 
 ![Pace Layers image from Stewart Brand in The Clock of the Long Now](/thoughts/images/pace-layers.png)*The order of civilization. The whole combines learning with continuity.*

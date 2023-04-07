@@ -3,6 +3,7 @@ title: "Personal and cozy software"
 date: 2022-02-20
 tags:
 - sapling
+- pattern
 aliases:
 - personal software
 ---

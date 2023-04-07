@@ -3,6 +3,7 @@ title: "Fiction"
 date: 2021-10-24
 tags:
 - sapling
+- pattern
 ---
 
 > The future is manifested

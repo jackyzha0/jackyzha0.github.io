@@ -33,7 +33,6 @@ Crucially, each of these masks can be worn by a single person: the Artist
 > “It requires the Artist to abandon any sense of a coherent self and take on a different kind of psychology. One that moves between the artistic masks that already exist unevenly inside us, letting each contribute to the creation of a World.”
 
 
-
 ## World Seed
 -  the world seed
 	-  "It is made so that the created new worlds do not require one large server, but can run on multiple smaller servers."

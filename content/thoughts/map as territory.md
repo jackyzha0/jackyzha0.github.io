@@ -3,6 +3,7 @@ title: "Map as territory"
 date: 2023-03-09
 tags:
 - seed
+- pattern
 ---
 
 > "Our maps are still maps, approximating the landscape of truth from the territories of the knowable — incomplete representational models that always leave more to map, more to fathom, because the selfsame forces that made the universe also made the figuring instrument with which we try to comprehend it." [Source](https://www.themarginalian.org/2019/10/23/13-learnings-13-years)

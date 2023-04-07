@@ -3,6 +3,7 @@ title: "Stone Soup metaphor"
 date: 2021-12-25
 tags:
 - seed
+- pattern
 ---
 
 ### Stone Soup Metaphor

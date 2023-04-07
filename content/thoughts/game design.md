@@ -3,6 +3,7 @@ title: "Game Design"
 date: 2021-10-26
 tags:
 - sapling
+- pattern
 ---
 
 Related: [games](thoughts/games.md)

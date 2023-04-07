@@ -3,6 +3,7 @@ title: "Boundary Objects"
 date: 2021-07-15T21:18:53-04:00
 tags:
 - seed
+- pattern
 ---
 
 See also: [contact language](thoughts/contact%20language.md)

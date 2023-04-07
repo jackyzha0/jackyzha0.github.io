@@ -3,6 +3,7 @@ title: "Plurality"
 date: 2023-04-01
 tags:
 - sapling
+- seed
 aliases:
 - pluriversal
 - pluralism
@@ -40,3 +41,4 @@ In agriculture, monoculture refers to the cultivation of a singular crop in an a
 Three Sisters, a gardening style of Native peoples, refers to the interdependent relationship between species of corn, squash, and beans. Although each of the species have different needs and growth patterns, they work alongside each other in a holistic ecosystem of growth
 
 See also: [[thoughts/Seeing like a State]]
+

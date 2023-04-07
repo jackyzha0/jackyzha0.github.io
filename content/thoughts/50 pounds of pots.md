@@ -3,6 +3,7 @@ title: "50 pounds of pots"
 date: 2022-11-29
 tags:
 - seed
+- pattern
 ---
 
 **Quantity is the journey to quality**

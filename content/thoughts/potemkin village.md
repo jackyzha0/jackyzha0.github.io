@@ -3,6 +3,7 @@ title: "Potemkin villages"
 date: 2021-12-25
 tags:
 - sapling
+- pattern
 ---
 
 A "Potemkin village" signifies any deceptive or false construct, conjured often by cruel regimes, to deceive both those within the land and those peering in from outside.

@@ -3,6 +3,7 @@ title: "Local-first software"
 date: 2022-04-25
 tags:
 - seed
+- pattern
 ---
 
 > By centralizing data storage on servers, cloud apps also take away ownership and agency from users. If a service shuts down, the software stops functioning, and data created with that software is lost.

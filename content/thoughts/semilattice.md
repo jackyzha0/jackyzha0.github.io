@@ -3,6 +3,7 @@ title: "Semilattice"
 date: 2023-04-03
 tags:
 - seed
+- pattern
 aliases:
 - semi-lattice
 ---

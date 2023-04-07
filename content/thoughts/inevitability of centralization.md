@@ -3,6 +3,7 @@ title: "Inevitability of Recentralization"
 date: 2022-08-02
 tags:
 - sapling
+- pattern
 ---
 
 Notes on Gordon Brander's *[Decentralization enables permissionless innovation](https://subconscious.substack.com/p/decentralization-enables-permissionless)*, *[Centralization is Inevitable](https://subconscious.substack.com/p/centralization-is-inevitable)* and *[Redecentralization](https://subconscious.substack.com/p/redecentralization)*

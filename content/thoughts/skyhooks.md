@@ -3,6 +3,7 @@ title: "Skyhooks"
 date: 2021-12-24
 tags:
 - sapling
+- pattern
 ---
 
 We should have nondystopian science [fiction](thoughts/fiction.md) -- there's value in reclaiming an optimistic and hopeful future. I love the concept of skyhooks: dream about what you can build as if the sky had hooks you could hang your creations from (a metaphor for unlimited resources) and most of the time, you can still create that with scarce resources.

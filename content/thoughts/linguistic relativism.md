@@ -3,6 +3,7 @@ title: "Linguistic Relativism"
 date: 2021-12-23
 tags:
 - sapling
+- pattern
 aliases:
 - Sapir-Whorf
 ---

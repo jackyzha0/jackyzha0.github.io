@@ -3,6 +3,7 @@ title: "Neutrality"
 date: 2022-07-07
 tags:
 - seed
+- pattern
 ---
 
 ## Net Neutrality

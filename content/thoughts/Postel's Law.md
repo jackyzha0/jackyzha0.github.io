@@ -3,6 +3,7 @@ title: "Postel's Law"
 date: 2022-12-26
 tags:
 - seed
+- pattern
 ---
 
 > Be conservative in what you send, be liberal in what you accept

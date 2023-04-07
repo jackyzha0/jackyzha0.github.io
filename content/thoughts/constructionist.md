@@ -3,6 +3,7 @@ title: "Constructionism"
 date: 2021-12-25
 tags:
 - seed
+- pattern
 ---
 
 > "As children construct things in the world, they construct new ideas and theories in their minds, which motivates them to construct new things in the world, and on and on."

@@ -3,6 +3,7 @@ title: "Data changes the application"
 date: 2023-04-06
 tags:
 - sapling
+- pattern
 ---
 
 Existing large owners of data won't innovate because they have monopoly over data, new innovators cant enter because they lack data

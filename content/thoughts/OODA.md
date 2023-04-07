@@ -3,6 +3,7 @@ title: "OODA"
 date: 2023-03-18
 tags:
 - seed
+- pattern
 ---
 
 OODA stands for observe, orient, decide, act. Initially developed by a military strategist, it is now applied to understand commercial operations and [[thoughts/information behaviour]]

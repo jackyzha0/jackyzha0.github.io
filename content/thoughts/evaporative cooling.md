@@ -3,6 +3,7 @@ title: "Evaporative Cooling Effect"
 date: 2021-11-24
 tags:
 - seed
+- pattern
 ---
 
 Sources: [The Evaporative Cooling Effect in *BumblebeeLabs*](https://web.archive.org/web/20101012105003/http://blog.bumblebeelabs.com/social-software-sundays-2-the-evaporative-cooling-effect/) and [Evaporative Cooling of Group Beliefs in *LessWrong*](https://www.lesswrong.com/posts/ZQG9cwKbct2LtmL3p/evaporative-cooling-of-group-beliefs)

@@ -3,6 +3,7 @@ title: "Tragedy of the Commons"
 date: 2021-07-28T18:59:39-04:00
 tags:
 - sapling
+- pattern
 ---
 
 > The more accessible a good is, the less people want to pay for it. --[Scott Moore](https://scott.mirror.xyz/7nKKV4x17rVkZL9_C0vVL3Vax2rv1H1ciigleEgBAOw)
