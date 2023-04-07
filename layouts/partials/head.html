@@ -11,7 +11,6 @@
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{.Site.BaseURL}}icon.png">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
