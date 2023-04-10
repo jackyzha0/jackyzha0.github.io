@@ -156,13 +156,13 @@ Can we create associations between digital/physical space and concept space? Cre
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.82ab6faf04be5b03a5bd0cc9012e2400.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

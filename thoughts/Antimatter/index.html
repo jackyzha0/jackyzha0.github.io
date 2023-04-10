@@ -9,12 +9,12 @@
   <meta
     name="description"
     content="Source
-A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+A [[thoughts/CRDT|CRDT]] &#43; [[thoughts/Operational Transform|OT]] text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history."
   />
   <meta property="og:title" content="Antimatter">
   <meta property="og:description" content="Source
-A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+A [[thoughts/CRDT|CRDT]] &#43; [[thoughts/Operational Transform|OT]] text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Antimatter/">
@@ -23,7 +23,7 @@ Components  Acknowledgements: require all peers to have acknowledged up to a cer
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Antimatter" />
   <meta name="twitter:description" content="Source
-A [[thoughts/CRDT|CRDT]] &#43; OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+A [[thoughts/CRDT|CRDT]] &#43; [[thoughts/Operational Transform|OT]] text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
@@ -159,13 +159,13 @@ Components  Acknowledgements: require all peers to have acknowledged up to a cer
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.82ab6faf04be5b03a5bd0cc9012e2400.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -532,6 +532,49 @@ Feb 5, 2023
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -582,7 +625,7 @@ Feb 5, 2023
 
 <p>
 <a href="https://braid.org/antimatter" rel="noopener">Source</a></p>
-<p>A <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a> + OT text editing algorithm with history pruning (read: GC). Permissionless <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
+<p>A <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDT</a> + <a href="/thoughts/Operational-Transform" rel="noopener" class="internal-link" data-src="/thoughts/Operational-Transform">OT</a> text editing algorithm with history pruning (read: GC). Permissionless <a href="/thoughts/system-model" rel="noopener" class="internal-link" data-src="/thoughts/system-model">system model</a>.</p>
 <a href="#components"><h2 id="components"><span class="hanchor" ariaLabel="Anchor"># </span>Components</h2></a>
 <ul>
 <li>Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop</li>

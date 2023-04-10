@@ -6,7 +6,68 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operational Transform</title>
+      <link>https://jzhao.xyz/thoughts/Operational-Transform/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Operational-Transform/</guid>
+      <description>Source
+It defines a way to describe changes that has two properties:
+ You can transform changes relative to other changes.</description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>https://jzhao.xyz/thoughts/terminal/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/terminal/</guid>
+      <description>TTY  Source
+Teletypewriter. Fundamentally sends a stream of input characters and displays output
+You’ll sometimes hear these apps referred to as “terminal emulators” instead of simply “terminals”.</description>
+    </item>
+    
+    <item>
+      <title>Upwelling</title>
+      <link>https://jzhao.xyz/thoughts/Upwelling/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Upwelling/</guid>
+      <description>Source
+ [[thoughts/Fishbowl effect|Fishbowl effect]] of real-time [[thoughts/collaborative software]] File-based collaboration creates problems of versioning and merging edits from different co-authors.</description>
+    </item>
+    
+    <item>
+      <title>Walking</title>
+      <link>https://jzhao.xyz/thoughts/walking/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/walking/</guid>
+      <description>Source
+  We are, after all, “the small bipeds with the giant dreams”
+ Nietzsche saw the link between walking and creativity.</description>
+    </item>
+    
+    <item>
+      <title>NeRF</title>
+      <link>https://jzhao.xyz/thoughts/NeRF/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/NeRF/</guid>
+      <description>A neural radiance field (NeRF) is a fully-connected neural network that can generate novel views of complex 3D scenes, based on a partial set of 2D images.</description>
+    </item>
+    
+    <item>
+      <title>Spherical coordinate system</title>
+      <link>https://jzhao.xyz/thoughts/spherical-coordinate-system/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/spherical-coordinate-system/</guid>
+      <description>$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)</description>
+    </item>
+    
     <item>
       <title>A Pattern Language</title>
       <link>https://jzhao.xyz/thoughts/A-Pattern-Language/</link>
@@ -620,7 +681,7 @@ Transformative technologies (TTs) refer to technological advances with a high li
       
       <guid>https://jzhao.xyz/thoughts/Antimatter/</guid>
       <description>Source
-A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+A [[thoughts/CRDT|CRDT]] + [[thoughts/Operational Transform|OT]] text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 Components  Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop Blooping: collapsing history.</description>
     </item>
     

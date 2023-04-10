@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.82ab6faf04be5b03a5bd0cc9012e2400.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -31186,17 +31186,7 @@ May 3, 2022
 </li>
 </ul>
 </li>
-<li>Upwelling pre-print
-<ul>
-<li><a href="/thoughts/Fishbowl-effect" rel="noopener" class="internal-link" data-src="/thoughts/Fishbowl-effect">Fishbowl effect</a> of real-time collaboration</li>
-<li>File-based collaboration creates problems of versioning and merging edits from different co-authors.</li>
-<li>Reviewing changes
-<ul>
-<li>Carefully reviewing a document is important in many professional contexts, but existing software makes it difficult to visualize and review the changes that have been made to a document.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="/thoughts/Upwelling" rel="noopener" class="internal-link" data-src="/thoughts/Upwelling">Upwelling</a> pre-print</li>
 <li>Presence affordance that is not intrusive? (“I’m working on the introduction today, please don’t touch that section”)</li>
 <li>Making cherry picking easy</li>
 <li>I want to prototype a collaborative writing tool as a testing ground for the version control stuff

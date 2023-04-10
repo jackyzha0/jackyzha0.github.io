@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.82ab6faf04be5b03a5bd0cc9012e2400.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.aa79ad89f76e04184d62b013912a1c90.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -433,6 +433,16 @@ Apr 6, 2023
 <li>Delete all derivations that rely on deleted facts</li>
 <li>Rederive all facts with alternative derivations</li>
 </ol>
+<a href="#noria"><h2 id="noria"><span class="hanchor" ariaLabel="Anchor"># </span>Noria</h2></a>
+<p>
+<a href="https://blog.the-pans.com/caching-partially-materialized-views-consistently/" rel="noopener">Source</a></p>
+<p>A materialized view is a cache.</p>
+<p>By reasoning about every cache as a partially materialized view (assume it can be explicitly defined), it means if we can cache partially materialized views consistently, we solve the cache invalidation problem.</p>
+<p>The 
+<a href="https://www.usenix.org/conference/osdi18/presentation/gjengset" rel="noopener">Noria</a> paper from OSDI'18 introduced a new concept called partially-stateful data-flow to solve the consistency problem for partially materialized views.</p>
+<p>Noria will internally compile the materialized view into a DAG of partially-stateful and stateless operators.</p>
+<p>If the underlying data store supports ordering primitives such as Hybrid Logical Clock, we can probably apply the techniques described in the OSDI'20 
+<a href="https://www.usenix.org/conference/osdi20/presentation/shi" rel="noopener">FlightTracker paper</a> to provide Causal Consistency in Noria – a big improvement over Eventual Consistency.</p>
 
 
     </article>
