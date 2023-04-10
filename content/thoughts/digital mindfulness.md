@@ -26,11 +26,11 @@ This is an opportunity for us to reclaim our attention, to *properly* build out 
 Rather than organizing music through name or playlist (inherent or user groupings), Olo Radio chooses to organize information through data residue (unintentional data generated through regular usage). Allows the user to browse music by time of day listened to, how long ago you listened to it, or when in the year you listened to it.
 
 Incentivizes revisiting of the past rather than the constant discovery of the new. (w the exception of once-a-year recaps like Spotify Wrapped)
-	- How do we introduce temporality into objects to appreciate their inner processes?
-		- Water fountain display of number of water bottles saved in lifetime
-		- Transit time between websites? (bring back [friction](thoughts/friction.md))
-		- "Natural decay" of physical objects -- how do we transfer this into the digital realm?
-		- Dispo as a way to fake 'scarcity' in digital photos
+- How do we introduce temporality into objects to appreciate their inner processes?
+	- Water fountain display of number of water bottles saved in lifetime
+	- Transit time between websites? (bring back [friction](thoughts/friction.md))
+	- "Natural decay" of physical objects -- how do we transfer this into the digital realm?
+	- Dispo as a way to fake 'scarcity' in digital photos
 
 Slowness as a form of reflection. Key features of the Olo Radio:
 - takes time to understand

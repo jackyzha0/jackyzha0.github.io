@@ -17,7 +17,7 @@ Curiosity and an inherent observatory nature toward the world serve as constant 
 ## Creation and Research
 It is this taste that is so important in [[thoughts/independent research]]. Without taste, one cannot carve out their own [[thoughts/iconic space]].
 
-> Creation is the act of bringing something nonexistent into reality. You have to have strong opinions about how the world should work. You have to think that things should be a certain way, that you prefer this color over that, this form of walking over another, this sense of beauty over theirs, this way of approaching the world over some other. Taste gives you the capability and the urgency to imagine.
+> Creation is the act of bringing something nonexistent into reality. You have to have strong opinions about how the world should work. You have to think that things should be a certain way, that you prefer this color over that, this form of [[thoughts/walking|walking]] over another, this sense of beauty over theirs, this way of approaching the world over some other. Taste gives you the capability and the urgency to imagine.
 > 
 > (Spencer, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*)
 

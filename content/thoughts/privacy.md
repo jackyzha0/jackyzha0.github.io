@@ -80,7 +80,7 @@ There are four zones in proxemics
 2. the personal, the "living room"
 	- It’s semi-private, but can also host large groups and conversations that are designed to be public, private, or in-between. This setting allows for more intimacy because it allows for a smaller group. This design functions much like a salon or a group gathered for lively debate. The living room is a metaphor for a closed Facebook group or a WhatsApp chat group.
 3. the social, the "park bench"
-	- It’s like walking down the street and engaging in conversation with a coworker or friend, or having a discussion on the tube or in a pub—is a space where anyone can have a conversation between two or a few people, but that conversation takes place in public. Those in the conversation can control who hears it by lowering their voice or walking to a less populated area.
+	- It’s like [[thoughts/walking|walking]] down the street and engaging in conversation with a coworker or friend, or having a discussion on the tube or in a pub—is a space where anyone can have a conversation between two or a few people, but that conversation takes place in public. Those in the conversation can control who hears it by lowering their voice or walking to a less populated area.
 4. and the public space, the "town hall"
 	- This is where we shout our thoughts or share things we don’t mind thousands of people seeing. The town hall is a public square for speaking loudly and deliberately. Your thoughts can spread virally; They will be heard, amplified and sometimes misinterpreted.
 

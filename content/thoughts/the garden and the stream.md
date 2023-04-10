@@ -21,7 +21,7 @@ There is no *right* or canonical way to view it
 A hard part of this is The Navigation Problem: how do we give web users just enough guidance to freely explore the web, without forcing them into pre-defined browsing experiences?
 
 ## The Stream
-In the stream metaphor you don’t experience the Stream by walking around it and looking at it, or following it to its end. You jump in and let it flow past. You feel the force of it hit you as things float by.
+In the stream metaphor you don’t experience the Stream by [[thoughts/walking|walking]] around it and looking at it, or following it to its end. You jump in and let it flow past. You feel the force of it hit you as things float by.
 
 In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, time ordered path with our experience (and only our experience) at the center.
 

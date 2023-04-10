@@ -63,3 +63,4 @@ Can also either be (imagine both of the following where X is thumb, Y is pointer
 1. Left-handed
 2. Right-handed
 
+See also: [[thoughts/NeRF]]

@@ -7,7 +7,7 @@ tags:
 
 [Source](https://braid.org/antimatter)
 
-A [[thoughts/CRDT|CRDT]] + OT text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
+A [[thoughts/CRDT|CRDT]] + [[thoughts/Operational Transform|OT]] text editing algorithm with history pruning (read: GC). Permissionless [[thoughts/system model]].
 
 ## Components
 - Acknowledgements: require all peers to have acknowledged up to a certain point, then we can bloop

@@ -30,7 +30,7 @@ Local-first ideals include
 2. Your work is not trapped on one device
 3. Network is optional
 4. Seamless collaboration
-	1. Auto-merging changes using a [[thoughts/CRDT|CRDT]] or OT
+	1. Auto-merging changes using a [[thoughts/CRDT|CRDT]] or [[thoughts/Operational Transform|OT]]
 	2. Asynchronous changes that need review (e.g. suggestions or pull requests)
 5. The long now (optional permanence/digital longetivity)
 	- When you do some work with local-first software, your work should continue to be accessible indefinitely, even after the company that produced the software is gone.

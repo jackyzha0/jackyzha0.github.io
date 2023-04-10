@@ -299,11 +299,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- ^ this is quite similar to earlier observations about RedBlue consistency
 	- "With apologies, potentially-inconsistent observations are accompanied by compensating actions, which are intended to clean up any negative effects of weak consistency. By leveraging lineage tracing, a CRDT-enabled database could automatically determine when such apologies are necessary, prompting the application accordingly"
 		- How does this compare with netcode rollback techniques?
-- Upwelling pre-print
-	- [[thoughts/Fishbowl effect|Fishbowl effect]] of real-time collaboration
-	- File-based collaboration creates problems of versioning and merging edits from different co-authors.
-	- Reviewing changes
-		- Carefully reviewing a document is important in many professional contexts, but existing software makes it difficult to visualize and review the changes that have been made to a document.
+- [[thoughts/Upwelling]] pre-print
 - Presence affordance that is not intrusive? (“I’m working on the introduction today, please don’t touch that section”)
 - Making cherry picking easy
 - I want to prototype a collaborative writing tool as a testing ground for the version control stuff
