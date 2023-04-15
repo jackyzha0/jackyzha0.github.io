@@ -8,6 +8,11 @@ tags:
 
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
+## April
+### April 11th
+- Various notes on [[thoughts/Operational Transform]], [[thoughts/bitemporal]], [[thoughts/incremental view maintenance]], [[thoughts/Three Legged Stool]]
+- [[thoughts/file system|File system]] [[thoughts/CRDT|CRDTs]]
+
 ## March
 ### March 19th
 - More notes on [[thoughts/privacy]] and what a pluralistic interpretation of 'public' means

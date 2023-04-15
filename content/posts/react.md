@@ -627,11 +627,12 @@ And with that, you've finished your first React application! To recap, you've le
 
 Hopefully this leaves you in a really good position to becoming more comfortable with React. I'll link a few more resources that I personally found really helpful in my understanding of React.
 
-* [A [re]introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+* [A reintroduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 * [React in 100 seconds by Fireship.io](https://www.youtube.com/watch?v=Tn6-PIqc4UM)
 * [Official Intro to React](https://reactjs.org/tutorial/tutorial.html)
 * [React Intro to Hooks](https://reactjs.org/docs/hooks-intro.html)
 * [10 React Hooks Explained by Fireship.io](https://www.youtube.com/watch?v=TNhaISOUy6Q)
+* [React Visualized](https://react.gg/visualized)
 
 ![Our working todo tracker!](/posts/images/react/todo-fin.gif)*Our working todo tracker!*
 

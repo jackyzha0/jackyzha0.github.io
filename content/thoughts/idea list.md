@@ -35,9 +35,9 @@ tags:
 		- clipboard + title for codeblocks
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
-	- daily link share
-		- inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
-		- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
+- daily link share
+	- inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
+	- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
 - WASM-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
