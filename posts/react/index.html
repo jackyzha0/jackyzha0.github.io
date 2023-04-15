@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1569,7 +1569,7 @@ Aug 7, 2021
 <p>Hopefully this leaves you in a really good position to becoming more comfortable with React. I&rsquo;ll link a few more resources that I personally found really helpful in my understanding of React.</p>
 <ul>
 <li>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" rel="noopener">A [re]introduction to JavaScript</a></li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript" rel="noopener">A reintroduction to JavaScript</a></li>
 <li>
 <a href="https://www.youtube.com/watch?v=Tn6-PIqc4UM" rel="noopener">React in 100 seconds by Fireship.io</a></li>
 <li>
@@ -1578,6 +1578,8 @@ Aug 7, 2021
 <a href="https://reactjs.org/docs/hooks-intro.html" rel="noopener">React Intro to Hooks</a></li>
 <li>
 <a href="https://www.youtube.com/watch?v=TNhaISOUy6Q" rel="noopener">10 React Hooks Explained by Fireship.io</a></li>
+<li>
+<a href="https://react.gg/visualized" rel="noopener">React Visualized</a></li>
 </ul>
 <p>
 

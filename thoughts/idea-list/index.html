@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1711,12 +1711,12 @@ Jun 17, 2021
 <li>markup any site with a webcrawler + yjs + tldraw
 <ul>
 <li>markupthis.site is not taken!!</li>
+</ul>
+</li>
 <li>daily link share
 <ul>
 <li>inventory packing simulator but its with tabs&hellip; what would affect tab size? length of article == perceived weight in bag?</li>
 <li>what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people</li>
-</ul>
-</li>
 </ul>
 </li>
 <li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> distributed using a <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>

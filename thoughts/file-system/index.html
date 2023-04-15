@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.39117367bae1afdc7fc1c31a73214a25.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2927c2c9b6aadfd5075f82ca6b56aa4b.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -416,6 +416,49 @@ Jun 23, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -443,6 +486,24 @@ Jun 23, 2022
 <a href="#performance"><h3 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h3></a>
 <p>While caching can dramatically improve read performance, unfortunately, it does not help much with write performance. This is because highly parallel systems need to provide fault-tolerance, and the way they achieve it is by replicating the data written across nodes.</p>
 <p>Interesting to note: in big data processing, the same operation is repeatedly applied on massive data. Therefore, replicating programs is much less expensive than replicating data in many cases</p>
+<a href="#crdt-elmerfs"><h2 id="crdt-elmerfs"><span class="hanchor" ariaLabel="Anchor"># </span>CRDT (ElmerFS)</h2></a>
+<p>
+<a href="https://hal.inria.fr/hal-03278658/document" rel="noopener">Source</a></p>
+<p>The design of ElmerFS leverages the properties of <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>) to ensure that concurrent operations on different replicas always converge to a correct state while preserving the semantics of a traditional POSIX file system</p>
+<p>Challenges</p>
+<ol>
+<li>Unique identifiers: Any operation that creates inodes needs to generate 2 a unique identifier. Without coordination among replicas, generated ids might conflict.</li>
+<li>Named links: Operations that create or move objects (files or directories) may result in conflicts in which concurrent operations on different replicas create objects with the same name in the same directory.</li>
+<li>Cycles: Concurrent move operations without coordination may violate the file system invariant. For example, merging an operation that moves a directory A into a directory B with a concurrent operation that moves B into A can result in a cycle.</li>
+<li>Divergent renames: The rename operation is semantically a move operation, it move a link from one folder to another. When two concurrent renames move the same link to two different places, if both rename are ultimately accepted, a additional link of the inode will be created.</li>
+<li>Permissions changes: Updating permission from a replica may take some time to be enforced in other replicas. Merging an operation that removes a Bob’s permission to write to file with a concurrent operation in which Bob writes to that file will result in a different outcome depending on the order in which operations are applied.</li>
+</ol>
+<p>The four main entities are inode objects, symbolic links, blocks and directories. We represent a file as a collection of fixed-size blocks. Each block is represented using a LWWR.</p>
+<blockquote>
+<p>Note: Further work needs to be done for allowing file content to diverge without loss of data or to use a CRDT that would be appropriate for a given file format. This means this is <em>not</em> ideal for collaborative text editing for example</p>
+</blockquote>
+<p>It is based on the FUSE protocol, a user-space protocol used to implement file systems. The interface layer receives a FUSE request, calls the corresponding operation in the translation layer, and creates the appropriate response.</p>
+<p>The translation layer is responsible for translating FUSE requests to CRDT operations.</p>
 
 
     </article>
@@ -461,6 +522,10 @@ Jun 23, 2022
     
     
     
+    
+      
+      
+      
     
       
       
