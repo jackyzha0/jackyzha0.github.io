@@ -25,3 +25,12 @@ Concurrent does *not* mean simultaneous, it means two things did not know about 
 $\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the 'happens-before' relation
 
 See also: [[thoughts/Order theory]]
+
+## Time
+In Einstein's theory of general and special relativity
+
+Causality means that an effect can not occur from a cause that is not in the back (past) light cone of that event. Similarly, a cause can not have an effect outside its front (future) light cone.
+
+![[thoughts/images/lightcone.png]]
+
+See: [[thoughts/time]]

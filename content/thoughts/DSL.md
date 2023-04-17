@@ -18,6 +18,8 @@ Implementation Stages
 	1. Run the input or generate code for it
 	2. (optional) Dynamic Checks
 
+See: [[thoughts/compiler]]
+
 ## Grammar Rules
 e.g. for BNF, EBNF
 

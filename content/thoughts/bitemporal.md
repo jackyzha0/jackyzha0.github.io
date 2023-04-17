@@ -5,7 +5,7 @@ tags:
 - seed
 ---
 
-**Bitemporality** is a technique for modeling time in databases and data structures such that...
+**Bitemporality** is a technique for modeling [[thoughts/time|time]] in databases and data structures such that...
 -   The state at any point in history can be recovered
 -   Alternative timelines can be forked
 

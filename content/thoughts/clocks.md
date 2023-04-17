@@ -8,7 +8,7 @@ aliases:
 - logical clock
 ---
 
-Measuring time in the context of computer systems
+Measuring [[thoughts/time|time]] in the context of computer systems
 
 ## Physical Time
 Two types of clock
