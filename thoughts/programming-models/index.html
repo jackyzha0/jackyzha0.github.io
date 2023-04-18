@@ -165,13 +165,13 @@ Technical Dimensions of Programming Systems  Source
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1016,6 +1016,49 @@ Mar 18, 2023
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1119,7 +1162,7 @@ Mar 18, 2023
 <li>There is a massive gap between the level of detail required by a computer, which executes a sequence of low-level instructions, and the human description of a program in higher-level terms.</li>
 <li>Declarative vs imperative programming systems
 <ul>
-<li>Declarative programming systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.</li>
+<li><a href="/thoughts/declarative-programming" rel="noopener" class="internal-link" data-src="/thoughts/declarative-programming">Declarative programming</a> systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.</li>
 <li>Whereas imperative programming systems rely on the programmer explicitly defining the steps and using the right abstractions</li>
 </ul>
 </li>

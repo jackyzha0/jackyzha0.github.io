@@ -156,13 +156,13 @@ Category Theory In essence, a simple collection which can be thought of as a gra
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -569,8 +569,6 @@ Feb 21, 2022
   
     
   
-    
-  
 
   
 
@@ -842,74 +840,7 @@ Feb 21, 2022
 <li>Remember that <code>(&lt;$)</code> and <code>($&gt;)</code> point towards the value that will be kept</li>
 <li><code>void :: Functor f =&gt; f a -&gt; f ()</code> is implemented as <code>void x = () &lt;$ x</code>. Read as: whatever you give me, I will return the unit value</li>
 </ul>
-<a href="#racket"><h2 id="racket"><span class="hanchor" ariaLabel="Anchor"># </span>Racket</h2></a>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-scheme" data-lang="scheme"><span class="line"><span class="cl"><span class="c1">; Quotes are </span>
-</span></span><span class="line"><span class="cl"><span class="o">`</span> <span class="nv">-&gt;</span> <span class="nv">quasiquote</span>
-</span></span><span class="line"><span class="cl"><span class="o">,</span> <span class="nv">-&gt;</span> <span class="nv">unquote</span>
-</span></span><span class="line"><span class="cl"><span class="o">&#39;</span> <span class="nv">-&gt;</span> <span class="nv">quote</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-scheme" data-lang="scheme"><span class="line"><span class="cl"><span class="c1">; Example program that iterates a program p</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="k">define </span><span class="p">(</span><span class="nf">compiler-sub</span> <span class="nv">p</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="k">define </span><span class="p">(</span><span class="nf">process-p</span> <span class="nv">p</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">match</span> <span class="nv">p</span>
-</span></span><span class="line"><span class="cl">	  <span class="c1">; match &#39;begin atom</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="k">begin </span><span class="o">,</span><span class="nv">s</span> <span class="o">...</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">       <span class="c1">; process-s for each s</span>
-</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">TODO</span> <span class="nv">process-s</span> <span class="nv">s</span><span class="p">)]))</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="k">define </span><span class="p">(</span><span class="nf">process-s</span> <span class="nv">s</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nf">match</span> <span class="nv">s</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="k">set! </span><span class="o">,</span><span class="nv">loc</span> <span class="o">,</span><span class="nv">int64</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">       <span class="o">#</span><span class="nv">:when</span> <span class="p">(</span><span class="k">and </span><span class="p">(</span><span class="nf">location?</span> <span class="nv">loc</span><span class="p">)</span> <span class="p">(</span><span class="nf">int64?</span> <span class="nv">int64</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">TODO</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="k">set! </span><span class="o">,</span><span class="nv">loc1</span> <span class="o">,</span><span class="nv">loc2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">       <span class="o">#</span><span class="nv">:when</span> <span class="p">(</span><span class="k">and </span><span class="p">(</span><span class="nf">location?</span> <span class="nv">loc1</span><span class="p">)</span> <span class="p">(</span><span class="nf">location?</span> <span class="nv">loc2</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">TODO</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="k">set! </span><span class="o">,</span><span class="nv">loc1</span> <span class="p">(</span><span class="o">,</span><span class="nv">binop</span> <span class="o">,</span><span class="nv">loc2</span> <span class="o">,</span><span class="nv">loc3</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">       <span class="o">#</span><span class="nv">:when</span> <span class="p">(</span><span class="k">and </span><span class="p">(</span><span class="nf">location?</span> <span class="nv">loc1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                   <span class="p">(</span><span class="nf">Paren-asm-sub-binop?</span> <span class="nv">binop</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                   <span class="p">(</span><span class="nf">location?</span> <span class="nv">loc2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                   <span class="p">(</span><span class="nf">location?</span> <span class="nv">loc3</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">       <span class="p">(</span><span class="nf">TODO</span><span class="p">)]))</span>
-</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nf">process-p</span> <span class="nv">p</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+
 
     </article>
     <hr/>

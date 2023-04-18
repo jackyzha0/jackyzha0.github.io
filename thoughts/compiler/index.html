@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="A compiler is a transformation between languages, transforming a source language into a target language.
+We design compilers by starting from a fixed abstraction boundary (the existing target language) and building a new layer of abstraction atop it (the new source language)."
+  />
+  <meta property="og:title" content="Compilers">
+  <meta property="og:description" content="A compiler is a transformation between languages, transforming a source language into a target language.
+We design compilers by starting from a fixed abstraction boundary (the existing target language) and building a new layer of abstraction atop it (the new source language).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/compiler/">
+  <meta property="og:width" content="200">
+  <meta property="og:height" content="200">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Compilers" />
+  <meta name="twitter:description" content="A compiler is a transformation between languages, transforming a source language into a target language.
+We design compilers by starting from a fixed abstraction boundary (the existing target language) and building a new layer of abstraction atop it (the new source language)." />
+  <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
+  
+    
+      
+      <meta name="twitter:site" content="_jzhao" />
+    
+  
+    
+  
+
+  <title>
+    Compilers
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <meta property="og:url" content="https://jzhao.xyz" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="https://jzhao.xyz/res/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@_jzhao">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="https://jzhao.xyz/res/og-card.png" />
+
+
+  
+  
+  
+  
+  
+  <link rel="shortcut icon" type="image/png"  href="https://jzhao.xyz//icon.png" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+
+  
+  <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
+
+   
+  
+  
+  
+  
+  <script src="https://jzhao.xyz/js/darkmode.182a2b4c9451f6f751c276a71c985624.min.js"></script>
+  
+  
+  
+  <script src="https://jzhao.xyz/js/util.763a7adef953af01d5a19b4d3dbd3455.min.js"></script>
+  
+  
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js"
+        integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A"
+        crossorigin="anonymous"></script>
+
+
+  
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
+  
+  <script defer src="https://jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js"></script>
+
+  
+  
+  
+  <script defer src="https://jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js"></script>
+  
+
+  
+  
+  <script defer src="https://jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js"></script>
+  
+
+  
+
+  
+   
+  <script>
+    
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const lastVisit = localStorage.getItem('lastVisitTime')
+    const now = Date.now()
+    let show = 'true'
+    if (lastVisit) {
+      document.documentElement.setAttribute('visited', 'true')
+      const minElapsed = Math.ceil((now - parseInt(lastVisit)) / (1000 * 60))
+      show = (!isReducedMotion && minElapsed > 5) ? 'true' : 'false'
+    }
+    document.documentElement.setAttribute('show-animation', show)
+    localStorage.setItem('lastVisitTime', `${now}`)
+
+    const SEARCH_ENABLED =  false 
+    const LATEX_ENABLED =  true 
+    const PRODUCTION =  true 
+    const BASE_URL = "https://jzhao.xyz/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+      const render = () => {
+      
+
+      const siteBaseURL = new URL(BASE_URL);
+      const pathBase = siteBaseURL.pathname;
+      const pathWindow = window.location.pathname;
+      const isHome = pathBase == pathWindow;
+
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      
+
+      
+
+      
+      initPopover(
+        "https://jzhao.xyz",
+         true 
+
+      )
+      
+
+      
+      const footer = document.getElementById("footer")
+      if (footer) {
+        const container = document.getElementById("graph-container")
+        
+        if (!container) return requestAnimationFrame(render)
+        
+        container.textContent = ""
+
+        const drawGlobal = isHome &&  false ;
+        drawGraph(
+            "https://jzhao.xyz",
+            drawGlobal,
+            [{"/moc":"#4388cc"}],
+            drawGlobal ? {"centerForce":1,"depth":-1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.5,"linkDistance":1,"opacityScale":3,"repelForce":1,"scale":1.4} : {"centerForce":1,"depth":1,"enableDrag":true,"enableLegend":false,"enableZoom":true,"fontSize":0.6,"linkDistance":0.8,"opacityScale":3,"repelForce":2,"scale":1}
+          );
+
+        }
+      
+
+      
+        var els = document.getElementsByClassName("mermaid");
+        if (els.length > 0) {
+          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+            (obj) => {
+              
+              
+              obj.default.init();
+            }
+          )
+        }
+      
+      
+      
+      function clickHandler(evt) {
+        const target = evt.target 
+        const classNames = target.className.split(" ")
+        const broken = classNames.includes("broken")
+        const internal = classNames.includes("internal-link")
+        plausible("Link Click", {
+          props: {
+            href: target.href,
+            broken,
+            internal,
+            graph: false,
+          }
+        })
+      }
+
+      const links = document.querySelectorAll("a")
+      for (link of links) {
+        if (link.className.includes("root-title")) {
+          link.addEventListener('click', clickHandler, {once: true})
+        }
+      }
+    }
+
+    const init = (doc = document) => {
+      
+      addCopyButtons();
+      
+
+      addTitleToCodeBlocks();
+      renderMathInElement(doc.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        macros: {
+          '’': "'"
+        },
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+  
+  <script type="module">
+    import { attachSPARouting } from "https:\/\/jzhao.xyz\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script>
+  
+  
+  <script defer data-domain="jzhao.xyz" src="https://plausible.io/js/script.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+
+
+<body>
+<div id="search-container">
+  <div id="search-space">
+    <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search"
+      placeholder="Search for something..." dir="">
+    <div id="results-container">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"
+  integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://jzhao.xyz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js"></script>
+
+
+
+<div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("jzhao.xyz")
+</script>
+
+<div class="singlePage">
+    
+    <header class="delay t-1">
+    <h1 id="page-title"><a class="root-title" href="https://jzhao.xyz/">jzhao.xyz</a></h1>
+    <div class="spacer"></div>
+    <div id="search-icon">
+      <p>Search</p>
+      <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+    </div>
+    <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+
+</header>
+
+
+    <article>
+      <h1>Compilers</h1>
+      <p class="meta">
+        Last updated 
+Apr 17, 2023
+
+ 
+          
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/compiler.md" rel="noopener">Edit Source</a>
+
+
+      </p>
+      <ul class="tags">
+    
+    <li><a href="https://jzhao.xyz/tags/seed/">Seed</a></li>
+    
+</ul>
+
+      
+
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#runtimes">Runtimes</a></li>
+    <li><a href="#correctness">Correctness</a></li>
+    <li><a href="#parameterization">Parameterization</a></li>
+    <li><a href="#administrative-languages">Administrative Languages</a></li>
+    <li><a href="#abstractions">Abstractions</a>
+      <ol>
+        <li><a href="#abstracting-system-calls">Abstracting system calls</a></li>
+        <li><a href="#abstracting-memory-locations">Abstracting memory locations</a></li>
+        <li><a href="#value-orientation">Value-orientation</a></li>
+        <li><a href="#control-flow">Control Flow</a></li>
+        <li><a href="#proceduresfunctions">Procedures/Functions</a></li>
+        <li><a href="#data-types">Data types</a></li>
+        <li><a href="#heap-allocation">Heap Allocation</a></li>
+        <li><a href="#closures">Closures</a></li>
+      </ol>
+    </li>
+    <li><a href="#optimizations">Optimizations</a>
+      <ol>
+        <li><a href="#register-allocation">Register Allocation</a></li>
+      </ol>
+    </li>
+    <li><a href="#language-forms">Language Forms</a></li>
+    <li><a href="#racket">Racket</a>
+      <ol>
+        <li><a href="#quasiquoting">Quasiquoting</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
+
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<p>A <strong>compiler</strong> is a transformation between languages, transforming a source language into a target language.</p>
+<p>We design compilers by starting from a fixed abstraction boundary (the existing target language) and building a new layer of abstraction atop it (the new source language).</p>
+<p>Starting from the target language, we ask a question: what’s wrong with this language?</p>
+<p>Rules of thumb:</p>
+<ul>
+<li>Generally: simplifying something for the many users at the expense of the few compiler writers is usually a good trade-off</li>
+<li>When we create a new language, we want to ensure we understand the meaning of that grammar separate from how it is compiled.
+<ol>
+<li>Optimizations depend on when various programs in a language are equivalent</li>
+<li>We cannot know whether the compiler is correct if we do not know the meaning of programs before they are compiled</li>
+</ol>
+<ul>
+<li>We can define the meaning of a language by writing an interpreter.</li>
+</ul>
+</li>
+<li>Eliminating undefined behaviour by adding static or dynamic checks in the source language improves the ability of programmers to predict behaviour of all programs in your language. However, it is not always practical to achieve. See: <a href="/thoughts/program-analysis" rel="noopener" class="internal-link" data-src="/thoughts/program-analysis">program analysis</a></li>
+</ul>
+<a href="#runtimes"><h2 id="runtimes"><span class="hanchor" ariaLabel="Anchor"># </span>Runtimes</h2></a>
+<p>The run-time system provides all run-time support required by the language but that that is not provided by the underlying machine. Exactly what this run-time support is depends on the language.</p>
+<p>Typically, the language run-time provides memory allocation and deallocation, initialization of the process environment such as the stack, handles returning values to the user, and provides any built-in procedures that all programs in the language can expect to use</p>
+<a href="#correctness"><h2 id="correctness"><span class="hanchor" ariaLabel="Anchor"># </span>Correctness</h2></a>
+<p>A compiler is correct if:</p>
+<ol>
+<li>the meaning (as defined by the interpreter) of a program <code>p</code> is the value <code>v1</code></li>
+<li>we compile <code>p</code> and execute it as a x64 program and get the value <code>v2</code></li>
+<li>the values <code>v1</code> and <code>v2</code> are equivalent.</li>
+</ol>
+<p>In general, we have to define equivalence for each pair of source and target languages.</p>
+<a href="#parameterization"><h2 id="parameterization"><span class="hanchor" ariaLabel="Anchor"># </span>Parameterization</h2></a>
+<p>Our compilers make decisions based on certain parameters (e.g. the return register, the frame base pointer register, etc.)</p>
+<p>Parameterizing the language this way lets us avoid committing to particular register choices, making the language inherently more machine and convention agnostic. This is helpful in designing a compiler with multiple machine backends. If our language definitions were sufficiently parameterized, few if any compiler passes would need to differ between target machines.</p>
+<a href="#administrative-languages"><h2 id="administrative-languages"><span class="hanchor" ariaLabel="Anchor"># </span>Administrative Languages</h2></a>
+<p>An intermediate language whose semantics does not differ at all from its parent language, but whose syntax is potentially decorated with additional data that simplifies the next step of the compiler.</p>
+<p>In a production compiler, we would probably not represent these administrative languages at all, but instead store the contents of the info field &ldquo;on the side&rdquo;, as a separate data structure. This would prevent us from deconstructing and reconstructing the syntax tree when modifying or accessing the info field.</p>
+<a href="#abstractions"><h2 id="abstractions"><span class="hanchor" ariaLabel="Anchor"># </span>Abstractions</h2></a>
+<a href="#abstracting-system-calls"><h3 id="abstracting-system-calls"><span class="hanchor" ariaLabel="Anchor"># </span>Abstracting system calls</h3></a>
+<p>Normally, we never program the raw CPU—we program the operating system. The CPU together with the operating system implements a different programming language than the CPU by itself.</p>
+<p>System calls are x64 primitives provided by the OS. Once we start using system calls, code becomes OS-specific. One of the first things a compiler writer will do is abstract away from system calls.</p>
+<a href="#abstracting-memory-locations"><h3 id="abstracting-memory-locations"><span class="hanchor" ariaLabel="Anchor"># </span>Abstracting memory locations</h3></a>
+<a href="#frame-variables"><h4 id="frame-variables"><span class="hanchor" ariaLabel="Anchor"># </span>Frame Variables</h4></a>
+<p>Human memory is much less reliable than computer memory, so we should design languages that make the computer remember more and free the human to remember less. This will prevent the human from causing run-time errors when they inevitably make a mistake and overwrite a register that was still in use.</p>
+<p>To address this, we will introduce abstract locations, of which there are an arbitrary number and that the programmer does not need to know what physical location they end up using.</p>
+<p>The displacement mode operand is a new operand that can appear in some location positions as the operand of an instruction. This allows accessing memory locations using pointer arithmetic. It is written as <code>QWORD [reg - int32]</code> or <code>QWORD [reg + int32]</code> in x64, where <code>reg</code> is a register holding some memory address and the <code>int32</code> is an offset number of bytes from that address to access, as a 32-bit integer. Offsets are always multiples of 8.</p>
+<p>This ensures all memory accesses are machine-word aligned, meaning we leave space for all bytes in the word between each access. Note that the offset is negative; we access the stack backwards, following the x64 &ldquo;stack grows down&rdquo; convention (we call this <em>stack discipline</em>).</p>
+<a href="#abstract-locations"><h4 id="abstract-locations"><span class="hanchor" ariaLabel="Anchor"># </span>Abstract Locations</h4></a>
+<p>We define an abstract location to be a unique name for some physical location, that is unique for some unit of allocation. Each abstract location must be allocated a physical location somewhere on the machine.</p>
+<a href="#value-orientation"><h3 id="value-orientation"><span class="hanchor" ariaLabel="Anchor"># </span>Value-orientation</h3></a>
+<p>We want to move towards a value-oriented language, i.e., a language where operations consume and produce values directly, and away from an imperative language that manipulates some underlying machine state. This would free the programmer from keeping the state of the machine in mind at all times.</p>
+<a href="#control-flow"><h3 id="control-flow"><span class="hanchor" ariaLabel="Anchor"># </span>Control Flow</h3></a>
+<p>Labels and jumps are a small change to the language syntactically, but have a large effect on the semantics.</p>
+<p>We can no longer write the interpreter in one simple loop over the instructions. Instead, we need some way to resolve labels. When running the interpreter, we must be able to jump to any expression at any time—a possibility the language now allows. This process of resolving labels is called linking.</p>
+<p>We use a low-level linking implementation that is similar to the operating system’s linker: we first resolve all labels to their address in memory (in our case, their index in the instruction sequence) and then implement jumps by simply setting a program counter to the instruction’s address.</p>
+<p>To simplify reasoning about programs with control flow, we can organize code into basic blocks, labeled blocks where control can only enter the beginning of the block and must exit at the end of the block. In particular, we will be able to annotate which registers are undead on entry to and on exit from a block, so our analysis does not have to resolve labels and jumps.</p>
+<a href="#proceduresfunctions"><h3 id="proceduresfunctions"><span class="hanchor" ariaLabel="Anchor"># </span>Procedures/Functions</h3></a>
+<p>We introduce a common method of reusing code: procedural abstraction.</p>
+<p>The only question is how to pass arguments. The call instruction needs to know in which locations to store the arguments, and the called procedure needs to know from which locations to read its parameters. The problem is deciding how to ensure the locations end up the same. To solve this, we introduce a calling convention.</p>
+<p>We could also use the stack to implement the calling convention. This is simpler, as we can keep registers abstract and need to expose memory high in the compiler pipeline anyway, but slower since every procedure call must now access memory.</p>
+<p>Instead, we fix a set of physical locations. Both the caller and the callee agree that those locations are the only thing they need to know about.</p>
+<p>Our <strong>calling convention</strong> passes the first n arguments as registers, using the set of registers defined in the parameter <code>current-parameter-registers</code>. The default value is <code>'(rdi rsi rdx rcx r8 r9)</code>, which is defined by the x64 System V ABI to be where the first 6 arguments of any procedure are stored. For the rest, we use fresh frame variables.</p>
+<p>To handle procedure calls in effect position, we must use a stack of frames. A frame is a procedure’s set of frame variables needed after a non-tail call. Note that arguments are placed on the <em>callee</em>&rsquo;s frame instead of the caller&rsquo;s frame.</p>
+<ol>
+<li>We arrange that all values live after a non-tail call are stored in frame variables</li>
+<li>We push the callers’s frame onto the stack. This is done by decrementing the frame base pointer past the last frame variable</li>
+<li>The call happens and returns</li>
+<li>After returning from a call, we pop the caller’s frame from the stack by incrementing the frame base pointer back to its original value</li>
+</ol>
+<p>The size of a given non-tail call is the maximum of:</p>
+<ol>
+<li>the number of locations in the call-undead, or</li>
+<li>one more than the index of the largest frame location in the call-undead set.</li>
+</ol>
+<a href="#data-types"><h3 id="data-types"><span class="hanchor" ariaLabel="Anchor"># </span>Data types</h3></a>
+<p>A static type system may take care to prevent the user from calling an integer as a procedure, for example. Even dynamically typed languages may need to distinguish different kinds of data at run time.</p>
+<p>To enable the language to distinguish different kinds of data, we can steal a few of our 64 bits to represent a data type tag. This limits the range of machine integers, but allows us to us to distinguish data dynamically, enabling safety and abstractions that must differentiate data dynamically.</p>
+<p>This approach is called object tagging. Each data type in our language will now be represented by a ptr (pronounced like footer). A ptr is a machine word whose n least-significant bits represent the primary tag, and whose upper <code>(- (* 8 (current-word-size-bytes)) n)</code> bits represent the data (this allows us to represent $2^n$ data types).</p>
+<p>This lets us implement data-type checking by providing the following primitive operations (which we implement with further, low-level primitives in x64):</p>
+<ol>
+<li>Tagging, i.e., given some machine integer, tag it to indicate what data type it represents, producing a tagged representation of the underlying data. This tagged representation will happen to correspond to some machine integer, since all sequences of bits do, but maybe not in any meaningful way.</li>
+<li>Untagging, i.e., given some tagged representation, remove the tag returning the underlying data that can be used with primitive x64 instructions.</li>
+<li>Tag checking, i.e., given some tagged representation, get the tag or compare the tag to something.</li>
+</ol>
+<a href="#heap-allocation"><h3 id="heap-allocation"><span class="hanchor" ariaLabel="Anchor"># </span>Heap Allocation</h3></a>
+<p>We need three additional operations</p>
+<ol>
+<li>memory allocation (to implement constructors)</li>
+<li>dynamically computed memory assignment</li>
+<li>dynamically computed memory dereference</li>
+</ol>
+<p>To implement allocation, we need some strategy for managing memory. Our run-time system or compiler needs to know what memory is in use, how to allocate (mark free memory as in use), and how to deallocate memory (return in-use memory to the pool of free memory and ultimately to the system). There are many strategies for this, such as</p>
+<ol>
+<li>&ldquo;let the user deal with it&rdquo; (managed languages like C)</li>
+<li>&ldquo;add a process to the run-time system that dynamically manages memory&rdquo; (garbage collected languages like JavaScript and Go)</li>
+<li>&ldquo;make the type system so complex that the compiler can statically manage memory&rdquo; (Rust)</li>
+</ol>
+<a href="#closures"><h3 id="closures"><span class="hanchor" ariaLabel="Anchor"># </span>Closures</h3></a>
+<p>Every instance of lambda compiles to a procedure. The procedure now has three pieces of information:</p>
+<ol>
+<li>its arity for dynamic checking;</li>
+<li>the label to its code, the computation it executes when invoked; and</li>
+<li>its environment, the values of the free variables used in the definition of the procedure</li>
+</ol>
+<p>Our procedure data structure is essentially a vector containing a label to the code and the values of each free variable in its environment.</p>
+<p>Closure conversion is not the only way to implement first-class procedures. An alternative that can avoid some of the allocation cost of closures is defunctionalization, but this does not work well with separate compilation.</p>
+<a href="#optimizations"><h2 id="optimizations"><span class="hanchor" ariaLabel="Anchor"># </span>Optimizations</h2></a>
+<p>Any compiler optimization should be seen as a transformation between programs in the same language, i.e.,, an intra-language transformation.</p>
+<p>Optimizations should not change the <em>correctness</em> of a solution, only improving its performance characteristics</p>
+<a href="#register-allocation"><h3 id="register-allocation"><span class="hanchor" ariaLabel="Anchor"># </span>Register Allocation</h3></a>
+<p>While memory accesses have improved a lot compared to old computers due to caching, accessing memory are still orders of magnitude slower than accessing a register when our variable is not in the cache (see: <a href="/thoughts/systems-design" rel="noopener" class="internal-link" data-src="/thoughts/systems-design">systems design</a>). Our compiler will have better performance if we help the machine out by using registers as much as possible</p>
+<p>Conceptually, register allocation is a simple idea.</p>
+<ol>
+<li>Undeadness (liveness) analysis: figure out which abstract locations might still be needed after each instruction.
+<ul>
+<li>We assume that any variable that gets used, or might get used, might be not dead</li>
+<li>We consider a variable dead only when we have conclusive proof (e.g. storing a new value in that variable)</li>
+<li>To calculate this, we loop over the instruction sequence backwards
+<ul>
+<li>This algorithm requires a default undead-out set for the last instruction in the scope of our analysis (for most, we assume this is the empty set though this is not always the case. e.g., functions assume that the return value location is live at the end of the function)</li>
+<li>In each iteration, we start by assuming the undead-in set is the same as the undead-out set, then update it depending on what happens in the instruction
+<ul>
+<li>If a variable is defined, i.e., its value is overwritten in the instruction, it is definitely dead upon entry to this intruction, so we remove it from the undead-in set.</li>
+<li>If a variable is referenced in the instruction, it ought to be live and is added to the undead-in set.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Conflict analysis: figure out which abstract locations cannot be assigned to the same physical location because they both contain values that are needed at the same time.
+<ul>
+<li>Any variable defined during a non-move instruction is in conflict with every variable (except itself) in the undead-out set associated with the instruction.</li>
+<li>Any variable defined during a move instruction is in conflict with every variable in the undead-out set associated with the instruction, except itself and the variable referenced in the move.</li>
+</ul>
+</li>
+<li>Register allocation: assign each abstract locations to a register that is different from any conflicting abstract locations.
+<ul>
+<li>Recursive graph-colouring register allocation</li>
+</ul>
+<ol>
+<li>If the set of abstract locations is empty, return the empty assignment.</li>
+<li>Otherwise, choose a low-degree abstract location from the input set of abstract locations, if one exists. Otherwise, pick an arbitrary abstract location from the set. A low-degree abstract location is one with fewer than k conflicts, for some for pre-defined k. We pick k to be the number of registers in the set of assignable registers.</li>
+<li>Recurse with the chosen abstract location removed from the input set and the conflict graph. The recursive call should return an assignment for all the remaining abstract locations.</li>
+<li>Attempt to select a register for the chosen abstract location. You cannot select registers to which conflicting abstract locations were assigned by the recursive call. This attempt succeeds if a low-degree abstract location was chosen, and might fail otherwise</li>
+</ol>
+</li>
+<li>Spilling: if we fail to find a register for an abstract location, put it in a frame variable instead.
+<ol>
+<li>If you succeed in selecting a register, then add the assignment for the chosen abstract location to the result of the recursive call.</li>
+<li>Otherwise, we cannot assign the chosen abstract location to a register. Instead, we spill it, i.e., we assign it a frame variable. We can assign a fresh variable, but we can reduce memory usage by trying to assign a non-conflicting frame variable.</li>
+</ol>
+</li>
+</ol>
+<p>In general, we will never do a perfect job, due to <a href="/thoughts/Rices-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/Rices-Theorem">Rice&rsquo;s Theorem</a>.</p>
+<a href="#with-procedures"><h4 id="with-procedures"><span class="hanchor" ariaLabel="Anchor"># </span>With procedures</h4></a>
+<p>When analyzing the program to determine how variables are used, we can either:</p>
+<ol>
+<li>Intraprocedural: interpret the program as a tree, analyzing and allocating registers to each block separately and essentially ignoring jumps, or</li>
+<li>Interprocedural: interpret the program as a graph, trying to follow control and data flow to determine the destination of a jump, in order to analyze conflicts and allocate registers across jumps.</li>
+</ol>
+<a href="#language-forms"><h2 id="language-forms"><span class="hanchor" ariaLabel="Anchor"># </span>Language Forms</h2></a>
+<ul>
+<li>Monadic form (MF): a syntactic form that allows composing operations that operate on values and have no side-effect (such as changing the value of an abstract location), but requires explicit sequencing any effectful operations
+<ul>
+<li>Canonical monadic form (CMF): a syntactic form in which equal programs (for some notion of equality) have the same representation. The form is canonical in the sense that there is one right way to represent every program</li>
+<li>Writing transformations and optimizations over CMF is often easier since we do not have to manually consider two equal programs as they have the same representation.</li>
+</ul>
+</li>
+<li>A-normal form (ANF): a syntactic form that restricts all operations to trivial values, and forbids nesting in our value position. It is roughly equivalence to other compiler intermediate forms, such as static-single assignment. All ANF programs are in MF but the inverse does not hold</li>
+</ul>
+<a href="#racket"><h2 id="racket"><span class="hanchor" ariaLabel="Anchor"># </span>Racket</h2></a>
+<a href="#quasiquoting"><h3 id="quasiquoting"><span class="hanchor" ariaLabel="Anchor"># </span>Quasiquoting</h3></a>
+<ul>
+<li>Think about it like JavaScript template literals (<code>`some value: ${x}`</code>) or Python f-strings (<code>f&quot;some value: {x}&quot;</code>) but operating on actual source code</li>
+<li>A single quote <code>'</code> indicates the start of a piece of code we can treat as data</li>
+<li>A backtick <code>`</code> is the same as a single quote except it allows us to template the code using variables
+<ul>
+<li>We can use the <code>unquote</code> operator <code>,</code> to insert the value of the variable
+<ul>
+<li>If we had a <code>(define x 42)</code> and then <code>`(module ,x)</code> becomes <code>'(module 42)</code></li>
+</ul>
+</li>
+<li>We can use the <code>unquote-splicing</code> operator <code>,@</code> to &lsquo;spread&rsquo; a list
+<ul>
+<li>If we had a list <code>(define xs (list 1 2 3))</code> and then <code> `(module ,@xs)</code> becomes <code>'(module 1 2 3)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+    </article>
+    <hr/>
+
+
+<div class="page-end" id="footer">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/thoughts/DSL/" data-ctx="thoughts/compiler" data-src="/thoughts/DSL" class="internal-link">DSL</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://jzhao.xyz/js/graph.6579af7b10c818dbd2ca038702db0224.js"></script>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        
+        
+        <p>This page was made by Jacky Zhao using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2023</p>
+        <ul>
+            
+            <li><a href="https://jzhao.xyz/">Home</a></li>
+            <li><a href="https://twitter.com/_jzhao">Twitter</a></li><li><a href="https://github.com/jackyzha0">GitHub</a></li></ul>
+    </footer>
+</div>
+
+
+</div>
+</body>
+</html>

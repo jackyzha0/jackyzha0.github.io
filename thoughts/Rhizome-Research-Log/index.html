@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -481,11 +481,6 @@ May 3, 2022
   
   
 
-  
-  
-
-  
-  
 
 
 
@@ -493,164 +488,6 @@ May 3, 2022
 
 
 
-
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
 
   
   
@@ -31596,30 +31433,7 @@ May 3, 2022
 </ul>
 <a href="#march-12th"><h3 id="march-12th"><span class="hanchor" ariaLabel="Anchor"># </span>March 12th</h3></a>
 <ul>
-<li>
-<a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.6637&amp;rep=rep1&amp;type=pdf" rel="noopener">Virtual Time</a> (Jefferson, 1985)
-<ul>
-<li>Similar to <a href="/thoughts/Antimatter" rel="noopener" class="internal-link" data-src="/thoughts/Antimatter">Antimatter</a> and netcode rollback
-<ul>
-<li>Programmers can write correct software without paying any attention to late-arriving messages, and even with no knowledge of the possiblity of rollback, just as they can write without any attention to, or knowledge of, the possibility of page faults in a virtual memory system.</li>
-<li>For every message there exists an antimessage that is exactly like it in format and content except in one field, its sign. Whenever a message and its antimessage occur in the same queue, they immediately annihilate one another.</li>
-</ul>
-</li>
-<li>Uses a global virtual time (GVT) watermark
-<ul>
-<li>Similar to GST in <a href="/thoughts/system-model#timing-behaviour-e.g.-latency" rel="noopener" class="internal-link" data-src="/thoughts/system-model">timing behaviours in system models</a></li>
-<li>Min of
-<ol>
-<li>all virtual times in all virtual clocks at time $r$</li>
-<li> the virtual send times of all messages that have been sent but not yet processed at time $r$</li>
-</ol>
-</li>
-<li>Avoids indefinite queue/buffer growth by trimming all messages with virtual times less than GVT</li>
-<li>However, this algorithm is bounded by the slowest connection, which makes it infeasible for an asynchronous latency model (e.g. local first)</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>On <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a></li>
 <li>
 <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=07ee87dc4e964f696a57010d9ea829c558871b94" rel="noopener">Incremental Maintenance of Externally Materialized Views</a>
 <ul>

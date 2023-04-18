@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -482,6 +482,84 @@ Oct 25, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -519,13 +597,7 @@ Oct 25, 2022
 <li>What the code does (program analysis - cannot be done precisely)</li>
 <li>What the author intended (impossible for fully automatic analysis, not available from the code)</li>
 </ol>
-<p>Rice&rsquo;s Theorem: All program analysis problems that are non-trivial are undecidable. There is no program analysis that achieves all of the following for all input problems:</p>
-<ol>
-<li>Is fully automatic (no user input/interaction other than the program)</li>
-<li>Always terminates (the analysis itself, not program being analysed)</li>
-<li>On termination: always says “yes” when the answer should be “yes”</li>
-<li>On termination: always says “no” when the answer should be “no”</li>
-</ol>
+<p>See: <a href="/thoughts/Rices-Theorem" rel="noopener" class="internal-link" data-src="/thoughts/Rices-Theorem">Rice&rsquo;s Theorem</a></p>
 <a href="#designing-a-static-analysis"><h2 id="designing-a-static-analysis"><span class="hanchor" ariaLabel="Anchor"># </span>Designing a Static Analysis</h2></a>
 <ol>
 <li>Define the goal: what is the property (of all executions) of a program? What problem is the analysis supposed to help?</li>
@@ -652,8 +724,18 @@ Oct 25, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/DSL/" data-ctx="thoughts/program analysis" data-src="/thoughts/DSL" class="internal-link">DSL</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/compiler/" data-ctx="thoughts/program analysis" data-src="/thoughts/compiler" class="internal-link">Compilers</a>
       </li>
       
       

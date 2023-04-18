@@ -156,13 +156,13 @@ The Garden A garden is a metaphor for a lot of things: growth, persistence, and 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -502,6 +502,49 @@ Nov 29, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -526,7 +569,7 @@ Nov 29, 2022
 <p>A hard part of this is The Navigation Problem: how do we give web users just enough guidance to freely explore the web, without forcing them into pre-defined browsing experiences?</p>
 <a href="#the-stream"><h2 id="the-stream"><span class="hanchor" ariaLabel="Anchor"># </span>The Stream</h2></a>
 <p>In the stream metaphor you don’t experience the Stream by <a href="/thoughts/walking" rel="noopener" class="internal-link" data-src="/thoughts/walking">walking</a> around it and looking at it, or following it to its end. You jump in and let it flow past. You feel the force of it hit you as things float by.</p>
-<p>In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, time ordered path with our experience (and only our experience) at the center.</p>
+<p>In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a> ordered path with our experience (and only our experience) at the center.</p>
 <p>We live in a shallow web. Not of actual trails, but of sign posts.</p>
 <blockquote>
 <p>A web of “hey this is cool” one-hop links. A web where where links are used to create a conversational trail (a sort of “read this if you want to understand what I am riffing on” link) instead of associations of ideas&hellip; A web seen as a tool for self-expression rather than a tool for thought.</p>

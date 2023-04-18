@@ -156,13 +156,13 @@ An order is a binary relation $\leq$ on a set $S$, written $&lt;S,\leq&gt;$
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -852,6 +852,10 @@ Jul 8, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bft-json-crdt/" data-ctx="order theory" data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
       </li>
@@ -896,6 +900,12 @@ Jul 8, 2022
       
       <li>
         <a href="/thoughts/semilattice/" data-ctx="thoughts/Order theory" data-src="/thoughts/semilattice" class="internal-link">Semilattice</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/time/" data-ctx="thoughts/Order theory" data-src="/thoughts/time" class="internal-link">Time</a>
       </li>
       
       

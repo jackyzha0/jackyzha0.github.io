@@ -8,12 +8,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Measuring time in the context of computer systems
+    content="Measuring [[thoughts/time|time]] in the context of computer systems
 Physical Time Two types of clock
  Physical clock: number of seconds elapsed Logical clock: count events, e."
   />
   <meta property="og:title" content="Clocks">
-  <meta property="og:description" content="Measuring time in the context of computer systems
+  <meta property="og:description" content="Measuring [[thoughts/time|time]] in the context of computer systems
 Physical Time Two types of clock
  Physical clock: number of seconds elapsed Logical clock: count events, e.">
   <meta property="og:type" content="website">
@@ -22,7 +22,7 @@ Physical Time Two types of clock
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Clocks" />
-  <meta name="twitter:description" content="Measuring time in the context of computer systems
+  <meta name="twitter:description" content="Measuring [[thoughts/time|time]] in the context of computer systems
 Physical Time Two types of clock
  Physical clock: number of seconds elapsed Logical clock: count events, e." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
@@ -159,13 +159,13 @@ Physical Time Two types of clock
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1114,6 +1114,188 @@ May 5, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -1165,14 +1347,14 @@ May 5, 2022
   
 
 
-<p>Measuring time in the context of computer systems</p>
+<p>Measuring <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a> in the context of computer systems</p>
 <a href="#physical-time"><h2 id="physical-time"><span class="hanchor" ariaLabel="Anchor"># </span>Physical Time</h2></a>
 <p>Two types of clock</p>
 <ol>
 <li>Physical clock: number of seconds elapsed</li>
 <li>Logical clock: count events, e.g. messages sent</li>
 </ol>
-<p>Time is hard! So many different ways of measuring time</p>
+<p><a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">Time</a> is hard! So many different ways of measuring time</p>
 <ul>
 <li>Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation</li>
 <li>International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency</li>
@@ -1388,6 +1570,10 @@ May 5, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/bft-json-crdt/" data-ctx="thoughts/clocks" data-src="/posts/bft-json-crdt" class="internal-link">Building a BFT JSON CRDT</a>
       </li>
@@ -1432,6 +1618,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/idempotence/" data-ctx="Vector clock" data-src="/thoughts/idempotence" class="internal-link">Idempotence</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/time/" data-ctx="thoughts/clocks" data-src="/thoughts/time" class="internal-link">Time</a>
       </li>
       
       

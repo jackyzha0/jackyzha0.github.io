@@ -156,13 +156,13 @@ We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:" />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -482,6 +482,113 @@ May 5, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -507,6 +614,11 @@ May 5, 2022
 <a href="#causal-order"><h2 id="causal-order"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Order</h2></a>
 <p>$\prec$ is a causal order, it is consistent with causality, a strict total order on events. Usually called the &lsquo;happens-before&rsquo; relation</p>
 <p>See also: <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a></p>
+<a href="#time"><h2 id="time"><span class="hanchor" ariaLabel="Anchor"># </span>Time</h2></a>
+<p>In Einstein&rsquo;s theory of general and special relativity</p>
+<p>Causality means that an effect can not occur from a cause that is not in the back (past) light cone of that event. Similarly, a cause can not have an effect outside its front (future) light cone.</p>
+<p><img src="/thoughts/images/lightcone.png" width="auto" /></p>
+<p>See: <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a></p>
 
 
     </article>
@@ -525,6 +637,10 @@ May 5, 2022
     
     
     
+    
+      
+      
+      
     
       
       
@@ -756,6 +872,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/semilattice/" data-ctx="causal ordering" data-src="/thoughts/semilattice" class="internal-link">Semilattice</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/time/" data-ctx="thoughts/causality" data-src="/thoughts/time" class="internal-link">Time</a>
       </li>
       
       

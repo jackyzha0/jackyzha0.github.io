@@ -156,13 +156,13 @@ Git Internals Snapshots What if you could take snapshots of your codebase at any
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -966,6 +966,10 @@ Dec 28, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/paid-open-source/" data-ctx="Git" data-src="/posts/paid-open-source" class="internal-link">A case for funding Open Source</a>
       </li>
@@ -1004,6 +1008,12 @@ Dec 28, 2022
       
       <li>
         <a href="/thoughts/idea-list/" data-ctx="git" data-src="/thoughts/idea-list" class="internal-link">Idea List</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/time/" data-ctx="thoughts/git" data-src="/thoughts/time" class="internal-link">Time</a>
       </li>
       
       

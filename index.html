@@ -154,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -421,10 +421,10 @@ Aug 21, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Operational-Transform/">Operational Transform</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/compiler/">Compilers</a></h3>
                             </div>
                             <p class="meta">
-                                293 words on Apr 10, 2023
+                                2771 words on Apr 18, 2023
                             </p>
                             <ul class="tags">
     
@@ -438,10 +438,10 @@ Aug 21, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/terminal/">Terminal</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/declarative-programming/">Declarative programming</a></h3>
                             </div>
                             <p class="meta">
-                                581 words on Apr 10, 2023
+                                12 words on Apr 18, 2023
                             </p>
                             <ul class="tags">
     
@@ -453,7 +453,7 @@ Aug 21, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 613 more →</a>
+                <a href="/thoughts">See 617 more →</a>
             </div>
         </div>
         <article>

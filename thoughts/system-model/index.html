@@ -156,13 +156,13 @@ Network behaviour (e.g. message loss)  Reliable: message is received if and only
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -724,6 +724,12 @@ May 5, 2022
       
       <li>
         <a href="/thoughts/systems-design/" data-ctx="thoughts/system model" data-src="/thoughts/systems-design" class="internal-link">Systems Design</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/time/" data-ctx="timing behaviours in system models" data-src="/thoughts/time" class="internal-link">Time</a>
       </li>
       
       

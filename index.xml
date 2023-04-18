@@ -7,6 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Compilers</title>
+      <link>https://jzhao.xyz/thoughts/compiler/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/compiler/</guid>
+      <description>A compiler is a transformation between languages, transforming a source language into a target language.
+We design compilers by starting from a fixed abstraction boundary (the existing target language) and building a new layer of abstraction atop it (the new source language).</description>
+    </item>
+    
+    <item>
+      <title>Declarative programming</title>
+      <link>https://jzhao.xyz/thoughts/declarative-programming/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/declarative-programming/</guid>
+      <description>To declare what is, not instruct what to do
+ See: [[thoughts/Datalog]], [[posts/react]]</description>
+    </item>
+    
+    <item>
+      <title>Rice&#39;s Theorem</title>
+      <link>https://jzhao.xyz/thoughts/Rices-Theorem/</link>
+      <pubDate>Mon, 17 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Rices-Theorem/</guid>
+      <description>We cannot decide anything &amp;ldquo;interesting&amp;rdquo; about any Turing-complete program. &amp;ldquo;Interesting&amp;rdquo; is defined as any property that is not either true for every program, or false for every program.</description>
+    </item>
+    
+    <item>
+      <title>Time</title>
+      <link>https://jzhao.xyz/thoughts/time/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/time/</guid>
+      <description>The main insight from Einstein&amp;rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]]).</description>
+    </item>
+    
+    <item>
       <title>Operational Transform</title>
       <link>https://jzhao.xyz/thoughts/Operational-Transform/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
@@ -18,7 +56,7 @@ It defines a way to describe changes that has two properties:
     </item>
     
     <item>
-      <title>Terminal</title>
+      <title>Terminals</title>
       <link>https://jzhao.xyz/thoughts/terminal/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       
@@ -82,7 +120,7 @@ You’ll sometimes hear these apps referred to as “terminal emulators” ins
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/bitemporal/</guid>
-      <description>Bitemporality is a technique for modeling time in databases and data structures such that&amp;hellip;
+      <description>Bitemporality is a technique for modeling [[thoughts/time|time]] in databases and data structures such that&amp;hellip;
  The state at any point in history can be recovered Alternative timelines can be forked  It&amp;rsquo;s basically time travel!</description>
     </item>
     
@@ -581,7 +619,7 @@ Technical Dimensions of Programming Systems  Source
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/website-inspiration/</guid>
-      <description>Fun interactions   https://victoiredouy.com/about  http://www.narrowdesign.com/  https://thebrowser.company/  http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  Aesthetics   https://shapefarm.</description>
+      <description>Fun interactions   https://victoiredouy.com/about  http://www.narrowdesign.com/  https://thebrowser.company/  http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  https://www.</description>
     </item>
     
     <item>
@@ -823,7 +861,7 @@ POSSE is an abbreviation for Publish (on your) Own Site, Syndicate Elsewhere
       
       <guid>https://jzhao.xyz/thoughts/DSL/</guid>
       <description>Implementation Stages
- Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.</description>
+ Tokenization String -&amp;gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&amp;gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&amp;gt; AST (optional) Static Checks AST -&amp;gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&amp;gt; Result  Run the input or generate code for it (optional) Dynamic Checks    See: [[thoughts/compiler]]</description>
     </item>
     
     <item>
@@ -2784,7 +2822,7 @@ We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:</description>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/clocks/</guid>
-      <description>Measuring time in the context of computer systems
+      <description>Measuring [[thoughts/time|time]] in the context of computer systems
 Physical Time Two types of clock
  Physical clock: number of seconds elapsed Logical clock: count events, e.</description>
     </item>

@@ -9,11 +9,11 @@
   <meta
     name="description"
     content="Implementation Stages
- Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e."
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    See: [[thoughts/compiler]]"
   />
   <meta property="og:title" content="DSL">
   <meta property="og:description" content="Implementation Stages
- Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e.">
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    See: [[thoughts/compiler]]">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/DSL/">
   <meta property="og:width" content="200">
@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="DSL" />
   <meta name="twitter:description" content="Implementation Stages
- Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    Grammar Rules e." />
+ Tokenization String -&gt; [Token]  Makes defining and recognizing correct sequences easier Sometimes called lexing   Parsing [Token] -&gt; ParseTree  A tree that represents a successful parsing of a sequence of tokens   (optional) AST Conversion ParseTree -&gt; AST (optional) Static Checks AST -&gt; AST  See also: [[thoughts/program analysis]]   Evaluate AST -&gt; Result  Run the input or generate code for it (optional) Dynamic Checks    See: [[thoughts/compiler]]" />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9ff32f429d29de8b59c3ff3934498e74.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.91078621f8d696add3d83daedde97a1f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -811,6 +811,79 @@ Dec 20, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -848,6 +921,7 @@ Dec 20, 2022
 </ol>
 </li>
 </ol>
+<p>See: <a href="/thoughts/compiler" rel="noopener" class="internal-link" data-src="/thoughts/compiler">compiler</a></p>
 <a href="#grammar-rules"><h2 id="grammar-rules"><span class="hanchor" ariaLabel="Anchor"># </span>Grammar Rules</h2></a>
 <p>e.g. for BNF, EBNF</p>
 <ul>
