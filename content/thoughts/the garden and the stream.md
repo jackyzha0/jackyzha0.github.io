@@ -23,7 +23,7 @@ A hard part of this is The Navigation Problem: how do we give web users just eno
 ## The Stream
 In the stream metaphor you don’t experience the Stream by [[thoughts/walking|walking]] around it and looking at it, or following it to its end. You jump in and let it flow past. You feel the force of it hit you as things float by.
 
-In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, time ordered path with our experience (and only our experience) at the center.
+In other words, the Stream replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, [[thoughts/time|time]] ordered path with our experience (and only our experience) at the center.
 
 We live in a shallow web. Not of actual trails, but of sign posts.
 

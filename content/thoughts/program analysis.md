@@ -24,11 +24,7 @@ Software analysis falls into many categories
 2. What the code does (program analysis - cannot be done precisely)
 3. What the author intended (impossible for fully automatic analysis, not available from the code)
 
-Rice's Theorem: All program analysis problems that are non-trivial are undecidable. There is no program analysis that achieves all of the following for all input problems:
-1. Is fully automatic (no user input/interaction other than the program)
-2. Always terminates (the analysis itself, not program being analysed)
-3. On termination: always says “yes” when the answer should be “yes”
-4. On termination: always says “no” when the answer should be “no”
+See: [[thoughts/Rice's Theorem]]
 
 ## Designing a Static Analysis
 1. Define the goal: what is the property (of all executions) of a program? What problem is the analysis supposed to help?

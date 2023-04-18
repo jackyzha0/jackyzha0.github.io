@@ -16,7 +16,7 @@ There is one Annie Dillard [quote](thoughts/quotes.md) I hold central to my 'con
 
 > How we spend our days is, of course, how we spend our lives. 
 
-What we do with this hour and that one is what we are doing. What can you do to make your hours, days, and life meaningful? Certainly not toiling away for the next few years on things that pain you and question your sanity. Pain is *not* the unit of effort that matters[^4]. Time is.
+What we do with this hour and that one is what we are doing. What can you do to make your hours, days, and life meaningful? Certainly not toiling away for the next few years on things that pain you and question your sanity. Pain is *not* the unit of effort that matters[^4]. [[thoughts/time|Time]] is.
 
 Take the time to find yourself. Take the time to smell the proverbial flowers. Take a break to sharpen your saw for it will not delay you from cutting more wood.
 

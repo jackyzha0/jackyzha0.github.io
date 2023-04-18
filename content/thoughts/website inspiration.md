@@ -14,6 +14,8 @@ tags:
 - https://lfe.org/
 - good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
 - https://tomasp.net/techdims
+- https://www.samanthahunt.net/
+- https://visakanv.com/wp-content/uploads/2019/06/memex.pdf
 
 ## Aesthetics
 - https://shapefarm.net/

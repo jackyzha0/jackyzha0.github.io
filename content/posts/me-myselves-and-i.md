@@ -33,9 +33,9 @@ What do you think it means to commit to an identity?
 
 *Hmm. I think there is an element of trust -- that the ground below them will hold, that tomorrow will come again, and that the ocean will continue to rise and fall. Trust is an unquestioning attitude, an absence of deliberation over reliability. To commit is to believe it as a truth about oneself.*
 
-Do you think identities can change with time?
+Do you think identities can change with [[thoughts/time|time]]?
 
-*Yes. I don't think truth is absolute -- I think truth is a function of identity and identity itself is a function of time. Maybe, at this slice in time, certain axioms hold true about the universe. A few hours, years, millennia might pass and those truths might be different. Our different selves can choose between different systems of meaning and sense as our basic axioms.*
+*Yes. I don't think truth is absolute -- I think truth is a function of identity and identity itself is a function of [[thoughts/time|time]]. Maybe, at this slice in time, certain axioms hold true about the universe. A few hours, years, millennia might pass and those truths might be different. Our different selves can choose between different systems of meaning and sense as our basic axioms.*
 
 I think my sense of self is undergoing a shift. It feels very liquid right now. One supposedly is supposed to 'live in the present' to enjoy the tea[^2], but I can't help but feel... scattered. I feel like I am trying to live too many lives at once and I feel the very fabric of my being being tugged at the seams. 
 

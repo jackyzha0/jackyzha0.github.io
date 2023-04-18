@@ -54,7 +54,7 @@ tags:
 5. Complexity: how does the system structure complexity and what level of detail is required?
 	- There is a massive gap between the level of detail required by a computer, which executes a sequence of low-level instructions, and the human description of a program in higher-level terms.
 	- Declarative vs imperative programming systems
-		- Declarative programming systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.
+		- [[thoughts/declarative programming|Declarative programming]] systems like SQL, Prolog or Datalog, the meaning of a program is still unambiguous, but it is not defined operationally—there is a (more or less deterministic) inference engine that solves the problem based on the provided description.
 		- Whereas imperative programming systems rely on the programmer explicitly defining the steps and using the right abstractions
 	- See also: [[thoughts/complexity]]
 6. Errors: what does the system consider to be an error? How are they prevented and handled?

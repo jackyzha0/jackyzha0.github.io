@@ -15,7 +15,7 @@ Two types of clock
 1. Physical clock: number of seconds elapsed
 2. Logical clock: count events, e.g. messages sent
 
-Time is hard! So many different ways of measuring time
+[[thoughts/time|Time]] is hard! So many different ways of measuring time
 - Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation
 - International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency
 - Compromise, UTC is TAI with corrections to account for Earth rotation

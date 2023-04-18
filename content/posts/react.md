@@ -18,7 +18,7 @@ This post assumes that you know basic HTML, CSS, and JavaScript.
 The TLDR; is that it's a bunch of code you can add to your project that makes building websites and interfaces that **react** to changes when you do things (e.g. press buttons) really easy.
 
 React has two distinguishing features that set it apart:
-1. React is **declarative** meaning you tell React exactly what you want the page to look like and it'll figure out how to do that.
+1. React is **[[thoughts/declarative programming|declarative]]** meaning you tell React exactly what you want the page to look like and it'll figure out how to do that.
 2. React is **component based** meaning that you can create pieces of the UI that you can reuse across different parts of your application.
 
 ## How a website works

@@ -39,7 +39,7 @@ Stages of development
 - Open-class words: nouns, verbs, adjectives (can be added to)
 - Closed-class words: auxiliaries, prepositions, complementizers, determiners (usually fixed in language)
 - Sentence types
-	- Declarative (statement): “that’s a doggie”
+	- [[thoughts/declarative programming|Declarative]] (statement): “that’s a doggie”
 	- Imperative (command): “look at the doggie”
 	- Interrogative (question): yes/no questions
 	- Negative sentences: contain negation

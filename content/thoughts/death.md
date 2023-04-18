@@ -27,7 +27,7 @@ Conceptions of death in [The Upanisads](thoughts/The%20Upanisads.md) and [Epicur
 
 Greyson Scale
 1. Cognitive Features
-	1. Time distortion
+	1. [[thoughts/time|Time]] distortion
 	2. Thought acceleration
 	3. Life review
 	4. Revelation
