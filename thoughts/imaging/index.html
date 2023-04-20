@@ -81,7 +81,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -553,6 +553,49 @@ Dec 24, 2021
 
 
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -654,7 +697,7 @@ $$I&rsquo;(x,y) = \sum_{j=-k}^k\sum_{i=-k}^k F(i, j) I(x - i, y - j)$$</p>
 <p><strong>Characterization Theorem</strong>: Any operation is linear if it satisfies both superposition and scaling. Any linear, shift-invariant operation can be expressed as a convolution.</p>
 <a href="#non-linear-filters"><h2 id="non-linear-filters"><span class="hanchor" ariaLabel="Anchor"># </span>Non-linear filters</h2></a>
 <ul>
-<li>Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of noise, such as impulse noise (&lsquo;salt and pepper&rsquo; noise or &lsquo;shot&rsquo; noise)</li>
+<li>Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of <a href="/thoughts/noise" rel="noopener" class="internal-link" data-src="/thoughts/noise">noise</a>, such as impulse noise (&lsquo;salt and pepper&rsquo; noise or &lsquo;shot&rsquo; noise)</li>
 <li>Bilateral Filter (edge-preserving filter). Effectively smooths out the image but keeps the sharp edges, good for denoising. Weights of neighbour at a spacial offset $(x,y)$ from the center pixel $I(X,Y)$ given by a product $\exp^{-\frac{x^2+y^2}{2\sigma_d^2}}\exp^{-\frac{(I(X+x, Y+y) - I(X,Y))^2}{2\sigma_r^2}}$. We call the first half of the product the <em>domain kernel</em> (which is essentially a Gaussian) and the second half the <em>range kernel</em> (which depends on location in the image).</li>
 <li>ReLU. $x$ for all $x &gt; 0$, $0$ otherwise.</li>
 </ul>

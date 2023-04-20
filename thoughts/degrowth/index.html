@@ -81,7 +81,7 @@ If we interpret &ldquo;degrowth&rdquo; as the decision to fix global GDP at its 
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -156,13 +156,13 @@ If we interpret &ldquo;degrowth&rdquo; as the decision to fix global GDP at its 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

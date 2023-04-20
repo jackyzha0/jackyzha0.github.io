@@ -78,7 +78,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -637,7 +637,7 @@ Apr 8, 2023
 
 <p>A 
 <a href="https://arxiv.org/abs/2003.08934" rel="noopener">neural radiance field</a> (NeRF) is a fully-connected neural network that can generate novel views of complex 3D scenes, based on a partial set of 2D images.</p>
-<p>We represent a static scene as a continuous 5D function that outputs the radiance emitted in each direction $(\theta, \phi)$ at each point $(x, y, z)$ in space (see: <a href="/thoughts/spherical-coordinate-system" rel="noopener" class="internal-link" data-src="/thoughts/spherical-coordinate-system">spherical coordinate system</a>)</p>
+<p>We represent a static scene as a continuous 5D function that outputs the radiance emitted in each direction $(\theta, \phi)$ at each point $(x, y, z)$ in space (see: <a href="/thoughts/coordinate-system" rel="noopener" class="internal-link" data-src="/thoughts/coordinate-system">coordinate system</a>)</p>
 <p>The radiance function is represented as a 4D function, with volume density value (opacity, represented as $\sigma$) and a view-dependent RGB <a href="/thoughts/colour" rel="noopener" class="internal-link" data-src="/thoughts/colour">colour</a>.</p>
 <p>We train a simple MLP to map from position and direction to radiance. We also encourage the representation to be multiview consistent by restricting the network to predict the volume density $\sigma$ as a function only of the location. That is:</p>
 <ul>

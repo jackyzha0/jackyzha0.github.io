@@ -84,7 +84,7 @@ Chromatic Adaptation: colour perception starts to skew if exposed to a certain c
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -159,13 +159,13 @@ Chromatic Adaptation: colour perception starts to skew if exposed to a certain c
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -403,6 +403,8 @@ Dec 25, 2021
   
   
   
+    
+  
 
   
 
@@ -477,7 +479,7 @@ Dec 25, 2021
 <p>How do we produce the full RGB image from mosaiced sensor output?</p>
 <ul>
 <li>Bilinear Interpolation: average your 4 neighbours</li>
-<li>Bicubic Interpolation -&gt; needs more neighbours, may overblur</li>
+<li>Bicubic Interpolation: needs more neighbours, may overblur</li>
 <li>Edge-aware interpolation</li>
 </ul>
 <a href="#grassmans-law"><h3 id="grassmans-law"><span class="hanchor" ariaLabel="Anchor"># </span>Grassman&rsquo;s Law</h3></a>
@@ -491,23 +493,48 @@ Dec 25, 2021
 </ul>
 <a href="#colour-space"><h3 id="colour-space"><span class="hanchor" ariaLabel="Anchor"># </span>Colour Space</h3></a>
 <p>Choice of primaries is equivalent to choice of colour space. In RGB, we choose monochromatic energies.</p>
-<p>RGB is additive whereas CMY is subtractive.</p>
-<p>RGB and CIE are linear.</p>
-<p>McAdam ellipses are regions where colour differences are imperceptible to the average human eye.</p>
 <ul>
-<li>CIE is defined with 3 imaginary lights X, Y, Z
+<li>
+<p>RGB is additive whereas CMY is subtractive.</p>
+</li>
+<li>
+<p>RGB and CIE are linear.</p>
+</li>
+<li>
+<p>McAdam ellipses are regions where colour differences are imperceptible to the average human eye.</p>
+</li>
+<li>
+<p>A colour gamut is the range of colours that can be displayed or captured by a particular device or technology.</p>
+</li>
+<li>
+<p>CIE is defined with 3 imaginary lights X, Y, Z</p>
 <ul>
 <li>Any wavelength $\lambda$ can be matched perceptually by positive combinations</li>
 <li>X is approximately R, Y is approximately G, Z is approximately B</li>
-<li>Each monitor has its own RGB-to-XYZ transformation matrix</li>
+<li>The XYZ colour space is a device-independent colour space, which means that it is not tied to any particular device or display technology.</li>
 </ul>
+</li>
+<li>
+<p>As the RGB colour cube sits within the CIE colour space, it can only display a subset of perceivable colours</p>
+<ul>
+<li>One way to clamp: construct ray to white point, find closest displayable point within gamut</li>
+</ul>
+</li>
+<li>
+<p><code>(C, M, Y) = (1 - R, 1 - G, 1 - B)</code></p>
 </li>
 </ul>
 <a href="#physiology"><h3 id="physiology"><span class="hanchor" ariaLabel="Anchor"># </span>Physiology</h3></a>
 <p>Retina contains an uneven distribution (clustered around fovea) of rods and cones</p>
 <ul>
 <li>Rods: sense in black and white, mainly for edge detection</li>
-<li>Cones: 3 types, mostly for colour sensing</li>
+<li>Cones: 3 types, mostly for colour sensing
+<ul>
+<li>L: most sensitive to red</li>
+<li>M: most sensitive to green</li>
+<li>S: most sensitive to blue</li>
+</ul>
+</li>
 </ul>
 <p>Colour blindness results from missing cone types</p>
 <ul>

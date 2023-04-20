@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/noise/</loc>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/compiler/</loc>
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
@@ -9,12 +18,6 @@
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Rices-Theorem/</loc>
-    <lastmod>2023-04-18T13:29:39-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-04-18T13:29:39-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/time/</loc>
@@ -32,11 +35,11 @@
     <loc>https://jzhao.xyz/thoughts/walking/</loc>
     <lastmod>2023-04-10T15:32:26-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/thoughts/NeRF/</loc>
-    <lastmod>2023-04-10T15:32:26-07:00</lastmod>
+    <loc>https://jzhao.xyz/thoughts/coordinate-system/</loc>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/thoughts/spherical-coordinate-system/</loc>
-    <lastmod>2023-04-10T15:32:26-07:00</lastmod>
+    <loc>https://jzhao.xyz/thoughts/NeRF/</loc>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/A-Pattern-Language/</loc>
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
@@ -177,7 +180,7 @@
     <lastmod>2023-04-02T22:09:38-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/illumination/</loc>
-    <lastmod>2023-04-02T22:09:38-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/GLSL/</loc>
     <lastmod>2023-04-02T22:09:38-07:00</lastmod>
@@ -201,7 +204,7 @@
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/website-inspiration/</loc>
-    <lastmod>2023-04-18T13:29:39-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/map-as-territory/</loc>
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
@@ -243,7 +246,7 @@
     <lastmod>2023-02-09T12:26:20-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/rendering/</loc>
-    <lastmod>2023-04-10T15:32:26-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Ostrich-Algorithm/</loc>
     <lastmod>2023-01-01T18:16:39-05:00</lastmod>
@@ -291,7 +294,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/CPSC340/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/fundamental-tradeoff/</loc>
     <lastmod>2022-12-13T14:02:40-08:00</lastmod>
@@ -300,7 +303,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/generative-models/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/LSTM/</loc>
     <lastmod>2022-12-07T13:59:06-08:00</lastmod>
@@ -528,7 +531,7 @@
     <lastmod>2022-09-12T12:49:00-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/linear-algebra/</loc>
-    <lastmod>2022-12-13T14:02:40-08:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/probability/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1296,7 +1299,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/colour/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/conceptual-model/</loc>
     <lastmod>2021-12-25T21:02:46-05:00</lastmod>
@@ -1398,7 +1401,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/imaging/</loc>
-    <lastmod>2022-11-09T14:39:15-08:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/innovation/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1875,7 +1878,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idea-list/</loc>
-    <lastmod>2023-04-15T09:06:54-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/attention-economy/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1974,7 +1977,7 @@
     <lastmod>2023-01-01T00:32:00-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/books/</loc>
-    <lastmod>2023-04-06T17:47:56-07:00</lastmod>
+    <lastmod>2023-04-20T12:49:59-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/categories/</loc>
   </url><url>

@@ -6,7 +6,17 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Noise</title>
+      <link>https://jzhao.xyz/thoughts/noise/</link>
+      <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/noise/</guid>
+      <description>Source
+What makes RNG &amp;ldquo;good&amp;rdquo;?  Fair statistical distribution Low degree of repetition (more correct: a statistically correct degree of repetition) High theoretical maximum (best-case) repeat period High guaranteed minimum (worst-case) repeat period: crucially should be about ~million-billion range Seedable with a nice range of seeds: we don&amp;rsquo;t want seeds that limit us to only odd numbers or only large primes Fast warm up: some popular RNGs have pretty terrible initial values!</description>
+    </item>
+    
     <item>
       <title>Compilers</title>
       <link>https://jzhao.xyz/thoughts/compiler/</link>
@@ -89,21 +99,21 @@ You’ll sometimes hear these apps referred to as “terminal emulators” ins
     </item>
     
     <item>
+      <title>Coordinate systems</title>
+      <link>https://jzhao.xyz/thoughts/coordinate-system/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/coordinate-system/</guid>
+      <description>Homogenous We add a new coordinate $h$ (sometimes also $w$). To convert homogenous coordinates $(x,y,z,h)$ back into Cartesian coordinates, we divide through by $h$: $(\frac x h, \frac y h, \frac z h)$</description>
+    </item>
+    
+    <item>
       <title>NeRF</title>
       <link>https://jzhao.xyz/thoughts/NeRF/</link>
       <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/NeRF/</guid>
       <description>A neural radiance field (NeRF) is a fully-connected neural network that can generate novel views of complex 3D scenes, based on a partial set of 2D images.</description>
-    </item>
-    
-    <item>
-      <title>Spherical coordinate system</title>
-      <link>https://jzhao.xyz/thoughts/spherical-coordinate-system/</link>
-      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/spherical-coordinate-system/</guid>
-      <description>$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)</description>
     </item>
     
     <item>

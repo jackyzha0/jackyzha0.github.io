@@ -81,7 +81,7 @@ This is difficult as at any point in 3D space, light of all wavelengths may be g
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -156,13 +156,13 @@ This is difficult as at any point in 3D space, light of all wavelengths may be g
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -430,6 +430,53 @@ Mar 29, 2023
   
   
   
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
 
   
 
@@ -522,7 +569,7 @@ Mar 29, 2023
 <p>$L$ is the light direction</p>
 </li>
 <li>
-<p>$R$ is the reflected ray (normally $R = -L + 2 (N \cdot L) N$)</p>
+<p>$R$ is the reflected ray (normally $R = -L + 2 (N \cdot L) N$, in <a href="/thoughts/GLSL" rel="noopener" class="internal-link" data-src="/thoughts/GLSL">GLSL</a>: <code>R = reflect(-L, N)</code>)</p>
 </li>
 <li>
 <p>$V$ is the viewing direction</p>
@@ -552,6 +599,28 @@ Mar 29, 2023
 <li>Render scene from the camera view. If the depth computed at the fragment is greater than the depth in the shadowmap, it is in shadow</li>
 </ol>
 <p>However, this model only produces hard shadows</p>
+<a href="#gouraud-shading"><h2 id="gouraud-shading"><span class="hanchor" ariaLabel="Anchor"># </span>Gouraud Shading</h2></a>
+<p>Gouraud shading, named after Henri Gouraud, is an interpolation method used in computer graphics to produce continuous shading of surfaces represented by polygon meshes.</p>
+<p>Lighting computations based on a reflection model, e.g. the Phong reflection model, are then performed to produce colour intensities at the vertices. For each screen pixel that is covered by the polygonal mesh, colour intensities can then be interpolated from the colour values calculated at the vertices.</p>
+<p>However, highly localized lighting effects (such as specular highlights, e.g. the glint of reflected light on the surface of an apple) will not be rendered correctly</p>
+<a href="#caustics"><h2 id="caustics"><span class="hanchor" ariaLabel="Anchor"># </span>Caustics</h2></a>
+<p>Caustics are patterns of light that form when a light source is reflected or refracted by a curved surface.</p>
+<ol>
+<li>Sunlight reflecting off a swimming pool: When sunlight enters a swimming pool, it is refracted by the water and then reflected off the bottom of the pool. The caustic appears as a series of bright, rippling lines on the surface of the water.</li>
+<li>Light passing through a wine glass: When light passes through a wine glass, it is refracted by the curved surface of the glass. The caustic appears as a bright, elongated spot of light on the surface of the table or other surface where the glass is placed.</li>
+</ol>
+<a href="#ambient-occlusion"><h2 id="ambient-occlusion"><span class="hanchor" ariaLabel="Anchor"># </span>Ambient Occlusion</h2></a>
+<p>Ambient occlusion refers to the soft shadows that form in areas where objects are close together, or where there are tight crevices or other areas where light has trouble reaching.</p>
+<p>Specifically, ambient occlusion is calculated by casting rays from each point on an object&rsquo;s surface in multiple directions and then determining how many of those rays intersect with other objects in the scene. The more rays that intersect with other objects, the darker the ambient occlusion effect will be in that area.</p>
+<p>One common approach to ambient occlusion is to use a technique called screen-space ambient occlusion (SSAO), which calculates ambient occlusion by examining the depth and color values of pixels on the screen.</p>
+<a href="#light-transport-notation"><h2 id="light-transport-notation"><span class="hanchor" ariaLabel="Anchor"># </span>Light Transport Notation</h2></a>
+<ul>
+<li>L: a light source</li>
+<li>E: the eye</li>
+<li>S: a specular reflection</li>
+<li>D: a diffuse reflection</li>
+</ul>
+<p>Light takes a path from L, the light, to E, the eye.</p>
 
 
     </article>

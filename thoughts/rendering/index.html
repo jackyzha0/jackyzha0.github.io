@@ -78,7 +78,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -365,6 +365,47 @@ Jan 11, 2023
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -372,6 +413,64 @@ Jan 11, 2023
 
 
 
+
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -464,7 +563,7 @@ Jan 11, 2023
 <ol>
 <li>View volume culling, vertex level: Cull iff all vertices are outside w.r.t to a single view volume plane</li>
 <li>View volume culling, object level: Cull iff distance between center of bounding sphere and any view volume plane is greater than the radius of the bounding sphere</li>
-<li>View volume clipping:</li>
+<li>View volume clipping: add/modify vertices so that they are all within bounds</li>
 <li>Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon</li>
 <li>Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer</li>
 <li>Occlusion culling, object level: build a bounding box and do a &ldquo;virtual render&rdquo; of the box. If no pixels passed the z-buffer then cull the whole object</li>
@@ -497,8 +596,8 @@ Jan 11, 2023
 </ul>
 <p>Because it only uses a single ray, most shadows are pretty hard.</p>
 <p>This is noticeably different from <em>path</em> tracing, which produces incredibly realistic looking renders that look indistinguishable from photos. Path tracing uses many rays per pixel with the colour averaged across them. At each interaction (bounce/reflection/etc.), the ray direction changes randomly with some distribution. However, this is significantly more expensive to compute.</p>
-<a href="#distributed-ray-tracing"><h3 id="distributed-ray-tracing"><span class="hanchor" ariaLabel="Anchor"># </span>Distributed Ray Tracing</h3></a>
-<p>We can get more effects by adding more rays</p>
+<a href="#path-tracing"><h3 id="path-tracing"><span class="hanchor" ariaLabel="Anchor"># </span>Path tracing</h3></a>
+<p>We can get more effects by adding more rays. Each path can be thought of as a random walk of light through the scene, with each bounce determined probabilistically based on the material properties of the objects and the lighting environment.</p>
 <ul>
 <li>Anti-aliasing: multiple samples per pixel</li>
 <li>Motion blur: multiple samples over time</li>
@@ -517,7 +616,31 @@ Jan 11, 2023
 <li>Left-handed</li>
 <li>Right-handed</li>
 </ol>
-<p>See also: <a href="/thoughts/NeRF" rel="noopener" class="internal-link" data-src="/thoughts/NeRF">NeRF</a></p>
+<p>See also: <a href="/thoughts/NeRF" rel="noopener" class="internal-link" data-src="/thoughts/NeRF">NeRF</a>, <a href="/thoughts/coordinate-system" rel="noopener" class="internal-link" data-src="/thoughts/coordinate-system">coordinate system</a></p>
+<a href="#intersection-tests"><h2 id="intersection-tests"><span class="hanchor" ariaLabel="Anchor"># </span>Intersection Tests</h2></a>
+<a href="#line-plane"><h3 id="line-plane"><span class="hanchor" ariaLabel="Anchor"># </span>Line-plane</h3></a>
+<ul>
+<li>Plane equation: $F(P) = \vec N \cdot \vec P + D = 0$
+<ul>
+<li>$\vec N = (P_2 - P_0) \times (P_1 - P_0)$, cross any three points on the plane that are not colinear</li>
+<li>$\vec P$ is any point</li>
+<li>$D = - N \cdot P_1$ or $D = -N \cdot P_2$</li>
+</ul>
+</li>
+<li>Line equation: $P(t) = P_a + t(P_b - P_a)$</li>
+<li>Plug line equation into plane equation and solve for $t$</li>
+</ul>
+<a href="#ray-triangle"><h3 id="ray-triangle"><span class="hanchor" ariaLabel="Anchor"># </span>Ray-Triangle</h3></a>
+<a href="#ray-sphere"><h3 id="ray-sphere"><span class="hanchor" ariaLabel="Anchor"># </span>Ray-Sphere</h3></a>
+<ul>
+<li>Sphere equation: $F(P) = r^2 - (x - C.x)^2 - (y - C.y)^2 - (z - C.z)^2$
+<ul>
+<li>Each of $x$, $y$ and $z$ are equations of the form $x(t) = P_{ax} + t(P_{bx} - P_{ax})$</li>
+<li>$C$ is the center point of the sphere</li>
+</ul>
+</li>
+<li>Take smallest positive $t$ value</li>
+</ul>
 
 
     </article>

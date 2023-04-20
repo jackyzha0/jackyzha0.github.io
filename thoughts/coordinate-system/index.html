@@ -8,17 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)"
+    content="Homogenous We add a new coordinate $h$ (sometimes also $w$). To convert homogenous coordinates $(x,y,z,h)$ back into Cartesian coordinates, we divide through by $h$: $(\frac x h, \frac y h, \frac z h)$"
   />
-  <meta property="og:title" content="Spherical coordinate system">
-  <meta property="og:description" content="$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)">
+  <meta property="og:title" content="Coordinate systems">
+  <meta property="og:description" content="Homogenous We add a new coordinate $h$ (sometimes also $w$). To convert homogenous coordinates $(x,y,z,h)$ back into Cartesian coordinates, we divide through by $h$: $(\frac x h, \frac y h, \frac z h)$">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jzhao.xyz/thoughts/spherical-coordinate-system/">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/coordinate-system/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Spherical coordinate system" />
-  <meta name="twitter:description" content="$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)" />
+  <meta name="twitter:title" content="Coordinate systems" />
+  <meta name="twitter:description" content="Homogenous We add a new coordinate $h$ (sometimes also $w$). To convert homogenous coordinates $(x,y,z,h)$ back into Cartesian coordinates, we divide through by $h$: $(\frac x h, \frac y h, \frac z h)$" />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -30,7 +30,7 @@
   
 
   <title>
-    Spherical coordinate system
+    Coordinate systems
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -78,7 +78,7 @@
   
   
   
-  <link href="https://jzhao.xyz/styles.e09a3335dd9cee04bce1105861b55ed5.min.css" rel="stylesheet" />
+  <link href="https://jzhao.xyz/styles.afc1e7564b97dfc80fd238ef2d9aa8f3.min.css" rel="stylesheet" />
 
   
   <link href="https://jzhao.xyz/styles/_light_syntax.32359fa0e4ad5c5b354cb209e7fa1b22.min.css" rel="stylesheet" id="theme-link">
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.e98060ba4a8963011a971c5d7e2a49ff.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.11cb9580b3c09cf6dba3419b8a256396.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -335,14 +335,14 @@
 
 
     <article>
-      <h1>Spherical coordinate system</h1>
+      <h1>Coordinate systems</h1>
       <p class="meta">
         Last updated 
 Apr 8, 2023
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/spherical%20coordinate%20system.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/coordinate%20system.md" rel="noopener">Edit Source</a>
 
 
       </p>
@@ -374,6 +374,77 @@ Apr 8, 2023
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
 
 
 
@@ -381,6 +452,114 @@ Apr 8, 2023
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
 
   
   
@@ -457,6 +636,45 @@ Apr 8, 2023
 
 
 
+<a href="#homogenous"><h2 id="homogenous"><span class="hanchor" ariaLabel="Anchor"># </span>Homogenous</h2></a>
+<p>We add a new coordinate $h$ (sometimes also $w$). To convert homogenous coordinates $(x,y,z,h)$ back into Cartesian coordinates, we divide through by $h$: $(\frac x h, \frac y h, \frac z h)$</p>
+<a href="#as-groundedness"><h3 id="as-groundedness"><span class="hanchor" ariaLabel="Anchor"># </span>As groundedness</h3></a>
+<p>If we interpret $h$ as groundedness, it measures how &rsquo;translateable&rsquo; it is:</p>
+<ul>
+<li>$h=0$ for directions/vectors</li>
+<li>$h=1$ for positions</li>
+<li>$h \not \in { 0, 1}$ need to be divided by $h$ to come back into real space</li>
+</ul>
+<a href="#as-depth"><h3 id="as-depth"><span class="hanchor" ariaLabel="Anchor"># </span>As depth</h3></a>
+<p>We can also interpret $h$ as camera depth.</p>
+<p>What makes something look 3D?</p>
+<ul>
+<li>Relative size (far objects are smaller)</li>
+<li>Perspective (far objects converge on the origin)</li>
+<li>Motion parallax (far objects move slowly)</li>
+</ul>
+<p>Dividing through $h$ gives us these three effects.</p>
+<p>In order to make distant objects appear smaller and closer to the center of the screen, we use a coordinate system with $(0, 0, 0)$ at the center of the screen (this is done in the <a href="/thoughts/computer-graphics#transformations" rel="noopener" class="internal-link" data-src="/thoughts/computer-graphics">CCS</a>).</p>
+<p>This effectively projects onto the &rsquo;near&rsquo; plane</p>
+<p><img src="/thoughts/images/homogenous.png" width="300" /></p>
+<a href="#barycentric-coordinates"><h2 id="barycentric-coordinates"><span class="hanchor" ariaLabel="Anchor"># </span>Barycentric Coordinates</h2></a>
+<p>Mostly used for interpolation. Given values known at the vertices (e.g. depth, colour, texture, surface normals), we wish to linearly interpolate their values for the interior pixels</p>
+<p>Barycentric coordinates can be seen as a weighted combination of vertices.</p>
+<ul>
+<li>$P = \alpha P_1 + \beta P_2 + \gamma P_3$</li>
+<li>$\alpha + \beta + \gamma = 1$</li>
+<li>$0 \leq \alpha, \beta, \gamma \leq 1$</li>
+</ul>
+<p>To interpolate, $v = \alpha v_1 + \beta v_2 + \gamma v_3$</p>
+<p>We use barycentric coordinates instead of screen space coordinates because the mid-point in screen-space may <em>not</em> be the midpoints along the real line/object.</p>
+<p>Calculating the weighted value $\alpha$ for the vertex $P_1$:</p>
+<ol>
+<li>Write an explicit line equation for the edge opposite the vertex</li>
+<li>Convert it into an implicit line equation ($F_{2,3}$ in this example, line connecting $P_2$ and $P_3$)</li>
+<li>Evaluate the implicit line equation at the vertex, let this be $k_1$</li>
+<li>$\alpha(P) = F_{2,3}(P) / k$</li>
+</ol>
+<a href="#spherical"><h2 id="spherical"><span class="hanchor" ariaLabel="Anchor"># </span>Spherical</h2></a>
 <p>$\theta$ represents the polar angle (angle from the vertical $z$ axis) and $\phi$ represents the azimuthal angle (angle from the $x$ axis)</p>
 <p><img src="/thoughts/images/spherical coordinate system.png" width="auto" /></p>
 
@@ -484,8 +702,18 @@ Apr 8, 2023
     
       
       
+      
+    
+      
+      
       <li>
-        <a href="/thoughts/NeRF/" data-ctx="thoughts/spherical coordinate system" data-src="/thoughts/NeRF" class="internal-link">NeRF</a>
+        <a href="/thoughts/NeRF/" data-ctx="thoughts/coordinate system" data-src="/thoughts/NeRF" class="internal-link">NeRF</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/rendering/" data-ctx="thoughts/coordinate system" data-src="/thoughts/rendering" class="internal-link">Rendering</a>
       </li>
       
       
