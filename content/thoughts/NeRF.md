@@ -7,7 +7,7 @@ tags:
 
 A [neural radiance field](https://arxiv.org/abs/2003.08934) (NeRF) is a fully-connected neural network that can generate novel views of complex 3D scenes, based on a partial set of 2D images.
 
-We represent a static scene as a continuous 5D function that outputs the radiance emitted in each direction $(\theta, \phi)$ at each point $(x, y, z)$ in space (see: [[thoughts/spherical coordinate system]])
+We represent a static scene as a continuous 5D function that outputs the radiance emitted in each direction $(\theta, \phi)$ at each point $(x, y, z)$ in space (see: [[thoughts/coordinate system]])
 
 The radiance function is represented as a 4D function, with volume density value (opacity, represented as $\sigma$) and a view-dependent RGB [[thoughts/colour]].
 

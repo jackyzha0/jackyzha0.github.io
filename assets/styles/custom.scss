@@ -188,19 +188,19 @@
   }
 
   &.t-2 {
-    animation-delay: 0.9s;
+    animation-delay: 1s;
   }
 
   &.t-3 {
-    animation-delay: 2s;
+    animation-delay: 1.2s;
   }
 
   &.t-4 {
-    animation-delay: 2.2s;
+    animation-delay: 1.5s;
   }
 
   &.t-5 {
-    animation-delay: 2.4s;
+    animation-delay: 1.8s;
   }
 
   @for $j from 1 through 5 {
@@ -209,7 +209,7 @@
     animation: fadeIn ease 0.5s;
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-delay: #{$i * .08 + 0.5}s;
+    animation-delay: #{$i * .3 + 0.5}s;
     z-index: #{-$i + 10 * ($j+1)};
     position: relative;
   }

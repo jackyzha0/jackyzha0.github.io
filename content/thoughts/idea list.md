@@ -33,6 +33,7 @@ tags:
 		- admonition callouts
 		- light/dark mode
 		- clipboard + title for codeblocks
+	- actual search page
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
 - daily link share

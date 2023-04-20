@@ -16,6 +16,7 @@ tags:
 - https://tomasp.net/techdims
 - https://www.samanthahunt.net/
 - https://visakanv.com/wp-content/uploads/2019/06/memex.pdf
+- https://oimo.io/works
 
 ## Aesthetics
 - https://shapefarm.net/

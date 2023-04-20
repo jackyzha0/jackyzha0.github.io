@@ -13,7 +13,7 @@
             <div class="delay t-2">
                 <h2>Recent Writing</h2>
                 {{$writing := where .Site.RegularPages "Section" "posts" }}
-                <ul class="delay stagger">
+                <ul class="delay t-2 stagger">
                     {{range first 3 $writing }}
                     <li>
                         <div class="section">
@@ -33,7 +33,7 @@
             <div class="delay t-3">
                 <h2>Recent Notes</h2>
                 {{$notes := where .Site.RegularPages "Section" "thoughts"}}
-                <ul class="delay stagger">
+                <ul class="delay t-3 stagger">
                     {{range first 2 $notes }}
                     <li>
                         <div class="section">

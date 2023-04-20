@@ -27,7 +27,7 @@ $$\underbracket{I_a k_a}_{\textrm{ambient term}} + \sum_L \left( \underbracket{ 
 
 - $N$ is the surface normal
 - $L$ is the light direction
-- $R$ is the reflected ray (normally $R = -L + 2 (N \cdot L) N$)
+- $R$ is the reflected ray (normally $R = -L + 2 (N \cdot L) N$, in [[thoughts/GLSL]]: `R = reflect(-L, N)`)
 - $V$ is the viewing direction
 - $n$ is the shininess constant (sometimes also $\alpha$)
 - $I$ is a property of the scene
@@ -43,3 +43,33 @@ $$\underbracket{I_a k_a}_{\textrm{ambient term}} + \sum_L \left( \underbracket{ 
 2. Render scene from the camera view. If the depth computed at the fragment is greater than the depth in the shadowmap, it is in shadow
 
 However, this model only produces hard shadows
+
+## Gouraud Shading
+Gouraud shading, named after Henri Gouraud, is an interpolation method used in computer graphics to produce continuous shading of surfaces represented by polygon meshes.
+
+Lighting computations based on a reflection model, e.g. the Phong reflection model, are then performed to produce colour intensities at the vertices. For each screen pixel that is covered by the polygonal mesh, colour intensities can then be interpolated from the colour values calculated at the vertices.
+
+However, highly localized lighting effects (such as specular highlights, e.g. the glint of reflected light on the surface of an apple) will not be rendered correctly
+
+## Caustics
+Caustics are patterns of light that form when a light source is reflected or refracted by a curved surface.
+
+1. Sunlight reflecting off a swimming pool: When sunlight enters a swimming pool, it is refracted by the water and then reflected off the bottom of the pool. The caustic appears as a series of bright, rippling lines on the surface of the water.
+2. Light passing through a wine glass: When light passes through a wine glass, it is refracted by the curved surface of the glass. The caustic appears as a bright, elongated spot of light on the surface of the table or other surface where the glass is placed.
+
+## Ambient Occlusion
+Ambient occlusion refers to the soft shadows that form in areas where objects are close together, or where there are tight crevices or other areas where light has trouble reaching.
+
+Specifically, ambient occlusion is calculated by casting rays from each point on an object's surface in multiple directions and then determining how many of those rays intersect with other objects in the scene. The more rays that intersect with other objects, the darker the ambient occlusion effect will be in that area.
+
+One common approach to ambient occlusion is to use a technique called screen-space ambient occlusion (SSAO), which calculates ambient occlusion by examining the depth and color values of pixels on the screen.
+
+## Light Transport Notation
+
+- L: a light source
+- E: the eye
+- S: a specular reflection
+- D: a diffuse reflection
+
+Light takes a path from L, the light, to E, the eye.
+

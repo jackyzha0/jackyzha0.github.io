@@ -19,7 +19,7 @@ Utilizes parallelism to take advantage of SIMD (GPUs are fast at this!)
 How do we avoid rendering things that don't contribute to the final image?
 1. View volume culling, vertex level: Cull iff all vertices are outside w.r.t to a single view volume plane
 2. View volume culling, object level: Cull iff distance between center of bounding sphere and any view volume plane is greater than the radius of the bounding sphere
-3. View volume clipping:
+3. View volume clipping: add/modify vertices so that they are all within bounds
 4. Backface culling: we never see the backside of the object, cull if $P_{eye}$ is below the plane of the polygon
 5. Occlusion culling, pixel level: use a z-buffer to determine depth at every pixel, only render if what you are about to render is closer (lower z) than what is currently in the buffer
 6. Occlusion culling, object level: build a bounding box and do a "virtual render" of the box. If no pixels passed the z-buffer then cull the whole object
@@ -46,8 +46,9 @@ Because it only uses a single ray, most shadows are pretty hard.
 
 This is noticeably different from *path* tracing, which produces incredibly realistic looking renders that look indistinguishable from photos. Path tracing uses many rays per pixel with the colour averaged across them. At each interaction (bounce/reflection/etc.), the ray direction changes randomly with some distribution. However, this is significantly more expensive to compute.
 
-### Distributed Ray Tracing
-We can get more effects by adding more rays
+### Path tracing
+We can get more effects by adding more rays. Each path can be thought of as a random walk of light through the scene, with each bounce determined probabilistically based on the material properties of the objects and the lighting environment.
+
 - Anti-aliasing: multiple samples per pixel
 - Motion blur: multiple samples over time
 - Depth-of-field (lens blur): multiple samples over lens aperture
@@ -63,4 +64,20 @@ Can also either be (imagine both of the following where X is thumb, Y is pointer
 1. Left-handed
 2. Right-handed
 
-See also: [[thoughts/NeRF]]
+See also: [[thoughts/NeRF]], [[thoughts/coordinate system]]
+
+## Intersection Tests
+### Line-plane
+- Plane equation: $F(P) = \vec N \cdot \vec P + D = 0$
+	- $\vec N = (P_2 - P_0) \times (P_1 - P_0)$, cross any three points on the plane that are not colinear
+	- $\vec P$ is any point
+	- $D = - N \cdot P_1$ or $D = -N \cdot P_2$
+- Line equation: $P(t) = P_a + t(P_b - P_a)$
+- Plug line equation into plane equation and solve for $t$
+
+### Ray-Triangle
+### Ray-Sphere
+- Sphere equation: $F(P) = r^2 - (x - C.x)^2 - (y - C.y)^2 - (z - C.z)^2$
+	- Each of $x$, $y$ and $z$ are equations of the form $x(t) = P_{ax} + t(P_{bx} - P_{ax})$
+	- $C$ is the center point of the sphere
+- Take smallest positive $t$ value

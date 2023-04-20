@@ -31,7 +31,7 @@ RAW Bayer Image gives us direct pixel data
 How do we produce the full RGB image from mosaiced sensor output?
 
 - Bilinear Interpolation: average your 4 neighbours
-- Bicubic Interpolation -> needs more neighbours, may overblur
+- Bicubic Interpolation: needs more neighbours, may overblur
 - Edge-aware interpolation 
 
 ### Grassman's Law
@@ -46,21 +46,26 @@ For colour matches
 ### Colour Space
 Choice of primaries is equivalent to choice of colour space. In RGB, we choose monochromatic energies.
 
-RGB is additive whereas CMY is subtractive.
-
-RGB and CIE are linear.
-
-McAdam ellipses are regions where colour differences are imperceptible to the average human eye.
+- RGB is additive whereas CMY is subtractive.
+- RGB and CIE are linear.
+- McAdam ellipses are regions where colour differences are imperceptible to the average human eye.
+- A colour gamut is the range of colours that can be displayed or captured by a particular device or technology.
 
 - CIE is defined with 3 imaginary lights X, Y, Z
 	- Any wavelength $\lambda$ can be matched perceptually by positive combinations
 	- X is approximately R, Y is approximately G, Z is approximately B
-	- Each monitor has its own RGB-to-XYZ transformation matrix
+	- The XYZ colour space is a device-independent colour space, which means that it is not tied to any particular device or display technology.
+- As the RGB colour cube sits within the CIE colour space, it can only display a subset of perceivable colours
+	- One way to clamp: construct ray to white point, find closest displayable point within gamut
+- `(C, M, Y) = (1 - R, 1 - G, 1 - B)`
 
 ### Physiology 
 Retina contains an uneven distribution (clustered around fovea) of rods and cones
 - Rods: sense in black and white, mainly for edge detection
 - Cones: 3 types, mostly for colour sensing
+	- L: most sensitive to red
+	- M: most sensitive to green
+	- S: most sensitive to blue
 
 Colour blindness results from missing cone types
 - Deuteranope (green deficiency)

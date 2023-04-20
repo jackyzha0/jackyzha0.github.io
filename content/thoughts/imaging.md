@@ -112,7 +112,7 @@ Low pass filters filter out high frequences, high pass filters filter out low fr
 **Characterization Theorem**: Any operation is linear if it satisfies both superposition and scaling. Any linear, shift-invariant operation can be expressed as a convolution.
 
 ## Non-linear filters
-- Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of noise, such as impulse noise ('salt and pepper' noise or 'shot' noise)
+- Median Filter (take the median value of the pixels under the filter), effective at reducing certain kinds of [[thoughts/noise|noise]], such as impulse noise ('salt and pepper' noise or 'shot' noise)
 - Bilateral Filter (edge-preserving filter). Effectively smooths out the image but keeps the sharp edges, good for denoising. Weights of neighbour at a spacial offset $(x,y)$ from the center pixel $I(X,Y)$ given by a product $\exp^{-\frac{x^2+y^2}{2\sigma_d^2}}\exp^{-\frac{(I(X+x, Y+y) - I(X,Y))^2}{2\sigma_r^2}}$. We call the first half of the product the *domain kernel* (which is essentially a Gaussian) and the second half the *range kernel* (which depends on location in the image).
 - ReLU. $x$ for all $x > 0$, $0$ otherwise.
 

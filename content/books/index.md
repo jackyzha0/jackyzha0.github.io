@@ -27,6 +27,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **Playing Software** by Miguel Sicart
 * **Designs for the Pluriverse** by Arturo Escobar
 * **New Media Art** by Mark Tribe/Reena Jana
+* **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
 
 ## Current
 - **[[thoughts/A Pattern Language]]** by Christopher Alexander
