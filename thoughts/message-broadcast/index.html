@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.b927cb2bb95f2a9a481d09ff1f7ccfd7.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4c2d0f8ae3e2b7db5770dad5d1f49cd3.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.88c726958fa7504ab062251d612e67bf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.322172174f1b612cbb0a993c10d08835.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -371,6 +371,8 @@ May 5, 2022
   
   
 
+  
+  
 
 
 
@@ -378,6 +380,50 @@ May 5, 2022
 
 
 
+
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
   
   
@@ -674,6 +720,25 @@ May 5, 2022
 <li>At-most-once: send request, don&rsquo;t retry, update may not happen</li>
 <li>At-least-once: retry request until acknowledged, may repeat update</li>
 <li>Exactly-once: retry + <a href="/thoughts/idempotence" rel="noopener" class="internal-link" data-src="/thoughts/idempotence">idempotence</a> / deduplication</li>
+</ul>
+<a href="#gossip"><h2 id="gossip"><span class="hanchor" ariaLabel="Anchor"># </span>Gossip</h2></a>
+<p>When we receive a message from a client, we want all the other servers to know about that message eventually.</p>
+<p>The naive solution is to just send the message to all your peers. However, this doesn&rsquo;t scale super well as the number of nodes $n$ goes up.</p>
+<p>Normally, each node tracks its topology (or local neighbourhood). This is either calculated dynamically or given on initialization.</p>
+<p>Then, we broadcast to only our peers (as defined by the topology). Then, through <a href="/thoughts/transitive-closure" rel="noopener" class="internal-link" data-src="/thoughts/transitive-closure">transitive closures</a>, the message will make its way to every node if all nodes form a connected subgraph</p>
+<p>Two approaches</p>
+<ul>
+<li>Sync: <em>immediately</em> send updates to peers
+<ul>
+<li>May clog network if updates are frequent</li>
+</ul>
+</li>
+<li>Async: every now and then send updates to peers (I have these values, what values do you have?)
+<ul>
+<li>May take a long time for messages to traverse the network if the path between nodes is long and latency is a non-negligible factor</li>
+<li>Can be done using a Bloom filter</li>
+</ul>
+</li>
 </ul>
 
 
