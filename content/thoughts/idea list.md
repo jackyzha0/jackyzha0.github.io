@@ -193,6 +193,8 @@ tags:
 - Poetry
 	- We like sunset because it's the only time we see the cosmos move
 - Essays
+	- Why Minecraft
+		- https://minecraft.fandom.com/wiki/End_Poem#End_quote
 	- Analog software: software by analogy and by atomic building blocks that interface with each other
 		- We should be able to directly manipulate them, like files, rather than only indirectly work with them, like layer activations in a neural network.
 		- Software representations for similar ideas should be obviously similar in some way – they should click together, or look similar, or feel similar to the touch.

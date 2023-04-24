@@ -6,6 +6,10 @@ tags:
 - PHIL451A
 ---
 
+> Death is thus separation from everything that gives our life form. It is the loss of everything that we hold dear... the finality of it, is harrowing
+> 
+> - *The Universal Fear of Death and the Cultural Response*
+
 Conceptions of death in [The Upanisads](thoughts/The%20Upanisads.md) and [Epicurueanism](thoughts/Epicurueanism.md)
 
 ## Death in contemporary terms[^1]
