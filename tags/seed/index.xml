@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Law of Requisite Variety</title>
+      <link>https://jzhao.xyz/thoughts/Law-of-Requisite-Variety/</link>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Law-of-Requisite-Variety/</guid>
+      <description>Ashby’s Law of Requisite Variety: If a system is to be stable, the number of states of its control mechanism must be greater than or equal to the number of states in the system being controlled.</description>
+    </item>
+    
+    <item>
+      <title>Gossip</title>
+      <link>https://jzhao.xyz/thoughts/gossip/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/gossip/</guid>
+      <description>Use random selection of nodes to pass on information to ensure it reaches all the nodes in the cluster without flooding the network</description>
+    </item>
+    
+    <item>
       <title>Noise</title>
       <link>https://jzhao.xyz/thoughts/noise/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
@@ -2347,8 +2365,8 @@ Essentially a [[thoughts/decentralized marketplace|decentralized marketplace]] (
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Bluesky/</guid>
-      <description>ADX From ARCHITECTURE.md
-Bluesky is building a protocol for large-scale distributed social applications, and in doing so released ADX (Authenticated Data eXperiment)</description>
+      <description>ATProtocol  Source
+Identity Users are identified by domain names in AT Protocol. ATProto uses a form of domain verification similar to _dnslink which involves adding a TXT record through your [[thoughts/DNS]] registrar that looks like</description>
     </item>
     
     <item>

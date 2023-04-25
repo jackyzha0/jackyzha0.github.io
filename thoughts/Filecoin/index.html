@@ -159,13 +159,13 @@ Essentially a [[thoughts/decentralized marketplace|decentralized marketplace]] (
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4c2d0f8ae3e2b7db5770dad5d1f49cd3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.92b7302450e9817963737687fe731fc5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.322172174f1b612cbb0a993c10d08835.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.53c47fe86eb6e750eb94906bd0cce146.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -567,6 +567,53 @@ Jun 23, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -622,7 +669,7 @@ Jun 23, 2022
 </ol>
 <p>The sectors a miner has pledged to store, the more the partitions of sectors that the miner will need to prove per deadline. This requires ready access to sealed copies of each of the challenged sectors and makes it irrational for the miner to seal data every time they need to provide a WindowPoSt proof. If this proof is not completed in time, the storage miner supplying that sector in the proof has their collateral slashed and storage power reduced.</p>
 <a href="#gossippub"><h3 id="gossippub"><span class="hanchor" ariaLabel="Anchor"># </span>GossipPub</h3></a>
-<p>GossipSub is a gossip-based pubsub protocol that is utilising two types of links to propagate messages:</p>
+<p>GossipSub is a <a href="/thoughts/gossip" rel="noopener" class="internal-link" data-src="/thoughts/gossip">gossip</a>-based pubsub protocol that is utilising two types of links to propagate messages:</p>
 <ol>
 <li>
 <p><em>mesh links</em> that carry full messages in an <em>eager-push</em> (i.e., proactive send) manner and</p>

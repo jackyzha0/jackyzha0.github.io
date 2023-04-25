@@ -156,13 +156,13 @@ DNS currently has ~300 million DNS registrations." />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4c2d0f8ae3e2b7db5770dad5d1f49cd3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.92b7302450e9817963737687fe731fc5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.322172174f1b612cbb0a993c10d08835.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.53c47fe86eb6e750eb94906bd0cce146.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -655,6 +655,10 @@ Types:</p>
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/agentic-computing/" data-ctx="DNS" data-src="/posts/agentic-computing" class="internal-link">Agentic Computing</a>
       </li>
@@ -663,6 +667,12 @@ Types:</p>
       
       <li>
         <a href="/thoughts/Arweave/" data-ctx="thoughts/DNS" data-src="/thoughts/Arweave" class="internal-link">Arweave</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Bluesky/" data-ctx="thoughts/DNS" data-src="/thoughts/Bluesky" class="internal-link">Bluesky</a>
       </li>
       
       

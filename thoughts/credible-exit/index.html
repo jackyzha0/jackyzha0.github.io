@@ -156,13 +156,13 @@ Exit, Voice, and Loyalty There are two agents." />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4c2d0f8ae3e2b7db5770dad5d1f49cd3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.92b7302450e9817963737687fe731fc5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.322172174f1b612cbb0a993c10d08835.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.53c47fe86eb6e750eb94906bd0cce146.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -530,8 +530,18 @@ Aug 2, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/open-source-and-politics/" data-ctx="Mobility" data-src="/posts/open-source-and-politics" class="internal-link">Open Source and Politics</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/Bluesky/" data-ctx="thoughts/credible exit" data-src="/thoughts/Bluesky" class="internal-link">Bluesky</a>
       </li>
       
       

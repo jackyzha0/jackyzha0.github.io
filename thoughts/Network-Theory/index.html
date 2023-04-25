@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.4c2d0f8ae3e2b7db5770dad5d1f49cd3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.92b7302450e9817963737687fe731fc5.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.322172174f1b612cbb0a993c10d08835.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.53c47fe86eb6e750eb94906bd0cce146.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1013,6 +1013,10 @@ const &amp; \gamma = 2 \\ \ln \ln N &amp; 2 &lt; \gamma &lt; 3 \\ \frac{\ln N}{\
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/A-Certain-Tendency-Of-The-Database-Community/" data-ctx="scale-free" data-src="/thoughts/A-Certain-Tendency-Of-The-Database-Community" class="internal-link">A Certain Tendency Of The Database Community</a>
       </li>
@@ -1033,6 +1037,12 @@ const &amp; \gamma = 2 \\ \ln \ln N &amp; 2 &lt; \gamma &lt; 3 \\ \frac{\ln N}{\
       
       <li>
         <a href="/thoughts/fault-tolerance/" data-ctx="Network theory" data-src="/thoughts/fault-tolerance" class="internal-link">Fault Tolerance</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/gossip/" data-ctx="thoughts/Network Theory" data-src="/thoughts/gossip" class="internal-link">Gossip</a>
       </li>
       
       
