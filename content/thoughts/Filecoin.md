@@ -50,7 +50,7 @@ Two components
 The sectors a miner has pledged to store, the more the partitions of sectors that the miner will need to prove per deadline. This requires ready access to sealed copies of each of the challenged sectors and makes it irrational for the miner to seal data every time they need to provide a WindowPoSt proof. If this proof is not completed in time, the storage miner supplying that sector in the proof has their collateral slashed and storage power reduced.
 
 ### GossipPub
-GossipSub is a gossip-based pubsub protocol that is utilising two types of links to propagate messages:
+GossipSub is a [[thoughts/gossip|gossip]]-based pubsub protocol that is utilising two types of links to propagate messages:
 1. _mesh links_ that carry full messages in an _eager-push_ (i.e., proactive send) manner and
 2. _gossip-links_ that carry message identifiers only and realise a _lazy-pull_ (i.e., reactive request) propagation model.
 	

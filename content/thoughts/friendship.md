@@ -59,3 +59,8 @@ Doxastic voluntarism: we can make ourselves belief a proposition
 		2. Belief Itself Condition: holding the belief is what wrongs (not how the belief was formed or the actions that follow from the belief)
 		3. Content Condition: content of the belief wrongs
 	- Lovers stand in a privileged position -- they know things not usually shared with other people. This position makes them especially vulnerable to doxastic wronging
+
+## On failures
+[Source](https://web.archive.org/web/20220413143253/https://www.theatlantic.com/family/archive/2022/04/marriage-problems-fight-dishes/629526/)
+
+If I had to distill the problems in failed relationships down to one idea, it would be our colossal failure to make the invisible visible, our failure to invest time and effort into developing awareness of what we otherwise might not notice in the busyness of daily life.

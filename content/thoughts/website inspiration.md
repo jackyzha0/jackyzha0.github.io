@@ -23,6 +23,7 @@ tags:
 - https://www.epic.net/
 - https://kernel-mag.vercel.app/post/take-back-the-future
 - https://rauno.me/
+	- https://rauno.me/craft/nextjs
 - https://www.thesolarmonk.com/posts/a-spacebar-for-the-web
 - https://linear.app/change
 - https://retool.com/visual-basic/

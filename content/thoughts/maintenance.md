@@ -6,6 +6,8 @@ tags:
 - pattern
 ---
 
+> We (re)build our computer systems the way we (re)build our cities: over time, without a plan, on top of ruins (Ellen Ullman)
+
 Maintenance: the gritty upkeep work that keeps the [infrastructure](thoughts/infrastructure.md) of the world running.
 
 One of my favourite examples is the [constant rebuilding of the Ise Grand Shrine](https://en.wikipedia.org/wiki/Ise_Grand_Shrine). Retaining knowledge through constant revision
