@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Kafka</title>
+      <link>https://jzhao.xyz/thoughts/Kafka/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Kafka/</guid>
+      <description>Apache Kafka is a publish–subscribe based messaging system over [[thoughts/TCP]]. In event streaming, an event (also called a message or record) is simply a record of a state change in the system.</description>
+    </item>
+    
+    <item>
+      <title>Sleep</title>
+      <link>https://jzhao.xyz/thoughts/sleep/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/sleep/</guid>
+      <description>&amp;ldquo;We tend to wear our ability to get by on little sleep as some sort of badge of honor that validates our work ethic.</description>
+    </item>
+    
+    <item>
       <title>Law of Requisite Variety</title>
       <link>https://jzhao.xyz/thoughts/Law-of-Requisite-Variety/</link>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
@@ -69,7 +87,7 @@ We design compilers by starting from a fixed abstraction boundary (the existing 
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/time/</guid>
-      <description>The main insight from Einstein&amp;rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]]).</description>
+      <description>&amp;ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree.</description>
     </item>
     
     <item>

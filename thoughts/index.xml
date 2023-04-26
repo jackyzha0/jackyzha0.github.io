@@ -6,7 +6,25 @@
     <description>Recent content in Thoughts on jzhao.xyz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jzhao.xyz/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kafka</title>
+      <link>https://jzhao.xyz/thoughts/Kafka/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Kafka/</guid>
+      <description>Apache Kafka is a publish–subscribe based messaging system over [[thoughts/TCP]]. In event streaming, an event (also called a message or record) is simply a record of a state change in the system.</description>
+    </item>
+    
+    <item>
+      <title>Sleep</title>
+      <link>https://jzhao.xyz/thoughts/sleep/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/sleep/</guid>
+      <description>&amp;ldquo;We tend to wear our ability to get by on little sleep as some sort of badge of honor that validates our work ethic.</description>
+    </item>
+    
     <item>
       <title>Law of Requisite Variety</title>
       <link>https://jzhao.xyz/thoughts/Law-of-Requisite-Variety/</link>
@@ -70,7 +88,7 @@ We design compilers by starting from a fixed abstraction boundary (the existing 
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/time/</guid>
-      <description>The main insight from Einstein&amp;rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]]).</description>
+      <description>&amp;ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree.</description>
     </item>
     
     <item>
@@ -648,7 +666,7 @@ Technical Dimensions of Programming Systems  Source
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/website-inspiration/</guid>
-      <description>Fun interactions   https://victoiredouy.com/about  http://www.narrowdesign.com/  https://thebrowser.company/  http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  https://www.</description>
+      <description>Fun interactions   http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  https://www.samanthahunt.net/  https://oimo.io/works  https://ezekielaquino.com/  https://www.</description>
     </item>
     
     <item>

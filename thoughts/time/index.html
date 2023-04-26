@@ -8,17 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="The main insight from Einstein&rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]])."
+    content="&ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree."
   />
   <meta property="og:title" content="Time">
-  <meta property="og:description" content="The main insight from Einstein&rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]]).">
+  <meta property="og:description" content="&ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/time/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Time" />
-  <meta name="twitter:description" content="The main insight from Einstein&rsquo;s special relativity is that time is relative. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]])." />
+  <meta name="twitter:description" content="&ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.92b7302450e9817963737687fe731fc5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1c7d5258d62857c3754074da8be2fe6c.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.ae99e3a902b4263fa92d34c73a62a4e5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d576c5f56d2cb4ca552d4f2b68b91438.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -731,6 +731,10 @@ Apr 15, 2023
 
 
 
+<blockquote>
+<p>&ldquo;Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree. We are comprised also of every person we were in the years leading up to today, even if those layers have compressed into the past.&rdquo; 
+<a href="https://katiewav.substack.com/p/a-personal-syllabus-2022" rel="noopener">Source</a></p>
+</blockquote>
 <p>The main insight from Einstein&rsquo;s special relativity is that <em>time is relative</em>. And as such, points in space-time are not totally ordered but rather partially ordered (see: <a href="/thoughts/Order-theory" rel="noopener" class="internal-link" data-src="/thoughts/Order-theory">Order theory</a>).</p>
 <p>Two observers of the same event might perceive it to have occurred at different times, depending on their relative motion. Or, in distributed systems land, two nodes may receive the same messages in different ordering, depending on network conditions.</p>
 <p>How do your order the events in the Universe? The answer, as Lamport noted, is you order events in terms of messages that could be sent between them.</p>
