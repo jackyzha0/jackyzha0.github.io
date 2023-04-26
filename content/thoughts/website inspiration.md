@@ -6,17 +6,17 @@ tags:
 ---
 
 ## Fun interactions
-- https://victoiredouy.com/about
-- http://www.narrowdesign.com/
-- https://thebrowser.company/
 - http://lynnecarty.info/
 - https://www.boboland.xyz/
 - https://lfe.org/
 - good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
 - https://tomasp.net/techdims
 - https://www.samanthahunt.net/
-- https://visakanv.com/wp-content/uploads/2019/06/memex.pdf
 - https://oimo.io/works
+- https://ezekielaquino.com/
+- https://www.helloshivam.com/
+- https://thesevenvirtuesproject.com/
+- https://www.son-la.co/
 
 ## Aesthetics
 - https://shapefarm.net/
@@ -27,8 +27,20 @@ tags:
 - https://www.thesolarmonk.com/posts/a-spacebar-for-the-web
 - https://linear.app/change
 - https://retool.com/visual-basic/
+- https://oxide.computer/
+- clean
+	- https://sholis.com/
+	- https://paco.me/
+- https://neuralink.com/
+- https://negative.sanctuary.computer/
+- http://dajistudio.com/
+- https://ertdfgcvb.xyz/
+- https://www.mergrim.net/en/
 
-## Conceptual
+## Poetic/Conceptual
+- https://thecreativeindependent.com/welcome/
+- https://sashaportis.com/
+- https://www.briewolfson.com/
 - http://feral.earth/
 - https://elliott.computer/
 - https://chia.design/

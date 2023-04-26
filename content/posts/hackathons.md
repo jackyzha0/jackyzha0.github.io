@@ -82,7 +82,7 @@ But this playful front is not exactly as it seems. A [2017 study](https://busine
 ### Exhaustion is Effervescent
 > "There are way easier places to work, but nobody ever changed the world on 40 hours a week" -- [Elon Musk](https://twitter.com/elonmusk/status/1067173497909141504)
 
-100 hour work weeks and 'hustle culture' are becoming increasingly normalized by tech moguls like Elon Musk. Being constantly tired is somewhat of a [status icon](https://www.youtube.com/watch?v=_o7qjN3KF8U) as individuals boast about how little sleep they got.
+100 hour work weeks and 'hustle culture' are becoming increasingly normalized by tech moguls like Elon Musk. Being constantly tired is somewhat of a [status icon](https://www.youtube.com/watch?v=_o7qjN3KF8U) as individuals boast about how little [[thoughts/sleep|sleep]] they got.
 
 It has been disturbingly normalized and even celebrated that [exhaustion is a sign of strength](thoughts/pain.md). Among a [global sleep-loss pandemic](https://www.theguardian.com/business-to-business/2017/dec/04/clocking-off-the-companies-introducing-nap-time-to-the-workplace), events like hackathons which push for attendees to stay up for lengths of 24 to 36 hours are particularly worrisome.
 

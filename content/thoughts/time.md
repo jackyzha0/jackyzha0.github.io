@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> "Time is not linear, but a series of concentric circles, like the rings of a tree. Ourselves today, our newest selves, are the outermost rings of a tree. We are comprised also of every person we were in the years leading up to today, even if those layers have compressed into the past." [Source](https://katiewav.substack.com/p/a-personal-syllabus-2022)
+
 The main insight from Einstein's special relativity is that *time is relative*. And as such, points in space-time are not totally ordered but rather partially ordered (see: [[thoughts/Order theory]]).
 
 Two observers of the same event might perceive it to have occurred at different times, depending on their relative motion. Or, in distributed systems land, two nodes may receive the same messages in different ordering, depending on network conditions.
