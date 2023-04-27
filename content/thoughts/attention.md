@@ -20,3 +20,8 @@ See also [[thoughts/attention economy]]
 Heraclitus said, "No man steps in the same river twice." The second time around, both man and river are different than they were before. The paints and books are the same, but we change between reads and brushstrokes. Deep attention allows us to observe these changes not just as a snapshot but through [[thoughts/time|time]].
 
 See also: [[thoughts/friendship]]
+
+## Holding (and scrolling) attention
+- https://www.nytimes.com/interactive/2022/03/06/books/auden-musee-des-beaux-arts.html
+- https://www.nytimes.com/interactive/2022/01/16/arts/design/jasper-johns-memory-of-my-feelings.html
+

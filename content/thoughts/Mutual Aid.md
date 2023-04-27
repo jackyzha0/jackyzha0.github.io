@@ -1,8 +1,10 @@
 ---
-title: "Mutual Aid"
+title: "Mutual aid"
 date: 2022-03-23
 tags:
 - seed
+aliases:
+- mutualistic
 ---
 
 The puzzle: A Darwinian explanation can only account for behaviour that promotes the survival and reproductive success of the individual organism. How do we account for altruism and cooperation given this constraint?

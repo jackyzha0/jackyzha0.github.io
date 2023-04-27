@@ -28,3 +28,13 @@ Examples include [[thoughts/BitTorrent|BitTorrent]], [[thoughts/blockchain|block
 	- "For example, instead of an application getting a list of every single post in a database and filtering based on the 'tags', they can say `Get me the first 32 posts with the tag #cats` and the database engine will figure out how to do that for them."
 	- This can heavily optimize reads for client applications
 - Mauve suggests that we can actually solve these using [[thoughts/Prolly Trees]]
+
+## Values
+[Source](https://laurelschwulst.github.io/p2pforever.org/)
+
+1. **We should improve and preserve the Web.** The Web is a genuine social accomplishment and we should look after it. Don’t let lesser platforms win out.
+2. **Devops is oppressive!** Many people can’t publish websites or apps because they can’t run servers. Publishing should be accessible to all.
+3. **“View source” is critical to an open Web.** The more code that users can read, the more code they can review and learn from.
+4. **“Modify source” is the p2p Web’s great power.** A Web that can be made and remade by its people can better serve their needs and produce a more diverse & exciting world. The Web should be a truly “live” society.
+5. **Minimize change, maximize impact.** The p2p Web should still be the Web. Make it better, don’t remake it.
+6.  **Don't forget resilience.** A web based on protocols, not platforms, is a safe web. Don't put data in silos but have various platforms use the same protocols to interact.

@@ -27,3 +27,12 @@ How can we create [digital mindfulness](thoughts/digital%20mindfulness.md) in co
 From J.R. Carpenter's [*A Handmade Web*](http://luckysoap.com/statements/handmadeweb.html)
 
 > I evoke the term 'handmade web' to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or [[thoughts/identity|identity]].
+
+## The Small Web
+[Source](https://neustadt.fr/essays/the-small-web/)
+
+**In the 1990s, browser design took nearly the opposite approach, using iconography associated with travel to convey the feeling of going on a journey.** Netscape Navigator, which used a ship's helm as its logo, made a very direct link with the nautical origins of the prefix cyber-, while Internet Explorer’s logo promised to take the user around the whole globe.
+
+> A painter wouldn’t add more red to her painting or change the composition because market data showed that people liked it better. It’s her creative vision; some people might like it, others might not. But it is her creation, with her own rules. The question of "performance" is simply irrelevant. It's the same thing with the small web.
+
+If the commercial web is "industrial", you could say that the small web is "artisanal". One is not better than the other. They serve different needs and both can co-exist in an open web.

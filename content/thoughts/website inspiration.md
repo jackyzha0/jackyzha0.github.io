@@ -21,6 +21,7 @@ tags:
 - https://ralphammer.com/: lovely and cute little animations next to each blog post
 - http://pressanykey.today/: draws a stroke between what keys you press on your keyboard
 - https://tatianabilbao.com/: drawing/illustration as map/navbar
+- http://luckysoap.com/andbyislands/: just a big map
 
 ## Aesthetics
 - https://shapefarm.net/: clean integration of animation and 3D and reactive cursor

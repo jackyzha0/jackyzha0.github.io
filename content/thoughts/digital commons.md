@@ -102,3 +102,16 @@ Spaces for one-to-one interaction.
 * Letters and Mail -> Completely asyncronous text based communication
 * Messages -> Instantaneous text or audio based communication with a history log. No immediate urgency to reply
 * Calling -> Audio/video based live communication
+
+## Field Guide to Digital and/as Public Space
+[Source](https://www.thebentway.ca/wp-content/uploads/2021/11/fieldguide-for-web-2.pdf)
+
+Public spaces are virtual and augmented realities. They are filled with marks of inhabitation and habit, desire and unfinished stories. The challenge in digital public spaces is that such traces are not always easy to leave or feel. When, for instance, you visit a website, rarely does anything about your visit change the site. Your presence doesn’t leave a mark, the way walking on grass does. A website registers an impression of your visit, but there’s nothing inherently virtual about that. How do we make our desires felt in digital spaces?
+
+The publicness that is created in online spaces is still a relation between actual offline bodies. What’s actually happening in an encounter in a virtual world? Two offline bodies are using flickers of light travelling across wires of sand and metal to make each other’s bodies feel and perceive things. One thing that digital networks have done to public spaces is to intensify the capacity of distant relations to affect local spaces.
+
+> There is always only IRL - transformed, layered, and intensified by digital techniques
+
+(All digital publics as [[thoughts/Overlay Network|overlay networks]] onto IRL networks?)
+
+In architecture, adaptive reuse is about repurposing old sites to new functions. Factories get converted to lofts, industrial districts to cultural zones, shipping containers to ghost kitchens, or the underneath of expressways to public spaces. What does adaptive reuse look like for digital spaces? How can we make the aesthetic of repurposed but worn spaces appealing for the digital? What is the brownstone of software?
