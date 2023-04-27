@@ -6,6 +6,7 @@ tags:
 - PHIL451A
 ---
 
+## A formal definition
 1. Me (self-as-object)
 	1. Some feature is the object of my awareness
 	2. I recognize this feature as mine or ascribe it to myself
@@ -19,14 +20,3 @@ Valid in dreams, but also [games](thoughts/games.md)?
 - Autoscopic Hallucination: you see a double of yourself but do not feel like you have ownership or agnecy over it
 - Heautoscopy: visual perspective switches back and forth between yourself and double and you feel ownership of both
 - Out-of-body experience: you identify the body seen from the outside as yours but have no feeling of agency for it. Direct electrical stimulation at the temporoparietal junction induces out-of-body experiences
-
-## Identity
-Essay by Jenny Odell and in [Kopi Chats on Substack](https://kopiclub.substack.com/p/letter-37-loneliness-vs-being-alone)
-
-> _“When I examine my [[thoughts/identity|identity]], I do see an inalienable spirit grasping for infinity. But in the very same place, I also see an intersection of historical and cultural vectors, held up by **a web of countless reliances**.”_
-
-Reminds me of Indra's Net, that everything is [interdependent](thoughts/interdependence.md), [empty](thoughts/emptiness.md) of dependent origination.
-
-"Connective vulnerability is so frightening because sometimes we will be let down by others, unmoored from [friendships](thoughts/friendship.md) and relationships we thought were our anchors in life. But that doesn’t mean we shouldn’t try. (see: [nothing-stops](posts/nothing-stops.md))"
-
-[^1]: This content is sourced from Professor [Evan Thompson](https://evanthompson.me/)'s course materials for PHIL451A at UBC. All rights to this content is retained by Evan Thompson.

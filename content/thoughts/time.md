@@ -15,6 +15,48 @@ How do your order the events in the Universe? The answer, as Lamport noted, is y
 
 See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/causality]], [[thoughts/clocks]]
 
+## Saving Time, Discovering a Life Beyond the Clock
+[Source](https://www.youtube.com/watch?app=desktop&v=1x0IOcFp94s)
+
+- Industrial Time
+	- Time as money (equal interchangeable hours)
+	- Emerged from the need to measure others' labour
+	- The colonisation of time (Giordano Nanni)
+		- Conflict between British colonial sense of time and the existing understanding of time of people living in colonized places
+		- Taylorism and factory labour (measuring and systematizing work to make it go faster)
+		- This is not much different than the working class today (e.g. Amazon warehouse workers scanner gun, UPS truck with GPS sensors, etc.)
+- Unfungible time: pick a point in space and time and just keep watch. A branch, a yard, a webcam. A story is being written there
+	- To consider something as inhabiting time with you is to consider that it has experience
+	- Lesser minds problem: human tendency to see non-human or even [[thoughts/in-group bias|outgroups]] as not as complex as our own
+		- By simply asking whether they would like a certain vegetable, those neural regions became active
+		- The question presumes a person with preferences and desires. Desires and attitudes toward the future only exist in time: the time inhabited by that person
+	- It is a deeply political question about who does and does not inhabit time
+- Time gardening
+	- I had a friend who always was giving away bags of cabbage to people. Apparently you are supposed to get rid of the outside leaves of the cabbage so the inside leaves of the cabbage can grow to maturity
+	- Not everything is transactional. "I've sort of forgotten that a lettuce keeps growing, assuming that more lettuce leaves for me mean less lettuce leaves for her"
+	- Chronodiversity: a garden invites the human subject into conversations with different modes and speeds of life
+	- "Time is not money, time is beans"
+		- Beans are not just commodities. Sure, you could eat them, but they weren't end points and they weren't dead. At least some of them contained something: the possibility of future beans.
+	- Sometimes the best way for me to get time is to give it to you
+- Difference between someone who *truly* has no time versus one who *feels* like they have no time
+	- The latter are people whose problems would be solved by going to a cabin with no reception (people who have internalized 'business is good')
+	- For someone who structurally does not have control over their own time, the answer does not lie in using their own time better
+- On capturing time: "Time is slipping through your fingers and you want to grab onto that. What could be more human than that?"
+- "Like me, they have aged"
+
+![[thoughts/images/chronology.png]]
+
+## Fools and their time metaphors
+[Source](https://aaronzlewis.com/blog/2019/02/11/fools-and-their-time-metaphors/)
+
+Gcal has turned private calendars into a shared commons. Anyone can easily pull up your schedule, and the blankness-by-default is an open invitation to take away your time. (My mom was particularly surprised to learn that tech workers often don’t use their words to set up meetings. They just “throw time” on the calendar and wait for an RSVP.)
+
+Digital calendars _misrepresent_ the default state of your time. It’s far from empty. You’re working, thinking, talking, problem-solving, Being. Blankness shouldn’t be an invitation to interrupt. It’s yours, it’s sacred!
+
+The UX is _additive,_ rather than _reductive_. We’re always “putting time on” calendars, never “taking it off.”
+
+Some particularly desperate people would invent fake events and strategically place them throughout the day, making it difficult for would-be time thieves to find enough “empty” time. These protective mechanisms are band-aids. They’re what designers call [[thoughts/desire paths]]
+
 ## Virtual Time
 [Virtual Time](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.134.6637&rep=rep1&type=pdf) (Jefferson, 1985)
 

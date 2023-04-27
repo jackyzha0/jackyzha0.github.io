@@ -18,3 +18,6 @@ LGBT community – exploring gender identity. Super easy to express this online,
 We can explore things and get fully immersed in a virtual world safely
 
 Is the concept of [utopia](thoughts/The%20ones%20who%20walk%20away%20from%20Omelas.md) only a reality for those who can afford to not worry about physiological health? Maslow's hierarchy of needs
+
+## Proteus Effect
+The Proteus effect describes a phenomenon in which the behavior of an individual, within virtual worlds, is changed by the characteristics of their avatar.

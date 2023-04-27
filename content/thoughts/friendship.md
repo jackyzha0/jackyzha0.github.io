@@ -17,6 +17,9 @@ adrienne maree brown described relationships like a spiderweb—diaphanous yet s
 
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)
 
+## Unknown unknowns
+Friends shouldn't tell you exactly how to live your life but rather to help you reflect back parts of your self that you may not be aware of.
+
 ## Friends > Communities
 [Source: friends > communities, *Sari Azout*](https://sariazout.substack.com/p/58-friends-communities)
 

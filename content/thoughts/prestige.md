@@ -9,7 +9,7 @@ tags:
  
  Is this why so many people want to join 'prestigious' places to work like big tech or consulting? [[thoughts/optionality|To keep doors open]]?
  
- For lack of a better explanation, a big part of it feels like the go-to cop-out for individuals *unsure* of their larger life direction. Or maybe just lacking general conviction/self-confidence in themselves.
+ For lack of a better explanation, a big part of it feels like the go-to cop-out for individuals *unsure* of their larger life direction. Or maybe just lacking general conviction/[[thoughts/self-confidence|self-confidence]] in themselves.
  
  Prestige, as Paul Graham defines it, is just fossilized inspiration. It's what was once new and successful and thus *became* prestigious. "If you do anything well enough, you'll _make_ it prestigious."
  

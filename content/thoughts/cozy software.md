@@ -53,9 +53,7 @@ Universalization erases difference and produces self-reinforcing spirals of excl
 
 We should destabilize the underlying assumption that what is best for the majority of users is best for *all* users.
 
-## Fun Sites
-Digital placemaking
-
-- [p2p sunsets](https://old.mark-beasley.com/peer-peer-sunset/index.html)
-- [animated digital sunset](https://tiffanyq.github.io/sunrise/)
-- [Little towns of people's plots :))](https://tilde.town/~troido/cadastre/town.html)
+## Bicycles for the mind
+- We were promised bicycles but instead we got aircraft carriers
+- Bicycles: personal, light, moddable
+- Aircraft carriers: industrial, heavy, manufactured

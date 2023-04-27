@@ -46,3 +46,8 @@ See also: [[thoughts/cozy software|personal software]]
 
 > **I think it’s likely that soon all computer users will have the ability to develop small software tools from scratch, and to describe modifications they’d like made to software they’re already using**
 
+[Geoffrey Litt's talk at Causal Islands](https://youtu.be/b0EcpqX2Wq0?t=12645)
+- Showed off a really interesting demo which integrated LLMs into [Potluck](https://www.inkandswitch.com/potluck/), allowing a bidirectional binding between a natural language description of a pattern/search and the actual code behind it
+	- This also helps with learnability. Using the AI helps you understand the underlying system by seeing how the LLM translates the concepts into code
+- Questions to keep asking: how do we recover from a state where the LLM produces a wrong result but is confident in its answer?
+	- How might we nudge LLMs to produce more correct answers under human feedback in a *non-text* environment?

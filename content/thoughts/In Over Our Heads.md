@@ -4,6 +4,8 @@ date: 2022-03-07
 tags:
 - seed
 - book
+aliases:
+- In Over Our Heads: The Mental Demands of Modern Life
 ---
 
 In Over Our Heads is about the societal expectations of higher orders of consciousness that most of us do not have. 
@@ -32,6 +34,8 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 - it means seeing the other person for who they really are. Emotions are just something people have, from time to time. Those need to be dealt with, but should not be taken too seriously. Relating to the other person’s principles, projects, and commitments means supporting what they most care about in the longer run
 
 ### Stage 5: Fluid
+> We do not have one fixed "self" we can simply "be"
+
 - systems are relativized. They move from subject to object, and are subordinated to, and organized by, the process of meaning-making itself
 - you are no longer defined as a system of principles, projects, and commitments. You have several such systems, “multiple selves,” none of them entirely coherent, and which have different values—and this is no longer a problem, because you respect all of them
 - there is sometimes an uncomfortable middle between systematic (stage 4) and fluid (stage 5) stages often referred to as stage 4.5 where nihilism and postmodernism commonly emerges. Understanding that there is no ultimate meaning, one comes to the wrong conclusion that there are no meanings at all
@@ -58,7 +62,7 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 	- This is very much a metaphor for many familial relationships (especially in Asian-Canadian/Asian-American families) in which family is incredibly overprotective of their children, despite the pleas of the children to have their own independence and to not be constantly told of what to do (I am guilty of this as well)
 	- Here it is noteworthy that suggested way of navigating this relationship is one that puts you the *relation* between you and the parents as an object rather than the subject -- to realize that you no longer are in relationships that define you; you *have* relationships (A stage 3 to stage 4 development)
 
-## On [the Self](thoughts/the%20Self.md) and being whole
+## On [[thoughts/self-confidence]] and being whole
 
 > Wholesomeness not in the aesthetic sense but as in the wholeness of the self
 

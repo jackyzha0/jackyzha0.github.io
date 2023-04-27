@@ -37,7 +37,7 @@ Do you think identities can change with [[thoughts/time|time]]?
 
 *Yes. I don't think truth is absolute -- I think truth is a function of identity and identity itself is a function of [[thoughts/time|time]]. Maybe, at this slice in time, certain axioms hold true about the universe. A few hours, years, millennia might pass and those truths might be different. Our different selves can choose between different systems of meaning and sense as our basic axioms.*
 
-I think my sense of self is undergoing a shift. It feels very liquid right now. One supposedly is supposed to 'live in the present' to enjoy the tea[^2], but I can't help but feel... scattered. I feel like I am trying to live too many lives at once and I feel the very fabric of my being being tugged at the seams. 
+I think my [[thoughts/self-confidence|sense of self]] is undergoing a shift. It feels very liquid right now. One supposedly is supposed to 'live in the present' to enjoy the tea[^2], but I can't help but feel... scattered. I feel like I am trying to live too many lives at once and I feel the very fabric of my being being tugged at the seams. 
 
 *I think empathy is a means of time dilation. For one to slow down or speed up their rate of life to match another. Of course, to constantly time travel to bridge the worlds of slow and fast is incredibly tiring. You must be very worn.*
 

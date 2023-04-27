@@ -6,9 +6,11 @@ tags:
 - pattern
 ---
 
+> That’s all life is really—a giant sequence of decisions. Life is the expression of taste
+
 ![[thoughts/images/developing taste.png]]
 
-Taste is built over time through repeated applications. It requires intention, focus, and care. Taste is a commitment to a state of [[thoughts/attention|attention]].  It’s a process of peeling back layer after layer, turning over rock after rock.
+Taste is built over time through repeated applications. It requires intention, focus, and care. Taste is a commitment to a state of [[thoughts/attention|attention]].  It’s a process of peeling back layer after layer, turning over rock after rock. It is the manifestation of [[thoughts/self-confidence]] in what we find beautiful.
 
 Curiosity and an inherent observatory nature toward the world serve as constant opportunities to test your taste. The process of cultivating taste is a lot like the writing and editing process. George Saunders on the revision process:
 
@@ -21,5 +23,11 @@ It is this taste that is so important in [[thoughts/independent research]]. With
 > 
 > (Spencer, *[creative seeing](https://spencerchang.substack.com/p/creative-seeing)*)
 
-## On people and communities
-https://anson.substack.com/p/recognizing-sparkly-people-without
+## Failure
+[Source](https://mindmine.substack.com/p/on-self-trust)
+
+As keen as some of us are to do life “right”, sometimes the only way to do it right is to make your own decisions. Try. Fail.
+
+> There’s only one person who bears the responsibility of your life and it’s the same person who shrugs that responsibility off when it feels too heavy
+
+See: [[posts/the-fools-who-dream]]

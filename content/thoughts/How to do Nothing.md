@@ -6,7 +6,7 @@ tags:
 - book
 ---
 
-On the [attention economy](thoughts/attention%20economy.md). Very heavily related to [Grasshopper](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md) and [selfish](thoughts/selfish.md)
+On the [attention economy](thoughts/attention%20economy.md). Very heavily related to [Grasshopper](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md)
 
 > What does it mean to construct digital worlds while the actual world is crumbling before our eyes?
 

@@ -16,6 +16,7 @@ Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts)
 4. Design with the goal of making atomic and reusable libraries (allow for [[thoughts/emergent behaviour]])
 5. Heuristics should only be used where determinism is infeasible
 6. Code courageously. "It's natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right."
+7. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
 
 See also: [[thoughts/programming models]]
 
