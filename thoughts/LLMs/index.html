@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1c7d5258d62857c3754074da8be2fe6c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d576c5f56d2cb4ca552d4f2b68b91438.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -887,6 +887,21 @@ Dec 9, 2022
 <blockquote>
 <p><strong>I think it’s likely that soon all computer users will have the ability to develop small software tools from scratch, and to describe modifications they’d like made to software they’re already using</strong></p>
 </blockquote>
+<p>
+<a href="https://youtu.be/b0EcpqX2Wq0?t=12645" rel="noopener">Geoffrey Litt&rsquo;s talk at Causal Islands</a></p>
+<ul>
+<li>Showed off a really interesting demo which integrated LLMs into 
+<a href="https://www.inkandswitch.com/potluck/" rel="noopener">Potluck</a>, allowing a bidirectional binding between a natural language description of a pattern/search and the actual code behind it
+<ul>
+<li>This also helps with learnability. Using the AI helps you understand the underlying system by seeing how the LLM translates the concepts into code</li>
+</ul>
+</li>
+<li>Questions to keep asking: how do we recover from a state where the LLM produces a wrong result but is confident in its answer?
+<ul>
+<li>How might we nudge LLMs to produce more correct answers under human feedback in a <em>non-text</em> environment?</li>
+</ul>
+</li>
+</ul>
 
 
     </article>

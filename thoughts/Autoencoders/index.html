@@ -159,13 +159,13 @@ Architecture:
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.1c7d5258d62857c3754074da8be2fe6c.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d576c5f56d2cb4ca552d4f2b68b91438.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

@@ -7,12 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Joie de vivre</title>
+      <link>https://jzhao.xyz/thoughts/joie-de-vivre/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/joie-de-vivre/</guid>
+      <description>ok we get it dude u have a jovial light that cant be vanquished ( tweet)
+ A French phrase often used in English to express a cheerful enjoyment of life</description>
+    </item>
+    
+    <item>
       <title>Kafka</title>
       <link>https://jzhao.xyz/thoughts/Kafka/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Kafka/</guid>
       <description>Apache Kafka is a publish–subscribe based messaging system over [[thoughts/TCP]]. In event streaming, an event (also called a message or record) is simply a record of a state change in the system.</description>
+    </item>
+    
+    <item>
+      <title>Self-confidence</title>
+      <link>https://jzhao.xyz/thoughts/self-confidence/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/self-confidence/</guid>
+      <description>We need to have a strong sense of self &amp;ndash; of who you are &amp;ndash; so you can be unaffected by the way others might define you as</description>
     </item>
     
     <item>
@@ -665,7 +684,7 @@ Technical Dimensions of Programming Systems  Source
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/website-inspiration/</guid>
-      <description>Fun interactions   http://lynnecarty.info/  https://www.boboland.xyz/  https://lfe.org/ good sidenotes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland  https://tomasp.net/techdims  https://www.samanthahunt.net/  https://oimo.io/works  https://ezekielaquino.com/  https://www.</description>
+      <description>Fun interactions   http://lynnecarty.info/: blobs! Fun way to visualize overlapping tags in a personal portfolio  https://www.boboland.xyz/: sick use of spatial canvas  https://lfe.</description>
     </item>
     
     <item>
@@ -722,8 +741,9 @@ How do we give the tools to people so learn for themselves? To treat growth as i
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/taste/</guid>
-      <description>![[thoughts/images/developing taste.png]]
-Taste is built over time through repeated applications. It requires intention, focus, and care. Taste is a commitment to a state of [[thoughts/attention|attention]].</description>
+      <description>That’s all life is really—a giant sequence of decisions. Life is the expression of taste
+ ![[thoughts/images/developing taste.png]]
+Taste is built over time through repeated applications.</description>
     </item>
     
     <item>
@@ -3407,7 +3427,7 @@ When a host requires assurance that the remote end has actually received the dat
       <pubDate>Fri, 11 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/the-Self/</guid>
-      <description>Me (self-as-object)  Some feature is the object of my awareness I recognize this feature as mine or ascribe it to myself   I (self-as-subject)  I experience myself as subject of perception/cognition/emotion Body anchored    Valid in dreams, but also games?</description>
+      <description>A formal definition  Me (self-as-object)  Some feature is the object of my awareness I recognize this feature as mine or ascribe it to myself   I (self-as-subject)  I experience myself as subject of perception/cognition/emotion Body anchored    Valid in dreams, but also games?</description>
     </item>
     
     <item>
@@ -4854,7 +4874,7 @@ Why are we more ourselves in small group chats than our posts? Why are we more c
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/How-to-do-Nothing/</guid>
-      <description>On the attention economy. Very heavily related to Grasshopper and selfish
+      <description>On the attention economy. Very heavily related to Grasshopper
  What does it mean to construct digital worlds while the actual world is crumbling before our eyes?</description>
     </item>
     
