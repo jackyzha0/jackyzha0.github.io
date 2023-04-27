@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -698,6 +698,10 @@ Feb 11, 2023
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Link-Layer/" data-ctx="overlay network" data-src="/thoughts/Link-Layer" class="internal-link">Link Layer</a>
       </li>
@@ -706,6 +710,12 @@ Feb 11, 2023
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Overlay Network" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/digital-commons/" data-ctx="overlay networks" data-src="/thoughts/digital-commons" class="internal-link">Digital Commons</a>
       </li>
       
       

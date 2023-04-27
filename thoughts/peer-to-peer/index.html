@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -815,6 +815,17 @@ Mar 30, 2022
 </li>
 <li>Mauve suggests that we can actually solve these using <a href="/thoughts/Prolly-Trees" rel="noopener" class="internal-link" data-src="/thoughts/Prolly-Trees">Prolly Trees</a></li>
 </ul>
+<a href="#values"><h2 id="values"><span class="hanchor" ariaLabel="Anchor"># </span>Values</h2></a>
+<p>
+<a href="https://laurelschwulst.github.io/p2pforever.org/" rel="noopener">Source</a></p>
+<ol>
+<li><strong>We should improve and preserve the Web.</strong> The Web is a genuine social accomplishment and we should look after it. Don’t let lesser platforms win out.</li>
+<li><strong>Devops is oppressive!</strong> Many people can’t publish websites or apps because they can’t run servers. Publishing should be accessible to all.</li>
+<li><strong>“View source” is critical to an open Web.</strong> The more code that users can read, the more code they can review and learn from.</li>
+<li><strong>“Modify source” is the p2p Web’s great power.</strong> A Web that can be made and remade by its people can better serve their needs and produce a more diverse &amp; exciting world. The Web should be a truly “live” society.</li>
+<li><strong>Minimize change, maximize impact.</strong> The p2p Web should still be the Web. Make it better, don’t remake it.</li>
+<li><strong>Don&rsquo;t forget resilience.</strong> A web based on protocols, not platforms, is a safe web. Don&rsquo;t put data in silos but have various platforms use the same protocols to interact.</li>
+</ol>
 
 
     </article>

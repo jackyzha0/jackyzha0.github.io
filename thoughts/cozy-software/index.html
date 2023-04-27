@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -724,6 +724,10 @@ Feb 20, 2022
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/agentic-computing/" data-ctx="a home cook" data-src="/posts/agentic-computing" class="internal-link">Agentic Computing</a>
       </li>
@@ -767,12 +771,6 @@ Feb 20, 2022
       
       
       <li>
-        <a href="/thoughts/identity/" data-ctx="cozy software" data-src="/thoughts/identity" class="internal-link">Identity</a>
-      </li>
-      
-      
-      
-      <li>
         <a href="/thoughts/organizing-system/" data-ctx="personal software" data-src="/thoughts/organizing-system" class="internal-link">Organizing Systems</a>
       </li>
       
@@ -780,6 +778,12 @@ Feb 20, 2022
       
       <li>
         <a href="/thoughts/small-technology/" data-ctx="thoughts/cozy software" data-src="/thoughts/small-technology" class="internal-link">Small Technology</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/websites-as-homes/" data-ctx="cozy software" data-src="/thoughts/websites-as-homes" class="internal-link">Websites as homes</a>
       </li>
       
       

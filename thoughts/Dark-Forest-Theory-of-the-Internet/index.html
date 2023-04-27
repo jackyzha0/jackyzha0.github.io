@@ -159,13 +159,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.75f7a79d592fa2955ed36b0b78a1e32f.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.41a9e806f4a6a9c60ce56bab60b010d0.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -583,6 +583,14 @@ Feb 12, 2022
 <blockquote>
 <p>I evoke the term &lsquo;handmade web&rsquo; to refer to web pages coded by hand rather than by software; web pages made and maintained by individuals rather than by businesses or corporations; web pages which are provisional, temporary, or one-of-a-kind; web pages which challenge conventions of reading, writing, design, ownership, privacy, security, or <a href="/thoughts/identity" rel="noopener" class="internal-link" data-src="/thoughts/identity">identity</a>.</p>
 </blockquote>
+<a href="#the-small-web"><h2 id="the-small-web"><span class="hanchor" ariaLabel="Anchor"># </span>The Small Web</h2></a>
+<p>
+<a href="https://neustadt.fr/essays/the-small-web/" rel="noopener">Source</a></p>
+<p><strong>In the 1990s, browser design took nearly the opposite approach, using iconography associated with travel to convey the feeling of going on a journey.</strong> Netscape Navigator, which used a ship&rsquo;s helm as its logo, made a very direct link with the nautical origins of the prefix cyber-, while Internet Explorer’s logo promised to take the user around the whole globe.</p>
+<blockquote>
+<p>A painter wouldn’t add more red to her painting or change the composition because market data showed that people liked it better. It’s her creative vision; some people might like it, others might not. But it is her creation, with her own rules. The question of &ldquo;performance&rdquo; is simply irrelevant. It&rsquo;s the same thing with the small web.</p>
+</blockquote>
+<p>If the commercial web is &ldquo;industrial&rdquo;, you could say that the small web is &ldquo;artisanal&rdquo;. One is not better than the other. They serve different needs and both can co-exist in an open web.</p>
 
 
     </article>
