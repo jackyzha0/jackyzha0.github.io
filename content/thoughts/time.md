@@ -16,8 +16,16 @@ How do your order the events in the Universe? The answer, as Lamport noted, is y
 See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/causality]], [[thoughts/clocks]]
 
 ## Saving Time, Discovering a Life Beyond the Clock
+> Exploring the social and material roots of the idea that time is money
+
 [Source](https://www.youtube.com/watch?app=desktop&v=1x0IOcFp94s)
 
+- Chronos vs Kairos time
+	- Chronos: quantitative, calendar time
+	- Kairos: qualitative time, memorable moments
+- Horizontal vs Vertical time (Josef Pieper): the point of leisure should not be to work better
+	- Horizontal time: work and refreshment/recovery for work 
+	- Vertical time: things that remind you of your mortality and the sort of fragility of your life, but also this deep sort of awe and gratitude about the fact that you exist at all. He describes it as sort of cutting through that horizontal plane; it feels in that moment almost like it invalidates the horizontal time
 - Industrial Time
 	- Time as money (equal interchangeable hours)
 	- Emerged from the need to measure others' labour
@@ -31,6 +39,7 @@ See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/
 		- By simply asking whether they would like a certain vegetable, those neural regions became active
 		- The question presumes a person with preferences and desires. Desires and attitudes toward the future only exist in time: the time inhabited by that person
 	- It is a deeply political question about who does and does not inhabit time
+	- Unfreezing in time: focus on a specific point or feature to help make something’s aliveness more accessible to you
 - Time gardening
 	- I had a friend who always was giving away bags of cabbage to people. Apparently you are supposed to get rid of the outside leaves of the cabbage so the inside leaves of the cabbage can grow to maturity
 	- Not everything is transactional. "I've sort of forgotten that a lettuce keeps growing, assuming that more lettuce leaves for me mean less lettuce leaves for her"

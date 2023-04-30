@@ -9,6 +9,10 @@ tags:
 I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.
 
 ## April
+### April 29th
+- Spent some time doing the [Jepsen Maelstrom distributed systems challenges in Rust](https://github.com/jackyzha0/maelstrom)! Feel like I am slowly getting better at going from idea to working code in the language
+- Going through the [Causal Islands](https://www.causalislands.com/) talks
+
 ### April 11th
 - Various notes on [[thoughts/Operational Transform]], [[thoughts/bitemporal]], [[thoughts/incremental view maintenance]], [[thoughts/Three Legged Stool]]
 - [[thoughts/file system|File system]] [[thoughts/CRDT|CRDTs]]
@@ -639,7 +643,7 @@ I think research logs tend to generally focus too much on what one did rather th
 		- 'open [app] on your computer' type authorization for web applications
 	- Trunk: application layer
 		- Data framework layer: distributed triple store
-			- rust → compiled to WASM for web
+			- rust → compiled to [[thoughts/WebAssembly|WASM]] for web
 			- each node has its own [[thoughts/RDF|triple store]] that is created from an append-only data log
 			- each triple contains ID, relation, and value
 				- how do we do realllyyy fast triple search? on multiple relations?

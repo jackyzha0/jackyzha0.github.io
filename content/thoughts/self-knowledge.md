@@ -11,7 +11,7 @@ tags:
 Self-illumination/reflexivity  
 
 - Every conscious experience is directly revealed to itself.  
-- "In seeing blue, you experience seeing"
+- "In seeing blue, you experience [[thoughts/seeing|seeing]]"
 - Problems: Reflexivity as a concept is weird though
 	- "A knife cannot cut itself, an acrobat can’t stand on their own shoulders."
 	- "How can one and the same awareness be both of an object/content and of itself?"

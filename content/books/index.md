@@ -61,7 +61,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * [**Atlas of AI**](thoughts/Atlas%20of%20AI.md) by Kate Crawford
 * **Klara and the Sun** by Kazuo Ishiguro
 * [**The Grasshopper: Games, Life and Utopia**](thoughts/The%20Grasshopper,%20Games,%20Life%20and%20Utopia.md) by Bernard Suits
-* **The Anthropocene Reviewed** by John Green
+* **[[thoughts/The Anthropocene Reviewed|The Anthropocene Reviewed]]** by John Green
 * **Never Let Me Go** by Kazuo Ishiguro
 * [**From Counterculture to Cyberculture**](thoughts/From%20Counterculture%20to%20Cyberculture.md) by Fred Turner
 * [**Design Justice**](thoughts/Design%20Justice.md) by Sasha Costanza-Chock

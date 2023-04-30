@@ -19,6 +19,7 @@ But in reality, the world is eventually [[thoughts/consistency|consistent]] and 
 The web was able to scale to the scale it did because there is no *authoritative* copy of the web.
 
 In fact, truly global applications can only achieve some sense of responsiveness through having multiple primary sites. This is because at a global scale, having only one primary site just doesn't work:
+
 - Supporting any non-trivial application at global scale requires a lot of compute which often can't be colocated on the same machine for performance reasons
 - Having a single primary site means that every read or write needs to be done through it. As a result, latency for users that are on the other side of the world may have latencies that make the application frustrating or unusable.
 

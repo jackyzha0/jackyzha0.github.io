@@ -31,3 +31,4 @@ As keen as some of us are to do life “right”, sometimes the only way to do i
 > There’s only one person who bears the responsibility of your life and it’s the same person who shrugs that responsibility off when it feels too heavy
 
 See: [[posts/the-fools-who-dream]]
+

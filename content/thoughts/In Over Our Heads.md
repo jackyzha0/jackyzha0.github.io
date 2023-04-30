@@ -31,7 +31,7 @@ Growth is a process of 'leaving home'. It is a process of leaving the mental hom
 ### Stage 4: Systematic
 - you no longer are in relationships that define you; you have relationships
 - you are “self-authored”: you choose your own principles, projects, and commitments
-- it means seeing the other person for who they really are. Emotions are just something people have, from time to time. Those need to be dealt with, but should not be taken too seriously. Relating to the other person’s principles, projects, and commitments means supporting what they most care about in the longer run
+- it means [[thoughts/seeing|seeing]] the other person for who they really are. Emotions are just something people have, from time to time. Those need to be dealt with, but should not be taken too seriously. Relating to the other person’s principles, projects, and commitments means supporting what they most care about in the longer run
 
 ### Stage 5: Fluid
 > We do not have one fixed "self" we can simply "be"

@@ -39,7 +39,7 @@ tags:
 - daily link share
 	- inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
 	- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
-- WASM-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
+- [[thoughts/WebAssembly|WASM]]-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
 	- dodge mechanic
@@ -214,4 +214,23 @@ tags:
 	- [[thoughts/independent research|independent research]] is applied [[thoughts/taste]]
 	- Good [[thoughts/search|search]] (aggregators) turns random networks into scale-free networks (see: [[thoughts/Network Theory|network theory]])
 		- Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.
-	- a brief history of time
+	- The sequel to SQL (Against table databases)
+		- Data interoperability is really hard with SQL
+			- I think interoperability in the context of the web means being able to transparently understand and share data, agnostic of platform.
+			- Closed platforms disallow this as they curate the information they present to end-users/devs through the frontend but close off access to the actual data itself.
+			- This forces one 'correct' way of looking at data (which is often not the case!)
+		- What about evolution of applications? 
+		- Taking evolution to its natural extension, a different application all together?
+		- How do we create sources of truth that are _legible outside of the application_, possibly in ways that the application developer never anticipated?
+		- Well, we've done this already once! The applications on our computers ‘share’ data between them is through the file system
+			- An application then is a specific view on types of data rather than a standalone thing. Data can be dragged through different applications. Each data is annotated with a type.
+		- How might we do this for more general data?
+		- Recent years has seen a revival of academic and research interest in the tuple store which will allow us to pull out structure when we need it. It embraces a pluriversal view of data --  a world where multiple alternatives co-exist
+			- We can think of a [triple store](https://jzhao.xyz/thoughts/RDF) as a distributed and fragmented SQL database, where instead of tables with rows and value, we have entities with attributes and values. Any application can declare new attributes or alias an attribute to a more common one. The most important part is that applications that share attributes can automatically interoperate their data by using the same attributes
+			- This type of ‘decentralized’ database means there is no canonical schema. You can’t mistake the map for the territory because everyone has their own map and can’t force others to view the ’truth’ of the world through your map
+			- See more: https://jzhao.xyz/thoughts/Rhizome-Research-Log#october-19th
+			- (Inkandswitch explored this with Cambria)
+		- One common critique of this is that we lose efficiency and that by knowing the structure of the data ahead of time, we can better optimize queries, etc.
+		- Using tuples doesn't prevent us from creating indices and using incremental view maintenance! A lot of really good recent research on differential data flow
+		- Importantly, this gives us moldable data which enables people to have the raw material to sculpt and play with
+			- (AtProto making the data and schema public means that we've seen an explosion of clients and projects that use BlueSky data)

@@ -22,3 +22,11 @@ Self-determination theory suggests that all humans have three basic psychologica
 3. Relatedness: need to feel connected and belongingness with others
 
 See also: [[thoughts/In Over Our Heads]], [[thoughts/burnout]], [[thoughts/taste]]
+
+## In software
+4 Principles, [Brooklyn Zelenka at Causal Islands](https://youtu.be/YKf5ItBPQ50?t=3975)
+
+1. Empower users to participate (entry)
+2. Option to leave ([[thoughts/credible exit|exit]])
+3. Control access to your data (safety)
+4. Provide capacity to others (serve)

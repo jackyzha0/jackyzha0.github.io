@@ -33,7 +33,7 @@ Counter against the dream argument (perception of knowledge is akin to conceptio
 
 What about incorrect understandings of the world? Nyāya argues that these are akin to dream objects, where destruction of false perception is akin to the destruction of conceptions of dream objects upon waking. (NS p. 68)
 - Stuff existing != existing how you think it does
-- Error, seeing a post as a person or vice versa, occurs when their differences are elided while their similarities are grasped.
+- Error, [[thoughts/seeing|seeing]] a post as a person or vice versa, occurs when their differences are elided while their similarities are grasped.
 	- In order to be wrong about something, we need to mistake something not-F for something F (to see a post as a person)
 	- I could not mistakenly see a person in the distance if I didn't have the concept of a person, and Nyāya argues that in order to have such a concept, I must have had knowledge of people in the past.
 - Not true that incorrect understands have convergent content, the essence of things implies natural diversity in the similarity of things. (Argument against the fact that 'nothing can be explained')

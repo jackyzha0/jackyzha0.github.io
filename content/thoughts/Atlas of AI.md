@@ -12,7 +12,7 @@ tags:
 
 "An atlas is an unusual type of book. It is a collection of disparate parts, with maps that very in resolution from a satellite view of the planet to a zoomed-in detail of an archipelago. When you open an atlas, you may be seeking specific information about a particular place -- or perhaps you are wandering, following your curiosity, and finding unexpected pathways and new perspectives."
 
-AI is an attempt to be *the* atlas -- the dominant way of seeing the world. We should instead try to construct "humble geography" that acknowledges one's specific perspectives rather than claiming objectivity or mastery.
+AI is an attempt to be *the* atlas -- the dominant way of [[thoughts/seeing|seeing]] the world. We should instead try to construct "humble geography" that acknowledges one's specific perspectives rather than claiming objectivity or mastery.
 
 ## Earth
 "Commerce follows the flag, but the flag follows the pick."

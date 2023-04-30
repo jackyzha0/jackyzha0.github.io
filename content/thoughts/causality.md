@@ -33,4 +33,8 @@ Causality means that an effect can not occur from a cause that is not in the bac
 
 ![[thoughts/images/lightcone.png]]
 
+This causes us to be trapped in *causal islands*. Because data can only travel at the speed of light, we can't keep up with each other all the time. 
+
+The normal solution is to work in parts (Spanner does this) where the light cones of the different sites intersect. However, only working in this case called causal subjectiity.
+
 See: [[thoughts/time]]
