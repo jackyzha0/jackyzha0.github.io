@@ -5,6 +5,8 @@ tags:
 - seed
 ---
 
+> A way of mapping human readable names to cryptographically secure names
+
 [Petnames](http://www.erights.org/elib/capability/pnml.html) are potentially a method of achieving all 3 properties of [[thoughts/Zooko's Triangle]] by having "names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties."
 
 We are already familiar with this concept actually: the contact list on your phone! Each contact in your phone doesn't actually represent that person, but rather your *relationship* with that person. `John (neighbour)` could be `Dad` in someone else's phone, even though they refer to the same physical person.

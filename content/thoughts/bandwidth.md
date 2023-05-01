@@ -10,7 +10,9 @@ tags:
 
 > When we talk together, we flatten our N-dimensional thoughts into 1D linear narratives, in order to fit them through the 1D bottleneck of words. When we draw or sketch, we flatten our N-dimensional thoughts into 2D images in order to fit them through the 2D bottleneck of sight.
 
-What is the shape of [networked-thought](posts/networked-thought.md)? See also: [[thoughts/hypertext]]
+What is the shape of [networked-thought](posts/networked-thought.md)? 
+
+See also: [[thoughts/hypertext]], [[thoughts/the garden and the stream]]
 
 ## Interpretation
 Does moving closer to real-time communication mean less interpretation is required? Less expressive mediums like text mean that a lot of the emotion and meaning is left up to the reader to interpret and guess at. As we move to higher bandwidth mediums (e.g. calls and video), is there less room to interpret?

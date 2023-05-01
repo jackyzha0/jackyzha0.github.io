@@ -23,3 +23,10 @@ Where
 [Brooklyn Zelenka from Fission Codes on IPVM](https://fission.codes/blog/ipfs-thing-breaking-down-ipvm/)
 
 CID-based computation also means that we can use [memoization](https://en.wikipedia.org/wiki/Memoization) to inform us if an operation has been run before so we can optimize our efforts and copy the CIDs of those outputs into our work, saving time and compute power.
+
+## Acyclicality 
+Graphs that use CIDs for references are acyclical! Hashing a cycle would mean that you need to know the CID of the contents *without* actually traversing its contents. 
+
+This is impossible! Consider a cycle `A -> B -> C -> A`. To figure out the CID of `A`, we need to know the CID of `B`. To know the CID of `B` you need to know the CID of `C`. `C`'s CID needs to know the CID of `A` and we are back where we started.
+
+Side note: I guess this could be done by brute forcing a [[thoughts/hash function|hash]] collision but this is so statistically improbable we might as we well consider it impossible

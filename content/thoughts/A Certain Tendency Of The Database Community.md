@@ -38,3 +38,8 @@ Can we build abstractions that allow devices to communicate [[thoughts/peer-to-p
 Coordination in the universe is limited by how much you can observe. That means a globally consistent *anything* will be limited by the speed of light
 
 This is problematic for global (and potentially inter-planetary) communication. The great thing about [[thoughts/local-first software]] is that you don't need to know anything about the other side of the world when doing stuff locally :)
+
+## Harmony
+Werner Herzog in *Burden of Dreams* (1982)
+
+> There is no harmony in the universe. We have to get acquainted to this idea that there is no real harmony as we have conceived it.
