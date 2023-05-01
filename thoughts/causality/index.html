@@ -156,13 +156,13 @@ We say event $a$ happens before event $b$ ($a \rightarrow b$) iff:" />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -618,6 +618,8 @@ May 5, 2022
 <p>In Einstein&rsquo;s theory of general and special relativity</p>
 <p>Causality means that an effect can not occur from a cause that is not in the back (past) light cone of that event. Similarly, a cause can not have an effect outside its front (future) light cone.</p>
 <p><img src="/thoughts/images/lightcone.png" width="auto" /></p>
+<p>This causes us to be trapped in <em>causal islands</em>. Because data can only travel at the speed of light, we can&rsquo;t keep up with each other all the time.</p>
+<p>The normal solution is to work in parts (Spanner does this) where the light cones of the different sites intersect. However, only working in this case called causal subjectiity.</p>
 <p>See: <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a></p>
 
 

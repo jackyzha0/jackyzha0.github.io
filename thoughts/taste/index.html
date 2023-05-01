@@ -159,13 +159,13 @@ Taste is built over time through repeated applications." />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -796,6 +796,10 @@ Mar 2, 2023
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Milieu/" data-ctx="thoughts/taste" data-src="/thoughts/Milieu" class="internal-link">Milieu</a>
       </li>
@@ -828,6 +832,12 @@ Mar 2, 2023
       
       <li>
         <a href="/thoughts/reading/" data-ctx="thoughts/taste" data-src="/thoughts/reading" class="internal-link">Reading</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/seeing/" data-ctx="thoughts/taste" data-src="/thoughts/seeing" class="internal-link">Seeing</a>
       </li>
       
       

@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -880,6 +880,10 @@ Jun 23, 2021
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/thoughts/Arweave/" data-ctx="fault tolerant" data-src="/thoughts/Arweave" class="internal-link">Arweave</a>
       </li>
@@ -900,6 +904,12 @@ Jun 23, 2021
       
       <li>
         <a href="/thoughts/Sybil-Attack/" data-ctx="thoughts/fault tolerance" data-src="/thoughts/Sybil-Attack" class="internal-link">Sybil Attack</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/antifragility/" data-ctx="fault tolerant" data-src="/thoughts/antifragility" class="internal-link">Antifragility</a>
       </li>
       
       

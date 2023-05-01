@@ -7,6 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Antifragility</title>
+      <link>https://jzhao.xyz/thoughts/antifragility/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/antifragility/</guid>
+      <description>The resilient resists shocks and stays the same; the antifragile gets better.
+ Antifragility is a property of systems in which they increase in capability to thrive as a result of stressors, shocks, volatility, noise, mistakes, faults, attacks, or failures.</description>
+    </item>
+    
+    <item>
+      <title>Block-reference mechanisms</title>
+      <link>https://jzhao.xyz/thoughts/block-reference-mechanisms/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/block-reference-mechanisms/</guid>
+      <description>Source
+Purple  Source
+ Produce HTML documents that can be addressed at the paragraph level
+ It does this by automatically creating name anchors with static and hierarchical addresses at the beginning of each text node, and by displaying these addresses as links at the end of each text node.</description>
+    </item>
+    
+    <item>
+      <title>ScrapScript</title>
+      <link>https://jzhao.xyz/thoughts/ScrapScript/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/ScrapScript/</guid>
+      <description>Source
+To make software safe and sharable, scrapscript combines existing wisdom in new ways:
+ all expressions are content-addressible “scraps” all programs are data all programs are “platformed”  Content-Addressible Everything (see: [[thoughts/content addressed storage]])</description>
+    </item>
+    
+    <item>
+      <title>Seeing</title>
+      <link>https://jzhao.xyz/thoughts/seeing/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/seeing/</guid>
+      <description>Source
+See also: [[thoughts/attention]], [[thoughts/taste]]
+In her 1984 novel The Lover, Marguerite Duras wrote that “the art of seeing has to be learned.</description>
+    </item>
+    
+    <item>
+      <title>The Anthropocene Reviewed</title>
+      <link>https://jzhao.xyz/thoughts/The-Anthropocene-Reviewed/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/The-Anthropocene-Reviewed/</guid>
+      <description>To fall in love with the world isn&amp;rsquo;t to ignore or overlook suffering, both human and otherwise. For me anyway, to fall in love with the world is to look up at the night sky and feel you mind swim before the beauty and the distance of the stars.</description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>https://jzhao.xyz/thoughts/WebAssembly/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/WebAssembly/</guid>
+      <description>A binary instruction format for a stack-based virtual machine
+ Distributed Invocation  Source and talk on Homestar
+We can imagine WASM modules as functions that execute some behaviour.</description>
+    </item>
+    
+    <item>
       <title>Websites as homes</title>
       <link>https://jzhao.xyz/thoughts/websites-as-homes/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
@@ -338,7 +402,7 @@ Argues that there is no conflict between [[thoughts/friendship]] and [[thoughts/
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Locutus/</guid>
-      <description>Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.</description>
+      <description>Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in [[thoughts/WebAssembly|WASM]], and the value associated with each contract is its state.</description>
     </item>
     
     <item>
@@ -1763,7 +1827,8 @@ The ‘reward equation’ models how ants communicate using pheromones, and our 
       <pubDate>Thu, 11 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/petname/</guid>
-      <description>Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&amp;rsquo;s Triangle]] by having &amp;ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.</description>
+      <description>A way of mapping human readable names to cryptographically secure names
+  Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&amp;rsquo;s Triangle]] by having &amp;ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.</description>
     </item>
     
     <item>
@@ -2587,8 +2652,7 @@ Similar to [[thoughts/DID|DIDs]].
       <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/content-addressed-storage/</guid>
-      <description>See also: [[thoughts/CID]]
- If I identify the book by its content, saying &amp;ldquo;Check out the book called Why Information Grows by César Hidalgo.</description>
+      <description>If I identify the book by its content, saying &amp;ldquo;Check out the book called Why Information Grows by César Hidalgo.</description>
     </item>
     
     <item>

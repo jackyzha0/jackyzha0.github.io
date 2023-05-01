@@ -159,13 +159,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -389,6 +389,75 @@ Jun 5, 2022
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -459,6 +528,10 @@ Jun 5, 2022
 <a href="https://fission.codes/blog/ipfs-thing-breaking-down-ipvm/" rel="noopener">Brooklyn Zelenka from Fission Codes on IPVM</a></p>
 <p>CID-based computation also means that we can use 
 <a href="https://en.wikipedia.org/wiki/Memoization" rel="noopener">memoization</a> to inform us if an operation has been run before so we can optimize our efforts and copy the CIDs of those outputs into our work, saving time and compute power.</p>
+<a href="#acyclicality"><h2 id="acyclicality"><span class="hanchor" ariaLabel="Anchor"># </span>Acyclicality</h2></a>
+<p>Graphs that use CIDs for references are acyclical! Hashing a cycle would mean that you need to know the CID of the contents <em>without</em> actually traversing its contents.</p>
+<p>This is impossible! Consider a cycle <code>A -&gt; B -&gt; C -&gt; A</code>. To figure out the CID of <code>A</code>, we need to know the CID of <code>B</code>. To know the CID of <code>B</code> you need to know the CID of <code>C</code>. <code>C</code>&rsquo;s CID needs to know the CID of <code>A</code> and we are back where we started.</p>
+<p>Side note: I guess this could be done by brute forcing a <a href="/thoughts/hash-function" rel="noopener" class="internal-link" data-src="/thoughts/hash-function">hash</a> collision but this is so statistically improbable we might as we well consider it impossible</p>
 
 
     </article>
@@ -477,6 +550,10 @@ Jun 5, 2022
     
     
     
+    
+      
+      
+      
     
       
       
@@ -548,6 +625,12 @@ Jun 5, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="CIDs" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/ScrapScript/" data-ctx="thoughts/CID" data-src="/thoughts/ScrapScript" class="internal-link">ScrapScript</a>
       </li>
       
       

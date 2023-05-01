@@ -8,17 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state."
+    content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in [[thoughts/WebAssembly|WASM]], and the value associated with each contract is its state."
   />
   <meta property="og:title" content="Locutus">
-  <meta property="og:description" content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.">
+  <meta property="og:description" content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in [[thoughts/WebAssembly|WASM]], and the value associated with each contract is its state.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Locutus/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Locutus" />
-  <meta name="twitter:description" content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state." />
+  <meta name="twitter:description" content="Locutus is a [[thoughts/local-first software|local-first]] decentralized key-value database. It uses the same small world routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in [[thoughts/WebAssembly|WASM]], and the value associated with each contract is its state." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -456,6 +456,49 @@ Apr 4, 2023
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -468,7 +511,7 @@ Apr 4, 2023
 
 
 <p>Locutus is a <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first</a> decentralized key-value database. It uses the same 
-<a href="https://freenetproject.org/assets/papers/lic.pdf" rel="noopener">small world</a> routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in WASM, and the value associated with each contract is its state.</p>
+<a href="https://freenetproject.org/assets/papers/lic.pdf" rel="noopener">small world</a> routing algorithm as the original Freenet design, but each key is a cryptographic contract implemented in <a href="/thoughts/WebAssembly" rel="noopener" class="internal-link" data-src="/thoughts/WebAssembly">WASM</a>, and the value associated with each contract is its state.</p>
 <p>Locutus is <em>not</em> append-only and has mutable state.</p>
 <p>Splits are merged using <a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a></p>
 

@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1645,6 +1645,91 @@ Jun 17, 2021
 
   
 
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1720,7 +1805,7 @@ Jun 17, 2021
 <li>what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people</li>
 </ul>
 </li>
-<li>WASM-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> distributed using a <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
+<li><a href="/thoughts/WebAssembly" rel="noopener" class="internal-link" data-src="/thoughts/WebAssembly">WASM</a>-based <code>npm</code> with <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CIDs</a> distributed using a <a href="/thoughts/Sloppy-Hashing-DHT" rel="noopener" class="internal-link" data-src="/thoughts/Sloppy-Hashing-DHT">Sloppy Hashing DHT</a></li>
 <li>
 <a href="https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/" rel="noopener">https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/</a> but with vim gutters and program slicing</li>
 <li>rotmg but actually good lol
@@ -2150,7 +2235,43 @@ Jun 17, 2021
 <li>Servers are just clients that are located in a particular position in the network, and that are not the source of truth for any data; these nodes serve only to reduce latency in the system by replicating information.</li>
 </ul>
 </li>
-<li>a brief history of time</li>
+<li>The sequel to SQL (Against table databases)
+<ul>
+<li>Data interoperability is really hard with SQL
+<ul>
+<li>I think interoperability in the context of the web means being able to transparently understand and share data, agnostic of platform.</li>
+<li>Closed platforms disallow this as they curate the information they present to end-users/devs through the frontend but close off access to the actual data itself.</li>
+<li>This forces one &lsquo;correct&rsquo; way of looking at data (which is often not the case!)</li>
+</ul>
+</li>
+<li>What about evolution of applications?</li>
+<li>Taking evolution to its natural extension, a different application all together?</li>
+<li>How do we create sources of truth that are <em>legible outside of the application</em>, possibly in ways that the application developer never anticipated?</li>
+<li>Well, we&rsquo;ve done this already once! The applications on our computers ‘share’ data between them is through the file system
+<ul>
+<li>An application then is a specific view on types of data rather than a standalone thing. Data can be dragged through different applications. Each data is annotated with a type.</li>
+</ul>
+</li>
+<li>How might we do this for more general data?</li>
+<li>Recent years has seen a revival of academic and research interest in the tuple store which will allow us to pull out structure when we need it. It embraces a pluriversal view of data &ndash;  a world where multiple alternatives co-exist
+<ul>
+<li>We can think of a 
+<a href="https://jzhao.xyz/thoughts/RDF" rel="noopener">triple store</a> as a distributed and fragmented SQL database, where instead of tables with rows and value, we have entities with attributes and values. Any application can declare new attributes or alias an attribute to a more common one. The most important part is that applications that share attributes can automatically interoperate their data by using the same attributes</li>
+<li>This type of ‘decentralized’ database means there is no canonical schema. You can’t mistake the map for the territory because everyone has their own map and can’t force others to view the ’truth’ of the world through your map</li>
+<li>See more: 
+<a href="https://jzhao.xyz/thoughts/Rhizome-Research-Log#october-19th" rel="noopener">https://jzhao.xyz/thoughts/Rhizome-Research-Log#october-19th</a></li>
+<li>(Inkandswitch explored this with Cambria)</li>
+</ul>
+</li>
+<li>One common critique of this is that we lose efficiency and that by knowing the structure of the data ahead of time, we can better optimize queries, etc.</li>
+<li>Using tuples doesn&rsquo;t prevent us from creating indices and using incremental view maintenance! A lot of really good recent research on differential data flow</li>
+<li>Importantly, this gives us moldable data which enables people to have the raw material to sculpt and play with
+<ul>
+<li>(AtProto making the data and schema public means that we&rsquo;ve seen an explosion of clients and projects that use BlueSky data)</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

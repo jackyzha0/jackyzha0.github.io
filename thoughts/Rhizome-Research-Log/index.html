@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -6514,6 +6514,163 @@ May 3, 2022
       
       
       
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
     
     
 
@@ -31359,6 +31516,13 @@ May 3, 2022
 
 <p>I think research logs tend to generally focus too much on what one did rather than what one felt. This log aspires to have a healthy mix of both.</p>
 <a href="#april"><h2 id="april"><span class="hanchor" ariaLabel="Anchor"># </span>April</h2></a>
+<a href="#april-29th"><h3 id="april-29th"><span class="hanchor" ariaLabel="Anchor"># </span>April 29th</h3></a>
+<ul>
+<li>Spent some time doing the 
+<a href="https://github.com/jackyzha0/maelstrom" rel="noopener">Jepsen Maelstrom distributed systems challenges in Rust</a>! Feel like I am slowly getting better at going from idea to working code in the language</li>
+<li>Going through the 
+<a href="https://www.causalislands.com/" rel="noopener">Causal Islands</a> talks</li>
+</ul>
 <a href="#april-11th"><h3 id="april-11th"><span class="hanchor" ariaLabel="Anchor"># </span>April 11th</h3></a>
 <ul>
 <li>Various notes on <a href="/thoughts/Operational-Transform" rel="noopener" class="internal-link" data-src="/thoughts/Operational-Transform">Operational Transform</a>, <a href="/thoughts/bitemporal" rel="noopener" class="internal-link" data-src="/thoughts/bitemporal">bitemporal</a>, <a href="/thoughts/incremental-view-maintenance" rel="noopener" class="internal-link" data-src="/thoughts/incremental-view-maintenance">incremental view maintenance</a>, <a href="/thoughts/Three-Legged-Stool" rel="noopener" class="internal-link" data-src="/thoughts/Three-Legged-Stool">Three Legged Stool</a></li>
@@ -32641,7 +32805,7 @@ May 3, 2022
 <ul>
 <li>Data framework layer: distributed triple store
 <ul>
-<li>rust → compiled to WASM for web</li>
+<li>rust → compiled to <a href="/thoughts/WebAssembly" rel="noopener" class="internal-link" data-src="/thoughts/WebAssembly">WASM</a> for web</li>
 <li>each node has its own <a href="/thoughts/RDF" rel="noopener" class="internal-link" data-src="/thoughts/RDF">triple store</a> that is created from an append-only data log</li>
 <li>each triple contains ID, relation, and value
 <ul>

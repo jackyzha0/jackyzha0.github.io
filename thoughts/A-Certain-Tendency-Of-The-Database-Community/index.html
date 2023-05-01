@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -709,6 +709,11 @@ Nov 16, 2022
 <a href="#limits-of-the-speed-of-light"><h2 id="limits-of-the-speed-of-light"><span class="hanchor" ariaLabel="Anchor"># </span>Limits of the speed of light</h2></a>
 <p>Coordination in the universe is limited by how much you can observe. That means a globally consistent <em>anything</em> will be limited by the speed of light</p>
 <p>This is problematic for global (and potentially inter-planetary) communication. The great thing about <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a> is that you don&rsquo;t need to know anything about the other side of the world when doing stuff locally :)</p>
+<a href="#harmony"><h2 id="harmony"><span class="hanchor" ariaLabel="Anchor"># </span>Harmony</h2></a>
+<p>Werner Herzog in <em>Burden of Dreams</em> (1982)</p>
+<blockquote>
+<p>There is no harmony in the universe. We have to get acquainted to this idea that there is no real harmony as we have conceived it.</p>
+</blockquote>
 
 
     </article>

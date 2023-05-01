@@ -8,17 +8,20 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties."
+    content="A way of mapping human readable names to cryptographically secure names
+  Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties."
   />
   <meta property="og:title" content="Petname">
-  <meta property="og:description" content="Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.">
+  <meta property="og:description" content="A way of mapping human readable names to cryptographically secure names
+  Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/petname/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Petname" />
-  <meta name="twitter:description" content="Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties." />
+  <meta name="twitter:description" content="A way of mapping human readable names to cryptographically secure names
+  Petnames are potentially a method of achieving all 3 properties of [[thoughts/Zooko&rsquo;s Triangle]] by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -153,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -497,6 +500,9 @@ Aug 11, 2022
 
 
 
+<blockquote>
+<p>A way of mapping human readable names to cryptographically secure names</p>
+</blockquote>
 <p>
 <a href="http://www.erights.org/elib/capability/pnml.html" rel="noopener">Petnames</a> are potentially a method of achieving all 3 properties of <a href="/thoughts/Zookos-Triangle" rel="noopener" class="internal-link" data-src="/thoughts/Zookos-Triangle">Zooko&rsquo;s Triangle</a> by having &ldquo;names with each of the three pairs of properties, and [building] a naming system involving several of these kinds of names, in order to make use of all three properties.&rdquo;</p>
 <p>We are already familiar with this concept actually: the contact list on your phone! Each contact in your phone doesn&rsquo;t actually represent that person, but rather your <em>relationship</em> with that person. <code>John (neighbour)</code> could be <code>Dad</code> in someone else&rsquo;s phone, even though they refer to the same physical person.</p>

@@ -8,20 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="See also: [[thoughts/CID]]
- If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo."
+    content="If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo."
   />
   <meta property="og:title" content="Content addressed storage">
-  <meta property="og:description" content="See also: [[thoughts/CID]]
- If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo.">
+  <meta property="og:description" content="If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/content-addressed-storage/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Content addressed storage" />
-  <meta name="twitter:description" content="See also: [[thoughts/CID]]
- If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo." />
+  <meta name="twitter:description" content="If I identify the book by its content, saying &ldquo;Check out the book called Why Information Grows by César Hidalgo." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -156,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -561,6 +558,214 @@ Jun 5, 2022
 
   
 
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+        
+        
+        
+          
+          
+          
+        
+        
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -572,7 +777,7 @@ Jun 5, 2022
 
 
 
-<p>See also: <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CID</a></p>
+
 <blockquote>
 <p>If I identify the book by its content, saying &ldquo;Check out the book called <em>Why Information Grows</em> by César Hidalgo. The ISBN is 0465048994.&rdquo;, you will be able to get any copy of the book from any source and know that you&rsquo;re reading the information I recommended.</p>
 <p>By contrast, if I used location-addressing to identify the book, I would have to point to a location, saying something like &ldquo;Go to the news stand at Market &amp; 15th in Philadelphia and ask for the thing 16 inches from the south end of the third shelf on the east wall&rdquo;</p>
@@ -580,9 +785,18 @@ Jun 5, 2022
 <p>Content-addressed storage or abbreviated CAS, is a way to store information so it can be retrieved based on its content, not its location.</p>
 <p>Location-addressed: e.g. <a href="/thoughts/HTTP" rel="noopener" class="internal-link" data-src="/thoughts/HTTP">HTTP</a>, you lookup a content by its location (URI). Whoever controls the location controls the content. This location-addressed approach forces us all to pretend that the data are in only one location (even if multiple people have copies of it!)</p>
 <p>Content-addressed: using the content&rsquo;s cryptographic hash to identify it. These links are permanent because the cryptographic hash for a piece of content never changes.</p>
+<p>See also: <a href="/thoughts/CID" rel="noopener" class="internal-link" data-src="/thoughts/CID">CID</a>, <a href="/thoughts/block-reference-mechanisms" rel="noopener" class="internal-link" data-src="/thoughts/block-reference-mechanisms">block-reference mechanisms</a></p>
 <a href="#immutable-objects-mutable-references"><h2 id="immutable-objects-mutable-references"><span class="hanchor" ariaLabel="Anchor"># </span>Immutable Objects, Mutable References</h2></a>
 <p>The <a href="/thoughts/Merkle-DAG" rel="noopener" class="internal-link" data-src="/thoughts/Merkle-DAG">Merkle-DAG</a>, immutable content-addressed objects, and mutable pointers to the Merkle-DAG, instantiate a dichotomy present in many successful distributed systems</p>
 <p><a href="/thoughts/IPFS" rel="noopener" class="internal-link" data-src="/thoughts/IPFS">IPFS</a> accomplishes this by creating a separate prefix <code>/ipns/&lt;NodeID&gt;</code> ofr mutable paths. One can prove ownership because only the owner of the private key of <code>NodeID</code> can publish to it</p>
+<a href="#literary-machines"><h2 id="literary-machines"><span class="hanchor" ariaLabel="Anchor"># </span>Literary Machines</h2></a>
+<p>In Ted Nelson&rsquo;s 1981 Literary Machines, he imagined a universally addressed public repository system</p>
+<blockquote>
+<p>In the computer world this will change, especially if &ndash; as I foresee &ndash; there will be one great repository and everything will be equally accessible. This means that &ldquo;different&rdquo; articles and books will more likely be <em>different versions of the same work,</em> and <em>different pathways through it for different readers</em></p>
+</blockquote>
+<p>The system promotes the coexistence and resolution of many viewpoints, through the sharing of private documents and comments, and the publication of <a href="/thoughts/hypertext" rel="noopener" class="internal-link" data-src="/thoughts/hypertext">hypertext</a> complexes whose interrelationships remain orderly.</p>
+<p><img src="/thoughts/images/literary-machines.png" width="500" /></p>
+<p>See also: <a href="/thoughts/plurality" rel="noopener" class="internal-link" data-src="/thoughts/plurality">plurality</a></p>
 
 
     </article>
@@ -601,6 +815,14 @@ Jun 5, 2022
     
     
     
+    
+      
+      
+      
+    
+      
+      
+      
     
       
       
@@ -662,6 +884,18 @@ Jun 5, 2022
       
       <li>
         <a href="/thoughts/Rhizome-Research-Log/" data-ctx="Content addressed storage" data-src="/thoughts/Rhizome-Research-Log" class="internal-link">Rhizome Research Log</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/ScrapScript/" data-ctx="thoughts/content addressed storage" data-src="/thoughts/ScrapScript" class="internal-link">ScrapScript</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/WebAssembly/" data-ctx="content address" data-src="/thoughts/WebAssembly" class="internal-link">WebAssembly</a>
       </li>
       
       

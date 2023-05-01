@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.9b97a4f37d136508b5979aa335b67b66.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.a9be08c93f758ca1cab7c225a61258d8.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -890,9 +890,24 @@ Apr 15, 2023
 <p>How do your order the events in the Universe? The answer, as Lamport noted, is you order events in terms of messages that could be sent between them.</p>
 <p>See also: <a href="/thoughts/A-Certain-Tendency-Of-The-Database-Community" rel="noopener" class="internal-link" data-src="/thoughts/A-Certain-Tendency-Of-The-Database-Community">A Certain Tendency Of The Database Community</a>, <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causality</a>, <a href="/thoughts/clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">clocks</a></p>
 <a href="#saving-time-discovering-a-life-beyond-the-clock"><h2 id="saving-time-discovering-a-life-beyond-the-clock"><span class="hanchor" ariaLabel="Anchor"># </span>Saving Time, Discovering a Life Beyond the Clock</h2></a>
+<blockquote>
+<p>Exploring the social and material roots of the idea that time is money</p>
+</blockquote>
 <p>
 <a href="https://www.youtube.com/watch?app=desktop&amp;v=1x0IOcFp94s" rel="noopener">Source</a></p>
 <ul>
+<li>Chronos vs Kairos time
+<ul>
+<li>Chronos: quantitative, calendar time</li>
+<li>Kairos: qualitative time, memorable moments</li>
+</ul>
+</li>
+<li>Horizontal vs Vertical time (Josef Pieper): the point of leisure should not be to work better
+<ul>
+<li>Horizontal time: work and refreshment/recovery for work</li>
+<li>Vertical time: things that remind you of your mortality and the sort of fragility of your life, but also this deep sort of awe and gratitude about the fact that you exist at all. He describes it as sort of cutting through that horizontal plane; it feels in that moment almost like it invalidates the horizontal time</li>
+</ul>
+</li>
 <li>Industrial Time
 <ul>
 <li>Time as money (equal interchangeable hours)</li>
@@ -916,6 +931,7 @@ Apr 15, 2023
 </ul>
 </li>
 <li>It is a deeply political question about who does and does not inhabit time</li>
+<li>Unfreezing in time: focus on a specific point or feature to help make something’s aliveness more accessible to you</li>
 </ul>
 </li>
 <li>Time gardening
