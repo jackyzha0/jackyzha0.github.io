@@ -29,7 +29,8 @@ Book, written by C. Thi Nguyen
 		1. Harmony of solution: strictly a harmony between the solution and the obstacle. e.g. wow, what a brilliant and beautiful Chess move
 		2. Harmony of action: your agency and action fitting the demands of the environment. e.g. during a difficult climb, figuring out you need to slide your hips over just enough to balance on a tiny foothold
 			- This is a strict superset of the harmony of solution. It concerns not only how the solution fits the problem, but how my decision making and action generation were just right to generate the harmony of solution
-		3. Harmony of capacity: the experience of engaging your abilities to their fullest potential. Arises from a fit between one's maximum skill level (their limit) and the demands of the task
+			- Effectively 'flow state'
+		1. Harmony of capacity: the experience of engaging your abilities to their fullest potential. Arises from a fit between one's maximum skill level (their limit) and the demands of the task
 			- We want to hit this in [[thoughts/game design]] as much as possible
 - Crafting Agency
 	- A game designer crafts for players a very particular form of struggle, and does so by crafting both a temporary practical agency for us to inhabit and a practical environment for us to struggle against. Games are the art of agency

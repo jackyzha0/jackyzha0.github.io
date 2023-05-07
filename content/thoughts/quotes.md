@@ -26,4 +26,4 @@ Some quotes to live by.
 22. "Exhaling does not take valuable time away from inhaling"
 23. "When the winds of change blow — some people build walls, others build windmills." — Chinese Proverb
 24. "Find out who you are and do it on purpose" – Dolly Parton
-25. “We cannot sow seeds with clenched fists. to sow, we must open our hands“ (Adolfo Perez Esquivel)
+25. "We cannot sow seeds with clenched fists. to sow, we must open our hands" (Adolfo Perez Esquivel)

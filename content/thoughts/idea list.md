@@ -40,6 +40,7 @@ tags:
 	- inventory packing simulator but its with tabs... what would affect tab size? length of article == perceived weight in bag?
 	- what if you could bring your little backpack of tabs with you to a square or market and trade your tabs with other people
 - [[thoughts/WebAssembly|WASM]]-based `npm` with [[thoughts/CID|CIDs]] distributed using a [[thoughts/Sloppy Hashing DHT]]
+	- [[thoughts/IPFS]] as a versioned package manager for all software
 - https://blog.adamant-lang.org/2019/rust-lifetime-visualization-ideas/ but with vim gutters and program slicing
 - rotmg but actually good lol
 	- dodge mechanic
@@ -57,14 +58,13 @@ tags:
 	- update notes in place
 	- https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/#features
 - calvin and hobbes semantic image search
-- IPFS as a versioned package manager for all software
 - [webgpt](https://openai.com/blog/webgpt/) but its for tools for thought
 	- "A [reader-generated essay](https://escapingflatland.substack.com/p/reader-generated-essays) is what you get when you can go into someone else’s knowledge graph and make a linear journey through the network, while GPT-5 generates a just-in-time essay that is human-readable."
 	- turning a graph traversal into a beautiful essay
 - a text experience where latency increases as more texts are sent
-- what does entropy + erosion of data look like
+- what does entropy + erosion of data look like?
 	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
-- treesitter based CRDT for smart [[thoughts/git|git]] merges
+- treesitter based [[thoughts/CRDT]] for smart [[thoughts/git|git]] merges
 	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - big touchscreen desk
 	- what if i just got a huge old flatscreen tv
@@ -83,6 +83,8 @@ tags:
 		- some sort of 1d marching cubes which modifies a vector depending on context?
 			- potentially transformer related
 	- image <-> text interop using CLIP/unCLIP/DALL-E?
+- procedural city + building generation in minecraft + rtx using a codified version of [[thoughts/A Pattern Language]]
+- procedural visualization of digital garden as an actual garden to help you tend to it better
 - better search
 	- searching through vectors
 		- (no clue if this would work) integral images but applied to vector similarity search in text documents
@@ -101,9 +103,6 @@ tags:
 	-   rendering using canvas (higher performance games/interactions) or plain html elements (UI)
 - data provenance
 	- https://www.cs.cmu.edu/~NatProg/whyline.html
-- how do we design better UI that reflects true application state?
-	- https://www.scattered-thoughts.net/writing/relational-ui/
-	- CRDTs as reducers over event-logs... that produce a view?
 - data lensing for databases
 	- using https://www.inkandswitch.com/cambria/ maybe?
 	- some cool [interoperability](thoughts/interoperability.md) things
@@ -125,9 +124,8 @@ tags:
     -   when a person leaves/arrives at a city, city hash is updated
 - Conversational GPS
   - why do we even look at a screen when we can just ask for directions as if it was a normal person lol
-- sound-based hashing for cryptographic verification
 - google photos + olo radio (see [attention economy](thoughts/attention%20economy.md))
-* web3 action-space exploration
+* [[thoughts/web3]] action-space exploration
 	- chain crawlers indexing smart contracts → creating logical relations
 	- prolog goal-first search? how can i prove that I can transmute resource A into resource B using relations on the network?
 	- suggesting what you can do with existing resources in your wallet
@@ -143,44 +141,10 @@ tags:
 	- DreamCoder Paper:
 		- https://arxiv.org/pdf/2006.08381.pdf
 		- https://www.youtube.com/watch?v=qtu0aSTDE2I
-* Shale: the cloud-native scripting language
-	* things to prioritize
-		1. great tooling and extensibility
-			1. static type hinting (great compile errors that detail relevant variables and possible fixes)
-			2. full HTTP server and request engine
-			3. compiles down to bytecode using LLVM (find some go/rust bindings for this)
-			4. URL-based module imports
-		2. easy to read code
-		3. features u love
-			1. pattern matching `match n { ... }`
-			2. a block `a = { ... }` is just a zero-arg anon fn `a = () => { ... }`
-			3. object and array destructuring (same as JS)
-			4. option container
-				1. built-in retry mechanisms on failure
-				2. null coalescing for sensible defaults (converting `Option[Int]` to `Int` for example)
-			5. function chaining (really just function composition) `123 -> a -> b` is equivalent to `b(a(123))`
-			6. fat arrow fns `someFn = a => b`
-		4. proper stderr for errors (works well with UNIX pipes, can also read STDIN using `input`)
-	* notes on syntax
-		1. function chaining using the pipe `->`
-		2. fat arrow functions `=>` return by default unless you include curly braces (then explicit return is required)
-		3. type checking is OPTIONAL (using `::`)but if annotations are provided, will be caught at compile time (default type is `Unknown`)
-			1. explicit casting can be done using the `as()` function
-			2. can include `const` to prevent mutations
-* Better personal analytics
-	* small js bundle
-	* doesn't sell user data!!
-	* things to track
-		* rough location of each user
-		* total users
-		* user visit distribution vs time
-* living room
-	* recreating [communal living spaces](/thoughts/communities) in digital space
-	* [ephemerality](thoughts/ephemereal%20content.md) and [digital permanence](thoughts/digital%20permanence.md)
 - tabfs but for emails
 	* [https://bazil.org/fuse/](https://bazil.org/fuse/)
 	- [https://blog.gopheracademy.com/advent-2014/fuse-zipfs/](https://blog.gopheracademy.com/advent-2014/fuse-zipfs/)
-	-   listen on any email server
+	-  listen on any email server
 -  deep foveal VR rendering
 
 ## Writing
@@ -188,18 +152,20 @@ tags:
 	- [[thoughts/CID|CID]] as the library of babel
 	- Interplanetary communication / state machine
 	- Packet switched electricity
-	- saving sun for later
-		- make something we take for granted extremely scarce
+	- saving sun for later (make something we take for granted extremely scarce)
 - Poetry
 	- We like sunset because it's the only time we see the cosmos move
 - Essays
+	- Aesthetics as a heuristic for non obvious optimality 
+	- Forgetting things makes the things you do actually know/remember important
+	- Arguments against complete dominance of cloud based compute rental akin to anti home rental arguments
 	- Why Minecraft
 		- https://minecraft.fandom.com/wiki/End_Poem#End_quote
 	- Analog software: software by analogy and by atomic building blocks that interface with each other
 		- We should be able to directly manipulate them, like files, rather than only indirectly work with them, like layer activations in a neural network.
 		- Software representations for similar ideas should be obviously similar in some way – they should click together, or look similar, or feel similar to the touch.
 		- Ideas should remember where they came from – what blog I copied it from, which author I quoted it from, and so on.
-	- essay on epistemic play + jestermaxxing + mill’s take on why censorship is unethical
+	- Essay on epistemic play + [[thoughts/Jestermaxxing]] + mill’s take on why censorship is unethical
 	- limits to [[thoughts/Byzantine Faults|BFT]]
 		- some malicious activity is indistinguishable from legitimate activity (e.g. deleting a document)
 			- *semantic* byzantine fault tolerance vs protocol byzantine fault tolerance
