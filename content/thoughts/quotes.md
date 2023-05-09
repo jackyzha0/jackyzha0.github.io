@@ -23,7 +23,7 @@ Some quotes to live by.
 19. “Genius is no more than childhood recaptured at will.” *(Charles Baudelaire)*
 20. “In place of occasional experiences of depth that renew and satisfy us, we are simply given an infinite surface upon which to skim indefinitely.” ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
 21. "Many a failure of love follows on the—usually false—opinion that we have exhausted the other person’s inside, that there is no further promise of depth." ([Source](https://theconvivialsociety.substack.com/p/what-you-get-is-the-world))
-22. "Exhaling does not take valuable time away from inhaling"
 23. "When the winds of change blow — some people build walls, others build windmills." — Chinese Proverb
 24. "Find out who you are and do it on purpose" – Dolly Parton
 25. "We cannot sow seeds with clenched fists. to sow, we must open our hands" (Adolfo Perez Esquivel)
+26. "The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently" -- David Graeber

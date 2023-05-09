@@ -12,7 +12,7 @@ Challenge: how do we reconcile concurrent updates?
 
 Two main families of algorithms
 - Conflict-free Replicated Data Types ([[thoughts/CRDT|CRDTs]]) -- persists the causal order of operations
-- Operational Transformation -- persists the final output of operations
+- [[thoughts/Operational Transform]] -- persists the final output of operations
 
 ## A spectrum of collaboration
 [Source](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous)

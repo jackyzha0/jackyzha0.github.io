@@ -7,6 +7,8 @@ aliases:
 - linearizability
 ---
 
+Types of convergence (when all replicas eventually agree)
+
 ## Definitions
 ### ACID Consistency
 The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time

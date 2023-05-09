@@ -51,7 +51,9 @@ tags:
 - https://thecreativeindependent.com/welcome/: love the use of reader messages (both audio and textual)
 - https://sashaportis.com/: fun use of text display
 - https://www.briewolfson.com/: clean, love the colourway
-- http://feral.earth/: computing that is tied to the real world through sensors
+- computing that is tied to the real world through sensors
+	- http://feral.earth/
+	- http://solarprotocol.net/
 - https://chia.design/: a portal/index into many worlds (a hubworld)
 - https://handwritten.blog/2022-10-01-hyperlinks-in-handwriting.html: handwritten blog posts with links
 - https://old.mark-beasley.com/peer-peer-sunset/index.html: peer-to-peer sunset experience
