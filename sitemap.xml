@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/Buddhist-Economics/</loc>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/antifragility/</loc>
     <lastmod>2023-04-30T18:06:25-07:00</lastmod>
   </url><url>
@@ -9,7 +18,7 @@
     <lastmod>2023-04-30T18:06:25-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/book/</loc>
-    <lastmod>2023-04-30T15:00:57-07:00</lastmod>
+    <lastmod>2023-05-07T18:58:13-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/ScrapScript/</loc>
     <lastmod>2023-04-30T18:06:25-07:00</lastmod>
@@ -17,14 +26,8 @@
     <loc>https://jzhao.xyz/thoughts/seeing/</loc>
     <lastmod>2023-04-30T15:00:57-07:00</lastmod>
   </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-04-30T18:06:25-07:00</lastmod>
-  </url><url>
     <loc>https://jzhao.xyz/thoughts/The-Anthropocene-Reviewed/</loc>
     <lastmod>2023-04-30T15:00:57-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2023-04-30T18:06:25-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/WebAssembly/</loc>
     <lastmod>2023-04-30T15:00:57-07:00</lastmod>
@@ -246,7 +249,7 @@
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/website-inspiration/</loc>
-    <lastmod>2023-04-27T16:01:51-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/map-as-territory/</loc>
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
@@ -306,7 +309,7 @@
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Games-Agency-as-Art/</loc>
-    <lastmod>2022-12-26T16:26:13-05:00</lastmod>
+    <lastmod>2023-05-07T18:58:13-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Seeing-like-a-State/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -330,7 +333,7 @@
     <lastmod>2023-02-11T22:17:33-08:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/LLMs/</loc>
-    <lastmod>2023-04-27T00:08:27-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/AI-alignment/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -936,13 +939,10 @@
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
-    <lastmod>2023-04-06T17:47:56-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consistency/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idempotence/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1278,7 +1278,7 @@
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Buddhism/</loc>
-    <lastmod>2022-04-18T21:51:19-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/emptiness/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1503,7 +1503,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/quotes/</loc>
-    <lastmod>2023-04-27T00:08:27-07:00</lastmod>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/mental-model/</loc>
     <lastmod>2023-03-18T17:33:30-07:00</lastmod>
@@ -1920,7 +1920,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idea-list/</loc>
-    <lastmod>2023-04-30T15:00:57-07:00</lastmod>
+    <lastmod>2023-05-07T18:58:13-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/attention-economy/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -2014,6 +2014,9 @@
   </url><url>
     <loc>https://jzhao.xyz/posts/hootsuite/</loc>
     <lastmod>2023-04-02T22:09:38-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
+    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/2022/</loc>
     <lastmod>2023-01-01T00:32:00-05:00</lastmod>

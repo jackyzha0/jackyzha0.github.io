@@ -159,13 +159,13 @@ Book Book, written by C. Thi Nguyen
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a415c219317649e45c3aa87af44698ed.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.32cf35f371956924e27ab2301d4660cf.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.9ff8b5d529f98bb6d637919f7961a7f9.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d645f322f52ac8c7a522650136fe154d.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -725,6 +725,7 @@ Dec 24, 2022
 <li>Harmony of action: your agency and action fitting the demands of the environment. e.g. during a difficult climb, figuring out you need to slide your hips over just enough to balance on a tiny foothold
 <ul>
 <li>This is a strict superset of the harmony of solution. It concerns not only how the solution fits the problem, but how my decision making and action generation were just right to generate the harmony of solution</li>
+<li>Effectively &lsquo;flow state&rsquo;</li>
 </ul>
 </li>
 <li>Harmony of capacity: the experience of engaging your abilities to their fullest potential. Arises from a fit between one&rsquo;s maximum skill level (their limit) and the demands of the task

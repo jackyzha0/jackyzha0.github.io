@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Buddhist Economics</title>
+      <link>https://jzhao.xyz/thoughts/Buddhist-Economics/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Buddhist-Economics/</guid>
+      <description>The Buddhist sees the essence of civilisation not in a multiplication of wants but in the purification of human character</description>
+    </item>
+    
+    <item>
       <title>Antifragility</title>
       <link>https://jzhao.xyz/thoughts/antifragility/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
@@ -2988,21 +2997,13 @@ Physical Time Two types of clock
     </item>
     
     <item>
-      <title>Conflict-free Replicated Data Type (CRDT)</title>
-      <link>https://jzhao.xyz/thoughts/CRDT/</link>
-      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
-      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
-    </item>
-    
-    <item>
       <title>Consistency</title>
       <link>https://jzhao.xyz/thoughts/consistency/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/consistency/</guid>
-      <description>Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time</description>
+      <description>Types of convergence (when all replicas eventually agree)
+Definitions ACID Consistency The state satisfies application-specific invariants (e.g. every course with students enrolled must have at least one lecturer) at any given point in time</description>
     </item>
     
     <item>
@@ -4099,7 +4100,8 @@ Well-built worlds enable new stories. Games and fiction are forms of worldbuildi
       <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/Buddhism/</guid>
-      <description>Four Noble Truths  Dukkha (Suffering) is an innate characteristic of existence Samudaya (Origin/Cause) of suffering is tanhā (craving) and fundamental ignorance.</description>
+      <description>Cease to do evil; try to do good
+ Four Noble Truths  Dukkha (Suffering) is an innate characteristic of existence Samudaya (Origin/Cause) of suffering is tanhā (craving) and fundamental ignorance.</description>
     </item>
     
     <item>
@@ -6474,6 +6476,16 @@ A (not so) brief exploration of how we tackle classifying intents in reflect.</d
       <description>(with insights from Calvin and Hobbes)
 Since I’ve started at Hootsuite, I have
  added and/or changed 6223 lines of code in 16 different repos closed 24 tickets made 4 new Slack emotes listened to almost 10,000 minutes of lofi had 1 amazing summer at Hootsuite  Including the amount of money I’ve spent on lunch this past summer, everything has been so much more than I expected it to be.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jzhao.xyz/thoughts/CRDT/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
+      <description>**&amp;mdash; title: &amp;ldquo;Conflict-free Replicated Data Type (CRDT)&amp;rdquo; date: 2022-05-05 tags:
+ sapling aliases: conflict-free replicated data type CvRDT CmRDT commutative replicated data type convergent replicated data type   Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>

@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Buddhist Economics</title>
+      <link>https://jzhao.xyz/thoughts/Buddhist-Economics/</link>
+      <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Buddhist-Economics/</guid>
+      <description>The Buddhist sees the essence of civilisation not in a multiplication of wants but in the purification of human character</description>
+    </item>
+    
+    <item>
       <title>Data changes the application</title>
       <link>https://jzhao.xyz/thoughts/data-changes-the-application/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
@@ -113,15 +122,6 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
       
       <guid>https://jzhao.xyz/thoughts/privacy/</guid>
       <description>Privacy isn&amp;rsquo;t about shutting out everyone and everything. Instead, privacy gives you the power to [[thoughts/agency|choose]] what and with whom you&amp;rsquo;ll share.</description>
-    </item>
-    
-    <item>
-      <title>Conflict-free Replicated Data Type (CRDT)</title>
-      <link>https://jzhao.xyz/thoughts/CRDT/</link>
-      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
-      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>
