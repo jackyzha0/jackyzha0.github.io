@@ -156,13 +156,13 @@ Integrity of information is critical to relationships of trust as we saw in the 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.32cf35f371956924e27ab2301d4660cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d645f322f52ac8c7a522650136fe154d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

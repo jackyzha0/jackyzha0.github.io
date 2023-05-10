@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.32cf35f371956924e27ab2301d4660cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d645f322f52ac8c7a522650136fe154d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1158,6 +1158,10 @@ Apr 15, 2023
     
       
       
+      
+    
+      
+      
       <li>
         <a href="/posts/me-myselves-and-i/" data-ctx="time" data-src="/posts/me-myselves-and-i" class="internal-link">Me, my selves, and I</a>
       </li>
@@ -1214,6 +1218,12 @@ Apr 15, 2023
       
       <li>
         <a href="/thoughts/the-garden-and-the-stream/" data-ctx="time" data-src="/thoughts/the-garden-and-the-stream" class="internal-link">The Garden and the Stream</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/thoughts/visualization/" data-ctx="thoughts/time" data-src="/thoughts/visualization" class="internal-link">Visualization</a>
       </li>
       
       

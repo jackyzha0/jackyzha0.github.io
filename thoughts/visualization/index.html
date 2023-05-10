@@ -8,20 +8,20 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Mostly from Envisioning Information by Edward R. Tufte
-High density visualization  High-density designs allow viewers to select, to narrate, to recast and personalize data for their own uses."
+    content="At their best, graphics are instruments for reasoning about quantitative information
+ Mostly from the books Envisioning Information and The Visual Display of Quantitative Information by Edward R."
   />
   <meta property="og:title" content="Visualization">
-  <meta property="og:description" content="Mostly from Envisioning Information by Edward R. Tufte
-High density visualization  High-density designs allow viewers to select, to narrate, to recast and personalize data for their own uses.">
+  <meta property="og:description" content="At their best, graphics are instruments for reasoning about quantitative information
+ Mostly from the books Envisioning Information and The Visual Display of Quantitative Information by Edward R.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/visualization/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Visualization" />
-  <meta name="twitter:description" content="Mostly from Envisioning Information by Edward R. Tufte
-High density visualization  High-density designs allow viewers to select, to narrate, to recast and personalize data for their own uses." />
+  <meta name="twitter:description" content="At their best, graphics are instruments for reasoning about quantitative information
+ Mostly from the books Envisioning Information and The Visual Display of Quantitative Information by Edward R." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -156,13 +156,13 @@ High density visualization  High-density designs allow viewers to select, to nar
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.32cf35f371956924e27ab2301d4660cf.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.d645f322f52ac8c7a522650136fe154d.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -418,6 +418,91 @@ Jul 10, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
 
 
 
@@ -429,7 +514,11 @@ Jul 10, 2022
 
 
 
-<p>Mostly from <em>Envisioning Information</em> by Edward R. Tufte</p>
+
+<blockquote>
+<p>At their best, graphics are instruments for reasoning about quantitative information</p>
+</blockquote>
+<p>Mostly from the books <em>Envisioning Information</em> and <em>The Visual Display of Quantitative Information</em> by Edward R. Tufte</p>
 <a href="#high-density-visualization"><h2 id="high-density-visualization"><span class="hanchor" ariaLabel="Anchor"># </span>High density visualization</h2></a>
 <blockquote>
 <p>High-density designs allow viewers to select, to narrate, to recast and personalize data for their own uses.</p>
@@ -438,7 +527,7 @@ Jul 10, 2022
 <p>Thin data prompts suspicions: &ldquo;What are they leaving out? Is that really everything they know? What are they hiding? Is that all they did?&rdquo;</p>
 <p>It is not how much information there is, but rather how effectively it is arranged.</p>
 <p><strong>Clutter and confusion are failures of design, not attributes of information</strong></p>
-<a href="#colour"><h3 id="colour"><span class="hanchor" ariaLabel="Anchor"># </span>Colour</h3></a>
+<a href="#colour"><h2 id="colour"><span class="hanchor" ariaLabel="Anchor"># </span>Colour</h2></a>
 <p>Fundamental uses of <a href="/thoughts/colour" rel="noopener" class="internal-link" data-src="/thoughts/colour">colour</a> in information design</p>
 <ul>
 <li>To label (colour as noun)</li>
@@ -446,6 +535,9 @@ Jul 10, 2022
 <li>To represent or imitate reality (colour as representation)</li>
 <li>To enliven it decorate</li>
 </ul>
+<a href="#time"><h2 id="time"><span class="hanchor" ariaLabel="Anchor"># </span>Time</h2></a>
+<p>See also: <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a></p>
+<p>The problem with time-series is that the simple passage of time is not a good explanatory variable: descriptive chronology is not <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> explanation. However, time-series plots can be moved toward causal explanation by smuggling additional variables into the graphic design</p>
 
 
     </article>
@@ -464,6 +556,10 @@ Jul 10, 2022
     
     
     
+    
+      
+      
+      
     
       
       
