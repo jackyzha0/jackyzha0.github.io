@@ -6,7 +6,9 @@ tags:
 - book
 ---
 
-Mostly from *Envisioning Information* by Edward R. Tufte
+> At their best, graphics are instruments for reasoning about quantitative information
+
+Mostly from the books *Envisioning Information* and *The Visual Display of Quantitative Information* by Edward R. Tufte
 
 ## High density visualization
 
@@ -20,9 +22,14 @@ It is not how much information there is, but rather how effectively it is arrang
 
 **Clutter and confusion are failures of design, not attributes of information**
 
-### Colour
+## Colour
 Fundamental uses of [[thoughts/colour]] in information design
 - To label (colour as noun)
 - To measure (colour as quantity)
 - To represent or imitate reality (colour as representation)
 - To enliven it decorate
+
+## Time
+See also: [[thoughts/time]]
+
+The problem with time-series is that the simple passage of time is not a good explanatory variable: descriptive chronology is not [[thoughts/causality|causal]] explanation. However, time-series plots can be moved toward causal explanation by smuggling additional variables into the graphic design

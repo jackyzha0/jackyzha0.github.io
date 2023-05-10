@@ -30,10 +30,12 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 * **are we human? notes on an archaeology of design** by Beatriz Colomina & Mark Wigley
 
 ## Current
-- **[[thoughts/A Pattern Language]]** by Christopher Alexander
+- none :)
 
 ## Past
 ### 2023
+- **[[thoughts/visualization|The Visual Display of Quantitative Information]]** by Edward R. Tufte
+- **[[thoughts/A Pattern Language]]** by Christopher Alexander
 * **Upstream: Selected Essays** by Mary Oliver
 * **Foundation** by Isaac Asimov
 * **[[thoughts/Tomorrow, and Tomorrow, and Tomorrow|Tomorrow, and Tomorrow, and Tomorrow]]** by Gabrielle Zevin
