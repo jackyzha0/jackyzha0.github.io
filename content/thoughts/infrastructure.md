@@ -20,7 +20,7 @@ Infrastructure should be
 ## What is infrastructure even?
 Which came first, the infrastructure or the applications that depend on it?
 
-> "You can’t build railroads before it is railroad time. _(Chuck Thacker)_"
+See also: [[thoughts/Myth of the Infrastructure Phase]]
 
 "infrastructure as potential energy held in suspension" (Boyer)
 

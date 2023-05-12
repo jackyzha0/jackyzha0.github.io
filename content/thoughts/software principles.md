@@ -10,13 +10,14 @@ tags:
 
 Inspired by [Urbit Precepts](https://urbit.org/docs/development/precepts)
 
-1. [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Avoid hosting like the plague. Make self-hosting easy
+1. [[thoughts/local-first software|Local first]]. Decentralized/[[thoughts/distributed systems|distributed systems]] second. Make self-hosting easy
 2. Apps should be treated like queries -- stateless. Local state should be avoided as much as possible, database is the source of truth.
 3. There is a latent cost to new features: [maintenance](thoughts/maintenance.md)
 4. Design with the goal of making atomic and reusable libraries (allow for [[thoughts/emergent behaviour]])
 5. Heuristics should only be used where determinism is infeasible
 6. Code courageously. "It's natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right."
 7. Apps should embrace gradual enrichment, [[thoughts/composable|composing]] smaller features to form more complex ones when necessary
+8. Dump the parts bucket onto the floor. As a first act before starting to build, a child will often spread out all of the parts on the floor. Make it obvious what tools the user has at their disposal to make the most out of the software ([[thoughts/constructionist]] learning)
 
 See also: [[thoughts/programming models]]
 

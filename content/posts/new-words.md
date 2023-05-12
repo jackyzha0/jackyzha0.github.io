@@ -76,7 +76,7 @@ need to be collectively forgotten. As we concluded earlier, this is incredibly d
 
 As we enter an age of digital permanency, we should normalize the [[thoughts/right to be forgotten|right to be forgotten]] for terminology. It should be normal for terminology to be forgotten -- for it to slip through the hands of time like sand.
 
-**P:** This ignores a lot of history, does it not? "By changing what we were, you change what we are and what we are going to be."[^5] This is a form of erasure through terminology change. By 'forgetting' terminology, you deny its existence.
+**P:** This ignores a lot of history, does it not? "By changing what we were, you change what we are and what we are going to be."[^5] This is a form of erasure through terminology change. By '[[thoughts/forgetting|forgetting]]' terminology, you deny its existence.
 
 **W:** I may have phrased my words poorly, that was not my intention. Maybe abandoned is a better word? I want to create dictionaries and glossaries that keep terminological history. A sort of 'append-only' record of how terminology has split, died, and evolved over time.
 

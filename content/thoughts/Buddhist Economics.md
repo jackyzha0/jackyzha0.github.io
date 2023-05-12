@@ -40,3 +40,14 @@ The latter matches my own personal aesthetics for beauty and form much better.
 
 ## On natural resources
 Just as a modern European economist would not consider it a great achievement if all European art treasures were sold to America at attractive prices, so the Buddhist economist would insist that a population basing its economic life on non-renewable fuels is living parasitically, on capital instead of income.
+
+## Waste Your Time, Your Life May Depend On It
+[The Convivial Society: Vol. 4, No. 8](https://theconvivialsociety.substack.com/p/waste-your-time-your-life-may-depend)
+
+> What precisely are we saving time to do?
+
+Within the order that generates the tyranny of tiny tasks, the one which privileges efficiency and tempts us with the promise of time-saved for the sake of some nebulous higher purpose, a human being is valuable only to the degree that they become sites of automated consumption and on-demand productivity.
+
+This external order also fosters a corresponding mode of being within us. We come to understand our own experience according to the logic of techno-economic order. We presume that our worth is bound up with our productivity. We enter into an adversarial relationship with time. We develop a distaste for rest. We forget how to play. Our relationships are [[thoughts/instrumentalism|instrumentalized]]. The world becomes to us, in [Hartmut Rosa’s](https://theconvivialsociety.substack.com/p/the-paradox-of-control#details) memorable phrase, nothing more than a series of points of aggressions, “all matters to be settled, attended to, mastered, completed, resolved, gotten out of the way.”
+
+**Care is ultimately what transforms the quality of our involvement and engagement with the world so that we pass from “getting things done” to living.**

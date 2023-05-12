@@ -15,6 +15,11 @@ How do your order the events in the Universe? The answer, as Lamport noted, is y
 
 See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/causality]], [[thoughts/clocks]]
 
+## At your own speed
+[Source](https://mindmud.substack.com/p/certainty)
+
+> I think this is a shame -- and love is my shining example. Call me crazy, but maybe it's a good sign when things feel remarkably simple and wordlessly right. And when they do, it's interesting to look around and notice how incredibly irrelevant speed is. Certainty means you're moving at the speed of [[thoughts/trust]] -- a personal pace that ultimately has no record to beat or even road to follow
+
 ## Saving Time, Discovering a Life Beyond the Clock
 > Exploring the social and material roots of the idea that time is money
 
@@ -53,7 +58,7 @@ See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/
 - On capturing time: "Time is slipping through your fingers and you want to grab onto that. What could be more human than that?"
 - "Like me, they have aged"
 
-![[thoughts/images/chronology.png]]
+![[thoughts/images/chronology.png|500]]
 
 ## Fools and their time metaphors
 [Source](https://aaronzlewis.com/blog/2019/02/11/fools-and-their-time-metaphors/)

@@ -17,6 +17,17 @@ adrienne maree brown described relationships like a spiderweb—diaphanous yet s
 
 Related: [Tribe flourishing](thoughts/tribe%20flourishing.md)
 
+## Overoptimization
+[Source](https://eliqian.substack.com/p/stop-trying-to-have-interesting-friends)
+
+> It doesn’t feel right to pressure people to be “interesting” in _your_ sense of the word. Everyone is interesting. Every person in the world has a _literal lifetime_ of experiences that have shaped who they are. They have internal thought processes and distinct worldviews that you won’t find within anyone else. It’s a matter of giving your interactions enough time and care to discover these.
+
+Instead:
+
+>  One thing I keep coming back to is _open-mindedness_. I’m drawn to people who don’t take themselves too seriously. People who move through life with a certain nonchalance that makes them eager for the unconventional and unusual. These people can laugh about anything and like to have fun.
+>  ...
+>  These friends _expand our boxes of possible experience_. Spontaneity and unconstrained eagerness feel good because they are exercises in doing without thinking too much. Having the thought _I want to do this_, and then immediately being able to do the thing with people you care about silences the voice of “reason” in our heads.
+
 ## Unknown unknowns
 Friends shouldn't tell you exactly how to live your life but rather to help you reflect back parts of your self that you may not be aware of.
 

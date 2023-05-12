@@ -26,3 +26,9 @@ See also: [[thoughts/texture mapping]]
 
 Randomness parameter is actually the size of the patch (less randomness means sample is larger thus more accurate)
 
+## Grainy Film Texture 
+See also: [[thoughts/noise]]
+
+Normally done with simple white noise SVG applied to background with pass through, max exposure and contrast, and add some opacity
+
+[SVG noise generator](https://fffuel.co/nnnoise/)

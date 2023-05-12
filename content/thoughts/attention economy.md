@@ -5,6 +5,9 @@ tags:
 - sapling
 ---
 
+> "... a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes. What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention, and a need to allocate that attention efficiently among the overabundance of information sources that might consume it." 
+   ([Herb Simon (1971)](http://nmhammersen.files.wordpress.com/2012/11/simon_designing-organizations-for-an-information-rich-world.pdf))
+
 Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services. “Ours is not truly an information economy,”
 
 ## As a commodity

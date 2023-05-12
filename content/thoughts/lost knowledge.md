@@ -7,7 +7,7 @@ tags:
 
 Source: [Searching for Lost Knowledge in the Age of Intelligent Machines in *The Atlantic*](https://www.theatlantic.com/technology/archive/2016/12/the-search-for-lost-knowledge/506879/)
 
-> What if other objects like the Antikythera Mechanism have already been discovered and forgotten? There may well be documented evidence of such finds somewhere in the world, in the vast archives of human research, scholarly and otherwise, but simply no way to search for them. Until now.
+> What if other objects like the Antikythera Mechanism have already been discovered and [[thoughts/forgetting|forgotten]]? There may well be documented evidence of such finds somewhere in the world, in the vast archives of human research, scholarly and otherwise, but simply no way to search for them. Until now.
 
 Undiscovered public knowledge: coined by Don Swanson. A problem that occurs when researchers arrive at conclusions independently from one another, creating fragments of understanding that are “logically related but never retrieved, brought together, [or] interpreted,”
 
