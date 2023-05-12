@@ -159,13 +159,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -677,6 +677,49 @@ Feb 20, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -694,7 +737,7 @@ Feb 20, 2022
 <p>Inspired by 
 <a href="https://urbit.org/docs/development/precepts" rel="noopener">Urbit Precepts</a></p>
 <ol>
-<li><a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">Local first</a>. Decentralized/<a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a> second. Avoid hosting like the plague. Make self-hosting easy</li>
+<li><a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">Local first</a>. Decentralized/<a href="/thoughts/distributed-systems" rel="noopener" class="internal-link" data-src="/thoughts/distributed-systems">distributed systems</a> second. Make self-hosting easy</li>
 <li>Apps should be treated like queries &ndash; stateless. Local state should be avoided as much as possible, database is the source of truth.</li>
 <li>There is a latent cost to new features: 
 
@@ -710,6 +753,7 @@ Feb 20, 2022
 <li>Heuristics should only be used where determinism is infeasible</li>
 <li>Code courageously. &ldquo;It&rsquo;s natural to feel fear of code; however, you must act as though you are able to master and change any part of it. To code courageously is to walk into any abyss, bring light, and make it right.&rdquo;</li>
 <li>Apps should embrace gradual enrichment, <a href="/thoughts/composable" rel="noopener" class="internal-link" data-src="/thoughts/composable">composing</a> smaller features to form more complex ones when necessary</li>
+<li>Dump the parts bucket onto the floor. As a first act before starting to build, a child will often spread out all of the parts on the floor. Make it obvious what tools the user has at their disposal to make the most out of the software (<a href="/thoughts/constructionist" rel="noopener" class="internal-link" data-src="/thoughts/constructionist">constructionist</a> learning)</li>
 </ol>
 <p>See also: <a href="/thoughts/programming-models" rel="noopener" class="internal-link" data-src="/thoughts/programming-models">programming models</a></p>
 <a href="#on-programming-advice"><h2 id="on-programming-advice"><span class="hanchor" ariaLabel="Anchor"># </span>On programming advice</h2></a>

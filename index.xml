@@ -7,6 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Abilene Paradox</title>
+      <link>https://jzhao.xyz/thoughts/Abilene-Paradox/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Abilene-Paradox/</guid>
+      <description>A group of people collectively decide on a course of action that is counter to the preferences of many or all of the individuals in the group</description>
+    </item>
+    
+    <item>
+      <title>Forgetting</title>
+      <link>https://jzhao.xyz/thoughts/forgetting/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/forgetting/</guid>
+      <description>Forgetting things makes the things you do actually know/remember important.
+See also: [[thoughts/right to be forgotten]], [[thoughts/lost knowledge]]
+What if books and essays needed their words to be marked up/scribbled on/highlighted regularly or they would fade away?</description>
+    </item>
+    
+    <item>
+      <title>Myth of the Infrastructure Phase</title>
+      <link>https://jzhao.xyz/thoughts/Myth-of-the-Infrastructure-Phase/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Myth-of-the-Infrastructure-Phase/</guid>
+      <description>Source
+Apps inspire infrastructure. Then that infrastructure enables new apps.
+The history of new technologies shows that apps beget infrastructure, not the other way around.</description>
+    </item>
+    
+    <item>
       <title>Buddhist Economics</title>
       <link>https://jzhao.xyz/thoughts/Buddhist-Economics/</link>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
@@ -3397,7 +3428,7 @@ Debates from Classical South Asia Right and wrong aren’t directly perceptible 
       
       <guid>https://jzhao.xyz/thoughts/lost-knowledge/</guid>
       <description>Source: Searching for Lost Knowledge in the Age of Intelligent Machines in The Atlantic
- What if other objects like the Antikythera Mechanism have already been discovered and forgotten?</description>
+ What if other objects like the Antikythera Mechanism have already been discovered and [[thoughts/forgetting|forgotten]]?</description>
     </item>
     
     <item>
@@ -6181,7 +6212,7 @@ Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/opt
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  quartz v4  side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland voice over support, similar to substack rewrite for v4 to make it a CLI binary that is a one-line install  quartz new: make a fresh, empty quartz with CLI prompts for setup  walks through all steps with dialog prompts for confirmation at each step should make onboarding significantly easier   quartz import: import an existing folder  Can write custom parsers for different flavours of Markdown.</description>
+      <description>Technical  quartz v4  lastmod diagram that toggles in darkmode side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland voice over support, similar to substack latex graph contextual backlinks command bar search admonition callouts light/dark mode clipboard + title for codeblocks actual search page i18n   markup any site with a webcrawler + yjs + tldraw  markupthis.</description>
     </item>
     
     <item>
@@ -6190,7 +6221,7 @@ Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/opt
       <pubDate>Thu, 17 Jun 2021 00:27:02 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/attention-economy/</guid>
-      <description>Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services.</description>
+      <description>&amp;ldquo;&amp;hellip; a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes.</description>
     </item>
     
     <item>

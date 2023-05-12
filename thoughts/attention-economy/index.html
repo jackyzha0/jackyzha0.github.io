@@ -8,17 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services."
+    content="&ldquo;&hellip; a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes."
   />
   <meta property="og:title" content="Attention Economy">
-  <meta property="og:description" content="Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services.">
+  <meta property="og:description" content="&ldquo;&hellip; a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/attention-economy/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Attention Economy" />
-  <meta name="twitter:description" content="Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of [[thoughts/types of goods|goods]] and services." />
+  <meta name="twitter:description" content="&ldquo;&hellip; a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -510,6 +510,11 @@ Jun 17, 2021
 
 
 
+<blockquote>
+<p>&ldquo;&hellip; a wealth of information means a dearth of something else - a scarcity of whatever it is that information consumes. What information consumes is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention, and a need to allocate that attention efficiently among the overabundance of information sources that might consume it.&rdquo;
+(
+<a href="http://nmhammersen.files.wordpress.com/2012/11/simon_designing-organizations-for-an-information-rich-world.pdf" rel="noopener">Herb Simon (1971)</a>)</p>
+</blockquote>
 <p>Michael Goldhaber, who, in a series of essays in the late 1990s, argued that a new “attention economy” was emerging alongside the traditional economy of <a href="/thoughts/types-of-goods" rel="noopener" class="internal-link" data-src="/thoughts/types-of-goods">goods</a> and services. “Ours is not truly an information economy,”</p>
 <a href="#as-a-commodity"><h2 id="as-a-commodity"><span class="hanchor" ariaLabel="Anchor"># </span>As a commodity</h2></a>
 <p><a href="/thoughts/attention" rel="noopener" class="internal-link" data-src="/thoughts/attention">Attention</a> as a commodity, it is increasingly competitive to compete for everyone&rsquo;s attention. People are not just the products but also the producers of the product (data).</p>

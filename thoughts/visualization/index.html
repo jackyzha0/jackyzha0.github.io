@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.48274f1b9de81164fe7438c9f539a7ac.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.93aad0273f45b912933273f4320ddf47.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -538,6 +538,20 @@ Jul 10, 2022
 <a href="#time"><h2 id="time"><span class="hanchor" ariaLabel="Anchor"># </span>Time</h2></a>
 <p>See also: <a href="/thoughts/time" rel="noopener" class="internal-link" data-src="/thoughts/time">time</a></p>
 <p>The problem with time-series is that the simple passage of time is not a good explanatory variable: descriptive chronology is not <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal</a> explanation. However, time-series plots can be moved toward causal explanation by smuggling additional variables into the graphic design</p>
+<p>One of the deepest and most powerful ideas in mathematics is the relationship between a differential formulation (such as a step-by-step process, like our &ldquo;draw&rdquo; function) and its integrated form (such as a function of time, or plot over time). (from <em>
+<a href="http://worrydream.com/LearnableProgramming" rel="noopener">Learnable Programming</a></em>)</p>
+<a href="#links-causal-arrows-networks"><h2 id="links-causal-arrows-networks"><span class="hanchor" ariaLabel="Anchor"># </span>Links, Causal Arrows, Networks</h2></a>
+<p>
+<a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg" rel="noopener">Source</a> and 
+<a href="http://www.visualcomplexity.com/vc/index.cfm" rel="noopener">catalogue</a></p>
+<p>Serving simultaneously as images, equations, and verbal summaries, Feynmann diagrams are multimodal and thus, in practice, often modeless</p>
+<p>General rules of thumbs:</p>
+<ul>
+<li>Focus on causality. Uncertainties in causal links can sometimes be shown graphically; the SARS diagram indicates uncertain transmission routes with dotted arrows</li>
+<li>Multiple sources and levels of data</li>
+<li>Annotated linking lines. Links and arrows should have an appropriate specificity: when and how the link operates, strength and persistence of the link, credibility of evidence supporting the link</li>
+<li>Annotated nouns. Things in diagrams should be appropriately described</li>
+</ul>
 
 
     </article>
