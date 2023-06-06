@@ -2,8 +2,9 @@
 public
 resources
 .idea
-content/.obsidian
 content/private
+content/.obsidian/plugins
+content/.obsidian/themes
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
 linkmap

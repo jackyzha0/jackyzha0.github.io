@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "690044a7e2df5f4b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c540ae0597108c0b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "thoughts/NVIM Cheatsheet.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ad6985779a919fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "f256953e07bac89c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9cc127d67e11e5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cc16a801e5c2da25",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Mill's",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 285,
+    "collapsed": true
+  },
+  "right": {
+    "id": "14556c70f668b936",
+    "type": "split",
+    "children": [
+      {
+        "id": "b926d12bde0c2d98",
+        "type": "tabs",
+        "dimension": 37.3904576436222,
+        "children": [
+          {
+            "id": "c0f5601234a200f2",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "thoughts/NVIM Cheatsheet.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "tag:#evergreen",
+                      "color": {
+                        "a": 1,
+                        "rgb": 3849885
+                      }
+                    },
+                    {
+                      "query": "tag:#Seed",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14864239
+                      }
+                    },
+                    {
+                      "query": "tag:#Sapling",
+                      "color": {
+                        "a": 1,
+                        "rgb": 9362808
+                      }
+                    },
+                    {
+                      "query": "tag:#Fruit",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14766674
+                      }
+                    }
+                  ],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -0.5,
+                  "nodeSizeMultiplier": 1.92021169354839,
+                  "lineSizeMultiplier": 2.14845412234043,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4810504119255846,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "fd003520183afbbb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "522f8ae0929bb5af",
+        "type": "tabs",
+        "dimension": 62.60954235637781,
+        "children": [
+          {
+            "id": "ba6c1077b4b291fd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "thoughts/NVIM Cheatsheet.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "1d5b9c0161eaa2a0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "thoughts/NVIM Cheatsheet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "5e77b92678dd5254",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "thoughts/NVIM Cheatsheet.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5,
+    "collapsed": true
+  },
+  "active": "c540ae0597108c0b",
+  "lastOpenFiles": [
+    "thoughts/idea list.md",
+    "thoughts/NVIM Cheatsheet.md",
+    "books/index.md",
+    "thoughts/consciousness.md",
+    "thoughts/censorship.md",
+    "thoughts/Weaving the Web.md",
+    "thoughts/privacy.md",
+    "thoughts/Social Contract Theory.md",
+    "thoughts/Precautionary Principle.md",
+    "thoughts/ethics.md"
+  ]
+}

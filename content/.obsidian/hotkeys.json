@@ -1,0 +1,36 @@
+{
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": ","
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "."
+    }
+  ],
+  "global-search:open": [],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ]
+}

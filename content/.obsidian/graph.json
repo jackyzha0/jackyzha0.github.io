@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#evergreen",
+      "color": {
+        "a": 1,
+        "rgb": 7525820
+      }
+    },
+    {
+      "query": "tag:#Seed",
+      "color": {
+        "a": 1,
+        "rgb": 13809545
+      }
+    },
+    {
+      "query": "tag:#Sapling",
+      "color": {
+        "a": 1,
+        "rgb": 4691045
+      }
+    },
+    {
+      "query": "tag:#Fruit",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1.2,
+  "nodeSizeMultiplier": 1.805859375,
+  "lineSizeMultiplier": 0.9708984375,
+  "collapse-forces": false,
+  "centerStrength": 0.490359042553192,
+  "repelStrength": 16.1801861702128,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 1.2049993543302893,
+  "close": true
+}
