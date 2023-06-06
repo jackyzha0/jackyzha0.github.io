@@ -154,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -370,7 +370,7 @@ Nov 29, 2022
                                 <h3><a href="https://jzhao.xyz/posts/bft-json-crdt/">Building a BFT JSON CRDT</a></h3>
                             </div>
                             <p class="meta">
-                            5750 words on 
+                            5751 words on 
 Nov 16, 2022
 
  
@@ -441,7 +441,7 @@ Aug 21, 2022
                                 <h3><a href="https://jzhao.xyz/thoughts/forgetting/">Forgetting</a></h3>
                             </div>
                             <p class="meta">
-                                154 words on May 12, 2023
+                                154 words on Jun 6, 2023
                             </p>
                             <ul class="tags">
     

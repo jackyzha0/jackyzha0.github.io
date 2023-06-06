@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -433,6 +433,7 @@ Dec 15, 2021
 <li>&ldquo;Find out who you are and do it on purpose&rdquo; – Dolly Parton</li>
 <li>&ldquo;We cannot sow seeds with clenched fists. to sow, we must open our hands&rdquo; (Adolfo Perez Esquivel)</li>
 <li>&ldquo;The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently&rdquo; &ndash; David Graeber</li>
+<li>&ldquo;Life can only be understood backwards but it must be lived forwards&rdquo; (Soren Kierkegaard)</li>
 </ol>
 
 

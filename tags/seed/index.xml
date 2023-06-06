@@ -2288,10 +2288,10 @@ Primarily studied in the synchronous [[thoughts/system model|system model]]. Thr
     
     <item>
       <title>33% Impossibility Result</title>
-      <link>https://jzhao.xyz/thoughts/33-Impossibility-Result/</link>
+      <link>https://jzhao.xyz/thoughts/33-percent-Impossibility-Result/</link>
       <pubDate>Sun, 03 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jzhao.xyz/thoughts/33-Impossibility-Result/</guid>
+      <guid>https://jzhao.xyz/thoughts/33-percent-Impossibility-Result/</guid>
       <description>In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f + 1$ (equivalently, $f &amp;lt; \frac n 3$)</description>
     </item>
     
@@ -2478,7 +2478,7 @@ Provides:
       <guid>https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/</guid>
       <description>A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which uses much smaller key-sizes than [[thoughts/RSA|RSA]]
 Properties Specifically looking at Ed25519
-The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)</description>
+The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)</description>
     </item>
     
     <item>

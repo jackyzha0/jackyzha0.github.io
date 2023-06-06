@@ -156,13 +156,13 @@ TLDR; one of the first [[thoughts/State Machine Replication (SMR)|state machine 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1259,7 +1259,7 @@ Aug 5, 2022
 <li>The first phase guarantees proposal uniqueness through the formation of a quorum certificate (QC) consisting of $(n − f)$ votes.</li>
 <li>The second phase guarantees that the next leader can convince replicas to vote for a safe proposal.</li>
 </ol>
-<p>It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-Impossibility-Result">33% Impossibility Result</a> and only uses <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/digital-signatures#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed message digests</a>). This circumvents the <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> because it relies on a synchrony assumption to guarantee liveness, not safety.</p>
+<p>It offers both <a href="/thoughts/liveness" rel="noopener" class="internal-link" data-src="/thoughts/liveness">liveness</a> and <a href="/thoughts/safety" rel="noopener" class="internal-link" data-src="/thoughts/safety">safety</a> under the <a href="/thoughts/33-percent-Impossibility-Result" rel="noopener" class="internal-link" data-src="/thoughts/33-percent-Impossibility-Result">33 percent Impossibility Result</a> and only uses <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">public-key cryptography</a> during faults to prevent major speed bottlenecks (typically just uses <a href="/thoughts/digital-signatures#signed-message-digest" rel="noopener" class="internal-link" data-src="/thoughts/digital-signatures">signed message digests</a>). This circumvents the <a href="/thoughts/FLP-Result" rel="noopener" class="internal-link" data-src="/thoughts/FLP-Result">FLP Result</a> because it relies on a synchrony assumption to guarantee liveness, not safety.</p>
 <p>For a faster alternative, consider <a href="/thoughts/SBFT" rel="noopener" class="internal-link" data-src="/thoughts/SBFT">SBFT</a> (which provides a reduction from $O(n^2)$ to $O(n)$ normal-case communication and a best-case latency of only a single round of communication)</p>
 <p>The primary of a view is replica $p$ such that $p = v \mod |\mathcal{R}|$ where $\mathcal{R}$ is the set of replicas. Note that this <em>explicitly allows for faulty primaries</em> while the algorithm properly handles.</p>
 <p>The algorithm works as follows</p>

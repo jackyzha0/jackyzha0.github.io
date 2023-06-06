@@ -156,13 +156,13 @@ This usually happens when people commit probabilistic fallacies (e." />
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -544,7 +544,7 @@ Oct 19, 2022
 
 <p>A Dutch Book is a set of bets that you consider individually fair, but which collectively guarantee a loss</p>
 <p>This usually happens when people commit probabilistic fallacies (e.g. the conjunction fallacy, believing $P(A \land B | E) &gt; P(A | E)$ when this can never be the case). Another common mistake is <em>double counting</em> probabilities</p>
-<p>For example, if J believes that $P(heads) = P(tails) = \frac 2 3$, we can propose two bets</p>
+<p>For example, if J believes that $P(heads) = P(tails) = \frac{2}{3}$, we can propose two bets</p>
 <ol>
 <li>Pay $2; win $3 if heads, $0 if tails</li>
 <li>Pay $2; win $3 if tails, $0 if heads</li>

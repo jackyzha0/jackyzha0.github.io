@@ -13,7 +13,7 @@
   <meta property="og:title" content="33% Impossibility Result">
   <meta property="og:description" content="In general (assuming a partially-synchronous [[thoughts/system model|system model]]), a protocol can achieve [[thoughts/safety|safety]] all the time and additionally [[thoughts/liveness|liveness]] in synchronous conditions if and only if $n \geq 3f &#43; 1$ (equivalently, $f &lt; \frac n 3$)">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jzhao.xyz/thoughts/33-Impossibility-Result/">
+  <meta property="og:url" content="https://jzhao.xyz/thoughts/33-percent-Impossibility-Result/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -342,7 +342,7 @@ Jul 3, 2022
 
  
           
-<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/33%25%20Impossibility%20Result.md" rel="noopener">Edit Source</a>
+<a href="https://github.com/jackyzha0/quartz/tree/hugo/content/thoughts/33%20percent%20Impossibility%20Result.md" rel="noopener">Edit Source</a>
 
 
       </p>
@@ -707,13 +707,13 @@ Jul 3, 2022
       
       
       <li>
-        <a href="/thoughts/PBFT/" data-ctx="33% Impossibility Result" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
+        <a href="/thoughts/PBFT/" data-ctx="33 percent Impossibility Result" data-src="/thoughts/PBFT" class="internal-link">PBFT</a>
       </li>
       
       
       
       <li>
-        <a href="/thoughts/consensus/" data-ctx="33% Impossibility Result" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
+        <a href="/thoughts/consensus/" data-ctx="33 percent Impossibility Result" data-src="/thoughts/consensus" class="internal-link">Consensus</a>
       </li>
       
       

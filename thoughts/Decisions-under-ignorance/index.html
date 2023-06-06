@@ -156,13 +156,13 @@ Rules Dominance  Weak Dominance: act $a$ is as good or better than $b$ for each 
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -366,6 +366,9 @@ Sep 12, 2022
 
 
 
+
+  
+  
 
   
   
@@ -809,10 +812,10 @@ Sep 12, 2022
 <li>Adding irrelevant alternative acts potentially affects recommended acts</li>
 </ol>
 <a href="#principle-of-insufficient-reason-pir"><h3 id="principle-of-insufficient-reason-pir"><span class="hanchor" ariaLabel="Anchor"># </span>Principle of Insufficient Reason (PIR)</h3></a>
-<p>If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)</p>
+<p>If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, $1/n$)</p>
 <ul>
 <li>Assign each of the $n$ states probability $1/n$ and maximize the expected value</li>
-<li>For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} value(A, S_i)$</li>
+<li>For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} \textrm{value}(A, S_i)$</li>
 </ul>
 <p>This turns the problem into a <a href="/thoughts/Decisions-under-risk" rel="noopener" class="internal-link" data-src="/thoughts/Decisions-under-risk">DUR</a></p>
 <p>Objections</p>

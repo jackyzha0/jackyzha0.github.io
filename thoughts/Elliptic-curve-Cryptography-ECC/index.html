@@ -10,12 +10,12 @@
     name="description"
     content="A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which uses much smaller key-sizes than [[thoughts/RSA|RSA]]
 Properties Specifically looking at Ed25519
-The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)"
+The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)"
   />
   <meta property="og:title" content="Elliptic-curve Cryptography (ECC)">
   <meta property="og:description" content="A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which uses much smaller key-sizes than [[thoughts/RSA|RSA]]
 Properties Specifically looking at Ed25519
-The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)">
+The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/Elliptic-curve-Cryptography-ECC/">
   <meta property="og:width" content="200">
@@ -24,7 +24,7 @@ The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symm
   <meta name="twitter:title" content="Elliptic-curve Cryptography (ECC)" />
   <meta name="twitter:description" content="A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which uses much smaller key-sizes than [[thoughts/RSA|RSA]]
 Properties Specifically looking at Ed25519
-The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)" />
+The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symmetric about the x-axis)" />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -159,13 +159,13 @@ The formula follows something like $y^2 = x^3 &#43; ax &#43; b$ (which is symm
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.c2be8d48b3de81fa11e0a9e19ac1cdc3.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.417c132e6d6040536567ae8ef2e9e834.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.4e47f91150cf5e687fae9443216f6f62.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.03273346d4a35494c8e466ed33159c5a.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -491,20 +491,20 @@ Jun 23, 2022
 <p>A form of <a href="/thoughts/Asymmetric-Key-Cryptography" rel="noopener" class="internal-link" data-src="/thoughts/Asymmetric-Key-Cryptography">asymmetric cryptography</a> which uses much smaller key-sizes than <a href="/thoughts/RSA" rel="noopener" class="internal-link" data-src="/thoughts/RSA">RSA</a></p>
 <a href="#properties"><h2 id="properties"><span class="hanchor" ariaLabel="Anchor"># </span>Properties</h2></a>
 <p>Specifically looking at Ed25519</p>
-<p>The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)</p>
+<p>The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)</p>
 <p>Drawing a straight line through the curve will intersect no more than 3 points. A line between any two points will also intersect the curve at another place</p>
 <p>Let the starting point on the curve point be point A. The &ldquo;dot&rdquo; function is kind of like a game of billiards.</p>
 <p>In this game of billiards, you take a ball at point A, shoot it towards point B. When it hits the curve, the ball bounces either straight up (if it&rsquo;s below the x-axis) or straight down (if it&rsquo;s above the x-axis) to the other side of the curve. The point it lands on is C</p>
 <p>If the value C is over some maximum value (usually a prime), we modulus it with the maximum to end with a valid number.</p>
-<p>Illustrated example of A dot B = C:
-
+<p>Illustrated example of A dot B = C:</p>
+<p>
 
 <img src="https://blog.cloudflare.com/content/images/image02.gif" width="auto" alt="Billiard animation"  /></p>
 <p>It turns out that if you &ldquo;dot&rdquo; an initial point with itself $n$ times to arrive at a final point, finding out $n$ when you only know the final point and the first point is hard.</p>
 <p>$n$ is then the private key, point A dotted with itself $n$ times is the public key</p>
 <a href="#key-exchange"><h2 id="key-exchange"><span class="hanchor" ariaLabel="Anchor"># </span>Key Exchange</h2></a>
 <p>ECDHE stands for Elliptic Curve Diffie Hellman Ephemeral and is a key exchange mechanism based on elliptic curves</p>
-<p>Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C. Bindings and alternative implementations are also available.</p>
+<p>Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C Bindings and alternative implementations are also available.</p>
 
 
     </article>
