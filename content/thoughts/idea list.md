@@ -6,21 +6,6 @@ tags:
 ---
 
 ## Technical
-- quartz v4
-	- lastmod
-	- diagram that toggles in darkmode
-	- side notes https://christophlabacher.com/notes/ethnographic-research-on-dynamicland
-	- voice over support, similar to substack
-	- latex
-	- graph
-	- contextual backlinks
-	- command bar
-	- search
-	- admonition callouts
-	- light/dark mode
-	- clipboard + title for codeblocks
-	- actual search page
-	- i18n
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
 - daily link share

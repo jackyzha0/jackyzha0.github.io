@@ -20,7 +20,7 @@ A few examples:
 	- If each transaction only increases a user's account balance, then any combination of transactions will still satisfy $\mathcal I$
 	- Note that this example is *no longer* $\mathcal I$-confluent if transactions can deduct from a user's account balance
 		- Say $A$ has a balance of $50
-		- If $T_1$ results in deducting $40 from $A$ and $T_2$ results in deducting $25 from $A$, each transaction is valid on its own
+		- If $T_1$ results in deducting \$40 from $A$ and $T_2$ results in deducting \$25 from $A$, each transaction is valid on its own
 		- But when combined, it violates the invariant $\mathcal I$
 		- As a result, we can't model anything like a cryptocurrency using CRDTs
 - Not $\mathcal I$-confluent: consider an invariant $\mathcal I(S)$ that is true if there are no duplicate values in $S$ (i.e. ensure that $S$ is a set)

@@ -73,7 +73,7 @@ In [[thoughts/PBFT|PBFT]], [[thoughts/SBFT|SBFT]], and [[thoughts/HotStuff|HotSt
 
 ## Impossibility Results
 When consensus is impossible to achieve:
-1. [[thoughts/33% Impossibility Result|33% Impossibility Result]]
+1. [[thoughts/33 percent Impossibility Result|33 percent Impossibility Result]]
 2. [[thoughts/PSL-FLM Impossibility Result|PSL-FLM Impossibility Result]]
 3. [[thoughts/FLP Result|FLP Result]]
 4. [[thoughts/LR Permissionless Result|LR Permissionless Result]]

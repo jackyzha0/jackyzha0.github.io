@@ -27,3 +27,4 @@ Some quotes to live by.
 24. "Find out who you are and do it on purpose" – Dolly Parton
 25. "We cannot sow seeds with clenched fists. to sow, we must open our hands" (Adolfo Perez Esquivel)
 26. "The ultimate, hidden truth of the world is that it is something that we make, and could just as easily make differently" -- David Graeber
+27. "Life can only be understood backwards but it must be lived forwards" (Soren Kierkegaard)

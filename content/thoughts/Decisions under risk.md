@@ -40,7 +40,11 @@ See also: [[thoughts/Utilitarianism|utilitarianism]]
 ### Utility of Money
 Note that generally, there is a diminishing marginal [[thoughts/utility|utility]] of money
 
-For example, in a lottery where you win $1M for sure (A) or 50% chance to win $3M and 50% chance to get nothing (B), most people would choose A. The change in [[thoughts/utility|utility]] from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.
+For example, in a lottery where you 
+- A) win $1M for sure or 
+- B) 50% chance to win $3M and 50% chance to get nothing
+
+Most people would choose A. The change in [[thoughts/utility|utility]] from $1M to $3M is not enough to offset the drop in probability from certainty to 50%.
 
 ## Paradoxes and Puzzles
 ### Allais Paradox
@@ -79,7 +83,7 @@ A fair coin is tossed until it comes up Heads. If Heads appears for the first ti
 
 What is the EMV of this game? Technically, the St. Petersburg game involves infinitely many states
 
-$$EMV = (1/2)\$2 + (1/2)^2\$2 + \dots = 1 + 1 + \dots = \infty$$
+$$EMV = (1/2) \$2 + (1/2)^2 \$2 + \dots = 1 + 1 + \dots = \infty$$
 You should be willing to pay any price to play!
 
 Solutions
@@ -96,5 +100,5 @@ Given what you know, both possibilities are equally likely. Hence, the expected 
 Limit Counterargument
 - The present formulation of the paradox presupposes that there is no upper limit to how much money there is in the world
 - Suppose that there indeed is some upper limit L to how much money there is in the world.
-	- It then follows that no envelope can contain more than (2/3)L
-	- The other envelope would be certain to contain (1/3)L
+	- It then follows that no envelope can contain more than $(2/3)L$
+	- The other envelope would be certain to contain $(1/3)L$

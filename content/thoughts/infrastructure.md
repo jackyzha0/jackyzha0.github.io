@@ -14,7 +14,7 @@ Infrastructure should be
 
 [Source: Steps Toward an Ecology of Infrastructure: Design and Access for Large Information Spaces by *Susan Leigh Star and Karen Ruhleder*](https://www.jstor.org/stable/23010792)
 
-## Paltforms
+## Platforms
 "A platform is when the economic value of everybody that uses it exceeds the value of the company that creates it. then it's a platform"
 
 ## What is infrastructure even?

@@ -13,7 +13,7 @@ A form of [[thoughts/Asymmetric Key Cryptography|asymmetric cryptography]] which
 ## Properties
 Specifically looking at Ed25519
 
-The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)
+The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric about the x-axis)
 
 Drawing a straight line through the curve will intersect no more than 3 points. A line between any two points will also intersect the curve at another place
 
@@ -25,6 +25,7 @@ If the value C is over some maximum value (usually a prime), we modulus it with 
 
 
 Illustrated example of A dot B = C:
+
 ![Billiard animation](https://blog.cloudflare.com/content/images/image02.gif)
 
 It turns out that if you "dot" an initial point with itself $n$ times to arrive at a final point, finding out $n$ when you only know the final point and the first point is hard.
@@ -34,4 +35,4 @@ $n$ is then the private key, point A dotted with itself $n$ times is the public 
 ## Key Exchange
 ECDHE stands for Elliptic Curve Diffie Hellman Ephemeral and is a key exchange mechanism based on elliptic curves
 
-Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C. Bindings and alternative implementations are also available.
+Curve25519 is a popular set of elliptic curve parameters and reference implementation by Daniel J. Bernstein in C Bindings and alternative implementations are also available.

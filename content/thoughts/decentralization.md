@@ -63,7 +63,7 @@ To counteract this,
 - use [proof of stake](thoughts/proof%20of%20stake.md) to move away from hardware centralization risk
 
 #### Attack Resistance
-From a purely mathematical and [[thoughts/game theory|game theory]] perspective, decentralization may not even matter. In a finality reversion (e.g. 51% attack), a huge loss of say $50M is still $50M regardless of whether you have validators in 1 org or 10.
+From a purely mathematical and [[thoughts/game theory|game theory]] perspective, decentralization may not even matter. In a finality reversion (e.g. 51% attack), a huge loss of say \$50M is still \$50M regardless of whether you have validators in 1 org or 10.
 
 However, after considering coercion, decentralization becomes much more important. It's much harder to threaten 100 people than 1.
 

@@ -15,3 +15,8 @@ aliases:
 	1. MD5: compute a 128-bit message digest in a 4-step process
 	2. SHA-1: US NIST standard, 160-bit digest
 	3. SHA-256 and SHA-512 are more secure
+
+## Homomorphic Hashes
+`bromberg_sl2` is hash function that provides a monoid homomorphism
+
+This means there is a cheap operation `*` such that given strings s1 and s2, `H(s1 ++ s2) = H(s1) * H(s2)`

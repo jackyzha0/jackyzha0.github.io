@@ -10,7 +10,7 @@ A Dutch Book is a set of bets that you consider individually fair, but which col
 
 This usually happens when people commit probabilistic fallacies (e.g. the conjunction fallacy, believing $P(A \land B | E) > P(A | E)$ when this can never be the case). Another common mistake is *double counting* probabilities
 
-For example, if J believes that $P(heads) = P(tails) = \frac 2 3$, we can propose two bets
+For example, if J believes that $P(heads) = P(tails) = \frac{2}{3}$, we can propose two bets
 1. Pay $2; win $3 if heads, $0 if tails
 2. Pay $2; win $3 if tails, $0 if heads
 

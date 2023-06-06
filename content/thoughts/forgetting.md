@@ -5,7 +5,6 @@ tags:
 - seed
 aliases:
 - forgotten
-- 
 ---
 
 Forgetting things makes the things you do actually know/remember important.

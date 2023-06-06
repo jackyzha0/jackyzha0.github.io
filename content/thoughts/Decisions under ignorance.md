@@ -50,10 +50,10 @@ Objections
 2. Adding irrelevant alternative acts potentially affects recommended acts
 
 ### Principle of Insufficient Reason (PIR)
-If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, 1/n)
+If there are n possible states and you have no reason to believe any of them more likely than any other, then it is rational to assign each state equal probability (namely, $1/n$)
 
 - Assign each of the $n$ states probability $1/n$ and maximize the expected value
-- For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} value(A, S_i)$
+- For an act $A$, calculate $\sum_{i=1}^n \frac{1}{n} \textrm{value}(A, S_i)$
 
 This turns the problem into a [[thoughts/Decisions under risk|DUR]]
 
