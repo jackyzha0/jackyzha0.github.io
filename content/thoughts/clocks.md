@@ -19,7 +19,7 @@ Two types of clock
 - Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation
 - International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency
 - Compromise, UTC is TAI with corrections to account for Earth rotation
-- Unix Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds
+- [[thoughts/Unix|Unix]] Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds
 - ISO8601: year, month, day, hour, minute, second, and timezone offset relative to UTC
 
 We periodically adjust our local clocks with a server that has a more accurate time source using [[thoughts/Network Time Protocol|Network Time Protocol]] (NTP) or Precision Time Protocol (PTP)

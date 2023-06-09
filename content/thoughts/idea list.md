@@ -6,6 +6,9 @@ tags:
 ---
 
 ## Technical
+- codemirror but CRDT + TreeSitter
+	- smart [[thoughts/git|git]] merges
+	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - markup any site with a webcrawler + yjs + tldraw
 	- markupthis.site is not taken!!
 - daily link share
@@ -36,8 +39,6 @@ tags:
 - a text experience where latency increases as more texts are sent
 - what does entropy + erosion of data look like?
 	- is they ways to make [[thoughts/cryptography|cryptography]] that are valid in time windows?
-- treesitter based [[thoughts/CRDT]] for smart [[thoughts/git|git]] merges
-	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - big touchscreen desk
 	- what if i just got a huge old flatscreen tv
 	- mounted 4 pressure sensors on each corner and then got a big sheet of thin glass

@@ -5,6 +5,11 @@ tags:
 - seed
 ---
 
+## Overlay File System
+[Source](https://docs.kernel.org/filesystems/overlayfs.html)
+
+Sometimes referred to as union-filesystems. You can think about it like different 'layers' of file systems, much like those laminated overhead projector sheets. If there are duplicated files, the file from a higher layer will take precedence.
+
 ## Virtual Distributed File System
 From [Alluxio's Technical Paper by Haoyuan Li](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-29.pdf)
 

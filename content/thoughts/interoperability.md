@@ -38,7 +38,7 @@ Apps in this operating system then declare 'default' apps for certain data types
 
 Ability to not only source local data but remote data too -> fetching from URLs, feeds, etc. 
 
-UNIX-level [[thoughts/composable|composability]] -- apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??). 
+[[thoughts/Unix|UNIX]]-level [[thoughts/composable|composability]] -- apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??). 
 
 Auto-grouping of similar data? Set-theory for data?
 

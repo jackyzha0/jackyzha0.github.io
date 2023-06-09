@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "1ed1234d87d8bdf8",
+        "id": "fcbe0294f0178831",
         "type": "tabs",
         "children": [
           {
-            "id": "e07fb724f59ec6f2",
+            "id": "611e7656f8d0a636",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/linear regression.md",
+                "file": "thoughts/file system.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d010c5c191af785",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/Unix.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa8eab2c437b7f5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/Operational Transform.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a822ed958c18594",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/CRDT.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285
+    "width": 211.5,
+    "collapsed": true
   },
   "right": {
     "id": "14556c70f668b936",
@@ -86,7 +124,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "thoughts/linear regression.md",
+                "file": "thoughts/CRDT.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -168,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thoughts/linear regression.md",
+                "file": "thoughts/CRDT.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -185,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thoughts/linear regression.md",
+                "file": "thoughts/CRDT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -197,7 +235,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thoughts/linear regression.md"
+                "file": "thoughts/CRDT.md"
               }
             }
           }
@@ -205,7 +243,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 300.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,12 +253,22 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "omnisearch:Omnisearch": false
+      "markdown-importer:Open format converter": false
     }
   },
-  "active": "e07fb724f59ec6f2",
+  "active": "3a822ed958c18594",
   "lastOpenFiles": [
+    "thoughts/idea list.md",
+    "thoughts/CRDT.md",
+    "thoughts/Operational Transform.md",
+    "thoughts/Strangler Fig Pattern.md",
+    "thoughts/images/strangler fig.png",
+    "thoughts/Unix.md",
+    "thoughts/images/pid1.png",
+    "posts/towards-data-neutrality.md",
+    "thoughts/file system.md",
+    "thoughts/pid1.md",
+    "thoughts/linear regression.md",
     "thoughts/Algorithms of Oppression.md",
     "thoughts/A Tale for the Time Being.md",
     "thoughts/33 percent Impossibility Result.md",
@@ -236,8 +285,6 @@
     "thoughts/images/vector clock example.png",
     "thoughts/images/upwell-merge.png",
     "thoughts/images/tty-example.png",
-    "thoughts/images/trust-overlay-network.png",
-    "thoughts/images/trust-ladder.png",
     "thoughts/virtue ethics.md",
     "thoughts/wood wide web.md",
     "thoughts/zero sum.md",
@@ -247,15 +294,6 @@
     "thoughts/website inspiration.md",
     "thoughts/web3.md",
     "thoughts/web3 critique.md",
-    "thoughts/walking.md",
-    "thoughts/vr.md",
-    "thoughts/visualization.md",
-    "thoughts/virtual worlds.md",
-    "thoughts/verisimilitude.md",
-    "thoughts/value.md",
-    "thoughts/value setting.md",
-    "thoughts/utopia.md",
-    "thoughts/utility.md",
     "thoughts/images",
     "thoughts",
     "templates",

@@ -1,4 +1,4 @@
-**---
+---
 title: "Conflict-free Replicated Data Type (CRDT)"
 date: 2022-05-05
 tags:
@@ -113,3 +113,12 @@ Upgrading network assumption from asynchronous to partially synchronous enables 
 ## Readings
 - [A comprehensive study of CRDTs](https://hal.inria.fr/inria-00555588/document) 
 - [Conflict-free Replicated Data Types: An Overview](https://arxiv.org/pdf/1806.10254.pdf)
+
+## ProseMirror + CRDTs
+[Source](https://marijnhaverbeke.nl/blog/collaborative-editing.html)
+
+`dmonad` (creator of Yjs) on a ProseMirror plugin for Yjs:
+
+> Mapping a CRDT to a ProseMirror document is not always possible, because ProseMirror has a schema that the document needs to comply to. E.g. given a `blockquote` that must have at least one child. If `client1` deletes the first child, and `client2` concurrently deletes the second child, you may end up with a `blockquote` without children (well, that depends on the CRDT). In this case I simply delete the node that does not comply with the schema anymore.
+
+Enforcing that a CRDT complies to a schema might be impossible without an inordinate amount of bookkeeping. But something you could try is to create a _view_ on the data that complies to the schema. For example, if a blockquote does not have any children, ignore it.
