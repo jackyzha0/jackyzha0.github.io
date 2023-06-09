@@ -8,20 +8,17 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="**&mdash; title: &ldquo;Conflict-free Replicated Data Type (CRDT)&rdquo; date: 2022-05-05 tags:
- sapling aliases: conflict-free replicated data type CvRDT CmRDT commutative replicated data type convergent replicated data type   Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])."
+    content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])."
   />
-  <meta property="og:title" content="">
-  <meta property="og:description" content="**&mdash; title: &ldquo;Conflict-free Replicated Data Type (CRDT)&rdquo; date: 2022-05-05 tags:
- sapling aliases: conflict-free replicated data type CvRDT CmRDT commutative replicated data type convergent replicated data type   Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).">
+  <meta property="og:title" content="Conflict-free Replicated Data Type (CRDT)">
+  <meta property="og:description" content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/CRDT/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="**&mdash; title: &ldquo;Conflict-free Replicated Data Type (CRDT)&rdquo; date: 2022-05-05 tags:
- sapling aliases: conflict-free replicated data type CvRDT CmRDT commutative replicated data type convergent replicated data type   Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])." />
+  <meta name="twitter:title" content="Conflict-free Replicated Data Type (CRDT)" />
+  <meta name="twitter:description" content="Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]])." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -33,7 +30,7 @@
   
 
   <title>
-    jzhao.xyz
+    Conflict-free Replicated Data Type (CRDT)
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -156,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -338,10 +335,10 @@
 
 
     <article>
-      
+      <h1>Conflict-free Replicated Data Type (CRDT)</h1>
       <p class="meta">
         Last updated 
-May 9, 2023
+May 5, 2022
 
  
           
@@ -351,6 +348,8 @@ May 9, 2023
       </p>
       <ul class="tags">
     
+    <li><a href="https://jzhao.xyz/tags/sapling/">Sapling</a></li>
+    
 </ul>
 
       
@@ -444,6 +443,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -486,6 +493,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -538,6 +553,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -580,6 +603,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -632,6 +663,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -674,6 +713,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -726,6 +773,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -768,6 +823,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -820,6 +883,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -862,6 +933,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -914,6 +993,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -956,6 +1043,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1008,6 +1103,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -1050,6 +1153,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1102,6 +1213,14 @@ May 9, 2023
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
 
   
 
@@ -1144,6 +1263,14 @@ May 9, 2023
 
   
   
+  
+    
+  
+    
+  
+    
+  
+    
   
     
   
@@ -1200,20 +1327,6 @@ May 9, 2023
 
 
 
-<p>**&mdash;
-title: &ldquo;Conflict-free Replicated Data Type (CRDT)&rdquo;
-date: 2022-05-05
-tags:</p>
-<ul>
-<li>sapling
-aliases:</li>
-<li>conflict-free replicated data type</li>
-<li>CvRDT</li>
-<li>CmRDT</li>
-<li>commutative replicated data type</li>
-<li>convergent replicated data type</li>
-</ul>
-<hr>
 <p>Provides <a href="/thoughts/causality" rel="noopener" class="internal-link" data-src="/thoughts/causality">causal consistency</a> as well as <a href="/thoughts/consistency#eventual-consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">strong eventual consistency</a>: over time, all actors converge to same state without data loss <em>but</em> there is no guarantee of exact same state across actors at any given moment (not <a href="/thoughts/consistency#acid-consistency" rel="noopener" class="internal-link" data-src="/thoughts/consistency">ACID</a>).</p>
 <blockquote>
 <p>Note: In general, maintaining global invariants (e.g. shapes such as a tree or a DAG), cannot be done by a CRDT. Global invariant cannot be determined locally; maintaining it requires synchronisation.</p>
@@ -1329,6 +1442,14 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <li>
 <a href="https://arxiv.org/pdf/1806.10254.pdf" rel="noopener">Conflict-free Replicated Data Types: An Overview</a></li>
 </ul>
+<a href="#prosemirror--crdts"><h2 id="prosemirror--crdts"><span class="hanchor" ariaLabel="Anchor"># </span>ProseMirror + CRDTs</h2></a>
+<p>
+<a href="https://marijnhaverbeke.nl/blog/collaborative-editing.html" rel="noopener">Source</a></p>
+<p><code>dmonad</code> (creator of Yjs) on a ProseMirror plugin for Yjs:</p>
+<blockquote>
+<p>Mapping a CRDT to a ProseMirror document is not always possible, because ProseMirror has a schema that the document needs to comply to. E.g. given a <code>blockquote</code> that must have at least one child. If <code>client1</code> deletes the first child, and <code>client2</code> concurrently deletes the second child, you may end up with a <code>blockquote</code> without children (well, that depends on the CRDT). In this case I simply delete the node that does not comply with the schema anymore.</p>
+</blockquote>
+<p>Enforcing that a CRDT complies to a schema might be impossible without an inordinate amount of bookkeeping. But something you could try is to create a <em>view</em> on the data that complies to the schema. For example, if a blockquote does not have any children, ignore it.</p>
 
 
     </article>
@@ -1347,10 +1468,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
     
     
     
-    
-      
-      
-      
     
       
       
@@ -1560,12 +1677,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
       
       <li>
         <a href="/thoughts/file-system/" data-ctx="CRDTs" data-src="/thoughts/file-system" class="internal-link">File system</a>
-      </li>
-      
-      
-      
-      <li>
-        <a href="/thoughts/idea-list/" data-ctx="thoughts/CRDT" data-src="/thoughts/idea-list" class="internal-link">Idea List</a>
       </li>
       
       

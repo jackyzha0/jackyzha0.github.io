@@ -7,6 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/tags/seed/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Strangler Fig Pattern</title>
+      <link>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</guid>
+      <description>Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. As features from the legacy system are replaced, the new system eventually replaces all of the old system&amp;rsquo;s features, strangling the old system and allowing you to decommission it.</description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>https://jzhao.xyz/thoughts/Unix/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Unix/</guid>
+      <description>Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
+Processes PID1 Zombies  Source</description>
+    </item>
+    
+    <item>
       <title>Abilene Paradox</title>
       <link>https://jzhao.xyz/thoughts/Abilene-Paradox/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
@@ -2487,8 +2506,8 @@ The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric abou
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/file-system/</guid>
-      <description>Virtual Distributed File System From Alluxio&amp;rsquo;s Technical Paper by Haoyuan Li
- Alluxio is an append-only file system, similar to HDFS, that supports standard file operations, such as create, open, read, write, close, and delete</description>
+      <description>Overlay File System  Source
+Sometimes referred to as union-filesystems. You can think about it like different &amp;rsquo;layers&amp;rsquo; of file systems, much like those laminated overhead projector sheets.</description>
     </item>
     
     <item>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</loc>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/tags/</loc>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Unix/</loc>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+  </url><url>
     <loc>https://jzhao.xyz/thoughts/Abilene-Paradox/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
   </url><url>
@@ -10,12 +22,6 @@
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Myth-of-the-Infrastructure-Phase/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-06-06T11:28:43-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/</loc>
-    <lastmod>2023-06-06T11:28:43-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Buddhist-Economics/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
@@ -402,7 +408,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/</loc>
-    <lastmod>2023-06-06T11:28:43-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/the-garden-and-the-stream/</loc>
     <lastmod>2023-04-18T13:29:39-07:00</lastmod>
@@ -615,7 +621,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/access-control/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/r-K-Selection-theory/</loc>
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
@@ -756,7 +762,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/towards-data-neutrality/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT-Implementations/</loc>
     <lastmod>2022-08-16T14:44:36-07:00</lastmod>
@@ -846,7 +852,7 @@
     <lastmod>2023-06-06T11:28:43-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/file-system/</loc>
-    <lastmod>2023-04-15T09:06:54-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Filecoin/</loc>
     <lastmod>2023-04-25T16:49:58-07:00</lastmod>
@@ -945,10 +951,13 @@
     <lastmod>2023-04-30T15:00:57-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/clocks/</loc>
-    <lastmod>2023-04-18T13:29:39-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
     <lastmod>2023-05-09T11:03:24-04:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consistency/</loc>
     <lastmod>2023-05-09T11:03:24-04:00</lastmod>
@@ -1539,7 +1548,7 @@
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/interoperability/</loc>
-    <lastmod>2023-04-06T17:47:56-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/terminology/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1929,7 +1938,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idea-list/</loc>
-    <lastmod>2023-06-06T11:28:43-07:00</lastmod>
+    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/attention-economy/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>
@@ -2023,9 +2032,6 @@
   </url><url>
     <loc>https://jzhao.xyz/posts/hootsuite/</loc>
     <lastmod>2023-04-02T22:09:38-07:00</lastmod>
-  </url><url>
-    <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
-    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/posts/2022/</loc>
     <lastmod>2023-01-01T00:32:00-05:00</lastmod>

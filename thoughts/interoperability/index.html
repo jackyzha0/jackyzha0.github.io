@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -504,6 +504,49 @@ Dec 1, 2021
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -578,7 +621,7 @@ Dec 1, 2021
 <p>An application then is a specific <em>view</em> on types of data rather than a standalone thing. Data can be dragged through different applications. Each data is annotated with a type. There is also a most common interface for data that allows basic-level interop with any application. We can then create an open marketplace for views on data.</p>
 <p>Apps in this operating system then declare &lsquo;default&rsquo; apps for certain data types.</p>
 <p>Ability to not only source local data but remote data too -&gt; fetching from URLs, feeds, etc.</p>
-<p>UNIX-level <a href="/thoughts/composable" rel="noopener" class="internal-link" data-src="/thoughts/composable">composability</a> &ndash; apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??).</p>
+<p><a href="/thoughts/Unix" rel="noopener" class="internal-link" data-src="/thoughts/Unix">UNIX</a>-level <a href="/thoughts/composable" rel="noopener" class="internal-link" data-src="/thoughts/composable">composability</a> &ndash; apps should be atomic building blocks. Creating pipeline apps to transform and massage data (possibly using Clay??).</p>
 <p>Auto-grouping of similar data? Set-theory for data?</p>
 <p>&ldquo;
 <a href="https://www.dougengelbart.org/content/view/226/269/" rel="noopener">Engelbart-inspired bootstrapping</a>. A system with which you can, as a user, co-evolve both the tool and your methodologies simultaneously to build up better whole systems (those systems which include the human and the tool).&rdquo;</p>

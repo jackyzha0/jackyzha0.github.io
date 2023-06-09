@@ -159,13 +159,13 @@ Physical Time Two types of clock
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1296,6 +1296,97 @@ May 5, 2022
     
     
     
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
       
       
     
@@ -1359,7 +1450,7 @@ May 5, 2022
 <li>Greenwich Mean Time (GMT): the normal human time format, based on Earth rotation</li>
 <li>International Atomic Time (TAI): some multiple of Caesium-133 resonant frequency</li>
 <li>Compromise, UTC is TAI with corrections to account for Earth rotation</li>
-<li>Unix Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds</li>
+<li><a href="/thoughts/Unix" rel="noopener" class="internal-link" data-src="/thoughts/Unix">Unix</a> Time: number of seconds since the epoch (Jan 1, 1970) not counting leap seconds</li>
 <li>ISO8601: year, month, day, hour, minute, second, and timezone offset relative to UTC</li>
 </ul>
 <p>We periodically adjust our local clocks with a server that has a more accurate time source using <a href="/thoughts/Network-Time-Protocol" rel="noopener" class="internal-link" data-src="/thoughts/Network-Time-Protocol">Network Time Protocol</a> (NTP) or Precision Time Protocol (PTP)</p>
@@ -1581,7 +1672,7 @@ May 5, 2022
       
       
       <li>
-        <a href="/thoughts/CRDT/" data-ctx="vector clock" data-src="/thoughts/CRDT" class="internal-link">CRDT</a>
+        <a href="/thoughts/CRDT/" data-ctx="vector clock" data-src="/thoughts/CRDT" class="internal-link">Conflict-free Replicated Data Type (CRDT)</a>
       </li>
       
       

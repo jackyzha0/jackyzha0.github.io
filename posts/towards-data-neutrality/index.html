@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -1203,6 +1203,49 @@ Jul 14, 2022
 
   
 
+  
+  
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -1228,7 +1271,7 @@ Jul 14, 2022
 <p>Clearly, this leaves much to be desired. We spend so much time online that it is worthwhile to explore better ways of existing online.</p>
 <a href="#an-ideal-world"><h2 id="an-ideal-world"><span class="hanchor" ariaLabel="Anchor"># </span>An Ideal World</h2></a>
 <p>Decentralization is not the solution for everything but it has value in empowering people to act decisively within their social contexts<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. Decentralizing the Web means that people gain the ability to store their data wherever they want while still getting the services they need. <strong>Decentralization is about <a href="/thoughts/agency" rel="noopener" class="internal-link" data-src="/thoughts/agency">agency</a></strong>: we get choice about where we <em>store</em> our data, who we give <em>access</em> to which parts of that data, which <em>services</em> we want on top of it, and how we <em>pay</em> for those.</p>
-<p>In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which we can stack to a global scale. Apps and platforms in this model follow the Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego &ldquo;dot&rdquo; that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.</p>
+<p>In an ideal world, instead of being forced to accept package deals we cannot customize, we get modular interoperable <a href="/thoughts/local-first-software" rel="noopener" class="internal-link" data-src="/thoughts/local-first-software">local-first software</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> which we can stack to a global scale. Apps and platforms in this model follow the <a href="/thoughts/Unix" rel="noopener" class="internal-link" data-src="/thoughts/Unix">Unix</a> philosophy: expect the output of every program to become the input to another, as yet unknown, program. Like the Lego &ldquo;dot&rdquo; that is the universal connector between all Lego pieces, there exists a universal API that freely enables all software of this model to freely interoperate. With a universal API, each composition between each tool increases the total possible compositions and workflows by $n * (n-1)$, all without developers needing to write the transformations between each one.</p>
 <p>In an ideal world, there is <em>data-neutrality</em>. Much like how the Net <a href="/thoughts/neutrality" rel="noopener" class="internal-link" data-src="/thoughts/neutrality">Neutrality</a> debate strives to maintain the separation of the content and connectivity markets, data neutrality strives to maintain the separation of data and application markets. Our current market is competitive based on data ownership when it could be competitive based on service quality instead. If we conceive a decentralized approach as a way to enable data and platform neutrality, application platforms and data providers can mix and match, much like how you can browse the many websites of the web on any Internet provider.</p>
 <p>In an ideal world, we focus on local-first software that works independently of large platforms &ndash; at the end of the day <strong>platforms should be used to support efficiency of collaboration at scale, not to gate users from moving their data for the sake of retention.</strong></p>
 <a href="#peer-to-peer"><h2 id="peer-to-peer"><span class="hanchor" ariaLabel="Anchor"># </span>Peer-to-peer</h2></a>

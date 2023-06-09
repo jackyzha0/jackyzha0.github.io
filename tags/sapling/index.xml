@@ -125,6 +125,15 @@ To be efficient is to be fragile, and to be fragile, over the long run, is to go
     </item>
     
     <item>
+      <title>Conflict-free Replicated Data Type (CRDT)</title>
+      <link>https://jzhao.xyz/thoughts/CRDT/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
+      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
+    </item>
+    
+    <item>
       <title>Rhizome Specification</title>
       <link>https://jzhao.xyz/thoughts/Rhizome-Specification/</link>
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>

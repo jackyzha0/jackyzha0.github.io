@@ -159,13 +159,13 @@ Community Governance Homeostasis of communities
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

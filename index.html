@@ -154,13 +154,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -421,10 +421,10 @@ Aug 21, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/Abilene-Paradox/">Abilene Paradox</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/">Strangler Fig Pattern</a></h3>
                             </div>
                             <p class="meta">
-                                39 words on May 12, 2023
+                                126 words on Jun 8, 2023
                             </p>
                             <ul class="tags">
     
@@ -438,10 +438,10 @@ Aug 21, 2022
                     <li>
                         <div class="section">
                             <div class="desc">
-                                <h3><a href="https://jzhao.xyz/thoughts/forgetting/">Forgetting</a></h3>
+                                <h3><a href="https://jzhao.xyz/thoughts/Unix/">Unix</a></h3>
                             </div>
                             <p class="meta">
-                                154 words on Jun 6, 2023
+                                321 words on Jun 8, 2023
                             </p>
                             <ul class="tags">
     
@@ -453,7 +453,7 @@ Aug 21, 2022
                     </li>
                     
                 </ul>
-                <a href="/thoughts">See 636 more →</a>
+                <a href="/thoughts">See 638 more →</a>
             </div>
         </div>
         <article>

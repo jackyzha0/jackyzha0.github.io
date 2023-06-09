@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -592,6 +592,51 @@ Aug 16, 2022
 
   
 
+  
+  
+  
+    
+  
+
+  
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+    
+    
+
+  
+
 
 
 
@@ -677,7 +722,7 @@ Aug 16, 2022
 <ul>
 <li>We will use the term ambient authority to describe authority that is exercised, but not selected, by its user.</li>
 <li>The corresponding analogy is to imagine a world with doors but without keys. When a person walks up to a door, the door magically opens if it deems the person worthy.</li>
-<li>For example, Unix filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as <code>open()</code> does not choose any credentials to present with the request; the request merely succeeds or fails</li>
+<li>For example, <a href="/thoughts/Unix" rel="noopener" class="internal-link" data-src="/thoughts/Unix">Unix</a> filesystem permissions constitute an ambient authority mechanism, because the caller of a function such as <code>open()</code> does not choose any credentials to present with the request; the request merely succeeds or fails</li>
 </ul>
 <p>Confused Deputy Problems:</p>
 <ul>

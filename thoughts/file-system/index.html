@@ -8,20 +8,20 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Virtual Distributed File System From Alluxio&rsquo;s Technical Paper by Haoyuan Li
- Alluxio is an append-only file system, similar to HDFS, that supports standard file operations, such as create, open, read, write, close, and delete"
+    content="Overlay File System  Source
+Sometimes referred to as union-filesystems. You can think about it like different &rsquo;layers&rsquo; of file systems, much like those laminated overhead projector sheets."
   />
   <meta property="og:title" content="File system">
-  <meta property="og:description" content="Virtual Distributed File System From Alluxio&rsquo;s Technical Paper by Haoyuan Li
- Alluxio is an append-only file system, similar to HDFS, that supports standard file operations, such as create, open, read, write, close, and delete">
+  <meta property="og:description" content="Overlay File System  Source
+Sometimes referred to as union-filesystems. You can think about it like different &rsquo;layers&rsquo; of file systems, much like those laminated overhead projector sheets.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jzhao.xyz/thoughts/file-system/">
   <meta property="og:width" content="200">
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="File system" />
-  <meta name="twitter:description" content="Virtual Distributed File System From Alluxio&rsquo;s Technical Paper by Haoyuan Li
- Alluxio is an append-only file system, similar to HDFS, that supports standard file operations, such as create, open, read, write, close, and delete" />
+  <meta name="twitter:description" content="Overlay File System  Source
+Sometimes referred to as union-filesystems. You can think about it like different &rsquo;layers&rsquo; of file systems, much like those laminated overhead projector sheets." />
   <meta name="twitter:image" content="https://jzhao.xyz/icon.png">
   
     
@@ -156,13 +156,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.607fcea1f2d20d8dfc7e6ad6aadcb7a4.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.0da0aed70dc589cc6b6a14f613d29ad5.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -470,6 +470,10 @@ Jun 23, 2022
 
 
 
+<a href="#overlay-file-system"><h2 id="overlay-file-system"><span class="hanchor" ariaLabel="Anchor"># </span>Overlay File System</h2></a>
+<p>
+<a href="https://docs.kernel.org/filesystems/overlayfs.html" rel="noopener">Source</a></p>
+<p>Sometimes referred to as union-filesystems. You can think about it like different &rsquo;layers&rsquo; of file systems, much like those laminated overhead projector sheets. If there are duplicated files, the file from a higher layer will take precedence.</p>
 <a href="#virtual-distributed-file-system"><h2 id="virtual-distributed-file-system"><span class="hanchor" ariaLabel="Anchor"># </span>Virtual Distributed File System</h2></a>
 <p>From 
 <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-29.pdf" rel="noopener">Alluxio&rsquo;s Technical Paper by Haoyuan Li</a></p>

@@ -7,6 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Strangler Fig Pattern</title>
+      <link>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</guid>
+      <description>Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. As features from the legacy system are replaced, the new system eventually replaces all of the old system&amp;rsquo;s features, strangling the old system and allowing you to decommission it.</description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>https://jzhao.xyz/thoughts/Unix/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Unix/</guid>
+      <description>Unix philosophy: expect the output of every program to become the input to another, as yet unknown, program.
+Processes PID1 Zombies  Source</description>
+    </item>
+    
+    <item>
       <title>Abilene Paradox</title>
       <link>https://jzhao.xyz/thoughts/Abilene-Paradox/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
@@ -2683,8 +2702,8 @@ The formula follows something like $y^2 = x^3 + ax + b$ (which is symmetric abou
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/file-system/</guid>
-      <description>Virtual Distributed File System From Alluxio&amp;rsquo;s Technical Paper by Haoyuan Li
- Alluxio is an append-only file system, similar to HDFS, that supports standard file operations, such as create, open, read, write, close, and delete</description>
+      <description>Overlay File System  Source
+Sometimes referred to as union-filesystems. You can think about it like different &amp;rsquo;layers&amp;rsquo; of file systems, much like those laminated overhead projector sheets.</description>
     </item>
     
     <item>
@@ -3025,6 +3044,15 @@ Physical Time Two types of clock
       
       <guid>https://jzhao.xyz/thoughts/collaborative-software/</guid>
       <description>Each user device has a local replica of the data and this local replica can be updated anytime (ideally even while offline), and re-sync with others when network is available</description>
+    </item>
+    
+    <item>
+      <title>Conflict-free Replicated Data Type (CRDT)</title>
+      <link>https://jzhao.xyz/thoughts/CRDT/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
+      <description>Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>
@@ -6212,7 +6240,7 @@ Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/opt
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  markup any site with a webcrawler + yjs + tldraw  markupthis.site is not taken!!   daily link share  inventory packing simulator but its with tabs&amp;hellip; what would affect tab size?</description>
+      <description>Technical  codemirror but CRDT + TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler + yjs + tldraw  markupthis.</description>
     </item>
     
     <item>
@@ -6507,16 +6535,6 @@ A (not so) brief exploration of how we tackle classifying intents in reflect.</d
       <description>(with insights from Calvin and Hobbes)
 Since I’ve started at Hootsuite, I have
  added and/or changed 6223 lines of code in 16 different repos closed 24 tickets made 4 new Slack emotes listened to almost 10,000 minutes of lofi had 1 amazing summer at Hootsuite  Including the amount of money I’ve spent on lunch this past summer, everything has been so much more than I expected it to be.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jzhao.xyz/thoughts/CRDT/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jzhao.xyz/thoughts/CRDT/</guid>
-      <description>**&amp;mdash; title: &amp;ldquo;Conflict-free Replicated Data Type (CRDT)&amp;rdquo; date: 2022-05-05 tags:
- sapling aliases: conflict-free replicated data type CvRDT CmRDT commutative replicated data type convergent replicated data type   Provides [[thoughts/causality|causal consistency]] as well as [[thoughts/consistency#Eventual Consistency|strong eventual consistency]]: over time, all actors converge to same state without data loss but there is no guarantee of exact same state across actors at any given moment (not [[thoughts/consistency#ACID Consistency|ACID]]).</description>
     </item>
     
     <item>
