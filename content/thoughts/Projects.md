@@ -56,7 +56,7 @@ Built with: [[thoughts/Hypercore|Hypercore]], React, Ink, and Typescript
 
 Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a JSON file to be rendered by Hugo.
 
-Over 1.2k monthly users and 300+ forks on GitHub.
+Over 50k monthly users and 1600+ forks on GitHub.
 
 Build with: Hugo, Obsidian, Github Pages, Go, SCSS, and JavaScript.
 

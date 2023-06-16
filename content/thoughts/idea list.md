@@ -6,7 +6,7 @@ tags:
 ---
 
 ## Technical
-- codemirror but CRDT + TreeSitter
+- [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter
 	- smart [[thoughts/git|git]] merges
 	- https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/
 - markup any site with a webcrawler + yjs + tldraw

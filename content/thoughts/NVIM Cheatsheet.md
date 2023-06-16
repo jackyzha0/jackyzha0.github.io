@@ -16,7 +16,6 @@ tags:
 	- `t` - html tag
 	- `{ or [ or < or {`
 	- `" or '` - quoted string
-	- `m` show possible LSP-based jump locations
 	- `q` - parameter
 
 ## Mappings

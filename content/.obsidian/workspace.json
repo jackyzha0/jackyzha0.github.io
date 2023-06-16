@@ -44,12 +44,36 @@
             }
           },
           {
-            "id": "3a822ed958c18594",
+            "id": "e9b0ad2149b0ea39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "thoughts/CRDT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dd2221657905e944",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/Network Block Device.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44af23b0025c8022",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/data structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Mill's",
+                "query": "quartz",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,12 +126,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 211.5,
-    "collapsed": true
+    "width": 211.5
   },
   "right": {
     "id": "14556c70f668b936",
@@ -256,11 +280,23 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3a822ed958c18594",
+  "active": "e9b0ad2149b0ea39",
   "lastOpenFiles": [
-    "thoughts/idea list.md",
-    "thoughts/CRDT.md",
     "thoughts/Operational Transform.md",
+    "thoughts/CRDT.md",
+    "thoughts/CodeMirror.md",
+    "thoughts/data structure.md",
+    "thoughts/Projects.md",
+    "thoughts/collaborative software.md",
+    "thoughts/Rhizome Research Log.md",
+    "thoughts/Network Block Device.md",
+    "thoughts/idea list.md",
+    "thoughts/system model.md",
+    "thoughts/LSP Server.md",
+    "thoughts/programming models.md",
+    "thoughts/notation.md",
+    "thoughts/design goals.md",
+    "thoughts/NVIM Cheatsheet.md",
     "thoughts/Strangler Fig Pattern.md",
     "thoughts/images/strangler fig.png",
     "thoughts/Unix.md",
@@ -274,9 +310,6 @@
     "thoughts/33 percent Impossibility Result.md",
     "thoughts/time.md",
     "thoughts/git.md",
-    "thoughts/The Grasshopper, Games, Life and Utopia.md",
-    "thoughts/the garden and the stream.md",
-    "thoughts/system model.md",
     "thoughts/images/roc-curve.png",
     "thoughts/images/yokocho-alley.png",
     "thoughts/images/wilson.png",
@@ -285,15 +318,6 @@
     "thoughts/images/vector clock example.png",
     "thoughts/images/upwell-merge.png",
     "thoughts/images/tty-example.png",
-    "thoughts/virtue ethics.md",
-    "thoughts/wood wide web.md",
-    "thoughts/zero sum.md",
-    "thoughts/websites as homes.md",
-    "thoughts/writing.md",
-    "thoughts/workflows.md",
-    "thoughts/website inspiration.md",
-    "thoughts/web3.md",
-    "thoughts/web3 critique.md",
     "thoughts/images",
     "thoughts",
     "templates",

@@ -28,8 +28,14 @@ Two main families of CRDTs are operation-based and state-based CRDTs. They have 
 
 See example implementations here: [[thoughts/CRDT Implementations|CRDT Implementations]]
 
-## Causal Consistency
-Causality is in each change (delta) as a [[thoughts/clocks#Vector Clocks|vector clock]] which encodes all of that delta's causal dependencies. Each delta is then queued until its vector clock is complete.
+I prefer CRDTs over OT whenever possible because it is just so much easier to grok for the average engineer. The framework tells you clearly what you’d need to do to make async editing actually work (make the update operation commutative), why that’s so difficult (delete operations lose state) and how to make your life much easier (retain delete state and do some form of GC after the fact).
+
+## Unlocks
+### Concurrent Editing plugins
+We can treat all plugins/external things (e.g. `git`, filesystem) as actors. CRDTs allow these changes to happen asynchronously
+
+- An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer
+- When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime
 
 ## Operation-based
 > Sometimes also called commutative replicated data types (CmRDT)
@@ -90,6 +96,15 @@ The main construct here is constructing a hash graph (aka a [[thoughts/Merkle-DA
 
 See: [[posts/bft-json-crdt]]
 
+## Undo
+Approach inspired by `xi-editor`. [Source](https://xi-editor.io/docs/crdt.html#undo)
+
+This means that the easy way to implement history, which is to simply roll back to a previous state, does not work. The state that is created by undoing your change, if other people's changes have come in after it, is a new one, not seen before.
+
+To be able to implement this, we can define changes (steps) in such a way that they can be inverted, producing a new step that represents the change that cancels out the original step.
+
+Each editing operation is assigned an “undo group.” Several edits may be in the same group. For example, if the user types `"`, then a smart-quote plugin may revise that to ‘“’. If the smart-quote revision is assigned the same undo group (because it is a consequence of the same user action), then a single undo would zorch both edits. Each undo group gets a distributed counter, and the group is considered to be undone when the counter is odd-valued.
+
 ## Performance
 ### Storage + State Compaction
 Practical experience with CRDTs shows that they tend to become inefficient over time,
@@ -109,16 +124,8 @@ Upgrading network assumption from asynchronous to partially synchronous enables 
 ## Unsolved Problems
 - Concurrent move + edit in sequences is unsolved
 	- Almost all implementations cause duplication
+	- [Fugue](https://mattweidner.com/2022/10/21/basic-list-crdt.html)
 
 ## Readings
 - [A comprehensive study of CRDTs](https://hal.inria.fr/inria-00555588/document) 
 - [Conflict-free Replicated Data Types: An Overview](https://arxiv.org/pdf/1806.10254.pdf)
-
-## ProseMirror + CRDTs
-[Source](https://marijnhaverbeke.nl/blog/collaborative-editing.html)
-
-`dmonad` (creator of Yjs) on a ProseMirror plugin for Yjs:
-
-> Mapping a CRDT to a ProseMirror document is not always possible, because ProseMirror has a schema that the document needs to comply to. E.g. given a `blockquote` that must have at least one child. If `client1` deletes the first child, and `client2` concurrently deletes the second child, you may end up with a `blockquote` without children (well, that depends on the CRDT). In this case I simply delete the node that does not comply with the schema anymore.
-
-Enforcing that a CRDT complies to a schema might be impossible without an inordinate amount of bookkeeping. But something you could try is to create a _view_ on the data that complies to the schema. For example, if a blockquote does not have any children, ignore it.

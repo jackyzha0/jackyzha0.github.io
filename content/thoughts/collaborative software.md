@@ -14,6 +14,8 @@ Two main families of algorithms
 - Conflict-free Replicated Data Types ([[thoughts/CRDT|CRDTs]]) -- persists the causal order of operations
 - [[thoughts/Operational Transform]] -- persists the final output of operations
 
+I hosted a session about this at Andy Matuschak's unconference! It turns out a lot of people are thinking about collaborative software. See what we brainstormed: [Full FigJam file](https://www.figma.com/file/fHnlhboanqVVE4IOp7zqR0/New-interfaces-for-new-thoughts-in-the-new-year?node-id=0%3A1&t=PBIeeb2LlMLj9ySZ-0)
+
 ## A spectrum of collaboration
 [Source](https://publish.obsidian.md/jessmartin/Collaboration+is+a+spectrum+from+asynchronous+to+fully+synchronous)
 
