@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</loc>
-    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+    <loc>https://jzhao.xyz/thoughts/data-structure/</loc>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Network-Block-Device/</loc>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/tags/</loc>
-    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/</loc>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/CodeMirror/</loc>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/LSP-Server/</loc>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</loc>
     <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Unix/</loc>
@@ -744,7 +756,7 @@
     <lastmod>2022-12-26T16:26:13-05:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/NVIM-Cheatsheet/</loc>
-    <lastmod>2023-01-09T11:47:53-08:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Tools-for-Conviviality/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -954,10 +966,10 @@
     <lastmod>2023-06-08T18:01:33-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/collaborative-software/</loc>
-    <lastmod>2023-05-09T11:03:24-04:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/CRDT/</loc>
-    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/consistency/</loc>
     <lastmod>2023-05-09T11:03:24-04:00</lastmod>
@@ -1347,7 +1359,7 @@
     <lastmod>2023-04-06T17:47:56-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Projects/</loc>
-    <lastmod>2023-04-06T14:57:31-07:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/Brains-in-a-Vat/</loc>
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
@@ -1938,7 +1950,7 @@
     <lastmod>2023-04-06T14:57:31-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/idea-list/</loc>
-    <lastmod>2023-06-08T18:01:33-07:00</lastmod>
+    <lastmod>2023-06-16T13:14:44-07:00</lastmod>
   </url><url>
     <loc>https://jzhao.xyz/thoughts/attention-economy/</loc>
     <lastmod>2023-05-12T10:39:59-04:00</lastmod>

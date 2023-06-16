@@ -7,6 +7,45 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jzhao.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Data Structures</title>
+      <link>https://jzhao.xyz/thoughts/data-structure/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/data-structure/</guid>
+      <description>Rope This is essentially an immutable String except many operations that would be $O(n)$ with normal strings are instead $O(\log n)$ or $O(1)$</description>
+    </item>
+    
+    <item>
+      <title>Network Block Device</title>
+      <link>https://jzhao.xyz/thoughts/Network-Block-Device/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/Network-Block-Device/</guid>
+      <description>Network block device (NBD) is a network protocol that can be used to forward a block device (typically a hard disk or partition) from one machine to a second machine</description>
+    </item>
+    
+    <item>
+      <title>CodeMirror and ProseMirror</title>
+      <link>https://jzhao.xyz/thoughts/CodeMirror/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/CodeMirror/</guid>
+      <description>Source
+An extensible and fast rope-based code/prose editor component for the web.
+Functional Core, Imperative Shell To resolve this contradiction, the library&amp;rsquo;s state representation is strictly functional—the document and state data structures are immutable, and operations on them are pure functions, whereas the view component and command interface wrap these in an imperative interface</description>
+    </item>
+    
+    <item>
+      <title>LSP Server</title>
+      <link>https://jzhao.xyz/thoughts/LSP-Server/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzhao.xyz/thoughts/LSP-Server/</guid>
+      <description>Source
+The idea behind the Language Server Protocol (LSP) is to standardize the protocol for how tools and servers communicate, so a single Language Server can be re-used in multiple development tools, and tools can support languages with minimal effort.</description>
+    </item>
+    
+    <item>
       <title>Strangler Fig Pattern</title>
       <link>https://jzhao.xyz/thoughts/Strangler-Fig-Pattern/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
@@ -2348,7 +2387,7 @@ Quotes On throwing away early work:
       <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/NVIM-Cheatsheet/</guid>
-      <description>Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &amp;lt; or { &amp;quot; or &#39; - quoted string m show possible LSP-based jump locations q - parameter    Mappings  &amp;lt;Ctrl&amp;gt;c - leave insert mode &amp;lt;leader&amp;gt;o - open file by name &amp;lt;leader&amp;gt;g - live grep &amp;lt;leader&amp;gt;f - format file &amp;lt;leader&amp;gt;ca - code actions f - hop by 2 chars &amp;lt;ctrl+/&amp;gt; - comment line or block [[ - jump to previous parameter ]] - jump to next parameter Window Navigation  :vsp - vertical split :hsp - horizontal split &amp;lt;leader&amp;gt;&amp;lt;direction&amp;gt; - move to window in that direction (one of wasd)   Tabs  &amp;lt;alt-&amp;lt;&amp;gt; - previous tab &amp;lt;alt-&amp;gt;&amp;gt; - previous tab &amp;lt;alt-q&amp;gt; - close tab &amp;lt;alt-#&amp;gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &amp;lt;shift&amp;gt;K - show type hint &amp;lt;space&amp;gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &amp;lt;leader&amp;gt;co - choose ours &amp;lt;leader&amp;gt;ct - choose theirs &amp;lt;leader&amp;gt;cb - choose both &amp;lt;leader&amp;gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &amp;lt;leader&amp;gt;m - open diff view   Show Keybindings  :Telescope keymaps    </description>
+      <description>Text-objects  adjectives  i - inner a - whole thing   nouns  l - character w - word t - html tag { or [ or &amp;lt; or { &amp;quot; or &#39; - quoted string q - parameter    Mappings  &amp;lt;Ctrl&amp;gt;c - leave insert mode &amp;lt;leader&amp;gt;o - open file by name &amp;lt;leader&amp;gt;g - live grep &amp;lt;leader&amp;gt;f - format file &amp;lt;leader&amp;gt;ca - code actions f - hop by 2 chars &amp;lt;ctrl+/&amp;gt; - comment line or block [[ - jump to previous parameter ]] - jump to next parameter Window Navigation  :vsp - vertical split :hsp - horizontal split &amp;lt;leader&amp;gt;&amp;lt;direction&amp;gt; - move to window in that direction (one of wasd)   Tabs  &amp;lt;alt-&amp;lt;&amp;gt; - previous tab &amp;lt;alt-&amp;gt;&amp;gt; - previous tab &amp;lt;alt-q&amp;gt; - close tab &amp;lt;alt-#&amp;gt; - go to tab #   Language server  gD - go to declaration gd - go to definition gt - go to type &amp;lt;shift&amp;gt;K - show type hint &amp;lt;space&amp;gt;rn - rename   Moving  % to jump to matching paren   Surrounds  ys[text-object][char] - surround with char ds[text-object][char] - delete surrounding char cs[char1][char2] - change surrounding char1 to char2   Git conflicts  &amp;lt;leader&amp;gt;co - choose ours &amp;lt;leader&amp;gt;ct - choose theirs &amp;lt;leader&amp;gt;cb - choose both &amp;lt;leader&amp;gt;c0 - choose none ]x - move to previous conflict [x - move to next conflict &amp;lt;leader&amp;gt;m - open diff view   Show Keybindings  :Telescope keymaps    </description>
     </item>
     
     <item>
@@ -6240,7 +6279,7 @@ Exploit-explore tradeoff in [[thoughts/machine learning]] is a hill climbing/opt
       <pubDate>Thu, 17 Jun 2021 00:33:42 -0400</pubDate>
       
       <guid>https://jzhao.xyz/thoughts/idea-list/</guid>
-      <description>Technical  codemirror but CRDT + TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler + yjs + tldraw  markupthis.</description>
+      <description>Technical  [[thoughts/CodeMirror|codemirror]] but CRDT + TreeSitter  smart [[thoughts/git|git]] merges  https://www.wilfred.me.uk/blog/2022/09/06/difftastic-the-fantastic-diff/   markup any site with a webcrawler + yjs + tldraw  markupthis.</description>
     </item>
     
     <item>

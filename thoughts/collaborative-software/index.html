@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -519,6 +519,8 @@ May 5, 2022
 <li>Conflict-free Replicated Data Types (<a href="/thoughts/CRDT" rel="noopener" class="internal-link" data-src="/thoughts/CRDT">CRDTs</a>) &ndash; persists the causal order of operations</li>
 <li><a href="/thoughts/Operational-Transform" rel="noopener" class="internal-link" data-src="/thoughts/Operational-Transform">Operational Transform</a> &ndash; persists the final output of operations</li>
 </ul>
+<p>I hosted a session about this at Andy Matuschak&rsquo;s unconference! It turns out a lot of people are thinking about collaborative software. See what we brainstormed: 
+<a href="https://www.figma.com/file/fHnlhboanqVVE4IOp7zqR0/New-interfaces-for-new-thoughts-in-the-new-year?node-id=0%3A1&amp;t=PBIeeb2LlMLj9ySZ-0" rel="noopener">Full FigJam file</a></p>
 <a href="#a-spectrum-of-collaboration"><h2 id="a-spectrum-of-collaboration"><span class="hanchor" ariaLabel="Anchor"># </span>A spectrum of collaboration</h2></a>
 <p>
 <a href="https://publish.obsidian.md/jessmartin/Collaboration&#43;is&#43;a&#43;spectrum&#43;from&#43;asynchronous&#43;to&#43;fully&#43;synchronous" rel="noopener">Source</a></p>

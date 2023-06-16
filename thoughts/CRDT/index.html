@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -449,63 +449,6 @@ May 5, 2022
   
     
   
-    
-  
-
-  
-
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-    
-    
-
-  
-
-  
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
 
   
 
@@ -559,8 +502,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -601,10 +542,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -658,8 +597,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -724,8 +661,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -779,8 +714,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -821,10 +754,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -878,8 +809,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -944,8 +873,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -986,10 +913,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -1041,10 +966,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -1098,8 +1021,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -1164,8 +1085,6 @@ May 5, 2022
   
     
   
-    
-  
 
   
 
@@ -1206,10 +1125,8 @@ May 5, 2022
 
   
 
-  
   
   
-    
   
     
   
@@ -1263,8 +1180,6 @@ May 5, 2022
 
   
   
-  
-    
   
     
   
@@ -1349,8 +1264,14 @@ May 5, 2022
 </li>
 </ol>
 <p>See example implementations here: <a href="/thoughts/CRDT-Implementations" rel="noopener" class="internal-link" data-src="/thoughts/CRDT-Implementations">CRDT Implementations</a></p>
-<a href="#causal-consistency"><h2 id="causal-consistency"><span class="hanchor" ariaLabel="Anchor"># </span>Causal Consistency</h2></a>
-<p>Causality is in each change (delta) as a <a href="/thoughts/clocks#vector-clocks" rel="noopener" class="internal-link" data-src="/thoughts/clocks">vector clock</a> which encodes all of that delta&rsquo;s causal dependencies. Each delta is then queued until its vector clock is complete.</p>
+<p>I prefer CRDTs over OT whenever possible because it is just so much easier to grok for the average engineer. The framework tells you clearly what you’d need to do to make async editing actually work (make the update operation commutative), why that’s so difficult (delete operations lose state) and how to make your life much easier (retain delete state and do some form of GC after the fact).</p>
+<a href="#unlocks"><h2 id="unlocks"><span class="hanchor" ariaLabel="Anchor"># </span>Unlocks</h2></a>
+<a href="#concurrent-editing-plugins"><h3 id="concurrent-editing-plugins"><span class="hanchor" ariaLabel="Anchor"># </span>Concurrent Editing plugins</h3></a>
+<p>We can treat all plugins/external things (e.g. <code>git</code>, filesystem) as actors. CRDTs allow these changes to happen asynchronously</p>
+<ul>
+<li>An actor makes an editing request, which is an insertion of a sequence at a point relative to its snapshot of the buffer</li>
+<li>When the result eventually returns, the editor commits that request which might require a coordinate transform based on other edits that have arrived in the meantime</li>
+</ul>
 <a href="#operation-based"><h2 id="operation-based"><span class="hanchor" ariaLabel="Anchor"># </span>Operation-based</h2></a>
 <blockquote>
 <p>Sometimes also called commutative replicated data types (CmRDT)</p>
@@ -1414,6 +1335,12 @@ The happens-before relation $\leq$ is then defined as $f \rightarrow g \iff \mat
 <li>If the heads of $p$ and $q$ are mismatched, the nodes can run a graph traversal algorithm to determine which parts of the graph they have in common, and send each other those parts of the graph that the other node is lacking.</li>
 </ol>
 <p>See: <a href="/posts/bft-json-crdt" rel="noopener" class="internal-link" data-src="/posts/bft-json-crdt">bft-json-crdt</a></p>
+<a href="#undo"><h2 id="undo"><span class="hanchor" ariaLabel="Anchor"># </span>Undo</h2></a>
+<p>Approach inspired by <code>xi-editor</code>. 
+<a href="https://xi-editor.io/docs/crdt.html#undo" rel="noopener">Source</a></p>
+<p>This means that the easy way to implement history, which is to simply roll back to a previous state, does not work. The state that is created by undoing your change, if other people&rsquo;s changes have come in after it, is a new one, not seen before.</p>
+<p>To be able to implement this, we can define changes (steps) in such a way that they can be inverted, producing a new step that represents the change that cancels out the original step.</p>
+<p>Each editing operation is assigned an “undo group.” Several edits may be in the same group. For example, if the user types <code>&quot;</code>, then a smart-quote plugin may revise that to ‘“’. If the smart-quote revision is assigned the same undo group (because it is a consequence of the same user action), then a single undo would zorch both edits. Each undo group gets a distributed counter, and the group is considered to be undone when the counter is odd-valued.</p>
 <a href="#performance"><h2 id="performance"><span class="hanchor" ariaLabel="Anchor"># </span>Performance</h2></a>
 <a href="#storage--state-compaction"><h3 id="storage--state-compaction"><span class="hanchor" ariaLabel="Anchor"># </span>Storage + State Compaction</h3></a>
 <p>Practical experience with CRDTs shows that they tend to become inefficient over time,
@@ -1432,6 +1359,8 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <li>Concurrent move + edit in sequences is unsolved
 <ul>
 <li>Almost all implementations cause duplication</li>
+<li>
+<a href="https://mattweidner.com/2022/10/21/basic-list-crdt.html" rel="noopener">Fugue</a></li>
 </ul>
 </li>
 </ul>
@@ -1442,14 +1371,6 @@ as tombstones accumulate and internal data structures become unbalanced. The com
 <li>
 <a href="https://arxiv.org/pdf/1806.10254.pdf" rel="noopener">Conflict-free Replicated Data Types: An Overview</a></li>
 </ul>
-<a href="#prosemirror--crdts"><h2 id="prosemirror--crdts"><span class="hanchor" ariaLabel="Anchor"># </span>ProseMirror + CRDTs</h2></a>
-<p>
-<a href="https://marijnhaverbeke.nl/blog/collaborative-editing.html" rel="noopener">Source</a></p>
-<p><code>dmonad</code> (creator of Yjs) on a ProseMirror plugin for Yjs:</p>
-<blockquote>
-<p>Mapping a CRDT to a ProseMirror document is not always possible, because ProseMirror has a schema that the document needs to comply to. E.g. given a <code>blockquote</code> that must have at least one child. If <code>client1</code> deletes the first child, and <code>client2</code> concurrently deletes the second child, you may end up with a <code>blockquote</code> without children (well, that depends on the CRDT). In this case I simply delete the node that does not comply with the schema anymore.</p>
-</blockquote>
-<p>Enforcing that a CRDT complies to a schema might be impossible without an inordinate amount of bookkeeping. But something you could try is to create a <em>view</em> on the data that complies to the schema. For example, if a blockquote does not have any children, ignore it.</p>
 
 
     </article>

@@ -153,13 +153,13 @@
     const PRODUCTION =  true 
     const BASE_URL = "https://jzhao.xyz/"
     const fetchData = Promise.all([
-          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.a2831f58455f5d7b42e24eefd96750fe.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/linkIndex.11e2a9048cdd3a582ee79695fda9c197.min.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.2fc60ef3dab0d1e06e7d95d6ea23fdbc.min.json")
+          fetch("https:\/\/jzhao.xyz\/indices\/contentIndex.c46d24d6f1be4d82a1c9568b9645c678.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -778,7 +778,7 @@ Dec 27, 2021
 <a href="https://quartz.jzhao.xyz/" rel="noopener">Site</a>, 
 <a href="https://github.com/jackyzha0/quartz" rel="noopener">GitHub</a></p>
 <p>Quartz is a tool and workflow to make maintaining and publishing a digital garden and second brain extremely easy. Think Obsidian Publish but free. Links are scraped and processed using a GitHub action written in Go and dumped into a JSON file to be rendered by Hugo.</p>
-<p>Over 1.2k monthly users and 300+ forks on GitHub.</p>
+<p>Over 50k monthly users and 1600+ forks on GitHub.</p>
 <p>Build with: Hugo, Obsidian, Github Pages, Go, SCSS, and JavaScript.</p>
 <h2 id="legist----a-platform-to-summarize-policy-for-democracythoughtsdemocracymd">Legist &ndash; a platform to summarize policy for 
 
