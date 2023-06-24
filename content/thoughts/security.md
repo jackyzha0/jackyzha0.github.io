@@ -22,7 +22,7 @@ A lot of the internet is based on good faith and relying on users to be good act
 What level of the [[thoughts/internet computing|internet computing stack]] should be responsible for security? Options:
 - New network-layer protocol
 - New transport-layer protocol
-- New 'pseudo-layer' between transport and application (SSL, TLS)
+- New 'pseudo-layer' between transport and application ([[thoughts/TLS|TLS]], TLS)
 - Responsibility of the application (SSH)
 
 ### Terminology

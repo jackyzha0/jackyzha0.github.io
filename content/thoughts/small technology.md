@@ -18,7 +18,7 @@ Principles of small technology:
 6. [[thoughts/interoperability|interoperable]]
 7. zero knowledge
 8. non-commercial
-9. non-colonial
+9. non-[[thoughts/colonial debt|colonial]]
 10. inclusive
 
 Thoughts: not sure I agree with how they say that the small web is single-tenant. Collaboration is important! We use the web not because its easy to own our stuff, but because it should be easy to do stuff with others.

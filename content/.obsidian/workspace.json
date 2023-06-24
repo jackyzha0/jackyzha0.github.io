@@ -4,83 +4,79 @@
     "type": "split",
     "children": [
       {
-        "id": "fcbe0294f0178831",
+        "id": "1ed1234d87d8bdf8",
         "type": "tabs",
         "children": [
           {
-            "id": "611e7656f8d0a636",
+            "id": "e07fb724f59ec6f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/file system.md",
+                "file": "thoughts/linear regression.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9d010c5c191af785",
+            "id": "730ab2540f3e2da1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/Unix.md",
+                "file": "thoughts/A Certain Tendency Of The Database Community.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fa8eab2c437b7f5f",
+            "id": "1ba8ed2d7d3f3e30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/Operational Transform.md",
+                "file": "thoughts/DNS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e9b0ad2149b0ea39",
+            "id": "e8c56c98da345b19",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "50c2f4d203704a07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/CRDT.md",
+                "file": "thoughts/colonial debt.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dd2221657905e944",
+            "id": "126ea1f1b758fa4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "thoughts/Network Block Device.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44af23b0025c8022",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "thoughts/data structure.md",
+                "file": "thoughts/housing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quartz",
+                "query": "Mill's",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,12 +122,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 285
   },
   "right": {
     "id": "14556c70f668b936",
@@ -148,7 +143,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "thoughts/CRDT.md",
+                "file": "thoughts/colonial debt.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -200,7 +195,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4810504119255846,
+                  "scale": 0.7565294349318715,
                   "close": true
                 }
               }
@@ -230,7 +225,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "thoughts/CRDT.md",
+                "file": "thoughts/colonial debt.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -247,7 +242,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "thoughts/CRDT.md",
+                "file": "thoughts/colonial debt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -259,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "thoughts/CRDT.md"
+                "file": "thoughts/colonial debt.md"
               }
             }
           }
@@ -267,8 +262,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5,
-    "collapsed": true
+    "width": 300.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,39 +271,39 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "e9b0ad2149b0ea39",
+  "active": "50c2f4d203704a07",
   "lastOpenFiles": [
-    "thoughts/Operational Transform.md",
-    "thoughts/CRDT.md",
-    "thoughts/CodeMirror.md",
-    "thoughts/data structure.md",
-    "thoughts/Projects.md",
-    "thoughts/collaborative software.md",
-    "thoughts/Rhizome Research Log.md",
-    "thoughts/Network Block Device.md",
-    "thoughts/idea list.md",
-    "thoughts/system model.md",
-    "thoughts/LSP Server.md",
-    "thoughts/programming models.md",
-    "thoughts/notation.md",
-    "thoughts/design goals.md",
-    "thoughts/NVIM Cheatsheet.md",
-    "thoughts/Strangler Fig Pattern.md",
-    "thoughts/images/strangler fig.png",
-    "thoughts/Unix.md",
-    "thoughts/images/pid1.png",
-    "posts/towards-data-neutrality.md",
-    "thoughts/file system.md",
-    "thoughts/pid1.md",
+    "thoughts/housing.md",
+    "thoughts/colonial debt.md",
+    "thoughts/Data Capitalism.md",
+    "thoughts/Design Justice.md",
+    "thoughts/A Certain Tendency Of The Database Community.md",
+    "thoughts/website inspiration.md",
+    "thoughts/DNS.md",
+    "thoughts/digital mindfulness.md",
+    "thoughts/SSL.md",
+    "thoughts/TLS.md",
     "thoughts/linear regression.md",
+    "thoughts/images/strangler fig.png",
+    "thoughts/images/pid1.png",
+    "thoughts/data structure.md",
+    "thoughts/Unix.md",
+    "thoughts/Strangler Fig Pattern.md",
+    "thoughts/Network Block Device.md",
+    "thoughts/LSP Server.md",
+    "thoughts/CodeMirror.md",
     "thoughts/Algorithms of Oppression.md",
     "thoughts/A Tale for the Time Being.md",
     "thoughts/33 percent Impossibility Result.md",
     "thoughts/time.md",
     "thoughts/git.md",
+    "thoughts/The Grasshopper, Games, Life and Utopia.md",
+    "thoughts/the garden and the stream.md",
+    "thoughts/system model.md",
     "thoughts/images/roc-curve.png",
     "thoughts/images/yokocho-alley.png",
     "thoughts/images/wilson.png",
@@ -318,6 +312,7 @@
     "thoughts/images/vector clock example.png",
     "thoughts/images/upwell-merge.png",
     "thoughts/images/tty-example.png",
+    "thoughts/virtue ethics.md",
     "thoughts/images",
     "thoughts",
     "templates",

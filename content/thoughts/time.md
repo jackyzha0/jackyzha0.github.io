@@ -35,7 +35,7 @@ See also: [[thoughts/A Certain Tendency Of The Database Community]], [[thoughts/
 	- Time as money (equal interchangeable hours)
 	- Emerged from the need to measure others' labour
 	- The colonisation of time (Giordano Nanni)
-		- Conflict between British colonial sense of time and the existing understanding of time of people living in colonized places
+		- Conflict between British [[thoughts/colonial debt|colonial]] sense of time and the existing understanding of time of people living in colonized places
 		- Taylorism and factory labour (measuring and systematizing work to make it go faster)
 		- This is not much different than the working class today (e.g. Amazon warehouse workers scanner gun, UPS truck with GPS sensors, etc.)
 - Unfungible time: pick a point in space and time and just keep watch. A branch, a yard, a webcam. A story is being written there
